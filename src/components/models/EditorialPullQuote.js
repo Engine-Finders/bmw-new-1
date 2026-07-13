@@ -1,9 +1,13 @@
 export default function EditorialPullQuote({ data }) {
+  if (!data) return null;
+
   return (
-    <section>
-      <pre style={{ whiteSpace: "pre-wrap", fontFamily: "inherit" }}>
-        {JSON.stringify(data, null, 2)}
-      </pre>
+    <section style={{ paddingBottom: 8 }}>
+      <h2>{data.title}</h2>
+      <blockquote>
+        <p>{data.quote}</p>
+      </blockquote>
+      <hr />
     </section>
   );
 }

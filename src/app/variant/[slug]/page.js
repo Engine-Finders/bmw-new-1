@@ -69,7 +69,17 @@ export default async function VariantPage({ params }) {
   if (!data) notFound();
 
   return (
-    <main style={{ padding: 12, maxWidth: 1408, margin: "0 auto" }}>
+    <main
+      style={{
+        padding: "24px 16px 64px",
+        maxWidth: 1100,
+        margin: "0 auto",
+        lineHeight: 1.5,
+        display: "flex",
+        flexDirection: "column",
+        gap: 40,
+      }}
+    >
       {data.meta?.jsonLd && (
         <script
           type="application/ld+json"
@@ -78,10 +88,6 @@ export default async function VariantPage({ params }) {
           }}
         />
       )}
-      <pre style={{ whiteSpace: "pre-wrap", fontFamily: "inherit" }}>
-        {JSON.stringify(data.meta, null, 2)}
-      </pre>
-      <p>slug: {data.meta?.slug}</p>
       <VariantHero data={data.hero} />
       <EraMap data={data.eraMap} />
       <ReplacementCosts data={data.replacementCosts} />

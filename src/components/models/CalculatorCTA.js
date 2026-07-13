@@ -1,9 +1,19 @@
 export default function CalculatorCTA({ data }) {
+  if (!data) return null;
+
   return (
-    <section>
-      <pre style={{ whiteSpace: "pre-wrap", fontFamily: "inherit" }}>
-        {JSON.stringify(data, null, 2)}
-      </pre>
+    <section style={{ paddingBottom: 8 }}>
+      <h2>{data.h2}</h2>
+      {data.intro && <p>{data.intro}</p>}
+      <ul>
+        {data.paths?.map((path) => (
+          <li key={path.label}>
+            <a href={path.href}>{path.label}</a>
+            {path.note ? ` (${path.note})` : ""}
+          </li>
+        ))}
+      </ul>
+      <hr />
     </section>
   );
 }

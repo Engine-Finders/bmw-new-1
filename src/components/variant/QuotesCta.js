@@ -1,9 +1,16 @@
 export default function QuotesCta({ data }) {
+  if (!data) return null;
+
   return (
-    <section>
-      <pre style={{ whiteSpace: "pre-wrap", fontFamily: "inherit" }}>
-        {JSON.stringify(data, null, 2)}
-      </pre>
+    <section style={{ paddingBottom: 8 }}>
+      <h2>{data.headline}</h2>
+      {data.supportingLine && <p>{data.supportingLine}</p>}
+      {data.button && (
+        <p>
+          <a href={data.button.href}>{data.button.label}</a>
+        </p>
+      )}
+      <hr />
     </section>
   );
 }

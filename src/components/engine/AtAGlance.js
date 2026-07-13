@@ -1,9 +1,26 @@
 export default function AtAGlance({ data }) {
+  if (!data) return null;
+
   return (
-    <section>
-      <pre style={{ whiteSpace: "pre-wrap", fontFamily: "inherit" }}>
-        {JSON.stringify(data, null, 2)}
-      </pre>
+    <section style={{ paddingBottom: 8 }}>
+      <h2>At a Glance</h2>
+      <table border="1" cellPadding="4" cellSpacing="0">
+        <thead>
+          <tr>
+            <th>Metric</th>
+            <th>Value</th>
+          </tr>
+        </thead>
+        <tbody>
+          {data.rows?.map((row) => (
+            <tr key={row.metric}>
+              <td>{row.metric}</td>
+              <td>{row.value}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+      <hr />
     </section>
   );
 }

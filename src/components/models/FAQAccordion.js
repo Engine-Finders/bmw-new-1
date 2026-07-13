@@ -1,9 +1,18 @@
 export default function FAQAccordion({ data }) {
+  if (!data) return null;
+
   return (
-    <section>
-      <pre style={{ whiteSpace: "pre-wrap", fontFamily: "inherit" }}>
-        {JSON.stringify(data, null, 2)}
-      </pre>
+    <section style={{ paddingBottom: 8 }}>
+      <h2>{data.h2}</h2>
+      {data.items?.map((item) => (
+        <div key={item.id}>
+          <h3>
+            {item.id}. {item.question}
+          </h3>
+          <p>{item.answer}</p>
+        </div>
+      ))}
+      <hr />
     </section>
   );
 }
