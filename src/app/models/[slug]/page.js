@@ -37,24 +37,29 @@ export async function generateMetadata({ params }) {
   if (!data?.meta) return {};
 
   const { meta } = data;
+  const og = meta.openGraph;
+  const hasOg =
+    og &&
+    (og.title || og.description || og.url || og.image || og.siteName || og.type);
+
   return {
-    title: meta.title,
-    description: meta.description,
-    openGraph: meta.openGraph
+    title: meta.title || undefined,
+    description: meta.description || undefined,
+    openGraph: hasOg
       ? {
-          title: meta.openGraph.title,
-          description: meta.openGraph.description,
-          type: meta.openGraph.type,
-          url: meta.openGraph.url,
-          images: meta.openGraph.image ? [meta.openGraph.image] : undefined,
-          siteName: meta.openGraph.siteName,
+          title: og.title || undefined,
+          description: og.description || undefined,
+          type: og.type || "website",
+          url: og.url || undefined,
+          images: og.image ? [og.image] : undefined,
+          siteName: og.siteName || undefined,
         }
       : undefined,
-    twitter: meta.twitter
+    twitter: meta.twitter?.title || meta.twitter?.description
       ? {
-          card: meta.twitter.card,
-          title: meta.twitter.title,
-          description: meta.twitter.description,
+          card: meta.twitter.card || undefined,
+          title: meta.twitter.title || undefined,
+          description: meta.twitter.description || undefined,
         }
       : undefined,
   };
