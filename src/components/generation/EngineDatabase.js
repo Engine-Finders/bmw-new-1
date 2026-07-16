@@ -32,9 +32,16 @@ export default function EngineDatabase({ data }) {
         </tbody>
       </table>
 
+      {data.confidenceScore?.text && (
+        <>
+          <h3>{data.confidenceScore.title || "Confidence Score"}</h3>
+          <p>{data.confidenceScore.text}</p>
+        </>
+      )}
+
       {data.dataCorrections?.length > 0 && (
         <>
-          <h3>Data corrections</h3>
+          <h3>Data notes</h3>
           <ul>
             {data.dataCorrections.map((note) => (
               <li key={note.slice(0, 48)}>{note}</li>

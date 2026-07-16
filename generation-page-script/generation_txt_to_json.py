@@ -7,6 +7,15 @@ Usage:
   python generation-page-script/generation_txt_to_json.py
   python generation-page-script/generation_txt_to_json.py "generation-page-txt/EM Generation Pages 1 (1).txt"
   python generation-page-script/generation_txt_to_json.py path/to/input.txt --out generation-page-outputs
+
+IGNORE RULES (apply to this script and future TXT→JSON converters):
+  1. Step 0 Check Results (Check A / Check B / Authority Model mode) — never put in JSON.
+  2. Hero "Data-integrity note (internal): ..." — never put in JSON (leave dataIntegrityNote empty).
+  3. Sec 2 "Data sources note:" and "Data note (internal) — corrections..." / "Correction applied..."
+     — never put in JSON (leave dataCorrections empty).
+  4. Part 1 / Part 2 chat fluff ("End of Part 1 Output", "Part 2", LLM thinking paragraphs)
+     — strip anywhere; never put in JSON.
+  5. Sec 2 "Confidence Score panel:" — ALWAYS include in confidenceScore; empty title/text if missing.
 """
 
 from __future__ import annotations
@@ -337,45 +346,49 @@ def empty_page_skeleton() -> dict[str, Any]:
     }
 
 
-def parse_internal_declarations(preamble: str) -> dict[str, str]:
-    text = preamble
-    check_a = ""
-    check_b = ""
-    authority = ""
-
-    m_a = re.search(
-        r"Check A\s*[—\-:]+\s*Thin-Data Fallback Test:\s*(.*?)(?=Check B|Authority Model mode:|SECTION\s+1|\Z)",
+def strip_ignored_content(text: str) -> str:
+    """
+    Strip blocks that must never enter JSON (shared ignore rules).
+    """
+    # Step 0 Check Results (Check A / B / Authority Model) before SECTION 1
+    text = re.sub(
+        r"Step\s+0\s+Check\s+Results.*?(?=SECTION\s+1\b|\Z)",
+        "\n",
         text,
-        re.I | re.S,
+        flags=re.I | re.S,
     )
-    if m_a:
-        check_a = clean(re.sub(r"\s+", " ", m_a.group(1)))
 
-    m_b = re.search(
-        r"Check B\s*[—\-:]+\s*Model-Wide Extremity Check:\s*(.*?)(?=Authority Model mode:|SECTION\s+1|\Z)",
+    # Part 1 / Part 2 LLM chat fluff between sections
+    text = re.sub(
+        r"End of Part\s*1\s+Output.*?(?=SECTION\s+\d+\b|META\s*$|SCHEMA\b|\Z)",
+        "\n",
         text,
-        re.I | re.S,
+        flags=re.I | re.S | re.M,
     )
-    if m_b:
-        check_b = clean(re.sub(r"\s+", " ", m_b.group(1)))
-
-    m_auth = re.search(
-        r"Authority Model mode:\s*(.*?)(?=_{3,}|SECTION\s+1|\Z)",
+    text = re.sub(
+        r"^Part\s*2\s*\n(?:(?!SECTION\s+\d+\b|META\s*$|SCHEMA\b).)*",
+        "\n",
         text,
-        re.I | re.S,
+        flags=re.I | re.S | re.M,
     )
-    if m_auth:
-        authority = clean(re.sub(r"\s+", " ", m_auth.group(1)))
-
-    return {
-        "checkA": check_a,
-        "checkB": check_b,
-        "authorityModelMode": authority,
-    }
+    # Common leftover chat openers
+    text = re.sub(
+        r"^(?:OK,\s+the user has just said|We need to generate Part|This completes the).*$",
+        "",
+        text,
+        flags=re.I | re.M,
+    )
+    return text
 
 
 def parse_hero(body: str) -> dict[str, Any]:
     lines = non_empty_lines(body)
+    # Ignore internal data-integrity notes in hero
+    lines = [
+        ln
+        for ln in lines
+        if not ln.lower().startswith("data-integrity note")
+    ]
     fm = field_map(lines)
     tag = fm.get("tag pill", "")
     h1 = fm.get("h1", "")
@@ -386,19 +399,14 @@ def parse_hero(body: str) -> dict[str, Any]:
     if cta and href == "#" and "→" not in cta and "->" not in cta:
         label = cta
 
-    data_note = ""
-    for ln in lines:
-        low = ln.lower()
-        if low.startswith("data-integrity note"):
-            data_note = clean(ln.split(":", 1)[1] if ":" in ln else ln)
-
     return {
         "tagPill": tag,
         "h1": h1,
         "subHeadline": sub,
         "trustStrip": parse_trust_strip(trust),
         "primaryCta": {"label": label or cta, "href": href or "#"},
-        "dataIntegrityNote": data_note,
+        # Always empty — Data-integrity note (internal) is ignored
+        "dataIntegrityNote": "",
     }
 
 
@@ -413,43 +421,42 @@ def parse_engine_database(body: str) -> dict[str, Any]:
         sub = clean(lines[0].split(":", 1)[1])
         lines = lines[1:]
 
+    # Always present in output; empty if page has no Confidence Score panel
     conf_title = ""
     conf_text = ""
-    corrections: list[str] = []
 
+    # Cut table before confidence / ignored notes
     table_lines, rest = take_until_markers(
         lines,
         ["confidence score", "data sources note", "data note", "correction applied"],
     )
 
     conf_block: list[str] = []
-    mode = "conf"
     for ln in rest:
         low = ln.lower()
-        if low.startswith("data note"):
-            mode = "corr"
-            continue
-        if low.startswith("data sources note"):
-            continue
-        if mode == "corr" or low.startswith("correction applied"):
-            if ln.startswith("*"):
-                corrections.append(clean(ln.lstrip("* ").strip()))
-            elif low.startswith("correction applied"):
-                corrections.append(ln)
-        elif low.startswith("confidence score"):
+        # Always ignore data sources / internal correction notes
+        if (
+            low.startswith("data sources note")
+            or low.startswith("data note")
+            or low.startswith("correction applied")
+            or (ln.startswith("*") and "correction" in low)
+        ):
+            break
+        if low.startswith("confidence score"):
             conf_block.append(re.sub(r"^confidence score panel:\s*", "", ln, flags=re.I))
         else:
             conf_block.append(ln)
 
     if conf_block:
-        joined = " ".join(conf_block)
+        joined = clean(" ".join(conf_block))
         joined = re.sub(r"^confidence score panel:\s*", "", joined, flags=re.I)
         m = re.match(r"(How confident are these ratings\?)\s*(.*)$", joined, re.I | re.S)
         if m:
             conf_title = clean(m.group(1))
             conf_text = clean(m.group(2))
         else:
-            conf_title = "How confident are these ratings?"
+            # TXT often has panel text without the "How confident..." question
+            conf_title = "Confidence Score"
             conf_text = clean(joined)
 
     header, rows = parse_table(table_lines, min_cols=5)
@@ -489,7 +496,8 @@ def parse_engine_database(body: str) -> dict[str, Any]:
         "columns": header,
         "engines": engines,
         "confidenceScore": {"title": conf_title, "text": conf_text},
-        "dataCorrections": corrections,
+        # Always empty — data sources / correction notes are ignored
+        "dataCorrections": [],
     }
 
 
@@ -1238,7 +1246,12 @@ def iter_sections(content: str) -> list[tuple[str, str, str]]:
 
 def build_page(preamble: str, page_text: str) -> dict[str, Any]:
     page = empty_page_skeleton()
-    page["internalDeclarations"] = parse_internal_declarations(preamble)
+    # Step 0 / internal declarations are ignored — keep empty structure only
+    page["internalDeclarations"] = {
+        "checkA": "",
+        "checkB": "",
+        "authorityModelMode": "",
+    }
 
     content = page_text
     meta_m = META_SECTION_RE.search(page_text)
@@ -1321,6 +1334,7 @@ def main() -> int:
     out_dir.mkdir(parents=True, exist_ok=True)
 
     text = input_path.read_text(encoding="utf-8-sig")
+    text = strip_ignored_content(text)
     pages = split_pages(text)
     print(f"Found {len(pages)} page(s) in {input_path.name}")
 
