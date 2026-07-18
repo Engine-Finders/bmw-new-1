@@ -1,0 +1,626 @@
+{
+  "meta": {
+    "slug": "bmw-7-series-e65-e66",
+    "title": "E65/E66 Engine Replacement Cost UK — Compare Quotes",
+    "titleCharCount": 58,
+    "description": "Every BMW 7 Series E65/E66 engine — M54, N52, N62 V8, N73 V12, M57, M67. Real UK costs, honest reliability data, and a clear 70% BMW threshold. Get free quotes from 20+ vetted BMW specialists today.",
+    "descriptionCharCount": 159,
+    "jsonLd": {}
+  },
+  "internalDeclarations": {
+    "checkA": "",
+    "checkB": "",
+    "authorityModelMode": ""
+  },
+  "hero": {
+    "tagPill": "BMW 7 Series E65/E66 • Saloon • 2001–2008",
+    "h1": "BMW 7 Series E65/E66 Engines — The Complete UK Guide",
+    "subHeadline": "Every engine fitted to the fourth-generation 7 Series — from the 3.0-litre straight-six petrols and diesels to the 4.4 and 4.8-litre N62 V8s, the 6.0-litre N73 V12 in the 760Li, and the M67 diesel V8. Real UK replacement costs, honest failure data, and the valve stem seal, coolant pipe and HPFP issues that define this generation's ownership story. Backed by real UK enquiry data [PATTERN DATA].",
+    "trustStrip": [
+      {
+        "icon": "📊",
+        "label": "E65/E66 Enquiries (Pattern Data)"
+      },
+      {
+        "icon": "🔧",
+        "label": "Saloon (SWB/LWB)"
+      },
+      {
+        "icon": "📖",
+        "label": "10+ Engine Codes"
+      },
+      {
+        "icon": "🏆",
+        "label": "Part of Engine Finders"
+      }
+    ],
+    "primaryCta": {
+      "label": "Explore E65/E66 Engines →",
+      "href": "#"
+    },
+    "dataIntegrityNote": ""
+  },
+  "engineDatabase": {
+    "h2": "BMW 7 Series E65/E66 Engine Codes — The Complete Database",
+    "subHeadline": "Every engine fitted to the E65/E66 — from the 2001 launch to the 2008 phase-out, including the 2005 facelift engine updates.",
+    "columns": [
+      "Engine Code",
+      "Family",
+      "Fuel",
+      "Displacement",
+      "Power",
+      "Years (E65/E66)",
+      "Variants (badges)",
+      "Reliability",
+      "2025 Enquiries",
+      "Avg. Recon Cost"
+    ],
+    "engines": [
+      {
+        "engineCode": "M54B30",
+        "family": "M54",
+        "fuel": "Petrol",
+        "displacement": "3.0L",
+        "power": "228–231 bhp",
+        "years": "2003–2005",
+        "variants": "730i, 730Li",
+        "reliability": "★★★★☆ [PROVISIONAL — pending dedicated Engine Page]",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£2,200–£4,500 [BMW-QUOTE]"
+      },
+      {
+        "engineCode": "N52B30",
+        "family": "N52",
+        "fuel": "Petrol",
+        "displacement": "3.0L",
+        "power": "255 bhp",
+        "years": "2005–2008",
+        "variants": "730i, 730Li",
+        "reliability": "★★★★☆ [PROVISIONAL — pending dedicated Engine Page]",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£2,500–£4,800 [BMW-QUOTE]"
+      },
+      {
+        "engineCode": "N62B36",
+        "family": "N62",
+        "fuel": "Petrol",
+        "displacement": "3.6L",
+        "power": "268 bhp",
+        "years": "2001–2004",
+        "variants": "735i, 735Li",
+        "reliability": "★★★☆☆ [PROVISIONAL — pending dedicated Engine Page]",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£3,500–£6,500 [BMW-QUOTE]"
+      },
+      {
+        "engineCode": "N62B40",
+        "family": "N62",
+        "fuel": "Petrol",
+        "displacement": "4.0L",
+        "power": "302–306 bhp",
+        "years": "2005–2008",
+        "variants": "740i, 740Li",
+        "reliability": "★★★☆☆ [PROVISIONAL — pending dedicated Engine Page]",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£3,800–£7,000 [BMW-QUOTE]"
+      },
+      {
+        "engineCode": "N62B44",
+        "family": "N62",
+        "fuel": "Petrol",
+        "displacement": "4.4L",
+        "power": "329–333 bhp",
+        "years": "2001–2005",
+        "variants": "745i, 745Li",
+        "reliability": "★★★☆☆ [PROVISIONAL — pending dedicated Engine Page]",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£3,800–£7,000 [BMW-QUOTE]"
+      },
+      {
+        "engineCode": "N62B48",
+        "family": "N62",
+        "fuel": "Petrol",
+        "displacement": "4.8L",
+        "power": "360–367 bhp",
+        "years": "2005–2008",
+        "variants": "750i, 750Li",
+        "reliability": "★★★☆☆ [PROVISIONAL — pending dedicated Engine Page]",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£4,000–£7,500 [BMW-QUOTE]"
+      },
+      {
+        "engineCode": "N73B60",
+        "family": "N73",
+        "fuel": "Petrol",
+        "displacement": "6.0L",
+        "power": "435–445 bhp",
+        "years": "2003–2008",
+        "variants": "760i, 760Li",
+        "reliability": "★★★☆☆ [PROVISIONAL — pending dedicated Engine Page]",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£8,000–£15,000 [BMW-QUOTE]"
+      },
+      {
+        "engineCode": "M57D30TU",
+        "family": "M57",
+        "fuel": "Diesel",
+        "displacement": "3.0L",
+        "power": "215–231 bhp",
+        "years": "2002–2008",
+        "variants": "730d, 730Ld",
+        "reliability": "★★★★☆ [PROVISIONAL — pending dedicated Engine Page]",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£2,200–£4,500 [BMW-QUOTE]"
+      },
+      {
+        "engineCode": "M67D398D1",
+        "family": "M67",
+        "fuel": "Diesel",
+        "displacement": "3.9L",
+        "power": "258 bhp",
+        "years": "2002–2005",
+        "variants": "740d",
+        "reliability": "★★★☆☆ [PROVISIONAL — pending dedicated Engine Page]",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£3,000–£6,000 [BMW-QUOTE]"
+      },
+      {
+        "engineCode": "M67D44TU",
+        "family": "M67",
+        "fuel": "Diesel",
+        "displacement": "4.4L",
+        "power": "300–329 bhp",
+        "years": "2005–2008",
+        "variants": "745d",
+        "reliability": "★★★☆☆ [PROVISIONAL — pending dedicated Engine Page]",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£3,500–£7,000 [BMW-QUOTE]"
+      }
+    ],
+    "confidenceScore": {
+      "title": "Confidence Score",
+      "text": "All ratings are provisional — no dedicated Engine Page exists for any E65/E66 engine family. The M54 and N52 six-cylinder petrols are considered the most reliable. The N62 V8s have well-documented valve stem seal and alternator bracket gasket issues. The N73 V12 is reliable but complex and expensive to service. The M57 diesel is robust — one E65 730d has been documented exceeding 500,000+ kilometers. The M67 diesel V8 is more complex but offers strong performance."
+    },
+    "dataCorrections": []
+  },
+  "overview": {
+    "h2": "BMW 7 Series E65/E66 — Overview",
+    "intro": "The E65/E66 is the fourth generation of the BMW 7 Series, produced from July 2001 to 2008. It was the first BMW to feature the iDrive infotainment system, and its exterior styling — overseen by Chris Bangle — marked a significant departure from traditional BMW design. Available in short-wheelbase (E65) and long-wheelbase (E66) forms, the E65/E66 was produced with petrol and turbo-diesel straight-six and V8 engines, along with a petrol V12 flagship model. A 2005 facelift brought new engines, updated styling and improved iDrive. The range included Alpina B7 variants with a supercharged 4.4-litre V8.",
+    "keyFacts": "Platform: BMW E65/E66 (rear-wheel drive) • Predecessor: E38 • Successor: F01/F02 • Sibling body styles in this generation: E65 (short-wheelbase), E66 (long-wheelbase), E67 (high-security), E68 (Hydrogen 7).",
+    "marketIntelligenceLine": "The E65/E66 7 Series remains a popular choice in the UK used luxury car market, with strong demand for the 730d diesel and the V8-powered models [PATTERN DATA]."
+  },
+  "bestWorstEngines": {
+    "items": [
+      {
+        "slot": "Thin-Data Summary",
+        "engine": "",
+        "quote": "Thin-Data Fallback mode — exactly one paragraph: The M57 3.0-litre straight-six diesel in the 730d is the most dependable E65/E66 engine — robust, economical, and capable of exceptional mileage, with documented examples exceeding 500,000 kilometres. Among petrols, the M54B30 and N52B30 six-cylinders in the 730i are the most reliable, avoiding the N62's expensive valve stem seal issues. The N62 V8s — particularly the 4.4-litre in the 745i — are smooth and powerful but have well-documented weaknesses: valve stem seals causing blue smoke on start-up, alternator bracket gasket oil leaks, and coolant transfer pipe failures. The N73 V12 in the 760Li is a masterpiece — the world's first production V12 with gasoline direct injection, producing 445 bhp — but it's complex and expensive to service; high-pressure fuel pump failures and coolant leaks are known issues. For most buyers, the 730d diesel is the smartest choice; the 730i is the sensible petrol option.",
+        "whoItsFor": ""
+      }
+    ]
+  },
+  "ownershipEconomics": {
+    "h2": "BMW 7 Series E65/E66 — Ownership Economics",
+    "columns": [
+      "Engine",
+      "Typical Mileage",
+      "Common Major Failure",
+      "Repair Cost (Specialist)",
+      "Replacement Cost (Recon)",
+      "Ownership Verdict"
+    ],
+    "rows": [
+      {
+        "engine": "M54B30 (730i)",
+        "typicalMileage": "80k–150k+",
+        "commonMajorFailure": "Cooling system; oil leaks",
+        "repairCostSpecialist": "£300–£900",
+        "replacementCostRecon": "£2,200–£4,500",
+        "ownershipVerdict": "Best Petrol Six — reliable, smooth, but underpowered for the 7's weight."
+      },
+      {
+        "engine": "N52B30 (730i)",
+        "typicalMileage": "80k–150k+",
+        "commonMajorFailure": "Cooling system; VANOS",
+        "repairCostSpecialist": "£300–£900",
+        "replacementCostRecon": "£2,500–£4,800",
+        "ownershipVerdict": "Best Petrol Six — refined and reliable."
+      },
+      {
+        "engine": "N62B36 / B40 / B44 / B48",
+        "typicalMileage": "60k–120k",
+        "commonMajorFailure": "Valve stem seals; alternator bracket gasket; coolant transfer pipe",
+        "repairCostSpecialist": "£1,000–£3,000",
+        "replacementCostRecon": "£3,500–£7,500",
+        "ownershipVerdict": "High Risk — valve stem seal failure is common and expensive."
+      },
+      {
+        "engine": "N73B60 (760Li)",
+        "typicalMileage": "60k–120k",
+        "commonMajorFailure": "HPFP; coolant pipe leaks",
+        "repairCostSpecialist": "£1,500–£4,000",
+        "replacementCostRecon": "£8,000–£15,000",
+        "ownershipVerdict": "Flagship Choice — spectacular but expensive to maintain."
+      },
+      {
+        "engine": "M57D30 (730d)",
+        "typicalMileage": "100k–200k+",
+        "commonMajorFailure": "Injector; EGR; swirl flaps",
+        "repairCostSpecialist": "£300–£1,000",
+        "replacementCostRecon": "£2,200–£4,500",
+        "ownershipVerdict": "Best Diesel — robust, economical, and the smartest buy."
+      },
+      {
+        "engine": "M67 (740d / 745d)",
+        "typicalMileage": "80k–150k",
+        "commonMajorFailure": "Injector; turbo; EGR",
+        "repairCostSpecialist": "£500–£1,500",
+        "replacementCostRecon": "£3,000–£7,000",
+        "ownershipVerdict": "Diesel V8 — torquey but more complex than the M57."
+      }
+    ],
+    "economicsRule": {
+      "title": "The E65/E66 rule",
+      "text": "A £4,500 M57 recon against a £6,000 E65 sits at 75% — brushing our 70% BMW threshold. On a sub-£4,000 E65, that recon is simply not viable. The N62 V8s are even more challenging: a £7,000 recon on a £5,000 car is 140% — a clear financial write-off. The N73 is another world: a £10,000+ recon on a £12,000 760Li is 83% — borderline. Value the car first, then the repair."
+    },
+    "keyTakeaways": [
+      {
+        "question": "Which E65/E66 Costs Least To Own?",
+        "answer": "730d (M57) — reliable, economical, and the most sensible buy in the range."
+      },
+      {
+        "question": "Which E65/E66 Costs Most To Own?",
+        "answer": "760Li (N73) — HPFP and coolant pipe repairs are expensive and essential."
+      },
+      {
+        "question": "Which E65/E66 Is Best Value?",
+        "answer": "730d — the sweet spot of reliability, economy, and running costs."
+      }
+    ]
+  },
+  "commonProblems": {
+    "problems": [
+      {
+        "id": 1,
+        "title": "N62 V8 Valve Stem Seal Failure",
+        "affectedModels": "E65/E66 735i, 740i, 745i, 750i (all N62 V8-engined variants).",
+        "typicalFailureMileage": "60,000–100,000 miles.",
+        "rootCause": "The N62 V8's valve stem seals become brittle with age and heat cycling, allowing oil to leak past the seals into the combustion chamber. The classic symptom is blue smoke on start-up after the car has been idling for 5+ minutes. This is the N62's most infamous and expensive failure.",
+        "tieredCosts": [
+          {
+            "tier": "Preventative (Repair)",
+            "dealer": "£2,500–£4,500",
+            "specialist": "£1,500–£3,000",
+            "work": "Valve stem seal replacement (requires cylinder head work)",
+            "note": "Often exceeds E65 value"
+          },
+          {
+            "tier": "Catastrophic (Replacement)",
+            "dealer": "£6,000–£9,000",
+            "specialist": "£3,500–£7,500",
+            "work": "Full reconditioned N62 engine",
+            "note": "Seldom viable against a £3,000–£6,000 car"
+          }
+        ],
+        "recommendation": "On any N62 E65/E66 approaching 60,000 miles without documented valve stem seal history, budget for a seal inspection and replacement. A £1,500–£3,000 preventative repair is dramatically cheaper than the £3,500–£7,500 replacement that follows if ignored.",
+        "cta": {
+          "label": "Compare N62 engine prices for your E65/E66 →",
+          "href": "#"
+        }
+      },
+      {
+        "id": 2,
+        "title": "N62 Alternator Bracket Gasket Oil Leak",
+        "affectedModels": "E65/E66 735i, 740i, 745i, 750i (all N62 V8-engined variants).",
+        "typicalFailureMileage": "60,000–100,000 miles.",
+        "rootCause": "The alternator bracket gasket on the N62 is a known failure point. When it fails, oil leaks onto the alternator, causing it to fail and potentially leaving you stranded. This is a common but expensive repair due to labour access.",
+        "tieredCosts": [
+          {
+            "tier": "Preventative (Repair)",
+            "dealer": "£800–£1,500",
+            "specialist": "£500–£1,200",
+            "work": "Alternator bracket gasket replacement",
+            "note": "Yes — essential preventative maintenance"
+          },
+          {
+            "tier": "Catastrophic (Replacement)",
+            "dealer": "£1,800–£3,000",
+            "specialist": "£1,200–£2,500",
+            "work": "Alternator replacement + gasket",
+            "note": "Often 20–40% of E65 value"
+          }
+        ],
+        "recommendation": "At every service, have the alternator bracket inspected for oil leaks — a £500–£1,200 preventative gasket replacement is far cheaper than the £1,200–£2,500 replacement that follows a failed alternator.",
+        "cta": {
+          "label": "Compare N62 alternator repair quotes for your E65/E66 →",
+          "href": "#"
+        }
+      },
+      {
+        "id": 3,
+        "title": "N62 Coolant Transfer Pipe Failure",
+        "affectedModels": "E65/E66 735i, 740i, 745i, 750i (all N62 V8-engined variants).",
+        "typicalFailureMileage": "60,000–100,000 miles.",
+        "rootCause": "The N62's coolant transfer pipe — located in the V of the engine — can leak. The pipe is difficult to access and labour-intensive to replace. This is the same issue that affects N62-powered E60 5 Series and E63 6 Series models.",
+        "tieredCosts": [
+          {
+            "tier": "Preventative (Repair)",
+            "dealer": "£800–£1,500",
+            "specialist": "£500–£1,200",
+            "work": "Coolant transfer pipe replacement",
+            "note": "Yes — cheap insurance"
+          },
+          {
+            "tier": "Catastrophic (Replacement)",
+            "dealer": "£4,000–£6,000",
+            "specialist": "£3,000–£5,000",
+            "work": "Full reconditioned N62 engine",
+            "note": "Often 40–70% of E65 value"
+          }
+        ],
+        "recommendation": "If your N62 E65/E66 is losing coolant with no external leak, have the transfer pipe inspected immediately — a £500–£1,200 preventative repair is far cheaper than the £3,000–£5,000 replacement that follows an overheating failure.",
+        "cta": {
+          "label": "Compare N62 coolant system repair quotes for your E65/E66 →",
+          "href": "#"
+        }
+      },
+      {
+        "id": 4,
+        "title": "N73 V12 High-Pressure Fuel Pump Failure",
+        "affectedModels": "E65/E66 760i, 760Li (N73 V12 engine).",
+        "typicalFailureMileage": "60,000–100,000 miles.",
+        "rootCause": "The N73 was the first production V12 to feature gasoline direct injection. The high-pressure fuel pump (HPFP) can fail with age, causing long cranking, misfires, power loss or stalling. The cooling system also has known coolant pipe leaks.",
+        "tieredCosts": [
+          {
+            "tier": "Preventative (Repair)",
+            "dealer": "£1,500–£3,000",
+            "specialist": "£1,000–£2,000",
+            "work": "HPFP replacement; cooling system inspection",
+            "note": "Yes — essential on high-mileage V12s"
+          },
+          {
+            "tier": "Catastrophic (Replacement)",
+            "dealer": "£10,000–£15,000",
+            "specialist": "£8,000–£12,000",
+            "work": "Full reconditioned N73 engine",
+            "note": "Often 50–80% of 760Li value"
+          }
+        ],
+        "recommendation": "On any N73 E65/E66 approaching 60,000 miles without documented HPFP history, budget for an HPFP inspection and replacement — a £1,000–£2,000 preventative repair is dramatically cheaper than the £8,000–£12,000 replacement that follows a major failure.",
+        "cta": {
+          "label": "Compare N73 engine prices for your E65/E66 →",
+          "href": "#"
+        }
+      },
+      {
+        "id": 5,
+        "title": "M57 Diesel Swirl Flap and EGR Issues",
+        "affectedModels": "E65/E66 730d, 730Ld (M57 diesel engine).",
+        "typicalFailureMileage": "80,000–150,000 miles.",
+        "rootCause": "The M57's swirl flaps can fail, with the flap detaching and entering the cylinder — this is a known issue across BMW's M57 diesel family. EGR valve clogging with carbon deposits is also common.",
+        "tieredCosts": [
+          {
+            "tier": "Preventative (Repair)",
+            "dealer": "£800–£1,500",
+            "specialist": "£400–£1,000",
+            "work": "Swirl flap blanking; EGR cleaning",
+            "note": "Yes — essential preventative modification"
+          },
+          {
+            "tier": "Catastrophic (Replacement)",
+            "dealer": "£4,500–£7,000",
+            "specialist": "£2,500–£4,500",
+            "work": "Full reconditioned M57 engine",
+            "note": "Often 40–70% of E65 value"
+          }
+        ],
+        "recommendation": "On any M57 E65/E66, have the swirl flaps blanked or replaced as preventative maintenance — a £400–£1,000 modification is far cheaper than the £2,500–£4,500 replacement that follows a failed flap entering the cylinder.",
+        "cta": {
+          "label": "Compare M57 engine prices for your E65/E66 →",
+          "href": "#"
+        }
+      }
+    ]
+  },
+  "replacementCosts": {
+    "h2": "E65/E66 Engine Replacement Costs — By Engine and Condition",
+    "columns": [
+      "Variant",
+      "Engine Code",
+      "Used (Supply)",
+      "Reconditioned (Supply)",
+      "Rebuilt (Supply)",
+      "Labour Hours"
+    ],
+    "rows": [
+      {
+        "variant": "730i (2003–2005)",
+        "engineCode": "M54B30",
+        "usedSupply": "£1,000–£2,500",
+        "reconditionedSupply": "£2,200–£4,500",
+        "rebuiltSupply": "£4,000–£6,500",
+        "labourHours": "10–14 hrs"
+      },
+      {
+        "variant": "730i (2005–2008)",
+        "engineCode": "N52B30",
+        "usedSupply": "£1,200–£2,800",
+        "reconditionedSupply": "£2,500–£4,800",
+        "rebuiltSupply": "£4,500–£7,000",
+        "labourHours": "10–14 hrs"
+      },
+      {
+        "variant": "735i / 735Li",
+        "engineCode": "N62B36",
+        "usedSupply": "£1,500–£3,500",
+        "reconditionedSupply": "£3,500–£6,500",
+        "rebuiltSupply": "£5,500–£8,500",
+        "labourHours": "14–18 hrs"
+      },
+      {
+        "variant": "740i / 740Li",
+        "engineCode": "N62B40",
+        "usedSupply": "£1,800–£4,000",
+        "reconditionedSupply": "£3,800–£7,000",
+        "rebuiltSupply": "£6,000–£9,000",
+        "labourHours": "14–18 hrs"
+      },
+      {
+        "variant": "745i / 745Li",
+        "engineCode": "N62B44",
+        "usedSupply": "£1,800–£4,000",
+        "reconditionedSupply": "£3,800–£7,000",
+        "rebuiltSupply": "£6,000–£9,000",
+        "labourHours": "14–18 hrs"
+      },
+      {
+        "variant": "750i / 750Li",
+        "engineCode": "N62B48",
+        "usedSupply": "£2,000–£4,500",
+        "reconditionedSupply": "£4,000–£7,500",
+        "rebuiltSupply": "£6,500–£10,000",
+        "labourHours": "14–18 hrs"
+      },
+      {
+        "variant": "760i / 760Li",
+        "engineCode": "N73B60",
+        "usedSupply": "£3,500–£7,000",
+        "reconditionedSupply": "£8,000–£15,000",
+        "rebuiltSupply": "£12,000–£20,000",
+        "labourHours": "18–24 hrs"
+      },
+      {
+        "variant": "730d / 730Ld",
+        "engineCode": "M57D30TU",
+        "usedSupply": "£1,000–£2,500",
+        "reconditionedSupply": "£2,200–£4,500",
+        "rebuiltSupply": "£4,000–£6,500",
+        "labourHours": "10–14 hrs"
+      },
+      {
+        "variant": "740d",
+        "engineCode": "M67D398D1",
+        "usedSupply": "£1,500–£3,500",
+        "reconditionedSupply": "£3,000–£6,000",
+        "rebuiltSupply": "£5,000–£8,000",
+        "labourHours": "14–18 hrs"
+      },
+      {
+        "variant": "745d",
+        "engineCode": "M67D44TU",
+        "usedSupply": "£1,800–£4,000",
+        "reconditionedSupply": "£3,500–£7,000",
+        "rebuiltSupply": "£5,500–£9,000",
+        "labourHours": "14–18 hrs"
+      }
+    ],
+    "note": "No Generation variance note required — no Engine Page baseline exists for these engines yet. Costs are sourced from UK specialist suppliers [BMW-QUOTE]."
+  },
+  "coreVariants": {
+    "dieselVariants": [
+      "730d",
+      "730Ld",
+      "740d",
+      "745d"
+    ],
+    "petrolVariants": [
+      "730i",
+      "730Li",
+      "735i",
+      "735Li",
+      "740i",
+      "740Li",
+      "745i",
+      "745Li",
+      "750i",
+      "750Li",
+      "760i",
+      "760Li"
+    ],
+    "scopeNote": "All variants listed are BMW 7 Series E65/E66 only. Available in short-wheelbase (E65) and long-wheelbase (E66) body styles — both share the same engine lineup and are covered under this Generation Page. The E67 (high-security) and E68 (Hydrogen 7) are rare special variants. Alpina B7 variants with a supercharged 4.4-litre V8 are covered on their own page."
+  },
+  "marketIntelligence": {
+    "mostRequestedEngines": [],
+    "mostRequestedVariants": [],
+    "averageReplacementCost": "",
+    "mostCommonFailures": [],
+    "liveFeed": []
+  },
+  "faq": {
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a BMW 7 Series E65/E66 engine replacement cost in the UK?",
+        "answer": "A reconditioned E65/E66 engine typically costs £2,200–£15,000 supply only [BMW‑QUOTE], depending on engine — the M57 diesel sits at £2,200–£4,500, the N62 V8 at £3,500–£7,500, and the N73 V12 in the 760Li at £8,000–£15,000. Fitting adds £650–£1,560. Use our calculator for a personalised figure."
+      },
+      {
+        "id": 2,
+        "question": "Which BMW 7 Series E65/E66 engine is the most reliable?",
+        "answer": "The M57 3.0-litre straight-six diesel in the 730d is the most reliable E65/E66 engine — robust, economical, and documented examples have exceeded 500,000 kilometres. Among petrols, the M54B30 and N52B30 six-cylinders in the 730i are the most reliable, avoiding the N62's expensive valve stem seal issues."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the BMW 7 Series E65/E66?",
+        "answer": "Common issues include: valve stem seal failure on the N62 V8 (blue smoke on start-up); alternator bracket gasket oil leaks on the N62; coolant transfer pipe failure on the N62; high-pressure fuel pump failure on the N73 V12; swirl flap and EGR issues on the M57 diesel; and iDrive and electronic system glitches across all variants."
+      },
+      {
+        "id": 4,
+        "question": "Is the BMW 7 Series E65/E66 reliable?",
+        "answer": "It depends heavily on which engine you choose. The M57 diesel in the 730d is one of BMW's most reliable engines. The M54 and N52 six-cylinder petrols are also solid. The N62 V8s have well-documented valve stem seal and coolant pipe issues that can be expensive to fix. The N73 V12 is reliable but complex and expensive to service. The E65/E66 is known for electronic gremlins — iDrive failures, battery drain, and sensor issues are common."
+      },
+      {
+        "id": 5,
+        "question": "Which E65/E66 engine should I avoid?",
+        "answer": "We don't recommend outright avoidance — but an N62 V8 without documented valve stem seal history is the one purchase we consistently advise against. Valve stem seal failure is common and expensive to fix, often exceeding the car's value. The 760Li V12 is spectacular but budget for £1,000–£2,000 a year in maintenance. For a sensible daily driver, the 730d diesel is the smartest choice."
+      },
+      {
+        "id": 6,
+        "question": "How do I know if my E65/E66 engine needs replacing?",
+        "answer": "Key warning signs: N62 — blue smoke on start-up after idling for 5+ minutes (valve stem seals), coolant loss with no external leak (transfer pipe), oil leaks around the alternator (bracket gasket); N73 — long cranking, misfires, or power loss (HPFP); M57 — rough idling, poor acceleration, or EGR issues. Use our diagnostic guide to identify the specific symptoms."
+      },
+      {
+        "id": 7,
+        "question": "Is it worth replacing a BMW 7 Series E65/E66 engine, or should I scrap the car?",
+        "answer": "Apply our 70% BMW threshold. A £4,500 M57 recon against a £6,000 E65 is 75% — borderline. Against a well-kept £10,000 example, the same recon is 45% — viable. For an N62 V8, a £7,000 recon on a £5,000 car is 140% — a clear financial write-off. For a 760Li, a £10,000 recon on a £12,000 car is 83% — borderline. Value the car first; if the repair exceeds 70%, walk away."
+      },
+      {
+        "id": 8,
+        "question": "How long do BMW 7 Series E65/E66 engines last?",
+        "answer": "The M57 diesel in the 730d can exceed 500,000 kilometres with proper servicing — a documented example has been recorded on a German market 730d. The M54 and N52 six-cylinder petrols can exceed 300,000 miles with proper care. The N62 V8's limiting factor is the valve stem seals — addressed proactively, the engine is durable. The N73 V12 is reliable but needs HPFP and coolant system attention."
+      },
+      {
+        "id": 9,
+        "question": "What is the difference between the E65 and E66?",
+        "answer": "The E65 is the short-wheelbase version of the fourth-generation 7 Series, produced from 2001 to 2008. The E66 is the long-wheelbase version, also produced from 2001 to 2008. The E66 was marketed as the \"iL\" (e.g., 730Li, 745Li) and offered increased rear legroom and standard features. Both share the same engine lineup and are covered together on this Generation Page."
+      },
+      {
+        "id": 10,
+        "question": "How do I find my BMW 7 Series E65/E66 engine code?",
+        "answer": "Listed on the VIN plate and vehicle documentation; block stamping varies by engine. For the M54/N52 six-cylinder, the code is on the block face below the inlet manifold. For the N62 V8, it's on the block face near the timing cover. For the N73 V12, it's on the block face between the cylinder banks. Tell us your registration and we'll identify it — 20+ vetted BMW specialists will confirm it for free."
+      }
+    ]
+  },
+  "trustCta": {
+    "h2": "Why UK BMW 7 Series E65/E66 Owners Trust BMWEngines.uk",
+    "trustPoints": [
+      {
+        "title": "Trusted E65/E66 Engine Suppliers",
+        "text": "every garage and engine rebuilder in our network is vetted, rated and reviewed by real E65/E66 owners, as part of the Engine Finders network."
+      },
+      {
+        "title": "Compare BMW 7 Series E65/E66 Engine Replacement Companies",
+        "text": "see prices, warranty terms and supply‑only vs supply‑fit options side‑by‑side before you commit."
+      },
+      {
+        "title": "UK Engine Replacement Services for BMW 7 Series E65/E66",
+        "text": "covering every variant from 730d to 760Li, with nationwide supply and specialist fitting available."
+      }
+    ],
+    "finalCta": "Find the best BMW 7 Series E65/E66 engine replacement UK owners rely on. Compare real prices from trusted specialists on EnginesMarket today and get your 7 Series back on the road with confidence.",
+    "ctaButton": {
+      "label": "Compare BMW 7 Series E65/E66 Engine Prices on EnginesMarket →",
+      "href": "#",
+      "note": "[PLACEHOLDER — confirm EnginesMarket URL structure]"
+    }
+  }
+}

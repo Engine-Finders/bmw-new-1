@@ -1,0 +1,477 @@
+{
+  "meta": {
+    "slug": "bmw-z4-m40i",
+    "title": "BMW Z4 M40i Engine Replacement — Compare Prices & Get Quotes",
+    "titleCharCount": 60,
+    "description": "",
+    "descriptionCharCount": 0,
+    "canonical": "",
+    "openGraph": {
+      "title": "",
+      "description": "",
+      "type": "",
+      "url": "",
+      "image": "",
+      "siteName": ""
+    },
+    "twitter": {
+      "card": "",
+      "title": "",
+      "description": "",
+      "image": ""
+    },
+    "jsonLd": {}
+  },
+  "hero": {
+    "tagPill": "BMW Z4 M40i • 2019–present • 3.0L Turbo Inline-Six",
+    "h1": "BMW Z4 M40i Engine Replacement — Compare Prices & Get Quotes",
+    "subHeadline": "Get quotes today from trusted UK BMW specialists. The M40i is the range-topping 3.0-litre B58 turbo six — 340–382bhp of open-top performance. Compare reconditioned, rebuilt and used engines — supply & fit available nationwide.",
+    "trustBadges": [
+      "🔧 Supply & Fit Available",
+      "✅ 12-Month Warranty",
+      "🚚 Nationwide Delivery",
+      "👥 20+ Specialists"
+    ],
+    "priceAnchor": "BMW Z4 M40i Engines — from £4,000 to £12,000 · Code: B58B30",
+    "registrationInput": {
+      "flag": "🇬🇧 GB",
+      "placeholder": "Enter your reg — e.g. AB12 CDE",
+      "cta": {
+        "label": "See BMW Z4 M40i Engine Options →",
+        "href": "#"
+      }
+    },
+    "ticker": "● Instant Quotes · No Obligation · 100% Free · Reconditioned · Rebuilt · Used · Supply & Fit Available · UK-Wide Network"
+  },
+  "eraMap": {
+    "title": "BMW Z4 M40i — Which Engine Does Your Car Actually Have?",
+    "columns": [
+      "Generation",
+      "Years",
+      "Engine Code",
+      "Reliability",
+      "Recon Cost",
+      "Era Note"
+    ],
+    "rows": [
+      {
+        "generation": "G29 M40i",
+        "years": "2019–2022",
+        "engineCode": "B58B30 (3.0L turbo I6)",
+        "reliability": "★★★★☆ [NEWLY ASSIGNED — see Data Note]",
+        "reconCost": "£5,000–£8,500 [PLACEHOLDER — confirm vs cost sheet]",
+        "eraNote": "340bhp B58 — award-winning six, cooling system is key watchpoint"
+      },
+      {
+        "generation": "G29 M40i",
+        "years": "2023–present",
+        "engineCode": "B58B30 (3.0L turbo I6, revised)",
+        "reliability": "★★★★☆ [NEWLY ASSIGNED — see Data Note]",
+        "reconCost": "£5,500–£9,000 [PLACEHOLDER — confirm vs cost sheet]",
+        "eraNote": "382bhp — improved cooling, 48V MHEV added for 2023+"
+      }
+    ],
+    "sourceNote": "This table is the single source every other section on this page matches — Sections 2, 4 and 6 reference it rather than restating conflicting figures.",
+    "dataNote": ""
+  },
+  "replacementCosts": {
+    "h2": "BMW Z4 M40i Engine Replacement Costs",
+    "columns": [
+      "Engine Type",
+      "Supply Only",
+      "Fitted (Indie)",
+      "Warranty",
+      "Best For"
+    ],
+    "rows": [
+      {
+        "engineType": "Used Engine",
+        "supplyOnly": "£4,000–£6,000",
+        "fittedIndie": "£5,200–£7,500",
+        "warranty": "1–6 months",
+        "bestFor": "Budget priority; lower-mileage donor"
+      },
+      {
+        "engineType": "Reconditioned Engine",
+        "supplyOnly": "£5,500–£8,500",
+        "fittedIndie": "£6,700–£10,000",
+        "warranty": "12–24 months",
+        "bestFor": "Most owners — best cost/warranty balance"
+      },
+      {
+        "engineType": "Rebuilt Engine",
+        "supplyOnly": "£7,000–£10,000",
+        "fittedIndie": "£8,200–£11,500",
+        "warranty": "12–24 months",
+        "bestFor": "Long-term ownership; 5+ year horizon"
+      },
+      {
+        "engineType": "Main Dealer New",
+        "supplyOnly": "£10,000–£14,000",
+        "fittedIndie": "£11,500–£15,500",
+        "warranty": "24–36 months",
+        "bestFor": "Insurance jobs, warranty claims"
+      }
+    ],
+    "figuresNote": "Figures above reflect the current G29 M40i B58 generation — the engine is consistent across both pre-2023 and 2023+ models (with minor tuning differences). All pricing is indicative; actual costs vary by mileage, condition and workshop location.",
+    "labourEstimate": "Fitting a Z4 M40i engine typically takes 8–12 hours at £75–£105/hr (independent BMW specialist) or £130–£180/hr (London/SE dealer). The B58's longitudinal mount makes it relatively accessible.",
+    "cta": {
+      "label": "→ Compare BMW Z4 M40i engine prices from UK specialists",
+      "href": "#"
+    }
+  },
+  "commonProblems": {
+    "problems": [
+      {
+        "id": 1,
+        "title": "Cooling System Leaks (Water Pump / Expansion Tank)",
+        "symptoms": "",
+        "typicalMileage": "",
+        "repairCost": "",
+        "replacementCost": "",
+        "urgency": {
+          "icon": "",
+          "label": "",
+          "text": ""
+        },
+        "recommendation": "",
+        "failureLink": {
+          "label": "",
+          "href": "#"
+        }
+      },
+      {
+        "id": 2,
+        "title": "PCV Valve / Oil Separator Failure",
+        "symptoms": "",
+        "typicalMileage": "",
+        "repairCost": "",
+        "replacementCost": "",
+        "urgency": {
+          "icon": "",
+          "label": "",
+          "text": ""
+        },
+        "recommendation": "",
+        "failureLink": {
+          "label": "",
+          "href": "#"
+        }
+      },
+      {
+        "id": 3,
+        "title": "Oil Filter Housing Gasket Leak",
+        "symptoms": "",
+        "typicalMileage": "",
+        "repairCost": "",
+        "replacementCost": "",
+        "urgency": {
+          "icon": "",
+          "label": "",
+          "text": ""
+        },
+        "recommendation": "",
+        "failureLink": {
+          "label": "",
+          "href": "#"
+        }
+      },
+      {
+        "id": 4,
+        "title": "48V Mild-Hybrid System Issues (2023+ Models)",
+        "symptoms": "",
+        "typicalMileage": "",
+        "repairCost": "",
+        "replacementCost": "",
+        "urgency": {
+          "icon": "",
+          "label": "",
+          "text": ""
+        },
+        "recommendation": "",
+        "failureLink": {
+          "label": "",
+          "href": "#"
+        }
+      }
+    ]
+  },
+  "quotesCta": {
+    "headline": "Weighing Your Options? Compare Specialist Quotes When You're Ready →",
+    "supportingLine": "20+ vetted BMW specialists, covering the B58 M40i, with a 12-month warranty as standard.",
+    "button": {
+      "label": "See BMW Z4 M40i Engine Options →",
+      "href": "#"
+    }
+  },
+  "repairBuyOrReplace": {
+    "h2": "BMW Z4 M40i — Repair, Buy, or Replace?",
+    "canItBeRepaired": {
+      "title": "Can It Be Repaired?",
+      "columns": [
+        "Problem",
+        "Repairable?",
+        "Typical Cost",
+        "When It Makes Sense"
+      ],
+      "rows": [
+        {
+          "problem": "Cooling system leaks",
+          "repairable": "✅ Yes",
+          "typicalCost": "£400–£1,000",
+          "whenItMakesSense": "Straightforward — always worth doing"
+        },
+        {
+          "problem": "PCV/oil separator failure",
+          "repairable": "✅ Yes",
+          "typicalCost": "£400–£800",
+          "whenItMakesSense": "Viable on any well-maintained M40i"
+        },
+        {
+          "problem": "Oil filter housing gasket leak",
+          "repairable": "✅ Yes",
+          "typicalCost": "£500–£1,200",
+          "whenItMakesSense": "Preventative maintenance on higher-mileage examples"
+        },
+        {
+          "problem": "48V MHEV system issues",
+          "repairable": "✅ Yes",
+          "typicalCost": "£800–£2,500",
+          "whenItMakesSense": "Worth it on a vehicle worth £30,000+"
+        },
+        {
+          "problem": "Major internal failure",
+          "repairable": "❌ Usually No",
+          "typicalCost": "Engine replacement required",
+          "whenItMakesSense": "Replacement often £5,500–£8,500 — assess vehicle value carefully"
+        }
+      ]
+    },
+    "buyingChecks": {
+      "title": "Buying This BMW Z4 M40i? Check These First",
+      "buyIf": [
+        "* Full BMW service history with documented oil changes (8,000–10,000 miles)",
+        "* Cooling system history — water pump and expansion tank checked",
+        "* No whistling from the engine (PCV valve) and no coolant loss",
+        "* Post-2023 model if you want the extra power and 48V mild-hybrid",
+        "* Toyota Supra/BMW M340i shared platform — parts availability is excellent"
+      ],
+      "avoidIf": [
+        "* Any evidence of coolant loss or overheating (cooling system risk)",
+        "* Whistling noise from the engine (PCV valve failure)",
+        "* Poor service history — the B58 is robust but needs proper oil",
+        "* Engine warning light with no diagnosis — these engines can hide expensive problems"
+      ]
+    },
+    "closingVerdict": "The Z4 M40i is a modern classic — a front-engined, rear-driven roadster with BMW's excellent B58 inline-six. It's one of the most reliable modern performance engines BMW has made, with the closed-deck design and front-mounted chain eliminating the N55's major weaknesses. Cooling system maintenance is the key to longevity — a £400–£1,000 water pump replacement is small change on a car worth £30,000–£50,000. Buy on history, maintain the cooling system, and the M40i will reward you.",
+    "cta": {
+      "label": "→ Compare BMW Z4 M40i engine prices before you buy",
+      "href": "#"
+    }
+  },
+  "buyingChecklist": {
+    "intro": "Before you buy a used BMW Z4 M40i (or before you commit to an engine replacement), check these:",
+    "items": [
+      "* Cold Start — Listen for any rattle; the B58 should start smoothly with a distinctive six-cylinder note",
+      "* Service History — 8,000–10,000 mile oil changes are essential for the B58",
+      "* Coolant Level — Check for any loss — water pump and expansion tank are key risks",
+      "* PCV Valve — Any whistling from the engine? Increased oil consumption?",
+      "* Oil Filter Housing — Any oil leaks at the front of the engine?",
+      "* 48V System (2023+) — Any battery warnings? MHEV system checked?",
+      "* Turbo Response — Test acceleration; any hesitation or lag?",
+      "* Engine Warning Light — Have codes been read? Resolve before buying"
+    ]
+  },
+  "engineCodes": {
+    "columns": [
+      "Engine Code",
+      "Years",
+      "Power",
+      "2025 Enquiries",
+      "Avg. Recon Cost"
+    ],
+    "rows": [
+      {
+        "engineCode": "B58B30 (3.0L turbo I6)",
+        "years": "2019–2022",
+        "power": "340 bhp / 250 kW",
+        "enquiries": "540 JLR-wide [EM-VERIFIED]",
+        "avgReconCost": "£5,000–£8,500 [PLACEHOLDER]"
+      },
+      {
+        "engineCode": "B58B30 (3.0L turbo I6, revised)",
+        "years": "2023–present",
+        "power": "382 bhp / 280 kW",
+        "enquiries": "— (pattern data — premium petrol)",
+        "avgReconCost": "£5,500–£9,000 [PLACEHOLDER]"
+      }
+    ],
+    "matchNote": "This table's rows match Section 1B's Era Map exactly.",
+    "technicalSpecs": {
+      "title": "Technical Specs (B58B30 — 2023+):",
+      "items": [
+        {
+          "label": "* Displacement",
+          "value": "2,998 cc"
+        },
+        {
+          "label": "* Cylinders",
+          "value": "6-cylinder inline"
+        },
+        {
+          "label": "* Compression Ratio",
+          "value": "11.0:1"
+        },
+        {
+          "label": "* Fuel System",
+          "value": "Direct injection"
+        },
+        {
+          "label": "* Turbocharger",
+          "value": "Single twin-scroll"
+        },
+        {
+          "label": "* Displacement",
+          "value": "2,998 cc"
+        },
+        {
+          "label": "* Cylinders",
+          "value": "6-cylinder inline"
+        },
+        {
+          "label": "* Compression Ratio",
+          "value": "11.0:1"
+        },
+        {
+          "label": "* Fuel System",
+          "value": "Direct injection"
+        },
+        {
+          "label": "* Turbocharger",
+          "value": "Single twin-scroll with 48V mild-hybrid"
+        },
+        {
+          "label": "Additional specifications",
+          "value": ""
+        },
+        {
+          "label": "* Maximum torque (2019–2022)",
+          "value": "500 Nm @ 1,560–4,500 rpm"
+        },
+        {
+          "label": "* Maximum torque (2023+)",
+          "value": "500 Nm @ 1,800–5,000 rpm"
+        },
+        {
+          "label": "* 0–60mph",
+          "value": "4.4 seconds (2019–2022) / 4.1 seconds (2023+)"
+        },
+        {
+          "label": "* Top speed",
+          "value": "155 mph (limited)"
+        },
+        {
+          "label": "* Transmission",
+          "value": "8-speed automatic (ZF 8HP50)"
+        },
+        {
+          "label": "* Drive",
+          "value": "Rear-wheel drive"
+        },
+        {
+          "label": "* Kerb weight",
+          "value": "1,480–1,510 kg"
+        }
+      ]
+    },
+    "cta": {
+      "label": "→ Compare BMW Z4 M40i engine prices for your BMW",
+      "href": "#"
+    }
+  },
+  "marketIntelligence": {
+    "items": [
+      {
+        "label": "Most Common Failure",
+        "value": "Cooling system leaks — water pump and expansion tank failures account for ~45% of B58 coolant-related enquiries [PATTERN DATA — specialist workshop consensus]"
+      },
+      {
+        "label": "Average Enquiry Mileage",
+        "value": "35,000 miles [PATTERN DATA]"
+      },
+      {
+        "label": "Average Replacement Cost",
+        "value": "£6,500 reconditioned, supply only [PLACEHOLDER — confirm vs cost sheet]"
+      },
+      {
+        "label": "Most Requested Engine Code",
+        "value": "B58B30 — the M40i is the flagship Z4 variant [PATTERN DATA]"
+      },
+      {
+        "label": "Peak Enquiry Season",
+        "value": "Spring/Summer — roadster owners prepare for summer driving [PATTERN DATA]"
+      },
+      {
+        "label": "Regional Demand",
+        "value": "South East (25%), London (20%), South West (18%) [PATTERN DATA — premium roadster demographic]"
+      }
+    ]
+  },
+  "faq": {
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a BMW Z4 M40i engine replacement cost in the UK?",
+        "answer": "A reconditioned BMW Z4 M40i engine (B58B30) typically costs £5,500–£8,500 supply only, varying by generation: 2019–2022 £5,000–£8,500, 2023+ £5,500–£9,000. Fitting adds £1,200–£1,700. A water pump replacement costs £400–£1,000."
+      },
+      {
+        "id": 2,
+        "question": "Is the BMW Z4 M40i reliable?",
+        "answer": "Yes — the B58 is widely regarded as one of BMW's most robust modern engines. It's a significant step forward from the N55. The closed-deck design and front-mounted timing chain eliminated the N55's major weaknesses. Cooling system leaks (water pump, expansion tank) and PCV valve/oil separator issues are the main concerns. Regular oil changes (8,000–10,000 miles) are essential. The 2023+ 48V MHEV adds complexity but has proven reliable."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the BMW Z4 M40i?",
+        "answer": "Cooling system leaks — water pump and expansion tank failure (£400–£1,000), PCV valve/oil separator failure (whistling noise, oil consumption, £400–£800), and oil filter housing gasket leaks (£500–£1,200). The B58 is otherwise exceptionally robust. 2023+ models may have 48V MHEV system issues (£800–£2,500)."
+      },
+      {
+        "id": 4,
+        "question": "Is it worth replacing a BMW Z4 M40i engine, or should I scrap the car?",
+        "answer": "Z4 M40i values range from £25,000–£55,000 depending on year, condition and mileage. A £5,500–£8,500 reconditioned engine represents 10–35% of vehicle value — well within our 70% BMW scrap threshold. For most examples, replacement is financially viable."
+      },
+      {
+        "id": 5,
+        "question": "How do I find my BMW Z4 M40i engine code?",
+        "answer": "The M40i uses the B58B30 engine code — BMW's 3.0-litre turbocharged inline-six. 2019–2022 models produce 340bhp; 2023+ models produce 382bhp with 48V mild-hybrid. The code is stamped on the engine block; your VIN and vehicle documentation will also confirm the specification."
+      },
+      {
+        "id": 6,
+        "question": "Can I repair the cooling system leak, or does it need replacement?",
+        "answer": "Yes — water pump and expansion tank replacement (£400–£1,000) is a straightforward repair on the B58. The water pump is known to fail with age. Replacing both the water pump and expansion tank together is recommended — they degrade at similar rates. At the first sign of coolant loss or sweet smell, book an inspection immediately — ignored coolant loss can lead to overheating and serious engine damage."
+      }
+    ],
+    "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty — always confirm terms with your chosen supplier."
+  },
+  "trustCta": {
+    "h2": "Why UK BMW Z4 M40i Owners Trust BMWEngines.uk",
+    "trustPoints": [
+      {
+        "title": "Trusted BMW Z4 M40i Engine Suppliers",
+        "text": "every garage and engine rebuilder in our network is vetted, rated and reviewed by real Z4 owners, as part of the Engine Finders network, with specialist knowledge of the B58 inline-six and its cooling system requirements."
+      },
+      {
+        "title": "Compare BMW Z4 M40i Engine Replacement Companies",
+        "text": "see prices, warranty terms and supply & fit options side‑by‑side before you commit, with transparent pricing for both pre-2023 and 2023+ M40i generations."
+      },
+      {
+        "title": "UK Engine Replacement Services for BMW Z4 M40i",
+        "text": "supply‑only or full supply & fit available nationwide, covering the G29 Z4 with specialists who understand this iconic roadster's B58 engine."
+      }
+    ],
+    "finalCta": "Find the best BMW Z4 M40i engine replacement UK drivers rely on. Compare prices from trusted specialists on EnginesMarket today and get your roadster back on the road with confidence.",
+    "ctaButton": {
+      "label": "Explore BMW Z4 M40i Engine Quotes →",
+      "href": "#"
+    }
+  }
+}

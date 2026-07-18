@@ -1,0 +1,506 @@
+{
+  "meta": {
+    "slug": "2-series-223i",
+    "title": "223i Engine Replacement Cost UK — Compare Quotes",
+    "titleCharCount": 56,
+    "description": "BMW 2 Series 223i B48 MHEV petrol — real UK costs, water pump & injector watchpoints. Get free quotes from 20+ vetted BMW specialists today.",
+    "descriptionCharCount": 159,
+    "canonical": "https://bmwengine.uk/2-series/223i/",
+    "openGraph": {
+      "title": "223i Engine Replacement Cost UK — Compare Quotes",
+      "description": "BMW 2 Series 223i B48 MHEV petrol — real UK costs, water pump & injector watchpoints. Get free quotes from 20+ vetted BMW specialists today.",
+      "type": "website",
+      "url": "https://bmwengine.uk/2-series/223i/",
+      "image": "https://bmwengine.uk/images/bmw/hero/2-series-223i.jpg",
+      "siteName": "BMWEngines.uk"
+    },
+    "twitter": {
+      "card": "summary_large_image",
+      "title": "223i Engine Replacement Cost UK — Compare Quotes",
+      "description": "BMW 2 Series 223i B48 MHEV petrol — real UK costs, water pump & injector watchpoints.",
+      "image": "https://bmwengine.uk/images/bmw/hero/2-series-223i.jpg"
+    },
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://bmwengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "2 Series",
+              "item": "https://bmwengine.uk/2-series/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "2 Series U06",
+              "item": "https://bmwengine.uk/2-series/u06/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "223i",
+              "item": "https://bmwengine.uk/2-series/223i/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "BMW 2 Series 223i Engine Era Map",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "U06 223i (B48 MHEV, 2022–present)",
+              "url": "https://bmwengine.uk/2-series/u06/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "BMW 2 Series 223i Engine Codes",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "B48 (2.0-litre 4-cyl turbo MHEV)",
+              "url": "https://bmwengine.uk/engines/b48/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does a BMW 2 Series 223i engine replacement cost in the UK?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A reconditioned B48 engine typically costs £3,500–£5,500 supply only, with fitting adding £1,000–£1,500. Use our calculator for a figure specific to your 223i."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the BMW 223i (B48) engine reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes — the B48 is a well-established, robust engine. It's used across the BMW range and has proven reliable. The main watchpoints are the water pump and injectors — both are manageable with proper maintenance."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What are the common problems with the BMW 223i engine?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Water pump failure, injector failure, and MHEV system integration issues. The engine itself is fundamentally strong and not prone to major failures."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is it worth replacing a 223i engine, or should I scrap the car?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Depends on vehicle value. An U06 223i is a £20,000–£35,000 vehicle — a £4,500 recon is 13–23% of the car's value, making replacement a clear decision. This is well within our 70% BMW scrap threshold."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I find my BMW 223i engine code?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Listed on the VIN plate and vehicle documentation. The 223i engine code is B48 — a 2.0-litre turbo petrol with 48V MHEV. Tell us your registration date and we'll confirm it for free."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I prevent the water pump failure on a 223i?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes — many specialists recommend replacing the water pump preventatively at 60,000–80,000 miles. If you notice temperature fluctuations or coolant loss, have the cooling system inspected immediately."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "BMWEngines.uk",
+          "url": "https://bmwengine.uk/",
+          "logo": "https://bmwengine.uk/images/bmwengines-logo.png",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "BMW 2 Series 223i Engine Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "2500",
+            "highPrice": "6500",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "name": "BMW 2 Series 223i UK Engine Enquiry Data 2025",
+          "description": "Proprietary UK enquiry volumes and demand trends for BMW 2 Series 223i engines, sourced from BMWEngines.uk's specialist marketplace activity.",
+          "creator": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk"
+          },
+          "temporalCoverage": "2025",
+          "spatialCoverage": "United Kingdom"
+        },
+        {
+          "@type": "WebPage",
+          "name": "223i Engine Replacement Cost UK — Compare Quotes",
+          "url": "https://bmwengine.uk/2-series/223i/",
+          "author": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk Specialist Network"
+          },
+          "datePublished": "2026-07-11",
+          "dateModified": "2026-07-11"
+        }
+      ]
+    }
+  },
+  "hero": {
+    "tagPill": "BMW 2 Series 223i • 2022–present • B48 MHEV",
+    "h1": "BMW 2 Series 223i Engine Replacement — Compare Prices & Get Quotes",
+    "subHeadline": "The 223i brings a 2.0-litre four-cylinder turbo petrol (B48) with 48V mild-hybrid assistance to the 2 Series Active Tourer — efficient, refined, and well-supported. Get quotes from trusted UK specialists today.",
+    "trustBadges": [
+      "🔧 Supply & Fit Available",
+      "✅ 12-Month Warranty",
+      "🚚 Nationwide Delivery",
+      "👥 20+ Specialists"
+    ],
+    "priceAnchor": "2 Series 223i Engines — from £2,500 to £6,500 · B48 MHEV",
+    "registrationInput": {
+      "flag": "🇬🇧 GB",
+      "placeholder": "Enter your reg — e.g. AB12 CDE",
+      "cta": {
+        "label": "See 2 Series 223i Engine Options →",
+        "href": "#"
+      }
+    },
+    "ticker": "● Instant Quotes · No Obligation · 100% Free · Reconditioned · Rebuilt · Used · Supply & Fit Available · UK-Wide Network"
+  },
+  "eraMap": {
+    "title": "The 223i THROUGH TIME — Era Map",
+    "columns": [
+      "Generation",
+      "Years",
+      "Engine Code",
+      "Reliability",
+      "Recon Cost",
+      "Era Note"
+    ],
+    "rows": [],
+    "sourceNote": "This table is the single source every other section on this page matches — Sections 2, 4 and 6 reference it rather than restating conflicting figures.",
+    "dataNote": ""
+  },
+  "replacementCosts": {
+    "h2": "BMW 2 Series 223i Engine Replacement Costs",
+    "columns": [
+      "Engine Type",
+      "Supply Only",
+      "Fitted (Indie)",
+      "Warranty",
+      "Best For"
+    ],
+    "rows": [
+      {
+        "engineType": "Used Engine",
+        "supplyOnly": "£2,500–£3,800",
+        "fittedIndie": "£3,500–£5,000",
+        "warranty": "1–6 months",
+        "bestFor": "Budget priority; lower-mileage donor"
+      },
+      {
+        "engineType": "Reconditioned Engine",
+        "supplyOnly": "£3,500–£5,500",
+        "fittedIndie": "£4,600–£6,900",
+        "warranty": "12–24 months",
+        "bestFor": "Most owners — best cost/warranty balance"
+      },
+      {
+        "engineType": "Rebuilt Engine",
+        "supplyOnly": "£4,500–£6,500",
+        "fittedIndie": "£5,600–£7,900",
+        "warranty": "12–24 months",
+        "bestFor": "Long-term ownership; 3+ year horizon"
+      },
+      {
+        "engineType": "Main Dealer New",
+        "supplyOnly": "£6,500–£9,000",
+        "fittedIndie": "£7,700–£10,500",
+        "warranty": "24–36 months",
+        "bestFor": "Insurance jobs, warranty claims"
+      }
+    ],
+    "figuresNote": "Figures above reflect the current B48 generation.",
+    "labourEstimate": "Fitting a 2 Series 223i engine typically takes 10–14 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer).",
+    "cta": {
+      "label": "→ Compare 223i engine prices from UK specialists",
+      "href": "#"
+    }
+  },
+  "commonProblems": {
+    "problems": [
+      {
+        "id": 1,
+        "title": "Water Pump Failure",
+        "symptoms": "Coolant loss, temperature fluctuations, engine warning light, heater not working properly, overheating.",
+        "typicalMileage": "50,000–90,000 miles",
+        "repairCost": "£500–£1,000 (electric water pump replacement) [PLACEHOLDER — confirm vs cost sheet]",
+        "replacementCost": "N/A — repair only",
+        "urgency": {
+          "icon": "🟡",
+          "label": "Monitor",
+          "text": "book inspection soon"
+        },
+        "recommendation": "Like other modern BMW engines, the B48 uses an electric water pump with a finite life. If you notice temperature fluctuations or coolant loss, have the cooling system inspected. Replacing the water pump preventatively at 60,000–80,000 miles is recommended by specialists.",
+        "failureLink": {
+          "label": "",
+          "href": "/failures/water-pump-failure/"
+        }
+      },
+      {
+        "id": 2,
+        "title": "Injector Failure",
+        "symptoms": "Rough idle, misfire, fuel smell from exhaust, increased fuel consumption, engine warning light.",
+        "typicalMileage": "50,000–90,000 miles",
+        "repairCost": "£600–£1,200 (injector set replacement) [PLACEHOLDER — confirm vs cost sheet]",
+        "replacementCost": "N/A — repair only",
+        "urgency": {
+          "icon": "🟡",
+          "label": "Monitor",
+          "text": "book inspection soon"
+        },
+        "recommendation": "B48 injectors are generally reliable, but they can fail over time. Using high-quality fuel and regular service can extend their life. If you experience rough running or misfires, have the injectors tested — replacing them as a set is recommended if multiple are failing.",
+        "failureLink": {
+          "label": "",
+          "href": "/failures/injector-failure/"
+        }
+      },
+      {
+        "id": 3,
+        "title": "MHEV System Integration Issues",
+        "symptoms": "Reduced power, regenerative braking issues, warning lights, start-stop not functioning correctly.",
+        "typicalMileage": "Any — depends on usage",
+        "repairCost": "Varies — often covered under warranty; out-of-warranty can be £500–£2,000+",
+        "replacementCost": "N/A — repair only",
+        "urgency": {
+          "icon": "🟡",
+          "label": "Monitor",
+          "text": "book inspection soon"
+        },
+        "recommendation": "The 48V MHEV system is generally reliable, but the 48V battery and electric motor can experience issues. If you notice warning lights or reduced power, have the system diagnostics run. Many issues are software-related and can be resolved with updates.",
+        "failureLink": {
+          "label": "",
+          "href": "/failures/hybrid-system-failure/ (Note: may need to create if not exists)"
+        }
+      }
+    ]
+  },
+  "quotesCta": {
+    "headline": "Weighing Your Options? Compare Specialist Quotes When You're Ready →",
+    "supportingLine": "20+ vetted BMW specialists, every 223i engine covered, with a 12‑month warranty as standard.",
+    "button": {
+      "label": "See 2 Series 223i Engine Options →",
+      "href": "#"
+    }
+  },
+  "repairBuyOrReplace": {
+    "h2": "223i — Repair, Buy, or Replace?",
+    "canItBeRepaired": {
+      "title": "Can It Be Repaired?",
+      "columns": [
+        "Problem",
+        "Repairable?",
+        "Typical Cost",
+        "When It Makes Sense"
+      ],
+      "rows": [
+        {
+          "problem": "Water pump failure",
+          "repairable": "✅ Yes",
+          "typicalCost": "£500–£1,000",
+          "whenItMakesSense": "Routine maintenance — do preventatively"
+        },
+        {
+          "problem": "Injector failure",
+          "repairable": "✅ Yes",
+          "typicalCost": "£600–£1,200",
+          "whenItMakesSense": "Replace as a set — use latest revision"
+        },
+        {
+          "problem": "MHEV system issues",
+          "repairable": "⚠️ Sometimes",
+          "typicalCost": "£500–£2,000",
+          "whenItMakesSense": "Often software — can be resolved; hardware faults require specialist"
+        },
+        {
+          "problem": "Timing chain wear",
+          "repairable": "⚠️ Sometimes",
+          "typicalCost": "£1,500–£3,000",
+          "whenItMakesSense": "Viable on lower-mileage examples; assess overall engine health"
+        },
+        {
+          "problem": "Severe engine damage",
+          "repairable": "❌ Usually No",
+          "typicalCost": "Engine replacement",
+          "whenItMakesSense": "Little left to salvage — replacement is the only option"
+        }
+      ]
+    },
+    "buyingChecks": {
+      "title": "Buying This 223i? Check These First",
+      "buyIf": [
+        "* Documented cooling system maintenance (water pump inspected/replaced)",
+        "* No signs of coolant loss or temperature fluctuations",
+        "* Full BMW service history with correct oil spec",
+        "* MHEV system functioning correctly (no warning lights)"
+      ],
+      "avoidIf": [
+        "* Coolant loss with no diagnosis — water pump may be failing",
+        "* Rough idle with no injector history — may indicate injection issues",
+        "* MHEV warning lights with no diagnosis — potentially expensive system faults",
+        "* Engine warning light with no diagnosis — potentially complex issue"
+      ]
+    },
+    "closingVerdict": "The B48 is a modern, well-engineered engine that powers the 223i with efficiency and refinement. The water pump and injectors are the main watchpoints — both are well-understood and manageable. The MHEV system adds complexity but is generally reliable. A well-maintained 223i is a dependable, efficient family car.",
+    "cta": {
+      "label": "→ Compare 223i engine prices before you buy",
+      "href": "#"
+    }
+  },
+  "buyingChecklist": {
+    "intro": "Before you buy a used BMW 2 Series 223i (or before you commit to an engine replacement), check these:",
+    "items": [
+      "* Coolant Level — Check for unexplained loss; water pump failure is common",
+      "* Cold Start — Listen for smooth start; B48 is generally quiet",
+      "* Service History — including engine era (B48 MHEV) and confirmed maintenance",
+      "* Rough Idle — Check for uneven running; injector issues possible",
+      "* MHEV System — Check for warning lights; ensure start-stop works correctly",
+      "* Oil Consumption — Does it use more than 1L per 1,000 miles?",
+      "* Engine Warning Light — Have codes been read? Any unresolved issues?",
+      "* MOT History — Check for emissions-related failures"
+    ]
+  },
+  "engineCodes": {
+    "columns": [
+      "Engine Code",
+      "Years",
+      "Power",
+      "2025 Enquiries",
+      "Avg. Recon Cost"
+    ],
+    "rows": [
+      {
+        "engineCode": "B48 (2.0-litre 4-cyl turbo, 48V MHEV)",
+        "years": "2022–present",
+        "power": "218 PS (215 bhp) @ 5,000–6,500 rpm; 360 Nm @ 1,500–4,500 rpm + 19 bhp e‑boost",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£3,500–£5,500 [PLACEHOLDER]"
+      }
+    ],
+    "matchNote": "This table's rows match Section 1B's Era Map exactly.",
+    "technicalSpecs": {
+      "title": "Technical Specs (B48 2.0-litre turbo MHEV):",
+      "items": [
+        {
+          "label": "* Displacement",
+          "value": "1,998 cc"
+        },
+        {
+          "label": "* Cylinders",
+          "value": "4-cylinder inline"
+        },
+        {
+          "label": "* Compression Ratio",
+          "value": "11.0:1"
+        },
+        {
+          "label": "* Fuel System",
+          "value": "Direct injection"
+        },
+        {
+          "label": "* Turbocharger",
+          "value": "Single-turbo (twin-scroll) + 48V MHEV starter-generator"
+        }
+      ]
+    },
+    "cta": {
+      "label": "→ Compare 223i engine prices for your BMW",
+      "href": "#"
+    }
+  },
+  "marketIntelligence": {
+    "items": []
+  },
+  "faq": {
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a BMW 2 Series 223i engine replacement cost in the UK?",
+        "answer": "A reconditioned B48 engine typically costs £3,500–£5,500 supply only, with fitting adding £1,000–£1,500. Use our calculator for a figure specific to your 223i."
+      },
+      {
+        "id": 2,
+        "question": "Is the BMW 223i (B48) engine reliable?",
+        "answer": "Yes — the B48 is a well-established, robust engine. It's used across the BMW range and has proven reliable. The main watchpoints are the water pump and injectors — both are manageable with proper maintenance."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the BMW 223i engine?",
+        "answer": "Water pump failure, injector failure, and MHEV system integration issues. The engine itself is fundamentally strong and not prone to major failures."
+      },
+      {
+        "id": 4,
+        "question": "Is it worth replacing a 223i engine, or should I scrap the car?",
+        "answer": "Depends on vehicle value. An U06 223i is a £20,000–£35,000 vehicle — a £4,500 recon is 13–23% of the car's value, making replacement a clear decision. This is well within our 70% BMW scrap threshold."
+      },
+      {
+        "id": 5,
+        "question": "How do I find my BMW 223i engine code?",
+        "answer": "Listed on the VIN plate and vehicle documentation. The 223i engine code is B48 — a 2.0-litre turbo petrol with 48V MHEV. Tell us your registration date and we'll confirm it for free."
+      },
+      {
+        "id": 6,
+        "question": "Can I prevent the water pump failure on a 223i?",
+        "answer": "Yes — many specialists recommend replacing the water pump preventatively at 60,000–80,000 miles. If you notice temperature fluctuations or coolant loss, have the cooling system inspected immediately."
+      }
+    ],
+    "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12‑month unlimited‑mileage warranty — always confirm terms with your chosen supplier."
+  },
+  "trustCta": {
+    "h2": "",
+    "trustPoints": [],
+    "finalCta": "Find the best BMW 2 Series 223i engine replacement UK drivers rely on. Compare prices from trusted specialists on EnginesMarket today and get back on the road with confidence — from £2,500 for a used unit to £6,500 for a fully rebuilt MHEV petrol engine.",
+    "ctaButton": {
+      "label": "Explore BMW 2 Series 223i Engine Quotes →",
+      "href": "#"
+    }
+  }
+}

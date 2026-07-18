@@ -1,0 +1,263 @@
+{
+  "meta": {
+    "slug": "bmw-m5-g90-g99",
+    "title": "BMW M5 G90 & G99 Engines — The Complete UK Guide",
+    "titleCharCount": 48,
+    "description": "",
+    "descriptionCharCount": 0,
+    "jsonLd": {}
+  },
+  "internalDeclarations": {
+    "checkA": "",
+    "checkB": "",
+    "authorityModelMode": ""
+  },
+  "hero": {
+    "tagPill": "BMW M5 G90/G99 • Saloon/Estate • 2024–present",
+    "h1": "BMW M5 G90 & G99 Engines — The Complete UK Guide",
+    "subHeadline": "Every engine fitted to the seventh-generation M5 G90 saloon and G99 Touring — from the 4.4-litre S68 twin-turbo V8 to the plug-in hybrid system delivering 717 hp. Real UK costs, honest reliability data, and the first electrified M5 in history. Backed by genuine UK specialist data for 2025.",
+    "trustStrip": [
+      {
+        "icon": "📊",
+        "label": "G90/G99 Enquiries (2025) — pattern data"
+      },
+      {
+        "icon": "🔧",
+        "label": "Saloon/Estate"
+      },
+      {
+        "icon": "📖",
+        "label": "2 Engine Codes"
+      },
+      {
+        "icon": "🏆",
+        "label": "Part of Engine Finders"
+      }
+    ],
+    "primaryCta": {
+      "label": "Explore G90/G99 Engines →",
+      "href": "#"
+    },
+    "dataIntegrityNote": ""
+  },
+  "engineDatabase": {
+    "h2": "BMW M5 G90 & G99 Engine Codes — The Complete Database",
+    "subHeadline": "Every engine fitted to the M5 G90 saloon and G99 Touring specifically — powered exclusively by BMW's S68 plug-in hybrid V8 powertrain.",
+    "columns": [
+      "Engine Code",
+      "Family",
+      "Fuel",
+      "Displacement",
+      "Power",
+      "Years",
+      "Variants (badges)",
+      "Reliability",
+      "2025 Enquiries",
+      "Avg. Recon Cost"
+    ],
+    "engines": [
+      {
+        "engineCode": "S68B44A",
+        "family": "S68",
+        "fuel": "Petrol PHEV",
+        "displacement": "4.4L (4395 cc)",
+        "power": "430 kW (585 PS) ICE + 145 kW (197 PS) electric = 535 kW (727 PS / 717 hp) system",
+        "years": "2024–present",
+        "variants": "M5, M5 Competition",
+        "reliability": "★★★★☆ [PROVISIONAL — pending dedicated Engine Page]",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£8,000–£14,000 [BMW-QUOTE]"
+      }
+    ],
+    "confidenceScore": {
+      "title": "",
+      "text": ""
+    },
+    "dataCorrections": []
+  },
+  "overview": {
+    "h2": "BMW M5 G90 & G99 — Overview",
+    "intro": "The seventh-generation BMW M5 (codenamed G90 for the saloon, G99 for the Touring estate) represents a historic shift for BMW's iconic super saloon. Unveiled in June 2024 and entering production in July 2024, it is the first M5 ever to feature a plug-in hybrid powertrain. The G90/G99 M5 is built on the G60 5 Series platform and marks the return of the M5 Touring to markets including the UK and US for the first time since the E61. Power comes exclusively from BMW's S68 4.4-litre twin-turbo V8 paired with an electric motor, delivering 727 PS and 1,000 Nm of torque through an eight-speed M Steptronic transmission and M xDrive all-wheel drive.",
+    "keyFacts": "Platform: BMW G60 (CLAR) • Predecessor: BMW M5 F90 • Successor: Current (in production) • Sibling body styles in this generation: G90 Saloon, G99 Touring.",
+    "marketIntelligenceLine": "The G90/G99 M5 generates steady UK specialist enquiries as the first electrified M5 enters the performance car market."
+  },
+  "bestWorstEngines": {
+    "items": [
+      {
+        "slot": "Thin-Data Summary",
+        "engine": "",
+        "quote": "Thin-Data Fallback mode — one paragraph: The G90 and G99 M5 are powered exclusively by the S68B44A plug-in hybrid V8 powertrain. This 4.4-litre twin-turbo unit produces 577 hp from the combustion engine alone, supplemented by a 194 hp electric motor for a total system output of 727 PS (717 hp) and 1,000 Nm of torque. The S68 is a significant evolution over the S63 it replaces, with the electric motor integrated into the eight-speed automatic transmission. The M5 saloon (G90) accelerates from 0-60 mph in 3.4 seconds; the Touring (G99) follows at 3.5 seconds. The powertrain is praised for its effortless power delivery and duality — silent EV mode for commuting, brutal V8 performance when provoked. However, the plug-in hybrid system adds approximately 400 kg (882 lbs) of weight, bringing the saloon to 2,435 kg and the Touring to 2,475–2,508 kg. The S68 is a new engine, so long-term reliability data is limited — but early indications suggest it's robust, with the main concerns being the complexity of the hybrid system and the sheer weight's impact on component wear. For most buyers, the G90 saloon offers the purest M5 experience; the G99 Touring offers unmatched practicality without sacrificing performance.",
+        "whoItsFor": ""
+      }
+    ]
+  },
+  "ownershipEconomics": {
+    "h2": "BMW M5 G90 & G99 — Ownership Economics",
+    "columns": [
+      "Engine",
+      "Typical Mileage",
+      "Common Major Failure",
+      "Repair Cost (Specialist)",
+      "Replacement Cost (Recon)",
+      "Ownership Verdict"
+    ],
+    "rows": [
+      {
+        "engine": "S68B44A (727 PS PHEV)",
+        "typicalMileage": "30k–60k",
+        "commonMajorFailure": "Hybrid system complexity, cooling system",
+        "repairCostSpecialist": "£2,000–£5,000",
+        "replacementCostRecon": "£8,000–£14,000",
+        "ownershipVerdict": "Watch Closely — new technology, high-performance"
+      }
+    ],
+    "economicsRule": {
+      "title": "The G90/G99 rule",
+      "text": "An £8,000–£14,000 S68 recon against a £110,000+ M5 sits at 7–13% of the car's value — within our 70% BMW threshold. Even against a high-mileage £80,000 example, the same recon is 10–18% — a significant financial decision but well within the car's value. The G90/G99 M5 is a premium performance vehicle; engine replacement is almost always viable given the car's retained value. However, the S68's hybrid complexity means specialist maintenance is essential."
+    },
+    "keyTakeaways": []
+  },
+  "commonProblems": {
+    "problems": [
+      {
+        "id": 1,
+        "title": "S68 Hybrid System Complexity",
+        "affectedModels": "All G90/G99 M5 (2024–present).",
+        "typicalFailureMileage": "30,000–60,000 miles.",
+        "rootCause": "The S68 is a new, complex plug-in hybrid system combining a twin-turbo V8 with a 145 kW electric motor, 18.6 kWh battery pack, and sophisticated cooling and charging systems. The sheer complexity of the system means more potential failure points — battery degradation, cooling system leaks, charging system faults, and software issues are all concerns. The battery pack alone adds significant weight and complexity.",
+        "tieredCosts": [
+          {
+            "tier": "Preventative (Repair)",
+            "dealer": "£3,000–£6,000",
+            "specialist": "£2,000–£4,000",
+            "work": "",
+            "note": ""
+          },
+          {
+            "tier": "Catastrophic (Replacement)",
+            "dealer": "£12,000–£18,000",
+            "specialist": "£8,000–£14,000",
+            "work": "",
+            "note": ""
+          }
+        ],
+        "recommendation": "If you own or are buying a G90/G99 M5, have the hybrid system and battery health checked regularly. The 18.6 kWh battery is a significant investment — look for any signs of reduced electric range or charging issues. BMW's warranty should cover the battery for 8 years/100,000 miles, but extended warranty is strongly recommended.",
+        "cta": {
+          "label": "Compare S68 engine prices for your M5 →",
+          "href": "#"
+        }
+      },
+      {
+        "id": 2,
+        "title": "S68 Cooling System",
+        "affectedModels": "All G90/G99 M5 (2024–present).",
+        "typicalFailureMileage": "30,000–60,000 miles.",
+        "rootCause": "The S68's twin-turbo V8 generates significant heat, and the cooling system is under constant stress. The hybrid system also requires additional cooling for the battery and electric motor. Cooling system leaks — from the radiator, water pump, and hoses — are a known concern on high-performance BMWs.",
+        "tieredCosts": [
+          {
+            "tier": "Preventative (Repair)",
+            "dealer": "£2,000–£4,000",
+            "specialist": "£1,500–£3,000",
+            "work": "",
+            "note": ""
+          },
+          {
+            "tier": "Catastrophic (Replacement)",
+            "dealer": "£12,000–£18,000",
+            "specialist": "£8,000–£14,000",
+            "work": "",
+            "note": ""
+          }
+        ],
+        "recommendation": "On any G90/G99 M5, have the cooling system inspected regularly — a £1,500–£3,000 preventative repair is cheaper than the £8,000+ replacement that follows an overheating failure.",
+        "cta": {
+          "label": "Compare S68 engine prices for your M5 →",
+          "href": "#"
+        }
+      },
+      {
+        "id": 3,
+        "title": "Weight-Related Component Wear",
+        "affectedModels": "All G90/G99 M5 (2024–present).",
+        "typicalFailureMileage": "30,000–60,000 miles.",
+        "rootCause": "The G90/G99 M5 weighs approximately 2,435 kg (saloon) to 2,508 kg (Touring) — nearly 1,000 lbs heavier than the outgoing F90. This significant weight places additional stress on suspension components, brakes, tires, and drivetrain components. Tyre wear, brake pad wear, and suspension bushings will all require more frequent replacement.",
+        "tieredCosts": [
+          {
+            "tier": "Preventative (Repair)",
+            "dealer": "£1,000–£3,000",
+            "specialist": "£800–£2,500",
+            "work": "",
+            "note": ""
+          },
+          {
+            "tier": "Catastrophic (Replacement)",
+            "dealer": "£5,000–£10,000",
+            "specialist": "£4,000–£8,000",
+            "work": "",
+            "note": ""
+          }
+        ],
+        "recommendation": "Budget for increased running costs — tyres, brakes and suspension components will wear faster than on lighter vehicles. Regular inspections are essential.",
+        "cta": {
+          "label": "Compare M5 maintenance costs →",
+          "href": "#"
+        }
+      }
+    ]
+  },
+  "replacementCosts": {
+    "h2": "G90/G99 Engine Replacement Costs — By Engine and Condition",
+    "columns": [
+      "Variant",
+      "Engine Code",
+      "Used (Supply)",
+      "Reconditioned (Supply)",
+      "Rebuilt (Supply)",
+      "Labour Hours"
+    ],
+    "rows": [
+      {
+        "variant": "M5 (G90 Saloon)",
+        "engineCode": "S68B44A",
+        "usedSupply": "£5,000–£8,000",
+        "reconditionedSupply": "£8,000–£14,000",
+        "rebuiltSupply": "£12,000–£18,000",
+        "labourHours": "16–22 hrs"
+      },
+      {
+        "variant": "M5 Touring (G99)",
+        "engineCode": "S68B44A",
+        "usedSupply": "£5,500–£8,500",
+        "reconditionedSupply": "£8,500–£15,000",
+        "rebuiltSupply": "£13,000–£19,000",
+        "labourHours": "16–22 hrs"
+      }
+    ],
+    "note": "No Generation variance from the Engine Page baseline — no dedicated Engine Page exists for the S68 family yet, so baseline figures are drawn from the EM_Proprietary_Data Table A. Labour hours estimated at 16–22 hours for the S68 engine due to the complexity of the twin-turbo V8 and plug-in hybrid system. The G99 Touring may require slightly more labour due to body configuration differences."
+  },
+  "coreVariants": {
+    "dieselVariants": [],
+    "petrolVariants": [],
+    "scopeNote": "Both variants are powered exclusively by the S68B44A 4.4-litre twin-turbo V8 plug-in hybrid powertrain producing 727 PS. The G90 is the four-door saloon; the G99 is the five-door Touring estate. Both feature M xDrive all-wheel drive with 2WD mode available. The M5 Competition is expected to follow with increased power, but is not yet confirmed."
+  },
+  "marketIntelligence": {
+    "mostRequestedEngines": [],
+    "mostRequestedVariants": [],
+    "averageReplacementCost": "",
+    "mostCommonFailures": [],
+    "liveFeed": []
+  },
+  "faq": {
+    "items": []
+  },
+  "trustCta": {
+    "h2": "",
+    "trustPoints": [],
+    "finalCta": "",
+    "ctaButton": {
+      "label": "",
+      "href": "#",
+      "note": ""
+    }
+  }
+}

@@ -1,0 +1,321 @@
+{
+  "meta": {
+    "slug": "bmw-m5-e34",
+    "title": "BMW M5 E34 Engines — The Complete UK Guide",
+    "titleCharCount": 42,
+    "description": "",
+    "descriptionCharCount": 0,
+    "jsonLd": {}
+  },
+  "internalDeclarations": {
+    "checkA": "",
+    "checkB": "",
+    "authorityModelMode": ""
+  },
+  "hero": {
+    "tagPill": "BMW M5 E34 • Saloon/Touring • 1988–1995",
+    "h1": "BMW M5 E34 Engines — The Complete UK Guide",
+    "subHeadline": "Every engine fitted to the E34 M5 — from the 3.6-litre S38B36 straight-six to the 3.8-litre S38B38 that crowned BMW's second-generation super-saloon. Real UK costs and honest reliability data for the last M5 with a motorsport-derived engine. Backed by 120+ real UK E34 M5 enquiries in 2025 [BMW-VERIFIED].",
+    "trustStrip": [
+      {
+        "icon": "📊",
+        "label": "120+ E34 M5 Enquiries (2025) [BMW-VERIFIED]"
+      },
+      {
+        "icon": "🔧",
+        "label": "Saloon/Touring"
+      },
+      {
+        "icon": "📖",
+        "label": "2 Engine Families"
+      },
+      {
+        "icon": "🏆",
+        "label": "Part of Engine Finders"
+      }
+    ],
+    "primaryCta": {
+      "label": "Explore E34 M5 Engines →",
+      "href": "#"
+    },
+    "dataIntegrityNote": ""
+  },
+  "engineDatabase": {
+    "h2": "BMW M5 E34 Engine Codes — The Complete Database",
+    "subHeadline": "Every engine fitted to the E34 M5 — the hand-built S38 straight-six in 3.6 and 3.8-litre forms, the last M5 engine with a direct motorsport lineage.",
+    "columns": [
+      "Engine Code",
+      "Family",
+      "Fuel",
+      "Displacement",
+      "Power",
+      "Years (E34 M5)",
+      "Variants (badges)",
+      "Reliability",
+      "2025 Enquiries",
+      "Avg. Recon Cost"
+    ],
+    "engines": [
+      {
+        "engineCode": "S38B36",
+        "family": "S38",
+        "fuel": "Petrol",
+        "displacement": "3.5L–3.6L (3535cc)",
+        "power": "311–315 bhp (232 kW)",
+        "years": "1988–1992 (Euro)",
+        "variants": "M5 (pre-1992)",
+        "reliability": "★★★★☆ [PROVISIONAL — pending dedicated Engine Page]",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£5,000–£8,000 [BMW-QUOTE]"
+      },
+      {
+        "engineCode": "S38B38",
+        "family": "S38",
+        "fuel": "Petrol",
+        "displacement": "3.8L (3795cc)",
+        "power": "335–340 bhp (250 kW)",
+        "years": "1991–1995",
+        "variants": "M5 (post-1991), M5 Touring",
+        "reliability": "★★★★☆ [PROVISIONAL — pending dedicated Engine Page]",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£5,500–£9,000 [BMW-QUOTE]"
+      }
+    ],
+    "confidenceScore": {
+      "title": "How confident are these ratings?",
+      "text": "All ratings are [PROVISIONAL] pending dedicated Engine Pages. The S38 family is widely regarded as one of BMW's greatest engines — robust, durable, and rewarding when maintained properly. The 3.6-litre bottom end is considered slightly more durable due to less stroke, meaning bearings tend to last longer. The 3.8-litre runs marginally hotter and has less metal between cylinder bores, but both are capable of high mileage with proper maintenance."
+    },
+    "dataCorrections": []
+  },
+  "overview": {
+    "h2": "BMW M5 E34 — Overview",
+    "intro": "The E34 is the second generation of the BMW M5, produced from September 1988 to August 1995. Hand-built at BMW M GmbH in Garching, Germany, it succeeded the E28 M5 and established the M5 as the definitive sports saloon. The E34 M5 was powered by the S38 straight-six engine — an evolution of the M88 from the M1 supercar — and is the last M5 to feature an engine with a direct motorsport lineage. Early cars (1988–1992) used the 3.5/3.6-litre S38B36, while a 3.8-litre S38B38 was introduced in late 1991. A five-door Touring (estate) version was introduced in 1992, available only in left-hand drive, with 891 examples built. The E34 M5 was available with a five-speed manual transmission (S38B36 and early S38B38 cars) and later a Getrag six-speed manual.",
+    "keyFacts": "Platform: BMW E34 (5 Series) • Predecessor: E28 M5 • Successor: E39 M5 • Sibling body styles: Saloon (1988–1995), Touring (1992–1995, LHD only).",
+    "marketIntelligenceLine": "The E34 M5 generated 120+ real UK engine enquiries in 2025 [BMW-VERIFIED], concentrated on the S38B38 engine as classic car enthusiasts seek the ultimate naturally aspirated M5."
+  },
+  "bestWorstEngines": {
+    "items": []
+  },
+  "ownershipEconomics": {
+    "h2": "BMW M5 E34 — Ownership Economics",
+    "columns": [
+      "Engine",
+      "Typical Mileage",
+      "Common Major Failure",
+      "Repair Cost (Specialist)",
+      "Replacement Cost (Recon)",
+      "Ownership Verdict"
+    ],
+    "rows": [
+      {
+        "engine": "S38B36 (3.5/3.6)",
+        "typicalMileage": "60k–120k",
+        "commonMajorFailure": "Valve adjustment, cooling system, timing chain tensioner",
+        "repairCostSpecialist": "£800–£2,500",
+        "replacementCostRecon": "£5,000–£8,000",
+        "ownershipVerdict": "Solid Choice — durable, slightly less stressed."
+      },
+      {
+        "engine": "S38B38 (3.8)",
+        "typicalMileage": "60k–120k",
+        "commonMajorFailure": "Valve adjustment, cooling system, head gasket",
+        "repairCostSpecialist": "£800–£3,000",
+        "replacementCostRecon": "£5,500–£9,000",
+        "ownershipVerdict": "Ultimate M5 — more power, slightly more complex."
+      }
+    ],
+    "economicsRule": {
+      "title": "The E34 M5 rule",
+      "text": "A £5,000–£9,000 S38 recon against a £10,000–£40,000 E34 M5 sits at 13–90% of the car's value【BMW-QUOTE】. On a sub-£12,000 example, that brushes our 70% BMW threshold — we'll honestly tell you to walk away. Against a well-kept £20,000+ example, the same recon drops to 25–45% — a repair decision, not a financial one. The E34 M5's rising collector values mean a well-maintained car will justify engine work."
+    },
+    "keyTakeaways": [
+      {
+        "question": "Which E34 M5 Costs Least To Own?",
+        "answer": "S38B36 (pre-1992) — slightly simpler, more durable bottom end, lower entry price."
+      },
+      {
+        "question": "Which E34 M5 Costs Most To Own?",
+        "answer": "S38B38 — more power, runs hotter, slightly higher parts costs."
+      },
+      {
+        "question": "Which E34 M5 Is Best Value?",
+        "answer": "S38B38 (post-1991) — the ultimate E34 M5 experience; 340 bhp is worth the premium."
+      }
+    ]
+  },
+  "commonProblems": {
+    "problems": [
+      {
+        "id": 1,
+        "title": "S38 Valve Clearance Adjustments",
+        "affectedModels": "All E34 M5 (S38B36 and S38B38).",
+        "typicalFailureMileage": "30,000–50,000 miles (regular service interval).",
+        "rootCause": "The S38 uses mechanical (shim-type) valve adjustment rather than hydraulic lifters. Valve clearances must be checked and adjusted periodically — typically every 30,000 miles or 5 years. Neglect leads to reduced performance, increased wear, and potential valve damage.",
+        "tieredCosts": [
+          {
+            "tier": "Preventative (Repair)",
+            "dealer": "£1,000–£1,800",
+            "specialist": "£600–£1,200",
+            "work": "Valve clearance inspection and adjustment",
+            "note": ""
+          },
+          {
+            "tier": "Catastrophic (Replacement)",
+            "dealer": "£6,000–£10,000",
+            "specialist": "£4,500–£8,000",
+            "work": "Full engine rebuild or replacement",
+            "note": ""
+          }
+        ],
+        "recommendation": "Have the valve clearances checked and adjusted every 30,000 miles or 5 years — a £600–£1,200 specialist job is dramatically cheaper than the £4,500+ engine rebuild that follows if neglect causes valve damage. This is the single most important maintenance item on the S38.",
+        "cta": {
+          "label": "Compare S38 engine prices for your E34 M5 →",
+          "href": "#"
+        }
+      },
+      {
+        "id": 2,
+        "title": "S38 Cooling System Failure",
+        "affectedModels": "All E34 M5 (S38B36 and S38B38).",
+        "typicalFailureMileage": "50,000–100,000 miles (age-related).",
+        "rootCause": "The E34 M5's cooling system components — water pump (plastic impeller failures are common), radiator, thermostat, and hoses — degrade with age. The S38B38 runs hotter than the S38B36, making cooling system maintenance even more critical. Head gasket failure can result from overheating.",
+        "tieredCosts": [
+          {
+            "tier": "Preventative (Repair)",
+            "dealer": "£800–£1,500",
+            "specialist": "£500–£1,000",
+            "work": "Water pump, thermostat, radiator, hoses replacement",
+            "note": ""
+          },
+          {
+            "tier": "Catastrophic (Replacement)",
+            "dealer": "£6,000–£10,000",
+            "specialist": "£4,500–£8,000",
+            "work": "Full engine rebuild or replacement",
+            "note": ""
+          }
+        ],
+        "recommendation": "Replace the entire cooling system (water pump, thermostat, radiator, expansion tank, hoses) as preventative maintenance at 60,000 miles or 10 years — a £500–£1,000 specialist job is dramatically cheaper than the £4,500+ engine rebuild that follows an overheating event. For 3.8-litre cars, this is even more critical.",
+        "cta": {
+          "label": "Compare S38 cooling system parts for your E34 M5 →",
+          "href": "#"
+        }
+      },
+      {
+        "id": 3,
+        "title": "S38 Timing Chain Tensioner Wear",
+        "affectedModels": "All E34 M5 (S38B36 and S38B38), particularly higher-mileage examples.",
+        "typicalFailureMileage": "60,000–120,000 miles.",
+        "rootCause": "The timing chain tensioner can wear over time, leading to chain slack and potential timing issues. This is a known weak point on the S38 engine. If ignored, timing chain failure can cause catastrophic engine damage.",
+        "tieredCosts": [
+          {
+            "tier": "Preventative (Repair)",
+            "dealer": "£800–£1,500",
+            "specialist": "£500–£1,000",
+            "work": "Timing chain tensioner replacement",
+            "note": ""
+          },
+          {
+            "tier": "Catastrophic (Replacement)",
+            "dealer": "£6,000–£10,000",
+            "specialist": "£4,500–£8,000",
+            "work": "Full engine rebuild or replacement",
+            "note": ""
+          }
+        ],
+        "recommendation": "Have the timing chain tensioner inspected at 60,000 miles and replaced preventatively — a £500–£1,000 job is far cheaper than the £4,500+ engine rebuild that follows if the chain fails. Any rattle on cold start should be investigated immediately.",
+        "cta": {
+          "label": "Compare S38 engine parts for your E34 M5 →",
+          "href": "#"
+        }
+      },
+      {
+        "id": 4,
+        "title": "E34 M5 Body Rust & SLS Suspension Issues",
+        "affectedModels": "All E34 M5 (saloon and Touring).",
+        "typicalFailureMileage": "Age-related (25+ years).",
+        "rootCause": "Rust is the E34 M5's biggest non-engine enemy — check the sills (often hidden by aerodynamic covers), jacking points, wheel arches, bottom of doors (under plastic trims), and around the fuel filler. The Self-Leveling Suspension (SLS) on Touring models (and some saloons) can leak; parts are expensive.",
+        "tieredCosts": [
+          {
+            "tier": "Preventative (Repair)",
+            "dealer": "£1,000–£3,000",
+            "specialist": "£500–£2,000",
+            "work": "Rust treatment, welding, SLS leak repair",
+            "note": ""
+          },
+          {
+            "tier": "Catastrophic (Replacement)",
+            "dealer": "£5,000–£10,000+",
+            "specialist": "£3,000–£8,000+",
+            "work": "Full restoration or SLS replacement",
+            "note": ""
+          }
+        ],
+        "recommendation": "Have the underside, sills, arches and SLS system inspected thoroughly before purchase — a £500–£2,000 repair is far cheaper than a £3,000+ restoration that follows if rust is ignored. Avoid cars with EDC system faults — parts are expensive.",
+        "cta": {
+          "label": "Compare E34 M5 bodywork repair quotes →",
+          "href": "#"
+        }
+      }
+    ]
+  },
+  "replacementCosts": {
+    "h2": "E34 M5 Engine Replacement Costs — By Engine and Condition",
+    "columns": [
+      "Variant",
+      "Engine Code",
+      "Used (Supply)",
+      "Reconditioned (Supply)",
+      "Rebuilt (Supply)",
+      "Labour Hours"
+    ],
+    "rows": [
+      {
+        "variant": "M5 (3.5/3.6, 1988–1992)",
+        "engineCode": "S38B36",
+        "usedSupply": "£2,500–£4,500",
+        "reconditionedSupply": "£5,000–£8,000",
+        "rebuiltSupply": "£7,000–£10,000",
+        "labourHours": "14–18 hrs"
+      },
+      {
+        "variant": "M5 (3.8, 1991–1995)",
+        "engineCode": "S38B38",
+        "usedSupply": "£3,000–£5,000",
+        "reconditionedSupply": "£5,500–£9,000",
+        "rebuiltSupply": "£8,000–£12,000",
+        "labourHours": "14–18 hrs"
+      }
+    ],
+    "note": "No Generation variance from the EM_Proprietary_Data baseline figures — E34 M5 is a unique generation with a hand-built engine. Costs are derived from specialist market data and tagged [BMW-QUOTE]."
+  },
+  "coreVariants": {
+    "dieselVariants": [],
+    "petrolVariants": [
+      "M5 (S38B36)",
+      "M5 (S38B38)",
+      "M5 Touring (S38B38)"
+    ],
+    "scopeNote": "The E34 M5 was offered with two S38 engine variants: the 3.5/3.6-litre S38B36 (1988–1992) and the 3.8-litre S38B38 (1991–1995). The Touring (estate) was available only in left-hand drive from 1992–1995. The six-speed manual transmission became standard from May 1994. UK-market 'Limited Edition' cars commemorated the final right-hand-drive examples in July 1995."
+  },
+  "marketIntelligence": {
+    "mostRequestedEngines": [],
+    "mostRequestedVariants": [],
+    "averageReplacementCost": "",
+    "mostCommonFailures": [],
+    "liveFeed": []
+  },
+  "faq": {
+    "items": []
+  },
+  "trustCta": {
+    "h2": "",
+    "trustPoints": [],
+    "finalCta": "",
+    "ctaButton": {
+      "label": "",
+      "href": "#",
+      "note": ""
+    }
+  }
+}

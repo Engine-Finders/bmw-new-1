@@ -1,0 +1,491 @@
+{
+  "meta": {
+    "slug": "7-series-745i",
+    "title": "745i Engine Replacement Cost UK — Compare Quotes",
+    "titleCharCount": 56,
+    "description": "BMW 745i – N62 4.4-litre V8. Real UK costs, valve stem seal facts, and specialist quotes. Get free prices from 20+ vetted specialists today.",
+    "descriptionCharCount": 158,
+    "canonical": "https://bmwengine.uk/7-series/745i/",
+    "openGraph": {
+      "title": "745i Engine Replacement Cost UK — Compare Quotes",
+      "description": "BMW 745i – N62 4.4-litre V8. Real UK costs, valve stem seal facts, and specialist quotes. Get free prices from 20+ vetted specialists today.",
+      "type": "website",
+      "url": "https://bmwengine.uk/7-series/745i/",
+      "image": "https://bmwengine.uk/images/bmw/hero/745i.jpg",
+      "siteName": "BMWEngines.uk"
+    },
+    "twitter": {
+      "card": "summary_large_image",
+      "title": "745i Engine Replacement Cost UK — Compare Quotes",
+      "description": "BMW 745i – N62 4.4-litre V8. Real UK costs, valve stem seal facts, and specialist quotes.",
+      "image": "https://bmwengine.uk/images/bmw/hero/745i.jpg"
+    },
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://bmwengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "7 Series",
+              "item": "https://bmwengine.uk/7-series/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "745i",
+              "item": "https://bmwengine.uk/7-series/745i/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "BMW 745i Engine Era Map",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "E65/E66 745i / 745Li (N62B44A, 2001-2008)",
+              "url": "https://bmwengine.uk/7-series/e65/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "BMW 745i Engine Codes",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "N62B44A",
+              "url": "https://bmwengine.uk/engines/n62/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does a BMW 745i engine replacement cost in the UK?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A reconditioned N62B44A engine typically costs £3,500–£6,500 supply only, with used units available from £1,500–£3,500. Fitting adds £2,000–£3,000. Use our calculator for a figure specific to your car. Main dealer replacement is no longer available — specialist rebuild is the only option."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the BMW 745i engine reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The N62 is a refined and smooth V8, but it has well-documented weaknesses. Valve stem seal failure is the defining issue — it causes excessive oil consumption and blue smoke. Oil leaks (valve cover, timing cover, alternator bracket) and cooling system failures are also common. With preventative maintenance, the engine can be reliable, but these issues are expensive to fix."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What are the common problems with the BMW 745i?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Valve stem seal failure (excessive oil consumption, blue smoke), oil leaks (valve cover gaskets, timing cover gaskets, alternator bracket gasket), cooling system failures (water pump, thermostat), and VANOS/Valvetronic malfunctions. The valve stem seals are the single biggest concern."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is it worth replacing a BMW 745i engine, or should I scrap the car?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "745i values range from £2,000–£8,000 depending on condition. A £3,500–£6,500 reconditioned engine can be 40–80% of the vehicle's value — apply the 70% BMW scrap threshold. If the car is a cherished example with good bodywork and interior, replacement may be worthwhile."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I find my BMW 745i engine code?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The engine code is N62B44A — it's the only engine used in the E65/E66 745i and 745Li (2001–2008). You can find it on the VIN plate, in the vehicle documentation, or on a label on the engine itself. Production ended in 2008."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I repair the N62 valve stem seals, or does the engine need replacement?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The valve stem seals can be replaced without removing the cylinder head, using specialist tools. Replacement costs £2,500–£4,500. It's a labour-intensive job, but far cheaper than a full engine replacement (£3,500+). If you ignore the issue, the catalytic converters will be damaged by oil burning, and eventually the engine may suffer from oil starvation."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "BMWEngines.uk",
+          "url": "https://bmwengine.uk/",
+          "logo": "https://bmwengine.uk/images/bmwengines-logo.png",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "BMW 745i Engine Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "1500",
+            "highPrice": "8500",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "name": "BMW 745i UK Engine Enquiry Data 2025",
+          "description": "Proprietary UK enquiry volumes and demand trends for BMW 745i engines (N62B44A), sourced from BMWEngines.uk's specialist marketplace activity.",
+          "creator": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk"
+          },
+          "temporalCoverage": "2025",
+          "spatialCoverage": "United Kingdom"
+        },
+        {
+          "@type": "WebPage",
+          "name": "745i Engine Replacement Cost UK — Compare Quotes",
+          "url": "https://bmwengine.uk/7-series/745i/",
+          "author": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk Specialist Network"
+          },
+          "datePublished": "2026-07-11",
+          "dateModified": "2026-07-11"
+        }
+      ]
+    }
+  },
+  "hero": {
+    "tagPill": "BMW 7 Series 745i • 2001–2008 • 4.4-litre N62 V8",
+    "h1": "BMW 745i Engine Replacement — Compare Prices & Get Quotes",
+    "subHeadline": "The 745i is powered by BMW's first N62 V8 — a 4.4-litre naturally aspirated engine producing up to 333 hp. It's a refined and smooth powerplant, but one plagued by valve stem seal failure and a host of oil leaks. Get quotes from UK specialists for reconditioned, rebuilt and used units today.",
+    "trustBadges": [
+      "🔧 Supply & Fit Available",
+      "✅ 12-Month Warranty",
+      "🚚 Nationwide Delivery",
+      "👥 20+ Specialists"
+    ],
+    "priceAnchor": "BMW 745i Engines — from £1,500 to £8,500 · Code: N62B44A",
+    "registrationInput": {
+      "flag": "🇬🇧 GB",
+      "placeholder": "Enter your reg — e.g. AB12 CDE",
+      "cta": {
+        "label": "See BMW 745i Engine Options →",
+        "href": "#"
+      }
+    },
+    "ticker": "● Instant Quotes · No Obligation · 100% Free · Reconditioned · Rebuilt · Used · Supply & Fit Available · UK-Wide Network"
+  },
+  "eraMap": {
+    "title": "The 745i THROUGH TIME — Era Map",
+    "columns": [
+      "Generation",
+      "Years",
+      "Engine Code",
+      "Reliability",
+      "Recon Cost",
+      "Era Note"
+    ],
+    "rows": [],
+    "sourceNote": "",
+    "dataNote": ""
+  },
+  "replacementCosts": {
+    "h2": "BMW 745i Engine Replacement Costs",
+    "columns": [
+      "Engine Type",
+      "Supply Only",
+      "Fitted (Indie)",
+      "Warranty",
+      "Best For"
+    ],
+    "rows": [
+      {
+        "engineType": "Used Engine",
+        "supplyOnly": "£1,500–£3,500",
+        "fittedIndie": "£3,000–£5,000",
+        "warranty": "1–6 months",
+        "bestFor": "Budget priority; lower‑mileage examples"
+      },
+      {
+        "engineType": "Reconditioned Engine",
+        "supplyOnly": "£3,500–£6,500",
+        "fittedIndie": "£5,500–£8,500",
+        "warranty": "12–24 months",
+        "bestFor": "Most owners — best cost/warranty balance"
+      },
+      {
+        "engineType": "Rebuilt Engine",
+        "supplyOnly": "£5,000–£8,500",
+        "fittedIndie": "£7,000–£10,500",
+        "warranty": "12–24 months",
+        "bestFor": "Long-term ownership; 3+ year horizon"
+      },
+      {
+        "engineType": "Main Dealer New",
+        "supplyOnly": "N/A — no longer available",
+        "fittedIndie": "N/A",
+        "warranty": "—",
+        "bestFor": "N/A — specialist rebuild only"
+      }
+    ],
+    "figuresNote": "Figures above reflect the current 745i market. Used N62 engines are increasingly scarce. Reconditioning costs are high due to the engine's complexity. Main dealer replacement is no longer available — specialist rebuild is the only option.",
+    "labourEstimate": "Fitting a 745i engine typically takes 14–18 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer). The N62's complexity makes it a specialist job.",
+    "cta": {
+      "label": "→ Compare 745i engine prices from UK specialists",
+      "href": "#"
+    }
+  },
+  "commonProblems": {
+    "problems": [
+      {
+        "id": 1,
+        "title": "Valve Stem Seal Failure",
+        "symptoms": "Blue smoke on cold start, puff of smoke after idling, excessive oil consumption (1L per 1,000 miles or more), visible smoke when accelerating from a standstill",
+        "typicalMileage": "80,000–130,000 miles",
+        "repairCost": "£2,500–£4,500 (valve stem seal replacement — specialist tools required)",
+        "replacementCost": "£3,500–£6,500 (if oil starvation causes bottom-end damage)",
+        "urgency": {
+          "icon": "🔴",
+          "label": "Immediate",
+          "text": "the N62's valve stem seals are the single biggest weakness of this engine"
+        },
+        "recommendation": "The N62's valve stem seals are the engine's Achilles' heel. BMW specified an oil change interval that was too long for the N62, which hardened the seals, causing them to leak. Oil leaks past the seals into the combustion chamber, leading to blue smoke and heavy oil consumption. Replacement is expensive but well-understood by specialists. Many owners live with the oil consumption, but eventually the catalytic converters will be damaged. If you're buying a 745i, budget for this work or accept the oil top-ups.",
+        "failureLink": {
+          "label": "Read the full valve stem seal failure guide",
+          "href": "/failures/valve-stem-seal-failure/"
+        }
+      },
+      {
+        "id": 2,
+        "title": "Oil Leaks (Valve Cover, Timing Cover, Alternator Bracket)",
+        "symptoms": "Oil spots under the car, burning oil smell from the engine bay, low oil level warning, visible oil residue on the engine block",
+        "typicalMileage": "60,000–100,000 miles",
+        "repairCost": "£500–£1,800 (gasket replacement — varies by location)",
+        "replacementCost": "N/A — repair only",
+        "urgency": {
+          "icon": "🟠",
+          "label": "Check",
+          "text": "book inspection urgently"
+        },
+        "recommendation": "The N62 is notorious for oil leaks. Common leak points include valve cover gaskets, upper timing cover gaskets, and the alternator bracket gasket. These leaks can be expensive to fix due to the labour involved. Check for oil spots regularly and investigate any drops in oil level. Ignoring oil leaks can lead to low oil pressure and eventual engine damage.",
+        "failureLink": {
+          "label": "Read the full oil leak guide",
+          "href": "/failures/oil-leak/"
+        }
+      },
+      {
+        "id": 3,
+        "title": "Cooling System Failures (Water Pump, Thermostat)",
+        "symptoms": "Overheating, coolant loss, temperature gauge fluctuating, heater not working properly, steam from the engine bay, warning light",
+        "typicalMileage": "60,000–100,000 miles",
+        "repairCost": "£500–£1,200 (water pump or thermostat replacement)",
+        "replacementCost": "£3,500–£6,500 (if overheating causes head gasket or engine damage)",
+        "urgency": {
+          "icon": "🔴",
+          "label": "Immediate",
+          "text": "overheating on an N62 can be catastrophic"
+        },
+        "recommendation": "The N62's cooling system is a known weak point. The water pump can fail, and the thermostat can stick open or closed. Overheating is the leading cause of cylinder head damage on these engines. Replace the water pump and thermostat preventatively at around 80,000 miles. Check coolant levels regularly and investigate any drop immediately. A failed water pump can destroy the engine in minutes.",
+        "failureLink": {
+          "label": "Read the full water pump failure guide",
+          "href": "/failures/water-pump-failure/"
+        }
+      }
+    ]
+  },
+  "quotesCta": {
+    "headline": "Weighing Your Options? Compare Specialist Quotes When You're Ready →",
+    "supportingLine": "20+ vetted BMW specialists, every 7 Series engine era covered, with a 12-month warranty as standard.",
+    "button": {
+      "label": "See BMW 745i Engine Options →",
+      "href": "#"
+    }
+  },
+  "repairBuyOrReplace": {
+    "h2": "745i — Repair, Buy, or Replace?",
+    "canItBeRepaired": {
+      "title": "Can It Be Repaired?",
+      "columns": [
+        "Problem",
+        "Repairable?",
+        "Typical Cost",
+        "When It Makes Sense"
+      ],
+      "rows": [
+        {
+          "problem": "Valve stem seals",
+          "repairable": "✅ Yes",
+          "typicalCost": "£2,500–£4,500",
+          "whenItMakesSense": "Expensive but well-understood; specialist tools allow replacement without removing cylinder head"
+        },
+        {
+          "problem": "Oil leaks (valve cover, timing cover)",
+          "repairable": "✅ Yes",
+          "typicalCost": "£500–£1,800",
+          "whenItMakesSense": "Labour-intensive but straightforward; catch before oil starvation"
+        },
+        {
+          "problem": "Water pump failure",
+          "repairable": "✅ Yes",
+          "typicalCost": "£500–£1,200",
+          "whenItMakesSense": "Preventative replacement at 80k miles — cheaper than an engine"
+        },
+        {
+          "problem": "VANOS/Valvetronic failure",
+          "repairable": "✅ Yes",
+          "typicalCost": "£800–£2,000",
+          "whenItMakesSense": "Specialist repair or rebuild; well-understood by BMW specialists"
+        },
+        {
+          "problem": "Timing chain failure (rare)",
+          "repairable": "❌ Usually No",
+          "typicalCost": "Engine replacement",
+          "whenItMakesSense": "If chain jumps and valves hit pistons, replacement is the only option"
+        }
+      ]
+    },
+    "buyingChecks": {
+      "title": "Buying This 745i? Check These First",
+      "buyIf": [
+        "* Documented valve stem seal replacement — the defining issue on the N62",
+        "* Evidence of cooling system maintenance — water pump, thermostat and coolant changed",
+        "* Full service history with frequent oil changes (not the extended BMW interval)",
+        "* A well-maintained example where the previous owner understood the N62's needs"
+      ],
+      "avoidIf": [
+        "* No proof of valve stem seal work — you're buying a known risk",
+        "* Blue smoke on cold start or after idling — valve stem seals are failing",
+        "* Oil spots under the car without a clear diagnosis — oil leaks are expensive to fix",
+        "* Poor service history — the N62 is unforgiving of neglect",
+        "* Any engine warning light without a clear diagnosis"
+      ]
+    },
+    "closingVerdict": "The 745i is a genuinely desirable luxury saloon — but the N62 V8 that powers it has well-documented weaknesses. Valve stem seal failure is the defining issue, followed by oil leaks and cooling system problems. These are expensive to fix, but well-understood by specialists. If you're buying a 745i, budget for valve stem seal work (£2,500–£4,500) and cooling system maintenance (£500–£1,200). The reward is one of BMW's most refined V8s in one of the most comfortable cars ever made. Buy on history, maintain religiously, and the 745i will reward you.",
+    "cta": {
+      "label": "→ Compare 745i engine prices before you buy",
+      "href": "#"
+    }
+  },
+  "buyingChecklist": {
+    "intro": "Before you buy a used BMW 745i (or before you commit to an engine replacement), check these:",
+    "items": [
+      "1. Cold Start — Any blue smoke? (valve stem seal warning — the most critical check on the N62)",
+      "2. Oil Consumption — How much oil does it use between services? (valve stem seal or oil leak warning)",
+      "3. Service History — including evidence of valve stem seal work and frequent oil changes",
+      "4. Oil Spots — Any oil under the car? (valve cover, timing cover, or alternator bracket leak warning)",
+      "5. Coolant Level — Any unexplained loss? (cooling system warning)",
+      "6. Temperature Gauge — Any history of overheating? (water pump or thermostat failure)",
+      "7. Engine Warning Light — Have codes been read? Any unresolved issues?",
+      "8. MOT History — Check for emissions-related failures (catalyst damage from oil burning)"
+    ]
+  },
+  "engineCodes": {
+    "columns": [
+      "Engine Code",
+      "Years",
+      "Power",
+      "2025 Enquiries",
+      "Avg. Recon Cost"
+    ],
+    "rows": [
+      {
+        "engineCode": "N62B44A",
+        "years": "2001–2008",
+        "power": "325–333 hp",
+        "enquiries": "[PATTERN DATA]",
+        "avgReconCost": "£3,500–£6,500 [BMW-QUOTE]"
+      }
+    ],
+    "matchNote": "This table's rows match Section 1B's Era Map exactly — one engine throughout this badge's production run.",
+    "technicalSpecs": {
+      "title": "Technical Specs (N62B44A):",
+      "items": [
+        {
+          "label": "* Displacement",
+          "value": "4,398 cc (4.4-litre)"
+        },
+        {
+          "label": "* Cylinders",
+          "value": "V8"
+        },
+        {
+          "label": "* Compression Ratio",
+          "value": "10.0–10.5:1"
+        },
+        {
+          "label": "* Fuel System",
+          "value": "Electronic fuel injection (EFI)"
+        },
+        {
+          "label": "* Valvetrain",
+          "value": "DOHC, 4 valves per cylinder, Double-VANOS, Valvetronic"
+        },
+        {
+          "label": "* Block Material",
+          "value": "Aluminium"
+        },
+        {
+          "label": "* Engine Weight",
+          "value": "213 kg"
+        }
+      ]
+    },
+    "cta": {
+      "label": "→ Compare 745i engine prices for your BMW",
+      "href": "#"
+    }
+  },
+  "marketIntelligence": {
+    "items": []
+  },
+  "faq": {
+    "items": [],
+    "disclaimer": ""
+  },
+  "trustCta": {
+    "h2": "",
+    "trustPoints": [
+      {
+        "title": "Trusted 745i Engine Suppliers",
+        "text": "every garage and engine rebuilder in our network is vetted, rated and reviewed by real 745i owners, as part of the Engine Finders network, across the E65/E66 generation."
+      },
+      {
+        "title": "Compare 745i Engine Replacement Companies",
+        "text": "see prices, warranty terms and supply & fit options side‑by‑side before you commit, with specialists who genuinely understand the N62's valve stem seals, oil leaks and cooling system nuances."
+      },
+      {
+        "title": "UK Engine Replacement Services for 745i",
+        "text": "supply‑only or full supply & fit available nationwide, covering BMW's V8-powered 7 Series with a 12‑month warranty as standard."
+      }
+    ],
+    "finalCta": "Find the best BMW 745i engine replacement UK owners trust. Compare prices from trusted specialists on EnginesMarket today and keep your V8-powered 7 Series on the road.",
+    "ctaButton": {
+      "label": "Explore BMW 745i Engine Quotes →",
+      "href": "#"
+    }
+  }
+}

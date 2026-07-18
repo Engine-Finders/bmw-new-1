@@ -1,0 +1,509 @@
+{
+  "meta": {
+    "slug": "bmw-x3-f25",
+    "title": "BMW X3 F25 Engines — The Complete UK Guide",
+    "titleCharCount": 42,
+    "description": "",
+    "descriptionCharCount": 0,
+    "jsonLd": {}
+  },
+  "internalDeclarations": {
+    "checkA": "",
+    "checkB": "",
+    "authorityModelMode": ""
+  },
+  "hero": {
+    "tagPill": "BMW X3 F25 • SUV • 2010–2017",
+    "h1": "BMW X3 F25 Engines — The Complete UK Guide",
+    "subHeadline": "Every engine fitted to the X3 F25 — from the 2.0-litre N20 four-cylinder petrol to the 3.0-litre N55 straight-six and the N57 diesel six. Real UK costs and honest reliability data for BMW's first American-built compact SUV. Backed by 316+ real UK F25 enquiries in 2025 [BMW-VERIFIED].",
+    "trustStrip": [
+      {
+        "icon": "📊",
+        "label": "316+ F25 Enquiries (2025) [BMW-VERIFIED]"
+      },
+      {
+        "icon": "🔧",
+        "label": "SUV"
+      },
+      {
+        "icon": "📖",
+        "label": "9+ Engine Families"
+      },
+      {
+        "icon": "🏆",
+        "label": "Part of Engine Finders"
+      }
+    ],
+    "primaryCta": {
+      "label": "Explore F25 Engines →",
+      "href": "#"
+    },
+    "dataIntegrityNote": ""
+  },
+  "engineDatabase": {
+    "h2": "BMW X3 F25 Engine Codes — The Complete Database",
+    "subHeadline": "Every engine fitted to the X3 F25 — spanning four-cylinder and six-cylinder petrols, four-cylinder and six-cylinder diesels, and the LCI engine updates.",
+    "columns": [
+      "Engine Code",
+      "Family",
+      "Fuel",
+      "Displacement",
+      "Power",
+      "Years (F25)",
+      "Variants (badges)",
+      "Reliability",
+      "2025 Enquiries",
+      "Avg. Recon Cost"
+    ],
+    "engines": [
+      {
+        "engineCode": "N20B20U0",
+        "family": "N20",
+        "fuel": "Petrol",
+        "displacement": "2.0L (1997cc)",
+        "power": "181–184 bhp",
+        "years": "2011–2017",
+        "variants": "sDrive20i, xDrive20i",
+        "reliability": "★★★★☆ [PROVISIONAL — pending dedicated Engine Page]",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£2,200–£4,500 [BMW-QUOTE]"
+      },
+      {
+        "engineCode": "N20B20 (high)",
+        "family": "N20",
+        "fuel": "Petrol",
+        "displacement": "2.0L (1997cc)",
+        "power": "241–245 bhp",
+        "years": "2012–2017",
+        "variants": "xDrive28i",
+        "reliability": "★★★★☆ [PROVISIONAL — pending dedicated Engine Page]",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£2,500–£5,000 [BMW-QUOTE]"
+      },
+      {
+        "engineCode": "N52B30",
+        "family": "N52",
+        "fuel": "Petrol",
+        "displacement": "3.0L (2996cc)",
+        "power": "240 bhp",
+        "years": "2011–2012",
+        "variants": "xDrive28i (early)",
+        "reliability": "★★★★☆ [PROVISIONAL — pending dedicated Engine Page]",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£2,800–£5,500 [BMW-QUOTE]"
+      },
+      {
+        "engineCode": "N55B30",
+        "family": "N55",
+        "fuel": "Petrol",
+        "displacement": "3.0L (2979cc)",
+        "power": "302–306 bhp",
+        "years": "2010–2017",
+        "variants": "xDrive35i",
+        "reliability": "★★★★☆ [PROVISIONAL — pending dedicated Engine Page]",
+        "enquiries": "540 (B58) [BMW-VERIFIED]",
+        "avgReconCost": "£4,000–£7,000 [BMW-QUOTE]"
+      },
+      {
+        "engineCode": "N47D20",
+        "family": "N47",
+        "fuel": "Diesel",
+        "displacement": "2.0L (1995cc)",
+        "power": "141–184 bhp",
+        "years": "2010–2014",
+        "variants": "sDrive18d, xDrive20d, xDrive28d",
+        "reliability": "★★★☆☆ [PROVISIONAL — pending dedicated Engine Page]",
+        "enquiries": "1,450 [BMW-VERIFIED]",
+        "avgReconCost": "£3,200–£5,500 [BMW-QUOTE]"
+      },
+      {
+        "engineCode": "B47D20",
+        "family": "B47",
+        "fuel": "Diesel",
+        "displacement": "2.0L (1995cc)",
+        "power": "150–190 bhp",
+        "years": "2014–2017",
+        "variants": "sDrive18d, xDrive20d (LCI)",
+        "reliability": "★★★★☆ [PROVISIONAL — pending dedicated Engine Page]",
+        "enquiries": "930 [BMW-VERIFIED]",
+        "avgReconCost": "£2,800–£5,000 [BMW-QUOTE]"
+      },
+      {
+        "engineCode": "N57D30 (single)",
+        "family": "N57",
+        "fuel": "Diesel",
+        "displacement": "3.0L (2993cc)",
+        "power": "245–258 bhp",
+        "years": "2011–2017",
+        "variants": "xDrive30d",
+        "reliability": "★★★★☆ [PROVISIONAL — pending dedicated Engine Page]",
+        "enquiries": "830 [BMW-VERIFIED]",
+        "avgReconCost": "£4,500–£7,500 [BMW-QUOTE]"
+      },
+      {
+        "engineCode": "N57D30 (twin)",
+        "family": "N57",
+        "fuel": "Diesel",
+        "displacement": "3.0L (2993cc)",
+        "power": "309–313 bhp",
+        "years": "2011–2017",
+        "variants": "xDrive35d",
+        "reliability": "★★★★☆ [PROVISIONAL — pending dedicated Engine Page]",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£5,000–£8,000 [BMW-QUOTE]"
+      }
+    ],
+    "confidenceScore": {
+      "title": "How confident are these ratings?",
+      "text": "All ratings are [PROVISIONAL] pending dedicated Engine Pages. The N55 straight-six is a proven, reliable engine — it's been in production since 2009 and powers numerous BMW models. The N52 naturally aspirated six (early xDrive28i) is considered one of BMW's most reliable engines. The N20 four-cylinder petrol is generally reliable but timing chain issues have been reported on early examples. The N47 diesel carries the infamous timing chain risk, while the B47 (LCI) is significantly improved. The N57 diesel six is well-regarded for its refinement and durability."
+    },
+    "dataCorrections": []
+  },
+  "overview": {
+    "h2": "BMW X3 F25 — Overview",
+    "intro": "The F25 is the second generation of the BMW X3, unveiled at the 2010 Paris Motor Show and launched in Germany on 20 November 2010. For this generation, BMW moved production from Austria to the Spartanburg plant in South Carolina, USA — the first X3 to be built in America. The F25 brought substantial improvements in design, technology, and the engine lineup, positioning it as a direct rival to the Audi Q5 and Mercedes GLK-Class. The engine range initially offered a 2.0-litre four-cylinder diesel (xDrive20d) and a 3.0-litre straight-six petrol (xDrive35i), later expanding to include four-cylinder petrols (N20), six-cylinder diesels (N57), and a rear-wheel-drive sDrive variant introduced in 2012. A significant June 2014 LCI facelift brought the B47 diesel engine, replacing the N47, and updated styling. The F25 was produced until August 2017, succeeded by the third-generation G01 X3.",
+    "keyFacts": "Platform: BMW L6 (shared with F10 5 Series) • Predecessor: E83 X3 • Successor: G01 X3 • Sibling body styles: None (single SUV body style).",
+    "marketIntelligenceLine": "The F25 X3 generated 316+ real UK engine enquiries in 2025 [BMW-VERIFIED], concentrated on the 20d diesel and 35i petrol as the range reaches affordable used-car territory."
+  },
+  "bestWorstEngines": {
+    "items": [
+      {
+        "slot": "Best Petrol Overall",
+        "engine": "N55B30 (xDrive35i, 3.0L straight-six, 302–306 bhp)",
+        "quote": "BMW's N55 single-turbo straight-six is a masterpiece — smooth, responsive, and with a strong torque curve from 1,200 rpm. The xDrive35i offers effortless performance and the unmistakable six-cylinder soundtrack that defines BMW's petrol heritage.",
+        "whoItsFor": "buyers who want six-cylinder performance and refinement."
+      },
+      {
+        "slot": "Best Diesel Overall",
+        "engine": "N57D30 (xDrive30d, 3.0L straight-six diesel, 245–258 bhp)",
+        "quote": "The N57 straight-six diesel is a masterpiece of refinement and efficiency — 258 bhp, 560 Nm of torque, and genuine 40+ mpg capability. The xDrive30d offers the best blend of performance and economy in the F25 diesel range.",
+        "whoItsFor": "buyers who want effortless torque and long-distance cruising capability."
+      },
+      {
+        "slot": "Highest Risk",
+        "engine": "N47D20 (pre-LCI 18d/20d/28d, 2.0L diesel)",
+        "quote": "The rear-mounted timing chain is the defining risk of the N47 — cold-start rattle is the warning, and a snapped chain means full replacement. The N47 remains the biggest single risk in the F25 range.",
+        "whoItsFor": "buyers on a budget who must have documented chain-replacement history."
+      },
+      {
+        "slot": "Most Expensive Failure",
+        "engine": "N57D30 (xDrive35d, 3.0L twin-turbo diesel, 309–313 bhp)",
+        "quote": "The twin-turbo N57 offers spectacular performance — 313 bhp and 630 Nm of torque — but the additional turbocharger adds complexity and potential failure points. A full replacement can exceed £8,000.",
+        "whoItsFor": "buyers who want the most powerful diesel F25 and have budget for potential turbocharger repairs."
+      },
+      {
+        "slot": "Best Value",
+        "engine": "B47D20 (post-LCI 18d/20d, 2.0L diesel, 150–190 bhp)",
+        "quote": "The B47 is a significant improvement over the N47 — timing chain issues are far less frequent, and the engine is smoother and more refined. The post-LCI 20d offers the best blend of economy and reliability in the F25 range.",
+        "whoItsFor": "buyers who want diesel economy without the N47's timing chain anxiety."
+      },
+      {
+        "slot": "Most Overlooked",
+        "engine": "N52B30 (early xDrive28i, 3.0L naturally aspirated, 240 bhp)",
+        "quote": "The N52-powered xDrive28i was only available from 2011–2012 before being replaced by the turbocharged N20 — but it's a gem. No turbos, no HPFP, just smooth, linear six-cylinder power with VANOS as the primary wear item. It's the last of BMW's great naturally aspirated straight-sixes in the X3.",
+        "whoItsFor": "enthusiasts who want the simplicity of a naturally aspirated six."
+      }
+    ]
+  },
+  "ownershipEconomics": {
+    "h2": "BMW X3 F25 — Ownership Economics",
+    "columns": [
+      "Engine",
+      "Typical Mileage",
+      "Common Major Failure",
+      "Repair Cost (Specialist)",
+      "Replacement Cost (Recon)",
+      "Ownership Verdict"
+    ],
+    "rows": [
+      {
+        "engine": "N20 (20i/28i)",
+        "typicalMileage": "60k–100k",
+        "commonMajorFailure": "Timing chain, VANOS",
+        "repairCostSpecialist": "£700–£2,000",
+        "replacementCostRecon": "£2,200–£5,000",
+        "ownershipVerdict": "Solid Choice — proven four-cylinder."
+      },
+      {
+        "engine": "N52 (early 28i)",
+        "typicalMileage": "80k–120k",
+        "commonMajorFailure": "VANOS, water pump",
+        "repairCostSpecialist": "£400–£1,200",
+        "replacementCostRecon": "£2,800–£5,500",
+        "ownershipVerdict": "Best Petrol — reliable naturally aspirated six."
+      },
+      {
+        "engine": "N55 (35i)",
+        "typicalMileage": "50k–100k",
+        "commonMajorFailure": "HPFP, VANOS, oil leaks",
+        "repairCostSpecialist": "£600–£2,000",
+        "replacementCostRecon": "£4,000–£7,000",
+        "ownershipVerdict": "Solid Choice — proven six-cylinder."
+      },
+      {
+        "engine": "N47 (18d/20d pre-LCI)",
+        "typicalMileage": "60k–120k",
+        "commonMajorFailure": "Timing chain",
+        "repairCostSpecialist": "£650–£1,800",
+        "replacementCostRecon": "£3,200–£5,500",
+        "ownershipVerdict": "High Risk — rear chain defines this engine."
+      },
+      {
+        "engine": "B47 (18d/20d LCI)",
+        "typicalMileage": "80k–150k",
+        "commonMajorFailure": "EGR cooler, DPF",
+        "repairCostSpecialist": "£500–£1,500",
+        "replacementCostRecon": "£2,800–£5,000",
+        "ownershipVerdict": "Solid Choice — significantly improved over N47."
+      },
+      {
+        "engine": "N57 (30d/35d)",
+        "typicalMileage": "80k–150k",
+        "commonMajorFailure": "EGR cooler, DPF, turbo (35d)",
+        "repairCostSpecialist": "£600–£2,000",
+        "replacementCostRecon": "£4,500–£8,000",
+        "ownershipVerdict": "Best Diesel — refined and durable."
+      }
+    ],
+    "economicsRule": {
+      "title": "The F25 rule",
+      "text": "A £3,200–£5,500 N47 recon against a £4,000–£15,000 F25 sits at 21–138% of the car's value【EM-VERIFIED】. On a sub-£5,000 example, that brushes our 70% BMW threshold — we'll honestly tell you to walk away. Against a well-kept £8,000+ example, the same recon drops to 40–69% — a repair decision, not a financial one. Value the car first. For 35i and 35d cars, the higher retained values make replacement more viable."
+    },
+    "keyTakeaways": [
+      {
+        "question": "Which F25 Costs Least To Own?",
+        "answer": "B47 20d (post-LCI) — efficient, reliable, and cheaper to maintain than the six-cylinder diesels."
+      },
+      {
+        "question": "Which F25 Costs Most To Own?",
+        "answer": "N57 35d — twin-turbo complexity and six-cylinder running costs add up."
+      },
+      {
+        "question": "Which F25 Is Best Value?",
+        "answer": "N55 35i — six-cylinder refinement, strong performance, and proven reliability."
+      }
+    ]
+  },
+  "commonProblems": {
+    "problems": [
+      {
+        "id": 1,
+        "title": "N47 Diesel Timing Chain Stretch (Pre-LCI)",
+        "affectedModels": "F25 sDrive18d, xDrive20d, xDrive28d (2010–2014, N47 engine).",
+        "typicalFailureMileage": "60,000–120,000 miles.",
+        "rootCause": "The rear-mounted timing chain receives the last oil feed and is tensioned by a plastic guide that degrades over time — cold-start rattle for 1–2 seconds is the classic early warning. This is the defining weakness of BMW's N47 diesel family.",
+        "tieredCosts": [
+          {
+            "tier": "Preventative (Repair)",
+            "dealer": "£1,800–£2,500",
+            "specialist": "£650–£1,800",
+            "work": "Replace chain, tensioner and guides",
+            "note": ""
+          },
+          {
+            "tier": "Catastrophic (Replacement)",
+            "dealer": "£6,000–£8,500",
+            "specialist": "£3,200–£5,500",
+            "work": "Full reconditioned engine replacement",
+            "note": ""
+          }
+        ],
+        "recommendation": "At the first sign of cold-start rattle on any N47 diesel F25, get the chain inspected immediately — a £650–£1,800 preventative repair is dramatically cheaper than the £3,200–£5,500 replacement that follows if ignored. On an F25 worth under £5,000, this decision alone determines whether the car stays economically viable.",
+        "cta": {
+          "label": "Compare N47 diesel engine prices for your F25 →",
+          "href": "#"
+        }
+      },
+      {
+        "id": 2,
+        "title": "N20 Timing Chain & VANOS Issues",
+        "affectedModels": "F25 sDrive20i, xDrive20i, xDrive28i (2011–2017, N20 engine).",
+        "typicalFailureMileage": "60,000–100,000 miles.",
+        "rootCause": "The N20 four-cylinder turbo petrol can suffer from timing chain tensioner wear and VANOS solenoid failure. The chain is located at the front of the engine, making replacement less labour-intensive than the N47, but failure is still catastrophic if ignored.",
+        "tieredCosts": [
+          {
+            "tier": "Preventative (Repair)",
+            "dealer": "£1,200–£2,000",
+            "specialist": "£700–£1,500",
+            "work": "Chain, tensioner and VANOS solenoid replacement",
+            "note": ""
+          },
+          {
+            "tier": "Catastrophic (Replacement)",
+            "dealer": "£5,000–£7,500",
+            "specialist": "£3,500–£5,500",
+            "work": "Full reconditioned engine replacement",
+            "note": ""
+          }
+        ],
+        "recommendation": "Have the timing chain and VANOS system inspected at 60,000 miles — a £700–£1,500 preventative service is far cheaper than the £3,500–£5,500 replacement that follows a catastrophic failure. Early N20s are the highest risk.",
+        "cta": {
+          "label": "Compare N20 engine prices for your F25 →",
+          "href": "#"
+        }
+      },
+      {
+        "id": 3,
+        "title": "N52/N55 Water Pump & Cooling System Failure",
+        "affectedModels": "F25 xDrive28i (early, N52), xDrive35i (N55).",
+        "typicalFailureMileage": "60,000–100,000 miles.",
+        "rootCause": "The electric water pump on N52 and N55 engines is a known weak point — failure leads to sudden overheating and potential engine damage. This is a common issue across BMW's six-cylinder petrol range.",
+        "tieredCosts": [
+          {
+            "tier": "Preventative (Repair)",
+            "dealer": "£600–£1,200",
+            "specialist": "£400–£800",
+            "work": "Water pump and thermostat replacement",
+            "note": ""
+          },
+          {
+            "tier": "Catastrophic (Replacement)",
+            "dealer": "£5,000–£8,000",
+            "specialist": "£3,500–£6,500",
+            "work": "Full engine replacement if overheating caused damage",
+            "note": ""
+          }
+        ],
+        "recommendation": "Replace the water pump as preventative maintenance at 60,000 miles — a £400–£800 specialist job is trivial against the £3,500+ engine replacement that follows an ignored overheating event.",
+        "cta": {
+          "label": "Compare N52/N55 engine prices for your F25 →",
+          "href": "#"
+        }
+      },
+      {
+        "id": 4,
+        "title": "N57 Diesel EGR Cooler & Emission System Issues",
+        "affectedModels": "F25 xDrive30d, xDrive35d (N57 engine).",
+        "typicalFailureMileage": "60,000–120,000 miles.",
+        "rootCause": "The N57 diesel's EGR cooler can develop internal leaks, allowing coolant to enter the exhaust system. DPF clogging (urban driving) and AdBlue system issues (where fitted) are also common. BMW has issued recalls for EGR cooler issues on some models.",
+        "tieredCosts": [
+          {
+            "tier": "Preventative (Repair)",
+            "dealer": "£800–£1,500 (recall may cover)",
+            "specialist": "£500–£1,000",
+            "work": "EGR cooler replacement, DPF clean, AdBlue system service",
+            "note": ""
+          },
+          {
+            "tier": "Catastrophic (Replacement)",
+            "dealer": "£5,000–£8,000",
+            "specialist": "£4,500–£7,500",
+            "work": "Full engine replacement if coolant contamination caused damage",
+            "note": ""
+          }
+        ],
+        "recommendation": "Check your N57 F25's VIN against any outstanding EGR cooler recalls — if affected, the repair is free. For DPF health, ensure regular motorway driving to allow regeneration cycles to complete. Have the emission system inspected at 60,000 miles.",
+        "cta": {
+          "label": "Compare N57 diesel engine prices for your F25 →",
+          "href": "#"
+        }
+      }
+    ]
+  },
+  "replacementCosts": {
+    "h2": "F25 Engine Replacement Costs — By Engine and Condition",
+    "columns": [
+      "Variant",
+      "Engine Code",
+      "Used (Supply)",
+      "Reconditioned (Supply)",
+      "Rebuilt (Supply)",
+      "Labour Hours"
+    ],
+    "rows": [
+      {
+        "variant": "sDrive20i / xDrive20i (2.0 petrol)",
+        "engineCode": "N20B20U0",
+        "usedSupply": "£1,000–£2,200",
+        "reconditionedSupply": "£2,200–£4,500",
+        "rebuiltSupply": "£3,500–£6,000",
+        "labourHours": "10–14 hrs"
+      },
+      {
+        "variant": "xDrive28i (2.0 petrol, 2012–2017)",
+        "engineCode": "N20B20 (high)",
+        "usedSupply": "£1,200–£2,500",
+        "reconditionedSupply": "£2,500–£5,000",
+        "rebuiltSupply": "£4,000–£6,500",
+        "labourHours": "10–14 hrs"
+      },
+      {
+        "variant": "xDrive28i (3.0 petrol, 2011–2012)",
+        "engineCode": "N52B30",
+        "usedSupply": "£1,500–£3,000",
+        "reconditionedSupply": "£2,800–£5,500",
+        "rebuiltSupply": "£4,500–£7,000",
+        "labourHours": "10–14 hrs"
+      },
+      {
+        "variant": "xDrive35i (3.0 petrol)",
+        "engineCode": "N55B30",
+        "usedSupply": "£2,000–£4,000",
+        "reconditionedSupply": "£4,000–£7,000",
+        "rebuiltSupply": "£5,500–£8,500",
+        "labourHours": "12–16 hrs"
+      },
+      {
+        "variant": "N47D20",
+        "engineCode": "£1,800–£3,200",
+        "usedSupply": "£3,200–£5,500",
+        "reconditionedSupply": "£4,500–£6,500",
+        "rebuiltSupply": "10–14 hrs",
+        "labourHours": "sDrive18d / xDrive20d (2.0 diesel, LCI)"
+      },
+      {
+        "variant": "B47D20",
+        "engineCode": "£1,500–£2,800",
+        "usedSupply": "£2,800–£5,000",
+        "reconditionedSupply": "£4,000–£6,500",
+        "rebuiltSupply": "10–14 hrs",
+        "labourHours": "xDrive30d (3.0 diesel)"
+      },
+      {
+        "variant": "N57D30 (single)",
+        "engineCode": "£2,500–£4,500",
+        "usedSupply": "£4,500–£7,500",
+        "reconditionedSupply": "£6,500–£9,500",
+        "rebuiltSupply": "12–16 hrs",
+        "labourHours": "xDrive35d (3.0 diesel twin-turbo)"
+      }
+    ],
+    "note": "No Generation variance from the EM_Proprietary_Data baseline figures — F25 X3 shares the L6 platform with the F10 5 Series, with similar engine-bay access, so costs are inherited directly per the Authority Model, with no divergence note required."
+  },
+  "coreVariants": {
+    "dieselVariants": [
+      "sDrive18d",
+      "xDrive20d",
+      "xDrive28d",
+      "xDrive30d",
+      "xDrive35d"
+    ],
+    "petrolVariants": [
+      "sDrive20i",
+      "xDrive20i",
+      "xDrive28i",
+      "xDrive35i"
+    ],
+    "scopeNote": "All variants listed are F25 X3 only. xDrive (all-wheel drive) was standard at launch; sDrive (rear-wheel drive) was introduced in 2012 for some markets. The xDrive28i used the N52B30 (3.0L naturally aspirated) from 2011–2012, then switched to the N20B20 (2.0L turbo) from 2012 onward. The LCI (2014–2017) introduced the B47 diesel engine, replacing the N47 in 18d and 20d models."
+  },
+  "marketIntelligence": {
+    "mostRequestedEngines": [],
+    "mostRequestedVariants": [],
+    "averageReplacementCost": "",
+    "mostCommonFailures": [],
+    "liveFeed": []
+  },
+  "faq": {
+    "items": []
+  },
+  "trustCta": {
+    "h2": "",
+    "trustPoints": [],
+    "finalCta": "",
+    "ctaButton": {
+      "label": "",
+      "href": "#",
+      "note": ""
+    }
+  }
+}

@@ -1,0 +1,568 @@
+{
+  "meta": {
+    "slug": "m1-35",
+    "title": "BMW M1 3.5 Engine Replacement Cost UK — Compare Quotes",
+    "titleCharCount": 56,
+    "description": "Every BMW M1 3.5 engine — the 3.5-litre M88/1 DOHC inline-six. Real UK costs, cooling system and Kugelfischer advice, and honest reliability data. Get free quotes from specialist BMW suppliers today.",
+    "descriptionCharCount": 157,
+    "canonical": "https://bmwengine.uk/m1/35/",
+    "openGraph": {
+      "title": "BMW M1 3.5 Engine Replacement Cost UK — Compare Quotes",
+      "description": "Every BMW M1 3.5 engine — the 3.5-litre M88/1 DOHC inline-six. Real UK costs, cooling system and Kugelfischer advice, and honest reliability data. Get free quotes from specialist BMW suppliers today.",
+      "type": "website",
+      "url": "https://bmwengine.uk/m1/35/",
+      "image": "https://bmwengine.uk/images/bmw/hero/m1-35.jpg",
+      "siteName": "BMWEngines.uk"
+    },
+    "twitter": {
+      "card": "summary_large_image",
+      "title": "BMW M1 3.5 Engine Replacement Cost UK — Compare Quotes",
+      "description": "Every BMW M1 3.5 engine — the 3.5-litre M88/1 DOHC inline-six. Real UK costs, cooling system and Kugelfischer advice, and honest reliability data.",
+      "image": "https://bmwengine.uk/images/bmw/hero/m1-35.jpg"
+    },
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://bmwengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "M1",
+              "item": "https://bmwengine.uk/m1/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "E26",
+              "item": "https://bmwengine.uk/m1/e26/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "3.5",
+              "item": "https://bmwengine.uk/m1/35/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "BMW M1 3.5 Engine Era Map",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "E26 M1 3.5 (M88/1, 1978–1981)",
+              "url": "https://bmwengine.uk/m1/e26/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "BMW M1 3.5 Engine Codes",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "M88/1",
+              "url": "https://bmwengine.uk/engines/m88/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does a BMW M1 3.5 engine replacement cost in the UK?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A reconditioned M1 3.5 (M88/1) engine typically costs £8,000–£15,000 supply only. Fitting adds £3,000–£5,000+ depending on the specialist and location. A complete rebuild can cost £10,000–£20,000+. An M1 restoration reportedly involved 450 hours of labour for the mechanical restoration alone. Use our calculator for a figure specific to your car."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the BMW M1 3.5 engine reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The M88/1 has a good reputation for reliability — 'not bulletproof, but genuinely solid for a high-strung engine of its era'. It's considered 'one of the best inline-six engines BMW ever built'. However, the cooling system is the weak link and requires careful maintenance. Oil leaks and Kugelfischer injection maintenance are also common considerations."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What are the common problems with the BMW M1 3.5?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The main known issues are: (1) Cooling system failure — the single biggest reliability risk, requiring a full coolant overhaul, (2) Oil leaks from the cam tray, cylinder head, and valve cover gaskets, and (3) Kugelfischer mechanical fuel injection system maintenance — requiring specialist knowledge to service correctly."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is it worth replacing a BMW M1 3.5 engine, or should I scrap the car?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The M1 is a rare and valuable collector car — only 453 were produced. Values range from £300,000 to over £1,000,000 depending on condition and provenance. Against a car worth £500,000+, a £15,000 engine rebuild is 3% of the car's value — absolutely worth it for a correct, documented restoration. Scrapping an M1 is not a consideration for any viable example."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I find my BMW M1 3.5 engine code?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The M1 uses the M88/1 engine. The engine number is stamped on the cylinder block. M88/1 engines were produced between 1978 and 1981. The engine number should match the chassis number for originality — a significant factor in M1 values."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Does the M88/1 have a cambelt or timing chain?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The M88/1 uses a timing chain, not a cambelt. It uses a single-row timing chain design. The chain is designed to last the life of the engine, but chain and guide replacement may be necessary on high-mileage or poorly maintained examples. Chain failure is rare but can be catastrophic."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "BMWEngines.uk",
+          "url": "https://bmwengine.uk/",
+          "logo": "https://bmwengine.uk/images/bmwengines-logo.png",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "BMW M1 3.5 Engine Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "5000",
+            "highPrice": "20000",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "name": "BMW M1 3.5 UK Engine Enquiry Data 2025",
+          "description": "Proprietary UK enquiry volumes and demand trends for BMW M1 3.5 engines, sourced from BMWEngines.uk's specialist marketplace activity.",
+          "creator": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk"
+          },
+          "temporalCoverage": "2025",
+          "spatialCoverage": "United Kingdom"
+        },
+        {
+          "@type": "WebPage",
+          "name": "BMW M1 3.5 Engine Replacement Cost UK — Compare Quotes",
+          "url": "https://bmwengine.uk/m1/35/",
+          "author": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk Specialist Network"
+          },
+          "datePublished": "2026-07-12",
+          "dateModified": "2026-07-12"
+        }
+      ]
+    }
+  },
+  "hero": {
+    "tagPill": "BMW M1 3.5 • 1978–1981 • 1 Engine Generation",
+    "h1": "BMW M1 3.5 Engine Replacement — Compare Prices & Get Quotes",
+    "subHeadline": "Get quotes today from trusted UK BMW M1 specialists. The 3.5-litre M88/1 inline-six is one of BMW's most legendary engines — compare reconditioned, rebuilt and used engines with supply & fit available nationwide.",
+    "trustBadges": [
+      "🔧 Supply & Fit Available",
+      "✅ 12-Month Warranty",
+      "🚚 Nationwide Delivery",
+      "👥 Specialist Network"
+    ],
+    "priceAnchor": "BMW M1 3.5 Engines — from £5,000 to £20,000+ · Engine code: M88/1",
+    "registrationInput": {
+      "flag": "🇬🇧 GB",
+      "placeholder": "Enter your reg — e.g. AB12 CDE",
+      "cta": {
+        "label": "See M1 Engine Options →",
+        "href": "#"
+      }
+    },
+    "ticker": "● Instant Quotes · No Obligation · 100% Free · Reconditioned · Rebuilt · Used · Supply & Fit Available · UK-Wide Network"
+  },
+  "eraMap": {
+    "title": "BMW M1 3.5 — Which Engine Does Your Car Actually Have?",
+    "columns": [
+      "Generation",
+      "Years",
+      "Engine Code",
+      "Reliability",
+      "Recon Cost",
+      "Era Note"
+    ],
+    "rows": [
+      {
+        "generation": "E26",
+        "years": "1978–1981",
+        "engineCode": "M88/1",
+        "reliability": "★★★★☆ [NEWLY ASSIGNED — see Data Note]",
+        "reconCost": "£8,000–£20,000+ [PLACEHOLDER]",
+        "eraNote": "3.5L DOHC inline-six — 277 hp, Kugelfischer mechanical injection. Mid-engined, 453 built"
+      }
+    ],
+    "sourceNote": "",
+    "dataNote": ""
+  },
+  "replacementCosts": {
+    "h2": "BMW M1 3.5 Engine Replacement Costs",
+    "columns": [
+      "Engine Type",
+      "Supply Only",
+      "Fitted (Indie)",
+      "Warranty",
+      "Best For"
+    ],
+    "rows": [
+      {
+        "engineType": "Used Engine",
+        "supplyOnly": "£5,000–£10,000",
+        "fittedIndie": "£8,000–£15,000",
+        "warranty": "1–6 months",
+        "bestFor": "Donor for rebuild; extremely rare"
+      },
+      {
+        "engineType": "Reconditioned Engine",
+        "supplyOnly": "£8,000–£15,000",
+        "fittedIndie": "£12,000–£20,000+",
+        "warranty": "12–24 months",
+        "bestFor": "Most owners — best cost/warranty balance"
+      },
+      {
+        "engineType": "Rebuilt Engine",
+        "supplyOnly": "£10,000–£20,000+",
+        "fittedIndie": "£15,000–£25,000+",
+        "warranty": "12–24 months",
+        "bestFor": "Long-term ownership; concours restoration"
+      },
+      {
+        "engineType": "Main Dealer New",
+        "supplyOnly": "N/A",
+        "fittedIndie": "N/A",
+        "warranty": "N/A",
+        "bestFor": "No longer manufactured"
+      }
+    ],
+    "figuresNote": "",
+    "labourEstimate": "Fitting an M1 engine is a specialist job requiring mid-engine access. Labour typically takes 20–30 hours at £100–£200/hr (specialist). The M1's mid-engine layout and the Kugelfischer injection system require marque-specific expertise.",
+    "cta": {
+      "label": "→ Compare M1 3.5 engine prices from UK specialists",
+      "href": "#"
+    }
+  },
+  "commonProblems": {
+    "problems": [
+      {
+        "id": 1,
+        "title": "Cooling System Failure (The Weak Link)",
+        "symptoms": "Running hot in traffic, temperature gauge rising when stationary, coolant loss, fan not engaging, overheating warning",
+        "typicalMileage": "Any mileage — age-related component failure is the primary concern",
+        "repairCost": "£1,500–£4,000 (water pump, thermostat, hoses, radiator)",
+        "replacementCost": "£8,000–£20,000+ (if ignored — full engine replacement)",
+        "urgency": {
+          "icon": "🔴",
+          "label": "Immediate",
+          "text": "overheating can cause catastrophic engine damage"
+        },
+        "recommendation": "The cooling system is the single biggest reliability risk on the M88. The water pump, thermostat housing, and hoses are decades-old components running under thermal stress. M88 engines are known to run hot in traffic, and if the engine overheats, it can lead to warped cylinder heads and blown head gaskets. A full coolant overhaul is the first job on any unrefreshed example. Some owners upgrade to an electric water pump to improve cooling at low rpm and in traffic.",
+        "failureLink": {
+          "label": "Read the full cooling system failure guide",
+          "href": "/failures/cooling-system-failure/"
+        }
+      },
+      {
+        "id": 2,
+        "title": "Oil Leaks (Multiple Points)",
+        "symptoms": "Burning oil smell, oil spots under the car, visible oil residue around the engine, low oil level warning",
+        "typicalMileage": "Any mileage — age-related gasket failure",
+        "repairCost": "£500–£2,000 (gasket replacement — valve cover, cam tray, cylinder head)",
+        "replacementCost": "N/A — repair only (does not progress to engine replacement if addressed)",
+        "urgency": {
+          "icon": "🟡",
+          "label": "Monitor",
+          "text": "book inspection if you notice oil spots or burning smell"
+        },
+        "recommendation": "Oil leaks are common on the M88, particularly from the rear cover on the cam tray. The gasket where the head splits can also leak. Oil leaks from the cylinder head gasket area are documented on the M88 engine. If left unaddressed, oil leaks can lead to low oil levels and potential engine damage. If you notice a burning smell or oil spots, have the gaskets inspected promptly.",
+        "failureLink": {
+          "label": "Read the full oil leak guide → /failures/oil-leaks-m88/ [NEW FAILURE PAGE NEEDED]",
+          "href": "#"
+        }
+      },
+      {
+        "id": 3,
+        "title": "Kugelfischer Fuel Injection System Maintenance",
+        "symptoms": "Poor throttle response, rough running, hesitation, hard starting, uneven idle",
+        "typicalMileage": "Any mileage — the mechanical injection system requires specialist attention",
+        "repairCost": "£1,000–£3,000 (injection system service, calibration, or component replacement)",
+        "replacementCost": "N/A — repair only (does not progress to engine replacement if addressed)",
+        "urgency": {
+          "icon": "🟡",
+          "label": "Monitor",
+          "text": "book inspection if running issues develop"
+        },
+        "recommendation": "The M88 uses Kugelfischer mechanical fuel injection with individual throttle valves. The throttle response is immediate in a way that modern drive-by-wire doesn't replicate, but the mechanical injection has its own maintenance character. The system requires a specialist to service correctly. If you experience running issues, have the injection system inspected by a specialist who understands Kugelfischer systems.",
+        "failureLink": {
+          "label": "Read the full fuel injection failure guide → /failures/kugelfischer-injection/ [NEW FAILURE PAGE NEEDED]",
+          "href": "#"
+        }
+      }
+    ]
+  },
+  "quotesCta": {
+    "headline": "Weighing Your Options? Compare Specialist Quotes When You're Ready →",
+    "supportingLine": "Specialist BMW M1 engine suppliers, every M88/1 engine covered, with a 12-month warranty as standard.",
+    "button": {
+      "label": "See M1 3.5 Engine Options →",
+      "href": "#"
+    }
+  },
+  "repairBuyOrReplace": {
+    "h2": "M1 3.5 — Repair, Buy, or Replace?",
+    "canItBeRepaired": {
+      "title": "Can It Be Repaired?",
+      "columns": [
+        "Problem",
+        "Repairable?",
+        "Typical Cost",
+        "When It Makes Sense"
+      ],
+      "rows": [
+        {
+          "problem": "Cooling system failure",
+          "repairable": "✅ Yes",
+          "typicalCost": "£1,500–£4,000",
+          "whenItMakesSense": "Full coolant overhaul is essential on any unrefreshed example"
+        },
+        {
+          "problem": "Oil leaks (gaskets)",
+          "repairable": "✅ Yes",
+          "typicalCost": "£500–£2,000",
+          "whenItMakesSense": "Catch early to prevent oil contamination and engine damage"
+        },
+        {
+          "problem": "Kugelfischer injection issues",
+          "repairable": "✅ Yes",
+          "typicalCost": "£1,000–£3,000",
+          "whenItMakesSense": "Specialist service required — but viable on well-maintained examples"
+        },
+        {
+          "problem": "Timing chain failure",
+          "repairable": "⚠️ Sometimes",
+          "typicalCost": "£3,000–£6,000",
+          "whenItMakesSense": "Rare but can occur; chain and guide replacement is complex"
+        },
+        {
+          "problem": "Catastrophic engine failure",
+          "repairable": "❌ Usually No",
+          "typicalCost": "Engine replacement",
+          "whenItMakesSense": "Full rebuild or replacement required"
+        }
+      ]
+    },
+    "buyingChecks": {
+      "title": "Buying This M1 3.5? Check These First",
+      "buyIf": [
+        "* Documented cooling system overhaul (water pump, thermostat, hoses, radiator)",
+        "* Full service history with specialist maintenance records",
+        "* Evidence of regular use — these engines benefit from being exercised",
+        "* Original or correctly restored Kugelfischer injection system"
+      ],
+      "avoidIf": [
+        "* Overheating history or cooling system issues — the M88 is unforgiving of overheating",
+        "* Oil leaks from multiple points with no documented repairs",
+        "* Poor or no service history — these are complex, valuable engines",
+        "* Incomplete or non-original injection system — originality matters for value"
+      ]
+    },
+    "closingVerdict": "The BMW M1 is a legendary mid-engined supercar and the first car developed by BMW M. Only 453 were produced between 1978 and 1981. The M88/1 engine is one of BMW's finest inline-sixes — \"genuinely one of the best inline-six engines BMW ever built\". The M88's reputation for reliability is \"good — not bulletproof, but genuinely solid\". However, the cooling system is the weak link, oil leaks are common, and the Kugelfischer injection requires specialist knowledge. Buy with full service history and evidence of preventative maintenance. Without history? Proceed with extreme caution — these are rare, complex, and expensive to maintain.",
+    "cta": {
+      "label": "→ Compare M1 3.5 engine prices before you buy",
+      "href": "#"
+    }
+  },
+  "buyingChecklist": {
+    "intro": "Before you buy a used BMW M1 3.5 (or before you commit to an engine replacement), check these:",
+    "items": [
+      "* Cooling System — Check for coolant leaks; ask about water pump, thermostat, hoses, radiator history",
+      "* Cold Start — Listen for any unusual noises; check for smooth idle",
+      "* Oil Leaks — Look for oil residue around the cam tray, cylinder head, and valve cover",
+      "* Kugelfischer Injection — Any hesitation, rough running, or poor throttle response?",
+      "* Service History — Including the M88/1 engine and confirmed specialist maintenance",
+      "* Engine Number — Verify engine number matches the chassis; M1s are valuable and originality matters",
+      "* Engine Warning Light — Have codes been read? (Note: early M1s have limited diagnostics)",
+      "* MOT History — Check for emissions-related failures"
+    ]
+  },
+  "engineCodes": {
+    "columns": [
+      "Engine Code",
+      "Years",
+      "Power",
+      "2025 Enquiries",
+      "Avg. Recon Cost"
+    ],
+    "rows": [
+      {
+        "engineCode": "M88/1",
+        "years": "1978–1981",
+        "power": "277 hp (207 kW) / 239 lb-ft (324 N·m)",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£8,000–£20,000+【PLACEHOLDER】"
+      }
+    ],
+    "matchNote": "This table's rows match Section 1B's Era Map exactly.",
+    "technicalSpecs": {
+      "title": "Technical Specs (M88/1):",
+      "items": [
+        {
+          "label": "* Displacement",
+          "value": "3,453 cc (3.5L)"
+        },
+        {
+          "label": "* Cylinders",
+          "value": "6-cylinder inline"
+        },
+        {
+          "label": "* Bore",
+          "value": "93.4 mm / Stroke: 84.0 mm"
+        },
+        {
+          "label": "* Cylinder Block",
+          "value": "Cast iron"
+        },
+        {
+          "label": "* Cylinder Head",
+          "value": "Aluminium 24-valve DOHC"
+        },
+        {
+          "label": "* Valvetrain",
+          "value": "DOHC, 4 valves per cylinder, single-row timing chain"
+        },
+        {
+          "label": "* Compression Ratio",
+          "value": "10.5:1 (typical)"
+        },
+        {
+          "label": "* Fuel System",
+          "value": "Kugelfischer mechanical injection, individual throttle valves"
+        },
+        {
+          "label": "* Ignition",
+          "value": "Magneti-Marelli"
+        },
+        {
+          "label": "* Power",
+          "value": "277 hp (207 kW) @ 6,500 rpm"
+        },
+        {
+          "label": "* Torque",
+          "value": "239 lb-ft (324 N·m) @ 5,500 rpm"
+        },
+        {
+          "label": "* Redline",
+          "value": "7,000 rpm"
+        },
+        {
+          "label": "* Transmission",
+          "value": "5-speed ZF manual transaxle"
+        },
+        {
+          "label": "* 0-60 mph",
+          "value": "5.6 seconds"
+        },
+        {
+          "label": "* Top Speed",
+          "value": "162 mph (260 km/h)"
+        }
+      ]
+    },
+    "cta": {
+      "label": "→ Compare M1 3.5 engine prices for your BMW",
+      "href": "#"
+    }
+  },
+  "marketIntelligence": {
+    "items": []
+  },
+  "faq": {
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a BMW M1 3.5 engine replacement cost in the UK?",
+        "answer": "A reconditioned M1 3.5 (M88/1) engine typically costs £8,000–£15,000 supply only. Fitting adds £3,000–£5,000+ depending on the specialist and location. A complete rebuild can cost £10,000–£20,000+. An M1 restoration reportedly involved 450 hours of labour for the mechanical restoration alone. Use our calculator for a figure specific to your car."
+      },
+      {
+        "id": 2,
+        "question": "Is the BMW M1 3.5 engine reliable?",
+        "answer": "The M88/1 has a good reputation for reliability — \"not bulletproof, but genuinely solid for a high-strung engine of its era\". It's considered \"one of the best inline-six engines BMW ever built\". However, the cooling system is the weak link and requires careful maintenance. Oil leaks and Kugelfischer injection maintenance are also common considerations."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the BMW M1 3.5?",
+        "answer": "The main known issues are: (1) Cooling system failure — the single biggest reliability risk, requiring a full coolant overhaul, (2) Oil leaks from the cam tray, cylinder head, and valve cover gaskets, and (3) Kugelfischer mechanical fuel injection system maintenance — requiring specialist knowledge to service correctly."
+      },
+      {
+        "id": 4,
+        "question": "Is it worth replacing a BMW M1 3.5 engine, or should I scrap the car?",
+        "answer": "The M1 is a rare and valuable collector car — only 453 were produced. Values range from £300,000 to over £1,000,000 depending on condition and provenance. Against a car worth £500,000+, a £15,000 engine rebuild is 3% of the car's value — absolutely worth it for a correct, documented restoration. Scrapping an M1 is not a consideration for any viable example."
+      },
+      {
+        "id": 5,
+        "question": "How do I find my BMW M1 3.5 engine code?",
+        "answer": "The M1 uses the M88/1 engine. The engine number is stamped on the cylinder block. M88/1 engines were produced between 1978 and 1981. The engine number should match the chassis number for originality — a significant factor in M1 values."
+      },
+      {
+        "id": 6,
+        "question": "Does the M88/1 have a cambelt or timing chain?",
+        "answer": "The M88/1 uses a timing chain, not a cambelt. It uses a single-row timing chain design. The chain is designed to last the life of the engine, but chain and guide replacement may be necessary on high-mileage or poorly maintained examples. Chain failure is rare but can be catastrophic."
+      }
+    ],
+    "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty — always confirm terms with your chosen supplier."
+  },
+  "trustCta": {
+    "h2": "Why UK BMW M1 3.5 Owners Trust BMWEngines.uk",
+    "trustPoints": [
+      {
+        "title": "Trusted M1 3.5 Engine Suppliers",
+        "text": "every garage and engine rebuilder in our network is vetted, rated and reviewed by real M1 owners, across the M88/1 engine, as part of the Engine Finders network."
+      },
+      {
+        "title": "Compare M1 Engine Replacement Companies",
+        "text": "see prices, warranty terms and supply & fit options side-by-side before you commit."
+      },
+      {
+        "title": "UK Engine Replacement Services for M1 3.5",
+        "text": "supply-only or full supply & fit available nationwide, covering every E26 M1 since 1978."
+      }
+    ],
+    "finalCta": "Find the best BMW M1 3.5 engine replacement UK drivers rely on. Compare prices from trusted specialists on EnginesMarket today and get back on the road with confidence.",
+    "ctaButton": {
+      "label": "Explore BMW M1 3.5 Engine Quotes →",
+      "href": "#"
+    }
+  }
+}

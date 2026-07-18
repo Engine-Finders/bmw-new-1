@@ -1,0 +1,525 @@
+{
+  "meta": {
+    "slug": "1-series-135i",
+    "title": "135i Engine Replacement Cost UK — Compare Quotes",
+    "titleCharCount": 57,
+    "description": "BMW 1 Series 135i — N54 & N55 straight-six. Real UK costs, HPFP & injector watchpoints. Get free quotes from 20+ vetted BMW specialists today.",
+    "descriptionCharCount": 158,
+    "canonical": "https://bmwengine.uk/1-series/135i/",
+    "openGraph": {
+      "title": "135i Engine Replacement Cost UK — Compare Quotes",
+      "description": "BMW 1 Series 135i — N54 & N55 straight-six. Real UK costs, HPFP & injector watchpoints. Get free quotes from 20+ vetted BMW specialists today.",
+      "type": "website",
+      "url": "https://bmwengine.uk/1-series/135i/",
+      "image": "https://bmwengine.uk/images/bmw/hero/1-series-135i.jpg",
+      "siteName": "BMWEngines.uk"
+    },
+    "twitter": {
+      "card": "summary_large_image",
+      "title": "135i Engine Replacement Cost UK — Compare Quotes",
+      "description": "BMW 1 Series 135i — N54 & N55 straight-six. Real UK costs, HPFP & injector watchpoints.",
+      "image": "https://bmwengine.uk/images/bmw/hero/1-series-135i.jpg"
+    },
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://bmwengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "1 Series",
+              "item": "https://bmwengine.uk/1-series/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "1 Series E82/E88",
+              "item": "https://bmwengine.uk/1-series/e82/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "135i",
+              "item": "https://bmwengine.uk/1-series/135i/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "BMW 1 Series 135i Engine Era Map",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "E82/E88 135i (N54, 2008–2010)",
+              "url": "https://bmwengine.uk/1-series/e82/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "E82/E88 135i (N55, 2010–2013)",
+              "url": "https://bmwengine.uk/1-series/e82/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "BMW 1 Series 135i Engine Codes",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "N54 (3.0 twin-turbo)",
+              "url": "https://bmwengine.uk/engines/n54/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "N55 (3.0 single-turbo)",
+              "url": "https://bmwengine.uk/engines/n55/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does a BMW 1 Series 135i engine replacement cost in the UK?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A reconditioned N55 engine typically costs £4,000–£6,000 supply only, with the older N54 slightly lower. Fitting adds £1,000–£1,600. Use our calculator for a figure specific to your 135i."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the BMW 135i engine reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "It depends which engine your 135i has. The N54 (2008–2010) is immensely tunable but has well‑documented HPFP, injector, wastegate and carbon buildup issues. The N55 (2010–2013) is more robust with water pump and VANOS as the main watchpoints. Check the Era Map above for your specific car."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What are the common problems with the BMW 135i engine?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "N54: HPFP failure, injector failure, wastegate rattle, carbon buildup. N55: water pump failure, VANOS issues, oil filter housing gasket leaks. Both are fundamentally strong but maintenance‑intensive."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is it worth replacing a 135i engine, or should I scrap the car?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Depends on vehicle value. An E82 135i is a £5,000–£15,000 vehicle — a £4,000–£5,000 recon is 27–100% of the car's value. For lower‑value examples (sub‑£7,000), evaluate carefully against our 70% BMW scrap threshold. A well‑maintained, lower‑mileage example justifies replacement; a tired, high‑mileage one may not."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I find my BMW 135i engine code?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Listed on the VIN plate and vehicle documentation. The 135i covers N54 (2008–2010) and N55 (2010–2013). Tell us your registration date and we'll confirm which one you have for free."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I prevent the HPFP failure on a 135i?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "On N54 cars, fitting the revised HPFP (BMW part number ending in -044) is the most effective prevention. Using high‑quality fuel and regular service can also help. If you experience long cranking, have the fuel pressure tested immediately."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "BMWEngines.uk",
+          "url": "https://bmwengine.uk/",
+          "logo": "https://bmwengine.uk/images/bmwengines-logo.png",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "BMW 1 Series 135i Engine Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "2000",
+            "highPrice": "8000",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "name": "BMW 1 Series 135i UK Engine Enquiry Data 2025",
+          "description": "Proprietary UK enquiry volumes and demand trends for BMW 1 Series 135i engines, sourced from BMWEngines.uk's specialist marketplace activity.",
+          "creator": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk"
+          },
+          "temporalCoverage": "2025",
+          "spatialCoverage": "United Kingdom"
+        },
+        {
+          "@type": "WebPage",
+          "name": "135i Engine Replacement Cost UK — Compare Quotes",
+          "url": "https://bmwengine.uk/1-series/135i/",
+          "author": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk Specialist Network"
+          },
+          "datePublished": "2026-07-11",
+          "dateModified": "2026-07-11"
+        }
+      ]
+    }
+  },
+  "hero": {
+    "tagPill": "BMW 1 Series 135i • 2008–2013 • N54 / N55",
+    "h1": "BMW 1 Series 135i Engine Replacement — Compare Prices & Get Quotes",
+    "subHeadline": "The 135i badge covers two distinct twin-turbo/single-turbo straight-six engines — the high-boost N54 (2008–2010) and the more robust N55 (2010–2013). Get quotes from trusted UK specialists today.",
+    "trustBadges": [
+      "🔧 Supply & Fit Available",
+      "✅ 12-Month Warranty",
+      "🚚 Nationwide Delivery",
+      "👥 20+ Specialists"
+    ],
+    "priceAnchor": "1 Series 135i Engines — from £2,000 to £8,000 · N54 / N55",
+    "registrationInput": {
+      "flag": "🇬🇧 GB",
+      "placeholder": "Enter your reg — e.g. AB12 CDE",
+      "cta": {
+        "label": "Get My Free 135i Engine Quotes Now →",
+        "href": "#"
+      }
+    },
+    "ticker": "● Instant Quotes · No Obligation · 100% Free · Reconditioned · Rebuilt · Used · Supply & Fit Available · UK-Wide Network"
+  },
+  "eraMap": {
+    "title": "The 135i THROUGH TIME — Era Map",
+    "columns": [
+      "Generation",
+      "Years",
+      "Engine Code",
+      "Reliability",
+      "Recon Cost",
+      "Era Note"
+    ],
+    "rows": [],
+    "sourceNote": "This table is the single source every other section on this page matches — Sections 2, 4 and 6 reference it rather than restating conflicting figures.",
+    "dataNote": ""
+  },
+  "replacementCosts": {
+    "h2": "BMW 1 Series 135i Engine Replacement Costs",
+    "columns": [
+      "Engine Type",
+      "Supply Only",
+      "Fitted (Indie)",
+      "Warranty",
+      "Best For"
+    ],
+    "rows": [
+      {
+        "engineType": "Used Engine",
+        "supplyOnly": "£2,000–£3,500",
+        "fittedIndie": "£3,000–£4,800",
+        "warranty": "1–6 months",
+        "bestFor": "Budget priority; vehicle under £5,000"
+      },
+      {
+        "engineType": "Reconditioned Engine",
+        "supplyOnly": "£3,500–£6,000",
+        "fittedIndie": "£4,700–£7,400",
+        "warranty": "12–24 months",
+        "bestFor": "Most owners — best cost/warranty balance"
+      },
+      {
+        "engineType": "Rebuilt Engine",
+        "supplyOnly": "£5,500–£8,000",
+        "fittedIndie": "£6,700–£9,400",
+        "warranty": "12–24 months",
+        "bestFor": "Long-term ownership; 3+ year horizon"
+      },
+      {
+        "engineType": "Main Dealer New",
+        "supplyOnly": "£8,000–£12,000",
+        "fittedIndie": "£9,200–£13,600",
+        "warranty": "24–36 months",
+        "bestFor": "Insurance jobs, warranty claims"
+      }
+    ],
+    "figuresNote": "Figures above reflect both engine eras; N54-era pricing runs slightly lower than N55 — see the Era Map above.",
+    "labourEstimate": "Fitting a 1 Series 135i engine typically takes 12–16 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer).",
+    "cta": {
+      "label": "→ Compare 135i engine prices from UK specialists",
+      "href": "#"
+    }
+  },
+  "commonProblems": {
+    "problems": [
+      {
+        "id": 1,
+        "title": "High‑Pressure Fuel Pump Failure (N54, 2008–2010)",
+        "symptoms": "Long crank on start, rough idle, loss of power, engine stalling, engine warning light, reduced performance under load.",
+        "typicalMileage": "40,000–80,000 miles",
+        "repairCost": "£600–£1,200 (HPFP replacement) [PLACEHOLDER — confirm vs cost sheet]",
+        "replacementCost": "N/A — repair only (unless injectors also damaged)",
+        "urgency": {
+          "icon": "🟠",
+          "label": "Check",
+          "text": "book inspection urgently if symptoms appear"
+        },
+        "recommendation": "The N54's HPFP is its defining weakness — a well-documented issue that plagued early cars. If you experience long cranking or loss of power, have the fuel pressure tested. BMW issued recalls for this, but many cars are now out of warranty. Replacing the HPFP with a revised unit is the permanent fix.",
+        "failureLink": {
+          "label": "",
+          "href": "/failures/high-pressure-fuel-pump-failure/"
+        }
+      },
+      {
+        "id": 2,
+        "title": "Injector Failure (N54, 2008–2010)",
+        "symptoms": "Rough idle, misfire, fuel smell from exhaust, increased fuel consumption, engine warning light.",
+        "typicalMileage": "40,000–80,000 miles",
+        "repairCost": "£600–£1,500 (injector set replacement) [PLACEHOLDER — confirm vs cost sheet]",
+        "replacementCost": "N/A — repair only",
+        "urgency": {
+          "icon": "🟠",
+          "label": "Check",
+          "text": "book inspection urgently if symptoms appear"
+        },
+        "recommendation": "N54 injectors are another well-known weak point — they can leak or fail, causing misfires and fuel contamination. BMW issued revised injectors (index 12) which are more reliable. If you experience rough running, have the injectors tested — replacing them as a set is recommended.",
+        "failureLink": {
+          "label": "",
+          "href": "/failures/injector-failure/"
+        }
+      },
+      {
+        "id": 3,
+        "title": "Water Pump Failure (N55, 2010–2013; also affects N54)",
+        "symptoms": "Coolant loss, temperature fluctuations, engine warning light, heater not working properly, overheating.",
+        "typicalMileage": "50,000–90,000 miles",
+        "repairCost": "£500–£1,000 (electric water pump replacement) [PLACEHOLDER — confirm vs cost sheet]",
+        "replacementCost": "N/A — repair only",
+        "urgency": {
+          "icon": "🟡",
+          "label": "Monitor",
+          "text": "book inspection soon"
+        },
+        "recommendation": "Both N54 and N55 use electric water pumps, which have a finite life. If you notice temperature fluctuations or coolant loss, have the cooling system inspected. Replacing the water pump preventatively at 60,000–80,000 miles is recommended by specialists.",
+        "failureLink": {
+          "label": "",
+          "href": "/failures/water-pump-failure/"
+        }
+      }
+    ]
+  },
+  "quotesCta": {
+    "headline": "Ready to Compare? Get Matched With a Vetted BMW Specialist →",
+    "supportingLine": "20+ vetted BMW specialists, every 135i engine generation covered, with a 12‑month warranty as standard.",
+    "button": {
+      "label": "Get My Free 135i Engine Quotes Now →",
+      "href": "#"
+    }
+  },
+  "repairBuyOrReplace": {
+    "h2": "135i — Repair, Buy, or Replace?",
+    "canItBeRepaired": {
+      "title": "Can It Be Repaired?",
+      "columns": [
+        "Problem",
+        "Repairable?",
+        "Typical Cost",
+        "When It Makes Sense"
+      ],
+      "rows": [
+        {
+          "problem": "HPFP failure (N54)",
+          "repairable": "✅ Yes",
+          "typicalCost": "£600–£1,200",
+          "whenItMakesSense": "Straightforward — replace with revised unit"
+        },
+        {
+          "problem": "Injector failure (N54)",
+          "repairable": "✅ Yes",
+          "typicalCost": "£600–£1,500",
+          "whenItMakesSense": "Replace as a set — use index 12 revised injectors"
+        },
+        {
+          "problem": "Water pump failure (N54/N55)",
+          "repairable": "✅ Yes",
+          "typicalCost": "£500–£1,000",
+          "whenItMakesSense": "Routine maintenance — do preventatively"
+        },
+        {
+          "problem": "Wastegate rattle (N54)",
+          "repairable": "⚠️ Sometimes",
+          "typicalCost": "£1,500–£3,000",
+          "whenItMakesSense": "Often requires turbo replacement; consider overall engine health"
+        },
+        {
+          "problem": "Severe engine damage (chain snap / overheating)",
+          "repairable": "❌ Usually No",
+          "typicalCost": "Engine replacement",
+          "whenItMakesSense": "Little left to salvage — replacement is the only option"
+        }
+      ]
+    },
+    "buyingChecks": {
+      "title": "Buying This 135i? Check These First",
+      "buyIf": [
+        "* N54 (2008–2010): HPFP replaced with revised unit (or documented recall)",
+        "* N54: injectors replaced with index 12 revised units",
+        "* Both: water pump replaced preventatively",
+        "* Full service history with BMW-spec oil and regular intervals"
+      ],
+      "avoidIf": [
+        "* Long cranking on N54 — HPFP may be failing",
+        "* Rough idle on N54 — injectors may be leaking",
+        "* Temperature fluctuations — water pump may be failing",
+        "* Engine warning light with no diagnosis — potentially expensive issue"
+      ]
+    },
+    "closingVerdict": "The 135i is one of BMW's most characterful performance cars — a small, rear‑wheel‑drive coupé with a legendary straight‑six. The N54 is the more tunable but less reliable engine; the N55 is the more robust choice. Both are maintenance‑intensive, so buy on documented history with key items (HPFP, injectors, water pump) replaced. A well‑maintained 135i is a future classic; a neglected one is a £4,000+ repair bill waiting to happen.",
+    "cta": {
+      "label": "→ Compare 135i engine prices before you buy",
+      "href": "#"
+    }
+  },
+  "buyingChecklist": {
+    "intro": "Before you buy a used BMW 1 Series 135i (or before you commit to an engine replacement), check these:",
+    "items": [
+      "* Cold Start — Listen for smooth start; long cranking indicates HPFP issues (N54)",
+      "* Rough Idle — Check for misfire or uneven running; injector failure indicator (N54)",
+      "* Service History — including which engine era (N54 or N55) and confirmed maintenance",
+      "* Water Pump — Check for temperature fluctuations; common failure on both",
+      "* Wastegate Rattle — Listen for rattling on deceleration (N54); may indicate turbo wear",
+      "* Oil Consumption — Does it use more than 1L per 1,000 miles?",
+      "* Engine Warning Light — Have codes been read? Any unresolved issues?",
+      "* MOT History — Check for emissions‑related failures"
+    ]
+  },
+  "engineCodes": {
+    "columns": [
+      "Engine Code",
+      "Years",
+      "Power",
+      "2025 Enquiries",
+      "Avg. Recon Cost"
+    ],
+    "rows": [
+      {
+        "engineCode": "N54 (3.0 twin-turbo straight-six)",
+        "years": "2008–2010",
+        "power": "306 PS (302 bhp) @ 5,800 rpm; 400 Nm @ 1,300–5,000 rpm",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£3,500–£5,500 [PLACEHOLDER]"
+      },
+      {
+        "engineCode": "N55 (3.0 single-turbo straight-six)",
+        "years": "2010–2013",
+        "power": "306 PS (302 bhp) @ 5,800 rpm; 400 Nm @ 1,200–5,000 rpm",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£4,000–£6,000 [PLACEHOLDER]"
+      }
+    ],
+    "matchNote": "This table's rows match Section 1B's Era Map exactly.",
+    "technicalSpecs": {
+      "title": "Technical Specs (N55 3.0 single-turbo straight-six):",
+      "items": [
+        {
+          "label": "* Displacement",
+          "value": "2,979 cc"
+        },
+        {
+          "label": "* Cylinders",
+          "value": "6-cylinder inline (straight-six)"
+        },
+        {
+          "label": "* Compression Ratio",
+          "value": "10.2:1"
+        },
+        {
+          "label": "* Fuel System",
+          "value": "Direct injection"
+        },
+        {
+          "label": "* Turbocharger",
+          "value": "Single-twin-scroll turbocharger"
+        }
+      ]
+    },
+    "cta": {
+      "label": "→ Compare 135i engine prices for your BMW",
+      "href": "#"
+    }
+  },
+  "marketIntelligence": {
+    "items": []
+  },
+  "faq": {
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a BMW 1 Series 135i engine replacement cost in the UK?",
+        "answer": "A reconditioned N55 engine typically costs £4,000–£6,000 supply only, with the older N54 slightly lower. Fitting adds £1,000–£1,600. Use our calculator for a figure specific to your 135i."
+      },
+      {
+        "id": 2,
+        "question": "Is the BMW 135i engine reliable?",
+        "answer": "It depends which engine your 135i has. The N54 (2008–2010) is immensely tunable but has well‑documented HPFP, injector, wastegate and carbon buildup issues. The N55 (2010–2013) is more robust with water pump and VANOS as the main watchpoints. Check the Era Map above for your specific car."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the BMW 135i engine?",
+        "answer": "N54: HPFP failure, injector failure, wastegate rattle, carbon buildup. N55: water pump failure, VANOS issues, oil filter housing gasket leaks. Both are fundamentally strong but maintenance‑intensive."
+      },
+      {
+        "id": 4,
+        "question": "Is it worth replacing a 135i engine, or should I scrap the car?",
+        "answer": "Depends on vehicle value. An E82 135i is a £5,000–£15,000 vehicle — a £4,000–£5,000 recon is 27–100% of the car's value. For lower‑value examples (sub‑£7,000), evaluate carefully against our 70% BMW scrap threshold. A well‑maintained, lower‑mileage example justifies replacement; a tired, high‑mileage one may not."
+      },
+      {
+        "id": 5,
+        "question": "How do I find my BMW 135i engine code?",
+        "answer": "Listed on the VIN plate and vehicle documentation. The 135i covers N54 (2008–2010) and N55 (2010–2013). Tell us your registration date and we'll confirm which one you have for free."
+      },
+      {
+        "id": 6,
+        "question": "Can I prevent the HPFP failure on a 135i?",
+        "answer": "On N54 cars, fitting the revised HPFP (BMW part number ending in -044) is the most effective prevention. Using high‑quality fuel and regular service can also help. If you experience long cranking, have the fuel pressure tested immediately."
+      }
+    ],
+    "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12‑month unlimited‑mileage warranty — always confirm terms with your chosen supplier."
+  },
+  "trustCta": {
+    "h2": "",
+    "trustPoints": [],
+    "finalCta": "Find the best BMW 1 Series 135i engine replacement UK drivers rely on. Compare prices from trusted specialists on EnginesMarket today and get back on the road with confidence — from £2,000 for a used unit to £8,000 for a fully rebuilt straight‑six.",
+    "ctaButton": {
+      "label": "Compare BMW 1 Series 135i Engine Prices Now →",
+      "href": "#"
+    }
+  }
+}

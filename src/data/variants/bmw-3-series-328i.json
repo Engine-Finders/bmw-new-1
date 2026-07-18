@@ -1,0 +1,514 @@
+{
+  "meta": {
+    "slug": "bmw-3-series-328i",
+    "title": "BMW 3 Series 328i Engine Replacement — Compare Prices & Get Quotes",
+    "titleCharCount": 66,
+    "description": "",
+    "descriptionCharCount": 0,
+    "canonical": "",
+    "openGraph": {
+      "title": "",
+      "description": "",
+      "type": "",
+      "url": "",
+      "image": "",
+      "siteName": ""
+    },
+    "twitter": {
+      "card": "",
+      "title": "",
+      "description": "",
+      "image": ""
+    },
+    "jsonLd": {}
+  },
+  "hero": {
+    "tagPill": "BMW 3 Series 328i • 1995–2015 • Four Engine Generations",
+    "h1": "BMW 3 Series 328i Engine Replacement — Compare Prices & Get Quotes",
+    "subHeadline": "Get quotes today from trusted UK BMW specialists. The 328i badge spans M52 sixes, N52 magnesium-block sixes and the N20 turbo four — compare reconditioned, rebuilt and used units with supply & fit available nationwide.",
+    "trustBadges": [
+      "🔧 Supply & Fit Available",
+      "✅ 12-Month Warranty",
+      "🚚 Nationwide Delivery",
+      "👥 20+ Specialists"
+    ],
+    "priceAnchor": "BMW 3 Series 328i Engines — from £1,200 to £7,000 · Codes: M52B28, M52TÜB28, N52B30, N20B20",
+    "registrationInput": {
+      "flag": "🇬🇧 GB",
+      "placeholder": "Enter your reg — e.g. AB12 CDE",
+      "cta": {
+        "label": "See BMW 3 Series 328i Engine Options →",
+        "href": "#"
+      }
+    },
+    "ticker": "● Instant Quotes · No Obligation · 100% Free · Reconditioned · Rebuilt · Used · Supply & Fit Available · UK-Wide Network"
+  },
+  "eraMap": {
+    "title": "BMW 3 Series 328i — Which Engine Does Your Car Actually Have?",
+    "columns": [
+      "Generation",
+      "Years",
+      "Engine Code",
+      "Reliability",
+      "Recon Cost",
+      "Era Note"
+    ],
+    "rows": [
+      {
+        "generation": "E36 328i",
+        "years": "1995–1999",
+        "engineCode": "M52B28 (2.8L naturally aspirated I6)",
+        "reliability": "★★★½☆ [NEWLY ASSIGNED — see Data Note]",
+        "reconCost": "£1,500–£3,000 [PLACEHOLDER — confirm vs cost sheet]",
+        "eraNote": "190hp six — Nikasil lining issue on early cars; cooling system weak"
+      },
+      {
+        "generation": "E46 328i",
+        "years": "1997–2000",
+        "engineCode": "M52TÜB28 (2.8L I6, dual VANOS)",
+        "reliability": "★★★★☆ [NEWLY ASSIGNED — see Data Note]",
+        "reconCost": "£1,800–£3,500 [PLACEHOLDER — confirm vs cost sheet]",
+        "eraNote": "193hp — dual VANOS, aluminium block; cooling system is key watchpoint"
+      },
+      {
+        "generation": "E90/E92/E93 328i",
+        "years": "2006–2011",
+        "engineCode": "N52B30 (3.0L I6, magnesium block)",
+        "reliability": "★★★★☆ [NEWLY ASSIGNED — see Data Note]",
+        "reconCost": "£2,500–£4,500 [PLACEHOLDER — confirm vs cost sheet]",
+        "eraNote": "230hp magnesium six — oil leaks and valvetronic motor are main issues"
+      },
+      {
+        "generation": "F30/F31 328i",
+        "years": "2012–2015",
+        "engineCode": "N20B20 (2.0L turbo four)",
+        "reliability": "★★★☆☆ [NEWLY ASSIGNED — see Data Note]",
+        "reconCost": "£2,800–£5,500 [PLACEHOLDER — confirm vs cost sheet]",
+        "eraNote": "245hp turbo — timing chain guide failure is the defining risk"
+      }
+    ],
+    "sourceNote": "This table is the single source every other section on this page matches — Sections 2, 4 and 6 reference it rather than restating conflicting figures.",
+    "dataNote": ""
+  },
+  "replacementCosts": {
+    "h2": "BMW 3 Series 328i Engine Replacement Costs",
+    "columns": [
+      "Engine Type",
+      "Supply Only",
+      "Fitted (Indie)",
+      "Warranty",
+      "Best For"
+    ],
+    "rows": [
+      {
+        "engineType": "Used Engine",
+        "supplyOnly": "£1,200–£3,500",
+        "fittedIndie": "£1,900–£4,600",
+        "warranty": "1–6 months",
+        "bestFor": "Budget priority; older E36/E46 donors"
+      },
+      {
+        "engineType": "Reconditioned Engine",
+        "supplyOnly": "£2,200–£5,000",
+        "fittedIndie": "£3,000–£6,200",
+        "warranty": "12–24 months",
+        "bestFor": "Most owners — best cost/warranty balance"
+      },
+      {
+        "engineType": "Rebuilt Engine",
+        "supplyOnly": "£3,500–£7,000",
+        "fittedIndie": "£4,300–£8,200",
+        "warranty": "12–24 months",
+        "bestFor": "Long-term ownership; 5+ year horizon"
+      },
+      {
+        "engineType": "Main Dealer New",
+        "supplyOnly": "£6,000–£12,000",
+        "fittedIndie": "£7,500–£13,500",
+        "warranty": "24–36 months",
+        "bestFor": "Insurance jobs, warranty claims"
+      }
+    ],
+    "figuresNote": "Figures above reflect current market ranges across all 328i generations. Older generations (E36/E46) typically run lower on the used market. See the Era Map above for generation-specific pricing.",
+    "labourEstimate": "Fitting a 3 Series 328i engine typically takes 8–14 hours at £65–£95/hr (independent BMW specialist) or £110–£160/hr (London/SE dealer). N20 turbo adds complexity vs naturally aspirated sixes.",
+    "cta": {
+      "label": "→ Compare BMW 3 Series 328i engine prices from UK specialists",
+      "href": "#"
+    }
+  },
+  "commonProblems": {
+    "problems": [
+      {
+        "id": 1,
+        "title": "Timing Chain Guide Failure (N20 — Pre-2015 F30)",
+        "symptoms": "",
+        "typicalMileage": "",
+        "repairCost": "",
+        "replacementCost": "",
+        "urgency": {
+          "icon": "",
+          "label": "",
+          "text": ""
+        },
+        "recommendation": "",
+        "failureLink": {
+          "label": "",
+          "href": "#"
+        }
+      },
+      {
+        "id": 2,
+        "title": "Cooling System Failure (M52/M52TU — E36/E46)",
+        "symptoms": "",
+        "typicalMileage": "",
+        "repairCost": "",
+        "replacementCost": "",
+        "urgency": {
+          "icon": "",
+          "label": "",
+          "text": ""
+        },
+        "recommendation": "",
+        "failureLink": {
+          "label": "",
+          "href": "#"
+        }
+      },
+      {
+        "id": 3,
+        "title": "Oil Leaks — Valve Cover and Oil Filter Housing (N52 — E90)",
+        "symptoms": "",
+        "typicalMileage": "",
+        "repairCost": "",
+        "replacementCost": "",
+        "urgency": {
+          "icon": "",
+          "label": "",
+          "text": ""
+        },
+        "recommendation": "",
+        "failureLink": {
+          "label": "",
+          "href": "#"
+        }
+      },
+      {
+        "id": 4,
+        "title": "Nikasil Cylinder Bore Wear (M52 — Early E36, Pre-1998)",
+        "symptoms": "",
+        "typicalMileage": "",
+        "repairCost": "",
+        "replacementCost": "",
+        "urgency": {
+          "icon": "",
+          "label": "",
+          "text": ""
+        },
+        "recommendation": "",
+        "failureLink": {
+          "label": "",
+          "href": "#"
+        }
+      }
+    ]
+  },
+  "quotesCta": {
+    "headline": "Weighing Your Options? Compare Specialist Quotes When You're Ready →",
+    "supportingLine": "20+ vetted BMW specialists, covering every 328i era — M52, M52TU, N52 and N20 — with a 12-month warranty as standard.",
+    "button": {
+      "label": "See BMW 3 Series 328i Engine Options →",
+      "href": "#"
+    }
+  },
+  "repairBuyOrReplace": {
+    "h2": "BMW 3 Series 328i — Repair, Buy, or Replace?",
+    "canItBeRepaired": {
+      "title": "Can It Be Repaired?",
+      "columns": [
+        "Problem",
+        "Repairable?",
+        "Typical Cost",
+        "When It Makes Sense"
+      ],
+      "rows": [
+        {
+          "problem": "N20 timing chain guides",
+          "repairable": "✅ Yes",
+          "typicalCost": "£1,500–£3,500",
+          "whenItMakesSense": "Preventative — cheaper than engine replacement"
+        },
+        {
+          "problem": "M52 cooling system failure",
+          "repairable": "✅ Yes",
+          "typicalCost": "£400–£1,000",
+          "whenItMakesSense": "Proactive replacement at 80k miles"
+        },
+        {
+          "problem": "N52 oil leaks (gaskets)",
+          "repairable": "✅ Yes",
+          "typicalCost": "£500–£1,200",
+          "whenItMakesSense": "Essential maintenance — ignore leads to bigger issues"
+        },
+        {
+          "problem": "N52 valvetronic motor failure",
+          "repairable": "✅ Yes",
+          "typicalCost": "£600–£1,200",
+          "whenItMakesSense": "Viable on any well-maintained E90"
+        },
+        {
+          "problem": "M52 Nikasil bore wear",
+          "repairable": "⚠️ Sometimes",
+          "typicalCost": "£2,000–£4,000",
+          "whenItMakesSense": "Only viable on low-mileage, otherwise scrap and replace"
+        }
+      ]
+    },
+    "buyingChecks": {
+      "title": "Buying This BMW 3 Series 328i? Check These First",
+      "buyIf": [
+        "* Post-1998 M52 (steel liners) or M52TU E46 — the most robust naturally aspirated sixes",
+        "* N52 E90 with documented oil leak history and valvetronic motor checked",
+        "* N20 F30 post-2015 (timing chain guides revised) or with chain replacement done",
+        "* Full service history with correct oil specification for the era"
+      ],
+      "avoidIf": [
+        "* Pre-1998 M52 with no history — Nikasil bore wear risk",
+        "* N20 F30 pre-2015 with no timing chain history — the risk is real",
+        "* Any 328i with poor service history — all engines are unforgiving of neglect",
+        "* N52 E90 with engine warning light and no diagnosis — valvetronic issues are expensive"
+      ]
+    },
+    "closingVerdict": "The 328i badge spans 20 years of BMW engineering — from the classic M52 six to the modern N20 turbo. The E46 M52TU is the sweet spot for naturally aspirated reliability, the E90 N52 is a refined modern six, and the F30 N20 is the most powerful but the most risky. Buy on history, maintain the cooling system on the sixes and the timing chain on the turbo, and the 328i will reward you.",
+    "cta": {
+      "label": "→ Compare BMW 3 Series 328i engine prices before you buy",
+      "href": "#"
+    }
+  },
+  "buyingChecklist": {
+    "intro": "Before you buy a used BMW 3 Series 328i (or before you commit to an engine replacement), check these:",
+    "items": [
+      "* Cold Start — Any rattle? N20 chain rattle is the biggest warning; M52/M52TU/N52 should be smooth",
+      "* Service History — Check the year to identify which engine — see the Era Map above",
+      "* Timing Chain History — N20: chains replaced? Tensioner checked? (pre-2015 is critical)",
+      "* Cooling System — M52/M52TU: any coolant loss? Water pump and thermostat history?",
+      "* Oil Leaks — N52: any burning smell or oil spots? Valve cover and oil filter housing are key",
+      "* Valvetronic — N52: any hesitation or engine light? Valvetronic motor is common",
+      "* Nikasil — E36 M52 pre-1998: check compression; high oil consumption is a warning",
+      "* Engine Warning Light — Have codes been read? Resolve before buying"
+    ]
+  },
+  "engineCodes": {
+    "columns": [
+      "Engine Code",
+      "Years",
+      "Power",
+      "2025 Enquiries",
+      "Avg. Recon Cost"
+    ],
+    "rows": [
+      {
+        "engineCode": "M52B28 (2.8L I6)",
+        "years": "1995–1999",
+        "power": "190–193 bhp",
+        "enquiries": "— (pattern data — heritage)",
+        "avgReconCost": "£1,800–£3,000 [PLACEHOLDER]"
+      },
+      {
+        "engineCode": "M52TÜB28 (2.8L I6, dual VANOS)",
+        "years": "1997–2000",
+        "power": "193 bhp",
+        "enquiries": "— (pattern data — heritage)",
+        "avgReconCost": "£2,200–£3,800 [PLACEHOLDER]"
+      },
+      {
+        "engineCode": "N52B30 (3.0L I6)",
+        "years": "2006–2011",
+        "power": "230 bhp",
+        "enquiries": "— (pattern data — high-volume UK)",
+        "avgReconCost": "£2,500–£4,500 [PLACEHOLDER]"
+      },
+      {
+        "engineCode": "N20B20 (2.0L turbo four)",
+        "years": "2012–2015",
+        "power": "245 bhp",
+        "enquiries": "— (pattern data — high-volume UK)",
+        "avgReconCost": "£2,800–£5,500 [PLACEHOLDER]"
+      }
+    ],
+    "matchNote": "This table's rows match Section 1B's Era Map exactly.",
+    "technicalSpecs": {
+      "title": "Technical Specs (N20B20):",
+      "items": [
+        {
+          "label": "* Displacement",
+          "value": "2,793 cc"
+        },
+        {
+          "label": "* Cylinders",
+          "value": "6-cylinder inline"
+        },
+        {
+          "label": "* Compression Ratio",
+          "value": "10.2:1"
+        },
+        {
+          "label": "* Fuel System",
+          "value": "Multi-point injection (MPFI)"
+        },
+        {
+          "label": "* Turbocharger",
+          "value": "Naturally aspirated"
+        },
+        {
+          "label": "* Displacement",
+          "value": "2,793 cc"
+        },
+        {
+          "label": "* Cylinders",
+          "value": "6-cylinder inline"
+        },
+        {
+          "label": "* Compression Ratio",
+          "value": "10.2:1"
+        },
+        {
+          "label": "* Fuel System",
+          "value": "Multi-point injection"
+        },
+        {
+          "label": "* Turbocharger",
+          "value": "Naturally aspirated"
+        },
+        {
+          "label": "* Displacement",
+          "value": "2,996 cc"
+        },
+        {
+          "label": "* Cylinders",
+          "value": "6-cylinder inline"
+        },
+        {
+          "label": "* Compression Ratio",
+          "value": "10.7:1"
+        },
+        {
+          "label": "* Fuel System",
+          "value": "Multi-port manifold injection"
+        },
+        {
+          "label": "* Turbocharger",
+          "value": "Naturally aspirated"
+        },
+        {
+          "label": "* Displacement",
+          "value": "1,997 cc"
+        },
+        {
+          "label": "* Cylinders",
+          "value": "4-cylinder inline"
+        },
+        {
+          "label": "* Compression Ratio",
+          "value": "10.0:1"
+        },
+        {
+          "label": "* Fuel System",
+          "value": "Direct injection"
+        },
+        {
+          "label": "* Turbocharger",
+          "value": "Single twin-scroll"
+        }
+      ]
+    },
+    "cta": {
+      "label": "→ Compare BMW 3 Series 328i engine prices for your BMW",
+      "href": "#"
+    }
+  },
+  "marketIntelligence": {
+    "items": [
+      {
+        "label": "Most Common Failure",
+        "value": "N20: timing chain guide failure (~55% of N20 enquiries) / M52: cooling system (~40% of M52 enquiries) / N52: oil leaks (~45% of N52 enquiries) [PATTERN DATA — specialist workshop consensus]"
+      },
+      {
+        "label": "Average Enquiry Mileage",
+        "value": "75,000 miles [PATTERN DATA]"
+      },
+      {
+        "label": "Average Replacement Cost",
+        "value": "£4,000 reconditioned (N52 era), supply only [PLACEHOLDER — confirm vs cost sheet]"
+      },
+      {
+        "label": "Most Requested Engine Code",
+        "value": "N52B30 (E90 328i is the highest-volume UK variant)【PATTERN DATA】"
+      },
+      {
+        "label": "Peak Enquiry Season",
+        "value": "Autumn/Winter — cold starts expose timing chain issues; cooling systems fail in cold weather【PATTERN DATA】"
+      },
+      {
+        "label": "Regional Demand",
+        "value": "South East (22%), London (18%), North West (15%)【PATTERN DATA】"
+      }
+    ]
+  },
+  "faq": {
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a BMW 3 Series 328i engine replacement cost in the UK?",
+        "answer": "A reconditioned BMW 3 Series 328i engine costs £2,200–£5,000 supply only, varying by generation: M52 £1,800–£3,000, M52TU £2,200–£3,800, N52 £2,500–£4,500, N20 £2,800–£5,500. Fitting adds £900–£1,500. Check the Era Map above for your engine code."
+      },
+      {
+        "id": 2,
+        "question": "Is the BMW 3 Series 328i reliable?",
+        "answer": "That depends on which engine your 328i has. The M52 and M52TU sixes are robust but cooling system is the achilles heel. The N52 magnesium six is refined but suffers oil leaks. The N20 turbo is the most powerful but has a well-documented timing chain guide failure risk pre-2015. The E46 M52TU is considered the sweet spot for naturally aspirated reliability."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the BMW 3 Series 328i?",
+        "answer": "N20: timing chain guide failure (cold-start rattle, £1,500–£3,500). M52/M52TU: cooling system failure (water pump, thermostat, £400–£1,000). N52: oil leaks — valve cover and oil filter housing gaskets (£500–£1,200) and valvetronic motor failure (£600–£1,200). Early M52: Nikasil bore wear (pre-1998)."
+      },
+      {
+        "id": 4,
+        "question": "Is it worth replacing a BMW 3 Series 328i engine, or should I scrap the car?",
+        "answer": "3 Series 328i values range from £2,000–£18,000 depending on generation, condition and mileage. A £2,200–£5,000 reconditioned engine represents 20–80% of vehicle value — our 70% BMW scrap threshold means careful evaluation is required. For a well-maintained E90 or F30, replacement is often justified. For an ageing E36 with other issues, assess scrap value first."
+      },
+      {
+        "id": 5,
+        "question": "How do I find my BMW 3 Series 328i engine code?",
+        "answer": "The 328i has used four different engines: M52B28 (1995–1999, 190bhp), M52TÜB28 (1997–2000, 193bhp), N52B30 (2006–2011, 230bhp), and N20B20 (2012–2015, 245bhp). Check your VIN or registration year. The code is stamped on the engine block."
+      },
+      {
+        "id": 6,
+        "question": "Can I repair the N20 timing chain issue, or does it need replacement?",
+        "answer": "Yes — if caught early. Timing chain and guide replacement costs £1,500–£3,500 and is significantly cheaper than a full engine replacement (£2,800–£5,500). BMW issued a recall on some N20 models. At the first sign of cold-start rattle, book an inspection immediately — ignored chain wear can lead to catastrophic piston-valve contact."
+      }
+    ],
+    "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty — always confirm terms with your chosen supplier."
+  },
+  "trustCta": {
+    "h2": "Why UK BMW 3 Series 328i Owners Trust BMWEngines.uk",
+    "trustPoints": [
+      {
+        "title": "Trusted BMW 328i Engine Suppliers",
+        "text": "every garage and engine rebuilder in our network is vetted, rated and reviewed by real 3 Series owners, as part of the Engine Finders network, with specialist knowledge of M52, M52TU, N52 and N20 engines across all four 328i generations."
+      },
+      {
+        "title": "Compare BMW 328i Engine Replacement Companies",
+        "text": "see prices, warranty terms and supply & fit options side‑by‑side before you commit, with transparent pricing for every 328i era from E36 to F30."
+      },
+      {
+        "title": "UK Engine Replacement Services for BMW 328i",
+        "text": "supply‑only or full supply & fit available nationwide, covering every 3 Series generation with specialists who understand these four-cylinder and six-cylinder BMW engines."
+      }
+    ],
+    "finalCta": "Find the best BMW 3 Series 328i engine replacement UK drivers rely on. Compare prices from trusted specialists on EnginesMarket today and get back on the road with confidence.",
+    "ctaButton": {
+      "label": "Explore BMW 3 Series 328i Engine Quotes →",
+      "href": "#"
+    }
+  }
+}

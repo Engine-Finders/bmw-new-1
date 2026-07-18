@@ -1,0 +1,525 @@
+{
+  "meta": {
+    "slug": "4-series-m440i",
+    "title": "M440i Engine Replacement Cost UK — Compare Quotes",
+    "titleCharCount": 53,
+    "description": "BMW 4 Series M440i B58 straight-six — real UK costs, coolant & PCV watchpoints. Get free quotes from 20+ vetted BMW specialists today.",
+    "descriptionCharCount": 159,
+    "canonical": "https://bmwengine.uk/4-series/m440i/",
+    "openGraph": {
+      "title": "M440i Engine Replacement Cost UK — Compare Quotes",
+      "description": "BMW 4 Series M440i B58 straight-six — real UK costs, coolant & PCV watchpoints. Get free quotes from 20+ vetted BMW specialists today.",
+      "type": "website",
+      "url": "https://bmwengine.uk/4-series/m440i/",
+      "image": "https://bmwengine.uk/images/bmw/hero/4-series-m440i.jpg",
+      "siteName": "BMWEngines.uk"
+    },
+    "twitter": {
+      "card": "summary_large_image",
+      "title": "M440i Engine Replacement Cost UK — Compare Quotes",
+      "description": "BMW 4 Series M440i B58 straight-six — real UK costs, coolant & PCV watchpoints.",
+      "image": "https://bmwengine.uk/images/bmw/hero/4-series-m440i.jpg"
+    },
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://bmwengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "4 Series",
+              "item": "https://bmwengine.uk/4-series/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "4 Series G22",
+              "item": "https://bmwengine.uk/4-series/g22/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "M440i",
+              "item": "https://bmwengine.uk/4-series/m440i/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "BMW 4 Series M440i Engine Era Map",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "G22/G23/G26 M440i (B58B30O1, 2020–2024)",
+              "url": "https://bmwengine.uk/4-series/g22/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "G22/G23/G26 M440i LCI (B58B30M2, 2024–present)",
+              "url": "https://bmwengine.uk/4-series/g22/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "BMW 4 Series M440i Engine Codes",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "B58B30O1 (3.0 straight-six turbo MHEV)",
+              "url": "https://bmwengine.uk/engines/b58/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "B58B30M2 (3.0 straight-six turbo MHEV)",
+              "url": "https://bmwengine.uk/engines/b58/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does a BMW 4 Series M440i engine replacement cost in the UK?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A reconditioned B58 engine typically costs £5,000–£7,500 supply only, with LCI-era units slightly higher. Fitting adds £1,200–£1,700. Use our calculator for a figure specific to your M440i."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the BMW M440i (B58) engine reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes — the B58 is widely considered one of the most reliable modern BMW engines. It's a significant improvement over the N54 and N55. The main watchpoints are coolant loss, PCV valve failure, and oil filter housing leaks — all manageable with proper maintenance."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What are the common problems with the BMW M440i engine?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Coolant loss (water pump, expansion cap), PCV valve failure, oil filter housing leaks, and occasional water pump failure. The engine itself is fundamentally robust and not prone to major failures."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is it worth replacing an M440i engine, or should I scrap the car?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Depends on vehicle value. A G22 M440i is a £25,000–£45,000 vehicle — a £6,000 recon is 13–24% of the car's value, making replacement a clear decision. This is well within our 70% BMW scrap threshold."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I find my BMW M440i engine code?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Listed on the VIN plate and vehicle documentation. The M440i engine code is B58B30O1 (pre‑LCI, 2020–2024) or B58B30M2 (LCI, 2024+). Tell us your registration date and we'll confirm it for free."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I prevent the common failures on an M440i?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes — regular cooling system inspections, BMW‑spec oil changes with shortened intervals (5,000–7,500 miles), and PCV system checks are the most effective prevention. If you notice coolant loss or rough running, book an inspection immediately."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "BMWEngines.uk",
+          "url": "https://bmwengine.uk/",
+          "logo": "https://bmwengine.uk/images/bmwengines-logo.png",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "BMW 4 Series M440i Engine Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "3000",
+            "highPrice": "8500",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "name": "BMW 4 Series M440i UK Engine Enquiry Data 2025",
+          "description": "Proprietary UK enquiry volumes and demand trends for BMW 4 Series M440i engines, sourced from BMWEngines.uk's specialist marketplace activity.",
+          "creator": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk"
+          },
+          "temporalCoverage": "2025",
+          "spatialCoverage": "United Kingdom"
+        },
+        {
+          "@type": "WebPage",
+          "name": "M440i Engine Replacement Cost UK — Compare Quotes",
+          "url": "https://bmwengine.uk/4-series/m440i/",
+          "author": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk Specialist Network"
+          },
+          "datePublished": "2026-07-11",
+          "dateModified": "2026-07-11"
+        }
+      ]
+    }
+  },
+  "hero": {
+    "tagPill": "BMW 4 Series M440i • 2020–present • B58",
+    "h1": "BMW 4 Series M440i Engine Replacement — Compare Prices & Get Quotes",
+    "subHeadline": "The M440i packs BMW's legendary B58 3.0‑litre straight‑six turbo with 48V mild‑hybrid assistance — the heart of the 4 Series range since 2020. Get quotes from trusted UK specialists today.",
+    "trustBadges": [
+      "🔧 Supply & Fit Available",
+      "✅ 12-Month Warranty",
+      "🚚 Nationwide Delivery",
+      "👥 20+ Specialists"
+    ],
+    "priceAnchor": "4 Series M440i Engines — from £3,000 to £8,500 · B58",
+    "registrationInput": {
+      "flag": "🇬🇧 GB",
+      "placeholder": "Enter your reg — e.g. AB12 CDE",
+      "cta": {
+        "label": "Get My Free M440i Engine Quotes Now →",
+        "href": "#"
+      }
+    },
+    "ticker": "● Instant Quotes · No Obligation · 100% Free · Reconditioned · Rebuilt · Used · Supply & Fit Available · UK-Wide Network"
+  },
+  "eraMap": {
+    "title": "The M440i THROUGH TIME — Era Map",
+    "columns": [
+      "Generation",
+      "Years",
+      "Engine Code",
+      "Reliability",
+      "Recon Cost",
+      "Era Note"
+    ],
+    "rows": [],
+    "sourceNote": "This table is the single source every other section on this page matches — Sections 2, 4 and 6 reference it rather than restating conflicting figures.",
+    "dataNote": ""
+  },
+  "replacementCosts": {
+    "h2": "BMW 4 Series M440i Engine Replacement Costs",
+    "columns": [
+      "Engine Type",
+      "Supply Only",
+      "Fitted (Indie)",
+      "Warranty",
+      "Best For"
+    ],
+    "rows": [
+      {
+        "engineType": "Used Engine",
+        "supplyOnly": "£3,000–£4,500",
+        "fittedIndie": "£4,200–£5,900",
+        "warranty": "1–6 months",
+        "bestFor": "Budget priority; lower-mileage donor"
+      },
+      {
+        "engineType": "Reconditioned Engine",
+        "supplyOnly": "£5,000–£7,500",
+        "fittedIndie": "£6,300–£8,900",
+        "warranty": "12–24 months",
+        "bestFor": "Most owners — best cost/warranty balance"
+      },
+      {
+        "engineType": "Rebuilt Engine",
+        "supplyOnly": "£6,000–£8,500",
+        "fittedIndie": "£7,300–£9,900",
+        "warranty": "12–24 months",
+        "bestFor": "Long-term ownership; 3+ year horizon"
+      },
+      {
+        "engineType": "Main Dealer New",
+        "supplyOnly": "£8,500–£12,000",
+        "fittedIndie": "£9,800–£13,500",
+        "warranty": "24–36 months",
+        "bestFor": "Insurance jobs, warranty claims"
+      }
+    ],
+    "figuresNote": "Figures above reflect the current B58 generation; LCI-era pricing runs slightly higher — see the Era Map above.",
+    "labourEstimate": "Fitting a 4 Series M440i engine typically takes 12–16 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer).",
+    "cta": {
+      "label": "→ Compare M440i engine prices from UK specialists",
+      "href": "#"
+    }
+  },
+  "commonProblems": {
+    "problems": [
+      {
+        "id": 1,
+        "title": "Coolant Loss (Reservoir Cap / Water Pump)",
+        "symptoms": "Low coolant warning light, sudden drop in coolant level, overheating, visible coolant puddles under the car.",
+        "typicalMileage": "40,000–80,000 miles",
+        "repairCost": "£400–£900 (water pump or cap replacement) [PLACEHOLDER — confirm vs cost sheet]",
+        "replacementCost": "N/A — repair only",
+        "urgency": {
+          "icon": "🟠",
+          "label": "Check",
+          "text": "book inspection urgently if coolant levels drop"
+        },
+        "recommendation": "B58 coolant loss is one of the most frequently reported issues . The electric water pump can fail, and the expansion tank cap may not seal properly. If you notice the coolant level dropping, have the cooling system pressure‑tested immediately. Replacing a failing water pump preventatively is far cheaper than the overheating damage it can cause .",
+        "failureLink": {
+          "label": "",
+          "href": "/failures/coolant-leak/"
+        }
+      },
+      {
+        "id": 2,
+        "title": "PCV Valve Failure",
+        "symptoms": "Rough idle, engine misfires, oil in the intake/charge pipe, check engine light, whistling noise from the engine.",
+        "typicalMileage": "50,000–90,000 miles",
+        "repairCost": "£400–£800 (PCV valve replacement) [PLACEHOLDER — confirm vs cost sheet]",
+        "replacementCost": "N/A — repair only",
+        "urgency": {
+          "icon": "🟡",
+          "label": "Monitor",
+          "text": "book inspection soon"
+        },
+        "recommendation": "The PCV valve is a well‑known weak point on the B58 . If you notice a rough idle, misfires, or oil in the intake, have the PCV system inspected. A failed PCV valve can cause oil consumption and performance issues. Replacing it promptly prevents more serious engine damage.",
+        "failureLink": {
+          "label": "",
+          "href": "/failures/pcv-valve-failure/"
+        }
+      },
+      {
+        "id": 3,
+        "title": "Oil Filter Housing Leak",
+        "symptoms": "Oil or coolant leak from the front of the engine, low oil warning light, low coolant warning, burning oil smell.",
+        "typicalMileage": "60,000–100,000 miles",
+        "repairCost": "£800–£1,500 (oil filter housing replacement) [PLACEHOLDER — confirm vs cost sheet]",
+        "replacementCost": "N/A — repair only",
+        "urgency": {
+          "icon": "🟡",
+          "label": "Monitor",
+          "text": "book inspection soon"
+        },
+        "recommendation": "The plastic oil filter housing on the B58 can crack and leak oil or coolant . Some owners have reported failures as early as 60,000 miles . If you notice oil or coolant residue on the front of the engine, have the oil filter housing inspected. An upgraded aluminium housing is available as a permanent fix .",
+        "failureLink": {
+          "label": "",
+          "href": "/failures/oil-filter-housing-failure/"
+        }
+      }
+    ]
+  },
+  "quotesCta": {
+    "headline": "Ready to Compare? Get Matched With a Vetted BMW Specialist →",
+    "supportingLine": "20+ vetted BMW specialists, every M440i engine covered, with a 12‑month warranty as standard.",
+    "button": {
+      "label": "Get My Free M440i Engine Quotes Now →",
+      "href": "#"
+    }
+  },
+  "repairBuyOrReplace": {
+    "h2": "M440i — Repair, Buy, or Replace?",
+    "canItBeRepaired": {
+      "title": "Can It Be Repaired?",
+      "columns": [
+        "Problem",
+        "Repairable?",
+        "Typical Cost",
+        "When It Makes Sense"
+      ],
+      "rows": [
+        {
+          "problem": "Coolant loss (water pump/cap)",
+          "repairable": "✅ Yes",
+          "typicalCost": "£400–£900",
+          "whenItMakesSense": "Routine maintenance — do preventatively"
+        },
+        {
+          "problem": "PCV valve failure",
+          "repairable": "✅ Yes",
+          "typicalCost": "£400–£800",
+          "whenItMakesSense": "Straightforward — replace valve"
+        },
+        {
+          "problem": "Oil filter housing leak",
+          "repairable": "✅ Yes",
+          "typicalCost": "£800–£1,500",
+          "whenItMakesSense": "Replace with upgraded aluminium housing"
+        },
+        {
+          "problem": "Turbocharger wastegate rattle",
+          "repairable": "⚠️ Sometimes",
+          "typicalCost": "£1,000–£2,500",
+          "whenItMakesSense": "Viable on lower-mileage examples; assess overall turbo health"
+        },
+        {
+          "problem": "Severe engine damage (overheating / oil starvation)",
+          "repairable": "❌ Usually No",
+          "typicalCost": "Engine replacement",
+          "whenItMakesSense": "Little left to salvage — replacement is the only option"
+        }
+      ]
+    },
+    "buyingChecks": {
+      "title": "Buying This M440i? Check These First",
+      "buyIf": [
+        "* Documented cooling system maintenance (water pump, expansion tank)",
+        "* PCV valve replaced or inspected",
+        "* Oil filter housing replaced with upgraded aluminium unit",
+        "* Full BMW service history with correct oil spec"
+      ],
+      "avoidIf": [
+        "* Coolant loss with no diagnosis — walk away",
+        "* Rough idle with no PCV history — may indicate PCV failure",
+        "* Oil/coolant residue on the engine — oil filter housing may be failing",
+        "* Engine warning light with no diagnosis — potentially expensive"
+      ]
+    },
+    "closingVerdict": "The B58 is one of BMW's finest modern engines — a 3.0‑litre straight‑six with 374–386 hp, 500–540 Nm and genuine performance credentials. It's not without its watchpoints — coolant system, PCV valve and oil filter housing are the main areas to monitor — but it's fundamentally robust and significantly more reliable than earlier BMW turbo sixes. Buy on full service history and pay attention to coolant levels. A well‑maintained M440i is a long‑lived performance car.",
+    "cta": {
+      "label": "→ Compare M440i engine prices before you buy",
+      "href": "#"
+    }
+  },
+  "buyingChecklist": {
+    "intro": "Before you buy a used BMW 4 Series M440i (or before you commit to an engine replacement), check these:",
+    "items": [
+      "* Coolant Level — Check for unexplained loss; water pump or cap may be failing",
+      "* Cold Start — Listen for smooth start; B58 is generally quiet",
+      "* Rough Idle — Check for uneven running; PCV valve failure indicator",
+      "* Oil/Coolant Residue — Check front of engine; oil filter housing leak indicator",
+      "* Service History — including which generation (pre‑LCI or LCI) and confirmed maintenance",
+      "* Oil Consumption — Does it use more than 1L per 1,000 miles?",
+      "* Engine Warning Light — Have codes been read? Any unresolved issues?",
+      "* MOT History — Check for emissions‑related failures"
+    ]
+  },
+  "engineCodes": {
+    "columns": [
+      "Engine Code",
+      "Years",
+      "Power",
+      "2025 Enquiries",
+      "Avg. Recon Cost"
+    ],
+    "rows": [
+      {
+        "engineCode": "B58B30O1 (3.0 straight-six turbo, 48V MHEV)",
+        "years": "2020–2024",
+        "power": "374 PS (275 kW) @ 5,500–6,500 rpm; 500 Nm @ 1,800–5,000 rpm + 11 hp e‑boost",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£5,000–£7,500 [PLACEHOLDER]"
+      },
+      {
+        "engineCode": "B58B30M2 (3.0 straight-six turbo, 48V MHEV)",
+        "years": "2024–present",
+        "power": "386 PS (285 kW) @ 5,200–6,250 rpm; 540 Nm @ 1,900–4,800 rpm",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£5,500–£8,000 [PLACEHOLDER]"
+      }
+    ],
+    "matchNote": "This table's rows match Section 1B's Era Map exactly.",
+    "technicalSpecs": {
+      "title": "Technical Specs (B58B30O1 3.0 straight-six):",
+      "items": [
+        {
+          "label": "* Displacement",
+          "value": "2,998 cc"
+        },
+        {
+          "label": "* Cylinders",
+          "value": "6-cylinder inline"
+        },
+        {
+          "label": "* Compression Ratio",
+          "value": "11.0:1"
+        },
+        {
+          "label": "* Fuel System",
+          "value": "Direct injection"
+        },
+        {
+          "label": "* Turbocharger",
+          "value": "Single-turbo (twin-scroll) + 48V MHEV starter-generator"
+        }
+      ]
+    },
+    "cta": {
+      "label": "→ Compare M440i engine prices for your BMW",
+      "href": "#"
+    }
+  },
+  "marketIntelligence": {
+    "items": []
+  },
+  "faq": {
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a BMW 4 Series M440i engine replacement cost in the UK?",
+        "answer": "A reconditioned B58 engine typically costs £5,000–£7,500 supply only, with LCI-era units slightly higher. Fitting adds £1,200–£1,700. Use our calculator for a figure specific to your M440i."
+      },
+      {
+        "id": 2,
+        "question": "Is the BMW M440i (B58) engine reliable?",
+        "answer": "Yes — the B58 is widely considered one of the most reliable modern BMW engines . It's a significant improvement over the N54 and N55. The main watchpoints are coolant loss, PCV valve failure, and oil filter housing leaks — all manageable with proper maintenance."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the BMW M440i engine?",
+        "answer": "Coolant loss (water pump, expansion cap), PCV valve failure, oil filter housing leaks, and occasional water pump failure. The engine itself is fundamentally robust and not prone to major failures."
+      },
+      {
+        "id": 4,
+        "question": "Is it worth replacing an M440i engine, or should I scrap the car?",
+        "answer": "Depends on vehicle value. A G22 M440i is a £25,000–£45,000 vehicle — a £6,000 recon is 13–24% of the car's value, making replacement a clear decision. This is well within our 70% BMW scrap threshold."
+      },
+      {
+        "id": 5,
+        "question": "How do I find my BMW M440i engine code?",
+        "answer": "Listed on the VIN plate and vehicle documentation. The M440i engine code is B58B30O1 (pre‑LCI, 2020–2024) or B58B30M2 (LCI, 2024+). Tell us your registration date and we'll confirm it for free."
+      },
+      {
+        "id": 6,
+        "question": "Can I prevent the common failures on an M440i?",
+        "answer": "Yes — regular cooling system inspections, BMW‑spec oil changes with shortened intervals (5,000–7,500 miles), and PCV system checks are the most effective prevention. If you notice coolant loss or rough running, book an inspection immediately."
+      }
+    ],
+    "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12‑month unlimited‑mileage warranty — always confirm terms with your chosen supplier."
+  },
+  "trustCta": {
+    "h2": "",
+    "trustPoints": [],
+    "finalCta": "Find the best BMW 4 Series M440i engine replacement UK drivers rely on. Compare prices from trusted specialists on EnginesMarket today and get back on the road with confidence — from £3,000 for a used unit to £8,500 for a fully rebuilt straight‑six.",
+    "ctaButton": {
+      "label": "Compare BMW 4 Series M440i Engine Prices Now →",
+      "href": "#"
+    }
+  }
+}

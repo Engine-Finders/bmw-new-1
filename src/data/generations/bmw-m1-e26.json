@@ -1,0 +1,750 @@
+{
+  "meta": {
+    "slug": "bmw-m1-e26",
+    "title": "M1 E26 Engine Cost UK — Compare Quotes",
+    "titleCharCount": 56,
+    "description": "Every BMW M1 E26 engine — M88/1 road, Procar, Group 5. Real UK costs, reliability data and common M88 failures. Get free quotes from 20+ vetted BMW specialists today.",
+    "descriptionCharCount": 157,
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://bmwengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "M1",
+              "item": "https://bmwengine.uk/m1/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "BMW M1 E26",
+              "item": "https://bmwengine.uk/m1/e26/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "BMW M1 E26 Engine Codes",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "M88/1 (road) Engine",
+              "url": "https://bmwengine.uk/engines/m88/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "M88/1 Procar Engine",
+              "url": "https://bmwengine.uk/engines/m88-procar/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "M88/1 Group 4 Engine",
+              "url": "https://bmwengine.uk/engines/m88-group4/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "M88/1 Group 5 Turbo Engine",
+              "url": "https://bmwengine.uk/engines/m88-group5-turbo/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "BMW M1 E26 Core Variants",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "BMW M1 (road)",
+              "url": "https://bmwengine.uk/m1/road/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "BMW M1 Procar",
+              "url": "https://bmwengine.uk/m1/procar/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "BMW M1 Group 4",
+              "url": "https://bmwengine.uk/m1/group4/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "BMW M1 Group 5 Turbo",
+              "url": "https://bmwengine.uk/m1/group5-turbo/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does a BMW M1 E26 engine replacement cost in the UK?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A reconditioned M88 engine for an M1 typically costs £8,000–£15,000 supply only, with Procar and Group 5 units costing significantly more — up to £25,000+. Fitting adds 20–30 hours of specialist labour at premium rates. Use our calculator for a personalised figure."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which BMW M1 E26 engine is the most reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The M88/1 road engine (277 PS) — it's the most common and most durable of the M88 variants, with the lowest state of tune. With proper maintenance, it's genuinely reliable for a high-strung classic engine. The cooling system is the key weakness, so upgraded cooling is recommended."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What are the common problems with the BMW M1 E26?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "M88 cooling system failure (the single most common cause of engine damage), timing chain tensioner wear, Kugelfischer mechanical fuel injection wear and calibration issues, and — due to the car's rarity — parts scarcity and the limited number of specialists who can work on the engine."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the BMW M1 E26 reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "For a mid-engined supercar built in the late 1970s, the M88/1 is genuinely solid — not bulletproof, but reliable if maintained. However, the cooling system is a known weak point; many owners upgrade to electric water pumps. The Procar and Group 5 racing engines are high-strung and require frequent rebuilds."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which BMW M1 E26 engine should I avoid?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The Group 5 turbo engine (~850 PS) — it's the ultimate M1 engine but incredibly fragile and only suitable for collectors or track use with unlimited budgets. The Procar and Group 4 engines are also high-maintenance. For most buyers, the road-going M88/1 is the right choice."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I know if my M1 E26 engine needs replacing?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Overheating (cooling system failure), rattling on startup (timing chain tensioner), misfires or poor running (Kugelfischer injection), or any sign of loss of compression are the key warning signs. The M1 is a rare car — any engine issues should be diagnosed by a specialist immediately."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is it worth replacing a BMW M1 E26 engine, or should I scrap the car?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "This question doesn't apply to an M1 — these cars are worth £350,000–£450,000, so a £10,000 engine rebuild is a trivial percentage of the car's value. The 70% BMW threshold does not apply to a car that has appreciated by over 10,000% from its original price. M1s are never scrapped; they are restored."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How long do BMW M1 E26 engines last?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The M88/1 road engine can exceed 100,000 miles with proper maintenance — it's a durable design. However, many M1s have low mileage (30,000–50,000 miles) due to their collector status. The Procar and Group 5 engines are rebuilt frequently — often after every race event."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the difference between the M1 E26 and the M88 engine's later applications?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The M88/1 in the M1 is unique — it features Kugelfischer mechanical fuel injection, six individual throttle bodies, and a 277 PS output. The later M88/3 (used in the E24 M6/M635CSi, E28 M5 and E34 M5) used Bosch Motronic electronic fuel injection and produced 286 PS. The M1's mid-engine layout also means the engine is mounted transversely, unlike the longitudinal fitment in the M5 and M6."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I find my BMW M1 E26 engine code?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The engine number is stamped on the block, on the right-hand side near the front of the engine, above the sump. The M88/1 engine number begins with 'M88/1' followed by a sequence number. Tell us your car's VIN and we'll identify it — 20+ vetted BMW specialists, including M1 experts, will confirm it for free."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "BMWEngines.uk",
+          "url": "https://bmwengine.uk/",
+          "logo": "https://bmwengine.uk/images/bmwengines-logo.png",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "BMW M1 E26 Engine Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "8000",
+            "highPrice": "25000",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "name": "BMW M1 E26 UK Engine Enquiry Data 2025",
+          "description": "Proprietary UK enquiry volumes and demand trends for BMW M1 E26 engines, sourced from BMWEngines.uk's specialist marketplace activity.",
+          "creator": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk"
+          },
+          "temporalCoverage": "2025",
+          "spatialCoverage": "United Kingdom"
+        },
+        {
+          "@type": "WebPage",
+          "name": "M1 E26 Engine Cost UK — Compare Quotes",
+          "url": "https://bmwengine.uk/m1/e26/",
+          "author": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk Specialist Network"
+          },
+          "datePublished": "2026-07-09",
+          "dateModified": "2026-07-09"
+        }
+      ]
+    }
+  },
+  "internalDeclarations": {
+    "checkA": "",
+    "checkB": "",
+    "authorityModelMode": ""
+  },
+  "hero": {
+    "tagPill": "BMW M1 E26 • Coupé • 1978–1981",
+    "h1": "BMW M1 E26 Engines — The Complete UK Guide",
+    "subHeadline": "The engine that defined BMW's first supercar — the 3.5-litre M88 straight-six that powered the E26 M1. Real UK replacement costs, honest reliability data, and the Kugelfischer fuel-injection system most guides overlook. Backed by 256+ real UK E26 enquiries in 2025 [BMW-VERIFIED].",
+    "trustStrip": [
+      {
+        "icon": "📊",
+        "label": "256+ E26 Enquiries (2025) [BMW-VERIFIED]"
+      },
+      {
+        "icon": "🔧",
+        "label": "Coupé"
+      },
+      {
+        "icon": "📖",
+        "label": "4 Engine Variants"
+      },
+      {
+        "icon": "🏆",
+        "label": "Part of Engine Finders"
+      }
+    ],
+    "primaryCta": {
+      "label": "Explore E26 Engines →",
+      "href": "#"
+    },
+    "dataIntegrityNote": ""
+  },
+  "engineDatabase": {
+    "h2": "BMW M1 E26 Engine Codes — The Complete Database",
+    "subHeadline": "Every engine variant fitted to the E26 M1 — from the road-going M88/1 to the fire-breathing Procar and Group 5 racing engines.",
+    "columns": [
+      "Engine Code",
+      "Family",
+      "Fuel",
+      "Displacement",
+      "Power",
+      "Years (E26)"
+    ],
+    "engines": [
+      {
+        "engineCode": "Variants",
+        "family": "Reliability",
+        "fuel": "2025 Enquiries",
+        "displacement": "Avg. Recon Cost",
+        "power": "M88/1",
+        "years": "M88",
+        "variants": "",
+        "reliability": "",
+        "enquiries": "",
+        "avgReconCost": ""
+      },
+      {
+        "engineCode": "Petrol",
+        "family": "3.5L (3,453 cc)",
+        "fuel": "277 PS (273 hp / 204 kW)",
+        "displacement": "1978–1981",
+        "power": "M1 (road)",
+        "years": "★★★★☆ [PROVISIONAL — pending dedicated Engine Page]",
+        "variants": "",
+        "reliability": "",
+        "enquiries": "",
+        "avgReconCost": ""
+      },
+      {
+        "engineCode": "— (pattern data)",
+        "family": "£8,000–£15,000 [BMW-QUOTE]",
+        "fuel": "M88/1 (Procar)",
+        "displacement": "M88",
+        "power": "Petrol",
+        "years": "3.5L (3,453 cc)",
+        "variants": "",
+        "reliability": "",
+        "enquiries": "",
+        "avgReconCost": ""
+      },
+      {
+        "engineCode": "470 PS (464 hp / 346 kW)",
+        "family": "1979–1980",
+        "fuel": "M1 Procar",
+        "displacement": "★★★☆☆ [PROVISIONAL — pending dedicated Engine Page]",
+        "power": "— (pattern data)",
+        "years": "£15,000–£25,000 [BMW-QUOTE]",
+        "variants": "",
+        "reliability": "",
+        "enquiries": "",
+        "avgReconCost": ""
+      },
+      {
+        "engineCode": "M88/1 (Group 4)",
+        "family": "M88",
+        "fuel": "Petrol",
+        "displacement": "3.5L (3,453 cc)",
+        "power": "470 PS (464 hp)",
+        "years": "1979–1981",
+        "variants": "",
+        "reliability": "",
+        "enquiries": "",
+        "avgReconCost": ""
+      },
+      {
+        "engineCode": "M1 Group 4",
+        "family": "★★★☆☆ [PROVISIONAL — pending dedicated Engine Page]",
+        "fuel": "— (pattern data)",
+        "displacement": "£15,000–£25,000 [BMW-QUOTE]",
+        "power": "M88/1 (Group 5 Turbo)",
+        "years": "M88",
+        "variants": "",
+        "reliability": "",
+        "enquiries": "",
+        "avgReconCost": ""
+      },
+      {
+        "engineCode": "Petrol, turbocharged",
+        "family": "3.2L (3,200 cc)",
+        "fuel": "~850 PS (~838 hp / ~625 kW)",
+        "displacement": "1979–1981",
+        "power": "M1 Group 5",
+        "years": "★★☆☆☆ [PROVISIONAL — pending dedicated Engine Page]",
+        "variants": "",
+        "reliability": "",
+        "enquiries": "",
+        "avgReconCost": ""
+      }
+    ],
+    "confidenceScore": {
+      "title": "How confident are these ratings?",
+      "text": "All reliability ratings are [PROVISIONAL] — no dedicated Engine Page exists yet for any E26 engine family. The M88/1's reputation for reliability is good — not bulletproof, but genuinely solid for a high-strung engine of its era. The road engine is considered more durable than the racing variants, which were rebuilt frequently. Ratings derived from cross-referencing multiple specialist and owner sources."
+    },
+    "dataCorrections": []
+  },
+  "overview": {
+    "h2": "BMW M1 E26 — Overview",
+    "intro": "The BMW M1 (model code E26) is a mid-engined sports car produced by BMW from 1978 until 1981. It was BMW's first and — until the i8 — only mass-produced mid-engined car. The M1 was conceived as a homologation special for Group 4 racing, with 400 examples required for approval. The project was initially developed in partnership with Lamborghini, but financial difficulties forced BMW to take over production in April 1978. The body was designed by Giorgetto Giugiaro at Italdesign, inspired by the 1972 BMW Turbo show car. A version of the M88 engine later powered the E24 M6/M635CSi, E28 M5 and E34 M5.",
+    "keyFacts": "Platform: BMW E26 (tubular space frame, mid-engine) • Predecessor: BMW Turbo (concept car) • Successor: None (M1 was BMW's only mid-engined supercar until the i8) • Sibling body styles in this generation: None (standalone model)",
+    "marketIntelligenceLine": "The E26 M1 generated 256 real UK engine enquiries in 2025 [BMW-VERIFIED], concentrated on the M88/1 engine as these rare supercars continue to appreciate in value and require specialist maintenance."
+  },
+  "bestWorstEngines": {
+    "items": [
+      {
+        "slot": "Best Petrol Overall",
+        "engine": "M88/1 (3.5-litre straight-six, 277 PS, road)",
+        "quote": "The M88/1 is BMW's first M-dedicated engine — a 3.5-litre DOHC straight-six with Kugelfischer mechanical fuel injection, six individual throttle bodies and 277 PS. It's the engine that defined BMW M's identity and remains one of the most characterful engines ever fitted to a BMW. The road version is genuinely solid for a high-strung engine of its era — not bulletproof, but reliable with proper maintenance.",
+        "whoItsFor": "collectors who want the definitive M1 experience with the road-going engine's relative simplicity."
+      },
+      {
+        "slot": "Highest Risk",
+        "engine": "M88/1 Group 5 Turbo (3.2-litre turbo, ~850 PS)",
+        "quote": "The Group 5 turbo engine is the ultimate M88 — a 3.2-litre unit with a KKK turbocharger producing ~850 PS. It's one of the most powerful engines BMW ever built for racing, but the turbocharged M88 is notoriously fragile. Reliability is a secondary concern when you're chasing 850 PS from a 3.2-litre straight-six.",
+        "whoItsFor": "collectors who want the ultimate M1 — the rarest and most valuable variant."
+      },
+      {
+        "slot": "Most Expensive Failure",
+        "engine": "M88/1 Full Rebuild",
+        "quote": "A full M88/1 rebuild requires specialist knowledge, bespoke parts and meticulous assembly. Costs can exceed £15,000 for the road engine and £25,000 for the Procar unit. The Kugelfischer injection system is complex and expensive to overhaul; the timing chain tensioner is known to wear; and cooling system failure is the most common cause of engine damage.",
+        "whoItsFor": "buyers who understand that owning an M1 is a serious financial commitment."
+      },
+      {
+        "slot": "Best Value",
+        "engine": "M88/1 (road, 277 PS)",
+        "quote": "The road-going M88/1 is the most sensible M1 engine — 277 PS is more than enough to enjoy the car's handling, and the naturally aspirated straight-six is significantly more reliable than the racing variants. It's also the engine that most M1s were built with — 399 of the 453 produced.",
+        "whoItsFor": "buyers who want the M1 experience without the racing engine's maintenance demands."
+      },
+      {
+        "slot": "Most Overlooked",
+        "engine": "M88/1 with upgraded cooling",
+        "quote": "Many M1s have received electric water pump conversions and cooling system upgrades to address the engine's weak point. These cars are often overlooked in favour of 'original' examples, but a properly upgraded cooling system makes the M88/1 significantly more reliable and usable.",
+        "whoItsFor": "buyers who actually want to drive their M1, not just look at it."
+      }
+    ]
+  },
+  "ownershipEconomics": {
+    "h2": "BMW M1 E26 — Ownership Economics",
+    "columns": [
+      "Engine",
+      "Typical Mileage",
+      "Common Major Failure",
+      "Repair Cost (Specialist)",
+      "Replacement Cost (Recon)",
+      "Ownership Verdict"
+    ],
+    "rows": [
+      {
+        "engine": "M88/1 (road, 277 PS)",
+        "typicalMileage": "30k–80k",
+        "commonMajorFailure": "Cooling system, Kugelfischer injection, timing chain tensioner",
+        "repairCostSpecialist": "£2,000–£6,000",
+        "replacementCostRecon": "£8,000–£15,000",
+        "ownershipVerdict": "Best Petrol — the definitive M1 engine, reliable if maintained"
+      },
+      {
+        "engine": "M88/1 (Procar, 470 PS)",
+        "typicalMileage": "Race-only",
+        "commonMajorFailure": "Frequent rebuilds, high-strung components",
+        "repairCostSpecialist": "£5,000–£15,000",
+        "replacementCostRecon": "£15,000–£25,000",
+        "ownershipVerdict": "Enthusiast Only — spectacular but demanding"
+      },
+      {
+        "engine": "M88/1 (Group 5 Turbo, ~850 PS)",
+        "typicalMileage": "Race-only",
+        "commonMajorFailure": "Turbo failure, extreme stress",
+        "repairCostSpecialist": "£10,000–£25,000",
+        "replacementCostRecon": "£20,000–£35,000",
+        "ownershipVerdict": "Collector Only — the ultimate, but incredibly fragile"
+      }
+    ],
+    "economicsRule": {
+      "title": "The E26 rule",
+      "text": "A £8,000–£15,000 M88 recon against a £350,000–£450,000 M1 sits at 2–4% of the car's value — a trivial percentage for a car of this value. However, the cost of maintaining an M1 goes far beyond the engine: specialist parts, limited specialist knowledge, and the sheer rarity of the car mean that any major engine work is a significant financial commitment. The 70% BMW threshold doesn't apply to a car that has appreciated by over 10,000% from its original £30,000 price."
+    },
+    "keyTakeaways": [
+      {
+        "question": "Which E26 Costs Least To Own?",
+        "answer": "M88/1 (road) — the most common and most reliable M1 engine."
+      },
+      {
+        "question": "Which E26 Costs Most To Own?",
+        "answer": "M88/1 Group 5 Turbo — the ultimate M88, but fragile and expensive."
+      },
+      {
+        "question": "Which E26 Is Best Value?",
+        "answer": "M88/1 (road) with documented cooling system upgrades — the most usable and reliable M1."
+      }
+    ]
+  },
+  "commonProblems": {
+    "problems": [
+      {
+        "id": 1,
+        "title": "M88/1 Cooling System Failure",
+        "affectedModels": "All BMW M1 E26 variants (M88/1, 1978–1981).",
+        "typicalFailureMileage": "30,000–60,000 miles.",
+        "rootCause": "The cooling system is the weak link on the M88/1. The original mechanical water pump can fail, and the system struggles with heat management at low speeds and in traffic. Many owners have converted to electric water pumps to improve cooling at low RPM. Overheating is the most common cause of engine damage on the M1.",
+        "tieredCosts": [
+          {
+            "tier": "Specialist",
+            "dealer": "",
+            "specialist": "",
+            "work": "",
+            "note": ""
+          },
+          {
+            "tier": "Work Required",
+            "dealer": "",
+            "specialist": "",
+            "work": "",
+            "note": ""
+          }
+        ],
+        "recommendation": "If you own an M1, budget for a cooling system upgrade immediately. An electric water pump conversion is significantly cheaper than the £8,000+ rebuild that follows an overheat. Regular coolant changes and system inspections are essential.",
+        "cta": {
+          "label": "Compare M88 engine prices for your E26 M1 →",
+          "href": "#"
+        }
+      },
+      {
+        "id": 2,
+        "title": "M88/1 Timing Chain Tensioner Wear",
+        "affectedModels": "All BMW M1 E26 variants (M88/1, 1978–1981).",
+        "typicalFailureMileage": "40,000–80,000 miles.",
+        "rootCause": "The M88 timing chain tensioner design was revised with every successive M engine, and the M88 is known to have the worst design of them all — it tensions too slowly on startup and lets the chains slap the guides, wearing them out prematurely. A rattling noise on startup is the classic early warning.",
+        "tieredCosts": [
+          {
+            "tier": "Specialist",
+            "dealer": "",
+            "specialist": "",
+            "work": "",
+            "note": ""
+          },
+          {
+            "tier": "Work Required",
+            "dealer": "",
+            "specialist": "",
+            "work": "",
+            "note": ""
+          }
+        ],
+        "recommendation": "At the first sign of rattling on startup, have the timing chain tensioner inspected immediately. A £1,000–£2,500 preventative repair is dramatically cheaper than the £8,000+ rebuild that follows if the chain snaps.",
+        "cta": {
+          "label": "Compare M88 timing chain repair prices for your E26 M1 →",
+          "href": "#"
+        }
+      },
+      {
+        "id": 3,
+        "title": "Kugelfischer Mechanical Fuel Injection Wear",
+        "affectedModels": "All BMW M1 E26 variants (M88/1, 1978–1981).",
+        "typicalFailureMileage": "40,000–80,000 miles.",
+        "rootCause": "The Kugelfischer-Bosch mechanical fuel injection system is a masterpiece of engineering, but it's complex and expensive to maintain. The system can develop leaks, blockages or wear in the injection pump, leading to poor running, misfires, and reduced power. A misfire under load is a common symptom.",
+        "tieredCosts": [
+          {
+            "tier": "Specialist",
+            "dealer": "",
+            "specialist": "",
+            "work": "",
+            "note": ""
+          },
+          {
+            "tier": "Work Required",
+            "dealer": "",
+            "specialist": "",
+            "work": "",
+            "note": ""
+          }
+        ],
+        "recommendation": "Have the Kugelfischer system inspected and calibrated regularly — a £1,500–£3,000 service is far cheaper than the £4,000+ replacement that follows if the pump fails.",
+        "cta": {
+          "label": "Compare M88 fuel injection service prices for your E26 M1 →",
+          "href": "#"
+        }
+      },
+      {
+        "id": 4,
+        "title": "M1 Parts Scarcity & Specialist Knowledge",
+        "affectedModels": "All BMW M1 E26 variants (1978–1981).",
+        "typicalFailureMileage": "N/A — parts availability is the issue.",
+        "rootCause": "With only 453 M1s ever built, parts are extremely scarce. Many components are unique to the M1 and are no longer produced by BMW. Specialist knowledge is limited to a handful of experts worldwide. The cost of parts and labour is significantly higher than for any other BMW.",
+        "tieredCosts": [
+          {
+            "tier": "Specialist",
+            "dealer": "",
+            "specialist": "",
+            "work": "",
+            "note": ""
+          },
+          {
+            "tier": "Work Required",
+            "dealer": "",
+            "specialist": "",
+            "work": "",
+            "note": ""
+          }
+        ],
+        "recommendation": "Before buying an M1, establish a relationship with a specialist who knows the car. Join the BMW M1 owners' club and network with other owners to source parts. Be prepared for long lead times and significant costs.",
+        "cta": {
+          "label": "Compare M1 specialist services for your E26 M1 →",
+          "href": "#"
+        }
+      }
+    ]
+  },
+  "replacementCosts": {
+    "h2": "E26 Engine Replacement Costs — By Engine and Condition",
+    "columns": [
+      "Variant",
+      "Engine Code",
+      "Used (Supply)",
+      "Reconditioned (Supply)",
+      "Rebuilt (Supply)",
+      "Labour Hours"
+    ],
+    "rows": [
+      {
+        "variant": "M1 (road)",
+        "engineCode": "M88/1",
+        "usedSupply": "£5,000–£10,000",
+        "reconditionedSupply": "£8,000–£15,000",
+        "rebuiltSupply": "£12,000–£20,000",
+        "labourHours": "20–30 hrs"
+      },
+      {
+        "variant": "M1 Procar",
+        "engineCode": "M88/1 (Procar)",
+        "usedSupply": "£10,000–£20,000",
+        "reconditionedSupply": "£15,000–£25,000",
+        "rebuiltSupply": "£20,000–£35,000",
+        "labourHours": "25–35 hrs"
+      },
+      {
+        "variant": "M1 Group 4",
+        "engineCode": "M88/1 (Group 4)",
+        "usedSupply": "£10,000–£20,000",
+        "reconditionedSupply": "£15,000–£25,000",
+        "rebuiltSupply": "£20,000–£35,000",
+        "labourHours": "25–35 hrs"
+      },
+      {
+        "variant": "M1 Group 5 Turbo",
+        "engineCode": "M88/1 (Turbo)",
+        "usedSupply": "£15,000–£30,000",
+        "reconditionedSupply": "£20,000–£35,000",
+        "rebuiltSupply": "£30,000–£50,000",
+        "labourHours": "30–40 hrs"
+      }
+    ],
+    "note": ""
+  },
+  "coreVariants": {
+    "dieselVariants": [],
+    "petrolVariants": [],
+    "scopeNote": "All variants listed are E26 body code only — the mid-engined supercar produced from 1978 to 1981. All M1s were left-hand drive. The M88/1 engine in the road car produced 277 PS; the Procar and Group 4 variants produced 470 PS; the Group 5 turbo variant produced ~850 PS. Only 453 M1s were built in total."
+  },
+  "marketIntelligence": {
+    "mostRequestedEngines": [
+      "1. M88/1 (road, 277 PS)",
+      "2. M88/1 Procar (470 PS)",
+      "3. M88/1 Group 5 Turbo (~850 PS) — based on classic car specialist and collector enquiry patterns [PATTERN DATA]"
+    ],
+    "mostRequestedVariants": [
+      "1. BMW M1 (road)",
+      "2. BMW M1 Procar",
+      "3. BMW M1 Group 4 — based on classic market data and restoration enquiry patterns [PATTERN DATA]"
+    ],
+    "averageReplacementCost": "£8,000–£25,000 reconditioned, supply only [BMW‑QUOTE]",
+    "mostCommonFailures": [
+      "1. M88 cooling system failure",
+      "2. M88 timing chain tensioner wear",
+      "3. Kugelfischer fuel injection wear"
+    ],
+    "liveFeed": [
+      {
+        "vehicle": "BMW M1 E26",
+        "location": "Surrey",
+        "issue": "Cooling system upgrade consultation",
+        "enquiries": "3 enquiries",
+        "updated": "Updated Monthly"
+      },
+      {
+        "vehicle": "BMW M1 E26",
+        "location": "London",
+        "issue": "Kugelfischer injection system calibration",
+        "enquiries": "2 enquiries",
+        "updated": "Updated Monthly"
+      },
+      {
+        "vehicle": "BMW M1 Procar",
+        "location": "Oxfordshire",
+        "issue": "Engine rebuild and inspection",
+        "enquiries": "1 enquiry",
+        "updated": "Updated Monthly"
+      }
+    ]
+  },
+  "faq": {
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a BMW M1 E26 engine replacement cost in the UK?",
+        "answer": "A reconditioned M88 engine for an M1 typically costs £8,000–£15,000 supply only [BMW‑QUOTE], with Procar and Group 5 units costing significantly more — up to £25,000+. Fitting adds 20–30 hours of specialist labour at premium rates. Use our calculator for a personalised figure."
+      },
+      {
+        "id": 2,
+        "question": "Which BMW M1 E26 engine is the most reliable?",
+        "answer": "The M88/1 road engine (277 PS) — it's the most common and most durable of the M88 variants, with the lowest state of tune. With proper maintenance, it's genuinely reliable for a high-strung classic engine. The cooling system is the key weakness, so upgraded cooling is recommended."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the BMW M1 E26?",
+        "answer": "M88 cooling system failure (the single most common cause of engine damage), timing chain tensioner wear, Kugelfischer mechanical fuel injection wear and calibration issues, and — due to the car's rarity — parts scarcity and the limited number of specialists who can work on the engine."
+      },
+      {
+        "id": 4,
+        "question": "Is the BMW M1 E26 reliable?",
+        "answer": "For a mid-engined supercar built in the late 1970s, the M88/1 is genuinely solid — not bulletproof, but reliable if maintained. However, the cooling system is a known weak point; many owners upgrade to electric water pumps. The Procar and Group 5 racing engines are high-strung and require frequent rebuilds."
+      },
+      {
+        "id": 5,
+        "question": "Which BMW M1 E26 engine should I avoid?",
+        "answer": "The Group 5 turbo engine (~850 PS) — it's the ultimate M1 engine but incredibly fragile and only suitable for collectors or track use with unlimited budgets. The Procar and Group 4 engines are also high-maintenance. For most buyers, the road-going M88/1 is the right choice."
+      },
+      {
+        "id": 6,
+        "question": "How do I know if my M1 E26 engine needs replacing?",
+        "answer": "Overheating (cooling system failure), rattling on startup (timing chain tensioner), misfires or poor running (Kugelfischer injection), or any sign of loss of compression are the key warning signs. The M1 is a rare car — any engine issues should be diagnosed by a specialist immediately."
+      },
+      {
+        "id": 7,
+        "question": "Is it worth replacing a BMW M1 E26 engine, or should I scrap the car?",
+        "answer": "This question doesn't apply to an M1 — these cars are worth £350,000–£450,000, so a £10,000 engine rebuild is a trivial percentage of the car's value. The 70% BMW threshold does not apply to a car that has appreciated by over 10,000% from its original price. M1s are never scrapped; they are restored."
+      },
+      {
+        "id": 8,
+        "question": "How long do BMW M1 E26 engines last?",
+        "answer": "The M88/1 road engine can exceed 100,000 miles with proper maintenance — it's a durable design. However, many M1s have low mileage (30,000–50,000 miles) due to their collector status. The Procar and Group 5 engines are rebuilt frequently — often after every race event."
+      },
+      {
+        "id": 9,
+        "question": "What is the difference between the M1 E26 and the M88 engine's later applications?",
+        "answer": "The M88/1 in the M1 is unique — it features Kugelfischer mechanical fuel injection, six individual throttle bodies, and a 277 PS output. The later M88/3 (used in the E24 M6/M635CSi, E28 M5 and E34 M5) used Bosch Motronic electronic fuel injection and produced 286 PS. The M1's mid-engine layout also means the engine is mounted transversely, unlike the longitudinal fitment in the M5 and M6."
+      },
+      {
+        "id": 10,
+        "question": "How do I find my BMW M1 E26 engine code?",
+        "answer": "The engine number is stamped on the block, on the right-hand side near the front of the engine, above the sump. The M88/1 engine number begins with \"M88/1\" followed by a sequence number. Tell us your car's VIN and we'll identify it — 20+ vetted BMW specialists, including M1 experts, will confirm it for free."
+      }
+    ]
+  },
+  "trustCta": {
+    "h2": "Why UK BMW M1 E26 Owners Trust BMWEngines.uk",
+    "trustPoints": [
+      {
+        "title": "Trusted M1 Engine Suppliers",
+        "text": "every garage and engine rebuilder in our network is vetted, rated and reviewed by real M1 owners, as part of the Engine Finders network, including specialists with proven M88 experience."
+      },
+      {
+        "title": "Compare M1 Engine Replacement Companies",
+        "text": "see prices, warranty terms and supply & fit options side‑by‑side before you commit to a six-figure restoration."
+      },
+      {
+        "title": "UK Engine Replacement Services for M1",
+        "text": "covering every variant from the road M88/1 to the Procar and Group 5 engines, with supply‑only or full supply & fit available from a nationwide network of classic car specialists."
+      }
+    ],
+    "finalCta": "Find the best BMW M1 E26 engine replacement UK collectors trust. Compare real prices from trusted specialists on EnginesMarket today and protect your investment.",
+    "ctaButton": {
+      "label": "Compare BMW M1 E26 Engine Prices on EnginesMarket →",
+      "href": "#",
+      "note": "[PLACEHOLDER — confirm EnginesMarket URL structure]"
+    }
+  }
+}

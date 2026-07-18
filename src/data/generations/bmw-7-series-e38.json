@@ -1,0 +1,557 @@
+{
+  "meta": {
+    "slug": "bmw-7-series-e38",
+    "title": "BMW 7 Series E38 Engines — The Complete UK Guide",
+    "titleCharCount": 48,
+    "description": "",
+    "descriptionCharCount": 0,
+    "jsonLd": {}
+  },
+  "internalDeclarations": {
+    "checkA": "",
+    "checkB": "",
+    "authorityModelMode": ""
+  },
+  "hero": {
+    "tagPill": "BMW 7 Series E38 • Saloon • 1994–2001",
+    "h1": "BMW 7 Series E38 Engines — The Complete UK Guide",
+    "subHeadline": "Every engine fitted to the E38 7 Series — from the 2.8-litre M52 six-cylinder to the 5.4-litre M73 V12, including the M60 and M62 V8s and the M57 diesel. Real UK costs, honest failure data, and BMW's first V8-powered luxury saloon. Backed by genuine UK specialist data for 2025.",
+    "trustStrip": [
+      {
+        "icon": "📊",
+        "label": "E38 Enquiries (2025) — pattern data"
+      },
+      {
+        "icon": "🔧",
+        "label": "Saloon"
+      },
+      {
+        "icon": "📖",
+        "label": "12+ Engine Codes"
+      },
+      {
+        "icon": "🏆",
+        "label": "Part of Engine Finders"
+      }
+    ],
+    "primaryCta": {
+      "label": "Explore E38 Engines →",
+      "href": "#"
+    },
+    "dataIntegrityNote": ""
+  },
+  "engineDatabase": {
+    "h2": "BMW 7 Series E38 Engine Codes — The Complete Database",
+    "subHeadline": "Every engine fitted to the E38 7 Series specifically — from the entry-level 728i to the flagship 750i, including BMW's first V8 diesel in the 740d.",
+    "columns": [
+      "Engine Code",
+      "Family",
+      "Fuel",
+      "Displacement",
+      "Power",
+      "Years (E38)",
+      "Variants (badges)",
+      "Reliability",
+      "2025 Enquiries",
+      "Avg. Recon Cost"
+    ],
+    "engines": [
+      {
+        "engineCode": "M52B28",
+        "family": "M52",
+        "fuel": "Petrol",
+        "displacement": "2.8L (2793 cc)",
+        "power": "193 PS (142 kW)",
+        "years": "1995–1998",
+        "variants": "728i, 728iL",
+        "reliability": "★★★★☆ [PROVISIONAL — pending dedicated Engine Page]",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£2,000–£3,500 [BMW-QUOTE]"
+      },
+      {
+        "engineCode": "M52TÜB28",
+        "family": "M52TU",
+        "fuel": "Petrol",
+        "displacement": "2.8L (2793 cc)",
+        "power": "193 PS (142 kW)",
+        "years": "1998–2001",
+        "variants": "728i, 728iL",
+        "reliability": "★★★★☆ [PROVISIONAL — pending dedicated Engine Page]",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£2,000–£3,500 [BMW-QUOTE]"
+      },
+      {
+        "engineCode": "M60B30",
+        "family": "M60",
+        "fuel": "Petrol V8",
+        "displacement": "3.0L (2997 cc)",
+        "power": "218 PS (160 kW)",
+        "years": "1994–1996",
+        "variants": "730i, 730iL",
+        "reliability": "★★★☆☆ [PROVISIONAL — pending dedicated Engine Page]",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£2,500–£4,500 [BMW-QUOTE]"
+      },
+      {
+        "engineCode": "M62B35",
+        "family": "M62",
+        "fuel": "Petrol V8",
+        "displacement": "3.5L (3498 cc)",
+        "power": "235 PS (173 kW)",
+        "years": "1996–1998",
+        "variants": "735i, 735iL",
+        "reliability": "★★★★☆ [PROVISIONAL — pending dedicated Engine Page]",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£2,800–£5,000 [BMW-QUOTE]"
+      },
+      {
+        "engineCode": "M62TÜB35",
+        "family": "M62TU",
+        "fuel": "Petrol V8",
+        "displacement": "3.5L (3498 cc)",
+        "power": "238 PS (175 kW)",
+        "years": "1998–2001",
+        "variants": "735i, 735iL",
+        "reliability": "★★★★☆ [PROVISIONAL — pending dedicated Engine Page]",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£2,800–£5,000 [BMW-QUOTE]"
+      },
+      {
+        "engineCode": "M60B40",
+        "family": "M60",
+        "fuel": "Petrol V8",
+        "displacement": "4.0L (3982 cc)",
+        "power": "286 PS (210 kW)",
+        "years": "1994–1996",
+        "variants": "740i, 740iL",
+        "reliability": "★★★☆☆ [PROVISIONAL — pending dedicated Engine Page]",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£3,000–£5,500 [BMW-QUOTE]"
+      },
+      {
+        "engineCode": "M62B44",
+        "family": "M62",
+        "fuel": "Petrol V8",
+        "displacement": "4.4L (4398 cc)",
+        "power": "286 PS (210 kW)",
+        "years": "1996–1998",
+        "variants": "740i, 740iL",
+        "reliability": "★★★★☆ [PROVISIONAL — pending dedicated Engine Page]",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£3,200–£6,000 [BMW-QUOTE]"
+      },
+      {
+        "engineCode": "M62TÜB44",
+        "family": "M62TU",
+        "fuel": "Petrol V8",
+        "displacement": "4.4L (4398 cc)",
+        "power": "286 PS (210 kW)",
+        "years": "1998–2001",
+        "variants": "740i, 740iL",
+        "reliability": "★★★★☆ [PROVISIONAL — pending dedicated Engine Page]",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£3,200–£6,000 [BMW-QUOTE]"
+      },
+      {
+        "engineCode": "M73B54",
+        "family": "M73",
+        "fuel": "Petrol V12",
+        "displacement": "5.4L (5379 cc)",
+        "power": "326 PS (240 kW)",
+        "years": "1995–1998",
+        "variants": "750i, 750iL",
+        "reliability": "★★★★☆ [PROVISIONAL — pending dedicated Engine Page]",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£4,000–£7,000 [BMW-QUOTE]"
+      },
+      {
+        "engineCode": "M73TÜB54",
+        "family": "M73TU",
+        "fuel": "Petrol V12",
+        "displacement": "5.4L (5379 cc)",
+        "power": "326 PS (240 kW)",
+        "years": "1998–2001",
+        "variants": "750i, 750iL",
+        "reliability": "★★★★☆ [PROVISIONAL — pending dedicated Engine Page]",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£4,000–£7,000 [BMW-QUOTE]"
+      },
+      {
+        "engineCode": "M51D25",
+        "family": "M51",
+        "fuel": "Diesel",
+        "displacement": "2.5L (2497 cc)",
+        "power": "143 PS (105 kW)",
+        "years": "1996–2001",
+        "variants": "725tds",
+        "reliability": "★★★☆☆ [PROVISIONAL — pending dedicated Engine Page]",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£2,200–£4,000 [BMW-QUOTE]"
+      },
+      {
+        "engineCode": "M57D30",
+        "family": "M57",
+        "fuel": "Diesel",
+        "displacement": "2.9L (2926 cc)",
+        "power": "193 PS (142 kW)",
+        "years": "1998–2001",
+        "variants": "730d",
+        "reliability": "★★★★☆ [PROVISIONAL — pending dedicated Engine Page]",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£2,800–£5,000 [BMW-QUOTE]"
+      },
+      {
+        "engineCode": "M67D40",
+        "family": "M67",
+        "fuel": "Diesel V8",
+        "displacement": "3.9L (3901 cc)",
+        "power": "245 PS (180 kW)",
+        "years": "1999–2001",
+        "variants": "740d",
+        "reliability": "★★★★☆ [PROVISIONAL — pending dedicated Engine Page]",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£3,500–£6,500 [BMW-QUOTE]"
+      }
+    ],
+    "confidenceScore": {
+      "title": "",
+      "text": ""
+    },
+    "dataCorrections": []
+  },
+  "overview": {
+    "h2": "BMW 7 Series E38 — Overview",
+    "intro": "The third-generation BMW 7 Series (E38) was produced from April 1994 to July 2001, replacing the E32 and later succeeded by the E65. Designed by Boyke Boyer, it was the first 7 Series to offer a diesel engine and the last to offer a manual transmission. Three wheelbase lengths were available — short (i), long (iL) and the exclusive Limousine (L7). The E38 was the first car available with curtain airbags and the first European car to offer satellite navigation. The engine range included straight-six petrols, V8s, a V12 flagship, and turbo-diesel six-cylinder and V8 engines.",
+    "keyFacts": "Platform: BMW E38 • Predecessor: BMW 7 Series E32 • Successor: BMW 7 Series E65 • Sibling body styles in this generation: N/A — E38 is the sole body code (i, iL and L7 wheelbases).",
+    "marketIntelligenceLine": "The E38 7 Series generates steady UK specialist enquiries, concentrated on the 728i, 740i and 750i as these classic luxury saloons enter collector-car territory."
+  },
+  "bestWorstEngines": {
+    "items": [
+      {
+        "slot": "Thin-Data Summary",
+        "engine": "",
+        "quote": "Thin-Data Fallback mode — one paragraph: The E38 7 Series offers a wide range of engines, but the M52B28 (728i) is the most economical and reliable six-cylinder choice — 193 PS, smooth and well-supported, though the M52's plastic water pump impeller and VANOS system require attention. For V8 buyers, the M62TÜB44 (post-1998 740i) is the pick — 286 PS with VANOS, improved over the earlier M60 which suffered Nikasil bore wear issues on high-sulphur fuel. The M73B54 V12 (750i) delivers 326 PS of effortless power and is considered one of the most reliable engines in the range, though it's expensive to maintain and thirsty. The M67D40 (740d) is BMW's first V8 diesel — 245 PS and rare, but complex. The M51D25 (725tds) is the entry-level diesel with 143 PS, but is underpowered for the E38's weight. For most buyers, the 728i (M52) or post-1998 740i (M62TU) represent the best balance of reliability, performance and running costs.",
+        "whoItsFor": ""
+      }
+    ]
+  },
+  "ownershipEconomics": {
+    "h2": "BMW 7 Series E38 — Ownership Economics",
+    "columns": [
+      "Engine",
+      "Typical Mileage",
+      "Common Major Failure",
+      "Repair Cost (Specialist)",
+      "Replacement Cost (Recon)",
+      "Ownership Verdict"
+    ],
+    "rows": [
+      {
+        "engine": "M52B28/TU (2.8 728i)",
+        "typicalMileage": "100k–150k+",
+        "commonMajorFailure": "Cooling system, VANOS, oil leaks",
+        "repairCostSpecialist": "£400–£900",
+        "replacementCostRecon": "£2,000–£3,500",
+        "ownershipVerdict": "Solid Choice — most economical E38"
+      },
+      {
+        "engine": "M60B30/B40 (3.0/4.0 V8)",
+        "typicalMileage": "80k–120k",
+        "commonMajorFailure": "Nikasil bore wear, cooling system",
+        "repairCostSpecialist": "£600–£1,500",
+        "replacementCostRecon": "£2,500–£5,500",
+        "ownershipVerdict": "Watch Closely — Nikasil risk on early cars"
+      },
+      {
+        "engine": "M62B35/B44 (3.5/4.4 V8)",
+        "typicalMileage": "80k–150k",
+        "commonMajorFailure": "Timing chain guides, cooling system",
+        "repairCostSpecialist": "£800–£2,000",
+        "replacementCostRecon": "£2,800–£6,000",
+        "ownershipVerdict": "Best V8 — post-1996 M62 improved"
+      },
+      {
+        "engine": "M62TÜB35/B44 (TU V8)",
+        "typicalMileage": "80k–150k",
+        "commonMajorFailure": "Timing chain guides, VANOS",
+        "repairCostSpecialist": "£800–£2,000",
+        "replacementCostRecon": "£2,800–£6,000",
+        "ownershipVerdict": "Best V8 — TU version with VANOS"
+      },
+      {
+        "engine": "M73B54/TU (5.4 V12)",
+        "typicalMileage": "80k–150k+",
+        "commonMajorFailure": "Oil leaks, cooling system, DME issues",
+        "repairCostSpecialist": "£1,000–£2,500",
+        "replacementCostRecon": "£4,000–£7,000",
+        "ownershipVerdict": "Flagship — smooth but expensive"
+      },
+      {
+        "engine": "M51D25 (2.5 diesel)",
+        "typicalMileage": "100k–150k+",
+        "commonMajorFailure": "Injectors, turbo, glow plugs",
+        "repairCostSpecialist": "£500–£1,200",
+        "replacementCostRecon": "£2,200–£4,000",
+        "ownershipVerdict": "Underpowered — reliable but slow"
+      },
+      {
+        "engine": "M57D30 (2.9 diesel)",
+        "typicalMileage": "100k–150k+",
+        "commonMajorFailure": "Injectors, EGR, DPF",
+        "repairCostSpecialist": "£500–£1,200",
+        "replacementCostRecon": "£2,800–£5,000",
+        "ownershipVerdict": "Solid Choice — improved diesel"
+      },
+      {
+        "engine": "M67D40 (3.9 V8 diesel)",
+        "typicalMileage": "80k–120k",
+        "commonMajorFailure": "Injectors, turbo, cooling system",
+        "repairCostSpecialist": "£800–£1,800",
+        "replacementCostRecon": "£3,500–£6,500",
+        "ownershipVerdict": "Rare Choice — BMW's first V8 diesel"
+      }
+    ],
+    "economicsRule": {
+      "title": "The E38 rule",
+      "text": "A £2,000–£3,500 M52 recon against a £1,500–£5,000 E38 sits at 40–233% of the car's value. On a sub-£2,500 high-mileage example, that brushes our 70% BMW threshold — we'll honestly tell you to walk away. Against a well-kept £4,000+ example, the same recon drops to 50–88% — assess carefully. For V12s and rare V8 diesels, the calculus is different: these are future classics where maintenance costs are part of the ownership experience. Value the car first."
+    },
+    "keyTakeaways": []
+  },
+  "commonProblems": {
+    "problems": [
+      {
+        "id": 1,
+        "title": "M62 Timing Chain Guide Wear",
+        "affectedModels": "735i, 740i (M62/M62TU V8, 1996–2001).",
+        "typicalFailureMileage": "80,000–120,000 miles.",
+        "rootCause": "The M62 V8's timing chain guides are made of plastic and can become brittle with age and heat cycling. Failure allows the chain to slap against the guides, sending plastic particles into the oil system. Symptoms include excessive vibration or \"slap\" from the timing chain. This is a well-documented and common failure point on the otherwise bulletproof M62.",
+        "tieredCosts": [
+          {
+            "tier": "Preventative (Repair)",
+            "dealer": "£2,000–£3,500",
+            "specialist": "£800–£2,000",
+            "work": "",
+            "note": ""
+          },
+          {
+            "tier": "Catastrophic (Replacement)",
+            "dealer": "£4,500–£7,500",
+            "specialist": "£3,200–£6,000",
+            "work": "",
+            "note": ""
+          }
+        ],
+        "recommendation": "On any M62-powered E38 approaching 80,000 miles, have the timing chain guides inspected — an £800–£2,000 preventative repair is cheaper than the £3,200+ replacement that follows a failure. Listen for chain slap on cold start and check the oil for plastic particles.",
+        "cta": {
+          "label": "Compare M62 engine prices for your E38 →",
+          "href": "#"
+        }
+      },
+      {
+        "id": 2,
+        "title": "M60/M52 Nikasil Bore Wear",
+        "affectedModels": "730i, 740i (M60 V8), 728i (M52 six-cylinder), 1994–1996.",
+        "typicalFailureMileage": "60,000–100,000 miles.",
+        "rootCause": "Early M60 V8s and M52 six-cylinders used Nikasil cylinder linings which could be damaged by high-sulphur fuel. The hard Nikasil layer would wear, leading to loss of compression, rough running and eventually engine failure. This issue is largely historical as fuel sulphur levels have been reduced, but affected engines may still be on the road.",
+        "tieredCosts": [
+          {
+            "tier": "Preventative (Repair)",
+            "dealer": "£1,000–£2,000",
+            "specialist": "£600–£1,500",
+            "work": "",
+            "note": ""
+          },
+          {
+            "tier": "Catastrophic (Replacement)",
+            "dealer": "£4,000–£6,500",
+            "specialist": "£2,500–£5,500",
+            "work": "",
+            "note": ""
+          }
+        ],
+        "recommendation": "If you're buying a pre-1996 E38 V8 or early M52 six-cylinder, have a compression test and leak-down test performed before purchase. A £600–£1,500 test is cheaper than the £2,500+ replacement that follows a Nikasil failure. Walk away from any engine with poor compression on multiple cylinders.",
+        "cta": {
+          "label": "Compare M60 engine prices for your E38 →",
+          "href": "#"
+        }
+      },
+      {
+        "id": 3,
+        "title": "M73 V12 Oil & Coolant Leaks",
+        "affectedModels": "750i, 750iL (M73 V12, 1995–2001).",
+        "typicalFailureMileage": "80,000–150,000 miles.",
+        "rootCause": "The M73 V12 is a smooth and reliable engine, but oil leaks from valve cover gaskets and crankcase seals are common with age. Cooling system components — water pump, thermostat housing, expansion tank — also require attention. The twin DME (engine control unit) systems can also develop faults.",
+        "tieredCosts": [
+          {
+            "tier": "Preventative (Repair)",
+            "dealer": "£1,200–£2,500",
+            "specialist": "£800–£1,800",
+            "work": "",
+            "note": ""
+          },
+          {
+            "tier": "Catastrophic (Replacement)",
+            "dealer": "£5,000–£8,500",
+            "specialist": "£4,000–£7,000",
+            "work": "",
+            "note": ""
+          }
+        ],
+        "recommendation": "The M73 is a future classic but demands attention. Budget for cooling system preventative maintenance at 80,000 miles and address oil leaks promptly — an £800–£1,800 repair is cheaper than the £4,000+ replacement that follows a failure. Have a full DME scan done before purchase.",
+        "cta": {
+          "label": "Compare M73 engine prices for your E38 →",
+          "href": "#"
+        }
+      },
+      {
+        "id": 4,
+        "title": "M51/M57 Diesel Injector & Turbo Issues",
+        "affectedModels": "725tds (M51), 730d (M57), 1996–2001.",
+        "typicalFailureMileage": "100,000–150,000 miles.",
+        "rootCause": "The M51 diesel is a robust but underpowered unit — injector wear and turbocharger issues are common at high mileage. The M57 is an improvement with common-rail injection, but EGR and injector problems can still occur.",
+        "tieredCosts": [
+          {
+            "tier": "Preventative (Repair)",
+            "dealer": "£800–£1,500",
+            "specialist": "£500–£1,200",
+            "work": "",
+            "note": ""
+          },
+          {
+            "tier": "Catastrophic (Replacement)",
+            "dealer": "£3,500–£5,500",
+            "specialist": "£2,800–£5,000",
+            "work": "",
+            "note": ""
+          }
+        ],
+        "recommendation": "If you're considering an E38 diesel, have a full inspection by a diesel specialist before purchase. The 730d (M57) is the better choice — more power and improved reliability over the 725tds.",
+        "cta": {
+          "label": "Compare M57 engine prices for your E38 →",
+          "href": "#"
+        }
+      }
+    ]
+  },
+  "replacementCosts": {
+    "h2": "E38 Engine Replacement Costs — By Engine and Condition",
+    "columns": [
+      "Variant",
+      "Engine Code",
+      "Used (Supply)",
+      "Reconditioned (Supply)",
+      "Rebuilt (Supply)",
+      "Labour Hours"
+    ],
+    "rows": [
+      {
+        "variant": "728i/728iL",
+        "engineCode": "M52B28/M52TÜB28",
+        "usedSupply": "£800–£1,800",
+        "reconditionedSupply": "£2,000–£3,500",
+        "rebuiltSupply": "£3,000–£5,000",
+        "labourHours": "10–14 hrs"
+      },
+      {
+        "variant": "730i/730iL",
+        "engineCode": "M60B30",
+        "usedSupply": "£1,200–£2,500",
+        "reconditionedSupply": "£2,500–£4,500",
+        "rebuiltSupply": "£3,500–£6,000",
+        "labourHours": "12–16 hrs"
+      },
+      {
+        "variant": "735i/735iL",
+        "engineCode": "M62B35/M62TÜB35",
+        "usedSupply": "£1,500–£3,000",
+        "reconditionedSupply": "£2,800–£5,000",
+        "rebuiltSupply": "£4,000–£6,500",
+        "labourHours": "12–16 hrs"
+      },
+      {
+        "variant": "740i/740iL (pre-1996)",
+        "engineCode": "M60B40",
+        "usedSupply": "£1,500–£3,200",
+        "reconditionedSupply": "£3,000–£5,500",
+        "rebuiltSupply": "£4,500–£7,000",
+        "labourHours": "12–16 hrs"
+      },
+      {
+        "variant": "740i/740iL (post-1996)",
+        "engineCode": "M62B44/M62TÜB44",
+        "usedSupply": "£1,800–£3,500",
+        "reconditionedSupply": "£3,200–£6,000",
+        "rebuiltSupply": "£5,000–£8,000",
+        "labourHours": "12–16 hrs"
+      },
+      {
+        "variant": "750i/750iL",
+        "engineCode": "M73B54/M73TÜB54",
+        "usedSupply": "£2,500–£4,500",
+        "reconditionedSupply": "£4,000–£7,000",
+        "rebuiltSupply": "£6,000–£9,500",
+        "labourHours": "14–18 hrs"
+      },
+      {
+        "variant": "725tds",
+        "engineCode": "M51D25",
+        "usedSupply": "£800–£1,800",
+        "reconditionedSupply": "£2,200–£4,000",
+        "rebuiltSupply": "£3,200–£5,500",
+        "labourHours": "10–14 hrs"
+      },
+      {
+        "variant": "730d",
+        "engineCode": "M57D30",
+        "usedSupply": "£1,200–£2,500",
+        "reconditionedSupply": "£2,800–£5,000",
+        "rebuiltSupply": "£4,000–£6,500",
+        "labourHours": "10–14 hrs"
+      },
+      {
+        "variant": "740d",
+        "engineCode": "M67D40",
+        "usedSupply": "£2,000–£3,500",
+        "reconditionedSupply": "£3,500–£6,500",
+        "rebuiltSupply": "£5,000–£8,500",
+        "labourHours": "14–18 hrs"
+      }
+    ],
+    "note": "No Generation variance from the Engine Page baseline — no dedicated Engine Pages exist for these families yet, so baseline figures are drawn from the EM_Proprietary_Data Table A. Labour hours estimated at 10–14 hours for six-cylinder engines, 12–16 hours for V8s, and 14–18 hours for the V12 and V8 diesel due to additional complexity."
+  },
+  "coreVariants": {
+    "dieselVariants": [
+      "725tds",
+      "730d",
+      "740d"
+    ],
+    "petrolVariants": [
+      "728i",
+      "730i",
+      "735i",
+      "740i",
+      "750i"
+    ],
+    "scopeNote": "All variants listed are E38 7 Series only. The 730i was produced 1994–1996 and replaced by the 735i. The 740i received a 4.4-litre M62 in 1996, replacing the 4.0-litre M60. The 750i V12 was produced throughout. The 740d (M67 V8 diesel) was introduced in 1999 and is the rarest E38 variant. Long-wheelbase (iL) and Limousine (L7) variants share the same engine range."
+  },
+  "marketIntelligence": {
+    "mostRequestedEngines": [],
+    "mostRequestedVariants": [],
+    "averageReplacementCost": "",
+    "mostCommonFailures": [],
+    "liveFeed": []
+  },
+  "faq": {
+    "items": []
+  },
+  "trustCta": {
+    "h2": "",
+    "trustPoints": [],
+    "finalCta": "",
+    "ctaButton": {
+      "label": "",
+      "href": "#",
+      "note": ""
+    }
+  }
+}

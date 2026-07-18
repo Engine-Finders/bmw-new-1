@@ -1,0 +1,319 @@
+{
+  "meta": {
+    "slug": "bmw-m2-g87",
+    "title": "BMW M2 G87 Engines — The Complete UK Guide",
+    "titleCharCount": 42,
+    "description": "",
+    "descriptionCharCount": 0,
+    "jsonLd": {}
+  },
+  "internalDeclarations": {
+    "checkA": "",
+    "checkB": "",
+    "authorityModelMode": ""
+  },
+  "hero": {
+    "tagPill": "BMW M2 G87 • Coupé • 2022–present",
+    "h1": "BMW M2 G87 Engines — The Complete UK Guide",
+    "subHeadline": "Every engine fitted to the M2 G87 — the S58B30 3.0-litre twin-turbo straight-six, shared with the M3 and M4. Real UK costs and honest reliability data for BMW's last purely internal combustion M car. Backed by 120+ real UK G87 enquiries in 2025 [BMW-VERIFIED].",
+    "trustStrip": [
+      {
+        "icon": "📊",
+        "label": "120+ G87 Enquiries (2025) [BMW-VERIFIED]"
+      },
+      {
+        "icon": "🔧",
+        "label": "Coupé"
+      },
+      {
+        "icon": "📖",
+        "label": "1 Engine Family"
+      },
+      {
+        "icon": "🏆",
+        "label": "Part of Engine Finders"
+      }
+    ],
+    "primaryCta": {
+      "label": "Explore G87 Engines →",
+      "href": "#"
+    },
+    "dataIntegrityNote": ""
+  },
+  "engineDatabase": {
+    "h2": "BMW M2 G87 Engine Codes — The Complete Database",
+    "subHeadline": "The sole engine fitted to the M2 G87 — the S58B30 3.0-litre twin-turbo straight-six, detuned from the M3/M4 for M2 duty.",
+    "columns": [
+      "Engine Code",
+      "Family",
+      "Fuel",
+      "Displacement",
+      "Power",
+      "Years (G87)",
+      "Variants (badges)",
+      "Reliability",
+      "2025 Enquiries",
+      "Avg. Recon Cost"
+    ],
+    "engines": [
+      {
+        "engineCode": "S58B30 (pre-LCI)",
+        "family": "S58",
+        "fuel": "Petrol",
+        "displacement": "3.0L (2993cc)",
+        "power": "453 bhp (338 kW)",
+        "years": "2022–2024",
+        "variants": "M2",
+        "reliability": "★★★★☆ [PROVISIONAL — pending dedicated Engine Page]",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£5,000–£8,000 [BMW-QUOTE]"
+      },
+      {
+        "engineCode": "S58B30T0 (LCI / 2025+)",
+        "family": "S58",
+        "fuel": "Petrol",
+        "displacement": "3.0L (2993cc)",
+        "power": "473 bhp (353 kW)",
+        "years": "2024–present",
+        "variants": "M2 (LCI)",
+        "reliability": "★★★★☆ [PROVISIONAL — pending dedicated Engine Page]",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£5,500–£8,500 [PLACEHOLDER — confirm vs cost sheet]"
+      }
+    ],
+    "confidenceScore": {
+      "title": "How confident are these ratings?",
+      "text": "The S58 engine is widely regarded as reliable — it is an evolution of the S55 and shares parts and configurations from the B58, another highly reliable performance motor. The engine has been used in various BMW M models, including the X3 M, X4 M, M3, and M4. However, as the G87 M2 was released in 2022, the engine has not had time to show any widespread reliability issues. The pre-LCI and LCI engines are mechanically similar; the power bump comes from revised engine tuning rather than hardware changes."
+    },
+    "dataCorrections": []
+  },
+  "overview": {
+    "h2": "BMW M2 G87 — Overview",
+    "intro": "The G87 is the second generation of the BMW M2, unveiled on 11 October 2022 as the successor to the F87. Built on the CLAR platform shared with the G80 M3 and G82 M4, the G87 features a longer wheelbase, wider track, and a more aggressive design language — including the signature vertical kidney grille. Power comes exclusively from the S58 3.0-litre twin-turbo inline-six, detuned from the M3/M4 to 453 bhp in pre-LCI form and 473 bhp from the 2024 LCI onward. The G87 is rear-wheel drive only, with a six-speed manual transmission standard in some markets and an eight-speed automatic available. A significant 2024 LCI update brought more power, new colours, and iDrive 8.5 technology. The G87 is widely considered BMW's last purely internal combustion M car.",
+    "keyFacts": "Platform: BMW CLAR (shared with G80 M3, G82 M4) • Predecessor: F87 M2 • Successor: None (current generation) • Sibling body styles: G42 2 Series Coupé (base model).",
+    "marketIntelligenceLine": "The G87 M2 generated 120+ real UK engine enquiries in 2025 [BMW-VERIFIED], concentrated on the S58 engine as enthusiasts seek BMW's last pure ICE M car."
+  },
+  "bestWorstEngines": {
+    "items": []
+  },
+  "ownershipEconomics": {
+    "h2": "BMW M2 G87 — Ownership Economics",
+    "columns": [
+      "Engine",
+      "Typical Mileage",
+      "Common Major Failure",
+      "Repair Cost (Specialist)",
+      "Replacement Cost (Recon)",
+      "Ownership Verdict"
+    ],
+    "rows": [
+      {
+        "engine": "S58B30 (453 bhp)",
+        "typicalMileage": "20k–50k",
+        "commonMajorFailure": "Cooling system, oil leaks",
+        "repairCostSpecialist": "£500–£2,000",
+        "replacementCostRecon": "£5,000–£8,000",
+        "ownershipVerdict": "Solid Choice — proven S58, reliable."
+      },
+      {
+        "engine": "S58B30T0 (473 bhp)",
+        "typicalMileage": "20k–50k",
+        "commonMajorFailure": "Cooling system, oil leaks",
+        "repairCostSpecialist": "£500–£2,000",
+        "replacementCostRecon": "£5,500–£8,500",
+        "ownershipVerdict": "Solid Choice — proven S58, reliable."
+      }
+    ],
+    "economicsRule": {
+      "title": "The G87 rule",
+      "text": "A £5,000–£8,500 S58 recon against a £35,000–£55,000 G87 sits at 9–24% of the car's value【BMW-QUOTE】. The G87's strong retained values mean engine replacement is almost always a repair decision, not a financial one. For a near-new car under warranty, replacement is even less of a concern. The 2024 LCI cars command a premium, but the engine is mechanically similar to pre-LCI units."
+    },
+    "keyTakeaways": [
+      {
+        "question": "Which G87 Costs Least To Own?",
+        "answer": "S58B30 — the only engine; running costs are reasonable for a 450 bhp performance car."
+      },
+      {
+        "question": "Which G87 Costs Most To Own?",
+        "answer": "S58B30T0 (LCI) — slight premium for the extra 20 bhp, but mechanically identical."
+      },
+      {
+        "question": "Which G87 Is Best Value?",
+        "answer": "Pre-LCI (2022–2023) — lower entry price, same proven engine, and nearly identical performance."
+      }
+    ]
+  },
+  "commonProblems": {
+    "problems": [
+      {
+        "id": 1,
+        "title": "S58 Cooling System Maintenance",
+        "affectedModels": "All G87 M2 (S58 engine).",
+        "typicalFailureMileage": "30,000–60,000 miles (track use accelerates wear).",
+        "rootCause": "The S58 is a high-performance engine that generates significant heat. The water pump, coolant hoses, and expansion tank can fail with age and track use. Regular cooling system maintenance is essential for reliability.",
+        "tieredCosts": [
+          {
+            "tier": "Preventative (Repair)",
+            "dealer": "£800–£1,500",
+            "specialist": "£500–£1,000",
+            "work": "Water pump, thermostat, coolant hoses replacement",
+            "note": ""
+          },
+          {
+            "tier": "Catastrophic (Replacement)",
+            "dealer": "£7,000–£10,000",
+            "specialist": "£5,000–£8,000",
+            "work": "Full reconditioned S58 engine replacement",
+            "note": ""
+          }
+        ],
+        "recommendation": "Have the cooling system inspected annually and replace the water pump as preventative maintenance at 60,000 miles or sooner if the car is used on track — a £500–£1,000 specialist job is dramatically cheaper than the £5,000+ engine replacement that follows an overheating event. This is the single most important maintenance item on any S58-powered BMW.",
+        "cta": {
+          "label": "Compare S58 engine prices for your G87 M2 →",
+          "href": "#"
+        }
+      },
+      {
+        "id": 2,
+        "title": "S58 Oil Leaks (Valve Cover, Oil Filter Housing)",
+        "affectedModels": "All G87 M2 (S58 engine).",
+        "typicalFailureMileage": "30,000–60,000 miles.",
+        "rootCause": "The S58, like many high-performance BMW engines, can develop oil leaks from the valve cover gasket and oil filter housing. These are typically minor but can lead to more serious issues if ignored.",
+        "tieredCosts": [
+          {
+            "tier": "Preventative (Repair)",
+            "dealer": "£600–£1,200",
+            "specialist": "£400–£800",
+            "work": "Valve cover gasket and oil filter housing replacement",
+            "note": ""
+          },
+          {
+            "tier": "Catastrophic (Replacement)",
+            "dealer": "£7,000–£10,000",
+            "specialist": "£5,000–£8,000",
+            "work": "Full reconditioned S58 engine replacement",
+            "note": ""
+          }
+        ],
+        "recommendation": "Have the valve cover and oil filter housing inspected during annual servicing — a £400–£800 repair is far cheaper than the £5,000+ engine replacement that follows if an oil leak leads to oil starvation. Check for oil stains under the car or a burning oil smell.",
+        "cta": {
+          "label": "Compare S58 engine prices for your G87 M2 →",
+          "href": "#"
+        }
+      },
+      {
+        "id": 3,
+        "title": "G87 M2 Manual Transmission Clutch Chatter",
+        "affectedModels": "G87 M2 with six-speed manual transmission.",
+        "typicalFailureMileage": "10,000–30,000 miles.",
+        "rootCause": "Some G87 M2s with the six-speed manual transmission have experienced clutch chatter and binding issues — clunking on straight-line starts and binding in parking lots. This appears to be a characteristic of the clutch system rather than a mechanical defect, but it can be disconcerting.",
+        "tieredCosts": [
+          {
+            "tier": "Preventative (Repair)",
+            "dealer": "£500–£1,000 (inspection)",
+            "specialist": "£300–£600 (inspection)",
+            "work": "Clutch system inspection and adjustment",
+            "note": ""
+          },
+          {
+            "tier": "Catastrophic (Replacement)",
+            "dealer": "£3,000–£5,000 (clutch replacement)",
+            "specialist": "£2,000–£3,500 (clutch replacement)",
+            "work": "Full clutch assembly replacement",
+            "note": ""
+          }
+        ],
+        "recommendation": "If you experience clutch chatter on your manual G87 M2, have it inspected by a BMW specialist — in many cases, this is a characteristic of the clutch system rather than a fault. However, if the issue worsens, budget for a clutch replacement (£2,000–£3,500). The automatic transmission is smoother and quicker, which is why many owners prefer it.",
+        "cta": {
+          "label": "Compare G87 M2 transmission parts →",
+          "href": "#"
+        }
+      },
+      {
+        "id": 4,
+        "title": "S58 High-Pressure Fuel Pump (HPFP) Issues",
+        "affectedModels": "All G87 M2 (S58 engine), particularly early (2022–2023) examples.",
+        "typicalFailureMileage": "20,000–50,000 miles.",
+        "rootCause": "The S58's high-pressure fuel pump can fail — a known issue on BMW's B58/S58 family. Symptoms include long cranking, reduced power, and engine warning lights.",
+        "tieredCosts": [
+          {
+            "tier": "Preventative (Repair)",
+            "dealer": "£800–£1,500",
+            "specialist": "£500–£1,000",
+            "work": "HPFP replacement",
+            "note": ""
+          },
+          {
+            "tier": "Catastrophic (Replacement)",
+            "dealer": "£7,000–£10,000",
+            "specialist": "£5,000–£8,000",
+            "work": "Full reconditioned S58 engine replacement",
+            "note": ""
+          }
+        ],
+        "recommendation": "If you experience long cranking on startup or reduced power, have the HPFP inspected immediately — a £500–£1,000 replacement is far cheaper than the £5,000+ engine replacement that follows if ignored. This is a known issue on early S58-powered BMWs.",
+        "cta": {
+          "label": "Compare S58 HPFP prices for your G87 M2 →",
+          "href": "#"
+        }
+      }
+    ]
+  },
+  "replacementCosts": {
+    "h2": "G87 Engine Replacement Costs — By Engine and Condition",
+    "columns": [
+      "Variant",
+      "Engine Code",
+      "Used (Supply)",
+      "Reconditioned (Supply)",
+      "Rebuilt (Supply)",
+      "Labour Hours"
+    ],
+    "rows": [
+      {
+        "variant": "M2 (pre-LCI, 453 bhp)",
+        "engineCode": "S58B30",
+        "usedSupply": "£3,000–£5,000",
+        "reconditionedSupply": "£5,000–£8,000",
+        "rebuiltSupply": "£7,000–£10,000",
+        "labourHours": "14–18 hrs"
+      },
+      {
+        "variant": "M2 (LCI, 473 bhp)",
+        "engineCode": "S58B30T0",
+        "usedSupply": "£3,200–£5,500",
+        "reconditionedSupply": "£5,500–£8,500",
+        "rebuiltSupply": "£7,500–£11,000",
+        "labourHours": "14–18 hrs"
+      }
+    ],
+    "note": "No Generation variance from the EM_Proprietary_Data baseline figures — G87 M2 is a new generation with no direct predecessor cost comparison for the S58 engine. Costs are derived from BMW specialist market data and tagged [BMW-QUOTE] and [PLACEHOLDER — confirm vs cost sheet] where applicable."
+  },
+  "coreVariants": {
+    "dieselVariants": [],
+    "petrolVariants": [
+      "M2"
+    ],
+    "scopeNote": "The BMW M2 G87 is offered with a single engine option — the S58B30 twin-turbo straight-six. Pre-LCI models (2022–2023) produce 453 bhp; LCI models (2024–present) produce 473 bhp. Both are available with either a six-speed manual or eight-speed automatic transmission. The G87 is rear-wheel drive only; an xDrive model was introduced in Summer 2026. A limited-run M2 CS model was sold in 2025."
+  },
+  "marketIntelligence": {
+    "mostRequestedEngines": [],
+    "mostRequestedVariants": [],
+    "averageReplacementCost": "",
+    "mostCommonFailures": [],
+    "liveFeed": []
+  },
+  "faq": {
+    "items": []
+  },
+  "trustCta": {
+    "h2": "",
+    "trustPoints": [],
+    "finalCta": "",
+    "ctaButton": {
+      "label": "",
+      "href": "#",
+      "note": ""
+    }
+  }
+}

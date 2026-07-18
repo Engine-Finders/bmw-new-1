@@ -1,0 +1,512 @@
+{
+  "meta": {
+    "slug": "bmw-x5-4-6is-4-8is",
+    "title": "BMW X5 4.6is / 4.8is Engine Replacement — Compare Prices & Get Quotes",
+    "titleCharCount": 69,
+    "description": "",
+    "descriptionCharCount": 0,
+    "canonical": "",
+    "openGraph": {
+      "title": "",
+      "description": "",
+      "type": "",
+      "url": "",
+      "image": "",
+      "siteName": ""
+    },
+    "twitter": {
+      "card": "",
+      "title": "",
+      "description": "",
+      "image": ""
+    },
+    "jsonLd": {}
+  },
+  "hero": {
+    "tagPill": "BMW X5 4.6is / 4.8is • 2002–2006 • V8 Two Generations",
+    "h1": "BMW X5 4.6is / 4.8is Engine Replacement — Compare Prices & Get Quotes",
+    "subHeadline": "Get quotes today from trusted UK BMW V8 specialists. The 4.6is and 4.8is are the high-performance E53 X5s — M62 4.6L (2002–2003) and N62 4.8L (2004–2006). Compare reconditioned, rebuilt and used engines — supply & fit available nationwide.",
+    "trustBadges": [
+      "🔧 Supply & Fit Available",
+      "✅ 12-Month Warranty",
+      "🚚 Nationwide Delivery",
+      "👥 20+ Specialists"
+    ],
+    "priceAnchor": "BMW X5 4.6is/4.8is Engines — from £3,000 to £10,000 · Codes: M62B46 / N62B48",
+    "registrationInput": {
+      "flag": "🇬🇧 GB",
+      "placeholder": "Enter your reg — e.g. AB12 CDE",
+      "cta": {
+        "label": "See BMW X5 4.6is Engine Options →",
+        "href": "#"
+      }
+    },
+    "ticker": "● Instant Quotes · No Obligation · 100% Free · Reconditioned · Rebuilt · Used · Supply & Fit Available · UK-Wide Network"
+  },
+  "eraMap": {
+    "title": "BMW X5 4.6is / 4.8is — Which Engine Does Your Car Actually Have?",
+    "columns": [
+      "Generation",
+      "Years",
+      "Engine Code",
+      "Reliability",
+      "Recon Cost",
+      "Era Note"
+    ],
+    "rows": [
+      {
+        "generation": "E53 4.6is",
+        "years": "2002–2003",
+        "engineCode": "M62B46 (4.6L V8)",
+        "reliability": "★★★☆☆ [NEWLY ASSIGNED — see Data Note]",
+        "reconCost": "£4,000–£6,500 [PLACEHOLDER — confirm vs cost sheet]",
+        "eraNote": "340bhp — timing chain guides and VANOS are defining risks"
+      },
+      {
+        "generation": "E53 4.8is",
+        "years": "2004–2006",
+        "engineCode": "N62B48 (4.8L V8)",
+        "reliability": "★★★½☆ [NEWLY ASSIGNED — see Data Note]",
+        "reconCost": "£5,000–£8,000 [PLACEHOLDER — confirm vs cost sheet]",
+        "eraNote": "355bhp — valve stem seals are the defining weakness"
+      }
+    ],
+    "sourceNote": "This table is the single source every other section on this page matches — Sections 2, 4 and 6 reference it rather than restating conflicting figures.",
+    "dataNote": ""
+  },
+  "replacementCosts": {
+    "h2": "BMW X5 4.6is / 4.8is Engine Replacement Costs",
+    "columns": [
+      "Engine Type",
+      "Supply Only",
+      "Fitted (Indie)",
+      "Warranty",
+      "Best For"
+    ],
+    "rows": [
+      {
+        "engineType": "Used Engine",
+        "supplyOnly": "£3,000–£5,000",
+        "fittedIndie": "£4,000–£6,500",
+        "warranty": "1–6 months",
+        "bestFor": "Budget priority; lower-mileage donor"
+      },
+      {
+        "engineType": "Reconditioned Engine",
+        "supplyOnly": "£4,500–£7,500",
+        "fittedIndie": "£5,500–£9,000",
+        "warranty": "12–24 months",
+        "bestFor": "Most owners — best cost/warranty balance"
+      },
+      {
+        "engineType": "Rebuilt Engine",
+        "supplyOnly": "£6,000–£10,000",
+        "fittedIndie": "£7,000–£11,500",
+        "warranty": "12–24 months",
+        "bestFor": "Long-term ownership; 5+ year horizon"
+      },
+      {
+        "engineType": "Main Dealer New",
+        "supplyOnly": "N/A — NLA from BMW",
+        "fittedIndie": "N/A",
+        "warranty": "N/A",
+        "bestFor": "Specialist rebuild only"
+      }
+    ],
+    "figuresNote": "Figures above reflect current market ranges across both M62 and N62 engines. Reconditioned units are rare — specialists typically rebuild existing units. All pricing is indicative; actual costs vary by mileage, condition and workshop location.",
+    "labourEstimate": "Fitting an X5 V8 engine typically takes 14–20 hours at £75–£110/hr (independent BMW specialist) or £130–£180/hr (London/SE dealer). The E53's engine bay is tight; engine-out work is often required for major repairs.",
+    "cta": {
+      "label": "→ Compare BMW X5 4.6is / 4.8is engine prices from UK specialists",
+      "href": "#"
+    }
+  },
+  "commonProblems": {
+    "problems": [
+      {
+        "id": 1,
+        "title": "Timing Chain Guide Failure (M62 — 4.6is)",
+        "symptoms": "",
+        "typicalMileage": "",
+        "repairCost": "",
+        "replacementCost": "",
+        "urgency": {
+          "icon": "",
+          "label": "",
+          "text": ""
+        },
+        "recommendation": "",
+        "failureLink": {
+          "label": "",
+          "href": "#"
+        }
+      },
+      {
+        "id": 2,
+        "title": "Valve Stem Seal Failure (N62 — 4.8is)",
+        "symptoms": "",
+        "typicalMileage": "",
+        "repairCost": "",
+        "replacementCost": "",
+        "urgency": {
+          "icon": "",
+          "label": "",
+          "text": ""
+        },
+        "recommendation": "",
+        "failureLink": {
+          "label": "",
+          "href": "#"
+        }
+      },
+      {
+        "id": 3,
+        "title": "Cooling System Failure (M62 and N62)",
+        "symptoms": "",
+        "typicalMileage": "",
+        "repairCost": "",
+        "replacementCost": "",
+        "urgency": {
+          "icon": "",
+          "label": "",
+          "text": ""
+        },
+        "recommendation": "",
+        "failureLink": {
+          "label": "",
+          "href": "#"
+        }
+      },
+      {
+        "id": 4,
+        "title": "Alternator Bracket Oil Leak (N62 — 4.8is)",
+        "symptoms": "",
+        "typicalMileage": "",
+        "repairCost": "",
+        "replacementCost": "",
+        "urgency": {
+          "icon": "",
+          "label": "",
+          "text": ""
+        },
+        "recommendation": "",
+        "failureLink": {
+          "label": "",
+          "href": "#"
+        }
+      },
+      {
+        "id": 5,
+        "title": "VANOS Seal Degradation (M62 — 4.6is)",
+        "symptoms": "",
+        "typicalMileage": "",
+        "repairCost": "",
+        "replacementCost": "",
+        "urgency": {
+          "icon": "",
+          "label": "",
+          "text": ""
+        },
+        "recommendation": "",
+        "failureLink": {
+          "label": "",
+          "href": "#"
+        }
+      }
+    ]
+  },
+  "quotesCta": {
+    "headline": "Weighing Your Options? Compare Specialist Quotes When You're Ready →",
+    "supportingLine": "20+ vetted BMW specialists, covering both M62 and N62 V8 engines, with a 12-month warranty as standard.",
+    "button": {
+      "label": "See BMW X5 4.6is Engine Options →",
+      "href": "#"
+    }
+  },
+  "repairBuyOrReplace": {
+    "h2": "BMW X5 4.6is / 4.8is — Repair, Buy, or Replace?",
+    "canItBeRepaired": {
+      "title": "Can It Be Repaired?",
+      "columns": [
+        "Problem",
+        "Repairable?",
+        "Typical Cost",
+        "When It Makes Sense"
+      ],
+      "rows": [
+        {
+          "problem": "M62 timing chain guides",
+          "repairable": "✅ Yes",
+          "typicalCost": "£2,000–£4,500",
+          "whenItMakesSense": "Preventative — cheaper than engine replacement"
+        },
+        {
+          "problem": "N62 valve stem seals",
+          "repairable": "✅ Yes",
+          "typicalCost": "£2,500–£5,000",
+          "whenItMakesSense": "Viable with specialist tools (engine-in-situ method)"
+        },
+        {
+          "problem": "Cooling system failure",
+          "repairable": "✅ Yes",
+          "typicalCost": "£500–£1,500",
+          "whenItMakesSense": "Proactive replacement is essential"
+        },
+        {
+          "problem": "M62 VANOS seals",
+          "repairable": "✅ Yes",
+          "typicalCost": "£600–£1,500",
+          "whenItMakesSense": "Restores performance — worth it"
+        },
+        {
+          "problem": "N62 alternator bracket leak",
+          "repairable": "✅ Yes",
+          "typicalCost": "£800–£1,800",
+          "whenItMakesSense": "Viable on a well-maintained X5"
+        },
+        {
+          "problem": "Major internal failure",
+          "repairable": "❌ Usually No",
+          "typicalCost": "Engine replacement required",
+          "whenItMakesSense": "Replacement often £4,500–£7,500 — assess vehicle value carefully"
+        }
+      ]
+    },
+    "buyingChecks": {
+      "title": "Buying This BMW X5 4.6is / 4.8is? Check These First",
+      "buyIf": [
+        "* Any 4.8is with documented valve stem seal history (replaced)",
+        "* 4.6is with documented timing chain guide history (replaced)",
+        "* Cooling system proactively replaced (water pump, radiator, hoses)",
+        "* Full service history with regular oil changes (specialist maintained)",
+        "* Low-mileage (under 80,000) with documented history"
+      ],
+      "avoidIf": [
+        "* 4.6is with no timing chain history — the risk is real and expensive",
+        "* 4.8is with blue smoke on startup — valve stem seals are almost certainly failing",
+        "* Any evidence of coolant loss or overheating — cooling system risk",
+        "* Poor service history — both V8s are unforgiving of neglect",
+        "* Engine warning light with no diagnosis — these engines can hide expensive problems",
+        "* Rust — E53s are valuable; body condition is as important as the engine"
+      ]
+    },
+    "closingVerdict": "The 4.6is and 4.8is are BMW's high-performance E53 X5s — V8-powered SUVs with genuine sporting credentials. The 4.6is M62 is a classic V8 with chain guide vulnerability and VANOS issues; the 4.8is N62 is more powerful but has the valve stem seal oil consumption problem. Both are high-maintenance specialist engines. Buy the newest, lowest-mileage example you can afford with documented history, budget for preventative maintenance, and enjoy one of BMW's most iconic SUVs.",
+    "cta": {
+      "label": "→ Compare BMW X5 4.6is / 4.8is engine prices before you buy",
+      "href": "#"
+    }
+  },
+  "buyingChecklist": {
+    "intro": "Before you buy a used BMW X5 4.6is / 4.8is (or before you commit to an engine replacement), check these:",
+    "items": [
+      "* Cold Start — Any rattle? M62 chain rattle is metallic; N62 should be smooth but check for blue smoke",
+      "* Blue Smoke — N62: any smoke on startup? Valve stem seals are the main issue",
+      "* Oil Consumption — N62: monitor between services; 1L per 1,000 miles is a warning sign",
+      "* Service History — Check the year to identify which engine — 2002–2003 = M62, 2004–2006 = N62",
+      "* Timing Chain History — M62: guides and tensioner replaced? (critical)",
+      "* Cooling System — Any coolant loss? Water pump, radiator and hoses should be recent",
+      "* VANOS Performance — M62: check low-end torque; hesitation indicates VANOS seal wear",
+      "* Engine Warning Light — Have codes been read? Resolve before buying"
+    ]
+  },
+  "engineCodes": {
+    "columns": [
+      "Engine Code",
+      "Years",
+      "Power",
+      "2025 Enquiries",
+      "Avg. Recon Cost"
+    ],
+    "rows": [
+      {
+        "engineCode": "M62B46 (4.6L V8)",
+        "years": "2002–2003",
+        "power": "340 bhp / 250 kW",
+        "enquiries": "— (pattern data — heritage)",
+        "avgReconCost": "£4,000–£6,500 [PLACEHOLDER]"
+      },
+      {
+        "engineCode": "N62B48 (4.8L V8)",
+        "years": "2004–2006",
+        "power": "355 bhp / 260 kW",
+        "enquiries": "— (pattern data — heritage)",
+        "avgReconCost": "£5,000–£8,000 [PLACEHOLDER]"
+      }
+    ],
+    "matchNote": "This table's rows match Section 1B's Era Map exactly.",
+    "technicalSpecs": {
+      "title": "Technical Specs (N62B48):",
+      "items": [
+        {
+          "label": "* Displacement",
+          "value": "4,619 cc"
+        },
+        {
+          "label": "* Cylinders",
+          "value": "8-cylinder V (90°)"
+        },
+        {
+          "label": "* Compression Ratio",
+          "value": "10.0:1"
+        },
+        {
+          "label": "* Fuel System",
+          "value": "Sequential fuel injection (Bosch Motronic)"
+        },
+        {
+          "label": "* Turbocharger",
+          "value": "Naturally aspirated"
+        },
+        {
+          "label": "* Displacement",
+          "value": "4,799 cc"
+        },
+        {
+          "label": "* Cylinders",
+          "value": "8-cylinder V (90°)"
+        },
+        {
+          "label": "* Compression Ratio",
+          "value": "10.5:1"
+        },
+        {
+          "label": "* Fuel System",
+          "value": "Valvetronic with multi-point injection"
+        },
+        {
+          "label": "* Turbocharger",
+          "value": "Naturally aspirated"
+        },
+        {
+          "label": "Additional specifications",
+          "value": ""
+        },
+        {
+          "label": "* Maximum torque (M62)",
+          "value": "480 Nm @ 3,700 rpm"
+        },
+        {
+          "label": "* Maximum torque (N62)",
+          "value": "500 Nm @ 3,500 rpm"
+        },
+        {
+          "label": "* 0–60mph",
+          "value": "6.1s (4.6is) / 5.8s (4.8is)"
+        },
+        {
+          "label": "* Top speed",
+          "value": "150 mph (limited, both)"
+        },
+        {
+          "label": "* Transmission",
+          "value": "5-speed automatic (ZF 5HP24)"
+        },
+        {
+          "label": "* Drive",
+          "value": "All-Wheel Drive (xDrive)"
+        },
+        {
+          "label": "* Kerb weight",
+          "value": "2,150–2,250 kg"
+        },
+        {
+          "label": "* Combined fuel economy",
+          "value": "16–18 mpg (claimed)"
+        }
+      ]
+    },
+    "cta": {
+      "label": "→ Compare BMW X5 4.6is / 4.8is engine prices for your BMW",
+      "href": "#"
+    }
+  },
+  "marketIntelligence": {
+    "items": [
+      {
+        "label": "Most Common Failure",
+        "value": "M62: timing chain guide failure (~50% of M62 enquiries) / N62: valve stem seal failure (~60% of N62 enquiries) [PATTERN DATA — specialist workshop consensus]"
+      },
+      {
+        "label": "Average Enquiry Mileage",
+        "value": "85,000 miles [PATTERN DATA]"
+      },
+      {
+        "label": "Average Replacement Cost",
+        "value": "£6,000 reconditioned (N62 era), supply only [PLACEHOLDER — confirm vs cost sheet]"
+      },
+      {
+        "label": "Most Requested Engine Code",
+        "value": "N62B48 (4.8is is more sought-after) [PATTERN DATA]"
+      },
+      {
+        "label": "Peak Enquiry Season",
+        "value": "Spring/Summer — classic SUV owners prepare for summer touring [PATTERN DATA]"
+      },
+      {
+        "label": "Regional Demand",
+        "value": "South East (25%), London (20%), South West (15%) [PATTERN DATA]"
+      }
+    ]
+  },
+  "faq": {
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a BMW X5 4.6is / 4.8is engine replacement cost in the UK?",
+        "answer": "A reconditioned BMW X5 V8 engine costs £4,500–£7,500 supply only, varying by generation: M62 4.6is £4,000–£6,500, N62 4.8is £5,000–£8,000. Fitting adds £1,500–£2,500. These are specialist-only replacements — the V8 requires BMW V8 expertise."
+      },
+      {
+        "id": 2,
+        "question": "Is the BMW X5 4.6is / 4.8is reliable?",
+        "answer": "That depends on which engine your X5 has. The M62 (4.6is, 2002–2003) is a classic V8 but has timing chain guide failure risk — this is the defining issue. The N62 (4.8is, 2004–2006) has valve stem seal failure (blue smoke, oil consumption) as the defining weakness. Both are high-maintenance specialist engines. Neither is cheap to run."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the BMW X5 4.6is / 4.8is?",
+        "answer": "M62: timing chain guide failure (cold-start rattle, £2,000–£4,500), VANOS seal degradation (loss of low-end power, £600–£1,500), cooling system failure (£500–£1,500). N62: valve stem seal failure (blue smoke, oil consumption, £2,500–£5,000), alternator bracket oil leak (£800–£1,800), cooling system failure (£500–£1,500)."
+      },
+      {
+        "id": 4,
+        "question": "Is it worth replacing a BMW X5 4.6is / 4.8is engine, or should I scrap the car?",
+        "answer": "E53 X5 values range from £4,000–£15,000 depending on condition, mileage and specification. A £4,500–£7,500 reconditioned engine represents 30–80% of vehicle value — our 70% BMW scrap threshold means careful evaluation is required. For a well-maintained, low-mileage example, replacement is often justified. For a higher-mileage example with other issues, assess scrap value first. The 4.8is is generally more valuable and worth the investment."
+      },
+      {
+        "id": 5,
+        "question": "How do I find my BMW X5 4.6is / 4.8is engine code?",
+        "answer": "The X5 4.6is/4.8is has used two engines: M62B46 (2002–2003, 340bhp) and N62B48 (2004–2006, 355bhp). The 4.6is badge is the M62; the 4.8is badge is the N62. Check your VIN or registration year. The code is stamped on the engine block."
+      },
+      {
+        "id": 6,
+        "question": "Can I repair the M62 timing chain issue, or does it need replacement?",
+        "answer": "Yes — if caught early. Timing chain and guide replacement costs £2,000–£4,500 and is significantly cheaper than a full engine replacement (£4,000–£6,500). The job requires engine removal on the E53, making it a major investment. At the first sign of cold-start rattle, book an inspection immediately — ignored chain wear can lead to catastrophic piston-valve contact."
+      },
+      {
+        "id": 7,
+        "question": "Can I repair the N62 valve stem seal issue, or does it need replacement?",
+        "answer": "Yes — the valve stem seals can be replaced using a specialist method that doesn't require removing the cylinder heads (some specialists can do it with the engine in situ using air pressure to hold the valves). This costs £2,500–£5,000 and is significantly cheaper than a full engine replacement (£5,000–£8,000). At the first sign of blue smoke on startup, book an inspection."
+      }
+    ],
+    "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty — always confirm terms with your chosen supplier."
+  },
+  "trustCta": {
+    "h2": "Why UK BMW X5 4.6is / 4.8is Owners Trust BMWEngines.uk",
+    "trustPoints": [
+      {
+        "title": "Trusted BMW X5 V8 Engine Suppliers",
+        "text": "every garage and engine rebuilder in our network is vetted, rated and reviewed by real X5 owners, as part of the Engine Finders network, with specialist knowledge of both M62 and N62 V8 engines and their unique requirements."
+      },
+      {
+        "title": "Compare BMW X5 4.6is / 4.8is Engine Replacement Companies",
+        "text": "see prices, warranty terms and supply & fit options side‑by‑side before you commit, with transparent pricing for both M62 (2002–2003) and N62 (2004–2006) eras."
+      },
+      {
+        "title": "UK Engine Replacement Services for BMW X5 4.6is / 4.8is",
+        "text": "supply‑only or full supply & fit available nationwide, covering the E53 X5 with specialists who understand these iconic high-performance V8s."
+      }
+    ],
+    "finalCta": "Find the best BMW X5 4.6is / 4.8is engine replacement UK drivers rely on. Compare prices from trusted specialists on EnginesMarket today and get your performance SUV back on the road with confidence.",
+    "ctaButton": {
+      "label": "Explore BMW X5 4.6is / 4.8is Engine Quotes →",
+      "href": "#"
+    }
+  }
+}

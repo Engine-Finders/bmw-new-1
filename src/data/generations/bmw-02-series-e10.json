@@ -1,0 +1,474 @@
+{
+  "meta": {
+    "slug": "bmw-02-series-e10",
+    "title": "BMW 02 Series E10 Engines — The Complete UK Guide",
+    "titleCharCount": 49,
+    "description": "",
+    "descriptionCharCount": 0,
+    "jsonLd": {}
+  },
+  "internalDeclarations": {
+    "checkA": "",
+    "checkB": "",
+    "authorityModelMode": ""
+  },
+  "hero": {
+    "tagPill": "BMW 02 Series E10 • Coupé • 1966–1977",
+    "h1": "BMW 02 Series E10 Engines — The Complete UK Guide",
+    "subHeadline": "Every engine fitted to the 02 Series E10 — from the 1.6-litre M10 four-cylinder to the 170 bhp turbocharged legend that defined a generation. Real UK costs and honest reliability data for the car that created the modern BMW sports saloon. Backed by 120+ real UK E10 enquiries in 2025 [BMW-VERIFIED].",
+    "trustStrip": [
+      {
+        "icon": "📊",
+        "label": "120+ E10 Enquiries (2025) [BMW-VERIFIED]"
+      },
+      {
+        "icon": "🔧",
+        "label": "Coupé"
+      },
+      {
+        "icon": "📖",
+        "label": "7 Engine Families"
+      },
+      {
+        "icon": "🏆",
+        "label": "Part of Engine Finders"
+      }
+    ],
+    "primaryCta": {
+      "label": "Explore E10 Engines →",
+      "href": "#"
+    },
+    "dataIntegrityNote": ""
+  },
+  "engineDatabase": {
+    "h2": "BMW 02 Series E10 Engine Codes — The Complete Database",
+    "subHeadline": "Every engine fitted to the 02 Series E10 — the legendary M10 four-cylinder in 1.6, 1.8 and 2.0-litre forms, from carburettor to Kugelfischer mechanical fuel injection to the first turbocharged BMW production car.",
+    "columns": [
+      "Engine Code",
+      "Family",
+      "Fuel",
+      "Displacement",
+      "Power",
+      "Years (E10)",
+      "Variants (badges)",
+      "Reliability",
+      "2025 Enquiries",
+      "Avg. Recon Cost"
+    ],
+    "engines": [
+      {
+        "engineCode": "M10B16 (1600-2 / 1602)",
+        "family": "M10",
+        "fuel": "Petrol",
+        "displacement": "1.6L (1573cc)",
+        "power": "85 bhp (63 kW)",
+        "years": "1966–1971 (1600-2), 1971–1975 (1602)",
+        "variants": "1600-2, 1602",
+        "reliability": "★★★★☆ [PROVISIONAL — pending dedicated Engine Page]",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£1,800–£3,200 [BMW-QUOTE]"
+      },
+      {
+        "engineCode": "M10B16 (1502)",
+        "family": "M10",
+        "fuel": "Petrol",
+        "displacement": "1.6L (1573cc)",
+        "power": "75 bhp (55 kW)",
+        "years": "1975–1977",
+        "variants": "1502",
+        "reliability": "★★★★☆ [PROVISIONAL — pending dedicated Engine Page]",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£1,800–£3,200 [BMW-QUOTE]"
+      },
+      {
+        "engineCode": "M10B18 (1802)",
+        "family": "M10",
+        "fuel": "Petrol",
+        "displacement": "1.8L (1766cc)",
+        "power": "90 bhp (66 kW)",
+        "years": "1971–1975",
+        "variants": "1802",
+        "reliability": "★★★★☆ [PROVISIONAL — pending dedicated Engine Page]",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£2,000–£3,500 [BMW-QUOTE]"
+      },
+      {
+        "engineCode": "M10B20 (2002)",
+        "family": "M10",
+        "fuel": "Petrol",
+        "displacement": "2.0L (1990cc)",
+        "power": "100 bhp (74 kW)",
+        "years": "1968–1975",
+        "variants": "2002",
+        "reliability": "★★★★☆ [PROVISIONAL — pending dedicated Engine Page]",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£2,200–£4,000 [BMW-QUOTE]"
+      },
+      {
+        "engineCode": "M10B20 (2002 Ti)",
+        "family": "M10",
+        "fuel": "Petrol",
+        "displacement": "2.0L (1990cc)",
+        "power": "120 bhp (88 kW)",
+        "years": "1968–1972",
+        "variants": "2002 Ti",
+        "reliability": "★★★★☆ [PROVISIONAL — pending dedicated Engine Page]",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£2,500–£4,500 [BMW-QUOTE]"
+      },
+      {
+        "engineCode": "M10B20 (23EA) (2002 Tii)",
+        "family": "M10",
+        "fuel": "Petrol",
+        "displacement": "2.0L (1990cc)",
+        "power": "130 bhp (96 kW)",
+        "years": "1971–1975",
+        "variants": "2002 Tii",
+        "reliability": "★★★★☆ [PROVISIONAL — pending dedicated Engine Page]",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£3,000–£5,500 [BMW-QUOTE]"
+      },
+      {
+        "engineCode": "M10B20 (22T A) (2002 Turbo)",
+        "family": "M10",
+        "fuel": "Petrol",
+        "displacement": "2.0L (1990cc)",
+        "power": "170 bhp (125 kW)",
+        "years": "1974–1975",
+        "variants": "2002 Turbo",
+        "reliability": "★★★☆☆ [PROVISIONAL — pending dedicated Engine Page]",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£4,500–£7,500 [BMW-QUOTE]"
+      }
+    ],
+    "confidenceScore": {
+      "title": "How confident are these ratings?",
+      "text": "All ratings are [PROVISIONAL] pending dedicated Engine Pages. The M10 family is widely regarded as one of BMW's most reliable and durable engines — the cast-iron block and simple SOHC design are robust and well-understood. The naturally aspirated carburettor and fuel-injected variants (M10B16, M10B18, M10B20, M10B20 Ti, M10B20 Tii) are exceptionally durable, with documented 200,000+ mile lifespans. The 2002 Turbo is more highly stressed and requires more careful maintenance, but it remains a legendary engine."
+    },
+    "dataCorrections": []
+  },
+  "overview": {
+    "h2": "BMW 02 Series E10 — Overview",
+    "intro": "The E10 is the BMW 02 Series, produced from April 1966 to July 1977 — the car that created the modern BMW sports saloon. Based on a shortened version of the New Class sedans, the 02 Series established BMW's reputation for combining everyday usability with sporting performance. The range was powered exclusively by the M10 four-cylinder engine, designed by Baron Alex von Falkenhausen, in displacements from 1.6 to 2.0 litres. The 2002, introduced in 1968, became the icon of the range, while the 2002 Tii (1971) brought Kugelfischer mechanical fuel injection to the masses. The 2002 Turbo (1974) was BMW's first turbocharged production car, and the 1502 (1975) kept the 02 Series alive alongside the new E21 3 Series until 1977.",
+    "keyFacts": "Platform: BMW E10 (shortened New Class) • Predecessor: BMW New Class (1500–2000) • Successor: BMW 3 Series (E21) • Sibling body styles: 2-door coupé (primary), Baur convertible, 3-door hatchback (Touring).",
+    "marketIntelligenceLine": "The E10 02 Series generated 120+ real UK engine enquiries in 2025 [BMW-VERIFIED], concentrated on the 2002 and 2002 Tii as classic car enthusiasts seek BMW's most iconic vintage sports saloon."
+  },
+  "bestWorstEngines": {
+    "items": [
+      {
+        "slot": "Best Value",
+        "engine": "M10B20 (2002, 2.0L single carburettor, 100 bhp)",
+        "quote": "The base 2002 is the entry point to E10 ownership — 100 bhp, 0-62 mph in 10.5 seconds, and a top speed of 173 km/h (107 mph). The single-carburettor engine is the simplest and cheapest to maintain, and the 2002's rising collector values make it a smart investment.",
+        "whoItsFor": "buyers who want E10 ownership without the Tii or Turbo premium."
+      },
+      {
+        "slot": "Highest Risk",
+        "engine": "M10B20 (22T A) (2002 Turbo, 2.0L turbocharged, 170 bhp)",
+        "quote": "The 2002 Turbo is BMW's first turbocharged production car — 170 bhp and 245 Nm of torque. It's a legend, but the turbocharger, unique engine management, and high-strung nature make it the most expensive and complex E10 to maintain. Only 1,672 were built.",
+        "whoItsFor": "collectors and enthusiasts with deep pockets."
+      },
+      {
+        "slot": "Most Expensive Failure",
+        "engine": "M10B20 (22T A) (2002 Turbo, 170 bhp)",
+        "quote": "The 2002 Turbo's unique turbocharger, Bosch fuel injection, and low compression ratio (6.9:1) make it the most expensive E10 engine to rebuild — a full recon can exceed £7,500. Parts are scarce and specialist knowledge is essential.",
+        "whoItsFor": "collectors willing to invest in a piece of BMW history."
+      },
+      {
+        "slot": "Most Overlooked",
+        "engine": "M10B18 (1802, 1.8L, 90 bhp)",
+        "quote": "The 1802 is often overlooked in favour of the 1602 or 2002 — but it's a sweet spot. More torque than the 1.6, better economy than the 2.0, and a lower entry price than the 2002. It's the thinking buyer's E10.",
+        "whoItsFor": "buyers who want classic 02 Series character without the 2002 premium."
+      }
+    ]
+  },
+  "ownershipEconomics": {
+    "h2": "BMW 02 Series E10 — Ownership Economics",
+    "columns": [
+      "Engine",
+      "Typical Mileage",
+      "Common Major Failure",
+      "Repair Cost (Specialist)",
+      "Replacement Cost (Recon)",
+      "Ownership Verdict"
+    ],
+    "rows": [
+      {
+        "engine": "M10B16 (1502/1602)",
+        "typicalMileage": "60k–120k",
+        "commonMajorFailure": "Carburettor, cooling system, timing chain",
+        "repairCostSpecialist": "£400–£1,000",
+        "replacementCostRecon": "£1,800–£3,200",
+        "ownershipVerdict": "Solid Choice — simple, durable, cheap to run."
+      },
+      {
+        "engine": "M10B18 (1802)",
+        "typicalMileage": "60k–120k",
+        "commonMajorFailure": "Carburettor, cooling system, timing chain",
+        "repairCostSpecialist": "£400–£1,000",
+        "replacementCostRecon": "£2,000–£3,500",
+        "ownershipVerdict": "Solid Choice — more torque than the 1.6."
+      },
+      {
+        "engine": "M10B20 (2002)",
+        "typicalMileage": "60k–120k",
+        "commonMajorFailure": "Carburettor, cooling system, timing chain",
+        "repairCostSpecialist": "£400–£1,200",
+        "replacementCostRecon": "£2,200–£4,000",
+        "ownershipVerdict": "Best Value — the classic 02 Series experience."
+      },
+      {
+        "engine": "M10B20 (2002 Ti)",
+        "typicalMileage": "60k–120k",
+        "commonMajorFailure": "Twin carburettor sync, cooling system",
+        "repairCostSpecialist": "£500–£1,500",
+        "replacementCostRecon": "£2,500–£4,500",
+        "ownershipVerdict": "Solid Choice — twin-carb character."
+      },
+      {
+        "engine": "M10B20 Tii (2002 Tii)",
+        "typicalMileage": "60k–120k",
+        "commonMajorFailure": "Kugelfischer pump, fuel system, cooling",
+        "repairCostSpecialist": "£800–£2,000",
+        "replacementCostRecon": "£3,000–£5,500",
+        "ownershipVerdict": "Best Overall — fuel-injected precision."
+      },
+      {
+        "engine": "M10B20 Turbo (2002 Turbo)",
+        "typicalMileage": "40k–80k",
+        "commonMajorFailure": "Turbocharger, fuel injection, cooling",
+        "repairCostSpecialist": "£1,500–£3,500",
+        "replacementCostRecon": "£4,500–£7,500",
+        "ownershipVerdict": "High Cost — legendary, but expensive to maintain."
+      }
+    ],
+    "economicsRule": {
+      "title": "The E10 rule",
+      "text": "A £2,200–£4,000 2002 recon against a £5,000–£25,000 E10 sits at 9–80% of the car's value【BMW-QUOTE】. On a sub-£8,000 example, that brushes our 70% BMW threshold — we'll honestly tell you to walk away. Against a well-kept £15,000+ example, the same recon drops to 15–27% — a repair decision, not a financial one. The E10's rising collector values mean a well-maintained car will justify engine work. For 2002 Turbo cars (£30,000–£60,000+), even the most expensive replacement is viable."
+    },
+    "keyTakeaways": [
+      {
+        "question": "Which E10 Costs Least To Own?",
+        "answer": "M10B16 (1502/1602) — simple carburettor engine, cheap parts, low running costs."
+      },
+      {
+        "question": "Which E10 Costs Most To Own?",
+        "answer": "M10B20 Turbo (2002 Turbo) — turbocharger, unique parts and specialist knowledge required."
+      },
+      {
+        "question": "Which E10 Is Best Value?",
+        "answer": "M10B20 (2002) — the classic 02 Series experience with reasonable running costs and rising values."
+      }
+    ]
+  },
+  "commonProblems": {
+    "problems": [
+      {
+        "id": 1,
+        "title": "M10 Timing Chain & Tensioner Wear",
+        "affectedModels": "All E10 02 Series (M10 engine).",
+        "typicalFailureMileage": "60,000–120,000 miles (age-related).",
+        "rootCause": "The M10 uses a timing chain rather than a belt, which is generally more durable. However, the chain tensioner can wear over time, leading to chain slack and potential timing issues. A rattling noise on startup or at idle is the classic warning sign.",
+        "tieredCosts": [
+          {
+            "tier": "Preventative (Repair)",
+            "dealer": "£600–£1,000",
+            "specialist": "£400–£700",
+            "work": "Timing chain tensioner and guide replacement",
+            "note": ""
+          },
+          {
+            "tier": "Catastrophic (Replacement)",
+            "dealer": "£3,500–£5,500",
+            "specialist": "£2,000–£4,000",
+            "work": "Full engine rebuild or replacement",
+            "note": ""
+          }
+        ],
+        "recommendation": "Have the timing chain tensioner inspected and replaced preventatively at 60,000 miles — a £400–£700 specialist job is far cheaper than the £2,000+ engine rebuild that follows if the chain fails. Any rattling noise from the timing chain area should be investigated immediately.",
+        "cta": {
+          "label": "Compare M10 engine prices for your E10 →",
+          "href": "#"
+        }
+      },
+      {
+        "id": 2,
+        "title": "M10 Cooling System Failure",
+        "affectedModels": "All E10 02 Series (M10 engine).",
+        "typicalFailureMileage": "50,000–100,000 miles (age-related).",
+        "rootCause": "The E10's cooling system components — water pump, radiator, thermostat, and hoses — degrade with age. The M10 is a robust engine, but overheating can cause head gasket failure and warped cylinder heads.",
+        "tieredCosts": [
+          {
+            "tier": "Preventative (Repair)",
+            "dealer": "£500–£800",
+            "specialist": "£300–£500",
+            "work": "Water pump, thermostat, radiator, hoses replacement",
+            "note": ""
+          },
+          {
+            "tier": "Catastrophic (Replacement)",
+            "dealer": "£3,500–£5,500",
+            "specialist": "£2,000–£4,000",
+            "work": "Full engine rebuild or replacement",
+            "note": ""
+          }
+        ],
+        "recommendation": "Replace the water pump, thermostat and radiator hoses as preventative maintenance at 60,000 miles or 10 years — a £300–£500 specialist job is dramatically cheaper than the £2,000+ engine rebuild that follows an overheating event. This is the single most important maintenance item on any M10-powered BMW.",
+        "cta": {
+          "label": "Compare M10 cooling system parts for your E10 →",
+          "href": "#"
+        }
+      },
+      {
+        "id": 3,
+        "title": "Solex Carburettor & Kugelfischer Fuel Injection Issues",
+        "affectedModels": "All E10 02 Series (carburettor and fuel-injected variants).",
+        "typicalFailureMileage": "40,000–80,000 miles (age-related).",
+        "rootCause": "The Solex carburettors on 1602, 1802 and 2002 models can suffer from wear, clogging, and tuning issues. The Kugelfischer mechanical fuel injection on the 2002 Tii is a masterpiece of engineering but requires specialist knowledge to maintain — pump wear, leaking seals, and incorrect fueling are common issues.",
+        "tieredCosts": [
+          {
+            "tier": "Preventative (Repair)",
+            "dealer": "£500–£1,200",
+            "specialist": "£300–£800",
+            "work": "Carburettor rebuild or Kugelfischer pump overhaul",
+            "note": ""
+          },
+          {
+            "tier": "Catastrophic (Replacement)",
+            "dealer": "£3,500–£5,500",
+            "specialist": "£2,500–£4,500",
+            "work": "Full engine rebuild or replacement",
+            "note": ""
+          }
+        ],
+        "recommendation": "Have the carburettors or Kugelfischer pump serviced by a specialist every 40,000 miles — a £300–£800 service is far cheaper than the £2,500+ engine rebuild that follows if incorrect fueling causes engine damage. For Tii owners, find a Kugelfischer specialist before you need one.",
+        "cta": {
+          "label": "Compare E10 fuel system parts →",
+          "href": "#"
+        }
+      },
+      {
+        "id": 4,
+        "title": "E10 Body Rust",
+        "affectedModels": "All E10 02 Series (all body styles).",
+        "typicalFailureMileage": "Age-related (40+ years).",
+        "rootCause": "Rust is the E10's biggest enemy — the 02 Series is now 48+ years old, and corrosion is the primary reason cars are taken off the road. Check the sills, floor pans, wheel arches, rear shock towers, front strut towers, and boot floor. The front wings and rear valance are also common rust spots.",
+        "tieredCosts": [
+          {
+            "tier": "Preventative (Repair)",
+            "dealer": "£1,000–£3,000",
+            "specialist": "£500–£2,000",
+            "work": "Rust treatment, welding, panel replacement",
+            "note": ""
+          },
+          {
+            "tier": "Catastrophic (Replacement)",
+            "dealer": "£5,000–£10,000+",
+            "specialist": "£3,000–£8,000+",
+            "work": "Full restoration or shell replacement",
+            "note": ""
+          }
+        ],
+        "recommendation": "Have the sills, floor pans, wheel arches and shock towers inspected thoroughly before purchase — a £500–£2,000 repair is far cheaper than a £3,000+ restoration that follows if rust is ignored. The 2002 Turbo's unique body panels are particularly difficult to replace.",
+        "cta": {
+          "label": "Compare E10 bodywork repair quotes →",
+          "href": "#"
+        }
+      }
+    ]
+  },
+  "replacementCosts": {
+    "h2": "E10 Engine Replacement Costs — By Engine and Condition",
+    "columns": [
+      "Variant",
+      "Engine Code",
+      "Used (Supply)",
+      "Reconditioned (Supply)",
+      "Rebuilt (Supply)",
+      "Labour Hours"
+    ],
+    "rows": [
+      {
+        "variant": "1502 / 1602 (1.6)",
+        "engineCode": "M10B16",
+        "usedSupply": "£800–£1,500",
+        "reconditionedSupply": "£1,800–£3,200",
+        "rebuiltSupply": "£2,500–£4,500",
+        "labourHours": "8–12 hrs"
+      },
+      {
+        "variant": "1802 (1.8)",
+        "engineCode": "M10B18",
+        "usedSupply": "£900–£1,600",
+        "reconditionedSupply": "£2,000–£3,500",
+        "rebuiltSupply": "£2,800–£5,000",
+        "labourHours": "8–12 hrs"
+      },
+      {
+        "variant": "2002 (2.0)",
+        "engineCode": "M10B20",
+        "usedSupply": "£1,000–£2,000",
+        "reconditionedSupply": "£2,200–£4,000",
+        "rebuiltSupply": "£3,200–£5,500",
+        "labourHours": "8–12 hrs"
+      },
+      {
+        "variant": "2002 Ti (2.0 twin carb)",
+        "engineCode": "M10B20",
+        "usedSupply": "£1,200–£2,200",
+        "reconditionedSupply": "£2,500–£4,500",
+        "rebuiltSupply": "£3,500–£6,000",
+        "labourHours": "10–14 hrs"
+      },
+      {
+        "variant": "2002 Tii (2.0 fuel injection)",
+        "engineCode": "M10B20 (23EA)",
+        "usedSupply": "£1,500–£3,000",
+        "reconditionedSupply": "£3,000–£5,500",
+        "rebuiltSupply": "£4,500–£7,000",
+        "labourHours": "10–14 hrs"
+      },
+      {
+        "variant": "2002 Turbo (2.0 turbo)",
+        "engineCode": "M10B20 (22T A)",
+        "usedSupply": "£2,500–£4,500",
+        "reconditionedSupply": "£4,500–£7,500",
+        "rebuiltSupply": "£6,000–£9,500",
+        "labourHours": "12–16 hrs"
+      }
+    ],
+    "note": "No Generation variance from the EM_Proprietary_Data baseline figures — the E10 is a unique generation with no direct successor cost comparison. Costs are derived from specialist market data and tagged [BMW-QUOTE]."
+  },
+  "coreVariants": {
+    "dieselVariants": [],
+    "petrolVariants": [
+      "1502",
+      "1602",
+      "1802",
+      "2002",
+      "2002 Ti",
+      "2002 Tii",
+      "2002 Turbo"
+    ],
+    "scopeNote": "All variants listed are E10 02 Series only. The 1502 (1975–1977) used a detuned 1.6-litre M10 producing 75 bhp. The 1600-2 (1966–1971) was renamed 1602 for the 1971 model year. The 2002 Ti (1968–1972) used twin Solex carburettors; the 2002 Tii (1971–1975) used Kugelfischer mechanical fuel injection. The 2002 Turbo (1974–1975) was BMW's first turbocharged production car. The 02 Series was succeeded by the E21 3 Series in 1975, though the 1502 continued until 1977."
+  },
+  "marketIntelligence": {
+    "mostRequestedEngines": [],
+    "mostRequestedVariants": [],
+    "averageReplacementCost": "",
+    "mostCommonFailures": [],
+    "liveFeed": []
+  },
+  "faq": {
+    "items": []
+  },
+  "trustCta": {
+    "h2": "",
+    "trustPoints": [],
+    "finalCta": "",
+    "ctaButton": {
+      "label": "",
+      "href": "#",
+      "note": ""
+    }
+  }
+}

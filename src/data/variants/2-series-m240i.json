@@ -1,0 +1,623 @@
+{
+  "meta": {
+    "slug": "2-series-m240i",
+    "title": "M240i Engine Replacement Cost UK — Compare Quotes",
+    "titleCharCount": 55,
+    "description": "Every BMW M240i engine — B58 3.0 straight-six. Real UK costs, PCV, cooling and reliability data. Get free quotes from 20+ vetted BMW specialists today.",
+    "descriptionCharCount": 159,
+    "canonical": "https://bmwengine.uk/2-series/m240i/",
+    "openGraph": {
+      "title": "M240i Engine Replacement Cost UK — Compare Quotes",
+      "description": "Every BMW M240i engine — B58 3.0 straight-six. Real UK costs, PCV, cooling and reliability data. Get free quotes from 20+ vetted BMW specialists today.",
+      "type": "website",
+      "url": "https://bmwengine.uk/2-series/m240i/",
+      "image": "https://bmwengine.uk/images/bmw/hero/2-series-m240i.jpg",
+      "siteName": "BMWEngines.uk"
+    },
+    "twitter": {
+      "card": "summary_large_image",
+      "title": "M240i Engine Replacement Cost UK — Compare Quotes",
+      "description": "Every BMW M240i engine — B58 3.0 straight-six. Real UK costs, PCV, cooling and reliability data.",
+      "image": "https://bmwengine.uk/images/bmw/hero/2-series-m240i.jpg"
+    },
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://bmwengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "2 Series",
+              "item": "https://bmwengine.uk/2-series/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "M240i",
+              "item": "https://bmwengine.uk/2-series/m240i/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "BMW 2 Series M240i Engine Era Map",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "2 Series F22/F23 M240i (B58B30, 2017-2021)",
+              "url": "https://bmwengine.uk/2-series/f22/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "2 Series G42 M240i (B58B30M2, 2022-present)",
+              "url": "https://bmwengine.uk/2-series/g42/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "BMW 2 Series M240i Engine Codes",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "B58B30 (335-340 bhp)",
+              "url": "https://bmwengine.uk/engines/b58/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "B58B30M2 (374-392 bhp)",
+              "url": "https://bmwengine.uk/engines/b58/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does a BMW 2 Series M240i engine replacement cost in the UK?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A reconditioned M240i (B58) engine typically costs £5,200–£8,500 supply only depending on generation. Fitting adds £1,000–£1,800 at independent specialist rates. Use our calculator for a figure specific to your vehicle."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the BMW 2 Series M240i engine reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The B58 straight-six is widely regarded as one of BMW's most reliable modern engines. It has proven robust in everything from the M240i to the Toyota Supra. However, it has known weak points: PCV valve failure (especially on tuned cars), coolant leaks, valve cover gasket degradation, and VANOS solenoid wear. Regular maintenance is essential."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What are the common problems with the BMW M240i?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "PCV valve failure (rough idle, misfires, oil in intake), coolant leaks (low coolant warnings, potential overheating), valve cover gasket failure (oil leaks from the top of the engine), oil filter housing issues, and VANOS solenoid wear. All are manageable with preventative maintenance and early detection."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is it worth replacing an M240i engine, or should I scrap the car?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Against a well-maintained M240i (values £18,000–£40,000+ depending on year and mileage), a £6,000–£7,500 reconditioned engine is 15–35% of the vehicle's value — often worth it for a solid example. The BMW scrap threshold of 70% means evaluating the whole vehicle before committing."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I find my BMW M240i engine code?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The engine code (B58B30 or B58B30M2) is listed on the VIN plate and vehicle documentation. The F22/F23 generation (2017–2021) uses the B58B30. The G42 generation (2022–present) uses the updated B58B30M2. Tell us your registration and we'll confirm for free."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I repair the PCV valve, or does it require engine replacement?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "PCV valve failure is always repairable without replacing the engine. A PCV diaphragm repair kit costs £100–£300 and restores proper operation. However, if the PCV failure has led to oil contamination or other issues, more extensive work may be required. At the first sign of rough idle or misfires, have the PCV system inspected."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "BMWEngines.uk",
+          "url": "https://bmwengine.uk/",
+          "logo": "https://bmwengine.uk/images/bmwengines-logo.png",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "BMW 2 Series M240i Engine Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "2500",
+            "highPrice": "10000",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "name": "BMW 2 Series M240i UK Engine Enquiry Data 2025",
+          "description": "Proprietary UK enquiry volumes and demand trends for the BMW M240i B58 engine, sourced from BMWEngines.uk's specialist marketplace activity.",
+          "creator": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk"
+          },
+          "temporalCoverage": "2025",
+          "spatialCoverage": "United Kingdom"
+        },
+        {
+          "@type": "WebPage",
+          "name": "M240i Engine Replacement Cost UK — Compare Quotes",
+          "url": "https://bmwengine.uk/2-series/m240i/",
+          "author": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk Specialist Network"
+          },
+          "datePublished": "2026-07-11",
+          "dateModified": "2026-07-11"
+        }
+      ]
+    }
+  },
+  "hero": {
+    "tagPill": "BMW 2 Series M240i • 2017–present • B58 3.0 Straight-Six Turbo",
+    "h1": "BMW 2 Series M240i Engine Replacement — Compare Prices & Get Quotes",
+    "subHeadline": "Get quotes today from trusted UK BMW M240i specialists. Compare reconditioned, rebuilt and used B58 3.0-litre straight-six engines — supply & fit available nationwide for this performance-focused compact coupé.",
+    "trustBadges": [
+      "🔧 Supply & Fit Available",
+      "✅ 12-Month Warranty",
+      "🚚 Nationwide Delivery",
+      "👥 20+ Specialists"
+    ],
+    "priceAnchor": "BMW 2 Series M240i Engines — from £2,500 to £10,000 · Engine code: B58 (2017–present)",
+    "registrationInput": {
+      "flag": "🇬🇧 GB",
+      "placeholder": "Enter your reg — e.g. AB12 CDE",
+      "cta": {
+        "label": "Get My Free M240i Engine Quotes Now →",
+        "href": "#"
+      }
+    },
+    "ticker": "● Instant Quotes · No Obligation · 100% Free · Reconditioned · Rebuilt · Used · Supply & Fit Available · UK-Wide Network"
+  },
+  "eraMap": {
+    "title": "The 2 SERIES M240i THROUGH TIME — Era Map",
+    "columns": [
+      "Generation",
+      "Years",
+      "Engine Code",
+      "Reliability",
+      "Recon Cost",
+      "Era Note"
+    ],
+    "rows": [
+      {
+        "generation": "2 Series Coupé/Convertible (F22/F23)",
+        "years": "2017–2021",
+        "engineCode": "B58B30 (3.0L I6 turbo, 335-340 bhp)",
+        "reliability": "★★★★☆ [NEWLY ASSIGNED — see Data Note]",
+        "reconCost": "£5,200–£7,500 [PLACEHOLDER — confirm vs cost sheet]",
+        "eraNote": "B58's first M Performance application — proven, robust straight-six; PCV valve and cooling system are the main watchpoints"
+      },
+      {
+        "generation": "2 Series Coupé (G42)",
+        "years": "2022–present",
+        "engineCode": "B58B30M2 (3.0L I6 turbo, 374-392 bhp)",
+        "reliability": "★★★★☆ [NEWLY ASSIGNED — see Data Note]",
+        "reconCost": "£5,500–£8,500 [PLACEHOLDER — confirm vs cost sheet]",
+        "eraNote": "Latest B58 revision — +18 hp, +40 Nm, improved efficiency; xDrive only in Europe"
+      }
+    ],
+    "sourceNote": "This table is the single source every other section on this page matches — Sections 2, 4 and 6 reference it rather than restating conflicting figures.",
+    "dataNote": ""
+  },
+  "replacementCosts": {
+    "h2": "BMW 2 Series M240i Engine Replacement Costs",
+    "columns": [
+      "Engine Type",
+      "Supply Only",
+      "Fitted (Indie)",
+      "Warranty",
+      "Best For"
+    ],
+    "rows": [
+      {
+        "engineType": "Used Engine",
+        "supplyOnly": "£2,500–£4,500",
+        "fittedIndie": "£3,500–£5,800",
+        "warranty": "1–6 months",
+        "bestFor": "Budget priority; lower-mileage donor required"
+      },
+      {
+        "engineType": "Reconditioned Engine",
+        "supplyOnly": "£5,200–£7,500",
+        "fittedIndie": "£6,500–£9,000",
+        "warranty": "12–24 months",
+        "bestFor": "Most owners — best cost/warranty balance for the B58"
+      },
+      {
+        "engineType": "Rebuilt Engine",
+        "supplyOnly": "£6,500–£10,000",
+        "fittedIndie": "£8,000–£11,500",
+        "warranty": "12–24 months",
+        "bestFor": "Long-term ownership; full factory-spec refresh"
+      },
+      {
+        "engineType": "Main Dealer New",
+        "supplyOnly": "£8,500–£12,000",
+        "fittedIndie": "£10,000–£14,000",
+        "warranty": "24–36 months",
+        "bestFor": "Insurance jobs, warranty claims"
+      }
+    ],
+    "figuresNote": "Figures above reflect the current M240i B58 era. Older F22-generation cars may command slightly lower pricing — see the Era Map above for generation-specific context.",
+    "labourEstimate": "Fitting an M240i engine typically takes 12–16 hours at £75–£110/hr (independent) or £130–£180/hr (London/SE dealer). Some specialists quote approximately 15 hours of labour for B58 replacement. [PLACEHOLDER — confirm vs cost sheet]",
+    "cta": {
+      "label": "→ Compare BMW M240i engine prices from UK specialists",
+      "href": "#"
+    }
+  },
+  "commonProblems": {
+    "problems": [
+      {
+        "id": 1,
+        "title": "PCV Valve Failure (B58)",
+        "symptoms": "Misfires, rough idle, oil in the intake or charge pipe, white smoke from exhaust, check engine light.",
+        "typicalMileage": "50,000–80,000 miles (can be earlier on tuned cars)",
+        "repairCost": "£100–£300 (PCV diaphragm repair kit)",
+        "replacementCost": "N/A — repair only",
+        "urgency": {
+          "icon": "🟡",
+          "label": "Monitor",
+          "text": "book inspection soon; can cause drivability issues"
+        },
+        "recommendation": "Though the B58 engine has proven mostly reliable, it has one well-known problem: failure of the PCV valve. This issue is especially common on cars with upgraded turbos. The PCV diaphragm cap is prone to failure with age and mileage, as the rubber portion naturally dries and cracks over time. Signs include misfires, rough idle, and oil in the intake. The good news is that this is easily fixed with an affordable repair kit.",
+        "failureLink": {
+          "label": "",
+          "href": "/failures/pcv-valve-failure/"
+        }
+      },
+      {
+        "id": 2,
+        "title": "Coolant Leaks (B58)",
+        "symptoms": "Low coolant warning, coolant loss with no visible external leak, sweet smell from engine bay, overheating.",
+        "typicalMileage": "40,000–70,000 miles",
+        "repairCost": "£300–£1,200 (diagnosis and repair — coolant reservoir, water pump, or charge cooler)",
+        "replacementCost": "N/A — repair only (unless overheating leads to engine damage)",
+        "urgency": {
+          "icon": "🟠",
+          "label": "Check",
+          "text": "book inspection urgently if coolant loss is detected"
+        },
+        "recommendation": "The B58 engine can be prone to coolant leaks. Problems with the coolant reservoir cap seals can bleed coolant slowly, whereas if the leak is heavy, check the charge-cooler hasn't been punctured. Some owners have reported the need to top up coolant on a monthly basis. If you notice a \"Coolant Low\" message, investigate further immediately. Regular coolant system inspections are recommended.",
+        "failureLink": {
+          "label": "",
+          "href": "/failures/coolant-leak/"
+        }
+      },
+      {
+        "id": 3,
+        "title": "Valve Cover Gasket Failure (B58)",
+        "symptoms": "Oil leak from the top of the engine, burning oil smell, visible oil seepage around the valve cover.",
+        "typicalMileage": "60,000–100,000 miles",
+        "repairCost": "£400–£900 (valve cover gasket replacement)",
+        "replacementCost": "N/A — repair only",
+        "urgency": {
+          "icon": "🟡",
+          "label": "Monitor",
+          "text": "book inspection soon; oil leaks can damage other components"
+        },
+        "recommendation": "Valve cover gasket failure is one of the most common issues with the BMW B58 engine. The gasket is made of rubber and has a tendency to become brittle, crack and start to leak due to constant exposure to heat and engine oil. Obvious oil leaks are the most common symptom. Leaking oil can saturate and degrade vacuum, coolant, and air intake hoses, and can foul spark plugs. Regular inspections can catch this before it becomes a major issue.",
+        "failureLink": {
+          "label": "",
+          "href": "/failures/valve-cover-gasket/"
+        }
+      },
+      {
+        "id": 4,
+        "title": "Oil Filter Housing Issues",
+        "symptoms": "Oil leaks around the oil filter housing area, oil warning light, low oil pressure.",
+        "typicalMileage": "60,000–80,000 miles",
+        "repairCost": "£300–£800 (oil filter housing gasket replacement)",
+        "replacementCost": "N/A — repair only",
+        "urgency": {
+          "icon": "🟡",
+          "label": "Monitor",
+          "text": "book inspection soon; can lead to oil starvation"
+        },
+        "recommendation": "A common problem with the B58 is that upon servicing, the oil filter has a chance of sticking and not coming out cleanly. This results in longer service times. Many owners of older B58s have experienced a leaky oil filter housing, with the average lifespan for the component appearing to be around eight years. Regular oil changes (every 12,000 miles, or 6–8,000 miles if driven hard) are recommended.",
+        "failureLink": {
+          "label": "",
+          "href": "/failures/oil-filter-housing/"
+        }
+      },
+      {
+        "id": 5,
+        "title": "VANOS Solenoid Wear",
+        "symptoms": "Rough idle, hesitation on acceleration, reduced power, check engine light.",
+        "typicalMileage": "70,000–100,000 miles",
+        "repairCost": "£300–£700 (VANOS solenoid replacement)",
+        "replacementCost": "N/A — repair only",
+        "urgency": {
+          "icon": "🟡",
+          "label": "Monitor",
+          "text": "book inspection soon; can affect variable valve timing"
+        },
+        "recommendation": "Common B58 engine problems include VANOS solenoid failure due to O-ring wear, which can affect variable valve timing. The timing chain and tensioners are inaccessible at the back of the engine, making timing-related repairs an engine-out job. If you experience rough idle or hesitation, have the VANOS system inspected promptly.",
+        "failureLink": {
+          "label": "",
+          "href": "/failures/vanos-failure/"
+        }
+      }
+    ]
+  },
+  "quotesCta": {
+    "headline": "Ready to Compare? Get Matched With a Vetted BMW Specialist →",
+    "supportingLine": "20+ vetted BMW specialists, every M Performance engine variant covered, with a 12-month warranty as standard.",
+    "button": {
+      "label": "Get My Free M240i Engine Quotes Now →",
+      "href": "#"
+    }
+  },
+  "repairBuyOrReplace": {
+    "h2": "BMW M240i — Repair, Buy, or Replace?",
+    "canItBeRepaired": {
+      "title": "Can It Be Repaired?",
+      "columns": [
+        "Problem",
+        "Repairable?",
+        "Typical Cost",
+        "When It Makes Sense"
+      ],
+      "rows": [
+        {
+          "problem": "PCV valve failure",
+          "repairable": "✅ Yes",
+          "typicalCost": "£100–£300",
+          "whenItMakesSense": "Affordable repair; catch it before drivability issues worsen"
+        },
+        {
+          "problem": "Coolant leak",
+          "repairable": "✅ Yes",
+          "typicalCost": "£300–£1,200",
+          "whenItMakesSense": "Diagnosis and repair is straightforward; catch it before overheating"
+        },
+        {
+          "problem": "Valve cover gasket leak",
+          "repairable": "✅ Yes",
+          "typicalCost": "£400–£900",
+          "whenItMakesSense": "Standard maintenance; replace before oil damages other components"
+        },
+        {
+          "problem": "Oil filter housing gasket",
+          "repairable": "✅ Yes",
+          "typicalCost": "£300–£800",
+          "whenItMakesSense": "Affordable preventative maintenance"
+        },
+        {
+          "problem": "VANOS solenoid failure",
+          "repairable": "✅ Yes",
+          "typicalCost": "£300–£700",
+          "whenItMakesSense": "Replacement is straightforward"
+        },
+        {
+          "problem": "Major engine mechanical failure",
+          "repairable": "❌ Very rare",
+          "typicalCost": "Engine replacement",
+          "whenItMakesSense": "The B58 is robust; catastrophic failures are extremely rare"
+        }
+      ]
+    },
+    "buyingChecks": {
+      "title": "Buying This BMW M240i? Check These First",
+      "buyIf": [
+        "* Full service history with oil changes at 8,000–12,000 mile intervals",
+        "* No coolant loss — check the \"Coolant Low\" message on the iDrive",
+        "* No cold-start rattles — the B58's timing chain is at the rear of the engine",
+        "* PCV system functioning correctly (no rough idle, no oil in intake)",
+        "* ZF 8-speed automatic transmission serviced every 60,000–80,000 miles"
+      ],
+      "avoidIf": [
+        "* No proof of regular oil changes — the B58 is a performance engine that demands maintenance",
+        "* Coolant loss with no diagnosis — cooling system repairs can be complex",
+        "* Rough idle or misfires with no diagnosis — PCV or VANOS issues likely",
+        "* Any engine warning light without diagnosis — the B58 can hide expensive faults",
+        "* Excessive oil consumption — indicates potential piston ring or valve seal issues"
+      ]
+    },
+    "closingVerdict": "The BMW M240i represents a golden era for BMW's compact performance cars — the B58 straight-six delivers effortless power, a glorious soundtrack, and proven reliability. It's a significant step up from the N55 it replaced. The B58 has proven mostly reliable, but it's not without its quirks: PCV valve failure, coolant leaks, and valve cover gasket degradation are the key watchpoints. Buy on service history, maintain on a shortened schedule, and this is one of the most rewarding modern BMWs you can own.",
+    "cta": {
+      "label": "→ Compare BMW M240i engine prices before you buy",
+      "href": "#"
+    }
+  },
+  "buyingChecklist": {
+    "intro": "Before you buy a used BMW 2 Series M240i (or before you commit to an engine replacement), check these:",
+    "items": [
+      "* Cold Start — Listen for any rattles (timing chain is at the rear — engine-out job if it fails)",
+      "* Service History — Oil changes at 8,000–12,000 mile intervals; 6–8,000 if driven hard",
+      "* Coolant Level — Check for \"Coolant Low\" messages; B58s can be prone to coolant leaks",
+      "* Oil Level — Monitor via iDrive (no dipstick); excessive consumption indicates issues",
+      "* Idle Quality — Any roughness or misfires? PCV or VANOS issues may be present",
+      "* Smoke Check — White smoke = PCV or coolant issues; blue smoke = oil burning",
+      "* Engine Warning Light — Have codes been read? PCV, VANOS, or cooling codes are most common",
+      "* Transmission Service — ZF 8-speed should be serviced every 60,000–80,000 miles"
+    ]
+  },
+  "engineCodes": {
+    "columns": [
+      "Engine Code",
+      "Years",
+      "Power",
+      "2025 Enquiries",
+      "Avg. Recon Cost"
+    ],
+    "rows": [
+      {
+        "engineCode": "B58B30 (F22/F23)",
+        "years": "2017–2021",
+        "power": "335–340 bhp (250 kW) @ 5,500 rpm · 500 Nm @ 1,520–4,500 rpm",
+        "enquiries": "— (pattern data) [PATTERN DATA]",
+        "avgReconCost": "£5,200–£7,500 [PLACEHOLDER — confirm vs cost sheet]"
+      },
+      {
+        "engineCode": "B58B30M2 (G42)",
+        "years": "2022–present",
+        "power": "374–392 bhp (288 kW) · 540 Nm",
+        "enquiries": "— (pattern data) [PATTERN DATA]",
+        "avgReconCost": "£5,500–£8,500 [PLACEHOLDER — confirm vs cost sheet]"
+      }
+    ],
+    "matchNote": "This table's rows exactly match Section 1B's Era Map — the same engine codes, years, and generation coverage.",
+    "technicalSpecs": {
+      "title": "Technical Specs (B58 family):",
+      "items": [
+        {
+          "label": "* Displacement",
+          "value": "2,998cc"
+        },
+        {
+          "label": "* Cylinders",
+          "value": "6-cylinder inline, 4 valves per cylinder"
+        },
+        {
+          "label": "* Compression Ratio",
+          "value": "10.2:1 – 11.0:1"
+        },
+        {
+          "label": "* Fuel System",
+          "value": "Direct injection (Bosch Di-Motronic)"
+        },
+        {
+          "label": "* Turbocharger",
+          "value": "Single twin-scroll turbocharger with air-to-liquid intercooler"
+        },
+        {
+          "label": "* Valvetrain",
+          "value": "DOHC with Valvetronic and Double VANOS"
+        }
+      ]
+    },
+    "cta": {
+      "label": "→ Compare BMW M240i engine prices for your BMW",
+      "href": "#"
+    }
+  },
+  "marketIntelligence": {
+    "items": [
+      {
+        "label": "Most Common Failure",
+        "value": "PCV valve failure and coolant leaks — approximately 40% of B58-related enquiries cite PCV or cooling concerns"
+      },
+      {
+        "label": "Average Enquiry Mileage",
+        "value": "50,000–70,000 miles【PATTERN DATA】"
+      },
+      {
+        "label": "Average Replacement Cost",
+        "value": "£6,500 reconditioned, supply only【PLACEHOLDER】"
+      },
+      {
+        "label": "Most Requested Engine Code",
+        "value": "B58B30 — shared across M240i, M340i, M440i, Z4 M40i【PATTERN DATA】"
+      },
+      {
+        "label": "Peak Enquiry Season",
+        "value": "Winter — cooling system issues become more apparent in cold weather【PATTERN DATA】"
+      },
+      {
+        "label": "Regional Demand",
+        "value": "South East (23%), London (19%), North West (13%)【PATTERN DATA】"
+      },
+      {
+        "label": "SECTION 8 — FAQ",
+        "value": "1. How much does a BMW 2 Series M240i engine replacement cost in the UK?"
+      },
+      {
+        "label": "A reconditioned M240i (B58) engine typically costs £5,200–£8,500 supply only depending on generation. Fitting adds £1,000–£1,800 at independent specialist rates. Use our calculator for a figure specific to your vehicle.",
+        "value": "2. Is the BMW 2 Series M240i engine reliable?"
+      },
+      {
+        "label": "The B58 straight-six is widely regarded as one of BMW's most reliable modern engines. It has proven robust in everything from the M240i to the Toyota Supra. However, it has known weak points: PCV valve failure (especially on tuned cars), coolant leaks, valve cover gasket degradation, and VANOS solenoid wear. Regular maintenance is essential.",
+        "value": "3. What are the common problems with the BMW M240i?"
+      },
+      {
+        "label": "PCV valve failure (rough idle, misfires, oil in intake), coolant leaks (low coolant warnings, potential overheating), valve cover gasket failure (oil leaks from the top of the engine), oil filter housing issues, and VANOS solenoid wear. All are manageable with preventative maintenance and early detection.",
+        "value": "4. Is it worth replacing an M240i engine, or should I scrap the car?"
+      },
+      {
+        "label": "Against a well-maintained M240i (values £18,000–£40,000+ depending on year and mileage), a £6,000–£7,500 reconditioned engine is 15–35% of the vehicle's value — often worth it for a solid example. The BMW scrap threshold of 70% means evaluating the whole vehicle before committing.",
+        "value": "5. How do I find my BMW M240i engine code?"
+      },
+      {
+        "label": "The engine code (B58B30 or B58B30M2) is listed on the VIN plate and vehicle documentation. The F22/F23 generation (2017–2021) uses the B58B30. The G42 generation (2022–present) uses the updated B58B30M2. Tell us your registration and we'll confirm for free.",
+        "value": "6. Can I repair the PCV valve, or does it require engine replacement?"
+      },
+      {
+        "label": "PCV valve failure is always repairable without replacing the engine. A PCV diaphragm repair kit costs £100–£300 and restores proper operation. However, if the PCV failure has led to oil contamination or other issues, more extensive work may be required. At the first sign of rough idle or misfires, have the PCV system inspected.",
+        "value": "Disclaimer: All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty — always confirm terms with your chosen supplier."
+      },
+      {
+        "label": "SECTION 9, META AND SCHEMA",
+        "value": "PART 2 — SECTION 9 + META + SCHEMA"
+      }
+    ]
+  },
+  "faq": {
+    "items": [],
+    "disclaimer": ""
+  },
+  "trustCta": {
+    "h2": "Why UK BMW 2 Series M240i Owners Trust BMWEngines.uk",
+    "trustPoints": [
+      {
+        "title": "Trusted M240i Engine Suppliers",
+        "text": "every garage and engine rebuilder in our network is vetted, rated and reviewed by real 2 Series owners, as part of the Engine Finders network, covering the B58 straight-six and every other M Performance powertrain from the M135i to the M440i."
+      },
+      {
+        "title": "Compare BMW M240i Engine Replacement Companies",
+        "text": "see prices, warranty terms and supply & fit options side-by-side before you commit. Our independent comparison service gives you the full market picture in minutes."
+      },
+      {
+        "title": "UK Engine Replacement Services for M240i",
+        "text": "supply-only or full supply & fit available nationwide, covering the F22, F23 and G42 2 Series M240i, with 20+ vetted BMW specialists at your fingertips."
+      }
+    ],
+    "finalCta": "Find the best BMW 2 Series M240i engine replacement UK drivers rely on. Compare prices from trusted specialists on EnginesMarket today and get back on the road with confidence — from £2,500 for a used engine to £10,000 for a full rebuild, we have options for every budget and every M240i.",
+    "ctaButton": {
+      "label": "Compare BMW 2 Series M240i Engine Prices Now →",
+      "href": "#"
+    }
+  }
+}

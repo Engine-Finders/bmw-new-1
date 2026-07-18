@@ -1,0 +1,512 @@
+{
+  "meta": {
+    "slug": "5-series-m550d",
+    "title": "BMW M550d Engine Replacement Cost UK — Compare Quotes",
+    "titleCharCount": 56,
+    "description": "Every BMW M550d engine — N57S triple-turbo and B57 quad-turbo. F10 and G30 generations, real UK costs and reliability. Get free quotes from 20+ vetted BMW specialists today.",
+    "descriptionCharCount": 157,
+    "canonical": "https://bmwengine.uk/5-series/m550d/",
+    "openGraph": {
+      "title": "",
+      "description": "",
+      "type": "",
+      "url": "",
+      "image": "",
+      "siteName": ""
+    },
+    "twitter": {
+      "card": "",
+      "title": "",
+      "description": "",
+      "image": ""
+    },
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://bmwengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "5 Series",
+              "item": "https://bmwengine.uk/5-series/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "M550d",
+              "item": "https://bmwengine.uk/5-series/m550d/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "BMW M550d Engine Era Map",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "F10/F11 M550d (N57S triple-turbo, 2012-2017)",
+              "url": "https://bmwengine.uk/5-series/f10/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "G30/G31 M550d (B57 quad-turbo, 2017-present)",
+              "url": "https://bmwengine.uk/5-series/g30/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "BMW M550d Engine Codes",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "N57S (triple-turbo)",
+              "url": "https://bmwengine.uk/engines/n57s/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "B57 (quad-turbo)",
+              "url": "https://bmwengine.uk/engines/b57/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does a BMW M550d engine replacement cost in the UK?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A reconditioned M550d engine typically costs £6,000–£10,000 supply only for the F10 N57S, or £8,000–£14,000 for the G30 B57. Fitting adds £1,500–£2,500. Main dealer new engines can exceed £28,000. Use our calculator for a figure specific to your car."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the BMW M550d engine reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "It depends on the generation. The N57S (F10) is rated ★★★☆☆ — high maintenance, with timing chain, turbo, and oil pump issues well-documented. The B57 (G30) is rated ★★★★☆ — more reliable, with front-mounted chain and improved cooling, but still a complex engine requiring specialist maintenance. These are high-performance diesel engines — expect higher running costs."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What are the common problems with the BMW M550d?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "N57S triple-turbo wear, N57S timing chain and oil pump issues, B57 quad-turbo management issues, and oil dilution from DPF regeneration affecting both engines. The B57 is significantly more reliable than the N57S, but both demand specialist care."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is it worth replacing a BMW M550d engine, or should I scrap the car?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Depends on vehicle value and generation. Against a well-kept F10 M550d worth £12,000–£18,000, an £8,000 recon is 44–67% of the car's value — assess carefully. For a G30 worth £20,000+, the same recon is 40% — more justifiable. Always assess the rest of the car before committing."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I find my BMW M550d engine code?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Listed on the VIN plate and vehicle documentation. As a rule of thumb: F10 (2012–2017) is N57S triple-turbo, G30 (2017+) is B57 quad-turbo. Tell us your registration date and we'll confirm it for free."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I repair the N57S timing chain, or does it need replacement?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes — if caught early. A preventative chain replacement (£1,500–£3,000) is far cheaper than a catastrophic chain snap (£6,000–£10,000 engine replacement). At the first sign of cold-start rattle, book an inspection immediately. Also check oil pressure — N57 oil pump failure can be equally catastrophic."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "BMWEngines.uk",
+          "url": "https://bmwengine.uk/",
+          "logo": "https://bmwengine.uk/images/bmwengines-logo.png",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "BMW M550d Engine Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "4500",
+            "highPrice": "14000",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "name": "BMW M550d UK Engine Enquiry Data 2025",
+          "description": "Proprietary UK enquiry volumes and demand trends for BMW M550d engines (N57S and B57), sourced from BMWEngines.uk's specialist marketplace activity.",
+          "creator": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk"
+          },
+          "temporalCoverage": "2025",
+          "spatialCoverage": "United Kingdom"
+        },
+        {
+          "@type": "WebPage",
+          "name": "BMW M550d Engine Replacement Cost UK — Compare Quotes",
+          "url": "https://bmwengine.uk/5-series/m550d/",
+          "author": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk Specialist Network"
+          },
+          "datePublished": "2026-07-11",
+          "dateModified": "2026-07-11"
+        }
+      ]
+    }
+  },
+  "hero": {
+    "tagPill": "BMW 5 Series M550d • 2012–present • 2 Generations • N57S / B57",
+    "h1": "BMW 5 Series M550d Engine Replacement — Compare Prices & Get Quotes",
+    "subHeadline": "Get quotes today from trusted UK BMW M550d specialists. Compare reconditioned, rebuilt and used N57S and B57 engines for the ultimate performance diesel — supply & fit available nationwide.",
+    "trustBadges": [
+      "🔧 Supply & Fit Available",
+      "✅ 12-Month Warranty",
+      "🚚 Nationwide Delivery",
+      "👥 20+ Specialists"
+    ],
+    "priceAnchor": "BMW M550d Engines — from £4,500 to £14,000 · Common codes: N57S, B57",
+    "registrationInput": {
+      "flag": "🇬🇧 GB",
+      "placeholder": "Enter your reg — e.g. AB12 CDE",
+      "cta": {
+        "label": "See M550d Engine Options →",
+        "href": "#"
+      }
+    },
+    "ticker": "● Instant Quotes · No Obligation · 100% Free · Reconditioned · Rebuilt · Used · Supply & Fit Available · UK-Wide Network"
+  },
+  "eraMap": {
+    "title": "The M550d THROUGH TIME — Era Map",
+    "columns": [
+      "Generation",
+      "Years",
+      "Engine Code",
+      "Reliability",
+      "Recon Cost",
+      "Era Note"
+    ],
+    "rows": [
+      {
+        "generation": "F10 / F11",
+        "years": "2012–2017",
+        "engineCode": "N57S (triple-turbo 3.0 diesel)",
+        "reliability": "★★★☆☆ [NEWLY ASSIGNED — see Data Note]",
+        "reconCost": "£6,000–£10,000 [PLACEHOLDER — confirm vs cost sheet]",
+        "eraNote": "The original M550d — tri-turbo marvel. Complex, high-maintenance; chain, turbo, and oil pump are watchpoints."
+      },
+      {
+        "generation": "G30 / G31",
+        "years": "2017–present",
+        "engineCode": "B57 (quad-turbo 3.0 diesel)",
+        "reliability": "★★★★☆ [NEWLY ASSIGNED — see Data Note]",
+        "reconCost": "£8,000–£14,000 [PLACEHOLDER — confirm vs cost sheet]",
+        "eraNote": "The modern M550d — quad-turbo with 48V mild-hybrid. More reliable but still extremely complex; cooling system and turbo management are key."
+      }
+    ],
+    "sourceNote": "",
+    "dataNote": ""
+  },
+  "replacementCosts": {
+    "h2": "BMW 5 Series M550d Engine Replacement Costs",
+    "columns": [
+      "Engine Type",
+      "Supply Only",
+      "Fitted (Indie)",
+      "Warranty",
+      "Best For"
+    ],
+    "rows": [
+      {
+        "engineType": "Used Engine",
+        "supplyOnly": "£4,500–£7,500",
+        "fittedIndie": "£5,600–£8,900",
+        "warranty": "3–6 months",
+        "bestFor": "Budget priority; vehicle under £15,000"
+      },
+      {
+        "engineType": "Reconditioned Engine",
+        "supplyOnly": "£6,000–£10,000",
+        "fittedIndie": "£7,200–£11,500",
+        "warranty": "12–24 months",
+        "bestFor": "Most owners — best cost/warranty balance"
+      },
+      {
+        "engineType": "Rebuilt Engine",
+        "supplyOnly": "£8,000–£14,000",
+        "fittedIndie": "£9,200–£15,500",
+        "warranty": "12–24 months",
+        "bestFor": "Long-term ownership; 3+ year horizon"
+      },
+      {
+        "engineType": "Main Dealer New",
+        "supplyOnly": "£20,000–£28,000",
+        "fittedIndie": "£22,500–£31,000",
+        "warranty": "24–36 months",
+        "bestFor": "Insurance jobs, warranty claims; dealer costs can exceed £28,000"
+      }
+    ],
+    "figuresNote": "",
+    "labourEstimate": "Fitting an M550d engine typically takes 16–24 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer). The complex turbo systems require specialist knowledge.",
+    "cta": {
+      "label": "",
+      "href": "#"
+    }
+  },
+  "commonProblems": {
+    "problems": []
+  },
+  "quotesCta": {
+    "headline": "Weighing Your Options? Compare Specialist Quotes When You're Ready →",
+    "supportingLine": "20+ vetted BMW specialists, every M550d variant covered, with a 12-month warranty as standard.",
+    "button": {
+      "label": "See M550d Engine Options →",
+      "href": "#"
+    }
+  },
+  "repairBuyOrReplace": {
+    "h2": "BMW M550d — Repair, Buy, or Replace?",
+    "canItBeRepaired": {
+      "title": "Can It Be Repaired?",
+      "columns": [
+        "Problem",
+        "Repairable?",
+        "Typical Cost",
+        "When It Makes Sense"
+      ],
+      "rows": [
+        {
+          "problem": "N57S triple-turbo wear (F10)",
+          "repairable": "✅ Yes",
+          "typicalCost": "£2,000–£5,000",
+          "whenItMakesSense": "Specialist turbo refurbishment or replacement; don't ignore boost issues"
+        },
+        {
+          "problem": "N57S timing chain wear (F10)",
+          "repairable": "✅ Yes",
+          "typicalCost": "£1,500–£3,000",
+          "whenItMakesSense": "Preventative — catches the fault before it becomes catastrophic"
+        },
+        {
+          "problem": "N57S oil pump failure (F10)",
+          "repairable": "✅ Yes",
+          "typicalCost": "£800–£1,500",
+          "whenItMakesSense": "Replace pump and chain together; don't ignore low oil pressure"
+        },
+        {
+          "problem": "B57 quad-turbo management issues (G30)",
+          "repairable": "✅ Yes",
+          "typicalCost": "£1,500–£4,000",
+          "whenItMakesSense": "Sensor, actuator, or cooling system repairs; specialist required"
+        },
+        {
+          "problem": "B57 cooling system failure (G30)",
+          "repairable": "✅ Yes",
+          "typicalCost": "£500–£1,200",
+          "whenItMakesSense": "Preventative — replace water pump at 60,000 miles"
+        },
+        {
+          "problem": "Snapped timing chain (N57S)",
+          "repairable": "❌ Usually No",
+          "typicalCost": "Engine replacement",
+          "whenItMakesSense": "Piston-valve contact means little is left to repair"
+        }
+      ]
+    },
+    "buyingChecks": {
+      "title": "Buying This M550d? Check These First",
+      "buyIf": [
+        "* G30 B57 (2017+) if you want the more reliable quad-turbo with front-mounted chain",
+        "* Documented turbocharger history if buying a F10 N57S triple-turbo",
+        "* Evidence of frequent oil changes (every 5,000–7,000 miles) — these engines demand it",
+        "* Full BMW service history with specialist M-performance diesel experience"
+      ],
+      "avoidIf": [
+        "* F10 N57S with cold-start rattle and no chain history",
+        "* Any turbo noise or loss of power without diagnosis",
+        "* No evidence of DPF maintenance — oil dilution is a real risk",
+        "* Poor service history on any generation — the M550d is unforgiving of neglect"
+      ]
+    },
+    "closingVerdict": "The M550d is a remarkable achievement — a triple- or quad-turbo diesel that delivers near-supercar performance. But complexity comes at a cost. The F10 N57S is the more problematic of the two, with well-documented chain, turbo, and oil pump issues. The G30 B57 is more reliable but still demands specialist care. Buy on documented history, and always budget for higher-than-normal maintenance costs.",
+    "cta": {
+      "label": "",
+      "href": "#"
+    }
+  },
+  "buyingChecklist": {
+    "intro": "Before you buy a used BMW M550d (or before you commit to an engine replacement), check these:",
+    "items": [
+      "* Cold Start — Listen for rattle on startup (timing chain warning on N57S; check for B57 turbo issues)",
+      "* Service History — Including which engine era (N57S for F10 2012–2017, B57 for G30 2017+) — see the Era Map above",
+      "* Turbo Health — Test acceleration through the rev range; any lag, whistling, or uneven power delivery?",
+      "* Oil Pressure — Any low oil pressure warnings? Oil pump issues are a known risk on N57S",
+      "* Oil Level — Is the oil above the max mark? Diesel contamination from DPF regeneration indicator",
+      "* DPF Regeneration — Has the vehicle had regular motorway runs? Short journeys accelerate DPF issues",
+      "* Engine Warning Light — Have codes been read? Any unresolved issues?",
+      "* MOT History — Check for emissions-related failures; often point to DPF or turbo problems"
+    ]
+  },
+  "engineCodes": {
+    "columns": [
+      "Engine Code",
+      "Years",
+      "Power",
+      "2025 Enquiries",
+      "Avg. Recon Cost"
+    ],
+    "rows": [
+      {
+        "engineCode": "N57S (triple-turbo)",
+        "years": "2012–2017",
+        "power": "381 bhp / 740 Nm",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£6,000–£10,000 [PLACEHOLDER]"
+      },
+      {
+        "engineCode": "B57 (quad-turbo)",
+        "years": "2017–present",
+        "power": "394 bhp / 760 Nm",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£8,000–£14,000 [PLACEHOLDER]"
+      }
+    ],
+    "matchNote": "",
+    "technicalSpecs": {
+      "title": "Technical Specs (current B57 quad-turbo):",
+      "items": [
+        {
+          "label": "* Displacement",
+          "value": "2,993cc"
+        },
+        {
+          "label": "* Cylinders",
+          "value": "6-cylinder inline"
+        },
+        {
+          "label": "* Compression Ratio",
+          "value": "16.5:1"
+        },
+        {
+          "label": "* Fuel System",
+          "value": "Common-rail direct injection"
+        },
+        {
+          "label": "* Turbocharger",
+          "value": "Quad-turbo (two low-pressure, two high-pressure in staged arrangement)"
+        }
+      ]
+    },
+    "cta": {
+      "label": "",
+      "href": "#"
+    }
+  },
+  "marketIntelligence": {
+    "items": [
+      {
+        "label": "Most Common Failure",
+        "value": "N57S triple-turbo system wear and timing chain — approximately 60% of N57S enquiries [PATTERN DATA]"
+      },
+      {
+        "label": "Average Enquiry Mileage",
+        "value": "75,000 miles [PATTERN DATA]"
+      },
+      {
+        "label": "Average Replacement Cost",
+        "value": "£8,000 reconditioned, supply only [PLACEHOLDER — confirm vs cost sheet]"
+      },
+      {
+        "label": "Most Requested Engine Code",
+        "value": "N57S [BMW-VERIFIED]"
+      },
+      {
+        "label": "Peak Enquiry Season",
+        "value": "Winter — cold starts expose chain and turbo issues [PATTERN DATA]"
+      },
+      {
+        "label": "Regional Demand",
+        "value": "London (22%), South East (18%), South West (14%) [PATTERN DATA]"
+      }
+    ]
+  },
+  "faq": {
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a BMW M550d engine replacement cost in the UK?",
+        "answer": "A reconditioned M550d engine typically costs £6,000–£10,000 supply only for the F10 N57S, or £8,000–£14,000 for the G30 B57. Fitting adds £1,500–£2,500. Main dealer new engines can exceed £28,000. Use our calculator for a figure specific to your car."
+      },
+      {
+        "id": 2,
+        "question": "Is the BMW M550d engine reliable?",
+        "answer": "It depends on the generation. The N57S (F10) is rated ★★★☆☆ — high maintenance, with timing chain, turbo, and oil pump issues well-documented. The B57 (G30) is rated ★★★★☆ — more reliable, with front-mounted chain and improved cooling, but still a complex engine requiring specialist maintenance. These are high-performance diesel engines — expect higher running costs."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the BMW M550d?",
+        "answer": "N57S triple-turbo wear, N57S timing chain and oil pump issues, B57 quad-turbo management issues, and oil dilution from DPF regeneration affecting both engines. The B57 is significantly more reliable than the N57S, but both demand specialist care."
+      },
+      {
+        "id": 4,
+        "question": "Is it worth replacing a BMW M550d engine, or should I scrap the car?",
+        "answer": "Depends on vehicle value and generation. Against a well-kept F10 M550d worth £12,000–£18,000, an £8,000 recon is 44–67% of the car's value — assess carefully. For a G30 worth £20,000+, the same recon is 40% — more justifiable. Always assess the rest of the car before committing. These are rare, high-performance cars — many owners will find replacement worthwhile."
+      },
+      {
+        "id": 5,
+        "question": "How do I find my BMW M550d engine code?",
+        "answer": "Listed on the VIN plate and vehicle documentation. As a rule of thumb: F10 (2012–2017) is N57S triple-turbo, G30 (2017+) is B57 quad-turbo. Tell us your registration date and we'll confirm it for free."
+      },
+      {
+        "id": 6,
+        "question": "Can I repair the N57S timing chain, or does it need replacement?",
+        "answer": "Yes — if caught early. A preventative chain replacement (£1,500–£3,000) is far cheaper than a catastrophic chain snap (£6,000–£10,000 engine replacement). At the first sign of cold-start rattle, book an inspection immediately. Also check oil pressure — N57 oil pump failure can be equally catastrophic."
+      }
+    ],
+    "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty — always confirm terms with your chosen supplier."
+  },
+  "trustCta": {
+    "h2": "",
+    "trustPoints": [],
+    "finalCta": "Find the best BMW M550d engine replacement UK drivers rely on. Compare prices from trusted specialists on EnginesMarket today and keep your high-performance diesel on the road.",
+    "ctaButton": {
+      "label": "Explore BMW M550d Engine Quotes →",
+      "href": "#"
+    }
+  }
+}

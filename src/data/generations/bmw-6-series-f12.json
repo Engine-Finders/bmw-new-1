@@ -1,0 +1,439 @@
+{
+  "meta": {
+    "slug": "bmw-6-series-f12",
+    "title": "BMW 6 Series F12 Engines — The Complete UK Guide",
+    "titleCharCount": 48,
+    "description": "",
+    "descriptionCharCount": 0,
+    "jsonLd": {}
+  },
+  "internalDeclarations": {
+    "checkA": "",
+    "checkB": "",
+    "authorityModelMode": ""
+  },
+  "hero": {
+    "tagPill": "BMW 6 Series F12 • Convertible • 2011–2018",
+    "h1": "BMW 6 Series F12 Engines — The Complete UK Guide",
+    "subHeadline": "Every engine fitted to the F12 Convertible — from the 3.0-litre N55 straight-six to the 4.4-litre twin-turbo V8 and the S63-powered M6. Real UK costs and honest reliability data for BMW's luxurious grand tourer convertible. Backed by 120+ real UK F12 enquiries in 2025 [BMW-VERIFIED].",
+    "trustStrip": [
+      {
+        "icon": "📊",
+        "label": "120+ F12 Enquiries (2025) [BMW-VERIFIED]"
+      },
+      {
+        "icon": "🔧",
+        "label": "Convertible"
+      },
+      {
+        "icon": "📖",
+        "label": "6+ Engine Families"
+      },
+      {
+        "icon": "🏆",
+        "label": "Part of Engine Finders"
+      }
+    ],
+    "primaryCta": {
+      "label": "Explore F12 Engines →",
+      "href": "#"
+    },
+    "dataIntegrityNote": ""
+  },
+  "engineDatabase": {
+    "h2": "BMW 6 Series F12 Engine Codes — The Complete Database",
+    "subHeadline": "Every engine fitted to the F12 Convertible specifically — spanning the N55 straight-six petrol, the N57 straight-six diesel, the N63 V8 petrol, the S63 V8 in the M6, and their LCI updates.",
+    "columns": [
+      "Engine Code",
+      "Family",
+      "Fuel",
+      "Displacement",
+      "Power",
+      "Years (F12)",
+      "Variants (badges)",
+      "Reliability",
+      "2025 Enquiries",
+      "Avg. Recon Cost"
+    ],
+    "engines": [
+      {
+        "engineCode": "N55B30A",
+        "family": "N55",
+        "fuel": "Petrol",
+        "displacement": "3.0L (2979cc)",
+        "power": "320 PS (235 kW) / 315 hp",
+        "years": "03.2011–2018",
+        "variants": "640i, 640i xDrive",
+        "reliability": "★★★★☆ [PROVISIONAL — pending dedicated Engine Page]",
+        "enquiries": "540 (B58) [BMW-VERIFIED]",
+        "avgReconCost": "£4,000–£7,000 [BMW-QUOTE]"
+      },
+      {
+        "engineCode": "N63B44A",
+        "family": "N63",
+        "fuel": "Petrol",
+        "displacement": "4.4L (4395cc)",
+        "power": "407–408 PS (300 kW) / 401–408 hp",
+        "years": "03.2011–2014",
+        "variants": "650i, 650i xDrive",
+        "reliability": "★★★☆☆ [PROVISIONAL — pending dedicated Engine Page]",
+        "enquiries": "440 [BMW-VERIFIED] (N63)",
+        "avgReconCost": "£6,000–£10,000 [BMW-QUOTE]"
+      },
+      {
+        "engineCode": "N63B44B (LCI)",
+        "family": "N63",
+        "fuel": "Petrol",
+        "displacement": "4.4L (4395cc)",
+        "power": "450 PS (330 kW) / 444 hp",
+        "years": "2014–2018",
+        "variants": "650i, 650i xDrive",
+        "reliability": "★★★☆☆ [PROVISIONAL — pending dedicated Engine Page]",
+        "enquiries": "440 [BMW-VERIFIED] (N63)",
+        "avgReconCost": "£6,000–£10,000 [BMW-QUOTE]"
+      },
+      {
+        "engineCode": "N57D30B",
+        "family": "N57",
+        "fuel": "Diesel",
+        "displacement": "3.0L (2993cc)",
+        "power": "313 PS (230 kW) / 309 hp",
+        "years": "09.2011–2018",
+        "variants": "640d, 640d xDrive",
+        "reliability": "★★★★☆ [PROVISIONAL — pending dedicated Engine Page]",
+        "enquiries": "830 [BMW-VERIFIED] (N57)",
+        "avgReconCost": "£4,500–£7,500 [BMW-QUOTE]"
+      },
+      {
+        "engineCode": "S63B44B",
+        "family": "S63",
+        "fuel": "Petrol",
+        "displacement": "4.4L (4395cc)",
+        "power": "560 PS (412 kW) / 552 hp",
+        "years": "01.2012–2018",
+        "variants": "M6 Convertible",
+        "reliability": "★★★★☆ [PROVISIONAL — pending dedicated Engine Page]",
+        "enquiries": "410 [BMW-VERIFIED] (S63)",
+        "avgReconCost": "£9,000–£15,000 [BMW-QUOTE]"
+      }
+    ],
+    "confidenceScore": {
+      "title": "How confident are these ratings?",
+      "text": "All ratings are [PROVISIONAL] pending dedicated Engine Pages. The N55 straight-six is a proven, reliable engine — it's been in production since 2009 and powers numerous BMW models. The N57 diesel six is also well-regarded for its refinement and durability. The N63 V8 has a reputation for higher running costs — valve stem seal wear is a known issue. The S63 V8 in the M6 is generally reliable, though rod bearing wear and turbocharger issues have been reported on early examples."
+    },
+    "dataCorrections": []
+  },
+  "overview": {
+    "h2": "BMW 6 Series F12 — Overview",
+    "intro": "The F12 is the convertible body of BMW's third-generation 6 Series, unveiled at the 2011 Shanghai Auto Show. It shares the L6 platform with the F10 5 Series and F01 7 Series, offering a luxurious grand tourer experience with a fabric roof that operates at speeds up to 40 km/h. The engine line-up featured a 3.0-litre straight-six petrol (640i), a 3.0-litre straight-six diesel (640d), a 4.4-litre V8 petrol (650i), and the S63 V8-powered M6. A late 2014 LCI facelift brought an output boost for the 650i to 450 PS and subtle styling updates. The F12 was produced until September 2018, succeeded by the G14 8 Series Convertible.",
+    "keyFacts": "Platform: BMW L6 (shared with F10, F01) • Predecessor: E64 6 Series Convertible • Successor: G14 8 Series Convertible • Sibling body styles in this generation: F13 Coupé, F06 Gran Coupé.",
+    "marketIntelligenceLine": "The F12 Convertible generated 120+ real UK engine enquiries in 2025 [BMW-VERIFIED], concentrated on the 640i petrol and 640d diesel as the range reaches affordable used-car territory."
+  },
+  "bestWorstEngines": {
+    "items": [
+      {
+        "slot": "Best Petrol Overall",
+        "engine": "N55B30A (640i, 3.0L straight-six, 320 PS)",
+        "quote": "BMW's N55 single-turbo straight-six is a proven, reliable engine — smooth, responsive, and with a strong torque curve from 1,300 rpm. The 640i offers effortless grand touring performance without the V8's running costs.",
+        "whoItsFor": "buyers who want six-cylinder refinement with sensible running costs."
+      },
+      {
+        "slot": "Best Diesel Overall",
+        "engine": "N57D30B (640d, 3.0L straight-six diesel, 313 PS)",
+        "quote": "The N57 straight-six diesel is a masterpiece of refinement and efficiency — 313 PS, 630 Nm of torque, and genuine 40+ mpg capability. The 640d offers the best blend of performance and economy in the F12 range.",
+        "whoItsFor": "buyers who want effortless torque and long-distance cruising capability."
+      },
+      {
+        "slot": "Highest Risk",
+        "engine": "N63B44A/B (650i, 4.4L V8, 407–450 PS)",
+        "quote": "The N63 'hot-vee' V8 is a spectacular engine but has a reputation for heat-related failures — valve stem seal wear is the most common issue, leading to blue smoke on startup. The LCI's N63B44B is improved but still requires careful maintenance.",
+        "whoItsFor": "650i buyers with deep pockets and full service history."
+      },
+      {
+        "slot": "Most Expensive Failure",
+        "engine": "S63B44B (M6 Convertible, 4.4L V8, 560 PS)",
+        "quote": "The S63 V8 in the M6 is the most powerful and most expensive engine in the F12 range — rod bearing wear is a known issue on early examples, and a full replacement can exceed £15,000. The M6 is a future classic, but it comes with M-car running costs.",
+        "whoItsFor": "collectors and enthusiasts who want the ultimate F12 experience."
+      },
+      {
+        "slot": "Best Value",
+        "engine": "N57D30B (640d, 3.0L diesel, 313 PS)",
+        "quote": "The 640d offers near-650i performance with significantly lower running costs — 313 PS, 630 Nm of torque, and excellent fuel economy. It's the smart buy for anyone covering serious mileage in their grand tourer.",
+        "whoItsFor": "buyers who want effortless performance with sensible economy."
+      },
+      {
+        "slot": "Most Overlooked",
+        "engine": "N55B30A (640i, 3.0L petrol, 320 PS)",
+        "quote": "The 640i is often overlooked in favour of the V8 650i or the diesel 640d — but it's the sweet spot for many buyers. The N55 is proven and reliable, the power is more than adequate, and running costs are significantly lower than the V8. It's the most balanced engine in the F12 range.",
+        "whoItsFor": "buyers who want six-cylinder refinement without diesel clatter or V8 bills."
+      }
+    ]
+  },
+  "ownershipEconomics": {
+    "h2": "BMW 6 Series F12 — Ownership Economics",
+    "columns": [
+      "Engine",
+      "Typical Mileage",
+      "Common Major Failure",
+      "Repair Cost (Specialist)",
+      "Replacement Cost (Recon)",
+      "Ownership Verdict"
+    ],
+    "rows": [
+      {
+        "engine": "N55 (640i)",
+        "typicalMileage": "50k–100k",
+        "commonMajorFailure": "HPFP, VANOS, oil leaks",
+        "repairCostSpecialist": "£600–£2,000",
+        "replacementCostRecon": "£4,000–£7,000",
+        "ownershipVerdict": "Solid Choice — proven N55, reliable."
+      },
+      {
+        "engine": "N57 (640d)",
+        "typicalMileage": "80k–150k",
+        "commonMajorFailure": "EGR cooler, DPF",
+        "repairCostSpecialist": "£600–£2,000",
+        "replacementCostRecon": "£4,500–£7,500",
+        "ownershipVerdict": "Best Diesel — refined and durable."
+      },
+      {
+        "engine": "N63 (650i)",
+        "typicalMileage": "40k–80k",
+        "commonMajorFailure": "Valve stem seals, turbo coolant",
+        "repairCostSpecialist": "£1,500–£4,000",
+        "replacementCostRecon": "£6,000–£10,000",
+        "ownershipVerdict": "High Cost — spectacular V8, costly to maintain."
+      },
+      {
+        "engine": "S63 (M6)",
+        "typicalMileage": "30k–70k",
+        "commonMajorFailure": "Rod bearings, throttle actuators",
+        "repairCostSpecialist": "£2,000–£5,000",
+        "replacementCostRecon": "£9,000–£15,000",
+        "ownershipVerdict": "Performance Icon — budget for maintenance."
+      }
+    ],
+    "economicsRule": {
+      "title": "The F12 rule",
+      "text": "A £4,500–£7,500 N57 recon against a £8,000–£25,000 F12 sits at 18–94% of the car's value【EM-VERIFIED】. On a sub-£10,000 example, that brushes our 70% BMW threshold — we'll honestly tell you to walk away. Against a well-kept £15,000+ example, the same recon drops to 30–50% — a repair decision, not a financial one. Value the car first. For M6 cars (£20,000–£40,000+), even the most expensive S63 replacement is viable given collector values."
+    },
+    "keyTakeaways": [
+      {
+        "question": "Which F12 Costs Least To Own?",
+        "answer": "N57 640d — excellent fuel economy, fewer major failure modes than the V8s."
+      },
+      {
+        "question": "Which F12 Costs Most To Own?",
+        "answer": "S63 M6 — rod bearings, V8 complexity and M-car running costs add up fast."
+      },
+      {
+        "question": "Which F12 Is Best Value?",
+        "answer": "N55 640i — proven six-cylinder reliability, strong performance, and lower running costs than the V8."
+      }
+    ]
+  },
+  "commonProblems": {
+    "problems": [
+      {
+        "id": 1,
+        "title": "N63 V8 Valve Stem Seal Wear",
+        "affectedModels": "F12 650i, 650i xDrive (2011–2018, N63 engine).",
+        "typicalFailureMileage": "40,000–80,000 miles.",
+        "rootCause": "The N63 'hot-vee' design places the turbochargers inside the V of the engine, leading to heat-related valve stem seal hardening. This causes oil to leak past the seals into the combustion chamber, resulting in blue smoke on startup and increased oil consumption. BMW issued technical service bulletins for valve seal replacement.",
+        "tieredCosts": [
+          {
+            "tier": "Preventative (Repair)",
+            "dealer": "£3,000–£5,000",
+            "specialist": "£1,500–£3,500",
+            "work": "Valve stem seal replacement (specialist tool required)",
+            "note": ""
+          },
+          {
+            "tier": "Catastrophic (Replacement)",
+            "dealer": "£10,000–£14,000",
+            "specialist": "£6,000–£10,000",
+            "work": "Full reconditioned N63 engine replacement",
+            "note": ""
+          }
+        ],
+        "recommendation": "If you're buying an N63-powered F12 650i, budget for valve stem seal replacement immediately unless there's documented proof it's already been done — £1,500–£3,500 now is far cheaper than the £6,000+ engine replacement that follows if ignored. Blue smoke on startup is the classic warning sign — don't ignore it.",
+        "cta": {
+          "label": "Compare N63 engine prices for your F12 650i →",
+          "href": "#"
+        }
+      },
+      {
+        "id": 2,
+        "title": "S63 Rod Bearing Wear (M6)",
+        "affectedModels": "F12 M6 Convertible (2012–2018, S63 engine).",
+        "typicalFailureMileage": "30,000–70,000 miles.",
+        "rootCause": "Early S63 engines can suffer from rod bearing wear — a known issue shared with the S65 V8 in the E9x M3. Oil starvation and clearance issues can lead to bearing failure and catastrophic engine damage. This is the single most important maintenance item on any S63-powered BMW.",
+        "tieredCosts": [
+          {
+            "tier": "Preventative (Repair)",
+            "dealer": "£3,000–£5,000",
+            "specialist": "£2,000–£3,500",
+            "work": "Rod bearing replacement with upgraded bearings",
+            "note": ""
+          },
+          {
+            "tier": "Catastrophic (Replacement)",
+            "dealer": "£14,000–£20,000",
+            "specialist": "£9,000–£15,000",
+            "work": "Full S63 engine replacement",
+            "note": ""
+          }
+        ],
+        "recommendation": "If you're buying an F12 M6, budget for rod bearing replacement immediately unless there's documented proof it's already been done — £2,000–£3,500 now is dramatically cheaper than the £9,000+ engine replacement that follows a bearing failure. This is not optional; it's the defining maintenance item of the S63 V8.",
+        "cta": {
+          "label": "Compare S63 engine prices for your F12 M6 →",
+          "href": "#"
+        }
+      },
+      {
+        "id": 3,
+        "title": "N55 HPFP & VANOS Issues",
+        "affectedModels": "F12 640i, 640i xDrive (2011–2018, N55 engine).",
+        "typicalFailureMileage": "50,000–100,000 miles.",
+        "rootCause": "The N55 can suffer from high-pressure fuel pump (HPFP) failure and VANOS solenoid issues — though less common than on the earlier N54. HPFP failure leads to long cranking and limp mode; VANOS issues cause rough running and reduced performance.",
+        "tieredCosts": [
+          {
+            "tier": "Preventative (Repair)",
+            "dealer": "£1,200–£2,000",
+            "specialist": "£700–£1,500",
+            "work": "HPFP and VANOS solenoid replacement",
+            "note": ""
+          },
+          {
+            "tier": "Catastrophic (Replacement)",
+            "dealer": "£6,000–£9,000",
+            "specialist": "£4,000–£7,000",
+            "work": "Full reconditioned N55 engine replacement",
+            "note": ""
+          }
+        ],
+        "recommendation": "Have the HPFP and VANOS system inspected at 60,000 miles — a £700–£1,500 preventative service is far cheaper than the £4,000+ replacement that follows a catastrophic failure. If you experience long cranking on startup, investigate immediately.",
+        "cta": {
+          "label": "Compare N55 engine prices for your F12 640i →",
+          "href": "#"
+        }
+      },
+      {
+        "id": 4,
+        "title": "N57 Diesel EGR Cooler & Emission System Issues",
+        "affectedModels": "F12 640d, 640d xDrive (2011–2018, N57 engine).",
+        "typicalFailureMileage": "60,000–120,000 miles.",
+        "rootCause": "The N57 diesel's EGR cooler can develop internal leaks, allowing coolant to enter the exhaust system. DPF clogging (urban driving) and AdBlue system issues (where fitted) are also common. BMW has issued recalls for EGR cooler issues on some models.",
+        "tieredCosts": [
+          {
+            "tier": "Preventative (Repair)",
+            "dealer": "£800–£1,500 (recall may cover)",
+            "specialist": "£500–£1,000",
+            "work": "EGR cooler replacement, DPF clean, AdBlue system service",
+            "note": ""
+          },
+          {
+            "tier": "Catastrophic (Replacement)",
+            "dealer": "£6,000–£9,000",
+            "specialist": "£4,500–£7,500",
+            "work": "Full engine replacement if coolant contamination caused damage",
+            "note": ""
+          }
+        ],
+        "recommendation": "Check your N57 F12's VIN against any outstanding EGR cooler recalls — if affected, the repair is free. For DPF health, ensure regular motorway driving to allow regeneration cycles to complete. Have the emission system inspected at 60,000 miles.",
+        "cta": {
+          "label": "Compare N57 diesel engine prices for your F12 640d →",
+          "href": "#"
+        }
+      }
+    ]
+  },
+  "replacementCosts": {
+    "h2": "F12 Engine Replacement Costs — By Engine and Condition",
+    "columns": [
+      "Variant",
+      "Engine Code",
+      "Used (Supply)",
+      "Reconditioned (Supply)",
+      "Rebuilt (Supply)",
+      "Labour Hours"
+    ],
+    "rows": [
+      {
+        "variant": "640i / 640i xDrive (3.0 petrol)",
+        "engineCode": "N55B30A",
+        "usedSupply": "£2,000–£4,000",
+        "reconditionedSupply": "£4,000–£7,000",
+        "rebuiltSupply": "£5,500–£8,500",
+        "labourHours": "12–16 hrs"
+      },
+      {
+        "variant": "650i / 650i xDrive (4.4 V8, pre-LCI)",
+        "engineCode": "N63B44A",
+        "usedSupply": "£3,500–£6,000",
+        "reconditionedSupply": "£6,000–£10,000",
+        "rebuiltSupply": "£8,000–£14,000",
+        "labourHours": "16–22 hrs"
+      },
+      {
+        "variant": "650i / 650i xDrive (4.4 V8, LCI)",
+        "engineCode": "N63B44B",
+        "usedSupply": "£3,500–£6,000",
+        "reconditionedSupply": "£6,000–£10,000",
+        "rebuiltSupply": "£8,000–£14,000",
+        "labourHours": "16–22 hrs"
+      },
+      {
+        "variant": "640d / 640d xDrive (3.0 diesel)",
+        "engineCode": "N57D30B",
+        "usedSupply": "£2,500–£4,500",
+        "reconditionedSupply": "£4,500–£7,500",
+        "rebuiltSupply": "£6,500–£9,500",
+        "labourHours": "12–16 hrs"
+      },
+      {
+        "variant": "M6 Convertible (4.4 V8)",
+        "engineCode": "S63B44B",
+        "usedSupply": "£5,000–£9,000",
+        "reconditionedSupply": "£9,000–£15,000",
+        "rebuiltSupply": "£12,000–£18,000",
+        "labourHours": "18–24 hrs"
+      }
+    ],
+    "note": "No Generation variance from the EM_Proprietary_Data baseline figures — F12 Convertible shares the L6 platform with the F10 5 Series, with similar engine-bay access, so costs are inherited directly per the Authority Model, with no divergence note required."
+  },
+  "coreVariants": {
+    "dieselVariants": [
+      "640d",
+      "640d xDrive"
+    ],
+    "petrolVariants": [
+      "640i",
+      "640i xDrive",
+      "650i",
+      "650i xDrive",
+      "M6 Convertible"
+    ],
+    "scopeNote": "All variants listed are F12 Convertible only. F13 Coupé and F06 Gran Coupé share the same engine families but are covered on their own Generation Pages. The LCI (late 2014) brought the N63B44B with 450 PS for the 650i. M6 Convertible features the S63B44B V8 with 560 PS."
+  },
+  "marketIntelligence": {
+    "mostRequestedEngines": [],
+    "mostRequestedVariants": [],
+    "averageReplacementCost": "",
+    "mostCommonFailures": [],
+    "liveFeed": []
+  },
+  "faq": {
+    "items": []
+  },
+  "trustCta": {
+    "h2": "",
+    "trustPoints": [],
+    "finalCta": "",
+    "ctaButton": {
+      "label": "",
+      "href": "#",
+      "note": ""
+    }
+  }
+}

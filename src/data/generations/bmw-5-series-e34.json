@@ -1,0 +1,568 @@
+{
+  "meta": {
+    "slug": "bmw-5-series-e34",
+    "title": "BMW 5 Series E34 Engines — The Complete UK Guide",
+    "titleCharCount": 48,
+    "description": "",
+    "descriptionCharCount": 0,
+    "jsonLd": {}
+  },
+  "internalDeclarations": {
+    "checkA": "",
+    "checkB": "",
+    "authorityModelMode": ""
+  },
+  "hero": {
+    "tagPill": "BMW 5 Series E34 • Saloon/Estate • 1987–1996",
+    "h1": "BMW 5 Series E34 Engines — The Complete UK Guide",
+    "subHeadline": "Every engine fitted to the E34 5 Series — from the 1.8-litre M40 four-cylinder to the 3.8-litre S38 in the M5, including the M20, M30, M50 straight-sixes, the M60 V8 and the M51 diesel. Real UK costs, honest failure data, and BMW's first V8-powered 5 Series. Backed by genuine UK specialist data for 2025.",
+    "trustStrip": [
+      {
+        "icon": "📊",
+        "label": "E34 Enquiries (2025) — pattern data"
+      },
+      {
+        "icon": "🔧",
+        "label": "Saloon/Estate"
+      },
+      {
+        "icon": "📖",
+        "label": "12+ Engine Codes"
+      },
+      {
+        "icon": "🏆",
+        "label": "Part of Engine Finders"
+      }
+    ],
+    "primaryCta": {
+      "label": "Explore E34 Engines →",
+      "href": "#"
+    },
+    "dataIntegrityNote": ""
+  },
+  "engineDatabase": {
+    "h2": "BMW 5 Series E34 Engine Codes — The Complete Database",
+    "subHeadline": "Every engine fitted to the E34 5 Series specifically — from the entry-level 518i to the range-topping M5, including BMW's first V8-powered 5 Series and the all-wheel-drive 525iX.",
+    "columns": [
+      "Engine Code",
+      "Family",
+      "Fuel",
+      "Displacement",
+      "Power",
+      "Years (E34)",
+      "Variants (badges)",
+      "Reliability",
+      "2025 Enquiries",
+      "Avg. Recon Cost"
+    ],
+    "engines": [
+      {
+        "engineCode": "M40B18",
+        "family": "M40",
+        "fuel": "Petrol",
+        "displacement": "1.8L (1796 cc)",
+        "power": "113 PS (83 kW)",
+        "years": "1989–1994",
+        "variants": "518i",
+        "reliability": "★★★★☆ [PROVISIONAL — pending dedicated Engine Page]",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£1,200–£2,500 [BMW-QUOTE]"
+      },
+      {
+        "engineCode": "M43B18",
+        "family": "M43",
+        "fuel": "Petrol",
+        "displacement": "1.8L (1796 cc)",
+        "power": "115 PS (85 kW)",
+        "years": "1994–1996",
+        "variants": "518i",
+        "reliability": "★★★★☆ [PROVISIONAL — pending dedicated Engine Page]",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£1,200–£2,500 [BMW-QUOTE]"
+      },
+      {
+        "engineCode": "M20B20",
+        "family": "M20",
+        "fuel": "Petrol",
+        "displacement": "2.0L (1990 cc)",
+        "power": "129 PS (95 kW)",
+        "years": "1988–1990",
+        "variants": "520i",
+        "reliability": "★★★★☆ [PROVISIONAL — pending dedicated Engine Page]",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£1,500–£3,000 [BMW-QUOTE]"
+      },
+      {
+        "engineCode": "M50B20",
+        "family": "M50",
+        "fuel": "Petrol",
+        "displacement": "2.0L (1991 cc)",
+        "power": "150 PS (110 kW)",
+        "years": "1990–1995",
+        "variants": "520i",
+        "reliability": "★★★★☆ [PROVISIONAL — pending dedicated Engine Page]",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£1,800–£3,200 [BMW-QUOTE]"
+      },
+      {
+        "engineCode": "M50B25",
+        "family": "M50",
+        "fuel": "Petrol",
+        "displacement": "2.5L (2494 cc)",
+        "power": "192 PS (141 kW)",
+        "years": "1990–1996",
+        "variants": "525i, 525iX",
+        "reliability": "★★★★☆ [PROVISIONAL — pending dedicated Engine Page]",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£2,000–£4,000 [BMW-QUOTE]"
+      },
+      {
+        "engineCode": "M30B34",
+        "family": "M30",
+        "fuel": "Petrol",
+        "displacement": "3.4L (3430 cc)",
+        "power": "211 PS (155 kW)",
+        "years": "1988–1995",
+        "variants": "535i",
+        "reliability": "★★★★☆ [PROVISIONAL — pending dedicated Engine Page]",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£2,500–£4,500 [BMW-QUOTE]"
+      },
+      {
+        "engineCode": "M60B30",
+        "family": "M60",
+        "fuel": "Petrol V8",
+        "displacement": "3.0L (2997 cc)",
+        "power": "218 PS (160 kW)",
+        "years": "1992–1996",
+        "variants": "530i",
+        "reliability": "★★★★☆ [PROVISIONAL — pending dedicated Engine Page]",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£3,000–£5,500 [BMW-QUOTE]"
+      },
+      {
+        "engineCode": "M60B40",
+        "family": "M60",
+        "fuel": "Petrol V8",
+        "displacement": "4.0L (3982 cc)",
+        "power": "286 PS (210 kW)",
+        "years": "1992–1996",
+        "variants": "540i",
+        "reliability": "★★★★☆ [PROVISIONAL — pending dedicated Engine Page]",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£3,500–£6,500 [BMW-QUOTE]"
+      },
+      {
+        "engineCode": "M21D24",
+        "family": "M21",
+        "fuel": "Diesel",
+        "displacement": "2.4L (2443 cc)",
+        "power": "115 PS (85 kW)",
+        "years": "1988–1991",
+        "variants": "524td",
+        "reliability": "★★★☆☆ [PROVISIONAL — pending dedicated Engine Page]",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£1,800–£3,200 [BMW-QUOTE]"
+      },
+      {
+        "engineCode": "M51D25",
+        "family": "M51",
+        "fuel": "Diesel",
+        "displacement": "2.5L (2498 cc)",
+        "power": "115 PS (85 kW)",
+        "years": "1991–1996",
+        "variants": "525td",
+        "reliability": "★★★☆☆ [PROVISIONAL — pending dedicated Engine Page]",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£2,000–£3,500 [BMW-QUOTE]"
+      },
+      {
+        "engineCode": "M51D25 (TDS)",
+        "family": "M51",
+        "fuel": "Diesel",
+        "displacement": "2.5L (2498 cc)",
+        "power": "143 PS (105 kW)",
+        "years": "1991–1996",
+        "variants": "525tds",
+        "reliability": "★★★☆☆ [PROVISIONAL — pending dedicated Engine Page]",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£2,200–£4,000 [BMW-QUOTE]"
+      },
+      {
+        "engineCode": "S38B36",
+        "family": "S38",
+        "fuel": "Petrol",
+        "displacement": "3.6L (3535 cc)",
+        "power": "315 PS (232 kW)",
+        "years": "1988–1993",
+        "variants": "M5 (pre-facelift)",
+        "reliability": "★★★★☆ [PROVISIONAL — pending dedicated Engine Page]",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£5,000–£8,000 [BMW-QUOTE]"
+      },
+      {
+        "engineCode": "S38B38",
+        "family": "S38",
+        "fuel": "Petrol",
+        "displacement": "3.8L (3795 cc)",
+        "power": "340 PS (250 kW)",
+        "years": "1992–1995",
+        "variants": "M5 (facelift)",
+        "reliability": "★★★★☆ [PROVISIONAL — pending dedicated Engine Page]",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£6,000–£10,000 [BMW-QUOTE]"
+      }
+    ],
+    "confidenceScore": {
+      "title": "",
+      "text": ""
+    },
+    "dataCorrections": []
+  },
+  "overview": {
+    "h2": "BMW 5 Series E34 — Overview",
+    "intro": "The third-generation BMW 5 Series (E34) was produced from November 1987 to June 1996, replacing the E28 and later succeeded by the E39. Initially launched as a four-door sedan in January 1988, the E34 also introduced a \"Touring\" estate body style in September 1992 — a first for the 5 Series. The E34 was the first 5 Series to offer all-wheel drive (525iX) and the first to feature a V8 engine (M60). The engine range spanned four-cylinder, six-cylinder and V8 petrols, plus turbo-diesel six-cylinders. The M5 continued with the high-revving S38 straight-six.",
+    "keyFacts": "Platform: BMW E34 • Predecessor: BMW 5 Series E28 • Successor: BMW 5 Series E39 • Sibling body styles in this generation: N/A — E34 is the sole body code (sedan and Touring).",
+    "marketIntelligenceLine": "The E34 5 Series generates steady UK specialist enquiries, concentrated on the 525i and 535i as these classic BMWs enter collector-car territory."
+  },
+  "bestWorstEngines": {
+    "items": [
+      {
+        "slot": "Thin-Data Summary",
+        "engine": "",
+        "quote": "Thin-Data Fallback mode — one paragraph: The E34 5 Series offers a wide range of engines, but the M50B25 (2.5-litre straight-six in the 525i) is widely regarded as the sweet spot — 192 PS, smooth, reliable and well-supported. The M30B34 (535i) is the classic big-six with 211 PS and bulletproof longevity, though thirstier. For V8 enthusiasts, the M60B40 (540i) delivers 286 PS of effortless power, but cooling system maintenance is critical. The S38B36 and S38B38 M5 engines are future classics — 315–340 PS of naturally aspirated straight-six excellence — but expensive to maintain. The M51D25 diesel (525tds) offers 143 PS and excellent economy but is more complex than the petrols. For most buyers, the 525i (M50B25) represents the best balance of reliability, performance and running costs.",
+        "whoItsFor": ""
+      }
+    ]
+  },
+  "ownershipEconomics": {
+    "h2": "BMW 5 Series E34 — Ownership Economics",
+    "columns": [
+      "Engine",
+      "Typical Mileage",
+      "Common Major Failure",
+      "Repair Cost (Specialist)",
+      "Replacement Cost (Recon)",
+      "Ownership Verdict"
+    ],
+    "rows": [
+      {
+        "engine": "M40/M43 (1.8 518i)",
+        "typicalMileage": "100k–150k+",
+        "commonMajorFailure": "Timing chain, cooling system",
+        "repairCostSpecialist": "£300–£700",
+        "replacementCostRecon": "£1,200–£2,500",
+        "ownershipVerdict": "Solid Choice — simple, reliable four-cylinder"
+      },
+      {
+        "engine": "M20B20 (2.0 520i)",
+        "typicalMileage": "100k–150k+",
+        "commonMajorFailure": "Timing belt, cooling system",
+        "repairCostSpecialist": "£400–£800",
+        "replacementCostRecon": "£1,500–£3,000",
+        "ownershipVerdict": "Solid Choice — classic six, needs belt changes"
+      },
+      {
+        "engine": "M50B20/B25 (2.0/2.5 520i/525i)",
+        "typicalMileage": "100k–150k+",
+        "commonMajorFailure": "VANOS, cooling system, oil leaks",
+        "repairCostSpecialist": "£400–£1,000",
+        "replacementCostRecon": "£1,800–£4,000",
+        "ownershipVerdict": "Best Petrol — the one to buy (525i)"
+      },
+      {
+        "engine": "M30B34 (3.4 535i)",
+        "typicalMileage": "100k–200k+",
+        "commonMajorFailure": "Cooling system, oil leaks",
+        "repairCostSpecialist": "£500–£1,200",
+        "replacementCostRecon": "£2,500–£4,500",
+        "ownershipVerdict": "Classic Six — bulletproof but thirsty"
+      },
+      {
+        "engine": "M60B30/B40 (3.0/4.0 V8)",
+        "typicalMileage": "80k–150k",
+        "commonMajorFailure": "Cooling system, Nikasil (early), timing guides",
+        "repairCostSpecialist": "£600–£1,500",
+        "replacementCostRecon": "£3,000–£6,500",
+        "ownershipVerdict": "Watch Closely — V8 complexity, Nikasil risk"
+      },
+      {
+        "engine": "M51D25 (2.5 diesel)",
+        "typicalMileage": "100k–150k+",
+        "commonMajorFailure": "Injectors, turbo, glow plugs",
+        "repairCostSpecialist": "£500–£1,200",
+        "replacementCostRecon": "£2,000–£4,000",
+        "ownershipVerdict": "Solid Choice — economical, complex"
+      },
+      {
+        "engine": "S38B36/B38 (M5)",
+        "typicalMileage": "80k–150k",
+        "commonMajorFailure": "Timing chain, VANOS (S38B38), cooling",
+        "repairCostSpecialist": "£1,000–£2,500",
+        "replacementCostRecon": "£5,000–£10,000",
+        "ownershipVerdict": "Most Expensive — future classic, high costs"
+      }
+    ],
+    "economicsRule": {
+      "title": "The E34 rule",
+      "text": "A £2,000–£4,000 M50 recon against a £1,500–£6,000 E34 sits at 33–267% of the car's value. On a sub-£2,000 high-mileage example, that brushes our 70% BMW threshold — we'll honestly tell you to walk away. Against a well-kept £4,000+ example, the same recon drops to 50–100% — assess carefully. Value the car first. M5 ownership is a different proposition entirely — budget for specialist maintenance."
+    },
+    "keyTakeaways": []
+  },
+  "commonProblems": {
+    "problems": [
+      {
+        "id": 1,
+        "title": "M50 VANOS & Cooling System",
+        "affectedModels": "520i, 525i (M50 engine, 1990–1996).",
+        "typicalFailureMileage": "100,000–150,000 miles.",
+        "rootCause": "The M50 is a robust engine, but VANOS units can develop rattle or loss of low-end torque. Cooling system components — water pump, thermostat housing — are known weak points across the E34 range.",
+        "tieredCosts": [
+          {
+            "tier": "Preventative (Repair)",
+            "dealer": "£800–£1,500",
+            "specialist": "£400–£1,000",
+            "work": "",
+            "note": ""
+          },
+          {
+            "tier": "Catastrophic (Replacement)",
+            "dealer": "£3,000–£5,000",
+            "specialist": "£2,000–£4,000",
+            "work": "",
+            "note": ""
+          }
+        ],
+        "recommendation": "On any M50-powered E34, budget for cooling system preventative maintenance — a £400–£1,000 repair is cheaper than the £2,000+ replacement that follows an overheating failure. Regular oil changes are critical for VANOS longevity.",
+        "cta": {
+          "label": "Compare M50 engine prices for your E34 →",
+          "href": "#"
+        }
+      },
+      {
+        "id": 2,
+        "title": "M60 V8 Nikasil & Cooling System",
+        "affectedModels": "530i, 540i (M60 V8, 1992–1996).",
+        "typicalFailureMileage": "80,000–120,000 miles.",
+        "rootCause": "Early M60 V8s suffered from Nikasil cylinder lining degradation due to high-sulphur fuel — a known issue resolved on later engines. Cooling system components (water pump, expansion tank) are also common failure points.",
+        "tieredCosts": [
+          {
+            "tier": "Preventative (Repair)",
+            "dealer": "£1,000–£2,000",
+            "specialist": "£600–£1,500",
+            "work": "",
+            "note": ""
+          },
+          {
+            "tier": "Catastrophic (Replacement)",
+            "dealer": "£4,000–£7,500",
+            "specialist": "£3,000–£5,500",
+            "work": "",
+            "note": ""
+          }
+        ],
+        "recommendation": "If you're buying an E34 V8, have a compression test and cooling system inspection done before purchase. Nikasil-affected engines can be identified by poor compression — walk away from any with known issues.",
+        "cta": {
+          "label": "Compare M60 engine prices for your E34 →",
+          "href": "#"
+        }
+      },
+      {
+        "id": 3,
+        "title": "M30 Oil Leaks & Cooling System",
+        "affectedModels": "535i (M30B34, 1988–1995).",
+        "typicalFailureMileage": "100,000–200,000+ miles.",
+        "rootCause": "The M30 is one of BMW's most durable engines, but oil leaks from valve cover gaskets and oil pan seals are common with age. Cooling system components also require attention.",
+        "tieredCosts": [
+          {
+            "tier": "Preventative (Repair)",
+            "dealer": "£600–£1,200",
+            "specialist": "£400–£900",
+            "work": "",
+            "note": ""
+          },
+          {
+            "tier": "Catastrophic (Replacement)",
+            "dealer": "£3,000–£5,500",
+            "specialist": "£2,500–£4,500",
+            "work": "",
+            "note": ""
+          }
+        ],
+        "recommendation": "The M30 is a tough engine — regular maintenance and prompt attention to leaks will keep it running indefinitely. Cooling system preventative work at 100,000 miles is strongly recommended.",
+        "cta": {
+          "label": "Compare M30 engine prices for your E34 →",
+          "href": "#"
+        }
+      },
+      {
+        "id": 4,
+        "title": "M51 Diesel Injector & Turbo Issues",
+        "affectedModels": "525td, 525tds (M51 diesel, 1991–1996).",
+        "typicalFailureMileage": "100,000–150,000 miles.",
+        "rootCause": "The M51 diesel is a robust unit but injector wear and turbocharger issues are common at high mileage. The 525tds (intercooled version) has additional complexity.",
+        "tieredCosts": [
+          {
+            "tier": "Preventative (Repair)",
+            "dealer": "£800–£1,500",
+            "specialist": "£500–£1,200",
+            "work": "",
+            "note": ""
+          },
+          {
+            "tier": "Catastrophic (Replacement)",
+            "dealer": "£3,000–£4,500",
+            "specialist": "£2,000–£3,500",
+            "work": "",
+            "note": ""
+          }
+        ],
+        "recommendation": "If you're considering an E34 diesel, have a full inspection by a diesel specialist before purchase. Injector and turbo work can be expensive relative to the car's value.",
+        "cta": {
+          "label": "Compare M51 engine prices for your E34 →",
+          "href": "#"
+        }
+      }
+    ]
+  },
+  "replacementCosts": {
+    "h2": "E34 Engine Replacement Costs — By Engine and Condition",
+    "columns": [
+      "Variant",
+      "Engine Code",
+      "Used (Supply)",
+      "Reconditioned (Supply)",
+      "Rebuilt (Supply)",
+      "Labour Hours"
+    ],
+    "rows": [
+      {
+        "variant": "518i",
+        "engineCode": "M40B18/M43B18",
+        "usedSupply": "£400–£1,000",
+        "reconditionedSupply": "£1,200–£2,500",
+        "rebuiltSupply": "£2,000–£3,500",
+        "labourHours": "8–12 hrs"
+      },
+      {
+        "variant": "520i (pre-1990)",
+        "engineCode": "M20B20",
+        "usedSupply": "£500–£1,200",
+        "reconditionedSupply": "£1,500–£3,000",
+        "rebuiltSupply": "£2,500–£4,000",
+        "labourHours": "8–12 hrs"
+      },
+      {
+        "variant": "520i (post-1990)",
+        "engineCode": "M50B20",
+        "usedSupply": "£600–£1,500",
+        "reconditionedSupply": "£1,800–£3,200",
+        "rebuiltSupply": "£3,000–£4,500",
+        "labourHours": "8–12 hrs"
+      },
+      {
+        "variant": "525i/525iX",
+        "engineCode": "M50B25",
+        "usedSupply": "£800–£1,800",
+        "reconditionedSupply": "£2,000–£4,000",
+        "rebuiltSupply": "£3,500–£5,500",
+        "labourHours": "10–14 hrs"
+      },
+      {
+        "variant": "535i",
+        "engineCode": "M30B34",
+        "usedSupply": "£1,000–£2,000",
+        "reconditionedSupply": "£2,500–£4,500",
+        "rebuiltSupply": "£4,000–£6,000",
+        "labourHours": "10–14 hrs"
+      },
+      {
+        "variant": "530i",
+        "engineCode": "M60B30",
+        "usedSupply": "£1,500–£3,000",
+        "reconditionedSupply": "£3,000–£5,500",
+        "rebuiltSupply": "£4,500–£7,000",
+        "labourHours": "12–16 hrs"
+      },
+      {
+        "variant": "540i",
+        "engineCode": "M60B40",
+        "usedSupply": "£2,000–£3,500",
+        "reconditionedSupply": "£3,500–£6,500",
+        "rebuiltSupply": "£5,000–£8,500",
+        "labourHours": "12–16 hrs"
+      },
+      {
+        "variant": "524td",
+        "engineCode": "M21D24",
+        "usedSupply": "£600–£1,500",
+        "reconditionedSupply": "£1,800–£3,200",
+        "rebuiltSupply": "£2,800–£4,500",
+        "labourHours": "8–12 hrs"
+      },
+      {
+        "variant": "525td/525tds",
+        "engineCode": "M51D25",
+        "usedSupply": "£800–£1,800",
+        "reconditionedSupply": "£2,000–£4,000",
+        "rebuiltSupply": "£3,000–£5,000",
+        "labourHours": "10–14 hrs"
+      },
+      {
+        "variant": "M5 (pre-facelift)",
+        "engineCode": "S38B36",
+        "usedSupply": "£2,500–£4,500",
+        "reconditionedSupply": "£5,000–£8,000",
+        "rebuiltSupply": "£7,000–£11,000",
+        "labourHours": "14–18 hrs"
+      },
+      {
+        "variant": "M5 (facelift)",
+        "engineCode": "S38B38",
+        "usedSupply": "£3,000–£5,500",
+        "reconditionedSupply": "£6,000–£10,000",
+        "rebuiltSupply": "£8,000–£14,000",
+        "labourHours": "14–18 hrs"
+      }
+    ],
+    "note": "No Generation variance from the Engine Page baseline — no dedicated Engine Pages exist for these families yet, so baseline figures are drawn from the EM_Proprietary_Data Table A. Labour hours estimated at 8–12 hours for four-cylinder and smaller six-cylinder engines, 10–14 hours for larger six-cylinders, 12–16 hours for V8s, and 14–18 hours for the M5's S38 due to additional complexity."
+  },
+  "coreVariants": {
+    "dieselVariants": [
+      "524td",
+      "525td",
+      "525tds"
+    ],
+    "petrolVariants": [
+      "518i",
+      "520i",
+      "525i",
+      "525iX",
+      "530i",
+      "535i",
+      "540i",
+      "M5"
+    ],
+    "scopeNote": "All variants listed are E34 5 Series only. The 525iX is the all-wheel-drive variant. The Touring estate was introduced in September 1992 and shares the same engine range. The M5 received the S38B38 3.8-litre engine from 1992, replacing the S38B36 3.6-litre."
+  },
+  "marketIntelligence": {
+    "mostRequestedEngines": [],
+    "mostRequestedVariants": [],
+    "averageReplacementCost": "",
+    "mostCommonFailures": [],
+    "liveFeed": []
+  },
+  "faq": {
+    "items": []
+  },
+  "trustCta": {
+    "h2": "",
+    "trustPoints": [],
+    "finalCta": "",
+    "ctaButton": {
+      "label": "",
+      "href": "#",
+      "note": ""
+    }
+  }
+}

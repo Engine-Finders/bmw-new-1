@@ -1,0 +1,470 @@
+{
+  "meta": {
+    "slug": "bmw-2-series-f23",
+    "title": "BMW 2 Series F23 Engines — The Complete UK Guide",
+    "titleCharCount": 48,
+    "description": "",
+    "descriptionCharCount": 0,
+    "jsonLd": {}
+  },
+  "internalDeclarations": {
+    "checkA": "",
+    "checkB": "",
+    "authorityModelMode": ""
+  },
+  "hero": {
+    "tagPill": "BMW 2 Series F23 • Convertible • 2015–2021",
+    "h1": "BMW 2 Series F23 Engines — The Complete UK Guide",
+    "subHeadline": "Every engine fitted to the F23 Convertible — from the 1.5-litre three-cylinder 218i to the 2.0-litre four-cylinders and the 3.0-litre six-cylinder M240i. Real UK costs, honest failure data, and the engine changes that defined the F23's short life. Backed by 147+ real UK F23 enquiries in 2025 [BMW-VERIFIED].",
+    "trustStrip": [
+      {
+        "icon": "📊",
+        "label": "147+ F23 Enquiries (2025) [BMW-VERIFIED]"
+      },
+      {
+        "icon": "🔧",
+        "label": "Convertible"
+      },
+      {
+        "icon": "📖",
+        "label": "8 Engine Codes"
+      },
+      {
+        "icon": "🏆",
+        "label": "Part of Engine Finders"
+      }
+    ],
+    "primaryCta": {
+      "label": "Explore F23 Engines →",
+      "href": "#"
+    },
+    "dataIntegrityNote": ""
+  },
+  "engineDatabase": {
+    "h2": "BMW 2 Series F23 Engine Codes — The Complete Database",
+    "subHeadline": "Every engine fitted to the F23 convertible specifically — from the base 218i to the M240i, including the N20-to-B48 and N55-to-B58 changes that came with the 2016 model-year update.",
+    "columns": [
+      "Engine Code",
+      "Family",
+      "Fuel",
+      "Displacement",
+      "Power",
+      "Years (F23)",
+      "Variants (badges)",
+      "Reliability",
+      "2025 Enquiries",
+      "Avg. Recon Cost"
+    ],
+    "engines": [
+      {
+        "engineCode": "B38B15",
+        "family": "B38",
+        "fuel": "Petrol",
+        "displacement": "1.5L (1499 cc)",
+        "power": "136 PS (100 kW)",
+        "years": "2017–2021",
+        "variants": "218i",
+        "reliability": "★★★★☆ [PROVISIONAL — pending dedicated Engine Page]",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£1,800–£3,200 [BMW-QUOTE]"
+      },
+      {
+        "engineCode": "N20B20A",
+        "family": "N20",
+        "fuel": "Petrol",
+        "displacement": "2.0L (1997 cc)",
+        "power": "184 PS (135 kW)",
+        "years": "2015–2016",
+        "variants": "220i",
+        "reliability": "★★★☆☆ [PROVISIONAL — pending dedicated Engine Page]",
+        "enquiries": "147 (model-level) [BMW-VERIFIED]",
+        "avgReconCost": "£2,800–£4,500 [BMW-QUOTE]"
+      },
+      {
+        "engineCode": "N20B20B",
+        "family": "N20",
+        "fuel": "Petrol",
+        "displacement": "2.0L (1997 cc)",
+        "power": "245 PS (180 kW)",
+        "years": "2015–2016",
+        "variants": "228i",
+        "reliability": "★★★☆☆ [PROVISIONAL — pending dedicated Engine Page]",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£3,000–£5,000 [BMW-QUOTE]"
+      },
+      {
+        "engineCode": "B48B20A",
+        "family": "B48",
+        "fuel": "Petrol",
+        "displacement": "2.0L (1998 cc)",
+        "power": "184 PS (135 kW)",
+        "years": "2016–2021",
+        "variants": "220i",
+        "reliability": "★★★★☆ [PROVISIONAL — pending dedicated Engine Page]",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£2,800–£4,500 [BMW-QUOTE]"
+      },
+      {
+        "engineCode": "B48B20B",
+        "family": "B48",
+        "fuel": "Petrol",
+        "displacement": "2.0L (1998 cc)",
+        "power": "252 PS (185 kW)",
+        "years": "2016–2021",
+        "variants": "230i",
+        "reliability": "★★★★☆ [PROVISIONAL — pending dedicated Engine Page]",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£3,200–£5,000 [BMW-QUOTE]"
+      },
+      {
+        "engineCode": "N55B30O0",
+        "family": "N55",
+        "fuel": "Petrol",
+        "displacement": "3.0L (2979 cc)",
+        "power": "326 PS (240 kW)",
+        "years": "2015–2016",
+        "variants": "M235i",
+        "reliability": "★★★★☆ [PROVISIONAL — pending dedicated Engine Page]",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£4,500–£7,500 [BMW-QUOTE]"
+      },
+      {
+        "engineCode": "B58B30O0",
+        "family": "B58",
+        "fuel": "Petrol",
+        "displacement": "3.0L (2998 cc)",
+        "power": "340–374 PS (250–275 kW)",
+        "years": "2016–2021",
+        "variants": "M240i",
+        "reliability": "★★★★☆ [PROVISIONAL — pending dedicated Engine Page]",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£4,800–£8,000 [BMW-QUOTE]"
+      },
+      {
+        "engineCode": "B47D20A",
+        "family": "B47",
+        "fuel": "Diesel",
+        "displacement": "2.0L (1995 cc)",
+        "power": "150–190 PS (110–140 kW)",
+        "years": "2015–2021",
+        "variants": "218d, 220d, 225d",
+        "reliability": "★★★★☆ [PROVISIONAL — pending dedicated Engine Page]",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£3,200–£5,500 [BMW-QUOTE]"
+      }
+    ],
+    "confidenceScore": {
+      "title": "",
+      "text": ""
+    },
+    "dataCorrections": []
+  },
+  "overview": {
+    "h2": "BMW 2 Series F23 — Overview",
+    "intro": "The F23 is the convertible version of BMW's first-generation 2 Series, launched in January 2015 as the successor to the E88 1 Series Convertible. Built alongside the F22 coupé at BMW's Leipzig plant, the F23 was a four-seat convertible with a power-operated soft top. The engine range launched with 2.0-litre N20 four-cylinders (220i, 228i) and the 3.0-litre N55 six-cylinder (M235i), plus B47 diesels. A significant July 2016 update replaced the N20 and N55 with the newer B48 and B58 modular engines, and the 1.5-litre B38 three-cylinder arrived in 2017 for the 218i. The F23 was produced through 2021.",
+    "keyFacts": "Platform: BMW F22/F23 (rear-wheel drive) • Predecessor: E88 1 Series Convertible • Successor: G42 2 Series Convertible • Sibling body styles in this generation: F22 Coupé, F87 M2.",
+    "marketIntelligenceLine": "The F23 convertible generated 147 real UK engine enquiries in 2025 [BMW-VERIFIED], concentrated on the 2.0-litre petrol engines as these stylish convertibles enter the higher-mileage phase of their ownership cycle."
+  },
+  "bestWorstEngines": {
+    "items": [
+      {
+        "slot": "Best Petrol Overall",
+        "engine": "B48B20B — 230i (2016–2021)",
+        "quote": "The B48 is a significant improvement over the N20 — better cooling, more reliable timing chain design, and smoother delivery. The 230i is the sweet spot of the F23 range.",
+        "whoItsFor": "buyers who want modern turbo four-cylinder performance without the N20's concerns."
+      },
+      {
+        "slot": "Highest Risk",
+        "engine": "N20B20A/B — 220i/228i (2015–2016)",
+        "quote": "Early F23s use the N20 engine — known for timing chain guide wear and VANOS issues. The B48 that replaced it from mid-2016 is a much safer bet.",
+        "whoItsFor": "buyers who are prepared for timing chain maintenance or want a cheaper entry point."
+      },
+      {
+        "slot": "Most Expensive Failure",
+        "engine": "N55B30O0 — M235i (2015–2016)",
+        "quote": "The N55 is robust but complex — VANOS, valvetronic and turbocharger repairs can be costly. The B58 that replaced it is a more reliable choice.",
+        "whoItsFor": "buyers who want the first-generation M Performance convertible and are ready for the bills."
+      },
+      {
+        "slot": "Best Value",
+        "engine": "B48B20A — 220i (2016–2021)",
+        "quote": "The B48 is reliable, efficient and well-supported. A £2,800–£4,500 recon makes sense against a £10,000–£20,000 vehicle.",
+        "whoItsFor": "buyers who want the most cost-effective F23 ownership."
+      },
+      {
+        "slot": "Most Overlooked",
+        "engine": "B38B15 — 218i (2017–2021)",
+        "quote": "The 1.5-litre three-cylinder is often overlooked by buyers chasing bigger engines — but it's a genuinely charming unit, reliable and surprisingly perky in the F23's lightweight chassis.",
+        "whoItsFor": "buyers who want low running costs and don't need six-cylinder pace."
+      }
+    ]
+  },
+  "ownershipEconomics": {
+    "h2": "BMW 2 Series F23 — Ownership Economics",
+    "columns": [
+      "Engine",
+      "Typical Mileage",
+      "Common Major Failure",
+      "Repair Cost (Specialist)",
+      "Replacement Cost (Recon)",
+      "Ownership Verdict"
+    ],
+    "rows": [
+      {
+        "engine": "B38B15 (1.5 218i)",
+        "typicalMileage": "60k–100k",
+        "commonMajorFailure": "Water pump, cooling system",
+        "repairCostSpecialist": "£400–£800",
+        "replacementCostRecon": "£1,800–£3,200",
+        "ownershipVerdict": "Solid Choice — reliable three-cylinder"
+      },
+      {
+        "engine": "N20B20 (2.0 220i/228i)",
+        "typicalMileage": "60k–100k",
+        "commonMajorFailure": "Timing chain guides, VANOS",
+        "repairCostSpecialist": "£800–£2,000",
+        "replacementCostRecon": "£2,800–£5,000",
+        "ownershipVerdict": "Watch Closely — chain is the weak point"
+      },
+      {
+        "engine": "B48B20 (2.0 220i/230i)",
+        "typicalMileage": "60k–120k",
+        "commonMajorFailure": "Coolant system, PCV valve",
+        "repairCostSpecialist": "£400–£1,000",
+        "replacementCostRecon": "£2,800–£5,000",
+        "ownershipVerdict": "Best Petrol — reliable B48, chain improved"
+      },
+      {
+        "engine": "N55B30O0 (3.0 M235i)",
+        "typicalMileage": "60k–100k",
+        "commonMajorFailure": "VANOS, valvetronic, turbo",
+        "repairCostSpecialist": "£800–£2,500",
+        "replacementCostRecon": "£4,500–£7,500",
+        "ownershipVerdict": "Watch Closely — complex but rewarding"
+      },
+      {
+        "engine": "B58B30O0 (3.0 M240i)",
+        "typicalMileage": "60k–120k",
+        "commonMajorFailure": "Coolant system, PCV",
+        "repairCostSpecialist": "£400–£1,000",
+        "replacementCostRecon": "£4,800–£8,000",
+        "ownershipVerdict": "Best Six — B58 is a modern classic"
+      },
+      {
+        "engine": "B47D20A (2.0 diesel)",
+        "typicalMileage": "60k–120k",
+        "commonMajorFailure": "EGR cooler, timing chain (rare)",
+        "repairCostSpecialist": "£500–£1,200",
+        "replacementCostRecon": "£3,200–£5,500",
+        "ownershipVerdict": "Solid Choice — improved over N47"
+      }
+    ],
+    "economicsRule": {
+      "title": "The F23 rule",
+      "text": "A £3,200–£5,000 B48 recon against a £10,000–£20,000 F23 sits at 16–50% of the car's value — well within our 70% BMW threshold. Even against a sub-£10,000 example, the same recon is 32–50% — a repair decision, not a financial one. The F23 holds value well enough that engine replacement is almost always viable."
+    },
+    "keyTakeaways": []
+  },
+  "commonProblems": {
+    "problems": [
+      {
+        "id": 1,
+        "title": "N20 Timing Chain Guide Wear",
+        "affectedModels": "F23 220i, 228i (2015–2016, N20 engine).",
+        "typicalFailureMileage": "60,000–100,000 miles.",
+        "rootCause": "The N20's timing chain guides are a known weak point — they can become brittle and fail, leading to chain stretch or catastrophic engine failure. Cold-start rattle is the classic early warning. The B48 that replaced it from July 2016 has an improved chain design.",
+        "tieredCosts": [
+          {
+            "tier": "Preventative (Repair)",
+            "dealer": "£1,500–£2,500",
+            "specialist": "£800–£1,800",
+            "work": "",
+            "note": ""
+          },
+          {
+            "tier": "Catastrophic (Replacement)",
+            "dealer": "£4,500–£7,000",
+            "specialist": "£3,500–£5,500",
+            "work": "",
+            "note": ""
+          }
+        ],
+        "recommendation": "If your N20-powered F23 has no documented timing chain history, treat it as a priority inspection — £800–£1,800 now is far cheaper than the £3,500+ replacement that follows a failure. Cold-start rattle is the warning sign to watch for.",
+        "cta": {
+          "label": "Compare N20 engine prices for your F23 →",
+          "href": "#"
+        }
+      },
+      {
+        "id": 2,
+        "title": "B38/B48/B58 Cooling System",
+        "affectedModels": "F23 218i, 220i, 230i, M240i (all B-series engines, 2016–2021).",
+        "typicalFailureMileage": "60,000–100,000 miles.",
+        "rootCause": "The B-series modular engines are generally reliable, but cooling system components — water pump, expansion tank, plastic fittings — can develop leaks. This is the most common B-series failure point.",
+        "tieredCosts": [
+          {
+            "tier": "Preventative (Repair)",
+            "dealer": "£600–£1,200",
+            "specialist": "£400–£900",
+            "work": "",
+            "note": ""
+          },
+          {
+            "tier": "Catastrophic (Replacement)",
+            "dealer": "£3,500–£5,500",
+            "specialist": "£2,800–£4,500",
+            "work": "",
+            "note": ""
+          }
+        ],
+        "recommendation": "On any B-series F23 approaching 60,000 miles, have the cooling system inspected — a £400–£900 preventative repair is cheaper than the £2,800+ replacement that follows an overheating failure.",
+        "cta": {
+          "label": "Compare B48 engine prices for your F23 →",
+          "href": "#"
+        }
+      },
+      {
+        "id": 3,
+        "title": "B47 Diesel EGR Cooler",
+        "affectedModels": "F23 218d, 220d, 225d (B47 diesel, 2015–2021).",
+        "typicalFailureMileage": "60,000–120,000 miles.",
+        "rootCause": "The B47 diesel's EGR cooler can develop internal leaks, allowing coolant into the exhaust. This is a known issue across BMW's B47 engine family. The B47 is otherwise a significant improvement over the N47 — timing chain issues are far less common.",
+        "tieredCosts": [
+          {
+            "tier": "Preventative (Repair)",
+            "dealer": "£600–£1,200",
+            "specialist": "£400–£900",
+            "work": "",
+            "note": ""
+          },
+          {
+            "tier": "Catastrophic (Replacement)",
+            "dealer": "£4,000–£6,500",
+            "specialist": "£3,200–£5,500",
+            "work": "",
+            "note": ""
+          }
+        ],
+        "recommendation": "At the first sign of coolant loss or white smoke, get the EGR cooler inspected — a £400–£900 repair is cheaper than the £3,200+ replacement that follows if ignored.",
+        "cta": {
+          "label": "Compare B47 engine prices for your F23 →",
+          "href": "#"
+        }
+      }
+    ]
+  },
+  "replacementCosts": {
+    "h2": "F23 Engine Replacement Costs — By Engine and Condition",
+    "columns": [
+      "Variant",
+      "Engine Code",
+      "Used (Supply)",
+      "Reconditioned (Supply)",
+      "Rebuilt (Supply)",
+      "Labour Hours"
+    ],
+    "rows": [
+      {
+        "variant": "218i",
+        "engineCode": "B38B15",
+        "usedSupply": "£800–£1,800",
+        "reconditionedSupply": "£1,800–£3,200",
+        "rebuiltSupply": "£2,800–£4,500",
+        "labourHours": "8–12 hrs"
+      },
+      {
+        "variant": "220i (2015–2016)",
+        "engineCode": "N20B20A",
+        "usedSupply": "£1,500–£2,800",
+        "reconditionedSupply": "£2,800–£4,500",
+        "rebuiltSupply": "£4,000–£6,000",
+        "labourHours": "10–14 hrs"
+      },
+      {
+        "variant": "228i (2015–2016)",
+        "engineCode": "N20B20B",
+        "usedSupply": "£1,800–£3,200",
+        "reconditionedSupply": "£3,000–£5,000",
+        "rebuiltSupply": "£4,500–£6,500",
+        "labourHours": "10–14 hrs"
+      },
+      {
+        "variant": "220i (2016–2021)",
+        "engineCode": "B48B20A",
+        "usedSupply": "£1,500–£2,800",
+        "reconditionedSupply": "£2,800–£4,500",
+        "rebuiltSupply": "£4,000–£6,000",
+        "labourHours": "10–14 hrs"
+      },
+      {
+        "variant": "230i (2016–2021)",
+        "engineCode": "B48B20B",
+        "usedSupply": "£1,800–£3,200",
+        "reconditionedSupply": "£3,200–£5,000",
+        "rebuiltSupply": "£4,500–£7,000",
+        "labourHours": "10–14 hrs"
+      },
+      {
+        "variant": "M235i (2015–2016)",
+        "engineCode": "N55B30O0",
+        "usedSupply": "£2,500–£4,500",
+        "reconditionedSupply": "£4,500–£7,500",
+        "rebuiltSupply": "£6,000–£9,000",
+        "labourHours": "12–16 hrs"
+      },
+      {
+        "variant": "M240i (2016–2021)",
+        "engineCode": "B58B30O0",
+        "usedSupply": "£2,800–£5,000",
+        "reconditionedSupply": "£4,800–£8,000",
+        "rebuiltSupply": "£6,500–£10,000",
+        "labourHours": "12–16 hrs"
+      },
+      {
+        "variant": "218d/220d/225d",
+        "engineCode": "B47D20A",
+        "usedSupply": "£1,800–£3,200",
+        "reconditionedSupply": "£3,200–£5,500",
+        "rebuiltSupply": "£4,500–£7,000",
+        "labourHours": "10–14 hrs"
+      }
+    ],
+    "note": "No Generation variance from the Engine Page baseline — no dedicated Engine Pages exist for these families yet, so baseline figures are drawn from the EM_Proprietary_Data Table A. Labour hours estimated at 8–12 hours for the three-cylinder B38, 10–14 hours for four-cylinder engines, and 12–16 hours for six-cylinder engines due to engine bay packaging."
+  },
+  "coreVariants": {
+    "dieselVariants": [
+      "218d",
+      "220d",
+      "225d"
+    ],
+    "petrolVariants": [
+      "218i",
+      "220i",
+      "228i",
+      "230i",
+      "M235i",
+      "M240i"
+    ],
+    "scopeNote": "All variants listed are F23 convertible only. The 228i and M235i were produced 2015–2016; the 230i and M240i replaced them from July 2016 production. The 218i (B38) joined the range in 2017. The 225d is the twin-turbo diesel."
+  },
+  "marketIntelligence": {
+    "mostRequestedEngines": [],
+    "mostRequestedVariants": [],
+    "averageReplacementCost": "",
+    "mostCommonFailures": [],
+    "liveFeed": []
+  },
+  "faq": {
+    "items": []
+  },
+  "trustCta": {
+    "h2": "",
+    "trustPoints": [],
+    "finalCta": "",
+    "ctaButton": {
+      "label": "",
+      "href": "#",
+      "note": ""
+    }
+  }
+}

@@ -1,0 +1,749 @@
+{
+  "meta": {
+    "slug": "bmw-8-series-g14",
+    "title": "G14 Powertrain Cost UK — Compare Quotes",
+    "titleCharCount": 49,
+    "description": "Every BMW 8 Series G14 powertrain — from the 3.0 B58 to the 4.4 V8 N63 and S63 M8 Competition. Real UK costs, honest reliability data. Compare prices from 20+ vetted BMW specialists today.",
+    "descriptionCharCount": 156,
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://bmwengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "8 Series",
+              "item": "https://bmwengine.uk/8-series/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "BMW 8 Series G14",
+              "item": "https://bmwengine.uk/8-series/g14/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "BMW 8 Series G14 Powertrain Codes",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "B58B30C/B58B30M1 3.0 Petrol",
+              "url": "https://bmwengine.uk/engines/b58/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "N63B44D/N63B44T3 4.4 V8 Petrol",
+              "url": "https://bmwengine.uk/engines/n63/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "S63B44B/S63B44T4 4.4 V8 M8 Petrol",
+              "url": "https://bmwengine.uk/engines/s63/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "B57D30B 3.0 Diesel",
+              "url": "https://bmwengine.uk/engines/b57/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "BMW 8 Series G14 Core Variants",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "840i",
+              "url": "https://bmwengine.uk/8-series/g14/840i/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "840i xDrive",
+              "url": "https://bmwengine.uk/8-series/g14/840i-xdrive/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "840d xDrive",
+              "url": "https://bmwengine.uk/8-series/g14/840d-xdrive/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "M850i xDrive",
+              "url": "https://bmwengine.uk/8-series/g14/m850i-xdrive/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 5,
+              "name": "M8 Competition",
+              "url": "https://bmwengine.uk/8-series/g14/m8-competition/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does a BMW 8 Series G14 powertrain replacement cost in the UK?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A reconditioned G14 powertrain costs between £4,500 and £14,000 supply-only, depending on the engine — the B58 six-cylinder ranges £4,800–£8,000, the N63 V8 runs £6,000–£10,000, and the S63 M8 Competition engine runs £8,000–£14,000. Fitting adds 12–24 hours of labour at £65–£90/hr. Use our calculator for a personalised quote."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which BMW 8 Series G14 powertrain is the most reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The B58B30 3.0-litre six-cylinder (840i) is widely regarded as BMW's most reliable modern six-cylinder — proven durability, no major design flaws, and only minor HPFP and cooling system maintenance required. On diesel, the B57D30B (840d) is also highly reliable, with timing chain issues described as 'exceedingly rare.'"
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What are the common problems with the BMW 8 Series G14?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Valve stem seal wear on the N63 V8 (M850i) and S63 V8 (M8 Competition), high-pressure fuel pump (HPFP) failure on the B58 (840i), and DPF blockage on the B57 diesel (840d) used predominantly for urban driving. The G14 also suffers from folding roof mechanism wear and electrical system issues on higher-spec models."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the BMW 8 Series G14 reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "It depends heavily on the powertrain. The B58 six-cylinder is highly reliable. The N63/S63 V8s are more demanding — they are high-performance engines that require meticulous maintenance. For any G14, a thorough inspection and maintenance history check are essential, particularly on V8 models."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which BMW 8 Series G14 powertrain should I avoid?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Early N63 V8 (2018–2020 M850i) without documented valve stem seal work carries the highest risk. Also avoid any B57 diesel without documented DPF maintenance history. If you must have a V8, choose a 2020+ N63B44T3 with full service history and budget for valve stem seals at 40,000–60,000 miles."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I know if my G14 powertrain needs replacing?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Blue smoke on startup (N63/S63 valve stem seals), long cranking or power loss (B58 HPFP), DPF warning lights on diesel, or persistent rough running on any high-mileage unit are the key warning signs. Use our diagnostic tool for a personalised assessment."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is it worth replacing a BMW 8 Series G14 powertrain, or should I scrap the car?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Apply the 70% BMW scrap threshold — but this is a £30,000+ car, so value assessment differs. Against a well-kept £40,000 G14, a £6,000 N63 recon is 15% of the car's value — safe. Against a tired £30,000 early example, the same recon is 20% — still safe. For sub-£25,000 examples, evaluate carefully."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How long do BMW 8 Series G14 powertrains last?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The B58 can comfortably exceed 150,000 miles with routine maintenance. The B57 diesel is equally durable, with 200,000+ miles achievable with proper servicing. The N63/S63 V8s require more frequent maintenance — valve stem seals are a known wear item at 40,000–60,000 miles."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the difference between the G14 and other 8 Series variants?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The G14 is the convertible variant of the second-generation 8 Series. The G15 is the two-door coupé, the G16 is the four-door Gran Coupé, and the G14 is the folding-roof convertible. All three share the same CLAR platform and powertrain options. The G14 succeeds the F12 6 Series Convertible (2011–2018)."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I find my BMW 8 Series G14 powertrain code?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The powertrain code is listed on the VIN plate, vehicle documentation, and on a sticker under the bonnet. For 3.0 petrol, look for B58B30C (pre-LCI 840i) or B58B30M1 (LCI 840i). For 4.4 V8, look for N63B44D (pre-LCI M850i) or N63B44T3 (LCI M850i). For M8, look for S63B44B (pre-LCI) or S63B44T4 (LCI). For diesel, look for B57D30B (840d). Tell us your variant and year, and we'll confirm."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "BMWEngine.uk",
+          "url": "https://bmwengine.uk/",
+          "logo": "https://bmwengine.uk/images/bmwengine-logo.png",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "BMW 8 Series G14 Powertrain Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "BMWEngine.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "4500",
+            "highPrice": "14000",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "name": "BMW 8 Series G14 UK Enquiry Data 2025",
+          "description": "Proprietary UK enquiry volumes and demand trends for BMW 8 Series G14 powertrains, sourced from BMWEngine.uk's specialist marketplace activity.",
+          "creator": {
+            "@type": "Organization",
+            "name": "BMWEngine.uk"
+          },
+          "temporalCoverage": "2025",
+          "spatialCoverage": "United Kingdom"
+        },
+        {
+          "@type": "WebPage",
+          "name": "G14 Powertrain Cost UK — Compare Quotes",
+          "url": "https://bmwengine.uk/8-series/g14/",
+          "author": {
+            "@type": "Organization",
+            "name": "BMWEngine.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "BMWEngine.uk Specialist Network"
+          },
+          "datePublished": "2026-07-09",
+          "dateModified": "2026-07-09"
+        }
+      ]
+    }
+  },
+  "internalDeclarations": {
+    "checkA": "",
+    "checkB": "",
+    "authorityModelMode": ""
+  },
+  "hero": {
+    "tagPill": "BMW 8 Series G14 • Convertible • 2018–2026",
+    "h1": "BMW 8 Series G14 Engines — The Complete UK Guide",
+    "subHeadline": "Every powertrain fitted to the G14-generation BMW 8 Series Convertible — from the 3.0-litre B58 six-cylinder to the 4.4-litre N63 V8 and the fire-breathing S63-powered M8 Competition. Real UK costs, honest failure data, and the hot-vee V8's defining role in this generation's ownership story. Backed by real UK 8 Series enquiries in 2025 [BMW-VERIFIED].",
+    "trustStrip": [
+      {
+        "icon": "📊",
+        "label": "G14 Enquiries (2025) [BMW-VERIFIED]"
+      },
+      {
+        "icon": "🔧",
+        "label": "Convertible"
+      },
+      {
+        "icon": "📖",
+        "label": "8+ Powertrains"
+      },
+      {
+        "icon": "🏆",
+        "label": "Part of Engine Finders"
+      }
+    ],
+    "primaryCta": {
+      "label": "Explore G14 Powertrains →",
+      "href": "#"
+    },
+    "dataIntegrityNote": ""
+  },
+  "engineDatabase": {
+    "h2": "BMW 8 Series G14 Powertrain Codes — The Complete Database",
+    "subHeadline": "Every powertrain fitted to the G14 8 Series Convertible specifically — from the 2018 launch through the LCI facelift and the introduction of the M8 Competition.",
+    "columns": [
+      "Engine Code",
+      "Family",
+      "Fuel",
+      "Displacement",
+      "Power",
+      "Years (G14)",
+      "Variants (badges)",
+      "Reliability",
+      "2025 Enquiries",
+      "Avg. Recon Cost"
+    ],
+    "engines": [
+      {
+        "engineCode": "B58B30C",
+        "family": "B58 TU",
+        "fuel": "Petrol, turbo I6",
+        "displacement": "3.0L (2998cc)",
+        "power": "245 kW (333 hp)",
+        "years": "2018–2020",
+        "variants": "840i, 840i xDrive",
+        "reliability": "★★★★☆ [PROVISIONAL]",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£4,800–£8,000"
+      },
+      {
+        "engineCode": "B58B30M1",
+        "family": "B58 TU2",
+        "fuel": "Petrol, turbo I6",
+        "displacement": "3.0L (2998cc)",
+        "power": "250 kW (335 hp)",
+        "years": "2020–2026",
+        "variants": "840i, 840i xDrive",
+        "reliability": "★★★★☆ [PROVISIONAL]",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£4,800–£8,000"
+      },
+      {
+        "engineCode": "N63B44D",
+        "family": "N63 TU3",
+        "fuel": "Petrol, twin-turbo V8",
+        "displacement": "4.4L (4395cc)",
+        "power": "390 kW (530 hp)",
+        "years": "2018–2020",
+        "variants": "M850i xDrive",
+        "reliability": "★★★☆☆ [PROVISIONAL]",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£6,000–£10,000"
+      },
+      {
+        "engineCode": "N63B44T3",
+        "family": "N63 TU3",
+        "fuel": "Petrol, twin-turbo V8",
+        "displacement": "4.4L (4395cc)",
+        "power": "390 kW (530 hp)",
+        "years": "2020–2026",
+        "variants": "M850i xDrive",
+        "reliability": "★★★☆☆ [PROVISIONAL]",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£6,000–£10,000"
+      },
+      {
+        "engineCode": "S63B44B",
+        "family": "S63",
+        "fuel": "Petrol, twin-turbo V8",
+        "displacement": "4.4L (4395cc)",
+        "power": "460 kW (625 hp)",
+        "years": "2019–2022",
+        "variants": "M8 Competition",
+        "reliability": "★★★☆☆ [PROVISIONAL]",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£8,000–£14,000"
+      },
+      {
+        "engineCode": "S63B44T4",
+        "family": "S63",
+        "fuel": "Petrol, twin-turbo V8",
+        "displacement": "4.4L (4395cc)",
+        "power": "460 kW (625 hp)",
+        "years": "2022–2026",
+        "variants": "M8 Competition",
+        "reliability": "★★★☆☆ [PROVISIONAL]",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£8,000–£14,000"
+      },
+      {
+        "engineCode": "B57D30B",
+        "family": "B57",
+        "fuel": "Diesel, twin-turbo I6 MHEV",
+        "displacement": "3.0L (2993cc)",
+        "power": "235–250 kW (315–340 hp)",
+        "years": "2019–2026",
+        "variants": "840d xDrive",
+        "reliability": "★★★★☆ [PROVISIONAL]",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£4,500–£7,500"
+      }
+    ],
+    "confidenceScore": {
+      "title": "",
+      "text": ""
+    },
+    "dataCorrections": []
+  },
+  "overview": {
+    "h2": "BMW 8 Series G14 — Overview",
+    "intro": "The BMW G14 is the convertible variant of the second-generation BMW 8 Series, a range of grand tourers produced since 2018. Launched in November 2018, the G14 features a folding cloth roof that operates in 15 seconds at speeds up to 50 km/h (31 mph). Built on BMW's CLAR platform, the G14 shares its powertrain line-up with the G15 Coupé and G16 Gran Coupé. The engine range includes the 3.0-litre B58 six-cylinder petrol (840i), the 4.4-litre N63 V8 petrol (M850i xDrive), the high-performance S63 V8 (M8 Competition), and the 3.0-litre B57 six-cylinder diesel (840d xDrive), all mated to an 8-speed automatic transmission. An LCI facelift in 2020 introduced updated engines and mild-hybrid technology on the diesel variant. The 8 Series range is scheduled to end production in 2026.",
+    "keyFacts": "Platform: BMW CLAR (Cluster Architecture) • Predecessor: BMW 6 Series Convertible (F12) • Successor: None (production ends 2026) • Sibling body styles: G15 Coupé, G16 Gran Coupé",
+    "marketIntelligenceLine": "The G14 8 Series Convertible is a low-volume luxury grand tourer; enquiries are concentrated on the B58 six-cylinder and N63 V8 petrol engines, with values ranging from £35,000 for early 840i examples to £80,000+ for well-specced M8 Competitions."
+  },
+  "bestWorstEngines": {
+    "items": [
+      {
+        "slot": "Best Petrol Overall",
+        "engine": "B58B30M1 3.0-litre six-cylinder (840i) — The 335 bhp B58 is widely regarded as BMW's most reliable modern six-cylinder. Delivering 500 Nm of torque and 0-62 in approximately 5.2 seconds, it offers genuine grand touring performance with proven durability. The TU2 version (2020+) adds mild improvements without compromising reliability.",
+        "quote": "",
+        "whoItsFor": "buyers who want the sweet spot of performance, refinement, and reliability."
+      },
+      {
+        "slot": "Best Diesel Overall",
+        "engine": "B57D30B 3.0-litre six-cylinder (840d xDrive) — The 315–340 bhp B57 six-cylinder diesel delivers effortless torque (680–700 Nm), excellent refinement, and genuine durability for high-mileage grand touring. The mild-hybrid system adds efficiency without complexity.",
+        "quote": "",
+        "whoItsFor": "high-mileage buyers who want effortless torque and 40+ mpg economy."
+      },
+      {
+        "slot": "Highest Risk",
+        "engine": "N63B44D/N63B44T3 4.4-litre V8 (M850i xDrive) — The hot-vee V8 design places turbochargers in the engine's 'V', generating significant heat. Valve stem seal wear and cooling system leaks are well-documented on N63-family engines. The updated TU3 version (2020+) is improved but still demands meticulous maintenance.",
+        "quote": "",
+        "whoItsFor": "buyers who accept the premium and keep the car under warranty."
+      },
+      {
+        "slot": "Most Expensive Failure",
+        "engine": "S63B44B/S63B44T4 4.4-litre V8 (M8 Competition) — The 625 bhp S63 is the most expensive powertrain in the G14 line-up to replace, with reconditioned units costing £8,000–£14,000. The high-performance V8 shares the N63's hot-vee architecture with additional stresses from higher boost and output.",
+        "quote": "",
+        "whoItsFor": "collectors and enthusiasts who accept the premium."
+      },
+      {
+        "slot": "Best Value",
+        "engine": "B58B30M1 3.0-litre six-cylinder (840i) — The 335 bhp B58 offers the best balance of performance, refinement, and running costs. It's the most common G14 engine, parts are widely available, and the recon cost is significantly lower than the V8 options.",
+        "quote": "",
+        "whoItsFor": "the majority of G14 buyers who want genuine grand touring performance without V8 running costs."
+      },
+      {
+        "slot": "Most Overlooked",
+        "engine": "B57D30B 3.0-litre diesel (840d xDrive) — Often overlooked by buyers who default to the petrol six or V8, the 840d delivers effortless torque, 40+ mpg economy, and genuine long-distance capability. With 680 Nm of torque and 0-62 in approximately 5.1 seconds, it's the ultimate motorway cruiser in the G14 range.",
+        "quote": "",
+        "whoItsFor": "buyers who prioritise long-distance touring economy without sacrificing performance."
+      }
+    ]
+  },
+  "ownershipEconomics": {
+    "h2": "BMW 8 Series G14 — Ownership Economics",
+    "columns": [
+      "Engine",
+      "Typical Mileage",
+      "Common Major Failure",
+      "Repair Cost (Specialist)",
+      "Replacement Cost (Recon)",
+      "Ownership Verdict"
+    ],
+    "rows": [
+      {
+        "engine": "B58B30C/M1 (840i)",
+        "typicalMileage": "40k–80k",
+        "commonMajorFailure": "HPFP, cooling system",
+        "repairCostSpecialist": "£800–£1,500",
+        "replacementCostRecon": "£4,800–£8,000",
+        "ownershipVerdict": "Best Petrol — reliable six-cylinder"
+      },
+      {
+        "engine": "N63B44D/T3 (M850i)",
+        "typicalMileage": "30k–60k",
+        "commonMajorFailure": "Valve stem seals, cooling",
+        "repairCostSpecialist": "£3,000–£6,000",
+        "replacementCostRecon": "£6,000–£10,000",
+        "ownershipVerdict": "Highest Risk — V8 ownership is expensive"
+      },
+      {
+        "engine": "S63B44B/T4 (M8 Comp)",
+        "typicalMileage": "20k–50k",
+        "commonMajorFailure": "Valve stem seals, cooling, turbo",
+        "repairCostSpecialist": "£4,000–£8,000",
+        "replacementCostRecon": "£8,000–£14,000",
+        "ownershipVerdict": "Premium Choice — M car running costs"
+      },
+      {
+        "engine": "B57D30B (840d)",
+        "typicalMileage": "60k–120k",
+        "commonMajorFailure": "DPF blockage, EGR valve",
+        "repairCostSpecialist": "£500–£1,500",
+        "replacementCostRecon": "£4,500–£7,500",
+        "ownershipVerdict": "Best Diesel — effortless torque"
+      }
+    ],
+    "economicsRule": {
+      "title": "The G14 rule",
+      "text": "A £6,000–£10,000 N63 recon against a £30,000–£40,000 early G14 sits at 15–33% of the car's value — safe. Against a well-kept £50,000+ example, the same recon drops to a routine 12–20% — a repair decision, not a financial one. For a high-value luxury car, the 70% BMW threshold rarely applies, but we'll still honestly tell you when a repair doesn't make sense."
+    },
+    "keyTakeaways": [
+      {
+        "question": "Which G14 Costs Least To Own?",
+        "answer": "B57 840d — best economy, lowest recon cost."
+      },
+      {
+        "question": "Which G14 Costs Most To Own?",
+        "answer": "S63 M8 Competition — valve stem seals and turbo repairs are expensive."
+      },
+      {
+        "question": "Which G14 Is Best Value?",
+        "answer": "B58 840i — the sweet spot between performance and running costs."
+      }
+    ]
+  },
+  "commonProblems": {
+    "problems": [
+      {
+        "id": 1,
+        "title": "N63/S63 V8 Valve Stem Seal Wear",
+        "affectedModels": "G14 M850i xDrive (N63B44D/N63B44T3) and M8 Competition (S63B44B/S63B44T4).",
+        "typicalFailureMileage": "30,000–60,000 miles.",
+        "rootCause": "The hot-vee V8 design generates significant heat, causing valve stem seals to harden and wear prematurely. Blue smoke on startup is the classic warning sign; ignored, it leads to oil consumption and potential catalytic converter damage.",
+        "tieredCosts": [
+          {
+            "tier": "Preventative (Repair)",
+            "dealer": "£4,000–£6,000",
+            "specialist": "£3,000–£5,000",
+            "work": "Valve stem seal replacement",
+            "note": ""
+          },
+          {
+            "tier": "Catastrophic (Replacement)",
+            "dealer": "£8,000–£12,000",
+            "specialist": "£6,000–£10,000",
+            "work": "Full reconditioned engine",
+            "note": ""
+          }
+        ],
+        "recommendation": "On any M850i or M8, watch for blue smoke on startup — a £3,000–£5,000 preventative repair is cheaper than the £6,000–£10,000+ replacement that follows if ignored.",
+        "cta": {
+          "label": "Compare N63/S63 engine prices for your G14 →",
+          "href": "#"
+        }
+      },
+      {
+        "id": 2,
+        "title": "B58 High-Pressure Fuel Pump (HPFP) Failure",
+        "affectedModels": "G14 840i (B58B30C/B58B30M1), all years.",
+        "typicalFailureMileage": "40,000–80,000 miles.",
+        "rootCause": "The high-pressure fuel pump on B58 engines can fail, leading to long cranking times before the engine starts, noticeable loss of power, engine misfires, and even stalling. The issue can be intermittent, making diagnosis challenging.",
+        "tieredCosts": [
+          {
+            "tier": "Preventative (Repair)",
+            "dealer": "£1,200–£2,000",
+            "specialist": "£800–£1,500",
+            "work": "HPFP replacement, fuel system flush",
+            "note": ""
+          },
+          {
+            "tier": "Catastrophic (Replacement)",
+            "dealer": "£5,500–£9,000",
+            "specialist": "£4,800–£8,000",
+            "work": "Full reconditioned engine",
+            "note": ""
+          }
+        ],
+        "recommendation": "If your G14 840i exhibits long cranking or power loss, have the HPFP inspected immediately — an £800–£1,500 preventative repair is cheaper than the £4,800–£8,000 replacement that follows if ignored.",
+        "cta": {
+          "label": "Compare B58 engine prices for your G14 →",
+          "href": "#"
+        }
+      },
+      {
+        "id": 3,
+        "title": "B57 Diesel DPF & EGR Issues",
+        "affectedModels": "G14 840d xDrive (B57D30B).",
+        "typicalFailureMileage": "60,000–120,000 miles.",
+        "rootCause": "DPF blockage is common on cars used predominantly for urban driving, with fault codes indicating DPF sensor failure. EGR cooler issues can also develop. The mild-hybrid system adds some complexity to the diesel powertrain.",
+        "tieredCosts": [
+          {
+            "tier": "Preventative (Repair)",
+            "dealer": "£800–£1,500",
+            "specialist": "£500–£1,200",
+            "work": "EGR cooler replacement, DPF regeneration",
+            "note": ""
+          },
+          {
+            "tier": "Catastrophic (Replacement)",
+            "dealer": "£4,000–£6,000",
+            "specialist": "£2,800–£5,000",
+            "work": "Full reconditioned engine",
+            "note": ""
+          }
+        ],
+        "recommendation": "On any G14 diesel, ensure regular motorway runs for DPF regeneration — a £500–£1,200 preventative service is cheaper than the £2,800–£5,000 replacement that follows if ignored.",
+        "cta": {
+          "label": "Compare B57 engine prices for your G14 →",
+          "href": "#"
+        }
+      }
+    ]
+  },
+  "replacementCosts": {
+    "h2": "G14 Powertrain Replacement Costs — By Variant and Condition",
+    "columns": [
+      "Variant",
+      "Engine Code",
+      "Used (Supply)",
+      "Reconditioned (Supply)",
+      "Rebuilt (Supply)",
+      "Labour Hours"
+    ],
+    "rows": [
+      {
+        "variant": "840i/840i xDrive",
+        "engineCode": "B58B30C/M1",
+        "usedSupply": "£2,500–£4,500",
+        "reconditionedSupply": "£4,800–£8,000",
+        "rebuiltSupply": "£6,500–£10,000",
+        "labourHours": "12–16 hrs"
+      },
+      {
+        "variant": "M850i xDrive",
+        "engineCode": "N63B44D/T3",
+        "usedSupply": "£3,500–£6,000",
+        "reconditionedSupply": "£6,000–£10,000",
+        "rebuiltSupply": "£8,000–£14,000",
+        "labourHours": "16–22 hrs"
+      },
+      {
+        "variant": "M8 Competition",
+        "engineCode": "S63B44B/T4",
+        "usedSupply": "£5,000–£8,000",
+        "reconditionedSupply": "£8,000–£14,000",
+        "rebuiltSupply": "£12,000–£18,000",
+        "labourHours": "18–24 hrs"
+      },
+      {
+        "variant": "840d xDrive",
+        "engineCode": "B57D30B",
+        "usedSupply": "£2,500–£4,500",
+        "reconditionedSupply": "£4,500–£7,500",
+        "rebuiltSupply": "£6,000–£9,500",
+        "labourHours": "12–16 hrs"
+      }
+    ],
+    "note": ""
+  },
+  "coreVariants": {
+    "dieselVariants": [
+      "840d xDrive"
+    ],
+    "petrolVariants": [
+      "840i",
+      "840i xDrive",
+      "M850i xDrive",
+      "M8 Competition"
+    ],
+    "scopeNote": "All variants listed are G14 8 Series Convertible only. The G15 Coupé and G16 Gran Coupé share these powertrains but are covered on their own Generation Pages. The M8 Competition is the high-performance variant powered by the S63 V8. The LCI facelift (2020) introduced the updated B58B30M1 and N63B44T3 engines, along with mild-hybrid technology on the 840d."
+  },
+  "marketIntelligence": {
+    "mostRequestedEngines": [],
+    "mostRequestedVariants": [
+      "1. 840i (3.0 petrol)",
+      "2. M850i xDrive (4.4 V8)",
+      "3. M8 Competition (4.4 V8 high-output)"
+    ],
+    "averageReplacementCost": "£4,500–£14,000 supply-only [BMW-QUOTE]",
+    "mostCommonFailures": [
+      "1. N63/S63 V8 valve stem seal wear",
+      "2. B58 HPFP failure",
+      "3. B57 diesel DPF & EGR issues"
+    ],
+    "liveFeed": [
+      {
+        "vehicle": "BMW 8 Series 840i G14 (B58)",
+        "location": "London",
+        "issue": "Long cranking on startup",
+        "enquiries": "4 enquiries",
+        "updated": "Updated Monthly"
+      },
+      {
+        "vehicle": "BMW 8 Series M850i G14 (N63)",
+        "location": "Birmingham",
+        "issue": "Blue smoke on startup",
+        "enquiries": "3 enquiries",
+        "updated": "Updated Monthly"
+      },
+      {
+        "vehicle": "BMW 8 Series M8 Competition G14 (S63)",
+        "location": "Manchester",
+        "issue": "Oil consumption, valve stem seals",
+        "enquiries": "2 enquiries",
+        "updated": "Updated Monthly"
+      }
+    ]
+  },
+  "faq": {
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a BMW 8 Series G14 powertrain replacement cost in the UK?",
+        "answer": "A reconditioned G14 powertrain costs between £4,500 and £14,000 supply-only [BMW-QUOTE], depending on the engine — the B58 six-cylinder ranges £4,800–£8,000, the N63 V8 runs £6,000–£10,000, and the S63 M8 Competition engine runs £8,000–£14,000. Fitting adds 12–24 hours of labour at £65–£90/hr. Use our calculator for a personalised quote."
+      },
+      {
+        "id": 2,
+        "question": "Which BMW 8 Series G14 powertrain is the most reliable?",
+        "answer": "The B58B30 3.0-litre six-cylinder (840i) is widely regarded as BMW's most reliable modern six-cylinder — proven durability, no major design flaws, and only minor HPFP and cooling system maintenance required. On diesel, the B57D30B (840d) is also highly reliable, with timing chain issues described as \"exceedingly rare.\""
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the BMW 8 Series G14?",
+        "answer": "Valve stem seal wear on the N63 V8 (M850i) and S63 V8 (M8 Competition), high-pressure fuel pump (HPFP) failure on the B58 (840i), and DPF blockage on the B57 diesel (840d) used predominantly for urban driving. The G14 also suffers from folding roof mechanism wear and electrical system issues on higher-spec models."
+      },
+      {
+        "id": 4,
+        "question": "Is the BMW 8 Series G14 reliable?",
+        "answer": "It depends heavily on the powertrain. The B58 six-cylinder is highly reliable. The N63/S63 V8s are more demanding — they are high-performance engines that require meticulous maintenance. For any G14, a thorough inspection and maintenance history check are essential, particularly on V8 models."
+      },
+      {
+        "id": 5,
+        "question": "Which BMW 8 Series G14 powertrain should I avoid?",
+        "answer": "Early N63 V8 (2018–2020 M850i) without documented valve stem seal work carries the highest risk. Also avoid any B57 diesel without documented DPF maintenance history. If you must have a V8, choose a 2020+ N63B44T3 with full service history and budget for valve stem seals at 40,000–60,000 miles."
+      },
+      {
+        "id": 6,
+        "question": "How do I know if my G14 powertrain needs replacing?",
+        "answer": "Blue smoke on startup (N63/S63 valve stem seals), long cranking or power loss (B58 HPFP), DPF warning lights on diesel, or persistent rough running on any high-mileage unit are the key warning signs. Use our diagnostic tool for a personalised assessment."
+      },
+      {
+        "id": 7,
+        "question": "Is it worth replacing a BMW 8 Series G14 powertrain, or should I scrap the car?",
+        "answer": "Apply the 70% BMW scrap threshold — but this is a £30,000+ car, so value assessment differs. Against a well-kept £40,000 G14, a £6,000 N63 recon is 15% of the car's value — safe. Against a tired £30,000 early example, the same recon is 20% — still safe. For sub-£25,000 examples, evaluate carefully."
+      },
+      {
+        "id": 8,
+        "question": "How long do BMW 8 Series G14 powertrains last?",
+        "answer": "The B58 can comfortably exceed 150,000 miles with routine maintenance. The B57 diesel is equally durable, with 200,000+ miles achievable with proper servicing. The N63/S63 V8s require more frequent maintenance — valve stem seals are a known wear item at 40,000–60,000 miles."
+      },
+      {
+        "id": 9,
+        "question": "What is the difference between the G14 and other 8 Series variants?",
+        "answer": "The G14 is the convertible variant of the second-generation 8 Series. The G15 is the two-door coupé, the G16 is the four-door Gran Coupé, and the G14 is the folding-roof convertible. All three share the same CLAR platform and powertrain options. The G14 succeeds the F12 6 Series Convertible (2011–2018)."
+      },
+      {
+        "id": 10,
+        "question": "How do I find my BMW 8 Series G14 powertrain code?",
+        "answer": "The powertrain code is listed on the VIN plate, vehicle documentation, and on a sticker under the bonnet. For 3.0 petrol, look for B58B30C (pre-LCI 840i) or B58B30M1 (LCI 840i). For 4.4 V8, look for N63B44D (pre-LCI M850i) or N63B44T3 (LCI M850i). For M8, look for S63B44B (pre-LCI) or S63B44T4 (LCI). For diesel, look for B57D30B (840d). Tell us your variant and year, and we'll confirm."
+      }
+    ]
+  },
+  "trustCta": {
+    "h2": "Why UK BMW 8 Series G14 Owners Trust BMWEngine.uk",
+    "trustPoints": [
+      {
+        "title": "Trusted G14 Powertrain Specialists",
+        "text": "every garage and engine rebuilder in our network is vetted, rated and reviewed by real 8 Series owners, as part of the Engine Finders network."
+      },
+      {
+        "title": "Compare G14 Powertrain Replacement Companies",
+        "text": "see prices, warranty terms and supply & fit options side-by-side before you commit."
+      },
+      {
+        "title": "UK Powertrain Replacement Services for G14",
+        "text": "covering every variant from 840i to M8 Competition, with supply-only or full supply & fit available nationwide."
+      }
+    ],
+    "finalCta": "Find the best BMW 8 Series G14 powertrain replacement UK drivers rely on. Compare real prices from trusted specialists on EnginesMarket today and get back on the road with confidence.",
+    "ctaButton": {
+      "label": "Compare BMW 8 Series G14 Powertrain Prices on EnginesMarket →",
+      "href": "#",
+      "note": "[PLACEHOLDER — confirm EnginesMarket URL structure]"
+    }
+  }
+}

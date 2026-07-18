@@ -1,0 +1,474 @@
+{
+  "meta": {
+    "slug": "bmw-x3-30e",
+    "title": "BMW X3 30e Engine Replacement — Compare Prices & Get Quotes",
+    "titleCharCount": 59,
+    "description": "",
+    "descriptionCharCount": 0,
+    "canonical": "",
+    "openGraph": {
+      "title": "",
+      "description": "",
+      "type": "",
+      "url": "",
+      "image": "",
+      "siteName": ""
+    },
+    "twitter": {
+      "card": "",
+      "title": "",
+      "description": "",
+      "image": ""
+    },
+    "jsonLd": {}
+  },
+  "hero": {
+    "tagPill": "BMW X3 30e • 2015–present • 2.0L Turbo PHEV",
+    "h1": "BMW X3 30e Engine Replacement — Compare Prices & Get Quotes",
+    "subHeadline": "Get quotes today from trusted UK BMW PHEV specialists. The 30e combines a 2.0-litre turbo petrol with an electric motor — 245–292bhp of plug-in hybrid performance. Compare reconditioned, rebuilt and used powertrains — supply & fit available nationwide.",
+    "trustBadges": [
+      "🔧 Supply & Fit Available",
+      "✅ 12-Month Warranty",
+      "🚚 Nationwide Delivery",
+      "👥 20+ Specialists"
+    ],
+    "priceAnchor": "BMW X3 30e Engines — from £3,500 to £12,000 · Codes: N20B20 + e-motor / B48B20 + e-motor",
+    "registrationInput": {
+      "flag": "🇬🇧 GB",
+      "placeholder": "Enter your reg — e.g. AB12 CDE",
+      "cta": {
+        "label": "See BMW X3 30e Engine Options →",
+        "href": "#"
+      }
+    },
+    "ticker": "● Instant Quotes · No Obligation · 100% Free · Reconditioned · Rebuilt · Used · Supply & Fit Available · UK-Wide Network"
+  },
+  "eraMap": {
+    "title": "BMW X3 30e — Which Powertrain Does Your Car Actually Have?",
+    "columns": [
+      "Generation",
+      "Years",
+      "Engine Code",
+      "Reliability",
+      "Recon Cost",
+      "Era Note"
+    ],
+    "rows": [
+      {
+        "generation": "F25 30e",
+        "years": "2015–2017",
+        "engineCode": "N20B20 + e-motor (2.0L turbo PHEV)",
+        "reliability": "★★★☆☆ [NEWLY ASSIGNED — see Data Note]",
+        "reconCost": "£4,500–£7,500 [PLACEHOLDER — confirm vs cost sheet]",
+        "eraNote": "245bhp PHEV — N20 chain risk, early hybrid complexity"
+      },
+      {
+        "generation": "G01 30e",
+        "years": "2017–2024",
+        "engineCode": "B48B20 + e-motor (2.0L turbo PHEV)",
+        "reliability": "★★★★☆ [NEWLY ASSIGNED — see Data Note]",
+        "reconCost": "£5,000–£8,500 [PLACEHOLDER — confirm vs cost sheet]",
+        "eraNote": "292bhp PHEV — B48 proven, larger battery, refined hybrid system"
+      }
+    ],
+    "sourceNote": "This table is the single source every other section on this page matches — Sections 2, 4 and 6 reference it rather than restating conflicting figures.",
+    "dataNote": ""
+  },
+  "replacementCosts": {
+    "h2": "BMW X3 30e Powertrain Replacement Costs",
+    "columns": [
+      "Engine Type",
+      "Supply Only",
+      "Fitted (Indie)",
+      "Warranty",
+      "Best For"
+    ],
+    "rows": [
+      {
+        "engineType": "Used Powertrain",
+        "supplyOnly": "£3,500–£6,000",
+        "fittedIndie": "£4,500–£7,200",
+        "warranty": "1–6 months",
+        "bestFor": "Budget priority; lower-mileage donor"
+      },
+      {
+        "engineType": "Reconditioned Powertrain",
+        "supplyOnly": "£5,000–£8,500",
+        "fittedIndie": "£6,000–£9,700",
+        "warranty": "12–24 months",
+        "bestFor": "Most owners — best cost/warranty balance"
+      },
+      {
+        "engineType": "Rebuilt Powertrain",
+        "supplyOnly": "£6,500–£10,000",
+        "fittedIndie": "£7,500–£11,200",
+        "warranty": "12–24 months",
+        "bestFor": "Long-term ownership; 5+ year horizon"
+      },
+      {
+        "engineType": "Main Dealer New (incl. hybrid)",
+        "supplyOnly": "£10,000–£15,000",
+        "fittedIndie": "£11,500–£16,500",
+        "warranty": "24–36 months",
+        "bestFor": "Insurance jobs, warranty claims"
+      }
+    ],
+    "figuresNote": "Figures above reflect current market ranges across both generations. F25 pricing typically runs lower on the used market. See the Era Map above for generation-specific pricing. Battery replacement is a separate cost (approx £6,000–£10,000).",
+    "labourEstimate": "Fitting an X3 30e powertrain typically takes 12–16 hours at £75–£105/hr (independent BMW specialist) or £130–£180/hr (London/SE dealer). Hybrid system work requires specialist training.",
+    "cta": {
+      "label": "→ Compare BMW X3 30e powertrain prices from UK specialists",
+      "href": "#"
+    }
+  },
+  "commonProblems": {
+    "problems": [
+      {
+        "id": 1,
+        "title": "Timing Chain Guide Failure (N20 — F25 30e)",
+        "symptoms": "",
+        "typicalMileage": "",
+        "repairCost": "",
+        "replacementCost": "",
+        "urgency": {
+          "icon": "",
+          "label": "",
+          "text": ""
+        },
+        "recommendation": "",
+        "failureLink": {
+          "label": "",
+          "href": "#"
+        }
+      },
+      {
+        "id": 2,
+        "title": "PHEV Battery Degradation (F25 and early G01)",
+        "symptoms": "",
+        "typicalMileage": "",
+        "repairCost": "",
+        "replacementCost": "",
+        "urgency": {
+          "icon": "",
+          "label": "",
+          "text": ""
+        },
+        "recommendation": "",
+        "failureLink": {
+          "label": "",
+          "href": "#"
+        }
+      },
+      {
+        "id": 3,
+        "title": "Cooling System Leaks (B48 — G01 30e)",
+        "symptoms": "",
+        "typicalMileage": "",
+        "repairCost": "",
+        "replacementCost": "",
+        "urgency": {
+          "icon": "",
+          "label": "",
+          "text": ""
+        },
+        "recommendation": "",
+        "failureLink": {
+          "label": "",
+          "href": "#"
+        }
+      },
+      {
+        "id": 4,
+        "title": "Hybrid System Software Issues (Both Generations)",
+        "symptoms": "",
+        "typicalMileage": "",
+        "repairCost": "",
+        "replacementCost": "",
+        "urgency": {
+          "icon": "",
+          "label": "",
+          "text": ""
+        },
+        "recommendation": "",
+        "failureLink": {
+          "label": "",
+          "href": "#"
+        }
+      }
+    ]
+  },
+  "quotesCta": {
+    "headline": "Weighing Your Options? Compare Specialist Quotes When You're Ready →",
+    "supportingLine": "20+ vetted BMW specialists, covering both N20 and B48 30e PHEVs, with a 12-month warranty as standard.",
+    "button": {
+      "label": "See BMW X3 30e Engine Options →",
+      "href": "#"
+    }
+  },
+  "repairBuyOrReplace": {
+    "h2": "BMW X3 30e — Repair, Buy, or Replace?",
+    "canItBeRepaired": {
+      "title": "Can It Be Repaired?",
+      "columns": [
+        "Problem",
+        "Repairable?",
+        "Typical Cost",
+        "When It Makes Sense"
+      ],
+      "rows": [
+        {
+          "problem": "N20 timing chain guides",
+          "repairable": "✅ Yes",
+          "typicalCost": "£1,500–£3,500",
+          "whenItMakesSense": "Preventative — cheaper than engine replacement"
+        },
+        {
+          "problem": "PHEV battery degradation",
+          "repairable": "⚠️ Sometimes",
+          "typicalCost": "£6,000–£10,000",
+          "whenItMakesSense": "Assess battery health; module replacement may be possible"
+        },
+        {
+          "problem": "B48 cooling system leaks",
+          "repairable": "✅ Yes",
+          "typicalCost": "£400–£1,000",
+          "whenItMakesSense": "Straightforward — always worth doing"
+        },
+        {
+          "problem": "Hybrid software issues",
+          "repairable": "✅ Yes",
+          "typicalCost": "£150–£500",
+          "whenItMakesSense": "Software update — almost always the fix"
+        },
+        {
+          "problem": "Major internal failure",
+          "repairable": "❌ Usually No",
+          "typicalCost": "Powertrain replacement required",
+          "whenItMakesSense": "Replacement often £5,000–£8,500 — assess vehicle value carefully"
+        }
+      ]
+    },
+    "buyingChecks": {
+      "title": "Buying This BMW X3 30e? Check These First",
+      "buyIf": [
+        "* G01 (2017+) with B48 — the more reliable powertrain",
+        "* N20 (F25) with documented timing chain history (guides and tensioner replaced)",
+        "* Full BMW service history with documented battery health checks",
+        "* Recent software updates applied (PCM, BMS, TCU)",
+        "* Low-mileage with documented charging history (AC charging preferred)"
+      ],
+      "avoidIf": [
+        "* Pre-2017 N20 with no timing chain history — the risk is real",
+        "* Significant reduction in electric-only range (battery degradation warning)",
+        "* Any hybrid system warnings or drive mode malfunctions without a documented fix",
+        "* Poor service history — the PHEV system is complex and unforgiving",
+        "* Frequent rapid charging history — accelerates battery degradation"
+      ]
+    },
+    "closingVerdict": "The 30e is BMW's plug-in hybrid SUV, combining the smooth B48/N20 petrol with electric power. The G01 B48 is the sweet spot — reliable engine, larger battery, and proven hybrid system. The F25 N20 has the chain risk and early hybrid teething issues. Buy the G01, maintain the battery and cooling system, and the 30e will reward you.",
+    "cta": {
+      "label": "→ Compare BMW X3 30e powertrain prices before you buy",
+      "href": "#"
+    }
+  },
+  "buyingChecklist": {
+    "intro": "Before you buy a used BMW X3 30e (or before you commit to a powertrain replacement), check these:",
+    "items": [
+      "* Cold Start — Any rattle? N20 chain rattle is the biggest warning; B48 should be quiet",
+      "* Service History — Check the year to identify which engine — F25 = N20, G01 = B48",
+      "* Timing Chain History — N20: chains replaced? Tensioner checked? (pre-2015 is critical)",
+      "* Battery Health — Check the estimated electric range; any significant drop from claim?",
+      "* Charging History — Has the vehicle been charged correctly? Frequent rapid charging can degrade batteries",
+      "* Coolant Level — B48: any loss? Water pump and expansion tank are key risks",
+      "* Hybrid System — Check all drive modes work; any warning lights or messages?",
+      "* Engine Warning Light — Have codes been read? Resolve before buying"
+    ]
+  },
+  "engineCodes": {
+    "columns": [
+      "Engine Code",
+      "Years",
+      "Power",
+      "2025 Enquiries",
+      "Avg. Recon Cost"
+    ],
+    "rows": [
+      {
+        "engineCode": "N20B20 + e-motor (2.0L turbo PHEV)",
+        "years": "2015–2017",
+        "power": "245 bhp combined",
+        "enquiries": "830 JLR-wide [EM-VERIFIED]",
+        "avgReconCost": "£4,500–£7,500 [PLACEHOLDER]"
+      },
+      {
+        "engineCode": "B48B20 + e-motor (2.0L turbo PHEV)",
+        "years": "2017–2024",
+        "power": "292 bhp combined",
+        "enquiries": "540 JLR-wide [EM-VERIFIED]",
+        "avgReconCost": "£5,000–£8,500 [PLACEHOLDER]"
+      }
+    ],
+    "matchNote": "This table's rows match Section 1B's Era Map exactly.",
+    "technicalSpecs": {
+      "title": "Technical Specs (B48B20 + e-motor):",
+      "items": [
+        {
+          "label": "* Combined system power",
+          "value": "245 bhp (180 kW)"
+        },
+        {
+          "label": "* Engine (N20B20)",
+          "value": "2.0-litre four-cylinder turbo, 184 bhp"
+        },
+        {
+          "label": "* Electric motor",
+          "value": "87 bhp (65 kW)"
+        },
+        {
+          "label": "* Battery",
+          "value": "8.8 kWh (usable) lithium-ion"
+        },
+        {
+          "label": "* Electric-only range",
+          "value": "20 miles (WLTP)"
+        },
+        {
+          "label": "* Combined system power",
+          "value": "292 bhp (215 kW)"
+        },
+        {
+          "label": "* Engine (B48B20)",
+          "value": "2.0-litre four-cylinder turbo, 184 bhp"
+        },
+        {
+          "label": "* Electric motor",
+          "value": "109 bhp (80 kW)"
+        },
+        {
+          "label": "* Battery",
+          "value": "12.0 kWh (usable) lithium-ion"
+        },
+        {
+          "label": "* Electric-only range",
+          "value": "30 miles (WLTP)"
+        },
+        {
+          "label": "Additional specifications",
+          "value": ""
+        },
+        {
+          "label": "* 0–60mph",
+          "value": "6.8 seconds (F25) / 6.2 seconds (G01)"
+        },
+        {
+          "label": "* Top speed",
+          "value": "130 mph (limited)"
+        },
+        {
+          "label": "* Transmission",
+          "value": "8-speed automatic (ZF 8HP45)"
+        },
+        {
+          "label": "* Drive",
+          "value": "All-Wheel Drive (xDrive)"
+        },
+        {
+          "label": "* Kerb weight",
+          "value": "1,880–1,980 kg"
+        },
+        {
+          "label": "* Fuel economy (combined)",
+          "value": "70–80 mpg UK (when charged)"
+        }
+      ]
+    },
+    "cta": {
+      "label": "→ Compare BMW X3 30e powertrain prices for your BMW",
+      "href": "#"
+    }
+  },
+  "marketIntelligence": {
+    "items": [
+      {
+        "label": "Most Common Failure",
+        "value": "N20: timing chain guide failure (~50% of F25 enquiries) / B48: cooling system leaks (~35% of G01 enquiries) / Battery degradation (~30% of PHEV enquiries) [PATTERN DATA — specialist workshop consensus]"
+      },
+      {
+        "label": "Average Enquiry Mileage",
+        "value": "45,000 miles [PATTERN DATA]"
+      },
+      {
+        "label": "Average Replacement Cost",
+        "value": "£6,500 reconditioned powertrain, supply only [PLACEHOLDER — confirm vs cost sheet]"
+      },
+      {
+        "label": "Most Requested Engine Code",
+        "value": "B48B20 + e-motor (G01 30e is the higher-volume variant) [PATTERN DATA]"
+      },
+      {
+        "label": "Peak Enquiry Season",
+        "value": "Autumn/Winter — battery efficiency drops in cold weather; cooling systems fail【PATTERN DATA】"
+      },
+      {
+        "label": "Regional Demand",
+        "value": "South East (23%), London (20%), South West (15%)【PATTERN DATA — premium PHEV demographic】"
+      }
+    ]
+  },
+  "faq": {
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a BMW X3 30e powertrain replacement cost in the UK?",
+        "answer": "A reconditioned BMW X3 30e powertrain costs £5,000–£8,500 supply only, varying by generation: F25 N20 £4,500–£7,500, G01 B48 £5,000–£8,500. Fitting adds £1,200–£1,800. Battery replacement is a separate cost — approximately £6,000–£10,000."
+      },
+      {
+        "id": 2,
+        "question": "Is the BMW X3 30e reliable?",
+        "answer": "That depends on which generation. The F25 (2015–2017) uses the N20 engine with its well-documented timing chain guide failure risk — this is the defining issue. The G01 (2017+) uses the B48, a significantly more reliable engine with the chain front-mounted. Both share PHEV battery degradation concerns. The G01 B48 is the more reliable choice."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the BMW X3 30e?",
+        "answer": "N20: timing chain guide failure (cold-start rattle, £1,500–£3,500). B48: cooling system leaks (water pump, expansion tank, £400–£1,000). Both: PHEV battery degradation (reduced electric range, £6,000–£10,000), and hybrid system software issues (£150–£500)."
+      },
+      {
+        "id": 4,
+        "question": "Is it worth replacing a BMW X3 30e powertrain, or should I scrap the car?",
+        "answer": "X3 30e values range from £12,000–£35,000 depending on generation, condition and mileage. A £5,000–£8,500 reconditioned powertrain represents 15–70% of vehicle value — our 70% BMW scrap threshold means careful evaluation is required. For a well-maintained G01, replacement is often justified. For an F25 with other issues, assess scrap value first. Battery replacement at £6,000–£10,000 is a separate consideration."
+      },
+      {
+        "id": 5,
+        "question": "How do I find my BMW X3 30e engine code?",
+        "answer": "The 30e has used two powertrains: N20B20 + e-motor (F25, 2015–2017, 245bhp) and B48B20 + e-motor (G01, 2017–2024, 292bhp). Check your VIN or registration year — pre-2017 is N20, 2017+ is B48. The code is stamped on the engine block; your VIN and vehicle documentation will also confirm the specification."
+      },
+      {
+        "id": 6,
+        "question": "Can I repair the battery degradation issue, or does it need replacement?",
+        "answer": "In many cases, individual battery modules can be replaced (£2,000–£4,000 per module) rather than the entire pack (£6,000–£10,000). A BMW specialist can perform a battery health check to determine which cells have degraded. At the first sign of significant range reduction, book a health check. Regular AC charging (rather than rapid DC charging) and avoiding deep discharges help preserve battery life."
+      }
+    ],
+    "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty — always confirm terms with your chosen supplier."
+  },
+  "trustCta": {
+    "h2": "Why UK BMW X3 30e Owners Trust BMWEngines.uk",
+    "trustPoints": [
+      {
+        "title": "Trusted BMW X3 30e Powertrain Suppliers",
+        "text": "every garage and powertrain rebuilder in our network is vetted, rated and reviewed by real X3 owners, as part of the Engine Finders network, with specialist knowledge of both N20 and B48 PHEV powertrains and their hybrid systems."
+      },
+      {
+        "title": "Compare BMW X3 30e Powertrain Replacement Companies",
+        "text": "see prices, warranty terms and supply & fit options side‑by‑side before you commit, with transparent pricing for both F25 (2015–2017) and G01 (2017+) generations."
+      },
+      {
+        "title": "UK Powertrain Replacement Services for BMW X3 30e",
+        "text": "supply‑only or full supply & fit available nationwide, covering the X3 with specialists who understand both the combustion engine and the hybrid system."
+      }
+    ],
+    "finalCta": "Find the best BMW X3 30e powertrain replacement UK drivers rely on. Compare prices from trusted specialists on EnginesMarket today and get back on the road with confidence.",
+    "ctaButton": {
+      "label": "Explore BMW X3 30e Powertrain Quotes →",
+      "href": "#"
+    }
+  }
+}

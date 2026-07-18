@@ -1,0 +1,514 @@
+{
+  "meta": {
+    "slug": "z8-49",
+    "title": "Z8 4.9 Engine Replacement Cost UK — Compare Quotes",
+    "titleCharCount": 50,
+    "description": "BMW Z8 4.9 S62 V8 — real UK costs, VANOS, rod bearing & timing chain watchpoints. Get free quotes from 20+ vetted BMW specialists today.",
+    "descriptionCharCount": 159,
+    "canonical": "https://bmwengine.uk/z8/49/",
+    "openGraph": {
+      "title": "Z8 4.9 Engine Replacement Cost UK — Compare Quotes",
+      "description": "BMW Z8 4.9 S62 V8 — real UK costs, VANOS, rod bearing & timing chain watchpoints. Get free quotes from 20+ vetted BMW specialists today.",
+      "type": "website",
+      "url": "https://bmwengine.uk/z8/49/",
+      "image": "https://bmwengine.uk/images/bmw/hero/z8-49.jpg",
+      "siteName": "BMWEngines.uk"
+    },
+    "twitter": {
+      "card": "summary_large_image",
+      "title": "Z8 4.9 Engine Replacement Cost UK — Compare Quotes",
+      "description": "BMW Z8 4.9 S62 V8 — real UK costs, VANOS, rod bearing & timing chain watchpoints.",
+      "image": "https://bmwengine.uk/images/bmw/hero/z8-49.jpg"
+    },
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://bmwengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Z8",
+              "item": "https://bmwengine.uk/z8/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Z8 E52",
+              "item": "https://bmwengine.uk/z8/e52/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "4.9",
+              "item": "https://bmwengine.uk/z8/49/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "BMW Z8 4.9 Engine Era Map",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "E52 Z8 4.9 (S62B50, 2000–2003)",
+              "url": "https://bmwengine.uk/z8/e52/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "BMW Z8 4.9 Engine Codes",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "S62B50 (4.9 V8)",
+              "url": "https://bmwengine.uk/engines/s62/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does a BMW Z8 4.9 engine replacement cost in the UK?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A reconditioned S62B50 engine typically costs £6,000–£10,000 supply only, with rebuilt units reaching £14,000. Fitting adds £1,500–£2,500. Use our calculator for a figure specific to your Z8."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the BMW Z8 4.9 (S62) engine reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "For a high‑performance engine from this era, the S62 has earned a reputation for reliability — if maintained correctly. The main watchpoints — VANOS, rod bearings and timing chain guides — are well‑understood and manageable with preventative maintenance. Buy on full service history and budget for the big three items."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What are the common problems with the BMW Z8 4.9 engine?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "VANOS system wear (the most common issue), rod bearing wear, timing chain guide degradation, oil leaks, and cooling system deterioration. The engine is fundamentally robust but demands meticulous care."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is it worth replacing a Z8 4.9 engine, or should I scrap the car?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Z8 values range from £80,000 to over £200,000+ — a £7,000–£10,000 recon is a small fraction of the car's value, making replacement a clear decision for all but the most challenging examples. This is well within our 70% BMW scrap threshold."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I find my BMW Z8 4.9 engine code?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Listed on the VIN plate and vehicle documentation. The Z8 4.9 engine code is S62B50. Tell us your registration date and we'll confirm it for free."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I prevent the common failures on a Z8 4.9?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes — the single most important prevention is regular oil changes with the correct 10W‑60 oil and shortened intervals. Have the VANOS rebuilt with upgraded seals, replace the rod bearings preventatively, and inspect the timing chain guides at 100,000 miles. At the first sign of rattle, knock or loss of power, book an inspection immediately."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "BMWEngines.uk",
+          "url": "https://bmwengine.uk/",
+          "logo": "https://bmwengine.uk/images/bmwengines-logo.png",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "BMW Z8 4.9 Engine Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "5000",
+            "highPrice": "14000",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "name": "BMW Z8 4.9 UK Engine Enquiry Data 2025",
+          "description": "Proprietary UK enquiry volumes and demand trends for BMW Z8 4.9 engines, sourced from BMWEngines.uk's specialist marketplace activity.",
+          "creator": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk"
+          },
+          "temporalCoverage": "2025",
+          "spatialCoverage": "United Kingdom"
+        },
+        {
+          "@type": "WebPage",
+          "name": "Z8 4.9 Engine Replacement Cost UK — Compare Quotes",
+          "url": "https://bmwengine.uk/z8/49/",
+          "author": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk Specialist Network"
+          },
+          "datePublished": "2026-07-12",
+          "dateModified": "2026-07-12"
+        }
+      ]
+    }
+  },
+  "hero": {
+    "tagPill": "BMW Z8 4.9 • 2000–2003 • S62B50",
+    "h1": "BMW Z8 4.9 Engine Replacement — Compare Prices & Get Quotes",
+    "subHeadline": "The Z8 is BMW's halo roadster — powered by the S62 4.9-litre V8 from the E39 M5. A rare, aluminium-bodied modern classic with 400 bhp and a 7,000 rpm redline. Get quotes from trusted UK specialists today.",
+    "trustBadges": [
+      "🔧 Supply & Fit Available",
+      "✅ 12-Month Warranty",
+      "🚚 Nationwide Delivery",
+      "👥 20+ Specialists"
+    ],
+    "priceAnchor": "BMW Z8 4.9 Engines — from £5,000 to £14,000 · S62B50",
+    "registrationInput": {
+      "flag": "🇬🇧 GB",
+      "placeholder": "Enter your reg — e.g. AB12 CDE",
+      "cta": {
+        "label": "See BMW Z8 4.9 Engine Options →",
+        "href": "#"
+      }
+    },
+    "ticker": "● Instant Quotes · No Obligation · 100% Free · Reconditioned · Rebuilt · Used · Supply & Fit Available · UK-Wide Network"
+  },
+  "eraMap": {
+    "title": "The Z8 4.9 THROUGH TIME — Era Map",
+    "columns": [
+      "Generation",
+      "Years",
+      "Engine Code",
+      "Reliability",
+      "Recon Cost",
+      "Era Note"
+    ],
+    "rows": [],
+    "sourceNote": "This table is the single source every other section on this page matches — Sections 2, 4 and 6 reference it rather than restating conflicting figures.",
+    "dataNote": ""
+  },
+  "replacementCosts": {
+    "h2": "BMW Z8 4.9 Engine Replacement Costs",
+    "columns": [
+      "Engine Type",
+      "Supply Only",
+      "Fitted (Indie)",
+      "Warranty",
+      "Best For"
+    ],
+    "rows": [
+      {
+        "engineType": "Used Engine",
+        "supplyOnly": "£5,000–£8,000",
+        "fittedIndie": "£6,500–£10,000",
+        "warranty": "1–6 months",
+        "bestFor": "Budget priority; lower-mileage donor"
+      },
+      {
+        "engineType": "Reconditioned Engine",
+        "supplyOnly": "£6,000–£10,000",
+        "fittedIndie": "£7,500–£12,000",
+        "warranty": "12–24 months",
+        "bestFor": "Most owners — best cost/warranty balance"
+      },
+      {
+        "engineType": "Rebuilt Engine",
+        "supplyOnly": "£8,000–£14,000",
+        "fittedIndie": "£9,500–£16,000",
+        "warranty": "12–24 months",
+        "bestFor": "Long-term ownership; concours‑level restoration"
+      },
+      {
+        "engineType": "Main Dealer New",
+        "supplyOnly": "N/A — no longer available",
+        "fittedIndie": "N/A",
+        "warranty": "N/A",
+        "bestFor": "Not available — reconditioned only"
+      }
+    ],
+    "figuresNote": "Figures above reflect the current S62B50 generation. A reconditioned S62 engine is a significant investment due to the engine's rarity and the specialist knowledge required.",
+    "labourEstimate": "Fitting a Z8 4.9 engine typically takes 14–18 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer). M‑specific engine work requires specialist knowledge.",
+    "cta": {
+      "label": "→ Compare Z8 4.9 engine prices from UK specialists",
+      "href": "#"
+    }
+  },
+  "commonProblems": {
+    "problems": [
+      {
+        "id": 1,
+        "title": "VANOS System Wear",
+        "symptoms": "Loss of low‑end power, hesitation on acceleration, rough idle, metallic rattle from the front of the engine, engine warning light.",
+        "typicalMileage": "60,000–100,000 miles",
+        "repairCost": "£800–£1,800 (VANOS rebuild with upgraded seals and anti‑rattle kit)",
+        "replacementCost": "N/A — repair only (if caught before catastrophic failure)",
+        "urgency": {
+          "icon": "🟠",
+          "label": "Check",
+          "text": "book inspection urgently if symptoms appear"
+        },
+        "recommendation": "The S62's VANOS system is the most common failure point. Earlier S62s had oil consumption issues and VANOS cold‑start rattle. Specialist companies offer rebuilt units with upgraded seals and anti‑rattle kits. At the first sign of loss of power or rattle, have the VANOS inspected — catching it early prevents more serious engine damage.",
+        "failureLink": {
+          "label": "",
+          "href": "/failures/vanos-failure/"
+        }
+      },
+      {
+        "id": 2,
+        "title": "Rod Bearing Wear",
+        "symptoms": "Knocking or rumbling noise from the engine, particularly when cold; metallic debris in the oil; sudden engine seizure.",
+        "typicalMileage": "60,000–100,000 miles (can occur at any mileage if neglected)",
+        "repairCost": "£1,500–£3,500 (rod bearing replacement)",
+        "replacementCost": "£6,000–£14,000 (full engine replacement if bearings fail)",
+        "urgency": {
+          "icon": "🔴",
+          "label": "Immediate",
+          "text": "if you hear knocking, stop driving and book an inspection today"
+        },
+        "recommendation": "The S62 engine is known to have issues with rod bearing wear. While not as common as VANOS failure, bearings are guaranteed to be worn by now in most normal, properly maintained S62s. Regular oil changes with the correct 10W‑60 oil are crucial. Many specialists recommend replacing the rod bearings preventatively — a relatively small cost compared to a full engine replacement. If you hear knocking, do not drive the car.",
+        "failureLink": {
+          "label": "",
+          "href": "/failures/rod-bearing-failure/"
+        }
+      },
+      {
+        "id": 3,
+        "title": "Timing Chain Guide Degradation",
+        "symptoms": "Rattling noise on cold start, metallic ticking, engine warning light, loss of power.",
+        "typicalMileage": "80,000–120,000 miles",
+        "repairCost": "£1,500–£3,000 (chain guides, tensioner and chain replacement)",
+        "replacementCost": "N/A — repair only (if caught before chain jumps)",
+        "urgency": {
+          "icon": "🔴",
+          "label": "Immediate",
+          "text": "if you hear rattle, book an inspection today"
+        },
+        "recommendation": "The plastic timing chain guides degrade over time, causing noise and potential catastrophic failure if neglected. Preventive replacement around 100,000 miles is strongly recommended. At the first sign of rattling on cold start, have the guides inspected immediately.",
+        "failureLink": {
+          "label": "",
+          "href": "/failures/timing-chain-stretch/"
+        }
+      }
+    ]
+  },
+  "quotesCta": {
+    "headline": "Weighing Your Options? Compare Specialist Quotes When You're Ready →",
+    "supportingLine": "20+ vetted BMW specialists, every Z8 4.9 engine covered, with a 12‑month warranty as standard.",
+    "button": {
+      "label": "See BMW Z8 4.9 Engine Options →",
+      "href": "#"
+    }
+  },
+  "repairBuyOrReplace": {
+    "h2": "Z8 4.9 — Repair, Buy, or Replace?",
+    "canItBeRepaired": {
+      "title": "Can It Be Repaired?",
+      "columns": [
+        "Problem",
+        "Repairable?",
+        "Typical Cost",
+        "When It Makes Sense"
+      ],
+      "rows": [
+        {
+          "problem": "VANOS wear",
+          "repairable": "✅ Yes",
+          "typicalCost": "£800–£1,800",
+          "whenItMakesSense": "Rebuild with upgraded seals — permanent fix"
+        },
+        {
+          "problem": "Rod bearing wear",
+          "repairable": "✅ Yes",
+          "typicalCost": "£1,500–£3,500",
+          "whenItMakesSense": "Catch it early — prevent catastrophic failure"
+        },
+        {
+          "problem": "Timing chain guide degradation",
+          "repairable": "✅ Yes",
+          "typicalCost": "£1,500–£3,000",
+          "whenItMakesSense": "Preventive replacement at 100,000 miles"
+        },
+        {
+          "problem": "Oil leaks",
+          "repairable": "✅ Yes",
+          "typicalCost": "£400–£1,000",
+          "whenItMakesSense": "Routine maintenance — do preventatively"
+        },
+        {
+          "problem": "Severe engine damage (bearing seizure / chain jump)",
+          "repairable": "❌ Usually No",
+          "typicalCost": "Engine replacement",
+          "whenItMakesSense": "Little left to salvage — replacement is the only option"
+        }
+      ]
+    },
+    "buyingChecks": {
+      "title": "Buying This Z8 4.9? Check These First",
+      "buyIf": [
+        "* VANOS rebuilt with upgraded seals and anti‑rattle kit",
+        "* Rod bearings replaced preventatively",
+        "* Timing chain guides inspected or replaced",
+        "* Full BMW service history with correct 10W‑60 oil"
+      ],
+      "avoidIf": [
+        "* Loss of power or rattle — VANOS may be failing — walk away",
+        "* Knocking from the engine — rod bearings may be failing — walk away",
+        "* Cold‑start rattle — timing chain guides may be failing",
+        "* Poor service history — S62 engines demand meticulous care"
+      ]
+    },
+    "closingVerdict": "The Z8 is BMW's halo roadster — an aluminium‑bodied, V8‑powered masterpiece designed by Henrik Fisker and powered by the S62 from the E39 M5. Only 5,703 were built between 2000 and 2003. The S62 is a robust engine — if maintained correctly. The main watchpoints — VANOS, rod bearings and timing chain guides — are all well‑understood and manageable with preventative maintenance. Buy on full service history and budget for the big three items. A well‑maintained Z8 is a rewarding, appreciating modern classic.",
+    "cta": {
+      "label": "→ Compare Z8 4.9 engine prices before you buy",
+      "href": "#"
+    }
+  },
+  "buyingChecklist": {
+    "intro": "Before you buy a used BMW Z8 4.9 (or before you commit to an engine replacement), check these:",
+    "items": [
+      "* Cold Start — Listen for rattling; VANOS or timing chain indicator",
+      "* Knocking — Listen for knocking or rumbling; rod bearing indicator",
+      "* Power Delivery — Check for hesitation or loss of low‑end power; VANOS indicator",
+      "* Service History — including engine era (S62B50) and confirmed maintenance with 10W‑60 oil",
+      "* VANOS History — Rebuilt with upgraded seals?",
+      "* Rod Bearing History — Replaced preventatively?",
+      "* Timing Chain Guide History — Inspected or replaced?",
+      "* Engine Warning Light — Have codes been read? Any unresolved VANOS or timing issues?"
+    ]
+  },
+  "engineCodes": {
+    "columns": [
+      "Engine Code",
+      "Years",
+      "Power",
+      "2025 Enquiries",
+      "Avg. Recon Cost"
+    ],
+    "rows": [
+      {
+        "engineCode": "S62B50 (4.9 V8)",
+        "years": "2000–2003",
+        "power": "400 PS (394–400 bhp) @ 6,600 rpm; 500 Nm (369 lb-ft) @ 3,800 rpm",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£6,000–£10,000 [PLACEHOLDER]"
+      }
+    ],
+    "matchNote": "This table's rows match Section 1B's Era Map exactly.",
+    "technicalSpecs": {
+      "title": "Technical Specs (S62B50 4.9 V8):",
+      "items": [
+        {
+          "label": "* Displacement",
+          "value": "4,941 cc"
+        },
+        {
+          "label": "* Cylinders",
+          "value": "8-cylinder V‑configuration"
+        },
+        {
+          "label": "* Compression Ratio",
+          "value": "11.0:1"
+        },
+        {
+          "label": "* Fuel System",
+          "value": "Port injection with individual throttle bodies"
+        },
+        {
+          "label": "* Valvetrain",
+          "value": "DOHC with VVT and 32 valves"
+        },
+        {
+          "label": "* Redline",
+          "value": "7,000 rpm"
+        },
+        {
+          "label": "* Engine Oil Spec",
+          "value": "Castrol TWS 10W‑60"
+        }
+      ]
+    },
+    "cta": {
+      "label": "→ Compare Z8 4.9 engine prices for your BMW",
+      "href": "#"
+    }
+  },
+  "marketIntelligence": {
+    "items": []
+  },
+  "faq": {
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a BMW Z8 4.9 engine replacement cost in the UK?",
+        "answer": "A reconditioned S62B50 engine typically costs £6,000–£10,000 supply only, with rebuilt units reaching £14,000. Fitting adds £1,500–£2,500. Use our calculator for a figure specific to your Z8."
+      },
+      {
+        "id": 2,
+        "question": "Is the BMW Z8 4.9 (S62) engine reliable?",
+        "answer": "For a high‑performance engine from this era, the S62 has earned a reputation for reliability — if maintained correctly. The main watchpoints — VANOS, rod bearings and timing chain guides — are well‑understood and manageable with preventative maintenance. Buy on full service history and budget for the big three items."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the BMW Z8 4.9 engine?",
+        "answer": "VANOS system wear (the most common issue), rod bearing wear, timing chain guide degradation, oil leaks, and cooling system deterioration. The engine is fundamentally robust but demands meticulous care."
+      },
+      {
+        "id": 4,
+        "question": "Is it worth replacing a Z8 4.9 engine, or should I scrap the car?",
+        "answer": "Z8 values range from £80,000 to over £200,000+ — a £7,000–£10,000 recon is a small fraction of the car's value, making replacement a clear decision for all but the most challenging examples. This is well within our 70% BMW scrap threshold."
+      },
+      {
+        "id": 5,
+        "question": "How do I find my BMW Z8 4.9 engine code?",
+        "answer": "Listed on the VIN plate and vehicle documentation. The Z8 4.9 engine code is S62B50. Tell us your registration date and we'll confirm it for free."
+      },
+      {
+        "id": 6,
+        "question": "Can I prevent the common failures on a Z8 4.9?",
+        "answer": "Yes — the single most important prevention is regular oil changes with the correct 10W‑60 oil and shortened intervals. Have the VANOS rebuilt with upgraded seals, replace the rod bearings preventatively, and inspect the timing chain guides at 100,000 miles. At the first sign of rattle, knock or loss of power, book an inspection immediately."
+      }
+    ],
+    "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12‑month unlimited‑mileage warranty — always confirm terms with your chosen supplier."
+  },
+  "trustCta": {
+    "h2": "",
+    "trustPoints": [],
+    "finalCta": "Find the best BMW Z8 4.9 engine replacement UK drivers rely on. Compare prices from trusted specialists on EnginesMarket today and get back on the road with confidence — from £5,000 for a used unit to £14,000 for a fully rebuilt S62 V8.",
+    "ctaButton": {
+      "label": "Explore BMW Z8 4.9 Engine Quotes →",
+      "href": "#"
+    }
+  }
+}

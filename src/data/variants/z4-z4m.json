@@ -1,0 +1,556 @@
+{
+  "meta": {
+    "slug": "z4-z4m",
+    "title": "Z4 M Engine Replacement Cost UK — Compare Quotes",
+    "titleCharCount": 54,
+    "description": "BMW Z4 M S54 3.2 engine — real UK costs, rod bearing & VANOS insight, and honest reliability data for BMW's last naturally aspirated M engine. Get free quotes from 20+ vetted BMW specialists today.",
+    "descriptionCharCount": 158,
+    "canonical": "https://bmwengine.uk/z4/z4m/",
+    "openGraph": {
+      "title": "",
+      "description": "",
+      "type": "",
+      "url": "",
+      "image": "",
+      "siteName": ""
+    },
+    "twitter": {
+      "card": "",
+      "title": "",
+      "description": "",
+      "image": ""
+    },
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://bmwengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Z4",
+              "item": "https://bmwengine.uk/z4/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Z4 M",
+              "item": "https://bmwengine.uk/z4/z4m/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "BMW Z4 M Engine Era Map",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "E85/E86 Z4 M (S54B32, 2006–2008)",
+              "url": "https://bmwengine.uk/z4/e85/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "BMW Z4 M Engine Codes",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "S54B32 (3.2L Straight-Six)",
+              "url": "https://bmwengine.uk/engines/s54/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does a BMW Z4 M engine replacement cost in the UK?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A reconditioned S54 engine typically costs £5,500–£9,000 supply only. Used engines are available from £4,500–£7,500. Fitting adds £1,500–£2,500 depending on your location and workshop. A replacement S54 engine costs on average £7,624, with reconditioned engines costing up to £9,926. Main dealer new engines are no longer available."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the BMW Z4 M engine reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The S54 is one of the greatest engines ever built — smooth, powerful, and with a glorious soundtrack. However, it has known weak points: rod bearing wear is the most notorious, with some owners reporting failures above 75,000 miles. The Z4 M's S54 is generally considered more reliable than the E46 M3's version, as BMW addressed many early VANOS issues. With proper maintenance, the S54 is a durable and rewarding engine."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What are the common problems with the BMW Z4 M?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The most frequently reported issues are rod bearing wear (metallic knocking, engine failure risk), VANOS solenoid block contamination (rough idle, hard starts), oil leaks from the valve cover and oil filter housing, lifter tick, camshaft position sensor failure, and water pump failure. The S54 is a high-strung performance engine that demands meticulous maintenance."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is it worth replacing a BMW Z4 M engine, or should I scrap the car?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Depends on vehicle value and condition. Against a well-kept £30,000 Z4 M, a £7,000 recon is 23% — worth it. Against a tired £12,000 example, the same recon approaches our 70% BMW threshold — get a scrap valuation first. Well-maintained Z4 Ms are appreciating rapidly — a proper restoration is often justified."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I find my BMW Z4 M engine code?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Listed on the VIN plate and vehicle documentation. The Z4 M carries the engine code S54B32. It's a 3.2-litre straight-six naturally aspirated engine used exclusively in the Z4 M (E85/E86) from 2006 to 2008."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I repair the rod bearings, or does it need full engine replacement?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes — rod bearing replacement is a well-understood preventative repair costing £1,500–£3,500. Many owners replace rod bearings proactively as preventative maintenance, as the cost of bearing failure is catastrophic — a failed bearing can destroy the crankshaft and require a full engine replacement (£5,500–£12,000). If you hear knocking from the bottom end, do not drive the car. Regular oil analysis can help monitor bearing health."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "BMWEngines.uk",
+          "url": "https://bmwengine.uk/",
+          "logo": "https://bmwengine.uk/images/bmwengines-logo.png",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "BMW Z4 M Engine Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "4500",
+            "highPrice": "12000",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "name": "BMW Z4 M UK Engine Enquiry Data 2025",
+          "description": "Proprietary UK enquiry volumes and demand trends for BMW Z4 M S54 engines, sourced from BMWEngines.uk's specialist marketplace activity.",
+          "creator": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk"
+          },
+          "temporalCoverage": "2025",
+          "spatialCoverage": "United Kingdom"
+        },
+        {
+          "@type": "WebPage",
+          "name": "Z4 M Engine Replacement Cost UK — Compare Quotes",
+          "url": "https://bmwengine.uk/z4/z4m/",
+          "author": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk Specialist Network"
+          },
+          "datePublished": "2026-07-12",
+          "dateModified": "2026-07-12"
+        }
+      ]
+    }
+  },
+  "hero": {
+    "tagPill": "BMW Z4 M • 2006–2008 • 3.2L Straight-Six (S54)",
+    "h1": "BMW Z4 M Engine Replacement — Compare Prices & Get Quotes",
+    "subHeadline": "Get quotes today from trusted UK BMW Z4 specialists. Compare reconditioned, rebuilt and used S54 3.2-litre straight-six engines — the last naturally aspirated BMW M engine — supply & fit available nationwide.",
+    "trustBadges": [
+      "🔧 Supply & Fit Available",
+      "✅ 12-Month Warranty",
+      "🚚 Nationwide Delivery",
+      "👥 20+ Specialists"
+    ],
+    "priceAnchor": "BMW Z4 M Engines — from £4,500 to £12,000 · Common code: S54B32",
+    "registrationInput": {
+      "flag": "🇬🇧 GB",
+      "placeholder": "Enter your reg — e.g. AB12 CDE",
+      "cta": {
+        "label": "See BMW Z4 M Engine Options →",
+        "href": "#"
+      }
+    },
+    "ticker": "● Instant Quotes · No Obligation · 100% Free · Reconditioned · Rebuilt · Used · Supply & Fit Available · UK-Wide Network"
+  },
+  "eraMap": {
+    "title": "The Z4 M THROUGH TIME — Era Map",
+    "columns": [
+      "Generation",
+      "Years",
+      "Engine Code",
+      "Reliability",
+      "Recon Cost",
+      "Era Note"
+    ],
+    "rows": [
+      {
+        "generation": "E85/E86 Z4 M (Roadster/Coupe)",
+        "years": "2006–2008",
+        "engineCode": "S54B32 (3.2L Straight-Six)",
+        "reliability": "★★★★☆ [NEWLY ASSIGNED — see Data Note]",
+        "reconCost": "£5,500–£9,000 [PLACEHOLDER — confirm vs cost sheet]",
+        "eraNote": "One engine throughout this badge's history — no era ambiguity."
+      }
+    ],
+    "sourceNote": "This table is the single source every other section on this page matches — Sections 2, 4 and 6 reference it rather than restating conflicting figures.",
+    "dataNote": ""
+  },
+  "replacementCosts": {
+    "h2": "BMW Z4 M Engine Replacement Costs",
+    "columns": [
+      "Engine Type",
+      "Supply Only",
+      "Fitted (Indie)",
+      "Warranty",
+      "Best For"
+    ],
+    "rows": [
+      {
+        "engineType": "Used Engine",
+        "supplyOnly": "£4,500–£7,500",
+        "fittedIndie": "£5,800–£9,000",
+        "warranty": "1–6 months",
+        "bestFor": "Budget priority; lower-mileage examples"
+      },
+      {
+        "engineType": "Reconditioned Engine",
+        "supplyOnly": "£5,500–£9,000",
+        "fittedIndie": "£7,000–£10,500",
+        "warranty": "12–24 months",
+        "bestFor": "Most owners — best cost/warranty balance"
+      },
+      {
+        "engineType": "Rebuilt Engine",
+        "supplyOnly": "£7,000–£12,000",
+        "fittedIndie": "£8,500–£14,000",
+        "warranty": "12–24 months",
+        "bestFor": "Long-term ownership; 3+ year horizon"
+      },
+      {
+        "engineType": "Main Dealer New",
+        "supplyOnly": "N/A",
+        "fittedIndie": "N/A",
+        "warranty": "N/A",
+        "bestFor": "No longer available from BMW — the S54 is out of production"
+      }
+    ],
+    "figuresNote": "Figures above reflect the S54B32 3.2-litre straight-six engine. The S54 commands a significant premium over standard Z4 engines due to its M-car status and limited production. A replacement S54 engine costs on average £7,624, with reconditioned engines costing up to £9,926. Main dealer new engines are no longer available.",
+    "labourEstimate": "Fitting a Z4 M engine typically takes 14–18 hours at £80–£120/hr (independent) or £140–£200/hr (London/SE dealer). The S54's complexity and the Z4's tight engine bay make this a specialist job.",
+    "cta": {
+      "label": "→ Compare Z4 M engine prices from UK specialists",
+      "href": "#"
+    }
+  },
+  "commonProblems": {
+    "problems": [
+      {
+        "id": 1,
+        "title": "Rod Bearing Wear (S54)",
+        "symptoms": "Metallic knocking noise from the bottom end, especially under load, low oil pressure warning, engine failure at high RPM, oil debris visible when draining.",
+        "typicalMileage": "60,000–100,000 miles",
+        "repairCost": "£1,500–£3,500 (rod bearing replacement — preventative)【PLACEHOLDER — confirm vs cost sheet】",
+        "replacementCost": "£5,500–£12,000 (if bearing fails and destroys the crankshaft)",
+        "urgency": {
+          "icon": "🔴",
+          "label": "Immediate",
+          "text": "if you hear knocking, stop driving immediately"
+        },
+        "recommendation": "Rod bearing wear is the S54's most notorious issue. The original bearings have tight clearances and can wear prematurely, especially on cars that are tracked or driven hard. Many owners proactively replace rod bearings as preventative maintenance. If you hear knocking from the bottom end, do not drive the car — catastrophic engine failure is imminent. Regular oil analysis can help monitor bearing health.",
+        "failureLink": {
+          "label": "Read the full rod bearing failure guide",
+          "href": "/failures/rod-bearing-failure/"
+        }
+      },
+      {
+        "id": 2,
+        "title": "VANOS Solenoid Block Contamination",
+        "symptoms": "Rough idling, hesitation on acceleration, hard starting, loss of low-end power, engine warning light, VANOS rattle.",
+        "typicalMileage": "50,000–100,000 miles",
+        "repairCost": "£300–£800 (VANOS solenoid block cleaning or replacement)【PLACEHOLDER — confirm vs cost sheet】",
+        "replacementCost": "N/A — repair only",
+        "urgency": {
+          "icon": "🟡",
+          "label": "Monitor",
+          "text": "book inspection soon"
+        },
+        "recommendation": "The S54's VANOS solenoid block can become restricted with debris over time, causing rough idling, hard starts, and VANOS noise. The Z4 M's S54 is generally considered more reliable than the E46 M3's version, as BMW addressed many early VANOS issues. However, VANOS maintenance remains important. Cleaning or replacing the solenoid block is a well-understood repair.",
+        "failureLink": {
+          "label": "Read the full VANOS failure guide",
+          "href": "/failures/vanos-failure/"
+        }
+      },
+      {
+        "id": 3,
+        "title": "Oil Leaks & Cooling System Issues",
+        "symptoms": "Oil spots under the car, burning oil smell from the engine bay, low oil level warning, visible oil residue around the valve cover or oil filter housing area; overheating, coolant loss.",
+        "typicalMileage": "50,000–100,000 miles",
+        "repairCost": "£300–£700 (gasket replacement) / £400–£900 (water pump replacement)【PLACEHOLDER — confirm vs cost sheet】",
+        "replacementCost": "N/A — repair only",
+        "urgency": {
+          "icon": "🟠",
+          "label": "Check",
+          "text": "book inspection urgently"
+        },
+        "recommendation": "Oil leaks from the valve cover and oil filter housing are common on ageing S54 engines. The electric water pump is also a known failure point — if it fails, the car will overheat at low engine speed, such as sitting at a stoplight. If you notice oil spots or coolant loss, have the engine inspected promptly.",
+        "failureLink": {
+          "label": "Read the full oil leak guide",
+          "href": "/failures/oil-leak/"
+        }
+      }
+    ]
+  },
+  "quotesCta": {
+    "headline": "Weighing Your Options? Compare Specialist Quotes When You're Ready →",
+    "supportingLine": "20+ vetted BMW specialists, every Z4 M S54 era covered, with a 12-month warranty as standard.",
+    "button": {
+      "label": "See BMW Z4 M Engine Options →",
+      "href": "#"
+    }
+  },
+  "repairBuyOrReplace": {
+    "h2": "Z4 M — Repair, Buy, or Replace?",
+    "canItBeRepaired": {
+      "title": "Can It Be Repaired?",
+      "columns": [
+        "Problem",
+        "Repairable?",
+        "Typical Cost",
+        "When It Makes Sense"
+      ],
+      "rows": [
+        {
+          "problem": "Rod bearing wear",
+          "repairable": "✅ Yes",
+          "typicalCost": "£1,500–£3,500",
+          "whenItMakesSense": "Preventative — far cheaper than a full engine replacement"
+        },
+        {
+          "problem": "VANOS solenoid contamination",
+          "repairable": "✅ Yes",
+          "typicalCost": "£300–£800",
+          "whenItMakesSense": "Well-understood fix; cheaper than engine replacement"
+        },
+        {
+          "problem": "Oil leaks (valve cover/oil filter housing)",
+          "repairable": "✅ Yes",
+          "typicalCost": "£300–£700",
+          "whenItMakesSense": "Standard maintenance on ageing M engines"
+        },
+        {
+          "problem": "Water pump failure",
+          "repairable": "✅ Yes",
+          "typicalCost": "£400–£900",
+          "whenItMakesSense": "Straightforward fix; upgraded parts available"
+        },
+        {
+          "problem": "Camshaft position sensor failure",
+          "repairable": "✅ Yes",
+          "typicalCost": "£200–£500",
+          "whenItMakesSense": "Simple repair; part of routine maintenance"
+        }
+      ]
+    },
+    "buyingChecks": {
+      "title": "Buying This Z4 M? Check These First",
+      "buyIf": [
+        "* Documented rod bearing replacement history (preventative)",
+        "* VANOS solenoid block cleaned or replaced within the last 30,000 miles",
+        "* Full service history with evidence of regular oil changes using BMW 10W-60 M-specific oil",
+        "* No cold-start rattle, hesitation, or knocking"
+      ],
+      "avoidIf": [
+        "* Knocking from the bottom end (rod bearing failure warning)",
+        "* No proof of rod bearing maintenance — this is a when, not an if",
+        "* Poor service history — the S54 is unforgiving of neglect",
+        "* Engine warning light with no diagnosis",
+        "* Evidence of overheating or cooling system issues"
+      ]
+    },
+    "closingVerdict": "The Z4 M is a true future classic — the last naturally aspirated M engine in a lightweight roadster chassis. The S54 is one of the greatest engines ever built, but it has known weak points: rod bearings, VANOS, and oil leaks. The Z4 M's S54 is generally more reliable than the E46 M3's version, as BMW addressed many early issues. However, rod bearings remain the single biggest concern — many owners replace them proactively as preventative maintenance. Buy on documented history, not on faith. A well-maintained Z4 M is a £20,000–£40,000 future classic; a neglected one is a £10,000 engine replacement waiting to happen.",
+    "cta": {
+      "label": "→ Compare Z4 M engine prices before you buy",
+      "href": "#"
+    }
+  },
+  "buyingChecklist": {
+    "intro": "Before you buy a used BMW Z4 M (or before you commit to an engine replacement), check these:",
+    "items": [
+      "* Cold Start — Listen for knocking, rattling, or hesitation (rod bearings or VANOS warning)",
+      "* Service History — including the S54 era (2006–2008) and confirmed oil-change intervals using BMW 10W-60 M-specific oil",
+      "* Rod Bearing Check — Any history of rod bearing replacement? (preventative replacement is a major plus)",
+      "* VANOS Check — Any rough idling, hesitation, or hard starting? (VANOS solenoid warning)",
+      "* Oil Leak Check — Any evidence of oil leaks around the valve cover or oil filter housing?",
+      "* Coolant Check — Any history of coolant loss or water pump replacement?",
+      "* Engine Warning Light — Have codes been read? Any unresolved VANOS, cam sensor, or cooling system issues?",
+      "* MOT History — Check for emissions-related failures"
+    ]
+  },
+  "engineCodes": {
+    "columns": [
+      "Engine Code",
+      "Years",
+      "Power",
+      "2025 Enquiries",
+      "Avg. Recon Cost"
+    ],
+    "rows": [
+      {
+        "engineCode": "S54B32 (3.2L Straight-Six)",
+        "years": "2006–2008",
+        "power": "343 PS (338 hp) @ 7,900 rpm · 365 Nm @ 4,900 rpm",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£5,500–£9,000 [PLACEHOLDER — confirm vs cost sheet]"
+      }
+    ],
+    "matchNote": "This table's rows match Section 1B's Era Map exactly.",
+    "technicalSpecs": {
+      "title": "Technical Specs (S54B32):",
+      "items": [
+        {
+          "label": "* Displacement",
+          "value": "3,246 cc"
+        },
+        {
+          "label": "* Cylinders",
+          "value": "Straight-6, 4 valves per cylinder"
+        },
+        {
+          "label": "* Compression Ratio",
+          "value": "11.5:1"
+        },
+        {
+          "label": "* Fuel System",
+          "value": "Multi-point fuel injection"
+        },
+        {
+          "label": "* Aspiration",
+          "value": "Naturally aspirated (individual throttle bodies)"
+        },
+        {
+          "label": "* Valvetrain",
+          "value": "Double VANOS"
+        },
+        {
+          "label": "* Redline",
+          "value": "7,900 rpm"
+        }
+      ]
+    },
+    "cta": {
+      "label": "→ Compare Z4 M engine prices for your BMW",
+      "href": "#"
+    }
+  },
+  "marketIntelligence": {
+    "items": [
+      {
+        "label": "Most Common Failure",
+        "value": "Rod bearing wear — the S54's most notorious issue; preventative replacement is recommended"
+      },
+      {
+        "label": "Average Enquiry Mileage",
+        "value": "50,000–80,000 miles [PATTERN DATA]"
+      },
+      {
+        "label": "Average Replacement Cost",
+        "value": "£5,500–£9,000 reconditioned, supply only [PLACEHOLDER — confirm vs cost sheet]"
+      },
+      {
+        "label": "Most Requested Engine Code",
+        "value": "S54B32 [PATTERN DATA]"
+      },
+      {
+        "label": "Peak Enquiry Season",
+        "value": "Spring/Summer — classic car season exposes issues after winter storage【PATTERN DATA】"
+      },
+      {
+        "label": "Regional Demand",
+        "value": "South East (22%), London (20%), South West (15%) [PATTERN DATA]"
+      }
+    ]
+  },
+  "faq": {
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a BMW Z4 M engine replacement cost in the UK?",
+        "answer": "A reconditioned S54 engine typically costs £5,500–£9,000 supply only. Used engines are available from £4,500–£7,500. Fitting adds £1,500–£2,500 depending on your location and workshop. A replacement S54 engine costs on average £7,624, with reconditioned engines costing up to £9,926. Main dealer new engines are no longer available."
+      },
+      {
+        "id": 2,
+        "question": "Is the BMW Z4 M engine reliable?",
+        "answer": "The S54 is one of the greatest engines ever built — smooth, powerful, and with a glorious soundtrack. However, it has known weak points: rod bearing wear is the most notorious, with some owners reporting failures above 75,000 miles. The Z4 M's S54 is generally considered more reliable than the E46 M3's version, as BMW addressed many early VANOS issues. With proper maintenance, the S54 is a durable and rewarding engine."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the BMW Z4 M?",
+        "answer": "The most frequently reported issues are rod bearing wear (metallic knocking, engine failure risk), VANOS solenoid block contamination (rough idle, hard starts), oil leaks from the valve cover and oil filter housing, lifter tick, camshaft position sensor failure, and water pump failure. The S54 is a high-strung performance engine that demands meticulous maintenance."
+      },
+      {
+        "id": 4,
+        "question": "Is it worth replacing a BMW Z4 M engine, or should I scrap the car?",
+        "answer": "Depends on vehicle value and condition. Against a well-kept £30,000 Z4 M, a £7,000 recon is 23% — worth it. Against a tired £12,000 example, the same recon approaches our 70% BMW threshold — get a scrap valuation first. Well-maintained Z4 Ms are appreciating rapidly — a proper restoration is often justified."
+      },
+      {
+        "id": 5,
+        "question": "How do I find my BMW Z4 M engine code?",
+        "answer": "Listed on the VIN plate and vehicle documentation. The Z4 M carries the engine code S54B32. It's a 3.2-litre straight-six naturally aspirated engine used exclusively in the Z4 M (E85/E86) from 2006 to 2008."
+      },
+      {
+        "id": 6,
+        "question": "Can I repair the rod bearings, or does it need full engine replacement?",
+        "answer": "Yes — rod bearing replacement is a well-understood preventative repair costing £1,500–£3,500. Many owners replace rod bearings proactively as preventative maintenance, as the cost of bearing failure is catastrophic — a failed bearing can destroy the crankshaft and require a full engine replacement (£5,500–£12,000). If you hear knocking from the bottom end, do not drive the car. Regular oil analysis can help monitor bearing health."
+      }
+    ],
+    "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty — always confirm terms with your chosen supplier."
+  },
+  "trustCta": {
+    "h2": "Why UK BMW Z4 M Owners Trust BMWEngines.uk",
+    "trustPoints": [
+      {
+        "title": "Trusted Z4 M S54 Suppliers",
+        "text": "every garage and engine rebuilder in our network is vetted, rated and reviewed by real Z4 M owners, as part of the Engine Finders network, covering the entire E85/E86 S54 era from 2006 to 2008."
+      },
+      {
+        "title": "Compare Z4 M Engine Replacement Companies",
+        "text": "see prices, warranty terms and supply & fit options side-by-side before you commit, across every Z4 M that left the factory with this legendary 3.2-litre naturally aspirated straight-six."
+      },
+      {
+        "title": "UK Engine Replacement Services for Z4 M",
+        "text": "supply-only or full supply & fit available nationwide, covering the full E85/E86 production run — and we're vetted across every era of this badge."
+      }
+    ],
+    "finalCta": "Find the best BMW Z4 M engine replacement UK drivers rely on. Compare prices from trusted specialists on EnginesMarket today and get your Z4 M back on the road with confidence.",
+    "ctaButton": {
+      "label": "Explore BMW Z4 M Engine Quotes →",
+      "href": "#"
+    }
+  }
+}

@@ -1,0 +1,625 @@
+{
+  "meta": {
+    "slug": "bmw-5-series-f11",
+    "title": "BMW 5 Series F11 Engines — The Complete UK Guide",
+    "titleCharCount": 48,
+    "description": "",
+    "descriptionCharCount": 0,
+    "jsonLd": {}
+  },
+  "internalDeclarations": {
+    "checkA": "",
+    "checkB": "",
+    "authorityModelMode": ""
+  },
+  "hero": {
+    "tagPill": "BMW 5 Series F11 • Touring • 2010–2017",
+    "h1": "BMW 5 Series F11 Engines — The Complete UK Guide",
+    "subHeadline": "Every engine fitted to the F11 Touring — from the 2.0-litre four-cylinder diesel to the 4.4-litre twin-turbo V8 and the tri-turbo M550d. Real UK costs and honest reliability data for BMW's sixth-generation executive estate. Backed by 300+ real UK F10/F11 enquiries in 2025 [BMW-VERIFIED].",
+    "trustStrip": [
+      {
+        "icon": "📊",
+        "label": "300+ F11 Enquiries (2025) [BMW-VERIFIED]"
+      },
+      {
+        "icon": "🔧",
+        "label": "Touring"
+      },
+      {
+        "icon": "📖",
+        "label": "14+ Engine Families"
+      },
+      {
+        "icon": "🏆",
+        "label": "Part of Engine Finders"
+      }
+    ],
+    "primaryCta": {
+      "label": "Explore F11 Engines →",
+      "href": "#"
+    },
+    "dataIntegrityNote": ""
+  },
+  "engineDatabase": {
+    "h2": "BMW 5 Series F11 Engine Codes — The Complete Database",
+    "subHeadline": "Every engine fitted to the F11 Touring specifically — spanning four-cylinder and six-cylinder diesels, four and six-cylinder petrols, V8s, and the tri-turbo M550d.",
+    "columns": [
+      "Engine Code",
+      "Family",
+      "Fuel",
+      "Displacement",
+      "Power",
+      "Years (F11)",
+      "Variants (badges)",
+      "Reliability",
+      "2025 Enquiries",
+      "Avg. Recon Cost"
+    ],
+    "engines": [
+      {
+        "engineCode": "N20B20",
+        "family": "N20",
+        "fuel": "Petrol",
+        "displacement": "2.0L (1997cc)",
+        "power": "181–245 bhp",
+        "years": "2011–2016",
+        "variants": "520i, 528i",
+        "reliability": "★★★★☆ [PROVISIONAL — pending dedicated Engine Page]",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£2,200–£4,500 [BMW-QUOTE]"
+      },
+      {
+        "engineCode": "N52B25",
+        "family": "N52",
+        "fuel": "Petrol",
+        "displacement": "2.5L (2497cc)",
+        "power": "201 bhp",
+        "years": "2010–2011",
+        "variants": "523i (Asia only)",
+        "reliability": "★★★★☆ [PROVISIONAL — pending dedicated Engine Page]",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£2,500–£4,500 [BMW-QUOTE]"
+      },
+      {
+        "engineCode": "N53B30",
+        "family": "N53",
+        "fuel": "Petrol",
+        "displacement": "3.0L (2996cc)",
+        "power": "201–268 bhp",
+        "years": "2010–2013",
+        "variants": "523i, 528i, 530i (Europe)",
+        "reliability": "★★★☆☆ [PROVISIONAL — pending dedicated Engine Page]",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£2,800–£5,500 [BMW-QUOTE]"
+      },
+      {
+        "engineCode": "N55B30",
+        "family": "N55",
+        "fuel": "Petrol",
+        "displacement": "3.0L (2979cc)",
+        "power": "302–306 bhp",
+        "years": "2009–2017",
+        "variants": "535i, ActiveHybrid 5",
+        "reliability": "★★★★☆ [PROVISIONAL — pending dedicated Engine Page]",
+        "enquiries": "540 [BMW-VERIFIED] (B58)",
+        "avgReconCost": "£4,000–£7,000 [BMW-QUOTE]"
+      },
+      {
+        "engineCode": "N63B44",
+        "family": "N63",
+        "fuel": "Petrol",
+        "displacement": "4.4L (4395cc)",
+        "power": "402–444 bhp",
+        "years": "2009–2017",
+        "variants": "550i",
+        "reliability": "★★★☆☆ [PROVISIONAL — pending dedicated Engine Page]",
+        "enquiries": "440 [BMW-VERIFIED] (N63)",
+        "avgReconCost": "£6,000–£10,000 [BMW-QUOTE]"
+      },
+      {
+        "engineCode": "S63B44TU",
+        "family": "S63",
+        "fuel": "Petrol",
+        "displacement": "4.4L (4395cc)",
+        "power": "553 bhp",
+        "years": "2012–2016",
+        "variants": "M5",
+        "reliability": "★★★★☆ [PROVISIONAL — pending dedicated Engine Page]",
+        "enquiries": "410 [BMW-VERIFIED] (S63)",
+        "avgReconCost": "£9,000–£15,000 [BMW-QUOTE]"
+      },
+      {
+        "engineCode": "N47D20",
+        "family": "N47",
+        "fuel": "Diesel",
+        "displacement": "2.0L (1995cc)",
+        "power": "141–184 bhp",
+        "years": "2010–2014",
+        "variants": "518d, 520d",
+        "reliability": "★★★☆☆ [PROVISIONAL — pending dedicated Engine Page]",
+        "enquiries": "1,450 [BMW-VERIFIED]",
+        "avgReconCost": "£3,200–£5,500 [BMW-QUOTE]"
+      },
+      {
+        "engineCode": "B47D20",
+        "family": "B47",
+        "fuel": "Diesel",
+        "displacement": "2.0L (1995cc)",
+        "power": "148–190 bhp",
+        "years": "2014–2017",
+        "variants": "518d, 520d",
+        "reliability": "★★★★☆ [PROVISIONAL — pending dedicated Engine Page]",
+        "enquiries": "930 [BMW-VERIFIED]",
+        "avgReconCost": "£2,800–£5,000 [BMW-QUOTE]"
+      },
+      {
+        "engineCode": "N57D30",
+        "family": "N57",
+        "fuel": "Diesel",
+        "displacement": "3.0L (2993cc)",
+        "power": "201–313 bhp",
+        "years": "2010–2017",
+        "variants": "525d, 530d, 535d",
+        "reliability": "★★★★☆ [PROVISIONAL — pending dedicated Engine Page]",
+        "enquiries": "830 [BMW-VERIFIED]",
+        "avgReconCost": "£4,500–£7,500 [BMW-QUOTE]"
+      },
+      {
+        "engineCode": "B57D30",
+        "family": "B57",
+        "fuel": "Diesel",
+        "displacement": "3.0L (2993cc)",
+        "power": "255–308 bhp",
+        "years": "2014–2017",
+        "variants": "530d, 535d (LCI)",
+        "reliability": "★★★★☆ [PROVISIONAL — pending dedicated Engine Page]",
+        "enquiries": "460 [BMW-VERIFIED]",
+        "avgReconCost": "£4,800–£8,000 [BMW-QUOTE]"
+      },
+      {
+        "engineCode": "N57S",
+        "family": "N57S",
+        "fuel": "Diesel",
+        "displacement": "3.0L (2993cc)",
+        "power": "381 bhp",
+        "years": "2012–2016",
+        "variants": "M550d xDrive",
+        "reliability": "★★★★☆ [PROVISIONAL — pending dedicated Engine Page]",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£6,000–£10,000 [BMW-QUOTE]"
+      },
+      {
+        "engineCode": "N55 + Electric (ActiveHybrid 5)",
+        "family": "N55 PHEV",
+        "fuel": "Petrol / Hybrid",
+        "displacement": "3.0L + Electric",
+        "power": "335 bhp combined",
+        "years": "2011–2016",
+        "variants": "ActiveHybrid 5",
+        "reliability": "★★★☆☆ [PROVISIONAL — pending dedicated Engine Page]",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£5,500–£8,500 [PLACEHOLDER — confirm vs cost sheet]"
+      }
+    ],
+    "confidenceScore": {
+      "title": "How confident are these ratings?",
+      "text": "All ratings are [PROVISIONAL] pending dedicated Engine Pages. The B58 successor to the N55 is widely regarded as BMW's most reliable modern engine — the N55 itself is also well-regarded. The N52 naturally aspirated six is considered one of BMW's most reliable engines. The N47 diesel carries the infamous timing chain risk, while the B47 and N57 families are significantly more reliable. The N63 V8 has a reputation for higher running costs. The N57S tri-turbo is a masterpiece of engineering but complex and costly to maintain."
+    },
+    "dataCorrections": []
+  },
+  "overview": {
+    "h2": "BMW 5 Series F11 — Overview",
+    "intro": "The F11 is the Touring (estate) body of BMW's sixth-generation 5 Series, introduced alongside the F10 saloon in January 2010. Built on BMW's L6 platform, it shares its underpinnings with the F01 7 Series and F12 6 Series. The F11 offered class-leading boot space (560–1,670 litres) and a wide engine range spanning four-cylinder diesels to the tri-turbo M550d and the S63 V8-powered M5. A significant July 2013 LCI (Life Cycle Impulse) facelift brought Euro 6-compliant engines (B47, B57), efficiency improvements and subtle styling changes. The F11 was produced until February 2017, succeeded by the G31 5 Series Touring.",
+    "keyFacts": "Platform: BMW L6 (shared with F10, F01, F12) • Predecessor: E61 5 Series Touring • Successor: G31 5 Series Touring • Sibling body styles in this generation: F10 Saloon, F07 Gran Turismo.",
+    "marketIntelligenceLine": "The F11 Touring generated 300+ real UK engine enquiries in 2025 [BMW-VERIFIED], concentrated on the 520d diesel and 535i petrol as the range reaches affordable used-car territory."
+  },
+  "bestWorstEngines": {
+    "items": [
+      {
+        "slot": "Best Petrol Overall",
+        "engine": "N55B30 (535i, 3.0L single-turbo, 302–306 bhp)",
+        "quote": "BMW's N55 single-turbo straight-six replaced the twin-turbo N54 and brought improved reliability. Smooth, responsive, and with a strong torque curve from 1,200 rpm. The 535i is the sweet spot of the F11 petrol range.",
+        "whoItsFor": "buyers who want effortless six-cylinder performance."
+      },
+      {
+        "slot": "Best Diesel Overall",
+        "engine": "N57D30 (530d, 3.0L single-turbo, 245–258 bhp)",
+        "quote": "The N57 straight-six diesel is a masterpiece — refined, torquey, and with a genuine 200,000-mile reputation when maintained. The 530d offers the best blend of performance and economy in the F11 range.",
+        "whoItsFor": "buyers who want six-cylinder diesel refinement without the complexity of the twin-turbo 535d."
+      },
+      {
+        "slot": "Highest Risk",
+        "engine": "N47D20 (pre-2014 518d/520d, 2.0L diesel)",
+        "quote": "The rear-mounted timing chain is the defining risk of the N47 — cold-start rattle is the warning, and a snapped chain means full replacement. The N47 remains the biggest single risk in the F11 range.",
+        "whoItsFor": "buyers on a budget who must have documented chain-replacement history."
+      },
+      {
+        "slot": "Most Expensive Failure",
+        "engine": "N63B44 (550i, 4.4L twin-turbo V8, 402–444 bhp)",
+        "quote": "The N63 'hot-vee' V8 is a spectacular engine but has a reputation for heat-related failures — valve stem seals, turbo coolant lines, and battery drain. A full replacement can exceed £10,000.",
+        "whoItsFor": "550i buyers with deep pockets and full service history."
+      },
+      {
+        "slot": "Best Value",
+        "engine": "B47D20 (post-LCI 520d, 2.0L diesel, 188–190 bhp)",
+        "quote": "The B47 is a significant improvement over the N47 — timing chain issues are far less frequent, and the engine is smoother and more refined. The post-LCI 520d offers the best blend of economy and reliability.",
+        "whoItsFor": "buyers who want diesel economy without the N47's timing chain anxiety."
+      },
+      {
+        "slot": "Most Overlooked",
+        "engine": "N57S (M550d xDrive, 3.0L tri-turbo, 381 bhp)",
+        "quote": "The only production car with three turbochargers — a small high-pressure unit and two larger low-pressure units in series. 381 bhp, 740 Nm of torque, and 0-62 mph in 4.7 seconds. It's a diesel that thinks it's a supercar.",
+        "whoItsFor": "enthusiasts who want the ultimate F11 diesel experience."
+      }
+    ]
+  },
+  "ownershipEconomics": {
+    "h2": "BMW 5 Series F11 — Ownership Economics",
+    "columns": [
+      "Engine",
+      "Typical Mileage",
+      "Common Major Failure",
+      "Repair Cost (Specialist)",
+      "Replacement Cost (Recon)",
+      "Ownership Verdict"
+    ],
+    "rows": [
+      {
+        "engine": "N20 (520i/528i)",
+        "typicalMileage": "60k–100k",
+        "commonMajorFailure": "Timing chain, VANOS",
+        "repairCostSpecialist": "£700–£2,000",
+        "replacementCostRecon": "£2,200–£4,500",
+        "ownershipVerdict": "Solid Choice — proven four-cylinder."
+      },
+      {
+        "engine": "N52/N53 (523i/528i/530i)",
+        "typicalMileage": "80k–120k",
+        "commonMajorFailure": "VANOS, water pump, injectors (N53)",
+        "repairCostSpecialist": "£400–£1,500",
+        "replacementCostRecon": "£2,500–£5,500",
+        "ownershipVerdict": "Best Petrol (N52) — reliable naturally aspirated six."
+      },
+      {
+        "engine": "N55 (535i)",
+        "typicalMileage": "50k–100k",
+        "commonMajorFailure": "HPFP, VANOS, oil leaks",
+        "repairCostSpecialist": "£600–£2,000",
+        "replacementCostRecon": "£4,000–£7,000",
+        "ownershipVerdict": "Solid Choice — more reliable than N54."
+      },
+      {
+        "engine": "N63 (550i)",
+        "typicalMileage": "40k–80k",
+        "commonMajorFailure": "Valve seals, turbo coolant, battery",
+        "repairCostSpecialist": "£1,500–£4,000",
+        "replacementCostRecon": "£6,000–£10,000",
+        "ownershipVerdict": "High Cost — spectacular V8, costly to maintain."
+      },
+      {
+        "engine": "S63 (M5)",
+        "typicalMileage": "30k–70k",
+        "commonMajorFailure": "Rod bearings, throttle actuators",
+        "repairCostSpecialist": "£2,000–£5,000",
+        "replacementCostRecon": "£9,000–£15,000",
+        "ownershipVerdict": "Performance Icon — budget for maintenance."
+      },
+      {
+        "engine": "N47 (518d/520d pre-LCI)",
+        "typicalMileage": "60k–120k",
+        "commonMajorFailure": "Timing chain",
+        "repairCostSpecialist": "£650–£1,800",
+        "replacementCostRecon": "£3,200–£5,500",
+        "ownershipVerdict": "High Risk — rear chain defines this engine."
+      },
+      {
+        "engine": "B47 (518d/520d post-LCI)",
+        "typicalMileage": "80k–150k",
+        "commonMajorFailure": "EGR cooler, DPF",
+        "repairCostSpecialist": "£500–£1,500",
+        "replacementCostRecon": "£2,800–£5,000",
+        "ownershipVerdict": "Solid Choice — significantly improved over N47."
+      },
+      {
+        "engine": "N57 (525d/530d/535d)",
+        "typicalMileage": "80k–150k",
+        "commonMajorFailure": "EGR, DPF, chain (later onset)",
+        "repairCostSpecialist": "£600–£2,000",
+        "replacementCostRecon": "£4,500–£7,500",
+        "ownershipVerdict": "Best Diesel — refined and durable."
+      },
+      {
+        "engine": "N57S (M550d)",
+        "typicalMileage": "50k–100k",
+        "commonMajorFailure": "Turbochargers, EGR",
+        "repairCostSpecialist": "£1,000–£3,000",
+        "replacementCostRecon": "£6,000–£10,000",
+        "ownershipVerdict": "Ultimate Diesel — complex but rewarding."
+      }
+    ],
+    "economicsRule": {
+      "title": "The F11 rule",
+      "text": "A £3,200–£5,500 N47 recon against a £4,000–£15,000 F11 sits at 21–138% of the car's value【EM-VERIFIED】. On a sub-£5,000 example, that brushes our 70% BMW threshold — we'll honestly tell you to walk away. Against a well-kept £8,000+ example, the same recon drops to 40–69% — a repair decision, not a financial one. Value the car first. For M5 and M550d cars, the economics are different — collector values justify the higher costs."
+    },
+    "keyTakeaways": [
+      {
+        "question": "Which F11 Costs Least To Own?",
+        "answer": "B47 520d (post-LCI) — efficient, reliable, and cheaper to maintain than the six-cylinder diesels."
+      },
+      {
+        "question": "Which F11 Costs Most To Own?",
+        "answer": "N63 550i — V8 complexity and running costs are the highest in the range."
+      },
+      {
+        "question": "Which F11 Is Best Value?",
+        "answer": "N57 530d — six-cylinder refinement, excellent economy, and proven reliability."
+      }
+    ]
+  },
+  "commonProblems": {
+    "problems": [
+      {
+        "id": 1,
+        "title": "N47 Diesel Timing Chain Stretch (Pre-LCI)",
+        "affectedModels": "F11 518d, 520d (2010–2014, N47 engine).",
+        "typicalFailureMileage": "60,000–120,000 miles.",
+        "rootCause": "The rear-mounted timing chain receives the last oil feed and is tensioned by a plastic guide that degrades over time — cold-start rattle for 1–2 seconds is the classic early warning. This is the defining weakness of BMW's N47 diesel family.",
+        "tieredCosts": [
+          {
+            "tier": "Preventative (Repair)",
+            "dealer": "£1,800–£2,500",
+            "specialist": "£650–£1,800",
+            "work": "Replace chain, tensioner and guides",
+            "note": ""
+          },
+          {
+            "tier": "Catastrophic (Replacement)",
+            "dealer": "£6,000–£8,500",
+            "specialist": "£3,200–£5,500",
+            "work": "Full reconditioned engine replacement",
+            "note": ""
+          }
+        ],
+        "recommendation": "At the first sign of cold-start rattle on any N47 diesel F11, get the chain inspected immediately — a £650–£1,800 preventative repair is dramatically cheaper than the £3,200–£5,500 replacement that follows if ignored. On an F11 worth under £5,000, this decision alone determines whether the car stays economically viable.",
+        "cta": {
+          "label": "Compare N47 diesel engine prices for your F11 →",
+          "href": "#"
+        }
+      },
+      {
+        "id": 2,
+        "title": "N63 V8 Valve Stem Seal & Turbo Coolant Issues",
+        "affectedModels": "F11 550i (2009–2013, N63 engine).",
+        "typicalFailureMileage": "40,000–80,000 miles.",
+        "rootCause": "The N63 'hot-vee' design places the turbochargers inside the V of the engine, leading to heat-related failures — valve stem seals harden and leak oil, turbo coolant lines can fail, and the battery suffers from parasitic drain. These issues earned the N63 a reputation as one of BMW's most expensive engines to maintain.",
+        "tieredCosts": [
+          {
+            "tier": "Preventative (Repair)",
+            "dealer": "£3,000–£5,000",
+            "specialist": "£1,500–£3,500",
+            "work": "Valve stem seal replacement, coolant line inspection",
+            "note": ""
+          },
+          {
+            "tier": "Catastrophic (Replacement)",
+            "dealer": "£10,000–£14,000",
+            "specialist": "£6,000–£10,000",
+            "work": "Full reconditioned N63 engine replacement",
+            "note": ""
+          }
+        ],
+        "recommendation": "If you're buying an N63-powered F11 550i, budget for valve stem seal replacement and a thorough cooling system inspection — £1,500–£3,500 now is far cheaper than the £6,000+ engine replacement that follows if ignored. Check the battery health regularly; the N63 is known for draining batteries.",
+        "cta": {
+          "label": "Compare N63 engine prices for your F11 550i →",
+          "href": "#"
+        }
+      },
+      {
+        "id": 3,
+        "title": "N20 Timing Chain & VANOS Issues",
+        "affectedModels": "F11 520i, 528i (2011–2016, N20 engine).",
+        "typicalFailureMileage": "60,000–100,000 miles.",
+        "rootCause": "The N20 four-cylinder turbo petrol can suffer from timing chain tensioner wear and VANOS solenoid failure. The chain is located at the front of the engine, making replacement less labour-intensive than the N47, but failure is still catastrophic if ignored.",
+        "tieredCosts": [
+          {
+            "tier": "Preventative (Repair)",
+            "dealer": "£1,200–£2,000",
+            "specialist": "£700–£1,500",
+            "work": "Chain, tensioner and VANOS solenoid replacement",
+            "note": ""
+          },
+          {
+            "tier": "Catastrophic (Replacement)",
+            "dealer": "£5,000–£7,500",
+            "specialist": "£3,500–£5,500",
+            "work": "Full reconditioned engine replacement",
+            "note": ""
+          }
+        ],
+        "recommendation": "Have the timing chain and VANOS system inspected at 60,000 miles — a £700–£1,500 preventative service is far cheaper than the £3,500–£5,500 replacement that follows a catastrophic failure. Early N20s are the highest risk.",
+        "cta": {
+          "label": "Compare N20 engine prices for your F11 →",
+          "href": "#"
+        }
+      },
+      {
+        "id": 4,
+        "title": "N57 Diesel EGR Cooler & Emission System Issues",
+        "affectedModels": "F11 525d, 530d, 535d (N57 engine).",
+        "typicalFailureMileage": "60,000–120,000 miles.",
+        "rootCause": "The N57 diesel's EGR cooler can develop internal leaks, allowing coolant to enter the exhaust system. DPF clogging (urban driving) and AdBlue system issues (where fitted) are also common. BMW issued recalls for EGR cooler issues on some models.",
+        "tieredCosts": [
+          {
+            "tier": "Preventative (Repair)",
+            "dealer": "£800–£1,500 (recall may cover)",
+            "specialist": "£500–£1,000",
+            "work": "EGR cooler replacement, DPF clean, AdBlue system service",
+            "note": ""
+          },
+          {
+            "tier": "Catastrophic (Replacement)",
+            "dealer": "£5,000–£8,000",
+            "specialist": "£4,500–£7,500",
+            "work": "Full engine replacement if coolant contamination caused damage",
+            "note": ""
+          }
+        ],
+        "recommendation": "Check your N57 F11's VIN against any outstanding EGR cooler recalls — if affected, the repair is free. For DPF health, ensure regular motorway driving to allow regeneration cycles to complete. Have the emission system inspected at 60,000 miles.",
+        "cta": {
+          "label": "Compare N57 diesel engine prices for your F11 →",
+          "href": "#"
+        }
+      }
+    ]
+  },
+  "replacementCosts": {
+    "h2": "F11 Engine Replacement Costs — By Engine and Condition",
+    "columns": [
+      "Variant",
+      "Engine Code",
+      "Used (Supply)",
+      "Reconditioned (Supply)",
+      "Rebuilt (Supply)",
+      "Labour Hours"
+    ],
+    "rows": [
+      {
+        "variant": "520i / 528i (2.0 petrol)",
+        "engineCode": "N20B20",
+        "usedSupply": "£1,000–£2,200",
+        "reconditionedSupply": "£2,200–£4,500",
+        "rebuiltSupply": "£3,500–£6,000",
+        "labourHours": "10–14 hrs"
+      },
+      {
+        "variant": "523i / 528i / 530i (2.5–3.0 petrol)",
+        "engineCode": "N52/N53",
+        "usedSupply": "£1,200–£2,800",
+        "reconditionedSupply": "£2,500–£5,500",
+        "rebuiltSupply": "£4,000–£7,000",
+        "labourHours": "10–14 hrs"
+      },
+      {
+        "variant": "535i (3.0 petrol)",
+        "engineCode": "N55B30",
+        "usedSupply": "£2,000–£4,000",
+        "reconditionedSupply": "£4,000–£7,000",
+        "rebuiltSupply": "£5,500–£8,500",
+        "labourHours": "12–16 hrs"
+      },
+      {
+        "variant": "550i (4.4 V8)",
+        "engineCode": "N63B44",
+        "usedSupply": "£3,500–£6,000",
+        "reconditionedSupply": "£6,000–£10,000",
+        "rebuiltSupply": "£8,000–£14,000",
+        "labourHours": "16–22 hrs"
+      },
+      {
+        "variant": "M5 (4.4 V8)",
+        "engineCode": "S63B44TU",
+        "usedSupply": "£5,000–£9,000",
+        "reconditionedSupply": "£9,000–£15,000",
+        "rebuiltSupply": "£12,000–£18,000",
+        "labourHours": "18–24 hrs"
+      },
+      {
+        "variant": "518d / 520d (2.0 diesel, pre-LCI)",
+        "engineCode": "N47D20",
+        "usedSupply": "£1,800–£3,200",
+        "reconditionedSupply": "£3,200–£5,500",
+        "rebuiltSupply": "£4,500–£6,500",
+        "labourHours": "10–14 hrs"
+      },
+      {
+        "variant": "518d / 520d (2.0 diesel, post-LCI)",
+        "engineCode": "B47D20",
+        "usedSupply": "£1,500–£2,800",
+        "reconditionedSupply": "£2,800–£5,000",
+        "rebuiltSupply": "£4,000–£6,500",
+        "labourHours": "10–14 hrs"
+      },
+      {
+        "variant": "525d (2.0 diesel, 2011–2016)",
+        "engineCode": "N47D20",
+        "usedSupply": "£1,800–£3,200",
+        "reconditionedSupply": "£3,500–£5,500",
+        "rebuiltSupply": "£4,500–£7,000",
+        "labourHours": "10–14 hrs"
+      },
+      {
+        "variant": "525d (3.0 diesel, 2010–2011) / 530d / 535d",
+        "engineCode": "N57D30",
+        "usedSupply": "£2,500–£4,500",
+        "reconditionedSupply": "£4,500–£7,500",
+        "rebuiltSupply": "£6,500–£9,500",
+        "labourHours": "12–16 hrs"
+      },
+      {
+        "variant": "530d / 535d (post-LCI)",
+        "engineCode": "B57D30",
+        "usedSupply": "£2,800–£5,000",
+        "reconditionedSupply": "£4,800–£8,000",
+        "rebuiltSupply": "£7,000–£10,000",
+        "labourHours": "12–16 hrs"
+      },
+      {
+        "variant": "M550d xDrive (3.0 tri-turbo)",
+        "engineCode": "N57S",
+        "usedSupply": "£3,500–£6,000",
+        "reconditionedSupply": "£6,000–£10,000",
+        "rebuiltSupply": "£8,000–£12,000",
+        "labourHours": "14–18 hrs"
+      },
+      {
+        "variant": "ActiveHybrid 5 (3.0 hybrid)",
+        "engineCode": "N55 + Electric",
+        "usedSupply": "£3,000–£5,000",
+        "reconditionedSupply": "£5,500–£8,500",
+        "rebuiltSupply": "£7,500–£11,000",
+        "labourHours": "14–18 hrs"
+      }
+    ],
+    "note": "No Generation variance from the EM_Proprietary_Data baseline figures — F11 Touring shares the L6 platform with the F10 saloon, with similar engine-bay access, so costs are inherited directly per the Authority Model, with no divergence note required."
+  },
+  "coreVariants": {
+    "dieselVariants": [
+      "518d",
+      "520d",
+      "525d",
+      "530d",
+      "535d",
+      "M550d xDrive"
+    ],
+    "petrolVariants": [
+      "520i",
+      "523i",
+      "528i",
+      "530i",
+      "535i",
+      "550i",
+      "M5"
+    ],
+    "scopeNote": "All variants listed are F11 Touring only. F10 Saloon and F07 Gran Turismo share most of these engines but are covered on their own Generation Pages. The 525d switched from an N57 straight-six (2010–2011) to an N47 four-cylinder (2011–2016) — check your car's production date if you're buying a 525d. M550d xDrive features the tri-turbo N57S engine with 381 bhp. ActiveHybrid 5 combines an N55 petrol engine with a 40 kW electric motor."
+  },
+  "marketIntelligence": {
+    "mostRequestedEngines": [],
+    "mostRequestedVariants": [],
+    "averageReplacementCost": "",
+    "mostCommonFailures": [],
+    "liveFeed": []
+  },
+  "faq": {
+    "items": []
+  },
+  "trustCta": {
+    "h2": "",
+    "trustPoints": [],
+    "finalCta": "",
+    "ctaButton": {
+      "label": "",
+      "href": "#",
+      "note": ""
+    }
+  }
+}

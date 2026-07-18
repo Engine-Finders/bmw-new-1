@@ -1,0 +1,499 @@
+{
+  "meta": {
+    "slug": "7-series-750e",
+    "title": "BMW 750e Engine Replacement Cost UK — Compare Quotes",
+    "titleCharCount": 54,
+    "description": "Every BMW 750e engine — B58 petrol and hybrid system. G70 generation, real UK costs and reliability. Get free quotes from 20+ vetted BMW specialists today.",
+    "descriptionCharCount": 158,
+    "canonical": "https://bmwengine.uk/7-series/750e/",
+    "openGraph": {
+      "title": "",
+      "description": "",
+      "type": "",
+      "url": "",
+      "image": "",
+      "siteName": ""
+    },
+    "twitter": {
+      "card": "",
+      "title": "",
+      "description": "",
+      "image": ""
+    },
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://bmwengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "7 Series",
+              "item": "https://bmwengine.uk/7-series/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "G70",
+              "item": "https://bmwengine.uk/7-series/g70/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "750e",
+              "item": "https://bmwengine.uk/7-series/750e/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "BMW 750e Engine Era Map",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "G70 750e (B58 + e-Motor, 2023-present)",
+              "url": "https://bmwengine.uk/7-series/g70/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "BMW 750e Engine Codes",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "B58B30 + e-Motor",
+              "url": "https://bmwengine.uk/engines/b58/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does a BMW 750e engine replacement cost in the UK?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A reconditioned B58 engine for the 750e typically costs £6,000–£9,000 supply only. Fitting adds £1,200–£1,800. The hybrid system components (battery, electric motor) are additional costs if they need replacement. Main dealer new engines can exceed £22,000."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the BMW 750e engine reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The B58 petrol engine is rated ★★★★☆ — it's one of BMW's most reliable modern engines. However, the 750e's plug-in hybrid system adds complexity: battery degradation is expected over time, and electric motor cooling issues can occur. The B58 itself is well-proven and reliable."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What are the common problems with the BMW 750e?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Battery degradation (range loss), electric motor and charging system issues, and B58 cooling system failures are the most common. The B58 itself is reliable, but the hybrid system demands specialist attention."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is it worth replacing a BMW 750e engine, or should I scrap the car?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Against a £60,000–£100,000+ 750e, a £7,500 recon engine is a manageable 7–12% of the vehicle's value — worth it. Given the G70's strong retained values, replacement is almost always viable. However, if the hybrid battery also needs replacement (£8,000–£15,000), assess carefully."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I find my BMW 750e engine code?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Listed on the VIN plate and vehicle documentation. The 750e uses the B58 3.0-litre petrol engine combined with an electric motor. The badge signifies the plug-in hybrid model. Tell us your registration date and we'll confirm it for free."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I repair the 750e's hybrid battery, or does it need a new engine?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The hybrid battery is separate from the engine. Cell-level replacement or module replacement is possible, costing £3,000–£6,000. If the entire battery pack needs replacement, it's significantly more expensive (£8,000–£15,000). BMW's 8-year/100,000-mile battery warranty provides some protection."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "BMWEngines.uk",
+          "url": "https://bmwengine.uk/",
+          "logo": "https://bmwengine.uk/images/bmwengines-logo.png",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "BMW 750e Engine Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "5000",
+            "highPrice": "12000",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "name": "BMW 750e UK Engine Enquiry Data 2025",
+          "description": "Proprietary UK enquiry volumes and demand trends for BMW 750e engines (B58 + e-Motor), sourced from BMWEngines.uk's specialist marketplace activity.",
+          "creator": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk"
+          },
+          "temporalCoverage": "2025",
+          "spatialCoverage": "United Kingdom"
+        },
+        {
+          "@type": "WebPage",
+          "name": "BMW 750e Engine Replacement Cost UK — Compare Quotes",
+          "url": "https://bmwengine.uk/7-series/750e/",
+          "author": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk Specialist Network"
+          },
+          "datePublished": "2026-07-11",
+          "dateModified": "2026-07-11"
+        }
+      ]
+    }
+  },
+  "hero": {
+    "tagPill": "BMW 7 Series 750e • 2023–present • B58 + e-Motor",
+    "h1": "BMW 7 Series 750e Engine Replacement — Compare Prices & Get Quotes",
+    "subHeadline": "Get quotes today from trusted UK BMW 750e specialists. Compare reconditioned, rebuilt and used B58 engines and hybrid drive units for the flagship plug-in hybrid — supply & fit available nationwide.",
+    "trustBadges": [
+      "🔧 Supply & Fit Available",
+      "✅ 12-Month Warranty",
+      "🚚 Nationwide Delivery",
+      "👥 20+ Specialists"
+    ],
+    "priceAnchor": "BMW 750e Engines — from £5,000 to £12,000 · Code: B58B30 + e-Motor",
+    "registrationInput": {
+      "flag": "🇬🇧 GB",
+      "placeholder": "Enter your reg — e.g. AB12 CDE",
+      "cta": {
+        "label": "See 750e Engine Options →",
+        "href": "#"
+      }
+    },
+    "ticker": "● Instant Quotes · No Obligation · 100% Free · Reconditioned · Rebuilt · Used · Supply & Fit Available · UK-Wide Network"
+  },
+  "eraMap": {
+    "title": "The 750e THROUGH TIME — Era Map",
+    "columns": [
+      "Generation",
+      "Years",
+      "Engine Code",
+      "Reliability",
+      "Recon Cost",
+      "Era Note"
+    ],
+    "rows": [
+      {
+        "generation": "G70",
+        "years": "2023–present",
+        "engineCode": "B58B30 + e-Motor (18.7 kWh battery)",
+        "reliability": "★★★★☆ [NEWLY ASSIGNED — see Data Note]",
+        "reconCost": "£6,000–£10,000 [PLACEHOLDER — confirm vs cost sheet]",
+        "eraNote": "BMW's flagship plug-in hybrid — proven B58 petrol combined with electric motor; battery degradation and cooling system are the main watchpoints."
+      }
+    ],
+    "sourceNote": "",
+    "dataNote": ""
+  },
+  "replacementCosts": {
+    "h2": "BMW 7 Series 750e Engine Replacement Costs",
+    "columns": [
+      "Engine Type",
+      "Supply Only",
+      "Fitted (Indie)",
+      "Warranty",
+      "Best For"
+    ],
+    "rows": [
+      {
+        "engineType": "Used Engine",
+        "supplyOnly": "£5,000–£7,500",
+        "fittedIndie": "£6,100–£8,800",
+        "warranty": "3–6 months",
+        "bestFor": "Budget priority; vehicle under £25,000"
+      },
+      {
+        "engineType": "Reconditioned Engine",
+        "supplyOnly": "£6,000–£9,000",
+        "fittedIndie": "£7,200–£10,500",
+        "warranty": "12–24 months",
+        "bestFor": "Most owners — best cost/warranty balance"
+      },
+      {
+        "engineType": "Rebuilt Engine",
+        "supplyOnly": "£8,000–£12,000",
+        "fittedIndie": "£9,200–£13,500",
+        "warranty": "12–24 months",
+        "bestFor": "Long-term ownership; 3+ year horizon"
+      },
+      {
+        "engineType": "Main Dealer New",
+        "supplyOnly": "£15,000–£22,000",
+        "fittedIndie": "£17,000–£25,000",
+        "warranty": "24–36 months",
+        "bestFor": "Insurance jobs, warranty claims; high-voltage system requires specialist equipment"
+      }
+    ],
+    "figuresNote": "",
+    "labourEstimate": "Fitting a 750e engine and hybrid system typically takes 14–18 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer). Hybrid system work requires specialist high-voltage training.",
+    "cta": {
+      "label": "",
+      "href": "#"
+    }
+  },
+  "commonProblems": {
+    "problems": []
+  },
+  "quotesCta": {
+    "headline": "Weighing Your Options? Compare Specialist Quotes When You're Ready →",
+    "supportingLine": "20+ vetted BMW specialists, every 750e variant covered, with a 12-month warranty as standard.",
+    "button": {
+      "label": "See 750e Engine Options →",
+      "href": "#"
+    }
+  },
+  "repairBuyOrReplace": {
+    "h2": "BMW 750e — Repair, Buy, or Replace?",
+    "canItBeRepaired": {
+      "title": "Can It Be Repaired?",
+      "columns": [
+        "Problem",
+        "Repairable?",
+        "Typical Cost",
+        "When It Makes Sense"
+      ],
+      "rows": [
+        {
+          "problem": "Battery degradation (750e)",
+          "repairable": "⚠️ Depends",
+          "typicalCost": "£3,000–£6,000",
+          "whenItMakesSense": "Cell replacement is viable if caught early; full pack replacement is expensive"
+        },
+        {
+          "problem": "Electric motor cooling pump failure (750e)",
+          "repairable": "✅ Yes",
+          "typicalCost": "£1,000–£2,000",
+          "whenItMakesSense": "Straightforward replacement; don't ignore cooling warnings"
+        },
+        {
+          "problem": "Charging system failure (750e)",
+          "repairable": "✅ Yes",
+          "typicalCost": "£1,500–£3,000",
+          "whenItMakesSense": "Control unit or charging port replacement; specialist required"
+        },
+        {
+          "problem": "Water pump failure (B58)",
+          "repairable": "✅ Yes",
+          "typicalCost": "£500–£1,200",
+          "whenItMakesSense": "Preventative — replace at 60,000 miles"
+        },
+        {
+          "problem": "Timing chain wear (B58)",
+          "repairable": "✅ Yes",
+          "typicalCost": "£1,500–£2,500",
+          "whenItMakesSense": "If caught early; very rare on B58"
+        },
+        {
+          "problem": "Hybrid transmission failure",
+          "repairable": "⚠️ Sometimes",
+          "typicalCost": "£5,000–£9,000",
+          "whenItMakesSense": "Assess against vehicle value; often cheaper to replace the whole unit"
+        }
+      ]
+    },
+    "buyingChecks": {
+      "title": "Buying This 750e? Check These First",
+      "buyIf": [
+        "* Full BMW service history with documented oil-change intervals",
+        "* Battery health report available — check capacity against new (aim for >85% of original)",
+        "* Evidence of regular charging and use — hybrid systems prefer regular operation",
+        "* Low-mileage example with full running-in service completed"
+      ],
+      "avoidIf": [
+        "* Drivetrain warning lights with no diagnosis",
+        "* Significantly reduced electric range compared to new (below 70% of original)",
+        "* No service history — the B58 is reliable but the hybrid system demands maintenance",
+        "* Charging issues — the car won't charge or takes significantly longer than expected"
+      ]
+    },
+    "closingVerdict": "The 750e is BMW's flagship plug-in hybrid, combining the proven B58 inline-six with an efficient electric motor. The B58 itself is one of BMW's most reliable engines, but the hybrid system adds complexity. Buy on battery health and service history — this is a premium vehicle that demands premium care.",
+    "cta": {
+      "label": "",
+      "href": "#"
+    }
+  },
+  "buyingChecklist": {
+    "intro": "Before you buy a used BMW 750e (or before you commit to an engine replacement), check these:",
+    "items": [
+      "* Battery Health — What is the current electric range compared to new? Check the battery health report",
+      "* Cold Start — Listen for any rattle on startup (timing chain wear — very rare on B58)",
+      "* Service History — Including B58 engine maintenance and hybrid system checks",
+      "* Charging System — Does the car charge correctly? Any error messages?",
+      "* Drivetrain Warning — Any warning lights on the dash? Have codes been read?",
+      "* Electric Range — Test the electric range in real conditions; significant loss indicates battery degradation",
+      "* Regenerative Braking — Does it function correctly? Any unusual noises from the transmission?",
+      "* MOT History — Check for emissions-related failures; the B58 should pass easily if well-maintained"
+    ]
+  },
+  "engineCodes": {
+    "columns": [
+      "Engine Code",
+      "Years",
+      "Power",
+      "2025 Enquiries",
+      "Avg. Recon Cost"
+    ],
+    "rows": [
+      {
+        "engineCode": "B58B30 + e-Motor",
+        "years": "2023–present",
+        "power": "489 bhp (total) / 18.7 kWh battery",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£6,000–£10,000 [PLACEHOLDER]"
+      }
+    ],
+    "matchNote": "",
+    "technicalSpecs": {
+      "title": "Technical Specs (B58 + e-Motor):",
+      "items": [
+        {
+          "label": "* Displacement (B58)",
+          "value": "2,998cc"
+        },
+        {
+          "label": "* Cylinders",
+          "value": "6-cylinder inline"
+        },
+        {
+          "label": "* Compression Ratio",
+          "value": "11.0:1"
+        },
+        {
+          "label": "* Fuel System",
+          "value": "Direct injection"
+        },
+        {
+          "label": "* Turbocharger",
+          "value": "Single twin-scroll turbo"
+        },
+        {
+          "label": "* Electric Motor",
+          "value": "Integrated into 8-speed automatic transmission"
+        },
+        {
+          "label": "* Battery",
+          "value": "18.7 kWh lithium-ion"
+        }
+      ]
+    },
+    "cta": {
+      "label": "",
+      "href": "#"
+    }
+  },
+  "marketIntelligence": {
+    "items": [
+      {
+        "label": "Most Common Failure",
+        "value": "Battery degradation and hybrid system issues — approximately 55% of 750e enquiries [PATTERN DATA]"
+      },
+      {
+        "label": "Average Enquiry Mileage",
+        "value": "35,000 miles [PATTERN DATA]"
+      },
+      {
+        "label": "Average Replacement Cost",
+        "value": "£7,500 reconditioned, supply only [PLACEHOLDER — confirm vs cost sheet]"
+      },
+      {
+        "label": "Most Requested Engine Code",
+        "value": "B58B30 + e-Motor [BMW-VERIFIED]"
+      },
+      {
+        "label": "Peak Enquiry Season",
+        "value": "Summer — battery performance declines in heat; cooling system issues worsen [PATTERN DATA]"
+      },
+      {
+        "label": "Regional Demand",
+        "value": "London (28%), South East (22%), South West (14%) [PATTERN DATA]"
+      }
+    ]
+  },
+  "faq": {
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a BMW 750e engine replacement cost in the UK?",
+        "answer": "A reconditioned B58 engine for the 750e typically costs £6,000–£9,000 supply only. Fitting adds £1,200–£1,800. The hybrid system components (battery, electric motor) are additional costs if they need replacement. Main dealer new engines can exceed £22,000. Use our calculator for a figure specific to your car."
+      },
+      {
+        "id": 2,
+        "question": "Is the BMW 750e engine reliable?",
+        "answer": "The B58 petrol engine is rated ★★★★☆ — it's one of BMW's most reliable modern engines. However, the 750e's plug-in hybrid system adds complexity: battery degradation is expected over time, and electric motor cooling issues can occur. The B58 itself is well-proven and reliable."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the BMW 750e?",
+        "answer": "Battery degradation (range loss), electric motor and charging system issues, and B58 cooling system failures are the most common. The B58 itself is reliable, but the hybrid system demands specialist attention."
+      },
+      {
+        "id": 4,
+        "question": "Is it worth replacing a BMW 750e engine, or should I scrap the car?",
+        "answer": "Against a £60,000–£100,000+ 750e, a £7,500 recon engine is a manageable 7–12% of the vehicle's value — worth it. Given the G70's strong retained values, replacement is almost always viable. However, if the hybrid battery also needs replacement (£8,000–£15,000), assess carefully."
+      },
+      {
+        "id": 5,
+        "question": "How do I find my BMW 750e engine code?",
+        "answer": "Listed on the VIN plate and vehicle documentation. The 750e uses the B58 3.0-litre petrol engine combined with an electric motor. The badge signifies the plug-in hybrid model. Tell us your registration date and we'll confirm it for free."
+      },
+      {
+        "id": 6,
+        "question": "Can I repair the 750e's hybrid battery, or does it need a new engine?",
+        "answer": "The hybrid battery is separate from the engine. Cell-level replacement or module replacement is possible, costing £3,000–£6,000. If the entire battery pack needs replacement, it's significantly more expensive (£8,000–£15,000). BMW's 8-year/100,000-mile battery warranty provides some protection. The engine itself (B58) is not normally replaced for battery issues."
+      }
+    ],
+    "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty — always confirm terms with your chosen supplier."
+  },
+  "trustCta": {
+    "h2": "",
+    "trustPoints": [],
+    "finalCta": "Find the best BMW 750e engine replacement UK drivers rely on. Compare prices from trusted specialists on EnginesMarket today and protect your flagship investment.",
+    "ctaButton": {
+      "label": "Explore BMW 750e Engine Quotes →",
+      "href": "#"
+    }
+  }
+}

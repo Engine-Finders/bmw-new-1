@@ -1,0 +1,509 @@
+{
+  "meta": {
+    "slug": "3-series-340i",
+    "title": "340i / M340i Engine Cost UK — Compare Quotes",
+    "titleCharCount": 57,
+    "description": "BMW 340i and M340i – B58 3.0-litre straight-six. Real UK costs, cooling system facts, and specialist quotes. Get free prices from 20+ vetted specialists today.",
+    "descriptionCharCount": 158,
+    "canonical": "https://bmwengine.uk/3-series/340i/",
+    "openGraph": {
+      "title": "340i / M340i Engine Cost UK — Compare Quotes",
+      "description": "BMW 340i and M340i – B58 3.0-litre straight-six. Real UK costs, cooling system facts, and specialist quotes. Get free prices from 20+ vetted specialists today.",
+      "type": "website",
+      "url": "https://bmwengine.uk/3-series/340i/",
+      "image": "https://bmwengine.uk/images/bmw/hero/340i.jpg",
+      "siteName": "BMWEngines.uk"
+    },
+    "twitter": {
+      "card": "summary_large_image",
+      "title": "340i / M340i Engine Cost UK — Compare Quotes",
+      "description": "BMW 340i and M340i – B58 3.0-litre straight-six. Real UK costs, cooling system facts, and specialist quotes.",
+      "image": "https://bmwengine.uk/images/bmw/hero/340i.jpg"
+    },
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://bmwengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "3 Series",
+              "item": "https://bmwengine.uk/3-series/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "340i / M340i",
+              "item": "https://bmwengine.uk/3-series/340i/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "BMW 340i / M340i Engine Era Map",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "F30/F31 340i (B58B30M0, 2015-2019)",
+              "url": "https://bmwengine.uk/3-series/f30/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "G20/G21 M340i (B58B30O1, 2019-present)",
+              "url": "https://bmwengine.uk/3-series/g20/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "BMW 340i / M340i Engine Codes",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "B58B30M0",
+              "url": "https://bmwengine.uk/engines/b58/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "B58B30O1",
+              "url": "https://bmwengine.uk/engines/b58/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does a BMW 340i or M340i engine replacement cost in the UK?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A reconditioned B58 engine typically costs £3,200–£7,500 supply only depending on which generation (F30 or G20), with used units available from £1,500–£3,500. Fitting adds £1,800–£2,500. Use our calculator for a figure specific to your car."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the BMW 340i / M340i engine reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes — the B58 is widely regarded as one of BMW's most reliable modern engines. It's a significant improvement over the N55 and shares its architecture with the bulletproof B58 used across BMW's range and in the Toyota Supra. The main weaknesses are the cooling system, oil filter housing, and PCV valve — all are well-understood and repairable."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What are the common problems with the BMW 340i and M340i?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Cooling system leaks and water pump failure, oil filter housing cracking (subject to a class action lawsuit), and PCV valve failure causing misfires and rough idle. The B58 is fundamentally robust — these are maintenance items, not catastrophic design flaws."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is it worth replacing a BMW 340i / M340i engine, or should I scrap the car?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "340i and M340i values remain strong — a well-kept G20 M340i is often worth £25,000–£45,000+. A £3,200–£7,500 reconditioned engine is only 10–25% of the vehicle's value — well within the 70% BMW threshold. Replacement is almost always worthwhile."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I find my BMW 340i or M340i engine code?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The engine code is listed on the VIN plate and vehicle documentation. F30 340i (2015–2019) uses the B58B30M0; G20 M340i (2019–present) uses the B58B30O1. Tell us your registration date and we'll confirm it for free."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I repair the B58 cooling system, or does it need replacement?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Cooling system components need replacement — they are wear items. The water pump (£500–£1,200) and plastic coolant hoses should be replaced preventatively at around 60,000–80,000 miles. Upgraded aluminium parts are available to replace the factory plastic components. Regular coolant level checks are essential — the B58 can lose coolant suddenly."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "BMWEngines.uk",
+          "url": "https://bmwengine.uk/",
+          "logo": "https://bmwengine.uk/images/bmwengines-logo.png",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "BMW 340i / M340i Engine Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "1500",
+            "highPrice": "7500",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "name": "BMW 340i / M340i UK Engine Enquiry Data 2025",
+          "description": "Proprietary UK enquiry volumes and demand trends for BMW 340i and M340i engines (B58), sourced from BMWEngines.uk's specialist marketplace activity.",
+          "creator": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk"
+          },
+          "temporalCoverage": "2025",
+          "spatialCoverage": "United Kingdom"
+        },
+        {
+          "@type": "WebPage",
+          "name": "340i / M340i Engine Cost UK — Compare Quotes",
+          "url": "https://bmwengine.uk/3-series/340i/",
+          "author": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk Specialist Network"
+          },
+          "datePublished": "2026-07-11",
+          "dateModified": "2026-07-11"
+        }
+      ]
+    }
+  },
+  "hero": {
+    "tagPill": "BMW 3 Series 340i / M340i • 2015–present • 3.0-litre Turbo Straight-Six",
+    "h1": "BMW 340i Engine Replacement — Compare Prices & Get Quotes",
+    "subHeadline": "The 340i and M340i are powered by BMW's legendary B58 straight-six — one of the most reliable modern turbo engines. The F30-generation B58B30M0 delivers 322–335 hp; the G20 M340i's B58B30O1 produces 382 hp. Get quotes from UK specialists for reconditioned, rebuilt and used units today.",
+    "trustBadges": [
+      "🔧 Supply & Fit Available",
+      "✅ 12-Month Warranty",
+      "🚚 Nationwide Delivery",
+      "👥 20+ Specialists"
+    ],
+    "priceAnchor": "BMW 340i / M340i Engines — from £1,500 to £7,500 · Common codes: B58B30M0, B58B30O1",
+    "registrationInput": {
+      "flag": "🇬🇧 GB",
+      "placeholder": "Enter your reg — e.g. AB12 CDE",
+      "cta": {
+        "label": "Get My Free 340i Engine Quotes Now →",
+        "href": "#"
+      }
+    },
+    "ticker": "● Instant Quotes · No Obligation · 100% Free · Reconditioned · Rebuilt · Used · Supply & Fit Available · UK-Wide Network"
+  },
+  "eraMap": {
+    "title": "The 340i / M340i THROUGH TIME — Era Map",
+    "columns": [
+      "Generation",
+      "Years",
+      "Engine Code",
+      "Reliability",
+      "Recon Cost",
+      "Era Note"
+    ],
+    "rows": [],
+    "sourceNote": "",
+    "dataNote": ""
+  },
+  "replacementCosts": {
+    "h2": "BMW 340i / M340i Engine Replacement Costs",
+    "columns": [
+      "Engine Type",
+      "Supply Only",
+      "Fitted (Indie)",
+      "Warranty",
+      "Best For"
+    ],
+    "rows": [
+      {
+        "engineType": "Used Engine",
+        "supplyOnly": "£1,500–£3,500",
+        "fittedIndie": "£3,000–£5,000",
+        "warranty": "1–6 months",
+        "bestFor": "Budget priority; lower‑mileage examples"
+      },
+      {
+        "engineType": "Reconditioned Engine",
+        "supplyOnly": "£3,200–£5,200",
+        "fittedIndie": "£5,000–£7,000",
+        "warranty": "12–24 months",
+        "bestFor": "Most owners — best cost/warranty balance"
+      },
+      {
+        "engineType": "Rebuilt Engine",
+        "supplyOnly": "£4,500–£7,500",
+        "fittedIndie": "£6,500–£9,500",
+        "warranty": "12–24 months",
+        "bestFor": "Long‑term ownership; 3+ year horizon"
+      },
+      {
+        "engineType": "Main Dealer New",
+        "supplyOnly": "£6,000–£10,000",
+        "fittedIndie": "£8,000–£12,000",
+        "warranty": "24–36 months",
+        "bestFor": "Insurance jobs, warranty claims"
+      }
+    ],
+    "figuresNote": "Figures above reflect the current 340i/M340i market. F30 B58 engines sit at the lower end; G20 M340i B58TU engines command a premium. See the Era Map above for generation‑specific context.",
+    "labourEstimate": "Fitting a 340i / M340i engine typically takes 12–16 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer).",
+    "cta": {
+      "label": "→ Compare 340i engine prices from UK specialists",
+      "href": "#"
+    }
+  },
+  "commonProblems": {
+    "problems": [
+      {
+        "id": 1,
+        "title": "Cooling System Leaks and Water Pump Failure",
+        "symptoms": "Coolant loss with no visible external leak, rising temperature gauge, warning light, steam from the engine bay, heater not working properly, limp mode activation",
+        "typicalMileage": "60,000–100,000 miles",
+        "repairCost": "£500–£1,200 (water pump replacement)",
+        "replacementCost": "N/A — repair only",
+        "urgency": {
+          "icon": "🟠",
+          "label": "Check",
+          "text": "book inspection urgently"
+        },
+        "recommendation": "The B58's cooling system is its most common weak point. The water pump can fail prematurely — one owner reported the water pump pulley disintegrating during hard acceleration. Coolant loss is frequently reported, with the primary reservoir dropping suddenly. Plastic coolant components (hoses, connectors, thermostat housing) become brittle with age. Upgraded aluminium coolant pipes are available to replace the factory plastic parts. Regular inspection of coolant levels and the water pump is essential — catch it before overheating.",
+        "failureLink": {
+          "label": "Read the full coolant leak guide",
+          "href": "/failures/coolant-leak/"
+        }
+      },
+      {
+        "id": 2,
+        "title": "Oil Filter Housing Leaks",
+        "symptoms": "Oil spots under the car, burning oil smell from the engine bay, low oil pressure warning, coolant loss, engine warning light",
+        "typicalMileage": "60,000–100,000 miles",
+        "repairCost": "£800–£1,800 (oil filter housing replacement, including intake manifold removal)",
+        "replacementCost": "N/A — repair only",
+        "urgency": {
+          "icon": "🟠",
+          "label": "Check",
+          "text": "book inspection urgently"
+        },
+        "recommendation": "The B58's oil filter housing is a known weak point. BMW faces a class action lawsuit over faulty oil filter housings that leak coolant, costing owners thousands in repairs. The housing can crack, causing coolant or oil leaks. Because it sits under the intake manifold, replacement is labour-intensive. Oil leaks from the valve cover gasket are also common. Check for oil spots regularly and investigate any drop in fluid levels promptly. Use high-quality oil filters — poor quality filters can disintegrate and cause housing wear.",
+        "failureLink": {
+          "label": "Read the full oil filter housing failure guide",
+          "href": "/failures/oil-filter-housing-failure/"
+        }
+      },
+      {
+        "id": 3,
+        "title": "PCV Valve Failure",
+        "symptoms": "Misfires, rough idle, oil in the intake/chargepipe, oil leaks, crankcase pressure issues, check engine light",
+        "typicalMileage": "50,000–100,000 miles",
+        "repairCost": "£400–£800 (PCV valve or pressure control valve replacement)",
+        "replacementCost": "N/A — repair only",
+        "urgency": {
+          "icon": "🟡",
+          "label": "Monitor",
+          "text": "book inspection soon"
+        },
+        "recommendation": "One of the most widely discussed B58 problems revolves around faulty crankcase pressure control valves, affecting many BMW models between 2017 and 2021. The PCV (positive crankcase ventilation) valve can fail, causing oil to be drawn into the intake, leading to misfires and rough idle. This issue is especially common on cars with upgraded turbos. Repair kits are available to address the problem without replacing the entire valve cover. Monitor oil consumption and listen for rough idle — if the PCV fails, the engine can run poorly and oil consumption increases.",
+        "failureLink": {
+          "label": "Read the full PCV valve failure guide",
+          "href": "/failures/pcv-valve-failure/"
+        }
+      }
+    ]
+  },
+  "quotesCta": {
+    "headline": "Ready to Compare? Get Matched With a Vetted BMW Specialist →",
+    "supportingLine": "20+ vetted BMW specialists, every 3 Series engine era covered, with a 12-month warranty as standard.",
+    "button": {
+      "label": "Get My Free 340i Engine Quotes Now →",
+      "href": "#"
+    }
+  },
+  "repairBuyOrReplace": {
+    "h2": "340i / M340i — Repair, Buy, or Replace?",
+    "canItBeRepaired": {
+      "title": "Can It Be Repaired?",
+      "columns": [
+        "Problem",
+        "Repairable?",
+        "Typical Cost",
+        "When It Makes Sense"
+      ],
+      "rows": [
+        {
+          "problem": "Water pump failure",
+          "repairable": "✅ Yes",
+          "typicalCost": "£500–£1,200",
+          "whenItMakesSense": "Straightforward replacement — catch before overheating"
+        },
+        {
+          "problem": "Cooling system leaks",
+          "repairable": "✅ Yes",
+          "typicalCost": "£400–£1,000",
+          "whenItMakesSense": "Replace plastic components with upgraded aluminium parts"
+        },
+        {
+          "problem": "Oil filter housing crack",
+          "repairable": "✅ Yes",
+          "typicalCost": "£800–£1,800",
+          "whenItMakesSense": "Labour-intensive but well-understood; once replaced, issue rarely recurs"
+        },
+        {
+          "problem": "PCV valve failure",
+          "repairable": "✅ Yes",
+          "typicalCost": "£400–£800",
+          "whenItMakesSense": "Replace PCV or pressure control valve — repair kits available"
+        },
+        {
+          "problem": "Engine failure (catastrophic)",
+          "repairable": "❌ Usually No",
+          "typicalCost": "Engine replacement",
+          "whenItMakesSense": "Rare on the B58 — but if it happens, replacement is the only option"
+        }
+      ]
+    },
+    "buyingChecks": {
+      "title": "Buying This 340i / M340i? Check These First",
+      "buyIf": [
+        "* G20 M340i (2019+) — the B58TU brings meaningful improvements over the original F30 version",
+        "* Documented cooling system maintenance — water pump or hoses replaced at around 60,000–80,000 miles",
+        "* Full service history with correct BMW-spec oil — the B58 is reliable but unforgiving of neglect",
+        "* Evidence of oil filter housing inspection or replacement"
+      ],
+      "avoidIf": [
+        "* Evidence of repeated coolant top-ups without a diagnosed leak — the cooling system is the B58's Achilles' heel",
+        "* Oil spots under the car without a clear diagnosis — likely oil filter housing or valve cover leaks",
+        "* Poor service history — the B58 is robust but sensitive to oil quality",
+        "* Any engine warning light without a clear diagnosis"
+      ]
+    },
+    "closingVerdict": "The B58 is one of BMW's finest modern engines — a genuine step forward in reliability from the N55 that preceded it. It's smooth, torquey, and durable. Its weaknesses are well-understood: the cooling system, oil filter housing, and PCV valve. Buy on history, maintain on schedule, and the B58 will reward you with exceptional performance and longevity. The G20 M340i's B58TU represents the most refined version of this engine.",
+    "cta": {
+      "label": "→ Compare 340i engine prices before you buy",
+      "href": "#"
+    }
+  },
+  "buyingChecklist": {
+    "intro": "Before you buy a used BMW 340i or M340i (or before you commit to an engine replacement), check these:",
+    "items": [
+      "1. Coolant Level — Any unexplained loss? (cooling system warning — check the primary reservoir)",
+      "2. Service History — including which generation (F30 or G20) and evidence of cooling system maintenance",
+      "3. Oil Spots — Any oil under the car? (oil filter housing or valve cover leak warning)",
+      "4. Cold Start — Any rattles? (timing chain issues are rare on B58 but possible)",
+      "5. Idle Quality — Any rough idle or misfires? (PCV or injector issues)",
+      "6. Engine Warning Light — Have codes been read? Any unresolved issues?",
+      "7. Turbo Performance — Test acceleration; any hesitation, whistling, or wastegate rattle?",
+      "8. MOT History — Check for emissions-related failures (catalyst, O2 sensors)"
+    ]
+  },
+  "engineCodes": {
+    "columns": [
+      "Engine Code",
+      "Years",
+      "Power",
+      "2025 Enquiries",
+      "Avg. Recon Cost"
+    ],
+    "rows": [
+      {
+        "engineCode": "B58B30M0",
+        "years": "2015–2019",
+        "power": "322–335 hp",
+        "enquiries": "[PATTERN DATA]",
+        "avgReconCost": "£3,200–£5,200 [BMW-QUOTE]"
+      },
+      {
+        "engineCode": "B58B30O1",
+        "years": "2019–present",
+        "power": "382 hp",
+        "enquiries": "[PATTERN DATA]",
+        "avgReconCost": "£4,500–£7,500 [BMW-QUOTE]"
+      }
+    ],
+    "matchNote": "This table's rows match Section 1B's Era Map exactly — two B58 variants across the 340i's history.",
+    "technicalSpecs": {
+      "title": "Technical Specs (B58B30O1 — current generation):",
+      "items": [
+        {
+          "label": "* Displacement",
+          "value": "2,998cc (3.0-litre)"
+        },
+        {
+          "label": "* Cylinders",
+          "value": "Straight-6"
+        },
+        {
+          "label": "* Compression Ratio",
+          "value": "11.0:1"
+        },
+        {
+          "label": "* Fuel System",
+          "value": "Direct injection"
+        },
+        {
+          "label": "* Turbocharger",
+          "value": "Single twin-scroll turbocharger"
+        },
+        {
+          "label": "* Valvetrain",
+          "value": "DOHC, 4 valves per cylinder, Valvetronic, Double-VANOS"
+        },
+        {
+          "label": "* Block Material",
+          "value": "Closed-deck aluminium"
+        }
+      ]
+    },
+    "cta": {
+      "label": "→ Compare 340i engine prices for your BMW",
+      "href": "#"
+    }
+  },
+  "marketIntelligence": {
+    "items": []
+  },
+  "faq": {
+    "items": [],
+    "disclaimer": ""
+  },
+  "trustCta": {
+    "h2": "",
+    "trustPoints": [
+      {
+        "title": "Trusted B58 Engine Suppliers",
+        "text": "every garage and engine rebuilder in our network is vetted, rated and reviewed by real 340i and M340i owners, as part of the Engine Finders network, across both the F30 and G20 generations — no matter which B58 era your 3 Series belongs to."
+      },
+      {
+        "title": "Compare 340i / M340i Engine Replacement Companies",
+        "text": "see prices, warranty terms and supply & fit options side‑by‑side before you commit, with specialists who genuinely understand the B58's cooling system, oil filter housing, and PCV valve nuances."
+      },
+      {
+        "title": "UK Engine Replacement Services for 340i / M340i",
+        "text": "supply‑only or full supply & fit available nationwide, covering BMW's legendary B58 straight-six with a 12‑month warranty as standard."
+      }
+    ],
+    "finalCta": "Find the best BMW 340i or M340i engine replacement UK drivers rely on. Compare prices from trusted specialists on EnginesMarket today and keep your B58-powered 3 Series performing at its best.",
+    "ctaButton": {
+      "label": "Compare BMW 340i Engine Prices Now →",
+      "href": "#"
+    }
+  }
+}

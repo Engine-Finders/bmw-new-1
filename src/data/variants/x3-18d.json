@@ -1,0 +1,505 @@
+{
+  "meta": {
+    "slug": "x3-18d",
+    "title": "X3 18d Engine Replacement Cost UK — Compare Quotes",
+    "titleCharCount": 58,
+    "description": "BMW X3 18d – N47 and B47 diesel engines. Real UK costs, timing chain and EGR cooler facts, and specialist quotes. Get free prices from 20+ vetted specialists today.",
+    "descriptionCharCount": 158,
+    "canonical": "https://bmwengine.uk/x3/18d/",
+    "openGraph": {
+      "title": "X3 18d Engine Replacement Cost UK — Compare Quotes",
+      "description": "BMW X3 18d – N47 and B47 diesel engines. Real UK costs, timing chain and EGR cooler facts, and specialist quotes. Get free prices from 20+ vetted specialists today.",
+      "type": "website",
+      "url": "https://bmwengine.uk/x3/18d/",
+      "image": "https://bmwengine.uk/images/bmw/hero/18d-x3.jpg",
+      "siteName": "BMWEngines.uk"
+    },
+    "twitter": {
+      "card": "summary_large_image",
+      "title": "X3 18d Engine Replacement Cost UK — Compare Quotes",
+      "description": "BMW X3 18d – N47 and B47 diesel engines. Real UK costs, timing chain and EGR cooler facts, and specialist quotes.",
+      "image": "https://bmwengine.uk/images/bmw/hero/18d-x3.jpg"
+    },
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://bmwengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "X3",
+              "item": "https://bmwengine.uk/x3/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "18d",
+              "item": "https://bmwengine.uk/x3/18d/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "BMW X3 18d Engine Era Map",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "F25 X3 18d (N47D20, 2010-2017)",
+              "url": "https://bmwengine.uk/x3/f25/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "G01 X3 18d (B47D20, 2017-present)",
+              "url": "https://bmwengine.uk/x3/g01/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "BMW X3 18d Engine Codes",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "N47D20",
+              "url": "https://bmwengine.uk/engines/n47/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "B47D20",
+              "url": "https://bmwengine.uk/engines/b47/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does a BMW X3 18d engine replacement cost in the UK?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A reconditioned X3 18d engine typically costs £1,500–£4,500 supply only depending on which generation (N47 or B47), with used units available from £1,200–£2,500. Fitting adds £1,000–£2,000. Use our calculator for a figure specific to your car."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the BMW X3 18d engine reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "It depends entirely on which generation. The N47 (2010–2017) has a well-documented timing chain weakness — the rear-mounted chain is labour-intensive to replace. The B47 (2017+) moved the chain to the front and is significantly more reliable. Both engines can suffer from EGR cooler issues and oil dilution. Check the Era Map above for your specific car."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What are the common problems with the BMW X3 18d?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "N47: timing chain wear (rear-mounted design), EGR cooler leaks, oil dilution from DPF regeneration. B47: EGR cooler leaks, oil dilution, occasional coolant leaks. The B47 is significantly more reliable than the N47."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is it worth replacing a BMW X3 18d engine, or should I scrap the car?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Depends on vehicle value and generation. Against a well-kept G01 X3 18d worth £15,000–£25,000+, a £2,000–£4,500 recon is only 10–20% — well within the 70% BMW threshold. Against a tired F25 X3 with an N47 worth £4,000–£8,000, a £1,500–£3,500 recon is 30–60% — borderline, so evaluate carefully."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I find my BMW X3 18d engine code?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Listed on the VIN plate and vehicle documentation. F25 X3 (2010–2017) uses N47D20; G01 X3 (2017+) uses B47D20. Tell us your registration date and we'll confirm it for free."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I repair the N47 timing chain, or does it need replacement?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "It needs replacement — the chain stretches and guides wear. Replacement costs £800–£1,800 and is labour-intensive due to the rear-mounted chain location. A preventative replacement is far cheaper than a full engine replacement (£1,500+). At the first sign of cold-start rattle on an N47, book an inspection immediately."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "BMWEngines.uk",
+          "url": "https://bmwengine.uk/",
+          "logo": "https://bmwengine.uk/images/bmwengines-logo.png",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "BMW X3 18d Engine Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "1200",
+            "highPrice": "4800",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "name": "BMW X3 18d UK Engine Enquiry Data 2025",
+          "description": "Proprietary UK enquiry volumes and demand trends for BMW X3 18d engines across both N47 and B47 generations, sourced from BMWEngines.uk's specialist marketplace activity.",
+          "creator": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk"
+          },
+          "temporalCoverage": "2025",
+          "spatialCoverage": "United Kingdom"
+        },
+        {
+          "@type": "WebPage",
+          "name": "X3 18d Engine Replacement Cost UK — Compare Quotes",
+          "url": "https://bmwengine.uk/x3/18d/",
+          "author": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk Specialist Network"
+          },
+          "datePublished": "2026-07-11",
+          "dateModified": "2026-07-11"
+        }
+      ]
+    }
+  },
+  "hero": {
+    "tagPill": "BMW X3 18d • 2010–present • 2 Engine Generations",
+    "h1": "BMW X3 18d Engine Replacement — Compare Prices & Get Quotes",
+    "subHeadline": "The X3 18d is powered by BMW's 2.0-litre four-cylinder diesel — the N47 in the F25 and the B47 in the G01. The N47 has a well-documented timing chain weakness; the B47 is significantly improved. Get quotes from UK specialists for reconditioned, rebuilt and used units today.",
+    "trustBadges": [
+      "🔧 Supply & Fit Available",
+      "✅ 12-Month Warranty",
+      "🚚 Nationwide Delivery",
+      "👥 20+ Specialists"
+    ],
+    "priceAnchor": "BMW X3 18d Engines — from £1,200 to £4,800 · Common codes: N47D20, B47D20",
+    "registrationInput": {
+      "flag": "🇬🇧 GB",
+      "placeholder": "Enter your reg — e.g. AB12 CDE",
+      "cta": {
+        "label": "Get My Free 18d Engine Quotes Now →",
+        "href": "#"
+      }
+    },
+    "ticker": "● Instant Quotes · No Obligation · 100% Free · Reconditioned · Rebuilt · Used · Supply & Fit Available · UK-Wide Network"
+  },
+  "eraMap": {
+    "title": "The 18d THROUGH TIME — Era Map",
+    "columns": [
+      "Generation",
+      "Years",
+      "Engine Code",
+      "Reliability",
+      "Recon Cost",
+      "Era Note"
+    ],
+    "rows": [],
+    "sourceNote": "",
+    "dataNote": ""
+  },
+  "replacementCosts": {
+    "h2": "BMW X3 18d Engine Replacement Costs",
+    "columns": [
+      "Engine Type",
+      "Supply Only",
+      "Fitted (Indie)",
+      "Warranty",
+      "Best For"
+    ],
+    "rows": [
+      {
+        "engineType": "Used Engine",
+        "supplyOnly": "£1,200–£2,500",
+        "fittedIndie": "£2,200–£4,000",
+        "warranty": "1–6 months",
+        "bestFor": "Budget priority; older N47 examples"
+      },
+      {
+        "engineType": "Reconditioned Engine",
+        "supplyOnly": "£1,500–£3,800",
+        "fittedIndie": "£3,000–£5,500",
+        "warranty": "12–24 months",
+        "bestFor": "Most owners — best cost/warranty balance"
+      },
+      {
+        "engineType": "Rebuilt Engine",
+        "supplyOnly": "£2,800–£4,800",
+        "fittedIndie": "£4,200–£6,500",
+        "warranty": "12–24 months",
+        "bestFor": "Long-term ownership; 3+ year horizon"
+      },
+      {
+        "engineType": "Main Dealer New",
+        "supplyOnly": "£4,500–£7,500",
+        "fittedIndie": "£6,000–£9,500",
+        "warranty": "24–36 months",
+        "bestFor": "Insurance jobs, warranty claims"
+      }
+    ],
+    "figuresNote": "Figures above reflect the current X3 18d market. N47-engined cars sit at the lower end; B47 examples command a premium. See the Era Map above for generation-specific context.",
+    "labourEstimate": "Fitting an X3 18d engine typically takes 10–14 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer). The N47's rear-mounted chain location makes timing chain replacement particularly labour-intensive.",
+    "cta": {
+      "label": "→ Compare 18d engine prices from UK specialists",
+      "href": "#"
+    }
+  },
+  "commonProblems": {
+    "problems": [
+      {
+        "id": 1,
+        "title": "N47 Timing Chain Failure (Rear-Mounted Design)",
+        "symptoms": "Rattling noise on cold start lasting 2–5 seconds, metallic ticking from the rear of the engine, engine warning light, cam timing errors, eventual chain slip",
+        "typicalMileage": "60,000–100,000 miles",
+        "repairCost": "£800–£1,800 (timing chain, tensioner, and guide replacement)",
+        "replacementCost": "£1,500–£3,500 (if chain jumps and causes valve interference)",
+        "urgency": {
+          "icon": "🔴",
+          "label": "Immediate",
+          "text": "any cold-start rattle on an N47 requires immediate investigation"
+        },
+        "recommendation": "The N47's timing chain is mounted at the rear of the engine — a design that makes replacement exceptionally labour-intensive (engine-out job). The chain can stretch and the plastic guides can break, leading to catastrophic engine failure. BMW faced widespread complaints and class action lawsuits over this issue. If you're buying an N47-engined X3 18d and there's no proof of timing chain work, budget for it immediately — or walk away. Frequent oil changes (every 5,000–8,000 miles) can help prevent chain wear.",
+        "failureLink": {
+          "label": "Read the full timing chain failure guide",
+          "href": "/failures/timing-chain-failure/"
+        }
+      },
+      {
+        "id": 2,
+        "title": "EGR Cooler Leaks (N47 and B47)",
+        "symptoms": "Coolant loss with no visible external leak, white smoke from exhaust, occasional burning smell, engine warning light",
+        "typicalMileage": "60,000–100,000 miles",
+        "repairCost": "£500–£1,200 (EGR cooler replacement)",
+        "replacementCost": "N/A — repair only",
+        "urgency": {
+          "icon": "🟠",
+          "label": "Check",
+          "text": "book inspection urgently"
+        },
+        "recommendation": "The EGR cooler is a known weak point on both the N47 and B47. Coolant leaks from the cooler can lead to overheating if not caught early. Replacement is straightforward and parts are readily available from BMW specialists. Check coolant levels regularly and investigate any unexplained drop. If left unchecked, coolant loss can lead to head gasket failure. BMW issued recalls for EGR cooler issues on some models — check if your car is affected.",
+        "failureLink": {
+          "label": "Read the full EGR cooler failure guide",
+          "href": "/failures/egr-cooler-failure/"
+        }
+      },
+      {
+        "id": 3,
+        "title": "Oil Dilution (Diesel in Oil) — N47 and B47",
+        "symptoms": "Rising oil level on the dipstick, smell of diesel in the oil, engine warning light, DPF regeneration occurring frequently",
+        "typicalMileage": "Any mileage — exacerbated by short journeys",
+        "repairCost": "£150–£300 (oil and filter change with correct spec oil)",
+        "replacementCost": "£1,500–£4,500 (if prolonged dilution causes bearing failure)",
+        "urgency": {
+          "icon": "🟠",
+          "label": "Check",
+          "text": "book inspection urgently"
+        },
+        "recommendation": "Diesel engines suffer from oil dilution — fuel gets past the piston rings during DPF regeneration cycles. Short journeys make this worse. Check the oil level regularly; if it's rising, get an oil change immediately using the correct BMW-spec oil (5W-30 LL-04). Extended dilution damages bearings and leads to catastrophic failure. Regular motorway runs to allow passive DPF regeneration are essential.",
+        "failureLink": {
+          "label": "Read the full oil dilution guide",
+          "href": "/failures/oil-dilution/"
+        }
+      }
+    ]
+  },
+  "quotesCta": {
+    "headline": "Ready to Compare? Get Matched With a Vetted BMW Specialist →",
+    "supportingLine": "20+ vetted BMW specialists, every X3 engine era covered, with a 12-month warranty as standard.",
+    "button": {
+      "label": "Get My Free 18d Engine Quotes Now →",
+      "href": "#"
+    }
+  },
+  "repairBuyOrReplace": {
+    "h2": "X3 18d — Repair, Buy, or Replace?",
+    "canItBeRepaired": {
+      "title": "Can It Be Repaired?",
+      "columns": [
+        "Problem",
+        "Repairable?",
+        "Typical Cost",
+        "When It Makes Sense"
+      ],
+      "rows": [
+        {
+          "problem": "N47 timing chain (preventative)",
+          "repairable": "✅ Yes",
+          "typicalCost": "£800–£1,800",
+          "whenItMakesSense": "Labour-intensive (engine-out) but far cheaper than a full engine replacement"
+        },
+        {
+          "problem": "N47 timing chain failure (engine damage)",
+          "repairable": "❌ Usually No",
+          "typicalCost": "Engine replacement",
+          "whenItMakesSense": "If chain jumps and valves hit pistons, replacement is the only option"
+        },
+        {
+          "problem": "EGR cooler leak",
+          "repairable": "✅ Yes",
+          "typicalCost": "£500–£1,200",
+          "whenItMakesSense": "Straightforward replacement — catch before overheating"
+        },
+        {
+          "problem": "Oil dilution (caught early)",
+          "repairable": "✅ Yes",
+          "typicalCost": "£150–£300",
+          "whenItMakesSense": "Oil change with correct spec — cheap and effective"
+        },
+        {
+          "problem": "DPF clogging",
+          "repairable": "✅ Yes",
+          "typicalCost": "£400–£1,200",
+          "whenItMakesSense": "Forced regeneration or cleaning — prevention is key"
+        }
+      ]
+    },
+    "buyingChecks": {
+      "title": "Buying This X3 18d? Check These First",
+      "buyIf": [
+        "* B47-engined car (G01, 2017+) — the more reliable engine with the front-mounted chain",
+        "* N47-engined car with documented timing chain work — evidence of the upgrade is essential",
+        "* Full service history with correct BMW-spec oil (5W-30 LL-04 or 0W-30)",
+        "* Evidence of regular motorway driving — DPF regeneration requires motorway runs"
+      ],
+      "avoidIf": [
+        "* N47-engined car with no proof of timing chain work — you're buying a known risk",
+        "* Any cold-start rattle — this is almost certainly timing chain wear on N47",
+        "* Evidence of rising oil levels — oil dilution is damaging bearings",
+        "* Poor service history — both engines are unforgiving of neglect"
+      ]
+    },
+    "closingVerdict": "The X3 18d tells a tale of two diesel engines. The N47 (2010–2017) is a capable diesel with a well-documented timing chain weakness — the rear-mounted design makes replacement expensive. The B47 (2017+) relocated the chain to the front, eliminating the most serious flaw. The B47 is the much safer bet. If you're buying an N47, demand timing chain history — or walk away.",
+    "cta": {
+      "label": "→ Compare 18d engine prices before you buy",
+      "href": "#"
+    }
+  },
+  "buyingChecklist": {
+    "intro": "Before you buy a used BMW X3 18d (or before you commit to an engine replacement), check these:",
+    "items": [
+      "1. Cold Start — Listen for rattles lasting more than 1–2 seconds (timing chain warning on N47)",
+      "2. Service History — including which generation (F25 or G01) and evidence of timing chain work on N47",
+      "3. Oil Level — Is the oil level rising on the dipstick? (oil dilution warning)",
+      "4. Coolant Level — Any unexplained loss? (EGR cooler warning sign)",
+      "5. DPF History — Check for regeneration issues; short journeys accelerate DPF wear",
+      "6. Oil Condition — Any signs of diesel contamination? (fuel in oil)",
+      "7. Engine Warning Light — Have codes been read? Any unresolved issues?",
+      "8. MOT History — Check for emissions-related failures (DPF, EGR, NOx sensor issues)"
+    ]
+  },
+  "engineCodes": {
+    "columns": [
+      "Engine Code",
+      "Years",
+      "Power",
+      "2025 Enquiries",
+      "Avg. Recon Cost"
+    ],
+    "rows": [
+      {
+        "engineCode": "N47D20",
+        "years": "2010–2017",
+        "power": "143 hp",
+        "enquiries": "[PATTERN DATA]",
+        "avgReconCost": "£1,500–£3,500 [BMW-QUOTE]"
+      },
+      {
+        "engineCode": "B47D20",
+        "years": "2017–present",
+        "power": "150 hp",
+        "enquiries": "[PATTERN DATA]",
+        "avgReconCost": "£2,000–£4,500 [BMW-QUOTE]"
+      }
+    ],
+    "matchNote": "This table's rows match Section 1B's Era Map exactly — two engine families across the X3 18d's history.",
+    "technicalSpecs": {
+      "title": "Technical Specs (B47D20 — current generation):",
+      "items": [
+        {
+          "label": "* Displacement",
+          "value": "1,995cc (2.0-litre)"
+        },
+        {
+          "label": "* Cylinders",
+          "value": "4-cylinder inline"
+        },
+        {
+          "label": "* Compression Ratio",
+          "value": "16.5:1"
+        },
+        {
+          "label": "* Fuel System",
+          "value": "Common-rail direct injection"
+        },
+        {
+          "label": "* Turbocharger",
+          "value": "Single variable-geometry turbocharger"
+        },
+        {
+          "label": "* MHEV",
+          "value": "48V mild-hybrid system (LCI models)"
+        }
+      ]
+    },
+    "cta": {
+      "label": "→ Compare 18d engine prices for your BMW",
+      "href": "#"
+    }
+  },
+  "marketIntelligence": {
+    "items": []
+  },
+  "faq": {
+    "items": [],
+    "disclaimer": ""
+  },
+  "trustCta": {
+    "h2": "",
+    "trustPoints": [
+      {
+        "title": "Trusted 18d Engine Suppliers",
+        "text": "every garage and engine rebuilder in our network is vetted, rated and reviewed by real X3 18d owners, as part of the Engine Finders network, across both the F25 and G01 generations — whether you drive the N47 or B47 engine."
+      },
+      {
+        "title": "Compare 18d Engine Replacement Companies",
+        "text": "see prices, warranty terms and supply & fit options side‑by‑side before you commit, with specialists who genuinely understand the timing chain, EGR cooler, and oil dilution nuances of each X3 18d generation."
+      },
+      {
+        "title": "UK Engine Replacement Services for X3 18d",
+        "text": "supply‑only or full supply & fit available nationwide, covering every generation of this badge since 2010 with a 12‑month warranty as standard."
+      }
+    ],
+    "finalCta": "Find the best BMW X3 18d engine replacement UK drivers rely on. Compare prices from trusted specialists on EnginesMarket today and get back on the road with confidence.",
+    "ctaButton": {
+      "label": "Compare BMW X3 18d Engine Prices Now →",
+      "href": "#"
+    }
+  }
+}

@@ -1,0 +1,516 @@
+{
+  "meta": {
+    "slug": "x7-m50i-m60i",
+    "title": "BMW X7 M50i M60i Engine Replacement Cost UK — Compare Quotes",
+    "titleCharCount": 54,
+    "description": "Every BMW X7 V8 engine — N63TU3 and S68. G07 generations, real UK costs and reliability. Get free quotes from 20+ vetted BMW specialists today.",
+    "descriptionCharCount": 159,
+    "canonical": "https://bmwengine.uk/x7/m50i-m60i/",
+    "openGraph": {
+      "title": "",
+      "description": "",
+      "type": "",
+      "url": "",
+      "image": "",
+      "siteName": ""
+    },
+    "twitter": {
+      "card": "",
+      "title": "",
+      "description": "",
+      "image": ""
+    },
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://bmwengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "X7",
+              "item": "https://bmwengine.uk/x7/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "M50i / M60i",
+              "item": "https://bmwengine.uk/x7/m50i-m60i/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "BMW X7 M50i / M60i Engine Era Map",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "G07 X7 M50i (N63B44T3, 2019-2022)",
+              "url": "https://bmwengine.uk/x7/g07/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "G07 X7 M60i (S68B44A, 2023-present)",
+              "url": "https://bmwengine.uk/x7/g07-lci/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "BMW X7 M50i / M60i Engine Codes",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "N63B44T3 (N63TU3)",
+              "url": "https://bmwengine.uk/engines/n63/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "S68B44A",
+              "url": "https://bmwengine.uk/engines/s68/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does a BMW X7 M50i / M60i engine replacement cost in the UK?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A reconditioned N63TU3 engine typically costs £6,000–£10,000 supply only, with the S68 sitting at £8,000–£14,000. Fitting adds £1,500–£2,500. Main dealer new engines can exceed £25,000. Use our calculator for a figure specific to your car."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the BMW X7 M50i / M60i engine reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "It depends on the generation. The N63TU3 (M50i, 2019–2022) is rated ★★★☆☆ — improved over early N63s but still prone to valve stem seal failure, turbo oil line degradation, HPFP failure, and oil leaks. The S68 (M60i, 2023+) is rated ★★★★☆ — an M-developed evolution with mild-hybrid and improved thermodynamics, but it's still too early for long-term reliability data."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What are the common problems with the BMW X7 M50i / M60i?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "N63TU3 issues include valve stem seal failure (blue smoke on cold start), turbo oil line degradation, HPFP failure, oil leaks from valve covers and timing covers, and timing chain guide wear. S68 issues are limited to early recalls and DME calibration errors."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is it worth replacing a BMW X7 V8 engine, or should I scrap the car?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Depends on vehicle value. Against a well-kept G07 X7 V8 worth £25,000–£50,000, an £8,000–£14,000 recon is a manageable 16–56% of the vehicle's value — worth it for a well-maintained example. Given the X7's strong retained values, replacement is usually viable for vehicles in good condition."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I find my BMW X7 engine code?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Listed on the VIN plate and vehicle documentation. As a rule of thumb: G07 pre-LCI (2019–2022) is N63TU3, G07 LCI (2023+) is S68. Tell us your registration date and we'll confirm it for free."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I repair the N63's valve stem seals, or does it need a new engine?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes — valve stem seal replacement is a specialist repair costing £2,500–£5,000. If caught early, it does not require engine replacement. However, if neglected, oil consumption can damage catalytic converters and oxygen sensors, significantly increasing the repair bill."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "BMWEngines.uk",
+          "url": "https://bmwengine.uk/",
+          "logo": "https://bmwengine.uk/images/bmwengines-logo.png",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "BMW X7 M50i / M60i Engine Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "3500",
+            "highPrice": "14000",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "name": "BMW X7 V8 UK Engine Enquiry Data 2025",
+          "description": "Proprietary UK enquiry volumes and demand trends for BMW X7 V8 engines (N63TU3 and S68), sourced from BMWEngines.uk's specialist marketplace activity.",
+          "creator": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk"
+          },
+          "temporalCoverage": "2025",
+          "spatialCoverage": "United Kingdom"
+        },
+        {
+          "@type": "WebPage",
+          "name": "BMW X7 M50i M60i Engine Replacement Cost UK — Compare Quotes",
+          "url": "https://bmwengine.uk/x7/m50i-m60i/",
+          "author": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk Specialist Network"
+          },
+          "datePublished": "2026-07-12",
+          "dateModified": "2026-07-12"
+        }
+      ]
+    }
+  },
+  "hero": {
+    "tagPill": "BMW X7 M50i / M60i • 2019–present • 2 Engine Generations • N63TU3 / S68",
+    "h1": "BMW X7 M50i / M60i Engine Replacement — Compare Prices & Get Quotes",
+    "subHeadline": "Get quotes today from trusted UK BMW X7 V8 specialists. Compare reconditioned, rebuilt and used N63 and S68 engines for the flagship luxury SUV — supply & fit available nationwide.",
+    "trustBadges": [
+      "🔧 Supply & Fit Available",
+      "✅ 12-Month Warranty",
+      "🚚 Nationwide Delivery",
+      "👥 20+ Specialists"
+    ],
+    "priceAnchor": "BMW X7 V8 Engines — from £3,500 to £14,000 · Common codes: N63B44T3, S68B44A",
+    "registrationInput": {
+      "flag": "🇬🇧 GB",
+      "placeholder": "Enter your reg — e.g. AB12 CDE",
+      "cta": {
+        "label": "See X7 V8 Engine Options →",
+        "href": "#"
+      }
+    },
+    "ticker": "● Instant Quotes · No Obligation · 100% Free · Reconditioned · Rebuilt · Used · Supply & Fit Available · UK-Wide Network"
+  },
+  "eraMap": {
+    "title": "The X7 M50i / M60i THROUGH TIME — Era Map",
+    "columns": [
+      "Generation",
+      "Years",
+      "Engine Code",
+      "Reliability",
+      "Recon Cost",
+      "Era Note"
+    ],
+    "rows": [
+      {
+        "generation": "G07 (pre-LCI)",
+        "years": "2019–2022",
+        "engineCode": "N63B44T3 (N63TU3, 4.4 V8 twin-turbo)",
+        "reliability": "★★★☆☆ [NEWLY ASSIGNED — see Data Note]",
+        "reconCost": "£6,000–£10,000 [PLACEHOLDER — confirm vs cost sheet]",
+        "eraNote": "The M50i's hot-vee V8 — improved over early N63s, but heat-related oil leaks and valve stem seals remain watchpoints."
+      },
+      {
+        "generation": "G07 (LCI)",
+        "years": "2023–present",
+        "engineCode": "S68B44A (4.4 V8 twin-turbo + 48V MHEV)",
+        "reliability": "★★★★☆ [NEWLY ASSIGNED — see Data Note]",
+        "reconCost": "£8,000–£14,000 [PLACEHOLDER — confirm vs cost sheet]",
+        "eraNote": "The M60i's S68 — a genuine M-engine with mild-hybrid; more reliable than the N63 but still a complex hot-vee V8."
+      }
+    ],
+    "sourceNote": "",
+    "dataNote": ""
+  },
+  "replacementCosts": {
+    "h2": "BMW X7 M50i / M60i Engine Replacement Costs",
+    "columns": [
+      "Engine Type",
+      "Supply Only",
+      "Fitted (Indie)",
+      "Warranty",
+      "Best For"
+    ],
+    "rows": [
+      {
+        "engineType": "Used Engine",
+        "supplyOnly": "£3,500–£6,500",
+        "fittedIndie": "£4,600–£7,800",
+        "warranty": "3–6 months",
+        "bestFor": "Budget priority; vehicle under £20,000"
+      },
+      {
+        "engineType": "Reconditioned Engine",
+        "supplyOnly": "£6,000–£10,000",
+        "fittedIndie": "£7,200–£11,500",
+        "warranty": "12–24 months",
+        "bestFor": "Most owners — best cost/warranty balance"
+      },
+      {
+        "engineType": "Rebuilt Engine",
+        "supplyOnly": "£8,000–£14,000",
+        "fittedIndie": "£9,200–£15,500",
+        "warranty": "12–24 months",
+        "bestFor": "Long-term ownership; 3+ year horizon"
+      },
+      {
+        "engineType": "Main Dealer New",
+        "supplyOnly": "£18,000–£25,000",
+        "fittedIndie": "£20,000–£28,000",
+        "warranty": "24–36 months",
+        "bestFor": "Insurance jobs, warranty claims; dealer costs can exceed £25,000"
+      }
+    ],
+    "figuresNote": "",
+    "labourEstimate": "Fitting an X7 V8 engine typically takes 16–22 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer). The hot-vee layout requires significant disassembly.",
+    "cta": {
+      "label": "",
+      "href": "#"
+    }
+  },
+  "commonProblems": {
+    "problems": []
+  },
+  "quotesCta": {
+    "headline": "Weighing Your Options? Compare Specialist Quotes When You're Ready →",
+    "supportingLine": "20+ vetted BMW specialists, every X7 V8 variant covered, with a 12-month warranty as standard.",
+    "button": {
+      "label": "See X7 V8 Engine Options →",
+      "href": "#"
+    }
+  },
+  "repairBuyOrReplace": {
+    "h2": "BMW X7 M50i / M60i — Repair, Buy, or Replace?",
+    "canItBeRepaired": {
+      "title": "Can It Be Repaired?",
+      "columns": [
+        "Problem",
+        "Repairable?",
+        "Typical Cost",
+        "When It Makes Sense"
+      ],
+      "rows": [
+        {
+          "problem": "Valve stem seal failure (N63TU3)",
+          "repairable": "✅ Yes",
+          "typicalCost": "£2,500–£5,000",
+          "whenItMakesSense": "Specialist repair; far cheaper than catalytic converter replacement"
+        },
+        {
+          "problem": "Turbo oil line degradation (N63TU3)",
+          "repairable": "✅ Yes",
+          "typicalCost": "£1,500–£3,500",
+          "whenItMakesSense": "Proactive replacement; cool-down idle prevents recurrence"
+        },
+        {
+          "problem": "HPFP failure (N63TU3)",
+          "repairable": "✅ Yes",
+          "typicalCost": "£1,500–£3,000",
+          "whenItMakesSense": "Replace pump; catch it before fuel system damage"
+        },
+        {
+          "problem": "Valve cover/timing cover oil leaks (N63TU3)",
+          "repairable": "✅ Yes",
+          "typicalCost": "£800–£2,000",
+          "whenItMakesSense": "Straightforward gasket replacement; catch it early"
+        },
+        {
+          "problem": "Timing chain guide wear (N63TU3)",
+          "repairable": "✅ Yes",
+          "typicalCost": "£2,500–£5,000",
+          "whenItMakesSense": "Replace with updated guides; short oil intervals prevent recurrence"
+        },
+        {
+          "problem": "S68 engine failure (M60i)",
+          "repairable": "⚠️ Too early to tell",
+          "typicalCost": "Varies",
+          "whenItMakesSense": "S68 is too new for widespread failure data; early issues appear minor"
+        }
+      ]
+    },
+    "buyingChecks": {
+      "title": "Buying This X7 V8? Check These First",
+      "buyIf": [
+        "* 2023+ S68 M60i if you want the more reliable V8 with mild-hybrid",
+        "* Documented valve stem seal replacement on N63TU3 cars (especially 2019–2020)",
+        "* Evidence of short oil change intervals (8,000–11,000 km)",
+        "* Full BMW service history — the N63 is unforgiving of neglect"
+      ],
+      "avoidIf": [
+        "* Blue smoke on cold start with no valve stem seal history",
+        "* Hesitation or long crank times — potential HPFP failure",
+        "* Oil leaks with no record of repair",
+        "* Poor service history on any X7 V8"
+      ]
+    },
+    "closingVerdict": "The X7 M50i/M60i is BMW's flagship luxury V8 SUV — a remarkable machine that delivers 523 bhp and effortless performance. But the N63's hot-vee architecture comes with well-documented maintenance demands: valve stem seals, turbo oil lines, HPFP, and oil leaks are all known watchpoints. The S68 in the M60i is a genuine improvement, but it's still early days for long-term reliability data. Buy the newest S68 you can afford, and always demand documented service history.",
+    "cta": {
+      "label": "",
+      "href": "#"
+    }
+  },
+  "buyingChecklist": {
+    "intro": "Before you buy a used BMW X7 V8 (or before you commit to an engine replacement), check these:",
+    "items": [
+      "* Cold Start — Any blue smoke? Valve stem seal failure indicator (N63)",
+      "* Service History — Including which engine era (N63TU3 for 2019–2022, S68 for 2023+) — see the Era Map above",
+      "* Oil Consumption — Does it use more than 1L per 1,000 miles? Valve stem seal warning",
+      "* Turbo Health — Any whining noise or blue smoke under load? Turbo oil line degradation",
+      "* HPFP Health — Any hesitation or long crank times? Fuel pump failure risk",
+      "* Oil Leaks — Check for oil spots under the car or burning oil smell",
+      "* Engine Warning Light — Have codes been read? Any unresolved issues?",
+      "* MOT History — Check for emissions-related failures"
+    ]
+  },
+  "engineCodes": {
+    "columns": [
+      "Engine Code",
+      "Years",
+      "Power",
+      "2025 Enquiries",
+      "Avg. Recon Cost"
+    ],
+    "rows": [
+      {
+        "engineCode": "N63B44T3 (N63TU3)",
+        "years": "2019–2022",
+        "power": "523 bhp / 750 Nm",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£6,000–£10,000 [PLACEHOLDER]"
+      },
+      {
+        "engineCode": "S68B44A",
+        "years": "2023–present",
+        "power": "523 bhp + 12 hp MHEV / 750 Nm + 200 Nm MHEV",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£8,000–£14,000 [PLACEHOLDER]"
+      }
+    ],
+    "matchNote": "",
+    "technicalSpecs": {
+      "title": "Technical Specs (S68B44A — current):",
+      "items": [
+        {
+          "label": "* Displacement",
+          "value": "4,395cc"
+        },
+        {
+          "label": "* Cylinders",
+          "value": "8-cylinder V (90° — hot-vee)"
+        },
+        {
+          "label": "* Compression Ratio",
+          "value": "10.5:1"
+        },
+        {
+          "label": "* Fuel System",
+          "value": "Direct injection"
+        },
+        {
+          "label": "* Turbocharger",
+          "value": "Twin-turbo (hot-vee layout) with bank-symmetrical turbos and cross-bank exhaust manifold"
+        },
+        {
+          "label": "* 48V Mild Hybrid",
+          "value": "Integrated into 8-speed Steptronic Sport gearbox"
+        }
+      ]
+    },
+    "cta": {
+      "label": "",
+      "href": "#"
+    }
+  },
+  "marketIntelligence": {
+    "items": [
+      {
+        "label": "Most Common Failure",
+        "value": "Valve stem seal failure and oil consumption — approximately 50% of N63 enquiries [PATTERN DATA]"
+      },
+      {
+        "label": "Average Enquiry Mileage",
+        "value": "45,000 miles [PATTERN DATA]"
+      },
+      {
+        "label": "Average Replacement Cost",
+        "value": "£8,000 reconditioned, supply only [PLACEHOLDER — confirm vs cost sheet]"
+      },
+      {
+        "label": "Most Requested Engine Code",
+        "value": "N63B44T3 [BMW-VERIFIED]"
+      },
+      {
+        "label": "Peak Enquiry Season",
+        "value": "Winter — cold starts expose valve stem seal and HPFP issues [PATTERN DATA]"
+      },
+      {
+        "label": "Regional Demand",
+        "value": "London (25%), South East (22%), South West (15%) [PATTERN DATA]"
+      }
+    ]
+  },
+  "faq": {
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a BMW X7 M50i / M60i engine replacement cost in the UK?",
+        "answer": "A reconditioned N63TU3 engine typically costs £6,000–£10,000 supply only, with the S68 sitting at £8,000–£14,000. Fitting adds £1,500–£2,500. Main dealer new engines can exceed £25,000. Use our calculator for a figure specific to your car."
+      },
+      {
+        "id": 2,
+        "question": "Is the BMW X7 M50i / M60i engine reliable?",
+        "answer": "It depends on the generation. The N63TU3 (M50i, 2019–2022) is rated ★★★☆☆ — improved over early N63s but still prone to valve stem seal failure, turbo oil line degradation, HPFP failure, and oil leaks. The S68 (M60i, 2023+) is rated ★★★★☆ — an M-developed evolution with mild-hybrid and improved thermodynamics, but it's still too early for long-term reliability data."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the BMW X7 M50i / M60i?",
+        "answer": "N63TU3 issues include valve stem seal failure (blue smoke on cold start), turbo oil line degradation, HPFP failure, oil leaks from valve covers and timing covers, and timing chain guide wear. S68 issues are limited to early recalls and DME calibration errors."
+      },
+      {
+        "id": 4,
+        "question": "Is it worth replacing a BMW X7 V8 engine, or should I scrap the car?",
+        "answer": "Depends on vehicle value. Against a well-kept G07 X7 V8 worth £25,000–£50,000, an £8,000–£14,000 recon is a manageable 16–56% of the vehicle's value — worth it for a well-maintained example. Given the X7's strong retained values, replacement is usually viable for vehicles in good condition."
+      },
+      {
+        "id": 5,
+        "question": "How do I find my BMW X7 engine code?",
+        "answer": "Listed on the VIN plate and vehicle documentation. As a rule of thumb: G07 pre-LCI (2019–2022) is N63TU3, G07 LCI (2023+) is S68. Tell us your registration date and we'll confirm it for free."
+      },
+      {
+        "id": 6,
+        "question": "Can I repair the N63's valve stem seals, or does it need a new engine?",
+        "answer": "Yes — valve stem seal replacement is a specialist repair costing £2,500–£5,000. If caught early, it does not require engine replacement. However, if neglected, oil consumption can damage catalytic converters and oxygen sensors, significantly increasing the repair bill."
+      }
+    ],
+    "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty — always confirm terms with your chosen supplier."
+  },
+  "trustCta": {
+    "h2": "",
+    "trustPoints": [],
+    "finalCta": "Find the best BMW X7 M50i / M60i engine replacement UK drivers rely on. Compare prices from trusted specialists on EnginesMarket today and protect your flagship investment.",
+    "ctaButton": {
+      "label": "Explore BMW X7 V8 Engine Quotes →",
+      "href": "#"
+    }
+  }
+}

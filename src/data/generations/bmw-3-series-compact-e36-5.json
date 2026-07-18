@@ -1,0 +1,385 @@
+{
+  "meta": {
+    "slug": "bmw-3-series-compact-e36-5",
+    "title": "BMW 3 Series Compact E36/5 Engines — The Complete UK Guide",
+    "titleCharCount": 58,
+    "description": "",
+    "descriptionCharCount": 0,
+    "jsonLd": {}
+  },
+  "internalDeclarations": {
+    "checkA": "",
+    "checkB": "",
+    "authorityModelMode": ""
+  },
+  "hero": {
+    "tagPill": "BMW 3 Series Compact E36/5 • Hatchback • 1994–2000",
+    "h1": "BMW 3 Series Compact E36/5 Engines — The Complete UK Guide",
+    "subHeadline": "Every engine fitted to the E36/5 Compact — from the 1.6-litre M43 four-cylinder to the 2.5-litre M52 six-cylinder and the rare M41 diesel. Real UK costs, honest failure data, and BMW's first hatchback since the 2002 Touring. Backed by genuine UK specialist data for 2025.",
+    "trustStrip": [
+      {
+        "icon": "📊",
+        "label": "E36/5 Enquiries (2025) — pattern data"
+      },
+      {
+        "icon": "🔧",
+        "label": "Hatchback"
+      },
+      {
+        "icon": "📖",
+        "label": "6 Engine Codes"
+      },
+      {
+        "icon": "🏆",
+        "label": "Part of Engine Finders"
+      }
+    ],
+    "primaryCta": {
+      "label": "Explore E36/5 Engines →",
+      "href": "#"
+    },
+    "dataIntegrityNote": ""
+  },
+  "engineDatabase": {
+    "h2": "BMW 3 Series Compact E36/5 Engine Codes — The Complete Database",
+    "subHeadline": "Every engine fitted to the E36/5 Compact specifically — from the entry-level 316i to the rare 323ti six-cylinder and the 318tds diesel.",
+    "columns": [
+      "Engine Code",
+      "Family",
+      "Fuel",
+      "Displacement",
+      "Power",
+      "Years (E36/5)",
+      "Variants (badges)",
+      "Reliability",
+      "2025 Enquiries",
+      "Avg. Recon Cost"
+    ],
+    "engines": [
+      {
+        "engineCode": "M43B16",
+        "family": "M43",
+        "fuel": "Petrol",
+        "displacement": "1.6L (1596 cc)",
+        "power": "102 PS (75 kW)",
+        "years": "1994–1998",
+        "variants": "316i",
+        "reliability": "★★★★☆ [PROVISIONAL — pending dedicated Engine Page]",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£1,200–£2,500 [BMW-QUOTE]"
+      },
+      {
+        "engineCode": "M43B19",
+        "family": "M43",
+        "fuel": "Petrol",
+        "displacement": "1.9L (1895 cc)",
+        "power": "105 PS (77 kW)",
+        "years": "1998–2000",
+        "variants": "316i",
+        "reliability": "★★★★☆ [PROVISIONAL — pending dedicated Engine Page]",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£1,200–£2,500 [BMW-QUOTE]"
+      },
+      {
+        "engineCode": "M42B18",
+        "family": "M42",
+        "fuel": "Petrol",
+        "displacement": "1.8L (1796 cc)",
+        "power": "140 PS (103 kW)",
+        "years": "1994–1996",
+        "variants": "318ti",
+        "reliability": "★★★★☆ [PROVISIONAL — pending dedicated Engine Page]",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£1,500–£3,000 [BMW-QUOTE]"
+      },
+      {
+        "engineCode": "M44B19",
+        "family": "M44",
+        "fuel": "Petrol",
+        "displacement": "1.9L (1895 cc)",
+        "power": "140 PS (103 kW)",
+        "years": "1996–1998",
+        "variants": "318ti",
+        "reliability": "★★★★☆ [PROVISIONAL — pending dedicated Engine Page]",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£1,500–£3,000 [BMW-QUOTE]"
+      },
+      {
+        "engineCode": "M52B25",
+        "family": "M52",
+        "fuel": "Petrol",
+        "displacement": "2.5L (2494 cc)",
+        "power": "170 PS (125 kW)",
+        "years": "1997–2000",
+        "variants": "323ti",
+        "reliability": "★★★★☆ [PROVISIONAL — pending dedicated Engine Page]",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£2,500–£4,500 [BMW-QUOTE]"
+      },
+      {
+        "engineCode": "M41D17",
+        "family": "M41",
+        "fuel": "Diesel",
+        "displacement": "1.7L (1665 cc)",
+        "power": "90 PS (66 kW)",
+        "years": "1995–2000",
+        "variants": "318tds",
+        "reliability": "★★★☆☆ [PROVISIONAL — pending dedicated Engine Page]",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£1,800–£3,200 [BMW-QUOTE]"
+      }
+    ],
+    "confidenceScore": {
+      "title": "",
+      "text": ""
+    },
+    "dataCorrections": []
+  },
+  "overview": {
+    "h2": "BMW 3 Series Compact E36/5 — Overview",
+    "intro": "Launched in March 1994, the E36 3 Series Compact (model code E36/5) was BMW's first hatchback since the 2002 Touring was discontinued in 1974. Unlike most hatchback competitors with transverse engines and front-wheel drive, the Compact used BMW's signature longitudinal engine, rear-wheel-drive layout. Built on a shortened E36 platform, the Compact featured E30-style semi-trailing arm rear suspension rather than the Z-axle multi-link setup of the saloon. The engine range included 1.6-litre and 1.9-litre four-cylinder petrols, a 1.8-litre and later 1.9-litre 318ti, a 2.5-litre six-cylinder 323ti (Germany only), and a 1.7-litre turbodiesel. Production ended in 2000; the Compact was replaced by the BMW 1 Series in 2004.",
+    "keyFacts": "Platform: BMW E36 (shortened) • Predecessor: N/A (first BMW hatchback since 2002 Touring) • Successor: BMW 1 Series (E87) • Sibling body styles in this generation: N/A — E36/5 is the sole Compact body style.",
+    "marketIntelligenceLine": "The E36/5 Compact generates steady UK specialist enquiries, concentrated on the 318ti as these entry-level BMWs enter classic-car territory."
+  },
+  "bestWorstEngines": {
+    "items": [
+      {
+        "slot": "Thin-Data Summary",
+        "engine": "",
+        "quote": "Thin-Data Fallback mode — one paragraph: The E36/5 Compact's most dependable engine is the M44B19 (post-1996 318ti) — a 1.9-litre DOHC four-cylinder with 140 PS, well-regarded for its power, reliability and longevity if properly maintained. The earlier M42B18 is similarly robust. The M52B25 six-cylinder in the rare 323ti offers 170 PS and a smooth, refined driving experience, but is complex and more expensive to maintain. The M41D17 diesel is the least common and most complex option — 90 PS and known for injector and turbo issues. For most buyers, the 318ti (M44) represents the sweet spot: reliable, well-supported, and genuinely fun to drive. If you're considering a 323ti, budget for specialist maintenance and factor in that parts are rarer.",
+        "whoItsFor": ""
+      }
+    ]
+  },
+  "ownershipEconomics": {
+    "h2": "BMW 3 Series Compact E36/5 — Ownership Economics",
+    "columns": [
+      "Engine",
+      "Typical Mileage",
+      "Common Major Failure",
+      "Repair Cost (Specialist)",
+      "Replacement Cost (Recon)",
+      "Ownership Verdict"
+    ],
+    "rows": [
+      {
+        "engine": "M43B16/B19 (1.6/1.9 316i)",
+        "typicalMileage": "100k–150k+",
+        "commonMajorFailure": "Timing chain, cooling system",
+        "repairCostSpecialist": "£300–£700",
+        "replacementCostRecon": "£1,200–£2,500",
+        "ownershipVerdict": "Solid Choice — simple, reliable four-cylinder"
+      },
+      {
+        "engine": "M42B18/M44B19 (1.8/1.9 318ti)",
+        "typicalMileage": "100k–150k+",
+        "commonMajorFailure": "Timing chain guides, VANOS (M44)",
+        "repairCostSpecialist": "£400–£900",
+        "replacementCostRecon": "£1,500–£3,000",
+        "ownershipVerdict": "Best Petrol — the one to buy"
+      },
+      {
+        "engine": "M52B25 (2.5 323ti)",
+        "typicalMileage": "80k–150k",
+        "commonMajorFailure": "Cooling system, VANOS, oil leaks",
+        "repairCostSpecialist": "£600–£1,500",
+        "replacementCostRecon": "£2,500–£4,500",
+        "ownershipVerdict": "Watch Closely — rare, complex, rewarding"
+      },
+      {
+        "engine": "M41D17 (1.7 318tds)",
+        "typicalMileage": "80k–120k",
+        "commonMajorFailure": "Injectors, turbo, glow plugs",
+        "repairCostSpecialist": "£500–£1,200",
+        "replacementCostRecon": "£1,800–£3,200",
+        "ownershipVerdict": "Rare Choice — diesel option, complex"
+      }
+    ],
+    "economicsRule": {
+      "title": "The E36/5 rule",
+      "text": "A £1,500–£3,000 318ti recon against a £1,000–£4,000 Compact sits at 38–300% of the car's value. On a sub-£2,000 high-mileage example, that brushes our 70% BMW threshold — we'll honestly tell you to walk away. Against a well-kept £3,000+ example, the same recon drops to 50–100% — assess carefully. Value the car first."
+    },
+    "keyTakeaways": []
+  },
+  "commonProblems": {
+    "problems": [
+      {
+        "id": 1,
+        "title": "M42/M44 Timing Chain & VANOS Wear",
+        "affectedModels": "318ti (M42B18 1994–1996, M44B19 1996–1998).",
+        "typicalFailureMileage": "100,000–150,000 miles.",
+        "rootCause": "The M42 and M44 four-cylinder engines are generally robust, but timing chain guides can wear over time and VANOS units (on M44) can develop rattle or loss of low-end torque. Regular oil changes are critical to longevity.",
+        "tieredCosts": [
+          {
+            "tier": "Preventative (Repair)",
+            "dealer": "£800–£1,500",
+            "specialist": "£400–£900",
+            "work": "",
+            "note": ""
+          },
+          {
+            "tier": "Catastrophic (Replacement)",
+            "dealer": "£2,500–£4,500",
+            "specialist": "£1,500–£3,000",
+            "work": "",
+            "note": ""
+          }
+        ],
+        "recommendation": "On any high-mileage 318ti, have the timing chain inspected and listen for VANOS rattle — a £400–£900 preventative repair is cheaper than the £1,500+ replacement that follows a failure. Regular oil changes (every 5,000–6,000 miles) are the single most important maintenance item.",
+        "cta": {
+          "label": "Compare M44 engine prices for your 318ti →",
+          "href": "#"
+        }
+      },
+      {
+        "id": 2,
+        "title": "M52 Cooling System & VANOS",
+        "affectedModels": "323ti (M52B25, 1997–2000).",
+        "typicalFailureMileage": "80,000–120,000 miles.",
+        "rootCause": "The M52 six-cylinder is a smooth and refined engine, but cooling system components — water pump, thermostat housing, expansion tank — are known weak points. VANOS units can also develop rattle. The 323ti is rare and parts can be harder to source.",
+        "tieredCosts": [
+          {
+            "tier": "Preventative (Repair)",
+            "dealer": "£800–£1,500",
+            "specialist": "£600–£1,200",
+            "work": "",
+            "note": ""
+          },
+          {
+            "tier": "Catastrophic (Replacement)",
+            "dealer": "£3,500–£5,500",
+            "specialist": "£2,500–£4,500",
+            "work": "",
+            "note": ""
+          }
+        ],
+        "recommendation": "If you own or are buying a 323ti, budget for cooling system preventative maintenance — a £600–£1,200 repair is cheaper than the £2,500+ replacement that follows an overheating failure. The 323ti is a future classic, but it demands specialist care.",
+        "cta": {
+          "label": "Compare M52 engine prices for your 323ti →",
+          "href": "#"
+        }
+      },
+      {
+        "id": 3,
+        "title": "M41 Diesel Injector & Turbo Issues",
+        "affectedModels": "318tds (M41D17, 1995–2000).",
+        "typicalFailureMileage": "80,000–120,000 miles.",
+        "rootCause": "The M41D17 is a 1.7-litre turbodiesel — rare in the Compact and known for injector failure and turbocharger wear. The diesel Compact is the least common variant and parts can be difficult to source.",
+        "tieredCosts": [
+          {
+            "tier": "Preventative (Repair)",
+            "dealer": "£800–£1,500",
+            "specialist": "£500–£1,200",
+            "work": "",
+            "note": ""
+          },
+          {
+            "tier": "Catastrophic (Replacement)",
+            "dealer": "£3,000–£4,500",
+            "specialist": "£1,800–£3,200",
+            "work": "",
+            "note": ""
+          }
+        ],
+        "recommendation": "The 318tds is a rare choice — if you're considering one, have a full inspection by a diesel specialist before purchase. Injector and turbo work can quickly exceed the car's value.",
+        "cta": {
+          "label": "Compare M41 engine prices for your 318tds →",
+          "href": "#"
+        }
+      }
+    ]
+  },
+  "replacementCosts": {
+    "h2": "E36/5 Engine Replacement Costs — By Engine and Condition",
+    "columns": [
+      "Variant",
+      "Engine Code",
+      "Used (Supply)",
+      "Reconditioned (Supply)",
+      "Rebuilt (Supply)",
+      "Labour Hours"
+    ],
+    "rows": [
+      {
+        "variant": "316i (1994–1998)",
+        "engineCode": "M43B16",
+        "usedSupply": "£400–£1,000",
+        "reconditionedSupply": "£1,200–£2,500",
+        "rebuiltSupply": "£2,000–£3,500",
+        "labourHours": "8–12 hrs"
+      },
+      {
+        "variant": "316i (1998–2000)",
+        "engineCode": "M43B19",
+        "usedSupply": "£400–£1,000",
+        "reconditionedSupply": "£1,200–£2,500",
+        "rebuiltSupply": "£2,000–£3,500",
+        "labourHours": "8–12 hrs"
+      },
+      {
+        "variant": "318ti (1994–1996)",
+        "engineCode": "M42B18",
+        "usedSupply": "£500–£1,200",
+        "reconditionedSupply": "£1,500–£3,000",
+        "rebuiltSupply": "£2,500–£4,000",
+        "labourHours": "8–12 hrs"
+      },
+      {
+        "variant": "318ti (1996–1998)",
+        "engineCode": "M44B19",
+        "usedSupply": "£500–£1,200",
+        "reconditionedSupply": "£1,500–£3,000",
+        "rebuiltSupply": "£2,500–£4,000",
+        "labourHours": "8–12 hrs"
+      },
+      {
+        "variant": "323ti (1997–2000)",
+        "engineCode": "M52B25",
+        "usedSupply": "£1,200–£2,500",
+        "reconditionedSupply": "£2,500–£4,500",
+        "rebuiltSupply": "£3,500–£6,000",
+        "labourHours": "10–14 hrs"
+      },
+      {
+        "variant": "318tds (1995–2000)",
+        "engineCode": "M41D17",
+        "usedSupply": "£600–£1,500",
+        "reconditionedSupply": "£1,800–£3,200",
+        "rebuiltSupply": "£2,800–£4,500",
+        "labourHours": "8–12 hrs"
+      }
+    ],
+    "note": "No Generation variance from the Engine Page baseline — no dedicated Engine Pages exist for these families yet, so baseline figures are drawn from the EM_Proprietary_Data Table A. Labour hours estimated at 8–12 hours for four-cylinder engines and 10–14 hours for the six-cylinder M52."
+  },
+  "coreVariants": {
+    "dieselVariants": [
+      "318tds"
+    ],
+    "petrolVariants": [
+      "316i",
+      "318ti",
+      "323ti"
+    ],
+    "scopeNote": "All variants listed are first-generation Compact E36/5 only. The 323ti was exclusive to the German market and is rare in the UK. The 318tds diesel is also uncommon. The 316i and 318ti are the most common UK variants."
+  },
+  "marketIntelligence": {
+    "mostRequestedEngines": [],
+    "mostRequestedVariants": [],
+    "averageReplacementCost": "",
+    "mostCommonFailures": [],
+    "liveFeed": []
+  },
+  "faq": {
+    "items": []
+  },
+  "trustCta": {
+    "h2": "",
+    "trustPoints": [],
+    "finalCta": "",
+    "ctaButton": {
+      "label": "",
+      "href": "#",
+      "note": ""
+    }
+  }
+}

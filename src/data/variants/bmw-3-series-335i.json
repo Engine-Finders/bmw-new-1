@@ -1,0 +1,496 @@
+{
+  "meta": {
+    "slug": "bmw-3-series-335i",
+    "title": "BMW 3 Series 335i Engine Replacement — Compare Prices & Get Quotes",
+    "titleCharCount": 66,
+    "description": "",
+    "descriptionCharCount": 0,
+    "canonical": "",
+    "openGraph": {
+      "title": "",
+      "description": "",
+      "type": "",
+      "url": "",
+      "image": "",
+      "siteName": ""
+    },
+    "twitter": {
+      "card": "",
+      "title": "",
+      "description": "",
+      "image": ""
+    },
+    "jsonLd": {}
+  },
+  "hero": {
+    "tagPill": "BMW 3 Series 335i • 2006–2015 • 3.0L Twin-Turbo / Twin-Scroll Turbo I6",
+    "h1": "BMW 3 Series 335i Engine Replacement — Compare Prices & Get Quotes",
+    "subHeadline": "Get quotes today from trusted UK BMW specialists. Compare reconditioned, rebuilt and used N54 and N55 3.0-litre turbocharged engines for the 3 Series 335i — the game-changing twin-turbo six that redefined BMW performance. Supply & fit available nationwide.",
+    "trustBadges": [
+      "🔧 Supply & Fit Available",
+      "✅ 12‑Month Warranty",
+      "🚚 Nationwide Delivery",
+      "👥 20+ Specialists"
+    ],
+    "priceAnchor": "BMW 3 Series 335i Engines — from £1,500 to £5,500 · Common codes: N54B30 (Twin-Turbo), N55B30 (Twin-Scroll)",
+    "registrationInput": {
+      "flag": "🇬🇧 GB",
+      "placeholder": "Enter your reg — e.g. AB12 CDE",
+      "cta": {
+        "label": "Get My Free 335i Engine Quotes Now →",
+        "href": "#"
+      }
+    },
+    "ticker": "● Instant Quotes · No Obligation · 100% Free · Reconditioned · Rebuilt · Used · Supply & Fit Available · UK‑Wide Network"
+  },
+  "eraMap": {
+    "title": "BMW 3 Series 335i — Which Engine Does Your Car Actually Have?",
+    "columns": [
+      "Generation",
+      "Years",
+      "Engine Code",
+      "Reliability",
+      "Recon Cost",
+      "Era Note"
+    ],
+    "rows": [
+      {
+        "generation": "E90/E91/E92/E93",
+        "years": "2006–2010",
+        "engineCode": "N54B30 (3.0L Twin-Turbo I6)",
+        "reliability": "★★★½☆ [NEWLY ASSIGNED — see Data Note]",
+        "reconCost": "£2,800–£4,500 [PLACEHOLDER — confirm vs cost sheet]",
+        "eraNote": "BMW's first mass‑production turbo petrol — HPFP and injector issues are defining weaknesses"
+      },
+      {
+        "generation": "E90/E91/E92/E93 (LCI)",
+        "years": "2010–2013",
+        "engineCode": "N55B30 (3.0L Twin-Scroll I6)",
+        "reliability": "★★★★☆ [NEWLY ASSIGNED — see Data Note]",
+        "reconCost": "£2,500–£4,200 [PLACEHOLDER — confirm vs cost sheet]",
+        "eraNote": "Single twin‑scroll turbo — more reliable than N54, but valve cover and OFHG leaks remain"
+      },
+      {
+        "generation": "F30/F31",
+        "years": "2011–2015",
+        "engineCode": "N55B30 (3.0L Twin-Scroll I6)",
+        "reliability": "★★★★☆ [NEWLY ASSIGNED — see Data Note]",
+        "reconCost": "£2,500–£4,500 [PLACEHOLDER — confirm vs cost sheet]",
+        "eraNote": "F30‑era N55 — same core engine, electric wastegate, revised charge pipe"
+      }
+    ],
+    "sourceNote": "This table is the single source every other section on this page must match. Sections 2, 4, and 6 reference it rather than restating conflicting figures.",
+    "dataNote": ""
+  },
+  "replacementCosts": {
+    "h2": "BMW 3 Series 335i Engine Replacement Costs",
+    "columns": [
+      "Engine Type",
+      "Supply Only",
+      "Fitted (Indie)",
+      "Warranty",
+      "Best For"
+    ],
+    "rows": [
+      {
+        "engineType": "Used Engine",
+        "supplyOnly": "£1,500–£2,800",
+        "fittedIndie": "£2,300–£4,000",
+        "warranty": "1–6 months",
+        "bestFor": "Budget priority; short‑term ownership"
+      },
+      {
+        "engineType": "Reconditioned Engine",
+        "supplyOnly": "£2,800–£4,200",
+        "fittedIndie": "£3,800–£5,500",
+        "warranty": "12–24 months",
+        "bestFor": "Most owners — best cost/warranty balance"
+      },
+      {
+        "engineType": "Rebuilt Engine",
+        "supplyOnly": "£3,800–£5,500",
+        "fittedIndie": "£4,800–£6,800",
+        "warranty": "12–24 months",
+        "bestFor": "Long‑term ownership; maximum reliability"
+      },
+      {
+        "engineType": "Main Dealer New",
+        "supplyOnly": "£6,000–£8,500",
+        "fittedIndie": "£7,500–£10,500",
+        "warranty": "24–36 months",
+        "bestFor": "Insurance jobs; warranty claims; full provenance"
+      }
+    ],
+    "figuresNote": "Figures above reflect the 335i pricing across generations. The N54 and N55 have broadly similar replacement costs, though N54 engines (with twin turbos) may command a slight premium. Older generations: see the Era Map above for generation-specific pricing. A full engine replacement with labour can cost £9,000–£13,000 for premium vehicles.",
+    "labourEstimate": "Fitting a 335i engine typically takes 10–14 hours at £75–£110/hr (independent BMW specialist). N54 twin-turbo variants may require additional labour due to turbo system complexity.",
+    "cta": {
+      "label": "→ Compare 3 Series 335i engine prices from UK specialists",
+      "href": "#"
+    }
+  },
+  "commonProblems": {
+    "problems": [
+      {
+        "id": 1,
+        "title": "High‑Pressure Fuel Pump (HPFP) Failure — N54 (E90, 2006–2010)",
+        "symptoms": "Long cranking on cold or hot start, loss of power, engine stalling, engine warning light (limp mode), reduced fuel economy — in extreme cases, the car may leave you stranded.",
+        "typicalMileage": "20,000–60,000 miles (some owners experienced multiple failures within a few thousand miles).",
+        "repairCost": "£600–£1,200 [PLACEHOLDER] (HPFP replacement).",
+        "replacementCost": "N/A — repair only (if caught early).",
+        "urgency": {
+          "icon": "🔴",
+          "label": "Immediate",
+          "text": "if you experience long cranking or stalling, book an inspection immediately."
+        },
+        "recommendation": "HPFP failure is the most notorious issue with the N54 engine. BMW issued recalls covering over 150,000 vehicles in the US for N54 HPFP failures. Symptoms include extended cranking times, particularly when hot, and the car going into limp mode. A failed HPFP can leave you stranded. While replacement is straightforward, the N54's HPFP is a known weak point — budget for it. The N55 uses an updated HPFP design that is more reliable.",
+        "failureLink": {
+          "label": "",
+          "href": "/failures/hpfp-failure/"
+        }
+      },
+      {
+        "id": 2,
+        "title": "Fuel Injector Failure — N54 (E90, 2006–2010)",
+        "symptoms": "Rough idle, misfire, hesitation on acceleration, engine warning light, fuel smell from the engine bay, increased fuel consumption.",
+        "typicalMileage": "30,000–80,000 miles (can vary significantly).",
+        "repairCost": "£800–£2,000 [PLACEHOLDER] (injector replacement — all six injectors should ideally be replaced as a set with updated index 12 injectors).",
+        "replacementCost": "N/A — repair only (if caught early; ignored injector failure can damage the catalytic converter).",
+        "urgency": {
+          "icon": "🟠",
+          "label": "Check",
+          "text": "book inspection urgently if misfire or rough running occurs."
+        },
+        "recommendation": "The N54's piezo direct injectors are a known failure point. BMW released updated injectors (index 12) to address the issue, but failure can still occur on higher-mileage examples. Symptoms include rough idle, misfire, and fuel smell. When replacing injectors, it's strongly recommended to replace all six and have the DME calibrated. A full set replacement typically costs £800–£2,000 including labour — cheaper than dealing with a failed catalytic converter or engine damage.",
+        "failureLink": {
+          "label": "",
+          "href": "/failures/fuel-injector-failure/"
+        }
+      },
+      {
+        "id": 3,
+        "title": "Wastegate Rattle / Turbocharger Failure — N54 (E90, 2006–2010)",
+        "symptoms": "Metallic rattling noise from the engine bay during deceleration or at idle, loss of boost pressure, reduced power, engine warning light.",
+        "typicalMileage": "40,000–80,000 miles.",
+        "repairCost": "£1,500–£3,500 [PLACEHOLDER] (turbocharger replacement or wastegate repair).",
+        "replacementCost": "N/A — repair only (if caught early; ignored turbo failure can send debris into the engine).",
+        "urgency": {
+          "icon": "🟠",
+          "label": "Check",
+          "text": "book inspection urgently if you hear rattling or notice power loss."
+        },
+        "recommendation": "The N54's twin turbochargers use wastegate actuators that can develop play over time, causing a characteristic rattle. While not an immediate failure, it indicates wear. BMW extended the warranty on N54 wastegates to 8 years/82,000 miles in some markets. On higher-mileage N54s, turbo replacement is a common expense. The N55's single twin-scroll turbo is more reliable in this regard.",
+        "failureLink": {
+          "label": "",
+          "href": "/failures/turbocharger-failure/"
+        }
+      },
+      {
+        "id": 4,
+        "title": "Oil Leaks — Valve Cover Gasket & Oil Filter Housing Gasket (N54 & N55)",
+        "symptoms": "Oil spots under the vehicle, burning oil smell, low oil level warning, visible oil leak from the top or front of the engine.",
+        "typicalMileage": "40,000–80,000 miles (N54 and N55).",
+        "repairCost": "£300–£800 [PLACEHOLDER] (valve cover gasket or oil filter housing gasket replacement).",
+        "replacementCost": "N/A — repair only (if caught early; ignored oil loss can lead to engine damage).",
+        "urgency": {
+          "icon": "🟠",
+          "label": "Check",
+          "text": "book inspection urgently if oil leak is detected."
+        },
+        "recommendation": "Both N54 and N55 engines are known for oil leaks from the valve cover gasket and oil filter housing gasket (OFHG). The N55's valve cover is particularly prone to warping, requiring full cover replacement. If the OFHG fails, oil can leak onto the serpentine belt, causing it to slip or break — which can then be ingested into the engine through the front crankshaft seal, causing catastrophic failure. A £300–£800 gasket replacement is far cheaper than the consequences of a snapped belt.",
+        "failureLink": {
+          "label": "",
+          "href": "/failures/oil-leak/"
+        }
+      },
+      {
+        "id": 5,
+        "title": "Water Pump & Thermostat Failure (N54 & N55)",
+        "symptoms": "Overheating, coolant loss, engine warning light, electric water pump noise, poor heater performance, the electric water pump may fail without warning.",
+        "typicalMileage": "50,000–80,000 miles.",
+        "repairCost": "£500–£1,000 [PLACEHOLDER] (water pump and thermostat replacement).",
+        "replacementCost": "N/A — repair only (if caught early; ignored overheating can cause head gasket failure).",
+        "urgency": {
+          "icon": "🟠",
+          "label": "Check",
+          "text": "book inspection urgently if overheating or coolant loss occurs."
+        },
+        "recommendation": "Both N54 and N55 use an electric water pump that is a known wear item. BMW's electric water pumps typically fail between 50,000–80,000 miles, often without warning. When it fails, the engine overheats rapidly — and in an aluminium-block engine, that can mean a warped head or blown head gasket. The thermostat often fails at the same time. A £500–£1,000 preventative replacement is cheaper than a £2,000+ head gasket repair.",
+        "failureLink": {
+          "label": "",
+          "href": "/failures/water-pump-failure/"
+        }
+      }
+    ]
+  },
+  "quotesCta": {
+    "headline": "Ready to Compare? Get Matched With a Vetted BMW Specialist →",
+    "supportingLine": "20+ vetted BMW specialists, covering both the N54 twin-turbo and N55 twin-scroll 335i engines, with a 12‑month warranty as standard.",
+    "button": {
+      "label": "Get My Free 335i Engine Quotes Now →",
+      "href": "#"
+    }
+  },
+  "repairBuyOrReplace": {
+    "h2": "BMW 3 Series 335i — Repair, Buy, or Replace?",
+    "canItBeRepaired": {
+      "title": "Can It Be Repaired?",
+      "columns": [
+        "Problem",
+        "Repairable?",
+        "Typical Cost",
+        "When It Makes Sense"
+      ],
+      "rows": [
+        {
+          "problem": "HPFP failure (N54)",
+          "repairable": "✅ Yes",
+          "typicalCost": "£600–£1,200 [PLACEHOLDER]",
+          "whenItMakesSense": "Worth fixing — a common and well-understood repair"
+        },
+        {
+          "problem": "Fuel injector failure (N54)",
+          "repairable": "✅ Yes",
+          "typicalCost": "£800–£2,000 [PLACEHOLDER]",
+          "whenItMakesSense": "Replace all six with updated index 12 injectors"
+        },
+        {
+          "problem": "Wastegate rattle / turbo failure (N54)",
+          "repairable": "✅ Yes",
+          "typicalCost": "£1,500–£3,500 [PLACEHOLDER]",
+          "whenItMakesSense": "Worth fixing on a well-maintained example"
+        },
+        {
+          "problem": "Oil leaks (valve cover / OFHG)",
+          "repairable": "✅ Yes",
+          "typicalCost": "£300–£800 [PLACEHOLDER]",
+          "whenItMakesSense": "Essential maintenance — always worth doing"
+        },
+        {
+          "problem": "Water pump failure (N54/N55)",
+          "repairable": "✅ Yes",
+          "typicalCost": "£500–£1,000 [PLACEHOLDER]",
+          "whenItMakesSense": "Routine maintenance on higher‑mileage examples"
+        },
+        {
+          "problem": "Major internal failure (crank, bearings)",
+          "repairable": "❌ Usually No",
+          "typicalCost": "£2,800–£5,500+",
+          "whenItMakesSense": "Full engine replacement often more cost‑effective"
+        }
+      ]
+    },
+    "buyingChecks": {
+      "title": "Buying This BMW 3 Series 335i? Check These First",
+      "buyIf": [
+        "* Full BMW service history with documented oil changes (every 8,000–10,000 miles)",
+        "* N54: HPFP replaced with updated part, injectors replaced with index 12 units",
+        "* N55: Valve cover and OFHG replaced, water pump replaced",
+        "* Evidence of premium fuel use (98 RON recommended for both engines)"
+      ],
+      "avoidIf": [
+        "* N54: Any sign of long cranking, misfire, or wastegate rattle",
+        "* N54: No evidence of HPFP or injector replacement on higher‑mileage cars",
+        "* N55: Any sign of oil leaks or overheating history",
+        "* No evidence of regular oil changes — both engines are intolerant of neglect"
+      ]
+    },
+    "closingVerdict": "The BMW 335i represents a pivotal moment in BMW history — the first mass‑production turbocharged petrol engine (N54) and its refined successor (N55). The N54 offers incredible tuning potential and a sonorous twin‑turbo character, but it comes with well‑documented weaknesses: HPFP, injectors, and turbos. The N55 is more reliable and responsive, with earlier torque delivery, but still suffers from oil leaks and water pump failures. Buy on service history above all else — a well‑maintained 335i of either engine is a rewarding and powerful car; a neglected example can be a financial black hole.",
+    "cta": {
+      "label": "→ Compare 3 Series 335i engine prices before you buy",
+      "href": "#"
+    }
+  },
+  "buyingChecklist": {
+    "intro": "Before you buy a used BMW 3 Series 335i (or before you commit to an engine replacement), check these:",
+    "items": [
+      "1. Cold Start — Any rattle or wastegate noise? Any long cranking? (HPFP warning on N54)",
+      "2. Service History — Regular oil changes (8,000–10,000 miles) — this is non‑negotiable on both engines",
+      "3. HPFP / Injector History — N54: Have the HPFP and injectors been replaced with updated parts?",
+      "4. Oil Leaks — Check under the vehicle and around the valve cover and oil filter housing",
+      "5. Water Pump — Has the electric water pump been replaced? (N54 and N55)",
+      "6. Turbo Health — Any rattling, whistling, or loss of boost? (N54 wastegate rattle is common)",
+      "7. Running Quality — Any rough idle, hesitation, or misfire? (N54 injector warning)",
+      "8. MOT History — Check for emissions‑related failures or any advisory notes"
+    ]
+  },
+  "engineCodes": {
+    "columns": [
+      "Engine Code",
+      "Years",
+      "Power",
+      "2025 Enquiries",
+      "Avg. Recon Cost"
+    ],
+    "rows": [
+      {
+        "engineCode": "N54B30 (3.0L Twin-Turbo I6)",
+        "years": "2006–2010",
+        "power": "306 PS (225 kW) / 400 Nm",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£2,800–£4,500 [PLACEHOLDER]"
+      },
+      {
+        "engineCode": "N55B30 (3.0L Twin-Scroll I6)",
+        "years": "2010–2015",
+        "power": "306 PS (225 kW) / 400 Nm",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£2,500–£4,500 [PLACEHOLDER]"
+      }
+    ],
+    "matchNote": "This table's rows match Section 1B's Era Map exactly.",
+    "technicalSpecs": {
+      "title": "Technical Specs (N55B30 — 3.0L Twin-Scroll):",
+      "items": [
+        {
+          "label": "* Displacement",
+          "value": "2,979 cc"
+        },
+        {
+          "label": "* Cylinders",
+          "value": "6‑cylinder inline"
+        },
+        {
+          "label": "* Compression Ratio",
+          "value": "10.2:1"
+        },
+        {
+          "label": "* Fuel System",
+          "value": "Direct injection"
+        },
+        {
+          "label": "* Aspiration",
+          "value": "Twin‑turbocharged (parallel)"
+        },
+        {
+          "label": "* Valvetrain",
+          "value": "DOHC with VVT"
+        },
+        {
+          "label": "* Displacement",
+          "value": "2,979 cc"
+        },
+        {
+          "label": "* Cylinders",
+          "value": "6‑cylinder inline"
+        },
+        {
+          "label": "* Compression Ratio",
+          "value": "10.2:1"
+        },
+        {
+          "label": "* Fuel System",
+          "value": "Direct injection"
+        },
+        {
+          "label": "* Aspiration",
+          "value": "Twin‑scroll single turbocharger"
+        },
+        {
+          "label": "* Valvetrain",
+          "value": "DOHC with VVT"
+        }
+      ]
+    },
+    "cta": {
+      "label": "→ Compare 3 Series 335i engine prices for your BMW",
+      "href": "#"
+    }
+  },
+  "marketIntelligence": {
+    "items": [
+      {
+        "label": "Most Common Failure",
+        "value": "N54: HPFP failure — the defining weakness of the early 335i"
+      },
+      {
+        "label": "Average Enquiry Mileage",
+        "value": "60,000–90,000 miles [PATTERN DATA]"
+      },
+      {
+        "label": "Average Replacement Cost",
+        "value": "£3,500 reconditioned, supply only [PLACEHOLDER]"
+      },
+      {
+        "label": "Most Requested Engine Code",
+        "value": "N54B30 — the original twin-turbo is more commonly sought [PATTERN DATA]"
+      },
+      {
+        "label": "Peak Enquiry Season",
+        "value": "Autumn/Winter — cold starts expose HPFP and wastegate issues [PATTERN DATA]"
+      },
+      {
+        "label": "Regional Demand",
+        "value": "South East (22%), London (16%), North West (12%) — performance car strongholds [PATTERN DATA]"
+      },
+      {
+        "label": "SECTION 8 — FAQ",
+        "value": "1. How much does a BMW 3 Series 335i engine replacement cost in the UK?"
+      },
+      {
+        "label": "A reconditioned 335i engine (N54 or N55) typically costs £2,500–£5,500 supply only depending on engine variant and condition. Fitting adds £1,000–£1,800. A full engine replacement with labour can cost £9,000–£13,000 for premium vehicles. Use our calculator for a figure specific to your vehicle.",
+        "value": "2. Is the BMW 3 Series 335i engine reliable?"
+      },
+      {
+        "label": "It depends on which engine you have. The N54 (2006–2010) is a legendary engine with incredible tuning potential, but it has well‑documented weaknesses: HPFP failure, fuel injector failure, and wastegate rattle. The N55 (2010–2015) is more reliable, with a single twin‑scroll turbo and improved HPFP design, but still suffers from oil leaks and water pump failures. Both engines demand strict maintenance.",
+        "value": "3. What are the common problems with the BMW 3 Series 335i?"
+      },
+      {
+        "label": "On the N54, the most common issues are HPFP failure, fuel injector failure, and wastegate rattle/turbocharger wear. On both N54 and N55, oil leaks (valve cover gasket, oil filter housing gasket) and electric water pump failure are common. The N55's valve cover is prone to warping, requiring full replacement.",
+        "value": "4. Is it worth replacing a 335i engine, or should I scrap the car?"
+      },
+      {
+        "label": "Depends on vehicle value and condition. Against a tidy £5,000–£15,000 335i, a £2,800–£5,500 recon is 20–55% of the car's value — often worth it on well‑maintained examples. If the engine has suffered catastrophic failure (e.g., snapped timing chain, seized turbos), a full engine replacement may be necessary. Get a full diagnostic assessment before committing.",
+        "value": "5. How do I find my 3 Series's engine code?"
+      },
+      {
+        "label": "The E90/E91/E92/E93 (2006–2010) uses the N54B30 twin‑turbo — look for two turbos under the bonnet. The E90 LCI (2010–2013) and F30/F31 (2011–2015) use the N55B30 twin‑scroll single turbo — look for one turbo with a twin‑scroll housing. The engine code is stamped on the engine block and listed on your V5C.",
+        "value": "6. Can I repair a 335i engine issue, or does it need replacement?"
+      },
+      {
+        "label": "Most issues — HPFP failure, injector failure, oil leaks, water pump failure — are repairable. On the N54, if turbochargers fail, they can be replaced individually. However, if the engine suffers major internal failure (crankshaft, bearings, severe overheating), a full engine replacement is usually more cost‑effective than a rebuild.",
+        "value": "Disclaimer: All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12‑month unlimited‑mileage warranty — always confirm terms with your chosen supplier."
+      },
+      {
+        "label": "Section 9 (Trust + Final CTA), meta tags, Open Graph, Twitter Card, and complete JSON‑LD schema.",
+        "value": "* Brand: BMW"
+      },
+      {
+        "label": "* Domain: bmwengine.uk",
+        "value": "* Data tag: BMW‑"
+      },
+      {
+        "label": "* Specialist count: 20+",
+        "value": "* Scrap threshold: 70%"
+      },
+      {
+        "label": "* CTA Mode: Assertive (Priority H)",
+        "value": "* Era Map rows: 3 (N54B30 E90, N55B30 E90 LCI, N55B30 F30)"
+      },
+      {
+        "label": "* Engine codes: N54B30, N55B30",
+        "value": "* Service schema price range: £1,500 (lowest used) to £5,500 (highest rebuilt) — spans full Era Map history"
+      },
+      {
+        "label": "* Model Page needed: BMW 3 Series E90/F30 Generation Pages",
+        "value": "* Generation Pages needed: BMW 3 Series E90 and F30 Generation Pages (for cost inheritance)"
+      },
+      {
+        "label": "Tab 3",
+        "value": "BMW 3 SERIES 335d — VARIANT PAGE (COMPLETE)"
+      }
+    ]
+  },
+  "faq": {
+    "items": [],
+    "disclaimer": ""
+  },
+  "trustCta": {
+    "h2": "",
+    "trustPoints": [],
+    "finalCta": "",
+    "ctaButton": {
+      "label": "",
+      "href": "#"
+    }
+  }
+}

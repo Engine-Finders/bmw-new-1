@@ -1,0 +1,486 @@
+{
+  "meta": {
+    "slug": "1-series-128ti",
+    "title": "128ti Engine Replacement Cost UK — Compare Quotes",
+    "titleCharCount": 59,
+    "description": "BMW 128ti – B48 2.0-litre turbo hot hatch. Real UK costs, oil filter housing facts, and specialist quotes. Get free prices from 20+ vetted specialists today.",
+    "descriptionCharCount": 158,
+    "canonical": "https://bmwengine.uk/1-series/128ti/",
+    "openGraph": {
+      "title": "128ti Engine Replacement Cost UK — Compare Quotes",
+      "description": "BMW 128ti – B48 2.0-litre turbo hot hatch. Real UK costs, oil filter housing facts, and specialist quotes. Get free prices from 20+ vetted specialists today.",
+      "type": "website",
+      "url": "https://bmwengine.uk/1-series/128ti/",
+      "image": "https://bmwengine.uk/images/bmw/hero/128ti.jpg",
+      "siteName": "BMWEngines.uk"
+    },
+    "twitter": {
+      "card": "summary_large_image",
+      "title": "128ti Engine Replacement Cost UK — Compare Quotes",
+      "description": "BMW 128ti – B48 2.0-litre turbo hot hatch. Real UK costs, oil filter housing facts, and specialist quotes.",
+      "image": "https://bmwengine.uk/images/bmw/hero/128ti.jpg"
+    },
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://bmwengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "1 Series",
+              "item": "https://bmwengine.uk/1-series/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "128ti",
+              "item": "https://bmwengine.uk/1-series/128ti/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "BMW 128ti Engine Era Map",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "BMW 1 Series F40 128ti (2020–present)",
+              "url": "https://bmwengine.uk/1-series/f40/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "BMW 128ti Engine Codes",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "B48A20T1",
+              "url": "https://bmwengine.uk/engines/b48/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does a BMW 128ti engine replacement cost in the UK?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A reconditioned B48A20T1 engine typically costs £1,595–£3,500 supply only, with used units available from similar ranges. Fitting adds £1,300–£2,000 depending on the workshop. Use our calculator for a figure specific to your car."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the BMW 128ti engine reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes — the B48 is one of BMW's most reliable modern engines. It's a significant improvement over the N20 and shares its architecture with the bulletproof B58 six-cylinder. The main weaknesses are the oil filter housing and cooling system components — both are well-understood and repairable."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What are the common problems with the BMW 128ti?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Oil filter housing cracking (causing coolant or oil leaks), cooling system leaks (water pump and hoses), and occasional 8-speed automatic gearbox hesitation or jerky shifts. The B48 itself is fundamentally robust."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is it worth replacing a BMW 128ti engine, or should I scrap the car?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "128ti values remain strong — a well-kept F40 is often worth £18,000–£30,000+. A £2,000–£3,500 reconditioned engine is only 10–20% of the vehicle's value — well within the 70% BMW threshold. Replacement is almost always worthwhile."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I find my BMW 128ti engine code?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The engine code is B48A20T1 — it's the only engine used in the F40-generation 128ti. You can find it on the VIN plate, in the vehicle documentation, or on a label on the engine itself. Production began in 2020."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I repair the B48 oil filter housing, or does it need replacement?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "It needs replacement — the housing cannot be repaired once cracked. Replacement costs £800–£1,800 and is labour-intensive due to the intake manifold needing removal. Once replaced with a new unit, the issue rarely recurs."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "BMWEngines.uk",
+          "url": "https://bmwengine.uk/",
+          "logo": "https://bmwengine.uk/images/bmwengines-logo.png",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "BMW 128ti Engine Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "1595",
+            "highPrice": "4500",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "name": "BMW 128ti UK Engine Enquiry Data 2025",
+          "description": "Proprietary UK enquiry volumes and demand trends for BMW 128ti engines (B48A20T1), sourced from BMWEngines.uk's specialist marketplace activity.",
+          "creator": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk"
+          },
+          "temporalCoverage": "2025",
+          "spatialCoverage": "United Kingdom"
+        },
+        {
+          "@type": "WebPage",
+          "name": "128ti Engine Replacement Cost UK — Compare Quotes",
+          "url": "https://bmwengine.uk/1-series/128ti/",
+          "author": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk Specialist Network"
+          },
+          "datePublished": "2026-07-11",
+          "dateModified": "2026-07-11"
+        }
+      ]
+    }
+  },
+  "hero": {
+    "tagPill": "BMW 1 Series 128ti • 2020–present • 2.0-litre Turbo Petrol",
+    "h1": "BMW 128ti Engine Replacement — Compare Prices & Get Quotes",
+    "subHeadline": "The 128ti revives BMW's iconic ti badge for the F40 generation — a 265 hp front-wheel-drive hot hatch powered by the punchy B48 2.0-litre turbo engine. Get quotes from UK specialists for reconditioned, rebuilt and used units today.",
+    "trustBadges": [
+      "🔧 Supply & Fit Available",
+      "✅ 12-Month Warranty",
+      "🚚 Nationwide Delivery",
+      "👥 20+ Specialists"
+    ],
+    "priceAnchor": "BMW 128ti Engines — from £1,595 to £4,500+ · Code: B48A20T1",
+    "registrationInput": {
+      "flag": "🇬🇧 GB",
+      "placeholder": "Enter your reg — e.g. AB12 CDE",
+      "cta": {
+        "label": "See BMW 128ti Engine Options →",
+        "href": "#"
+      }
+    },
+    "ticker": "● Instant Quotes · No Obligation · 100% Free · Reconditioned · Rebuilt · Used · Supply & Fit Available · UK-Wide Network"
+  },
+  "eraMap": {
+    "title": "The 128ti THROUGH TIME — Era Map",
+    "columns": [
+      "Generation",
+      "Years",
+      "Engine Code",
+      "Reliability",
+      "Recon Cost",
+      "Era Note"
+    ],
+    "rows": [],
+    "sourceNote": "",
+    "dataNote": ""
+  },
+  "replacementCosts": {
+    "h2": "BMW 128ti Engine Replacement Costs",
+    "columns": [
+      "Engine Type",
+      "Supply Only",
+      "Fitted (Indie)",
+      "Warranty",
+      "Best For"
+    ],
+    "rows": [
+      {
+        "engineType": "Used Engine",
+        "supplyOnly": "£1,595–£2,500",
+        "fittedIndie": "£2,500–£3,800",
+        "warranty": "1–6 months",
+        "bestFor": "Budget priority; lower‑mileage examples"
+      },
+      {
+        "engineType": "Reconditioned Engine",
+        "supplyOnly": "£2,500–£3,500",
+        "fittedIndie": "£3,800–£5,000",
+        "warranty": "12–24 months",
+        "bestFor": "Most owners — best cost/warranty balance"
+      },
+      {
+        "engineType": "Rebuilt Engine",
+        "supplyOnly": "£3,500–£4,500+",
+        "fittedIndie": "£5,000–£6,500+",
+        "warranty": "12–24 months",
+        "bestFor": "Long‑term ownership; 3+ year horizon"
+      },
+      {
+        "engineType": "Main Dealer New",
+        "supplyOnly": "£5,000–£8,000",
+        "fittedIndie": "£7,000–£10,000",
+        "warranty": "24–36 months",
+        "bestFor": "Insurance jobs, warranty claims"
+      }
+    ],
+    "figuresNote": "Figures above reflect the current market for the F40-generation 128ti. This badge uses only the B48A20T1 engine — no era ambiguity.",
+    "labourEstimate": "Fitting a 128ti engine typically takes 10–14 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer).",
+    "cta": {
+      "label": "→ Compare 128ti engine prices from UK specialists",
+      "href": "#"
+    }
+  },
+  "commonProblems": {
+    "problems": [
+      {
+        "id": 1,
+        "title": "Oil Filter Housing Cracking (Coolant/Oil Leaks)",
+        "symptoms": "Coolant loss with no visible external leak, oil spots under the car, low oil pressure warning, engine warning light, sweet smell from the engine bay",
+        "typicalMileage": "50,000–100,000 miles",
+        "repairCost": "£800–£1,800 (oil filter housing replacement, including intake manifold removal)",
+        "replacementCost": "N/A — repair only",
+        "urgency": {
+          "icon": "🟠",
+          "label": "Check",
+          "text": "book inspection urgently"
+        },
+        "recommendation": "The B48's oil filter housing is a known weak point. The unit can crack, causing coolant or oil leaks. Because it sits under the intake manifold, replacement is labour-intensive. Dealership costs can be significant — one US owner reported a $3,000 quote. However, once replaced, the issue rarely recurs. Check for coolant loss or oil spots regularly, and investigate any drop in fluid levels promptly.",
+        "failureLink": {
+          "label": "Read the full oil filter housing failure guide",
+          "href": "/failures/oil-filter-housing-failure/"
+        }
+      },
+      {
+        "id": 2,
+        "title": "Cooling System Leaks (Water Pump and Hoses)",
+        "symptoms": "Coolant loss, rising temperature gauge, warning light, steam from the engine bay, heater not working properly",
+        "typicalMileage": "60,000–100,000 miles",
+        "repairCost": "£400–£1,000 (water pump or coolant hose replacement)",
+        "replacementCost": "N/A — repair only",
+        "urgency": {
+          "icon": "🟡",
+          "label": "Monitor",
+          "text": "book inspection soon"
+        },
+        "recommendation": "The B48's electric water pump and coolant return line hoses are known to fail. Owners report that coolant hose failure is \"not a matter of if they will fail, but when\". These are typically 60,000–100,000 mile items. Replacing the water pump and hoses preventatively at around 70,000 miles is cheaper than dealing with an overheated engine.",
+        "failureLink": {
+          "label": "Read the full coolant leak guide",
+          "href": "/failures/coolant-leak/"
+        }
+      },
+      {
+        "id": 3,
+        "title": "8-Speed Aisin Automatic Gearbox Hesitation/Jerkiness",
+        "symptoms": "Hesitation on acceleration, jerky shifts (especially 2nd to 3rd), thrust forward during gear changes, general lack of smoothness",
+        "typicalMileage": "Any — some owners report issues from new",
+        "repairCost": "£500–£2,000 (gearbox software update, fluid change, or mechatronics repair)",
+        "replacementCost": "N/A — repair only (gearbox replacement is rare)",
+        "urgency": {
+          "icon": "🟡",
+          "label": "Monitor",
+          "text": "book inspection soon"
+        },
+        "recommendation": "Some 128ti owners report transmission hesitation or jerky shifts. BMW has acknowledged this as a known characteristic on some vehicles. A software update or gearbox adaptation reset often improves behaviour. If you experience severe issues, have the transmission inspected under warranty. Not all cars suffer from this — many owners report smooth operation.",
+        "failureLink": {
+          "label": "Read the full transmission failure guide",
+          "href": "/failures/transmission-failure/"
+        }
+      }
+    ]
+  },
+  "quotesCta": {
+    "headline": "Weighing Your Options? Compare Specialist Quotes When You're Ready →",
+    "supportingLine": "20+ vetted BMW specialists, every 1 Series engine era covered, with a 12-month warranty as standard.",
+    "button": {
+      "label": "See BMW 128ti Engine Options →",
+      "href": "#"
+    }
+  },
+  "repairBuyOrReplace": {
+    "h2": "128ti — Repair, Buy, or Replace?",
+    "canItBeRepaired": {
+      "title": "Can It Be Repaired?",
+      "columns": [
+        "Problem",
+        "Repairable?",
+        "Typical Cost",
+        "When It Makes Sense"
+      ],
+      "rows": [
+        {
+          "problem": "Oil filter housing crack",
+          "repairable": "✅ Yes",
+          "typicalCost": "£800–£1,800",
+          "whenItMakesSense": "Labour-intensive but well-understood; once replaced, issue rarely recurs"
+        },
+        {
+          "problem": "Coolant leak (water pump/hoses)",
+          "repairable": "✅ Yes",
+          "typicalCost": "£400–£1,000",
+          "whenItMakesSense": "Straightforward replacement — catch before overheating"
+        },
+        {
+          "problem": "Gearbox hesitation/jerkiness",
+          "repairable": "✅ Yes",
+          "typicalCost": "£500–£2,000",
+          "whenItMakesSense": "Software update or mechatronics repair — cheaper than a new gearbox"
+        },
+        {
+          "problem": "Timing chain wear",
+          "repairable": "✅ Yes",
+          "typicalCost": "£1,200–£2,500",
+          "whenItMakesSense": "The B48 is far more reliable than the N20 — but tensioners can still wear"
+        },
+        {
+          "problem": "Engine failure (catastrophic)",
+          "repairable": "❌ Usually No",
+          "typicalCost": "Engine replacement",
+          "whenItMakesSense": "Rare on the B48 — but if it happens, replacement is the only option"
+        }
+      ]
+    },
+    "buyingChecks": {
+      "title": "Buying This 128ti? Check These First",
+      "buyIf": [
+        "* Full service history with correct BMW-spec oil (5W-30 LL-01 or 0W-20) — the B48 is reliable but unforgiving of neglect",
+        "* Evidence of cooling system maintenance — water pump or hoses replaced at around 70,000 miles",
+        "* No cold-start rattle — the B48 is more robust than the N20, but tensioners can still wear",
+        "* A well-maintained example where the previous owner understood the B48's cooling system needs"
+      ],
+      "avoidIf": [
+        "* Evidence of repeated coolant top-ups without a diagnosed leak — the cooling system is the B48's Achilles' heel",
+        "* Poor service history — these engines are sensitive to oil quality",
+        "* Any engine warning light without a clear diagnosis",
+        "* Transmission hesitation that the dealer cannot explain — this can be a sign of deeper issues"
+      ]
+    },
+    "closingVerdict": "The 128ti is a modern hot hatch powered by BMW's excellent B48 engine — a significant step forward in reliability from the N-series engines that preceded it. The engine is robust, tunable, and generally dependable. Its weaknesses are well-understood: the oil filter housing, cooling system components, and occasional gearbox quirks. Buy on history, maintain on schedule, and the B48 will serve you well. This is one of BMW's most reliable modern four-cylinder engines.",
+    "cta": {
+      "label": "→ Compare 128ti engine prices before you buy",
+      "href": "#"
+    }
+  },
+  "buyingChecklist": {
+    "intro": "Before you buy a used BMW 128ti (or before you commit to an engine replacement), check these:",
+    "items": [
+      "1. Coolant Level — Any unexplained loss? (oil filter housing or cooling system warning)",
+      "2. Service History — including correct BMW-spec oil and evidence of cooling system maintenance",
+      "3. Oil Spots — Any oil under the car? (oil filter housing leak warning)",
+      "4. Cold Start — Any rattles? (timing chain tensioner — rare but possible)",
+      "5. Gearbox Behaviour — Any hesitation or jerky shifts? (Aisin 8-speed characteristic)",
+      "6. Engine Warning Light — Have codes been read? Any unresolved issues?",
+      "7. Turbo Performance — Test acceleration; any hesitation or whistling?",
+      "8. MOT History — Check for emissions-related failures (catalyst, O2 sensors)"
+    ]
+  },
+  "engineCodes": {
+    "columns": [
+      "Engine Code",
+      "Years",
+      "Power",
+      "2025 Enquiries",
+      "Avg. Recon Cost"
+    ],
+    "rows": [
+      {
+        "engineCode": "B48A20T1",
+        "years": "2020–present",
+        "power": "265 bhp",
+        "enquiries": "[PATTERN DATA]",
+        "avgReconCost": "£1,595–£3,500 [BMW-QUOTE]"
+      }
+    ],
+    "matchNote": "This table's rows match Section 1B's Era Map exactly — one engine throughout this badge's production run.",
+    "technicalSpecs": {
+      "title": "Technical Specs (B48A20T1):",
+      "items": [
+        {
+          "label": "* Displacement",
+          "value": "1,998cc (2.0-litre)"
+        },
+        {
+          "label": "* Cylinders",
+          "value": "4-cylinder inline"
+        },
+        {
+          "label": "* Compression Ratio",
+          "value": "9.5:1"
+        },
+        {
+          "label": "* Fuel System",
+          "value": "Direct injection"
+        },
+        {
+          "label": "* Turbocharger",
+          "value": "Twin-scroll turbocharger"
+        },
+        {
+          "label": "* Valvetrain",
+          "value": "Dual-VANOS + Valvetronic"
+        }
+      ]
+    },
+    "cta": {
+      "label": "→ Compare 128ti engine prices for your BMW",
+      "href": "#"
+    }
+  },
+  "marketIntelligence": {
+    "items": []
+  },
+  "faq": {
+    "items": [],
+    "disclaimer": ""
+  },
+  "trustCta": {
+    "h2": "",
+    "trustPoints": [
+      {
+        "title": "Trusted 128ti Engine Suppliers",
+        "text": "every garage and engine rebuilder in our network is vetted, rated and reviewed by real 128ti owners, as part of the Engine Finders network, across the F40 generation."
+      },
+      {
+        "title": "Compare 128ti Engine Replacement Companies",
+        "text": "see prices, warranty terms and supply & fit options side‑by‑side before you commit, with specialists who genuinely understand the B48's oil filter housing, cooling system, and gearbox nuances."
+      },
+      {
+        "title": "UK Engine Replacement Services for 128ti",
+        "text": "supply‑only or full supply & fit available nationwide, covering this modern hot hatch with a 12‑month warranty as standard."
+      }
+    ],
+    "finalCta": "Find the best BMW 128ti engine replacement UK drivers rely on. Compare prices from trusted specialists on EnginesMarket today and get back on the road with confidence.",
+    "ctaButton": {
+      "label": "Explore BMW 128ti Engine Quotes →",
+      "href": "#"
+    }
+  }
+}

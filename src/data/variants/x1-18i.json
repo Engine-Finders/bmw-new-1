@@ -1,0 +1,613 @@
+{
+  "meta": {
+    "slug": "x1-18i",
+    "title": "X1 18i Engine Replacement Cost UK — Compare Quotes",
+    "titleCharCount": 55,
+    "description": "Every BMW X1 18i engine — B38 1.5-litre turbo petrol, 2015–present. Real UK costs, cooling system advice, and honest reliability data. Get free quotes from 20+ vetted BMW specialists today.",
+    "descriptionCharCount": 160,
+    "canonical": "https://bmwengine.uk/x1/18i/",
+    "openGraph": {
+      "title": "X1 18i Engine Replacement Cost UK — Compare Quotes",
+      "description": "Every BMW X1 18i engine — B38 1.5-litre turbo petrol, 2015–present. Real UK costs, cooling system advice, and honest reliability data. Get free quotes from 20+ vetted BMW specialists today.",
+      "type": "website",
+      "url": "https://bmwengine.uk/x1/18i/",
+      "image": "https://bmwengine.uk/images/bmw/hero/x1-18i.jpg",
+      "siteName": "BMWEngines.uk"
+    },
+    "twitter": {
+      "card": "summary_large_image",
+      "title": "X1 18i Engine Replacement Cost UK — Compare Quotes",
+      "description": "Every BMW X1 18i engine — B38 1.5-litre turbo petrol, 2015–present. Real UK costs, cooling system advice, and honest reliability data.",
+      "image": "https://bmwengine.uk/images/bmw/hero/x1-18i.jpg"
+    },
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://bmwengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "X1",
+              "item": "https://bmwengine.uk/x1/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "F48/U11 X1",
+              "item": "https://bmwengine.uk/x1/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "18i",
+              "item": "https://bmwengine.uk/x1/18i/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "BMW X1 18i Engine Era Map",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "F48 X1 18i B38A15A (2015-2022)",
+              "url": "https://bmwengine.uk/x1/f48/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "U11 X1 18i B38A15P (2022-present)",
+              "url": "https://bmwengine.uk/x1/u11/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "BMW X1 18i Engine Codes",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "B38A15A",
+              "url": "https://bmwengine.uk/engines/b38/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "B38A15P",
+              "url": "https://bmwengine.uk/engines/b38/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does a BMW X1 18i engine replacement cost in the UK?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A reconditioned X1 18i engine typically costs £3,000–£5,000 supply only, with the B38A15P variant at the higher end. Fitting adds £800–£1,300 depending on the specialist. A reconditioned engine fully installed typically costs around £1,800–£2,800. Use our calculator for a figure specific to your X1."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the BMW X1 18i engine reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes — the B38 is a fundamentally robust engine with no widespread reports of bottom-end failures. Early concerns about three-cylinder refinement and longevity have largely faded as higher-mileage examples continue to perform without major internal failures. Common issues include cooling system wear (water pump and thermostat), timing chain tensioner wear at higher mileages, and engine mount failure on F48 models. With proper maintenance, the B38 is a dependable engine."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What are the common problems with the BMW X1 18i?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The most common issues are engine mount failure on F48 models (knocking during acceleration), cooling system wear (electric water pump and thermostat), timing chain tensioner wear at higher mileages, carbon buildup on intake valves (direct injection), and ignition coil failure. None of these are catastrophic if caught early."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is it worth replacing an X1 18i engine, or should I scrap the car?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Depends on the generation and vehicle condition. Against a well-kept U11 worth £18,000–£25,000, a £4,000–£5,000 recon is 15–25% of the car's value — worth it. Against a tired F48 worth £8,000–£12,000, the same recon may approach our 70% BMW threshold — get a scrap valuation first. B38-engined cars are generally reliable, so engine replacement is less common than on older BMW engines."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I find my BMW X1 18i engine code?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "F48 (2015–2022): B38A15A. U11 (2022–present): B38A15P. Check the VIN plate or vehicle documentation."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I repair the B38 timing chain, or does it need replacement?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The timing chain and tensioner must be replaced if worn. A preventative replacement costs £1,200–£2,500. A snapped chain is rare on the B38 but can destroy the engine. At the first sign of cold-start rattle, book an inspection immediately."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "BMWEngines.uk",
+          "url": "https://bmwengine.uk/",
+          "logo": "https://bmwengine.uk/images/bmwengines-logo.png",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "BMW X1 18i Engine Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "800",
+            "highPrice": "5500",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "name": "BMW X1 18i UK Engine Enquiry Data 2025",
+          "description": "Proprietary UK enquiry volumes and demand trends for BMW X1 18i engines, sourced from BMWEngines.uk's specialist marketplace activity.",
+          "creator": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk"
+          },
+          "temporalCoverage": "2025",
+          "spatialCoverage": "United Kingdom"
+        },
+        {
+          "@type": "WebPage",
+          "name": "X1 18i Engine Replacement Cost UK — Compare Quotes",
+          "url": "https://bmwengine.uk/x1/18i/",
+          "author": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk Specialist Network"
+          },
+          "datePublished": "2026-07-11",
+          "dateModified": "2026-07-11"
+        }
+      ]
+    }
+  },
+  "hero": {
+    "tagPill": "BMW X1 18i • 2015–present • 2 Engine Generations",
+    "h1": "BMW X1 18i Engine Replacement — Compare Prices & Get Quotes",
+    "subHeadline": "Get quotes today from trusted UK BMW X1 18i specialists. Compare reconditioned, rebuilt and used 1.5-litre three-cylinder turbo petrol engines — B38A15A and B38A15P variants across the F48 and U11 generations — supply & fit available nationwide.",
+    "trustBadges": [
+      "🔧 Supply & Fit Available",
+      "✅ 12-Month Warranty",
+      "🚚 Nationwide Delivery",
+      "👥 20+ Specialists"
+    ],
+    "priceAnchor": "BMW X1 18i Engines — from £800 to £5,500 · Common codes: B38A15A, B38A15P",
+    "registrationInput": {
+      "flag": "🇬🇧 GB",
+      "placeholder": "Enter your reg — e.g. AB12 CDE",
+      "cta": {
+        "label": "Get My Free X1 18i Engine Quotes Now →",
+        "href": "#"
+      }
+    },
+    "ticker": "● Instant Quotes · No Obligation · 100% Free · Reconditioned · Rebuilt · Used · Supply & Fit Available · UK-Wide Network"
+  },
+  "eraMap": {
+    "title": "The X1 18i THROUGH TIME — Era Map",
+    "columns": [
+      "Generation",
+      "Years",
+      "Engine Code",
+      "Reliability",
+      "Recon Cost",
+      "Era Note"
+    ],
+    "rows": [
+      {
+        "generation": "X1 F48 (sDrive18i)",
+        "years": "2015–2022",
+        "engineCode": "B38A15A",
+        "reliability": "★★★★☆ [NEWLY ASSIGNED — see Data Note]",
+        "reconCost": "£3,000–£5,000 [PLACEHOLDER — confirm vs cost sheet]",
+        "eraNote": "1.5L turbo three-cylinder; 136 bhp, 220 Nm; robust modular design; water pump and engine mounts are the main watch items"
+      },
+      {
+        "generation": "X1 U11 (sDrive18i)",
+        "years": "2022–present",
+        "engineCode": "B38A15P",
+        "reliability": "★★★★☆ [NEWLY ASSIGNED — see Data Note]",
+        "reconCost": "£3,500–£5,500 [PLACEHOLDER — confirm vs cost sheet]",
+        "eraNote": "1.5L turbo three-cylinder; 136 bhp, 220–230 Nm; updated B38 with 48V mild hybrid; chain and cooling system improved"
+      }
+    ],
+    "sourceNote": "This table is the single source every other section on this page matches — Sections 2, 4 and 6 reference it rather than restating conflicting figures.",
+    "dataNote": ""
+  },
+  "replacementCosts": {
+    "h2": "BMW X1 18i Engine Replacement Costs",
+    "columns": [
+      "Engine Type",
+      "Supply Only",
+      "Fitted (Indie)",
+      "Warranty",
+      "Best For"
+    ],
+    "rows": [
+      {
+        "engineType": "Used Engine",
+        "supplyOnly": "£800–£1,800",
+        "fittedIndie": "£1,400–£3,000",
+        "warranty": "1–6 months",
+        "bestFor": "Budget priority; vehicle under £8,000"
+      },
+      {
+        "engineType": "Reconditioned Engine",
+        "supplyOnly": "£3,000–£5,000",
+        "fittedIndie": "£3,800–£6,200",
+        "warranty": "12–24 months",
+        "bestFor": "Most owners — best cost/warranty balance"
+      },
+      {
+        "engineType": "Rebuilt Engine",
+        "supplyOnly": "£4,200–£5,500",
+        "fittedIndie": "£5,000–£6,700",
+        "warranty": "12–24 months",
+        "bestFor": "Long-term ownership; 3+ year horizon"
+      },
+      {
+        "engineType": "Main Dealer New",
+        "supplyOnly": "£7,000–£10,000",
+        "fittedIndie": "£8,500–£12,000",
+        "warranty": "24–36 months",
+        "bestFor": "Insurance jobs, warranty claims"
+      }
+    ],
+    "figuresNote": "Figures above reflect current X1 18i replacement costs. The B38A15P variant typically sits at the higher end of the range. See the Era Map above for generation-specific pricing.",
+    "labourEstimate": "Fitting an X1 18i engine typically takes 10–14 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer).",
+    "cta": {
+      "label": "→ Compare X1 18i engine prices from UK specialists",
+      "href": "#"
+    }
+  },
+  "commonProblems": {
+    "problems": [
+      {
+        "id": 1,
+        "title": "Engine Mount Failure (F48 — Known Issue)",
+        "symptoms": "",
+        "typicalMileage": "",
+        "repairCost": "",
+        "replacementCost": "",
+        "urgency": {
+          "icon": "",
+          "label": "",
+          "text": ""
+        },
+        "recommendation": "",
+        "failureLink": {
+          "label": "",
+          "href": "#"
+        }
+      },
+      {
+        "id": 2,
+        "title": "Cooling System Wear (Electric Water Pump & Thermostat — All B38)",
+        "symptoms": "",
+        "typicalMileage": "",
+        "repairCost": "",
+        "replacementCost": "",
+        "urgency": {
+          "icon": "",
+          "label": "",
+          "text": ""
+        },
+        "recommendation": "",
+        "failureLink": {
+          "label": "",
+          "href": "#"
+        }
+      },
+      {
+        "id": 3,
+        "title": "Timing Chain Tensioner Wear (Higher Mileage B38)",
+        "symptoms": "",
+        "typicalMileage": "",
+        "repairCost": "",
+        "replacementCost": "",
+        "urgency": {
+          "icon": "",
+          "label": "",
+          "text": ""
+        },
+        "recommendation": "",
+        "failureLink": {
+          "label": "",
+          "href": "#"
+        }
+      }
+    ]
+  },
+  "quotesCta": {
+    "headline": "Ready to Compare? Get Matched With a Vetted BMW Specialist →",
+    "supportingLine": "20+ vetted BMW specialists, every X1 18i variant covered, with a 12-month warranty as standard.",
+    "button": {
+      "label": "Get My Free X1 18i Engine Quotes Now →",
+      "href": "#"
+    }
+  },
+  "repairBuyOrReplace": {
+    "h2": "X1 18i — Repair, Buy, or Replace?",
+    "canItBeRepaired": {
+      "title": "Can It Be Repaired?",
+      "columns": [
+        "Problem",
+        "Repairable?",
+        "Typical Cost",
+        "When It Makes Sense"
+      ],
+      "rows": [
+        {
+          "problem": "Engine mount failure (F48)",
+          "repairable": "✅ Yes",
+          "typicalCost": "£300–£600",
+          "whenItMakesSense": "Simple replacement — restores ride quality"
+        },
+        {
+          "problem": "Water pump/thermostat failure",
+          "repairable": "✅ Yes",
+          "typicalCost": "£400–£900",
+          "whenItMakesSense": "Catch it early — before overheating"
+        },
+        {
+          "problem": "Timing chain tensioner wear",
+          "repairable": "✅ Yes",
+          "typicalCost": "£1,200–£2,500",
+          "whenItMakesSense": "Catch it early — far cheaper than replacement"
+        },
+        {
+          "problem": "Carbon buildup (intake valves)",
+          "repairable": "✅ Yes",
+          "typicalCost": "£400–£800",
+          "whenItMakesSense": "Periodic cleaning — restores performance"
+        },
+        {
+          "problem": "Ignition coil failure",
+          "repairable": "✅ Yes",
+          "typicalCost": "£200–£400",
+          "whenItMakesSense": "Common across BMW engines; inexpensive fix"
+        },
+        {
+          "problem": "Head gasket failure (from overheating)",
+          "repairable": "✅ Yes",
+          "typicalCost": "£1,000–£2,500",
+          "whenItMakesSense": "Worth it on a well-maintained X1"
+        },
+        {
+          "problem": "Severe overheating with block damage",
+          "repairable": "❌ Usually No",
+          "typicalCost": "Engine replacement",
+          "whenItMakesSense": "Replacement cost may exceed vehicle value on older examples"
+        }
+      ]
+    },
+    "buyingChecks": {
+      "title": "Buying This X1 18i? Check These First",
+      "buyIf": [
+        "* U11 (2022+) with the B38A15P (latest, most refined version)",
+        "* F48 with documented cooling system maintenance (water pump, thermostat)",
+        "* Full service history with regular oil changes (critical for chain longevity)",
+        "* No cold-start rattling (timing chain health)",
+        "* Engine mounts in good condition (F48 — check for knocking on acceleration)"
+      ],
+      "avoidIf": [
+        "* F48 with knocking during acceleration (engine mounts likely failing)",
+        "* Cold-start rattle and no chain history — budget for timing chain work",
+        "* Overheating history or unexplained coolant loss — cooling system may be compromised",
+        "* No service history — the B38 is sensitive to oil quality"
+      ]
+    },
+    "closingVerdict": "The X1 18i is BMW's entry-level petrol compact SUV, powered by the 1.5-litre three-cylinder B38 engine across two generations. The B38 is a fundamentally robust engine — no widespread reports of bottom-end failures. The F48 (2015–2022) is known for engine mount wear and cooling system components that need attention. The U11 (2022+) is the most refined version with mild hybrid assistance. All B38s benefit from regular maintenance and attention to the cooling system. With typical X1 values ranging from £10,000 (F48) to £25,000+ (U11), an engine replacement is a significant investment — but the B38 is generally reliable when properly maintained.",
+    "cta": {
+      "label": "→ Compare X1 18i engine prices before you buy",
+      "href": "#"
+    }
+  },
+  "buyingChecklist": {
+    "intro": "Before you buy a used BMW X1 18i (or before you commit to an engine replacement), check these:",
+    "items": [
+      "* Cold Start — Listen for rattling (B38 timing chain tensioner warning) — see the map above",
+      "* Engine Mounts — Test acceleration; any knocking or vibration indicates mount wear (F48)",
+      "* Service History — Including which engine era and oil-change discipline",
+      "* Coolant Level — Check reservoir when cold; any low or loss may indicate water pump or cooling system issues",
+      "* Oil Consumption — Ask about oil top-up frequency; excessive consumption may indicate wear",
+      "* Turbo Health — Test acceleration; any lag, whistling, or hesitation?",
+      "* Engine Warning Light — Have codes read; unresolved issues may indicate timing, cooling or sensor problems",
+      "* MOT History — Check for emissions-related failures"
+    ]
+  },
+  "engineCodes": {
+    "columns": [
+      "Engine Code",
+      "Years",
+      "Power",
+      "2025 Enquiries",
+      "Avg. Recon Cost"
+    ],
+    "rows": [
+      {
+        "engineCode": "B38A15A",
+        "years": "2015–2022 (F48)",
+        "power": "136 bhp @ 4,400rpm",
+        "enquiries": "— (within B38 family volume)",
+        "avgReconCost": "£3,000–£5,000 [PLACEHOLDER]"
+      },
+      {
+        "engineCode": "B38A15P",
+        "years": "2022–present (U11)",
+        "power": "136 bhp @ 4,400rpm",
+        "enquiries": "— (within B38 family volume)",
+        "avgReconCost": "£3,500–£5,500 [PLACEHOLDER]"
+      }
+    ],
+    "matchNote": "This table's rows match Section 1B's Era Map exactly.",
+    "technicalSpecs": {
+      "title": "Technical Specs (B38A15P — U11 generation):",
+      "items": [
+        {
+          "label": "* Displacement",
+          "value": "1,498cc"
+        },
+        {
+          "label": "* Cylinders",
+          "value": "3-cylinder inline, aluminium block"
+        },
+        {
+          "label": "* Compression Ratio",
+          "value": "11.0:1"
+        },
+        {
+          "label": "* Fuel System",
+          "value": "Direct injection, twin-scroll turbocharger"
+        },
+        {
+          "label": "* Valves",
+          "value": "12 valves, DOHC"
+        },
+        {
+          "label": "* Torque",
+          "value": "220 Nm @ 1,500–4,000 rpm"
+        },
+        {
+          "label": "* Displacement",
+          "value": "1,499cc"
+        },
+        {
+          "label": "* Cylinders",
+          "value": "3-cylinder inline"
+        },
+        {
+          "label": "* Fuel System",
+          "value": "Direct injection, turbocharged"
+        },
+        {
+          "label": "* Torque",
+          "value": "220–230 Nm @ 1,500–4,600 rpm"
+        }
+      ]
+    },
+    "cta": {
+      "label": "→ Compare X1 18i engine prices for your X1",
+      "href": "#"
+    }
+  },
+  "marketIntelligence": {
+    "items": [
+      {
+        "label": "Most Common Failure",
+        "value": "Engine mount wear (F48) and cooling system components (all B38) — the most frequent X1 18i enquiries"
+      },
+      {
+        "label": "Average Enquiry Mileage",
+        "value": "40,000–70,000 miles [PATTERN DATA]"
+      },
+      {
+        "label": "Average Replacement Cost",
+        "value": "£4,000–£4,500 reconditioned, supply only [PLACEHOLDER]"
+      },
+      {
+        "label": "Most Requested Engine Code",
+        "value": "B38A15A / B38A15P [PATTERN DATA]"
+      },
+      {
+        "label": "Peak Enquiry Season",
+        "value": "Winter — cold starts expose timing chain wear; summer — overheating issues emerge [PATTERN DATA]"
+      },
+      {
+        "label": "Regional Demand",
+        "value": "South East (18%), North West (16%), Midlands (14%) [PATTERN DATA]"
+      }
+    ]
+  },
+  "faq": {
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a BMW X1 18i engine replacement cost in the UK?",
+        "answer": "A reconditioned X1 18i engine typically costs £3,000–£5,000 supply only, with the B38A15P variant at the higher end. Fitting adds £800–£1,300 depending on the specialist. A reconditioned engine fully installed typically costs around £1,800–£2,800. Use our calculator for a figure specific to your X1."
+      },
+      {
+        "id": 2,
+        "question": "Is the BMW X1 18i engine reliable?",
+        "answer": "Yes — the B38 is a fundamentally robust engine with no widespread reports of bottom-end failures. Early concerns about three-cylinder refinement and longevity have largely faded as higher-mileage examples continue to perform without major internal failures. Common issues include cooling system wear (water pump and thermostat), timing chain tensioner wear at higher mileages, and engine mount failure on F48 models. With proper maintenance, the B38 is a dependable engine."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the BMW X1 18i?",
+        "answer": "The most common issues are engine mount failure on F48 models (knocking during acceleration), cooling system wear (electric water pump and thermostat), timing chain tensioner wear at higher mileages, carbon buildup on intake valves (direct injection), and ignition coil failure. None of these are catastrophic if caught early."
+      },
+      {
+        "id": 4,
+        "question": "Is it worth replacing an X1 18i engine, or should I scrap the car?",
+        "answer": "Depends on the generation and vehicle condition. Against a well-kept U11 worth £18,000–£25,000, a £4,000–£5,000 recon is 15–25% of the car's value — worth it. Against a tired F48 worth £8,000–£12,000, the same recon may approach our 70% BMW threshold — get a scrap valuation first. B38-engined cars are generally reliable, so engine replacement is less common than on older BMW engines."
+      },
+      {
+        "id": 5,
+        "question": "How do I find my BMW X1 18i engine code?",
+        "answer": "F48 (2015–2022): B38A15A. U11 (2022–present): B38A15P. Check the VIN plate or vehicle documentation."
+      },
+      {
+        "id": 6,
+        "question": "Can I repair the B38 timing chain, or does it need replacement?",
+        "answer": "The timing chain and tensioner must be replaced if worn. A preventative replacement costs £1,200–£2,500. A snapped chain is rare on the B38 but can destroy the engine. At the first sign of cold-start rattle, book an inspection immediately."
+      }
+    ],
+    "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine condition, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty — always confirm terms with your chosen supplier."
+  },
+  "trustCta": {
+    "h2": "Why UK BMW X1 18i Owners Trust BMWEngines.uk",
+    "trustPoints": [
+      {
+        "title": "Trusted X1 18i Engine Suppliers",
+        "text": "every garage and engine rebuilder in our network is vetted, rated and reviewed by real X1 18i owners, as part of the Engine Finders network, across every generation — B38A15A and B38A15P — covering the F48 and U11 chassis."
+      },
+      {
+        "title": "Compare X1 18i Engine Replacement Companies",
+        "text": "see prices, warranty terms and supply & fit options side-by-side before you commit. We cover the 1.5-litre three-cylinder turbo petrol specifically, with specialists who understand the B38's cooling system vulnerabilities, engine mount issues and overall reliability profile."
+      },
+      {
+        "title": "UK Engine Replacement Services for X1 18i",
+        "text": "supply-only or full supply & fit available nationwide, covering every generation of this badge since 2015, with a 12-month warranty as standard across our network."
+      }
+    ],
+    "finalCta": "Find the best BMW X1 18i engine replacement UK drivers rely on. Compare prices from trusted specialists on EnginesMarket today and get your X1 back on the road with confidence.",
+    "ctaButton": {
+      "label": "Compare BMW X1 18i Engine Prices Now →",
+      "href": "#"
+    }
+  }
+}

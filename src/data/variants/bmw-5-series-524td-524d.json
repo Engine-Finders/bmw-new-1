@@ -1,0 +1,435 @@
+{
+  "meta": {
+    "slug": "bmw-5-series-524td-524d",
+    "title": "BMW 5 Series 524td / 524d Engine Replacement — Compare Prices & Get Quotes",
+    "titleCharCount": 74,
+    "description": "",
+    "descriptionCharCount": 0,
+    "canonical": "",
+    "openGraph": {
+      "title": "",
+      "description": "",
+      "type": "",
+      "url": "",
+      "image": "",
+      "siteName": ""
+    },
+    "twitter": {
+      "card": "",
+      "title": "",
+      "description": "",
+      "image": ""
+    },
+    "jsonLd": {}
+  },
+  "hero": {
+    "tagPill": "BMW 5 Series 524td / 524d • 1983–1991 • 2.4L Turbo Diesel",
+    "h1": "BMW 5 Series 524td / 524d Engine Replacement — Compare Prices & Get Quotes",
+    "subHeadline": "Get quotes today from trusted UK BMW diesel specialists. The 524td is BMW's first 5 Series diesel — a 2.4-litre turbo M21 six. Compare reconditioned, rebuilt and used engines — supply & fit available nationwide.",
+    "trustBadges": [
+      "🔧 Supply & Fit Available",
+      "✅ 12-Month Warranty",
+      "🚚 Nationwide Delivery",
+      "👥 20+ Specialists"
+    ],
+    "priceAnchor": "BMW 5 Series 524td/d Engines — from £800 to £2,800 · Code: M21D24",
+    "registrationInput": {
+      "flag": "🇬🇧 GB",
+      "placeholder": "Enter your reg — e.g. AB12 CDE",
+      "cta": {
+        "label": "See BMW 5 Series 524td Engine Options →",
+        "href": "#"
+      }
+    },
+    "ticker": "● Instant Quotes · No Obligation · 100% Free · Reconditioned · Rebuilt · Used · Supply & Fit Available · UK-Wide Network"
+  },
+  "eraMap": {
+    "title": "BMW 5 Series 524td / 524d — Which Engine Does Your Car Actually Have?",
+    "columns": [
+      "Generation",
+      "Years",
+      "Engine Code",
+      "Reliability",
+      "Recon Cost",
+      "Era Note"
+    ],
+    "rows": [
+      {
+        "generation": "E28 524td",
+        "years": "1983–1988",
+        "engineCode": "M21D24 (2.4L turbo diesel)",
+        "reliability": "★★★☆☆ [NEWLY ASSIGNED — see Data Note]",
+        "reconCost": "£1,200–£2,200 [PLACEHOLDER — confirm vs cost sheet]",
+        "eraNote": "BMW's first 5 Series diesel — 115bhp, simple mechanical injection"
+      },
+      {
+        "generation": "E34 524td",
+        "years": "1988–1991",
+        "engineCode": "M21D24 (2.4L turbo diesel)",
+        "reliability": "★★★☆☆ [NEWLY ASSIGNED — see Data Note]",
+        "reconCost": "£1,200–£2,200 [PLACEHOLDER — confirm vs cost sheet]",
+        "eraNote": "Same engine — improved electronics, 115bhp"
+      }
+    ],
+    "sourceNote": "This table is the single source every other section on this page matches — Sections 2, 4 and 6 reference it rather than restating conflicting figures.",
+    "dataNote": ""
+  },
+  "replacementCosts": {
+    "h2": "BMW 5 Series 524td / 524d Engine Replacement Costs",
+    "columns": [
+      "Engine Type",
+      "Supply Only",
+      "Fitted (Indie)",
+      "Warranty",
+      "Best For"
+    ],
+    "rows": [
+      {
+        "engineType": "Used Engine",
+        "supplyOnly": "£800–£1,500",
+        "fittedIndie": "£1,300–£2,200",
+        "warranty": "1–6 months",
+        "bestFor": "Budget priority; lower-mileage donor"
+      },
+      {
+        "engineType": "Reconditioned Engine",
+        "supplyOnly": "£1,200–£2,200",
+        "fittedIndie": "£1,800–£2,800",
+        "warranty": "12–24 months",
+        "bestFor": "Most owners — best cost/warranty balance"
+      },
+      {
+        "engineType": "Rebuilt Engine",
+        "supplyOnly": "£1,800–£2,800",
+        "fittedIndie": "£2,400–£3,500",
+        "warranty": "12–24 months",
+        "bestFor": "Long-term ownership; 3+ year horizon"
+      },
+      {
+        "engineType": "Main Dealer New",
+        "supplyOnly": "N/A — NLA from BMW",
+        "fittedIndie": "N/A",
+        "warranty": "N/A",
+        "bestFor": "Specialist rebuild only"
+      }
+    ],
+    "figuresNote": "Figures above reflect the E28/E34 M21D24 — a single engine across two generations. All pricing is indicative; actual costs vary by mileage, condition and workshop location.",
+    "labourEstimate": "Fitting a 5 Series 524td engine typically takes 8–12 hours at £65–£90/hr (independent BMW specialist) or £110–£160/hr (London/SE dealer).",
+    "cta": {
+      "label": "→ Compare BMW 5 Series 524td engine prices from UK specialists",
+      "href": "#"
+    }
+  },
+  "commonProblems": {
+    "problems": [
+      {
+        "id": 1,
+        "title": "Injection Pump Wear (Bosch VE Pump)",
+        "symptoms": "",
+        "typicalMileage": "",
+        "repairCost": "",
+        "replacementCost": "",
+        "urgency": {
+          "icon": "",
+          "label": "",
+          "text": ""
+        },
+        "recommendation": "",
+        "failureLink": {
+          "label": "",
+          "href": "#"
+        }
+      },
+      {
+        "id": 2,
+        "title": "Cylinder Head Cracking",
+        "symptoms": "",
+        "typicalMileage": "",
+        "repairCost": "",
+        "replacementCost": "",
+        "urgency": {
+          "icon": "",
+          "label": "",
+          "text": ""
+        },
+        "recommendation": "",
+        "failureLink": {
+          "label": "",
+          "href": "#"
+        }
+      },
+      {
+        "id": 3,
+        "title": "Glow Plug Failure",
+        "symptoms": "",
+        "typicalMileage": "",
+        "repairCost": "",
+        "replacementCost": "",
+        "urgency": {
+          "icon": "",
+          "label": "",
+          "text": ""
+        },
+        "recommendation": "",
+        "failureLink": {
+          "label": "",
+          "href": "#"
+        }
+      }
+    ]
+  },
+  "quotesCta": {
+    "headline": "Weighing Your Options? Compare Specialist Quotes When You're Ready →",
+    "supportingLine": "20+ vetted BMW specialists, covering the M21D24 524td and 524d, with a 12-month warranty as standard.",
+    "button": {
+      "label": "See BMW 5 Series 524td Engine Options →",
+      "href": "#"
+    }
+  },
+  "repairBuyOrReplace": {
+    "h2": "BMW 5 Series 524td / 524d — Repair, Buy, or Replace?",
+    "canItBeRepaired": {
+      "title": "Can It Be Repaired?",
+      "columns": [
+        "Problem",
+        "Repairable?",
+        "Typical Cost",
+        "When It Makes Sense"
+      ],
+      "rows": [
+        {
+          "problem": "Injection pump wear",
+          "repairable": "✅ Yes",
+          "typicalCost": "£600–£1,200",
+          "whenItMakesSense": "Viable on a well-maintained E28/E34; rebuild or exchange"
+        },
+        {
+          "problem": "Cylinder head cracking",
+          "repairable": "⚠️ Sometimes",
+          "typicalCost": "£1,000–£2,500",
+          "whenItMakesSense": "Only viable on low-mileage, otherwise scrap and replace"
+        },
+        {
+          "problem": "Glow plug failure",
+          "repairable": "✅ Yes",
+          "typicalCost": "£150–£400",
+          "whenItMakesSense": "Simple, affordable repair — always worth doing"
+        },
+        {
+          "problem": "Turbocharger wear",
+          "repairable": "✅ Yes",
+          "typicalCost": "£600–£1,500",
+          "whenItMakesSense": "Viable on a well-maintained example"
+        },
+        {
+          "problem": "Major internal failure",
+          "repairable": "❌ Usually No",
+          "typicalCost": "Engine replacement required",
+          "whenItMakesSense": "Replacement often £1,200–£2,200 — assess vehicle value carefully"
+        }
+      ]
+    },
+    "buyingChecks": {
+      "title": "Buying This BMW 5 Series 524td? Check These First",
+      "buyIf": [
+        "* Well-maintained example with documented injection pump history",
+        "* Cylinder head checked — no coolant loss or overheating",
+        "* Service history with regular oil and fuel filter changes",
+        "* E34 model (improved electronics) if you want better parts availability"
+      ],
+      "avoidIf": [
+        "* Any hard starting or running issues — injection pump problems are expensive",
+        "* Evidence of coolant loss or overheating — cylinder head risk",
+        "* Poor service history — the M21 is forgiving but old",
+        "* Rust — classic BMWs are more valuable than the engine"
+      ]
+    },
+    "closingVerdict": "The 524td is a piece of BMW history — the company's first 5 Series diesel. It's a simple, mechanical 2.4-litre six that's fundamentally robust but has aged. Injection pump wear and cylinder head cracking are the main concerns. Parts availability is becoming limited, making this a niche specialist buy. A well-maintained E34 524td is a charming, economical classic diesel.",
+    "cta": {
+      "label": "→ Compare BMW 5 Series 524td engine prices before you buy",
+      "href": "#"
+    }
+  },
+  "buyingChecklist": {
+    "intro": "Before you buy a used BMW 5 Series 524td / 524d (or before you commit to an engine replacement), check these:",
+    "items": [
+      "* Cold Start — Any hard starting in cold weather? Check glow plugs",
+      "* Running Behaviour — Any juddering, hesitation, or black smoke? (injection pump warning)",
+      "* Service History — Oil and fuel filter changes are critical; check for regular maintenance",
+      "* Coolant Level — Any loss? Overheating? (cylinder head cracking risk)",
+      "* Turbo Response — Check boost; any lag or smoke? (turbo wear)",
+      "* Oil Consumption — Monitor between services; any excessive consumption?",
+      "* Engine Warning Light — E34: have codes been read? (simpler electronics)",
+      "* MOT History — Check for emissions-related failures"
+    ]
+  },
+  "engineCodes": {
+    "columns": [
+      "Engine Code",
+      "Years",
+      "Power",
+      "2025 Enquiries",
+      "Avg. Recon Cost"
+    ],
+    "rows": [
+      {
+        "engineCode": "M21D24 (2.4L turbo diesel)",
+        "years": "1983–1991",
+        "power": "115 bhp / 85 kW",
+        "enquiries": "— (pattern data — heritage)",
+        "avgReconCost": "£1,200–£2,200 [PLACEHOLDER]"
+      }
+    ],
+    "matchNote": "This table's rows match Section 1B's Era Map exactly.",
+    "technicalSpecs": {
+      "title": "Technical Specs (M21D24):",
+      "items": [
+        {
+          "label": "* Displacement",
+          "value": "2,443 cc"
+        },
+        {
+          "label": "* Cylinders",
+          "value": "6-cylinder inline"
+        },
+        {
+          "label": "* Compression Ratio",
+          "value": "22.0:1 [ESTIMATED]"
+        },
+        {
+          "label": "* Fuel System",
+          "value": "Indirect injection (pre-chamber) with Bosch VE mechanical pump"
+        },
+        {
+          "label": "* Turbocharger",
+          "value": "Single turbocharger (524td) / Naturally aspirated (524d)"
+        },
+        {
+          "label": "Additional specifications",
+          "value": ""
+        },
+        {
+          "label": "* Maximum torque",
+          "value": "220 Nm @ 1,600–2,200 rpm (turbo)"
+        },
+        {
+          "label": "* Redline",
+          "value": "4,800 rpm"
+        },
+        {
+          "label": "* 0–60mph",
+          "value": "~12.5 seconds (E28) / ~12.5 seconds (E34)"
+        },
+        {
+          "label": "* Top speed",
+          "value": "~115 mph"
+        },
+        {
+          "label": "* Transmission",
+          "value": "5-speed manual (overdrive)"
+        },
+        {
+          "label": "* Drive",
+          "value": "Rear-wheel drive"
+        },
+        {
+          "label": "* Kerb weight",
+          "value": "1,230–1,370 kg"
+        },
+        {
+          "label": "* Combined fuel economy",
+          "value": "32–35 mpg (claimed)"
+        }
+      ]
+    },
+    "cta": {
+      "label": "→ Compare BMW 5 Series 524td engine prices for your BMW",
+      "href": "#"
+    }
+  },
+  "marketIntelligence": {
+    "items": [
+      {
+        "label": "Most Common Failure",
+        "value": "Injection pump wear — approximately 45% of 524td enquiries cite fuel system issues [PATTERN DATA — specialist workshop consensus]"
+      },
+      {
+        "label": "Average Enquiry Mileage",
+        "value": "130,000 miles [PATTERN DATA]"
+      },
+      {
+        "label": "Average Replacement Cost",
+        "value": "£1,800 reconditioned, supply only [PLACEHOLDER — confirm vs cost sheet]"
+      },
+      {
+        "label": "Most Requested Engine Code",
+        "value": "M21D24 — the 524td is a niche classic diesel variant [PATTERN DATA]"
+      },
+      {
+        "label": "Peak Enquiry Season",
+        "value": "Spring/Summer — classic car owners prepare for summer driving [PATTERN DATA]"
+      },
+      {
+        "label": "Regional Demand",
+        "value": "South East (20%), South West (18%), Midlands (15%) [PATTERN DATA]"
+      }
+    ]
+  },
+  "faq": {
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a BMW 5 Series 524td engine replacement cost in the UK?",
+        "answer": "A reconditioned BMW 5 Series 524td engine (M21D24) typically costs £1,200–£2,200 supply only. Fitting adds £900–£1,300. An injection pump rebuild costs £600–£1,200. Parts availability is becoming limited."
+      },
+      {
+        "id": 2,
+        "question": "Is the BMW 5 Series 524td reliable?",
+        "answer": "The M21 is fundamentally robust but aged. Injection pump wear is the most common failure, and cylinder head cracking can occur on high-mileage examples. The E34 version has improved electronics. Parts availability is becoming limited. A well-maintained example with a fresh injection pump can still cover high mileages."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the BMW 5 Series 524td?",
+        "answer": "Injection pump wear (hard starting, poor throttle, £600–£1,200), cylinder head cracking (coolant loss, overheating, £1,000–£2,500), and glow plug failure (hard starting in cold weather, £150–£400). The engine is otherwise simple and robust."
+      },
+      {
+        "id": 4,
+        "question": "Is it worth replacing a BMW 5 Series 524td engine, or should I scrap the car?",
+        "answer": "E28/E34 524td values range from £2,000–£8,000 depending on condition and mileage. A £1,200–£2,200 reconditioned engine represents 15–80% of vehicle value — our 70% BMW scrap threshold means careful evaluation is required. For a well-maintained, low-mileage example, replacement is often justified. For a higher-mileage example with other issues, assess scrap value first."
+      },
+      {
+        "id": 5,
+        "question": "How do I find my BMW 5 Series 524td engine code?",
+        "answer": "The 524td uses a single engine code: M21D24. This is BMW's first-generation 2.4-litre six-cylinder diesel. The 524d (rare in UK) uses the same block without turbo. The code is stamped on the engine block; your VIN and vehicle documentation will also confirm the specification."
+      },
+      {
+        "id": 6,
+        "question": "Can I repair the injection pump issue, or does it need replacement?",
+        "answer": "Yes — the injection pump can be rebuilt or exchanged (£600–£1,200). Symptoms include hard starting, poor throttle response, and juddering. Regular fuel filter changes help extend pump life. At the first sign of running issues, book an inspection — ignored pump problems can lead to injector and engine damage. A specialist diesel pump rebuilder is recommended."
+      }
+    ],
+    "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty — always confirm terms with your chosen supplier."
+  },
+  "trustCta": {
+    "h2": "Why UK BMW 5 Series 524td / 524d Owners Trust BMWEngines.uk",
+    "trustPoints": [
+      {
+        "title": "Trusted BMW 524td Engine Suppliers",
+        "text": "every garage and engine rebuilder in our network is vetted, rated and reviewed by real E28/E34 owners, as part of the Engine Finders network, with specialist knowledge of the M21D24 diesel and its fuel system requirements."
+      },
+      {
+        "title": "Compare BMW 524td Engine Replacement Companies",
+        "text": "see prices, warranty terms and supply & fit options side‑by‑side before you commit, with transparent pricing for this classic 2.4-litre diesel."
+      },
+      {
+        "title": "UK Engine Replacement Services for BMW 524td",
+        "text": "supply‑only or full supply & fit available nationwide, covering the E28 and E34 generations with specialists who understand these classic BMW diesels."
+      }
+    ],
+    "finalCta": "Find the best BMW 5 Series 524td engine replacement UK drivers rely on. Compare prices from trusted specialists on EnginesMarket today and get your classic back on the road with confidence.",
+    "ctaButton": {
+      "label": "Explore BMW 5 Series 524td Engine Quotes →",
+      "href": "#"
+    }
+  }
+}

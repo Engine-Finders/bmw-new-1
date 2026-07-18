@@ -1,0 +1,562 @@
+{
+  "meta": {
+    "slug": "1-series-130i",
+    "title": "BMW 130i Engine Replacement Cost UK — Compare Quotes",
+    "titleCharCount": 54,
+    "description": "Every BMW 130i engine — the 3.0-litre N52 inline-six. Real UK costs, water pump and Valvetronic advice, and honest reliability data. Get free quotes from 20+ vetted BMW specialists today.",
+    "descriptionCharCount": 156,
+    "canonical": "https://bmwengine.uk/1-series/130i/",
+    "openGraph": {
+      "title": "BMW 130i Engine Replacement Cost UK — Compare Quotes",
+      "description": "Every BMW 130i engine — the 3.0-litre N52 inline-six. Real UK costs, water pump and Valvetronic advice, and honest reliability data. Get free quotes from 20+ vetted BMW specialists today.",
+      "type": "website",
+      "url": "https://bmwengine.uk/1-series/130i/",
+      "image": "https://bmwengine.uk/images/bmw/hero/130i.jpg",
+      "siteName": "BMWEngines.uk"
+    },
+    "twitter": {
+      "card": "summary_large_image",
+      "title": "BMW 130i Engine Replacement Cost UK — Compare Quotes",
+      "description": "Every BMW 130i engine — the 3.0-litre N52 inline-six. Real UK costs, water pump and Valvetronic advice, and honest reliability data.",
+      "image": "https://bmwengine.uk/images/bmw/hero/130i.jpg"
+    },
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://bmwengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "1 Series",
+              "item": "https://bmwengine.uk/1-series/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "130i",
+              "item": "https://bmwengine.uk/1-series/130i/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "BMW 130i Engine Era Map",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "E81/E82/E87/E88 130i (N52B30, 2005–2013)",
+              "url": "https://bmwengine.uk/1-series/e87/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "BMW 130i Engine Codes",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "N52B30 (N52B30A / N52B30AF / N52B30B / N52B30BF)",
+              "url": "https://bmwengine.uk/engines/n52/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does a BMW 130i engine replacement cost in the UK?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A reconditioned 130i (N52B30) engine typically costs £1,500–£3,500 supply only. Fitting adds £650–£1,300 depending on location and workshop rates. Used engines start from £800–£1,800 supply only. Main dealer new engines start from £6,000–£10,000+ supply only."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the BMW 130i engine reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes — the N52 is widely regarded as one of BMW's most reliable and characterful petrol engines. With proper maintenance, these engines regularly exceed 150,000–200,000 miles. However, common issues include electric water pump failure, oil leaks from gaskets, and Valvetronic system problems."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What are the common problems with the BMW 130i?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The main known issues are: (1) Electric water pump failure — can fail without warning, (2) Oil leaks from the valve cover gasket and oil filter housing gasket, and (3) Valvetronic system issues — causing rough idle, reduced power, or stalling."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is it worth replacing a BMW 130i engine, or should I scrap the car?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Depends on vehicle value and condition. Against a well-kept £4,000–£8,000 130i, a £2,500–£3,500 recon is 30–85% of the car's value. For a clean example with good body and no rust, replacement may be worthwhile given the 130i's strong following as a future classic."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I find my BMW 130i engine code?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The 130i uses the N52B30 engine family. Engine codes include N52B30A (early 265 PS), N52B30AF (early 258 PS), N52B30B (LCI), and N52B30BF (LCI). The engine code is stamped on the cylinder block. Tell us your registration and we'll confirm it for free."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Does the N52 have a cambelt or timing chain?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The N52 has a timing chain, not a cambelt. The chain is designed to last the life of the engine and does not require routine replacement. Unlike the N47 diesel, the N52's timing chain is not a common failure point. However, the VANOS system can suffer from cam ledge wear, which is an expensive repair."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "BMWEngines.uk",
+          "url": "https://bmwengine.uk/",
+          "logo": "https://bmwengine.uk/images/bmwengines-logo.png",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "BMW 130i Engine Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "800",
+            "highPrice": "5500",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "name": "BMW 130i UK Engine Enquiry Data 2025",
+          "description": "Proprietary UK enquiry volumes and demand trends for BMW 130i engines, sourced from BMWEngines.uk's specialist marketplace activity.",
+          "creator": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk"
+          },
+          "temporalCoverage": "2025",
+          "spatialCoverage": "United Kingdom"
+        },
+        {
+          "@type": "WebPage",
+          "name": "BMW 130i Engine Replacement Cost UK — Compare Quotes",
+          "url": "https://bmwengine.uk/1-series/130i/",
+          "author": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk Specialist Network"
+          },
+          "datePublished": "2026-07-11",
+          "dateModified": "2026-07-11"
+        }
+      ]
+    }
+  },
+  "hero": {
+    "tagPill": "BMW 1 Series 130i • 2005–2013 • 1 Engine Generation",
+    "h1": "BMW 130i Engine Replacement — Compare Prices & Get Quotes",
+    "subHeadline": "Get quotes today from trusted UK BMW 130i specialists. The 3.0-litre naturally aspirated N52 inline-six is one of BMW's finest petrol engines — compare reconditioned, rebuilt and used engines with supply & fit available nationwide.",
+    "trustBadges": [
+      "🔧 Supply & Fit Available",
+      "✅ 12-Month Warranty",
+      "🚚 Nationwide Delivery",
+      "👥 20+ Specialists"
+    ],
+    "priceAnchor": "BMW 130i Engines — from £800 to £5,500 · Engine code: N52B30",
+    "registrationInput": {
+      "flag": "🇬🇧 GB",
+      "placeholder": "Enter your reg — e.g. AB12 CDE",
+      "cta": {
+        "label": "See 130i Engine Options →",
+        "href": "#"
+      }
+    },
+    "ticker": "● Instant Quotes · No Obligation · 100% Free · Reconditioned · Rebuilt · Used · Supply & Fit Available · UK-Wide Network"
+  },
+  "eraMap": {
+    "title": "BMW 130i — Which Engine Does Your Car Actually Have?",
+    "columns": [
+      "Generation",
+      "Years",
+      "Engine Code",
+      "Reliability",
+      "Recon Cost",
+      "Era Note"
+    ],
+    "rows": [
+      {
+        "generation": "E81/E82/E87/E88",
+        "years": "2005–2013",
+        "engineCode": "N52B30 (N52B30A / N52B30AF / N52B30B / N52B30BF)",
+        "reliability": "★★★★☆ [NEWLY ASSIGNED — see Data Note]",
+        "reconCost": "£1,500–£4,500 [PLACEHOLDER]",
+        "eraNote": "3.0-litre naturally aspirated inline-six — magnesium-aluminium composite block, Valvetronic, Double-VANOS. One engine throughout this badge's history"
+      }
+    ],
+    "sourceNote": "",
+    "dataNote": ""
+  },
+  "replacementCosts": {
+    "h2": "BMW 130i Engine Replacement Costs",
+    "columns": [
+      "Engine Type",
+      "Supply Only",
+      "Fitted (Indie)",
+      "Warranty",
+      "Best For"
+    ],
+    "rows": [
+      {
+        "engineType": "Used Engine",
+        "supplyOnly": "£800–£1,800",
+        "fittedIndie": "£1,500–£3,000",
+        "warranty": "1–6 months",
+        "bestFor": "Budget priority; donor for rebuild"
+      },
+      {
+        "engineType": "Reconditioned Engine",
+        "supplyOnly": "£1,500–£3,500",
+        "fittedIndie": "£2,800–£4,500",
+        "warranty": "12–24 months",
+        "bestFor": "Most owners — best cost/warranty balance"
+      },
+      {
+        "engineType": "Rebuilt Engine",
+        "supplyOnly": "£2,500–£4,500",
+        "fittedIndie": "£3,800–£5,500",
+        "warranty": "12–24 months",
+        "bestFor": "Long-term ownership; 3+ year horizon"
+      },
+      {
+        "engineType": "Main Dealer New",
+        "supplyOnly": "£6,000–£10,000+",
+        "fittedIndie": "£7,500–£12,000+",
+        "warranty": "24–36 months",
+        "bestFor": "Insurance jobs, warranty claims"
+      }
+    ],
+    "figuresNote": "",
+    "labourEstimate": "Fitting a 130i engine typically takes 10–14 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer).",
+    "cta": {
+      "label": "→ Compare 130i engine prices from UK specialists",
+      "href": "#"
+    }
+  },
+  "commonProblems": {
+    "problems": [
+      {
+        "id": 1,
+        "title": "Electric Water Pump Failure",
+        "symptoms": "Engine overheating, coolant warning light, heater blowing cold air, electric fan running constantly at high speed",
+        "typicalMileage": "50,000–80,000 miles — can fail without warning",
+        "repairCost": "£400–£800 (water pump + thermostat replacement)",
+        "replacementCost": "N/A — repair only",
+        "urgency": {
+          "icon": "🔴",
+          "label": "Immediate",
+          "text": "overheating can cause catastrophic engine damage"
+        },
+        "recommendation": "The N52 uses an electric water pump that is a known failure point. It can fail without warning, leading to rapid overheating. One owner reported: \"Water Pump. Failure anywhere from 50,000 onwards, no warning\". Preventative replacement is strongly recommended when the car reaches 60,000–80,000 miles, especially if the coolant system shows any signs of weakness. Replace the thermostat at the same time. If the temperature gauge rises or the electric fan runs constantly, stop driving immediately.",
+        "failureLink": {
+          "label": "Read the full water pump failure guide",
+          "href": "/failures/water-pump-failure/"
+        }
+      },
+      {
+        "id": 2,
+        "title": "Oil Leaks (Valve Cover & Oil Filter Housing Gaskets)",
+        "symptoms": "Burning oil smell, oil spots under the car, visible oil residue on the engine block, low oil level warning",
+        "typicalMileage": "60,000–120,000 miles",
+        "repairCost": "£300–£800 (gasket replacement — valve cover or oil filter housing)",
+        "replacementCost": "N/A — repair only",
+        "urgency": {
+          "icon": "🟡",
+          "label": "Monitor",
+          "text": "book inspection soon"
+        },
+        "recommendation": "The N52 engine is prone to oil leaks from the valve cover gasket and oil filter housing gasket. These leaks can lead to oil loss, contamination of engine components, and if left unaddressed, can cause engine damage. A valve cover gasket replacement is a straightforward but labour-intensive job. The oil filter housing gasket is a known weak point — the gasket degrades and leaks oil down the front of the engine. If you notice a burning oil smell or oil spots beneath the car, have the gaskets inspected promptly.",
+        "failureLink": {
+          "label": "Read the full oil leak guide → /failures/oil-leaks-n52/ [NEW FAILURE PAGE NEEDED]",
+          "href": "#"
+        }
+      },
+      {
+        "id": 3,
+        "title": "Valvetronic System Issues",
+        "symptoms": "Rough idling, reduced power, hesitation on acceleration, stalling, engine warning light",
+        "typicalMileage": "60,000–100,000 miles",
+        "repairCost": "£400–£1,200 (Valvetronic motor, eccentric shaft sensor, or wiring repair)",
+        "replacementCost": "N/A — repair only",
+        "urgency": {
+          "icon": "🟡",
+          "label": "Monitor",
+          "text": "book inspection if symptoms develop"
+        },
+        "recommendation": "The Valvetronic system — BMW's variable valve lift technology — can develop problems over time. The eccentric shaft sensor, Valvetronic motor, or wiring can fail, leading to rough idling, reduced power, or stalling. Diagnosing Valvetronic problems requires specialist knowledge and diagnostic equipment. The VANOS system can also suffer from cam ledge wear, which is an expensive repair. If you experience rough running, have the system diagnosed by a specialist before the problem worsens.",
+        "failureLink": {
+          "label": "Read the full Valvetronic failure guide → /failures/valvetronic-system-failure/ [NEW FAILURE PAGE NEEDED]",
+          "href": "#"
+        }
+      }
+    ]
+  },
+  "quotesCta": {
+    "headline": "Weighing Your Options? Compare Specialist Quotes When You're Ready →",
+    "supportingLine": "20+ vetted BMW specialists, every 130i engine covered, with a 12-month warranty as standard.",
+    "button": {
+      "label": "See 130i Engine Options →",
+      "href": "#"
+    }
+  },
+  "repairBuyOrReplace": {
+    "h2": "130i — Repair, Buy, or Replace?",
+    "canItBeRepaired": {
+      "title": "Can It Be Repaired?",
+      "columns": [
+        "Problem",
+        "Repairable?",
+        "Typical Cost",
+        "When It Makes Sense"
+      ],
+      "rows": [
+        {
+          "problem": "Water pump failure",
+          "repairable": "✅ Yes",
+          "typicalCost": "£400–£800",
+          "whenItMakesSense": "Preventative replacement is recommended"
+        },
+        {
+          "problem": "Valve cover gasket oil leak",
+          "repairable": "✅ Yes",
+          "typicalCost": "£300–£600",
+          "whenItMakesSense": "Straightforward repair on a well-maintained car"
+        },
+        {
+          "problem": "Oil filter housing gasket leak",
+          "repairable": "✅ Yes",
+          "typicalCost": "£300–£500",
+          "whenItMakesSense": "Catch early to prevent belt contamination"
+        },
+        {
+          "problem": "Valvetronic system failure",
+          "repairable": "✅ Yes",
+          "typicalCost": "£400–£1,200",
+          "whenItMakesSense": "Specialist repair required — but viable"
+        },
+        {
+          "problem": "VANOS cam ledge wear",
+          "repairable": "⚠️ Sometimes",
+          "typicalCost": "£1,500–£3,000",
+          "whenItMakesSense": "Viable on low-mileage, well-maintained examples"
+        }
+      ]
+    },
+    "buyingChecks": {
+      "title": "Buying This 130i? Check These First",
+      "buyIf": [
+        "* Full service history with regular oil changes using BMW-spec oil",
+        "* Evidence of recent water pump and thermostat replacement",
+        "* No oil leaks — or documented recent gasket replacement",
+        "* Good body and chassis condition — these are ageing performance cars"
+      ],
+      "avoidIf": [
+        "* Overheating history or cooling system issues — the N52 is unforgiving of overheating",
+        "* Visible oil leaks from the front of the engine (oil filter housing gasket)",
+        "* Rough idle or hesitation that hasn't been diagnosed — could be Valvetronic",
+        "* Poor service history — the N52 is reliable but needs proper maintenance"
+      ]
+    },
+    "closingVerdict": "The 130i's N52 is one of BMW's finest naturally aspirated engines — a 3.0-litre inline-six with a characterful soundtrack, linear power delivery, and genuine longevity. The 130i is the most powerful 1 Series of its generation, offering 265 PS and a 0-60 time of 6.0 seconds. The engine is generally robust, but the electric water pump, oil leaks, and Valvetronic system are well-documented weak points. Buy with full service history and evidence of preventative maintenance, and you'll have a future classic that rewards every drive.",
+    "cta": {
+      "label": "→ Compare 130i engine prices before you buy",
+      "href": "#"
+    }
+  },
+  "buyingChecklist": {
+    "intro": "Before you buy a used BMW 130i (or before you commit to an engine replacement), check these:",
+    "items": [
+      "* Cooling System — Check for coolant leaks; ask about water pump replacement history",
+      "* Oil Leaks — Look for oil residue around the valve cover and oil filter housing",
+      "* Cold Start — Listen for any rattling, ticking, or rough running on start-up",
+      "* Service History — Including the N52 engine and confirmed oil change intervals",
+      "* Valvetronic Health — Any rough idle, hesitation, or stalling?",
+      "* VANOS — Any loss of low-end power or flat spots? Could indicate cam ledge wear",
+      "* Engine Warning Light — Have codes been read? Look for Valvetronic or VANOS codes",
+      "* MOT History — Check for emissions-related failures"
+    ]
+  },
+  "engineCodes": {
+    "columns": [
+      "Engine Code",
+      "Years",
+      "Power",
+      "2025 Enquiries",
+      "Avg. Recon Cost"
+    ],
+    "rows": [
+      {
+        "engineCode": "N52B30 (N52B30A / N52B30AF / N52B30B / N52B30BF)",
+        "years": "2005–2013",
+        "power": "258–265 PS (190–195 kW) / 310–315 Nm",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£1,500–£4,500 [PLACEHOLDER]"
+      }
+    ],
+    "matchNote": "This table's rows match Section 1B's Era Map exactly.",
+    "technicalSpecs": {
+      "title": "Technical Specs (N52B30):",
+      "items": [
+        {
+          "label": "* Displacement",
+          "value": "2,996 cc (3.0L)"
+        },
+        {
+          "label": "* Cylinders",
+          "value": "6-cylinder inline"
+        },
+        {
+          "label": "* Bore",
+          "value": "85.0 mm"
+        },
+        {
+          "label": "* Stroke",
+          "value": "88.0 mm"
+        },
+        {
+          "label": "* Compression Ratio",
+          "value": "10.7:1"
+        },
+        {
+          "label": "* Cylinder Block",
+          "value": "Magnesium-aluminium composite"
+        },
+        {
+          "label": "* Cylinder Head",
+          "value": "Aluminium"
+        },
+        {
+          "label": "* Valvetrain",
+          "value": "DOHC, 4 valves per cylinder, Valvetronic"
+        },
+        {
+          "label": "* Variable Timing",
+          "value": "Double-VANOS"
+        },
+        {
+          "label": "* Fuel System",
+          "value": "Electronic Fuel Injection"
+        },
+        {
+          "label": "* Aspiration",
+          "value": "Naturally aspirated"
+        },
+        {
+          "label": "* Power (early)",
+          "value": "265 PS (195 kW) @ 6,600 rpm"
+        },
+        {
+          "label": "* Power (LCI)",
+          "value": "258 PS (190 kW) @ 6,600 rpm"
+        },
+        {
+          "label": "* Torque (early)",
+          "value": "315 Nm @ 2,750 rpm"
+        },
+        {
+          "label": "* Torque (LCI)",
+          "value": "310 Nm @ 2,600–3,000 rpm"
+        }
+      ]
+    },
+    "cta": {
+      "label": "→ Compare 130i engine prices for your BMW",
+      "href": "#"
+    }
+  },
+  "marketIntelligence": {
+    "items": []
+  },
+  "faq": {
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a BMW 130i engine replacement cost in the UK?",
+        "answer": "A reconditioned 130i (N52B30) engine typically costs £1,500–£3,500 supply only. Fitting adds £650–£1,300 depending on location and workshop rates. Used engines start from £800–£1,800 supply only. Main dealer new engines start from £6,000–£10,000+ supply only."
+      },
+      {
+        "id": 2,
+        "question": "Is the BMW 130i engine reliable?",
+        "answer": "Yes — the N52 is widely regarded as one of BMW's most reliable and characterful petrol engines. With proper maintenance, these engines regularly exceed 150,000–200,000 miles. However, common issues include electric water pump failure, oil leaks from gaskets, and Valvetronic system problems."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the BMW 130i?",
+        "answer": "The main known issues are: (1) Electric water pump failure — can fail without warning, (2) Oil leaks from the valve cover gasket and oil filter housing gasket, and (3) Valvetronic system issues — causing rough idle, reduced power, or stalling."
+      },
+      {
+        "id": 4,
+        "question": "Is it worth replacing a BMW 130i engine, or should I scrap the car?",
+        "answer": "Depends on vehicle value and condition. Against a well-kept £4,000–£8,000 130i, a £2,500–£3,500 recon is 30–85% of the car's value. For a clean example with good body and no rust, replacement may be worthwhile given the 130i's strong following as a future classic. However, for examples under £3,000, evaluate whether the replacement cost exceeds our 70% BMW threshold — get a scrap valuation first."
+      },
+      {
+        "id": 5,
+        "question": "How do I find my BMW 130i engine code?",
+        "answer": "The 130i uses the N52B30 engine family. Engine codes include N52B30A (early 265 PS), N52B30AF (early 258 PS), N52B30B (LCI), and N52B30BF (LCI). The engine code is stamped on the cylinder block. Tell us your registration and we'll confirm it for free."
+      },
+      {
+        "id": 6,
+        "question": "Does the N52 have a cambelt or timing chain?",
+        "answer": "The N52 has a timing chain, not a cambelt. The chain is designed to last the life of the engine and does not require routine replacement. Unlike the N47 diesel, the N52's timing chain is not a common failure point. However, the VANOS system can suffer from cam ledge wear, which is an expensive repair."
+      }
+    ],
+    "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty — always confirm terms with your chosen supplier."
+  },
+  "trustCta": {
+    "h2": "Why UK BMW 130i Owners Trust BMWEngines.uk",
+    "trustPoints": [
+      {
+        "title": "Trusted 130i Engine Suppliers",
+        "text": "every garage and engine rebuilder in our network is vetted, rated and reviewed by real 130i owners, across the N52B30 engine, as part of the Engine Finders network."
+      },
+      {
+        "title": "Compare 130i Engine Replacement Companies",
+        "text": "see prices, warranty terms and supply & fit options side-by-side before you commit."
+      },
+      {
+        "title": "UK Engine Replacement Services for 130i",
+        "text": "supply-only or full supply & fit available nationwide, covering every 130i from 2005 to 2013."
+      }
+    ],
+    "finalCta": "Find the best BMW 130i engine replacement UK drivers rely on. Compare prices from trusted specialists on EnginesMarket today and get back on the road with confidence.",
+    "ctaButton": {
+      "label": "Explore BMW 130i Engine Quotes →",
+      "href": "#"
+    }
+  }
+}

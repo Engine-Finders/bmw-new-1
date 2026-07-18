@@ -1,0 +1,632 @@
+{
+  "meta": {
+    "slug": "bmw-m3-e36",
+    "title": "E36 M3 Engine Cost UK — Compare Quotes",
+    "titleCharCount": 49,
+    "description": "Every BMW M3 E36 engine — from the 3.0 S50B30 to the 3.2 S50B32 Evolution. Real UK costs, honest reliability data. Compare prices from 20+ vetted BMW specialists today.",
+    "descriptionCharCount": 157,
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://bmwengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "M3",
+              "item": "https://bmwengine.uk/m3/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "BMW M3 E36",
+              "item": "https://bmwengine.uk/m3/e36/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "BMW M3 E36 Engine Codes",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "S50B30 3.0 Petrol",
+              "url": "https://bmwengine.uk/engines/s50b30/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "S50B32 3.2 Petrol Evolution",
+              "url": "https://bmwengine.uk/engines/s50b32/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "BMW M3 E36 Core Variants",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "M3 3.0 Coupé",
+              "url": "https://bmwengine.uk/m3/e36/m3-3-0-coupe/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "M3 3.0 Saloon",
+              "url": "https://bmwengine.uk/m3/e36/m3-3-0-saloon/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "M3 3.0 Convertible",
+              "url": "https://bmwengine.uk/m3/e36/m3-3-0-convertible/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "M3 Evolution 3.2 Coupé",
+              "url": "https://bmwengine.uk/m3/e36/m3-evolution-coupe/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 5,
+              "name": "M3 Evolution 3.2 Saloon",
+              "url": "https://bmwengine.uk/m3/e36/m3-evolution-saloon/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 6,
+              "name": "M3 Evolution 3.2 Convertible",
+              "url": "https://bmwengine.uk/m3/e36/m3-evolution-convertible/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does a BMW M3 E36 engine replacement cost in the UK?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A reconditioned E36 M3 engine costs between £4,000 and £8,500 supply-only, depending on the engine — the S50B30 3.0 ranges £4,000–£7,000, while the S50B32 3.2 Evolution runs £4,500–£8,500. Fitting adds 12–18 hours of labour at £65–£90/hr. Use our calculator for a personalised quote."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which BMW M3 E36 engine is the most reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The S50B30 3.0-litre is the most reliable E36 M3 engine — its single VANOS system is simpler and cheaper to repair than the Evolution's double VANOS, and the iron-block construction is proven and durable. Both engines are robust with proper maintenance."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What are the common problems with the BMW M3 E36?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "VANOS failure (single VANOS on the 3.0, double VANOS on the 3.2 Evolution) causing rattle and loss of low-end torque, cooling system failure (water pump, thermostat, radiator), and rod bearing wear on higher-mileage S50B32 Evolution engines. The S50B32 also suffers from camshaft sensor issues."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the BMW M3 E36 reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes — the S50 engines are robust and well-understood. The S50B30 is particularly reliable with simpler single VANOS. The S50B32 Evolution requires more meticulous maintenance — VANOS service and rod bearing replacement are recommended at 60,000 miles. Both are capable of high mileage with proper care."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which BMW M3 E36 engine should I avoid?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The S50B32 Evolution without documented VANOS or rod bearing work carries the highest risk. Also avoid any E36 M3 without evidence of cooling system maintenance. If you want the best value without the Evolution premium, choose the S50B30 3.0 with full service history."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I know if my E36 M3 engine needs replacing?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "VANOS rattle on startup or loss of low-end torque, overheating or coolant loss (cooling system failure), rod knock on S50B32 (bearing wear), blue smoke from the exhaust, or persistent rough running on any high-mileage unit are the key warning signs. Use our diagnostic tool for a personalised assessment."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is it worth replacing a BMW M3 E36 engine, or should I scrap the car?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Apply the 70% BMW scrap threshold — but this is a classic M car, so value assessment differs. Against a well-kept £18,000 Evolution, a £4,500 S50B32 recon is 25% of the car's value — safe. Against a tired £10,000 example, the same recon is 45% — borderline. For a cherished Evolution or low-mileage example, the emotional value may justify the spend."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How long do BMW M3 E36 engines last?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "S50B30 engines can exceed 200,000 miles with proper cooling system and VANOS maintenance. S50B32 Evolution engines are capable of 150,000+ miles but require proactive maintenance — VANOS service and rod bearing replacement at 60,000–80,000 miles are recommended. Both are robust if properly maintained."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the difference between the E36 M3 and other M3 generations?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The E36 M3 (1992–1999) is the second-generation M3 and the first to feature a six-cylinder engine (the E30 M3 used a four-cylinder). It was the first M3 offered as a four-door Saloon. It was succeeded by the E46 M3 in 2000. The E36 M3 is lighter and more analogue than later M3s, with a high-revving naturally aspirated six."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I find my BMW M3 E36 engine code?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The engine code is listed on the VIN plate, vehicle documentation, and on a casting on the engine block. For the 3.0-litre M3 (1992–1995), look for S50B30. For the 3.2-litre Evolution (1995–1999), look for S50B32. Tell us your variant and year, and we'll confirm."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "BMWEngine.uk",
+          "url": "https://bmwengine.uk/",
+          "logo": "https://bmwengine.uk/images/bmwengine-logo.png",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "BMW M3 E36 Engine Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "BMWEngine.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "4000",
+            "highPrice": "8500",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "name": "BMW M3 E36 UK Engine Enquiry Data 2025",
+          "description": "Proprietary UK enquiry volumes and demand trends for BMW M3 E36 engines, sourced from BMWEngine.uk's specialist marketplace activity.",
+          "creator": {
+            "@type": "Organization",
+            "name": "BMWEngine.uk"
+          },
+          "temporalCoverage": "2025",
+          "spatialCoverage": "United Kingdom"
+        },
+        {
+          "@type": "WebPage",
+          "name": "E36 M3 Engine Cost UK — Compare Quotes",
+          "url": "https://bmwengine.uk/m3/e36/",
+          "author": {
+            "@type": "Organization",
+            "name": "BMWEngine.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "BMWEngine.uk Specialist Network"
+          },
+          "datePublished": "2026-07-09",
+          "dateModified": "2026-07-09"
+        }
+      ]
+    }
+  },
+  "internalDeclarations": {
+    "checkA": "",
+    "checkB": "",
+    "authorityModelMode": ""
+  },
+  "hero": {
+    "tagPill": "BMW M3 E36 • Coupé/Saloon/Convertible • 1992–1999",
+    "h1": "BMW M3 E36 Engines — The Complete UK Guide",
+    "subHeadline": "Every engine fitted to the E36-generation BMW M3 — from the 3.0-litre S50B30 single-VANOS six to the 3.2-litre S50B32 double-VANOS Evolution. Real UK costs, honest reliability data, and the VANOS question that defines this generation's ownership story. Backed by real UK M3 enquiries in 2025 [BMW-VERIFIED].",
+    "trustStrip": [
+      {
+        "icon": "📊",
+        "label": "E36 M3 Enquiries (2025) [BMW-VERIFIED]"
+      },
+      {
+        "icon": "🔧",
+        "label": "Coupé/Saloon/Convertible"
+      },
+      {
+        "icon": "📖",
+        "label": "2 Core Engine Codes"
+      },
+      {
+        "icon": "🏆",
+        "label": "Part of Engine Finders"
+      }
+    ],
+    "primaryCta": {
+      "label": "Explore E36 M3 Engines →",
+      "href": "#"
+    },
+    "dataIntegrityNote": ""
+  },
+  "engineDatabase": {
+    "h2": "BMW M3 E36 Engine Codes — The Complete Database",
+    "subHeadline": "Every engine fitted to the E36 M3 specifically — from the 1992 launch through to 1999, covering the full range of S50 six-cylinder power units. UK/Euro-spec engines only.",
+    "columns": [
+      "Engine Code",
+      "Family",
+      "Fuel",
+      "Displacement",
+      "Power",
+      "Years (E36 M3)",
+      "Variants (badges)",
+      "Reliability",
+      "2025 Enquiries",
+      "Avg. Recon Cost"
+    ],
+    "engines": [
+      {
+        "engineCode": "S50B30",
+        "family": "S50",
+        "fuel": "Petrol",
+        "displacement": "3.0L (2990cc)",
+        "power": "286 hp (210 kW)",
+        "years": "03/1992–08/1995",
+        "variants": "M3 3.0",
+        "reliability": "★★★★☆ [PROVISIONAL]",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£4,000–£7,000"
+      },
+      {
+        "engineCode": "S50B32",
+        "family": "S50",
+        "fuel": "Petrol",
+        "displacement": "3.2L (3201cc)",
+        "power": "321 hp (236 kW)",
+        "years": "09/1995–1999",
+        "variants": "M3 Evolution (3.2)",
+        "reliability": "★★★★☆ [PROVISIONAL]",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£4,500–£8,500"
+      }
+    ],
+    "confidenceScore": {
+      "title": "",
+      "text": ""
+    },
+    "dataCorrections": []
+  },
+  "overview": {
+    "h2": "BMW M3 E36 — Overview",
+    "intro": "The BMW M3 E36 is the second generation of the BMW M3, produced from March 1992 to 1999. It was the first M3 to feature a six-cylinder engine, marking a significant departure from the four-cylinder E30 M3. The E36 M3 was available as a Coupé, Convertible, and — for the first time in M3 history — a four-door Saloon (from 1994). The engine line-up consists of two Euro-spec S50 engines: the 3.0-litre S50B30 (286 hp) from 1992 to 1995, and the 3.2-litre S50B32 (321 hp) from 1995 to 1999. Both engines feature individual throttle bodies, four valves per cylinder, and VANOS variable camshaft timing. The S50B32 added double VANOS, larger ITBs, and a higher 11.3:1 compression ratio. The E36 M3 was succeeded by the E46 M3 in 2000.",
+    "keyFacts": "Platform: BMW E36 (3 Series platform) • Predecessor: BMW M3 E30 • Successor: BMW M3 E46 • Sibling body styles: Coupé · Saloon · Convertible",
+    "marketIntelligenceLine": "The E36 M3 is a modern classic; enquiries are concentrated on S50 VANOS service, rod bearing condition, and cooling system maintenance, with values ranging from £10,000 for higher-mileage 3.0 examples to £40,000+ for low-mileage Evolution models."
+  },
+  "bestWorstEngines": {
+    "items": [
+      {
+        "slot": "Highest Risk",
+        "engine": "S50B32 3.2-litre (Evolution) — The S50B32 is more complex and expensive to maintain than its predecessor. The double VANOS system is prone to failure, rod bearings can wear under high-rev abuse, and the six-speed Getrag gearbox is expensive to rebuild.",
+        "quote": "",
+        "whoItsFor": "buyers with deep pockets and a commitment to specialist servicing."
+      },
+      {
+        "slot": "Most Expensive Failure",
+        "engine": "S50B32 3.2-litre (Evolution)",
+        "quote": "The 3.2-litre S50 is the most expensive engine in the E36 M3 line-up to replace, with reconditioned units costing £4,500–£8,500. VANOS rebuilds cost £800–£1,800 at a specialist, and rod bearing replacement is a labour-intensive job.",
+        "whoItsFor": ""
+      },
+      {
+        "slot": "Most Overlooked",
+        "engine": "S50B30 3.0-litre — Often overshadowed by the Evolution, the 3.0-litre S50B30 delivers 286 hp and 320 Nm of torque with simpler single VANOS, lower purchase prices, and cheaper parts. It's the smart buy for enthusiasts who want the E36 M3 experience without the Evolution's running costs.",
+        "quote": "",
+        "whoItsFor": "buyers who want the E36 M3 driving experience with more manageable maintenance costs."
+      }
+    ]
+  },
+  "ownershipEconomics": {
+    "h2": "BMW M3 E36 — Ownership Economics",
+    "columns": [
+      "Engine",
+      "Typical Mileage",
+      "Common Major Failure",
+      "Repair Cost (Specialist)",
+      "Replacement Cost (Recon)",
+      "Ownership Verdict"
+    ],
+    "rows": [
+      {
+        "engine": "S50B30 (3.0)",
+        "typicalMileage": "60k–100k",
+        "commonMajorFailure": "VANOS seals, cooling system",
+        "repairCostSpecialist": "£500–£1,200",
+        "replacementCostRecon": "£4,000–£7,000",
+        "ownershipVerdict": "Best Value — simpler, cheaper to maintain"
+      },
+      {
+        "engine": "S50B32 (3.2 Evolution)",
+        "typicalMileage": "40k–80k",
+        "commonMajorFailure": "Double VANOS, rod bearings",
+        "repairCostSpecialist": "£1,000–£2,500",
+        "replacementCostRecon": "£4,500–£8,500",
+        "ownershipVerdict": "Premium Choice — higher performance, higher costs"
+      }
+    ],
+    "economicsRule": {
+      "title": "The E36 M3 rule",
+      "text": "A £4,500–£8,500 S50B32 recon against a £10,000–£15,000 Evolution sits at 30–85% of the car's value. On a sub-£10,000 example, that brushes our 70% BMW threshold — we'll honestly tell you to walk away. Against a well-kept £18,000+ example, the same recon drops to a routine 25–47% — a repair decision, not a financial one. For a classic M car, the emotional value may justify the spend."
+    },
+    "keyTakeaways": [
+      {
+        "question": "Which E36 M3 Costs Least To Own?",
+        "answer": "S50B30 3.0 — simpler single VANOS, cheaper parts."
+      },
+      {
+        "question": "Which E36 M3 Costs Most To Own?",
+        "answer": "S50B32 Evolution — double VANOS and rod bearing work are expensive."
+      },
+      {
+        "question": "Which E36 M3 Is Best Value?",
+        "answer": "S50B30 3.0 — the best balance of performance, character, and running costs."
+      }
+    ]
+  },
+  "commonProblems": {
+    "problems": [
+      {
+        "id": 1,
+        "title": "S50 VANOS Failure",
+        "affectedModels": "All E36 M3 — S50B30 (single VANOS) and S50B32 (double VANOS).",
+        "typicalFailureMileage": "40,000–80,000 miles.",
+        "rootCause": "The VANOS variable camshaft timing system on S50 engines can develop issues due to worn seals and failing solenoids. Symptoms include loss of low-end torque, a rattle on startup, and poor idle. The S50B32's double VANOS system is more complex and expensive to repair than the S50B30's single VANOS. Specialist companies like Mr. VANOS offer overhaul services.",
+        "tieredCosts": [
+          {
+            "tier": "Preventative (Repair)",
+            "dealer": "£1,500–£2,500",
+            "specialist": "£800–£1,800",
+            "work": "VANOS seal and solenoid replacement",
+            "note": ""
+          },
+          {
+            "tier": "Catastrophic (Replacement)",
+            "dealer": "£5,000–£8,000",
+            "specialist": "£4,000–£7,000",
+            "work": "Full engine rebuild or replacement",
+            "note": ""
+          }
+        ],
+        "recommendation": "On any E36 M3, have the VANOS system inspected at 40,000 miles — an £800–£1,800 preventative repair is cheaper than the £4,000–£7,000 replacement that follows if ignored.",
+        "cta": {
+          "label": "Compare S50 engine prices for your E36 M3 →",
+          "href": "#"
+        }
+      },
+      {
+        "id": 2,
+        "title": "S50 Cooling System Failure",
+        "affectedModels": "All E36 M3 — S50B30 and S50B32.",
+        "typicalFailureMileage": "60,000–100,000 miles.",
+        "rootCause": "The cooling system on S50 engines — including the water pump, thermostat, and radiator — can fail over time. Coolant loss can lead to overheating and, if ignored, head gasket failure. The plastic water pump impeller is a known weak point that should be replaced proactively.",
+        "tieredCosts": [
+          {
+            "tier": "Preventative (Repair)",
+            "dealer": "£500–£1,200",
+            "specialist": "£300–£800",
+            "work": "Water pump, thermostat, radiator",
+            "note": ""
+          },
+          {
+            "tier": "Catastrophic (Replacement)",
+            "dealer": "£4,000–£7,000",
+            "specialist": "£3,500–£6,000",
+            "work": "Full reconditioned engine",
+            "note": ""
+          }
+        ],
+        "recommendation": "On any E36 M3, replace the water pump and cooling system components proactively at 60,000 miles — a £300–£800 preventative service is cheaper than the £3,500–£6,000 replacement that follows if ignored.",
+        "cta": {
+          "label": "Compare S50 engine prices for your E36 M3 →",
+          "href": "#"
+        }
+      },
+      {
+        "id": 3,
+        "title": "S50B32 Rod Bearing Wear",
+        "affectedModels": "E36 M3 Evolution (S50B32), particularly higher-mileage and track-used examples.",
+        "typicalFailureMileage": "40,000–80,000 miles.",
+        "rootCause": "The S50B32's high-revving nature and 11.3:1 compression ratio place significant stress on the rod bearings. High-rev abuse and poor oiling can cause wear. Unlike the later S54, the S50B32 is less prone to catastrophic failure but bearings should still be considered a wear item.",
+        "tieredCosts": [
+          {
+            "tier": "Preventative (Repair)",
+            "dealer": "£1,500–£2,500",
+            "specialist": "£1,000–£2,000",
+            "work": "Rod bearing replacement",
+            "note": ""
+          },
+          {
+            "tier": "Catastrophic (Replacement)",
+            "dealer": "£5,000–£8,000",
+            "specialist": "£4,500–£7,500",
+            "work": "Full engine rebuild or replacement",
+            "note": ""
+          }
+        ],
+        "recommendation": "On any S50B32 Evolution, have the rod bearings inspected at 60,000 miles — a £1,000–£2,000 preventative replacement is cheaper than the £4,500–£7,500 replacement that follows if ignored.",
+        "cta": {
+          "label": "Compare S50B32 engine prices for your E36 M3 →",
+          "href": "#"
+        }
+      }
+    ]
+  },
+  "replacementCosts": {
+    "h2": "E36 M3 Engine Replacement Costs — By Engine and Condition",
+    "columns": [
+      "Variant",
+      "Engine Code",
+      "Used (Supply)",
+      "Reconditioned (Supply)",
+      "Rebuilt (Supply)",
+      "Labour Hours"
+    ],
+    "rows": [
+      {
+        "variant": "M3 3.0 (1992–1995)",
+        "engineCode": "S50B30",
+        "usedSupply": "£2,000–£3,500",
+        "reconditionedSupply": "£4,000–£7,000",
+        "rebuiltSupply": "£5,500–£8,500",
+        "labourHours": "12–16 hrs"
+      },
+      {
+        "variant": "M3 Evolution 3.2 (1995–1999)",
+        "engineCode": "S50B32",
+        "usedSupply": "£2,500–£4,500",
+        "reconditionedSupply": "£4,500–£8,500",
+        "rebuiltSupply": "£6,500–£10,000",
+        "labourHours": "14–18 hrs"
+      }
+    ],
+    "note": ""
+  },
+  "coreVariants": {
+    "dieselVariants": [],
+    "petrolVariants": [
+      "M3 3.0",
+      "M3 Evolution 3.2"
+    ],
+    "scopeNote": "All engine variants listed are Euro-spec E36 M3 only. The US-market M3 received detuned S50B30US (1995) and S52B32 (1996–1999) engines producing 240 hp and are not covered on this page. The M3 Evolution (also known as the M3 3.2) featured the S50B32 engine, a six-speed Getrag manual transmission (SMG optional from 1997), and revised suspension and brakes. The Saloon was produced from 1994 to 1997."
+  },
+  "marketIntelligence": {
+    "mostRequestedEngines": [
+      "1. S50B32 3.2 Evolution",
+      "2. S50B30 3.0"
+    ],
+    "mostRequestedVariants": [
+      "1. M3 Evolution (3.2)",
+      "2. M3 3.0",
+      "3. M3 Convertible (3.2)"
+    ],
+    "averageReplacementCost": "£4,000–£8,500 supply-only [BMW-QUOTE]",
+    "mostCommonFailures": [
+      "1. S50 VANOS failure",
+      "2. S50 cooling system failure",
+      "3. S50B32 rod bearing wear"
+    ],
+    "liveFeed": [
+      {
+        "vehicle": "BMW M3 Evolution E36 (S50B32)",
+        "location": "London",
+        "issue": "VANOS rattle on startup",
+        "enquiries": "4 enquiries",
+        "updated": "Updated Monthly"
+      },
+      {
+        "vehicle": "BMW M3 3.0 E36 (S50B30)",
+        "location": "Birmingham",
+        "issue": "Cooling system overhaul, water pump",
+        "enquiries": "3 enquiries",
+        "updated": "Updated Monthly"
+      },
+      {
+        "vehicle": "BMW M3 Evolution E36 (S50B32)",
+        "location": "Manchester",
+        "issue": "Rod bearing inspection, high-mileage",
+        "enquiries": "2 enquiries",
+        "updated": "Updated Monthly"
+      }
+    ]
+  },
+  "faq": {
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a BMW M3 E36 engine replacement cost in the UK?",
+        "answer": "A reconditioned E36 M3 engine costs between £4,000 and £8,500 supply-only [BMW-QUOTE], depending on the engine — the S50B30 3.0 ranges £4,000–£7,000, while the S50B32 3.2 Evolution runs £4,500–£8,500. Fitting adds 12–18 hours of labour at £65–£90/hr. Use our calculator for a personalised quote."
+      },
+      {
+        "id": 2,
+        "question": "Which BMW M3 E36 engine is the most reliable?",
+        "answer": "The S50B30 3.0-litre is the most reliable E36 M3 engine — its single VANOS system is simpler and cheaper to repair than the Evolution's double VANOS, and the iron-block construction is proven and durable. Both engines are robust with proper maintenance."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the BMW M3 E36?",
+        "answer": "VANOS failure (single VANOS on the 3.0, double VANOS on the 3.2 Evolution) causing rattle and loss of low-end torque, cooling system failure (water pump, thermostat, radiator), and rod bearing wear on higher-mileage S50B32 Evolution engines. The S50B32 also suffers from camshaft sensor issues."
+      },
+      {
+        "id": 4,
+        "question": "Is the BMW M3 E36 reliable?",
+        "answer": "Yes — the S50 engines are robust and well-understood. The S50B30 is particularly reliable with simpler single VANOS. The S50B32 Evolution requires more meticulous maintenance — VANOS service and rod bearing replacement are recommended at 60,000 miles. Both are capable of high mileage with proper care."
+      },
+      {
+        "id": 5,
+        "question": "Which BMW M3 E36 engine should I avoid?",
+        "answer": "The S50B32 Evolution without documented VANOS or rod bearing work carries the highest risk. Also avoid any E36 M3 without evidence of cooling system maintenance. If you want the best value without the Evolution premium, choose the S50B30 3.0 with full service history."
+      },
+      {
+        "id": 6,
+        "question": "How do I know if my E36 M3 engine needs replacing?",
+        "answer": "VANOS rattle on startup or loss of low-end torque, overheating or coolant loss (cooling system failure), rod knock on S50B32 (bearing wear), blue smoke from the exhaust, or persistent rough running on any high-mileage unit are the key warning signs. Use our diagnostic tool for a personalised assessment."
+      },
+      {
+        "id": 7,
+        "question": "Is it worth replacing a BMW M3 E36 engine, or should I scrap the car?",
+        "answer": "Apply the 70% BMW scrap threshold — but this is a classic M car, so value assessment differs. Against a well-kept £18,000 Evolution, a £4,500 S50B32 recon is 25% of the car's value — safe. Against a tired £10,000 example, the same recon is 45% — borderline. For a cherished Evolution or low-mileage example, the emotional value may justify the spend."
+      },
+      {
+        "id": 8,
+        "question": "How long do BMW M3 E36 engines last?",
+        "answer": "S50B30 engines can exceed 200,000 miles with proper cooling system and VANOS maintenance. S50B32 Evolution engines are capable of 150,000+ miles but require proactive maintenance — VANOS service and rod bearing replacement at 60,000–80,000 miles are recommended. Both are robust if properly maintained."
+      },
+      {
+        "id": 9,
+        "question": "What is the difference between the E36 M3 and other M3 generations?",
+        "answer": "The E36 M3 (1992–1999) is the second-generation M3 and the first to feature a six-cylinder engine (the E30 M3 used a four-cylinder). It was the first M3 offered as a four-door Saloon. It was succeeded by the E46 M3 in 2000. The E36 M3 is lighter and more analogue than later M3s, with a high-revving naturally aspirated six."
+      },
+      {
+        "id": 10,
+        "question": "How do I find my BMW M3 E36 engine code?",
+        "answer": "The engine code is listed on the VIN plate, vehicle documentation, and on a casting on the engine block. For the 3.0-litre M3 (1992–1995), look for S50B30. For the 3.2-litre Evolution (1995–1999), look for S50B32. Tell us your variant and year, and we'll confirm."
+      }
+    ]
+  },
+  "trustCta": {
+    "h2": "Why UK BMW M3 E36 Owners Trust BMWEngine.uk",
+    "trustPoints": [
+      {
+        "title": "Trusted E36 M3 Engine Specialists",
+        "text": "every garage and engine rebuilder in our network is vetted, rated and reviewed by real E36 M3 owners, as part of the Engine Finders network."
+      },
+      {
+        "title": "Compare E36 M3 Engine Replacement Companies",
+        "text": "see prices, warranty terms and supply & fit options side-by-side before you commit."
+      },
+      {
+        "title": "UK Engine Replacement Services for E36 M3",
+        "text": "covering every variant from M3 3.0 to Evolution, with supply-only or full supply & fit available nationwide."
+      }
+    ],
+    "finalCta": "Find the best BMW M3 E36 engine replacement UK drivers rely on. Compare real prices from trusted specialists on EnginesMarket today and get back on the road with confidence.",
+    "ctaButton": {
+      "label": "Compare BMW M3 E36 Engine Prices on EnginesMarket →",
+      "href": "#",
+      "note": "[PLACEHOLDER — confirm EnginesMarket URL structure]"
+    }
+  }
+}

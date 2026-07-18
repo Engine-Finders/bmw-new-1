@@ -1,0 +1,558 @@
+{
+  "meta": {
+    "slug": "x3-35i",
+    "title": "35i Engine Replacement Cost UK — Compare Quotes",
+    "titleCharCount": 53,
+    "description": "BMW X3 35i N55 3.0 engine — real UK costs, HPFP & chargepipe insight, and honest reliability data. Get free quotes from 20+ vetted BMW specialists today.",
+    "descriptionCharCount": 157,
+    "canonical": "https://bmwengine.uk/x3/35i/",
+    "openGraph": {
+      "title": "",
+      "description": "",
+      "type": "",
+      "url": "",
+      "image": "",
+      "siteName": ""
+    },
+    "twitter": {
+      "card": "",
+      "title": "",
+      "description": "",
+      "image": ""
+    },
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://bmwengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "X3",
+              "item": "https://bmwengine.uk/x3/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "35i",
+              "item": "https://bmwengine.uk/x3/35i/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "BMW X3 35i Engine Era Map",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "F25 X3 35i (N55B30A, 2011–2017)",
+              "url": "https://bmwengine.uk/x3/f25/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "BMW X3 35i Engine Codes",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "N55B30A (3.0L Straight-Six Turbo)",
+              "url": "https://bmwengine.uk/engines/n55/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does a BMW X3 35i engine replacement cost in the UK?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A reconditioned N55 3.0-litre engine typically costs £4,500–£7,500 supply only. Used engines are available from £3,500–£5,500. Fitting adds £1,200–£1,800 depending on your location and workshop. Main dealer new engines can exceed £10,000."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the BMW X3 35i engine reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The N55 is a proven, powerful engine — but it has known weak points: HPFP failure, chargepipe cracking, oil leaks from the valve cover and oil filter housing gaskets, and water pump failure. The engine itself is robust when properly maintained, but these issues are common and should be budgeted for."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What are the common problems with the BMW X3 35i?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The most frequently reported issues are HPFP failure (long cranking, hesitation, stalling), chargepipe failure (plastic cracks, boost leaks, loss of power), oil leaks from the valve cover gasket and oil filter housing gasket, water pump failure, and timing chain tensioner wear."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is it worth replacing a BMW X3 35i engine, or should I scrap the car?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Depends on vehicle value. Against a well-kept £18,000 X3 35i, a £6,000 recon is 33% — worth it. Against a tired £8,000 example, the same recon approaches our 70% BMW threshold — get a scrap valuation first."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I find my BMW X3 35i engine code?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Listed on the VIN plate and vehicle documentation. The X3 35i carries the engine code N55B30A. It's a 3.0-litre straight-six turbo petrol engine used in the F25 X3 from 2011 to 2017."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I repair the HPFP, or does it need full engine replacement?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes — HPFP replacement is a well-understood repair costing £600–£1,200. It's the N55's most common weak point. If you experience long cranking or hesitation, don't ignore it — but it's a straightforward fix, not an engine killer."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "BMWEngines.uk",
+          "url": "https://bmwengine.uk/",
+          "logo": "https://bmwengine.uk/images/bmwengines-logo.png",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "BMW X3 35i Engine Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "3500",
+            "highPrice": "14000",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "name": "BMW X3 35i UK Engine Enquiry Data 2025",
+          "description": "Proprietary UK enquiry volumes and demand trends for BMW X3 35i N55 engines, sourced from BMWEngines.uk's specialist marketplace activity.",
+          "creator": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk"
+          },
+          "temporalCoverage": "2025",
+          "spatialCoverage": "United Kingdom"
+        },
+        {
+          "@type": "WebPage",
+          "name": "35i Engine Replacement Cost UK — Compare Quotes",
+          "url": "https://bmwengine.uk/x3/35i/",
+          "author": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk Specialist Network"
+          },
+          "datePublished": "2026-07-11",
+          "dateModified": "2026-07-11"
+        }
+      ]
+    }
+  },
+  "hero": {
+    "tagPill": "BMW X3 35i • 2011–2017 • 3.0L Straight-Six Turbo (N55)",
+    "h1": "BMW X3 35i Engine Replacement — Compare Prices & Get Quotes",
+    "subHeadline": "Get quotes today from trusted UK BMW X3 specialists. Compare reconditioned, rebuilt and used N55 3.0-litre turbo engines — supply & fit available nationwide.",
+    "trustBadges": [
+      "🔧 Supply & Fit Available",
+      "✅ 12-Month Warranty",
+      "🚚 Nationwide Delivery",
+      "👥 20+ Specialists"
+    ],
+    "priceAnchor": "BMW X3 35i Engines — from £3,500 to £9,500 · Common code: N55B30A",
+    "registrationInput": {
+      "flag": "🇬🇧 GB",
+      "placeholder": "Enter your reg — e.g. AB12 CDE",
+      "cta": {
+        "label": "Get My Free 35i Engine Quotes Now →",
+        "href": "#"
+      }
+    },
+    "ticker": "● Instant Quotes · No Obligation · 100% Free · Reconditioned · Rebuilt · Used · Supply & Fit Available · UK-Wide Network"
+  },
+  "eraMap": {
+    "title": "The 35i THROUGH TIME — Era Map",
+    "columns": [
+      "Generation",
+      "Years",
+      "Engine Code",
+      "Reliability",
+      "Recon Cost",
+      "Era Note"
+    ],
+    "rows": [
+      {
+        "generation": "F25 X3 xDrive35i",
+        "years": "2011–2017",
+        "engineCode": "N55B30A (3.0L Straight-Six Turbo)",
+        "reliability": "★★★☆☆ [NEWLY ASSIGNED — see Data Note]",
+        "reconCost": "£4,500–£7,500 [PLACEHOLDER — confirm vs cost sheet]",
+        "eraNote": "One engine throughout this badge's history — no era ambiguity."
+      }
+    ],
+    "sourceNote": "This table is the single source every other section on this page matches — Sections 2, 4 and 6 reference it rather than restating conflicting figures.",
+    "dataNote": ""
+  },
+  "replacementCosts": {
+    "h2": "BMW X3 35i Engine Replacement Costs",
+    "columns": [
+      "Engine Type",
+      "Supply Only",
+      "Fitted (Indie)",
+      "Warranty",
+      "Best For"
+    ],
+    "rows": [
+      {
+        "engineType": "Used Engine",
+        "supplyOnly": "£3,500–£5,500",
+        "fittedIndie": "£4,700–£7,000",
+        "warranty": "1–6 months",
+        "bestFor": "Budget priority; lower-mileage examples"
+      },
+      {
+        "engineType": "Reconditioned Engine",
+        "supplyOnly": "£4,500–£7,500",
+        "fittedIndie": "£5,800–£9,000",
+        "warranty": "12–24 months",
+        "bestFor": "Most owners — best cost/warranty balance"
+      },
+      {
+        "engineType": "Rebuilt Engine",
+        "supplyOnly": "£6,000–£9,500",
+        "fittedIndie": "£7,300–£11,000",
+        "warranty": "12–24 months",
+        "bestFor": "Long-term ownership; 3+ year horizon"
+      },
+      {
+        "engineType": "Main Dealer New",
+        "supplyOnly": "£9,000–£14,000+",
+        "fittedIndie": "£10,500–£16,000+",
+        "warranty": "24–36 months",
+        "bestFor": "Insurance jobs, warranty claims"
+      }
+    ],
+    "figuresNote": "Figures above reflect the N55 3.0-litre turbo petrol engine. Used N55 engines typically sit in the £3,500–£5,500 band; reconditioned units range from £4,500–£7,500.",
+    "labourEstimate": "Fitting an X3 35i engine typically takes 12–16 hours at £70–£100/hr (independent) or £120–£180/hr (London/SE dealer).",
+    "cta": {
+      "label": "→ Compare 35i engine prices from UK specialists",
+      "href": "#"
+    }
+  },
+  "commonProblems": {
+    "problems": [
+      {
+        "id": 1,
+        "title": "High-Pressure Fuel Pump (HPFP) Failure",
+        "symptoms": "Long cranking on startup, hesitation under acceleration, engine stalling, loss of power, engine warning light, rough idling, misfires.",
+        "typicalMileage": "40,000–80,000 miles",
+        "repairCost": "£600–£1,200 (HPFP replacement)【PLACEHOLDER — confirm vs cost sheet】",
+        "replacementCost": "N/A — repair only",
+        "urgency": {
+          "icon": "🟠",
+          "label": "Check",
+          "text": "book inspection urgently"
+        },
+        "recommendation": "The N55's HPFP is its most notorious weak point. If you experience long cranking or hesitation, don't ignore it — a failing HPFP can lead to lean running and catalytic converter damage. The replacement is well-understood and well-documented. If the HPFP fails completely, symptoms include rough idling, misfires, and a Check Engine Light.",
+        "failureLink": {
+          "label": "Read the full HPFP failure guide",
+          "href": "/failures/hpfp-failure/"
+        }
+      },
+      {
+        "id": 2,
+        "title": "Chargepipe Failure",
+        "symptoms": "Loss of boost, whistling noise from the engine bay, engine warning light, reduced power, poor running conditions.",
+        "typicalMileage": "50,000–100,000 miles",
+        "repairCost": "£300–£600 (chargepipe replacement with aftermarket metal unit)",
+        "replacementCost": "N/A — repair only",
+        "urgency": {
+          "icon": "🟡",
+          "label": "Monitor",
+          "text": "book inspection soon"
+        },
+        "recommendation": "The N55's plastic chargepipe is prone to cracking with age and constant heat cycles. The factory plastic pipes become brittle and often crack, resulting in boost leaks, check engine lights, and poor running conditions. The solution is an aftermarket metal chargepipe — fit once and forget.",
+        "failureLink": {
+          "label": "Read the full chargepipe failure guide",
+          "href": "/failures/chargepipe-failure/"
+        }
+      },
+      {
+        "id": 3,
+        "title": "Oil Leaks (Valve Cover Gasket & Oil Filter Housing Gasket)",
+        "symptoms": "Oil spots under the car, burning oil smell from the engine bay, low oil level warning, visible oil residue around the valve cover or oil filter housing area.",
+        "typicalMileage": "60,000–100,000 miles",
+        "repairCost": "£400–£1,000 (gasket replacement)【PLACEHOLDER — confirm vs cost sheet】",
+        "replacementCost": "N/A — repair only",
+        "urgency": {
+          "icon": "🟠",
+          "label": "Check",
+          "text": "book inspection urgently"
+        },
+        "recommendation": "Oil leaks from the valve cover gasket and oil filter housing gasket are common on the N55. The plastic valve cover becomes brittle from engine heat and typically needs replacement around 100,000 miles. If you notice oil spots or a burning smell, have the engine inspected promptly. Left unchecked, oil loss can lead to low oil levels and potential engine damage.",
+        "failureLink": {
+          "label": "Read the full oil leak guide",
+          "href": "/failures/oil-leak/"
+        }
+      }
+    ]
+  },
+  "quotesCta": {
+    "headline": "Ready to Compare? Get Matched With a Vetted BMW Specialist →",
+    "supportingLine": "20+ vetted BMW specialists, every 35i N55 era covered, with a 12-month warranty as standard.",
+    "button": {
+      "label": "Get My Free 35i Engine Quotes Now →",
+      "href": "#"
+    }
+  },
+  "repairBuyOrReplace": {
+    "h2": "X3 35i — Repair, Buy, or Replace?",
+    "canItBeRepaired": {
+      "title": "Can It Be Repaired?",
+      "columns": [
+        "Problem",
+        "Repairable?",
+        "Typical Cost",
+        "When It Makes Sense"
+      ],
+      "rows": [
+        {
+          "problem": "HPFP failure",
+          "repairable": "✅ Yes",
+          "typicalCost": "£600–£1,200",
+          "whenItMakesSense": "Well-understood fix; cheaper than engine replacement"
+        },
+        {
+          "problem": "Chargepipe failure",
+          "repairable": "✅ Yes",
+          "typicalCost": "£300–£600",
+          "whenItMakesSense": "Aftermarket metal unit solves permanently"
+        },
+        {
+          "problem": "Valve cover gasket leak",
+          "repairable": "✅ Yes",
+          "typicalCost": "£400–£800",
+          "whenItMakesSense": "Standard maintenance on ageing N55 engines"
+        },
+        {
+          "problem": "Oil filter housing gasket leak",
+          "repairable": "✅ Yes",
+          "typicalCost": "£400–£800",
+          "whenItMakesSense": "Well-understood repair; catch it early to prevent oil starvation"
+        },
+        {
+          "problem": "Water pump failure",
+          "repairable": "✅ Yes",
+          "typicalCost": "£400–£900",
+          "whenItMakesSense": "Straightforward fix; upgraded parts available"
+        },
+        {
+          "problem": "Timing chain tensioner failure",
+          "repairable": "⚠️ Sometimes",
+          "typicalCost": "£800–£1,800",
+          "whenItMakesSense": "If caught early, can prevent catastrophic failure"
+        }
+      ]
+    },
+    "buyingChecks": {
+      "title": "Buying This 35i? Check These First",
+      "buyIf": [
+        "* Documented HPFP replacement history",
+        "* Chargepipe replaced with aftermarket metal unit",
+        "* Valve cover gasket and oil filter housing gasket replaced within the last 40,000 miles",
+        "* Full service history with BMW LL-01 approved oil",
+        "* No cold-start rattle, misfires, or hesitation"
+      ],
+      "avoidIf": [
+        "* No proof of HPFP maintenance — this is a when, not an if",
+        "* Oil leaks with no documented gasket replacement history",
+        "* Poor service history — the N55 is unforgiving of neglect",
+        "* Engine warning light with no diagnosis"
+      ]
+    },
+    "closingVerdict": "The X3 35i is powered by BMW's N55 — a proven, powerful straight-six turbo that represents a significant step forward from the twin-turbo N54. It's a genuinely enjoyable engine in the X3, offering 306 PS and 400 Nm of torque. But it's not bulletproof — HPFP failure, chargepipe cracking, oil leaks, and water pump issues are the price of entry. These are well-understood, manageable fixes. Buy on documented history, not on faith. A well-maintained 35i is a £15,000–£25,000 premium SUV; a neglected one is a £7,000 engine replacement waiting to happen.",
+    "cta": {
+      "label": "→ Compare 35i engine prices before you buy",
+      "href": "#"
+    }
+  },
+  "buyingChecklist": {
+    "intro": "Before you buy a used BMW X3 35i (or before you commit to an engine replacement), check these:",
+    "items": [
+      "* Cold Start — Listen for long cranking or hesitation (HPFP warning)",
+      "* Service History — including the N55 era (2011–2017) and confirmed oil-change intervals using BMW LL-01 approved oil",
+      "* HPFP Check — Any history of long cranking, hesitation, or HPFP replacement?",
+      "* Chargepipe Check — Has the plastic chargepipe been replaced with an aftermarket metal unit?",
+      "* Oil Leak Check — Any evidence of oil leaks around the valve cover or oil filter housing?",
+      "* Coolant Check — Any history of coolant loss or water pump replacement?",
+      "* Smoke Check — White or blue smoke on startup can indicate PCV or turbo issues",
+      "* Engine Warning Light — Have codes been read? Any unresolved HPFP, chargepipe, or cooling system issues?"
+    ]
+  },
+  "engineCodes": {
+    "columns": [
+      "Engine Code",
+      "Years",
+      "Power",
+      "2025 Enquiries",
+      "Avg. Recon Cost"
+    ],
+    "rows": [
+      {
+        "engineCode": "N55B30A (3.0L Straight-Six Turbo)",
+        "years": "2011–2017",
+        "power": "306 PS (225 kW / 300 hp) @ 5,800 rpm · 400 Nm @ 1,200–5,000 rpm",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£4,500–£7,500 [PLACEHOLDER — confirm vs cost sheet]"
+      }
+    ],
+    "matchNote": "This table's rows match Section 1B's Era Map exactly.",
+    "technicalSpecs": {
+      "title": "Technical Specs (N55B30A):",
+      "items": [
+        {
+          "label": "* Displacement",
+          "value": "2,979 cc"
+        },
+        {
+          "label": "* Cylinders",
+          "value": "Straight-6, 4 valves per cylinder"
+        },
+        {
+          "label": "* Compression Ratio",
+          "value": "10.2:1"
+        },
+        {
+          "label": "* Fuel System",
+          "value": "Direct injection"
+        },
+        {
+          "label": "* Turbocharger",
+          "value": "Single twin-scroll turbocharger"
+        },
+        {
+          "label": "* Valvetrain",
+          "value": "VALVETRONIC with Double VANOS"
+        }
+      ]
+    },
+    "cta": {
+      "label": "→ Compare 35i engine prices for your BMW",
+      "href": "#"
+    }
+  },
+  "marketIntelligence": {
+    "items": [
+      {
+        "label": "Most Common Failure",
+        "value": "HPFP failure — the N55's most notorious weak point"
+      },
+      {
+        "label": "Average Enquiry Mileage",
+        "value": "55,000–85,000 miles [PATTERN DATA]"
+      },
+      {
+        "label": "Average Replacement Cost",
+        "value": "£4,500–£7,500 reconditioned, supply only [PLACEHOLDER — confirm vs cost sheet]"
+      },
+      {
+        "label": "Most Requested Engine Code",
+        "value": "N55B30A [PATTERN DATA]"
+      },
+      {
+        "label": "Peak Enquiry Season",
+        "value": "Winter — cold starts expose HPFP and cooling system issues【PATTERN DATA】"
+      },
+      {
+        "label": "Regional Demand",
+        "value": "London (20%), South East (18%), North West (12%) [PATTERN DATA]"
+      }
+    ]
+  },
+  "faq": {
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a BMW X3 35i engine replacement cost in the UK?",
+        "answer": "A reconditioned N55 3.0-litre engine typically costs £4,500–£7,500 supply only. Used engines are available from £3,500–£5,500. Fitting adds £1,200–£1,800 depending on your location and workshop. Main dealer new engines can exceed £10,000."
+      },
+      {
+        "id": 2,
+        "question": "Is the BMW X3 35i engine reliable?",
+        "answer": "The N55 is a proven, powerful engine — but it has known weak points: HPFP failure, chargepipe cracking, oil leaks from the valve cover and oil filter housing gaskets, and water pump failure. The engine itself is robust when properly maintained, but these issues are common and should be budgeted for."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the BMW X3 35i?",
+        "answer": "The most frequently reported issues are HPFP failure (long cranking, hesitation, stalling), chargepipe failure (plastic cracks, boost leaks, loss of power), oil leaks from the valve cover gasket and oil filter housing gasket, water pump failure, and timing chain tensioner wear."
+      },
+      {
+        "id": 4,
+        "question": "Is it worth replacing a BMW X3 35i engine, or should I scrap the car?",
+        "answer": "Depends on vehicle value. Against a well-kept £18,000 X3 35i, a £6,000 recon is 33% — worth it. Against a tired £8,000 example, the same recon approaches our 70% BMW threshold — get a scrap valuation first."
+      },
+      {
+        "id": 5,
+        "question": "How do I find my BMW X3 35i engine code?",
+        "answer": "Listed on the VIN plate and vehicle documentation. The X3 35i carries the engine code N55B30A. It's a 3.0-litre straight-six turbo petrol engine used in the F25 X3 from 2011 to 2017."
+      },
+      {
+        "id": 6,
+        "question": "Can I repair the HPFP, or does it need full engine replacement?",
+        "answer": "Yes — HPFP replacement is a well-understood repair costing £600–£1,200. It's the N55's most common weak point. If you experience long cranking or hesitation, don't ignore it — but it's a straightforward fix, not an engine killer."
+      }
+    ],
+    "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty — always confirm terms with your chosen supplier."
+  },
+  "trustCta": {
+    "h2": "Why UK BMW X3 35i Owners Trust BMWEngines.uk",
+    "trustPoints": [
+      {
+        "title": "Trusted 35i N55 Suppliers",
+        "text": "every garage and engine rebuilder in our network is vetted, rated and reviewed by real X3 owners, as part of the Engine Finders network, covering the entire F25 N55 era from 2011 to 2017."
+      },
+      {
+        "title": "Compare 35i Engine Replacement Companies",
+        "text": "see prices, warranty terms and supply & fit options side-by-side before you commit, across every X3 that left the factory with this powerful 3.0-litre straight-six turbo."
+      },
+      {
+        "title": "UK Engine Replacement Services for 35i",
+        "text": "supply-only or full supply & fit available nationwide, covering the full F25 production run — and we're vetted across every era of this badge."
+      }
+    ],
+    "finalCta": "Find the best BMW X3 35i engine replacement UK drivers rely on. Compare prices from trusted specialists on EnginesMarket today and get your X3 back on the road with confidence.",
+    "ctaButton": {
+      "label": "Compare BMW X3 35i Engine Prices Now →",
+      "href": "#"
+    }
+  }
+}

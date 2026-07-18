@@ -1,15 +1,5 @@
 [
   {
-    "slug": "2002",
-    "type": "models",
-    "dataFile": "2002"
-  },
-  {
-    "slug": "bmw-2002",
-    "type": "models",
-    "dataFile": "bmw-2002"
-  },
-  {
     "slug": "1-series",
     "type": "models",
     "dataFile": "1-series"
@@ -48,6 +38,11 @@
     "slug": "8-series",
     "type": "models",
     "dataFile": "8-series"
+  },
+  {
+    "slug": "bmw-2002",
+    "type": "models",
+    "dataFile": "bmw-2002"
   },
   {
     "slug": "i-series-electric-motors",

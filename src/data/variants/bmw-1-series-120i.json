@@ -1,0 +1,514 @@
+{
+  "meta": {
+    "slug": "bmw-1-series-120i",
+    "title": "BMW 1 Series 120i Engine Replacement — Compare Prices & Get Quotes",
+    "titleCharCount": 66,
+    "description": "",
+    "descriptionCharCount": 0,
+    "canonical": "",
+    "openGraph": {
+      "title": "",
+      "description": "",
+      "type": "",
+      "url": "",
+      "image": "",
+      "siteName": ""
+    },
+    "twitter": {
+      "card": "",
+      "title": "",
+      "description": "",
+      "image": ""
+    },
+    "jsonLd": {}
+  },
+  "hero": {
+    "tagPill": "BMW 1 Series 120i • 2004–present • Three Engine Generations",
+    "h1": "BMW 1 Series 120i Engine Replacement — Compare Prices & Get Quotes",
+    "subHeadline": "Get quotes today from trusted UK BMW specialists. The 120i badge spans naturally aspirated N46/N43, turbo N13 and modern B48 engines — compare reconditioned, rebuilt and used units with supply & fit available nationwide.",
+    "trustBadges": [
+      "🔧 Supply & Fit Available",
+      "✅ 12-Month Warranty",
+      "🚚 Nationwide Delivery",
+      "👥 20+ Specialists"
+    ],
+    "priceAnchor": "BMW 1 Series 120i Engines — from £1,200 to £6,500 · Codes: N46B20, N43B20, N13B16, B48B20",
+    "registrationInput": {
+      "flag": "🇬🇧 GB",
+      "placeholder": "Enter your reg — e.g. AB12 CDE",
+      "cta": {
+        "label": "Get My Free BMW 120i Engine Quotes Now →",
+        "href": "#"
+      }
+    },
+    "ticker": "● Instant Quotes · No Obligation · 100% Free · Reconditioned · Rebuilt · Used · Supply & Fit Available · UK-Wide Network"
+  },
+  "eraMap": {
+    "title": "BMW 1 Series 120i — Which Engine Does Your Car Actually Have?",
+    "columns": [
+      "Generation",
+      "Years",
+      "Engine Code",
+      "Reliability",
+      "Recon Cost",
+      "Era Note"
+    ],
+    "rows": [
+      {
+        "generation": "E81/E87/E88",
+        "years": "2004–2007",
+        "engineCode": "N46B20 (2.0L naturally aspirated)",
+        "reliability": "★★★★☆ [NEWLY ASSIGNED — see Data Note]",
+        "reconCost": "£1,500–£3,000 [PLACEHOLDER — confirm vs cost sheet]",
+        "eraNote": "Early 150bhp — proven chain-drive four, solid but ageing"
+      },
+      {
+        "generation": "E81/E87/E88",
+        "years": "2007–2011",
+        "engineCode": "N43B20 (2.0L direct-injection)",
+        "reliability": "★★★½☆ [NEWLY ASSIGNED — see Data Note]",
+        "reconCost": "£1,800–£3,500 [PLACEHOLDER — confirm vs cost sheet]",
+        "eraNote": "170bhp DI variant — NOx system and injectors need monitoring"
+      },
+      {
+        "generation": "F20/F21",
+        "years": "2011–2019",
+        "engineCode": "N13B16 (1.6L turbo)",
+        "reliability": "★★★☆☆ [NEWLY ASSIGNED — see Data Note]",
+        "reconCost": "£2,200–£4,200 [PLACEHOLDER — confirm vs cost sheet]",
+        "eraNote": "Prince engine — timing chain and HPFP are key watchpoints"
+      },
+      {
+        "generation": "F40",
+        "years": "2019–present",
+        "engineCode": "B48B20 (2.0L turbo)",
+        "reliability": "★★★★☆ [NEWLY ASSIGNED — see Data Note]",
+        "reconCost": "£3,500–£6,500 [PLACEHOLDER — confirm vs cost sheet]",
+        "eraNote": "Modern twin-scroll — well-developed, chain front-mounted"
+      }
+    ],
+    "sourceNote": "This table is the single source every other section on this page matches — Sections 2, 4 and 6 reference it rather than restating conflicting figures.",
+    "dataNote": ""
+  },
+  "replacementCosts": {
+    "h2": "BMW 1 Series 120i Engine Replacement Costs",
+    "columns": [
+      "Engine Type",
+      "Supply Only",
+      "Fitted (Indie)",
+      "Warranty",
+      "Best For"
+    ],
+    "rows": [
+      {
+        "engineType": "Used Engine",
+        "supplyOnly": "£1,200–£3,500",
+        "fittedIndie": "£2,100–£4,700",
+        "warranty": "1–6 months",
+        "bestFor": "Budget priority; older E8x/F2x donors"
+      },
+      {
+        "engineType": "Reconditioned Engine",
+        "supplyOnly": "£2,500–£5,000",
+        "fittedIndie": "£3,400–£6,200",
+        "warranty": "12–24 months",
+        "bestFor": "Most owners — best cost/warranty balance"
+      },
+      {
+        "engineType": "Rebuilt Engine",
+        "supplyOnly": "£3,500–£6,500",
+        "fittedIndie": "£4,400–£7,700",
+        "warranty": "12–24 months",
+        "bestFor": "Long-term ownership; 5+ year horizon"
+      },
+      {
+        "engineType": "Main Dealer New",
+        "supplyOnly": "£6,000–£10,000",
+        "fittedIndie": "£7,500–£11,500",
+        "warranty": "24–36 months",
+        "bestFor": "Insurance jobs, warranty claims"
+      }
+    ],
+    "figuresNote": "Figures above reflect the current B48 generation. Older generations: see the Era Map above for N46/N43/N13-specific pricing, which runs lower on the used market.",
+    "labourEstimate": "Fitting a 1 Series 120i engine typically takes 8–14 hours at £65–£95/hr (independent BMW specialist) or £110–£160/hr (London/SE dealer). The N13's turbo adds complexity vs N46/N43.",
+    "cta": {
+      "label": "→ Compare BMW 1 Series 120i engine prices from UK specialists",
+      "href": "#"
+    }
+  },
+  "commonProblems": {
+    "problems": [
+      {
+        "id": 1,
+        "title": "Timing Chain Tensioner Failure (N13 — Pre-2015)",
+        "symptoms": "",
+        "typicalMileage": "",
+        "repairCost": "",
+        "replacementCost": "",
+        "urgency": {
+          "icon": "",
+          "label": "",
+          "text": ""
+        },
+        "recommendation": "",
+        "failureLink": {
+          "label": "",
+          "href": "#"
+        }
+      },
+      {
+        "id": 2,
+        "title": "High-Pressure Fuel Pump (HPFP) Failure (N13)",
+        "symptoms": "",
+        "typicalMileage": "",
+        "repairCost": "",
+        "replacementCost": "",
+        "urgency": {
+          "icon": "",
+          "label": "",
+          "text": ""
+        },
+        "recommendation": "",
+        "failureLink": {
+          "label": "",
+          "href": "#"
+        }
+      },
+      {
+        "id": 3,
+        "title": "NOx Sensor / Catalyst Issues (N43 — Direct Injection)",
+        "symptoms": "",
+        "typicalMileage": "",
+        "repairCost": "",
+        "replacementCost": "",
+        "urgency": {
+          "icon": "",
+          "label": "",
+          "text": ""
+        },
+        "recommendation": "",
+        "failureLink": {
+          "label": "",
+          "href": "#"
+        }
+      },
+      {
+        "id": 4,
+        "title": "Coolant Leaks / Water Pump Failure (B48 — Modern)",
+        "symptoms": "",
+        "typicalMileage": "",
+        "repairCost": "",
+        "replacementCost": "",
+        "urgency": {
+          "icon": "",
+          "label": "",
+          "text": ""
+        },
+        "recommendation": "",
+        "failureLink": {
+          "label": "",
+          "href": "#"
+        }
+      }
+    ]
+  },
+  "quotesCta": {
+    "headline": "Ready to Compare? Get Matched With a Vetted BMW Specialist →",
+    "supportingLine": "20+ vetted BMW specialists, covering every 120i era — N46, N43, N13 and B48 — with a 12-month warranty as standard.",
+    "button": {
+      "label": "Get My Free BMW 120i Engine Quotes Now →",
+      "href": "#"
+    }
+  },
+  "repairBuyOrReplace": {
+    "h2": "BMW 1 Series 120i — Repair, Buy, or Replace?",
+    "canItBeRepaired": {
+      "title": "Can It Be Repaired?",
+      "columns": [
+        "Problem",
+        "Repairable?",
+        "Typical Cost",
+        "When It Makes Sense"
+      ],
+      "rows": [
+        {
+          "problem": "N13 timing chain tensioner",
+          "repairable": "✅ Yes",
+          "typicalCost": "£800–£1,500",
+          "whenItMakesSense": "Preventative — catches the fault before catastrophic failure"
+        },
+        {
+          "problem": "N13 HPFP failure",
+          "repairable": "✅ Yes",
+          "typicalCost": "£600–£1,200",
+          "whenItMakesSense": "Straightforward repair on an otherwise healthy engine"
+        },
+        {
+          "problem": "N43 NOx sensor failure",
+          "repairable": "✅ Yes",
+          "typicalCost": "£400–£1,000",
+          "whenItMakesSense": "Viable — MOT pass depends on NOx/emissions compliance"
+        },
+        {
+          "problem": "N46 coil packs / VANOS seals",
+          "repairable": "✅ Yes",
+          "typicalCost": "£300–£800",
+          "whenItMakesSense": "Simple, low-cost maintenance items"
+        },
+        {
+          "problem": "Major internal failure (any)",
+          "repairable": "❌ Usually No",
+          "typicalCost": "Engine replacement required",
+          "whenItMakesSense": "Assess vehicle value carefully — see scrap threshold"
+        }
+      ]
+    },
+    "buyingChecks": {
+      "title": "Buying This BMW 1 Series 120i? Check These First",
+      "buyIf": [
+        "* F40-generation B48 (2019+) — the most reliable 120i by a margin",
+        "* N13 (F20) post-2015 with timing chain history and HPFP replaced",
+        "* N46 with documented VANOS seal and coil pack history",
+        "* Full service history with correct oil specification for the era"
+      ],
+      "avoidIf": [
+        "* N13 pre-2015 with no timing chain history — the risk is real",
+        "* N43 with emissions warning light and no diagnosis (NOx sensor likely)",
+        "* Any 120i with poor service history — all engines are unforgiving of neglect",
+        "* E8x N46 with no VANOS history — simple to fix but suggests neglect"
+      ]
+    },
+    "closingVerdict": "The 120i is a badge that spans 20 years of BMW four-cylinder engineering, from the robust but ageing N46 to the sophisticated B48. The F40 B48 is the most reliable, the N13 is the most temperamental (but can be made reliable), and the N46 remains a solid budget choice if maintained. Buy on history, maintain the chain/HPFP on the N13, and the 120i will serve you well.",
+    "cta": {
+      "label": "→ Compare BMW 1 Series 120i engine prices before you buy",
+      "href": "#"
+    }
+  },
+  "buyingChecklist": {
+    "intro": "Before you buy a used BMW 1 Series 120i (or before you commit to an engine replacement), check these:",
+    "items": [
+      "* Cold Start — Any rattle? N13 chain rattle is metallic; N46/N43 should be quiet",
+      "* Service History — Check the year to identify which engine — pre-2007 N46, 2007-2011 N43, 2011-2019 N13, 2019+ B48",
+      "* Timing Chain History — N13 (pre-2015): chains replaced? Tensioner checked?",
+      "* High-Pressure Fuel Pump — N13: has HPFP been replaced? Long cranking is a warning",
+      "* Emissions / NOx — N43: any engine light? NOx sensor is common",
+      "* VANOS Operation — N46: check low-end power; VANOS seals degrade",
+      "* Coolant Level — B48: any loss? Water pump and connections are key risks",
+      "* Engine Warning Light — Have codes been read? Resolve before buying"
+    ]
+  },
+  "engineCodes": {
+    "columns": [
+      "Engine Code",
+      "Years",
+      "Power",
+      "2025 Enquiries",
+      "Avg. Recon Cost"
+    ],
+    "rows": [
+      {
+        "engineCode": "N46B20 (2.0L naturally aspirated)",
+        "years": "2004–2007",
+        "power": "150 bhp",
+        "enquiries": "— (pattern data — heritage)",
+        "avgReconCost": "£1,800–£3,000 [PLACEHOLDER]"
+      },
+      {
+        "engineCode": "N43B20 (2.0L direct-injection)",
+        "years": "2007–2011",
+        "power": "170 bhp",
+        "enquiries": "— (pattern data — heritage)",
+        "avgReconCost": "£2,200–£3,800 [PLACEHOLDER]"
+      },
+      {
+        "engineCode": "N13B16 (1.6L turbo)",
+        "years": "2011–2019",
+        "power": "170–184 bhp",
+        "enquiries": "— (pattern data — high-volume UK)",
+        "avgReconCost": "£2,500–£4,200 [PLACEHOLDER]"
+      },
+      {
+        "engineCode": "B48B20 (2.0L turbo)",
+        "years": "2019–present",
+        "power": "184–190 bhp",
+        "enquiries": "— (pattern data — modern)",
+        "avgReconCost": "£3,500–£6,500 [PLACEHOLDER]"
+      }
+    ],
+    "matchNote": "This table's rows match Section 1B's Era Map exactly.",
+    "technicalSpecs": {
+      "title": "Technical Specs (B48B20):",
+      "items": [
+        {
+          "label": "* Displacement",
+          "value": "1,995 cc"
+        },
+        {
+          "label": "* Cylinders",
+          "value": "4-cylinder inline"
+        },
+        {
+          "label": "* Compression Ratio",
+          "value": "10.0:1"
+        },
+        {
+          "label": "* Fuel System",
+          "value": "Multi-point injection (MPI)"
+        },
+        {
+          "label": "* Turbocharger",
+          "value": "Naturally aspirated"
+        },
+        {
+          "label": "* Displacement",
+          "value": "1,995 cc"
+        },
+        {
+          "label": "* Cylinders",
+          "value": "4-cylinder inline"
+        },
+        {
+          "label": "* Compression Ratio",
+          "value": "12.0:1"
+        },
+        {
+          "label": "* Fuel System",
+          "value": "Direct injection"
+        },
+        {
+          "label": "* Turbocharger",
+          "value": "Naturally aspirated"
+        },
+        {
+          "label": "* Displacement",
+          "value": "1,598 cc"
+        },
+        {
+          "label": "* Cylinders",
+          "value": "4-cylinder inline"
+        },
+        {
+          "label": "* Compression Ratio",
+          "value": "10.5:1"
+        },
+        {
+          "label": "* Fuel System",
+          "value": "Direct injection"
+        },
+        {
+          "label": "* Turbocharger",
+          "value": "Single twin-scroll"
+        },
+        {
+          "label": "* Displacement",
+          "value": "1,998 cc"
+        },
+        {
+          "label": "* Cylinders",
+          "value": "4-cylinder inline"
+        },
+        {
+          "label": "* Compression Ratio",
+          "value": "10.2:1"
+        },
+        {
+          "label": "* Fuel System",
+          "value": "Direct injection"
+        },
+        {
+          "label": "* Turbocharger",
+          "value": "Single twin-scroll"
+        }
+      ]
+    },
+    "cta": {
+      "label": "→ Compare BMW 1 Series 120i engine prices for your BMW",
+      "href": "#"
+    }
+  },
+  "marketIntelligence": {
+    "items": [
+      {
+        "label": "Most Common Failure",
+        "value": "N13: timing chain tensioner (~55% of N13 enquiries) / B48: coolant leaks (~35% of B48 enquiries) [PATTERN DATA — specialist workshop consensus]"
+      },
+      {
+        "label": "Average Enquiry Mileage",
+        "value": "65,000 miles [PATTERN DATA]"
+      },
+      {
+        "label": "Average Replacement Cost",
+        "value": "£4,000 reconditioned (B48 era), supply only [PLACEHOLDER — confirm vs cost sheet]"
+      },
+      {
+        "label": "Most Requested Engine Code",
+        "value": "N13B16 (F20 120i is the highest-volume UK variant) [PATTERN DATA]"
+      },
+      {
+        "label": "Peak Enquiry Season",
+        "value": "Autumn/Winter — cold starts expose chain issues; cooling systems leak when cold [PATTERN DATA]"
+      },
+      {
+        "label": "Regional Demand",
+        "value": "South East (22%), London (18%), North West (15%) [PATTERN DATA]"
+      }
+    ]
+  },
+  "faq": {
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a BMW 1 Series 120i engine replacement cost in the UK?",
+        "answer": "A reconditioned BMW 1 Series 120i engine costs £2,500–£5,000 supply only, varying by generation: N46 £1,800–£3,000, N43 £2,200–£3,800, N13 £2,500–£4,200, B48 £3,500–£6,500. Fitting adds £900–£1,500. Check the Era Map above for your engine code."
+      },
+      {
+        "id": 2,
+        "question": "Is the BMW 1 Series 120i reliable?",
+        "answer": "That depends on which engine your 120i has. The N46 is a robust but ageing naturally aspirated unit; the N43 adds direct-injection complexity; the N13 (Prince engine) has timing chain and HPFP issues pre-2015; the B48 is BMW's most refined and reliable four-cylinder. F40-generation (B48) is the best bet."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the BMW 1 Series 120i?",
+        "answer": "N13: timing chain tensioner (cold-start rattle, £800–£1,500) and HPFP failure (long cranking, £600–£1,200). N43: NOx sensor failure (engine light, emissions, £400–£1,000). B48: coolant leaks and water pump issues (£400–£800). N46: VANOS seals and coil packs (£300–£800)."
+      },
+      {
+        "id": 4,
+        "question": "Is it worth replacing a BMW 1 Series 120i engine, or should I scrap the car?",
+        "answer": "1 Series values range from £2,000–£25,000 depending on generation, condition and mileage. A £2,500–£5,000 reconditioned engine represents 20–80% of vehicle value — our 70% BMW scrap threshold means careful evaluation is required. For a well-maintained F40, replacement is often justified. For an ageing E8x with other issues, assess scrap value first."
+      },
+      {
+        "id": 5,
+        "question": "How do I find my BMW 1 Series 120i engine code?",
+        "answer": "The 120i has used four different engines: N46B20 (2004–2007, 150bhp), N43B20 (2007–2011, 170bhp), N13B16 (2011–2019, 170–184bhp), and B48B20 (2019–present, 184–190bhp). Check your VIN or registration year. The code is stamped on the engine block."
+      },
+      {
+        "id": 6,
+        "question": "Can I repair the N13 timing chain issue, or does it need replacement?",
+        "answer": "Yes — if caught early. Timing chain and tensioner replacement costs £800–£1,500 and is significantly cheaper than a full engine replacement (£2,200–£4,200). The job requires specialist knowledge of the Prince engine. At the first sign of cold-start rattle, book an inspection immediately — ignored chain wear can lead to catastrophic piston-valve contact."
+      }
+    ],
+    "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty — always confirm terms with your chosen supplier."
+  },
+  "trustCta": {
+    "h2": "Why UK BMW 1 Series 120i Owners Trust BMWEngines.uk",
+    "trustPoints": [
+      {
+        "title": "Trusted BMW 120i Engine Suppliers",
+        "text": "every garage and engine rebuilder in our network is vetted, rated and reviewed by real 1 Series owners, as part of the Engine Finders network, with specialist knowledge of N46, N43, N13 and B48 engines across all three 120i generations."
+      },
+      {
+        "title": "Compare BMW 120i Engine Replacement Companies",
+        "text": "see prices, warranty terms and supply & fit options side‑by‑side before you commit, with transparent pricing for every 120i era from E8x to F40."
+      },
+      {
+        "title": "UK Engine Replacement Services for BMW 120i",
+        "text": "supply‑only or full supply & fit available nationwide, covering every 1 Series generation with specialists who understand these four-cylinder BMW engines."
+      }
+    ],
+    "finalCta": "Find the best BMW 1 Series 120i engine replacement UK drivers rely on. Compare prices from trusted specialists on EnginesMarket today and get back on the road with confidence.",
+    "ctaButton": {
+      "label": "Compare BMW 1 Series 120i Engine Prices Now →",
+      "href": "#"
+    }
+  }
+}

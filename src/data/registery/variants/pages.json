@@ -1,18 +1,814 @@
 [
   {
-    "slug": "bmw-320d",
-    "dataFile": "bmw-320d"
+    "slug": "1-series-114d",
+    "dataFile": "1-series-114d"
   },
   {
-    "slug": "defender-d250",
-    "dataFile": "defender-d250"
+    "slug": "1-series-114i",
+    "dataFile": "1-series-114i"
   },
   {
-    "slug": "defender-25-diesel",
-    "dataFile": "defender-25-diesel"
+    "slug": "1-series-116d",
+    "dataFile": "1-series-116d"
   },
   {
-    "slug": "discovery-sd4",
-    "dataFile": "discovery-sd4"
+    "slug": "1-series-116i",
+    "dataFile": "1-series-116i"
+  },
+  {
+    "slug": "1-series-118d",
+    "dataFile": "1-series-118d"
+  },
+  {
+    "slug": "1-series-118i",
+    "dataFile": "1-series-118i"
+  },
+  {
+    "slug": "1-series-120",
+    "dataFile": "1-series-120"
+  },
+  {
+    "slug": "1-series-120d",
+    "dataFile": "1-series-120d"
+  },
+  {
+    "slug": "1-series-123d",
+    "dataFile": "1-series-123d"
+  },
+  {
+    "slug": "1-series-125d",
+    "dataFile": "1-series-125d"
+  },
+  {
+    "slug": "1-series-125i",
+    "dataFile": "1-series-125i"
+  },
+  {
+    "slug": "1-series-128ti",
+    "dataFile": "1-series-128ti"
+  },
+  {
+    "slug": "1-series-130i",
+    "dataFile": "1-series-130i"
+  },
+  {
+    "slug": "1-series-135i",
+    "dataFile": "1-series-135i"
+  },
+  {
+    "slug": "1-series-m135i",
+    "dataFile": "1-series-m135i"
+  },
+  {
+    "slug": "2-series-214d",
+    "dataFile": "2-series-214d"
+  },
+  {
+    "slug": "2-series-216d",
+    "dataFile": "2-series-216d"
+  },
+  {
+    "slug": "2-series-216i",
+    "dataFile": "2-series-216i"
+  },
+  {
+    "slug": "2-series-218d",
+    "dataFile": "2-series-218d"
+  },
+  {
+    "slug": "2-series-220d",
+    "dataFile": "2-series-220d"
+  },
+  {
+    "slug": "2-series-220i",
+    "dataFile": "2-series-220i"
+  },
+  {
+    "slug": "2-series-223i",
+    "dataFile": "2-series-223i"
+  },
+  {
+    "slug": "2-series-225xe",
+    "dataFile": "2-series-225xe"
+  },
+  {
+    "slug": "2-series-m235i",
+    "dataFile": "2-series-m235i"
+  },
+  {
+    "slug": "2-series-m240i",
+    "dataFile": "2-series-m240i"
+  },
+  {
+    "slug": "2002-variants",
+    "dataFile": "2002-variants"
+  },
+  {
+    "slug": "3-series-316",
+    "dataFile": "3-series-316"
+  },
+  {
+    "slug": "3-series-316d",
+    "dataFile": "3-series-316d"
+  },
+  {
+    "slug": "3-series-316i",
+    "dataFile": "3-series-316i"
+  },
+  {
+    "slug": "3-series-318d",
+    "dataFile": "3-series-318d"
+  },
+  {
+    "slug": "3-series-318i",
+    "dataFile": "3-series-318i"
+  },
+  {
+    "slug": "3-series-318is",
+    "dataFile": "3-series-318is"
+  },
+  {
+    "slug": "3-series-318ti",
+    "dataFile": "3-series-318ti"
+  },
+  {
+    "slug": "3-series-320d",
+    "dataFile": "3-series-320d"
+  },
+  {
+    "slug": "3-series-320e",
+    "dataFile": "3-series-320e"
+  },
+  {
+    "slug": "3-series-320i",
+    "dataFile": "3-series-320i"
+  },
+  {
+    "slug": "3-series-320si",
+    "dataFile": "3-series-320si"
+  },
+  {
+    "slug": "3-series-323i",
+    "dataFile": "3-series-323i"
+  },
+  {
+    "slug": "3-series-324d",
+    "dataFile": "3-series-324d"
+  },
+  {
+    "slug": "3-series-325d",
+    "dataFile": "3-series-325d"
+  },
+  {
+    "slug": "3-series-325e",
+    "dataFile": "3-series-325e"
+  },
+  {
+    "slug": "3-series-325i",
+    "dataFile": "3-series-325i"
+  },
+  {
+    "slug": "3-series-330d",
+    "dataFile": "3-series-330d"
+  },
+  {
+    "slug": "3-series-330e",
+    "dataFile": "3-series-330e"
+  },
+  {
+    "slug": "3-series-330i",
+    "dataFile": "3-series-330i"
+  },
+  {
+    "slug": "3-series-335d",
+    "dataFile": "3-series-335d"
+  },
+  {
+    "slug": "3-series-340i",
+    "dataFile": "3-series-340i"
+  },
+  {
+    "slug": "3-series-activehybrid-3",
+    "dataFile": "3-series-activehybrid-3"
+  },
+  {
+    "slug": "3-series-m340d",
+    "dataFile": "3-series-m340d"
+  },
+  {
+    "slug": "3-series-m340i",
+    "dataFile": "3-series-m340i"
+  },
+  {
+    "slug": "4-series-418d",
+    "dataFile": "4-series-418d"
+  },
+  {
+    "slug": "4-series-420d",
+    "dataFile": "4-series-420d"
+  },
+  {
+    "slug": "4-series-420i",
+    "dataFile": "4-series-420i"
+  },
+  {
+    "slug": "4-series-425d",
+    "dataFile": "4-series-425d"
+  },
+  {
+    "slug": "4-series-428i",
+    "dataFile": "4-series-428i"
+  },
+  {
+    "slug": "4-series-430d",
+    "dataFile": "4-series-430d"
+  },
+  {
+    "slug": "4-series-430i",
+    "dataFile": "4-series-430i"
+  },
+  {
+    "slug": "4-series-435i",
+    "dataFile": "4-series-435i"
+  },
+  {
+    "slug": "4-series-440i",
+    "dataFile": "4-series-440i"
+  },
+  {
+    "slug": "4-series-m440d",
+    "dataFile": "4-series-m440d"
+  },
+  {
+    "slug": "4-series-m440i",
+    "dataFile": "4-series-m440i"
+  },
+  {
+    "slug": "5-series-518d",
+    "dataFile": "5-series-518d"
+  },
+  {
+    "slug": "5-series-518i",
+    "dataFile": "5-series-518i"
+  },
+  {
+    "slug": "5-series-520d",
+    "dataFile": "5-series-520d"
+  },
+  {
+    "slug": "5-series-520e",
+    "dataFile": "5-series-520e"
+  },
+  {
+    "slug": "5-series-520i",
+    "dataFile": "5-series-520i"
+  },
+  {
+    "slug": "5-series-523i",
+    "dataFile": "5-series-523i"
+  },
+  {
+    "slug": "5-series-525d",
+    "dataFile": "5-series-525d"
+  },
+  {
+    "slug": "5-series-525e",
+    "dataFile": "5-series-525e"
+  },
+  {
+    "slug": "5-series-525i",
+    "dataFile": "5-series-525i"
+  },
+  {
+    "slug": "5-series-525td",
+    "dataFile": "5-series-525td"
+  },
+  {
+    "slug": "5-series-528i",
+    "dataFile": "5-series-528i"
+  },
+  {
+    "slug": "5-series-530d",
+    "dataFile": "5-series-530d"
+  },
+  {
+    "slug": "5-series-530e",
+    "dataFile": "5-series-530e"
+  },
+  {
+    "slug": "5-series-530i",
+    "dataFile": "5-series-530i"
+  },
+  {
+    "slug": "5-series-535i",
+    "dataFile": "5-series-535i"
+  },
+  {
+    "slug": "5-series-540d",
+    "dataFile": "5-series-540d"
+  },
+  {
+    "slug": "5-series-540i",
+    "dataFile": "5-series-540i"
+  },
+  {
+    "slug": "5-series-545e",
+    "dataFile": "5-series-545e"
+  },
+  {
+    "slug": "5-series-545i",
+    "dataFile": "5-series-545i"
+  },
+  {
+    "slug": "5-series-550i",
+    "dataFile": "5-series-550i"
+  },
+  {
+    "slug": "5-series-m550d",
+    "dataFile": "5-series-m550d"
+  },
+  {
+    "slug": "5-series-m550i",
+    "dataFile": "5-series-m550i"
+  },
+  {
+    "slug": "6-series-620d",
+    "dataFile": "6-series-620d"
+  },
+  {
+    "slug": "6-series-628-635csi",
+    "dataFile": "6-series-628-635csi"
+  },
+  {
+    "slug": "6-series-630d",
+    "dataFile": "6-series-630d"
+  },
+  {
+    "slug": "6-series-630i",
+    "dataFile": "6-series-630i"
+  },
+  {
+    "slug": "6-series-640d",
+    "dataFile": "6-series-640d"
+  },
+  {
+    "slug": "6-series-640i",
+    "dataFile": "6-series-640i"
+  },
+  {
+    "slug": "6-series-645ci",
+    "dataFile": "6-series-645ci"
+  },
+  {
+    "slug": "6-series-650i",
+    "dataFile": "6-series-650i"
+  },
+  {
+    "slug": "7-series-725tds",
+    "dataFile": "7-series-725tds"
+  },
+  {
+    "slug": "7-series-728i",
+    "dataFile": "7-series-728i"
+  },
+  {
+    "slug": "7-series-730i",
+    "dataFile": "7-series-730i"
+  },
+  {
+    "slug": "7-series-735i",
+    "dataFile": "7-series-735i"
+  },
+  {
+    "slug": "7-series-740d",
+    "dataFile": "7-series-740d"
+  },
+  {
+    "slug": "7-series-740i",
+    "dataFile": "7-series-740i"
+  },
+  {
+    "slug": "7-series-745e",
+    "dataFile": "7-series-745e"
+  },
+  {
+    "slug": "7-series-745i",
+    "dataFile": "7-series-745i"
+  },
+  {
+    "slug": "7-series-750e",
+    "dataFile": "7-series-750e"
+  },
+  {
+    "slug": "7-series-750i",
+    "dataFile": "7-series-750i"
+  },
+  {
+    "slug": "7-series-760i",
+    "dataFile": "7-series-760i"
+  },
+  {
+    "slug": "8-series-840ci",
+    "dataFile": "8-series-840ci"
+  },
+  {
+    "slug": "8-series-840d",
+    "dataFile": "8-series-840d"
+  },
+  {
+    "slug": "8-series-840i",
+    "dataFile": "8-series-840i"
+  },
+  {
+    "slug": "8-series-850csi",
+    "dataFile": "8-series-850csi"
+  },
+  {
+    "slug": "8-series-m850i",
+    "dataFile": "8-series-m850i"
+  },
+  {
+    "slug": "bmw-1-series-120i",
+    "dataFile": "bmw-1-series-120i"
+  },
+  {
+    "slug": "bmw-1-series-m140i",
+    "dataFile": "bmw-1-series-m140i"
+  },
+  {
+    "slug": "bmw-2-series-218i",
+    "dataFile": "bmw-2-series-218i"
+  },
+  {
+    "slug": "bmw-2-series-230i",
+    "dataFile": "bmw-2-series-230i"
+  },
+  {
+    "slug": "bmw-3-series-318tds",
+    "dataFile": "bmw-3-series-318tds"
+  },
+  {
+    "slug": "bmw-3-series-328i",
+    "dataFile": "bmw-3-series-328i"
+  },
+  {
+    "slug": "bmw-3-series-335i",
+    "dataFile": "bmw-3-series-335i"
+  },
+  {
+    "slug": "bmw-4-series-418i",
+    "dataFile": "bmw-4-series-418i"
+  },
+  {
+    "slug": "bmw-4-series-435d",
+    "dataFile": "bmw-4-series-435d"
+  },
+  {
+    "slug": "bmw-5-series-524td-524d",
+    "dataFile": "bmw-5-series-524td-524d"
+  },
+  {
+    "slug": "bmw-5-series-535d",
+    "dataFile": "bmw-5-series-535d"
+  },
+  {
+    "slug": "bmw-6-series-635d",
+    "dataFile": "bmw-6-series-635d"
+  },
+  {
+    "slug": "bmw-7-series-730d",
+    "dataFile": "bmw-7-series-730d"
+  },
+  {
+    "slug": "bmw-8-series-850i-850ci",
+    "dataFile": "bmw-8-series-850i-850ci"
+  },
+  {
+    "slug": "bmw-x1-23d",
+    "dataFile": "bmw-x1-23d"
+  },
+  {
+    "slug": "bmw-x2-m35i",
+    "dataFile": "bmw-x2-m35i"
+  },
+  {
+    "slug": "bmw-x3-30e",
+    "dataFile": "bmw-x3-30e"
+  },
+  {
+    "slug": "bmw-x3-30i",
+    "dataFile": "bmw-x3-30i"
+  },
+  {
+    "slug": "bmw-x4-30d",
+    "dataFile": "bmw-x4-30d"
+  },
+  {
+    "slug": "bmw-x5-4-6is-4-8is",
+    "dataFile": "bmw-x5-4-6is-4-8is"
+  },
+  {
+    "slug": "bmw-x5-xdrive45e",
+    "dataFile": "bmw-x5-xdrive45e"
+  },
+  {
+    "slug": "bmw-x6-m50d",
+    "dataFile": "bmw-x6-m50d"
+  },
+  {
+    "slug": "bmw-z3-2-0-2-2i",
+    "dataFile": "bmw-z3-2-0-2-2i"
+  },
+  {
+    "slug": "bmw-z4-m40i",
+    "dataFile": "bmw-z4-m40i"
+  },
+  {
+    "slug": "m1-35",
+    "dataFile": "m1-35"
+  },
+  {
+    "slug": "x1-16d",
+    "dataFile": "x1-16d"
+  },
+  {
+    "slug": "x1-18d",
+    "dataFile": "x1-18d"
+  },
+  {
+    "slug": "x1-18i",
+    "dataFile": "x1-18i"
+  },
+  {
+    "slug": "x1-20d",
+    "dataFile": "x1-20d"
+  },
+  {
+    "slug": "x1-20i",
+    "dataFile": "x1-20i"
+  },
+  {
+    "slug": "x1-23i",
+    "dataFile": "x1-23i"
+  },
+  {
+    "slug": "x1-25d",
+    "dataFile": "x1-25d"
+  },
+  {
+    "slug": "x1-25e-30e",
+    "dataFile": "x1-25e-30e"
+  },
+  {
+    "slug": "x1-28i",
+    "dataFile": "x1-28i"
+  },
+  {
+    "slug": "x1-28i-2",
+    "dataFile": "x1-28i-2"
+  },
+  {
+    "slug": "x2-18d",
+    "dataFile": "x2-18d"
+  },
+  {
+    "slug": "x2-18i",
+    "dataFile": "x2-18i"
+  },
+  {
+    "slug": "x2-20d",
+    "dataFile": "x2-20d"
+  },
+  {
+    "slug": "x2-20i",
+    "dataFile": "x2-20i"
+  },
+  {
+    "slug": "x2-xdrive25e",
+    "dataFile": "x2-xdrive25e"
+  },
+  {
+    "slug": "x3-18d",
+    "dataFile": "x3-18d"
+  },
+  {
+    "slug": "x3-20d",
+    "dataFile": "x3-20d"
+  },
+  {
+    "slug": "x3-20d-2",
+    "dataFile": "x3-20d-2"
+  },
+  {
+    "slug": "x3-20i",
+    "dataFile": "x3-20i"
+  },
+  {
+    "slug": "x3-28i",
+    "dataFile": "x3-28i"
+  },
+  {
+    "slug": "x3-30d",
+    "dataFile": "x3-30d"
+  },
+  {
+    "slug": "x3-30d-30sd",
+    "dataFile": "x3-30d-30sd"
+  },
+  {
+    "slug": "x3-30e-xdrive",
+    "dataFile": "x3-30e-xdrive"
+  },
+  {
+    "slug": "x3-35d",
+    "dataFile": "x3-35d"
+  },
+  {
+    "slug": "x3-35i",
+    "dataFile": "x3-35i"
+  },
+  {
+    "slug": "x3-e83-petrol",
+    "dataFile": "x3-e83-petrol"
+  },
+  {
+    "slug": "x3-m40i",
+    "dataFile": "x3-m40i"
+  },
+  {
+    "slug": "x4-20d",
+    "dataFile": "x4-20d"
+  },
+  {
+    "slug": "x4-20i",
+    "dataFile": "x4-20i"
+  },
+  {
+    "slug": "x4-35d",
+    "dataFile": "x4-35d"
+  },
+  {
+    "slug": "x4-m40d",
+    "dataFile": "x4-m40d"
+  },
+  {
+    "slug": "x4-m40i",
+    "dataFile": "x4-m40i"
+  },
+  {
+    "slug": "x5-25d",
+    "dataFile": "x5-25d"
+  },
+  {
+    "slug": "x5-3-0i",
+    "dataFile": "x5-3-0i"
+  },
+  {
+    "slug": "x5-30sd-35d",
+    "dataFile": "x5-30sd-35d"
+  },
+  {
+    "slug": "x5-30si",
+    "dataFile": "x5-30si"
+  },
+  {
+    "slug": "x5-40i",
+    "dataFile": "x5-40i"
+  },
+  {
+    "slug": "x5-44i",
+    "dataFile": "x5-44i"
+  },
+  {
+    "slug": "x5-m50d",
+    "dataFile": "x5-m50d"
+  },
+  {
+    "slug": "x5-m50i-m60i",
+    "dataFile": "x5-m50i-m60i"
+  },
+  {
+    "slug": "x5-x5-m",
+    "dataFile": "x5-x5-m"
+  },
+  {
+    "slug": "x5-xdrive30d",
+    "dataFile": "x5-xdrive30d"
+  },
+  {
+    "slug": "x5-xdrive35i",
+    "dataFile": "x5-xdrive35i"
+  },
+  {
+    "slug": "x5-xdrive40d",
+    "dataFile": "x5-xdrive40d"
+  },
+  {
+    "slug": "x5-xdrive40e",
+    "dataFile": "x5-xdrive40e"
+  },
+  {
+    "slug": "x5-xdrive50e",
+    "dataFile": "x5-xdrive50e"
+  },
+  {
+    "slug": "x5-xdrive50i",
+    "dataFile": "x5-xdrive50i"
+  },
+  {
+    "slug": "x6-35i-40i",
+    "dataFile": "x6-35i-40i"
+  },
+  {
+    "slug": "x6-m50i-m60i",
+    "dataFile": "x6-m50i-m60i"
+  },
+  {
+    "slug": "x6-x6-m",
+    "dataFile": "x6-x6-m"
+  },
+  {
+    "slug": "x6-xdrive30d",
+    "dataFile": "x6-xdrive30d"
+  },
+  {
+    "slug": "x6-xdrive35d-40d",
+    "dataFile": "x6-xdrive35d-40d"
+  },
+  {
+    "slug": "x6-xdrive50i",
+    "dataFile": "x6-xdrive50i"
+  },
+  {
+    "slug": "x7-40i",
+    "dataFile": "x7-40i"
+  },
+  {
+    "slug": "x7-m50d",
+    "dataFile": "x7-m50d"
+  },
+  {
+    "slug": "x7-m50i-m60i",
+    "dataFile": "x7-m50i-m60i"
+  },
+  {
+    "slug": "x7-xdrive30d",
+    "dataFile": "x7-xdrive30d"
+  },
+  {
+    "slug": "x7-xdrive40d",
+    "dataFile": "x7-xdrive40d"
+  },
+  {
+    "slug": "z1-2-5",
+    "dataFile": "z1-2-5"
+  },
+  {
+    "slug": "z3-18-19",
+    "dataFile": "z3-18-19"
+  },
+  {
+    "slug": "z3-28-30i",
+    "dataFile": "z3-28-30i"
+  },
+  {
+    "slug": "z3-z3-m",
+    "dataFile": "z3-z3-m"
+  },
+  {
+    "slug": "z4-18i-20i",
+    "dataFile": "z4-18i-20i"
+  },
+  {
+    "slug": "z4-20i-22i",
+    "dataFile": "z4-20i-22i"
+  },
+  {
+    "slug": "z4-23i",
+    "dataFile": "z4-23i"
+  },
+  {
+    "slug": "z4-25i-25si",
+    "dataFile": "z4-25i-25si"
+  },
+  {
+    "slug": "z4-30i-30si",
+    "dataFile": "z4-30i-30si"
+  },
+  {
+    "slug": "z4-sdrive28i-30i",
+    "dataFile": "z4-sdrive28i-30i"
+  },
+  {
+    "slug": "z4-sdrive35i-35is",
+    "dataFile": "z4-sdrive35i-35is"
+  },
+  {
+    "slug": "z4-z4m",
+    "dataFile": "z4-z4m"
+  },
+  {
+    "slug": "z8-49",
+    "dataFile": "z8-49"
   }
 ]

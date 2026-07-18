@@ -1,0 +1,343 @@
+{
+  "meta": {
+    "slug": "bmw-m3-f80",
+    "title": "BMW M3 F80 Engines — The Complete UK Guide",
+    "titleCharCount": 42,
+    "description": "",
+    "descriptionCharCount": 0,
+    "jsonLd": {}
+  },
+  "internalDeclarations": {
+    "checkA": "",
+    "checkB": "",
+    "authorityModelMode": ""
+  },
+  "hero": {
+    "tagPill": "BMW M3 F80 • Saloon • 2014–2018",
+    "h1": "BMW M3 F80 Engines — The Complete UK Guide",
+    "subHeadline": "Every engine fitted to the fifth-generation M3 F80 — from the standard 431 PS S55 twin-turbo straight-six to the 444 PS Competition Package and the limited-run 460 PS CS. Real UK costs, honest reliability data, and the first turbocharged M3 in history. Backed by genuine UK specialist data for 2025.",
+    "trustStrip": [
+      {
+        "icon": "📊",
+        "label": "F80 Enquiries (2025) — pattern data"
+      },
+      {
+        "icon": "🔧",
+        "label": "Saloon"
+      },
+      {
+        "icon": "📖",
+        "label": "5 Engine Codes"
+      },
+      {
+        "icon": "🏆",
+        "label": "Part of Engine Finders"
+      }
+    ],
+    "primaryCta": {
+      "label": "Explore F80 Engines →",
+      "href": "#"
+    },
+    "dataIntegrityNote": ""
+  },
+  "engineDatabase": {
+    "h2": "BMW M3 F80 Engine Codes — The Complete Database",
+    "subHeadline": "Every engine fitted to the M3 F80 specifically — from the standard S55 to the Competition Package and the limited-run CS.",
+    "columns": [
+      "Engine Code",
+      "Family",
+      "Fuel",
+      "Displacement",
+      "Power",
+      "Years (F80)",
+      "Variants (badges)",
+      "Reliability",
+      "2025 Enquiries",
+      "Avg. Recon Cost"
+    ],
+    "engines": [
+      {
+        "engineCode": "S55B30A",
+        "family": "S55",
+        "fuel": "Petrol",
+        "displacement": "3.0L (2979 cc)",
+        "power": "317 kW (431 PS)",
+        "years": "2014–2016",
+        "variants": "M3",
+        "reliability": "★★★☆☆ [PROVISIONAL — pending dedicated Engine Page]",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£8,000–£12,000 [BMW-QUOTE]"
+      },
+      {
+        "engineCode": "S55B30T0 (Competition)",
+        "family": "S55",
+        "fuel": "Petrol",
+        "displacement": "3.0L (2979 cc)",
+        "power": "331 kW (450 PS)",
+        "years": "2016–2018",
+        "variants": "M3 Competition Package",
+        "reliability": "★★★☆☆ [PROVISIONAL — pending dedicated Engine Page]",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£8,500–£13,000 [BMW-QUOTE]"
+      },
+      {
+        "engineCode": "S55B30T0 (CS)",
+        "family": "S55",
+        "fuel": "Petrol",
+        "displacement": "3.0L (2979 cc)",
+        "power": "338 kW (460 PS)",
+        "years": "2017–2018",
+        "variants": "M3 CS",
+        "reliability": "★★★☆☆ [PROVISIONAL — pending dedicated Engine Page]",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£9,000–£14,000 [BMW-QUOTE]"
+      }
+    ],
+    "confidenceScore": {
+      "title": "",
+      "text": ""
+    },
+    "dataCorrections": []
+  },
+  "overview": {
+    "h2": "BMW M3 F80 — Overview",
+    "intro": "The fifth-generation BMW M3 (codenamed F80) was produced from March 2014 to October 2018, marking a historic departure for the M3 lineage. For the first time, the M3 was offered exclusively as a four-door saloon — the coupé and convertible versions were spun off into the separate M4 model line (F82/F83). Built on the F30 3 Series platform, the F80 M3 was powered by the S55 twin-turbocharged straight-six engine — a 3.0-litre unit with two mono-scroll turbochargers, closed-deck crankcase design, and Valvetronic variable valve lift. This made the F80 the first turbocharged M3 in history. The engine range was offered in three power outputs: 431 PS (standard), 450 PS (Competition Package from 2016), and 460 PS (CS limited edition from 2017). All F80 M3s feature rear-wheel drive, with either a 6-speed manual or 7-speed M Double Clutch Transmission (DCT).",
+    "keyFacts": "Platform: BMW F30 (modified) • Predecessor: BMW M3 E90/E92/E93 • Successor: BMW M3 G80 • Sibling body styles in this generation: F82 M4 Coupé, F83 M4 Convertible.",
+    "marketIntelligenceLine": "The F80 M3 generates steady UK specialist enquiries, concentrated on the standard and Competition Package variants as these turbocharged M cars enter the used performance car market."
+  },
+  "bestWorstEngines": {
+    "items": [
+      {
+        "slot": "Thin-Data Summary",
+        "engine": "",
+        "quote": "Thin-Data Fallback mode — one paragraph: The F80 M3 is powered exclusively by the S55B30A twin-turbo straight-six, offered in three power outputs. The standard 431 PS version (2014–2016) is the most common and represents the purest expression of BMW's first turbocharged M3. The Competition Package (2016–2018) raises output to 450 PS with revised suspension and software — it's widely regarded as the sweet spot in the F80 range. The limited-run CS (2017–2018, 460 PS) is the ultimate F80, with additional power and weight reduction, but only 1,200 units were produced. All S55 engines share the same fundamental architecture — a 3.0-litre twin-turbo straight-six with 550 Nm of torque. The engine is praised for its power delivery and responsiveness, but the S55 has known vulnerabilities: the crank hub can slip under high stress, rod bearing wear is a concern with poor maintenance, and carbon buildup is a common issue on direct-injection engines. For most buyers, the Competition Package offers the best blend of performance, reliability and value.",
+        "whoItsFor": ""
+      }
+    ]
+  },
+  "ownershipEconomics": {
+    "h2": "BMW M3 F80 — Ownership Economics",
+    "columns": [
+      "Engine",
+      "Typical Mileage",
+      "Common Major Failure",
+      "Repair Cost (Specialist)",
+      "Replacement Cost (Recon)",
+      "Ownership Verdict"
+    ],
+    "rows": [
+      {
+        "engine": "S55B30A (431 PS)",
+        "typicalMileage": "40k–80k",
+        "commonMajorFailure": "Crank hub slip, rod bearing wear",
+        "repairCostSpecialist": "£1,500–£3,500",
+        "replacementCostRecon": "£8,000–£12,000",
+        "ownershipVerdict": "Watch Closely — high-performance M engine"
+      },
+      {
+        "engine": "S55B30T0 (450 PS Comp)",
+        "typicalMileage": "40k–80k",
+        "commonMajorFailure": "Crank hub slip, rod bearing wear",
+        "repairCostSpecialist": "£1,500–£3,500",
+        "replacementCostRecon": "£8,500–£13,000",
+        "ownershipVerdict": "Best Buy — the sweet spot in the range"
+      },
+      {
+        "engine": "S55B30T0 (460 PS CS)",
+        "typicalMileage": "30k–60k",
+        "commonMajorFailure": "Crank hub slip, rod bearing wear",
+        "repairCostSpecialist": "£1,500–£3,500",
+        "replacementCostRecon": "£9,000–£14,000",
+        "ownershipVerdict": "Flagship — rare and collectable"
+      }
+    ],
+    "economicsRule": {
+      "title": "The F80 rule",
+      "text": "An £8,000–£12,000 S55 recon against a £25,000–£50,000 F80 M3 sits at 16–48% of the car's value — within our 70% BMW threshold. Even against a high-mileage £20,000 example, the same recon is 40–60% — a significant financial decision but often viable for a car of this calibre. The F80 M3 holds value well; engine replacement can be justified if the car is otherwise excellent. However, the S55's known weaknesses — crank hub and rod bearings — mean preventative maintenance is strongly recommended."
+    },
+    "keyTakeaways": []
+  },
+  "commonProblems": {
+    "problems": [
+      {
+        "id": 1,
+        "title": "S55 Crank Hub Slippage",
+        "affectedModels": "All F80 M3, F82 M4, F87 M2 Competition (S55 engine, 2014–2018).",
+        "typicalFailureMileage": "30,000–80,000 miles (can occur at any mileage).",
+        "rootCause": "The S55 engine has a well-documented weak point in the crank hub design. The crank hub connects the crankshaft to the timing chain and sprocket. Under high torque and stress — especially when modified or tracked — the hub can slip or spin on the crankshaft, causing the timing to go out of sync. This can result in catastrophic engine failure and expensive repairs. The issue is prevalent enough that aftermarket \"crank hub fixes\" are a common upgrade.",
+        "tieredCosts": [
+          {
+            "tier": "Preventative (Repair)",
+            "dealer": "£2,500–£4,000",
+            "specialist": "£1,500–£3,000",
+            "work": "",
+            "note": ""
+          },
+          {
+            "tier": "Catastrophic (Replacement)",
+            "dealer": "£10,000–£15,000",
+            "specialist": "£8,000–£12,000",
+            "work": "",
+            "note": ""
+          }
+        ],
+        "recommendation": "If you own or are buying an F80 M3, consider an aftermarket crank hub upgrade as preventative maintenance — a £1,500–£3,000 investment is cheaper than the £8,000+ replacement that follows a failure. This is especially important if the car has been modified or will be tracked. Many specialists recommend this as the single most important reliability modification for the S55 engine.",
+        "cta": {
+          "label": "Compare S55 engine prices for your F80 M3 →",
+          "href": "#"
+        }
+      },
+      {
+        "id": 2,
+        "title": "S55 Rod Bearing Wear",
+        "affectedModels": "All F80 M3, F82 M4, F87 M2 Competition (S55 engine, 2014–2018).",
+        "typicalFailureMileage": "60,000–100,000 miles.",
+        "rootCause": "While the S55 bottom end is generally more reliable than its predecessor (the S65 V8), rod bearing wear can still be an issue, particularly with extended high-rpm use or poor maintenance intervals. BMW changed the oil pressure mapping for the S55 to mitigate the rod bearing failures seen in the N55, but wear remains a concern. The relatively tight bearing clearances used by BMW are a contributing factor.",
+        "tieredCosts": [
+          {
+            "tier": "Preventative (Repair)",
+            "dealer": "£2,000–£3,500",
+            "specialist": "£1,200–£2,500",
+            "work": "",
+            "note": ""
+          },
+          {
+            "tier": "Catastrophic (Replacement)",
+            "dealer": "£10,000–£15,000",
+            "specialist": "£8,000–£12,000",
+            "work": "",
+            "note": ""
+          }
+        ],
+        "recommendation": "Frequent oil changes with high-quality synthetic oil are essential — many specialists recommend intervals of 5,000 miles rather than BMW's factory schedule. Periodic used-oil analysis (UOA) can help detect metal particles early. For tracked vehicles, preventative rod bearing replacement is strongly recommended.",
+        "cta": {
+          "label": "Compare S55 engine prices for your F80 M3 →",
+          "href": "#"
+        }
+      },
+      {
+        "id": 3,
+        "title": "S55 Turbocharger & Cooling System Issues",
+        "affectedModels": "All F80 M3, F82 M4, F87 M2 Competition (S55 engine, 2014–2018).",
+        "typicalFailureMileage": "40,000–80,000 miles.",
+        "rootCause": "The S55 engine's twin turbos and related cooling components — including the intercooler, charge pipes, and coolant lines — are under significant pressure. Charge pipes, especially the plastic OEM units in early production, can crack under high boost or in extreme temperatures. The factory intercooler has also been known to develop internal cracks, injecting coolant directly into the intake and cylinders. Turbocharger wastegate rattle and fuel injector problems can also lead to performance drops.",
+        "tieredCosts": [
+          {
+            "tier": "Preventative (Repair)",
+            "dealer": "£1,500–£3,000",
+            "specialist": "£800–£2,000",
+            "work": "",
+            "note": ""
+          },
+          {
+            "tier": "Catastrophic (Replacement)",
+            "dealer": "£10,000–£15,000",
+            "specialist": "£8,000–£12,000",
+            "work": "",
+            "note": ""
+          }
+        ],
+        "recommendation": "Replace factory plastic charge pipes with aluminium aftermarket versions to reduce the likelihood of cracking. Keep an eye on coolant levels and ensure your radiator and intercoolers remain unobstructed. If you notice boost warnings or check engine lights, address them promptly.",
+        "cta": {
+          "label": "Compare S55 engine prices for your F80 M3 →",
+          "href": "#"
+        }
+      },
+      {
+        "id": 4,
+        "title": "Driveshaft Recall",
+        "affectedModels": "Certain model years of the F80 M3.",
+        "typicalFailureMileage": "Varies.",
+        "rootCause": "Certain model years of the F80 M3 were subject to BMW recalls for potential driveshaft defects, leading to sudden failure or excessive drivetrain vibrations. This is a serious safety concern, especially if you track your M3.",
+        "tieredCosts": [
+          {
+            "tier": "Preventative (Repair)",
+            "dealer": "Free (if covered by recall)",
+            "specialist": "N/A",
+            "work": "",
+            "note": ""
+          },
+          {
+            "tier": "Catastrophic (Replacement)",
+            "dealer": "N/A",
+            "specialist": "N/A",
+            "work": "",
+            "note": ""
+          }
+        ],
+        "recommendation": "Check with BMW if your specific F80 M3 was affected by the driveshaft recall. This is a free repair if covered and should be addressed immediately.",
+        "cta": {
+          "label": "Check your F80 M3 for recalls →",
+          "href": "#"
+        }
+      }
+    ]
+  },
+  "replacementCosts": {
+    "h2": "F80 Engine Replacement Costs — By Engine and Condition",
+    "columns": [
+      "Variant",
+      "Engine Code",
+      "Used (Supply)",
+      "Reconditioned (Supply)",
+      "Rebuilt (Supply)",
+      "Labour Hours"
+    ],
+    "rows": [
+      {
+        "variant": "M3 (2014–2016)",
+        "engineCode": "S55B30A",
+        "usedSupply": "£5,000–£8,000",
+        "reconditionedSupply": "£8,000–£12,000",
+        "rebuiltSupply": "£10,000–£15,000",
+        "labourHours": "16–22 hrs"
+      },
+      {
+        "variant": "M3 Competition (2016–2018)",
+        "engineCode": "S55B30T0",
+        "usedSupply": "£5,500–£8,500",
+        "reconditionedSupply": "£8,500–£13,000",
+        "rebuiltSupply": "£11,000–£16,000",
+        "labourHours": "16–22 hrs"
+      },
+      {
+        "variant": "M3 CS (2017–2018)",
+        "engineCode": "S55B30T0",
+        "usedSupply": "£6,000–£9,000",
+        "reconditionedSupply": "£9,000–£14,000",
+        "rebuiltSupply": "£12,000–£18,000",
+        "labourHours": "16–22 hrs"
+      }
+    ],
+    "note": "No Generation variance from the Engine Page baseline — no dedicated Engine Page exists for the S55 family yet, so baseline figures are drawn from the EM_Proprietary_Data Table A. Labour hours estimated at 16–22 hours for the S55 engine due to the complexity of the twin-turbo setup and engine bay packaging. The S55 is a high-performance engine requiring specialist tools and expertise."
+  },
+  "coreVariants": {
+    "dieselVariants": [],
+    "petrolVariants": [
+      "M3",
+      "M3 Competition Package",
+      "M3 CS"
+    ],
+    "scopeNote": "All variants listed are M3 F80 only. The M3 was produced 2014–2016 with 431 PS; the Competition Package was introduced in 2016 with 450 PS and revised suspension; the CS limited edition (1,200 units) was produced 2017–2018 with 460 PS. The F82 M4 Coupé and F83 M4 Convertible are separate models and covered on their own Generation Pages. There is no diesel or hybrid variant for the F80 M3."
+  },
+  "marketIntelligence": {
+    "mostRequestedEngines": [],
+    "mostRequestedVariants": [],
+    "averageReplacementCost": "",
+    "mostCommonFailures": [],
+    "liveFeed": []
+  },
+  "faq": {
+    "items": []
+  },
+  "trustCta": {
+    "h2": "",
+    "trustPoints": [],
+    "finalCta": "",
+    "ctaButton": {
+      "label": "",
+      "href": "#",
+      "note": ""
+    }
+  }
+}

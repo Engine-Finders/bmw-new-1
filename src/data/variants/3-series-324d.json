@@ -1,0 +1,511 @@
+{
+  "meta": {
+    "slug": "3-series-324d",
+    "title": "324d / 324td Engine Cost UK — Compare Quotes",
+    "titleCharCount": 56,
+    "description": "BMW 324d and 324td – M21 diesel engines. Real UK costs, timing belt and cylinder head facts, and specialist quotes. Get free prices from 20+ vetted specialists today.",
+    "descriptionCharCount": 158,
+    "canonical": "https://bmwengine.uk/3-series/324d/",
+    "openGraph": {
+      "title": "324d / 324td Engine Cost UK — Compare Quotes",
+      "description": "BMW 324d and 324td – M21 diesel engines. Real UK costs, timing belt and cylinder head facts, and specialist quotes. Get free prices from 20+ vetted specialists today.",
+      "type": "website",
+      "url": "https://bmwengine.uk/3-series/324d/",
+      "image": "https://bmwengine.uk/images/bmw/hero/324d.jpg",
+      "siteName": "BMWEngines.uk"
+    },
+    "twitter": {
+      "card": "summary_large_image",
+      "title": "324d / 324td Engine Cost UK — Compare Quotes",
+      "description": "BMW 324d and 324td – M21 diesel engines. Real UK costs, timing belt and cylinder head facts, and specialist quotes.",
+      "image": "https://bmwengine.uk/images/bmw/hero/324d.jpg"
+    },
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://bmwengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "3 Series",
+              "item": "https://bmwengine.uk/3-series/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "324d / 324td",
+              "item": "https://bmwengine.uk/3-series/324d/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "BMW 324d / 324td Engine Era Map",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "E30 324d (M21D24, 1985-1990)",
+              "url": "https://bmwengine.uk/3-series/e30/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "E30 324td (M21D24 Turbo, 1987-1993)",
+              "url": "https://bmwengine.uk/3-series/e30/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "BMW 324d / 324td Engine Codes",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "M21D24",
+              "url": "https://bmwengine.uk/engines/m21/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "M21D24 Turbo",
+              "url": "https://bmwengine.uk/engines/m21-turbo/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does a BMW 324d or 324td engine replacement cost in the UK?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A reconditioned M21 engine typically costs £800–£2,500 supply only depending on which variant (naturally aspirated or turbocharged), with used units available from £500–£1,200. Fitting adds £700–£1,500. Use our calculator for a figure specific to your car. These engines are increasingly rare."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the BMW 324d / 324td engine reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The naturally aspirated M21 in the 324d has a reputation for sturdiness and reliability. The turbocharged M21 in the 324td is less reliable — it suffers from cylinder head cracking and early electronic injection pump issues. Both engines require regular timing belt changes at 40,000-mile intervals — a snapped belt is catastrophic."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What are the common problems with the BMW 324d and 324td?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "324d: timing belt failure (requires regular replacement). 324td: cylinder head cracking (the defining issue), timing belt failure, and early electronic injection pump failure (DDE system). The 324td's cylinder head is the single biggest concern."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is it worth replacing a BMW 324d / 324td engine, or should I scrap the car?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "These cars are rare and increasingly valuable — the 324td had the lowest production figures of any factory E30, with only around 27,000 units made. A well-kept example is worth £5,000–£15,000+ depending on condition. A £1,500–£2,500 recon is only 15–30% of the car's value — well within the 70% BMW threshold. Replacement is almost always worthwhile on a cherished example."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I find my BMW 324d / 324td engine code?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The engine code is M21D24 — both variants share the same core engine. The naturally aspirated version is fitted to the 324d (1985–1990); the turbocharged version is fitted to the 324td (1987–1993). The 324td was never officially sold in the UK, so most UK cars are private imports."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I repair the M21 timing belt, or does it need replacement?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The timing belt must be replaced — it's a wear item. Replacement interval is 40,000 miles or 6 years. If the belt snaps, the engine is typically destroyed. A preventative belt replacement (£300–£600) is far cheaper than a full engine replacement (£800–£2,500+). At the first sign of ticking from the front of the engine, book an inspection immediately."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "BMWEngines.uk",
+          "url": "https://bmwengine.uk/",
+          "logo": "https://bmwengine.uk/images/bmwengines-logo.png",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "BMW 324d / 324td Engine Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "500",
+            "highPrice": "3000",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "name": "BMW 324d / 324td UK Engine Enquiry Data 2025",
+          "description": "Proprietary UK enquiry volumes and demand trends for BMW 324d and 324td engines (M21), sourced from BMWEngines.uk's specialist marketplace activity.",
+          "creator": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk"
+          },
+          "temporalCoverage": "2025",
+          "spatialCoverage": "United Kingdom"
+        },
+        {
+          "@type": "WebPage",
+          "name": "324d / 324td Engine Cost UK — Compare Quotes",
+          "url": "https://bmwengine.uk/3-series/324d/",
+          "author": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk Specialist Network"
+          },
+          "datePublished": "2026-07-11",
+          "dateModified": "2026-07-11"
+        }
+      ]
+    }
+  },
+  "hero": {
+    "tagPill": "BMW 3 Series 324d / 324td • 1985–1993 • 2.4-litre M21 Diesel",
+    "h1": "BMW 324d / 324td Engine Replacement — Compare Prices & Get Quotes",
+    "subHeadline": "The 324d and 324td are rare E30 diesels powered by BMW's first diesel engine — the M21. The naturally aspirated 324d is slow but frugal; the turbocharged 324td is quicker but suffers from cylinder head and injection pump issues. Get quotes from UK specialists for reconditioned, rebuilt and used units today.",
+    "trustBadges": [
+      "🔧 Supply & Fit Available",
+      "✅ 12-Month Warranty",
+      "🚚 Nationwide Delivery",
+      "👥 20+ Specialists"
+    ],
+    "priceAnchor": "BMW 324d / 324td Engines — from £500 to £3,000 · Common codes: M21D24, M21D24 Turbo",
+    "registrationInput": {
+      "flag": "🇬🇧 GB",
+      "placeholder": "Enter your reg — e.g. AB12 CDE",
+      "cta": {
+        "label": "See BMW 324d / 324td Engine Options →",
+        "href": "#"
+      }
+    },
+    "ticker": "● Instant Quotes · No Obligation · 100% Free · Reconditioned · Rebuilt · Used · Supply & Fit Available · UK-Wide Network"
+  },
+  "eraMap": {
+    "title": "The 324d / 324td THROUGH TIME — Era Map",
+    "columns": [
+      "Generation",
+      "Years",
+      "Engine Code",
+      "Reliability",
+      "Recon Cost",
+      "Era Note"
+    ],
+    "rows": [],
+    "sourceNote": "",
+    "dataNote": ""
+  },
+  "replacementCosts": {
+    "h2": "BMW 324d / 324td Engine Replacement Costs",
+    "columns": [
+      "Engine Type",
+      "Supply Only",
+      "Fitted (Indie)",
+      "Warranty",
+      "Best For"
+    ],
+    "rows": [
+      {
+        "engineType": "Used Engine",
+        "supplyOnly": "£500–£1,200",
+        "fittedIndie": "£1,200–£2,200",
+        "warranty": "1–6 months",
+        "bestFor": "Budget priority; M21 engines are scarce"
+      },
+      {
+        "engineType": "Reconditioned Engine",
+        "supplyOnly": "£800–£1,800",
+        "fittedIndie": "£1,800–£3,000",
+        "warranty": "12–24 months",
+        "bestFor": "Most owners — best cost/warranty balance"
+      },
+      {
+        "engineType": "Rebuilt Engine",
+        "supplyOnly": "£1,500–£3,000",
+        "fittedIndie": "£2,500–£4,500",
+        "warranty": "12–24 months",
+        "bestFor": "Long-term ownership; 3+ year horizon"
+      },
+      {
+        "engineType": "Main Dealer New",
+        "supplyOnly": "N/A — no longer available",
+        "fittedIndie": "N/A",
+        "warranty": "—",
+        "bestFor": "N/A — specialist rebuild only"
+      }
+    ],
+    "figuresNote": "Figures above reflect the current market for the rare E30 324d/324td. The naturally aspirated M21 typically sits at the lower end; the turbocharged M21 commands a premium. These engines are increasingly scarce — reconditioned units are hard to find.",
+    "labourEstimate": "Fitting an M21 engine typically takes 10–14 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer).",
+    "cta": {
+      "label": "→ Compare 324d / 324td engine prices from UK specialists",
+      "href": "#"
+    }
+  },
+  "commonProblems": {
+    "problems": [
+      {
+        "id": 1,
+        "title": "Timing Belt Failure (Both Engines)",
+        "symptoms": "Engine stops suddenly, ticking from the front of the engine, complete loss of power, catastrophic engine failure",
+        "typicalMileage": "40,000–60,000 miles (belt interval)",
+        "repairCost": "£300–£600 (preventative timing belt replacement)",
+        "replacementCost": "£800–£2,500 (if belt snaps — piston-valve contact)",
+        "urgency": {
+          "icon": "🔴",
+          "label": "Immediate",
+          "text": "if the belt fails, the engine stops instantly and internal damage is highly likely"
+        },
+        "recommendation": "Like the M20 petrol engine it's based on, the M21 uses a timing belt — not a chain. BMW recommends replacement every 40,000 miles or 6 years. A snapped timing belt on this interference engine means valve and piston damage — effectively an engine replacement. If you're buying an M21-engined E30, demand proof of timing belt replacement. Budget for it immediately if there's no evidence. These engines are becoming rare — a snapped belt can write off the car.",
+        "failureLink": {
+          "label": "Read the full timing belt failure guide",
+          "href": "/failures/timing-belt-failure/"
+        }
+      },
+      {
+        "id": 2,
+        "title": "Cylinder Head Cracks (324td Turbo)",
+        "symptoms": "Coolant loss with no visible external leak, white smoke from exhaust, overheating, pressurised cooling system, misfire on cold start, oil in coolant",
+        "typicalMileage": "80,000–150,000 miles",
+        "repairCost": "£800–£1,800 (cylinder head replacement or welding)",
+        "replacementCost": "£1,200–£2,500 (if overheating causes bottom-end damage)",
+        "urgency": {
+          "icon": "🔴",
+          "label": "Immediate",
+          "text": "any overheating or coolant loss on a 324td requires immediate investigation"
+        },
+        "recommendation": "The 324td's M21 turbo engine is notorious for cylinder head cracking. The turbocharged engine runs hotter than the naturally aspirated version, and the cylinder head is a known weak point. German sources describe the issue as \"Kopfrisse, Kopfrisse, Kopfrisse\" — head cracks, head cracks, head cracks. If you're buying a 324td, have the cylinder head inspected by a specialist. A cracked head can be welded or replaced, but it's an expensive job. Regular cooling system maintenance and avoiding overheating are essential.",
+        "failureLink": {
+          "label": "Read the full cylinder head failure guide",
+          "href": "/failures/cylinder-head-crack/"
+        }
+      },
+      {
+        "id": 3,
+        "title": "Injection Pump Failure (324td)",
+        "symptoms": "Hard starting, rough idle, loss of power, black smoke, engine warning light, engine won't start",
+        "typicalMileage": "100,000–200,000 miles",
+        "repairCost": "£500–£1,200 (injection pump rebuild or replacement)",
+        "replacementCost": "N/A — repair only",
+        "urgency": {
+          "icon": "🟡",
+          "label": "Monitor",
+          "text": "book inspection soon"
+        },
+        "recommendation": "The 324td uses one of the first digital diesel injection pumps (DDE — Digital Diesel Electronics) in a passenger car. This early electronic injection pump is a known weak point — if it fails, the car simply won't run. Some owners convert to a mechanical pump from the earlier 524td to avoid the electronic pump's complexity. If you experience hard starting or rough running on a 324td, have the injection pump diagnosed by a specialist. Rebuilding or replacing the pump is expensive but far cheaper than scrapping a rare car.",
+        "failureLink": {
+          "label": "Read the full injection pump failure guide",
+          "href": "/failures/injection-pump-failure/"
+        }
+      }
+    ]
+  },
+  "quotesCta": {
+    "headline": "Weighing Your Options? Compare Specialist Quotes When You're Ready →",
+    "supportingLine": "20+ vetted BMW specialists, every 3 Series engine era covered, with a 12-month warranty as standard.",
+    "button": {
+      "label": "See BMW 324d / 324td Engine Options →",
+      "href": "#"
+    }
+  },
+  "repairBuyOrReplace": {
+    "h2": "324d / 324td — Repair, Buy, or Replace?",
+    "canItBeRepaired": {
+      "title": "Can It Be Repaired?",
+      "columns": [
+        "Problem",
+        "Repairable?",
+        "Typical Cost",
+        "When It Makes Sense"
+      ],
+      "rows": [
+        {
+          "problem": "Timing belt (preventative, both)",
+          "repairable": "✅ Yes",
+          "typicalCost": "£300–£600",
+          "whenItMakesSense": "Standard maintenance — the most important investment in any M21"
+        },
+        {
+          "problem": "Timing belt failure (engine damage)",
+          "repairable": "❌ Usually No",
+          "typicalCost": "Engine replacement",
+          "whenItMakesSense": "If belt snaps, valves hit pistons — replacement is the only option"
+        },
+        {
+          "problem": "Cylinder head crack (324td)",
+          "repairable": "✅ Yes",
+          "typicalCost": "£800–£1,800",
+          "whenItMakesSense": "Welding or replacement — expensive but viable on a rare car"
+        },
+        {
+          "problem": "Overheating damage (324td)",
+          "repairable": "⚠️ Sometimes",
+          "typicalCost": "£1,200–£2,500",
+          "whenItMakesSense": "Viable on a cherished example; borderline if other issues exist"
+        },
+        {
+          "problem": "Injection pump failure (324td)",
+          "repairable": "✅ Yes",
+          "typicalCost": "£500–£1,200",
+          "whenItMakesSense": "Specialist rebuild or replacement — far cheaper than scrapping the car"
+        },
+        {
+          "problem": "Fuel system issues (both)",
+          "repairable": "✅ Yes",
+          "typicalCost": "£200–£800",
+          "whenItMakesSense": "Well-understood by diesel specialists — catch before pump damage"
+        }
+      ]
+    },
+    "buyingChecks": {
+      "title": "Buying This 324d / 324td? Check These First",
+      "buyIf": [
+        "* Documented timing belt replacement within the last 40,000 miles or 6 years — the single most important check on the M21",
+        "* 324td with proof of cylinder head work — evidence of the head being checked, welded or replaced",
+        "* Full service history with regular oil changes — the M21 is robust but ageing",
+        "* A well-maintained example — these cars are rare and increasingly valuable"
+      ],
+      "avoidIf": [
+        "* No proof of timing belt replacement — budget for it immediately or walk away",
+        "* 324td with any signs of coolant loss or overheating — cylinder head cracks are likely",
+        "* 324td with hard starting or rough running — injection pump issues are expensive",
+        "* Poor service history or evidence of neglect — these engines are unforgiving"
+      ]
+    },
+    "closingVerdict": "The M21 is BMW's first diesel engine — a robust, simple straight-six based on the M20. The naturally aspirated 324d is slow but reliable, capable of 40+ mpg and extremely high mileages with basic maintenance. The turbocharged 324td is quicker but has known weaknesses: cylinder head cracks and early electronic injection pump issues. Both engines are rare in the UK — they were never officially sold here. If you find one, buy on history, not on price. A well-maintained 324d is a dependable classic; a neglected 324td is a money pit.",
+    "cta": {
+      "label": "→ Compare 324d / 324td engine prices before you buy",
+      "href": "#"
+    }
+  },
+  "buyingChecklist": {
+    "intro": "Before you buy a used BMW 324d or 324td (or before you commit to an engine replacement), check these:",
+    "items": [
+      "1. Timing Belt History — Has it been changed within the last 40,000 miles or 6 years? This is the single most critical check on the M21",
+      "2. Coolant Condition — Any signs of oil in the coolant or coolant loss? (cylinder head crack warning on 324td)",
+      "3. Cold Start — Does it start cleanly from cold? Any excessive smoke or hard starting? (injection pump or glow plug warning)",
+      "4. Overheating History — Any evidence of overheating in the service history? (324td cylinder head warning)",
+      "5. Oil Condition — Any signs of coolant contamination in the oil? (milky appearance — head gasket or crack)",
+      "6. Smoke — Black smoke under acceleration? (injection pump or turbo issues on 324td)",
+      "7. Engine Warning Light — Have codes been read? (DDE system on 324td — specialist required)",
+      "8. MOT History — Check for emissions-related failures (injection pump or EGR issues on 324td)"
+    ]
+  },
+  "engineCodes": {
+    "columns": [
+      "Engine Code",
+      "Years",
+      "Power",
+      "2025 Enquiries",
+      "Avg. Recon Cost"
+    ],
+    "rows": [
+      {
+        "engineCode": "M21D24 (naturally aspirated)",
+        "years": "1985–1990",
+        "power": "84 hp",
+        "enquiries": "[PATTERN DATA]",
+        "avgReconCost": "£800–£1,500 [BMW-QUOTE]"
+      },
+      {
+        "engineCode": "M21D24 Turbo",
+        "years": "1987–1993",
+        "power": "115 hp",
+        "enquiries": "[PATTERN DATA]",
+        "avgReconCost": "£1,200–£2,500 [BMW-QUOTE]"
+      }
+    ],
+    "matchNote": "This table's rows match Section 1B's Era Map exactly — two engine variants across the 324d/324td's production run.",
+    "technicalSpecs": {
+      "title": "Technical Specs (M21D24 — both variants):",
+      "items": [
+        {
+          "label": "* Displacement",
+          "value": "2,443cc (2.4-litre)"
+        },
+        {
+          "label": "* Cylinders",
+          "value": "Straight-6"
+        },
+        {
+          "label": "* Compression Ratio",
+          "value": "22.0:1"
+        },
+        {
+          "label": "* Fuel System",
+          "value": "Swirl chamber injection, distributor injection pump"
+        },
+        {
+          "label": "* Turbocharger",
+          "value": "Garrett T03 (324td only)"
+        },
+        {
+          "label": "* Valvetrain",
+          "value": "SOHC, 2 valves per cylinder, timing belt"
+        }
+      ]
+    },
+    "cta": {
+      "label": "→ Compare 324d / 324td engine prices for your BMW",
+      "href": "#"
+    }
+  },
+  "marketIntelligence": {
+    "items": []
+  },
+  "faq": {
+    "items": [],
+    "disclaimer": ""
+  },
+  "trustCta": {
+    "h2": "",
+    "trustPoints": [
+      {
+        "title": "Trusted M21 Engine Suppliers",
+        "text": "every garage and engine rebuilder in our network is vetted, rated and reviewed by real 324d and 324td owners, as part of the Engine Finders network, across both naturally aspirated and turbocharged variants — no matter which rare E30 diesel you own."
+      },
+      {
+        "title": "Compare 324d / 324td Engine Replacement Companies",
+        "text": "see prices, warranty terms and supply & fit options side‑by‑side before you commit, with specialists who genuinely understand the M21's timing belt, cylinder head, and injection pump nuances."
+      },
+      {
+        "title": "UK Engine Replacement Services for 324d / 324td",
+        "text": "supply‑only or full supply & fit available nationwide, covering BMW's first diesel engine with a 12‑month warranty as standard."
+      }
+    ],
+    "finalCta": "Find the best BMW 324d or 324td engine replacement UK owners trust. Compare prices from trusted specialists on EnginesMarket today and keep this rare E30 diesel on the road.",
+    "ctaButton": {
+      "label": "Explore BMW 324d / 324td Engine Quotes →",
+      "href": "#"
+    }
+  }
+}

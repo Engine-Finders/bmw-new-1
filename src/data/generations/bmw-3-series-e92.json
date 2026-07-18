@@ -1,0 +1,590 @@
+{
+  "meta": {
+    "slug": "bmw-3-series-e92",
+    "title": "BMW 3 Series E92 Engines — The Complete UK Guide",
+    "titleCharCount": 48,
+    "description": "",
+    "descriptionCharCount": 0,
+    "jsonLd": {}
+  },
+  "internalDeclarations": {
+    "checkA": "",
+    "checkB": "",
+    "authorityModelMode": ""
+  },
+  "hero": {
+    "tagPill": "BMW 3 Series E92 • Coupé • 2006–2013",
+    "h1": "BMW 3 Series E92 Engines — The Complete UK Guide",
+    "subHeadline": "Every engine fitted to the E92 Coupé — from the 2.0-litre four-cylinder N43 to the twin-turbo N54 and the 4.0-litre S65 V8 that powered the M3. Real UK costs and honest reliability data for the 3 Series that defined a generation. Backed by 256+ real UK E90-family enquiries in 2025 [BMW-VERIFIED].",
+    "trustStrip": [
+      {
+        "icon": "📊",
+        "label": "256+ E92 Enquiries (2025) [BMW-VERIFIED]"
+      },
+      {
+        "icon": "🔧",
+        "label": "Coupé"
+      },
+      {
+        "icon": "📖",
+        "label": "10+ Engine Families"
+      },
+      {
+        "icon": "🏆",
+        "label": "Part of Engine Finders"
+      }
+    ],
+    "primaryCta": {
+      "label": "Explore E92 Engines →",
+      "href": "#"
+    },
+    "dataIntegrityNote": ""
+  },
+  "engineDatabase": {
+    "h2": "BMW 3 Series E92 Engine Codes — The Complete Database",
+    "subHeadline": "Every engine fitted to the E92 Coupé specifically — spanning naturally aspirated fours and sixes, turbocharged petrols, diesel sixes, and the legendary S65 V8.",
+    "columns": [
+      "Engine Code",
+      "Family",
+      "Fuel",
+      "Displacement",
+      "Power",
+      "Years (E92)",
+      "Variants (badges)",
+      "Reliability",
+      "2025 Enquiries",
+      "Avg. Recon Cost"
+    ],
+    "engines": [
+      {
+        "engineCode": "N43B20",
+        "family": "N43",
+        "fuel": "Petrol",
+        "displacement": "2.0L (1995cc)",
+        "power": "143–170 bhp",
+        "years": "2007–2013",
+        "variants": "318i, 320i",
+        "reliability": "★★★☆☆ [PROVISIONAL — pending dedicated Engine Page]",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£2,000–£3,800 [BMW-QUOTE]"
+      },
+      {
+        "engineCode": "N45B20",
+        "family": "N45",
+        "fuel": "Petrol",
+        "displacement": "2.0L (1997cc)",
+        "power": "170 bhp",
+        "years": "2006–2012",
+        "variants": "320si",
+        "reliability": "★★★☆☆ [PROVISIONAL — pending dedicated Engine Page]",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£2,000–£4,000 [BMW-QUOTE]"
+      },
+      {
+        "engineCode": "N46B20",
+        "family": "N46",
+        "fuel": "Petrol",
+        "displacement": "2.0L (1995cc)",
+        "power": "129–143 bhp",
+        "years": "2006–2010",
+        "variants": "318i",
+        "reliability": "★★★☆☆ [PROVISIONAL — pending dedicated Engine Page]",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£1,800–£3,500 [BMW-QUOTE]"
+      },
+      {
+        "engineCode": "N52B25/30",
+        "family": "N52",
+        "fuel": "Petrol",
+        "displacement": "2.5–3.0L",
+        "power": "174–230 bhp",
+        "years": "2006–2010",
+        "variants": "323i, 325i, 328i, 330i",
+        "reliability": "★★★★☆ [PROVISIONAL — pending dedicated Engine Page]",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£2,500–£5,000 [BMW-QUOTE]"
+      },
+      {
+        "engineCode": "N53B30",
+        "family": "N53",
+        "fuel": "Petrol",
+        "displacement": "3.0L (2996cc)",
+        "power": "218–272 bhp",
+        "years": "2007–2013",
+        "variants": "325i, 330i (post-2007 European)",
+        "reliability": "★★★☆☆ [PROVISIONAL — pending dedicated Engine Page]",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£2,800–£5,500 [BMW-QUOTE]"
+      },
+      {
+        "engineCode": "N54B30",
+        "family": "N54",
+        "fuel": "Petrol, twin-turbo",
+        "displacement": "3.0L (2979cc)",
+        "power": "306–326 bhp",
+        "years": "2006–2010",
+        "variants": "335i, 335is",
+        "reliability": "★★★☆☆ [PROVISIONAL — pending dedicated Engine Page]",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£3,500–£6,500 [BMW-QUOTE]"
+      },
+      {
+        "engineCode": "N55B30",
+        "family": "N55",
+        "fuel": "Petrol, single-turbo",
+        "displacement": "3.0L (2979cc)",
+        "power": "306–320 bhp",
+        "years": "2010–2013",
+        "variants": "335i",
+        "reliability": "★★★★☆ [PROVISIONAL — pending dedicated Engine Page]",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£3,800–£6,500 [BMW-QUOTE]"
+      },
+      {
+        "engineCode": "S65B40",
+        "family": "S65",
+        "fuel": "Petrol, naturally aspirated V8",
+        "displacement": "4.0L (3999cc)",
+        "power": "414 bhp (420 PS)",
+        "years": "2008–2013",
+        "variants": "M3",
+        "reliability": "★★★★☆ [PROVISIONAL — pending dedicated Engine Page]",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£8,000–£14,000 [BMW-QUOTE]"
+      },
+      {
+        "engineCode": "N47D20",
+        "family": "N47",
+        "fuel": "Diesel",
+        "displacement": "2.0L (1995cc)",
+        "power": "143–184 bhp",
+        "years": "2007–2013",
+        "variants": "318d, 320d",
+        "reliability": "★★★☆☆ [PROVISIONAL — pending dedicated Engine Page]",
+        "enquiries": "1,450 [BMW-VERIFIED]",
+        "avgReconCost": "£3,200–£5,500 [BMW-QUOTE]"
+      },
+      {
+        "engineCode": "M57D30",
+        "family": "M57",
+        "fuel": "Diesel",
+        "displacement": "3.0L (2993cc)",
+        "power": "197–231 bhp",
+        "years": "2006–2008",
+        "variants": "325d, 330d",
+        "reliability": "★★★★☆ [PROVISIONAL — pending dedicated Engine Page]",
+        "enquiries": "830 [BMW-VERIFIED]",
+        "avgReconCost": "£4,500–£7,000 [BMW-QUOTE]"
+      },
+      {
+        "engineCode": "N57D30",
+        "family": "N57",
+        "fuel": "Diesel",
+        "displacement": "3.0L (2993cc)",
+        "power": "204–286 bhp",
+        "years": "2008–2013",
+        "variants": "325d, 330d, 335d",
+        "reliability": "★★★★☆ [PROVISIONAL — pending dedicated Engine Page]",
+        "enquiries": "830 [BMW-VERIFIED]",
+        "avgReconCost": "£4,800–£7,500 [BMW-QUOTE]"
+      }
+    ],
+    "confidenceScore": {
+      "title": "How confident are these ratings?",
+      "text": "All ratings are [PROVISIONAL] pending dedicated Engine Pages. The N52 naturally aspirated six is widely regarded as one of BMW's most reliable engines. The N54 twin-turbo offers enormous tuning potential but carries HPFP and injector risks. The N55, which replaced the N54 from 2010 onward, is more reliable. The S65 V8 in the M3 is a high-revving masterpiece but expensive to maintain. The N47 diesel carries the infamous timing chain risk, while the M57 and N57 diesel sixes are more robust."
+    },
+    "dataCorrections": []
+  },
+  "overview": {
+    "h2": "BMW 3 Series E92 — Overview",
+    "intro": "The E92 is the coupé body of BMW's fifth-generation 3 Series, introduced in September 2006 as a two-door companion to the E90 saloon. It shared the platform and most engines with the saloon but featured a lower, sleeker roofline and a wider track — a visual and dynamic step up from the E46 coupé it replaced. The E92 335i was a landmark model: the first 3 Series to feature a turbocharged petrol engine, the N54 twin-turbo straight-six. A March 2010 facelift (LCI) brought new engines including the N55 single-turbo six and the N57 diesel range. The E92 M3, introduced in 2008, remains the only M3 ever powered by a V8 — the high-revving S65. E92 production ended in June 2013, succeeded by the F32 4 Series.",
+    "keyFacts": "Platform: BMW E9x (L2 platform) • Predecessor: E46 Coupé • Successor: F32 4 Series • Sibling body styles in this generation: E90 Saloon, E91 Touring, E93 Convertible.",
+    "marketIntelligenceLine": "The E92 Coupé generated 256+ real UK engine enquiries in 2025 [BMW-VERIFIED], concentrated on the 320d diesel and 335i petrol as the range reaches affordable enthusiast territory."
+  },
+  "bestWorstEngines": {
+    "items": [
+      {
+        "slot": "Best Petrol Overall",
+        "engine": "N52B30 (330i, 3.0L naturally aspirated, 268 bhp)",
+        "quote": "Widely regarded as one of BMW's most reliable engines — no turbos, no HPFP, just smooth, linear six-cylinder power with VANOS and Valvetronic as the only real wear items. The N52 is the engine that made BMW's reputation for naturally aspirated sixes.",
+        "whoItsFor": "enthusiasts who want the last of BMW's great naturally aspirated straight-sixes."
+      },
+      {
+        "slot": "Best Diesel Overall",
+        "engine": "M57D30 (pre-LCI 330d, 3.0L, 231 bhp)",
+        "quote": "Cast-iron block, no rear-mounted timing chain to worry about, and a documented reputation for exceeding 300,000 miles with routine servicing. Thermostat housings and swirl flaps are its only real demands.",
+        "whoItsFor": "buyers who want bulletproof diesel-six motoring."
+      },
+      {
+        "slot": "Highest Risk",
+        "engine": "N47D20 (pre-2013 318d/320d, 2.0L diesel)",
+        "quote": "The rear-mounted timing chain is the defining risk of the N47 — cold-start rattle is the warning, and a snapped chain means full replacement. The N47 remains the biggest single risk in the E92 range.",
+        "whoItsFor": "buyers on a budget who must have documented chain-replacement history."
+      },
+      {
+        "slot": "Most Expensive Failure",
+        "engine": "N54B30 (335i, twin-turbo, 306 bhp)",
+        "quote": "HPFP failure leads to long cranks and limp mode; injector issues and turbo wastegate rattle often follow. The N54 is a tuner's dream but a wallet's nightmare without meticulous maintenance.",
+        "whoItsFor": "335i buyers with deep pockets and full service history."
+      },
+      {
+        "slot": "Best Value",
+        "engine": "N57D30 (post-LCI 330d, 3.0L, 245 bhp)",
+        "quote": "Genuinely improved over the M57 on economy and refinement, with the single-turbo N57 avoiding the twin-turbo risks of later 335d variants. The sweet spot of the E92 diesel range.",
+        "whoItsFor": "buyers who want modern diesel-six efficiency without the N47's timing chain anxiety."
+      },
+      {
+        "slot": "Most Overlooked",
+        "engine": "S65B40 (M3, 4.0L V8, 414 bhp)",
+        "quote": "The only V8 ever fitted to an M3 — high-revving, sonorous, and utterly addictive. Rod bearings are the known weak point, but the E9x M3 is a future classic. For many, it's the ultimate E92.",
+        "whoItsFor": "collectors and enthusiasts who want the pinnacle of the E92 range."
+      }
+    ]
+  },
+  "ownershipEconomics": {
+    "h2": "BMW 3 Series E92 — Ownership Economics",
+    "columns": [
+      "Engine",
+      "Typical Mileage",
+      "Common Major Failure",
+      "Repair Cost (Specialist)",
+      "Replacement Cost (Recon)",
+      "Ownership Verdict"
+    ],
+    "rows": [
+      {
+        "engine": "N43/N45/N46 (4-cyl petrol)",
+        "typicalMileage": "60k–100k",
+        "commonMajorFailure": "Timing chain, injectors",
+        "repairCostSpecialist": "£600–£1,800",
+        "replacementCostRecon": "£1,800–£4,000",
+        "ownershipVerdict": "Risk vs Reward — N43 injector issues common."
+      },
+      {
+        "engine": "N52 (3.0 petrol)",
+        "typicalMileage": "100k+",
+        "commonMajorFailure": "VANOS solenoids, water pump",
+        "repairCostSpecialist": "£300–£1,000",
+        "replacementCostRecon": "£2,500–£5,000",
+        "ownershipVerdict": "Best Petrol — reliable, simple, no turbo worries."
+      },
+      {
+        "engine": "N53 (3.0 petrol DI)",
+        "typicalMileage": "60k–100k",
+        "commonMajorFailure": "Injectors, NOx sensor",
+        "repairCostSpecialist": "£800–£2,000",
+        "replacementCostRecon": "£2,800–£5,500",
+        "ownershipVerdict": "Watch — direct injection adds complexity."
+      },
+      {
+        "engine": "N54 (3.0 twin-turbo)",
+        "typicalMileage": "30k–80k",
+        "commonMajorFailure": "HPFP, injectors, turbos",
+        "repairCostSpecialist": "£800–£3,000",
+        "replacementCostRecon": "£3,500–£6,500",
+        "ownershipVerdict": "Most Expensive — fast, but costly to maintain."
+      },
+      {
+        "engine": "N55 (3.0 single-turbo)",
+        "typicalMileage": "40k–90k",
+        "commonMajorFailure": "HPFP (less common), VANOS",
+        "repairCostSpecialist": "£600–£2,000",
+        "replacementCostRecon": "£3,800–£6,500",
+        "ownershipVerdict": "Solid Choice — more reliable than N54."
+      },
+      {
+        "engine": "S65 (4.0 V8)",
+        "typicalMileage": "30k–70k",
+        "commonMajorFailure": "Rod bearings, throttle actuators",
+        "repairCostSpecialist": "£1,500–£4,000",
+        "replacementCostRecon": "£8,000–£14,000",
+        "ownershipVerdict": "Collector's Piece — magnificent but costly."
+      },
+      {
+        "engine": "N47 (2.0 diesel)",
+        "typicalMileage": "60k–120k",
+        "commonMajorFailure": "Timing chain",
+        "repairCostSpecialist": "£650–£1,800",
+        "replacementCostRecon": "£3,200–£5,500",
+        "ownershipVerdict": "High Risk — rear chain defines this engine."
+      },
+      {
+        "engine": "M57 (3.0 diesel)",
+        "typicalMileage": "100k–150k+",
+        "commonMajorFailure": "Thermostat, swirl flaps",
+        "repairCostSpecialist": "£200–£600",
+        "replacementCostRecon": "£4,500–£7,000",
+        "ownershipVerdict": "Best Diesel — bulletproof if maintained."
+      },
+      {
+        "engine": "N57 (3.0 diesel)",
+        "typicalMileage": "80k–130k",
+        "commonMajorFailure": "Chain wear (later onset)",
+        "repairCostSpecialist": "£600–£1,600",
+        "replacementCostRecon": "£4,800–£7,500",
+        "ownershipVerdict": "Solid Choice — improved over M57."
+      }
+    ],
+    "economicsRule": {
+      "title": "The E92 rule",
+      "text": "A £3,200–£5,500 N47 recon against a £3,000–£12,000 E92 sits at 27–183% of the car's value【EM-VERIFIED】. On a sub-£4,000 example, that brushes our 70% BMW threshold — we'll honestly tell you to walk away. Against a well-kept £8,000+ example, the same recon drops to 40–69% — a repair decision, not a financial one. Value the car first. For M3 cars, the economics are different — collector values justify the higher costs."
+    },
+    "keyTakeaways": [
+      {
+        "question": "Which E92 Costs Least To Own?",
+        "answer": "N52 330i — simple naturally aspirated six, no turbos, fewer failure modes."
+      },
+      {
+        "question": "Which E92 Costs Most To Own?",
+        "answer": "S65 M3 — rod bearings, throttle actuators and V8 complexity add up fast."
+      },
+      {
+        "question": "Which E92 Is Best Value?",
+        "answer": "M57 330d (pre-LCI) — bulletproof diesel-six without the N47's timing chain anxiety."
+      }
+    ]
+  },
+  "commonProblems": {
+    "problems": [
+      {
+        "id": 1,
+        "title": "N47 Diesel Timing Chain Stretch",
+        "affectedModels": "E92 318d, 320d (2007–2013, N47 engine).",
+        "typicalFailureMileage": "60,000–120,000 miles.",
+        "rootCause": "The rear-mounted timing chain receives the last oil feed and is tensioned by a plastic guide that degrades over time — cold-start rattle for 1–2 seconds is the classic early warning.",
+        "tieredCosts": [
+          {
+            "tier": "Preventative (Repair)",
+            "dealer": "£1,800–£2,500",
+            "specialist": "£650–£1,800",
+            "work": "Replace chain, tensioner and guides",
+            "note": ""
+          },
+          {
+            "tier": "Catastrophic (Replacement)",
+            "dealer": "£6,000–£8,500",
+            "specialist": "£3,200–£5,500",
+            "work": "Full reconditioned engine replacement",
+            "note": ""
+          }
+        ],
+        "recommendation": "At the first sign of cold-start rattle on any N47 diesel E92, get the chain inspected immediately — a £650–£1,800 preventative repair is dramatically cheaper than the £3,200–£5,500 replacement that follows if ignored. On an E92 worth under £4,000, this decision alone determines whether the car stays economically viable.",
+        "cta": {
+          "label": "Compare N47 diesel engine prices for your E92 →",
+          "href": "#"
+        }
+      },
+      {
+        "id": 2,
+        "title": "N54 HPFP & Injector Failure",
+        "affectedModels": "E92 335i (2006–2010, N54 engine).",
+        "typicalFailureMileage": "30,000–80,000 miles.",
+        "rootCause": "The high-pressure fuel pump's internal wear leads to fuel pressure loss, hard starting, and eventual engine damage if ignored; injector issues frequently follow. This is the defining weakness of BMW's first turbocharged petrol engine.",
+        "tieredCosts": [
+          {
+            "tier": "Preventative (Repair)",
+            "dealer": "£1,200–£1,800",
+            "specialist": "£800–£1,500",
+            "work": "HPFP, fuel rail and injector seal replacement",
+            "note": ""
+          },
+          {
+            "tier": "Catastrophic (Replacement)",
+            "dealer": "£7,000–£9,500",
+            "specialist": "£4,500–£7,500",
+            "work": "Reconditioned N54 with upgraded HPFP components",
+            "note": ""
+          }
+        ],
+        "recommendation": "If your E92 335i has no documented HPFP history, treat it as overdue preventative maintenance — £800–£1,500 now is far cheaper than the £4,500+ replacement that follows a lean-running failure.",
+        "cta": {
+          "label": "Compare N54 engine prices for your E92 335i →",
+          "href": "#"
+        }
+      },
+      {
+        "id": 3,
+        "title": "N52 / N53 Water Pump & Cooling System Failure",
+        "affectedModels": "E92 323i, 325i, 328i, 330i (N52/N53 engines).",
+        "typicalFailureMileage": "60,000–100,000 miles.",
+        "rootCause": "The electric water pump on N52 and N53 engines is a known weak point — failure leads to sudden overheating and potential engine damage. The N53's direct injection system also suffers from injector and NOx sensor issues.",
+        "tieredCosts": [
+          {
+            "tier": "Preventative (Repair)",
+            "dealer": "£600–£1,200",
+            "specialist": "£400–£800",
+            "work": "Water pump and thermostat replacement",
+            "note": ""
+          },
+          {
+            "tier": "Catastrophic (Replacement)",
+            "dealer": "£5,000–£8,000",
+            "specialist": "£3,500–£6,000",
+            "work": "Full engine replacement if overheating caused damage",
+            "note": ""
+          }
+        ],
+        "recommendation": "Replace the water pump as preventative maintenance at 60,000 miles — a £400–£800 specialist job is trivial against the £3,500+ engine replacement that follows an ignored overheating event.",
+        "cta": {
+          "label": "Compare N52/N53 engine prices for your E92 →",
+          "href": "#"
+        }
+      },
+      {
+        "id": 4,
+        "title": "S65 Rod Bearing Wear (M3)",
+        "affectedModels": "E92 M3 (2008–2013, S65 V8).",
+        "typicalFailureMileage": "30,000–70,000 miles.",
+        "rootCause": "The S65 V8's rod bearings are a well-documented weak point — clearance issues and oil starvation can lead to bearing failure and catastrophic engine damage. This is the single most important maintenance item on any E9x M3.",
+        "tieredCosts": [
+          {
+            "tier": "Preventative (Repair)",
+            "dealer": "£2,500–£4,000",
+            "specialist": "£1,500–£2,800",
+            "work": "Rod bearing replacement with upgraded bearings",
+            "note": ""
+          },
+          {
+            "tier": "Catastrophic (Replacement)",
+            "dealer": "£12,000–£18,000",
+            "specialist": "£8,000–£14,000",
+            "work": "Full S65 engine replacement",
+            "note": ""
+          }
+        ],
+        "recommendation": "If you're buying an E92 M3, budget for rod bearing replacement immediately unless there's documented proof it's already been done — £1,500–£2,800 now is dramatically cheaper than the £8,000+ engine replacement that follows a bearing failure. This is not optional; it's the defining maintenance item of the S65 V8.",
+        "cta": {
+          "label": "Compare S65 engine prices for your E92 M3 →",
+          "href": "#"
+        }
+      }
+    ]
+  },
+  "replacementCosts": {
+    "h2": "E92 Engine Replacement Costs — By Engine and Condition",
+    "columns": [
+      "Variant",
+      "Engine Code",
+      "Used (Supply)",
+      "Reconditioned (Supply)",
+      "Rebuilt (Supply)",
+      "Labour Hours"
+    ],
+    "rows": [
+      {
+        "variant": "318i / 320i (2.0 petrol)",
+        "engineCode": "N43/N45/N46",
+        "usedSupply": "£800–£1,800",
+        "reconditionedSupply": "£1,800–£4,000",
+        "rebuiltSupply": "£2,800–£5,500",
+        "labourHours": "8–12 hrs"
+      },
+      {
+        "variant": "323i / 325i / 328i / 330i (2.5–3.0 petrol)",
+        "engineCode": "N52B25/30",
+        "usedSupply": "£1,200–£2,800",
+        "reconditionedSupply": "£2,500–£5,000",
+        "rebuiltSupply": "£4,000–£6,500",
+        "labourHours": "10–14 hrs"
+      },
+      {
+        "variant": "325i / 330i (3.0 DI petrol)",
+        "engineCode": "N53B30",
+        "usedSupply": "£1,500–£3,000",
+        "reconditionedSupply": "£2,800–£5,500",
+        "rebuiltSupply": "£4,500–£7,000",
+        "labourHours": "10–14 hrs"
+      },
+      {
+        "variant": "335i (3.0 twin-turbo)",
+        "engineCode": "N54B30",
+        "usedSupply": "£2,000–£4,000",
+        "reconditionedSupply": "£3,500–£6,500",
+        "rebuiltSupply": "£5,000–£8,500",
+        "labourHours": "12–16 hrs"
+      },
+      {
+        "variant": "335i (3.0 single-turbo)",
+        "engineCode": "N55B30",
+        "usedSupply": "£2,000–£4,000",
+        "reconditionedSupply": "£3,800–£6,500",
+        "rebuiltSupply": "£5,000–£8,500",
+        "labourHours": "12–16 hrs"
+      },
+      {
+        "variant": "M3 (4.0 V8)",
+        "engineCode": "S65B40",
+        "usedSupply": "£4,000–£8,000",
+        "reconditionedSupply": "£8,000–£14,000",
+        "rebuiltSupply": "£10,000–£18,000",
+        "labourHours": "16–22 hrs"
+      },
+      {
+        "variant": "318d / 320d (2.0 diesel)",
+        "engineCode": "N47D20",
+        "usedSupply": "£1,800–£3,200",
+        "reconditionedSupply": "£3,200–£5,500",
+        "rebuiltSupply": "£4,500–£6,500",
+        "labourHours": "10–14 hrs"
+      },
+      {
+        "variant": "325d / 330d (3.0 diesel, pre-LCI)",
+        "engineCode": "M57D30",
+        "usedSupply": "£2,500–£4,500",
+        "reconditionedSupply": "£4,500–£7,000",
+        "rebuiltSupply": "£6,000–£9,000",
+        "labourHours": "12–16 hrs"
+      },
+      {
+        "variant": "325d / 330d / 335d (3.0 diesel, post-LCI)",
+        "engineCode": "N57D30",
+        "usedSupply": "£2,500–£4,500",
+        "reconditionedSupply": "£4,800–£7,500",
+        "rebuiltSupply": "£6,500–£9,500",
+        "labourHours": "12–16 hrs"
+      }
+    ],
+    "note": "No Generation variance from the EM_Proprietary_Data baseline figures — E92 Coupé shares the E9x platform with the E90 saloon, with similar engine-bay access, so costs are inherited directly per the Authority Model, with no divergence note required."
+  },
+  "coreVariants": {
+    "dieselVariants": [
+      "318d",
+      "320d",
+      "325d",
+      "330d",
+      "335d"
+    ],
+    "petrolVariants": [
+      "318i",
+      "320i",
+      "320si",
+      "323i",
+      "325i",
+      "328i",
+      "330i",
+      "335i",
+      "M3"
+    ],
+    "scopeNote": "All variants listed are E92 Coupé only. E90 Saloon, E91 Touring and E93 Convertible share most of these engines but are covered on their own Generation Pages, since fitment and body-specific characteristics vary. The 335is (2011–2013, North America) used a factory-tuned N54 with 320 bhp. The 320si is a limited-edition homologation model."
+  },
+  "marketIntelligence": {
+    "mostRequestedEngines": [],
+    "mostRequestedVariants": [],
+    "averageReplacementCost": "",
+    "mostCommonFailures": [],
+    "liveFeed": []
+  },
+  "faq": {
+    "items": []
+  },
+  "trustCta": {
+    "h2": "",
+    "trustPoints": [],
+    "finalCta": "",
+    "ctaButton": {
+      "label": "",
+      "href": "#",
+      "note": ""
+    }
+  }
+}

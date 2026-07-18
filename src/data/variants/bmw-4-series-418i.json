@@ -1,0 +1,458 @@
+{
+  "meta": {
+    "slug": "bmw-4-series-418i",
+    "title": "BMW 4 Series 418i Engine Replacement — Compare Prices & Get Quotes",
+    "titleCharCount": 66,
+    "description": "",
+    "descriptionCharCount": 0,
+    "canonical": "",
+    "openGraph": {
+      "title": "",
+      "description": "",
+      "type": "",
+      "url": "",
+      "image": "",
+      "siteName": ""
+    },
+    "twitter": {
+      "card": "",
+      "title": "",
+      "description": "",
+      "image": ""
+    },
+    "jsonLd": {}
+  },
+  "hero": {
+    "tagPill": "BMW 4 Series 418i • 2013–2020 • 2.0L Turbo Petrol",
+    "h1": "BMW 4 Series 418i Engine Replacement — Compare Prices & Get Quotes",
+    "subHeadline": "Get quotes today from trusted UK BMW specialists. The 418i is the entry-level 2.0-litre turbo petrol — N20 (2013–2016) and B48 (2016–2020). Compare reconditioned, rebuilt and used engines — supply & fit available nationwide.",
+    "trustBadges": [
+      "🔧 Supply & Fit Available",
+      "✅ 12-Month Warranty",
+      "🚚 Nationwide Delivery",
+      "👥 20+ Specialists"
+    ],
+    "priceAnchor": "BMW 4 Series 418i Engines — from £2,500 to £7,000 · Codes: N20B20 / B48B20",
+    "registrationInput": {
+      "flag": "🇬🇧 GB",
+      "placeholder": "Enter your reg — e.g. AB12 CDE",
+      "cta": {
+        "label": "See BMW 4 Series 418i Engine Options →",
+        "href": "#"
+      }
+    },
+    "ticker": "● Instant Quotes · No Obligation · 100% Free · Reconditioned · Rebuilt · Used · Supply & Fit Available · UK-Wide Network"
+  },
+  "eraMap": {
+    "title": "BMW 4 Series 418i — Which Engine Does Your Car Actually Have?",
+    "columns": [
+      "Generation",
+      "Years",
+      "Engine Code",
+      "Reliability",
+      "Recon Cost",
+      "Era Note"
+    ],
+    "rows": [
+      {
+        "generation": "F32/F33/F36 (pre-LCI)",
+        "years": "2013–2016",
+        "engineCode": "N20B20 (2.0L turbo four)",
+        "reliability": "★★★☆☆ [NEWLY ASSIGNED — see Data Note]",
+        "reconCost": "£3,200–£5,500 [PLACEHOLDER — confirm vs cost sheet]",
+        "eraNote": "136/143bhp de-tuned N20 — timing chain guide failure risk pre-2015"
+      },
+      {
+        "generation": "F32/F33/F36 (LCI)",
+        "years": "2016–2020",
+        "engineCode": "B48B20 (2.0L turbo four)",
+        "reliability": "★★★★☆ [NEWLY ASSIGNED — see Data Note]",
+        "reconCost": "£3,500–£6,000 [PLACEHOLDER — confirm vs cost sheet]",
+        "eraNote": "184bhp B48 — chain front-mounted, virtually eliminates chain issues"
+      }
+    ],
+    "sourceNote": "This table is the single source every other section on this page matches — Sections 2, 4 and 6 reference it rather than restating conflicting figures.",
+    "dataNote": ""
+  },
+  "replacementCosts": {
+    "h2": "BMW 4 Series 418i Engine Replacement Costs",
+    "columns": [
+      "Engine Type",
+      "Supply Only",
+      "Fitted (Indie)",
+      "Warranty",
+      "Best For"
+    ],
+    "rows": [
+      {
+        "engineType": "Used Engine",
+        "supplyOnly": "£2,500–£4,000",
+        "fittedIndie": "£3,400–£5,200",
+        "warranty": "1–6 months",
+        "bestFor": "Budget priority; lower-mileage donor"
+      },
+      {
+        "engineType": "Reconditioned Engine",
+        "supplyOnly": "£3,500–£5,500",
+        "fittedIndie": "£4,400–£6,700",
+        "warranty": "12–24 months",
+        "bestFor": "Most owners — best cost/warranty balance"
+      },
+      {
+        "engineType": "Rebuilt Engine",
+        "supplyOnly": "£4,500–£7,000",
+        "fittedIndie": "£5,400–£8,200",
+        "warranty": "12–24 months",
+        "bestFor": "Long-term ownership; 5+ year horizon"
+      },
+      {
+        "engineType": "Main Dealer New",
+        "supplyOnly": "£7,500–£11,000",
+        "fittedIndie": "£9,000–£12,500",
+        "warranty": "24–36 months",
+        "bestFor": "Insurance jobs, warranty claims"
+      }
+    ],
+    "figuresNote": "Figures above reflect the current B48 generation. Older N20 (pre-2016) pricing typically runs lower on the used market. See the Era Map above for generation-specific pricing.",
+    "labourEstimate": "Fitting a 4 Series 418i engine typically takes 8–12 hours at £70–£100/hr (independent BMW specialist) or £120–£170/hr (London/SE dealer).",
+    "cta": {
+      "label": "→ Compare BMW 4 Series 418i engine prices from UK specialists",
+      "href": "#"
+    }
+  },
+  "commonProblems": {
+    "problems": [
+      {
+        "id": 1,
+        "title": "Timing Chain Guide Failure (N20 — Pre-2015)",
+        "symptoms": "",
+        "typicalMileage": "",
+        "repairCost": "",
+        "replacementCost": "",
+        "urgency": {
+          "icon": "",
+          "label": "",
+          "text": ""
+        },
+        "recommendation": "",
+        "failureLink": {
+          "label": "",
+          "href": "#"
+        }
+      },
+      {
+        "id": 2,
+        "title": "Cooling System Leaks (B48 — Post-2016 LCI)",
+        "symptoms": "",
+        "typicalMileage": "",
+        "repairCost": "",
+        "replacementCost": "",
+        "urgency": {
+          "icon": "",
+          "label": "",
+          "text": ""
+        },
+        "recommendation": "",
+        "failureLink": {
+          "label": "",
+          "href": "#"
+        }
+      },
+      {
+        "id": 3,
+        "title": "Oil Filter Housing Gasket Leak (N20 and B48)",
+        "symptoms": "",
+        "typicalMileage": "",
+        "repairCost": "",
+        "replacementCost": "",
+        "urgency": {
+          "icon": "",
+          "label": "",
+          "text": ""
+        },
+        "recommendation": "",
+        "failureLink": {
+          "label": "",
+          "href": "#"
+        }
+      }
+    ]
+  },
+  "quotesCta": {
+    "headline": "Weighing Your Options? Compare Specialist Quotes When You're Ready →",
+    "supportingLine": "20+ vetted BMW specialists, covering both N20 and B48 418i engines, with a 12-month warranty as standard.",
+    "button": {
+      "label": "See BMW 4 Series 418i Engine Options →",
+      "href": "#"
+    }
+  },
+  "repairBuyOrReplace": {
+    "h2": "BMW 4 Series 418i — Repair, Buy, or Replace?",
+    "canItBeRepaired": {
+      "title": "Can It Be Repaired?",
+      "columns": [
+        "Problem",
+        "Repairable?",
+        "Typical Cost",
+        "When It Makes Sense"
+      ],
+      "rows": [
+        {
+          "problem": "N20 timing chain guides",
+          "repairable": "✅ Yes",
+          "typicalCost": "£1,500–£3,500",
+          "whenItMakesSense": "Preventative — cheaper than engine replacement"
+        },
+        {
+          "problem": "B48 cooling system leaks",
+          "repairable": "✅ Yes",
+          "typicalCost": "£400–£1,000",
+          "whenItMakesSense": "Straightforward — always worth doing"
+        },
+        {
+          "problem": "Oil filter housing gasket leak",
+          "repairable": "✅ Yes",
+          "typicalCost": "£500–£1,200",
+          "whenItMakesSense": "Preventative maintenance on higher-mileage examples"
+        },
+        {
+          "problem": "N20 VANOS solenoid wear",
+          "repairable": "✅ Yes",
+          "typicalCost": "£300–£600",
+          "whenItMakesSense": "Simple replacement — cheap preventative maintenance"
+        },
+        {
+          "problem": "Major internal failure",
+          "repairable": "❌ Usually No",
+          "typicalCost": "Engine replacement required",
+          "whenItMakesSense": "Replacement often £3,500–£5,500 — assess vehicle value carefully"
+        }
+      ]
+    },
+    "buyingChecks": {
+      "title": "Buying This BMW 4 Series 418i? Check These First",
+      "buyIf": [
+        "* Post-2016 LCI (B48) — the more reliable engine by a clear margin",
+        "* N20 (pre-2016) with documented timing chain history (guides and tensioner replaced)",
+        "* Full BMW service history with correct oil specification for the era",
+        "* Any 418i with low-mileage and documented history"
+      ],
+      "avoidIf": [
+        "* Pre-2016 N20 with no timing chain history — the risk is real",
+        "* Any evidence of coolant loss (B48) or cold-start rattle (N20)",
+        "* Poor service history — both engines are unforgiving of neglect",
+        "* Engine warning light with no diagnosis — these engines can hide expensive problems"
+      ]
+    },
+    "closingVerdict": "The 418i is the entry-point to 4 Series ownership, and the choice between N20 and B48 is stark. The B48 (post-2016 LCI) is a significantly more reliable engine — chain front-mounted, cooling system improved. The N20 is cheaper but has the well-documented timing chain risk. Buy the LCI, maintain the cooling system, and the 418i will serve you well.",
+    "cta": {
+      "label": "→ Compare BMW 4 Series 418i engine prices before you buy",
+      "href": "#"
+    }
+  },
+  "buyingChecklist": {
+    "intro": "Before you buy a used BMW 4 Series 418i (or before you commit to an engine replacement), check these:",
+    "items": [
+      "* Cold Start — Any rattle? N20 chain rattle is the biggest warning; B48 should be quiet",
+      "* Service History — Check the year — pre-2016 = N20, 2016+ = B48",
+      "* Timing Chain History — N20: chains replaced? Tensioner checked? (pre-2015 is critical)",
+      "* Coolant Level — B48: any loss? Water pump and expansion tank are key risks",
+      "* Oil Filter Housing — Any oil leaks at the front of the engine? (both engines)",
+      "* Turbo Response — Test acceleration; any hesitation or lag?",
+      "* Engine Warning Light — Have codes been read? Resolve before buying",
+      "* MOT History — Check for emissions-related failures"
+    ]
+  },
+  "engineCodes": {
+    "columns": [
+      "Engine Code",
+      "Years",
+      "Power",
+      "2025 Enquiries",
+      "Avg. Recon Cost"
+    ],
+    "rows": [
+      {
+        "engineCode": "N20B20 (2.0L turbo four, de-tuned)",
+        "years": "2013–2016",
+        "power": "136–143 bhp",
+        "enquiries": "— (pattern data — low-volume UK)",
+        "avgReconCost": "£3,200–£5,500 [PLACEHOLDER]"
+      },
+      {
+        "engineCode": "B48B20 (2.0L turbo four, de-tuned)",
+        "years": "2016–2020",
+        "power": "184 bhp",
+        "enquiries": "— (pattern data — low-volume UK)",
+        "avgReconCost": "£3,500–£6,000 [PLACEHOLDER]"
+      }
+    ],
+    "matchNote": "This table's rows match Section 1B's Era Map exactly.",
+    "technicalSpecs": {
+      "title": "Technical Specs (B48B20):",
+      "items": [
+        {
+          "label": "* Displacement",
+          "value": "1,997 cc"
+        },
+        {
+          "label": "* Cylinders",
+          "value": "4-cylinder inline"
+        },
+        {
+          "label": "* Compression Ratio",
+          "value": "10.0:1"
+        },
+        {
+          "label": "* Fuel System",
+          "value": "Direct injection"
+        },
+        {
+          "label": "* Turbocharger",
+          "value": "Single twin-scroll (de-tuned for entry-level output)"
+        },
+        {
+          "label": "* Displacement",
+          "value": "1,998 cc"
+        },
+        {
+          "label": "* Cylinders",
+          "value": "4-cylinder inline"
+        },
+        {
+          "label": "* Compression Ratio",
+          "value": "10.2:1"
+        },
+        {
+          "label": "* Fuel System",
+          "value": "Direct injection"
+        },
+        {
+          "label": "* Turbocharger",
+          "value": "Single twin-scroll (de-tuned for entry-level output)"
+        },
+        {
+          "label": "Additional specifications",
+          "value": ""
+        },
+        {
+          "label": "* Maximum torque (N20)",
+          "value": "220 Nm @ 1,250–4,300 rpm"
+        },
+        {
+          "label": "* Maximum torque (B48)",
+          "value": "270 Nm @ 1,350–4,600 rpm"
+        },
+        {
+          "label": "* 0–60mph",
+          "value": "~8.5 seconds (N20) / ~7.5 seconds (B48)"
+        },
+        {
+          "label": "* Top speed",
+          "value": "130 mph (limited, both)"
+        },
+        {
+          "label": "* Transmission",
+          "value": "8-speed automatic (ZF 8HP45) / 6-speed manual (rare)"
+        },
+        {
+          "label": "* Drive",
+          "value": "Rear-wheel drive"
+        },
+        {
+          "label": "* Kerb weight",
+          "value": "1,430–1,480 kg"
+        }
+      ]
+    },
+    "cta": {
+      "label": "→ Compare BMW 4 Series 418i engine prices for your BMW",
+      "href": "#"
+    }
+  },
+  "marketIntelligence": {
+    "items": [
+      {
+        "label": "Most Common Failure",
+        "value": "N20: timing chain guide failure (~60% of N20 enquiries) / B48: cooling system leaks (~40% of B48 enquiries)【PATTERN DATA — specialist workshop consensus】"
+      },
+      {
+        "label": "Average Enquiry Mileage",
+        "value": "55,000 miles [PATTERN DATA]"
+      },
+      {
+        "label": "Average Replacement Cost",
+        "value": "£4,500 reconditioned (B48 era), supply only [PLACEHOLDER — confirm vs cost sheet]"
+      },
+      {
+        "label": "Most Requested Engine Code",
+        "value": "B48B20 (post-2016 LCI is the more sought-after variant)【PATTERN DATA】"
+      },
+      {
+        "label": "Peak Enquiry Season",
+        "value": "Autumn/Winter — cold starts expose timing chain issues; cooling systems fail in cold weather【PATTERN DATA】"
+      },
+      {
+        "label": "Regional Demand",
+        "value": "South East (22%), London (18%), South West (15%)【PATTERN DATA】"
+      }
+    ]
+  },
+  "faq": {
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a BMW 4 Series 418i engine replacement cost in the UK?",
+        "answer": "A reconditioned BMW 4 Series 418i engine costs £3,200–£6,000 supply only: N20 (pre-2016) £3,200–£5,500, B48 (2016+) £3,500–£6,000. Fitting adds £900–£1,300. Check the Era Map above for your engine code."
+      },
+      {
+        "id": 2,
+        "question": "Is the BMW 4 Series 418i reliable?",
+        "answer": "That depends on which engine your 418i has. The N20 (pre-2016) has a well-documented timing chain guide failure risk — this is the defining issue. The B48 (2016+ LCI) is a significant improvement with the chain relocated to the front, virtually eliminating the issue. The LCI B48 is the more reliable choice."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the BMW 4 Series 418i?",
+        "answer": "N20: timing chain guide failure (cold-start rattle, £1,500–£3,500). B48: cooling system leaks (water pump, expansion tank, £400–£1,000). Both engines: oil filter housing gasket leaks (£500–£1,200)."
+      },
+      {
+        "id": 4,
+        "question": "Is it worth replacing a BMW 4 Series 418i engine, or should I scrap the car?",
+        "answer": "4 Series 418i values range from £8,000–£22,000 depending on generation, condition and mileage. A £3,200–£6,000 reconditioned engine represents 15–75% of vehicle value — our 70% BMW scrap threshold means careful evaluation is required. For a well-maintained LCI example, replacement is often justified. For an ageing N20 with other issues, assess scrap value first."
+      },
+      {
+        "id": 5,
+        "question": "How do I find my BMW 4 Series 418i engine code?",
+        "answer": "The 418i has used two engines: N20B20 (2013–2016, 136–143bhp) and B48B20 (2016–2020, 184bhp). Check your VIN or registration year — pre-2016 is N20, 2016+ is B48. The code is stamped on the engine block."
+      },
+      {
+        "id": 6,
+        "question": "Can I repair the N20 timing chain issue, or does it need replacement?",
+        "answer": "Yes — if caught early. Timing chain and guide replacement costs £1,500–£3,500 and is significantly cheaper than a full engine replacement (£3,200–£5,500). BMW issued a recall on some N20 models. At the first sign of cold-start rattle, book an inspection immediately — ignored chain wear can lead to catastrophic piston-valve contact."
+      }
+    ],
+    "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty — always confirm terms with your chosen supplier."
+  },
+  "trustCta": {
+    "h2": "Why UK BMW 4 Series 418i Owners Trust BMWEngines.uk",
+    "trustPoints": [
+      {
+        "title": "Trusted BMW 418i Engine Suppliers",
+        "text": "every garage and engine rebuilder in our network is vetted, rated and reviewed by real 4 Series owners, as part of the Engine Finders network, with specialist knowledge of both N20 and B48 engines across the 418i range."
+      },
+      {
+        "title": "Compare BMW 418i Engine Replacement Companies",
+        "text": "see prices, warranty terms and supply & fit options side‑by‑side before you commit, with transparent pricing for both N20 (pre-2016) and B48 (2016+) eras."
+      },
+      {
+        "title": "UK Engine Replacement Services for BMW 418i",
+        "text": "supply‑only or full supply & fit available nationwide, covering the 4 Series Coupe, Convertible and Gran Coupe with specialists who understand these BMW four-cylinders."
+      }
+    ],
+    "finalCta": "Find the best BMW 4 Series 418i engine replacement UK drivers rely on. Compare prices from trusted specialists on EnginesMarket today and get back on the road with confidence.",
+    "ctaButton": {
+      "label": "Explore BMW 4 Series 418i Engine Quotes →",
+      "href": "#"
+    }
+  }
+}

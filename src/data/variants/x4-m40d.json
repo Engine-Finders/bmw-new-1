@@ -1,0 +1,513 @@
+{
+  "meta": {
+    "slug": "x4-m40d",
+    "title": "BMW X4 M40d Engine Replacement Cost UK — Compare Quotes",
+    "titleCharCount": 54,
+    "description": "Every BMW X4 M40d engine — B57 3.0 twin-turbo diesel. G02 generation, real UK costs and reliability. Get free quotes from 20+ vetted BMW specialists today.",
+    "descriptionCharCount": 157,
+    "canonical": "https://bmwengine.uk/x4/m40d/",
+    "openGraph": {
+      "title": "",
+      "description": "",
+      "type": "",
+      "url": "",
+      "image": "",
+      "siteName": ""
+    },
+    "twitter": {
+      "card": "",
+      "title": "",
+      "description": "",
+      "image": ""
+    },
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://bmwengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "X4",
+              "item": "https://bmwengine.uk/x4/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "G02",
+              "item": "https://bmwengine.uk/x4/g02/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "M40d",
+              "item": "https://bmwengine.uk/x4/m40d/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "BMW X4 M40d Engine Era Map",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "G02 X4 M40d (B57D30T0, 2018-2023)",
+              "url": "https://bmwengine.uk/x4/g02/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "G02 X4 M40d (B57D30B, 2024-present)",
+              "url": "https://bmwengine.uk/x4/g02/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "BMW X4 M40d Engine Codes",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "B57D30T0",
+              "url": "https://bmwengine.uk/engines/b57/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "B57D30B",
+              "url": "https://bmwengine.uk/engines/b57/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does a BMW X4 M40d engine replacement cost in the UK?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A reconditioned B57 engine typically costs £6,000–£10,000 supply only depending on the year, with the 340 bhp facelift version sitting at £7,000–£12,000. Fitting adds £1,200–£1,800. Use our calculator for a figure specific to your car."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the BMW X4 M40d engine reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The B57 is rated ★★★☆☆. It's a powerful and refined engine, but it has known weak points: HPFP failure (especially on 2018–2020 cars), timing chain tensioner wear (addressed by BMW Service Bulletin SWE-19-07), turbocharger wear and actuator faults, and EGR carbon buildup. Diligent maintenance is essential."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What are the common problems with the BMW X4 M40d?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "HPFP failure (early cars), timing chain tensioner wear, turbocharger wear and actuator faults, and EGR carbon buildup are the most common. The HPFP is the most critical — if it fails catastrophically, it can destroy the entire fuel system and engine."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is it worth replacing a BMW X4 M40d engine, or should I scrap the car?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Depends on vehicle value. Against a well-kept G02 X4 M40d worth £20,000–£35,000, an £8,000 recon is a manageable 23–40% of the car's value — worth it for a well-maintained example. Given the X4 M40d's strong retained values, replacement is usually viable."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I find my BMW X4 M40d engine code?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Listed on the VIN plate and vehicle documentation. The X4 M40d uses the B57 3.0-litre twin-turbo diesel engine. Tell us your registration date and we'll confirm it for free."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I repair the B57's timing chain, or does it need replacement?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes — if caught early. A preventative chain and tensioner replacement with reinforced units (£1,500–£3,000) is far cheaper than a catastrophic chain snap (£6,000–£12,000 engine replacement). BMW Service Bulletin SWE-19-07 addresses this issue — ensure any used car has had this work completed."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "BMWEngines.uk",
+          "url": "https://bmwengine.uk/",
+          "logo": "https://bmwengine.uk/images/bmwengines-logo.png",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "BMW X4 M40d Engine Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "4500",
+            "highPrice": "12000",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "name": "BMW X4 M40d UK Engine Enquiry Data 2025",
+          "description": "Proprietary UK enquiry volumes and demand trends for BMW X4 M40d engines (B57), sourced from BMWEngines.uk's specialist marketplace activity.",
+          "creator": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk"
+          },
+          "temporalCoverage": "2025",
+          "spatialCoverage": "United Kingdom"
+        },
+        {
+          "@type": "WebPage",
+          "name": "BMW X4 M40d Engine Replacement Cost UK — Compare Quotes",
+          "url": "https://bmwengine.uk/x4/m40d/",
+          "author": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk Specialist Network"
+          },
+          "datePublished": "2026-07-12",
+          "dateModified": "2026-07-12"
+        }
+      ]
+    }
+  },
+  "hero": {
+    "tagPill": "BMW X4 M40d • 2018–present • B57 3.0 Twin-Turbo Diesel",
+    "h1": "BMW X4 M40d Engine Replacement — Compare Prices & Get Quotes",
+    "subHeadline": "Get quotes today from trusted UK BMW M40d specialists. Compare reconditioned, rebuilt and used B57 engines for the high-performance diesel SUV coupé — supply & fit available nationwide.",
+    "trustBadges": [
+      "🔧 Supply & Fit Available",
+      "✅ 12-Month Warranty",
+      "🚚 Nationwide Delivery",
+      "👥 20+ Specialists"
+    ],
+    "priceAnchor": "BMW X4 M40d Engines — from £4,500 to £12,000 · Code: B57D30",
+    "registrationInput": {
+      "flag": "🇬🇧 GB",
+      "placeholder": "Enter your reg — e.g. AB12 CDE",
+      "cta": {
+        "label": "See X4 M40d Engine Options →",
+        "href": "#"
+      }
+    },
+    "ticker": "● Instant Quotes · No Obligation · 100% Free · Reconditioned · Rebuilt · Used · Supply & Fit Available · UK-Wide Network"
+  },
+  "eraMap": {
+    "title": "The X4 M40d THROUGH TIME — Era Map",
+    "columns": [
+      "Generation",
+      "Years",
+      "Engine Code",
+      "Reliability",
+      "Recon Cost",
+      "Era Note"
+    ],
+    "rows": [
+      {
+        "generation": "G02",
+        "years": "2018–2023",
+        "engineCode": "B57D30T0 (326 bhp)",
+        "reliability": "★★★☆☆ [NEWLY ASSIGNED — see Data Note]",
+        "reconCost": "£6,000–£10,000 [PLACEHOLDER — confirm vs cost sheet]",
+        "eraNote": "The original M40d — B57 with 326 bhp; HPFP, timing chain and turbo actuator are the main watchpoints."
+      },
+      {
+        "generation": "G02",
+        "years": "2024–present",
+        "engineCode": "B57D30B (340 bhp + MHEV)",
+        "reliability": "★★★☆☆ [NEWLY ASSIGNED — see Data Note]",
+        "reconCost": "£7,000–£12,000 [PLACEHOLDER — confirm vs cost sheet]",
+        "eraNote": "Facelift M40d — 340 bhp with 48V mild-hybrid; same B57 architecture with updated calibration."
+      }
+    ],
+    "sourceNote": "",
+    "dataNote": ""
+  },
+  "replacementCosts": {
+    "h2": "BMW X4 M40d Engine Replacement Costs",
+    "columns": [
+      "Engine Type",
+      "Supply Only",
+      "Fitted (Indie)",
+      "Warranty",
+      "Best For"
+    ],
+    "rows": [
+      {
+        "engineType": "Used Engine",
+        "supplyOnly": "£4,500–£7,000",
+        "fittedIndie": "£5,600–£8,500",
+        "warranty": "3–6 months",
+        "bestFor": "Budget priority; vehicle under £15,000"
+      },
+      {
+        "engineType": "Reconditioned Engine",
+        "supplyOnly": "£6,000–£10,000",
+        "fittedIndie": "£7,200–£11,500",
+        "warranty": "12–24 months",
+        "bestFor": "Most owners — best cost/warranty balance"
+      },
+      {
+        "engineType": "Rebuilt Engine",
+        "supplyOnly": "£8,000–£12,000",
+        "fittedIndie": "£9,200–£13,500",
+        "warranty": "12–24 months",
+        "bestFor": "Long-term ownership; 3+ year horizon"
+      },
+      {
+        "engineType": "Main Dealer New",
+        "supplyOnly": "£15,000–£20,000",
+        "fittedIndie": "£17,000–£23,000",
+        "warranty": "24–36 months",
+        "bestFor": "Insurance jobs, warranty claims"
+      }
+    ],
+    "figuresNote": "",
+    "labourEstimate": "Fitting an X4 M40d engine typically takes 14–18 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer).",
+    "cta": {
+      "label": "",
+      "href": "#"
+    }
+  },
+  "commonProblems": {
+    "problems": []
+  },
+  "quotesCta": {
+    "headline": "Weighing Your Options? Compare Specialist Quotes When You're Ready →",
+    "supportingLine": "20+ vetted BMW specialists, every X4 M40d variant covered, with a 12-month warranty as standard.",
+    "button": {
+      "label": "See X4 M40d Engine Options →",
+      "href": "#"
+    }
+  },
+  "repairBuyOrReplace": {
+    "h2": "BMW X4 M40d — Repair, Buy, or Replace?",
+    "canItBeRepaired": {
+      "title": "Can It Be Repaired?",
+      "columns": [
+        "Problem",
+        "Repairable?",
+        "Typical Cost",
+        "When It Makes Sense"
+      ],
+      "rows": [
+        {
+          "problem": "HPFP failure (B57 — early cars)",
+          "repairable": "✅ Yes",
+          "typicalCost": "£1,500–£3,000",
+          "whenItMakesSense": "Replace with upgraded pump and revised camshaft lobes; catch it before debris destroys the engine"
+        },
+        {
+          "problem": "Timing chain tensioner wear (B57)",
+          "repairable": "✅ Yes",
+          "typicalCost": "£1,500–£3,000",
+          "whenItMakesSense": "Replace with reinforced units per BMW Service Bulletin SWE-19-07"
+        },
+        {
+          "problem": "Turbocharger wear and actuator faults (B57)",
+          "repairable": "✅ Yes",
+          "typicalCost": "£1,500–£4,000",
+          "whenItMakesSense": "Specialist refurbishment or replacement; catch it before engine damage"
+        },
+        {
+          "problem": "EGR carbon buildup (B57)",
+          "repairable": "✅ Yes",
+          "typicalCost": "£400–£1,200",
+          "whenItMakesSense": "Regular cleaning; use quality fuel and motorway runs to prevent"
+        },
+        {
+          "problem": "Snapped timing chain",
+          "repairable": "❌ Usually No",
+          "typicalCost": "Engine replacement",
+          "whenItMakesSense": "Piston-valve contact means little is left to repair"
+        }
+      ]
+    },
+    "buyingChecks": {
+      "title": "Buying This X4 M40d? Check These First",
+      "buyIf": [
+        "* Full BMW service history with documented oil-change intervals",
+        "* HPFP replaced with upgraded unit on early cars (2018–2020)",
+        "* Timing chain tensioner replaced with reinforced unit per Service Bulletin SWE-19-07",
+        "* 2024+ facelift for the 340 bhp output and mild-hybrid system",
+        "* Evidence of regular motorway use (to prevent EGR carbon buildup)"
+      ],
+      "avoidIf": [
+        "* Long crank times or hesitation — potential HPFP failure risk",
+        "* Cold-start rattle with no chain history — timing chain tensioner warning",
+        "* Loss of power or turbo noise without diagnosis",
+        "* Poor service history — the B57 is unforgiving of neglect"
+      ]
+    },
+    "closingVerdict": "The X4 M40d is a remarkable performance diesel — 326–340 bhp from a six-cylinder twin-turbo. But the B57 has known weak points: HPFP failure (especially early cars), timing chain tensioner wear, and turbo issues. Buy on documented history and proof of preventative maintenance. If you're replacing, a reconditioned unit with upgraded HPFP and timing chain components is essential.",
+    "cta": {
+      "label": "",
+      "href": "#"
+    }
+  },
+  "buyingChecklist": {
+    "intro": "Before you buy a used BMW X4 M40d (or before you commit to an engine replacement), check these:",
+    "items": [
+      "* Cold Start — Listen for rattle on startup (timing chain tensioner wear)",
+      "* Service History — Including which engine era (B57 is the only M40d engine — verify this before purchase)",
+      "* HPFP Health — Long crank times? Hesitation? HPFP failure is a critical risk on early cars",
+      "* Turbo Health — Test acceleration through the rev range; any lag, whistling, or uneven power delivery?",
+      "* EGR System — Any loss of power or rough idle? EGR carbon buildup is common",
+      "* Oil Consumption — Does it use more than 1L per 5,000 miles? If so, investigate",
+      "* Engine Warning Light — Have codes been read? Any unresolved issues?",
+      "* MOT History — Check for emissions-related failures; often point to EGR or DPF problems"
+    ]
+  },
+  "engineCodes": {
+    "columns": [
+      "Engine Code",
+      "Years",
+      "Power",
+      "2025 Enquiries",
+      "Avg. Recon Cost"
+    ],
+    "rows": [
+      {
+        "engineCode": "B57D30T0",
+        "years": "2018–2023",
+        "power": "326 bhp / 680 Nm",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£6,000–£10,000 [PLACEHOLDER]"
+      },
+      {
+        "engineCode": "B57D30B",
+        "years": "2024–present",
+        "power": "340 bhp / 700 Nm",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£7,000–£12,000 [PLACEHOLDER]"
+      }
+    ],
+    "matchNote": "",
+    "technicalSpecs": {
+      "title": "Technical Specs (B57D30T0):",
+      "items": [
+        {
+          "label": "* Displacement",
+          "value": "2,993cc"
+        },
+        {
+          "label": "* Cylinders",
+          "value": "6-cylinder inline"
+        },
+        {
+          "label": "* Compression Ratio",
+          "value": "16.5:1"
+        },
+        {
+          "label": "* Fuel System",
+          "value": "Common-rail direct injection"
+        },
+        {
+          "label": "* Turbocharger",
+          "value": "Twin turbo (B57D30T0)"
+        }
+      ]
+    },
+    "cta": {
+      "label": "",
+      "href": "#"
+    }
+  },
+  "marketIntelligence": {
+    "items": [
+      {
+        "label": "Most Common Failure",
+        "value": "HPFP failure and timing chain tensioner wear — approximately 55% of B57 enquiries [PATTERN DATA]"
+      },
+      {
+        "label": "Average Enquiry Mileage",
+        "value": "55,000 miles [PATTERN DATA]"
+      },
+      {
+        "label": "Average Replacement Cost",
+        "value": "£8,000 reconditioned, supply only [PLACEHOLDER — confirm vs cost sheet]"
+      },
+      {
+        "label": "Most Requested Engine Code",
+        "value": "B57D30 [BMW-VERIFIED]"
+      },
+      {
+        "label": "Peak Enquiry Season",
+        "value": "Winter — cold starts expose chain and HPFP issues [PATTERN DATA]"
+      },
+      {
+        "label": "Regional Demand",
+        "value": "London (22%), South East (20%), South West (14%) [PATTERN DATA]"
+      }
+    ]
+  },
+  "faq": {
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a BMW X4 M40d engine replacement cost in the UK?",
+        "answer": "A reconditioned B57 engine typically costs £6,000–£10,000 supply only depending on the year, with the 340 bhp facelift version sitting at £7,000–£12,000. Fitting adds £1,200–£1,800. Use our calculator for a figure specific to your car."
+      },
+      {
+        "id": 2,
+        "question": "Is the BMW X4 M40d engine reliable?",
+        "answer": "The B57 is rated ★★★☆☆. It's a powerful and refined engine, but it has known weak points: HPFP failure (especially on 2018–2020 cars), timing chain tensioner wear (addressed by BMW Service Bulletin SWE-19-07), turbocharger wear and actuator faults, and EGR carbon buildup. Diligent maintenance is essential."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the BMW X4 M40d?",
+        "answer": "HPFP failure (early cars), timing chain tensioner wear, turbocharger wear and actuator faults, and EGR carbon buildup are the most common. The HPFP is the most critical — if it fails catastrophically, it can destroy the entire fuel system and engine."
+      },
+      {
+        "id": 4,
+        "question": "Is it worth replacing a BMW X4 M40d engine, or should I scrap the car?",
+        "answer": "Depends on vehicle value. Against a well-kept G02 X4 M40d worth £20,000–£35,000, an £8,000 recon is a manageable 23–40% of the car's value — worth it for a well-maintained example. Given the X4 M40d's strong retained values, replacement is usually viable."
+      },
+      {
+        "id": 5,
+        "question": "How do I find my BMW X4 M40d engine code?",
+        "answer": "Listed on the VIN plate and vehicle documentation. The X4 M40d uses the B57 3.0-litre twin-turbo diesel engine. Tell us your registration date and we'll confirm it for free."
+      },
+      {
+        "id": 6,
+        "question": "Can I repair the B57's timing chain, or does it need replacement?",
+        "answer": "Yes — if caught early. A preventative chain and tensioner replacement with reinforced units (£1,500–£3,000) is far cheaper than a catastrophic chain snap (£6,000–£12,000 engine replacement). BMW Service Bulletin SWE-19-07 addresses this issue — ensure any used car has had this work completed."
+      }
+    ],
+    "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty — always confirm terms with your chosen supplier."
+  },
+  "trustCta": {
+    "h2": "",
+    "trustPoints": [],
+    "finalCta": "Find the best BMW X4 M40d engine replacement UK drivers rely on. Compare prices from trusted specialists on EnginesMarket today and get back on the road with confidence.",
+    "ctaButton": {
+      "label": "Explore BMW X4 M40d Engine Quotes →",
+      "href": "#"
+    }
+  }
+}

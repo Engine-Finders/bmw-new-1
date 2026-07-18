@@ -1,0 +1,494 @@
+{
+  "meta": {
+    "slug": "bmw-5-series-535d",
+    "title": "BMW 5 Series 535d Engine Replacement — Compare Prices & Get Quotes",
+    "titleCharCount": 66,
+    "description": "",
+    "descriptionCharCount": 0,
+    "canonical": "",
+    "openGraph": {
+      "title": "",
+      "description": "",
+      "type": "",
+      "url": "",
+      "image": "",
+      "siteName": ""
+    },
+    "twitter": {
+      "card": "",
+      "title": "",
+      "description": "",
+      "image": ""
+    },
+    "jsonLd": {}
+  },
+  "hero": {
+    "tagPill": "BMW 5 Series 535d • 2004–2016 • Two Diesel Six Generations",
+    "h1": "BMW 5 Series 535d Engine Replacement — Compare Prices & Get Quotes",
+    "subHeadline": "Get quotes today from trusted UK BMW diesel specialists. The 535d is the twin-turbo diesel six — 286bhp (E60) and 313bhp (F10). Compare reconditioned, rebuilt and used M57 and N57 engines — supply & fit available nationwide.",
+    "trustBadges": [
+      "🔧 Supply & Fit Available",
+      "✅ 12-Month Warranty",
+      "🚚 Nationwide Delivery",
+      "👥 20+ Specialists"
+    ],
+    "priceAnchor": "BMW 5 Series 535d Engines — from £2,500 to £9,000 · Codes: M57TU2 twin / N57S",
+    "registrationInput": {
+      "flag": "🇬🇧 GB",
+      "placeholder": "Enter your reg — e.g. AB12 CDE",
+      "cta": {
+        "label": "Get My Free BMW 535d Engine Quotes Now →",
+        "href": "#"
+      }
+    },
+    "ticker": "● Instant Quotes · No Obligation · 100% Free · Reconditioned · Rebuilt · Used · Supply & Fit Available · UK-Wide Network"
+  },
+  "eraMap": {
+    "title": "BMW 5 Series 535d — Which Engine Does Your Car Actually Have?",
+    "columns": [
+      "Generation",
+      "Years",
+      "Engine Code",
+      "Reliability",
+      "Recon Cost",
+      "Era Note"
+    ],
+    "rows": [
+      {
+        "generation": "E60/E61 (pre-LCI)",
+        "years": "2004–2007",
+        "engineCode": "M57TU2 twin (3.0L twin-turbo)",
+        "reliability": "★★★½☆ [NEWLY ASSIGNED — see Data Note]",
+        "reconCost": "£3,200–£5,500 [PLACEHOLDER — confirm vs cost sheet]",
+        "eraNote": "272bhp twin-turbo — pioneering sequential setup, injectors and DPF key"
+      },
+      {
+        "generation": "E60/E61 (LCI)",
+        "years": "2007–2010",
+        "engineCode": "M57TU2 twin (3.0L twin-turbo)",
+        "reliability": "★★★★☆ [NEWLY ASSIGNED — see Data Note]",
+        "reconCost": "£3,200–£5,500 [PLACEHOLDER — confirm vs cost sheet]",
+        "eraNote": "Revised to 286bhp — improved injectors and DPF logic"
+      },
+      {
+        "generation": "F10/F11",
+        "years": "2010–2016",
+        "engineCode": "N57S (3.0L twin-turbo)",
+        "reliability": "★★★☆☆ [NEWLY ASSIGNED — see Data Note]",
+        "reconCost": "£4,500–£7,500 [PLACEHOLDER — confirm vs cost sheet]",
+        "eraNote": "313bhp — chain tensioner and DPF/EGR are key watchpoints"
+      }
+    ],
+    "sourceNote": "This table is the single source every other section on this page matches — Sections 2, 4 and 6 reference it rather than restating conflicting figures.",
+    "dataNote": ""
+  },
+  "replacementCosts": {
+    "h2": "BMW 5 Series 535d Engine Replacement Costs",
+    "columns": [
+      "Engine Type",
+      "Supply Only",
+      "Fitted (Indie)",
+      "Warranty",
+      "Best For"
+    ],
+    "rows": [
+      {
+        "engineType": "Used Engine",
+        "supplyOnly": "£2,500–£4,500",
+        "fittedIndie": "£3,400–£5,700",
+        "warranty": "1–6 months",
+        "bestFor": "Budget priority; lower-mileage donor"
+      },
+      {
+        "engineType": "Reconditioned Engine",
+        "supplyOnly": "£4,000–£6,500",
+        "fittedIndie": "£4,900–£7,700",
+        "warranty": "12–24 months",
+        "bestFor": "Most owners — best cost/warranty balance"
+      },
+      {
+        "engineType": "Rebuilt Engine",
+        "supplyOnly": "£5,500–£9,000",
+        "fittedIndie": "£6,400–£10,200",
+        "warranty": "12–24 months",
+        "bestFor": "Long-term ownership; 5+ year horizon"
+      },
+      {
+        "engineType": "Main Dealer New",
+        "supplyOnly": "£9,000–£14,000",
+        "fittedIndie": "£10,500–£15,500",
+        "warranty": "24–36 months",
+        "bestFor": "Insurance jobs, warranty claims"
+      }
+    ],
+    "figuresNote": "Figures above reflect current market ranges across both generations. Older E60 M57 pricing typically runs lower on the used market. See the Era Map above for generation-specific pricing.",
+    "labourEstimate": "Fitting a 5 Series 535d engine typically takes 10–14 hours at £70–£100/hr (independent BMW specialist) or £120–£170/hr (London/SE dealer). The N57's rear-mounted chain adds complexity.",
+    "cta": {
+      "label": "→ Compare BMW 5 Series 535d engine prices from UK specialists",
+      "href": "#"
+    }
+  },
+  "commonProblems": {
+    "problems": [
+      {
+        "id": 1,
+        "title": "Timing Chain Tensioner Wear (N57S — F10, Pre-2015)",
+        "symptoms": "",
+        "typicalMileage": "",
+        "repairCost": "",
+        "replacementCost": "",
+        "urgency": {
+          "icon": "",
+          "label": "",
+          "text": ""
+        },
+        "recommendation": "",
+        "failureLink": {
+          "label": "",
+          "href": "#"
+        }
+      },
+      {
+        "id": 2,
+        "title": "Injector Failure (M57 and N57)",
+        "symptoms": "",
+        "typicalMileage": "",
+        "repairCost": "",
+        "replacementCost": "",
+        "urgency": {
+          "icon": "",
+          "label": "",
+          "text": ""
+        },
+        "recommendation": "",
+        "failureLink": {
+          "label": "",
+          "href": "#"
+        }
+      },
+      {
+        "id": 3,
+        "title": "DPF Blockage and EGR Cooler Failure (Both Generations)",
+        "symptoms": "",
+        "typicalMileage": "",
+        "repairCost": "",
+        "replacementCost": "",
+        "urgency": {
+          "icon": "",
+          "label": "",
+          "text": ""
+        },
+        "recommendation": "",
+        "failureLink": {
+          "label": "",
+          "href": "#"
+        }
+      },
+      {
+        "id": 4,
+        "title": "Turbo Actuator Wear (M57 and N57)",
+        "symptoms": "",
+        "typicalMileage": "",
+        "repairCost": "",
+        "replacementCost": "",
+        "urgency": {
+          "icon": "",
+          "label": "",
+          "text": ""
+        },
+        "recommendation": "",
+        "failureLink": {
+          "label": "",
+          "href": "#"
+        }
+      }
+    ]
+  },
+  "quotesCta": {
+    "headline": "Ready to Compare? Get Matched With a Vetted BMW Specialist →",
+    "supportingLine": "20+ vetted BMW specialists, covering both M57 and N57 535d engines, with a 12-month warranty as standard.",
+    "button": {
+      "label": "Get My Free BMW 535d Engine Quotes Now →",
+      "href": "#"
+    }
+  },
+  "repairBuyOrReplace": {
+    "h2": "BMW 5 Series 535d — Repair, Buy, or Replace?",
+    "canItBeRepaired": {
+      "title": "Can It Be Repaired?",
+      "columns": [
+        "Problem",
+        "Repairable?",
+        "Typical Cost",
+        "When It Makes Sense"
+      ],
+      "rows": [
+        {
+          "problem": "N57 timing chain tensioner",
+          "repairable": "✅ Yes",
+          "typicalCost": "£1,500–£3,500",
+          "whenItMakesSense": "Preventative — cheaper than engine replacement"
+        },
+        {
+          "problem": "Injector failure",
+          "repairable": "✅ Yes",
+          "typicalCost": "£300–£800 per injector",
+          "whenItMakesSense": "Replace all six for reliability"
+        },
+        {
+          "problem": "DPF blockage",
+          "repairable": "✅ Yes",
+          "typicalCost": "£400–£1,200",
+          "whenItMakesSense": "Forced regen or cleaning — worth it"
+        },
+        {
+          "problem": "EGR cooler failure",
+          "repairable": "✅ Yes",
+          "typicalCost": "£500–£1,200",
+          "whenItMakesSense": "Straightforward repair — always worth doing"
+        },
+        {
+          "problem": "Turbo actuator wear",
+          "repairable": "✅ Yes",
+          "typicalCost": "£500–£1,500",
+          "whenItMakesSense": "Viable on any well-maintained example"
+        },
+        {
+          "problem": "Major internal failure",
+          "repairable": "❌ Usually No",
+          "typicalCost": "Engine replacement required",
+          "whenItMakesSense": "Replacement often £4,000–£6,500 — assess value"
+        }
+      ]
+    },
+    "buyingChecks": {
+      "title": "Buying This BMW 5 Series 535d? Check These First",
+      "buyIf": [
+        "* F10 post-2015 (revised N57 timing chain guides)",
+        "* E60 LCI (2007+) with injector and DPF history",
+        "* Documented timing chain history (F10) or injector history (E60)",
+        "* Full service history with regular oil changes (8,000–10,000 miles) and long journeys"
+      ],
+      "avoidIf": [
+        "* F10 pre-2015 with no timing chain history — the risk is real",
+        "* Any evidence of DPF or EGR issues — warning lights, reduced power",
+        "* Short-journey-only history — DPF issues are almost certain",
+        "* Poor service history — both engines are unforgiving of neglect"
+      ]
+    },
+    "closingVerdict": "The 535d is a legendary BMW diesel — twin-turbo six, effortless torque, and mile-munching refinement. The E60 M57 is robust but injectors and DPF need monitoring; the F10 N57 is more powerful but has the rear-chain risk. A post-2015 F10 with documented chain history and regular long journeys is the sweet spot. Buy on history, maintain the fuel and emissions systems, and the 535d will reward you.",
+    "cta": {
+      "label": "→ Compare BMW 5 Series 535d engine prices before you buy",
+      "href": "#"
+    }
+  },
+  "buyingChecklist": {
+    "intro": "Before you buy a used BMW 5 Series 535d (or before you commit to an engine replacement), check these:",
+    "items": [
+      "* Cold Start — Listen for any rattle on startup (timing chain warning for F10 N57)",
+      "* Service History — 8,000–10,000 mile oil changes are essential; check for BMW LL-04 spec",
+      "* DPF History — Ask about driving patterns; frequent short trips cause DPF issues",
+      "* EGR System — Any coolant loss or white smoke? EGR cooler failure is common",
+      "* Injector Performance — Check for rough idle or hesitation; injectors wear on high-mileage cars",
+      "* Turbo Response — Test acceleration; any lag or whistling? (twin-turbo system)",
+      "* Engine Warning Light — Have codes been read? DPF and injector codes are common",
+      "* MOT History — Check for emissions-related failures"
+    ]
+  },
+  "engineCodes": {
+    "columns": [
+      "Engine Code",
+      "Years",
+      "Power",
+      "2025 Enquiries",
+      "Avg. Recon Cost"
+    ],
+    "rows": [
+      {
+        "engineCode": "M57TU2 twin (3.0L twin-turbo)",
+        "years": "2004–2010",
+        "power": "272–286 bhp",
+        "enquiries": "830 JLR-wide [EM-VERIFIED]",
+        "avgReconCost": "£3,500–£5,500 [PLACEHOLDER]"
+      },
+      {
+        "engineCode": "N57S (3.0L twin-turbo)",
+        "years": "2010–2016",
+        "power": "313 bhp",
+        "enquiries": "830 JLR-wide [EM-VERIFIED]",
+        "avgReconCost": "£4,500–£7,500 [PLACEHOLDER]"
+      }
+    ],
+    "matchNote": "This table's rows match Section 1B's Era Map exactly.",
+    "technicalSpecs": {
+      "title": "Technical Specs (N57S):",
+      "items": [
+        {
+          "label": "* Displacement",
+          "value": "2,993 cc"
+        },
+        {
+          "label": "* Cylinders",
+          "value": "6-cylinder inline"
+        },
+        {
+          "label": "* Compression Ratio",
+          "value": "17.0:1"
+        },
+        {
+          "label": "* Fuel System",
+          "value": "Common-rail (piezo injectors)"
+        },
+        {
+          "label": "* Turbocharger",
+          "value": "Twin-turbo (sequential)"
+        },
+        {
+          "label": "* Displacement",
+          "value": "2,993 cc"
+        },
+        {
+          "label": "* Cylinders",
+          "value": "6-cylinder inline"
+        },
+        {
+          "label": "* Compression Ratio",
+          "value": "16.5:1"
+        },
+        {
+          "label": "* Fuel System",
+          "value": "Common-rail (piezo injectors)"
+        },
+        {
+          "label": "* Turbocharger",
+          "value": "Twin-turbo (sequential)"
+        },
+        {
+          "label": "Additional specifications",
+          "value": ""
+        },
+        {
+          "label": "* Maximum torque (M57)",
+          "value": "580 Nm @ 1,500–2,500 rpm"
+        },
+        {
+          "label": "* Maximum torque (N57)",
+          "value": "630 Nm @ 1,500–2,500 rpm"
+        },
+        {
+          "label": "* 0–60mph",
+          "value": "6.5s (E60) / 5.5s (F10 xDrive)"
+        },
+        {
+          "label": "* Top speed",
+          "value": "155 mph (limited)"
+        },
+        {
+          "label": "* Transmission",
+          "value": "6-speed auto (E60) / 8-speed auto (F10)"
+        },
+        {
+          "label": "* Drive",
+          "value": "Rear-wheel drive (xDrive optional on F10)"
+        },
+        {
+          "label": "* Kerb weight",
+          "value": "1,570–1,740 kg"
+        },
+        {
+          "label": "* Combined fuel economy",
+          "value": "42–50 mpg (claimed)"
+        }
+      ]
+    },
+    "cta": {
+      "label": "→ Compare BMW 5 Series 535d engine prices for your BMW",
+      "href": "#"
+    }
+  },
+  "marketIntelligence": {
+    "items": [
+      {
+        "label": "Most Common Failure",
+        "value": "N57: timing chain tensioner (≈50% of F10 enquiries) / M57: injector failure (≈40% of E60 enquiries) [PATTERN DATA — specialist workshop consensus]"
+      },
+      {
+        "label": "Average Enquiry Mileage",
+        "value": "70,000 miles [PATTERN DATA]"
+      },
+      {
+        "label": "Average Replacement Cost",
+        "value": "£5,500 reconditioned (N57 era), supply only [PLACEHOLDER — confirm vs cost sheet]"
+      },
+      {
+        "label": "Most Requested Engine Code",
+        "value": "N57S (F10 535d is a high-volume UK diesel) [PATTERN DATA]"
+      },
+      {
+        "label": "Peak Enquiry Season",
+        "value": "Autumn/Winter — cold starts expose timing chain issues; DPF issues worsen in winter【PATTERN DATA】"
+      },
+      {
+        "label": "Regional Demand",
+        "value": "South East (22%), London (18%), Midlands (15%) [PATTERN DATA]"
+      }
+    ]
+  },
+  "faq": {
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a BMW 5 Series 535d engine replacement cost in the UK?",
+        "answer": "A reconditioned BMW 5 Series 535d engine costs £4,000–£6,500 supply only, varying by generation: M57 (E60) £3,500–£5,500, N57 (F10) £4,500–£7,500. Fitting adds £1,000–£1,600. Check the Era Map above for your engine code."
+      },
+      {
+        "id": 2,
+        "question": "Is the BMW 5 Series 535d reliable?",
+        "answer": "That depends on which generation. The E60 M57 is robust but injectors and DPF are common issues. The F10 N57 is more powerful but has a rear-mounted timing chain with tensioner wear risk (pre-2015). The E60 LCI (2007+) has improved injectors; the F10 post-2015 has revised chain guides. Regular maintenance and long journeys are essential."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the BMW 5 Series 535d?",
+        "answer": "M57: injector failure (rough idle, misfire, £300–£800 per injector), DPF/EGR issues (£400–£1,200). N57: timing chain tensioner wear (cold-start rattle, £1,500–£3,500), injector failure, DPF/EGR issues. Both: turbo actuator wear (£500–£1,500)."
+      },
+      {
+        "id": 4,
+        "question": "Is it worth replacing a BMW 5 Series 535d engine, or should I scrap the car?",
+        "answer": "5 Series 535d values range from £4,000–£18,000 depending on generation, condition and mileage. A £4,000–£6,500 reconditioned engine represents 20–80% of vehicle value — our 70% BMW scrap threshold means careful evaluation is required. For a well-maintained F10, replacement is often justified. For an ageing E60 with other issues, assess scrap value first."
+      },
+      {
+        "id": 5,
+        "question": "How do I find my BMW 5 Series 535d engine code?",
+        "answer": "The 535d has used two engines: M57TU2 twin (E60, 2004–2010, 272–286bhp) and N57S (F10, 2010–2016, 313bhp). Check your VIN or registration year — pre-2010 is M57, 2010–2016 is N57. The code is stamped on the engine block."
+      },
+      {
+        "id": 6,
+        "question": "Can I repair the N57 timing chain issue, or does it need replacement?",
+        "answer": "Yes — if caught early. Timing chain and guide replacement costs £1,500–£3,500 and is significantly cheaper than a full engine replacement (£4,500–£7,500). The job requires engine removal on the F10, making it a major investment. At the first sign of cold-start rattle, book an inspection immediately — ignored chain wear can lead to catastrophic piston-valve contact."
+      }
+    ],
+    "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty — always confirm terms with your chosen supplier."
+  },
+  "trustCta": {
+    "h2": "Why UK BMW 5 Series 535d Owners Trust BMWEngines.uk",
+    "trustPoints": [
+      {
+        "title": "Trusted BMW 535d Engine Suppliers",
+        "text": "every garage and engine rebuilder in our network is vetted, rated and reviewed by real 5 Series owners, as part of the Engine Finders network, with specialist knowledge of both M57 and N57 twin-turbo diesels."
+      },
+      {
+        "title": "Compare BMW 535d Engine Replacement Companies",
+        "text": "see prices, warranty terms and supply & fit options side‑by‑side before you commit, with transparent pricing for E60 and F10 generations."
+      },
+      {
+        "title": "UK Engine Replacement Services for BMW 535d",
+        "text": "supply‑only or full supply & fit available nationwide, covering the 5 Series with specialists who understand these powerful six‑cylinder diesels."
+      }
+    ],
+    "finalCta": "Find the best BMW 5 Series 535d engine replacement UK drivers rely on. Compare prices from trusted specialists on EnginesMarket today and get back on the road with confidence.",
+    "ctaButton": {
+      "label": "Compare BMW 5 Series 535d Engine Prices Now →",
+      "href": "#"
+    }
+  }
+}

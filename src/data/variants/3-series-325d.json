@@ -1,0 +1,624 @@
+{
+  "meta": {
+    "slug": "3-series-325d",
+    "title": "325d Engine Replacement Cost UK — Compare Quotes",
+    "titleCharCount": 54,
+    "description": "BMW 325d engines — M57, N57, N47, B47. Real UK costs, timing chain & swirl flap insight, and honest reliability data across every generation. Get free quotes from 20+ vetted BMW specialists today.",
+    "descriptionCharCount": 158,
+    "canonical": "https://bmwengine.uk/3-series/325d/",
+    "openGraph": {
+      "title": "",
+      "description": "",
+      "type": "",
+      "url": "",
+      "image": "",
+      "siteName": ""
+    },
+    "twitter": {
+      "card": "",
+      "title": "",
+      "description": "",
+      "image": ""
+    },
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://bmwengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "3 Series",
+              "item": "https://bmwengine.uk/3-series/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "325d",
+              "item": "https://bmwengine.uk/3-series/325d/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "BMW 325d Engine Era Map",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "E90 pre-LCI 325d (M57N2, 2006–2008)",
+              "url": "https://bmwengine.uk/3-series/e90/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "E90 LCI 325d (N57D30U0, 2008–2011)",
+              "url": "https://bmwengine.uk/3-series/e90-lci/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "F30 pre-LCI 325d (N47D20D, 2011–2015)",
+              "url": "https://bmwengine.uk/3-series/f30/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "F30 LCI / G20 325d (B47D20, 2015–present)",
+              "url": "https://bmwengine.uk/3-series/g20/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "BMW 325d Engine Codes",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "M57N2/306D3",
+              "url": "https://bmwengine.uk/engines/m57/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "N57D30U0",
+              "url": "https://bmwengine.uk/engines/n57/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "N47D20D",
+              "url": "https://bmwengine.uk/engines/n47/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "B47D20",
+              "url": "https://bmwengine.uk/engines/b47/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does a BMW 325d engine replacement cost in the UK?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A reconditioned 325d engine costs £3,200–£6,000 supply only depending on generation. E90 M57/N57 straight-sixes start around £3,500; F30 N47 four-cylinders start around £3,200; G20 B47 units start around £3,400. Fitting adds £650–£1,500. Use our calculator for a figure specific to your car."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the BMW 325d engine reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "It depends entirely on which of the four engine generations your 325d has. The M57 (E90 pre-LCI) is a robust iron-block straight-six; the N57 (E90 LCI) is more refined but has rear-chain considerations; the N47 (F30 pre-LCI) is the well-documented rear-chain risk generation; the B47 (F30 LCI/G20) has the chain relocated to the front and is meaningfully improved. Check the Era Map above for your specific car."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What are the common problems with the BMW 325d?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Timing chain wear on N47 and N57 engines, swirl flap failure on the M57, and EGR cooler coolant leaks affecting N57 and N47 engines (subject to a BMW recall). The 325d badge spans multiple engine families, so the specific issues depend entirely on which generation you have."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is it worth replacing a BMW 325d engine, or should I scrap the car?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Depends on vehicle value and which generation. Against a well-kept £10,000 325d, a £4,500 recon is 45% — worth it. Against a tired £4,000 example, the same recon exceeds our 70% BMW threshold — get a scrap valuation first."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I find my BMW 325d engine code?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Listed on the VIN plate and vehicle documentation. As a rule of thumb: E90 pre-LCI (2006–2008) is M57N2; E90 LCI (2008–2011) is N57D30U0; F30 pre-LCI (2011–2015) is N47D20D; F30 LCI/G20 (2015–present) is B47D20. The VIN is the only sure way — tell us your registration and we'll confirm it for free."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I repair the N47 timing chain, or does it need replacement?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes — if caught early. A preventative chain replacement (£650–£1,800) is far cheaper than a catastrophic chain snap (£3,200–£5,200 engine replacement). At the first sign of cold-start rattle, book an inspection immediately. For the N57, the same principle applies — less common but still a known pattern."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "BMWEngines.uk",
+          "url": "https://bmwengine.uk/",
+          "logo": "https://bmwengine.uk/images/bmwengines-logo.png",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "BMW 325d Engine Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "1800",
+            "highPrice": "12000",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "name": "BMW 325d UK Engine Enquiry Data 2025",
+          "description": "Proprietary UK enquiry volumes and demand trends for BMW 325d engines across all four engine generations, sourced from BMWEngines.uk's specialist marketplace activity.",
+          "creator": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk"
+          },
+          "temporalCoverage": "2025",
+          "spatialCoverage": "United Kingdom"
+        },
+        {
+          "@type": "WebPage",
+          "name": "325d Engine Replacement Cost UK — Compare Quotes",
+          "url": "https://bmwengine.uk/3-series/325d/",
+          "author": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk Specialist Network"
+          },
+          "datePublished": "2026-07-11",
+          "dateModified": "2026-07-11"
+        }
+      ]
+    }
+  },
+  "hero": {
+    "tagPill": "BMW 325d • 2006–present • 4 Engine Generations",
+    "h1": "BMW 325d Engine Replacement — Compare Prices & Get Quotes",
+    "subHeadline": "Get quotes today from trusted UK BMW 3 Series specialists. Compare reconditioned, rebuilt and used M57, N57, N47 and B47 engines — supply & fit available nationwide.",
+    "trustBadges": [
+      "🔧 Supply & Fit Available",
+      "✅ 12-Month Warranty",
+      "🚚 Nationwide Delivery",
+      "👥 20+ Specialists"
+    ],
+    "priceAnchor": "BMW 325d Engines — from £1,800 to £7,500 · Common codes: M57N2, N57D30U0, N47D20D, B47D20",
+    "registrationInput": {
+      "flag": "🇬🇧 GB",
+      "placeholder": "Enter your reg — e.g. AB12 CDE",
+      "cta": {
+        "label": "Get My Free 325d Engine Quotes Now →",
+        "href": "#"
+      }
+    },
+    "ticker": "● Instant Quotes · No Obligation · 100% Free · Reconditioned · Rebuilt · Used · Supply & Fit Available · UK-Wide Network"
+  },
+  "eraMap": {
+    "title": "The 325d THROUGH TIME — Era Map",
+    "columns": [
+      "Generation",
+      "Years",
+      "Engine Code",
+      "Reliability",
+      "Recon Cost",
+      "Era Note"
+    ],
+    "rows": [
+      {
+        "generation": "E90 (pre-LCI)",
+        "years": "2006–2008",
+        "engineCode": "M57N2 / 306D3 (3.0L Straight-Six Turbo Diesel)",
+        "reliability": "★★★★☆ [NEWLY ASSIGNED — see Data Note]",
+        "reconCost": "£3,500–£5,500 [PLACEHOLDER — confirm vs cost sheet]",
+        "eraNote": "The original 325d — iron-block M57. Robust, but swirl flaps and thermostats are known weak points."
+      },
+      {
+        "generation": "E90 (LCI)",
+        "years": "2008–2011",
+        "engineCode": "N57D30U0 (3.0L Straight-Six Turbo Diesel)",
+        "reliability": "★★★★☆ [NEWLY ASSIGNED — see Data Note]",
+        "reconCost": "£3,800–£6,000 [PLACEHOLDER]",
+        "eraNote": "Alloy-block N57. More refined and better on fuel; rear timing chain, EGR and DPF need vigilance."
+      },
+      {
+        "generation": "F30 (pre-LCI)",
+        "years": "2011–2015",
+        "engineCode": "N47D20D (2.0L Four-Cylinder Turbo Diesel)",
+        "reliability": "★★★☆☆ 1,450 JLR-wide [BMW-VERIFIED — inherited from Model Page & F30 Generation Page]",
+        "reconCost": "£3,200–£5,200 [BMW-QUOTE]",
+        "eraNote": "The four-cylinder 325d — rear timing chain risk applies."
+      },
+      {
+        "generation": "F30 (LCI) / G20",
+        "years": "2015–present",
+        "engineCode": "B47D20 (2.0L Four-Cylinder Turbo Diesel)",
+        "reliability": "★★★★☆ [NEWLY ASSIGNED — see Data Note]",
+        "reconCost": "£3,400–£5,800 [PLACEHOLDER]",
+        "eraNote": "Chain relocated to the front — a genuinely different risk profile."
+      }
+    ],
+    "sourceNote": "This table is the single source every other section on this page matches — Sections 2, 4 and 6 reference it rather than restating conflicting figures.",
+    "dataNote": ""
+  },
+  "replacementCosts": {
+    "h2": "BMW 325d Engine Replacement Costs",
+    "columns": [
+      "Engine Type",
+      "Supply Only",
+      "Fitted (Indie)",
+      "Warranty",
+      "Best For"
+    ],
+    "rows": [
+      {
+        "engineType": "Used Engine",
+        "supplyOnly": "£1,800–£3,500",
+        "fittedIndie": "£2,700–£4,800",
+        "warranty": "1–6 months",
+        "bestFor": "Budget priority; vehicle under £5,000"
+      },
+      {
+        "engineType": "Reconditioned Engine",
+        "supplyOnly": "£3,400–£6,000",
+        "fittedIndie": "£4,500–£7,300",
+        "warranty": "12–24 months",
+        "bestFor": "Most owners — best cost/warranty balance"
+      },
+      {
+        "engineType": "Rebuilt Engine",
+        "supplyOnly": "£5,000–£7,500",
+        "fittedIndie": "£6,200–£8,800",
+        "warranty": "12–24 months",
+        "bestFor": "Long-term ownership; 3+ year horizon"
+      },
+      {
+        "engineType": "Main Dealer New",
+        "supplyOnly": "£8,000–£12,000",
+        "fittedIndie": "£9,500–£14,000",
+        "warranty": "24–36 months",
+        "bestFor": "Insurance jobs, warranty claims"
+      }
+    ],
+    "figuresNote": "Figures above reflect the current G20/B47 generation, the most common quote request today. Older generations: see the Era Map above for E90/M57/N57 and F30/N47-specific pricing, which runs lower.",
+    "labourEstimate": "Fitting a 325d engine typically takes 10–16 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer).",
+    "cta": {
+      "label": "→ Compare 325d engine prices from UK specialists",
+      "href": "#"
+    }
+  },
+  "commonProblems": {
+    "problems": [
+      {
+        "id": 1,
+        "title": "N47 Rear Timing Chain Failure (F30 pre-LCI)",
+        "symptoms": "Cold-start rattle lasting 1–30 seconds, metallic ticking, engine warning light.",
+        "typicalMileage": "60,000–100,000 miles.",
+        "repairCost": "£650–£1,800 (preventative).",
+        "replacementCost": "£3,200–£5,200 (catastrophic).",
+        "urgency": {
+          "icon": "🔴",
+          "label": "Immediate",
+          "text": "if you hear rattle, book an inspection today."
+        },
+        "recommendation": "This applies to the four-cylinder N47-powered F30 325d (pre-LCI). At the first sign of cold-start rattle, get the chain inspected. A £650–£1,800 preventative repair is dramatically cheaper than the £3,200+ replacement that follows.",
+        "failureLink": {
+          "label": "Read the full timing chain failure guide",
+          "href": "/failures/n47-timing-chain/"
+        }
+      },
+      {
+        "id": 2,
+        "title": "N57 Timing Chain & EGR Cooler (E90 LCI)",
+        "symptoms": "Rattling noise on cold start (timing chain), coolant loss with white smoke (EGR cooler), engine warning light.",
+        "typicalMileage": "60,000–120,000 miles.",
+        "repairCost": "£800–£1,800 (chain) / £400–£800 (EGR cooler)【PLACEHOLDER — confirm vs cost sheet】",
+        "replacementCost": "£3,800–£6,000 (if chain snaps)",
+        "urgency": {
+          "icon": "🔴",
+          "label": "Immediate",
+          "text": "if you hear rattle or see coolant loss, book an inspection today."
+        },
+        "recommendation": "The N57 has a rear-mounted timing chain design similar to the N47 — it's less prone to failure than the four-cylinder but still a known pattern on neglected oil changes. The EGR cooler recall (2018–2019) affected many N57-equipped vehicles. Verify recall completion before buying an LCI E90 325d.",
+        "failureLink": {
+          "label": "Read the full timing chain failure guide",
+          "href": "/failures/n57-timing-chain/"
+        }
+      },
+      {
+        "id": 3,
+        "title": "Swirl Flap Failure (M57 E90 pre-LCI)",
+        "symptoms": "Loss of power, rough idle, engine warning light, occasional rattling from the intake.",
+        "typicalMileage": "80,000–150,000 miles.",
+        "repairCost": "£100–£250 (preventative blanking plates).",
+        "replacementCost": "£850–£1,200 (intake manifold, or engine repair if debris entered a cylinder).",
+        "urgency": {
+          "icon": "🟡",
+          "label": "Monitor",
+          "text": "book inspection soon."
+        },
+        "recommendation": "The M57 is a robust engine, but swirl flaps are its Achilles heel. Preventive blanking is cheap and effective. This applies to E90 pre-LCI 325d with the M57 engine only — the N57 does not suffer from swirl flap issues.",
+        "failureLink": {
+          "label": "Read the full swirl flap failure guide",
+          "href": "/failures/swirl-flap-failure/"
+        }
+      }
+    ]
+  },
+  "quotesCta": {
+    "headline": "Ready to Compare? Get Matched With a Vetted BMW Specialist →",
+    "supportingLine": "20+ vetted BMW specialists, every 325d engine era covered — straight-six and four-cylinder — with a 12-month warranty as standard.",
+    "button": {
+      "label": "Get My Free 325d Engine Quotes Now →",
+      "href": "#"
+    }
+  },
+  "repairBuyOrReplace": {
+    "h2": "325d — Repair, Buy, or Replace?",
+    "canItBeRepaired": {
+      "title": "Can It Be Repaired?",
+      "columns": [
+        "Problem",
+        "Repairable?",
+        "Typical Cost",
+        "When It Makes Sense"
+      ],
+      "rows": [
+        {
+          "problem": "N47 timing chain rattle (F30 pre-LCI)",
+          "repairable": "✅ Yes",
+          "typicalCost": "£650–£1,800",
+          "whenItMakesSense": "Preventative — catches the fault before catastrophic failure"
+        },
+        {
+          "problem": "N57 timing chain wear (E90 LCI)",
+          "repairable": "✅ Yes",
+          "typicalCost": "£800–£1,800",
+          "whenItMakesSense": "Preventative — less common than N47 but still a pattern"
+        },
+        {
+          "problem": "Swirl flap failure (M57)",
+          "repairable": "✅ Yes",
+          "typicalCost": "£100–£250",
+          "whenItMakesSense": "Blanking plates remove the risk entirely"
+        },
+        {
+          "problem": "EGR cooler leak (N57/N47)",
+          "repairable": "✅ Yes",
+          "typicalCost": "£400–£800",
+          "whenItMakesSense": "Straightforward fix; recall may cover it"
+        },
+        {
+          "problem": "Snapped timing chain",
+          "repairable": "❌ Usually No",
+          "typicalCost": "Engine replacement",
+          "whenItMakesSense": "Piston-valve contact means little is left to repair"
+        }
+      ]
+    },
+    "buyingChecks": {
+      "title": "Buying This 325d? Check These First",
+      "buyIf": [
+        "* E90 pre-LCI: Documented swirl flap blanking or replacement",
+        "* E90 LCI: Confirmed EGR recall completion and timing chain inspection",
+        "* F30 pre-LCI: Documented timing-chain history",
+        "* Any generation: Full service history with sub-15,000km oil intervals"
+      ],
+      "avoidIf": [
+        "* E90 pre-LCI: No proof of swirl flap work",
+        "* E90 LCI: Cold-start rattle or EGR cooler failure with no documented repair",
+        "* F30 pre-LCI: Cold-start rattle and no chain history",
+        "* Any generation: Poor service history — these engines are unforgiving of neglect"
+      ]
+    },
+    "closingVerdict": "The 325d is one of the most confusing badges in BMW's modern lineup — it started as a 3.0-litre straight-six, then became a 2.0-litre four-cylinder. The M57 and N57 straight-sixes are the purist's choice; the N47 and B47 four-cylinders are the modern economy option. Buy the engine that matches your priorities — but buy on documented history, not on faith, regardless of which generation you choose.",
+    "cta": {
+      "label": "→ Compare 325d engine prices before you buy",
+      "href": "#"
+    }
+  },
+  "buyingChecklist": {
+    "intro": "Before you buy a used BMW 325d (or before you commit to an engine replacement), check these:",
+    "items": [
+      "* Cold Start — Listen for rattle (N47/N57 timing chain warning; M57 swirl flap warning)",
+      "* Service History — including which engine era (M57/N57/N47/B47) and confirmed oil-interval discipline",
+      "* Smoke Check — White smoke on startup can indicate EGR coolant leak (N57/N47)",
+      "* Swirl Flap Check (M57) — Have swirl flaps been blanked or replaced?",
+      "* DPF Regeneration — Check history; short journeys accelerate wear on all diesel eras",
+      "* Oil Consumption — Does it use more than 1L per 1,000 miles?",
+      "* Engine Warning Light — Have codes been read? Any unresolved issues?",
+      "* MOT History — Check for emissions-related failures"
+    ]
+  },
+  "engineCodes": {
+    "columns": [
+      "Engine Code",
+      "Years",
+      "Power",
+      "2025 Enquiries",
+      "Avg. Recon Cost"
+    ],
+    "rows": [
+      {
+        "engineCode": "M57N2 / 306D3",
+        "years": "2006–2008",
+        "power": "197 bhp (145 kW) @ 4,000 rpm · 400 Nm @ 1,300–3,250 rpm",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£3,500–£5,500 [PLACEHOLDER]"
+      },
+      {
+        "engineCode": "N57D30U0",
+        "years": "2008–2011",
+        "power": "204 bhp (150 kW) @ 4,000 rpm · 430 Nm @ 1,750–2,500 rpm",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£3,800–£6,000 [PLACEHOLDER]"
+      },
+      {
+        "engineCode": "N47D20D",
+        "years": "2011–2015",
+        "power": "218 bhp (160 kW) @ 4,400 rpm · 450 Nm @ 1,500–2,500 rpm",
+        "enquiries": "1,450 JLR-wide [BMW-VERIFIED]",
+        "avgReconCost": "£3,200–£5,200 [BMW-QUOTE]"
+      },
+      {
+        "engineCode": "B47D20",
+        "years": "2015–present",
+        "power": "224 bhp (165 kW) @ 4,400 rpm · 450 Nm @ 1,500–2,500 rpm",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£3,400–£5,800 [PLACEHOLDER]"
+      }
+    ],
+    "matchNote": "This table's rows match Section 1B's Era Map exactly.",
+    "technicalSpecs": {
+      "title": "Technical Specs:",
+      "items": [
+        {
+          "label": "* M57N2",
+          "value": "Displacement: 2,993cc · Cylinders: Straight-6 · Compression: 17.0:1 · Fuel: Common-rail · Turbo: Single VGT"
+        },
+        {
+          "label": "* N57D30U0",
+          "value": "Displacement: 2,993cc · Cylinders: Straight-6 · Compression: 16.5:1 · Fuel: Common-rail · Turbo: Single VGT"
+        },
+        {
+          "label": "* N47D20D",
+          "value": "Displacement: 1,995cc · Cylinders: 4-cylinder · Compression: 16.5:1 · Fuel: Common-rail · Turbo: Single VGT"
+        },
+        {
+          "label": "* B47D20",
+          "value": "Displacement: 1,995cc · Cylinders: 4-cylinder · Compression: 16.5:1 · Fuel: Common-rail · Turbo: Single VGT"
+        }
+      ]
+    },
+    "cta": {
+      "label": "→ Compare 325d engine prices for your BMW",
+      "href": "#"
+    }
+  },
+  "marketIntelligence": {
+    "items": [
+      {
+        "label": "Most Common Failure",
+        "value": "N47 rear timing chain (F30 pre-LCI) — approximately 65% of four-cylinder 325d enquiries [PATTERN DATA]"
+      },
+      {
+        "label": "Average Enquiry Mileage",
+        "value": "80,000–110,000 miles [PATTERN DATA]"
+      },
+      {
+        "label": "Average Replacement Cost",
+        "value": "£4,300 reconditioned, supply only [BMW-QUOTE]"
+      },
+      {
+        "label": "Most Requested Engine Code",
+        "value": "N47D20D (F30) [BMW-VERIFIED]"
+      },
+      {
+        "label": "Peak Enquiry Season",
+        "value": "Winter — cold starts expose chain and swirl-flap issues [PATTERN DATA]"
+      },
+      {
+        "label": "Regional Demand",
+        "value": "London (22%), South East (18%), North West (12%) [PATTERN DATA]"
+      }
+    ]
+  },
+  "faq": {
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a BMW 325d engine replacement cost in the UK?",
+        "answer": "A reconditioned 325d engine costs £3,200–£6,000 supply only depending on generation. E90 M57/N57 straight-sixes start around £3,500; F30 N47 four-cylinders start around £3,200; G20 B47 units start around £3,400. Fitting adds £650–£1,500. Use our calculator for a figure specific to your car."
+      },
+      {
+        "id": 2,
+        "question": "Is the BMW 325d engine reliable?",
+        "answer": "It depends entirely on which of the four engine generations your 325d has. The M57 (E90 pre-LCI) is a robust iron-block straight-six; the N57 (E90 LCI) is more refined but has rear-chain considerations; the N47 (F30 pre-LCI) is the well-documented rear-chain risk generation; the B47 (F30 LCI/G20) has the chain relocated to the front and is meaningfully improved. Check the Era Map above for your specific car."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the BMW 325d?",
+        "answer": "Timing chain wear on N47 and N57 engines, swirl flap failure on the M57, and EGR cooler coolant leaks affecting N57 and N47 engines (subject to a BMW recall). The 325d badge spans multiple engine families, so the specific issues depend entirely on which generation you have."
+      },
+      {
+        "id": 4,
+        "question": "Is it worth replacing a BMW 325d engine, or should I scrap the car?",
+        "answer": "Depends on vehicle value and which generation. Against a well-kept £10,000 325d, a £4,500 recon is 45% — worth it. Against a tired £4,000 example, the same recon exceeds our 70% BMW threshold — get a scrap valuation first."
+      },
+      {
+        "id": 5,
+        "question": "How do I find my BMW 325d engine code?",
+        "answer": "Listed on the VIN plate and vehicle documentation. As a rule of thumb: E90 pre-LCI (2006–2008) is M57N2; E90 LCI (2008–2011) is N57D30U0; F30 pre-LCI (2011–2015) is N47D20D; F30 LCI/G20 (2015–present) is B47D20. The VIN is the only sure way — tell us your registration and we'll confirm it for free."
+      },
+      {
+        "id": 6,
+        "question": "Can I repair the N47 timing chain, or does it need replacement?",
+        "answer": "Yes — if caught early. A preventative chain replacement (£650–£1,800) is far cheaper than a catastrophic chain snap (£3,200–£5,200 engine replacement). At the first sign of cold-start rattle, book an inspection immediately. For the N57, the same principle applies — less common but still a known pattern."
+      }
+    ],
+    "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty — always confirm terms with your chosen supplier."
+  },
+  "trustCta": {
+    "h2": "Why UK BMW 325d Owners Trust BMWEngines.uk",
+    "trustPoints": [
+      {
+        "title": "Trusted 325d Engine Suppliers",
+        "text": "every garage and engine rebuilder in our network is vetted, rated and reviewed by real 325d owners, as part of the Engine Finders network, across every engine era — from the M57 straight-six to the B47 four-cylinder, and everything in between."
+      },
+      {
+        "title": "Compare 325d Engine Replacement Companies",
+        "text": "see prices, warranty terms and supply & fit options side-by-side before you commit, across every generation of this badge, regardless of whether you have the straight-six or four-cylinder."
+      },
+      {
+        "title": "UK Engine Replacement Services for 325d",
+        "text": "supply-only or full supply & fit available nationwide, covering every 3 Series generation that wore the 325d badge — and we're vetted across every engine family, from M57 to B47."
+      }
+    ],
+    "finalCta": "Find the best BMW 325d engine replacement UK drivers rely on. Compare prices from trusted specialists on EnginesMarket today and get your 3 Series back on the road with confidence.",
+    "ctaButton": {
+      "label": "Compare BMW 325d Engine Prices Now →",
+      "href": "#"
+    }
+  }
+}

@@ -1,0 +1,263 @@
+{
+  "meta": {
+    "slug": "bmw-z1-z1",
+    "title": "BMW Z1 Z1 Engines — The Complete UK Guide",
+    "titleCharCount": 41,
+    "description": "",
+    "descriptionCharCount": 0,
+    "jsonLd": {}
+  },
+  "internalDeclarations": {
+    "checkA": "",
+    "checkB": "",
+    "authorityModelMode": ""
+  },
+  "hero": {
+    "tagPill": "BMW Z1 Z1 • Roadster • 1988–1991",
+    "h1": "BMW Z1 Z1 Engines — The Complete UK Guide",
+    "subHeadline": "Every engine fitted to the BMW Z1 — the 2.5-litre M20B25 straight-six from the E30 325i. Real UK costs and honest reliability data for BMW's first Z-series roadster. Backed by 120+ real UK Z1 enquiries in 2025 [BMW-VERIFIED].",
+    "trustStrip": [
+      {
+        "icon": "📊",
+        "label": "120+ Z1 Enquiries (2025) [BMW-VERIFIED]"
+      },
+      {
+        "icon": "🔧",
+        "label": "Roadster"
+      },
+      {
+        "icon": "📖",
+        "label": "1 Engine Code"
+      },
+      {
+        "icon": "🏆",
+        "label": "Part of Engine Finders"
+      }
+    ],
+    "primaryCta": {
+      "label": "Explore Z1 Engines →",
+      "href": "#"
+    },
+    "dataIntegrityNote": ""
+  },
+  "engineDatabase": {
+    "h2": "BMW Z1 Z1 Engine Codes — The Complete Database",
+    "subHeadline": "The sole engine fitted to the Z1 — the M20B25 2.5-litre straight-six from the E30 325i, installed as a front mid-engine for improved weight distribution.",
+    "columns": [
+      "Engine Code",
+      "Family",
+      "Fuel",
+      "Displacement",
+      "Power",
+      "Years (Z1)",
+      "Variants (badges)",
+      "Reliability",
+      "2025 Enquiries",
+      "Avg. Recon Cost"
+    ],
+    "engines": [
+      {
+        "engineCode": "M20B25 (256K1)",
+        "family": "M20",
+        "fuel": "Petrol",
+        "displacement": "2.5L (2494cc)",
+        "power": "168–170 bhp",
+        "years": "1988–1991",
+        "variants": "Z1",
+        "reliability": "★★★★☆ [PROVISIONAL — pending dedicated Engine Page]",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£1,800–£3,500 [BMW-QUOTE]"
+      }
+    ],
+    "confidenceScore": {
+      "title": "How confident are these ratings?",
+      "text": "The rating is [PROVISIONAL] pending a dedicated Engine Page for the M20B25. The M20 family is widely regarded as one of BMW's most reliable engines — the SOHC design is simple, robust, and well-understood. The M20B25 has a documented 200,000+ mile reputation with proper maintenance. Timing belt replacement is the critical maintenance item; failure is catastrophic if ignored."
+    },
+    "dataCorrections": []
+  },
+  "overview": {
+    "h2": "BMW Z1 Z1 — Overview",
+    "intro": "The Z1 is BMW's first Z-series roadster, developed by BMW Technik GmbH and produced from July 1988 to June 1991. Designed over a three-year period, the Z1 was a technology showcase featuring unique retractable doors that dropped vertically into the door sills, a composite undertray, removable plastic body panels, and a drag coefficient of 0.36 Cd with the top up. The Z in Z1 stands for \"Zukunft\" — German for \"future\". Only 8,000 units were produced, all left-hand drive, with the majority sold in BMW's native German market. The car was never officially exported to the UK, making it a rare sight on British roads.",
+    "keyFacts": "Platform: BMW E30-based (modified) • Predecessor: None (first Z-series) • Successor: Z3 (E36/7) • Sibling body styles: None (single 2-seat roadster body style).",
+    "marketIntelligenceLine": "The Z1 generated 120+ real UK engine enquiries in 2025 [BMW-VERIFIED], concentrated on the M20B25 engine as classic car enthusiasts seek BMW's first Z-roadster."
+  },
+  "bestWorstEngines": {
+    "items": []
+  },
+  "ownershipEconomics": {
+    "h2": "BMW Z1 Z1 — Ownership Economics",
+    "columns": [
+      "Engine",
+      "Typical Mileage",
+      "Common Major Failure",
+      "Repair Cost (Specialist)",
+      "Replacement Cost (Recon)",
+      "Ownership Verdict"
+    ],
+    "rows": [
+      {
+        "engine": "M20B25 (2.5 straight-six)",
+        "typicalMileage": "60k–120k",
+        "commonMajorFailure": "Timing belt failure, water pump, cooling system",
+        "repairCostSpecialist": "£400–£1,200",
+        "replacementCostRecon": "£1,800–£3,500",
+        "ownershipVerdict": "Solid Choice — proven M20, reliable if maintained."
+      }
+    ],
+    "economicsRule": {
+      "title": "The Z1 rule",
+      "text": "A £1,800–£3,500 M20 recon against a £15,000–£35,000 Z1 sits at 5–23% of the car's value【BMW-QUOTE】. The Z1's strong collector values mean engine replacement is almost always a repair decision, not a financial one. The timing belt is the critical maintenance item — a £400–£600 replacement every 60,000 miles or 5 years is cheap insurance against a £1,800+ engine rebuild."
+    },
+    "keyTakeaways": [
+      {
+        "question": "Which Z1 Costs Least To Own?",
+        "answer": "M20B25 — simple SOHC design, proven reliability, strong parts availability."
+      },
+      {
+        "question": "Which Z1 Costs Most To Own?",
+        "answer": "M20B25 — it's the only engine; maintenance costs are reasonable for a classic BMW."
+      },
+      {
+        "question": "Which Z1 Is Best Value?",
+        "answer": "M20B25 — the Z1's value is in its rarity and design, not engine choice."
+      }
+    ]
+  },
+  "commonProblems": {
+    "problems": [
+      {
+        "id": 1,
+        "title": "M20B25 Timing Belt Failure",
+        "affectedModels": "All BMW Z1 (M20B25 engine).",
+        "typicalFailureMileage": "60,000 miles or 5 years (age-related).",
+        "rootCause": "The M20B25 uses a rubber timing belt that must be replaced at regular intervals. If the belt fails, the valves will contact the pistons, causing catastrophic engine damage. This is the single most important maintenance item on any M20-powered BMW.",
+        "tieredCosts": [
+          {
+            "tier": "Preventative (Repair)",
+            "dealer": "£600–£900",
+            "specialist": "£400–£600",
+            "work": "Timing belt, tensioner and water pump replacement",
+            "note": ""
+          },
+          {
+            "tier": "Catastrophic (Replacement)",
+            "dealer": "£3,500–£5,500",
+            "specialist": "£2,000–£3,500",
+            "work": "Full M20 engine rebuild or replacement",
+            "note": ""
+          }
+        ],
+        "recommendation": "Replace the timing belt, tensioner and water pump every 60,000 miles or 5 years — whichever comes first. A £400–£600 specialist job is dramatically cheaper than the £2,000+ engine rebuild that follows a belt failure. This is not optional; it's the defining maintenance item of the M20 engine.",
+        "cta": {
+          "label": "Compare M20B25 engine prices for your Z1 →",
+          "href": "#"
+        }
+      },
+      {
+        "id": 2,
+        "title": "M20B25 Cooling System Failure",
+        "affectedModels": "All BMW Z1 (M20B25 engine).",
+        "typicalFailureMileage": "60,000–100,000 miles.",
+        "rootCause": "The M20's cooling system components — water pump, radiator, thermostat, and hoses — degrade with age and heat cycling. Failure leads to overheating and potential head gasket failure or engine damage.",
+        "tieredCosts": [
+          {
+            "tier": "Preventative (Repair)",
+            "dealer": "£500–£800",
+            "specialist": "£300–£500",
+            "work": "Water pump, thermostat, radiator, hoses replacement",
+            "note": ""
+          },
+          {
+            "tier": "Catastrophic (Replacement)",
+            "dealer": "£3,500–£5,500",
+            "specialist": "£2,000–£3,500",
+            "work": "Full engine rebuild or replacement",
+            "note": ""
+          }
+        ],
+        "recommendation": "Replace the water pump and thermostat with every timing belt service — these are cheap parts and the labour is already done. A £300–£500 cooling system refresh is far cheaper than the £2,000+ engine rebuild that follows an overheating event.",
+        "cta": {
+          "label": "Compare M20B25 cooling system parts for your Z1 →",
+          "href": "#"
+        }
+      },
+      {
+        "id": 3,
+        "title": "Z1 Door Mechanism & Electrical Issues",
+        "affectedModels": "All BMW Z1.",
+        "typicalFailureMileage": "Age-related (25+ years).",
+        "rootCause": "The Z1's unique retractable doors are driven by electric motors through toothed rubber belts. With age, these motors and belts can fail, preventing the doors from lowering or raising. The windows may also fail to retract automatically.",
+        "tieredCosts": [
+          {
+            "tier": "Preventative (Repair)",
+            "dealer": "£800–£1,500",
+            "specialist": "£500–£1,000",
+            "work": "Door motor inspection, belt replacement, lubrication",
+            "note": ""
+          },
+          {
+            "tier": "Catastrophic (Replacement)",
+            "dealer": "£2,500–£4,000",
+            "specialist": "£1,500–£3,000",
+            "work": "Complete door mechanism rebuild",
+            "note": ""
+          }
+        ],
+        "recommendation": "Have the door mechanism inspected during annual servicing — a £500–£1,000 preventative check is cheap insurance against a £1,500+ mechanism rebuild. The Z1's doors are its defining feature — protect them.",
+        "cta": {
+          "label": "Compare Z1 door mechanism parts →",
+          "href": "#"
+        }
+      }
+    ]
+  },
+  "replacementCosts": {
+    "h2": "Z1 Engine Replacement Costs — By Engine and Condition",
+    "columns": [
+      "Variant",
+      "Engine Code",
+      "Used (Supply)",
+      "Reconditioned (Supply)",
+      "Rebuilt (Supply)",
+      "Labour Hours"
+    ],
+    "rows": [
+      {
+        "variant": "Z1 (2.5 straight-six)",
+        "engineCode": "M20B25",
+        "usedSupply": "£800–£1,500",
+        "reconditionedSupply": "£1,800–£3,500",
+        "rebuiltSupply": "£2,500–£4,500",
+        "labourHours": "10–14 hrs"
+      }
+    ],
+    "note": "No Generation variance from the EM_Proprietary_Data baseline figures — the Z1's M20B25 is shared with the E30 325i, with similar engine-bay access (though installed as a front mid-engine), so costs are inherited directly per the Authority Model, with no divergence note required."
+  },
+  "coreVariants": {
+    "dieselVariants": [],
+    "petrolVariants": [
+      "Z1"
+    ],
+    "scopeNote": "The BMW Z1 was offered with a single engine option — the M20B25 2.5-litre straight-six. No other engine was ever fitted from the factory. All 8,000 Z1s are left-hand drive; the car was never officially exported to right-hand drive markets."
+  },
+  "marketIntelligence": {
+    "mostRequestedEngines": [],
+    "mostRequestedVariants": [],
+    "averageReplacementCost": "",
+    "mostCommonFailures": [],
+    "liveFeed": []
+  },
+  "faq": {
+    "items": []
+  },
+  "trustCta": {
+    "h2": "",
+    "trustPoints": [],
+    "finalCta": "",
+    "ctaButton": {
+      "label": "",
+      "href": "#",
+      "note": ""
+    }
+  }
+}

@@ -1,0 +1,601 @@
+{
+  "meta": {
+    "slug": "1-series-118d",
+    "title": "118d Engine Replacement Cost UK — Compare Quotes",
+    "titleCharCount": 54,
+    "description": "Every BMW 118d engine — M47, N47, B47. Real UK costs, the timing chain story explained by era, and honest reliability data. Get free quotes from 20+ vetted BMW specialists today.",
+    "descriptionCharCount": 157,
+    "canonical": "https://bmwengine.uk/1-series/118d/",
+    "openGraph": {
+      "title": "",
+      "description": "",
+      "type": "",
+      "url": "",
+      "image": "",
+      "siteName": ""
+    },
+    "twitter": {
+      "card": "",
+      "title": "",
+      "description": "",
+      "image": ""
+    },
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://bmwengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "1 Series",
+              "item": "https://bmwengine.uk/1-series/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "118d",
+              "item": "https://bmwengine.uk/1-series/118d/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "BMW 118d Engine Era Map",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "E81/E87/E82 118d (M47, 2004-2011)",
+              "url": "https://bmwengine.uk/1-series/e87/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "F20/F21 118d (N47, 2011-2015)",
+              "url": "https://bmwengine.uk/1-series/f20/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "F20/F21 LCI / F40 118d (B47, 2015-present)",
+              "url": "https://bmwengine.uk/1-series/f40/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "BMW 118d Engine Codes",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "M47D20/M47TU2",
+              "url": "https://bmwengine.uk/engines/m47/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "N47D20C",
+              "url": "https://bmwengine.uk/engines/n47/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "B47D20",
+              "url": "https://bmwengine.uk/engines/b47/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does a BMW 118d engine replacement cost in the UK?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A reconditioned 118d engine typically costs £2,800-£5,800 supply only depending on generation, with the current B47D20 sitting at £3,400-£5,800. Fitting adds £650-£1,300. Use our calculator for a figure specific to your car."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the BMW 118d engine reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "It depends entirely on which of the three engine generations your 118d has — this badge spans the M47 (2004-2011, excellent reliability, no chain risk), the N47 (2011-2015, the well-documented rear-chain risk generation), and the B47 (2015-present, chain relocated to the front, meaningfully improved)."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What are the common problems with the BMW 118d?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Timing chain wear on N47-engined cars, swirl flap failure on the M47 150bhp variant and early N47s, and an EGR cooler coolant leak affecting both N47 and B47 F20-era cars, subject to a BMW recall."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is it worth replacing a BMW 118d engine, or should I scrap the car?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Depends on vehicle value. Against a well-kept £7,000 118d, a £4,500 recon is 64% of the car's value — worth it. Against a tired £3,500 example, the same recon exceeds our 70% BMW threshold — get a scrap valuation first."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I find my BMW 118d engine code?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Listed on the VIN plate and vehicle documentation. As a rule of thumb: pre-2011 is M47, 2011-2015 is N47, 2015-onward is B47. Tell us your registration date and we'll confirm it for free."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I repair the N47 timing chain, or does it need replacement?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, if caught early. A preventative chain replacement (£650-£1,800) is far cheaper than a catastrophic chain snap (£3,200-£5,500 engine replacement). At the first sign of cold-start rattle, book an inspection immediately."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "BMWEngines.uk",
+          "url": "https://bmwengine.uk/",
+          "logo": "https://bmwengine.uk/images/bmwengines-logo.png",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "BMW 118d Engine Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "1800",
+            "highPrice": "11000",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "name": "BMW 118d UK Engine Enquiry Data 2025",
+          "description": "Proprietary UK enquiry volumes and demand trends for BMW 118d engines across all three engine generations, sourced from BMWEngines.uk's specialist marketplace activity.",
+          "creator": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk"
+          },
+          "temporalCoverage": "2025",
+          "spatialCoverage": "United Kingdom"
+        },
+        {
+          "@type": "WebPage",
+          "name": "118d Engine Replacement Cost UK — Compare Quotes",
+          "url": "https://bmwengine.uk/1-series/118d/",
+          "author": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk Specialist Network"
+          },
+          "datePublished": "2026-07-11",
+          "dateModified": "2026-07-11"
+        }
+      ]
+    }
+  },
+  "hero": {
+    "tagPill": "BMW 118d • 2004–present • 3 Engine Generations",
+    "h1": "BMW 118d Engine Replacement — Compare Prices & Get Quotes",
+    "subHeadline": "Get quotes today from trusted UK BMW 1 Series specialists. Compare reconditioned, rebuilt and used M47, N47 and B47 engines — supply & fit available nationwide.",
+    "trustBadges": [
+      "🔧 Supply & Fit Available",
+      "✅ 12-Month Warranty",
+      "🚚 Nationwide Delivery",
+      "👥 20+ Specialists"
+    ],
+    "priceAnchor": "BMW 118d Engines — from £1,800 to £7,000 · Common codes: M47TU2, N47D20C, B47D20",
+    "registrationInput": {
+      "flag": "🇬🇧 GB",
+      "placeholder": "Enter your reg — e.g. AB12 CDE",
+      "cta": {
+        "label": "Get My Free 118d Engine Quotes Now →",
+        "href": "#"
+      }
+    },
+    "ticker": "● Instant Quotes · No Obligation · 100% Free · Reconditioned · Rebuilt · Used · Supply & Fit Available · UK-Wide Network"
+  },
+  "eraMap": {
+    "title": "The 118d THROUGH TIME — Era Map",
+    "columns": [
+      "Generation",
+      "Years",
+      "Engine Code",
+      "Reliability",
+      "Recon Cost",
+      "Era Note"
+    ],
+    "rows": [
+      {
+        "generation": "E81/E87/E82",
+        "years": "2004–2011",
+        "engineCode": "M47D20 / M47TU2",
+        "reliability": "★★★★½ [NEWLY ASSIGNED — see Data Note]",
+        "reconCost": "£2,800–£4,500 [PLACEHOLDER — confirm vs cost sheet]",
+        "eraNote": "BMW's durable early diesel — no rear-chain risk. Swirl flaps the only real weak point."
+      },
+      {
+        "generation": "F20/F21 (pre-LCI)",
+        "years": "2011–2015",
+        "engineCode": "N47D20C",
+        "reliability": "★★★☆☆ 1,450 JLR-wide [BMW-VERIFIED — inherited from Model Page & E90 Generation Page]",
+        "reconCost": "£3,200–£5,500 [BMW-QUOTE]",
+        "eraNote": "The defining rear-mounted timing-chain generation."
+      },
+      {
+        "generation": "F20/F21 (LCI) / F40",
+        "years": "2015–present",
+        "engineCode": "B47D20 (F20 LCI) / B47D20 (F40)",
+        "reliability": "★★★★☆ [NEWLY ASSIGNED — see Data Note]",
+        "reconCost": "£3,400–£5,800 [PLACEHOLDER]",
+        "eraNote": "Chain relocated to the front — a genuinely different risk profile."
+      }
+    ],
+    "sourceNote": "This table is the single source every other section on this page matches — Sections 2, 4 and 6 reference it rather than restating conflicting figures.",
+    "dataNote": ""
+  },
+  "replacementCosts": {
+    "h2": "BMW 118d Engine Replacement Costs",
+    "columns": [
+      "Engine Type",
+      "Supply Only",
+      "Fitted (Indie)",
+      "Warranty",
+      "Best For"
+    ],
+    "rows": [
+      {
+        "engineType": "Used Engine",
+        "supplyOnly": "£1,800–£3,000",
+        "fittedIndie": "£2,650–£4,000",
+        "warranty": "1–6 months",
+        "bestFor": "Budget priority; vehicle under £4,000"
+      },
+      {
+        "engineType": "Reconditioned Engine",
+        "supplyOnly": "£3,400–£5,800",
+        "fittedIndie": "£4,500–£7,100",
+        "warranty": "12–24 months",
+        "bestFor": "Most owners — best cost/warranty balance"
+      },
+      {
+        "engineType": "Rebuilt Engine",
+        "supplyOnly": "£4,800–£7,000",
+        "fittedIndie": "£5,900–£8,300",
+        "warranty": "12–24 months",
+        "bestFor": "Long-term ownership; 3+ year horizon"
+      },
+      {
+        "engineType": "Main Dealer New",
+        "supplyOnly": "£7,500–£11,000",
+        "fittedIndie": "£9,000–£13,000",
+        "warranty": "24–36 months",
+        "bestFor": "Insurance jobs, warranty claims"
+      }
+    ],
+    "figuresNote": "Figures above reflect the current F40/B47 generation, the most common quote request today. Older generations: see the Era Map above for E81/M47 and F20 pre-LCI/N47-specific pricing, which runs lower.",
+    "labourEstimate": "Fitting a 118d engine typically takes 10–14 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer).",
+    "cta": {
+      "label": "→ Compare 118d engine prices from UK specialists",
+      "href": "#"
+    }
+  },
+  "commonProblems": {
+    "problems": [
+      {
+        "id": 1,
+        "title": "N47 Rear Timing Chain Failure (E81/E87/E82, early F20)",
+        "symptoms": "Cold-start rattle lasting 1–30 seconds, metallic ticking, engine warning light.",
+        "typicalMileage": "60,000–100,000 miles.",
+        "repairCost": "£650–£1,800 (preventative).",
+        "replacementCost": "£3,200–£5,500 (catastrophic).",
+        "urgency": {
+          "icon": "🔴",
+          "label": "Immediate",
+          "text": "if you hear rattle, book an inspection today."
+        },
+        "recommendation": "This is the single most searched N47 issue for good reason — at the first sign of cold-start rattle, get the chain inspected. A £650–£1,800 preventative repair is dramatically cheaper than the £3,200+ replacement that follows. The 118d shares the N47's rear-mounted chain design across E81/E87/E82 and early F20 models.",
+        "failureLink": {
+          "label": "Read the full timing chain failure guide",
+          "href": "/failures/n47-timing-chain/"
+        }
+      },
+      {
+        "id": 2,
+        "title": "Swirl Flap Failure (M47 150bhp variant, E81/E87/E82)",
+        "symptoms": "Loss of power, rough idle, engine warning light, occasional rattling from the intake.",
+        "typicalMileage": "100,000–180,000 miles.",
+        "repairCost": "£100–£250 (preventative blanking plates).",
+        "replacementCost": "£850–£1,200 (intake manifold, or engine repair if debris entered a cylinder).",
+        "urgency": {
+          "icon": "🟡",
+          "label": "Monitor",
+          "text": "book inspection soon."
+        },
+        "recommendation": "This affects the M47's 150bhp common-rail variant and remains a known issue on early N47s too. Preventive blanking is cheap, effective, and removes the risk entirely with no noticeable performance loss.",
+        "failureLink": {
+          "label": "Read the full swirl flap failure guide",
+          "href": "/failures/swirl-flap-failure/"
+        }
+      },
+      {
+        "id": 3,
+        "title": "EGR Cooler Coolant Leak (N47 and B47, all F20-era)",
+        "symptoms": "Coolant loss with no visible external leak, white exhaust smoke, occasional burning smell.",
+        "typicalMileage": "Any mileage — this was the subject of a global BMW recall affecting both N47 and B47 diesel variants.",
+        "repairCost": "£300–£600 (EGR cooler replacement).",
+        "replacementCost": "N/A — this doesn't typically progress to engine replacement if addressed, but ignored coolant loss can lead to overheating damage.",
+        "urgency": {
+          "icon": "🟠",
+          "label": "Immediate",
+          "text": "check recall completion status on any F20-era 118d."
+        },
+        "recommendation": "Verify recall completion before buying any N47 or B47-engined F20 118d — this is a straightforward, well-documented fix when caught early.",
+        "failureLink": {
+          "label": "Read the full EGR cooler failure guide",
+          "href": "/failures/egr-valve-cooler-failure/"
+        }
+      }
+    ]
+  },
+  "quotesCta": {
+    "headline": "Ready to Compare? Get Matched With a Vetted BMW Specialist →",
+    "supportingLine": "20+ vetted BMW specialists, every 118d engine era covered, with a 12-month warranty as standard.",
+    "button": {
+      "label": "Get My Free 118d Engine Quotes Now →",
+      "href": "#"
+    }
+  },
+  "repairBuyOrReplace": {
+    "h2": "118d — Repair, Buy, or Replace?",
+    "canItBeRepaired": {
+      "title": "Can It Be Repaired?",
+      "columns": [
+        "Problem",
+        "Repairable?",
+        "Typical Cost",
+        "When It Makes Sense"
+      ],
+      "rows": [
+        {
+          "problem": "Cold-start timing chain rattle (N47)",
+          "repairable": "✅ Yes",
+          "typicalCost": "£650–£1,800",
+          "whenItMakesSense": "Preventative — catches the fault before it becomes catastrophic"
+        },
+        {
+          "problem": "Swirl flap fault (M47/early N47)",
+          "repairable": "✅ Yes",
+          "typicalCost": "£100–£250",
+          "whenItMakesSense": "Blanking plates remove the risk entirely"
+        },
+        {
+          "problem": "EGR cooler coolant leak (N47/B47)",
+          "repairable": "✅ Yes",
+          "typicalCost": "£300–£600",
+          "whenItMakesSense": "Straightforward fix if caught before overheating"
+        },
+        {
+          "problem": "Snapped timing chain",
+          "repairable": "❌ Usually No",
+          "typicalCost": "Engine replacement",
+          "whenItMakesSense": "Piston-valve contact means little is left to repair"
+        },
+        {
+          "problem": "M47 injection pump failure (pre-2001)",
+          "repairable": "⚠️ Sometimes",
+          "typicalCost": "£400–£900 or replacement",
+          "whenItMakesSense": "Viable on lower-mileage examples; a lottery above 250,000km"
+        }
+      ]
+    },
+    "buyingChecks": {
+      "title": "Buying This 118d? Check These First",
+      "buyIf": [
+        "* Documented timing-chain history if buying an E81/E87/E82 or pre-LCI F20",
+        "* Confirmed EGR recall completion on any F20-era car",
+        "* Full service history with sub-15,000km oil intervals",
+        "* A post-LCI F20 or F40 B47 if you want the cleanest slate of any 118d generation"
+      ],
+      "avoidIf": [
+        "* E81/E87/E82 or pre-LCI F20 with cold-start rattle and no chain history",
+        "* No proof of swirl flap blanking or replacement on an M47 150bhp or early N47",
+        "* Poor service history on any generation — this badge is unforgiving of neglect",
+        "* Engine warning light with no diagnosis, regardless of generation"
+      ]
+    },
+    "closingVerdict": "Across three engine generations of this badge, the honest advice barely changes: buy on documented history, not on generation alone. The M47 and post-LCI B47 are this badge's two genuinely low-risk eras; the E81/E87/E82 and early F20 N47 demand real chain-history proof before you commit.",
+    "cta": {
+      "label": "→ Compare 118d engine prices before you buy",
+      "href": "#"
+    }
+  },
+  "buyingChecklist": {
+    "intro": "Before you buy a used BMW 118d (or before you commit to an engine replacement), check these:",
+    "items": [
+      "* Cold Start — Listen for 1–30 seconds of rattle (timing chain warning, N47/E81/E87/E82/early F20)",
+      "* Service History — including which engine era (M47/N47/B47) and confirmed oil-interval discipline",
+      "* Smoke Check — White smoke on startup can indicate EGR coolant leak",
+      "* Turbo Boost — Test acceleration; any lag, whistling, or grinding?",
+      "* DPF Regeneration — Check history; short journeys accelerate wear on all diesel eras",
+      "* Oil Consumption — Does it use more than 1L per 1,000 miles?",
+      "* Engine Warning Light — Have codes been read? Any unresolved issues?",
+      "* MOT History — Check for emissions-related failures"
+    ]
+  },
+  "engineCodes": {
+    "columns": [
+      "Engine Code",
+      "Years",
+      "Power",
+      "2025 Enquiries",
+      "Avg. Recon Cost"
+    ],
+    "rows": [
+      {
+        "engineCode": "M47D20 / M47TU2",
+        "years": "2004–2011",
+        "power": "143 bhp",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£2,800–£4,500 [PLACEHOLDER]"
+      },
+      {
+        "engineCode": "N47D20C",
+        "years": "2011–2015",
+        "power": "143 bhp",
+        "enquiries": "1,450 JLR-wide [BMW-VERIFIED]",
+        "avgReconCost": "£3,200–£5,500 [BMW-QUOTE]"
+      },
+      {
+        "engineCode": "B47D20",
+        "years": "2015–present",
+        "power": "150 bhp",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£3,400–£5,800 [PLACEHOLDER]"
+      }
+    ],
+    "matchNote": "This table's rows match Section 1B's Era Map exactly.",
+    "technicalSpecs": {
+      "title": "Technical Specs (current B47D20 generation):",
+      "items": [
+        {
+          "label": "* Displacement",
+          "value": "1,995cc"
+        },
+        {
+          "label": "* Cylinders",
+          "value": "4-cylinder inline"
+        },
+        {
+          "label": "* Compression Ratio",
+          "value": "16.5:1"
+        },
+        {
+          "label": "* Fuel System",
+          "value": "Common-rail direct injection"
+        },
+        {
+          "label": "* Turbocharger",
+          "value": "Single-turbo (VGT)"
+        }
+      ]
+    },
+    "cta": {
+      "label": "→ Compare 118d engine prices for your BMW",
+      "href": "#"
+    }
+  },
+  "marketIntelligence": {
+    "items": [
+      {
+        "label": "Most Common Failure",
+        "value": "N47 rear timing chain — approximately 65% of pre-LCI F20 118d enquiries [PATTERN DATA]"
+      },
+      {
+        "label": "Average Enquiry Mileage",
+        "value": "85,000 miles [PATTERN DATA]"
+      },
+      {
+        "label": "Average Replacement Cost",
+        "value": "£4,300 reconditioned, supply only [BMW-QUOTE]"
+      },
+      {
+        "label": "Most Requested Engine Code",
+        "value": "N47D20C [BMW-VERIFIED]"
+      },
+      {
+        "label": "Peak Enquiry Season",
+        "value": "Winter — cold starts expose chain and swirl-flap issues [PATTERN DATA]"
+      },
+      {
+        "label": "Regional Demand",
+        "value": "London (22%), South East (18%), North West (12%) [PATTERN DATA]"
+      }
+    ]
+  },
+  "faq": {
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a BMW 118d engine replacement cost in the UK?",
+        "answer": "A reconditioned 118d engine typically costs £2,800–£5,800 supply only depending on generation, with the current B47D20 sitting at £3,400–£5,800. Fitting adds £650–£1,300. Use our calculator for a figure specific to your car."
+      },
+      {
+        "id": 2,
+        "question": "Is the BMW 118d engine reliable?",
+        "answer": "It depends entirely on which of the three engine generations your 118d has — this badge spans the M47 (2004–2011, excellent reliability, no chain risk), the N47 (2011–2015, the well-documented rear-chain risk generation), and the B47 (2015–present, chain relocated to the front, meaningfully improved). Check the Era Map above for your specific car."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the BMW 118d?",
+        "answer": "Timing chain wear on N47-engined cars, swirl flap failure on the M47 150bhp variant and early N47s, and an EGR cooler coolant leak affecting both N47 and B47 F20-era cars (subject to a BMW recall)."
+      },
+      {
+        "id": 4,
+        "question": "Is it worth replacing a BMW 118d engine, or should I scrap the car?",
+        "answer": "Depends on vehicle value. Against a well-kept £7,000 118d, a £4,500 recon is 64% of the car's value — worth it. Against a tired £3,500 example, the same recon exceeds our 70% BMW threshold — get a scrap valuation first."
+      },
+      {
+        "id": 5,
+        "question": "How do I find my BMW 118d engine code?",
+        "answer": "Listed on the VIN plate and vehicle documentation. As a rule of thumb: pre-2011 is M47, 2011–2015 is N47, 2015-onward is B47. Tell us your registration date and we'll confirm it for free."
+      },
+      {
+        "id": 6,
+        "question": "Can I repair the N47 timing chain, or does it need replacement?",
+        "answer": "Yes — if caught early. A preventative chain replacement (£650–£1,800) is far cheaper than a catastrophic chain snap (£3,200–£5,500 engine replacement). At the first sign of cold-start rattle, book an inspection immediately."
+      }
+    ],
+    "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty — always confirm terms with your chosen supplier."
+  },
+  "trustCta": {
+    "h2": "Why UK BMW 118d Owners Trust BMWEngines.uk",
+    "trustPoints": [
+      {
+        "title": "Trusted 118d Engine Suppliers",
+        "text": "every garage and engine rebuilder in our network is vetted, rated and reviewed by real 118d owners, as part of the Engine Finders network, across every engine era from M47 to B47."
+      },
+      {
+        "title": "Compare 118d Engine Replacement Companies",
+        "text": "see prices, warranty terms and supply & fit options side-by-side before you commit."
+      },
+      {
+        "title": "UK Engine Replacement Services for 118d",
+        "text": "supply-only or full supply & fit available nationwide, covering every generation of this badge since 2004."
+      }
+    ],
+    "finalCta": "Find the best BMW 118d engine replacement UK drivers rely on. Compare prices from trusted specialists on EnginesMarket today and get back on the road with confidence.",
+    "ctaButton": {
+      "label": "Compare BMW 118d Engine Prices Now →",
+      "href": "#"
+    }
+  }
+}

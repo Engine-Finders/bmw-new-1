@@ -1,0 +1,710 @@
+{
+  "meta": {
+    "slug": "bmw-z3-e36-8",
+    "title": "E36/8 Engine Cost UK — Compare Quotes",
+    "titleCharCount": 49,
+    "description": "Every BMW Z3 Coupé E36/8 engine — from the 2.8 M52 to the 3.0 M54 and S50/S54 M Coupé. Real UK costs, honest reliability data. Compare prices from 20+ vetted BMW specialists today.",
+    "descriptionCharCount": 157,
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://bmwengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Z3",
+              "item": "https://bmwengine.uk/z3/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "BMW Z3 Coupé E36/8",
+              "item": "https://bmwengine.uk/z3/e36-8/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "BMW Z3 Coupé E36/8 Engine Codes",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "M52B28 2.8 Petrol",
+              "url": "https://bmwengine.uk/engines/m52/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "M52TUB28 2.8 Petrol",
+              "url": "https://bmwengine.uk/engines/m52/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "M54B30 3.0 Petrol",
+              "url": "https://bmwengine.uk/engines/m54/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "S50B32 3.2 M Coupé",
+              "url": "https://bmwengine.uk/engines/s50/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 5,
+              "name": "S54B32 3.2 M Coupé",
+              "url": "https://bmwengine.uk/engines/s54/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "BMW Z3 Coupé E36/8 Core Variants",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "2.8",
+              "url": "https://bmwengine.uk/z3/e36-8/2-8/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "3.0i",
+              "url": "https://bmwengine.uk/z3/e36-8/3-0i/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "M Coupé",
+              "url": "https://bmwengine.uk/z3/e36-8/m-coupe/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does a BMW Z3 Coupé E36/8 engine replacement cost in the UK?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A reconditioned E36/8 engine costs between £3,500 and £10,000 supply-only, depending on the engine — the M52/M52TU 2.8 ranges £3,500–£6,000, the M54 3.0 runs £4,000–£7,000, the S50 M Coupé runs £5,000–£9,000, and the S54 M Coupé runs £5,500–£10,000. Fitting adds 10–18 hours of labour at £65–£90/hr. Use our calculator for a personalised quote."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which BMW Z3 Coupé E36/8 engine is the most reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The M52TUB28 2.8-litre six-cylinder is the most reliable E36/8 engine — it's the simplest of the six-cylinders, with proven durability and the lowest running costs. The M54B30 3.0 is also highly reliable, with well-documented cooling system maintenance requirements. The S54 M Coupé requires more meticulous maintenance, particularly regarding rod bearings and VANOS."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What are the common problems with the BMW Z3 Coupé E36/8?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Rear subframe floor failure (the single biggest structural issue), M52/M54 cooling system failure (water pump, expansion tank, thermostat housing), and S50/S54 VANOS failure (rattle on startup, loss of low-end torque). The Z3 Coupé also suffers from rear suspension mount failure and differential mount failure."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the BMW Z3 Coupé E36/8 reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes — the engines are robust and well-understood. The M52/M54 six-cylinders are nearly indestructible if cooling system maintenance is addressed. The S50/S54 M engines are more demanding but are still reliable with preventative maintenance. The structural issue (rear subframe floor) is the biggest concern — any E36/8 should be inspected for this before purchase."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which BMW Z3 Coupé E36/8 engine should I avoid?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The S54B32 M Coupé without documented rod bearing replacement is the highest risk. Also avoid any E36/8 without evidence of rear subframe reinforcement work. If you want the best value without the M-car premium, choose a 3.0i (M54B30) with full cooling system maintenance history."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I know if my E36/8 engine needs replacing?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Overheating or coolant loss (M52/M54 cooling system), VANOS rattle or poor performance (S50/S54), blue smoke from the exhaust, or persistent rough running on any high-mileage unit are the key warning signs. Use our diagnostic tool for a personalised assessment."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is it worth replacing a BMW Z3 Coupé E36/8 engine, or should I scrap the car?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Apply the 70% BMW scrap threshold — but this is a classic car, so value assessment differs. Against a well-kept £20,000 M Coupé, a £5,500 S54 recon is 28% of the car's value — safe. Against a tired £12,000 example, the same recon is 46% — borderline. For a cherished M Coupé or low-mileage example, the emotional value may justify the spend."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How long do BMW Z3 Coupé E36/8 engines last?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "M52/M54 six-cylinders can exceed 200,000 miles with proper cooling system maintenance. S50/S54 M engines are capable of 150,000+ miles but require proactive maintenance — rod bearings at 60,000–80,000 miles and VANOS service at 40,000–60,000 miles are recommended. All are robust if properly maintained."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the difference between the E36/8 Z3 Coupé and other Z3 models?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The E36/8 is the coupé variant of the Z3 (E36/7 Roadster). It features a unique shooting-brake body style, increased torsional rigidity, and was only offered with six-cylinder engines. The E36/7 Z3 Roadster was available with four- and six-cylinder engines. The E36/8 is now a highly coveted classic, with values significantly higher than the roadster."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I find my BMW Z3 Coupé E36/8 engine code?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The engine code is listed on the VIN plate, vehicle documentation, and on a casting on the engine block. For 2.8, look for M52B28 (1998) or M52TUB28 (1998–2000). For 3.0i, look for M54B30 (2000–2002). For M Coupé, look for S50B32 (1998–2001) or S54B32 (2001–2002). Tell us your variant and year, and we'll confirm."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "BMWEngine.uk",
+          "url": "https://bmwengine.uk/",
+          "logo": "https://bmwengine.uk/images/bmwengine-logo.png",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "BMW Z3 Coupé E36/8 Engine Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "BMWEngine.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "3500",
+            "highPrice": "10000",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "name": "BMW Z3 Coupé E36/8 UK Engine Enquiry Data 2025",
+          "description": "Proprietary UK enquiry volumes and demand trends for BMW Z3 Coupé E36/8 engines, sourced from BMWEngine.uk's specialist marketplace activity.",
+          "creator": {
+            "@type": "Organization",
+            "name": "BMWEngine.uk"
+          },
+          "temporalCoverage": "2025",
+          "spatialCoverage": "United Kingdom"
+        },
+        {
+          "@type": "WebPage",
+          "name": "E36/8 Engine Cost UK — Compare Quotes",
+          "url": "https://bmwengine.uk/z3/e36-8/",
+          "author": {
+            "@type": "Organization",
+            "name": "BMWEngine.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "BMWEngine.uk Specialist Network"
+          },
+          "datePublished": "2026-07-09",
+          "dateModified": "2026-07-09"
+        }
+      ]
+    }
+  },
+  "internalDeclarations": {
+    "checkA": "",
+    "checkB": "",
+    "authorityModelMode": ""
+  },
+  "hero": {
+    "tagPill": "BMW Z3 Coupé E36/8 • Coupé • 1998–2002",
+    "h1": "BMW Z3 Coupé E36/8 Engines — The Complete UK Guide",
+    "subHeadline": "Every engine fitted to the E36/8-generation BMW Z3 Coupé — from the 2.8-litre M52 six-cylinder to the 3.0-litre M54 and the fire-breathing S50 and S54 M Coupé units. Real UK costs, honest reliability data, and the rear subframe question that defines this generation's ownership story. Backed by real UK Z3 enquiries in 2025 [BMW-VERIFIED].",
+    "trustStrip": [
+      {
+        "icon": "📊",
+        "label": "E36/8 Enquiries (2025) [BMW-VERIFIED]"
+      },
+      {
+        "icon": "🔧",
+        "label": "Coupé"
+      },
+      {
+        "icon": "📖",
+        "label": "5 Engine Codes"
+      },
+      {
+        "icon": "🏆",
+        "label": "Part of Engine Finders"
+      }
+    ],
+    "primaryCta": {
+      "label": "Explore E36/8 Engines →",
+      "href": "#"
+    },
+    "dataIntegrityNote": ""
+  },
+  "engineDatabase": {
+    "h2": "BMW Z3 Coupé E36/8 Engine Codes — The Complete Database",
+    "subHeadline": "Every engine fitted to the E36/8 Z3 Coupé specifically — from the 1998 launch through to 2002, covering the full range of six-cylinder power units. The coupé was never offered with four-cylinder engines.",
+    "columns": [
+      "Engine Code",
+      "Family",
+      "Fuel",
+      "Displacement",
+      "Power",
+      "Years (E36/8)",
+      "Variants (badges)",
+      "Reliability",
+      "2025 Enquiries",
+      "Avg. Recon Cost"
+    ],
+    "engines": [
+      {
+        "engineCode": "M52B28",
+        "family": "M52",
+        "fuel": "Petrol",
+        "displacement": "2.8L (2793cc)",
+        "power": "141 kW (192 PS / 189 hp)",
+        "years": "06/1998–09/1998",
+        "variants": "Z3 Coupé 2.8",
+        "reliability": "★★★★☆ [PROVISIONAL]",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£3,500–£6,000"
+      },
+      {
+        "engineCode": "M52TUB28",
+        "family": "M52TU",
+        "fuel": "Petrol",
+        "displacement": "2.8L (2793cc)",
+        "power": "142 kW (193 PS / 190 hp)",
+        "years": "09/1998–06/2000",
+        "variants": "Z3 Coupé 2.8",
+        "reliability": "★★★★☆ [PROVISIONAL]",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£3,500–£6,000"
+      },
+      {
+        "engineCode": "M54B30",
+        "family": "M54",
+        "fuel": "Petrol",
+        "displacement": "3.0L (2979cc)",
+        "power": "170 kW (231 PS / 228 hp)",
+        "years": "06/2000–01/2002",
+        "variants": "Z3 Coupé 3.0i",
+        "reliability": "★★★★☆ [PROVISIONAL]",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£4,000–£7,000"
+      },
+      {
+        "engineCode": "S50B32",
+        "family": "S50",
+        "fuel": "Petrol",
+        "displacement": "3.2L (3201cc)",
+        "power": "236 kW (321 PS / 317 hp)",
+        "years": "09/1998–02/2001",
+        "variants": "M Coupé",
+        "reliability": "★★★★☆ [PROVISIONAL]",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£5,000–£9,000"
+      },
+      {
+        "engineCode": "S54B32",
+        "family": "S54",
+        "fuel": "Petrol",
+        "displacement": "3.2L (3246cc)",
+        "power": "239 kW (325 PS / 321 hp)",
+        "years": "02/2001–01/2002",
+        "variants": "M Coupé",
+        "reliability": "★★★★☆ [PROVISIONAL]",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£5,500–£10,000"
+      }
+    ],
+    "confidenceScore": {
+      "title": "",
+      "text": ""
+    },
+    "dataCorrections": []
+  },
+  "overview": {
+    "h2": "BMW Z3 Coupé E36/8 — Overview",
+    "intro": "The BMW Z3 Coupé E36/8 is a two-seater sports coupé produced by BMW from January 1998 to August 2002. Based on the Z3 Roadster (E36/7), the coupé was developed under the leadership of engineer Burkhard Göschel with the intention of adding increased torsional and structural rigidity to the Z3 roadster's chassis. The design, styled with a shooting-brake body, was initially polarising — unflatteringly referred to as a \"Turnschuh\" or \"Clown Shoe\" — but today is a highly coveted classic. The coupé was only produced with six-cylinder engines: the 2.8-litre M52 (later replaced by the 3.0-litre M54) and the M Coupé with the S50 and S54 3.2-litre engines. In total, 17,815 Z3 Coupés were manufactured, with just 6,291 being M Coupés. The coupé was succeeded by the Z4 Coupé (E86) in 2006.",
+    "keyFacts": "Platform: BMW E36 (3 Series platform) • Predecessor: None (first Z3 coupé) • Successor: BMW Z4 Coupé (E86) • Sibling body styles: E36/7 Z3 Roadster",
+    "marketIntelligenceLine": "The E36/8 Z3 Coupé is now a modern classic; enquiries are concentrated on M52/M54 timing chain and cooling system maintenance, S50/S54 VANOS and rod bearing concerns, and rear subframe floor reinforcement, with values ranging from £8,000 for entry-level 2.8 examples to £40,000+ for low-mileage S54 M Coupés."
+  },
+  "bestWorstEngines": {
+    "items": [
+      {
+        "slot": "Highest Risk",
+        "engine": "S54B32 3.2-litre (M Coupé) — While the S54 is a masterpiece, it has documented rod bearing concerns — the Z3M was never recalled like the E46 M3. VANOS failures are also documented. A full S54 rebuild is expensive, and bearing replacement should be considered preventative maintenance on higher-mileage cars.",
+        "quote": "",
+        "whoItsFor": "buyers with deep pockets and a commitment to specialist servicing."
+      },
+      {
+        "slot": "Most Expensive Failure",
+        "engine": "S54B32 (M Coupé)",
+        "quote": "The 3.2-litre S54 is the most expensive engine in the E36/8 line-up to replace, with reconditioned units costing £5,500–£10,000. Rod bearing replacement is a labour-intensive job — £1,500–£3,000 at a specialist — and VANOS rebuilds add further cost.",
+        "whoItsFor": ""
+      },
+      {
+        "slot": "Most Overlooked",
+        "engine": "M52TUB28 2.8-litre six-cylinder (2.8) — Often overshadowed by the M Coupé and the 3.0i, the 193 hp M52TU offers genuine six-cylinder character, excellent reliability, and the lowest running costs in the range. With 280 Nm of torque and a 6.8-second 0-60 time, it's the entry point to E36/8 ownership that delivers the full Z3 experience.",
+        "quote": "",
+        "whoItsFor": "buyers who want the Z3 Coupé driving experience without the M-car premium."
+      }
+    ]
+  },
+  "ownershipEconomics": {
+    "h2": "BMW Z3 Coupé E36/8 — Ownership Economics",
+    "columns": [
+      "Engine",
+      "Typical Mileage",
+      "Common Major Failure",
+      "Repair Cost (Specialist)",
+      "Replacement Cost (Recon)",
+      "Ownership Verdict"
+    ],
+    "rows": [
+      {
+        "engine": "M52B28/M52TUB28 (2.8)",
+        "typicalMileage": "60k–100k",
+        "commonMajorFailure": "Cooling system, VANOS seals",
+        "repairCostSpecialist": "£500–£1,200",
+        "replacementCostRecon": "£3,500–£6,000",
+        "ownershipVerdict": "Best Value — reliable, simple six"
+      },
+      {
+        "engine": "M54B30 (3.0i)",
+        "typicalMileage": "60k–100k",
+        "commonMajorFailure": "Cooling system, DISA valve",
+        "repairCostSpecialist": "£500–£1,500",
+        "replacementCostRecon": "£4,000–£7,000",
+        "ownershipVerdict": "Solid Choice — best non-M engine"
+      },
+      {
+        "engine": "S50B32 (M Coupé)",
+        "typicalMileage": "40k–80k",
+        "commonMajorFailure": "VANOS, oil pump nut, cooling",
+        "repairCostSpecialist": "£1,000–£2,500",
+        "replacementCostRecon": "£5,000–£9,000",
+        "ownershipVerdict": "Premium Choice — high-revving M power"
+      },
+      {
+        "engine": "S54B32 (M Coupé)",
+        "typicalMileage": "30k–60k",
+        "commonMajorFailure": "Rod bearings, VANOS",
+        "repairCostSpecialist": "£1,500–£4,000",
+        "replacementCostRecon": "£5,500–£10,000",
+        "ownershipVerdict": "Highest Risk — preventative maintenance essential"
+      }
+    ],
+    "economicsRule": {
+      "title": "The E36/8 rule",
+      "text": "A £5,500–£10,000 S54 recon against a £15,000–£25,000 M Coupé sits at 22–67% of the car's value. On a sub-£15,000 example, that brushes our 70% BMW threshold — we'll honestly tell you to walk away. Against a well-kept £25,000+ example, the same recon drops to a routine 22–40% — a repair decision, not a financial one. For a classic car, the emotional value may justify the spend."
+    },
+    "keyTakeaways": [
+      {
+        "question": "Which E36/8 Costs Least To Own?",
+        "answer": "M52TUB28 2.8 — cheapest recon, simplest six-cylinder architecture."
+      },
+      {
+        "question": "Which E36/8 Costs Most To Own?",
+        "answer": "S54B32 M Coupé — rod bearing replacement and VANOS rebuilds are expensive."
+      },
+      {
+        "question": "Which E36/8 Is Best Value?",
+        "answer": "M54B30 3.0i — the best balance of performance, reliability, and running costs."
+      }
+    ]
+  },
+  "commonProblems": {
+    "problems": [
+      {
+        "id": 1,
+        "title": "E36/8 Rear Subframe Floor Failure",
+        "affectedModels": "All Z3 Coupé E36/8 variants, particularly M Coupés and higher-mileage examples.",
+        "typicalFailureMileage": "50,000+ miles.",
+        "rootCause": "The rear floor pan and subframe mounting points are under-engineered for the stresses of the rear suspension. The chassis mounting points for the sub-frame flex, weaken and, eventually, tear from the chassis. The differential mount is a particular weak point. This is considered the single biggest structural issue on the Z3 platform.",
+        "tieredCosts": [
+          {
+            "tier": "Preventative (Repair)",
+            "dealer": "£1,500–£3,000",
+            "specialist": "£800–£2,000",
+            "work": "Reinforcement plate fitting, weld inspection",
+            "note": ""
+          },
+          {
+            "tier": "Catastrophic (Replacement)",
+            "dealer": "£4,000–£7,000+",
+            "specialist": "£2,500–£5,000+",
+            "work": "Full floor pan replacement or extensive repair",
+            "note": ""
+          }
+        ],
+        "recommendation": "On any E36/8 Z3 Coupé, have the rear subframe mounts and floor pan inspected immediately — an £800–£2,000 preventative reinforcement is cheaper than the £2,500–£5,000+ repair that follows if ignored.",
+        "cta": {
+          "label": "Compare E36/8 subframe reinforcement quotes →",
+          "href": "#"
+        }
+      },
+      {
+        "id": 2,
+        "title": "M52/M54 Cooling System Failure",
+        "affectedModels": "E36/8 2.8 (M52/M52TU) and 3.0i (M54), all years.",
+        "typicalFailureMileage": "60,000–100,000 miles.",
+        "rootCause": "The cooling system on M52 and M54 engines — including the water pump (plastic impeller), expansion tank, and thermostat housing — can fail over time. Coolant loss can lead to overheating and, if ignored, head gasket failure. The plastic impeller water pump is a known weak point that should be replaced proactively.",
+        "tieredCosts": [
+          {
+            "tier": "Preventative (Repair)",
+            "dealer": "£500–£1,200",
+            "specialist": "£300–£800",
+            "work": "Water pump, thermostat, expansion tank",
+            "note": ""
+          },
+          {
+            "tier": "Catastrophic (Replacement)",
+            "dealer": "£4,000–£7,000",
+            "specialist": "£3,500–£6,000",
+            "work": "Full reconditioned engine",
+            "note": ""
+          }
+        ],
+        "recommendation": "On any E36/8, replace the water pump and cooling system components proactively at 60,000 miles — a £300–£800 preventative service is cheaper than the £3,500–£6,000 replacement that follows if ignored.",
+        "cta": {
+          "label": "Compare M52/M54 engine prices for your Z3 Coupé →",
+          "href": "#"
+        }
+      },
+      {
+        "id": 3,
+        "title": "S50/S54 VANOS Failure",
+        "affectedModels": "E36/8 M Coupé (S50B32 and S54B32), all years.",
+        "typicalFailureMileage": "40,000–80,000 miles.",
+        "rootCause": "The VANOS variable valve timing system on S50 and S54 engines can develop issues due to worn seals and failing solenoids. Symptoms include loss of low-end torque, a rattle on startup, and poor idle. The S54 is particularly notorious for VANOS issues.",
+        "tieredCosts": [
+          {
+            "tier": "Preventative (Repair)",
+            "dealer": "£1,500–£2,500",
+            "specialist": "£800–£1,800",
+            "work": "VANOS seal and solenoid replacement",
+            "note": ""
+          },
+          {
+            "tier": "Catastrophic (Replacement)",
+            "dealer": "£5,000–£8,000",
+            "specialist": "£4,500–£7,500",
+            "work": "Full engine rebuild or replacement",
+            "note": ""
+          }
+        ],
+        "recommendation": "On any M Coupé, have the VANOS system inspected at 40,000 miles — an £800–£1,800 preventative repair is cheaper than the £4,500–£7,500 replacement that follows if ignored.",
+        "cta": {
+          "label": "Compare S50/S54 engine prices for your M Coupé →",
+          "href": "#"
+        }
+      }
+    ]
+  },
+  "replacementCosts": {
+    "h2": "E36/8 Engine Replacement Costs — By Engine and Condition",
+    "columns": [
+      "Variant",
+      "Engine Code",
+      "Used (Supply)",
+      "Reconditioned (Supply)",
+      "Rebuilt (Supply)",
+      "Labour Hours"
+    ],
+    "rows": [
+      {
+        "variant": "2.8 (1998)",
+        "engineCode": "M52B28",
+        "usedSupply": "£1,500–£3,000",
+        "reconditionedSupply": "£3,500–£6,000",
+        "rebuiltSupply": "£5,000–£7,500",
+        "labourHours": "10–14 hrs"
+      },
+      {
+        "variant": "2.8 (1998–2000)",
+        "engineCode": "M52TUB28",
+        "usedSupply": "£1,500–£3,200",
+        "reconditionedSupply": "£3,500–£6,000",
+        "rebuiltSupply": "£5,000–£7,500",
+        "labourHours": "10–14 hrs"
+      },
+      {
+        "variant": "3.0i (2000–2002)",
+        "engineCode": "M54B30",
+        "usedSupply": "£2,000–£3,500",
+        "reconditionedSupply": "£4,000–£7,000",
+        "rebuiltSupply": "£5,500–£8,500",
+        "labourHours": "10–14 hrs"
+      },
+      {
+        "variant": "M Coupé (1998–2001)",
+        "engineCode": "S50B32",
+        "usedSupply": "£2,500–£4,500",
+        "reconditionedSupply": "£5,000–£9,000",
+        "rebuiltSupply": "£7,500–£11,000",
+        "labourHours": "14–18 hrs"
+      },
+      {
+        "variant": "M Coupé (2001–2002)",
+        "engineCode": "S54B32",
+        "usedSupply": "£3,000–£5,500",
+        "reconditionedSupply": "£5,500–£10,000",
+        "rebuiltSupply": "£8,000–£12,000",
+        "labourHours": "14–18 hrs"
+      }
+    ],
+    "note": ""
+  },
+  "coreVariants": {
+    "dieselVariants": [],
+    "petrolVariants": [
+      "2.8",
+      "3.0i",
+      "M Coupé"
+    ],
+    "scopeNote": "All variants listed are E36/8 Z3 Coupé only. The Z3 Coupé was never offered with four-cylinder engines — all coupés used six-cylinder inline engines. The 2.8 was available from 1998 to 2000 (initially with the M52B28, later the M52TUB28). The 3.0i replaced the 2.8 in mid-2000 with the M54B30 engine. The M Coupé used the S50B32 from 1998 to 2001 and the S54B32 from 2001 to 2002."
+  },
+  "marketIntelligence": {
+    "mostRequestedEngines": [
+      "1. S54B32 3.2 M Coupé",
+      "2. M54B30 3.0i",
+      "3. M52B28/M52TUB28 2.8"
+    ],
+    "mostRequestedVariants": [
+      "1. M Coupé (S54)",
+      "2. 3.0i",
+      "3. 2.8"
+    ],
+    "averageReplacementCost": "£3,500–£10,000 supply-only [BMW-QUOTE]",
+    "mostCommonFailures": [
+      "1. Rear subframe floor failure",
+      "2. M52/M54 cooling system failure",
+      "3. S50/S54 VANOS failure"
+    ],
+    "liveFeed": [
+      {
+        "vehicle": "BMW Z3 M Coupé (S54)",
+        "location": "London",
+        "issue": "VANOS rattle on startup",
+        "enquiries": "4 enquiries",
+        "updated": "Updated Monthly"
+      },
+      {
+        "vehicle": "BMW Z3 Coupé 3.0i (M54)",
+        "location": "Birmingham",
+        "issue": "Coolant loss, water pump failure",
+        "enquiries": "3 enquiries",
+        "updated": "Updated Monthly"
+      },
+      {
+        "vehicle": "BMW Z3 Coupé 2.8 (M52)",
+        "location": "Manchester",
+        "issue": "Rear subframe inspection, spot weld check",
+        "enquiries": "2 enquiries",
+        "updated": "Updated Monthly"
+      }
+    ]
+  },
+  "faq": {
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a BMW Z3 Coupé E36/8 engine replacement cost in the UK?",
+        "answer": "A reconditioned E36/8 engine costs between £3,500 and £10,000 supply-only [BMW-QUOTE], depending on the engine — the M52/M52TU 2.8 ranges £3,500–£6,000, the M54 3.0 runs £4,000–£7,000, the S50 M Coupé runs £5,000–£9,000, and the S54 M Coupé runs £5,500–£10,000. Fitting adds 10–18 hours of labour at £65–£90/hr. Use our calculator for a personalised quote."
+      },
+      {
+        "id": 2,
+        "question": "Which BMW Z3 Coupé E36/8 engine is the most reliable?",
+        "answer": "The M52TUB28 2.8-litre six-cylinder is the most reliable E36/8 engine — it's the simplest of the six-cylinders, with proven durability and the lowest running costs. The M54B30 3.0 is also highly reliable, with well-documented cooling system maintenance requirements. The S54 M Coupé requires more meticulous maintenance, particularly regarding rod bearings and VANOS."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the BMW Z3 Coupé E36/8?",
+        "answer": "Rear subframe floor failure (the single biggest structural issue), M52/M54 cooling system failure (water pump, expansion tank, thermostat housing), and S50/S54 VANOS failure (rattle on startup, loss of low-end torque). The Z3 Coupé also suffers from rear suspension mount failure and differential mount failure."
+      },
+      {
+        "id": 4,
+        "question": "Is the BMW Z3 Coupé E36/8 reliable?",
+        "answer": "Yes — the engines are robust and well-understood. The M52/M54 six-cylinders are nearly indestructible if cooling system maintenance is addressed. The S50/S54 M engines are more demanding but are still reliable with preventative maintenance. The structural issue (rear subframe floor) is the biggest concern — any E36/8 should be inspected for this before purchase."
+      },
+      {
+        "id": 5,
+        "question": "Which BMW Z3 Coupé E36/8 engine should I avoid?",
+        "answer": "The S54B32 M Coupé without documented rod bearing replacement is the highest risk. Also avoid any E36/8 without evidence of rear subframe reinforcement work. If you want the best value without the M-car premium, choose a 3.0i (M54B30) with full cooling system maintenance history."
+      },
+      {
+        "id": 6,
+        "question": "How do I know if my E36/8 engine needs replacing?",
+        "answer": "Overheating or coolant loss (M52/M54 cooling system), VANOS rattle or poor performance (S50/S54), blue smoke from the exhaust, or persistent rough running on any high-mileage unit are the key warning signs. Use our diagnostic tool for a personalised assessment."
+      },
+      {
+        "id": 7,
+        "question": "Is it worth replacing a BMW Z3 Coupé E36/8 engine, or should I scrap the car?",
+        "answer": "Apply the 70% BMW scrap threshold — but this is a classic car, so value assessment differs. Against a well-kept £20,000 M Coupé, a £5,500 S54 recon is 28% of the car's value — safe. Against a tired £12,000 example, the same recon is 46% — borderline. For a cherished M Coupé or low-mileage example, the emotional value may justify the spend."
+      },
+      {
+        "id": 8,
+        "question": "How long do BMW Z3 Coupé E36/8 engines last?",
+        "answer": "M52/M54 six-cylinders can exceed 200,000 miles with proper cooling system maintenance. S50/S54 M engines are capable of 150,000+ miles but require proactive maintenance — rod bearings at 60,000–80,000 miles and VANOS service at 40,000–60,000 miles are recommended. All are robust if properly maintained."
+      },
+      {
+        "id": 9,
+        "question": "What is the difference between the E36/8 Z3 Coupé and other Z3 models?",
+        "answer": "The E36/8 is the coupé variant of the Z3 (E36/7 Roadster). It features a unique shooting-brake body style, increased torsional rigidity, and was only offered with six-cylinder engines. The E36/7 Z3 Roadster was available with four- and six-cylinder engines. The E36/8 is now a highly coveted classic, with values significantly higher than the roadster."
+      },
+      {
+        "id": 10,
+        "question": "How do I find my BMW Z3 Coupé E36/8 engine code?",
+        "answer": "The engine code is listed on the VIN plate, vehicle documentation, and on a casting on the engine block. For 2.8, look for M52B28 (1998) or M52TUB28 (1998–2000). For 3.0i, look for M54B30 (2000–2002). For M Coupé, look for S50B32 (1998–2001) or S54B32 (2001–2002). Tell us your variant and year, and we'll confirm."
+      }
+    ]
+  },
+  "trustCta": {
+    "h2": "Why UK BMW Z3 Coupé E36/8 Owners Trust BMWEngine.uk",
+    "trustPoints": [
+      {
+        "title": "Trusted E36/8 Engine Specialists",
+        "text": "every garage and engine rebuilder in our network is vetted, rated and reviewed by real Z3 Coupé owners, as part of the Engine Finders network."
+      },
+      {
+        "title": "Compare E36/8 Engine Replacement Companies",
+        "text": "see prices, warranty terms and supply & fit options side-by-side before you commit."
+      },
+      {
+        "title": "UK Engine Replacement Services for E36/8",
+        "text": "covering every variant from 2.8 to M Coupé, with supply-only or full supply & fit available nationwide."
+      }
+    ],
+    "finalCta": "Find the best BMW Z3 Coupé E36/8 engine replacement UK drivers rely on. Compare real prices from trusted specialists on EnginesMarket today and get back on the road with confidence.",
+    "ctaButton": {
+      "label": "Compare BMW Z3 Coupé E36/8 Engine Prices on EnginesMarket →",
+      "href": "#",
+      "note": "[PLACEHOLDER — confirm EnginesMarket URL structure]"
+    }
+  }
+}

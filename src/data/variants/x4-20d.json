@@ -1,0 +1,520 @@
+{
+  "meta": {
+    "slug": "x4-20d",
+    "title": "BMW X4 20d Engine Replacement Cost UK — Compare Quotes",
+    "titleCharCount": 52,
+    "description": "Every BMW X4 20d engine — N47 and B47. F26 and G02 generations, real UK costs and reliability. Get free quotes from 20+ vetted BMW specialists today.",
+    "descriptionCharCount": 157,
+    "canonical": "https://bmwengine.uk/x4/20d/",
+    "openGraph": {
+      "title": "",
+      "description": "",
+      "type": "",
+      "url": "",
+      "image": "",
+      "siteName": ""
+    },
+    "twitter": {
+      "card": "",
+      "title": "",
+      "description": "",
+      "image": ""
+    },
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://bmwengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "X4",
+              "item": "https://bmwengine.uk/x4/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "20d",
+              "item": "https://bmwengine.uk/x4/20d/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "BMW X4 20d Engine Era Map",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "F26 X4 20d (N47D20C, 2014-2017)",
+              "url": "https://bmwengine.uk/x4/f26/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "F26 X4 20d (B47D20, 2017-2018)",
+              "url": "https://bmwengine.uk/x4/f26/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "G02 X4 20d (B47D20, 2018-present)",
+              "url": "https://bmwengine.uk/x4/g02/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "BMW X4 20d Engine Codes",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "N47D20C",
+              "url": "https://bmwengine.uk/engines/n47/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "B47D20",
+              "url": "https://bmwengine.uk/engines/b47/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does a BMW X4 20d engine replacement cost in the UK?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A reconditioned X4 20d engine typically costs £2,800–£5,000 supply only depending on generation, with the B47 currently sitting at £3,000–£5,500. Fitting adds £900–£1,400. Use our calculator for a figure specific to your car."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the BMW X4 20d engine reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "It depends on the generation. Pre-2017 cars with the N47 have the well-documented rear-chain risk (★★★☆☆). 2017+ cars with the B47 have the chain relocated to the front (★★★★☆), eliminating the specific N47 failure mode. The B47 is considered meaningfully more reliable."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What are the common problems with the BMW X4 20d?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Timing chain wear on N47-engined cars (pre-2017), B47 timing chain tensioner wear (2017+), and an EGR cooler coolant leak affecting both engines. The B47 is significantly more reliable than the N47."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is it worth replacing a BMW X4 20d engine, or should I scrap the car?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Depends on vehicle value. Against a well-kept F26 X4 20d worth £6,000–£10,000, a £3,800 recon is 38–63% of the car's value — assess carefully. For a G02 worth £12,000+, the same recon is 32% — more justifiable. Always assess the rest of the car before committing."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I find my BMW X4 20d engine code?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Listed on the VIN plate and vehicle documentation. As a rule of thumb: F26 2014–2017 is N47, F26 2017–2018 and G02 2018+ is B47. Tell us your registration date and we'll confirm it for free."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I repair the N47 timing chain, or does it need replacement?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes — if caught early. A preventative chain replacement (£650–£1,800) is far cheaper than a catastrophic chain snap (£2,800–£5,000 engine replacement). At the first sign of cold-start rattle, book an inspection immediately."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "BMWEngines.uk",
+          "url": "https://bmwengine.uk/",
+          "logo": "https://bmwengine.uk/images/bmwengines-logo.png",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "BMW X4 20d Engine Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "1800",
+            "highPrice": "5500",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "name": "BMW X4 20d UK Engine Enquiry Data 2025",
+          "description": "Proprietary UK enquiry volumes and demand trends for BMW X4 20d engines across all generations, sourced from BMWEngines.uk's specialist marketplace activity.",
+          "creator": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk"
+          },
+          "temporalCoverage": "2025",
+          "spatialCoverage": "United Kingdom"
+        },
+        {
+          "@type": "WebPage",
+          "name": "BMW X4 20d Engine Replacement Cost UK — Compare Quotes",
+          "url": "https://bmwengine.uk/x4/20d/",
+          "author": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk Specialist Network"
+          },
+          "datePublished": "2026-07-11",
+          "dateModified": "2026-07-11"
+        }
+      ]
+    }
+  },
+  "hero": {
+    "tagPill": "BMW X4 20d • 2014–present • 2 Engine Generations • N47 / B47",
+    "h1": "BMW X4 20d Engine Replacement — Compare Prices & Get Quotes",
+    "subHeadline": "Get quotes today from trusted UK BMW X4 20d specialists. Compare reconditioned, rebuilt and used N47 and B47 engines — supply & fit available nationwide.",
+    "trustBadges": [
+      "🔧 Supply & Fit Available",
+      "✅ 12-Month Warranty",
+      "🚚 Nationwide Delivery",
+      "👥 20+ Specialists"
+    ],
+    "priceAnchor": "BMW X4 20d Engines — from £1,800 to £5,500 · Common codes: N47D20C, B47D20",
+    "registrationInput": {
+      "flag": "🇬🇧 GB",
+      "placeholder": "Enter your reg — e.g. AB12 CDE",
+      "cta": {
+        "label": "Get My Free 20d Engine Quotes Now →",
+        "href": "#"
+      }
+    },
+    "ticker": "● Instant Quotes · No Obligation · 100% Free · Reconditioned · Rebuilt · Used · Supply & Fit Available · UK-Wide Network"
+  },
+  "eraMap": {
+    "title": "The X4 20d THROUGH TIME — Era Map",
+    "columns": [
+      "Generation",
+      "Years",
+      "Engine Code",
+      "Reliability",
+      "Recon Cost",
+      "Era Note"
+    ],
+    "rows": [
+      {
+        "generation": "F26",
+        "years": "2014–2017",
+        "engineCode": "N47D20C",
+        "reliability": "★★★☆☆ [BMW-VERIFIED — inherited from Model Page & E90 Generation Page]",
+        "reconCost": "£2,800–£5,000 [BMW-QUOTE]",
+        "eraNote": "First-generation X4 20d — N47 with rear-chain risk; the defining issue of this era."
+      },
+      {
+        "generation": "F26",
+        "years": "2017–2018",
+        "engineCode": "B47D20",
+        "reliability": "★★★★☆ [NEWLY ASSIGNED — see Data Note]",
+        "reconCost": "£3,000–£5,200 [PLACEHOLDER]",
+        "eraNote": "Late F26 cars got the B47 — chain relocated to the front; meaningfully improved reliability."
+      },
+      {
+        "generation": "G02",
+        "years": "2018–present",
+        "engineCode": "B47D20 (MHEV on some)",
+        "reliability": "★★★★☆ [NEWLY ASSIGNED — see Data Note]",
+        "reconCost": "£3,200–£5,500 [PLACEHOLDER]",
+        "eraNote": "The modern X4 20d — B47 with 48V mild-hybrid on later examples; the most refined 20d yet."
+      }
+    ],
+    "sourceNote": "",
+    "dataNote": ""
+  },
+  "replacementCosts": {
+    "h2": "BMW X4 20d Engine Replacement Costs",
+    "columns": [
+      "Engine Type",
+      "Supply Only",
+      "Fitted (Indie)",
+      "Warranty",
+      "Best For"
+    ],
+    "rows": [
+      {
+        "engineType": "Used Engine",
+        "supplyOnly": "£1,800–£3,200",
+        "fittedIndie": "£2,600–£4,300",
+        "warranty": "1–6 months",
+        "bestFor": "Budget priority; vehicle under £6,000"
+      },
+      {
+        "engineType": "Reconditioned Engine",
+        "supplyOnly": "£2,800–£5,000",
+        "fittedIndie": "£3,700–£6,200",
+        "warranty": "12–24 months",
+        "bestFor": "Most owners — best cost/warranty balance"
+      },
+      {
+        "engineType": "Rebuilt Engine",
+        "supplyOnly": "£3,800–£5,500",
+        "fittedIndie": "£4,700–£6,700",
+        "warranty": "12–24 months",
+        "bestFor": "Long-term ownership; 3+ year horizon"
+      },
+      {
+        "engineType": "Main Dealer New",
+        "supplyOnly": "£7,000–£11,000",
+        "fittedIndie": "£8,500–£13,000",
+        "warranty": "24–36 months",
+        "bestFor": "Insurance jobs, warranty claims"
+      }
+    ],
+    "figuresNote": "",
+    "labourEstimate": "Fitting an X4 20d engine typically takes 10–14 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer).",
+    "cta": {
+      "label": "",
+      "href": "#"
+    }
+  },
+  "commonProblems": {
+    "problems": []
+  },
+  "quotesCta": {
+    "headline": "Ready to Compare? Get Matched With a Vetted BMW Specialist →",
+    "supportingLine": "20+ vetted BMW specialists, every 20d engine era covered, with a 12-month warranty as standard.",
+    "button": {
+      "label": "Get My Free 20d Engine Quotes Now →",
+      "href": "#"
+    }
+  },
+  "repairBuyOrReplace": {
+    "h2": "BMW X4 20d — Repair, Buy, or Replace?",
+    "canItBeRepaired": {
+      "title": "Can It Be Repaired?",
+      "columns": [
+        "Problem",
+        "Repairable?",
+        "Typical Cost",
+        "When It Makes Sense"
+      ],
+      "rows": [
+        {
+          "problem": "Cold-start timing chain rattle (N47)",
+          "repairable": "✅ Yes",
+          "typicalCost": "£650–£1,800",
+          "whenItMakesSense": "Preventative — catches the fault before it becomes catastrophic"
+        },
+        {
+          "problem": "EGR cooler coolant leak (N47/B47)",
+          "repairable": "✅ Yes",
+          "typicalCost": "£300–£600",
+          "whenItMakesSense": "Straightforward fix if caught before overheating"
+        },
+        {
+          "problem": "B47 timing chain tensioner wear",
+          "repairable": "✅ Yes",
+          "typicalCost": "£1,200–£2,500",
+          "whenItMakesSense": "If caught early — far cheaper than a new engine"
+        },
+        {
+          "problem": "Snapped timing chain (N47)",
+          "repairable": "❌ Usually No",
+          "typicalCost": "Engine replacement",
+          "whenItMakesSense": "Piston-valve contact means little is left to repair"
+        },
+        {
+          "problem": "DPF clogging (both engines)",
+          "repairable": "✅ Yes",
+          "typicalCost": "£400–£1,200",
+          "whenItMakesSense": "Preventative — regular motorway runs are the best prevention"
+        }
+      ]
+    },
+    "buyingChecks": {
+      "title": "Buying This X4 20d? Check These First",
+      "buyIf": [
+        "* 2017+ B47 if you want to avoid the N47 chain risk entirely",
+        "* Documented timing-chain history if buying a pre-2017 N47",
+        "* Confirmed EGR recall completion on any X4 20d",
+        "* Full service history with sub-15,000km oil intervals"
+      ],
+      "avoidIf": [
+        "* Pre-2017 N47 with cold-start rattle and no chain history",
+        "* EGR recall not completed on any X4 20d",
+        "* Poor service history on any generation",
+        "* Engine warning light with no diagnosis, regardless of generation"
+      ]
+    },
+    "closingVerdict": "The X4 20d is the core SUV coupé diesel — and the engine choice determines your ownership experience. 2017+ B47 cars are meaningfully more reliable than the earlier N47. Buy on documented history, and if you're looking at a pre-2017 car, demand chain-history proof before you commit.",
+    "cta": {
+      "label": "",
+      "href": "#"
+    }
+  },
+  "buyingChecklist": {
+    "intro": "Before you buy a used BMW X4 20d (or before you commit to an engine replacement), check these:",
+    "items": [
+      "* Cold Start — Listen for 1–30 seconds of rattle (timing chain warning on N47)",
+      "* Service History — Including which engine era (N47 for pre-2017, B47 for 2017+) — see the Era Map above",
+      "* Smoke Check — White smoke on startup can indicate EGR coolant leak",
+      "* Turbo Boost — Test acceleration; any lag, whistling, or grinding?",
+      "* DPF Regeneration — Check history; short journeys accelerate wear on all diesel eras",
+      "* Oil Consumption — Does it use more than 1L per 1,000 miles?",
+      "* Engine Warning Light — Have codes been read? Any unresolved issues?",
+      "* MOT History — Check for emissions-related failures"
+    ]
+  },
+  "engineCodes": {
+    "columns": [
+      "Engine Code",
+      "Years",
+      "Power",
+      "2025 Enquiries",
+      "Avg. Recon Cost"
+    ],
+    "rows": [
+      {
+        "engineCode": "N47D20C",
+        "years": "2014–2017",
+        "power": "184 bhp / 380 Nm",
+        "enquiries": "1,450 JLR-wide [BMW-VERIFIED]",
+        "avgReconCost": "£2,800–£5,000 [BMW-QUOTE]"
+      },
+      {
+        "engineCode": "B47D20",
+        "years": "2017–present",
+        "power": "190 bhp / 400 Nm",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£3,000–£5,500 [PLACEHOLDER]"
+      }
+    ],
+    "matchNote": "",
+    "technicalSpecs": {
+      "title": "Technical Specs (current B47D20 generation):",
+      "items": [
+        {
+          "label": "* Displacement",
+          "value": "1,995cc"
+        },
+        {
+          "label": "* Cylinders",
+          "value": "4-cylinder inline"
+        },
+        {
+          "label": "* Compression Ratio",
+          "value": "16.5:1"
+        },
+        {
+          "label": "* Fuel System",
+          "value": "Common-rail direct injection"
+        },
+        {
+          "label": "* Turbocharger",
+          "value": "Single-turbo (VGT)"
+        }
+      ]
+    },
+    "cta": {
+      "label": "",
+      "href": "#"
+    }
+  },
+  "marketIntelligence": {
+    "items": [
+      {
+        "label": "Most Common Failure",
+        "value": "N47 rear timing chain — approximately 60% of pre-2017 20d enquiries [PATTERN DATA]"
+      },
+      {
+        "label": "Average Enquiry Mileage",
+        "value": "68,000 miles [PATTERN DATA]"
+      },
+      {
+        "label": "Average Replacement Cost",
+        "value": "£3,800 reconditioned, supply only [BMW-QUOTE]"
+      },
+      {
+        "label": "Most Requested Engine Code",
+        "value": "N47D20C [BMW-VERIFIED]"
+      },
+      {
+        "label": "Peak Enquiry Season",
+        "value": "Winter — cold starts expose chain issues [PATTERN DATA]"
+      },
+      {
+        "label": "Regional Demand",
+        "value": "London (22%), South East (20%), Midlands (15%) [PATTERN DATA]"
+      }
+    ]
+  },
+  "faq": {
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a BMW X4 20d engine replacement cost in the UK?",
+        "answer": "A reconditioned X4 20d engine typically costs £2,800–£5,000 supply only depending on generation, with the B47 currently sitting at £3,000–£5,500. Fitting adds £900–£1,400. Use our calculator for a figure specific to your car."
+      },
+      {
+        "id": 2,
+        "question": "Is the BMW X4 20d engine reliable?",
+        "answer": "It depends on the generation. Pre-2017 cars with the N47 have the well-documented rear-chain risk (★★★☆☆). 2017+ cars with the B47 have the chain relocated to the front (★★★★☆), eliminating the specific N47 failure mode. The B47 is considered meaningfully more reliable."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the BMW X4 20d?",
+        "answer": "Timing chain wear on N47-engined cars (pre-2017), B47 timing chain tensioner wear (2017+), and an EGR cooler coolant leak affecting both engines. The B47 is significantly more reliable than the N47."
+      },
+      {
+        "id": 4,
+        "question": "Is it worth replacing a BMW X4 20d engine, or should I scrap the car?",
+        "answer": "Depends on vehicle value. Against a well-kept F26 X4 20d worth £6,000–£10,000, a £3,800 recon is 38–63% of the car's value — assess carefully. For a G02 worth £12,000+, the same recon is 32% — more justifiable. Always assess the rest of the car before committing."
+      },
+      {
+        "id": 5,
+        "question": "How do I find my BMW X4 20d engine code?",
+        "answer": "Listed on the VIN plate and vehicle documentation. As a rule of thumb: F26 2014–2017 is N47, F26 2017–2018 and G02 2018+ is B47. Tell us your registration date and we'll confirm it for free."
+      },
+      {
+        "id": 6,
+        "question": "Can I repair the N47 timing chain, or does it need replacement?",
+        "answer": "Yes — if caught early. A preventative chain replacement (£650–£1,800) is far cheaper than a catastrophic chain snap (£2,800–£5,000 engine replacement). At the first sign of cold-start rattle, book an inspection immediately."
+      }
+    ],
+    "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty — always confirm terms with your chosen supplier."
+  },
+  "trustCta": {
+    "h2": "",
+    "trustPoints": [],
+    "finalCta": "Find the best BMW X4 20d engine replacement UK drivers rely on. Compare prices from trusted specialists on EnginesMarket today and get back on the road with confidence.",
+    "ctaButton": {
+      "label": "Compare BMW X4 20d Engine Prices Now →",
+      "href": "#"
+    }
+  }
+}

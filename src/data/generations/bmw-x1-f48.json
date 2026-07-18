@@ -1,0 +1,505 @@
+{
+  "meta": {
+    "slug": "bmw-x1-f48",
+    "title": "BMW X1 F48 Engines — The Complete UK Guide",
+    "titleCharCount": 42,
+    "description": "",
+    "descriptionCharCount": 0,
+    "jsonLd": {}
+  },
+  "internalDeclarations": {
+    "checkA": "",
+    "checkB": "",
+    "authorityModelMode": ""
+  },
+  "hero": {
+    "tagPill": "BMW X1 F48 • SUV • 2015–2022",
+    "h1": "BMW X1 F48 Engines — The Complete UK Guide",
+    "subHeadline": "Every engine fitted to the second-generation X1 F48 — from the 1.5-litre B38 three-cylinder to the 2.0-litre B48 four-cylinder, the B47 diesels and the xDrive25e plug-in hybrid. Real UK costs, honest reliability data, and BMW's first front-wheel-drive X1. Backed by 154+ real UK F48 enquiries in 2025 [BMW-VERIFIED].",
+    "trustStrip": [
+      {
+        "icon": "📊",
+        "label": "154+ F48 Enquiries (2025) [BMW-VERIFIED]"
+      },
+      {
+        "icon": "🔧",
+        "label": "SUV"
+      },
+      {
+        "icon": "📖",
+        "label": "10+ Engine Codes"
+      },
+      {
+        "icon": "🏆",
+        "label": "Part of Engine Finders"
+      }
+    ],
+    "primaryCta": {
+      "label": "Explore F48 Engines →",
+      "href": "#"
+    },
+    "dataIntegrityNote": ""
+  },
+  "engineDatabase": {
+    "h2": "BMW X1 F48 Engine Codes — The Complete Database",
+    "subHeadline": "Every engine fitted to the X1 F48 specifically — from the entry-level sDrive18i to the range-topping xDrive25d and xDrive25e plug-in hybrid.",
+    "columns": [
+      "Engine Code",
+      "Family",
+      "Fuel",
+      "Displacement",
+      "Power",
+      "Years (F48)",
+      "Variants (badges)",
+      "Reliability",
+      "2025 Enquiries",
+      "Avg. Recon Cost"
+    ],
+    "engines": [
+      {
+        "engineCode": "B38A15A",
+        "family": "B38",
+        "fuel": "Petrol",
+        "displacement": "1.5L (1499 cc)",
+        "power": "136 PS (100 kW)",
+        "years": "2015–2022",
+        "variants": "sDrive18i",
+        "reliability": "★★★★☆ [PROVISIONAL — pending dedicated Engine Page]",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£1,800–£3,200 [BMW-QUOTE]"
+      },
+      {
+        "engineCode": "B48A20A",
+        "family": "B48",
+        "fuel": "Petrol",
+        "displacement": "2.0L (1998 cc)",
+        "power": "178–192 PS (131–141 kW)",
+        "years": "2015–2022",
+        "variants": "sDrive20i, xDrive20i",
+        "reliability": "★★★★☆ [PROVISIONAL — pending dedicated Engine Page]",
+        "enquiries": "154 (model-level) [BMW-VERIFIED]",
+        "avgReconCost": "£2,800–£4,500 [BMW-QUOTE]"
+      },
+      {
+        "engineCode": "B48A20B",
+        "family": "B48",
+        "fuel": "Petrol",
+        "displacement": "2.0L (1998 cc)",
+        "power": "231 PS (170 kW)",
+        "years": "2016–2022",
+        "variants": "xDrive25i",
+        "reliability": "★★★★☆ [PROVISIONAL — pending dedicated Engine Page]",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£3,200–£5,000 [BMW-QUOTE]"
+      },
+      {
+        "engineCode": "B48A20F",
+        "family": "B48",
+        "fuel": "Petrol",
+        "displacement": "2.0L (1998 cc)",
+        "power": "178 PS (131 kW)",
+        "years": "2015–2022",
+        "variants": "sDrive20i",
+        "reliability": "★★★★☆ [PROVISIONAL — pending dedicated Engine Page]",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£2,800–£4,500 [BMW-QUOTE]"
+      },
+      {
+        "engineCode": "B37C15A",
+        "family": "B37",
+        "fuel": "Diesel",
+        "displacement": "1.5L (1496 cc)",
+        "power": "116 PS (85 kW)",
+        "years": "2015–2022",
+        "variants": "sDrive16d",
+        "reliability": "★★★☆☆ [PROVISIONAL — pending dedicated Engine Page]",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£2,000–£3,500 [BMW-QUOTE]"
+      },
+      {
+        "engineCode": "B47C20A",
+        "family": "B47",
+        "fuel": "Diesel",
+        "displacement": "2.0L (1995 cc)",
+        "power": "136–150 PS (100–110 kW)",
+        "years": "2015–2022",
+        "variants": "sDrive18d, xDrive18d",
+        "reliability": "★★★★☆ [PROVISIONAL — pending dedicated Engine Page]",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£3,200–£5,500 [BMW-QUOTE]"
+      },
+      {
+        "engineCode": "B47C20B",
+        "family": "B47",
+        "fuel": "Diesel",
+        "displacement": "2.0L (1995 cc)",
+        "power": "190 PS (140 kW)",
+        "years": "2015–2022",
+        "variants": "xDrive20d",
+        "reliability": "★★★★☆ [PROVISIONAL — pending dedicated Engine Page]",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£3,500–£6,000 [BMW-QUOTE]"
+      },
+      {
+        "engineCode": "B47B20",
+        "family": "B47",
+        "fuel": "Diesel",
+        "displacement": "2.0L (1995 cc)",
+        "power": "231 PS (170 kW)",
+        "years": "2016–2022",
+        "variants": "xDrive25d",
+        "reliability": "★★★★☆ [PROVISIONAL — pending dedicated Engine Page]",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£3,800–£6,500 [BMW-QUOTE]"
+      },
+      {
+        "engineCode": "B38A15A (PHEV)",
+        "family": "B38",
+        "fuel": "Petrol PHEV",
+        "displacement": "1.5L (1499 cc)",
+        "power": "125 PS (92 kW) + electric = 220 PS system",
+        "years": "2020–2022",
+        "variants": "xDrive25e",
+        "reliability": "★★★★☆ [PROVISIONAL — pending dedicated Engine Page]",
+        "enquiries": "— (pattern data)",
+        "avgReconCost": "£3,500–£5,500 [BMW-QUOTE]"
+      }
+    ],
+    "confidenceScore": {
+      "title": "",
+      "text": ""
+    },
+    "dataCorrections": []
+  },
+  "overview": {
+    "h2": "BMW X1 F48 — Overview",
+    "intro": "The second-generation BMW X1 (codenamed F48) was unveiled at the September 2015 Frankfurt Motor Show and entered production in June 2015. Built on BMW's modular front-wheel-drive UKL2 platform, the F48 marked a significant departure from its rear-wheel-drive predecessor, the E84. The engine range launched with 1.5-litre B38 three-cylinder and 2.0-litre B48 four-cylinder petrols, alongside B37 and B47 diesels. A plug-in hybrid xDrive25e joined the range in 2020. A facelift (LCI) was introduced in 2019. Production ended in June 2022, replaced by the third-generation U11 X1.",
+    "keyFacts": "Platform: BMW UKL2 (front-wheel-drive) • Predecessor: BMW X1 E84 • Successor: BMW X1 U11 • Sibling body styles in this generation: N/A — F48 is the sole body code (sDrive front-wheel-drive, xDrive all-wheel-drive).",
+    "marketIntelligenceLine": "The X1 F48 generated 154 real UK engine enquiries in 2025 [BMW-VERIFIED], concentrated on the 2.0-litre petrol and diesel variants as the most popular UK choices."
+  },
+  "bestWorstEngines": {
+    "items": [
+      {
+        "slot": "Best Petrol Overall",
+        "engine": "B48A20A/B — 20i/25i (2015–2022)",
+        "quote": "The B48 2.0-litre is BMW's most refined four-cylinder — smooth, responsive and genuinely reliable. The 20i offers 178–192 PS; the 25i delivers 231 PS. Both are a significant step up from the older N20.",
+        "whoItsFor": "buyers who want the best all-round F48 petrol."
+      },
+      {
+        "slot": "Best Diesel Overall",
+        "engine": "B47C20B — 20d (2015–2022)",
+        "quote": "The B47 is a significant improvement over the N47 — timing chain issues are far less common, and EGR cooler problems are well-documented and manageable. The 20d's 190 PS offers excellent economy without sacrificing performance.",
+        "whoItsFor": "buyers who want diesel economy with genuine pace."
+      },
+      {
+        "slot": "Highest Risk",
+        "engine": "B37C15A — 16d",
+        "quote": "The 1.5-litre three-cylinder diesel is the least powerful engine in the F48 range — 116 PS is marginal for an SUV of this weight. It's also the least common, meaning parts and specialist knowledge are harder to find.",
+        "whoItsFor": "buyers who prioritise fuel economy above all else."
+      },
+      {
+        "slot": "Most Expensive Failure",
+        "engine": "B47B20 — 25d",
+        "quote": "The 25d is the range-topping diesel with 231 PS — twin-turbo complexity adds significant maintenance costs. Injector and turbo repairs are more expensive than on the single-turbo 20d.",
+        "whoItsFor": "buyers who want diesel performance and are prepared for the bills."
+      },
+      {
+        "slot": "Best Value",
+        "engine": "B48A20A — 20i",
+        "quote": "The 20i is the most common F48 petrol — reliable, efficient and well-supported. A £2,800–£4,500 recon makes sense against an £8,000–£22,000 vehicle.",
+        "whoItsFor": "buyers who want the most cost-effective F48 ownership."
+      },
+      {
+        "slot": "Most Overlooked",
+        "engine": "B38A15A — 18i",
+        "quote": "The 1.5-litre three-cylinder is often overlooked by buyers chasing bigger engines — but it's a genuinely charming unit, reliable and surprisingly perky in the F48's lightweight UKL2 chassis. Perfect for urban driving.",
+        "whoItsFor": "buyers who want low running costs and don't need four-cylinder pace."
+      }
+    ]
+  },
+  "ownershipEconomics": {
+    "h2": "BMW X1 F48 — Ownership Economics",
+    "columns": [
+      "Engine",
+      "Typical Mileage",
+      "Common Major Failure",
+      "Repair Cost (Specialist)",
+      "Replacement Cost (Recon)",
+      "Ownership Verdict"
+    ],
+    "rows": [
+      {
+        "engine": "B38A15A (1.5 18i)",
+        "typicalMileage": "60k–100k",
+        "commonMajorFailure": "Cooling system, water pump",
+        "repairCostSpecialist": "£400–£800",
+        "replacementCostRecon": "£1,800–£3,200",
+        "ownershipVerdict": "Solid Choice — reliable three-cylinder"
+      },
+      {
+        "engine": "B48A20A/F (2.0 20i)",
+        "typicalMileage": "60k–120k",
+        "commonMajorFailure": "Cooling system, water pump",
+        "repairCostSpecialist": "£400–£900",
+        "replacementCostRecon": "£2,800–£4,500",
+        "ownershipVerdict": "Best Petrol — B48 is a modern classic"
+      },
+      {
+        "engine": "B48A20B (2.0 25i)",
+        "typicalMileage": "60k–120k",
+        "commonMajorFailure": "Cooling system, water pump",
+        "repairCostSpecialist": "£400–£900",
+        "replacementCostRecon": "£3,200–£5,000",
+        "ownershipVerdict": "Solid Choice — more power, same reliability"
+      },
+      {
+        "engine": "B37C15A (1.5 16d)",
+        "typicalMileage": "60k–100k",
+        "commonMajorFailure": "Injectors, turbo, EGR",
+        "repairCostSpecialist": "£500–£1,200",
+        "replacementCostRecon": "£2,000–£3,500",
+        "ownershipVerdict": "Watch Closely — underpowered, less common"
+      },
+      {
+        "engine": "B47C20A (2.0 18d)",
+        "typicalMileage": "60k–120k",
+        "commonMajorFailure": "EGR cooler, DPF",
+        "repairCostSpecialist": "£400–£900",
+        "replacementCostRecon": "£3,200–£5,500",
+        "ownershipVerdict": "Solid Choice — improved over N47"
+      },
+      {
+        "engine": "B47C20B (2.0 20d)",
+        "typicalMileage": "60k–120k",
+        "commonMajorFailure": "EGR cooler, DPF",
+        "repairCostSpecialist": "£400–£900",
+        "replacementCostRecon": "£3,500–£6,000",
+        "ownershipVerdict": "Best Diesel — B47 is a modern classic"
+      },
+      {
+        "engine": "B47B20 (2.0 25d)",
+        "typicalMileage": "60k–100k",
+        "commonMajorFailure": "Injectors, turbo (twin), EGR",
+        "repairCostSpecialist": "£600–£1,500",
+        "replacementCostRecon": "£3,800–£6,500",
+        "ownershipVerdict": "Watch Closely — twin-turbo complexity"
+      },
+      {
+        "engine": "B38A15A PHEV (1.5 25e)",
+        "typicalMileage": "40k–80k",
+        "commonMajorFailure": "Battery health, charging system",
+        "repairCostSpecialist": "£500–£1,500",
+        "replacementCostRecon": "£3,500–£5,500",
+        "ownershipVerdict": "Future Tech — hybrid complexity"
+      }
+    ],
+    "economicsRule": {
+      "title": "The F48 rule",
+      "text": "A £2,800–£4,500 B48 recon against an £8,000–£22,000 F48 sits at 13–56% of the car's value — within our 70% BMW threshold. Even against a high-mileage £6,000 example, the same recon is 47–75% — assess carefully. The F48 holds value well enough that engine replacement is almost always viable."
+    },
+    "keyTakeaways": []
+  },
+  "commonProblems": {
+    "problems": [
+      {
+        "id": 1,
+        "title": "B38/B48 Cooling System",
+        "affectedModels": "F48 18i, 20i, 25i (all B-series petrol engines, 2015–2022).",
+        "typicalFailureMileage": "60,000–100,000 miles.",
+        "rootCause": "The B-series modular engines are generally reliable, but cooling system components — water pump, expansion tank, plastic fittings — can develop leaks. This is the most common B-series failure point across the range.",
+        "tieredCosts": [
+          {
+            "tier": "Preventative (Repair)",
+            "dealer": "£600–£1,200",
+            "specialist": "£400–£900",
+            "work": "",
+            "note": ""
+          },
+          {
+            "tier": "Catastrophic (Replacement)",
+            "dealer": "£3,500–£5,500",
+            "specialist": "£2,800–£4,500",
+            "work": "",
+            "note": ""
+          }
+        ],
+        "recommendation": "On any B-series F48 approaching 60,000 miles, have the cooling system inspected — a £400–£900 preventative repair is cheaper than the £2,800+ replacement that follows an overheating failure.",
+        "cta": {
+          "label": "Compare B48 engine prices for your F48 →",
+          "href": "#"
+        }
+      },
+      {
+        "id": 2,
+        "title": "B47 Diesel EGR Cooler",
+        "affectedModels": "F48 18d, 20d, 25d (B47 diesel, 2015–2022).",
+        "typicalFailureMileage": "60,000–120,000 miles.",
+        "rootCause": "The B47 diesel's EGR cooler can develop internal leaks, allowing coolant into the exhaust. This is a known issue across BMW's B47 engine family. The B47 is otherwise a significant improvement over the N47 — timing chain issues are far less common.",
+        "tieredCosts": [
+          {
+            "tier": "Preventative (Repair)",
+            "dealer": "£600–£1,200",
+            "specialist": "£400–£900",
+            "work": "",
+            "note": ""
+          },
+          {
+            "tier": "Catastrophic (Replacement)",
+            "dealer": "£4,000–£6,500",
+            "specialist": "£3,200–£5,500",
+            "work": "",
+            "note": ""
+          }
+        ],
+        "recommendation": "At the first sign of coolant loss or white smoke, get the EGR cooler inspected — a £400–£900 repair is cheaper than the £3,200+ replacement that follows if ignored.",
+        "cta": {
+          "label": "Compare B47 engine prices for your F48 →",
+          "href": "#"
+        }
+      },
+      {
+        "id": 3,
+        "title": "xDrive25e PHEV Battery & Charging System",
+        "affectedModels": "F48 xDrive25e (PHEV, 2020–2022).",
+        "typicalFailureMileage": "40,000–80,000 miles.",
+        "rootCause": "The xDrive25e adds significant complexity — a lithium-ion battery pack, electric motor and charging system. Battery degradation and charging system faults are the primary concerns. The internal combustion engine (B38) is robust, but the hybrid system requires specialist attention.",
+        "tieredCosts": [
+          {
+            "tier": "Preventative (Repair)",
+            "dealer": "£800–£1,500",
+            "specialist": "£500–£1,200",
+            "work": "",
+            "note": ""
+          },
+          {
+            "tier": "Catastrophic (Replacement)",
+            "dealer": "£5,000–£8,000",
+            "specialist": "£3,500–£5,500",
+            "work": "",
+            "note": ""
+          }
+        ],
+        "recommendation": "If you're buying an xDrive25e, have a full battery health check and charging system inspection before purchase. Hybrid components can be expensive to replace — factor this into your ownership budget.",
+        "cta": {
+          "label": "Compare xDrive25e engine prices for your F48 →",
+          "href": "#"
+        }
+      }
+    ]
+  },
+  "replacementCosts": {
+    "h2": "F48 Engine Replacement Costs — By Engine and Condition",
+    "columns": [
+      "Variant",
+      "Engine Code",
+      "Used (Supply)",
+      "Reconditioned (Supply)",
+      "Rebuilt (Supply)",
+      "Labour Hours"
+    ],
+    "rows": [
+      {
+        "variant": "sDrive18i",
+        "engineCode": "B38A15A",
+        "usedSupply": "£800–£1,800",
+        "reconditionedSupply": "£1,800–£3,200",
+        "rebuiltSupply": "£2,800–£4,500",
+        "labourHours": "8–12 hrs"
+      },
+      {
+        "variant": "sDrive20i/xDrive20i",
+        "engineCode": "B48A20A/B48A20F",
+        "usedSupply": "£1,500–£2,800",
+        "reconditionedSupply": "£2,800–£4,500",
+        "rebuiltSupply": "£4,000–£6,000",
+        "labourHours": "10–14 hrs"
+      },
+      {
+        "variant": "xDrive25i",
+        "engineCode": "B48A20B",
+        "usedSupply": "£1,800–£3,200",
+        "reconditionedSupply": "£3,200–£5,000",
+        "rebuiltSupply": "£4,500–£7,000",
+        "labourHours": "10–14 hrs"
+      },
+      {
+        "variant": "sDrive16d",
+        "engineCode": "B37C15A",
+        "usedSupply": "£800–£1,800",
+        "reconditionedSupply": "£2,000–£3,500",
+        "rebuiltSupply": "£3,000–£5,000",
+        "labourHours": "8–12 hrs"
+      },
+      {
+        "variant": "sDrive18d/xDrive18d",
+        "engineCode": "B47C20A",
+        "usedSupply": "£1,500–£3,000",
+        "reconditionedSupply": "£3,200–£5,500",
+        "rebuiltSupply": "£4,500–£7,000",
+        "labourHours": "10–14 hrs"
+      },
+      {
+        "variant": "xDrive20d",
+        "engineCode": "B47C20B",
+        "usedSupply": "£1,800–£3,200",
+        "reconditionedSupply": "£3,500–£6,000",
+        "rebuiltSupply": "£5,000–£8,000",
+        "labourHours": "10–14 hrs"
+      },
+      {
+        "variant": "xDrive25d",
+        "engineCode": "B47B20",
+        "usedSupply": "£2,000–£3,500",
+        "reconditionedSupply": "£3,800–£6,500",
+        "rebuiltSupply": "£5,500–£8,500",
+        "labourHours": "10–14 hrs"
+      },
+      {
+        "variant": "xDrive25e (PHEV)",
+        "engineCode": "B38A15A",
+        "usedSupply": "£1,800–£3,200",
+        "reconditionedSupply": "£3,500–£5,500",
+        "rebuiltSupply": "£5,000–£7,500",
+        "labourHours": "10–14 hrs"
+      }
+    ],
+    "note": "No Generation variance from the Engine Page baseline — no dedicated Engine Pages exist for these families yet, so baseline figures are drawn from the EM_Proprietary_Data Table A. Labour hours estimated at 8–12 hours for three-cylinder engines and 10–14 hours for four-cylinder engines. The UKL2 platform's transverse layout affects labour access."
+  },
+  "coreVariants": {
+    "dieselVariants": [
+      "sDrive16d",
+      "sDrive18d",
+      "xDrive18d",
+      "xDrive20d",
+      "xDrive25d"
+    ],
+    "petrolVariants": [
+      "sDrive18i",
+      "sDrive20i",
+      "xDrive20i",
+      "xDrive25i",
+      "xDrive25e"
+    ],
+    "scopeNote": "All variants listed are X1 F48 only. sDrive denotes front-wheel drive; xDrive denotes all-wheel drive. The xDrive25e plug-in hybrid (2020–2022) combines a 1.5-litre three-cylinder petrol engine with an electric motor for 220 PS system output."
+  },
+  "marketIntelligence": {
+    "mostRequestedEngines": [],
+    "mostRequestedVariants": [],
+    "averageReplacementCost": "",
+    "mostCommonFailures": [],
+    "liveFeed": []
+  },
+  "faq": {
+    "items": []
+  },
+  "trustCta": {
+    "h2": "",
+    "trustPoints": [],
+    "finalCta": "",
+    "ctaButton": {
+      "label": "",
+      "href": "#",
+      "note": ""
+    }
+  }
+}
