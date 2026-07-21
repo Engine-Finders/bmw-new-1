@@ -1,106 +1,132 @@
 [
   {
-    "slug": "bmw-b37-b47",
+    "slug": "b37-b47",
+    "type": "engines",
     "dataFile": "bmw-b37-b47"
   },
   {
-    "slug": "bmw-b38-b48",
+    "slug": "b38-b48",
+    "type": "engines",
     "dataFile": "bmw-b38-b48"
   },
   {
-    "slug": "bmw-b57-b58",
+    "slug": "b57-b58",
+    "type": "engines",
     "dataFile": "bmw-b57-b58"
   },
   {
-    "slug": "bmw-m10",
+    "slug": "m10",
+    "type": "engines",
     "dataFile": "bmw-m10"
   },
   {
-    "slug": "bmw-m20",
+    "slug": "m20",
+    "type": "engines",
     "dataFile": "bmw-m20"
   },
   {
-    "slug": "bmw-m21",
+    "slug": "m21",
+    "type": "engines",
     "dataFile": "bmw-m21"
   },
   {
-    "slug": "bmw-m30",
+    "slug": "m30",
+    "type": "engines",
     "dataFile": "bmw-m30"
   },
   {
-    "slug": "bmw-m40-m42-m43-m44",
+    "slug": "m40-m42-m43-m44",
+    "type": "engines",
     "dataFile": "bmw-m40-m42-m43-m44"
   },
   {
-    "slug": "bmw-m47",
+    "slug": "m47",
+    "type": "engines",
     "dataFile": "bmw-m47"
   },
   {
-    "slug": "bmw-m50-m52-m54",
+    "slug": "m50-m52-m54",
+    "type": "engines",
     "dataFile": "bmw-m50-m52-m54"
   },
   {
-    "slug": "bmw-m57",
+    "slug": "m57",
+    "type": "engines",
     "dataFile": "bmw-m57"
   },
   {
-    "slug": "bmw-m70-m73",
+    "slug": "m70-m73",
+    "type": "engines",
     "dataFile": "bmw-m70-m73"
   },
   {
-    "slug": "bmw-n13-n20",
+    "slug": "n13-n20",
+    "type": "engines",
     "dataFile": "bmw-n13-n20"
   },
   {
-    "slug": "bmw-n40-n42-n43-n45-n46",
+    "slug": "n40-n42-n43-n45-n46",
+    "type": "engines",
     "dataFile": "bmw-n40-n42-n43-n45-n46"
   },
   {
-    "slug": "bmw-n47",
+    "slug": "n47",
+    "type": "engines",
     "dataFile": "bmw-n47"
   },
   {
-    "slug": "bmw-n52-n53",
+    "slug": "n52-n53",
+    "type": "engines",
     "dataFile": "bmw-n52-n53"
   },
   {
-    "slug": "bmw-n54-n55",
+    "slug": "n54-n55",
+    "type": "engines",
     "dataFile": "bmw-n54-n55"
   },
   {
-    "slug": "bmw-n57",
+    "slug": "n57",
+    "type": "engines",
     "dataFile": "bmw-n57"
   },
   {
-    "slug": "bmw-n62-n63",
+    "slug": "n62-n63",
+    "type": "engines",
     "dataFile": "bmw-n62-n63"
   },
   {
-    "slug": "bmw-n73-n74",
+    "slug": "n73-n74",
+    "type": "engines",
     "dataFile": "bmw-n73-n74"
   },
   {
-    "slug": "bmw-s14",
+    "slug": "s14",
+    "type": "engines",
     "dataFile": "bmw-s14"
   },
   {
-    "slug": "bmw-s50-s52-s54",
+    "slug": "s50-s52-s54",
+    "type": "engines",
     "dataFile": "bmw-s50-s52-s54"
   },
   {
-    "slug": "bmw-s55",
+    "slug": "s55",
+    "type": "engines",
     "dataFile": "bmw-s55"
   },
   {
-    "slug": "bmw-s62",
+    "slug": "s62",
+    "type": "engines",
     "dataFile": "bmw-s62"
   },
   {
-    "slug": "bmw-s63-s65",
+    "slug": "s63-s65",
+    "type": "engines",
     "dataFile": "bmw-s63-s65"
   },
   {
-    "slug": "bmw-s70-s85",
+    "slug": "s70-s85",
+    "type": "engines",
     "dataFile": "bmw-s70-s85"
   }
 ]

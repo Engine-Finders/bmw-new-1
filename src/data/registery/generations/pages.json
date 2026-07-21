@@ -1,474 +1,710 @@
 [
   {
-    "slug": "bmw-02-series-e10",
+    "parent": "2-series",
+    "slug": "e10",
+    "type": "generations",
     "dataFile": "bmw-02-series-e10"
   },
   {
-    "slug": "bmw-1-series-e81",
+    "parent": "1-series",
+    "slug": "e81",
+    "type": "generations",
     "dataFile": "bmw-1-series-e81"
   },
   {
-    "slug": "bmw-1-series-e82",
+    "parent": "1-series",
+    "slug": "e82",
+    "type": "generations",
     "dataFile": "bmw-1-series-e82"
   },
   {
-    "slug": "bmw-1-series-e87",
+    "parent": "1-series",
+    "slug": "e87",
+    "type": "generations",
     "dataFile": "bmw-1-series-e87"
   },
   {
-    "slug": "bmw-1-series-e88",
+    "parent": "1-series",
+    "slug": "e88",
+    "type": "generations",
     "dataFile": "bmw-1-series-e88"
   },
   {
-    "slug": "bmw-1-series-f20",
+    "parent": "1-series",
+    "slug": "f20",
+    "type": "generations",
     "dataFile": "bmw-1-series-f20"
   },
   {
-    "slug": "bmw-1-series-f21",
+    "parent": "1-series",
+    "slug": "f21",
+    "type": "generations",
     "dataFile": "bmw-1-series-f21"
   },
   {
-    "slug": "bmw-1-series-f40",
+    "parent": "1-series",
+    "slug": "f40",
+    "type": "generations",
     "dataFile": "bmw-1-series-f40"
   },
   {
-    "slug": "bmw-1-series-f70",
+    "parent": "1-series",
+    "slug": "f70",
+    "type": "generations",
     "dataFile": "bmw-1-series-f70"
   },
   {
-    "slug": "bmw-2-series-active-tourer-f45",
+    "parent": "2-series-active-tourer",
+    "slug": "f45",
+    "type": "generations",
     "dataFile": "bmw-2-series-active-tourer-f45"
   },
   {
-    "slug": "bmw-2-series-active-tourer-u06",
+    "parent": "2-series-active-tourer",
+    "slug": "u06",
+    "type": "generations",
     "dataFile": "bmw-2-series-active-tourer-u06"
   },
   {
-    "slug": "bmw-2-series-f22",
+    "parent": "2-series",
+    "slug": "f22",
+    "type": "generations",
     "dataFile": "bmw-2-series-f22"
   },
   {
-    "slug": "bmw-2-series-f23",
+    "parent": "2-series",
+    "slug": "f23",
+    "type": "generations",
     "dataFile": "bmw-2-series-f23"
   },
   {
-    "slug": "bmw-2-series-f44",
+    "parent": "2-series",
+    "slug": "f44",
+    "type": "generations",
     "dataFile": "bmw-2-series-f44"
   },
   {
-    "slug": "bmw-2-series-f46",
+    "parent": "2-series",
+    "slug": "f46",
+    "type": "generations",
     "dataFile": "bmw-2-series-f46"
   },
   {
-    "slug": "bmw-2-series-f74",
+    "parent": "2-series",
+    "slug": "f74",
+    "type": "generations",
     "dataFile": "bmw-2-series-f74"
   },
   {
-    "slug": "bmw-2-series-g42",
+    "parent": "2-series",
+    "slug": "g42",
+    "type": "generations",
     "dataFile": "bmw-2-series-g42"
   },
   {
-    "slug": "bmw-3-series-compact-e36-5",
+    "parent": "3-series-compact",
+    "slug": "e36-5",
+    "type": "generations",
     "dataFile": "bmw-3-series-compact-e36-5"
   },
   {
-    "slug": "bmw-3-series-compact-e46-5",
+    "parent": "3-series-compact",
+    "slug": "e46-5",
+    "type": "generations",
     "dataFile": "bmw-3-series-compact-e46-5"
   },
   {
-    "slug": "bmw-3-series-e21",
+    "parent": "3-series",
+    "slug": "e21",
+    "type": "generations",
     "dataFile": "bmw-3-series-e21"
   },
   {
-    "slug": "bmw-3-series-e30",
+    "parent": "3-series",
+    "slug": "e30",
+    "type": "generations",
     "dataFile": "bmw-3-series-e30"
   },
   {
-    "slug": "bmw-3-series-e36",
+    "parent": "3-series",
+    "slug": "e36",
+    "type": "generations",
     "dataFile": "bmw-3-series-e36"
   },
   {
-    "slug": "bmw-3-series-e46",
+    "parent": "3-series",
+    "slug": "e46",
+    "type": "generations",
     "dataFile": "bmw-3-series-e46"
   },
   {
-    "slug": "bmw-3-series-e90",
+    "parent": "3-series",
+    "slug": "e90",
+    "type": "generations",
     "dataFile": "bmw-3-series-e90"
   },
   {
-    "slug": "bmw-3-series-e91",
+    "parent": "3-series",
+    "slug": "e91",
+    "type": "generations",
     "dataFile": "bmw-3-series-e91"
   },
   {
-    "slug": "bmw-3-series-e92",
+    "parent": "3-series",
+    "slug": "e92",
+    "type": "generations",
     "dataFile": "bmw-3-series-e92"
   },
   {
-    "slug": "bmw-3-series-e93",
+    "parent": "3-series",
+    "slug": "e93",
+    "type": "generations",
     "dataFile": "bmw-3-series-e93"
   },
   {
-    "slug": "bmw-3-series-f30",
+    "parent": "3-series",
+    "slug": "f30",
+    "type": "generations",
     "dataFile": "bmw-3-series-f30"
   },
   {
-    "slug": "bmw-3-series-f31",
+    "parent": "3-series",
+    "slug": "f31",
+    "type": "generations",
     "dataFile": "bmw-3-series-f31"
   },
   {
-    "slug": "bmw-3-series-f34",
+    "parent": "3-series",
+    "slug": "f34",
+    "type": "generations",
     "dataFile": "bmw-3-series-f34"
   },
   {
-    "slug": "bmw-3-series-g20",
+    "parent": "3-series",
+    "slug": "g20",
+    "type": "generations",
     "dataFile": "bmw-3-series-g20"
   },
   {
-    "slug": "bmw-3-series-g21",
+    "parent": "3-series",
+    "slug": "g21",
+    "type": "generations",
     "dataFile": "bmw-3-series-g21"
   },
   {
-    "slug": "bmw-4-series-f32",
+    "parent": "4-series",
+    "slug": "f32",
+    "type": "generations",
     "dataFile": "bmw-4-series-f32"
   },
   {
-    "slug": "bmw-4-series-f33",
+    "parent": "4-series",
+    "slug": "f33",
+    "type": "generations",
     "dataFile": "bmw-4-series-f33"
   },
   {
-    "slug": "bmw-4-series-f36",
+    "parent": "4-series",
+    "slug": "f36",
+    "type": "generations",
     "dataFile": "bmw-4-series-f36"
   },
   {
-    "slug": "bmw-4-series-g22",
+    "parent": "4-series",
+    "slug": "g22",
+    "type": "generations",
     "dataFile": "bmw-4-series-g22"
   },
   {
-    "slug": "bmw-4-series-g23",
+    "parent": "4-series",
+    "slug": "g23",
+    "type": "generations",
     "dataFile": "bmw-4-series-g23"
   },
   {
-    "slug": "bmw-4-series-g26",
+    "parent": "4-series",
+    "slug": "g26",
+    "type": "generations",
     "dataFile": "bmw-4-series-g26"
   },
   {
-    "slug": "bmw-5-series-e12",
+    "parent": "5-series",
+    "slug": "e12",
+    "type": "generations",
     "dataFile": "bmw-5-series-e12"
   },
   {
-    "slug": "bmw-5-series-e28",
+    "parent": "5-series",
+    "slug": "e28",
+    "type": "generations",
     "dataFile": "bmw-5-series-e28"
   },
   {
-    "slug": "bmw-5-series-e34",
+    "parent": "5-series",
+    "slug": "e34",
+    "type": "generations",
     "dataFile": "bmw-5-series-e34"
   },
   {
-    "slug": "bmw-5-series-e39",
+    "parent": "5-series",
+    "slug": "e39",
+    "type": "generations",
     "dataFile": "bmw-5-series-e39"
   },
   {
-    "slug": "bmw-5-series-e60",
+    "parent": "5-series",
+    "slug": "e60",
+    "type": "generations",
     "dataFile": "bmw-5-series-e60"
   },
   {
-    "slug": "bmw-5-series-e61",
+    "parent": "5-series",
+    "slug": "e61",
+    "type": "generations",
     "dataFile": "bmw-5-series-e61"
   },
   {
-    "slug": "bmw-5-series-f07",
+    "parent": "5-series",
+    "slug": "f07",
+    "type": "generations",
     "dataFile": "bmw-5-series-f07"
   },
   {
-    "slug": "bmw-5-series-f10",
+    "parent": "5-series",
+    "slug": "f10",
+    "type": "generations",
     "dataFile": "bmw-5-series-f10"
   },
   {
-    "slug": "bmw-5-series-f11",
+    "parent": "5-series",
+    "slug": "f11",
+    "type": "generations",
     "dataFile": "bmw-5-series-f11"
   },
   {
-    "slug": "bmw-5-series-g30",
+    "parent": "5-series",
+    "slug": "g30",
+    "type": "generations",
     "dataFile": "bmw-5-series-g30"
   },
   {
-    "slug": "bmw-5-series-g31",
+    "parent": "5-series",
+    "slug": "g31",
+    "type": "generations",
     "dataFile": "bmw-5-series-g31"
   },
   {
-    "slug": "bmw-5-series-g60",
+    "parent": "5-series",
+    "slug": "g60",
+    "type": "generations",
     "dataFile": "bmw-5-series-g60"
   },
   {
-    "slug": "bmw-5-series-g61",
+    "parent": "5-series",
+    "slug": "g61",
+    "type": "generations",
     "dataFile": "bmw-5-series-g61"
   },
   {
-    "slug": "bmw-6-series-e24",
+    "parent": "6-series",
+    "slug": "e24",
+    "type": "generations",
     "dataFile": "bmw-6-series-e24"
   },
   {
-    "slug": "bmw-6-series-e63",
+    "parent": "6-series",
+    "slug": "e63",
+    "type": "generations",
     "dataFile": "bmw-6-series-e63"
   },
   {
-    "slug": "bmw-6-series-e64",
+    "parent": "6-series",
+    "slug": "e64",
+    "type": "generations",
     "dataFile": "bmw-6-series-e64"
   },
   {
-    "slug": "bmw-6-series-f06",
+    "parent": "6-series",
+    "slug": "f06",
+    "type": "generations",
     "dataFile": "bmw-6-series-f06"
   },
   {
-    "slug": "bmw-6-series-f12",
+    "parent": "6-series",
+    "slug": "f12",
+    "type": "generations",
     "dataFile": "bmw-6-series-f12"
   },
   {
-    "slug": "bmw-6-series-f13",
+    "parent": "6-series",
+    "slug": "f13",
+    "type": "generations",
     "dataFile": "bmw-6-series-f13"
   },
   {
-    "slug": "bmw-6-series-g32",
+    "parent": "6-series",
+    "slug": "g32",
+    "type": "generations",
     "dataFile": "bmw-6-series-g32"
   },
   {
-    "slug": "bmw-7-series-e23",
+    "parent": "7-series",
+    "slug": "e23",
+    "type": "generations",
     "dataFile": "bmw-7-series-e23"
   },
   {
-    "slug": "bmw-7-series-e32",
+    "parent": "7-series",
+    "slug": "e32",
+    "type": "generations",
     "dataFile": "bmw-7-series-e32"
   },
   {
-    "slug": "bmw-7-series-e38",
+    "parent": "7-series",
+    "slug": "e38",
+    "type": "generations",
     "dataFile": "bmw-7-series-e38"
   },
   {
-    "slug": "bmw-7-series-e65-e66",
+    "parent": "7-series",
+    "slug": "e65-e66",
+    "type": "generations",
     "dataFile": "bmw-7-series-e65-e66"
   },
   {
-    "slug": "bmw-7-series-f01-f02",
+    "parent": "7-series",
+    "slug": "f01-f02",
+    "type": "generations",
     "dataFile": "bmw-7-series-f01-f02"
   },
   {
-    "slug": "bmw-7-series-g11-g12",
+    "parent": "7-series",
+    "slug": "g11-g12",
+    "type": "generations",
     "dataFile": "bmw-7-series-g11-g12"
   },
   {
-    "slug": "bmw-7-series-g70",
+    "parent": "7-series",
+    "slug": "g70",
+    "type": "generations",
     "dataFile": "bmw-7-series-g70"
   },
   {
-    "slug": "bmw-8-series-e31",
+    "parent": "8-series",
+    "slug": "e31",
+    "type": "generations",
     "dataFile": "bmw-8-series-e31"
   },
   {
-    "slug": "bmw-8-series-g14",
+    "parent": "8-series",
+    "slug": "g14",
+    "type": "generations",
     "dataFile": "bmw-8-series-g14"
   },
   {
-    "slug": "bmw-8-series-g15",
+    "parent": "8-series",
+    "slug": "g15",
+    "type": "generations",
     "dataFile": "bmw-8-series-g15"
   },
   {
-    "slug": "bmw-8-series-g16",
+    "parent": "8-series",
+    "slug": "g16",
+    "type": "generations",
     "dataFile": "bmw-8-series-g16"
   },
   {
-    "slug": "bmw-m1-e26",
+    "parent": "m1",
+    "slug": "e26",
+    "type": "generations",
     "dataFile": "bmw-m1-e26"
   },
   {
-    "slug": "bmw-m2-f87",
+    "parent": "m2",
+    "slug": "f87",
+    "type": "generations",
     "dataFile": "bmw-m2-f87"
   },
   {
-    "slug": "bmw-m2-g87",
+    "parent": "m2",
+    "slug": "g87",
+    "type": "generations",
     "dataFile": "bmw-m2-g87"
   },
   {
-    "slug": "bmw-m3-e30",
+    "parent": "m3",
+    "slug": "e30",
+    "type": "generations",
     "dataFile": "bmw-m3-e30"
   },
   {
-    "slug": "bmw-m3-e36",
+    "parent": "m3",
+    "slug": "e36",
+    "type": "generations",
     "dataFile": "bmw-m3-e36"
   },
   {
-    "slug": "bmw-m3-e46",
+    "parent": "m3",
+    "slug": "e46",
+    "type": "generations",
     "dataFile": "bmw-m3-e46"
   },
   {
-    "slug": "bmw-m3-e90-e92-e93",
+    "parent": "m3",
+    "slug": "e90-e92-e93",
+    "type": "generations",
     "dataFile": "bmw-m3-e90-e92-e93"
   },
   {
-    "slug": "bmw-m3-f80",
+    "parent": "m3",
+    "slug": "f80",
+    "type": "generations",
     "dataFile": "bmw-m3-f80"
   },
   {
-    "slug": "bmw-m3-g80-g81",
+    "parent": "m3",
+    "slug": "g80-g81",
+    "type": "generations",
     "dataFile": "bmw-m3-g80-g81"
   },
   {
-    "slug": "bmw-m4-f82-f83",
+    "parent": "m4",
+    "slug": "f82-f83",
+    "type": "generations",
     "dataFile": "bmw-m4-f82-f83"
   },
   {
-    "slug": "bmw-m4-g82-g83",
+    "parent": "m4",
+    "slug": "g82-g83",
+    "type": "generations",
     "dataFile": "bmw-m4-g82-g83"
   },
   {
-    "slug": "bmw-m5-e28",
+    "parent": "m5",
+    "slug": "e28",
+    "type": "generations",
     "dataFile": "bmw-m5-e28"
   },
   {
-    "slug": "bmw-m5-e34",
+    "parent": "m5",
+    "slug": "e34",
+    "type": "generations",
     "dataFile": "bmw-m5-e34"
   },
   {
-    "slug": "bmw-m5-e39",
+    "parent": "m5",
+    "slug": "e39",
+    "type": "generations",
     "dataFile": "bmw-m5-e39"
   },
   {
-    "slug": "bmw-m5-e60-e61",
+    "parent": "m5",
+    "slug": "e60-e61",
+    "type": "generations",
     "dataFile": "bmw-m5-e60-e61"
   },
   {
-    "slug": "bmw-m5-f10",
+    "parent": "m5",
+    "slug": "f10",
+    "type": "generations",
     "dataFile": "bmw-m5-f10"
   },
   {
-    "slug": "bmw-m5-f90",
+    "parent": "m5",
+    "slug": "f90",
+    "type": "generations",
     "dataFile": "bmw-m5-f90"
   },
   {
-    "slug": "bmw-m5-g90-g99",
+    "parent": "m5",
+    "slug": "g90-g99",
+    "type": "generations",
     "dataFile": "bmw-m5-g90-g99"
   },
   {
-    "slug": "bmw-m6-e24",
+    "parent": "m6",
+    "slug": "e24",
+    "type": "generations",
     "dataFile": "bmw-m6-e24"
   },
   {
-    "slug": "bmw-m6-e63-e64",
+    "parent": "m6",
+    "slug": "e63-e64",
+    "type": "generations",
     "dataFile": "bmw-m6-e63-e64"
   },
   {
-    "slug": "bmw-m6-f06-f12-f13",
+    "parent": "m6",
+    "slug": "f06-f12-f13",
+    "type": "generations",
     "dataFile": "bmw-m6-f06-f12-f13"
   },
   {
-    "slug": "bmw-m8-f91-f92-f93",
+    "parent": "m8",
+    "slug": "f91-f92-f93",
+    "type": "generations",
     "dataFile": "bmw-m8-f91-f92-f93"
   },
   {
-    "slug": "bmw-x1-e84",
+    "parent": "x1",
+    "slug": "e84",
+    "type": "generations",
     "dataFile": "bmw-x1-e84"
   },
   {
-    "slug": "bmw-x1-f48",
+    "parent": "x1",
+    "slug": "f48",
+    "type": "generations",
     "dataFile": "bmw-x1-f48"
   },
   {
-    "slug": "bmw-x1-u11",
+    "parent": "x1",
+    "slug": "u11",
+    "type": "generations",
     "dataFile": "bmw-x1-u11"
   },
   {
-    "slug": "bmw-x2-f39",
+    "parent": "x2",
+    "slug": "f39",
+    "type": "generations",
     "dataFile": "bmw-x2-f39"
   },
   {
-    "slug": "bmw-x2-u10",
+    "parent": "x2",
+    "slug": "u10",
+    "type": "generations",
     "dataFile": "bmw-x2-u10"
   },
   {
-    "slug": "bmw-x3-e83",
+    "parent": "x3",
+    "slug": "e83",
+    "type": "generations",
     "dataFile": "bmw-x3-e83"
   },
   {
-    "slug": "bmw-x3-f25",
+    "parent": "x3",
+    "slug": "f25",
+    "type": "generations",
     "dataFile": "bmw-x3-f25"
   },
   {
-    "slug": "bmw-x3-g01",
+    "parent": "x3",
+    "slug": "g01",
+    "type": "generations",
     "dataFile": "bmw-x3-g01"
   },
   {
-    "slug": "bmw-x3-g45",
+    "parent": "x3",
+    "slug": "g45",
+    "type": "generations",
     "dataFile": "bmw-x3-g45"
   },
   {
-    "slug": "bmw-x4-f26",
+    "parent": "x4",
+    "slug": "f26",
+    "type": "generations",
     "dataFile": "bmw-x4-f26"
   },
   {
-    "slug": "bmw-x4-g02",
+    "parent": "x4",
+    "slug": "g02",
+    "type": "generations",
     "dataFile": "bmw-x4-g02"
   },
   {
-    "slug": "bmw-x5-e53",
+    "parent": "x5",
+    "slug": "e53",
+    "type": "generations",
     "dataFile": "bmw-x5-e53"
   },
   {
-    "slug": "bmw-x5-e70",
+    "parent": "x5",
+    "slug": "e70",
+    "type": "generations",
     "dataFile": "bmw-x5-e70"
   },
   {
-    "slug": "bmw-x5-f15",
+    "parent": "x5",
+    "slug": "f15",
+    "type": "generations",
     "dataFile": "bmw-x5-f15"
   },
   {
-    "slug": "bmw-x5-g05",
+    "parent": "x5",
+    "slug": "g05",
+    "type": "generations",
     "dataFile": "bmw-x5-g05"
   },
   {
-    "slug": "bmw-x6-e71",
+    "parent": "x6",
+    "slug": "e71",
+    "type": "generations",
     "dataFile": "bmw-x6-e71"
   },
   {
-    "slug": "bmw-x6-f16",
+    "parent": "x6",
+    "slug": "f16",
+    "type": "generations",
     "dataFile": "bmw-x6-f16"
   },
   {
-    "slug": "bmw-x6-g06",
+    "parent": "x6",
+    "slug": "g06",
+    "type": "generations",
     "dataFile": "bmw-x6-g06"
   },
   {
-    "slug": "bmw-x7-g07",
+    "parent": "x7",
+    "slug": "g07",
+    "type": "generations",
     "dataFile": "bmw-x7-g07"
   },
   {
-    "slug": "bmw-z1-z1",
+    "parent": "z1",
+    "slug": "z1",
+    "type": "generations",
     "dataFile": "bmw-z1-z1"
   },
   {
-    "slug": "bmw-z3-e36-7",
+    "parent": "z3",
+    "slug": "e36-7",
+    "type": "generations",
     "dataFile": "bmw-z3-e36-7"
   },
   {
-    "slug": "bmw-z3-e36-8",
+    "parent": "z3",
+    "slug": "e36-8",
+    "type": "generations",
     "dataFile": "bmw-z3-e36-8"
   },
   {
-    "slug": "bmw-z4-e85",
+    "parent": "z4",
+    "slug": "e85",
+    "type": "generations",
     "dataFile": "bmw-z4-e85"
   },
   {
-    "slug": "bmw-z4-e86",
+    "parent": "z4",
+    "slug": "e86",
+    "type": "generations",
     "dataFile": "bmw-z4-e86"
   },
   {
-    "slug": "bmw-z4-e89",
+    "parent": "z4",
+    "slug": "e89",
+    "type": "generations",
     "dataFile": "bmw-z4-e89"
   },
   {
-    "slug": "bmw-z4-g29",
+    "parent": "z4",
+    "slug": "g29",
+    "type": "generations",
     "dataFile": "bmw-z4-g29"
   },
   {
-    "slug": "bmw-z8-e52",
+    "parent": "z8",
+    "slug": "e52",
+    "type": "generations",
     "dataFile": "bmw-z8-e52"
   }
 ]

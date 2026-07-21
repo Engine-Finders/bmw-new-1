@@ -1,814 +1,1220 @@
 [
   {
-    "slug": "1-series-114d",
+    "parent": "1-series",
+    "slug": "114d",
+    "type": "variants",
     "dataFile": "1-series-114d"
   },
   {
-    "slug": "1-series-114i",
+    "parent": "1-series",
+    "slug": "114i",
+    "type": "variants",
     "dataFile": "1-series-114i"
   },
   {
-    "slug": "1-series-116d",
+    "parent": "1-series",
+    "slug": "116d",
+    "type": "variants",
     "dataFile": "1-series-116d"
   },
   {
-    "slug": "1-series-116i",
+    "parent": "1-series",
+    "slug": "116i",
+    "type": "variants",
     "dataFile": "1-series-116i"
   },
   {
-    "slug": "1-series-118d",
+    "parent": "1-series",
+    "slug": "118d",
+    "type": "variants",
     "dataFile": "1-series-118d"
   },
   {
-    "slug": "1-series-118i",
+    "parent": "1-series",
+    "slug": "118i",
+    "type": "variants",
     "dataFile": "1-series-118i"
   },
   {
-    "slug": "1-series-120",
+    "parent": "1-series",
+    "slug": "120",
+    "type": "variants",
     "dataFile": "1-series-120"
   },
   {
-    "slug": "1-series-120d",
+    "parent": "1-series",
+    "slug": "120d",
+    "type": "variants",
     "dataFile": "1-series-120d"
   },
   {
-    "slug": "1-series-123d",
+    "parent": "1-series",
+    "slug": "123d",
+    "type": "variants",
     "dataFile": "1-series-123d"
   },
   {
-    "slug": "1-series-125d",
+    "parent": "1-series",
+    "slug": "125d",
+    "type": "variants",
     "dataFile": "1-series-125d"
   },
   {
-    "slug": "1-series-125i",
+    "parent": "1-series",
+    "slug": "125i",
+    "type": "variants",
     "dataFile": "1-series-125i"
   },
   {
-    "slug": "1-series-128ti",
+    "parent": "1-series",
+    "slug": "128ti",
+    "type": "variants",
     "dataFile": "1-series-128ti"
   },
   {
-    "slug": "1-series-130i",
+    "parent": "1-series",
+    "slug": "130i",
+    "type": "variants",
     "dataFile": "1-series-130i"
   },
   {
-    "slug": "1-series-135i",
+    "parent": "1-series",
+    "slug": "135i",
+    "type": "variants",
     "dataFile": "1-series-135i"
   },
   {
-    "slug": "1-series-m135i",
+    "parent": "1-series",
+    "slug": "m135i",
+    "type": "variants",
     "dataFile": "1-series-m135i"
   },
   {
-    "slug": "2-series-214d",
+    "parent": "2-series",
+    "slug": "214d",
+    "type": "variants",
     "dataFile": "2-series-214d"
   },
   {
-    "slug": "2-series-216d",
+    "parent": "2-series",
+    "slug": "216d",
+    "type": "variants",
     "dataFile": "2-series-216d"
   },
   {
-    "slug": "2-series-216i",
+    "parent": "2-series",
+    "slug": "216i",
+    "type": "variants",
     "dataFile": "2-series-216i"
   },
   {
-    "slug": "2-series-218d",
+    "parent": "2-series",
+    "slug": "218d",
+    "type": "variants",
     "dataFile": "2-series-218d"
   },
   {
-    "slug": "2-series-220d",
+    "parent": "2-series",
+    "slug": "220d",
+    "type": "variants",
     "dataFile": "2-series-220d"
   },
   {
-    "slug": "2-series-220i",
+    "parent": "2-series",
+    "slug": "220i",
+    "type": "variants",
     "dataFile": "2-series-220i"
   },
   {
-    "slug": "2-series-223i",
+    "parent": "2-series",
+    "slug": "223i",
+    "type": "variants",
     "dataFile": "2-series-223i"
   },
   {
-    "slug": "2-series-225xe",
+    "parent": "2-series",
+    "slug": "225xe",
+    "type": "variants",
     "dataFile": "2-series-225xe"
   },
   {
-    "slug": "2-series-m235i",
+    "parent": "2-series",
+    "slug": "m235i",
+    "type": "variants",
     "dataFile": "2-series-m235i"
   },
   {
-    "slug": "2-series-m240i",
+    "parent": "2-series",
+    "slug": "m240i",
+    "type": "variants",
     "dataFile": "2-series-m240i"
   },
   {
-    "slug": "2002-variants",
+    "parent": "2002",
+    "slug": "variants",
+    "type": "variants",
     "dataFile": "2002-variants"
   },
   {
-    "slug": "3-series-316",
+    "parent": "3-series",
+    "slug": "316",
+    "type": "variants",
     "dataFile": "3-series-316"
   },
   {
-    "slug": "3-series-316d",
+    "parent": "3-series",
+    "slug": "316d",
+    "type": "variants",
     "dataFile": "3-series-316d"
   },
   {
-    "slug": "3-series-316i",
+    "parent": "3-series",
+    "slug": "316i",
+    "type": "variants",
     "dataFile": "3-series-316i"
   },
   {
-    "slug": "3-series-318d",
+    "parent": "3-series",
+    "slug": "318d",
+    "type": "variants",
     "dataFile": "3-series-318d"
   },
   {
-    "slug": "3-series-318i",
+    "parent": "3-series",
+    "slug": "318i",
+    "type": "variants",
     "dataFile": "3-series-318i"
   },
   {
-    "slug": "3-series-318is",
+    "parent": "3-series",
+    "slug": "318is",
+    "type": "variants",
     "dataFile": "3-series-318is"
   },
   {
-    "slug": "3-series-318ti",
+    "parent": "3-series",
+    "slug": "318ti",
+    "type": "variants",
     "dataFile": "3-series-318ti"
   },
   {
-    "slug": "3-series-320d",
+    "parent": "3-series",
+    "slug": "320d",
+    "type": "variants",
     "dataFile": "3-series-320d"
   },
   {
-    "slug": "3-series-320e",
+    "parent": "3-series",
+    "slug": "320e",
+    "type": "variants",
     "dataFile": "3-series-320e"
   },
   {
-    "slug": "3-series-320i",
+    "parent": "3-series",
+    "slug": "320i",
+    "type": "variants",
     "dataFile": "3-series-320i"
   },
   {
-    "slug": "3-series-320si",
+    "parent": "3-series",
+    "slug": "320si",
+    "type": "variants",
     "dataFile": "3-series-320si"
   },
   {
-    "slug": "3-series-323i",
+    "parent": "3-series",
+    "slug": "323i",
+    "type": "variants",
     "dataFile": "3-series-323i"
   },
   {
-    "slug": "3-series-324d",
+    "parent": "3-series",
+    "slug": "324d",
+    "type": "variants",
     "dataFile": "3-series-324d"
   },
   {
-    "slug": "3-series-325d",
+    "parent": "3-series",
+    "slug": "325d",
+    "type": "variants",
     "dataFile": "3-series-325d"
   },
   {
-    "slug": "3-series-325e",
+    "parent": "3-series",
+    "slug": "325e",
+    "type": "variants",
     "dataFile": "3-series-325e"
   },
   {
-    "slug": "3-series-325i",
+    "parent": "3-series",
+    "slug": "325i",
+    "type": "variants",
     "dataFile": "3-series-325i"
   },
   {
-    "slug": "3-series-330d",
+    "parent": "3-series",
+    "slug": "330d",
+    "type": "variants",
     "dataFile": "3-series-330d"
   },
   {
-    "slug": "3-series-330e",
+    "parent": "3-series",
+    "slug": "330e",
+    "type": "variants",
     "dataFile": "3-series-330e"
   },
   {
-    "slug": "3-series-330i",
+    "parent": "3-series",
+    "slug": "330i",
+    "type": "variants",
     "dataFile": "3-series-330i"
   },
   {
-    "slug": "3-series-335d",
+    "parent": "3-series",
+    "slug": "335d",
+    "type": "variants",
     "dataFile": "3-series-335d"
   },
   {
-    "slug": "3-series-340i",
+    "parent": "3-series",
+    "slug": "340i",
+    "type": "variants",
     "dataFile": "3-series-340i"
   },
   {
-    "slug": "3-series-activehybrid-3",
+    "parent": "3-series",
+    "slug": "activehybrid-3",
+    "type": "variants",
     "dataFile": "3-series-activehybrid-3"
   },
   {
-    "slug": "3-series-m340d",
+    "parent": "3-series",
+    "slug": "m340d",
+    "type": "variants",
     "dataFile": "3-series-m340d"
   },
   {
-    "slug": "3-series-m340i",
+    "parent": "3-series",
+    "slug": "m340i",
+    "type": "variants",
     "dataFile": "3-series-m340i"
   },
   {
-    "slug": "4-series-418d",
+    "parent": "4-series",
+    "slug": "418d",
+    "type": "variants",
     "dataFile": "4-series-418d"
   },
   {
-    "slug": "4-series-420d",
+    "parent": "4-series",
+    "slug": "420d",
+    "type": "variants",
     "dataFile": "4-series-420d"
   },
   {
-    "slug": "4-series-420i",
+    "parent": "4-series",
+    "slug": "420i",
+    "type": "variants",
     "dataFile": "4-series-420i"
   },
   {
-    "slug": "4-series-425d",
+    "parent": "4-series",
+    "slug": "425d",
+    "type": "variants",
     "dataFile": "4-series-425d"
   },
   {
-    "slug": "4-series-428i",
+    "parent": "4-series",
+    "slug": "428i",
+    "type": "variants",
     "dataFile": "4-series-428i"
   },
   {
-    "slug": "4-series-430d",
+    "parent": "4-series",
+    "slug": "430d",
+    "type": "variants",
     "dataFile": "4-series-430d"
   },
   {
-    "slug": "4-series-430i",
+    "parent": "4-series",
+    "slug": "430i",
+    "type": "variants",
     "dataFile": "4-series-430i"
   },
   {
-    "slug": "4-series-435i",
+    "parent": "4-series",
+    "slug": "435i",
+    "type": "variants",
     "dataFile": "4-series-435i"
   },
   {
-    "slug": "4-series-440i",
+    "parent": "4-series",
+    "slug": "440i",
+    "type": "variants",
     "dataFile": "4-series-440i"
   },
   {
-    "slug": "4-series-m440d",
+    "parent": "4-series",
+    "slug": "m440d",
+    "type": "variants",
     "dataFile": "4-series-m440d"
   },
   {
-    "slug": "4-series-m440i",
+    "parent": "4-series",
+    "slug": "m440i",
+    "type": "variants",
     "dataFile": "4-series-m440i"
   },
   {
-    "slug": "5-series-518d",
+    "parent": "5-series",
+    "slug": "518d",
+    "type": "variants",
     "dataFile": "5-series-518d"
   },
   {
-    "slug": "5-series-518i",
+    "parent": "5-series",
+    "slug": "518i",
+    "type": "variants",
     "dataFile": "5-series-518i"
   },
   {
-    "slug": "5-series-520d",
+    "parent": "5-series",
+    "slug": "520d",
+    "type": "variants",
     "dataFile": "5-series-520d"
   },
   {
-    "slug": "5-series-520e",
+    "parent": "5-series",
+    "slug": "520e",
+    "type": "variants",
     "dataFile": "5-series-520e"
   },
   {
-    "slug": "5-series-520i",
+    "parent": "5-series",
+    "slug": "520i",
+    "type": "variants",
     "dataFile": "5-series-520i"
   },
   {
-    "slug": "5-series-523i",
+    "parent": "5-series",
+    "slug": "523i",
+    "type": "variants",
     "dataFile": "5-series-523i"
   },
   {
-    "slug": "5-series-525d",
+    "parent": "5-series",
+    "slug": "525d",
+    "type": "variants",
     "dataFile": "5-series-525d"
   },
   {
-    "slug": "5-series-525e",
+    "parent": "5-series",
+    "slug": "525e",
+    "type": "variants",
     "dataFile": "5-series-525e"
   },
   {
-    "slug": "5-series-525i",
+    "parent": "5-series",
+    "slug": "525i",
+    "type": "variants",
     "dataFile": "5-series-525i"
   },
   {
-    "slug": "5-series-525td",
+    "parent": "5-series",
+    "slug": "525td",
+    "type": "variants",
     "dataFile": "5-series-525td"
   },
   {
-    "slug": "5-series-528i",
+    "parent": "5-series",
+    "slug": "528i",
+    "type": "variants",
     "dataFile": "5-series-528i"
   },
   {
-    "slug": "5-series-530d",
+    "parent": "5-series",
+    "slug": "530d",
+    "type": "variants",
     "dataFile": "5-series-530d"
   },
   {
-    "slug": "5-series-530e",
+    "parent": "5-series",
+    "slug": "530e",
+    "type": "variants",
     "dataFile": "5-series-530e"
   },
   {
-    "slug": "5-series-530i",
+    "parent": "5-series",
+    "slug": "530i",
+    "type": "variants",
     "dataFile": "5-series-530i"
   },
   {
-    "slug": "5-series-535i",
+    "parent": "5-series",
+    "slug": "535i",
+    "type": "variants",
     "dataFile": "5-series-535i"
   },
   {
-    "slug": "5-series-540d",
+    "parent": "5-series",
+    "slug": "540d",
+    "type": "variants",
     "dataFile": "5-series-540d"
   },
   {
-    "slug": "5-series-540i",
+    "parent": "5-series",
+    "slug": "540i",
+    "type": "variants",
     "dataFile": "5-series-540i"
   },
   {
-    "slug": "5-series-545e",
+    "parent": "5-series",
+    "slug": "545e",
+    "type": "variants",
     "dataFile": "5-series-545e"
   },
   {
-    "slug": "5-series-545i",
+    "parent": "5-series",
+    "slug": "545i",
+    "type": "variants",
     "dataFile": "5-series-545i"
   },
   {
-    "slug": "5-series-550i",
+    "parent": "5-series",
+    "slug": "550i",
+    "type": "variants",
     "dataFile": "5-series-550i"
   },
   {
-    "slug": "5-series-m550d",
+    "parent": "5-series",
+    "slug": "m550d",
+    "type": "variants",
     "dataFile": "5-series-m550d"
   },
   {
-    "slug": "5-series-m550i",
+    "parent": "5-series",
+    "slug": "m550i",
+    "type": "variants",
     "dataFile": "5-series-m550i"
   },
   {
-    "slug": "6-series-620d",
+    "parent": "6-series",
+    "slug": "620d",
+    "type": "variants",
     "dataFile": "6-series-620d"
   },
   {
-    "slug": "6-series-628-635csi",
+    "parent": "6-series",
+    "slug": "628-635csi",
+    "type": "variants",
     "dataFile": "6-series-628-635csi"
   },
   {
-    "slug": "6-series-630d",
+    "parent": "6-series",
+    "slug": "630d",
+    "type": "variants",
     "dataFile": "6-series-630d"
   },
   {
-    "slug": "6-series-630i",
+    "parent": "6-series",
+    "slug": "630i",
+    "type": "variants",
     "dataFile": "6-series-630i"
   },
   {
-    "slug": "6-series-640d",
+    "parent": "6-series",
+    "slug": "640d",
+    "type": "variants",
     "dataFile": "6-series-640d"
   },
   {
-    "slug": "6-series-640i",
+    "parent": "6-series",
+    "slug": "640i",
+    "type": "variants",
     "dataFile": "6-series-640i"
   },
   {
-    "slug": "6-series-645ci",
+    "parent": "6-series",
+    "slug": "645ci",
+    "type": "variants",
     "dataFile": "6-series-645ci"
   },
   {
-    "slug": "6-series-650i",
+    "parent": "6-series",
+    "slug": "650i",
+    "type": "variants",
     "dataFile": "6-series-650i"
   },
   {
-    "slug": "7-series-725tds",
+    "parent": "7-series",
+    "slug": "725tds",
+    "type": "variants",
     "dataFile": "7-series-725tds"
   },
   {
-    "slug": "7-series-728i",
+    "parent": "7-series",
+    "slug": "728i",
+    "type": "variants",
     "dataFile": "7-series-728i"
   },
   {
-    "slug": "7-series-730i",
+    "parent": "7-series",
+    "slug": "730i",
+    "type": "variants",
     "dataFile": "7-series-730i"
   },
   {
-    "slug": "7-series-735i",
+    "parent": "7-series",
+    "slug": "735i",
+    "type": "variants",
     "dataFile": "7-series-735i"
   },
   {
-    "slug": "7-series-740d",
+    "parent": "7-series",
+    "slug": "740d",
+    "type": "variants",
     "dataFile": "7-series-740d"
   },
   {
-    "slug": "7-series-740i",
+    "parent": "7-series",
+    "slug": "740i",
+    "type": "variants",
     "dataFile": "7-series-740i"
   },
   {
-    "slug": "7-series-745e",
+    "parent": "7-series",
+    "slug": "745e",
+    "type": "variants",
     "dataFile": "7-series-745e"
   },
   {
-    "slug": "7-series-745i",
+    "parent": "7-series",
+    "slug": "745i",
+    "type": "variants",
     "dataFile": "7-series-745i"
   },
   {
-    "slug": "7-series-750e",
+    "parent": "7-series",
+    "slug": "750e",
+    "type": "variants",
     "dataFile": "7-series-750e"
   },
   {
-    "slug": "7-series-750i",
+    "parent": "7-series",
+    "slug": "750i",
+    "type": "variants",
     "dataFile": "7-series-750i"
   },
   {
-    "slug": "7-series-760i",
+    "parent": "7-series",
+    "slug": "760i",
+    "type": "variants",
     "dataFile": "7-series-760i"
   },
   {
-    "slug": "8-series-840ci",
+    "parent": "8-series",
+    "slug": "840ci",
+    "type": "variants",
     "dataFile": "8-series-840ci"
   },
   {
-    "slug": "8-series-840d",
+    "parent": "8-series",
+    "slug": "840d",
+    "type": "variants",
     "dataFile": "8-series-840d"
   },
   {
-    "slug": "8-series-840i",
+    "parent": "8-series",
+    "slug": "840i",
+    "type": "variants",
     "dataFile": "8-series-840i"
   },
   {
-    "slug": "8-series-850csi",
+    "parent": "8-series",
+    "slug": "850csi",
+    "type": "variants",
     "dataFile": "8-series-850csi"
   },
   {
-    "slug": "8-series-m850i",
+    "parent": "8-series",
+    "slug": "m850i",
+    "type": "variants",
     "dataFile": "8-series-m850i"
   },
   {
-    "slug": "bmw-1-series-120i",
+    "parent": "1-series",
+    "slug": "120i",
+    "type": "variants",
     "dataFile": "bmw-1-series-120i"
   },
   {
-    "slug": "bmw-1-series-m140i",
+    "parent": "1-series",
+    "slug": "m140i",
+    "type": "variants",
     "dataFile": "bmw-1-series-m140i"
   },
   {
-    "slug": "bmw-2-series-218i",
+    "parent": "2-series",
+    "slug": "218i",
+    "type": "variants",
     "dataFile": "bmw-2-series-218i"
   },
   {
-    "slug": "bmw-2-series-230i",
+    "parent": "2-series",
+    "slug": "230i",
+    "type": "variants",
     "dataFile": "bmw-2-series-230i"
   },
   {
-    "slug": "bmw-3-series-318tds",
+    "parent": "3-series",
+    "slug": "318tds",
+    "type": "variants",
     "dataFile": "bmw-3-series-318tds"
   },
   {
-    "slug": "bmw-3-series-328i",
+    "parent": "3-series",
+    "slug": "328i",
+    "type": "variants",
     "dataFile": "bmw-3-series-328i"
   },
   {
-    "slug": "bmw-3-series-335i",
+    "parent": "3-series",
+    "slug": "335i",
+    "type": "variants",
     "dataFile": "bmw-3-series-335i"
   },
   {
-    "slug": "bmw-4-series-418i",
+    "parent": "4-series",
+    "slug": "418i",
+    "type": "variants",
     "dataFile": "bmw-4-series-418i"
   },
   {
-    "slug": "bmw-4-series-435d",
+    "parent": "4-series",
+    "slug": "435d",
+    "type": "variants",
     "dataFile": "bmw-4-series-435d"
   },
   {
-    "slug": "bmw-5-series-524td-524d",
+    "parent": "5-series",
+    "slug": "524td-524d",
+    "type": "variants",
     "dataFile": "bmw-5-series-524td-524d"
   },
   {
-    "slug": "bmw-5-series-535d",
+    "parent": "5-series",
+    "slug": "535d",
+    "type": "variants",
     "dataFile": "bmw-5-series-535d"
   },
   {
-    "slug": "bmw-6-series-635d",
+    "parent": "6-series",
+    "slug": "635d",
+    "type": "variants",
     "dataFile": "bmw-6-series-635d"
   },
   {
-    "slug": "bmw-7-series-730d",
+    "parent": "7-series",
+    "slug": "730d",
+    "type": "variants",
     "dataFile": "bmw-7-series-730d"
   },
   {
-    "slug": "bmw-8-series-850i-850ci",
+    "parent": "8-series",
+    "slug": "850i-850ci",
+    "type": "variants",
     "dataFile": "bmw-8-series-850i-850ci"
   },
   {
-    "slug": "bmw-x1-23d",
+    "parent": "x1",
+    "slug": "23d",
+    "type": "variants",
     "dataFile": "bmw-x1-23d"
   },
   {
-    "slug": "bmw-x2-m35i",
+    "parent": "x2",
+    "slug": "m35i",
+    "type": "variants",
     "dataFile": "bmw-x2-m35i"
   },
   {
-    "slug": "bmw-x3-30e",
+    "parent": "x3",
+    "slug": "30e",
+    "type": "variants",
     "dataFile": "bmw-x3-30e"
   },
   {
-    "slug": "bmw-x3-30i",
+    "parent": "x3",
+    "slug": "30i",
+    "type": "variants",
     "dataFile": "bmw-x3-30i"
   },
   {
-    "slug": "bmw-x4-30d",
+    "parent": "x4",
+    "slug": "30d",
+    "type": "variants",
     "dataFile": "bmw-x4-30d"
   },
   {
-    "slug": "bmw-x5-4-6is-4-8is",
+    "parent": "x5",
+    "slug": "4-6is-4-8is",
+    "type": "variants",
     "dataFile": "bmw-x5-4-6is-4-8is"
   },
   {
-    "slug": "bmw-x5-xdrive45e",
+    "parent": "x5",
+    "slug": "xdrive45e",
+    "type": "variants",
     "dataFile": "bmw-x5-xdrive45e"
   },
   {
-    "slug": "bmw-x6-m50d",
+    "parent": "x6",
+    "slug": "m50d",
+    "type": "variants",
     "dataFile": "bmw-x6-m50d"
   },
   {
-    "slug": "bmw-z3-2-0-2-2i",
+    "parent": "z3",
+    "slug": "2-0-2-2i",
+    "type": "variants",
     "dataFile": "bmw-z3-2-0-2-2i"
   },
   {
-    "slug": "bmw-z4-m40i",
+    "parent": "z4",
+    "slug": "m40i",
+    "type": "variants",
     "dataFile": "bmw-z4-m40i"
   },
   {
-    "slug": "m1-35",
+    "parent": "m1",
+    "slug": "35",
+    "type": "variants",
     "dataFile": "m1-35"
   },
   {
-    "slug": "x1-16d",
+    "parent": "x1",
+    "slug": "16d",
+    "type": "variants",
     "dataFile": "x1-16d"
   },
   {
-    "slug": "x1-18d",
+    "parent": "x1",
+    "slug": "18d",
+    "type": "variants",
     "dataFile": "x1-18d"
   },
   {
-    "slug": "x1-18i",
+    "parent": "x1",
+    "slug": "18i",
+    "type": "variants",
     "dataFile": "x1-18i"
   },
   {
-    "slug": "x1-20d",
+    "parent": "x1",
+    "slug": "20d",
+    "type": "variants",
     "dataFile": "x1-20d"
   },
   {
-    "slug": "x1-20i",
+    "parent": "x1",
+    "slug": "20i",
+    "type": "variants",
     "dataFile": "x1-20i"
   },
   {
-    "slug": "x1-23i",
+    "parent": "x1",
+    "slug": "23i",
+    "type": "variants",
     "dataFile": "x1-23i"
   },
   {
-    "slug": "x1-25d",
+    "parent": "x1",
+    "slug": "25d",
+    "type": "variants",
     "dataFile": "x1-25d"
   },
   {
-    "slug": "x1-25e-30e",
+    "parent": "x1",
+    "slug": "25e-30e",
+    "type": "variants",
     "dataFile": "x1-25e-30e"
   },
   {
-    "slug": "x1-28i",
+    "parent": "x1",
+    "slug": "28i",
+    "type": "variants",
     "dataFile": "x1-28i"
   },
   {
-    "slug": "x1-28i-2",
+    "parent": "x1",
+    "slug": "28i-2",
+    "type": "variants",
     "dataFile": "x1-28i-2"
   },
   {
-    "slug": "x2-18d",
+    "parent": "x2",
+    "slug": "18d",
+    "type": "variants",
     "dataFile": "x2-18d"
   },
   {
-    "slug": "x2-18i",
+    "parent": "x2",
+    "slug": "18i",
+    "type": "variants",
     "dataFile": "x2-18i"
   },
   {
-    "slug": "x2-20d",
+    "parent": "x2",
+    "slug": "20d",
+    "type": "variants",
     "dataFile": "x2-20d"
   },
   {
-    "slug": "x2-20i",
+    "parent": "x2",
+    "slug": "20i",
+    "type": "variants",
     "dataFile": "x2-20i"
   },
   {
-    "slug": "x2-xdrive25e",
+    "parent": "x2",
+    "slug": "xdrive25e",
+    "type": "variants",
     "dataFile": "x2-xdrive25e"
   },
   {
-    "slug": "x3-18d",
+    "parent": "x3",
+    "slug": "18d",
+    "type": "variants",
     "dataFile": "x3-18d"
   },
   {
-    "slug": "x3-20d",
+    "parent": "x3",
+    "slug": "20d",
+    "type": "variants",
     "dataFile": "x3-20d"
   },
   {
-    "slug": "x3-20d-2",
+    "parent": "x3",
+    "slug": "20d-2",
+    "type": "variants",
     "dataFile": "x3-20d-2"
   },
   {
-    "slug": "x3-20i",
+    "parent": "x3",
+    "slug": "20i",
+    "type": "variants",
     "dataFile": "x3-20i"
   },
   {
-    "slug": "x3-28i",
+    "parent": "x3",
+    "slug": "28i",
+    "type": "variants",
     "dataFile": "x3-28i"
   },
   {
-    "slug": "x3-30d",
+    "parent": "x3",
+    "slug": "30d",
+    "type": "variants",
     "dataFile": "x3-30d"
   },
   {
-    "slug": "x3-30d-30sd",
+    "parent": "x3",
+    "slug": "30d-30sd",
+    "type": "variants",
     "dataFile": "x3-30d-30sd"
   },
   {
-    "slug": "x3-30e-xdrive",
+    "parent": "x3",
+    "slug": "30e-xdrive",
+    "type": "variants",
     "dataFile": "x3-30e-xdrive"
   },
   {
-    "slug": "x3-35d",
+    "parent": "x3",
+    "slug": "35d",
+    "type": "variants",
     "dataFile": "x3-35d"
   },
   {
-    "slug": "x3-35i",
+    "parent": "x3",
+    "slug": "35i",
+    "type": "variants",
     "dataFile": "x3-35i"
   },
   {
-    "slug": "x3-e83-petrol",
+    "parent": "x3",
+    "slug": "e83-petrol",
+    "type": "variants",
     "dataFile": "x3-e83-petrol"
   },
   {
-    "slug": "x3-m40i",
+    "parent": "x3",
+    "slug": "m40i",
+    "type": "variants",
     "dataFile": "x3-m40i"
   },
   {
-    "slug": "x4-20d",
+    "parent": "x4",
+    "slug": "20d",
+    "type": "variants",
     "dataFile": "x4-20d"
   },
   {
-    "slug": "x4-20i",
+    "parent": "x4",
+    "slug": "20i",
+    "type": "variants",
     "dataFile": "x4-20i"
   },
   {
-    "slug": "x4-35d",
+    "parent": "x4",
+    "slug": "35d",
+    "type": "variants",
     "dataFile": "x4-35d"
   },
   {
-    "slug": "x4-m40d",
+    "parent": "x4",
+    "slug": "m40d",
+    "type": "variants",
     "dataFile": "x4-m40d"
   },
   {
-    "slug": "x4-m40i",
+    "parent": "x4",
+    "slug": "m40i",
+    "type": "variants",
     "dataFile": "x4-m40i"
   },
   {
-    "slug": "x5-25d",
+    "parent": "x5",
+    "slug": "25d",
+    "type": "variants",
     "dataFile": "x5-25d"
   },
   {
-    "slug": "x5-3-0i",
+    "parent": "x5",
+    "slug": "3-0i",
+    "type": "variants",
     "dataFile": "x5-3-0i"
   },
   {
-    "slug": "x5-30sd-35d",
+    "parent": "x5",
+    "slug": "30sd-35d",
+    "type": "variants",
     "dataFile": "x5-30sd-35d"
   },
   {
-    "slug": "x5-30si",
+    "parent": "x5",
+    "slug": "30si",
+    "type": "variants",
     "dataFile": "x5-30si"
   },
   {
-    "slug": "x5-40i",
+    "parent": "x5",
+    "slug": "40i",
+    "type": "variants",
     "dataFile": "x5-40i"
   },
   {
-    "slug": "x5-44i",
+    "parent": "x5",
+    "slug": "44i",
+    "type": "variants",
     "dataFile": "x5-44i"
   },
   {
-    "slug": "x5-m50d",
+    "parent": "x5",
+    "slug": "m50d",
+    "type": "variants",
     "dataFile": "x5-m50d"
   },
   {
-    "slug": "x5-m50i-m60i",
+    "parent": "x5",
+    "slug": "m50i-m60i",
+    "type": "variants",
     "dataFile": "x5-m50i-m60i"
   },
   {
-    "slug": "x5-x5-m",
+    "parent": "x5",
+    "slug": "x5-m",
+    "type": "variants",
     "dataFile": "x5-x5-m"
   },
   {
-    "slug": "x5-xdrive30d",
+    "parent": "x5",
+    "slug": "xdrive30d",
+    "type": "variants",
     "dataFile": "x5-xdrive30d"
   },
   {
-    "slug": "x5-xdrive35i",
+    "parent": "x5",
+    "slug": "xdrive35i",
+    "type": "variants",
     "dataFile": "x5-xdrive35i"
   },
   {
-    "slug": "x5-xdrive40d",
+    "parent": "x5",
+    "slug": "xdrive40d",
+    "type": "variants",
     "dataFile": "x5-xdrive40d"
   },
   {
-    "slug": "x5-xdrive40e",
+    "parent": "x5",
+    "slug": "xdrive40e",
+    "type": "variants",
     "dataFile": "x5-xdrive40e"
   },
   {
-    "slug": "x5-xdrive50e",
+    "parent": "x5",
+    "slug": "xdrive50e",
+    "type": "variants",
     "dataFile": "x5-xdrive50e"
   },
   {
-    "slug": "x5-xdrive50i",
+    "parent": "x5",
+    "slug": "xdrive50i",
+    "type": "variants",
     "dataFile": "x5-xdrive50i"
   },
   {
-    "slug": "x6-35i-40i",
+    "parent": "x6",
+    "slug": "35i-40i",
+    "type": "variants",
     "dataFile": "x6-35i-40i"
   },
   {
-    "slug": "x6-m50i-m60i",
+    "parent": "x6",
+    "slug": "m50i-m60i",
+    "type": "variants",
     "dataFile": "x6-m50i-m60i"
   },
   {
-    "slug": "x6-x6-m",
+    "parent": "x6",
+    "slug": "x6-m",
+    "type": "variants",
     "dataFile": "x6-x6-m"
   },
   {
-    "slug": "x6-xdrive30d",
+    "parent": "x6",
+    "slug": "xdrive30d",
+    "type": "variants",
     "dataFile": "x6-xdrive30d"
   },
   {
-    "slug": "x6-xdrive35d-40d",
+    "parent": "x6",
+    "slug": "xdrive35d-40d",
+    "type": "variants",
     "dataFile": "x6-xdrive35d-40d"
   },
   {
-    "slug": "x6-xdrive50i",
+    "parent": "x6",
+    "slug": "xdrive50i",
+    "type": "variants",
     "dataFile": "x6-xdrive50i"
   },
   {
-    "slug": "x7-40i",
+    "parent": "x7",
+    "slug": "40i",
+    "type": "variants",
     "dataFile": "x7-40i"
   },
   {
-    "slug": "x7-m50d",
+    "parent": "x7",
+    "slug": "m50d",
+    "type": "variants",
     "dataFile": "x7-m50d"
   },
   {
-    "slug": "x7-m50i-m60i",
+    "parent": "x7",
+    "slug": "m50i-m60i",
+    "type": "variants",
     "dataFile": "x7-m50i-m60i"
   },
   {
-    "slug": "x7-xdrive30d",
+    "parent": "x7",
+    "slug": "xdrive30d",
+    "type": "variants",
     "dataFile": "x7-xdrive30d"
   },
   {
-    "slug": "x7-xdrive40d",
+    "parent": "x7",
+    "slug": "xdrive40d",
+    "type": "variants",
     "dataFile": "x7-xdrive40d"
   },
   {
-    "slug": "z1-2-5",
+    "parent": "z1",
+    "slug": "2-5",
+    "type": "variants",
     "dataFile": "z1-2-5"
   },
   {
-    "slug": "z3-18-19",
+    "parent": "z3",
+    "slug": "18-19",
+    "type": "variants",
     "dataFile": "z3-18-19"
   },
   {
-    "slug": "z3-28-30i",
+    "parent": "z3",
+    "slug": "28-30i",
+    "type": "variants",
     "dataFile": "z3-28-30i"
   },
   {
-    "slug": "z3-z3-m",
+    "parent": "z3",
+    "slug": "z3-m",
+    "type": "variants",
     "dataFile": "z3-z3-m"
   },
   {
-    "slug": "z4-18i-20i",
+    "parent": "z4",
+    "slug": "18i-20i",
+    "type": "variants",
     "dataFile": "z4-18i-20i"
   },
   {
-    "slug": "z4-20i-22i",
+    "parent": "z4",
+    "slug": "20i-22i",
+    "type": "variants",
     "dataFile": "z4-20i-22i"
   },
   {
-    "slug": "z4-23i",
+    "parent": "z4",
+    "slug": "23i",
+    "type": "variants",
     "dataFile": "z4-23i"
   },
   {
-    "slug": "z4-25i-25si",
+    "parent": "z4",
+    "slug": "25i-25si",
+    "type": "variants",
     "dataFile": "z4-25i-25si"
   },
   {
-    "slug": "z4-30i-30si",
+    "parent": "z4",
+    "slug": "30i-30si",
+    "type": "variants",
     "dataFile": "z4-30i-30si"
   },
   {
-    "slug": "z4-sdrive28i-30i",
+    "parent": "z4",
+    "slug": "sdrive28i-30i",
+    "type": "variants",
     "dataFile": "z4-sdrive28i-30i"
   },
   {
-    "slug": "z4-sdrive35i-35is",
+    "parent": "z4",
+    "slug": "sdrive35i-35is",
+    "type": "variants",
     "dataFile": "z4-sdrive35i-35is"
   },
   {
-    "slug": "z4-z4m",
+    "parent": "z4",
+    "slug": "z4m",
+    "type": "variants",
     "dataFile": "z4-z4m"
   },
   {
-    "slug": "z8-49",
+    "parent": "z8",
+    "slug": "49",
+    "type": "variants",
     "dataFile": "z8-49"
   }
 ]
