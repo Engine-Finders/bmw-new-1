@@ -367,136 +367,65 @@
       {
         "metric": "Overall Rating",
         "value": "★★★½ 3.5/5"
-      },
-      {
-        "metric": "SECTION 4 — GENERATIONS — <GenerationsGrid>",
-        "value": "H2: BMW 8 Series Generations — Find Your Vehicle"
-      },
-      {
-        "metric": "Sub-headline: Two generations, thirty years apart, and one grand touring mission. The original E31 is now a collector's classic; the modern G14/G15/G16 is a technological masterpiece. Choose your era — and your budget.",
-        "value": "First Generation — E31 (1990–1999)"
-      },
-      {
-        "metric": "BMW 8 Series E31",
-        "value": "1990–1999 • M60B40 V8, M62B44 V8, M70B50 V12, M73B54 V12, S70B56 V12 (850CSi)"
-      },
-      {
-        "metric": "★★★★☆",
-        "value": "Our Verdict: The original 8 Series — a pillarless coupe with pop-up headlights and a V12 that defined 1990s BMW. The M70 and M73 V12s are surprisingly durable if maintained; the V8s (M60/M62) carry the same Nikasil liner caveats as the E34 5 Series. Now a rising classic where engine work is restoration, not repair. The 850CSi with the S70 V12 is a six-figure collector's item."
-      },
-      {
-        "metric": "Explore the E31 →",
-        "value": "Second Generation — G14/G15/G16 (2018–2026)"
-      },
-      {
-        "metric": "BMW 8 Series Coupé G15 🔥 Most Enquired — 150+ enquiries (2025) [BMW-VERIFIED]",
-        "value": "2018–2026 • B58B30 (840i), N63B44 (M850i), S63B44 (M8), B57D30 (840d)"
-      },
-      {
-        "metric": "★★★★☆",
-        "value": "Our Verdict: The return of the 8 Series after 19 years — and the B58 straight-six in the 840i is the most dependable engine ever fitted to the badge. The N63 V8 in the M850i carries the hot-vee caveats; the M8 with the S63 is the full-fat experience. The 840i is the sensible choice; the M850i is the emotional one. Buy the B58 unless you have V8 money."
-      },
-      {
-        "metric": "Explore the G15 →",
-        "value": "BMW 8 Series Convertible G14"
-      },
-      {
-        "metric": "2018–2026 • B58B30 (840i), N63B44 (M850i), S63B44 (M8)",
-        "value": "★★★★☆"
-      },
-      {
-        "metric": "Our Verdict: The open-top 8 Series — same engines as the G15, but with a fabric roof that adds weight and complexity. The B58 in the 840i Convertible is the sensible pick; the M850i Convertible is the weekend toy. Check the roof mechanism on any used example.",
-        "value": "Explore the G14 →"
-      },
-      {
-        "metric": "BMW 8 Series Gran Coupé G16",
-        "value": "2019–2026 • B58B30 (840i), N63B44 (M850i), S63B44 (M8)"
-      },
-      {
-        "metric": "★★★★☆",
-        "value": "Our Verdict: The four-door 8 Series — the most practical 8 Series and the one with the most presence. Same engines as the G15/G14, but the G16's added length and rear doors make it a genuine four-seater. The 840i Gran Coupé is the sweet spot; the M850i is the statement."
-      },
-      {
-        "metric": "Explore the G16 →",
-        "value": "The Engine Choice — The Line That Matters Most"
-      },
-      {
-        "metric": "840i (B58)",
-        "value": "840d (B57)"
-      },
-      {
-        "metric": "M850i (N63)",
-        "value": "M8 (S63)"
-      },
-      {
-        "metric": "Engine",
-        "value": "3.0L turbo I6"
-      },
-      {
-        "metric": "3.0L turbo I6 diesel",
-        "value": "4.4L twin-turbo V8"
-      },
-      {
-        "metric": "4.4L twin-turbo V8",
-        "value": "Power"
-      },
-      {
-        "metric": "333–340 bhp",
-        "value": "315–340 bhp"
-      },
-      {
-        "metric": "523 bhp",
-        "value": "600+ bhp"
-      },
-      {
-        "metric": "Reliability",
-        "value": "★★★★★"
-      },
-      {
-        "metric": "★★★★☆",
-        "value": "★★★☆☆"
-      },
-      {
-        "metric": "★★★★☆",
-        "value": "Recon cost"
-      },
-      {
-        "metric": "£3,800–£6,000",
-        "value": "£5,000–£8,000"
-      },
-      {
-        "metric": "£7,000–£12,000+",
-        "value": "£9,000–£14,000+"
-      },
-      {
-        "metric": "Our position",
-        "value": "The one to buy"
-      },
-      {
-        "metric": "The sensible diesel",
-        "value": "Buy only with warranty"
-      },
-      {
-        "metric": "The full-fat experience",
-        "value": "Read the full comparison: BMW 8 Series 840i vs M850i →"
-      },
-      {
-        "metric": "The Badge Ambiguity — \"840i\" vs \"840d\"",
-        "value": "Correction applied (internal): The \"840i\" badge uses the B58B30 straight-six petrol (3.0L, 333–340 bhp). The \"840d\" uses the B57D30 straight-six diesel (3.0L, 315–340 bhp). Both are excellent engines, but the B58 petrol is the more refined and reliable of the two. The \"M850i\" uses the N63B44 twin-turbo V8 (4.4L, 523 bhp) — a completely different engine family with different reliability characteristics. The \"M8\" uses the S63B44 — a high-performance version of the N63."
       }
     ]
   },
   "generations": {
-    "h2": "",
-    "subHeadline": "",
-    "cards": [],
+    "h2": "BMW 8 Series Generations — Find Your Vehicle",
+    "subHeadline": "Two generations, thirty years apart, and one grand touring mission. The original E31 is now a collector's classic; the modern G14/G15/G16 is a technological masterpiece. Choose your era — and your budget.",
+    "cards": [
+      {
+        "title": "First Generation — E31 (1990–1999)",
+        "badge": "",
+        "meta": "1990–1999 • M60B40 V8, M62B44 V8, M70B50 V12, M73B54 V12, S70B56 V12 (850CSi)",
+        "rating": "★★★★☆",
+        "verdict": "The original 8 Series — a pillarless coupe with pop-up headlights and a V12 that defined 1990s BMW. The M70 and M73 V12s are surprisingly durable if maintained; the V8s (M60/M62) carry the same Nikasil liner caveats as the E34 5 Series. Now a rising classic where engine work is restoration, not repair. The 850CSi with the S70 V12 is a six-figure collector's item.",
+        "cta": {
+          "label": "Explore the E31 →",
+          "href": "#"
+        }
+      },
+      {
+        "title": "Second Generation — G14/G15/G16 (2018–2026)",
+        "badge": "",
+        "meta": "BMW 8 Series Coupé G15 🔥 Most Enquired — 150+ enquiries (2025) [BMW-VERIFIED]",
+        "rating": "★★★★☆",
+        "verdict": "The return of the 8 Series after 19 years — and the B58 straight-six in the 840i is the most dependable engine ever fitted to the badge. The N63 V8 in the M850i carries the hot-vee caveats; the M8 with the S63 is the full-fat experience. The 840i is the sensible choice; the M850i is the emotional one. Buy the B58 unless you have V8 money.",
+        "cta": {
+          "label": "Explore the G15 →",
+          "href": "#"
+        }
+      },
+      {
+        "title": "BMW 8 Series Convertible G14",
+        "badge": "",
+        "meta": "2018–2026 • B58B30 (840i), N63B44 (M850i), S63B44 (M8)",
+        "rating": "★★★★☆",
+        "verdict": "The open-top 8 Series — same engines as the G15, but with a fabric roof that adds weight and complexity. The B58 in the 840i Convertible is the sensible pick; the M850i Convertible is the weekend toy. Check the roof mechanism on any used example.",
+        "cta": {
+          "label": "Explore the G14 →",
+          "href": "#"
+        }
+      },
+      {
+        "title": "BMW 8 Series Gran Coupé G16",
+        "badge": "",
+        "meta": "2019–2026 • B58B30 (840i), N63B44 (M850i), S63B44 (M8)",
+        "rating": "★★★★☆",
+        "verdict": "The four-door 8 Series — the most practical 8 Series and the one with the most presence. Same engines as the G15/G14, but the G16's added length and rear doors make it a genuine four-seater. The 840i Gran Coupé is the sweet spot; the M850i is the statement.",
+        "cta": {
+          "label": "Explore the G16 →",
+          "href": "#"
+        }
+      }
+    ],
     "rangeTable": {
       "title": "",
       "columns": [],
       "rows": []
     },
     "comparisonLink": {
-      "label": "",
+      "label": "Read the full comparison: BMW 8 Series 840i vs M850i →",
       "href": "#"
     }
   },

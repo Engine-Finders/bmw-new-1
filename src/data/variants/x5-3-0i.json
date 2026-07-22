@@ -620,44 +620,43 @@
       {
         "label": "Regional Demand",
         "value": "South East (22%), London (18%), North West (13%)【PATTERN DATA】"
-      },
-      {
-        "label": "SECTION 8 — FAQ",
-        "value": "1. How much does a BMW X5 3.0i engine replacement cost in the UK?"
-      },
-      {
-        "label": "A reconditioned X5 3.0i engine typically costs £2,800–£8,500 supply only depending on generation. A used M54B30 engine can be found from approximately £1,164. Fitting adds £800–£1,500 at independent specialist rates. Use our calculator for a figure specific to your car.",
-        "value": "2. Is the BMW X5 3.0i engine reliable?"
-      },
-      {
-        "label": "It depends on which generation you're asking about. The M54 (E53, 2000–2006) is bulletproof when properly maintained but cooling system failures are common. The N52 (E70, 2006–2013) is one of BMW's most reliable engines. The N55 (F15, 2014–2018) offers strong performance but has oil leak and timing chain concerns. The B58 (G05, 2019+) is the most reliable X5 variant ever built. Across all, oil-change discipline is everything.",
-        "value": "3. What are the common problems with the BMW X5 3.0i?"
-      },
-      {
-        "label": "M54 cooling system failures and oil leaks (E53), N52 oil leaks and VANOS recall issues (E70), N55 oil leaks and timing chain wear (F15), and B58 PCV valve and minor cooling issues (G05). See the Era Map above for generation-specific advice.",
-        "value": "4. Is it worth replacing a BMW X5 3.0i engine, or should I scrap the car?"
-      },
-      {
-        "label": "Depends on vehicle value. Against a well-kept E53 X5 (values £3,000–£8,000), a £3,000–£4,000 recon is 30–70% of the car's value — borderline. Against a £8,000–£15,000 E70 or F15, a £4,000–£5,000 recon is 30–50% — often worth it. Against a £20,000–£40,000 G05, a £4,500–£5,500 recon is 15–25% — worth it. The BMW scrap threshold of 70% means evaluating the whole vehicle and its condition before committing.",
-        "value": "5. How do I find my BMW X5 3.0i engine code?"
-      },
-      {
-        "label": "Listed on the VIN plate and vehicle documentation. As a rule of thumb: E53 (2000–2006) = M54B30; E70 (2006–2013) = N52B30; F15 (2014–2018) = N55B30A; G05 (2019–present) = B58B30 (badged as xDrive40i in later models). Tell us your registration date and we'll confirm it for free.",
-        "value": "6. Can I repair the M54 cooling system, or does it require engine replacement?"
-      },
-      {
-        "label": "M54 cooling system failures are always repairable without replacing the engine. Water pump, thermostat, and radiator replacement costs £400–£900. However, if a cooling system failure leads to severe overheating, it can cause head gasket damage or warped cylinder heads — at which point a full engine replacement may be required. At the first sign of overheating or coolant loss, book an inspection immediately.",
-        "value": "Disclaimer: All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty — always confirm terms with your chosen supplier."
-      },
-      {
-        "label": "SECTION 9, META AND SCHEMA",
-        "value": "PART 2 — SECTION 9 + META + SCHEMA"
       }
     ]
   },
   "faq": {
-    "items": [],
-    "disclaimer": ""
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a BMW X5 3.0i engine replacement cost in the UK?",
+        "answer": "A reconditioned X5 3.0i engine typically costs £2,800–£8,500 supply only depending on generation. A used M54B30 engine can be found from approximately £1,164. Fitting adds £800–£1,500 at independent specialist rates. Use our calculator for a figure specific to your car."
+      },
+      {
+        "id": 2,
+        "question": "Is the BMW X5 3.0i engine reliable?",
+        "answer": "It depends on which generation you're asking about. The M54 (E53, 2000–2006) is bulletproof when properly maintained but cooling system failures are common. The N52 (E70, 2006–2013) is one of BMW's most reliable engines. The N55 (F15, 2014–2018) offers strong performance but has oil leak and timing chain concerns. The B58 (G05, 2019+) is the most reliable X5 variant ever built. Across all, oil-change discipline is everything."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the BMW X5 3.0i?",
+        "answer": "M54 cooling system failures and oil leaks (E53), N52 oil leaks and VANOS recall issues (E70), N55 oil leaks and timing chain wear (F15), and B58 PCV valve and minor cooling issues (G05). See the Era Map above for generation-specific advice."
+      },
+      {
+        "id": 4,
+        "question": "Is it worth replacing a BMW X5 3.0i engine, or should I scrap the car?",
+        "answer": "Depends on vehicle value. Against a well-kept E53 X5 (values £3,000–£8,000), a £3,000–£4,000 recon is 30–70% of the car's value — borderline. Against a £8,000–£15,000 E70 or F15, a £4,000–£5,000 recon is 30–50% — often worth it. Against a £20,000–£40,000 G05, a £4,500–£5,500 recon is 15–25% — worth it. The BMW scrap threshold of 70% means evaluating the whole vehicle and its condition before committing."
+      },
+      {
+        "id": 5,
+        "question": "How do I find my BMW X5 3.0i engine code?",
+        "answer": "Listed on the VIN plate and vehicle documentation. As a rule of thumb: E53 (2000–2006) = M54B30; E70 (2006–2013) = N52B30; F15 (2014–2018) = N55B30A; G05 (2019–present) = B58B30 (badged as xDrive40i in later models). Tell us your registration date and we'll confirm it for free."
+      },
+      {
+        "id": 6,
+        "question": "Can I repair the M54 cooling system, or does it require engine replacement?",
+        "answer": "M54 cooling system failures are always repairable without replacing the engine. Water pump, thermostat, and radiator replacement costs £400–£900. However, if a cooling system failure leads to severe overheating, it can cause head gasket damage or warped cylinder heads — at which point a full engine replacement may be required. At the first sign of overheating or coolant loss, book an inspection immediately."
+      }
+    ],
+    "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty — always confirm terms with your chosen supplier."
   },
   "trustCta": {
     "h2": "Why UK BMW X5 3.0i Owners Trust BMWEngines.uk",

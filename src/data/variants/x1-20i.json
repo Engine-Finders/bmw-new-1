@@ -586,44 +586,43 @@
       {
         "label": "Regional Demand",
         "value": "South East (22%), London (18%), North West (13%)【PATTERN DATA】"
-      },
-      {
-        "label": "SECTION 8 — FAQ",
-        "value": "1. How much does a BMW X1 20i engine replacement cost in the UK?"
-      },
-      {
-        "label": "A reconditioned X1 20i engine typically costs £3,200–£7,500 supply only depending on generation. Fitting adds £650–£1,300 at independent specialist rates. Use our calculator for a figure specific to your car.",
-        "value": "2. Is the BMW X1 20i engine reliable?"
-      },
-      {
-        "label": "It depends on which generation you're asking about. The N20 (E84, 2009–2015) has a well-documented timing chain tensioner issue — pre-2015 cars are the highest risk. The B48 (F48, 2015–2022) is significantly more reliable, with the timing chain moved to the front of the engine, but coolant leaks are a known issue. The B38 (U11, 2022+) is a proven engine but the 48V MHEV system adds complexity. Across all, oil-change discipline is everything.",
-        "value": "3. What are the common problems with the BMW X1 20i?"
-      },
-      {
-        "label": "N20 timing chain wear (the defining weak point of the E84 generation), N20 oil leaks from the oil filter housing and valve cover, B48 coolant leaks (F48), and B38 MHEV system issues (U11). See the Era Map above for generation-specific advice.",
-        "value": "4. Is it worth replacing a BMW X1 20i engine, or should I scrap the car?"
-      },
-      {
-        "label": "Depends on vehicle value. Against a well-kept E84 X1 (values £3,000–£8,000), a £4,000–£4,500 recon is 40–80% of the car's value — borderline. Against a £12,000–£20,000 F48 or U11, a £4,000–£5,000 recon is 25–35% — worth it. The BMW scrap threshold of 70% means evaluating the whole vehicle and its condition before committing.",
-        "value": "5. How do I find my BMW X1 20i engine code?"
-      },
-      {
-        "label": "Listed on the VIN plate and vehicle documentation. As a rule of thumb: E84 (2009–2015) = N20B20; F48 (2015–2022) = B48B20; U11 (2022–present) = B38A15P. Tell us your registration date and we'll confirm it for free.",
-        "value": "6. Can I repair the N20 timing chain, or does it need replacement?"
-      },
-      {
-        "label": "Yes — if caught early. A preventative chain, tensioner and guide replacement costs £800–£1,800. However, if the chain snaps, a full engine replacement (£3,200–£6,000) is usually required. At the first sign of cold-start rattle, book an inspection immediately.",
-        "value": "Disclaimer: All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty — always confirm terms with your chosen supplier."
-      },
-      {
-        "label": "SECTION 9, META AND SCHEMA",
-        "value": "PART 2 — SECTION 9 + META + SCHEMA"
       }
     ]
   },
   "faq": {
-    "items": [],
-    "disclaimer": ""
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a BMW X1 20i engine replacement cost in the UK?",
+        "answer": "A reconditioned X1 20i engine typically costs £3,200–£7,500 supply only depending on generation. Fitting adds £650–£1,300 at independent specialist rates. Use our calculator for a figure specific to your car."
+      },
+      {
+        "id": 2,
+        "question": "Is the BMW X1 20i engine reliable?",
+        "answer": "It depends on which generation you're asking about. The N20 (E84, 2009–2015) has a well-documented timing chain tensioner issue — pre-2015 cars are the highest risk. The B48 (F48, 2015–2022) is significantly more reliable, with the timing chain moved to the front of the engine, but coolant leaks are a known issue. The B38 (U11, 2022+) is a proven engine but the 48V MHEV system adds complexity. Across all, oil-change discipline is everything."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the BMW X1 20i?",
+        "answer": "N20 timing chain wear (the defining weak point of the E84 generation), N20 oil leaks from the oil filter housing and valve cover, B48 coolant leaks (F48), and B38 MHEV system issues (U11). See the Era Map above for generation-specific advice."
+      },
+      {
+        "id": 4,
+        "question": "Is it worth replacing a BMW X1 20i engine, or should I scrap the car?",
+        "answer": "Depends on vehicle value. Against a well-kept E84 X1 (values £3,000–£8,000), a £4,000–£4,500 recon is 40–80% of the car's value — borderline. Against a £12,000–£20,000 F48 or U11, a £4,000–£5,000 recon is 25–35% — worth it. The BMW scrap threshold of 70% means evaluating the whole vehicle and its condition before committing."
+      },
+      {
+        "id": 5,
+        "question": "How do I find my BMW X1 20i engine code?",
+        "answer": "Listed on the VIN plate and vehicle documentation. As a rule of thumb: E84 (2009–2015) = N20B20; F48 (2015–2022) = B48B20; U11 (2022–present) = B38A15P. Tell us your registration date and we'll confirm it for free."
+      },
+      {
+        "id": 6,
+        "question": "Can I repair the N20 timing chain, or does it need replacement?",
+        "answer": "Yes — if caught early. A preventative chain, tensioner and guide replacement costs £800–£1,800. However, if the chain snaps, a full engine replacement (£3,200–£6,000) is usually required. At the first sign of cold-start rattle, book an inspection immediately."
+      }
+    ],
+    "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty — always confirm terms with your chosen supplier."
   },
   "trustCta": {
     "h2": "Why UK BMW X1 20i Owners Trust BMWEngines.uk",

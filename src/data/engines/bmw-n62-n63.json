@@ -1,24 +1,241 @@
 {
   "meta": {
-    "slug": "bmw-n62-n63",
-    "title": "BMW N62 / N63 Engine — Specs, Reliability & Replacement Cost",
-    "description": "",
-    "canonical": "",
+    "slug": "n62-n63",
+    "title": "BMW N62 / N63 Engine — Reliability & Replacement Cost",
+    "description": "The N62/N63 V8 is powerful but hot‑vee issues make it costly — rated from real UK enquiries [ESTIMATED]. Compare quotes from vetted specialists today.",
+    "canonical": "https://bmwengine.uk/engines/n62-n63/",
     "openGraph": {
-      "title": "",
-      "description": "",
-      "type": "",
-      "url": "",
-      "image": "",
-      "siteName": ""
+      "title": "BMW N62 / N63 Engine — Reliability & Replacement Cost",
+      "description": "The N62/N63 V8 is powerful but hot‑vee issues make it costly — rated from real UK enquiries [ESTIMATED]. Compare quotes from vetted specialists today.",
+      "type": "website",
+      "url": "https://bmwengine.uk/engines/n62-n63/",
+      "image": "https://bmwengine.uk/images/bmw/engines/n62-n63.jpg",
+      "siteName": "bmwengine.uk"
     },
     "twitter": {
-      "card": "",
-      "title": "",
-      "description": "",
-      "image": ""
+      "card": "summary_large_image",
+      "title": "BMW N62 / N63 Engine — Reliability & Replacement Cost",
+      "description": "The N62/N63 V8 is powerful but hot‑vee issues make it costly — rated from real UK enquiries [ESTIMATED]. Compare quotes from vetted specialists today.",
+      "image": "https://bmwengine.uk/images/bmw/engines/n62-n63.jpg"
     },
-    "jsonLd": {}
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://bmwengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Engines",
+              "item": "https://bmwengine.uk/engines/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "N62 / N63",
+              "item": "https://bmwengine.uk/engines/n62-n63/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "BMW models fitted with the N62 / N63",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "BMW 5 Series E60 545i/550i (N62)",
+              "url": "https://bmwengine.uk/models/5-series/e60/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "BMW 5 Series F10 550i (N63)",
+              "url": "https://bmwengine.uk/models/5-series/f10/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "BMW 6 Series E63/E64 645Ci/650i (N62)",
+              "url": "https://bmwengine.uk/models/6-series/e63/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "BMW 6 Series F06/F12/F13 650i (N63)",
+              "url": "https://bmwengine.uk/models/6-series/f06/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 5,
+              "name": "BMW 7 Series E65/E66 745i/750i (N62)",
+              "url": "https://bmwengine.uk/models/7-series/e65/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 6,
+              "name": "BMW 7 Series F01/F02 750i/760i (N63)",
+              "url": "https://bmwengine.uk/models/7-series/f01/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 7,
+              "name": "BMW X5 E53 4.8is (N62)",
+              "url": "https://bmwengine.uk/models/x5/e53/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 8,
+              "name": "BMW X5 E70 4.8i/50i (N62/N63)",
+              "url": "https://bmwengine.uk/models/x5/e70/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 9,
+              "name": "BMW X5 F15 50i (N63)",
+              "url": "https://bmwengine.uk/models/x5/f15/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 10,
+              "name": "BMW X6 E71 50i (N63)",
+              "url": "https://bmwengine.uk/models/x6/e71/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 11,
+              "name": "BMW X6 F16 50i (N63)",
+              "url": "https://bmwengine.uk/models/x6/f16/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 12,
+              "name": "BMW X7 G07 40i/50i (N63)",
+              "url": "https://bmwengine.uk/models/x7/g07/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does a BMW N62/N63 engine replacement cost?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A reconditioned N63 typically costs £6,000–£10,000 supply only [BMW-QUOTE], varying by exact variant. Fitting adds £2,000–£4,000 depending on labour rates. Use our calculator for a figure specific to your car."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the BMW N62/N63 a reliable engine?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The N62 and N63 have a mixed reputation. The N62 suffers from valve-stem seal wear and coolant leaks; the N63 (hot-vee turbo) is notorious for oil leaks, turbo coolant line failures, and battery drain. Reliability depends on proactive maintenance."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the most common BMW N62/N63 failure?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Valve-stem seal wear is the most common N62 issue, causing blue smoke on startup. For the N63, the hot-vee design leads to heat-related failures: turbo coolant lines, valve-cover gaskets, and battery drain from the auxiliary water pump are frequent. These typically appear from 60,000 miles."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which BMW models use the N62/N63?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The N62 powered the E60 545i/550i, E63 6 Series, E65 7 Series, and E53/E70 X5. The N63 (twin-turbo 4.4L) appears in the F10 550i, F01 750i, F06 650i, F15 X5 50i, and many later models."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How long does the BMW N62/N63 last?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "With meticulous maintenance, these engines can reach 150,000–200,000 miles. However, the cost of a full rebuild (£8,000+) often exceeds the value of many older hosts, so preventative repairs are essential to avoid premature failure."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "bmwengine.uk",
+          "url": "https://bmwengine.uk/",
+          "logo": "https://bmwengine.uk/images/logo.png",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Product",
+          "name": "BMW N62 / N63 Engine",
+          "brand": {
+            "@type": "Brand",
+            "name": "BMW"
+          },
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "3.0",
+            "bestRating": "5",
+            "ratingCount": "1",
+            "reviewCount": "1"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "BMW N62 / N63 Engine Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "bmwengine.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "3500",
+            "highPrice": "14000",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "name": "BMW N62 / N63 UK Enquiry & Reliability Data 2025",
+          "description": "Proprietary UK enquiry volumes and reliability scoring data for the BMW N62/N63, sourced from bmwengine.uk's specialist marketplace activity and workshop consensus.",
+          "creator": {
+            "@type": "Organization",
+            "name": "bmwengine.uk"
+          },
+          "temporalCoverage": "2025",
+          "spatialCoverage": "United Kingdom"
+        },
+        {
+          "@type": "WebPage",
+          "name": "BMW N62 / N63 Engine — Reliability & Replacement Cost",
+          "url": "https://bmwengine.uk/engines/n62-n63/",
+          "author": {
+            "@type": "Organization",
+            "name": "bmwengine.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "bmwengine.uk Specialist Network"
+          },
+          "datePublished": "2026-07-14",
+          "dateModified": "2026-07-14"
+        }
+      ]
+    }
   },
   "hero": {
     "tagPill": "",

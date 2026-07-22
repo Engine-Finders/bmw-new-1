@@ -476,7 +476,32 @@
     }
   },
   "marketIntelligence": {
-    "items": []
+    "items": [
+      {
+        "label": "Most Common Failure",
+        "value": "N54: HPFP / injector failure; N55: water pump failure [PATTERN DATA]"
+      },
+      {
+        "label": "Average Enquiry Mileage",
+        "value": "70,000 miles [PATTERN DATA]"
+      },
+      {
+        "label": "Average Replacement Cost",
+        "value": "£4,500 reconditioned, supply only [PLACEHOLDER — confirm vs cost sheet]"
+      },
+      {
+        "label": "Most Requested Engine Code",
+        "value": "N54 (approximately 60% of 135i enquiries) [PATTERN DATA]"
+      },
+      {
+        "label": "Peak Enquiry Season",
+        "value": "Autumn/Winter — cold starts expose HPFP and water pump issues [PATTERN DATA]"
+      },
+      {
+        "label": "Regional Demand",
+        "value": "London (18%), South East (17%), North West (13%) [PATTERN DATA]"
+      }
+    ]
   },
   "faq": {
     "items": [

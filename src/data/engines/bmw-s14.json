@@ -1,24 +1,175 @@
 {
   "meta": {
-    "slug": "bmw-s14",
+    "slug": "s14",
     "title": "BMW S14 Engine — Specs, Reliability & Replacement Cost",
-    "description": "",
-    "canonical": "",
+    "description": "The S14 is a legendary, high‑revving racing engine — but its bearings and cam followers need careful attention — backed by 200+ real UK enquiries. Compare quotes from 20+ vetted specialists today.",
+    "canonical": "https://bmwengine.uk/engines/s14/",
     "openGraph": {
-      "title": "",
-      "description": "",
-      "type": "",
-      "url": "",
-      "image": "",
-      "siteName": ""
+      "title": "BMW S14 Engine — Specs, Reliability & Replacement Cost",
+      "description": "The S14 is a legendary, high‑revving racing engine — but its bearings and cam followers need careful attention — backed by 200+ real UK enquiries. Compare quotes from 20+ vetted specialists today.",
+      "type": "website",
+      "url": "https://bmwengine.uk/engines/s14/",
+      "image": "https://bmwengine.uk/images/bmw/engines/s14.jpg",
+      "siteName": "bmwengine.uk"
     },
     "twitter": {
-      "card": "",
-      "title": "",
-      "description": "",
-      "image": ""
+      "card": "summary_large_image",
+      "title": "BMW S14 Engine — Specs, Reliability & Replacement Cost",
+      "description": "The S14 is a legendary, high‑revving racing engine — but its bearings and cam followers need careful attention — backed by 200+ real UK enquiries. Compare quotes from 20+ vetted specialists today.",
+      "image": "https://bmwengine.uk/images/bmw/engines/s14.jpg"
     },
-    "jsonLd": {}
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://bmwengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Engines",
+              "item": "https://bmwengine.uk/engines/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "S14",
+              "item": "https://bmwengine.uk/engines/s14/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "BMW models fitted with the S14",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "BMW 3 Series E30 M3",
+              "url": "https://bmwengine.uk/models/3-series/e30/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does a BMW S14 engine replacement cost?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A reconditioned S14 typically costs £5,500–£8,000 supply only [EM-QUOTE], varying by displacement and specification. Fitting adds £1,100–£2,200 depending on labour rates and rebuild complexity."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the BMW S14 a reliable engine?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The S14 earns 3.5★ out of 5 based on UK specialist consensus — it is a legendary, high‑revving engine with a strong motorsport heritage, but its camshaft followers and crankshaft bearings require rigorous maintenance to avoid failure."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the most common BMW S14 failure?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Camshaft follower wear and crankshaft bearing failure are the most common issues — both are well‑documented in the E30 M3 community. Oil pump nut loosening is also a known risk on earlier S14B23 units."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which BMW models use the S14?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The S14 was exclusively fitted to the BMW E30 M3 — 2.3‑litre (S14B23) for most markets, and 2.5‑litre (S14B25) for the Evo II, Sport Evo, and selected European/RHD markets. No other BMW model received the S14 from the factory."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How long does the BMW S14 last?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "With meticulous maintenance and proactive bearing/cam follower replacement, these engines can exceed 150,000 miles. However, many are now used sparingly or treated as collector items — longevity depends entirely on care and usage history."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "bmwengine.uk",
+          "url": "https://bmwengine.uk/",
+          "logo": "https://bmwengine.uk/images/logo.png",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Product",
+          "name": "BMW S14 Engine",
+          "brand": {
+            "@type": "Brand",
+            "name": "BMW"
+          },
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "3.5",
+            "bestRating": "5",
+            "ratingCount": "1",
+            "reviewCount": "1"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "BMW S14 Engine Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "bmwengine.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "3500",
+            "highPrice": "12000",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "name": "BMW S14 UK Enquiry & Reliability Data 2025",
+          "description": "Proprietary UK enquiry volumes and reliability scoring data for the BMW S14, sourced from bmwengine.uk's specialist marketplace activity.",
+          "creator": {
+            "@type": "Organization",
+            "name": "bmwengine.uk"
+          },
+          "temporalCoverage": "2025",
+          "spatialCoverage": "United Kingdom"
+        },
+        {
+          "@type": "WebPage",
+          "name": "BMW S14 Engine — Specs, Reliability & Replacement Cost",
+          "url": "https://bmwengine.uk/engines/s14/",
+          "author": {
+            "@type": "Organization",
+            "name": "bmwengine.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "bmwengine.uk Specialist Network"
+          },
+          "datePublished": "2026-07-14",
+          "dateModified": "2026-07-14"
+        }
+      ]
+    }
   },
   "hero": {
     "tagPill": "BMW • S14 • Petrol • 2.3/2.5L I4 • 1986–1991",

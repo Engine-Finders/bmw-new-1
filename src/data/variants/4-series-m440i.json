@@ -476,7 +476,32 @@
     }
   },
   "marketIntelligence": {
-    "items": []
+    "items": [
+      {
+        "label": "Most Common Failure",
+        "value": "Coolant system issues (water pump, expansion cap) — the most frequently reported B58 problem"
+      },
+      {
+        "label": "Average Enquiry Mileage",
+        "value": "40,000–60,000 miles [PATTERN DATA]"
+      },
+      {
+        "label": "Average Replacement Cost",
+        "value": "£6,000 reconditioned, supply only [PLACEHOLDER — confirm vs cost sheet]"
+      },
+      {
+        "label": "Most Requested Engine Code",
+        "value": "B58B30O1 [PATTERN DATA]"
+      },
+      {
+        "label": "Peak Enquiry Season",
+        "value": "Summer — cooling issues exposed by warmer weather [PATTERN DATA]"
+      },
+      {
+        "label": "Regional Demand",
+        "value": "South East (18%), London (16%), North West (12%) [PATTERN DATA]"
+      }
+    ]
   },
   "faq": {
     "items": [

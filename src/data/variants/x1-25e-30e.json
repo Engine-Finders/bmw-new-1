@@ -544,7 +544,32 @@
     }
   },
   "marketIntelligence": {
-    "items": []
+    "items": [
+      {
+        "label": "Most Common Failure",
+        "value": "\"Antrieb gestört\" drivetrain malfunction warning — reported on U11 PHEV models"
+      },
+      {
+        "label": "Average Enquiry Mileage",
+        "value": "20,000–50,000 miles【PATTERN DATA】"
+      },
+      {
+        "label": "Average Replacement Cost",
+        "value": "£4,500 reconditioned, supply only【PLACEHOLDER】"
+      },
+      {
+        "label": "Most Requested Engine Code",
+        "value": "B38A15M0 (U11 generation)【PATTERN DATA】"
+      },
+      {
+        "label": "Peak Enquiry Season",
+        "value": "Winter — cold starts expose timing chain and battery issues【PATTERN DATA】"
+      },
+      {
+        "label": "Regional Demand",
+        "value": "London (22%), South East (18%), North West (12%)【PATTERN DATA】"
+      }
+    ]
   },
   "faq": {
     "items": [

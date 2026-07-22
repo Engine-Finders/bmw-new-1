@@ -455,11 +455,67 @@
     }
   },
   "marketIntelligence": {
-    "items": []
+    "items": [
+      {
+        "label": "Most Common Failure",
+        "value": "Oil filter housing cracking — leading to coolant or oil leaks"
+      },
+      {
+        "label": "Average Enquiry Mileage",
+        "value": "40,000–70,000 miles【PATTERN DATA】"
+      },
+      {
+        "label": "Average Replacement Cost",
+        "value": "£1,595–£3,500 reconditioned, supply only【BMW-QUOTE】"
+      },
+      {
+        "label": "Most Requested Engine Code",
+        "value": "B48A20T1 — the 128ti's high-output B48【PATTERN DATA】"
+      },
+      {
+        "label": "Peak Enquiry Season",
+        "value": "Spring — hot hatch season and pre‑summer preparation【PATTERN DATA】"
+      },
+      {
+        "label": "Regional Demand",
+        "value": "London (20%), South East (18%), North West (12%)【PATTERN DATA】"
+      }
+    ]
   },
   "faq": {
-    "items": [],
-    "disclaimer": ""
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a BMW 128ti engine replacement cost in the UK?",
+        "answer": "A reconditioned B48A20T1 engine typically costs £1,595–£3,500 supply only, with used units available from similar ranges. Fitting adds £1,300–£2,000 depending on the workshop. Use our calculator for a figure specific to your car."
+      },
+      {
+        "id": 2,
+        "question": "Is the BMW 128ti engine reliable?",
+        "answer": "Yes — the B48 is one of BMW's most reliable modern engines. It's a significant improvement over the N20 and shares its architecture with the bulletproof B58 six-cylinder. The main weaknesses are the oil filter housing and cooling system components — both are well-understood and repairable."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the BMW 128ti?",
+        "answer": "Oil filter housing cracking (causing coolant or oil leaks), cooling system leaks (water pump and hoses), and occasional 8-speed automatic gearbox hesitation or jerky shifts. The B48 itself is fundamentally robust."
+      },
+      {
+        "id": 4,
+        "question": "Is it worth replacing a BMW 128ti engine, or should I scrap the car?",
+        "answer": "128ti values remain strong — a well-kept F40 is often worth £18,000–£30,000+. A £2,000–£3,500 reconditioned engine is only 10–20% of the vehicle's value — well within the 70% BMW threshold. Replacement is almost always worthwhile."
+      },
+      {
+        "id": 5,
+        "question": "How do I find my BMW 128ti engine code?",
+        "answer": "The engine code is B48A20T1 — it's the only engine used in the F40-generation 128ti. You can find it on the VIN plate, in the vehicle documentation, or on a label on the engine itself. Production began in 2020."
+      },
+      {
+        "id": 6,
+        "question": "Can I repair the B48 oil filter housing, or does it need replacement?",
+        "answer": "It needs replacement — the housing cannot be repaired once cracked. Replacement costs £800–£1,800 and is labour-intensive due to the intake manifold needing removal. Once replaced with a new unit, the issue rarely recurs."
+      }
+    ],
+    "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty — always confirm terms with your chosen supplier."
   },
   "trustCta": {
     "h2": "",

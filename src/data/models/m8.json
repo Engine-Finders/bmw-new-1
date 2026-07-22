@@ -313,72 +313,32 @@
       {
         "metric": "Overall Rating",
         "value": "★★★★☆ 4.0/5"
-      },
-      {
-        "metric": "SECTION 4 — GENERATIONS — <GenerationsGrid>",
-        "value": "H2: BMW M8 — One Generation, Three Body Styles"
-      },
-      {
-        "metric": "Sub-headline: The M8 is BMW's flagship grand tourer — one generation, three body styles, and the most powerful engine BMW has ever put in a standard production car.",
-        "value": "F91/F92/F93 — M8 (2019–2025)"
-      },
-      {
-        "metric": "BMW M8 F91/F92/F93 🔥 Most Enquired — flagship M car [BMW-VERIFIED]",
-        "value": "2019–2025 • S63B44T4 4.4L twin-turbo V8 • 591–625 hp"
-      },
-      {
-        "metric": "★★★★☆",
-        "value": "Our Verdict: The ultimate BMW M car — a 625 hp grand tourer with the S63 twin-turbo V8 at its heart. Available as a Coupé (F92), Convertible (F91), and four-door Gran Coupé (F93). The Competition variant delivers 625 hp — the most powerful BMW M engine ever in a standard production car. The S63 is proven and powerful, but oil leaks and turbocharger issues are the known risks. Buy the Competition — and always with a warranty."
-      },
-      {
-        "metric": "Explore the M8 →",
-        "value": "Which M8 Is Right for You?"
-      },
-      {
-        "metric": "M8 Standard",
-        "value": "M8 Competition"
-      },
-      {
-        "metric": "Power",
-        "value": "591 hp / 750 Nm"
-      },
-      {
-        "metric": "625 hp / 750 Nm",
-        "value": "0-62 mph"
-      },
-      {
-        "metric": "3.2 seconds",
-        "value": "3.2 seconds"
-      },
-      {
-        "metric": "Engine code",
-        "value": "S63B44T4"
-      },
-      {
-        "metric": "S63B44T4",
-        "value": "Our position"
-      },
-      {
-        "metric": "The entry point",
-        "value": "The one to buy — more power, more presence"
-      },
-      {
-        "metric": "Read the full comparison: BMW M8 vs M5 →",
-        "value": "The S63 Engine — The Heart of the M8"
       }
     ]
   },
   "generations": {
-    "h2": "",
-    "subHeadline": "",
-    "cards": [],
+    "h2": "BMW M8 — One Generation, Three Body Styles",
+    "subHeadline": "The M8 is BMW's flagship grand tourer — one generation, three body styles, and the most powerful engine BMW has ever put in a standard production car.",
+    "cards": [
+      {
+        "title": "F91/F92/F93 — M8 (2019–2025)",
+        "badge": "BMW M8 F91/F92/F93 🔥 Most Enquired — flagship M car [BMW-VERIFIED]",
+        "meta": "2019–2025 • S63B44T4 4.4L twin-turbo V8 • 591–625 hp",
+        "rating": "★★★★☆",
+        "verdict": "The ultimate BMW M car — a 625 hp grand tourer with the S63 twin-turbo V8 at its heart. Available as a Coupé (F92), Convertible (F91), and four-door Gran Coupé (F93). The Competition variant delivers 625 hp — the most powerful BMW M engine ever in a standard production car. The S63 is proven and powerful, but oil leaks and turbocharger issues are the known risks. Buy the Competition — and always with a warranty.",
+        "cta": {
+          "label": "Explore the M8 →",
+          "href": "#"
+        }
+      }
+    ],
     "rangeTable": {
       "title": "",
       "columns": [],
       "rows": []
     },
     "comparisonLink": {
-      "label": "",
+      "label": "Read the full comparison: BMW M8 vs M5 →",
       "href": "#"
     }
   },

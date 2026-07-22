@@ -1,11 +1,272 @@
 {
   "meta": {
     "slug": "bmw-5-series-g61",
-    "title": "BMW 5 Series G61 Engines — The Complete UK Guide",
-    "titleCharCount": 48,
-    "description": "",
-    "descriptionCharCount": 0,
-    "jsonLd": {}
+    "title": "G61 Engine Replacement Cost UK — Compare Quotes",
+    "titleCharCount": 57,
+    "description": "Every BMW 5 Series G61 Touring engine — 520i, 530e, 540i, 550e, 520d, 540d, i5, M5. Real UK costs, honest reliability data, and BMW's premium estate. Get free quotes from 20+ vetted BMW specialists today.",
+    "descriptionCharCount": 158,
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://bmwengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "5 Series",
+              "item": "https://bmwengine.uk/5-series/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "BMW 5 Series G61",
+              "item": "https://bmwengine.uk/5-series/g61/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "BMW 5 Series G61 Engine Codes",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "B48B20V 520i Engine",
+              "url": "https://bmwengine.uk/engines/b48b20v/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "B48B20V 530e PHEV Engine",
+              "url": "https://bmwengine.uk/engines/b48b20v-phev/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "B58B30S 540i Engine",
+              "url": "https://bmwengine.uk/engines/b58b30s/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "B58B30S 550e PHEV Engine",
+              "url": "https://bmwengine.uk/engines/b58b30s-phev/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 5,
+              "name": "B47D20B 520d Engine",
+              "url": "https://bmwengine.uk/engines/b47d20b/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 6,
+              "name": "B57D30B 540d Engine",
+              "url": "https://bmwengine.uk/engines/b57d30b/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 7,
+              "name": "S68B44A M5 Touring Engine",
+              "url": "https://bmwengine.uk/engines/s68b44a/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "BMW 5 Series G61 Core Variants",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "520i",
+              "url": "https://bmwengine.uk/5-series/520i/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "530e",
+              "url": "https://bmwengine.uk/5-series/530e/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "540i xDrive",
+              "url": "https://bmwengine.uk/5-series/540i/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "550e xDrive",
+              "url": "https://bmwengine.uk/5-series/550e/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 5,
+              "name": "520d",
+              "url": "https://bmwengine.uk/5-series/520d/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 6,
+              "name": "540d xDrive",
+              "url": "https://bmwengine.uk/5-series/540d/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 7,
+              "name": "i5 eDrive40",
+              "url": "https://bmwengine.uk/5-series/i5-edrive40/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 8,
+              "name": "i5 M60 xDrive",
+              "url": "https://bmwengine.uk/5-series/i5-m60/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 9,
+              "name": "M5 Touring",
+              "url": "https://bmwengine.uk/5-series/m5-touring/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does a BMW 5 Series G61 engine replacement cost in the UK?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A reconditioned G61 engine typically costs £2,800–£9,000 supply only, depending on engine — the B48 520i sits at £2,800–£4,500, while the B58 550e runs £5,500–£9,000. Fitting adds £650–£1,040. Use our calculator for a personalised figure. Electric i5 variants have no engine replacement costs."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which G61 5 Series Touring engine is the most reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The B48 2.0-litre (520i) and B58 3.0-litre (540i) are the most dependable — BMW's B-series engines are their most reliable modern family. The B47 diesel is also robust, with far fewer timing chain issues than the older N47. Electric i5 variants are expected to be highly reliable with lower maintenance costs."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What are the common problems with the G61 5 Series Touring?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Cooling system leaks on B-series engines (water pump, expansion tank), EGR cooler failures on B47 diesels, and battery/charging system issues on PHEV variants (530e, 550e). All are well-understood and repairable. The G61 is too new for widespread long-term failure data."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the BMW G61 5 Series Touring reliable overall?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes — the G61 benefits from BMW's mature B-series engine technology and the refined CLAR platform. Early indications suggest strong reliability across the range. The PHEV variants add complexity, but the combustion engines themselves are robust. Electric i5 variants are based on proven EV technology."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which G61 5 Series Touring engine should I avoid?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No outright avoidance — but a 530e or 550e without documented battery health or charging system history deserves a thorough inspection. The M5 Touring's S68 V8 is a high-performance engine; budget accordingly for maintenance."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I know if my G61 5 Series Touring engine needs replacing?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Coolant loss or overheating (B-series cooling system), white smoke or coolant loss (B47 EGR cooler), or hybrid system warnings and range reduction (530e/550e) are key warnings. Use our diagnostic calculator for a personalised assessment."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is it worth replacing a G61 5 Series Touring engine, or should I scrap the car?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Depends on the car's value. Against a well-kept £35,000+ G61, a £3,200 B48 recon is 9% of the car's value — safe. Even against a high-mileage £20,000 example, the same recon is 16% — well within our 70% BMW threshold. The G61 holds value well; replacement is almost always viable."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How long do G61 5 Series Touring engines last?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "B-series engines (B48, B58) are expected to exceed 150,000 miles with proper maintenance — cooling system attention is the key. B47 diesels are capable of 150,000+ miles with EGR cooler care. Electric i5 variants have fewer moving parts and are expected to be long-lasting, though battery degradation is a consideration."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the difference between the G61 and the G60?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The G60 is the 5 Series Saloon (2023–present), while the G61 is the Touring estate (2024–present). Both share the same CLAR platform and engine ranges, but the G61 offers significantly more cargo space and estate-specific bodywork. Maintenance costs are broadly similar, though some components may differ due to body configuration."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I find my G61 5 Series Touring engine code?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Check the VIN plate, vehicle documentation, or the engine block — 2.0-litre four-cylinder B48 variants include B48B20V (520i/530e) and B48B20P (520i some markets), 3.0-litre six-cylinder B58 variants include B58B30S (540i/550e), diesel variants include B47D20B (520d) and B57D30B (540d), the M5 Touring uses S68B44A, and electric variants are the i5 eDrive40 (340 PS) and i5 M60 xDrive (394 PS). Tell us your variant and registration year and we'll identify it — 20+ vetted BMW specialists will confirm it for free."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "BMWEngines.uk",
+          "url": "https://bmwengine.uk/",
+          "logo": "https://bmwengine.uk/images/bmwengines-logo.png",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "BMW 5 Series G61 Engine Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "2800",
+            "highPrice": "9000",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "WebPage",
+          "name": "G61 Engine Replacement Cost UK — Compare Quotes",
+          "url": "https://bmwengine.uk/5-series/g61/",
+          "author": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk Specialist Network"
+          },
+          "datePublished": "2026-07-09",
+          "dateModified": "2026-07-09"
+        }
+      ]
+    }
   },
   "internalDeclarations": {
     "checkA": "",
@@ -461,16 +722,80 @@
     "liveFeed": []
   },
   "faq": {
-    "items": []
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a BMW 5 Series G61 engine replacement cost in the UK?",
+        "answer": "A reconditioned G61 engine typically costs £2,800–£9,000 supply only [BMW-QUOTE], depending on engine — the B48 520i sits at £2,800–£4,500, while the B58 550e runs £5,500–£9,000. Fitting adds £650–£1,040. Use our calculator for a personalised figure. Electric i5 variants have no engine replacement costs."
+      },
+      {
+        "id": 2,
+        "question": "Which G61 5 Series Touring engine is the most reliable?",
+        "answer": "The B48 2.0-litre (520i) and B58 3.0-litre (540i) are the most dependable — BMW's B-series engines are their most reliable modern family. The B47 diesel is also robust, with far fewer timing chain issues than the older N47. Electric i5 variants are expected to be highly reliable with lower maintenance costs."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the G61 5 Series Touring?",
+        "answer": "Cooling system leaks on B-series engines (water pump, expansion tank), EGR cooler failures on B47 diesels, and battery/charging system issues on PHEV variants (530e, 550e). All are well-understood and repairable. The G61 is too new for widespread long-term failure data."
+      },
+      {
+        "id": 4,
+        "question": "Is the BMW G61 5 Series Touring reliable overall?",
+        "answer": "Yes — the G61 benefits from BMW's mature B-series engine technology and the refined CLAR platform. Early indications suggest strong reliability across the range. The PHEV variants add complexity, but the combustion engines themselves are robust. Electric i5 variants are based on proven EV technology."
+      },
+      {
+        "id": 5,
+        "question": "Which G61 5 Series Touring engine should I avoid?",
+        "answer": "No outright avoidance — but a 530e or 550e without documented battery health or charging system history deserves a thorough inspection. The M5 Touring's S68 V8 is a high-performance engine; budget accordingly for maintenance."
+      },
+      {
+        "id": 6,
+        "question": "How do I know if my G61 5 Series Touring engine needs replacing?",
+        "answer": "Coolant loss or overheating (B-series cooling system), white smoke or coolant loss (B47 EGR cooler), or hybrid system warnings and range reduction (530e/550e) are key warnings. Use our diagnostic calculator for a personalised assessment."
+      },
+      {
+        "id": 7,
+        "question": "Is it worth replacing a G61 5 Series Touring engine, or should I scrap the car?",
+        "answer": "Depends on the car's value. Against a well-kept £35,000+ G61, a £3,200 B48 recon is 9% of the car's value — safe. Even against a high-mileage £20,000 example, the same recon is 16% — well within our 70% BMW threshold. The G61 holds value well; replacement is almost always viable."
+      },
+      {
+        "id": 8,
+        "question": "How long do G61 5 Series Touring engines last?",
+        "answer": "B-series engines (B48, B58) are expected to exceed 150,000 miles with proper maintenance — cooling system attention is the key. B47 diesels are capable of 150,000+ miles with EGR cooler care. Electric i5 variants have fewer moving parts and are expected to be long-lasting, though battery degradation is a consideration."
+      },
+      {
+        "id": 9,
+        "question": "What is the difference between the G61 and the G60?",
+        "answer": "The G60 is the 5 Series Saloon (2023–present), while the G61 is the Touring estate (2024–present). Both share the same CLAR platform and engine ranges, but the G61 offers significantly more cargo space and estate-specific bodywork. Maintenance costs are broadly similar, though some components may differ due to body configuration."
+      },
+      {
+        "id": 10,
+        "question": "How do I find my G61 5 Series Touring engine code?",
+        "answer": "Check the VIN plate, vehicle documentation, or the engine block — 2.0-litre four-cylinder B48 variants include B48B20V (520i/530e) and B48B20P (520i some markets), 3.0-litre six-cylinder B58 variants include B58B30S (540i/550e), diesel variants include B47D20B (520d) and B57D30B (540d), the M5 Touring uses S68B44A, and electric variants are the i5 eDrive40 (340 PS) and i5 M60 xDrive (394 PS). Tell us your variant and registration year and we'll identify it — 20+ vetted BMW specialists will confirm it for free."
+      }
+    ]
   },
   "trustCta": {
-    "h2": "",
-    "trustPoints": [],
-    "finalCta": "",
+    "h2": "Why UK BMW 5 Series G61 Owners Trust BMWEngines.uk",
+    "trustPoints": [
+      {
+        "title": "Trusted G61 Engine Suppliers",
+        "text": "every garage and engine rebuilder in our network is vetted, rated and reviewed by real 5 Series Touring owners, as part of the Engine Finders network."
+      },
+      {
+        "title": "Compare G61 Engine Replacement Companies",
+        "text": "see prices, warranty terms and supply & fit options side-by-side before you commit."
+      },
+      {
+        "title": "UK Engine Replacement Services for G61",
+        "text": "covering every variant from 520i to M5 Touring, with supply-only or full supply & fit available nationwide."
+      }
+    ],
+    "finalCta": "Find the best BMW 5 Series G61 engine replacement UK drivers rely on. Compare real prices from trusted specialists on EnginesMarket today and get back on the road with confidence.",
     "ctaButton": {
-      "label": "",
+      "label": "Compare BMW 5 Series G61 Engine Prices on EnginesMarket →",
       "href": "#",
-      "note": ""
+      "note": "[PLACEHOLDER — confirm EnginesMarket URL structure]"
     }
   }
 }

@@ -1,26 +1,188 @@
 {
   "meta": {
-    "slug": "bmw-x2-m35i",
-    "title": "BMW X2 M35i Engine Replacement — Compare Prices & Get Quotes",
-    "titleCharCount": 60,
-    "description": "",
-    "descriptionCharCount": 0,
-    "canonical": "",
+    "slug": "x2-m35i",
+    "title": "X2 M35i Engine Replacement Cost UK — Compare Quotes",
+    "titleCharCount": 57,
+    "description": "The 300+ bhp B48 turbo — real UK costs, common cooling and PCV issues, and honest reliability data. Get free quotes from 20+ vetted BMW specialists today.",
+    "descriptionCharCount": 160,
+    "canonical": "https://bmwengine.uk/x2/m35i/",
     "openGraph": {
-      "title": "",
-      "description": "",
-      "type": "",
-      "url": "",
-      "image": "",
-      "siteName": ""
+      "title": "X2 M35i Engine Replacement Cost UK — Compare Quotes",
+      "description": "The 300+ bhp B48 turbo — real UK costs, common cooling and PCV issues, and honest reliability data. Get free quotes from 20+ vetted BMW specialists today.",
+      "type": "website",
+      "url": "https://bmwengine.uk/x2/m35i/",
+      "image": "https://bmwengine.uk/images/bmw/hero/x2-m35i.jpg",
+      "siteName": "BMWEngines.uk"
     },
     "twitter": {
-      "card": "",
-      "title": "",
-      "description": "",
-      "image": ""
+      "card": "summary_large_image",
+      "title": "X2 M35i Engine Replacement Cost UK — Compare Quotes",
+      "description": "The 300+ bhp B48 turbo — real UK costs, common cooling and PCV issues, and honest reliability data.",
+      "image": "https://bmwengine.uk/images/bmw/hero/x2-m35i.jpg"
     },
-    "jsonLd": {}
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://bmwengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "X2",
+              "item": "https://bmwengine.uk/x2/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "M35i",
+              "item": "https://bmwengine.uk/x2/m35i/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "BMW X2 M35i Engine Era Map",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "F39 X2 M35i (B48A20, 2018–2023)",
+              "url": "https://bmwengine.uk/x2/m35i/#f39"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "U10 X2 M35i (B48A20, 2023–present)",
+              "url": "https://bmwengine.uk/x2/m35i/#u10"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "BMW X2 M35i Engine Codes",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "B48A20 2.0L Turbo Petrol",
+              "url": "https://bmwengine.uk/engines/b48a20/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does a BMW X2 M35i engine replacement cost in the UK?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A reconditioned BMW X2 M35i engine (B48A20) typically costs £4,000–£7,500 supply only, varying by generation: F39 £3,500–£6,500, U10 £4,000–£7,500. Fitting adds £1,000–£1,500. A water pump replacement costs £400–£1,000."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the BMW X2 M35i reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes — the B48 is a robust and well-developed engine that's significantly improved over the N20. The timing chain is now front-mounted, virtually eliminating the N20's chain issues. Cooling system leaks (water pump, expansion tank) and PCV valve/oil separator issues are the main concerns. Regular oil changes (8,000–10,000 miles) are essential. The U10's 48V mild-hybrid adds complexity but has proven reliable."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What are the common problems with the BMW X2 M35i?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Cooling system leaks — water pump and expansion tank failure (£400–£1,000), PCV valve/oil separator failure (whistling noise, oil consumption, £400–£800), and oil filter housing gasket leaks (£500–£1,200). The B48 is otherwise exceptionally robust."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is it worth replacing a BMW X2 M35i engine, or should I scrap the car?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "X2 M35i values range from £18,000–£40,000 depending on generation, condition and mileage. A £4,000–£7,500 reconditioned engine represents 10–40% of vehicle value — well within our 70% BMW scrap threshold. For most examples, replacement is financially viable."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I find my BMW X2 M35i engine code?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The M35i uses the B48A20 engine code — BMW's 2.0-litre four-cylinder turbo. F39 (2018–2023) is the earlier 302bhp variant; U10 (2023–present) is the 312bhp version with 48V mild-hybrid. The code is stamped on the engine block; your VIN and vehicle documentation will also confirm the specification."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I repair the cooling system leak, or does it need replacement?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes — water pump and expansion tank replacement (£400–£1,000) is a straightforward repair on the B48. The water pump is known to fail with age. Replacing both the water pump and expansion tank together is recommended — they degrade at similar rates. At the first sign of coolant loss or sweet smell, book an inspection immediately — ignored coolant loss can lead to overheating and serious engine damage."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "BMWEngines.uk",
+          "url": "https://bmwengine.uk/",
+          "logo": "https://bmwengine.uk/images/bmwengines-logo.png",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "BMW X2 M35i Engine Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "3000",
+            "highPrice": "12000",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "name": "BMW X2 M35i UK Engine Enquiry Data 2025",
+          "description": "Proprietary UK enquiry volumes and demand trends for BMW X2 M35i engines, sourced from BMWEngines.uk's specialist marketplace activity for the B48A20.",
+          "creator": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk"
+          },
+          "temporalCoverage": "2025",
+          "spatialCoverage": "United Kingdom"
+        },
+        {
+          "@type": "WebPage",
+          "name": "X2 M35i Engine Replacement Cost UK — Compare Quotes",
+          "url": "https://bmwengine.uk/x2/m35i/",
+          "author": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk Specialist Network"
+          },
+          "datePublished": "2026-07-11",
+          "dateModified": "2026-07-11"
+        }
+      ]
+    }
   },
   "hero": {
     "tagPill": "BMW X2 M35i • 2018–present • 2.0L Turbo Petrol",

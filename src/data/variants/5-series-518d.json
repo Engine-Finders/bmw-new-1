@@ -618,64 +618,43 @@
       {
         "label": "Regional Demand",
         "value": "South East (22%), London (16%), North West (12%) — executive car strongholds [PATTERN DATA]"
-      },
-      {
-        "label": "SECTION 8 — FAQ",
-        "value": "1. How much does a BMW 5 Series 518d engine replacement cost in the UK?"
-      },
-      {
-        "label": "A reconditioned 518d engine (N47 or B47) typically costs £1,800–£3,800 supply only depending on engine generation and variant. Fitting adds £1,000–£1,500. Use our calculator for a figure specific to your vehicle.",
-        "value": "2. Is the BMW 5 Series 518d engine reliable?"
-      },
-      {
-        "label": "It depends on which engine generation your 518d has. The N47D20C (2013–2014) is a capable diesel but has a well‑documented weakness: rear‑mounted timing chain failure. The B47 (2014‑onwards) addressed these issues with an improved timing chain design, though pre‑2018 units remain susceptible to tensioner wear. Both engines demand strict maintenance — regular oil changes (8,000–10,000 miles) are essential.",
-        "value": "3. What are the common problems with the BMW 5 Series 518d?"
-      },
-      {
-        "label": "On the pre‑2014 N47D20C, the most serious issue is timing chain failure — the chain, guides, and tensioners can wear prematurely, causing chain stretch and potential catastrophic engine damage. On the B47, pre‑2018 units can suffer from timing chain tensioner wear causing cold‑start rattle. On both engines, common problems include EGR valve/cooler failure, DPF blockage from urban driving, and oil leaks (valve cover, oil filter housing).",
-        "value": "4. Is it worth replacing a 518d engine, or should I scrap the car?"
-      },
-      {
-        "label": "Depends on vehicle value and condition. Against a tidy £5,000–£15,000 5 Series, a £1,800–£3,800 recon is 12–40% of the car's value — often worth it on well‑maintained examples. If the timing chain has snapped on an N47 and caused valve damage, a full engine replacement may be necessary. Get a full diagnostic assessment before committing.",
-        "value": "5. How do I find my 5 Series's engine code?"
-      },
-      {
-        "label": "The pre‑LCI F10/F11 (2013–2014) uses the N47D20C — check for the rear‑mounted timing chain design. Late F10/F11 (2014–2016) and G30/G31 (2016–present) use B47 variants. The engine code is stamped on the engine block and listed on your V5C.",
-        "value": "6. Can I repair a 518d engine issue, or does it need replacement?"
-      },
-      {
-        "label": "Most issues — timing chain wear (if caught early on N47 or B47 pre‑2018), EGR valve failure, DPF blockage, oil leaks — are repairable. However, if the timing chain has snapped on an N47, the engine is an interference design — pistons will strike valves. In this case, a full engine replacement is usually more cost‑effective than a rebuild.",
-        "value": "Disclaimer: All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12‑month unlimited‑mileage warranty — always confirm terms with your chosen supplier."
-      },
-      {
-        "label": "Section 9 (Trust + Final CTA), meta tags, Open Graph, Twitter Card, and complete JSON‑LD schema.",
-        "value": "* Brand: BMW"
-      },
-      {
-        "label": "* Domain: bmwengine.uk",
-        "value": "* Data tag: BMW‑"
-      },
-      {
-        "label": "* Specialist count: 20+",
-        "value": "* Scrap threshold: 70%"
-      },
-      {
-        "label": "* CTA Mode: Assertive (Priority H)",
-        "value": "* Era Map rows: 4 (N47D20C, B47D20A, B47D20B, B47D20B MHEV)"
-      },
-      {
-        "label": "* Engine codes: N47D20C, B47D20A, B47D20B",
-        "value": "* Service schema price range: £1,200 (lowest used) to £3,800 (highest rebuilt) — spans full Era Map history"
-      },
-      {
-        "label": "* Model Page needed: BMW 5 Series F10/G30 Generation Pages",
-        "value": "* Generation Pages needed: BMW 5 Series F10 and G30 Generation Pages (for cost inheritance)"
       }
     ]
   },
   "faq": {
-    "items": [],
-    "disclaimer": ""
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a BMW 5 Series 518d engine replacement cost in the UK?",
+        "answer": "A reconditioned 518d engine (N47 or B47) typically costs £1,800–£3,800 supply only depending on engine generation and variant. Fitting adds £1,000–£1,500. Use our calculator for a figure specific to your vehicle."
+      },
+      {
+        "id": 2,
+        "question": "Is the BMW 5 Series 518d engine reliable?",
+        "answer": "It depends on which engine generation your 518d has. The N47D20C (2013–2014) is a capable diesel but has a well‑documented weakness: rear‑mounted timing chain failure. The B47 (2014‑onwards) addressed these issues with an improved timing chain design, though pre‑2018 units remain susceptible to tensioner wear. Both engines demand strict maintenance — regular oil changes (8,000–10,000 miles) are essential."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the BMW 5 Series 518d?",
+        "answer": "On the pre‑2014 N47D20C, the most serious issue is timing chain failure — the chain, guides, and tensioners can wear prematurely, causing chain stretch and potential catastrophic engine damage. On the B47, pre‑2018 units can suffer from timing chain tensioner wear causing cold‑start rattle. On both engines, common problems include EGR valve/cooler failure, DPF blockage from urban driving, and oil leaks (valve cover, oil filter housing)."
+      },
+      {
+        "id": 4,
+        "question": "Is it worth replacing a 518d engine, or should I scrap the car?",
+        "answer": "Depends on vehicle value and condition. Against a tidy £5,000–£15,000 5 Series, a £1,800–£3,800 recon is 12–40% of the car's value — often worth it on well‑maintained examples. If the timing chain has snapped on an N47 and caused valve damage, a full engine replacement may be necessary. Get a full diagnostic assessment before committing."
+      },
+      {
+        "id": 5,
+        "question": "How do I find my 5 Series's engine code?",
+        "answer": "The pre‑LCI F10/F11 (2013–2014) uses the N47D20C — check for the rear‑mounted timing chain design. Late F10/F11 (2014–2016) and G30/G31 (2016–present) use B47 variants. The engine code is stamped on the engine block and listed on your V5C."
+      },
+      {
+        "id": 6,
+        "question": "Can I repair a 518d engine issue, or does it need replacement?",
+        "answer": "Most issues — timing chain wear (if caught early on N47 or B47 pre‑2018), EGR valve failure, DPF blockage, oil leaks — are repairable. However, if the timing chain has snapped on an N47, the engine is an interference design — pistons will strike valves. In this case, a full engine replacement is usually more cost‑effective than a rebuild."
+      }
+    ],
+    "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12‑month unlimited‑mileage warranty — always confirm terms with your chosen supplier."
   },
   "trustCta": {
     "h2": "Why UK BMW 5 Series 518d Owners Trust BMWEngines.uk",

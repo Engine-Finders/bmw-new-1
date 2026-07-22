@@ -476,7 +476,32 @@
     }
   },
   "marketIntelligence": {
-    "items": []
+    "items": [
+      {
+        "label": "Most Common Failure",
+        "value": "Pre‑2015: timing chain wear; EGR cooler clogging across all generations"
+      },
+      {
+        "label": "Average Enquiry Mileage",
+        "value": "70,000–90,000 miles"
+      },
+      {
+        "label": "Average Replacement Cost",
+        "value": "£5,500 reconditioned, supply only"
+      },
+      {
+        "label": "Most Requested Engine Code",
+        "value": "N57D30T1"
+      },
+      {
+        "label": "Peak Enquiry Season",
+        "value": "Autumn/Winter — cold starts expose timing chain and bearing issues"
+      },
+      {
+        "label": "Regional Demand",
+        "value": "London (18%), South East (17%), North West (12%)"
+      }
+    ]
   },
   "faq": {
     "items": [

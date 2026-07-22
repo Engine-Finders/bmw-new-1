@@ -640,11 +640,67 @@
     }
   },
   "marketIntelligence": {
-    "items": []
+    "items": [
+      {
+        "label": "Most Common Failure",
+        "value": "Timing belt (M10/M40/M43) / Timing chain (N42/N46/N43/N13) — the defining risk of each generation"
+      },
+      {
+        "label": "Average Enquiry Mileage",
+        "value": "70,000–120,000 miles【PATTERN DATA】"
+      },
+      {
+        "label": "Average Replacement Cost",
+        "value": "£600–£4,500 reconditioned, supply only depending on generation【BMW-QUOTE】"
+      },
+      {
+        "label": "Most Requested Engine Code",
+        "value": "N43B18 — the direct-injection generation (unfortunately, due to its poor reliability)【PATTERN DATA】"
+      },
+      {
+        "label": "Peak Enquiry Season",
+        "value": "Winter — cold starts expose timing belt/chain issues【PATTERN DATA】"
+      },
+      {
+        "label": "Regional Demand",
+        "value": "London (20%), South East (18%), North West (12%)【PATTERN DATA】"
+      }
+    ]
   },
   "faq": {
-    "items": [],
-    "disclaimer": ""
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a BMW 318i engine replacement cost in the UK?",
+        "answer": "A reconditioned 318i engine typically costs £600–£4,500 supply only depending on which generation, with used units available from £500–£1,500 for older engines. Fitting adds £700–£2,000. Use our calculator for a figure specific to your car."
+      },
+      {
+        "id": 2,
+        "question": "Is the BMW 318i engine reliable?",
+        "answer": "It depends entirely on which of the nine engine generations your 318i has. The M10/M40/M42/M43/M44 engines are robust but ageing. The N42/N46 Valvetronic engines introduced timing chain issues. The N43 direct-injection engines are the least reliable. The N13 turbo has a poor reputation for timing chain and oil consumption. The B38/B48 (2019+) are genuinely reliable. Check the Era Map above for your specific car."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the BMW 318i?",
+        "answer": "M10/M40/M43: timing belt failure (requires regular replacement). M42/M44: generally reliable — check VANOS and cooling system. N42/N46: timing chain and VANOS issues. N43/N45: timing chain, injector and carbon build-up issues. N13: timing chain and oil consumption. B38/B48: oil filter housing and cooling system leaks. The B38/B48 is the most reliable generation."
+      },
+      {
+        "id": 4,
+        "question": "Is it worth replacing a BMW 318i engine, or should I scrap the car?",
+        "answer": "Depends on vehicle value and generation. Against a well-kept G20 318i worth £15,000+, a £2,500–£4,500 recon is only 15–30% — worth it. Against a tired £1,500 E30 318i, a £1,500 recon exceeds 70% — get a scrap valuation first. The value of the car matters more than the engine."
+      },
+      {
+        "id": 5,
+        "question": "How do I find my BMW 318i engine code?",
+        "answer": "Listed on the VIN plate and vehicle documentation. The 318i has used nine distinct engine families. Tell us your registration date and we'll confirm it for free."
+      },
+      {
+        "id": 6,
+        "question": "Can I repair the 318i timing belt, or does it need replacement?",
+        "answer": "On M10/M40/M43 engines, the timing belt must be replaced — it's a wear item. Replacement interval is 40,000–60,000 miles or 4–5 years. If the belt snaps, the engine is typically destroyed. On N42/N46/N43/N13 engines, the timing chain and tensioner need replacement if they show wear — preventative replacement is far cheaper than a full engine replacement. At the first sign of cold-start rattle on any 318i, book an inspection immediately."
+      }
+    ],
+    "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty — always confirm terms with your chosen supplier."
   },
   "trustCta": {
     "h2": "",

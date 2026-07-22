@@ -559,44 +559,43 @@
       {
         "label": "Regional Demand",
         "value": "South East (22%), London (18%), North West (13%)【PATTERN DATA】"
-      },
-      {
-        "label": "SECTION 8 — FAQ",
-        "value": "1. How much does a BMW 4 Series 430d engine replacement cost in the UK?"
-      },
-      {
-        "label": "A reconditioned 430d engine typically costs £4,000–£9,500 supply only depending on generation, with the current B57D30 sitting at £4,500–£9,500. Fitting adds £1,000–£1,800. Use our calculator for a figure specific to your car.",
-        "value": "2. Is the BMW 4 Series 430d engine reliable?"
-      },
-      {
-        "label": "It depends on which generation you're asking about. The N57 (F32, 2013–2020) is more reliable than the problematic N47, but timing chain issues (though rarer) and bottom-end bearing failures have been reported. The B57 (G22, 2020+) is generally improved — more refined and efficient with mild-hybrid tech — but oil leaks and AdBlue/EGR system issues are reported. Across both, oil-change discipline is everything.",
-        "value": "3. What are the common problems with the BMW 430d?"
-      },
-      {
-        "label": "N57 timing chain wear and bottom-end bearing failure (F32), EGR cooler failure (both generations — recall item), B57 oil leaks from valve cover and oil filter housing (G22), and AdBlue/SCR system issues (G22). See the Era Map above for generation-specific advice.",
-        "value": "4. Is it worth replacing a BMW 430d engine, or should I scrap the car?"
-      },
-      {
-        "label": "Depends on vehicle value. Against a well-kept £10,000–£15,000 F32 430d, a £4,500–£5,500 recon is 30–50% of the car's value — often worth it for a good example. Against a £25,000+ G22, a £6,000 recon is 25% — worth it. The BMW scrap threshold of 70% means evaluating the whole vehicle and its condition before committing.",
-        "value": "5. How do I find my BMW 430d engine code?"
-      },
-      {
-        "label": "Listed on the VIN plate and vehicle documentation. As a rule of thumb: F32/F33/F36 (2013–2020) = N57D30; G22/G23/G26 (2020–present) = B57D30. Tell us your registration date and we'll confirm it for free.",
-        "value": "6. Has the BMW 430d been recalled for the EGR cooler issue?"
-      },
-      {
-        "label": "Yes — BMW has extended its diesel car recall multiple times due to concerns that a faulty EGR cooler part presents a fire risk. Glycol leakage from the EGR cooler can occur. Check your vehicle's recall status immediately — if your 430d hasn't had the updated EGR cooler fitted, get it done. This is a safety-critical item.",
-        "value": "Disclaimer: All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty — always confirm terms with your chosen supplier."
-      },
-      {
-        "label": "SECTION 9, META AND SCHEMA",
-        "value": "PART 2 — SECTION 9 + META + SCHEMA"
       }
     ]
   },
   "faq": {
-    "items": [],
-    "disclaimer": ""
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a BMW 4 Series 430d engine replacement cost in the UK?",
+        "answer": "A reconditioned 430d engine typically costs £4,000–£9,500 supply only depending on generation, with the current B57D30 sitting at £4,500–£9,500. Fitting adds £1,000–£1,800. Use our calculator for a figure specific to your car."
+      },
+      {
+        "id": 2,
+        "question": "Is the BMW 4 Series 430d engine reliable?",
+        "answer": "It depends on which generation you're asking about. The N57 (F32, 2013–2020) is more reliable than the problematic N47, but timing chain issues (though rarer) and bottom-end bearing failures have been reported. The B57 (G22, 2020+) is generally improved — more refined and efficient with mild-hybrid tech — but oil leaks and AdBlue/EGR system issues are reported. Across both, oil-change discipline is everything."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the BMW 430d?",
+        "answer": "N57 timing chain wear and bottom-end bearing failure (F32), EGR cooler failure (both generations — recall item), B57 oil leaks from valve cover and oil filter housing (G22), and AdBlue/SCR system issues (G22). See the Era Map above for generation-specific advice."
+      },
+      {
+        "id": 4,
+        "question": "Is it worth replacing a BMW 430d engine, or should I scrap the car?",
+        "answer": "Depends on vehicle value. Against a well-kept £10,000–£15,000 F32 430d, a £4,500–£5,500 recon is 30–50% of the car's value — often worth it for a good example. Against a £25,000+ G22, a £6,000 recon is 25% — worth it. The BMW scrap threshold of 70% means evaluating the whole vehicle and its condition before committing."
+      },
+      {
+        "id": 5,
+        "question": "How do I find my BMW 430d engine code?",
+        "answer": "Listed on the VIN plate and vehicle documentation. As a rule of thumb: F32/F33/F36 (2013–2020) = N57D30; G22/G23/G26 (2020–present) = B57D30. Tell us your registration date and we'll confirm it for free."
+      },
+      {
+        "id": 6,
+        "question": "Has the BMW 430d been recalled for the EGR cooler issue?",
+        "answer": "Yes — BMW has extended its diesel car recall multiple times due to concerns that a faulty EGR cooler part presents a fire risk. Glycol leakage from the EGR cooler can occur. Check your vehicle's recall status immediately — if your 430d hasn't had the updated EGR cooler fitted, get it done. This is a safety-critical item."
+      }
+    ],
+    "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty — always confirm terms with your chosen supplier."
   },
   "trustCta": {
     "h2": "Why UK BMW 4 Series 430d Owners Trust BMWEngines.uk",

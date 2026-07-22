@@ -439,132 +439,109 @@
       {
         "metric": "Overall Rating",
         "value": "★★★☆☆ 3.4/5"
-      },
-      {
-        "metric": "SECTION 4 — GENERATIONS — <GenerationsGrid>",
-        "value": "H2: BMW 7 Series Generations — Find Your Vehicle"
-      },
-      {
-        "metric": "Sub-headline: Seven generations, nearly 50 years, and one flagship nameplate that defines BMW luxury. The right 7 Series depends entirely on which generation you're willing to maintain.",
-        "value": "BMW 7 Series E23"
-      },
-      {
-        "metric": "1977–1987 • M30 six-cylinder (2.5L–3.5L), M102 turbo",
-        "value": "★★★★☆"
-      },
-      {
-        "metric": "Our Verdict: The original flagship — the car that created the modern BMW luxury sedan. M30 six-cylinders are bulletproof; the M102 turbo is rare and complex. Bodywork and electronics are the real projects now.",
-        "value": "Explore the E23 →"
-      },
-      {
-        "metric": "BMW 7 Series E32",
-        "value": "1986–1994 • M30, M60 V8, M70 V12"
-      },
-      {
-        "metric": "★★★★☆",
-        "value": "Our Verdict: The first 7 Series with a V8 and V12 — the M60's Nikasil liner issues are the caveat on early cars; post-1994 M60s are robust. The M70 V12 is a masterpiece but carries twin-bank maintenance costs."
-      },
-      {
-        "metric": "Explore the E32 →",
-        "value": "BMW 7 Series E38 🔥 Most Enquired — classic era [BMW-VERIFIED]"
-      },
-      {
-        "metric": "1994–2001 • M52/M54 (728i/730i), M62 V8 (735i/740i), M57 diesel (730d), M73 V12 (750i)",
-        "value": "★★★★☆"
-      },
-      {
-        "metric": "Our Verdict: The 7 Series at its most beautiful — and the first to offer a diesel. The M57 730d is one of the most dependable BMW engines ever made; the M62 V8's timing chain guides are the defining risk. The 728i with M52 is the robust petrol choice.",
-        "value": "Explore the E38 →"
-      },
-      {
-        "metric": "BMW 7 Series E65/E66 🔥 Most Enquired — 300+ enquiries (2025) [BMW-VERIFIED]",
-        "value": "2001–2008 • M54 (730i), N52 (730i LCI), N62 V8 (735i/745i/750i), M57 (730d), N73 V12 (760i)"
-      },
-      {
-        "metric": "★★★☆☆",
-        "value": "Our Verdict: The controversial Bangle-era 7 Series — and the N62 V8's timing chain guides and valve stem seals define the risk. The 730d with M57 is the sensible pick; the V8s carry the caveat; the 760i with N73 V12 is a masterpiece with twin-bank costs."
-      },
-      {
-        "metric": "Explore the E65 →",
-        "value": "BMW 7 Series F01/F02 🔥 Most Enquired — F01 750i drives N63 volume [BMW-VERIFIED]"
-      },
-      {
-        "metric": "2008–2015 • N52 (730i), N54 (740i), N63 V8 (750i), M57/N57 (730d/740d), N74 V12 (760i)",
-        "value": "★★★☆☆"
-      },
-      {
-        "metric": "Our Verdict: The generation that brought twin-turbo V8s to the 7 Series — and the N63's timing chain guides, valve stem seals and turbo failures define the risk. The 730d with M57/N57 is the robust choice; the 750i's N63 is the one to avoid without a warranty.",
-        "value": "Explore the F01 →"
-      },
-      {
-        "metric": "BMW 7 Series G11/G12",
-        "value": "2015–2022 • B47, B57 (730d/740d), B58 (740i), N63 (750i), N74 V12 (M760i)"
-      },
-      {
-        "metric": "★★★★☆",
-        "value": "Our Verdict: The CLAR-platform 7 Series — and the most dependable modern 7 Series ever made. The 740i with B58 is the sweet spot; the 730d with B57 is the diesel perfection. The N63 in the 750i still carries the V8 caveat; the M760i's V12 is the flagship experience."
-      },
-      {
-        "metric": "Explore the G11 →",
-        "value": "BMW 7 Series G70"
-      },
-      {
-        "metric": "2022–present • B58 (735i/740i), B57 (740d), S68 V8 (760i), electric i7",
-        "value": "★★★★★"
-      },
-      {
-        "metric": "Our Verdict: The seventh-generation 7 Series — available with petrol, diesel, plug-in hybrid, and fully electric i7 powertrains. The B58 in the 740i is as robust as ever; the S68 V8 in the 760i is BMW's latest twin-turbo V8; the i7 is the future. Too new for volume reliability data, but the B-family record is impeccable.",
-        "value": "Explore the G70 →"
-      },
-      {
-        "metric": "The V8 Divide — The Line That Matters Most",
-        "value": "E38/E65 (M62/N62 V8)"
-      },
-      {
-        "metric": "F01 (N63 V8)",
-        "value": "G11/G12/G70 (N63TU/S68 V8)"
-      },
-      {
-        "metric": "Core issue",
-        "value": "Timing chain guides"
-      },
-      {
-        "metric": "Timing chain guides + valve stem seals + turbo failure",
-        "value": "Improved but still complex"
-      },
-      {
-        "metric": "Repair cost",
-        "value": "£3,000–£6,000"
-      },
-      {
-        "metric": "£7,000–£10,000+",
-        "value": "£7,000–£12,000+"
-      },
-      {
-        "metric": "Our position",
-        "value": "Buy only with documented guide replacement"
-      },
-      {
-        "metric": "Avoid without comprehensive warranty",
-        "value": "Buy the straight-six instead"
-      },
-      {
-        "metric": "Read the full comparison: BMW 7 Series F01 vs G11 →",
-        "value": "The Badge Ambiguity — \"740i\" Means Different Things"
       }
     ]
   },
   "generations": {
-    "h2": "",
-    "subHeadline": "",
-    "cards": [],
+    "h2": "BMW 7 Series Generations — Find Your Vehicle",
+    "subHeadline": "Seven generations, nearly 50 years, and one flagship nameplate that defines BMW luxury. The right 7 Series depends entirely on which generation you're willing to maintain.",
+    "cards": [
+      {
+        "title": "BMW 7 Series E23",
+        "badge": "",
+        "meta": "1977–1987 • M30 six-cylinder (2.5L–3.5L), M102 turbo",
+        "rating": "★★★★☆",
+        "verdict": "The original flagship — the car that created the modern BMW luxury sedan. M30 six-cylinders are bulletproof; the M102 turbo is rare and complex. Bodywork and electronics are the real projects now.",
+        "cta": {
+          "label": "Explore the E23 →",
+          "href": "#"
+        }
+      },
+      {
+        "title": "BMW 7 Series E32",
+        "badge": "",
+        "meta": "1986–1994 • M30, M60 V8, M70 V12",
+        "rating": "★★★★☆",
+        "verdict": "The first 7 Series with a V8 and V12 — the M60's Nikasil liner issues are the caveat on early cars; post-1994 M60s are robust. The M70 V12 is a masterpiece but carries twin-bank maintenance costs.",
+        "cta": {
+          "label": "Explore the E32 →",
+          "href": "#"
+        }
+      },
+      {
+        "title": "BMW 7 Series E38",
+        "badge": "🔥 Most Enquired — classic era [BMW-VERIFIED]",
+        "meta": "1994–2001 • M52/M54 (728i/730i), M62 V8 (735i/740i), M57 diesel (730d), M73 V12 (750i)",
+        "rating": "★★★★☆",
+        "verdict": "The 7 Series at its most beautiful — and the first to offer a diesel. The M57 730d is one of the most dependable BMW engines ever made; the M62 V8's timing chain guides are the defining risk. The 728i with M52 is the robust petrol choice.",
+        "cta": {
+          "label": "Explore the E38 →",
+          "href": "#"
+        }
+      },
+      {
+        "title": "BMW 7 Series E65/E66",
+        "badge": "🔥 Most Enquired — 300+ enquiries (2025) [BMW-VERIFIED]",
+        "meta": "2001–2008 • M54 (730i), N52 (730i LCI), N62 V8 (735i/745i/750i), M57 (730d), N73 V12 (760i)",
+        "rating": "★★★☆☆",
+        "verdict": "The controversial Bangle-era 7 Series — and the N62 V8's timing chain guides and valve stem seals define the risk. The 730d with M57 is the sensible pick; the V8s carry the caveat; the 760i with N73 V12 is a masterpiece with twin-bank costs.",
+        "cta": {
+          "label": "Explore the E65 →",
+          "href": "#"
+        }
+      },
+      {
+        "title": "BMW 7 Series F01/F02",
+        "badge": "🔥 Most Enquired — F01 750i drives N63 volume [BMW-VERIFIED]",
+        "meta": "2008–2015 • N52 (730i), N54 (740i), N63 V8 (750i), M57/N57 (730d/740d), N74 V12 (760i)",
+        "rating": "★★★☆☆",
+        "verdict": "The generation that brought twin-turbo V8s to the 7 Series — and the N63's timing chain guides, valve stem seals and turbo failures define the risk. The 730d with M57/N57 is the robust choice; the 750i's N63 is the one to avoid without a warranty.",
+        "cta": {
+          "label": "Explore the F01 →",
+          "href": "#"
+        }
+      },
+      {
+        "title": "BMW 7 Series G11/G12",
+        "badge": "",
+        "meta": "2015–2022 • B47, B57 (730d/740d), B58 (740i), N63 (750i), N74 V12 (M760i)",
+        "rating": "★★★★☆",
+        "verdict": "The CLAR-platform 7 Series — and the most dependable modern 7 Series ever made. The 740i with B58 is the sweet spot; the 730d with B57 is the diesel perfection. The N63 in the 750i still carries the V8 caveat; the M760i's V12 is the flagship experience.",
+        "cta": {
+          "label": "Explore the G11 →",
+          "href": "#"
+        }
+      },
+      {
+        "title": "BMW 7 Series G70",
+        "badge": "",
+        "meta": "2022–present • B58 (735i/740i), B57 (740d), S68 V8 (760i), electric i7",
+        "rating": "★★★★★",
+        "verdict": "The seventh-generation 7 Series — available with petrol, diesel, plug-in hybrid, and fully electric i7 powertrains. The B58 in the 740i is as robust as ever; the S68 V8 in the 760i is BMW's latest twin-turbo V8; the i7 is the future. Too new for volume reliability data, but the B-family record is impeccable.",
+        "cta": {
+          "label": "Explore the G70 →",
+          "href": "#"
+        }
+      },
+      {
+        "title": "The V8 Divide — The Line That Matters Most",
+        "badge": "",
+        "meta": "Correction applied (internal): The \"740i\" badge covers different engines depending on generation. On the E38 (1994–2001), it's the M62B44 V8 (4.4L, 286 bhp). On the E65 (2001–2008), it's the N62B40 V8 (4.0L, 306 bhp). On the F01 (2008–2015), it's the N54B30 (3.0L twin-turbo straight-six, 326 bhp) — a completely different engine family. On the G11 (2015–2022), it's the B58B30 (3.0L turbo straight-six, 326 bhp). On the G70 (2022+), it's also the B58B30 (3.0L, 381 PS). All share a badge. None share a reliability profile.",
+        "rating": "",
+        "verdict": "",
+        "cta": {
+          "label": "",
+          "href": "#"
+        }
+      }
+    ],
     "rangeTable": {
       "title": "",
       "columns": [],
       "rows": []
     },
     "comparisonLink": {
-      "label": "",
+      "label": "Read the full comparison: BMW 7 Series F01 vs G11 →",
       "href": "#"
     }
   },

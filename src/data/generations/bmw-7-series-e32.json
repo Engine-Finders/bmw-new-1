@@ -610,23 +610,121 @@
     "scopeNote": "All variants listed are E32 only. The 'L' suffix denotes long-wheelbase. The 730i was offered with both the M30 straight-six and the M60 V8 during overlapping periods (1992–1994). The 735i was only offered with the M30 straight-six."
   },
   "marketIntelligence": {
-    "mostRequestedEngines": [],
-    "mostRequestedVariants": [],
-    "averageReplacementCost": "",
-    "mostCommonFailures": [],
-    "liveFeed": []
+    "mostRequestedEngines": [
+      "1. M30B34 (735i) — pattern data",
+      "2. M60B40 (740i) — pattern data",
+      "3. M70B50 (750i V12) — pattern data"
+    ],
+    "mostRequestedVariants": [
+      "1. 735i",
+      "2. 740i",
+      "3. 750i"
+    ],
+    "averageReplacementCost": "£3,500–£6,000 (reconditioned, supply only) [BMW-QUOTE]",
+    "mostCommonFailures": [
+      "1. M60 Nikasil bore lining failure (V8s)",
+      "2. M30 cooling system & head gasket",
+      "3. M70 V12 electrical & injection system issues"
+    ],
+    "liveFeed": [
+      {
+        "vehicle": "BMW 735i E32 (M30B34)",
+        "location": "London",
+        "issue": "Cooling system failure, overheating",
+        "enquiries": "2 enquiries",
+        "updated": "Updated Monthly"
+      },
+      {
+        "vehicle": "BMW 740i E32 (M60B40)",
+        "location": "Manchester",
+        "issue": "Compression test, suspected bore wear",
+        "enquiries": "2 enquiries",
+        "updated": "Updated Monthly"
+      },
+      {
+        "vehicle": "BMW 750i E32 (M70B50)",
+        "location": "Birmingham",
+        "issue": "Running on one bank, electrical diagnosis",
+        "enquiries": "1 enquiry",
+        "updated": "Updated Monthly"
+      }
+    ]
   },
   "faq": {
-    "items": []
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a BMW 7 Series E32 engine replacement cost in the UK?",
+        "answer": "A reconditioned E32 engine typically costs £2,500–£9,000 supply only [BMW-QUOTE], depending on the engine — the M30 straight-six sits at £2,500–£5,000, the M60 V8 at £2,500–£6,000, and the M70 V12 at £5,000–£9,000. Fitting adds £650–£1,300. Use our calculator for a personalised figure."
+      },
+      {
+        "id": 2,
+        "question": "Which E32 engine is the most reliable?",
+        "answer": "The M30B34 (735i) is the E32's most dependable engine — 211 bhp of silky, naturally-aspirated straight-six with a proven track record of 200,000+ miles. No VANOS, no complex electronics, just pure six-cylinder refinement. The M30B30 (730i) is similarly robust."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the BMW 7 Series E32?",
+        "answer": "The M60 V8 (740i, 730i V8) suffers from Nikasil bore lining failure — high-sulphur fuels damaged the cylinder walls on early engines. The M30 straight-six (730i, 735i) has cooling system failures — water pumps, radiators, and expansion tanks are all weak points. The M70 V12 (750i) is complex — two of everything means more electrical and injection system failures."
+      },
+      {
+        "id": 4,
+        "question": "Is the BMW 7 Series E32 reliable?",
+        "answer": "It depends heavily on the engine and how it's been maintained. The M30 straight-six is famously robust — many examples exceed 200,000 miles. The M60 V8 is powerful but the Nikasil issue makes early cars a gamble. The M70 V12 is a masterpiece but complex — it's not unreliable, just expensive to maintain properly. Cooling system maintenance is critical for all engines."
+      },
+      {
+        "id": 5,
+        "question": "Which E32 engine should I avoid?",
+        "answer": "Early M60 V8s (730i V8, 740i, pre-1995) without documented Nikasil history — bore wear is a known weakness. A 750i without documented electrical and injection system history is also a financial risk. Avoid any E32 with obvious overheating damage or poor service history. The M30 cars are the safest bet."
+      },
+      {
+        "id": 6,
+        "question": "How do I know if my E32 engine needs replacing?",
+        "answer": "For M60 V8s: rough running, oil consumption, or loss of compression (Nikasil bore wear). For M30s: overheating (cooling system failure) or persistent coolant loss. For M70 V12s: rough running on one bank (electrical/injection failure). Use our diagnostic calculator for a personalised assessment."
+      },
+      {
+        "id": 7,
+        "question": "Is it worth replacing an E32 engine, or should I scrap the car?",
+        "answer": "Depends on the car's value. Against a £6,000 735i, a £2,800–£5,000 M30 recon is 47–83% — at the upper end, that brushes our 70% BMW scrap threshold. Against a £4,000 730i, a £2,500–£4,500 recon is 63–113% — borderline. For a 750i at £8,000+, a £5,000–£9,000 V12 recon is 63–113% — a serious decision, but these are appreciating classics. Value the car and its condition first; if it's a V8 without Nikasil history, walk away."
+      },
+      {
+        "id": 8,
+        "question": "How long do E32 engines last?",
+        "answer": "The M30 straight-six can exceed 200,000 miles with proper servicing — the cooling system is the limiting factor. The M60 V8 is capable of high mileage but Nikasil bore wear can cut its life short — later Alusil cars are safer. The M70 V12 is capable of high mileage but requires diligent maintenance — electrical and injection system work is essential."
+      },
+      {
+        "id": 9,
+        "question": "What is the difference between the E23, E32, and E38 generations?",
+        "answer": "The E32 (1986–1994) is the second-generation 7 Series, succeeding the E23 (1977–1986) and preceding the E38 (1994–2001). The E32 introduced the V12 engine, L-shaped tail-lights, and projector headlamps. The E23 is more classic and analogue; the E38 is more refined and modern. The E32 sits in the middle — more capable than the E23, more characterful than the E38."
+      },
+      {
+        "id": 10,
+        "question": "How do I find my E32 engine code?",
+        "answer": "Listed on the VIN plate and vehicle documentation; the engine code is also stamped on the cylinder block. For petrol six-cylinders: M30B30 (730i/730iL), M30B34 (735i/735iL). For petrol V8s: M60B30 (730i V8/730iL V8), M60B40 (740i/740iL). For petrol V12s: M70B50 (750i/750iL). Tell us your variant and registration year and we'll identify it — 20+ vetted BMW specialists will confirm it for free."
+      }
+    ]
   },
   "trustCta": {
-    "h2": "",
-    "trustPoints": [],
-    "finalCta": "",
+    "h2": "Why UK BMW 7 Series E32 Owners Trust BMWEngines.uk",
+    "trustPoints": [
+      {
+        "title": "Trusted E32 Engine Suppliers",
+        "text": "every garage and engine rebuilder in our network is vetted, rated and reviewed by real E32 owners, as part of the Engine Finders network."
+      },
+      {
+        "title": "Compare E32 Engine Replacement Companies",
+        "text": "see prices, warranty terms and supply & fit options side‑by‑side before you commit."
+      },
+      {
+        "title": "UK Engine Replacement Services for E32",
+        "text": "covering every variant from 730i to 750i, with supply‑only or full supply & fit available nationwide."
+      }
+    ],
+    "finalCta": "Find the best BMW 7 Series E32 engine replacement UK drivers rely on. Compare real prices from trusted specialists on EnginesMarket today and get back on the road with confidence.",
     "ctaButton": {
-      "label": "",
+      "label": "Compare BMW 7 Series E32 Engine Prices on EnginesMarket →",
       "href": "#",
-      "note": ""
+      "note": "[PLACEHOLDER — confirm EnginesMarket URL structure]"
     }
   }
 }

@@ -516,11 +516,67 @@
     }
   },
   "marketIntelligence": {
-    "items": []
+    "items": [
+      {
+        "label": "Most Common Failure",
+        "value": "N20: timing chain wear / B48: oil filter housing cracking — the defining risk of each engine era"
+      },
+      {
+        "label": "Average Enquiry Mileage",
+        "value": "N20: 70,000–100,000 miles / B48: 50,000–80,000 miles【PATTERN DATA】"
+      },
+      {
+        "label": "Average Replacement Cost",
+        "value": "N20: £1,700–£3,000 / B48: £2,000–£4,200 reconditioned, supply only【BMW-QUOTE】"
+      },
+      {
+        "label": "Most Requested Engine Code",
+        "value": "B48A20 — the modern modular engine【PATTERN DATA】"
+      },
+      {
+        "label": "Peak Enquiry Season",
+        "value": "Winter — cold starts expose timing chain issues【PATTERN DATA】"
+      },
+      {
+        "label": "Regional Demand",
+        "value": "London (20%), South East (18%), North West (12%)【PATTERN DATA】"
+      }
+    ]
   },
   "faq": {
-    "items": [],
-    "disclaimer": ""
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a BMW 220i engine replacement cost in the UK?",
+        "answer": "A reconditioned 220i engine typically costs £1,700–£4,200 supply only depending on which generation (N20 or B48), with used units available from £1,200–£2,200. Fitting adds £1,000–£2,000. Use our calculator for a figure specific to your car."
+      },
+      {
+        "id": 2,
+        "question": "Is the BMW 220i engine reliable?",
+        "answer": "It depends entirely on which generation. The N20 (2014–2019) has a well-documented timing chain weakness — pre-2015 cars are high-risk; post-2015 cars are improved. The B48 (2017–present) is significantly more reliable, with only the oil filter housing and cooling system as known weaknesses. Check the Era Map above for your specific car."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the BMW 220i?",
+        "answer": "N20: timing chain wear (pre-2015), valve cover and oil filter housing oil leaks. B48: oil filter housing cracking, cooling system leaks (water pump and hoses). The B48 is significantly more reliable than the N20."
+      },
+      {
+        "id": 4,
+        "question": "Is it worth replacing a BMW 220i engine, or should I scrap the car?",
+        "answer": "Depends on vehicle value and generation. Against a well-kept £10,000 G42 220i, a £2,500–£4,200 recon is 25–40% of the car's value — worth it. Against a tired £3,000 F22 example with an N20, the same recon exceeds our 70% BMW threshold — get a scrap valuation first."
+      },
+      {
+        "id": 5,
+        "question": "How do I find my BMW 220i engine code?",
+        "answer": "Listed on the VIN plate and vehicle documentation. As a rule of thumb: F22/F23 (2014–2019) and early F45 are N20B20; F44, G42, U06, and late F45 are B48A20. Tell us your registration date and we'll confirm it for free."
+      },
+      {
+        "id": 6,
+        "question": "Can I repair the N20 timing chain, or does it need replacement?",
+        "answer": "It needs replacement — the chain guides break and the tensioner wears. A full timing chain, tensioner, guide and VANOS sprocket replacement costs £1,200–£2,500. It's a labour-intensive job but far cheaper than a full engine replacement (£1,700+). The revised 2015+ components are the correct fix. At the first sign of cold-start rattle on an N20, book an inspection immediately."
+      }
+    ],
+    "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty — always confirm terms with your chosen supplier."
   },
   "trustCta": {
     "h2": "",

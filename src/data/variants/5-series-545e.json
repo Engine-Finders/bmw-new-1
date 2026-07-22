@@ -464,11 +464,67 @@
     }
   },
   "marketIntelligence": {
-    "items": []
+    "items": [
+      {
+        "label": "Most Common Failure",
+        "value": "Cooling system leaks and water pump failure — the primary weakness of the B58"
+      },
+      {
+        "label": "Average Enquiry Mileage",
+        "value": "40,000–70,000 miles【PATTERN DATA】"
+      },
+      {
+        "label": "Average Replacement Cost",
+        "value": "£4,000–£6,500 reconditioned, supply only【BMW-QUOTE】"
+      },
+      {
+        "label": "Most Requested Engine Code",
+        "value": "B58B30C — the 545e's hybrid B58【PATTERN DATA】"
+      },
+      {
+        "label": "Peak Enquiry Season",
+        "value": "Spring — pre‑summer vehicle preparation【PATTERN DATA】"
+      },
+      {
+        "label": "Regional Demand",
+        "value": "London (22%), South East (18%), South West (14%)【PATTERN DATA】"
+      }
+    ]
   },
   "faq": {
-    "items": [],
-    "disclaimer": ""
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a BMW 545e engine replacement cost in the UK?",
+        "answer": "A reconditioned B58B30C engine typically costs £4,000–£6,500 supply only, with used units available from £3,000–£5,000. Fitting adds £1,500–£2,500 depending on the workshop. Note that the hybrid battery is a separate component — replacement costs £3,000–£8,000. Use our calculator for a figure specific to your car."
+      },
+      {
+        "id": 2,
+        "question": "Is the BMW 545e engine reliable?",
+        "answer": "Yes — the B58 is widely regarded as one of BMW's most reliable modern engines. The 545e's B58 is the same engine used in the 540i and Toyota Supra. The main concerns are the cooling system (water pump, hoses) and battery degradation over time. With good maintenance, the engine itself is exceptionally durable."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the BMW 545e?",
+        "answer": "Cooling system leaks and water pump failure, high-voltage battery degradation (reduced electric range after 5–8 years), and oil filter housing leaks. The B58 is fundamentally robust — these are maintenance items, not catastrophic design flaws."
+      },
+      {
+        "id": 4,
+        "question": "Is it worth replacing a BMW 545e engine, or should I scrap the car?",
+        "answer": "545e values remain strong — a well-kept G30 LCI is often worth £20,000–£35,000+. A £4,000–£6,500 reconditioned engine is only 15–25% of the vehicle's value — well within the 70% BMW threshold. However, if the hybrid battery also needs replacing, total costs can approach 40–50% of the car's value. Evaluate both components before deciding."
+      },
+      {
+        "id": 5,
+        "question": "How do I find my BMW 545e engine code?",
+        "answer": "The engine code is B58B30C — it's the only engine used in the G30 LCI 545e (2020–2023). You can find it on the VIN plate, in the vehicle documentation, or on a label on the engine itself. Production ended in 2023."
+      },
+      {
+        "id": 6,
+        "question": "Can I replace just the hybrid battery, or does it need the engine?",
+        "answer": "The hybrid battery is a separate component from the engine — it can be replaced independently. Battery replacement costs £3,000–£8,000 depending on whether you need cell module replacement or a full battery pack. BMW's battery warranty typically covers 8 years / 100,000 miles in the UK — check if your car is still covered."
+      }
+    ],
+    "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty — always confirm terms with your chosen supplier."
   },
   "trustCta": {
     "h2": "",

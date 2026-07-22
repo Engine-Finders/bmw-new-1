@@ -474,11 +474,67 @@
     }
   },
   "marketIntelligence": {
-    "items": []
+    "items": [
+      {
+        "label": "Most Common Failure",
+        "value": "M54: VANOS seal degradation / N52: Valvetronic sensor and oil leaks — the defining issues of each generation"
+      },
+      {
+        "label": "Average Enquiry Mileage",
+        "value": "70,000–120,000 miles【PATTERN DATA】"
+      },
+      {
+        "label": "Average Replacement Cost",
+        "value": "£1,800–£2,700 reconditioned, supply only depending on generation【BMW-QUOTE】"
+      },
+      {
+        "label": "Most Requested Engine Code",
+        "value": "N52B25 — the later, more refined Z4 engine【PATTERN DATA】"
+      },
+      {
+        "label": "Peak Enquiry Season",
+        "value": "Spring — convertible season【PATTERN DATA】"
+      },
+      {
+        "label": "Regional Demand",
+        "value": "London (20%), South East (18%), South West (14%)【PATTERN DATA】"
+      }
+    ]
   },
   "faq": {
-    "items": [],
-    "disclaimer": ""
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a BMW Z4 2.5i or 2.5si engine replacement cost in the UK?",
+        "answer": "A reconditioned Z4 2.5i/2.5si engine typically costs £1,800–£2,700 supply only depending on which generation (M54 or N52), with used units available from £1,300–£1,900. Fitting adds £1,000–£1,500. Use our calculator for a figure specific to your car."
+      },
+      {
+        "id": 2,
+        "question": "Is the BMW Z4 2.5i / 2.5si engine reliable?",
+        "answer": "Yes — both the M54 and N52 are among BMW's most reliable engines. The N52 is widely regarded as one of BMW's most reliable engines. The M54 has well-known VANOS seal and cooling system weaknesses, but these are well-understood and repairable. With good maintenance, both engines are capable of well over 200,000 miles."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the BMW Z4 2.5i and 2.5si?",
+        "answer": "M54: VANOS seal degradation (loss of low-end torque), cooling system failures (water pump, expansion tank), CCV system issues. N52: Valvetronic sensor failure (rough idle, stalling), oil leaks (valve cover gasket, oil filter housing), cooling system failures. Both engines are fundamentally robust."
+      },
+      {
+        "id": 4,
+        "question": "Is it worth replacing a BMW Z4 2.5i / 2.5si engine, or should I scrap the car?",
+        "answer": "Z4 values remain strong — a well-kept example is often worth £4,000–£12,000+. A £1,800–£2,700 reconditioned engine is only 15–40% of the vehicle's value — within the 70% BMW threshold, but evaluate carefully. On a cherished example, replacement is almost always worthwhile."
+      },
+      {
+        "id": 5,
+        "question": "How do I find my BMW Z4 2.5i or 2.5si engine code?",
+        "answer": "Listed on the VIN plate and vehicle documentation. E85/E86 Z4 2.5i (2003–2005) uses M54B25; E85/E86 Z4 2.5i/2.5si (2005–2008) uses N52B25. Tell us your registration date and we'll confirm it for free."
+      },
+      {
+        "id": 6,
+        "question": "Can I repair the M54 VANOS seals, or does the system need replacement?",
+        "answer": "The VANOS seals can be replaced with upgraded Viton/Teflon seals (OEM kit 11367841015). Replacement costs £400–£800 and restores throttle response and low-end torque. The system itself does not need replacing — just the seals. This is well-understood by BMW specialists."
+      }
+    ],
+    "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty — always confirm terms with your chosen supplier."
   },
   "trustCta": {
     "h2": "",

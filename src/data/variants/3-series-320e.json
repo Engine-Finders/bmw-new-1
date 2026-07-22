@@ -524,64 +524,43 @@
       {
         "label": "Regional Demand",
         "value": "South East (20%), London (18%), South West (12%) — premium hybrid strongholds [PATTERN DATA]"
-      },
-      {
-        "label": "SECTION 8 — FAQ",
-        "value": "1. How much does a BMW 3 Series 320e engine replacement cost in the UK?"
-      },
-      {
-        "label": "A reconditioned 320e engine (B48B20A with hybrid system) typically costs £2,500‑£3,800 supply only. Fitting adds £1,000‑£1,500. As a PHEV, the hybrid system components add complexity and cost. Use our calculator for a figure specific to your vehicle.",
-        "value": "2. Is the BMW 3 Series 320e engine reliable?"
-      },
-      {
-        "label": "The B48 is a robust and refined engine — the timing chain issues that plagued the N20 are not a documented concern on the B48. However, the plug‑in hybrid system adds complexity. HV battery degradation and charging system failures are the primary concerns. With regular maintenance and proper battery care, the 320e can be a reliable and efficient powertrain.",
-        "value": "3. What are the common problems with the BMW 3 Series 320e?"
-      },
-      {
-        "label": "The most common issues are PHEV‑specific: HV battery degradation (reduced electric range), KLE module/charging system failure, and premature brake wear due to the vehicle's weight. The B48 engine itself is generally reliable, though oil leaks (valve cover, oil filter housing) can occur.",
-        "value": "4. Is it worth replacing a 320e engine, or should I scrap the car?"
-      },
-      {
-        "label": "Given the 3 Series's retained value (typically £15,000‑£35,000+), a £2,500‑£4,800 reconditioned engine is a significant but often justifiable expense. However, if the HV battery has also failed (costing £2,000‑£5,000+), the total repair cost may be substantial. Get a full diagnostic assessment before committing — if the rest of the vehicle is in good condition, replacement is usually the better option.",
-        "value": "5. How do I find my 3 Series's engine code?"
-      },
-      {
-        "label": "The 320e uses the B48B20A 2.0‑litre turbo petrol engine combined with an 80 kW electric motor. This is stamped on the engine block and listed on your V5C. The 320e badge itself confirms the powertrain — it's the 204 PS plug‑in hybrid offered in the G20 3 Series from 2021 onwards.",
-        "value": "6. Can I repair a 320e engine issue, or does it need replacement?"
-      },
-      {
-        "label": "Most issues — oil leaks, charging system failures, brake wear — are repairable. HV battery degradation may be covered under warranty if the vehicle is still within the warranty period (typically 8 years/100,000 miles). However, if the engine suffers major internal failure, a full engine replacement is usually more cost‑effective than a rebuild.",
-        "value": "Disclaimer: All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12‑month unlimited‑mileage warranty — always confirm terms with your chosen supplier."
-      },
-      {
-        "label": "Section 9 (Trust + Final CTA), meta tags, Open Graph, Twitter Card, and complete JSON‑LD schema.",
-        "value": "* Brand: BMW"
-      },
-      {
-        "label": "* Domain: bmwengine.uk",
-        "value": "* Data tag: BMW‑"
-      },
-      {
-        "label": "* Specialist count: 20+",
-        "value": "* Scrap threshold: 70%"
-      },
-      {
-        "label": "* CTA Mode: Consultative (Priority L)",
-        "value": "* Era Map rows: 1 (B48B20A + 80 kW e‑motor)"
-      },
-      {
-        "label": "* Engine codes: B48B20A",
-        "value": "* Service schema price range: £1,500 (lowest used) to £4,800 (highest rebuilt) — spans full Era Map history"
-      },
-      {
-        "label": "* Model Page needed: BMW 3 Series G20 Generation Page",
-        "value": "* Generation Page needed: BMW 3 Series G20 Generation Page (for cost inheritance)"
       }
     ]
   },
   "faq": {
-    "items": [],
-    "disclaimer": ""
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a BMW 3 Series 320e engine replacement cost in the UK?",
+        "answer": "A reconditioned 320e engine (B48B20A with hybrid system) typically costs £2,500‑£3,800 supply only. Fitting adds £1,000‑£1,500. As a PHEV, the hybrid system components add complexity and cost. Use our calculator for a figure specific to your vehicle."
+      },
+      {
+        "id": 2,
+        "question": "Is the BMW 3 Series 320e engine reliable?",
+        "answer": "The B48 is a robust and refined engine — the timing chain issues that plagued the N20 are not a documented concern on the B48. However, the plug‑in hybrid system adds complexity. HV battery degradation and charging system failures are the primary concerns. With regular maintenance and proper battery care, the 320e can be a reliable and efficient powertrain."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the BMW 3 Series 320e?",
+        "answer": "The most common issues are PHEV‑specific: HV battery degradation (reduced electric range), KLE module/charging system failure, and premature brake wear due to the vehicle's weight. The B48 engine itself is generally reliable, though oil leaks (valve cover, oil filter housing) can occur."
+      },
+      {
+        "id": 4,
+        "question": "Is it worth replacing a 320e engine, or should I scrap the car?",
+        "answer": "Given the 3 Series's retained value (typically £15,000‑£35,000+), a £2,500‑£4,800 reconditioned engine is a significant but often justifiable expense. However, if the HV battery has also failed (costing £2,000‑£5,000+), the total repair cost may be substantial. Get a full diagnostic assessment before committing — if the rest of the vehicle is in good condition, replacement is usually the better option."
+      },
+      {
+        "id": 5,
+        "question": "How do I find my 3 Series's engine code?",
+        "answer": "The 320e uses the B48B20A 2.0‑litre turbo petrol engine combined with an 80 kW electric motor. This is stamped on the engine block and listed on your V5C. The 320e badge itself confirms the powertrain — it's the 204 PS plug‑in hybrid offered in the G20 3 Series from 2021 onwards."
+      },
+      {
+        "id": 6,
+        "question": "Can I repair a 320e engine issue, or does it need replacement?",
+        "answer": "Most issues — oil leaks, charging system failures, brake wear — are repairable. HV battery degradation may be covered under warranty if the vehicle is still within the warranty period (typically 8 years/100,000 miles). However, if the engine suffers major internal failure, a full engine replacement is usually more cost‑effective than a rebuild."
+      }
+    ],
+    "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12‑month unlimited‑mileage warranty — always confirm terms with your chosen supplier."
   },
   "trustCta": {
     "h2": "Why UK BMW 3 Series 320e Owners Trust BMWEngines.uk",

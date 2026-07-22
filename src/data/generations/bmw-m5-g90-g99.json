@@ -1,11 +1,194 @@
 {
   "meta": {
     "slug": "bmw-m5-g90-g99",
-    "title": "BMW M5 G90 & G99 Engines — The Complete UK Guide",
-    "titleCharCount": 48,
-    "description": "",
-    "descriptionCharCount": 0,
-    "jsonLd": {}
+    "title": "G90/G99 M5 Engine Replacement Cost UK — Compare Quotes",
+    "titleCharCount": 58,
+    "description": "Every BMW M5 G90 saloon & G99 Touring engine — 4.4-litre S68 V8 PHEV, 727 PS. Real UK costs, honest reliability data, and the first electrified M5. Get free quotes from 20+ vetted BMW M specialists today.",
+    "descriptionCharCount": 158,
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://bmwengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "M5",
+              "item": "https://bmwengine.uk/m5/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "BMW M5 G90/G99",
+              "item": "https://bmwengine.uk/m5/g90-g99/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "BMW M5 G90/G99 Engine Codes",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "S68B44A 4.4L V8 PHEV Engine",
+              "url": "https://bmwengine.uk/engines/s68b44a/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "BMW M5 G90/G99 Core Variants",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "M5 Saloon (G90)",
+              "url": "https://bmwengine.uk/m5/g90/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "M5 Touring (G99)",
+              "url": "https://bmwengine.uk/m5/g99/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does a BMW M5 G90/G99 engine replacement cost in the UK?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A reconditioned S68 engine for the G90/G99 M5 typically costs £8,000–£15,000 supply only, depending on variant — the saloon sits at £8,000–£14,000, while the Touring runs £8,500–£15,000. Fitting adds £1,040–£1,430. The plug-in hybrid system adds significant complexity to any engine work. Use our calculator for a personalised figure."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which G90/G99 M5 engine is the most reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "All G90 and G99 M5s use the same S68B44A plug-in hybrid V8 powertrain. The engine is new, so long-term reliability data is limited, but early indications suggest it's robust. The main concerns are the complexity of the hybrid system and the sheer weight's impact on component wear. BMW's 8-year/100,000-mile battery warranty provides some peace of mind."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What are the common problems with the G90/G99 M5?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The G90/G99 is still new, but early reports suggest the main concerns are hybrid system complexity, cooling system leaks, and weight-related component wear (tyres, brakes, suspension). The S68 is a new engine; long-term reliability patterns are still emerging."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the BMW M5 G90/G99 reliable overall?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Early indications suggest yes — the S68 V8 is a robust evolution of the S63, and BMW's hybrid technology is mature. However, the sheer complexity and weight of the car mean maintenance costs will be significant. Extended warranty is strongly recommended."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which G90/G99 M5 variant should I avoid?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No avoidance needed — both the saloon (G90) and Touring (G99) share the identical powertrain. The choice is purely about body style preference. The Touring is heavier (2,475–2,508 kg vs 2,435 kg) and may have slightly higher running costs."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I know if my G90/G99 M5 engine needs replacing?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Warning signs include reduced electric range (battery degradation), check engine lights related to the hybrid system, overheating, or unusual noises from the V8. The high-voltage battery should be checked regularly; any significant drop in EV range warrants inspection."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is it worth replacing a G90/G99 M5 engine, or should I scrap the car?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Depends on the car's value. Against a £110,000+ M5, an £8,000–£14,000 recon is 7–13% of the car's value — well within our 70% BMW threshold. Even against a high-mileage £80,000 example, the same recon is 10–18%. The G90/G99 M5 retains value well; engine replacement is almost always viable."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How long do G90/G99 M5 engines last?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The S68 V8 is expected to exceed 100,000 miles with proper maintenance, though the hybrid system's battery will degrade over time. BMW's 8-year/100,000-mile battery warranty covers the high-voltage battery. Regular servicing of both the combustion engine and hybrid system is essential."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the difference between the G90 and G99 M5?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The G90 is the four-door M5 saloon (2024–present), while the G99 is the five-door M5 Touring estate (2024–present). Both share the same S68 plug-in hybrid V8 powertrain and M xDrive all-wheel drive. The Touring offers significantly more cargo space (500 litres vs 467 litres) and is heavier (2,475–2,508 kg vs 2,435 kg). Performance is near-identical — 0-60 mph in 3.4 seconds for the saloon, 3.5 seconds for the Touring."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I find my G90/G99 M5 engine code?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Check the VIN plate or vehicle documentation — all G90 and G99 M5s use the S68B44A engine code. This is a 4.4-litre twin-turbo V8 producing 577 hp (430 kW) on its own, paired with a 194 hp (145 kW) electric motor for 727 PS (717 hp) system output. Tell us your variant and registration year and we'll identify it — 20+ vetted BMW M specialists will confirm it for free."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "BMWEngines.uk",
+          "url": "https://bmwengine.uk/",
+          "logo": "https://bmwengine.uk/images/bmwengines-logo.png",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "BMW M5 G90/G99 Engine Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "8000",
+            "highPrice": "15000",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "WebPage",
+          "name": "G90/G99 M5 Engine Replacement Cost UK — Compare Quotes",
+          "url": "https://bmwengine.uk/m5/g90-g99/",
+          "author": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk Specialist Network"
+          },
+          "datePublished": "2026-07-09",
+          "dateModified": "2026-07-09"
+        }
+      ]
+    }
   },
   "internalDeclarations": {
     "checkA": "",
@@ -248,16 +431,80 @@
     "liveFeed": []
   },
   "faq": {
-    "items": []
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a BMW M5 G90/G99 engine replacement cost in the UK?",
+        "answer": "A reconditioned S68 engine for the G90/G99 M5 typically costs £8,000–£15,000 supply only [BMW-QUOTE], depending on variant — the saloon sits at £8,000–£14,000, while the Touring runs £8,500–£15,000. Fitting adds £1,040–£1,430. The plug-in hybrid system adds significant complexity to any engine work. Use our calculator for a personalised figure."
+      },
+      {
+        "id": 2,
+        "question": "Which G90/G99 M5 engine is the most reliable?",
+        "answer": "All G90 and G99 M5s use the same S68B44A plug-in hybrid V8 powertrain. The engine is new, so long-term reliability data is limited, but early indications suggest it's robust. The main concerns are the complexity of the hybrid system and the sheer weight's impact on component wear. BMW's 8-year/100,000-mile battery warranty provides some peace of mind."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the G90/G99 M5?",
+        "answer": "The G90/G99 is still new, but early reports suggest the main concerns are hybrid system complexity, cooling system leaks, and weight-related component wear (tyres, brakes, suspension). The S68 is a new engine; long-term reliability patterns are still emerging."
+      },
+      {
+        "id": 4,
+        "question": "Is the BMW M5 G90/G99 reliable overall?",
+        "answer": "Early indications suggest yes — the S68 V8 is a robust evolution of the S63, and BMW's hybrid technology is mature. However, the sheer complexity and weight of the car mean maintenance costs will be significant. Extended warranty is strongly recommended."
+      },
+      {
+        "id": 5,
+        "question": "Which G90/G99 M5 variant should I avoid?",
+        "answer": "No avoidance needed — both the saloon (G90) and Touring (G99) share the identical powertrain. The choice is purely about body style preference. The Touring is heavier (2,475–2,508 kg vs 2,435 kg) and may have slightly higher running costs."
+      },
+      {
+        "id": 6,
+        "question": "How do I know if my G90/G99 M5 engine needs replacing?",
+        "answer": "Warning signs include reduced electric range (battery degradation), check engine lights related to the hybrid system, overheating, or unusual noises from the V8. The high-voltage battery should be checked regularly; any significant drop in EV range warrants inspection."
+      },
+      {
+        "id": 7,
+        "question": "Is it worth replacing a G90/G99 M5 engine, or should I scrap the car?",
+        "answer": "Depends on the car's value. Against a £110,000+ M5, an £8,000–£14,000 recon is 7–13% of the car's value — well within our 70% BMW threshold. Even against a high-mileage £80,000 example, the same recon is 10–18%. The G90/G99 M5 retains value well; engine replacement is almost always viable."
+      },
+      {
+        "id": 8,
+        "question": "How long do G90/G99 M5 engines last?",
+        "answer": "The S68 V8 is expected to exceed 100,000 miles with proper maintenance, though the hybrid system's battery will degrade over time. BMW's 8-year/100,000-mile battery warranty covers the high-voltage battery. Regular servicing of both the combustion engine and hybrid system is essential."
+      },
+      {
+        "id": 9,
+        "question": "What is the difference between the G90 and G99 M5?",
+        "answer": "The G90 is the four-door M5 saloon (2024–present), while the G99 is the five-door M5 Touring estate (2024–present). Both share the same S68 plug-in hybrid V8 powertrain and M xDrive all-wheel drive. The Touring offers significantly more cargo space (500 litres vs 467 litres) and is heavier (2,475–2,508 kg vs 2,435 kg). Performance is near-identical — 0-60 mph in 3.4 seconds for the saloon, 3.5 seconds for the Touring."
+      },
+      {
+        "id": 10,
+        "question": "How do I find my G90/G99 M5 engine code?",
+        "answer": "Check the VIN plate or vehicle documentation — all G90 and G99 M5s use the S68B44A engine code. This is a 4.4-litre twin-turbo V8 producing 577 hp (430 kW) on its own, paired with a 194 hp (145 kW) electric motor for 727 PS (717 hp) system output. Tell us your variant and registration year and we'll identify it — 20+ vetted BMW M specialists will confirm it for free."
+      }
+    ]
   },
   "trustCta": {
-    "h2": "",
-    "trustPoints": [],
-    "finalCta": "",
+    "h2": "Why UK BMW M5 G90/G99 Owners Trust BMWEngines.uk",
+    "trustPoints": [
+      {
+        "title": "Trusted G90/G99 Engine Suppliers",
+        "text": "every garage and engine rebuilder in our network is vetted, rated and reviewed by real M5 owners, as part of the Engine Finders network."
+      },
+      {
+        "title": "Compare G90/G99 Engine Replacement Companies",
+        "text": "see prices, warranty terms and supply & fit options side-by-side before you commit."
+      },
+      {
+        "title": "UK Engine Replacement Services for G90/G99",
+        "text": "covering both saloon and Touring variants, with supply-only or full supply & fit available nationwide."
+      }
+    ],
+    "finalCta": "Find the best BMW M5 G90/G99 engine replacement UK drivers rely on. Compare real prices from trusted M specialists on EnginesMarket today and get back on the road with confidence.",
     "ctaButton": {
-      "label": "",
+      "label": "Compare BMW M5 G90/G99 Engine Prices on EnginesMarket →",
       "href": "#",
-      "note": ""
+      "note": "[PLACEHOLDER — confirm EnginesMarket URL structure]"
     }
   }
 }

@@ -524,64 +524,43 @@
       {
         "label": "Regional Demand",
         "value": "South East (22%), London (18%), South West (12%) — premium hybrid strongholds [PATTERN DATA]"
-      },
-      {
-        "label": "SECTION 8 — FAQ",
-        "value": "1. How much does a BMW 7 Series 745e engine replacement cost in the UK?"
-      },
-      {
-        "label": "A reconditioned 745e engine (B58B30M2 with hybrid system) typically costs £3,000‑£4,500 supply only. Fitting adds £1,200‑£1,800. As a PHEV, the hybrid system components add complexity and cost. Use our calculator for a figure specific to your vehicle.",
-        "value": "2. Is the BMW 7 Series 745e engine reliable?"
-      },
-      {
-        "label": "The B58 is a robust and refined engine — part of BMW's B‑family, known for its reliability. Common issues include coolant leaks (expansion tank, water pump) and PCV valve failure. The plug‑in hybrid system adds complexity — HV battery degradation and charging system failures are the primary PHEV‑specific concerns. With regular maintenance and proper battery care, the 745e can be a reliable and refined powertrain.",
-        "value": "3. What are the common problems with the BMW 7 Series 745e?"
-      },
-      {
-        "label": "Common issues include B58 coolant leaks (expansion tank, water pump, plastic fittings), PCV valve failure causing rough running and smoke, HV battery degradation (reduced electric range), and KLE module/charging system failure. The B58 is fundamentally robust — these are known but manageable issues.",
-        "value": "4. Is it worth replacing a 745e engine, or should I scrap the car?"
-      },
-      {
-        "label": "Given the 7 Series's retained value (typically £20,000‑£45,000+), a £3,000‑£5,500 reconditioned engine is a modest fraction of the vehicle's worth. Replacement is almost always financially viable. However, if the HV battery has also failed (costing £2,000‑£5,000+), the total repair cost may be substantial. Get a full diagnostic assessment before committing.",
-        "value": "5. How do I find my 7 Series's engine code?"
-      },
-      {
-        "label": "The 745e uses the B58B30M2 3.0‑litre turbo petrol engine combined with an 83 kW electric motor. This is stamped on the engine block and listed on your V5C. The 745e badge itself confirms the powertrain — it's the 394 PS plug‑in hybrid offered in the G11/G12 7 Series LCI from 2019‑2022.",
-        "value": "6. Can I repair a 745e engine issue, or does it need replacement?"
-      },
-      {
-        "label": "Most issues — B58 coolant leaks, PCV valve failure, charging system failures — are repairable. HV battery degradation may be covered under warranty if the vehicle is still within the warranty period (typically 8 years/100,000 miles). However, if the engine suffers major internal failure, a full engine replacement is usually more cost‑effective than a rebuild.",
-        "value": "Disclaimer: All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12‑month unlimited‑mileage warranty — always confirm terms with your chosen supplier."
-      },
-      {
-        "label": "Section 9 (Trust + Final CTA), meta tags, Open Graph, Twitter Card, and complete JSON‑LD schema.",
-        "value": "* Brand: BMW"
-      },
-      {
-        "label": "* Domain: bmwengine.uk",
-        "value": "* Data tag: BMW‑"
-      },
-      {
-        "label": "* Specialist count: 20+",
-        "value": "* Scrap threshold: 70%"
-      },
-      {
-        "label": "* CTA Mode: Consultative (Priority L)",
-        "value": "* Era Map rows: 1 (B58B30M2 + 83 kW e‑motor)"
-      },
-      {
-        "label": "* Engine codes: B58B30M2",
-        "value": "* Service schema price range: £2,000 (lowest used) to £5,500 (highest rebuilt) — spans full Era Map history"
-      },
-      {
-        "label": "* Model Page needed: BMW 7 Series G11/G12 LCI Generation Page",
-        "value": "* Generation Page needed: BMW 7 Series G11/G12 LCI Generation Page (for cost inheritance)"
       }
     ]
   },
   "faq": {
-    "items": [],
-    "disclaimer": ""
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a BMW 7 Series 745e engine replacement cost in the UK?",
+        "answer": "A reconditioned 745e engine (B58B30M2 with hybrid system) typically costs £3,000‑£4,500 supply only. Fitting adds £1,200‑£1,800. As a PHEV, the hybrid system components add complexity and cost. Use our calculator for a figure specific to your vehicle."
+      },
+      {
+        "id": 2,
+        "question": "Is the BMW 7 Series 745e engine reliable?",
+        "answer": "The B58 is a robust and refined engine — part of BMW's B‑family, known for its reliability. Common issues include coolant leaks (expansion tank, water pump) and PCV valve failure. The plug‑in hybrid system adds complexity — HV battery degradation and charging system failures are the primary PHEV‑specific concerns. With regular maintenance and proper battery care, the 745e can be a reliable and refined powertrain."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the BMW 7 Series 745e?",
+        "answer": "Common issues include B58 coolant leaks (expansion tank, water pump, plastic fittings), PCV valve failure causing rough running and smoke, HV battery degradation (reduced electric range), and KLE module/charging system failure. The B58 is fundamentally robust — these are known but manageable issues."
+      },
+      {
+        "id": 4,
+        "question": "Is it worth replacing a 745e engine, or should I scrap the car?",
+        "answer": "Given the 7 Series's retained value (typically £20,000‑£45,000+), a £3,000‑£5,500 reconditioned engine is a modest fraction of the vehicle's worth. Replacement is almost always financially viable. However, if the HV battery has also failed (costing £2,000‑£5,000+), the total repair cost may be substantial. Get a full diagnostic assessment before committing."
+      },
+      {
+        "id": 5,
+        "question": "How do I find my 7 Series's engine code?",
+        "answer": "The 745e uses the B58B30M2 3.0‑litre turbo petrol engine combined with an 83 kW electric motor. This is stamped on the engine block and listed on your V5C. The 745e badge itself confirms the powertrain — it's the 394 PS plug‑in hybrid offered in the G11/G12 7 Series LCI from 2019‑2022."
+      },
+      {
+        "id": 6,
+        "question": "Can I repair a 745e engine issue, or does it need replacement?",
+        "answer": "Most issues — B58 coolant leaks, PCV valve failure, charging system failures — are repairable. HV battery degradation may be covered under warranty if the vehicle is still within the warranty period (typically 8 years/100,000 miles). However, if the engine suffers major internal failure, a full engine replacement is usually more cost‑effective than a rebuild."
+      }
+    ],
+    "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12‑month unlimited‑mileage warranty — always confirm terms with your chosen supplier."
   },
   "trustCta": {
     "h2": "Why UK BMW 7 Series 745e Owners Trust BMWEngines.uk",

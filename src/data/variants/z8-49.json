@@ -465,7 +465,32 @@
     }
   },
   "marketIntelligence": {
-    "items": []
+    "items": [
+      {
+        "label": "Most Common Failure",
+        "value": "VANOS system wear — the most frequently reported S62 issue"
+      },
+      {
+        "label": "Average Enquiry Mileage",
+        "value": "50,000–70,000 miles【PATTERN DATA】"
+      },
+      {
+        "label": "Average Replacement Cost",
+        "value": "£7,500–£8,500 reconditioned, supply only【PLACEHOLDER — confirm vs cost sheet】"
+      },
+      {
+        "label": "Most Requested Engine Code",
+        "value": "S62B50【PATTERN DATA】"
+      },
+      {
+        "label": "Peak Enquiry Season",
+        "value": "Spring/Summer — classic car season【PATTERN DATA】"
+      },
+      {
+        "label": "Regional Demand",
+        "value": "South East (19%), London (17%), South West (14%)【PATTERN DATA】"
+      }
+    ]
   },
   "faq": {
     "items": [

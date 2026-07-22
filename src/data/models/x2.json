@@ -1,24 +1,232 @@
 {
   "meta": {
     "slug": "x2",
-    "title": "X2 Engines — The Complete UK Guide",
-    "titleCharCount": 34,
-    "description": "",
-    "descriptionCharCount": 0,
+    "title": "BMW X2 Engine Replacement Cost UK — Compare Quotes",
+    "titleCharCount": 50,
+    "description": "Every BMW X2 engine — B38 to B48. 2 generations, real UK costs and reliability data. Compare prices from 20+ vetted BMW specialists today.",
+    "descriptionCharCount": 138,
     "openGraph": {
-      "title": "",
-      "description": "",
-      "type": "",
-      "url": "",
-      "image": "",
-      "siteName": ""
+      "title": "BMW X2 Engine Replacement Cost UK — Compare Quotes",
+      "description": "Every BMW X2 engine — B38 to B48. 2 generations, real UK costs and reliability data. Compare prices from 20+ vetted BMW specialists today.",
+      "type": "website",
+      "url": "https://bmwengine.uk/x2/",
+      "image": "https://bmwengine.uk/images/bmw-x2-hero.jpg",
+      "siteName": "BMWEngines.uk"
     },
     "twitter": {
-      "card": "",
-      "title": "",
-      "description": ""
+      "card": "summary_large_image",
+      "title": "BMW X2 Engine Replacement Cost UK — Compare Quotes",
+      "description": "Every BMW X2 engine — B38 to B48. 2 generations, real UK costs and reliability data. Compare prices from 20+ vetted BMW specialists today."
     },
-    "jsonLd": {}
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://bmwengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "X2",
+              "item": "https://bmwengine.uk/x2/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "BMW X2 Generations",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "BMW X2 F39 (2017–2024)",
+              "url": "https://bmwengine.uk/x2/f39/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "BMW X2 U10 (2024–present)",
+              "url": "https://bmwengine.uk/x2/u10/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "BMW X2 Engine Codes",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "B38A15 Engine",
+              "url": "https://bmwengine.uk/engines/b38a15/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "B48A20A Engine",
+              "url": "https://bmwengine.uk/engines/b48a20a/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "B48A20F Engine",
+              "url": "https://bmwengine.uk/engines/b48a20f/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "B48A20E Engine",
+              "url": "https://bmwengine.uk/engines/b48a20e/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 5,
+              "name": "N47D20C Engine",
+              "url": "https://bmwengine.uk/engines/n47d20c/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 6,
+              "name": "B47C20A Engine",
+              "url": "https://bmwengine.uk/engines/b47c20a/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 7,
+              "name": "B47C20B Engine",
+              "url": "https://bmwengine.uk/engines/b47c20b/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does a BMW X2 engine replacement cost in the UK?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A reconditioned BMW X2 engine typically costs £2,800–£5,500 supply only [BMW-QUOTE] — from the B38 at £2,200–£3,800 to the N47 at £3,200–£5,500. The M35i B48 costs £3,800–£6,000. Fitting adds £650–£1,500. Use our calculator for a personalised figure."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which BMW X2 engine is the most reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The B48B20 petrol and B47C20A/B diesel in the 2019+ F39 and U10 — the B-family engines are the modern gold standard. The B38A15 three-cylinder is also proven and reliable."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which BMW X2 engine should I avoid?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No engine outright — but an early F39 N47D20C without a documented timing-chain replacement is the one purchase we consistently advise against. A 2019+ F39 with B47 or B48 has no such caveat. The B48 in the M35i is proven and robust."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I know if my X2 engine needs replacing?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "By engine: cold-start rattle (N47 timing chain), coolant loss (B48 cooling system), oil drips (B48 oil filter housing), EGR cooler leaks (B47 diesel), power loss and check engine light (B48 diverter valve). On early F39 N47, any rattling on startup is a warning sign. Caught early, it's a repair; ignored, it's a £2,800–£5,500 engine [BMW-QUOTE]. Use our diagnostic calculator for a personalised assessment."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is it worth replacing a BMW X2 engine?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Depends entirely on generation. Against a £15,000–£20,000 F39, a £3,000–£5,000 B48/B47 recon is 14–33% — ✅ safe. Against an £8,000 early F39, a £3,200–£5,500 N47 recon is 40–69% — ⚠️ watch. Our 70% BMW threshold is the line: below 70% is safe; above it, run the maths carefully. Use our calculator for your car."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which BMW X2 should I buy?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "2019+ F39 with the B48 petrol or B47 diesel — the B-family engines fixed the chain issue, the UKL platform is practical, and the coupé styling is distinctive and desirable. For performance, the F39 M35i xDrive with 306 hp is the pick. For the future, the U10 with B48 or iX2 electric — buy it with confidence."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I find my BMW X2 engine code?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Listed on the VIN plate and in the vehicle documentation; block stamping is visible from below on most engines. Or tell us your generation and variant (F39 18d, F39 20i, F39 M35i, U10 20i) and we'll identify it — 20+ vetted specialists will confirm it for free."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "BMW X2 vs X1 — which is more reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Mechanically they share engines across similar eras — the N47/B47/B48 story is identical. The X2 is essentially the X1 with a coupé roofline; reliability is the same. Buy on engine and year, not badge. The X1 offers more practicality; the X2 offers more style."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "BMWEngines.uk",
+          "url": "https://bmwengine.uk/",
+          "logo": "https://bmwengine.uk/images/bmwengines-logo.png",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "BMW X2 Engine Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "2800",
+            "highPrice": "5500",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "name": "BMW X2 UK Engine Enquiry Data 2025",
+          "description": "Proprietary UK enquiry volumes and demand trends for BMW X2 engines, sourced from BMWEngines.uk's specialist marketplace activity.",
+          "creator": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk"
+          },
+          "temporalCoverage": "2025",
+          "spatialCoverage": "United Kingdom"
+        },
+        {
+          "@type": "WebPage",
+          "name": "BMW X2 Engine Replacement Cost UK — Compare Quotes",
+          "url": "https://bmwengine.uk/x2/",
+          "author": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk Specialist Network"
+          },
+          "datePublished": "2026-07-07",
+          "dateModified": "2026-07-07"
+        }
+      ]
+    }
   },
   "hero": {
     "tagPill": "BMW X2 • 2017–Present • 2 Generations (F39, U10) • B38, B48, B47, N47",
@@ -135,92 +343,54 @@
       {
         "metric": "Overall Rating",
         "value": "★★★★☆ 3.8/5"
-      },
-      {
-        "metric": "SECTION 4 — GENERATIONS — <GenerationsGrid>",
-        "value": "H2: BMW X2 Generations — Find Your Vehicle"
-      },
-      {
-        "metric": "Sub-headline: Two generations, two platforms, one stylish crossover mission. The right X2 depends on which generation and which engine you choose.",
-        "value": "First Generation — F39 (2017–2024)"
-      },
-      {
-        "metric": "BMW X2 F39 🔥 Most Enquired — B48/B47 drives volume [BMW-VERIFIED]",
-        "value": "2017–2024 • B38, B48, N47, B47 — UKL2 platform (FWD-based)"
-      },
-      {
-        "metric": "★★★★☆",
-        "value": "Our Verdict: The original X2 — BMW's stylish crossover coupé based on the UKL2 platform shared with the X1 and Mini Countryman. The B48 petrol and B47 diesel are the dependable choices; early N47 diesels carry the chain-tensioner caveat. The M35i xDrive with 306 hp is the performance pick. Buy 2019+ for the revised B-family engines."
-      },
-      {
-        "metric": "Explore the F39 →",
-        "value": "Second Generation — U10 (2024–present)"
-      },
-      {
-        "metric": "BMW X2 U10",
-        "value": "2024–present • B38, B48 (mild-hybrid), iX2 electric — FAAR platform"
-      },
-      {
-        "metric": "★★★★★",
-        "value": "Our Verdict: The second-generation X2 — revealed October 2023, launched 2024. Available with petrol, mild-hybrid, plug-in hybrid, and fully electric iX2 powertrains. The B48 in the M35i xDrive produces 312 hp with 48V mild-hybrid assistance. The iX2 is BMW's first electric X2. Too new for volume reliability data, but the B-family record is impeccable."
-      },
-      {
-        "metric": "Explore the U10 →",
-        "value": "The Generation Divide — The Line That Matters Most"
-      },
-      {
-        "metric": "F39 (2017–2024)",
-        "value": "U10 (2024–present)"
-      },
-      {
-        "metric": "Platform",
-        "value": "UKL2 (FWD-based)"
-      },
-      {
-        "metric": "FAAR (FWD-based)",
-        "value": "Core petrol"
-      },
-      {
-        "metric": "B38, B48",
-        "value": "B38, B48 (mild-hybrid)"
-      },
-      {
-        "metric": "Core diesel",
-        "value": "N47 (early), B47 (2019+)"
-      },
-      {
-        "metric": "Diesel dropped (many markets)",
-        "value": "Core issue"
-      },
-      {
-        "metric": "N47 timing chain (early)",
-        "value": "None significant"
-      },
-      {
-        "metric": "Our position",
-        "value": "Buy 2019+ B47/B48"
-      },
-      {
-        "metric": "The future — buy with confidence",
-        "value": "Read the full comparison: BMW X2 F39 vs U10 →"
-      },
-      {
-        "metric": "The Badge Ambiguity — \"20i\" and \"20d\" Mean Different Things",
-        "value": "Correction applied (internal): The \"20i\" badge covers different engines depending on generation. On the F39 (2017–2024), it's the B48A20A/B (2.0L, 178–192 hp). On the U10 (2024+), it's also a B48 variant but with mild-hybrid assistance. The \"20d\" badge on the F39 covers the N47 (early cars) or B47 (2019+). The N47 carries the chain risk; the B47 does not. All share a badge. None share a reliability profile."
       }
     ]
   },
   "generations": {
-    "h2": "",
-    "subHeadline": "",
-    "cards": [],
+    "h2": "BMW X2 Generations — Find Your Vehicle",
+    "subHeadline": "Two generations, two platforms, one stylish crossover mission. The right X2 depends on which generation and which engine you choose.",
+    "cards": [
+      {
+        "title": "First Generation — F39 (2017–2024)",
+        "badge": "BMW X2 F39 🔥 Most Enquired — B48/B47 drives volume [BMW-VERIFIED]",
+        "meta": "2017–2024 • B38, B48, N47, B47 — UKL2 platform (FWD-based)",
+        "rating": "★★★★☆",
+        "verdict": "The original X2 — BMW's stylish crossover coupé based on the UKL2 platform shared with the X1 and Mini Countryman. The B48 petrol and B47 diesel are the dependable choices; early N47 diesels carry the chain-tensioner caveat. The M35i xDrive with 306 hp is the performance pick. Buy 2019+ for the revised B-family engines.",
+        "cta": {
+          "label": "Explore the F39 →",
+          "href": "#"
+        }
+      },
+      {
+        "title": "Second Generation — U10 (2024–present)",
+        "badge": "",
+        "meta": "2024–present • B38, B48 (mild-hybrid), iX2 electric — FAAR platform",
+        "rating": "★★★★★",
+        "verdict": "The second-generation X2 — revealed October 2023, launched 2024. Available with petrol, mild-hybrid, plug-in hybrid, and fully electric iX2 powertrains. The B48 in the M35i xDrive produces 312 hp with 48V mild-hybrid assistance. The iX2 is BMW's first electric X2. Too new for volume reliability data, but the B-family record is impeccable.",
+        "cta": {
+          "label": "Explore the U10 →",
+          "href": "#"
+        }
+      },
+      {
+        "title": "The Generation Divide — The Line That Matters Most",
+        "badge": "",
+        "meta": "F39 (2017–2024)",
+        "rating": "",
+        "verdict": "",
+        "cta": {
+          "label": "",
+          "href": "#"
+        }
+      }
+    ],
     "rangeTable": {
       "title": "",
       "columns": [],
       "rows": []
     },
     "comparisonLink": {
-      "label": "",
+      "label": "Read the full comparison: BMW X2 F39 vs U10 →",
       "href": "#"
     }
   },

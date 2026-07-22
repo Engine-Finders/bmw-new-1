@@ -577,7 +577,32 @@
     }
   },
   "marketIntelligence": {
-    "items": []
+    "items": [
+      {
+        "label": "Most Common Failure",
+        "value": "M54: cooling system / CCV; N20: timing chain guide; N52: water pump [PATTERN DATA]"
+      },
+      {
+        "label": "Average Enquiry Mileage",
+        "value": "80,000 miles [PATTERN DATA]"
+      },
+      {
+        "label": "Average Replacement Cost",
+        "value": "£2,500–£3,500 reconditioned, supply only [PLACEHOLDER — confirm vs cost sheet]"
+      },
+      {
+        "label": "Most Requested Engine Code",
+        "value": "M54B25 (E39/E60) — approximately 35% of 525i enquiries [PATTERN DATA]"
+      },
+      {
+        "label": "Peak Enquiry Season",
+        "value": "Summer — cooling issues exposed by warmer weather [PATTERN DATA]"
+      },
+      {
+        "label": "Regional Demand",
+        "value": "London (18%), South East (17%), North West (13%) [PATTERN DATA]"
+      }
+    ]
   },
   "faq": {
     "items": [

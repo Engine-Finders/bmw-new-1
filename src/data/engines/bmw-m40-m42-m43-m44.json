@@ -80,79 +80,48 @@
       {
         "metric": "Overall Engine Score",
         "value": "68/100"
-      },
-      {
-        "metric": "SECTION 3 — VERDICT & RATING",
-        "value": "H2: BMW M40/M42/M43/M44 — Our Verdict & Rating"
-      },
-      {
-        "metric": "Star rating: 3½★ out of 5",
-        "value": "Confidence: 85% confidence — based on enthusiast community consensus and specialist workshop feedback on these older BMW fours [ESTIMATED]."
-      },
-      {
-        "metric": "Engine Score breakdown:",
-        "value": "Dimension"
-      },
-      {
-        "metric": "Score (of 20)",
-        "value": "How it's determined"
-      },
-      {
-        "metric": "Reliability",
-        "value": "14"
-      },
-      {
-        "metric": "3.5★ × 4 = 14",
-        "value": "Repair Cost"
-      },
-      {
-        "metric": "20",
-        "value": "Midpoint of Reconditioned supply range (£1,200–£2,200 → £1,700) — under £3,000 bracket → 20"
-      },
-      {
-        "metric": "Repairability",
-        "value": "16"
-      },
-      {
-        "metric": "Most failures (timing chain tensioner, head gasket) are well‑understood and affordable to repair",
-        "value": "Parts Supply"
-      },
-      {
-        "metric": "12",
-        "value": "Parts available but some are specialist‑order or NLA; aftermarket support exists"
-      },
-      {
-        "metric": "Replacement Economics",
-        "value": "6"
-      },
-      {
-        "metric": "Reconditioned cost (£1,700) as % of lowest typical host value (~£2,500 E36 318i) = 68% — 60–74% bracket → 8 (Wait, let me recalc: £1,700 / £2,500 = 68%, which is 60–74% → 8)",
-        "value": "Total"
-      },
-      {
-        "metric": "70/100",
-        "value": "Let me recheck: 14 + 20 + 16 + 12 + 8 = 70. Correct."
-      },
-      {
-        "metric": "One-line verdict: \"The M42/M44 are robust, simple BMW fours — neglect cooling systems and head gaskets fail — buy with documented service history and budget for cooling refresh.\" (Clause 1: 7 words. Clause 2: 8 words. Clause 3: 8 words. Total: 23 words.)",
-        "value": "Best For: Classic BMW enthusiasts who want a simple, reliable engine they can work on themselves."
       }
     ]
   },
   "verdictRating": {
-    "starRating": "",
-    "confidence": "",
-    "scoreNote": "",
+    "starRating": "3½★ out of 5",
+    "confidence": "85% confidence — based on enthusiast community consensus and specialist workshop feedback on these older BMW fours [ESTIMATED].",
+    "scoreNote": "Engine Score breakdown:",
     "scoreBreakdown": {
       "columns": [
         "Dimension",
         "Score (of 20)"
       ],
-      "rows": []
+      "rows": [
+        {
+          "dimension": "Reliability",
+          "score": "14 (3.5★ × 4 = 14)"
+        },
+        {
+          "dimension": "Repair Cost",
+          "score": "20 (Midpoint of Reconditioned supply range (£1,200–£2,200 → £1,700) — under £3,000 bracket → 20)"
+        },
+        {
+          "dimension": "Repairability",
+          "score": "16 (Most failures (timing chain tensioner, head gasket) are well‑understood and affordable to repair)"
+        },
+        {
+          "dimension": "Parts Supply",
+          "score": "12 (Parts available but some are specialist‑order or NLA; aftermarket support exists)"
+        },
+        {
+          "dimension": "Replacement Economics",
+          "score": "6 (Reconditioned cost (£1,700) as % of lowest typical host value (~£2,500 E36 318i) = 68% — 60–74% bracket → 8 (Wait, let me recalc: £1,700 / £2,500 = 68%, which is 60–74% → 8))"
+        },
+        {
+          "dimension": "Total",
+          "score": "70/100 (Let me recheck: 14 + 20 + 16 + 12 + 8 = 70. Correct.)"
+        }
+      ]
     },
-    "oneLineVerdict": "",
-    "bestFor": "",
-    "avoidIf": ""
+    "oneLineVerdict": "\"The M42/M44 are robust, simple BMW fours — neglect cooling systems and head gaskets fail — buy with documented service history and budget for cooling refresh.\" (Clause 1: 7 words. Clause 2: 8 words. Clause 3: 8 words. Total: 23 words.)",
+    "bestFor": "Classic BMW enthusiasts who want a simple, reliable engine they can work on themselves.",
+    "avoidIf": "You can't stomach age‑related parts scarcity — these are 20‑30 year old engines now."
   },
   "compatibility": {
     "columns": [

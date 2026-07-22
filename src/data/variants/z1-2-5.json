@@ -540,44 +540,43 @@
       {
         "label": "Regional Demand",
         "value": "South East (22%), South West (16%), East Anglia (12%)【PATTERN DATA】"
-      },
-      {
-        "label": "SECTION 8 — FAQ",
-        "value": "1. How much does a BMW Z1 2.5 engine replacement cost in the UK?"
-      },
-      {
-        "label": "A reconditioned Z1 2.5 (M20B25) engine typically costs £3,500–£6,500 supply only. Fitting adds £1,000–£1,800 at independent specialist rates. Use our calculator for a figure specific to your car.",
-        "value": "2. Is the BMW Z1 2.5 engine reliable?"
-      },
-      {
-        "label": "The M20B25 is one of BMW's most durable engines — 200,000+ miles is routine with proper maintenance. However, it has well-documented weaknesses: timing belt replacement is critical (interference engine), head gasket failure can occur, and the Z1 has unique issues including a cylinder-head oil-feed restriction and low-nose oil pump that can cause camshaft pitting. Regular maintenance is essential.",
-        "value": "3. What are the common problems with the BMW Z1 2.5?"
-      },
-      {
-        "label": "Timing belt failure (catastrophic if not replaced), Z1-specific oil feed restriction and camshaft pitting, head gasket failure, under-body exhaust heat-shield failure (cooks starter motors), and idle control valve/vacuum leak issues. See the Era Map above for detailed advice.",
-        "value": "4. Is it worth replacing a BMW Z1 2.5 engine, or should I scrap the car?"
-      },
-      {
-        "label": "Depends on vehicle value. Against a well-maintained Z1 (values £20,000–£60,000+ depending on condition and mileage), a £4,000–£5,000 reconditioned engine is 8–25% of the vehicle's value — worth it. The BMW scrap threshold of 70% means evaluating the whole vehicle and its condition before committing. Given the Z1's rarity (only 8,000 built) and rising values, engine replacement is almost always worth it for a solid example.",
-        "value": "5. How do I find my BMW Z1 2.5 engine code?"
-      },
-      {
-        "label": "The engine code M20B25 is stamped on the cylinder block. The Z1 was produced only from 1989 to 1991 with a sole drivetrain specification — the 2.5-litre M20B25 straight-six engine and 5-speed manual transmission from the E30 325i. If you have a Z1, it has the M20B25. Check your VIN plate and vehicle documentation for confirmation.",
-        "value": "6. Can I repair the M20 timing belt, or does it require engine replacement?"
-      },
-      {
-        "label": "Timing belt replacement is routine preventative maintenance — it does not require engine replacement. A belt, tensioner and water pump replacement costs £400–£800. However, if the belt snaps, a full engine replacement (£3,500–£6,500) is usually required. At the first sign of belt age (60,000 miles or 5 years), book a replacement immediately.",
-        "value": "Disclaimer: All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty — always confirm terms with your chosen supplier."
-      },
-      {
-        "label": "SECTION 9, META AND SCHEMA",
-        "value": "PART 2 — SECTION 9 + META + SCHEMA"
       }
     ]
   },
   "faq": {
-    "items": [],
-    "disclaimer": ""
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a BMW Z1 2.5 engine replacement cost in the UK?",
+        "answer": "A reconditioned Z1 2.5 (M20B25) engine typically costs £3,500–£6,500 supply only. Fitting adds £1,000–£1,800 at independent specialist rates. Use our calculator for a figure specific to your car."
+      },
+      {
+        "id": 2,
+        "question": "Is the BMW Z1 2.5 engine reliable?",
+        "answer": "The M20B25 is one of BMW's most durable engines — 200,000+ miles is routine with proper maintenance. However, it has well-documented weaknesses: timing belt replacement is critical (interference engine), head gasket failure can occur, and the Z1 has unique issues including a cylinder-head oil-feed restriction and low-nose oil pump that can cause camshaft pitting. Regular maintenance is essential."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the BMW Z1 2.5?",
+        "answer": "Timing belt failure (catastrophic if not replaced), Z1-specific oil feed restriction and camshaft pitting, head gasket failure, under-body exhaust heat-shield failure (cooks starter motors), and idle control valve/vacuum leak issues. See the Era Map above for detailed advice."
+      },
+      {
+        "id": 4,
+        "question": "Is it worth replacing a BMW Z1 2.5 engine, or should I scrap the car?",
+        "answer": "Depends on vehicle value. Against a well-maintained Z1 (values £20,000–£60,000+ depending on condition and mileage), a £4,000–£5,000 reconditioned engine is 8–25% of the vehicle's value — worth it. The BMW scrap threshold of 70% means evaluating the whole vehicle and its condition before committing. Given the Z1's rarity (only 8,000 built) and rising values, engine replacement is almost always worth it for a solid example."
+      },
+      {
+        "id": 5,
+        "question": "How do I find my BMW Z1 2.5 engine code?",
+        "answer": "The engine code M20B25 is stamped on the cylinder block. The Z1 was produced only from 1989 to 1991 with a sole drivetrain specification — the 2.5-litre M20B25 straight-six engine and 5-speed manual transmission from the E30 325i. If you have a Z1, it has the M20B25. Check your VIN plate and vehicle documentation for confirmation."
+      },
+      {
+        "id": 6,
+        "question": "Can I repair the M20 timing belt, or does it require engine replacement?",
+        "answer": "Timing belt replacement is routine preventative maintenance — it does not require engine replacement. A belt, tensioner and water pump replacement costs £400–£800. However, if the belt snaps, a full engine replacement (£3,500–£6,500) is usually required. At the first sign of belt age (60,000 miles or 5 years), book a replacement immediately."
+      }
+    ],
+    "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty — always confirm terms with your chosen supplier."
   },
   "trustCta": {
     "h2": "Why UK BMW Z1 2.5 Owners Trust BMWEngines.uk",

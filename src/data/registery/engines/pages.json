@@ -128,5 +128,15 @@
     "slug": "s70-s85",
     "type": "engines",
     "dataFile": "bmw-s70-s85"
+  },
+  {
+    "slug": "m60-m62",
+    "type": "engines",
+    "dataFile": "bmw-m60-m62"
+  },
+  {
+    "slug": "m88-s38",
+    "type": "engines",
+    "dataFile": "bmw-m88-s38"
   }
 ]

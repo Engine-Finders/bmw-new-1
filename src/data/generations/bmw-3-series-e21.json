@@ -1,11 +1,254 @@
 {
   "meta": {
     "slug": "bmw-3-series-e21",
-    "title": "BMW 3 Series E21 Engines — The Complete UK Guide",
+    "title": "E21 Engine Replacement Cost UK — Compare Quotes",
     "titleCharCount": 48,
-    "description": "",
-    "descriptionCharCount": 0,
-    "jsonLd": {}
+    "description": "Every BMW 3 Series E21 engine — from the 1.6 M10 to the 2.3 M20 six. Real UK costs, honest reliability data. Compare prices from 20+ vetted BMW specialists today.",
+    "descriptionCharCount": 156,
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://bmwengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "3 Series",
+              "item": "https://bmwengine.uk/3-series/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "BMW 3 Series E21",
+              "item": "https://bmwengine.uk/3-series/e21/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "BMW 3 Series E21 Engine Codes",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "M10B16 1.6 Petrol",
+              "url": "https://bmwengine.uk/engines/m10/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "M10B18 1.8 Petrol",
+              "url": "https://bmwengine.uk/engines/m10/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "M10B20 2.0 Petrol",
+              "url": "https://bmwengine.uk/engines/m10/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "M20B20 2.0 Petrol Six",
+              "url": "https://bmwengine.uk/engines/m20/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 5,
+              "name": "M20B23 2.3 Petrol Six",
+              "url": "https://bmwengine.uk/engines/m20/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "BMW 3 Series E21 Core Variants",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "315",
+              "url": "https://bmwengine.uk/3-series/e21/315/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "316",
+              "url": "https://bmwengine.uk/3-series/e21/316/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "318",
+              "url": "https://bmwengine.uk/3-series/e21/318/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "318i",
+              "url": "https://bmwengine.uk/3-series/e21/318i/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 5,
+              "name": "320",
+              "url": "https://bmwengine.uk/3-series/e21/320/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 6,
+              "name": "320i",
+              "url": "https://bmwengine.uk/3-series/e21/320i/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 7,
+              "name": "320/6",
+              "url": "https://bmwengine.uk/3-series/e21/320-6/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 8,
+              "name": "323i",
+              "url": "https://bmwengine.uk/3-series/e21/323i/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does a BMW 3 Series E21 engine replacement cost in the UK?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A reconditioned E21 engine costs between £3,500 and £8,500 supply-only, depending on the engine — the M10 four-cylinder ranges £3,500–£7,200, while the M20 six-cylinder runs £4,500–£8,500. Fitting adds 10–18 hours of labour at £65–£90/hr. Use our calculator for a personalised quote."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which BMW 3 Series E21 engine is the most reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The M10 2.0-litre fuel-injected 320i (125 bhp) is the most reliable E21 engine — it's the best-supported, most common, and delivers the smooth four-cylinder character that defined the early 3 Series. The carburettor models require more frequent maintenance, while the M20 six-cylinder adds timing belt complexity."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What are the common problems with the BMW 3 Series E21?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Timing chain wear on M10 engines, timing belt failure on M20 engines (critical replacement every 60,000 miles or 5 years), carburettor or fuel injection system wear, and structural rust in floor pans, sills, and wheel arches. The Kugelfischer mechanical injection system on 320i models is reliable but requires specialist setup."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the BMW 3 Series E21 reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "With proper maintenance, yes — these engines are robust and well-understood. The M10 is nearly indestructible if the timing chain tensioner is addressed. The M20 requires strict timing belt changes. Rust is the bigger enemy on these cars. For any E21, a thorough inspection and preventative maintenance are essential."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which BMW 3 Series E21 engine should I avoid?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Early 316 (1.6-litre) carburettor models are underpowered for the car's weight and can be frustrating to drive. Also avoid any M20-engined car (320/6 or 323i) without documented timing belt replacement — a snapped belt destroys the engine. If you must have a six-cylinder, choose a 323i with full service history."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I know if my E21 engine needs replacing?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Timing chain rattle on M10 engines, timing belt age or condition on M20 engines, persistent poor running or hesitation from carburettor/injection issues, blue smoke from the exhaust, or low compression on any cylinder are the key warning signs. Use our diagnostic tool for a personalised assessment."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is it worth replacing a BMW 3 Series E21 engine, or should I scrap the car?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Apply the 70% BMW scrap threshold — but these are classic cars, so value assessment differs. Against a well-kept £15,000 E21, a £5,000 323i recon is 33% of the car's value. Against a tired £5,000 example, the same recon is 100% — we'd recommend walking away. For a cherished 323i or low-mileage example, the emotional value may justify the spend."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How long do BMW 3 Series E21 engines last?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "M10 four-cylinders can exceed 200,000 miles with proper servicing — the bottom end is exceptionally durable. M20 six-cylinders are similarly robust, provided the timing belt is changed every 60,000 miles or 5 years. Carburettor wear and injection system servicing are the main maintenance items."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the difference between the E21 and other 3 Series generations?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The E21 is the first-generation 3 Series, produced from 1975 to 1983. It replaced the 02 Series and was exclusively a two-door coupé (with Baur convertibles available). It was succeeded by the E30 in 1982. The E21 is lighter, more basic, and more analogue than its successors, with no power steering on early models and a pure driving experience."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I find my BMW 3 Series E21 engine code?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The engine code is listed on the VIN plate, vehicle documentation, and on a casting on the engine block. For 1.6-litre fours, look for M10B16; for 1.8-litre fours, M10B18; for 2.0-litre fours, M10B20; for 2.0-litre sixes, M20B20; for 2.3-litre sixes, M20B23. Tell us your variant and year, and we'll confirm."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "BMWEngine.uk",
+          "url": "https://bmwengine.uk/",
+          "logo": "https://bmwengine.uk/images/bmwengine-logo.png",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "BMW 3 Series E21 Engine Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "BMWEngine.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "3500",
+            "highPrice": "8500",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "WebPage",
+          "name": "E21 Engine Replacement Cost UK — Compare Quotes",
+          "url": "https://bmwengine.uk/3-series/e21/",
+          "author": {
+            "@type": "Organization",
+            "name": "BMWEngine.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "BMWEngine.uk Specialist Network"
+          },
+          "datePublished": "2026-07-09",
+          "dateModified": "2026-07-09"
+        }
+      ]
+    }
   },
   "internalDeclarations": {
     "checkA": "",
@@ -439,16 +682,80 @@
     "liveFeed": []
   },
   "faq": {
-    "items": []
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a BMW 3 Series E21 engine replacement cost in the UK?",
+        "answer": "A reconditioned E21 engine costs between £3,500 and £8,500 supply-only [BMW-QUOTE], depending on the engine — the M10 four-cylinder ranges £3,500–£7,200, while the M20 six-cylinder runs £4,500–£8,500. Fitting adds 10–18 hours of labour at £65–£90/hr. Use our calculator for a personalised quote."
+      },
+      {
+        "id": 2,
+        "question": "Which BMW 3 Series E21 engine is the most reliable?",
+        "answer": "The M10 2.0-litre fuel-injected 320i (125 bhp) is the most reliable E21 engine — it's the best-supported, most common, and delivers the smooth four-cylinder character that defined the early 3 Series. The carburettor models require more frequent maintenance, while the M20 six-cylinder adds timing belt complexity."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the BMW 3 Series E21?",
+        "answer": "Timing chain wear on M10 engines, timing belt failure on M20 engines (critical replacement every 60,000 miles or 5 years), carburettor or fuel injection system wear, and structural rust in floor pans, sills, and wheel arches. The Kugelfischer mechanical injection system on 320i models is reliable but requires specialist setup."
+      },
+      {
+        "id": 4,
+        "question": "Is the BMW 3 Series E21 reliable?",
+        "answer": "With proper maintenance, yes — these engines are robust and well-understood. The M10 is nearly indestructible if the timing chain tensioner is addressed. The M20 requires strict timing belt changes. Rust is the bigger enemy on these cars. For any E21, a thorough inspection and preventative maintenance are essential."
+      },
+      {
+        "id": 5,
+        "question": "Which BMW 3 Series E21 engine should I avoid?",
+        "answer": "Early 316 (1.6-litre) carburettor models are underpowered for the car's weight and can be frustrating to drive. Also avoid any M20-engined car (320/6 or 323i) without documented timing belt replacement — a snapped belt destroys the engine. If you must have a six-cylinder, choose a 323i with full service history."
+      },
+      {
+        "id": 6,
+        "question": "How do I know if my E21 engine needs replacing?",
+        "answer": "Timing chain rattle on M10 engines, timing belt age or condition on M20 engines, persistent poor running or hesitation from carburettor/injection issues, blue smoke from the exhaust, or low compression on any cylinder are the key warning signs. Use our diagnostic tool for a personalised assessment."
+      },
+      {
+        "id": 7,
+        "question": "Is it worth replacing a BMW 3 Series E21 engine, or should I scrap the car?",
+        "answer": "Apply the 70% BMW scrap threshold — but these are classic cars, so value assessment differs. Against a well-kept £15,000 E21, a £5,000 323i recon is 33% of the car's value. Against a tired £5,000 example, the same recon is 100% — we'd recommend walking away. For a cherished 323i or low-mileage example, the emotional value may justify the spend."
+      },
+      {
+        "id": 8,
+        "question": "How long do BMW 3 Series E21 engines last?",
+        "answer": "M10 four-cylinders can exceed 200,000 miles with proper servicing — the bottom end is exceptionally durable. M20 six-cylinders are similarly robust, provided the timing belt is changed every 60,000 miles or 5 years. Carburettor wear and injection system servicing are the main maintenance items."
+      },
+      {
+        "id": 9,
+        "question": "What is the difference between the E21 and other 3 Series generations?",
+        "answer": "The E21 is the first-generation 3 Series, produced from 1975 to 1983. It replaced the 02 Series and was exclusively a two-door coupé (with Baur convertibles available). It was succeeded by the E30 in 1982. The E21 is lighter, more basic, and more analogue than its successors, with no power steering on early models and a pure driving experience."
+      },
+      {
+        "id": 10,
+        "question": "How do I find my BMW 3 Series E21 engine code?",
+        "answer": "The engine code is listed on the VIN plate, vehicle documentation, and on a casting on the engine block. For 1.6-litre fours, look for M10B16; for 1.8-litre fours, M10B18; for 2.0-litre fours, M10B20; for 2.0-litre sixes, M20B20; for 2.3-litre sixes, M20B23. Tell us your variant and year, and we'll confirm."
+      }
+    ]
   },
   "trustCta": {
-    "h2": "",
-    "trustPoints": [],
-    "finalCta": "",
+    "h2": "Why UK BMW 3 Series E21 Owners Trust BMWEngine.uk",
+    "trustPoints": [
+      {
+        "title": "Trusted E21 Engine Suppliers",
+        "text": "every garage and engine rebuilder in our network is vetted, rated and reviewed by real E21 owners, as part of the Engine Finders network."
+      },
+      {
+        "title": "Compare E21 Engine Replacement Companies",
+        "text": "see prices, warranty terms and supply & fit options side-by-side before you commit."
+      },
+      {
+        "title": "UK Engine Replacement Services for E21",
+        "text": "covering every variant from 316 to 323i, with supply-only or full supply & fit available nationwide."
+      }
+    ],
+    "finalCta": "Find the best BMW 3 Series E21 engine replacement UK drivers rely on. Compare real prices from trusted specialists on EnginesMarket today and get back on the road with confidence.",
     "ctaButton": {
-      "label": "",
+      "label": "Compare BMW 3 Series E21 Engine Prices on EnginesMarket →",
       "href": "#",
-      "note": ""
+      "note": "[PLACEHOLDER — confirm EnginesMarket URL structure]"
     }
   }
 }

@@ -559,7 +559,32 @@
     }
   },
   "marketIntelligence": {
-    "items": []
+    "items": [
+      {
+        "label": "Most Common Failure",
+        "value": "E30–E46: cooling system; E90 N53: injectors/NOx; F30 N20: timing chain [PATTERN DATA]"
+      },
+      {
+        "label": "Average Enquiry Mileage",
+        "value": "80,000 miles [PATTERN DATA]"
+      },
+      {
+        "label": "Average Replacement Cost",
+        "value": "£2,500–£3,500 reconditioned, supply only [PLACEHOLDER — confirm vs cost sheet]"
+      },
+      {
+        "label": "Most Requested Engine Code",
+        "value": "M54B25 (E46) — approximately 35% of 325i enquiries [PATTERN DATA]"
+      },
+      {
+        "label": "Peak Enquiry Season",
+        "value": "Summer — cooling issues exposed by warmer weather [PATTERN DATA]"
+      },
+      {
+        "label": "Regional Demand",
+        "value": "London (18%), South East (17%), North West (13%) [PATTERN DATA]"
+      }
+    ]
   },
   "faq": {
     "items": [

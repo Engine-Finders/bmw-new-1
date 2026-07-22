@@ -1,24 +1,292 @@
 {
   "meta": {
     "slug": "x5",
-    "title": "X5 Engines — The Complete UK Guide",
-    "titleCharCount": 34,
-    "description": "",
-    "descriptionCharCount": 0,
+    "title": "BMW X5 Engine Replacement Cost UK — Compare Quotes",
+    "titleCharCount": 50,
+    "description": "Every BMW X5 engine — M54 to S68. 4 generations, real UK costs and reliability data. Compare prices from 20+ vetted BMW specialists today.",
+    "descriptionCharCount": 138,
     "openGraph": {
-      "title": "",
-      "description": "",
-      "type": "",
-      "url": "",
-      "image": "",
-      "siteName": ""
+      "title": "BMW X5 Engine Replacement Cost UK — Compare Quotes",
+      "description": "Every BMW X5 engine — M54 to S68. 4 generations, real UK costs and reliability data. Compare prices from 20+ vetted BMW specialists today.",
+      "type": "website",
+      "url": "https://bmwengine.uk/x5/",
+      "image": "https://bmwengine.uk/images/bmw-x5-hero.jpg",
+      "siteName": "BMWEngines.uk"
     },
     "twitter": {
-      "card": "",
-      "title": "",
-      "description": ""
+      "card": "summary_large_image",
+      "title": "BMW X5 Engine Replacement Cost UK — Compare Quotes",
+      "description": "Every BMW X5 engine — M54 to S68. 4 generations, real UK costs and reliability data. Compare prices from 20+ vetted BMW specialists today."
     },
-    "jsonLd": {}
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://bmwengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "X5",
+              "item": "https://bmwengine.uk/x5/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "BMW X5 Generations",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "BMW X5 E53 (1999–2006)",
+              "url": "https://bmwengine.uk/x5/e53/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "BMW X5 E70 (2007–2013)",
+              "url": "https://bmwengine.uk/x5/e70/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "BMW X5 F15 (2014–2018)",
+              "url": "https://bmwengine.uk/x5/f15/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "BMW X5 G05 (2019–present)",
+              "url": "https://bmwengine.uk/x5/g05/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "BMW X5 Engine Codes",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "M54B30 Engine",
+              "url": "https://bmwengine.uk/engines/m54b30/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "M62B44 Engine",
+              "url": "https://bmwengine.uk/engines/m62b44/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "M62B46 Engine",
+              "url": "https://bmwengine.uk/engines/m62b46/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "N62B44 Engine",
+              "url": "https://bmwengine.uk/engines/n62b44/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 5,
+              "name": "N62B48 Engine",
+              "url": "https://bmwengine.uk/engines/n62b48/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 6,
+              "name": "M57TUD30 Engine",
+              "url": "https://bmwengine.uk/engines/m57tud30/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 7,
+              "name": "N52B30 Engine",
+              "url": "https://bmwengine.uk/engines/n52b30/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 8,
+              "name": "N55B30 Engine",
+              "url": "https://bmwengine.uk/engines/n55b30/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 9,
+              "name": "N63B44 Engine",
+              "url": "https://bmwengine.uk/engines/n63b44/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 10,
+              "name": "N57D30 Engine",
+              "url": "https://bmwengine.uk/engines/n57d30/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 11,
+              "name": "B48B20 Engine",
+              "url": "https://bmwengine.uk/engines/b48b20/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 12,
+              "name": "B58B30 Engine",
+              "url": "https://bmwengine.uk/engines/b58b30/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 13,
+              "name": "B57D30 Engine",
+              "url": "https://bmwengine.uk/engines/b57d30/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 14,
+              "name": "S63B44 Engine",
+              "url": "https://bmwengine.uk/engines/s63b44/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 15,
+              "name": "S68B44 Engine",
+              "url": "https://bmwengine.uk/engines/s68b44/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does a BMW X5 engine replacement cost in the UK?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A reconditioned BMW X5 engine typically costs £2,800–£10,000+ supply only [BMW-QUOTE] — from the B58 at £3,800–£6,000 to the N62 at £4,000–£8,000 and the N63 at £6,000–£10,000+. The S63/S68 costs £9,000–£15,000+. Fitting adds £650–£2,100. Use our calculator for a personalised figure."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which BMW X5 engine is the most reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The B58B30 straight-six in the G05 xDrive40i — widely regarded as one of BMW's most reliable modern engines. The B57D30 diesel is also excellent. The M57TUD30 in the E53 is the classic robust diesel pick."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which BMW X5 engine should I avoid?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No engine outright — but an E70 or late E53 N62B48 or N63B44 without documented valve stem seal replacement or timing chain history is the one purchase we consistently advise against. A G05 B58 or B57 has no such caveat."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I know if my X5 engine needs replacing?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "By engine: blue smoke on startup (N62/N63 valve stem seals), rattling on cold start (N63 timing chain), coolant loss (B58 cooling system), DPF clogging (M57/N57/B57). On the E70 and late E53 V8s, blue smoke on startup is a warning sign. Caught early, it's a repair; ignored, it's a £2,800–£10,000+ engine [BMW-QUOTE]. Use our diagnostic calculator for a personalised assessment."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is it worth replacing a BMW X5 engine?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Depends entirely on generation and engine. Against a £15,000–£25,000 G05, a £3,800–£6,000 B58 recon is 15–40% — ✅ safe. Against a £4,000–£8,000 E70, a £4,000–£10,000+ N62/N63 recon is 50–250% — ⚠️ watch to ❌ walk away. Our 70% BMW threshold is the line: below 70% is safe; above it, run the maths carefully. Use our calculator for your car."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which BMW X5 should I buy?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "2019+ G05 with the B58 xDrive40i — the most dependable X5 ever made, 335–382 hp, the B58 is bulletproof, and the values are holding strong (£15,000–£35,000). For diesel, G05 xDrive30d with B57 — 295+ hp, 40+ mpg. For the budget option, E53 with M57 3.0d or M54 3.0i — the robust classics. Avoid E70 and F15 V8s without documented valve stem seal history."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I find my BMW X5 engine code?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Listed on the VIN plate and in the vehicle documentation; block stamping is visible from below on most engines. Or tell us your generation and variant (E53 3.0d, E70 4.8i, F15 50i, G05 40i) and we'll identify it — 20+ vetted specialists will confirm it for free."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "BMW X5 vs X3 — which is more reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Mechanically they share engines across similar eras — the N52/N55/N63/B58/B57 story is similar. The X5 is larger and heavier, so it works the powertrain harder; the X3 is smaller and lighter. Buy on engine and year, not badge. The X3 offers more value; the X5 offers more space and prestige."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "BMWEngines.uk",
+          "url": "https://bmwengine.uk/",
+          "logo": "https://bmwengine.uk/images/bmwengines-logo.png",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "BMW X5 Engine Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "2800",
+            "highPrice": "10000",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "name": "BMW X5 UK Engine Enquiry Data 2025",
+          "description": "Proprietary UK enquiry volumes and demand trends for BMW X5 engines, sourced from BMWEngines.uk's specialist marketplace activity.",
+          "creator": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk"
+          },
+          "temporalCoverage": "2025",
+          "spatialCoverage": "United Kingdom"
+        },
+        {
+          "@type": "WebPage",
+          "name": "BMW X5 Engine Replacement Cost UK — Compare Quotes",
+          "url": "https://bmwengine.uk/x5/",
+          "author": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk Specialist Network"
+          },
+          "datePublished": "2026-07-07",
+          "dateModified": "2026-07-07"
+        }
+      ]
+    }
   },
   "hero": {
     "tagPill": "BMW X5 • 1999–Present • 4 Generations (E53, E70, F15, G05) • M54, M62, N52, N55, N62, N63, B58, B57, S63, S68",
@@ -135,144 +403,76 @@
       {
         "metric": "Overall Rating",
         "value": "★★★★☆ 3.9/5"
-      },
-      {
-        "metric": "SECTION 4 — GENERATIONS — <GenerationsGrid>",
-        "value": "H2: BMW X5 Generations — Find Your Vehicle"
-      },
-      {
-        "metric": "Sub-headline: Four generations, 25 years, and the car that created the luxury SUV segment. The right X5 depends on which generation and which engine you choose — and whether you're prepared for V8 bills.",
-        "value": "First Generation — E53 (1999–2006)"
-      },
-      {
-        "metric": "BMW X5 E53 🔥 Most Enquired — classic era [BMW-VERIFIED]",
-        "value": "1999–2006 • M54, M62, N62, M57 — E39 5 Series platform"
-      },
-      {
-        "metric": "★★★★☆",
-        "value": "Our Verdict: The original X5 — BMW's first SUV, based on the E39 5 Series platform. The M54 straight-six is one of BMW's most reliable engines; the M57 diesel is a bulletproof classic; the M62 V8 is robust but ageing. The N62 V8 (2004–2006) carries the valve stem seal caveat. Buy the M54 or M57 — the V8s are for the committed."
-      },
-      {
-        "metric": "Explore the E53 →",
-        "value": "Second Generation — E70 (2007–2013)"
-      },
-      {
-        "metric": "BMW X5 E70 🔥 Most Enquired — N62/N63 drives volume [BMW-VERIFIED]",
-        "value": "2007–2013 • N52, N55, N62, N63, M57, N57 — L4 platform"
-      },
-      {
-        "metric": "★★★☆☆",
-        "value": "Our Verdict: The second-generation X5 — bigger, more refined, and available with the N62 V8 and early N63 V8. The N62 4.8i suffers from valve stem seal failure (a £4,000+ repair); the N63 50i carries excessive oil consumption and timing chain issues. The M57 diesel and N52/N55 straight-sixes are the robust picks. Buy the six-cylinder or a diesel — the V8s are the trap."
-      },
-      {
-        "metric": "Explore the E70 →",
-        "value": "Third Generation — F15 (2014–2018)"
-      },
-      {
-        "metric": "BMW X5 F15 🔥 Most Enquired — N55/N63 drives volume [BMW-VERIFIED]",
-        "value": "2014–2018 • N55, N63 (updated), N57, B47 (late) — F-platform"
-      },
-      {
-        "metric": "★★★★☆",
-        "value": "Our Verdict: The third-generation X5 — the N55 six-cylinder is robust; the updated N63 V8 is improved but still carries oil consumption caveats. The N57 diesel is proven; late models received the B47 diesel. The F15 is the X5 for buyers who want a modern SUV without the G05 price tag — buy the N55 or N57."
-      },
-      {
-        "metric": "Explore the F15 →",
-        "value": "Fourth Generation — G05 (2019–present)"
-      },
-      {
-        "metric": "BMW X5 G05 🔥 Most Enquired — B58/B57 drives volume [BMW-VERIFIED]",
-        "value": "2019–present • B58, B57, B48, N63 (updated), S63, S68 — CLAR platform"
-      },
-      {
-        "metric": "★★★★★",
-        "value": "Our Verdict: The fourth-generation X5 — CLAR platform, B-family engines, and the most dependable X5 ever made. The B58 in the xDrive40i is widely regarded as one of BMW's most reliable modern engines. The B57 diesel delivers 295+ hp and 40+ mpg. The S68 V8 in the M60i and X5 M is the most powerful X5 ever — 617–625 hp with 48V mild-hybrid. This is the X5 generation to buy."
-      },
-      {
-        "metric": "Explore the G05 →",
-        "value": "The Generation Divide — The Line That Matters Most"
-      },
-      {
-        "metric": "E53 (1999–2006)",
-        "value": "E70 (2007–2013)"
-      },
-      {
-        "metric": "F15 (2014–2018)",
-        "value": "G05 (2019–present)"
-      },
-      {
-        "metric": "Platform",
-        "value": "E39 5 Series"
-      },
-      {
-        "metric": "L4",
-        "value": "F-platform"
-      },
-      {
-        "metric": "CLAR",
-        "value": "Core petrol"
-      },
-      {
-        "metric": "M54, M62, N62",
-        "value": "N52, N55, N62, N63"
-      },
-      {
-        "metric": "N55, N63",
-        "value": "B48, B58, S63, S68"
-      },
-      {
-        "metric": "Core diesel",
-        "value": "M57"
-      },
-      {
-        "metric": "M57, N57",
-        "value": "N57, B47"
-      },
-      {
-        "metric": "B47, B57",
-        "value": "Core issue"
-      },
-      {
-        "metric": "N62 valve stem seals",
-        "value": "N62/N63 valve stem seals"
-      },
-      {
-        "metric": "N63 oil consumption",
-        "value": "None significant"
-      },
-      {
-        "metric": "Our position",
-        "value": "Buy M54 or M57"
-      },
-      {
-        "metric": "Buy six-cylinder or diesel",
-        "value": "Buy N55 or N57"
-      },
-      {
-        "metric": "Buy with confidence",
-        "value": "Read the full comparison: BMW X5 E70 vs F15 vs G05 →"
-      },
-      {
-        "metric": "The V8 Warning — N62 and N63 Valve Stem Seals",
-        "value": "Correction applied (internal): The N62 V8 (E53 4.8is, E70 4.8i) and early N63 V8 (E70 50i, F15 50i) suffer from premature valve stem seal wear, causing blue smoke on startup and excessive oil consumption. This is a £4,000–£6,000 repair on the N62 and up to £8,000+ on the N63. BMW faced widespread criticism over these issues. The S63 (X5 M) and S68 (G05 M60i/X5 M) are more robust but carry M-car servicing costs."
-      },
-      {
-        "metric": "The Badge Ambiguity — \"40i\" and \"50i\" Mean Different Things",
-        "value": "Correction applied (internal): The \"40i\" badge covers different engines depending on generation. On the E70, the \"40i\" doesn't exist — it was badged as 3.0si/4.8i/50i. On the G05, \"40i\" means the B58B30 — the modern gold standard. The \"50i\" badge covers the N63 in the E70/F15 (high-risk) or the N63 in the G05 (improved but still carries caveats). All share a badge. None share a reliability profile."
       }
     ]
   },
   "generations": {
-    "h2": "",
-    "subHeadline": "",
-    "cards": [],
+    "h2": "BMW X5 Generations — Find Your Vehicle",
+    "subHeadline": "Four generations, 25 years, and the car that created the luxury SUV segment. The right X5 depends on which generation and which engine you choose — and whether you're prepared for V8 bills.",
+    "cards": [
+      {
+        "title": "First Generation — E53 (1999–2006)",
+        "badge": "BMW X5 E53 🔥 Most Enquired — classic era [BMW-VERIFIED]",
+        "meta": "1999–2006 • M54, M62, N62, M57 — E39 5 Series platform",
+        "rating": "★★★★☆",
+        "verdict": "The original X5 — BMW's first SUV, based on the E39 5 Series platform. The M54 straight-six is one of BMW's most reliable engines; the M57 diesel is a bulletproof classic; the M62 V8 is robust but ageing. The N62 V8 (2004–2006) carries the valve stem seal caveat. Buy the M54 or M57 — the V8s are for the committed.",
+        "cta": {
+          "label": "Explore the E53 →",
+          "href": "#"
+        }
+      },
+      {
+        "title": "Second Generation — E70 (2007–2013)",
+        "badge": "BMW X5 E70 🔥 Most Enquired — N62/N63 drives volume [BMW-VERIFIED]",
+        "meta": "2007–2013 • N52, N55, N62, N63, M57, N57 — L4 platform",
+        "rating": "★★★☆☆",
+        "verdict": "The second-generation X5 — bigger, more refined, and available with the N62 V8 and early N63 V8. The N62 4.8i suffers from valve stem seal failure (a £4,000+ repair); the N63 50i carries excessive oil consumption and timing chain issues. The M57 diesel and N52/N55 straight-sixes are the robust picks. Buy the six-cylinder or a diesel — the V8s are the trap.",
+        "cta": {
+          "label": "Explore the E70 →",
+          "href": "#"
+        }
+      },
+      {
+        "title": "Third Generation — F15 (2014–2018)",
+        "badge": "BMW X5 F15 🔥 Most Enquired — N55/N63 drives volume [BMW-VERIFIED]",
+        "meta": "2014–2018 • N55, N63 (updated), N57, B47 (late) — F-platform",
+        "rating": "★★★★☆",
+        "verdict": "The third-generation X5 — the N55 six-cylinder is robust; the updated N63 V8 is improved but still carries oil consumption caveats. The N57 diesel is proven; late models received the B47 diesel. The F15 is the X5 for buyers who want a modern SUV without the G05 price tag — buy the N55 or N57.",
+        "cta": {
+          "label": "Explore the F15 →",
+          "href": "#"
+        }
+      },
+      {
+        "title": "Fourth Generation — G05 (2019–present)",
+        "badge": "BMW X5 G05 🔥 Most Enquired — B58/B57 drives volume [BMW-VERIFIED]",
+        "meta": "2019–present • B58, B57, B48, N63 (updated), S63, S68 — CLAR platform",
+        "rating": "★★★★★",
+        "verdict": "The fourth-generation X5 — CLAR platform, B-family engines, and the most dependable X5 ever made. The B58 in the xDrive40i is widely regarded as one of BMW's most reliable modern engines. The B57 diesel delivers 295+ hp and 40+ mpg. The S68 V8 in the M60i and X5 M is the most powerful X5 ever — 617–625 hp with 48V mild-hybrid. This is the X5 generation to buy.",
+        "cta": {
+          "label": "Explore the G05 →",
+          "href": "#"
+        }
+      },
+      {
+        "title": "The Generation Divide — The Line That Matters Most",
+        "badge": "",
+        "meta": "E53 (1999–2006)",
+        "rating": "",
+        "verdict": "",
+        "cta": {
+          "label": "",
+          "href": "#"
+        }
+      }
+    ],
     "rangeTable": {
       "title": "",
       "columns": [],
       "rows": []
     },
     "comparisonLink": {
-      "label": "",
+      "label": "Read the full comparison: BMW X5 E70 vs F15 vs G05 →",
       "href": "#"
     }
   },

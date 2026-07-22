@@ -367,236 +367,87 @@
       {
         "metric": "Overall Rating",
         "value": "★★★★☆ 4.0/5"
-      },
-      {
-        "metric": "SECTION 4 — GENERATIONS — <GenerationsGrid>",
-        "value": "H2: BMW M3 Generations — Find Your Vehicle"
-      },
-      {
-        "metric": "Sub-headline: Six generations, 40 years, and one nameplate that defined the high-performance saloon. The right M3 depends on your budget, your engine preference, and your tolerance for maintenance.",
-        "value": "First Generation — E30 M3 (1985–1991)"
-      },
-      {
-        "metric": "BMW M3 E30",
-        "value": "1985–1991 • S14B23 2.3L four-cylinder • 195–215 bhp"
-      },
-      {
-        "metric": "★★★★☆",
-        "value": "Our Verdict: The original M3 — the car that started it all. The S14 four-cylinder is a masterpiece of 1980s engineering, revving to 7,500 rpm. Now a six-figure classic where engine work is restoration, not repair. The E30 M3 is the ultimate M3 investment."
-      },
-      {
-        "metric": "Explore the E30 M3 →",
-        "value": "Second Generation — E36 M3 (1992–1999)"
-      },
-      {
-        "metric": "BMW M3 E36",
-        "value": "1992–1999 • S50B30 (Euro) / S52B32 (US) 3.0–3.2L straight-six • 286–321 bhp"
-      },
-      {
-        "metric": "★★★★☆",
-        "value": "Our Verdict: The first M3 with a six-cylinder engine — and a genuine driver's car. The Euro-spec S50 with individual throttle bodies is the one to buy; the US-spec S52 is good but less special. Cooling systems and rear subframe mounts are the caveats."
-      },
-      {
-        "metric": "Explore the E36 M3 →",
-        "value": "Third Generation — E46 M3 (2000–2006)"
-      },
-      {
-        "metric": "BMW M3 E46 🔥 Most Enquired — classic era [BMW-VERIFIED]",
-        "value": "2000–2006 • S54B32 3.2L straight-six • 343 bhp / 269 lb-ft"
-      },
-      {
-        "metric": "★★★★★",
-        "value": "Our Verdict: The M3 at its peak — often called the greatest M3 ever made. The S54 is one of BMW's finest engines, revving to 8,000 rpm with individual throttle bodies. VANOS and rod bearings are the defining caveats; budget for preventative work. A sorted E46 is a six-figure classic."
-      },
-      {
-        "metric": "Explore the E46 M3 →",
-        "value": "Fourth Generation — E90/E92/E93 M3 (2007–2013)"
-      },
-      {
-        "metric": "BMW M3 E90/E92/E93 🔥 Most Enquired — S65 drives volume [BMW-VERIFIED]",
-        "value": "2007–2013 • S65B40 4.0L V8 • 414 bhp / 295 lb-ft"
-      },
-      {
-        "metric": "★★★★☆",
-        "value": "Our Verdict: The only V8 M3 — the S65 is a masterpiece that revs to 8,400 rpm. The rod bearing failure is the defining risk: budget £2,500–£4,000 for preventative replacement before they fail. The E90 saloon is the rarest; the E92 coupé is the most desirable."
-      },
-      {
-        "metric": "Explore the E90 M3 →",
-        "value": "Fifth Generation — F80 M3 (2014–2020)"
-      },
-      {
-        "metric": "BMW M3 F80 🔥 Most Enquired — 405–444 bhp [BMW-VERIFIED]",
-        "value": "2014–2020 • S55B30 3.0L twin-turbo straight-six • 425–444 bhp"
-      },
-      {
-        "metric": "★★★★☆",
-        "value": "Our Verdict: The first turbocharged M3 — and the generation that divides opinion. The S55 is proven and powerful, but the crank hub is the Achilles heel. The Competition (444 bhp) is the sweet spot; the CS (454 bhp) is the ultimate F80. Budget for a crank hub fix (£1,500–£3,000) or buy one that's already been done."
-      },
-      {
-        "metric": "Explore the F80 M3 →",
-        "value": "Sixth Generation — G80 M3 (2020–present)"
-      },
-      {
-        "metric": "BMW M3 G80",
-        "value": "2020–present • S58B30 3.0L twin-turbo straight-six • 473–503 bhp"
-      },
-      {
-        "metric": "★★★★★",
-        "value": "Our Verdict: The sixth-generation M3 — the most powerful and the most reliable. The S58 is widely regarded as BMW's most dependable modern performance engine. Available with a six-speed manual (473 bhp) or automatic (503 bhp). The G80 is the M3 for the modern era — buy it with confidence."
-      },
-      {
-        "metric": "Explore the G80 M3 →",
-        "value": "The Engine Choice — The Line That Matters Most"
-      },
-      {
-        "metric": "E46 (S54)",
-        "value": "E90 (S65)"
-      },
-      {
-        "metric": "F80 (S55)",
-        "value": "G80 (S58)"
-      },
-      {
-        "metric": "Power",
-        "value": "343 bhp"
-      },
-      {
-        "metric": "414 bhp",
-        "value": "425–444 bhp"
-      },
-      {
-        "metric": "473–503 bhp",
-        "value": "Reliability"
-      },
-      {
-        "metric": "★★★★★ (with VANOS/rod bearings done)",
-        "value": "★★★★☆ (with rod bearings done)"
-      },
-      {
-        "metric": "★★★★☆ (with crank hub done)",
-        "value": "★★★★★"
-      },
-      {
-        "metric": "Defining risk",
-        "value": "VANOS / rod bearings"
-      },
-      {
-        "metric": "Rod bearings",
-        "value": "Crank hub"
-      },
-      {
-        "metric": "None significant",
-        "value": "Recon cost"
-      },
-      {
-        "metric": "£5,000–£8,000",
-        "value": "£6,000–£10,000+"
-      },
-      {
-        "metric": "£7,000–£10,000+",
-        "value": "£7,000–£10,000+"
-      },
-      {
-        "metric": "Our position",
-        "value": "The classic keeper"
-      },
-      {
-        "metric": "The V8 masterpiece",
-        "value": "The used sweet spot"
-      },
-      {
-        "metric": "The one to buy if budget allows",
-        "value": "Read the full comparison: BMW M3 F80 vs G80 →"
-      },
-      {
-        "metric": "The Defining Risks — Generation by Generation",
-        "value": "Correction applied (internal): Each M3 generation has its own defining engine risk:"
-      },
-      {
-        "metric": "Generation",
-        "value": "Engine"
-      },
-      {
-        "metric": "Defining Risk",
-        "value": "Prevention Cost"
-      },
-      {
-        "metric": "Recon Cost",
-        "value": "E30"
-      },
-      {
-        "metric": "S14",
-        "value": "Rod bearings, timing chain"
-      },
-      {
-        "metric": "£2,000–£3,000",
-        "value": "£5,000–£8,000+"
-      },
-      {
-        "metric": "E36",
-        "value": "S50/S52"
-      },
-      {
-        "metric": "Cooling system, VANOS",
-        "value": "£1,500–£2,500"
-      },
-      {
-        "metric": "£4,500–£7,000",
-        "value": "E46"
-      },
-      {
-        "metric": "S54",
-        "value": "VANOS, rod bearings"
-      },
-      {
-        "metric": "£2,500–£4,000",
-        "value": "£5,000–£8,000"
-      },
-      {
-        "metric": "E90",
-        "value": "S65"
-      },
-      {
-        "metric": "Rod bearings",
-        "value": "£2,500–£4,000"
-      },
-      {
-        "metric": "£6,000–£10,000+",
-        "value": "F80"
-      },
-      {
-        "metric": "S55",
-        "value": "Crank hub spin"
-      },
-      {
-        "metric": "£1,500–£3,000",
-        "value": "£7,000–£10,000+"
-      },
-      {
-        "metric": "G80",
-        "value": "S58"
-      },
-      {
-        "metric": "None significant",
-        "value": "N/A"
-      },
-      {
-        "metric": "£7,000–£10,000+",
-        "value": "The Badge Ambiguity — \"M3\" Means Different Things"
       }
     ]
   },
   "generations": {
-    "h2": "",
-    "subHeadline": "",
-    "cards": [],
+    "h2": "BMW M3 Generations — Find Your Vehicle",
+    "subHeadline": "Six generations, 40 years, and one nameplate that defined the high-performance saloon. The right M3 depends on your budget, your engine preference, and your tolerance for maintenance.",
+    "cards": [
+      {
+        "title": "First Generation — E30 M3 (1985–1991)",
+        "badge": "",
+        "meta": "1985–1991 • S14B23 2.3L four-cylinder • 195–215 bhp",
+        "rating": "★★★★☆",
+        "verdict": "The original M3 — the car that started it all. The S14 four-cylinder is a masterpiece of 1980s engineering, revving to 7,500 rpm. Now a six-figure classic where engine work is restoration, not repair. The E30 M3 is the ultimate M3 investment.",
+        "cta": {
+          "label": "Explore the E30 M3 →",
+          "href": "#"
+        }
+      },
+      {
+        "title": "Second Generation — E36 M3 (1992–1999)",
+        "badge": "",
+        "meta": "1992–1999 • S50B30 (Euro) / S52B32 (US) 3.0–3.2L straight-six • 286–321 bhp",
+        "rating": "★★★★☆",
+        "verdict": "The first M3 with a six-cylinder engine — and a genuine driver's car. The Euro-spec S50 with individual throttle bodies is the one to buy; the US-spec S52 is good but less special. Cooling systems and rear subframe mounts are the caveats.",
+        "cta": {
+          "label": "Explore the E36 M3 →",
+          "href": "#"
+        }
+      },
+      {
+        "title": "Third Generation — E46 M3 (2000–2006)",
+        "badge": "BMW M3 E46 🔥 Most Enquired — classic era [BMW-VERIFIED]",
+        "meta": "2000–2006 • S54B32 3.2L straight-six • 343 bhp / 269 lb-ft",
+        "rating": "★★★★★",
+        "verdict": "The M3 at its peak — often called the greatest M3 ever made. The S54 is one of BMW's finest engines, revving to 8,000 rpm with individual throttle bodies. VANOS and rod bearings are the defining caveats; budget for preventative work. A sorted E46 is a six-figure classic.",
+        "cta": {
+          "label": "Explore the E46 M3 →",
+          "href": "#"
+        }
+      },
+      {
+        "title": "Fourth Generation — E90/E92/E93 M3 (2007–2013)",
+        "badge": "BMW M3 E90/E92/E93 🔥 Most Enquired — S65 drives volume [BMW-VERIFIED]",
+        "meta": "2007–2013 • S65B40 4.0L V8 • 414 bhp / 295 lb-ft",
+        "rating": "★★★★☆",
+        "verdict": "The only V8 M3 — the S65 is a masterpiece that revs to 8,400 rpm. The rod bearing failure is the defining risk: budget £2,500–£4,000 for preventative replacement before they fail. The E90 saloon is the rarest; the E92 coupé is the most desirable.",
+        "cta": {
+          "label": "Explore the E90 M3 →",
+          "href": "#"
+        }
+      },
+      {
+        "title": "Fifth Generation — F80 M3 (2014–2020)",
+        "badge": "BMW M3 F80 🔥 Most Enquired — 405–444 bhp [BMW-VERIFIED]",
+        "meta": "2014–2020 • S55B30 3.0L twin-turbo straight-six • 425–444 bhp",
+        "rating": "★★★★☆",
+        "verdict": "The first turbocharged M3 — and the generation that divides opinion. The S55 is proven and powerful, but the crank hub is the Achilles heel. The Competition (444 bhp) is the sweet spot; the CS (454 bhp) is the ultimate F80. Budget for a crank hub fix (£1,500–£3,000) or buy one that's already been done.",
+        "cta": {
+          "label": "Explore the F80 M3 →",
+          "href": "#"
+        }
+      },
+      {
+        "title": "Sixth Generation — G80 M3 (2020–present)",
+        "badge": "",
+        "meta": "2020–present • S58B30 3.0L twin-turbo straight-six • 473–503 bhp",
+        "rating": "★★★★★",
+        "verdict": "The sixth-generation M3 — the most powerful and the most reliable. The S58 is widely regarded as BMW's most dependable modern performance engine. Available with a six-speed manual (473 bhp) or automatic (503 bhp). The G80 is the M3 for the modern era — buy it with confidence.",
+        "cta": {
+          "label": "Explore the G80 M3 →",
+          "href": "#"
+        }
+      }
+    ],
     "rangeTable": {
       "title": "",
       "columns": [],
       "rows": []
     },
     "comparisonLink": {
-      "label": "",
+      "label": "Read the full comparison: BMW M3 F80 vs G80 →",
       "href": "#"
     }
   },

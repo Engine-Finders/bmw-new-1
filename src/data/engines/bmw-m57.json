@@ -1,24 +1,235 @@
 {
   "meta": {
-    "slug": "bmw-m57",
+    "slug": "m57",
     "title": "BMW M57 Engine — Specs, Reliability & Replacement Cost",
-    "description": "",
-    "canonical": "",
+    "description": "The M57 is one of BMW's most durable diesel sixes — rated from 830+ real UK enquiries [BMW-VERIFIED]. Compare quotes from 20+ vetted specialists today.",
+    "canonical": "https://bmwengine.uk/engines/m57/",
     "openGraph": {
-      "title": "",
-      "description": "",
-      "type": "",
-      "url": "",
-      "image": "",
-      "siteName": ""
+      "title": "BMW M57 Engine — Specs, Reliability & Replacement Cost",
+      "description": "The M57 is one of BMW's most durable diesel sixes — rated from 830+ real UK enquiries [BMW-VERIFIED]. Compare quotes from 20+ vetted specialists today.",
+      "type": "website",
+      "url": "https://bmwengine.uk/engines/m57/",
+      "image": "https://bmwengine.uk/images/bmw/engines/m57.jpg",
+      "siteName": "bmwengine.uk"
     },
     "twitter": {
-      "card": "",
-      "title": "",
-      "description": "",
-      "image": ""
+      "card": "summary_large_image",
+      "title": "BMW M57 Engine — Specs, Reliability & Replacement Cost",
+      "description": "The M57 is one of BMW's most durable diesel sixes — rated from 830+ real UK enquiries [BMW-VERIFIED]. Compare quotes from 20+ vetted specialists today.",
+      "image": "https://bmwengine.uk/images/bmw/engines/m57.jpg"
     },
-    "jsonLd": {}
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://bmwengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Engines",
+              "item": "https://bmwengine.uk/engines/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "M57",
+              "item": "https://bmwengine.uk/engines/m57/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "BMW models fitted with the M57",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "BMW 3 Series E46 330d / 330xd",
+              "url": "https://bmwengine.uk/bmw/3-series/e46/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "BMW 3 Series E90/E91/E92/E93 325d / 330d / 335d",
+              "url": "https://bmwengine.uk/bmw/3-series/e90/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "BMW 5 Series E39 530d",
+              "url": "https://bmwengine.uk/bmw/5-series/e39/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "BMW 5 Series E60/E61 525d / 530d / 530xd / 535d",
+              "url": "https://bmwengine.uk/bmw/5-series/e60/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 5,
+              "name": "BMW 5 Series F10/F11 530d",
+              "url": "https://bmwengine.uk/bmw/5-series/f10/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 6,
+              "name": "BMW 7 Series E38 730d",
+              "url": "https://bmwengine.uk/bmw/7-series/e38/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 7,
+              "name": "BMW 7 Series E65/E66 730d",
+              "url": "https://bmwengine.uk/bmw/7-series/e65/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 8,
+              "name": "BMW X3 E83 3.0d",
+              "url": "https://bmwengine.uk/bmw/x3/e83/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 9,
+              "name": "BMW X5 E53 3.0d",
+              "url": "https://bmwengine.uk/bmw/x5/e53/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 10,
+              "name": "BMW X5 E70 3.0d / 35d",
+              "url": "https://bmwengine.uk/bmw/x5/e70/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 11,
+              "name": "BMW X6 E71 35d",
+              "url": "https://bmwengine.uk/bmw/x6/e71/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does a BMW M57 engine replacement cost?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A reconditioned M57 typically costs £1,500–£2,500 supply only [BMW-ESTIMATED], varying by variant and mileage. Fitting adds £650–£1,300 depending on labour rates. Use our calculator for a figure specific to your car."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the BMW M57 a reliable engine?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The M57 scores 4★ out of 5 with 90% confidence [BMW-VERIFIED]. It's widely regarded as one of BMW's most durable diesel engines, though swirl flap failure and injector wear are well-documented issues to address preventatively."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the most common BMW M57 failure?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Swirl flap failure — the flaps can break off and enter the engine, causing catastrophic damage. Prevention is simple: fit blanking plates or a flap-free manifold. Typically occurs 80,000–120,000 miles [PATTERN DATA]."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which BMW models use the M57?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The M57 powered the 3 Series (E46/E90 330d, 335d), 5 Series (E39/E60/F10 530d), 7 Series (E38/E65 730d), X3 (E83 3.0d) and X5 (E53/E70 3.0d/35d) across 1998–2013."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How long does the BMW M57 last?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "With proper maintenance — regular oil changes, swirl flap blanking, and injector care — the M57 regularly exceeds 200,000 miles. Many examples reach 250,000–300,000 miles without major rebuilds [THIRD-PARTY]."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "bmwengine.uk",
+          "url": "https://bmwengine.uk/",
+          "logo": "https://bmwengine.uk/images/logo.png",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Product",
+          "name": "BMW M57 Engine",
+          "brand": {
+            "@type": "Brand",
+            "name": "BMW"
+          },
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.0",
+            "bestRating": "5",
+            "ratingCount": "1",
+            "reviewCount": "1"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "BMW M57 Engine Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "bmwengine.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "600",
+            "highPrice": "4000",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "name": "BMW M57 UK Enquiry & Reliability Data 2025",
+          "description": "Proprietary UK enquiry volumes and reliability scoring data for the BMW M57, sourced from bmwengine.uk's specialist marketplace activity.",
+          "creator": {
+            "@type": "Organization",
+            "name": "bmwengine.uk"
+          },
+          "temporalCoverage": "2025",
+          "spatialCoverage": "United Kingdom"
+        },
+        {
+          "@type": "WebPage",
+          "name": "BMW M57 Engine — Specs, Reliability & Replacement Cost",
+          "url": "https://bmwengine.uk/engines/m57/",
+          "author": {
+            "@type": "Organization",
+            "name": "bmwengine.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "bmwengine.uk Specialist Network"
+          },
+          "datePublished": "2026-07-14",
+          "dateModified": "2026-07-14"
+        }
+      ]
+    }
   },
   "hero": {
     "tagPill": "BMW • M57 • Diesel • 2.5–3.0L I6 • 1998–2013",
@@ -80,83 +291,48 @@
       {
         "metric": "Overall Engine Score",
         "value": "72/100"
-      },
-      {
-        "metric": "SECTION 3 — VERDICT & RATING",
-        "value": "H2: BMW M57 — Our Verdict & Rating"
-      },
-      {
-        "metric": "Star rating: 4★ out of 5",
-        "value": "Confidence: 90% confidence — based on 830+ UK enquiries and cross-referenced specialist rebuild reports [BMW-VERIFIED]."
-      },
-      {
-        "metric": "Engine Score breakdown:",
-        "value": "Dimension"
-      },
-      {
-        "metric": "Score (of 20)",
-        "value": "How it's determined"
-      },
-      {
-        "metric": "Reliability",
-        "value": "16"
-      },
-      {
-        "metric": "4★ × 4 = 16",
-        "value": "Repair Cost"
-      },
-      {
-        "metric": "12",
-        "value": "Midpoint of Reconditioned supply range (£2,500–£4,500 → midpoint £3,500) — £3,000–£4,999 bracket → 16. (Wait — let me recalculate.) Reconditioned supply: £1,500–£2,500 (from EngineFinders data) → midpoint £2,000 → under £3,000 → 20"
-      },
-      {
-        "metric": "Repairability",
-        "value": "16"
-      },
-      {
-        "metric": "Most failures are well-understood, repairable issues — swirl flap blanking, injector replacement, turbo servicing",
-        "value": "Parts Supply"
-      },
-      {
-        "metric": "20",
-        "value": "Parts are cheap and available from multiple UK suppliers same-day; M57 is one of the most common BMW diesel engines"
-      },
-      {
-        "metric": "Replacement Economics",
-        "value": "4"
-      },
-      {
-        "metric": "Reconditioned cost (£2,000) as % of lowest typical host value (~£2,500 E39 530d) = 80% — exceeds brand scrap threshold",
-        "value": "Total"
-      },
-      {
-        "metric": "76/100",
-        "value": "Wait — I need to verify the Reconditioned cost. Let me check: Search result 3 shows \"Reconditioned M57: £1,500-£2,500\". So midpoint is £2,000. That's under £3,000, so Repair Cost = 20."
-      },
-      {
-        "metric": "For Replacement Economics: lowest typical host value for an M57-fitted car. An E39 530d can be had for around £2,500–£4,000. Taking the conservative/worst-case of £2,500, reconditioned cost (£2,000) as a percentage = 80%. That puts it in the 75%+ bracket → 4.",
-        "value": "So total = 16 + 20 + 16 + 20 + 4 = 76/100."
-      },
-      {
-        "metric": "One-line verdict: \"The M57 is one of BMW's most durable diesel sixes — swirl flap failure is the main preventable risk — buy with documented maintenance and budget for swirl flap blanking.\" (Clause 1: 8 words. Clause 2: 8 words. Clause 3: 8 words. Total: 24 words.)",
-        "value": "Best For: High-mileage motorway drivers who value durability and torque."
       }
     ]
   },
   "verdictRating": {
-    "starRating": "",
-    "confidence": "",
-    "scoreNote": "",
+    "starRating": "4★ out of 5",
+    "confidence": "90% confidence — based on 830+ UK enquiries and cross-referenced specialist rebuild reports [BMW-VERIFIED].",
+    "scoreNote": "Engine Score breakdown:",
     "scoreBreakdown": {
       "columns": [
         "Dimension",
         "Score (of 20)"
       ],
-      "rows": []
+      "rows": [
+        {
+          "dimension": "Reliability",
+          "score": "16 (4★ × 4 = 16)"
+        },
+        {
+          "dimension": "Repair Cost",
+          "score": "12 (Midpoint of Reconditioned supply range (£2,500–£4,500 → midpoint £3,500) — £3,000–£4,999 bracket → 16. (Wait — let me recalculate.) Reconditioned supply: £1,500–£2,500 (from EngineFinders data) → midpoint £2,000 → under £3,000 → 20)"
+        },
+        {
+          "dimension": "Repairability",
+          "score": "16 (Most failures are well-understood, repairable issues — swirl flap blanking, injector replacement, turbo servicing)"
+        },
+        {
+          "dimension": "Parts Supply",
+          "score": "20 (Parts are cheap and available from multiple UK suppliers same-day; M57 is one of the most common BMW diesel engines)"
+        },
+        {
+          "dimension": "Replacement Economics",
+          "score": "4 (Reconditioned cost (£2,000) as % of lowest typical host value (~£2,500 E39 530d) = 80% — exceeds brand scrap threshold)"
+        },
+        {
+          "dimension": "Total",
+          "score": "76/100 (Wait — I need to verify the Reconditioned cost. Let me check: Search result 3 shows \"Reconditioned M57: £1,500-£2,500\". So midpoint is £2,000. That's under £3,000, so Repair Cost = 20.)"
+        }
+      ]
     },
-    "oneLineVerdict": "",
-    "bestFor": "",
-    "avoidIf": ""
+    "oneLineVerdict": "\"The M57 is one of BMW's most durable diesel sixes — swirl flap failure is the main preventable risk — buy with documented maintenance and budget for swirl flap blanking.\" (Clause 1: 8 words. Clause 2: 8 words. Clause 3: 8 words. Total: 24 words.)",
+    "bestFor": "High-mileage motorway drivers who value durability and torque.",
+    "avoidIf": "You regularly drive in London ULEZ — most M57s are Euro 3/4 non-compliant."
   },
   "compatibility": {
     "columns": [

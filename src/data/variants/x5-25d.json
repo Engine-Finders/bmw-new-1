@@ -493,11 +493,82 @@
     }
   },
   "marketIntelligence": {
-    "items": []
+    "items": [
+      {
+        "label": "Most Common Failure",
+        "value": "N47: timing chain wear / B47: DPF clogging — the defining risks of each generation"
+      },
+      {
+        "label": "Average Enquiry Mileage",
+        "value": "N47: 70,000–100,000 miles / B47: 40,000–70,000 miles【PATTERN DATA】"
+      },
+      {
+        "label": "Average Replacement Cost",
+        "value": "£1,500–£5,500 reconditioned, supply only depending on generation【BMW-QUOTE】"
+      },
+      {
+        "label": "Most Requested Engine Code",
+        "value": "N47D20 — the early F15 xDrive25d【PATTERN DATA】"
+      },
+      {
+        "label": "Peak Enquiry Season",
+        "value": "Winter — cold starts expose timing chain issues【PATTERN DATA】"
+      },
+      {
+        "label": "Regional Demand",
+        "value": "London (20%), South East (18%), North West (12%)【PATTERN DATA】"
+      }
+    ]
   },
   "faq": {
-    "items": [],
-    "disclaimer": ""
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a BMW X5 xDrive25d engine replacement cost in the UK?",
+        "answer": "A reconditioned X5 xDrive25d engine typically costs £1,500–£5,500 supply only depending on which generation (N47 or B47), with used units available from £1,000–£2,500. Fitting adds £1,500–£2,500. Use our calculator for a figure specific to your car."
+      },
+      {
+        "id": 2,
+        "question": "Is the BMW X5 xDrive25d engine reliable?",
+        "answer": "It depends entirely on which generation. The N47 (2013–2015) has a well-documented timing chain weakness — the rear-mounted chain is labour-intensive to replace. The B47 (2015+) moved the chain to the front and is significantly more reliable. Both engines can suffer from DPF clogging and oil dilution. Check the Era Map above for your specific car."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the BMW X5 xDrive25d?",
+        "answer": "N47: timing chain wear (rear-mounted design), DPF clogging, oil dilution from DPF regeneration. B47: DPF clogging, oil dilution, occasional turbocharger wear. The B47 is significantly more reliable than the N47."
+      },
+      {
+        "id": 4,
+        "question": "Is it worth replacing a BMW X5 xDrive25d engine, or should I scrap the car?",
+        "answer": "Depends on vehicle value and generation. Against a well-kept G05 X5 xDrive25d worth £25,000–£40,000+, a £2,500–£5,500 recon is only 10–20% — well within the 70% BMW threshold. Against a tired F15 X5 with an N47 worth £6,000–£12,000, a £1,500–£3,500 recon is 30–50% — borderline, so evaluate carefully."
+      },
+      {
+        "id": 5,
+        "question": "How do I find my BMW X5 xDrive25d engine code?",
+        "answer": "Listed on the VIN plate and vehicle documentation. F15 X5 (2013–2015) uses N47D20; F15 X5 (2015–2018) uses B47D20; G05 X5 (2018+) uses B47D20B. Tell us your registration date and we'll confirm it for free."
+      },
+      {
+        "id": 6,
+        "question": "Can I repair the N47 timing chain, or does it need replacement?",
+        "answer": "It needs replacement — the chain stretches and guides wear. Replacement costs £1,000–£2,500 and is labour-intensive due to the rear-mounted chain location. A preventative replacement is far cheaper than a full engine replacement (£1,500+). At the first sign of cold-start rattle on an N47, book an inspection immediately."
+      },
+      {
+        "id": 1,
+        "question": "Integrating it into a CMS or automated publishing pipeline.",
+        "answer": ""
+      },
+      {
+        "id": 2,
+        "question": "Reviewing or editing the commercial/schema parts without re-reading all the engine details.",
+        "answer": ""
+      },
+      {
+        "id": 3,
+        "question": "Ensuring the schema and meta data match exactly the engine facts established in Part 1.",
+        "answer": "I need to make sure Part 2 stands alone but references Part 1 correctly. The prompt rules say Part 2 must use the Era Map and Step 0 results from Part 1. I have all that info from my previous response. Looking at my previous full response, I need to extract the exact Section 9, Meta tags, OG/Twitter cards, the JSON-LD schema, and the Production Note. The CTA mode is Assertive (since priority is Medium), so the trust points and button text should reflect that. The price range in the Service schema must span the full Era Map: from £1,000 (used N47) to £6,500 (rebuilt B47D20B). I need to ensure the schema engine codes match the Era Map exactly: N47D20, B47D20, B47D20B. The canonical URL is https://bmwengine.uk/x5/25d/ based on the proposed URL pattern. The user's deep-seated need might also be to avoid errors in the technical SEO part—schema errors can hurt rankings. They trust the system to generate this correctly every time. My response should mirror the format I used for the X3 18d Part 2, keeping consistency. I'll also append the completion marker. The user likely wants to copy this directly into their system."
+      }
+    ],
+    "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty — always confirm terms with your chosen supplier."
   },
   "trustCta": {
     "h2": "",

@@ -476,7 +476,32 @@
     }
   },
   "marketIntelligence": {
-    "items": []
+    "items": [
+      {
+        "label": "Most Common Failure",
+        "value": "EGR cooler failure (subject to recall) — the most frequently reported B47 issue"
+      },
+      {
+        "label": "Average Enquiry Mileage",
+        "value": "45,000–65,000 miles [PATTERN DATA]"
+      },
+      {
+        "label": "Average Replacement Cost",
+        "value": "£5,000 reconditioned, supply only [PLACEHOLDER — confirm vs cost sheet]"
+      },
+      {
+        "label": "Most Requested Engine Code",
+        "value": "B47C20B / B47C20T0 [PATTERN DATA]"
+      },
+      {
+        "label": "Peak Enquiry Season",
+        "value": "Autumn/Winter — cold starts expose timing chain and EGR issues"
+      },
+      {
+        "label": "Regional Demand",
+        "value": "South East (18%), London (16%), North West (12%) [PATTERN DATA]"
+      }
+    ]
   },
   "faq": {
     "items": [

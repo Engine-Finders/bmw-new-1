@@ -1,24 +1,202 @@
 {
   "meta": {
     "slug": "xm",
-    "title": "XM Engines — The Complete UK Guide",
-    "titleCharCount": 34,
-    "description": "",
-    "descriptionCharCount": 0,
+    "title": "BMW XM Engine Replacement Cost UK — Compare Quotes",
+    "titleCharCount": 50,
+    "description": "Every BMW XM engine — S68 V8 to B58 straight-six. 1 generation, real UK costs and reliability data. Compare prices from 20+ vetted BMW specialists today.",
+    "descriptionCharCount": 153,
     "openGraph": {
-      "title": "",
-      "description": "",
-      "type": "",
-      "url": "",
-      "image": "",
-      "siteName": ""
+      "title": "BMW XM Engine Replacement Cost UK — Compare Quotes",
+      "description": "Every BMW XM engine — S68 V8 to B58 straight-six. 1 generation, real UK costs and reliability data. Compare prices from 20+ vetted BMW specialists today.",
+      "type": "website",
+      "url": "https://bmwengine.uk/xm/",
+      "image": "https://bmwengine.uk/images/bmw-xm-hero.jpg",
+      "siteName": "BMWEngines.uk"
     },
     "twitter": {
-      "card": "",
-      "title": "",
-      "description": ""
+      "card": "summary_large_image",
+      "title": "BMW XM Engine Replacement Cost UK — Compare Quotes",
+      "description": "Every BMW XM engine — S68 V8 to B58 straight-six. 1 generation, real UK costs and reliability data. Compare prices from 20+ vetted BMW specialists today."
     },
-    "jsonLd": {}
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://bmwengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "XM",
+              "item": "https://bmwengine.uk/xm/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "BMW XM Powertrains",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "BMW XM Label (S68 V8 PHEV)",
+              "url": "https://bmwengine.uk/xm/label/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "BMW XM 50e (B58 Straight-Six PHEV)",
+              "url": "https://bmwengine.uk/xm/50e/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "BMW XM Engine Codes",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "S68B44A Engine",
+              "url": "https://bmwengine.uk/engines/s68b44a/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "B58B30 Engine (50e)",
+              "url": "https://bmwengine.uk/engines/b58b30/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does a BMW XM engine replacement cost in the UK?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A reconditioned BMW XM engine typically costs £3,800–£15,000+ supply only [BMW-QUOTE] — from the B58-based 50e at £3,800–£6,000 to the S68 V8 Label at £9,000–£15,000+. Fitting adds £650–£2,100. PHEV battery replacement costs an additional £5,000–£10,000+. Use our calculator for a personalised figure."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which BMW XM engine is the most reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The B58B30-based 50e — the straight-six PHEV is the most dependable XM powertrain. The B58 is widely regarded as one of BMW's most reliable modern engines. The S68B44A is proving robust but carries hot-vee V8 caveats."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which BMW XM engine should I avoid?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No engine outright — but an S68-powered Label without documented cooling system history, turbo inspections, or comprehensive warranty is the one purchase we consistently advise against. The 50e with B58 has no such caveat."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I know if my XM engine needs replacing?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "By engine: coolant loss (S68 cooling system), reduced power (turbo heat soak on S68), oil consumption (S68), coolant loss (B58 cooling system), reduced electric range (PHEV battery). On the S68, any coolant loss is a warning sign. Caught early, it's a repair; ignored, it's a £3,800–£15,000+ engine [BMW-QUOTE]. Use our diagnostic calculator for a personalised assessment."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is it worth replacing a BMW XM engine?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes — the XM's values are strong enough to justify engine work. Against a £100,000–£155,000+ XM Label, a £9,000–£15,000+ S68 recon is 6–15% — ✅ safe. Against a £113,000+ 50e, a £3,800–£6,000 B58 recon is 3–5% — ✅ safe. Our 70% BMW threshold is the line: below 70% is safe. Use our calculator for your car."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which BMW XM should I buy?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "XM 50e with the B58-based straight-six PHEV — 476 hp, 52 miles of electric range, the most dependable XM powertrain, and £40,000 cheaper than the Label (£113,000 vs £154,000+). For the ultimate M experience, XM Label with the S68 — 748 hp, 3.8 seconds to 62 mph, and the most powerful BMW M production model ever — but budget for cooling system inspections and the best warranty you can find."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I find my BMW XM engine code?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Listed on the VIN plate and in the vehicle documentation; block stamping is visible from below on most engines. Or tell us your variant (XM 50e, XM Label) and we'll identify it — 20+ vetted specialists will confirm it for free."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "BMW XM vs X5 M — which is more reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Mechanically they share the S68 engine (in the XM Label and X5 M60i). The XM Label is heavier and more complex with its PHEV system, so it works the powertrain harder. The X5 M is more established and proven. Buy on engine and year, not badge. The X5 M offers more value; the XM offers more presence and exclusivity."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "BMWEngines.uk",
+          "url": "https://bmwengine.uk/",
+          "logo": "https://bmwengine.uk/images/bmwengines-logo.png",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "BMW XM Engine Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "3800",
+            "highPrice": "15000",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "name": "BMW XM UK Engine Enquiry Data 2025",
+          "description": "Proprietary UK enquiry volumes and demand trends for BMW XM engines, sourced from BMWEngines.uk's specialist marketplace activity.",
+          "creator": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk"
+          },
+          "temporalCoverage": "2025",
+          "spatialCoverage": "United Kingdom"
+        },
+        {
+          "@type": "WebPage",
+          "name": "BMW XM Engine Replacement Cost UK — Compare Quotes",
+          "url": "https://bmwengine.uk/xm/",
+          "author": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk Specialist Network"
+          },
+          "datePublished": "2026-07-07",
+          "dateModified": "2026-07-07"
+        }
+      ]
+    }
   },
   "hero": {
     "tagPill": "BMW XM • 2022–Present • 1 Generation (G09) • S68 V8 PHEV, B58-based 50e PHEV",
@@ -135,92 +313,32 @@
       {
         "metric": "Overall Rating",
         "value": "★★★★☆ 4.0/5"
-      },
-      {
-        "metric": "SECTION 4 — GENERATIONS — <GenerationsGrid>",
-        "value": "H2: BMW XM — One Generation, Two Powertrains"
-      },
-      {
-        "metric": "Sub-headline: Every XM is a G09 — but the Label and the 50e are very different ownership propositions. The V8 is for the committed; the straight-six is for the sensible.",
-        "value": "BMW XM G09 🔥 Most Enquired — flagship M car [BMW-VERIFIED]"
-      },
-      {
-        "metric": "2022–present • S68B44 V8 PHEV (Label), B58-based 50e PHEV — CLAR platform",
-        "value": "★★★★☆"
-      },
-      {
-        "metric": "Our Verdict: BMW M's first standalone model — a 2.7-tonne plug-in hybrid SUV that defies physics. The S68 V8 in the Label produces 748 hp — the most powerful BMW M production model ever. The 50e with the B58-based straight-six produces 476 hp and is the sensible choice. Buy the 50e for reliability; buy the Label for the ultimate M experience.",
-        "value": "Explore the G09 →"
-      },
-      {
-        "metric": "The Powertrain Choice — The Line That Matters Most",
-        "value": "XM 50e"
-      },
-      {
-        "metric": "XM Label",
-        "value": "Engine"
-      },
-      {
-        "metric": "B58-based 3.0L straight-six PHEV",
-        "value": "S68 4.4L V8 PHEV"
-      },
-      {
-        "metric": "Power",
-        "value": "476 hp (system)"
-      },
-      {
-        "metric": "748 hp (system)",
-        "value": "0-62 mph"
-      },
-      {
-        "metric": "5.1 seconds",
-        "value": "3.8 seconds"
-      },
-      {
-        "metric": "Electric range",
-        "value": "Up to 52 miles"
-      },
-      {
-        "metric": "Up to 51 miles",
-        "value": "Reliability"
-      },
-      {
-        "metric": "★★★★★",
-        "value": "★★★★☆"
-      },
-      {
-        "metric": "Recon cost",
-        "value": "£3,800–£6,000"
-      },
-      {
-        "metric": "£9,000–£15,000+",
-        "value": "Our position"
-      },
-      {
-        "metric": "The sensible choice",
-        "value": "The ultimate M experience"
-      },
-      {
-        "metric": "Read the full comparison: BMW XM 50e vs Label →",
-        "value": "The S68 Engine — The Heart of the XM Label"
-      },
-      {
-        "metric": "Correction applied (internal): The XM Label is powered by the S68 engine — a 4.4-litre twin-turbo V8 that is part of BMW's new modular engine family. The engine shares its architecture with the S63 but benefits from significant revisions. In the Label, the S68 produces 748 hp and 1,000 Nm of torque — the most powerful BMW M production model ever. The S68 also serves the X7 M60i, X5 M60i, and the latest M5.",
-        "value": "Correction applied (internal): The XM 50e uses a B58-based 3.0-litre straight-six plug-in hybrid producing 476 hp and 700 Nm of torque. This is the same engine family as the B58 in the G29 Z4 and G20 3 Series — one of BMW's most reliable modern engines."
       }
     ]
   },
   "generations": {
-    "h2": "",
-    "subHeadline": "",
-    "cards": [],
+    "h2": "BMW XM — One Generation, Two Powertrains",
+    "subHeadline": "Every XM is a G09 — but the Label and the 50e are very different ownership propositions. The V8 is for the committed; the straight-six is for the sensible.",
+    "cards": [
+      {
+        "title": "BMW XM G09",
+        "badge": "🔥 Most Enquired — flagship M car [BMW-VERIFIED]",
+        "meta": "2022–present • S68B44 V8 PHEV (Label), B58-based 50e PHEV — CLAR platform",
+        "rating": "★★★★☆",
+        "verdict": "BMW M's first standalone model — a 2.7-tonne plug-in hybrid SUV that defies physics. The S68 V8 in the Label produces 748 hp — the most powerful BMW M production model ever. The 50e with the B58-based straight-six produces 476 hp and is the sensible choice. Buy the 50e for reliability; buy the Label for the ultimate M experience.",
+        "cta": {
+          "label": "Explore the G09 →",
+          "href": "#"
+        }
+      }
+    ],
     "rangeTable": {
       "title": "",
       "columns": [],
       "rows": []
     },
     "comparisonLink": {
-      "label": "",
+      "label": "Read the full comparison: BMW XM 50e vs Label →",
       "href": "#"
     }
   },

@@ -1,24 +1,250 @@
 {
   "meta": {
     "slug": "1-series",
-    "title": "1 Series Engines — The Complete UK Guide",
-    "titleCharCount": 40,
-    "description": "",
-    "descriptionCharCount": 0,
+    "title": "BMW 1 Series Engine Replacement Cost UK — Compare Quotes",
+    "titleCharCount": 58,
+    "description": "Every BMW 1 Series engine — N47 to B58. 3 generations, real UK costs and reliability data. Compare prices from 20+ vetted BMW specialists today.",
+    "descriptionCharCount": 157,
     "openGraph": {
-      "title": "",
-      "description": "",
-      "type": "",
-      "url": "",
-      "image": "",
-      "siteName": ""
+      "title": "BMW 1 Series Engine Replacement Cost UK — Compare Quotes",
+      "description": "Every BMW 1 Series engine — N47 to B58. 3 generations, real UK costs and reliability data. Compare prices from 20+ vetted BMW specialists today.",
+      "type": "website",
+      "url": "https://bmwengine.uk/1-series/",
+      "image": "https://bmwengine.uk/images/bmw-1-series-hero.jpg",
+      "siteName": "BMWEngines.uk"
     },
     "twitter": {
-      "card": "",
-      "title": "",
-      "description": ""
+      "card": "summary_large_image",
+      "title": "BMW 1 Series Engine Replacement Cost UK — Compare Quotes",
+      "description": "Every BMW 1 Series engine — N47 to B58. 3 generations, real UK costs and reliability data. Compare prices from 20+ vetted BMW specialists today."
     },
-    "jsonLd": {}
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://bmwengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "1 Series",
+              "item": "https://bmwengine.uk/1-series/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "BMW 1 Series Generations",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "BMW 1 Series E87",
+              "url": "https://bmwengine.uk/1-series/e87/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "BMW 1 Series F20",
+              "url": "https://bmwengine.uk/1-series/f20/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "BMW 1 Series F40",
+              "url": "https://bmwengine.uk/1-series/f40/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "BMW 1 Series Engine Codes",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "N45B16 Engine",
+              "url": "https://bmwengine.uk/engines/n45b16/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "N46B18 Engine",
+              "url": "https://bmwengine.uk/engines/n46b18/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "N52B25 Engine",
+              "url": "https://bmwengine.uk/engines/n52b25/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "N54B30 Engine",
+              "url": "https://bmwengine.uk/engines/n54b30/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 5,
+              "name": "N55B30 Engine",
+              "url": "https://bmwengine.uk/engines/n55b30/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 6,
+              "name": "B48B20 Engine",
+              "url": "https://bmwengine.uk/engines/b48b20/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 7,
+              "name": "B58B30 Engine",
+              "url": "https://bmwengine.uk/engines/b58b30/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 8,
+              "name": "N47D20C Engine",
+              "url": "https://bmwengine.uk/engines/n47d20c/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 9,
+              "name": "B47D20A Engine",
+              "url": "https://bmwengine.uk/engines/b47d20a/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does a BMW 1 Series engine replacement cost in the UK?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A reconditioned BMW 1 Series engine typically costs £2,800–£5,500 supply only [BMW-QUOTE], with the volume N47D20C diesel at £3,200–£5,500 and the B58B30 petrol at £3,800–£6,000. Fitting adds £650–£1,500. Use our calculator for a personalised figure."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which BMW 1 Series engine is the most reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The B48B20 petrol and post-2016 B47D20A diesel. The 2016 F20 LCI's revised chain hardware materially changed the diesel's reliability profile; the B48's direct-injection architecture is the most refined four-cylinder BMW has made."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which BMW 1 Series engine should I avoid?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No engine outright — but a pre-2016 N47D20C without a documented timing-chain replacement is the one purchase we consistently advise against. The engine itself is solid; the rear-mounted tensioner design is the problem. A 2016+ B47 or any B58 has no such caveat."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I know if my N47 timing chain is worn?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Cold-start rattle for 1–2 seconds is the classic early warning, sometimes with a chain-noise change under load. On the N54 135i, look for long cranking and HPFP failure. On the B58, coolant loss from the expansion tank is the early signal. Caught early, it's a repair; ignored, it's a £3,200–£5,500 engine [BMW-QUOTE]. Use our diagnostic calculator for a personalised assessment."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is it worth replacing a BMW 1 Series engine?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Depends entirely on generation. Against a £22,000 F40, a £5,000 B58 recon is just 23% of the car's value — ✅ safe. Against a £3,500 E87, a £4,000 N47 recon is 114% — ❌ walk away. Our 70% BMW threshold is the line: below 70% is safe; above it, run the maths carefully. Use our calculator for your car."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which BMW 1 Series generation should I buy?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "2016+ F20 LCI with the B47 diesel or B48 petrol. You get the facelift architecture, the revised chain hardware, and the electronics update — plus the M140i with the B58 is a future classic that still depreciates. For the safest entry, an F40 118i with B48 is the most dependable 1 Series ever made."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I find my BMW 1 Series engine code?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Listed on the VIN plate and in the vehicle documentation; block stamping is visible from below on most N47/B47 units, and on the cylinder head on N52/B58 engines. Or tell us your model year and variant (118d, 120i, M135i) and we'll identify it — 20+ vetted specialists will confirm it for free."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "BMW 1 Series vs 3 Series — which is more reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Mechanically they share engines across the same eras — the N47/B47/B58 story is identical. The 1 Series is lighter, so it works the powertrain less hard; the 3 Series adds weight but benefits from the same engineering. Buy on engine and year, not badge."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "BMWEngines.uk",
+          "url": "https://bmwengine.uk/",
+          "logo": "https://bmwengine.uk/images/bmwengines-logo.png",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "BMW 1 Series Engine Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "2800",
+            "highPrice": "5500",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "name": "BMW 1 Series UK Engine Enquiry Data 2025",
+          "description": "Proprietary UK enquiry volumes and demand trends for BMW 1 Series engines, sourced from BMWEngines.uk's specialist marketplace activity.",
+          "creator": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk"
+          },
+          "temporalCoverage": "2025",
+          "spatialCoverage": "United Kingdom"
+        },
+        {
+          "@type": "WebPage",
+          "name": "BMW 1 Series Engine Replacement Cost UK — Compare Quotes",
+          "url": "https://bmwengine.uk/1-series/",
+          "author": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk Specialist Network"
+          },
+          "datePublished": "2026-07-06",
+          "dateModified": "2026-07-06"
+        }
+      ]
+    }
   },
   "hero": {
     "tagPill": "BMW 1 Series • 2004–Present • 3 Generations (E81/E87, F20, F40) • N47, B47, N52, B48",

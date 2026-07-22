@@ -1,26 +1,188 @@
 {
   "meta": {
-    "slug": "bmw-z4-m40i",
-    "title": "BMW Z4 M40i Engine Replacement — Compare Prices & Get Quotes",
-    "titleCharCount": 60,
-    "description": "",
-    "descriptionCharCount": 0,
-    "canonical": "",
+    "slug": "z4-m40i",
+    "title": "Z4 M40i Engine Replacement Cost UK — Compare Quotes",
+    "titleCharCount": 57,
+    "description": "The 340–382bhp B58 turbo six — real UK costs, common cooling and PCV issues, and honest reliability data. Get free quotes from 20+ vetted BMW specialists today.",
+    "descriptionCharCount": 160,
+    "canonical": "https://bmwengine.uk/z4/m40i/",
     "openGraph": {
-      "title": "",
-      "description": "",
-      "type": "",
-      "url": "",
-      "image": "",
-      "siteName": ""
+      "title": "Z4 M40i Engine Replacement Cost UK — Compare Quotes",
+      "description": "The 340–382bhp B58 turbo six — real UK costs, common cooling and PCV issues, and honest reliability data. Get free quotes from 20+ vetted BMW specialists today.",
+      "type": "website",
+      "url": "https://bmwengine.uk/z4/m40i/",
+      "image": "https://bmwengine.uk/images/bmw/hero/z4-m40i.jpg",
+      "siteName": "BMWEngines.uk"
     },
     "twitter": {
-      "card": "",
-      "title": "",
-      "description": "",
-      "image": ""
+      "card": "summary_large_image",
+      "title": "Z4 M40i Engine Replacement Cost UK — Compare Quotes",
+      "description": "The 340–382bhp B58 turbo six — real UK costs, common cooling and PCV issues, and honest reliability data.",
+      "image": "https://bmwengine.uk/images/bmw/hero/z4-m40i.jpg"
     },
-    "jsonLd": {}
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://bmwengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Z4",
+              "item": "https://bmwengine.uk/z4/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "M40i",
+              "item": "https://bmwengine.uk/z4/m40i/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "BMW Z4 M40i Engine Era Map",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "G29 Z4 M40i (B58B30, 2019–2022)",
+              "url": "https://bmwengine.uk/z4/m40i/#pre-2023"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "G29 Z4 M40i (B58B30, 2023–present)",
+              "url": "https://bmwengine.uk/z4/m40i/#2023"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "BMW Z4 M40i Engine Codes",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "B58B30 3.0L Turbo Inline-Six",
+              "url": "https://bmwengine.uk/engines/b58b30/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does a BMW Z4 M40i engine replacement cost in the UK?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A reconditioned BMW Z4 M40i engine (B58B30) typically costs £5,500–£8,500 supply only, varying by generation: 2019–2022 £5,000–£8,500, 2023+ £5,500–£9,000. Fitting adds £1,200–£1,700. A water pump replacement costs £400–£1,000."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the BMW Z4 M40i reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes — the B58 is widely regarded as one of BMW's most robust modern engines. It's a significant step forward from the N55. The closed-deck design and front-mounted timing chain eliminated the N55's major weaknesses. Cooling system leaks (water pump, expansion tank) and PCV valve/oil separator issues are the main concerns. Regular oil changes (8,000–10,000 miles) are essential. The 2023+ 48V MHEV adds complexity but has proven reliable."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What are the common problems with the BMW Z4 M40i?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Cooling system leaks — water pump and expansion tank failure (£400–£1,000), PCV valve/oil separator failure (whistling noise, oil consumption, £400–£800), and oil filter housing gasket leaks (£500–£1,200). The B58 is otherwise exceptionally robust. 2023+ models may have 48V MHEV system issues (£800–£2,500)."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is it worth replacing a BMW Z4 M40i engine, or should I scrap the car?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Z4 M40i values range from £25,000–£55,000 depending on year, condition and mileage. A £5,500–£8,500 reconditioned engine represents 10–35% of vehicle value — well within our 70% BMW scrap threshold. For most examples, replacement is financially viable."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I find my BMW Z4 M40i engine code?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The M40i uses the B58B30 engine code — BMW's 3.0-litre turbocharged inline-six. 2019–2022 models produce 340bhp; 2023+ models produce 382bhp with 48V mild-hybrid. The code is stamped on the engine block; your VIN and vehicle documentation will also confirm the specification."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I repair the cooling system leak, or does it need replacement?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes — water pump and expansion tank replacement (£400–£1,000) is a straightforward repair on the B58. The water pump is known to fail with age. Replacing both the water pump and expansion tank together is recommended — they degrade at similar rates. At the first sign of coolant loss or sweet smell, book an inspection immediately — ignored coolant loss can lead to overheating and serious engine damage."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "BMWEngines.uk",
+          "url": "https://bmwengine.uk/",
+          "logo": "https://bmwengine.uk/images/bmwengines-logo.png",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "BMW Z4 M40i Engine Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "4000",
+            "highPrice": "14000",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "name": "BMW Z4 M40i UK Engine Enquiry Data 2025",
+          "description": "Proprietary UK enquiry volumes and demand trends for BMW Z4 M40i engines, sourced from BMWEngines.uk's specialist marketplace activity for the B58B30.",
+          "creator": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk"
+          },
+          "temporalCoverage": "2025",
+          "spatialCoverage": "United Kingdom"
+        },
+        {
+          "@type": "WebPage",
+          "name": "Z4 M40i Engine Replacement Cost UK — Compare Quotes",
+          "url": "https://bmwengine.uk/z4/m40i/",
+          "author": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk Specialist Network"
+          },
+          "datePublished": "2026-07-12",
+          "dateModified": "2026-07-12"
+        }
+      ]
+    }
   },
   "hero": {
     "tagPill": "BMW Z4 M40i • 2019–present • 3.0L Turbo Inline-Six",

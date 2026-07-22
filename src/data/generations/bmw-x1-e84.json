@@ -761,23 +761,121 @@
     "scopeNote": "All variants listed are E84 only. sDrive denotes rear-wheel drive; xDrive denotes all-wheel drive. The xDrive28i used the N52B30 straight-six from 2009–2011 and the N20B20 turbo four from 2011–2015. The xDrive35i with the N55B30 turbo six was introduced in 2012."
   },
   "marketIntelligence": {
-    "mostRequestedEngines": [],
-    "mostRequestedVariants": [],
-    "averageReplacementCost": "",
-    "mostCommonFailures": [],
-    "liveFeed": []
+    "mostRequestedEngines": [
+      "1. N47D20C (18d/20d) — pattern data",
+      "2. N20B20 (20i/28i) — pattern data",
+      "3. N52B30 (xDrive28i) — pattern data"
+    ],
+    "mostRequestedVariants": [
+      "1. xDrive20d",
+      "2. sDrive18d",
+      "3. xDrive20i"
+    ],
+    "averageReplacementCost": "£3,000–£5,500 (reconditioned, supply only) [BMW-QUOTE]",
+    "mostCommonFailures": [
+      "1. N47 timing chain stretch (diesel)",
+      "2. N20 timing chain guide wear (petrol four)",
+      "3. N55 HPFP & VANOS failure (xDrive35i)"
+    ],
+    "liveFeed": [
+      {
+        "vehicle": "BMW X1 xDrive20d E84 (N47)",
+        "location": "Manchester",
+        "issue": "Cold-start rattle, timing chain inspection",
+        "enquiries": "3 enquiries",
+        "updated": "Updated Monthly"
+      },
+      {
+        "vehicle": "BMW X1 sDrive20i E84 (N20)",
+        "location": "Birmingham",
+        "issue": "Timing chain rattle on start-up",
+        "enquiries": "2 enquiries",
+        "updated": "Updated Monthly"
+      },
+      {
+        "vehicle": "BMW X1 xDrive35i E84 (N55)",
+        "location": "London",
+        "issue": "HPFP failure, long cranking",
+        "enquiries": "2 enquiries",
+        "updated": "Updated Monthly"
+      }
+    ]
   },
   "faq": {
-    "items": []
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a BMW X1 E84 engine replacement cost in the UK?",
+        "answer": "A reconditioned E84 engine typically costs £2,000–£7,000 supply only [BMW-QUOTE], depending on the engine — the N46 and N20 four-cylinders sit at £2,000–£5,000, the N52 straight-six at £3,000–£5,500, the N47 diesel at £3,200–£6,000, and the N55 turbo-six at £4,500–£7,000. Fitting adds £520–£1,040. Use our calculator for a personalised figure."
+      },
+      {
+        "id": 2,
+        "question": "Which E84 engine is the most reliable?",
+        "answer": "The N52B30 (xDrive28i, 2009–2011) is the E84's most reliable engine — a 3.0-litre naturally-aspirated straight-six with no turbocharger or high-pressure fuel pump complexity. It's smooth, refined, and has a proven track record. The N20 four-cylinder is also reliable, but watch for timing chain guides on early cars. The N47 diesel has the well-documented timing chain risk."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the BMW X1 E84?",
+        "answer": "The N47 diesel suffers from rear-mounted timing chain stretch — cold-start rattle is the warning sign. The N20 turbo four (2011–2015) has timing chain guide wear, particularly on early cars. The N55 (xDrive35i) has HPFP and VANOS issues. The N52 (2009–2011 xDrive28i) is robust but cooling system failures are common. All diesels require DPF maintenance with urban use."
+      },
+      {
+        "id": 4,
+        "question": "Is the BMW X1 E84 reliable?",
+        "answer": "It depends heavily on the engine. The N52 straight-six is genuinely robust — many examples exceed 150,000 miles. The N20 is good but timing chain guides need attention on early cars. The N47 diesel is the biggest risk — timing chain failure is well-documented and expensive. Regular maintenance is critical; these are now 10+ year old cars."
+      },
+      {
+        "id": 5,
+        "question": "Which E84 engine should I avoid?",
+        "answer": "Pre-2012 N47 diesel (18d/20d/23d) without documented timing chain replacement — the rear-mounted chain issue is a known weakness. Early N20 petrol (2011–2013) without chain history is also a risk. An xDrive35i without HPFP and VANOS history is expensive to maintain. Avoid any engine without full service history."
+      },
+      {
+        "id": 6,
+        "question": "How do I know if my E84 engine needs replacing?",
+        "answer": "Cold-start rattle (N47 or N20 timing chain issues), long cranking or limp mode (N55 HPFP), overheating (N52 cooling system), or persistent warning lights are the key warning signs. Use our diagnostic calculator for a personalised assessment."
+      },
+      {
+        "id": 7,
+        "question": "Is it worth replacing an E84 engine, or should I scrap the car?",
+        "answer": "Depends on the car's value. Against a £7,000 xDrive20d, a £3,200–£5,500 N47 recon is 46–79% — at the upper end, that brushes our 70% BMW scrap threshold. Against a £5,000 sDrive18i, a £2,000–£3,500 N46 recon is 40–70% — borderline. For an xDrive35i at £6,000+, a £4,500–£7,000 N55 recon is 75–117% — a serious decision. Value the car first; if it's a pre-2012 N47 without chain history, walk away."
+      },
+      {
+        "id": 8,
+        "question": "How long do E84 engines last?",
+        "answer": "The N52 straight-six can exceed 150,000 miles with proper servicing — the cooling system is the limiting factor. The N20 is capable of high mileage but timing chain guides need attention. The N47 can reach 120,000+ miles but the timing chain is the limiting factor — addressed proactively, it can last. The N55 is capable of high mileage but HPFP and VANOS work should be budgeted for."
+      },
+      {
+        "id": 9,
+        "question": "What is the difference between the E84, F48, and U11 X1 generations?",
+        "answer": "The E84 (2009–2015) is the first-generation X1 — based on the E90 3 Series platform, it was rear-wheel drive (sDrive) or all-wheel drive (xDrive). The F48 (2015–2022) is the second generation — built on the front-wheel-drive UKL platform shared with the MINI Countryman. The U11 (2022–present) is the third generation — also front-wheel-drive based but with electric and plug-in hybrid options. The E84 is the only X1 with rear-wheel-drive dynamics."
+      },
+      {
+        "id": 10,
+        "question": "How do I find my E84 engine code?",
+        "answer": "Listed on the VIN plate and vehicle documentation; the engine code is also stamped on the cylinder block. For petrol: N46B20 (sDrive18i), N20B16A (sDrive16i), N20B20 (sDrive20i/xDrive20i/sDrive28i/xDrive28i), N52B30 (xDrive28i 2009–2011), N55B30 (xDrive35i). For diesel: N47D20C (18d/20d), N47D20D (xDrive23d), N47N (sDrive16d). Tell us your variant and registration year and we'll identify it — 20+ vetted BMW specialists will confirm it for free."
+      }
+    ]
   },
   "trustCta": {
-    "h2": "",
-    "trustPoints": [],
-    "finalCta": "",
+    "h2": "Why UK BMW X1 E84 Owners Trust BMWEngines.uk",
+    "trustPoints": [
+      {
+        "title": "Trusted E84 Engine Suppliers",
+        "text": "every garage and engine rebuilder in our network is vetted, rated and reviewed by real E84 owners, as part of the Engine Finders network."
+      },
+      {
+        "title": "Compare E84 Engine Replacement Companies",
+        "text": "see prices, warranty terms and supply & fit options side‑by‑side before you commit."
+      },
+      {
+        "title": "UK Engine Replacement Services for E84",
+        "text": "covering every variant from sDrive16d to xDrive35i, with supply‑only or full supply & fit available nationwide."
+      }
+    ],
+    "finalCta": "Find the best BMW X1 E84 engine replacement UK drivers rely on. Compare real prices from trusted specialists on EnginesMarket today and get back on the road with confidence.",
     "ctaButton": {
-      "label": "",
+      "label": "Compare BMW X1 E84 Engine Prices on EnginesMarket →",
       "href": "#",
-      "note": ""
+      "note": "[PLACEHOLDER — confirm EnginesMarket URL structure]"
     }
   }
 }

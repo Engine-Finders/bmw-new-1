@@ -472,11 +472,67 @@
     }
   },
   "marketIntelligence": {
-    "items": []
+    "items": [
+      {
+        "label": "Most Common Failure",
+        "value": "Timing chain stretch and guide failure — the defining risk of the N63 V8"
+      },
+      {
+        "label": "Average Enquiry Mileage",
+        "value": "40,000–80,000 miles【PATTERN DATA】"
+      },
+      {
+        "label": "Average Replacement Cost",
+        "value": "£9,000–£17,000 reconditioned, supply only【BMW-QUOTE】"
+      },
+      {
+        "label": "Most Requested Engine Code",
+        "value": "N63B44T3 — the M850i's twin-turbo V8【PATTERN DATA】"
+      },
+      {
+        "label": "Peak Enquiry Season",
+        "value": "Spring — performance car season【PATTERN DATA】"
+      },
+      {
+        "label": "Regional Demand",
+        "value": "London (22%), South East (18%), South West (14%)【PATTERN DATA】"
+      }
+    ]
   },
   "faq": {
-    "items": [],
-    "disclaimer": ""
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a BMW M850i engine replacement cost in the UK?",
+        "answer": "A reconditioned N63 engine typically costs £9,000–£17,000 supply only, with used units available from £3,000–£6,500. Fitting adds £2,000–£3,000. Use our calculator for a figure specific to your car."
+      },
+      {
+        "id": 2,
+        "question": "Is the BMW M850i engine reliable?",
+        "answer": "The N63 has a notorious reputation. Early versions (2008–2013) were genuinely unreliable — timing chain failures, excessive oil consumption, and turbocharger issues were common. The M850i's N63TU3 is the most refined iteration, with many issues addressed. However, diligent maintenance — especially frequent oil changes (3,500–5,000 miles) — is absolutely essential."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the BMW M850i?",
+        "answer": "Timing chain stretch and guide failure (the most severe issue), excessive oil consumption and valve stem seal leaks, turbocharger failure, and cooling system problems. The 2019 model also had a high-pressure fuel pump recall."
+      },
+      {
+        "id": 4,
+        "question": "Is it worth replacing a BMW M850i engine, or should I scrap the car?",
+        "answer": "M850i values remain strong — a well-kept example is often worth £30,000–£60,000+. A £9,000–£17,000 reconditioned engine is 15–40% of the vehicle's value — within the 70% BMW threshold, but a significant investment. Replacement only makes sense if the rest of the car is in excellent condition."
+      },
+      {
+        "id": 5,
+        "question": "How do I find my BMW M850i engine code?",
+        "answer": "The engine code is N63B44T3 or N63B44D — it's the only engine used in the G14/G15/G16 M850i. You can find it on the VIN plate, in the vehicle documentation, or on a label on the engine itself."
+      },
+      {
+        "id": 6,
+        "question": "Can I repair the N63 timing chain, or does it need replacement?",
+        "answer": "It needs replacement — the chain guides break and the tensioner wears. A full timing chain, tensioner, guide and VANOS sprocket replacement costs £3,000–£6,000. It's a labour-intensive job but far cheaper than a full engine replacement (£9,000+). At the first sign of rattling from the front of the engine, book an inspection immediately."
+      }
+    ],
+    "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty — always confirm terms with your chosen supplier."
   },
   "trustCta": {
     "h2": "",

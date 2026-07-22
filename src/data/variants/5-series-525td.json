@@ -518,11 +518,67 @@
     }
   },
   "marketIntelligence": {
-    "items": []
+    "items": [
+      {
+        "label": "Most Common Failure",
+        "value": "VP37 electronic injection pump failure — the defining weakness of the M51"
+      },
+      {
+        "label": "Average Enquiry Mileage",
+        "value": "120,000–180,000 miles【PATTERN DATA】"
+      },
+      {
+        "label": "Average Replacement Cost",
+        "value": "£1,000–£3,000 reconditioned, supply only depending on variant【BMW-QUOTE】"
+      },
+      {
+        "label": "Most Requested Engine Code",
+        "value": "M51D25OL — the E34 525tds【PATTERN DATA】"
+      },
+      {
+        "label": "Peak Enquiry Season",
+        "value": "Spring — classic car season【PATTERN DATA】"
+      },
+      {
+        "label": "Regional Demand",
+        "value": "South East (18%), South West (14%), Midlands (12%)【PATTERN DATA】"
+      }
+    ]
   },
   "faq": {
-    "items": [],
-    "disclaimer": ""
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a BMW 525td or 525tds engine replacement cost in the UK?",
+        "answer": "A reconditioned M51 engine typically costs £1,000–£3,000 supply only depending on which variant (525td or 525tds, E34 or E39), with used units available from £500–£1,500. Fitting adds £800–£1,500. Use our calculator for a figure specific to your car. These engines are increasingly rare."
+      },
+      {
+        "id": 2,
+        "question": "Is the BMW 525td / 525tds engine reliable?",
+        "answer": "The M51 is generally robust but has known weaknesses: the VP37 electronic injection pump is fragile, the timing chains can stretch with age, and the water pump's plastic impeller can fail. The E39 525tds is the most refined version. With preventative maintenance, these engines can cover high mileages."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the BMW 525td and 525tds?",
+        "answer": "VP37 injection pump failure (causing rough idle, lack of power, hard starting), timing chain stretch and guide wear (causing rattling and hot-start problems), water pump failure (plastic impeller), and cylinder head cracking from overheating. The injection pump is the single biggest concern."
+      },
+      {
+        "id": 4,
+        "question": "Is it worth replacing a BMW 525td / 525tds engine, or should I scrap the car?",
+        "answer": "Depends on vehicle value and condition. Against a well-kept E39 525tds worth £2,000–£6,000, a £1,500–£3,000 recon is 30–50% — borderline but often worth it on a cherished example. Against a tired E34 525td with significant body corrosion, get a scrap valuation first. These cars are becoming increasingly rare, which can justify higher spend."
+      },
+      {
+        "id": 5,
+        "question": "How do I find my BMW 525td or 525tds engine code?",
+        "answer": "Listed on the VIN plate and vehicle documentation. E34 525td (1992–1995) uses M51D25UL; E34 525tds (1991–1995) uses M51D25OL; E39 525td (1997–2000) uses M51D25TUUL; E39 525tds (1997–2000) uses M51D25TUOL. The \"td\" is non-intercooled; \"tds\" is intercooled. Tell us your registration date and we'll confirm it for free."
+      },
+      {
+        "id": 6,
+        "question": "Can I repair the M51 timing chain, or does it need replacement?",
+        "answer": "The timing chain needs replacement when worn — it's a wear item. Replacement interval is typically 120,000–150,000 miles or when rattling is heard. If the chain jumps or breaks, the engine is typically destroyed. A preventative chain, guide and tensioner replacement (£800–£1,800) is far cheaper than a full engine replacement (£1,000–£3,000+). At the first sign of rattling from the front of the engine, book an inspection immediately."
+      }
+    ],
+    "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty — always confirm terms with your chosen supplier."
   },
   "trustCta": {
     "h2": "",

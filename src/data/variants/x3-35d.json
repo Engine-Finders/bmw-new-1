@@ -476,7 +476,32 @@
     }
   },
   "marketIntelligence": {
-    "items": []
+    "items": [
+      {
+        "label": "Most Common Failure",
+        "value": "N57: main bearing / timing chain; EGR cooler across all generations"
+      },
+      {
+        "label": "Average Enquiry Mileage",
+        "value": "70,000–90,000 miles [PATTERN DATA]"
+      },
+      {
+        "label": "Average Replacement Cost",
+        "value": "£4,500–£5,500 reconditioned, supply only [PLACEHOLDER — confirm vs cost sheet]"
+      },
+      {
+        "label": "Most Requested Engine Code",
+        "value": "N57D30T1 / N57D30B — approximately 70% of X3 35d enquiries [PATTERN DATA]"
+      },
+      {
+        "label": "Peak Enquiry Season",
+        "value": "Autumn/Winter — cold starts expose chain and bearing issues [PATTERN DATA]"
+      },
+      {
+        "label": "Regional Demand",
+        "value": "South East (18%), London (16%), North West (12%) [PATTERN DATA]"
+      }
+    ]
   },
   "faq": {
     "items": [

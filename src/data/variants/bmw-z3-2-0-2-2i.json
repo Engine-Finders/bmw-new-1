@@ -1,26 +1,194 @@
 {
   "meta": {
-    "slug": "bmw-z3-2-0-2-2i",
-    "title": "BMW Z3 2.0 / 2.2i Engine Replacement — Compare Prices & Get Quotes",
-    "titleCharCount": 66,
-    "description": "",
-    "descriptionCharCount": 0,
-    "canonical": "",
+    "slug": "z3-20-22i",
+    "title": "Z3 2.0 / 2.2i Engine Replacement Cost UK — Compare Quotes",
+    "titleCharCount": 57,
+    "description": "BMW Z3 2.0/2.2i — M52TU and M54 inline-sixes. Real UK costs, common cooling, VANOS and DISA issues, and honest reliability data. Get free quotes from 20+ vetted BMW specialists today.",
+    "descriptionCharCount": 160,
+    "canonical": "https://bmwengine.uk/z3/20-22i/",
     "openGraph": {
-      "title": "",
-      "description": "",
-      "type": "",
-      "url": "",
-      "image": "",
-      "siteName": ""
+      "title": "Z3 2.0 / 2.2i Engine Replacement Cost UK — Compare Quotes",
+      "description": "BMW Z3 2.0/2.2i — M52TU and M54 inline-sixes. Real UK costs, common cooling, VANOS and DISA issues, and honest reliability data. Get free quotes from 20+ vetted BMW specialists today.",
+      "type": "website",
+      "url": "https://bmwengine.uk/z3/20-22i/",
+      "image": "https://bmwengine.uk/images/bmw/hero/z3-20-22i.jpg",
+      "siteName": "BMWEngines.uk"
     },
     "twitter": {
-      "card": "",
-      "title": "",
-      "description": "",
-      "image": ""
+      "card": "summary_large_image",
+      "title": "Z3 2.0 / 2.2i Engine Replacement Cost UK — Compare Quotes",
+      "description": "BMW Z3 2.0/2.2i — M52TU and M54 inline-sixes. Real UK costs, common cooling, VANOS and DISA issues, and honest reliability data.",
+      "image": "https://bmwengine.uk/images/bmw/hero/z3-20-22i.jpg"
     },
-    "jsonLd": {}
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://bmwengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Z3",
+              "item": "https://bmwengine.uk/z3/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "2.0 / 2.2i",
+              "item": "https://bmwengine.uk/z3/20-22i/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "BMW Z3 2.0 / 2.2i Engine Era Map",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Z3 2.0 (M52TÜB20, 1999–2000)",
+              "url": "https://bmwengine.uk/z3/20-22i/#m52tub20"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Z3 2.2i (M54B22, 2000–2002)",
+              "url": "https://bmwengine.uk/z3/20-22i/#m54b22"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "BMW Z3 2.0 / 2.2i Engine Codes",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "M52TÜB20",
+              "url": "https://bmwengine.uk/engines/m52tub20/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "M54B22",
+              "url": "https://bmwengine.uk/engines/m54b22/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does a BMW Z3 2.0 / 2.2i engine replacement cost in the UK?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A reconditioned BMW Z3 2.0/2.2i engine costs £2,500–£4,000 supply only, varying by generation: M52TU £2,000–£3,500, M54 £2,500–£4,500. Fitting adds £800–£1,200. These are specialist-only replacements — the M52TU/M54 require BMW six-cylinder expertise."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the BMW Z3 2.0 / 2.2i reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Both the M52TU and M54 are robust, characterful sixes, but they have known weaknesses. The cooling system is the achilles heel of both engines — proactive replacement is essential. The M54 adds the DISA valve to the list of concerns. VANOS seal degradation affects both. With proper maintenance, these engines are very reliable."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What are the common problems with the BMW Z3 2.0 / 2.2i?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Cooling system failure (water pump, thermostat, expansion tank, £400–£1,000), VANOS seal degradation (loss of low-end power, £500–£1,200), and oil leaks (oil filter housing gasket, £300–£800). M54-specific: DISA valve failure (loss of torque, rattling, £300–£600)."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is it worth replacing a BMW Z3 2.0 / 2.2i engine, or should I scrap the car?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Z3 values range from £4,000–£15,000 depending on condition, mileage and specification. A £2,500–£4,000 reconditioned engine represents 20–80% of vehicle value — our 70% BMW scrap threshold means careful evaluation is required. For a well-maintained, low-mileage example, replacement is often justified. For a higher-mileage example with other issues (rust, bodywork), assess scrap value first. The M54 2.2i is generally more valuable and worth the investment."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I find my BMW Z3 2.0 / 2.2i engine code?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The Z3 2.0/2.2i has used two engines: M52TÜB20 (1999–2000, 150bhp) and M54B22 (2000–2002, 170bhp). Check your VIN or registration year — pre-2000 is M52TU, 2000–2002 is M54. The code is stamped on the engine block."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I repair the cooling system issue, or does it need replacement?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes — the cooling system must be proactively replaced. A water pump with metal impeller, thermostat, expansion tank and hoses costs £400–£1,000. This is the most important maintenance on the M52TU and M54. At the first sign of coolant loss, book an inspection — ignored cooling system failure can lead to catastrophic overheating and engine damage."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "BMWEngines.uk",
+          "url": "https://bmwengine.uk/",
+          "logo": "https://bmwengine.uk/images/bmwengines-logo.png",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "BMW Z3 2.0 / 2.2i Engine Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "1500",
+            "highPrice": "5500",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "name": "BMW Z3 2.0 / 2.2i UK Engine Enquiry Data 2025",
+          "description": "Proprietary UK enquiry volumes and demand trends for BMW Z3 2.0 / 2.2i engines, sourced from BMWEngines.uk's specialist marketplace activity for M52TU and M54 variants.",
+          "creator": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk"
+          },
+          "temporalCoverage": "2025",
+          "spatialCoverage": "United Kingdom"
+        },
+        {
+          "@type": "WebPage",
+          "name": "Z3 2.0 / 2.2i Engine Replacement Cost UK — Compare Quotes",
+          "url": "https://bmwengine.uk/z3/20-22i/",
+          "author": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk Specialist Network"
+          },
+          "datePublished": "2026-07-12",
+          "dateModified": "2026-07-12"
+        }
+      ]
+    }
   },
   "hero": {
     "tagPill": "BMW Z3 2.0 / 2.2i • 1999–2002 • Two Engine Generations",

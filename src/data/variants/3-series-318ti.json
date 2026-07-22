@@ -502,7 +502,32 @@
     }
   },
   "marketIntelligence": {
-    "items": []
+    "items": [
+      {
+        "label": "Most Common Failure",
+        "value": "N42/N46: timing chain guide failure / M42/M44: cooling system failure [PATTERN DATA]"
+      },
+      {
+        "label": "Average Enquiry Mileage",
+        "value": "90,000 miles [PATTERN DATA]"
+      },
+      {
+        "label": "Average Replacement Cost",
+        "value": "£1,800 reconditioned, supply only [PLACEHOLDER — confirm vs cost sheet]"
+      },
+      {
+        "label": "Most Requested Engine Code",
+        "value": "M44 (E36) — approximately 45% of 318ti enquiries [PATTERN DATA]"
+      },
+      {
+        "label": "Peak Enquiry Season",
+        "value": "Summer — cooling issues exposed by warmer weather [PATTERN DATA]"
+      },
+      {
+        "label": "Regional Demand",
+        "value": "London (17%), South East (16%), North West (13%) [PATTERN DATA]"
+      }
+    ]
   },
   "faq": {
     "items": [

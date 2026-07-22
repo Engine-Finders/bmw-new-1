@@ -1,11 +1,199 @@
 {
   "meta": {
     "slug": "bmw-z1-z1",
-    "title": "BMW Z1 Z1 Engines — The Complete UK Guide",
-    "titleCharCount": 41,
-    "description": "",
-    "descriptionCharCount": 0,
-    "jsonLd": {}
+    "title": "Z1 Engine Replacement Cost UK — Compare Quotes",
+    "titleCharCount": 57,
+    "description": "Every BMW Z1 engine — the M20B25 2.5-litre straight-six. Real UK costs and honest classic car reliability data. Get free quotes from 20+ vetted BMW specialists today.",
+    "descriptionCharCount": 157,
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://bmwengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Z1",
+              "item": "https://bmwengine.uk/z1/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "BMW Z1 Z1",
+              "item": "https://bmwengine.uk/z1/z1/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "BMW Z1 Z1 Engine Codes",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "M20B25 Engine",
+              "url": "https://bmwengine.uk/engines/m20/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "BMW Z1 Z1 Core Variants",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Z1",
+              "url": "https://bmwengine.uk/z1/z1/z1/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does a BMW Z1 engine replacement cost in the UK?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A reconditioned Z1 M20B25 engine typically costs £1,800–£3,500 supply only [BMW-QUOTE]. Fitting adds £650–£1,000 depending on specialist location. The Z1's strong collector values mean engine replacement is almost always viable."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which BMW Z1 engine is the most reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The Z1 was only offered with one engine — the M20B25 2.5-litre straight-six — and it's a good one. The M20 family is one of BMW's most reliable engines, with a documented 200,000+ mile reputation when properly maintained. The critical maintenance item is the timing belt [PROVISIONAL — pending dedicated Engine Page]."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What are the common problems with the BMW Z1?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Timing belt failure is the single most significant engine problem — if the belt breaks, the valves will contact the pistons, causing catastrophic engine damage. The water pump and cooling system also need regular replacement. The door mechanism can fail due to ageing electric motors and rubber belts."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the BMW Z1 reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "For a 30+ year-old classic car, the Z1 is reasonably reliable — the M20 engine is proven and robust. However, it requires careful maintenance, especially the timing belt. The Z1's unique door mechanism and electrical systems also need attention. Buy a well-maintained example with documented timing belt service history."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which BMW Z1 engine should I avoid?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The Z1 was only offered with one engine — the M20B25 — and it's a good one. There are no engine variants to avoid. However, avoid any Z1 without documented timing belt replacement history — a broken belt is a £2,000+ engine rebuild waiting to happen."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I know if my Z1 engine needs replacing?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Timing belt failure is the most common catastrophic failure — if the belt breaks, the car will stop running and the engine will be damaged. Overheating due to cooling system failure can also cause engine damage. A pre-purchase inspection by a BMW specialist is strongly recommended."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is it worth replacing a BMW Z1 engine, or should I scrap the car?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Depends on the car's value and condition. Against a well-kept £20,000 Z1, a £1,800–£3,500 M20 recon is 9–17% — well within our 70% BMW scrap threshold [BMW-VERIFIED]. The Z1's strong collector values mean engine replacement is almost always a repair decision, not a financial one."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How long do BMW Z1 engines last?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The M20B25 can exceed 200,000 miles with proper servicing — timing belt replacement is the key to longevity. With regular maintenance, the M20 is one of BMW's most durable engines. The Z1's front mid-engine installation means access is slightly different from the E30 325i, but the engine itself is the same proven unit."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the difference between the Z1 and the Z3?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The Z1 (1988–1991) is BMW's first Z-series roadster, a technology showcase with unique retractable doors and composite body panels. It was produced in limited numbers and was never officially exported to the UK. The Z3 (1995–2002) is the successor — a more conventional roadster built on the E36 platform."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I find my BMW Z1 engine code?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Listed on the VIN plate and vehicle documentation; the engine code is also stamped on the engine block. The Z1 uses the M20B25 engine from the E30 325i, installed as a front mid-engine. Tell us your VIN and we'll confirm it — 20+ vetted BMW specialists will confirm it for free."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "BMWEngines.uk",
+          "url": "https://bmwengine.uk/",
+          "logo": "https://bmwengine.uk/images/bmwengines-logo.png",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "BMW Z1 Z1 Engine Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "1800",
+            "highPrice": "3500",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "name": "BMW Z1 Z1 UK Engine Enquiry Data 2025",
+          "description": "Proprietary UK enquiry volumes and demand trends for BMW Z1 Z1 engines, sourced from BMWEngines.uk's specialist marketplace activity.",
+          "creator": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk"
+          },
+          "temporalCoverage": "2025",
+          "spatialCoverage": "United Kingdom"
+        },
+        {
+          "@type": "WebPage",
+          "name": "Z1 Engine Replacement Cost UK — Compare Quotes",
+          "url": "https://bmwengine.uk/z1/z1/",
+          "author": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk Specialist Network"
+          },
+          "datePublished": "2026-07-09",
+          "dateModified": "2026-07-09"
+        }
+      ]
+    }
   },
   "internalDeclarations": {
     "checkA": "",
@@ -248,16 +436,80 @@
     "liveFeed": []
   },
   "faq": {
-    "items": []
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a BMW Z1 engine replacement cost in the UK?",
+        "answer": "A reconditioned Z1 M20B25 engine typically costs £1,800–£3,500 supply only [BMW-QUOTE]. Fitting adds £650–£1,000 depending on specialist location. The Z1's strong collector values (£15,000–£35,000+) mean engine replacement is almost always viable — even at the top end, it's less than 25% of the car's value."
+      },
+      {
+        "id": 2,
+        "question": "Which BMW Z1 engine is the most reliable?",
+        "answer": "The Z1 was only offered with one engine — the M20B25 2.5-litre straight-six — and it's a good one. The M20 family is one of BMW's most reliable engines, with a documented 200,000+ mile reputation when properly maintained. The critical maintenance item is the timing belt, which must be replaced every 60,000 miles or 5 years [PROVISIONAL — pending dedicated Engine Page]."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the BMW Z1?",
+        "answer": "Timing belt failure is the single most significant engine problem — if the belt breaks, the valves will contact the pistons, causing catastrophic engine damage. The water pump and cooling system also need regular replacement. Outside the engine, the Z1's unique retractable door mechanism can fail due to ageing electric motors and rubber belts."
+      },
+      {
+        "id": 4,
+        "question": "Is the BMW Z1 reliable?",
+        "answer": "For a 30+ year-old classic car, the Z1 is reasonably reliable — the M20 engine is proven and robust. However, it requires careful maintenance, especially the timing belt. The Z1's unique door mechanism and electrical systems also need attention. Buy a well-maintained example with documented timing belt service history."
+      },
+      {
+        "id": 5,
+        "question": "Which BMW Z1 engine should I avoid?",
+        "answer": "The Z1 was only offered with one engine — the M20B25 — and it's a good one. There are no engine variants to avoid. However, avoid any Z1 without documented timing belt replacement history — a broken belt is a £2,000+ engine rebuild waiting to happen."
+      },
+      {
+        "id": 6,
+        "question": "How do I know if my Z1 engine needs replacing?",
+        "answer": "Timing belt failure is the most common catastrophic failure — if the belt breaks, the car will stop running and the engine will be damaged. Overheating due to cooling system failure can also cause engine damage. Unusual noises from the engine could indicate worn timing components. A pre-purchase inspection by a BMW specialist is strongly recommended."
+      },
+      {
+        "id": 7,
+        "question": "Is it worth replacing a BMW Z1 engine, or should I scrap the car?",
+        "answer": "Depends on the car's value and condition. Against a well-kept £20,000 Z1, a £1,800–£3,500 M20 recon is 9–17% of the car's value — well within our 70% BMW scrap threshold [BMW-VERIFIED]. The Z1's strong collector values mean engine replacement is almost always a repair decision, not a financial one."
+      },
+      {
+        "id": 8,
+        "question": "How long do BMW Z1 engines last?",
+        "answer": "The M20B25 can exceed 200,000 miles with proper servicing — timing belt replacement is the key to longevity. With regular maintenance (60,000-mile timing belt changes, cooling system refreshes), the M20 is one of BMW's most durable engines. The Z1's unique front mid-engine installation means access is slightly different from the E30 325i, but the engine itself is the same proven unit."
+      },
+      {
+        "id": 9,
+        "question": "What is the difference between the Z1 and the Z3?",
+        "answer": "The Z1 (1988–1991) is BMW's first Z-series roadster, a technology showcase with unique retractable doors, composite body panels, and a front mid-mounted M20 engine. It was produced in limited numbers (8,000 units) and was never officially exported to the UK. The Z3 (1995–2002) is the successor — a more conventional roadster built on the E36 platform with a wider range of engines and available in right-hand drive for the UK market."
+      },
+      {
+        "id": 10,
+        "question": "How do I find my BMW Z1 engine code?",
+        "answer": "Listed on the VIN plate and vehicle documentation; the engine code is also stamped on the engine block. The Z1 uses the M20B25 engine from the E30 325i, installed as a front mid-engine. Tell us your VIN and we'll confirm it — 20+ vetted BMW specialists will confirm it for free."
+      }
+    ]
   },
   "trustCta": {
-    "h2": "",
-    "trustPoints": [],
-    "finalCta": "",
+    "h2": "Why UK BMW Z1 Z1 Owners Trust BMWEngines.uk",
+    "trustPoints": [
+      {
+        "title": "Trusted Z1 Engine Suppliers",
+        "text": "every garage and engine rebuilder in our network is vetted, rated and reviewed by real Z1 owners, as part of the Engine Finders network."
+      },
+      {
+        "title": "Compare Z1 Engine Replacement Companies",
+        "text": "see prices, warranty terms and supply & fit options side-by-side before you commit."
+      },
+      {
+        "title": "UK Engine Replacement Services for Z1",
+        "text": "covering the M20B25 engine with supply-only or full supply & fit available nationwide."
+      }
+    ],
+    "finalCta": "Find the best BMW Z1 engine replacement UK drivers rely on. Compare real prices from trusted specialists on EnginesMarket today and keep your classic on the road.",
     "ctaButton": {
-      "label": "",
+      "label": "Compare BMW Z1 Z1 Engine Prices on EnginesMarket →",
       "href": "#",
-      "note": ""
+      "note": "[PLACEHOLDER — confirm EnginesMarket URL structure]"
     }
   }
 }

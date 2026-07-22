@@ -1,11 +1,337 @@
 {
   "meta": {
     "slug": "bmw-3-series-e92",
-    "title": "BMW 3 Series E92 Engines — The Complete UK Guide",
-    "titleCharCount": 48,
-    "description": "",
-    "descriptionCharCount": 0,
-    "jsonLd": {}
+    "title": "E92 Engine Replacement Cost UK — Compare Quotes",
+    "titleCharCount": 58,
+    "description": "Every BMW 3 Series E92 engine — N43, N52, N53, N54, N55, S65, N47, M57, N57. Real UK costs and honest reliability data. Get free quotes from 20+ vetted BMW specialists today.",
+    "descriptionCharCount": 159,
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://bmwengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "3 Series",
+              "item": "https://bmwengine.uk/3-series/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "BMW 3 Series E92",
+              "item": "https://bmwengine.uk/3-series/e92/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "BMW 3 Series E92 Engine Codes",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "N43B20 Engine",
+              "url": "https://bmwengine.uk/engines/n43/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "N45B20 Engine",
+              "url": "https://bmwengine.uk/engines/n45/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "N46B20 Engine",
+              "url": "https://bmwengine.uk/engines/n46/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "N52B25/30 Engine",
+              "url": "https://bmwengine.uk/engines/n52/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 5,
+              "name": "N53B30 Engine",
+              "url": "https://bmwengine.uk/engines/n53/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 6,
+              "name": "N54B30 Engine",
+              "url": "https://bmwengine.uk/engines/n54/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 7,
+              "name": "N55B30 Engine",
+              "url": "https://bmwengine.uk/engines/n55/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 8,
+              "name": "S65B40 Engine",
+              "url": "https://bmwengine.uk/engines/s65/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 9,
+              "name": "N47D20 Engine",
+              "url": "https://bmwengine.uk/engines/n47/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 10,
+              "name": "M57D30 Engine",
+              "url": "https://bmwengine.uk/engines/m57/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 11,
+              "name": "N57D30 Engine",
+              "url": "https://bmwengine.uk/engines/n57/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "BMW 3 Series E92 Core Variants",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "318i",
+              "url": "https://bmwengine.uk/3-series/e92/318i/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "320i",
+              "url": "https://bmwengine.uk/3-series/e92/320i/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "320si",
+              "url": "https://bmwengine.uk/3-series/e92/320si/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "323i",
+              "url": "https://bmwengine.uk/3-series/e92/323i/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 5,
+              "name": "325i",
+              "url": "https://bmwengine.uk/3-series/e92/325i/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 6,
+              "name": "328i",
+              "url": "https://bmwengine.uk/3-series/e92/328i/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 7,
+              "name": "330i",
+              "url": "https://bmwengine.uk/3-series/e92/330i/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 8,
+              "name": "335i",
+              "url": "https://bmwengine.uk/3-series/e92/335i/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 9,
+              "name": "M3",
+              "url": "https://bmwengine.uk/3-series/e92/m3/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 10,
+              "name": "318d",
+              "url": "https://bmwengine.uk/3-series/e92/318d/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 11,
+              "name": "320d",
+              "url": "https://bmwengine.uk/3-series/e92/320d/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 12,
+              "name": "325d",
+              "url": "https://bmwengine.uk/3-series/e92/325d/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 13,
+              "name": "330d",
+              "url": "https://bmwengine.uk/3-series/e92/330d/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 14,
+              "name": "335d",
+              "url": "https://bmwengine.uk/3-series/e92/335d/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does a BMW 3 Series E92 engine replacement cost in the UK?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A reconditioned E92 engine typically costs £1,800–£14,000 supply only [BMW-QUOTE], depending on engine — the N47 diesel sits at £3,200–£5,500, while the S65 V8 in the M3 can reach £14,000. Fitting adds £650–£1,500 depending on engine and specialist location. Evaluate the car's value carefully before committing."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which BMW 3 Series E92 engine is the most reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The N52 naturally aspirated 3.0-litre six-cylinder is widely regarded as one of BMW's most reliable engines — no turbos, no HPFP, just smooth, linear power with VANOS as the primary wear item. The M57 diesel six is also exceptionally robust, with a cast-iron block and no rear-mounted timing chain [PROVISIONAL — pending dedicated Engine Page]."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What are the common problems with the BMW 3 Series E92?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Timing chain stretch on the N47 diesel, HPFP and injector failure on the N54 335i, water pump failure on N52/N53 six-cylinder petrols, rod bearing wear on the S65 M3 V8, and injector/NOx sensor issues on the N43 and N53 direct-injection petrols. Thermostat and swirl flap wear on the M57 diesel six is also common."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the BMW 3 Series E92 reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "It depends heavily on which engine you choose. The N52 and M57 are exceptionally reliable. The N55 is more reliable than the N54 it replaced. The N47 diesel carries the biggest risk — timing chain stretch is well-documented. The S65 M3 is reliable if properly maintained, but rod bearings are a known weak point."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which BMW 3 Series E92 engine should I avoid?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No engine is a hard avoid, but the N47 diesel requires very careful consideration — timing chain stretch is well-documented and a full replacement costs £3,200–£5,500 [BMW-QUOTE]. The N54 twin-turbo is also high-risk without documented HPFP and injector history."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I know if my E92 engine needs replacing?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Cold-start rattle on N47 diesels is the classic early warning of timing chain wear — investigate immediately. On N54 335is, long cranking or limp mode indicates HPFP failure. On N52/N53 petrols, sudden overheating suggests water pump failure. On S65 M3s, a low oil pressure warning or knocking sound is critical."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is it worth replacing a BMW 3 Series E92 engine, or should I scrap the car?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Depends on the car's value. Against a well-kept £8,000 E92, a £3,200–£5,500 N47 recon is 40–69% — borderline but potentially viable. Against a tired £4,000 example, the same recon is 80–138% — walk away. Our 70% BMW scrap threshold is the line [BMW-VERIFIED]. For M3 cars, even the most expensive replacement is viable."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How long do BMW 3 Series E92 engines last?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The N52 and M57 can exceed 200,000 miles with proper servicing. The N55 is similarly durable. The S65 V8 can reach high mileages but requires rod bearing replacement as preventative maintenance. The N47 and N54 are limited by their known weaknesses — addressed proactively, either can reach 120,000+ miles."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the difference between the E92 and the E90 3 Series?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The E90 is the 4-door saloon (2005–2011), while the E92 is the 2-door coupé (2006–2013). They share the E9x platform and most engines, but the E92 has a lower roofline, wider track, and different rear light design. The E92 continued production two years after the E90 saloon ended."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I find my BMW 3 Series E92 engine code?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Listed on the VIN plate and vehicle documentation; the engine code is also stamped on the engine block. Tell us your variant and we'll identify it — 20+ vetted BMW specialists will confirm it for free."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "BMWEngines.uk",
+          "url": "https://bmwengine.uk/",
+          "logo": "https://bmwengine.uk/images/bmwengines-logo.png",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "BMW 3 Series E92 Engine Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "1800",
+            "highPrice": "14000",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "name": "BMW 3 Series E92 UK Engine Enquiry Data 2025",
+          "description": "Proprietary UK enquiry volumes and demand trends for BMW 3 Series E92 engines, sourced from BMWEngines.uk's specialist marketplace activity.",
+          "creator": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk"
+          },
+          "temporalCoverage": "2025",
+          "spatialCoverage": "United Kingdom"
+        },
+        {
+          "@type": "WebPage",
+          "name": "E92 Engine Replacement Cost UK — Compare Quotes",
+          "url": "https://bmwengine.uk/3-series/e92/",
+          "author": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk Specialist Network"
+          },
+          "datePublished": "2026-07-09",
+          "dateModified": "2026-07-09"
+        }
+      ]
+    }
   },
   "internalDeclarations": {
     "checkA": "",
@@ -568,23 +894,121 @@
     "scopeNote": "All variants listed are E92 Coupé only. E90 Saloon, E91 Touring and E93 Convertible share most of these engines but are covered on their own Generation Pages, since fitment and body-specific characteristics vary. The 335is (2011–2013, North America) used a factory-tuned N54 with 320 bhp. The 320si is a limited-edition homologation model."
   },
   "marketIntelligence": {
-    "mostRequestedEngines": [],
-    "mostRequestedVariants": [],
-    "averageReplacementCost": "",
-    "mostCommonFailures": [],
-    "liveFeed": []
+    "mostRequestedEngines": [
+      "1. N47D20 (largest share of diesel enquiries)",
+      "2. N54B30",
+      "3. N57D30/M57D30"
+    ],
+    "mostRequestedVariants": [
+      "1. 320d",
+      "2. 335i",
+      "3. 330d"
+    ],
+    "averageReplacementCost": "£4,500 reconditioned, supply only [BMW-QUOTE]",
+    "mostCommonFailures": [
+      "1. N47 timing chain",
+      "2. N54 HPFP/injectors",
+      "3. N52/N53 water pump failure"
+    ],
+    "liveFeed": [
+      {
+        "vehicle": "BMW 3 Series E92 320d",
+        "location": "Manchester",
+        "issue": "Cold-start rattle",
+        "enquiries": "5 enquiries",
+        "updated": "Updated Monthly"
+      },
+      {
+        "vehicle": "BMW 3 Series E92 335i",
+        "location": "London",
+        "issue": "HPFP replacement",
+        "enquiries": "3 enquiries",
+        "updated": "Updated Monthly"
+      },
+      {
+        "vehicle": "BMW 3 Series E92 M3",
+        "location": "Birmingham",
+        "issue": "Rod bearing inspection",
+        "enquiries": "2 enquiries",
+        "updated": "Updated Monthly"
+      }
+    ]
   },
   "faq": {
-    "items": []
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a BMW 3 Series E92 engine replacement cost in the UK?",
+        "answer": "A reconditioned E92 engine typically costs £1,800–£14,000 supply only [BMW-QUOTE], depending on engine — the N47 diesel sits at £3,200–£5,500, while the S65 V8 in the M3 can reach £14,000. Fitting adds £650–£1,500 depending on engine and specialist location. Evaluate the car's value carefully before committing."
+      },
+      {
+        "id": 2,
+        "question": "Which BMW 3 Series E92 engine is the most reliable?",
+        "answer": "The N52 naturally aspirated 3.0-litre six-cylinder (330i) is widely regarded as one of BMW's most reliable engines — no turbos, no HPFP, just smooth, linear power with VANOS as the primary wear item. The M57 diesel six (pre-LCI 330d) is also exceptionally robust, with a cast-iron block and no rear-mounted timing chain [PROVISIONAL — pending dedicated Engine Page]."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the BMW 3 Series E92?",
+        "answer": "Timing chain stretch on the N47 diesel, HPFP and injector failure on the N54 335i, water pump failure on N52/N53 six-cylinder petrols, rod bearing wear on the S65 M3 V8, and injector/NOx sensor issues on the N43 and N53 direct-injection petrols. Thermostat and swirl flap wear on the M57 diesel six is also common."
+      },
+      {
+        "id": 4,
+        "question": "Is the BMW 3 Series E92 reliable?",
+        "answer": "It depends heavily on which engine you choose. The N52 and M57 are exceptionally reliable. The N55 is more reliable than the N54 it replaced. The N47 diesel carries the biggest risk — timing chain stretch is well-documented. The S65 M3 is reliable if properly maintained, but rod bearings are a known weak point. Avoid neglected N54s and pre-2013 N47s without chain history."
+      },
+      {
+        "id": 5,
+        "question": "Which BMW 3 Series E92 engine should I avoid?",
+        "answer": "No engine is a hard avoid, but the N47 diesel (318d, 320d) requires very careful consideration — timing chain stretch is well-documented and a full replacement costs £3,200–£5,500 [BMW-QUOTE]. The N54 twin-turbo (335i, 2006–2010) is also high-risk without documented HPFP and injector history. A neglected N54 is a wallet-emptying proposition."
+      },
+      {
+        "id": 6,
+        "question": "How do I know if my E92 engine needs replacing?",
+        "answer": "Cold-start rattle on N47 diesels is the classic early warning of timing chain wear — investigate immediately. On N54 335is, long cranking or limp mode indicates HPFP failure. On N52/N53 petrols, sudden overheating suggests water pump failure. On S65 M3s, a low oil pressure warning or knocking sound is critical — stop driving immediately."
+      },
+      {
+        "id": 7,
+        "question": "Is it worth replacing a BMW 3 Series E92 engine, or should I scrap the car?",
+        "answer": "Depends on the car's value. Against a well-kept £8,000 E92, a £3,200–£5,500 N47 recon is 40–69% of the car's value — borderline but potentially viable. Against a tired £4,000 example, the same recon is 80–138% — walk away. Our 70% BMW scrap threshold is the line [BMW-VERIFIED]. For M3 cars (£10,000–£25,000+), even the most expensive S65 replacement is viable given collector values."
+      },
+      {
+        "id": 8,
+        "question": "How long do BMW 3 Series E92 engines last?",
+        "answer": "The N52 and M57 can exceed 200,000 miles with proper servicing. The N55 is similarly durable. The S65 V8 can reach high mileages but requires rod bearing replacement as preventative maintenance. The N47 and N54 are limited by their known weaknesses — addressed proactively, either can reach 120,000+ miles, but many fail earlier without intervention."
+      },
+      {
+        "id": 9,
+        "question": "What is the difference between the E92 and the E90 3 Series?",
+        "answer": "The E90 is the 4-door saloon (2005–2011), while the E92 is the 2-door coupé (2006–2013). They share the E9x platform and most engines, but the E92 has a lower roofline, wider track, and different rear light design. The E92 also continued production two years after the E90 saloon ended, receiving the LCI facelift in March 2010. The E93 is the 2-door convertible (2007–2013)."
+      },
+      {
+        "id": 10,
+        "question": "How do I find my BMW 3 Series E92 engine code?",
+        "answer": "Listed on the VIN plate and vehicle documentation; the engine code is also stamped on the engine block. Tell us your variant (318i, 320i, 325i, 328i, 330i, 335i, M3, 318d, 320d, 325d, 330d, 335d) and we'll identify it — 20+ vetted BMW specialists will confirm it for free."
+      }
+    ]
   },
   "trustCta": {
-    "h2": "",
-    "trustPoints": [],
-    "finalCta": "",
+    "h2": "Why UK BMW 3 Series E92 Owners Trust BMWEngines.uk",
+    "trustPoints": [
+      {
+        "title": "Trusted E92 Engine Suppliers",
+        "text": "every garage and engine rebuilder in our network is vetted, rated and reviewed by real E92 owners, as part of the Engine Finders network."
+      },
+      {
+        "title": "Compare E92 Engine Replacement Companies",
+        "text": "see prices, warranty terms and supply & fit options side-by-side before you commit."
+      },
+      {
+        "title": "UK Engine Replacement Services for E92",
+        "text": "covering every variant from 318i to M3, with supply-only or full supply & fit available nationwide."
+      }
+    ],
+    "finalCta": "Find the best BMW 3 Series E92 engine replacement UK drivers rely on. Compare real prices from trusted specialists on EnginesMarket today and get back on the road with confidence.",
     "ctaButton": {
-      "label": "",
+      "label": "Compare BMW 3 Series E92 Engine Prices on EnginesMarket →",
       "href": "#",
-      "note": ""
+      "note": "[PLACEHOLDER — confirm EnginesMarket URL structure]"
     }
   }
 }

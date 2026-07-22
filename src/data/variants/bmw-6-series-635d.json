@@ -1,26 +1,182 @@
 {
   "meta": {
-    "slug": "bmw-6-series-635d",
-    "title": "BMW 6 Series 635d Engine Replacement — Compare Prices & Get Quotes",
-    "titleCharCount": 66,
-    "description": "",
-    "descriptionCharCount": 0,
-    "canonical": "",
+    "slug": "6-series-635d",
+    "title": "635d Engine Replacement Cost UK — Compare Quotes",
+    "titleCharCount": 57,
+    "description": "The 286bhp M57TU2 twin-turbo diesel — real UK costs, common injector and DPF issues, and honest reliability data. Get free quotes from 20+ vetted BMW specialists today.",
+    "descriptionCharCount": 160,
+    "canonical": "https://bmwengine.uk/6-series/635d/",
     "openGraph": {
-      "title": "",
-      "description": "",
-      "type": "",
-      "url": "",
-      "image": "",
-      "siteName": ""
+      "title": "635d Engine Replacement Cost UK — Compare Quotes",
+      "description": "The 286bhp M57TU2 twin-turbo diesel — real UK costs, common injector and DPF issues, and honest reliability data. Get free quotes from 20+ vetted BMW specialists today.",
+      "type": "website",
+      "url": "https://bmwengine.uk/6-series/635d/",
+      "image": "https://bmwengine.uk/images/bmw/hero/6-series-635d.jpg",
+      "siteName": "BMWEngines.uk"
     },
     "twitter": {
-      "card": "",
-      "title": "",
-      "description": "",
-      "image": ""
+      "card": "summary_large_image",
+      "title": "635d Engine Replacement Cost UK — Compare Quotes",
+      "description": "The 286bhp M57TU2 twin-turbo diesel — real UK costs, common injector and DPF issues, and honest reliability data.",
+      "image": "https://bmwengine.uk/images/bmw/hero/6-series-635d.jpg"
     },
-    "jsonLd": {}
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://bmwengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "6 Series",
+              "item": "https://bmwengine.uk/6-series/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "635d",
+              "item": "https://bmwengine.uk/6-series/635d/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "BMW 6 Series 635d Engine Era Map",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "E63/E64 635d (M57TU2, 2007–2010)",
+              "url": "https://bmwengine.uk/6-series/635d/#m57tu2"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "BMW 6 Series 635d Engine Codes",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "M57TU2 3.0L Twin-Turbo Diesel",
+              "url": "https://bmwengine.uk/engines/m57tu2/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does a BMW 6 Series 635d engine replacement cost in the UK?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A reconditioned BMW 6 Series 635d engine (M57TU2) typically costs £3,500–£5,500 supply only. Fitting adds £1,000–£1,500. An injector replacement costs £300–£800 per injector. The M57TU2 is a premium diesel requiring specialist expertise."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the BMW 6 Series 635d reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The M57TU2 is generally robust and won 'Engine of the Year' in 2007. However, piezo injectors can fail on higher-mileage examples, and DPF and EGR systems require monitoring — especially on cars used for short journeys. Regular maintenance and long journeys are essential. With proper care, these engines can cover 200,000+ miles."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What are the common problems with the BMW 6 Series 635d?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Piezo injector failure (rough idle, misfire, £300–£800 per injector), DPF blockage (warning light, reduced power, £400–£1,200), EGR cooler failure (coolant loss, white smoke, £500–£1,200), and swirl flap failure (loss of power, £500–£1,200). The ZF 6HP28 gearbox also requires regular servicing."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is it worth replacing a BMW 6 Series 635d engine, or should I scrap the car?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "6 Series 635d values range from £5,000–£15,000 depending on condition and mileage. A £3,500–£5,500 reconditioned engine represents 25–80% of vehicle value — our 70% BMW scrap threshold means careful evaluation is required. For a well-maintained, low-mileage example, replacement is often justified. For a higher-mileage example with other issues, assess scrap value first."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I find my BMW 6 Series 635d engine code?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The 635d uses a single engine code: M57TU2 (also referred to as M57D30TU2 or M57N2). This is BMW's 3.0-litre twin-turbo diesel, producing 286bhp. The code is stamped on the engine block; your VIN and vehicle documentation will also confirm the specification."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I repair the injector issue, or does it need replacement?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes — injectors can be exchanged or replaced (£300–£800 per injector). Symptoms include rough idle, misfire, and poor acceleration. New injectors must be coded to the DDE (engine ECU). Replacing all six together is recommended as they degrade at similar rates. At the first sign of rough idle, book an inspection — ignored injector problems can lead to cylinder wash and engine damage."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "BMWEngines.uk",
+          "url": "https://bmwengine.uk/",
+          "logo": "https://bmwengine.uk/images/bmwengines-logo.png",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "BMW 6 Series 635d Engine Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "2500",
+            "highPrice": "12000",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "name": "BMW 6 Series 635d UK Engine Enquiry Data 2025",
+          "description": "Proprietary UK enquiry volumes and demand trends for BMW 6 Series 635d engines, sourced from BMWEngines.uk's specialist marketplace activity for the M57TU2.",
+          "creator": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk"
+          },
+          "temporalCoverage": "2025",
+          "spatialCoverage": "United Kingdom"
+        },
+        {
+          "@type": "WebPage",
+          "name": "635d Engine Replacement Cost UK — Compare Quotes",
+          "url": "https://bmwengine.uk/6-series/635d/",
+          "author": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk Specialist Network"
+          },
+          "datePublished": "2026-07-11",
+          "dateModified": "2026-07-11"
+        }
+      ]
+    }
   },
   "hero": {
     "tagPill": "BMW 6 Series 635d • 2007–2010 • 3.0L Twin-Turbo Diesel",

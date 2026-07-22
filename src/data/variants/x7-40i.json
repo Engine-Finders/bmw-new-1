@@ -478,11 +478,92 @@
     }
   },
   "marketIntelligence": {
-    "items": []
+    "items": [
+      {
+        "label": "Most Common Failure",
+        "value": "Oil filter housing cracking — the primary weakness of the B58; BMW faces a class action lawsuit"
+      },
+      {
+        "label": "Average Enquiry Mileage",
+        "value": "40,000–80,000 miles【PATTERN DATA】"
+      },
+      {
+        "label": "Average Replacement Cost",
+        "value": "£4,000–£7,500 reconditioned, supply only depending on generation【BMW-QUOTE】"
+      },
+      {
+        "label": "Most Requested Engine Code",
+        "value": "B58 — one of BMW's most celebrated modern engines【PATTERN DATA】"
+      },
+      {
+        "label": "Peak Enquiry Season",
+        "value": "Spring — luxury SUV season【PATTERN DATA】"
+      },
+      {
+        "label": "Regional Demand",
+        "value": "London (22%), South East (18%), South West (14%)【PATTERN DATA】"
+      }
+    ]
   },
   "faq": {
-    "items": [],
-    "disclaimer": ""
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a BMW X7 xDrive40i engine replacement cost in the UK?",
+        "answer": "A reconditioned B58 engine typically costs £4,000–£7,500 supply only depending on which generation (pre-LCI or LCI), with used units available from £2,000–£4,500. Fitting adds £1,500–£2,500 depending on the workshop. Use our calculator for a figure specific to your car."
+      },
+      {
+        "id": 2,
+        "question": "Is the BMW X7 xDrive40i engine reliable?",
+        "answer": "Yes — the B58 is widely regarded as one of BMW's most reliable modern engines. It's a significant improvement over the N55 and shares its architecture with the bulletproof B58 used across BMW's range and in the Toyota Supra. The main weaknesses are the oil filter housing (plastic, can crack), cooling system components, and carbon build-up on intake valves — all are well-understood and repairable."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the BMW X7 xDrive40i?",
+        "answer": "Oil filter housing cracking (causing coolant and/or oil leaks — BMW faces a class action lawsuit over this), cooling system leaks (water pump and hoses), and carbon build-up on intake valves. The B58 is fundamentally robust — these are maintenance items, not catastrophic design flaws."
+      },
+      {
+        "id": 4,
+        "question": "Is it worth replacing a BMW X7 xDrive40i engine, or should I scrap the car?",
+        "answer": "X7 values remain strong — a well-kept example is often worth £30,000–£60,000+. A £4,000–£7,500 reconditioned engine is only 10–20% of the vehicle's value — well within the 70% BMW threshold. Replacement is almost always worthwhile on a cherished example."
+      },
+      {
+        "id": 5,
+        "question": "How do I find my BMW X7 xDrive40i engine code?",
+        "answer": "Listed on the VIN plate and vehicle documentation. G07 X7 (2019–2022) uses B58B30C; G07 LCI X7 (2022+) uses B58B30P. Tell us your registration date and we'll confirm it for free."
+      },
+      {
+        "id": 6,
+        "question": "Can I repair the B58 oil filter housing, or does it need replacement?",
+        "answer": "It needs replacement — the plastic housing cracks and cannot be reliably repaired. Replacement costs £800–£1,800 and is labour-intensive due to the intake manifold needing removal. Upgraded metal housings are available and recommended. BMW faces a class action lawsuit over this issue. If you notice coolant or oil loss, have it inspected immediately."
+      },
+      {
+        "id": 1,
+        "question": "Section 9 - Trust + Final CTA with 3 trust points, a final CTA paragraph, and a CTA button. The mode is Consultative because the priority was Low.",
+        "answer": ""
+      },
+      {
+        "id": 2,
+        "question": "Meta title and description, following the character count guidelines.",
+        "answer": ""
+      },
+      {
+        "id": 3,
+        "question": "Open Graph and Twitter Card tags.",
+        "answer": ""
+      },
+      {
+        "id": 4,
+        "question": "The complete JSON-LD schema stack, including all required blocks: BreadcrumbList, ItemList (Era Map), ItemList (Engine Codes), FAQPage, Organization, Service, Dataset, WebPage. AggregateRating is omitted as there's no genuine review data.",
+        "answer": ""
+      },
+      {
+        "id": 5,
+        "question": "The Production Note with all necessary internal details and source verification.",
+        "answer": "I need to ensure all the data from Part 1 is correctly referenced. The engine codes (B58B30C and B58B30P) and their specifications must match exactly. The price range in the Service schema should span the full history of the badge as per the Era Map. The tone should be professional and aligned with the brand voice for BMW (Precision & engineering), which fits the consultative mode for a lower-priority page. I'll draft Part 2, making sure all the elements are present and correctly formatted."
+      }
+    ],
+    "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty — always confirm terms with your chosen supplier."
   },
   "trustCta": {
     "h2": "",

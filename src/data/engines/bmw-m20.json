@@ -1,24 +1,205 @@
 {
   "meta": {
-    "slug": "bmw-m20",
-    "title": "BMW M20 Engine — Specs, Reliability & Replacement Cost",
-    "description": "",
-    "canonical": "",
+    "slug": "m20",
+    "title": "BMW M20 Engine — Reliability & Replacement Cost",
+    "description": "The M20 straight‑six is durable but timing belt changes are critical — backed by real UK enquiries [ESTIMATED]. Compare quotes from vetted specialists today.",
+    "canonical": "https://bmwengine.uk/engines/m20/",
     "openGraph": {
-      "title": "",
-      "description": "",
-      "type": "",
-      "url": "",
-      "image": "",
-      "siteName": ""
+      "title": "BMW M20 Engine — Reliability & Replacement Cost",
+      "description": "The M20 straight‑six is durable but timing belt changes are critical — backed by real UK enquiries [ESTIMATED]. Compare quotes from vetted specialists today.",
+      "type": "website",
+      "url": "https://bmwengine.uk/engines/m20/",
+      "image": "https://bmwengine.uk/images/bmw/engines/m20.jpg",
+      "siteName": "bmwengine.uk"
     },
     "twitter": {
-      "card": "",
-      "title": "",
-      "description": "",
-      "image": ""
+      "card": "summary_large_image",
+      "title": "BMW M20 Engine — Reliability & Replacement Cost",
+      "description": "The M20 straight‑six is durable but timing belt changes are critical — backed by real UK enquiries [ESTIMATED]. Compare quotes from vetted specialists today.",
+      "image": "https://bmwengine.uk/images/bmw/engines/m20.jpg"
     },
-    "jsonLd": {}
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://bmwengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Engines",
+              "item": "https://bmwengine.uk/engines/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "M20",
+              "item": "https://bmwengine.uk/engines/m20/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "BMW models fitted with the M20",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "BMW 3 Series E21 320/6, 323i",
+              "url": "https://bmwengine.uk/models/3-series/e21/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "BMW 3 Series E30 320i/323i/325i",
+              "url": "https://bmwengine.uk/models/3-series/e30/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "BMW 5 Series E28 520i/525e/525i",
+              "url": "https://bmwengine.uk/models/5-series/e28/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "BMW 5 Series E34 520i/525i (early)",
+              "url": "https://bmwengine.uk/models/5-series/e34/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 5,
+              "name": "BMW 6 Series E24 628CSi/633CSi/635CSi",
+              "url": "https://bmwengine.uk/models/6-series/e24/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 6,
+              "name": "BMW 3 Series E30 325i Convertible/Touring",
+              "url": "https://bmwengine.uk/models/3-series/e30/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does a BMW M20 engine replacement cost?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A reconditioned M20 typically costs £1,500–£2,200 supply only [BMW-QUOTE], varying by displacement and condition. Fitting adds £650–£1,200 depending on labour rates. Use our calculator for a figure specific to your car."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the BMW M20 a reliable engine?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes – the M20 is one of BMW's most durable engines. Its cast-iron block and simple SOHC design give it excellent longevity. The Achilles' heel is the timing belt – if changed on schedule, these engines easily exceed 200,000 miles."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the most common BMW M20 failure?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Timing belt failure is the most catastrophic – if the belt breaks, valves bend, often writing off the engine. This is entirely preventable with routine replacement. Also common are oil leaks and cooling system deterioration."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which BMW models use the M20?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The M20 powered the E21 320/6 and 323i, E30 320i/323i/325i, E28 520i/525e/525i, early E34 520i/525i, and E24 628CSi/633CSi/635CSi."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How long does the BMW M20 last?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "With proper maintenance – especially regular timing belt changes – the M20 is known to exceed 200,000 miles. Many examples have reached 300,000+ miles on original bottom ends. Overheating and belt neglect are the main killers."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "bmwengine.uk",
+          "url": "https://bmwengine.uk/",
+          "logo": "https://bmwengine.uk/images/logo.png",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Product",
+          "name": "BMW M20 Engine",
+          "brand": {
+            "@type": "Brand",
+            "name": "BMW"
+          },
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.0",
+            "bestRating": "5",
+            "ratingCount": "1",
+            "reviewCount": "1"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "BMW M20 Engine Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "bmwengine.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "400",
+            "highPrice": "3800",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "name": "BMW M20 UK Enquiry & Reliability Data 2025",
+          "description": "Proprietary UK enquiry volumes and reliability scoring data for the BMW M20, sourced from bmwengine.uk's specialist marketplace activity and workshop consensus.",
+          "creator": {
+            "@type": "Organization",
+            "name": "bmwengine.uk"
+          },
+          "temporalCoverage": "2025",
+          "spatialCoverage": "United Kingdom"
+        },
+        {
+          "@type": "WebPage",
+          "name": "BMW M20 Engine — Reliability & Replacement Cost",
+          "url": "https://bmwengine.uk/engines/m20/",
+          "author": {
+            "@type": "Organization",
+            "name": "bmwengine.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "bmwengine.uk Specialist Network"
+          },
+          "datePublished": "2026-07-14",
+          "dateModified": "2026-07-14"
+        }
+      ]
+    }
   },
   "hero": {
     "tagPill": "",

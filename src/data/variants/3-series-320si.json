@@ -522,44 +522,43 @@
       {
         "label": "Regional Demand",
         "value": "South East (22%), London (18%), South West (14%)【PATTERN DATA】"
-      },
-      {
-        "label": "SECTION 8 — FAQ",
-        "value": "1. How much does a BMW 320si engine replacement cost in the UK?"
-      },
-      {
-        "label": "A reconditioned BMW 320si (N45B20S) engine typically costs £4,500–£7,500 supply only. Fitting adds £1,000–£1,800 at independent specialist rates. Finding a replacement engine is increasingly difficult given the limited production of 2,600 units worldwide.",
-        "value": "2. Is the BMW 320si engine reliable?"
-      },
-      {
-        "label": "The N45B20S is a hand-built homologation special engine — unique, characterful, and capable of an 8,000 rpm redline. However, the N45 family has a poor reliability reputation. Common issues include timing chain tensioner failure (often after 100,000 km), VANOS problems, oil consumption, and fuel detonation. Regular maintenance is absolutely essential.",
-        "value": "3. What are the common problems with the BMW 320si?"
-      },
-      {
-        "label": "Timing chain tensioner failure (the defining weak point of the N45 family), oil consumption (valve stem seals and piston ring wear), VANOS system issues (idle vibration and hesitation), and fuel detonation from poor-quality fuel or oil. All are manageable with preventative maintenance and early detection.",
-        "value": "4. Is it worth replacing a BMW 320si engine, or should I scrap the car?"
-      },
-      {
-        "label": "The 320si is a future classic and one of the most affordable homologation specials money can buy. Values for good examples are rising. Against a well-maintained 320si (values £5,000–£15,000+), a £5,000–£6,500 reconditioned engine is 30–60% of the vehicle's value — often worth it for a solid example. The BMW scrap threshold of 70% means evaluating the whole vehicle and its rarity before committing.",
-        "value": "5. How do I find my BMW 320si engine code?"
-      },
-      {
-        "label": "The engine code N45B20S is listed on the VIN plate and vehicle documentation. The 320si was produced only in 2005–2006 with 2,600 units worldwide and 500 right-hand drive examples for the UK. If your E90 is a 320si, it has the N45B20S. Tell us your registration and we'll confirm for free.",
-        "value": "6. Can I repair the timing chain, or does it require engine replacement?"
-      },
-      {
-        "label": "Timing chain tensioner failure is repairable without replacing the engine — if caught early. A preventative chain, tensioner and guide replacement costs £800–£2,500. If the chain snaps and valves meet pistons, a full engine replacement (£4,500–£7,500) is usually required. At the first sign of cold-start rattle, book an inspection immediately. Note that replacement engines for the 320si are increasingly difficult to source due to the limited production run.",
-        "value": "Disclaimer: All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty — always confirm terms with your chosen supplier."
-      },
-      {
-        "label": "SECTION 9, META AND SCHEMA",
-        "value": "PART 2 — SECTION 9 + META + SCHEMA"
       }
     ]
   },
   "faq": {
-    "items": [],
-    "disclaimer": ""
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a BMW 320si engine replacement cost in the UK?",
+        "answer": "A reconditioned BMW 320si (N45B20S) engine typically costs £4,500–£7,500 supply only. Fitting adds £1,000–£1,800 at independent specialist rates. Finding a replacement engine is increasingly difficult given the limited production of 2,600 units worldwide."
+      },
+      {
+        "id": 2,
+        "question": "Is the BMW 320si engine reliable?",
+        "answer": "The N45B20S is a hand-built homologation special engine — unique, characterful, and capable of an 8,000 rpm redline. However, the N45 family has a poor reliability reputation. Common issues include timing chain tensioner failure (often after 100,000 km), VANOS problems, oil consumption, and fuel detonation. Regular maintenance is absolutely essential."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the BMW 320si?",
+        "answer": "Timing chain tensioner failure (the defining weak point of the N45 family), oil consumption (valve stem seals and piston ring wear), VANOS system issues (idle vibration and hesitation), and fuel detonation from poor-quality fuel or oil. All are manageable with preventative maintenance and early detection."
+      },
+      {
+        "id": 4,
+        "question": "Is it worth replacing a BMW 320si engine, or should I scrap the car?",
+        "answer": "The 320si is a future classic and one of the most affordable homologation specials money can buy. Values for good examples are rising. Against a well-maintained 320si (values £5,000–£15,000+), a £5,000–£6,500 reconditioned engine is 30–60% of the vehicle's value — often worth it for a solid example. The BMW scrap threshold of 70% means evaluating the whole vehicle and its rarity before committing."
+      },
+      {
+        "id": 5,
+        "question": "How do I find my BMW 320si engine code?",
+        "answer": "The engine code N45B20S is listed on the VIN plate and vehicle documentation. The 320si was produced only in 2005–2006 with 2,600 units worldwide and 500 right-hand drive examples for the UK. If your E90 is a 320si, it has the N45B20S. Tell us your registration and we'll confirm for free."
+      },
+      {
+        "id": 6,
+        "question": "Can I repair the timing chain, or does it require engine replacement?",
+        "answer": "Timing chain tensioner failure is repairable without replacing the engine — if caught early. A preventative chain, tensioner and guide replacement costs £800–£2,500. If the chain snaps and valves meet pistons, a full engine replacement (£4,500–£7,500) is usually required. At the first sign of cold-start rattle, book an inspection immediately. Note that replacement engines for the 320si are increasingly difficult to source due to the limited production run."
+      }
+    ],
+    "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty — always confirm terms with your chosen supplier."
   },
   "trustCta": {
     "h2": "Why UK BMW 320si Owners Trust BMWEngines.uk",

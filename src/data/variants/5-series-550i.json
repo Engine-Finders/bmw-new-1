@@ -619,64 +619,43 @@
       {
         "label": "Regional Demand",
         "value": "South East (22%), London (16%), North West (12%) — executive car strongholds [PATTERN DATA]"
-      },
-      {
-        "label": "SECTION 8 — FAQ",
-        "value": "1. How much does a BMW 5 Series 550i engine replacement cost in the UK?"
-      },
-      {
-        "label": "A reconditioned 550i V8 engine typically costs £2,500–£6,500 supply only depending on which generation you have (E60's N62 is cheaper; F10/G30's N63 is more expensive). Fitting adds £1,200–£2,200. A full engine replacement with labour can cost £9,000–£14,000 for premium vehicles. Use our calculator for a figure specific to your vehicle.",
-        "value": "2. Is the BMW 5 Series 550i engine reliable?"
-      },
-      {
-        "label": "It depends on which generation your 550i has. The E60's N62 is a silky naturally aspirated V8 with a well‑documented weakness: valve stem seals. The F10's N63 gained a notorious reputation for timing chain issues, excessive oil consumption, and heat‑soak problems. The G30's N63B44M3 is the most reliable of the family, with successive TU revisions significantly improving durability.",
-        "value": "3. What are the common problems with the BMW 5 Series 550i?"
-      },
-      {
-        "label": "On the E60 (N62), the most common issue is valve stem seal failure causing blue smoke and excessive oil consumption. On the F10 (N63), the most serious issues are timing chain stretch and guide failure, excessive oil consumption (0.5–1 litre per 1,000 km), injector failure, and cooling system/heat‑soak problems. The G30's N63B44M3 is significantly improved.",
-        "value": "4. Is it worth replacing a 550i engine, or should I scrap the car?"
-      },
-      {
-        "label": "Depends on vehicle value and condition. Against a tidy £5,000–£15,000 550i, a £3,000–£6,500 recon is 20–65% of the car's value — often worth it on well‑maintained examples. If the timing chain has snapped on an N63, a full engine replacement may be necessary. Get a full diagnostic assessment before committing.",
-        "value": "5. How do I find my 5 Series's engine code?"
-      },
-      {
-        "label": "The E60 (2005–2010) uses the N62B48 — check for a 4.8L naturally aspirated V8. The F10 (2010–2016) uses N63 variants — check for a 4.4L twin‑turbo V8. The G30 (2017–present) uses the N63B44M3 — check for the M550i badge. The engine code is stamped on the engine block and listed on your V5C.",
-        "value": "6. Can I repair a 550i engine issue, or does it need replacement?"
-      },
-      {
-        "label": "Most issues — N62 valve stem seals, N63 timing chain wear (if caught early), oil consumption, injectors, cooling system — are repairable. However, if the timing chain has snapped on an N63, the engine is an interference design — pistons will strike valves. In this case, a full engine replacement is usually more cost‑effective than a rebuild.",
-        "value": "Disclaimer: All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12‑month unlimited‑mileage warranty — always confirm terms with your chosen supplier."
-      },
-      {
-        "label": "Section 9 (Trust + Final CTA), meta tags, Open Graph, Twitter Card, and complete JSON‑LD schema.",
-        "value": "* Brand: BMW"
-      },
-      {
-        "label": "* Domain: bmwengine.uk",
-        "value": "* Data tag: BMW‑"
-      },
-      {
-        "label": "* Specialist count: 20+",
-        "value": "* Scrap threshold: 70%"
-      },
-      {
-        "label": "* CTA Mode: Consultative (Priority L)",
-        "value": "* Era Map rows: 4 (N62B48, N63B44A, N63B44O1/N63B44B, N63B44M3)"
-      },
-      {
-        "label": "* Engine codes: N62B48, N63B44A, N63B44O1, N63B44B, N63B44M3",
-        "value": "* Service schema price range: £1,800 (lowest used) to £6,500 (highest rebuilt) — spans full Era Map history"
-      },
-      {
-        "label": "* Model Page needed: BMW 5 Series Generation Pages (E60, F10, G30)",
-        "value": "* Generation Pages needed: BMW 5 Series Generation Pages (for cost inheritance)"
       }
     ]
   },
   "faq": {
-    "items": [],
-    "disclaimer": ""
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a BMW 5 Series 550i engine replacement cost in the UK?",
+        "answer": "A reconditioned 550i V8 engine typically costs £2,500–£6,500 supply only depending on which generation you have (E60's N62 is cheaper; F10/G30's N63 is more expensive). Fitting adds £1,200–£2,200. A full engine replacement with labour can cost £9,000–£14,000 for premium vehicles. Use our calculator for a figure specific to your vehicle."
+      },
+      {
+        "id": 2,
+        "question": "Is the BMW 5 Series 550i engine reliable?",
+        "answer": "It depends on which generation your 550i has. The E60's N62 is a silky naturally aspirated V8 with a well‑documented weakness: valve stem seals. The F10's N63 gained a notorious reputation for timing chain issues, excessive oil consumption, and heat‑soak problems. The G30's N63B44M3 is the most reliable of the family, with successive TU revisions significantly improving durability."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the BMW 5 Series 550i?",
+        "answer": "On the E60 (N62), the most common issue is valve stem seal failure causing blue smoke and excessive oil consumption. On the F10 (N63), the most serious issues are timing chain stretch and guide failure, excessive oil consumption (0.5–1 litre per 1,000 km), injector failure, and cooling system/heat‑soak problems. The G30's N63B44M3 is significantly improved."
+      },
+      {
+        "id": 4,
+        "question": "Is it worth replacing a 550i engine, or should I scrap the car?",
+        "answer": "Depends on vehicle value and condition. Against a tidy £5,000–£15,000 550i, a £3,000–£6,500 recon is 20–65% of the car's value — often worth it on well‑maintained examples. If the timing chain has snapped on an N63, a full engine replacement may be necessary. Get a full diagnostic assessment before committing."
+      },
+      {
+        "id": 5,
+        "question": "How do I find my 5 Series's engine code?",
+        "answer": "The E60 (2005–2010) uses the N62B48 — check for a 4.8L naturally aspirated V8. The F10 (2010–2016) uses N63 variants — check for a 4.4L twin‑turbo V8. The G30 (2017–present) uses the N63B44M3 — check for the M550i badge. The engine code is stamped on the engine block and listed on your V5C."
+      },
+      {
+        "id": 6,
+        "question": "Can I repair a 550i engine issue, or does it need replacement?",
+        "answer": "Most issues — N62 valve stem seals, N63 timing chain wear (if caught early), oil consumption, injectors, cooling system — are repairable. However, if the timing chain has snapped on an N63, the engine is an interference design — pistons will strike valves. In this case, a full engine replacement is usually more cost‑effective than a rebuild."
+      }
+    ],
+    "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12‑month unlimited‑mileage warranty — always confirm terms with your chosen supplier."
   },
   "trustCta": {
     "h2": "Why UK BMW 5 Series 550i Owners Trust BMWEngines.uk",

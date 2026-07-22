@@ -1,26 +1,194 @@
 {
   "meta": {
-    "slug": "bmw-8-series-850i-850ci",
-    "title": "BMW 8 Series 850i / 850Ci Engine Replacement — Compare Prices & Get Quotes",
-    "titleCharCount": 74,
-    "description": "",
-    "descriptionCharCount": 0,
-    "canonical": "",
+    "slug": "8-series-850i",
+    "title": "850i / 850Ci Engine Replacement Cost UK — Compare Quotes",
+    "titleCharCount": 57,
+    "description": "BMW 8 Series V12 — M70 and M73 engines. Real UK costs, common distributor, cooling and intake issues, and honest reliability data. Get free quotes from 20+ vetted BMW specialists today.",
+    "descriptionCharCount": 160,
+    "canonical": "https://bmwengine.uk/8-series/850i/",
     "openGraph": {
-      "title": "",
-      "description": "",
-      "type": "",
-      "url": "",
-      "image": "",
-      "siteName": ""
+      "title": "850i / 850Ci Engine Replacement Cost UK — Compare Quotes",
+      "description": "BMW 8 Series V12 — M70 and M73 engines. Real UK costs, common distributor, cooling and intake issues, and honest reliability data. Get free quotes from 20+ vetted BMW specialists today.",
+      "type": "website",
+      "url": "https://bmwengine.uk/8-series/850i/",
+      "image": "https://bmwengine.uk/images/bmw/hero/8-series-850i.jpg",
+      "siteName": "BMWEngines.uk"
     },
     "twitter": {
-      "card": "",
-      "title": "",
-      "description": "",
-      "image": ""
+      "card": "summary_large_image",
+      "title": "850i / 850Ci Engine Replacement Cost UK — Compare Quotes",
+      "description": "BMW 8 Series V12 — M70 and M73 engines. Real UK costs, common distributor, cooling and intake issues, and honest reliability data.",
+      "image": "https://bmwengine.uk/images/bmw/hero/8-series-850i.jpg"
     },
-    "jsonLd": {}
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://bmwengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "8 Series",
+              "item": "https://bmwengine.uk/8-series/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "850i",
+              "item": "https://bmwengine.uk/8-series/850i/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "BMW 8 Series 850i / 850Ci Engine Era Map",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "E31 850i (M70B50, 1989–1994)",
+              "url": "https://bmwengine.uk/8-series/850i/#m70b50"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "E31 850Ci (M73B54, 1994–1999)",
+              "url": "https://bmwengine.uk/8-series/850i/#m73b54"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "BMW 8 Series 850i / 850Ci Engine Codes",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "M70B50",
+              "url": "https://bmwengine.uk/engines/m70b50/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "M73B54",
+              "url": "https://bmwengine.uk/engines/m73b54/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does a BMW 8 Series 850i / 850Ci engine replacement cost in the UK?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A reconditioned BMW 8 Series V12 engine costs £4,000–£7,000 supply only, varying by generation: M70 £3,500–£6,000, M73 £4,000–£7,000. Fitting adds £1,400–£2,200. These are specialist-only replacements — the V12 requires BMW V12 expertise. A distributor cap replacement costs £400–£800."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the BMW 8 Series 850i / 850Ci reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "That depends on which engine your 850 has. The M70 (1989–1994) is a pioneering V12 with twin ECUs and fragile distributor caps — it requires careful maintenance. The M73 (1994–1999) is significantly improved with single ECU, better electronics and more power. Both are high-maintenance specialist engines. Buy the M73 if you can — it's the better engine."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What are the common problems with the BMW 8 Series 850i / 850Ci?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "M70: distributor cap and rotor wear (misfire, starting issues, £400–£800), intake manifold gasket leaks (rough idle, £800–£1,500), cooling system failure (£500–£1,500). M73: cooling system failure, intake gasket leaks, PCV/oil separator failure (whistling, oil consumption, £500–£1,200). Both: cooling system must be proactively maintained."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is it worth replacing a BMW 8 Series 850i / 850Ci engine, or should I scrap the car?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "8 Series values range from £8,000–£50,000+ depending on condition, mileage and specification. A £4,000–£7,000 reconditioned engine represents 10–80% of vehicle value — our 70% BMW scrap threshold means careful evaluation is required. For a well-maintained, low-mileage example, replacement is often justified. For a higher-mileage example with other issues, assess scrap value first. The 850Ci M73 is generally more valuable and worth the investment."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I find my BMW 8 Series 850i / 850Ci engine code?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The 850i/850Ci has used two engines: M70B50 (1989–1994, 296bhp) and M73B54 (1994–1999, 322bhp). The 850i badge (1989–1994) is the M70; the 850Ci badge (1994–1999) is the M73. Check your VIN or registration year. The code is stamped on the engine block."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I repair the distributor cap issue, or does it need replacement?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes — the distributor caps and rotors must be replaced together (£400–£800). The caps corrode internally, causing misfires and poor running. At the first sign of misfire or hesitation, book an inspection. This is the most common failure on M70 850i models. Use genuine Bosch parts. Replacing the caps and rotors restores smooth running."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "BMWEngines.uk",
+          "url": "https://bmwengine.uk/",
+          "logo": "https://bmwengine.uk/images/bmwengines-logo.png",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "BMW 8 Series 850i / 850Ci Engine Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "2500",
+            "highPrice": "8500",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "name": "BMW 8 Series 850i / 850Ci UK Engine Enquiry Data 2025",
+          "description": "Proprietary UK enquiry volumes and demand trends for BMW 8 Series 850i / 850Ci engines, sourced from BMWEngines.uk's specialist marketplace activity for M70 and M73 variants.",
+          "creator": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk"
+          },
+          "temporalCoverage": "2025",
+          "spatialCoverage": "United Kingdom"
+        },
+        {
+          "@type": "WebPage",
+          "name": "850i / 850Ci Engine Replacement Cost UK — Compare Quotes",
+          "url": "https://bmwengine.uk/8-series/850i/",
+          "author": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk Specialist Network"
+          },
+          "datePublished": "2026-07-11",
+          "dateModified": "2026-07-11"
+        }
+      ]
+    }
   },
   "hero": {
     "tagPill": "BMW 8 Series 850i / 850Ci • 1989–1999 • V12 Two Generations",

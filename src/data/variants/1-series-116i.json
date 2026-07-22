@@ -527,11 +527,67 @@
     }
   },
   "marketIntelligence": {
-    "items": []
+    "items": [
+      {
+        "label": "Most Common Failure",
+        "value": "Timing chain wear — affects N45, N43 and N13 engines; the defining risk of pre-2015 116i models"
+      },
+      {
+        "label": "Average Enquiry Mileage",
+        "value": "70,000–110,000 miles [PATTERN DATA]"
+      },
+      {
+        "label": "Average Replacement Cost",
+        "value": "£1,500–£3,000 reconditioned, supply only [BMW-QUOTE]"
+      },
+      {
+        "label": "Most Requested Engine Code",
+        "value": "N13B16 — the turbocharged Prince engine【PATTERN DATA】"
+      },
+      {
+        "label": "Peak Enquiry Season",
+        "value": "Winter — cold starts expose timing chain issues [PATTERN DATA]"
+      },
+      {
+        "label": "Regional Demand",
+        "value": "London (20%), South East (18%), North West (12%) [PATTERN DATA]"
+      }
+    ]
   },
   "faq": {
-    "items": [],
-    "disclaimer": ""
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a BMW 116i engine replacement cost in the UK?",
+        "answer": "A reconditioned 116i engine typically costs £1,500–£3,000 supply only depending on generation, with used units available from £750–£1,800. Fitting adds £800–£1,500. Use our calculator for a figure specific to your car."
+      },
+      {
+        "id": 2,
+        "question": "Is the BMW 116i engine reliable?",
+        "answer": "It depends entirely on which generation. The early N45 and N43 are simple but suffer from timing chain issues. The N13 turbo has a reputation for timing chain and oil consumption problems. The B38 three-cylinder (2015 onwards) is genuinely reliable. Check the Era Map above for your specific car."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the BMW 116i?",
+        "answer": "Timing chain wear on N45, N43 and N13 engines, injector issues on N43 and N13, oil consumption on N13 and B38, and cooling system wear on B38. The B38 is significantly more reliable than its predecessors."
+      },
+      {
+        "id": 4,
+        "question": "Is it worth replacing a BMW 116i engine, or should I scrap the car?",
+        "answer": "Depends on vehicle value and generation. Against a well-kept £5,000–£8,000 F20 116i, a £2,000 recon is 25–40% of the car's value — worth it. Against a tired £2,000 E87 example, the same recon exceeds our 70% BMW threshold — get a scrap valuation first."
+      },
+      {
+        "id": 5,
+        "question": "How do I find my BMW 116i engine code?",
+        "answer": "Listed on the VIN plate and vehicle documentation. As a rule of thumb: 2004–2007 is N45B16, 2007–2011 is N43B16, 2011–2015 is N13B16, 2015 onwards is B38A15. Tell us your registration date and we'll confirm it for free."
+      },
+      {
+        "id": 6,
+        "question": "Can I repair the 116i timing chain, or does it need replacement?",
+        "answer": "Yes — if caught early. A preventative chain and tensioner replacement (£600–£1,800) is far cheaper than a catastrophic chain snap (£1,200–£3,000 engine replacement). At the first sign of cold-start rattle on any pre-2015 116i, book an inspection immediately."
+      }
+    ],
+    "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty — always confirm terms with your chosen supplier."
   },
   "trustCta": {
     "h2": "",

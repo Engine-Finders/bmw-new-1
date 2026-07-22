@@ -691,80 +691,43 @@
       {
         "label": "Regional Demand",
         "value": "South East (22%), London (16%), North West (12%) — executive car strongholds [PATTERN DATA]"
-      },
-      {
-        "label": "SECTION 8 — FAQ",
-        "value": "1. How much does a BMW 5 Series 528i engine replacement cost in the UK?"
-      },
-      {
-        "label": "A reconditioned 528i engine typically costs £800–£4,200 supply only depending on which generation you have (M30/M52 engines are cheaper; N20 engines are more expensive). Fitting adds £1,000–£1,800. A full engine replacement with labour can cost £9,000–£13,000 for premium vehicles. Use our calculator for a figure specific to your vehicle.",
-        "value": "2. Is the BMW 5 Series 528i engine reliable?"
-      },
-      {
-        "label": "It depends entirely on which generation your 528i has. The M30 (E12/E28) is one of BMW's most bulletproof engines. The M52 (E39) and N52 (E60) are silky smooth but ageing — water pump failure is common on the N52. The N20 (F10) is efficient but has a well‑documented timing chain guide weakness. All 528i engines demand strict maintenance — regular oil changes (8,000–10,000 miles) are essential.",
-        "value": "3. What are the common problems with the BMW 5 Series 528i?"
-      },
-      {
-        "label": "On the N20 (F10), the most serious issue is timing chain guide failure — the plastic guides can become brittle and fail, causing chain stretch and potential catastrophic engine damage. On the N52 (E60), the electric water pump is the weakest link. On the M52 (E39) and N52 (E60), oil leaks (valve cover gasket, oil filter housing) are common, and VANOS/Valvetronic issues can occur.",
-        "value": "4. Is it worth replacing a 528i engine, or should I scrap the car?"
-      },
-      {
-        "label": "Depends on vehicle value and condition. Against a tidy £5,000–£15,000 5 Series, a £1,600–£4,200 recon is 15–45% of the car's value — often worth it on well‑maintained examples. If the timing chain has snapped on an N20, a full engine replacement may be necessary. Get a full diagnostic assessment before committing.",
-        "value": "5. How do I find my 5 Series's engine code?"
-      },
-      {
-        "label": "The E12/E28 (1976–1988) uses the M30B28 — check for a 2.8L SOHC straight-six. The E39 (1996–2000) uses the M52B28 — check for a 2.8L DOHC straight-six. The E60 (2007–2010) uses the N52B30 — check for a 3.0L DOHC straight-six. The F10 (2011–2016) uses the N20B20 — check for a 2.0L turbocharged four-cylinder. The engine code is stamped on the engine block and listed on your V5C.",
-        "value": "6. Can I repair a 528i engine issue, or does it need replacement?"
-      },
-      {
-        "label": "Most issues — timing chain wear (if caught early on N20), water pump failure (N52), oil leaks, VANOS/Valvetronic issues — are repairable. However, if the timing chain has snapped on an N20, the engine is an interference design — pistons will strike valves. In this case, a full engine replacement is usually more cost‑effective than a rebuild.",
-        "value": "Disclaimer: All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12‑month unlimited‑mileage warranty — always confirm terms with your chosen supplier."
-      },
-      {
-        "label": "Section 9 (Trust + Final CTA), meta tags, Open Graph, Twitter Card, and complete JSON‑LD schema.",
-        "value": "* Brand: BMW"
-      },
-      {
-        "label": "* Domain: bmwengine.uk",
-        "value": "* Data tag: BMW‑"
-      },
-      {
-        "label": "* Specialist count: 20+",
-        "value": "* Scrap threshold: 70%"
-      },
-      {
-        "label": "* CTA Mode: Consultative (Priority L)",
-        "value": "* Era Map rows: 5 (M30B28, M52B28, N52B30, N20B20)"
-      },
-      {
-        "label": "* Engine codes: M30B28, M52B28, N52B30, N20B20",
-        "value": "* Service schema price range: £800 (lowest used) to £4,200 (highest rebuilt) — spans full Era Map history"
-      },
-      {
-        "label": "* Model Page needed: BMW 5 Series Generation Pages (E12, E28, E39, E60, F10)",
-        "value": "* Generation Pages needed: BMW 5 Series Generation Pages (for cost inheritance)"
-      },
-      {
-        "label": "Section 9 (Trust + Final CTA), meta tags, Open Graph tags, Twitter Card tags, and the full JSON-LD schema stack, along with the production note.",
-        "value": "The user's deep need here is clear: they want the remaining sections of the variant page to complete the full document. They're likely following the structured workflow defined in the AI Handover document, needing a complete, ready-to-publish page that includes all commercial elements, metadata, and structured data for SEO. They might be in a production environment where consistency with the established templates is crucial."
-      },
-      {
-        "label": "For Part 2, I need to ensure all elements match the style and requirements from the Part 1 output. The brand is BMW, domain is bmwengine.uk, scrap threshold is 70%, specialist count is 20+, and the CTA mode is Consultative (as per the Priority L from the inventory). The Era Map has four engine variants spanning from the M30 to the N20.",
-        "value": "I should follow the exact structure from the prompt: Section 9 with three trust points and final CTA, then meta title/description following the character limits, then OG/Twitter tags, then the JSON-LD schema with all required blocks. The schema needs to include BreadcrumbList, two ItemList instances (for Era Map and Engine Codes), FAQPage with all six questions, Organization, Service with the price range spanning the full history, Dataset, WebPage, and note that AggregateRating is omitted."
-      },
-      {
-        "label": "The Service schema's price range should span the full Era Map history from the lowest used price to the highest rebuilt price as stated in the summary. I'll use the low and high figures from the replacement costs table: £800 for the cheapest used M30 up to £4,200 for the most expensive rebuilt N20.",
-        "value": "The Production Note should confirm all the standard omissions and consistency checks, and note the Authority Model status for these engines being newly assigned based on the live verification sources listed."
-      },
-      {
-        "label": "I need to make sure the FAQ answers are consistent with the Part 1 content and the overall tone of the BMW brand voice profile (Precision & engineering). The trust points should highlight specialist knowledge across the different engine generations.",
-        "value": "BMW 5 Series 528i — VARIANT PAGE, PART 2"
       }
     ]
   },
   "faq": {
-    "items": [],
-    "disclaimer": ""
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a BMW 5 Series 528i engine replacement cost in the UK?",
+        "answer": "A reconditioned 528i engine typically costs £800–£4,200 supply only depending on which generation you have (M30/M52 engines are cheaper; N20 engines are more expensive). Fitting adds £1,000–£1,800. A full engine replacement with labour can cost £9,000–£13,000 for premium vehicles. Use our calculator for a figure specific to your vehicle."
+      },
+      {
+        "id": 2,
+        "question": "Is the BMW 5 Series 528i engine reliable?",
+        "answer": "It depends entirely on which generation your 528i has. The M30 (E12/E28) is one of BMW's most bulletproof engines. The M52 (E39) and N52 (E60) are silky smooth but ageing — water pump failure is common on the N52. The N20 (F10) is efficient but has a well‑documented timing chain guide weakness. All 528i engines demand strict maintenance — regular oil changes (8,000–10,000 miles) are essential."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the BMW 5 Series 528i?",
+        "answer": "On the N20 (F10), the most serious issue is timing chain guide failure — the plastic guides can become brittle and fail, causing chain stretch and potential catastrophic engine damage. On the N52 (E60), the electric water pump is the weakest link. On the M52 (E39) and N52 (E60), oil leaks (valve cover gasket, oil filter housing) are common, and VANOS/Valvetronic issues can occur."
+      },
+      {
+        "id": 4,
+        "question": "Is it worth replacing a 528i engine, or should I scrap the car?",
+        "answer": "Depends on vehicle value and condition. Against a tidy £5,000–£15,000 5 Series, a £1,600–£4,200 recon is 15–45% of the car's value — often worth it on well‑maintained examples. If the timing chain has snapped on an N20, a full engine replacement may be necessary. Get a full diagnostic assessment before committing."
+      },
+      {
+        "id": 5,
+        "question": "How do I find my 5 Series's engine code?",
+        "answer": "The E12/E28 (1976–1988) uses the M30B28 — check for a 2.8L SOHC straight-six. The E39 (1996–2000) uses the M52B28 — check for a 2.8L DOHC straight-six. The E60 (2007–2010) uses the N52B30 — check for a 3.0L DOHC straight-six. The F10 (2011–2016) uses the N20B20 — check for a 2.0L turbocharged four-cylinder. The engine code is stamped on the engine block and listed on your V5C."
+      },
+      {
+        "id": 6,
+        "question": "Can I repair a 528i engine issue, or does it need replacement?",
+        "answer": "Most issues — timing chain wear (if caught early on N20), water pump failure (N52), oil leaks, VANOS/Valvetronic issues — are repairable. However, if the timing chain has snapped on an N20, the engine is an interference design — pistons will strike valves. In this case, a full engine replacement is usually more cost‑effective than a rebuild."
+      }
+    ],
+    "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12‑month unlimited‑mileage warranty — always confirm terms with your chosen supplier."
   },
   "trustCta": {
     "h2": "Why UK BMW 5 Series 528i Owners Trust BMWEngines.uk",

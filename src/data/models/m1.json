@@ -301,68 +301,43 @@
       {
         "metric": "Overall Rating",
         "value": "★★★★★ 4.8/5"
-      },
-      {
-        "metric": "SECTION 4 — GENERATIONS — <GenerationsGrid>",
-        "value": "H2: BMW M1 — One Generation, One Legend"
-      },
-      {
-        "metric": "Sub-headline: The M1 is BMW's first and only standalone M car — a mid-engine supercar developed with Lamborghini, produced in tiny numbers, and now the most collectible BMW ever made.",
-        "value": "BMW M1 E26 🔥 The Original M Car — 453 produced [PATTERN DATA]"
-      },
-      {
-        "metric": "1978–1981 • M88/1 3.5L straight-six • 277 bhp / 330 Nm",
-        "value": "★★★★★"
-      },
-      {
-        "metric": "Our Verdict: The car that started BMW M GmbH — a mid-engine supercar with a Lamborghini-developed chassis, Giorgetto Giugiaro design, and the legendary M88 straight-six. Only 453 were built, making it one of the rarest BMWs ever. Today, it's a seven-figure collector's item — and the M88 engine is the heart of its legend.",
-        "value": "Explore the E26 →"
-      },
-      {
-        "metric": "The M88 — The Engine That Started It All",
-        "value": "The M88 is a 3,453 cc straight-six DOHC petrol engine produced from 1978 to 1989.It is based on the DOHC version of the BMW M49 engine used in the BMW 3.0CSi racing cars.It features four valves per cylinder, a single-row timing chain, and Kugelfischer mechanical fuel injection with individual throttle bodies."
-      },
-      {
-        "metric": "Variant",
-        "value": "Power"
-      },
-      {
-        "metric": "Application",
-        "value": "M88/1"
-      },
-      {
-        "metric": "277 bhp @ 6,500 rpm",
-        "value": "BMW M1 (road)"
-      },
-      {
-        "metric": "M88/1 (Procar)",
-        "value": "~470 bhp @ 9,000 rpm"
-      },
-      {
-        "metric": "BMW M1 Procar",
-        "value": "M88/3"
-      },
-      {
-        "metric": "286 bhp",
-        "value": "BMW M635CSi, E28 M5"
-      },
-      {
-        "metric": "The M88 was produced alongside the BMW M30 engine as the higher-performance option.In 1989, an updated version of the S38 became the worldwide replacement for the M88.",
-        "value": "Read the full comparison: BMW M1 vs M635CSi →"
       }
     ]
   },
   "generations": {
-    "h2": "",
-    "subHeadline": "",
-    "cards": [],
+    "h2": "BMW M1 — One Generation, One Legend",
+    "subHeadline": "The M1 is BMW's first and only standalone M car — a mid-engine supercar developed with Lamborghini, produced in tiny numbers, and now the most collectible BMW ever made.",
+    "cards": [
+      {
+        "title": "BMW M1 E26",
+        "badge": "🔥 The Original M Car — 453 produced [PATTERN DATA]",
+        "meta": "1978–1981 • M88/1 3.5L straight-six • 277 bhp / 330 Nm",
+        "rating": "★★★★★",
+        "verdict": "The car that started BMW M GmbH — a mid-engine supercar with a Lamborghini-developed chassis, Giorgetto Giugiaro design, and the legendary M88 straight-six. Only 453 were built, making it one of the rarest BMWs ever. Today, it's a seven-figure collector's item — and the M88 engine is the heart of its legend.",
+        "cta": {
+          "label": "Explore the E26 →",
+          "href": "#"
+        }
+      },
+      {
+        "title": "The M88 — The Engine That Started It All",
+        "badge": "",
+        "meta": "The M88 is a 3,453 cc straight-six DOHC petrol engine produced from 1978 to 1989.It is based on the DOHC version of the BMW M49 engine used in the BMW 3.0CSi racing cars.It features four valves per cylinder, a single-row timing chain, and Kugelfischer mechanical fuel injection with individual throttle bodies.",
+        "rating": "",
+        "verdict": "",
+        "cta": {
+          "label": "",
+          "href": "#"
+        }
+      }
+    ],
     "rangeTable": {
       "title": "",
       "columns": [],
       "rows": []
     },
     "comparisonLink": {
-      "label": "",
+      "label": "Read the full comparison: BMW M1 vs M635CSi →",
       "href": "#"
     }
   },

@@ -80,79 +80,44 @@
       {
         "metric": "Overall Engine Score",
         "value": "66/100"
-      },
-      {
-        "metric": "SECTION 3 — VERDICT & RATING",
-        "value": "H2: BMW N47 — Our Verdict & Rating"
-      },
-      {
-        "metric": "Star rating: 3½★ out of 5",
-        "value": "Confidence: 92% confidence — based on 1,450 UK enquiries and cross‑referenced specialist rebuild reports [BMW-VERIFIED]."
-      },
-      {
-        "metric": "Engine Score breakdown:",
-        "value": "Dimension"
-      },
-      {
-        "metric": "Score (of 20)",
-        "value": "How it's determined"
-      },
-      {
-        "metric": "Reliability",
-        "value": "14"
-      },
-      {
-        "metric": "3.5★ × 4 = 14",
-        "value": "Repair Cost"
-      },
-      {
-        "metric": "16",
-        "value": "Midpoint of Reconditioned supply range (£3,200–£5,500 → £4,350) — £3,000–£4,999 bracket → 16"
-      },
-      {
-        "metric": "Repairability",
-        "value": "12"
-      },
-      {
-        "metric": "Mix of cheap fixes (EGR, sensors) and a few expensive ones (timing chain, turbo)",
-        "value": "Parts Supply"
-      },
-      {
-        "metric": "20",
-        "value": "Parts are cheap and available from multiple UK suppliers same‑day; N47 is one of the most common BMW diesels"
-      },
-      {
-        "metric": "Replacement Economics",
-        "value": "4"
-      },
-      {
-        "metric": "Reconditioned cost (£4,350) as % of lowest typical host value (~£2,500 E90 320d) = 174% — exceeds brand scrap threshold",
-        "value": "Total"
-      },
-      {
-        "metric": "66/100",
-        "value": "One-line verdict: \"The N47 is dependable long‑term — but its rear‑mounted timing chain fails without warning past 100,000 miles — buy only with documented chain history.\" (Clause 1: 6 words. Clause 2: 11 words. Clause 3: 6 words. Total: 23 words.)"
-      },
-      {
-        "metric": "Best For: High‑mileage motorway drivers who service on schedule.",
-        "value": "Avoid If: No documented timing‑chain history above 80,000 miles."
       }
     ]
   },
   "verdictRating": {
-    "starRating": "",
-    "confidence": "",
-    "scoreNote": "",
+    "starRating": "3½★ out of 5",
+    "confidence": "92% confidence — based on 1,450 UK enquiries and cross‑referenced specialist rebuild reports [BMW-VERIFIED].",
+    "scoreNote": "Engine Score breakdown:",
     "scoreBreakdown": {
       "columns": [
         "Dimension",
         "Score (of 20)"
       ],
-      "rows": []
+      "rows": [
+        {
+          "dimension": "Reliability",
+          "score": "14 (3.5★ × 4 = 14)"
+        },
+        {
+          "dimension": "Repair Cost",
+          "score": "16 (Midpoint of Reconditioned supply range (£3,200–£5,500 → £4,350) — £3,000–£4,999 bracket → 16)"
+        },
+        {
+          "dimension": "Repairability",
+          "score": "12 (Mix of cheap fixes (EGR, sensors) and a few expensive ones (timing chain, turbo))"
+        },
+        {
+          "dimension": "Parts Supply",
+          "score": "20 (Parts are cheap and available from multiple UK suppliers same‑day; N47 is one of the most common BMW diesels)"
+        },
+        {
+          "dimension": "Replacement Economics",
+          "score": "4 (Reconditioned cost (£4,350) as % of lowest typical host value (~£2,500 E90 320d) = 174% — exceeds brand scrap threshold)"
+        }
+      ]
     },
-    "oneLineVerdict": "",
-    "bestFor": "",
-    "avoidIf": ""
+    "oneLineVerdict": "\"The N47 is dependable long‑term — but its rear‑mounted timing chain fails without warning past 100,000 miles — buy only with documented chain history.\" (Clause 1: 6 words. Clause 2: 11 words. Clause 3: 6 words. Total: 23 words.)",
+    "bestFor": "High‑mileage motorway drivers who service on schedule.",
+    "avoidIf": "No documented timing‑chain history above 80,000 miles."
   },
   "compatibility": {
     "columns": [

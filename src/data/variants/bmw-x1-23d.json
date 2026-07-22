@@ -1,26 +1,182 @@
 {
   "meta": {
-    "slug": "bmw-x1-23d",
-    "title": "BMW X1 23d Engine Replacement — Compare Prices & Get Quotes",
-    "titleCharCount": 59,
-    "description": "",
-    "descriptionCharCount": 0,
-    "canonical": "",
+    "slug": "x1-23d",
+    "title": "X1 23d Engine Replacement Cost UK — Compare Quotes",
+    "titleCharCount": 57,
+    "description": "The 204bhp N47S twin-turbo diesel — real UK costs, common timing chain and DPF issues, and honest reliability data. Get free quotes from 20+ vetted BMW specialists today.",
+    "descriptionCharCount": 160,
+    "canonical": "https://bmwengine.uk/x1/23d/",
     "openGraph": {
-      "title": "",
-      "description": "",
-      "type": "",
-      "url": "",
-      "image": "",
-      "siteName": ""
+      "title": "X1 23d Engine Replacement Cost UK — Compare Quotes",
+      "description": "The 204bhp N47S twin-turbo diesel — real UK costs, common timing chain and DPF issues, and honest reliability data. Get free quotes from 20+ vetted BMW specialists today.",
+      "type": "website",
+      "url": "https://bmwengine.uk/x1/23d/",
+      "image": "https://bmwengine.uk/images/bmw/hero/x1-23d.jpg",
+      "siteName": "BMWEngines.uk"
     },
     "twitter": {
-      "card": "",
-      "title": "",
-      "description": "",
-      "image": ""
+      "card": "summary_large_image",
+      "title": "X1 23d Engine Replacement Cost UK — Compare Quotes",
+      "description": "The 204bhp N47S twin-turbo diesel — real UK costs, common timing chain and DPF issues, and honest reliability data.",
+      "image": "https://bmwengine.uk/images/bmw/hero/x1-23d.jpg"
     },
-    "jsonLd": {}
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://bmwengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "X1",
+              "item": "https://bmwengine.uk/x1/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "23d",
+              "item": "https://bmwengine.uk/x1/23d/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "BMW X1 23d Engine Era Map",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "E84 X1 23d (N47S, 2009–2015)",
+              "url": "https://bmwengine.uk/x1/23d/#n47s"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "BMW X1 23d Engine Codes",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "N47S 2.0L Twin-Turbo Diesel",
+              "url": "https://bmwengine.uk/engines/n47s/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does a BMW X1 23d engine replacement cost in the UK?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A reconditioned BMW X1 23d engine (N47S) typically costs £3,500–£5,500 supply only. Fitting adds £1,000–£1,500. A timing chain replacement costs £1,500–£3,500. The N47S is a specialist engine requiring BMW diesel expertise."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the BMW X1 23d reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The N47S shares the N47's rear-mounted timing chain vulnerability — this is the defining risk. Post-2011 models have revised chain guides. DPF and EGR issues are common with short-journey use. The twin-turbo system adds complexity. Regular maintenance and long journeys are essential. A post-2011 example with documented chain history is the best bet."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What are the common problems with the BMW X1 23d?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Timing chain tensioner wear (cold-start rattle, £1,500–£3,500), DPF blockage (warning light, reduced power, £400–£1,200), EGR cooler failure (coolant loss, white smoke, £500–£1,200), and twin-turbo actuator wear (loss of boost, £500–£1,200). The twin-turbo system also adds potential turbo complexity."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is it worth replacing a BMW X1 23d engine, or should I scrap the car?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "X1 23d values range from £5,000–£15,000 depending on condition and mileage. A £3,500–£5,500 reconditioned engine represents 25–80% of vehicle value — our 70% BMW scrap threshold means careful evaluation is required. For a well-maintained, low-mileage example, replacement is often justified. For a higher-mileage example with other issues, assess scrap value first."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I find my BMW X1 23d engine code?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The 23d uses a single engine code: N47S. This is BMW's twin-turbo version of the 2.0-litre four-cylinder diesel, producing 204bhp. The code is stamped on the engine block; your VIN and vehicle documentation will also confirm the specification."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I repair the timing chain issue, or does it need replacement?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes — if caught early. Timing chain and guide replacement costs £1,500–£3,500 and is significantly cheaper than a full engine replacement (£3,500–£5,500). The job requires engine removal on the X1 due to the rear-mounted chain, making it a major investment. At the first sign of cold-start rattle, book an inspection immediately — ignored chain wear can lead to catastrophic piston-valve contact."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "BMWEngines.uk",
+          "url": "https://bmwengine.uk/",
+          "logo": "https://bmwengine.uk/images/bmwengines-logo.png",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "BMW X1 23d Engine Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "2500",
+            "highPrice": "10000",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "name": "BMW X1 23d UK Engine Enquiry Data 2025",
+          "description": "Proprietary UK enquiry volumes and demand trends for BMW X1 23d engines, sourced from BMWEngines.uk's specialist marketplace activity for the N47S.",
+          "creator": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk"
+          },
+          "temporalCoverage": "2025",
+          "spatialCoverage": "United Kingdom"
+        },
+        {
+          "@type": "WebPage",
+          "name": "X1 23d Engine Replacement Cost UK — Compare Quotes",
+          "url": "https://bmwengine.uk/x1/23d/",
+          "author": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk Specialist Network"
+          },
+          "datePublished": "2026-07-11",
+          "dateModified": "2026-07-11"
+        }
+      ]
+    }
   },
   "hero": {
     "tagPill": "BMW X1 23d • 2009–2015 • 2.0L Twin-Turbo Diesel",

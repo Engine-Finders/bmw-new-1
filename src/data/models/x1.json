@@ -1,24 +1,256 @@
 {
   "meta": {
     "slug": "x1",
-    "title": "X1 Engines — The Complete UK Guide",
-    "titleCharCount": 34,
-    "description": "",
-    "descriptionCharCount": 0,
+    "title": "BMW X1 Engine Replacement Cost UK — Compare Quotes",
+    "titleCharCount": 55,
+    "description": "Every BMW X1 engine — N47 to B48. 3 generations, real UK costs and reliability data. Compare prices from 20+ vetted BMW specialists today.",
+    "descriptionCharCount": 155,
     "openGraph": {
-      "title": "",
-      "description": "",
-      "type": "",
-      "url": "",
-      "image": "",
-      "siteName": ""
+      "title": "BMW X1 Engine Replacement Cost UK — Compare Quotes",
+      "description": "Every BMW X1 engine — N47 to B48. 3 generations, real UK costs and reliability data. Compare prices from 20+ vetted BMW specialists today.",
+      "type": "website",
+      "url": "https://bmwengine.uk/x1/",
+      "image": "https://bmwengine.uk/images/bmw-x1-hero.jpg",
+      "siteName": "BMWEngines.uk"
     },
     "twitter": {
-      "card": "",
-      "title": "",
-      "description": ""
+      "card": "summary_large_image",
+      "title": "BMW X1 Engine Replacement Cost UK — Compare Quotes",
+      "description": "Every BMW X1 engine — N47 to B48. 3 generations, real UK costs and reliability data. Compare prices from 20+ vetted BMW specialists today."
     },
-    "jsonLd": {}
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://bmwengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "X1",
+              "item": "https://bmwengine.uk/x1/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "BMW X1 Generations",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "BMW X1 E84 (2009–2015)",
+              "url": "https://bmwengine.uk/x1/e84/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "BMW X1 F48 (2015–2022)",
+              "url": "https://bmwengine.uk/x1/f48/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "BMW X1 U11 (2022–present)",
+              "url": "https://bmwengine.uk/x1/u11/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "BMW X1 Engine Codes",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "N46B20 Engine",
+              "url": "https://bmwengine.uk/engines/n46b20/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "N20B16 Engine",
+              "url": "https://bmwengine.uk/engines/n20b16/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "N20B20 Engine",
+              "url": "https://bmwengine.uk/engines/n20b20/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "N52B30 Engine",
+              "url": "https://bmwengine.uk/engines/n52b30/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 5,
+              "name": "N55B30 Engine",
+              "url": "https://bmwengine.uk/engines/n55b30/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 6,
+              "name": "N47D20C Engine",
+              "url": "https://bmwengine.uk/engines/n47d20c/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 7,
+              "name": "B38A15 Engine",
+              "url": "https://bmwengine.uk/engines/b38a15/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 8,
+              "name": "B48B20 Engine",
+              "url": "https://bmwengine.uk/engines/b48b20/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 9,
+              "name": "B47C20A Engine",
+              "url": "https://bmwengine.uk/engines/b47c20a/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 10,
+              "name": "B47C20B Engine",
+              "url": "https://bmwengine.uk/engines/b47c20b/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does a BMW X1 engine replacement cost in the UK?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A reconditioned BMW X1 engine typically costs £2,800–£5,500 supply only [BMW-QUOTE] — from the B38 at £2,200–£3,800 to the N47 at £3,200–£5,500. Fitting adds £650–£1,500. Use our calculator for a personalised figure."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which BMW X1 engine is the most reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The B48B20 petrol and B47C20A/B diesel in the F48 and U11 — the B-family engines are the modern gold standard. The N52B30 in the E84 is the robust classic pick."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which BMW X1 engine should I avoid?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No engine outright — but an E84 N47D20C without a documented timing-chain replacement is the one purchase we consistently advise against. The N20 petrol in the E84 carries the same timing chain risk. An F48 B47/B48 has no such caveat."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I know if my X1 engine needs replacing?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "By engine: cold-start rattle (N47/N20 timing chain), chain noise under load (N47/N20), oil drips (N47 EGR cooler), coolant loss (B48 cooling system). On the E84, any rattling on startup is a warning sign. Caught early, it's a repair; ignored, it's a £2,800–£5,500 engine [BMW-QUOTE]. Use our diagnostic calculator for a personalised assessment."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is it worth replacing a BMW X1 engine?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Depends entirely on generation. Against a £12,000 F48, a £3,000–£5,000 B47/B48 recon is 25–42% — ✅ safe. Against a £4,000 E84, a £3,200–£5,500 N47 recon is 80–138% — ❌ walk away. Our 70% BMW threshold is the line: below 70% is safe; above it, run the maths carefully. Use our calculator for your car."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which BMW X1 should I buy?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "2016+ F48 with the B47 diesel or B48 petrol — the B-family engines fixed the chain issue, the UKL platform is practical, and the values are sensible (£12,000–£20,000). For the classic, E84 with the N52 straight-six — the only RWD X1 and the robust petrol pick. Avoid E84 N47s without documented chain history. The U11 is the future — buy it with confidence."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I find my BMW X1 engine code?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Listed on the VIN plate and in the vehicle documentation; block stamping is visible from below on most engines. Or tell us your generation and variant (E84 18d, F48 20i, U11 18i) and we'll identify it — 20+ vetted specialists will confirm it for free."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "BMW X1 vs X3 — which is more reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Mechanically they share engines across similar eras — the N47/B47/B48 story is similar. The X1 is smaller and lighter, so it works the powertrain less hard; the X3 is larger but benefits from the same engineering. Buy on engine and year, not badge. The X1 offers more value; the X3 offers more space."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "BMWEngines.uk",
+          "url": "https://bmwengine.uk/",
+          "logo": "https://bmwengine.uk/images/bmwengines-logo.png",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "BMW X1 Engine Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "2800",
+            "highPrice": "5500",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "name": "BMW X1 UK Engine Enquiry Data 2025",
+          "description": "Proprietary UK enquiry volumes and demand trends for BMW X1 engines, sourced from BMWEngines.uk's specialist marketplace activity.",
+          "creator": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk"
+          },
+          "temporalCoverage": "2025",
+          "spatialCoverage": "United Kingdom"
+        },
+        {
+          "@type": "WebPage",
+          "name": "BMW X1 Engine Replacement Cost UK — Compare Quotes",
+          "url": "https://bmwengine.uk/x1/",
+          "author": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk Specialist Network"
+          },
+          "datePublished": "2026-07-07",
+          "dateModified": "2026-07-07"
+        }
+      ]
+    }
   },
   "hero": {
     "tagPill": "BMW X1 • 2009–Present • 3 Generations (E84, F48, U11) • N47, N52, N20, N55, B38, B47, B48",
@@ -135,116 +367,65 @@
       {
         "metric": "Overall Rating",
         "value": "★★★★☆ 3.8/5"
-      },
-      {
-        "metric": "SECTION 4 — GENERATIONS — <GenerationsGrid>",
-        "value": "H2: BMW X1 Generations — Find Your Vehicle"
-      },
-      {
-        "metric": "Sub-headline: Three generations, two platforms, and 15 years of BMW's entry-level SUV. The right X1 depends on which generation and which engine you choose.",
-        "value": "First Generation — E84 (2009–2015)"
-      },
-      {
-        "metric": "BMW X1 E84 🔥 Most Enquired — N47 drives volume [BMW-VERIFIED]",
-        "value": "2009–2015 • N46, N20, N47, N52, N55 — RWD-based (E90 platform)"
-      },
-      {
-        "metric": "★★★☆☆",
-        "value": "Our Verdict: The original X1 — based on the E90 3 Series platform with rear-wheel-drive as standard. The N52 straight-six is the robust pick; the N47 diesel carries the chain-tensioner caveat; the N20 petrol has timing chain issues. Buy the N52 or a diesel with documented chain history."
-      },
-      {
-        "metric": "Explore the E84 →",
-        "value": "Second Generation — F48 (2015–2022)"
-      },
-      {
-        "metric": "BMW X1 F48 🔥 Most Enquired — B47/B48 drives volume [BMW-VERIFIED]",
-        "value": "2015–2022 • B38, B47, B48 — FWD-based (UKL2 platform)"
-      },
-      {
-        "metric": "★★★★☆",
-        "value": "Our Verdict: The second-generation X1 — switched to front-wheel-drive-based UKL2 platform. The B47 diesel replaced the N47, finally fixing the chain issue. The B38 three-cylinder and B48 four-cylinder are the modern gold standard. This is the X1 generation to buy."
-      },
-      {
-        "metric": "Explore the F48 →",
-        "value": "Third Generation — U11 (2022–present)"
-      },
-      {
-        "metric": "BMW X1 U11",
-        "value": "2022–present • B38, B48, B47 — FWD-based (UKL2 platform), mild-hybrid, PHEV, iX1 electric"
-      },
-      {
-        "metric": "★★★★★",
-        "value": "Our Verdict: The third-generation X1 — revealed June 2022, launched October 2022. Available with petrol, diesel, plug-in hybrid, and fully electric iX1 powertrains. The B-family engines are the most dependable ever fitted to the badge — buy with confidence."
-      },
-      {
-        "metric": "Explore the U11 →",
-        "value": "The Platform Divide — The Line That Matters Most"
-      },
-      {
-        "metric": "E84 (2009–2015)",
-        "value": "F48 (2015–2022)"
-      },
-      {
-        "metric": "U11 (2022–present)",
-        "value": "Platform"
-      },
-      {
-        "metric": "E90 3 Series (RWD)",
-        "value": "UKL2 (FWD-based)"
-      },
-      {
-        "metric": "UKL2 (FWD-based)",
-        "value": "Core diesel"
-      },
-      {
-        "metric": "N47 — chain risk",
-        "value": "B47 — revised architecture"
-      },
-      {
-        "metric": "B47 — revised architecture",
-        "value": "Core petrol"
-      },
-      {
-        "metric": "N46/N20/N52/N55 — N20 chain risk",
-        "value": "B38/B48 — modular family"
-      },
-      {
-        "metric": "B38/B48 — modular family",
-        "value": "Core issue"
-      },
-      {
-        "metric": "N47/N20 timing chain",
-        "value": "None significant"
-      },
-      {
-        "metric": "None significant",
-        "value": "Our position"
-      },
-      {
-        "metric": "Buy N52 or N47 with chain proof",
-        "value": "The X1 we recommend"
-      },
-      {
-        "metric": "The future — buy with confidence",
-        "value": "Read the full comparison: BMW X1 E84 vs F48 →"
-      },
-      {
-        "metric": "The Badge Ambiguity — \"20d\" Means Different Things",
-        "value": "Correction applied (internal): The \"20d\" badge covers two different engines depending on generation. On the E84 (2009–2015), it's the N47D20C — the chain-tensioner engine. On the F48 (2015–2022), it's the B47C20A/B — the revised architecture. On the U11 (2022+), it's also a B47 variant. All share a badge. None share a reliability profile."
       }
     ]
   },
   "generations": {
-    "h2": "",
-    "subHeadline": "",
-    "cards": [],
+    "h2": "BMW X1 Generations — Find Your Vehicle",
+    "subHeadline": "Three generations, two platforms, and 15 years of BMW's entry-level SUV. The right X1 depends on which generation and which engine you choose.",
+    "cards": [
+      {
+        "title": "First Generation — E84 (2009–2015)",
+        "badge": "BMW X1 E84 🔥 Most Enquired — N47 drives volume [BMW-VERIFIED]",
+        "meta": "2009–2015 • N46, N20, N47, N52, N55 — RWD-based (E90 platform)",
+        "rating": "★★★☆☆",
+        "verdict": "The original X1 — based on the E90 3 Series platform with rear-wheel-drive as standard. The N52 straight-six is the robust pick; the N47 diesel carries the chain-tensioner caveat; the N20 petrol has timing chain issues. Buy the N52 or a diesel with documented chain history.",
+        "cta": {
+          "label": "Explore the E84 →",
+          "href": "#"
+        }
+      },
+      {
+        "title": "Second Generation — F48 (2015–2022)",
+        "badge": "BMW X1 F48 🔥 Most Enquired — B47/B48 drives volume [BMW-VERIFIED]",
+        "meta": "2015–2022 • B38, B47, B48 — FWD-based (UKL2 platform)",
+        "rating": "★★★★☆",
+        "verdict": "The second-generation X1 — switched to front-wheel-drive-based UKL2 platform. The B47 diesel replaced the N47, finally fixing the chain issue. The B38 three-cylinder and B48 four-cylinder are the modern gold standard. This is the X1 generation to buy.",
+        "cta": {
+          "label": "Explore the F48 →",
+          "href": "#"
+        }
+      },
+      {
+        "title": "Third Generation — U11 (2022–present)",
+        "badge": "",
+        "meta": "2022–present • B38, B48, B47 — FWD-based (UKL2 platform), mild-hybrid, PHEV, iX1 electric",
+        "rating": "★★★★★",
+        "verdict": "The third-generation X1 — revealed June 2022, launched October 2022. Available with petrol, diesel, plug-in hybrid, and fully electric iX1 powertrains. The B-family engines are the most dependable ever fitted to the badge — buy with confidence.",
+        "cta": {
+          "label": "Explore the U11 →",
+          "href": "#"
+        }
+      },
+      {
+        "title": "The Platform Divide — The Line That Matters Most",
+        "badge": "",
+        "meta": "E84 (2009–2015)",
+        "rating": "",
+        "verdict": "",
+        "cta": {
+          "label": "",
+          "href": "#"
+        }
+      }
+    ],
     "rangeTable": {
       "title": "",
       "columns": [],
       "rows": []
     },
     "comparisonLink": {
-      "label": "",
+      "label": "Read the full comparison: BMW X1 E84 vs F48 →",
       "href": "#"
     }
   },

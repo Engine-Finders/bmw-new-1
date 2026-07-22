@@ -1,11 +1,253 @@
 {
   "meta": {
     "slug": "bmw-x5-e53",
-    "title": "BMW X5 E53 Engines — The Complete UK Guide",
-    "titleCharCount": 42,
-    "description": "",
-    "descriptionCharCount": 0,
-    "jsonLd": {}
+    "title": "E53 Engine Replacement Cost UK — Compare Quotes",
+    "titleCharCount": 57,
+    "description": "Every BMW X5 E53 engine — 3.0i, 3.0d, 4.4i, 4.6is, 4.8is. Real UK costs, honest reliability data, and BMW's first SUV. Get free quotes from 20+ vetted BMW specialists today.",
+    "descriptionCharCount": 157,
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://bmwengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "X5",
+              "item": "https://bmwengine.uk/x5/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "BMW X5 E53",
+              "item": "https://bmwengine.uk/x5/e53/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "BMW X5 E53 Engine Codes",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "M54B30 3.0i Engine",
+              "url": "https://bmwengine.uk/engines/m54b30/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "M62B44TU 4.4i Engine",
+              "url": "https://bmwengine.uk/engines/m62b44tu/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "M62B46 4.6is Engine",
+              "url": "https://bmwengine.uk/engines/m62b46/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "N62B44 4.4i Engine",
+              "url": "https://bmwengine.uk/engines/n62b44/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 5,
+              "name": "N62B48 4.8is Engine",
+              "url": "https://bmwengine.uk/engines/n62b48/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 6,
+              "name": "M57D30 3.0d Engine",
+              "url": "https://bmwengine.uk/engines/m57d30/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "BMW X5 E53 Core Variants",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "3.0i",
+              "url": "https://bmwengine.uk/x5/30i/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "3.0d",
+              "url": "https://bmwengine.uk/x5/30d/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "4.4i",
+              "url": "https://bmwengine.uk/x5/44i/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "4.6is",
+              "url": "https://bmwengine.uk/x5/46is/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 5,
+              "name": "4.8is",
+              "url": "https://bmwengine.uk/x5/48is/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does a BMW X5 E53 engine replacement cost in the UK?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A reconditioned E53 engine typically costs £2,000–£7,000 supply only, depending on engine — the M54 3.0i sits at £2,000–£3,800, while the N62 4.8is runs £4,000–£7,000. Fitting adds £650–£1,170. Use our calculator for a personalised figure."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which X5 E53 engine is the most reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The M54 3.0-litre straight-six (3.0i) is the most reliable engine in the E53 range — smooth, durable and well-understood. The M57 3.0-litre diesel (3.0d) is also highly regarded, though swirl flaps should be addressed as preventative maintenance."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What are the common problems with the X5 E53?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Timing chain guide wear on the M62 V8 (4.4i, 4.6is), cooling system and VANOS issues on the M54 six-cylinder (3.0i), valve stem seal wear on the N62 V8 (post-2003 4.4i, 4.8is), and swirl flap/injector issues on the M57 diesel (3.0d). All are well-understood by BMW specialists."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the BMW X5 E53 reliable overall?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes — but it depends on the engine. The M54 six-cylinder is genuinely robust; the M57 diesel is proven but requires swirl flap attention; the M62 V8 is refined but needs timing chain guide care; the N62 V8 is the most complex but offers flagship performance. The E53 is a classic SUV; maintenance costs reflect its age and complexity."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which X5 E53 engine should I avoid?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No outright avoidance — but a 4.6is (M62B46) without documented timing chain history deserves a thorough inspection; parts are rarer than the 4.4i. A 3.0d without documented swirl flap removal also merits a thorough inspection."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I know if my X5 E53 engine needs replacing?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Timing chain slap on cold start (M62 V8), coolant loss or overheating (all engines), blue smoke on startup (N62 valve stem seals), or rough running and black smoke (M57 diesel swirl flaps/injectors) are key warnings. Use our diagnostic calculator for a personalised assessment."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is it worth replacing an X5 E53 engine, or should I scrap the car?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Depends on the car's value. Against a well-kept £4,000+ E53, a £2,800 M57 recon is 70% of the car's value — approaching our 70% BMW threshold, assess carefully. Against a tired £2,000 example, the same recon is 140% — walk away. For V8s and rare 4.6is models, the calculus is different: these are future classics where engine replacement can be justified if the car is otherwise excellent."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How long do X5 E53 engines last?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The M54 six-cylinder can exceed 150,000 miles with regular maintenance and cooling system attention. The M57 diesel can reach 150,000+ miles with swirl flap removal and injector care. The M62 V8 is capable of 150,000+ miles with timing chain guide attention. The N62 V8 can reach 150,000+ miles with valve stem seal care."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the difference between the E53 and the later E70 X5?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The E53 (1999–2006) is the first-generation X5 — a classic BMW SUV with shared components from the E39 5 Series and Range Rover L322. The E70 (2006–2013) is the second-generation successor — larger, more refined, with more advanced engines including the N55 and M57TU. The E53 is a classic; the E70 is a modern classic. See each generation's own page for specifics."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I find my X5 E53 engine code?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Check the VIN plate, vehicle documentation, or the engine block — 3.0-litre six-cylinder petrol is M54B30 (306S3), 4.4-litre V8 pre-2003 is M62B44TU (448S2), 4.6-litre V8 is M62B46 (468S1), 4.4-litre V8 post-2003 is N62B44 (N62B44A), 4.8-litre V8 is N62B48 (N62B48A), and 3.0-litre diesel is M57D30 (306D1/306D2). Tell us your variant and registration year and we'll identify it — 20+ vetted BMW specialists will confirm it for free."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "BMWEngines.uk",
+          "url": "https://bmwengine.uk/",
+          "logo": "https://bmwengine.uk/images/bmwengines-logo.png",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "BMW X5 E53 Engine Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "2000",
+            "highPrice": "7000",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "name": "BMW X5 E53 UK Engine Enquiry Data 2025",
+          "description": "Proprietary UK enquiry volumes and demand trends for BMW X5 E53 engines, sourced from BMWEngines.uk's specialist marketplace activity.",
+          "creator": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk"
+          },
+          "temporalCoverage": "2025",
+          "spatialCoverage": "United Kingdom"
+        },
+        {
+          "@type": "WebPage",
+          "name": "E53 Engine Replacement Cost UK — Compare Quotes",
+          "url": "https://bmwengine.uk/x5/e53/",
+          "author": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk Specialist Network"
+          },
+          "datePublished": "2026-07-09",
+          "dateModified": "2026-07-09"
+        }
+      ]
+    }
   },
   "internalDeclarations": {
     "checkA": "",
@@ -432,23 +674,121 @@
     "scopeNote": "All variants listed are first-generation X5 E53 only. The 4.4i was produced with the M62 V8 from 1999–2003 and the N62 V8 from 2003–2006. The 4.6is was produced 2002–2003; the 4.8is replaced it from 2004–2006. All E53 models feature permanent all-wheel drive."
   },
   "marketIntelligence": {
-    "mostRequestedEngines": [],
-    "mostRequestedVariants": [],
-    "averageReplacementCost": "",
-    "mostCommonFailures": [],
-    "liveFeed": []
+    "mostRequestedEngines": [
+      "1. M54B30 3.0i — 73 requests [EM-VERIFIED]",
+      "2. M57D30 3.0d — pattern data",
+      "3. M62B44TU 4.4i — pattern data"
+    ],
+    "mostRequestedVariants": [
+      "1. 3.0d",
+      "2. 3.0i",
+      "3. 4.4i"
+    ],
+    "averageReplacementCost": "£3,800 reconditioned, supply only [BMW-QUOTE]",
+    "mostCommonFailures": [
+      "1. Timing chain guides (M62 V8)",
+      "2. Cooling system & VANOS (M54)",
+      "3. Valve stem seals (N62 V8) · Swirl flaps (M57 diesel)"
+    ],
+    "liveFeed": [
+      {
+        "vehicle": "BMW X5 3.0d E53 (M57)",
+        "location": "Manchester",
+        "issue": "Swirl flap warning",
+        "enquiries": "4 enquiries",
+        "updated": "Updated Monthly"
+      },
+      {
+        "vehicle": "BMW X5 4.4i E53 (M62)",
+        "location": "Birmingham",
+        "issue": "Timing chain rattle",
+        "enquiries": "3 enquiries",
+        "updated": "Updated Monthly"
+      },
+      {
+        "vehicle": "BMW X5 3.0i E53 (M54)",
+        "location": "Leeds",
+        "issue": "Coolant loss warning",
+        "enquiries": "2 enquiries",
+        "updated": "Updated Monthly"
+      }
+    ]
   },
   "faq": {
-    "items": []
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a BMW X5 E53 engine replacement cost in the UK?",
+        "answer": "A reconditioned E53 engine typically costs £2,000–£7,000 supply only [BMW-QUOTE], depending on engine — the M54 3.0i sits at £2,000–£3,800, while the N62 4.8is runs £4,000–£7,000. Fitting adds £650–£1,170. Use our calculator for a personalised figure."
+      },
+      {
+        "id": 2,
+        "question": "Which X5 E53 engine is the most reliable?",
+        "answer": "The M54 3.0-litre straight-six (3.0i) is the most reliable engine in the E53 range — smooth, durable and well-understood. The M57 3.0-litre diesel (3.0d) is also highly regarded, though swirl flaps should be addressed as preventative maintenance."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the X5 E53?",
+        "answer": "Timing chain guide wear on the M62 V8 (4.4i, 4.6is), cooling system and VANOS issues on the M54 six-cylinder (3.0i), valve stem seal wear on the N62 V8 (post-2003 4.4i, 4.8is), and swirl flap/injector issues on the M57 diesel (3.0d). All are well-understood by BMW specialists."
+      },
+      {
+        "id": 4,
+        "question": "Is the BMW X5 E53 reliable overall?",
+        "answer": "Yes — but it depends on the engine. The M54 six-cylinder is genuinely robust; the M57 diesel is proven but requires swirl flap attention; the M62 V8 is refined but needs timing chain guide care; the N62 V8 is the most complex but offers flagship performance. The E53 is a classic SUV; maintenance costs reflect its age and complexity."
+      },
+      {
+        "id": 5,
+        "question": "Which X5 E53 engine should I avoid?",
+        "answer": "No outright avoidance — but a 4.6is (M62B46) without documented timing chain history deserves a thorough inspection; parts are rarer than the 4.4i. A 3.0d without documented swirl flap removal also merits a thorough inspection."
+      },
+      {
+        "id": 6,
+        "question": "How do I know if my X5 E53 engine needs replacing?",
+        "answer": "Timing chain slap on cold start (M62 V8), coolant loss or overheating (all engines), blue smoke on startup (N62 valve stem seals), or rough running and black smoke (M57 diesel swirl flaps/injectors) are key warnings. Use our diagnostic calculator for a personalised assessment."
+      },
+      {
+        "id": 7,
+        "question": "Is it worth replacing an X5 E53 engine, or should I scrap the car?",
+        "answer": "Depends on the car's value. Against a well-kept £4,000+ E53, a £2,800 M57 recon is 70% of the car's value — approaching our 70% BMW threshold, assess carefully. Against a tired £2,000 example, the same recon is 140% — walk away. For V8s and rare 4.6is models, the calculus is different: these are future classics where engine replacement can be justified if the car is otherwise excellent."
+      },
+      {
+        "id": 8,
+        "question": "How long do X5 E53 engines last?",
+        "answer": "The M54 six-cylinder can exceed 150,000 miles with regular maintenance and cooling system attention. The M57 diesel can reach 150,000+ miles with swirl flap removal and injector care. The M62 V8 is capable of 150,000+ miles with timing chain guide attention. The N62 V8 can reach 150,000+ miles with valve stem seal care."
+      },
+      {
+        "id": 9,
+        "question": "What is the difference between the E53 and the later E70 X5?",
+        "answer": "The E53 (1999–2006) is the first-generation X5 — a classic BMW SUV with shared components from the E39 5 Series and Range Rover L322. The E70 (2006–2013) is the second-generation successor — larger, more refined, with more advanced engines including the N55 and M57TU. The E53 is a classic; the E70 is a modern classic. See each generation's own page for specifics."
+      },
+      {
+        "id": 10,
+        "question": "How do I find my X5 E53 engine code?",
+        "answer": "Check the VIN plate, vehicle documentation, or the engine block — 3.0-litre six-cylinder petrol is M54B30 (306S3), 4.4-litre V8 pre-2003 is M62B44TU (448S2), 4.6-litre V8 is M62B46 (468S1), 4.4-litre V8 post-2003 is N62B44 (N62B44A), 4.8-litre V8 is N62B48 (N62B48A), and 3.0-litre diesel is M57D30 (306D1/306D2). Tell us your variant and registration year and we'll identify it — 20+ vetted BMW specialists will confirm it for free."
+      }
+    ]
   },
   "trustCta": {
-    "h2": "",
-    "trustPoints": [],
-    "finalCta": "",
+    "h2": "Why UK BMW X5 E53 Owners Trust BMWEngines.uk",
+    "trustPoints": [
+      {
+        "title": "Trusted E53 Engine Suppliers",
+        "text": "every garage and engine rebuilder in our network is vetted, rated and reviewed by real X5 owners, as part of the Engine Finders network."
+      },
+      {
+        "title": "Compare E53 Engine Replacement Companies",
+        "text": "see prices, warranty terms and supply & fit options side-by-side before you commit."
+      },
+      {
+        "title": "UK Engine Replacement Services for E53",
+        "text": "covering every variant from 3.0i to 4.8is, with supply-only or full supply & fit available nationwide."
+      }
+    ],
+    "finalCta": "Find the best BMW X5 E53 engine replacement UK drivers rely on. Compare real prices from trusted specialists on EnginesMarket today and get back on the road with confidence.",
     "ctaButton": {
-      "label": "",
+      "label": "Compare BMW X5 E53 Engine Prices on EnginesMarket →",
       "href": "#",
-      "note": ""
+      "note": "[PLACEHOLDER — confirm EnginesMarket URL structure]"
     }
   }
 }

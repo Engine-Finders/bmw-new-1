@@ -559,44 +559,43 @@
       {
         "label": "Regional Demand",
         "value": "South East (23%), London (19%), North West (13%)【PATTERN DATA】"
-      },
-      {
-        "label": "SECTION 8 — FAQ",
-        "value": "1. How much does a BMW 2 Series M240i engine replacement cost in the UK?"
-      },
-      {
-        "label": "A reconditioned M240i (B58) engine typically costs £5,200–£8,500 supply only depending on generation. Fitting adds £1,000–£1,800 at independent specialist rates. Use our calculator for a figure specific to your vehicle.",
-        "value": "2. Is the BMW 2 Series M240i engine reliable?"
-      },
-      {
-        "label": "The B58 straight-six is widely regarded as one of BMW's most reliable modern engines. It has proven robust in everything from the M240i to the Toyota Supra. However, it has known weak points: PCV valve failure (especially on tuned cars), coolant leaks, valve cover gasket degradation, and VANOS solenoid wear. Regular maintenance is essential.",
-        "value": "3. What are the common problems with the BMW M240i?"
-      },
-      {
-        "label": "PCV valve failure (rough idle, misfires, oil in intake), coolant leaks (low coolant warnings, potential overheating), valve cover gasket failure (oil leaks from the top of the engine), oil filter housing issues, and VANOS solenoid wear. All are manageable with preventative maintenance and early detection.",
-        "value": "4. Is it worth replacing an M240i engine, or should I scrap the car?"
-      },
-      {
-        "label": "Against a well-maintained M240i (values £18,000–£40,000+ depending on year and mileage), a £6,000–£7,500 reconditioned engine is 15–35% of the vehicle's value — often worth it for a solid example. The BMW scrap threshold of 70% means evaluating the whole vehicle before committing.",
-        "value": "5. How do I find my BMW M240i engine code?"
-      },
-      {
-        "label": "The engine code (B58B30 or B58B30M2) is listed on the VIN plate and vehicle documentation. The F22/F23 generation (2017–2021) uses the B58B30. The G42 generation (2022–present) uses the updated B58B30M2. Tell us your registration and we'll confirm for free.",
-        "value": "6. Can I repair the PCV valve, or does it require engine replacement?"
-      },
-      {
-        "label": "PCV valve failure is always repairable without replacing the engine. A PCV diaphragm repair kit costs £100–£300 and restores proper operation. However, if the PCV failure has led to oil contamination or other issues, more extensive work may be required. At the first sign of rough idle or misfires, have the PCV system inspected.",
-        "value": "Disclaimer: All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty — always confirm terms with your chosen supplier."
-      },
-      {
-        "label": "SECTION 9, META AND SCHEMA",
-        "value": "PART 2 — SECTION 9 + META + SCHEMA"
       }
     ]
   },
   "faq": {
-    "items": [],
-    "disclaimer": ""
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a BMW 2 Series M240i engine replacement cost in the UK?",
+        "answer": "A reconditioned M240i (B58) engine typically costs £5,200–£8,500 supply only depending on generation. Fitting adds £1,000–£1,800 at independent specialist rates. Use our calculator for a figure specific to your vehicle."
+      },
+      {
+        "id": 2,
+        "question": "Is the BMW 2 Series M240i engine reliable?",
+        "answer": "The B58 straight-six is widely regarded as one of BMW's most reliable modern engines. It has proven robust in everything from the M240i to the Toyota Supra. However, it has known weak points: PCV valve failure (especially on tuned cars), coolant leaks, valve cover gasket degradation, and VANOS solenoid wear. Regular maintenance is essential."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the BMW M240i?",
+        "answer": "PCV valve failure (rough idle, misfires, oil in intake), coolant leaks (low coolant warnings, potential overheating), valve cover gasket failure (oil leaks from the top of the engine), oil filter housing issues, and VANOS solenoid wear. All are manageable with preventative maintenance and early detection."
+      },
+      {
+        "id": 4,
+        "question": "Is it worth replacing an M240i engine, or should I scrap the car?",
+        "answer": "Against a well-maintained M240i (values £18,000–£40,000+ depending on year and mileage), a £6,000–£7,500 reconditioned engine is 15–35% of the vehicle's value — often worth it for a solid example. The BMW scrap threshold of 70% means evaluating the whole vehicle before committing."
+      },
+      {
+        "id": 5,
+        "question": "How do I find my BMW M240i engine code?",
+        "answer": "The engine code (B58B30 or B58B30M2) is listed on the VIN plate and vehicle documentation. The F22/F23 generation (2017–2021) uses the B58B30. The G42 generation (2022–present) uses the updated B58B30M2. Tell us your registration and we'll confirm for free."
+      },
+      {
+        "id": 6,
+        "question": "Can I repair the PCV valve, or does it require engine replacement?",
+        "answer": "PCV valve failure is always repairable without replacing the engine. A PCV diaphragm repair kit costs £100–£300 and restores proper operation. However, if the PCV failure has led to oil contamination or other issues, more extensive work may be required. At the first sign of rough idle or misfires, have the PCV system inspected."
+      }
+    ],
+    "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty — always confirm terms with your chosen supplier."
   },
   "trustCta": {
     "h2": "Why UK BMW 2 Series M240i Owners Trust BMWEngines.uk",

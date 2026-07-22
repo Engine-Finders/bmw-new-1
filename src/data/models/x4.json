@@ -1,24 +1,238 @@
 {
   "meta": {
     "slug": "x4",
-    "title": "X4 Engines — The Complete UK Guide",
-    "titleCharCount": 34,
-    "description": "",
-    "descriptionCharCount": 0,
+    "title": "BMW X4 Engine Replacement Cost UK — Compare Quotes",
+    "titleCharCount": 50,
+    "description": "Every BMW X4 engine — N20 to S58. 2 generations, real UK costs and reliability data. Compare prices from 20+ vetted BMW specialists today.",
+    "descriptionCharCount": 138,
     "openGraph": {
-      "title": "",
-      "description": "",
-      "type": "",
-      "url": "",
-      "image": "",
-      "siteName": ""
+      "title": "BMW X4 Engine Replacement Cost UK — Compare Quotes",
+      "description": "Every BMW X4 engine — N20 to S58. 2 generations, real UK costs and reliability data. Compare prices from 20+ vetted BMW specialists today.",
+      "type": "website",
+      "url": "https://bmwengine.uk/x4/",
+      "image": "https://bmwengine.uk/images/bmw-x4-hero.jpg",
+      "siteName": "BMWEngines.uk"
     },
     "twitter": {
-      "card": "",
-      "title": "",
-      "description": ""
+      "card": "summary_large_image",
+      "title": "BMW X4 Engine Replacement Cost UK — Compare Quotes",
+      "description": "Every BMW X4 engine — N20 to S58. 2 generations, real UK costs and reliability data. Compare prices from 20+ vetted BMW specialists today."
     },
-    "jsonLd": {}
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://bmwengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "X4",
+              "item": "https://bmwengine.uk/x4/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "BMW X4 Generations",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "BMW X4 F26 (2014–2018)",
+              "url": "https://bmwengine.uk/x4/f26/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "BMW X4 G02 (2018–present)",
+              "url": "https://bmwengine.uk/x4/g02/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "BMW X4 Engine Codes",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "N20B20 Engine",
+              "url": "https://bmwengine.uk/engines/n20b20/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "N55B30 Engine",
+              "url": "https://bmwengine.uk/engines/n55b30/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "N47D20 Engine",
+              "url": "https://bmwengine.uk/engines/n47d20/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "B48B20 Engine",
+              "url": "https://bmwengine.uk/engines/b48b20/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 5,
+              "name": "B58B30 Engine",
+              "url": "https://bmwengine.uk/engines/b58b30/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 6,
+              "name": "S58B30 Engine",
+              "url": "https://bmwengine.uk/engines/s58b30/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 7,
+              "name": "B47C20A Engine",
+              "url": "https://bmwengine.uk/engines/b47c20a/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 8,
+              "name": "B57D30 Engine",
+              "url": "https://bmwengine.uk/engines/b57d30/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does a BMW X4 engine replacement cost in the UK?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A reconditioned BMW X4 engine typically costs £2,800–£5,500 supply only [BMW-QUOTE] — from the B47/B48 at £2,800–£5,000 to the N20 at £2,800–£4,800. The N55 costs £3,800–£6,000; the S58 (X4 M) costs £7,000–£10,000+. Fitting adds £650–£1,500. Use our calculator for a personalised figure."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which BMW X4 engine is the most reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The B58B30 straight-six in the G02 M40i and the B48B20 in the G02 — the B-family engines are the modern gold standard. The N55B30 in the F26 is the robust classic pick."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which BMW X4 engine should I avoid?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No engine outright — but an F26 N20B20 without a documented timing-chain replacement is the one purchase we consistently advise against. A G02 B48/B58 has no such caveat."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I know if my X4 engine needs replacing?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "By engine: cold-start rattle (N20 timing chain), chain noise under load (N20), coolant loss (B48/B58 cooling system), oil drips (N20/N55 valve cover). On the F26, any rattling on startup is a warning sign. Caught early, it's a repair; ignored, it's a £2,800–£5,500 engine [BMW-QUOTE]. Use our diagnostic calculator for a personalised assessment."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is it worth replacing a BMW X4 engine?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Depends entirely on generation. Against a £15,000–£25,000 G02, a £3,000–£5,000 B48/B58 recon is 12–33% — ✅ safe. Against a £6,000–£8,000 F26, a £2,800–£4,800 N20 recon is 35–80% — ⚠️ watch. Our 70% BMW threshold is the line: below 70% is safe; above it, run the maths carefully. Use our calculator for your car."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which BMW X4 should I buy?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "2019+ G02 with the B48 or B58 — the B-family engines fixed the chain issue, the CLAR platform is refined, and the coupé styling is distinctive and desirable. For performance, the G02 M40i with the B58 is the sweet spot. For the budget option, an F26 with N55 — the six-cylinder is robust but rare. Avoid F26 N20s without documented chain history."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I find my BMW X4 engine code?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Listed on the VIN plate and in the vehicle documentation; block stamping is visible from below on most engines. Or tell us your generation and variant (F26 xDrive28i, F26 M40i, G02 xDrive30i, G02 M40i) and we'll identify it — 20+ vetted specialists will confirm it for free."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "BMW X4 vs X3 — which is more reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Mechanically they share engines across similar eras — the N20/N55/B48/B58 story is identical. The X4 is essentially the X3 with a coupé roofline; reliability is the same. Buy on engine and year, not badge. The X3 offers more practicality; the X4 offers more style."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "BMWEngines.uk",
+          "url": "https://bmwengine.uk/",
+          "logo": "https://bmwengine.uk/images/bmwengines-logo.png",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "BMW X4 Engine Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "2800",
+            "highPrice": "5500",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "name": "BMW X4 UK Engine Enquiry Data 2025",
+          "description": "Proprietary UK enquiry volumes and demand trends for BMW X4 engines, sourced from BMWEngines.uk's specialist marketplace activity.",
+          "creator": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk"
+          },
+          "temporalCoverage": "2025",
+          "spatialCoverage": "United Kingdom"
+        },
+        {
+          "@type": "WebPage",
+          "name": "BMW X4 Engine Replacement Cost UK — Compare Quotes",
+          "url": "https://bmwengine.uk/x4/",
+          "author": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk Specialist Network"
+          },
+          "datePublished": "2026-07-07",
+          "dateModified": "2026-07-07"
+        }
+      ]
+    }
   },
   "hero": {
     "tagPill": "BMW X4 • 2014–Present • 2 Generations (F26, G02) • N20, N55, B48, B58, B47, B57, S58",
@@ -135,92 +349,54 @@
       {
         "metric": "Overall Rating",
         "value": "★★★★☆ 3.8/5"
-      },
-      {
-        "metric": "SECTION 4 — GENERATIONS — <GenerationsGrid>",
-        "value": "H2: BMW X4 Generations — Find Your Vehicle"
-      },
-      {
-        "metric": "Sub-headline: Two generations, one coupé-SUV mission. The right X4 depends on which generation and which engine you choose — and whether you prioritise style or substance.",
-        "value": "First Generation — F26 (2014–2018)"
-      },
-      {
-        "metric": "BMW X4 F26 🔥 Most Enquired — N20 drives volume [BMW-VERIFIED]",
-        "value": "2014–2018 • N20, N55 — based on F25 X3 platform"
-      },
-      {
-        "metric": "★★★☆☆",
-        "value": "Our Verdict: The original X4 — BMW's first compact coupé-SUV, launched in the UK in July 2014. The N20 four-cylinder petrol carries the chain-tensioner caveat; the N55 six-cylinder is robust. The xDrive28i and M40i continued through the end of the 2018 model year. Buy the N55 or an N20 with documented chain history."
-      },
-      {
-        "metric": "Explore the F26 →",
-        "value": "Second Generation — G02 (2018–present)"
-      },
-      {
-        "metric": "BMW X4 G02 🔥 Most Enquired — B48/B58 drives volume [BMW-VERIFIED]",
-        "value": "2018–present • B48, B58, B47, B57, S58 (X4 M) — CLAR platform"
-      },
-      {
-        "metric": "★★★★★",
-        "value": "Our Verdict: The second-generation X4 — built on the CLAR platform shared with the G01 X3. B-family engines only, no N-series carryover. The B48 in the xDrive30i produces 248 hp; the B58 in the M40i produces 382 hp; the S58 in the X4 M produces 473–503 hp. The G02 received a mild facelift in 2021. This is the X4 generation to buy."
-      },
-      {
-        "metric": "Explore the G02 →",
-        "value": "The Generation Divide — The Line That Matters Most"
-      },
-      {
-        "metric": "F26 (2014–2018)",
-        "value": "G02 (2018–present)"
-      },
-      {
-        "metric": "Platform",
-        "value": "F25 X3-based"
-      },
-      {
-        "metric": "CLAR (G01 X3-based)",
-        "value": "Core petrol"
-      },
-      {
-        "metric": "N20 (chain risk), N55",
-        "value": "B48, B58"
-      },
-      {
-        "metric": "Core diesel",
-        "value": "N47 (early)"
-      },
-      {
-        "metric": "B47, B57",
-        "value": "Core issue"
-      },
-      {
-        "metric": "N20 timing chain",
-        "value": "None significant"
-      },
-      {
-        "metric": "Our position",
-        "value": "Buy N55 or N20 with chain proof"
-      },
-      {
-        "metric": "The one to buy — buy with confidence",
-        "value": "Read the full comparison: BMW X4 F26 vs G02 →"
-      },
-      {
-        "metric": "The Badge Ambiguity — \"28i\" and \"30i\" Mean Different Things",
-        "value": "Correction applied (internal): The \"28i\" badge on the F26 uses the N20B20 — the chain-risk engine. The \"30i\" badge on the G02 uses the B48B20 — the revised architecture. Both share a similar power output. None share a reliability profile."
       }
     ]
   },
   "generations": {
-    "h2": "",
-    "subHeadline": "",
-    "cards": [],
+    "h2": "BMW X4 Generations — Find Your Vehicle",
+    "subHeadline": "Two generations, one coupé-SUV mission. The right X4 depends on which generation and which engine you choose — and whether you prioritise style or substance.",
+    "cards": [
+      {
+        "title": "First Generation — F26 (2014–2018)",
+        "badge": "BMW X4 F26 🔥 Most Enquired — N20 drives volume [BMW-VERIFIED]",
+        "meta": "2014–2018 • N20, N55 — based on F25 X3 platform",
+        "rating": "★★★☆☆",
+        "verdict": "The original X4 — BMW's first compact coupé-SUV, launched in the UK in July 2014. The N20 four-cylinder petrol carries the chain-tensioner caveat; the N55 six-cylinder is robust. The xDrive28i and M40i continued through the end of the 2018 model year. Buy the N55 or an N20 with documented chain history.",
+        "cta": {
+          "label": "Explore the F26 →",
+          "href": "#"
+        }
+      },
+      {
+        "title": "Second Generation — G02 (2018–present)",
+        "badge": "BMW X4 G02 🔥 Most Enquired — B48/B58 drives volume [BMW-VERIFIED]",
+        "meta": "2018–present • B48, B58, B47, B57, S58 (X4 M) — CLAR platform",
+        "rating": "★★★★★",
+        "verdict": "The second-generation X4 — built on the CLAR platform shared with the G01 X3. B-family engines only, no N-series carryover. The B48 in the xDrive30i produces 248 hp; the B58 in the M40i produces 382 hp; the S58 in the X4 M produces 473–503 hp. The G02 received a mild facelift in 2021. This is the X4 generation to buy.",
+        "cta": {
+          "label": "Explore the G02 →",
+          "href": "#"
+        }
+      },
+      {
+        "title": "The Generation Divide — The Line That Matters Most",
+        "badge": "",
+        "meta": "F26 (2014–2018)",
+        "rating": "",
+        "verdict": "",
+        "cta": {
+          "label": "",
+          "href": "#"
+        }
+      }
+    ],
     "rangeTable": {
       "title": "",
       "columns": [],
       "rows": []
     },
     "comparisonLink": {
-      "label": "",
+      "label": "Read the full comparison: BMW X4 F26 vs G02 →",
       "href": "#"
     }
   },

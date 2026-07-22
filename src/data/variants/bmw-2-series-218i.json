@@ -1,26 +1,242 @@
 {
   "meta": {
-    "slug": "bmw-2-series-218i",
-    "title": "BMW 2 Series 218i Engine Replacement — Compare Prices & Get Quotes",
-    "titleCharCount": 66,
-    "description": "",
-    "descriptionCharCount": 0,
-    "canonical": "",
+    "slug": "2-series-218i",
+    "title": "2 Series 218i Engine Replacement Cost UK — Compare Quotes",
+    "titleCharCount": 58,
+    "description": "The BMW 2 Series 218i — B38 1.5L three-cylinder or B48 2.0L four-cylinder, 136‑140 bhp. Real UK costs, timing chain advice, and honest reliability data. Get free quotes from 20+ vetted BMW specialists today.",
+    "descriptionCharCount": 159,
+    "canonical": "https://bmwengine.uk/2-series/218i/",
     "openGraph": {
-      "title": "",
-      "description": "",
-      "type": "",
-      "url": "",
-      "image": "",
-      "siteName": ""
+      "title": "2 Series 218i Engine Replacement Cost UK — Compare Quotes",
+      "description": "The BMW 2 Series 218i — B38 1.5L three-cylinder or B48 2.0L four-cylinder, 136‑140 bhp. Real UK costs, timing chain advice, and honest reliability data. Get free quotes from 20+ vetted BMW specialists today.",
+      "type": "website",
+      "url": "https://bmwengine.uk/2-series/218i/",
+      "image": "https://bmwengine.uk/images/bmw/hero/2-series-218i.jpg",
+      "siteName": "BMWEngines.uk"
     },
     "twitter": {
-      "card": "",
-      "title": "",
-      "description": "",
-      "image": ""
+      "card": "summary_large_image",
+      "title": "2 Series 218i Engine Replacement Cost UK — Compare Quotes",
+      "description": "The BMW 2 Series 218i — B38 1.5L three-cylinder or B48 2.0L four-cylinder, 136‑140 bhp. Real UK costs, timing chain advice, and honest reliability data.",
+      "image": "https://bmwengine.uk/images/bmw/hero/2-series-218i.jpg"
     },
-    "jsonLd": {}
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://bmwengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "2 Series",
+              "item": "https://bmwengine.uk/2-series/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "218i",
+              "item": "https://bmwengine.uk/2-series/218i/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "BMW 2 Series 218i Era Map",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "B38B15M0 (F22/F23 Coupe/Convertible, 2015-2021)",
+              "url": "https://bmwengine.uk/2-series/218i/#b38"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "B48C (G42 Coupe, 2021-present)",
+              "url": "https://bmwengine.uk/2-series/218i/#b48"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "B38A15A / B38A15P (F45 Active Tourer, 2014-2021)",
+              "url": "https://bmwengine.uk/2-series/218i/#b38-active-tourer"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "B38A15A (F46 Gran Tourer, 2015-2021)",
+              "url": "https://bmwengine.uk/2-series/218i/#b38-gran-tourer"
+            },
+            {
+              "@type": "ListItem",
+              "position": 5,
+              "name": "B38A15A / B38A15F / B38C (F44 Gran Coupe, 2020-present)",
+              "url": "https://bmwengine.uk/2-series/218i/#b38-gran-coupe"
+            },
+            {
+              "@type": "ListItem",
+              "position": 6,
+              "name": "B48C (G42 Coupe, 2021-present)",
+              "url": "https://bmwengine.uk/2-series/218i/#b48-g42"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "BMW 2 Series 218i Engine Codes",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "B38B15M0",
+              "url": "https://bmwengine.uk/engines/b38b15m0/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "B38A15A",
+              "url": "https://bmwengine.uk/engines/b38a15a/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "B38A15P",
+              "url": "https://bmwengine.uk/engines/b38a15p/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "B38A15F",
+              "url": "https://bmwengine.uk/engines/b38a15f/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 5,
+              "name": "B38C",
+              "url": "https://bmwengine.uk/engines/b38c/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 6,
+              "name": "B48C",
+              "url": "https://bmwengine.uk/engines/b48c/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does a BMW 2 Series 218i engine replacement cost in the UK?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A reconditioned 218i engine (B38 1.5‑litre three‑cylinder) typically costs £1,800–£3,000 supply only. The B48 2.0‑litre four‑cylinder variants command a premium of £200–£500. Fitting adds £1,000–£1,400. Use our calculator for a figure specific to your vehicle."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the BMW 2 Series 218i engine reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The B38 is a refined and efficient three‑cylinder that has proven itself across BMW's range (1 Series, X1, MINI). It's fundamentally reliable, but it has a known weakness: the timing chain tensioner can wear prematurely, causing rattling noises. With regular oil changes and attention to the timing system, it's a durable and economical engine."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What are the common problems with the BMW 2 Series 218i?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The most serious issue is timing chain tensioner wear – the tensioner can fail, causing chain rattle and potential catastrophic engine damage. Other common problems include VANOS/Valvetronic system issues, oil filter housing gasket leaks, and ignition coil failures."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is it worth replacing a 218i engine, or should I scrap the car?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Depends on vehicle value and condition. Against a tidy £5,000–£15,000 2 Series, a £1,800–£3,800 recon is 12–40% of the car's value – often worth it. If the timing chain has snapped and caused valve damage, a full engine replacement may be necessary. Get a full diagnostic assessment before committing."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I find my 2 Series's engine code?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The 218i badge covers several engine variants. Most F22/F23 Coupe/Convertible models (2015–2021) use the B38B15M0 1.5‑litre three‑cylinder. The G42 Coupe (2021–present) uses the B48C 2.0‑litre four‑cylinder. The F45 Active Tourer, F46 Gran Tourer and F44 Gran Coupe use transverse‑mounted B38 variants. The engine code is stamped on the engine block and listed on your V5C."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I repair a 218i engine issue, or does it need replacement?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Most issues – timing chain tensioner wear (if caught early), VANOS/Valvetronic issues, oil leaks – are repairable. However, if the timing chain has snapped, the engine is an interference design – pistons will strike valves. In this case, a full engine replacement is usually more cost‑effective than a rebuild."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "BMWEngines.uk",
+          "url": "https://bmwengine.uk/",
+          "logo": "https://bmwengine.uk/images/bmwengines-logo.png",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "BMW 2 Series 218i Engine Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "1200",
+            "highPrice": "3800",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "name": "BMW 2 Series 218i UK Engine Enquiry Data 2025",
+          "description": "Proprietary UK enquiry volumes and demand trends for the BMW 2 Series 218i engines (B38, B48), sourced from BMWEngines.uk's specialist marketplace activity.",
+          "creator": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk"
+          },
+          "temporalCoverage": "2025",
+          "spatialCoverage": "United Kingdom"
+        },
+        {
+          "@type": "WebPage",
+          "name": "2 Series 218i Engine Replacement Cost UK — Compare Quotes",
+          "url": "https://bmwengine.uk/2-series/218i/",
+          "author": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk Specialist Network"
+          },
+          "datePublished": "2026-07-11",
+          "dateModified": "2026-07-11"
+        }
+      ]
+    }
   },
   "hero": {
     "tagPill": "BMW 2 Series 218i • 2014–present • 1.5L / 2.0L Turbo Petrol (B38 / B48)",
@@ -402,75 +618,63 @@
       {
         "label": "Regional Demand",
         "value": "South East (20%), North West (14%), London (12%) — premium hatchback/coupe strongholds [PATTERN DATA]"
-      },
-      {
-        "label": "SECTION 8 — FAQ",
-        "value": "1. How much does a BMW 2 Series 218i engine replacement cost in the UK?"
-      },
-      {
-        "label": "A reconditioned 218i engine (B38 1.5‑litre three‑cylinder) typically costs £1,800–£3,000 supply only. The B48 2.0‑litre four‑cylinder variants command a premium of £200–£500. Fitting adds £1,000–£1,400. Use our calculator for a figure specific to your vehicle.",
-        "value": "2. Is the BMW 2 Series 218i engine reliable?"
-      },
-      {
-        "label": "The B38 is a refined and efficient three‑cylinder that has proven itself across BMW's range (1 Series, X1, MINI). It's fundamentally reliable, but it has a known weakness: the timing chain tensioner can wear prematurely, causing rattling noises. With regular oil changes and attention to the timing system, it's a durable and economical engine.",
-        "value": "3. What are the common problems with the BMW 2 Series 218i?"
-      },
-      {
-        "label": "The most serious issue is timing chain tensioner wear — the tensioner can fail, causing chain rattle and potential catastrophic engine damage. Other common problems include VANOS/Valvetronic system issues, oil filter housing gasket leaks, and ignition coil failures.",
-        "value": "4. Is it worth replacing a 218i engine, or should I scrap the car?"
-      },
-      {
-        "label": "Depends on vehicle value and condition. Against a tidy £5,000–£15,000 2 Series, a £1,800–£3,800 recon is 12–40% of the car's value — often worth it. If the timing chain has snapped and caused valve damage, a full engine replacement may be necessary. Get a full diagnostic assessment before committing.",
-        "value": "5. How do I find my 2 Series's engine code?"
-      },
-      {
-        "label": "The 218i badge covers several engine variants. Most F22/F23 Coupe/Convertible models (2015–2021) use the B38B15M0 1.5‑litre three‑cylinder. The G42 Coupe (2021–present) uses the B48C 2.0‑litre four‑cylinder. The F45 Active Tourer, F46 Gran Tourer and F44 Gran Coupe use transverse‑mounted B38 variants. The engine code is stamped on the engine block and listed on your V5C.",
-        "value": "6. Can I repair a 218i engine issue, or does it need replacement?"
-      },
-      {
-        "label": "Most issues — timing chain tensioner wear (if caught early), VANOS/Valvetronic issues, oil leaks — are repairable. However, if the timing chain has snapped, the engine is an interference design — pistons will strike valves. In this case, a full engine replacement is usually more cost‑effective than a rebuild.",
-        "value": "Disclaimer: All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12‑month unlimited‑mileage warranty — always confirm terms with your chosen supplier."
-      },
-      {
-        "label": "Section 9 (Trust + Final CTA), meta tags, Open Graph, Twitter Card, and complete JSON‑LD schema.",
-        "value": "* Brand: BMW"
-      },
-      {
-        "label": "* Domain: bmwengine.uk",
-        "value": "* Data tag: BMW‑"
-      },
-      {
-        "label": "* Specialist count: 20+",
-        "value": "* Scrap threshold: 70%"
-      },
-      {
-        "label": "* CTA Mode: Consultative (Priority M)",
-        "value": "* Era Map rows: 6 (B38B15M0, B48C, B38A15A/B38A15P, B38A15A, B38A15A/B38A15F/B38C, B48C)"
-      },
-      {
-        "label": "* Engine codes: B38B15M0, B38A15A, B38A15P, B38A15F, B38C, B48C, B48B20M0",
-        "value": "* Service schema price range: £1,200 (lowest used) to £3,800 (highest rebuilt) — spans full Era Map history"
-      },
-      {
-        "label": "* Model Page needed: BMW 2 Series Generation Pages (F22/F23, F45, F46, F44, G42)",
-        "value": "* Generation Pages needed: BMW 2 Series Generation Pages (for cost inheritance)"
-      },
-      {
-        "label": "Section 9 (Trust + Final CTA), meta tags, Open Graph, Twitter Card, and the complete JSON-LD schema.",
-        "value": "The user's deep need here isn't just for text generation—it's for consistency, completeness, and adherence to a complex set of business rules. They need every page to follow the exact same 9-section structure, use the correct brand voice (in this case BMW's \"Precision & engineering\" tone), pull data from the right sources (the EM_Proprietary_Data file, the Variant Page Inventory, etc.), and include all the required technical details like data tags, schema markup, and meta descriptions. They're building a large content library, and this AI handover document is their quality assurance mechanism."
       }
     ]
   },
   "faq": {
-    "items": [],
-    "disclaimer": ""
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a BMW 2 Series 218i engine replacement cost in the UK?",
+        "answer": "A reconditioned 218i engine (B38 1.5‑litre three‑cylinder) typically costs £1,800–£3,000 supply only. The B48 2.0‑litre four‑cylinder variants command a premium of £200–£500. Fitting adds £1,000–£1,400. Use our calculator for a figure specific to your vehicle."
+      },
+      {
+        "id": 2,
+        "question": "Is the BMW 2 Series 218i engine reliable?",
+        "answer": "The B38 is a refined and efficient three‑cylinder that has proven itself across BMW's range (1 Series, X1, MINI). It's fundamentally reliable, but it has a known weakness: the timing chain tensioner can wear prematurely, causing rattling noises. With regular oil changes and attention to the timing system, it's a durable and economical engine."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the BMW 2 Series 218i?",
+        "answer": "The most serious issue is timing chain tensioner wear — the tensioner can fail, causing chain rattle and potential catastrophic engine damage. Other common problems include VANOS/Valvetronic system issues, oil filter housing gasket leaks, and ignition coil failures."
+      },
+      {
+        "id": 4,
+        "question": "Is it worth replacing a 218i engine, or should I scrap the car?",
+        "answer": "Depends on vehicle value and condition. Against a tidy £5,000–£15,000 2 Series, a £1,800–£3,800 recon is 12–40% of the car's value — often worth it. If the timing chain has snapped and caused valve damage, a full engine replacement may be necessary. Get a full diagnostic assessment before committing."
+      },
+      {
+        "id": 5,
+        "question": "How do I find my 2 Series's engine code?",
+        "answer": "The 218i badge covers several engine variants. Most F22/F23 Coupe/Convertible models (2015–2021) use the B38B15M0 1.5‑litre three‑cylinder. The G42 Coupe (2021–present) uses the B48C 2.0‑litre four‑cylinder. The F45 Active Tourer, F46 Gran Tourer and F44 Gran Coupe use transverse‑mounted B38 variants. The engine code is stamped on the engine block and listed on your V5C."
+      },
+      {
+        "id": 6,
+        "question": "Can I repair a 218i engine issue, or does it need replacement?",
+        "answer": "Most issues — timing chain tensioner wear (if caught early), VANOS/Valvetronic issues, oil leaks — are repairable. However, if the timing chain has snapped, the engine is an interference design — pistons will strike valves. In this case, a full engine replacement is usually more cost‑effective than a rebuild."
+      }
+    ],
+    "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12‑month unlimited‑mileage warranty — always confirm terms with your chosen supplier."
   },
   "trustCta": {
-    "h2": "",
-    "trustPoints": [],
-    "finalCta": "",
+    "h2": "Why UK BMW 2 Series 218i Owners Trust BMWEngines.uk",
+    "trustPoints": [
+      {
+        "title": "Trusted 218i Engine Suppliers",
+        "text": "every garage and engine rebuilder in our network is vetted, rated and reviewed by real 2 Series owners, as part of the Engine Finders network, covering both the B38 three-cylinder and B48 four-cylinder variants across every body style from Coupe to Gran Tourer."
+      },
+      {
+        "title": "Compare 218i Engine Replacement Companies",
+        "text": "see prices, warranty terms and supply & fit options side‑by‑side before you commit, with specialists who understand the B38's timing chain tensioner vulnerabilities and the differences between longitudinal and transverse engine mounts."
+      },
+      {
+        "title": "UK Engine Replacement Services for the 2 Series",
+        "text": "supply‑only or full supply & fit available nationwide, covering every generation of this badge from the F22 Coupe through to the G42 and F44, with specialist knowledge of BMW's modular B‑family engines."
+      }
+    ],
+    "finalCta": "Find the best BMW 2 Series 218i engine replacement UK drivers rely on. Compare prices from trusted specialists on EnginesMarket today and get back on the road with confidence.",
     "ctaButton": {
-      "label": "",
+      "label": "Explore BMW 2 Series 218i Engine Quotes →",
       "href": "#"
     }
   }

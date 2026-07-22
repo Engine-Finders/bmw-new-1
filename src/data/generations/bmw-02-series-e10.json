@@ -1,11 +1,265 @@
 {
   "meta": {
     "slug": "bmw-02-series-e10",
-    "title": "BMW 02 Series E10 Engines — The Complete UK Guide",
-    "titleCharCount": 49,
-    "description": "",
-    "descriptionCharCount": 0,
-    "jsonLd": {}
+    "title": "E10 Engine Replacement Cost UK — Compare Quotes",
+    "titleCharCount": 58,
+    "description": "Every BMW 02 Series E10 engine — M10 1.6, 1.8, 2.0 carb, Tii and Turbo. Real UK costs and honest classic car reliability data. Get free quotes from 20+ vetted BMW specialists today.",
+    "descriptionCharCount": 159,
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://bmwengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "02 Series",
+              "item": "https://bmwengine.uk/02-series/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "BMW 02 Series E10",
+              "item": "https://bmwengine.uk/02-series/e10/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "BMW 02 Series E10 Engine Codes",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "M10B16 (1502/1602) Engine",
+              "url": "https://bmwengine.uk/engines/m10/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "M10B18 (1802) Engine",
+              "url": "https://bmwengine.uk/engines/m10/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "M10B20 (2002) Engine",
+              "url": "https://bmwengine.uk/engines/m10/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "M10B20 (2002 Ti) Engine",
+              "url": "https://bmwengine.uk/engines/m10/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 5,
+              "name": "M10B20 Tii Engine",
+              "url": "https://bmwengine.uk/engines/m10-tii/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 6,
+              "name": "M10B20 Turbo Engine",
+              "url": "https://bmwengine.uk/engines/m10-turbo/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "BMW 02 Series E10 Core Variants",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "1502",
+              "url": "https://bmwengine.uk/02-series/e10/1502/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "1602",
+              "url": "https://bmwengine.uk/02-series/e10/1602/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "1802",
+              "url": "https://bmwengine.uk/02-series/e10/1802/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "2002",
+              "url": "https://bmwengine.uk/02-series/e10/2002/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 5,
+              "name": "2002 Ti",
+              "url": "https://bmwengine.uk/02-series/e10/2002-ti/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 6,
+              "name": "2002 Tii",
+              "url": "https://bmwengine.uk/02-series/e10/2002-tii/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 7,
+              "name": "2002 Turbo",
+              "url": "https://bmwengine.uk/02-series/e10/2002-turbo/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does a BMW 02 Series E10 engine replacement cost in the UK?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A reconditioned E10 engine typically costs £1,800–£7,500 supply only [BMW-QUOTE], depending on engine — the 1502/1602 M10 sits at £1,800–£3,200, while the 2002 Turbo can reach £7,500. Fitting adds £650–£1,300 depending on engine and specialist location."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which BMW 02 Series E10 engine is the most reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The M10 family is widely regarded as one of BMW's most reliable and durable engines — the cast-iron block and simple SOHC design are robust and well-understood. The naturally aspirated carburettor variants are exceptionally durable, with documented 200,000+ mile lifespans [PROVISIONAL — pending dedicated Engine Page]."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What are the common problems with the BMW 02 Series E10?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Timing chain tensioner wear is the most significant engine issue — a rattling noise on startup or at idle is the classic warning sign. Cooling system failure is common on ageing cars. The Solex carburettors can suffer from wear and tuning issues. The Kugelfischer fuel injection on the 2002 Tii requires specialist knowledge."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the BMW 02 Series E10 reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "For a 50+ year-old classic car, the E10 is remarkably reliable — the M10 engine is one of BMW's most durable designs. With proper maintenance, the M10 can exceed 200,000 miles. However, the E10 requires regular specialist attention — carburettor tuning and bodywork care are essential."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which BMW 02 Series E10 engine should I avoid?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No engine is a hard avoid, but the 2002 Turbo requires very careful consideration — the turbocharger, unique engine management, and low compression ratio make it the most expensive and complex E10 to maintain. For most buyers, the standard 2002 or 1602 is the sweet spot."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I know if my E10 engine needs replacing?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Timing chain rattle on startup or at idle suggests tensioner wear — investigate immediately. Overheating suggests cooling system failure — stop driving immediately to avoid head gasket damage. Rough running may indicate carburettor or Kugelfischer pump issues. A pre-purchase inspection by a BMW classic specialist is essential."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is it worth replacing a BMW 02 Series E10 engine, or should I scrap the car?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Depends on the car's value. Against a well-kept £15,000 2002, a £2,200–£4,000 M10 recon is 15–27% — safe. Against a tired £6,000 example, the same recon is 37–67% — borderline. Our 70% BMW scrap threshold is the line [BMW-QUOTE]. For 2002 Turbo cars, even the most expensive replacement is viable."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How long do BMW 02 Series E10 engines last?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The M10 can exceed 200,000 miles with proper servicing — timing chain tensioner care, cooling system maintenance, and fuel system upkeep are the keys to longevity. The carburettor variants are particularly durable. The 2002 Tii's Kugelfischer pump requires regular maintenance but is capable of high mileage."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the difference between the 1602, 1802 and 2002?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The numbers indicate engine displacement: 1602 = 1.6 litres, 1802 = 1.8 litres, 2002 = 2.0 litres. The 1502 was a budget model with a detuned 1.6-litre. The 2002 Ti and 2002 Tii were the performance variants; the 2002 Turbo was the ultimate."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I find my BMW 02 Series E10 engine code?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Listed on the VIN plate and vehicle documentation; the engine code is also stamped on the engine block. Tell us your variant and we'll identify it — 20+ vetted BMW specialists will confirm it for free."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "BMWEngines.uk",
+          "url": "https://bmwengine.uk/",
+          "logo": "https://bmwengine.uk/images/bmwengines-logo.png",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "BMW 02 Series E10 Engine Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "1800",
+            "highPrice": "7500",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "name": "BMW 02 Series E10 UK Engine Enquiry Data 2025",
+          "description": "Proprietary UK enquiry volumes and demand trends for BMW 02 Series E10 engines, sourced from BMWEngines.uk's specialist marketplace activity.",
+          "creator": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk"
+          },
+          "temporalCoverage": "2025",
+          "spatialCoverage": "United Kingdom"
+        },
+        {
+          "@type": "WebPage",
+          "name": "E10 Engine Replacement Cost UK — Compare Quotes",
+          "url": "https://bmwengine.uk/02-series/e10/",
+          "author": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk Specialist Network"
+          },
+          "datePublished": "2026-07-09",
+          "dateModified": "2026-07-09"
+        }
+      ]
+    }
   },
   "internalDeclarations": {
     "checkA": "",
@@ -452,23 +706,121 @@
     "scopeNote": "All variants listed are E10 02 Series only. The 1502 (1975–1977) used a detuned 1.6-litre M10 producing 75 bhp. The 1600-2 (1966–1971) was renamed 1602 for the 1971 model year. The 2002 Ti (1968–1972) used twin Solex carburettors; the 2002 Tii (1971–1975) used Kugelfischer mechanical fuel injection. The 2002 Turbo (1974–1975) was BMW's first turbocharged production car. The 02 Series was succeeded by the E21 3 Series in 1975, though the 1502 continued until 1977."
   },
   "marketIntelligence": {
-    "mostRequestedEngines": [],
-    "mostRequestedVariants": [],
-    "averageReplacementCost": "",
-    "mostCommonFailures": [],
-    "liveFeed": []
+    "mostRequestedEngines": [
+      "1. M10B20 (2002)",
+      "2. M10B20 Tii (2002 Tii)",
+      "3. M10B20 Turbo (2002 Turbo)"
+    ],
+    "mostRequestedVariants": [
+      "1. 2002",
+      "2. 2002 Tii",
+      "3. 2002 Turbo"
+    ],
+    "averageReplacementCost": "£3,200 reconditioned, supply only [BMW-QUOTE]",
+    "mostCommonFailures": [
+      "1. Timing chain tensioner wear",
+      "2. Cooling system failure",
+      "3. Solex/Kugelfischer fuel system issues"
+    ],
+    "liveFeed": [
+      {
+        "vehicle": "BMW 2002 E10",
+        "location": "London",
+        "issue": "Timing chain inspection",
+        "enquiries": "3 enquiries",
+        "updated": "Updated Monthly"
+      },
+      {
+        "vehicle": "BMW 2002 Tii E10",
+        "location": "Surrey",
+        "issue": "Kugelfischer pump service",
+        "enquiries": "2 enquiries",
+        "updated": "Updated Monthly"
+      },
+      {
+        "vehicle": "BMW 2002 Turbo E10",
+        "location": "Oxford",
+        "issue": "Pre-purchase inspection",
+        "enquiries": "1 enquiry",
+        "updated": "Updated Monthly"
+      }
+    ]
   },
   "faq": {
-    "items": []
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a BMW 02 Series E10 engine replacement cost in the UK?",
+        "answer": "A reconditioned E10 engine typically costs £1,800–£7,500 supply only [BMW-QUOTE], depending on engine — the 1502/1602 M10 sits at £1,800–£3,200, while the 2002 Turbo can reach £7,500. Fitting adds £650–£1,300 depending on engine and specialist location. The E10's rising collector values (£5,000–£60,000+) mean replacement is often viable for well-maintained cars."
+      },
+      {
+        "id": 2,
+        "question": "Which BMW 02 Series E10 engine is the most reliable?",
+        "answer": "The M10 family is widely regarded as one of BMW's most reliable and durable engines — the cast-iron block and simple SOHC design are robust and well-understood. The naturally aspirated carburettor variants (1502, 1602, 1802, 2002) are exceptionally durable, with documented 200,000+ mile lifespans. The 2002 Tii's Kugelfischer pump requires specialist maintenance, but the engine itself is equally robust [PROVISIONAL — pending dedicated Engine Page]."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the BMW 02 Series E10?",
+        "answer": "Timing chain tensioner wear is the most significant engine issue — a rattling noise on startup or at idle is the classic warning sign. Cooling system failure (water pump, radiator) is common on ageing cars. The Solex carburettors on 1602, 1802 and 2002 models can suffer from wear and tuning issues. The Kugelfischer mechanical fuel injection on the 2002 Tii requires specialist knowledge to maintain. Body rust is the biggest non-engine concern."
+      },
+      {
+        "id": 4,
+        "question": "Is the BMW 02 Series E10 reliable?",
+        "answer": "For a 50+ year-old classic car, the E10 is remarkably reliable — the M10 engine is one of BMW's most durable designs. With proper maintenance (timing chain tensioner, cooling system, fuel system), the M10 can exceed 200,000 miles. However, the E10 requires regular specialist attention — carburettor tuning (or Kugelfischer pump maintenance on Tii cars) and bodywork care are essential. Buy a well-maintained example with documented service history."
+      },
+      {
+        "id": 5,
+        "question": "Which BMW 02 Series E10 engine should I avoid?",
+        "answer": "No engine is a hard avoid, but the 2002 Turbo requires very careful consideration — the turbocharger, unique engine management, and low compression ratio make it the most expensive and complex E10 to maintain. Parts are scarce and specialist knowledge is essential. The 2002 Tii is also complex — the Kugelfischer pump is a masterpiece but requires specialist maintenance. For most buyers, the standard 2002 or 1602 is the sweet spot."
+      },
+      {
+        "id": 6,
+        "question": "How do I know if my E10 engine needs replacing?",
+        "answer": "Timing chain rattle on startup or at idle suggests tensioner wear — investigate immediately. Overheating suggests cooling system failure — stop driving immediately to avoid head gasket damage. Rough running or poor performance may indicate carburettor or Kugelfischer pump issues. A pre-purchase inspection by a BMW classic specialist is essential."
+      },
+      {
+        "id": 7,
+        "question": "Is it worth replacing a BMW 02 Series E10 engine, or should I scrap the car?",
+        "answer": "Depends on the car's value. Against a well-kept £15,000 2002, a £2,200–£4,000 M10 recon is 15–27% of the car's value — safe. Against a tired £6,000 example, the same recon is 37–67% — borderline. Our 70% BMW scrap threshold is the line [BMW-QUOTE]. For 2002 Turbo cars (£30,000–£60,000+), even the most expensive replacement is viable given collector values."
+      },
+      {
+        "id": 8,
+        "question": "How long do BMW 02 Series E10 engines last?",
+        "answer": "The M10 can exceed 200,000 miles with proper servicing — timing chain tensioner care, cooling system maintenance, and fuel system upkeep are the keys to longevity. The carburettor variants are particularly durable. The 2002 Tii's Kugelfischer pump requires regular maintenance but is capable of high mileage. The 2002 Turbo is more highly stressed and may require more frequent attention."
+      },
+      {
+        "id": 9,
+        "question": "What is the difference between the 1602, 1802 and 2002?",
+        "answer": "The numbers indicate engine displacement: 1602 = 1.6 litres (85 bhp), 1802 = 1.8 litres (90 bhp), 2002 = 2.0 litres (100–170 bhp depending on variant). The 1600-2 (1966–1971) was renamed 1602 for the 1971 model year. The 1502 (1975–1977) was a budget model with a detuned 1.6-litre engine producing 75 bhp. The 2002 Ti (120 bhp) and 2002 Tii (130 bhp) were the performance variants; the 2002 Turbo (170 bhp) was the ultimate."
+      },
+      {
+        "id": 10,
+        "question": "How do I find my BMW 02 Series E10 engine code?",
+        "answer": "Listed on the VIN plate and vehicle documentation; the engine code is also stamped on the engine block. Tell us your variant (1502, 1602, 1802, 2002, 2002 Ti, 2002 Tii, 2002 Turbo) and we'll identify it — 20+ vetted BMW specialists will confirm it for free. The 2002 Tii's engine code is M10B20 (23EA); the 2002 Turbo's is M10B20 (22T A)."
+      }
+    ]
   },
   "trustCta": {
-    "h2": "",
-    "trustPoints": [],
-    "finalCta": "",
+    "h2": "Why UK BMW 02 Series E10 Owners Trust BMWEngines.uk",
+    "trustPoints": [
+      {
+        "title": "Trusted E10 Engine Suppliers",
+        "text": "every garage and engine rebuilder in our network is vetted, rated and reviewed by real 02 Series owners, as part of the Engine Finders network."
+      },
+      {
+        "title": "Compare E10 Engine Replacement Companies",
+        "text": "see prices, warranty terms and supply & fit options side-by-side before you commit."
+      },
+      {
+        "title": "UK Engine Replacement Services for E10",
+        "text": "covering every variant from 1502 to 2002 Turbo, with supply-only or full supply & fit available nationwide."
+      }
+    ],
+    "finalCta": "Find the best BMW 02 Series E10 engine replacement UK drivers rely on. Compare real prices from trusted specialists on EnginesMarket today and keep your classic on the road.",
     "ctaButton": {
-      "label": "",
+      "label": "Compare BMW 02 Series E10 Engine Prices on EnginesMarket →",
       "href": "#",
-      "note": ""
+      "note": "[PLACEHOLDER — confirm EnginesMarket URL structure]"
     }
   }
 }

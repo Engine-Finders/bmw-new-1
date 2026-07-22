@@ -1,24 +1,304 @@
 {
   "meta": {
     "slug": "x3",
-    "title": "X3 Engines — The Complete UK Guide",
-    "titleCharCount": 34,
-    "description": "",
-    "descriptionCharCount": 0,
+    "title": "BMW X3 Engine Replacement Cost UK — Compare Quotes",
+    "titleCharCount": 50,
+    "description": "Every BMW X3 engine — M54 to B58. 4 generations, real UK costs and reliability data. Compare prices from 20+ vetted BMW specialists today.",
+    "descriptionCharCount": 138,
     "openGraph": {
-      "title": "",
-      "description": "",
-      "type": "",
-      "url": "",
-      "image": "",
-      "siteName": ""
+      "title": "BMW X3 Engine Replacement Cost UK — Compare Quotes",
+      "description": "Every BMW X3 engine — M54 to B58. 4 generations, real UK costs and reliability data. Compare prices from 20+ vetted BMW specialists today.",
+      "type": "website",
+      "url": "https://bmwengine.uk/x3/",
+      "image": "https://bmwengine.uk/images/bmw-x3-hero.jpg",
+      "siteName": "BMWEngines.uk"
     },
     "twitter": {
-      "card": "",
-      "title": "",
-      "description": ""
+      "card": "summary_large_image",
+      "title": "BMW X3 Engine Replacement Cost UK — Compare Quotes",
+      "description": "Every BMW X3 engine — M54 to B58. 4 generations, real UK costs and reliability data. Compare prices from 20+ vetted BMW specialists today."
     },
-    "jsonLd": {}
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://bmwengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "X3",
+              "item": "https://bmwengine.uk/x3/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "BMW X3 Generations",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "BMW X3 E83 (2003–2010)",
+              "url": "https://bmwengine.uk/x3/e83/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "BMW X3 F25 (2010–2017)",
+              "url": "https://bmwengine.uk/x3/f25/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "BMW X3 G01 (2017–2024)",
+              "url": "https://bmwengine.uk/x3/g01/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "BMW X3 G45 (2024–present)",
+              "url": "https://bmwengine.uk/x3/g45/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "BMW X3 Engine Codes",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "M54B25 Engine",
+              "url": "https://bmwengine.uk/engines/m54b25/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "M54B30 Engine",
+              "url": "https://bmwengine.uk/engines/m54b30/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "N52B25 Engine",
+              "url": "https://bmwengine.uk/engines/n52b25/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "N52B30 Engine",
+              "url": "https://bmwengine.uk/engines/n52b30/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 5,
+              "name": "M47TUD20 Engine",
+              "url": "https://bmwengine.uk/engines/m47tud20/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 6,
+              "name": "N47D20C Engine",
+              "url": "https://bmwengine.uk/engines/n47d20c/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 7,
+              "name": "M57TUD30 Engine",
+              "url": "https://bmwengine.uk/engines/m57tud30/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 8,
+              "name": "N20B20 Engine",
+              "url": "https://bmwengine.uk/engines/n20b20/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 9,
+              "name": "N55B30 Engine",
+              "url": "https://bmwengine.uk/engines/n55b30/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 10,
+              "name": "N47D20O1 Engine",
+              "url": "https://bmwengine.uk/engines/n47d20o1/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 11,
+              "name": "N57D30O1 Engine",
+              "url": "https://bmwengine.uk/engines/n57d30o1/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 12,
+              "name": "B47D20A Engine",
+              "url": "https://bmwengine.uk/engines/b47d20a/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 13,
+              "name": "B48B20 Engine",
+              "url": "https://bmwengine.uk/engines/b48b20/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 14,
+              "name": "B47C20A Engine",
+              "url": "https://bmwengine.uk/engines/b47c20a/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 15,
+              "name": "B57D30 Engine",
+              "url": "https://bmwengine.uk/engines/b57d30/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 16,
+              "name": "B58B30 Engine",
+              "url": "https://bmwengine.uk/engines/b58b30/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 17,
+              "name": "S58B30 Engine",
+              "url": "https://bmwengine.uk/engines/s58b30/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does a BMW X3 engine replacement cost in the UK?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A reconditioned BMW X3 engine typically costs £2,800–£5,500 supply only [BMW-QUOTE] — from the B47/B48 at £2,800–£5,000 to the N47/N20 at £3,200–£5,500. The B58 costs £3,800–£6,000; the S58 (X3 M) costs £7,000–£10,000+. Fitting adds £650–£1,500. Use our calculator for a personalised figure."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which BMW X3 engine is the most reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The B58B30 straight-six in the G01 M40i and the B48B20 petrol in the G01/G45 — the B-family engines are the modern gold standard. The M57TUD30 in the E83 is the classic robust diesel pick."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which BMW X3 engine should I avoid?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No engine outright — but an E83 or pre-2015 F25 N47D20 or N20B20 without a documented timing-chain replacement is the one purchase we consistently advise against. A 2015+ F25 B47 or any G01 B-family engine has no such caveat."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I know if my X3 engine needs replacing?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "By engine: cold-start rattle (N47/N20 timing chain), chain noise under load (N47/N20), coolant loss (B48 cooling system), oil drips (N47 EGR cooler), DPF clogging (M57/N57). On the E83 and early F25, any rattling on startup is a warning sign. Caught early, it's a repair; ignored, it's a £2,800–£5,500 engine [BMW-QUOTE]. Use our diagnostic calculator for a personalised assessment."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is it worth replacing a BMW X3 engine?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Depends entirely on generation. Against a £15,000–£25,000 G01, a £3,000–£5,000 B47/B48 recon is 11–33% — ✅ safe. Against a £4,000–£6,000 E83/F25, a £3,200–£5,500 N47/N20 recon is 53–138% — ⚠️ watch to ❌ walk away. Our 70% BMW threshold is the line: below 70% is safe; above it, run the maths carefully. Use our calculator for your car."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which BMW X3 should I buy?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "2018+ G01 with the B47 diesel or B48 petrol — the B-family engines fixed the chain issue, the CLAR platform is the most refined X3 ever, and the values are holding strong (£15,000–£35,000). For performance, the G01 M40i with the B58 is the sweet spot. For the budget option, a 2015+ F25 with B47 diesel — the chain risk is gone, and the values are sensible (£8,000–£15,000). Avoid E83 and pre-2015 F25 N47/N20 without documented chain history."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I find my BMW X3 engine code?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Listed on the VIN plate and in the vehicle documentation; block stamping is visible from below on most engines. Or tell us your generation and variant (E83 3.0d, F25 20d, G01 30i, G45 20d) and we'll identify it — 20+ vetted specialists will confirm it for free."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "BMW X3 vs X1 — which is more reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Mechanically they share engines across similar eras — the N47/B47/B48 story is similar. The X3 is larger and heavier, so it works the powertrain harder; the X1 is smaller and lighter. Buy on engine and year, not badge. The X1 offers more value; the X3 offers more space and refinement."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "BMWEngines.uk",
+          "url": "https://bmwengine.uk/",
+          "logo": "https://bmwengine.uk/images/bmwengines-logo.png",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "BMW X3 Engine Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "2800",
+            "highPrice": "5500",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "name": "BMW X3 UK Engine Enquiry Data 2025",
+          "description": "Proprietary UK enquiry volumes and demand trends for BMW X3 engines, sourced from BMWEngines.uk's specialist marketplace activity.",
+          "creator": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk"
+          },
+          "temporalCoverage": "2025",
+          "spatialCoverage": "United Kingdom"
+        },
+        {
+          "@type": "WebPage",
+          "name": "BMW X3 Engine Replacement Cost UK — Compare Quotes",
+          "url": "https://bmwengine.uk/x3/",
+          "author": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk Specialist Network"
+          },
+          "datePublished": "2026-07-07",
+          "dateModified": "2026-07-07"
+        }
+      ]
+    }
   },
   "hero": {
     "tagPill": "BMW X3 • 2003–Present • 4 Generations (E83, F25, G01, G45) • M54, M57, N52, N47, N20, N55, N57, B47, B48, B58, S58",
@@ -135,140 +415,76 @@
       {
         "metric": "Overall Rating",
         "value": "★★★★☆ 3.9/5"
-      },
-      {
-        "metric": "SECTION 4 — GENERATIONS — <GenerationsGrid>",
-        "value": "H2: BMW X3 Generations — Find Your Vehicle"
-      },
-      {
-        "metric": "Sub-headline: Four generations, 20+ years, and BMW's best-selling SUV. The right X3 depends on which generation and which engine you choose.",
-        "value": "First Generation — E83 (2003–2010)"
-      },
-      {
-        "metric": "BMW X3 E83 🔥 Most Enquired — classic era [BMW-VERIFIED]",
-        "value": "2003–2010 • M54, N52, M47, N47, M57 — E46/ E90 platform-based"
-      },
-      {
-        "metric": "★★★☆☆",
-        "value": "Our Verdict: The original X3 — based on the E46/E90 3 Series platform with rear-wheel-drive as standard. The M54 and N52 straight-sixes are the robust picks; the N47 diesel carries the chain-tensioner caveat. The M57 3.0d is a bulletproof classic. Buy the six-cylinder or a diesel with documented chain history."
-      },
-      {
-        "metric": "Explore the E83 →",
-        "value": "Second Generation — F25 (2010–2017)"
-      },
-      {
-        "metric": "BMW X3 F25 🔥 Most Enquired — N47/N20 drives volume [BMW-VERIFIED]",
-        "value": "2010–2017 • N20, N52, N55, N47, N57, B47 (LCI) — F10 5 Series platform"
-      },
-      {
-        "metric": "★★★★☆",
-        "value": "Our Verdict: The second-generation X3 — bigger, more refined, and built on the F10 5 Series platform. The N20 petrol and N47 diesel carry the chain-tensioner caveat; the N52 straight-six (early) and N55 are robust. The LCI (2015+) introduced the B47 diesel, finally fixing the chain issue. Buy 2015+ B47 or the N55."
-      },
-      {
-        "metric": "Explore the F25 →",
-        "value": "Third Generation — G01 (2017–2024)"
-      },
-      {
-        "metric": "BMW X3 G01 🔥 Most Enquired — B47/B48/B58 drives volume [BMW-VERIFIED]",
-        "value": "2017–2024 • B47, B48, B57, B58, S58 (X3 M) — CLAR platform"
-      },
-      {
-        "metric": "★★★★★",
-        "value": "Our Verdict: The third-generation X3 — CLAR platform, B-family engines only, and the most dependable X3 ever made. The B47 diesel and B48 petrol are the modern gold standard; the B58 in the M40i is a masterpiece; the S58 in the X3 M is the full M experience. This is the X3 generation to buy."
-      },
-      {
-        "metric": "Explore the G01 →",
-        "value": "Fourth Generation — G45 (2024–present)"
-      },
-      {
-        "metric": "BMW X3 G45",
-        "value": "2024–present • B48, B58, B47 — CLAR platform, mild-hybrid, PHEV, iX3 electric"
-      },
-      {
-        "metric": "★★★★★",
-        "value": "Our Verdict: The fourth-generation X3 — revealed 2024, available with petrol, diesel, mild-hybrid, plug-in hybrid, and fully electric iX3 powertrains. The B48 in the xDrive20 produces 208 hp; the B58 in the M50 xDrive produces 398 hp with 48V mild-hybrid assistance. Too new for volume reliability data, but the B-family record is impeccable."
-      },
-      {
-        "metric": "Explore the G45 →",
-        "value": "The Generation Divide — The Line That Matters Most"
-      },
-      {
-        "metric": "E83 (2003–2010)",
-        "value": "F25 (2010–2017)"
-      },
-      {
-        "metric": "G01 (2017–2024)",
-        "value": "G45 (2024–present)"
-      },
-      {
-        "metric": "Platform",
-        "value": "E46/E90"
-      },
-      {
-        "metric": "F10 5 Series",
-        "value": "CLAR"
-      },
-      {
-        "metric": "CLAR",
-        "value": "Core diesel"
-      },
-      {
-        "metric": "M47/N47/M57",
-        "value": "N47 (early), B47 (2015+)"
-      },
-      {
-        "metric": "B47/B57",
-        "value": "B47"
-      },
-      {
-        "metric": "Core petrol",
-        "value": "M54/N52"
-      },
-      {
-        "metric": "N20/N52/N55",
-        "value": "B48/B58"
-      },
-      {
-        "metric": "B48/B58",
-        "value": "Core issue"
-      },
-      {
-        "metric": "N47 timing chain",
-        "value": "N47/N20 timing chain"
-      },
-      {
-        "metric": "None significant",
-        "value": "None significant"
-      },
-      {
-        "metric": "Our position",
-        "value": "Buy M54/N52/M57"
-      },
-      {
-        "metric": "Buy 2015+ B47 or N55",
-        "value": "The one to buy"
-      },
-      {
-        "metric": "The future — buy with confidence",
-        "value": "Read the full comparison: BMW X3 F25 vs G01 →"
-      },
-      {
-        "metric": "The Badge Ambiguity — \"20d\" and \"20i\" Mean Different Things",
-        "value": "Correction applied (internal): The \"20d\" badge covers different engines depending on generation. On the E83 (2005–2010), it's the M47 or N47 — the chain-risk engine. On the F25 (2010–2014), it's the N47; on the F25 LCI (2015–2017), it's the B47. On the G01 (2018+), it's the B47. The \"20i\" badge covers the N20 (F25, chain risk) or B48 (G01/G45, robust). All share a badge. None share a reliability profile."
       }
     ]
   },
   "generations": {
-    "h2": "",
-    "subHeadline": "",
-    "cards": [],
+    "h2": "BMW X3 Generations — Find Your Vehicle",
+    "subHeadline": "Four generations, 20+ years, and BMW's best-selling SUV. The right X3 depends on which generation and which engine you choose.",
+    "cards": [
+      {
+        "title": "First Generation — E83 (2003–2010)",
+        "badge": "BMW X3 E83 🔥 Most Enquired — classic era [BMW-VERIFIED]",
+        "meta": "2003–2010 • M54, N52, M47, N47, M57 — E46/ E90 platform-based",
+        "rating": "★★★☆☆",
+        "verdict": "The original X3 — based on the E46/E90 3 Series platform with rear-wheel-drive as standard. The M54 and N52 straight-sixes are the robust picks; the N47 diesel carries the chain-tensioner caveat. The M57 3.0d is a bulletproof classic. Buy the six-cylinder or a diesel with documented chain history.",
+        "cta": {
+          "label": "Explore the E83 →",
+          "href": "#"
+        }
+      },
+      {
+        "title": "Second Generation — F25 (2010–2017)",
+        "badge": "BMW X3 F25 🔥 Most Enquired — N47/N20 drives volume [BMW-VERIFIED]",
+        "meta": "2010–2017 • N20, N52, N55, N47, N57, B47 (LCI) — F10 5 Series platform",
+        "rating": "★★★★☆",
+        "verdict": "The second-generation X3 — bigger, more refined, and built on the F10 5 Series platform. The N20 petrol and N47 diesel carry the chain-tensioner caveat; the N52 straight-six (early) and N55 are robust. The LCI (2015+) introduced the B47 diesel, finally fixing the chain issue. Buy 2015+ B47 or the N55.",
+        "cta": {
+          "label": "Explore the F25 →",
+          "href": "#"
+        }
+      },
+      {
+        "title": "Third Generation — G01 (2017–2024)",
+        "badge": "BMW X3 G01 🔥 Most Enquired — B47/B48/B58 drives volume [BMW-VERIFIED]",
+        "meta": "2017–2024 • B47, B48, B57, B58, S58 (X3 M) — CLAR platform",
+        "rating": "★★★★★",
+        "verdict": "The third-generation X3 — CLAR platform, B-family engines only, and the most dependable X3 ever made. The B47 diesel and B48 petrol are the modern gold standard; the B58 in the M40i is a masterpiece; the S58 in the X3 M is the full M experience. This is the X3 generation to buy.",
+        "cta": {
+          "label": "Explore the G01 →",
+          "href": "#"
+        }
+      },
+      {
+        "title": "Fourth Generation — G45 (2024–present)",
+        "badge": "",
+        "meta": "2024–present • B48, B58, B47 — CLAR platform, mild-hybrid, PHEV, iX3 electric",
+        "rating": "★★★★★",
+        "verdict": "The fourth-generation X3 — revealed 2024, available with petrol, diesel, mild-hybrid, plug-in hybrid, and fully electric iX3 powertrains. The B48 in the xDrive20 produces 208 hp; the B58 in the M50 xDrive produces 398 hp with 48V mild-hybrid assistance. Too new for volume reliability data, but the B-family record is impeccable.",
+        "cta": {
+          "label": "Explore the G45 →",
+          "href": "#"
+        }
+      },
+      {
+        "title": "The Generation Divide — The Line That Matters Most",
+        "badge": "",
+        "meta": "E83 (2003–2010)",
+        "rating": "",
+        "verdict": "",
+        "cta": {
+          "label": "",
+          "href": "#"
+        }
+      }
+    ],
     "rangeTable": {
       "title": "",
       "columns": [],
       "rows": []
     },
     "comparisonLink": {
-      "label": "",
+      "label": "Read the full comparison: BMW X3 F25 vs G01 →",
       "href": "#"
     }
   },

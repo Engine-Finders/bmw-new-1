@@ -20,181 +20,7 @@
       "description": "Every BMW X4 20i engine — N20 and B48 2.0-litre turbo petrols, 2014–present. Real UK costs, timing chain advice, and honest reliability data.",
       "image": "https://bmwengine.uk/images/bmw/hero/x4-20i.jpg"
     },
-    "jsonLd": {
-      "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "BreadcrumbList",
-          "itemListElement": [
-            {
-              "@type": "ListItem",
-              "position": 1,
-              "name": "Home",
-              "item": "https://bmwengine.uk/"
-            },
-            {
-              "@type": "ListItem",
-              "position": 2,
-              "name": "X4",
-              "item": "https://bmwengine.uk/x4/"
-            },
-            {
-              "@type": "ListItem",
-              "position": 3,
-              "name": "F26/G02 X4",
-              "item": "https://bmwengine.uk/x4/"
-            },
-            {
-              "@type": "ListItem",
-              "position": 4,
-              "name": "20i",
-              "item": "https://bmwengine.uk/x4/20i/"
-            }
-          ]
-        },
-        {
-          "@type": "ItemList",
-          "name": "BMW X4 20i Engine Era Map",
-          "itemListElement": [
-            {
-              "@type": "ListItem",
-              "position": 1,
-              "name": "F26 X4 20i N20B20A (2014-2018)",
-              "url": "https://bmwengine.uk/x4/f26/"
-            },
-            {
-              "@type": "ListItem",
-              "position": 2,
-              "name": "G02 X4 20i B48B20A (2018-present)",
-              "url": "https://bmwengine.uk/x4/g02/"
-            }
-          ]
-        },
-        {
-          "@type": "ItemList",
-          "name": "BMW X4 20i Engine Codes",
-          "itemListElement": [
-            {
-              "@type": "ListItem",
-              "position": 1,
-              "name": "N20B20A",
-              "url": "https://bmwengine.uk/engines/n20/"
-            },
-            {
-              "@type": "ListItem",
-              "position": 2,
-              "name": "B48B20A",
-              "url": "https://bmwengine.uk/engines/b48/"
-            }
-          ]
-        },
-        {
-          "@type": "FAQPage",
-          "mainEntity": [
-            {
-              "@type": "Question",
-              "name": "How much does a BMW X4 20i engine replacement cost in the UK?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "A reconditioned X4 20i engine typically costs £3,500–£5,500 supply only, with the B48 variants at the higher end. Fitting adds £800–£1,300 depending on the specialist. Customers commonly report dealer estimates in the £14,000–£18,000 range for complete engine replacement, while reconditioned units are often £6,000–£8,000. Use our calculator for a figure specific to your X4."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Is the BMW X4 20i engine reliable?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "It depends entirely on which engine era your X4 20i has. The F26 (2014–2018) with the N20 has timing chain guide issues — the plastic guides can become brittle and deteriorate, causing excessive chain slack. Pre-2015 units are most at risk. The G02 (2018+) with the B48 is significantly more reliable — the timing chain design was improved. Common B48 issues include oil leaks from the oil filter housing, coolant leaks from the water pump or thermostat, and a starter motor recall on 2019–2021 models."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "What are the common problems with the BMW X4 20i?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "N20 timing chain guide failure (F26 pre-2015) — rattling on cold start is the warning sign. B48 oil filter housing oil leaks and water pump/thermostat coolant leaks (G02). Starter motor recall affecting 2019–2021 models due to moisture ingress and fire risk. Carbon buildup on intake valves due to direct injection. The B48 is a significant improvement over the N20."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Is it worth replacing an X4 20i engine, or should I scrap the car?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "Depends on vehicle value and engine era. Against a well-kept G02 worth £20,000–£35,000, a £4,000–£5,000 recon is 15–25% of the car's value — worth it. Against a tired F26 worth £8,000–£12,000, the same recon may approach our 70% BMW threshold — get a scrap valuation first. B48-engined cars command a premium due to improved reliability."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "How do I find my BMW X4 20i engine code?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "F26 (2014–2018): N20B20A. G02 (2018–present): B48B20A or B46B20B. Check the VIN plate or vehicle documentation."
-              }
-            },
-            {
-              "@type": "Question",
-              "name": "Can I repair the N20 timing chain, or does it need replacement?",
-              "acceptedAnswer": {
-                "@type": "Answer",
-                "text": "The chain guides must be replaced — they are the weak point. A preventative replacement of the timing chain and guides costs £1,500–£3,000. A snapped chain almost always destroys the engine, requiring a £3,500–£5,500+ replacement. At the first sign of cold-start rattle, book an inspection immediately. The B48 has far fewer timing chain issues — but regular oil changes remain essential."
-              }
-            }
-          ]
-        },
-        {
-          "@type": "Organization",
-          "name": "BMWEngines.uk",
-          "url": "https://bmwengine.uk/",
-          "logo": "https://bmwengine.uk/images/bmwengines-logo.png",
-          "parentOrganization": {
-            "@type": "Organization",
-            "name": "Engine Finders"
-          }
-        },
-        {
-          "@type": "Service",
-          "serviceType": "BMW X4 20i Engine Replacement",
-          "provider": {
-            "@type": "Organization",
-            "name": "BMWEngines.uk"
-          },
-          "areaServed": "GB",
-          "offers": {
-            "@type": "AggregateOffer",
-            "priceCurrency": "GBP",
-            "lowPrice": "800",
-            "highPrice": "6500",
-            "availability": "https://schema.org/InStock"
-          }
-        },
-        {
-          "@type": "Dataset",
-          "name": "BMW X4 20i UK Engine Enquiry Data 2025",
-          "description": "Proprietary UK enquiry volumes and demand trends for BMW X4 20i engines, sourced from BMWEngines.uk's specialist marketplace activity.",
-          "creator": {
-            "@type": "Organization",
-            "name": "BMWEngines.uk"
-          },
-          "temporalCoverage": "2025",
-          "spatialCoverage": "United Kingdom"
-        },
-        {
-          "@type": "WebPage",
-          "name": "X4 20i Engine Replacement Cost UK — Compare Quotes",
-          "url": "https://bmwengine.uk/x4/20i/",
-          "author": {
-            "@type": "Organization",
-            "name": "BMWEngines.uk Editorial Team"
-          },
-          "reviewedBy": {
-            "@type": "Organization",
-            "name": "BMWEngines.uk Specialist Network"
-          },
-          "datePublished": "2026-07-11",
-          "dateModified": "2026-07-11"
-        }
-      ]
-    }
+    "jsonLd": {}
   },
   "hero": {
     "tagPill": "BMW X4 20i • 2014–present • 2 Engine Generations",
@@ -548,40 +374,43 @@
       {
         "label": "Regional Demand",
         "value": "South East (18%), North West (16%), Midlands (14%) [PATTERN DATA]"
-      },
-      {
-        "label": "SECTION 8 — FAQ",
-        "value": "1. How much does a BMW X4 20i engine replacement cost in the UK?"
-      },
-      {
-        "label": "A reconditioned X4 20i engine typically costs £3,500–£5,500 supply only, with the B48 variants at the higher end. Fitting adds £800–£1,300 depending on the specialist. Customers commonly report dealer estimates in the £14,000–£18,000 range for complete engine replacement, while reconditioned units are often £6,000–£8,000. Use our calculator for a figure specific to your X4.",
-        "value": "2. Is the BMW X4 20i engine reliable?"
-      },
-      {
-        "label": "It depends entirely on which engine era your X4 20i has. The F26 (2014–2018) with the N20 has timing chain guide issues — the plastic guides can become brittle and deteriorate, causing excessive chain slack. Pre-2015 units are most at risk. The G02 (2018+) with the B48 is significantly more reliable — the timing chain design was improved. Common B48 issues include oil leaks from the oil filter housing, coolant leaks from the water pump or thermostat, and a starter motor recall on 2019–2021 models.",
-        "value": "3. What are the common problems with the BMW X4 20i?"
-      },
-      {
-        "label": "N20 timing chain guide failure (F26 pre-2015) — rattling on cold start is the warning sign. B48 oil filter housing oil leaks and water pump/thermostat coolant leaks (G02). Starter motor recall affecting 2019–2021 models due to moisture ingress and fire risk. Carbon buildup on intake valves due to direct injection. The B48 is a significant improvement over the N20.",
-        "value": "4. Is it worth replacing an X4 20i engine, or should I scrap the car?"
-      },
-      {
-        "label": "Depends on vehicle value and engine era. Against a well-kept G02 worth £20,000–£35,000, a £4,000–£5,000 recon is 15–25% of the car's value — worth it. Against a tired F26 worth £8,000–£12,000, the same recon may approach our 70% BMW threshold — get a scrap valuation first. B48-engined cars command a premium due to improved reliability.",
-        "value": "5. How do I find my BMW X4 20i engine code?"
-      },
-      {
-        "label": "F26 (2014–2018): N20B20A. G02 (2018–present): B48B20A or B46B20B. Check the VIN plate or vehicle documentation.",
-        "value": "6. Can I repair the N20 timing chain, or does it need replacement?"
-      },
-      {
-        "label": "The chain guides must be replaced — they are the weak point. A preventative replacement of the timing chain and guides costs £1,500–£3,000. A snapped chain almost always destroys the engine, requiring a £3,500–£5,500+ replacement. At the first sign of cold-start rattle, book an inspection immediately. The B48 has far fewer timing chain issues — but regular oil changes remain essential.",
-        "value": "Disclaimer: All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine condition, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty — always confirm terms with your chosen supplier."
       }
     ]
   },
   "faq": {
-    "items": [],
-    "disclaimer": ""
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a BMW X4 20i engine replacement cost in the UK?",
+        "answer": "A reconditioned X4 20i engine typically costs £3,500–£5,500 supply only, with the B48 variants at the higher end. Fitting adds £800–£1,300 depending on the specialist. Customers commonly report dealer estimates in the £14,000–£18,000 range for complete engine replacement, while reconditioned units are often £6,000–£8,000. Use our calculator for a figure specific to your X4."
+      },
+      {
+        "id": 2,
+        "question": "Is the BMW X4 20i engine reliable?",
+        "answer": "It depends entirely on which engine era your X4 20i has. The F26 (2014–2018) with the N20 has timing chain guide issues — the plastic guides can become brittle and deteriorate, causing excessive chain slack. Pre-2015 units are most at risk. The G02 (2018+) with the B48 is significantly more reliable — the timing chain design was improved. Common B48 issues include oil leaks from the oil filter housing, coolant leaks from the water pump or thermostat, and a starter motor recall on 2019–2021 models."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the BMW X4 20i?",
+        "answer": "N20 timing chain guide failure (F26 pre-2015) — rattling on cold start is the warning sign. B48 oil filter housing oil leaks and water pump/thermostat coolant leaks (G02). Starter motor recall affecting 2019–2021 models due to moisture ingress and fire risk. Carbon buildup on intake valves due to direct injection. The B48 is a significant improvement over the N20."
+      },
+      {
+        "id": 4,
+        "question": "Is it worth replacing an X4 20i engine, or should I scrap the car?",
+        "answer": "Depends on vehicle value and engine era. Against a well-kept G02 worth £20,000–£35,000, a £4,000–£5,000 recon is 15–25% of the car's value — worth it. Against a tired F26 worth £8,000–£12,000, the same recon may approach our 70% BMW threshold — get a scrap valuation first. B48-engined cars command a premium due to improved reliability."
+      },
+      {
+        "id": 5,
+        "question": "How do I find my BMW X4 20i engine code?",
+        "answer": "F26 (2014–2018): N20B20A. G02 (2018–present): B48B20A or B46B20B. Check the VIN plate or vehicle documentation."
+      },
+      {
+        "id": 6,
+        "question": "Can I repair the N20 timing chain, or does it need replacement?",
+        "answer": "The chain guides must be replaced — they are the weak point. A preventative replacement of the timing chain and guides costs £1,500–£3,000. A snapped chain almost always destroys the engine, requiring a £3,500–£5,500+ replacement. At the first sign of cold-start rattle, book an inspection immediately. The B48 has far fewer timing chain issues — but regular oil changes remain essential."
+      }
+    ],
+    "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine condition, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty — always confirm terms with your chosen supplier."
   },
   "trustCta": {
     "h2": "Why UK BMW X4 20i Owners Trust BMWEngines.uk",

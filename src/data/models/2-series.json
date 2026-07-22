@@ -361,116 +361,87 @@
       {
         "metric": "Overall Rating",
         "value": "★★★★☆ 3.9/5"
-      },
-      {
-        "metric": "SECTION 4 — GENERATIONS — <GenerationsGrid>",
-        "value": "H2: BMW 2 Series — One Badge, Five Distinct Cars"
-      },
-      {
-        "metric": "Sub-headline: The 2 Series is BMW's most diverse family. Your ownership experience depends entirely on which bodystyle and which platform you choose — they share a badge but little else.",
-        "value": "The RWD Sports Cars"
-      },
-      {
-        "metric": "BMW 2 Series Coupé/Convertible F22/F23 🔥 Most Enquired — 147 enquiries (2025) [BMW-VERIFIED]",
-        "value": "2014–2021 • N20, N47, N55, B48, B58"
-      },
-      {
-        "metric": "★★★★☆",
-        "value": "Our Verdict: The spiritual successor to the E30 — RWD, compact, and available with the B58 straight-six in the M240i. Early N20/N47 cars carry the chain caveat; 2017+ LCI cars with B48/B58 are the sweet spot. The M240i is a future classic."
-      },
-      {
-        "metric": "Explore the F22 →",
-        "value": "BMW 2 Series Coupé G42"
-      },
-      {
-        "metric": "2021–present • B48B20 (220i/230i), B58B30 (M240i xDrive)",
-        "value": "★★★★★"
-      },
-      {
-        "metric": "Our Verdict: The second-generation RWD coupé — CLAR platform, B-family engines only, and the M240i xDrive with 374 bhp. No manual gearbox, but the B58 is the most dependable modern BMW engine. The safest 2 Series ever made.",
-        "value": "Explore the G42 →"
-      },
-      {
-        "metric": "The FWD Family Cars",
-        "value": "BMW 2 Series Active Tourer F45"
-      },
-      {
-        "metric": "2014–present • B38 (218i), B47 (218d/220d), B48 (225i/225xe PHEV)",
-        "value": "★★★★☆"
-      },
-      {
-        "metric": "Our Verdict: BMW's first front-wheel-drive production car — a compact MPV that competes with the Mercedes B-Class. The B47 diesel is the sensible choice; the 225xe PHEV is the urban commuter's pick.",
-        "value": "Explore the F45 →"
-      },
-      {
-        "metric": "BMW 2 Series Gran Tourer F46",
-        "value": "2015–present • B47 (218d/220d), B48 (220i/225i)"
-      },
-      {
-        "metric": "★★★★☆",
-        "value": "Our Verdict: The seven-seat Active Tourer — the most practical 2 Series you can buy. Same B47/B48 engines, more space. The sensible family hauler that still wears a BMW badge."
-      },
-      {
-        "metric": "Explore the F46 →",
-        "value": "BMW 2 Series Gran Coupé F44"
-      },
-      {
-        "metric": "2020–present • B38 (218i), B48 (220i/228i/M235i xDrive), B47 (218d/220d)",
-        "value": "★★★★☆"
-      },
-      {
-        "metric": "Our Verdict: The four-door coupé on the UKL2 platform — BMW's answer to the Mercedes CLA. Shares its engines with the 1 Series F40. The M235i xDrive with 306 bhp is the pick; the 218i with B38 is the entry point.",
-        "value": "Explore the F44 →"
-      },
-      {
-        "metric": "The RWD vs FWD Divide — What You Need to Know",
-        "value": "RWD Platform (F22/F23/G42)"
-      },
-      {
-        "metric": "FWD Platform (F44/F45/F46)",
-        "value": "Driving character"
-      },
-      {
-        "metric": "Traditional BMW sports car",
-        "value": "Practical, space-efficient"
-      },
-      {
-        "metric": "Key engines",
-        "value": "N20, N55, B48, B58"
-      },
-      {
-        "metric": "B38, B47, B48",
-        "value": "Chain risk"
-      },
-      {
-        "metric": "N20/N47 pre-2016",
-        "value": "B38/B47/B48 — revised hardware"
-      },
-      {
-        "metric": "Our position",
-        "value": "Buy 2017+ LCI with B58/B48"
-      },
-      {
-        "metric": "Any B47/B48 is safe",
-        "value": "Read the full comparison: BMW 2 Series RWD vs FWD →"
-      },
-      {
-        "metric": "The Badge Ambiguity — \"220i\" Means Different Things",
-        "value": "Correction applied (internal): The \"220i\" badge covers three different engines depending on bodystyle and year. On the F22 (2014–2016), it's the N20B20 (2.0L turbo, 184 bhp) — the chain-tensioner engine. On the F22 LCI (2017+), it's the B48B20 (2.0L, 184 bhp) — the revised architecture. On the F44 Gran Coupé (2020+), it's also the B48B20, but on the UKL2 FWD platform. All share a badge. None share a reliability profile or driving character. Ensure the model pages call out the distinction."
       }
     ]
   },
   "generations": {
-    "h2": "",
-    "subHeadline": "",
-    "cards": [],
+    "h2": "BMW 2 Series — One Badge, Five Distinct Cars",
+    "subHeadline": "The 2 Series is BMW's most diverse family. Your ownership experience depends entirely on which bodystyle and which platform you choose — they share a badge but little else.",
+    "cards": [
+      {
+        "title": "The RWD Sports Cars",
+        "badge": "",
+        "meta": "BMW 2 Series Coupé/Convertible F22/F23 🔥 Most Enquired — 147 enquiries (2025) [BMW-VERIFIED]",
+        "rating": "★★★★☆",
+        "verdict": "The spiritual successor to the E30 — RWD, compact, and available with the B58 straight-six in the M240i. Early N20/N47 cars carry the chain caveat; 2017+ LCI cars with B48/B58 are the sweet spot. The M240i is a future classic.",
+        "cta": {
+          "label": "Explore the F22 →",
+          "href": "#"
+        }
+      },
+      {
+        "title": "BMW 2 Series Coupé G42",
+        "badge": "",
+        "meta": "2021–present • B48B20 (220i/230i), B58B30 (M240i xDrive)",
+        "rating": "★★★★★",
+        "verdict": "The second-generation RWD coupé — CLAR platform, B-family engines only, and the M240i xDrive with 374 bhp. No manual gearbox, but the B58 is the most dependable modern BMW engine. The safest 2 Series ever made.",
+        "cta": {
+          "label": "Explore the G42 →",
+          "href": "#"
+        }
+      },
+      {
+        "title": "The FWD Family Cars",
+        "badge": "",
+        "meta": "2014–present • B38 (218i), B47 (218d/220d), B48 (225i/225xe PHEV)",
+        "rating": "★★★★☆",
+        "verdict": "BMW's first front-wheel-drive production car — a compact MPV that competes with the Mercedes B-Class. The B47 diesel is the sensible choice; the 225xe PHEV is the urban commuter's pick.",
+        "cta": {
+          "label": "Explore the F45 →",
+          "href": "#"
+        }
+      },
+      {
+        "title": "BMW 2 Series Gran Tourer F46",
+        "badge": "",
+        "meta": "2015–present • B47 (218d/220d), B48 (220i/225i)",
+        "rating": "★★★★☆",
+        "verdict": "The seven-seat Active Tourer — the most practical 2 Series you can buy. Same B47/B48 engines, more space. The sensible family hauler that still wears a BMW badge.",
+        "cta": {
+          "label": "Explore the F46 →",
+          "href": "#"
+        }
+      },
+      {
+        "title": "BMW 2 Series Gran Coupé F44",
+        "badge": "",
+        "meta": "2020–present • B38 (218i), B48 (220i/228i/M235i xDrive), B47 (218d/220d)",
+        "rating": "★★★★☆",
+        "verdict": "The four-door coupé on the UKL2 platform — BMW's answer to the Mercedes CLA. Shares its engines with the 1 Series F40. The M235i xDrive with 306 bhp is the pick; the 218i with B38 is the entry point.",
+        "cta": {
+          "label": "Explore the F44 →",
+          "href": "#"
+        }
+      },
+      {
+        "title": "The RWD vs FWD Divide — What You Need to Know",
+        "badge": "",
+        "meta": "N20/N47 pre-2016",
+        "rating": "",
+        "verdict": "",
+        "cta": {
+          "label": "",
+          "href": "#"
+        }
+      }
+    ],
     "rangeTable": {
       "title": "",
       "columns": [],
       "rows": []
     },
     "comparisonLink": {
-      "label": "",
+      "label": "Read the full comparison: BMW 2 Series RWD vs FWD →",
       "href": "#"
     }
   },

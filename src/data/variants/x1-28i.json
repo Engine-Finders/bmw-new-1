@@ -502,11 +502,67 @@
     }
   },
   "marketIntelligence": {
-    "items": []
+    "items": [
+      {
+        "label": "Most Common Failure",
+        "value": "N20: timing chain wear / B48: oil filter housing cracking — the defining risk of each engine era"
+      },
+      {
+        "label": "Average Enquiry Mileage",
+        "value": "N20: 70,000–100,000 miles / B48: 40,000–70,000 miles【PATTERN DATA】"
+      },
+      {
+        "label": "Average Replacement Cost",
+        "value": "N20: £1,700–£3,200 / B48: £2,800–£5,000 reconditioned, supply only【BMW-QUOTE】"
+      },
+      {
+        "label": "Most Requested Engine Code",
+        "value": "N20B20 — the E84 X1 28i【PATTERN DATA】"
+      },
+      {
+        "label": "Peak Enquiry Season",
+        "value": "Winter — cold starts expose timing chain issues【PATTERN DATA】"
+      },
+      {
+        "label": "Regional Demand",
+        "value": "London (20%), South East (18%), North West (12%)【PATTERN DATA】"
+      }
+    ]
   },
   "faq": {
-    "items": [],
-    "disclaimer": ""
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a BMW X1 28i engine replacement cost in the UK?",
+        "answer": "A reconditioned X1 28i engine typically costs £1,700–£5,000 supply only depending on which generation (N20 or B48), with used units available from £1,200–£2,500. Fitting adds £1,000–£2,000. Use our calculator for a figure specific to your car."
+      },
+      {
+        "id": 2,
+        "question": "Is the BMW X1 28i engine reliable?",
+        "answer": "It depends entirely on which generation. The N20 (2009–2015) has a well-documented timing chain weakness — pre-2015 cars are high-risk; post-2015 cars are improved. The B48 (2022+) is significantly more reliable, with only the oil filter housing and cooling system as known weaknesses. Check the Era Map above for your specific car."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the BMW X1 28i?",
+        "answer": "N20: timing chain wear (pre-2015), valve cover and oil filter housing oil leaks. B48: oil filter housing cracking, cooling system leaks (water pump and hoses). The B48 is significantly more reliable than the N20."
+      },
+      {
+        "id": 4,
+        "question": "Is it worth replacing a BMW X1 28i engine, or should I scrap the car?",
+        "answer": "Depends on vehicle value and generation. Against a well-kept U11 X1 28i worth £25,000–£35,000+, a £2,800–£5,000 recon is only 10–20% of the car's value — well within the 70% BMW threshold. Against a tired E84 X1 with an N20 worth £4,000–£8,000, a £1,700–£3,200 recon is 30–60% — borderline, so evaluate carefully."
+      },
+      {
+        "id": 5,
+        "question": "How do I find my BMW X1 28i engine code?",
+        "answer": "Listed on the VIN plate and vehicle documentation. E84 X1 (2009–2015) uses N20B20; U11 X1 (2022+) uses B48A20. Tell us your registration date and we'll confirm it for free."
+      },
+      {
+        "id": 6,
+        "question": "Can I repair the N20 timing chain, or does it need replacement?",
+        "answer": "It needs replacement — the chain guides break and the tensioner wears. A full timing chain, tensioner, guide and VANOS sprocket replacement costs £1,200–£2,500. It's a labour-intensive job but far cheaper than a full engine replacement (£1,700+). The revised 2015+ components are the correct fix. At the first sign of cold-start rattle on an N20, book an inspection immediately."
+      }
+    ],
+    "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty — always confirm terms with your chosen supplier."
   },
   "trustCta": {
     "h2": "",

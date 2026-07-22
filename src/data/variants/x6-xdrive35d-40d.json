@@ -665,48 +665,43 @@
       {
         "label": "Regional Demand",
         "value": "South East (22%), London (18%), North West (13%)【PATTERN DATA】"
-      },
-      {
-        "label": "SECTION 8 — FAQ",
-        "value": "1. How much does a BMW X6 xDrive35d / 40d engine replacement cost in the UK?"
-      },
-      {
-        "label": "A reconditioned X6 diesel engine typically costs £3,500–£9,500 supply only depending on generation and model. A replacement engine for an X6 can cost between £4,500–£6,000, with dealer estimates often in the £14,000–£18,000 range. Fitting adds £1,000–£1,800 at independent specialist rates. Use our calculator for a figure specific to your car.",
-        "value": "2. Is the BMW X6 xDrive35d / 40d engine reliable?"
-      },
-      {
-        "label": "It depends on which generation you're asking about. The M57 (E71, 2008–2010) is robust but injector and turbo issues are common. The N57 (E71/F16, 2010–2019) is prone to timing chain stretch, piezo injector failure, turbo oil starvation, and connecting rod bearing issues. The B57 (G06, 2019+) is generally regarded as a reliable unit, but timing chain and DPF/EGR issues have been reported. Across all, oil-change discipline is everything.",
-        "value": "3. What are the common problems with the BMW X6 xDrive35d / 40d?"
-      },
-      {
-        "label": "Timing chain stretch and failure (N57 and B57), piezo injector failure (N57), turbocharger oil starvation and failure (N57), DPF clogging and EGR system issues (B57), connecting rod bearing wear (N57), and ZF 8HP transmission issues. See the Era Map above for generation-specific advice.",
-        "value": "4. Is it worth replacing a BMW X6 xDrive35d / 40d engine, or should I scrap the car?"
-      },
-      {
-        "label": "Depends on vehicle value. Against a well-kept E71 X6 (values £5,000–£12,000+), a £4,000–£5,500 recon is 30–70% of the car's value — borderline but often worth it for a good example. Against a £10,000–£20,000 F16, a £4,500–£6,000 recon is 25–50% — often worth it. Against a £20,000–£40,000 G06, a £5,500–£6,500 recon is 15–25% — worth it. The BMW scrap threshold of 70% means evaluating the whole vehicle and its condition before committing.",
-        "value": "5. How do I find my BMW X6 xDrive35d / 40d engine code?"
-      },
-      {
-        "label": "Listed on the VIN plate and vehicle documentation. As a rule of thumb: E71 xDrive35d (2008–2010) = M57D30; E71/F16 xDrive35d (2010–2014) = N57D30; F16 xDrive40d (2014–2019) = N57D30B; G06 xDrive40d (2019–2022) = B57D30B (340 bhp); G06 LCI xDrive40d (2022–present) = B57D30B (352 bhp with MHEV). Tell us your registration date and we'll confirm it for free.",
-        "value": "6. Can I repair the N57 timing chain, or does it require engine replacement?"
-      },
-      {
-        "label": "Yes — if caught early. A preventative timing chain, tensioner and guide replacement costs £1,500–£3,500 — one owner reported paying £1,800 for the work. However, if the chain snaps, a full engine replacement (£4,000–£7,500) is usually required. At the first sign of cold-start rattle, book an inspection immediately.",
-        "value": "Disclaimer: All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty — always confirm terms with your chosen supplier."
-      },
-      {
-        "label": "SECTION 9, META AND SCHEMA",
-        "value": "Section 9 (Trust + Final CTA), the meta tags, Open Graph, Twitter Card data, the full JSON-LD schema stack, and the production notes. I must ensure it strictly follows all the rules from the handover document—like using relative paths, correct schema blocks (Organization not LocalBusiness, no AggregateRating without data), consistent tagging, and making sure the schema matches the Era Map exactly."
-      },
-      {
-        "label": "Also, I need to carry over all the specifics from Part 1: the brand constants (BMW, BMWEngines.uk, 20+ specialists), the assertive CTA mode, all the engine codes and generation details from the Era Map, and the price range that spans the full history. The production note must include the confirmation that schema matches content, the authority model notes, and the live verification sources used. The tone should be consistent and authoritative, matching the confident, data-led voice used throughout.",
-        "value": "Alright, time to structure Part 2 exactly as required."
       }
     ]
   },
   "faq": {
-    "items": [],
-    "disclaimer": ""
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a BMW X6 xDrive35d / 40d engine replacement cost in the UK?",
+        "answer": "A reconditioned X6 diesel engine typically costs £3,500–£9,500 supply only depending on generation and model. A replacement engine for an X6 can cost between £4,500–£6,000, with dealer estimates often in the £14,000–£18,000 range. Fitting adds £1,000–£1,800 at independent specialist rates. Use our calculator for a figure specific to your car."
+      },
+      {
+        "id": 2,
+        "question": "Is the BMW X6 xDrive35d / 40d engine reliable?",
+        "answer": "It depends on which generation you're asking about. The M57 (E71, 2008–2010) is robust but injector and turbo issues are common. The N57 (E71/F16, 2010–2019) is prone to timing chain stretch, piezo injector failure, turbo oil starvation, and connecting rod bearing issues. The B57 (G06, 2019+) is generally regarded as a reliable unit, but timing chain and DPF/EGR issues have been reported. Across all, oil-change discipline is everything."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the BMW X6 xDrive35d / 40d?",
+        "answer": "Timing chain stretch and failure (N57 and B57), piezo injector failure (N57), turbocharger oil starvation and failure (N57), DPF clogging and EGR system issues (B57), connecting rod bearing wear (N57), and ZF 8HP transmission issues. See the Era Map above for generation-specific advice."
+      },
+      {
+        "id": 4,
+        "question": "Is it worth replacing a BMW X6 xDrive35d / 40d engine, or should I scrap the car?",
+        "answer": "Depends on vehicle value. Against a well-kept E71 X6 (values £5,000–£12,000+), a £4,000–£5,500 recon is 30–70% of the car's value — borderline but often worth it for a good example. Against a £10,000–£20,000 F16, a £4,500–£6,000 recon is 25–50% — often worth it. Against a £20,000–£40,000 G06, a £5,500–£6,500 recon is 15–25% — worth it. The BMW scrap threshold of 70% means evaluating the whole vehicle and its condition before committing."
+      },
+      {
+        "id": 5,
+        "question": "How do I find my BMW X6 xDrive35d / 40d engine code?",
+        "answer": "Listed on the VIN plate and vehicle documentation. As a rule of thumb: E71 xDrive35d (2008–2010) = M57D30; E71/F16 xDrive35d (2010–2014) = N57D30; F16 xDrive40d (2014–2019) = N57D30B; G06 xDrive40d (2019–2022) = B57D30B (340 bhp); G06 LCI xDrive40d (2022–present) = B57D30B (352 bhp with MHEV). Tell us your registration date and we'll confirm it for free."
+      },
+      {
+        "id": 6,
+        "question": "Can I repair the N57 timing chain, or does it require engine replacement?",
+        "answer": "Yes — if caught early. A preventative timing chain, tensioner and guide replacement costs £1,500–£3,500 — one owner reported paying £1,800 for the work. However, if the chain snaps, a full engine replacement (£4,000–£7,500) is usually required. At the first sign of cold-start rattle, book an inspection immediately."
+      }
+    ],
+    "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty — always confirm terms with your chosen supplier."
   },
   "trustCta": {
     "h2": "Why UK BMW X6 xDrive35d / 40d Owners Trust BMWEngines.uk",

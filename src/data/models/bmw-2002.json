@@ -1,6 +1,6 @@
 {
   "meta": {
-    "slug": "bmw-2002",
+    "slug": "2002",
     "title": "BMW 2002 Engine Restoration Cost UK — Specialist Guide",
     "titleCharCount": 58,
     "description": "Every BMW 2002 engine — M10 to M31. The car that saved BMW, real restoration costs and specialist guidance. Compare prices from 20+ vetted BMW specialists today.",
@@ -235,8 +235,7 @@
     "primaryCta": {
       "label": "Explore 2002 Engines →",
       "href": "#"
-    },
-    "dataIntegrityNote": "The 2002 is a classic-era vehicle with no proprietary enquiry data available. All information is sourced from BMW Group Classic, specialist publications, and enthusiast records — labelled as [PATTERN DATA] throughout. The 2002's rising classic status means engine work is restoration, not replacement economics."
+    }
   },
   "ownershipVerdict": {
     "h2": "BMW 2002 — The Ownership Verdict",
@@ -287,7 +286,10 @@
   "atAGlance": {
     "h2": "BMW 2002 at a Glance",
     "rows": [
-      { "metric": "Generations", "value": "1 (E10, 1968–1976)" },
+      {
+        "metric": "Generations",
+        "value": "1 (E10, 1968–1976)"
+      },
       {
         "metric": "Years Produced",
         "value": "1968–1976 (1502 continued until 1977)"
@@ -340,53 +342,23 @@
           "label": "Explore the E10 →",
           "href": "#"
         }
+      },
+      {
+        "title": "The 2002 Range — Engines at a Glance",
+        "badge": "",
+        "meta": "2002",
+        "rating": "",
+        "verdict": "",
+        "cta": {
+          "label": "",
+          "href": "#"
+        }
       }
     ],
     "rangeTable": {
-      "title": "The 2002 Range — Engines at a Glance",
-      "columns": ["Model", "Engine Code", "Power", "Induction", "Years", "Notes"],
-      "rows": [
-        {
-          "model": "2002",
-          "engineCode": "M05",
-          "power": "100 hp",
-          "induction": "1x Solex downdraft carb",
-          "years": "1968–1975",
-          "notes": "The standard car — the accessible classic"
-        },
-        {
-          "model": "2002ti",
-          "engineCode": "M05",
-          "power": "120 hp",
-          "induction": "Twin Solex side-draft carbs",
-          "years": "1968–1972",
-          "notes": "Twin-carb performance — rare"
-        },
-        {
-          "model": "2002tii",
-          "engineCode": "M15",
-          "power": "130 hp",
-          "induction": "Kugelfischer mechanical fuel injection",
-          "years": "1971–1975",
-          "notes": "The sweet spot — fuel-injected performance"
-        },
-        {
-          "model": "2002 Turbo",
-          "engineCode": "M31",
-          "power": "170 hp",
-          "induction": "Kugelfischer + KKK turbocharger",
-          "years": "1973–1975",
-          "notes": "Europe's first turbocharged production car — only 1,672 built"
-        },
-        {
-          "model": "1502",
-          "engineCode": "M115",
-          "power": "75 hp",
-          "induction": "1x Solex carb",
-          "years": "1974–1977",
-          "notes": "Entry-level model — lower compression"
-        }
-      ]
+      "title": "",
+      "columns": [],
+      "rows": []
     },
     "comparisonLink": {
       "label": "Read the full comparison: BMW 2002 vs 2002tii vs 2002 Turbo →",
@@ -472,62 +444,104 @@
     ],
     "confidenceScore": {
       "title": "How confident are these ratings?",
-      "text": "M10 family rating: Expert-knowledge tier — the M10 is one of BMW's most documented engines, with over 3.5 million produced across many models. However, no proprietary enquiry data exists for the 2002 due to its classic status. All figures are based on specialist workshops, BMW Group Classic, and enthusiast records."
+      "text": "M10 family rating: Expert-knowledge tier — the M10 is one of BMW's most documented engines, with over 3.5 million produced across many models. However, no proprietary enquiry data exists for the 2002 due to its classic status. All figures are based on specialist workshops, BMW Group Classic, and enthusiast records. Data note (internal) — corrections applied: Correction applied: The 2002's M10 engine produced 100 hp in standard form, not 98 hp as some sources state. Verified against BMW specifications. Correction applied: The 2002tii produces 130 hp — not 125 hp or 140 hp as some sources state. Factory rating is 130 hp at 5,800 rpm. Correction applied: The 2002 Turbo produces 170 hp — not 167 hp. BMW's official figure is 170 hp (125 kW). Correction applied: The 2002ti uses the M05 engine code with twin Solex side-draft carburettors — not a separate engine code. Verified against BMW parts catalogues. Correction applied: The 2002 was produced from 1968 to 1976, with the 1502 continuing until 1977. Total production was 401,947 units."
     },
-    "dataCorrections": [
-      "Correction applied: The 2002's M10 engine produced 100 hp in standard form, not 98 hp as some sources state. Verified against BMW specifications.",
-      "Correction applied: The 2002tii produces 130 hp — not 125 hp or 140 hp as some sources state. Factory rating is 130 hp at 5,800 rpm.",
-      "Correction applied: The 2002 Turbo produces 170 hp — not 167 hp. BMW's official figure is 170 hp (125 kW).",
-      "Correction applied: The 2002ti uses the M05 engine code with twin Solex side-draft carburettors — not a separate engine code. Verified against BMW parts catalogues.",
-      "Correction applied: The 2002 was produced from 1968 to 1976, with the 1502 continuing until 1977. Total production was 401,947 units."
-    ]
+    "dataCorrections": []
   },
   "commonProblems": {
     "h2": "Common BMW 2002 Engine Considerations",
     "subHeadline": "The six most common restoration considerations for the M10 engine — symptoms, costs and urgency.",
-    "columns": ["#", "Issue", "Description", "Severity", "Link"],
+    "columns": [
+      "#",
+      "Issue",
+      "Description",
+      "Severity",
+      "Link"
+    ],
     "problems": [
       {
         "id": 1,
         "issue": "Timing Chain Stretch",
         "description": "The M10's timing chain can stretch over time, causing rattling and potential valve timing issues. Affects all M10 engines. £500–£1,500 replacement.",
-        "severity": { "icon": "🟡", "label": "Monitor", "type": "monitor" },
-        "link": { "label": "Learn more →", "href": "#" }
+        "severity": {
+          "icon": "🟡",
+          "label": "Monitor",
+          "type": "monitor"
+        },
+        "link": {
+          "label": "Learn more →",
+          "href": "#"
+        }
       },
       {
         "id": 2,
         "issue": "Cylinder Head Cracking & Warping",
         "description": "Older cylinder heads have been known to crack and warp — water in the oil and a sweet smell around the engine are tell-tale signs. Affects high-mileage M10 engines. £1,000–£3,000 repair.",
-        "severity": { "icon": "🟡", "label": "Monitor", "type": "monitor" },
-        "link": { "label": "Learn more →", "href": "#" }
+        "severity": {
+          "icon": "🟡",
+          "label": "Monitor",
+          "type": "monitor"
+        },
+        "link": {
+          "label": "Learn more →",
+          "href": "#"
+        }
       },
       {
         "id": 3,
         "issue": "Kugelfischer Fuel Injection Servicing",
         "description": "The mechanical fuel injection system on the tii and Turbo requires specialist servicing — age-related seal degradation and pump wear are common. Affects M15 and M31 engines. £2,000–£5,000 restoration.",
-        "severity": { "icon": "🟡", "label": "Monitor", "type": "monitor" },
-        "link": { "label": "Learn more →", "href": "#" }
+        "severity": {
+          "icon": "🟡",
+          "label": "Monitor",
+          "type": "monitor"
+        },
+        "link": {
+          "label": "Learn more →",
+          "href": "#"
+        }
       },
       {
         "id": 4,
         "issue": "Cooling System Deterioration",
         "description": "Plastic and rubber in the cooling system gets brittle with age — run away at any sign of overheating. Affects all 2002s. £500–£1,500 restoration.",
-        "severity": { "icon": "🟡", "label": "Monitor", "type": "monitor" },
-        "link": { "label": "Learn more →", "href": "#" }
+        "severity": {
+          "icon": "🟡",
+          "label": "Monitor",
+          "type": "monitor"
+        },
+        "link": {
+          "label": "Learn more →",
+          "href": "#"
+        }
       },
       {
         "id": 5,
         "issue": "Oil Leaks (Valve Cover & Timing Cover)",
         "description": "Age-related gasket deterioration causes oil leaks. Affects all M10 engines. £200–£800 repair.",
-        "severity": { "icon": "🟢", "label": "Low", "type": "low" },
-        "link": { "label": "Learn more →", "href": "#" }
+        "severity": {
+          "icon": "🟢",
+          "label": "Low",
+          "type": "low"
+        },
+        "link": {
+          "label": "Learn more →",
+          "href": "#"
+        }
       },
       {
         "id": 6,
         "issue": "2002 Turbo — Turbocharger & Injection Complexity",
         "description": "The KKK turbocharger and Kugelfischer injection on the Turbo are complex and expensive to restore — only 1,672 built. Specialist-only work.",
-        "severity": { "icon": "🟡", "label": "Monitor", "type": "monitor" },
-        "link": { "label": "Learn more →", "href": "#" }
+        "severity": {
+          "icon": "🟡",
+          "label": "Monitor",
+          "type": "monitor"
+        },
+        "link": {
+          "label": "Learn more →",
+          "href": "#"
+        }
       }
     ],
     "urgencyKey": [
@@ -557,24 +571,34 @@
     "h2": "BMW 2002 Market Intelligence — What Collectors Told Us",
     "signals": [
       {
-        "signal": "BMW 2002 production",
-        "data": "401,947 (1968–1976)",
-        "demandTrend": "➡ Stable — values are appreciating"
+        "signal": "Data",
+        "data": "BMW 2002 production",
+        "demandTrend": ""
+      },
+      {
+        "signal": "401,947 (1968–1976)",
+        "data": "➡ Stable — values are appreciating",
+        "demandTrend": ""
       },
       {
         "signal": "BMW 2002tii production",
         "data": "~40,000",
-        "demandTrend": "⬆ Rising — the tii is the most desirable non-Turbo"
+        "demandTrend": ""
       },
       {
-        "signal": "BMW 2002 Turbo production",
-        "data": "1,672",
-        "demandTrend": "⬆ Rising — the ultimate 2002 collectible"
+        "signal": "⬆ Rising — the tii is the most desirable non-Turbo",
+        "data": "BMW 2002 Turbo production",
+        "demandTrend": ""
+      },
+      {
+        "signal": "1,672",
+        "data": "⬆ Rising — the ultimate 2002 collectible",
+        "demandTrend": ""
       },
       {
         "signal": "M10 engine rebuild cost",
         "data": "£4,000–£8,000 (standard); £6,000–£12,000+ (tii/Turbo)",
-        "demandTrend": "➡ Stable — specialist knowledge is available"
+        "demandTrend": ""
       }
     ],
     "insights": [
@@ -647,15 +671,21 @@
       }
     ],
     "figuresNote": "All figures [PATTERN DATA] — based on specialist workshops, BMW Group Classic, and auction records.",
-    "labourEstimate": "Labour estimate: M10 engine work is specialist-only — expect 35–80 hours at £65–£100/hr for classic BMW specialists [PATTERN DATA]. Kugelfischer injection and Turbo work require additional specialist time.",
+    "labourEstimate": "M10 engine work is specialist-only — expect 35–80 hours at £65–£100/hr for classic BMW specialists [PATTERN DATA]. Kugelfischer injection and Turbo work require additional specialist time. The 2002 rule — restoration, not replacement: A standard M10 rebuild at £4,000–£6,000 against a £10,000–£15,000 car is 27–60% — ⚠️ watch on cheaper cars. A tii rebuild at £6,000–£10,000+ against a £25,000–£40,000 car is 15–40% — ✅ a worthy investment. A Turbo rebuild at £8,000–£12,000+ against a £60,000–£80,000+ car is 10–20% — ✅ a worthy investment. The 2002 is a rising classic — the tii and Turbo justify the investment; the standard 2002 is the accessible entry point.",
     "economicsBox": {
-      "title": "The 2002 rule — restoration, not replacement",
-      "text": "A standard M10 rebuild at £4,000–£6,000 against a £10,000–£15,000 car is 27–60% — ⚠️ watch on cheaper cars. A tii rebuild at £6,000–£10,000+ against a £25,000–£40,000 car is 15–40% — ✅ a worthy investment. A Turbo rebuild at £8,000–£12,000+ against a £60,000–£80,000+ car is 10–20% — ✅ a worthy investment. The 2002 is a rising classic — the tii and Turbo justify the investment; the standard 2002 is the accessible entry point."
+      "title": "",
+      "text": ""
     }
   },
   "engineEvolution": {
     "h2": "How the BMW 2002 Engine Range Evolved — 1968 to 1976",
-    "columns": ["Era", "Years", "Key Engines", "Why BMW Changed", "Worth Knowing"],
+    "columns": [
+      "Era",
+      "Years",
+      "Key Engines",
+      "Why BMW Changed",
+      "Worth Knowing"
+    ],
     "eras": [
       {
         "era": "Launch — the 2002",
@@ -689,7 +719,11 @@
   },
   "whoShouldBuy": {
     "h2": "Who Should Buy a BMW 2002?",
-    "columns": ["Buyer Profile", "Rating", "Our Verdict"],
+    "columns": [
+      "Buyer Profile",
+      "Rating",
+      "Our Verdict"
+    ],
     "profiles": [
       {
         "buyerProfile": "Collector",
@@ -723,13 +757,12 @@
     "intro": "M10 running issues? Kugelfischer injection needing attention? On the 2002, the answer depends on the model — a standard 2002 needs careful economics; the tii and Turbo justify the investment. Get a personalised restoration assessment using real UK cost data.",
     "paths": [
       {
-        "label": "Path 1 — Know your engine? Launch the BMW diagnostic calculator with 2002 pre-selected →",
+        "label": "Path 1 — Know your engine? Launch the BMW diagnostic calculator with 2002 pre-selected",
         "href": "/fault-diagnostic-calculator"
       },
       {
-        "label": "Path 2 — Not sure which engine you have? We'll identify it first →",
-        "href": "/fault-diagnostic-calculator",
-        "note": "identification is the first step inside the tool"
+        "label": "Path 2 — Not sure which engine you have? We'll identify it first → /fault-diagnostic-calculator (identification is the first step inside the tool)",
+        "href": "#"
       }
     ]
   },

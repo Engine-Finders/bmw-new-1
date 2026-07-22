@@ -1,26 +1,224 @@
 {
   "meta": {
-    "slug": "bmw-7-series-730d",
-    "title": "BMW 7 Series 730d Engine Replacement — Compare Prices & Get Quotes",
-    "titleCharCount": 66,
-    "description": "",
-    "descriptionCharCount": 0,
-    "canonical": "",
+    "slug": "7-series-730d",
+    "title": "730d Engine Replacement Cost UK — Compare Quotes",
+    "titleCharCount": 57,
+    "description": "Every BMW 730d engine — M57, M57TU2, N57 and B57. Real UK costs, common timing, injector and DPF issues, and honest reliability data. Get free quotes from 20+ vetted BMW specialists today.",
+    "descriptionCharCount": 160,
+    "canonical": "https://bmwengine.uk/7-series/730d/",
     "openGraph": {
-      "title": "",
-      "description": "",
-      "type": "",
-      "url": "",
-      "image": "",
-      "siteName": ""
+      "title": "730d Engine Replacement Cost UK — Compare Quotes",
+      "description": "Every BMW 730d engine — M57, M57TU2, N57 and B57. Real UK costs, common timing, injector and DPF issues, and honest reliability data. Get free quotes from 20+ vetted BMW specialists today.",
+      "type": "website",
+      "url": "https://bmwengine.uk/7-series/730d/",
+      "image": "https://bmwengine.uk/images/bmw/hero/7-series-730d.jpg",
+      "siteName": "BMWEngines.uk"
     },
     "twitter": {
-      "card": "",
-      "title": "",
-      "description": "",
-      "image": ""
+      "card": "summary_large_image",
+      "title": "730d Engine Replacement Cost UK — Compare Quotes",
+      "description": "Every BMW 730d engine — M57, M57TU2, N57 and B57. Real UK costs, common timing, injector and DPF issues, and honest reliability data.",
+      "image": "https://bmwengine.uk/images/bmw/hero/7-series-730d.jpg"
     },
-    "jsonLd": {}
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://bmwengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "7 Series",
+              "item": "https://bmwengine.uk/7-series/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "730d",
+              "item": "https://bmwengine.uk/7-series/730d/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "BMW 7 Series 730d Engine Era Map",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "E38 730d (M57D30, 1996–2001)",
+              "url": "https://bmwengine.uk/7-series/730d/#e38"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "E65/E66 730d (M57TU2, 2002–2008)",
+              "url": "https://bmwengine.uk/7-series/730d/#e65"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "F01/F02 730d (N57D30, 2009–2015)",
+              "url": "https://bmwengine.uk/7-series/730d/#f01"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "G11/G12 730d (B57D30, 2016–2022)",
+              "url": "https://bmwengine.uk/7-series/730d/#g11"
+            },
+            {
+              "@type": "ListItem",
+              "position": 5,
+              "name": "G70 730d (B57D30 MHEV, 2023–present)",
+              "url": "https://bmwengine.uk/7-series/730d/#g70"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "BMW 7 Series 730d Engine Codes",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "M57D30",
+              "url": "https://bmwengine.uk/engines/m57d30/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "M57TU2",
+              "url": "https://bmwengine.uk/engines/m57tu2/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "N57D30",
+              "url": "https://bmwengine.uk/engines/n57d30/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "B57D30",
+              "url": "https://bmwengine.uk/engines/b57d30/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does a BMW 7 Series 730d engine replacement cost in the UK?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A reconditioned BMW 7 Series 730d engine costs £3,500–£7,000 supply only, varying by generation: M57 £2,500–£4,500, M57TU2 £3,000–£5,000, N57 £4,000–£6,500, B57 £4,500–£7,500, G70 B57 MHEV £5,500–£9,000. Fitting adds £1,000–£1,800. Check the Era Map above for your engine code."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the BMW 7 Series 730d reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "That depends on which generation. The M57 is robust but ageing; the M57TU2 is refined and generally reliable; the N57 has a rear-mounted timing chain risk (pre-2015); the B57 (G11/G12/G70) is BMW's most advanced and reliable diesel six. The G11/G12 B57 is widely considered the sweet spot — powerful, efficient and exceptionally durable."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What are the common problems with the BMW 7 Series 730d?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "M57/M57TU2: injector failure (rough idle, misfire, £300–£800 per injector), DPF/EGR issues (£400–£1,200). N57: timing chain tensioner wear (cold-start rattle, £1,500–£3,500), injector failure, DPF/EGR. B57: cooling system leaks (£400–£1,000), DPF/EGR issues (less common). G70 B57: 48V MHEV system issues (£800–£2,500)."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is it worth replacing a BMW 7 Series 730d engine, or should I scrap the car?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "7 Series 730d values range from £3,000–£70,000 depending on generation, condition and mileage. A £3,500–£7,000 reconditioned engine represents 10–80% of vehicle value — our 70% BMW scrap threshold means careful evaluation is required. For a well-maintained G11/G12 or G70, replacement is almost always justified. For an ageing E38/E65 with other issues, assess scrap value first."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I find my BMW 7 Series 730d engine code?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The 730d has used five engine variants: M57D30 (E38, 1996–2001, 193bhp), M57TU2 (E65, 2002–2008, 231bhp), N57D30 (F01, 2009–2015, 245bhp), B57D30 (G11/G12, 2016–2022, 265bhp), and B57D30 MHEV (G70, 2023–present, 286bhp). Check your VIN or registration year. The code is stamped on the engine block."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I repair the N57 timing chain issue, or does it need replacement?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes — if caught early. Timing chain and guide replacement costs £1,500–£3,500 and is significantly cheaper than a full engine replacement (£4,000–£6,500). The job requires engine removal on the F01, making it a major investment. At the first sign of cold-start rattle, book an inspection immediately — ignored chain wear can lead to catastrophic piston-valve contact."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "BMWEngines.uk",
+          "url": "https://bmwengine.uk/",
+          "logo": "https://bmwengine.uk/images/bmwengines-logo.png",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "BMW 7 Series 730d Engine Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "1500",
+            "highPrice": "15000",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "name": "BMW 7 Series 730d UK Engine Enquiry Data 2025",
+          "description": "Proprietary UK enquiry volumes and demand trends for BMW 7 Series 730d engines across all five generations, sourced from BMWEngines.uk's specialist marketplace activity.",
+          "creator": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk"
+          },
+          "temporalCoverage": "2025",
+          "spatialCoverage": "United Kingdom"
+        },
+        {
+          "@type": "WebPage",
+          "name": "730d Engine Replacement Cost UK — Compare Quotes",
+          "url": "https://bmwengine.uk/7-series/730d/",
+          "author": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk Specialist Network"
+          },
+          "datePublished": "2026-07-11",
+          "dateModified": "2026-07-11"
+        }
+      ]
+    }
   },
   "hero": {
     "tagPill": "BMW 7 Series 730d • 1996–present • Five Diesel Generations",

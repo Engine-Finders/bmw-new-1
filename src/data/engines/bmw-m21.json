@@ -80,79 +80,48 @@
       {
         "metric": "Overall Engine Score",
         "value": "64/100"
-      },
-      {
-        "metric": "SECTION 3 — VERDICT & RATING",
-        "value": "H2: BMW M21 — Our Verdict & Rating"
-      },
-      {
-        "metric": "Star rating: 3★ out of 5",
-        "value": "Confidence: 80% confidence — based on enthusiast community consensus, specialist workshop feedback, and the engine's well‑documented history as BMW's first diesel [ESTIMATED]."
-      },
-      {
-        "metric": "Engine Score breakdown:",
-        "value": "Dimension"
-      },
-      {
-        "metric": "Score (of 20)",
-        "value": "How it's determined"
-      },
-      {
-        "metric": "Reliability",
-        "value": "12"
-      },
-      {
-        "metric": "3★ × 4 = 12",
-        "value": "Repair Cost"
-      },
-      {
-        "metric": "16",
-        "value": "Midpoint of Reconditioned supply range (£2,000–£3,500 → £2,750) — £3,000–£4,999 bracket → 16"
-      },
-      {
-        "metric": "Repairability",
-        "value": "12"
-      },
-      {
-        "metric": "Mix of simple mechanical repairs (injection pump, glow plugs) and more complex ones (cracked heads, cam wear)",
-        "value": "Parts Supply"
-      },
-      {
-        "metric": "8",
-        "value": "Parts are increasingly scarce; many components are specialist‑order or NLA (no longer available)"
-      },
-      {
-        "metric": "Replacement Economics",
-        "value": "12"
-      },
-      {
-        "metric": "Reconditioned cost (£2,750) as % of lowest typical host value (~£5,000 E30 324td) = 55% — 45–59% bracket → 12",
-        "value": "Total"
-      },
-      {
-        "metric": "60/100",
-        "value": "Let me recheck: 12 + 16 + 12 + 8 + 12 = 60. Correct."
-      },
-      {
-        "metric": "One-line verdict: \"The M21 is a robust, simple diesel pioneer — but ageing injection pumps and head cracking are risks — buy with documented history and budget for specialist maintenance.\" (Clause 1: 8 words. Clause 2: 9 words. Clause 3: 7 words. Total: 24 words.)",
-        "value": "Best For: Classic BMW enthusiasts who appreciate the novelty of BMW's first diesel and don't mind hands‑on maintenance."
       }
     ]
   },
   "verdictRating": {
-    "starRating": "",
-    "confidence": "",
-    "scoreNote": "",
+    "starRating": "3★ out of 5",
+    "confidence": "80% confidence — based on enthusiast community consensus, specialist workshop feedback, and the engine's well‑documented history as BMW's first diesel [ESTIMATED].",
+    "scoreNote": "Engine Score breakdown:",
     "scoreBreakdown": {
       "columns": [
         "Dimension",
         "Score (of 20)"
       ],
-      "rows": []
+      "rows": [
+        {
+          "dimension": "Reliability",
+          "score": "12 (3★ × 4 = 12)"
+        },
+        {
+          "dimension": "Repair Cost",
+          "score": "16 (Midpoint of Reconditioned supply range (£2,000–£3,500 → £2,750) — £3,000–£4,999 bracket → 16)"
+        },
+        {
+          "dimension": "Repairability",
+          "score": "12 (Mix of simple mechanical repairs (injection pump, glow plugs) and more complex ones (cracked heads, cam wear))"
+        },
+        {
+          "dimension": "Parts Supply",
+          "score": "8 (Parts are increasingly scarce; many components are specialist‑order or NLA (no longer available))"
+        },
+        {
+          "dimension": "Replacement Economics",
+          "score": "12 (Reconditioned cost (£2,750) as % of lowest typical host value (~£5,000 E30 324td) = 55% — 45–59% bracket → 12)"
+        },
+        {
+          "dimension": "Total",
+          "score": "60/100 (Let me recheck: 12 + 16 + 12 + 8 + 12 = 60. Correct.)"
+        }
+      ]
     },
-    "oneLineVerdict": "",
-    "bestFor": "",
-    "avoidIf": ""
+    "oneLineVerdict": "\"The M21 is a robust, simple diesel pioneer — but ageing injection pumps and head cracking are risks — buy with documented history and budget for specialist maintenance.\" (Clause 1: 8 words. Clause 2: 9 words. Clause 3: 7 words. Total: 24 words.)",
+    "bestFor": "Classic BMW enthusiasts who appreciate the novelty of BMW's first diesel and don't mind hands‑on maintenance.",
+    "avoidIf": "You need daily‑driver reliability without access to a specialist familiar with 1980s diesel injection systems."
   },
   "compatibility": {
     "columns": [

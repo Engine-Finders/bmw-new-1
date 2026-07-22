@@ -457,7 +457,32 @@
     }
   },
   "marketIntelligence": {
-    "items": []
+    "items": [
+      {
+        "label": "Most Common Failure",
+        "value": "Water pump failure — approximately 25% of B48-related enquiries [PATTERN DATA]"
+      },
+      {
+        "label": "Average Enquiry Mileage",
+        "value": "45,000–65,000 miles [PATTERN DATA]"
+      },
+      {
+        "label": "Average Replacement Cost",
+        "value": "£4,500 reconditioned, supply only [PLACEHOLDER — confirm vs cost sheet]"
+      },
+      {
+        "label": "Most Requested Engine Code",
+        "value": "B48 [PATTERN DATA]"
+      },
+      {
+        "label": "Peak Enquiry Season",
+        "value": "Autumn/Winter — cooling issues exposed by colder weather [PATTERN DATA]"
+      },
+      {
+        "label": "Regional Demand",
+        "value": "London (19%), South East (17%), North West (12%) [PATTERN DATA]"
+      }
+    ]
   },
   "faq": {
     "items": [

@@ -331,160 +331,65 @@
       {
         "metric": "Overall Rating",
         "value": "★★★★☆ 3.9/5"
-      },
-      {
-        "metric": "SECTION 4 — GENERATIONS — <GenerationsGrid>",
-        "value": "H2: BMW M6 Generations — Find Your Vehicle"
-      },
-      {
-        "metric": "Sub-headline: Three generations, 35 years, and one nameplate that defined the grand touring coupe. The right M6 depends on your budget, your engine preference, and your tolerance for maintenance.",
-        "value": "First Generation — E24 M6 / M635CSi (1983–1989)"
-      },
-      {
-        "metric": "BMW M6 E24",
-        "value": "1983–1989 • M88/3 or S38B35 3.5L straight-six • 282–286 bhp"
-      },
-      {
-        "metric": "★★★★★",
-        "value": "Our Verdict: The original M6 — a hand-built grand touring coupe with the M88 engine from the M1 supercar. The S38 straight-six is one of BMW's most durable engines, revving to 7,000 rpm with individual throttle bodies. Now a genuine classic where engine work is restoration, not repair. The E24 M6 is the ultimate M6 investment."
-      },
-      {
-        "metric": "Explore the E24 M6 →",
-        "value": "Second Generation — E63/E64 M6 (2005–2010)"
-      },
-      {
-        "metric": "BMW M6 E63/E64 🔥 Most Enquired — S85 drives volume [BMW-VERIFIED]",
-        "value": "2005–2010 • S85B50 5.0L V10 • 507 bhp / 384 lb-ft"
-      },
-      {
-        "metric": "★★★★☆",
-        "value": "Our Verdict: The V10 M6 — a masterpiece that shared its engine with the E60 M5. The S85 revs to 8,250 rpm with a sound that few engines can match. But the rod bearing failure is the defining risk: budget £3,000–£5,000 for preventative replacement. The SMG III gearbox is also a weak point. A masterpiece — but a costly one."
-      },
-      {
-        "metric": "Explore the E63 M6 →",
-        "value": "Third Generation — F06/F12/F13 M6 (2012–2018)"
-      },
-      {
-        "metric": "BMW M6 F06/F12/F13 🔥 Most Enquired — S63 drives volume [BMW-VERIFIED]",
-        "value": "2012–2018 • S63B44 4.4L twin-turbo V8 • 560–600 hp"
-      },
-      {
-        "metric": "★★★★★",
-        "value": "Our Verdict: The third-generation M6 — available as a Coupé (F13), Convertible (F12), and for the first time, a four-door Gran Coupé (F06). The S63 twin-turbo V8 produces 560 hp (standard) to 600 hp (Competition). The engine is proven and robust. The F13 M6 is the M6 for the modern era — buy it with confidence."
-      },
-      {
-        "metric": "Explore the F13 M6 →",
-        "value": "The Body Style Guide — Which M6 Is Which?"
-      },
-      {
-        "metric": "E24 (1983–1989)",
-        "value": "E63/E64 (2005–2010)"
-      },
-      {
-        "metric": "F06/F12/F13 (2012–2018)",
-        "value": "Body styles"
-      },
-      {
-        "metric": "2-door Coupé",
-        "value": "2-door Coupé (E63), Convertible (E64)"
-      },
-      {
-        "metric": "Coupé (F13), Convertible (F12), Gran Coupé (F06)",
-        "value": "Core engine"
-      },
-      {
-        "metric": "M88/3 / S38B35",
-        "value": "S85B50 V10"
-      },
-      {
-        "metric": "S63B44 twin-turbo V8",
-        "value": "Power"
-      },
-      {
-        "metric": "282–286 bhp",
-        "value": "507 bhp"
-      },
-      {
-        "metric": "560–600 hp",
-        "value": "Defining risk"
-      },
-      {
-        "metric": "None significant",
-        "value": "Rod bearings, SMG pump"
-      },
-      {
-        "metric": "Oil leaks, turbo issues (rare)",
-        "value": "Our position"
-      },
-      {
-        "metric": "The classic keeper",
-        "value": "The V10 masterpiece — budget for bearings"
-      },
-      {
-        "metric": "The one to buy — proven and robust",
-        "value": "Read the full comparison: BMW M6 E63 vs F13 →"
-      },
-      {
-        "metric": "The Defining Risks — Generation by Generation",
-        "value": "Correction applied (internal): Each M6 generation has its own defining engine risk:"
-      },
-      {
-        "metric": "Generation",
-        "value": "Engine"
-      },
-      {
-        "metric": "Defining Risk",
-        "value": "Prevention Cost"
-      },
-      {
-        "metric": "Recon Cost",
-        "value": "E24"
-      },
-      {
-        "metric": "M88/3 / S38",
-        "value": "None significant — one of BMW's most durable engines"
-      },
-      {
-        "metric": "N/A",
-        "value": "£5,000–£8,000+"
-      },
-      {
-        "metric": "E63/E64",
-        "value": "S85"
-      },
-      {
-        "metric": "Rod bearings, SMG pump, throttle actuators",
-        "value": "£3,000–£5,000"
-      },
-      {
-        "metric": "£8,000–£14,000+",
-        "value": "F06/F12/F13"
-      },
-      {
-        "metric": "S63",
-        "value": "Oil leaks (valve covers, turbo lines), turbo issues (rare)"
-      },
-      {
-        "metric": "£1,500–£3,000",
-        "value": "£7,000–£12,000+"
-      },
-      {
-        "metric": "The Badge Ambiguity — \"M6\" Means Different Things",
-        "value": "Correction applied (internal): The \"M6\" badge covers three different engines across three generations — the M88/S38 straight-six (E24), S85 V10 (E63/E64), and S63 twin-turbo V8 (F06/F12/F13). All share a badge. None share a reliability profile. The engine family — not the badge — determines ownership experience and costs."
       }
     ]
   },
   "generations": {
-    "h2": "",
-    "subHeadline": "",
-    "cards": [],
+    "h2": "BMW M6 Generations — Find Your Vehicle",
+    "subHeadline": "Three generations, 35 years, and one nameplate that defined the grand touring coupe. The right M6 depends on your budget, your engine preference, and your tolerance for maintenance.",
+    "cards": [
+      {
+        "title": "First Generation — E24 M6 / M635CSi (1983–1989)",
+        "badge": "",
+        "meta": "1983–1989 • M88/3 or S38B35 3.5L straight-six • 282–286 bhp",
+        "rating": "★★★★★",
+        "verdict": "The original M6 — a hand-built grand touring coupe with the M88 engine from the M1 supercar. The S38 straight-six is one of BMW's most durable engines, revving to 7,000 rpm with individual throttle bodies. Now a genuine classic where engine work is restoration, not repair. The E24 M6 is the ultimate M6 investment.",
+        "cta": {
+          "label": "Explore the E24 M6 →",
+          "href": "#"
+        }
+      },
+      {
+        "title": "Second Generation — E63/E64 M6 (2005–2010)",
+        "badge": "BMW M6 E63/E64 🔥 Most Enquired — S85 drives volume [BMW-VERIFIED]",
+        "meta": "2005–2010 • S85B50 5.0L V10 • 507 bhp / 384 lb-ft",
+        "rating": "★★★★☆",
+        "verdict": "The V10 M6 — a masterpiece that shared its engine with the E60 M5. The S85 revs to 8,250 rpm with a sound that few engines can match. But the rod bearing failure is the defining risk: budget £3,000–£5,000 for preventative replacement. The SMG III gearbox is also a weak point. A masterpiece — but a costly one.",
+        "cta": {
+          "label": "Explore the E63 M6 →",
+          "href": "#"
+        }
+      },
+      {
+        "title": "Third Generation — F06/F12/F13 M6 (2012–2018)",
+        "badge": "BMW M6 F06/F12/F13 🔥 Most Enquired — S63 drives volume [BMW-VERIFIED]",
+        "meta": "2012–2018 • S63B44 4.4L twin-turbo V8 • 560–600 hp",
+        "rating": "★★★★★",
+        "verdict": "The third-generation M6 — available as a Coupé (F13), Convertible (F12), and for the first time, a four-door Gran Coupé (F06). The S63 twin-turbo V8 produces 560 hp (standard) to 600 hp (Competition). The engine is proven and robust. The F13 M6 is the M6 for the modern era — buy it with confidence.",
+        "cta": {
+          "label": "Explore the F13 M6 →",
+          "href": "#"
+        }
+      },
+      {
+        "title": "The Body Style Guide — Which M6 Is Which?",
+        "badge": "",
+        "meta": "E24 (1983–1989)",
+        "rating": "",
+        "verdict": "",
+        "cta": {
+          "label": "",
+          "href": "#"
+        }
+      }
+    ],
     "rangeTable": {
       "title": "",
       "columns": [],
       "rows": []
     },
     "comparisonLink": {
-      "label": "",
+      "label": "Read the full comparison: BMW M6 E63 vs F13 →",
       "href": "#"
     }
   },

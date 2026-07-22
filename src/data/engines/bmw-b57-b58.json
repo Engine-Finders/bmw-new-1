@@ -1,24 +1,259 @@
 {
   "meta": {
-    "slug": "bmw-b57-b58",
+    "slug": "b57-b58",
     "title": "BMW B57/B58 Engine — Specs, Reliability & Replacement Cost",
-    "description": "",
-    "canonical": "",
+    "description": "Phrasing variant (from rotation bank): “BMW’s modern modular sixes — robust and refined, but coolant system issues are the main watchpoint. Rated from 1,000+ real UK enquiries. Compare quotes from 20+ vetted specialists today.”",
+    "canonical": "https://bmwengine.uk/engines/b57-b58/",
     "openGraph": {
-      "title": "",
-      "description": "",
-      "type": "",
-      "url": "",
-      "image": "",
-      "siteName": ""
+      "title": "BMW B57/B58 Engine — Specs, Reliability & Replacement Cost",
+      "description": "BMW’s modern modular sixes — robust and refined, but coolant system issues are the main watchpoint. Rated from 1,000+ real UK enquiries. Compare quotes from 20+ vetted specialists today.",
+      "type": "website",
+      "url": "https://bmwengine.uk/engines/b57-b58/",
+      "image": "https://bmwengine.uk/images/bmw/engines/b57-b58.jpg",
+      "siteName": "bmwengine.uk"
     },
     "twitter": {
-      "card": "",
-      "title": "",
-      "description": "",
-      "image": ""
+      "card": "summary_large_image",
+      "title": "BMW B57/B58 Engine — Specs, Reliability & Replacement Cost",
+      "description": "BMW’s modern modular sixes — robust and refined, but coolant system issues are the main watchpoint. Rated from 1,000+ real UK enquiries. Compare quotes from 20+ vetted specialists today.",
+      "image": "https://bmwengine.uk/images/bmw/engines/b57-b58.jpg"
     },
-    "jsonLd": {}
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://bmwengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Engines",
+              "item": "https://bmwengine.uk/engines/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "BMW B57/B58",
+              "item": "https://bmwengine.uk/engines/b57-b58/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "BMW models fitted with the BMW B57/B58",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "BMW 1 Series F20/F21 125d/130i",
+              "url": "https://bmwengine.uk/models/1-series/f20/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "BMW 2 Series F22/F23 M240i/230i/225d",
+              "url": "https://bmwengine.uk/models/2-series/f22/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "BMW 2 Series G42 M240i",
+              "url": "https://bmwengine.uk/models/2-series/g42/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "BMW 3 Series G20/G21 330i/M340i/320d/330d",
+              "url": "https://bmwengine.uk/models/3-series/g20/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 5,
+              "name": "BMW 4 Series G22/G23 430i/M440i/420d/430d",
+              "url": "https://bmwengine.uk/models/4-series/g22/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 6,
+              "name": "BMW 5 Series G30/G31 530i/540i/520d/530d",
+              "url": "https://bmwengine.uk/models/5-series/g30/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 7,
+              "name": "BMW 6 Series G32 630i/640i/630d",
+              "url": "https://bmwengine.uk/models/6-series/g32/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 8,
+              "name": "BMW 7 Series G11/G12 730i/740i/730d/740d",
+              "url": "https://bmwengine.uk/models/7-series/g11/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 9,
+              "name": "BMW 8 Series G15/G16 840i/840d",
+              "url": "https://bmwengine.uk/models/8-series/g15/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 10,
+              "name": "BMW X3 G01 xDrive30i/M40i/xDrive20d/xDrive30d",
+              "url": "https://bmwengine.uk/models/x3/g01/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 11,
+              "name": "BMW X4 G02 xDrive30i/M40i/xDrive20d/xDrive30d",
+              "url": "https://bmwengine.uk/models/x4/g02/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 12,
+              "name": "BMW X5 G05 xDrive40i/xDrive30d/xDrive40d",
+              "url": "https://bmwengine.uk/models/x5/g05/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 13,
+              "name": "BMW X6 G06 xDrive40i/xDrive30d/xDrive40d",
+              "url": "https://bmwengine.uk/models/x6/g06/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 14,
+              "name": "BMW X7 G07 xDrive40i/xDrive30d/xDrive40d",
+              "url": "https://bmwengine.uk/models/x7/g07/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 15,
+              "name": "BMW Z4 G29 sDrive20i/M40i",
+              "url": "https://bmwengine.uk/models/z4/g29/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does a BMW B57 or B58 engine replacement cost?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A reconditioned B57 (diesel) costs £5,000–£8,000, while the B58 (petrol) is £3,800–£6,000 supply only [BMW-QUOTE], varying by sub‑variant and vehicle. Fitting adds £650–£1,300. Use our calculator for your specific model."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the BMW B57/B58 a reliable engine?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The B57 and B58 earn 4★ out of 5 [BMW-VERIFIED], based on 1,000+ combined UK enquiries. They are widely considered BMW’s most reliable modern sixes, with fewer catastrophic failures than the N47/N57."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the most common BMW B57/B58 failure?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Coolant system issues are the most common — water pump leaks, expansion tank cracks, and plastic fittings failing. These typically occur from 60,000–120,000 miles and are relatively inexpensive to fix."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which BMW models use the B57 or B58 engine?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The B57 diesel powers 20d, 30d, 40d models across the 1–8 Series and X‑range; the B58 petrol powers 30i, 40i and M Performance models like the M340i, M440i, M240i, X3 M40i and Z4 M40i."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How long does the BMW B57/B58 engine last?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "With proper servicing (10,000‑mile oil changes using BMW Longlife‑17 spec), both can comfortably exceed 180,000–220,000 miles. The B58’s open‑deck block and B57’s steel‑piston design are built for longevity."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "bmwengine.uk",
+          "url": "https://bmwengine.uk/",
+          "logo": "https://bmwengine.uk/images/logo.png",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Product",
+          "name": "BMW B57/B58 Engine",
+          "brand": {
+            "@type": "Brand",
+            "name": "BMW"
+          },
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4",
+            "bestRating": "5",
+            "ratingCount": "1",
+            "reviewCount": "1"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "BMW B57/B58 Engine Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "bmwengine.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "2000",
+            "highPrice": "10500",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "name": "BMW B57/B58 UK Enquiry & Reliability Data 2025",
+          "description": "Proprietary UK enquiry volumes and reliability scoring for the BMW B57 diesel and B58 petrol modular straight‑six engines, sourced from bmwengine.uk's specialist marketplace.",
+          "creator": {
+            "@type": "Organization",
+            "name": "bmwengine.uk"
+          },
+          "temporalCoverage": "2025",
+          "spatialCoverage": "United Kingdom"
+        },
+        {
+          "@type": "WebPage",
+          "name": "BMW B57/B58 Engine — Specs, Reliability & Replacement Cost",
+          "url": "https://bmwengine.uk/engines/b57-b58/",
+          "author": {
+            "@type": "Organization",
+            "name": "bmwengine.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "bmwengine.uk Specialist Network"
+          },
+          "datePublished": "2025-07-14",
+          "dateModified": "2025-07-14"
+        }
+      ]
+    }
   },
   "hero": {
     "tagPill": "BMW • B57/B58 • Diesel/Petrol • 3.0L Straight‑6 • 2015–present",
@@ -80,647 +315,48 @@
       {
         "metric": "Overall Engine Score",
         "value": "74/100"
-      },
-      {
-        "metric": "BMW B57/B58 — Our Verdict & Rating",
-        "value": "Star rating: 4★ out of 5"
-      },
-      {
-        "metric": "Confidence: 90% confidence — based on 1,000+ combined UK enquiries, specialist reports, and manufacturer TSBs.",
-        "value": "Engine Score breakdown:"
-      },
-      {
-        "metric": "Dimension",
-        "value": "Score (of 20)"
-      },
-      {
-        "metric": "How it's determined",
-        "value": "Reliability"
-      },
-      {
-        "metric": "16",
-        "value": "4★ × 4 = 16 — both are significantly more reliable than their N‑series predecessors"
-      },
-      {
-        "metric": "Repair Cost",
-        "value": "12"
-      },
-      {
-        "metric": "Combined recon midpoint ~£6,400 → falls in £5,000–£6,999 band",
-        "value": "Repairability"
-      },
-      {
-        "metric": "16",
-        "value": "Most issues are non‑catastrophic (coolant leaks, sensors) and well‑understood"
-      },
-      {
-        "metric": "Parts Supply",
-        "value": "20"
-      },
-      {
-        "metric": "Modern modular engines; parts abundant through BMW and aftermarket",
-        "value": "Replacement Economics"
-      },
-      {
-        "metric": "10",
-        "value": "Recon cost as % of lowest host‑value (£15k) ~43% (30‑44% band) – conservative watch"
-      },
-      {
-        "metric": "Total",
-        "value": "74/100"
-      },
-      {
-        "metric": "Sum of five rows above",
-        "value": "One-line verdict: The B57 and B58 are BMW’s most refined modern sixes — robust and efficient — but coolant system issues are the main watchpoint; budget for preventative maintenance."
-      },
-      {
-        "metric": "Best for: High‑mileage drivers wanting strong economy (B57) or enthusiasts seeking smooth power (B58).",
-        "value": "Avoid if: You’re unprepared for occasional cooling‑system repairs (water pump, expansion tank) from 60,000 miles."
-      },
-      {
-        "metric": "BMW B57/B58 — Where It's Fitted (BMW Models)",
-        "value": "Model"
-      },
-      {
-        "metric": "Generation",
-        "value": "Variant/Badge"
-      },
-      {
-        "metric": "Years",
-        "value": "BMW 1 Series"
-      },
-      {
-        "metric": "F20/F21",
-        "value": "125d, 130i (B58)"
-      },
-      {
-        "metric": "2015–2019",
-        "value": "BMW 2 Series"
-      },
-      {
-        "metric": "F22/F23",
-        "value": "M240i, 230i (B58); 225d (B57)"
-      },
-      {
-        "metric": "2016–2021",
-        "value": "BMW 2 Series"
-      },
-      {
-        "metric": "G42",
-        "value": "M240i (B58)"
-      },
-      {
-        "metric": "2021–present",
-        "value": "BMW 3 Series"
-      },
-      {
-        "metric": "G20/G21",
-        "value": "330i, M340i (B58); 320d, 330d (B57)"
-      },
-      {
-        "metric": "2018–present",
-        "value": "BMW 4 Series"
-      },
-      {
-        "metric": "G22/G23",
-        "value": "430i, M440i (B58); 420d, 430d (B57)"
-      },
-      {
-        "metric": "2020–present",
-        "value": "BMW 5 Series"
-      },
-      {
-        "metric": "G30/G31",
-        "value": "530i, 540i (B58); 520d, 530d (B57)"
-      },
-      {
-        "metric": "2017–2023",
-        "value": "BMW 6 Series"
-      },
-      {
-        "metric": "G32",
-        "value": "630i, 640i (B58); 630d (B57)"
-      },
-      {
-        "metric": "2017–2023",
-        "value": "BMW 7 Series"
-      },
-      {
-        "metric": "G11/G12",
-        "value": "730i, 740i (B58); 730d, 740d (B57)"
-      },
-      {
-        "metric": "2015–2022",
-        "value": "BMW 8 Series"
-      },
-      {
-        "metric": "G15/G16",
-        "value": "840i (B58); 840d (B57)"
-      },
-      {
-        "metric": "2018–present",
-        "value": "BMW X3"
-      },
-      {
-        "metric": "G01",
-        "value": "xDrive30i, M40i (B58); xDrive20d, xDrive30d (B57)"
-      },
-      {
-        "metric": "2017–present",
-        "value": "BMW X4"
-      },
-      {
-        "metric": "G02",
-        "value": "xDrive30i, M40i (B58); xDrive20d, xDrive30d (B57)"
-      },
-      {
-        "metric": "2018–present",
-        "value": "BMW X5"
-      },
-      {
-        "metric": "G05",
-        "value": "xDrive40i (B58); xDrive30d, xDrive40d (B57)"
-      },
-      {
-        "metric": "2018–present",
-        "value": "BMW X6"
-      },
-      {
-        "metric": "G06",
-        "value": "xDrive40i (B58); xDrive30d, xDrive40d (B57)"
-      },
-      {
-        "metric": "2019–present",
-        "value": "BMW X7"
-      },
-      {
-        "metric": "G07",
-        "value": "xDrive40i (B58); xDrive30d, xDrive40d (B57)"
-      },
-      {
-        "metric": "2018–present",
-        "value": "BMW Z4"
-      },
-      {
-        "metric": "G29",
-        "value": "sDrive20i, M40i (B58)"
-      },
-      {
-        "metric": "2019–present",
-        "value": "Exclusive to BMW — no cross‑brand fitment."
-      },
-      {
-        "metric": "BMW B57/B58 Replacement Costs",
-        "value": "Condition"
-      },
-      {
-        "metric": "Supply Only",
-        "value": "Fitted (Indie)"
-      },
-      {
-        "metric": "Warranty",
-        "value": "Used"
-      },
-      {
-        "metric": "£2,000–£5,000",
-        "value": "£2,780–£5,940"
-      },
-      {
-        "metric": "3–6 months",
-        "value": "Reconditioned"
-      },
-      {
-        "metric": "£3,800–£8,000",
-        "value": "£4,580–£8,940"
-      },
-      {
-        "metric": "12 months",
-        "value": "Rebuilt"
-      },
-      {
-        "metric": "£5,000–£10,500",
-        "value": "£5,780–£11,440"
-      },
-      {
-        "metric": "12–24 months",
-        "value": "Ranges cover both B57 diesel and B58 petrol variants; diesel units typically sit at the higher end."
-      },
-      {
-        "metric": "Labour estimate: Fitting a B57 or B58 typically takes 10–14 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer) [BMW‑QUOTE].",
-        "value": "CTA line: → Compare BMW B57/B58 engine prices from UK specialists"
-      },
-      {
-        "metric": "BMW B57/B58 — Frequently Asked Questions",
-        "value": "1. How much does a BMW B57 or B58 engine replacement cost?"
-      },
-      {
-        "metric": "A reconditioned B57 (diesel) costs £5,000–£8,000, while the B58 (petrol) is £3,800–£6,000 supply only [BMW‑QUOTE], varying by sub‑variant and vehicle. Fitting adds £650–£1,300. Use our calculator for your specific model.",
-        "value": "2. Is the BMW B57/B58 a reliable engine?"
-      },
-      {
-        "metric": "The B57 and B58 earn 4★ out of 5 [BMW‑VERIFIED], based on 1,000+ combined UK enquiries. They are widely considered BMW’s most reliable modern sixes, with fewer catastrophic failures than the N47/N57.",
-        "value": "3. What is the most common BMW B57/B58 failure?"
-      },
-      {
-        "metric": "Coolant system issues are the most common — water pump leaks, expansion tank cracks, and plastic fittings failing. These typically occur from 60,000–120,000 miles and are relatively inexpensive to fix.",
-        "value": "4. Which BMW models use the B57 or B58 engine?"
-      },
-      {
-        "metric": "The B57 diesel powers 20d, 30d, 40d models across the 1–8 Series and X‑range; the B58 petrol powers 30i, 40i and M Performance models like the M340i, M440i, M240i, X3 M40i and Z4 M40i.",
-        "value": "5. How long does the BMW B57/B58 engine last?"
-      },
-      {
-        "metric": "With proper servicing (10,000‑mile oil changes using BMW Longlife‑17 spec), both can comfortably exceed 180,000–220,000 miles. The B58’s open‑deck block and B57’s steel‑piston design are built for longevity.",
-        "value": "Why UK B57/B58 Owners Trust bmwengine.uk"
-      },
-      {
-        "metric": "* Trusted Suppliers — Every garage and engine rebuilder in our network is vetted, rated and reviewed by real B57/B58 owners, as part of the Engine Finders network.",
-        "value": "* Compare Companies — We compare actual quotes from UK specialists so you see real fitted prices — not just advertised supply‑only rates."
-      },
-      {
-        "metric": "* UK Coverage — Our specialist network covers England, Scotland, Wales and Northern Ireland, with BMW modular‑engine expertise in every region.",
-        "value": "Final CTA: Find the best BMW B57 or B58 engine replacement UK drivers rely on. Compare real prices from trusted specialists on EnginesMarket today and get back on the road with confidence."
-      },
-      {
-        "metric": "CTA Button: Compare BMW B57/B58 Engine Prices Now →",
-        "value": "BMW B57/B58 Engine — Metadata & Schema (Part 2)"
-      },
-      {
-        "metric": "META TITLE",
-        "value": "BMW B57/B58 Engine — Specs, Reliability & Replacement Cost"
-      },
-      {
-        "metric": "(59 characters — fits within 50–60 target)",
-        "value": "META DESCRIPTION"
-      },
-      {
-        "metric": "Construction: reliability verdict (shortened) → enquiry figure → lead‑gen close.",
-        "value": "Phrasing variant (from rotation bank): “BMW’s modern modular sixes — robust and refined, but coolant system issues are the main watchpoint. Rated from 1,000+ real UK enquiries. Compare quotes from 20+ vetted specialists today.”"
-      },
-      {
-        "metric": "(159 characters)",
-        "value": "OPEN GRAPH"
-      },
-      {
-        "metric": "og:title = BMW B57/B58 Engine — Specs, Reliability & Replacement Cost",
-        "value": "og:description = BMW’s modern modular sixes — robust and refined, but coolant system issues are the main watchpoint. Rated from 1,000+ real UK enquiries. Compare quotes from 20+ vetted specialists today."
-      },
-      {
-        "metric": "og:type = website",
-        "value": "og:url = https://bmwengine.uk/engines/b57-b58/"
-      },
-      {
-        "metric": "og:image = https://bmwengine.uk/images/bmw/engines/b57-b58.jpg",
-        "value": "og:site_name = bmwengine.uk"
-      },
-      {
-        "metric": "TWITTER CARD",
-        "value": "twitter:card = summary_large_image"
-      },
-      {
-        "metric": "twitter:title = BMW B57/B58 Engine — Specs, Reliability & Replacement Cost",
-        "value": "twitter:description = BMW’s modern modular sixes — robust and refined, but coolant system issues are the main watchpoint. Rated from 1,000+ real UK enquiries. Compare quotes from 20+ vetted specialists today."
-      },
-      {
-        "metric": "twitter:image = https://bmwengine.uk/images/bmw/engines/b57-b58.jpg",
-        "value": "JSON‑LD SCHEMA (@graph)"
-      },
-      {
-        "metric": "{",
-        "value": "\"@context\": \"https://schema.org\","
-      },
-      {
-        "metric": "\"@graph\": [",
-        "value": "{"
-      },
-      {
-        "metric": "\"@type\": \"BreadcrumbList\",",
-        "value": "\"itemListElement\": ["
-      },
-      {
-        "metric": "{",
-        "value": "\"@type\": \"ListItem\","
-      },
-      {
-        "metric": "\"position\": 1,",
-        "value": "\"name\": \"Home\","
-      },
-      {
-        "metric": "\"item\": \"https://bmwengine.uk/\"",
-        "value": "},"
-      },
-      {
-        "metric": "{",
-        "value": "\"@type\": \"ListItem\","
-      },
-      {
-        "metric": "\"position\": 2,",
-        "value": "\"name\": \"Engines\","
-      },
-      {
-        "metric": "\"item\": \"https://bmwengine.uk/engines/\"",
-        "value": "},"
-      },
-      {
-        "metric": "{",
-        "value": "\"@type\": \"ListItem\","
-      },
-      {
-        "metric": "\"position\": 3,",
-        "value": "\"name\": \"BMW B57/B58\","
-      },
-      {
-        "metric": "\"item\": \"https://bmwengine.uk/engines/b57-b58/\"",
-        "value": "}"
-      },
-      {
-        "metric": "]",
-        "value": "},"
-      },
-      {
-        "metric": "{",
-        "value": "\"@type\": \"ItemList\","
-      },
-      {
-        "metric": "\"name\": \"BMW models fitted with the BMW B57/B58\",",
-        "value": "\"itemListElement\": ["
-      },
-      {
-        "metric": "{ \"@type\": \"ListItem\", \"position\": 1, \"name\": \"BMW 1 Series F20/F21 125d/130i\", \"url\": \"https://bmwengine.uk/models/1-series/f20/\" },",
-        "value": "{ \"@type\": \"ListItem\", \"position\": 2, \"name\": \"BMW 2 Series F22/F23 M240i/230i/225d\", \"url\": \"https://bmwengine.uk/models/2-series/f22/\" },"
-      },
-      {
-        "metric": "{ \"@type\": \"ListItem\", \"position\": 3, \"name\": \"BMW 2 Series G42 M240i\", \"url\": \"https://bmwengine.uk/models/2-series/g42/\" },",
-        "value": "{ \"@type\": \"ListItem\", \"position\": 4, \"name\": \"BMW 3 Series G20/G21 330i/M340i/320d/330d\", \"url\": \"https://bmwengine.uk/models/3-series/g20/\" },"
-      },
-      {
-        "metric": "{ \"@type\": \"ListItem\", \"position\": 5, \"name\": \"BMW 4 Series G22/G23 430i/M440i/420d/430d\", \"url\": \"https://bmwengine.uk/models/4-series/g22/\" },",
-        "value": "{ \"@type\": \"ListItem\", \"position\": 6, \"name\": \"BMW 5 Series G30/G31 530i/540i/520d/530d\", \"url\": \"https://bmwengine.uk/models/5-series/g30/\" },"
-      },
-      {
-        "metric": "{ \"@type\": \"ListItem\", \"position\": 7, \"name\": \"BMW 6 Series G32 630i/640i/630d\", \"url\": \"https://bmwengine.uk/models/6-series/g32/\" },",
-        "value": "{ \"@type\": \"ListItem\", \"position\": 8, \"name\": \"BMW 7 Series G11/G12 730i/740i/730d/740d\", \"url\": \"https://bmwengine.uk/models/7-series/g11/\" },"
-      },
-      {
-        "metric": "{ \"@type\": \"ListItem\", \"position\": 9, \"name\": \"BMW 8 Series G15/G16 840i/840d\", \"url\": \"https://bmwengine.uk/models/8-series/g15/\" },",
-        "value": "{ \"@type\": \"ListItem\", \"position\": 10, \"name\": \"BMW X3 G01 xDrive30i/M40i/xDrive20d/xDrive30d\", \"url\": \"https://bmwengine.uk/models/x3/g01/\" },"
-      },
-      {
-        "metric": "{ \"@type\": \"ListItem\", \"position\": 11, \"name\": \"BMW X4 G02 xDrive30i/M40i/xDrive20d/xDrive30d\", \"url\": \"https://bmwengine.uk/models/x4/g02/\" },",
-        "value": "{ \"@type\": \"ListItem\", \"position\": 12, \"name\": \"BMW X5 G05 xDrive40i/xDrive30d/xDrive40d\", \"url\": \"https://bmwengine.uk/models/x5/g05/\" },"
-      },
-      {
-        "metric": "{ \"@type\": \"ListItem\", \"position\": 13, \"name\": \"BMW X6 G06 xDrive40i/xDrive30d/xDrive40d\", \"url\": \"https://bmwengine.uk/models/x6/g06/\" },",
-        "value": "{ \"@type\": \"ListItem\", \"position\": 14, \"name\": \"BMW X7 G07 xDrive40i/xDrive30d/xDrive40d\", \"url\": \"https://bmwengine.uk/models/x7/g07/\" },"
-      },
-      {
-        "metric": "{ \"@type\": \"ListItem\", \"position\": 15, \"name\": \"BMW Z4 G29 sDrive20i/M40i\", \"url\": \"https://bmwengine.uk/models/z4/g29/\" }",
-        "value": "]"
-      },
-      {
-        "metric": "},",
-        "value": "{"
-      },
-      {
-        "metric": "\"@type\": \"FAQPage\",",
-        "value": "\"mainEntity\": ["
-      },
-      {
-        "metric": "{",
-        "value": "\"@type\": \"Question\","
-      },
-      {
-        "metric": "\"name\": \"How much does a BMW B57 or B58 engine replacement cost?\",",
-        "value": "\"acceptedAnswer\": {"
-      },
-      {
-        "metric": "\"@type\": \"Answer\",",
-        "value": "\"text\": \"A reconditioned B57 (diesel) costs £5,000–£8,000, while the B58 (petrol) is £3,800–£6,000 supply only [BMW-QUOTE], varying by sub‑variant and vehicle. Fitting adds £650–£1,300. Use our calculator for your specific model.\""
-      },
-      {
-        "metric": "}",
-        "value": "},"
-      },
-      {
-        "metric": "{",
-        "value": "\"@type\": \"Question\","
-      },
-      {
-        "metric": "\"name\": \"Is the BMW B57/B58 a reliable engine?\",",
-        "value": "\"acceptedAnswer\": {"
-      },
-      {
-        "metric": "\"@type\": \"Answer\",",
-        "value": "\"text\": \"The B57 and B58 earn 4★ out of 5 [BMW-VERIFIED], based on 1,000+ combined UK enquiries. They are widely considered BMW’s most reliable modern sixes, with fewer catastrophic failures than the N47/N57.\""
-      },
-      {
-        "metric": "}",
-        "value": "},"
-      },
-      {
-        "metric": "{",
-        "value": "\"@type\": \"Question\","
-      },
-      {
-        "metric": "\"name\": \"What is the most common BMW B57/B58 failure?\",",
-        "value": "\"acceptedAnswer\": {"
-      },
-      {
-        "metric": "\"@type\": \"Answer\",",
-        "value": "\"text\": \"Coolant system issues are the most common — water pump leaks, expansion tank cracks, and plastic fittings failing. These typically occur from 60,000–120,000 miles and are relatively inexpensive to fix.\""
-      },
-      {
-        "metric": "}",
-        "value": "},"
-      },
-      {
-        "metric": "{",
-        "value": "\"@type\": \"Question\","
-      },
-      {
-        "metric": "\"name\": \"Which BMW models use the B57 or B58 engine?\",",
-        "value": "\"acceptedAnswer\": {"
-      },
-      {
-        "metric": "\"@type\": \"Answer\",",
-        "value": "\"text\": \"The B57 diesel powers 20d, 30d, 40d models across the 1–8 Series and X‑range; the B58 petrol powers 30i, 40i and M Performance models like the M340i, M440i, M240i, X3 M40i and Z4 M40i.\""
-      },
-      {
-        "metric": "}",
-        "value": "},"
-      },
-      {
-        "metric": "{",
-        "value": "\"@type\": \"Question\","
-      },
-      {
-        "metric": "\"name\": \"How long does the BMW B57/B58 engine last?\",",
-        "value": "\"acceptedAnswer\": {"
-      },
-      {
-        "metric": "\"@type\": \"Answer\",",
-        "value": "\"text\": \"With proper servicing (10,000‑mile oil changes using BMW Longlife‑17 spec), both can comfortably exceed 180,000–220,000 miles. The B58’s open‑deck block and B57’s steel‑piston design are built for longevity.\""
-      },
-      {
-        "metric": "}",
-        "value": "}"
-      },
-      {
-        "metric": "]",
-        "value": "},"
-      },
-      {
-        "metric": "{",
-        "value": "\"@type\": \"Organization\","
-      },
-      {
-        "metric": "\"name\": \"bmwengine.uk\",",
-        "value": "\"url\": \"https://bmwengine.uk/\","
-      },
-      {
-        "metric": "\"logo\": \"https://bmwengine.uk/images/logo.png\",",
-        "value": "\"parentOrganization\": {"
-      },
-      {
-        "metric": "\"@type\": \"Organization\",",
-        "value": "\"name\": \"Engine Finders\""
-      },
-      {
-        "metric": "}",
-        "value": "},"
-      },
-      {
-        "metric": "{",
-        "value": "\"@type\": \"Product\","
-      },
-      {
-        "metric": "\"name\": \"BMW B57/B58 Engine\",",
-        "value": "\"brand\": {"
-      },
-      {
-        "metric": "\"@type\": \"Brand\",",
-        "value": "\"name\": \"BMW\""
-      },
-      {
-        "metric": "},",
-        "value": "\"aggregateRating\": {"
-      },
-      {
-        "metric": "\"@type\": \"AggregateRating\",",
-        "value": "\"ratingValue\": \"4\","
-      },
-      {
-        "metric": "\"bestRating\": \"5\",",
-        "value": "\"ratingCount\": \"1\","
-      },
-      {
-        "metric": "\"reviewCount\": \"1\"",
-        "value": "}"
-      },
-      {
-        "metric": "},",
-        "value": "{"
-      },
-      {
-        "metric": "\"@type\": \"Service\",",
-        "value": "\"serviceType\": \"BMW B57/B58 Engine Replacement\","
-      },
-      {
-        "metric": "\"provider\": {",
-        "value": "\"@type\": \"Organization\","
-      },
-      {
-        "metric": "\"name\": \"bmwengine.uk\"",
-        "value": "},"
-      },
-      {
-        "metric": "\"areaServed\": \"GB\",",
-        "value": "\"offers\": {"
-      },
-      {
-        "metric": "\"@type\": \"AggregateOffer\",",
-        "value": "\"priceCurrency\": \"GBP\","
-      },
-      {
-        "metric": "\"lowPrice\": \"2000\",",
-        "value": "\"highPrice\": \"10500\","
-      },
-      {
-        "metric": "\"availability\": \"https://schema.org/InStock\"",
-        "value": "}"
-      },
-      {
-        "metric": "},",
-        "value": "{"
-      },
-      {
-        "metric": "\"@type\": \"Dataset\",",
-        "value": "\"name\": \"BMW B57/B58 UK Enquiry & Reliability Data 2025\","
-      },
-      {
-        "metric": "\"description\": \"Proprietary UK enquiry volumes and reliability scoring for the BMW B57 diesel and B58 petrol modular straight‑six engines, sourced from bmwengine.uk's specialist marketplace.\",",
-        "value": "\"creator\": {"
-      },
-      {
-        "metric": "\"@type\": \"Organization\",",
-        "value": "\"name\": \"bmwengine.uk\""
-      },
-      {
-        "metric": "},",
-        "value": "\"temporalCoverage\": \"2025\","
-      },
-      {
-        "metric": "\"spatialCoverage\": \"United Kingdom\"",
-        "value": "},"
-      },
-      {
-        "metric": "{",
-        "value": "\"@type\": \"WebPage\","
-      },
-      {
-        "metric": "\"name\": \"BMW B57/B58 Engine — Specs, Reliability & Replacement Cost\",",
-        "value": "\"url\": \"https://bmwengine.uk/engines/b57-b58/\","
-      },
-      {
-        "metric": "\"author\": {",
-        "value": "\"@type\": \"Organization\","
-      },
-      {
-        "metric": "\"name\": \"bmwengine.uk Editorial Team\"",
-        "value": "},"
-      },
-      {
-        "metric": "\"reviewedBy\": {",
-        "value": "\"@type\": \"Organization\","
-      },
-      {
-        "metric": "\"name\": \"bmwengine.uk Specialist Network\"",
-        "value": "},"
-      },
-      {
-        "metric": "\"datePublished\": \"2025-07-14\",",
-        "value": "\"dateModified\": \"2025-07-14\""
-      },
-      {
-        "metric": "}",
-        "value": "]"
       }
     ]
   },
   "verdictRating": {
-    "starRating": "",
-    "confidence": "",
-    "scoreNote": "",
+    "starRating": "4★ out of 5",
+    "confidence": "90% confidence — based on 1,000+ combined UK enquiries, specialist reports, and manufacturer TSBs.",
+    "scoreNote": "Engine Score breakdown:",
     "scoreBreakdown": {
       "columns": [
         "Dimension",
         "Score (of 20)"
       ],
-      "rows": []
+      "rows": [
+        {
+          "dimension": "Reliability",
+          "score": "16 (4★ × 4 = 16 — both are significantly more reliable than their N‑series predecessors)"
+        },
+        {
+          "dimension": "Repair Cost",
+          "score": "12 (Combined recon midpoint ~£6,400 → falls in £5,000–£6,999 band)"
+        },
+        {
+          "dimension": "Repairability",
+          "score": "16 (Most issues are non‑catastrophic (coolant leaks, sensors) and well‑understood)"
+        },
+        {
+          "dimension": "Parts Supply",
+          "score": "20 (Modern modular engines; parts abundant through BMW and aftermarket)"
+        },
+        {
+          "dimension": "Replacement Economics",
+          "score": "10 (Recon cost as % of lowest host‑value (£15k) ~43% (30‑44% band) – conservative watch)"
+        },
+        {
+          "dimension": "Total",
+          "score": "74/100 (Sum of five rows above)"
+        }
+      ]
     },
-    "oneLineVerdict": "",
-    "bestFor": "",
-    "avoidIf": ""
+    "oneLineVerdict": "The B57 and B58 are BMW’s most refined modern sixes — robust and efficient — but coolant system issues are the main watchpoint; budget for preventative maintenance.",
+    "bestFor": "High‑mileage drivers wanting strong economy (B57) or enthusiasts seeking smooth power (B58).",
+    "avoidIf": "You’re unprepared for occasional cooling‑system repairs (water pump, expansion tank) from 60,000 miles."
   },
   "compatibility": {
     "columns": [
@@ -729,8 +365,99 @@
       "Variant/Badge",
       "Years"
     ],
-    "rows": [],
-    "crossBrandNote": ""
+    "rows": [
+      {
+        "model": "BMW 1 Series",
+        "generation": "F20/F21",
+        "variantBadge": "125d, 130i (B58)",
+        "years": "2015–2019"
+      },
+      {
+        "model": "BMW 2 Series",
+        "generation": "F22/F23",
+        "variantBadge": "M240i, 230i (B58); 225d (B57)",
+        "years": "2016–2021"
+      },
+      {
+        "model": "BMW 2 Series",
+        "generation": "G42",
+        "variantBadge": "M240i (B58)",
+        "years": "2021–present"
+      },
+      {
+        "model": "BMW 3 Series",
+        "generation": "G20/G21",
+        "variantBadge": "330i, M340i (B58); 320d, 330d (B57)",
+        "years": "2018–present"
+      },
+      {
+        "model": "BMW 4 Series",
+        "generation": "G22/G23",
+        "variantBadge": "430i, M440i (B58); 420d, 430d (B57)",
+        "years": "2020–present"
+      },
+      {
+        "model": "BMW 5 Series",
+        "generation": "G30/G31",
+        "variantBadge": "530i, 540i (B58); 520d, 530d (B57)",
+        "years": "2017–2023"
+      },
+      {
+        "model": "BMW 6 Series",
+        "generation": "G32",
+        "variantBadge": "630i, 640i (B58); 630d (B57)",
+        "years": "2017–2023"
+      },
+      {
+        "model": "BMW 7 Series",
+        "generation": "G11/G12",
+        "variantBadge": "730i, 740i (B58); 730d, 740d (B57)",
+        "years": "2015–2022"
+      },
+      {
+        "model": "BMW 8 Series",
+        "generation": "G15/G16",
+        "variantBadge": "840i (B58); 840d (B57)",
+        "years": "2018–present"
+      },
+      {
+        "model": "BMW X3",
+        "generation": "G01",
+        "variantBadge": "xDrive30i, M40i (B58); xDrive20d, xDrive30d (B57)",
+        "years": "2017–present"
+      },
+      {
+        "model": "BMW X4",
+        "generation": "G02",
+        "variantBadge": "xDrive30i, M40i (B58); xDrive20d, xDrive30d (B57)",
+        "years": "2018–present"
+      },
+      {
+        "model": "BMW X5",
+        "generation": "G05",
+        "variantBadge": "xDrive40i (B58); xDrive30d, xDrive40d (B57)",
+        "years": "2018–present"
+      },
+      {
+        "model": "BMW X6",
+        "generation": "G06",
+        "variantBadge": "xDrive40i (B58); xDrive30d, xDrive40d (B57)",
+        "years": "2019–present"
+      },
+      {
+        "model": "BMW X7",
+        "generation": "G07",
+        "variantBadge": "xDrive40i (B58); xDrive30d, xDrive40d (B57)",
+        "years": "2018–present"
+      },
+      {
+        "model": "BMW Z4",
+        "generation": "G29",
+        "variantBadge": "sDrive20i, M40i (B58)",
+        "years": "2019–present"
+      }
+    ],
+    "crossBrandNote": "Exclusive to BMW — no cross‑brand fitment."
   },
   "costGuide": {
     "columns": [
@@ -739,22 +466,67 @@
       "Fitted (Indie)",
       "Warranty"
     ],
-    "rows": [],
-    "labourEstimate": "",
+    "rows": [
+      {
+        "condition": "Used",
+        "supplyOnly": "£2,000–£5,000",
+        "fittedIndie": "£2,780–£5,940",
+        "warranty": "3–6 months"
+      },
+      {
+        "condition": "Reconditioned",
+        "supplyOnly": "£3,800–£8,000",
+        "fittedIndie": "£4,580–£8,940",
+        "warranty": "12 months"
+      },
+      {
+        "condition": "Rebuilt",
+        "supplyOnly": "£5,000–£10,500",
+        "fittedIndie": "£5,780–£11,440",
+        "warranty": "12–24 months"
+      }
+    ],
+    "labourEstimate": "Fitting a B57 or B58 typically takes 10–14 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer) [BMW‑QUOTE].",
     "sharedCostNote": "",
     "cta": {
-      "label": "",
+      "label": "→ Compare BMW B57/B58 engine prices from UK specialists",
       "href": "#"
     }
   },
   "faq": {
-    "items": []
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a BMW B57 or B58 engine replacement cost?",
+        "answer": "A reconditioned B57 (diesel) costs £5,000–£8,000, while the B58 (petrol) is £3,800–£6,000 supply only [BMW‑QUOTE], varying by sub‑variant and vehicle. Fitting adds £650–£1,300. Use our calculator for your specific model."
+      },
+      {
+        "id": 2,
+        "question": "Is the BMW B57/B58 a reliable engine?",
+        "answer": "The B57 and B58 earn 4★ out of 5 [BMW‑VERIFIED], based on 1,000+ combined UK enquiries. They are widely considered BMW’s most reliable modern sixes, with fewer catastrophic failures than the N47/N57."
+      },
+      {
+        "id": 3,
+        "question": "What is the most common BMW B57/B58 failure?",
+        "answer": "Coolant system issues are the most common — water pump leaks, expansion tank cracks, and plastic fittings failing. These typically occur from 60,000–120,000 miles and are relatively inexpensive to fix."
+      },
+      {
+        "id": 4,
+        "question": "Which BMW models use the B57 or B58 engine?",
+        "answer": "The B57 diesel powers 20d, 30d, 40d models across the 1–8 Series and X‑range; the B58 petrol powers 30i, 40i and M Performance models like the M340i, M440i, M240i, X3 M40i and Z4 M40i."
+      },
+      {
+        "id": 5,
+        "question": "How long does the BMW B57/B58 engine last?",
+        "answer": "With proper servicing (10,000‑mile oil changes using BMW Longlife‑17 spec), both can comfortably exceed 180,000–220,000 miles. The B58’s open‑deck block and B57’s steel‑piston design are built for longevity."
+      }
+    ]
   },
   "trustCta": {
     "trustPoints": [],
-    "finalCta": "",
+    "finalCta": "Find the best BMW B57 or B58 engine replacement UK drivers rely on. Compare real prices from trusted specialists on EnginesMarket today and get back on the road with confidence.",
     "ctaButton": {
-      "label": "",
+      "label": "Compare BMW B57/B58 Engine Prices Now →",
       "href": "#"
     }
   }

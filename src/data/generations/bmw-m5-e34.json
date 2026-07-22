@@ -1,11 +1,217 @@
 {
   "meta": {
     "slug": "bmw-m5-e34",
-    "title": "BMW M5 E34 Engines — The Complete UK Guide",
-    "titleCharCount": 42,
-    "description": "",
-    "descriptionCharCount": 0,
-    "jsonLd": {}
+    "title": "E34 M5 Engine Replacement Cost UK — Compare Quotes",
+    "titleCharCount": 57,
+    "description": "Every BMW M5 E34 engine — S38B36 and S38B38. Real UK costs and honest classic M-car reliability data. Get free quotes from 20+ vetted BMW specialists today.",
+    "descriptionCharCount": 157,
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://bmwengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "M5",
+              "item": "https://bmwengine.uk/m5/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "BMW M5 E34",
+              "item": "https://bmwengine.uk/m5/e34/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "BMW M5 E34 Engine Codes",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "S38B36 Engine",
+              "url": "https://bmwengine.uk/engines/s38/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "S38B38 Engine",
+              "url": "https://bmwengine.uk/engines/s38/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "BMW M5 E34 Core Variants",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "M5 (S38B36)",
+              "url": "https://bmwengine.uk/m5/e34/m5-36/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "M5 (S38B38)",
+              "url": "https://bmwengine.uk/m5/e34/m5-38/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "M5 Touring (S38B38)",
+              "url": "https://bmwengine.uk/m5/e34/m5-touring/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does a BMW M5 E34 engine replacement cost in the UK?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A reconditioned E34 M5 engine typically costs £5,000–£9,000 supply only [BMW-QUOTE], depending on engine — the S38B36 sits at £5,000–£8,000, while the S38B38 can reach £9,000. Fitting adds £650–£1,300 depending on specialist location."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which BMW M5 E34 engine is the most reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The S38B36 is considered slightly more durable than the later 3.8 — the shorter stroke means less stress on bearings and a more robust bottom end. Both engines are robust when properly maintained, but the 3.6 has a reputation for slightly better long-term durability [PROVISIONAL — pending dedicated Engine Page]."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What are the common problems with the BMW M5 E34?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Valve clearance adjustments are the single most important maintenance item — neglect leads to reduced performance and potential valve damage. Cooling system failure is common on ageing cars. The timing chain tensioner can wear over time. Body rust and SLS suspension issues are the biggest non-engine concerns."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the BMW M5 E34 reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The S38 engine is robust and durable when properly maintained — it's one of BMW's greatest engines. However, it requires meticulous maintenance: valve clearances must be checked every 30,000 miles, the cooling system needs regular replacement, and the timing chain tensioner should be monitored."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which BMW M5 E34 engine should I avoid?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No engine is a hard avoid. The S38B38 runs slightly hotter and has less metal between cylinder bores than the 3.6 — it's more powerful but marginally less durable. Avoid any E34 M5 without documented valve adjustment history — neglect here is a £4,500+ engine rebuild waiting to happen."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I know if my E34 M5 engine needs replacing?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Valve train noise may indicate valve clearances are out of specification — adjust immediately. Overheating suggests cooling system failure — stop driving immediately to avoid head gasket damage. Timing chain rattle on cold start suggests tensioner wear. A pre-purchase inspection by a BMW M specialist is essential."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is it worth replacing a BMW M5 E34 engine, or should I scrap the car?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Depends on the car's value. Against a well-kept £20,000 E34 M5, a £5,000–£9,000 S38 recon is 25–45% — safe. Against a tired £10,000 example, the same recon is 50–90% — borderline. Our 70% BMW scrap threshold is the line [BMW-VERIFIED]. For low-mileage cars, replacement is nearly always justified."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How long do BMW M5 E34 engines last?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The S38 can exceed 200,000 miles with proper servicing — valve adjustments, cooling system maintenance, and timing chain tensioner care are the keys to longevity. The 3.6-litre is considered slightly more durable than the 3.8. Many well-maintained E34 M5s have covered 150,000+ miles."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the difference between the E34 M5 and the E39 M5?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The E34 M5 (1988–1995) is powered by the naturally aspirated S38 straight-six — the last M5 engine with a direct motorsport lineage. The E39 M5 (1998–2003) is powered by the S62 V8. The E34 is lighter, more analogue, and considered the more driver-focused car; the E39 is more powerful and refined."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I find my BMW M5 E34 engine code?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Listed on the VIN plate and vehicle documentation; the engine code is also stamped on the engine block. Tell us your model year — pre-1992 cars use the S38B36; post-1991 cars use the S38B38. UK-market 'Limited Edition' cars (1995) use the S38B38. We'll confirm it — 20+ vetted BMW specialists will confirm it for free."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "BMWEngines.uk",
+          "url": "https://bmwengine.uk/",
+          "logo": "https://bmwengine.uk/images/bmwengines-logo.png",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "BMW M5 E34 Engine Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "5000",
+            "highPrice": "9000",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "name": "BMW M5 E34 UK Engine Enquiry Data 2025",
+          "description": "Proprietary UK enquiry volumes and demand trends for BMW M5 E34 engines, sourced from BMWEngines.uk's specialist marketplace activity.",
+          "creator": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk"
+          },
+          "temporalCoverage": "2025",
+          "spatialCoverage": "United Kingdom"
+        },
+        {
+          "@type": "WebPage",
+          "name": "E34 M5 Engine Replacement Cost UK — Compare Quotes",
+          "url": "https://bmwengine.uk/m5/e34/",
+          "author": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk Specialist Network"
+          },
+          "datePublished": "2026-07-09",
+          "dateModified": "2026-07-09"
+        }
+      ]
+    }
   },
   "internalDeclarations": {
     "checkA": "",
@@ -306,16 +512,80 @@
     "liveFeed": []
   },
   "faq": {
-    "items": []
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a BMW M5 E34 engine replacement cost in the UK?",
+        "answer": "A reconditioned E34 M5 engine typically costs £5,000–£9,000 supply only [BMW-QUOTE], depending on engine — the S38B36 (3.6) sits at £5,000–£8,000, while the S38B38 (3.8) can reach £9,000. Fitting adds £650–£1,300 depending on specialist location. The E34 M5's rising collector values (£10,000–£40,000+) mean replacement is often viable for well-maintained cars."
+      },
+      {
+        "id": 2,
+        "question": "Which BMW M5 E34 engine is the most reliable?",
+        "answer": "The S38B36 (3.5/3.6-litre, 1988–1992) is considered slightly more durable than the later 3.8 — the shorter stroke means less stress on bearings and a more robust bottom end. Both engines are robust when properly maintained, but the 3.6 has a reputation for slightly better long-term durability [PROVISIONAL — pending dedicated Engine Page]."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the BMW M5 E34?",
+        "answer": "Valve clearance adjustments (mechanical shims, no hydraulic lifters) are the single most important maintenance item — neglect leads to reduced performance and potential valve damage. Cooling system failure (water pump, radiator) is common on ageing cars. The timing chain tensioner can wear over time. Body rust and SLS suspension issues are the biggest non-engine concerns."
+      },
+      {
+        "id": 4,
+        "question": "Is the BMW M5 E34 reliable?",
+        "answer": "The S38 engine is robust and durable when properly maintained — it's one of BMW's greatest engines. However, it requires meticulous maintenance: valve clearances must be checked every 30,000 miles, the cooling system needs regular replacement, and the timing chain tensioner should be monitored. The E34 M5 rewards careful owners with a 200,000+ mile lifespan."
+      },
+      {
+        "id": 5,
+        "question": "Which BMW M5 E34 engine should I avoid?",
+        "answer": "No engine is a hard avoid, but the S38B38 (3.8-litre) runs slightly hotter and has less metal between cylinder bores than the 3.6 — it's more powerful but marginally less durable. Both are excellent engines. Avoid any E34 M5 without documented valve adjustment history — neglect here is a £4,500+ engine rebuild waiting to happen."
+      },
+      {
+        "id": 6,
+        "question": "How do I know if my E34 M5 engine needs replacing?",
+        "answer": "Valve train noise (ticking) may indicate valve clearances are out of specification — adjust immediately. Overheating suggests cooling system failure — stop driving immediately to avoid head gasket damage. Timing chain rattle on cold start suggests tensioner wear. A pre-purchase inspection by a BMW M specialist is essential."
+      },
+      {
+        "id": 7,
+        "question": "Is it worth replacing a BMW M5 E34 engine, or should I scrap the car?",
+        "answer": "Depends on the car's value. Against a well-kept £20,000 E34 M5, a £5,000–£9,000 S38 recon is 25–45% of the car's value — safe. Against a tired £10,000 example, the same recon is 50–90% — borderline. Our 70% BMW scrap threshold is the line [BMW-VERIFIED]. For low-mileage, well-documented cars, replacement is nearly always justified."
+      },
+      {
+        "id": 8,
+        "question": "How long do BMW M5 E34 engines last?",
+        "answer": "The S38 can exceed 200,000 miles with proper servicing — valve adjustments, cooling system maintenance, and timing chain tensioner care are the keys to longevity. The 3.6-litre is considered slightly more durable than the 3.8. Many well-maintained E34 M5s have covered 150,000+ miles on their original engines."
+      },
+      {
+        "id": 9,
+        "question": "What is the difference between the E34 M5 and the E39 M5?",
+        "answer": "The E34 M5 (1988–1995) is the second-generation M5, powered by the naturally aspirated S38 straight-six — the last M5 engine with a direct motorsport lineage. The E39 M5 (1998–2003) is the third-generation M5, powered by the S62 V8. The E34 is lighter, more analogue, and considered the more driver-focused car; the E39 is more powerful and refined."
+      },
+      {
+        "id": 10,
+        "question": "How do I find my BMW M5 E34 engine code?",
+        "answer": "Listed on the VIN plate and vehicle documentation; the engine code is also stamped on the engine block. Tell us your model year — pre-1992 cars use the S38B36 (3.6); post-1991 cars use the S38B38 (3.8). UK-market 'Limited Edition' cars (1995) use the S38B38. We'll confirm it — 20+ vetted BMW specialists will confirm it for free."
+      }
+    ]
   },
   "trustCta": {
-    "h2": "",
-    "trustPoints": [],
-    "finalCta": "",
+    "h2": "Why UK BMW M5 E34 Owners Trust BMWEngines.uk",
+    "trustPoints": [
+      {
+        "title": "Trusted E34 M5 Engine Suppliers",
+        "text": "every garage and engine rebuilder in our network is vetted, rated and reviewed by real M5 owners, as part of the Engine Finders network."
+      },
+      {
+        "title": "Compare E34 M5 Engine Replacement Companies",
+        "text": "see prices, warranty terms and supply & fit options side-by-side before you commit."
+      },
+      {
+        "title": "UK Engine Replacement Services for E34 M5",
+        "text": "covering both S38B36 and S38B38 engines, with supply-only or full supply & fit available nationwide."
+      }
+    ],
+    "finalCta": "Find the best BMW M5 E34 engine replacement UK drivers rely on. Compare real prices from trusted specialists on EnginesMarket today and keep your classic on the road.",
     "ctaButton": {
-      "label": "",
+      "label": "Compare BMW M5 E34 Engine Prices on EnginesMarket →",
       "href": "#",
-      "note": ""
+      "note": "[PLACEHOLDER — confirm EnginesMarket URL structure]"
     }
   }
 }

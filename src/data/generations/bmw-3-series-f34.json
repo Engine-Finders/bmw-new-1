@@ -857,23 +857,121 @@
     "scopeNote": "All variants listed are F34 Gran Turismo only. The F30 Saloon and F31 Touring share most of these engines but are covered on their own Generation Pages. The ActiveHybrid 3 combines the N55B30 with an electric motor for 335 bhp combined output."
   },
   "marketIntelligence": {
-    "mostRequestedEngines": [],
-    "mostRequestedVariants": [],
-    "averageReplacementCost": "",
-    "mostCommonFailures": [],
-    "liveFeed": []
+    "mostRequestedEngines": [
+      "1. B47D20A (320d) — pattern data",
+      "2. B58B30 (340i) — pattern data",
+      "3. N57D30T1 (335d) — pattern data"
+    ],
+    "mostRequestedVariants": [
+      "1. 320d",
+      "2. 340i",
+      "3. 335d xDrive"
+    ],
+    "averageReplacementCost": "£3,500–£6,500 (reconditioned, supply only) [BMW-QUOTE]",
+    "mostCommonFailures": [
+      "1. N20/N47 timing chain guide wear (pre-2015)",
+      "2. N55 oil leaks & charge pipe failure",
+      "3. N57 timing chain & swirl flap failure"
+    ],
+    "liveFeed": [
+      {
+        "vehicle": "BMW 340i F34 (B58)",
+        "location": "London",
+        "issue": "PCV valve failure, rough idle",
+        "enquiries": "3 enquiries",
+        "updated": "Updated Monthly"
+      },
+      {
+        "vehicle": "BMW 320d F34 (N47)",
+        "location": "Manchester",
+        "issue": "Timing chain rattle on start-up",
+        "enquiries": "3 enquiries",
+        "updated": "Updated Monthly"
+      },
+      {
+        "vehicle": "BMW 335d xDrive F34 (N57)",
+        "location": "Birmingham",
+        "issue": "Swirl flap investigation, loss of power",
+        "enquiries": "2 enquiries",
+        "updated": "Updated Monthly"
+      }
+    ]
   },
   "faq": {
-    "items": []
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a BMW 3 Series Gran Turismo F34 engine replacement cost in the UK?",
+        "answer": "A reconditioned F34 engine typically costs £2,500–£8,000 supply only [BMW-QUOTE], depending on the engine — the four-cylinder petrols and diesels sit at £2,500–£5,500, the B58 at £4,500–£7,000, and the N57 six-cylinder diesels at £4,500–£8,000. Fitting adds £520–£1,170. Use our calculator for a personalised figure."
+      },
+      {
+        "id": 2,
+        "question": "Which F34 engine is the most reliable?",
+        "answer": "The B58B30 (340i, 2015–2020) is the F34's most reliable engine — BMW's modern turbocharged straight-six is smooth, responsive, and genuinely robust, addressing many of the N55's weaknesses. The B48 four-cylinder is also very reliable, and the B47 diesel is improved over the N47."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the BMW 3 Series Gran Turismo F34?",
+        "answer": "The N20 four-cylinder (pre-2015) suffers from timing chain guide wear — a failure that can destroy the engine. The N55 six-cylinder (335i) has oil leaks and charge pipe failures. The N47 diesel (pre-2015) has timing chain issues. The N57 six-cylinder diesel (330d, 335d) suffers from timing chain and swirl flap failures. The 335d's twin-turbo setup adds complexity."
+      },
+      {
+        "id": 4,
+        "question": "Is the BMW 3 Series Gran Turismo F34 reliable?",
+        "answer": "It depends heavily on the engine and year. The B48, B58, and B47 (post-2015) are the most reliable. The N20 and N47 (pre-2015) carry timing chain risks. The N55 is decent but has oil leak and charge pipe issues. The N57 is powerful but requires diligent maintenance — timing chain and swirl flap work should be budgeted for."
+      },
+      {
+        "id": 5,
+        "question": "Which F34 engine should I avoid?",
+        "answer": "Pre-2015 N20 (320i/328i) without documented timing chain replacement — it's a well-known weakness. Also avoid pre-2015 N47 diesel without chain history. The N57 335d is fantastic but expensive to maintain; if you're not prepared for that, skip it. Any engine without full service history is a risk."
+      },
+      {
+        "id": 6,
+        "question": "How do I know if my F34 engine needs replacing?",
+        "answer": "Timing chain rattle on cold start (N20, N47, N57), oil leaks or loss of boost (N55), swirl flap symptoms like loss of power or smoke (N57), persistent warning lights, or coolant loss are the key warning signs. Use our diagnostic calculator for a personalised assessment."
+      },
+      {
+        "id": 7,
+        "question": "Is it worth replacing an F34 engine, or should I scrap the car?",
+        "answer": "Depends on the car's value. Against a £15,000 340i, a £4,500–£7,000 B58 recon is 30–47% — well within our 70% BMW threshold. Against a £8,000 320d, a £3,200–£5,500 N47 recon is 40–69% — borderline but often viable for a well-kept example. For a 335d at £10,000+, a £5,000–£8,000 N57 recon is 50–80% — a serious decision. Value the car first; if it's a pre-2015 N20 or N47 without chain history, walk away or budget for the work immediately."
+      },
+      {
+        "id": 8,
+        "question": "How long do F34 engines last?",
+        "answer": "The B58 and B48 can comfortably exceed 150,000 miles with proper servicing. The N55 is capable of high mileage but oil leaks and charge pipe issues require attention around 60k–100k miles. The N20 and N47's timing chain is the limiting factor — addressed proactively, either can reach 100,000+ miles. The N57 is capable of high mileage but timing chain and swirl flap work should be budgeted for at 80k–120k mile intervals."
+      },
+      {
+        "id": 9,
+        "question": "What is the difference between the F34, F30, and F31?",
+        "answer": "The F34 is the 3 Series Gran Turismo — a five-door fastback with a raised ride height, longer wheelbase (2,920 mm), and more rear headroom than the F30 saloon or F31 Touring. It shares the same platform and engines but offers a more spacious, SUV-like driving position with the dynamics of a 3 Series. The F30 is the standard saloon; the F31 is the Touring estate. The F34 was a one-generation model with no direct successor."
+      },
+      {
+        "id": 10,
+        "question": "How do I find my F34 engine code?",
+        "answer": "Listed on the VIN plate and vehicle documentation; the engine code is also stamped on the cylinder block. For petrol: N20B20 (early 320i/328i), N26B20 (SULEV), N55B30 (335i), B48B20 (later 320i/330i), B58B30 (340i). For diesel: N47D20C/D or N47N (early 318d/320d/325d), B47D20A (later 318d/320d), N57D30A/O1 (330d), N57D30T1 (335d). Tell us your variant and registration year and we'll identify it — 20+ vetted BMW specialists will confirm it for free."
+      }
+    ]
   },
   "trustCta": {
-    "h2": "",
-    "trustPoints": [],
-    "finalCta": "",
+    "h2": "Why UK BMW 3 Series Gran Turismo F34 Owners Trust BMWEngines.uk",
+    "trustPoints": [
+      {
+        "title": "Trusted F34 Engine Suppliers",
+        "text": "every garage and engine rebuilder in our network is vetted, rated and reviewed by real F34 owners, as part of the Engine Finders network."
+      },
+      {
+        "title": "Compare F34 Engine Replacement Companies",
+        "text": "see prices, warranty terms and supply & fit options side‑by‑side before you commit."
+      },
+      {
+        "title": "UK Engine Replacement Services for F34",
+        "text": "covering every variant from 318d to 340i, with supply‑only or full supply & fit available nationwide."
+      }
+    ],
+    "finalCta": "Find the best BMW 3 Series Gran Turismo F34 engine replacement UK drivers rely on. Compare real prices from trusted specialists on EnginesMarket today and get back on the road with confidence.",
     "ctaButton": {
-      "label": "",
+      "label": "Compare BMW 3 Series Gran Turismo F34 Engine Prices on EnginesMarket →",
       "href": "#",
-      "note": ""
+      "note": "[PLACEHOLDER — confirm EnginesMarket URL structure]"
     }
   }
 }

@@ -606,44 +606,43 @@
       {
         "label": "Regional Demand",
         "value": "South East (22%), South West (16%), East Anglia (12%)【PATTERN DATA】"
-      },
-      {
-        "label": "SECTION 8 — FAQ",
-        "value": "1. How much does a BMW 7 Series 728i engine replacement cost in the UK?"
-      },
-      {
-        "label": "A reconditioned 728i engine typically costs £3,200–£6,500 supply only depending on the generation, with the E38's M52B28 sitting at £3,500–£6,500. Fitting adds £1,000–£1,800 at independent specialist rates. Use our calculator for a figure specific to your car.",
-        "value": "2. Is the BMW 728i engine reliable?"
-      },
-      {
-        "label": "It depends on which generation you're asking about. The M30 'big six' in the E23 and E32 is one of BMW's most durable engines — 200,000+ miles is routine with proper maintenance. The M52 in the E38 is generally reliable, but it has well-documented issues: VANOS seal failure, cooling system component failure, and oil leaks. Early M52s also suffered from Nikasil cylinder liner issues. Across all, regular maintenance is essential.",
-        "value": "3. What are the common problems with the BMW 728i?"
-      },
-      {
-        "label": "M30 head gasket failure and oil leaks (E23/E32), M52 VANOS failure (E38), cooling system failures (all generations), and M52 Nikasil cylinder liner issues (early E38). See the Era Map above for generation-specific advice.",
-        "value": "4. Is it worth replacing a BMW 728i engine, or should I scrap the car?"
-      },
-      {
-        "label": "Depends on vehicle value. Against a well-maintained E38 728i (values £4,000–£12,000+ depending on condition), a £4,000–£5,000 reconditioned engine is 30–60% of the vehicle's value — often worth it for a solid example. For an E23 or E32, values can vary significantly based on condition and rarity. The BMW scrap threshold of 70% means evaluating the whole vehicle and its condition before committing.",
-        "value": "5. How do I find my BMW 728i engine code?"
-      },
-      {
-        "label": "The engine code is stamped on the cylinder block. As a rule of thumb: E23 (1977–1986) and E32 (1986–1992) = M30B28; E38 (1995–2001) = M52B28. Check your VIN plate and vehicle documentation for confirmation.",
-        "value": "6. Can I repair the M52 VANOS, or does it require engine replacement?"
-      },
-      {
-        "label": "M52 VANOS failure is always repairable without replacing the engine. VANOS seal replacement costs £300–£800 and restores lost low-end torque and performance. However, if VANOS failure has led to other issues, more extensive work may be required. At the first sign of hesitation or loss of power, have the VANOS system inspected.",
-        "value": "Disclaimer: All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty — always confirm terms with your chosen supplier."
-      },
-      {
-        "label": "SECTION 9, META AND SCHEMA",
-        "value": "PART 2 — SECTION 9 + META + SCHEMA"
       }
     ]
   },
   "faq": {
-    "items": [],
-    "disclaimer": ""
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a BMW 7 Series 728i engine replacement cost in the UK?",
+        "answer": "A reconditioned 728i engine typically costs £3,200–£6,500 supply only depending on the generation, with the E38's M52B28 sitting at £3,500–£6,500. Fitting adds £1,000–£1,800 at independent specialist rates. Use our calculator for a figure specific to your car."
+      },
+      {
+        "id": 2,
+        "question": "Is the BMW 728i engine reliable?",
+        "answer": "It depends on which generation you're asking about. The M30 'big six' in the E23 and E32 is one of BMW's most durable engines — 200,000+ miles is routine with proper maintenance. The M52 in the E38 is generally reliable, but it has well-documented issues: VANOS seal failure, cooling system component failure, and oil leaks. Early M52s also suffered from Nikasil cylinder liner issues. Across all, regular maintenance is essential."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the BMW 728i?",
+        "answer": "M30 head gasket failure and oil leaks (E23/E32), M52 VANOS failure (E38), cooling system failures (all generations), and M52 Nikasil cylinder liner issues (early E38). See the Era Map above for generation-specific advice."
+      },
+      {
+        "id": 4,
+        "question": "Is it worth replacing a BMW 728i engine, or should I scrap the car?",
+        "answer": "Depends on vehicle value. Against a well-maintained E38 728i (values £4,000–£12,000+ depending on condition), a £4,000–£5,000 reconditioned engine is 30–60% of the vehicle's value — often worth it for a solid example. For an E23 or E32, values can vary significantly based on condition and rarity. The BMW scrap threshold of 70% means evaluating the whole vehicle and its condition before committing."
+      },
+      {
+        "id": 5,
+        "question": "How do I find my BMW 728i engine code?",
+        "answer": "The engine code is stamped on the cylinder block. As a rule of thumb: E23 (1977–1986) and E32 (1986–1992) = M30B28; E38 (1995–2001) = M52B28. Check your VIN plate and vehicle documentation for confirmation."
+      },
+      {
+        "id": 6,
+        "question": "Can I repair the M52 VANOS, or does it require engine replacement?",
+        "answer": "M52 VANOS failure is always repairable without replacing the engine. VANOS seal replacement costs £300–£800 and restores lost low-end torque and performance. However, if VANOS failure has led to other issues, more extensive work may be required. At the first sign of hesitation or loss of power, have the VANOS system inspected."
+      }
+    ],
+    "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty — always confirm terms with your chosen supplier."
   },
   "trustCta": {
     "h2": "Why UK BMW 7 Series 728i Owners Trust BMWEngines.uk",

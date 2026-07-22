@@ -421,68 +421,43 @@
       {
         "label": "Regional Demand",
         "value": "South East (22%), London (16%), North West (12%) — performance car strongholds [PATTERN DATA]"
-      },
-      {
-        "label": "SECTION 8 — FAQ",
-        "value": "1. How much does a BMW 3 Series 335i engine replacement cost in the UK?"
-      },
-      {
-        "label": "A reconditioned 335i engine (N54 or N55) typically costs £2,500–£5,500 supply only depending on engine variant and condition. Fitting adds £1,000–£1,800. A full engine replacement with labour can cost £9,000–£13,000 for premium vehicles. Use our calculator for a figure specific to your vehicle.",
-        "value": "2. Is the BMW 3 Series 335i engine reliable?"
-      },
-      {
-        "label": "It depends on which engine you have. The N54 (2006–2010) is a legendary engine with incredible tuning potential, but it has well‑documented weaknesses: HPFP failure, fuel injector failure, and wastegate rattle. The N55 (2010–2015) is more reliable, with a single twin‑scroll turbo and improved HPFP design, but still suffers from oil leaks and water pump failures. Both engines demand strict maintenance.",
-        "value": "3. What are the common problems with the BMW 3 Series 335i?"
-      },
-      {
-        "label": "On the N54, the most common issues are HPFP failure, fuel injector failure, and wastegate rattle/turbocharger wear. On both N54 and N55, oil leaks (valve cover gasket, oil filter housing gasket) and electric water pump failure are common. The N55's valve cover is prone to warping, requiring full replacement.",
-        "value": "4. Is it worth replacing a 335i engine, or should I scrap the car?"
-      },
-      {
-        "label": "Depends on vehicle value and condition. Against a tidy £5,000–£15,000 335i, a £2,800–£5,500 recon is 20–55% of the car's value — often worth it on well‑maintained examples. If the engine has suffered catastrophic failure (e.g., snapped timing chain, seized turbos), a full engine replacement may be necessary. Get a full diagnostic assessment before committing.",
-        "value": "5. How do I find my 3 Series's engine code?"
-      },
-      {
-        "label": "The E90/E91/E92/E93 (2006–2010) uses the N54B30 twin‑turbo — look for two turbos under the bonnet. The E90 LCI (2010–2013) and F30/F31 (2011–2015) use the N55B30 twin‑scroll single turbo — look for one turbo with a twin‑scroll housing. The engine code is stamped on the engine block and listed on your V5C.",
-        "value": "6. Can I repair a 335i engine issue, or does it need replacement?"
-      },
-      {
-        "label": "Most issues — HPFP failure, injector failure, oil leaks, water pump failure — are repairable. On the N54, if turbochargers fail, they can be replaced individually. However, if the engine suffers major internal failure (crankshaft, bearings, severe overheating), a full engine replacement is usually more cost‑effective than a rebuild.",
-        "value": "Disclaimer: All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12‑month unlimited‑mileage warranty — always confirm terms with your chosen supplier."
-      },
-      {
-        "label": "Section 9 (Trust + Final CTA), meta tags, Open Graph, Twitter Card, and complete JSON‑LD schema.",
-        "value": "* Brand: BMW"
-      },
-      {
-        "label": "* Domain: bmwengine.uk",
-        "value": "* Data tag: BMW‑"
-      },
-      {
-        "label": "* Specialist count: 20+",
-        "value": "* Scrap threshold: 70%"
-      },
-      {
-        "label": "* CTA Mode: Assertive (Priority H)",
-        "value": "* Era Map rows: 3 (N54B30 E90, N55B30 E90 LCI, N55B30 F30)"
-      },
-      {
-        "label": "* Engine codes: N54B30, N55B30",
-        "value": "* Service schema price range: £1,500 (lowest used) to £5,500 (highest rebuilt) — spans full Era Map history"
-      },
-      {
-        "label": "* Model Page needed: BMW 3 Series E90/F30 Generation Pages",
-        "value": "* Generation Pages needed: BMW 3 Series E90 and F30 Generation Pages (for cost inheritance)"
-      },
-      {
-        "label": "Tab 3",
-        "value": "BMW 3 SERIES 335d — VARIANT PAGE (COMPLETE)"
       }
     ]
   },
   "faq": {
-    "items": [],
-    "disclaimer": ""
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a BMW 3 Series 335i engine replacement cost in the UK?",
+        "answer": "A reconditioned 335i engine (N54 or N55) typically costs £2,500–£5,500 supply only depending on engine variant and condition. Fitting adds £1,000–£1,800. A full engine replacement with labour can cost £9,000–£13,000 for premium vehicles. Use our calculator for a figure specific to your vehicle."
+      },
+      {
+        "id": 2,
+        "question": "Is the BMW 3 Series 335i engine reliable?",
+        "answer": "It depends on which engine you have. The N54 (2006–2010) is a legendary engine with incredible tuning potential, but it has well‑documented weaknesses: HPFP failure, fuel injector failure, and wastegate rattle. The N55 (2010–2015) is more reliable, with a single twin‑scroll turbo and improved HPFP design, but still suffers from oil leaks and water pump failures. Both engines demand strict maintenance."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the BMW 3 Series 335i?",
+        "answer": "On the N54, the most common issues are HPFP failure, fuel injector failure, and wastegate rattle/turbocharger wear. On both N54 and N55, oil leaks (valve cover gasket, oil filter housing gasket) and electric water pump failure are common. The N55's valve cover is prone to warping, requiring full replacement."
+      },
+      {
+        "id": 4,
+        "question": "Is it worth replacing a 335i engine, or should I scrap the car?",
+        "answer": "Depends on vehicle value and condition. Against a tidy £5,000–£15,000 335i, a £2,800–£5,500 recon is 20–55% of the car's value — often worth it on well‑maintained examples. If the engine has suffered catastrophic failure (e.g., snapped timing chain, seized turbos), a full engine replacement may be necessary. Get a full diagnostic assessment before committing."
+      },
+      {
+        "id": 5,
+        "question": "How do I find my 3 Series's engine code?",
+        "answer": "The E90/E91/E92/E93 (2006–2010) uses the N54B30 twin‑turbo — look for two turbos under the bonnet. The E90 LCI (2010–2013) and F30/F31 (2011–2015) use the N55B30 twin‑scroll single turbo — look for one turbo with a twin‑scroll housing. The engine code is stamped on the engine block and listed on your V5C."
+      },
+      {
+        "id": 6,
+        "question": "Can I repair a 335i engine issue, or does it need replacement?",
+        "answer": "Most issues — HPFP failure, injector failure, oil leaks, water pump failure — are repairable. On the N54, if turbochargers fail, they can be replaced individually. However, if the engine suffers major internal failure (crankshaft, bearings, severe overheating), a full engine replacement is usually more cost‑effective than a rebuild."
+      }
+    ],
+    "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12‑month unlimited‑mileage warranty — always confirm terms with your chosen supplier."
   },
   "trustCta": {
     "h2": "",

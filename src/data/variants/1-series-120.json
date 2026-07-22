@@ -518,44 +518,43 @@
       {
         "label": "Regional Demand",
         "value": "South East (22%), London (18%), North West (12%) [PATTERN DATA]"
-      },
-      {
-        "label": "SECTION 8 — FAQ",
-        "value": "1. How much does a BMW 1 Series 120 engine replacement cost in the UK?"
-      },
-      {
-        "label": "A reconditioned BMW 1 Series 120 (B38A15P) engine typically costs £3,500–£5,800 supply only. Fitting adds £650–£1,300 at independent specialist rates. Use our calculator for a figure specific to your vehicle.",
-        "value": "2. Is the BMW 1 Series 120 engine reliable?"
-      },
-      {
-        "label": "The B38 three-cylinder engine has been in production since 2013 and has a mixed reliability reputation. While there are no widespread reports of bottom-end failures, common issues include timing chain tensioner wear, oil consumption, and cooling system component failures. The 48V MHEV system adds complexity. Regular maintenance is essential.",
-        "value": "3. What are the common problems with the BMW 1 Series 120?"
-      },
-      {
-        "label": "Timing chain tensioner wear (cold-start rattle is the early warning), oil consumption (monitor levels weekly), cooling system failures (water pump and thermostat), and 48V MHEV system issues (stop-start failure, battery warnings). All are manageable with preventative maintenance and early detection.",
-        "value": "4. Is it worth replacing a BMW 1 Series 120 engine, or should I scrap the car?"
-      },
-      {
-        "label": "Against a well-maintained 1 Series F70 (values £25,000–£40,000+), a £4,000–£5,000 reconditioned engine is 10–20% of the vehicle's value — worth it. The BMW scrap threshold of 70% means replacement is viable across most 120 values, given the F70's strong residual values.",
-        "value": "5. How do I find my BMW 1 Series 120 engine code?"
-      },
-      {
-        "label": "The engine code B38A15P is listed on the VIN plate and vehicle documentation. The 120 badge was introduced with the fourth-generation F70 1 Series in 2024. If your 1 Series is a 2024+ petrol with the 1.5-litre three-cylinder engine, it is the B38A15P. Tell us your registration and we'll confirm for free.",
-        "value": "6. Can I repair the timing chain, or does it require engine replacement?"
-      },
-      {
-        "label": "Timing chain tensioner wear is repairable without replacing the engine — if caught early. A preventative chain and tensioner replacement costs £800–£1,800. If the chain snaps and valves meet pistons, a full engine replacement (£3,500–£5,800) is usually required. At the first sign of cold-start rattle, book an inspection immediately.",
-        "value": "Disclaimer: All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty — always confirm terms with your chosen supplier."
-      },
-      {
-        "label": "SECTION 9, META AND SCHEMA",
-        "value": "PART 2 — SECTION 9 + META + SCHEMA"
       }
     ]
   },
   "faq": {
-    "items": [],
-    "disclaimer": ""
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a BMW 1 Series 120 engine replacement cost in the UK?",
+        "answer": "A reconditioned BMW 1 Series 120 (B38A15P) engine typically costs £3,500–£5,800 supply only. Fitting adds £650–£1,300 at independent specialist rates. Use our calculator for a figure specific to your vehicle."
+      },
+      {
+        "id": 2,
+        "question": "Is the BMW 1 Series 120 engine reliable?",
+        "answer": "The B38 three-cylinder engine has been in production since 2013 and has a mixed reliability reputation. While there are no widespread reports of bottom-end failures, common issues include timing chain tensioner wear, oil consumption, and cooling system component failures. The 48V MHEV system adds complexity. Regular maintenance is essential."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the BMW 1 Series 120?",
+        "answer": "Timing chain tensioner wear (cold-start rattle is the early warning), oil consumption (monitor levels weekly), cooling system failures (water pump and thermostat), and 48V MHEV system issues (stop-start failure, battery warnings). All are manageable with preventative maintenance and early detection."
+      },
+      {
+        "id": 4,
+        "question": "Is it worth replacing a BMW 1 Series 120 engine, or should I scrap the car?",
+        "answer": "Against a well-maintained 1 Series F70 (values £25,000–£40,000+), a £4,000–£5,000 reconditioned engine is 10–20% of the vehicle's value — worth it. The BMW scrap threshold of 70% means replacement is viable across most 120 values, given the F70's strong residual values."
+      },
+      {
+        "id": 5,
+        "question": "How do I find my BMW 1 Series 120 engine code?",
+        "answer": "The engine code B38A15P is listed on the VIN plate and vehicle documentation. The 120 badge was introduced with the fourth-generation F70 1 Series in 2024. If your 1 Series is a 2024+ petrol with the 1.5-litre three-cylinder engine, it is the B38A15P. Tell us your registration and we'll confirm for free."
+      },
+      {
+        "id": 6,
+        "question": "Can I repair the timing chain, or does it require engine replacement?",
+        "answer": "Timing chain tensioner wear is repairable without replacing the engine — if caught early. A preventative chain and tensioner replacement costs £800–£1,800. If the chain snaps and valves meet pistons, a full engine replacement (£3,500–£5,800) is usually required. At the first sign of cold-start rattle, book an inspection immediately."
+      }
+    ],
+    "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty — always confirm terms with your chosen supplier."
   },
   "trustCta": {
     "h2": "Why UK BMW 1 Series 120 Owners Trust BMWEngines.uk",

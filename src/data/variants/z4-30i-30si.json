@@ -614,64 +614,43 @@
       {
         "label": "Regional Demand",
         "value": "South East (20%), London (14%), South West (12%) — sports car strongholds [PATTERN DATA]"
-      },
-      {
-        "label": "SECTION 8 — FAQ",
-        "value": "1. How much does a BMW Z4 3.0i / 3.0si engine replacement cost in the UK?"
-      },
-      {
-        "label": "A reconditioned Z4 3.0i / 3.0si engine (M54B30 or N52B30) typically costs £1,800–£4,200 supply only depending on which generation and variant you have. Used M54B30/N52B30 engines typically cost £2,000–£2,800 depending on condition and history. Fitting adds £1,000–£1,400. Use our calculator for a figure specific to your vehicle.",
-        "value": "2. Is the BMW Z4 3.0i / 3.0si engine reliable?"
-      },
-      {
-        "label": "It depends on which engine generation your Z4 has. The M54 (2003–2005) is considered \"bomb proof as far as reliability is concerned\", though VANOS seals and the DISA valve are known weak points. The N52 (2006–2008) is \"a real gem\" and \"probably the zenith of BMW straight sixes\", but oil leaks and electric water pump failure are common. The 3.0si is the most desirable variant.",
-        "value": "3. What are the common problems with the BMW Z4 3.0i / 3.0si?"
-      },
-      {
-        "label": "On the M54 (2003–2005), the most common issues are VANOS seal wear (causing loss of low‑end torque) and DISA valve failure (which can cause catastrophic intake damage). On the N52 (2006–2008), common problems include oil leaks (valve cover, oil filter housing, valvetronic motor gasket), electric water pump failure, and a rare but expensive VANOS oil pressure issue.",
-        "value": "4. Is it worth replacing a Z4 3.0i / 3.0si engine, or should I scrap the car?"
-      },
-      {
-        "label": "Depends on vehicle value and condition. Against a tidy £5,000–£12,000 Z4, a £1,800–£4,200 recon is 15–50% of the car's value — often worth it on well‑maintained examples. The E86 Z4 Coupe is becoming a modern classic, so well‑preserved examples may justify the investment. Get a full diagnostic assessment before committing.",
-        "value": "5. How do I find my Z4's engine code?"
-      },
-      {
-        "label": "The E85 Roadster (2003–2005) uses the M54B30 — check for a 3.0‑litre engine with 231 PS. The E85 Roadster or E86 Coupe (2006–2008) with 218 PS is the N52B30 (3.0i). The E85 Roadster or E86 Coupe (2006–2008) with 265 PS is the N52B30 (3.0si). The engine code is stamped on the engine block and listed on your V5C.",
-        "value": "6. Can I repair a Z4 3.0i / 3.0si engine issue, or does it need replacement?"
-      },
-      {
-        "label": "Most issues — M54 VANOS seal wear, DISA valve failure, N52 oil leaks, water pump failure — are repairable. However, if the N52 has suffered the rare VANOS oil pressure issue and the inlet bearing ledge is worn, a new cylinder head assembly (approximately £4,000) or a used engine may be required. If the timing chain has snapped (rare on these engines), a full engine replacement is usually more cost‑effective than a rebuild.",
-        "value": "Disclaimer: All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12‑month unlimited‑mileage warranty — always confirm terms with your chosen supplier."
-      },
-      {
-        "label": "Section 9 (Trust + Final CTA), meta tags, Open Graph, Twitter Card, and complete JSON‑LD schema.",
-        "value": "* Brand: BMW"
-      },
-      {
-        "label": "* Domain: bmwengine.uk",
-        "value": "* Data tag: BMW‑"
-      },
-      {
-        "label": "* Specialist count: 20+",
-        "value": "* Scrap threshold: 70%"
-      },
-      {
-        "label": "* CTA Mode: Consultative (Priority M)",
-        "value": "* Era Map rows: 3 (M54B30 2003-2005, N52B30 3.0i 2006-2008, N52B30 3.0si 2006-2008)"
-      },
-      {
-        "label": "* Engine codes: M54B30, N52B30",
-        "value": "* Service schema price range: £1,200 (lowest used) to £4,200 (highest rebuilt) — spans full Era Map history"
-      },
-      {
-        "label": "* Model Page needed: BMW Z4 Generation Pages (E85, E86)",
-        "value": "* Generation Pages needed: BMW Z4 Generation Pages (for cost inheritance)"
       }
     ]
   },
   "faq": {
-    "items": [],
-    "disclaimer": ""
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a BMW Z4 3.0i / 3.0si engine replacement cost in the UK?",
+        "answer": "A reconditioned Z4 3.0i / 3.0si engine (M54B30 or N52B30) typically costs £1,800–£4,200 supply only depending on which generation and variant you have. Used M54B30/N52B30 engines typically cost £2,000–£2,800 depending on condition and history. Fitting adds £1,000–£1,400. Use our calculator for a figure specific to your vehicle."
+      },
+      {
+        "id": 2,
+        "question": "Is the BMW Z4 3.0i / 3.0si engine reliable?",
+        "answer": "It depends on which engine generation your Z4 has. The M54 (2003–2005) is considered \"bomb proof as far as reliability is concerned\", though VANOS seals and the DISA valve are known weak points. The N52 (2006–2008) is \"a real gem\" and \"probably the zenith of BMW straight sixes\", but oil leaks and electric water pump failure are common. The 3.0si is the most desirable variant."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the BMW Z4 3.0i / 3.0si?",
+        "answer": "On the M54 (2003–2005), the most common issues are VANOS seal wear (causing loss of low‑end torque) and DISA valve failure (which can cause catastrophic intake damage). On the N52 (2006–2008), common problems include oil leaks (valve cover, oil filter housing, valvetronic motor gasket), electric water pump failure, and a rare but expensive VANOS oil pressure issue."
+      },
+      {
+        "id": 4,
+        "question": "Is it worth replacing a Z4 3.0i / 3.0si engine, or should I scrap the car?",
+        "answer": "Depends on vehicle value and condition. Against a tidy £5,000–£12,000 Z4, a £1,800–£4,200 recon is 15–50% of the car's value — often worth it on well‑maintained examples. The E86 Z4 Coupe is becoming a modern classic, so well‑preserved examples may justify the investment. Get a full diagnostic assessment before committing."
+      },
+      {
+        "id": 5,
+        "question": "How do I find my Z4's engine code?",
+        "answer": "The E85 Roadster (2003–2005) uses the M54B30 — check for a 3.0‑litre engine with 231 PS. The E85 Roadster or E86 Coupe (2006–2008) with 218 PS is the N52B30 (3.0i). The E85 Roadster or E86 Coupe (2006–2008) with 265 PS is the N52B30 (3.0si). The engine code is stamped on the engine block and listed on your V5C."
+      },
+      {
+        "id": 6,
+        "question": "Can I repair a Z4 3.0i / 3.0si engine issue, or does it need replacement?",
+        "answer": "Most issues — M54 VANOS seal wear, DISA valve failure, N52 oil leaks, water pump failure — are repairable. However, if the N52 has suffered the rare VANOS oil pressure issue and the inlet bearing ledge is worn, a new cylinder head assembly (approximately £4,000) or a used engine may be required. If the timing chain has snapped (rare on these engines), a full engine replacement is usually more cost‑effective than a rebuild."
+      }
+    ],
+    "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12‑month unlimited‑mileage warranty — always confirm terms with your chosen supplier."
   },
   "trustCta": {
     "h2": "Why UK BMW Z4 3.0i / 3.0si Owners Trust BMWEngines.uk",

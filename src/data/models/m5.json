@@ -373,272 +373,98 @@
       {
         "metric": "Overall Rating",
         "value": "★★★★☆ 4.1/5"
-      },
-      {
-        "metric": "SECTION 4 — GENERATIONS — <GenerationsGrid>",
-        "value": "H2: BMW M5 Generations — Find Your Vehicle"
-      },
-      {
-        "metric": "Sub-headline: Seven generations, 40 years, and one nameplate that defined the super saloon segment. The right M5 depends on your budget, your engine preference, and your tolerance for maintenance.",
-        "value": "First Generation — E28 M5 (1984–1988)"
-      },
-      {
-        "metric": "BMW M5 E28",
-        "value": "1984–1988 • M88/3 or S38B35 3.5L straight-six • 286 bhp"
-      },
-      {
-        "metric": "★★★★☆",
-        "value": "Our Verdict: The original M5 — hand-built and the fastest production saloon of its era. The M88/3 engine was derived from the BMW M1 supercar, revving to 7,000 rpm with individual throttle bodies. Now a genuine classic where engine work is restoration, not repair. The E28 M5 is the ultimate M5 investment."
-      },
-      {
-        "metric": "Explore the E28 M5 →",
-        "value": "Second Generation — E34 M5 (1988–1995)"
-      },
-      {
-        "metric": "BMW M5 E34",
-        "value": "1988–1995 • S38B36 (3.6L) / S38B38 (3.8L) straight-six • 315–340 bhp"
-      },
-      {
-        "metric": "★★★★☆",
-        "value": "Our Verdict: The second-generation M5 — available as a saloon and, for the first time, a Touring estate. The S38 straight-six is a masterpiece of 1990s engineering, with individual throttle bodies and a 7,000 rpm redline. Cooling systems and VANOS are the defining caveats. A rising classic."
-      },
-      {
-        "metric": "Explore the E34 M5 →",
-        "value": "Third Generation — E39 M5 (1998–2003)"
-      },
-      {
-        "metric": "BMW M5 E39 🔥 Most Enquired — classic era [BMW-VERIFIED]",
-        "value": "1998–2003 • S62B50 4.9L V8 • 400 bhp / 369 lb-ft"
-      },
-      {
-        "metric": "★★★★★",
-        "value": "Our Verdict: The M5 at its peak — often called the greatest M5 ever made. The S62 was BMW's first V8 M engine, producing 400 bhp with individual throttle bodies and Double VANOS. The E39 M5 is a modern classic — buy the best you can afford."
-      },
-      {
-        "metric": "Explore the E39 M5 →",
-        "value": "Fourth Generation — E60/E61 M5 (2004–2010)"
-      },
-      {
-        "metric": "BMW M5 E60/E61 🔥 Most Enquired — S85 drives volume [BMW-VERIFIED]",
-        "value": "2004–2010 • S85B50 5.0L V10 • 507 bhp / 384 lb-ft"
-      },
-      {
-        "metric": "★★★★☆",
-        "value": "Our Verdict: The only V10 M5 — the S85 was inspired by BMW's Formula One program, revving to 8,250 rpm. The rod bearing failure is the defining risk: budget £3,000–£5,000 for preventative replacement. The SMG III gearbox is also a weak point. A masterpiece — but a costly one."
-      },
-      {
-        "metric": "Explore the E60 M5 →",
-        "value": "Fifth Generation — F10 M5 (2011–2016)"
-      },
-      {
-        "metric": "BMW M5 F10",
-        "value": "2011–2016 • S63B44 4.4L twin-turbo V8 • 560–600 bhp"
-      },
-      {
-        "metric": "★★★★☆",
-        "value": "Our Verdict: The first turbocharged M5 — and the last rear-wheel-drive M5. The S63 twin-turbo V8 produces 560 bhp (standard) to 600 bhp (30th Anniversary). The engine is proven but carries oil leak and turbo issues. The F10 is the M5 for the modern era — powerful, refined, and depreciated."
-      },
-      {
-        "metric": "Explore the F10 M5 →",
-        "value": "Sixth Generation — F90 M5 (2017–2023)"
-      },
-      {
-        "metric": "BMW M5 F90 🔥 Most Enquired — S63 drives volume [BMW-VERIFIED]",
-        "value": "2017–2023 • S63B44 4.4L twin-turbo V8 • 600–635 bhp"
-      },
-      {
-        "metric": "★★★★★",
-        "value": "Our Verdict: The first all-wheel-drive M5 — and the most capable. The S63 produces 600 bhp (standard), 625 bhp (Competition), and 635 bhp (CS). The M xDrive system can be deactivated for pure rear-wheel-drive fun. The F90 is the M5 for the modern era — buy it with confidence."
-      },
-      {
-        "metric": "Explore the F90 M5 →",
-        "value": "Seventh Generation — G90/G99 M5 (2024–present)"
-      },
-      {
-        "metric": "BMW M5 G90/G99",
-        "value": "2024–present • S68B44 4.4L twin-turbo V8 PHEV • 727 bhp / 738 lb-ft"
-      },
-      {
-        "metric": "★★★★★",
-        "value": "Our Verdict: The seventh-generation M5 — and the first plug-in hybrid. The S68 combines a 585 PS 4.4L V8 with a 197 PS electric motor for 727 PS and 1,000 Nm of torque. Available as a saloon (G90) and a Touring (G99). Too new for volume reliability data, but the S63 lineage is proven."
-      },
-      {
-        "metric": "Explore the G90 M5 →",
-        "value": "The Engine Choice — The Line That Matters Most"
-      },
-      {
-        "metric": "E39 (S62)",
-        "value": "E60 (S85)"
-      },
-      {
-        "metric": "F10 (S63)",
-        "value": "F90 (S63)"
-      },
-      {
-        "metric": "G90 (S68)",
-        "value": "Power"
-      },
-      {
-        "metric": "400 bhp",
-        "value": "507 bhp"
-      },
-      {
-        "metric": "560–600 bhp",
-        "value": "600–635 bhp"
-      },
-      {
-        "metric": "727 bhp",
-        "value": "Reliability"
-      },
-      {
-        "metric": "★★★★★",
-        "value": "★★★★☆ (with rod bearings done)"
-      },
-      {
-        "metric": "★★★★☆",
-        "value": "★★★★★"
-      },
-      {
-        "metric": "★★★★☆ (provisional)",
-        "value": "Defining risk"
-      },
-      {
-        "metric": "None significant",
-        "value": "Rod bearings, SMG pump"
-      },
-      {
-        "metric": "Oil leaks, turbo issues",
-        "value": "None significant"
-      },
-      {
-        "metric": "Too new for data",
-        "value": "Recon cost"
-      },
-      {
-        "metric": "£5,000–£8,000",
-        "value": "£8,000–£14,000+"
-      },
-      {
-        "metric": "£7,000–£12,000+",
-        "value": "£8,000–£12,000+"
-      },
-      {
-        "metric": "£10,000–£16,000+",
-        "value": "Our position"
-      },
-      {
-        "metric": "The classic keeper",
-        "value": "The V10 masterpiece — budget for bearings"
-      },
-      {
-        "metric": "The turbo pioneer",
-        "value": "The one to buy"
-      },
-      {
-        "metric": "The future — buy with confidence",
-        "value": "Read the full comparison: BMW M5 F10 vs F90 →"
-      },
-      {
-        "metric": "The Defining Risks — Generation by Generation",
-        "value": "Correction applied (internal): Each M5 generation has its own defining engine risk:"
-      },
-      {
-        "metric": "Generation",
-        "value": "Engine"
-      },
-      {
-        "metric": "Defining Risk",
-        "value": "Prevention Cost"
-      },
-      {
-        "metric": "Recon Cost",
-        "value": "E28"
-      },
-      {
-        "metric": "M88/3 / S38",
-        "value": "Timing chain guides, cooling system"
-      },
-      {
-        "metric": "£2,000–£3,000",
-        "value": "£5,000–£8,000+"
-      },
-      {
-        "metric": "E34",
-        "value": "S38"
-      },
-      {
-        "metric": "Cooling system, VANOS",
-        "value": "£1,500–£2,500"
-      },
-      {
-        "metric": "£5,000–£8,000",
-        "value": "E39"
-      },
-      {
-        "metric": "S62",
-        "value": "None significant — one of BMW's most reliable engines"
-      },
-      {
-        "metric": "N/A",
-        "value": "£5,000–£8,000"
-      },
-      {
-        "metric": "E60",
-        "value": "S85"
-      },
-      {
-        "metric": "Rod bearings, SMG pump, VANOS",
-        "value": "£3,000–£5,000"
-      },
-      {
-        "metric": "£8,000–£14,000+",
-        "value": "F10"
-      },
-      {
-        "metric": "S63",
-        "value": "Oil leaks (valve covers, turbo lines), HPFP, cooling"
-      },
-      {
-        "metric": "£1,500–£3,000",
-        "value": "£7,000–£12,000+"
-      },
-      {
-        "metric": "F90",
-        "value": "S63"
-      },
-      {
-        "metric": "Oil leaks (valve covers), cooling system",
-        "value": "£1,500–£3,000"
-      },
-      {
-        "metric": "£8,000–£12,000+",
-        "value": "G90"
-      },
-      {
-        "metric": "S68",
-        "value": "Too new for volume data"
-      },
-      {
-        "metric": "TBD",
-        "value": "£10,000–£16,000+"
-      },
-      {
-        "metric": "The Badge Ambiguity — \"M5\" Means Different Things",
-        "value": "Correction applied (internal): The \"M5\" badge covers six different engines across seven generations — the M88/3/S38 straight-six (E28/E34), S62 V8 (E39), S85 V10 (E60), S63 twin-turbo V8 (F10/F90), and S68 PHEV V8 (G90). All share a badge. None share a reliability profile. The engine family — not the badge — determines ownership experience and costs."
       }
     ]
   },
   "generations": {
-    "h2": "",
-    "subHeadline": "",
-    "cards": [],
+    "h2": "BMW M5 Generations — Find Your Vehicle",
+    "subHeadline": "Seven generations, 40 years, and one nameplate that defined the super saloon segment. The right M5 depends on your budget, your engine preference, and your tolerance for maintenance.",
+    "cards": [
+      {
+        "title": "First Generation — E28 M5 (1984–1988)",
+        "badge": "",
+        "meta": "1984–1988 • M88/3 or S38B35 3.5L straight-six • 286 bhp",
+        "rating": "★★★★☆",
+        "verdict": "The original M5 — hand-built and the fastest production saloon of its era. The M88/3 engine was derived from the BMW M1 supercar, revving to 7,000 rpm with individual throttle bodies. Now a genuine classic where engine work is restoration, not repair. The E28 M5 is the ultimate M5 investment.",
+        "cta": {
+          "label": "Explore the E28 M5 →",
+          "href": "#"
+        }
+      },
+      {
+        "title": "Second Generation — E34 M5 (1988–1995)",
+        "badge": "",
+        "meta": "1988–1995 • S38B36 (3.6L) / S38B38 (3.8L) straight-six • 315–340 bhp",
+        "rating": "★★★★☆",
+        "verdict": "The second-generation M5 — available as a saloon and, for the first time, a Touring estate. The S38 straight-six is a masterpiece of 1990s engineering, with individual throttle bodies and a 7,000 rpm redline. Cooling systems and VANOS are the defining caveats. A rising classic.",
+        "cta": {
+          "label": "Explore the E34 M5 →",
+          "href": "#"
+        }
+      },
+      {
+        "title": "Third Generation — E39 M5 (1998–2003)",
+        "badge": "BMW M5 E39 🔥 Most Enquired — classic era [BMW-VERIFIED]",
+        "meta": "1998–2003 • S62B50 4.9L V8 • 400 bhp / 369 lb-ft",
+        "rating": "★★★★★",
+        "verdict": "The M5 at its peak — often called the greatest M5 ever made. The S62 was BMW's first V8 M engine, producing 400 bhp with individual throttle bodies and Double VANOS. The E39 M5 is a modern classic — buy the best you can afford.",
+        "cta": {
+          "label": "Explore the E39 M5 →",
+          "href": "#"
+        }
+      },
+      {
+        "title": "Fourth Generation — E60/E61 M5 (2004–2010)",
+        "badge": "BMW M5 E60/E61 🔥 Most Enquired — S85 drives volume [BMW-VERIFIED]",
+        "meta": "2004–2010 • S85B50 5.0L V10 • 507 bhp / 384 lb-ft",
+        "rating": "★★★★☆",
+        "verdict": "The only V10 M5 — the S85 was inspired by BMW's Formula One program, revving to 8,250 rpm. The rod bearing failure is the defining risk: budget £3,000–£5,000 for preventative replacement. The SMG III gearbox is also a weak point. A masterpiece — but a costly one.",
+        "cta": {
+          "label": "Explore the E60 M5 →",
+          "href": "#"
+        }
+      },
+      {
+        "title": "Fifth Generation — F10 M5 (2011–2016)",
+        "badge": "",
+        "meta": "2011–2016 • S63B44 4.4L twin-turbo V8 • 560–600 bhp",
+        "rating": "★★★★☆",
+        "verdict": "The first turbocharged M5 — and the last rear-wheel-drive M5. The S63 twin-turbo V8 produces 560 bhp (standard) to 600 bhp (30th Anniversary). The engine is proven but carries oil leak and turbo issues. The F10 is the M5 for the modern era — powerful, refined, and depreciated.",
+        "cta": {
+          "label": "Explore the F10 M5 →",
+          "href": "#"
+        }
+      },
+      {
+        "title": "Sixth Generation — F90 M5 (2017–2023)",
+        "badge": "BMW M5 F90 🔥 Most Enquired — S63 drives volume [BMW-VERIFIED]",
+        "meta": "2017–2023 • S63B44 4.4L twin-turbo V8 • 600–635 bhp",
+        "rating": "★★★★★",
+        "verdict": "The first all-wheel-drive M5 — and the most capable. The S63 produces 600 bhp (standard), 625 bhp (Competition), and 635 bhp (CS). The M xDrive system can be deactivated for pure rear-wheel-drive fun. The F90 is the M5 for the modern era — buy it with confidence.",
+        "cta": {
+          "label": "Explore the F90 M5 →",
+          "href": "#"
+        }
+      },
+      {
+        "title": "Seventh Generation — G90/G99 M5 (2024–present)",
+        "badge": "",
+        "meta": "2024–present • S68B44 4.4L twin-turbo V8 PHEV • 727 bhp / 738 lb-ft",
+        "rating": "★★★★★",
+        "verdict": "The seventh-generation M5 — and the first plug-in hybrid. The S68 combines a 585 PS 4.4L V8 with a 197 PS electric motor for 727 PS and 1,000 Nm of torque. Available as a saloon (G90) and a Touring (G99). Too new for volume reliability data, but the S63 lineage is proven.",
+        "cta": {
+          "label": "Explore the G90 M5 →",
+          "href": "#"
+        }
+      }
+    ],
     "rangeTable": {
       "title": "",
       "columns": [],
       "rows": []
     },
     "comparisonLink": {
-      "label": "",
+      "label": "Read the full comparison: BMW M5 F10 vs F90 →",
       "href": "#"
     }
   },

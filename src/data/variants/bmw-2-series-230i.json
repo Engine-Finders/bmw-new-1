@@ -1,26 +1,188 @@
 {
   "meta": {
-    "slug": "bmw-2-series-230i",
-    "title": "BMW 2 Series 230i Engine Replacement — Compare Prices & Get Quotes",
-    "titleCharCount": 66,
-    "description": "",
-    "descriptionCharCount": 0,
-    "canonical": "",
+    "slug": "2-series-230i",
+    "title": "230i Engine Replacement Cost UK — Compare Quotes",
+    "titleCharCount": 57,
+    "description": "The B48 2.0L turbo — real UK costs, common cooling and PCV issues, and honest reliability data. Get free quotes from 20+ vetted BMW specialists today.",
+    "descriptionCharCount": 160,
+    "canonical": "https://bmwengine.uk/2-series/230i/",
     "openGraph": {
-      "title": "",
-      "description": "",
-      "type": "",
-      "url": "",
-      "image": "",
-      "siteName": ""
+      "title": "230i Engine Replacement Cost UK — Compare Quotes",
+      "description": "The B48 2.0L turbo — real UK costs, common cooling and PCV issues, and honest reliability data. Get free quotes from 20+ vetted BMW specialists today.",
+      "type": "website",
+      "url": "https://bmwengine.uk/2-series/230i/",
+      "image": "https://bmwengine.uk/images/bmw/hero/2-series-230i.jpg",
+      "siteName": "BMWEngines.uk"
     },
     "twitter": {
-      "card": "",
-      "title": "",
-      "description": "",
-      "image": ""
+      "card": "summary_large_image",
+      "title": "230i Engine Replacement Cost UK — Compare Quotes",
+      "description": "The B48 2.0L turbo — real UK costs, common cooling and PCV issues, and honest reliability data.",
+      "image": "https://bmwengine.uk/images/bmw/hero/2-series-230i.jpg"
     },
-    "jsonLd": {}
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://bmwengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "2 Series",
+              "item": "https://bmwengine.uk/2-series/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "230i",
+              "item": "https://bmwengine.uk/2-series/230i/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "BMW 2 Series 230i Engine Era Map",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "F22/F23 230i (B48B20, 2014–2020)",
+              "url": "https://bmwengine.uk/2-series/230i/#f22"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "G42 230i (B48B20, 2021–present)",
+              "url": "https://bmwengine.uk/2-series/230i/#g42"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "BMW 2 Series 230i Engine Codes",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "B48B20 2.0L Turbo Petrol",
+              "url": "https://bmwengine.uk/engines/b48b20/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does a BMW 2 Series 230i engine replacement cost in the UK?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A reconditioned BMW 2 Series 230i engine (B48B20) typically costs £3,800–£6,500 supply only. Fitting adds £1,000–£1,500. These are specialist-only replacements — the B48 requires BMW specialist expertise. A water pump replacement costs £400–£1,000."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the BMW 2 Series 230i reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes — the B48 is a robust and well-developed engine that's significantly improved over the N20. The timing chain is now front-mounted, virtually eliminating the N20's chain issues. Cooling system leaks (water pump, expansion tank) and PCV valve/oil separator issues are the main concerns. Regular oil changes (8,000–10,000 miles) are essential."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What are the common problems with the BMW 2 Series 230i?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Cooling system leaks — water pump and expansion tank failure (£400–£1,000), PCV valve/oil separator failure (whistling noise, oil consumption, £400–£800), and oil filter housing gasket leaks (£500–£1,200). The B48 is otherwise exceptionally robust."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is it worth replacing a BMW 2 Series 230i engine, or should I scrap the car?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "2 Series 230i values range from £12,000–£35,000 depending on generation, condition and mileage. A £3,800–£6,500 reconditioned engine represents 15–55% of vehicle value — our 70% BMW scrap threshold means careful evaluation is required. For a well-maintained G42 example, replacement is often justified. For an ageing F22 with other issues, assess scrap value first."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I find my BMW 2 Series 230i engine code?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The 230i uses the B48B20 engine code — BMW's 2.0-litre four-cylinder turbo. F22/F23 (2014–2020) is the earlier 245bhp variant; G42 (2021–present) is the 255bhp version. The code is stamped on the engine block; your VIN and vehicle documentation will also confirm the specification."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I repair the cooling system leak, or does it need replacement?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes — water pump and expansion tank replacement (£400–£1,000) is a straightforward repair on the B48. The water pump is known to fail with age. Replacing both the water pump and expansion tank together is recommended — they degrade at similar rates. At the first sign of coolant loss or sweet smell, book an inspection immediately — ignored coolant loss can lead to overheating and serious engine damage."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "BMWEngines.uk",
+          "url": "https://bmwengine.uk/",
+          "logo": "https://bmwengine.uk/images/bmwengines-logo.png",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "BMW 2 Series 230i Engine Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "2800",
+            "highPrice": "12000",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "name": "BMW 2 Series 230i UK Engine Enquiry Data 2025",
+          "description": "Proprietary UK enquiry volumes and demand trends for BMW 2 Series 230i engines, sourced from BMWEngines.uk's specialist marketplace activity for the B48B20.",
+          "creator": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk"
+          },
+          "temporalCoverage": "2025",
+          "spatialCoverage": "United Kingdom"
+        },
+        {
+          "@type": "WebPage",
+          "name": "230i Engine Replacement Cost UK — Compare Quotes",
+          "url": "https://bmwengine.uk/2-series/230i/",
+          "author": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk Specialist Network"
+          },
+          "datePublished": "2026-07-11",
+          "dateModified": "2026-07-11"
+        }
+      ]
+    }
   },
   "hero": {
     "tagPill": "BMW 2 Series 230i • 2014–present • 2.0L Turbo Petrol",

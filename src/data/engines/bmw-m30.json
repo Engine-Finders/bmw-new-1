@@ -1,24 +1,229 @@
 {
   "meta": {
-    "slug": "bmw-m30",
+    "slug": "m30",
     "title": "BMW M30 Engine — Specs, Reliability & Replacement Cost",
-    "description": "",
-    "canonical": "",
+    "description": "The M30 is one of BMW's toughest, most durable engines ever built — backed by 200+ real UK enquiries. Compare quotes from 20+ vetted specialists today.",
+    "canonical": "https://bmwengine.uk/engines/m30/",
     "openGraph": {
-      "title": "",
-      "description": "",
-      "type": "",
-      "url": "",
-      "image": "",
-      "siteName": ""
+      "title": "BMW M30 Engine — Specs, Reliability & Replacement Cost",
+      "description": "The M30 is one of BMW's toughest, most durable engines ever built — backed by 200+ real UK enquiries. Compare quotes from 20+ vetted specialists today.",
+      "type": "website",
+      "url": "https://bmwengine.uk/engines/m30/",
+      "image": "https://bmwengine.uk/images/bmw/engines/m30.jpg",
+      "siteName": "bmwengine.uk"
     },
     "twitter": {
-      "card": "",
-      "title": "",
-      "description": "",
-      "image": ""
+      "card": "summary_large_image",
+      "title": "BMW M30 Engine — Specs, Reliability & Replacement Cost",
+      "description": "The M30 is one of BMW's toughest, most durable engines ever built — backed by 200+ real UK enquiries. Compare quotes from 20+ vetted specialists today.",
+      "image": "https://bmwengine.uk/images/bmw/engines/m30.jpg"
     },
-    "jsonLd": {}
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://bmwengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Engines",
+              "item": "https://bmwengine.uk/engines/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "M30",
+              "item": "https://bmwengine.uk/engines/m30/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "BMW models fitted with the M30",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "BMW 5 Series E12 525/528/530i",
+              "url": "https://bmwengine.uk/models/5-series/e12/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "BMW 5 Series E28 525e/528i/530i/535i",
+              "url": "https://bmwengine.uk/models/5-series/e28/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "BMW 5 Series E34 530i/535i (early)",
+              "url": "https://bmwengine.uk/models/5-series/e34/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "BMW 6 Series E24 630CS/633CSi/635CSi",
+              "url": "https://bmwengine.uk/models/6-series/e24/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 5,
+              "name": "BMW 7 Series E23 728/730/733i/735i",
+              "url": "https://bmwengine.uk/models/7-series/e23/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 6,
+              "name": "BMW 7 Series E32 730i/735i (early)",
+              "url": "https://bmwengine.uk/models/7-series/e32/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 7,
+              "name": "BMW 3 Series E21 323i",
+              "url": "https://bmwengine.uk/models/3-series/e21/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 8,
+              "name": "BMW 3 Series E30 325i",
+              "url": "https://bmwengine.uk/models/3-series/e30/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 9,
+              "name": "BMW E9 3.0CS/3.0CSi/3.0CSL",
+              "url": "https://bmwengine.uk/models/e9/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 10,
+              "name": "BMW E3 2500/2800/3.0S/3.0Si",
+              "url": "https://bmwengine.uk/models/e3/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does a BMW M30 engine replacement cost?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A reconditioned M30 typically costs £2,500–£4,000 supply only [EM-QUOTE], varying by displacement and specification. Fitting adds £800–£1,700 depending on model and labour rates."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the BMW M30 a reliable engine?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The M30 earns 4.0★ out of 5 based on UK specialist consensus — it is one of BMW's most durable engines ever produced, with legendary over-engineering and many examples exceeding 250,000 miles. Regular maintenance is key."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the most common BMW M30 failure?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Cylinder head gasket failure and timing chain tensioner wear are the most common issues — the latter especially on higher-mileage units. Cooling system neglect (thermostat and water pump) often contributes to head gasket problems."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which BMW models use the M30?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The M30 powered a vast range of BMW models across nearly three decades — including the E12, E28, and E34 5 Series; E24 6 Series; E23 and E32 7 Series; E3 and E9 coupes; and the E21 and E30 3 Series in various capacities from 2.5L to 3.5L."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How long does the BMW M30 last?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "With proper maintenance, the M30 is capable of 250,000–300,000+ miles — many original examples still running strongly. The iron block and robust internals give it legendary durability. Replace timing components and head gaskets proactively."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "bmwengine.uk",
+          "url": "https://bmwengine.uk/",
+          "logo": "https://bmwengine.uk/images/logo.png",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Product",
+          "name": "BMW M30 Engine",
+          "brand": {
+            "@type": "Brand",
+            "name": "BMW"
+          },
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.0",
+            "bestRating": "5",
+            "ratingCount": "1",
+            "reviewCount": "1"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "BMW M30 Engine Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "bmwengine.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "1000",
+            "highPrice": "7500",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "name": "BMW M30 UK Enquiry & Reliability Data 2025",
+          "description": "Proprietary UK enquiry volumes and reliability scoring data for the BMW M30, sourced from bmwengine.uk's specialist marketplace activity.",
+          "creator": {
+            "@type": "Organization",
+            "name": "bmwengine.uk"
+          },
+          "temporalCoverage": "2025",
+          "spatialCoverage": "United Kingdom"
+        },
+        {
+          "@type": "WebPage",
+          "name": "BMW M30 Engine — Specs, Reliability & Replacement Cost",
+          "url": "https://bmwengine.uk/engines/m30/",
+          "author": {
+            "@type": "Organization",
+            "name": "bmwengine.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "bmwengine.uk Specialist Network"
+          },
+          "datePublished": "2026-07-14",
+          "dateModified": "2026-07-14"
+        }
+      ]
+    }
   },
   "hero": {
     "tagPill": "BMW • M30 • Petrol • 2.5/3.0/3.5L I6 • 1968–1994",

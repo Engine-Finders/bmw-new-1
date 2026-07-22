@@ -577,11 +577,67 @@
     }
   },
   "marketIntelligence": {
-    "items": []
+    "items": [
+      {
+        "label": "Most Common Failure",
+        "value": "Timing chain tensioner wear — the single most important maintenance item on the M10"
+      },
+      {
+        "label": "Average Enquiry Mileage",
+        "value": "80,000–150,000 miles【PATTERN DATA】"
+      },
+      {
+        "label": "Average Replacement Cost",
+        "value": "£2,000–£8,500 reconditioned, supply only depending on variant【BMW-QUOTE】"
+      },
+      {
+        "label": "Most Requested Engine Code",
+        "value": "M10B20 — the 2002 engine【PATTERN DATA】"
+      },
+      {
+        "label": "Peak Enquiry Season",
+        "value": "Spring — classic car season【PATTERN DATA】"
+      },
+      {
+        "label": "Regional Demand",
+        "value": "South East (18%), South West (14%), London (12%)【PATTERN DATA】"
+      }
+    ]
   },
   "faq": {
-    "items": [],
-    "disclaimer": ""
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a BMW 02 Series engine replacement cost in the UK?",
+        "answer": "A reconditioned 02 Series engine typically costs £2,000–£8,500 supply only depending on which variant (1602, 1802, 2002, tii, or Turbo), with used units available from £1,000–£2,500. Fitting adds £1,500–£2,500. Use our calculator for a figure specific to your car."
+      },
+      {
+        "id": 2,
+        "question": "Is the BMW 02 Series engine reliable?",
+        "answer": "Yes — the M10 is one of the most robust engines BMW ever built. It's a cast-iron, SOHC, 8-valve four-cylinder with a timing chain (not belt). The main weaknesses are the timing chain tensioner (replace every 100,000 miles), carburettor/fuel injection tuning, and cooling system corrosion. With good maintenance, M10 engines are capable of well over 200,000 miles."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the BMW 02 Series?",
+        "answer": "Timing chain tensioner wear (the most critical maintenance item), carburettor issues on non-tii models, Kugelfischer injection pump issues on tii and Turbo models, cooling system corrosion, and oil leaks from the valve cover and timing chain cover. The M10 is fundamentally robust."
+      },
+      {
+        "id": 4,
+        "question": "Is it worth replacing a BMW 02 Series engine, or should I scrap the car?",
+        "answer": "02 Series values have risen dramatically — a well-kept 2002 tii is often worth £15,000–£40,000+, and a Turbo can exceed £100,000. A £3,000–£8,500 reconditioned engine is only 10–30% of the vehicle's value — well within the 70% BMW threshold. On a cherished example, replacement is almost always worthwhile. On a tired 1602 with significant rust, evaluate carefully."
+      },
+      {
+        "id": 5,
+        "question": "How do I find my BMW 02 Series engine code?",
+        "answer": "Listed on the engine block, VIN plate and vehicle documentation. 1602 (1966–1975) uses M10B16; 1802 (1971–1975) uses M10B18; 2002 base (1968–1975) uses M10B20; 2002 ti (1968–1971) uses M10B20 (twin-carb); 2002 tii (1971–1975) uses M10B20 (Kugelfischer); 2002 Turbo (1973–1974) uses M10B20T. Tell us your registration date and we'll confirm it for free."
+      },
+      {
+        "id": 6,
+        "question": "Can I repair the M10 timing chain tensioner, or does the engine need replacement?",
+        "answer": "The timing chain tensioner can be replaced — it's a wear item. Replacement costs £200–£500 and is a simple job. If the chain becomes slack and jumps timing, the engine is typically destroyed. A preventative tensioner replacement is far cheaper than a full engine replacement. At the first sign of rattling from the front of the engine, replace the tensioner immediately."
+      }
+    ],
+    "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty — always confirm terms with your chosen supplier."
   },
   "trustCta": {
     "h2": "",

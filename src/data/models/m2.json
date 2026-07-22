@@ -331,124 +331,65 @@
       {
         "metric": "Overall Rating",
         "value": "★★★★☆ 4.2/5"
-      },
-      {
-        "metric": "SECTION 4 — GENERATIONS — <GenerationsGrid>",
-        "value": "H2: BMW M2 Generations — Find Your Vehicle"
-      },
-      {
-        "metric": "Sub-headline: Two generations, three powertrains, and one mission — to be the most engaging driver's car BMW makes. The right M2 depends on your budget and which engine you want.",
-        "value": "First Generation — F87 (2016–2021)"
-      },
-      {
-        "metric": "BMW M2 F87 (Standard)",
-        "value": "2016–2018 • N55B30T0 3.0L turbo I6 • 365 bhp / 343 lb-ft"
-      },
-      {
-        "metric": "★★★★☆",
-        "value": "Our Verdict: The original M2 — the car that recaptured the spirit of the E46 M3. The N55 is robust, the chassis is magnificent, and the values are still sensible. The crank hub is the only caveat — especially on modified cars. The purest M2 experience."
-      },
-      {
-        "metric": "Explore the F87 →",
-        "value": "BMW M2 Competition F87"
-      },
-      {
-        "metric": "2018–2020 • S55B30 3.0L twin-turbo I6 • 405 bhp / 406 lb-ft",
-        "value": "★★★★☆"
-      },
-      {
-        "metric": "Our Verdict: The M2 with the M3/M4 engine — 405 bhp, improved suspension and brakes, and a more serious character. The S55 is proven and powerful, but the crank hub is the Achilles heel. The sweet spot in the used M2 range — more power than the standard car, less money than the CS.",
-        "value": "Explore the M2 Competition →"
-      },
-      {
-        "metric": "BMW M2 CS F87",
-        "value": "2020–2021 • S55B30 3.0L twin-turbo I6 • 444 bhp"
-      },
-      {
-        "metric": "★★★★★",
-        "value": "Our Verdict: The ultimate F87 — 444 bhp, carbon fibre everywhere, and produced in just 2,200 examples. A future classic and a collector's item. The S55 is proven, but the crank hub is still the caveat. Buy it as an investment, drive it as a driver's car."
-      },
-      {
-        "metric": "Explore the M2 CS →",
-        "value": "Second Generation — G87 (2023–present)"
-      },
-      {
-        "metric": "BMW M2 G87",
-        "value": "2023–present • S58B30 3.0L twin-turbo I6 • 453 bhp (manual) / 480 bhp (auto)"
-      },
-      {
-        "metric": "★★★★★",
-        "value": "Our Verdict: The second-generation M2 — bigger, more powerful, and built on the CLAR platform shared with the G80 M3. The S58 is widely regarded as one of BMW's most reliable modern performance engines. Available with a six-speed manual — the last manual M car. The G87 is the M2 for the modern era."
-      },
-      {
-        "metric": "Explore the G87 →",
-        "value": "The Engine Choice — The Line That Matters Most"
-      },
-      {
-        "metric": "F87 Standard (N55)",
-        "value": "F87 Competition/CS (S55)"
-      },
-      {
-        "metric": "G87 (S58)",
-        "value": "Power"
-      },
-      {
-        "metric": "365 bhp",
-        "value": "405–444 bhp"
-      },
-      {
-        "metric": "453–480 bhp",
-        "value": "Reliability"
-      },
-      {
-        "metric": "★★★★☆",
-        "value": "★★★★☆"
-      },
-      {
-        "metric": "★★★★★",
-        "value": "Crank hub risk"
-      },
-      {
-        "metric": "Moderate",
-        "value": "Moderate-High"
-      },
-      {
-        "metric": "Low (revised design)",
-        "value": "Recon cost"
-      },
-      {
-        "metric": "£4,500–£7,000",
-        "value": "£7,000–£10,000+"
-      },
-      {
-        "metric": "£7,000–£10,000+",
-        "value": "Our position"
-      },
-      {
-        "metric": "The purest driver's car",
-        "value": "The used sweet spot"
-      },
-      {
-        "metric": "The one to buy if budget allows",
-        "value": "Read the full comparison: BMW M2 F87 vs G87 →"
-      },
-      {
-        "metric": "The Crank Hub Question — The Achilles Heel of the S55",
-        "value": "Correction applied (internal): The S55 engine in the M2 Competition and CS shares the crank hub weakness with the M3/M4. The crank hub is not keyed to the crankshaft — it relies on friction alone. Under high load (especially on tuned cars), the hub can spin, causing catastrophic piston-to-valve contact. This is the defining risk of the S55-powered M2s. The S58 in the G87 has a revised design that addresses this weakness."
       }
     ]
   },
   "generations": {
-    "h2": "",
-    "subHeadline": "",
-    "cards": [],
+    "h2": "BMW M2 Generations — Find Your Vehicle",
+    "subHeadline": "Two generations, three powertrains, and one mission — to be the most engaging driver's car BMW makes. The right M2 depends on your budget and which engine you want.",
+    "cards": [
+      {
+        "title": "First Generation — F87 (2016–2021)",
+        "badge": "",
+        "meta": "2016–2018 • N55B30T0 3.0L turbo I6 • 365 bhp / 343 lb-ft",
+        "rating": "★★★★☆",
+        "verdict": "The original M2 — the car that recaptured the spirit of the E46 M3. The N55 is robust, the chassis is magnificent, and the values are still sensible. The crank hub is the only caveat — especially on modified cars. The purest M2 experience.",
+        "cta": {
+          "label": "Explore the F87 →",
+          "href": "#"
+        }
+      },
+      {
+        "title": "BMW M2 Competition F87",
+        "badge": "",
+        "meta": "2018–2020 • S55B30 3.0L twin-turbo I6 • 405 bhp / 406 lb-ft",
+        "rating": "★★★★☆",
+        "verdict": "The M2 with the M3/M4 engine — 405 bhp, improved suspension and brakes, and a more serious character. The S55 is proven and powerful, but the crank hub is the Achilles heel. The sweet spot in the used M2 range — more power than the standard car, less money than the CS.",
+        "cta": {
+          "label": "Explore the M2 Competition →",
+          "href": "#"
+        }
+      },
+      {
+        "title": "BMW M2 CS F87",
+        "badge": "",
+        "meta": "2020–2021 • S55B30 3.0L twin-turbo I6 • 444 bhp",
+        "rating": "★★★★★",
+        "verdict": "The ultimate F87 — 444 bhp, carbon fibre everywhere, and produced in just 2,200 examples. A future classic and a collector's item. The S55 is proven, but the crank hub is still the caveat. Buy it as an investment, drive it as a driver's car.",
+        "cta": {
+          "label": "Explore the M2 CS →",
+          "href": "#"
+        }
+      },
+      {
+        "title": "Second Generation — G87 (2023–present)",
+        "badge": "",
+        "meta": "2023–present • S58B30 3.0L twin-turbo I6 • 453 bhp (manual) / 480 bhp (auto)",
+        "rating": "★★★★★",
+        "verdict": "The second-generation M2 — bigger, more powerful, and built on the CLAR platform shared with the G80 M3. The S58 is widely regarded as one of BMW's most reliable modern performance engines. Available with a six-speed manual — the last manual M car. The G87 is the M2 for the modern era.",
+        "cta": {
+          "label": "Explore the G87 →",
+          "href": "#"
+        }
+      }
+    ],
     "rangeTable": {
       "title": "",
       "columns": [],
       "rows": []
     },
     "comparisonLink": {
-      "label": "",
+      "label": "Read the full comparison: BMW M2 F87 vs G87 →",
       "href": "#"
     }
   },

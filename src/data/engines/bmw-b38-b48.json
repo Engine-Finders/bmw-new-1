@@ -80,79 +80,44 @@
       {
         "metric": "Overall Engine Score",
         "value": "84/100"
-      },
-      {
-        "metric": "SECTION 3 — VERDICT & RATING",
-        "value": "H2: BMW B38/B48 — Our Verdict & Rating"
-      },
-      {
-        "metric": "Star rating: 4★ out of 5",
-        "value": "Confidence: 88% confidence — based on specialist workshop feedback and proprietary data from similar modern BMW engines [ESTIMATED]."
-      },
-      {
-        "metric": "Engine Score breakdown:",
-        "value": "Dimension"
-      },
-      {
-        "metric": "Score (of 20)",
-        "value": "How it's determined"
-      },
-      {
-        "metric": "Reliability",
-        "value": "16"
-      },
-      {
-        "metric": "4★ × 4 = 16",
-        "value": "Repair Cost"
-      },
-      {
-        "metric": "16",
-        "value": "Midpoint of Reconditioned supply range (£2,500–£4,000 → £3,250) — £3,000–£4,999 bracket → 16"
-      },
-      {
-        "metric": "Repairability",
-        "value": "16"
-      },
-      {
-        "metric": "Most failures (water pump, PCV) are straightforward; some cooling system repairs are labour‑intensive but manageable",
-        "value": "Parts Supply"
-      },
-      {
-        "metric": "20",
-        "value": "Parts are cheap and available from multiple UK suppliers same‑day; B38/B48 are used in millions of vehicles"
-      },
-      {
-        "metric": "Replacement Economics",
-        "value": "16"
-      },
-      {
-        "metric": "Reconditioned cost (£3,250) as % of lowest typical host value (~£8,000 F20 118i) = 41% — 30–44% bracket → 16",
-        "value": "Total"
-      },
-      {
-        "metric": "84/100",
-        "value": "One-line verdict: \"The B38/B48 are BMW's modern turbo petrols — coolant system issues are the main concern — buy with full service history and budget for water pump replacement.\" (Clause 1: 8 words. Clause 2: 7 words. Clause 3: 9 words. Total: 24 words.)"
-      },
-      {
-        "metric": "Best For: Daily drivers who want a responsive, economical petrol engine with good reliability.",
-        "value": "Avoid If: You're looking for the ultimate performance – the B58 six‑cylinder is the better choice for enthusiasts."
       }
     ]
   },
   "verdictRating": {
-    "starRating": "",
-    "confidence": "",
-    "scoreNote": "",
+    "starRating": "4★ out of 5",
+    "confidence": "88% confidence — based on specialist workshop feedback and proprietary data from similar modern BMW engines [ESTIMATED].",
+    "scoreNote": "Engine Score breakdown:",
     "scoreBreakdown": {
       "columns": [
         "Dimension",
         "Score (of 20)"
       ],
-      "rows": []
+      "rows": [
+        {
+          "dimension": "Reliability",
+          "score": "16 (4★ × 4 = 16)"
+        },
+        {
+          "dimension": "Repair Cost",
+          "score": "16 (Midpoint of Reconditioned supply range (£2,500–£4,000 → £3,250) — £3,000–£4,999 bracket → 16)"
+        },
+        {
+          "dimension": "Repairability",
+          "score": "16 (Most failures (water pump, PCV) are straightforward; some cooling system repairs are labour‑intensive but manageable)"
+        },
+        {
+          "dimension": "Parts Supply",
+          "score": "20 (Parts are cheap and available from multiple UK suppliers same‑day; B38/B48 are used in millions of vehicles)"
+        },
+        {
+          "dimension": "Replacement Economics",
+          "score": "16 (Reconditioned cost (£3,250) as % of lowest typical host value (~£8,000 F20 118i) = 41% — 30–44% bracket → 16)"
+        }
+      ]
     },
-    "oneLineVerdict": "",
-    "bestFor": "",
-    "avoidIf": ""
+    "oneLineVerdict": "\"The B38/B48 are BMW's modern turbo petrols — coolant system issues are the main concern — buy with full service history and budget for water pump replacement.\" (Clause 1: 8 words. Clause 2: 7 words. Clause 3: 9 words. Total: 24 words.)",
+    "bestFor": "Daily drivers who want a responsive, economical petrol engine with good reliability.",
+    "avoidIf": "You're looking for the ultimate performance – the B58 six‑cylinder is the better choice for enthusiasts."
   },
   "compatibility": {
     "columns": [

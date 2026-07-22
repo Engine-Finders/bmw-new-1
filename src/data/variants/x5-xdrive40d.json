@@ -563,44 +563,43 @@
       {
         "label": "Regional Demand",
         "value": "South East (22%), London (18%), North West (13%)【PATTERN DATA】"
-      },
-      {
-        "label": "SECTION 8 — FAQ",
-        "value": "1. How much does a BMW X5 xDrive40d engine replacement cost in the UK?"
-      },
-      {
-        "label": "A reconditioned X5 xDrive40d engine typically costs £4,500–£9,500 supply only depending on generation, with the current B57D30B sitting at £5,500–£9,500. Fitting adds £1,000–£1,800 at independent specialist rates. BMW engine replacement costs typically range from £2,500 to over £10,000 depending on the engine model. Use our calculator for a figure specific to your car.",
-        "value": "2. Is the BMW X5 xDrive40d engine reliable?"
-      },
-      {
-        "label": "It depends on which generation you're asking about. The N57 (F15, 2013–2018) is generally reliable but turbocharger failures, timing chain stretch, and oil leaks have been reported. The B57 (G05, 2019+) is widely regarded as a reliable unit, but turbocharger failures, oil leaks, and EGR system issues have been reported. Across both, oil-change discipline is everything.",
-        "value": "3. What are the common problems with the BMW X5 xDrive40d?"
-      },
-      {
-        "label": "Turbocharger failures (particularly between 100,000–150,000 km), oil leaks from the valve cover gasket and oil filter housing, DPF clogging (especially on urban-driven cars), EGR system failures (B57), and fuel injector issues. See the Era Map above for generation-specific advice.",
-        "value": "4. Is it worth replacing a BMW X5 xDrive40d engine, or should I scrap the car?"
-      },
-      {
-        "label": "Depends on vehicle value. Against a well-kept F15 X5 xDrive40d (values £8,000–£18,000+), a £5,000–£6,000 reconditioned engine is 25–60% of the vehicle's value — often worth it for a solid example. Against a £20,000–£50,000 G05, a £5,500–£6,500 recon is 10–30% — worth it. The BMW scrap threshold of 70% means evaluating the whole vehicle and its condition before committing.",
-        "value": "5. How do I find my BMW X5 xDrive40d engine code?"
-      },
-      {
-        "label": "Listed on the VIN plate and vehicle documentation. As a rule of thumb: F15 (2013–2018) = N57D30; G05 (2019–present) = B57D30B. The B57 engine features BMW's TwinPower Turbo technology with a two-stage turbocharging system. Tell us your registration date and we'll confirm it for free.",
-        "value": "6. Can I repair the turbocharger, or does it require engine replacement?"
-      },
-      {
-        "label": "Turbocharger failure is repairable without replacing the engine — if caught early. A turbocharger replacement costs £1,500–£3,500. However, if the turbo fails catastrophically and sends debris into the engine, a full engine replacement (£4,500–£9,500) may be required. At the first sign of whistling or power loss, book an inspection immediately.",
-        "value": "Disclaimer: All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty — always confirm terms with your chosen supplier."
-      },
-      {
-        "label": "SECTION 9, META AND SCHEMA",
-        "value": "PART 2 — SECTION 9 + META + SCHEMA"
       }
     ]
   },
   "faq": {
-    "items": [],
-    "disclaimer": ""
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a BMW X5 xDrive40d engine replacement cost in the UK?",
+        "answer": "A reconditioned X5 xDrive40d engine typically costs £4,500–£9,500 supply only depending on generation, with the current B57D30B sitting at £5,500–£9,500. Fitting adds £1,000–£1,800 at independent specialist rates. BMW engine replacement costs typically range from £2,500 to over £10,000 depending on the engine model. Use our calculator for a figure specific to your car."
+      },
+      {
+        "id": 2,
+        "question": "Is the BMW X5 xDrive40d engine reliable?",
+        "answer": "It depends on which generation you're asking about. The N57 (F15, 2013–2018) is generally reliable but turbocharger failures, timing chain stretch, and oil leaks have been reported. The B57 (G05, 2019+) is widely regarded as a reliable unit, but turbocharger failures, oil leaks, and EGR system issues have been reported. Across both, oil-change discipline is everything."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the BMW X5 xDrive40d?",
+        "answer": "Turbocharger failures (particularly between 100,000–150,000 km), oil leaks from the valve cover gasket and oil filter housing, DPF clogging (especially on urban-driven cars), EGR system failures (B57), and fuel injector issues. See the Era Map above for generation-specific advice."
+      },
+      {
+        "id": 4,
+        "question": "Is it worth replacing a BMW X5 xDrive40d engine, or should I scrap the car?",
+        "answer": "Depends on vehicle value. Against a well-kept F15 X5 xDrive40d (values £8,000–£18,000+), a £5,000–£6,000 reconditioned engine is 25–60% of the vehicle's value — often worth it for a solid example. Against a £20,000–£50,000 G05, a £5,500–£6,500 recon is 10–30% — worth it. The BMW scrap threshold of 70% means evaluating the whole vehicle and its condition before committing."
+      },
+      {
+        "id": 5,
+        "question": "How do I find my BMW X5 xDrive40d engine code?",
+        "answer": "Listed on the VIN plate and vehicle documentation. As a rule of thumb: F15 (2013–2018) = N57D30; G05 (2019–present) = B57D30B. The B57 engine features BMW's TwinPower Turbo technology with a two-stage turbocharging system. Tell us your registration date and we'll confirm it for free."
+      },
+      {
+        "id": 6,
+        "question": "Can I repair the turbocharger, or does it require engine replacement?",
+        "answer": "Turbocharger failure is repairable without replacing the engine — if caught early. A turbocharger replacement costs £1,500–£3,500. However, if the turbo fails catastrophically and sends debris into the engine, a full engine replacement (£4,500–£9,500) may be required. At the first sign of whistling or power loss, book an inspection immediately."
+      }
+    ],
+    "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty — always confirm terms with your chosen supplier."
   },
   "trustCta": {
     "h2": "Why UK BMW X5 xDrive40d Owners Trust BMWEngines.uk",

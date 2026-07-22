@@ -7,18 +7,18 @@
     "descriptionCharCount": 159,
     "canonical": "https://bmwengine.uk/x3/e83-petrol/",
     "openGraph": {
-      "title": "",
-      "description": "",
-      "type": "",
-      "url": "",
-      "image": "",
-      "siteName": ""
+      "title": "X3 E83 Petrol Engine Replacement Cost UK — Compare Quotes",
+      "description": "BMW X3 E83 petrol engines — 2.0i (N46), 2.5i (M54), 3.0i (M54). Real UK costs, cooling system & VANOS insight, and honest reliability data. Get free quotes from 20+ vetted BMW specialists today.",
+      "type": "website",
+      "url": "https://bmwengine.uk/x3/e83-petrol/",
+      "image": "https://bmwengine.uk/images/bmw/hero/x3-e83-petrol.jpg",
+      "siteName": "BMWEngines.uk"
     },
     "twitter": {
-      "card": "",
-      "title": "",
-      "description": "",
-      "image": ""
+      "card": "summary_large_image",
+      "title": "X3 E83 Petrol Engine Replacement Cost UK — Compare Quotes",
+      "description": "BMW X3 E83 petrol engines — 2.0i (N46), 2.5i (M54), 3.0i (M54). Real UK costs, cooling system & VANOS insight, and honest reliability data.",
+      "image": "https://bmwengine.uk/images/bmw/hero/x3-e83-petrol.jpg"
     },
     "jsonLd": {
       "@context": "https://schema.org",
@@ -505,7 +505,12 @@
       {
         "id": 3,
         "question": "What are the common problems with the BMW X3 E83 petrol engines?",
-        "answer": "2.0i N46: Fuel pump failure, sensor issues, timing chain guide wear. 2.5i/3.0i M54: Cooling system failures (radiator, expansion tank, water pump), VANOS seal degradation, DISA valve failure, and oil leaks from the valve cover gasket. The specific issues depend on which engine you have."
+        "answer": ""
+      },
+      {
+        "id": 2,
+        "question": "0i N46: Fuel pump failure, sensor issues, timing chain guide wear. 2.5i/3.0i M54: Cooling system failures (radiator, expansion tank, water pump), VANOS seal degradation, DISA valve failure, and oil leaks from the valve cover gasket. The specific issues depend on which engine you have.",
+        "answer": ""
       },
       {
         "id": 4,

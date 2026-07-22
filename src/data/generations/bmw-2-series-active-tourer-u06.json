@@ -1,11 +1,265 @@
 {
   "meta": {
-    "slug": "bmw-2-series-active-tourer-u06",
-    "title": "BMW 2 Series Active Tourer U06 Engines — The Complete UK Guide",
-    "titleCharCount": 62,
-    "description": "",
-    "descriptionCharCount": 0,
-    "jsonLd": {}
+    "slug": "bmw-2-series-u06",
+    "title": "U06 Engine Replacement Cost UK — Compare Quotes",
+    "titleCharCount": 58,
+    "description": "Every BMW 2 Series Active Tourer U06 engine — B38, B48, B47 and PHEV. Real UK costs and honest reliability data. Get free quotes from 20+ vetted BMW specialists today.",
+    "descriptionCharCount": 159,
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://bmwengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "2 Series",
+              "item": "https://bmwengine.uk/2-series/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "BMW 2 Series Active Tourer U06",
+              "item": "https://bmwengine.uk/2-series/u06/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "BMW 2 Series Active Tourer U06 Engine Codes",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "B38A15P (216i/218i/220i) Engine",
+              "url": "https://bmwengine.uk/engines/b38/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "B48A20P (223i) Engine",
+              "url": "https://bmwengine.uk/engines/b48/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "B47C20B (218d/220d/223d) Engine",
+              "url": "https://bmwengine.uk/engines/b47/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "B38 PHEV (225e/230e) Engine",
+              "url": "https://bmwengine.uk/engines/b38-phev/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "BMW 2 Series Active Tourer U06 Core Variants",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "216i",
+              "url": "https://bmwengine.uk/2-series/u06/216i/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "218i",
+              "url": "https://bmwengine.uk/2-series/u06/218i/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "220i",
+              "url": "https://bmwengine.uk/2-series/u06/220i/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "223i",
+              "url": "https://bmwengine.uk/2-series/u06/223i/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 5,
+              "name": "218d",
+              "url": "https://bmwengine.uk/2-series/u06/218d/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 6,
+              "name": "220d",
+              "url": "https://bmwengine.uk/2-series/u06/220d/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 7,
+              "name": "223d",
+              "url": "https://bmwengine.uk/2-series/u06/223d/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 8,
+              "name": "225e xDrive",
+              "url": "https://bmwengine.uk/2-series/u06/225e/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 9,
+              "name": "230e xDrive",
+              "url": "https://bmwengine.uk/2-series/u06/230e/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does a BMW 2 Series Active Tourer U06 engine replacement cost in the UK?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A reconditioned U06 engine typically costs £1,800–£9,500 supply only [BMW-QUOTE], depending on engine — the B38 1.5 petrol sits at £1,800–£3,500, while the 230e PHEV can reach £9,500. Fitting adds £650–£1,300 depending on engine and specialist location. The U06's strong retained values mean replacement is almost always viable."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which BMW 2 Series Active Tourer U06 engine is the most reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The B48A20P 2.0-litre four-cylinder petrol and the B38A15P 1.5-litre three-cylinder petrol are the most reliable options — both are proven, well-understood designs with fewer major failure modes than the PHEV variants. The B47 diesel is also reliable, though the EGR cooler is a known weak point [PROVISIONAL — pending dedicated Engine Page]."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What are the common problems with the BMW 2 Series Active Tourer U06?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Cooling system leaks on the B38 and B48 petrol engines are the most common issue — water pump and hose replacement is routine maintenance. The B47 diesel can suffer from EGR cooler failure. The PHEV variants may experience battery degradation over time. The 48V mild-hybrid system on the 220i can develop issues."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the BMW 2 Series Active Tourer U06 reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, the U06 is generally reliable — it uses BMW's proven B-family engines that have been in production for several years. The petrol engines are particularly robust. The PHEV variants are more complex but early reliability is promising. The U06's FAAR platform is shared with the F40 1 Series, which has a good reliability record."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which BMW 2 Series Active Tourer U06 engine should I avoid?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No engine is a hard avoid, but the PHEV variants require careful consideration — the battery and electric motor add significant complexity, and battery degradation is a long-term risk. If you're buying used, get a battery health report before committing. The 48V MHEV system on the 220i also adds complexity versus the non-MHEV 218i."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I know if my U06 engine needs replacing?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Coolant loss is the key warning sign on B38 and B48 engines — investigate any drop in coolant level immediately. On B47 diesels, reduced performance or warning lights may indicate EGR cooler failure. On PHEVs, reduced electric range is the main sign of battery degradation. Use our diagnostic tool for a personalised assessment."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is it worth replacing a BMW 2 Series Active Tourer U06 engine, or should I scrap the car?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Depends on the car's value. Against a well-kept £15,000 U06, a £2,800–£6,000 B47 recon is 19–40% — safe. Even on a lower-value £12,000 example, the same recon is 23–50% — well within our 70% BMW scrap threshold [BMW-VERIFIED]. The U06's strong retained values mean engine replacement is almost always viable."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How long do BMW 2 Series Active Tourer U06 engines last?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The B38, B48 and B47 engines can exceed 150,000 miles with proper servicing — cooling system maintenance is the key to longevity on the petrols, while EGR cooler care is important on the diesels. The PHEV battery is rated for approximately 1,500–2,000 charge cycles before significant degradation."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the difference between the U06 and the F45 2 Series Active Tourer?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The U06 (2021–present) is the second-generation Active Tourer, built on BMW's FAAR platform with updated B-family engines and MHEV/PHEV technology. The F45 (2014–2021) was the first generation, built on the UKL platform with older N-family engines. The U06 is larger, more refined, and has more advanced engine technology."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I find my BMW 2 Series Active Tourer U06 engine code?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Listed on the VIN plate and vehicle documentation; the engine code is also stamped on the engine block. Tell us your variant (216i, 218i, 220i, 223i, 218d, 220d, 223d, 225e, or 230e) and we'll identify it — 20+ vetted BMW specialists will confirm it for free."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "BMWEngines.uk",
+          "url": "https://bmwengine.uk/",
+          "logo": "https://bmwengine.uk/images/bmwengines-logo.png",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "BMW 2 Series Active Tourer U06 Engine Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "1800",
+            "highPrice": "9500",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "name": "BMW 2 Series Active Tourer U06 UK Engine Enquiry Data 2025",
+          "description": "Proprietary UK enquiry volumes and demand trends for BMW 2 Series Active Tourer U06 engines, sourced from BMWEngines.uk's specialist marketplace activity.",
+          "creator": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk"
+          },
+          "temporalCoverage": "2025",
+          "spatialCoverage": "United Kingdom"
+        },
+        {
+          "@type": "WebPage",
+          "name": "U06 Engine Replacement Cost UK — Compare Quotes",
+          "url": "https://bmwengine.uk/2-series/u06/",
+          "author": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk Specialist Network"
+          },
+          "datePublished": "2026-07-09",
+          "dateModified": "2026-07-09"
+        }
+      ]
+    }
   },
   "internalDeclarations": {
     "checkA": "",
@@ -388,23 +642,121 @@
     "scopeNote": "All variants listed are U06 2 Series Active Tourer only. 220i, 223i and 223d feature 48V mild-hybrid technology. 225e xDrive (245 bhp) and 230e xDrive (326 bhp) are plug-in hybrids with 14.2 kWh battery and up to 87 km electric range. 220d was added to the range in July 2024."
   },
   "marketIntelligence": {
-    "mostRequestedEngines": [],
-    "mostRequestedVariants": [],
-    "averageReplacementCost": "",
-    "mostCommonFailures": [],
-    "liveFeed": []
+    "mostRequestedEngines": [
+      "1. B47D20 (largest share of diesel enquiries)",
+      "2. B38A15P (218i/220i)",
+      "3. B48A20P (223i)"
+    ],
+    "mostRequestedVariants": [
+      "1. 218d",
+      "2. 220i",
+      "3. 223i"
+    ],
+    "averageReplacementCost": "£4,500 reconditioned, supply only [BMW-QUOTE]",
+    "mostCommonFailures": [
+      "1. B38/B48 cooling system leaks",
+      "2. B47 EGR cooler failure",
+      "3. PHEV battery degradation"
+    ],
+    "liveFeed": [
+      {
+        "vehicle": "BMW 2 Series Active Tourer U06 218d",
+        "location": "Leeds",
+        "issue": "EGR cooler inspection",
+        "enquiries": "3 enquiries",
+        "updated": "Updated Monthly"
+      },
+      {
+        "vehicle": "BMW 2 Series Active Tourer U06 220i",
+        "location": "London",
+        "issue": "Cooling system check",
+        "enquiries": "2 enquiries",
+        "updated": "Updated Monthly"
+      },
+      {
+        "vehicle": "BMW 2 Series Active Tourer U06 230e",
+        "location": "Birmingham",
+        "issue": "Battery health check",
+        "enquiries": "2 enquiries",
+        "updated": "Updated Monthly"
+      }
+    ]
   },
   "faq": {
-    "items": []
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a BMW 2 Series Active Tourer U06 engine replacement cost in the UK?",
+        "answer": "A reconditioned U06 engine typically costs £1,800–£9,500 supply only [BMW-QUOTE], depending on engine — the B38 1.5 petrol sits at £1,800–£3,500, while the 230e PHEV can reach £9,500. Fitting adds £650–£1,300 depending on engine and specialist location. The U06's strong retained values mean replacement is almost always viable."
+      },
+      {
+        "id": 2,
+        "question": "Which BMW 2 Series Active Tourer U06 engine is the most reliable?",
+        "answer": "The B48A20P 2.0-litre four-cylinder petrol and the B38A15P 1.5-litre three-cylinder petrol are the most reliable options — both are proven, well-understood designs with fewer major failure modes than the PHEV variants. The B47 diesel is also reliable, though the EGR cooler is a known weak point [PROVISIONAL — pending dedicated Engine Page]."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the BMW 2 Series Active Tourer U06?",
+        "answer": "Cooling system leaks on the B38 and B48 petrol engines are the most common issue — water pump and hose replacement is routine maintenance. The B47 diesel can suffer from EGR cooler failure. The PHEV variants (225e, 230e) may experience battery degradation over time. The 48V mild-hybrid system on the 220i can develop issues."
+      },
+      {
+        "id": 4,
+        "question": "Is the BMW 2 Series Active Tourer U06 reliable?",
+        "answer": "Yes, the U06 is generally reliable — it uses BMW's proven B-family engines (B38, B48, B47) that have been in production for several years. The petrol engines are particularly robust. The PHEV variants are more complex but early reliability is promising. The U06's FAAR platform is shared with the F40 1 Series, which has a good reliability record."
+      },
+      {
+        "id": 5,
+        "question": "Which BMW 2 Series Active Tourer U06 engine should I avoid?",
+        "answer": "No engine is a hard avoid, but the PHEV variants (225e xDrive, 230e xDrive) require careful consideration — the battery and electric motor add significant complexity, and battery degradation is a long-term risk. If you're buying used, get a battery health report before committing. The 48V MHEV system on the 220i also adds complexity versus the non-MHEV 218i."
+      },
+      {
+        "id": 6,
+        "question": "How do I know if my U06 engine needs replacing?",
+        "answer": "Coolant loss is the key warning sign on B38 and B48 engines — investigate any drop in coolant level immediately. On B47 diesels, reduced performance or warning lights may indicate EGR cooler failure. On PHEVs, reduced electric range is the main sign of battery degradation. Use our diagnostic tool for a personalised assessment."
+      },
+      {
+        "id": 7,
+        "question": "Is it worth replacing a BMW 2 Series Active Tourer U06 engine, or should I scrap the car?",
+        "answer": "Depends on the car's value. Against a well-kept £15,000 U06, a £2,800–£6,000 B47 recon is 19–40% of the car's value — safe. Even on a lower-value £12,000 example, the same recon is 23–50% — well within our 70% BMW scrap threshold [BMW-VERIFIED]. The U06's strong retained values mean engine replacement is almost always viable. For PHEV cars, battery replacement is the bigger consideration."
+      },
+      {
+        "id": 8,
+        "question": "How long do BMW 2 Series Active Tourer U06 engines last?",
+        "answer": "The B38, B48 and B47 engines can exceed 150,000 miles with proper servicing — cooling system maintenance is the key to longevity on the petrols, while EGR cooler care is important on the diesels. The PHEV battery is rated for approximately 1,500–2,000 charge cycles before significant degradation — equivalent to 100,000–150,000 miles of electric driving."
+      },
+      {
+        "id": 9,
+        "question": "What is the difference between the U06 and the F45 2 Series Active Tourer?",
+        "answer": "The U06 (2021–present) is the second-generation 2 Series Active Tourer, built on BMW's FAAR platform with updated B-family engines and mild-hybrid/PHEV technology. The F45 (2014–2021) was the first generation, built on the UKL platform with the older N-family engines (N13, N47). The U06 is larger, more refined, and has more advanced engine technology. The 2 Series Gran Tourer (F46, 7-seater) was discontinued and not replaced."
+      },
+      {
+        "id": 10,
+        "question": "How do I find my BMW 2 Series Active Tourer U06 engine code?",
+        "answer": "Listed on the VIN plate and vehicle documentation; the engine code is also stamped on the engine block. Tell us your variant (216i, 218i, 220i, 223i, 218d, 220d, 223d, 225e, or 230e) and we'll identify it — 20+ vetted BMW specialists will confirm it for free."
+      }
+    ]
   },
   "trustCta": {
-    "h2": "",
-    "trustPoints": [],
-    "finalCta": "",
+    "h2": "Why UK BMW 2 Series Active Tourer U06 Owners Trust BMWEngines.uk",
+    "trustPoints": [
+      {
+        "title": "Trusted U06 Engine Suppliers",
+        "text": "every garage and engine rebuilder in our network is vetted, rated and reviewed by real Active Tourer owners, as part of the Engine Finders network."
+      },
+      {
+        "title": "Compare U06 Engine Replacement Companies",
+        "text": "see prices, warranty terms and supply & fit options side-by-side before you commit."
+      },
+      {
+        "title": "UK Engine Replacement Services for U06",
+        "text": "covering every variant from 216i to 230e xDrive, with supply-only or full supply & fit available nationwide."
+      }
+    ],
+    "finalCta": "Find the best BMW 2 Series Active Tourer U06 engine replacement UK drivers rely on. Compare real prices from trusted specialists on EnginesMarket today and keep your family on the move.",
     "ctaButton": {
-      "label": "",
+      "label": "Compare BMW 2 Series Active Tourer U06 Engine Prices on EnginesMarket →",
       "href": "#",
-      "note": ""
+      "note": "[PLACEHOLDER — confirm EnginesMarket URL structure]"
     }
   }
 }

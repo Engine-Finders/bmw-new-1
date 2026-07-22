@@ -1,24 +1,223 @@
 {
   "meta": {
-    "slug": "bmw-m50-m52-m54",
-    "title": "BMW M50 / M52 / M54 Engine — Specs, Reliability & Replacement Cost",
-    "description": "",
-    "canonical": "",
+    "slug": "m50-m52-m54",
+    "title": "BMW M50 / M52 / M54 Engine — Reliability & Replacement Cost",
+    "description": "The M50/M52/M54 family is legendary for durability — backed by many UK specialist enquiries [ESTIMATED]. Compare quotes from 20+ vetted specialists today.",
+    "canonical": "https://bmwengine.uk/engines/m50-m52-m54/",
     "openGraph": {
-      "title": "",
-      "description": "",
-      "type": "",
-      "url": "",
-      "image": "",
-      "siteName": ""
+      "title": "BMW M50 / M52 / M54 Engine — Reliability & Replacement Cost",
+      "description": "The M50/M52/M54 family is legendary for durability — backed by many UK specialist enquiries [ESTIMATED]. Compare quotes from 20+ vetted specialists today.",
+      "type": "website",
+      "url": "https://bmwengine.uk/engines/m50-m52-m54/",
+      "image": "https://bmwengine.uk/images/bmw/engines/m50-m52-m54.jpg",
+      "siteName": "bmwengine.uk"
     },
     "twitter": {
-      "card": "",
-      "title": "",
-      "description": "",
-      "image": ""
+      "card": "summary_large_image",
+      "title": "BMW M50 / M52 / M54 Engine — Reliability & Replacement Cost",
+      "description": "The M50/M52/M54 family is legendary for durability — backed by many UK specialist enquiries [ESTIMATED]. Compare quotes from 20+ vetted specialists today.",
+      "image": "https://bmwengine.uk/images/bmw/engines/m50-m52-m54.jpg"
     },
-    "jsonLd": {}
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://bmwengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Engines",
+              "item": "https://bmwengine.uk/engines/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "M50 / M52 / M54",
+              "item": "https://bmwengine.uk/engines/m50-m52-m54/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "BMW models fitted with the M50 / M52 / M54",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "BMW 3 Series E36 320i/325i",
+              "url": "https://bmwengine.uk/models/3-series/e36/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "BMW 3 Series E36 328i (M52)",
+              "url": "https://bmwengine.uk/models/3-series/e36/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "BMW 3 Series E46 320i/325i/330i (M54)",
+              "url": "https://bmwengine.uk/models/3-series/e46/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "BMW 5 Series E34 520i/525i (M50)",
+              "url": "https://bmwengine.uk/models/5-series/e34/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 5,
+              "name": "BMW 5 Series E39 520i/523i/525i/528i/530i",
+              "url": "https://bmwengine.uk/models/5-series/e39/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 6,
+              "name": "BMW X5 E53 3.0i (M54B30)",
+              "url": "https://bmwengine.uk/models/x5/e53/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 7,
+              "name": "BMW Z3 E36/7 2.2i/2.5i/2.8i",
+              "url": "https://bmwengine.uk/models/z3/e36-7/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 8,
+              "name": "BMW Z4 E85/E86 2.2i/2.5i/3.0i (M54)",
+              "url": "https://bmwengine.uk/models/z4/e85-e86/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 9,
+              "name": "BMW 3 Series Compact E46/5 325ti (M54B25)",
+              "url": "https://bmwengine.uk/models/3-series-compact/e46-5/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does a BMW M50/M52/M54 engine replacement cost?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A reconditioned M54 typically costs £1,500–£2,500 supply only [BMW-QUOTE], varying by displacement and condition. Fitting adds £650–£1,300 depending on labour rates. Use our calculator for a figure specific to your car."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the BMW M50/M52/M54 a reliable engine?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes — the M50 and M52 are legendary for their robustness and simplicity. The M54 is also regarded as one of BMW's most reliable straight-six engines, with many examples exceeding 200,000 miles when properly maintained."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the most common BMW M50/M52/M54 failure?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Cooling system failure — plastic expansion tanks, water pumps and thermostats degrade with age, typically failing between 80,000–120,000 miles. Overheating can damage the aluminium block, so immediate attention is required."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which BMW models use the M50/M52/M54?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "These engines power the E36 and E46 3 Series, E34 and E39 5 Series, E53 X5, Z3 and Z4 roadsters, and the E46 Compact."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How long does the BMW M50/M52/M54 last?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "With regular maintenance, these engines routinely exceed 200,000 miles. Some M54B30 examples have reportedly surpassed 550,000 miles on the original engine. Cooling system preventative maintenance is the key to longevity."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "bmwengine.uk",
+          "url": "https://bmwengine.uk/",
+          "logo": "https://bmwengine.uk/images/logo.png",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Product",
+          "name": "BMW M50 / M52 / M54 Engine",
+          "brand": {
+            "@type": "Brand",
+            "name": "BMW"
+          },
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.0",
+            "bestRating": "5",
+            "ratingCount": "1",
+            "reviewCount": "1"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "BMW M50 / M52 / M54 Engine Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "bmwengine.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "600",
+            "highPrice": "4000",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "name": "BMW M50 / M52 / M54 UK Enquiry & Reliability Data 2025",
+          "description": "Proprietary UK enquiry volumes and reliability scoring data for the BMW M50/M52/M54, sourced from bmwengine.uk's specialist marketplace activity and workshop consensus.",
+          "creator": {
+            "@type": "Organization",
+            "name": "bmwengine.uk"
+          },
+          "temporalCoverage": "2025",
+          "spatialCoverage": "United Kingdom"
+        },
+        {
+          "@type": "WebPage",
+          "name": "BMW M50 / M52 / M54 Engine — Reliability & Replacement Cost",
+          "url": "https://bmwengine.uk/engines/m50-m52-m54/",
+          "author": {
+            "@type": "Organization",
+            "name": "bmwengine.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "bmwengine.uk Specialist Network"
+          },
+          "datePublished": "2026-07-14",
+          "dateModified": "2026-07-14"
+        }
+      ]
+    }
   },
   "hero": {
     "tagPill": "",

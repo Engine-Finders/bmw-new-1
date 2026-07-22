@@ -478,11 +478,92 @@
     }
   },
   "marketIntelligence": {
-    "items": []
+    "items": [
+      {
+        "label": "Most Common Failure",
+        "value": "Cooling system leaks and water pump failure — the primary weakness of the B58"
+      },
+      {
+        "label": "Average Enquiry Mileage",
+        "value": "50,000–80,000 miles【PATTERN DATA】"
+      },
+      {
+        "label": "Average Replacement Cost",
+        "value": "£3,200–£7,500 reconditioned, supply only depending on generation【BMW-QUOTE】"
+      },
+      {
+        "label": "Most Requested Engine Code",
+        "value": "B58 — one of BMW's most celebrated modern engines【PATTERN DATA】"
+      },
+      {
+        "label": "Peak Enquiry Season",
+        "value": "Spring — pre‑summer vehicle preparation【PATTERN DATA】"
+      },
+      {
+        "label": "Regional Demand",
+        "value": "London (20%), South East (18%), North West (12%)【PATTERN DATA】"
+      }
+    ]
   },
   "faq": {
-    "items": [],
-    "disclaimer": ""
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a BMW 340i or M340i engine replacement cost in the UK?",
+        "answer": "A reconditioned B58 engine typically costs £3,200–£7,500 supply only depending on which generation (F30 or G20), with used units available from £1,500–£3,500. Fitting adds £1,800–£2,500. Use our calculator for a figure specific to your car."
+      },
+      {
+        "id": 2,
+        "question": "Is the BMW 340i / M340i engine reliable?",
+        "answer": "Yes — the B58 is widely regarded as one of BMW's most reliable modern engines. It's a significant improvement over the N55 and shares its architecture with the bulletproof B58 used across BMW's range and in the Toyota Supra. The main weaknesses are the cooling system, oil filter housing, and PCV valve — all are well-understood and repairable."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the BMW 340i and M340i?",
+        "answer": "Cooling system leaks and water pump failure, oil filter housing cracking (subject to a class action lawsuit), and PCV valve failure causing misfires and rough idle. The B58 is fundamentally robust — these are maintenance items, not catastrophic design flaws."
+      },
+      {
+        "id": 4,
+        "question": "Is it worth replacing a BMW 340i / M340i engine, or should I scrap the car?",
+        "answer": "340i and M340i values remain strong — a well-kept G20 M340i is often worth £25,000–£45,000+. A £3,200–£7,500 reconditioned engine is only 10–25% of the vehicle's value — well within the 70% BMW threshold. Replacement is almost always worthwhile."
+      },
+      {
+        "id": 5,
+        "question": "How do I find my BMW 340i or M340i engine code?",
+        "answer": "The engine code is listed on the VIN plate and vehicle documentation. F30 340i (2015–2019) uses the B58B30M0; G20 M340i (2019–present) uses the B58B30O1. Tell us your registration date and we'll confirm it for free."
+      },
+      {
+        "id": 6,
+        "question": "Can I repair the B58 cooling system, or does it need replacement?",
+        "answer": "Cooling system components need replacement — they are wear items. The water pump (£500–£1,200) and plastic coolant hoses should be replaced preventatively at around 60,000–80,000 miles. Upgraded aluminium parts are available to replace the factory plastic components. Regular coolant level checks are essential — the B58 can lose coolant suddenly."
+      },
+      {
+        "id": 1,
+        "question": "Section 9: The trust and final CTA section. Since the priority was Medium, I need to keep the \"Assertive\" mode consistent with the CTA from Part 1.",
+        "answer": ""
+      },
+      {
+        "id": 2,
+        "question": "Meta Data: A title under 60 chars and a description under 160 chars, incorporating the key selling points and the fact it's a B58 engine.",
+        "answer": ""
+      },
+      {
+        "id": 3,
+        "question": "Open Graph/Twitter Cards: Mirror the meta data.",
+        "answer": ""
+      },
+      {
+        "id": 4,
+        "question": "JSON-LD Schema: This is critical. I must ensure the ItemList for the engine era map and the engine codes match the Era Map exactly (B58B30M0, B58B30O1). The Service schema's price range needs to span the full history (from £1,500 to £7,500). I also need to include all the required schema blocks: BreadcrumbList, FAQPage, Organization, Service, Dataset, WebPage, and explicitly omit AggregateRating (as per the rules, since we don't have genuine review data).",
+        "answer": ""
+      },
+      {
+        "id": 5,
+        "question": "Production Note: This is where I show the thinking behind the schema choices and confirm the authority model compliance. I need to state the ratings are newly assigned, list the verification sources (from the Data Note in Part 1), and confirm schema consistency.",
+        "answer": "I should structure the response cleanly, starting with \"Part 2\" as a header, then Section 9, then Meta, OG, Schema, and finally the Production Note. The tone should be professional and precise, mirroring the assistant's previous outputs. The user probably expects this to be copy-paste ready, so ensuring no markdown errors and proper formatting is key."
+      }
+    ],
+    "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty — always confirm terms with your chosen supplier."
   },
   "trustCta": {
     "h2": "",

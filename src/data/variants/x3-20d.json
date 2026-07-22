@@ -552,7 +552,32 @@
     }
   },
   "marketIntelligence": {
-    "items": []
+    "items": [
+      {
+        "label": "Most Common Failure",
+        "value": "N47: timing chain stretch / B47: EGR cooler failure"
+      },
+      {
+        "label": "Average Enquiry Mileage",
+        "value": "60,000–80,000 miles [PATTERN DATA]"
+      },
+      {
+        "label": "Average Replacement Cost",
+        "value": "£3,500–£4,500 reconditioned, supply only [PLACEHOLDER — confirm vs cost sheet]"
+      },
+      {
+        "label": "Most Requested Engine Code",
+        "value": "N47D20C (F25) — approximately 45% of X3 2.0d enquiries [PATTERN DATA]"
+      },
+      {
+        "label": "Peak Enquiry Season",
+        "value": "Autumn/Winter — cold starts expose timing chain and EGR issues [PATTERN DATA]"
+      },
+      {
+        "label": "Regional Demand",
+        "value": "South East (19%), London (17%), North West (13%) [PATTERN DATA]"
+      }
+    ]
   },
   "faq": {
     "items": [

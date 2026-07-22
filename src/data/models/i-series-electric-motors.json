@@ -1,24 +1,310 @@
 {
   "meta": {
-    "slug": "i-series-electric-motors",
-    "title": "i Series Electric Motors — The Complete UK Guide",
-    "titleCharCount": 48,
-    "description": "",
-    "descriptionCharCount": 0,
+    "slug": "i-series",
+    "title": "BMW i Series Electric Motor & Battery Cost UK — Compare Quotes",
+    "titleCharCount": 59,
+    "description": "Every BMW i Series model — i3, i4, i5, i7, i8, iX, iX3. Real UK electric motor and battery costs. Compare prices from 20+ vetted BMW specialists today.",
+    "descriptionCharCount": 159,
     "openGraph": {
-      "title": "",
-      "description": "",
-      "type": "",
-      "url": "",
-      "image": "",
-      "siteName": ""
+      "title": "BMW i Series Electric Motor & Battery Cost UK — Compare Quotes",
+      "description": "Every BMW i Series model — i3, i4, i5, i7, i8, iX, iX3. Real UK electric motor and battery costs. Compare prices from 20+ vetted BMW specialists today.",
+      "type": "website",
+      "url": "https://bmwengine.uk/i-series/",
+      "image": "https://bmwengine.uk/images/bmw-i-series-hero.jpg",
+      "siteName": "BMWEngines.uk"
     },
     "twitter": {
-      "card": "",
-      "title": "",
-      "description": ""
+      "card": "summary_large_image",
+      "title": "BMW i Series Electric Motor & Battery Cost UK — Compare Quotes",
+      "description": "Every BMW i Series model — i3, i4, i5, i7, i8, iX, iX3. Real UK electric motor and battery costs. Compare prices from 20+ vetted BMW specialists today."
     },
-    "jsonLd": {}
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://bmwengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "i Series",
+              "item": "https://bmwengine.uk/i-series/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "BMW i Series Models",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "BMW i3 I01 (2013–2022)",
+              "url": "https://bmwengine.uk/i3/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "BMW i3 Neue Klasse NA0 (2026–present)",
+              "url": "https://bmwengine.uk/i3/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "BMW i4 G26 (2021–present)",
+              "url": "https://bmwengine.uk/i4/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "BMW i5 G60 (2023–present)",
+              "url": "https://bmwengine.uk/i5/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 5,
+              "name": "BMW i7 G70 (2022–present)",
+              "url": "https://bmwengine.uk/i7/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 6,
+              "name": "BMW iX I20 (2021–present)",
+              "url": "https://bmwengine.uk/ix/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 7,
+              "name": "BMW iX3 G08 (2020–present)",
+              "url": "https://bmwengine.uk/ix3/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 8,
+              "name": "BMW i8 I12/I15 (2014–2020)",
+              "url": "https://bmwengine.uk/i8/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "BMW i Series Powertrains",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "i3 Electric Motor (I01)",
+              "url": "https://bmwengine.uk/engines/i3-motor/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "i3 Neue Klasse Dual Motor",
+              "url": "https://bmwengine.uk/engines/na0-motor/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "i4 eDrive40 Motor",
+              "url": "https://bmwengine.uk/engines/i4-motor/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "i4 M60 xDrive Motor",
+              "url": "https://bmwengine.uk/engines/i4-m60-motor/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 5,
+              "name": "i5 eDrive40 Motor",
+              "url": "https://bmwengine.uk/engines/i5-motor/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 6,
+              "name": "i5 M60 xDrive Motor",
+              "url": "https://bmwengine.uk/engines/i5-m60-motor/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 7,
+              "name": "i7 eDrive50 Motor",
+              "url": "https://bmwengine.uk/engines/i7-motor/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 8,
+              "name": "i7 xDrive60 Motor",
+              "url": "https://bmwengine.uk/engines/i7-xdrive60-motor/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 9,
+              "name": "i7 M70 xDrive Motor",
+              "url": "https://bmwengine.uk/engines/i7-m70-motor/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 10,
+              "name": "iX xDrive40 Motor",
+              "url": "https://bmwengine.uk/engines/ix-motor/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 11,
+              "name": "iX xDrive50 Motor",
+              "url": "https://bmwengine.uk/engines/ix-xdrive50-motor/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 12,
+              "name": "iX M60 Motor",
+              "url": "https://bmwengine.uk/engines/ix-m60-motor/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 13,
+              "name": "iX3 Motor",
+              "url": "https://bmwengine.uk/engines/ix3-motor/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 14,
+              "name": "i8 PHEV System",
+              "url": "https://bmwengine.uk/engines/i8-phev/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does a BMW i Series electric motor replacement cost in the UK?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A reconditioned BMW i Series electric motor typically costs £3,000–£5,000 supply only [BMW-QUOTE] — with dual-motor models costing more. Battery replacement costs £5,000–£15,000+ depending on model and battery size. Fitting adds £650–£1,500. Use our calculator for a personalised figure."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which BMW i Series model is the most reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The i4 eDrive40 — proven Gen5 eDrive technology, single motor simplicity, and established battery technology. The iX xDrive40 is also excellent. Avoid the early i3 60 Ah (battery degradation) and the i8 (hybrid complexity)."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which BMW i Series model should I avoid?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No model outright — but an early i3 60 Ah (2013–2016) without a battery health check is the one purchase we consistently advise against. The i8 is a fantastic car but carries hybrid complexity — budget for specialist servicing. A 42 kWh i3, i4, or iX has no such caveat."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I know if my i Series motor or battery needs replacing?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "By issue: whining noise under load (motor bearing wear), reduced range (battery degradation), increased charging times (battery degradation), charging port failure (charging system), reduced power (i8 hybrid system). On the i3, any significant range reduction is a warning sign. Caught early, it's a service; ignored, it's a £3,000–£15,000+ replacement."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is it worth replacing a BMW i Series motor or battery?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Depends entirely on model and component. Against a £20,000–£30,000 i4, a £3,000–£5,000 motor replacement is 10–25% — ✅ safe. A £7,000–£11,000 battery replacement is 23–55% — ⚠️ watch. Against a £8,000–£15,000 early i3, a £5,000–£10,000 battery replacement is 33–125% — ❌ walk away. Our 60% BMW threshold is the line: below 60% is safe; above it, run the maths carefully. Use our calculator for your car."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which BMW i Series should I buy?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "i4 eDrive40 with Gen5 eDrive — 286 hp, 340 miles of range, proven technology, and sensible used values (£20,000–£30,000). For the budget option, i3 120 Ah (42 kWh) — the largest battery is the one to buy; budget for a battery health check before purchase. For the future, Neue Klasse i3 — 469 hp, 800V architecture, and near-M3 power. For the collector, i8 — a future classic with hybrid complexity."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I find my BMW i Series battery capacity?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Listed on the VIN plate and in the vehicle documentation; the battery capacity is also visible in the iDrive system under charging settings. Or tell us your model year and variant (i3 60 Ah, i4 eDrive40, iX xDrive50) and we'll identify it — 20+ vetted specialists will confirm it for free."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "BMW i4 vs Tesla Model 3 — which is more reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The i4 is significantly more premium and better built than the Model 3 — the i4's interior quality and build quality are superior. The Model 3 has better charging infrastructure access (Tesla Supercharger network) but the i4 is closing the gap. The i4's Gen5 eDrive is proven and reliable. Buy the i4 for premium quality; buy the Model 3 for charging network access."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "BMWEngines.uk",
+          "url": "https://bmwengine.uk/",
+          "logo": "https://bmwengine.uk/images/bmwengines-logo.png",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "BMW i Series Electric Motor & Battery Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "3000",
+            "highPrice": "15000",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "name": "BMW i Series UK Electric Motor & Battery Enquiry Data 2025",
+          "description": "Proprietary UK enquiry volumes and demand trends for BMW i Series electric motors and batteries, sourced from BMWEngines.uk's specialist marketplace activity.",
+          "creator": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk"
+          },
+          "temporalCoverage": "2025",
+          "spatialCoverage": "United Kingdom"
+        },
+        {
+          "@type": "WebPage",
+          "name": "BMW i Series Electric Motor & Battery Cost UK — Compare Quotes",
+          "url": "https://bmwengine.uk/i-series/",
+          "author": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk Specialist Network"
+          },
+          "datePublished": "2026-07-10",
+          "dateModified": "2026-07-10"
+        }
+      ]
+    }
   },
   "hero": {
     "tagPill": "BMW i Series • 2013–Present • 7 Models (i3, i4, i5, i7, i8, iX, iX3) • Electric Motors, PHEV, Neue Klasse 800V",
@@ -143,156 +429,109 @@
       {
         "metric": "Overall Rating",
         "value": "★★★★☆ 4.0/5"
-      },
-      {
-        "metric": "SECTION 4 — MODELS — <GenerationsGrid>",
-        "value": "H2: BMW i Series — Find Your Model"
-      },
-      {
-        "metric": "Sub-headline: Seven models, two decades of innovation, and one electric future. The right i Series depends on which model and which battery technology you choose.",
-        "value": "i3 — The Pioneer (2013–2022)"
-      },
-      {
-        "metric": "BMW i3 (I01)",
-        "value": "2013–2022 • 125–170 hp electric motor, 22–42 kWh battery"
-      },
-      {
-        "metric": "★★★★☆",
-        "value": "Our Verdict: BMW's first mass-produced electric car — a carbon-fibre city car with a design that still looks futuristic. The early 22 kWh models suffer from battery degradation; the 42 kWh (120 Ah) models are the ones to buy. The range-extender (REX) model adds complexity — buy pure EV."
-      },
-      {
-        "metric": "Explore the i3 →",
-        "value": "i8 — The Hybrid Supercar (2014–2020)"
-      },
-      {
-        "metric": "BMW i8 (I12/I15)",
-        "value": "2014–2020 • 1.5L turbo I3 + 131 hp electric motor • 369 hp combined • 20,465 produced"
-      },
-      {
-        "metric": "★★★★☆",
-        "value": "Our Verdict: The plug-in hybrid supercar that defined BMW's electric ambitions — butterfly doors, carbon-fibre chassis, and the B38 three-cylinder engine paired with an electric motor. The i8 is a future classic — but the hybrid complexity means specialist-only servicing. Buy the best-documented example you can afford."
-      },
-      {
-        "metric": "Explore the i8 →",
-        "value": "iX3 — The Electric SUV Pioneer"
-      },
-      {
-        "metric": "BMW iX3 (G08)",
-        "value": "2020–present • 286–320 hp electric motor, 80 kWh battery"
-      },
-      {
-        "metric": "★★★★☆",
-        "value": "Our Verdict: BMW's first electric SUV — based on the X3 platform. The iX3 is the accessible entry point to BMW electric SUV ownership. The 320 hp 40 model delivers 395 miles of range and 300 kW charging — the new entry-level EV SUV."
-      },
-      {
-        "metric": "Explore the iX3 →",
-        "value": "i4 — The Electric Gran Coupé 🔥 Most Enquired"
-      },
-      {
-        "metric": "BMW i4 (G26)",
-        "value": "2021–present • 286–544 hp electric motors, 66–81 kWh battery"
-      },
-      {
-        "metric": "★★★★★",
-        "value": "Our Verdict: The electric 4 Series Gran Coupé — BMW's answer to the Tesla Model 3. The eDrive40 delivers 340 miles of range and 286 hp; the M60 xDrive delivers 544 hp and 0-62 mph in 3.9 seconds. The i4 is the sweet spot in the i Series range — proven Gen5 eDrive, sensible values, and genuine driver engagement."
-      },
-      {
-        "metric": "Explore the i4 →",
-        "value": "i5 — The Electric Executive"
-      },
-      {
-        "metric": "BMW i5 (G60)",
-        "value": "2023–present • 340–601 hp electric motors, 81 kWh battery"
-      },
-      {
-        "metric": "★★★★★",
-        "value": "Our Verdict: The first electric 5 Series — available as eDrive40 (340 hp, RWD), xDrive40 (394 hp, AWD), and M60 xDrive (601 hp, AWD). The i5 delivers executive luxury with electric performance. The M60 xDrive is the ultimate electric 5 Series — 601 hp and 0-62 mph in 3.8 seconds."
-      },
-      {
-        "metric": "Explore the i5 →",
-        "value": "i7 — The Electric Flagship 👑 The Ultimate Electric BMW"
-      },
-      {
-        "metric": "BMW i7 (G70)",
-        "value": "2022–present • 455–680 hp electric motors, 112 kWh battery"
-      },
-      {
-        "metric": "★★★★★",
-        "value": "Our Verdict: The electric 7 Series — BMW's flagship luxury saloon. Available as eDrive50 (455 hp), xDrive60 (544 hp), and the M70 xDrive (680 hp). The i7 M70 delivers 680 hp, 1,100 Nm of torque, and 426 miles of range — the ultimate electric luxury saloon."
-      },
-      {
-        "metric": "Explore the i7 →",
-        "value": "iX — The Electric SUV Flagship"
-      },
-      {
-        "metric": "BMW iX (I20)",
-        "value": "2021–present • 408–659 hp electric motors, 95–109 kWh battery"
-      },
-      {
-        "metric": "★★★★★",
-        "value": "Our Verdict: BMW's electric SUV flagship — the most technologically advanced BMW ever made. Available as xDrive40 (408 hp), xDrive50 (544 hp), and M60 (659 hp). The iX M60 delivers 659 hp, 1,015 Nm of torque, and 0-62 mph in 3.8 seconds. The iX is the i Series for buyers who want the ultimate electric SUV."
-      },
-      {
-        "metric": "Explore the iX →",
-        "value": "The Battery Divide — The Line That Matters Most"
-      },
-      {
-        "metric": "Gen5 eDrive (400V)",
-        "value": "Gen6 / Neue Klasse (800V)"
-      },
-      {
-        "metric": "Models",
-        "value": "i4, i5, i7, iX (early), iX3"
-      },
-      {
-        "metric": "Neue Klasse i3, iX3 40 (2026+), i7 M70 (2026+)",
-        "value": "Charging speed"
-      },
-      {
-        "metric": "Up to 205 kW",
-        "value": "Up to 300–400 kW"
-      },
-      {
-        "metric": "10-80% charge",
-        "value": "~30–35 minutes"
-      },
-      {
-        "metric": "~21–28 minutes",
-        "value": "Range"
-      },
-      {
-        "metric": "Up to 367 miles",
-        "value": "Up to 550 miles"
-      },
-      {
-        "metric": "Our position",
-        "value": "Proven, established, sensible used buy"
-      },
-      {
-        "metric": "The future — buy with confidence",
-        "value": "Read the full comparison: BMW i Series Gen5 vs Gen6 eDrive →"
-      },
-      {
-        "metric": "The i3 Name Change — Two Completely Different Cars",
-        "value": "Correction applied (internal): The \"i3\" name covers two completely different vehicles:"
-      },
-      {
-        "metric": "* i3 (I01): The carbon-fibre city car produced 2013–2022 — BMW's first mass-produced EV.",
-        "value": "* i3 (NA0): The Neue Klasse electric 3 Series saloon (2026–present) — an entirely new model with 800V architecture, 469 hp, and up to 900 km range."
       }
     ]
   },
   "generations": {
-    "h2": "",
-    "subHeadline": "",
-    "cards": [],
+    "h2": "BMW i Series — Find Your Model",
+    "subHeadline": "Seven models, two decades of innovation, and one electric future. The right i Series depends on which model and which battery technology you choose.",
+    "cards": [
+      {
+        "title": "i3 — The Pioneer (2013–2022)",
+        "badge": "",
+        "meta": "2013–2022 • 125–170 hp electric motor, 22–42 kWh battery",
+        "rating": "★★★★☆",
+        "verdict": "BMW's first mass-produced electric car — a carbon-fibre city car with a design that still looks futuristic. The early 22 kWh models suffer from battery degradation; the 42 kWh (120 Ah) models are the ones to buy. The range-extender (REX) model adds complexity — buy pure EV.",
+        "cta": {
+          "label": "Explore the i3 →",
+          "href": "#"
+        }
+      },
+      {
+        "title": "i8 — The Hybrid Supercar (2014–2020)",
+        "badge": "",
+        "meta": "2014–2020 • 1.5L turbo I3 + 131 hp electric motor • 369 hp combined • 20,465 produced",
+        "rating": "★★★★☆",
+        "verdict": "The plug-in hybrid supercar that defined BMW's electric ambitions — butterfly doors, carbon-fibre chassis, and the B38 three-cylinder engine paired with an electric motor. The i8 is a future classic — but the hybrid complexity means specialist-only servicing. Buy the best-documented example you can afford.",
+        "cta": {
+          "label": "Explore the i8 →",
+          "href": "#"
+        }
+      },
+      {
+        "title": "iX3 — The Electric SUV Pioneer",
+        "badge": "",
+        "meta": "2020–present • 286–320 hp electric motor, 80 kWh battery",
+        "rating": "★★★★☆",
+        "verdict": "BMW's first electric SUV — based on the X3 platform. The iX3 is the accessible entry point to BMW electric SUV ownership. The 320 hp 40 model delivers 395 miles of range and 300 kW charging — the new entry-level EV SUV.",
+        "cta": {
+          "label": "Explore the iX3 →",
+          "href": "#"
+        }
+      },
+      {
+        "title": "i4 — The Electric Gran Coupé",
+        "badge": "🔥 Most Enquired",
+        "meta": "2021–present • 286–544 hp electric motors, 66–81 kWh battery",
+        "rating": "★★★★★",
+        "verdict": "The electric 4 Series Gran Coupé — BMW's answer to the Tesla Model 3. The eDrive40 delivers 340 miles of range and 286 hp; the M60 xDrive delivers 544 hp and 0-62 mph in 3.9 seconds. The i4 is the sweet spot in the i Series range — proven Gen5 eDrive, sensible values, and genuine driver engagement.",
+        "cta": {
+          "label": "Explore the i4 →",
+          "href": "#"
+        }
+      },
+      {
+        "title": "i5 — The Electric Executive",
+        "badge": "",
+        "meta": "2023–present • 340–601 hp electric motors, 81 kWh battery",
+        "rating": "★★★★★",
+        "verdict": "The first electric 5 Series — available as eDrive40 (340 hp, RWD), xDrive40 (394 hp, AWD), and M60 xDrive (601 hp, AWD). The i5 delivers executive luxury with electric performance. The M60 xDrive is the ultimate electric 5 Series — 601 hp and 0-62 mph in 3.8 seconds.",
+        "cta": {
+          "label": "Explore the i5 →",
+          "href": "#"
+        }
+      },
+      {
+        "title": "i7 — The Electric Flagship 👑 The Ultimate Electric BMW",
+        "badge": "",
+        "meta": "2022–present • 455–680 hp electric motors, 112 kWh battery",
+        "rating": "★★★★★",
+        "verdict": "The electric 7 Series — BMW's flagship luxury saloon. Available as eDrive50 (455 hp), xDrive60 (544 hp), and the M70 xDrive (680 hp). The i7 M70 delivers 680 hp, 1,100 Nm of torque, and 426 miles of range — the ultimate electric luxury saloon.",
+        "cta": {
+          "label": "Explore the i7 →",
+          "href": "#"
+        }
+      },
+      {
+        "title": "iX — The Electric SUV Flagship",
+        "badge": "",
+        "meta": "2021–present • 408–659 hp electric motors, 95–109 kWh battery",
+        "rating": "★★★★★",
+        "verdict": "BMW's electric SUV flagship — the most technologically advanced BMW ever made. Available as xDrive40 (408 hp), xDrive50 (544 hp), and M60 (659 hp). The iX M60 delivers 659 hp, 1,015 Nm of torque, and 0-62 mph in 3.8 seconds. The iX is the i Series for buyers who want the ultimate electric SUV.",
+        "cta": {
+          "label": "Explore the iX →",
+          "href": "#"
+        }
+      },
+      {
+        "title": "The Battery Divide — The Line That Matters Most",
+        "badge": "",
+        "meta": "Neue Klasse i3, iX3 40 (2026+), i7 M70 (2026+)",
+        "rating": "",
+        "verdict": "",
+        "cta": {
+          "label": "",
+          "href": "#"
+        }
+      }
+    ],
     "rangeTable": {
       "title": "",
       "columns": [],
       "rows": []
     },
     "comparisonLink": {
-      "label": "",
+      "label": "Read the full comparison: BMW i Series Gen5 vs Gen6 eDrive →",
       "href": "#"
     }
   },

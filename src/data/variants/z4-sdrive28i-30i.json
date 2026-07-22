@@ -579,44 +579,43 @@
       {
         "label": "Regional Demand",
         "value": "South East (22%), London (18%), South West (14%)【PATTERN DATA】"
-      },
-      {
-        "label": "SECTION 8 — FAQ",
-        "value": "1. How much does a BMW Z4 sDrive28i / 30i engine replacement cost in the UK?"
-      },
-      {
-        "label": "A reconditioned Z4 sDrive28i (N20) engine typically costs £3,500–£6,500 supply only, while a reconditioned sDrive30i (B48) engine costs £4,500–£8,500. Fitting adds £800–£1,500 at independent specialist rates. Use our calculator for a figure specific to your car.",
-        "value": "2. Is the BMW Z4 sDrive28i / 30i engine reliable?"
-      },
-      {
-        "label": "It depends on which generation you're asking about. The N20 (E89 sDrive28i, 2011–2016) has a well-documented timing chain tensioner issue — pre-2015 cars are the highest risk, and the water pump recall is a safety-critical item. The B48 (G29 sDrive30i, 2019+) is generally considered reliable, with the B48-powered Z4 well-regarded for its powertrain, but oil and coolant leaks are common. Across both, oil-change discipline is everything.",
-        "value": "3. What are the common problems with the BMW Z4 sDrive28i / 30i?"
-      },
-      {
-        "label": "N20 timing chain wear (E89), N20 water pump recall (E89 — fire risk), B48 oil leaks from valve cover and oil filter housing (G29), B48 timing chain guide fragility (G29), and B48 coolant leaks (G29). See the Era Map above for generation-specific advice.",
-        "value": "4. Is it worth replacing a BMW Z4 sDrive28i / 30i engine, or should I scrap the car?"
-      },
-      {
-        "label": "Depends on vehicle value. Against a well-kept E89 Z4 (values £6,000–£15,000+), a £4,000–£5,000 recon is 30–60% of the car's value — borderline but often worth it for a good example. Against a £20,000–£40,000 G29, a £5,000–£6,000 recon is 15–25% — worth it. The BMW scrap threshold of 70% means evaluating the whole vehicle and its condition before committing.",
-        "value": "5. How do I find my BMW Z4 sDrive28i / 30i engine code?"
-      },
-      {
-        "label": "Listed on the VIN plate and vehicle documentation. As a rule of thumb: E89 sDrive28i (2011–2016) = N20B20A; G29 sDrive30i (2019–present) = B48B20. Tell us your registration date and we'll confirm it for free.",
-        "value": "6. Can I repair the N20 timing chain, or does it need replacement?"
-      },
-      {
-        "label": "Yes — if caught early. A preventative chain, tensioner and guide replacement costs £800–£2,000. BMW extended the warranty on N20 timing chains to 7 years/70,000 miles in some markets. However, if the chain snaps, a full engine replacement (£3,500–£6,500) is usually required. At the first sign of cold-start rattle, book an inspection immediately.",
-        "value": "Disclaimer: All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty — always confirm terms with your chosen supplier."
-      },
-      {
-        "label": "SECTION 9, META AND SCHEMA",
-        "value": "PART 2 — SECTION 9 + META + SCHEMA"
       }
     ]
   },
   "faq": {
-    "items": [],
-    "disclaimer": ""
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a BMW Z4 sDrive28i / 30i engine replacement cost in the UK?",
+        "answer": "A reconditioned Z4 sDrive28i (N20) engine typically costs £3,500–£6,500 supply only, while a reconditioned sDrive30i (B48) engine costs £4,500–£8,500. Fitting adds £800–£1,500 at independent specialist rates. Use our calculator for a figure specific to your car."
+      },
+      {
+        "id": 2,
+        "question": "Is the BMW Z4 sDrive28i / 30i engine reliable?",
+        "answer": "It depends on which generation you're asking about. The N20 (E89 sDrive28i, 2011–2016) has a well-documented timing chain tensioner issue — pre-2015 cars are the highest risk, and the water pump recall is a safety-critical item. The B48 (G29 sDrive30i, 2019+) is generally considered reliable, with the B48-powered Z4 well-regarded for its powertrain, but oil and coolant leaks are common. Across both, oil-change discipline is everything."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the BMW Z4 sDrive28i / 30i?",
+        "answer": "N20 timing chain wear (E89), N20 water pump recall (E89 — fire risk), B48 oil leaks from valve cover and oil filter housing (G29), B48 timing chain guide fragility (G29), and B48 coolant leaks (G29). See the Era Map above for generation-specific advice."
+      },
+      {
+        "id": 4,
+        "question": "Is it worth replacing a BMW Z4 sDrive28i / 30i engine, or should I scrap the car?",
+        "answer": "Depends on vehicle value. Against a well-kept E89 Z4 (values £6,000–£15,000+), a £4,000–£5,000 recon is 30–60% of the car's value — borderline but often worth it for a good example. Against a £20,000–£40,000 G29, a £5,000–£6,000 recon is 15–25% — worth it. The BMW scrap threshold of 70% means evaluating the whole vehicle and its condition before committing."
+      },
+      {
+        "id": 5,
+        "question": "How do I find my BMW Z4 sDrive28i / 30i engine code?",
+        "answer": "Listed on the VIN plate and vehicle documentation. As a rule of thumb: E89 sDrive28i (2011–2016) = N20B20A; G29 sDrive30i (2019–present) = B48B20. Tell us your registration date and we'll confirm it for free."
+      },
+      {
+        "id": 6,
+        "question": "Can I repair the N20 timing chain, or does it need replacement?",
+        "answer": "Yes — if caught early. A preventative chain, tensioner and guide replacement costs £800–£2,000. BMW extended the warranty on N20 timing chains to 7 years/70,000 miles in some markets. However, if the chain snaps, a full engine replacement (£3,500–£6,500) is usually required. At the first sign of cold-start rattle, book an inspection immediately."
+      }
+    ],
+    "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty — always confirm terms with your chosen supplier."
   },
   "trustCta": {
     "h2": "Why UK BMW Z4 sDrive28i / 30i Owners Trust BMWEngines.uk",

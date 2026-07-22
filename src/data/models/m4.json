@@ -313,92 +313,43 @@
       {
         "metric": "Overall Rating",
         "value": "★★★★☆ 4.1/5"
-      },
-      {
-        "metric": "SECTION 4 — GENERATIONS — <GenerationsGrid>",
-        "value": "H2: BMW M4 Generations — Find Your Vehicle"
-      },
-      {
-        "metric": "Sub-headline: Two generations, two body styles, and one mission — to be the ultimate performance coupe. The right M4 depends on your budget and which engine you want.",
-        "value": "First Generation — F82/F83 M4 (2014–2020)"
-      },
-      {
-        "metric": "BMW M4 F82/F83 🔥 Most Enquired — S55 drives volume [BMW-VERIFIED]",
-        "value": "2014–2020 • S55B30 3.0L twin-turbo straight-six • 425–444 bhp (Competition)"
-      },
-      {
-        "metric": "★★★★☆",
-        "value": "Our Verdict: The original M4 — the coupe and convertible that replaced the E92 M3. The S55 is proven and powerful, but the crank hub is the Achilles heel. The Competition (444 bhp) is the sweet spot; the GTS (493 bhp) is the ultimate F82. Budget for a crank hub fix (£1,500–£3,000) or buy one that's already been done."
-      },
-      {
-        "metric": "Explore the F82 M4 →",
-        "value": "Second Generation — G82/G83 M4 (2021–present)"
-      },
-      {
-        "metric": "BMW M4 G82/G83",
-        "value": "2021–present • S58B30 3.0L twin-turbo straight-six • 473–503 bhp"
-      },
-      {
-        "metric": "★★★★★",
-        "value": "Our Verdict: The second-generation M4 — bigger, more powerful, and built on the CLAR platform shared with the G80 M3. The S58 is widely regarded as BMW's most reliable modern performance engine. Available with rear-wheel drive (473 bhp manual) or M xDrive (503 bhp auto). The G82 is the M4 for the modern era — buy it with confidence."
-      },
-      {
-        "metric": "Explore the G82 M4 →",
-        "value": "The Engine Choice — The Line That Matters Most"
-      },
-      {
-        "metric": "F82 (S55)",
-        "value": "G82 (S58)"
-      },
-      {
-        "metric": "Power",
-        "value": "425–444 bhp"
-      },
-      {
-        "metric": "473–503 bhp",
-        "value": "Reliability"
-      },
-      {
-        "metric": "★★★★☆ (with crank hub done)",
-        "value": "★★★★★"
-      },
-      {
-        "metric": "Defining risk",
-        "value": "Crank hub spin"
-      },
-      {
-        "metric": "None significant",
-        "value": "Recon cost"
-      },
-      {
-        "metric": "£7,000–£10,000+",
-        "value": "£7,000–£10,000+"
-      },
-      {
-        "metric": "Our position",
-        "value": "The used sweet spot — budget for crank hub"
-      },
-      {
-        "metric": "The one to buy if budget allows",
-        "value": "Read the full comparison: BMW M4 F82 vs G82 →"
-      },
-      {
-        "metric": "The Crank Hub Question — The Achilles Heel of the S55",
-        "value": "Correction applied (internal): The S55 engine in the F82/F83 M4 shares the crank hub weakness with the F80 M3. The crank hub is not keyed to the crankshaft — it relies on friction alone. Under high load (especially on tuned cars), the hub can spin, causing catastrophic piston-to-valve contact. This is the defining risk of the S55-powered M4s. The S58 in the G82 has a revised design that addresses this weakness."
       }
     ]
   },
   "generations": {
-    "h2": "",
-    "subHeadline": "",
-    "cards": [],
+    "h2": "BMW M4 Generations — Find Your Vehicle",
+    "subHeadline": "Two generations, two body styles, and one mission — to be the ultimate performance coupe. The right M4 depends on your budget and which engine you want.",
+    "cards": [
+      {
+        "title": "First Generation — F82/F83 M4 (2014–2020)",
+        "badge": "BMW M4 F82/F83 🔥 Most Enquired — S55 drives volume [BMW-VERIFIED]",
+        "meta": "2014–2020 • S55B30 3.0L twin-turbo straight-six • 425–444 bhp (Competition)",
+        "rating": "★★★★☆",
+        "verdict": "The original M4 — the coupe and convertible that replaced the E92 M3. The S55 is proven and powerful, but the crank hub is the Achilles heel. The Competition (444 bhp) is the sweet spot; the GTS (493 bhp) is the ultimate F82. Budget for a crank hub fix (£1,500–£3,000) or buy one that's already been done.",
+        "cta": {
+          "label": "Explore the F82 M4 →",
+          "href": "#"
+        }
+      },
+      {
+        "title": "Second Generation — G82/G83 M4 (2021–present)",
+        "badge": "",
+        "meta": "2021–present • S58B30 3.0L twin-turbo straight-six • 473–503 bhp",
+        "rating": "★★★★★",
+        "verdict": "The second-generation M4 — bigger, more powerful, and built on the CLAR platform shared with the G80 M3. The S58 is widely regarded as BMW's most reliable modern performance engine. Available with rear-wheel drive (473 bhp manual) or M xDrive (503 bhp auto). The G82 is the M4 for the modern era — buy it with confidence.",
+        "cta": {
+          "label": "Explore the G82 M4 →",
+          "href": "#"
+        }
+      }
+    ],
     "rangeTable": {
       "title": "",
       "columns": [],
       "rows": []
     },
     "comparisonLink": {
-      "label": "",
+      "label": "Read the full comparison: BMW M4 F82 vs G82 →",
       "href": "#"
     }
   },

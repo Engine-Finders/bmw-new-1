@@ -1,11 +1,308 @@
 {
   "meta": {
     "slug": "bmw-7-series-e38",
-    "title": "BMW 7 Series E38 Engines — The Complete UK Guide",
-    "titleCharCount": 48,
-    "description": "",
-    "descriptionCharCount": 0,
-    "jsonLd": {}
+    "title": "E38 Engine Replacement Cost UK — Compare Quotes",
+    "titleCharCount": 57,
+    "description": "Every BMW 7 Series E38 engine — 728i, 730i, 735i, 740i, 750i, 725tds, 730d, 740d. Real UK costs, honest reliability data, and classic BMW luxury. Get free quotes from 20+ vetted BMW specialists today.",
+    "descriptionCharCount": 158,
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://bmwengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "7 Series",
+              "item": "https://bmwengine.uk/7-series/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "BMW 7 Series E38",
+              "item": "https://bmwengine.uk/7-series/e38/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "BMW 7 Series E38 Engine Codes",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "M52B28 728i Engine",
+              "url": "https://bmwengine.uk/engines/m52b28/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "M60B30 730i Engine",
+              "url": "https://bmwengine.uk/engines/m60b30/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "M62B35 735i Engine",
+              "url": "https://bmwengine.uk/engines/m62b35/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "M60B40 740i Engine",
+              "url": "https://bmwengine.uk/engines/m60b40/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 5,
+              "name": "M62B44 740i Engine",
+              "url": "https://bmwengine.uk/engines/m62b44/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 6,
+              "name": "M73B54 750i Engine",
+              "url": "https://bmwengine.uk/engines/m73b54/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 7,
+              "name": "M51D25 725tds Engine",
+              "url": "https://bmwengine.uk/engines/m51d25/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 8,
+              "name": "M57D30 730d Engine",
+              "url": "https://bmwengine.uk/engines/m57d30/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 9,
+              "name": "M67D40 740d Engine",
+              "url": "https://bmwengine.uk/engines/m67d40/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "BMW 7 Series E38 Core Variants",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "728i",
+              "url": "https://bmwengine.uk/7-series/728i/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "728iL",
+              "url": "https://bmwengine.uk/7-series/728il/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "730i",
+              "url": "https://bmwengine.uk/7-series/730i/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "730iL",
+              "url": "https://bmwengine.uk/7-series/730il/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 5,
+              "name": "735i",
+              "url": "https://bmwengine.uk/7-series/735i/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 6,
+              "name": "735iL",
+              "url": "https://bmwengine.uk/7-series/735il/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 7,
+              "name": "740i",
+              "url": "https://bmwengine.uk/7-series/740i/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 8,
+              "name": "740iL",
+              "url": "https://bmwengine.uk/7-series/740il/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 9,
+              "name": "750i",
+              "url": "https://bmwengine.uk/7-series/750i/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 10,
+              "name": "750iL",
+              "url": "https://bmwengine.uk/7-series/750il/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 11,
+              "name": "725tds",
+              "url": "https://bmwengine.uk/7-series/725tds/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 12,
+              "name": "730d",
+              "url": "https://bmwengine.uk/7-series/730d/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 13,
+              "name": "740d",
+              "url": "https://bmwengine.uk/7-series/740d/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does a BMW 7 Series E38 engine replacement cost in the UK?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A reconditioned E38 engine typically costs £2,000–£7,000 supply only, depending on engine — the M52 728i sits at £2,000–£3,500, while the M73 V12 runs £4,000–£7,000. Fitting adds £650–£1,170. Use our calculator for a personalised figure."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which E38 7 Series engine is the most reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The M52B28 (728i) is the most economical and reliable six-cylinder choice — 193 PS, smooth and well-supported, though cooling system attention is required. The M62TÜB44 (post-1998 740i) is the pick of the V8s — 286 PS with VANOS and improved over the earlier Nikasil-prone M60. The M73 V12 is also considered one of the most reliable engines in the range, but it's expensive to maintain."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What are the common problems with the E38 7 Series?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Timing chain guide wear on the M62 V8, Nikasil bore wear on early M60 V8s and M52 six-cylinders, cooling system failures across all engines, oil leaks on the M73 V12, and injector/turbo issues on the diesel variants. All are well-understood by BMW specialists."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the BMW E38 7 Series reliable overall?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes — the E38 is considered one of BMW's most solid luxury saloons. The six-cylinder M52 and V12 M73 are genuinely robust; the M62 V8 is refined but requires timing chain guide attention; the diesels are economical but require specialist care. The E38 is a classic car; maintenance costs reflect its age and complexity."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which E38 7 Series engine should I avoid?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No outright avoidance — but early M60 V8s (1994–1996) and early M52 six-cylinders with Nikasil cylinder linings deserve a compression test before purchase; high-sulphur fuel could cause bore wear. A 725tds without documented injector or turbo history also merits a thorough inspection."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I know if my E38 7 Series engine needs replacing?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Timing chain slap on cold start (M62 V8), loss of compression or rough running (M60/M52 Nikasil), coolant loss or overheating (all engines), oil leaks (M73), or rough running and smoke (M51/M57 diesels) are key warnings. Use our diagnostic calculator for a personalised assessment."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is it worth replacing an E38 7 Series engine, or should I scrap the car?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Depends on the car's value. Against a well-kept £4,000+ E38, a £2,800 M62 recon is 70% of the car's value — approaching our 70% BMW threshold, assess carefully. Against a tired £2,000 example, the same recon is 140% — walk away. For V12s and rare V8 diesels, the calculus is different: these are future classics where engine replacement can be justified if the car is otherwise excellent."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How long do E38 7 Series engines last?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The M52 six-cylinder can exceed 150,000+ miles with regular maintenance. The M62 V8 is capable of 150,000+ miles with timing chain guide attention. The M73 V12 can exceed 200,000 miles with proper care. The M57 diesel can reach 150,000+ miles with injector and turbo attention. The M67 V8 diesel is rare but capable of high mileage with specialist care."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the difference between the E38 and the E65?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The E38 (1994–2001) is the third-generation 7 Series — a classic BMW design with traditional engines, analogue controls and a more classic driving experience. The E65 (2001–2008) is the fourth-generation successor — more modern, with iDrive, more advanced electronics and the introduction of the N62 V8. The E38 is considered one of the finest 7 Series generations; the E65 is more divisive. See each generation's own page for specifics."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I find my E38 7 Series engine code?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Check the VIN plate, vehicle documentation, or the engine block — 2.8-litre six-cylinder is M52B28 or M52TÜB28, 3.0-litre V8 is M60B30, 3.5-litre V8 is M62B35 or M62TÜB35, 4.0-litre V8 is M60B40, 4.4-litre V8 is M62B44 or M62TÜB44, 5.4-litre V12 is M73B54 or M73TÜB54, 2.5-litre diesel is M51D25, 2.9-litre diesel is M57D30, and 3.9-litre V8 diesel is M67D40. Tell us your variant and registration year and we'll identify it — 20+ vetted BMW specialists will confirm it for free."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "BMWEngines.uk",
+          "url": "https://bmwengine.uk/",
+          "logo": "https://bmwengine.uk/images/bmwengines-logo.png",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "BMW 7 Series E38 Engine Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "2000",
+            "highPrice": "7000",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "WebPage",
+          "name": "E38 Engine Replacement Cost UK — Compare Quotes",
+          "url": "https://bmwengine.uk/7-series/e38/",
+          "author": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk Specialist Network"
+          },
+          "datePublished": "2026-07-09",
+          "dateModified": "2026-07-09"
+        }
+      ]
+    }
   },
   "internalDeclarations": {
     "checkA": "",
@@ -542,16 +839,80 @@
     "liveFeed": []
   },
   "faq": {
-    "items": []
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a BMW 7 Series E38 engine replacement cost in the UK?",
+        "answer": "A reconditioned E38 engine typically costs £2,000–£7,000 supply only [BMW-QUOTE], depending on engine — the M52 728i sits at £2,000–£3,500, while the M73 V12 runs £4,000–£7,000. Fitting adds £650–£1,170. Use our calculator for a personalised figure."
+      },
+      {
+        "id": 2,
+        "question": "Which E38 7 Series engine is the most reliable?",
+        "answer": "The M52B28 (728i) is the most economical and reliable six-cylinder choice — 193 PS, smooth and well-supported, though cooling system attention is required. The M62TÜB44 (post-1998 740i) is the pick of the V8s — 286 PS with VANOS and improved over the earlier Nikasil-prone M60. The M73 V12 is also considered one of the most reliable engines in the range, but it's expensive to maintain."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the E38 7 Series?",
+        "answer": "Timing chain guide wear on the M62 V8, Nikasil bore wear on early M60 V8s and M52 six-cylinders, cooling system failures across all engines, oil leaks on the M73 V12, and injector/turbo issues on the diesel variants. All are well-understood by BMW specialists."
+      },
+      {
+        "id": 4,
+        "question": "Is the BMW E38 7 Series reliable overall?",
+        "answer": "Yes — the E38 is considered one of BMW's most solid luxury saloons. The six-cylinder M52 and V12 M73 are genuinely robust; the M62 V8 is refined but requires timing chain guide attention; the diesels are economical but require specialist care. The E38 is a classic car; maintenance costs reflect its age and complexity."
+      },
+      {
+        "id": 5,
+        "question": "Which E38 7 Series engine should I avoid?",
+        "answer": "No outright avoidance — but early M60 V8s (1994–1996) and early M52 six-cylinders with Nikasil cylinder linings deserve a compression test before purchase; high-sulphur fuel could cause bore wear. A 725tds without documented injector or turbo history also merits a thorough inspection."
+      },
+      {
+        "id": 6,
+        "question": "How do I know if my E38 7 Series engine needs replacing?",
+        "answer": "Timing chain slap on cold start (M62 V8), loss of compression or rough running (M60/M52 Nikasil), coolant loss or overheating (all engines), oil leaks (M73), or rough running and smoke (M51/M57 diesels) are key warnings. Use our diagnostic calculator for a personalised assessment."
+      },
+      {
+        "id": 7,
+        "question": "Is it worth replacing an E38 7 Series engine, or should I scrap the car?",
+        "answer": "Depends on the car's value. Against a well-kept £4,000+ E38, a £2,800 M62 recon is 70% of the car's value — approaching our 70% BMW threshold, assess carefully. Against a tired £2,000 example, the same recon is 140% — walk away. For V12s and rare V8 diesels, the calculus is different: these are future classics where engine replacement can be justified if the car is otherwise excellent."
+      },
+      {
+        "id": 8,
+        "question": "How long do E38 7 Series engines last?",
+        "answer": "The M52 six-cylinder can exceed 150,000+ miles with regular maintenance. The M62 V8 is capable of 150,000+ miles with timing chain guide attention. The M73 V12 can exceed 200,000 miles with proper care. The M57 diesel can reach 150,000+ miles with injector and turbo attention. The M67 V8 diesel is rare but capable of high mileage with specialist care."
+      },
+      {
+        "id": 9,
+        "question": "What is the difference between the E38 and the E65?",
+        "answer": "The E38 (1994–2001) is the third-generation 7 Series — a classic BMW design with traditional engines, analogue controls and a more classic driving experience. The E65 (2001–2008) is the fourth-generation successor — more modern, with iDrive, more advanced electronics and the introduction of the N62 V8. The E38 is considered one of the finest 7 Series generations; the E65 is more divisive. See each generation's own page for specifics."
+      },
+      {
+        "id": 10,
+        "question": "How do I find my E38 7 Series engine code?",
+        "answer": "Check the VIN plate, vehicle documentation, or the engine block — 2.8-litre six-cylinder is M52B28 or M52TÜB28, 3.0-litre V8 is M60B30, 3.5-litre V8 is M62B35 or M62TÜB35, 4.0-litre V8 is M60B40, 4.4-litre V8 is M62B44 or M62TÜB44, 5.4-litre V12 is M73B54 or M73TÜB54, 2.5-litre diesel is M51D25, 2.9-litre diesel is M57D30, and 3.9-litre V8 diesel is M67D40. Tell us your variant and registration year and we'll identify it — 20+ vetted BMW specialists will confirm it for free."
+      }
+    ]
   },
   "trustCta": {
-    "h2": "",
-    "trustPoints": [],
-    "finalCta": "",
+    "h2": "Why UK BMW 7 Series E38 Owners Trust BMWEngines.uk",
+    "trustPoints": [
+      {
+        "title": "Trusted E38 Engine Suppliers",
+        "text": "every garage and engine rebuilder in our network is vetted, rated and reviewed by real 7 Series owners, as part of the Engine Finders network."
+      },
+      {
+        "title": "Compare E38 Engine Replacement Companies",
+        "text": "see prices, warranty terms and supply & fit options side-by-side before you commit."
+      },
+      {
+        "title": "UK Engine Replacement Services for E38",
+        "text": "covering every variant from 728i to 750i and 740d, with supply-only or full supply & fit available nationwide."
+      }
+    ],
+    "finalCta": "Find the best BMW 7 Series E38 engine replacement UK drivers rely on. Compare real prices from trusted specialists on EnginesMarket today and get back on the road with confidence.",
     "ctaButton": {
-      "label": "",
+      "label": "Compare BMW 7 Series E38 Engine Prices on EnginesMarket →",
       "href": "#",
-      "note": ""
+      "note": "[PLACEHOLDER — confirm EnginesMarket URL structure]"
     }
   }
 }

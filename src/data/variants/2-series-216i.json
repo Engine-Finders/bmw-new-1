@@ -613,44 +613,43 @@
       {
         "label": "Regional Demand",
         "value": "South East (22%), London (18%), North West (12%) [PATTERN DATA]"
-      },
-      {
-        "label": "SECTION 8 — FAQ",
-        "value": "1. How much does a BMW 2 Series 216i engine replacement cost in the UK?"
-      },
-      {
-        "label": "A reconditioned BMW 2 Series 216i (B38) engine typically costs £3,200–£5,000 supply only, depending on the generation and power output. Fitting adds £650–£1,300 at independent specialist rates. Use our calculator for a figure specific to your vehicle.",
-        "value": "2. Is the BMW 2 Series 216i engine reliable?"
-      },
-      {
-        "label": "The B38 three-cylinder engine has been in production since 2013 and has a mixed reliability reputation. While there are no widespread reports of bottom-end failures, common issues include timing chain tensioner wear, oil consumption and timing cover leaks, cooling system component failures, and engine mount failures. Regular maintenance is essential.",
-        "value": "3. What are the common problems with the BMW 2 Series 216i?"
-      },
-      {
-        "label": "Timing chain tensioner wear (cold-start rattle is the early warning), oil consumption and timing cover oil leaks (burning smell after drives), engine mount failure (excessive vibration at idle), cooling system failures (thermostat and water pump), and turbocharger seal failure. All are manageable with preventative maintenance and early detection.",
-        "value": "4. Is it worth replacing a BMW 2 Series 216i engine, or should I scrap the car?"
-      },
-      {
-        "label": "Against a well-maintained 2 Series (values £10,000–£25,000+ depending on year and model), a £3,500–£4,500 reconditioned engine is 15–35% of the vehicle's value — often worth it. The BMW scrap threshold of 70% means evaluating the whole vehicle before committing.",
-        "value": "5. How do I find my BMW 2 Series 216i engine code?"
-      },
-      {
-        "label": "The engine code (B38A15A, B38A15, or B38A15P) is listed on the VIN plate and vehicle documentation. The 216i badge has appeared across multiple 2 Series body styles since 2014. The early F45/F46 Active/Gran Tourer uses B38A15A (102–109 PS), the F44 Gran Coupé uses B38A15 (109 PS), and the U06 Active Tourer uses B38A15P (122 PS). Tell us your registration and we'll confirm for free.",
-        "value": "6. Can I repair the timing chain, or does it require engine replacement?"
-      },
-      {
-        "label": "Timing chain tensioner wear is repairable without replacing the engine — if caught early. A preventative chain and tensioner replacement costs £800–£1,800. If the chain snaps and valves meet pistons, a full engine replacement (£3,200–£5,000) is usually required. At the first sign of cold-start rattle, book an inspection immediately.",
-        "value": "Disclaimer: All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty — always confirm terms with your chosen supplier."
-      },
-      {
-        "label": "SECTION 9, META AND SCHEMA",
-        "value": "PART 2 — SECTION 9 + META + SCHEMA"
       }
     ]
   },
   "faq": {
-    "items": [],
-    "disclaimer": ""
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a BMW 2 Series 216i engine replacement cost in the UK?",
+        "answer": "A reconditioned BMW 2 Series 216i (B38) engine typically costs £3,200–£5,000 supply only, depending on the generation and power output. Fitting adds £650–£1,300 at independent specialist rates. Use our calculator for a figure specific to your vehicle."
+      },
+      {
+        "id": 2,
+        "question": "Is the BMW 2 Series 216i engine reliable?",
+        "answer": "The B38 three-cylinder engine has been in production since 2013 and has a mixed reliability reputation. While there are no widespread reports of bottom-end failures, common issues include timing chain tensioner wear, oil consumption and timing cover leaks, cooling system component failures, and engine mount failures. Regular maintenance is essential."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the BMW 2 Series 216i?",
+        "answer": "Timing chain tensioner wear (cold-start rattle is the early warning), oil consumption and timing cover oil leaks (burning smell after drives), engine mount failure (excessive vibration at idle), cooling system failures (thermostat and water pump), and turbocharger seal failure. All are manageable with preventative maintenance and early detection."
+      },
+      {
+        "id": 4,
+        "question": "Is it worth replacing a BMW 2 Series 216i engine, or should I scrap the car?",
+        "answer": "Against a well-maintained 2 Series (values £10,000–£25,000+ depending on year and model), a £3,500–£4,500 reconditioned engine is 15–35% of the vehicle's value — often worth it. The BMW scrap threshold of 70% means evaluating the whole vehicle before committing."
+      },
+      {
+        "id": 5,
+        "question": "How do I find my BMW 2 Series 216i engine code?",
+        "answer": "The engine code (B38A15A, B38A15, or B38A15P) is listed on the VIN plate and vehicle documentation. The 216i badge has appeared across multiple 2 Series body styles since 2014. The early F45/F46 Active/Gran Tourer uses B38A15A (102–109 PS), the F44 Gran Coupé uses B38A15 (109 PS), and the U06 Active Tourer uses B38A15P (122 PS). Tell us your registration and we'll confirm for free."
+      },
+      {
+        "id": 6,
+        "question": "Can I repair the timing chain, or does it require engine replacement?",
+        "answer": "Timing chain tensioner wear is repairable without replacing the engine — if caught early. A preventative chain and tensioner replacement costs £800–£1,800. If the chain snaps and valves meet pistons, a full engine replacement (£3,200–£5,000) is usually required. At the first sign of cold-start rattle, book an inspection immediately."
+      }
+    ],
+    "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty — always confirm terms with your chosen supplier."
   },
   "trustCta": {
     "h2": "Why UK BMW 2 Series 216i Owners Trust BMWEngines.uk",

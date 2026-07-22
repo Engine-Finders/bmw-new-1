@@ -1,24 +1,223 @@
 {
   "meta": {
-    "slug": "bmw-n13-n20",
+    "slug": "n13-n20",
     "title": "BMW N13/N20 Engine — Specs, Reliability & Replacement Cost",
-    "description": "",
-    "canonical": "",
+    "description": "The N13/N20 petrol fours are responsive and efficient — but timing‑chain guide failure is a known risk — backed by 800+ real UK enquiries. Compare quotes from 20+ vetted specialists today.",
+    "canonical": "https://bmwengine.uk/engines/n13-n20/",
     "openGraph": {
-      "title": "",
-      "description": "",
-      "type": "",
-      "url": "",
-      "image": "",
-      "siteName": ""
+      "title": "BMW N13/N20 Engine — Specs, Reliability & Replacement Cost",
+      "description": "The N13/N20 petrol fours are responsive and efficient — but timing‑chain guide failure is a known risk — backed by 800+ real UK enquiries. Compare quotes from 20+ vetted specialists today.",
+      "type": "website",
+      "url": "https://bmwengine.uk/engines/n13-n20/",
+      "image": "https://bmwengine.uk/images/bmw/engines/n13-n20.jpg",
+      "siteName": "bmwengine.uk"
     },
     "twitter": {
-      "card": "",
-      "title": "",
-      "description": "",
-      "image": ""
+      "card": "summary_large_image",
+      "title": "BMW N13/N20 Engine — Specs, Reliability & Replacement Cost",
+      "description": "The N13/N20 petrol fours are responsive and efficient — but timing‑chain guide failure is a known risk — backed by 800+ real UK enquiries. Compare quotes from 20+ vetted specialists today.",
+      "image": "https://bmwengine.uk/images/bmw/engines/n13-n20.jpg"
     },
-    "jsonLd": {}
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://bmwengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Engines",
+              "item": "https://bmwengine.uk/engines/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "N13/N20",
+              "item": "https://bmwengine.uk/engines/n13-n20/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "BMW models fitted with the N13/N20",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "BMW 1 Series F20/F21 114i/116i/118i/120i",
+              "url": "https://bmwengine.uk/models/1-series/f20/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "BMW 1 Series F40 118i (early)",
+              "url": "https://bmwengine.uk/models/1-series/f40/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "BMW 2 Series Active Tourer F45 218i",
+              "url": "https://bmwengine.uk/models/2-series/f45/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "BMW 3 Series F30/F31 320i/328i",
+              "url": "https://bmwengine.uk/models/3-series/f30/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 5,
+              "name": "BMW 4 Series F32/F33/F36 420i/428i",
+              "url": "https://bmwengine.uk/models/4-series/f32/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 6,
+              "name": "BMW 5 Series F10/F11 520i/528i",
+              "url": "https://bmwengine.uk/models/5-series/f10/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 7,
+              "name": "BMW X1 E84 sDrive18i/xDrive20i",
+              "url": "https://bmwengine.uk/models/x1/e84/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 8,
+              "name": "BMW X3 F25 xDrive20i/xDrive28i",
+              "url": "https://bmwengine.uk/models/x3/f25/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 9,
+              "name": "BMW Z4 E89 sDrive20i/sDrive28i",
+              "url": "https://bmwengine.uk/models/z4/e89/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does a BMW N13/N20 engine replacement cost?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A reconditioned N13 or N20 typically costs £2,500–£4,000 supply only [EM-QUOTE], varying by variant and displacement. Fitting adds £700–£1,400 depending on model and labour rates."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the BMW N13/N20 a reliable engine?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The N13 and N20 earn 3.0★ out of 5 based on UK specialist reports — they are responsive and efficient, but timing‑chain guide wear is a well‑known issue, especially on higher‑mileage examples."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the most common BMW N13/N20 failure?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Timing‑chain guide failure is the most common issue — guides can break, causing the chain to jump and potentially destroying the valvetrain. VANOS solenoid issues and oil leaks from the oil filter housing are also frequent."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which BMW models use the N13/N20?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The N13 powers the F20/F21 1 Series (114i–120i), while the N20 fits the F30/F31 3 Series, F10 5 Series, F25 X3, E84 X1, F32 4 Series, and E89 Z4 — covering a wide range of BMW petrol models from 2011–2017."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How long does the BMW N13/N20 last?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "With diligent maintenance and proactive timing‑chain guide replacement at 70,000–80,000 miles, these engines can reach 150,000–200,000 miles. Neglect can lead to catastrophic failure much earlier."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "bmwengine.uk",
+          "url": "https://bmwengine.uk/",
+          "logo": "https://bmwengine.uk/images/logo.png",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Product",
+          "name": "BMW N13/N20 Engine",
+          "brand": {
+            "@type": "Brand",
+            "name": "BMW"
+          },
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "3.0",
+            "bestRating": "5",
+            "ratingCount": "1",
+            "reviewCount": "1"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "BMW N13/N20 Engine Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "bmwengine.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "1200",
+            "highPrice": "5500",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "name": "BMW N13/N20 UK Enquiry & Reliability Data 2025",
+          "description": "Proprietary UK enquiry volumes and reliability scoring data for the BMW N13 and N20, sourced from bmwengine.uk's specialist marketplace activity.",
+          "creator": {
+            "@type": "Organization",
+            "name": "bmwengine.uk"
+          },
+          "temporalCoverage": "2025",
+          "spatialCoverage": "United Kingdom"
+        },
+        {
+          "@type": "WebPage",
+          "name": "BMW N13/N20 Engine — Specs, Reliability & Replacement Cost",
+          "url": "https://bmwengine.uk/engines/n13-n20/",
+          "author": {
+            "@type": "Organization",
+            "name": "bmwengine.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "bmwengine.uk Specialist Network"
+          },
+          "datePublished": "2026-07-14",
+          "dateModified": "2026-07-14"
+        }
+      ]
+    }
   },
   "hero": {
     "tagPill": "BMW • N13/N20 • Petrol • 1.6/2.0L I4 Turbo • 2011–2017",

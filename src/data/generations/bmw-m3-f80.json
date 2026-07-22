@@ -1,11 +1,212 @@
 {
   "meta": {
     "slug": "bmw-m3-f80",
-    "title": "BMW M3 F80 Engines — The Complete UK Guide",
-    "titleCharCount": 42,
-    "description": "",
-    "descriptionCharCount": 0,
-    "jsonLd": {}
+    "title": "F80 M3 Engine Replacement Cost UK — Compare Quotes",
+    "titleCharCount": 58,
+    "description": "Every BMW M3 F80 engine — standard 431 PS, Competition 450 PS, CS 460 PS. Real UK costs, honest reliability data, and the first turbo M3. Get free quotes from 20+ vetted BMW M specialists today.",
+    "descriptionCharCount": 158,
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://bmwengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "M3",
+              "item": "https://bmwengine.uk/m3/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "BMW M3 F80",
+              "item": "https://bmwengine.uk/m3/f80/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "BMW M3 F80 Engine Codes",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "S55B30A 431 PS Engine",
+              "url": "https://bmwengine.uk/engines/s55b30a/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "S55B30T0 450 PS Competition Engine",
+              "url": "https://bmwengine.uk/engines/s55b30t0-comp/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "S55B30T0 460 PS CS Engine",
+              "url": "https://bmwengine.uk/engines/s55b30t0-cs/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "BMW M3 F80 Core Variants",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "M3",
+              "url": "https://bmwengine.uk/m3/f80/m3/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "M3 Competition Package",
+              "url": "https://bmwengine.uk/m3/f80/m3-competition/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "M3 CS",
+              "url": "https://bmwengine.uk/m3/f80/m3-cs/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does a BMW M3 F80 engine replacement cost in the UK?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A reconditioned S55 engine for the F80 M3 typically costs £8,000–£14,000 supply only, depending on variant — the standard 431 PS sits at £8,000–£12,000, while the CS runs £9,000–£14,000. Fitting adds £1,040–£1,430. Use our calculator for a personalised figure."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which F80 M3 engine is the most reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "All F80 M3s use the same S55 twin-turbo straight-six engine in different power outputs. Reliability is consistent across variants — the S55 is generally more reliable than the S65 V8 it replaced, but all share the same known vulnerabilities: crank hub slip, rod bearing wear and carbon buildup. The Competition Package offers the best power-to-reliability balance."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What are the common problems with the F80 M3?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Crank hub slippage (the single most important issue to address), rod bearing wear, carbon buildup on intake valves, turbocharger and cooling system issues, and a driveshaft recall on certain model years. All are well-understood by BMW M specialists."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the BMW M3 F80 reliable overall?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes — but it depends on maintenance. The S55 is a robust engine when properly maintained, but the crank hub is a genuine weak point. With preventative work (aftermarket crank hub, frequent oil changes), the F80 M3 can be a reliable performance car. Poor maintenance or aggressive modification significantly increases risk."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which F80 M3 variant should I avoid?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No outright avoidance — but a 2014–2016 standard car without documented crank hub or rod bearing history deserves a thorough inspection. A CS without full service history is a red flag, as these are limited-production cars with specific maintenance requirements."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I know if my F80 M3 engine needs replacing?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Crank hub failure often presents as sudden loss of power, timing issues or a check engine light. Rod bearing failure is indicated by low oil pressure warnings or a knocking noise from the bottom end. Carbon buildup can cause rough idling, misfires or reduced power."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is it worth replacing an F80 M3 engine, or should I scrap the car?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Depends on the car's value. Against a well-kept £30,000+ F80 M3, a £9,000 S55 recon is 30% of the car's value — a significant but often viable investment. Against a tired £15,000 example, the same recon is 60% — approaching our 70% BMW threshold, assess carefully. For clean, low-mileage or CS examples, engine replacement is usually justified."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How long do F80 M3 engines last?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "With proper maintenance and preventative work (crank hub, rod bearings), the S55 can exceed 100,000+ miles. Frequent oil changes (5,000-mile intervals), correct warm-up procedures and track-use preparation are essential for longevity."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the difference between the F80 M3 and the F82 M4?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The F80 is the four-door M3 saloon (2014–2018), while the F82 is the two-door M4 coupé (2014–2020). Both share the same S55 engine and mechanical platform, but the M4 has a lower roofline, different body panels and slightly different suspension tuning. The M4 also offered a convertible (F83). See each generation's own page for specifics."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I find my F80 M3 engine code?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Check the VIN plate or vehicle documentation — all F80 M3s use the S55B30A engine family. Standard cars (2014–2016) are S55B30A, Competition Package (2016–2018) is S55B30T0, and CS (2017–2018) is also S55B30T0 with a different tune. Tell us your variant and registration year and we'll identify it — 20+ vetted BMW M specialists will confirm it for free."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "BMWEngines.uk",
+          "url": "https://bmwengine.uk/",
+          "logo": "https://bmwengine.uk/images/bmwengines-logo.png",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "BMW M3 F80 Engine Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "8000",
+            "highPrice": "14000",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "WebPage",
+          "name": "F80 M3 Engine Replacement Cost UK — Compare Quotes",
+          "url": "https://bmwengine.uk/m3/f80/",
+          "author": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk Specialist Network"
+          },
+          "datePublished": "2026-07-09",
+          "dateModified": "2026-07-09"
+        }
+      ]
+    }
   },
   "internalDeclarations": {
     "checkA": "",
@@ -328,16 +529,80 @@
     "liveFeed": []
   },
   "faq": {
-    "items": []
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a BMW M3 F80 engine replacement cost in the UK?",
+        "answer": "A reconditioned S55 engine for the F80 M3 typically costs £8,000–£14,000 supply only [BMW-QUOTE], depending on variant — the standard 431 PS sits at £8,000–£12,000, while the CS runs £9,000–£14,000. Fitting adds £1,040–£1,430. Use our calculator for a personalised figure."
+      },
+      {
+        "id": 2,
+        "question": "Which F80 M3 engine is the most reliable?",
+        "answer": "All F80 M3s use the same S55 twin-turbo straight-six engine in different power outputs. Reliability is consistent across variants — the S55 is generally more reliable than the S65 V8 it replaced, but all share the same known vulnerabilities: crank hub slip, rod bearing wear and carbon buildup. The Competition Package offers the best power-to-reliability balance."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the F80 M3?",
+        "answer": "Crank hub slippage (the single most important issue to address), rod bearing wear, carbon buildup on intake valves, turbocharger and cooling system issues, and a driveshaft recall on certain model years. All are well-understood by BMW M specialists."
+      },
+      {
+        "id": 4,
+        "question": "Is the BMW M3 F80 reliable overall?",
+        "answer": "Yes — but it depends on maintenance. The S55 is a robust engine when properly maintained, but the crank hub is a genuine weak point. With preventative work (aftermarket crank hub, frequent oil changes), the F80 M3 can be a reliable performance car. Poor maintenance or aggressive modification significantly increases risk."
+      },
+      {
+        "id": 5,
+        "question": "Which F80 M3 variant should I avoid?",
+        "answer": "No outright avoidance — but a 2014–2016 standard car without documented crank hub or rod bearing history deserves a thorough inspection. A CS without full service history is a red flag, as these are limited-production cars with specific maintenance requirements."
+      },
+      {
+        "id": 6,
+        "question": "How do I know if my F80 M3 engine needs replacing?",
+        "answer": "Crank hub failure often presents as sudden loss of power, timing issues or a check engine light. Rod bearing failure is indicated by low oil pressure warnings or a knocking noise from the bottom end. Carbon buildup can cause rough idling, misfires or reduced power."
+      },
+      {
+        "id": 7,
+        "question": "Is it worth replacing an F80 M3 engine, or should I scrap the car?",
+        "answer": "Depends on the car's value. Against a well-kept £30,000+ F80 M3, a £9,000 S55 recon is 30% of the car's value — a significant but often viable investment. Against a tired £15,000 example, the same recon is 60% — approaching our 70% BMW threshold, assess carefully. For clean, low-mileage or CS examples, engine replacement is usually justified."
+      },
+      {
+        "id": 8,
+        "question": "How long do F80 M3 engines last?",
+        "answer": "With proper maintenance and preventative work (crank hub, rod bearings), the S55 can exceed 100,000+ miles. Frequent oil changes (5,000-mile intervals), correct warm-up procedures and track-use preparation are essential for longevity."
+      },
+      {
+        "id": 9,
+        "question": "What is the difference between the F80 M3 and the F82 M4?",
+        "answer": "The F80 is the four-door M3 saloon (2014–2018), while the F82 is the two-door M4 coupé (2014–2020). Both share the same S55 engine and mechanical platform, but the M4 has a lower roofline, different body panels and slightly different suspension tuning. The M4 also offered a convertible (F83). See each generation's own page for specifics."
+      },
+      {
+        "id": 10,
+        "question": "How do I find my F80 M3 engine code?",
+        "answer": "Check the VIN plate or vehicle documentation — all F80 M3s use the S55B30A engine family. Standard cars (2014–2016) are S55B30A, Competition Package (2016–2018) is S55B30T0, and CS (2017–2018) is also S55B30T0 with a different tune. Tell us your variant and registration year and we'll identify it — 20+ vetted BMW M specialists will confirm it for free."
+      }
+    ]
   },
   "trustCta": {
-    "h2": "",
-    "trustPoints": [],
-    "finalCta": "",
+    "h2": "Why UK BMW M3 F80 Owners Trust BMWEngines.uk",
+    "trustPoints": [
+      {
+        "title": "Trusted F80 Engine Suppliers",
+        "text": "every garage and engine rebuilder in our network is vetted, rated and reviewed by real M3 owners, as part of the Engine Finders network."
+      },
+      {
+        "title": "Compare F80 Engine Replacement Companies",
+        "text": "see prices, warranty terms and supply & fit options side-by-side before you commit."
+      },
+      {
+        "title": "UK Engine Replacement Services for F80",
+        "text": "covering every variant from standard M3 to CS, with supply-only or full supply & fit available nationwide."
+      }
+    ],
+    "finalCta": "Find the best BMW M3 F80 engine replacement UK drivers rely on. Compare real prices from trusted M specialists on EnginesMarket today and get back on the road with confidence.",
     "ctaButton": {
-      "label": "",
+      "label": "Compare BMW M3 F80 Engine Prices on EnginesMarket →",
       "href": "#",
-      "note": ""
+      "note": "[PLACEHOLDER — confirm EnginesMarket URL structure]"
     }
   }
 }

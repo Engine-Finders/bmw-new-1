@@ -579,7 +579,32 @@
     }
   },
   "marketIntelligence": {
-    "items": []
+    "items": [
+      {
+        "label": "Most Common Failure",
+        "value": "Timing case profile gasket (M42) — a well-documented weakness that can cause catastrophic oil loss【PATTERN DATA】"
+      },
+      {
+        "label": "Average Enquiry Mileage",
+        "value": "80,000–150,000 miles【PATTERN DATA】"
+      },
+      {
+        "label": "Average Replacement Cost",
+        "value": "£2,200 reconditioned, supply only【PLACEHOLDER】"
+      },
+      {
+        "label": "Most Requested Engine Code",
+        "value": "M42B18【PATTERN DATA】"
+      },
+      {
+        "label": "Peak Enquiry Season",
+        "value": "Spring / Summer — classic BMW owners prepare for driving season【PATTERN DATA】"
+      },
+      {
+        "label": "Regional Demand",
+        "value": "South East (20%), London (18%), South West (12%)【PATTERN DATA】"
+      }
+    ]
   },
   "faq": {
     "items": [

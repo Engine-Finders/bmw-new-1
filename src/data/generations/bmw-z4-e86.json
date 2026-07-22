@@ -487,16 +487,80 @@
     "liveFeed": []
   },
   "faq": {
-    "items": []
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a BMW Z4 E86 engine replacement cost in the UK?",
+        "answer": "A reconditioned E86 engine typically costs £1,800–£3,600 supply only [BMW-QUOTE], depending on the engine — the M54 2.5i sits at £1,800–£3,200, the N52 3.0si at £2,000–£3,600, and the S54 Z4 M at £3,000–£3,400. Fitting adds £520–£1,040. Use our calculator for a personalised figure."
+      },
+      {
+        "id": 2,
+        "question": "Which Z4 E86 engine is the most reliable?",
+        "answer": "The N52B30 (3.0si) is the E86's most reliable engine — a magnesium-alloy straight-six with no turbocharger or direct-injection issues. It's smooth, responsive, and has a proven track record. The M54 2.5i is also robust but older. The S54 is high-strung and requires diligent maintenance — it's not unreliable, just expensive."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the BMW Z4 E86?",
+        "answer": "The N52 suffers from oil leaks (cam cover, oil filter housing) and VANOS issues due to worn sealing rings. The electric water pump is a known failure point on both N52 and M54. The S54 (Z4 M) requires valve clearance checks every second service and has VANOS and rod bearing concerns. Rusty brake lines and electrical gremlins affect all models."
+      },
+      {
+        "id": 4,
+        "question": "Is the BMW Z4 E86 reliable?",
+        "answer": "Yes — the E86 is based on proven underpinnings and is generally well-regarded for reliability. The M54 and N52 are both durable engines. The S54 is more demanding but fundamentally strong. Regular maintenance is key — these are now 15+ year old cars, so gaskets, seals, and cooling system components need attention."
+      },
+      {
+        "id": 5,
+        "question": "Which E86 engine should I avoid?",
+        "answer": "No engine outright — but a Z4 M without documented valve adjustment, VANOS, or rod bearing history is a financial risk. A neglected N52 without cooling system history is also a gamble. Avoid any car with obvious overheating damage or poor service history. All are worth owning if well-maintained."
+      },
+      {
+        "id": 6,
+        "question": "How do I know if my E86 engine needs replacing?",
+        "answer": "Oil leaks or burning smell (N52 gaskets), rough idle or loss of power (VANOS), overheating (cooling system failure), or knocking from the bottom end (S54 rod bearings) are the key warning signs. Use our diagnostic calculator for a personalised assessment."
+      },
+      {
+        "id": 7,
+        "question": "Is it worth replacing an E86 engine, or should I scrap the car?",
+        "answer": "Depends on the car's value. Against a £10,000 3.0si, a £2,000–£3,600 N52 recon is 20–36% — well within our 70% BMW threshold. Against a £6,000 2.5i, a £1,800–£3,200 M54 recon is 30–53% — borderline but often viable for a cherished example. For a Z4 M at £18,000+, a £3,000–£3,400 S54 recon is 17–19% — a straightforward repair decision. These are appreciating modern classics; replacement costs are manageable."
+      },
+      {
+        "id": 8,
+        "question": "How long do E86 engines last?",
+        "answer": "The M54 and N52 can comfortably exceed 150,000 miles with proper servicing — the cooling system is the limiting factor. The S54 is capable of high mileage but requires more frequent maintenance — valve adjustments, rod bearings, and VANOS work should be budgeted for at 40k–80k mile intervals."
+      },
+      {
+        "id": 9,
+        "question": "What is the difference between the E86 and E85 Z4?",
+        "answer": "The E86 is the coupé version of the first-generation Z4 (2006–2008). The E85 is the roadster (2002–2008). They share the same platform, engines, and mechanicals, but the E86 has a fixed roof that adds structural rigidity, improves handling, and gives a more focused driving experience. The E86 is rarer — only about 17,000 coupés were built worldwide. Both are excellent, but the E86 is more collectable."
+      },
+      {
+        "id": 10,
+        "question": "How do I find my E86 engine code?",
+        "answer": "Listed on the VIN plate and vehicle documentation; the engine code is also stamped on the cylinder block. For petrol: M54B25 (2.5i), N52B30 (3.0si), S54B32 (Z4 M Coupé). Tell us your variant and registration year and we'll identify it — 20+ vetted BMW specialists will confirm it for free."
+      }
+    ]
   },
   "trustCta": {
-    "h2": "",
-    "trustPoints": [],
-    "finalCta": "",
+    "h2": "Why UK BMW Z4 E86 Owners Trust BMWEngines.uk",
+    "trustPoints": [
+      {
+        "title": "Trusted E86 Engine Suppliers",
+        "text": "every garage and engine rebuilder in our network is vetted, rated and reviewed by real Z4 owners, as part of the Engine Finders network."
+      },
+      {
+        "title": "Compare E86 Engine Replacement Companies",
+        "text": "see prices, warranty terms and supply & fit options side‑by‑side before you commit."
+      },
+      {
+        "title": "UK Engine Replacement Services for E86",
+        "text": "covering every variant from 2.5i to Z4 M Coupé, with supply‑only or full supply & fit available nationwide."
+      }
+    ],
+    "finalCta": "Find the best BMW Z4 E86 engine replacement UK drivers rely on. Compare real prices from trusted specialists on EnginesMarket today and get back on the road with confidence.",
     "ctaButton": {
-      "label": "",
+      "label": "Compare BMW Z4 E86 Engine Prices on EnginesMarket →",
       "href": "#",
-      "note": ""
+      "note": "[PLACEHOLDER — confirm EnginesMarket URL structure]"
     }
   }
 }

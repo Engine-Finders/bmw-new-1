@@ -7,18 +7,18 @@
     "descriptionCharCount": 159,
     "canonical": "https://bmwengine.uk/z3/28-30i/",
     "openGraph": {
-      "title": "",
-      "description": "",
-      "type": "",
-      "url": "",
-      "image": "",
-      "siteName": ""
+      "title": "Z3 2.8/3.0i Engine Replacement Cost UK — Compare Quotes",
+      "description": "BMW Z3 2.8 & 3.0i engines — M52 and M54. Real UK costs, cooling system & VANOS insight, and honest reliability data. Get free quotes from 20+ vetted BMW specialists today.",
+      "type": "website",
+      "url": "https://bmwengine.uk/z3/28-30i/",
+      "image": "https://bmwengine.uk/images/bmw/hero/z3-28-30i.jpg",
+      "siteName": "BMWEngines.uk"
     },
     "twitter": {
-      "card": "",
-      "title": "",
-      "description": "",
-      "image": ""
+      "card": "summary_large_image",
+      "title": "Z3 2.8/3.0i Engine Replacement Cost UK — Compare Quotes",
+      "description": "BMW Z3 2.8 & 3.0i engines — M52 and M54. Real UK costs, cooling system & VANOS insight, and honest reliability data.",
+      "image": "https://bmwengine.uk/images/bmw/hero/z3-28-30i.jpg"
     },
     "jsonLd": {
       "@context": "https://schema.org",
@@ -487,7 +487,12 @@
       {
         "id": 3,
         "question": "What are the common problems with the BMW Z3 2.8 and 3.0i?",
-        "answer": "2.8 (M52): Cooling system failures, single VANOS seal degradation, oil leaks, DISA valve wear (M52TU), and potential Nikasil lining issues on early European cars. 3.0i (M54): Cooling system failures, double VANOS seal degradation, oil leaks, DISA valve wear, and oil pump nut issues. Both engines share the Z3's rear subframe mounting weakness."
+        "answer": ""
+      },
+      {
+        "id": 2,
+        "question": "8 (M52): Cooling system failures, single VANOS seal degradation, oil leaks, DISA valve wear (M52TU), and potential Nikasil lining issues on early European cars. 3.0i (M54): Cooling system failures, double VANOS seal degradation, oil leaks, DISA valve wear, and oil pump nut issues. Both engines share the Z3's rear subframe mounting weakness.",
+        "answer": ""
       },
       {
         "id": 4,

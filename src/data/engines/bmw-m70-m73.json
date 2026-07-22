@@ -1,24 +1,193 @@
 {
   "meta": {
-    "slug": "bmw-m70-m73",
-    "title": "BMW M70 / M73 Engine — Specs, Reliability & Replacement Cost",
-    "description": "",
-    "canonical": "",
+    "slug": "m70-m73",
+    "title": "BMW M70 / M73 Engine — Reliability & Replacement Cost",
+    "description": "The M70/M73 V12 is refined but complex and costly to maintain — backed by real UK enquiries [ESTIMATED]. Compare quotes from vetted specialists today.",
+    "canonical": "https://bmwengine.uk/engines/m70-m73/",
     "openGraph": {
-      "title": "",
-      "description": "",
-      "type": "",
-      "url": "",
-      "image": "",
-      "siteName": ""
+      "title": "BMW M70 / M73 Engine — Reliability & Replacement Cost",
+      "description": "The M70/M73 V12 is refined but complex and costly to maintain — backed by real UK enquiries [ESTIMATED]. Compare quotes from vetted specialists today.",
+      "type": "website",
+      "url": "https://bmwengine.uk/engines/m70-m73/",
+      "image": "https://bmwengine.uk/images/bmw/engines/m70-m73.jpg",
+      "siteName": "bmwengine.uk"
     },
     "twitter": {
-      "card": "",
-      "title": "",
-      "description": "",
-      "image": ""
+      "card": "summary_large_image",
+      "title": "BMW M70 / M73 Engine — Reliability & Replacement Cost",
+      "description": "The M70/M73 V12 is refined but complex and costly to maintain — backed by real UK enquiries [ESTIMATED]. Compare quotes from vetted specialists today.",
+      "image": "https://bmwengine.uk/images/bmw/engines/m70-m73.jpg"
     },
-    "jsonLd": {}
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://bmwengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Engines",
+              "item": "https://bmwengine.uk/engines/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "M70 / M73",
+              "item": "https://bmwengine.uk/engines/m70-m73/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "BMW models fitted with the M70 / M73",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "BMW 8 Series E31 850i/850Ci (M70)",
+              "url": "https://bmwengine.uk/models/8-series/e31/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "BMW 8 Series E31 850Ci (M73)",
+              "url": "https://bmwengine.uk/models/8-series/e31/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "BMW 7 Series E32 750iL/750i (M70)",
+              "url": "https://bmwengine.uk/models/7-series/e32/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "BMW 7 Series E38 750iL/750i (M73)",
+              "url": "https://bmwengine.uk/models/7-series/e38/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does a BMW M70/M73 engine replacement cost?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A reconditioned M70 or M73 typically costs £6,000–£9,000 supply only [BMW-QUOTE], varying by exact variant and condition. Fitting adds £2,000–£4,500 depending on specialist rates. Use our calculator for a figure specific to your car."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the BMW M70/M73 a reliable engine?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes – the M70 and M73 are fundamentally robust V12s with forged steel crankshafts and durable bottom ends. However, age-related issues (cooling system, ignition components, oil leaks) are common and expensive. Regular maintenance is essential."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the most common BMW M70/M73 failure?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Cooling system failure is the most critical – plastic radiator necks and expansion tanks degrade with age, causing overheating and potential head gasket failure. Also common are ignition coil failure (12 coils, expensive) and oil leaks from valve covers."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which BMW models use the M70/M73?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The M70 powered the E31 850i, E32 750iL, and the rare E34 550i prototype. The M73 appeared in the E31 850Ci (1994–1999) and E38 750iL (1994–2001)."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How long does the BMW M70/M73 last?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "With meticulous maintenance, these engines can exceed 200,000 miles. However, the cost of a full rebuild (£9,000+) and parts scarcity make preventative maintenance financially sensible."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "bmwengine.uk",
+          "url": "https://bmwengine.uk/",
+          "logo": "https://bmwengine.uk/images/logo.png",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Product",
+          "name": "BMW M70 / M73 Engine",
+          "brand": {
+            "@type": "Brand",
+            "name": "BMW"
+          },
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "3.5",
+            "bestRating": "5",
+            "ratingCount": "1",
+            "reviewCount": "1"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "BMW M70 / M73 Engine Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "bmwengine.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "2500",
+            "highPrice": "14000",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "name": "BMW M70 / M73 UK Enquiry & Reliability Data 2025",
+          "description": "Proprietary UK enquiry volumes and reliability scoring data for the BMW M70/M73, sourced from bmwengine.uk's specialist marketplace activity and workshop consensus.",
+          "creator": {
+            "@type": "Organization",
+            "name": "bmwengine.uk"
+          },
+          "temporalCoverage": "2025",
+          "spatialCoverage": "United Kingdom"
+        },
+        {
+          "@type": "WebPage",
+          "name": "BMW M70 / M73 Engine — Reliability & Replacement Cost",
+          "url": "https://bmwengine.uk/engines/m70-m73/",
+          "author": {
+            "@type": "Organization",
+            "name": "bmwengine.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "bmwengine.uk Specialist Network"
+          },
+          "datePublished": "2026-07-14",
+          "dateModified": "2026-07-14"
+        }
+      ]
+    }
   },
   "hero": {
     "tagPill": "",

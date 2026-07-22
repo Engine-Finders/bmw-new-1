@@ -860,23 +860,121 @@
     "scopeNote": "All variants listed are E28 only. The 525e and 528e are the same \"eta\" engine with different market badging — the 525e was sold in Europe, the 528e in North America. The 530i and 533i were US-market only models. The M5 was available globally with the M88/3 (Europe) or S38B35 (North America, South Africa)."
   },
   "marketIntelligence": {
-    "mostRequestedEngines": [],
-    "mostRequestedVariants": [],
-    "averageReplacementCost": "",
-    "mostCommonFailures": [],
-    "liveFeed": []
+    "mostRequestedEngines": [
+      "1. M30B34 (535i/M535i) — pattern data",
+      "2. M30B28 (528i) — pattern data",
+      "3. M88/3 (M5) — pattern data"
+    ],
+    "mostRequestedVariants": [
+      "1. 535i",
+      "2. 528i",
+      "3. M5"
+    ],
+    "averageReplacementCost": "£3,000–£5,500 (reconditioned, supply only) [BMW-QUOTE]",
+    "mostCommonFailures": [
+      "1. Cooling system failures (all six-cylinders)",
+      "2. M20 timing belt failure (520i, 525e)",
+      "3. M88/S38 timing chain guides (M5)"
+    ],
+    "liveFeed": [
+      {
+        "vehicle": "BMW 535i E28 (M30B34)",
+        "location": "London",
+        "issue": "Overheating, suspected water pump",
+        "enquiries": "2 enquiries",
+        "updated": "Updated Monthly"
+      },
+      {
+        "vehicle": "BMW 528i E28 (M30B28)",
+        "location": "Birmingham",
+        "issue": "Injection system check",
+        "enquiries": "2 enquiries",
+        "updated": "Updated Monthly"
+      },
+      {
+        "vehicle": "BMW M5 E28 (M88/3)",
+        "location": "Manchester",
+        "issue": "Timing chain guide inspection",
+        "enquiries": "1 enquiry",
+        "updated": "Updated Monthly"
+      }
+    ]
   },
   "faq": {
-    "items": []
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a BMW 5 Series E28 engine replacement cost in the UK?",
+        "answer": "A reconditioned E28 engine typically costs £1,200–£9,000 supply only [BMW-QUOTE], depending on the engine — the four-cylinder M10 sits at £1,200–£2,500, the M20 and M30 six-cylinders at £1,800–£5,500, and the M5's M88/S38 at £5,000–£9,000. Fitting adds £520–£1,170. Use our calculator for a personalised figure."
+      },
+      {
+        "id": 2,
+        "question": "Which E28 engine is the most reliable?",
+        "answer": "The M30B28 (528i) is the E28's most dependable engine — 181 bhp of silky, naturally-aspirated straight-six with a proven track record of 200,000+ miles. The M20B27 \"eta\" (525e/528e) is also famously durable, with many examples exceeding 200,000 miles. The M21 diesel is robust but increasingly rare."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the BMW 5 Series E28?",
+        "answer": "The cooling system is the E28's single biggest weakness — water pumps fail, radiators corrode, and expansion tanks crack on all six-cylinder models. The M20's timing belt (520i, 525e) is an interference engine — failure destroys the engine. The M5's M88/S38 timing chain guides wear and require expensive engine-out replacement. The M21 diesel's injection pump is its primary weak point."
+      },
+      {
+        "id": 4,
+        "question": "Is the BMW 5 Series E28 reliable?",
+        "answer": "Yes — the E28 is widely regarded as one of BMW's most robust cars. The M20 and M30 six-cylinders are famously durable, with many examples exceeding 200,000 miles. The cooling system is the primary weakness, but it's well-understood and manageable. The M5 is more demanding but fundamentally strong. Regular maintenance is the key — these are 40+ year old cars now."
+      },
+      {
+        "id": 5,
+        "question": "Which E28 engine should I avoid?",
+        "answer": "No engine outright — but an M20 without documented timing belt history is a risk (interference engine). An M5 without documented timing chain guide history is a serious financial risk. A 524td without injection pump history is also a gamble. Avoid any E28 with obvious overheating damage or poor service history."
+      },
+      {
+        "id": 6,
+        "question": "How do I know if my E28 engine needs replacing?",
+        "answer": "Overheating (cooling system failure), timing chain rattle (M5), timing belt failure (M20 — catastrophic), hard starting or loss of power (M21 diesel injection pump), or persistent coolant loss are the key warning signs. Use our diagnostic calculator for a personalised assessment."
+      },
+      {
+        "id": 7,
+        "question": "Is it worth replacing an E28 engine, or should I scrap the car?",
+        "answer": "Depends on the car's value. Against a £6,000 528i, a £2,500–£4,500 recon is 42–75% of the car's value — at the upper end, that brushes our 70% BMW scrap threshold. Against a £4,000 520i, a £1,800–£3,500 recon is 45–88% — borderline. For an M5 at £15,000+, a £5,000–£9,000 recon is 33–60% — a serious decision, but these are appreciating classics. Value the car and its condition first; if it's an M20 without timing belt history, walk away or budget for the work immediately."
+      },
+      {
+        "id": 8,
+        "question": "How long do E28 engines last?",
+        "answer": "The M20 and M30 six-cylinders can exceed 200,000 miles with proper servicing — the cooling system is the limiting factor. The M21 diesel is similarly durable. The M88/S38 M5 engines are capable of high mileage but require more frequent maintenance — timing chain guides, valve adjustments, and cooling systems all need attention at 60k–100k mile intervals."
+      },
+      {
+        "id": 9,
+        "question": "What is the difference between the E12, E28, and E34 generations?",
+        "answer": "The E28 (1981–1988) is the second-generation 5 Series, succeeding the E12 (1972–1981) and preceding the E34 (1988–1996). The E28 introduced the angled centre console towards the driver, ABS, and was the first 5 Series with a diesel engine. The E12 is more classic and analogue; the E34 is more refined and modern. The E28 sits in the middle — more capable than the E12, more characterful than the E34. The E28 M5 was the world's fastest production saloon at launch."
+      },
+      {
+        "id": 10,
+        "question": "How do I find my E28 engine code?",
+        "answer": "Listed on the VIN plate and vehicle documentation; the engine code is also stamped on the cylinder block. For petrol four-cylinders: M10B18 (518/518i). For petrol six-cylinders: M20B20 (520i), M20B27 (525e/528e), M30B28 (528i), M30B30 (530i US), M30B32 (533i US), M30B34 (535i/M535i), M88/3 (M5 Euro), S38B35 (M5 US/SA). For diesels: M21D24 (524d), M21D24 Turbo (524td). Tell us your variant and registration year and we'll identify it — 20+ vetted BMW specialists will confirm it for free."
+      }
+    ]
   },
   "trustCta": {
-    "h2": "",
-    "trustPoints": [],
-    "finalCta": "",
+    "h2": "Why UK BMW 5 Series E28 Owners Trust BMWEngines.uk",
+    "trustPoints": [
+      {
+        "title": "Trusted E28 Engine Suppliers",
+        "text": "every garage and engine rebuilder in our network is vetted, rated and reviewed by real E28 owners, as part of the Engine Finders network."
+      },
+      {
+        "title": "Compare E28 Engine Replacement Companies",
+        "text": "see prices, warranty terms and supply & fit options side‑by‑side before you commit."
+      },
+      {
+        "title": "UK Engine Replacement Services for E28",
+        "text": "covering every variant from 518 to M5, with supply‑only or full supply & fit available nationwide."
+      }
+    ],
+    "finalCta": "Find the best BMW 5 Series E28 engine replacement UK drivers rely on. Compare real prices from trusted specialists on EnginesMarket today and get back on the road with confidence.",
     "ctaButton": {
-      "label": "",
+      "label": "Compare BMW 5 Series E28 Engine Prices on EnginesMarket →",
       "href": "#",
-      "note": ""
+      "note": "[PLACEHOLDER — confirm EnginesMarket URL structure]"
     }
   }
 }

@@ -500,11 +500,67 @@
     }
   },
   "marketIntelligence": {
-    "items": []
+    "items": [
+      {
+        "label": "Most Common Failure",
+        "value": "N62: Valve stem seals / N63: Timing chain and excessive oil consumption — the defining risks of each generation"
+      },
+      {
+        "label": "Average Enquiry Mileage",
+        "value": "70,000–120,000 miles【PATTERN DATA】"
+      },
+      {
+        "label": "Average Replacement Cost",
+        "value": "£3,500–£10,000 reconditioned, supply only depending on generation【BMW-QUOTE】"
+      },
+      {
+        "label": "Most Requested Engine Code",
+        "value": "N63B44 — the twin-turbo V8【PATTERN DATA】"
+      },
+      {
+        "label": "Peak Enquiry Season",
+        "value": "Spring — classic car and performance car season【PATTERN DATA】"
+      },
+      {
+        "label": "Regional Demand",
+        "value": "London (20%), South East (18%), South West (14%)【PATTERN DATA】"
+      }
+    ]
   },
   "faq": {
-    "items": [],
-    "disclaimer": ""
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a BMW 650i engine replacement cost in the UK?",
+        "answer": "A reconditioned 650i engine typically costs £3,500–£10,000 supply only depending on which generation (N62 or N63), with used units available from £2,000–£4,500. Fitting adds £2,000–£3,500. Use our calculator for a figure specific to your car."
+      },
+      {
+        "id": 2,
+        "question": "Is the BMW 650i engine reliable?",
+        "answer": "It depends entirely on which generation. The N62 (2005–2010) has valve stem seal and cooling system issues but is otherwise robust. The early N63 (2011–2014) is notoriously unreliable — timing chain failures, excessive oil consumption, and turbocharger issues are common. Later N63TU (2014+) cars are significantly improved."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the BMW 650i?",
+        "answer": "N62: valve stem seal failure (excessive oil consumption, blue smoke), cooling system failures. N63: timing chain and guide failure, excessive oil consumption, turbocharger failure, valve stem seal leaks. The N63 is the more problematic of the two."
+      },
+      {
+        "id": 4,
+        "question": "Is it worth replacing a BMW 650i engine, or should I scrap the car?",
+        "answer": "Depends on vehicle value and generation. Against a well-kept F06 650i worth £8,000–£18,000, a £5,000–£9,000 recon is 30–60% — borderline but often worth it on a cherished example. Against a tired E63 650i with significant other issues, get a scrap valuation first. These are complex, expensive cars — replacement only makes sense if the rest of the car is in excellent condition."
+      },
+      {
+        "id": 5,
+        "question": "How do I find my BMW 650i engine code?",
+        "answer": "Listed on the VIN plate and vehicle documentation. E63/E64 (2005–2010) uses N62B48B; F06/F12/F13 (2011–2018) uses N63B44A or N63B44B; G32 (2017–present) uses N63B44B / N63TU. Tell us your registration date and we'll confirm it for free."
+      },
+      {
+        "id": 6,
+        "question": "Can I repair the N63 timing chain, or does it need replacement?",
+        "answer": "It needs replacement — the chain guides break and the tensioner wears. A full timing chain, tensioner, guide and VANOS sprocket replacement costs £2,500–£5,000. It's a labour-intensive job but far cheaper than a full engine replacement (£5,000+). The TU (Technical Update) versions are significantly improved. At the first sign of rattling from the front of the engine on an N63, book an inspection immediately."
+      }
+    ],
+    "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty — always confirm terms with your chosen supplier."
   },
   "trustCta": {
     "h2": "",

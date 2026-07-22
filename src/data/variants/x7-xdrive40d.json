@@ -527,64 +527,43 @@
       {
         "label": "Regional Demand",
         "value": "South East (22%), London (18%), South West (12%) — premium SUV strongholds [PATTERN DATA]"
-      },
-      {
-        "label": "SECTION 8 — FAQ",
-        "value": "1. How much does a BMW X7 xDrive40d engine replacement cost in the UK?"
-      },
-      {
-        "label": "A reconditioned X7 xDrive40d engine (B57D30B) typically costs £3,000–£4,500 supply only. Fitting adds £1,200–£1,800. A brand‑new BMW X7 engine sourced through an authorised dealer can represent one of the largest single repair bills a BMW owner will ever face. Replacement costs typically range from £2,500 to more than £10,000 depending on the engine model and installation requirements. Use our calculator for a figure specific to your vehicle.",
-        "value": "2. Is the BMW X7 xDrive40d engine reliable?"
-      },
-      {
-        "label": "The xDrive40d (340 hp 3.0‑litre diesel with 48V mild‑hybrid) from MY21 onwards is the reliability champion in the X7 range. It returns 33 to 38 mpg on the motorway, has the cleanest DPF history of the diesel options, and the integrated starter‑generator avoids the low‑speed issues older diesels suffer. However, like all modern diesels, it has potential issues — EGR cooler failure (subject to recalls), AdBlue system problems, DPF blockage from urban driving, and oil leaks.",
-        "value": "3. What are the common problems with the BMW X7 xDrive40d?"
-      },
-      {
-        "label": "The most common issues are EGR cooler failure (subject to recalls — a cracked EGR cooler could create the risk of an engine fire), AdBlue system failure (pump, NOx sensors, crystallisation), DPF blockage from short urban trips, and oil leaks (valve cover gaskets, oil filter housing gaskets).",
-        "value": "4. Is it worth replacing an X7 xDrive40d engine, or should I scrap the car?"
-      },
-      {
-        "label": "Given the X7's retained value (typically £45,000–£70,000+), a £3,000–£5,500 reconditioned engine is a modest fraction of the vehicle's worth. Replacement is almost always financially viable. However, if the AdBlue system or EGR system has also failed, the total repair cost may be substantial. Get a full diagnostic assessment before committing.",
-        "value": "5. How do I find my X7's engine code?"
-      },
-      {
-        "label": "The X7 xDrive40d uses the B57D30B (also B57D30T2 or B57D30T3) — a 3.0‑litre twin‑turbo diesel inline‑six. The engine code is stamped on the engine block and listed on your V5C. The xDrive40d badge itself confirms the engine — it's the 340 PS diesel offered in the G07 X7.",
-        "value": "6. Can I repair an X7 xDrive40d engine issue, or does it need replacement?"
-      },
-      {
-        "label": "Most issues — EGR cooler failure (recall), AdBlue system problems, DPF blockage, oil leaks — are repairable. The B57 is a robust engine and major internal failures are rare. However, if the engine suffers major internal failure, a full engine replacement is usually more cost‑effective than a rebuild. The 2021 to 2022 model years are considered the sweet spot for value and reliability.",
-        "value": "Disclaimer: All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12‑month unlimited‑mileage warranty — always confirm terms with your chosen supplier."
-      },
-      {
-        "label": "Section 9 (Trust + Final CTA), meta tags, Open Graph, Twitter Card, and complete JSON‑LD schema.",
-        "value": "* Brand: BMW"
-      },
-      {
-        "label": "* Domain: bmwengine.uk",
-        "value": "* Data tag: BMW‑"
-      },
-      {
-        "label": "* Specialist count: 20+",
-        "value": "* Scrap threshold: 70%"
-      },
-      {
-        "label": "* CTA Mode: Assertive (Priority H)",
-        "value": "* Era Map rows: 1 (B57D30B)"
-      },
-      {
-        "label": "* Engine codes: B57D30B (B57D30T2, B57D30T3)",
-        "value": "* Service schema price range: £1,800 (lowest used) to £5,500 (highest rebuilt) — spans full Era Map history"
-      },
-      {
-        "label": "* Model Page needed: BMW X7 G07 Generation Page",
-        "value": "* Generation Page needed: BMW X7 G07 Generation Page (for cost inheritance)"
       }
     ]
   },
   "faq": {
-    "items": [],
-    "disclaimer": ""
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a BMW X7 xDrive40d engine replacement cost in the UK?",
+        "answer": "A reconditioned X7 xDrive40d engine (B57D30B) typically costs £3,000–£4,500 supply only. Fitting adds £1,200–£1,800. A brand‑new BMW X7 engine sourced through an authorised dealer can represent one of the largest single repair bills a BMW owner will ever face. Replacement costs typically range from £2,500 to more than £10,000 depending on the engine model and installation requirements. Use our calculator for a figure specific to your vehicle."
+      },
+      {
+        "id": 2,
+        "question": "Is the BMW X7 xDrive40d engine reliable?",
+        "answer": "The xDrive40d (340 hp 3.0‑litre diesel with 48V mild‑hybrid) from MY21 onwards is the reliability champion in the X7 range. It returns 33 to 38 mpg on the motorway, has the cleanest DPF history of the diesel options, and the integrated starter‑generator avoids the low‑speed issues older diesels suffer. However, like all modern diesels, it has potential issues — EGR cooler failure (subject to recalls), AdBlue system problems, DPF blockage from urban driving, and oil leaks."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the BMW X7 xDrive40d?",
+        "answer": "The most common issues are EGR cooler failure (subject to recalls — a cracked EGR cooler could create the risk of an engine fire), AdBlue system failure (pump, NOx sensors, crystallisation), DPF blockage from short urban trips, and oil leaks (valve cover gaskets, oil filter housing gaskets)."
+      },
+      {
+        "id": 4,
+        "question": "Is it worth replacing an X7 xDrive40d engine, or should I scrap the car?",
+        "answer": "Given the X7's retained value (typically £45,000–£70,000+), a £3,000–£5,500 reconditioned engine is a modest fraction of the vehicle's worth. Replacement is almost always financially viable. However, if the AdBlue system or EGR system has also failed, the total repair cost may be substantial. Get a full diagnostic assessment before committing."
+      },
+      {
+        "id": 5,
+        "question": "How do I find my X7's engine code?",
+        "answer": "The X7 xDrive40d uses the B57D30B (also B57D30T2 or B57D30T3) — a 3.0‑litre twin‑turbo diesel inline‑six. The engine code is stamped on the engine block and listed on your V5C. The xDrive40d badge itself confirms the engine — it's the 340 PS diesel offered in the G07 X7."
+      },
+      {
+        "id": 6,
+        "question": "Can I repair an X7 xDrive40d engine issue, or does it need replacement?",
+        "answer": "Most issues — EGR cooler failure (recall), AdBlue system problems, DPF blockage, oil leaks — are repairable. The B57 is a robust engine and major internal failures are rare. However, if the engine suffers major internal failure, a full engine replacement is usually more cost‑effective than a rebuild. The 2021 to 2022 model years are considered the sweet spot for value and reliability."
+      }
+    ],
+    "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12‑month unlimited‑mileage warranty — always confirm terms with your chosen supplier."
   },
   "trustCta": {
     "h2": "Why UK BMW X7 xDrive40d Owners Trust BMWEngines.uk",

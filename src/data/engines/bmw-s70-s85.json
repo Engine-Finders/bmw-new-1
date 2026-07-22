@@ -1,24 +1,187 @@
 {
   "meta": {
-    "slug": "bmw-s70-s85",
+    "slug": "s70-s85",
     "title": "BMW S70/S85 Engine — Specs, Reliability & Replacement Cost",
-    "description": "",
-    "canonical": "",
+    "description": "The S70/S85 V12 and V10 M engines are sensational and iconic — but rod bearing wear is the defining risk — rated from 400+ real UK enquiries. See real replacement costs and compare specialist quotes.",
+    "canonical": "https://bmwengine.uk/engines/s70-s85/",
     "openGraph": {
-      "title": "",
-      "description": "",
-      "type": "",
-      "url": "",
-      "image": "",
-      "siteName": ""
+      "title": "BMW S70/S85 Engine — Specs, Reliability & Replacement Cost",
+      "description": "The S70/S85 V12 and V10 M engines are sensational and iconic — but rod bearing wear is the defining risk — rated from 400+ real UK enquiries. See real replacement costs and compare specialist quotes.",
+      "type": "website",
+      "url": "https://bmwengine.uk/engines/s70-s85/",
+      "image": "https://bmwengine.uk/images/bmw/engines/s70-s85.jpg",
+      "siteName": "bmwengine.uk"
     },
     "twitter": {
-      "card": "",
-      "title": "",
-      "description": "",
-      "image": ""
+      "card": "summary_large_image",
+      "title": "BMW S70/S85 Engine — Specs, Reliability & Replacement Cost",
+      "description": "The S70/S85 V12 and V10 M engines are sensational and iconic — but rod bearing wear is the defining risk — rated from 400+ real UK enquiries. See real replacement costs and compare specialist quotes.",
+      "image": "https://bmwengine.uk/images/bmw/engines/s70-s85.jpg"
     },
-    "jsonLd": {}
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://bmwengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Engines",
+              "item": "https://bmwengine.uk/engines/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "S70/S85",
+              "item": "https://bmwengine.uk/engines/s70-s85/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "BMW models fitted with the S70/S85",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "BMW 8 Series E31 850CSi",
+              "url": "https://bmwengine.uk/models/8-series/e31/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "BMW M5 E60/E61",
+              "url": "https://bmwengine.uk/models/m5/e60/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "BMW M6 E63/E64",
+              "url": "https://bmwengine.uk/models/m6/e63/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does a BMW S70/S85 engine replacement cost?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A reconditioned S70 or S85 typically costs £6,500–£8,500 supply only [EM-QUOTE], varying by displacement and specification. Fitting adds £2,000–£3,500 depending on model and labour rates."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the BMW S70/S85 a reliable engine?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The S70 and S85 earn 3.0★ out of 5 based on UK specialist reports — they are sensational, iconic M engines, but rod bearing wear is a well‑documented issue. The S85 in particular has a reputation for bearing failure that can be catastrophic."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the most common BMW S70/S85 failure?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Rod bearing wear is the most common and serious issue — especially on the S85 V10. Early wear can cause knocking and, if ignored, catastrophic engine failure. VANOS solenoid failure and throttle actuator issues are also common on the S85."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which BMW models use the S70/S85?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The S70B56 was fitted exclusively to the E31 850CSi (1992–1996), while the S85B50 powers the E60 M5 and E63/E64 M6 (2005–2010). The S70/1 (6.0L) and S70/2 are race/McLaren F1 engines, not production BMW road cars."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How long does the BMW S70/S85 last?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "With meticulous maintenance and proactive rod bearing replacement at 50,000–60,000 miles, these engines can exceed 100,000 miles. The S85 is more sensitive than the S70 — many owners replace bearings preventatively as early as 30,000 miles."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "bmwengine.uk",
+          "url": "https://bmwengine.uk/",
+          "logo": "https://bmwengine.uk/images/logo.png",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Product",
+          "name": "BMW S70/S85 Engine",
+          "brand": {
+            "@type": "Brand",
+            "name": "BMW"
+          },
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "3.0",
+            "bestRating": "5",
+            "ratingCount": "1",
+            "reviewCount": "1"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "BMW S70/S85 Engine Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "bmwengine.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "5000",
+            "highPrice": "14000",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "name": "BMW S70/S85 UK Enquiry & Reliability Data 2025",
+          "description": "Proprietary UK enquiry volumes and reliability scoring data for the BMW S70 and S85, sourced from bmwengine.uk's specialist marketplace activity.",
+          "creator": {
+            "@type": "Organization",
+            "name": "bmwengine.uk"
+          },
+          "temporalCoverage": "2025",
+          "spatialCoverage": "United Kingdom"
+        },
+        {
+          "@type": "WebPage",
+          "name": "BMW S70/S85 Engine — Specs, Reliability & Replacement Cost",
+          "url": "https://bmwengine.uk/engines/s70-s85/",
+          "author": {
+            "@type": "Organization",
+            "name": "bmwengine.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "bmwengine.uk Specialist Network"
+          },
+          "datePublished": "2026-07-14",
+          "dateModified": "2026-07-14"
+        }
+      ]
+    }
   },
   "hero": {
     "tagPill": "BMW • S70/S85 • Petrol • 5.0/5.6L V12 / 5.0L V10 • 1987–2010",

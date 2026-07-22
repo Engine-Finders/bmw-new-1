@@ -1,24 +1,238 @@
 {
   "meta": {
     "slug": "x7",
-    "title": "X7 Engines — The Complete UK Guide",
-    "titleCharCount": 34,
-    "description": "",
-    "descriptionCharCount": 0,
+    "title": "BMW X7 Engine Replacement Cost UK — Compare Quotes",
+    "titleCharCount": 50,
+    "description": "Every BMW X7 engine — B58 to S68. 1 generation, real UK costs and reliability data. Compare prices from 20+ vetted BMW specialists today.",
+    "descriptionCharCount": 137,
     "openGraph": {
-      "title": "",
-      "description": "",
-      "type": "",
-      "url": "",
-      "image": "",
-      "siteName": ""
+      "title": "BMW X7 Engine Replacement Cost UK — Compare Quotes",
+      "description": "Every BMW X7 engine — B58 to S68. 1 generation, real UK costs and reliability data. Compare prices from 20+ vetted BMW specialists today.",
+      "type": "website",
+      "url": "https://bmwengine.uk/x7/",
+      "image": "https://bmwengine.uk/images/bmw-x7-hero.jpg",
+      "siteName": "BMWEngines.uk"
     },
     "twitter": {
-      "card": "",
-      "title": "",
-      "description": ""
+      "card": "summary_large_image",
+      "title": "BMW X7 Engine Replacement Cost UK — Compare Quotes",
+      "description": "Every BMW X7 engine — B58 to S68. 1 generation, real UK costs and reliability data. Compare prices from 20+ vetted BMW specialists today."
     },
-    "jsonLd": {}
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://bmwengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "X7",
+              "item": "https://bmwengine.uk/x7/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "BMW X7 Generations",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "BMW X7 G07 (2018–2022)",
+              "url": "https://bmwengine.uk/x7/g07/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "BMW X7 G07 LCI (2023–present)",
+              "url": "https://bmwengine.uk/x7/g07/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "BMW X7 Engine Codes",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "B58B30C Engine",
+              "url": "https://bmwengine.uk/engines/b58b30c/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "B58B30P Engine",
+              "url": "https://bmwengine.uk/engines/b58b30p/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "N63B44D Engine",
+              "url": "https://bmwengine.uk/engines/n63b44d/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "S63B44 Engine",
+              "url": "https://bmwengine.uk/engines/s63b44/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 5,
+              "name": "S68B44A Engine",
+              "url": "https://bmwengine.uk/engines/s68b44a/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 6,
+              "name": "B57D30B Engine",
+              "url": "https://bmwengine.uk/engines/b57d30b/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 7,
+              "name": "B57D30T0 Engine",
+              "url": "https://bmwengine.uk/engines/b57d30t0/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 8,
+              "name": "B57D30 Engine",
+              "url": "https://bmwengine.uk/engines/b57d30/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does a BMW X7 engine replacement cost in the UK?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A reconditioned BMW X7 engine typically costs £3,800–£9,000+ supply only [BMW-QUOTE] — from the B58 at £3,800–£6,000 to the N63 at £7,000–£10,000+. The S63/S68 costs £9,000–£15,000+. Fitting adds £650–£2,100. Use our calculator for a personalised figure."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which BMW X7 engine is the most reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The B58B30 straight-six in the xDrive40i — widely regarded as one of BMW's most reliable modern engines. The B57D30 diesel is also excellent. The S68B44A in the LCI M60i is proving robust."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which BMW X7 engine should I avoid?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No engine outright — but a pre-LCI N63B44D M50i without documented oil consumption history, valve stem seal replacement, or timing chain history is the one purchase we consistently advise against. A B58 or LCI S68 has no such caveat."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I know if my X7 engine needs replacing?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "By engine: coolant loss (B58 cooling system), blue smoke on startup (N63 valve stem seals), rattling on cold start (N63 timing chain), DPF clogging (B57 diesel). On the pre-LCI N63, any excessive oil consumption is a warning sign. Caught early, it's a repair; ignored, it's a £3,800–£10,000+ engine [BMW-QUOTE]. Use our diagnostic calculator for a personalised assessment."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is it worth replacing a BMW X7 engine?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes — the X7's values are strong enough to justify engine work. Against a £25,000–£35,000 pre-LCI X7, a £3,800–£6,000 B58 recon is 11–24% — ✅ safe. Against a £45,000–£55,000 LCI X7, the same recon is 7–13% — ✅ safe. Against a £80,000–£100,000+ M60i, a £9,000–£15,000+ S68 recon is 9–19% — ✅ safe. Our 70% BMW threshold is the line: below 70% is safe. Use our calculator for your car."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which BMW X7 should I buy?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "2023+ LCI with the B58 xDrive40i — 375 bhp, 48V mild-hybrid, the most dependable X7 ever made, and the values are holding strong (£45,000–£55,000). For performance, the LCI M60i with the S68 — 523 hp and 0-62 mph in 4.7 seconds. For the budget option, a pre-LCI B58 xDrive40i — the B58 is bulletproof and the values are sensible (£25,000–£35,000). Avoid pre-LCI N63 M50i without documented oil consumption history."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I find my BMW X7 engine code?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Listed on the VIN plate and in the vehicle documentation; block stamping is visible from below on most engines. Or tell us your generation and variant (G07 xDrive40i, G07 M50i, G07 M60i) and we'll identify it — 20+ vetted specialists will confirm it for free."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "BMW X7 vs X5 — which is more reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Mechanically they share engines across similar eras — the B58/B57/N63/S63/S68 story is similar. The X7 is larger and heavier, so it works the powertrain harder; the X5 is smaller and lighter. Buy on engine and year, not badge. The X5 offers more value; the X7 offers more space and prestige."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "BMWEngines.uk",
+          "url": "https://bmwengine.uk/",
+          "logo": "https://bmwengine.uk/images/bmwengines-logo.png",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "BMW X7 Engine Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "3800",
+            "highPrice": "9000",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "name": "BMW X7 UK Engine Enquiry Data 2025",
+          "description": "Proprietary UK enquiry volumes and demand trends for BMW X7 engines, sourced from BMWEngines.uk's specialist marketplace activity.",
+          "creator": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk"
+          },
+          "temporalCoverage": "2025",
+          "spatialCoverage": "United Kingdom"
+        },
+        {
+          "@type": "WebPage",
+          "name": "BMW X7 Engine Replacement Cost UK — Compare Quotes",
+          "url": "https://bmwengine.uk/x7/",
+          "author": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk Specialist Network"
+          },
+          "datePublished": "2026-07-07",
+          "dateModified": "2026-07-07"
+        }
+      ]
+    }
   },
   "hero": {
     "tagPill": "BMW X7 • 2018–Present • 1 Generation (G07) • B58, B57, N63, S68, S63",
@@ -135,72 +349,43 @@
       {
         "metric": "Overall Rating",
         "value": "★★★★☆ 4.2/5"
-      },
-      {
-        "metric": "SECTION 4 — GENERATIONS — <GenerationsGrid>",
-        "value": "H2: BMW X7 — One Generation, Two Eras"
-      },
-      {
-        "metric": "Sub-headline: Every X7 is a G07 — but a 2019 and a 2025 car are very different ownership propositions. The LCI brought the S68 V8 and 48V mild-hybrid assistance across the range.",
-        "value": "BMW X7 G07 🔥 Most Enquired — flagship SUV [BMW-VERIFIED]"
-      },
-      {
-        "metric": "2018–present • B58, B57, N63, S68, S63 — CLAR platform",
-        "value": "★★★★☆"
-      },
-      {
-        "metric": "Our Verdict: BMW's flagship SUV — the largest, most luxurious, and most expensive BMW ever built. The B58 xDrive40i is the dependable choice; the S68 M60i is the performance pick. The LCI (2023+) brought 48V mild-hybrid assistance and the S68 V8. Buy the B58 unless you have the budget for V8 bills.",
-        "value": "Explore the G07 →"
-      },
-      {
-        "metric": "Pre-LCI vs LCI — The Line That Matters",
-        "value": "2018–2022 (pre-LCI)"
-      },
-      {
-        "metric": "2023–present (LCI)",
-        "value": "Core petrol"
-      },
-      {
-        "metric": "B58 (xDrive40i) / N63 (M50i)",
-        "value": "B58 (xDrive40i) / S68 (M60i)"
-      },
-      {
-        "metric": "Core diesel",
-        "value": "B57 (xDrive30d/40d)"
-      },
-      {
-        "metric": "B57 (xDrive30d/40d) — with 48V MHEV",
-        "value": "Core issue"
-      },
-      {
-        "metric": "N63 oil consumption (M50i)",
-        "value": "None significant"
-      },
-      {
-        "metric": "Our position",
-        "value": "Buy B58 or B57; avoid N63 without history"
-      },
-      {
-        "metric": "The X7 we recommend — buy with confidence",
-        "value": "Read the full comparison: BMW X7 Pre-LCI vs LCI →"
-      },
-      {
-        "metric": "The Badge Ambiguity — \"M50i\" vs \"M60i\" Means Different Things",
-        "value": "Correction applied (internal): The \"M50i\" badge (pre-LCI) uses the N63B44D V8 — the same hot-vee V8 that carries oil consumption and valve stem seal caveats from earlier generations. The \"M60i\" badge (LCI) uses the S68B44A V8 — a significantly revised engine with 48V mild-hybrid assistance, producing 523 hp. The S68 is proving more robust than the N63. The \"ALPINA XB7\" uses a tuned version of the S68 producing up to 631 hp."
       }
     ]
   },
   "generations": {
-    "h2": "",
-    "subHeadline": "",
-    "cards": [],
+    "h2": "BMW X7 — One Generation, Two Eras",
+    "subHeadline": "Every X7 is a G07 — but a 2019 and a 2025 car are very different ownership propositions. The LCI brought the S68 V8 and 48V mild-hybrid assistance across the range.",
+    "cards": [
+      {
+        "title": "BMW X7 G07",
+        "badge": "🔥 Most Enquired — flagship SUV [BMW-VERIFIED]",
+        "meta": "2018–present • B58, B57, N63, S68, S63 — CLAR platform",
+        "rating": "★★★★☆",
+        "verdict": "BMW's flagship SUV — the largest, most luxurious, and most expensive BMW ever built. The B58 xDrive40i is the dependable choice; the S68 M60i is the performance pick. The LCI (2023+) brought 48V mild-hybrid assistance and the S68 V8. Buy the B58 unless you have the budget for V8 bills.",
+        "cta": {
+          "label": "Explore the G07 →",
+          "href": "#"
+        }
+      },
+      {
+        "title": "Pre-LCI vs LCI — The Line That Matters",
+        "badge": "",
+        "meta": "2018–2022 (pre-LCI)",
+        "rating": "",
+        "verdict": "",
+        "cta": {
+          "label": "",
+          "href": "#"
+        }
+      }
+    ],
     "rangeTable": {
       "title": "",
       "columns": [],
       "rows": []
     },
     "comparisonLink": {
-      "label": "",
+      "label": "Read the full comparison: BMW X7 Pre-LCI vs LCI →",
       "href": "#"
     }
   },

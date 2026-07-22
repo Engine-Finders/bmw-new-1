@@ -506,7 +506,32 @@
     }
   },
   "marketIntelligence": {
-    "items": []
+    "items": [
+      {
+        "label": "Most Common Failure",
+        "value": "Cooling system failure — the weak link on the M88, requiring full coolant overhaul on any unrefreshed example【PATTERN DATA】"
+      },
+      {
+        "label": "Average Enquiry Mileage",
+        "value": "20,000–50,000 miles (many are low-mileage collector cars)【PATTERN DATA】"
+      },
+      {
+        "label": "Average Replacement Cost",
+        "value": "£10,000–£15,000 reconditioned, supply only【PLACEHOLDER】"
+      },
+      {
+        "label": "Most Requested Engine Code",
+        "value": "M88/1【PATTERN DATA】"
+      },
+      {
+        "label": "Peak Enquiry Season",
+        "value": "Spring / Summer — classic car season【PATTERN DATA】"
+      },
+      {
+        "label": "Regional Demand",
+        "value": "South East (18%), London (15%), South West (10%)【PATTERN DATA】"
+      }
+    ]
   },
   "faq": {
     "items": [

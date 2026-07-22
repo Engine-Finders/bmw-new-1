@@ -522,7 +522,32 @@
     }
   },
   "marketIntelligence": {
-    "items": []
+    "items": [
+      {
+        "label": "Most Common Failure",
+        "value": "S63: HPFP / injector failure and valve stem seals; hot‑vee cooling system across all generations"
+      },
+      {
+        "label": "Average Enquiry Mileage",
+        "value": "50,000–70,000 miles【PATTERN DATA】"
+      },
+      {
+        "label": "Average Replacement Cost",
+        "value": "£8,000–£10,000 reconditioned, supply only【PLACEHOLDER — confirm vs cost sheet】"
+      },
+      {
+        "label": "Most Requested Engine Code",
+        "value": "S63B44T2 (F86) — approximately 45% of X6 M enquiries【PATTERN DATA】"
+      },
+      {
+        "label": "Peak Enquiry Season",
+        "value": "Autumn/Winter — cold starts expose HPFP, injector and valve seal issues【PATTERN DATA】"
+      },
+      {
+        "label": "Regional Demand",
+        "value": "South East (18%), London (16%), North West (12%)【PATTERN DATA】"
+      }
+    ]
   },
   "faq": {
     "items": [

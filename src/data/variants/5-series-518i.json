@@ -527,11 +527,67 @@
     }
   },
   "marketIntelligence": {
-    "items": []
+    "items": [
+      {
+        "label": "Most Common Failure",
+        "value": "M10/M40: Timing belt failure / M43: Cooling system leaks — the defining risk of each generation"
+      },
+      {
+        "label": "Average Enquiry Mileage",
+        "value": "80,000–150,000 miles【PATTERN DATA】"
+      },
+      {
+        "label": "Average Replacement Cost",
+        "value": "£500–£3,500 reconditioned, supply only depending on generation【BMW-QUOTE】"
+      },
+      {
+        "label": "Most Requested Engine Code",
+        "value": "M43B19 — the final and most refined four-cylinder 518i【PATTERN DATA】"
+      },
+      {
+        "label": "Peak Enquiry Season",
+        "value": "Spring — classic car season【PATTERN DATA】"
+      },
+      {
+        "label": "Regional Demand",
+        "value": "South East (18%), South West (14%), Midlands (12%)【PATTERN DATA】"
+      }
+    ]
   },
   "faq": {
-    "items": [],
-    "disclaimer": ""
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a BMW 518 or 518i engine replacement cost in the UK?",
+        "answer": "A reconditioned 518/518i engine typically costs £500–£3,500 supply only depending on which generation, with used units available from £400–£1,200. Fitting adds £700–£1,500. Use our calculator for a figure specific to your car."
+      },
+      {
+        "id": 2,
+        "question": "Is the BMW 518 / 518i engine reliable?",
+        "answer": "It depends on which generation. The M10 and M40 engines are robust but require regular timing belt changes — a snapped belt is catastrophic. The M43 engines (1994–2001) are significantly more reliable thanks to the timing chain. The M43B19 in the E39 is the most refined and dependable of the four-cylinder 5 Series."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the BMW 518 and 518i?",
+        "answer": "M10: timing belt failure (requires regular replacement). M40: timing belt failure and ticking hydraulic lifters. M43: cooling system leaks and head gasket issues. The M43 is the most reliable of the family."
+      },
+      {
+        "id": 4,
+        "question": "Is it worth replacing a BMW 518 / 518i engine, or should I scrap the car?",
+        "answer": "Depends on vehicle value and generation. Against a well-kept E39 518i worth £2,000–£5,000, a £1,500–£2,800 recon is 30–60% — borderline but often worth it on a cherished example. Against a tired E12 518 worth £1,000, a £1,000 recon exceeds 70% — get a scrap valuation first. These cars are increasingly rare, which can justify higher spend."
+      },
+      {
+        "id": 5,
+        "question": "How do I find my BMW 518 or 518i engine code?",
+        "answer": "Listed on the VIN plate and vehicle documentation. E12 518 (1974–1981) uses M10B18 carb; E28 518i (1981–1987) uses M10B18 injection; E34 518i (1989–1994) uses M40B18; E34 518i (1994–1995) uses M43B18; E39 518i (1996–2001) uses M43B19. Tell us your registration date and we'll confirm it for free."
+      },
+      {
+        "id": 6,
+        "question": "Can I repair the M10 / M40 timing belt, or does it need replacement?",
+        "answer": "The timing belt must be replaced — it's a wear item. Replacement interval is 40,000–60,000 miles or 4–5 years. If the belt snaps, the engine is typically destroyed. A preventative belt replacement (£300–£600) is far cheaper than a full engine replacement (£500–£1,800+). On M43 engines, the timing chain replaces the belt and is much more reliable."
+      }
+    ],
+    "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty — always confirm terms with your chosen supplier."
   },
   "trustCta": {
     "h2": "",

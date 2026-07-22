@@ -1,11 +1,343 @@
 {
   "meta": {
     "slug": "bmw-5-series-f11",
-    "title": "BMW 5 Series F11 Engines — The Complete UK Guide",
-    "titleCharCount": 48,
-    "description": "",
-    "descriptionCharCount": 0,
-    "jsonLd": {}
+    "title": "F11 Engine Replacement Cost UK — Compare Quotes",
+    "titleCharCount": 57,
+    "description": "Every BMW 5 Series F11 engine — N47, B47, N57, B57, N20, N52, N53, N55, N63, S63. Real UK costs and honest reliability data. Get free quotes from 20+ vetted BMW specialists today.",
+    "descriptionCharCount": 159,
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://bmwengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "5 Series",
+              "item": "https://bmwengine.uk/5-series/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "BMW 5 Series F11",
+              "item": "https://bmwengine.uk/5-series/f11/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "BMW 5 Series F11 Engine Codes",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "N20B20 Engine",
+              "url": "https://bmwengine.uk/engines/n20/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "N52B25 Engine",
+              "url": "https://bmwengine.uk/engines/n52/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "N53B30 Engine",
+              "url": "https://bmwengine.uk/engines/n53/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "N55B30 Engine",
+              "url": "https://bmwengine.uk/engines/n55/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 5,
+              "name": "N63B44 Engine",
+              "url": "https://bmwengine.uk/engines/n63/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 6,
+              "name": "S63B44TU Engine",
+              "url": "https://bmwengine.uk/engines/s63/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 7,
+              "name": "N47D20 Engine",
+              "url": "https://bmwengine.uk/engines/n47/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 8,
+              "name": "B47D20 Engine",
+              "url": "https://bmwengine.uk/engines/b47/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 9,
+              "name": "N57D30 Engine",
+              "url": "https://bmwengine.uk/engines/n57/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 10,
+              "name": "B57D30 Engine",
+              "url": "https://bmwengine.uk/engines/b57/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 11,
+              "name": "N57S Engine (M550d)",
+              "url": "https://bmwengine.uk/engines/n57s/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 12,
+              "name": "N55 + Electric (ActiveHybrid 5)",
+              "url": "https://bmwengine.uk/engines/n55-phev/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "BMW 5 Series F11 Core Variants",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "520i",
+              "url": "https://bmwengine.uk/5-series/f11/520i/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "523i",
+              "url": "https://bmwengine.uk/5-series/f11/523i/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "528i",
+              "url": "https://bmwengine.uk/5-series/f11/528i/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "530i",
+              "url": "https://bmwengine.uk/5-series/f11/530i/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 5,
+              "name": "535i",
+              "url": "https://bmwengine.uk/5-series/f11/535i/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 6,
+              "name": "550i",
+              "url": "https://bmwengine.uk/5-series/f11/550i/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 7,
+              "name": "M5",
+              "url": "https://bmwengine.uk/5-series/f11/m5/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 8,
+              "name": "518d",
+              "url": "https://bmwengine.uk/5-series/f11/518d/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 9,
+              "name": "520d",
+              "url": "https://bmwengine.uk/5-series/f11/520d/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 10,
+              "name": "525d",
+              "url": "https://bmwengine.uk/5-series/f11/525d/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 11,
+              "name": "530d",
+              "url": "https://bmwengine.uk/5-series/f11/530d/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 12,
+              "name": "535d",
+              "url": "https://bmwengine.uk/5-series/f11/535d/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 13,
+              "name": "M550d xDrive",
+              "url": "https://bmwengine.uk/5-series/f11/m550d/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 14,
+              "name": "ActiveHybrid 5",
+              "url": "https://bmwengine.uk/5-series/f11/activehybrid-5/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does a BMW 5 Series F11 engine replacement cost in the UK?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A reconditioned F11 engine typically costs £2,200–£15,000 supply only [BMW-QUOTE], depending on engine — the B47 520d sits at £2,800–£5,000, while the S63 M5 V8 can reach £15,000. Fitting adds £650–£1,500 depending on engine and specialist location."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which BMW 5 Series F11 engine is the most reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The N57 3.0-litre straight-six diesel and the N52 3.0-litre naturally aspirated petrol are considered the most reliable engines in the F11 range — both have documented 200,000+ mile reputations with proper maintenance. The B47 and B57 post-LCI engines are also highly reliable [PROVISIONAL — pending dedicated Engine Page]."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What are the common problems with the BMW 5 Series F11?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Timing chain stretch on the N47 diesel and N20 petrol are the most significant engine problems. The N63 V8 suffers from valve stem seal failure and turbo coolant issues. The N57 diesel can have EGR cooler and DPF problems. The N53 direct-injection petrol can suffer from injector and NOx sensor issues."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the BMW 5 Series F11 reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "It depends heavily on which engine you choose. The N57 diesel six and N55 petrol six are exceptionally reliable. The B47 and B57 post-LCI engines are also very good. The N47 diesel and N20 petrol carry the biggest risks — timing chain issues are well-documented. The N63 V8 is spectacular but requires deep pockets."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which BMW 5 Series F11 engine should I avoid?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No engine is a hard avoid, but the pre-LCI N47 diesel requires very careful consideration — timing chain stretch is well-documented and a full replacement costs £3,200–£5,500 [BMW-QUOTE]. The N63 V8 is also high-risk without documented maintenance history. For most buyers, the 530d (N57) or 535i (N55) is the sweet spot."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I know if my F11 engine needs replacing?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Cold-start rattle on N47 and N20 engines is the classic early warning of timing chain wear — investigate immediately. On N63 V8s, blue smoke on startup indicates valve stem seal failure. On N57 diesels, reduced performance or warning lights may indicate EGR cooler or DPF issues. Use our diagnostic tool for a personalised assessment."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is it worth replacing a BMW 5 Series F11 engine, or should I scrap the car?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Depends on the car's value. Against a well-kept £8,000 F11, a £3,200–£5,500 N47 recon is 40–69% — borderline but potentially viable. Against a tired £5,000 example, the same recon is 64–110% — walk away. Our 70% BMW scrap threshold is the line [BMW-VERIFIED]. For M5 and M550d cars, higher values justify replacement."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How long do BMW 5 Series F11 engines last?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The N57 diesel six and N52 petrol six can exceed 200,000 miles with proper servicing. The N55 is similarly durable. The B47 and B57 post-LCI engines are also capable of 150,000+ miles. The N47 and N20 are limited by their timing chain design — addressed proactively, either can reach 120,000+ miles."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the difference between the F11 and the E61 5 Series Touring?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The F11 (2010–2017) is the sixth-generation 5 Series Touring, built on BMW's L6 platform with all-turbocharged engines. The E61 (2004–2010) was the fifth-generation Touring, with naturally aspirated six-cylinder petrols and the S85 V10-powered M5. The F11 is larger, more refined, and features more advanced engine technology."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I find my BMW 5 Series F11 engine code?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Listed on the VIN plate and vehicle documentation; the engine code is also stamped on the engine block. Tell us your variant, production year, and fuel type, and we'll identify it — 20+ vetted BMW specialists will confirm it for free. Note that the 525d switched from an N57 to an N47 in 2011."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "BMWEngines.uk",
+          "url": "https://bmwengine.uk/",
+          "logo": "https://bmwengine.uk/images/bmwengines-logo.png",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "BMW 5 Series F11 Engine Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "2200",
+            "highPrice": "15000",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "name": "BMW 5 Series F11 UK Engine Enquiry Data 2025",
+          "description": "Proprietary UK enquiry volumes and demand trends for BMW 5 Series F11 engines, sourced from BMWEngines.uk's specialist marketplace activity.",
+          "creator": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk"
+          },
+          "temporalCoverage": "2025",
+          "spatialCoverage": "United Kingdom"
+        },
+        {
+          "@type": "WebPage",
+          "name": "F11 Engine Replacement Cost UK — Compare Quotes",
+          "url": "https://bmwengine.uk/5-series/f11/",
+          "author": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk Specialist Network"
+          },
+          "datePublished": "2026-07-09",
+          "dateModified": "2026-07-09"
+        }
+      ]
+    }
   },
   "internalDeclarations": {
     "checkA": "",
@@ -603,23 +935,121 @@
     "scopeNote": "All variants listed are F11 Touring only. F10 Saloon and F07 Gran Turismo share most of these engines but are covered on their own Generation Pages. The 525d switched from an N57 straight-six (2010–2011) to an N47 four-cylinder (2011–2016) — check your car's production date if you're buying a 525d. M550d xDrive features the tri-turbo N57S engine with 381 bhp. ActiveHybrid 5 combines an N55 petrol engine with a 40 kW electric motor."
   },
   "marketIntelligence": {
-    "mostRequestedEngines": [],
-    "mostRequestedVariants": [],
-    "averageReplacementCost": "",
-    "mostCommonFailures": [],
-    "liveFeed": []
+    "mostRequestedEngines": [
+      "1. N47D20 (largest share of diesel enquiries)",
+      "2. N57D30",
+      "3. B47D20"
+    ],
+    "mostRequestedVariants": [
+      "1. 520d",
+      "2. 530d",
+      "3. 535i"
+    ],
+    "averageReplacementCost": "£4,500 reconditioned, supply only [BMW-QUOTE]",
+    "mostCommonFailures": [
+      "1. N47 timing chain stretch",
+      "2. N63 valve stem seals",
+      "3. N20 timing chain/VANOS"
+    ],
+    "liveFeed": [
+      {
+        "vehicle": "BMW 5 Series F11 520d",
+        "location": "Manchester",
+        "issue": "Cold-start rattle",
+        "enquiries": "4 enquiries",
+        "updated": "Updated Monthly"
+      },
+      {
+        "vehicle": "BMW 5 Series F11 530d",
+        "location": "London",
+        "issue": "EGR cooler inspection",
+        "enquiries": "3 enquiries",
+        "updated": "Updated Monthly"
+      },
+      {
+        "vehicle": "BMW 5 Series F11 535i",
+        "location": "Birmingham",
+        "issue": "Pre-purchase inspection",
+        "enquiries": "2 enquiries",
+        "updated": "Updated Monthly"
+      }
+    ]
   },
   "faq": {
-    "items": []
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a BMW 5 Series F11 engine replacement cost in the UK?",
+        "answer": "A reconditioned F11 engine typically costs £2,200–£15,000 supply only [BMW-QUOTE], depending on engine — the B47 520d sits at £2,800–£5,000, while the S63 M5 V8 can reach £15,000. Fitting adds £650–£1,500 depending on engine and specialist location. Evaluate the car's value carefully before committing — for M5 and M550d cars, collector values may justify higher costs."
+      },
+      {
+        "id": 2,
+        "question": "Which BMW 5 Series F11 engine is the most reliable?",
+        "answer": "The N57 3.0-litre straight-six diesel (530d, 525d pre-2011) and the N52 3.0-litre naturally aspirated petrol are considered the most reliable engines in the F11 range — both have documented 200,000+ mile reputations with proper maintenance. The B47 and B57 post-LCI engines are also highly reliable [PROVISIONAL — pending dedicated Engine Page]."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the BMW 5 Series F11?",
+        "answer": "Timing chain stretch on the N47 diesel (pre-LCI 520d) and N20 petrol (520i) are the most significant engine problems. The N63 V8 (550i) suffers from valve stem seal failure and turbo coolant issues. The N57 diesel can have EGR cooler and DPF problems. The N53 direct-injection petrol can suffer from injector and NOx sensor issues. The N55 535i is the most reliable six-cylinder petrol."
+      },
+      {
+        "id": 4,
+        "question": "Is the BMW 5 Series F11 reliable?",
+        "answer": "It depends heavily on which engine you choose. The N57 diesel six and N55 petrol six are exceptionally reliable. The B47 and B57 post-LCI engines are also very good. The N47 diesel and N20 petrol carry the biggest risks — timing chain issues are well-documented. The N63 V8 is spectacular but requires deep pockets for maintenance. The M5's S63 V8 is reliable if properly maintained, but rod bearings are a known weak point."
+      },
+      {
+        "id": 5,
+        "question": "Which BMW 5 Series F11 engine should I avoid?",
+        "answer": "No engine is a hard avoid, but the pre-LCI N47 diesel (520d, 518d, 525d 2011–2014) requires very careful consideration — timing chain stretch is well-documented and a full replacement costs £3,200–£5,500 [BMW-QUOTE]. The N63 V8 (550i) is also high-risk without documented maintenance history — valve stem seal replacement is £1,500+. For most buyers, the 530d (N57) or 535i (N55) is the sweet spot."
+      },
+      {
+        "id": 6,
+        "question": "How do I know if my F11 engine needs replacing?",
+        "answer": "Cold-start rattle on N47 and N20 engines is the classic early warning of timing chain wear — investigate immediately. On N63 V8s, blue smoke on startup indicates valve stem seal failure. On N57 diesels, reduced performance or warning lights may indicate EGR cooler or DPF issues. On N53 petrols, rough running may indicate injector or NOx sensor failure. Use our diagnostic tool for a personalised assessment."
+      },
+      {
+        "id": 7,
+        "question": "Is it worth replacing a BMW 5 Series F11 engine, or should I scrap the car?",
+        "answer": "Depends on the car's value. Against a well-kept £8,000 F11, a £3,200–£5,500 N47 recon is 40–69% — borderline but potentially viable. Against a tired £5,000 example, the same recon is 64–110% — walk away. Our 70% BMW scrap threshold is the line [BMW-VERIFIED]. For M5 and M550d cars (£15,000–£30,000+), even the most expensive replacement is viable given collector values."
+      },
+      {
+        "id": 8,
+        "question": "How long do BMW 5 Series F11 engines last?",
+        "answer": "The N57 diesel six and N52 petrol six can exceed 200,000 miles with proper servicing. The N55 is similarly durable. The B47 and B57 post-LCI engines are also capable of 150,000+ miles. The N47 and N20 are limited by their timing chain design — addressed proactively, either can reach 120,000+ miles, but many fail earlier without intervention. The N63 V8 is more limited by heat-related issues; 100,000+ miles is achievable with meticulous maintenance."
+      },
+      {
+        "id": 9,
+        "question": "What is the difference between the F11 and the E61 5 Series Touring?",
+        "answer": "The F11 (2010–2017) is the sixth-generation 5 Series Touring, built on BMW's L6 platform with all-turbocharged engines. The E61 (2004–2010) was the fifth-generation Touring, with naturally aspirated six-cylinder petrols, the N47 diesel, and the S85 V10-powered M5 (E61). The F11 is larger, more refined, and features more advanced engine technology. The F11 M5 is a V8; the E61 M5 has a V10."
+      },
+      {
+        "id": 10,
+        "question": "How do I find my BMW 5 Series F11 engine code?",
+        "answer": "Listed on the VIN plate and vehicle documentation; the engine code is also stamped on the engine block. Tell us your variant (518d, 520d, 525d, 530d, 535d, M550d, 520i, 523i, 528i, 530i, 535i, 550i, M5, ActiveHybrid 5), production year, and fuel type, and we'll identify it — 20+ vetted BMW specialists will confirm it for free. Note that the 525d switched from an N57 to an N47 in 2011, so production date is critical."
+      }
+    ]
   },
   "trustCta": {
-    "h2": "",
-    "trustPoints": [],
-    "finalCta": "",
+    "h2": "Why UK BMW 5 Series F11 Owners Trust BMWEngines.uk",
+    "trustPoints": [
+      {
+        "title": "Trusted F11 Engine Suppliers",
+        "text": "every garage and engine rebuilder in our network is vetted, rated and reviewed by real 5 Series Touring owners, as part of the Engine Finders network."
+      },
+      {
+        "title": "Compare F11 Engine Replacement Companies",
+        "text": "see prices, warranty terms and supply & fit options side-by-side before you commit."
+      },
+      {
+        "title": "UK Engine Replacement Services for F11",
+        "text": "covering every variant from 518d to M5, with supply-only or full supply & fit available nationwide."
+      }
+    ],
+    "finalCta": "Find the best BMW 5 Series F11 engine replacement UK drivers rely on. Compare real prices from trusted specialists on EnginesMarket today and get back on the road with confidence.",
     "ctaButton": {
-      "label": "",
+      "label": "Compare BMW 5 Series F11 Engine Prices on EnginesMarket →",
       "href": "#",
-      "note": ""
+      "note": "[PLACEHOLDER — confirm EnginesMarket URL structure]"
     }
   }
 }

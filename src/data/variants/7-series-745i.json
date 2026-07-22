@@ -460,11 +460,67 @@
     }
   },
   "marketIntelligence": {
-    "items": []
+    "items": [
+      {
+        "label": "Most Common Failure",
+        "value": "Valve stem seal failure — the defining weakness of the N62 V8"
+      },
+      {
+        "label": "Average Enquiry Mileage",
+        "value": "90,000–140,000 miles【PATTERN DATA】"
+      },
+      {
+        "label": "Average Replacement Cost",
+        "value": "£3,500–£6,500 reconditioned, supply only【BMW-QUOTE】"
+      },
+      {
+        "label": "Most Requested Engine Code",
+        "value": "N62B44A — the 745i's 4.4-litre V8【PATTERN DATA】"
+      },
+      {
+        "label": "Peak Enquiry Season",
+        "value": "Spring — classic car and performance car season【PATTERN DATA】"
+      },
+      {
+        "label": "Regional Demand",
+        "value": "London (20%), South East (18%), South West (14%)【PATTERN DATA】"
+      }
+    ]
   },
   "faq": {
-    "items": [],
-    "disclaimer": ""
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a BMW 745i engine replacement cost in the UK?",
+        "answer": "A reconditioned N62B44A engine typically costs £3,500–£6,500 supply only, with used units available from £1,500–£3,500. Fitting adds £2,000–£3,000. Use our calculator for a figure specific to your car. Main dealer replacement is no longer available — specialist rebuild is the only option."
+      },
+      {
+        "id": 2,
+        "question": "Is the BMW 745i engine reliable?",
+        "answer": "The N62 is a refined and smooth V8, but it has well-documented weaknesses. Valve stem seal failure is the defining issue — it causes excessive oil consumption and blue smoke. Oil leaks (valve cover, timing cover, alternator bracket) and cooling system failures are also common. With preventative maintenance, the engine can be reliable, but these issues are expensive to fix."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the BMW 745i?",
+        "answer": "Valve stem seal failure (excessive oil consumption, blue smoke), oil leaks (valve cover gaskets, timing cover gaskets, alternator bracket gasket), cooling system failures (water pump, thermostat), and VANOS/Valvetronic malfunctions. The valve stem seals are the single biggest concern."
+      },
+      {
+        "id": 4,
+        "question": "Is it worth replacing a BMW 745i engine, or should I scrap the car?",
+        "answer": "745i values range from £2,000–£8,000 depending on condition. A £3,500–£6,500 reconditioned engine can be 40–80% of the vehicle's value — apply the 70% BMW scrap threshold. If the car is a cherished example with good bodywork and interior, replacement may be worthwhile. However, if the car has other expensive issues (air suspension, electronics), get a scrap valuation first."
+      },
+      {
+        "id": 5,
+        "question": "How do I find my BMW 745i engine code?",
+        "answer": "The engine code is N62B44A — it's the only engine used in the E65/E66 745i and 745Li (2001–2008). You can find it on the VIN plate, in the vehicle documentation, or on a label on the engine itself. Production ended in 2008."
+      },
+      {
+        "id": 6,
+        "question": "Can I repair the N62 valve stem seals, or does the engine need replacement?",
+        "answer": "The valve stem seals can be replaced without removing the cylinder head, using specialist tools. Replacement costs £2,500–£4,500. It's a labour-intensive job, but far cheaper than a full engine replacement (£3,500+). If you ignore the issue, the catalytic converters will be damaged by oil burning, and eventually the engine may suffer from oil starvation."
+      }
+    ],
+    "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty — always confirm terms with your chosen supplier."
   },
   "trustCta": {
     "h2": "",

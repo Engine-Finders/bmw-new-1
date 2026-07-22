@@ -559,44 +559,43 @@
       {
         "label": "Regional Demand",
         "value": "South East (22%), London (18%), North West (13%)【PATTERN DATA】"
-      },
-      {
-        "label": "SECTION 8 — FAQ",
-        "value": "1. How much does a BMW 4 Series 420i engine replacement cost in the UK?"
-      },
-      {
-        "label": "A reconditioned 420i engine typically costs £3,200–£7,500 supply only depending on generation, with the current B48B20 sitting at £3,500–£7,500. Fitting adds £650–£1,300. Use our calculator for a figure specific to your car.",
-        "value": "2. Is the BMW 4 Series 420i engine reliable?"
-      },
-      {
-        "label": "It depends entirely on which generation you're asking about. The N20 (F32, pre-2020) has a well-documented timing chain tensioner issue — pre-2016 cars are the highest risk. The B48 (G22, 2020+) is significantly more reliable, with the timing chain moved to the front of the engine. Across both, oil-change discipline is everything.",
-        "value": "3. What are the common problems with the BMW 420i?"
-      },
-      {
-        "label": "N20 timing chain wear (the defining weak point of the F32 generation), N20 oil filter housing gasket failure, B48 coolant leaks and PCV system issues, and valve cover gasket failure (both engines). See the Era Map above for generation-specific advice.",
-        "value": "4. Is it worth replacing a BMW 420i engine, or should I scrap the car?"
-      },
-      {
-        "label": "Depends on vehicle value. Against a well-kept £8,000–£12,000 F32 420i, a £4,000–£4,500 recon is 35–50% of the car's value — often worth it. Against a £20,000+ G22, a £5,000 recon is 25% — worth it. The BMW scrap threshold of 70% means evaluating the whole vehicle and its condition before committing.",
-        "value": "5. How do I find my BMW 420i engine code?"
-      },
-      {
-        "label": "Listed on the VIN plate and vehicle documentation. As a rule of thumb: F32/F33/F36 (2013–2020) = N20B20; G22/G23/G26 (2020–present) = B48B20. Tell us your registration date and we'll confirm it for free.",
-        "value": "6. Can I repair the N20 timing chain, or does it need replacement?"
-      },
-      {
-        "label": "Yes — if caught early. A preventative chain, tensioner and guide replacement costs £800–£1,800. However, if the chain snaps, a full engine replacement (£3,200–£6,500) is usually required. At the first sign of cold-start rattle, book an inspection immediately. Pre-2016 cars are the highest risk — BMW revised the tensioner and guides in 2016.",
-        "value": "Disclaimer: All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty — always confirm terms with your chosen supplier."
-      },
-      {
-        "label": "SECTION 9, META AND SCHEMA",
-        "value": "PART 2 — SECTION 9 + META + SCHEMA"
       }
     ]
   },
   "faq": {
-    "items": [],
-    "disclaimer": ""
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a BMW 4 Series 420i engine replacement cost in the UK?",
+        "answer": "A reconditioned 420i engine typically costs £3,200–£7,500 supply only depending on generation, with the current B48B20 sitting at £3,500–£7,500. Fitting adds £650–£1,300. Use our calculator for a figure specific to your car."
+      },
+      {
+        "id": 2,
+        "question": "Is the BMW 4 Series 420i engine reliable?",
+        "answer": "It depends entirely on which generation you're asking about. The N20 (F32, pre-2020) has a well-documented timing chain tensioner issue — pre-2016 cars are the highest risk. The B48 (G22, 2020+) is significantly more reliable, with the timing chain moved to the front of the engine. Across both, oil-change discipline is everything."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the BMW 420i?",
+        "answer": "N20 timing chain wear (the defining weak point of the F32 generation), N20 oil filter housing gasket failure, B48 coolant leaks and PCV system issues, and valve cover gasket failure (both engines). See the Era Map above for generation-specific advice."
+      },
+      {
+        "id": 4,
+        "question": "Is it worth replacing a BMW 420i engine, or should I scrap the car?",
+        "answer": "Depends on vehicle value. Against a well-kept £8,000–£12,000 F32 420i, a £4,000–£4,500 recon is 35–50% of the car's value — often worth it. Against a £20,000+ G22, a £5,000 recon is 25% — worth it. The BMW scrap threshold of 70% means evaluating the whole vehicle and its condition before committing."
+      },
+      {
+        "id": 5,
+        "question": "How do I find my BMW 420i engine code?",
+        "answer": "Listed on the VIN plate and vehicle documentation. As a rule of thumb: F32/F33/F36 (2013–2020) = N20B20; G22/G23/G26 (2020–present) = B48B20. Tell us your registration date and we'll confirm it for free."
+      },
+      {
+        "id": 6,
+        "question": "Can I repair the N20 timing chain, or does it need replacement?",
+        "answer": "Yes — if caught early. A preventative chain, tensioner and guide replacement costs £800–£1,800. However, if the chain snaps, a full engine replacement (£3,200–£6,500) is usually required. At the first sign of cold-start rattle, book an inspection immediately. Pre-2016 cars are the highest risk — BMW revised the tensioner and guides in 2016."
+      }
+    ],
+    "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty — always confirm terms with your chosen supplier."
   },
   "trustCta": {
     "h2": "Why UK BMW 4 Series 420i Owners Trust BMWEngines.uk",

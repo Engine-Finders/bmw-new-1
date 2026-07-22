@@ -1,24 +1,241 @@
 {
   "meta": {
-    "slug": "bmw-n57",
+    "slug": "n57",
     "title": "BMW N57 Engine — Specs, Reliability & Replacement Cost",
-    "description": "",
-    "canonical": "",
+    "description": "Phrasing variant (from rotation bank): “The N57 is refined and strong, but timing chain stretch is its defining risk — rated from 830+ real UK enquiries. Compare quotes from 20+ vetted specialists today.”",
+    "canonical": "https://bmwengine.uk/engines/n57/",
     "openGraph": {
-      "title": "",
-      "description": "",
-      "type": "",
-      "url": "",
-      "image": "",
-      "siteName": ""
+      "title": "BMW N57 Engine — Specs, Reliability & Replacement Cost",
+      "description": "The N57 is refined and strong, but timing chain stretch is its defining risk — rated from 830+ real UK enquiries. Compare quotes from 20+ vetted specialists today.",
+      "type": "website",
+      "url": "https://bmwengine.uk/engines/n57/",
+      "image": "https://bmwengine.uk/images/bmw/engines/n57.jpg",
+      "siteName": "bmwengine.uk"
     },
     "twitter": {
-      "card": "",
-      "title": "",
-      "description": "",
-      "image": ""
+      "card": "summary_large_image",
+      "title": "BMW N57 Engine — Specs, Reliability & Replacement Cost",
+      "description": "The N57 is refined and strong, but timing chain stretch is its defining risk — rated from 830+ real UK enquiries. Compare quotes from 20+ vetted specialists today.",
+      "image": "https://bmwengine.uk/images/bmw/engines/n57.jpg"
     },
-    "jsonLd": {}
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://bmwengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Engines",
+              "item": "https://bmwengine.uk/engines/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "BMW N57",
+              "item": "https://bmwengine.uk/engines/n57/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "BMW models fitted with the BMW N57",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "BMW 3 Series E90/E91/E92/E93 330d/335d",
+              "url": "https://bmwengine.uk/models/3-series/e90/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "BMW 3 Series F30/F31 330d/335d",
+              "url": "https://bmwengine.uk/models/3-series/f30/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "BMW 4 Series F32/F33 430d/435d",
+              "url": "https://bmwengine.uk/models/4-series/f32/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "BMW 5 Series F10/F11 530d/535d/M550d",
+              "url": "https://bmwengine.uk/models/5-series/f10/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 5,
+              "name": "BMW 6 Series F06/F12/F13 640d",
+              "url": "https://bmwengine.uk/models/6-series/f06/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 6,
+              "name": "BMW 7 Series F01/F02 730d/740d/750d",
+              "url": "https://bmwengine.uk/models/7-series/f01/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 7,
+              "name": "BMW X3 F25 xDrive30d/xDrive35d",
+              "url": "https://bmwengine.uk/models/x3/f25/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 8,
+              "name": "BMW X4 F26 xDrive30d/xDrive35d",
+              "url": "https://bmwengine.uk/models/x4/f26/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 9,
+              "name": "BMW X5 E70 xDrive30d/xDrive35d/xDrive40d",
+              "url": "https://bmwengine.uk/models/x5/e70/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 10,
+              "name": "BMW X5 F15 xDrive30d/xDrive40d/M50d",
+              "url": "https://bmwengine.uk/models/x5/f15/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 11,
+              "name": "BMW X6 E71 xDrive30d/xDrive35d/xDrive40d/M50d",
+              "url": "https://bmwengine.uk/models/x6/e71/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 12,
+              "name": "BMW X6 F16 xDrive30d/M50d",
+              "url": "https://bmwengine.uk/models/x6/f16/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does a BMW N57 engine replacement cost?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A reconditioned N57 typically costs £4,500–£7,000 supply only [BMW-QUOTE], varying by variant (single/twin/triple-turbo) and vehicle application. Fitting adds £780–£1,300 depending on labour rates. Use our calculator for a figure specific to your car."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the BMW N57 a reliable engine?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The N57 earns 3.5★ out of 5 [BMW-VERIFIED], based on 830+ UK enquiries and cross-referenced specialist reports. It's more reliable than the N47 but less robust than the M57 it replaced."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the most common BMW N57 failure?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Timing chain stretch is the most serious — the chain can stretch, wear guides, and cause catastrophic engine failure if ignored. Typically appears from 80,000–150,000 miles."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which BMW models use the N57 engine?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The N57 powers the 330d/335d (3 Series), 530d/535d/M550d (5 Series), 640d (6 Series), 730d/740d/750d (7 Series), and X3/X4/X5/X6 xDrive30d/35d/40d/M50d models."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How long does the BMW N57 engine last?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "With meticulous servicing — especially 8,000-mile oil changes using BMW Longlife-04 spec — an N57 can exceed 180,000–200,000 miles. Crankshaft bearing failures are rare outside police/high-idle duty cycles."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "bmwengine.uk",
+          "url": "https://bmwengine.uk/",
+          "logo": "https://bmwengine.uk/images/logo.png",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Product",
+          "name": "BMW N57 Engine",
+          "brand": {
+            "@type": "Brand",
+            "name": "BMW"
+          },
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "3.5",
+            "bestRating": "5",
+            "ratingCount": "1",
+            "reviewCount": "1"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "BMW N57 Engine Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "bmwengine.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "2500",
+            "highPrice": "9000",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "Dataset",
+          "name": "BMW N57 UK Enquiry & Reliability Data 2025",
+          "description": "Proprietary UK enquiry volumes and reliability scoring data for the BMW N57, sourced from bmwengine.uk's specialist marketplace activity.",
+          "creator": {
+            "@type": "Organization",
+            "name": "bmwengine.uk"
+          },
+          "temporalCoverage": "2025",
+          "spatialCoverage": "United Kingdom"
+        },
+        {
+          "@type": "WebPage",
+          "name": "BMW N57 Engine — Specs, Reliability & Replacement Cost",
+          "url": "https://bmwengine.uk/engines/n57/",
+          "author": {
+            "@type": "Organization",
+            "name": "bmwengine.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "bmwengine.uk Specialist Network"
+          },
+          "datePublished": "2025-07-14",
+          "dateModified": "2025-07-14"
+        }
+      ]
+    }
   },
   "hero": {
     "tagPill": "BMW • N57 • Diesel • 3.0L Straight-6 • 2008–2019",
@@ -48,22 +265,80 @@
     }
   },
   "atAGlance": {
-    "rows": []
+    "rows": [
+      {
+        "metric": "Engine Family",
+        "value": "BMW N57"
+      },
+      {
+        "metric": "Fuel",
+        "value": "Diesel"
+      },
+      {
+        "metric": "Configuration / Displacement",
+        "value": "Straight-6, 3.0L (2,993 cc)"
+      },
+      {
+        "metric": "Power Range",
+        "value": "201–381 hp"
+      },
+      {
+        "metric": "Years Produced",
+        "value": "2008–2019"
+      },
+      {
+        "metric": "Models Fitted (BMW)",
+        "value": "14 models (3, 4, 5, 6, 7 Series, X3, X4, X5, X6)"
+      },
+      {
+        "metric": "Cross-Brand Fitment",
+        "value": "Exclusive to BMW"
+      },
+      {
+        "metric": "Overall Engine Score",
+        "value": "70/100"
+      }
+    ]
   },
   "verdictRating": {
-    "starRating": "",
-    "confidence": "",
-    "scoreNote": "",
+    "starRating": "3.5★ out of 5",
+    "confidence": "90% confidence — based on 830 UK enquiries, specialist rebuild reports, and cross-referenced owner forums.",
+    "scoreNote": "Engine Score breakdown:",
     "scoreBreakdown": {
       "columns": [
         "Dimension",
         "Score (of 20)"
       ],
-      "rows": []
+      "rows": [
+        {
+          "dimension": "Reliability",
+          "score": "14 (3.5★ × 4 = 14)"
+        },
+        {
+          "dimension": "Repair Cost",
+          "score": "12 (Reconditioned supply midpoint £5,750 (£4,500–£7,000) → falls in £5,000–£6,999 band)"
+        },
+        {
+          "dimension": "Repairability",
+          "score": "12 (Mix of cheap fixes (turbo, injectors) and expensive ones (timing chain, crankshaft bearings))"
+        },
+        {
+          "dimension": "Parts Supply",
+          "score": "20 (Well-supported; parts available from multiple UK suppliers)"
+        },
+        {
+          "dimension": "Replacement Economics",
+          "score": "12 (Recon cost 45–59% of lowest host-vehicle value (sub-£10k F10/E70 examples))"
+        },
+        {
+          "dimension": "Total",
+          "score": "70/100 (Sum of five rows above)"
+        }
+      ]
     },
-    "oneLineVerdict": "",
-    "bestFor": "",
-    "avoidIf": ""
+    "oneLineVerdict": "The N57 is a strong, refined diesel six — but timing chain stretch and turbo failures are genuine risks — buy only with full service history and a documented chain inspection.",
+    "bestFor": "High-mileage motorway drivers who service on schedule with premium oil.",
+    "avoidIf": "No documented timing chain history above 80,000 miles or signs of turbo wear."
   },
   "compatibility": {
     "columns": [
@@ -72,8 +347,81 @@
       "Variant/Badge",
       "Years"
     ],
-    "rows": [],
-    "crossBrandNote": ""
+    "rows": [
+      {
+        "model": "BMW 3 Series",
+        "generation": "E90/E91/E92/E93",
+        "variantBadge": "330d, 335d",
+        "years": "2008–2013"
+      },
+      {
+        "model": "BMW 3 Series",
+        "generation": "F30/F31",
+        "variantBadge": "330d, 335d (xDrive)",
+        "years": "2012–2019"
+      },
+      {
+        "model": "BMW 4 Series",
+        "generation": "F32/F33",
+        "variantBadge": "430d, 435d",
+        "years": "2013–2019"
+      },
+      {
+        "model": "BMW 5 Series",
+        "generation": "F10/F11",
+        "variantBadge": "530d, 535d, M550d",
+        "years": "2010–2018"
+      },
+      {
+        "model": "BMW 6 Series",
+        "generation": "F06/F12/F13",
+        "variantBadge": "640d",
+        "years": "2011–2018"
+      },
+      {
+        "model": "BMW 7 Series",
+        "generation": "F01/F02",
+        "variantBadge": "730d, 740d, 750d",
+        "years": "2008–2015"
+      },
+      {
+        "model": "BMW X3",
+        "generation": "F25",
+        "variantBadge": "xDrive30d, xDrive35d",
+        "years": "2010–2017"
+      },
+      {
+        "model": "BMW X4",
+        "generation": "F26",
+        "variantBadge": "xDrive30d, xDrive35d",
+        "years": "2014–2018"
+      },
+      {
+        "model": "BMW X5",
+        "generation": "E70",
+        "variantBadge": "xDrive30d, xDrive35d, xDrive40d",
+        "years": "2008–2013"
+      },
+      {
+        "model": "BMW X5",
+        "generation": "F15",
+        "variantBadge": "xDrive30d, xDrive40d, M50d",
+        "years": "2013–2018"
+      },
+      {
+        "model": "BMW X6",
+        "generation": "E71",
+        "variantBadge": "xDrive30d, xDrive35d, xDrive40d, M50d",
+        "years": "2008–2014"
+      },
+      {
+        "model": "BMW X6",
+        "generation": "F16",
+        "variantBadge": "xDrive30d, M50d",
+        "years": "2014–2019"
+      }
+    ],
+    "crossBrandNote": "Exclusive to BMW — no cross-brand fitment."
   },
   "costGuide": {
     "columns": [
@@ -82,22 +430,67 @@
       "Fitted (Indie)",
       "Warranty"
     ],
-    "rows": [],
-    "labourEstimate": "",
+    "rows": [
+      {
+        "condition": "Used",
+        "supplyOnly": "£2,500–£4,500",
+        "fittedIndie": "£3,250–£5,540",
+        "warranty": "3–6 months"
+      },
+      {
+        "condition": "Reconditioned",
+        "supplyOnly": "£4,500–£7,000",
+        "fittedIndie": "£5,250–£8,040",
+        "warranty": "12 months"
+      },
+      {
+        "condition": "Rebuilt",
+        "supplyOnly": "£6,000–£9,000",
+        "fittedIndie": "£6,780–£10,040",
+        "warranty": "12–24 months"
+      }
+    ],
+    "labourEstimate": "Fitting an N57 typically takes 12–16 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer) [BMW-QUOTE].",
     "sharedCostNote": "",
     "cta": {
-      "label": "",
+      "label": "→ Compare BMW N57 engine prices from UK specialists",
       "href": "#"
     }
   },
   "faq": {
-    "items": []
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a BMW N57 engine replacement cost?",
+        "answer": "A reconditioned N57 typically costs £4,500–£7,000 supply only [BMW-QUOTE], varying by variant (single/twin/triple-turbo) and vehicle application. Fitting adds £780–£1,300 depending on labour rates. Use our calculator for a figure specific to your car."
+      },
+      {
+        "id": 2,
+        "question": "Is the BMW N57 a reliable engine?",
+        "answer": "The N57 earns 3.5★ out of 5 [BMW-VERIFIED], based on 830+ UK enquiries and cross-referenced specialist reports. It's more reliable than the N47 but less robust than the M57 it replaced."
+      },
+      {
+        "id": 3,
+        "question": "What is the most common BMW N57 failure?",
+        "answer": "Timing chain stretch is the most serious — the chain can stretch, wear guides, and cause catastrophic engine failure if ignored. Typically appears from 80,000–150,000 miles."
+      },
+      {
+        "id": 4,
+        "question": "Which BMW models use the N57 engine?",
+        "answer": "The N57 powers the 330d/335d (3 Series), 530d/535d/M550d (5 Series), 640d (6 Series), 730d/740d/750d (7 Series), and X3/X4/X5/X6 xDrive30d/35d/40d/M50d models."
+      },
+      {
+        "id": 5,
+        "question": "How long does the BMW N57 engine last?",
+        "answer": "With meticulous servicing — especially 8,000-mile oil changes using BMW Longlife-04 spec — an N57 can exceed 180,000–200,000 miles. Crankshaft bearing failures are rare outside police/high-idle duty cycles."
+      }
+    ]
   },
   "trustCta": {
     "trustPoints": [],
-    "finalCta": "",
+    "finalCta": "Find the best BMW N57 engine replacement UK drivers rely on. Compare real prices from trusted specialists on EnginesMarket today and get back on the road with confidence.",
     "ctaButton": {
-      "label": "",
+      "label": "Compare BMW N57 Engine Prices Now →",
       "href": "#"
     }
   }

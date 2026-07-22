@@ -1,11 +1,260 @@
 {
   "meta": {
     "slug": "bmw-z4-e89",
-    "title": "BMW Z4 E89 Engines — The Complete UK Guide",
-    "titleCharCount": 42,
-    "description": "",
-    "descriptionCharCount": 0,
-    "jsonLd": {}
+    "title": "E89 Engine Replacement Cost UK — Compare Quotes",
+    "titleCharCount": 57,
+    "description": "Every BMW Z4 E89 engine — sDrive18i, 20i, 23i, 28i, 30i, 35i, 35is. Real UK costs, honest reliability data, and BMW's hardtop roadster. Get free quotes from 20+ vetted BMW specialists today.",
+    "descriptionCharCount": 158,
+    "jsonLd": {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://bmwengine.uk/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Z4",
+              "item": "https://bmwengine.uk/z4/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "BMW Z4 E89",
+              "item": "https://bmwengine.uk/z4/e89/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "BMW Z4 E89 Engine Codes",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "N20B20 sDrive18i Engine",
+              "url": "https://bmwengine.uk/engines/n20b20/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "N20B20A sDrive20i Engine",
+              "url": "https://bmwengine.uk/engines/n20b20a/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "N52B25 sDrive23i Engine",
+              "url": "https://bmwengine.uk/engines/n52b25/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "N20B20B sDrive28i Engine",
+              "url": "https://bmwengine.uk/engines/n20b20b/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 5,
+              "name": "N52B30 sDrive30i Engine",
+              "url": "https://bmwengine.uk/engines/n52b30/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 6,
+              "name": "N54B30 sDrive35i Engine",
+              "url": "https://bmwengine.uk/engines/n54b30/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 7,
+              "name": "N54B30T0 sDrive35is Engine",
+              "url": "https://bmwengine.uk/engines/n54b30t0/"
+            }
+          ]
+        },
+        {
+          "@type": "ItemList",
+          "name": "BMW Z4 E89 Core Variants",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "sDrive18i",
+              "url": "https://bmwengine.uk/z4/sdrive18i/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "sDrive20i",
+              "url": "https://bmwengine.uk/z4/sdrive20i/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "sDrive23i",
+              "url": "https://bmwengine.uk/z4/sdrive23i/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 4,
+              "name": "sDrive28i",
+              "url": "https://bmwengine.uk/z4/sdrive28i/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 5,
+              "name": "sDrive30i",
+              "url": "https://bmwengine.uk/z4/sdrive30i/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 6,
+              "name": "sDrive35i",
+              "url": "https://bmwengine.uk/z4/sdrive35i/"
+            },
+            {
+              "@type": "ListItem",
+              "position": 7,
+              "name": "sDrive35is",
+              "url": "https://bmwengine.uk/z4/sdrive35is/"
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does a BMW Z4 E89 engine replacement cost in the UK?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A reconditioned E89 engine typically costs £2,000–£7,500 supply only, depending on engine — the N52 3.0i sits at £2,500–£4,500, while the twin-turbo N54 35is runs £4,000–£7,500. Fitting adds £650–£1,040. Use our calculator for a personalised figure."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which Z4 E89 engine is the most reliable?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The N52B30 (sDrive30i, 2009–2011) is widely regarded as the most reliable and characterful E89 engine — a 3.0-litre naturally-aspirated straight-six with 258 PS, a glorious soundtrack and proven durability. The N52B25 (sDrive23i) is also highly reliable. The N20 four-cylinders are generally reliable but timing chain guides require attention."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What are the common problems with the Z4 E89?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Timing chain guide wear on the N20 four-cylinders (sDrive20i, sDrive28i), cooling system and VANOS issues on the N52 six-cylinders (sDrive23i, sDrive30i), HPFP and injector failure on the N54 (sDrive35i, sDrive35is), and retractable hardtop mechanism issues across all variants. All are well-understood by BMW specialists."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is the BMW Z4 E89 reliable overall?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes — but it depends on the engine. The N52 six-cylinders are genuinely robust; the N20 fours are reliable with timing chain attention; the N54 is the most complex and expensive to maintain but offers the most performance. The E89 is a modern classic roadster; maintenance costs reflect its engineering."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Which Z4 E89 engine should I avoid?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No outright avoidance — but a 2009–2011 N54-powered sDrive35i without documented HPFP, injector or wastegate history deserves a thorough inspection. A 2011–2016 N20-powered car without documented timing chain history also merits a thorough inspection. The sDrive23i or sDrive30i (N52) are the safest choices."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I know if my Z4 E89 engine needs replacing?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Cold-start rattle (N20 timing chain), coolant loss or overheating (N52 cooling system), long cranking or limp mode (N54 HPFP), or blue smoke on startup (N54 injectors) are key warnings. Use our diagnostic calculator for a personalised assessment."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is it worth replacing a Z4 E89 engine, or should I scrap the car?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Depends on the car's value. Against a well-kept £8,000+ E89, a £3,200 N52 recon is 40% of the car's value — safe. Against a tired £5,000 example, the same recon is 64% — approaching our 70% BMW threshold, assess carefully. For sDrive35is models, the calculus is different: these are future classics where engine replacement can be justified if the car is otherwise excellent."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How long do Z4 E89 engines last?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The N52 six-cylinders can exceed 150,000 miles with regular maintenance and cooling system attention. The N20 four-cylinders are capable of 150,000+ miles with timing chain care. The N54 is performance-oriented but can reach 150,000+ miles with HPFP and injector attention."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the difference between the E89 and the earlier E85 Z4?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The E85 (2002–2008) is the first-generation Z4 — a traditional soft-top roadster with Z4 M models and the M54/N52 engines. The E89 (2009–2016) is the second-generation — a retractable hardtop with N52, N20 and N54 engines. The E89 is more refined and more modern; the E85 is more raw and classic. Costs and maintenance differ significantly — see each generation's own page for specifics."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I find my Z4 E89 engine code?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Check the VIN plate, vehicle documentation, or the engine block — 2.0-litre four-cylinder N20 variants include N20B20 (sDrive18i), N20B20A (sDrive20i), and N20B20B (sDrive28i); 2.5-litre six-cylinder is N52B25 (sDrive23i); 3.0-litre six-cylinder is N52B30 (sDrive30i); 3.0-litre twin-turbo six-cylinder is N54B30 (sDrive35i) or N54B30T0 (sDrive35is). Tell us your variant and registration year and we'll identify it — 20+ vetted BMW specialists will confirm it for free."
+              }
+            }
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "BMWEngines.uk",
+          "url": "https://bmwengine.uk/",
+          "logo": "https://bmwengine.uk/images/bmwengines-logo.png",
+          "parentOrganization": {
+            "@type": "Organization",
+            "name": "Engine Finders"
+          }
+        },
+        {
+          "@type": "Service",
+          "serviceType": "BMW Z4 E89 Engine Replacement",
+          "provider": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk"
+          },
+          "areaServed": "GB",
+          "offers": {
+            "@type": "AggregateOffer",
+            "priceCurrency": "GBP",
+            "lowPrice": "2000",
+            "highPrice": "7500",
+            "availability": "https://schema.org/InStock"
+          }
+        },
+        {
+          "@type": "WebPage",
+          "name": "E89 Engine Replacement Cost UK — Compare Quotes",
+          "url": "https://bmwengine.uk/z4/e89/",
+          "author": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk Editorial Team"
+          },
+          "reviewedBy": {
+            "@type": "Organization",
+            "name": "BMWEngines.uk Specialist Network"
+          },
+          "datePublished": "2026-07-09",
+          "dateModified": "2026-07-09"
+        }
+      ]
+    }
   },
   "internalDeclarations": {
     "checkA": "",
@@ -436,16 +685,80 @@
     "liveFeed": []
   },
   "faq": {
-    "items": []
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a BMW Z4 E89 engine replacement cost in the UK?",
+        "answer": "A reconditioned E89 engine typically costs £2,000–£7,500 supply only [BMW-QUOTE], depending on engine — the N52 3.0i sits at £2,500–£4,500, while the twin-turbo N54 35is runs £4,000–£7,500. Fitting adds £650–£1,040. Use our calculator for a personalised figure."
+      },
+      {
+        "id": 2,
+        "question": "Which Z4 E89 engine is the most reliable?",
+        "answer": "The N52B30 (sDrive30i, 2009–2011) is widely regarded as the most reliable and characterful E89 engine — a 3.0-litre naturally-aspirated straight-six with 258 PS, a glorious soundtrack and proven durability. The N52B25 (sDrive23i) is also highly reliable. The N20 four-cylinders are generally reliable but timing chain guides require attention."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the Z4 E89?",
+        "answer": "Timing chain guide wear on the N20 four-cylinders (sDrive20i, sDrive28i), cooling system and VANOS issues on the N52 six-cylinders (sDrive23i, sDrive30i), HPFP and injector failure on the N54 (sDrive35i, sDrive35is), and retractable hardtop mechanism issues across all variants. All are well-understood by BMW specialists."
+      },
+      {
+        "id": 4,
+        "question": "Is the BMW Z4 E89 reliable overall?",
+        "answer": "Yes — but it depends on the engine. The N52 six-cylinders are genuinely robust; the N20 fours are reliable with timing chain attention; the N54 is the most complex and expensive to maintain but offers the most performance. The E89 is a modern classic roadster; maintenance costs reflect its engineering."
+      },
+      {
+        "id": 5,
+        "question": "Which Z4 E89 engine should I avoid?",
+        "answer": "No outright avoidance — but a 2009–2011 N54-powered sDrive35i without documented HPFP, injector or wastegate history deserves a thorough inspection. A 2011–2016 N20-powered car without documented timing chain history also merits a thorough inspection. The sDrive23i or sDrive30i (N52) are the safest choices."
+      },
+      {
+        "id": 6,
+        "question": "How do I know if my Z4 E89 engine needs replacing?",
+        "answer": "Cold-start rattle (N20 timing chain), coolant loss or overheating (N52 cooling system), long cranking or limp mode (N54 HPFP), or blue smoke on startup (N54 injectors) are key warnings. Use our diagnostic calculator for a personalised assessment."
+      },
+      {
+        "id": 7,
+        "question": "Is it worth replacing a Z4 E89 engine, or should I scrap the car?",
+        "answer": "Depends on the car's value. Against a well-kept £8,000+ E89, a £3,200 N52 recon is 40% of the car's value — safe. Against a tired £5,000 example, the same recon is 64% — approaching our 70% BMW threshold, assess carefully. For sDrive35is models, the calculus is different: these are future classics where engine replacement can be justified if the car is otherwise excellent."
+      },
+      {
+        "id": 8,
+        "question": "How long do Z4 E89 engines last?",
+        "answer": "The N52 six-cylinders can exceed 150,000 miles with regular maintenance and cooling system attention. The N20 four-cylinders are capable of 150,000+ miles with timing chain care. The N54 is performance-oriented but can reach 150,000+ miles with HPFP and injector attention."
+      },
+      {
+        "id": 9,
+        "question": "What is the difference between the E89 and the earlier E85 Z4?",
+        "answer": "The E85 (2002–2008) is the first-generation Z4 — a traditional soft-top roadster with Z4 M models and the M54/N52 engines. The E89 (2009–2016) is the second-generation — a retractable hardtop with N52, N20 and N54 engines. The E89 is more refined and more modern; the E85 is more raw and classic. Costs and maintenance differ significantly — see each generation's own page for specifics."
+      },
+      {
+        "id": 10,
+        "question": "How do I find my Z4 E89 engine code?",
+        "answer": "Check the VIN plate, vehicle documentation, or the engine block — 2.0-litre four-cylinder N20 variants include N20B20 (sDrive18i), N20B20A (sDrive20i), and N20B20B (sDrive28i); 2.5-litre six-cylinder is N52B25 (sDrive23i); 3.0-litre six-cylinder is N52B30 (sDrive30i); 3.0-litre twin-turbo six-cylinder is N54B30 (sDrive35i) or N54B30T0 (sDrive35is). Tell us your variant and registration year and we'll identify it — 20+ vetted BMW specialists will confirm it for free."
+      }
+    ]
   },
   "trustCta": {
-    "h2": "",
-    "trustPoints": [],
-    "finalCta": "",
+    "h2": "Why UK BMW Z4 E89 Owners Trust BMWEngines.uk",
+    "trustPoints": [
+      {
+        "title": "Trusted E89 Engine Suppliers",
+        "text": "every garage and engine rebuilder in our network is vetted, rated and reviewed by real Z4 owners, as part of the Engine Finders network."
+      },
+      {
+        "title": "Compare E89 Engine Replacement Companies",
+        "text": "see prices, warranty terms and supply & fit options side-by-side before you commit."
+      },
+      {
+        "title": "UK Engine Replacement Services for E89",
+        "text": "covering every variant from sDrive18i to sDrive35is, with supply-only or full supply & fit available nationwide."
+      }
+    ],
+    "finalCta": "Find the best BMW Z4 E89 engine replacement UK drivers rely on. Compare real prices from trusted specialists on EnginesMarket today and get back on the road with confidence.",
     "ctaButton": {
-      "label": "",
+      "label": "Compare BMW Z4 E89 Engine Prices on EnginesMarket →",
       "href": "#",
-      "note": ""
+      "note": "[PLACEHOLDER — confirm EnginesMarket URL structure]"
     }
   }
 }

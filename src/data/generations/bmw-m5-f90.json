@@ -470,16 +470,80 @@
     "liveFeed": []
   },
   "faq": {
-    "items": []
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a BMW M5 F90 engine replacement cost in the UK?",
+        "answer": "A reconditioned S63 engine typically costs £6,000–£15,000 supply only [BMW-QUOTE], depending on the variant — the standard M5 sits at £6,000–£12,000, the Competition at £6,500–£13,000, and the CS at £8,000–£15,000. Fitting adds £910–£1,170. A full engine rebuild can exceed £20,000. Use our calculator for a personalised figure."
+      },
+      {
+        "id": 2,
+        "question": "Which F90 M5 powertrain is the most reliable?",
+        "answer": "All F90 M5s use the same S63 4.4-litre twin-turbo V8 — just in different states of tune. The engine is fundamentally robust, but the plastic coolant expansion tank is a known weakness that can fail and cause coolant leaks. A billet aluminium replacement is strongly recommended for any F90 M5."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the BMW M5 F90?",
+        "answer": "The plastic coolant expansion tank is the single biggest weak point — when it fails, coolant leaks onto the rear ignition coils and spark plugs, causing misfires. Oil leaks from the valve cover and oil filter housing are common. Fuel pump issues have been reported in some cars, particularly after long high-speed driving."
+      },
+      {
+        "id": 4,
+        "question": "Is the BMW M5 F90 reliable?",
+        "answer": "Yes — the S63 V8 is a proven, robust engine. However, it's a high-performance engine that requires diligent maintenance. The coolant expansion tank should be replaced with a billet aluminium unit as preventative maintenance. Oil changes should be frequent, and the cooling system should be inspected regularly."
+      },
+      {
+        "id": 5,
+        "question": "Which F90 M5 powertrain should I avoid?",
+        "answer": "No powertrain outright — the CS is the most expensive and rare, but all share the same fundamental engine. A car without documented coolant expansion tank replacement is a risk. The Competition is the sweet spot in the range. Avoid any car with poor service history or obvious coolant leaks."
+      },
+      {
+        "id": 6,
+        "question": "How do I know if my F90 M5 engine needs replacing?",
+        "answer": "Coolant loss or misfires (coolant expansion tank failure), oil leaks (valve cover/oil filter housing), stalling or hard starting (fuel pump issues), or persistent warning lights are the key warning signs. Use our diagnostic calculator for a personalised assessment."
+      },
+      {
+        "id": 7,
+        "question": "Is it worth replacing an F90 M5 engine, or should I scrap the car?",
+        "answer": "Depends on the car's value. Against a £35,000 M5, a £6,000–£12,000 S63 recon is 17–34% — well within our 70% BMW threshold. For a Competition at £35,000+, a £6,500–£13,000 recon is 19–37% — a repair decision, not a scrap question. For a CS at £60,000+, a £8,000–£15,000 recon is 13–25% — a manageable cost for a collector's car. Value the car first; budget for the coolant tank immediately."
+      },
+      {
+        "id": 8,
+        "question": "How long do S63 engines last?",
+        "answer": "With proper preventative maintenance, the S63 can exceed 100,000 miles. The coolant expansion tank should be replaced as soon as possible. Oil changes should be frequent (every 5,000–8,000 miles). Many well-maintained F90 M5s are now well over 50,000 miles and still going strong."
+      },
+      {
+        "id": 9,
+        "question": "What is the difference between the F90, F10, and G90 M5?",
+        "answer": "The F90 (2017–2023) is the sixth-generation M5, succeeding the F10 (2011–2017). The F90 was the first M5 with xDrive all-wheel drive and the last purely petrol-powered M5. The G90 (2024–present) is the seventh-generation M5 — it uses a hybrid V8 powertrain with 727 bhp. The F10 was rear-wheel drive only with a similar S63 V8. The F90 offers the best balance of performance, usability, and character."
+      },
+      {
+        "id": 10,
+        "question": "How do I find my F90 M5 engine code?",
+        "answer": "Listed on the VIN plate and vehicle documentation; the engine code is also stamped on the cylinder block. For petrol: S63B44T4 (standard M5), S63B44B (M5 Competition), S63B44B (M5 CS). Tell us your variant and registration year and we'll identify it — 20+ vetted BMW specialists will confirm it for free."
+      }
+    ]
   },
   "trustCta": {
-    "h2": "",
-    "trustPoints": [],
-    "finalCta": "",
+    "h2": "Why UK BMW M5 F90 Owners Trust BMWEngines.uk",
+    "trustPoints": [
+      {
+        "title": "Trusted M5 Engine Suppliers",
+        "text": "every garage and engine rebuilder in our network is vetted, rated and reviewed by real M5 owners, as part of the Engine Finders network."
+      },
+      {
+        "title": "Compare M5 Engine Replacement Companies",
+        "text": "see prices, warranty terms and supply & fit options side‑by‑side before you commit."
+      },
+      {
+        "title": "UK Engine Replacement Services for M5",
+        "text": "covering every F90 variant from standard M5 to CS, with supply‑only or full supply & fit available nationwide."
+      }
+    ],
+    "finalCta": "Find the best BMW M5 F90 engine replacement UK drivers rely on. Compare real prices from trusted specialists on EnginesMarket today and get back on the road with confidence.",
     "ctaButton": {
-      "label": "",
+      "label": "Compare BMW M5 F90 Engine Prices on EnginesMarket →",
       "href": "#",
-      "note": ""
+      "note": "[PLACEHOLDER — confirm EnginesMarket URL structure]"
     }
   }
 }

@@ -555,64 +555,43 @@
       {
         "label": "Regional Demand",
         "value": "South East (22%), London (16%), South West (12%) — premium SUV strongholds [PATTERN DATA]"
-      },
-      {
-        "label": "SECTION 8 — FAQ",
-        "value": "1. How much does a BMW X3 30e xDrive engine replacement cost in the UK?"
-      },
-      {
-        "label": "A reconditioned X3 30e engine (B48 PHEV) typically costs £2,200–£4,500 supply only depending on generation. A reconditioned engine for a BMW X3 2.0‑litre typically falls between £1,200 and £2,800 for the engine alone. Fitting adds £1,000–£1,400. As a PHEV, the hybrid system components add complexity and cost. Use our calculator for a figure specific to your vehicle.",
-        "value": "2. Is the BMW X3 30e xDrive engine reliable?"
-      },
-      {
-        "label": "The B48 is a robust and refined engine — part of BMW's B‑family, known for its reliability. Common issues include coolant leaks (expansion tank, water pump), PCV valve failure, and oil leaks. The plug‑in hybrid system adds complexity — HV battery degradation and charging system failures are the primary PHEV‑specific concerns. With regular maintenance and proper battery care, the X3 30e can be a reliable and efficient powertrain.",
-        "value": "3. What are the common problems with the BMW X3 30e xDrive?"
-      },
-      {
-        "label": "Common issues include B48 coolant leaks (expansion tank, water pump, plastic fittings), PCV valve failure causing rough running and smoke, HV battery degradation (reduced electric range), and oil leaks from the valve cover and oil filter housing. Some owners have also reported electronic control units refusing to enter low‑power sleep mode, causing overnight battery drain.",
-        "value": "4. Is it worth replacing an X3 30e engine, or should I scrap the car?"
-      },
-      {
-        "label": "Given the X3's retained value (typically £20,000‑£45,000+), a £2,200–£4,500 reconditioned engine is a modest fraction of the vehicle's worth. Replacement is almost always financially viable. However, if the HV battery has also failed (costing £2,000‑£5,000+), the total repair cost may be substantial. Get a full diagnostic assessment before committing.",
-        "value": "5. How do I find my X3's engine code?"
-      },
-      {
-        "label": "The X3 30e uses the B48B20A (G01, 2022‑2024) or B48B20V (G45, 2025–present) 2.0‑litre turbo petrol engine combined with an electric motor. The engine code is stamped on the engine block and listed on your V5C. The 30e badge itself confirms the powertrain — it's the plug‑in hybrid offered in the X3 range.",
-        "value": "6. Can I repair an X3 30e engine issue, or does it need replacement?"
-      },
-      {
-        "label": "Most issues — B48 coolant leaks, PCV valve failure, oil leaks — are repairable. HV battery degradation may be covered under warranty if the vehicle is still within the warranty period (typically 8 years/100,000 miles). However, if the engine suffers major internal failure, a full engine replacement is usually more cost‑effective than a rebuild.",
-        "value": "Disclaimer: All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12‑month unlimited‑mileage warranty — always confirm terms with your chosen supplier."
-      },
-      {
-        "label": "Section 9 (Trust + Final CTA), meta tags, Open Graph, Twitter Card, and complete JSON‑LD schema.",
-        "value": "* Brand: BMW"
-      },
-      {
-        "label": "* Domain: bmwengine.uk",
-        "value": "* Data tag: BMW‑"
-      },
-      {
-        "label": "* Specialist count: 20+",
-        "value": "* Scrap threshold: 70%"
-      },
-      {
-        "label": "* CTA Mode: Consultative (Priority M)",
-        "value": "* Era Map rows: 2 (B48B20A G01, B48B20V G45)"
-      },
-      {
-        "label": "* Engine codes: B48B20A, B48B20V",
-        "value": "* Service schema price range: £1,200 (lowest used) to £4,500 (highest rebuilt) — spans full Era Map history"
-      },
-      {
-        "label": "* Model Page needed: BMW X3 Generation Pages (G01, G45)",
-        "value": "* Generation Pages needed: BMW X3 Generation Pages (for cost inheritance)"
       }
     ]
   },
   "faq": {
-    "items": [],
-    "disclaimer": ""
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a BMW X3 30e xDrive engine replacement cost in the UK?",
+        "answer": "A reconditioned X3 30e engine (B48 PHEV) typically costs £2,200–£4,500 supply only depending on generation. A reconditioned engine for a BMW X3 2.0‑litre typically falls between £1,200 and £2,800 for the engine alone. Fitting adds £1,000–£1,400. As a PHEV, the hybrid system components add complexity and cost. Use our calculator for a figure specific to your vehicle."
+      },
+      {
+        "id": 2,
+        "question": "Is the BMW X3 30e xDrive engine reliable?",
+        "answer": "The B48 is a robust and refined engine — part of BMW's B‑family, known for its reliability. Common issues include coolant leaks (expansion tank, water pump), PCV valve failure, and oil leaks. The plug‑in hybrid system adds complexity — HV battery degradation and charging system failures are the primary PHEV‑specific concerns. With regular maintenance and proper battery care, the X3 30e can be a reliable and efficient powertrain."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the BMW X3 30e xDrive?",
+        "answer": "Common issues include B48 coolant leaks (expansion tank, water pump, plastic fittings), PCV valve failure causing rough running and smoke, HV battery degradation (reduced electric range), and oil leaks from the valve cover and oil filter housing. Some owners have also reported electronic control units refusing to enter low‑power sleep mode, causing overnight battery drain."
+      },
+      {
+        "id": 4,
+        "question": "Is it worth replacing an X3 30e engine, or should I scrap the car?",
+        "answer": "Given the X3's retained value (typically £20,000‑£45,000+), a £2,200–£4,500 reconditioned engine is a modest fraction of the vehicle's worth. Replacement is almost always financially viable. However, if the HV battery has also failed (costing £2,000‑£5,000+), the total repair cost may be substantial. Get a full diagnostic assessment before committing."
+      },
+      {
+        "id": 5,
+        "question": "How do I find my X3's engine code?",
+        "answer": "The X3 30e uses the B48B20A (G01, 2022‑2024) or B48B20V (G45, 2025–present) 2.0‑litre turbo petrol engine combined with an electric motor. The engine code is stamped on the engine block and listed on your V5C. The 30e badge itself confirms the powertrain — it's the plug‑in hybrid offered in the X3 range."
+      },
+      {
+        "id": 6,
+        "question": "Can I repair an X3 30e engine issue, or does it need replacement?",
+        "answer": "Most issues — B48 coolant leaks, PCV valve failure, oil leaks — are repairable. HV battery degradation may be covered under warranty if the vehicle is still within the warranty period (typically 8 years/100,000 miles). However, if the engine suffers major internal failure, a full engine replacement is usually more cost‑effective than a rebuild."
+      }
+    ],
+    "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12‑month unlimited‑mileage warranty — always confirm terms with your chosen supplier."
   },
   "trustCta": {
     "h2": "Why UK BMW X3 30e xDrive Owners Trust BMWEngines.uk",

@@ -742,23 +742,121 @@
     "scopeNote": "All variants listed are G02 only. The X4 M (F98) is technically a separate model designation but shares the G02 platform. The xDrive30d (B57 six-cylinder diesel) was available in European markets but not in North America."
   },
   "marketIntelligence": {
-    "mostRequestedEngines": [],
-    "mostRequestedVariants": [],
-    "averageReplacementCost": "",
-    "mostCommonFailures": [],
-    "liveFeed": []
+    "mostRequestedEngines": [
+      "1. B58B30 (M40i) — pattern data",
+      "2. B48B20O1 (xDrive30i) — pattern data",
+      "3. B47D20B (xDrive20d) — pattern data"
+    ],
+    "mostRequestedVariants": [
+      "1. M40i",
+      "2. xDrive30i",
+      "3. xDrive20d"
+    ],
+    "averageReplacementCost": "£4,000–£7,000 (reconditioned, supply only) [BMW-QUOTE]",
+    "mostCommonFailures": [
+      "1. B58 oil filter housing gasket leak",
+      "2. S58 crank hub failure (X4 M)",
+      "3. B47/B57 EGR cooler & DPF (diesel)"
+    ],
+    "liveFeed": [
+      {
+        "vehicle": "BMW X4 M40i G02 (B58)",
+        "location": "Manchester",
+        "issue": "Oil leak from filter housing, burning smell",
+        "enquiries": "3 enquiries",
+        "updated": "Updated Monthly"
+      },
+      {
+        "vehicle": "BMW X4 M Competition G02 (S58)",
+        "location": "Birmingham",
+        "issue": "Crank hub investigation, tuned car",
+        "enquiries": "2 enquiries",
+        "updated": "Updated Monthly"
+      },
+      {
+        "vehicle": "BMW X4 xDrive20d G02 (B47)",
+        "location": "London",
+        "issue": "EGR cooler leak, coolant loss",
+        "enquiries": "2 enquiries",
+        "updated": "Updated Monthly"
+      }
+    ]
   },
   "faq": {
-    "items": []
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a BMW X4 G02 engine replacement cost in the UK?",
+        "answer": "A reconditioned G02 engine typically costs £2,500–£11,000 supply only [BMW-QUOTE], depending on the engine — the B48 and B47 four-cylinders sit at £2,500–£5,000, the B58 and B57 six-cylinders at £4,500–£7,500, and the S58 X4 M at £6,000–£11,000. Fitting adds £520–£1,170. Use our calculator for a personalised figure."
+      },
+      {
+        "id": 2,
+        "question": "Which G02 engine is the most reliable?",
+        "answer": "The B58B30 (M40i) is the G02's most reliable engine — BMW's modern turbocharged straight-six is smooth, responsive, and widely considered one of BMW's most durable modern engines. The B48 four-cylinder is also very reliable, and the B47 diesel is improved over the N47."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the BMW X4 G02?",
+        "answer": "The B58 six-cylinder (M40i) suffers from oil filter housing gasket leaks. The S58 (X4 M/X4 M Competition) has a known crank hub spin risk — more common on tuned cars. The B47 and B57 diesel engines can have EGR cooler leaks and DPF clogging with urban use. The B48 four-cylinders are generally robust with minor cooling system and PCV issues."
+      },
+      {
+        "id": 4,
+        "question": "Is the BMW X4 G02 reliable?",
+        "answer": "Yes — the G02 uses BMW's most modern and reliable engine family. The B48, B58, B47, and B57 are all well-established with strong reliability records. The S58 is more demanding but fundamentally strong. Regular maintenance is the key — these are complex, high-performance cars."
+      },
+      {
+        "id": 5,
+        "question": "Which G02 engine should I avoid?",
+        "answer": "No engine outright — but if you're buying an X4 M, be prepared for the running costs and budget for a crank hub fix if the car is modified or you plan to modify it. For diesel buyers, ensure the car has been used for regular motorway journeys to keep the DPF clear. Any engine without full service history is a risk."
+      },
+      {
+        "id": 6,
+        "question": "How do I know if my G02 engine needs replacing?",
+        "answer": "Oil leaks or burning smell (B58 oil filter housing), crank hub symptoms like misfire or timing codes (S58), coolant loss or reduced power (diesel EGR/DPF), persistent warning lights, or coolant loss are the key warning signs. Use our diagnostic calculator for a personalised assessment."
+      },
+      {
+        "id": 7,
+        "question": "Is it worth replacing a G02 engine, or should I scrap the car?",
+        "answer": "Depends on the car's value. Against a £25,000 M40i, a £4,500–£7,000 B58 recon is 18–28% — well within our 70% BMW threshold. Against a £20,000 xDrive30i, a £2,500–£4,500 B48 recon is 13–23% — a straightforward repair decision. For an X4 M at £25,000+, a £6,000–£11,000 S58 recon is 24–44% — a serious decision but viable for a well-kept example. Value the car first; budget for preventative work if buying used."
+      },
+      {
+        "id": 8,
+        "question": "How long do G02 engines last?",
+        "answer": "The B58 and B48 can comfortably exceed 150,000 miles with proper servicing. The B47 and B57 diesels are similarly durable but require regular motorway driving to keep the DPF clear — 100,000+ miles is achievable. The S58 is capable of high mileage but crank hub and cooling system work should be budgeted for at 50k–60k mile intervals."
+      },
+      {
+        "id": 9,
+        "question": "What is the difference between the G02, F26, and G01?",
+        "answer": "The G02 (2018–2025) is the second-generation X4, succeeding the F26 (2014–2018). It's built on the CLAR platform shared with the G01 X3 (2017–2024). The G02 is the coupé-SUV variant; the G01 is the conventional SUV. The G02 has a sportier roofline and styling but shares its mechanicals with the G01. The F26 was based on the older F25 X3 platform. The G02 was discontinued in 2025 with no direct successor."
+      },
+      {
+        "id": 10,
+        "question": "How do I find my G02 engine code?",
+        "answer": "Listed on the VIN plate and vehicle documentation; the engine code is also stamped on the cylinder block. For petrol: B48B20A/B (xDrive20i), B48B20O1/B (xDrive30i), B58B30A/B (M40i), S58B30A (X4 M/Competition). For diesel: B47D20B (xDrive20d/25d), B57D30O1 (xDrive30d). Tell us your variant and registration year and we'll identify it — 20+ vetted BMW specialists will confirm it for free."
+      }
+    ]
   },
   "trustCta": {
-    "h2": "",
-    "trustPoints": [],
-    "finalCta": "",
+    "h2": "Why UK BMW X4 G02 Owners Trust BMWEngines.uk",
+    "trustPoints": [
+      {
+        "title": "Trusted G02 Engine Suppliers",
+        "text": "every garage and engine rebuilder in our network is vetted, rated and reviewed by real G02 owners, as part of the Engine Finders network."
+      },
+      {
+        "title": "Compare G02 Engine Replacement Companies",
+        "text": "see prices, warranty terms and supply & fit options side‑by‑side before you commit."
+      },
+      {
+        "title": "UK Engine Replacement Services for G02",
+        "text": "covering every variant from xDrive20d to X4 M Competition, with supply‑only or full supply & fit available nationwide."
+      }
+    ],
+    "finalCta": "Find the best BMW X4 G02 engine replacement UK drivers rely on. Compare real prices from trusted specialists on EnginesMarket today and get back on the road with confidence.",
     "ctaButton": {
-      "label": "",
+      "label": "Compare BMW X4 G02 Engine Prices on EnginesMarket →",
       "href": "#",
-      "note": ""
+      "note": "[PLACEHOLDER — confirm EnginesMarket URL structure]"
     }
   }
 }

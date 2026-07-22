@@ -589,72 +589,43 @@
       {
         "label": "Regional Demand",
         "value": "South East (22%), London (16%), North West (12%) — large SUV strongholds [PATTERN DATA]"
-      },
-      {
-        "label": "SECTION 8 — FAQ",
-        "value": "1. How much does a BMW X5 xDrive30d engine replacement cost in the UK?"
-      },
-      {
-        "label": "A reconditioned X5 xDrive30d engine typically costs £2,800–£5,500 supply only depending on which generation you have (E70/F15's N57 is cheaper; G05's B57 is more expensive). A reconditioned 306D3 engine costs on average £1,417 in good condition. Fitting adds £1,000–£1,500. A full engine replacement with labour can cost £8,000–£11,000. Use our calculator for a figure specific to your vehicle.",
-        "value": "2. Is the BMW X5 xDrive30d engine reliable?"
-      },
-      {
-        "label": "It depends on which generation your X5 has. The F15 30d with the N57 engine is considered the \"sweet spot for value and reliability\". The G05 xDrive30d with the B57 engine (265 PS) is the most reliable variant. The N57 has known timing chain issues, though less severe than the four-cylinder N47. Well‑serviced N57 engines with 8,000–10,000 mile oil changes can exceed 180,000 miles.",
-        "value": "3. What are the common problems with the BMW X5 xDrive30d?"
-      },
-      {
-        "label": "On the E70/F15 (N57), the most common issue is timing chain rattle — the chain, guides, and tensioners can wear prematurely. On both N57 and B57, common problems include EGR cooler failure, DPF blockage (from urban driving), oil leaks (valve cover, oil filter housing), and AdBlue/NOx sensor issues on the B57.",
-        "value": "4. Is it worth replacing an X5 xDrive30d engine, or should I scrap the car?"
-      },
-      {
-        "label": "Depends on vehicle value and condition. Against a tidy £8,000–£25,000 X5, a £2,800–£5,500 recon is 15–40% of the car's value — often worth it on well‑maintained examples. If the timing chain has snapped on an N57, a full engine replacement may be necessary. Get a full diagnostic assessment before committing.",
-        "value": "5. How do I find my X5's engine code?"
-      },
-      {
-        "label": "The E70 LCI (2010–2013) uses the N57D30A. The F15 (2013–2018) uses the N57D30O0 (245 PS) or N57D30O1 (258 PS) — check your power output. The G05 (2018–present) uses the B57D30O0. The engine code is stamped on the engine block and listed on your V5C.",
-        "value": "6. Can I repair an X5 xDrive30d engine issue, or does it need replacement?"
-      },
-      {
-        "label": "Most issues — N57 timing chain wear (if caught early), EGR cooler failure, DPF blockage, oil leaks — are repairable. However, if the timing chain has snapped on an N57, the engine is an interference design — pistons will strike valves. In this case, a full engine replacement is usually more cost‑effective than a rebuild. Service the oil more regularly at 8,000–10,000 mile intervals.",
-        "value": "Disclaimer: All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12‑month unlimited‑mileage warranty — always confirm terms with your chosen supplier."
-      },
-      {
-        "label": "Section 9 (Trust + Final CTA), meta tags, Open Graph, Twitter Card, and complete JSON‑LD schema.",
-        "value": "* Brand: BMW"
-      },
-      {
-        "label": "* Domain: bmwengine.uk",
-        "value": "* Data tag: BMW‑"
-      },
-      {
-        "label": "* Specialist count: 20+",
-        "value": "* Scrap threshold: 70%"
-      },
-      {
-        "label": "* CTA Mode: Assertive (Priority H)",
-        "value": "* Era Map rows: 4 (N57D30A, N57D30O0, N57D30O1, B57D30O0)"
-      },
-      {
-        "label": "* Engine codes: N57D30A, N57D30O0, N57D30O1, B57D30O0",
-        "value": "* Service schema price range: £1,800 (lowest used) to £5,500 (highest rebuilt) — spans full Era Map history"
-      },
-      {
-        "label": "* Model Page needed: BMW X5 Generation Pages (E70, F15, G05)",
-        "value": "* Generation Pages needed: BMW X5 Generation Pages (for cost inheritance)"
-      },
-      {
-        "label": "Section 9, meta tags, and schema. But their deeper need is consistency and automation—they want to ensure every variant page follows the exact same structure, uses the correct data tags, includes the right schema, and adheres to the brand's voice. They're probably building out a large inventory of pages and need reliable, repeatable outputs.",
-        "value": "The assistant's response is a perfect match for this need. It's a complete Part 2, filling in all the required components from the prompt: Section 9 (Trust + Final CTA with the right voice and trust points), Meta Title/Description with the correct character counts, Open Graph tags, and the full JSON-LD schema stack (BreadcrumbList, ItemLists, FAQPage, Organization, Service, Dataset, WebPage). It also includes the crucial Production Note, which confirms the schema consistency and authority model application. This is exactly what the \"Part 2\" prompt requires."
-      },
-      {
-        "label": "The assistant has correctly used the data from Part 1—taking the CTA mode (Assertive, from Priority H), the brand constants (BMW, bmwengine.uk, BMW- tag), the Era Map rows (4 engine codes), and the price range to craft the schema's AggregateOffer. They've also woven in the brand voice (Precision & engineering) and the specific reliability details (like the N57 timing chain issues vs. the B57's improvements) into the Trust Points and FAQ answers.",
-        "value": "So, the assistant's thought process here is to execute the structured prompt precisely. They're not improvising; they're populating a template with the correct information from the previous turn, ensuring data integrity by matching the engine codes, maintaining the brand voice, and completing the page build as specified in the handover document. The deep need is for a production-ready, publishable page that's consistent with the site's standards and SEO requirements."
       }
     ]
   },
   "faq": {
-    "items": [],
-    "disclaimer": ""
+    "items": [
+      {
+        "id": 1,
+        "question": "How much does a BMW X5 xDrive30d engine replacement cost in the UK?",
+        "answer": "A reconditioned X5 xDrive30d engine typically costs £2,800–£5,500 supply only depending on which generation you have (E70/F15's N57 is cheaper; G05's B57 is more expensive). A reconditioned 306D3 engine costs on average £1,417 in good condition. Fitting adds £1,000–£1,500. A full engine replacement with labour can cost £8,000–£11,000. Use our calculator for a figure specific to your vehicle."
+      },
+      {
+        "id": 2,
+        "question": "Is the BMW X5 xDrive30d engine reliable?",
+        "answer": "It depends on which generation your X5 has. The F15 30d with the N57 engine is considered the \"sweet spot for value and reliability\". The G05 xDrive30d with the B57 engine (265 PS) is the most reliable variant. The N57 has known timing chain issues, though less severe than the four-cylinder N47. Well‑serviced N57 engines with 8,000–10,000 mile oil changes can exceed 180,000 miles."
+      },
+      {
+        "id": 3,
+        "question": "What are the common problems with the BMW X5 xDrive30d?",
+        "answer": "On the E70/F15 (N57), the most common issue is timing chain rattle — the chain, guides, and tensioners can wear prematurely. On both N57 and B57, common problems include EGR cooler failure, DPF blockage (from urban driving), oil leaks (valve cover, oil filter housing), and AdBlue/NOx sensor issues on the B57."
+      },
+      {
+        "id": 4,
+        "question": "Is it worth replacing an X5 xDrive30d engine, or should I scrap the car?",
+        "answer": "Depends on vehicle value and condition. Against a tidy £8,000–£25,000 X5, a £2,800–£5,500 recon is 15–40% of the car's value — often worth it on well‑maintained examples. If the timing chain has snapped on an N57, a full engine replacement may be necessary. Get a full diagnostic assessment before committing."
+      },
+      {
+        "id": 5,
+        "question": "How do I find my X5's engine code?",
+        "answer": "The E70 LCI (2010–2013) uses the N57D30A. The F15 (2013–2018) uses the N57D30O0 (245 PS) or N57D30O1 (258 PS) — check your power output. The G05 (2018–present) uses the B57D30O0. The engine code is stamped on the engine block and listed on your V5C."
+      },
+      {
+        "id": 6,
+        "question": "Can I repair an X5 xDrive30d engine issue, or does it need replacement?",
+        "answer": "Most issues — N57 timing chain wear (if caught early), EGR cooler failure, DPF blockage, oil leaks — are repairable. However, if the timing chain has snapped on an N57, the engine is an interference design — pistons will strike valves. In this case, a full engine replacement is usually more cost‑effective than a rebuild. Service the oil more regularly at 8,000–10,000 mile intervals."
+      }
+    ],
+    "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12‑month unlimited‑mileage warranty — always confirm terms with your chosen supplier."
   },
   "trustCta": {
     "h2": "Why UK BMW X5 xDrive30d Owners Trust BMWEngines.uk",
