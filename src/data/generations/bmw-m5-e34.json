@@ -300,7 +300,20 @@
     "marketIntelligenceLine": "The E34 M5 generated 120+ real UK engine enquiries in 2025 [BMW-VERIFIED], concentrated on the S38B38 engine as classic car enthusiasts seek the ultimate naturally aspirated M5."
   },
   "bestWorstEngines": {
-    "items": []
+    "items": [
+      {
+        "slot": "Best Overall",
+        "engine": "S38B36 3.6-litre (1988–1992)",
+        "quote": "The S38B36 produces 315 bhp and 360 Nm of torque, with a reputation for durability that slightly exceeds the later 3.8 — the shorter stroke means less stress on bearings and a more robust bottom end. It's the last M5 engine with a direct motorsport lineage, and its six individual throttle bodies and 6,900 rpm redline produce a howl that few modern engines can match.",
+        "whoItsFor": "buyers who want the ultimate durability from an E34 M5."
+      },
+      {
+        "slot": "Best Performance",
+        "engine": "S38B38 3.8-litre (1991–1995)",
+        "quote": "The S38B38 produces 340 bhp and 400 Nm, cutting the 0-62 mph time from 6.3 to 5.9 seconds. It offers a more urgent, muscular character than the 3.6, and is the engine found in the ultra-rare M5 Touring. Both engines share the S38's legendary traits: six individual throttle bodies, a 6,900 rpm redline, and a mechanical valve train that demands attention.",
+        "whoItsFor": "buyers who want the ultimate E34 M5 performance — and can afford the slightly higher maintenance."
+      }
+    ]
   },
   "ownershipEconomics": {
     "h2": "BMW M5 E34 — Ownership Economics",
@@ -498,9 +511,7 @@
   "coreVariants": {
     "dieselVariants": [],
     "petrolVariants": [
-      "M5 (S38B36)",
-      "M5 (S38B38)",
-      "M5 Touring (S38B38)"
+      "M5 (S38B36) · M5 (S38B38) · M5 Touring (S38B38)"
     ],
     "scopeNote": "The E34 M5 was offered with two S38 engine variants: the 3.5/3.6-litre S38B36 (1988–1992) and the 3.8-litre S38B38 (1991–1995). The Touring (estate) was available only in left-hand drive from 1992–1995. The six-speed manual transmission became standard from May 1994. UK-market 'Limited Edition' cars commemorated the final right-hand-drive examples in July 1995."
   },

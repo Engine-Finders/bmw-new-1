@@ -606,7 +606,11 @@
   },
   "coreVariants": {
     "dieselVariants": [],
-    "petrolVariants": [],
+    "petrolVariants": [
+      "Petrol Six‑Cylinder Variants: 730i · 730iL · 735i · 735iL",
+      "Petrol V8 Variants: 730i V8 · 730iL V8 · 740i · 740iL",
+      "Petrol V12 Variants: 750i · 750iL"
+    ],
     "scopeNote": "All variants listed are E32 only. The 'L' suffix denotes long-wheelbase. The 730i was offered with both the M30 straight-six and the M60 V8 during overlapping periods (1992–1994). The 735i was only offered with the M30 straight-six."
   },
   "marketIntelligence": {

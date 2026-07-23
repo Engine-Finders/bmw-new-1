@@ -319,7 +319,14 @@
     "marketIntelligenceLine": "The Z4 nameplate generated limited UK engine enquiries in 2025 [BMW-VERIFIED], with demand concentrated on the N52-powered 3.0si and the S54-powered Z4 M Coupé based on market patterns."
   },
   "bestWorstEngines": {
-    "items": []
+    "items": [
+      {
+        "slot": "Overall Verdict",
+        "engine": "N52B30 3.0si (258–265 bhp)",
+        "quote": "The N52B30 3.0si is the E86's sweet spot — a magnesium-alloy straight-six that's smooth, responsive, and free of the direct-injection issues that plagued the later N53. The M54B25 2.5i is the sensible entry point — 192 bhp, simpler, and proven durable. The S54B32 Z4 M is an icon — 343 bhp from the E46 M3's engine — but it's high-strung, with VANOS, valve clearance, and rod bearing concerns.",
+        "whoItsFor": "For most buyers, the N52 3.0si offers the best balance of performance, character, and running costs."
+      }
+    ]
   },
   "ownershipEconomics": {
     "h2": "BMW Z4 Coupé E86 — Ownership Economics",

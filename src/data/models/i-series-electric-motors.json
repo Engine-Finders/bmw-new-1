@@ -819,11 +819,33 @@
     "columns": [
       "Era",
       "Years",
-      "Key Engines",
-      "Why Land Rover Changed",
+      "Key Models",
+      "Why BMW Changed",
       "Worth Knowing"
     ],
-    "eras": []
+    "eras": [
+      {
+        "era": "The Pioneer — i3 & i8",
+        "years": "2013–2020",
+        "keyModels": "i3, i8",
+        "whyChanged": "BMW launched the i3 as the first mass-produced carbon-fibre EV and the i8 as the plug-in hybrid supercar. The i3 established BMW's electric credentials; the i8 defined the brand's hybrid future.",
+        "worthKnowing": "The i3 is a future classic — the carbon-fibre body and futuristic design make it unique. The i8 is a supercar icon — but the hybrid complexity means specialist-only servicing."
+      },
+      {
+        "era": "The Gen5 Era — i4, iX, iX3",
+        "years": "2020–2025",
+        "keyModels": "i4, iX, iX3, i5, i7",
+        "whyChanged": "BMW's Gen5 eDrive technology (400V) delivered significant range and charging improvements. The i4 and iX became the mainstream electric models, delivering 340–544 hp and up to 380 miles of range.",
+        "worthKnowing": "The Gen5 eDrive is proven — the i4 eDrive40 is the sweet spot in the i Series range. The iX is the technology flagship."
+      },
+      {
+        "era": "The 800V Era — Neue Klasse & Gen6",
+        "years": "2025–present",
+        "keyModels": "Neue Klasse i3, iX3 40, i7 M70",
+        "whyChanged": "BMW's sixth-generation eDrive technology (800V) delivers up to 300–400 kW charging, 550 miles of range, and 10-80% charging in under 20 minutes. The Neue Klasse platform represents BMW's electric future.",
+        "worthKnowing": "The Neue Klasse i3 is the future — 469 hp, 800V architecture, and near-M3 power. The i7 M70 delivers 680 hp — the most powerful i Series model ever."
+      }
+    ]
   },
   "whoShouldBuy": {
     "h2": "Who Should Buy a BMW i Series?",

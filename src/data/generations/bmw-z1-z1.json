@@ -270,7 +270,14 @@
     "marketIntelligenceLine": "The Z1 generated 120+ real UK engine enquiries in 2025 [BMW-VERIFIED], concentrated on the M20B25 engine as classic car enthusiasts seek BMW's first Z-roadster."
   },
   "bestWorstEngines": {
-    "items": []
+    "items": [
+      {
+        "slot": "The Only Engine",
+        "engine": "M20B25 2.5-litre straight-six",
+        "quote": "The BMW Z1's single engine option is the M20B25 2.5-litre straight-six — and it's a good one. Borrowed from the E30 325i, this SOHC 12-valve engine produces 168–170 bhp and 222 Nm of torque, giving the 1,250 kg roadster a 0-60 mph time of 7.9 seconds and a top speed of 140 mph. The M20 family is one of BMW's most reliable engines — the SOHC design is simple, robust, and well-understood, with a documented 200,000+ mile reputation when properly maintained. The critical maintenance item is the timing belt (replacement interval is 60,000 miles or 5 years) — failure is catastrophic if ignored, bending valves and destroying the engine. The Z1's front mid-engine installation tilted 20 degrees makes access slightly different from the E30, but the engine itself is the same proven unit.",
+        "whoItsFor": "Buy one with a documented timing belt service history, and the M20B25 will serve you well."
+      }
+    ]
   },
   "ownershipEconomics": {
     "h2": "BMW Z1 Z1 — Ownership Economics",

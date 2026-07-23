@@ -288,7 +288,14 @@
     "marketIntelligenceLine": "The E60 M5 is a modern classic; enquiries are concentrated on S85 rod bearing replacement, VANOS servicing, and SMG transmission maintenance, with values ranging from £12,000 for higher-mileage examples to £30,000+ for low-mileage, well-maintained cars."
   },
   "bestWorstEngines": {
-    "items": []
+    "items": [
+      {
+        "slot": "The Only Engine",
+        "engine": "S85B50 5.0-litre V10",
+        "quote": "The S85B50 is BMW's only production V10 engine and one of the most celebrated engines ever built. Derived from Formula 1 technology, it delivers 507 hp at 7,750 rpm and revs to 8,250 rpm. The sound — an intake shriek and a 40-valve V10 wail — is legendary. But with greatness comes cost: the S85 is notoriously high-maintenance. Rod bearings are a wear item requiring preventative replacement, VANOS systems can fail, throttle actuators are prone to failure, and the SMG III transmission has its own set of expensive issues.",
+        "whoItsFor": "enthusiasts who understand that the S85 is a commitment — and who have the budget to maintain it properly."
+      }
+    ]
   },
   "ownershipEconomics": {
     "h2": "BMW M5 E60/E61 — Ownership Economics",
@@ -466,8 +473,7 @@
   "coreVariants": {
     "dieselVariants": [],
     "petrolVariants": [
-      "M5",
-      "M5 Touring"
+      "M5 · M5 Touring"
     ],
     "scopeNote": "Both variants (E60 Saloon and E61 Touring) use the identical S85B50 V10 engine. The E60 M5 was available with a 7-speed SMG III automated manual transmission (standard in most markets) or a 6-speed manual (optional in North America). The E61 M5 Touring was SMG-only. The E60 M5 received a Life Cycle Impulse (LCI) update in 2007 with revised styling and minor updates — the engine remained unchanged."
   },

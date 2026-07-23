@@ -319,7 +319,14 @@
     "marketIntelligenceLine": "The 5 Series nameplate generated significant UK engine enquiries in 2025 [BMW-VERIFIED], with demand for the F90 M5 concentrated on the Competition model based on market patterns."
   },
   "bestWorstEngines": {
-    "items": []
+    "items": [
+      {
+        "slot": "Overall Verdict",
+        "engine": "S63 4.4-litre twin-turbo V8 — standard, Competition, CS.",
+        "quote": "The S63 4.4-litre twin-turbo V8 is the heart of every F90 M5 — in standard, Competition, and CS form, it's essentially the same engine with different power outputs. The M5 Competition (625 PS) is the sweet spot — more power than the standard car, but without the CS's rarity and price premium. The M5 CS (635 PS) is the ultimate expression of the F90 — lighter, sharper, and more powerful, but it's a collector's piece.",
+        "whoItsFor": "For most buyers, the Competition offers the best balance of performance, value, and running costs."
+      }
+    ]
   },
   "ownershipEconomics": {
     "h2": "BMW M5 F90 — Ownership Economics",

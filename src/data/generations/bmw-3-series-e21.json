@@ -421,7 +421,14 @@
     "marketIntelligenceLine": "The E21-generation 3 Series is now a modern classic; enquiries are concentrated on M10 carburettor setup, M20 timing belt replacement, and rust remediation, with values ranging from £4,000 for entry-level 316 examples to £20,000+ for well-preserved 323is."
   },
   "bestWorstEngines": {
-    "items": []
+    "items": [
+      {
+        "slot": "Overall Verdict",
+        "engine": "The E21's M10 four-cylinder and M20 six-cylinder engines are both robust, well-understood units with strong parts availability through the classic BMW specialist network. The M10 2.0-litre fuel-injected 320i (125 bhp) offers the best balance of performance and running costs — it's the most common, best-supported, and delivers the smooth, characterful four-cylinder experience that defined the early 3 Series. The 316 (90 bhp) is underpowered for the E21's 1,020 kg kerb weight, while the 323i (143 bhp) delivers genuine six-cylinder refinement but adds complexity and higher running costs.",
+        "quote": "",
+        "whoItsFor": "For most buyers, a well-maintained 320i with documented carburettor or injection service history is the smartest purchase."
+      }
+    ]
   },
   "ownershipEconomics": {
     "h2": "BMW 3 Series E21 — Ownership Economics",

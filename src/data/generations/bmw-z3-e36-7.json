@@ -651,7 +651,14 @@
     "marketIntelligenceLine": "The Z3 is a classic car with a dedicated enthusiast following — no verified 2025 enquiry data exists for this model [PATTERN DATA]."
   },
   "bestWorstEngines": {
-    "items": []
+    "items": [
+      {
+        "slot": "Best Overall",
+        "engine": "M54B30 3.0i (2000–2002)",
+        "quote": "The Z3's most dependable engine is the M54B30 3.0i — BMW's 3.0-litre straight-six is chain-driven, robust, and widely regarded as one of BMW's most reliable engines. The M44B19 1.9 (1995–1999) is the best four-cylinder option — 140 PS, reliable, and the most affordable to run. The M52B28 and M52TUB28 2.8 (1997–2000) offer the sweet spot of performance and reliability — 192 PS, smooth six-cylinder power, and proven durability. The S54B32 M Roadster (2001–2002) is the most powerful at 325 PS but the most expensive to maintain — it's a car for collectors and enthusiasts with deep pockets. The M43B18 1.8 (1995–1998) is the least powerful and the simplest — it's a car for buyers who want Z3 style without the six-cylinder's running costs.",
+        "whoItsFor": ""
+      }
+    ]
   },
   "ownershipEconomics": {
     "h2": "BMW Z3 E36/7 — Ownership Economics",

@@ -321,7 +321,14 @@
     "marketIntelligenceLine": "The E39 M5 is a classic car with a dedicated enthusiast following — no verified 2025 enquiry data exists for this model [PATTERN DATA]. Prospective owners should budget £2,000–£3,000 annually for maintenance."
   },
   "bestWorstEngines": {
-    "items": []
+    "items": [
+      {
+        "slot": "The Only Engine",
+        "engine": "S62B50 4.9-litre V8",
+        "quote": "The E39 M5's S62B50 V8 is the only engine available — and it's a masterpiece. 400 PS, 500 Nm, individual throttle bodies, and a 7,000 rpm redline make it one of the greatest naturally aspirated V8s ever fitted to a saloon. It is a robust engine when properly maintained, but age has brought a litany of common issues: rod bearing wear is the most serious, with failure leading to catastrophic engine damage. VANOS seal degradation causes poor low-end performance and rattle. Timing chain guides, made of plastic, become brittle and can fail. The cooling system is a known weak point — radiators, water pumps, and thermostats all require proactive replacement. Throttle body actuators can fail, triggering limp mode.",
+        "whoItsFor": "enthusiasts who value one of the greatest driving experiences ever created — and who have the budget to maintain it properly."
+      }
+    ]
   },
   "ownershipEconomics": {
     "h2": "BMW M5 E39 — Ownership Economics",

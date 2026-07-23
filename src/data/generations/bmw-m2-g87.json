@@ -288,7 +288,14 @@
     "marketIntelligenceLine": "The G87 M2 generated 120+ real UK engine enquiries in 2025 [BMW-VERIFIED], concentrated on the S58 engine as enthusiasts seek BMW's last pure ICE M car."
   },
   "bestWorstEngines": {
-    "items": []
+    "items": [
+      {
+        "slot": "Overall Verdict",
+        "engine": "S58B30 (3.0-litre twin-turbo straight-six) — the sole and exceptional engine.",
+        "quote": "The BMW M2 G87 is offered with a single engine option — the S58B30 3.0-litre twin-turbo straight-six — and it's an exceptional one. Shared with the M3 and M4, the S58 produces 453 bhp and 550 Nm of torque in pre-LCI form, rising to 473 bhp and 600 Nm from the 2024 LCI onward. The engine is an evolution of the S55, known for being both powerful and dependable, and shares parts and configurations from the B58, another highly reliable performance motor. Power is sent to the rear wheels through either a six-speed manual or eight-speed automatic transmission, with 0-62 mph times of 4.3 seconds (manual) and 4.1 seconds (automatic). The S58 has a strong reliability reputation with no widespread issues reported, though cooling system maintenance (water pump, coolant hoses) and oil changes at 6,000–8,000 mile intervals rather than BMW's recommended 12,000 miles are recommended for track use.",
+        "whoItsFor": "For buyers, there is no wrong choice — the S58 is a masterpiece of modern M engineering."
+      }
+    ]
   },
   "ownershipEconomics": {
     "h2": "BMW M2 G87 — Ownership Economics",

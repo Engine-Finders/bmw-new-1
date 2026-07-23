@@ -961,8 +961,16 @@
     "note": ""
   },
   "coreVariants": {
-    "dieselVariants": [],
-    "petrolVariants": [],
+    "dieselVariants": [
+      "725d · 725Ld · 730d · 730Ld · 730d xDrive · 730Ld xDrive · 740d · 740Ld · 740d xDrive · 740Ld xDrive · 750d · 750Ld · 750d xDrive · 750Ld xDrive"
+    ],
+    "petrolVariants": [
+      "730i · 730Li · 730i xDrive · 730Li xDrive · 740i · 740Li · 740i xDrive · 740Li xDrive · 750i · 750Li · 750i xDrive · 750Li xDrive · 760i · 760Li · M760Li xDrive"
+    ],
+    "hybridVariants": [
+      "740e · 740Le · 740e xDrive · 740Le xDrive · 745e · 745Le · 745e xDrive · 745Le xDrive"
+    ],
+    "alpinaVariant": "Alpina B7 (G12) — 4.4L N63 V8 twin-turbo, 600 bhp, 800 Nm",
     "scopeNote": "All variants listed are G11 (short-wheelbase) and G12 (long-wheelbase) sixth-generation 7 Series only, produced from July 2015 to 2022. The 725d was produced 2016–2019 only; the 750d (quad-turbo) was produced 2017–2020 only. M760Li xDrive is the sole V12 variant. Alpina B7 is a separate variant based on the G12 platform."
   },
   "marketIntelligence": {
