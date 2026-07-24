@@ -9,30 +9,44 @@ const verdictStyles = {
   warning: {
     badge: "bg-[#fff6eb] text-[#d97517] border-[#f7dfc2]",
     iconBg: "bg-[#fff1de] text-[#ec8b1f]",
+    darkBadge: "bg-[rgba(236,139,31,0.14)] text-[#ffb05a] border-[rgba(236,139,31,0.34)]",
+    darkIconBg: "bg-[rgba(236,139,31,0.18)] text-[#ffb05a]",
   },
   success: {
     badge: "bg-[#eefaf3] text-[#13884a] border-[#d3efde]",
     iconBg: "bg-[#e4f6eb] text-[#189454]",
+    darkBadge: "bg-[rgba(24,148,84,0.16)] text-[#67d99a] border-[rgba(24,148,84,0.34)]",
+    darkIconBg: "bg-[rgba(24,148,84,0.2)] text-[#67d99a]",
   },
   trophy: {
     badge: "bg-[#edf3ff] text-[#1f57d4] border-[#d4e1ff]",
     iconBg: "bg-[#e6efff] text-[#215be0]",
+    darkBadge: "bg-[rgba(36,132,255,0.16)] text-[#7fb2ff] border-[rgba(36,132,255,0.34)]",
+    darkIconBg: "bg-[rgba(36,132,255,0.2)] text-[#7fb2ff]",
   },
   diamond: {
     badge: "bg-[#f5efff] text-[#6d44d7] border-[#e4d8ff]",
     iconBg: "bg-[#efe7ff] text-[#6d44d7]",
+    darkBadge: "bg-[rgba(141,105,230,0.16)] text-[#b69cff] border-[rgba(141,105,230,0.34)]",
+    darkIconBg: "bg-[rgba(141,105,230,0.2)] text-[#b69cff]",
   },
   danger: {
     badge: "bg-[#fff0f0] text-[#db2e2e] border-[#ffd4d4]",
     iconBg: "bg-[#ffe7e7] text-[#e03232]",
+    darkBadge: "bg-[rgba(255,45,53,0.15)] text-[#ff8b90] border-[rgba(255,45,53,0.34)]",
+    darkIconBg: "bg-[rgba(255,45,53,0.2)] text-[#ff8b90]",
   },
   crown: {
     badge: "bg-[#fff5ea] text-[#da7a12] border-[#ffe1bc]",
     iconBg: "bg-[#fff0da] text-[#da7a12]",
+    darkBadge: "bg-[rgba(218,122,18,0.15)] text-[#ffb66a] border-[rgba(218,122,18,0.34)]",
+    darkIconBg: "bg-[rgba(218,122,18,0.2)] text-[#ffb66a]",
   },
   fire: {
     badge: "bg-[#fff5ec] text-[#f06d11] border-[#ffe1c5]",
     iconBg: "bg-[#ffedd8] text-[#f06d11]",
+    darkBadge: "bg-[rgba(240,109,17,0.15)] text-[#ffad6c] border-[rgba(240,109,17,0.34)]",
+    darkIconBg: "bg-[rgba(240,109,17,0.2)] text-[#ffad6c]",
   },
 };
 
@@ -154,16 +168,19 @@ function splitMobileFilters(filters) {
 }
 
 function VerdictBadge({ verdict, mobile = false }) {
+  const { theme } = useTheme();
   const style = verdictStyles[verdict.type] || verdictStyles.success;
   const text = formatVerdictText(verdict.text);
+  const badgeClass = theme === "dark" ? style.darkBadge : style.badge;
+  const iconClass = theme === "dark" ? style.darkIconBg : style.iconBg;
 
   return (
     <span
-      className={`inline-flex items-center gap-2 rounded-xl border px-3 py-2 text-left ${style.badge} ${
+      className={`inline-flex items-center gap-2 rounded-xl border px-3 py-2 text-left ${badgeClass} ${
         mobile ? "text-[0.74rem] font-medium leading-[1.15] px-2.5 py-1.5" : "text-[0.82rem] font-medium leading-[1.2]"
       }`}
     >
-      <span className={`flex h-5 w-5 shrink-0 items-center justify-center rounded-full ${style.iconBg}`}>
+      <span className={`flex h-5 w-5 shrink-0 items-center justify-center rounded-full ${iconClass}`}>
         <VerdictIcon type={verdict.type} />
       </span>
       <span>{text}</span>
@@ -186,7 +203,7 @@ function DesktopRow({ item }) {
   return (
     <Link
       href={item.href}
-      className="grid grid-cols-[190px_minmax(0,1fr)_185px_28px] items-center gap-3 border-b border-[var(--color-border)] px-5 py-3 text-[var(--color-text)] transition hover:bg-white/70 last:border-b-0"
+      className="grid grid-cols-[190px_minmax(0,1fr)_185px_28px] items-center gap-3 border-b border-[var(--color-border)] px-5 py-3 text-[var(--color-text)] transition hover:bg-[var(--color-page-soft)] last:border-b-0"
     >
       <div className="flex min-w-0 items-center gap-4">
         <div className="relative h-10 w-16 shrink-0 overflow-hidden rounded">
@@ -369,7 +386,7 @@ export default function HomeSec2({ data }) {
             {[left, right].map((column, index) => (
               <div
                 key={index}
-                className="overflow-hidden rounded-[1.5rem] border border-[var(--color-border)] bg-[rgba(255,255,255,0.86)] shadow-[0_14px_40px_var(--color-shadow)] backdrop-blur"
+                className="overflow-hidden rounded-[1.5rem] border border-[var(--color-border)] bg-[var(--color-surface-raised)] shadow-[0_14px_40px_var(--color-shadow)] backdrop-blur"
               >
                 <DesktopHeader columns={data.columns} />
                 {column.map((item) => (
