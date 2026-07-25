@@ -1,124 +1,115 @@
 {
-  "subHeadline": "The verdicts people actually want before they read a single spec sheet — the calls we'd make for a friend, backed by real UK enquiry and failure data.",
-  "headerImage": {
-    "src": "https://images.unsplash.com/photo-1617531653332-bd46c24f2068?auto=format&fit=crop&w=900&q=80",
-    "alt": "White BMW front"
+  "subHeadline": "The verdicts people actually want before they read a single spec sheet - the calls we'd make for a friend, backed by real UK enquiry and failure data.",
+  "heroImages": {
+    "light": {
+      "src": "/hero-day.webp",
+      "alt": "White BMW front for ownership rankings"
+    },
+    "dark": {
+      "src": "/Hero-dark.webp",
+      "alt": "BMW front in a dark garage"
+    }
   },
+  "trustStrip": [
+    {
+      "icon": "chart",
+      "value": "24,650+",
+      "text": "Real UK Enquiries"
+    },
+    {
+      "icon": "wrench",
+      "value": "20+",
+      "text": "Vetted BMW Specialists"
+    },
+    {
+      "icon": "book",
+      "value": "OEM",
+      "text": "Part References Included"
+    },
+    {
+      "icon": "trophy",
+      "value": "Part of",
+      "text": "Engine Finders"
+    }
+  ],
   "columns": ["RANKING", "WINNER", "WHY", "VERDICT"],
   "rankings": [
     {
       "ranking": "Most Reliable Engine",
-      "icon": "⚙️",
+      "icon": "engine",
       "winner": "B58B30",
-      "why": "Modern straight-six with well-understood, repairable failure points — coolant leaks aside, largely trouble-free. Just 540 enquiries in 2025, mostly due-diligence, not failure [BMW-VERIFIED].",
-      "verdict": { "icon": "🏆", "text": "Best", "type": "best" },
+      "why": "Modern straight-six with well-understood, repairable failure points - coolant leaks aside, largely trouble-free. Just 540 enquiries in 2025, mostly due-diligence, not failure [BMW-VERIFIED].",
+      "verdict": { "icon": "trophy", "text": "Best", "type": "best" },
       "href": "#"
     },
     {
       "ranking": "Most Reliable Model (Modern)",
-      "icon": "🚗",
+      "icon": "car",
       "winner": "3 Series G20",
-      "why": "B47/B48/B58 engines in the lightest chassis — 190 enquiries in 2025, predominantly pre-purchase research [BMW-VERIFIED].",
-      "verdict": { "icon": "🏆", "text": "Best", "type": "best" },
+      "why": "B47/B48/B58 engines in the lightest chassis - 190 enquiries in 2025, predominantly pre-purchase research [BMW-VERIFIED].",
+      "verdict": { "icon": "trophy", "text": "Best", "type": "best" },
       "href": "#"
     },
     {
       "ranking": "Best Used Buy",
-      "icon": "🏷️",
-      "winner": "F30 LCI (2016+) with B47D20A",
-      "why": "Post-chain-revision, modern electronics, depreciated early-mid values — the sweet spot for daily ownership. £2,800–£4,500 recon cost against £7,000–£20,000 vehicle value [BMW-QUOTE].",
-      "verdict": { "icon": "✅", "text": "Safe", "type": "safe" },
+      "icon": "tag",
+      "winner": "F30 LCI (2016+)",
+      "winnerNote": "with B47D20A",
+      "why": "Post-chain-revision, modern electronics, depreciated early-mid values - the sweet spot for daily ownership. £2,800-£4,500 recon cost against £7,000-£20,000 vehicle value [BMW-QUOTE].",
+      "verdict": { "icon": "check", "text": "Safe", "type": "safe" },
       "href": "#"
     },
     {
       "ranking": "Most Expensive Failure",
-      "icon": "💥",
-      "winner": "N63B44 Valve Stem Seals",
-      "why": "Hot-vee architecture causes seal failure at 60k–100k miles — known as the \"N63 nightmare.\" £3,000–£6,000 repair or £6,000–£10,000 replacement [BMW-QUOTE].",
-      "verdict": { "icon": "🔴", "text": "Avoid", "type": "avoid" },
+      "icon": "warning",
+      "winner": "N63B44",
+      "winnerNote": "Valve Stem Seals",
+      "why": "Hot-vee architecture causes seal failure at 60k-100k miles - known as the \"N63 nightmare.\" £3,000-£6,000 repair or £6,000-£10,000 replacement [BMW-QUOTE].",
+      "verdict": { "icon": "x", "text": "Avoid", "type": "avoid" },
       "href": "#"
     },
     {
       "ranking": "Safest BMW to Buy Used",
-      "icon": "🛡️",
-      "winner": "5 Series G30 (2017–2023)",
-      "why": "Typical values of £14,000–£30,000 against £2,800–£8,000 recon cost — comfortably safe across all engine variants [BMW-QUOTE].",
-      "verdict": { "icon": "✅", "text": "Safe", "type": "safe" },
+      "icon": "shield",
+      "winner": "5 Series G30",
+      "winnerNote": "(2017-2023)",
+      "why": "Typical values of £14,000-£30,000 against £2,800-£8,000 recon cost - comfortably safe across all engine variants [BMW-QUOTE].",
+      "verdict": { "icon": "check", "text": "Safe", "type": "safe" },
       "href": "#"
     },
     {
       "ranking": "Highest Risk Purchase",
-      "icon": "⚠️",
-      "winner": "E90 N47D20C (pre-2013, no chain history)",
-      "why": "Ageing host values (£2,500–£7,500) against £3,200–£5,500 recon cost — the 70% BMW threshold risk [BMW-QUOTE].",
-      "verdict": { "icon": "⚠️", "text": "Watch", "type": "watch" },
+      "icon": "flame",
+      "winner": "E90 N47D20C",
+      "winnerNote": "(pre-2013, no chain history)",
+      "why": "Ageing host values (£2,500-£7,500) against £3,200-£5,500 recon cost - the 70% BMW threshold risk [BMW-QUOTE].",
+      "verdict": { "icon": "alert", "text": "Watch", "type": "watch" },
       "href": "#"
     },
     {
       "ranking": "Best Family BMW",
-      "icon": "👨‍👩‍👧‍👦",
-      "winner": "X5 G05 (2018–present)",
-      "why": "B57/B58 reliability, 650L boot, 7-seat option, and strong specialist network — values justify replacement across the board.",
-      "verdict": { "icon": "👨‍👩‍👧‍👦", "text": "Best", "type": "best" },
+      "icon": "users",
+      "winner": "X5 G05",
+      "winnerNote": "(2018-present)",
+      "why": "B57/B58 reliability, 650L boot, 7-seat option, and strong specialist network - values justify replacement across the board.",
+      "verdict": { "icon": "users", "text": "Best", "type": "family" },
       "href": "#"
     },
     {
       "ranking": "Best Long-Term Keeper",
-      "icon": "⏳",
-      "winner": "E46 330i (M54)",
-      "why": "The bulletproof naturally-aspirated straight-six — maintenance is an investment, not an expense. One of the most dependable BMWs ever built.",
-      "verdict": { "icon": "🏆", "text": "Best", "type": "best" },
+      "icon": "crown",
+      "winner": "E46 330i",
+      "winnerNote": "(M54)",
+      "why": "The bulletproof naturally-aspirated straight-six - maintenance is an investment, not an expense. One of the most dependable BMWs ever built.",
+      "verdict": { "icon": "trophy", "text": "Best", "type": "best" },
       "href": "#"
     }
   ],
-  "dataSources": {
-    "title": "Quick Reference: Data Sources Used in Sections 1–4",
-    "columns": ["Claim", "Source"],
-    "rows": [
-      {
-        "claim": "24,650+ enquiries",
-        "source": "market-intelligence.json / EM_Proprietary_Data_2025.txt"
-      },
-      {
-        "claim": "20+ vetted BMW specialists",
-        "source": "Brand constants (Prerequisite 4)"
-      },
-      {
-        "claim": "F30 380 enquiries",
-        "source": "EM_Proprietary_Data_2025.txt — Model table row 1"
-      },
-      {
-        "claim": "E90 256 enquiries",
-        "source": "EM_Proprietary_Data_2025.txt — Model table row 26"
-      },
-      {
-        "claim": "G20 190 enquiries",
-        "source": "EM_Proprietary_Data_2025.txt — Model table row 52"
-      },
-      {
-        "claim": "F25 316 enquiries",
-        "source": "EM_Proprietary_Data_2025.txt — Model table row 11"
-      },
-      {
-        "claim": "B58 540 enquiries",
-        "source": "EM_Proprietary_Data_2025.txt — Engine table row 16"
-      },
-      {
-        "claim": "N63 440 enquiries",
-        "source": "EM_Proprietary_Data_2025.txt — Engine table row 21"
-      },
-      {
-        "claim": "N47 £3,200–£5,500",
-        "source": "Table A — Engine Replacement Economics (row 1)"
-      },
-      {
-        "claim": "B47 £2,800–£4,500",
-        "source": "Table A — Engine Replacement Economics (row 6)"
-      },
-      {
-        "claim": "Vehicle value bands",
-        "source": "Model Ownership Decision Table — BMW section"
-      }
-    ]
+  "bottomCta": {
+    "icon": "shield",
+    "title": "Honest, Data-Backed, Unbiased.",
+    "text": "We tell you the truth - even when it means walking away. That's the Engine Finders promise.",
+    "buttonLabel": "START YOUR RESEARCH",
+    "href": "#"
   }
 }
