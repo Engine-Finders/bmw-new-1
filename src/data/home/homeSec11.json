@@ -1,41 +1,149 @@
 {
   "subHeadline": "From the carburetted M10 to the modular B58, mapped against the models that carried it. The complete BMW engine timeline.",
   "headerImage": {
-    "src": "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=900&q=80",
-    "alt": "BMW engine history"
+    "src": "https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=1400&q=80",
+    "alt": "BMW engine bay"
   },
   "columns": ["ERA", "KEY ENGINES", "ICONIC MODELS"],
   "eras": [
     {
-      "era": "1960s–1970s",
+      "era": "1960s-1970s",
       "engines": "M10, M30",
-      "models": "2002, E3, E9"
+      "engineImage": {
+        "src": "https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=500&q=80",
+        "alt": "Classic BMW engine placeholder"
+      },
+      "models": "2002, E3, E9",
+      "modelImages": [
+        {
+          "src": "https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=400&q=80",
+          "alt": "Classic BMW coupe placeholder"
+        },
+        {
+          "src": "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=400&q=80",
+          "alt": "Classic BMW sedan placeholder"
+        },
+        {
+          "src": "https://images.unsplash.com/photo-1549924231-f129b911e442?auto=format&fit=crop&w=400&q=80",
+          "alt": "Classic BMW touring placeholder"
+        }
+      ]
     },
     {
       "era": "1980s",
       "engines": "M20, M30B35, S14",
-      "models": "E30, E28, E24"
+      "engineImage": {
+        "src": "https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=500&q=80",
+        "alt": "1980s BMW engine placeholder"
+      },
+      "models": "E30, E28, E24",
+      "modelImages": [
+        {
+          "src": "https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=400&q=80",
+          "alt": "BMW E30 placeholder"
+        },
+        {
+          "src": "https://images.unsplash.com/photo-1494905998402-395d579af36f?auto=format&fit=crop&w=400&q=80",
+          "alt": "BMW E28 placeholder"
+        },
+        {
+          "src": "https://images.unsplash.com/photo-1502877338535-766e1452684a?auto=format&fit=crop&w=400&q=80",
+          "alt": "BMW E24 placeholder"
+        }
+      ]
     },
     {
       "era": "1990s",
       "engines": "M42, M50, M52, S50, S52",
-      "models": "E36, E34, E31"
+      "engineImage": {
+        "src": "https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=500&q=80",
+        "alt": "1990s BMW engine placeholder"
+      },
+      "models": "E36, E34, E31",
+      "modelImages": [
+        {
+          "src": "https://images.unsplash.com/photo-1542362567-b07e54358753?auto=format&fit=crop&w=400&q=80",
+          "alt": "BMW E36 placeholder"
+        },
+        {
+          "src": "https://images.unsplash.com/photo-1494905998402-395d579af36f?auto=format&fit=crop&w=400&q=80",
+          "alt": "BMW E34 placeholder"
+        },
+        {
+          "src": "https://images.unsplash.com/photo-1502877338535-766e1452684a?auto=format&fit=crop&w=400&q=80",
+          "alt": "BMW E31 placeholder"
+        }
+      ]
     },
     {
       "era": "2000s",
       "engines": "M54, N52, N54, S54, S62",
-      "models": "E46, E39, E38, E53"
+      "engineImage": {
+        "src": "https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=500&q=80",
+        "alt": "2000s BMW engine placeholder"
+      },
+      "models": "E46, E39, E38, E53",
+      "modelImages": [
+        {
+          "src": "https://images.unsplash.com/photo-1542362567-b07e54358753?auto=format&fit=crop&w=400&q=80",
+          "alt": "BMW E46 placeholder"
+        },
+        {
+          "src": "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=400&q=80",
+          "alt": "BMW E39 placeholder"
+        },
+        {
+          "src": "https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?auto=format&fit=crop&w=400&q=80",
+          "alt": "BMW E53 placeholder"
+        }
+      ]
     },
     {
       "era": "2010s",
       "engines": "N47, N55, N57, S63, S55",
-      "models": "E90, F10, F30, F15"
+      "engineImage": {
+        "src": "https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=500&q=80",
+        "alt": "2010s BMW engine placeholder"
+      },
+      "models": "E90, F10, F30, F15",
+      "modelImages": [
+        {
+          "src": "https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=400&q=80",
+          "alt": "BMW F30 placeholder"
+        },
+        {
+          "src": "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=400&q=80",
+          "alt": "BMW F10 placeholder"
+        },
+        {
+          "src": "https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&w=400&q=80",
+          "alt": "BMW F15 placeholder"
+        }
+      ]
     },
     {
       "era": "2020s",
       "engines": "B47, B48, B58, S58",
-      "models": "G20, G30, G05, G07"
+      "engineImage": {
+        "src": "https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=500&q=80",
+        "alt": "2020s BMW engine placeholder"
+      },
+      "models": "G20, G30, G05, G07",
+      "modelImages": [
+        {
+          "src": "https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=400&q=80",
+          "alt": "BMW G20 placeholder"
+        },
+        {
+          "src": "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=400&q=80",
+          "alt": "BMW G30 placeholder"
+        },
+        {
+          "src": "https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&w=400&q=80",
+          "alt": "BMW G05 placeholder"
+        }
+      ]
     }
   ],
-  "keyTakeaway": "The N47 and N57 defined the diesel era — but the B58 and B47 reversed the reliability perception. The M54 and M57 remain the classic keeper engines; the B58 is the modern gold standard."
+  "keyTakeaway": "The N47 and N57 defined the diesel era - but the B58 and B47 reversed the reliability perception. The M54 and M57 remain the classic keeper engines; the B58 is the modern gold standard."
 }

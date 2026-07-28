@@ -1,6 +1,9 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import MStripe from "@/components/reusableComponents/MStripe";
+import { useTheme } from "@/components/shared/themeProvider";
 
 const severityConfig = {
   catastrophic: { dot: "bg-[#ff2b2b]", text: "text-[#07113a]" },
@@ -62,23 +65,23 @@ function SectionIcon({ icon }) {
   );
 }
 
-function TableHeader({ block }) {
+function TableHeader({ block, isDark }) {
   return (
-    <div className="flex items-center border-b border-[#dfe5ed] bg-white">
+    <div className={`flex items-center border-b ${isDark ? "border-[#223343] bg-[rgba(10,21,32,0.94)]" : "border-[#dfe5ed] bg-white"}`}>
       <SectionIcon icon={block.icon} />
-      <h3 className="px-4 py-3 text-[1.15rem] font-bold uppercase text-[var(--color-primary)] md:py-2 md:text-[1rem] md:text-[#071827]">
+      <h3 className={`px-4 py-3 text-[1.15rem] font-bold uppercase text-[var(--color-primary)] md:py-2 md:text-[1rem] ${isDark ? "md:text-white" : "md:text-[#071827]"}`}>
         {block.title}
       </h3>
     </div>
   );
 }
 
-function DesktopRows({ block }) {
+function DesktopRows({ block, isDark }) {
   return (
     <div className="hidden md:block">
-      <div className="grid grid-cols-[60px_minmax(230px,0.95fr)_minmax(420px,1.8fr)_180px_170px] border-b border-[#dfe5ed] bg-[#fbfcfe] text-[0.72rem] font-bold uppercase text-[#071827]">
+      <div className={`grid grid-cols-[60px_minmax(230px,0.95fr)_minmax(420px,1.8fr)_180px_170px] border-b text-[0.72rem] font-bold uppercase ${isDark ? "border-[#223343] bg-[rgba(14,27,41,0.95)] text-white/88" : "border-[#dfe5ed] bg-[#fbfcfe] text-[#071827]"}`}>
         {block.columns.map((column) => (
-          <span key={column} className="border-r border-[#e5e9ef] px-6 py-2 last:border-r-0">
+          <span key={column} className={`border-r px-6 py-2 last:border-r-0 ${isDark ? "border-[#223343]" : "border-[#e5e9ef]"}`}>
             {column}
           </span>
         ))}
@@ -87,24 +90,21 @@ function DesktopRows({ block }) {
       {block.rows.map((row) => (
         <div
           key={row.id}
-          className="grid grid-cols-[60px_minmax(230px,0.95fr)_minmax(420px,1.8fr)_180px_170px] border-b border-[#e5e9ef] last:border-b-0"
+          className={`grid grid-cols-[60px_minmax(230px,0.95fr)_minmax(420px,1.8fr)_180px_170px] border-b last:border-b-0 ${isDark ? "border-[#223343]" : "border-[#e5e9ef]"}`}
         >
-          <div className="border-r border-[#e5e9ef] px-6 py-4 text-[1.55rem] font-bold leading-none text-[var(--color-primary)]">
+          <div className={`border-r px-6 py-4 text-[1.55rem] font-bold leading-none text-[var(--color-primary)] ${isDark ? "border-[#223343]" : "border-[#e5e9ef]"}`}>
             {row.id}
           </div>
-          <div className="border-r border-[#e5e9ef] px-6 py-4 text-[1rem] font-bold leading-tight text-[#071827]">
+          <div className={`border-r px-6 py-4 text-[1rem] font-bold leading-tight ${isDark ? "border-[#223343] text-white" : "border-[#e5e9ef] text-[#071827]"}`}>
             {row.title}
           </div>
-          <p className="border-r border-[#e5e9ef] px-6 py-3 text-[0.82rem] leading-[1.25] text-[#171f2a]">
+          <p className={`border-r px-6 py-3 text-[0.82rem] leading-[1.25] ${isDark ? "border-[#223343] text-white/76" : "border-[#e5e9ef] text-[#171f2a]"}`}>
             {row.description}
           </p>
-          <div className="border-r border-[#e5e9ef] px-6 py-4">
+          <div className={`border-r px-6 py-4 ${isDark ? "border-[#223343]" : "border-[#e5e9ef]"}`}>
             <Severity severity={row.severity} />
           </div>
-          <Link
-            href={row.link.href}
-            className="flex items-center gap-3 px-6 py-4 text-[0.9rem] font-medium text-[var(--color-primary)]"
-          >
+          <Link href={row.link.href} className="flex items-center gap-3 px-6 py-4 text-[0.9rem] font-medium text-[var(--color-primary)]">
             {row.link.label}
             <Icon name="arrow" className="h-4 w-4" />
           </Link>
@@ -114,23 +114,23 @@ function DesktopRows({ block }) {
   );
 }
 
-function MobileRows({ block }) {
+function MobileRows({ block, isDark }) {
   return (
     <div className="md:hidden">
       {block.rows.map((row) => (
-        <div key={row.id} className="border-b border-[#dfe5ed] px-4 py-4 last:border-b-0">
+        <div key={row.id} className={`border-b px-4 py-4 last:border-b-0 ${isDark ? "border-[#223343]" : "border-[#dfe5ed]"}`}>
           <div className="flex items-start gap-3">
             <span className="w-8 shrink-0 text-[1.65rem] font-bold leading-none text-[var(--color-primary)]">
               {row.id}
             </span>
             <div className="min-w-0 flex-1">
-              <h4 className="text-[1.05rem] font-bold leading-tight text-[#07113a]">{row.title}</h4>
+              <h4 className={`text-[1.05rem] font-bold leading-tight ${isDark ? "text-white" : "text-[#07113a]"}`}>{row.title}</h4>
               <div className="mt-2">
                 <Severity severity={row.severity} />
               </div>
             </div>
           </div>
-          <p className="mt-3 text-[0.92rem] leading-[1.48] text-[#07113a]">{row.description}</p>
+          <p className={`mt-3 text-[0.92rem] leading-[1.48] ${isDark ? "text-white/78" : "text-[#07113a]"}`}>{row.description}</p>
           <Link href={row.link.href} className="mt-4 inline-flex items-center gap-3 text-[0.95rem] font-bold text-[var(--color-primary)]">
             {row.link.label}
             <Icon name="arrow" className="h-5 w-5" />
@@ -141,23 +141,23 @@ function MobileRows({ block }) {
   );
 }
 
-function FailureTable({ block }) {
+function FailureTable({ block, isDark }) {
   return (
-    <div className="border-y border-[#dfe5ed] bg-white md:overflow-hidden md:rounded-lg md:border md:shadow-[0_12px_32px_rgba(10,26,43,0.06)]">
-      <TableHeader block={block} />
-      <DesktopRows block={block} />
-      <MobileRows block={block} />
+    <div className={`border-y md:overflow-hidden md:rounded-lg md:border md:shadow-[0_12px_32px_rgba(10,26,43,0.06)] ${isDark ? "border-[#223343] bg-[rgba(10,21,32,0.92)]" : "border-[#dfe5ed] bg-white"}`}>
+      <TableHeader block={block} isDark={isDark} />
+      <DesktopRows block={block} isDark={isDark} />
+      <MobileRows block={block} isDark={isDark} />
     </div>
   );
 }
 
-function UrgencyKey({ items }) {
+function UrgencyKey({ items, isDark }) {
   return (
-    <div className="border-y border-[#dfe5ed] bg-white px-4 py-4 md:rounded-lg md:border md:px-8 md:shadow-[0_12px_32px_rgba(10,26,43,0.04)]">
+    <div className={`border-y px-4 py-4 md:rounded-lg md:border md:px-8 md:shadow-[0_12px_32px_rgba(10,26,43,0.04)] ${isDark ? "border-[#223343] bg-[rgba(10,21,32,0.92)]" : "border-[#dfe5ed] bg-white"}`}>
       <div className="flex flex-col gap-3 md:flex-row md:items-center md:gap-8">
-        <p className="text-[0.95rem] font-bold uppercase text-[#071827] md:mr-2">Urgency Key:</p>
+        <p className={`text-[0.95rem] font-bold uppercase md:mr-2 ${isDark ? "text-white" : "text-[#071827]"}`}>Urgency Key:</p>
         {items.map((item) => (
-          <div key={item.label} className="flex items-center gap-3 text-[0.88rem] text-[#071827]">
+          <div key={item.label} className={`flex items-center gap-3 text-[0.88rem] ${isDark ? "text-white/84" : "text-[#071827]"}`}>
             <span className={`h-4 w-4 shrink-0 rounded-full ${(severityConfig[item.type] || severityConfig.monitor).dot}`} />
             <span>
               <strong>{item.label}</strong> - {item.text}
@@ -170,8 +170,11 @@ function UrgencyKey({ items }) {
 }
 
 export default function HomeSec9({ data }) {
+  const { theme } = useTheme();
+  const isDark = theme === "dark";
+
   return (
-    <section className="relative overflow-hidden bg-white px-4 py-8 md:px-6 md:py-8">
+    <section className={`relative overflow-hidden px-4 py-8 md:px-6 md:py-8 ${isDark ? "bg-[#02070b]" : "bg-white"}`}>
       <div className="absolute inset-x-0 top-0 h-[390px] md:h-[295px]">
         <Image
           src={data.headerImage.src}
@@ -180,28 +183,28 @@ export default function HomeSec9({ data }) {
           className="object-cover object-[88%_top] md:object-[82%_center]"
           sizes="100vw"
         />
-        <div className="absolute inset-0 bg-[linear-gradient(115deg,white_0%,rgba(255,255,255,0.98)_42%,rgba(255,255,255,0.68)_66%,rgba(255,255,255,0.18)_100%)] md:bg-[linear-gradient(90deg,white_0%,rgba(255,255,255,0.96)_38%,rgba(255,255,255,0.45)_70%,rgba(255,255,255,0.2)_100%)]" />
-        <div className="absolute inset-x-0 bottom-0 h-32 bg-[linear-gradient(0deg,white_0%,rgba(255,255,255,0)_100%)]" />
+        <div className={isDark ? "absolute inset-0 bg-[linear-gradient(115deg,#02070b_0%,rgba(2,7,11,0.98)_42%,rgba(2,7,11,0.72)_66%,rgba(2,7,11,0.18)_100%)] md:bg-[linear-gradient(90deg,#02070b_0%,rgba(2,7,11,0.95)_38%,rgba(2,7,11,0.45)_70%,rgba(2,7,11,0.2)_100%)]" : "absolute inset-0 bg-[linear-gradient(115deg,white_0%,rgba(255,255,255,0.98)_42%,rgba(255,255,255,0.68)_66%,rgba(255,255,255,0.18)_100%)] md:bg-[linear-gradient(90deg,white_0%,rgba(255,255,255,0.96)_38%,rgba(255,255,255,0.45)_70%,rgba(255,255,255,0.2)_100%)]"} />
+        <div className={isDark ? "absolute inset-x-0 bottom-0 h-32 bg-[linear-gradient(0deg,#02070b_0%,rgba(2,7,11,0)_100%)]" : "absolute inset-x-0 bottom-0 h-32 bg-[linear-gradient(0deg,white_0%,rgba(255,255,255,0)_100%)]"} />
       </div>
 
       <div className="relative mx-auto w-full max-w-8xl">
         <div className="max-w-[740px] pt-3 md:pt-6">
-          <h2 className="text-[2.9rem] font-bold leading-[1.03] tracking-normal text-[#07113a] md:text-[3.45rem] md:text-black">
+          <h2 className={`text-[2.9rem] font-bold leading-[1.03] tracking-normal md:text-[3.45rem] ${isDark ? "text-white" : "text-[#07113a] md:text-black"}`}>
             The BMW
-            <span className="block text-[var(--color-primary)] md:inline md:text-black"> Failure Database</span>
+            <span className={`block text-[var(--color-primary)] md:inline ${isDark ? "" : "md:text-black"}`}> Failure Database</span>
           </h2>
           <div className="mt-4">
             <MStripe />
           </div>
-          <p className="mt-5 max-w-[665px] text-[1.06rem] leading-[1.55] text-[#07113a] md:text-[1rem] md:text-[#171f2a]">
+          <p className={`mt-5 max-w-[665px] text-[1.06rem] leading-[1.55] md:text-[1rem] ${isDark ? "text-white/78" : "text-[#07113a] md:text-[#171f2a]"}`}>
             {data.subHeadline}
           </p>
         </div>
 
         <div className="mt-8 -mx-4 grid gap-4 md:mx-0 md:mt-5">
-          <FailureTable block={data.engineFailures} />
-          <FailureTable block={data.warningSigns} />
-          <UrgencyKey items={data.urgencyKey} />
+          <FailureTable block={data.engineFailures} isDark={isDark} />
+          <FailureTable block={data.warningSigns} isDark={isDark} />
+          <UrgencyKey items={data.urgencyKey} isDark={isDark} />
         </div>
       </div>
     </section>
