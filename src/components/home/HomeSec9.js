@@ -1,51 +1,112 @@
 import Image from "next/image";
 import Link from "next/link";
+import MStripe from "@/components/reusableComponents/MStripe";
 
-const severityClass = {
-  catastrophic: "text-red-700",
-  immediate: "text-orange-700",
-  monitor: "text-yellow-700",
-  low: "text-green-700",
+const severityConfig = {
+  catastrophic: { dot: "bg-[#ff2b2b]", text: "text-[#07113a]" },
+  immediate: { dot: "bg-[#ff8a00]", text: "text-[#07113a]" },
+  monitor: { dot: "bg-[#ffd400]", text: "text-[#07113a]" },
+  low: { dot: "bg-[#25a844]", text: "text-[#07113a]" },
 };
 
-function FailureTable({ block }) {
-  return (
-    <div className="mb-3 border border-gray-200">
-      <div className="flex items-center gap-2 border-b border-gray-200 bg-gray-50 px-2 py-1.5">
-        <span>{block.icon}</span>
-        <h3 className="text-sm font-bold uppercase text-blue-700">
-          {block.title}
-        </h3>
-      </div>
+const iconPaths = {
+  gear: (
+    <>
+      <path d="M12 8.4a3.6 3.6 0 1 0 0 7.2 3.6 3.6 0 0 0 0-7.2Z" />
+      <path d="m19.4 15.1.1 2.2-2.2 2.2-2.2-.9-1.3.5-.9 2.1H9.8l-.9-2.1-1.3-.5-2.2.9-2.2-2.2.1-2.2-.6-1.2-2-1v-3.1l2-1 .6-1.2-.1-2.2 2.2-2.2 2.2.9 1.3-.5.9-2.1h3.1l.9 2.1 1.3.5 2.2-.9 2.2 2.2-.1 2.2.6 1.2 2 1v3.1l-2 1-.6 1.2Z" />
+    </>
+  ),
+  warning: (
+    <>
+      <path d="M12 7.5v5.4" />
+      <path d="M12 16.5h.01" />
+      <path d="M10.2 4.8 2.7 18a2 2 0 0 0 1.7 3h15.2a2 2 0 0 0 1.7-3L13.8 4.8a2.1 2.1 0 0 0-3.6 0Z" />
+    </>
+  ),
+  arrow: <path d="M5 12h14m-6-6 6 6-6 6" />,
+};
 
-      <div className="hidden bg-blue-700 px-2 py-1 text-xs font-semibold text-white md:grid md:grid-cols-[auto_1fr_2fr_auto_auto] md:gap-2">
-        {block.columns.map((col) => (
-          <span key={col}>{col}</span>
+function Icon({ name, className = "h-5 w-5", strokeWidth = 2 }) {
+  return (
+    <svg
+      aria-hidden="true"
+      viewBox="0 0 24 24"
+      className={className}
+      fill="none"
+      stroke="currentColor"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth={strokeWidth}
+    >
+      {iconPaths[name] || iconPaths.gear}
+    </svg>
+  );
+}
+
+function Severity({ severity }) {
+  const config = severityConfig[severity.type] || severityConfig.monitor;
+
+  return (
+    <span className={`inline-flex items-center gap-2 text-[0.86rem] leading-none md:gap-3 md:text-[0.95rem] ${config.text}`}>
+      <span className={`h-4 w-4 shrink-0 rounded-full ${config.dot}`} />
+      <span>{severity.label}</span>
+    </span>
+  );
+}
+
+function SectionIcon({ icon }) {
+  return (
+    <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded bg-[var(--color-primary)] text-white md:h-9 md:w-11">
+      <Icon name={icon} className="h-7 w-7 md:h-5 md:w-5" strokeWidth={2.3} />
+    </span>
+  );
+}
+
+function TableHeader({ block }) {
+  return (
+    <div className="flex items-center border-b border-[#dfe5ed] bg-white">
+      <SectionIcon icon={block.icon} />
+      <h3 className="px-4 py-3 text-[1.15rem] font-bold uppercase text-[var(--color-primary)] md:py-2 md:text-[1rem] md:text-[#071827]">
+        {block.title}
+      </h3>
+    </div>
+  );
+}
+
+function DesktopRows({ block }) {
+  return (
+    <div className="hidden md:block">
+      <div className="grid grid-cols-[60px_minmax(230px,0.95fr)_minmax(420px,1.8fr)_180px_170px] border-b border-[#dfe5ed] bg-[#fbfcfe] text-[0.72rem] font-bold uppercase text-[#071827]">
+        {block.columns.map((column) => (
+          <span key={column} className="border-r border-[#e5e9ef] px-6 py-2 last:border-r-0">
+            {column}
+          </span>
         ))}
       </div>
 
       {block.rows.map((row) => (
         <div
           key={row.id}
-          className="border-b border-gray-200 px-2 py-2 last:border-b-0 md:grid md:grid-cols-[auto_1fr_2fr_auto_auto] md:items-start md:gap-2"
+          className="grid grid-cols-[60px_minmax(230px,0.95fr)_minmax(420px,1.8fr)_180px_170px] border-b border-[#e5e9ef] last:border-b-0"
         >
-          <span className="mb-1 text-sm font-bold text-blue-700 md:mb-0">
+          <div className="border-r border-[#e5e9ef] px-6 py-4 text-[1.55rem] font-bold leading-none text-[var(--color-primary)]">
             {row.id}
-          </span>
-          <p className="mb-1 text-sm font-semibold text-black md:mb-0">
+          </div>
+          <div className="border-r border-[#e5e9ef] px-6 py-4 text-[1rem] font-bold leading-tight text-[#071827]">
             {row.title}
+          </div>
+          <p className="border-r border-[#e5e9ef] px-6 py-3 text-[0.82rem] leading-[1.25] text-[#171f2a]">
+            {row.description}
           </p>
-          <p className="mb-1 text-xs text-gray-600 md:mb-0">{row.description}</p>
-          <p
-            className={`mb-1 text-xs font-semibold md:mb-0 ${severityClass[row.severity.type] || ""}`}
-          >
-            {row.severity.icon} {row.severity.label}
-          </p>
+          <div className="border-r border-[#e5e9ef] px-6 py-4">
+            <Severity severity={row.severity} />
+          </div>
           <Link
             href={row.link.href}
-            className="text-xs font-semibold text-blue-700"
+            className="flex items-center gap-3 px-6 py-4 text-[0.9rem] font-medium text-[var(--color-primary)]"
           >
             {row.link.label}
+            <Icon name="arrow" className="h-4 w-4" />
           </Link>
         </div>
       ))}
@@ -53,43 +114,94 @@ function FailureTable({ block }) {
   );
 }
 
+function MobileRows({ block }) {
+  return (
+    <div className="md:hidden">
+      {block.rows.map((row) => (
+        <div key={row.id} className="border-b border-[#dfe5ed] px-4 py-4 last:border-b-0">
+          <div className="flex items-start gap-3">
+            <span className="w-8 shrink-0 text-[1.65rem] font-bold leading-none text-[var(--color-primary)]">
+              {row.id}
+            </span>
+            <div className="min-w-0 flex-1">
+              <h4 className="text-[1.05rem] font-bold leading-tight text-[#07113a]">{row.title}</h4>
+              <div className="mt-2">
+                <Severity severity={row.severity} />
+              </div>
+            </div>
+          </div>
+          <p className="mt-3 text-[0.92rem] leading-[1.48] text-[#07113a]">{row.description}</p>
+          <Link href={row.link.href} className="mt-4 inline-flex items-center gap-3 text-[0.95rem] font-bold text-[var(--color-primary)]">
+            {row.link.label}
+            <Icon name="arrow" className="h-5 w-5" />
+          </Link>
+        </div>
+      ))}
+    </div>
+  );
+}
+
+function FailureTable({ block }) {
+  return (
+    <div className="border-y border-[#dfe5ed] bg-white md:overflow-hidden md:rounded-lg md:border md:shadow-[0_12px_32px_rgba(10,26,43,0.06)]">
+      <TableHeader block={block} />
+      <DesktopRows block={block} />
+      <MobileRows block={block} />
+    </div>
+  );
+}
+
+function UrgencyKey({ items }) {
+  return (
+    <div className="border-y border-[#dfe5ed] bg-white px-4 py-4 md:rounded-lg md:border md:px-8 md:shadow-[0_12px_32px_rgba(10,26,43,0.04)]">
+      <div className="flex flex-col gap-3 md:flex-row md:items-center md:gap-8">
+        <p className="text-[0.95rem] font-bold uppercase text-[#071827] md:mr-2">Urgency Key:</p>
+        {items.map((item) => (
+          <div key={item.label} className="flex items-center gap-3 text-[0.88rem] text-[#071827]">
+            <span className={`h-4 w-4 shrink-0 rounded-full ${(severityConfig[item.type] || severityConfig.monitor).dot}`} />
+            <span>
+              <strong>{item.label}</strong> - {item.text}
+            </span>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
 export default function HomeSec9({ data }) {
   return (
-    <section className="bg-white px-3 py-3">
-      <div className="mx-auto w-full max-w-8xl">
-        <div className="mb-3 flex items-start gap-3">
-          <div className="min-w-0 flex-1">
-            <h2 className="text-2xl font-bold text-black md:text-4xl">
-              The BMW Failure Database
-            </h2>
-            <p className="text-sm text-gray-600">{data.subHeadline}</p>
+    <section className="relative overflow-hidden bg-white px-4 py-8 md:px-6 md:py-8">
+      <div className="absolute inset-x-0 top-0 h-[390px] md:h-[295px]">
+        <Image
+          src={data.headerImage.src}
+          alt={data.headerImage.alt}
+          fill
+          className="object-cover object-[88%_top] md:object-[82%_center]"
+          sizes="100vw"
+        />
+        <div className="absolute inset-0 bg-[linear-gradient(115deg,white_0%,rgba(255,255,255,0.98)_42%,rgba(255,255,255,0.68)_66%,rgba(255,255,255,0.18)_100%)] md:bg-[linear-gradient(90deg,white_0%,rgba(255,255,255,0.96)_38%,rgba(255,255,255,0.45)_70%,rgba(255,255,255,0.2)_100%)]" />
+        <div className="absolute inset-x-0 bottom-0 h-32 bg-[linear-gradient(0deg,white_0%,rgba(255,255,255,0)_100%)]" />
+      </div>
+
+      <div className="relative mx-auto w-full max-w-8xl">
+        <div className="max-w-[740px] pt-3 md:pt-6">
+          <h2 className="text-[2.9rem] font-bold leading-[1.03] tracking-normal text-[#07113a] md:text-[3.45rem] md:text-black">
+            The BMW
+            <span className="block text-[var(--color-primary)] md:inline md:text-black"> Failure Database</span>
+          </h2>
+          <div className="mt-4">
+            <MStripe />
           </div>
-          <div className="relative h-20 w-28 shrink-0 md:h-28 md:w-48">
-            <Image
-              src={data.headerImage.src}
-              alt={data.headerImage.alt}
-              fill
-              className="object-cover"
-              sizes="(max-width: 768px) 112px, 192px"
-            />
-          </div>
+          <p className="mt-5 max-w-[665px] text-[1.06rem] leading-[1.55] text-[#07113a] md:text-[1rem] md:text-[#171f2a]">
+            {data.subHeadline}
+          </p>
         </div>
 
-        <FailureTable block={data.engineFailures} />
-        <FailureTable block={data.warningSigns} />
-
-        <div className="border border-gray-200 p-2">
-          <p className="mb-1 text-sm font-bold uppercase text-blue-700">
-            Urgency Key
-          </p>
-          <ul className="flex flex-col gap-1 md:flex-row md:flex-wrap md:gap-3">
-            {data.urgencyKey.map((item) => (
-              <li key={item.label} className="text-xs text-black">
-                {item.icon}{" "}
-                <span className="font-semibold">{item.label}</span> — {item.text}
-              </li>
-            ))}
-          </ul>
+        <div className="mt-8 -mx-4 grid gap-4 md:mx-0 md:mt-5">
+          <FailureTable block={data.engineFailures} />
+          <FailureTable block={data.warningSigns} />
+          <UrgencyKey items={data.urgencyKey} />
         </div>
       </div>
     </section>
