@@ -176,8 +176,8 @@ function VerdictBadge({ verdict, mobile = false }) {
 
   return (
     <span
-      className={`inline-flex items-center gap-2 rounded-xl border px-3 py-2 text-left ${badgeClass} ${
-        mobile ? "text-[0.74rem] font-medium leading-[1.15] px-2.5 py-1.5" : "text-[0.82rem] font-medium leading-[1.2]"
+      className={`inline-flex items-center gap-2 rounded-lg border text-left ${badgeClass} ${
+        mobile ? "px-2.5 py-1.5 text-[0.74rem] font-medium leading-[1.15]" : "px-2.5 py-1.5 text-[0.78rem] font-medium leading-[1.15] md:px-2.5 md:py-1.5"
       }`}
     >
       <span className={`flex h-5 w-5 shrink-0 items-center justify-center rounded-full ${iconClass}`}>
@@ -190,7 +190,7 @@ function VerdictBadge({ verdict, mobile = false }) {
 
 function DesktopHeader({ columns }) {
   return (
-    <div className="grid grid-cols-[190px_minmax(0,1fr)_185px_28px] items-center rounded-t-[1.2rem] bg-[var(--color-primary)] px-5 py-3 text-[0.98rem] font-semibold text-white">
+    <div className="grid grid-cols-[190px_minmax(0,1fr)_185px_28px] items-center rounded-t-[0.35rem] bg-[var(--color-primary)] px-5 py-3 text-[0.98rem] font-semibold text-white">
       <span>{columns[0]}</span>
       <span>{columns[1]}</span>
       <span>{columns[2]}</span>
@@ -291,7 +291,7 @@ export default function HomeSec2({ data }) {
 
         <div className="mt-5 md:hidden">
           <div
-            className={`relative overflow-hidden rounded-[1.2rem] border shadow-[0_14px_40px_var(--color-shadow)] backdrop-blur ${
+            className={`relative overflow-hidden rounded-md border shadow-[0_14px_40px_var(--color-shadow)] backdrop-blur ${
               isDark
                 ? "border-white/10 bg-[rgba(10,21,32,0.8)] text-white/60"
                 : "border-[var(--color-border)] bg-[rgba(255,255,255,0.86)] text-[var(--color-text-soft)]"
@@ -328,7 +328,7 @@ export default function HomeSec2({ data }) {
           </div>
 
           <div
-            className={`mt-5 overflow-hidden rounded-[1.5rem] border shadow-[0_14px_40px_var(--color-shadow)] backdrop-blur ${
+            className={`mt-5 overflow-hidden rounded-md border shadow-[0_14px_40px_var(--color-shadow)] backdrop-blur ${
               isDark
                 ? "border-white/10 bg-[rgba(10,21,32,0.82)]"
                 : "border-[var(--color-border)] bg-[rgba(255,255,255,0.88)]"
@@ -350,28 +350,28 @@ export default function HomeSec2({ data }) {
           </div>
 
           <div
-            className={`mt-5 rounded-[1.5rem] border p-5 shadow-[0_14px_40px_var(--color-shadow)] backdrop-blur ${
+            className={`mt-5 rounded-md border p-4 shadow-[0_14px_40px_var(--color-shadow)] backdrop-blur ${
               isDark
                 ? "border-white/10 bg-[rgba(10,21,32,0.82)]"
                 : "border-[var(--color-border)] bg-[rgba(255,255,255,0.84)]"
             }`}
           >
-            <div className="flex items-start gap-4">
-              <div className="flex h-16 w-16 shrink-0 items-center justify-center rounded-full bg-[var(--color-primary)] text-white">
-                <svg aria-hidden="true" viewBox="0 0 24 24" className="h-8 w-8" fill="none" stroke="currentColor" strokeWidth="2">
-                  <path d="M12 3 5 6v6c0 5 3.3 8.8 7 9 3.7-.2 7-4 7-9V6l-7-3Zm-2 9 1.6 1.6L15 10" />
-                </svg>
+            <div className="grid grid-cols-[60px_minmax(0,1fr)] gap-x-3 gap-y-2">
+              <div className="row-span-2 flex items-start justify-center pt-0.5">
+                <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[var(--color-primary)] text-white">
+                  <svg aria-hidden="true" viewBox="0 0 24 24" className="h-7 w-7" fill="none" stroke="currentColor" strokeWidth="2">
+                    <path d="M12 3 5 6v6c0 5 3.3 8.8 7 9 3.7-.2 7-4 7-9V6l-7-3Zm-2 9 1.6 1.6L15 10" />
+                  </svg>
+                </div>
               </div>
-              <div>
-                <p className={`text-[0.92rem] font-semibold ${isDark ? "text-white" : "text-[var(--color-text)]"}`}>Unbiased. Data-Driven. Trusted by Thousands.</p>
-                <p className={`mt-2 text-[0.82rem] leading-[1.35] ${isDark ? "text-white/78" : "text-[var(--color-text-muted)]"}`}>
-                  Independent reliability data and real ownership insights so you can make the right decision with confidence.
-                </p>
-              </div>
+              <p className={`text-[0.92rem] font-semibold leading-tight ${isDark ? "text-white" : "text-[var(--color-text)]"}`}>Unbiased. Data-Driven. Trusted by Thousands.</p>
+              <p className={`col-span-2 text-[0.78rem] leading-[1.35] ${isDark ? "text-white/78" : "text-[var(--color-text-muted)]"}`}>
+                Independent reliability data and real ownership insights so you can make the right decision with confidence.
+              </p>
             </div>
             <Link
               href={data.cta.href}
-              className="mt-5 flex items-center justify-center gap-4 rounded-[1rem] bg-[var(--color-primary)] px-6 py-3.5 text-[0.92rem] font-semibold text-white"
+              className="mt-4 flex items-center justify-center gap-4 rounded-md bg-[var(--color-primary)] px-5 py-3.5 text-[0.92rem] font-semibold text-white"
             >
               <span>{data.cta.buttonLabel}</span>
               <svg aria-hidden="true" viewBox="0 0 24 24" className="h-6 w-6" fill="none" stroke="currentColor" strokeWidth="2">
@@ -381,12 +381,12 @@ export default function HomeSec2({ data }) {
           </div>
         </div>
 
-        <div className="mt-6 hidden md:block">
+          <div className="mt-6 hidden md:block">
           <div className="grid gap-3 md:grid-cols-2">
             {[left, right].map((column, index) => (
               <div
                 key={index}
-                className="overflow-hidden rounded-[1.5rem] border border-[var(--color-border)] bg-[var(--color-surface-raised)] shadow-[0_14px_40px_var(--color-shadow)] backdrop-blur"
+                className="overflow-hidden rounded-md border border-[var(--color-border)] bg-[var(--color-surface-raised)] shadow-[0_14px_40px_var(--color-shadow)] backdrop-blur"
               >
                 <DesktopHeader columns={data.columns} />
                 {column.map((item) => (

@@ -58,14 +58,14 @@ export default function HomeSec12({ data }) {
           <div className="mt-4">
             <MStripe />
           </div>
-          <p className={`mt-5 max-w-[620px] text-[0.98rem] leading-[1.58] md:text-[1rem] ${isDark ? "text-white/78" : "text-[#27384a]"}`}>
+          <p className={`mt-5 max-w-[620px] text-[0.9rem] leading-[1.58] md:text-[1rem] ${isDark ? "text-white/78" : "text-[#27384a]"}`}>
             {cleanText(data.subHeadline)}
           </p>
         </div>
 
         <div className="mt-8 grid grid-cols-1 gap-3 sm:grid-cols-2 md:mt-7 md:grid-cols-4 md:gap-4">
           {data.signals.map((item) => (
-            <article key={item.id} className={`rounded-lg border p-4 shadow-[0_12px_28px_rgba(10,26,43,0.06)] ${isDark ? "border-[#223343] bg-[rgba(10,21,32,0.92)]" : "border-[#dfe5ed] bg-white"}`}>
+            <article key={item.id} className={`rounded-md border p-4 shadow-[0_12px_28px_rgba(10,26,43,0.06)] ${isDark ? "border-[#223343] bg-[rgba(10,21,32,0.92)]" : "border-[#dfe5ed] bg-white"}`}>
               <div className="mb-3 flex items-center gap-3">
                 <span className="flex h-8 w-8 items-center justify-center rounded-md bg-[var(--color-primary)] text-[0.85rem] font-bold text-white">
                   {item.id}

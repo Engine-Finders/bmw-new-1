@@ -66,7 +66,7 @@ function ArrowIcon() {
 function TrustStrip({ items, isDark }) {
   return (
     <ul
-      className={`grid grid-cols-4 overflow-hidden rounded-xl border shadow-[0_14px_34px_rgba(10,26,43,0.1)] md:hidden ${
+      className={`grid grid-cols-4 overflow-hidden rounded-md border shadow-[0_14px_34px_rgba(10,26,43,0.1)] md:hidden ${
         isDark ? "border-[#1f3c57] bg-[rgba(7,23,36,0.86)]" : "border-[#d7dde6] bg-white"
       }`}
     >
@@ -152,7 +152,7 @@ export default function HomeSec4({ data }) {
           <div className="mt-4">
             <MStripe />
           </div>
-          <p className={`mt-4 max-w-[700px] text-[0.9rem] leading-[1.45] md:text-[1.08rem] ${isDark ? "text-white/82" : "text-[#172b4a]"}`}>{data.subHeadline}</p>
+          <p className={`mt-4 max-w-[700px] text-[0.86rem] leading-[1.45] md:text-[1.08rem] ${isDark ? "text-white/82" : "text-[#172b4a]"}`}>{data.subHeadline}</p>
         </div>
 
         <div className="mt-6">
@@ -160,7 +160,7 @@ export default function HomeSec4({ data }) {
         </div>
 
         <div
-          className={`mt-6 overflow-hidden rounded-xl border shadow-[0_14px_36px_rgba(10,26,43,0.08)] md:mt-10 ${
+          className={`mt-6 overflow-hidden rounded-md border shadow-[0_14px_36px_rgba(10,26,43,0.08)] md:mt-10 ${
             isDark ? "border-[#223a51] bg-[rgba(7,23,36,0.88)]" : "border-[#d7dde6] bg-white"
           }`}
         >
@@ -177,7 +177,7 @@ export default function HomeSec4({ data }) {
         </div>
 
         <div
-          className={`mt-7 flex flex-col gap-4 rounded-xl border p-4 md:hidden ${
+          className={`mt-7 flex flex-col gap-4 rounded-md border p-4 md:hidden ${
             isDark ? "border-[#223a51] bg-[rgba(7,23,36,0.88)]" : "border-[#d7dde6] bg-[#f8fbff]"
           }`}
         >

@@ -1,14 +1,28 @@
 {
-  "title": "Ready to Make a Decision?",
-  "subHeadline": "Not sure where to start? Search by model to see the full reliability picture, run the ownership decision tool on your specific car, or go straight to a vetted BMW specialist for a quote.",
+  "subHeadline": "Free, expert guidance. Real data. Honest advice.",
+  "stats": [
+    "24,650+ UK enquiries analysed",
+    "50+ engine codes tracked",
+    "Real quotes, real costs",
+    "Independent & unbiased"
+  ],
   "primaryCta": {
-    "label": "Compare BMW Engine Prices Now →",
-    "href": "#",
-    "note": "routes to EnginesMarket"
+    "label": "GET YOUR FREE GUIDANCE",
+    "subLabel": "Ask a BMW engine specialist",
+    "href": "#"
   },
   "secondaryCta": {
-    "label": "Explore BMW Models →",
-    "href": "#",
-    "note": "routes to internal model finder"
+    "label": "CALL A SPECIALIST",
+    "subLabel": "Speak to a BMW expert now",
+    "href": "#"
+  },
+  "review": {
+    "brand": "Trustpilot",
+    "score": "4.8 out of 5 from 1,200+ reviews",
+    "stars": 5
+  },
+  "image": {
+    "src": "/hero-day.webp",
+    "alt": "BMW front view"
   }
 }

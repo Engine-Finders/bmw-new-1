@@ -32,6 +32,39 @@ function splitStat(label) {
   };
 }
 
+function TrustLabel({ label }) {
+  if (label === "Every Generation, Honestly Rated") {
+    return (
+      <>
+        <span className="block">Every Generation,</span>
+        <span className="block">Honestly</span>
+        <span className="block">Rated</span>
+      </>
+    );
+  }
+
+  if (label === "Part of Engine Finders") {
+    return (
+      <>
+        <span className="block">Part of Engine</span>
+        <span className="block">Finders</span>
+      </>
+    );
+  }
+
+  return label;
+}
+
+function HeroTitle() {
+  return (
+    <h1 className="max-w-[660px] text-[32px] font-bold leading-[0.95] tracking-normal text-white md:max-w-[720px] md:text-[3.5rem] md:leading-[0.94] md:text-[var(--color-text)] lg:text-[4rem]">
+      <span className="block md:whitespace-nowrap">The UK&apos;s Most</span>
+      <span className="block md:whitespace-nowrap">Trusted BMW</span>
+      <span className="block text-[var(--color-primary)] md:whitespace-nowrap">Ownership Guide</span>
+    </h1>
+  );
+}
+
 export default function HomeSec1({ data }) {
   const { theme } = useTheme();
   const heroImageSrc = theme === "dark" ? "/Hero-dark.webp" : "/hero-day.webp";
@@ -66,10 +99,7 @@ export default function HomeSec1({ data }) {
 
       <div className="relative mx-auto flex w-full max-w-8xl flex-col px-4 pb-5 pt-8 md:min-h-[620px] md:justify-center md:px-0 md:py-8">
         <div className="relative flex w-full max-w-[720px] flex-col gap-3 md:-ml-6 md:mt-0 md:gap-4">
-          <h1 className="text-[3.1rem] font-bold leading-[0.94] tracking-normal text-white md:text-[3.5rem] md:text-[var(--color-text)] lg:text-[4rem]">
-            The UK&apos;s Most Trusted BMW{" "}
-            <span className="block text-[var(--color-primary)]">Ownership Guide</span>
-          </h1>
+          <HeroTitle />
 
           <MStripe />
 
@@ -82,10 +112,10 @@ export default function HomeSec1({ data }) {
           <div className="relative mt-1 h-[310px] md:hidden" />
 
           <ul
-            className={`grid grid-cols-4 overflow-hidden rounded-[1.35rem] border shadow-lg backdrop-blur md:max-w-[700px] md:rounded-lg md:border-[var(--color-border)] md:bg-[var(--color-surface-glass)] md:shadow-[0_10px_30px_var(--color-shadow)] md:grid-cols-4 ${
+            className={`grid grid-cols-4 overflow-hidden rounded-md border shadow-[0_14px_32px_rgba(10,26,43,0.12)] backdrop-blur-xl md:max-w-[700px] md:rounded-lg md:border-[var(--color-border)] md:bg-[var(--color-surface-glass)] md:shadow-[0_10px_30px_var(--color-shadow)] md:grid-cols-4 ${
               isDark
-                ? "border-white/10 bg-[rgba(11,17,24,0.72)] shadow-black/30"
-                : "border-[var(--color-border)] bg-[rgba(255,255,255,0.86)] shadow-[var(--color-shadow)]"
+                ? "border-white/10 bg-[rgba(11,17,24,0.44)] shadow-black/30"
+                : "border-[var(--color-border)] bg-[rgba(255,255,255,0.4)] shadow-[var(--color-shadow)]"
             }`}
           >
             {data.trustStrip.map((item, index) => {
@@ -104,11 +134,11 @@ export default function HomeSec1({ data }) {
                   <span className={`text-[0.95rem] leading-tight ${isDark ? "text-white" : "text-[var(--color-text)]"} md:text-[var(--color-text)]`}>
                     {stat.value && <strong className="block text-[0.86rem] font-bold leading-none md:inline md:text-[1.25rem]">{stat.value}</strong>}
                     <span
-                      className={`mt-1.5 block text-[0.62rem] uppercase leading-[1.3] tracking-normal ${
+                      className={`mt-1.5 block text-[10px] uppercase leading-[1.3] tracking-normal ${
                         isDark ? "text-white/78" : "text-[var(--color-text-muted)]"
                       } md:mt-0 md:max-w-none md:text-[0.9rem] md:font-normal md:leading-[1.25] md:text-[var(--color-text-muted)] md:normal-case`}
                     >
-                      {stat.text}
+                      <TrustLabel label={stat.text} />
                     </span>
                   </span>
                 </li>
@@ -118,25 +148,25 @@ export default function HomeSec1({ data }) {
 
           <Link
             href={data.cta.href}
-            className={`rounded-[1.6rem] border p-5 shadow-lg md:hidden ${
+            className={`rounded-[1.15rem] border p-4 shadow-lg md:hidden ${
               isDark
                 ? "border-[rgba(41,115,219,0.75)] bg-[linear-gradient(180deg,rgba(14,79,184,0.98)_0%,rgba(8,59,143,0.98)_100%)] text-white shadow-black/30"
                 : "border-[rgba(41,115,219,0.28)] bg-[linear-gradient(180deg,rgba(14,79,184,0.98)_0%,rgba(8,59,143,0.98)_100%)] text-white shadow-[var(--color-shadow)]"
             }`}
           >
-            <div className="flex items-center gap-4">
-              <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-[rgba(255,255,255,0.08)]">
-                <svg aria-hidden="true" viewBox="0 0 24 24" className="h-8 w-8" fill="none" stroke="currentColor" strokeWidth="2">
-                  <path d="M12 3 5 6v6c0 5 3.3 8.8 7 9 3.7-.2 7-4 7-9V6l-7-3Zm-2 9 1.6 1.6L15 10" />
-                </svg>
-              </div>
+            <div className="flex items-center gap-3">
+                <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[rgba(255,255,255,0.08)]">
+                  <svg aria-hidden="true" viewBox="0 0 24 24" className="h-8 w-8" fill="none" stroke="currentColor" strokeWidth="2">
+                    <path d="M12 3 5 6v6c0 5 3.3 8.8 7 9 3.7-.2 7-4 7-9V6l-7-3Zm-2 9 1.6 1.6L15 10" />
+                  </svg>
+                </div>
               <div className="min-w-0 flex-1">
-                <p className="text-[0.92rem] font-semibold tracking-[0.06em]">{data.cta.label}</p>
-                <p className="mt-1 text-[0.78rem] leading-[1.3] text-white/82">
+                <p className="text-[0.86rem] font-semibold tracking-[0.06em]">{data.cta.label}</p>
+                <p className="mt-1 text-[0.7rem] leading-[1.25] text-white/82">
                   UNBIASED. DATA-DRIVEN. TRUSTED BY THOUSANDS.
                 </p>
               </div>
-              <span className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full border border-white/12 bg-[rgba(3,14,31,0.4)]">
+              <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border border-white/12 bg-[rgba(3,14,31,0.4)]">
                 <svg aria-hidden="true" viewBox="0 0 24 24" className="h-6 w-6" fill="none" stroke="currentColor" strokeWidth="2">
                   <path d="M5 12h14m-6-6 6 6-6 6" />
                 </svg>
@@ -158,7 +188,7 @@ export default function HomeSec1({ data }) {
             </span>
           </Link>
 
-          <div className="flex items-center justify-center gap-3 text-[0.7rem] text-white/62 md:hidden">
+          <div className="flex items-center justify-center gap-3 text-[10px] text-white/62 md:hidden">
             <span>100% INDEPENDENT</span>
             <span className="h-1.5 w-1.5 rounded-full bg-white/35" />
             <span>NO SPONSORSHIP</span>

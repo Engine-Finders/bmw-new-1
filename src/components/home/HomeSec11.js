@@ -38,7 +38,7 @@ function EraIcon({ isDark }) {
 
 function HeaderImage({ data, isDark }) {
   return (
-    <div className={`relative mt-5 overflow-hidden rounded-lg border shadow-[0_12px_28px_rgba(10,26,43,0.06)] md:mt-0 md:h-[308px] md:rounded-none md:border-0 md:bg-transparent md:shadow-none ${isDark ? "border-[#223343] bg-[#0a1520]" : "border-[#dfe5ed] bg-white"}`}>
+    <div className={`relative mt-5 overflow-hidden rounded-md border shadow-[0_12px_28px_rgba(10,26,43,0.06)] md:mt-0 md:h-[308px] md:rounded-none md:border-0 md:bg-transparent md:shadow-none ${isDark ? "border-[#223343] bg-[#0a1520]" : "border-[#dfe5ed] bg-white"}`}>
       <div className="relative h-[220px] sm:h-[250px] md:h-full">
         <Image
           src={data.headerImage.src}
@@ -66,7 +66,7 @@ function DesktopHeader({ data, isDark }) {
         <div className="mt-4">
           <MStripe />
         </div>
-        <p className={`mt-5 max-w-[520px] text-[1.06rem] leading-[1.55] ${isDark ? "text-white/78" : "text-[#172334]"}`}>
+        <p className={`mt-5 max-w-[520px] text-[0.96rem] leading-[1.55] ${isDark ? "text-white/78" : "text-[#172334]"}`}>
           {data.subHeadline}
         </p>
       </div>
@@ -95,7 +95,7 @@ function MobileHeader({ data, isDark }) {
 
 function DesktopTimeline({ data, isDark }) {
   return (
-    <div className={`hidden overflow-hidden rounded-lg border shadow-[0_14px_36px_rgba(10,26,43,0.06)] md:block ${isDark ? "border-[#223343] bg-[rgba(10,21,32,0.92)]" : "border-[#dfe5ed] bg-white"}`}>
+    <div className={`hidden overflow-hidden rounded-md border shadow-[0_14px_36px_rgba(10,26,43,0.06)] md:block ${isDark ? "border-[#223343] bg-[rgba(10,21,32,0.92)]" : "border-[#dfe5ed] bg-white"}`}>
       <div className="grid grid-cols-[300px_1fr_680px] bg-[linear-gradient(90deg,#3478f6_0%,#1f63df_100%)] text-white">
         {data.columns.map((column) => (
           <div key={column} className="border-r border-white/18 px-8 py-3 text-center text-[1rem] font-bold uppercase last:border-r-0">
@@ -115,7 +115,7 @@ function DesktopTimeline({ data, isDark }) {
 
             <div className={`grid grid-cols-[1fr_156px] items-center gap-5 border-l px-6 py-4 ${isDark ? "border-[#223343]" : "border-[#e7ebf0]"}`}>
               <p className={`text-[1rem] font-semibold leading-[1.4] ${isDark ? "text-white/84" : "text-[#172334]"}`}>{row.engines}</p>
-              <div className="relative h-28 overflow-hidden rounded-xl">
+              <div className="relative h-28 overflow-hidden rounded-md">
                 <Image src={row.engineImage.src} alt={row.engineImage.alt} fill className="object-contain" sizes="156px" />
               </div>
             </div>
@@ -123,7 +123,7 @@ function DesktopTimeline({ data, isDark }) {
             <div className={`grid grid-cols-[1fr_168px] items-center gap-6 border-l px-6 py-4 ${isDark ? "border-[#223343]" : "border-[#e7ebf0]"}`}>
               <div className="grid grid-cols-3 gap-3">
                 {row.modelImages.map((image, index) => (
-                  <div key={`${row.era}-${index}`} className="relative h-20 overflow-hidden rounded-lg">
+                  <div key={`${row.era}-${index}`} className="relative h-20 overflow-hidden rounded-md">
                     <Image src={image.src} alt={image.alt} fill className="object-contain" sizes="140px" />
                   </div>
                 ))}
@@ -148,7 +148,7 @@ function MobileTimeline({ data, isDark }) {
               <EraIcon isDark={isDark} />
             </div>
 
-            <article className={`min-w-0 flex-1 rounded-lg border px-4 py-4 shadow-[0_10px_24px_rgba(10,26,43,0.05)] ${isDark ? "border-[#223343] bg-[rgba(10,21,32,0.92)]" : "border-[#dfe5ed] bg-white"}`}>
+            <article className={`min-w-0 flex-1 rounded-md border px-4 py-4 shadow-[0_10px_24px_rgba(10,26,43,0.05)] ${isDark ? "border-[#223343] bg-[rgba(10,21,32,0.92)]" : "border-[#dfe5ed] bg-white"}`}>
               <div className="grid gap-4 sm:grid-cols-[120px_1fr]">
                 <div>
                   <p className={`text-[0.92rem] font-bold sm:text-[0.98rem] ${isDark ? "text-white" : "text-[#071827]"}`}>{row.era}</p>
@@ -160,7 +160,7 @@ function MobileTimeline({ data, isDark }) {
                       <p className="text-[0.76rem] font-bold uppercase text-[var(--color-primary)]">Key Engines</p>
                       <p className={`mt-1.5 text-[0.9rem] leading-[1.4] sm:text-[0.95rem] ${isDark ? "text-white/84" : "text-[#172334]"}`}>{row.engines}</p>
                     </div>
-                    <div className="relative mx-auto h-22 w-full max-w-[112px] overflow-hidden rounded-xl sm:h-24 sm:max-w-[120px]">
+                    <div className="relative mx-auto h-22 w-full max-w-[112px] overflow-hidden rounded-md sm:h-24 sm:max-w-[120px]">
                       <Image src={row.engineImage.src} alt={row.engineImage.alt} fill className="object-contain" sizes="120px" />
                     </div>
                   </div>
@@ -170,7 +170,7 @@ function MobileTimeline({ data, isDark }) {
                       <p className="text-[0.76rem] font-bold uppercase text-[var(--color-primary)]">Iconic Models</p>
                       <div className="mt-1.5 grid grid-cols-3 gap-1.5">
                         {row.modelImages.map((image, index) => (
-                          <div key={`${row.era}-mobile-${index}`} className="relative h-12 overflow-hidden rounded-lg sm:h-14">
+                          <div key={`${row.era}-mobile-${index}`} className="relative h-12 overflow-hidden rounded-md sm:h-14">
                             <Image src={image.src} alt={image.alt} fill className="object-contain" sizes="90px" />
                           </div>
                         ))}
@@ -193,12 +193,12 @@ function MobileTimeline({ data, isDark }) {
 
 function KeyTakeaway({ text, isDark }) {
   return (
-    <div className={`mt-4 rounded-lg border px-4 py-4 shadow-[0_12px_28px_rgba(10,26,43,0.04)] md:mt-4 md:px-8 md:py-5 ${isDark ? "border-[#223343] bg-[linear-gradient(180deg,#0a1520_0%,#07121d_100%)]" : "border-[#dfe5ed] bg-[linear-gradient(180deg,#ffffff_0%,#f8fbff_100%)]"}`}>
+    <div className={`mt-4 rounded-md border px-4 py-4 shadow-[0_12px_28px_rgba(10,26,43,0.04)] md:mt-4 md:px-8 md:py-5 ${isDark ? "border-[#223343] bg-[linear-gradient(180deg,#0a1520_0%,#07121d_100%)]" : "border-[#dfe5ed] bg-[linear-gradient(180deg,#ffffff_0%,#f8fbff_100%)]"}`}>
       <div className="grid gap-4 md:grid-cols-[92px_1fr] md:items-center">
-        <span className="flex h-15 w-15 items-center justify-center rounded-2xl bg-[var(--color-primary)] text-white shadow-[0_12px_26px_rgba(7,95,216,0.2)] md:h-16 md:w-16">
+        <span className="flex h-15 w-15 items-center justify-center rounded-md bg-[var(--color-primary)] text-white shadow-[0_12px_26px_rgba(7,95,216,0.2)] md:h-16 md:w-16">
           <Icon name="insight" className="h-9 w-9 md:h-8 md:w-8" strokeWidth={2.2} />
         </span>
-        <p className={`text-[0.94rem] leading-[1.52] md:text-[1.02rem] ${isDark ? "text-white/84" : "text-[#172334]"}`}>
+        <p className={`text-[0.9rem] leading-[1.52] md:text-[1.02rem] ${isDark ? "text-white/84" : "text-[#172334]"}`}>
           <span className="mr-2 font-bold uppercase text-[var(--color-primary)]">Key Takeaway:</span>
           {text}
         </p>

@@ -40,7 +40,7 @@ function iconName(item) {
 
 function CentreCard({ item, isDark }) {
   return (
-    <article className={`relative overflow-hidden rounded-lg border shadow-[0_14px_34px_rgba(10,26,43,0.08)] ${isDark ? "border-[#223a51] bg-[rgba(7,23,36,0.9)]" : "border-[#dfe5ed] bg-white"}`}>
+    <article className={`relative overflow-hidden rounded-md border shadow-[0_14px_34px_rgba(10,26,43,0.08)] ${isDark ? "border-[#223a51] bg-[rgba(7,23,36,0.9)]" : "border-[#dfe5ed] bg-white"}`}>
       <span className="absolute left-0 top-0 z-20 flex h-9 w-9 items-center justify-center rounded-br-md bg-[var(--color-primary)] text-[1.05rem] font-bold text-white md:h-8 md:w-8 md:text-[0.9rem]">
         {item.id}
       </span>
@@ -88,7 +88,7 @@ export default function HomeSec8({ data }) {
           <div className="mt-5">
             <MStripe />
           </div>
-          <p className={`mt-6 max-w-[610px] whitespace-pre-line text-[0.98rem] leading-[1.6] md:text-[1rem] ${isDark ? "text-white/80" : "text-[#27384a]"}`}>
+          <p className={`mt-6 max-w-[610px] whitespace-pre-line text-[0.9rem] leading-[1.6] md:text-[1rem] ${isDark ? "text-white/80" : "text-[#27384a]"}`}>
             {cleanText(data.subHeadline).replace(". Every guide", ".\n\nEvery guide")}
           </p>
         </div>

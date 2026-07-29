@@ -58,7 +58,7 @@ function PanelTitle({ block, isDark }) {
 
 function DataPanel({ children, block, isDark, className = "" }) {
   return (
-    <section className={`overflow-hidden rounded-lg border shadow-[0_10px_28px_rgba(10,26,43,0.05)] ${isDark ? "border-[#223343] bg-[rgba(10,21,32,0.92)]" : "border-[#dfe5ed] bg-white"} ${className}`}>
+    <section className={`overflow-hidden rounded-md border shadow-[0_10px_28px_rgba(10,26,43,0.05)] ${isDark ? "border-[#223343] bg-[rgba(10,21,32,0.92)]" : "border-[#dfe5ed] bg-white"} ${className}`}>
       <PanelTitle block={block} isDark={isDark} />
       {children}
     </section>
@@ -185,7 +185,7 @@ function FeedTable({ data, isDark }) {
 
 function MobileAccordion({ block, children, isDark }) {
   return (
-    <details className={`group rounded-lg border shadow-[0_10px_28px_rgba(10,26,43,0.06)] ${isDark ? "border-[#223343] bg-[rgba(10,21,32,0.92)]" : "border-[#dfe5ed] bg-white"}`}>
+    <details className={`group rounded-md border shadow-[0_10px_28px_rgba(10,26,43,0.06)] ${isDark ? "border-[#223343] bg-[rgba(10,21,32,0.92)]" : "border-[#dfe5ed] bg-white"}`}>
       <summary className="flex cursor-pointer list-none items-center gap-4 px-5 py-4 marker:hidden">
         <span className="shrink-0 text-[var(--color-primary)]">
           <Icon name={block.icon} className="h-8 w-8" />
@@ -203,7 +203,7 @@ function MobileAccordion({ block, children, isDark }) {
 
 function StatsPanel({ stats, isDark }) {
   return (
-    <ul className={`grid rounded-lg border px-7 shadow-[0_10px_28px_rgba(10,26,43,0.05)] ${isDark ? "border-[#223343] bg-[rgba(10,21,32,0.92)]" : "border-[#dfe5ed] bg-white"}`}>
+    <ul className={`grid rounded-md border px-7 shadow-[0_10px_28px_rgba(10,26,43,0.05)] ${isDark ? "border-[#223343] bg-[rgba(10,21,32,0.92)]" : "border-[#dfe5ed] bg-white"}`}>
       {stats.map((stat) => (
         <li key={stat.label} className={`flex items-center gap-5 border-b py-6 last:border-b-0 ${isDark ? "border-[#223343]" : "border-[#e7ebf0]"}`}>
           <Icon name={stat.icon} className="h-9 w-9 text-[var(--color-primary)]" strokeWidth={2.2} />
@@ -239,7 +239,7 @@ export default function HomeSec10({ data }) {
             <div className="mt-4">
               <MStripe />
             </div>
-            <p className={`mt-4 max-w-[620px] text-[1rem] leading-[1.55] ${isDark ? "text-white/78" : "text-[#172334]"}`}>{data.subHeadline}</p>
+            <p className={`mt-4 max-w-[620px] text-[0.92rem] leading-[1.55] ${isDark ? "text-white/78" : "text-[#172334]"}`}>{data.subHeadline}</p>
           </div>
 
           <div className="hidden md:block">

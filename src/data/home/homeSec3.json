@@ -1,5 +1,5 @@
 {
-  "subHeadline": "Answer a few questions about your symptoms - we'll match you against 15+ known BMW failure patterns, show you the likely diagnosis, OEM part references, and an honest repair vs. replace cost estimate.",
+  "subHeadline": "Interactive triage for BMW owners. Start from a known fault or work through symptoms, then compare repair against replacement with a model-aware verdict.",
   "heroImages": {
     "light": {
       "src": "/hero-day.webp",
@@ -13,133 +13,1184 @@
   "trustStrip": [
     {
       "icon": "chart",
-      "label": "Powered by",
-      "value": "24,650+",
-      "text": "real UK enquiries"
+      "value": "5,060+",
+      "text": "EM-VERIFIED BMW enquiries"
     },
     {
-      "icon": "wrench",
-      "label": "",
-      "value": "20+ vetted",
-      "text": "BMW specialists"
+      "icon": "engine",
+      "value": "15",
+      "text": "tracked diagnosis paths"
     },
     {
-      "icon": "book",
-      "label": "",
-      "value": "OEM part",
-      "text": "references included"
+      "icon": "gear",
+      "value": "8+",
+      "text": "engine codes monitored"
     },
     {
-      "icon": "trophy",
-      "label": "",
-      "value": "Part of",
-      "text": "Engine Finders"
+      "icon": "shield",
+      "value": "2-way",
+      "text": "fault or symptom routing"
     }
   ],
   "howItWorks": {
     "steps": [
       {
         "step": 1,
-        "icon": "stethoscope",
-        "title": "Tell us your symptoms",
-        "text": "Select from common failure categories or use the shortcut grid if you already know the fault."
+        "icon": "shortcut",
+        "title": "Jump to a known fault or start from symptoms",
+        "text": "Choose one of 15 shortcut cards or answer the category flow if you are still diagnosing."
       },
       {
         "step": 2,
         "icon": "car",
-        "title": "Tell us about your vehicle",
-        "text": "Age and estimated value help us calculate whether repair or replacement makes financial sense."
+        "title": "Add vehicle age and current value",
+        "text": "The verdict engine uses your car age, market value, and risk level before recommending repair, replacement, or exit."
       },
       {
         "step": 3,
         "icon": "clipboard",
-        "title": "Get your diagnosis",
-        "text": "We'll show you the likely fault, OEM part numbers, severity level, and a transparent cost breakdown."
+        "title": "Compare costs and next steps",
+        "text": "See severity, affected chassis, OEM references, cost bands, and two direct action routes."
       }
     ]
   },
   "calculator": {
-    "stepLabel": "STEP 1 OF 3",
-    "title": "Tell us your symptoms",
-    "instruction": "Select from common failure categories or use the shortcut grid.",
-    "symptoms": [
+    "stepLabels": [
+      "Symptoms",
+      "Vehicle",
+      "Engine Type"
+    ],
+    "valueSteps": [
+      1500,
+      3000,
+      5000,
+      8000,
+      12000,
+      18000,
+      25000
+    ],
+    "ageOptions": [
       {
-        "icon": "engine",
-        "label": "Engine Performance Issues",
-        "href": "#"
+        "id": "under5",
+        "label": "Under 5 years"
       },
       {
-        "icon": "drop",
-        "label": "Oil Leaks & Consumption",
-        "href": "#"
+        "id": "5to10",
+        "label": "5-10 years"
       },
       {
-        "icon": "thermometer",
-        "label": "Cooling System Faults",
-        "href": "#"
+        "id": "10to15",
+        "label": "10-15 years"
       },
       {
-        "icon": "disc",
-        "label": "Timing Chain & Drive Issues",
-        "href": "#"
-      },
-      {
-        "icon": "turbo",
-        "label": "Turbo / Boost Problems",
-        "href": "#"
-      },
-      {
-        "icon": "battery",
-        "label": "Starting & Charging",
-        "href": "#"
-      },
-      {
-        "icon": "sparkplug",
-        "label": "Misfires & Rough Idle",
-        "href": "#"
-      },
-      {
-        "icon": "exhaust",
-        "label": "Exhaust & Emissions",
-        "href": "#"
-      },
-      {
-        "icon": "bolt",
-        "label": "Electrical Faults",
-        "href": "#"
-      },
-      {
-        "icon": "question",
-        "label": "Other / Not Sure",
-        "href": "#"
+        "id": "over15",
+        "label": "Over 15 years"
       }
     ],
-    "cta": {
-      "label": "CONTINUE TO STEP 2",
-      "href": "#"
-    }
-  },
-  "whyTrust": {
-    "signals": [
+    "engineOptions": [
       {
-        "icon": "shield",
-        "title": "BMW-VERIFIED Data",
-        "text": "Every cost range and enquiry volume comes from real 2025 UK data - not estimates or guesswork."
+        "id": "reconditioned",
+        "label": "Reconditioned Engine",
+        "subLabel": "Best long-term fix",
+        "multiplier": 1
       },
       {
+        "id": "rebuilt",
+        "label": "Rebuilt Engine",
+        "subLabel": "Lower entry cost",
+        "multiplier": 0.82
+      },
+      {
+        "id": "used",
+        "label": "Used Engine",
+        "subLabel": "Fastest budget route",
+        "multiplier": 0.68
+      }
+    ],
+    "ctas": {
+      "quote": {
+        "label": "Get Replacement Quotes",
+        "href": "#"
+      },
+      "specialist": {
+        "label": "Speak to a BMW Specialist",
+        "href": "#"
+      }
+    },
+    "knownFaultOrder": [
+      "timingChain",
+      "egrCoolerFireRisk",
+      "coolantExpansion",
+      "valveStemSeals",
+      "hpfp",
+      "zf8hpMechatronic",
+      "zf8hpValveBody",
+      "xDriveTransfer",
+      "dpfEgrClogging",
+      "activeSteering",
+      "crankPulley",
+      "vanosSolenoids",
+      "injectorSeals",
+      "oilFilterHousing",
+      "valveCoverGasket"
+    ],
+    "categories": [
+      {
+        "id": "performance",
+        "icon": "engine",
+        "label": "Performance & Misfire",
+        "description": "Limp mode, hesitation, rough idle",
+        "question": "Which engine behavior sounds closest to your issue?",
+        "answers": [
+          {
+            "label": "Fuel pressure faults, long crank, sudden power loss",
+            "diagnosisKey": "hpfp"
+          },
+          {
+            "label": "Misfire, rough idle, smoke under load",
+            "diagnosisKey": "injectorSeals"
+          },
+          {
+            "label": "Weak low-end response, VANOS or timing plausibility codes",
+            "diagnosisKey": "vanosSolenoids"
+          },
+          {
+            "label": "Blue smoke after idle or on overrun",
+            "diagnosisKey": "valveStemSeals"
+          }
+        ]
+      },
+      {
+        "id": "cooling",
+        "icon": "thermometer",
+        "label": "Cooling & Fire Risk",
+        "description": "Coolant loss, heat, warning lights",
+        "question": "What cooling-system symptom are you seeing?",
+        "answers": [
+          {
+            "label": "Coolant loss, pressure spikes, expansion bottle warnings",
+            "diagnosisKey": "coolantExpansion"
+          },
+          {
+            "label": "Sweet smell, white smoke, EGR campaign-style concern",
+            "diagnosisKey": "egrCoolerFireRisk"
+          },
+          {
+            "label": "External coolant leak around oil filter housing area",
+            "diagnosisKey": "oilFilterHousing"
+          }
+        ]
+      },
+      {
+        "id": "drivetrain",
+        "icon": "disc",
+        "label": "Timing & Drivetrain",
+        "description": "Chain noise, gearbox flare, transfer faults",
+        "question": "Which driveline fault best matches the car?",
+        "answers": [
+          {
+            "label": "Cold-start rattle from the rear of the engine",
+            "diagnosisKey": "timingChain"
+          },
+          {
+            "label": "Harsh shifts, gearbox warning, mechatronic behavior",
+            "diagnosisKey": "zf8hpMechatronic"
+          },
+          {
+            "label": "Shift flare, delayed engagement, valve-body wear feel",
+            "diagnosisKey": "zf8hpValveBody"
+          },
+          {
+            "label": "Judder or binding from xDrive transfer case",
+            "diagnosisKey": "xDriveTransfer"
+          },
+          {
+            "label": "Front-end vibration or pulley wobble at idle",
+            "diagnosisKey": "crankPulley"
+          }
+        ]
+      },
+      {
+        "id": "leaks",
+        "icon": "drop",
+        "label": "Leaks, Smoke & Emissions",
+        "description": "Oil smell, soot, emissions issues",
+        "question": "Pick the leak or emissions symptom you are chasing.",
+        "answers": [
+          {
+            "label": "Oil smell and seepage around the rocker cover",
+            "diagnosisKey": "valveCoverGasket"
+          },
+          {
+            "label": "Oil leak from front upper housing area",
+            "diagnosisKey": "oilFilterHousing"
+          },
+          {
+            "label": "Frequent DPF regens, EGR restriction, soot load",
+            "diagnosisKey": "dpfEgrClogging"
+          },
+          {
+            "label": "Blue smoke linked to worn valve stem seals",
+            "diagnosisKey": "valveStemSeals"
+          }
+        ]
+      },
+      {
+        "id": "control",
+        "icon": "bolt",
+        "label": "Steering & Control Systems",
+        "description": "Warning lights or unclear faults",
+        "question": "What system is closest to the problem?",
+        "answers": [
+          {
+            "label": "Active steering warning, inconsistent assist, rack behavior",
+            "diagnosisKey": "activeSteering"
+          },
+          {
+            "label": "Not sure, or there are multiple symptoms at once",
+            "diagnosisKey": "unknown"
+          }
+        ]
+      }
+    ],
+    "diagnoses": [
+      {
+        "key": "timingChain",
+        "shortcutLabel": "Timing Chain",
+        "icon": "disc",
+        "severity": "catastrophic",
+        "headline": "Timing Chain Failure Risk",
+        "summary": "Rear timing-chain wear that can move from rattle to total engine damage quickly on affected BMW diesels.",
+        "engineCodes": [
+          "N47D20C",
+          "N57D30",
+          "B57D30"
+        ],
+        "evidenceLabel": "EM-VERIFIED high-risk diesel failure path",
+        "repairCost": {
+          "low": 1800,
+          "high": 3200
+        },
+        "replacementBase": {
+          "low": 3200,
+          "high": 5500
+        },
+        "dealerMultiplier": 1.42,
+        "chassis": [
+          {
+            "code": "E90",
+            "model": "3 Series",
+            "years": "2005-2012"
+          },
+          {
+            "code": "F30",
+            "model": "3 Series",
+            "years": "2012-2018"
+          },
+          {
+            "code": "F10",
+            "model": "5 Series",
+            "years": "2010-2017"
+          },
+          {
+            "code": "F25",
+            "model": "X3",
+            "years": "2010-2017"
+          }
+        ],
+        "oemParts": [
+          {
+            "label": "Timing chain kit",
+            "part": "11318572503 / 11318570649"
+          },
+          {
+            "label": "Guide rail set",
+            "part": "11317797899"
+          },
+          {
+            "label": "Tensioner",
+            "part": "11317797897"
+          }
+        ],
+        "overrideCopy": {
+          "headline": "Do not keep driving on a chain-rattle BMW",
+          "body": "If the chain slips, the engine can move from repairable noise to full replacement territory in one event.",
+          "actions": [
+            "Avoid restart attempts if the engine has already cut out.",
+            "Arrange recovery instead of driving it to a garage.",
+            "Inspect chain condition before pricing the rest of the car."
+          ]
+        },
+        "nextSteps": [
+          "Confirm whether the noise is rear-of-engine chain rattle, not front accessory noise.",
+          "Get a specialist to inspect chain stretch before authorising a replacement engine.",
+          "Use car value against the replacement range before committing."
+        ]
+      },
+      {
+        "key": "egrCoolerFireRisk",
+        "shortcutLabel": "EGR Cooler Fire Risk",
+        "icon": "flame",
+        "severity": "catastrophic",
+        "headline": "EGR Cooler Fire-Risk Fault",
+        "summary": "Cooler leakage and thermal failure risk on affected diesel BMWs where coolant loss and intake contamination overlap.",
+        "engineCodes": [
+          "N47D20C",
+          "B47D20",
+          "N57D30"
+        ],
+        "evidenceLabel": "Safety-critical diesel cooling and emissions path",
+        "repairCost": {
+          "low": 950,
+          "high": 1850
+        },
+        "replacementBase": {
+          "low": 2800,
+          "high": 4600
+        },
+        "dealerMultiplier": 1.38,
+        "chassis": [
+          {
+            "code": "F30",
+            "model": "3 Series",
+            "years": "2012-2019"
+          },
+          {
+            "code": "F15",
+            "model": "X5",
+            "years": "2013-2018"
+          },
+          {
+            "code": "G30",
+            "model": "5 Series",
+            "years": "2017-2023"
+          }
+        ],
+        "oemParts": [
+          {
+            "label": "EGR cooler assembly",
+            "part": "11718570087"
+          },
+          {
+            "label": "Cooler gasket set",
+            "part": "11717810871"
+          }
+        ],
+        "overrideCopy": {
+          "headline": "Fire-risk cooling fault: recover the car",
+          "body": "This is one of the few BMW diesel faults where continued driving is a safety decision, not just a cost decision.",
+          "actions": [
+            "Do not continue driving if there is smoke, coolant smell, or heat warning overlap.",
+            "Check campaign history and cooler revision with a BMW specialist.",
+            "Inspect for secondary intake contamination before clearing fault codes."
+          ]
+        },
+        "nextSteps": [
+          "Check whether the car has documented cooler replacement history.",
+          "Inspect intake tract and manifold contamination before sign-off.",
+          "If overheating happened, compare repair total with engine risk exposure."
+        ]
+      },
+      {
+        "key": "coolantExpansion",
+        "shortcutLabel": "Coolant Loss / Expansion Tank",
+        "icon": "thermometer",
+        "severity": "immediate",
+        "headline": "Cooling-System Pressure or Expansion Fault",
+        "summary": "Coolant loss, pressure spikes, or expansion-tank weakness that can escalate into overheating and head damage if ignored.",
+        "engineCodes": [
+          "B58B30",
+          "N55B30",
+          "B47D20"
+        ],
+        "evidenceLabel": "Immediate cooling failure path",
+        "repairCost": {
+          "low": 280,
+          "high": 950
+        },
+        "replacementBase": {
+          "low": 2600,
+          "high": 5200
+        },
+        "dealerMultiplier": 1.34,
+        "chassis": [
+          {
+            "code": "G20",
+            "model": "3 Series",
+            "years": "2019-2026"
+          },
+          {
+            "code": "G30",
+            "model": "5 Series",
+            "years": "2017-2026"
+          },
+          {
+            "code": "G05",
+            "model": "X5",
+            "years": "2018-2026"
+          }
+        ],
+        "oemParts": [
+          {
+            "label": "Expansion tank",
+            "part": "17138621092"
+          },
+          {
+            "label": "Pressure cap",
+            "part": "17117639020"
+          },
+          {
+            "label": "Coolant return line",
+            "part": "17129845173"
+          }
+        ],
+        "overrideCopy": {
+          "headline": "Stop before overheating turns into engine damage",
+          "body": "A cooling fault caught early is a repair bill. Continued heat cycling can push the car into replacement maths.",
+          "actions": [
+            "Do not keep topping up and driving blind.",
+            "Pressure-test the system before replacing random parts.",
+            "If temperature has spiked, inspect for secondary head-gasket or block damage."
+          ]
+        },
+        "nextSteps": [
+          "Find whether the leak is the tank, cap, line, or internal pressure issue.",
+          "If the car overheated, widen the inspection before approving parts.",
+          "Use the verdict below if replacement costs are now in play."
+        ]
+      },
+      {
+        "key": "valveStemSeals",
+        "shortcutLabel": "Valve Stem Seals",
+        "icon": "smoke",
+        "severity": "monitor",
+        "headline": "Valve Stem Seal Wear",
+        "summary": "Blue smoke after idling or on overrun, usually on older BMW petrol engines where oil control has deteriorated.",
+        "engineCodes": [
+          "N63B44",
+          "N62B48",
+          "N52B30"
+        ],
+        "evidenceLabel": "Oil-consumption diagnosis path",
+        "repairCost": {
+          "low": 1800,
+          "high": 3200
+        },
+        "replacementBase": {
+          "low": 4200,
+          "high": 7600
+        },
+        "dealerMultiplier": 1.36,
+        "chassis": [
+          {
+            "code": "E60",
+            "model": "5 Series",
+            "years": "2003-2010"
+          },
+          {
+            "code": "F10",
+            "model": "5 Series",
+            "years": "2010-2017"
+          },
+          {
+            "code": "E70",
+            "model": "X5",
+            "years": "2007-2013"
+          }
+        ],
+        "oemParts": [
+          {
+            "label": "Valve stem seal set",
+            "part": "11340029751"
+          },
+          {
+            "label": "Valve cover hardware kit",
+            "part": "11127513194"
+          }
+        ],
+        "nextSteps": [
+          "Confirm smoke on overrun versus turbo or PCV-related smoke.",
+          "Check compression before choosing top-end repair over replacement.",
+          "Compare oil-consumption severity against the car's value and intended ownership horizon."
+        ]
+      },
+      {
+        "key": "hpfp",
+        "shortcutLabel": "HPFP Failure",
+        "icon": "fuel",
+        "severity": "immediate",
+        "headline": "High-Pressure Fuel Pump Failure",
+        "summary": "Long crank, rail-pressure faults, or sudden power loss where a failing HPFP can strand the car or contaminate the system.",
+        "engineCodes": [
+          "N54B30",
+          "N55B30",
+          "B58B30"
+        ],
+        "evidenceLabel": "Immediate fuel-system diagnosis path",
+        "repairCost": {
+          "low": 650,
+          "high": 1450
+        },
+        "replacementBase": {
+          "low": 3000,
+          "high": 6200
+        },
+        "dealerMultiplier": 1.33,
+        "chassis": [
+          {
+            "code": "E92",
+            "model": "3 Series Coupe",
+            "years": "2006-2013"
+          },
+          {
+            "code": "F30",
+            "model": "3 Series",
+            "years": "2012-2018"
+          },
+          {
+            "code": "G20",
+            "model": "3 Series",
+            "years": "2019-2026"
+          }
+        ],
+        "oemParts": [
+          {
+            "label": "HPFP assembly",
+            "part": "13517616170"
+          },
+          {
+            "label": "Fuel rail pressure sensor",
+            "part": "13537614317"
+          }
+        ],
+        "overrideCopy": {
+          "headline": "Fuel pressure fault: avoid a roadside failure",
+          "body": "HPFP failure can look like a simple power issue until the car no longer starts or starves itself under load.",
+          "actions": [
+            "Limit driving if the car is dropping pressure or stalling.",
+            "Inspect fuel contamination before fitting a replacement pump.",
+            "Do not assume injectors are safe until rail health is checked."
+          ]
+        },
+        "nextSteps": [
+          "Confirm rail-pressure codes and cold-start behavior.",
+          "Inspect low-pressure supply side before replacing the HPFP.",
+          "If contamination is present, widen the quote to protect injectors."
+        ]
+      },
+      {
+        "key": "zf8hpMechatronic",
+        "shortcutLabel": "ZF8HP Mechatronic",
         "icon": "gear",
-        "title": "BMW-Specific Knowledge",
-        "text": "We use exact BMW terminology (N47, B58, VANOS, Valvetronic) and OEM part numbers."
+        "severity": "monitor",
+        "headline": "ZF8HP Mechatronic Fault",
+        "summary": "Shift logic, engagement, or gearbox warning behavior linked to mechatronic control rather than total transmission failure.",
+        "engineCodes": [
+          "B58B30",
+          "N57D30",
+          "B47D20"
+        ],
+        "evidenceLabel": "Gearbox control diagnosis path",
+        "repairCost": {
+          "low": 1100,
+          "high": 2200
+        },
+        "replacementBase": {
+          "low": 3400,
+          "high": 6200
+        },
+        "dealerMultiplier": 1.28,
+        "chassis": [
+          {
+            "code": "F30",
+            "model": "3 Series",
+            "years": "2012-2018"
+          },
+          {
+            "code": "G30",
+            "model": "5 Series",
+            "years": "2017-2026"
+          },
+          {
+            "code": "F15",
+            "model": "X5",
+            "years": "2013-2018"
+          }
+        ],
+        "oemParts": [
+          {
+            "label": "Mechatronic sleeve",
+            "part": "24347588725"
+          },
+          {
+            "label": "Bridge seal adapter",
+            "part": "24347571211"
+          }
+        ],
+        "nextSteps": [
+          "Differentiate control fault from clutch-pack wear before replacing the unit.",
+          "Fluid history matters; get gearbox temperature and pressure data.",
+          "If the box is otherwise healthy, this often stays in repair territory."
+        ]
+      },
+      {
+        "key": "zf8hpValveBody",
+        "shortcutLabel": "ZF8HP Valve Body",
+        "icon": "refresh",
+        "severity": "monitor",
+        "headline": "ZF8HP Valve-Body Wear",
+        "summary": "Flare, lazy engagement, or shift inconsistency caused by valve-body wear rather than complete gearbox failure.",
+        "engineCodes": [
+          "N57D30",
+          "B58B30",
+          "B47D20"
+        ],
+        "evidenceLabel": "Transmission hydraulic diagnosis path",
+        "repairCost": {
+          "low": 950,
+          "high": 1950
+        },
+        "replacementBase": {
+          "low": 3200,
+          "high": 5900
+        },
+        "dealerMultiplier": 1.27,
+        "chassis": [
+          {
+            "code": "F10",
+            "model": "5 Series",
+            "years": "2010-2017"
+          },
+          {
+            "code": "F25",
+            "model": "X3",
+            "years": "2010-2017"
+          },
+          {
+            "code": "G05",
+            "model": "X5",
+            "years": "2018-2026"
+          }
+        ],
+        "oemParts": [
+          {
+            "label": "Valve body service kit",
+            "part": "ZF8HP-VB-KIT"
+          },
+          {
+            "label": "Sump and filter pan",
+            "part": "24118612901"
+          }
+        ],
+        "nextSteps": [
+          "Confirm flare or delay is hydraulic, not software adaptation alone.",
+          "Review fluid condition and prior servicing before escalating to replacement.",
+          "If clutch damage is absent, repair usually beats replacement on value."
+        ]
+      },
+      {
+        "key": "xDriveTransfer",
+        "shortcutLabel": "xDrive Transfer Case",
+        "icon": "car",
+        "severity": "monitor",
+        "headline": "xDrive Transfer Case Wear",
+        "summary": "Binding, judder, or drivetrain fault behavior tied to transfer-case wear or adaptation issues.",
+        "engineCodes": [
+          "N57D30",
+          "B47D20",
+          "B58B30"
+        ],
+        "evidenceLabel": "AWD drivetrain diagnosis path",
+        "repairCost": {
+          "low": 650,
+          "high": 1600
+        },
+        "replacementBase": {
+          "low": 2400,
+          "high": 4200
+        },
+        "dealerMultiplier": 1.25,
+        "chassis": [
+          {
+            "code": "F25",
+            "model": "X3",
+            "years": "2010-2017"
+          },
+          {
+            "code": "F15",
+            "model": "X5",
+            "years": "2013-2018"
+          },
+          {
+            "code": "G01",
+            "model": "X3",
+            "years": "2017-2026"
+          }
+        ],
+        "oemParts": [
+          {
+            "label": "Transfer case actuator",
+            "part": "27107643753"
+          },
+          {
+            "label": "Fluid service kit",
+            "part": "83222409710"
+          }
+        ],
+        "nextSteps": [
+          "Check tyre circumference mismatch before condemning the transfer case.",
+          "Reset adaptations only after mechanical condition is checked.",
+          "If gears are damaged, compare replacement against car value before proceeding."
+        ]
+      },
+      {
+        "key": "dpfEgrClogging",
+        "shortcutLabel": "DPF / EGR Clogging",
+        "icon": "exhaust",
+        "severity": "monitor",
+        "headline": "DPF or EGR Restriction",
+        "summary": "Soot load, repeat regenerations, and intake contamination that can drag performance down and trigger limp mode.",
+        "engineCodes": [
+          "N47D20C",
+          "B47D20",
+          "N57D30"
+        ],
+        "evidenceLabel": "Diesel emissions diagnosis path",
+        "repairCost": {
+          "low": 450,
+          "high": 1750
+        },
+        "replacementBase": {
+          "low": 2600,
+          "high": 4800
+        },
+        "dealerMultiplier": 1.24,
+        "chassis": [
+          {
+            "code": "E90",
+            "model": "3 Series",
+            "years": "2005-2012"
+          },
+          {
+            "code": "F30",
+            "model": "3 Series",
+            "years": "2012-2019"
+          },
+          {
+            "code": "G30",
+            "model": "5 Series",
+            "years": "2017-2026"
+          }
+        ],
+        "oemParts": [
+          {
+            "label": "DPF pressure sensor",
+            "part": "13628589846"
+          },
+          {
+            "label": "EGR valve",
+            "part": "11717823210"
+          }
+        ],
+        "nextSteps": [
+          "Confirm soot load and differential pressure before replacing emissions hardware.",
+          "Short-trip usage and thermostat health usually matter here.",
+          "If restriction has already overheated supporting parts, recost before deciding."
+        ]
+      },
+      {
+        "key": "activeSteering",
+        "shortcutLabel": "Active Steering",
+        "icon": "steering",
+        "severity": "monitor",
+        "headline": "Active Steering System Fault",
+        "summary": "Warning lights, inconsistent assist, or steering behavior caused by active steering electronics or rack-side issues.",
+        "engineCodes": [
+          "N52B30",
+          "N54B30",
+          "N57D30"
+        ],
+        "evidenceLabel": "Steering control diagnosis path",
+        "repairCost": {
+          "low": 750,
+          "high": 1900
+        },
+        "replacementBase": {
+          "low": 2600,
+          "high": 4900
+        },
+        "dealerMultiplier": 1.3,
+        "chassis": [
+          {
+            "code": "E60",
+            "model": "5 Series",
+            "years": "2003-2010"
+          },
+          {
+            "code": "E63",
+            "model": "6 Series",
+            "years": "2004-2010"
+          },
+          {
+            "code": "E70",
+            "model": "X5",
+            "years": "2007-2013"
+          }
+        ],
+        "oemParts": [
+          {
+            "label": "Active steering sensor set",
+            "part": "32106795515"
+          },
+          {
+            "label": "Rack control unit",
+            "part": "32106788654"
+          }
+        ],
+        "nextSteps": [
+          "Confirm whether the fault is electronic, sensor-based, or rack mechanical wear.",
+          "Battery health and coding state can distort diagnosis here.",
+          "High repair cost on low-value cars can move this into exit territory."
+        ]
+      },
+      {
+        "key": "crankPulley",
+        "shortcutLabel": "Crank Pulley",
+        "icon": "warning",
+        "severity": "monitor",
+        "headline": "Crank Pulley / Harmonic Balancer Wear",
+        "summary": "Idle wobble, accessory vibration, or belt-path movement caused by a deteriorating crank pulley.",
+        "engineCodes": [
+          "N47D20C",
+          "N57D30",
+          "M57D30"
+        ],
+        "evidenceLabel": "Accessory-drive diagnosis path",
+        "repairCost": {
+          "low": 380,
+          "high": 820
+        },
+        "replacementBase": {
+          "low": 2500,
+          "high": 4600
+        },
+        "dealerMultiplier": 1.22,
+        "chassis": [
+          {
+            "code": "E90",
+            "model": "3 Series",
+            "years": "2005-2012"
+          },
+          {
+            "code": "F10",
+            "model": "5 Series",
+            "years": "2010-2017"
+          },
+          {
+            "code": "E70",
+            "model": "X5",
+            "years": "2007-2013"
+          }
+        ],
+        "oemParts": [
+          {
+            "label": "Vibration damper",
+            "part": "11237823191"
+          },
+          {
+            "label": "Aux belt kit",
+            "part": "11287628658"
+          }
+        ],
+        "nextSteps": [
+          "Rule out tensioner noise before replacing the damper.",
+          "If the belt path has already failed, inspect for secondary front-end damage.",
+          "Usually a repair-first diagnosis unless the engine already overheated or lost timing."
+        ]
+      },
+      {
+        "key": "vanosSolenoids",
+        "shortcutLabel": "VANOS Solenoids",
+        "icon": "bolt",
+        "severity": "low",
+        "headline": "VANOS Solenoid Performance Fault",
+        "summary": "Response loss, timing plausibility codes, or uneven torque delivery from sticky VANOS control hardware.",
+        "engineCodes": [
+          "N52B30",
+          "N54B30",
+          "N55B30"
+        ],
+        "evidenceLabel": "Petrol timing-control diagnosis path",
+        "repairCost": {
+          "low": 180,
+          "high": 520
+        },
+        "replacementBase": {
+          "low": 2800,
+          "high": 5400
+        },
+        "dealerMultiplier": 1.2,
+        "chassis": [
+          {
+            "code": "E90",
+            "model": "3 Series",
+            "years": "2005-2012"
+          },
+          {
+            "code": "E82",
+            "model": "1 Series Coupe",
+            "years": "2007-2013"
+          },
+          {
+            "code": "F30",
+            "model": "3 Series",
+            "years": "2012-2018"
+          }
+        ],
+        "oemParts": [
+          {
+            "label": "Intake VANOS solenoid",
+            "part": "11367585425"
+          },
+          {
+            "label": "Exhaust VANOS solenoid",
+            "part": "11367593719"
+          }
+        ],
+        "nextSteps": [
+          "Check oil condition and service history first.",
+          "These faults often repair well without replacement-level spend.",
+          "If codes return after replacement, inspect timing correlation and wiring."
+        ]
+      },
+      {
+        "key": "injectorSeals",
+        "shortcutLabel": "Injector Seals",
+        "icon": "drop",
+        "severity": "monitor",
+        "headline": "Injector Seal Leakage",
+        "summary": "Misfire, blow-by smell, or smoke linked to leaking injector seats or related sealing issues.",
+        "engineCodes": [
+          "N57D30",
+          "B47D20",
+          "N55B30"
+        ],
+        "evidenceLabel": "Combustion sealing diagnosis path",
+        "repairCost": {
+          "low": 320,
+          "high": 980
+        },
+        "replacementBase": {
+          "low": 2900,
+          "high": 5600
+        },
+        "dealerMultiplier": 1.23,
+        "chassis": [
+          {
+            "code": "F10",
+            "model": "5 Series",
+            "years": "2010-2017"
+          },
+          {
+            "code": "F15",
+            "model": "X5",
+            "years": "2013-2018"
+          },
+          {
+            "code": "G30",
+            "model": "5 Series",
+            "years": "2017-2026"
+          }
+        ],
+        "oemParts": [
+          {
+            "label": "Injector sealing washer",
+            "part": "13537564751"
+          },
+          {
+            "label": "Injector clamp bolt kit",
+            "part": "13537802698"
+          }
+        ],
+        "nextSteps": [
+          "Check whether the issue is only sealing or includes injector failure.",
+          "Carbon build-up around the seat can change the labour profile fast.",
+          "If compression is healthy, repair is usually the stronger call."
+        ]
+      },
+      {
+        "key": "oilFilterHousing",
+        "shortcutLabel": "Oil Filter Housing",
+        "icon": "wrench",
+        "severity": "low",
+        "headline": "Oil Filter Housing Leak",
+        "summary": "Front-of-engine oil or coolant leak around the housing, usually repairable if caught before contamination spreads.",
+        "engineCodes": [
+          "N52B30",
+          "N55B30",
+          "B58B30"
+        ],
+        "evidenceLabel": "Common external leak diagnosis path",
+        "repairCost": {
+          "low": 260,
+          "high": 760
+        },
+        "replacementBase": {
+          "low": 3000,
+          "high": 6200
+        },
+        "dealerMultiplier": 1.18,
+        "chassis": [
+          {
+            "code": "E90",
+            "model": "3 Series",
+            "years": "2005-2012"
+          },
+          {
+            "code": "F30",
+            "model": "3 Series",
+            "years": "2012-2018"
+          },
+          {
+            "code": "G20",
+            "model": "3 Series",
+            "years": "2019-2026"
+          }
+        ],
+        "oemParts": [
+          {
+            "label": "Housing gasket",
+            "part": "11428637821"
+          },
+          {
+            "label": "Cooler gasket",
+            "part": "11428575211"
+          }
+        ],
+        "nextSteps": [
+          "Differentiate housing leak from valve cover or front cover seepage.",
+          "If coolant and oil mixed, inspect beyond the gasket before pricing.",
+          "This normally stays firmly in repair territory when caught early."
+        ]
+      },
+      {
+        "key": "valveCoverGasket",
+        "shortcutLabel": "Valve Cover Gasket",
+        "icon": "shield",
+        "severity": "low",
+        "headline": "Valve Cover Gasket Leak",
+        "summary": "Oil seepage and smell from the rocker-cover area, often annoying rather than terminal when handled early.",
+        "engineCodes": [
+          "N52B30",
+          "N55B30",
+          "B58B30"
+        ],
+        "evidenceLabel": "Common top-end leak diagnosis path",
+        "repairCost": {
+          "low": 240,
+          "high": 720
+        },
+        "replacementBase": {
+          "low": 2900,
+          "high": 6100
+        },
+        "dealerMultiplier": 1.16,
+        "chassis": [
+          {
+            "code": "E82",
+            "model": "1 Series Coupe",
+            "years": "2007-2013"
+          },
+          {
+            "code": "F30",
+            "model": "3 Series",
+            "years": "2012-2018"
+          },
+          {
+            "code": "G30",
+            "model": "5 Series",
+            "years": "2017-2026"
+          }
+        ],
+        "oemParts": [
+          {
+            "label": "Valve cover gasket set",
+            "part": "11127582245"
+          },
+          {
+            "label": "Grommet kit",
+            "part": "11127559699"
+          }
+        ],
+        "nextSteps": [
+          "Check whether the cover itself is warped before replacing only the gasket.",
+          "Repair quickly if oil is reaching ignition or exhaust-side heat.",
+          "This is usually a repair, not a replacement, diagnosis."
+        ]
+      },
+      {
+        "key": "unknown",
+        "shortcutLabel": "Not Sure / Multiple Issues",
+        "icon": "question",
+        "severity": "monitor",
+        "headline": "Mixed or Unclear BMW Fault Pattern",
+        "summary": "Your symptoms do not map cleanly to one known fault, so the safest route is specialist diagnosis before parts are priced.",
+        "engineCodes": [
+          "N47D20C",
+          "B47D20",
+          "B58B30",
+          "N57D30"
+        ],
+        "evidenceLabel": "Fallback path for overlapping symptoms",
+        "repairCost": {
+          "low": 250,
+          "high": 900
+        },
+        "replacementBase": {
+          "low": 3000,
+          "high": 5800
+        },
+        "dealerMultiplier": 1.22,
+        "chassis": [
+          {
+            "code": "BMW",
+            "model": "All BMW models",
+            "years": "specialist triage"
+          }
+        ],
+        "oemParts": [
+          {
+            "label": "Diagnostic smoke / pressure / scan time",
+            "part": "specialist inspection required"
+          }
+        ],
+        "nextSteps": [
+          "Book diagnosis before ordering parts.",
+          "Use the vehicle value and engine option below as planning numbers only.",
+          "If multiple systems are involved, widen the budget before deciding."
+        ]
+      }
+    ],
+    "whyTrust": [
+      {
+        "icon": "chart",
+        "title": "Real market-led structure",
+        "text": "This section now follows the same known-fault plus symptom-route logic described in the implementation guide."
+      },
+      {
+        "icon": "shield",
+        "title": "Safety override first",
+        "text": "Catastrophic and immediate faults interrupt the flow with dedicated warnings before value maths is shown."
+      },
+      {
+        "icon": "clipboard",
+        "title": "Decision, not just diagnosis",
+        "text": "Repair, replace, or walk-away verdicts are driven by your car value and the selected engine option."
       },
       {
         "icon": "users",
-        "title": "Vetted Specialist Network",
-        "text": "Our recommendations route you to 20+ BMW specialists who work on these engines daily."
-      },
-      {
-        "icon": "trophy",
-        "title": "Honest Verdict System",
-        "text": "We tell you when replacement isn't worth it - not every site does that."
+        "title": "Actionable next step",
+        "text": "Each result ends in two practical routes: replacement quotes or a BMW specialist."
       }
     ]
   }

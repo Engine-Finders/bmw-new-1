@@ -130,7 +130,7 @@ function MobileRows({ block, isDark }) {
               </div>
             </div>
           </div>
-          <p className={`mt-3 text-[0.92rem] leading-[1.48] ${isDark ? "text-white/78" : "text-[#07113a]"}`}>{row.description}</p>
+          <p className={`mt-3 text-[0.86rem] leading-[1.48] ${isDark ? "text-white/78" : "text-[#07113a]"}`}>{row.description}</p>
           <Link href={row.link.href} className="mt-4 inline-flex items-center gap-3 text-[0.95rem] font-bold text-[var(--color-primary)]">
             {row.link.label}
             <Icon name="arrow" className="h-5 w-5" />
@@ -143,7 +143,7 @@ function MobileRows({ block, isDark }) {
 
 function FailureTable({ block, isDark }) {
   return (
-    <div className={`border-y md:overflow-hidden md:rounded-lg md:border md:shadow-[0_12px_32px_rgba(10,26,43,0.06)] ${isDark ? "border-[#223343] bg-[rgba(10,21,32,0.92)]" : "border-[#dfe5ed] bg-white"}`}>
+    <div className={`border-y md:overflow-hidden md:rounded-md md:border md:shadow-[0_12px_32px_rgba(10,26,43,0.06)] ${isDark ? "border-[#223343] bg-[rgba(10,21,32,0.92)]" : "border-[#dfe5ed] bg-white"}`}>
       <TableHeader block={block} isDark={isDark} />
       <DesktopRows block={block} isDark={isDark} />
       <MobileRows block={block} isDark={isDark} />
@@ -153,9 +153,9 @@ function FailureTable({ block, isDark }) {
 
 function UrgencyKey({ items, isDark }) {
   return (
-    <div className={`border-y px-4 py-4 md:rounded-lg md:border md:px-8 md:shadow-[0_12px_32px_rgba(10,26,43,0.04)] ${isDark ? "border-[#223343] bg-[rgba(10,21,32,0.92)]" : "border-[#dfe5ed] bg-white"}`}>
+    <div className={`border-y px-4 py-4 md:rounded-md md:border md:px-8 md:shadow-[0_12px_32px_rgba(10,26,43,0.04)] ${isDark ? "border-[#223343] bg-[rgba(10,21,32,0.92)]" : "border-[#dfe5ed] bg-white"}`}>
       <div className="flex flex-col gap-3 md:flex-row md:items-center md:gap-8">
-        <p className={`text-[0.95rem] font-bold uppercase md:mr-2 ${isDark ? "text-white" : "text-[#071827]"}`}>Urgency Key:</p>
+        <p className={`text-[0.9rem] font-bold uppercase md:mr-2 ${isDark ? "text-white" : "text-[#071827]"}`}>Urgency Key:</p>
         {items.map((item) => (
           <div key={item.label} className={`flex items-center gap-3 text-[0.88rem] ${isDark ? "text-white/84" : "text-[#071827]"}`}>
             <span className={`h-4 w-4 shrink-0 rounded-full ${(severityConfig[item.type] || severityConfig.monitor).dot}`} />
@@ -196,7 +196,7 @@ export default function HomeSec9({ data }) {
           <div className="mt-4">
             <MStripe />
           </div>
-          <p className={`mt-5 max-w-[665px] text-[1.06rem] leading-[1.55] md:text-[1rem] ${isDark ? "text-white/78" : "text-[#07113a] md:text-[#171f2a]"}`}>
+          <p className={`mt-5 max-w-[665px] text-[0.92rem] leading-[1.55] md:text-[1rem] ${isDark ? "text-white/78" : "text-[#07113a] md:text-[#171f2a]"}`}>
             {data.subHeadline}
           </p>
         </div>

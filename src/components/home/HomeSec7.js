@@ -135,7 +135,7 @@ function EngineRow({ row, isDark }) {
 
 function TrustStrip({ items, isDark }) {
   return (
-    <ul className={`grid grid-cols-4 overflow-hidden rounded-lg border shadow-[0_16px_36px_rgba(10,26,43,0.08)] md:hidden ${isDark ? "border-[#223a51] bg-[rgba(7,23,36,0.9)]" : "border-[#dfe5ed] bg-white"}`}>
+    <ul className={`grid grid-cols-4 overflow-hidden rounded-md border shadow-[0_16px_36px_rgba(10,26,43,0.08)] md:hidden ${isDark ? "border-[#223a51] bg-[rgba(7,23,36,0.9)]" : "border-[#dfe5ed] bg-white"}`}>
       {items.map((item, index) => {
         const text = cleanText(item.label);
         const parts = text.match(/^(Powered by|20\+ vetted|OEM part|Part of)\s*(.*)$/);
@@ -156,7 +156,7 @@ function TrustStrip({ items, isDark }) {
 
 function EngineTable({ data, isDark }) {
   return (
-    <div className={`overflow-hidden rounded-lg border shadow-[0_16px_36px_rgba(10,26,43,0.08)] ${isDark ? "border-[#223a51] bg-[rgba(7,23,36,0.9)]" : "border-[#dfe5ed] bg-white"}`}>
+    <div className={`overflow-hidden rounded-md border shadow-[0_16px_36px_rgba(10,26,43,0.08)] ${isDark ? "border-[#223a51] bg-[rgba(7,23,36,0.9)]" : "border-[#dfe5ed] bg-white"}`}>
       <div className={`grid grid-cols-[minmax(76px,0.95fr)_minmax(106px,1.22fr)_minmax(116px,1.32fr)_40px] border-b px-3 py-3.5 text-[0.68rem] font-bold uppercase text-[var(--color-primary)] md:grid-cols-[minmax(170px,1.05fr)_minmax(130px,0.78fr)_minmax(140px,0.82fr)_minmax(170px,1.05fr)_minmax(390px,2.2fr)] md:px-9 md:py-3.5 md:text-[0.82rem] ${isDark ? "border-[#223a51]" : "border-[#e3e8ef]"}`}>
         <span>{data.columns[0]}</span>
         <span className={`border-l pl-4 md:border-l-0 md:pl-0 ${isDark ? "border-[#223a51]" : "border-[#dfe7f1]"}`}>
@@ -177,8 +177,8 @@ function EngineTable({ data, isDark }) {
 
 function LegendCard({ legend, isDark }) {
   return (
-    <Link href={legend.href} className={`flex items-center gap-5 rounded-lg border p-5 shadow-[0_16px_36px_rgba(10,26,43,0.08)] md:hidden ${isDark ? "border-[#223a51] bg-[rgba(7,23,36,0.9)] text-white" : "border-[#dfe5ed] bg-white text-[#071827]"}`}>
-      <span className="flex h-16 w-16 shrink-0 items-center justify-center rounded-xl bg-[var(--color-primary)] text-white shadow-[0_12px_26px_rgba(7,95,216,0.28)]">
+    <Link href={legend.href} className={`flex items-center gap-5 rounded-md border p-5 shadow-[0_16px_36px_rgba(10,26,43,0.08)] md:hidden ${isDark ? "border-[#223a51] bg-[rgba(7,23,36,0.9)] text-white" : "border-[#dfe5ed] bg-white text-[#071827]"}`}>
+      <span className="flex h-16 w-16 shrink-0 items-center justify-center rounded-md bg-[var(--color-primary)] text-white shadow-[0_12px_26px_rgba(7,95,216,0.28)]">
         <Icon name="bulb" className="h-9 w-9" />
       </span>
       <span className="min-w-0 flex-1">
@@ -213,7 +213,7 @@ export default function HomeSec7({ data }) {
           <div className="mt-4">
             <MStripe />
           </div>
-          <p className={`mt-5 max-w-[610px] text-[1.05rem] leading-[1.55] md:text-[1.02rem] ${isDark ? "text-white/80" : "text-[#27384a]"}`}>{cleanText(data.subHeadline)}</p>
+          <p className={`mt-5 max-w-[610px] text-[0.94rem] leading-[1.55] md:text-[1.02rem] ${isDark ? "text-white/80" : "text-[#27384a]"}`}>{cleanText(data.subHeadline)}</p>
         </div>
 
         <div className="mt-8 md:hidden">
