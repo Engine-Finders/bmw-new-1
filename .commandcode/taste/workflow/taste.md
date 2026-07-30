@@ -1,0 +1,7 @@
+# workflow
+- After completing a cross-cutting/infrastructure change, document the pattern in a standalone reference markdown file (e.g., `canonical.md`) with step-by-step instructions so it can be replicated across cloned/similar projects. Write these docs to be AI-consumable — brief, structured, with code snippets the AI can follow. Confidence: 0.85
+- When writing reusable reference documentation intended for other projects, use generic placeholder values (e.g., `yourdomain.com` instead of the current project's domain) so the documentation is portable and immediately applicable without find-and-replace. Confidence: 0.80
+- After bulk search-and-replace operations (e.g., domain renames, string replacements across many files), verify with a grep count that zero old/stale references remain before declaring the change complete. Confidence: 0.80
+- Keep registry pages.json files in sync with corresponding data directories — each JSON file in src/data/*/ becomes an entry (slug + dataFile = filename without extension, plus type field when applicable). Confidence: 0.70
+- Include a \"type\" field in all registry entries indicating the data category: \"models\", \"generations\", \"variants\", or \"engines\". Confidence: 0.70
+- When making a cross-cutting/infrastructure change (e.g., SEO metadata, canonicals), apply it comprehensively to all affected pages/routes at once rather than incrementally one page at a time. Confidence: 0.80
