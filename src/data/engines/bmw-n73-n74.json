@@ -3,20 +3,20 @@
     "slug": "n73-n74",
     "title": "BMW N73/N74 Engine — Specs, Reliability & Replacement Cost",
     "description": "“The N73/N74 V12 is a magnificent engine – but running costs are eye‑watering. Get honest UK specialist quotes and V12‑specific advice today.”",
-    "canonical": "https://bmwengines.uk/engines/n73-n74/",
+    "canonical": "https://bmwengines.uk/engine/n73-n74/",
     "openGraph": {
       "title": "BMW N73/N74 Engine — Specs, Reliability & Replacement Cost",
       "description": "The N73/N74 V12 is a magnificent engine – but running costs are eye‑watering. Get honest UK specialist quotes and V12‑specific advice today.",
       "type": "website",
-      "url": "https://bmwengines.uk/engines/n73-n74/",
-      "image": "https://bmwengines.uk/images/bmw/engines/n73-n74.jpg",
+      "url": "https://bmwengines.uk/engine/n73-n74/",
+      "image": "https://bmwengines.uk/images/bmw/engine/n73-n74.jpg",
       "siteName": "bmwengines.uk"
     },
     "twitter": {
       "card": "summary_large_image",
       "title": "BMW N73/N74 Engine — Specs, Reliability & Replacement Cost",
       "description": "The N73/N74 V12 is a magnificent engine – but running costs are eye‑watering. Get honest UK specialist quotes and V12‑specific advice today.",
-      "image": "https://bmwengines.uk/images/bmw/engines/n73-n74.jpg"
+      "image": "https://bmwengines.uk/images/bmw/engine/n73-n74.jpg"
     },
     "jsonLd": {
       "@context": "https://schema.org",
@@ -34,13 +34,13 @@
               "@type": "ListItem",
               "position": 2,
               "name": "Engines",
-              "item": "https://bmwengines.uk/engines/"
+              "item": "https://bmwengines.uk/engine/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "N73/N74",
-              "item": "https://bmwengines.uk/engines/n73-n74/"
+              "item": "https://bmwengines.uk/engine/n73-n74/"
             }
           ]
         },
@@ -180,7 +180,7 @@
         {
           "@type": "WebPage",
           "name": "BMW N73/N74 Engine — Specs, Reliability & Replacement Cost",
-          "url": "https://bmwengines.uk/engines/n73-n74/",
+          "url": "https://bmwengines.uk/engine/n73-n74/",
           "author": {
             "@type": "Organization",
             "name": "bmwengines.uk Editorial Team"

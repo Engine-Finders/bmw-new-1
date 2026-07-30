@@ -3,20 +3,20 @@
     "slug": "m20",
     "title": "BMW M20 Engine — Reliability & Replacement Cost",
     "description": "The M20 straight‑six is durable but timing belt changes are critical — backed by real UK enquiries [ESTIMATED]. Compare quotes from vetted specialists today.",
-    "canonical": "https://bmwengines.uk/engines/m20/",
+    "canonical": "https://bmwengines.uk/engine/m20/",
     "openGraph": {
       "title": "BMW M20 Engine — Reliability & Replacement Cost",
       "description": "The M20 straight‑six is durable but timing belt changes are critical — backed by real UK enquiries [ESTIMATED]. Compare quotes from vetted specialists today.",
       "type": "website",
-      "url": "https://bmwengines.uk/engines/m20/",
-      "image": "https://bmwengines.uk/images/bmw/engines/m20.jpg",
+      "url": "https://bmwengines.uk/engine/m20/",
+      "image": "https://bmwengines.uk/images/bmw/engine/m20.jpg",
       "siteName": "bmwengines.uk"
     },
     "twitter": {
       "card": "summary_large_image",
       "title": "BMW M20 Engine — Reliability & Replacement Cost",
       "description": "The M20 straight‑six is durable but timing belt changes are critical — backed by real UK enquiries [ESTIMATED]. Compare quotes from vetted specialists today.",
-      "image": "https://bmwengines.uk/images/bmw/engines/m20.jpg"
+      "image": "https://bmwengines.uk/images/bmw/engine/m20.jpg"
     },
     "jsonLd": {
       "@context": "https://schema.org",
@@ -34,13 +34,13 @@
               "@type": "ListItem",
               "position": 2,
               "name": "Engines",
-              "item": "https://bmwengines.uk/engines/"
+              "item": "https://bmwengines.uk/engine/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "M20",
-              "item": "https://bmwengines.uk/engines/m20/"
+              "item": "https://bmwengines.uk/engine/m20/"
             }
           ]
         },
@@ -186,7 +186,7 @@
         {
           "@type": "WebPage",
           "name": "BMW M20 Engine — Reliability & Replacement Cost",
-          "url": "https://bmwengines.uk/engines/m20/",
+          "url": "https://bmwengines.uk/engine/m20/",
           "author": {
             "@type": "Organization",
             "name": "bmwengines.uk Editorial Team"

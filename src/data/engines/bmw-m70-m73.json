@@ -3,20 +3,20 @@
     "slug": "m70-m73",
     "title": "BMW M70 / M73 Engine — Reliability & Replacement Cost",
     "description": "The M70/M73 V12 is refined but complex and costly to maintain — backed by real UK enquiries [ESTIMATED]. Compare quotes from vetted specialists today.",
-    "canonical": "https://bmwengines.uk/engines/m70-m73/",
+    "canonical": "https://bmwengines.uk/engine/m70-m73/",
     "openGraph": {
       "title": "BMW M70 / M73 Engine — Reliability & Replacement Cost",
       "description": "The M70/M73 V12 is refined but complex and costly to maintain — backed by real UK enquiries [ESTIMATED]. Compare quotes from vetted specialists today.",
       "type": "website",
-      "url": "https://bmwengines.uk/engines/m70-m73/",
-      "image": "https://bmwengines.uk/images/bmw/engines/m70-m73.jpg",
+      "url": "https://bmwengines.uk/engine/m70-m73/",
+      "image": "https://bmwengines.uk/images/bmw/engine/m70-m73.jpg",
       "siteName": "bmwengines.uk"
     },
     "twitter": {
       "card": "summary_large_image",
       "title": "BMW M70 / M73 Engine — Reliability & Replacement Cost",
       "description": "The M70/M73 V12 is refined but complex and costly to maintain — backed by real UK enquiries [ESTIMATED]. Compare quotes from vetted specialists today.",
-      "image": "https://bmwengines.uk/images/bmw/engines/m70-m73.jpg"
+      "image": "https://bmwengines.uk/images/bmw/engine/m70-m73.jpg"
     },
     "jsonLd": {
       "@context": "https://schema.org",
@@ -34,13 +34,13 @@
               "@type": "ListItem",
               "position": 2,
               "name": "Engines",
-              "item": "https://bmwengines.uk/engines/"
+              "item": "https://bmwengines.uk/engine/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "M70 / M73",
-              "item": "https://bmwengines.uk/engines/m70-m73/"
+              "item": "https://bmwengines.uk/engine/m70-m73/"
             }
           ]
         },
@@ -174,7 +174,7 @@
         {
           "@type": "WebPage",
           "name": "BMW M70 / M73 Engine — Reliability & Replacement Cost",
-          "url": "https://bmwengines.uk/engines/m70-m73/",
+          "url": "https://bmwengines.uk/engine/m70-m73/",
           "author": {
             "@type": "Organization",
             "name": "bmwengines.uk Editorial Team"

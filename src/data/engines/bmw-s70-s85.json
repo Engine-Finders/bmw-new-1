@@ -3,20 +3,20 @@
     "slug": "s70-s85",
     "title": "BMW S70/S85 Engine — Specs, Reliability & Replacement Cost",
     "description": "The S70/S85 V12 and V10 M engines are sensational and iconic — but rod bearing wear is the defining risk — rated from 400+ real UK enquiries. See real replacement costs and compare specialist quotes.",
-    "canonical": "https://bmwengines.uk/engines/s70-s85/",
+    "canonical": "https://bmwengines.uk/engine/s70-s85/",
     "openGraph": {
       "title": "BMW S70/S85 Engine — Specs, Reliability & Replacement Cost",
       "description": "The S70/S85 V12 and V10 M engines are sensational and iconic — but rod bearing wear is the defining risk — rated from 400+ real UK enquiries. See real replacement costs and compare specialist quotes.",
       "type": "website",
-      "url": "https://bmwengines.uk/engines/s70-s85/",
-      "image": "https://bmwengines.uk/images/bmw/engines/s70-s85.jpg",
+      "url": "https://bmwengines.uk/engine/s70-s85/",
+      "image": "https://bmwengines.uk/images/bmw/engine/s70-s85.jpg",
       "siteName": "bmwengines.uk"
     },
     "twitter": {
       "card": "summary_large_image",
       "title": "BMW S70/S85 Engine — Specs, Reliability & Replacement Cost",
       "description": "The S70/S85 V12 and V10 M engines are sensational and iconic — but rod bearing wear is the defining risk — rated from 400+ real UK enquiries. See real replacement costs and compare specialist quotes.",
-      "image": "https://bmwengines.uk/images/bmw/engines/s70-s85.jpg"
+      "image": "https://bmwengines.uk/images/bmw/engine/s70-s85.jpg"
     },
     "jsonLd": {
       "@context": "https://schema.org",
@@ -34,13 +34,13 @@
               "@type": "ListItem",
               "position": 2,
               "name": "Engines",
-              "item": "https://bmwengines.uk/engines/"
+              "item": "https://bmwengines.uk/engine/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "S70/S85",
-              "item": "https://bmwengines.uk/engines/s70-s85/"
+              "item": "https://bmwengines.uk/engine/s70-s85/"
             }
           ]
         },
@@ -168,7 +168,7 @@
         {
           "@type": "WebPage",
           "name": "BMW S70/S85 Engine — Specs, Reliability & Replacement Cost",
-          "url": "https://bmwengines.uk/engines/s70-s85/",
+          "url": "https://bmwengines.uk/engine/s70-s85/",
           "author": {
             "@type": "Organization",
             "name": "bmwengines.uk Editorial Team"

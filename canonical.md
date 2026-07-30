@@ -8,13 +8,13 @@ In `src/app/layout.js`, add `metadataBase` to the static metadata export:
 
 ```js
 export const metadata = {
-  metadataBase: new URL("https://bmwengines.uk"),
+  metadataBase: new URL("https://jaguarengines.uk/"),
   title: "...",
   description: "...",
 };
 ```
 
-This gives Next.js the base URL so relative canonicals (`/`) become absolute (`https://bmwengines.uk/`).
+This gives Next.js the base URL so relative canonicals (`/`) become absolute (`https://jaguarengines.uk/`).
 
 ## 2. Every page — generateMetadata with canonical
 
@@ -25,7 +25,7 @@ Each `page.js` exports a `generateMetadata()` that returns `alternates.canonical
 ```js
 export function generateMetadata() {
   return {
-    alternates: { canonical: "/" },
+    alternates: { canonical: "https://yourdomain.com/" },
   };
 }
 ```
@@ -36,7 +36,7 @@ export function generateMetadata() {
 export async function generateMetadata({ params }) {
   const { slug } = await params;
   const data = await getPageData(slug);
-  const canonical = data?.meta?.canonical || `/${slug}`;
+  const canonical = data?.meta?.canonical || `/${slug}/`;
 
   return {
     title: data?.meta?.title,
@@ -52,7 +52,7 @@ export async function generateMetadata({ params }) {
 export async function generateMetadata({ params }) {
   const { slug: segments } = await params; // e.g. ["1-series", "e87"]
   const data = await getPageData(segments);
-  const canonical = data?.meta?.canonical || `/${segments.join("/")}`;
+  const canonical = data?.meta?.canonical || `/${segments.join("/")}/`;
 
   return {
     title: data?.meta?.title,
@@ -71,7 +71,7 @@ JSON data files can optionally override the canonical with a `meta.canonical` fi
   "meta": {
     "title": "Page Title",
     "description": "Page description.",
-    "canonical": "https://bmwengines.uk/some/path/"
+    "canonical": "https://jaguarengines.uk/some/path/"
   }
 }
 ```
@@ -83,7 +83,7 @@ If `meta.canonical` is missing or empty, it falls back to auto-generated from ro
 Every page outputs:
 
 ```html
-<link rel="canonical" href="https://bmwengines.uk/1-series/e87/" />
+<link rel="canonical" href="https://jaguarengines.uk/1-series/e87/" />
 ```
 
 — either from data or auto-generated. No per-page manual work needed.

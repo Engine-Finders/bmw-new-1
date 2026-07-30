@@ -3,20 +3,20 @@
     "slug": "n54-n55",
     "title": "BMW N54/N55 Engine — Specs, Reliability & Replacement Cost",
     "description": "“The N54/N55 turbo six is a tuner’s favourite – but HPFP and injector issues are well known. Get honest UK specialist quotes and reliability data today.”",
-    "canonical": "https://bmwengines.uk/engines/n54-n55/",
+    "canonical": "https://bmwengines.uk/engine/n54-n55/",
     "openGraph": {
       "title": "BMW N54/N55 Engine — Specs, Reliability & Replacement Cost",
       "description": "The N54/N55 turbo six is a tuner’s favourite – but HPFP and injector issues are well known. Get honest UK specialist quotes and reliability data today.",
       "type": "website",
-      "url": "https://bmwengines.uk/engines/n54-n55/",
-      "image": "https://bmwengines.uk/images/bmw/engines/n54-n55.jpg",
+      "url": "https://bmwengines.uk/engine/n54-n55/",
+      "image": "https://bmwengines.uk/images/bmw/engine/n54-n55.jpg",
       "siteName": "bmwengines.uk"
     },
     "twitter": {
       "card": "summary_large_image",
       "title": "BMW N54/N55 Engine — Specs, Reliability & Replacement Cost",
       "description": "The N54/N55 turbo six is a tuner’s favourite – but HPFP and injector issues are well known. Get honest UK specialist quotes and reliability data today.",
-      "image": "https://bmwengines.uk/images/bmw/engines/n54-n55.jpg"
+      "image": "https://bmwengines.uk/images/bmw/engine/n54-n55.jpg"
     },
     "jsonLd": {
       "@context": "https://schema.org",
@@ -34,13 +34,13 @@
               "@type": "ListItem",
               "position": 2,
               "name": "Engines",
-              "item": "https://bmwengines.uk/engines/"
+              "item": "https://bmwengines.uk/engine/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "N54/N55",
-              "item": "https://bmwengines.uk/engines/n54-n55/"
+              "item": "https://bmwengines.uk/engine/n54-n55/"
             }
           ]
         },
@@ -210,7 +210,7 @@
         {
           "@type": "WebPage",
           "name": "BMW N54/N55 Engine — Specs, Reliability & Replacement Cost",
-          "url": "https://bmwengines.uk/engines/n54-n55/",
+          "url": "https://bmwengines.uk/engine/n54-n55/",
           "author": {
             "@type": "Organization",
             "name": "bmwengines.uk Editorial Team"

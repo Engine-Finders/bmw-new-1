@@ -3,20 +3,20 @@
     "slug": "s62",
     "title": "BMW S62 Engine — Specs, Reliability & Replacement Cost",
     "description": "“The S62 V8 is a legend – but rod bearing and VANOS wear are known issues. Get honest UK specialist quotes and maintenance advice today.”",
-    "canonical": "https://bmwengines.uk/engines/s62/",
+    "canonical": "https://bmwengines.uk/engine/s62/",
     "openGraph": {
       "title": "BMW S62 Engine — Specs, Reliability & Replacement Cost",
       "description": "The S62 V8 is a legend – but rod bearing and VANOS wear are known issues. Get honest UK specialist quotes and maintenance advice today.",
       "type": "website",
-      "url": "https://bmwengines.uk/engines/s62/",
-      "image": "https://bmwengines.uk/images/bmw/engines/s62.jpg",
+      "url": "https://bmwengines.uk/engine/s62/",
+      "image": "https://bmwengines.uk/images/bmw/engine/s62.jpg",
       "siteName": "bmwengines.uk"
     },
     "twitter": {
       "card": "summary_large_image",
       "title": "BMW S62 Engine — Specs, Reliability & Replacement Cost",
       "description": "The S62 V8 is a legend – but rod bearing and VANOS wear are known issues. Get honest UK specialist quotes and maintenance advice today.",
-      "image": "https://bmwengines.uk/images/bmw/engines/s62.jpg"
+      "image": "https://bmwengines.uk/images/bmw/engine/s62.jpg"
     },
     "jsonLd": {
       "@context": "https://schema.org",
@@ -34,13 +34,13 @@
               "@type": "ListItem",
               "position": 2,
               "name": "Engines",
-              "item": "https://bmwengines.uk/engines/"
+              "item": "https://bmwengines.uk/engine/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "S62",
-              "item": "https://bmwengines.uk/engines/s62/"
+              "item": "https://bmwengines.uk/engine/s62/"
             }
           ]
         },
@@ -162,7 +162,7 @@
         {
           "@type": "WebPage",
           "name": "BMW S62 Engine — Specs, Reliability & Replacement Cost",
-          "url": "https://bmwengines.uk/engines/s62/",
+          "url": "https://bmwengines.uk/engine/s62/",
           "author": {
             "@type": "Organization",
             "name": "bmwengines.uk Editorial Team"

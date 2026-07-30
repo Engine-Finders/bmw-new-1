@@ -3,20 +3,20 @@
     "slug": "m10",
     "title": "BMW M10 Engine — Specs, Reliability & Replacement Cost",
     "description": "“The BMW M10 four-cylinder is tough, simple, and long-lived – but age takes its toll. Get honest UK specialist quotes and classic car advice today.”",
-    "canonical": "https://bmwengines.uk/engines/m10/",
+    "canonical": "https://bmwengines.uk/engine/m10/",
     "openGraph": {
       "title": "BMW M10 Engine — Specs, Reliability & Replacement Cost",
       "description": "The BMW M10 four-cylinder is tough, simple, and long-lived – but age takes its toll. Get honest UK specialist quotes and classic car advice today.",
       "type": "website",
-      "url": "https://bmwengines.uk/engines/m10/",
-      "image": "https://bmwengines.uk/images/bmw/engines/m10.jpg",
+      "url": "https://bmwengines.uk/engine/m10/",
+      "image": "https://bmwengines.uk/images/bmw/engine/m10.jpg",
       "siteName": "bmwengines.uk"
     },
     "twitter": {
       "card": "summary_large_image",
       "title": "BMW M10 Engine — Specs, Reliability & Replacement Cost",
       "description": "The BMW M10 four-cylinder is tough, simple, and long-lived – but age takes its toll. Get honest UK specialist quotes and classic car advice today.",
-      "image": "https://bmwengines.uk/images/bmw/engines/m10.jpg"
+      "image": "https://bmwengines.uk/images/bmw/engine/m10.jpg"
     },
     "jsonLd": {
       "@context": "https://schema.org",
@@ -34,13 +34,13 @@
               "@type": "ListItem",
               "position": 2,
               "name": "Engines",
-              "item": "https://bmwengines.uk/engines/"
+              "item": "https://bmwengines.uk/engine/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "M10",
-              "item": "https://bmwengines.uk/engines/m10/"
+              "item": "https://bmwengines.uk/engine/m10/"
             }
           ]
         },
@@ -186,7 +186,7 @@
         {
           "@type": "WebPage",
           "name": "BMW M10 Engine — Specs, Reliability & Replacement Cost",
-          "url": "https://bmwengines.uk/engines/m10/",
+          "url": "https://bmwengines.uk/engine/m10/",
           "author": {
             "@type": "Organization",
             "name": "bmwengines.uk Editorial Team"

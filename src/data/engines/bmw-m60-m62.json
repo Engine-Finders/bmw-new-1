@@ -3,20 +3,20 @@
     "slug": "m60-m62",
     "title": "BMW M60/M62 Engine — Specs, Reliability & Replacement Cost",
     "description": "(145–160 characters, leading with the reliability verdict)",
-    "canonical": "https://bmwengines.uk/engines/m60-m62/",
+    "canonical": "https://bmwengines.uk/engine/m60-m62/",
     "openGraph": {
       "title": "BMW M60/M62 Engine — Specs, Reliability & Replacement Cost",
       "description": "The M60/M62 V8 is characterful and robust – but timing chain guides are a known risk, backed by UK specialist data. Compare real replacement quotes today.",
       "type": "website",
-      "url": "https://bmwengines.uk/engines/m60-m62/",
-      "image": "https://bmwengines.uk/images/bmw/engines/m60-m62.jpg",
+      "url": "https://bmwengines.uk/engine/m60-m62/",
+      "image": "https://bmwengines.uk/images/bmw/engine/m60-m62.jpg",
       "siteName": "bmwengines.uk"
     },
     "twitter": {
       "card": "summary_large_image",
       "title": "BMW M60/M62 Engine — Specs, Reliability & Replacement Cost",
       "description": "The M60/M62 V8 is characterful and robust – but timing chain guides are a known risk, backed by UK specialist data. Compare real replacement quotes today.",
-      "image": "https://bmwengines.uk/images/bmw/engines/m60-m62.jpg"
+      "image": "https://bmwengines.uk/images/bmw/engine/m60-m62.jpg"
     },
     "jsonLd": {
       "@context": "https://schema.org",
@@ -34,13 +34,13 @@
               "@type": "ListItem",
               "position": 2,
               "name": "Engines",
-              "item": "https://bmwengines.uk/engines/"
+              "item": "https://bmwengines.uk/engine/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "M60/M62",
-              "item": "https://bmwengines.uk/engines/m60-m62/"
+              "item": "https://bmwengines.uk/engine/m60-m62/"
             }
           ]
         },
@@ -186,7 +186,7 @@
         {
           "@type": "WebPage",
           "name": "BMW M60/M62 Engine — Specs, Reliability & Replacement Cost",
-          "url": "https://bmwengines.uk/engines/m60-m62/",
+          "url": "https://bmwengines.uk/engine/m60-m62/",
           "author": {
             "@type": "Organization",
             "name": "bmwengines.uk Editorial Team"

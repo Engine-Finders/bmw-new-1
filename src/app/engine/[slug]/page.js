@@ -29,7 +29,7 @@ export async function generateMetadata({ params }) {
   if (!data?.meta) return {};
 
   const { meta } = data;
-  const canonical = meta.canonical || `/engine/${slug}`;
+  const canonical = meta.canonical || `/engine/${slug}/`;
   return {
     title: meta.title,
     description: meta.description,

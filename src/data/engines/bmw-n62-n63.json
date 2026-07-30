@@ -3,20 +3,20 @@
     "slug": "n62-n63",
     "title": "BMW N62 / N63 Engine — Reliability & Replacement Cost",
     "description": "The N62/N63 V8 is powerful but hot‑vee issues make it costly — rated from real UK enquiries [ESTIMATED]. Compare quotes from vetted specialists today.",
-    "canonical": "https://bmwengines.uk/engines/n62-n63/",
+    "canonical": "https://bmwengines.uk/engine/n62-n63/",
     "openGraph": {
       "title": "BMW N62 / N63 Engine — Reliability & Replacement Cost",
       "description": "The N62/N63 V8 is powerful but hot‑vee issues make it costly — rated from real UK enquiries [ESTIMATED]. Compare quotes from vetted specialists today.",
       "type": "website",
-      "url": "https://bmwengines.uk/engines/n62-n63/",
-      "image": "https://bmwengines.uk/images/bmw/engines/n62-n63.jpg",
+      "url": "https://bmwengines.uk/engine/n62-n63/",
+      "image": "https://bmwengines.uk/images/bmw/engine/n62-n63.jpg",
       "siteName": "bmwengines.uk"
     },
     "twitter": {
       "card": "summary_large_image",
       "title": "BMW N62 / N63 Engine — Reliability & Replacement Cost",
       "description": "The N62/N63 V8 is powerful but hot‑vee issues make it costly — rated from real UK enquiries [ESTIMATED]. Compare quotes from vetted specialists today.",
-      "image": "https://bmwengines.uk/images/bmw/engines/n62-n63.jpg"
+      "image": "https://bmwengines.uk/images/bmw/engine/n62-n63.jpg"
     },
     "jsonLd": {
       "@context": "https://schema.org",
@@ -34,13 +34,13 @@
               "@type": "ListItem",
               "position": 2,
               "name": "Engines",
-              "item": "https://bmwengines.uk/engines/"
+              "item": "https://bmwengines.uk/engine/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "N62 / N63",
-              "item": "https://bmwengines.uk/engines/n62-n63/"
+              "item": "https://bmwengines.uk/engine/n62-n63/"
             }
           ]
         },
@@ -222,7 +222,7 @@
         {
           "@type": "WebPage",
           "name": "BMW N62 / N63 Engine — Reliability & Replacement Cost",
-          "url": "https://bmwengines.uk/engines/n62-n63/",
+          "url": "https://bmwengines.uk/engine/n62-n63/",
           "author": {
             "@type": "Organization",
             "name": "bmwengines.uk Editorial Team"

@@ -30,7 +30,7 @@ import homeSec14Data from "@/data/home/homeSec14.json";
 export function generateMetadata() {
   return {
     alternates: {
-      canonical: "/",
+      canonical: "https://bmwengines.uk/",
     },
   };
 }

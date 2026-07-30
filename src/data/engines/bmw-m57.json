@@ -3,20 +3,20 @@
     "slug": "m57",
     "title": "BMW M57 Engine — Specs, Reliability & Replacement Cost",
     "description": "The M57 is one of BMW's most durable diesel sixes — rated from 830+ real UK enquiries [BMW-VERIFIED]. Compare quotes from 20+ vetted specialists today.",
-    "canonical": "https://bmwengines.uk/engines/m57/",
+    "canonical": "https://bmwengines.uk/engine/m57/",
     "openGraph": {
       "title": "BMW M57 Engine — Specs, Reliability & Replacement Cost",
       "description": "The M57 is one of BMW's most durable diesel sixes — rated from 830+ real UK enquiries [BMW-VERIFIED]. Compare quotes from 20+ vetted specialists today.",
       "type": "website",
-      "url": "https://bmwengines.uk/engines/m57/",
-      "image": "https://bmwengines.uk/images/bmw/engines/m57.jpg",
+      "url": "https://bmwengines.uk/engine/m57/",
+      "image": "https://bmwengines.uk/images/bmw/engine/m57.jpg",
       "siteName": "bmwengines.uk"
     },
     "twitter": {
       "card": "summary_large_image",
       "title": "BMW M57 Engine — Specs, Reliability & Replacement Cost",
       "description": "The M57 is one of BMW's most durable diesel sixes — rated from 830+ real UK enquiries [BMW-VERIFIED]. Compare quotes from 20+ vetted specialists today.",
-      "image": "https://bmwengines.uk/images/bmw/engines/m57.jpg"
+      "image": "https://bmwengines.uk/images/bmw/engine/m57.jpg"
     },
     "jsonLd": {
       "@context": "https://schema.org",
@@ -34,13 +34,13 @@
               "@type": "ListItem",
               "position": 2,
               "name": "Engines",
-              "item": "https://bmwengines.uk/engines/"
+              "item": "https://bmwengines.uk/engine/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "M57",
-              "item": "https://bmwengines.uk/engines/m57/"
+              "item": "https://bmwengines.uk/engine/m57/"
             }
           ]
         },
@@ -216,7 +216,7 @@
         {
           "@type": "WebPage",
           "name": "BMW M57 Engine — Specs, Reliability & Replacement Cost",
-          "url": "https://bmwengines.uk/engines/m57/",
+          "url": "https://bmwengines.uk/engine/m57/",
           "author": {
             "@type": "Organization",
             "name": "bmwengines.uk Editorial Team"
@@ -409,7 +409,7 @@
         "years": "2008–2013"
       }
     ],
-    "crossBrandNote": "Also powers the Land Rover Range Rover L322 Td6 → [landroverengine.uk/engines/m57/]."
+    "crossBrandNote": "Also powers the Land Rover Range Rover L322 Td6 → [landroverengine.uk/engine/m57/]."
   },
   "costGuide": {
     "columns": [
