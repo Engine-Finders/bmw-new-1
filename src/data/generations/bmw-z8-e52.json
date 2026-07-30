@@ -15,19 +15,19 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://bmwengine.uk/"
+              "item": "https://bmwengines.uk/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "Z8",
-              "item": "https://bmwengine.uk/z8/"
+              "item": "https://bmwengines.uk/z8/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "BMW Z8 E52",
-              "item": "https://bmwengine.uk/z8/e52/"
+              "item": "https://bmwengines.uk/z8/e52/"
             }
           ]
         },
@@ -39,13 +39,13 @@
               "@type": "ListItem",
               "position": 1,
               "name": "S62B50 Engine",
-              "url": "https://bmwengine.uk/engines/s62b50/"
+              "url": "https://bmwengines.uk/engines/s62b50/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "M62B48 Engine",
-              "url": "https://bmwengine.uk/engines/m62b48/"
+              "url": "https://bmwengines.uk/engines/m62b48/"
             }
           ]
         },
@@ -57,13 +57,13 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Z8",
-              "url": "https://bmwengine.uk/z8/e52/z8/"
+              "url": "https://bmwengines.uk/z8/e52/z8/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "Alpina Roadster V8",
-              "url": "https://bmwengine.uk/z8/e52/alpina-roadster-v8/"
+              "url": "https://bmwengines.uk/z8/e52/alpina-roadster-v8/"
             }
           ]
         },
@@ -155,8 +155,8 @@
         {
           "@type": "Organization",
           "name": "BMWEngines.uk",
-          "url": "https://bmwengine.uk/",
-          "logo": "https://bmwengine.uk/images/bmwengines-logo.png",
+          "url": "https://bmwengines.uk/",
+          "logo": "https://bmwengines.uk/images/bmwengines-logo.png",
           "parentOrganization": {
             "@type": "Organization",
             "name": "Engine Finders"
@@ -181,7 +181,7 @@
         {
           "@type": "WebPage",
           "name": "Z8 Engine Replacement Cost UK — Compare Quotes",
-          "url": "https://bmwengine.uk/z8/e52/",
+          "url": "https://bmwengines.uk/z8/e52/",
           "author": {
             "@type": "Organization",
             "name": "BMWEngines.uk Editorial Team"

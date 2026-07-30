@@ -5,20 +5,20 @@
     "titleCharCount": 59,
     "description": "BMW 128ti – B48 2.0-litre turbo hot hatch. Real UK costs, oil filter housing facts, and specialist quotes. Get free prices from 20+ vetted specialists today.",
     "descriptionCharCount": 158,
-    "canonical": "https://bmwengine.uk/1-series/128ti/",
+    "canonical": "https://bmwengines.uk/1-series/128ti/",
     "openGraph": {
       "title": "128ti Engine Replacement Cost UK — Compare Quotes",
       "description": "BMW 128ti – B48 2.0-litre turbo hot hatch. Real UK costs, oil filter housing facts, and specialist quotes. Get free prices from 20+ vetted specialists today.",
       "type": "website",
-      "url": "https://bmwengine.uk/1-series/128ti/",
-      "image": "https://bmwengine.uk/images/bmw/hero/128ti.jpg",
+      "url": "https://bmwengines.uk/1-series/128ti/",
+      "image": "https://bmwengines.uk/images/bmw/hero/128ti.jpg",
       "siteName": "BMWEngines.uk"
     },
     "twitter": {
       "card": "summary_large_image",
       "title": "128ti Engine Replacement Cost UK — Compare Quotes",
       "description": "BMW 128ti – B48 2.0-litre turbo hot hatch. Real UK costs, oil filter housing facts, and specialist quotes.",
-      "image": "https://bmwengine.uk/images/bmw/hero/128ti.jpg"
+      "image": "https://bmwengines.uk/images/bmw/hero/128ti.jpg"
     },
     "jsonLd": {
       "@context": "https://schema.org",
@@ -30,19 +30,19 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://bmwengine.uk/"
+              "item": "https://bmwengines.uk/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "1 Series",
-              "item": "https://bmwengine.uk/1-series/"
+              "item": "https://bmwengines.uk/1-series/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "128ti",
-              "item": "https://bmwengine.uk/1-series/128ti/"
+              "item": "https://bmwengines.uk/1-series/128ti/"
             }
           ]
         },
@@ -54,7 +54,7 @@
               "@type": "ListItem",
               "position": 1,
               "name": "BMW 1 Series F40 128ti (2020–present)",
-              "url": "https://bmwengine.uk/1-series/f40/"
+              "url": "https://bmwengines.uk/1-series/f40/"
             }
           ]
         },
@@ -66,7 +66,7 @@
               "@type": "ListItem",
               "position": 1,
               "name": "B48A20T1",
-              "url": "https://bmwengine.uk/engines/b48/"
+              "url": "https://bmwengines.uk/engines/b48/"
             }
           ]
         },
@@ -126,8 +126,8 @@
         {
           "@type": "Organization",
           "name": "BMWEngines.uk",
-          "url": "https://bmwengine.uk/",
-          "logo": "https://bmwengine.uk/images/bmwengines-logo.png",
+          "url": "https://bmwengines.uk/",
+          "logo": "https://bmwengines.uk/images/bmwengines-logo.png",
           "parentOrganization": {
             "@type": "Organization",
             "name": "Engine Finders"
@@ -163,7 +163,7 @@
         {
           "@type": "WebPage",
           "name": "128ti Engine Replacement Cost UK — Compare Quotes",
-          "url": "https://bmwengine.uk/1-series/128ti/",
+          "url": "https://bmwengines.uk/1-series/128ti/",
           "author": {
             "@type": "Organization",
             "name": "BMWEngines.uk Editorial Team"

@@ -5,20 +5,20 @@
     "titleCharCount": 57,
     "description": "The 115bhp M21D24 — BMW's first 5 Series diesel. Real UK costs, common injection pump and head issues, and honest reliability data. Get free quotes from 20+ vetted BMW specialists today.",
     "descriptionCharCount": 160,
-    "canonical": "https://bmwengine.uk/5-series/524td/",
+    "canonical": "https://bmwengines.uk/5-series/524td/",
     "openGraph": {
       "title": "524td Engine Replacement Cost UK — Compare Quotes",
       "description": "The 115bhp M21D24 — BMW's first 5 Series diesel. Real UK costs, common injection pump and head issues, and honest reliability data. Get free quotes from 20+ vetted BMW specialists today.",
       "type": "website",
-      "url": "https://bmwengine.uk/5-series/524td/",
-      "image": "https://bmwengine.uk/images/bmw/hero/5-series-524td.jpg",
+      "url": "https://bmwengines.uk/5-series/524td/",
+      "image": "https://bmwengines.uk/images/bmw/hero/5-series-524td.jpg",
       "siteName": "BMWEngines.uk"
     },
     "twitter": {
       "card": "summary_large_image",
       "title": "524td Engine Replacement Cost UK — Compare Quotes",
       "description": "The 115bhp M21D24 — BMW's first 5 Series diesel. Real UK costs, common injection pump and head issues, and honest reliability data.",
-      "image": "https://bmwengine.uk/images/bmw/hero/5-series-524td.jpg"
+      "image": "https://bmwengines.uk/images/bmw/hero/5-series-524td.jpg"
     },
     "jsonLd": {
       "@context": "https://schema.org",
@@ -30,19 +30,19 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://bmwengine.uk/"
+              "item": "https://bmwengines.uk/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "5 Series",
-              "item": "https://bmwengine.uk/5-series/"
+              "item": "https://bmwengines.uk/5-series/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "524td",
-              "item": "https://bmwengine.uk/5-series/524td/"
+              "item": "https://bmwengines.uk/5-series/524td/"
             }
           ]
         },
@@ -54,13 +54,13 @@
               "@type": "ListItem",
               "position": 1,
               "name": "E28 524td (M21D24, 1983–1988)",
-              "url": "https://bmwengine.uk/5-series/524td/#e28"
+              "url": "https://bmwengines.uk/5-series/524td/#e28"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "E34 524td (M21D24, 1988–1991)",
-              "url": "https://bmwengine.uk/5-series/524td/#e34"
+              "url": "https://bmwengines.uk/5-series/524td/#e34"
             }
           ]
         },
@@ -72,7 +72,7 @@
               "@type": "ListItem",
               "position": 1,
               "name": "M21D24 2.4L Turbo Diesel",
-              "url": "https://bmwengine.uk/engines/m21d24/"
+              "url": "https://bmwengines.uk/engines/m21d24/"
             }
           ]
         },
@@ -132,8 +132,8 @@
         {
           "@type": "Organization",
           "name": "BMWEngines.uk",
-          "url": "https://bmwengine.uk/",
-          "logo": "https://bmwengine.uk/images/bmwengines-logo.png",
+          "url": "https://bmwengines.uk/",
+          "logo": "https://bmwengines.uk/images/bmwengines-logo.png",
           "parentOrganization": {
             "@type": "Organization",
             "name": "Engine Finders"
@@ -169,7 +169,7 @@
         {
           "@type": "WebPage",
           "name": "524td Engine Replacement Cost UK — Compare Quotes",
-          "url": "https://bmwengine.uk/5-series/524td/",
+          "url": "https://bmwengines.uk/5-series/524td/",
           "author": {
             "@type": "Organization",
             "name": "BMWEngines.uk Editorial Team"

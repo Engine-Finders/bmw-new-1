@@ -3,20 +3,20 @@
     "slug": "n40-n42-n43-n45-n46",
     "title": "BMW N40–N46 Engine — Specs, Reliability & Replacement Cost",
     "description": "Phrasing variant (from rotation bank): “BMW’s 2000s four‑cylinder petrols — cheap to run, but timing chain guide failure is the defining risk. Rated from consistent UK marketplace data. Compare quotes from 20+ vetted specialists today.”",
-    "canonical": "https://bmwengine.uk/engines/n40-n42-n43-n45-n46/",
+    "canonical": "https://bmwengines.uk/engines/n40-n42-n43-n45-n46/",
     "openGraph": {
       "title": "BMW N40–N46 Engine — Specs, Reliability & Replacement Cost",
       "description": "BMW’s 2000s four‑cylinder petrols — cheap to run, but timing chain guide failure is the defining risk. Rated from consistent UK marketplace data. Compare quotes from 20+ vetted specialists today.",
       "type": "website",
-      "url": "https://bmwengine.uk/engines/n40-n42-n43-n45-n46/",
-      "image": "https://bmwengine.uk/images/bmw/engines/n40-n46.jpg",
-      "siteName": "bmwengine.uk"
+      "url": "https://bmwengines.uk/engines/n40-n42-n43-n45-n46/",
+      "image": "https://bmwengines.uk/images/bmw/engines/n40-n46.jpg",
+      "siteName": "bmwengines.uk"
     },
     "twitter": {
       "card": "summary_large_image",
       "title": "BMW N40–N46 Engine — Specs, Reliability & Replacement Cost",
       "description": "BMW’s 2000s four‑cylinder petrols — cheap to run, but timing chain guide failure is the defining risk. Rated from consistent UK marketplace data. Compare quotes from 20+ vetted specialists today.",
-      "image": "https://bmwengine.uk/images/bmw/engines/n40-n46.jpg"
+      "image": "https://bmwengines.uk/images/bmw/engines/n40-n46.jpg"
     },
     "jsonLd": {
       "@context": "https://schema.org",
@@ -28,19 +28,19 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://bmwengine.uk/"
+              "item": "https://bmwengines.uk/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "Engines",
-              "item": "https://bmwengine.uk/engines/"
+              "item": "https://bmwengines.uk/engines/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "BMW N40–N46",
-              "item": "https://bmwengine.uk/engines/n40-n42-n43-n45-n46/"
+              "item": "https://bmwengines.uk/engines/n40-n42-n43-n45-n46/"
             }
           ]
         },
@@ -52,49 +52,49 @@
               "@type": "ListItem",
               "position": 1,
               "name": "BMW 1 Series E81/E87 116i/118i/120i",
-              "url": "https://bmwengine.uk/models/1-series/e87/"
+              "url": "https://bmwengines.uk/models/1-series/e87/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "BMW 3 Series E46 316i/318i/320i",
-              "url": "https://bmwengine.uk/models/3-series/e46/"
+              "url": "https://bmwengines.uk/models/3-series/e46/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "BMW 3 Series E90/E91 316i/318i/320i",
-              "url": "https://bmwengine.uk/models/3-series/e90/"
+              "url": "https://bmwengines.uk/models/3-series/e90/"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "BMW 3 Series F30 (early) 316i/320i",
-              "url": "https://bmwengine.uk/models/3-series/f30/"
+              "url": "https://bmwengines.uk/models/3-series/f30/"
             },
             {
               "@type": "ListItem",
               "position": 5,
               "name": "BMW 5 Series E60 520i",
-              "url": "https://bmwengine.uk/models/5-series/e60/"
+              "url": "https://bmwengines.uk/models/5-series/e60/"
             },
             {
               "@type": "ListItem",
               "position": 6,
               "name": "BMW X1 E84 sDrive18i/xDrive18i/sDrive20i",
-              "url": "https://bmwengine.uk/models/x1/e84/"
+              "url": "https://bmwengines.uk/models/x1/e84/"
             },
             {
               "@type": "ListItem",
               "position": 7,
               "name": "BMW X3 E83 2.0i",
-              "url": "https://bmwengine.uk/models/x3/e83/"
+              "url": "https://bmwengines.uk/models/x3/e83/"
             },
             {
               "@type": "ListItem",
               "position": 8,
               "name": "BMW Z4 E85/E86 2.0i",
-              "url": "https://bmwengine.uk/models/z4/e85/"
+              "url": "https://bmwengines.uk/models/z4/e85/"
             }
           ]
         },
@@ -145,9 +145,9 @@
         },
         {
           "@type": "Organization",
-          "name": "bmwengine.uk",
-          "url": "https://bmwengine.uk/",
-          "logo": "https://bmwengine.uk/images/logo.png",
+          "name": "bmwengines.uk",
+          "url": "https://bmwengines.uk/",
+          "logo": "https://bmwengines.uk/images/logo.png",
           "parentOrganization": {
             "@type": "Organization",
             "name": "Engine Finders"
@@ -173,7 +173,7 @@
           "serviceType": "BMW N40–N46 Engine Replacement",
           "provider": {
             "@type": "Organization",
-            "name": "bmwengine.uk"
+            "name": "bmwengines.uk"
           },
           "areaServed": "GB",
           "offers": {
@@ -187,10 +187,10 @@
         {
           "@type": "Dataset",
           "name": "BMW N40–N46 UK Enquiry & Reliability Data 2025",
-          "description": "Proprietary UK marketplace data and reliability scoring for the BMW N40–N46 four‑cylinder petrol engines, sourced from bmwengine.uk's specialist network.",
+          "description": "Proprietary UK marketplace data and reliability scoring for the BMW N40–N46 four‑cylinder petrol engines, sourced from bmwengines.uk's specialist network.",
           "creator": {
             "@type": "Organization",
-            "name": "bmwengine.uk"
+            "name": "bmwengines.uk"
           },
           "temporalCoverage": "2025",
           "spatialCoverage": "United Kingdom"
@@ -198,14 +198,14 @@
         {
           "@type": "WebPage",
           "name": "BMW N40–N46 Engine — Specs, Reliability & Replacement Cost",
-          "url": "https://bmwengine.uk/engines/n40-n42-n43-n45-n46/",
+          "url": "https://bmwengines.uk/engines/n40-n42-n43-n45-n46/",
           "author": {
             "@type": "Organization",
-            "name": "bmwengine.uk Editorial Team"
+            "name": "bmwengines.uk Editorial Team"
           },
           "reviewedBy": {
             "@type": "Organization",
-            "name": "bmwengine.uk Specialist Network"
+            "name": "bmwengines.uk Specialist Network"
           },
           "datePublished": "2025-07-14",
           "dateModified": "2025-07-14"

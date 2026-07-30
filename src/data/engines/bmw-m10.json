@@ -3,20 +3,20 @@
     "slug": "m10",
     "title": "BMW M10 Engine — Specs, Reliability & Replacement Cost",
     "description": "“The BMW M10 four-cylinder is tough, simple, and long-lived – but age takes its toll. Get honest UK specialist quotes and classic car advice today.”",
-    "canonical": "https://bmwengine.uk/engines/m10/",
+    "canonical": "https://bmwengines.uk/engines/m10/",
     "openGraph": {
       "title": "BMW M10 Engine — Specs, Reliability & Replacement Cost",
       "description": "The BMW M10 four-cylinder is tough, simple, and long-lived – but age takes its toll. Get honest UK specialist quotes and classic car advice today.",
       "type": "website",
-      "url": "https://bmwengine.uk/engines/m10/",
-      "image": "https://bmwengine.uk/images/bmw/engines/m10.jpg",
-      "siteName": "bmwengine.uk"
+      "url": "https://bmwengines.uk/engines/m10/",
+      "image": "https://bmwengines.uk/images/bmw/engines/m10.jpg",
+      "siteName": "bmwengines.uk"
     },
     "twitter": {
       "card": "summary_large_image",
       "title": "BMW M10 Engine — Specs, Reliability & Replacement Cost",
       "description": "The BMW M10 four-cylinder is tough, simple, and long-lived – but age takes its toll. Get honest UK specialist quotes and classic car advice today.",
-      "image": "https://bmwengine.uk/images/bmw/engines/m10.jpg"
+      "image": "https://bmwengines.uk/images/bmw/engines/m10.jpg"
     },
     "jsonLd": {
       "@context": "https://schema.org",
@@ -28,19 +28,19 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://bmwengine.uk/"
+              "item": "https://bmwengines.uk/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "Engines",
-              "item": "https://bmwengine.uk/engines/"
+              "item": "https://bmwengines.uk/engines/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "M10",
-              "item": "https://bmwengine.uk/engines/m10/"
+              "item": "https://bmwengines.uk/engines/m10/"
             }
           ]
         },
@@ -52,37 +52,37 @@
               "@type": "ListItem",
               "position": 1,
               "name": "BMW 02 Series (1602, 2002)",
-              "url": "https://bmwengine.uk/models/2002/"
+              "url": "https://bmwengines.uk/models/2002/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "BMW 3 Series E21 316/318/320",
-              "url": "https://bmwengine.uk/models/e21/"
+              "url": "https://bmwengines.uk/models/e21/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "BMW 3 Series E30 316/318i",
-              "url": "https://bmwengine.uk/models/e30-316/"
+              "url": "https://bmwengines.uk/models/e30-316/"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "BMW 5 Series E12 518/520",
-              "url": "https://bmwengine.uk/models/e12/"
+              "url": "https://bmwengines.uk/models/e12/"
             },
             {
               "@type": "ListItem",
               "position": 5,
               "name": "BMW 5 Series E28 518/518i",
-              "url": "https://bmwengine.uk/models/e28-518/"
+              "url": "https://bmwengines.uk/models/e28-518/"
             },
             {
               "@type": "ListItem",
               "position": 6,
               "name": "BMW Neue Klasse (1500, 1600, 1800, 2000)",
-              "url": "https://bmwengine.uk/models/neue-klasse/"
+              "url": "https://bmwengines.uk/models/neue-klasse/"
             }
           ]
         },
@@ -133,9 +133,9 @@
         },
         {
           "@type": "Organization",
-          "name": "bmwengine.uk",
-          "url": "https://bmwengine.uk/",
-          "logo": "https://bmwengine.uk/images/logo.png",
+          "name": "bmwengines.uk",
+          "url": "https://bmwengines.uk/",
+          "logo": "https://bmwengines.uk/images/logo.png",
           "parentOrganization": {
             "@type": "Organization",
             "name": "Engine Finders"
@@ -161,7 +161,7 @@
           "serviceType": "BMW M10 Engine Replacement",
           "provider": {
             "@type": "Organization",
-            "name": "bmwengine.uk"
+            "name": "bmwengines.uk"
           },
           "areaServed": "GB",
           "offers": {
@@ -175,10 +175,10 @@
         {
           "@type": "Dataset",
           "name": "BMW M10 UK Enquiry & Reliability Data 2025",
-          "description": "Proprietary UK specialist data and reliability scoring for the BMW M10 four-cylinder, sourced from bmwengine.uk's marketplace activity. Enquiry volumes are estimated pending full verification.",
+          "description": "Proprietary UK specialist data and reliability scoring for the BMW M10 four-cylinder, sourced from bmwengines.uk's marketplace activity. Enquiry volumes are estimated pending full verification.",
           "creator": {
             "@type": "Organization",
-            "name": "bmwengine.uk"
+            "name": "bmwengines.uk"
           },
           "temporalCoverage": "2025",
           "spatialCoverage": "United Kingdom"
@@ -186,14 +186,14 @@
         {
           "@type": "WebPage",
           "name": "BMW M10 Engine — Specs, Reliability & Replacement Cost",
-          "url": "https://bmwengine.uk/engines/m10/",
+          "url": "https://bmwengines.uk/engines/m10/",
           "author": {
             "@type": "Organization",
-            "name": "bmwengine.uk Editorial Team"
+            "name": "bmwengines.uk Editorial Team"
           },
           "reviewedBy": {
             "@type": "Organization",
-            "name": "bmwengine.uk Specialist Network"
+            "name": "bmwengines.uk Specialist Network"
           },
           "datePublished": "2025-07-14",
           "dateModified": "2025-07-14"

@@ -5,20 +5,20 @@
     "titleCharCount": 56,
     "description": "BMW 318i – every engine generation from M10 to B38. Real UK costs, timing belt and timing chain facts, and specialist quotes. Get free prices from 20+ vetted specialists today.",
     "descriptionCharCount": 158,
-    "canonical": "https://bmwengine.uk/3-series/318i/",
+    "canonical": "https://bmwengines.uk/3-series/318i/",
     "openGraph": {
       "title": "318i Engine Replacement Cost UK — Compare Quotes",
       "description": "BMW 318i – every engine generation from M10 to B38. Real UK costs, timing belt and timing chain facts, and specialist quotes. Get free prices from 20+ vetted specialists today.",
       "type": "website",
-      "url": "https://bmwengine.uk/3-series/318i/",
-      "image": "https://bmwengine.uk/images/bmw/hero/318i.jpg",
+      "url": "https://bmwengines.uk/3-series/318i/",
+      "image": "https://bmwengines.uk/images/bmw/hero/318i.jpg",
       "siteName": "BMWEngines.uk"
     },
     "twitter": {
       "card": "summary_large_image",
       "title": "318i Engine Replacement Cost UK — Compare Quotes",
       "description": "BMW 318i – every engine generation from M10 to B38. Real UK costs, timing belt and timing chain facts, and specialist quotes.",
-      "image": "https://bmwengine.uk/images/bmw/hero/318i.jpg"
+      "image": "https://bmwengines.uk/images/bmw/hero/318i.jpg"
     },
     "jsonLd": {
       "@context": "https://schema.org",
@@ -30,19 +30,19 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://bmwengine.uk/"
+              "item": "https://bmwengines.uk/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "3 Series",
-              "item": "https://bmwengine.uk/3-series/"
+              "item": "https://bmwengines.uk/3-series/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "318i",
-              "item": "https://bmwengine.uk/3-series/318i/"
+              "item": "https://bmwengines.uk/3-series/318i/"
             }
           ]
         },
@@ -54,55 +54,55 @@
               "@type": "ListItem",
               "position": 1,
               "name": "E30 318i (M10B18, 1982-1987)",
-              "url": "https://bmwengine.uk/3-series/e30/"
+              "url": "https://bmwengines.uk/3-series/e30/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "E30 318i (M40B18, 1987-1991)",
-              "url": "https://bmwengine.uk/3-series/e30/"
+              "url": "https://bmwengines.uk/3-series/e30/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "E30 318is (M42B18, 1989-1991)",
-              "url": "https://bmwengine.uk/3-series/e30/"
+              "url": "https://bmwengines.uk/3-series/e30/"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "E36 318i (M43B18, 1990-1998)",
-              "url": "https://bmwengine.uk/3-series/e36/"
+              "url": "https://bmwengines.uk/3-series/e36/"
             },
             {
               "@type": "ListItem",
               "position": 5,
               "name": "E36 318i (M44B19, 1996-1998)",
-              "url": "https://bmwengine.uk/3-series/e36/"
+              "url": "https://bmwengines.uk/3-series/e36/"
             },
             {
               "@type": "ListItem",
               "position": 6,
               "name": "E46 318i (N42/N46, 1998-2005)",
-              "url": "https://bmwengine.uk/3-series/e46/"
+              "url": "https://bmwengines.uk/3-series/e46/"
             },
             {
               "@type": "ListItem",
               "position": 7,
               "name": "E90 318i (N43/N45, 2005-2012)",
-              "url": "https://bmwengine.uk/3-series/e90/"
+              "url": "https://bmwengines.uk/3-series/e90/"
             },
             {
               "@type": "ListItem",
               "position": 8,
               "name": "F30 318i (N13B18, 2012-2018)",
-              "url": "https://bmwengine.uk/3-series/f30/"
+              "url": "https://bmwengines.uk/3-series/f30/"
             },
             {
               "@type": "ListItem",
               "position": 9,
               "name": "G20 318i (B38/B48, 2019-present)",
-              "url": "https://bmwengine.uk/3-series/g20/"
+              "url": "https://bmwengines.uk/3-series/g20/"
             }
           ]
         },
@@ -114,55 +114,55 @@
               "@type": "ListItem",
               "position": 1,
               "name": "M10B18",
-              "url": "https://bmwengine.uk/engines/m10/"
+              "url": "https://bmwengines.uk/engines/m10/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "M40B18",
-              "url": "https://bmwengine.uk/engines/m40/"
+              "url": "https://bmwengines.uk/engines/m40/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "M42B18",
-              "url": "https://bmwengine.uk/engines/m42/"
+              "url": "https://bmwengines.uk/engines/m42/"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "M43B18",
-              "url": "https://bmwengine.uk/engines/m43/"
+              "url": "https://bmwengines.uk/engines/m43/"
             },
             {
               "@type": "ListItem",
               "position": 5,
               "name": "M44B19",
-              "url": "https://bmwengine.uk/engines/m44/"
+              "url": "https://bmwengines.uk/engines/m44/"
             },
             {
               "@type": "ListItem",
               "position": 6,
               "name": "N42B18/N46B18",
-              "url": "https://bmwengine.uk/engines/n42/"
+              "url": "https://bmwengines.uk/engines/n42/"
             },
             {
               "@type": "ListItem",
               "position": 7,
               "name": "N43B18/N45B18",
-              "url": "https://bmwengine.uk/engines/n43/"
+              "url": "https://bmwengines.uk/engines/n43/"
             },
             {
               "@type": "ListItem",
               "position": 8,
               "name": "N13B18",
-              "url": "https://bmwengine.uk/engines/n13/"
+              "url": "https://bmwengines.uk/engines/n13/"
             },
             {
               "@type": "ListItem",
               "position": 9,
               "name": "B38A15/B48A20",
-              "url": "https://bmwengine.uk/engines/b38/"
+              "url": "https://bmwengines.uk/engines/b38/"
             }
           ]
         },
@@ -222,8 +222,8 @@
         {
           "@type": "Organization",
           "name": "BMWEngines.uk",
-          "url": "https://bmwengine.uk/",
-          "logo": "https://bmwengine.uk/images/bmwengines-logo.png",
+          "url": "https://bmwengines.uk/",
+          "logo": "https://bmwengines.uk/images/bmwengines-logo.png",
           "parentOrganization": {
             "@type": "Organization",
             "name": "Engine Finders"
@@ -259,7 +259,7 @@
         {
           "@type": "WebPage",
           "name": "318i Engine Replacement Cost UK — Compare Quotes",
-          "url": "https://bmwengine.uk/3-series/318i/",
+          "url": "https://bmwengines.uk/3-series/318i/",
           "author": {
             "@type": "Organization",
             "name": "BMWEngines.uk Editorial Team"

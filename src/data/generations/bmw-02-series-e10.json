@@ -15,19 +15,19 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://bmwengine.uk/"
+              "item": "https://bmwengines.uk/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "02 Series",
-              "item": "https://bmwengine.uk/02-series/"
+              "item": "https://bmwengines.uk/02-series/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "BMW 02 Series E10",
-              "item": "https://bmwengine.uk/02-series/e10/"
+              "item": "https://bmwengines.uk/02-series/e10/"
             }
           ]
         },
@@ -39,37 +39,37 @@
               "@type": "ListItem",
               "position": 1,
               "name": "M10B16 (1502/1602) Engine",
-              "url": "https://bmwengine.uk/engines/m10/"
+              "url": "https://bmwengines.uk/engines/m10/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "M10B18 (1802) Engine",
-              "url": "https://bmwengine.uk/engines/m10/"
+              "url": "https://bmwengines.uk/engines/m10/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "M10B20 (2002) Engine",
-              "url": "https://bmwengine.uk/engines/m10/"
+              "url": "https://bmwengines.uk/engines/m10/"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "M10B20 (2002 Ti) Engine",
-              "url": "https://bmwengine.uk/engines/m10/"
+              "url": "https://bmwengines.uk/engines/m10/"
             },
             {
               "@type": "ListItem",
               "position": 5,
               "name": "M10B20 Tii Engine",
-              "url": "https://bmwengine.uk/engines/m10-tii/"
+              "url": "https://bmwengines.uk/engines/m10-tii/"
             },
             {
               "@type": "ListItem",
               "position": 6,
               "name": "M10B20 Turbo Engine",
-              "url": "https://bmwengine.uk/engines/m10-turbo/"
+              "url": "https://bmwengines.uk/engines/m10-turbo/"
             }
           ]
         },
@@ -81,43 +81,43 @@
               "@type": "ListItem",
               "position": 1,
               "name": "1502",
-              "url": "https://bmwengine.uk/02-series/e10/1502/"
+              "url": "https://bmwengines.uk/02-series/e10/1502/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "1602",
-              "url": "https://bmwengine.uk/02-series/e10/1602/"
+              "url": "https://bmwengines.uk/02-series/e10/1602/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "1802",
-              "url": "https://bmwengine.uk/02-series/e10/1802/"
+              "url": "https://bmwengines.uk/02-series/e10/1802/"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "2002",
-              "url": "https://bmwengine.uk/02-series/e10/2002/"
+              "url": "https://bmwengines.uk/02-series/e10/2002/"
             },
             {
               "@type": "ListItem",
               "position": 5,
               "name": "2002 Ti",
-              "url": "https://bmwengine.uk/02-series/e10/2002-ti/"
+              "url": "https://bmwengines.uk/02-series/e10/2002-ti/"
             },
             {
               "@type": "ListItem",
               "position": 6,
               "name": "2002 Tii",
-              "url": "https://bmwengine.uk/02-series/e10/2002-tii/"
+              "url": "https://bmwengines.uk/02-series/e10/2002-tii/"
             },
             {
               "@type": "ListItem",
               "position": 7,
               "name": "2002 Turbo",
-              "url": "https://bmwengine.uk/02-series/e10/2002-turbo/"
+              "url": "https://bmwengines.uk/02-series/e10/2002-turbo/"
             }
           ]
         },
@@ -209,8 +209,8 @@
         {
           "@type": "Organization",
           "name": "BMWEngines.uk",
-          "url": "https://bmwengine.uk/",
-          "logo": "https://bmwengine.uk/images/bmwengines-logo.png",
+          "url": "https://bmwengines.uk/",
+          "logo": "https://bmwengines.uk/images/bmwengines-logo.png",
           "parentOrganization": {
             "@type": "Organization",
             "name": "Engine Finders"
@@ -246,7 +246,7 @@
         {
           "@type": "WebPage",
           "name": "E10 Engine Replacement Cost UK — Compare Quotes",
-          "url": "https://bmwengine.uk/02-series/e10/",
+          "url": "https://bmwengines.uk/02-series/e10/",
           "author": {
             "@type": "Organization",
             "name": "BMWEngines.uk Editorial Team"

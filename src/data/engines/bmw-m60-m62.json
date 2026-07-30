@@ -3,20 +3,20 @@
     "slug": "m60-m62",
     "title": "BMW M60/M62 Engine — Specs, Reliability & Replacement Cost",
     "description": "(145–160 characters, leading with the reliability verdict)",
-    "canonical": "https://bmwengine.uk/engines/m60-m62/",
+    "canonical": "https://bmwengines.uk/engines/m60-m62/",
     "openGraph": {
       "title": "BMW M60/M62 Engine — Specs, Reliability & Replacement Cost",
       "description": "The M60/M62 V8 is characterful and robust – but timing chain guides are a known risk, backed by UK specialist data. Compare real replacement quotes today.",
       "type": "website",
-      "url": "https://bmwengine.uk/engines/m60-m62/",
-      "image": "https://bmwengine.uk/images/bmw/engines/m60-m62.jpg",
-      "siteName": "bmwengine.uk"
+      "url": "https://bmwengines.uk/engines/m60-m62/",
+      "image": "https://bmwengines.uk/images/bmw/engines/m60-m62.jpg",
+      "siteName": "bmwengines.uk"
     },
     "twitter": {
       "card": "summary_large_image",
       "title": "BMW M60/M62 Engine — Specs, Reliability & Replacement Cost",
       "description": "The M60/M62 V8 is characterful and robust – but timing chain guides are a known risk, backed by UK specialist data. Compare real replacement quotes today.",
-      "image": "https://bmwengine.uk/images/bmw/engines/m60-m62.jpg"
+      "image": "https://bmwengines.uk/images/bmw/engines/m60-m62.jpg"
     },
     "jsonLd": {
       "@context": "https://schema.org",
@@ -28,19 +28,19 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://bmwengine.uk/"
+              "item": "https://bmwengines.uk/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "Engines",
-              "item": "https://bmwengine.uk/engines/"
+              "item": "https://bmwengines.uk/engines/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "M60/M62",
-              "item": "https://bmwengine.uk/engines/m60-m62/"
+              "item": "https://bmwengines.uk/engines/m60-m62/"
             }
           ]
         },
@@ -52,37 +52,37 @@
               "@type": "ListItem",
               "position": 1,
               "name": "BMW 8 Series E31 840Ci",
-              "url": "https://bmwengine.uk/models/e31-840ci/"
+              "url": "https://bmwengines.uk/models/e31-840ci/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "BMW 7 Series E32 730i/740i",
-              "url": "https://bmwengine.uk/models/e32-7-series/"
+              "url": "https://bmwengines.uk/models/e32-7-series/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "BMW 7 Series E38 730i/740i",
-              "url": "https://bmwengine.uk/models/e38-7-series/"
+              "url": "https://bmwengines.uk/models/e38-7-series/"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "BMW 5 Series E34 540i",
-              "url": "https://bmwengine.uk/models/e34-540i/"
+              "url": "https://bmwengines.uk/models/e34-540i/"
             },
             {
               "@type": "ListItem",
               "position": 5,
               "name": "BMW 5 Series E39 540i",
-              "url": "https://bmwengine.uk/models/e39-540i/"
+              "url": "https://bmwengines.uk/models/e39-540i/"
             },
             {
               "@type": "ListItem",
               "position": 6,
               "name": "BMW X5 E53 4.4i",
-              "url": "https://bmwengine.uk/models/e53-x5-44i/"
+              "url": "https://bmwengines.uk/models/e53-x5-44i/"
             }
           ]
         },
@@ -133,9 +133,9 @@
         },
         {
           "@type": "Organization",
-          "name": "bmwengine.uk",
-          "url": "https://bmwengine.uk/",
-          "logo": "https://bmwengine.uk/images/logo.png",
+          "name": "bmwengines.uk",
+          "url": "https://bmwengines.uk/",
+          "logo": "https://bmwengines.uk/images/logo.png",
           "parentOrganization": {
             "@type": "Organization",
             "name": "Engine Finders"
@@ -161,7 +161,7 @@
           "serviceType": "BMW M60/M62 Engine Replacement",
           "provider": {
             "@type": "Organization",
-            "name": "bmwengine.uk"
+            "name": "bmwengines.uk"
           },
           "areaServed": "GB",
           "offers": {
@@ -175,10 +175,10 @@
         {
           "@type": "Dataset",
           "name": "BMW M60/M62 UK Enquiry & Reliability Data 2025",
-          "description": "Proprietary UK specialist data and reliability scoring for the BMW M60/M62 V8, sourced from bmwengine.uk's marketplace activity. Enquiry volumes are estimated pending full verification.",
+          "description": "Proprietary UK specialist data and reliability scoring for the BMW M60/M62 V8, sourced from bmwengines.uk's marketplace activity. Enquiry volumes are estimated pending full verification.",
           "creator": {
             "@type": "Organization",
-            "name": "bmwengine.uk"
+            "name": "bmwengines.uk"
           },
           "temporalCoverage": "2025",
           "spatialCoverage": "United Kingdom"
@@ -186,14 +186,14 @@
         {
           "@type": "WebPage",
           "name": "BMW M60/M62 Engine — Specs, Reliability & Replacement Cost",
-          "url": "https://bmwengine.uk/engines/m60-m62/",
+          "url": "https://bmwengines.uk/engines/m60-m62/",
           "author": {
             "@type": "Organization",
-            "name": "bmwengine.uk Editorial Team"
+            "name": "bmwengines.uk Editorial Team"
           },
           "reviewedBy": {
             "@type": "Organization",
-            "name": "bmwengine.uk Specialist Network"
+            "name": "bmwengines.uk Specialist Network"
           },
           "datePublished": "2025-07-14",
           "dateModified": "2025-07-14"

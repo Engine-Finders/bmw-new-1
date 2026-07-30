@@ -4,6 +4,7 @@ import Footer from "@/components/shared/Footer";
 import { ThemeProvider } from "@/components/shared/themeProvider";
 
 export const metadata = {
+  metadataBase: new URL("https://bmwengines.uk"),
   title: "BMW Reliability Guide",
   description: "The UK's Most Trusted BMW Ownership Guide",
 };

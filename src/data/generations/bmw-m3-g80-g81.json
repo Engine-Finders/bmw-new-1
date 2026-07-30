@@ -15,19 +15,19 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://bmwengine.uk/"
+              "item": "https://bmwengines.uk/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "M3",
-              "item": "https://bmwengine.uk/m3/"
+              "item": "https://bmwengines.uk/m3/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "BMW M3 G80/G81",
-              "item": "https://bmwengine.uk/m3/g80-g81/"
+              "item": "https://bmwengines.uk/m3/g80-g81/"
             }
           ]
         },
@@ -39,37 +39,37 @@
               "@type": "ListItem",
               "position": 1,
               "name": "S58B30 Engine (Base M3, 480 PS)",
-              "url": "https://bmwengine.uk/engines/s58/"
+              "url": "https://bmwengines.uk/engines/s58/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "S58B30A Engine (Competition, 510 PS)",
-              "url": "https://bmwengine.uk/engines/s58-competition/"
+              "url": "https://bmwengines.uk/engines/s58-competition/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "S58B30A Engine (Competition xDrive, 510 PS)",
-              "url": "https://bmwengine.uk/engines/s58-competition-xdrive/"
+              "url": "https://bmwengines.uk/engines/s58-competition-xdrive/"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "S58B30T0 Engine (LCI xDrive, 530 PS)",
-              "url": "https://bmwengine.uk/engines/s58-lci/"
+              "url": "https://bmwengines.uk/engines/s58-lci/"
             },
             {
               "@type": "ListItem",
               "position": 5,
               "name": "S58B30T0 Engine (M3 CS, 550 PS)",
-              "url": "https://bmwengine.uk/engines/s58-cs/"
+              "url": "https://bmwengines.uk/engines/s58-cs/"
             },
             {
               "@type": "ListItem",
               "position": 6,
               "name": "S58B30T0 Engine (G81 Touring, 510-530 PS)",
-              "url": "https://bmwengine.uk/engines/s58-touring/"
+              "url": "https://bmwengines.uk/engines/s58-touring/"
             }
           ]
         },
@@ -81,37 +81,37 @@
               "@type": "ListItem",
               "position": 1,
               "name": "M3 (480 PS, 6MT, RWD)",
-              "url": "https://bmwengine.uk/m3/g80-g81/m3/"
+              "url": "https://bmwengines.uk/m3/g80-g81/m3/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "M3 Competition (510 PS, 8AT, RWD)",
-              "url": "https://bmwengine.uk/m3/g80-g81/m3-competition/"
+              "url": "https://bmwengines.uk/m3/g80-g81/m3-competition/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "M3 Competition xDrive (510 PS, 8AT, AWD)",
-              "url": "https://bmwengine.uk/m3/g80-g81/m3-competition-xdrive/"
+              "url": "https://bmwengines.uk/m3/g80-g81/m3-competition-xdrive/"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "M3 Competition xDrive LCI (530 PS)",
-              "url": "https://bmwengine.uk/m3/g80-g81/m3-competition-xdrive-lci/"
+              "url": "https://bmwengines.uk/m3/g80-g81/m3-competition-xdrive-lci/"
             },
             {
               "@type": "ListItem",
               "position": 5,
               "name": "M3 Competition Touring G81",
-              "url": "https://bmwengine.uk/m3/g80-g81/m3-touring/"
+              "url": "https://bmwengines.uk/m3/g80-g81/m3-touring/"
             },
             {
               "@type": "ListItem",
               "position": 6,
               "name": "M3 CS",
-              "url": "https://bmwengine.uk/m3/g80-g81/m3-cs/"
+              "url": "https://bmwengines.uk/m3/g80-g81/m3-cs/"
             }
           ]
         },
@@ -203,8 +203,8 @@
         {
           "@type": "Organization",
           "name": "BMWEngines.uk",
-          "url": "https://bmwengine.uk/",
-          "logo": "https://bmwengine.uk/images/bmwengines-logo.png",
+          "url": "https://bmwengines.uk/",
+          "logo": "https://bmwengines.uk/images/bmwengines-logo.png",
           "parentOrganization": {
             "@type": "Organization",
             "name": "Engine Finders"
@@ -229,7 +229,7 @@
         {
           "@type": "WebPage",
           "name": "G80/G81 Engine Replacement Cost UK — Compare Quotes",
-          "url": "https://bmwengine.uk/m3/g80-g81/",
+          "url": "https://bmwengines.uk/m3/g80-g81/",
           "author": {
             "@type": "Organization",
             "name": "BMWEngines.uk Editorial Team"

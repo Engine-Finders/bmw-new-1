@@ -3,20 +3,20 @@
     "slug": "n52-n53",
     "title": "BMW N52/N53 Engine — Specs, Reliability & Replacement Cost",
     "description": "Phrasing variant (from rotation bank): “BMW’s last naturally-aspirated straight-six — reliable (N52) but N53 injector issues sting. Rated from consistent UK marketplace data. Compare quotes from 20+ vetted specialists today.”",
-    "canonical": "https://bmwengine.uk/engines/n52-n53/",
+    "canonical": "https://bmwengines.uk/engines/n52-n53/",
     "openGraph": {
       "title": "BMW N52/N53 Engine — Specs, Reliability & Replacement Cost",
       "description": "BMW’s last naturally-aspirated straight-six — reliable (N52) but N53 injector issues sting. Rated from consistent UK marketplace data. Compare quotes from 20+ vetted specialists today.",
       "type": "website",
-      "url": "https://bmwengine.uk/engines/n52-n53/",
-      "image": "https://bmwengine.uk/images/bmw/engines/n52-n53.jpg",
-      "siteName": "bmwengine.uk"
+      "url": "https://bmwengines.uk/engines/n52-n53/",
+      "image": "https://bmwengines.uk/images/bmw/engines/n52-n53.jpg",
+      "siteName": "bmwengines.uk"
     },
     "twitter": {
       "card": "summary_large_image",
       "title": "BMW N52/N53 Engine — Specs, Reliability & Replacement Cost",
       "description": "BMW’s last naturally-aspirated straight-six — reliable (N52) but N53 injector issues sting. Rated from consistent UK marketplace data. Compare quotes from 20+ vetted specialists today.",
-      "image": "https://bmwengine.uk/images/bmw/engines/n52-n53.jpg"
+      "image": "https://bmwengines.uk/images/bmw/engines/n52-n53.jpg"
     },
     "jsonLd": {
       "@context": "https://schema.org",
@@ -28,19 +28,19 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://bmwengine.uk/"
+              "item": "https://bmwengines.uk/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "Engines",
-              "item": "https://bmwengine.uk/engines/"
+              "item": "https://bmwengines.uk/engines/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "BMW N52/N53",
-              "item": "https://bmwengine.uk/engines/n52-n53/"
+              "item": "https://bmwengines.uk/engines/n52-n53/"
             }
           ]
         },
@@ -52,61 +52,61 @@
               "@type": "ListItem",
               "position": 1,
               "name": "BMW 1 Series E81/E82/E87/E88 125i/128i/130i",
-              "url": "https://bmwengine.uk/models/1-series/e87/"
+              "url": "https://bmwengines.uk/models/1-series/e87/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "BMW 3 Series E90/E91/E92/E93 325i/328i/330i",
-              "url": "https://bmwengine.uk/models/3-series/e90/"
+              "url": "https://bmwengines.uk/models/3-series/e90/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "BMW 3 Series F30/F31 330i (early N53)",
-              "url": "https://bmwengine.uk/models/3-series/f30/"
+              "url": "https://bmwengines.uk/models/3-series/f30/"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "BMW 5 Series E60/E61 525i/528i/530i",
-              "url": "https://bmwengine.uk/models/5-series/e60/"
+              "url": "https://bmwengines.uk/models/5-series/e60/"
             },
             {
               "@type": "ListItem",
               "position": 5,
               "name": "BMW 5 Series F10/F11 530i",
-              "url": "https://bmwengine.uk/models/5-series/f10/"
+              "url": "https://bmwengines.uk/models/5-series/f10/"
             },
             {
               "@type": "ListItem",
               "position": 6,
               "name": "BMW 6 Series E63/E64 630i",
-              "url": "https://bmwengine.uk/models/6-series/e63/"
+              "url": "https://bmwengines.uk/models/6-series/e63/"
             },
             {
               "@type": "ListItem",
               "position": 7,
               "name": "BMW 7 Series E65/E66 730i",
-              "url": "https://bmwengine.uk/models/7-series/e65/"
+              "url": "https://bmwengines.uk/models/7-series/e65/"
             },
             {
               "@type": "ListItem",
               "position": 8,
               "name": "BMW X1 E84 sDrive28i/xDrive28i",
-              "url": "https://bmwengine.uk/models/x1/e84/"
+              "url": "https://bmwengines.uk/models/x1/e84/"
             },
             {
               "@type": "ListItem",
               "position": 9,
               "name": "BMW X3 E83 facelift 3.0si / F25 xDrive28i",
-              "url": "https://bmwengine.uk/models/x3/e83/"
+              "url": "https://bmwengines.uk/models/x3/e83/"
             },
             {
               "@type": "ListItem",
               "position": 10,
               "name": "BMW X5 E70 xDrive30i",
-              "url": "https://bmwengine.uk/models/x5/e70/"
+              "url": "https://bmwengines.uk/models/x5/e70/"
             }
           ]
         },
@@ -157,9 +157,9 @@
         },
         {
           "@type": "Organization",
-          "name": "bmwengine.uk",
-          "url": "https://bmwengine.uk/",
-          "logo": "https://bmwengine.uk/images/logo.png",
+          "name": "bmwengines.uk",
+          "url": "https://bmwengines.uk/",
+          "logo": "https://bmwengines.uk/images/logo.png",
           "parentOrganization": {
             "@type": "Organization",
             "name": "Engine Finders"
@@ -185,7 +185,7 @@
           "serviceType": "BMW N52/N53 Engine Replacement",
           "provider": {
             "@type": "Organization",
-            "name": "bmwengine.uk"
+            "name": "bmwengines.uk"
           },
           "areaServed": "GB",
           "offers": {
@@ -199,10 +199,10 @@
         {
           "@type": "Dataset",
           "name": "BMW N52/N53 UK Enquiry & Reliability Data 2025",
-          "description": "Proprietary UK marketplace data and reliability scoring for the BMW N52 and N53 straight-six petrol engines, sourced from bmwengine.uk's specialist network.",
+          "description": "Proprietary UK marketplace data and reliability scoring for the BMW N52 and N53 straight-six petrol engines, sourced from bmwengines.uk's specialist network.",
           "creator": {
             "@type": "Organization",
-            "name": "bmwengine.uk"
+            "name": "bmwengines.uk"
           },
           "temporalCoverage": "2025",
           "spatialCoverage": "United Kingdom"
@@ -210,14 +210,14 @@
         {
           "@type": "WebPage",
           "name": "BMW N52/N53 Engine — Specs, Reliability & Replacement Cost",
-          "url": "https://bmwengine.uk/engines/n52-n53/",
+          "url": "https://bmwengines.uk/engines/n52-n53/",
           "author": {
             "@type": "Organization",
-            "name": "bmwengine.uk Editorial Team"
+            "name": "bmwengines.uk Editorial Team"
           },
           "reviewedBy": {
             "@type": "Organization",
-            "name": "bmwengine.uk Specialist Network"
+            "name": "bmwengines.uk Specialist Network"
           },
           "datePublished": "2025-07-14",
           "dateModified": "2025-07-14"

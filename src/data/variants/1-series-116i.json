@@ -5,20 +5,20 @@
     "titleCharCount": 57,
     "description": "BMW 116i – every engine generation from N45 to B38. Real UK costs, timing chain facts, and specialist quotes. Get free prices from 20+ vetted specialists today.",
     "descriptionCharCount": 158,
-    "canonical": "https://bmwengine.uk/1-series/116i/",
+    "canonical": "https://bmwengines.uk/1-series/116i/",
     "openGraph": {
       "title": "116i Engine Replacement Cost UK — Compare Quotes",
       "description": "BMW 116i – every engine generation from N45 to B38. Real UK costs, timing chain facts, and specialist quotes. Get free prices from 20+ vetted specialists today.",
       "type": "website",
-      "url": "https://bmwengine.uk/1-series/116i/",
-      "image": "https://bmwengine.uk/images/bmw/hero/116i.jpg",
+      "url": "https://bmwengines.uk/1-series/116i/",
+      "image": "https://bmwengines.uk/images/bmw/hero/116i.jpg",
       "siteName": "BMWEngines.uk"
     },
     "twitter": {
       "card": "summary_large_image",
       "title": "116i Engine Replacement Cost UK — Compare Quotes",
       "description": "BMW 116i – every engine generation from N45 to B38. Real UK costs, timing chain facts, and specialist quotes.",
-      "image": "https://bmwengine.uk/images/bmw/hero/116i.jpg"
+      "image": "https://bmwengines.uk/images/bmw/hero/116i.jpg"
     },
     "jsonLd": {
       "@context": "https://schema.org",
@@ -30,19 +30,19 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://bmwengine.uk/"
+              "item": "https://bmwengines.uk/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "1 Series",
-              "item": "https://bmwengine.uk/1-series/"
+              "item": "https://bmwengines.uk/1-series/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "116i",
-              "item": "https://bmwengine.uk/1-series/116i/"
+              "item": "https://bmwengines.uk/1-series/116i/"
             }
           ]
         },
@@ -54,31 +54,31 @@
               "@type": "ListItem",
               "position": 1,
               "name": "E81/E87 116i (N45B16, 2004-2007)",
-              "url": "https://bmwengine.uk/1-series/e81/"
+              "url": "https://bmwengines.uk/1-series/e81/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "E81/E87 LCI 116i (N43B16, 2007-2011)",
-              "url": "https://bmwengine.uk/1-series/e87-lci/"
+              "url": "https://bmwengines.uk/1-series/e87-lci/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "F20/F21 116i (N13B16, 2011-2015)",
-              "url": "https://bmwengine.uk/1-series/f20/"
+              "url": "https://bmwengines.uk/1-series/f20/"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "F20/F21 LCI 116i (B38A15, 2015-2019)",
-              "url": "https://bmwengine.uk/1-series/f20-lci/"
+              "url": "https://bmwengines.uk/1-series/f20-lci/"
             },
             {
               "@type": "ListItem",
               "position": 5,
               "name": "F40 116i (B38A15, 2019-present)",
-              "url": "https://bmwengine.uk/1-series/f40/"
+              "url": "https://bmwengines.uk/1-series/f40/"
             }
           ]
         },
@@ -90,31 +90,31 @@
               "@type": "ListItem",
               "position": 1,
               "name": "N45B16",
-              "url": "https://bmwengine.uk/engines/n45/"
+              "url": "https://bmwengines.uk/engines/n45/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "N43B16",
-              "url": "https://bmwengine.uk/engines/n43/"
+              "url": "https://bmwengines.uk/engines/n43/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "N13B16",
-              "url": "https://bmwengine.uk/engines/n13/"
+              "url": "https://bmwengines.uk/engines/n13/"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "B38A15 (2015-2019)",
-              "url": "https://bmwengine.uk/engines/b38/"
+              "url": "https://bmwengines.uk/engines/b38/"
             },
             {
               "@type": "ListItem",
               "position": 5,
               "name": "B38A15 (2019-present)",
-              "url": "https://bmwengine.uk/engines/b38/"
+              "url": "https://bmwengines.uk/engines/b38/"
             }
           ]
         },
@@ -174,8 +174,8 @@
         {
           "@type": "Organization",
           "name": "BMWEngines.uk",
-          "url": "https://bmwengine.uk/",
-          "logo": "https://bmwengine.uk/images/bmwengines-logo.png",
+          "url": "https://bmwengines.uk/",
+          "logo": "https://bmwengines.uk/images/bmwengines-logo.png",
           "parentOrganization": {
             "@type": "Organization",
             "name": "Engine Finders"
@@ -211,7 +211,7 @@
         {
           "@type": "WebPage",
           "name": "116i Engine Replacement Cost UK — Compare Quotes",
-          "url": "https://bmwengine.uk/1-series/116i/",
+          "url": "https://bmwengines.uk/1-series/116i/",
           "author": {
             "@type": "Organization",
             "name": "BMWEngines.uk Editorial Team"

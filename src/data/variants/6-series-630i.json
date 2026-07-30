@@ -5,20 +5,20 @@
     "titleCharCount": 56,
     "description": "Every BMW 6 Series 630i engine — N52, N53, N55, B48. Real UK costs, HPFP and cooling system insights, and honest reliability data. Get free quotes from 20+ vetted BMW specialists today.",
     "descriptionCharCount": 159,
-    "canonical": "https://bmwengine.uk/6-series/630i/",
+    "canonical": "https://bmwengines.uk/6-series/630i/",
     "openGraph": {
       "title": "630i Engine Replacement Cost UK — Compare Quotes",
       "description": "Every BMW 6 Series 630i engine — N52, N53, N55, B48. Real UK costs, HPFP and cooling system insights, and honest reliability data. Get free quotes from 20+ vetted BMW specialists today.",
       "type": "website",
-      "url": "https://bmwengine.uk/6-series/630i/",
-      "image": "https://bmwengine.uk/images/bmw/hero/6-series-630i.jpg",
+      "url": "https://bmwengines.uk/6-series/630i/",
+      "image": "https://bmwengines.uk/images/bmw/hero/6-series-630i.jpg",
       "siteName": "BMWEngines.uk"
     },
     "twitter": {
       "card": "summary_large_image",
       "title": "630i Engine Replacement Cost UK — Compare Quotes",
       "description": "Every BMW 6 Series 630i engine — N52, N53, N55, B48. Real UK costs, HPFP and cooling system insights, and honest reliability data.",
-      "image": "https://bmwengine.uk/images/bmw/hero/6-series-630i.jpg"
+      "image": "https://bmwengines.uk/images/bmw/hero/6-series-630i.jpg"
     },
     "jsonLd": {
       "@context": "https://schema.org",
@@ -30,19 +30,19 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://bmwengine.uk/"
+              "item": "https://bmwengines.uk/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "6 Series",
-              "item": "https://bmwengine.uk/6-series/"
+              "item": "https://bmwengines.uk/6-series/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "630i",
-              "item": "https://bmwengine.uk/6-series/630i/"
+              "item": "https://bmwengines.uk/6-series/630i/"
             }
           ]
         },
@@ -54,25 +54,25 @@
               "@type": "ListItem",
               "position": 1,
               "name": "E63/E64 (2003–2007) N52B30A/BF",
-              "url": "https://bmwengine.uk/6-series/e63/"
+              "url": "https://bmwengines.uk/6-series/e63/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "E63/E64 LCI (2007–2010) N53B30A",
-              "url": "https://bmwengine.uk/6-series/e63/"
+              "url": "https://bmwengines.uk/6-series/e63/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "F06/F12/F13 (2011–2018) N55B30",
-              "url": "https://bmwengine.uk/6-series/f06/"
+              "url": "https://bmwengines.uk/6-series/f06/"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "G32 (2017–2020) B48B20B",
-              "url": "https://bmwengine.uk/6-series/g32/"
+              "url": "https://bmwengines.uk/6-series/g32/"
             }
           ]
         },
@@ -84,31 +84,31 @@
               "@type": "ListItem",
               "position": 1,
               "name": "N52B30A",
-              "url": "https://bmwengine.uk/engines/n52/"
+              "url": "https://bmwengines.uk/engines/n52/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "N52B30BF",
-              "url": "https://bmwengine.uk/engines/n52/"
+              "url": "https://bmwengines.uk/engines/n52/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "N53B30A",
-              "url": "https://bmwengine.uk/engines/n53/"
+              "url": "https://bmwengines.uk/engines/n53/"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "N55B30",
-              "url": "https://bmwengine.uk/engines/n55/"
+              "url": "https://bmwengines.uk/engines/n55/"
             },
             {
               "@type": "ListItem",
               "position": 5,
               "name": "B48B20B",
-              "url": "https://bmwengine.uk/engines/b48/"
+              "url": "https://bmwengines.uk/engines/b48/"
             }
           ]
         },
@@ -168,8 +168,8 @@
         {
           "@type": "Organization",
           "name": "BMWEngines.uk",
-          "url": "https://bmwengine.uk/",
-          "logo": "https://bmwengine.uk/images/bmwengines-logo.png",
+          "url": "https://bmwengines.uk/",
+          "logo": "https://bmwengines.uk/images/bmwengines-logo.png",
           "parentOrganization": {
             "@type": "Organization",
             "name": "Engine Finders"
@@ -205,7 +205,7 @@
         {
           "@type": "WebPage",
           "name": "630i Engine Replacement Cost UK — Compare Quotes",
-          "url": "https://bmwengine.uk/6-series/630i/",
+          "url": "https://bmwengines.uk/6-series/630i/",
           "author": {
             "@type": "Organization",
             "name": "BMWEngines.uk Editorial Team"

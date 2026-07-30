@@ -5,20 +5,20 @@
     "titleCharCount": 59,
     "description": "BMW 225xe/225e PHEV — real UK costs, battery & timing chain insight, and honest reliability data for the B38 hybrid powertrain. Get free quotes from 20+ vetted BMW specialists today.",
     "descriptionCharCount": 159,
-    "canonical": "https://bmwengine.uk/2-series/225xe/",
+    "canonical": "https://bmwengines.uk/2-series/225xe/",
     "openGraph": {
       "title": "225xe/225e Engine Replacement Cost UK — Compare Quotes",
       "description": "BMW 225xe/225e PHEV — real UK costs, battery & timing chain insight, and honest reliability data for the B38 hybrid powertrain. Get free quotes from 20+ vetted BMW specialists today.",
       "type": "website",
-      "url": "https://bmwengine.uk/2-series/225xe/",
-      "image": "https://bmwengine.uk/images/bmw/hero/225xe.jpg",
+      "url": "https://bmwengines.uk/2-series/225xe/",
+      "image": "https://bmwengines.uk/images/bmw/hero/225xe.jpg",
       "siteName": "BMWEngines.uk"
     },
     "twitter": {
       "card": "summary_large_image",
       "title": "225xe/225e Engine Replacement Cost UK — Compare Quotes",
       "description": "BMW 225xe/225e PHEV — real UK costs, battery & timing chain insight, and honest reliability data for the B38 hybrid powertrain.",
-      "image": "https://bmwengine.uk/images/bmw/hero/225xe.jpg"
+      "image": "https://bmwengines.uk/images/bmw/hero/225xe.jpg"
     },
     "jsonLd": {
       "@context": "https://schema.org",
@@ -30,19 +30,19 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://bmwengine.uk/"
+              "item": "https://bmwengines.uk/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "2 Series",
-              "item": "https://bmwengine.uk/2-series/"
+              "item": "https://bmwengines.uk/2-series/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "225xe / 225e",
-              "item": "https://bmwengine.uk/2-series/225xe/"
+              "item": "https://bmwengines.uk/2-series/225xe/"
             }
           ]
         },
@@ -54,13 +54,13 @@
               "@type": "ListItem",
               "position": 1,
               "name": "F45 225xe (B38A15A, 2016–2021)",
-              "url": "https://bmwengine.uk/2-series/f45/"
+              "url": "https://bmwengines.uk/2-series/f45/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "U06 225e (B38A15P, 2022–present)",
-              "url": "https://bmwengine.uk/2-series/u06/"
+              "url": "https://bmwengines.uk/2-series/u06/"
             }
           ]
         },
@@ -72,13 +72,13 @@
               "@type": "ListItem",
               "position": 1,
               "name": "B38A15A (1.5L 3-cyl Turbo + 88 PS e-motor)",
-              "url": "https://bmwengine.uk/engines/b38a15a/"
+              "url": "https://bmwengines.uk/engines/b38a15a/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "B38A15P (1.5L 3-cyl Turbo + 109 PS e-motor)",
-              "url": "https://bmwengine.uk/engines/b38a15p/"
+              "url": "https://bmwengines.uk/engines/b38a15p/"
             }
           ]
         },
@@ -138,8 +138,8 @@
         {
           "@type": "Organization",
           "name": "BMWEngines.uk",
-          "url": "https://bmwengine.uk/",
-          "logo": "https://bmwengine.uk/images/bmwengines-logo.png",
+          "url": "https://bmwengines.uk/",
+          "logo": "https://bmwengines.uk/images/bmwengines-logo.png",
           "parentOrganization": {
             "@type": "Organization",
             "name": "Engine Finders"
@@ -175,7 +175,7 @@
         {
           "@type": "WebPage",
           "name": "225xe/225e Engine Replacement Cost UK — Compare Quotes",
-          "url": "https://bmwengine.uk/2-series/225xe/",
+          "url": "https://bmwengines.uk/2-series/225xe/",
           "author": {
             "@type": "Organization",
             "name": "BMWEngines.uk Editorial Team"

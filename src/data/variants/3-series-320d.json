@@ -5,7 +5,7 @@
     "titleCharCount": 54,
     "description": "Every BMW 320d engine — M47, N47, B47. Real UK costs, the timing chain story explained by era, and honest reliability data. Get free quotes from 20+ vetted BMW specialists today.",
     "descriptionCharCount": 156,
-    "canonical": "https://bmwengine.uk/3-series/320d/",
+    "canonical": "https://bmwengines.uk/3-series/320d/",
     "openGraph": {
       "title": "",
       "description": "",
@@ -30,19 +30,19 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://bmwengine.uk/"
+              "item": "https://bmwengines.uk/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "3 Series",
-              "item": "https://bmwengine.uk/3-series/"
+              "item": "https://bmwengines.uk/3-series/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "320d",
-              "item": "https://bmwengine.uk/3-series/320d/"
+              "item": "https://bmwengines.uk/3-series/320d/"
             }
           ]
         },
@@ -54,25 +54,25 @@
               "@type": "ListItem",
               "position": 1,
               "name": "E46 320d (M47, 1998-2005)",
-              "url": "https://bmwengine.uk/3-series/e46/"
+              "url": "https://bmwengines.uk/3-series/e46/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "E90 320d (N47D20C, 2005-2011)",
-              "url": "https://bmwengine.uk/3-series/e90/"
+              "url": "https://bmwengines.uk/3-series/e90/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "F30 320d (N47/B47, 2011-2019)",
-              "url": "https://bmwengine.uk/3-series/f30/"
+              "url": "https://bmwengines.uk/3-series/f30/"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "G20 320d (B47D20, 2019-present)",
-              "url": "https://bmwengine.uk/3-series/g20/"
+              "url": "https://bmwengines.uk/3-series/g20/"
             }
           ]
         },
@@ -84,25 +84,25 @@
               "@type": "ListItem",
               "position": 1,
               "name": "M47D20/M47TU/M47TU2",
-              "url": "https://bmwengine.uk/engines/m47/"
+              "url": "https://bmwengines.uk/engines/m47/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "N47D20A",
-              "url": "https://bmwengine.uk/engines/n47/"
+              "url": "https://bmwengines.uk/engines/n47/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "N47D20C",
-              "url": "https://bmwengine.uk/engines/n47/"
+              "url": "https://bmwengines.uk/engines/n47/"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "B47D20",
-              "url": "https://bmwengine.uk/engines/b47/"
+              "url": "https://bmwengines.uk/engines/b47/"
             }
           ]
         },
@@ -162,8 +162,8 @@
         {
           "@type": "Organization",
           "name": "BMWEngines.uk",
-          "url": "https://bmwengine.uk/",
-          "logo": "https://bmwengine.uk/images/bmwengines-logo.png",
+          "url": "https://bmwengines.uk/",
+          "logo": "https://bmwengines.uk/images/bmwengines-logo.png",
           "parentOrganization": {
             "@type": "Organization",
             "name": "Engine Finders"
@@ -199,7 +199,7 @@
         {
           "@type": "WebPage",
           "name": "320d Engine Replacement Cost UK — Compare Quotes",
-          "url": "https://bmwengine.uk/3-series/320d/",
+          "url": "https://bmwengines.uk/3-series/320d/",
           "author": {
             "@type": "Organization",
             "name": "BMWEngines.uk Editorial Team"

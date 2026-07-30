@@ -15,19 +15,19 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://bmwengine.uk/"
+              "item": "https://bmwengines.uk/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "5 Series",
-              "item": "https://bmwengine.uk/5-series/"
+              "item": "https://bmwengines.uk/5-series/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "BMW 5 Series E12",
-              "item": "https://bmwengine.uk/5-series/e12/"
+              "item": "https://bmwengines.uk/5-series/e12/"
             }
           ]
         },
@@ -39,55 +39,55 @@
               "@type": "ListItem",
               "position": 1,
               "name": "M10B18 Engine",
-              "url": "https://bmwengine.uk/engines/m10b18/"
+              "url": "https://bmwengines.uk/engines/m10b18/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "M64 Engine",
-              "url": "https://bmwengine.uk/engines/m64/"
+              "url": "https://bmwengines.uk/engines/m64/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "M15 Engine",
-              "url": "https://bmwengine.uk/engines/m15/"
+              "url": "https://bmwengines.uk/engines/m15/"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "M20B20 Engine",
-              "url": "https://bmwengine.uk/engines/m20b20/"
+              "url": "https://bmwengines.uk/engines/m20b20/"
             },
             {
               "@type": "ListItem",
               "position": 5,
               "name": "M30B25 Engine",
-              "url": "https://bmwengine.uk/engines/m30b25/"
+              "url": "https://bmwengines.uk/engines/m30b25/"
             },
             {
               "@type": "ListItem",
               "position": 6,
               "name": "M30B28 Engine",
-              "url": "https://bmwengine.uk/engines/m30b28/"
+              "url": "https://bmwengines.uk/engines/m30b28/"
             },
             {
               "@type": "ListItem",
               "position": 7,
               "name": "M30B30 Engine",
-              "url": "https://bmwengine.uk/engines/m30b30/"
+              "url": "https://bmwengines.uk/engines/m30b30/"
             },
             {
               "@type": "ListItem",
               "position": 8,
               "name": "M90 Engine",
-              "url": "https://bmwengine.uk/engines/m90/"
+              "url": "https://bmwengines.uk/engines/m90/"
             },
             {
               "@type": "ListItem",
               "position": 9,
               "name": "M88/1 Engine",
-              "url": "https://bmwengine.uk/engines/m88-1/"
+              "url": "https://bmwengines.uk/engines/m88-1/"
             }
           ]
         },
@@ -99,55 +99,55 @@
               "@type": "ListItem",
               "position": 1,
               "name": "518",
-              "url": "https://bmwengine.uk/5-series/518-e12/"
+              "url": "https://bmwengines.uk/5-series/518-e12/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "520",
-              "url": "https://bmwengine.uk/5-series/520-e12/"
+              "url": "https://bmwengines.uk/5-series/520-e12/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "520i",
-              "url": "https://bmwengine.uk/5-series/520i-e12/"
+              "url": "https://bmwengines.uk/5-series/520i-e12/"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "520/6",
-              "url": "https://bmwengine.uk/5-series/520-6-e12/"
+              "url": "https://bmwengines.uk/5-series/520-6-e12/"
             },
             {
               "@type": "ListItem",
               "position": 5,
               "name": "525",
-              "url": "https://bmwengine.uk/5-series/525-e12/"
+              "url": "https://bmwengines.uk/5-series/525-e12/"
             },
             {
               "@type": "ListItem",
               "position": 6,
               "name": "528",
-              "url": "https://bmwengine.uk/5-series/528-e12/"
+              "url": "https://bmwengines.uk/5-series/528-e12/"
             },
             {
               "@type": "ListItem",
               "position": 7,
               "name": "528i",
-              "url": "https://bmwengine.uk/5-series/528i-e12/"
+              "url": "https://bmwengines.uk/5-series/528i-e12/"
             },
             {
               "@type": "ListItem",
               "position": 8,
               "name": "530i",
-              "url": "https://bmwengine.uk/5-series/530i-e12/"
+              "url": "https://bmwengines.uk/5-series/530i-e12/"
             },
             {
               "@type": "ListItem",
               "position": 9,
               "name": "M535i",
-              "url": "https://bmwengine.uk/5-series/m535i-e12/"
+              "url": "https://bmwengines.uk/5-series/m535i-e12/"
             }
           ]
         },
@@ -239,8 +239,8 @@
         {
           "@type": "Organization",
           "name": "BMWEngines.uk",
-          "url": "https://bmwengine.uk/",
-          "logo": "https://bmwengine.uk/images/bmwengines-logo.png",
+          "url": "https://bmwengines.uk/",
+          "logo": "https://bmwengines.uk/images/bmwengines-logo.png",
           "parentOrganization": {
             "@type": "Organization",
             "name": "Engine Finders"
@@ -276,7 +276,7 @@
         {
           "@type": "WebPage",
           "name": "E12 Engine Replacement Cost UK — Compare Quotes",
-          "url": "https://bmwengine.uk/5-series/e12/",
+          "url": "https://bmwengines.uk/5-series/e12/",
           "author": {
             "@type": "Organization",
             "name": "BMWEngines.uk Editorial Team"

@@ -5,20 +5,20 @@
     "titleCharCount": 56,
     "description": "Every BMW 318is engine — M42 and M44 16-valve four-cylinders. Real UK costs, profile gasket and cooling system advice, and honest reliability data. Get free quotes from 20+ vetted BMW specialists today.",
     "descriptionCharCount": 156,
-    "canonical": "https://bmwengine.uk/3-series/318is/",
+    "canonical": "https://bmwengines.uk/3-series/318is/",
     "openGraph": {
       "title": "BMW 318is Engine Replacement Cost UK — Compare Quotes",
       "description": "Every BMW 318is engine — M42 and M44 16-valve four-cylinders. Real UK costs, profile gasket and cooling system advice, and honest reliability data. Get free quotes from 20+ vetted BMW specialists today.",
       "type": "website",
-      "url": "https://bmwengine.uk/3-series/318is/",
-      "image": "https://bmwengine.uk/images/bmw/hero/318is.jpg",
+      "url": "https://bmwengines.uk/3-series/318is/",
+      "image": "https://bmwengines.uk/images/bmw/hero/318is.jpg",
       "siteName": "BMWEngines.uk"
     },
     "twitter": {
       "card": "summary_large_image",
       "title": "BMW 318is Engine Replacement Cost UK — Compare Quotes",
       "description": "Every BMW 318is engine — M42 and M44 16-valve four-cylinders. Real UK costs, profile gasket and cooling system advice, and honest reliability data.",
-      "image": "https://bmwengine.uk/images/bmw/hero/318is.jpg"
+      "image": "https://bmwengines.uk/images/bmw/hero/318is.jpg"
     },
     "jsonLd": {
       "@context": "https://schema.org",
@@ -30,19 +30,19 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://bmwengine.uk/"
+              "item": "https://bmwengines.uk/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "3 Series",
-              "item": "https://bmwengine.uk/3-series/"
+              "item": "https://bmwengines.uk/3-series/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "318is",
-              "item": "https://bmwengine.uk/3-series/318is/"
+              "item": "https://bmwengines.uk/3-series/318is/"
             }
           ]
         },
@@ -54,19 +54,19 @@
               "@type": "ListItem",
               "position": 1,
               "name": "E30 318is (M42B18, 1989–1991)",
-              "url": "https://bmwengine.uk/3-series/e30/"
+              "url": "https://bmwengines.uk/3-series/e30/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "E36 318is (M42B18, 1992–1995)",
-              "url": "https://bmwengine.uk/3-series/e36/"
+              "url": "https://bmwengines.uk/3-series/e36/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "E36 318is (M44B19, 1996–1999)",
-              "url": "https://bmwengine.uk/3-series/e36/"
+              "url": "https://bmwengines.uk/3-series/e36/"
             }
           ]
         },
@@ -78,13 +78,13 @@
               "@type": "ListItem",
               "position": 1,
               "name": "M42B18",
-              "url": "https://bmwengine.uk/engines/m42/"
+              "url": "https://bmwengines.uk/engines/m42/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "M44B19",
-              "url": "https://bmwengine.uk/engines/m44/"
+              "url": "https://bmwengines.uk/engines/m44/"
             }
           ]
         },
@@ -144,8 +144,8 @@
         {
           "@type": "Organization",
           "name": "BMWEngines.uk",
-          "url": "https://bmwengine.uk/",
-          "logo": "https://bmwengine.uk/images/bmwengines-logo.png",
+          "url": "https://bmwengines.uk/",
+          "logo": "https://bmwengines.uk/images/bmwengines-logo.png",
           "parentOrganization": {
             "@type": "Organization",
             "name": "Engine Finders"
@@ -181,7 +181,7 @@
         {
           "@type": "WebPage",
           "name": "BMW 318is Engine Replacement Cost UK — Compare Quotes",
-          "url": "https://bmwengine.uk/3-series/318is/",
+          "url": "https://bmwengines.uk/3-series/318is/",
           "author": {
             "@type": "Organization",
             "name": "BMWEngines.uk Editorial Team"

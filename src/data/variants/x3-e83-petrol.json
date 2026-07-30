@@ -5,20 +5,20 @@
     "titleCharCount": 59,
     "description": "BMW X3 E83 petrol engines — 2.0i (N46), 2.5i (M54), 3.0i (M54). Real UK costs, cooling system & VANOS insight, and honest reliability data. Get free quotes from 20+ vetted BMW specialists today.",
     "descriptionCharCount": 159,
-    "canonical": "https://bmwengine.uk/x3/e83-petrol/",
+    "canonical": "https://bmwengines.uk/x3/e83-petrol/",
     "openGraph": {
       "title": "X3 E83 Petrol Engine Replacement Cost UK — Compare Quotes",
       "description": "BMW X3 E83 petrol engines — 2.0i (N46), 2.5i (M54), 3.0i (M54). Real UK costs, cooling system & VANOS insight, and honest reliability data. Get free quotes from 20+ vetted BMW specialists today.",
       "type": "website",
-      "url": "https://bmwengine.uk/x3/e83-petrol/",
-      "image": "https://bmwengine.uk/images/bmw/hero/x3-e83-petrol.jpg",
+      "url": "https://bmwengines.uk/x3/e83-petrol/",
+      "image": "https://bmwengines.uk/images/bmw/hero/x3-e83-petrol.jpg",
       "siteName": "BMWEngines.uk"
     },
     "twitter": {
       "card": "summary_large_image",
       "title": "X3 E83 Petrol Engine Replacement Cost UK — Compare Quotes",
       "description": "BMW X3 E83 petrol engines — 2.0i (N46), 2.5i (M54), 3.0i (M54). Real UK costs, cooling system & VANOS insight, and honest reliability data.",
-      "image": "https://bmwengine.uk/images/bmw/hero/x3-e83-petrol.jpg"
+      "image": "https://bmwengines.uk/images/bmw/hero/x3-e83-petrol.jpg"
     },
     "jsonLd": {
       "@context": "https://schema.org",
@@ -30,19 +30,19 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://bmwengine.uk/"
+              "item": "https://bmwengines.uk/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "X3",
-              "item": "https://bmwengine.uk/x3/"
+              "item": "https://bmwengines.uk/x3/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "E83 Petrol",
-              "item": "https://bmwengine.uk/x3/e83-petrol/"
+              "item": "https://bmwengines.uk/x3/e83-petrol/"
             }
           ]
         },
@@ -54,19 +54,19 @@
               "@type": "ListItem",
               "position": 1,
               "name": "2.0i (N46B20, 2003–2010)",
-              "url": "https://bmwengine.uk/x3/e83/"
+              "url": "https://bmwengines.uk/x3/e83/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "2.5i (M54B25, 2003–2006)",
-              "url": "https://bmwengine.uk/x3/e83/"
+              "url": "https://bmwengines.uk/x3/e83/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "3.0i (M54B30, 2003–2010)",
-              "url": "https://bmwengine.uk/x3/e83/"
+              "url": "https://bmwengines.uk/x3/e83/"
             }
           ]
         },
@@ -78,19 +78,19 @@
               "@type": "ListItem",
               "position": 1,
               "name": "N46B20 (2.0L 4-cyl)",
-              "url": "https://bmwengine.uk/engines/n46/"
+              "url": "https://bmwengines.uk/engines/n46/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "M54B25 (2.5L Straight-6)",
-              "url": "https://bmwengine.uk/engines/m54/"
+              "url": "https://bmwengines.uk/engines/m54/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "M54B30 (3.0L Straight-6)",
-              "url": "https://bmwengine.uk/engines/m54/"
+              "url": "https://bmwengines.uk/engines/m54/"
             }
           ]
         },
@@ -150,8 +150,8 @@
         {
           "@type": "Organization",
           "name": "BMWEngines.uk",
-          "url": "https://bmwengine.uk/",
-          "logo": "https://bmwengine.uk/images/bmwengines-logo.png",
+          "url": "https://bmwengines.uk/",
+          "logo": "https://bmwengines.uk/images/bmwengines-logo.png",
           "parentOrganization": {
             "@type": "Organization",
             "name": "Engine Finders"
@@ -187,7 +187,7 @@
         {
           "@type": "WebPage",
           "name": "X3 E83 Petrol Engine Replacement Cost UK — Compare Quotes",
-          "url": "https://bmwengine.uk/x3/e83-petrol/",
+          "url": "https://bmwengines.uk/x3/e83-petrol/",
           "author": {
             "@type": "Organization",
             "name": "BMWEngines.uk Editorial Team"

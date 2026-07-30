@@ -5,20 +5,20 @@
     "titleCharCount": 58,
     "description": "Every BMW 760i/760Li engine — N73, N74, S68. Real UK costs, HPFP, cooling and reliability data for V12 & V8 flagships. Get free quotes from 20+ vetted BMW specialists today.",
     "descriptionCharCount": 159,
-    "canonical": "https://bmwengine.uk/7-series/760i/",
+    "canonical": "https://bmwengines.uk/7-series/760i/",
     "openGraph": {
       "title": "760i Engine Replacement Cost UK — Compare Quotes",
       "description": "Every BMW 760i/760Li engine — N73, N74, S68. Real UK costs, HPFP, cooling and reliability data for V12 & V8 flagships. Get free quotes from 20+ vetted BMW specialists today.",
       "type": "website",
-      "url": "https://bmwengine.uk/7-series/760i/",
-      "image": "https://bmwengine.uk/images/bmw/hero/7-series-760i.jpg",
+      "url": "https://bmwengines.uk/7-series/760i/",
+      "image": "https://bmwengines.uk/images/bmw/hero/7-series-760i.jpg",
       "siteName": "BMWEngines.uk"
     },
     "twitter": {
       "card": "summary_large_image",
       "title": "760i Engine Replacement Cost UK — Compare Quotes",
       "description": "Every BMW 760i/760Li engine — N73, N74, S68. Real UK costs, HPFP, cooling and reliability data for V12 & V8 flagships.",
-      "image": "https://bmwengine.uk/images/bmw/hero/7-series-760i.jpg"
+      "image": "https://bmwengines.uk/images/bmw/hero/7-series-760i.jpg"
     },
     "jsonLd": {
       "@context": "https://schema.org",
@@ -30,19 +30,19 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://bmwengine.uk/"
+              "item": "https://bmwengines.uk/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "7 Series",
-              "item": "https://bmwengine.uk/7-series/"
+              "item": "https://bmwengines.uk/7-series/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "760i",
-              "item": "https://bmwengine.uk/7-series/760i/"
+              "item": "https://bmwengines.uk/7-series/760i/"
             }
           ]
         },
@@ -54,19 +54,19 @@
               "@type": "ListItem",
               "position": 1,
               "name": "7 Series E65/E66 760i (N73B60, 2003-2008)",
-              "url": "https://bmwengine.uk/7-series/e65/"
+              "url": "https://bmwengines.uk/7-series/e65/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "7 Series F01/F02 760i (N74B60A, 2009-2015)",
-              "url": "https://bmwengine.uk/7-series/f01/"
+              "url": "https://bmwengines.uk/7-series/f01/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "7 Series G70 760i (S68, 2023-present)",
-              "url": "https://bmwengine.uk/7-series/g70/"
+              "url": "https://bmwengines.uk/7-series/g70/"
             }
           ]
         },
@@ -78,19 +78,19 @@
               "@type": "ListItem",
               "position": 1,
               "name": "N73B60",
-              "url": "https://bmwengine.uk/engines/n73/"
+              "url": "https://bmwengines.uk/engines/n73/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "N74B60A",
-              "url": "https://bmwengine.uk/engines/n74/"
+              "url": "https://bmwengines.uk/engines/n74/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "S68",
-              "url": "https://bmwengine.uk/engines/s68/"
+              "url": "https://bmwengines.uk/engines/s68/"
             }
           ]
         },
@@ -150,8 +150,8 @@
         {
           "@type": "Organization",
           "name": "BMWEngines.uk",
-          "url": "https://bmwengine.uk/",
-          "logo": "https://bmwengine.uk/images/bmwengines-logo.png",
+          "url": "https://bmwengines.uk/",
+          "logo": "https://bmwengines.uk/images/bmwengines-logo.png",
           "parentOrganization": {
             "@type": "Organization",
             "name": "Engine Finders"
@@ -187,7 +187,7 @@
         {
           "@type": "WebPage",
           "name": "760i Engine Replacement Cost UK — Compare Quotes",
-          "url": "https://bmwengine.uk/7-series/760i/",
+          "url": "https://bmwengines.uk/7-series/760i/",
           "author": {
             "@type": "Organization",
             "name": "BMWEngines.uk Editorial Team"

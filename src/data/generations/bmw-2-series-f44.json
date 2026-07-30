@@ -15,19 +15,19 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://bmwengine.uk/"
+              "item": "https://bmwengines.uk/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "2 Series",
-              "item": "https://bmwengine.uk/2-series/"
+              "item": "https://bmwengines.uk/2-series/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "BMW 2 Series F44",
-              "item": "https://bmwengine.uk/2-series/f44/"
+              "item": "https://bmwengines.uk/2-series/f44/"
             }
           ]
         },
@@ -39,31 +39,31 @@
               "@type": "ListItem",
               "position": 1,
               "name": "B38A15 Engine",
-              "url": "https://bmwengine.uk/engines/b38/"
+              "url": "https://bmwengines.uk/engines/b38/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "B48A20 Engine",
-              "url": "https://bmwengine.uk/engines/b48/"
+              "url": "https://bmwengines.uk/engines/b48/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "B48A20E Engine (M235i)",
-              "url": "https://bmwengine.uk/engines/b48-m235i/"
+              "url": "https://bmwengines.uk/engines/b48-m235i/"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "B37C15 Engine",
-              "url": "https://bmwengine.uk/engines/b37/"
+              "url": "https://bmwengines.uk/engines/b37/"
             },
             {
               "@type": "ListItem",
               "position": 5,
               "name": "B47D20 Engine",
-              "url": "https://bmwengine.uk/engines/b47/"
+              "url": "https://bmwengines.uk/engines/b47/"
             }
           ]
         },
@@ -75,43 +75,43 @@
               "@type": "ListItem",
               "position": 1,
               "name": "216i",
-              "url": "https://bmwengine.uk/2-series/f44/216i/"
+              "url": "https://bmwengines.uk/2-series/f44/216i/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "218i",
-              "url": "https://bmwengine.uk/2-series/f44/218i/"
+              "url": "https://bmwengines.uk/2-series/f44/218i/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "220i",
-              "url": "https://bmwengine.uk/2-series/f44/220i/"
+              "url": "https://bmwengines.uk/2-series/f44/220i/"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "M235i xDrive",
-              "url": "https://bmwengine.uk/2-series/f44/m235i/"
+              "url": "https://bmwengines.uk/2-series/f44/m235i/"
             },
             {
               "@type": "ListItem",
               "position": 5,
               "name": "216d",
-              "url": "https://bmwengine.uk/2-series/f44/216d/"
+              "url": "https://bmwengines.uk/2-series/f44/216d/"
             },
             {
               "@type": "ListItem",
               "position": 6,
               "name": "218d",
-              "url": "https://bmwengine.uk/2-series/f44/218d/"
+              "url": "https://bmwengines.uk/2-series/f44/218d/"
             },
             {
               "@type": "ListItem",
               "position": 7,
               "name": "220d",
-              "url": "https://bmwengine.uk/2-series/f44/220d/"
+              "url": "https://bmwengines.uk/2-series/f44/220d/"
             }
           ]
         },
@@ -203,8 +203,8 @@
         {
           "@type": "Organization",
           "name": "BMWEngines.uk",
-          "url": "https://bmwengine.uk/",
-          "logo": "https://bmwengine.uk/images/bmwengines-logo.png",
+          "url": "https://bmwengines.uk/",
+          "logo": "https://bmwengines.uk/images/bmwengines-logo.png",
           "parentOrganization": {
             "@type": "Organization",
             "name": "Engine Finders"
@@ -229,7 +229,7 @@
         {
           "@type": "WebPage",
           "name": "F44 Engine Replacement Cost UK — Compare Quotes",
-          "url": "https://bmwengine.uk/2-series/f44/",
+          "url": "https://bmwengines.uk/2-series/f44/",
           "author": {
             "@type": "Organization",
             "name": "BMWEngines.uk Editorial Team"

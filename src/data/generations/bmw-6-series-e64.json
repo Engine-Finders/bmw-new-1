@@ -15,19 +15,19 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://bmwengine.uk/"
+              "item": "https://bmwengines.uk/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "6 Series",
-              "item": "https://bmwengine.uk/6-series/"
+              "item": "https://bmwengines.uk/6-series/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "BMW 6 Series E64",
-              "item": "https://bmwengine.uk/6-series/e64/"
+              "item": "https://bmwengines.uk/6-series/e64/"
             }
           ]
         },
@@ -39,31 +39,31 @@
               "@type": "ListItem",
               "position": 1,
               "name": "N52B30 Engine",
-              "url": "https://bmwengine.uk/engines/n52/"
+              "url": "https://bmwengines.uk/engines/n52/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "N53B30 Engine",
-              "url": "https://bmwengine.uk/engines/n53/"
+              "url": "https://bmwengines.uk/engines/n53/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "N62B44 / N62B48 Engine",
-              "url": "https://bmwengine.uk/engines/n62/"
+              "url": "https://bmwengines.uk/engines/n62/"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "M57D30 (306D5) Engine",
-              "url": "https://bmwengine.uk/engines/m57/"
+              "url": "https://bmwengines.uk/engines/m57/"
             },
             {
               "@type": "ListItem",
               "position": 5,
               "name": "S85B50 Engine",
-              "url": "https://bmwengine.uk/engines/s85/"
+              "url": "https://bmwengines.uk/engines/s85/"
             }
           ]
         },
@@ -75,31 +75,31 @@
               "@type": "ListItem",
               "position": 1,
               "name": "630i",
-              "url": "https://bmwengine.uk/6-series/630i/"
+              "url": "https://bmwengines.uk/6-series/630i/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "645Ci",
-              "url": "https://bmwengine.uk/6-series/645ci/"
+              "url": "https://bmwengines.uk/6-series/645ci/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "650i",
-              "url": "https://bmwengine.uk/6-series/650i/"
+              "url": "https://bmwengines.uk/6-series/650i/"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "635d",
-              "url": "https://bmwengine.uk/6-series/635d/"
+              "url": "https://bmwengines.uk/6-series/635d/"
             },
             {
               "@type": "ListItem",
               "position": 5,
               "name": "M6",
-              "url": "https://bmwengine.uk/6-series/m6/"
+              "url": "https://bmwengines.uk/6-series/m6/"
             }
           ]
         },
@@ -191,8 +191,8 @@
         {
           "@type": "Organization",
           "name": "BMWEngines.uk",
-          "url": "https://bmwengine.uk/",
-          "logo": "https://bmwengine.uk/images/bmwengines-logo.png",
+          "url": "https://bmwengines.uk/",
+          "logo": "https://bmwengines.uk/images/bmwengines-logo.png",
           "parentOrganization": {
             "@type": "Organization",
             "name": "Engine Finders"
@@ -228,7 +228,7 @@
         {
           "@type": "WebPage",
           "name": "E64 Engine Replacement Cost UK — Compare Quotes",
-          "url": "https://bmwengine.uk/6-series/e64/",
+          "url": "https://bmwengines.uk/6-series/e64/",
           "author": {
             "@type": "Organization",
             "name": "BMWEngines.uk Editorial Team"

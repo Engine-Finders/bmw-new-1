@@ -5,20 +5,20 @@
     "titleCharCount": 53,
     "description": "Every BMW 520e engine — B48B20A 2.0 PHEV. Real UK costs, cooling, battery and reliability data. Get free quotes from 20+ vetted BMW specialists today.",
     "descriptionCharCount": 159,
-    "canonical": "https://bmwengine.uk/5-series/520e/",
+    "canonical": "https://bmwengines.uk/5-series/520e/",
     "openGraph": {
       "title": "520e Engine Replacement Cost UK — Compare Quotes",
       "description": "Every BMW 520e engine — B48B20A 2.0 PHEV. Real UK costs, cooling, battery and reliability data. Get free quotes from 20+ vetted BMW specialists today.",
       "type": "website",
-      "url": "https://bmwengine.uk/5-series/520e/",
-      "image": "https://bmwengine.uk/images/bmw/hero/5-series-520e.jpg",
+      "url": "https://bmwengines.uk/5-series/520e/",
+      "image": "https://bmwengines.uk/images/bmw/hero/5-series-520e.jpg",
       "siteName": "BMWEngines.uk"
     },
     "twitter": {
       "card": "summary_large_image",
       "title": "520e Engine Replacement Cost UK — Compare Quotes",
       "description": "Every BMW 520e engine — B48B20A 2.0 PHEV. Real UK costs, cooling, battery and reliability data.",
-      "image": "https://bmwengine.uk/images/bmw/hero/5-series-520e.jpg"
+      "image": "https://bmwengines.uk/images/bmw/hero/5-series-520e.jpg"
     },
     "jsonLd": {
       "@context": "https://schema.org",
@@ -30,25 +30,25 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://bmwengine.uk/"
+              "item": "https://bmwengines.uk/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "5 Series",
-              "item": "https://bmwengine.uk/5-series/"
+              "item": "https://bmwengines.uk/5-series/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "G30",
-              "item": "https://bmwengine.uk/5-series/g30/"
+              "item": "https://bmwengines.uk/5-series/g30/"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "520e",
-              "item": "https://bmwengine.uk/5-series/520e/"
+              "item": "https://bmwengines.uk/5-series/520e/"
             }
           ]
         },
@@ -60,7 +60,7 @@
               "@type": "ListItem",
               "position": 1,
               "name": "5 Series G30/G31 520e (B48B20A PHEV, 2021-2023)",
-              "url": "https://bmwengine.uk/5-series/g30/"
+              "url": "https://bmwengines.uk/5-series/g30/"
             }
           ]
         },
@@ -72,7 +72,7 @@
               "@type": "ListItem",
               "position": 1,
               "name": "B48B20A (520e PHEV)",
-              "url": "https://bmwengine.uk/engines/b48/"
+              "url": "https://bmwengines.uk/engines/b48/"
             }
           ]
         },
@@ -132,8 +132,8 @@
         {
           "@type": "Organization",
           "name": "BMWEngines.uk",
-          "url": "https://bmwengine.uk/",
-          "logo": "https://bmwengine.uk/images/bmwengines-logo.png",
+          "url": "https://bmwengines.uk/",
+          "logo": "https://bmwengines.uk/images/bmwengines-logo.png",
           "parentOrganization": {
             "@type": "Organization",
             "name": "Engine Finders"
@@ -169,7 +169,7 @@
         {
           "@type": "WebPage",
           "name": "520e Engine Replacement Cost UK — Compare Quotes",
-          "url": "https://bmwengine.uk/5-series/520e/",
+          "url": "https://bmwengines.uk/5-series/520e/",
           "author": {
             "@type": "Organization",
             "name": "BMWEngines.uk Editorial Team"

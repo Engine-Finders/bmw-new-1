@@ -3,20 +3,20 @@
     "slug": "m88-s38",
     "title": "BMW M88 / S38 Engine — Reliability & Replacement Cost",
     "description": "The M88/S38 Motorsport six is robust but maintenance is specialist-only — backed by real UK enquiries [ESTIMATED]. Compare quotes from vetted specialists today.",
-    "canonical": "https://bmwengine.uk/engines/m88-s38/",
+    "canonical": "https://bmwengines.uk/engines/m88-s38/",
     "openGraph": {
       "title": "BMW M88 / S38 Engine — Reliability & Replacement Cost",
       "description": "The M88/S38 Motorsport six is robust but maintenance is specialist-only — backed by real UK enquiries [ESTIMATED]. Compare quotes from vetted specialists today.",
       "type": "website",
-      "url": "https://bmwengine.uk/engines/m88-s38/",
-      "image": "https://bmwengine.uk/images/bmw/engines/m88-s38.jpg",
-      "siteName": "bmwengine.uk"
+      "url": "https://bmwengines.uk/engines/m88-s38/",
+      "image": "https://bmwengines.uk/images/bmw/engines/m88-s38.jpg",
+      "siteName": "bmwengines.uk"
     },
     "twitter": {
       "card": "summary_large_image",
       "title": "BMW M88 / S38 Engine — Reliability & Replacement Cost",
       "description": "The M88/S38 Motorsport six is robust but maintenance is specialist-only — backed by real UK enquiries [ESTIMATED]. Compare quotes from vetted specialists today.",
-      "image": "https://bmwengine.uk/images/bmw/engines/m88-s38.jpg"
+      "image": "https://bmwengines.uk/images/bmw/engines/m88-s38.jpg"
     },
     "jsonLd": {
       "@context": "https://schema.org",
@@ -28,19 +28,19 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://bmwengine.uk/"
+              "item": "https://bmwengines.uk/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "Engines",
-              "item": "https://bmwengine.uk/engines/"
+              "item": "https://bmwengines.uk/engines/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "M88 / S38",
-              "item": "https://bmwengine.uk/engines/m88-s38/"
+              "item": "https://bmwengines.uk/engines/m88-s38/"
             }
           ]
         },
@@ -52,37 +52,37 @@
               "@type": "ListItem",
               "position": 1,
               "name": "BMW M1 E26 (M88/1)",
-              "url": "https://bmwengine.uk/models/m1/e26/"
+              "url": "https://bmwengines.uk/models/m1/e26/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "BMW 5 Series E28 M5 (M88/3)",
-              "url": "https://bmwengine.uk/models/5-series/e28/"
+              "url": "https://bmwengines.uk/models/5-series/e28/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "BMW 6 Series E24 M635CSi (M88/3)",
-              "url": "https://bmwengine.uk/models/6-series/e24/"
+              "url": "https://bmwengines.uk/models/6-series/e24/"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "BMW 5 Series E34 M5 (S38B36/B38)",
-              "url": "https://bmwengine.uk/models/5-series/e34/"
+              "url": "https://bmwengines.uk/models/5-series/e34/"
             },
             {
               "@type": "ListItem",
               "position": 5,
               "name": "BMW 6 Series E24 M6 (S38B35 – US)",
-              "url": "https://bmwengine.uk/models/6-series/e24/"
+              "url": "https://bmwengines.uk/models/6-series/e24/"
             },
             {
               "@type": "ListItem",
               "position": 6,
               "name": "BMW 5 Series E28 M5 (S38B35 – US)",
-              "url": "https://bmwengine.uk/models/5-series/e28/"
+              "url": "https://bmwengines.uk/models/5-series/e28/"
             }
           ]
         },
@@ -133,9 +133,9 @@
         },
         {
           "@type": "Organization",
-          "name": "bmwengine.uk",
-          "url": "https://bmwengine.uk/",
-          "logo": "https://bmwengine.uk/images/logo.png",
+          "name": "bmwengines.uk",
+          "url": "https://bmwengines.uk/",
+          "logo": "https://bmwengines.uk/images/logo.png",
           "parentOrganization": {
             "@type": "Organization",
             "name": "Engine Finders"
@@ -161,7 +161,7 @@
           "serviceType": "BMW M88 / S38 Engine Replacement",
           "provider": {
             "@type": "Organization",
-            "name": "bmwengine.uk"
+            "name": "bmwengines.uk"
           },
           "areaServed": "GB",
           "offers": {
@@ -175,10 +175,10 @@
         {
           "@type": "Dataset",
           "name": "BMW M88 / S38 UK Enquiry & Reliability Data 2025",
-          "description": "Proprietary UK enquiry volumes and reliability scoring data for the BMW M88/S38, sourced from bmwengine.uk's specialist marketplace activity and workshop consensus.",
+          "description": "Proprietary UK enquiry volumes and reliability scoring data for the BMW M88/S38, sourced from bmwengines.uk's specialist marketplace activity and workshop consensus.",
           "creator": {
             "@type": "Organization",
-            "name": "bmwengine.uk"
+            "name": "bmwengines.uk"
           },
           "temporalCoverage": "2025",
           "spatialCoverage": "United Kingdom"
@@ -186,14 +186,14 @@
         {
           "@type": "WebPage",
           "name": "BMW M88 / S38 Engine — Reliability & Replacement Cost",
-          "url": "https://bmwengine.uk/engines/m88-s38/",
+          "url": "https://bmwengines.uk/engines/m88-s38/",
           "author": {
             "@type": "Organization",
-            "name": "bmwengine.uk Editorial Team"
+            "name": "bmwengines.uk Editorial Team"
           },
           "reviewedBy": {
             "@type": "Organization",
-            "name": "bmwengine.uk Specialist Network"
+            "name": "bmwengines.uk Specialist Network"
           },
           "datePublished": "2026-07-14",
           "dateModified": "2026-07-14"

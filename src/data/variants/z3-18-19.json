@@ -5,20 +5,20 @@
     "titleCharCount": 55,
     "description": "BMW Z3 1.8 / 1.9 (M43/M44) engine costs, reliability, and common faults. Cooling system, oil leaks and timing chain insights. Get free quotes from 20+ vetted BMW specialists today.",
     "descriptionCharCount": 159,
-    "canonical": "https://bmwengine.uk/z3/18-19/",
+    "canonical": "https://bmwengines.uk/z3/18-19/",
     "openGraph": {
       "title": "Z3 1.8 / 1.9 Engine Cost UK — Compare Quotes",
       "description": "BMW Z3 1.8 / 1.9 (M43/M44) engine costs, reliability, and common faults. Cooling system, oil leaks and timing chain insights. Get free quotes from 20+ vetted BMW specialists today.",
       "type": "website",
-      "url": "https://bmwengine.uk/z3/18-19/",
-      "image": "https://bmwengine.uk/images/bmw/hero/z3-18-19.jpg",
+      "url": "https://bmwengines.uk/z3/18-19/",
+      "image": "https://bmwengines.uk/images/bmw/hero/z3-18-19.jpg",
       "siteName": "BMWEngines.uk"
     },
     "twitter": {
       "card": "summary_large_image",
       "title": "Z3 1.8 / 1.9 Engine Cost UK — Compare Quotes",
       "description": "BMW Z3 1.8 / 1.9 (M43/M44) engine costs, reliability, and common faults. Cooling system, oil leaks and timing chain insights.",
-      "image": "https://bmwengine.uk/images/bmw/hero/z3-18-19.jpg"
+      "image": "https://bmwengines.uk/images/bmw/hero/z3-18-19.jpg"
     },
     "jsonLd": {
       "@context": "https://schema.org",
@@ -30,19 +30,19 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://bmwengine.uk/"
+              "item": "https://bmwengines.uk/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "Z3",
-              "item": "https://bmwengine.uk/z3/"
+              "item": "https://bmwengines.uk/z3/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "1.8 / 1.9",
-              "item": "https://bmwengine.uk/z3/18-19/"
+              "item": "https://bmwengines.uk/z3/18-19/"
             }
           ]
         },
@@ -54,19 +54,19 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Z3 Roadster (1995–1998) M43B18",
-              "url": "https://bmwengine.uk/z3/e36-7/"
+              "url": "https://bmwengines.uk/z3/e36-7/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "Z3 Roadster (1998–2002) M43B19",
-              "url": "https://bmwengine.uk/z3/e36-7/"
+              "url": "https://bmwengines.uk/z3/e36-7/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "Z3 Roadster (1995–1999) M44B19",
-              "url": "https://bmwengine.uk/z3/e36-7/"
+              "url": "https://bmwengines.uk/z3/e36-7/"
             }
           ]
         },
@@ -78,19 +78,19 @@
               "@type": "ListItem",
               "position": 1,
               "name": "M43B18",
-              "url": "https://bmwengine.uk/engines/m43/"
+              "url": "https://bmwengines.uk/engines/m43/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "M43B19",
-              "url": "https://bmwengine.uk/engines/m43/"
+              "url": "https://bmwengines.uk/engines/m43/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "M44B19",
-              "url": "https://bmwengine.uk/engines/m44/"
+              "url": "https://bmwengines.uk/engines/m44/"
             }
           ]
         },
@@ -150,8 +150,8 @@
         {
           "@type": "Organization",
           "name": "BMWEngines.uk",
-          "url": "https://bmwengine.uk/",
-          "logo": "https://bmwengine.uk/images/bmwengines-logo.png",
+          "url": "https://bmwengines.uk/",
+          "logo": "https://bmwengines.uk/images/bmwengines-logo.png",
           "parentOrganization": {
             "@type": "Organization",
             "name": "Engine Finders"
@@ -187,7 +187,7 @@
         {
           "@type": "WebPage",
           "name": "Z3 1.8 / 1.9 Engine Cost UK — Compare Quotes",
-          "url": "https://bmwengine.uk/z3/18-19/",
+          "url": "https://bmwengines.uk/z3/18-19/",
           "author": {
             "@type": "Organization",
             "name": "BMWEngines.uk Editorial Team"

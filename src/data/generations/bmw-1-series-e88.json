@@ -15,19 +15,19 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://bmwengine.uk/"
+              "item": "https://bmwengines.uk/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "1 Series",
-              "item": "https://bmwengine.uk/1-series/"
+              "item": "https://bmwengines.uk/1-series/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "BMW 1 Series E88",
-              "item": "https://bmwengine.uk/1-series/e88/"
+              "item": "https://bmwengines.uk/1-series/e88/"
             }
           ]
         },
@@ -39,61 +39,61 @@
               "@type": "ListItem",
               "position": 1,
               "name": "N43B16 Engine",
-              "url": "https://bmwengine.uk/engines/n43/"
+              "url": "https://bmwengines.uk/engines/n43/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "N45B16 Engine",
-              "url": "https://bmwengine.uk/engines/n45/"
+              "url": "https://bmwengines.uk/engines/n45/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "N46B18/20 Engine",
-              "url": "https://bmwengine.uk/engines/n46/"
+              "url": "https://bmwengines.uk/engines/n46/"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "N43B20 Engine",
-              "url": "https://bmwengine.uk/engines/n43/"
+              "url": "https://bmwengines.uk/engines/n43/"
             },
             {
               "@type": "ListItem",
               "position": 5,
               "name": "N52B30 Engine",
-              "url": "https://bmwengine.uk/engines/n52/"
+              "url": "https://bmwengines.uk/engines/n52/"
             },
             {
               "@type": "ListItem",
               "position": 6,
               "name": "N54B30 Engine",
-              "url": "https://bmwengine.uk/engines/n54/"
+              "url": "https://bmwengines.uk/engines/n54/"
             },
             {
               "@type": "ListItem",
               "position": 7,
               "name": "N55B30 Engine",
-              "url": "https://bmwengine.uk/engines/n55/"
+              "url": "https://bmwengines.uk/engines/n55/"
             },
             {
               "@type": "ListItem",
               "position": 8,
               "name": "M47D20 Engine",
-              "url": "https://bmwengine.uk/engines/m47/"
+              "url": "https://bmwengines.uk/engines/m47/"
             },
             {
               "@type": "ListItem",
               "position": 9,
               "name": "N47D20A/C Engine",
-              "url": "https://bmwengine.uk/engines/n47/"
+              "url": "https://bmwengines.uk/engines/n47/"
             },
             {
               "@type": "ListItem",
               "position": 10,
               "name": "N47D20D Engine",
-              "url": "https://bmwengine.uk/engines/n47/"
+              "url": "https://bmwengines.uk/engines/n47/"
             }
           ]
         },
@@ -105,55 +105,55 @@
               "@type": "ListItem",
               "position": 1,
               "name": "118d",
-              "url": "https://bmwengine.uk/1-series/e88/118d/"
+              "url": "https://bmwengines.uk/1-series/e88/118d/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "120d",
-              "url": "https://bmwengine.uk/1-series/e88/120d/"
+              "url": "https://bmwengines.uk/1-series/e88/120d/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "123d",
-              "url": "https://bmwengine.uk/1-series/e88/123d/"
+              "url": "https://bmwengines.uk/1-series/e88/123d/"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "118i",
-              "url": "https://bmwengine.uk/1-series/e88/118i/"
+              "url": "https://bmwengines.uk/1-series/e88/118i/"
             },
             {
               "@type": "ListItem",
               "position": 5,
               "name": "120i",
-              "url": "https://bmwengine.uk/1-series/e88/120i/"
+              "url": "https://bmwengines.uk/1-series/e88/120i/"
             },
             {
               "@type": "ListItem",
               "position": 6,
               "name": "125i",
-              "url": "https://bmwengine.uk/1-series/e88/125i/"
+              "url": "https://bmwengines.uk/1-series/e88/125i/"
             },
             {
               "@type": "ListItem",
               "position": 7,
               "name": "128i",
-              "url": "https://bmwengine.uk/1-series/e88/128i/"
+              "url": "https://bmwengines.uk/1-series/e88/128i/"
             },
             {
               "@type": "ListItem",
               "position": 8,
               "name": "130i",
-              "url": "https://bmwengine.uk/1-series/e88/130i/"
+              "url": "https://bmwengines.uk/1-series/e88/130i/"
             },
             {
               "@type": "ListItem",
               "position": 9,
               "name": "135i",
-              "url": "https://bmwengine.uk/1-series/e88/135i/"
+              "url": "https://bmwengines.uk/1-series/e88/135i/"
             }
           ]
         },
@@ -244,9 +244,9 @@
         },
         {
           "@type": "Organization",
-          "name": "BMWEngine.uk",
-          "url": "https://bmwengine.uk/",
-          "logo": "https://bmwengine.uk/images/bmwengines-logo.png",
+          "name": "bmwengines.uk",
+          "url": "https://bmwengines.uk/",
+          "logo": "https://bmwengines.uk/images/bmwengines-logo.png",
           "parentOrganization": {
             "@type": "Organization",
             "name": "Engine Finders"
@@ -257,7 +257,7 @@
           "serviceType": "BMW 1 Series E88 Engine Replacement",
           "provider": {
             "@type": "Organization",
-            "name": "BMWEngine.uk"
+            "name": "bmwengines.uk"
           },
           "areaServed": "GB",
           "offers": {
@@ -271,10 +271,10 @@
         {
           "@type": "Dataset",
           "name": "BMW 1 Series E88 UK Engine Enquiry Data 2025",
-          "description": "Proprietary UK enquiry volumes and demand trends for BMW 1 Series E88 engines, sourced from BMWEngine.uk's specialist marketplace activity.",
+          "description": "Proprietary UK enquiry volumes and demand trends for BMW 1 Series E88 engines, sourced from bmwengines.uk's specialist marketplace activity.",
           "creator": {
             "@type": "Organization",
-            "name": "BMWEngine.uk"
+            "name": "bmwengines.uk"
           },
           "temporalCoverage": "2025",
           "spatialCoverage": "United Kingdom"
@@ -282,14 +282,14 @@
         {
           "@type": "WebPage",
           "name": "E88 Engine Replacement Cost UK — Compare Quotes",
-          "url": "https://bmwengine.uk/1-series/e88/",
+          "url": "https://bmwengines.uk/1-series/e88/",
           "author": {
             "@type": "Organization",
-            "name": "BMWEngine.uk Editorial Team"
+            "name": "bmwengines.uk Editorial Team"
           },
           "reviewedBy": {
             "@type": "Organization",
-            "name": "BMWEngine.uk Specialist Network"
+            "name": "bmwengines.uk Specialist Network"
           },
           "datePublished": "2026-07-09",
           "dateModified": "2026-07-09"
@@ -833,7 +833,7 @@
     ]
   },
   "trustCta": {
-    "h2": "Why UK BMW 1 Series E88 Owners Trust BMWEngine.uk",
+    "h2": "Why UK BMW 1 Series E88 Owners Trust bmwengines.uk",
     "trustPoints": [
       {
         "title": "Trusted E88 Engine Suppliers",

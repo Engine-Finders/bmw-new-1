@@ -3,20 +3,20 @@
     "slug": "m70-m73",
     "title": "BMW M70 / M73 Engine — Reliability & Replacement Cost",
     "description": "The M70/M73 V12 is refined but complex and costly to maintain — backed by real UK enquiries [ESTIMATED]. Compare quotes from vetted specialists today.",
-    "canonical": "https://bmwengine.uk/engines/m70-m73/",
+    "canonical": "https://bmwengines.uk/engines/m70-m73/",
     "openGraph": {
       "title": "BMW M70 / M73 Engine — Reliability & Replacement Cost",
       "description": "The M70/M73 V12 is refined but complex and costly to maintain — backed by real UK enquiries [ESTIMATED]. Compare quotes from vetted specialists today.",
       "type": "website",
-      "url": "https://bmwengine.uk/engines/m70-m73/",
-      "image": "https://bmwengine.uk/images/bmw/engines/m70-m73.jpg",
-      "siteName": "bmwengine.uk"
+      "url": "https://bmwengines.uk/engines/m70-m73/",
+      "image": "https://bmwengines.uk/images/bmw/engines/m70-m73.jpg",
+      "siteName": "bmwengines.uk"
     },
     "twitter": {
       "card": "summary_large_image",
       "title": "BMW M70 / M73 Engine — Reliability & Replacement Cost",
       "description": "The M70/M73 V12 is refined but complex and costly to maintain — backed by real UK enquiries [ESTIMATED]. Compare quotes from vetted specialists today.",
-      "image": "https://bmwengine.uk/images/bmw/engines/m70-m73.jpg"
+      "image": "https://bmwengines.uk/images/bmw/engines/m70-m73.jpg"
     },
     "jsonLd": {
       "@context": "https://schema.org",
@@ -28,19 +28,19 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://bmwengine.uk/"
+              "item": "https://bmwengines.uk/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "Engines",
-              "item": "https://bmwengine.uk/engines/"
+              "item": "https://bmwengines.uk/engines/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "M70 / M73",
-              "item": "https://bmwengine.uk/engines/m70-m73/"
+              "item": "https://bmwengines.uk/engines/m70-m73/"
             }
           ]
         },
@@ -52,25 +52,25 @@
               "@type": "ListItem",
               "position": 1,
               "name": "BMW 8 Series E31 850i/850Ci (M70)",
-              "url": "https://bmwengine.uk/models/8-series/e31/"
+              "url": "https://bmwengines.uk/models/8-series/e31/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "BMW 8 Series E31 850Ci (M73)",
-              "url": "https://bmwengine.uk/models/8-series/e31/"
+              "url": "https://bmwengines.uk/models/8-series/e31/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "BMW 7 Series E32 750iL/750i (M70)",
-              "url": "https://bmwengine.uk/models/7-series/e32/"
+              "url": "https://bmwengines.uk/models/7-series/e32/"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "BMW 7 Series E38 750iL/750i (M73)",
-              "url": "https://bmwengine.uk/models/7-series/e38/"
+              "url": "https://bmwengines.uk/models/7-series/e38/"
             }
           ]
         },
@@ -121,9 +121,9 @@
         },
         {
           "@type": "Organization",
-          "name": "bmwengine.uk",
-          "url": "https://bmwengine.uk/",
-          "logo": "https://bmwengine.uk/images/logo.png",
+          "name": "bmwengines.uk",
+          "url": "https://bmwengines.uk/",
+          "logo": "https://bmwengines.uk/images/logo.png",
           "parentOrganization": {
             "@type": "Organization",
             "name": "Engine Finders"
@@ -149,7 +149,7 @@
           "serviceType": "BMW M70 / M73 Engine Replacement",
           "provider": {
             "@type": "Organization",
-            "name": "bmwengine.uk"
+            "name": "bmwengines.uk"
           },
           "areaServed": "GB",
           "offers": {
@@ -163,10 +163,10 @@
         {
           "@type": "Dataset",
           "name": "BMW M70 / M73 UK Enquiry & Reliability Data 2025",
-          "description": "Proprietary UK enquiry volumes and reliability scoring data for the BMW M70/M73, sourced from bmwengine.uk's specialist marketplace activity and workshop consensus.",
+          "description": "Proprietary UK enquiry volumes and reliability scoring data for the BMW M70/M73, sourced from bmwengines.uk's specialist marketplace activity and workshop consensus.",
           "creator": {
             "@type": "Organization",
-            "name": "bmwengine.uk"
+            "name": "bmwengines.uk"
           },
           "temporalCoverage": "2025",
           "spatialCoverage": "United Kingdom"
@@ -174,14 +174,14 @@
         {
           "@type": "WebPage",
           "name": "BMW M70 / M73 Engine — Reliability & Replacement Cost",
-          "url": "https://bmwengine.uk/engines/m70-m73/",
+          "url": "https://bmwengines.uk/engines/m70-m73/",
           "author": {
             "@type": "Organization",
-            "name": "bmwengine.uk Editorial Team"
+            "name": "bmwengines.uk Editorial Team"
           },
           "reviewedBy": {
             "@type": "Organization",
-            "name": "bmwengine.uk Specialist Network"
+            "name": "bmwengines.uk Specialist Network"
           },
           "datePublished": "2026-07-14",
           "dateModified": "2026-07-14"

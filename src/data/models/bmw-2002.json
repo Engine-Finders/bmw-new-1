@@ -9,8 +9,8 @@
       "title": "BMW 2002 Engine Restoration Cost UK — Specialist Guide",
       "description": "Every BMW 2002 engine — M10 to M31. The car that saved BMW, real restoration costs and specialist guidance. Compare prices from 20+ vetted BMW specialists today.",
       "type": "website",
-      "url": "https://bmwengine.uk/2002/",
-      "image": "https://bmwengine.uk/images/bmw-2002-hero.jpg",
+      "url": "https://bmwengines.uk/2002/",
+      "image": "https://bmwengines.uk/images/bmw-2002-hero.jpg",
       "siteName": "BMWEngines.uk"
     },
     "twitter": {
@@ -28,13 +28,13 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://bmwengine.uk/"
+              "item": "https://bmwengines.uk/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "2002",
-              "item": "https://bmwengine.uk/2002/"
+              "item": "https://bmwengines.uk/2002/"
             }
           ]
         },
@@ -46,7 +46,7 @@
               "@type": "ListItem",
               "position": 1,
               "name": "BMW 2002 E10 (1968–1976)",
-              "url": "https://bmwengine.uk/2002/e10/"
+              "url": "https://bmwengines.uk/2002/e10/"
             }
           ]
         },
@@ -58,31 +58,31 @@
               "@type": "ListItem",
               "position": 1,
               "name": "M05 Engine",
-              "url": "https://bmwengine.uk/engines/m05/"
+              "url": "https://bmwengines.uk/engines/m05/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "M10 Engine",
-              "url": "https://bmwengine.uk/engines/m10/"
+              "url": "https://bmwengines.uk/engines/m10/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "M15 Engine",
-              "url": "https://bmwengine.uk/engines/m15/"
+              "url": "https://bmwengines.uk/engines/m15/"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "M31 Engine",
-              "url": "https://bmwengine.uk/engines/m31/"
+              "url": "https://bmwengines.uk/engines/m31/"
             },
             {
               "@type": "ListItem",
               "position": 5,
               "name": "M115 Engine",
-              "url": "https://bmwengine.uk/engines/m115/"
+              "url": "https://bmwengines.uk/engines/m115/"
             }
           ]
         },
@@ -158,8 +158,8 @@
         {
           "@type": "Organization",
           "name": "BMWEngines.uk",
-          "url": "https://bmwengine.uk/",
-          "logo": "https://bmwengine.uk/images/bmwengines-logo.png",
+          "url": "https://bmwengines.uk/",
+          "logo": "https://bmwengines.uk/images/bmwengines-logo.png",
           "parentOrganization": {
             "@type": "Organization",
             "name": "Engine Finders"
@@ -195,7 +195,7 @@
         {
           "@type": "WebPage",
           "name": "BMW 2002 Engine Restoration Cost UK — Specialist Guide",
-          "url": "https://bmwengine.uk/2002/",
+          "url": "https://bmwengines.uk/2002/",
           "author": {
             "@type": "Organization",
             "name": "BMWEngines.uk Editorial Team"

@@ -15,19 +15,19 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://bmwengine.uk/"
+              "item": "https://bmwengines.uk/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "Z4",
-              "item": "https://bmwengine.uk/z4/"
+              "item": "https://bmwengines.uk/z4/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "BMW Z4 G29",
-              "item": "https://bmwengine.uk/z4/g29/"
+              "item": "https://bmwengines.uk/z4/g29/"
             }
           ]
         },
@@ -39,19 +39,19 @@
               "@type": "ListItem",
               "position": 1,
               "name": "B46B20B Engine (sDrive20i)",
-              "url": "https://bmwengine.uk/engines/b46/"
+              "url": "https://bmwengines.uk/engines/b46/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "B48B20B Engine (sDrive30i)",
-              "url": "https://bmwengine.uk/engines/b48/"
+              "url": "https://bmwengines.uk/engines/b48/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "B58B30C Engine (M40i)",
-              "url": "https://bmwengine.uk/engines/b58/"
+              "url": "https://bmwengines.uk/engines/b58/"
             }
           ]
         },
@@ -63,19 +63,19 @@
               "@type": "ListItem",
               "position": 1,
               "name": "sDrive20i",
-              "url": "https://bmwengine.uk/z4/g29/sdrive20i/"
+              "url": "https://bmwengines.uk/z4/g29/sdrive20i/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "sDrive30i",
-              "url": "https://bmwengine.uk/z4/g29/sdrive30i/"
+              "url": "https://bmwengines.uk/z4/g29/sdrive30i/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "M40i",
-              "url": "https://bmwengine.uk/z4/g29/m40i/"
+              "url": "https://bmwengines.uk/z4/g29/m40i/"
             }
           ]
         },
@@ -167,8 +167,8 @@
         {
           "@type": "Organization",
           "name": "BMWEngines.uk",
-          "url": "https://bmwengine.uk/",
-          "logo": "https://bmwengine.uk/images/bmwengines-logo.png",
+          "url": "https://bmwengines.uk/",
+          "logo": "https://bmwengines.uk/images/bmwengines-logo.png",
           "parentOrganization": {
             "@type": "Organization",
             "name": "Engine Finders"
@@ -193,7 +193,7 @@
         {
           "@type": "WebPage",
           "name": "G29 Engine Replacement Cost UK — Compare Quotes",
-          "url": "https://bmwengine.uk/z4/g29/",
+          "url": "https://bmwengines.uk/z4/g29/",
           "author": {
             "@type": "Organization",
             "name": "BMWEngines.uk Editorial Team"

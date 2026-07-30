@@ -15,19 +15,19 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://bmwengine.uk/"
+              "item": "https://bmwengines.uk/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "6 Series",
-              "item": "https://bmwengine.uk/6-series/"
+              "item": "https://bmwengines.uk/6-series/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "BMW 6 Series E24",
-              "item": "https://bmwengine.uk/6-series/e24/"
+              "item": "https://bmwengines.uk/6-series/e24/"
             }
           ]
         },
@@ -39,49 +39,49 @@
               "@type": "ListItem",
               "position": 1,
               "name": "M30B28 Engine",
-              "url": "https://bmwengine.uk/engines/m30/"
+              "url": "https://bmwengines.uk/engines/m30/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "M30B30V Engine",
-              "url": "https://bmwengine.uk/engines/m30/"
+              "url": "https://bmwengines.uk/engines/m30/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "M30B32 Engine",
-              "url": "https://bmwengine.uk/engines/m30/"
+              "url": "https://bmwengines.uk/engines/m30/"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "M90 Engine",
-              "url": "https://bmwengine.uk/engines/m90/"
+              "url": "https://bmwengines.uk/engines/m90/"
             },
             {
               "@type": "ListItem",
               "position": 5,
               "name": "M30B34 Engine",
-              "url": "https://bmwengine.uk/engines/m30/"
+              "url": "https://bmwengines.uk/engines/m30/"
             },
             {
               "@type": "ListItem",
               "position": 6,
               "name": "M30B35 Engine",
-              "url": "https://bmwengine.uk/engines/m30/"
+              "url": "https://bmwengines.uk/engines/m30/"
             },
             {
               "@type": "ListItem",
               "position": 7,
               "name": "M88/3 Engine",
-              "url": "https://bmwengine.uk/engines/m88/"
+              "url": "https://bmwengines.uk/engines/m88/"
             },
             {
               "@type": "ListItem",
               "position": 8,
               "name": "S38 Engine",
-              "url": "https://bmwengine.uk/engines/s38/"
+              "url": "https://bmwengines.uk/engines/s38/"
             }
           ]
         },
@@ -93,43 +93,43 @@
               "@type": "ListItem",
               "position": 1,
               "name": "628CSi",
-              "url": "https://bmwengine.uk/6-series/e24/628csi/"
+              "url": "https://bmwengines.uk/6-series/e24/628csi/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "630CS",
-              "url": "https://bmwengine.uk/6-series/e24/630cs/"
+              "url": "https://bmwengines.uk/6-series/e24/630cs/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "630CSi",
-              "url": "https://bmwengine.uk/6-series/e24/630csi/"
+              "url": "https://bmwengines.uk/6-series/e24/630csi/"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "633CSi",
-              "url": "https://bmwengine.uk/6-series/e24/633csi/"
+              "url": "https://bmwengines.uk/6-series/e24/633csi/"
             },
             {
               "@type": "ListItem",
               "position": 5,
               "name": "635CSi",
-              "url": "https://bmwengine.uk/6-series/e24/635csi/"
+              "url": "https://bmwengines.uk/6-series/e24/635csi/"
             },
             {
               "@type": "ListItem",
               "position": 6,
               "name": "M635CSi",
-              "url": "https://bmwengine.uk/6-series/e24/m635csi/"
+              "url": "https://bmwengines.uk/6-series/e24/m635csi/"
             },
             {
               "@type": "ListItem",
               "position": 7,
               "name": "M6",
-              "url": "https://bmwengine.uk/6-series/e24/m6/"
+              "url": "https://bmwengines.uk/6-series/e24/m6/"
             }
           ]
         },
@@ -221,8 +221,8 @@
         {
           "@type": "Organization",
           "name": "BMWEngines.uk",
-          "url": "https://bmwengine.uk/",
-          "logo": "https://bmwengine.uk/images/bmwengines-logo.png",
+          "url": "https://bmwengines.uk/",
+          "logo": "https://bmwengines.uk/images/bmwengines-logo.png",
           "parentOrganization": {
             "@type": "Organization",
             "name": "Engine Finders"
@@ -247,7 +247,7 @@
         {
           "@type": "WebPage",
           "name": "E24 Engine Replacement Cost UK — Compare Quotes",
-          "url": "https://bmwengine.uk/6-series/e24/",
+          "url": "https://bmwengines.uk/6-series/e24/",
           "author": {
             "@type": "Organization",
             "name": "BMWEngines.uk Editorial Team"

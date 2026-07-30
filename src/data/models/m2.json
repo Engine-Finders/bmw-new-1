@@ -9,8 +9,8 @@
       "title": "BMW M2 Engine Replacement Cost UK — Compare Quotes",
       "description": "Every BMW M2 engine — N55 to S58. 2 generations, real UK costs and reliability data. Compare prices from 20+ vetted BMW specialists today.",
       "type": "website",
-      "url": "https://bmwengine.uk/m2/",
-      "image": "https://bmwengine.uk/images/bmw-m2-hero.jpg",
+      "url": "https://bmwengines.uk/m2/",
+      "image": "https://bmwengines.uk/images/bmw-m2-hero.jpg",
       "siteName": "BMWEngines.uk"
     },
     "twitter": {
@@ -28,13 +28,13 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://bmwengine.uk/"
+              "item": "https://bmwengines.uk/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "M2",
-              "item": "https://bmwengine.uk/m2/"
+              "item": "https://bmwengines.uk/m2/"
             }
           ]
         },
@@ -46,25 +46,25 @@
               "@type": "ListItem",
               "position": 1,
               "name": "BMW M2 F87 (2016–2021)",
-              "url": "https://bmwengine.uk/m2/f87/"
+              "url": "https://bmwengines.uk/m2/f87/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "BMW M2 Competition F87 (2018–2020)",
-              "url": "https://bmwengine.uk/m2/f87-competition/"
+              "url": "https://bmwengines.uk/m2/f87-competition/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "BMW M2 CS F87 (2020–2021)",
-              "url": "https://bmwengine.uk/m2/f87-cs/"
+              "url": "https://bmwengines.uk/m2/f87-cs/"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "BMW M2 G87 (2023–present)",
-              "url": "https://bmwengine.uk/m2/g87/"
+              "url": "https://bmwengines.uk/m2/g87/"
             }
           ]
         },
@@ -76,19 +76,19 @@
               "@type": "ListItem",
               "position": 1,
               "name": "N55B30T0 Engine",
-              "url": "https://bmwengine.uk/engines/n55b30t0/"
+              "url": "https://bmwengines.uk/engines/n55b30t0/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "S55B30 Engine",
-              "url": "https://bmwengine.uk/engines/s55b30/"
+              "url": "https://bmwengines.uk/engines/s55b30/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "S58B30 Engine",
-              "url": "https://bmwengine.uk/engines/s58b30/"
+              "url": "https://bmwengines.uk/engines/s58b30/"
             }
           ]
         },
@@ -164,8 +164,8 @@
         {
           "@type": "Organization",
           "name": "BMWEngines.uk",
-          "url": "https://bmwengine.uk/",
-          "logo": "https://bmwengine.uk/images/bmwengines-logo.png",
+          "url": "https://bmwengines.uk/",
+          "logo": "https://bmwengines.uk/images/bmwengines-logo.png",
           "parentOrganization": {
             "@type": "Organization",
             "name": "Engine Finders"
@@ -201,7 +201,7 @@
         {
           "@type": "WebPage",
           "name": "BMW M2 Engine Replacement Cost UK — Compare Quotes",
-          "url": "https://bmwengine.uk/m2/",
+          "url": "https://bmwengines.uk/m2/",
           "author": {
             "@type": "Organization",
             "name": "BMWEngines.uk Editorial Team"

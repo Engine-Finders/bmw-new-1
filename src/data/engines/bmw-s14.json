@@ -3,20 +3,20 @@
     "slug": "s14",
     "title": "BMW S14 Engine — Specs, Reliability & Replacement Cost",
     "description": "The S14 is a legendary, high‑revving racing engine — but its bearings and cam followers need careful attention — backed by 200+ real UK enquiries. Compare quotes from 20+ vetted specialists today.",
-    "canonical": "https://bmwengine.uk/engines/s14/",
+    "canonical": "https://bmwengines.uk/engines/s14/",
     "openGraph": {
       "title": "BMW S14 Engine — Specs, Reliability & Replacement Cost",
       "description": "The S14 is a legendary, high‑revving racing engine — but its bearings and cam followers need careful attention — backed by 200+ real UK enquiries. Compare quotes from 20+ vetted specialists today.",
       "type": "website",
-      "url": "https://bmwengine.uk/engines/s14/",
-      "image": "https://bmwengine.uk/images/bmw/engines/s14.jpg",
-      "siteName": "bmwengine.uk"
+      "url": "https://bmwengines.uk/engines/s14/",
+      "image": "https://bmwengines.uk/images/bmw/engines/s14.jpg",
+      "siteName": "bmwengines.uk"
     },
     "twitter": {
       "card": "summary_large_image",
       "title": "BMW S14 Engine — Specs, Reliability & Replacement Cost",
       "description": "The S14 is a legendary, high‑revving racing engine — but its bearings and cam followers need careful attention — backed by 200+ real UK enquiries. Compare quotes from 20+ vetted specialists today.",
-      "image": "https://bmwengine.uk/images/bmw/engines/s14.jpg"
+      "image": "https://bmwengines.uk/images/bmw/engines/s14.jpg"
     },
     "jsonLd": {
       "@context": "https://schema.org",
@@ -28,19 +28,19 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://bmwengine.uk/"
+              "item": "https://bmwengines.uk/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "Engines",
-              "item": "https://bmwengine.uk/engines/"
+              "item": "https://bmwengines.uk/engines/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "S14",
-              "item": "https://bmwengine.uk/engines/s14/"
+              "item": "https://bmwengines.uk/engines/s14/"
             }
           ]
         },
@@ -52,7 +52,7 @@
               "@type": "ListItem",
               "position": 1,
               "name": "BMW 3 Series E30 M3",
-              "url": "https://bmwengine.uk/models/3-series/e30/"
+              "url": "https://bmwengines.uk/models/3-series/e30/"
             }
           ]
         },
@@ -103,9 +103,9 @@
         },
         {
           "@type": "Organization",
-          "name": "bmwengine.uk",
-          "url": "https://bmwengine.uk/",
-          "logo": "https://bmwengine.uk/images/logo.png",
+          "name": "bmwengines.uk",
+          "url": "https://bmwengines.uk/",
+          "logo": "https://bmwengines.uk/images/logo.png",
           "parentOrganization": {
             "@type": "Organization",
             "name": "Engine Finders"
@@ -131,7 +131,7 @@
           "serviceType": "BMW S14 Engine Replacement",
           "provider": {
             "@type": "Organization",
-            "name": "bmwengine.uk"
+            "name": "bmwengines.uk"
           },
           "areaServed": "GB",
           "offers": {
@@ -145,10 +145,10 @@
         {
           "@type": "Dataset",
           "name": "BMW S14 UK Enquiry & Reliability Data 2025",
-          "description": "Proprietary UK enquiry volumes and reliability scoring data for the BMW S14, sourced from bmwengine.uk's specialist marketplace activity.",
+          "description": "Proprietary UK enquiry volumes and reliability scoring data for the BMW S14, sourced from bmwengines.uk's specialist marketplace activity.",
           "creator": {
             "@type": "Organization",
-            "name": "bmwengine.uk"
+            "name": "bmwengines.uk"
           },
           "temporalCoverage": "2025",
           "spatialCoverage": "United Kingdom"
@@ -156,14 +156,14 @@
         {
           "@type": "WebPage",
           "name": "BMW S14 Engine — Specs, Reliability & Replacement Cost",
-          "url": "https://bmwengine.uk/engines/s14/",
+          "url": "https://bmwengines.uk/engines/s14/",
           "author": {
             "@type": "Organization",
-            "name": "bmwengine.uk Editorial Team"
+            "name": "bmwengines.uk Editorial Team"
           },
           "reviewedBy": {
             "@type": "Organization",
-            "name": "bmwengine.uk Specialist Network"
+            "name": "bmwengines.uk Specialist Network"
           },
           "datePublished": "2026-07-14",
           "dateModified": "2026-07-14"

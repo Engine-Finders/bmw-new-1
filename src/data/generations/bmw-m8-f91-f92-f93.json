@@ -15,19 +15,19 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://bmwengine.uk/"
+              "item": "https://bmwengines.uk/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "M8",
-              "item": "https://bmwengine.uk/m8/"
+              "item": "https://bmwengines.uk/m8/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "BMW M8 F91/F92/F93",
-              "item": "https://bmwengine.uk/m8/f91-f92-f93/"
+              "item": "https://bmwengines.uk/m8/f91-f92-f93/"
             }
           ]
         },
@@ -39,19 +39,19 @@
               "@type": "ListItem",
               "position": 1,
               "name": "S63B44T3 Engine",
-              "url": "https://bmwengine.uk/engines/s63/"
+              "url": "https://bmwengines.uk/engines/s63/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "S63B44T4 Engine",
-              "url": "https://bmwengine.uk/engines/s63/"
+              "url": "https://bmwengines.uk/engines/s63/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "S63B44B Engine",
-              "url": "https://bmwengine.uk/engines/s63/"
+              "url": "https://bmwengines.uk/engines/s63/"
             }
           ]
         },
@@ -63,37 +63,37 @@
               "@type": "ListItem",
               "position": 1,
               "name": "M8 Coupé (F92)",
-              "url": "https://bmwengine.uk/m8/f91-f92-f93/coupe/"
+              "url": "https://bmwengines.uk/m8/f91-f92-f93/coupe/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "M8 Convertible (F91)",
-              "url": "https://bmwengine.uk/m8/f91-f92-f93/convertible/"
+              "url": "https://bmwengines.uk/m8/f91-f92-f93/convertible/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "M8 Gran Coupé (F93)",
-              "url": "https://bmwengine.uk/m8/f91-f92-f93/gran-coupe/"
+              "url": "https://bmwengines.uk/m8/f91-f92-f93/gran-coupe/"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "M8 Competition Coupé (F92)",
-              "url": "https://bmwengine.uk/m8/f91-f92-f93/competition-coupe/"
+              "url": "https://bmwengines.uk/m8/f91-f92-f93/competition-coupe/"
             },
             {
               "@type": "ListItem",
               "position": 5,
               "name": "M8 Competition Convertible (F91)",
-              "url": "https://bmwengine.uk/m8/f91-f92-f93/competition-convertible/"
+              "url": "https://bmwengines.uk/m8/f91-f92-f93/competition-convertible/"
             },
             {
               "@type": "ListItem",
               "position": 6,
               "name": "M8 Competition Gran Coupé (F93)",
-              "url": "https://bmwengine.uk/m8/f91-f92-f93/competition-gran-coupe/"
+              "url": "https://bmwengines.uk/m8/f91-f92-f93/competition-gran-coupe/"
             }
           ]
         },
@@ -184,9 +184,9 @@
         },
         {
           "@type": "Organization",
-          "name": "BMWEngine.uk",
-          "url": "https://bmwengine.uk/",
-          "logo": "https://bmwengine.uk/images/bmwengines-logo.png",
+          "name": "bmwengines.uk",
+          "url": "https://bmwengines.uk/",
+          "logo": "https://bmwengines.uk/images/bmwengines-logo.png",
           "parentOrganization": {
             "@type": "Organization",
             "name": "Engine Finders"
@@ -197,7 +197,7 @@
           "serviceType": "BMW M8 F91/F92/F93 Engine Replacement",
           "provider": {
             "@type": "Organization",
-            "name": "BMWEngine.uk"
+            "name": "bmwengines.uk"
           },
           "areaServed": "GB",
           "offers": {
@@ -211,14 +211,14 @@
         {
           "@type": "WebPage",
           "name": "M8 Engine Replacement Cost UK — Compare Quotes",
-          "url": "https://bmwengine.uk/m8/f91-f92-f93/",
+          "url": "https://bmwengines.uk/m8/f91-f92-f93/",
           "author": {
             "@type": "Organization",
-            "name": "BMWEngine.uk Editorial Team"
+            "name": "bmwengines.uk Editorial Team"
           },
           "reviewedBy": {
             "@type": "Organization",
-            "name": "BMWEngine.uk Specialist Network"
+            "name": "bmwengines.uk Specialist Network"
           },
           "datePublished": "2026-07-09",
           "dateModified": "2026-07-09"
@@ -552,7 +552,7 @@
     ]
   },
   "trustCta": {
-    "h2": "Why UK BMW M8 F91/F92/F93 Owners Trust BMWEngine.uk",
+    "h2": "Why UK BMW M8 F91/F92/F93 Owners Trust bmwengines.uk",
     "trustPoints": [
       {
         "title": "Trusted M8 Engine Suppliers",

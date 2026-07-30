@@ -5,20 +5,20 @@
     "titleCharCount": 53,
     "description": "BMW 4 Series M440i B58 straight-six — real UK costs, coolant & PCV watchpoints. Get free quotes from 20+ vetted BMW specialists today.",
     "descriptionCharCount": 159,
-    "canonical": "https://bmwengine.uk/4-series/m440i/",
+    "canonical": "https://bmwengines.uk/4-series/m440i/",
     "openGraph": {
       "title": "M440i Engine Replacement Cost UK — Compare Quotes",
       "description": "BMW 4 Series M440i B58 straight-six — real UK costs, coolant & PCV watchpoints. Get free quotes from 20+ vetted BMW specialists today.",
       "type": "website",
-      "url": "https://bmwengine.uk/4-series/m440i/",
-      "image": "https://bmwengine.uk/images/bmw/hero/4-series-m440i.jpg",
+      "url": "https://bmwengines.uk/4-series/m440i/",
+      "image": "https://bmwengines.uk/images/bmw/hero/4-series-m440i.jpg",
       "siteName": "BMWEngines.uk"
     },
     "twitter": {
       "card": "summary_large_image",
       "title": "M440i Engine Replacement Cost UK — Compare Quotes",
       "description": "BMW 4 Series M440i B58 straight-six — real UK costs, coolant & PCV watchpoints.",
-      "image": "https://bmwengine.uk/images/bmw/hero/4-series-m440i.jpg"
+      "image": "https://bmwengines.uk/images/bmw/hero/4-series-m440i.jpg"
     },
     "jsonLd": {
       "@context": "https://schema.org",
@@ -30,25 +30,25 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://bmwengine.uk/"
+              "item": "https://bmwengines.uk/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "4 Series",
-              "item": "https://bmwengine.uk/4-series/"
+              "item": "https://bmwengines.uk/4-series/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "4 Series G22",
-              "item": "https://bmwengine.uk/4-series/g22/"
+              "item": "https://bmwengines.uk/4-series/g22/"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "M440i",
-              "item": "https://bmwengine.uk/4-series/m440i/"
+              "item": "https://bmwengines.uk/4-series/m440i/"
             }
           ]
         },
@@ -60,13 +60,13 @@
               "@type": "ListItem",
               "position": 1,
               "name": "G22/G23/G26 M440i (B58B30O1, 2020–2024)",
-              "url": "https://bmwengine.uk/4-series/g22/"
+              "url": "https://bmwengines.uk/4-series/g22/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "G22/G23/G26 M440i LCI (B58B30M2, 2024–present)",
-              "url": "https://bmwengine.uk/4-series/g22/"
+              "url": "https://bmwengines.uk/4-series/g22/"
             }
           ]
         },
@@ -78,13 +78,13 @@
               "@type": "ListItem",
               "position": 1,
               "name": "B58B30O1 (3.0 straight-six turbo MHEV)",
-              "url": "https://bmwengine.uk/engines/b58/"
+              "url": "https://bmwengines.uk/engines/b58/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "B58B30M2 (3.0 straight-six turbo MHEV)",
-              "url": "https://bmwengine.uk/engines/b58/"
+              "url": "https://bmwengines.uk/engines/b58/"
             }
           ]
         },
@@ -144,8 +144,8 @@
         {
           "@type": "Organization",
           "name": "BMWEngines.uk",
-          "url": "https://bmwengine.uk/",
-          "logo": "https://bmwengine.uk/images/bmwengines-logo.png",
+          "url": "https://bmwengines.uk/",
+          "logo": "https://bmwengines.uk/images/bmwengines-logo.png",
           "parentOrganization": {
             "@type": "Organization",
             "name": "Engine Finders"
@@ -181,7 +181,7 @@
         {
           "@type": "WebPage",
           "name": "M440i Engine Replacement Cost UK — Compare Quotes",
-          "url": "https://bmwengine.uk/4-series/m440i/",
+          "url": "https://bmwengines.uk/4-series/m440i/",
           "author": {
             "@type": "Organization",
             "name": "BMWEngines.uk Editorial Team"

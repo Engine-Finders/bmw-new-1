@@ -5,20 +5,20 @@
     "titleCharCount": 55,
     "description": "Every BMW 645Ci engine — the 4.4-litre N62 V8. Real UK costs, valve stem seal and timing chain advice, and honest reliability data. Get free quotes from 20+ vetted BMW specialists today.",
     "descriptionCharCount": 157,
-    "canonical": "https://bmwengine.uk/6-series/645ci/",
+    "canonical": "https://bmwengines.uk/6-series/645ci/",
     "openGraph": {
       "title": "BMW 645Ci Engine Replacement Cost UK — Compare Quotes",
       "description": "Every BMW 645Ci engine — the 4.4-litre N62 V8. Real UK costs, valve stem seal and timing chain advice, and honest reliability data. Get free quotes from 20+ vetted BMW specialists today.",
       "type": "website",
-      "url": "https://bmwengine.uk/6-series/645ci/",
-      "image": "https://bmwengine.uk/images/bmw/hero/645ci.jpg",
+      "url": "https://bmwengines.uk/6-series/645ci/",
+      "image": "https://bmwengines.uk/images/bmw/hero/645ci.jpg",
       "siteName": "BMWEngines.uk"
     },
     "twitter": {
       "card": "summary_large_image",
       "title": "BMW 645Ci Engine Replacement Cost UK — Compare Quotes",
       "description": "Every BMW 645Ci engine — the 4.4-litre N62 V8. Real UK costs, valve stem seal and timing chain advice, and honest reliability data.",
-      "image": "https://bmwengine.uk/images/bmw/hero/645ci.jpg"
+      "image": "https://bmwengines.uk/images/bmw/hero/645ci.jpg"
     },
     "jsonLd": {
       "@context": "https://schema.org",
@@ -30,25 +30,25 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://bmwengine.uk/"
+              "item": "https://bmwengines.uk/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "6 Series",
-              "item": "https://bmwengine.uk/6-series/"
+              "item": "https://bmwengines.uk/6-series/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "E63",
-              "item": "https://bmwengine.uk/6-series/e63/"
+              "item": "https://bmwengines.uk/6-series/e63/"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "645Ci",
-              "item": "https://bmwengine.uk/6-series/645ci/"
+              "item": "https://bmwengines.uk/6-series/645ci/"
             }
           ]
         },
@@ -60,13 +60,13 @@
               "@type": "ListItem",
               "position": 1,
               "name": "E63/E64 645Ci (N62B44A, 2003–2004)",
-              "url": "https://bmwengine.uk/6-series/e63/"
+              "url": "https://bmwengines.uk/6-series/e63/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "E63/E64 645Ci (N62B44B, 2004–2005)",
-              "url": "https://bmwengine.uk/6-series/e63/"
+              "url": "https://bmwengines.uk/6-series/e63/"
             }
           ]
         },
@@ -78,13 +78,13 @@
               "@type": "ListItem",
               "position": 1,
               "name": "N62B44A",
-              "url": "https://bmwengine.uk/engines/n62/"
+              "url": "https://bmwengines.uk/engines/n62/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "N62B44B",
-              "url": "https://bmwengine.uk/engines/n62/"
+              "url": "https://bmwengines.uk/engines/n62/"
             }
           ]
         },
@@ -144,8 +144,8 @@
         {
           "@type": "Organization",
           "name": "BMWEngines.uk",
-          "url": "https://bmwengine.uk/",
-          "logo": "https://bmwengine.uk/images/bmwengines-logo.png",
+          "url": "https://bmwengines.uk/",
+          "logo": "https://bmwengines.uk/images/bmwengines-logo.png",
           "parentOrganization": {
             "@type": "Organization",
             "name": "Engine Finders"
@@ -181,7 +181,7 @@
         {
           "@type": "WebPage",
           "name": "BMW 645Ci Engine Replacement Cost UK — Compare Quotes",
-          "url": "https://bmwengine.uk/6-series/645ci/",
+          "url": "https://bmwengines.uk/6-series/645ci/",
           "author": {
             "@type": "Organization",
             "name": "BMWEngines.uk Editorial Team"

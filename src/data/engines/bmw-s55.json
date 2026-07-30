@@ -3,20 +3,20 @@
     "slug": "s55",
     "title": "BMW S55 Engine — Specs, Reliability & Replacement Cost",
     "description": "Phrasing variant (from rotation bank): “The S55 is a track‑bred twin‑turbo six — potent but crank‑hub and bearing risks are real. Rated from strong UK enthusiast data. Compare quotes from 20+ vetted specialists today.”",
-    "canonical": "https://bmwengine.uk/engines/s55/",
+    "canonical": "https://bmwengines.uk/engines/s55/",
     "openGraph": {
       "title": "BMW S55 Engine — Specs, Reliability & Replacement Cost",
       "description": "The S55 is a track‑bred twin‑turbo six — potent but crank‑hub and bearing risks are real. Rated from strong UK enthusiast data. Compare quotes from 20+ vetted specialists today.",
       "type": "website",
-      "url": "https://bmwengine.uk/engines/s55/",
-      "image": "https://bmwengine.uk/images/bmw/engines/s55.jpg",
-      "siteName": "bmwengine.uk"
+      "url": "https://bmwengines.uk/engines/s55/",
+      "image": "https://bmwengines.uk/images/bmw/engines/s55.jpg",
+      "siteName": "bmwengines.uk"
     },
     "twitter": {
       "card": "summary_large_image",
       "title": "BMW S55 Engine — Specs, Reliability & Replacement Cost",
       "description": "The S55 is a track‑bred twin‑turbo six — potent but crank‑hub and bearing risks are real. Rated from strong UK enthusiast data. Compare quotes from 20+ vetted specialists today.",
-      "image": "https://bmwengine.uk/images/bmw/engines/s55.jpg"
+      "image": "https://bmwengines.uk/images/bmw/engines/s55.jpg"
     },
     "jsonLd": {
       "@context": "https://schema.org",
@@ -28,19 +28,19 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://bmwengine.uk/"
+              "item": "https://bmwengines.uk/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "Engines",
-              "item": "https://bmwengine.uk/engines/"
+              "item": "https://bmwengines.uk/engines/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "BMW S55",
-              "item": "https://bmwengine.uk/engines/s55/"
+              "item": "https://bmwengines.uk/engines/s55/"
             }
           ]
         },
@@ -52,19 +52,19 @@
               "@type": "ListItem",
               "position": 1,
               "name": "BMW M3 F80",
-              "url": "https://bmwengine.uk/models/m3/f80/"
+              "url": "https://bmwengines.uk/models/m3/f80/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "BMW M4 F82/F83",
-              "url": "https://bmwengine.uk/models/m4/f82/"
+              "url": "https://bmwengines.uk/models/m4/f82/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "BMW M2 Competition F87",
-              "url": "https://bmwengine.uk/models/m2/f87/"
+              "url": "https://bmwengines.uk/models/m2/f87/"
             }
           ]
         },
@@ -115,9 +115,9 @@
         },
         {
           "@type": "Organization",
-          "name": "bmwengine.uk",
-          "url": "https://bmwengine.uk/",
-          "logo": "https://bmwengine.uk/images/logo.png",
+          "name": "bmwengines.uk",
+          "url": "https://bmwengines.uk/",
+          "logo": "https://bmwengines.uk/images/logo.png",
           "parentOrganization": {
             "@type": "Organization",
             "name": "Engine Finders"
@@ -143,7 +143,7 @@
           "serviceType": "BMW S55 Engine Replacement",
           "provider": {
             "@type": "Organization",
-            "name": "bmwengine.uk"
+            "name": "bmwengines.uk"
           },
           "areaServed": "GB",
           "offers": {
@@ -157,10 +157,10 @@
         {
           "@type": "Dataset",
           "name": "BMW S55 UK Enquiry & Reliability Data 2025",
-          "description": "Proprietary UK marketplace data and reliability scoring for the BMW S55 twin‑turbo straight‑six, sourced from bmwengine.uk's specialist network.",
+          "description": "Proprietary UK marketplace data and reliability scoring for the BMW S55 twin‑turbo straight‑six, sourced from bmwengines.uk's specialist network.",
           "creator": {
             "@type": "Organization",
-            "name": "bmwengine.uk"
+            "name": "bmwengines.uk"
           },
           "temporalCoverage": "2025",
           "spatialCoverage": "United Kingdom"
@@ -168,14 +168,14 @@
         {
           "@type": "WebPage",
           "name": "BMW S55 Engine — Specs, Reliability & Replacement Cost",
-          "url": "https://bmwengine.uk/engines/s55/",
+          "url": "https://bmwengines.uk/engines/s55/",
           "author": {
             "@type": "Organization",
-            "name": "bmwengine.uk Editorial Team"
+            "name": "bmwengines.uk Editorial Team"
           },
           "reviewedBy": {
             "@type": "Organization",
-            "name": "bmwengine.uk Specialist Network"
+            "name": "bmwengines.uk Specialist Network"
           },
           "datePublished": "2025-07-14",
           "dateModified": "2025-07-14"

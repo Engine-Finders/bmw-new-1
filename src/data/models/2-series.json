@@ -9,8 +9,8 @@
       "title": "BMW 2 Series Engine Replacement Cost UK — Compare Quotes",
       "description": "Every BMW 2 Series engine — B38 to B58. 5 bodystyles, real UK costs and reliability data. Compare prices from 20+ vetted BMW specialists today.",
       "type": "website",
-      "url": "https://bmwengine.uk/2-series/",
-      "image": "https://bmwengine.uk/images/bmw-2-series-hero.jpg",
+      "url": "https://bmwengines.uk/2-series/",
+      "image": "https://bmwengines.uk/images/bmw-2-series-hero.jpg",
       "siteName": "BMWEngines.uk"
     },
     "twitter": {
@@ -28,13 +28,13 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://bmwengine.uk/"
+              "item": "https://bmwengines.uk/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "2 Series",
-              "item": "https://bmwengine.uk/2-series/"
+              "item": "https://bmwengines.uk/2-series/"
             }
           ]
         },
@@ -46,31 +46,31 @@
               "@type": "ListItem",
               "position": 1,
               "name": "BMW 2 Series F22/F23 Coupé/Convertible",
-              "url": "https://bmwengine.uk/2-series/f22/"
+              "url": "https://bmwengines.uk/2-series/f22/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "BMW 2 Series G42 Coupé",
-              "url": "https://bmwengine.uk/2-series/g42/"
+              "url": "https://bmwengines.uk/2-series/g42/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "BMW 2 Series F45 Active Tourer",
-              "url": "https://bmwengine.uk/2-series/f45/"
+              "url": "https://bmwengines.uk/2-series/f45/"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "BMW 2 Series F46 Gran Tourer",
-              "url": "https://bmwengine.uk/2-series/f46/"
+              "url": "https://bmwengines.uk/2-series/f46/"
             },
             {
               "@type": "ListItem",
               "position": 5,
               "name": "BMW 2 Series F44 Gran Coupé",
-              "url": "https://bmwengine.uk/2-series/f44/"
+              "url": "https://bmwengines.uk/2-series/f44/"
             }
           ]
         },
@@ -82,43 +82,43 @@
               "@type": "ListItem",
               "position": 1,
               "name": "B38A15 Engine",
-              "url": "https://bmwengine.uk/engines/b38a15/"
+              "url": "https://bmwengines.uk/engines/b38a15/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "N20B20 Engine",
-              "url": "https://bmwengine.uk/engines/n20b20/"
+              "url": "https://bmwengines.uk/engines/n20b20/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "N55B30 Engine",
-              "url": "https://bmwengine.uk/engines/n55b30/"
+              "url": "https://bmwengines.uk/engines/n55b30/"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "B48B20 Engine",
-              "url": "https://bmwengine.uk/engines/b48b20/"
+              "url": "https://bmwengines.uk/engines/b48b20/"
             },
             {
               "@type": "ListItem",
               "position": 5,
               "name": "B58B30 Engine",
-              "url": "https://bmwengine.uk/engines/b58b30/"
+              "url": "https://bmwengines.uk/engines/b58b30/"
             },
             {
               "@type": "ListItem",
               "position": 6,
               "name": "N47D20C Engine",
-              "url": "https://bmwengine.uk/engines/n47d20c/"
+              "url": "https://bmwengines.uk/engines/n47d20c/"
             },
             {
               "@type": "ListItem",
               "position": 7,
               "name": "B47D20A Engine",
-              "url": "https://bmwengine.uk/engines/b47d20a/"
+              "url": "https://bmwengines.uk/engines/b47d20a/"
             }
           ]
         },
@@ -194,8 +194,8 @@
         {
           "@type": "Organization",
           "name": "BMWEngines.uk",
-          "url": "https://bmwengine.uk/",
-          "logo": "https://bmwengine.uk/images/bmwengines-logo.png",
+          "url": "https://bmwengines.uk/",
+          "logo": "https://bmwengines.uk/images/bmwengines-logo.png",
           "parentOrganization": {
             "@type": "Organization",
             "name": "Engine Finders"
@@ -231,7 +231,7 @@
         {
           "@type": "WebPage",
           "name": "BMW 2 Series Engine Replacement Cost UK — Compare Quotes",
-          "url": "https://bmwengine.uk/2-series/",
+          "url": "https://bmwengines.uk/2-series/",
           "author": {
             "@type": "Organization",
             "name": "BMWEngines.uk Editorial Team"

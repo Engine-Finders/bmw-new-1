@@ -9,8 +9,8 @@
       "title": "BMW M3 Engine Replacement Cost UK — Compare Quotes",
       "description": "Every BMW M3 engine — S14 to S58. 6 generations, real UK costs and reliability data. Compare prices from 20+ vetted BMW specialists today.",
       "type": "website",
-      "url": "https://bmwengine.uk/m3/",
-      "image": "https://bmwengine.uk/images/bmw-m3-hero.jpg",
+      "url": "https://bmwengines.uk/m3/",
+      "image": "https://bmwengines.uk/images/bmw-m3-hero.jpg",
       "siteName": "BMWEngines.uk"
     },
     "twitter": {
@@ -28,13 +28,13 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://bmwengine.uk/"
+              "item": "https://bmwengines.uk/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "M3",
-              "item": "https://bmwengine.uk/m3/"
+              "item": "https://bmwengines.uk/m3/"
             }
           ]
         },
@@ -46,37 +46,37 @@
               "@type": "ListItem",
               "position": 1,
               "name": "BMW M3 E30 (1985–1991)",
-              "url": "https://bmwengine.uk/m3/e30/"
+              "url": "https://bmwengines.uk/m3/e30/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "BMW M3 E36 (1992–1999)",
-              "url": "https://bmwengine.uk/m3/e36/"
+              "url": "https://bmwengines.uk/m3/e36/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "BMW M3 E46 (2000–2006)",
-              "url": "https://bmwengine.uk/m3/e46/"
+              "url": "https://bmwengines.uk/m3/e46/"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "BMW M3 E90/E92/E93 (2007–2013)",
-              "url": "https://bmwengine.uk/m3/e90/"
+              "url": "https://bmwengines.uk/m3/e90/"
             },
             {
               "@type": "ListItem",
               "position": 5,
               "name": "BMW M3 F80 (2014–2020)",
-              "url": "https://bmwengine.uk/m3/f80/"
+              "url": "https://bmwengines.uk/m3/f80/"
             },
             {
               "@type": "ListItem",
               "position": 6,
               "name": "BMW M3 G80 (2020–present)",
-              "url": "https://bmwengine.uk/m3/g80/"
+              "url": "https://bmwengines.uk/m3/g80/"
             }
           ]
         },
@@ -88,43 +88,43 @@
               "@type": "ListItem",
               "position": 1,
               "name": "S14B23 Engine",
-              "url": "https://bmwengine.uk/engines/s14b23/"
+              "url": "https://bmwengines.uk/engines/s14b23/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "S50B30 Engine",
-              "url": "https://bmwengine.uk/engines/s50b30/"
+              "url": "https://bmwengines.uk/engines/s50b30/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "S52B32 Engine",
-              "url": "https://bmwengine.uk/engines/s52b32/"
+              "url": "https://bmwengines.uk/engines/s52b32/"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "S54B32 Engine",
-              "url": "https://bmwengine.uk/engines/s54b32/"
+              "url": "https://bmwengines.uk/engines/s54b32/"
             },
             {
               "@type": "ListItem",
               "position": 5,
               "name": "S65B40 Engine",
-              "url": "https://bmwengine.uk/engines/s65b40/"
+              "url": "https://bmwengines.uk/engines/s65b40/"
             },
             {
               "@type": "ListItem",
               "position": 6,
               "name": "S55B30 Engine",
-              "url": "https://bmwengine.uk/engines/s55b30/"
+              "url": "https://bmwengines.uk/engines/s55b30/"
             },
             {
               "@type": "ListItem",
               "position": 7,
               "name": "S58B30 Engine",
-              "url": "https://bmwengine.uk/engines/s58b30/"
+              "url": "https://bmwengines.uk/engines/s58b30/"
             }
           ]
         },
@@ -200,8 +200,8 @@
         {
           "@type": "Organization",
           "name": "BMWEngines.uk",
-          "url": "https://bmwengine.uk/",
-          "logo": "https://bmwengine.uk/images/bmwengines-logo.png",
+          "url": "https://bmwengines.uk/",
+          "logo": "https://bmwengines.uk/images/bmwengines-logo.png",
           "parentOrganization": {
             "@type": "Organization",
             "name": "Engine Finders"
@@ -237,7 +237,7 @@
         {
           "@type": "WebPage",
           "name": "BMW M3 Engine Replacement Cost UK — Compare Quotes",
-          "url": "https://bmwengine.uk/m3/",
+          "url": "https://bmwengines.uk/m3/",
           "author": {
             "@type": "Organization",
             "name": "BMWEngines.uk Editorial Team"

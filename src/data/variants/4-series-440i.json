@@ -5,20 +5,20 @@
     "titleCharCount": 54,
     "description": "BMW 440i B58 3.0 engine — real UK costs, oil filter housing & cooling system insight, and honest reliability data. Get free quotes from 20+ vetted BMW specialists today.",
     "descriptionCharCount": 157,
-    "canonical": "https://bmwengine.uk/4-series/440i/",
+    "canonical": "https://bmwengines.uk/4-series/440i/",
     "openGraph": {
       "title": "440i Engine Replacement Cost UK — Compare Quotes",
       "description": "BMW 440i B58 3.0 engine — real UK costs, oil filter housing & cooling system insight, and honest reliability data. Get free quotes from 20+ vetted BMW specialists today.",
       "type": "website",
-      "url": "https://bmwengine.uk/4-series/440i/",
-      "image": "https://bmwengine.uk/images/bmw/hero/440i.jpg",
+      "url": "https://bmwengines.uk/4-series/440i/",
+      "image": "https://bmwengines.uk/images/bmw/hero/440i.jpg",
       "siteName": "BMWEngines.uk"
     },
     "twitter": {
       "card": "summary_large_image",
       "title": "440i Engine Replacement Cost UK — Compare Quotes",
       "description": "BMW 440i B58 3.0 engine — real UK costs, oil filter housing & cooling system insight, and honest reliability data.",
-      "image": "https://bmwengine.uk/images/bmw/hero/440i.jpg"
+      "image": "https://bmwengines.uk/images/bmw/hero/440i.jpg"
     },
     "jsonLd": {
       "@context": "https://schema.org",
@@ -30,19 +30,19 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://bmwengine.uk/"
+              "item": "https://bmwengines.uk/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "4 Series",
-              "item": "https://bmwengine.uk/4-series/"
+              "item": "https://bmwengines.uk/4-series/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "440i",
-              "item": "https://bmwengine.uk/4-series/440i/"
+              "item": "https://bmwengines.uk/4-series/440i/"
             }
           ]
         },
@@ -54,7 +54,7 @@
               "@type": "ListItem",
               "position": 1,
               "name": "F32/F33/F36 440i (B58, 2016–2020)",
-              "url": "https://bmwengine.uk/4-series/f32/"
+              "url": "https://bmwengines.uk/4-series/f32/"
             }
           ]
         },
@@ -66,7 +66,7 @@
               "@type": "ListItem",
               "position": 1,
               "name": "B58B30M0 / B58B30O1 (3.0L Straight-Six Turbo)",
-              "url": "https://bmwengine.uk/engines/b58/"
+              "url": "https://bmwengines.uk/engines/b58/"
             }
           ]
         },
@@ -126,8 +126,8 @@
         {
           "@type": "Organization",
           "name": "BMWEngines.uk",
-          "url": "https://bmwengine.uk/",
-          "logo": "https://bmwengine.uk/images/bmwengines-logo.png",
+          "url": "https://bmwengines.uk/",
+          "logo": "https://bmwengines.uk/images/bmwengines-logo.png",
           "parentOrganization": {
             "@type": "Organization",
             "name": "Engine Finders"
@@ -163,7 +163,7 @@
         {
           "@type": "WebPage",
           "name": "440i Engine Replacement Cost UK — Compare Quotes",
-          "url": "https://bmwengine.uk/4-series/440i/",
+          "url": "https://bmwengines.uk/4-series/440i/",
           "author": {
             "@type": "Organization",
             "name": "BMWEngines.uk Editorial Team"

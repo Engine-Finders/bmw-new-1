@@ -5,20 +5,20 @@
     "titleCharCount": 58,
     "description": "BMW X7 xDrive40i – B58 3.0-litre straight-six. Real UK costs, oil filter housing and cooling system facts, and specialist quotes. Get free prices from 20+ vetted specialists today.",
     "descriptionCharCount": 158,
-    "canonical": "https://bmwengine.uk/x7/40i/",
+    "canonical": "https://bmwengines.uk/x7/40i/",
     "openGraph": {
       "title": "X7 xDrive40i Engine Cost UK — Compare Quotes",
       "description": "BMW X7 xDrive40i – B58 3.0-litre straight-six. Real UK costs, oil filter housing and cooling system facts, and specialist quotes. Get free prices from 20+ vetted specialists today.",
       "type": "website",
-      "url": "https://bmwengine.uk/x7/40i/",
-      "image": "https://bmwengine.uk/images/bmw/hero/x7-40i.jpg",
+      "url": "https://bmwengines.uk/x7/40i/",
+      "image": "https://bmwengines.uk/images/bmw/hero/x7-40i.jpg",
       "siteName": "BMWEngines.uk"
     },
     "twitter": {
       "card": "summary_large_image",
       "title": "X7 xDrive40i Engine Cost UK — Compare Quotes",
       "description": "BMW X7 xDrive40i – B58 3.0-litre straight-six. Real UK costs, oil filter housing and cooling system facts, and specialist quotes.",
-      "image": "https://bmwengine.uk/images/bmw/hero/x7-40i.jpg"
+      "image": "https://bmwengines.uk/images/bmw/hero/x7-40i.jpg"
     },
     "jsonLd": {
       "@context": "https://schema.org",
@@ -30,19 +30,19 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://bmwengine.uk/"
+              "item": "https://bmwengines.uk/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "X7",
-              "item": "https://bmwengine.uk/x7/"
+              "item": "https://bmwengines.uk/x7/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "xDrive40i",
-              "item": "https://bmwengine.uk/x7/40i/"
+              "item": "https://bmwengines.uk/x7/40i/"
             }
           ]
         },
@@ -54,13 +54,13 @@
               "@type": "ListItem",
               "position": 1,
               "name": "G07 X7 xDrive40i (B58B30C, 2019-2022)",
-              "url": "https://bmwengine.uk/x7/g07/"
+              "url": "https://bmwengines.uk/x7/g07/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "G07 LCI X7 xDrive40i (B58B30P, 2022-present)",
-              "url": "https://bmwengine.uk/x7/g07-lci/"
+              "url": "https://bmwengines.uk/x7/g07-lci/"
             }
           ]
         },
@@ -72,13 +72,13 @@
               "@type": "ListItem",
               "position": 1,
               "name": "B58B30C",
-              "url": "https://bmwengine.uk/engines/b58/"
+              "url": "https://bmwengines.uk/engines/b58/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "B58B30P",
-              "url": "https://bmwengine.uk/engines/b58/"
+              "url": "https://bmwengines.uk/engines/b58/"
             }
           ]
         },
@@ -138,8 +138,8 @@
         {
           "@type": "Organization",
           "name": "BMWEngines.uk",
-          "url": "https://bmwengine.uk/",
-          "logo": "https://bmwengine.uk/images/bmwengines-logo.png",
+          "url": "https://bmwengines.uk/",
+          "logo": "https://bmwengines.uk/images/bmwengines-logo.png",
           "parentOrganization": {
             "@type": "Organization",
             "name": "Engine Finders"
@@ -175,7 +175,7 @@
         {
           "@type": "WebPage",
           "name": "X7 xDrive40i Engine Cost UK — Compare Quotes",
-          "url": "https://bmwengine.uk/x7/40i/",
+          "url": "https://bmwengines.uk/x7/40i/",
           "author": {
             "@type": "Organization",
             "name": "BMWEngines.uk Editorial Team"

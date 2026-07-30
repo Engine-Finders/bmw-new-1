@@ -3,20 +3,20 @@
     "slug": "s63-s65",
     "title": "BMW S63 / S65 Engine — Reliability & Replacement Cost",
     "description": "The S63/S65 M V8s are thrilling but rod‑bearing and hot‑vee issues make them costly — rated from real UK enquiries [ESTIMATED]. Compare quotes from vetted specialists today.",
-    "canonical": "https://bmwengine.uk/engines/s63-s65/",
+    "canonical": "https://bmwengines.uk/engines/s63-s65/",
     "openGraph": {
       "title": "BMW S63 / S65 Engine — Reliability & Replacement Cost",
       "description": "The S63/S65 M V8s are thrilling but rod‑bearing and hot‑vee issues make them costly — rated from real UK enquiries [ESTIMATED]. Compare quotes from vetted specialists today.",
       "type": "website",
-      "url": "https://bmwengine.uk/engines/s63-s65/",
-      "image": "https://bmwengine.uk/images/bmw/engines/s63-s65.jpg",
-      "siteName": "bmwengine.uk"
+      "url": "https://bmwengines.uk/engines/s63-s65/",
+      "image": "https://bmwengines.uk/images/bmw/engines/s63-s65.jpg",
+      "siteName": "bmwengines.uk"
     },
     "twitter": {
       "card": "summary_large_image",
       "title": "BMW S63 / S65 Engine — Reliability & Replacement Cost",
       "description": "The S63/S65 M V8s are thrilling but rod‑bearing and hot‑vee issues make them costly — rated from real UK enquiries [ESTIMATED]. Compare quotes from vetted specialists today.",
-      "image": "https://bmwengine.uk/images/bmw/engines/s63-s65.jpg"
+      "image": "https://bmwengines.uk/images/bmw/engines/s63-s65.jpg"
     },
     "jsonLd": {
       "@context": "https://schema.org",
@@ -28,19 +28,19 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://bmwengine.uk/"
+              "item": "https://bmwengines.uk/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "Engines",
-              "item": "https://bmwengine.uk/engines/"
+              "item": "https://bmwengines.uk/engines/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "S63 / S65",
-              "item": "https://bmwengine.uk/engines/s63-s65/"
+              "item": "https://bmwengines.uk/engines/s63-s65/"
             }
           ]
         },
@@ -52,49 +52,49 @@
               "@type": "ListItem",
               "position": 1,
               "name": "BMW M3 E90/E92/E93 (S65B40)",
-              "url": "https://bmwengine.uk/models/m3/e90/"
+              "url": "https://bmwengines.uk/models/m3/e90/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "BMW M5 F10 (S63B44)",
-              "url": "https://bmwengine.uk/models/m5/f10/"
+              "url": "https://bmwengines.uk/models/m5/f10/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "BMW M5 F90 (S63B44TÜ)",
-              "url": "https://bmwengine.uk/models/m5/f90/"
+              "url": "https://bmwengines.uk/models/m5/f90/"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "BMW M6 F12/F13 (S63B44)",
-              "url": "https://bmwengine.uk/models/m6/f12/"
+              "url": "https://bmwengines.uk/models/m6/f12/"
             },
             {
               "@type": "ListItem",
               "position": 5,
               "name": "BMW X5M E70 (S63B44)",
-              "url": "https://bmwengine.uk/models/x5m/e70/"
+              "url": "https://bmwengines.uk/models/x5m/e70/"
             },
             {
               "@type": "ListItem",
               "position": 6,
               "name": "BMW X5M F85 (S63B44TÜ)",
-              "url": "https://bmwengine.uk/models/x5m/f85/"
+              "url": "https://bmwengines.uk/models/x5m/f85/"
             },
             {
               "@type": "ListItem",
               "position": 7,
               "name": "BMW X6M E71 (S63B44)",
-              "url": "https://bmwengine.uk/models/x6m/e71/"
+              "url": "https://bmwengines.uk/models/x6m/e71/"
             },
             {
               "@type": "ListItem",
               "position": 8,
               "name": "BMW X6M F86 (S63B44TÜ)",
-              "url": "https://bmwengine.uk/models/x6m/f86/"
+              "url": "https://bmwengines.uk/models/x6m/f86/"
             }
           ]
         },
@@ -145,9 +145,9 @@
         },
         {
           "@type": "Organization",
-          "name": "bmwengine.uk",
-          "url": "https://bmwengine.uk/",
-          "logo": "https://bmwengine.uk/images/logo.png",
+          "name": "bmwengines.uk",
+          "url": "https://bmwengines.uk/",
+          "logo": "https://bmwengines.uk/images/logo.png",
           "parentOrganization": {
             "@type": "Organization",
             "name": "Engine Finders"
@@ -173,7 +173,7 @@
           "serviceType": "BMW S63 / S65 Engine Replacement",
           "provider": {
             "@type": "Organization",
-            "name": "bmwengine.uk"
+            "name": "bmwengines.uk"
           },
           "areaServed": "GB",
           "offers": {
@@ -187,10 +187,10 @@
         {
           "@type": "Dataset",
           "name": "BMW S63 / S65 UK Enquiry & Reliability Data 2025",
-          "description": "Proprietary UK enquiry volumes and reliability scoring data for the BMW S63/S65, sourced from bmwengine.uk's specialist marketplace activity and workshop consensus.",
+          "description": "Proprietary UK enquiry volumes and reliability scoring data for the BMW S63/S65, sourced from bmwengines.uk's specialist marketplace activity and workshop consensus.",
           "creator": {
             "@type": "Organization",
-            "name": "bmwengine.uk"
+            "name": "bmwengines.uk"
           },
           "temporalCoverage": "2025",
           "spatialCoverage": "United Kingdom"
@@ -198,14 +198,14 @@
         {
           "@type": "WebPage",
           "name": "BMW S63 / S65 Engine — Reliability & Replacement Cost",
-          "url": "https://bmwengine.uk/engines/s63-s65/",
+          "url": "https://bmwengines.uk/engines/s63-s65/",
           "author": {
             "@type": "Organization",
-            "name": "bmwengine.uk Editorial Team"
+            "name": "bmwengines.uk Editorial Team"
           },
           "reviewedBy": {
             "@type": "Organization",
-            "name": "bmwengine.uk Specialist Network"
+            "name": "bmwengines.uk Specialist Network"
           },
           "datePublished": "2026-07-14",
           "dateModified": "2026-07-14"

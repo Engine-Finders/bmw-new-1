@@ -5,20 +5,20 @@
     "titleCharCount": 50,
     "description": "BMW 5 Series 540d B57 straight-six diesel — real UK costs, EGR cooler, oil leak & DPF watchpoints. Get free quotes from 20+ vetted BMW specialists today.",
     "descriptionCharCount": 159,
-    "canonical": "https://bmwengine.uk/5-series/540d/",
+    "canonical": "https://bmwengines.uk/5-series/540d/",
     "openGraph": {
       "title": "540d Engine Replacement Cost UK — Compare Quotes",
       "description": "BMW 5 Series 540d B57 straight-six diesel — real UK costs, EGR cooler, oil leak & DPF watchpoints. Get free quotes from 20+ vetted BMW specialists today.",
       "type": "website",
-      "url": "https://bmwengine.uk/5-series/540d/",
-      "image": "https://bmwengine.uk/images/bmw/hero/5-series-540d.jpg",
+      "url": "https://bmwengines.uk/5-series/540d/",
+      "image": "https://bmwengines.uk/images/bmw/hero/5-series-540d.jpg",
       "siteName": "BMWEngines.uk"
     },
     "twitter": {
       "card": "summary_large_image",
       "title": "540d Engine Replacement Cost UK — Compare Quotes",
       "description": "BMW 5 Series 540d B57 straight-six diesel — real UK costs, EGR cooler, oil leak & DPF watchpoints.",
-      "image": "https://bmwengine.uk/images/bmw/hero/5-series-540d.jpg"
+      "image": "https://bmwengines.uk/images/bmw/hero/5-series-540d.jpg"
     },
     "jsonLd": {
       "@context": "https://schema.org",
@@ -30,25 +30,25 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://bmwengine.uk/"
+              "item": "https://bmwengines.uk/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "5 Series",
-              "item": "https://bmwengine.uk/5-series/"
+              "item": "https://bmwengines.uk/5-series/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "5 Series G30",
-              "item": "https://bmwengine.uk/5-series/g30/"
+              "item": "https://bmwengines.uk/5-series/g30/"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "540d",
-              "item": "https://bmwengine.uk/5-series/540d/"
+              "item": "https://bmwengines.uk/5-series/540d/"
             }
           ]
         },
@@ -60,19 +60,19 @@
               "@type": "ListItem",
               "position": 1,
               "name": "G30/G31 540d (B57D30, 2017–2020)",
-              "url": "https://bmwengine.uk/5-series/g30/"
+              "url": "https://bmwengines.uk/5-series/g30/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "G30/G31 540d LCI (B57D30B MHEV, 2020–2023)",
-              "url": "https://bmwengine.uk/5-series/g30/"
+              "url": "https://bmwengines.uk/5-series/g30/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "G60/G61 540d (B57 MHEV, 2023–present)",
-              "url": "https://bmwengine.uk/5-series/g60/"
+              "url": "https://bmwengines.uk/5-series/g60/"
             }
           ]
         },
@@ -84,19 +84,19 @@
               "@type": "ListItem",
               "position": 1,
               "name": "B57D30 (3.0 straight-six twin-turbo)",
-              "url": "https://bmwengine.uk/engines/b57/"
+              "url": "https://bmwengines.uk/engines/b57/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "B57D30B (3.0 straight-six twin-turbo MHEV)",
-              "url": "https://bmwengine.uk/engines/b57/"
+              "url": "https://bmwengines.uk/engines/b57/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "B57 (3.0 straight-six twin-turbo MHEV)",
-              "url": "https://bmwengine.uk/engines/b57/"
+              "url": "https://bmwengines.uk/engines/b57/"
             }
           ]
         },
@@ -156,8 +156,8 @@
         {
           "@type": "Organization",
           "name": "BMWEngines.uk",
-          "url": "https://bmwengine.uk/",
-          "logo": "https://bmwengine.uk/images/bmwengines-logo.png",
+          "url": "https://bmwengines.uk/",
+          "logo": "https://bmwengines.uk/images/bmwengines-logo.png",
           "parentOrganization": {
             "@type": "Organization",
             "name": "Engine Finders"
@@ -193,7 +193,7 @@
         {
           "@type": "WebPage",
           "name": "540d Engine Replacement Cost UK — Compare Quotes",
-          "url": "https://bmwengine.uk/5-series/540d/",
+          "url": "https://bmwengines.uk/5-series/540d/",
           "author": {
             "@type": "Organization",
             "name": "BMWEngines.uk Editorial Team"

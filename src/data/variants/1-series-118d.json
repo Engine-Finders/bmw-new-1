@@ -5,20 +5,20 @@
     "titleCharCount": 54,
     "description": "Every BMW 118d engine — M47, N47, B47. Real UK costs, the timing chain story explained by era, and honest reliability data. Get free quotes from 20+ vetted BMW specialists today.",
     "descriptionCharCount": 157,
-    "canonical": "https://bmwengine.uk/1-series/118d/",
+    "canonical": "https://bmwengines.uk/1-series/118d/",
     "openGraph": {
       "title": "118d Engine Replacement Cost UK — Compare Quotes",
       "description": "Every BMW 118d engine — M47, N47, B47. Real UK costs, the timing chain story explained by era, and honest reliability data. Get free quotes from 20+ vetted BMW specialists today.",
       "type": "website",
-      "url": "https://bmwengine.uk/1-series/118d/",
-      "image": "https://bmwengine.uk/images/bmw/hero/118d.jpg",
+      "url": "https://bmwengines.uk/1-series/118d/",
+      "image": "https://bmwengines.uk/images/bmw/hero/118d.jpg",
       "siteName": "BMWEngines.uk"
     },
     "twitter": {
       "card": "summary_large_image",
       "title": "118d Engine Replacement Cost UK — Compare Quotes",
       "description": "Every BMW 118d engine — M47, N47, B47. Real UK costs, the timing chain story explained by era, and honest reliability data.",
-      "image": "https://bmwengine.uk/images/bmw/hero/118d.jpg"
+      "image": "https://bmwengines.uk/images/bmw/hero/118d.jpg"
     },
     "jsonLd": {
       "@context": "https://schema.org",
@@ -30,19 +30,19 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://bmwengine.uk/"
+              "item": "https://bmwengines.uk/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "1 Series",
-              "item": "https://bmwengine.uk/1-series/"
+              "item": "https://bmwengines.uk/1-series/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "118d",
-              "item": "https://bmwengine.uk/1-series/118d/"
+              "item": "https://bmwengines.uk/1-series/118d/"
             }
           ]
         },
@@ -54,19 +54,19 @@
               "@type": "ListItem",
               "position": 1,
               "name": "E81/E87/E82 118d (M47, 2004-2011)",
-              "url": "https://bmwengine.uk/1-series/e87/"
+              "url": "https://bmwengines.uk/1-series/e87/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "F20/F21 118d (N47, 2011-2015)",
-              "url": "https://bmwengine.uk/1-series/f20/"
+              "url": "https://bmwengines.uk/1-series/f20/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "F20/F21 LCI / F40 118d (B47, 2015-present)",
-              "url": "https://bmwengine.uk/1-series/f40/"
+              "url": "https://bmwengines.uk/1-series/f40/"
             }
           ]
         },
@@ -78,19 +78,19 @@
               "@type": "ListItem",
               "position": 1,
               "name": "M47D20/M47TU2",
-              "url": "https://bmwengine.uk/engines/m47/"
+              "url": "https://bmwengines.uk/engines/m47/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "N47D20C",
-              "url": "https://bmwengine.uk/engines/n47/"
+              "url": "https://bmwengines.uk/engines/n47/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "B47D20",
-              "url": "https://bmwengine.uk/engines/b47/"
+              "url": "https://bmwengines.uk/engines/b47/"
             }
           ]
         },
@@ -150,8 +150,8 @@
         {
           "@type": "Organization",
           "name": "BMWEngines.uk",
-          "url": "https://bmwengine.uk/",
-          "logo": "https://bmwengine.uk/images/bmwengines-logo.png",
+          "url": "https://bmwengines.uk/",
+          "logo": "https://bmwengines.uk/images/bmwengines-logo.png",
           "parentOrganization": {
             "@type": "Organization",
             "name": "Engine Finders"
@@ -187,7 +187,7 @@
         {
           "@type": "WebPage",
           "name": "118d Engine Replacement Cost UK — Compare Quotes",
-          "url": "https://bmwengine.uk/1-series/118d/",
+          "url": "https://bmwengines.uk/1-series/118d/",
           "author": {
             "@type": "Organization",
             "name": "BMWEngines.uk Editorial Team"

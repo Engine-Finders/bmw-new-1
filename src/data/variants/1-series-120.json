@@ -5,20 +5,20 @@
     "titleCharCount": 50,
     "description": "Every BMW 1 Series 120 engine — B38A15P 1.5 MHEV. Real UK costs, timing chain and MHEV reliability data. Get free quotes from 20+ vetted BMW specialists today.",
     "descriptionCharCount": 159,
-    "canonical": "https://bmwengine.uk/1-series/120/",
+    "canonical": "https://bmwengines.uk/1-series/120/",
     "openGraph": {
       "title": "1 Series 120 Engine Replacement Cost UK — Compare Quotes",
       "description": "Every BMW 1 Series 120 engine — B38A15P 1.5 MHEV. Real UK costs, timing chain and MHEV reliability data. Get free quotes from 20+ vetted BMW specialists today.",
       "type": "website",
-      "url": "https://bmwengine.uk/1-series/120/",
-      "image": "https://bmwengine.uk/images/bmw/hero/1-series-120.jpg",
+      "url": "https://bmwengines.uk/1-series/120/",
+      "image": "https://bmwengines.uk/images/bmw/hero/1-series-120.jpg",
       "siteName": "BMWEngines.uk"
     },
     "twitter": {
       "card": "summary_large_image",
       "title": "1 Series 120 Engine Replacement Cost UK — Compare Quotes",
       "description": "Every BMW 1 Series 120 engine — B38A15P 1.5 MHEV. Real UK costs, timing chain and MHEV reliability data.",
-      "image": "https://bmwengine.uk/images/bmw/hero/1-series-120.jpg"
+      "image": "https://bmwengines.uk/images/bmw/hero/1-series-120.jpg"
     },
     "jsonLd": {
       "@context": "https://schema.org",
@@ -30,25 +30,25 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://bmwengine.uk/"
+              "item": "https://bmwengines.uk/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "1 Series",
-              "item": "https://bmwengine.uk/1-series/"
+              "item": "https://bmwengines.uk/1-series/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "F70",
-              "item": "https://bmwengine.uk/1-series/f70/"
+              "item": "https://bmwengines.uk/1-series/f70/"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "120",
-              "item": "https://bmwengine.uk/1-series/120/"
+              "item": "https://bmwengines.uk/1-series/120/"
             }
           ]
         },
@@ -60,7 +60,7 @@
               "@type": "ListItem",
               "position": 1,
               "name": "1 Series F70 120 (B38A15P MHEV, 2024-present)",
-              "url": "https://bmwengine.uk/1-series/f70/"
+              "url": "https://bmwengines.uk/1-series/f70/"
             }
           ]
         },
@@ -72,7 +72,7 @@
               "@type": "ListItem",
               "position": 1,
               "name": "B38A15P (120 MHEV)",
-              "url": "https://bmwengine.uk/engines/b38a15p/"
+              "url": "https://bmwengines.uk/engines/b38a15p/"
             }
           ]
         },
@@ -132,8 +132,8 @@
         {
           "@type": "Organization",
           "name": "BMWEngines.uk",
-          "url": "https://bmwengine.uk/",
-          "logo": "https://bmwengine.uk/images/bmwengines-logo.png",
+          "url": "https://bmwengines.uk/",
+          "logo": "https://bmwengines.uk/images/bmwengines-logo.png",
           "parentOrganization": {
             "@type": "Organization",
             "name": "Engine Finders"
@@ -169,7 +169,7 @@
         {
           "@type": "WebPage",
           "name": "1 Series 120 Engine Replacement Cost UK — Compare Quotes",
-          "url": "https://bmwengine.uk/1-series/120/",
+          "url": "https://bmwengines.uk/1-series/120/",
           "author": {
             "@type": "Organization",
             "name": "BMWEngines.uk Editorial Team"

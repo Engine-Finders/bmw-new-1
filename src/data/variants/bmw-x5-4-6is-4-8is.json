@@ -5,20 +5,20 @@
     "titleCharCount": 57,
     "description": "BMW X5 V8 — M62 and N62 engines. Real UK costs, common timing chain, valve seal and cooling issues, and honest reliability data. Get free quotes from 20+ vetted BMW specialists today.",
     "descriptionCharCount": 160,
-    "canonical": "https://bmwengine.uk/x5/46is-48is/",
+    "canonical": "https://bmwengines.uk/x5/46is-48is/",
     "openGraph": {
       "title": "X5 4.6is / 4.8is Engine Replacement Cost UK — Compare Quotes",
       "description": "BMW X5 V8 — M62 and N62 engines. Real UK costs, common timing chain, valve seal and cooling issues, and honest reliability data. Get free quotes from 20+ vetted BMW specialists today.",
       "type": "website",
-      "url": "https://bmwengine.uk/x5/46is-48is/",
-      "image": "https://bmwengine.uk/images/bmw/hero/x5-46is-48is.jpg",
+      "url": "https://bmwengines.uk/x5/46is-48is/",
+      "image": "https://bmwengines.uk/images/bmw/hero/x5-46is-48is.jpg",
       "siteName": "BMWEngines.uk"
     },
     "twitter": {
       "card": "summary_large_image",
       "title": "X5 4.6is / 4.8is Engine Replacement Cost UK — Compare Quotes",
       "description": "BMW X5 V8 — M62 and N62 engines. Real UK costs, common timing chain, valve seal and cooling issues, and honest reliability data.",
-      "image": "https://bmwengine.uk/images/bmw/hero/x5-46is-48is.jpg"
+      "image": "https://bmwengines.uk/images/bmw/hero/x5-46is-48is.jpg"
     },
     "jsonLd": {
       "@context": "https://schema.org",
@@ -30,19 +30,19 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://bmwengine.uk/"
+              "item": "https://bmwengines.uk/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "X5",
-              "item": "https://bmwengine.uk/x5/"
+              "item": "https://bmwengines.uk/x5/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "4.6is / 4.8is",
-              "item": "https://bmwengine.uk/x5/46is-48is/"
+              "item": "https://bmwengines.uk/x5/46is-48is/"
             }
           ]
         },
@@ -54,13 +54,13 @@
               "@type": "ListItem",
               "position": 1,
               "name": "E53 X5 4.6is (M62B46, 2002–2003)",
-              "url": "https://bmwengine.uk/x5/46is-48is/#m62b46"
+              "url": "https://bmwengines.uk/x5/46is-48is/#m62b46"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "E53 X5 4.8is (N62B48, 2004–2006)",
-              "url": "https://bmwengine.uk/x5/46is-48is/#n62b48"
+              "url": "https://bmwengines.uk/x5/46is-48is/#n62b48"
             }
           ]
         },
@@ -72,13 +72,13 @@
               "@type": "ListItem",
               "position": 1,
               "name": "M62B46",
-              "url": "https://bmwengine.uk/engines/m62b46/"
+              "url": "https://bmwengines.uk/engines/m62b46/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "N62B48",
-              "url": "https://bmwengine.uk/engines/n62b48/"
+              "url": "https://bmwengines.uk/engines/n62b48/"
             }
           ]
         },
@@ -146,8 +146,8 @@
         {
           "@type": "Organization",
           "name": "BMWEngines.uk",
-          "url": "https://bmwengine.uk/",
-          "logo": "https://bmwengine.uk/images/bmwengines-logo.png",
+          "url": "https://bmwengines.uk/",
+          "logo": "https://bmwengines.uk/images/bmwengines-logo.png",
           "parentOrganization": {
             "@type": "Organization",
             "name": "Engine Finders"
@@ -183,7 +183,7 @@
         {
           "@type": "WebPage",
           "name": "X5 4.6is / 4.8is Engine Replacement Cost UK — Compare Quotes",
-          "url": "https://bmwengine.uk/x5/46is-48is/",
+          "url": "https://bmwengines.uk/x5/46is-48is/",
           "author": {
             "@type": "Organization",
             "name": "BMWEngines.uk Editorial Team"

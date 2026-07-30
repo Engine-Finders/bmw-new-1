@@ -5,20 +5,20 @@
     "titleCharCount": 55,
     "description": "BMW 3 Series M340d B57 straight-six diesel — real UK costs, DPF & EGR watchpoints. Get free quotes from 20+ vetted BMW specialists today.",
     "descriptionCharCount": 159,
-    "canonical": "https://bmwengine.uk/3-series/m340d/",
+    "canonical": "https://bmwengines.uk/3-series/m340d/",
     "openGraph": {
       "title": "M340d Engine Replacement Cost UK — Compare Quotes",
       "description": "BMW 3 Series M340d B57 straight-six diesel — real UK costs, DPF & EGR watchpoints. Get free quotes from 20+ vetted BMW specialists today.",
       "type": "website",
-      "url": "https://bmwengine.uk/3-series/m340d/",
-      "image": "https://bmwengine.uk/images/bmw/hero/3-series-m340d.jpg",
+      "url": "https://bmwengines.uk/3-series/m340d/",
+      "image": "https://bmwengines.uk/images/bmw/hero/3-series-m340d.jpg",
       "siteName": "BMWEngines.uk"
     },
     "twitter": {
       "card": "summary_large_image",
       "title": "M340d Engine Replacement Cost UK — Compare Quotes",
       "description": "BMW 3 Series M340d B57 straight-six diesel — real UK costs, DPF & EGR watchpoints.",
-      "image": "https://bmwengine.uk/images/bmw/hero/3-series-m340d.jpg"
+      "image": "https://bmwengines.uk/images/bmw/hero/3-series-m340d.jpg"
     },
     "jsonLd": {
       "@context": "https://schema.org",
@@ -30,25 +30,25 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://bmwengine.uk/"
+              "item": "https://bmwengines.uk/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "3 Series",
-              "item": "https://bmwengine.uk/3-series/"
+              "item": "https://bmwengines.uk/3-series/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "3 Series G20",
-              "item": "https://bmwengine.uk/3-series/g20/"
+              "item": "https://bmwengines.uk/3-series/g20/"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "M340d",
-              "item": "https://bmwengine.uk/3-series/m340d/"
+              "item": "https://bmwengines.uk/3-series/m340d/"
             }
           ]
         },
@@ -60,13 +60,13 @@
               "@type": "ListItem",
               "position": 1,
               "name": "G20/G21 M340d (B57D30T2, 2020–2022)",
-              "url": "https://bmwengine.uk/3-series/g20/"
+              "url": "https://bmwengines.uk/3-series/g20/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "G20/G21 M340d LCI (B57D30T2 MHEV, 2022–present)",
-              "url": "https://bmwengine.uk/3-series/g20/"
+              "url": "https://bmwengines.uk/3-series/g20/"
             }
           ]
         },
@@ -78,13 +78,13 @@
               "@type": "ListItem",
               "position": 1,
               "name": "B57D30T2 (3.0 straight-six twin-turbo)",
-              "url": "https://bmwengine.uk/engines/b57/"
+              "url": "https://bmwengines.uk/engines/b57/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "B57D30T2 (3.0 straight-six twin-turbo MHEV)",
-              "url": "https://bmwengine.uk/engines/b57/"
+              "url": "https://bmwengines.uk/engines/b57/"
             }
           ]
         },
@@ -144,8 +144,8 @@
         {
           "@type": "Organization",
           "name": "BMWEngines.uk",
-          "url": "https://bmwengine.uk/",
-          "logo": "https://bmwengine.uk/images/bmwengines-logo.png",
+          "url": "https://bmwengines.uk/",
+          "logo": "https://bmwengines.uk/images/bmwengines-logo.png",
           "parentOrganization": {
             "@type": "Organization",
             "name": "Engine Finders"
@@ -181,7 +181,7 @@
         {
           "@type": "WebPage",
           "name": "M340d Engine Replacement Cost UK — Compare Quotes",
-          "url": "https://bmwengine.uk/3-series/m340d/",
+          "url": "https://bmwengines.uk/3-series/m340d/",
           "author": {
             "@type": "Organization",
             "name": "BMWEngines.uk Editorial Team"

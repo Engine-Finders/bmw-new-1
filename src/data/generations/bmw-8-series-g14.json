@@ -15,19 +15,19 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://bmwengine.uk/"
+              "item": "https://bmwengines.uk/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "8 Series",
-              "item": "https://bmwengine.uk/8-series/"
+              "item": "https://bmwengines.uk/8-series/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "BMW 8 Series G14",
-              "item": "https://bmwengine.uk/8-series/g14/"
+              "item": "https://bmwengines.uk/8-series/g14/"
             }
           ]
         },
@@ -39,25 +39,25 @@
               "@type": "ListItem",
               "position": 1,
               "name": "B58B30C/B58B30M1 3.0 Petrol",
-              "url": "https://bmwengine.uk/engines/b58/"
+              "url": "https://bmwengines.uk/engines/b58/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "N63B44D/N63B44T3 4.4 V8 Petrol",
-              "url": "https://bmwengine.uk/engines/n63/"
+              "url": "https://bmwengines.uk/engines/n63/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "S63B44B/S63B44T4 4.4 V8 M8 Petrol",
-              "url": "https://bmwengine.uk/engines/s63/"
+              "url": "https://bmwengines.uk/engines/s63/"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "B57D30B 3.0 Diesel",
-              "url": "https://bmwengine.uk/engines/b57/"
+              "url": "https://bmwengines.uk/engines/b57/"
             }
           ]
         },
@@ -69,31 +69,31 @@
               "@type": "ListItem",
               "position": 1,
               "name": "840i",
-              "url": "https://bmwengine.uk/8-series/g14/840i/"
+              "url": "https://bmwengines.uk/8-series/g14/840i/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "840i xDrive",
-              "url": "https://bmwengine.uk/8-series/g14/840i-xdrive/"
+              "url": "https://bmwengines.uk/8-series/g14/840i-xdrive/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "840d xDrive",
-              "url": "https://bmwengine.uk/8-series/g14/840d-xdrive/"
+              "url": "https://bmwengines.uk/8-series/g14/840d-xdrive/"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "M850i xDrive",
-              "url": "https://bmwengine.uk/8-series/g14/m850i-xdrive/"
+              "url": "https://bmwengines.uk/8-series/g14/m850i-xdrive/"
             },
             {
               "@type": "ListItem",
               "position": 5,
               "name": "M8 Competition",
-              "url": "https://bmwengine.uk/8-series/g14/m8-competition/"
+              "url": "https://bmwengines.uk/8-series/g14/m8-competition/"
             }
           ]
         },
@@ -184,9 +184,9 @@
         },
         {
           "@type": "Organization",
-          "name": "BMWEngine.uk",
-          "url": "https://bmwengine.uk/",
-          "logo": "https://bmwengine.uk/images/bmwengine-logo.png",
+          "name": "bmwengines.uk",
+          "url": "https://bmwengines.uk/",
+          "logo": "https://bmwengines.uk/images/bmwengine-logo.png",
           "parentOrganization": {
             "@type": "Organization",
             "name": "Engine Finders"
@@ -197,7 +197,7 @@
           "serviceType": "BMW 8 Series G14 Powertrain Replacement",
           "provider": {
             "@type": "Organization",
-            "name": "BMWEngine.uk"
+            "name": "bmwengines.uk"
           },
           "areaServed": "GB",
           "offers": {
@@ -211,10 +211,10 @@
         {
           "@type": "Dataset",
           "name": "BMW 8 Series G14 UK Enquiry Data 2025",
-          "description": "Proprietary UK enquiry volumes and demand trends for BMW 8 Series G14 powertrains, sourced from BMWEngine.uk's specialist marketplace activity.",
+          "description": "Proprietary UK enquiry volumes and demand trends for BMW 8 Series G14 powertrains, sourced from bmwengines.uk's specialist marketplace activity.",
           "creator": {
             "@type": "Organization",
-            "name": "BMWEngine.uk"
+            "name": "bmwengines.uk"
           },
           "temporalCoverage": "2025",
           "spatialCoverage": "United Kingdom"
@@ -222,14 +222,14 @@
         {
           "@type": "WebPage",
           "name": "G14 Powertrain Cost UK — Compare Quotes",
-          "url": "https://bmwengine.uk/8-series/g14/",
+          "url": "https://bmwengines.uk/8-series/g14/",
           "author": {
             "@type": "Organization",
-            "name": "BMWEngine.uk Editorial Team"
+            "name": "bmwengines.uk Editorial Team"
           },
           "reviewedBy": {
             "@type": "Organization",
-            "name": "BMWEngine.uk Specialist Network"
+            "name": "bmwengines.uk Specialist Network"
           },
           "datePublished": "2026-07-09",
           "dateModified": "2026-07-09"
@@ -724,7 +724,7 @@
     ]
   },
   "trustCta": {
-    "h2": "Why UK BMW 8 Series G14 Owners Trust BMWEngine.uk",
+    "h2": "Why UK BMW 8 Series G14 Owners Trust bmwengines.uk",
     "trustPoints": [
       {
         "title": "Trusted G14 Powertrain Specialists",

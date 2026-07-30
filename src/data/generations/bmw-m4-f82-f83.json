@@ -15,19 +15,19 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://bmwengine.uk/"
+              "item": "https://bmwengines.uk/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "M4",
-              "item": "https://bmwengine.uk/m4/"
+              "item": "https://bmwengines.uk/m4/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "BMW M4 F82/F83",
-              "item": "https://bmwengine.uk/m4/f82-f83/"
+              "item": "https://bmwengines.uk/m4/f82-f83/"
             }
           ]
         },
@@ -39,37 +39,37 @@
               "@type": "ListItem",
               "position": 1,
               "name": "S55B30 Standard Engine",
-              "url": "https://bmwengine.uk/engines/s55b30-standard/"
+              "url": "https://bmwengines.uk/engines/s55b30-standard/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "S55B30 Competition Engine",
-              "url": "https://bmwengine.uk/engines/s55b30-competition/"
+              "url": "https://bmwengines.uk/engines/s55b30-competition/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "S55B30 CS Engine",
-              "url": "https://bmwengine.uk/engines/s55b30-cs/"
+              "url": "https://bmwengines.uk/engines/s55b30-cs/"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "S55B30 GTS Engine",
-              "url": "https://bmwengine.uk/engines/s55b30-gts/"
+              "url": "https://bmwengines.uk/engines/s55b30-gts/"
             },
             {
               "@type": "ListItem",
               "position": 5,
               "name": "S55B30 CSL Engine",
-              "url": "https://bmwengine.uk/engines/s55b30-csl/"
+              "url": "https://bmwengines.uk/engines/s55b30-csl/"
             },
             {
               "@type": "ListItem",
               "position": 6,
               "name": "S55B30 DTM Engine",
-              "url": "https://bmwengine.uk/engines/s55b30-dtm/"
+              "url": "https://bmwengines.uk/engines/s55b30-dtm/"
             }
           ]
         },
@@ -81,37 +81,37 @@
               "@type": "ListItem",
               "position": 1,
               "name": "M4",
-              "url": "https://bmwengine.uk/m4/f82-f83/m4/"
+              "url": "https://bmwengines.uk/m4/f82-f83/m4/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "M4 Competition",
-              "url": "https://bmwengine.uk/m4/f82-f83/m4-competition/"
+              "url": "https://bmwengines.uk/m4/f82-f83/m4-competition/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "M4 CS",
-              "url": "https://bmwengine.uk/m4/f82-f83/m4-cs/"
+              "url": "https://bmwengines.uk/m4/f82-f83/m4-cs/"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "M4 GTS",
-              "url": "https://bmwengine.uk/m4/f82-f83/m4-gts/"
+              "url": "https://bmwengines.uk/m4/f82-f83/m4-gts/"
             },
             {
               "@type": "ListItem",
               "position": 5,
               "name": "M4 CSL",
-              "url": "https://bmwengine.uk/m4/f82-f83/m4-csl/"
+              "url": "https://bmwengines.uk/m4/f82-f83/m4-csl/"
             },
             {
               "@type": "ListItem",
               "position": 6,
               "name": "M4 DTM Champion Edition",
-              "url": "https://bmwengine.uk/m4/f82-f83/m4-dtm/"
+              "url": "https://bmwengines.uk/m4/f82-f83/m4-dtm/"
             }
           ]
         },
@@ -203,8 +203,8 @@
         {
           "@type": "Organization",
           "name": "BMWEngines.uk",
-          "url": "https://bmwengine.uk/",
-          "logo": "https://bmwengine.uk/images/bmwengines-logo.png",
+          "url": "https://bmwengines.uk/",
+          "logo": "https://bmwengines.uk/images/bmwengines-logo.png",
           "parentOrganization": {
             "@type": "Organization",
             "name": "Engine Finders"
@@ -229,7 +229,7 @@
         {
           "@type": "WebPage",
           "name": "F82/F83 Engine Replacement Cost UK — Compare Quotes",
-          "url": "https://bmwengine.uk/m4/f82-f83/",
+          "url": "https://bmwengines.uk/m4/f82-f83/",
           "author": {
             "@type": "Organization",
             "name": "BMWEngines.uk Editorial Team"

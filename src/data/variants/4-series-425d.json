@@ -5,20 +5,20 @@
     "titleCharCount": 58,
     "description": "The BMW 4 Series 425d — N47S1 or B47D20B 2.0L twin‑turbo diesel, 218‑224 bhp. Real UK costs, timing chain advice, and honest reliability data. Get free quotes from 20+ vetted BMW specialists today.",
     "descriptionCharCount": 160,
-    "canonical": "https://bmwengine.uk/4-series/425d/",
+    "canonical": "https://bmwengines.uk/4-series/425d/",
     "openGraph": {
       "title": "4 Series 425d Engine Replacement Cost UK — Compare Quotes",
       "description": "The BMW 4 Series 425d — N47S1 or B47D20B 2.0L twin‑turbo diesel, 218‑224 bhp. Real UK costs, timing chain advice, and honest reliability data. Get free quotes from 20+ vetted BMW specialists today.",
       "type": "website",
-      "url": "https://bmwengine.uk/4-series/425d/",
-      "image": "https://bmwengine.uk/images/bmw/hero/4-series-425d.jpg",
+      "url": "https://bmwengines.uk/4-series/425d/",
+      "image": "https://bmwengines.uk/images/bmw/hero/4-series-425d.jpg",
       "siteName": "BMWEngines.uk"
     },
     "twitter": {
       "card": "summary_large_image",
       "title": "4 Series 425d Engine Replacement Cost UK — Compare Quotes",
       "description": "The BMW 4 Series 425d — N47S1 or B47D20B 2.0L twin‑turbo diesel, 218‑224 bhp. Real UK costs, timing chain advice, and honest reliability data.",
-      "image": "https://bmwengine.uk/images/bmw/hero/4-series-425d.jpg"
+      "image": "https://bmwengines.uk/images/bmw/hero/4-series-425d.jpg"
     },
     "jsonLd": {
       "@context": "https://schema.org",
@@ -30,25 +30,25 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://bmwengine.uk/"
+              "item": "https://bmwengines.uk/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "4 Series",
-              "item": "https://bmwengine.uk/4-series/"
+              "item": "https://bmwengines.uk/4-series/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "F32/F33/F36",
-              "item": "https://bmwengine.uk/4-series/f32/"
+              "item": "https://bmwengines.uk/4-series/f32/"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "425d",
-              "item": "https://bmwengine.uk/4-series/425d/"
+              "item": "https://bmwengines.uk/4-series/425d/"
             }
           ]
         },
@@ -60,13 +60,13 @@
               "@type": "ListItem",
               "position": 1,
               "name": "N47S1 (N47D20T1, 2014-2017)",
-              "url": "https://bmwengine.uk/4-series/425d/#n47s1"
+              "url": "https://bmwengines.uk/4-series/425d/#n47s1"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "B47D20B (2017-2020)",
-              "url": "https://bmwengine.uk/4-series/425d/#b47d20b"
+              "url": "https://bmwengines.uk/4-series/425d/#b47d20b"
             }
           ]
         },
@@ -78,13 +78,13 @@
               "@type": "ListItem",
               "position": 1,
               "name": "N47D20T1",
-              "url": "https://bmwengine.uk/engines/n47d20t1/"
+              "url": "https://bmwengines.uk/engines/n47d20t1/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "B47D20B",
-              "url": "https://bmwengine.uk/engines/b47d20b/"
+              "url": "https://bmwengines.uk/engines/b47d20b/"
             }
           ]
         },
@@ -144,8 +144,8 @@
         {
           "@type": "Organization",
           "name": "BMWEngines.uk",
-          "url": "https://bmwengine.uk/",
-          "logo": "https://bmwengine.uk/images/bmwengines-logo.png",
+          "url": "https://bmwengines.uk/",
+          "logo": "https://bmwengines.uk/images/bmwengines-logo.png",
           "parentOrganization": {
             "@type": "Organization",
             "name": "Engine Finders"
@@ -181,7 +181,7 @@
         {
           "@type": "WebPage",
           "name": "4 Series 425d Engine Replacement Cost UK — Compare Quotes",
-          "url": "https://bmwengine.uk/4-series/425d/",
+          "url": "https://bmwengines.uk/4-series/425d/",
           "author": {
             "@type": "Organization",
             "name": "BMWEngines.uk Editorial Team"

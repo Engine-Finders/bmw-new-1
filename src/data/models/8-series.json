@@ -9,8 +9,8 @@
       "title": "BMW 8 Series Engine Replacement Cost UK — Compare Quotes",
       "description": "Every BMW 8 Series engine — B58 to S63. 2 generations, real UK costs and reliability data. Compare prices from 20+ vetted BMW specialists today.",
       "type": "website",
-      "url": "https://bmwengine.uk/8-series/",
-      "image": "https://bmwengine.uk/images/bmw-8-series-hero.jpg",
+      "url": "https://bmwengines.uk/8-series/",
+      "image": "https://bmwengines.uk/images/bmw-8-series-hero.jpg",
       "siteName": "BMWEngines.uk"
     },
     "twitter": {
@@ -28,13 +28,13 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://bmwengine.uk/"
+              "item": "https://bmwengines.uk/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "8 Series",
-              "item": "https://bmwengine.uk/8-series/"
+              "item": "https://bmwengines.uk/8-series/"
             }
           ]
         },
@@ -46,25 +46,25 @@
               "@type": "ListItem",
               "position": 1,
               "name": "BMW 8 Series E31 (1990–1999)",
-              "url": "https://bmwengine.uk/8-series/e31/"
+              "url": "https://bmwengines.uk/8-series/e31/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "BMW 8 Series G15 Coupé (2018–present)",
-              "url": "https://bmwengine.uk/8-series/g15/"
+              "url": "https://bmwengines.uk/8-series/g15/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "BMW 8 Series G14 Convertible (2018–present)",
-              "url": "https://bmwengine.uk/8-series/g14/"
+              "url": "https://bmwengines.uk/8-series/g14/"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "BMW 8 Series G16 Gran Coupé (2019–present)",
-              "url": "https://bmwengine.uk/8-series/g16/"
+              "url": "https://bmwengines.uk/8-series/g16/"
             }
           ]
         },
@@ -76,55 +76,55 @@
               "@type": "ListItem",
               "position": 1,
               "name": "M60B40 Engine",
-              "url": "https://bmwengine.uk/engines/m60b40/"
+              "url": "https://bmwengines.uk/engines/m60b40/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "M62B44 Engine",
-              "url": "https://bmwengine.uk/engines/m62b44/"
+              "url": "https://bmwengines.uk/engines/m62b44/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "M70B50 Engine",
-              "url": "https://bmwengine.uk/engines/m70b50/"
+              "url": "https://bmwengines.uk/engines/m70b50/"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "M73B54 Engine",
-              "url": "https://bmwengine.uk/engines/m73b54/"
+              "url": "https://bmwengines.uk/engines/m73b54/"
             },
             {
               "@type": "ListItem",
               "position": 5,
               "name": "S70B56 Engine",
-              "url": "https://bmwengine.uk/engines/s70b56/"
+              "url": "https://bmwengines.uk/engines/s70b56/"
             },
             {
               "@type": "ListItem",
               "position": 6,
               "name": "B58B30 Engine",
-              "url": "https://bmwengine.uk/engines/b58b30/"
+              "url": "https://bmwengines.uk/engines/b58b30/"
             },
             {
               "@type": "ListItem",
               "position": 7,
               "name": "B57D30 Engine",
-              "url": "https://bmwengine.uk/engines/b57d30/"
+              "url": "https://bmwengines.uk/engines/b57d30/"
             },
             {
               "@type": "ListItem",
               "position": 8,
               "name": "N63B44 Engine",
-              "url": "https://bmwengine.uk/engines/n63b44/"
+              "url": "https://bmwengines.uk/engines/n63b44/"
             },
             {
               "@type": "ListItem",
               "position": 9,
               "name": "S63B44 Engine",
-              "url": "https://bmwengine.uk/engines/s63b44/"
+              "url": "https://bmwengines.uk/engines/s63b44/"
             }
           ]
         },
@@ -200,8 +200,8 @@
         {
           "@type": "Organization",
           "name": "BMWEngines.uk",
-          "url": "https://bmwengine.uk/",
-          "logo": "https://bmwengine.uk/images/bmwengines-logo.png",
+          "url": "https://bmwengines.uk/",
+          "logo": "https://bmwengines.uk/images/bmwengines-logo.png",
           "parentOrganization": {
             "@type": "Organization",
             "name": "Engine Finders"
@@ -237,7 +237,7 @@
         {
           "@type": "WebPage",
           "name": "BMW 8 Series Engine Replacement Cost UK — Compare Quotes",
-          "url": "https://bmwengine.uk/8-series/",
+          "url": "https://bmwengines.uk/8-series/",
           "author": {
             "@type": "Organization",
             "name": "BMWEngines.uk Editorial Team"

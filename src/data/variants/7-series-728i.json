@@ -5,20 +5,20 @@
     "titleCharCount": 54,
     "description": "Every BMW 728i engine — M30, M52. Real UK costs, head gasket, VANOS and reliability data. Get free quotes from 20+ vetted BMW specialists today.",
     "descriptionCharCount": 158,
-    "canonical": "https://bmwengine.uk/7-series/728i/",
+    "canonical": "https://bmwengines.uk/7-series/728i/",
     "openGraph": {
       "title": "728i Engine Replacement Cost UK — Compare Quotes",
       "description": "Every BMW 728i engine — M30, M52. Real UK costs, head gasket, VANOS and reliability data. Get free quotes from 20+ vetted BMW specialists today.",
       "type": "website",
-      "url": "https://bmwengine.uk/7-series/728i/",
-      "image": "https://bmwengine.uk/images/bmw/hero/7-series-728i.jpg",
+      "url": "https://bmwengines.uk/7-series/728i/",
+      "image": "https://bmwengines.uk/images/bmw/hero/7-series-728i.jpg",
       "siteName": "BMWEngines.uk"
     },
     "twitter": {
       "card": "summary_large_image",
       "title": "728i Engine Replacement Cost UK — Compare Quotes",
       "description": "Every BMW 728i engine — M30, M52. Real UK costs, head gasket, VANOS and reliability data.",
-      "image": "https://bmwengine.uk/images/bmw/hero/7-series-728i.jpg"
+      "image": "https://bmwengines.uk/images/bmw/hero/7-series-728i.jpg"
     },
     "jsonLd": {
       "@context": "https://schema.org",
@@ -30,19 +30,19 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://bmwengine.uk/"
+              "item": "https://bmwengines.uk/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "7 Series",
-              "item": "https://bmwengine.uk/7-series/"
+              "item": "https://bmwengines.uk/7-series/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "728i",
-              "item": "https://bmwengine.uk/7-series/728i/"
+              "item": "https://bmwengines.uk/7-series/728i/"
             }
           ]
         },
@@ -54,19 +54,19 @@
               "@type": "ListItem",
               "position": 1,
               "name": "7 Series E23 728i (M30B28, 1977-1986)",
-              "url": "https://bmwengine.uk/7-series/e23/"
+              "url": "https://bmwengines.uk/7-series/e23/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "7 Series E32 728i (M30B28, 1986-1992)",
-              "url": "https://bmwengine.uk/7-series/e32/"
+              "url": "https://bmwengines.uk/7-series/e32/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "7 Series E38 728i (M52B28, 1995-2001)",
-              "url": "https://bmwengine.uk/7-series/e38/"
+              "url": "https://bmwengines.uk/7-series/e38/"
             }
           ]
         },
@@ -78,19 +78,19 @@
               "@type": "ListItem",
               "position": 1,
               "name": "M30B28",
-              "url": "https://bmwengine.uk/engines/m30/"
+              "url": "https://bmwengines.uk/engines/m30/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "M30B28",
-              "url": "https://bmwengine.uk/engines/m30/"
+              "url": "https://bmwengines.uk/engines/m30/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "M52B28",
-              "url": "https://bmwengine.uk/engines/m52/"
+              "url": "https://bmwengines.uk/engines/m52/"
             }
           ]
         },
@@ -150,8 +150,8 @@
         {
           "@type": "Organization",
           "name": "BMWEngines.uk",
-          "url": "https://bmwengine.uk/",
-          "logo": "https://bmwengine.uk/images/bmwengines-logo.png",
+          "url": "https://bmwengines.uk/",
+          "logo": "https://bmwengines.uk/images/bmwengines-logo.png",
           "parentOrganization": {
             "@type": "Organization",
             "name": "Engine Finders"
@@ -187,7 +187,7 @@
         {
           "@type": "WebPage",
           "name": "728i Engine Replacement Cost UK — Compare Quotes",
-          "url": "https://bmwengine.uk/7-series/728i/",
+          "url": "https://bmwengines.uk/7-series/728i/",
           "author": {
             "@type": "Organization",
             "name": "BMWEngines.uk Editorial Team"

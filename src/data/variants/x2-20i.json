@@ -5,7 +5,7 @@
     "titleCharCount": 52,
     "description": "Every BMW X2 20i engine — B48 2.0 turbo petrol. F39 and U10 generations, real UK costs and reliability. Get free quotes from 20+ vetted BMW specialists today.",
     "descriptionCharCount": 157,
-    "canonical": "https://bmwengine.uk/x2/20i/",
+    "canonical": "https://bmwengines.uk/x2/20i/",
     "openGraph": {
       "title": "",
       "description": "",
@@ -30,19 +30,19 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://bmwengine.uk/"
+              "item": "https://bmwengines.uk/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "X2",
-              "item": "https://bmwengine.uk/x2/"
+              "item": "https://bmwengines.uk/x2/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "20i",
-              "item": "https://bmwengine.uk/x2/20i/"
+              "item": "https://bmwengines.uk/x2/20i/"
             }
           ]
         },
@@ -54,13 +54,13 @@
               "@type": "ListItem",
               "position": 1,
               "name": "F39 X2 20i (B48B20, 2018-2023)",
-              "url": "https://bmwengine.uk/x2/f39/"
+              "url": "https://bmwengines.uk/x2/f39/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "U10 X2 20i (B48B20, 2023-present)",
-              "url": "https://bmwengine.uk/x2/u10/"
+              "url": "https://bmwengines.uk/x2/u10/"
             }
           ]
         },
@@ -72,7 +72,7 @@
               "@type": "ListItem",
               "position": 1,
               "name": "B48B20",
-              "url": "https://bmwengine.uk/engines/b48/"
+              "url": "https://bmwengines.uk/engines/b48/"
             }
           ]
         },
@@ -132,8 +132,8 @@
         {
           "@type": "Organization",
           "name": "BMWEngines.uk",
-          "url": "https://bmwengine.uk/",
-          "logo": "https://bmwengine.uk/images/bmwengines-logo.png",
+          "url": "https://bmwengines.uk/",
+          "logo": "https://bmwengines.uk/images/bmwengines-logo.png",
           "parentOrganization": {
             "@type": "Organization",
             "name": "Engine Finders"
@@ -169,7 +169,7 @@
         {
           "@type": "WebPage",
           "name": "BMW X2 20i Engine Replacement Cost UK — Compare Quotes",
-          "url": "https://bmwengine.uk/x2/20i/",
+          "url": "https://bmwengines.uk/x2/20i/",
           "author": {
             "@type": "Organization",
             "name": "BMWEngines.uk Editorial Team"

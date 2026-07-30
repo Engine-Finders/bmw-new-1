@@ -9,8 +9,8 @@
       "title": "BMW X7 Engine Replacement Cost UK — Compare Quotes",
       "description": "Every BMW X7 engine — B58 to S68. 1 generation, real UK costs and reliability data. Compare prices from 20+ vetted BMW specialists today.",
       "type": "website",
-      "url": "https://bmwengine.uk/x7/",
-      "image": "https://bmwengine.uk/images/bmw-x7-hero.jpg",
+      "url": "https://bmwengines.uk/x7/",
+      "image": "https://bmwengines.uk/images/bmw-x7-hero.jpg",
       "siteName": "BMWEngines.uk"
     },
     "twitter": {
@@ -28,13 +28,13 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://bmwengine.uk/"
+              "item": "https://bmwengines.uk/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "X7",
-              "item": "https://bmwengine.uk/x7/"
+              "item": "https://bmwengines.uk/x7/"
             }
           ]
         },
@@ -46,13 +46,13 @@
               "@type": "ListItem",
               "position": 1,
               "name": "BMW X7 G07 (2018–2022)",
-              "url": "https://bmwengine.uk/x7/g07/"
+              "url": "https://bmwengines.uk/x7/g07/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "BMW X7 G07 LCI (2023–present)",
-              "url": "https://bmwengine.uk/x7/g07/"
+              "url": "https://bmwengines.uk/x7/g07/"
             }
           ]
         },
@@ -64,49 +64,49 @@
               "@type": "ListItem",
               "position": 1,
               "name": "B58B30C Engine",
-              "url": "https://bmwengine.uk/engines/b58b30c/"
+              "url": "https://bmwengines.uk/engines/b58b30c/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "B58B30P Engine",
-              "url": "https://bmwengine.uk/engines/b58b30p/"
+              "url": "https://bmwengines.uk/engines/b58b30p/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "N63B44D Engine",
-              "url": "https://bmwengine.uk/engines/n63b44d/"
+              "url": "https://bmwengines.uk/engines/n63b44d/"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "S63B44 Engine",
-              "url": "https://bmwengine.uk/engines/s63b44/"
+              "url": "https://bmwengines.uk/engines/s63b44/"
             },
             {
               "@type": "ListItem",
               "position": 5,
               "name": "S68B44A Engine",
-              "url": "https://bmwengine.uk/engines/s68b44a/"
+              "url": "https://bmwengines.uk/engines/s68b44a/"
             },
             {
               "@type": "ListItem",
               "position": 6,
               "name": "B57D30B Engine",
-              "url": "https://bmwengine.uk/engines/b57d30b/"
+              "url": "https://bmwengines.uk/engines/b57d30b/"
             },
             {
               "@type": "ListItem",
               "position": 7,
               "name": "B57D30T0 Engine",
-              "url": "https://bmwengine.uk/engines/b57d30t0/"
+              "url": "https://bmwengines.uk/engines/b57d30t0/"
             },
             {
               "@type": "ListItem",
               "position": 8,
               "name": "B57D30 Engine",
-              "url": "https://bmwengine.uk/engines/b57d30/"
+              "url": "https://bmwengines.uk/engines/b57d30/"
             }
           ]
         },
@@ -182,8 +182,8 @@
         {
           "@type": "Organization",
           "name": "BMWEngines.uk",
-          "url": "https://bmwengine.uk/",
-          "logo": "https://bmwengine.uk/images/bmwengines-logo.png",
+          "url": "https://bmwengines.uk/",
+          "logo": "https://bmwengines.uk/images/bmwengines-logo.png",
           "parentOrganization": {
             "@type": "Organization",
             "name": "Engine Finders"
@@ -219,7 +219,7 @@
         {
           "@type": "WebPage",
           "name": "BMW X7 Engine Replacement Cost UK — Compare Quotes",
-          "url": "https://bmwengine.uk/x7/",
+          "url": "https://bmwengines.uk/x7/",
           "author": {
             "@type": "Organization",
             "name": "BMWEngines.uk Editorial Team"

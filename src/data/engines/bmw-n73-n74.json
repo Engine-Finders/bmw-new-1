@@ -3,20 +3,20 @@
     "slug": "n73-n74",
     "title": "BMW N73/N74 Engine — Specs, Reliability & Replacement Cost",
     "description": "“The N73/N74 V12 is a magnificent engine – but running costs are eye‑watering. Get honest UK specialist quotes and V12‑specific advice today.”",
-    "canonical": "https://bmwengine.uk/engines/n73-n74/",
+    "canonical": "https://bmwengines.uk/engines/n73-n74/",
     "openGraph": {
       "title": "BMW N73/N74 Engine — Specs, Reliability & Replacement Cost",
       "description": "The N73/N74 V12 is a magnificent engine – but running costs are eye‑watering. Get honest UK specialist quotes and V12‑specific advice today.",
       "type": "website",
-      "url": "https://bmwengine.uk/engines/n73-n74/",
-      "image": "https://bmwengine.uk/images/bmw/engines/n73-n74.jpg",
-      "siteName": "bmwengine.uk"
+      "url": "https://bmwengines.uk/engines/n73-n74/",
+      "image": "https://bmwengines.uk/images/bmw/engines/n73-n74.jpg",
+      "siteName": "bmwengines.uk"
     },
     "twitter": {
       "card": "summary_large_image",
       "title": "BMW N73/N74 Engine — Specs, Reliability & Replacement Cost",
       "description": "The N73/N74 V12 is a magnificent engine – but running costs are eye‑watering. Get honest UK specialist quotes and V12‑specific advice today.",
-      "image": "https://bmwengine.uk/images/bmw/engines/n73-n74.jpg"
+      "image": "https://bmwengines.uk/images/bmw/engines/n73-n74.jpg"
     },
     "jsonLd": {
       "@context": "https://schema.org",
@@ -28,19 +28,19 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://bmwengine.uk/"
+              "item": "https://bmwengines.uk/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "Engines",
-              "item": "https://bmwengine.uk/engines/"
+              "item": "https://bmwengines.uk/engines/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "N73/N74",
-              "item": "https://bmwengine.uk/engines/n73-n74/"
+              "item": "https://bmwengines.uk/engines/n73-n74/"
             }
           ]
         },
@@ -52,31 +52,31 @@
               "@type": "ListItem",
               "position": 1,
               "name": "BMW 7 Series E65/E66 760i",
-              "url": "https://bmwengine.uk/models/e65-760i/"
+              "url": "https://bmwengines.uk/models/e65-760i/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "BMW 7 Series F01/F02 760i",
-              "url": "https://bmwengine.uk/models/f01-760i/"
+              "url": "https://bmwengines.uk/models/f01-760i/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "BMW 7 Series G11/G12 M760Li",
-              "url": "https://bmwengine.uk/models/g11-m760li/"
+              "url": "https://bmwengines.uk/models/g11-m760li/"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "BMW 8 Series G15 M850i",
-              "url": "https://bmwengine.uk/models/g15-m850i/"
+              "url": "https://bmwengines.uk/models/g15-m850i/"
             },
             {
               "@type": "ListItem",
               "position": 5,
               "name": "BMW X7 G07 M60i",
-              "url": "https://bmwengine.uk/models/g07-x7-m60i/"
+              "url": "https://bmwengines.uk/models/g07-x7-m60i/"
             }
           ]
         },
@@ -127,9 +127,9 @@
         },
         {
           "@type": "Organization",
-          "name": "bmwengine.uk",
-          "url": "https://bmwengine.uk/",
-          "logo": "https://bmwengine.uk/images/logo.png",
+          "name": "bmwengines.uk",
+          "url": "https://bmwengines.uk/",
+          "logo": "https://bmwengines.uk/images/logo.png",
           "parentOrganization": {
             "@type": "Organization",
             "name": "Engine Finders"
@@ -155,7 +155,7 @@
           "serviceType": "BMW N73/N74 Engine Replacement",
           "provider": {
             "@type": "Organization",
-            "name": "bmwengine.uk"
+            "name": "bmwengines.uk"
           },
           "areaServed": "GB",
           "offers": {
@@ -169,10 +169,10 @@
         {
           "@type": "Dataset",
           "name": "BMW N73/N74 UK Enquiry & Reliability Data 2025",
-          "description": "Proprietary UK specialist data and reliability scoring for the BMW N73/N74 V12, sourced from bmwengine.uk's marketplace activity. Enquiry volumes are estimated pending full verification.",
+          "description": "Proprietary UK specialist data and reliability scoring for the BMW N73/N74 V12, sourced from bmwengines.uk's marketplace activity. Enquiry volumes are estimated pending full verification.",
           "creator": {
             "@type": "Organization",
-            "name": "bmwengine.uk"
+            "name": "bmwengines.uk"
           },
           "temporalCoverage": "2025",
           "spatialCoverage": "United Kingdom"
@@ -180,14 +180,14 @@
         {
           "@type": "WebPage",
           "name": "BMW N73/N74 Engine — Specs, Reliability & Replacement Cost",
-          "url": "https://bmwengine.uk/engines/n73-n74/",
+          "url": "https://bmwengines.uk/engines/n73-n74/",
           "author": {
             "@type": "Organization",
-            "name": "bmwengine.uk Editorial Team"
+            "name": "bmwengines.uk Editorial Team"
           },
           "reviewedBy": {
             "@type": "Organization",
-            "name": "bmwengine.uk Specialist Network"
+            "name": "bmwengines.uk Specialist Network"
           },
           "datePublished": "2025-07-14",
           "dateModified": "2025-07-14"

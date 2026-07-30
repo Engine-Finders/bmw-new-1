@@ -5,20 +5,20 @@
     "titleCharCount": 51,
     "description": "Every BMW 2 Series 216i engine — B38 1.5 turbo. Real UK costs, timing chain and reliability data. Get free quotes from 20+ vetted BMW specialists today.",
     "descriptionCharCount": 159,
-    "canonical": "https://bmwengine.uk/2-series/216i/",
+    "canonical": "https://bmwengines.uk/2-series/216i/",
     "openGraph": {
       "title": "2 Series 216i Engine Replacement Cost UK — Compare Quotes",
       "description": "Every BMW 2 Series 216i engine — B38 1.5 turbo. Real UK costs, timing chain and reliability data. Get free quotes from 20+ vetted BMW specialists today.",
       "type": "website",
-      "url": "https://bmwengine.uk/2-series/216i/",
-      "image": "https://bmwengine.uk/images/bmw/hero/2-series-216i.jpg",
+      "url": "https://bmwengines.uk/2-series/216i/",
+      "image": "https://bmwengines.uk/images/bmw/hero/2-series-216i.jpg",
       "siteName": "BMWEngines.uk"
     },
     "twitter": {
       "card": "summary_large_image",
       "title": "2 Series 216i Engine Replacement Cost UK — Compare Quotes",
       "description": "Every BMW 2 Series 216i engine — B38 1.5 turbo. Real UK costs, timing chain and reliability data.",
-      "image": "https://bmwengine.uk/images/bmw/hero/2-series-216i.jpg"
+      "image": "https://bmwengines.uk/images/bmw/hero/2-series-216i.jpg"
     },
     "jsonLd": {
       "@context": "https://schema.org",
@@ -30,19 +30,19 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://bmwengine.uk/"
+              "item": "https://bmwengines.uk/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "2 Series",
-              "item": "https://bmwengine.uk/2-series/"
+              "item": "https://bmwengines.uk/2-series/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "216i",
-              "item": "https://bmwengine.uk/2-series/216i/"
+              "item": "https://bmwengines.uk/2-series/216i/"
             }
           ]
         },
@@ -54,25 +54,25 @@
               "@type": "ListItem",
               "position": 1,
               "name": "2 Series Active/Gran Tourer F45/F46 (B38A15A, 102 PS, 2014-2018)",
-              "url": "https://bmwengine.uk/2-series/f45/"
+              "url": "https://bmwengines.uk/2-series/f45/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "2 Series Active/Gran Tourer LCI F45/F46 (B38A15A, 109 PS, 2018-2021)",
-              "url": "https://bmwengine.uk/2-series/f45/"
+              "url": "https://bmwengines.uk/2-series/f45/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "2 Series Gran Coupé F44 (B38A15, 109 PS, 2022-present)",
-              "url": "https://bmwengine.uk/2-series/f44/"
+              "url": "https://bmwengines.uk/2-series/f44/"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "2 Series Active Tourer U06 (B38A15P, 122 PS, 2022-present)",
-              "url": "https://bmwengine.uk/2-series/u06/"
+              "url": "https://bmwengines.uk/2-series/u06/"
             }
           ]
         },
@@ -84,25 +84,25 @@
               "@type": "ListItem",
               "position": 1,
               "name": "B38A15A (102 PS)",
-              "url": "https://bmwengine.uk/engines/b38/"
+              "url": "https://bmwengines.uk/engines/b38/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "B38A15A (109 PS)",
-              "url": "https://bmwengine.uk/engines/b38/"
+              "url": "https://bmwengines.uk/engines/b38/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "B38A15 (109 PS)",
-              "url": "https://bmwengine.uk/engines/b38/"
+              "url": "https://bmwengines.uk/engines/b38/"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "B38A15P (122 PS)",
-              "url": "https://bmwengine.uk/engines/b38/"
+              "url": "https://bmwengines.uk/engines/b38/"
             }
           ]
         },
@@ -162,8 +162,8 @@
         {
           "@type": "Organization",
           "name": "BMWEngines.uk",
-          "url": "https://bmwengine.uk/",
-          "logo": "https://bmwengine.uk/images/bmwengines-logo.png",
+          "url": "https://bmwengines.uk/",
+          "logo": "https://bmwengines.uk/images/bmwengines-logo.png",
           "parentOrganization": {
             "@type": "Organization",
             "name": "Engine Finders"
@@ -199,7 +199,7 @@
         {
           "@type": "WebPage",
           "name": "2 Series 216i Engine Replacement Cost UK — Compare Quotes",
-          "url": "https://bmwengine.uk/2-series/216i/",
+          "url": "https://bmwengines.uk/2-series/216i/",
           "author": {
             "@type": "Organization",
             "name": "BMWEngines.uk Editorial Team"

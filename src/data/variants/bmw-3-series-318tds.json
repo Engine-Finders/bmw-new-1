@@ -5,20 +5,20 @@
     "titleCharCount": 57,
     "description": "The 90hp M41D17 — BMW's first four-cylinder diesel. Real UK costs, common injection pump and timing issues, and honest reliability data. Get free quotes from 20+ vetted BMW specialists today.",
     "descriptionCharCount": 160,
-    "canonical": "https://bmwengine.uk/3-series/318tds/",
+    "canonical": "https://bmwengines.uk/3-series/318tds/",
     "openGraph": {
       "title": "318tds Engine Replacement Cost UK — Compare Quotes",
       "description": "The 90hp M41D17 — BMW's first four-cylinder diesel. Real UK costs, common injection pump and timing issues, and honest reliability data. Get free quotes from 20+ vetted BMW specialists today.",
       "type": "website",
-      "url": "https://bmwengine.uk/3-series/318tds/",
-      "image": "https://bmwengine.uk/images/bmw/hero/3-series-318tds.jpg",
+      "url": "https://bmwengines.uk/3-series/318tds/",
+      "image": "https://bmwengines.uk/images/bmw/hero/3-series-318tds.jpg",
       "siteName": "BMWEngines.uk"
     },
     "twitter": {
       "card": "summary_large_image",
       "title": "318tds Engine Replacement Cost UK — Compare Quotes",
       "description": "The 90hp M41D17 — BMW's first four-cylinder diesel. Real UK costs, common injection pump and timing issues, and honest reliability data.",
-      "image": "https://bmwengine.uk/images/bmw/hero/3-series-318tds.jpg"
+      "image": "https://bmwengines.uk/images/bmw/hero/3-series-318tds.jpg"
     },
     "jsonLd": {
       "@context": "https://schema.org",
@@ -30,19 +30,19 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://bmwengine.uk/"
+              "item": "https://bmwengines.uk/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "3 Series",
-              "item": "https://bmwengine.uk/3-series/"
+              "item": "https://bmwengines.uk/3-series/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "318tds",
-              "item": "https://bmwengine.uk/3-series/318tds/"
+              "item": "https://bmwengines.uk/3-series/318tds/"
             }
           ]
         },
@@ -54,7 +54,7 @@
               "@type": "ListItem",
               "position": 1,
               "name": "E36 318tds (M41D17, 1994–1998)",
-              "url": "https://bmwengine.uk/3-series/318tds/#m41d17"
+              "url": "https://bmwengines.uk/3-series/318tds/#m41d17"
             }
           ]
         },
@@ -66,7 +66,7 @@
               "@type": "ListItem",
               "position": 1,
               "name": "M41D17 1.7L Turbo Diesel",
-              "url": "https://bmwengine.uk/engines/m41d17/"
+              "url": "https://bmwengines.uk/engines/m41d17/"
             }
           ]
         },
@@ -126,8 +126,8 @@
         {
           "@type": "Organization",
           "name": "BMWEngines.uk",
-          "url": "https://bmwengine.uk/",
-          "logo": "https://bmwengine.uk/images/bmwengines-logo.png",
+          "url": "https://bmwengines.uk/",
+          "logo": "https://bmwengines.uk/images/bmwengines-logo.png",
           "parentOrganization": {
             "@type": "Organization",
             "name": "Engine Finders"
@@ -163,7 +163,7 @@
         {
           "@type": "WebPage",
           "name": "318tds Engine Replacement Cost UK — Compare Quotes",
-          "url": "https://bmwengine.uk/3-series/318tds/",
+          "url": "https://bmwengines.uk/3-series/318tds/",
           "author": {
             "@type": "Organization",
             "name": "BMWEngines.uk Editorial Team"

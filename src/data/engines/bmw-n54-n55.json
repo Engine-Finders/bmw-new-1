@@ -3,20 +3,20 @@
     "slug": "n54-n55",
     "title": "BMW N54/N55 Engine — Specs, Reliability & Replacement Cost",
     "description": "“The N54/N55 turbo six is a tuner’s favourite – but HPFP and injector issues are well known. Get honest UK specialist quotes and reliability data today.”",
-    "canonical": "https://bmwengine.uk/engines/n54-n55/",
+    "canonical": "https://bmwengines.uk/engines/n54-n55/",
     "openGraph": {
       "title": "BMW N54/N55 Engine — Specs, Reliability & Replacement Cost",
       "description": "The N54/N55 turbo six is a tuner’s favourite – but HPFP and injector issues are well known. Get honest UK specialist quotes and reliability data today.",
       "type": "website",
-      "url": "https://bmwengine.uk/engines/n54-n55/",
-      "image": "https://bmwengine.uk/images/bmw/engines/n54-n55.jpg",
-      "siteName": "bmwengine.uk"
+      "url": "https://bmwengines.uk/engines/n54-n55/",
+      "image": "https://bmwengines.uk/images/bmw/engines/n54-n55.jpg",
+      "siteName": "bmwengines.uk"
     },
     "twitter": {
       "card": "summary_large_image",
       "title": "BMW N54/N55 Engine — Specs, Reliability & Replacement Cost",
       "description": "The N54/N55 turbo six is a tuner’s favourite – but HPFP and injector issues are well known. Get honest UK specialist quotes and reliability data today.",
-      "image": "https://bmwengine.uk/images/bmw/engines/n54-n55.jpg"
+      "image": "https://bmwengines.uk/images/bmw/engines/n54-n55.jpg"
     },
     "jsonLd": {
       "@context": "https://schema.org",
@@ -28,19 +28,19 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://bmwengine.uk/"
+              "item": "https://bmwengines.uk/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "Engines",
-              "item": "https://bmwengine.uk/engines/"
+              "item": "https://bmwengines.uk/engines/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "N54/N55",
-              "item": "https://bmwengine.uk/engines/n54-n55/"
+              "item": "https://bmwengines.uk/engines/n54-n55/"
             }
           ]
         },
@@ -52,61 +52,61 @@
               "@type": "ListItem",
               "position": 1,
               "name": "BMW 1 Series E82/E88 135i",
-              "url": "https://bmwengine.uk/models/e82-135i/"
+              "url": "https://bmwengines.uk/models/e82-135i/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "BMW 3 Series E90/E92 335i",
-              "url": "https://bmwengine.uk/models/e90-335i/"
+              "url": "https://bmwengines.uk/models/e90-335i/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "BMW 3 Series F30 335i/340i",
-              "url": "https://bmwengine.uk/models/f30-335i/"
+              "url": "https://bmwengines.uk/models/f30-335i/"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "BMW 5 Series E60 535i",
-              "url": "https://bmwengine.uk/models/e60-535i/"
+              "url": "https://bmwengines.uk/models/e60-535i/"
             },
             {
               "@type": "ListItem",
               "position": 5,
               "name": "BMW 5 Series F10 535i",
-              "url": "https://bmwengine.uk/models/f10-535i/"
+              "url": "https://bmwengines.uk/models/f10-535i/"
             },
             {
               "@type": "ListItem",
               "position": 6,
               "name": "BMW X3 F25 xDrive35i",
-              "url": "https://bmwengine.uk/models/f25-x3-35i/"
+              "url": "https://bmwengines.uk/models/f25-x3-35i/"
             },
             {
               "@type": "ListItem",
               "position": 7,
               "name": "BMW X5 E70 xDrive35i",
-              "url": "https://bmwengine.uk/models/e70-x5-35i/"
+              "url": "https://bmwengines.uk/models/e70-x5-35i/"
             },
             {
               "@type": "ListItem",
               "position": 8,
               "name": "BMW X5 F15 xDrive35i",
-              "url": "https://bmwengine.uk/models/f15-x5-35i/"
+              "url": "https://bmwengines.uk/models/f15-x5-35i/"
             },
             {
               "@type": "ListItem",
               "position": 9,
               "name": "BMW Z4 E89 sDrive35i",
-              "url": "https://bmwengine.uk/models/e89-z4-35i/"
+              "url": "https://bmwengines.uk/models/e89-z4-35i/"
             },
             {
               "@type": "ListItem",
               "position": 10,
               "name": "BMW 7 Series F01 740i",
-              "url": "https://bmwengine.uk/models/f01-740i/"
+              "url": "https://bmwengines.uk/models/f01-740i/"
             }
           ]
         },
@@ -157,9 +157,9 @@
         },
         {
           "@type": "Organization",
-          "name": "bmwengine.uk",
-          "url": "https://bmwengine.uk/",
-          "logo": "https://bmwengine.uk/images/logo.png",
+          "name": "bmwengines.uk",
+          "url": "https://bmwengines.uk/",
+          "logo": "https://bmwengines.uk/images/logo.png",
           "parentOrganization": {
             "@type": "Organization",
             "name": "Engine Finders"
@@ -185,7 +185,7 @@
           "serviceType": "BMW N54/N55 Engine Replacement",
           "provider": {
             "@type": "Organization",
-            "name": "bmwengine.uk"
+            "name": "bmwengines.uk"
           },
           "areaServed": "GB",
           "offers": {
@@ -199,10 +199,10 @@
         {
           "@type": "Dataset",
           "name": "BMW N54/N55 UK Enquiry & Reliability Data 2025",
-          "description": "Proprietary UK specialist data and reliability scoring for the BMW N54/N55 turbo six, sourced from bmwengine.uk's marketplace activity. Enquiry volumes are estimated pending full verification.",
+          "description": "Proprietary UK specialist data and reliability scoring for the BMW N54/N55 turbo six, sourced from bmwengines.uk's marketplace activity. Enquiry volumes are estimated pending full verification.",
           "creator": {
             "@type": "Organization",
-            "name": "bmwengine.uk"
+            "name": "bmwengines.uk"
           },
           "temporalCoverage": "2025",
           "spatialCoverage": "United Kingdom"
@@ -210,14 +210,14 @@
         {
           "@type": "WebPage",
           "name": "BMW N54/N55 Engine — Specs, Reliability & Replacement Cost",
-          "url": "https://bmwengine.uk/engines/n54-n55/",
+          "url": "https://bmwengines.uk/engines/n54-n55/",
           "author": {
             "@type": "Organization",
-            "name": "bmwengine.uk Editorial Team"
+            "name": "bmwengines.uk Editorial Team"
           },
           "reviewedBy": {
             "@type": "Organization",
-            "name": "bmwengine.uk Specialist Network"
+            "name": "bmwengines.uk Specialist Network"
           },
           "datePublished": "2025-07-14",
           "dateModified": "2025-07-14"

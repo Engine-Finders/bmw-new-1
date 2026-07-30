@@ -5,7 +5,7 @@
     "titleCharCount": 54,
     "description": "Every BMW 520d engine — M47, N47 and B47. E60, F10, G30 and G60 generations, real UK costs and reliability. Get free quotes from 20+ vetted BMW specialists today.",
     "descriptionCharCount": 158,
-    "canonical": "https://bmwengine.uk/5-series/520d/",
+    "canonical": "https://bmwengines.uk/5-series/520d/",
     "openGraph": {
       "title": "",
       "description": "",
@@ -30,19 +30,19 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://bmwengine.uk/"
+              "item": "https://bmwengines.uk/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "5 Series",
-              "item": "https://bmwengine.uk/5-series/"
+              "item": "https://bmwengines.uk/5-series/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "520d",
-              "item": "https://bmwengine.uk/5-series/520d/"
+              "item": "https://bmwengines.uk/5-series/520d/"
             }
           ]
         },
@@ -54,31 +54,31 @@
               "@type": "ListItem",
               "position": 1,
               "name": "E60/E61 520d (M47TU2, 2003-2008)",
-              "url": "https://bmwengine.uk/5-series/e60/"
+              "url": "https://bmwengines.uk/5-series/e60/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "E60/E61 520d (N47D20C, 2008-2010)",
-              "url": "https://bmwengine.uk/5-series/e60/"
+              "url": "https://bmwengines.uk/5-series/e60/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "F10/F11/F07 520d (N47/B47, 2010-2017)",
-              "url": "https://bmwengine.uk/5-series/f10/"
+              "url": "https://bmwengines.uk/5-series/f10/"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "G30/G31 520d (B47D20, 2017-2023)",
-              "url": "https://bmwengine.uk/5-series/g30/"
+              "url": "https://bmwengines.uk/5-series/g30/"
             },
             {
               "@type": "ListItem",
               "position": 5,
               "name": "G60 520d (B47D20 MHEV, 2023-present)",
-              "url": "https://bmwengine.uk/5-series/g60/"
+              "url": "https://bmwengines.uk/5-series/g60/"
             }
           ]
         },
@@ -90,19 +90,19 @@
               "@type": "ListItem",
               "position": 1,
               "name": "M47TU2",
-              "url": "https://bmwengine.uk/engines/m47/"
+              "url": "https://bmwengines.uk/engines/m47/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "N47D20C",
-              "url": "https://bmwengine.uk/engines/n47/"
+              "url": "https://bmwengines.uk/engines/n47/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "B47D20",
-              "url": "https://bmwengine.uk/engines/b47/"
+              "url": "https://bmwengines.uk/engines/b47/"
             }
           ]
         },
@@ -162,8 +162,8 @@
         {
           "@type": "Organization",
           "name": "BMWEngines.uk",
-          "url": "https://bmwengine.uk/",
-          "logo": "https://bmwengine.uk/images/bmwengines-logo.png",
+          "url": "https://bmwengines.uk/",
+          "logo": "https://bmwengines.uk/images/bmwengines-logo.png",
           "parentOrganization": {
             "@type": "Organization",
             "name": "Engine Finders"
@@ -199,7 +199,7 @@
         {
           "@type": "WebPage",
           "name": "BMW 520d Engine Replacement Cost UK — Compare Quotes",
-          "url": "https://bmwengine.uk/5-series/520d/",
+          "url": "https://bmwengines.uk/5-series/520d/",
           "author": {
             "@type": "Organization",
             "name": "BMWEngines.uk Editorial Team"

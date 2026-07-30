@@ -3,20 +3,20 @@
     "slug": "m20",
     "title": "BMW M20 Engine — Reliability & Replacement Cost",
     "description": "The M20 straight‑six is durable but timing belt changes are critical — backed by real UK enquiries [ESTIMATED]. Compare quotes from vetted specialists today.",
-    "canonical": "https://bmwengine.uk/engines/m20/",
+    "canonical": "https://bmwengines.uk/engines/m20/",
     "openGraph": {
       "title": "BMW M20 Engine — Reliability & Replacement Cost",
       "description": "The M20 straight‑six is durable but timing belt changes are critical — backed by real UK enquiries [ESTIMATED]. Compare quotes from vetted specialists today.",
       "type": "website",
-      "url": "https://bmwengine.uk/engines/m20/",
-      "image": "https://bmwengine.uk/images/bmw/engines/m20.jpg",
-      "siteName": "bmwengine.uk"
+      "url": "https://bmwengines.uk/engines/m20/",
+      "image": "https://bmwengines.uk/images/bmw/engines/m20.jpg",
+      "siteName": "bmwengines.uk"
     },
     "twitter": {
       "card": "summary_large_image",
       "title": "BMW M20 Engine — Reliability & Replacement Cost",
       "description": "The M20 straight‑six is durable but timing belt changes are critical — backed by real UK enquiries [ESTIMATED]. Compare quotes from vetted specialists today.",
-      "image": "https://bmwengine.uk/images/bmw/engines/m20.jpg"
+      "image": "https://bmwengines.uk/images/bmw/engines/m20.jpg"
     },
     "jsonLd": {
       "@context": "https://schema.org",
@@ -28,19 +28,19 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://bmwengine.uk/"
+              "item": "https://bmwengines.uk/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "Engines",
-              "item": "https://bmwengine.uk/engines/"
+              "item": "https://bmwengines.uk/engines/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "M20",
-              "item": "https://bmwengine.uk/engines/m20/"
+              "item": "https://bmwengines.uk/engines/m20/"
             }
           ]
         },
@@ -52,37 +52,37 @@
               "@type": "ListItem",
               "position": 1,
               "name": "BMW 3 Series E21 320/6, 323i",
-              "url": "https://bmwengine.uk/models/3-series/e21/"
+              "url": "https://bmwengines.uk/models/3-series/e21/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "BMW 3 Series E30 320i/323i/325i",
-              "url": "https://bmwengine.uk/models/3-series/e30/"
+              "url": "https://bmwengines.uk/models/3-series/e30/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "BMW 5 Series E28 520i/525e/525i",
-              "url": "https://bmwengine.uk/models/5-series/e28/"
+              "url": "https://bmwengines.uk/models/5-series/e28/"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "BMW 5 Series E34 520i/525i (early)",
-              "url": "https://bmwengine.uk/models/5-series/e34/"
+              "url": "https://bmwengines.uk/models/5-series/e34/"
             },
             {
               "@type": "ListItem",
               "position": 5,
               "name": "BMW 6 Series E24 628CSi/633CSi/635CSi",
-              "url": "https://bmwengine.uk/models/6-series/e24/"
+              "url": "https://bmwengines.uk/models/6-series/e24/"
             },
             {
               "@type": "ListItem",
               "position": 6,
               "name": "BMW 3 Series E30 325i Convertible/Touring",
-              "url": "https://bmwengine.uk/models/3-series/e30/"
+              "url": "https://bmwengines.uk/models/3-series/e30/"
             }
           ]
         },
@@ -133,9 +133,9 @@
         },
         {
           "@type": "Organization",
-          "name": "bmwengine.uk",
-          "url": "https://bmwengine.uk/",
-          "logo": "https://bmwengine.uk/images/logo.png",
+          "name": "bmwengines.uk",
+          "url": "https://bmwengines.uk/",
+          "logo": "https://bmwengines.uk/images/logo.png",
           "parentOrganization": {
             "@type": "Organization",
             "name": "Engine Finders"
@@ -161,7 +161,7 @@
           "serviceType": "BMW M20 Engine Replacement",
           "provider": {
             "@type": "Organization",
-            "name": "bmwengine.uk"
+            "name": "bmwengines.uk"
           },
           "areaServed": "GB",
           "offers": {
@@ -175,10 +175,10 @@
         {
           "@type": "Dataset",
           "name": "BMW M20 UK Enquiry & Reliability Data 2025",
-          "description": "Proprietary UK enquiry volumes and reliability scoring data for the BMW M20, sourced from bmwengine.uk's specialist marketplace activity and workshop consensus.",
+          "description": "Proprietary UK enquiry volumes and reliability scoring data for the BMW M20, sourced from bmwengines.uk's specialist marketplace activity and workshop consensus.",
           "creator": {
             "@type": "Organization",
-            "name": "bmwengine.uk"
+            "name": "bmwengines.uk"
           },
           "temporalCoverage": "2025",
           "spatialCoverage": "United Kingdom"
@@ -186,14 +186,14 @@
         {
           "@type": "WebPage",
           "name": "BMW M20 Engine — Reliability & Replacement Cost",
-          "url": "https://bmwengine.uk/engines/m20/",
+          "url": "https://bmwengines.uk/engines/m20/",
           "author": {
             "@type": "Organization",
-            "name": "bmwengine.uk Editorial Team"
+            "name": "bmwengines.uk Editorial Team"
           },
           "reviewedBy": {
             "@type": "Organization",
-            "name": "bmwengine.uk Specialist Network"
+            "name": "bmwengines.uk Specialist Network"
           },
           "datePublished": "2026-07-14",
           "dateModified": "2026-07-14"

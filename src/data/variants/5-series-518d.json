@@ -5,20 +5,20 @@
     "titleCharCount": 58,
     "description": "The BMW 5 Series 518d — N47 and B47 2.0L turbo diesel, 136‑150 bhp. Real UK costs, timing chain advice, and honest reliability data. Get free quotes from 20+ vetted BMW specialists today.",
     "descriptionCharCount": 160,
-    "canonical": "https://bmwengine.uk/5-series/518d/",
+    "canonical": "https://bmwengines.uk/5-series/518d/",
     "openGraph": {
       "title": "5 Series 518d Engine Replacement Cost UK — Compare Quotes",
       "description": "The BMW 5 Series 518d — N47 and B47 2.0L turbo diesel, 136‑150 bhp. Real UK costs, timing chain advice, and honest reliability data. Get free quotes from 20+ vetted BMW specialists today.",
       "type": "website",
-      "url": "https://bmwengine.uk/5-series/518d/",
-      "image": "https://bmwengine.uk/images/bmw/hero/5-series-518d.jpg",
+      "url": "https://bmwengines.uk/5-series/518d/",
+      "image": "https://bmwengines.uk/images/bmw/hero/5-series-518d.jpg",
       "siteName": "BMWEngines.uk"
     },
     "twitter": {
       "card": "summary_large_image",
       "title": "5 Series 518d Engine Replacement Cost UK — Compare Quotes",
       "description": "The BMW 5 Series 518d — N47 and B47 2.0L turbo diesel, 136‑150 bhp. Real UK costs, timing chain advice, and honest reliability data.",
-      "image": "https://bmwengine.uk/images/bmw/hero/5-series-518d.jpg"
+      "image": "https://bmwengines.uk/images/bmw/hero/5-series-518d.jpg"
     },
     "jsonLd": {
       "@context": "https://schema.org",
@@ -30,25 +30,25 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://bmwengine.uk/"
+              "item": "https://bmwengines.uk/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "5 Series",
-              "item": "https://bmwengine.uk/5-series/"
+              "item": "https://bmwengines.uk/5-series/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "F10/G30",
-              "item": "https://bmwengine.uk/5-series/"
+              "item": "https://bmwengines.uk/5-series/"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "518d",
-              "item": "https://bmwengine.uk/5-series/518d/"
+              "item": "https://bmwengines.uk/5-series/518d/"
             }
           ]
         },
@@ -60,25 +60,25 @@
               "@type": "ListItem",
               "position": 1,
               "name": "N47D20C (F10, 2013-2014)",
-              "url": "https://bmwengine.uk/5-series/518d/#n47d20c"
+              "url": "https://bmwengines.uk/5-series/518d/#n47d20c"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "B47D20A (F10 late, 2014-2016)",
-              "url": "https://bmwengine.uk/5-series/518d/#b47d20a"
+              "url": "https://bmwengines.uk/5-series/518d/#b47d20a"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "B47D20B (G30, 2016-2020)",
-              "url": "https://bmwengine.uk/5-series/518d/#b47d20b"
+              "url": "https://bmwengines.uk/5-series/518d/#b47d20b"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "B47D20B MHEV (G30, 2020-present)",
-              "url": "https://bmwengine.uk/5-series/518d/#b47d20b-mhev"
+              "url": "https://bmwengines.uk/5-series/518d/#b47d20b-mhev"
             }
           ]
         },
@@ -90,19 +90,19 @@
               "@type": "ListItem",
               "position": 1,
               "name": "N47D20C",
-              "url": "https://bmwengine.uk/engines/n47d20c/"
+              "url": "https://bmwengines.uk/engines/n47d20c/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "B47D20A",
-              "url": "https://bmwengine.uk/engines/b47d20a/"
+              "url": "https://bmwengines.uk/engines/b47d20a/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "B47D20B",
-              "url": "https://bmwengine.uk/engines/b47d20b/"
+              "url": "https://bmwengines.uk/engines/b47d20b/"
             }
           ]
         },
@@ -162,8 +162,8 @@
         {
           "@type": "Organization",
           "name": "BMWEngines.uk",
-          "url": "https://bmwengine.uk/",
-          "logo": "https://bmwengine.uk/images/bmwengines-logo.png",
+          "url": "https://bmwengines.uk/",
+          "logo": "https://bmwengines.uk/images/bmwengines-logo.png",
           "parentOrganization": {
             "@type": "Organization",
             "name": "Engine Finders"
@@ -199,7 +199,7 @@
         {
           "@type": "WebPage",
           "name": "5 Series 518d Engine Replacement Cost UK — Compare Quotes",
-          "url": "https://bmwengine.uk/5-series/518d/",
+          "url": "https://bmwengines.uk/5-series/518d/",
           "author": {
             "@type": "Organization",
             "name": "BMWEngines.uk Editorial Team"

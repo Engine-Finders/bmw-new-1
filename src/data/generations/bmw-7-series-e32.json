@@ -15,19 +15,19 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://bmwengine.uk/"
+              "item": "https://bmwengines.uk/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "7 Series",
-              "item": "https://bmwengine.uk/7-series/"
+              "item": "https://bmwengines.uk/7-series/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "BMW 7 Series E32",
-              "item": "https://bmwengine.uk/7-series/e32/"
+              "item": "https://bmwengines.uk/7-series/e32/"
             }
           ]
         },
@@ -39,31 +39,31 @@
               "@type": "ListItem",
               "position": 1,
               "name": "M30B30 Engine",
-              "url": "https://bmwengine.uk/engines/m30/"
+              "url": "https://bmwengines.uk/engines/m30/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "M30B34 Engine",
-              "url": "https://bmwengine.uk/engines/m30/"
+              "url": "https://bmwengines.uk/engines/m30/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "M60B30 Engine",
-              "url": "https://bmwengine.uk/engines/m60/"
+              "url": "https://bmwengines.uk/engines/m60/"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "M60B40 Engine",
-              "url": "https://bmwengine.uk/engines/m60/"
+              "url": "https://bmwengines.uk/engines/m60/"
             },
             {
               "@type": "ListItem",
               "position": 5,
               "name": "M70B50 Engine",
-              "url": "https://bmwengine.uk/engines/m70/"
+              "url": "https://bmwengines.uk/engines/m70/"
             }
           ]
         },
@@ -75,61 +75,61 @@
               "@type": "ListItem",
               "position": 1,
               "name": "730i",
-              "url": "https://bmwengine.uk/7-series/730i/"
+              "url": "https://bmwengines.uk/7-series/730i/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "730iL",
-              "url": "https://bmwengine.uk/7-series/730il/"
+              "url": "https://bmwengines.uk/7-series/730il/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "735i",
-              "url": "https://bmwengine.uk/7-series/735i/"
+              "url": "https://bmwengines.uk/7-series/735i/"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "735iL",
-              "url": "https://bmwengine.uk/7-series/735il/"
+              "url": "https://bmwengines.uk/7-series/735il/"
             },
             {
               "@type": "ListItem",
               "position": 5,
               "name": "730i V8",
-              "url": "https://bmwengine.uk/7-series/730i-v8/"
+              "url": "https://bmwengines.uk/7-series/730i-v8/"
             },
             {
               "@type": "ListItem",
               "position": 6,
               "name": "730iL V8",
-              "url": "https://bmwengine.uk/7-series/730il-v8/"
+              "url": "https://bmwengines.uk/7-series/730il-v8/"
             },
             {
               "@type": "ListItem",
               "position": 7,
               "name": "740i",
-              "url": "https://bmwengine.uk/7-series/740i/"
+              "url": "https://bmwengines.uk/7-series/740i/"
             },
             {
               "@type": "ListItem",
               "position": 8,
               "name": "740iL",
-              "url": "https://bmwengine.uk/7-series/740il/"
+              "url": "https://bmwengines.uk/7-series/740il/"
             },
             {
               "@type": "ListItem",
               "position": 9,
               "name": "750i",
-              "url": "https://bmwengine.uk/7-series/750i/"
+              "url": "https://bmwengines.uk/7-series/750i/"
             },
             {
               "@type": "ListItem",
               "position": 10,
               "name": "750iL",
-              "url": "https://bmwengine.uk/7-series/750il/"
+              "url": "https://bmwengines.uk/7-series/750il/"
             }
           ]
         },
@@ -221,8 +221,8 @@
         {
           "@type": "Organization",
           "name": "BMWEngines.uk",
-          "url": "https://bmwengine.uk/",
-          "logo": "https://bmwengine.uk/images/bmwengines-logo.png",
+          "url": "https://bmwengines.uk/",
+          "logo": "https://bmwengines.uk/images/bmwengines-logo.png",
           "parentOrganization": {
             "@type": "Organization",
             "name": "Engine Finders"
@@ -258,7 +258,7 @@
         {
           "@type": "WebPage",
           "name": "E32 Engine Replacement Cost UK — Compare Quotes",
-          "url": "https://bmwengine.uk/7-series/e32/",
+          "url": "https://bmwengines.uk/7-series/e32/",
           "author": {
             "@type": "Organization",
             "name": "BMWEngines.uk Editorial Team"

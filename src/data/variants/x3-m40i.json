@@ -5,20 +5,20 @@
     "titleCharCount": 58,
     "description": "Every BMW X3 M40i engine — the 3.0-litre B58 turbocharged inline-six. Real UK costs, oil filter housing and coolant leak advice, and honest reliability data. Get free quotes from 20+ vetted BMW specialists today.",
     "descriptionCharCount": 157,
-    "canonical": "https://bmwengine.uk/x3/m40i/",
+    "canonical": "https://bmwengines.uk/x3/m40i/",
     "openGraph": {
       "title": "BMW X3 M40i Engine Replacement Cost UK — Compare Quotes",
       "description": "Every BMW X3 M40i engine — the 3.0-litre B58 turbocharged inline-six. Real UK costs, oil filter housing and coolant leak advice, and honest reliability data. Get free quotes from 20+ vetted BMW specialists today.",
       "type": "website",
-      "url": "https://bmwengine.uk/x3/m40i/",
-      "image": "https://bmwengine.uk/images/bmw/hero/x3-m40i.jpg",
+      "url": "https://bmwengines.uk/x3/m40i/",
+      "image": "https://bmwengines.uk/images/bmw/hero/x3-m40i.jpg",
       "siteName": "BMWEngines.uk"
     },
     "twitter": {
       "card": "summary_large_image",
       "title": "BMW X3 M40i Engine Replacement Cost UK — Compare Quotes",
       "description": "Every BMW X3 M40i engine — the 3.0-litre B58 turbocharged inline-six. Real UK costs, oil filter housing and coolant leak advice, and honest reliability data.",
-      "image": "https://bmwengine.uk/images/bmw/hero/x3-m40i.jpg"
+      "image": "https://bmwengines.uk/images/bmw/hero/x3-m40i.jpg"
     },
     "jsonLd": {
       "@context": "https://schema.org",
@@ -30,25 +30,25 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://bmwengine.uk/"
+              "item": "https://bmwengines.uk/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "X3",
-              "item": "https://bmwengine.uk/x3/"
+              "item": "https://bmwengines.uk/x3/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "G01",
-              "item": "https://bmwengine.uk/x3/g01/"
+              "item": "https://bmwengines.uk/x3/g01/"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "M40i",
-              "item": "https://bmwengine.uk/x3/m40i/"
+              "item": "https://bmwengines.uk/x3/m40i/"
             }
           ]
         },
@@ -60,13 +60,13 @@
               "@type": "ListItem",
               "position": 1,
               "name": "G01 X3 M40i (B58B30O0, 2018–2021)",
-              "url": "https://bmwengine.uk/x3/g01/"
+              "url": "https://bmwengines.uk/x3/g01/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "G01 LCI X3 M40i (B58B30O1/B58B30B, 2021–present)",
-              "url": "https://bmwengine.uk/x3/g01-lci/"
+              "url": "https://bmwengines.uk/x3/g01-lci/"
             }
           ]
         },
@@ -78,13 +78,13 @@
               "@type": "ListItem",
               "position": 1,
               "name": "B58B30O0",
-              "url": "https://bmwengine.uk/engines/b58/"
+              "url": "https://bmwengines.uk/engines/b58/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "B58B30O1 / B58B30B",
-              "url": "https://bmwengine.uk/engines/b58/"
+              "url": "https://bmwengines.uk/engines/b58/"
             }
           ]
         },
@@ -144,8 +144,8 @@
         {
           "@type": "Organization",
           "name": "BMWEngines.uk",
-          "url": "https://bmwengine.uk/",
-          "logo": "https://bmwengine.uk/images/bmwengines-logo.png",
+          "url": "https://bmwengines.uk/",
+          "logo": "https://bmwengines.uk/images/bmwengines-logo.png",
           "parentOrganization": {
             "@type": "Organization",
             "name": "Engine Finders"
@@ -181,7 +181,7 @@
         {
           "@type": "WebPage",
           "name": "BMW X3 M40i Engine Replacement Cost UK — Compare Quotes",
-          "url": "https://bmwengine.uk/x3/m40i/",
+          "url": "https://bmwengines.uk/x3/m40i/",
           "author": {
             "@type": "Organization",
             "name": "BMWEngines.uk Editorial Team"

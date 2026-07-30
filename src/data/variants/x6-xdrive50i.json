@@ -5,20 +5,20 @@
     "titleCharCount": 56,
     "description": "BMW X6 xDrive50i (N63) engine costs, reliability, and common faults. Valve stem seals, timing chain and V8 insights. Get free quotes from 20+ vetted BMW specialists today.",
     "descriptionCharCount": 159,
-    "canonical": "https://bmwengine.uk/x6/xdrive50i/",
+    "canonical": "https://bmwengines.uk/x6/xdrive50i/",
     "openGraph": {
       "title": "X6 xDrive50i Engine Cost UK — Compare Quotes",
       "description": "BMW X6 xDrive50i (N63) engine costs, reliability, and common faults. Valve stem seals, timing chain and V8 insights. Get free quotes from 20+ vetted BMW specialists today.",
       "type": "website",
-      "url": "https://bmwengine.uk/x6/xdrive50i/",
-      "image": "https://bmwengine.uk/images/bmw/hero/x6-xdrive50i.jpg",
+      "url": "https://bmwengines.uk/x6/xdrive50i/",
+      "image": "https://bmwengines.uk/images/bmw/hero/x6-xdrive50i.jpg",
       "siteName": "BMWEngines.uk"
     },
     "twitter": {
       "card": "summary_large_image",
       "title": "X6 xDrive50i Engine Cost UK — Compare Quotes",
       "description": "BMW X6 xDrive50i (N63) engine costs, reliability, and common faults. Valve stem seals, timing chain and V8 insights.",
-      "image": "https://bmwengine.uk/images/bmw/hero/x6-xdrive50i.jpg"
+      "image": "https://bmwengines.uk/images/bmw/hero/x6-xdrive50i.jpg"
     },
     "jsonLd": {
       "@context": "https://schema.org",
@@ -30,19 +30,19 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://bmwengine.uk/"
+              "item": "https://bmwengines.uk/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "X6",
-              "item": "https://bmwengine.uk/x6/"
+              "item": "https://bmwengines.uk/x6/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "xDrive50i",
-              "item": "https://bmwengine.uk/x6/xdrive50i/"
+              "item": "https://bmwengines.uk/x6/xdrive50i/"
             }
           ]
         },
@@ -54,19 +54,19 @@
               "@type": "ListItem",
               "position": 1,
               "name": "E71 (2008–2014) N63B44A",
-              "url": "https://bmwengine.uk/x6/e71/"
+              "url": "https://bmwengines.uk/x6/e71/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "F16 (2014–2019) N63B44O1",
-              "url": "https://bmwengine.uk/x6/f16/"
+              "url": "https://bmwengines.uk/x6/f16/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "G06 (2019–2023) N63B44M",
-              "url": "https://bmwengine.uk/x6/g06/"
+              "url": "https://bmwengines.uk/x6/g06/"
             }
           ]
         },
@@ -78,31 +78,31 @@
               "@type": "ListItem",
               "position": 1,
               "name": "N63B44A",
-              "url": "https://bmwengine.uk/engines/n63/"
+              "url": "https://bmwengines.uk/engines/n63/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "N63B44O1",
-              "url": "https://bmwengine.uk/engines/n63/"
+              "url": "https://bmwengines.uk/engines/n63/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "N63B44B",
-              "url": "https://bmwengine.uk/engines/n63/"
+              "url": "https://bmwengines.uk/engines/n63/"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "N63B44M",
-              "url": "https://bmwengine.uk/engines/n63/"
+              "url": "https://bmwengines.uk/engines/n63/"
             },
             {
               "@type": "ListItem",
               "position": 5,
               "name": "N63B44TÜ3",
-              "url": "https://bmwengine.uk/engines/n63/"
+              "url": "https://bmwengines.uk/engines/n63/"
             }
           ]
         },
@@ -162,8 +162,8 @@
         {
           "@type": "Organization",
           "name": "BMWEngines.uk",
-          "url": "https://bmwengine.uk/",
-          "logo": "https://bmwengine.uk/images/bmwengines-logo.png",
+          "url": "https://bmwengines.uk/",
+          "logo": "https://bmwengines.uk/images/bmwengines-logo.png",
           "parentOrganization": {
             "@type": "Organization",
             "name": "Engine Finders"
@@ -199,7 +199,7 @@
         {
           "@type": "WebPage",
           "name": "X6 xDrive50i Engine Cost UK — Compare Quotes",
-          "url": "https://bmwengine.uk/x6/xdrive50i/",
+          "url": "https://bmwengines.uk/x6/xdrive50i/",
           "author": {
             "@type": "Organization",
             "name": "BMWEngines.uk Editorial Team"

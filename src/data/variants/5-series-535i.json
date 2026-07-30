@@ -5,20 +5,20 @@
     "titleCharCount": 55,
     "description": "Every BMW 5 Series 535i engine — M30, M62, N54, N55, B58. Real UK costs, HPFP and timing chain insights, and honest reliability data. Get free quotes from 20+ vetted BMW specialists today.",
     "descriptionCharCount": 159,
-    "canonical": "https://bmwengine.uk/5-series/535i/",
+    "canonical": "https://bmwengines.uk/5-series/535i/",
     "openGraph": {
       "title": "535i Engine Replacement Cost UK — Compare Quotes",
       "description": "Every BMW 5 Series 535i engine — M30, M62, N54, N55, B58. Real UK costs, HPFP and timing chain insights, and honest reliability data. Get free quotes from 20+ vetted BMW specialists today.",
       "type": "website",
-      "url": "https://bmwengine.uk/5-series/535i/",
-      "image": "https://bmwengine.uk/images/bmw/hero/5-series-535i.jpg",
+      "url": "https://bmwengines.uk/5-series/535i/",
+      "image": "https://bmwengines.uk/images/bmw/hero/5-series-535i.jpg",
       "siteName": "BMWEngines.uk"
     },
     "twitter": {
       "card": "summary_large_image",
       "title": "535i Engine Replacement Cost UK — Compare Quotes",
       "description": "Every BMW 5 Series 535i engine — M30, M62, N54, N55, B58. Real UK costs, HPFP and timing chain insights, and honest reliability data.",
-      "image": "https://bmwengine.uk/images/bmw/hero/5-series-535i.jpg"
+      "image": "https://bmwengines.uk/images/bmw/hero/5-series-535i.jpg"
     },
     "jsonLd": {
       "@context": "https://schema.org",
@@ -30,19 +30,19 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://bmwengine.uk/"
+              "item": "https://bmwengines.uk/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "5 Series",
-              "item": "https://bmwengine.uk/5-series/"
+              "item": "https://bmwengines.uk/5-series/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "535i",
-              "item": "https://bmwengine.uk/5-series/535i/"
+              "item": "https://bmwengines.uk/5-series/535i/"
             }
           ]
         },
@@ -54,49 +54,49 @@
               "@type": "ListItem",
               "position": 1,
               "name": "E28 (1985–1988) M30B34",
-              "url": "https://bmwengine.uk/5-series/e28/"
+              "url": "https://bmwengines.uk/5-series/e28/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "E34 (1988–1991) M30B35",
-              "url": "https://bmwengine.uk/5-series/e34/"
+              "url": "https://bmwengines.uk/5-series/e34/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "E34 (1991–1996) M60B30/M62B35",
-              "url": "https://bmwengine.uk/5-series/e34/"
+              "url": "https://bmwengines.uk/5-series/e34/"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "E39 (1996–1998) M62B35",
-              "url": "https://bmwengine.uk/5-series/e39/"
+              "url": "https://bmwengines.uk/5-series/e39/"
             },
             {
               "@type": "ListItem",
               "position": 5,
               "name": "E39 LCI (1998–2003) M62TUB35",
-              "url": "https://bmwengine.uk/5-series/e39/"
+              "url": "https://bmwengines.uk/5-series/e39/"
             },
             {
               "@type": "ListItem",
               "position": 6,
               "name": "E60/E61 (2006–2010) N54B30A",
-              "url": "https://bmwengine.uk/5-series/e60/"
+              "url": "https://bmwengines.uk/5-series/e60/"
             },
             {
               "@type": "ListItem",
               "position": 7,
               "name": "F10/F11 (2010–2016) N55B30",
-              "url": "https://bmwengine.uk/5-series/f10/"
+              "url": "https://bmwengines.uk/5-series/f10/"
             },
             {
               "@type": "ListItem",
               "position": 8,
               "name": "G30/G31 (2017–2023) B58B30",
-              "url": "https://bmwengine.uk/5-series/g30/"
+              "url": "https://bmwengines.uk/5-series/g30/"
             }
           ]
         },
@@ -108,49 +108,49 @@
               "@type": "ListItem",
               "position": 1,
               "name": "M30B34",
-              "url": "https://bmwengine.uk/engines/m30/"
+              "url": "https://bmwengines.uk/engines/m30/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "M30B35",
-              "url": "https://bmwengine.uk/engines/m30/"
+              "url": "https://bmwengines.uk/engines/m30/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "M60B30",
-              "url": "https://bmwengine.uk/engines/m60/"
+              "url": "https://bmwengines.uk/engines/m60/"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "M62B35",
-              "url": "https://bmwengine.uk/engines/m62/"
+              "url": "https://bmwengines.uk/engines/m62/"
             },
             {
               "@type": "ListItem",
               "position": 5,
               "name": "M62TUB35",
-              "url": "https://bmwengine.uk/engines/m62/"
+              "url": "https://bmwengines.uk/engines/m62/"
             },
             {
               "@type": "ListItem",
               "position": 6,
               "name": "N54B30A",
-              "url": "https://bmwengine.uk/engines/n54/"
+              "url": "https://bmwengines.uk/engines/n54/"
             },
             {
               "@type": "ListItem",
               "position": 7,
               "name": "N55B30",
-              "url": "https://bmwengine.uk/engines/n55/"
+              "url": "https://bmwengines.uk/engines/n55/"
             },
             {
               "@type": "ListItem",
               "position": 8,
               "name": "B58B30",
-              "url": "https://bmwengine.uk/engines/b58/"
+              "url": "https://bmwengines.uk/engines/b58/"
             }
           ]
         },
@@ -210,8 +210,8 @@
         {
           "@type": "Organization",
           "name": "BMWEngines.uk",
-          "url": "https://bmwengine.uk/",
-          "logo": "https://bmwengine.uk/images/bmwengines-logo.png",
+          "url": "https://bmwengines.uk/",
+          "logo": "https://bmwengines.uk/images/bmwengines-logo.png",
           "parentOrganization": {
             "@type": "Organization",
             "name": "Engine Finders"
@@ -247,7 +247,7 @@
         {
           "@type": "WebPage",
           "name": "535i Engine Replacement Cost UK — Compare Quotes",
-          "url": "https://bmwengine.uk/5-series/535i/",
+          "url": "https://bmwengines.uk/5-series/535i/",
           "author": {
             "@type": "Organization",
             "name": "BMWEngines.uk Editorial Team"

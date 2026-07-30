@@ -5,20 +5,20 @@
     "titleCharCount": 55,
     "description": "Every BMW 7 Series 730i / 730Li engine — M30, M60, N52, B48. Real UK costs, Nikasil and cooling system insights, and honest reliability data. Get free quotes from 20+ vetted BMW specialists today.",
     "descriptionCharCount": 159,
-    "canonical": "https://bmwengine.uk/7-series/730i/",
+    "canonical": "https://bmwengines.uk/7-series/730i/",
     "openGraph": {
       "title": "730i Engine Replacement Cost UK — Compare Quotes",
       "description": "Every BMW 7 Series 730i / 730Li engine — M30, M60, N52, B48. Real UK costs, Nikasil and cooling system insights, and honest reliability data. Get free quotes from 20+ vetted BMW specialists today.",
       "type": "website",
-      "url": "https://bmwengine.uk/7-series/730i/",
-      "image": "https://bmwengine.uk/images/bmw/hero/7-series-730i.jpg",
+      "url": "https://bmwengines.uk/7-series/730i/",
+      "image": "https://bmwengines.uk/images/bmw/hero/7-series-730i.jpg",
       "siteName": "BMWEngines.uk"
     },
     "twitter": {
       "card": "summary_large_image",
       "title": "730i Engine Replacement Cost UK — Compare Quotes",
       "description": "Every BMW 7 Series 730i / 730Li engine — M30, M60, N52, B48. Real UK costs, Nikasil and cooling system insights, and honest reliability data.",
-      "image": "https://bmwengine.uk/images/bmw/hero/7-series-730i.jpg"
+      "image": "https://bmwengines.uk/images/bmw/hero/7-series-730i.jpg"
     },
     "jsonLd": {
       "@context": "https://schema.org",
@@ -30,19 +30,19 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://bmwengine.uk/"
+              "item": "https://bmwengines.uk/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "7 Series",
-              "item": "https://bmwengine.uk/7-series/"
+              "item": "https://bmwengines.uk/7-series/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "730i / 730Li",
-              "item": "https://bmwengine.uk/7-series/730i/"
+              "item": "https://bmwengines.uk/7-series/730i/"
             }
           ]
         },
@@ -54,43 +54,43 @@
               "@type": "ListItem",
               "position": 1,
               "name": "E23 (1977–1986) M30B30",
-              "url": "https://bmwengine.uk/7-series/e23/"
+              "url": "https://bmwengines.uk/7-series/e23/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "E32 (1986–1992) M30B30",
-              "url": "https://bmwengine.uk/7-series/e32/"
+              "url": "https://bmwengines.uk/7-series/e32/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "E32 (1992–1994) M60B30",
-              "url": "https://bmwengine.uk/7-series/e32/"
+              "url": "https://bmwengines.uk/7-series/e32/"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "E38 (1994–2001) M60B30",
-              "url": "https://bmwengine.uk/7-series/e38/"
+              "url": "https://bmwengines.uk/7-series/e38/"
             },
             {
               "@type": "ListItem",
               "position": 5,
               "name": "E65/E66 (2003–2008) N52B30",
-              "url": "https://bmwengine.uk/7-series/e65/"
+              "url": "https://bmwengines.uk/7-series/e65/"
             },
             {
               "@type": "ListItem",
               "position": 6,
               "name": "F01/F02 (2008–2015) N52B30",
-              "url": "https://bmwengine.uk/7-series/f01/"
+              "url": "https://bmwengines.uk/7-series/f01/"
             },
             {
               "@type": "ListItem",
               "position": 7,
               "name": "G11/G12 (2015–2022) B48B20B",
-              "url": "https://bmwengine.uk/7-series/g11/"
+              "url": "https://bmwengines.uk/7-series/g11/"
             }
           ]
         },
@@ -102,37 +102,37 @@
               "@type": "ListItem",
               "position": 1,
               "name": "M30B30",
-              "url": "https://bmwengine.uk/engines/m30/"
+              "url": "https://bmwengines.uk/engines/m30/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "M60B30",
-              "url": "https://bmwengine.uk/engines/m60/"
+              "url": "https://bmwengines.uk/engines/m60/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "N52B30A",
-              "url": "https://bmwengine.uk/engines/n52/"
+              "url": "https://bmwengines.uk/engines/n52/"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "N52B30BF",
-              "url": "https://bmwengine.uk/engines/n52/"
+              "url": "https://bmwengines.uk/engines/n52/"
             },
             {
               "@type": "ListItem",
               "position": 5,
               "name": "N52B30AF",
-              "url": "https://bmwengine.uk/engines/n52/"
+              "url": "https://bmwengines.uk/engines/n52/"
             },
             {
               "@type": "ListItem",
               "position": 6,
               "name": "B48B20B",
-              "url": "https://bmwengine.uk/engines/b48/"
+              "url": "https://bmwengines.uk/engines/b48/"
             }
           ]
         },
@@ -192,8 +192,8 @@
         {
           "@type": "Organization",
           "name": "BMWEngines.uk",
-          "url": "https://bmwengine.uk/",
-          "logo": "https://bmwengine.uk/images/bmwengines-logo.png",
+          "url": "https://bmwengines.uk/",
+          "logo": "https://bmwengines.uk/images/bmwengines-logo.png",
           "parentOrganization": {
             "@type": "Organization",
             "name": "Engine Finders"
@@ -229,7 +229,7 @@
         {
           "@type": "WebPage",
           "name": "730i Engine Replacement Cost UK — Compare Quotes",
-          "url": "https://bmwengine.uk/7-series/730i/",
+          "url": "https://bmwengines.uk/7-series/730i/",
           "author": {
             "@type": "Organization",
             "name": "BMWEngines.uk Editorial Team"

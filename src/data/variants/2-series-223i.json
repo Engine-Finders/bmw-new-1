@@ -5,20 +5,20 @@
     "titleCharCount": 56,
     "description": "BMW 2 Series 223i B48 MHEV petrol — real UK costs, water pump & injector watchpoints. Get free quotes from 20+ vetted BMW specialists today.",
     "descriptionCharCount": 159,
-    "canonical": "https://bmwengine.uk/2-series/223i/",
+    "canonical": "https://bmwengines.uk/2-series/223i/",
     "openGraph": {
       "title": "223i Engine Replacement Cost UK — Compare Quotes",
       "description": "BMW 2 Series 223i B48 MHEV petrol — real UK costs, water pump & injector watchpoints. Get free quotes from 20+ vetted BMW specialists today.",
       "type": "website",
-      "url": "https://bmwengine.uk/2-series/223i/",
-      "image": "https://bmwengine.uk/images/bmw/hero/2-series-223i.jpg",
+      "url": "https://bmwengines.uk/2-series/223i/",
+      "image": "https://bmwengines.uk/images/bmw/hero/2-series-223i.jpg",
       "siteName": "BMWEngines.uk"
     },
     "twitter": {
       "card": "summary_large_image",
       "title": "223i Engine Replacement Cost UK — Compare Quotes",
       "description": "BMW 2 Series 223i B48 MHEV petrol — real UK costs, water pump & injector watchpoints.",
-      "image": "https://bmwengine.uk/images/bmw/hero/2-series-223i.jpg"
+      "image": "https://bmwengines.uk/images/bmw/hero/2-series-223i.jpg"
     },
     "jsonLd": {
       "@context": "https://schema.org",
@@ -30,25 +30,25 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://bmwengine.uk/"
+              "item": "https://bmwengines.uk/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "2 Series",
-              "item": "https://bmwengine.uk/2-series/"
+              "item": "https://bmwengines.uk/2-series/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "2 Series U06",
-              "item": "https://bmwengine.uk/2-series/u06/"
+              "item": "https://bmwengines.uk/2-series/u06/"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "223i",
-              "item": "https://bmwengine.uk/2-series/223i/"
+              "item": "https://bmwengines.uk/2-series/223i/"
             }
           ]
         },
@@ -60,7 +60,7 @@
               "@type": "ListItem",
               "position": 1,
               "name": "U06 223i (B48 MHEV, 2022–present)",
-              "url": "https://bmwengine.uk/2-series/u06/"
+              "url": "https://bmwengines.uk/2-series/u06/"
             }
           ]
         },
@@ -72,7 +72,7 @@
               "@type": "ListItem",
               "position": 1,
               "name": "B48 (2.0-litre 4-cyl turbo MHEV)",
-              "url": "https://bmwengine.uk/engines/b48/"
+              "url": "https://bmwengines.uk/engines/b48/"
             }
           ]
         },
@@ -132,8 +132,8 @@
         {
           "@type": "Organization",
           "name": "BMWEngines.uk",
-          "url": "https://bmwengine.uk/",
-          "logo": "https://bmwengine.uk/images/bmwengines-logo.png",
+          "url": "https://bmwengines.uk/",
+          "logo": "https://bmwengines.uk/images/bmwengines-logo.png",
           "parentOrganization": {
             "@type": "Organization",
             "name": "Engine Finders"
@@ -169,7 +169,7 @@
         {
           "@type": "WebPage",
           "name": "223i Engine Replacement Cost UK — Compare Quotes",
-          "url": "https://bmwengine.uk/2-series/223i/",
+          "url": "https://bmwengines.uk/2-series/223i/",
           "author": {
             "@type": "Organization",
             "name": "BMWEngines.uk Editorial Team"

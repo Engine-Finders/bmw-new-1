@@ -15,19 +15,19 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://bmwengine.uk/"
+              "item": "https://bmwengines.uk/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "2 Series",
-              "item": "https://bmwengine.uk/2-series/"
+              "item": "https://bmwengines.uk/2-series/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "BMW 2 Series F74",
-              "item": "https://bmwengine.uk/2-series/f74/"
+              "item": "https://bmwengines.uk/2-series/f74/"
             }
           ]
         },
@@ -39,37 +39,37 @@
               "@type": "ListItem",
               "position": 1,
               "name": "B38A15P Engine",
-              "url": "https://bmwengine.uk/engines/b38/"
+              "url": "https://bmwengines.uk/engines/b38/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "B38A15M1 Engine",
-              "url": "https://bmwengine.uk/engines/b38/"
+              "url": "https://bmwengines.uk/engines/b38/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "B48A20O2 Engine",
-              "url": "https://bmwengine.uk/engines/b48/"
+              "url": "https://bmwengines.uk/engines/b48/"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "B48A20H/B48R Engine",
-              "url": "https://bmwengine.uk/engines/b48r/"
+              "url": "https://bmwengines.uk/engines/b48r/"
             },
             {
               "@type": "ListItem",
               "position": 5,
               "name": "B48A20P Engine",
-              "url": "https://bmwengine.uk/engines/b48/"
+              "url": "https://bmwengines.uk/engines/b48/"
             },
             {
               "@type": "ListItem",
               "position": 6,
               "name": "B47C20B Engine",
-              "url": "https://bmwengine.uk/engines/b47/"
+              "url": "https://bmwengines.uk/engines/b47/"
             }
           ]
         },
@@ -81,43 +81,43 @@
               "@type": "ListItem",
               "position": 1,
               "name": "218",
-              "url": "https://bmwengine.uk/2-series/218/"
+              "url": "https://bmwengines.uk/2-series/218/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "220",
-              "url": "https://bmwengine.uk/2-series/220/"
+              "url": "https://bmwengines.uk/2-series/220/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "223 xDrive",
-              "url": "https://bmwengine.uk/2-series/223-xdrive/"
+              "url": "https://bmwengines.uk/2-series/223-xdrive/"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "228 xDrive",
-              "url": "https://bmwengine.uk/2-series/228-xdrive/"
+              "url": "https://bmwengines.uk/2-series/228-xdrive/"
             },
             {
               "@type": "ListItem",
               "position": 5,
               "name": "M235 xDrive",
-              "url": "https://bmwengine.uk/2-series/m235-xdrive/"
+              "url": "https://bmwengines.uk/2-series/m235-xdrive/"
             },
             {
               "@type": "ListItem",
               "position": 6,
               "name": "218d",
-              "url": "https://bmwengine.uk/2-series/218d/"
+              "url": "https://bmwengines.uk/2-series/218d/"
             },
             {
               "@type": "ListItem",
               "position": 7,
               "name": "220d",
-              "url": "https://bmwengine.uk/2-series/220d/"
+              "url": "https://bmwengines.uk/2-series/220d/"
             }
           ]
         },
@@ -208,9 +208,9 @@
         },
         {
           "@type": "Organization",
-          "name": "BMWEngine.uk",
-          "url": "https://bmwengine.uk/",
-          "logo": "https://bmwengine.uk/images/bmwengine-logo.png",
+          "name": "bmwengines.uk",
+          "url": "https://bmwengines.uk/",
+          "logo": "https://bmwengines.uk/images/bmwengine-logo.png",
           "parentOrganization": {
             "@type": "Organization",
             "name": "Engine Finders"
@@ -221,7 +221,7 @@
           "serviceType": "BMW 2 Series F74 Engine Replacement",
           "provider": {
             "@type": "Organization",
-            "name": "BMWEngine.uk"
+            "name": "bmwengines.uk"
           },
           "areaServed": "GB",
           "offers": {
@@ -235,14 +235,14 @@
         {
           "@type": "WebPage",
           "name": "F74 Engine Replacement Cost UK — Compare Quotes",
-          "url": "https://bmwengine.uk/2-series/f74/",
+          "url": "https://bmwengines.uk/2-series/f74/",
           "author": {
             "@type": "Organization",
-            "name": "BMWEngine.uk Editorial Team"
+            "name": "bmwengines.uk Editorial Team"
           },
           "reviewedBy": {
             "@type": "Organization",
-            "name": "BMWEngine.uk Specialist Network"
+            "name": "bmwengines.uk Specialist Network"
           },
           "datePublished": "2026-07-09",
           "dateModified": "2026-07-09"
@@ -800,7 +800,7 @@
     ]
   },
   "trustCta": {
-    "h2": "Why UK BMW 2 Series F74 Owners Trust BMWEngine.uk",
+    "h2": "Why UK BMW 2 Series F74 Owners Trust bmwengines.uk",
     "trustPoints": [
       {
         "title": "Trusted F74 Engine Suppliers",

@@ -5,20 +5,20 @@
     "titleCharCount": 56,
     "description": "Every BMW M1 3.5 engine — the 3.5-litre M88/1 DOHC inline-six. Real UK costs, cooling system and Kugelfischer advice, and honest reliability data. Get free quotes from specialist BMW suppliers today.",
     "descriptionCharCount": 157,
-    "canonical": "https://bmwengine.uk/m1/35/",
+    "canonical": "https://bmwengines.uk/m1/35/",
     "openGraph": {
       "title": "BMW M1 3.5 Engine Replacement Cost UK — Compare Quotes",
       "description": "Every BMW M1 3.5 engine — the 3.5-litre M88/1 DOHC inline-six. Real UK costs, cooling system and Kugelfischer advice, and honest reliability data. Get free quotes from specialist BMW suppliers today.",
       "type": "website",
-      "url": "https://bmwengine.uk/m1/35/",
-      "image": "https://bmwengine.uk/images/bmw/hero/m1-35.jpg",
+      "url": "https://bmwengines.uk/m1/35/",
+      "image": "https://bmwengines.uk/images/bmw/hero/m1-35.jpg",
       "siteName": "BMWEngines.uk"
     },
     "twitter": {
       "card": "summary_large_image",
       "title": "BMW M1 3.5 Engine Replacement Cost UK — Compare Quotes",
       "description": "Every BMW M1 3.5 engine — the 3.5-litre M88/1 DOHC inline-six. Real UK costs, cooling system and Kugelfischer advice, and honest reliability data.",
-      "image": "https://bmwengine.uk/images/bmw/hero/m1-35.jpg"
+      "image": "https://bmwengines.uk/images/bmw/hero/m1-35.jpg"
     },
     "jsonLd": {
       "@context": "https://schema.org",
@@ -30,25 +30,25 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://bmwengine.uk/"
+              "item": "https://bmwengines.uk/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "M1",
-              "item": "https://bmwengine.uk/m1/"
+              "item": "https://bmwengines.uk/m1/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "E26",
-              "item": "https://bmwengine.uk/m1/e26/"
+              "item": "https://bmwengines.uk/m1/e26/"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "3.5",
-              "item": "https://bmwengine.uk/m1/35/"
+              "item": "https://bmwengines.uk/m1/35/"
             }
           ]
         },
@@ -60,7 +60,7 @@
               "@type": "ListItem",
               "position": 1,
               "name": "E26 M1 3.5 (M88/1, 1978–1981)",
-              "url": "https://bmwengine.uk/m1/e26/"
+              "url": "https://bmwengines.uk/m1/e26/"
             }
           ]
         },
@@ -72,7 +72,7 @@
               "@type": "ListItem",
               "position": 1,
               "name": "M88/1",
-              "url": "https://bmwengine.uk/engines/m88/"
+              "url": "https://bmwengines.uk/engines/m88/"
             }
           ]
         },
@@ -132,8 +132,8 @@
         {
           "@type": "Organization",
           "name": "BMWEngines.uk",
-          "url": "https://bmwengine.uk/",
-          "logo": "https://bmwengine.uk/images/bmwengines-logo.png",
+          "url": "https://bmwengines.uk/",
+          "logo": "https://bmwengines.uk/images/bmwengines-logo.png",
           "parentOrganization": {
             "@type": "Organization",
             "name": "Engine Finders"
@@ -169,7 +169,7 @@
         {
           "@type": "WebPage",
           "name": "BMW M1 3.5 Engine Replacement Cost UK — Compare Quotes",
-          "url": "https://bmwengine.uk/m1/35/",
+          "url": "https://bmwengines.uk/m1/35/",
           "author": {
             "@type": "Organization",
             "name": "BMWEngines.uk Editorial Team"

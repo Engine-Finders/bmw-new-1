@@ -15,19 +15,19 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Home",
-              "item": "https://bmwengine.uk/"
+              "item": "https://bmwengines.uk/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "1 Series",
-              "item": "https://bmwengine.uk/1-series/"
+              "item": "https://bmwengines.uk/1-series/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "BMW 1 Series F40",
-              "item": "https://bmwengine.uk/1-series/f40/"
+              "item": "https://bmwengines.uk/1-series/f40/"
             }
           ]
         },
@@ -39,19 +39,19 @@
               "@type": "ListItem",
               "position": 1,
               "name": "B38A15 1.5 Petrol",
-              "url": "https://bmwengine.uk/engines/b38/"
+              "url": "https://bmwengines.uk/engines/b38/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "B48A20 2.0 Petrol",
-              "url": "https://bmwengine.uk/engines/b48/"
+              "url": "https://bmwengines.uk/engines/b48/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "B47D20A 2.0 Diesel",
-              "url": "https://bmwengine.uk/engines/b47/"
+              "url": "https://bmwengines.uk/engines/b47/"
             }
           ]
         },
@@ -63,61 +63,61 @@
               "@type": "ListItem",
               "position": 1,
               "name": "116i",
-              "url": "https://bmwengine.uk/1-series/f40/116i/"
+              "url": "https://bmwengines.uk/1-series/f40/116i/"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "118i",
-              "url": "https://bmwengine.uk/1-series/f40/118i/"
+              "url": "https://bmwengines.uk/1-series/f40/118i/"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "120i",
-              "url": "https://bmwengine.uk/1-series/f40/120i/"
+              "url": "https://bmwengines.uk/1-series/f40/120i/"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "128ti",
-              "url": "https://bmwengine.uk/1-series/f40/128ti/"
+              "url": "https://bmwengines.uk/1-series/f40/128ti/"
             },
             {
               "@type": "ListItem",
               "position": 5,
               "name": "M135i xDrive",
-              "url": "https://bmwengine.uk/1-series/f40/m135i-xdrive/"
+              "url": "https://bmwengines.uk/1-series/f40/m135i-xdrive/"
             },
             {
               "@type": "ListItem",
               "position": 6,
               "name": "116d",
-              "url": "https://bmwengine.uk/1-series/f40/116d/"
+              "url": "https://bmwengines.uk/1-series/f40/116d/"
             },
             {
               "@type": "ListItem",
               "position": 7,
               "name": "118d",
-              "url": "https://bmwengine.uk/1-series/f40/118d/"
+              "url": "https://bmwengines.uk/1-series/f40/118d/"
             },
             {
               "@type": "ListItem",
               "position": 8,
               "name": "120d",
-              "url": "https://bmwengine.uk/1-series/f40/120d/"
+              "url": "https://bmwengines.uk/1-series/f40/120d/"
             },
             {
               "@type": "ListItem",
               "position": 9,
               "name": "125d",
-              "url": "https://bmwengine.uk/1-series/f40/125d/"
+              "url": "https://bmwengines.uk/1-series/f40/125d/"
             },
             {
               "@type": "ListItem",
               "position": 10,
               "name": "225xe",
-              "url": "https://bmwengine.uk/1-series/f40/225xe/"
+              "url": "https://bmwengines.uk/1-series/f40/225xe/"
             }
           ]
         },
@@ -208,9 +208,9 @@
         },
         {
           "@type": "Organization",
-          "name": "BMWEngine.uk",
-          "url": "https://bmwengine.uk/",
-          "logo": "https://bmwengine.uk/images/bmwengine-logo.png",
+          "name": "bmwengines.uk",
+          "url": "https://bmwengines.uk/",
+          "logo": "https://bmwengines.uk/images/bmwengine-logo.png",
           "parentOrganization": {
             "@type": "Organization",
             "name": "Engine Finders"
@@ -221,7 +221,7 @@
           "serviceType": "BMW 1 Series F40 Engine Replacement",
           "provider": {
             "@type": "Organization",
-            "name": "BMWEngine.uk"
+            "name": "bmwengines.uk"
           },
           "areaServed": "GB",
           "offers": {
@@ -235,10 +235,10 @@
         {
           "@type": "Dataset",
           "name": "BMW 1 Series F40 UK Engine Enquiry Data 2025",
-          "description": "Proprietary UK enquiry volumes and demand trends for BMW 1 Series F40 engines, sourced from BMWEngine.uk's specialist marketplace activity.",
+          "description": "Proprietary UK enquiry volumes and demand trends for BMW 1 Series F40 engines, sourced from bmwengines.uk's specialist marketplace activity.",
           "creator": {
             "@type": "Organization",
-            "name": "BMWEngine.uk"
+            "name": "bmwengines.uk"
           },
           "temporalCoverage": "2025",
           "spatialCoverage": "United Kingdom"
@@ -246,14 +246,14 @@
         {
           "@type": "WebPage",
           "name": "F40 Engine Replacement Cost UK — Compare Quotes",
-          "url": "https://bmwengine.uk/1-series/f40/",
+          "url": "https://bmwengines.uk/1-series/f40/",
           "author": {
             "@type": "Organization",
-            "name": "BMWEngine.uk Editorial Team"
+            "name": "bmwengines.uk Editorial Team"
           },
           "reviewedBy": {
             "@type": "Organization",
-            "name": "BMWEngine.uk Specialist Network"
+            "name": "bmwengines.uk Specialist Network"
           },
           "datePublished": "2026-07-09",
           "dateModified": "2026-07-09"
@@ -832,7 +832,7 @@
     ]
   },
   "trustCta": {
-    "h2": "Why UK BMW 1 Series F40 Owners Trust BMWEngine.uk",
+    "h2": "Why UK BMW 1 Series F40 Owners Trust bmwengines.uk",
     "trustPoints": [
       {
         "title": "Trusted F40 Engine Suppliers",
