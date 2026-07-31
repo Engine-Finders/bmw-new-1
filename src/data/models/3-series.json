@@ -91,10 +91,39 @@
         "ourCall": "🥇 #1 Most-Enquired BMW Model — 826 enquiries (2025) [BMW-VERIFIED]"
       }
     ],
-    "oneLineVerdict": "The 3 Series is where BMW's engine engineering lives — from the robust simplicity of the M57 to the N47's rear-mounted tensioner that made a generation of owners nervous. Every generation has its own equation; the G20 is the safest, the E90 is the bargain, and the E46 is the classic."
+    "oneLineVerdict": "The 3 Series is where BMW's engine engineering lives — from the robust simplicity of the M57 to the N47's rear-mounted tensioner that made a generation of owners nervous. Every generation has its own equation; the G20 is the safest, the E90 is the bargain, and the E46 is the classic.",
+    "subHeadline": "Seven generations. Dozens of engine codes. One clear truth: the 3 Series is brilliant - when you know which engine you're buying, and which you're not.",
+    "summaryStats": [
+      {
+        "iconKey": "chart",
+        "value": "826+",
+        "label": "Enquiries (2025) [BMW-VERIFIED]"
+      },
+      {
+        "iconKey": "shield",
+        "value": "#1",
+        "label": "Most-Enquired BMW Model"
+      },
+      {
+        "iconKey": "gear",
+        "value": "7",
+        "label": "Generations Covered"
+      },
+      {
+        "iconKey": "book",
+        "value": "25+",
+        "label": "Engine Codes"
+      },
+      {
+        "iconKey": "trophy",
+        "value": "",
+        "label": "Part of Engine Finders"
+      }
+    ]
   },
   "atAGlance": {
     "h2": "BMW 3 Series at a Glance",
+    "subHeadline": "Seven generations of engineering evolution. Here's everything you need to know about BMW's most iconic sports sedan.",
     "rows": [
       {
         "metric": "Generations",

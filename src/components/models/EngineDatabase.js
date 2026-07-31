@@ -6,7 +6,7 @@ export default function EngineDatabase({ data }) {
       <h2>{data.h2}</h2>
       {data.subHeadline && <p>{data.subHeadline}</p>}
 
-      <table border="1" cellPadding="4" cellSpacing="0">
+      {/* <table border="1" cellPadding="4" cellSpacing="0">
         <thead>
           <tr>
             {data.columns?.map((col) => (
@@ -30,7 +30,7 @@ export default function EngineDatabase({ data }) {
             </tr>
           ))}
         </tbody>
-      </table>
+      </table> */}
 
       {data.confidenceScore && (
         <>

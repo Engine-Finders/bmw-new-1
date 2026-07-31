@@ -26,19 +26,19 @@ DEFAULT_OUT = ROOT / "output-json"
 
 # Every model page content block starts with SECTION 1 ... <ModelHero>
 # Supports both:
-#   SECTION 1 — HERO — <ModelHero>
-#   SECTION 1: HERO — <ModelHero>
+#   SECTION 1 - HERO - <ModelHero>
+#   SECTION 1: HERO - <ModelHero>
 PAGE_START_RE = re.compile(
-    r"^SECTION\s+1\s*[:—\-]\s*.*?[—\-]\s*<ModelHero>\s*.*$",
+    r"^SECTION\s+1\s*[:-\-]\s*.*?[-\-]\s*<ModelHero>\s*.*$",
     re.MULTILINE | re.IGNORECASE,
 )
 META_START_RE = re.compile(
-    r"^(?P<title>.+?)\s+[—\-]+\s+METADATA\s*&\s*SCHEMA PACKAGE\s*$",
+    r"^(?P<title>.+?)\s+[-\-]+\s+METADATA\s*&\s*SCHEMA PACKAGE\s*$",
     re.MULTILINE | re.IGNORECASE,
 )
 # Match by section number + component tag (label text varies by model)
 SECTION_RE = re.compile(
-    r"^SECTION\s+(?P<num>\d+[A-Z]?)\s*[:—\-]\s*(?P<label>.+?)\s+[—\-]+\s*"
+    r"^SECTION\s+(?P<num>\d+[A-Z]?)\s*[:-\-]\s*(?P<label>.+?)\s+[-\-]+\s*"
     r"<(?P<component>[A-Za-z0-9_]+)>(?P<extra>[^\n]*)\s*$",
     re.MULTILINE,
 )
@@ -51,7 +51,7 @@ FIELD_RE = re.compile(
     re.IGNORECASE,
 )
 MODEL_PAGE_TITLE_RE = re.compile(
-    r"^(?P<title>.+?)\s+MODEL PAGE\s+[—\-]+\s+COMPLETE CONTENT\s*$",
+    r"^(?P<title>.+?)\s+MODEL PAGE\s+[-\-]+\s+COMPLETE CONTENT\s*$",
     re.IGNORECASE,
 )
 
@@ -101,7 +101,7 @@ def parse_href_and_label(text: str) -> tuple[str, str]:
     m = re.search(r"^(.*?)\s*(?:→|->)\s*(\S+)\s*$", text)
     if m:
         return clean(m.group(1)), m.group(2)
-    m = re.search(r"^(.*?)\s+[—\-]\s+(\/\S+)\s*$", text)
+    m = re.search(r"^(.*?)\s+[-\-]\s+(\/\S+)\s*$", text)
     if m:
         return clean(m.group(1)), m.group(2)
     return text, "#"
@@ -131,7 +131,7 @@ def cells_from_line(line: str) -> list[str]:
     """
     Split a line into cells.
     Leading-tab / indent-only separators (common in this TXT export) are NOT
-    multi-column rows — treat those as a single cell.
+    multi-column rows - treat those as a single cell.
     """
     if "\t" in line:
         parts = [clean(c) for c in line.split("\t")]
@@ -615,7 +615,7 @@ def parse_common_problems(body: str) -> dict[str, Any]:
             part = clean(part)
             if not part:
                 continue
-            m = re.match(r"^(\S+)\s+([A-Za-z/]+)\s*[—\-]+\s*(.*)$", part)
+            m = re.match(r"^(\S+)\s+([A-Za-z/]+)\s*[-\-]+\s*(.*)$", part)
             if m:
                 urgency_key.append(
                     {"icon": m.group(1), "label": clean(m.group(2)), "text": clean(m.group(3))}
@@ -852,7 +852,7 @@ def parse_replacement_costs(body: str) -> dict[str, Any]:
         looks_like_title = (
             not is_headerish
             and re.search(r"\d{4}", ln)
-            and ("—" in ln or "-" in ln or "Discovery" in ln or "facelift" in low)
+            and ("-" in ln or "-" in ln or "Discovery" in ln or "facelift" in low)
             and not re.match(r"^£", ln)
             and "hrs" not in low
         )
@@ -935,7 +935,7 @@ def parse_calculator_cta(body: str) -> dict[str, Any]:
     intro_parts = []
     for ln in lines:
         if re.match(r"^path\s*\d+", ln, re.I):
-            m = re.match(r"^(Path\s*\d+\s*[—\-].*?)\s*(?:→|->)\s*(\S+)\s*$", ln, re.I)
+            m = re.match(r"^(Path\s*\d+\s*[-\-].*?)\s*(?:→|->)\s*(\S+)\s*$", ln, re.I)
             if m:
                 paths.append({"label": clean(m.group(1)), "href": m.group(2)})
             else:
@@ -955,7 +955,7 @@ def parse_trust_block(body: str) -> dict[str, Any]:
     signals = []
     for ln in lines:
         item = ln.lstrip("* ").strip()
-        m = re.match(r"^(\S+)\s+(.+?)\s*[—\-]+\s*(.*)$", item)
+        m = re.match(r"^(\S+)\s+(.+?)\s*[-\-]+\s*(.*)$", item)
         if m:
             signals.append(
                 {"icon": m.group(1), "title": clean(m.group(2)), "text": clean(m.group(3))}
@@ -964,8 +964,8 @@ def parse_trust_block(body: str) -> dict[str, Any]:
             m2 = re.match(r"^(\S+)\s+(.+)$", item)
             if m2 and not m2.group(1)[0].isalnum():
                 rest = m2.group(2)
-                if "—" in rest or " - " in rest:
-                    title, text = re.split(r"\s*[—\-]\s*", rest, maxsplit=1)
+                if "-" in rest or " - " in rest:
+                    title, text = re.split(r"\s*[-\-]\s*", rest, maxsplit=1)
                     signals.append(
                         {"icon": m2.group(1), "title": clean(title), "text": clean(text)}
                     )
@@ -1010,7 +1010,7 @@ def parse_closing(body: str) -> dict[str, Any]:
         if ln.lower().startswith("(minimal footer"):
             footer = ln
             continue
-        m2 = re.match(r"^Card\s*\d+\s*[—\-]\s*(.+)$", ln, re.I)
+        m2 = re.match(r"^Card\s*\d+\s*[-\-]\s*(.+)$", ln, re.I)
         if m2:
             rest = m2.group(1)
             href = "#"
@@ -1023,8 +1023,8 @@ def parse_closing(body: str) -> dict[str, Any]:
             if im and not im.group(1)[0].isalnum():
                 icon = im.group(1)
                 rest = im.group(2)
-            if "—" in rest:
-                title, text = [clean(x) for x in rest.split("—", 1)]
+            if "-" in rest:
+                title, text = [clean(x) for x in rest.split("-", 1)]
             else:
                 title, text = rest, ""
             cards.append({"icon": icon, "title": title, "text": text, "href": href})
@@ -1266,13 +1266,13 @@ def split_pages(text: str) -> list[tuple[str, str]]:
 
     Page boundary = every SECTION 1 ... <ModelHero> line.
     This covers Land Rover pages (with/without MODEL PAGE header)
-    and BMW pages that only use SECTION 1 — HERO — <ModelHero>.
+    and BMW pages that only use SECTION 1 - HERO - <ModelHero>.
     """
     starts = list(PAGE_START_RE.finditer(text))
     if not starts:
         raise SystemExit(
             "No model pages found. Expected lines like "
-            "'SECTION 1 — HERO — <ModelHero>' or 'SECTION 1: HERO — <ModelHero>'."
+            "'SECTION 1 - HERO - <ModelHero>' or 'SECTION 1: HERO - <ModelHero>'."
         )
 
     pages = []
@@ -1342,7 +1342,7 @@ def build_page(page_name: str, page_text: str) -> dict[str, Any]:
 
     for component, _label, body in sections:
         if component not in COMPONENT_PARSERS:
-            print(f"  ! unknown component <{component}> — skipped", file=sys.stderr)
+            print(f"  ! unknown component <{component}> - skipped", file=sys.stderr)
             continue
         key, parser = COMPONENT_PARSERS[component]
         try:
@@ -1356,13 +1356,13 @@ def build_page(page_name: str, page_text: str) -> dict[str, Any]:
         tag = page.get("hero", {}).get("tagPill") or ""
         raw = ""
         if h1:
-            raw = re.split(r"\s+[—\-]\s+", h1)[0]
+            raw = re.split(r"\s+[-\-]\s+", h1)[0]
             raw = re.sub(
                 r"\b(engines?|engine replacement|the complete uk guide)\b",
                 "",
                 raw,
                 flags=re.I,
-            ).strip(" —-")
+            ).strip(" --")
         if not raw and tag:
             raw = tag.split("•")[0].strip()
         if not raw:

@@ -22,7 +22,7 @@ export default function VariantHero({ data }) {
           {data.registrationInput.flag} {data.registrationInput.placeholder}
           {data.registrationInput.cta && (
             <>
-              {" — "}
+              {" -"}
               <a href={data.registrationInput.cta.href}>
                 {data.registrationInput.cta.label}
               </a>

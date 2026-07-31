@@ -2,7 +2,7 @@
 
 Every page auto-generates `<link rel="canonical">` with no manual maintenance.
 
-## 1. Root layout — metadataBase
+## 1. Root layout - metadataBase
 
 In `src/app/layout.js`, add `metadataBase` to the static metadata export:
 
@@ -16,10 +16,10 @@ export const metadata = {
 
 Note: `metadataBase` MUST end with `/` or Next.js will strip trailing slashes from relative canonicals.
 
-## 2. Every page — generateMetadata with canonical
+## 2. Every page - generateMetadata with canonical
 
 Each `page.js` exports a `generateMetadata()` that returns `alternates.canonical`.
-**Use absolute URLs** (not relative like `/path`) — relative paths get normalized by `metadataBase`
+**Use absolute URLs** (not relative like `/path`) - relative paths get normalized by `metadataBase`
 and Next.js may add/strip trailing slashes. Absolute URLs preserve exact format.
 
 If data files have a `meta.canonical` field, use it; otherwise auto-generate from route params.
@@ -91,7 +91,7 @@ Every page outputs:
 <link rel="canonical" href="https://yourdomain.com/1-series/e87" />
 ```
 
-— either from data or auto-generated. No per-page manual work needed.
+- either from data or auto-generated. No per-page manual work needed.
 
 ## 4. Sitemap
 
@@ -161,4 +161,4 @@ export default function sitemap() {
 }
 ```
 
-Next.js outputs `https://yourdomain.com/sitemap.xml` automatically — no manual work needed.
+Next.js outputs `https://yourdomain.com/sitemap.xml` automatically - no manual work needed.

@@ -37,7 +37,7 @@ export default function CommonProblems({ data }) {
           <ul>
             {data.urgencyKey.map((item) => (
               <li key={item.label}>
-                {item.icon} {item.label} — {item.text}
+                {item.icon} {item.label} -{item.text}
               </li>
             ))}
           </ul>

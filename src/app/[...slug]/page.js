@@ -171,8 +171,9 @@ export default async function CatchAllPage({ params }) {
     return (
       <main
         style={{
-          padding: "24px 16px 64px",
-          maxWidth: 900,
+          padding: "24px 8px 64px",
+          width: "100%",
+          maxWidth: "88rem",
           margin: "0 auto",
           lineHeight: 1.5,
           display: "flex",

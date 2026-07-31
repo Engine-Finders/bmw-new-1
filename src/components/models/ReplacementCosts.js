@@ -9,7 +9,7 @@ export default function ReplacementCosts({ data }) {
       {data.tables?.map((table) => (
         <div key={table.title}>
           <h3>{table.title}</h3>
-          <table border="1" cellPadding="4" cellSpacing="0">
+          {/* <table border="1" cellPadding="4" cellSpacing="0">
             <thead>
               <tr>
                 {table.columns?.map((col) => (
@@ -29,7 +29,7 @@ export default function ReplacementCosts({ data }) {
                 </tr>
               ))}
             </tbody>
-          </table>
+          </table> */}
         </div>
       ))}
 

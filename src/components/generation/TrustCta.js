@@ -14,7 +14,7 @@ export default function TrustCta({ data }) {
       {data.ctaButton && (
         <p>
           <a href={data.ctaButton.href}>{data.ctaButton.label}</a>
-          {data.ctaButton.note && <> — {data.ctaButton.note}</>}
+          {data.ctaButton.note && <> -{data.ctaButton.note}</>}
         </p>
       )}
       <hr />

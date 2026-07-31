@@ -40,7 +40,7 @@ export default function OwnershipEconomics({ data }) {
           <ul>
             {data.keyTakeaways.map((item) => (
               <li key={item.question}>
-                <strong>{item.question}</strong> — {item.answer}
+                <strong>{item.question}</strong> -{item.answer}
               </li>
             ))}
           </ul>

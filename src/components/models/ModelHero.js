@@ -1,27 +1,208 @@
-export default function ModelHero({ data }) {
-  if (!data) return null;
+"use client";
+
+import Image from "next/image";
+import Link from "next/link";
+import MStripe from "@/components/reusableComponents/MStripe";
+import { useTheme } from "@/components/shared/themeProvider";
+
+const iconPaths = [
+  <path key="chart" d="M5 19V9m5 10V5m5 14v-7m5 7H3" />,
+  <path key="tool" d="m14.7 6.3 3-3a4 4 0 0 1 0 5.7l-1.4 1.4-2.7-2.7L7 14.3V17H4.3l6.6-6.6-2.7-2.7 1.4-1.4a4 4 0 0 1 5.1 0Z" />,
+  <path key="book" d="M4 6.5A2.5 2.5 0 0 1 6.5 4H11v16H6.5A2.5 2.5 0 0 0 4 22V6.5Zm16 0A2.5 2.5 0 0 0 17.5 4H13v16h4.5A2.5 2.5 0 0 1 20 22V6.5Z" />,
+  <path key="trophy" d="M8 4h8v4a4 4 0 0 1-8 0V4Zm0 2H4v2a3 3 0 0 0 4 2.8M16 6h4v2a3 3 0 0 1-4 2.8M12 12v5m-3 3h6m-7 0h8" />,
+];
+
+function StatIcon({ index }) {
+  return (
+    <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-[var(--color-primary)] bg-[var(--color-primary-soft)] text-[var(--color-primary)] md:h-14 md:w-14 md:border-0 md:bg-[var(--color-primary-soft)]">
+      <svg aria-hidden="true" viewBox="0 0 24 24" className="h-6 w-6 md:h-8 md:w-8" fill="none" stroke="currentColor" strokeWidth="2">
+        {iconPaths[index] || iconPaths[0]}
+      </svg>
+    </span>
+  );
+}
+
+function MetaIcon({ type }) {
+  const path =
+    type === "engine" ? (
+      <path d="M3 12h3m12 0h3M7 9h10v6H7V9Zm2-3h6m-3 0V3M5 15v3m14-3v3M9 18h6" />
+    ) : (
+      <path d="M12 3 5 6v6c0 5 3.3 8.8 7 9 3.7-.2 7-4 7-9V6l-7-3Zm-2 9 1.6 1.6L15 10" />
+    );
 
   return (
-    <section style={{ paddingBottom: 8 }}>
-      <p>{data.tagPill}</p>
-      <h1>{data.h1}</h1>
-      <p>{data.subHeadline}</p>
-      {data.trustStrip?.length > 0 && (
-        <ul>
-          {data.trustStrip.map((item) => (
-            <li key={item.label}>
-              {item.icon} {item.label}
-            </li>
-          ))}
-        </ul>
-      )}
-      {data.primaryCta && (
-        <p>
-          <a href={data.primaryCta.href}>{data.primaryCta.label}</a>
+    <svg aria-hidden="true" viewBox="0 0 24 24" className="h-6 w-6 shrink-0 text-[var(--color-primary)]" fill="none" stroke="currentColor" strokeWidth="2">
+      {path}
+    </svg>
+  );
+}
+
+function ArrowIcon() {
+  return (
+    <svg aria-hidden="true" viewBox="0 0 24 24" className="h-7 w-7" fill="none" stroke="currentColor" strokeWidth="2">
+      <path d="M5 12h14m-6-6 6 6-6 6" />
+    </svg>
+  );
+}
+
+function splitTagPill(tagPill) {
+  const parts = tagPill.split(" • ");
+
+  return {
+    model: parts[0] || "",
+    years: parts[1] || "",
+    generations: parts[2] || "",
+    engines: parts.slice(3).join(" • "),
+  };
+}
+
+function splitStat(label) {
+  const [main, detail = ""] = label.split(" -");
+  const [value, ...rest] = main.split(" ");
+  const hasValue = /[0-9+]/.test(value);
+
+  return {
+    value: hasValue ? value : "",
+    label: hasValue ? rest.join(" ") : main,
+    detail,
+  };
+}
+
+function HeroTitle({ title, isDark }) {
+  const guideIndex = title.indexOf("UK Guide");
+  const textClass = isDark ? "text-white" : "text-[var(--color-primary)]";
+
+  if (guideIndex === -1) {
+    return (
+      <h1 className={`max-w-[720px] text-[38px] font-bold leading-[1.04] tracking-normal md:text-[4.4rem] md:leading-[1.08] ${textClass}`}>
+        {title}
+      </h1>
+    );
+  }
+
+  return (
+    <h1 className={`max-w-[760px] text-[38px] font-bold leading-[1.04] tracking-normal md:text-[4.25rem] md:leading-[1.08] ${textClass}`}>
+      {title.slice(0, guideIndex)}
+      <span className="text-[var(--color-primary)]">{title.slice(guideIndex)}</span>
+    </h1>
+  );
+}
+
+function StatCard({ item, index, isDark }) {
+  const stat = splitStat(item.label);
+
+  return (
+    <li
+      className={`flex min-h-[112px] items-start gap-3 border p-3 md:min-h-0 md:items-center md:gap-4 md:border-y-0 md:border-l-0 md:border-r md:px-7 md:py-5 md:last:border-r-0 ${
+        isDark
+          ? "border-white/14 bg-[rgba(3,12,24,0.62)] md:border-white/12 md:bg-transparent"
+          : "border-[var(--color-border)] bg-[rgba(255,255,255,0.86)] md:border-[var(--color-border)] md:bg-transparent"
+      }`}
+    >
+      <StatIcon index={index} />
+      <div className="min-w-0">
+        <p className="text-[1.25rem] font-bold leading-tight text-[var(--color-text)] md:text-[1.75rem]">
+          {stat.value ? (
+            <>
+              {stat.value} <span className="text-[0.84rem] font-semibold md:text-[1rem]">{stat.label}</span>
+            </>
+          ) : (
+            stat.label
+          )}
         </p>
-      )}
-      {data.dataIntegrityNote && <p>{data.dataIntegrityNote}</p>}
-      <hr />
+        {stat.detail ? <p className="mt-1 text-[0.78rem] leading-[1.3] text-[var(--color-text-muted)] md:text-[0.9rem] md:leading-[1.35]">{stat.detail}</p> : null}
+      </div>
+    </li>
+  );
+}
+
+export default function ModelHero({ data }) {
+  const { theme } = useTheme();
+  if (!data) return null;
+
+  const isDark = theme === "dark";
+  const meta = splitTagPill(data.tagPill);
+
+  return (
+    <section className="relative left-1/2 w-screen -translate-x-1/2 overflow-hidden bg-[var(--color-page)] text-[var(--color-text)] md:min-h-[650px]">
+      <div className="absolute inset-0">
+        <Image
+          src="/model/Hero-bg-image.webp"
+          alt=""
+          fill
+          className="object-cover object-[62%_center] md:object-center"
+          sizes="100vw"
+          priority
+        />
+        <div
+          className={`absolute inset-0 ${
+            isDark
+              ? "bg-[linear-gradient(100deg,rgba(2,7,17,0.98)_0%,rgba(2,7,17,0.93)_41%,rgba(2,7,17,0.18)_67%,rgba(2,7,17,0.08)_100%)]"
+              : "bg-[linear-gradient(90deg,var(--color-hero-fade)_0%,rgba(255,255,255,0.91)_35%,rgba(255,255,255,0.2)_66%,rgba(255,255,255,0)_100%)]"
+          }`}
+        />
+        <div
+          className={`absolute inset-y-0 left-[40%] hidden w-28 -skew-x-[18deg] md:block ${
+            isDark ? "bg-[rgba(11,103,220,0.26)]" : "bg-[rgba(11,103,220,0.14)]"
+          }`}
+        />
+        <div className="absolute inset-x-0 bottom-0 h-36 bg-[linear-gradient(0deg,var(--color-page)_0%,transparent_100%)] md:h-44" />
+      </div>
+
+      <div className="relative mx-auto flex w-full max-w-8xl flex-col px-4 pb-5 pt-7 md:min-h-[650px] md:justify-center md:px-8 md:pb-8 md:pt-12">
+        <div className="max-w-[780px]">
+          <div
+            className={`inline-flex max-w-full flex-wrap items-center gap-x-3 gap-y-2 rounded-md border px-3 py-2.5 text-[0.82rem] leading-[1.35] md:px-5 md:py-3 md:text-[1rem] md:leading-[1.45] ${
+              isDark
+                ? "border-white/30 bg-[rgba(2,7,17,0.5)] text-white"
+                : "border-[rgba(11,103,220,0.48)] bg-[rgba(255,255,255,0.58)] text-[var(--color-text-muted)]"
+            }`}
+          >
+            <MetaIcon />
+            <strong className="font-semibold text-[var(--color-primary)]">{meta.model}</strong>
+            <span>{meta.years}</span>
+            <span>{meta.generations}</span>
+            <MetaIcon type="engine" />
+            <span>{meta.engines}</span>
+          </div>
+
+          <div className="mt-9 md:mt-11">
+            <HeroTitle title={data.h1} isDark={isDark} />
+          </div>
+          <div className="mt-4">
+            <MStripe />
+          </div>
+          <p className="mt-5 max-w-[650px] text-[0.92rem] leading-[1.45] text-[var(--color-text-muted)] md:text-[1.12rem] md:leading-[1.55]">
+            {data.subHeadline}
+          </p>
+
+          {data.primaryCta ? (
+            <Link
+              href={data.primaryCta.href}
+              className={`mt-7 inline-flex min-h-12 items-center justify-center gap-5 rounded-md px-5 py-3 text-[0.92rem] font-bold shadow-[0_12px_28px_var(--color-shadow)] md:min-h-14 md:gap-6 md:px-6 md:text-[1rem] ${
+                isDark ? "bg-white text-[var(--color-primary)]" : "bg-[var(--color-primary)] text-white"
+              }`}
+            >
+              <span>{data.primaryCta.label.replace(/\s*(?:→|â†’)\s*$/, "")}</span>
+              <ArrowIcon />
+            </Link>
+          ) : null}
+        </div>
+
+        {data.trustStrip?.length > 0 ? (
+          <ul
+            className={`mt-8 grid grid-cols-2 gap-3 md:mt-9 md:grid-cols-4 md:gap-0 md:overflow-hidden md:rounded-lg md:border md:shadow-[0_14px_36px_var(--color-shadow)] ${
+              isDark
+                ? "md:border-white/12 md:bg-[rgba(3,12,24,0.72)]"
+                : "md:border-[var(--color-border)] md:bg-[rgba(255,255,255,0.86)]"
+            }`}
+          >
+            {data.trustStrip.map((item, index) => (
+              <StatCard key={item.label} item={item} index={index} isDark={isDark} />
+            ))}
+          </ul>
+        ) : null}
+      </div>
     </section>
   );
 }

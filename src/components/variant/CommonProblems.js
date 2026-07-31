@@ -19,7 +19,7 @@ export default function CommonProblems({ data }) {
           )}
           {problem.urgency && (
             <p>
-              Urgency: {problem.urgency.icon} {problem.urgency.label} —{" "}
+              Urgency: {problem.urgency.icon} {problem.urgency.label} -{" "}
               {problem.urgency.text}
             </p>
           )}
