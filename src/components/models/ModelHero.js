@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import MStripe from "@/components/reusableComponents/MStripe";
 import { useTheme } from "@/components/shared/themeProvider";
+import { sectionButton, sectionDescription, sectionH1 } from "@/components/models/sectionTypography";
 
 const iconPaths = [
   <path key="chart" d="M5 19V9m5 10V5m5 14v-7m5 7H3" />,
@@ -74,14 +75,14 @@ function HeroTitle({ title, isDark }) {
 
   if (guideIndex === -1) {
     return (
-      <h1 className={`max-w-[720px] text-[38px] font-bold leading-[1.04] tracking-normal md:text-[4.4rem] md:leading-[1.08] ${textClass}`}>
+      <h1 className={`max-w-[720px] font-bold tracking-normal ${sectionH1} ${textClass}`}>
         {title}
       </h1>
     );
   }
 
   return (
-    <h1 className={`max-w-[760px] text-[38px] font-bold leading-[1.04] tracking-normal md:text-[4.25rem] md:leading-[1.08] ${textClass}`}>
+    <h1 className={`max-w-[760px] font-bold tracking-normal ${sectionH1} ${textClass}`}>
       {title.slice(0, guideIndex)}
       <span className="text-[var(--color-primary)]">{title.slice(guideIndex)}</span>
     </h1>
@@ -101,16 +102,16 @@ function StatCard({ item, index, isDark }) {
     >
       <StatIcon index={index} />
       <div className="min-w-0">
-        <p className="text-[1.25rem] font-bold leading-tight text-[var(--color-text)] md:text-[1.75rem]">
+        <p className="text-[18px] font-bold leading-tight text-[var(--color-text)] md:text-[18px]">
           {stat.value ? (
             <>
-              {stat.value} <span className="text-[0.84rem] font-semibold md:text-[1rem]">{stat.label}</span>
+              {stat.value} <span className="text-[15px] font-semibold">{stat.label}</span>
             </>
           ) : (
             stat.label
           )}
         </p>
-        {stat.detail ? <p className="mt-1 text-[0.78rem] leading-[1.3] text-[var(--color-text-muted)] md:text-[0.9rem] md:leading-[1.35]">{stat.detail}</p> : null}
+        {stat.detail ? <p className="mt-1 text-[15px] leading-[1.3] text-[var(--color-text-muted)]">{stat.detail}</p> : null}
       </div>
     </li>
   );
@@ -142,7 +143,7 @@ export default function ModelHero({ data }) {
           }`}
         />
         <div
-          className={`absolute inset-y-0 left-[40%] hidden w-28 -skew-x-[18deg] md:block ${
+          className={`absolute inset-y-0 left-[48%] hidden w-28 -skew-x-[18deg] md:left-[50%] md:block ${
             isDark ? "bg-[rgba(11,103,220,0.26)]" : "bg-[rgba(11,103,220,0.14)]"
           }`}
         />
@@ -152,7 +153,7 @@ export default function ModelHero({ data }) {
       <div className="relative mx-auto flex w-full max-w-8xl flex-col px-4 pb-5 pt-7 md:min-h-[650px] md:justify-center md:px-8 md:pb-8 md:pt-12">
         <div className="max-w-[780px]">
           <div
-            className={`inline-flex max-w-full flex-wrap items-center gap-x-3 gap-y-2 rounded-md border px-3 py-2.5 text-[0.82rem] leading-[1.35] md:px-5 md:py-3 md:text-[1rem] md:leading-[1.45] ${
+            className={`inline-flex max-w-full flex-wrap items-center gap-x-3 gap-y-2 rounded-md border px-3 py-2.5 text-[18px] leading-[1.35] md:px-5 md:py-3 md:text-[18px] md:leading-[1.45] ${
               isDark
                 ? "border-white/30 bg-[rgba(2,7,17,0.5)] text-white"
                 : "border-[rgba(11,103,220,0.48)] bg-[rgba(255,255,255,0.58)] text-[var(--color-text-muted)]"
@@ -172,16 +173,14 @@ export default function ModelHero({ data }) {
           <div className="mt-4">
             <MStripe />
           </div>
-          <p className="mt-5 max-w-[650px] text-[0.92rem] leading-[1.45] text-[var(--color-text-muted)] md:text-[1.12rem] md:leading-[1.55]">
+          <p className={`mt-5 max-w-[650px] ${sectionDescription} text-[var(--color-text-muted)]`}>
             {data.subHeadline}
           </p>
 
           {data.primaryCta ? (
             <Link
               href={data.primaryCta.href}
-              className={`mt-7 inline-flex min-h-12 items-center justify-center gap-5 rounded-md px-5 py-3 text-[0.92rem] font-bold shadow-[0_12px_28px_var(--color-shadow)] md:min-h-14 md:gap-6 md:px-6 md:text-[1rem] ${
-                isDark ? "bg-white text-[var(--color-primary)]" : "bg-[var(--color-primary)] text-white"
-              }`}
+              className={`mt-7 inline-flex min-h-12 items-center justify-center gap-5 rounded-md bg-[var(--color-primary)] px-5 py-3 font-bold text-white shadow-[0_12px_28px_var(--color-shadow)] transition-all duration-200 hover:text-black hover:shadow-[0_18px_40px_rgba(0,0,0,0.28)] ${sectionButton} md:min-h-14 md:gap-6 md:px-6`}
             >
               <span>{data.primaryCta.label.replace(/\s*(?:→|â†’)\s*$/, "")}</span>
               <ArrowIcon />

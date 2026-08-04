@@ -1,7 +1,9 @@
 "use client";
 
 import Link from "next/link";
+import MStripe from "@/components/reusableComponents/MStripe";
 import { useTheme } from "@/components/shared/themeProvider";
+import { sectionDescription, sectionH2, sectionTableText } from "@/components/models/sectionTypography";
 
 const defaultProblemImage = "https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=700&q=80";
 
@@ -63,7 +65,7 @@ function SeverityBadge({ severity }) {
   const classes = severityStyles[type] || severityStyles.monitor;
 
   return (
-    <span className={`inline-flex items-center gap-2 text-[0.82rem] font-bold ${classes.text}`}>
+    <span className={`inline-flex items-center gap-2 text-[15px] font-bold ${classes.text}`}>
       <span className={`h-3 w-3 rounded-full ${classes.dot}`} />
       {cleanText(severity?.label)}
     </span>
@@ -82,7 +84,7 @@ function ProblemImage({ index }) {
         }}
         className="h-full w-full object-cover"
       />
-      <span className="absolute left-3 top-3 rounded-md bg-[var(--color-surface-raised)] px-2 py-1 text-[1.05rem] font-bold text-[var(--color-primary)] shadow-sm">
+      <span className="absolute left-3 top-3 rounded-md bg-[var(--color-surface-raised)] px-2 py-1 text-[18px] font-bold text-[var(--color-primary)] shadow-sm">
         {String(index + 1).padStart(2, "0")}
       </span>
     </div>
@@ -98,7 +100,7 @@ function ProblemCard({ problem, index }) {
       <ProblemImage index={index} />
       <div className="flex min-w-0 flex-col p-3 md:p-5">
         <div className="flex items-start justify-between gap-4">
-          <h3 className="text-[0.98rem] font-bold leading-[1.12] text-[var(--color-text)] md:text-[1.12rem]">{cleanText(problem.issue)}</h3>
+        <h3 className={`${sectionTableText} font-bold leading-[1.12] text-[var(--color-text)] md:text-[18px]`}>{cleanText(problem.issue)}</h3>
           <div className="hidden shrink-0 md:block">
             <SeverityBadge severity={problem.severity} />
           </div>
@@ -106,10 +108,10 @@ function ProblemCard({ problem, index }) {
         <div className="mt-3 md:hidden">
           <SeverityBadge severity={problem.severity} />
         </div>
-        <p className="mt-2 text-[0.82rem] leading-[1.4] text-[var(--color-text-muted)] md:mt-3 md:text-[0.86rem]">
+        <p className={`mt-2 ${sectionTableText} text-[var(--color-text-muted)] md:mt-3`}>
           {cleanText(problem.description)}
         </p>
-        <Link href={href} className="mt-auto flex items-center justify-end gap-2 pt-4 text-[0.82rem] font-bold text-[var(--color-primary)]">
+        <Link href={href} className="mt-auto flex items-center justify-end gap-2 pt-4 text-[18px] font-bold text-[var(--color-primary)]">
           {label.replace(/\s*\u2192\s*$/, "")}
           <ArrowIcon />
         </Link>
@@ -124,7 +126,7 @@ function UrgencyKey({ items }) {
   return (
     <div className="rounded-md border border-[var(--color-border)] bg-[var(--color-surface)] p-4 shadow-[0_8px_22px_var(--color-shadow)]">
       <div className="grid gap-4 md:grid-cols-[1fr_repeat(4,1.2fr)] md:items-start">
-        <h3 className="text-[0.9rem] font-bold uppercase text-[var(--color-text)]">Urgency Key</h3>
+        <h3 className="text-[15px] font-bold uppercase text-[var(--color-text)]">Urgency Key</h3>
         {items.map((item) => {
           const label = cleanText(item.label);
           const type = label.toLowerCase();
@@ -133,7 +135,7 @@ function UrgencyKey({ items }) {
           return (
             <div key={label} className="flex gap-3 border-[var(--color-border)] md:border-l md:pl-6">
               <span className={`mt-1 h-4 w-4 shrink-0 rounded-full ${dot}`} />
-              <p className="text-[0.82rem] leading-[1.35] text-[var(--color-text-muted)]">
+              <p className="text-[15px] leading-[1.35] text-[var(--color-text-muted)]">
                 <strong className="block text-[var(--color-text)]">{label}</strong>
                 {cleanText(item.text)}
               </p>
@@ -152,17 +154,17 @@ export default function CommonProblems({ data }) {
   const title = splitTitle(data.h2);
 
   return (
-    <section data-theme-mode={theme} className="rounded-lg border border-[var(--color-border)] bg-[var(--color-surface)] px-4 py-6 text-[var(--color-text)] shadow-[0_10px_34px_var(--color-shadow)] md:px-6">
+    <section data-theme-mode={theme} className="bg-[var(--color-page)] py-6 text-[var(--color-text)]">
       <div>
-        <span className="inline-flex items-center rounded-md bg-[var(--color-primary-soft)] px-2.5 py-1 text-[0.78rem] font-bold text-[var(--color-primary)]">
-          {"// SECTION 6"}
-        </span>
-        <h2 className="mt-5 max-w-[860px] text-[2.05rem] font-bold leading-[1.08] tracking-normal md:text-[2.4rem]">
+        <h2 className={`max-w-[860px] ${sectionH2} tracking-normal`}>
           {title.main}
           {title.accent ? <span className="text-[var(--color-primary)]">{title.accent}</span> : null}
         </h2>
+        <div className="mt-3">
+          <MStripe />
+        </div>
         {data.subHeadline ? (
-          <p className="mt-4 max-w-[620px] text-[0.95rem] leading-[1.5] text-[var(--color-text-muted)]">
+          <p className={`mt-4 max-w-[620px] ${sectionDescription} text-[var(--color-text-muted)]`}>
             {cleanText(data.subHeadline)}
           </p>
         ) : null}

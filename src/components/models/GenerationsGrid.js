@@ -2,7 +2,9 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import MStripe from "@/components/reusableComponents/MStripe";
 import { useTheme } from "@/components/shared/themeProvider";
+import { sectionDescription, sectionH2, sectionTableText } from "@/components/models/sectionTypography";
 
 const defaultCarImage = "https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=600&q=80";
 
@@ -168,10 +170,10 @@ function GenerationCard({ card, index, featured = false, onToggle }) {
           {index + 1}
         </span>
         <div className="min-w-0 flex-1">
-          <p className="text-[0.72rem] font-semibold leading-tight md:text-[0.68rem]">{title.series}</p>
-          <h3 className="mt-0.5 text-[1.24rem] font-bold leading-none md:text-[1.02rem]">{title.code}</h3>
-          <p className="mt-2 text-[0.76rem] leading-[1.35] md:text-[0.72rem]">{meta.years}</p>
-          {meta.engines ? <p className="text-[0.76rem] leading-[1.35] md:text-[0.72rem]">• {meta.engines}</p> : null}
+          <p className={`${sectionTableText} font-semibold`}>{title.series}</p>
+          <h3 className="mt-0.5 text-[35px] font-bold leading-[1.05] md:text-[50px]">{title.code}</h3>
+          <p className={`mt-2 ${sectionTableText}`}>{meta.years}</p>
+          {meta.engines ? <p className={sectionTableText}>• {meta.engines}</p> : null}
         </div>
         <span className="text-[var(--color-primary)]">
           <ChevronIcon open={featured} />
@@ -185,7 +187,7 @@ function GenerationCard({ card, index, featured = false, onToggle }) {
       {featured ? (
         <Link
           href={href}
-          className="mt-4 flex min-h-10 items-center justify-center gap-3 rounded-md border border-[rgba(7,95,216,0.7)] px-3 text-center text-[0.82rem] font-bold text-[var(--color-primary)]"
+          className="mt-4 flex min-h-10 items-center justify-center gap-3 rounded-md border border-[rgba(7,95,216,0.7)] px-3 text-center text-[18px] font-bold text-[var(--color-primary)] transition-all duration-200 hover:text-black hover:shadow-[0_12px_24px_rgba(0,0,0,0.14)]"
         >
           <span>{label.replace(/\s*\u2192\s*$/, "")}</span>
           <ArrowIcon />
@@ -197,7 +199,7 @@ function GenerationCard({ card, index, featured = false, onToggle }) {
       </div>
 
       {featured && card.verdict ? (
-        <div className="mt-4 text-[0.82rem] leading-[1.45]">
+        <div className="mt-4 text-[15px] leading-[1.45]">
           <p className="font-bold">Our Verdict:</p>
           <p className="mt-1">{cleanText(card.verdict)}</p>
         </div>
@@ -206,7 +208,7 @@ function GenerationCard({ card, index, featured = false, onToggle }) {
       {!featured && (
         <Link
           href={href}
-          className="mt-12 hidden min-h-9 items-center justify-center gap-3 rounded-md border border-[rgba(7,95,216,0.45)] px-3 text-[0.78rem] font-bold text-[var(--color-primary)] md:flex"
+          className="mt-12 hidden min-h-9 items-center justify-center gap-3 rounded-md border border-[rgba(7,95,216,0.45)] px-3 text-[18px] font-bold text-[var(--color-primary)] transition-all duration-200 hover:text-black hover:shadow-[0_12px_24px_rgba(0,0,0,0.14)] md:flex"
         >
           <span>{label.replace(/^Explore the\s+/i, "Explore ").replace(/\s*\u2192\s*$/, "")}</span>
           <ChevronIcon />
@@ -231,10 +233,10 @@ function MobileGenerationRow({ card, index, onToggle }) {
         {index + 1}
       </span>
       <div className="min-w-0 flex-1">
-        <p className="text-[0.72rem] font-semibold leading-tight">{title.series}</p>
-        <h3 className="mt-0.5 text-[1.2rem] font-bold leading-none">{title.code}</h3>
-        {badge ? <p className="mt-1 text-[0.72rem] font-bold leading-tight">{badge}</p> : null}
-        <p className="mt-1 text-[0.72rem] leading-tight">{meta.years} <span className="px-1">•</span> {meta.engines}</p>
+        <p className={`${sectionTableText} font-semibold`}>{title.series}</p>
+        <h3 className="mt-0.5 text-[35px] font-bold leading-[1.05]">{title.code}</h3>
+        {badge ? <p className={`mt-1 ${sectionTableText} font-bold`}>{badge}</p> : null}
+        <p className={`mt-1 ${sectionTableText}`}>{meta.years} <span className="px-1">•</span> {meta.engines}</p>
       </div>
       <div className="w-[112px] shrink-0">
         <GenerationImage code={title.code} />
@@ -266,11 +268,11 @@ function ComparisonTable({ rangeTable }) {
         <span className="flex h-7 w-7 items-center justify-center rounded-md bg-[var(--color-primary-soft)]">
           <TableIcon type="scale" />
         </span>
-        <h3 className="text-[1rem] font-bold leading-tight text-[var(--color-text)] md:text-[1.15rem]">{cleanText(rangeTable.title)}</h3>
+        <h3 className={`${sectionTableText} font-bold text-[var(--color-text)] md:text-[18px]`}>{cleanText(rangeTable.title)}</h3>
       </div>
 
       <div className="overflow-x-auto">
-        <table className="min-w-[760px] w-full border-collapse overflow-hidden rounded-md text-left text-[0.78rem] text-[var(--color-text)] md:min-w-0">
+        <table className="min-w-[760px] w-full border-collapse overflow-hidden rounded-md text-left text-[15px] text-[var(--color-text)] md:min-w-0">
           <thead>
             <tr>
               <th className="w-[15%] border border-[var(--color-border)] bg-[var(--color-page-soft)] p-3" />
@@ -294,7 +296,7 @@ function ComparisonTable({ rangeTable }) {
               <td className="border border-[var(--color-border)] p-3"><strong className="text-red-600">{diesel.pre.split(" ")[0]}</strong>{diesel.pre.replace(diesel.pre.split(" ")[0], "")}</td>
               <td className="border border-[var(--color-border)] p-3"><strong className="text-red-600">{diesel.middle.split(" ")[0]}</strong>{diesel.middle.replace(diesel.middle.split(" ")[0], "")}</td>
               <td className="border border-[var(--color-border)] p-3"><strong className="text-green-700">{diesel.post.split(" ")[0]}</strong>{diesel.post.replace(diesel.post.split(" ")[0], "")}</td>
-              <td rowSpan={2} className="border border-green-100 bg-green-50 p-3 text-[0.82rem] font-bold leading-[1.35] text-green-700">{recommendation}</td>
+              <td rowSpan={2} className="border border-green-100 bg-green-50 p-3 text-[15px] font-bold leading-[1.35] text-green-700">{recommendation}</td>
             </tr>
             <tr>
               <th className="border border-[var(--color-border)] p-3 font-bold"><span className="flex items-center gap-2"><TableIcon type="fuel" />Core petrol</span></th>
@@ -324,12 +326,9 @@ export default function GenerationsGrid({ data }) {
   }
 
   return (
-    <section data-theme-mode={theme} className="rounded-lg border border-[var(--color-border)] bg-[var(--color-surface)] px-4 py-5 text-[var(--color-text)] shadow-[0_10px_34px_var(--color-shadow)] md:px-6 md:py-6">
+    <section data-theme-mode={theme} className="bg-[var(--color-page)] py-5 text-[var(--color-text)] md:py-6">
       <div>
-        <span className="inline-flex items-center rounded-md bg-[var(--color-primary-soft)] px-2.5 py-1 text-[0.78rem] font-bold text-[var(--color-primary)]">
-          &amp; SECTION 4
-        </span>
-        <h2 className="mt-4 max-w-[640px] text-[2.05rem] font-bold leading-[1.08] tracking-normal md:text-[2.15rem]">
+      <h2 className={`max-w-[640px] ${sectionH2} tracking-normal`}>
           {title.main}
           {title.accent ? (
             <>
@@ -338,8 +337,11 @@ export default function GenerationsGrid({ data }) {
             </>
           ) : null}
         </h2>
+        <div className="mt-3">
+          <MStripe />
+        </div>
         {data.subHeadline ? (
-          <p className="mt-3 max-w-[640px] text-[0.92rem] leading-[1.55] text-[var(--color-text-muted)] md:text-[0.9rem]">
+          <p className={`mt-3 max-w-[640px] ${sectionDescription} text-[var(--color-text-muted)]`}>
             {cleanText(data.subHeadline)}
           </p>
         ) : null}
@@ -411,12 +413,12 @@ export default function GenerationsGrid({ data }) {
       ) : null}
 
       {data.comparisonLink ? (
-        <p className="mt-4 flex items-center gap-3 pl-2 text-[0.82rem]">
+        <p className="mt-4 flex items-center gap-3 pl-2 text-[15px]">
           <span className="flex h-7 w-7 items-center justify-center rounded-md bg-[var(--color-primary-soft)]">
             <TableIcon type="spark" />
           </span>
           <span>Read the full comparison:</span>
-          <Link href={data.comparisonLink.href} className="font-bold text-[var(--color-primary)]">
+          <Link href={data.comparisonLink.href} className="font-bold text-[var(--color-primary)] transition-all duration-200 hover:text-black hover:shadow-[0_12px_24px_rgba(0,0,0,0.14)]">
             {cleanText(data.comparisonLink.label).replace("Read the full comparison:", "").replace(/\s*\u2192\s*$/, "")}
           </Link>
           <ArrowIcon />

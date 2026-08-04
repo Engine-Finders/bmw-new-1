@@ -2,7 +2,9 @@
 
 import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
+import MStripe from "@/components/reusableComponents/MStripe";
 import { useTheme } from "@/components/shared/themeProvider";
+import { sectionDescription, sectionH2 } from "@/components/models/sectionTypography";
 
 const defaultFilters = {
   query: "",
@@ -93,7 +95,7 @@ function StatCard({ icon, value, label }) {
         <span className="shrink-0 text-[var(--color-primary)]">{statIcon(icon)}</span>
         <strong className="text-[1.28rem] leading-none text-[var(--color-text)]">{cleanText(value)}</strong>
       </div>
-      <p className="mt-3 text-[0.88rem] leading-[1.45] text-[var(--color-text)]">{label}</p>
+      <p className="mt-3 text-[15px] leading-[1.45] text-[var(--color-text)]">{label}</p>
     </div>
   );
 }
@@ -221,11 +223,11 @@ function applyNativeMobileFilters(section) {
 function DesktopTable({ engines }) {
   return (
     <div className="overflow-hidden rounded-md border border-[var(--color-border)] bg-[var(--color-surface)]">
-      <table className="w-full border-collapse text-left text-[0.82rem] text-[var(--color-text)]">
+      <table className="w-full border-collapse text-left text-[15px] text-[var(--color-text)]">
         <thead>
           <tr className="bg-[var(--color-page-soft)]">
             {["Engine Code", "Family", "Fuel", "Disp.", "Power", "Years", "Gen.", "Reliability", "2025 Enquiries", "Avg. Recon Cost"].map((column) => (
-              <th key={column} className="border-b border-r border-[var(--color-border)] px-4 py-4 text-center text-[0.78rem] font-bold last:border-r-0">
+              <th key={column} className="border-b border-r border-[var(--color-border)] px-4 py-4 text-center text-[15px] font-bold last:border-r-0">
                 {column}
               </th>
             ))}
@@ -253,12 +255,12 @@ function DesktopTable({ engines }) {
 }
 
 function MobileControls({ filters, options, onChange, onReset }) {
-  const selectClass = "min-h-12 w-full rounded-md border border-[var(--color-border)] bg-[var(--color-surface)] px-4 text-[0.88rem] text-[var(--color-text)]";
+  const selectClass = "min-h-12 w-full rounded-md border border-[var(--color-border)] bg-[var(--color-surface)] px-4 text-[15px] text-[var(--color-text)]";
   const updateQuery = (event) => onChange({ query: event.currentTarget.value });
 
   return (
     <div className="space-y-3">
-      <label className="flex min-h-14 items-center gap-3 rounded-md border border-[var(--color-border)] bg-[var(--color-surface)] px-4 text-[0.9rem] text-[var(--color-text-soft)]">
+      <label className="flex min-h-14 items-center gap-3 rounded-md border border-[var(--color-border)] bg-[var(--color-surface)] px-4 text-[15px] text-[var(--color-text-soft)]">
         <span className="text-[var(--color-text)]">{statIcon("search")}</span>
         <input
           type="search"
@@ -289,7 +291,7 @@ function MobileControls({ filters, options, onChange, onReset }) {
           <option value="family">Sort by Family</option>
         </select>
       </div>
-      <button type="button" data-filter-reset onClick={onReset} className="flex min-h-12 w-full items-center justify-center gap-3 rounded-md border border-[var(--color-border)] bg-[var(--color-surface)] text-[0.88rem] text-[var(--color-text)]">
+      <button type="button" data-filter-reset onClick={onReset} className="flex min-h-12 w-full items-center justify-center gap-3 rounded-md border border-[var(--color-border)] bg-[var(--color-surface)] text-[15px] text-[var(--color-text)]">
         <span className="text-[var(--color-primary)]">{statIcon("reset")}</span>
         Reset filters
       </button>
@@ -299,8 +301,8 @@ function MobileControls({ filters, options, onChange, onReset }) {
 
 function MobileTable({ engines }) {
   return (
-    <div className="overflow-hidden rounded-md border border-[var(--color-border)] bg-[var(--color-surface)] text-[0.88rem]">
-      <div className="grid grid-cols-[1.2fr_0.9fr_1fr_44px] bg-[var(--color-primary)] px-3 py-3 text-[0.78rem] font-bold uppercase text-white">
+    <div className="overflow-hidden rounded-md border border-[var(--color-border)] bg-[var(--color-surface)] text-[15px]">
+      <div className="grid grid-cols-[1.2fr_0.9fr_1fr_44px] bg-[var(--color-primary)] px-3 py-3 text-[15px] font-bold uppercase text-white">
         <span>Engine Code</span>
         <span>Fuel</span>
         <span>2025 Enquiries</span>
@@ -347,11 +349,11 @@ function MobileTable({ engines }) {
         );
       })}
       </div>
-      <div data-engine-empty hidden className="border-t border-[var(--color-border)] px-3 py-5 text-center text-[0.88rem] text-[var(--color-text-muted)]">
+      <div data-engine-empty hidden className="border-t border-[var(--color-border)] px-3 py-5 text-center text-[15px] text-[var(--color-text-muted)]">
         No engine codes match these filters.
       </div>
       {engines.length === 0 ? (
-        <div className="border-t border-[var(--color-border)] px-3 py-5 text-center text-[0.88rem] text-[var(--color-text-muted)]">
+        <div className="border-t border-[var(--color-border)] px-3 py-5 text-center text-[15px] text-[var(--color-text-muted)]">
           No engine codes match these filters.
         </div>
       ) : null}
@@ -408,14 +410,11 @@ export default function EngineDatabase({ data }) {
   }
 
   return (
-    <section data-engine-database data-theme-mode={theme} className="rounded-lg border border-[var(--color-border)] bg-[var(--color-surface)] px-4 py-6 text-[var(--color-text)] shadow-[0_10px_34px_var(--color-shadow)] md:px-6">
+    <section data-engine-database data-theme-mode={theme} className="bg-[var(--color-page)] py-6 text-[var(--color-text)]">
       <div className="hidden md:block">
         <div className="grid gap-8 md:grid-cols-[1fr_0.9fr] md:items-start">
           <div>
-            <span className="inline-flex items-center gap-2 rounded-md bg-[var(--color-primary-soft)] px-2.5 py-1 text-[0.78rem] font-bold text-[var(--color-primary)]">
-              {statIcon("database")} SECTION 5
-            </span>
-            <h2 className="mt-4 max-w-[650px] text-[2.05rem] font-bold leading-[1.08] tracking-normal md:text-[2.15rem]">
+            <h2 className={`max-w-[650px] ${sectionH2} tracking-normal`}>
               {title.main}
               {title.accent ? (
                 <>
@@ -424,7 +423,10 @@ export default function EngineDatabase({ data }) {
                 </>
               ) : null}
             </h2>
-            {data.subHeadline ? <p className="mt-3 max-w-[610px] text-[0.92rem] leading-[1.45] text-[var(--color-text-muted)]">{cleanText(data.subHeadline)}</p> : null}
+            <div className="mt-3">
+              <MStripe />
+            </div>
+            {data.subHeadline ? <p className={`mt-3 max-w-[610px] ${sectionDescription} text-[var(--color-text-muted)]`}>{cleanText(data.subHeadline)}</p> : null}
           </div>
 
           <div className="grid grid-cols-4 gap-3">
@@ -440,12 +442,12 @@ export default function EngineDatabase({ data }) {
         </div>
 
         <div className="mt-3 flex items-center justify-between gap-4">
-          <button type="button" className="flex min-h-11 min-w-[280px] items-center justify-between rounded-md border border-[var(--color-border)] px-5 text-[0.86rem] font-medium text-[var(--color-primary)]">
+          <button type="button" className="flex min-h-11 min-w-[280px] items-center justify-between rounded-md border border-[var(--color-border)] px-5 text-[18px] font-medium text-[var(--color-primary)] transition-all duration-200 hover:text-black hover:shadow-[0_12px_24px_rgba(0,0,0,0.14)]">
             <span className="flex items-center gap-3">{statIcon("file")} View all {totalEngineCount} engine codes</span>
             <span>v</span>
           </button>
           <p className="mr-auto border-l border-[var(--color-border)] pl-7 text-[0.84rem] text-[var(--color-text-muted)]">Showing {shownDesktopCount} of {totalEngineCount} engine codes</p>
-          <div className="flex items-center gap-5 rounded-md border border-[var(--color-border)] px-5 py-3 text-[0.82rem]">
+          <div className="flex items-center gap-5 rounded-md border border-[var(--color-border)] px-5 py-3 text-[15px]">
             <span><Rating value="★☆☆☆☆" /> Poor</span>
             <span><Rating value="★★★☆☆" /> Average</span>
             <span><Rating value="★★★★☆" /> Good</span>
@@ -458,26 +460,28 @@ export default function EngineDatabase({ data }) {
             <span className="flex h-8 w-8 items-center justify-center rounded-full bg-[var(--color-primary-soft)] font-bold text-[var(--color-primary)]">i</span>
             All enquiries are from 2025 (to date) and verified via our internal system. Recon costs are supply only and exclude fitting.
           </p>
-          <Link href="#" className="flex items-center gap-2 font-bold text-[var(--color-primary)]">How we collect engine data {statIcon("arrow")}</Link>
+          <Link href="#" className="flex items-center gap-2 font-bold text-[var(--color-primary)] transition-all duration-200 hover:text-black hover:shadow-[0_12px_24px_rgba(0,0,0,0.14)]">How we collect engine data {statIcon("arrow")}</Link>
         </div>
       </div>
 
       <div className="md:hidden">
-        <span className="inline-flex items-center rounded-md px-0 py-1 text-[0.86rem] font-bold text-[var(--color-primary)]">/ SECTION 5</span>
-        <h2 className="mt-4 text-[2rem] font-bold leading-[1.08] tracking-normal">
-          {shortTitle(data.h2).replace("Engine Codes — The Database", "Engine Codes —")}
+        <h2 className="text-[2rem] font-bold leading-[1.08] tracking-normal">
+          {shortTitle(data.h2).replace("Engine Codes - The Database", "Engine Codes -")}
           <br />
           <span className="text-[var(--color-primary)]">The Database</span>
         </h2>
-        <p className="mt-4 text-[1rem] leading-[1.55] text-[var(--color-text-muted)]">
+        <div className="mt-3">
+          <MStripe />
+        </div>
+        <p className={`mt-4 ${sectionDescription} text-[var(--color-text-muted)]`}>
           The complete database of BMW 3 Series engine codes with real UK enquiry data, fitted models, and replacement cost insights.
         </p>
 
         <div className="mt-6 flex gap-5 rounded-md border border-[var(--color-border)] bg-[var(--color-surface)] p-4">
           <span className="flex h-16 w-16 shrink-0 items-center justify-center rounded-md bg-[var(--color-primary-soft)] text-[var(--color-primary)]">{statIcon("database")}</span>
           <div>
-            <h3 className="text-[1.05rem] font-bold">Proprietary UK Data</h3>
-            <p className="mt-2 text-[0.96rem] leading-[1.5]">Every figure below is powered by 24,650+ real UK owner enquiries in 2025. This is data you won&apos;t find anywhere else.</p>
+            <h3 className="text-[35px] font-bold md:text-[50px]">Proprietary UK Data</h3>
+            <p className="mt-2 text-[15px] leading-[1.5]">Every figure below is powered by 24,650+ real UK owner enquiries in 2025. This is data you won&apos;t find anywhere else.</p>
           </div>
         </div>
 
@@ -494,7 +498,7 @@ export default function EngineDatabase({ data }) {
           <MobileTable engines={mobileEngines} />
         </div>
 
-        <div className="mt-6 rounded-md border border-[var(--color-border)] bg-[var(--color-surface)] p-5 text-[0.9rem] leading-[1.55]">
+        <div className="mt-6 rounded-md border border-[var(--color-border)] bg-[var(--color-surface)] p-5 text-[15px] leading-[1.55]">
           <h3 className="font-bold uppercase text-[var(--color-primary)]">Data sources:</h3>
           <div className="mt-4 space-y-4">
             <p className="flex gap-4"><span className="text-[var(--color-primary)]">{statIcon("chart")}</span><span><strong>Enquiry volumes:</strong><br />EM_Proprietary_Data_2025.txt [EM-VERIFIED]</span></p>

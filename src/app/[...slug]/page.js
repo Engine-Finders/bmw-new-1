@@ -10,7 +10,6 @@ import GenerationsGrid from "@/components/models/GenerationsGrid";
 import EngineDatabase from "@/components/models/EngineDatabase";
 import CommonProblems from "@/components/models/CommonProblems";
 import MarketIntelligence from "@/components/models/MarketIntelligence";
-import EditorialPullQuote from "@/components/models/EditorialPullQuote";
 import ReplacementCosts from "@/components/models/ReplacementCosts";
 import EngineEvolution from "@/components/models/EngineEvolution";
 import WhoShouldBuy from "@/components/models/WhoShouldBuy";
@@ -193,8 +192,7 @@ export default async function CatchAllPage({ params }) {
         <GenerationsGrid data={data.generations} />
         <EngineDatabase data={data.engineDatabase} />
         <CommonProblems data={data.commonProblems} />
-        <MarketIntelligence data={data.marketIntelligence} />
-        <EditorialPullQuote data={data.editorialPullQuote} />
+        <MarketIntelligence data={data.marketIntelligence} quoteData={data.editorialPullQuote} />
         <ReplacementCosts data={data.replacementCosts} />
         <EngineEvolution data={data.engineEvolution} />
         <WhoShouldBuy data={data.whoShouldBuy} />

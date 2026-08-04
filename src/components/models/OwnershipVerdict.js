@@ -3,6 +3,7 @@
 import Image from "next/image";
 import MStripe from "@/components/reusableComponents/MStripe";
 import { useTheme } from "@/components/shared/themeProvider";
+import { sectionBody, sectionDescription, sectionH2, sectionTableText } from "@/components/models/sectionTypography";
 
 const metricStyles = {
   "Overall Ownership Rating": { color: "#1d6fff", icon: "star" },
@@ -124,7 +125,7 @@ function VerdictTable({ metrics, isDark }) {
         isDark ? "border-white/20 bg-[rgba(2,13,25,0.74)]" : "border-[var(--color-border)] bg-[rgba(255,255,255,0.84)]"
       }`}
     >
-      <div className="grid grid-cols-[40%_60%] border-b border-[var(--color-border)] px-4 py-3 text-[0.95rem] font-semibold md:grid-cols-[42%_58%] md:px-5">
+      <div className={`grid grid-cols-[40%_60%] border-b border-[var(--color-border)] px-4 py-3 font-semibold md:grid-cols-[42%_58%] md:px-5 ${sectionTableText}`}>
         <span>Verdict Metric</span>
         <span>Our Call</span>
       </div>
@@ -132,9 +133,9 @@ function VerdictTable({ metrics, isDark }) {
         <div key={row.metric} className="grid grid-cols-[40%_60%] border-b border-[var(--color-border)] last:border-b-0 md:grid-cols-[42%_58%]">
           <div className="flex items-center gap-3 border-r border-[var(--color-border)] px-4 py-3 md:px-5">
             <MetricIcon metric={row.metric} />
-            <span className="text-[0.9rem] font-medium leading-[1.25] md:text-[0.98rem]">{row.metric}</span>
+            <span className={`font-medium leading-[1.25] ${sectionTableText}`}>{row.metric}</span>
           </div>
-          <p className="px-4 py-3 text-[0.88rem] leading-[1.42] text-[var(--color-text-muted)] md:px-5 md:text-[0.96rem]">
+          <p className={`px-4 py-3 text-[var(--color-text-muted)] md:px-5 ${sectionTableText}`}>
             {cleanText(row.ourCall)}
           </p>
         </div>
@@ -157,7 +158,7 @@ function OneLineVerdict({ text, isDark }) {
       </span>
       <div className="min-w-0">
         <p className="font-bold text-[var(--color-primary)]">One-line verdict:</p>
-        <p className="mt-1 text-[0.9rem] leading-[1.42] text-[var(--color-text-muted)] md:text-[0.96rem]">{cleanText(text)}</p>
+        <p className={`mt-1 text-[var(--color-text-muted)] ${sectionBody}`}>{cleanText(text)}</p>
       </div>
       <span className="ml-auto hidden text-4xl font-bold text-[var(--color-primary)] md:block">&quot;</span>
     </div>
@@ -194,7 +195,7 @@ export default function OwnershipVerdict({ data }) {
       <div className="relative mx-auto w-full max-w-8xl">
         <div className="grid gap-6 lg:grid-cols-[0.7fr_1fr] lg:items-start">
           <div>
-            <h2 className="max-w-[640px] text-[2.25rem] font-bold leading-[1.08] tracking-normal text-[var(--color-text)] md:text-[3.5rem]">
+            <h2 className={`max-w-[640px] font-bold tracking-normal text-[var(--color-text)] ${sectionH2}`}>
               {title.before}
               {title.accent ? (
                 <>
@@ -206,7 +207,7 @@ export default function OwnershipVerdict({ data }) {
             <div className="mt-3">
               <MStripe />
             </div>
-            <p className="mt-5 max-w-[470px] text-[0.98rem] leading-[1.5] text-[var(--color-text-muted)] md:text-[1.08rem]">
+            <p className={`mt-5 max-w-[470px] text-[var(--color-text-muted)] ${sectionDescription}`}>
               {cleanText(data.subHeadline)}
             </p>
 
@@ -236,7 +237,7 @@ export default function OwnershipVerdict({ data }) {
             {stats.map((stat) => (
               <li key={`${stat.value}-${stat.label}`} className="flex items-center gap-4 border-r border-[var(--color-border)] px-7 py-5 last:border-r-0">
                 <StatIcon iconKey={stat.iconKey} />
-                <p className="text-[0.95rem] leading-[1.3] text-[var(--color-text)]">
+                <p className={`text-[var(--color-text)] ${sectionTableText}`}>
                   {stat.value ? <strong className="mr-1 text-[1.45rem] leading-none text-[var(--color-primary)]">{stat.value}</strong> : null}
                   {stat.label}
                 </p>

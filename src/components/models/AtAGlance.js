@@ -3,6 +3,7 @@
 import Image from "next/image";
 import MStripe from "@/components/reusableComponents/MStripe";
 import { useTheme } from "@/components/shared/themeProvider";
+import { sectionBody, sectionDescription, sectionH2, sectionTableText } from "@/components/models/sectionTypography";
 
 const iconPaths = {
   Generations: <path d="m12 4 8 4-8 4-8-4 8-4Zm-6 7 6 3 6-3M6 15l6 3 6-3" />,
@@ -86,7 +87,7 @@ function ValueWithBadges({ value }) {
       {parts.map((part) => (
         <span
           key={part}
-          className="inline-flex items-center gap-1 rounded-md border border-[rgba(11,103,220,0.2)] bg-[var(--color-primary-soft)] px-2 py-1 text-[0.78rem] font-medium text-[var(--color-primary)]"
+          className="inline-flex items-center gap-1 rounded-md border border-[rgba(11,103,220,0.2)] bg-[var(--color-primary-soft)] px-2 py-1 text-[15px] font-medium text-[var(--color-primary)]"
         >
           <svg aria-hidden="true" viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="2">
             <path d="M12 3 5 6v6c0 5 3.3 8.8 7 9 3.7-.2 7-4 7-9V6l-7-3Zm-2 9 1.6 1.6L15 10" />
@@ -105,7 +106,7 @@ function DesktopTable({ rows, isDark }) {
         isDark ? "border-white/16 bg-[rgba(2,13,25,0.72)]" : "border-[var(--color-border)] bg-[rgba(255,255,255,0.84)]"
       }`}
     >
-      <div className="grid grid-cols-[80px_0.95fr_1.7fr] border-b border-[var(--color-border)] px-7 py-4 text-[0.95rem] font-semibold text-[var(--color-text)]">
+      <div className={`grid grid-cols-[80px_0.95fr_1.7fr] border-b border-[var(--color-border)] px-7 py-4 font-semibold text-[var(--color-text)] ${sectionTableText}`}>
         <span />
         <span>Metric</span>
         <span>Value</span>
@@ -113,8 +114,8 @@ function DesktopTable({ rows, isDark }) {
       {rows.map((row) => (
         <div key={row.metric} className="grid grid-cols-[80px_0.95fr_1.7fr] items-center border-b border-[var(--color-border)] px-7 py-3.5 last:border-b-0">
           <IconBox metric={row.metric} />
-          <span className="border-r border-[var(--color-border)] pr-7 text-[1rem] font-semibold text-[var(--color-text)]">{row.metric}</span>
-          <span className="pl-9 text-[1.03rem] leading-[1.35] text-[var(--color-text-muted)]">
+          <span className={`border-r border-[var(--color-border)] pr-7 font-semibold text-[var(--color-text)] ${sectionTableText}`}>{row.metric}</span>
+          <span className={`pl-9 text-[var(--color-text-muted)] ${sectionTableText}`}>
             <ValueWithBadges value={row.value} />
           </span>
         </div>
@@ -125,12 +126,12 @@ function DesktopTable({ rows, isDark }) {
 
 function MobileCard({ row, wide = false }) {
   return (
-    <li className={`${wide ? "col-span-2" : ""} border-b border-[var(--color-border)] p-5 last:border-b-0`}>
+      <li className={`${wide ? "col-span-2" : ""} border-b border-[var(--color-border)] p-5 last:border-b-0`}>
       <div className="flex items-center gap-3">
         <IconBox metric={row.metric} />
-        <p className="min-w-0 text-[0.95rem] font-semibold leading-tight text-[var(--color-text)]">{row.metric}</p>
+        <p className={`min-w-0 font-semibold leading-tight text-[var(--color-text)] ${sectionTableText}`}>{row.metric}</p>
       </div>
-      <p className="mt-3 text-[1.22rem] font-bold leading-[1.35] text-[var(--color-text)]">
+      <p className={`mt-3 font-bold leading-[1.35] text-[var(--color-text)] ${sectionBody}`}>
         <ValueWithBadges value={row.value} />
       </p>
     </li>
@@ -168,10 +169,10 @@ function RatingCard({ row }) {
         </svg>
       </span>
       <div>
-        <p className="text-[1.12rem] font-bold">Overall Rating</p>
-        <p className="mt-2 text-[2rem] leading-none text-[var(--color-primary)]">{cleanText(row.value).replace(" 3.9/5", "")}</p>
-        <p className="mt-2 text-[1.25rem] font-bold text-[var(--color-primary)]">3.9/5</p>
-        <p className="mt-2 text-[0.92rem] leading-[1.35] text-white/82">
+        <p className="text-[18px] font-bold">Overall Rating</p>
+        <p className="mt-2 text-[40px] leading-none text-[var(--color-primary)] md:text-[50px]">{cleanText(row.value).replace(" 3.9/5", "")}</p>
+        <p className="mt-2 text-[18px] font-bold text-[var(--color-primary)]">3.9/5</p>
+        <p className="mt-2 text-[15px] leading-[1.35] text-white/82">
           A perfect blend of performance, engineering excellence, and drivability.
         </p>
       </div>
@@ -210,7 +211,7 @@ export default function AtAGlance({ data }) {
 
       <div className="relative mx-auto w-full max-w-8xl px-4 md:px-8">
         <div className="max-w-[510px]">
-          <h2 className="text-[2.55rem] font-bold leading-[1.05] tracking-normal text-[var(--color-text)] md:text-[3.5rem]">
+          <h2 className={`font-bold tracking-normal text-[var(--color-text)] ${sectionH2}`}>
             {title.before}
             {title.accent ? (
               <>
@@ -222,7 +223,7 @@ export default function AtAGlance({ data }) {
           <div className="mt-3">
             <MStripe />
           </div>
-          <p className="mt-5 max-w-[430px] text-[1rem] leading-[1.5] text-[var(--color-text-muted)] md:text-[1.08rem]">
+          <p className={`mt-5 max-w-[430px] text-[var(--color-text-muted)] ${sectionDescription}`}>
             {data.subHeadline}
           </p>
         </div>
