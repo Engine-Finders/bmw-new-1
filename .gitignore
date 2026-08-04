@@ -39,3 +39,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# design references / working notes (not part of the app)
+/Variant-Bmw/
+GENERATIONPAGE-BMW3SeriesE90.md
+mobile view.md
+dev-server.log
