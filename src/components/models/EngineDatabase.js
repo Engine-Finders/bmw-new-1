@@ -410,7 +410,7 @@ export default function EngineDatabase({ data }) {
   }
 
   return (
-    <section data-engine-database data-theme-mode={theme} className="bg-[var(--color-page)] py-6 text-[var(--color-text)]">
+    <section id="engine-database" data-engine-database data-theme-mode={theme} className="bg-[var(--color-page)] py-6 text-[var(--color-text)]">
       <div className="hidden md:block">
         <div className="grid gap-8 md:grid-cols-[1fr_0.9fr] md:items-start">
           <div>

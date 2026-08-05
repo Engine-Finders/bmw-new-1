@@ -32,13 +32,12 @@ function cleanText(text = "") {
 
 function splitTitle(title = "") {
   const clean = cleanText(title);
-  const [before, after = ""] = clean.split(/\s*(?:-|-)\s*What\s+/i);
-  const match = after.match(/^([0-9,+]+\s+UK Owners)(.*)$/);
+  const [before, after = ""] = clean.split(/\s*-\s*/);
 
   return {
     before: before || clean,
-    accent: match ? match[1] : "",
-    after: match ? match[2] : after,
+    accent: after,
+    after: "",
   };
 }
 
@@ -259,8 +258,13 @@ export default function MarketIntelligence({ data, quoteData }) {
         <div className="flex flex-col gap-5 md:flex-row md:items-center md:justify-between">
           <div>
             <h2 className={`max-w-[960px] ${sectionH2} tracking-normal text-[var(--color-text)]`}>
-              {title.before} {title.accent || title.after ? "\u2014 " : ""}
-              {title.accent ? <span className="text-[var(--color-primary)]">{title.accent}</span> : null}
+              {title.before}
+              {title.accent ? (
+                <>
+                  {" "}
+                  <span className="text-[var(--color-primary)]">- {title.accent}</span>
+                </>
+              ) : null}
               {title.after}
             </h2>
             <div className="mt-3">
@@ -270,7 +274,7 @@ export default function MarketIntelligence({ data, quoteData }) {
           <div className="flex min-w-[210px] items-center gap-4 rounded-md border border-[var(--color-border)] bg-[var(--color-surface-raised)] p-5 shadow-[0_8px_22px_var(--color-shadow)]">
             <CircleIcon>{<path d="M16 11a4 4 0 0 1-8 0m11 8a7 7 0 0 0-14 0m15-11a3 3 0 1 1-2.8-3M4 8a3 3 0 1 0 2.8-3" />}</CircleIcon>
             <div>
-              <p className="text-[35px] font-bold leading-none text-[var(--color-text)] md:text-[50px]">{metricFromTitle(data.h2)}</p>
+              <p className="text-[28px] font-bold leading-none text-[var(--color-text)] md:text-[40px]">{metricFromTitle(data.h2)}</p>
               <p className={`mt-2 ${sectionDescription} text-[var(--color-text-muted)]`}>Total Enquiries in 2025</p>
               <p className="mt-1 text-[15px] font-medium text-[var(--color-primary)]">[BMW-VERIFIED]</p>
             </div>

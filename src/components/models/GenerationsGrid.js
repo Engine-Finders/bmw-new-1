@@ -171,7 +171,7 @@ function GenerationCard({ card, index, featured = false, onToggle }) {
         </span>
         <div className="min-w-0 flex-1">
           <p className={`${sectionTableText} font-semibold`}>{title.series}</p>
-          <h3 className="mt-0.5 text-[35px] font-bold leading-[1.05] md:text-[50px]">{title.code}</h3>
+          <h3 className="mt-0.5 text-[30px] font-bold leading-[1.05] md:text-[42px]">{title.code}</h3>
           <p className={`mt-2 ${sectionTableText}`}>{meta.years}</p>
           {meta.engines ? <p className={sectionTableText}>• {meta.engines}</p> : null}
         </div>
@@ -234,7 +234,7 @@ function MobileGenerationRow({ card, index, onToggle }) {
       </span>
       <div className="min-w-0 flex-1">
         <p className={`${sectionTableText} font-semibold`}>{title.series}</p>
-        <h3 className="mt-0.5 text-[35px] font-bold leading-[1.05]">{title.code}</h3>
+        <h3 className="mt-0.5 text-[30px] font-bold leading-[1.05]">{title.code}</h3>
         {badge ? <p className={`mt-1 ${sectionTableText} font-bold`}>{badge}</p> : null}
         <p className={`mt-1 ${sectionTableText}`}>{meta.years} <span className="px-1">•</span> {meta.engines}</p>
       </div>
