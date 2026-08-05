@@ -142,7 +142,7 @@ export default function OwnershipEconomics({ data }) {
                   {data.economicsRule.title}
                 </p>
               </div>
-              <p className="mt-3 text-[0.85rem] leading-[1.5] text-[var(--color-text)]">{data.economicsRule.text}</p>
+              <p className="mt-3 text-[0.85rem] leading-[1.5] text-[var(--color-text)]" dangerouslySetInnerHTML={{ __html: data.economicsRule.text }} />
               {data.economicsRule.highlight ? (
                 <p className="mt-2 text-[0.9rem] font-bold text-[var(--color-primary)]">{data.economicsRule.highlight}</p>
               ) : null}
@@ -162,7 +162,7 @@ export default function OwnershipEconomics({ data }) {
                     </span>
                     <div className="min-w-0 flex-1">
                       <p className="text-[0.85rem] font-semibold text-[var(--color-text)]">{item.question}</p>
-                      <p className="text-[0.8rem] leading-[1.4] text-[var(--color-text-muted)]">{item.answer}</p>
+                      <p className="text-[0.8rem] leading-[1.4] text-[var(--color-text-muted)]" dangerouslySetInnerHTML={{ __html: item.answer }} />
                     </div>
                     <span className="mt-1 shrink-0 text-[var(--color-primary)]">
                       <GenIcon name="chevron" className="h-4 w-4" />

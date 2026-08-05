@@ -45,7 +45,7 @@ export default function TrustCta({ data }) {
                   </span>
                   <div className="min-w-0 flex-1">
                     <p className="text-[0.95rem] font-semibold text-[var(--color-text)]">{point.title}</p>
-                    <p className="text-[0.83rem] leading-[1.45] text-[var(--color-text-muted)]">{point.text}</p>
+                    <p className="text-[0.83rem] leading-[1.45] text-[var(--color-text-muted)]" dangerouslySetInnerHTML={{ __html: point.text }} />
                   </div>
                   <span className="mt-1 shrink-0 text-[var(--color-primary)]">
                     <GenIcon name="chevron" className="h-4 w-4" />
@@ -76,7 +76,7 @@ export default function TrustCta({ data }) {
                 <span className="mt-0.5 flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-[var(--color-primary)] text-[var(--color-primary)]">
                   <GenIcon name="badge" className="h-4.5 w-4.5" />
                 </span>
-                <p className="text-[0.88rem] leading-[1.45] text-[var(--color-text)]">{data.finalCta}</p>
+                <p className="text-[0.88rem] leading-[1.45] text-[var(--color-text)]" dangerouslySetInnerHTML={{ __html: data.finalCta }} />
               </div>
             ) : null}
             {data.ctaButton ? (

@@ -5,7 +5,7 @@ export default function EngineHero({ data }) {
     <section style={{ paddingBottom: 8 }}>
       {data.tagPill && <p>{data.tagPill}</p>}
       <h1>{data.h1}</h1>
-      {data.subHeadline && <p>{data.subHeadline}</p>}
+      {data.subHeadline && <p dangerouslySetInnerHTML={{ __html: data.subHeadline }} />}
 
       {data.trustStrip?.length > 0 && (
         <ul>

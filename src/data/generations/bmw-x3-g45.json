@@ -1,4 +1,4 @@
-{
+﻿{
   "meta": {
     "slug": "bmw-x3-g45",
     "title": "G45 Powertrain Cost UK -Compare Quotes",
@@ -125,7 +125,7 @@
               "name": "Which BMW X3 G45 powertrain is the most reliable?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "The B58B30 3.0-litre six-cylinder (M50 xDrive) is widely regarded as BMW's most reliable modern six-cylinder -proven durability, no major design flaws, and only minor HPFP and cooling system maintenance required. On diesel, the B47D20B (20d xDrive) is also highly reliable, with improved EGR cooler design over the N47."
+                "text": "The B58B30 3.0-litre six-cylinder (M50 xDrive) is widely regarded as BMW\u0027s most reliable modern six-cylinder -proven durability, no major design flaws, and only minor HPFP and cooling system maintenance required. On diesel, the B47D20B (20d xDrive) is also highly reliable, with improved EGR cooler design over the N47."
               }
             },
             {
@@ -141,7 +141,7 @@
               "name": "Is the BMW X3 G45 reliable?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Yes -the G45's modular engines (B48, B58, B47, B57) are proven across BMW's range and are significantly more reliable than the N-series engines they replaced. The B58 is considered one of BMW's most reliable engines. For any G45, a thorough engine inspection and maintenance history check are essential, particularly on the performance M50 variant."
+                "text": "Yes -the G45\u0027s modular engines (B48, B58, B47, B57) are proven across BMW\u0027s range and are significantly more reliable than the N-series engines they replaced. The B58 is considered one of BMW\u0027s most reliable engines. For any G45, a thorough engine inspection and maintenance history check are essential, particularly on the performance M50 variant."
               }
             },
             {
@@ -165,7 +165,7 @@
               "name": "Is it worth replacing a BMW X3 G45 powertrain, or should I scrap the car?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Apply the 70% BMW scrap threshold -but this is a £40,000+ car, so value assessment differs. Against a well-kept £45,000 G45, a £4,800 B58 recon is 11% of the car's value -safe. Against a tired £35,000 early example, the same recon is 14% -still safe. For sub-£30,000 examples, evaluate carefully."
+                "text": "Apply the 70% BMW scrap threshold -but this is a £40,000+ car, so value assessment differs. Against a well-kept £45,000 G45, a £4,800 B58 recon is 11% of the car\u0027s value -safe. Against a tired £35,000 early example, the same recon is 14% -still safe. For sub-£30,000 examples, evaluate carefully."
               }
             },
             {
@@ -189,7 +189,7 @@
               "name": "How do I find my BMW X3 G45 engine/powertrain code?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "The powertrain code is listed on the VIN plate, vehicle documentation, and on a sticker under the bonnet. For 2.0 petrol MHEV, look for B48B20P (20 xDrive) or B48B20M0 (xDrive20i). For 2.0 PHEV, look for B48B20V (30e xDrive). For 3.0 petrol MHEV, look for B58B30P or B58B30M2 (M50 xDrive). For 2.0 diesel, look for B47D20B (20d xDrive). For 3.0 diesel, look for B57D30B (40d xDrive). Tell us your variant and year, and we'll confirm."
+                "text": "The powertrain code is listed on the VIN plate, vehicle documentation, and on a sticker under the bonnet. For 2.0 petrol MHEV, look for B48B20P (20 xDrive) or B48B20M0 (xDrive20i). For 2.0 PHEV, look for B48B20V (30e xDrive). For 3.0 petrol MHEV, look for B58B30P or B58B30M2 (M50 xDrive). For 2.0 diesel, look for B47D20B (20d xDrive). For 3.0 diesel, look for B57D30B (40d xDrive). Tell us your variant and year, and we\u0027ll confirm."
               }
             }
           ]
@@ -223,7 +223,7 @@
         {
           "@type": "Dataset",
           "name": "BMW X3 G45 UK Enquiry Data 2025",
-          "description": "Proprietary UK enquiry volumes and demand trends for BMW X3 G45 powertrains, sourced from bmwengines.uk's specialist marketplace activity.",
+          "description": "Proprietary UK enquiry volumes and demand trends for BMW X3 G45 powertrains, sourced from bmwengines.uk\u0027s specialist marketplace activity.",
           "creator": {
             "@type": "Organization",
             "name": "bmwengines.uk"
@@ -257,7 +257,7 @@
   "hero": {
     "tagPill": "BMW X3 G45 • SUV • 2024–present",
     "h1": "BMW X3 G45 Engines -The Complete UK Guide",
-    "subHeadline": "Every powertrain fitted to the G45-generation BMW X3 -from the 2.0-litre B48 four-cylinder mild-hybrid to the 3.0-litre B58 six-cylinder M50 and the B57 six-cylinder diesel. Real UK costs, honest reliability data, and the B58's defining role in this generation's ownership story. Backed by real UK X3 enquiries in 2025 [BMW-VERIFIED].",
+    "subHeadline": "Every powertrain fitted to the G45-generation BMW X3 -from the 2.0-litre <a href='https://bmwengines.uk/engine/b38-b48'>B48</a> four-cylinder mild-hybrid to the 3.0-litre B58 six-cylinder <a href='https://bmwengines.uk/engine/m50-m52-m54'>M50</a> and the <a href='https://bmwengines.uk/engine/b57-b58'>B57</a> six-cylinder diesel. Real UK costs, honest reliability data, and the B58\u0027s defining role in this generation\u0027s ownership story. Backed by real UK X3 enquiries in 2025 [BMW-VERIFIED].",
     "trustStrip": [
       {
         "icon": "📊",
@@ -360,7 +360,7 @@
       },
       {
         "engineCode": "B47D20B",
-        "family": "B47",
+        "family": "<a href='https://bmwengines.uk/engine/b37-b47'>B47</a>",
         "fuel": "Diesel MHEV",
         "displacement": "2.0L (1995cc)",
         "power": "145 kW (197 PS / 194 hp)",
@@ -391,15 +391,15 @@
   },
   "overview": {
     "h2": "BMW X3 G45 -Overview",
-    "intro": "The BMW X3 G45 is the fourth generation of the BMW X3 compact luxury crossover SUV, produced since August 2024. Built on BMW's CLAR platform, the G45 succeeds the G01 and features a range of mild-hybrid and plug-in hybrid powertrains. The engine line-up at launch included the 20 xDrive (2.0-litre B48 four-cylinder mild-hybrid petrol), xDrive20i (2.0-litre B48), 30e xDrive (2.0-litre B48 plug-in hybrid), and M50 xDrive (3.0-litre B58 six-cylinder mild-hybrid petrol). A 20d xDrive (2.0-litre B47 four-cylinder diesel mild-hybrid) was also available from launch, and the 40d xDrive (3.0-litre B57 six-cylinder diesel) was introduced in 2025. Unlike its predecessor, the G45 no longer has a battery electric variant built on the same platform; the electric iX3 is now based on a separate Neue Klasse platform.",
+    "intro": "The BMW X3 G45 is the fourth generation of the BMW X3 compact luxury crossover SUV, produced since August 2024. Built on BMW\u0027s CLAR platform, the G45 succeeds the G01 and features a range of mild-hybrid and plug-in hybrid powertrains. The engine line-up at launch included the 20 xDrive (2.0-litre B48 four-cylinder mild-hybrid petrol), xDrive20i (2.0-litre B48), 30e xDrive (2.0-litre B48 plug-in hybrid), and M50 xDrive (3.0-litre B58 six-cylinder mild-hybrid petrol). A 20d xDrive (2.0-litre B47 four-cylinder diesel mild-hybrid) was also available from launch, and the 40d xDrive (3.0-litre B57 six-cylinder diesel) was introduced in 2025. Unlike its predecessor, the G45 no longer has a battery electric variant built on the same platform; the electric iX3 is now based on a separate Neue Klasse platform.",
     "keyFacts": "Platform: BMW CLAR (Cluster Architecture) • Predecessor: BMW X3 G01 (2017–2024) • Successor: Current model -on sale • Sibling body styles: G48 (long-wheelbase, China market)",
-    "marketIntelligenceLine": "The G45 X3 is BMW's latest-generation compact SUV; enquiries are concentrated on the B48 petrol and B47 diesel variants, with values ranging from £40,000 for entry-level 20d examples to £65,000+ for well-specced M50 models."
+    "marketIntelligenceLine": "The G45 X3 is BMW\u0027s latest-generation compact SUV; enquiries are concentrated on the B48 petrol and B47 diesel variants, with values ranging from £40,000 for entry-level 20d examples to £65,000+ for well-specced M50 models."
   },
   "bestWorstEngines": {
     "items": [
       {
         "slot": "Best Petrol Overall",
-        "engine": "B58B30P 3.0-litre six-cylinder (M50 xDrive) -The 398 PS B58 is widely regarded as BMW's most reliable modern six-cylinder. Delivering 580 Nm of torque and 0-62 in 4.6 seconds, it offers genuine performance SUV capability with proven durability. The TU2 version (B58B30M2) adds improvements.",
+        "engine": "B58B30P 3.0-litre six-cylinder (M50 xDrive) -The 398 PS B58 is widely regarded as BMW\u0027s most reliable modern six-cylinder. Delivering 580 Nm of torque and 0-62 in 4.6 seconds, it offers genuine performance SUV capability with proven durability. The TU2 version (B58B30M2) adds improvements.",
         "quote": "",
         "whoItsFor": "buyers who want the ultimate performance X3 with proven reliability."
       },
@@ -423,7 +423,7 @@
       },
       {
         "slot": "Best Value",
-        "engine": "B47D20B 2.0-litre diesel (20d xDrive) -The 197 PS B47 diesel offers the best balance of performance, economy, and running costs. It's the most economical G45 engine, parts are widely available, and the recon cost is the lowest in the range. Post-recall EGR cooler units are reliable.",
+        "engine": "B47D20B 2.0-litre diesel (20d xDrive) -The 197 PS B47 diesel offers the best balance of performance, economy, and running costs. It\u0027s the most economical G45 engine, parts are widely available, and the recon cost is the lowest in the range. Post-recall EGR cooler units are reliable.",
         "quote": "",
         "whoItsFor": "buyers who prioritise running costs."
       },
@@ -489,7 +489,7 @@
     ],
     "economicsRule": {
       "title": "The G45 rule",
-      "text": "A £4,800–£8,000 B58 recon against a £40,000–£50,000 G45 sits at 10–20% of the car's value -safe. Against a well-kept £55,000+ example, the same recon drops to a routine 9–15% -a repair decision, not a financial one. For a modern premium SUV, the 70% BMW threshold rarely applies, but we'll still honestly tell you when a repair doesn't make sense."
+      "text": "A £4,800–£8,000 B58 recon against a £40,000–£50,000 G45 sits at 10–20% of the car\u0027s value -safe. Against a well-kept £55,000+ example, the same recon drops to a routine 9–15% -a repair decision, not a financial one. For a modern premium SUV, the 70% BMW threshold rarely applies, but we\u0027ll still honestly tell you when a repair doesn\u0027t make sense."
     },
     "keyTakeaways": [
       {
@@ -566,7 +566,7 @@
       },
       {
         "id": 3,
-        "title": "B47/B57 Diesel EGR Cooler & DPF Issues",
+        "title": "B47/B57 Diesel EGR Cooler \u0026 DPF Issues",
         "affectedModels": "G45 20d xDrive (B47D20B) and 40d xDrive (B57D30B).",
         "typicalFailureMileage": "60,000–120,000 miles.",
         "rootCause": "The EGR cooler on B47 and B57 diesel engines can develop internal coolant leaks, leading to coolant loss. DPF blockage is also common on cars used predominantly for urban driving. The 48V mild-hybrid system adds some complexity to the diesel powertrain.",
@@ -650,13 +650,32 @@
   },
   "coreVariants": {
     "dieselVariants": [
-      "20d xDrive",
-      "40d xDrive"
+      {
+        "name": "20d xDrive",
+        "url": "https://bmwengines.uk/x3/20d"
+      },
+      {
+        "name": "40d xDrive",
+        "url": "#"
+      }
     ],
     "petrolVariants": [
-      "20 xDrive",
-      "xDrive20i",
-      "M50 xDrive"
+      {
+        "name": "20 xDrive",
+        "url": "#"
+      },
+      {
+        "name": "xDrive20i",
+        "url": "https://bmwengines.uk/x3/20i"
+      },
+      {
+        "name": "M50 xDrive",
+        "url": "#"
+      },
+      {
+        "name": "30e",
+        "url": "https://bmwengines.uk/x3/30e"
+      }
     ],
     "scopeNote": "All variants listed are G45 X3 only. The G48 (long-wheelbase) variant for the Chinese market shares the B48 petrol engines but is covered on its own Generation Page. The 40d xDrive was introduced in 2025. The M50 xDrive is the performance flagship, producing 398 PS and 580 Nm of torque."
   },
@@ -671,7 +690,7 @@
     "mostCommonFailures": [
       "1. B48 cooling system leaks",
       "2. B58 HPFP failure",
-      "3. B47/B57 diesel EGR cooler & DPF issues"
+      "3. B47/B57 diesel EGR cooler \u0026 DPF issues"
     ],
     "liveFeed": [
       {
@@ -707,7 +726,7 @@
       {
         "id": 2,
         "question": "Which BMW X3 G45 powertrain is the most reliable?",
-        "answer": "The B58B30 3.0-litre six-cylinder (M50 xDrive) is widely regarded as BMW's most reliable modern six-cylinder -proven durability, no major design flaws, and only minor HPFP and cooling system maintenance required. On diesel, the B47D20B (20d xDrive) is also highly reliable, with improved EGR cooler design over the N47."
+        "answer": "The B58B30 3.0-litre six-cylinder (M50 xDrive) is widely regarded as BMW\u0027s most reliable modern six-cylinder -proven durability, no major design flaws, and only minor HPFP and cooling system maintenance required. On diesel, the B47D20B (20d xDrive) is also highly reliable, with improved EGR cooler design over the <a href='https://bmwengines.uk/engine/n47'>N47</a>."
       },
       {
         "id": 3,
@@ -717,7 +736,7 @@
       {
         "id": 4,
         "question": "Is the BMW X3 G45 reliable?",
-        "answer": "Yes -the G45's modular engines (B48, B58, B47, B57) are proven across BMW's range and are significantly more reliable than the N-series engines they replaced. The B58 is considered one of BMW's most reliable engines. For any G45, a thorough engine inspection and maintenance history check are essential, particularly on the performance M50 variant."
+        "answer": "Yes -the G45\u0027s modular engines (B48, B58, B47, B57) are proven across BMW\u0027s range and are significantly more reliable than the N-series engines they replaced. The B58 is considered one of BMW\u0027s most reliable engines. For any G45, a thorough engine inspection and maintenance history check are essential, particularly on the performance M50 variant."
       },
       {
         "id": 5,
@@ -732,7 +751,7 @@
       {
         "id": 7,
         "question": "Is it worth replacing a BMW X3 G45 powertrain, or should I scrap the car?",
-        "answer": "Apply the 70% BMW scrap threshold -but this is a £40,000+ car, so value assessment differs. Against a well-kept £45,000 G45, a £4,800 B58 recon is 11% of the car's value -safe. Against a tired £35,000 early example, the same recon is 14% -still safe. For sub-£30,000 examples, evaluate carefully."
+        "answer": "Apply the 70% BMW scrap threshold -but this is a £40,000+ car, so value assessment differs. Against a well-kept £45,000 G45, a £4,800 B58 recon is 11% of the car\u0027s value -safe. Against a tired £35,000 early example, the same recon is 14% -still safe. For sub-£30,000 examples, evaluate carefully."
       },
       {
         "id": 8,
@@ -747,7 +766,7 @@
       {
         "id": 10,
         "question": "How do I find my BMW X3 G45 engine/powertrain code?",
-        "answer": "The powertrain code is listed on the VIN plate, vehicle documentation, and on a sticker under the bonnet. For 2.0 petrol MHEV, look for B48B20P (20 xDrive) or B48B20M0 (xDrive20i). For 2.0 PHEV, look for B48B20V (30e xDrive). For 3.0 petrol MHEV, look for B58B30P or B58B30M2 (M50 xDrive). For 2.0 diesel, look for B47D20B (20d xDrive). For 3.0 diesel, look for B57D30B (40d xDrive). Tell us your variant and year, and we'll confirm."
+        "answer": "The powertrain code is listed on the VIN plate, vehicle documentation, and on a sticker under the bonnet. For 2.0 petrol MHEV, look for B48B20P (20 xDrive) or B48B20M0 (xDrive20i). For 2.0 PHEV, look for B48B20V (30e xDrive). For 3.0 petrol MHEV, look for B58B30P or B58B30M2 (M50 xDrive). For 2.0 diesel, look for B47D20B (20d xDrive). For 3.0 diesel, look for B57D30B (40d xDrive). Tell us your variant and year, and we\u0027ll confirm."
       }
     ]
   },
@@ -760,11 +779,11 @@
       },
       {
         "title": "Compare G45 Powertrain Replacement Companies",
-        "text": "see prices, warranty terms and supply & fit options side-by-side before you commit."
+        "text": "see prices, warranty terms and supply \u0026 fit options side-by-side before you commit."
       },
       {
         "title": "UK Powertrain Replacement Services for G45",
-        "text": "covering every variant from 20d xDrive to M50 xDrive, with supply-only or full supply & fit available nationwide."
+        "text": "covering every variant from 20d xDrive to M50 xDrive, with supply-only or full supply \u0026 fit available nationwide."
       }
     ],
     "finalCta": "Find the best BMW X3 G45 powertrain replacement UK drivers rely on. Compare real prices from trusted specialists on EnginesMarket today and get back on the road with confidence.",

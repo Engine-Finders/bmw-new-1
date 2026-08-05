@@ -75,7 +75,7 @@ export default function HomeSec14({ data }) {
             <div className="mt-3">
               <MStripe />
             </div>
-            <p className={`mt-2 text-[1rem] leading-snug md:text-[1.08rem] ${isDark ? "text-white/78" : "text-[#172334]"}`}>{data.subHeadline}</p>
+            <p className={`mt-2 text-[1rem] leading-snug md:text-[1.08rem] ${isDark ? "text-white/78" : "text-[#172334]"}`} dangerouslySetInnerHTML={{ __html: data.subHeadline }} />
 
             <ul className="mt-5 grid gap-2 text-[0.88rem] md:grid-cols-4 md:gap-0">
               {data.stats.map((stat) => (

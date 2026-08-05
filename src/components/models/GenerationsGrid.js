@@ -201,7 +201,7 @@ function GenerationCard({ card, index, featured = false, onToggle }) {
       {featured && card.verdict ? (
         <div className="mt-4 text-[15px] leading-[1.45]">
           <p className="font-bold">Our Verdict:</p>
-          <p className="mt-1">{cleanText(card.verdict)}</p>
+          <p className="mt-1" dangerouslySetInnerHTML={{ __html: cleanText(card.verdict) }} />
         </div>
       ) : null}
 
@@ -341,9 +341,7 @@ export default function GenerationsGrid({ data }) {
           <MStripe />
         </div>
         {data.subHeadline ? (
-          <p className={`mt-3 max-w-[640px] ${sectionDescription} text-[var(--color-text-muted)]`}>
-            {cleanText(data.subHeadline)}
-          </p>
+          <p className={`mt-3 max-w-[640px] ${sectionDescription} text-[var(--color-text-muted)]`} dangerouslySetInnerHTML={{ __html: cleanText(data.subHeadline) }} />
         ) : null}
       </div>
 

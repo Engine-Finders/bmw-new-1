@@ -26,7 +26,7 @@ export default function EngineCodes({ data }) {
         </tbody>
       </table>
 
-      {data.matchNote && <p>{data.matchNote}</p>}
+      {data.matchNote && <p dangerouslySetInnerHTML={{ __html: data.matchNote }} />}
 
       {data.technicalSpecs && (
         <>
@@ -34,7 +34,7 @@ export default function EngineCodes({ data }) {
           <ul>
             {data.technicalSpecs.items?.map((item) => (
               <li key={item.label}>
-                {item.label}: {item.value}
+                {item.label}: <span dangerouslySetInnerHTML={{ __html: item.value }} />
               </li>
             ))}
           </ul>

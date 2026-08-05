@@ -108,9 +108,7 @@ function ProblemCard({ problem, index }) {
         <div className="mt-3 md:hidden">
           <SeverityBadge severity={problem.severity} />
         </div>
-        <p className={`mt-2 ${sectionTableText} text-[var(--color-text-muted)] md:mt-3`}>
-          {cleanText(problem.description)}
-        </p>
+        <p className={`mt-2 ${sectionTableText} text-[var(--color-text-muted)] md:mt-3`} dangerouslySetInnerHTML={{ __html: cleanText(problem.description) }} />
         <Link href={href} className="mt-auto flex items-center justify-end gap-2 pt-4 text-[18px] font-bold text-[var(--color-primary)]">
           {label.replace(/\s*\u2192\s*$/, "")}
           <ArrowIcon />
@@ -137,7 +135,7 @@ function UrgencyKey({ items }) {
               <span className={`mt-1 h-4 w-4 shrink-0 rounded-full ${dot}`} />
               <p className="text-[15px] leading-[1.35] text-[var(--color-text-muted)]">
                 <strong className="block text-[var(--color-text)]">{label}</strong>
-                {cleanText(item.text)}
+                <span dangerouslySetInnerHTML={{ __html: cleanText(item.text) }} />
               </p>
             </div>
           );
@@ -164,9 +162,7 @@ export default function CommonProblems({ data }) {
           <MStripe />
         </div>
         {data.subHeadline ? (
-          <p className={`mt-4 max-w-[620px] ${sectionDescription} text-[var(--color-text-muted)]`}>
-            {cleanText(data.subHeadline)}
-          </p>
+          <p className={`mt-4 max-w-[620px] ${sectionDescription} text-[var(--color-text-muted)]`} dangerouslySetInnerHTML={{ __html: cleanText(data.subHeadline) }} />
         ) : null}
       </div>
 

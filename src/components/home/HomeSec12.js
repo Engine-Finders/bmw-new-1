@@ -58,9 +58,7 @@ export default function HomeSec12({ data }) {
           <div className="mt-4">
             <MStripe />
           </div>
-          <p className={`mt-5 max-w-[620px] text-[0.9rem] leading-[1.58] md:text-[1rem] ${isDark ? "text-white/78" : "text-[#27384a]"}`}>
-            {cleanText(data.subHeadline)}
-          </p>
+          <p className={`mt-5 max-w-[620px] text-[0.9rem] leading-[1.58] md:text-[1rem] ${isDark ? "text-white/78" : "text-[#27384a]"}`} dangerouslySetInnerHTML={{ __html: cleanText(data.subHeadline) }} />
         </div>
 
         <div className="mt-8 grid grid-cols-1 gap-3 sm:grid-cols-2 md:mt-7 md:grid-cols-4 md:gap-4">
@@ -75,7 +73,7 @@ export default function HomeSec12({ data }) {
                 </span>
               </div>
               <h3 className={`text-[1rem] font-bold leading-tight ${isDark ? "text-white" : "text-[#071827]"}`}>{item.title}</h3>
-              <p className={`mt-3 text-[0.86rem] leading-[1.52] ${isDark ? "text-white/76" : "text-[#27384a]"}`}>{cleanText(item.description)}</p>
+              <p className={`mt-3 text-[0.86rem] leading-[1.52] ${isDark ? "text-white/76" : "text-[#27384a]"}`} dangerouslySetInnerHTML={{ __html: cleanText(item.description) }} />
             </article>
           ))}
         </div>

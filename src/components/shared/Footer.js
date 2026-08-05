@@ -14,7 +14,7 @@ export default function Footer() {
         <p className="text-xs text-gray-600">{text}</p>
         <ul className="flex gap-3">
           {links.map((link) => (
-            <li key={link.href}>
+            <li key={link.label}>
               <Link href={link.href} className="text-xs text-gray-600">
                 {link.label}
               </Link>

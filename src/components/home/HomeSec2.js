@@ -200,45 +200,133 @@ function DesktopHeader({ columns }) {
 }
 
 function DesktopRow({ item }) {
-  return (
-    <Link
-      href={item.href}
-      className="grid grid-cols-[190px_minmax(0,1fr)_185px_28px] items-center gap-3 border-b border-[var(--color-border)] px-5 py-3 text-[var(--color-text)] transition hover:bg-[var(--color-page-soft)] last:border-b-0"
-    >
+  const models = Array.isArray(item.model) ? item.model : [{ name: item.model, href: item.href }];
+  const isMultiple = models.length > 1;
+
+  const rowClasses =
+    "grid grid-cols-[190px_minmax(0,1fr)_185px_28px] items-center gap-3 border-b border-[var(--color-border)] px-5 py-3 text-[var(--color-text)] transition hover:bg-[var(--color-page-soft)] last:border-b-0";
+
+  const content = (
+    <>
       <div className="flex min-w-0 items-center gap-4">
         <div className="relative h-10 w-16 shrink-0 overflow-hidden rounded">
           <Image src={item.image.src} alt={item.image.alt} fill className="object-cover" sizes="80px" />
         </div>
-        <span className="text-[1rem] font-semibold">{item.model}</span>
+
+        <span className="text-[1rem] font-semibold">
+          {models.map((m, idx) => (
+            <span key={`${m.name}-${idx}`}>
+              {idx > 0 && <span className="text-[var(--color-text-muted)]"> / </span>}
+              <Link href={m.href} className="hover:underline">
+                {m.name}
+              </Link>
+            </span>
+          ))}
+        </span>
       </div>
+
       <span className="pr-3 text-[0.96rem] leading-[1.28] text-[var(--color-text-muted)]">{item.generations}</span>
       <VerdictBadge verdict={item.verdict} />
-      <span className="flex justify-end text-[var(--color-text)]">
-        <ChevronIcon />
-      </span>
+
+      {isMultiple ? (
+        <div className="group relative flex justify-end text-[var(--color-text)]">
+          <span className="cursor-pointer p-1">
+            <ChevronIcon />
+          </span>
+          <div className="invisible absolute right-0 top-full z-20 mt-0 min-w-[160px] rounded-lg border border-[var(--color-border)] bg-[var(--color-page)] py-1 opacity-0 shadow-lg transition-all duration-150 group-hover:visible group-hover:opacity-100">
+            {models.map((m, idx) => (
+              <Link
+                key={`${m.name}-${idx}`}
+                href={m.href}
+                className="block px-3 py-2 text-[0.92rem] font-medium text-[var(--color-text)] hover:bg-[var(--color-page-soft)]"
+              >
+                {m.name}
+              </Link>
+            ))}
+          </div>
+        </div>
+      ) : (
+        <span className="flex justify-end text-[var(--color-text)]">
+          <ChevronIcon />
+        </span>
+      )}
+    </>
+  );
+
+  if (isMultiple) {
+    return <div className={rowClasses}>{content}</div>;
+  }
+
+  return (
+    <Link href={models[0].href} className={rowClasses}>
+      {content}
     </Link>
   );
 }
 
 function MobileRow({ item }) {
-  return (
-    <Link
-      href={item.href}
-      className="grid grid-cols-[72px_minmax(0,1fr)_126px_16px] items-center gap-2.5 border-b border-[var(--color-border)] px-3 py-2.5 text-[var(--color-text)] last:border-b-0"
-    >
+  const models = Array.isArray(item.model) ? item.model : [{ name: item.model, href: item.href }];
+  const isMultiple = models.length > 1;
+
+  const rowClasses =
+    "grid grid-cols-[72px_minmax(0,1fr)_126px_16px] items-center gap-2.5 border-b border-[var(--color-border)] px-3 py-2.5 text-[var(--color-text)] last:border-b-0";
+
+  const content = (
+    <>
       <div className="relative h-11 w-16 overflow-hidden rounded">
         <Image src={item.image.src} alt={item.image.alt} fill className="object-cover" sizes="64px" />
       </div>
+
       <div className="min-w-0">
-        <p className="text-[0.9rem] font-semibold leading-tight">{item.model}</p>
+        <p className="text-[0.9rem] font-semibold leading-tight">
+          {models.map((m, idx) => (
+            <span key={`${m.name}-${idx}`}>
+              {idx > 0 && <span className="text-[var(--color-text-muted)]"> / </span>}
+              <Link href={m.href} className="hover:underline">
+                {m.name}
+              </Link>
+            </span>
+          ))}
+        </p>
         <p className="mt-0.5 text-[0.78rem] leading-[1.25] text-[var(--color-text-muted)]">{item.generations}</p>
       </div>
+
       <div className="flex justify-start">
         <VerdictBadge verdict={item.verdict} mobile />
       </div>
-      <span className="flex justify-end text-[var(--color-text)]">
-        <ChevronIcon />
-      </span>
+
+      {isMultiple ? (
+        <div className="group relative flex justify-end text-[var(--color-text)]">
+          <span className="cursor-pointer p-1">
+            <ChevronIcon />
+          </span>
+          <div className="invisible absolute right-0 top-full z-20 mt-1 min-w-[140px] rounded-lg border border-[var(--color-border)] bg-[var(--color-page)] py-1 opacity-0 shadow-lg transition-all duration-150 group-hover:visible group-hover:opacity-100 group-focus-within:visible group-focus-within:opacity-100">
+            {models.map((m, idx) => (
+              <Link
+                key={`${m.name}-${idx}`}
+                href={m.href}
+                className="block px-3 py-1.5 text-[0.85rem] font-medium text-[var(--color-text)] hover:bg-[var(--color-page-soft)]"
+              >
+                {m.name}
+              </Link>
+            ))}
+          </div>
+        </div>
+      ) : (
+        <span className="flex justify-end text-[var(--color-text)]">
+          <ChevronIcon />
+        </span>
+      )}
+    </>
+  );
+
+  if (isMultiple) {
+    return <div className={rowClasses}>{content}</div>;
+  }
+
+  return (
+    <Link href={models[0].href} className={rowClasses}>
+      {content}
     </Link>
   );
 }
@@ -284,9 +372,8 @@ export default function HomeSec2({ data }) {
             className={`mt-3 max-w-[420px] text-[0.9rem] leading-[1.32] md:max-w-[520px] md:text-[1.08rem] md:leading-[1.38] ${
               isDark ? "text-white/84 md:text-[var(--color-text-muted)]" : "text-[var(--color-text-muted)]"
             }`}
-          >
-            {data.subHeadline}
-          </p>
+            dangerouslySetInnerHTML={{ __html: data.subHeadline }}
+          />
         </div>
 
         <div className="mt-5 md:hidden">
@@ -335,7 +422,7 @@ export default function HomeSec2({ data }) {
             }`}
           >
             {mobileRows.map((item) => (
-              <MobileRow key={item.model} item={item} />
+              <MobileRow key={item.model.map((m) => m.name).join("-")} item={item} />
             ))}
 
             <Link
@@ -390,7 +477,7 @@ export default function HomeSec2({ data }) {
               >
                 <DesktopHeader columns={data.columns} />
                 {column.map((item) => (
-                  <DesktopRow key={item.model} item={item} />
+                <DesktopRow key={item.model.map((m) => m.name).join("-")} item={item} />
                 ))}
               </div>
             ))}

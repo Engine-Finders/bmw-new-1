@@ -286,7 +286,7 @@ function Notes({ parts }) {
             </span>
             <h3 className="font-bold text-[var(--color-primary)]">Important Notes</h3>
           </div>
-          <p className="pl-16 text-[15px] leading-[1.5] text-[var(--color-text)] md:pl-0">{parts.important}</p>
+          <p className="pl-16 text-[15px] leading-[1.5] text-[var(--color-text)] md:pl-0" dangerouslySetInnerHTML={{ __html: parts.important }} />
         </div>
         <div className="flex flex-col gap-3">
           <div className="flex items-start gap-4">
@@ -295,7 +295,7 @@ function Notes({ parts }) {
             </span>
             <h3 className="font-bold text-[var(--color-primary)]">Labour Estimate</h3>
           </div>
-          <p className="pl-14 text-[15px] leading-[1.5] text-[var(--color-text)] md:pl-0">{parts.labour}</p>
+          <p className="pl-14 text-[15px] leading-[1.5] text-[var(--color-text)] md:pl-0" dangerouslySetInnerHTML={{ __html: parts.labour }} />
         </div>
       </div>
 
@@ -305,7 +305,7 @@ function Notes({ parts }) {
         </span>
         <div className="max-w-[540px]">
           <h3 className="text-[24px] font-bold leading-[1.12] text-[var(--color-primary)] md:text-[30px]">The 3 Series rule - generation is everything:</h3>
-          <p className="mt-2 text-[14px] leading-[1.5] md:text-[15px]">{parts.rule.replace(/^The 3 Series rule - generation is everything:\s*/i, "")}</p>
+          <p className="mt-2 text-[14px] leading-[1.5] md:text-[15px]" dangerouslySetInnerHTML={{ __html: parts.rule.replace(/^The 3 Series rule - generation is everything:\s*/i, "") }} />
           <p className="mt-2 font-bold">Value the car first; the engine decision follows.</p>
         </div>
       </div>
@@ -337,7 +337,7 @@ export default function ReplacementCosts({ data }) {
             <MStripe />
           </div>
           {data.subHeadline ? (
-            <p className={`mt-4 max-w-[520px] ${sectionDescription} text-[var(--color-text-muted)]`}>{cleanText(data.subHeadline)}</p>
+            <p className={`mt-4 max-w-[520px] ${sectionDescription} text-[var(--color-text-muted)]`} dangerouslySetInnerHTML={{ __html: cleanText(data.subHeadline) }} />
           ) : null}
         </div>
 

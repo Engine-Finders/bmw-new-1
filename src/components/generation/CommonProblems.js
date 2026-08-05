@@ -25,8 +25,8 @@ function TieredCostTable({ tiers }) {
               <span className="text-[var(--color-text-soft)]">Specialist</span>
               <span className="text-right font-semibold text-[var(--color-text)]">{tier.specialist}</span>
             </div>
-            <p className="mt-1.5 text-[0.76rem] leading-[1.35] text-[var(--color-text-muted)]">{tier.work}</p>
-            {tier.note ? <p className="mt-0.5 text-[0.72rem] italic text-[var(--color-text-soft)]">{tier.note}</p> : null}
+            <p className="mt-1.5 text-[0.76rem] leading-[1.35] text-[var(--color-text-muted)]" dangerouslySetInnerHTML={{ __html: tier.work }} />
+            {tier.note ? <p className="mt-0.5 text-[0.72rem] italic text-[var(--color-text-soft)]" dangerouslySetInnerHTML={{ __html: tier.note }} /> : null}
           </div>
         );
       })}
@@ -80,7 +80,7 @@ function ProblemCard({ problem }) {
             <GenIcon name="wrench" className="h-3.5 w-3.5" />
             Root cause:
           </p>
-          <p className="mt-0.5 leading-[1.45] text-[var(--color-text-muted)]">{problem.rootCause}</p>
+          <p className="mt-0.5 leading-[1.45] text-[var(--color-text-muted)]" dangerouslySetInnerHTML={{ __html: problem.rootCause }} />
         </div>
       </div>
 
@@ -97,7 +97,7 @@ function ProblemCard({ problem }) {
             <GenIcon name="shield" className="h-3.5 w-3.5" />
             Our Recommendation
           </p>
-          <p className="mt-1 text-[0.8rem] leading-[1.45] text-[var(--color-text-muted)]">{problem.recommendation}</p>
+          <p className="mt-1 text-[0.8rem] leading-[1.45] text-[var(--color-text-muted)]" dangerouslySetInnerHTML={{ __html: problem.recommendation }} />
         </div>
       ) : null}
 
@@ -129,7 +129,7 @@ export default function CommonProblems({ data }) {
           <MStripe />
         </div>
         {data.subHeadline ? (
-          <p className="mt-5 max-w-[560px] text-[1rem] leading-[1.5] text-[var(--color-text-muted)] md:text-[1.08rem]">{data.subHeadline}</p>
+          <p className="mt-5 max-w-[560px] text-[1rem] leading-[1.5] text-[var(--color-text-muted)] md:text-[1.08rem]" dangerouslySetInnerHTML={{ __html: data.subHeadline }} />
         ) : null}
 
         <div className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
@@ -147,7 +147,7 @@ export default function CommonProblems({ data }) {
                 </span>
                 <div>
                   <p className="text-[0.85rem] font-semibold text-[var(--color-text)]">{item.title}</p>
-                  <p className="text-[0.76rem] leading-[1.35] text-[var(--color-text-muted)]">{item.text}</p>
+                  <p className="text-[0.76rem] leading-[1.35] text-[var(--color-text-muted)]" dangerouslySetInnerHTML={{ __html: item.text }} />
                 </div>
               </div>
             ))}
@@ -155,7 +155,7 @@ export default function CommonProblems({ data }) {
         ) : null}
 
         {data.footerNote ? (
-          <p className="mt-4 text-center text-[0.76rem] text-[var(--color-text-soft)]">{data.footerNote}</p>
+          <p className="mt-4 text-center text-[0.76rem] text-[var(--color-text-soft)]" dangerouslySetInnerHTML={{ __html: data.footerNote }} />
         ) : null}
       </div>
     </section>

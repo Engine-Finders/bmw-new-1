@@ -3,6 +3,7 @@
 import Image from "next/image";
 import MStripe from "@/components/reusableComponents/MStripe";
 import GenIcon from "./GenIcons";
+import Link from "next/link";
 
 function VariantPanel({ title, icon, variants, tone }) {
   if (!variants?.length) return null;
@@ -17,7 +18,13 @@ function VariantPanel({ title, icon, variants, tone }) {
         <p className={`text-[0.76rem] font-semibold uppercase tracking-wide ${tone === "diesel" ? "text-[var(--color-primary)]" : "text-[#189454]"}`}>
           {title}
         </p>
-        <p className="mt-1 text-[0.98rem] font-bold leading-snug text-[var(--color-text)]">{variants.join(" • ")}</p>
+        <p className="mt-1 text-[0.98rem] font-bold leading-snug text-[var(--color-text)]">
+          {variants.map((v, index) => (
+            <span key={index}>
+              <Link href={v.url}>{v.name}</Link> {index < variants.length - 1 && " • "}
+            </span>
+          ))}
+        </p>
       </div>
     </div>
   );
@@ -55,7 +62,7 @@ export default function CoreVariants({ data }) {
                 </span>
                 <p className="text-[0.82rem] leading-[1.5] text-[var(--color-text-muted)]">
                   <span className="font-semibold text-[var(--color-text)]">Scope note: </span>
-                  {data.scopeNote}
+                  <span dangerouslySetInnerHTML={{ __html: data.scopeNote }} />
                 </p>
               </div>
             ) : null}

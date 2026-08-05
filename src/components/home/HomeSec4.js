@@ -118,9 +118,9 @@ function RankingRow({ row, isDark }) {
       </div>
       <div className={`min-w-0 border-l pl-2 md:pl-5 ${isDark ? "border-[#223a51]" : "border-[#dfe5ed]"}`}>
         <p className="text-[0.78rem] font-bold leading-tight sm:text-[0.86rem] md:text-[1.12rem]">{row.winner}</p>
-        {row.winnerNote ? <p className={`mt-1 text-[0.62rem] leading-[1.2] sm:text-[0.68rem] md:text-[0.85rem] ${isDark ? "text-white/75" : "text-[#27384a]"}`}>{row.winnerNote}</p> : null}
+        {row.winnerNote ? <p className={`mt-1 text-[0.62rem] leading-[1.2] sm:text-[0.68rem] md:text-[0.85rem] ${isDark ? "text-white/75" : "text-[#27384a]"}`} dangerouslySetInnerHTML={{ __html: row.winnerNote }} /> : null}
       </div>
-      <p className={`min-w-0 border-l pl-2 text-[0.66rem] leading-[1.32] sm:text-[0.72rem] md:pl-5 md:text-[0.9rem] ${isDark ? "border-[#223a51] text-white/82" : "border-[#dfe5ed] text-[#172b4a]"}`}>{row.why}</p>
+      <p className={`min-w-0 border-l pl-2 text-[0.66rem] leading-[1.32] sm:text-[0.72rem] md:pl-5 md:text-[0.9rem] ${isDark ? "border-[#223a51] text-white/82" : "border-[#dfe5ed] text-[#172b4a]"}`} dangerouslySetInnerHTML={{ __html: row.why }} />
       <div className="flex justify-center">
         <VerdictBadge verdict={row.verdict} />
       </div>
@@ -152,7 +152,7 @@ export default function HomeSec4({ data }) {
           <div className="mt-4">
             <MStripe />
           </div>
-          <p className={`mt-4 max-w-[700px] text-[0.86rem] leading-[1.45] md:text-[1.08rem] ${isDark ? "text-white/82" : "text-[#172b4a]"}`}>{data.subHeadline}</p>
+          <p className={`mt-4 max-w-[700px] text-[0.86rem] leading-[1.45] md:text-[1.08rem] ${isDark ? "text-white/82" : "text-[#172b4a]"}`} dangerouslySetInnerHTML={{ __html: data.subHeadline }} />
         </div>
 
         <div className="mt-6">
@@ -187,7 +187,7 @@ export default function HomeSec4({ data }) {
             </span>
             <div>
               <p className={`text-[0.9rem] font-bold ${isDark ? "text-white" : "text-[#071827]"}`}>{data.bottomCta.title}</p>
-              <p className={`mt-1 text-[0.74rem] leading-[1.35] ${isDark ? "text-white/76" : "text-[#27384a]"}`}>{data.bottomCta.text}</p>
+              <p className={`mt-1 text-[0.74rem] leading-[1.35] ${isDark ? "text-white/76" : "text-[#27384a]"}`} dangerouslySetInnerHTML={{ __html: data.bottomCta.text }} />
             </div>
           </div>
           <Link href={data.bottomCta.href} className="flex items-center justify-center gap-5 rounded-md bg-[var(--color-primary)] px-4 py-3 text-[0.82rem] font-bold text-white">

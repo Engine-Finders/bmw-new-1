@@ -223,9 +223,7 @@ export default function AtAGlance({ data }) {
           <div className="mt-3">
             <MStripe />
           </div>
-          <p className={`mt-5 max-w-[430px] text-[var(--color-text-muted)] ${sectionDescription}`}>
-            {data.subHeadline}
-          </p>
+          <p className={`mt-5 max-w-[430px] text-[var(--color-text-muted)] ${sectionDescription}`} dangerouslySetInnerHTML={{ __html: data.subHeadline }} />
         </div>
 
         <div className="mt-[180px] md:mt-6">

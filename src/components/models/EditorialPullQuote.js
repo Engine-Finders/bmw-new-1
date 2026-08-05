@@ -5,7 +5,7 @@ export default function EditorialPullQuote({ data }) {
     <section style={{ paddingBottom: 8 }}>
       <h2>{data.title}</h2>
       <blockquote>
-        <p>{data.quote}</p>
+        <p dangerouslySetInnerHTML={{ __html: data.quote }} />
       </blockquote>
       <hr />
     </section>

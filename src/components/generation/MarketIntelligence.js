@@ -21,7 +21,7 @@ function RankedList({ items }) {
       {items?.map((item, index) => (
         <li key={item} className="flex gap-1.5 text-[0.74rem] leading-[1.3] text-[var(--color-text)]">
           <span className="font-semibold text-[var(--color-primary)]">{index + 1}.</span>
-          {item}
+          <span dangerouslySetInnerHTML={{ __html: item }} />
         </li>
       ))}
     </ol>
@@ -55,7 +55,7 @@ export default function MarketIntelligence({ data }) {
             <StatCard icon="dollar" title="Average E90 Replacement Cost">
               <p className="text-[1.5rem] font-bold text-[var(--color-text)]">{data.averageReplacementCost}</p>
               {data.averageReplacementCostNote ? (
-                <p className="text-[0.68rem] leading-[1.3] text-[var(--color-text-soft)]">{data.averageReplacementCostNote}</p>
+                <p className="text-[0.68rem] leading-[1.3] text-[var(--color-text-soft)]" dangerouslySetInnerHTML={{ __html: data.averageReplacementCostNote }} />
               ) : null}
             </StatCard>
             <StatCard icon="warning" title="Most Common E90 Failures">

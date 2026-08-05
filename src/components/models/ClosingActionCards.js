@@ -6,11 +6,11 @@ export default function ClosingActionCards({ data }) {
       <h2>{data.h2}</h2>
       {data.cards?.map((card) => (
         <p key={card.title}>
-          {card.icon} <strong>{card.title}</strong> -{card.text}{" "}
+          {card.icon} <strong>{card.title}</strong> -<span dangerouslySetInnerHTML={{ __html: card.text }} />{" "}
           <a href={card.href}>{card.href}</a>
         </p>
       ))}
-      {data.footerNote && <p>{data.footerNote}</p>}
+      {data.footerNote && <p dangerouslySetInnerHTML={{ __html: data.footerNote }} />}
       <hr />
     </section>
   );

@@ -236,7 +236,7 @@ function PullQuote({ data }) {
             <p className="text-[15px] font-bold uppercase text-[var(--color-primary)]">Editorial Pull-Quote</p>
             <h3 className="mt-2 max-w-[560px] text-[35px] font-bold leading-[1.15] text-[var(--color-text)] md:text-[50px]">{cleanText(data.title)}</h3>
             <blockquote className="mt-4 max-w-[760px] text-[15px] leading-[1.55] text-[var(--color-text)] md:text-[16px]">
-              &ldquo;{cleanText(data.quote)}&rdquo;
+              &ldquo;<span dangerouslySetInnerHTML={{ __html: cleanText(data.quote) }} />&rdquo;
             </blockquote>
           </div>
         </div>

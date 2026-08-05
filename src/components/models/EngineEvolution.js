@@ -136,12 +136,12 @@ function DesktopTable({ eras, columns }) {
             <div className="flex items-center justify-center border-r border-[var(--color-border)] px-4 py-4">
               <EngineBadges engines={era.keyEngines} />
             </div>
-            <p className={`border-r border-[var(--color-border)] px-6 py-5 ${sectionTableText} leading-[1.45] text-[var(--color-text)]`}>{cleanText(era.whyBmwChanged)}</p>
+            <p className={`border-r border-[var(--color-border)] px-6 py-5 ${sectionTableText} leading-[1.45] text-[var(--color-text)]`} dangerouslySetInnerHTML={{ __html: cleanText(era.whyBmwChanged) }} />
             <div className="flex gap-4 px-6 py-5">
               <span className="mt-1 flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-[var(--color-primary)] text-[var(--color-primary)]">
                 <Icon type="info" className="h-5 w-5" />
               </span>
-              <p className={`${sectionTableText} leading-[1.45] text-[var(--color-text)]`}>{cleanText(era.worthKnowing)}</p>
+              <p className={`${sectionTableText} leading-[1.45] text-[var(--color-text)]`} dangerouslySetInnerHTML={{ __html: cleanText(era.worthKnowing) }} />
             </div>
           </div>
         );
@@ -186,14 +186,14 @@ function MobileAccordion({ eras }) {
                     <span className="text-[var(--color-primary)]"><Icon type="why" className="h-8 w-8" /></span>
                     Why BMW Changed
                   </div>
-                  <div className={`p-4 ${sectionTableText} leading-[1.45] text-[var(--color-text)]`}>{cleanText(era.whyBmwChanged)}</div>
+                  <div className={`p-4 ${sectionTableText} leading-[1.45] text-[var(--color-text)]`} dangerouslySetInnerHTML={{ __html: cleanText(era.whyBmwChanged) }} />
                 </div>
                 <div className="grid grid-cols-[36%_64%]">
                   <div className="flex items-center gap-3 border-r border-[var(--color-border)] p-4 font-bold">
                     <span className="text-[var(--color-primary)]"><Icon type="info" className="h-8 w-8" /></span>
                     Worth Knowing
                   </div>
-                  <div className={`p-4 ${sectionTableText} leading-[1.45] text-[var(--color-text)]`}>{cleanText(era.worthKnowing)}</div>
+                  <div className={`p-4 ${sectionTableText} leading-[1.45] text-[var(--color-text)]`} dangerouslySetInnerHTML={{ __html: cleanText(era.worthKnowing) }} />
                 </div>
               </div>
             ) : null}

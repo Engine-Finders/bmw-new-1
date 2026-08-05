@@ -97,7 +97,7 @@ export default function ReplacementCosts({ data }) {
             <MStripe />
           </div>
           {data.subHeadline ? (
-            <p className="mt-5 max-w-[560px] text-[1rem] leading-[1.5] text-[var(--color-text-muted)] md:text-[1.08rem]">{data.subHeadline}</p>
+            <p className="mt-5 max-w-[560px] text-[1rem] leading-[1.5] text-[var(--color-text-muted)] md:text-[1.08rem]" dangerouslySetInnerHTML={{ __html: data.subHeadline }} />
           ) : null}
         </div>
       </div>
@@ -133,14 +133,14 @@ export default function ReplacementCosts({ data }) {
                 </span>
                 <div>
                   <p className="text-[0.85rem] font-semibold text-[var(--color-text)]">{item.title}</p>
-                  <p className="text-[0.76rem] leading-[1.35] text-[var(--color-text-muted)]">{item.text}</p>
+                  <p className="text-[0.76rem] leading-[1.35] text-[var(--color-text-muted)]" dangerouslySetInnerHTML={{ __html: item.text }} />
                 </div>
               </div>
             ))}
           </div>
         ) : null}
 
-        {data.note ? <p className="mt-4 text-[0.78rem] text-[var(--color-text-soft)]">{data.note}</p> : null}
+        {data.note ? <p className="mt-4 text-[0.78rem] text-[var(--color-text-soft)]" dangerouslySetInnerHTML={{ __html: data.note }} /> : null}
       </div>
     </section>
   );

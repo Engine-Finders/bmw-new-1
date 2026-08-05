@@ -111,9 +111,7 @@ export default function EngineDatabase({ data }) {
           <MStripe />
         </div>
         {data.subHeadline ? (
-          <p className="mt-5 max-w-[560px] text-[1rem] leading-[1.5] text-[var(--color-text-muted)] md:text-[1.08rem]">
-            {data.subHeadline}
-          </p>
+          <p className="mt-5 max-w-[560px] text-[1rem] leading-[1.5] text-[var(--color-text-muted)] md:text-[1.08rem]" dangerouslySetInnerHTML={{ __html: data.subHeadline }} />
         ) : null}
 
         <div className="mt-6 hidden overflow-hidden rounded-md border border-[var(--color-border)] bg-[var(--color-table-surface)] shadow-[0_14px_40px_var(--color-shadow)] backdrop-blur md:block">
@@ -153,7 +151,7 @@ export default function EngineDatabase({ data }) {
               </span>
               <p className="text-[1rem] font-semibold text-[var(--color-text)]">{data.confidenceScore.title}</p>
             </div>
-            <p className="mt-3 text-[0.85rem] leading-[1.5] text-[var(--color-text-muted)]">{data.confidenceScore.text}</p>
+            <p className="mt-3 text-[0.85rem] leading-[1.5] text-[var(--color-text-muted)]" dangerouslySetInnerHTML={{ __html: data.confidenceScore.text }} />
           </div>
         ) : null}
       </div>

@@ -6,7 +6,7 @@ export default function TrustBlock({ data }) {
       <h2>{data.h2}</h2>
       {data.signals?.map((item) => (
         <p key={item.title}>
-          {item.icon} <strong>{item.title}</strong> -{item.text}
+          {item.icon} <strong>{item.title}</strong> -<span dangerouslySetInnerHTML={{ __html: item.text }} />
         </p>
       ))}
       <hr />

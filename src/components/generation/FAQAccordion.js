@@ -22,7 +22,7 @@ function FAQItem({ item, isOpen, onToggle }) {
         </span>
       </button>
       {isOpen ? (
-        <p className="px-5 pb-4 pl-[60px] text-[0.85rem] leading-[1.55] text-[var(--color-text-muted)]">{item.answer}</p>
+        <p className="px-5 pb-4 pl-[60px] text-[0.85rem] leading-[1.55] text-[var(--color-text-muted)]" dangerouslySetInnerHTML={{ __html: item.answer }} />
       ) : null}
     </div>
   );

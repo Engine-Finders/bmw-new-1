@@ -1,4 +1,4 @@
-{
+﻿{
   "meta": {
     "slug": "x3-30e",
     "title": "X3 30e Powertrain Replacement Cost UK -Compare Quotes",
@@ -228,7 +228,7 @@
         "engineCode": "N20B20 + e-motor (2.0L turbo PHEV)",
         "reliability": "★★★☆☆ [NEWLY ASSIGNED -see Data Note]",
         "reconCost": "£4,500–£7,500 [PLACEHOLDER -confirm vs cost sheet]",
-        "eraNote": "245bhp PHEV -N20 chain risk, early hybrid complexity"
+        "eraNote": "245bhp PHEV -<a href='https://bmwengines.uk/engine/n13-n20'>N20</a> chain risk, early hybrid complexity"
       },
       {
         "generation": "G01 30e",
@@ -236,7 +236,7 @@
         "engineCode": "B48B20 + e-motor (2.0L turbo PHEV)",
         "reliability": "★★★★☆ [NEWLY ASSIGNED -see Data Note]",
         "reconCost": "£5,000–£8,500 [PLACEHOLDER -confirm vs cost sheet]",
-        "eraNote": "292bhp PHEV -B48 proven, larger battery, refined hybrid system"
+        "eraNote": "292bhp PHEV -<a href='https://bmwengines.uk/engine/b38-b48'>B48</a> proven, larger battery, refined hybrid system"
       }
     ],
     "sourceNote": "This table is the single source every other section on this page matches -Sections 2, 4 and 6 reference it rather than restating conflicting figures.",

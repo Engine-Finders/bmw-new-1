@@ -84,7 +84,7 @@ export default function Overview({ data }) {
             {introParts.length > 0 ? (
               <div className="mt-4 flex flex-col gap-3 text-[1rem] leading-[1.55] text-[var(--color-text-muted)] md:text-[1.05rem]">
                 {introParts.map((para, i) => (
-                  <p key={i}>{para}</p>
+                  <p key={i} dangerouslySetInnerHTML={{ __html: para }} />
                 ))}
               </div>
             ) : null}
@@ -102,7 +102,7 @@ export default function Overview({ data }) {
                       </span>
                       <div className="min-w-0 flex-1">
                         <p className="text-[0.8rem] font-semibold leading-[1.25] text-[var(--color-text)]">{fact.label}</p>
-                        <p className="mt-0.5 text-[0.74rem] leading-[1.3] text-[var(--color-text-muted)]">{fact.value}</p>
+                        <p className="mt-0.5 text-[0.74rem] leading-[1.3] text-[var(--color-text-muted)]" dangerouslySetInnerHTML={{ __html: fact.value }} />
                       </div>
                     </div>
                   ))}
@@ -120,7 +120,7 @@ export default function Overview({ data }) {
                     Market Intelligence
                   </p>
                 </div>
-                <p className="mt-1.5 text-[0.8rem] leading-[1.4] text-[var(--color-text)]">{data.marketIntelligenceLine}</p>
+                <p className="mt-1.5 text-[0.8rem] leading-[1.4] text-[var(--color-text)]" dangerouslySetInnerHTML={{ __html: data.marketIntelligenceLine }} />
               </div>
             ) : null}
           </div>

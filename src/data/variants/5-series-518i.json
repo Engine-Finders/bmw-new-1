@@ -1,4 +1,4 @@
-{
+﻿{
   "meta": {
     "slug": "5-series-518i",
     "title": "518 / 518i Engine Cost UK - Compare Quotes",
@@ -276,7 +276,7 @@
         "supplyOnly": "£400–£1,200",
         "fittedIndie": "£1,000–£2,200",
         "warranty": "1–6 months",
-        "bestFor": "Budget priority; older M10/M40 examples"
+        "bestFor": "Budget priority; older <a href='https://bmwengines.uk/engine/m10'>M10</a>/M40 examples"
       },
       {
         "engineType": "Reconditioned Engine",
@@ -311,7 +311,7 @@
     "problems": [
       {
         "id": 1,
-        "title": "Timing Belt Failure (M10, M40)",
+        "title": "Timing Belt Failure (M10, <a href='https://bmwengines.uk/engine/m40-m42-m43-m44'>M40</a>)",
         "symptoms": "Engine stops suddenly, ticking from the front of the engine, complete loss of power, catastrophic engine failure",
         "typicalMileage": "40,000–60,000 miles (belt interval)",
         "repairCost": "£300–£600 (preventative timing belt replacement)",

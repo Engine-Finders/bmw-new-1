@@ -426,7 +426,7 @@ export default function EngineDatabase({ data }) {
             <div className="mt-3">
               <MStripe />
             </div>
-            {data.subHeadline ? <p className={`mt-3 max-w-[610px] ${sectionDescription} text-[var(--color-text-muted)]`}>{cleanText(data.subHeadline)}</p> : null}
+            {data.subHeadline ? <p className={`mt-3 max-w-[610px] ${sectionDescription} text-[var(--color-text-muted)]`} dangerouslySetInnerHTML={{ __html: cleanText(data.subHeadline) }} /> : null}
           </div>
 
           <div className="grid grid-cols-4 gap-3">

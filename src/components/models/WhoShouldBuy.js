@@ -17,7 +17,7 @@ export default function WhoShouldBuy({ data }) {
             <tr key={row.buyerProfile}>
               <td>{row.buyerProfile}</td>
               <td>{row.rating}</td>
-              <td>{row.verdict}</td>
+              <td dangerouslySetInnerHTML={{ __html: row.verdict }} />
             </tr>
           ))}
         </tbody>

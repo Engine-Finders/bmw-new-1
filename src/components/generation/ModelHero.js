@@ -87,9 +87,8 @@ export default function ModelHero({ data }) {
             className={`max-w-[620px] text-[0.95rem] leading-[1.45] md:text-[1.08rem] md:leading-[1.42] ${
               isDark ? "text-white/88" : "text-[var(--color-text-muted)]"
             }`}
-          >
-            {data.subHeadline}
-          </p>
+            dangerouslySetInnerHTML={{ __html: data.subHeadline }}
+          />
 
           {/* Mobile: FULL-BLEED car image card — escapes the content column via 100vw + translateX trick */}
           {imageSrc ? (

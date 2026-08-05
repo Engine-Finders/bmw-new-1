@@ -1,4 +1,4 @@
-{
+﻿{
   "meta": {
     "slug": "bmw-1-series-f40",
     "title": "F40 Engine Replacement Cost UK -Compare Quotes",
@@ -137,7 +137,7 @@
               "name": "Which BMW 1 Series F40 engine is the most reliable?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "The B38 1.5-litre three-cylinder petrol (116i/118i) is the most reliable engine in the F40 line-up -it's the simplest architecture, with no complex cooling system issues and a well-documented reliability record. The B48 four-cylinder petrol is also highly reliable, with only minor cooling system concerns."
+                "text": "The B38 1.5-litre three-cylinder petrol (116i/118i) is the most reliable engine in the F40 line-up -it\u0027s the simplest architecture, with no complex cooling system issues and a well-documented reliability record. The B48 four-cylinder petrol is also highly reliable, with only minor cooling system concerns."
               }
             },
             {
@@ -145,7 +145,7 @@
               "name": "What are the common problems with the BMW 1 Series F40?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "EGR cooler failure on the B47 diesel (pre-recall units), cooling system leaks (water pump, expansion tank) on the B38 and B48 petrol engines, and DPF clogging on diesels used predominantly for urban driving. BMW issued a recall for the B47 EGR cooler -check your car's recall status immediately."
+                "text": "EGR cooler failure on the B47 diesel (pre-recall units), cooling system leaks (water pump, expansion tank) on the B38 and B48 petrol engines, and DPF clogging on diesels used predominantly for urban driving. BMW issued a recall for the B47 EGR cooler -check your car\u0027s recall status immediately."
               }
             },
             {
@@ -153,7 +153,7 @@
               "name": "Is the BMW 1 Series F40 reliable?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Yes -the F40's modular engines (B38, B48, B47) are significantly more reliable than the N47/N57 engines they replaced. The B47 diesel EGR cooler issue is the main concern, but it's recall-addressed. Petrol engines are generally very reliable, with only minor cooling system maintenance required."
+                "text": "Yes -the F40\u0027s modular engines (B38, B48, B47) are significantly more reliable than the N47/N57 engines they replaced. The B47 diesel EGR cooler issue is the main concern, but it\u0027s recall-addressed. Petrol engines are generally very reliable, with only minor cooling system maintenance required."
               }
             },
             {
@@ -177,7 +177,7 @@
               "name": "Is it worth replacing a BMW 1 Series F40 engine, or should I scrap the car?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Apply the 70% BMW scrap threshold. Against a well-kept £18,000 F40, a £3,800 M135i recon is 21% of the car's value -safe. Against a tired £12,000 early example, the same recon is 32% -still safe. For sub-£8,000 examples, evaluate carefully."
+                "text": "Apply the 70% BMW scrap threshold. Against a well-kept £18,000 F40, a £3,800 M135i recon is 21% of the car\u0027s value -safe. Against a tired £12,000 early example, the same recon is 32% -still safe. For sub-£8,000 examples, evaluate carefully."
               }
             },
             {
@@ -193,7 +193,7 @@
               "name": "What is the difference between the F40 and previous 1 Series generations?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "The F40 (2019–present) is the third-generation 1 Series and the first to switch from rear-wheel drive to front-wheel drive, based on BMW's FAAR platform shared with the Mini. The E81/E87 (2004–2011) and F20/F21 (2011–2019) were rear-wheel drive. The F40 is also the first 1 Series offered exclusively with three- and four-cylinder engines -no six-cylinder options are available."
+                "text": "The F40 (2019–present) is the third-generation 1 Series and the first to switch from rear-wheel drive to front-wheel drive, based on BMW\u0027s FAAR platform shared with the Mini. The E81/E87 (2004–2011) and F20/F21 (2011–2019) were rear-wheel drive. The F40 is also the first 1 Series offered exclusively with three- and four-cylinder engines -no six-cylinder options are available."
               }
             },
             {
@@ -201,7 +201,7 @@
               "name": "How do I find my BMW 1 Series F40 engine code?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "The engine code is listed on the VIN plate, vehicle documentation, and on a sticker under the bonnet. For 1.5 petrol, look for B38A15 (116i, 118i, 225xe PHEV). For 2.0 petrol, look for B48A20 (120i, 128ti, M135i xDrive). For 2.0 diesel, look for B47D20A (116d, 118d, 120d, 125d). Tell us your variant and year, and we'll confirm."
+                "text": "The engine code is listed on the VIN plate, vehicle documentation, and on a sticker under the bonnet. For 1.5 petrol, look for B38A15 (116i, 118i, 225xe PHEV). For 2.0 petrol, look for B48A20 (120i, 128ti, M135i xDrive). For 2.0 diesel, look for B47D20A (116d, 118d, 120d, 125d). Tell us your variant and year, and we\u0027ll confirm."
               }
             }
           ]
@@ -235,7 +235,7 @@
         {
           "@type": "Dataset",
           "name": "BMW 1 Series F40 UK Engine Enquiry Data 2025",
-          "description": "Proprietary UK enquiry volumes and demand trends for BMW 1 Series F40 engines, sourced from bmwengines.uk's specialist marketplace activity.",
+          "description": "Proprietary UK enquiry volumes and demand trends for BMW 1 Series F40 engines, sourced from bmwengines.uk\u0027s specialist marketplace activity.",
           "creator": {
             "@type": "Organization",
             "name": "bmwengines.uk"
@@ -296,7 +296,7 @@
   },
   "engineDatabase": {
     "h2": "BMW 1 Series F40 Engine Codes -The Complete Database",
-    "subHeadline": "Every engine fitted to the F40 1 Series specifically -BMW's first front-wheel-drive 1 Series, powered exclusively by three- and four-cylinder modular engines.",
+    "subHeadline": "Every engine fitted to the F40 1 Series specifically -BMW\u0027s first front-wheel-drive 1 Series, powered exclusively by three- and four-cylinder modular engines.",
     "columns": [
       "Engine Code",
       "Family",
@@ -312,7 +312,7 @@
     "engines": [
       {
         "engineCode": "B38A15",
-        "family": "B38",
+        "family": "<a href='https://bmwengines.uk/engine/b38-b48'>B38</a>",
         "fuel": "Petrol, turbo",
         "displacement": "1.5L (1499cc)",
         "power": "109 bhp",
@@ -372,7 +372,7 @@
       },
       {
         "engineCode": "B47D20A",
-        "family": "B47",
+        "family": "<a href='https://bmwengines.uk/engine/b37-b47'>B47</a>",
         "fuel": "Diesel, turbo",
         "displacement": "2.0L (1998cc)",
         "power": "116 bhp",
@@ -439,7 +439,7 @@
   },
   "overview": {
     "h2": "BMW 1 Series F40 -Overview",
-    "intro": "The BMW 1 Series F40 is the third generation of BMW's entry-level premium hatchback, launched in July 2019. It marked a significant departure from its predecessors (E81/E87 and F20/F21) by switching from rear-wheel drive to front-wheel drive, based on BMW's FAAR platform shared with the Mini and 2 Series Gran Coupé. The F40 is powered exclusively by BMW's modular three- and four-cylinder engines -the B38 1.5-litre petrol three, B48 2.0-litre petrol four, and B47 2.0-litre diesel four -with power outputs ranging from 109 bhp in the 116i to 306 bhp in the M135i xDrive. A plug-in hybrid variant, the 225xe, combines the B38 petrol with an electric motor for 218 bhp combined output. A 2024 facelift (LCI) introduced revised styling and updated infotainment.",
+    "intro": "The BMW 1 Series F40 is the third generation of BMW\u0027s entry-level premium hatchback, launched in July 2019. It marked a significant departure from its predecessors (E81/E87 and F20/F21) by switching from rear-wheel drive to front-wheel drive, based on BMW\u0027s FAAR platform shared with the Mini and 2 Series Gran Coupé. The F40 is powered exclusively by BMW\u0027s modular three- and four-cylinder engines -the B38 1.5-litre petrol three, B48 2.0-litre petrol four, and B47 2.0-litre diesel four -with power outputs ranging from 109 bhp in the 116i to 306 bhp in the M135i xDrive. A plug-in hybrid variant, the 225xe, combines the B38 petrol with an electric motor for 218 bhp combined output. A 2024 facelift (LCI) introduced revised styling and updated infotainment.",
     "keyFacts": "Platform: FAAR (front-wheel-drive architecture, shared with Mini) • Predecessor: BMW 1 Series F20/F21 (2011–2019) • Successor: Current model -on sale • Sibling body styles: None -F40 is sole 1 Series hatchback body style",
     "marketIntelligenceLine": "The F40 1 Series generated real UK engine enquiries in 2025, with the 2.0-litre B47 diesel and B48 petrol engines accounting for the largest share of BMW 1 Series enquiries (344 total)."
   },
@@ -447,7 +447,7 @@
     "items": [
       {
         "slot": "Best Diesel Overall",
-        "engine": "B47D20A 2.0-litre (190 bhp) 120d -The 190 bhp B47 diesel delivers excellent real-world performance and economy. Post-recall EGR cooler units are reliable, and the engine is significantly more robust than the N47 it replaced.",
+        "engine": "B47D20A 2.0-litre (190 bhp) 120d -The 190 bhp B47 diesel delivers excellent real-world performance and economy. Post-recall EGR cooler units are reliable, and the engine is significantly more robust than the <a href='https://bmwengines.uk/engine/n47'>N47</a> it replaced.",
         "quote": "",
         "whoItsFor": "high-mileage buyers who prioritise economy and torque."
       },
@@ -473,11 +473,11 @@
         "slot": "Best Value",
         "engine": "B48A20 2.0-litre (178 bhp) 120i -The 120i offers the best balance of performance, economy, and running costs. The B48 is well-supported, parts are widely available, and the recon cost is significantly lower than the M135i.",
         "quote": "",
-        "whoItsFor": "buyers who want genuine performance without the M135i's premium."
+        "whoItsFor": "buyers who want genuine performance without the M135i\u0027s premium."
       },
       {
         "slot": "Most Overlooked",
-        "engine": "B38A15 1.5-litre (136 bhp) 118i -Often dismissed as the \"entry-level\" F40, the 136 bhp three-cylinder delivers surprising character and genuinely good fuel economy. It's the cheapest F40 to run and the most reliable engine in the range.",
+        "engine": "B38A15 1.5-litre (136 bhp) 118i -Often dismissed as the \"entry-level\" F40, the 136 bhp three-cylinder delivers surprising character and genuinely good fuel economy. It\u0027s the cheapest F40 to run and the most reliable engine in the range.",
         "quote": "",
         "whoItsFor": "buyers who prioritise running costs over outright performance."
       }
@@ -537,7 +537,7 @@
     ],
     "economicsRule": {
       "title": "The F40 rule",
-      "text": "A £3,800–£6,500 M135i recon against a £12,000–£15,000 early F40 sits at 25–54% of the car's value -on a sub-£12,000 example, that brushes our 70% BMW threshold, and we'll honestly tell you to walk away. Against a well-kept £18,000+ example, the same recon drops to a routine 21–36% -a repair decision, not a financial one. Value the car first."
+      "text": "A £3,800–£6,500 M135i recon against a £12,000–£15,000 early F40 sits at 25–54% of the car\u0027s value -on a sub-£12,000 example, that brushes our 70% BMW threshold, and we\u0027ll honestly tell you to walk away. Against a well-kept £18,000+ example, the same recon drops to a routine 21–36% -a repair decision, not a financial one. Value the car first."
     },
     "keyTakeaways": [
       {
@@ -617,7 +617,7 @@
         "title": "B47 Diesel DPF Clogging (Urban Use)",
         "affectedModels": "F40 116d, 118d, 120d, 125d (all diesel variants).",
         "typicalFailureMileage": "60,000–120,000 miles.",
-        "rootCause": "Diesel particulate filters clog with soot when the car is used predominantly for short urban journeys that don't allow the DPF to regenerate. Warning lights and reduced power are the symptoms; ignored, it can require DPF replacement or engine damage.",
+        "rootCause": "Diesel particulate filters clog with soot when the car is used predominantly for short urban journeys that don\u0027t allow the DPF to regenerate. Warning lights and reduced power are the symptoms; ignored, it can require DPF replacement or engine damage.",
         "tieredCosts": [
           {
             "tier": "Preventative (Repair)",
@@ -722,19 +722,46 @@
   },
   "coreVariants": {
     "dieselVariants": [
-      "116d",
-      "118d",
-      "120d",
-      "125d"
+      {
+        "name": "116d",
+        "url": "https://bmwengines.uk/1-series/116d"
+      },
+      {
+        "name": "118d",
+        "url": "https://bmwengines.uk/1-series/118d"
+      },
+      {
+        "name": "120d",
+        "url": "https://bmwengines.uk/1-series/120d"
+      },
+      {
+        "name": "125d",
+        "url": "https://bmwengines.uk/1-series/125d"
+      }
     ],
     "petrolVariants": [
-      "116i",
-      "118i",
-      "120i",
-      "128ti",
-      "M135i xDrive"
+      {
+        "name": "116i",
+        "url": "https://bmwengines.uk/1-series/116i"
+      },
+      {
+        "name": "118i",
+        "url": "https://bmwengines.uk/1-series/118i"
+      },
+      {
+        "name": "120i",
+        "url": "https://bmwengines.uk/1-series/120i"
+      },
+      {
+        "name": "128ti",
+        "url": "https://bmwengines.uk/1-series/128ti"
+      },
+      {
+        "name": "M135i xDrive",
+        "url": "https://bmwengines.uk/1-series/m135i"
+      }
     ],
-    "scopeNote": "All variants listed are F40 1 Series only. The F40 marked BMW's switch to front-wheel drive -the M135i xDrive uses BMW's xDrive all-wheel-drive system to deliver 306 bhp. The 128ti is a front-wheel-drive hot hatch positioned between the 120i and M135i. The 225xe is the plug-in hybrid variant."
+    "scopeNote": "All variants listed are F40 1 Series only. The F40 marked BMW\u0027s switch to front-wheel drive -the M135i xDrive uses BMW\u0027s xDrive all-wheel-drive system to deliver 306 bhp. The 128ti is a front-wheel-drive hot hatch positioned between the 120i and M135i. The 225xe is the plug-in hybrid variant."
   },
   "marketIntelligence": {
     "mostRequestedEngines": [
@@ -787,17 +814,17 @@
       {
         "id": 2,
         "question": "Which BMW 1 Series F40 engine is the most reliable?",
-        "answer": "The B38 1.5-litre three-cylinder petrol (116i/118i) is the most reliable engine in the F40 line-up -it's the simplest architecture, with no complex cooling system issues and a well-documented reliability record. The B48 four-cylinder petrol is also highly reliable, with only minor cooling system concerns."
+        "answer": "The B38 1.5-litre three-cylinder petrol (116i/118i) is the most reliable engine in the F40 line-up -it\u0027s the simplest architecture, with no complex cooling system issues and a well-documented reliability record. The B48 four-cylinder petrol is also highly reliable, with only minor cooling system concerns."
       },
       {
         "id": 3,
         "question": "What are the common problems with the BMW 1 Series F40?",
-        "answer": "EGR cooler failure on the B47 diesel (pre-recall units), cooling system leaks (water pump, expansion tank) on the B38 and B48 petrol engines, and DPF clogging on diesels used predominantly for urban driving. BMW issued a recall for the B47 EGR cooler -check your car's recall status immediately."
+        "answer": "EGR cooler failure on the B47 diesel (pre-recall units), cooling system leaks (water pump, expansion tank) on the B38 and B48 petrol engines, and DPF clogging on diesels used predominantly for urban driving. BMW issued a recall for the B47 EGR cooler -check your car\u0027s recall status immediately."
       },
       {
         "id": 4,
         "question": "Is the BMW 1 Series F40 reliable?",
-        "answer": "Yes -the F40's modular engines (B38, B48, B47) are significantly more reliable than the N47/N57 engines they replaced. The B47 diesel EGR cooler issue is the main concern, but it's recall-addressed. Petrol engines are generally very reliable, with only minor cooling system maintenance required."
+        "answer": "Yes -the F40\u0027s modular engines (B38, B48, B47) are significantly more reliable than the N47/N57 engines they replaced. The B47 diesel EGR cooler issue is the main concern, but it\u0027s recall-addressed. Petrol engines are generally very reliable, with only minor cooling system maintenance required."
       },
       {
         "id": 5,
@@ -812,7 +839,7 @@
       {
         "id": 7,
         "question": "Is it worth replacing a BMW 1 Series F40 engine, or should I scrap the car?",
-        "answer": "Apply the 70% BMW scrap threshold. Against a well-kept £18,000 F40, a £3,800 M135i recon is 21% of the car's value -safe. Against a tired £12,000 early example, the same recon is 32% -still safe. For sub-£8,000 examples, evaluate carefully."
+        "answer": "Apply the 70% BMW scrap threshold. Against a well-kept £18,000 F40, a £3,800 M135i recon is 21% of the car\u0027s value -safe. Against a tired £12,000 early example, the same recon is 32% -still safe. For sub-£8,000 examples, evaluate carefully."
       },
       {
         "id": 8,
@@ -822,12 +849,12 @@
       {
         "id": 9,
         "question": "What is the difference between the F40 and previous 1 Series generations?",
-        "answer": "The F40 (2019–present) is the third-generation 1 Series and the first to switch from rear-wheel drive to front-wheel drive, based on BMW's FAAR platform shared with the Mini. The E81/E87 (2004–2011) and F20/F21 (2011–2019) were rear-wheel drive. The F40 is also the first 1 Series offered exclusively with three- and four-cylinder engines -no six-cylinder options are available."
+        "answer": "The F40 (2019–present) is the third-generation 1 Series and the first to switch from rear-wheel drive to front-wheel drive, based on BMW\u0027s FAAR platform shared with the Mini. The E81/E87 (2004–2011) and F20/F21 (2011–2019) were rear-wheel drive. The F40 is also the first 1 Series offered exclusively with three- and four-cylinder engines -no six-cylinder options are available."
       },
       {
         "id": 10,
         "question": "How do I find my BMW 1 Series F40 engine code?",
-        "answer": "The engine code is listed on the VIN plate, vehicle documentation, and on a sticker under the bonnet. For 1.5 petrol, look for B38A15 (116i, 118i, 225xe PHEV). For 2.0 petrol, look for B48A20 (120i, 128ti, M135i xDrive). For 2.0 diesel, look for B47D20A (116d, 118d, 120d, 125d). Tell us your variant and year, and we'll confirm."
+        "answer": "The engine code is listed on the VIN plate, vehicle documentation, and on a sticker under the bonnet. For 1.5 petrol, look for B38A15 (116i, 118i, 225xe PHEV). For 2.0 petrol, look for B48A20 (120i, 128ti, M135i xDrive). For 2.0 diesel, look for B47D20A (116d, 118d, 120d, 125d). Tell us your variant and year, and we\u0027ll confirm."
       }
     ]
   },
@@ -840,11 +867,11 @@
       },
       {
         "title": "Compare F40 Engine Replacement Companies",
-        "text": "see prices, warranty terms and supply & fit options side-by-side before you commit."
+        "text": "see prices, warranty terms and supply \u0026 fit options side-by-side before you commit."
       },
       {
         "title": "UK Engine Replacement Services for F40",
-        "text": "covering every variant from 116i to M135i xDrive, with supply-only or full supply & fit available nationwide."
+        "text": "covering every variant from 116i to M135i xDrive, with supply-only or full supply \u0026 fit available nationwide."
       }
     ],
     "finalCta": "Find the best BMW 1 Series F40 engine replacement UK drivers rely on. Compare real prices from trusted specialists on EnginesMarket today and get back on the road with confidence.",

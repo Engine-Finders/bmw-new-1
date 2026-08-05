@@ -173,9 +173,7 @@ export default function ModelHero({ data }) {
           <div className="mt-4">
             <MStripe />
           </div>
-          <p className={`mt-5 max-w-[650px] ${sectionDescription} text-[var(--color-text-muted)]`}>
-            {data.subHeadline}
-          </p>
+          <p className={`mt-5 max-w-[650px] ${sectionDescription} text-[var(--color-text-muted)]`} dangerouslySetInnerHTML={{ __html: data.subHeadline }} />
 
           {data.primaryCta ? (
             <Link

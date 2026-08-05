@@ -4,7 +4,7 @@ export default function QuotesCta({ data }) {
   return (
     <section style={{ paddingBottom: 8 }}>
       <h2>{data.headline}</h2>
-      {data.supportingLine && <p>{data.supportingLine}</p>}
+      {data.supportingLine && <p dangerouslySetInnerHTML={{ __html: data.supportingLine }} />}
       {data.button && (
         <p>
           <a href={data.button.href}>{data.button.label}</a>

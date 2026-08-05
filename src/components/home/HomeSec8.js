@@ -56,7 +56,7 @@ function CentreCard({ item, isDark }) {
 
       <div className="p-5 pt-2 md:p-4 md:pt-2">
         <h3 className={`text-[1.32rem] font-bold leading-tight md:text-[1.1rem] ${isDark ? "text-white" : "text-[#071827]"}`}>{item.title}</h3>
-        <p className={`mt-4 text-[0.9rem] leading-[1.55] md:mt-3 md:text-[0.82rem] ${isDark ? "text-white/78" : "text-[#071827]"}`}>{cleanText(item.description)}</p>
+        <p className={`mt-4 text-[0.9rem] leading-[1.55] md:mt-3 md:text-[0.82rem] ${isDark ? "text-white/78" : "text-[#071827]"}`} dangerouslySetInnerHTML={{ __html: cleanText(item.description) }} />
         <Link href={item.link.href} className="mt-6 flex items-center justify-end gap-3 text-[0.95rem] font-bold text-[var(--color-primary)] md:mt-4 md:text-[0.82rem]">
           <span>{cleanText(item.link.label)}</span>
           <Icon name="arrow" className="h-5 w-5" />
@@ -88,9 +88,7 @@ export default function HomeSec8({ data }) {
           <div className="mt-5">
             <MStripe />
           </div>
-          <p className={`mt-6 max-w-[610px] whitespace-pre-line text-[0.9rem] leading-[1.6] md:text-[1rem] ${isDark ? "text-white/80" : "text-[#27384a]"}`}>
-            {cleanText(data.subHeadline).replace(". Every guide", ".\n\nEvery guide")}
-          </p>
+          <p className={`mt-6 max-w-[610px] whitespace-pre-line text-[0.9rem] leading-[1.6] md:text-[1rem] ${isDark ? "text-white/80" : "text-[#27384a]"}`} dangerouslySetInnerHTML={{ __html: cleanText(data.subHeadline).replace(". Every guide", ".\n\nEvery guide") }} />
         </div>
 
         <div className="mt-10 grid gap-4 md:mt-8 md:grid-cols-4 md:gap-4">

@@ -1,4 +1,4 @@
-{
+﻿{
   "meta": {
     "slug": "bmw-5-series-f10",
     "title": "F10 Engine Replacement Cost UK -Compare Quotes",
@@ -243,7 +243,7 @@
               "name": "Is it worth replacing a BMW 5 Series F10 engine, or should I scrap the car?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Depends on the car's value. Against a £7,000 F10, a £4,500 N57 recon is 64% -borderline but within our 70% BMW threshold. Against a well-kept £12,000+ example, the same recon is 33–38% -a repair decision, not a financial one. Against a sub-£5,000 example, a major engine failure is a write-off. On an M5, the calculus is different -the car's value justifies the S63's high replacement cost."
+                "text": "Depends on the car\u0027s value. Against a £7,000 F10, a £4,500 N57 recon is 64% -borderline but within our 70% BMW threshold. Against a well-kept £12,000+ example, the same recon is 33–38% -a repair decision, not a financial one. Against a sub-£5,000 example, a major engine failure is a write-off. On an M5, the calculus is different -the car\u0027s value justifies the S63\u0027s high replacement cost."
               }
             },
             {
@@ -251,7 +251,7 @@
               "name": "How long do BMW 5 Series F10 engines last?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "The N57 diesel six can exceed 200,000–300,000 miles with proper servicing. The N55 petrol six is similarly durable. The N47 and N20's limiting factor is the timing chain -addressed proactively, either can reach high mileage. The N63 V8 can also reach high mileage but requires meticulous cooling system maintenance. The S63 is robust but requires crank hub and rod bearing preventative work."
+                "text": "The N57 diesel six can exceed 200,000–300,000 miles with proper servicing. The N55 petrol six is similarly durable. The N47 and N20\u0027s limiting factor is the timing chain -addressed proactively, either can reach high mileage. The N63 V8 can also reach high mileage but requires meticulous cooling system maintenance. The S63 is robust but requires crank hub and rod bearing preventative work."
               }
             },
             {
@@ -267,7 +267,7 @@
               "name": "How do I find my BMW 5 Series F10 engine code?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Listed on the VIN plate and vehicle documentation; block stamping is visible on the engine itself. Tell us your variant (520i, 530d, 550i, M5, etc.) and approximate registration date and we'll identify it -20+ vetted specialists will confirm it for free."
+                "text": "Listed on the VIN plate and vehicle documentation; block stamping is visible on the engine itself. Tell us your variant (520i, 530d, 550i, M5, etc.) and approximate registration date and we\u0027ll identify it -20+ vetted specialists will confirm it for free."
               }
             }
           ]
@@ -324,7 +324,7 @@
   "hero": {
     "tagPill": "BMW 5 Series F10 • Saloon • 2010–2017",
     "h1": "BMW 5 Series F10 Engines -The Complete UK Guide",
-    "subHeadline": "Every engine fitted to the F10 saloon -from the N47 four-cylinder diesel to the N63 twin-turbo V8 and the S63-powered M5. Real UK replacement costs, honest failure data, and the timing chain risks that define this generation.",
+    "subHeadline": "Every engine fitted to the F10 saloon -from the <a href='https://bmwengines.uk/engine/n47'>N47</a> four-cylinder diesel to the <a href='https://bmwengines.uk/engine/n62-n63'>N63</a> twin-turbo V8 and the <a href='https://bmwengines.uk/engine/s63-s65'>S63</a>-powered M5. Real UK replacement costs, honest failure data, and the timing chain risks that define this generation.",
     "trustStrip": [
       {
         "icon": "📊",
@@ -351,7 +351,7 @@
   },
   "engineDatabase": {
     "h2": "BMW 5 Series F10 Engine Codes -The Complete Database",
-    "subHeadline": "Every engine fitted to the F10 saloon -from the four-cylinder petrol and diesel units to the six-cylinder N55, the V8 N63 and the S63 in the M5.",
+    "subHeadline": "Every engine fitted to the F10 saloon -from the four-cylinder petrol and diesel units to the six-cylinder <a href='https://bmwengines.uk/engine/n54-n55'>N55</a>, the V8 N63 and the S63 in the M5.",
     "columns": [
       "Engine Code",
       "Family",
@@ -367,7 +367,7 @@
         "fuel": "2025 Enquiries",
         "displacement": "Avg. Recon Cost",
         "power": "N20B20",
-        "years": "N20",
+        "years": "<a href='https://bmwengines.uk/engine/n13-n20'>N20</a>",
         "variants": "",
         "reliability": "",
         "enquiries": "",
@@ -389,7 +389,7 @@
         "engineCode": "-(pattern data)",
         "family": "£2,200–£4,000 [PLACEHOLDER -confirm vs cost sheet]",
         "fuel": "N52B25",
-        "displacement": "N52",
+        "displacement": "<a href='https://bmwengines.uk/engine/n52-n53'>N52</a>",
         "power": "Petrol, N.A.",
         "years": "2.5L (2497cc)",
         "variants": "",
@@ -531,7 +531,7 @@
       },
       {
         "engineCode": "B47D20",
-        "family": "B47",
+        "family": "<a href='https://bmwengines.uk/engine/b37-b47'>B47</a>",
         "fuel": "Diesel, turbo",
         "displacement": "2.0L (1995cc)",
         "power": "148–190 bhp",
@@ -547,7 +547,7 @@
         "fuel": "-(pattern data)",
         "displacement": "£2,800–£5,000 [PLACEHOLDER -confirm vs cost sheet]",
         "power": "N57D30",
-        "years": "N57",
+        "years": "<a href='https://bmwengines.uk/engine/n57'>N57</a>",
         "variants": "",
         "reliability": "",
         "enquiries": "",
@@ -583,7 +583,7 @@
       {
         "slot": "Thin-Data Summary",
         "engine": "",
-        "quote": "The F10's engine range spans four distinct eras. The N57 3.0-litre six-cylinder diesel (530d/535d) is the most dependable engine in the range -proven common-rail injection, strong torque delivery, and a reputation for exceeding 200,000 miles with routine servicing. The N55 3.0-litre turbocharged six (535i) is the best petrol option -smooth, responsive, and more reliable than the N63 V8. The N63 4.4-litre twin-turbo V8 (550i) is the most complex -the \"hot-vee\" design leads to heat-related failures including valve stem seals and turbo coolant lines. The N47 2.0-litre diesel (520d) is the volume choice but carries a well-documented rear-mounted timing chain risk. The S63 in the M5 is a high-performance twin-turbo V8 with 553–575 bhp, but it demands meticulous maintenance and has known crank hub and rod bearing concerns. If you're buying an F10, the N57 diesel is the sensible choice; the N55 is the petrol sweet spot; the N47 requires documented chain history; the N63 demands deep pockets.",
+        "quote": "The F10\u0027s engine range spans four distinct eras. The N57 3.0-litre six-cylinder diesel (530d/535d) is the most dependable engine in the range -proven common-rail injection, strong torque delivery, and a reputation for exceeding 200,000 miles with routine servicing. The N55 3.0-litre turbocharged six (535i) is the best petrol option -smooth, responsive, and more reliable than the N63 V8. The N63 4.4-litre twin-turbo V8 (550i) is the most complex -the \"hot-vee\" design leads to heat-related failures including valve stem seals and turbo coolant lines. The N47 2.0-litre diesel (520d) is the volume choice but carries a well-documented rear-mounted timing chain risk. The S63 in the M5 is a high-performance twin-turbo V8 with 553–575 bhp, but it demands meticulous maintenance and has known crank hub and rod bearing concerns. If you\u0027re buying an F10, the N57 diesel is the sensible choice; the N55 is the petrol sweet spot; the N47 requires documented chain history; the N63 demands deep pockets.",
         "whoItsFor": ""
       }
     ]
@@ -666,7 +666,7 @@
     ],
     "economicsRule": {
       "title": "The F10 rule",
-      "text": "A £4,000–£7,500 N57 recon against a £7,000 F10 sits at 57–107% of the car's value -right at our 70% BMW threshold. Against a well-kept £12,000+ example, the same recon drops to 33–63% -a repair decision, not a financial one. Against a sub-£5,000 F10, a major engine failure is a write-off. Value the car first."
+      "text": "A £4,000–£7,500 N57 recon against a £7,000 F10 sits at 57–107% of the car\u0027s value -right at our 70% BMW threshold. Against a well-kept £12,000+ example, the same recon drops to 33–63% -a repair decision, not a financial one. Against a sub-£5,000 F10, a major engine failure is a write-off. Value the car first."
     },
     "keyTakeaways": [
       {
@@ -679,7 +679,7 @@
       },
       {
         "question": "Which F10 Is Best Value?",
-        "answer": "N57 530d -six-cylinder torque without the M5's running costs."
+        "answer": "N57 530d -six-cylinder torque without the M5\u0027s running costs."
       }
     ]
   },
@@ -690,7 +690,7 @@
         "title": "N47 Diesel Timing Chain Stretch",
         "affectedModels": "F10 518d, 520d, 525d (2010–2014, N47 engine).",
         "typicalFailureMileage": "60,000–120,000 miles.",
-        "rootCause": "The N47's timing chain is mounted at the rear of the engine, making it a major labour-intensive job to replace. The chain, guides, and tensioners can wear prematurely, causing chain stretch. If the chain stretches too far, it can \"jump\" a tooth or snap, causing pistons to strike open valves. Cold-start rattle for 1–2 seconds is the classic early warning.",
+        "rootCause": "The N47\u0027s timing chain is mounted at the rear of the engine, making it a major labour-intensive job to replace. The chain, guides, and tensioners can wear prematurely, causing chain stretch. If the chain stretches too far, it can \"jump\" a tooth or snap, causing pistons to strike open valves. Cold-start rattle for 1–2 seconds is the classic early warning.",
         "tieredCosts": [],
         "recommendation": "At the first sign of cold-start rattle on an N47 diesel F10, get the timing chain inspected immediately. A £1,000–£1,800 preventative repair is dramatically cheaper than the £2,500–£4,500 replacement that follows if ignored. On an F10 worth under £5,000, this decision alone determines whether the car stays economically viable. Consider the B47-equipped cars (2014–2017) which have an improved chain design.",
         "cta": {
@@ -703,7 +703,7 @@
         "title": "N20 Timing Chain Guide Failure",
         "affectedModels": "F10 520i, 528i (2011–2016, N20 engine).",
         "typicalFailureMileage": "40,000–80,000 miles.",
-        "rootCause": "The N20's timing chain guides are made of a plastic material that can become brittle and fail over time. When the guides break, the timing chain can slip or snap, causing catastrophic engine damage. A whining noise from the engine, particularly on cold start, is the classic early warning.",
+        "rootCause": "The N20\u0027s timing chain guides are made of a plastic material that can become brittle and fail over time. When the guides break, the timing chain can slip or snap, causing catastrophic engine damage. A whining noise from the engine, particularly on cold start, is the classic early warning.",
         "tieredCosts": [],
         "recommendation": "At the first sign of a whining noise from the engine on an N20-powered F10, get the timing chain inspected immediately. An £800–£1,800 preventative repair is dramatically cheaper than the £2,200–£4,000 replacement that follows if ignored. Avoid pre-2015 N20 cars without documented chain history.",
         "cta": {
@@ -716,7 +716,7 @@
         "title": "N63 Hot-Vee V8 Heat-Related Failures",
         "affectedModels": "F10 550i (2009–2017, N63 engine).",
         "typicalFailureMileage": "40,000–80,000 miles.",
-        "rootCause": "The N63's \"hot-vee\" design places the turbochargers inside the V of the engine, generating significant heat. This leads to premature failure of valve stem seals, turbo coolant lines, and the battery drain issues associated with the N63. The N63TU (2014–2017) improved some aspects but retained the hot-vee architecture.",
+        "rootCause": "The N63\u0027s \"hot-vee\" design places the turbochargers inside the V of the engine, generating significant heat. This leads to premature failure of valve stem seals, turbo coolant lines, and the battery drain issues associated with the N63. The N63TU (2014–2017) improved some aspects but retained the hot-vee architecture.",
         "tieredCosts": [],
         "recommendation": "If you own an N63-powered F10, budget for valve stem seal replacement as a preventative measure -a £500–£1,000 investment is far cheaper than the £6,000–£10,000 engine replacement that follows a failure. Monitor oil consumption and investigate any increase immediately.",
         "cta": {
@@ -726,10 +726,10 @@
       },
       {
         "id": 4,
-        "title": "S63 Crank Hub & Rod Bearings (M5)",
+        "title": "S63 Crank Hub \u0026 Rod Bearings (M5)",
         "affectedModels": "F10 M5, M5 Competition (2012–2016, S63 engine).",
         "typicalFailureMileage": "30,000–60,000 miles.",
-        "rootCause": "The S63's crank hub can spin on the crankshaft, causing timing to slip and potentially catastrophic engine damage. The rod bearings can also wear prematurely, particularly on cars that have been tracked or driven hard. Both issues are well-documented in the M community.",
+        "rootCause": "The S63\u0027s crank hub can spin on the crankshaft, causing timing to slip and potentially catastrophic engine damage. The rod bearings can also wear prematurely, particularly on cars that have been tracked or driven hard. Both issues are well-documented in the M community.",
         "tieredCosts": [],
         "recommendation": "If you own an F10 M5, budget for a crank hub fix and rod bearing replacement as preventative maintenance. A £1,500–£3,000 investment is far cheaper than the £9,000–£15,000 engine replacement that follows a failure. Use the correct oil and warm the engine properly before hard driving.",
         "cta": {
@@ -843,22 +843,68 @@
   },
   "coreVariants": {
     "dieselVariants": [
-      "518d",
-      "520d",
-      "525d",
-      "530d",
-      "535d",
-      "M550d"
+      {
+        "name": "518d",
+        "url": "https://bmwengines.uk/5-series/518d"
+      },
+      {
+        "name": "520d",
+        "url": "https://bmwengines.uk/5-series/520d"
+      },
+      {
+        "name": "525d",
+        "url": "https://bmwengines.uk/5-series/525d"
+      },
+      {
+        "name": "530d",
+        "url": "https://bmwengines.uk/5-series/530d"
+      },
+      {
+        "name": "535d",
+        "url": "https://bmwengines.uk/5-series/535d"
+      },
+      {
+        "name": "M550d",
+        "url": "https://bmwengines.uk/5-series/m550d"
+      }
     ],
     "petrolVariants": [
-      "520i",
-      "523i",
-      "528i",
-      "530i",
-      "535i",
-      "550i",
-      "M5",
-      "M5 Competition"
+      {
+        "name": "520i",
+        "url": "https://bmwengines.uk/5-series/520i"
+      },
+      {
+        "name": "523i",
+        "url": "https://bmwengines.uk/5-series/523i"
+      },
+      {
+        "name": "528i",
+        "url": "https://bmwengines.uk/5-series/528i"
+      },
+      {
+        "name": "530i",
+        "url": "https://bmwengines.uk/5-series/530i"
+      },
+      {
+        "name": "535i",
+        "url": "https://bmwengines.uk/5-series/535i"
+      },
+      {
+        "name": "550i",
+        "url": "https://bmwengines.uk/5-series/550i"
+      },
+      {
+        "name": "M5",
+        "url": "#"
+      },
+      {
+        "name": "M5 Competition",
+        "url": "#"
+      },
+      {
+        "name": "525i",
+        "url": "https://bmwengines.uk/5-series/525i"
+      }
     ],
     "scopeNote": "All variants listed are F10-generation 5 Series Saloon only (2010–2017). The F11 Touring, F07 Gran Turismo and F18 long-wheelbase variants share most engines but are covered on their own Generation Pages."
   },
@@ -904,12 +950,12 @@
       {
         "id": 7,
         "question": "Is it worth replacing a BMW 5 Series F10 engine, or should I scrap the car?",
-        "answer": "Depends on the car's value. Against a £7,000 F10, a £4,500 N57 recon is 64% -borderline but within our 70% BMW threshold. Against a well-kept £12,000+ example, the same recon is 33–38% -a repair decision, not a financial one. Against a sub-£5,000 example, a major engine failure is a write-off. On an M5, the calculus is different -the car's value justifies the S63's high replacement cost."
+        "answer": "Depends on the car\u0027s value. Against a £7,000 F10, a £4,500 N57 recon is 64% -borderline but within our 70% BMW threshold. Against a well-kept £12,000+ example, the same recon is 33–38% -a repair decision, not a financial one. Against a sub-£5,000 example, a major engine failure is a write-off. On an M5, the calculus is different -the car\u0027s value justifies the S63\u0027s high replacement cost."
       },
       {
         "id": 8,
         "question": "How long do BMW 5 Series F10 engines last?",
-        "answer": "The N57 diesel six can exceed 200,000–300,000 miles with proper servicing. The N55 petrol six is similarly durable. The N47 and N20's limiting factor is the timing chain -addressed proactively, either can reach high mileage. The N63 V8 can also reach high mileage but requires meticulous cooling system maintenance. The S63 is robust but requires crank hub and rod bearing preventative work."
+        "answer": "The N57 diesel six can exceed 200,000–300,000 miles with proper servicing. The N55 petrol six is similarly durable. The N47 and N20\u0027s limiting factor is the timing chain -addressed proactively, either can reach high mileage. The N63 V8 can also reach high mileage but requires meticulous cooling system maintenance. The S63 is robust but requires crank hub and rod bearing preventative work."
       },
       {
         "id": 9,
@@ -919,7 +965,7 @@
       {
         "id": 10,
         "question": "How do I find my BMW 5 Series F10 engine code?",
-        "answer": "Listed on the VIN plate and vehicle documentation; block stamping is visible on the engine itself. Tell us your variant (520i, 530d, 550i, M5, etc.) and approximate registration date and we'll identify it -20+ vetted specialists will confirm it for free."
+        "answer": "Listed on the VIN plate and vehicle documentation; block stamping is visible on the engine itself. Tell us your variant (520i, 530d, 550i, M5, etc.) and approximate registration date and we\u0027ll identify it -20+ vetted specialists will confirm it for free."
       }
     ]
   },
@@ -932,11 +978,11 @@
       },
       {
         "title": "Compare F10 Engine Replacement Companies",
-        "text": "see prices, warranty terms and supply & fit options side-by-side before you commit."
+        "text": "see prices, warranty terms and supply \u0026 fit options side-by-side before you commit."
       },
       {
         "title": "UK Engine Replacement Services for F10",
-        "text": "covering every variant from 520i to M5, with supply-only or full supply & fit available nationwide."
+        "text": "covering every variant from 520i to M5, with supply-only or full supply \u0026 fit available nationwide."
       }
     ],
     "finalCta": "Find the best BMW 5 Series F10 engine replacement UK drivers rely on. Compare real prices from trusted specialists on EnginesMarket today and get back on the road with confidence.",

@@ -21,14 +21,14 @@ export default function EraMap({ data }) {
               <td>{row.engineCode}</td>
               <td>{row.reliability}</td>
               <td>{row.reconCost}</td>
-              <td>{row.eraNote}</td>
+              <td dangerouslySetInnerHTML={{ __html: row.eraNote }} />
             </tr>
           ))}
         </tbody>
       </table>
 
-      {data.sourceNote && <p>{data.sourceNote}</p>}
-      {data.dataNote && <p>{data.dataNote}</p>}
+      {data.sourceNote && <p dangerouslySetInnerHTML={{ __html: data.sourceNote }} />}
+      {data.dataNote && <p dangerouslySetInnerHTML={{ __html: data.dataNote }} />}
       <hr />
     </section>
   );

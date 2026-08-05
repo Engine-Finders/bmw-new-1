@@ -135,9 +135,7 @@ function VerdictTable({ metrics, isDark }) {
             <MetricIcon metric={row.metric} />
             <span className={`font-medium leading-[1.25] ${sectionTableText}`}>{row.metric}</span>
           </div>
-          <p className={`px-4 py-3 text-[var(--color-text-muted)] md:px-5 ${sectionTableText}`}>
-            {cleanText(row.ourCall)}
-          </p>
+          <p className={`px-4 py-3 text-[var(--color-text-muted)] md:px-5 ${sectionTableText}`} dangerouslySetInnerHTML={{ __html: cleanText(row.ourCall) }} />
         </div>
       ))}
     </div>
@@ -158,7 +156,7 @@ function OneLineVerdict({ text, isDark }) {
       </span>
       <div className="min-w-0">
         <p className="font-bold text-[var(--color-primary)]">One-line verdict:</p>
-        <p className={`mt-1 text-[var(--color-text-muted)] ${sectionBody}`}>{cleanText(text)}</p>
+        <p className={`mt-1 text-[var(--color-text-muted)] ${sectionBody}`} dangerouslySetInnerHTML={{ __html: cleanText(text) }} />
       </div>
       <span className="ml-auto hidden text-4xl font-bold text-[var(--color-primary)] md:block">&quot;</span>
     </div>
@@ -207,9 +205,7 @@ export default function OwnershipVerdict({ data }) {
             <div className="mt-3">
               <MStripe />
             </div>
-            <p className={`mt-5 max-w-[470px] text-[var(--color-text-muted)] ${sectionDescription}`}>
-              {cleanText(data.subHeadline)}
-            </p>
+            <p className={`mt-5 max-w-[470px] text-[var(--color-text-muted)] ${sectionDescription}`} dangerouslySetInnerHTML={{ __html: cleanText(data.subHeadline) }} />
 
             <div className="mt-8 hidden h-[360px] md:block" />
             {data.oneLineVerdict ? (

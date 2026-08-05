@@ -98,9 +98,7 @@ function DesktopRows({ block, isDark }) {
           <div className={`border-r px-6 py-4 text-[1rem] font-bold leading-tight ${isDark ? "border-[#223343] text-white" : "border-[#e5e9ef] text-[#071827]"}`}>
             {row.title}
           </div>
-          <p className={`border-r px-6 py-3 text-[0.82rem] leading-[1.25] ${isDark ? "border-[#223343] text-white/76" : "border-[#e5e9ef] text-[#171f2a]"}`}>
-            {row.description}
-          </p>
+          <p className={`border-r px-6 py-3 text-[0.82rem] leading-[1.25] ${isDark ? "border-[#223343] text-white/76" : "border-[#e5e9ef] text-[#171f2a]"}`} dangerouslySetInnerHTML={{ __html: row.description }} />
           <div className={`border-r px-6 py-4 ${isDark ? "border-[#223343]" : "border-[#e5e9ef]"}`}>
             <Severity severity={row.severity} />
           </div>
@@ -130,7 +128,7 @@ function MobileRows({ block, isDark }) {
               </div>
             </div>
           </div>
-          <p className={`mt-3 text-[0.86rem] leading-[1.48] ${isDark ? "text-white/78" : "text-[#07113a]"}`}>{row.description}</p>
+          <p className={`mt-3 text-[0.86rem] leading-[1.48] ${isDark ? "text-white/78" : "text-[#07113a]"}`} dangerouslySetInnerHTML={{ __html: row.description }} />
           <Link href={row.link.href} className="mt-4 inline-flex items-center gap-3 text-[0.95rem] font-bold text-[var(--color-primary)]">
             {row.link.label}
             <Icon name="arrow" className="h-5 w-5" />
@@ -160,7 +158,7 @@ function UrgencyKey({ items, isDark }) {
           <div key={item.label} className={`flex items-center gap-3 text-[0.88rem] ${isDark ? "text-white/84" : "text-[#071827]"}`}>
             <span className={`h-4 w-4 shrink-0 rounded-full ${(severityConfig[item.type] || severityConfig.monitor).dot}`} />
             <span>
-              <strong>{item.label}</strong> - {item.text}
+              <strong>{item.label}</strong> - <span dangerouslySetInnerHTML={{ __html: item.text }} />
             </span>
           </div>
         ))}
@@ -196,9 +194,7 @@ export default function HomeSec9({ data }) {
           <div className="mt-4">
             <MStripe />
           </div>
-          <p className={`mt-5 max-w-[665px] text-[0.92rem] leading-[1.55] md:text-[1rem] ${isDark ? "text-white/78" : "text-[#07113a] md:text-[#171f2a]"}`}>
-            {data.subHeadline}
-          </p>
+          <p className={`mt-5 max-w-[665px] text-[0.92rem] leading-[1.55] md:text-[1rem] ${isDark ? "text-white/78" : "text-[#07113a] md:text-[#171f2a]"}`} dangerouslySetInnerHTML={{ __html: data.subHeadline }} />
         </div>
 
         <div className="mt-8 -mx-4 grid gap-4 md:mx-0 md:mt-5">

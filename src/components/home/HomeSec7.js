@@ -126,7 +126,7 @@ function EngineRow({ row, isDark }) {
         <p className="text-[0.84rem] leading-[1.42]">
           <span className="font-medium">{row.verdict.label}</span>
           {" - "}
-          {cleanText(row.verdict.text)}
+          <span dangerouslySetInnerHTML={{ __html: cleanText(row.verdict.text) }} />
         </p>
       </div>
     </Link>
@@ -183,7 +183,7 @@ function LegendCard({ legend, isDark }) {
       </span>
       <span className="min-w-0 flex-1">
         <strong className="block text-[1rem]">{legend.title}</strong>
-        <span className={`mt-1 block text-[0.82rem] leading-[1.4] ${isDark ? "text-white/76" : "text-[#27384a]"}`}>{legend.text}</span>
+        <span className={`mt-1 block text-[0.82rem] leading-[1.4] ${isDark ? "text-white/76" : "text-[#27384a]"}`} dangerouslySetInnerHTML={{ __html: legend.text }} />
       </span>
       <Icon name="chevron" className="h-6 w-6 shrink-0" />
     </Link>
@@ -213,7 +213,7 @@ export default function HomeSec7({ data }) {
           <div className="mt-4">
             <MStripe />
           </div>
-          <p className={`mt-5 max-w-[610px] text-[0.94rem] leading-[1.55] md:text-[1.02rem] ${isDark ? "text-white/80" : "text-[#27384a]"}`}>{cleanText(data.subHeadline)}</p>
+          <p className={`mt-5 max-w-[610px] text-[0.94rem] leading-[1.55] md:text-[1.02rem] ${isDark ? "text-white/80" : "text-[#27384a]"}`} dangerouslySetInnerHTML={{ __html: cleanText(data.subHeadline) }} />
         </div>
 
         <div className="mt-8 md:hidden">
