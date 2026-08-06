@@ -32,13 +32,12 @@ function cleanText(text = "") {
 
 function splitTitle(title = "") {
   const clean = cleanText(title);
-  const [before, after = ""] = clean.split(/\s*(?:-|-)\s*What\s+/i);
-  const match = after.match(/^([0-9,+]+\s+UK Owners)(.*)$/);
+  const [before, after = ""] = clean.split(/\s*-\s*/);
 
   return {
     before: before || clean,
-    accent: match ? match[1] : "",
-    after: match ? match[2] : after,
+    accent: after,
+    after: "",
   };
 }
 
@@ -118,13 +117,13 @@ function RichText({ value, strongFirst = false }) {
           const [lead, ...rest] = part.text.split(":");
           return (
             <span key={`${part.text}-${index}`}>
-              <strong className="font-bold text-[var(--color-text)]">{lead}:</strong>
-              {rest.join(":")}
+              <strong className="font-bold text-[var(--color-text)]" dangerouslySetInnerHTML={{ __html: `${lead}:` }} />
+              <span dangerouslySetInnerHTML={{ __html: rest.join(":") }} />
             </span>
           );
         }
 
-        return <span key={`${part.text}-${index}`}>{part.text}</span>;
+        return <span key={`${part.text}-${index}`} dangerouslySetInnerHTML={{ __html: part.text }} />;
       })}
     </>
   );
@@ -147,7 +146,7 @@ function SignalTable({ rows }) {
           <div key={`${row.signal}-${index}`} className="grid grid-cols-[39%_28%_33%] border-t border-[var(--color-border)] text-[var(--color-text)] md:grid-cols-[32%_33%_35%]">
             <div className="flex items-center gap-2 px-3 py-4 md:gap-5 md:px-6">
               <CircleIcon small>{signalIconPaths[isEngine ? 1 : 0]}</CircleIcon>
-              <p className={`min-w-0 ${sectionTableText} font-bold leading-[1.25] md:text-[18px]`}>{cleanText(row.signal)}</p>
+              <p className={`min-w-0 ${sectionTableText} font-bold leading-[1.25] md:text-[18px]`} dangerouslySetInnerHTML={{ __html: cleanText(row.signal) }} />
             </div>
             <div className={`border-l border-[var(--color-border)] px-3 py-4 ${sectionTableText} leading-[1.35] md:px-6 md:text-[18px]`}>
               <RichText value={row.data} />
@@ -234,7 +233,7 @@ function PullQuote({ data }) {
         <div className="flex">
           <div>
             <p className="text-[15px] font-bold uppercase text-[var(--color-primary)]">Editorial Pull-Quote</p>
-            <h3 className="mt-2 max-w-[560px] text-[35px] font-bold leading-[1.15] text-[var(--color-text)] md:text-[50px]">{cleanText(data.title)}</h3>
+            <h3 className="mt-2 max-w-[560px] text-[35px] font-bold leading-[1.15] text-[var(--color-text)] md:text-[50px]" dangerouslySetInnerHTML={{ __html: cleanText(data.title) }} />
             <blockquote className="mt-4 max-w-[760px] text-[15px] leading-[1.55] text-[var(--color-text)] md:text-[16px]">
               &ldquo;<span dangerouslySetInnerHTML={{ __html: cleanText(data.quote) }} />&rdquo;
             </blockquote>
@@ -259,8 +258,13 @@ export default function MarketIntelligence({ data, quoteData }) {
         <div className="flex flex-col gap-5 md:flex-row md:items-center md:justify-between">
           <div>
             <h2 className={`max-w-[960px] ${sectionH2} tracking-normal text-[var(--color-text)]`}>
-              {title.before} {title.accent || title.after ? "\u2014 " : ""}
-              {title.accent ? <span className="text-[var(--color-primary)]">{title.accent}</span> : null}
+              {title.before}
+              {title.accent ? (
+                <>
+                  {" "}
+                  <span className="text-[var(--color-primary)]">- {title.accent}</span>
+                </>
+              ) : null}
               {title.after}
             </h2>
             <div className="mt-3">
@@ -270,7 +274,7 @@ export default function MarketIntelligence({ data, quoteData }) {
           <div className="flex min-w-[210px] items-center gap-4 rounded-md border border-[var(--color-border)] bg-[var(--color-surface-raised)] p-5 shadow-[0_8px_22px_var(--color-shadow)]">
             <CircleIcon>{<path d="M16 11a4 4 0 0 1-8 0m11 8a7 7 0 0 0-14 0m15-11a3 3 0 1 1-2.8-3M4 8a3 3 0 1 0 2.8-3" />}</CircleIcon>
             <div>
-              <p className="text-[35px] font-bold leading-none text-[var(--color-text)] md:text-[50px]">{metricFromTitle(data.h2)}</p>
+              <p className="text-[28px] font-bold leading-none text-[var(--color-text)] md:text-[40px]">{metricFromTitle(data.h2)}</p>
               <p className={`mt-2 ${sectionDescription} text-[var(--color-text-muted)]`}>Total Enquiries in 2025</p>
               <p className="mt-1 text-[15px] font-medium text-[var(--color-primary)]">[BMW-VERIFIED]</p>
             </div>

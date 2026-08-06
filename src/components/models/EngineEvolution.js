@@ -98,7 +98,7 @@ function EngineBadges({ engines }) {
           <span className="flex h-14 w-16 items-center justify-center rounded-md bg-[var(--color-page-soft)] text-[var(--color-primary)] md:h-16 md:w-20">
             <Icon type="engine" className="h-8 w-8" />
           </span>
-          <strong className="mt-1 text-[15px] text-[var(--color-text)]">{engine}</strong>
+          <strong className="mt-1 text-[15px] text-[var(--color-text)]" dangerouslySetInnerHTML={{ __html: engine }} />
         </div>
       ))}
     </div>
@@ -122,17 +122,17 @@ function DesktopTable({ eras, columns }) {
           <div key={era.era} className="grid grid-cols-[19%_10%_26%_22%_23%] border-t border-[var(--color-border)] text-[var(--color-text)]">
             <div className="border-r border-[var(--color-border)] px-5 py-4">
               <h3 className="text-[18px] font-bold leading-tight text-[var(--color-primary)] md:text-[20px]">
-                {title.lead}
+                <span dangerouslySetInnerHTML={{ __html: title.lead }} />
                 {title.detail ? (
                   <>
                     <br />
-                    {title.detail}
+                    <span dangerouslySetInnerHTML={{ __html: title.detail }} />
                   </>
                 ) : null}
               </h3>
               <img src={carImages[index] || carImages[0]} alt="" className="mt-2 h-[60px] w-full object-contain md:h-[72px]" loading="lazy" />
             </div>
-            <div className={`flex items-center justify-center border-r border-[var(--color-border)] px-4 py-4 ${sectionTableText} font-bold`}>{cleanText(era.years)}</div>
+            <div className={`flex items-center justify-center border-r border-[var(--color-border)] px-4 py-4 ${sectionTableText} font-bold`} dangerouslySetInnerHTML={{ __html: cleanText(era.years) }} />
             <div className="flex items-center justify-center border-r border-[var(--color-border)] px-4 py-4">
               <EngineBadges engines={era.keyEngines} />
             </div>
@@ -165,7 +165,7 @@ function MobileAccordion({ eras }) {
               <img src={carImages[index] || carImages[0]} alt="" className="h-[60px] w-[94px] shrink-0 object-contain md:h-[72px] md:w-[110px]" loading="lazy" />
               <span className="min-w-0 flex-1">
                 <strong className="block text-[18px] leading-tight text-[var(--color-primary)] md:text-[20px]">{title.lead}{title.detail ? ` - ${title.detail}` : ""}</strong>
-                <span className={`mt-1 block ${sectionTableText} text-[var(--color-text-muted)]`}>{cleanText(era.years)}</span>
+                <span className={`mt-1 block ${sectionTableText} text-[var(--color-text-muted)]`} dangerouslySetInnerHTML={{ __html: cleanText(era.years) }} />
               </span>
               <span className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-full ${open ? "bg-[var(--color-primary)] text-white" : "bg-[var(--color-primary-soft)] text-[var(--color-primary)]"}`}>
                 <Icon type={open ? "chevronUp" : "chevron"} className="h-6 w-6" />
@@ -179,7 +179,7 @@ function MobileAccordion({ eras }) {
                     <span className="text-[var(--color-primary)]"><Icon type="engine" className="h-8 w-8" /></span>
                     Key Engines
                   </div>
-                  <div className={`p-4 ${sectionTableText} text-[var(--color-text)]`}>{cleanText(era.keyEngines)}</div>
+                  <div className={`p-4 ${sectionTableText} text-[var(--color-text)]`} dangerouslySetInnerHTML={{ __html: cleanText(era.keyEngines) }} />
                 </div>
                 <div className="grid grid-cols-[36%_64%] border-b border-[var(--color-border)]">
                   <div className="flex items-center gap-3 border-r border-[var(--color-border)] p-4 font-bold">

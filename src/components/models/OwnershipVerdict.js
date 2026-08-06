@@ -125,17 +125,17 @@ function VerdictTable({ metrics, isDark }) {
         isDark ? "border-white/20 bg-[rgba(2,13,25,0.74)]" : "border-[var(--color-border)] bg-[rgba(255,255,255,0.84)]"
       }`}
     >
-      <div className={`grid grid-cols-[40%_60%] border-b border-[var(--color-border)] px-4 py-3 font-semibold md:grid-cols-[42%_58%] md:px-5 ${sectionTableText}`}>
+      <div className={`grid grid-cols-[40%_60%] border-b border-[var(--color-border)] px-3 py-2 font-semibold md:grid-cols-[42%_58%] md:px-3 md:py-2.5 ${sectionTableText} text-[13px]`}>
         <span>Verdict Metric</span>
         <span>Our Call</span>
       </div>
       {metrics.map((row) => (
         <div key={row.metric} className="grid grid-cols-[40%_60%] border-b border-[var(--color-border)] last:border-b-0 md:grid-cols-[42%_58%]">
-          <div className="flex items-center gap-3 border-r border-[var(--color-border)] px-4 py-3 md:px-5">
+          <div className="flex items-center gap-2 border-r border-[var(--color-border)] px-3 py-2 md:px-3 md:py-2.5">
             <MetricIcon metric={row.metric} />
-            <span className={`font-medium leading-[1.25] ${sectionTableText}`}>{row.metric}</span>
+            <span className={`font-medium leading-[1.25] ${sectionTableText} text-[13px]`} dangerouslySetInnerHTML={{ __html: cleanText(row.metric) }} />
           </div>
-          <p className={`px-4 py-3 text-[var(--color-text-muted)] md:px-5 ${sectionTableText}`} dangerouslySetInnerHTML={{ __html: cleanText(row.ourCall) }} />
+          <p className={`px-3 py-2 text-[var(--color-text-muted)] md:px-3 md:py-2.5 ${sectionTableText} text-[13px]`} dangerouslySetInnerHTML={{ __html: cleanText(row.ourCall) }} />
         </div>
       ))}
     </div>
@@ -173,23 +173,6 @@ export default function OwnershipVerdict({ data }) {
 
   return (
     <section className="relative overflow-hidden bg-[var(--color-page)] py-7 text-[var(--color-text)] md:py-9">
-      <div className="absolute inset-0">
-        <Image
-          src="/model/Section 2-bg.webp"
-          alt=""
-          fill
-          className="object-cover object-[35%_center] md:object-center"
-          sizes="100vw"
-        />
-        <div
-          className={`absolute inset-0 ${
-            isDark
-              ? "bg-[linear-gradient(90deg,rgba(2,7,11,0.98)_0%,rgba(2,7,11,0.9)_42%,rgba(2,7,11,0.68)_100%)]"
-              : "bg-[linear-gradient(90deg,rgba(255,255,255,0.98)_0%,rgba(255,255,255,0.88)_40%,rgba(255,255,255,0.68)_100%)]"
-          }`}
-        />
-      </div>
-
       <div className="relative mx-auto w-full max-w-8xl">
         <div className="grid gap-6 lg:grid-cols-[0.7fr_1fr] lg:items-start">
           <div>
@@ -205,9 +188,24 @@ export default function OwnershipVerdict({ data }) {
             <div className="mt-3">
               <MStripe />
             </div>
+            <div className="relative mt-4 overflow-hidden rounded-md border border-[var(--color-border)] bg-[rgba(255,255,255,0.18)] shadow-[0_10px_24px_var(--color-shadow)] md:mt-5 md:h-[260px]">
+              <Image
+                src="/model/Section 2-bg.webp"
+                alt=""
+                fill
+                className="object-cover object-[35%_center] md:object-center"
+                sizes="(min-width: 768px) 640px, 100vw"
+              />
+              <div
+                className={`absolute inset-0 ${
+                  isDark
+                    ? "bg-[linear-gradient(180deg,rgba(2,13,25,0.05)_0%,rgba(2,13,25,0.35)_100%)]"
+                    : "bg-[linear-gradient(180deg,rgba(255,255,255,0.05)_0%,rgba(255,255,255,0.18)_100%)]"
+                }`}
+              />
+            </div>
             <p className={`mt-5 max-w-[470px] text-[var(--color-text-muted)] ${sectionDescription}`} dangerouslySetInnerHTML={{ __html: cleanText(data.subHeadline) }} />
 
-            <div className="mt-8 hidden h-[360px] md:block" />
             {data.oneLineVerdict ? (
               <div className="mt-5 hidden md:block">
                 <OneLineVerdict text={data.oneLineVerdict} isDark={isDark} />

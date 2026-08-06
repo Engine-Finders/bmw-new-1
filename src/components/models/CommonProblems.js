@@ -67,7 +67,7 @@ function SeverityBadge({ severity }) {
   return (
     <span className={`inline-flex items-center gap-2 text-[15px] font-bold ${classes.text}`}>
       <span className={`h-3 w-3 rounded-full ${classes.dot}`} />
-      {cleanText(severity?.label)}
+      <span dangerouslySetInnerHTML={{ __html: cleanText(severity?.label) }} />
     </span>
   );
 }
@@ -100,7 +100,7 @@ function ProblemCard({ problem, index }) {
       <ProblemImage index={index} />
       <div className="flex min-w-0 flex-col p-3 md:p-5">
         <div className="flex items-start justify-between gap-4">
-        <h3 className={`${sectionTableText} font-bold leading-[1.12] text-[var(--color-text)] md:text-[18px]`}>{cleanText(problem.issue)}</h3>
+        <h3 className={`${sectionTableText} font-bold leading-[1.12] text-[var(--color-text)] md:text-[18px]`} dangerouslySetInnerHTML={{ __html: cleanText(problem.issue) }} />
           <div className="hidden shrink-0 md:block">
             <SeverityBadge severity={problem.severity} />
           </div>
@@ -134,7 +134,7 @@ function UrgencyKey({ items }) {
             <div key={label} className="flex gap-3 border-[var(--color-border)] md:border-l md:pl-6">
               <span className={`mt-1 h-4 w-4 shrink-0 rounded-full ${dot}`} />
               <p className="text-[15px] leading-[1.35] text-[var(--color-text-muted)]">
-                <strong className="block text-[var(--color-text)]">{label}</strong>
+                <strong className="block text-[var(--color-text)]" dangerouslySetInnerHTML={{ __html: label }} />
                 <span dangerouslySetInnerHTML={{ __html: cleanText(item.text) }} />
               </p>
             </div>

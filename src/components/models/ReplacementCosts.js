@@ -187,12 +187,12 @@ function CostTable({ table }) {
         <tbody>
           {(table.rows || []).map((row) => (
             <tr key={`${row.model}-${row.engineCode}`}>
-              <td className="border-r border-t border-[var(--color-border)] px-3 py-3 font-bold md:px-5 md:py-2">{cleanText(row.model)}</td>
-              <td className="border-r border-t border-[var(--color-border)] px-3 py-3 md:px-5 md:py-2">{cleanText(row.engineCode)}</td>
-              <td className="border-r border-t border-[var(--color-border)] px-3 py-3 text-[var(--color-primary)] md:px-5 md:py-2">{cleanText(row.usedSupply)}</td>
-              <td className="border-r border-t border-[var(--color-border)] px-3 py-3 text-[var(--color-primary)] md:px-5 md:py-2">{cleanText(row.reconditionedSupply)}</td>
-              <td className="border-r border-t border-[var(--color-border)] px-3 py-3 text-[var(--color-primary)] md:px-5 md:py-2">{cleanText(row.rebuiltSupply)}</td>
-              <td className="border-t border-[var(--color-border)] px-3 py-3 text-center md:px-5 md:py-2">{cleanText(row.labourHours)}</td>
+              <td className="border-r border-t border-[var(--color-border)] px-3 py-3 font-bold md:px-5 md:py-2" dangerouslySetInnerHTML={{ __html: cleanText(row.model) }} />
+              <td className="border-r border-t border-[var(--color-border)] px-3 py-3 md:px-5 md:py-2" dangerouslySetInnerHTML={{ __html: cleanText(row.engineCode) }} />
+              <td className="border-r border-t border-[var(--color-border)] px-3 py-3 text-[var(--color-primary)] md:px-5 md:py-2" dangerouslySetInnerHTML={{ __html: cleanText(row.usedSupply) }} />
+              <td className="border-r border-t border-[var(--color-border)] px-3 py-3 text-[var(--color-primary)] md:px-5 md:py-2" dangerouslySetInnerHTML={{ __html: cleanText(row.reconditionedSupply) }} />
+              <td className="border-r border-t border-[var(--color-border)] px-3 py-3 text-[var(--color-primary)] md:px-5 md:py-2" dangerouslySetInnerHTML={{ __html: cleanText(row.rebuiltSupply) }} />
+              <td className="border-t border-[var(--color-border)] px-3 py-3 text-center md:px-5 md:py-2" dangerouslySetInnerHTML={{ __html: cleanText(row.labourHours) }} />
             </tr>
           ))}
         </tbody>
@@ -208,8 +208,8 @@ function DesktopGenerationRow({ table }) {
   return (
     <div className="grid gap-0 md:grid-cols-[260px_minmax(0,1fr)]">
       <div className="border border-r-0 border-[var(--color-border)] bg-[var(--color-surface-raised)] p-4 md:rounded-l-md">
-        <h3 className="text-[18px] font-bold leading-[1.12] text-[var(--color-primary)] md:text-[20px]">{label}</h3>
-        <p className={`mt-1 ${sectionTableText}`}>{years}</p>
+        <h3 className="text-[18px] font-bold leading-[1.12] text-[var(--color-primary)] md:text-[20px]" dangerouslySetInnerHTML={{ __html: label }} />
+        <p className={`mt-1 ${sectionTableText}`} dangerouslySetInnerHTML={{ __html: years }} />
         <div className="mt-2 h-[72px] overflow-hidden md:h-[84px]">
           <img src={carImages[key]} alt="" className="h-full w-full object-contain" loading="lazy" />
         </div>
