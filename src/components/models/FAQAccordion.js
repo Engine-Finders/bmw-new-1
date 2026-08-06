@@ -1,6 +1,6 @@
 import Link from "next/link";
 import MStripe from "@/components/reusableComponents/MStripe";
-import { sectionBody, sectionButton, sectionH2, sectionTableText } from "@/components/models/sectionTypography";
+import { sectionBody, sectionButton, sectionTableText } from "@/components/models/sectionTypography";
 
 function cleanText(text = "") {
   return text
@@ -47,16 +47,18 @@ function Icon({ name, className = "h-6 w-6" }) {
 function FaqItem({ item, index }) {
   return (
     <details className="group overflow-hidden rounded-md border border-[var(--color-border)] bg-[var(--color-surface-raised)] shadow-[0_6px_16px_var(--color-shadow)]">
-      <summary className="grid cursor-pointer list-none grid-cols-[auto_1fr_auto] items-center gap-4 px-4 py-4 marker:hidden md:px-5">
-        <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded bg-[var(--color-primary)] text-[16px] font-bold leading-none text-white">
+      <summary className="grid cursor-pointer list-none grid-cols-[auto_1fr_auto] items-center gap-3 px-4 py-3.5 marker:hidden md:px-4">
+        <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded bg-[var(--color-primary)] text-[14px] font-bold leading-none text-white">
           {item.id || index + 1}
         </span>
-        <h3 className={`font-bold text-[var(--color-text)] ${sectionTableText} md:text-[18px]`} dangerouslySetInnerHTML={{ __html: cleanText(item.question) }} />
-        <svg aria-hidden="true" viewBox="0 0 24 24" className="h-5 w-5 shrink-0 text-[var(--color-text-muted)] transition-transform duration-200 group-open:rotate-180" fill="none" stroke="currentColor" strokeWidth="2">
+        <h3 className="font-bold text-[15px] leading-[1.15] text-[var(--color-text)] md:text-[17px]">{cleanText(item.question)}</h3>
+        <svg aria-hidden="true" viewBox="0 0 24 24" className="h-4 w-4 shrink-0 text-[var(--color-text-muted)] transition-transform duration-200 group-open:rotate-180" fill="none" stroke="currentColor" strokeWidth="2">
           <path d="m6 9 6 6 6-6" />
         </svg>
       </summary>
-      <div className={`border-t border-[var(--color-border)] px-4 pb-4 pt-3 text-[var(--color-text-muted)] md:px-5 ${sectionBody}`} dangerouslySetInnerHTML={{ __html: cleanText(item.answer) }} />
+      <div className={`border-t border-[var(--color-border)] px-4 pb-4 pt-2.5 text-[var(--color-text-muted)] md:px-4 ${sectionBody}`}>
+        {cleanText(item.answer)}
+      </div>
     </details>
   );
 }
@@ -70,8 +72,8 @@ export default function FAQAccordion({ data }) {
   const columns = [items.slice(0, midpoint), items.slice(midpoint)];
 
   return (
-    <section className="rounded-md border border-[var(--color-border)] bg-[var(--color-surface-raised)] p-5 text-[var(--color-text)] shadow-[0_10px_30px_var(--color-shadow)] md:p-8">
-      <h2 className={`max-w-[980px] font-bold tracking-normal text-[var(--color-text)] ${sectionH2}`}>
+    <section className="rounded-md border border-[var(--color-border)] bg-[var(--color-surface-raised)] p-4 text-[var(--color-text)] shadow-[0_10px_30px_var(--color-shadow)] md:p-6">
+      <h2 className="max-w-[980px] text-[29px] font-bold leading-[1.08] tracking-normal text-[var(--color-text)] md:text-[45px]">
         {title.before}
         {title.accent ? (
           <>
@@ -84,7 +86,7 @@ export default function FAQAccordion({ data }) {
         <MStripe />
       </div>
 
-      <div className="mt-6 grid gap-3 lg:grid-cols-2 lg:gap-x-8">
+      <div className="mt-5 grid gap-3 lg:grid-cols-2 lg:gap-x-6">
         {columns.map((column, columnIndex) => (
           <div key={columnIndex} className="grid gap-3">
             {column.map((item, index) => (
@@ -94,21 +96,21 @@ export default function FAQAccordion({ data }) {
         ))}
       </div>
 
-      <div className="mt-6 flex flex-col gap-5 rounded-md bg-[var(--color-page-soft)] p-5 md:flex-row md:items-center md:justify-between md:p-6">
-        <div className="flex gap-5">
-          <span className="flex h-16 w-16 shrink-0 items-center justify-center rounded-full bg-[var(--color-primary)] text-white md:h-20 md:w-20">
-            <Icon name="document" className="h-9 w-9 md:h-11 md:w-11" />
+      <div className="mt-5 flex flex-col gap-4 rounded-md bg-[var(--color-page-soft)] p-4 md:flex-row md:items-center md:justify-between md:p-5">
+        <div className="flex gap-4">
+          <span className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-[var(--color-primary)] text-white md:h-16 md:w-16">
+            <Icon name="document" className="h-8 w-8 md:h-9 md:w-9" />
           </span>
           <div>
-            <h3 className="text-[20px] font-bold leading-tight text-[var(--color-text)] md:text-[22px]">Need a head-to-head comparison?</h3>
-            <p className={`mt-1 max-w-[620px] text-[var(--color-text-muted)] ${sectionBody} md:text-[18px]`}>
+            <h3 className="text-[18px] font-bold leading-tight text-[var(--color-text)] md:text-[20px]">Need a head-to-head comparison?</h3>
+            <p className={`mt-1 max-w-[620px] text-[var(--color-text-muted)] ${sectionBody} md:text-[16px]`}>
               Read our in-depth BMW 3 Series vs 5 Series reliability guide.
             </p>
           </div>
         </div>
-        <Link href="#" className={`inline-flex min-h-12 shrink-0 items-center justify-center gap-5 rounded-md bg-[var(--color-primary)] px-6 py-3 font-bold text-white shadow-[0_12px_28px_var(--color-shadow)] transition-all duration-200 hover:text-black md:min-w-[330px] ${sectionButton}`}>
+        <Link href="#" className={`inline-flex min-h-12 shrink-0 items-center justify-center gap-4 rounded-md bg-[var(--color-primary)] px-5 py-3 font-bold text-white shadow-[0_12px_28px_var(--color-shadow)] transition-all duration-200 hover:text-black md:min-w-[300px] ${sectionButton}`}>
           Read the Full Head-to-Head
-          <Icon className="h-7 w-7" />
+          <Icon className="h-6 w-6" />
         </Link>
       </div>
     </section>

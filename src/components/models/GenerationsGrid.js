@@ -154,11 +154,11 @@ function GenerationImage({ code, large = false }) {
         onError={(event) => {
           event.currentTarget.src = defaultCarImage;
         }}
-        className={`max-h-full max-w-full object-contain mix-blend-multiply ${large ? "w-[86%]" : "w-[78%]"}`}
-      />
-    </div>
-  );
-}
+        className={`max-h-full max-w-full object-contain ${large ? "w-[86%]" : "w-[78%]"}`}
+        />
+      </div>
+    );
+  }
 
 function GenerationCard({ card, index, featured = false, onToggle }) {
   const title = splitCardTitle(card.title);
@@ -168,7 +168,7 @@ function GenerationCard({ card, index, featured = false, onToggle }) {
 
   return (
     <article
-      className={`rounded-md border bg-white p-3 text-[var(--color-text)] shadow-[0_8px_22px_var(--color-shadow)] ${
+      className={`rounded-md border bg-[var(--color-surface-raised)] p-3 text-[var(--color-text)] shadow-[0_8px_22px_var(--color-shadow)] ${
         featured ? "border-[rgba(7,95,216,0.7)] md:col-span-2" : "border-[var(--color-border)]"
       }`}
     >
@@ -247,7 +247,7 @@ function MobileGenerationRow({ card, index, onToggle }) {
     <button
       type="button"
       onClick={onToggle}
-      className="flex min-h-[86px] w-full items-center gap-3 rounded-md border border-[var(--color-border)] bg-white p-3 text-left text-[var(--color-text)]"
+      className="flex min-h-[86px] w-full items-center gap-3 rounded-md border border-[var(--color-border)] bg-[var(--color-surface-raised)] p-3 text-left text-[var(--color-text)]"
     >
       <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-md bg-[var(--color-primary)] text-[0.8rem] font-bold text-white shadow-sm">
         {index + 1}
@@ -285,7 +285,7 @@ function ComparisonTable({ rangeTable }) {
   const recommendation = cleanText(rows[4]?.model || "The 3 Series we recommend for daily ownership");
 
   return (
-    <div className="rounded-md border border-[var(--color-border)] bg-[var(--color-surface)] p-3 shadow-[0_8px_22px_var(--color-shadow)]">
+    <div className="rounded-md border border-[var(--color-border)] bg-[var(--color-surface-raised)] p-3 shadow-[0_8px_22px_var(--color-shadow)]">
       <div className="mb-3 flex items-center gap-3">
         <span className="flex h-7 w-7 items-center justify-center rounded-md bg-[var(--color-primary-soft)]">
           <TableIcon type="scale" />
@@ -348,7 +348,7 @@ export default function GenerationsGrid({ data }) {
   }
 
   return (
-    <section data-theme-mode={theme} className="bg-white py-5 text-[var(--color-text)] md:py-6">
+    <section data-theme-mode={theme} className="bg-[var(--color-page)] py-5 text-[var(--color-text)] md:py-6">
       <div>
       <h2 className="max-w-[640px] text-[29px] font-bold leading-[1.08] tracking-normal md:text-[45px]">
           {title.main}

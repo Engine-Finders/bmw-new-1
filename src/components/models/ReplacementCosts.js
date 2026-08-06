@@ -2,7 +2,7 @@
 
 import { useMemo, useState } from "react";
 import MStripe from "@/components/reusableComponents/MStripe";
-import { sectionDescription, sectionH2, sectionTableText } from "@/components/models/sectionTypography";
+import { sectionDescription, sectionTableText } from "@/components/models/sectionTypography";
 
 const carImages = {
   classic: "https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=760&q=85",
@@ -155,12 +155,12 @@ function TrustStrip() {
   return (
     <div className="grid grid-cols-4 overflow-hidden rounded-md border border-[var(--color-border)] bg-[var(--color-surface-raised)] shadow-[0_8px_24px_var(--color-shadow)]">
       {trustItems.map((item) => (
-        <div key={item.title} className="flex flex-col items-center justify-center border-r border-[var(--color-border)] px-2 py-5 text-center last:border-r-0 md:px-7">
+        <div key={item.title} className="flex flex-col items-center justify-center border-r border-[var(--color-border)] px-1.5 py-3 text-center last:border-r-0 md:px-4 md:py-3.5">
           <span className="text-[var(--color-primary)]">
-            <Icon type={item.icon} />
+            <Icon type={item.icon} className="h-8 w-8 md:h-9 md:w-9" />
           </span>
-          <strong className="mt-3 text-[15px] leading-tight text-[var(--color-text)] md:text-[18px]">{item.title}</strong>
-          <span className="mt-1 text-[15px] leading-tight text-[var(--color-text-muted)] md:text-[16px]">{item.text}</span>
+          <strong className="mt-1.5 text-[13px] leading-[1.1] text-[var(--color-text)] md:text-[15px]">{item.title}</strong>
+          <span className="mt-0.5 text-[12px] leading-[1.1] text-[var(--color-text-muted)] md:text-[13px]">{item.text}</span>
         </div>
       ))}
     </div>
@@ -174,11 +174,11 @@ function CostTable({ table }) {
 
   return (
     <div className="overflow-hidden rounded-md border border-[var(--color-border)] bg-[var(--color-surface)]">
-      <table className="w-full border-collapse text-left text-[15px] text-[var(--color-text)]">
+      <table className="w-full border-collapse text-left text-[14px] text-[var(--color-text)] md:text-[15px]">
         <thead>
           <tr className="bg-[var(--color-primary-strong)] text-white">
             {columns.map((column) => (
-              <th key={column} className="border-r border-white/20 px-3 py-3 text-left font-bold last:border-r-0 md:px-5 md:py-2">
+              <th key={column} className="border-r border-white/20 px-2 py-2 text-left font-bold last:border-r-0 md:px-4 md:py-2">
                 {column}
               </th>
             ))}
@@ -187,12 +187,12 @@ function CostTable({ table }) {
         <tbody>
           {(table.rows || []).map((row) => (
             <tr key={`${row.model}-${row.engineCode}`}>
-              <td className="border-r border-t border-[var(--color-border)] px-3 py-3 font-bold md:px-5 md:py-2" dangerouslySetInnerHTML={{ __html: cleanText(row.model) }} />
-              <td className="border-r border-t border-[var(--color-border)] px-3 py-3 md:px-5 md:py-2" dangerouslySetInnerHTML={{ __html: cleanText(row.engineCode) }} />
-              <td className="border-r border-t border-[var(--color-border)] px-3 py-3 text-[var(--color-primary)] md:px-5 md:py-2" dangerouslySetInnerHTML={{ __html: cleanText(row.usedSupply) }} />
-              <td className="border-r border-t border-[var(--color-border)] px-3 py-3 text-[var(--color-primary)] md:px-5 md:py-2" dangerouslySetInnerHTML={{ __html: cleanText(row.reconditionedSupply) }} />
-              <td className="border-r border-t border-[var(--color-border)] px-3 py-3 text-[var(--color-primary)] md:px-5 md:py-2" dangerouslySetInnerHTML={{ __html: cleanText(row.rebuiltSupply) }} />
-              <td className="border-t border-[var(--color-border)] px-3 py-3 text-center md:px-5 md:py-2" dangerouslySetInnerHTML={{ __html: cleanText(row.labourHours) }} />
+              <td className="border-r border-t border-[var(--color-border)] px-2 py-2 font-bold md:px-4 md:py-2">{cleanText(row.model)}</td>
+              <td className="border-r border-t border-[var(--color-border)] px-2 py-2 md:px-4 md:py-2">{cleanText(row.engineCode)}</td>
+              <td className="border-r border-t border-[var(--color-border)] px-2 py-2 text-[var(--color-primary)] md:px-4 md:py-2">{cleanText(row.usedSupply)}</td>
+              <td className="border-r border-t border-[var(--color-border)] px-2 py-2 text-[var(--color-primary)] md:px-4 md:py-2">{cleanText(row.reconditionedSupply)}</td>
+              <td className="border-r border-t border-[var(--color-border)] px-2 py-2 text-[var(--color-primary)] md:px-4 md:py-2">{cleanText(row.rebuiltSupply)}</td>
+              <td className="border-t border-[var(--color-border)] px-2 py-2 text-center md:px-4 md:py-2">{cleanText(row.labourHours)}</td>
             </tr>
           ))}
         </tbody>
@@ -207,11 +207,11 @@ function DesktopGenerationRow({ table }) {
 
   return (
     <div className="grid gap-0 md:grid-cols-[260px_minmax(0,1fr)]">
-      <div className="border border-r-0 border-[var(--color-border)] bg-[var(--color-surface-raised)] p-4 md:rounded-l-md">
-        <h3 className="text-[18px] font-bold leading-[1.12] text-[var(--color-primary)] md:text-[20px]" dangerouslySetInnerHTML={{ __html: label }} />
-        <p className={`mt-1 ${sectionTableText}`} dangerouslySetInnerHTML={{ __html: years }} />
-        <div className="mt-2 h-[72px] overflow-hidden md:h-[84px]">
-          <img src={carImages[key]} alt="" className="h-full w-full object-contain" loading="lazy" />
+      <div className="border border-r-0 border-[var(--color-border)] bg-[var(--color-surface-raised)] p-3.5 md:rounded-l-md md:p-4">
+        <h3 className="text-[17px] font-bold leading-[1.08] text-[var(--color-primary)] md:text-[19px]">{label}</h3>
+        <p className={`mt-1 ${sectionTableText}`}>{years}</p>
+        <div className="mt-2 h-[82px] overflow-hidden rounded-md md:h-[96px]">
+          <img src={carImages[key]} alt="" className="h-full w-full object-cover object-center" loading="lazy" />
         </div>
       </div>
       <CostTable table={table} />
@@ -240,33 +240,33 @@ function MobileTabs({ tables }) {
                 key={table.title}
                 type="button"
                 onClick={() => setActiveIndex(index)}
-                className={`min-w-[150px] border-r border-[var(--color-border)] px-4 py-4 text-center last:border-r-0 transition-all duration-200 hover:text-black hover:shadow-[0_12px_24px_rgba(0,0,0,0.14)] ${
+                className={`min-w-[150px] border-r border-[var(--color-border)] px-3 py-3.5 text-center last:border-r-0 transition-all duration-200 hover:text-black hover:shadow-[0_12px_24px_rgba(0,0,0,0.14)] ${
                   selected ? "bg-[var(--color-primary)] text-white" : "bg-[var(--color-surface)] text-[var(--color-text)]"
                 }`}
               >
-                <span className="block text-[0.98rem] font-bold leading-tight">{label.label}</span>
-                <span className="mt-1 block text-[15px] leading-tight">{label.years}</span>
+                <span className="block text-[0.95rem] font-bold leading-tight">{label.label}</span>
+                <span className="mt-1 block text-[14px] leading-tight">{label.years}</span>
               </button>
             );
           })}
         </div>
       </div>
 
-      <article className="rounded-b-md border border-t-0 border-[var(--color-border)] bg-[var(--color-surface-raised)] p-4">
-        <h3 className="text-[35px] font-bold leading-tight text-[var(--color-text)] md:text-[50px]">
+      <article className="rounded-b-md border border-t-0 border-[var(--color-border)] bg-[var(--color-surface-raised)] p-3.5">
+        <h3 className="text-[32px] font-bold leading-tight text-[var(--color-text)] md:text-[46px]">
           {active.label} <span className="text-[var(--color-primary)]">({active.years})</span>
         </h3>
-        <div className="mt-3 h-[190px]">
-          <img src={carImages[key]} alt="" className="h-full w-full object-contain" loading="lazy" />
+        <div className="mt-2.5 h-[190px] overflow-hidden rounded-md">
+          <img src={carImages[key]} alt="" className="h-full w-full object-cover object-center" loading="lazy" />
         </div>
-        <div className="mt-4 overflow-x-auto">
+        <div className="mt-3 overflow-x-auto">
           <div className="min-w-[720px]">
             <CostTable table={activeTable} />
           </div>
         </div>
-        <div className="mt-4 flex items-center gap-3 rounded-md bg-[var(--color-page-soft)] px-4 py-3 text-[15px] text-[var(--color-text)]">
+        <div className="mt-3 flex items-center gap-3 rounded-md bg-[var(--color-page-soft)] px-3 py-2.5 text-[14px] leading-[1.35] text-[var(--color-text)]">
           <span className="shrink-0 text-[var(--color-primary)]">
-            <Icon type="info" className="h-7 w-7" />
+            <Icon type="info" className="h-6 w-6" />
           </span>
           Prices are supply only. Labour and ancillary parts extra.
         </div>
@@ -278,34 +278,34 @@ function MobileTabs({ tables }) {
 function Notes({ parts }) {
   return (
     <div className="grid gap-4 md:grid-cols-[1.15fr_0.85fr]">
-      <div className="grid gap-4 rounded-md border border-[var(--color-border)] bg-[var(--color-surface-raised)] p-5 md:grid-cols-2">
-        <div className="flex flex-col gap-3 border-[var(--color-border)] md:border-r md:pr-6">
-          <div className="flex items-start gap-4">
+      <div className="grid gap-3 rounded-md border border-[var(--color-border)] bg-[var(--color-surface-raised)] p-4 md:grid-cols-2 md:gap-4">
+        <div className="flex flex-col gap-2.5 border-[var(--color-border)] md:border-r md:pr-5">
+          <div className="flex items-start gap-3.5">
             <span className="shrink-0 text-[var(--color-primary)]">
-              <Icon type="note" className="h-12 w-12" />
+              <Icon type="note" className="h-10 w-10" />
             </span>
-            <h3 className="font-bold text-[var(--color-primary)]">Important Notes</h3>
+            <h3 className="text-[16px] font-bold leading-[1.1] text-[var(--color-primary)] md:text-[17px]">Important Notes</h3>
           </div>
-          <p className="pl-16 text-[15px] leading-[1.5] text-[var(--color-text)] md:pl-0" dangerouslySetInnerHTML={{ __html: parts.important }} />
+          <p className="text-[13px] leading-[1.35] text-[var(--color-text)] md:text-[14px]">{parts.important}</p>
         </div>
-        <div className="flex flex-col gap-3">
-          <div className="flex items-start gap-4">
+        <div className="flex flex-col gap-2.5">
+          <div className="flex items-start gap-3.5">
             <span className="shrink-0 text-[var(--color-primary)]">
-              <Icon type="info" className="h-10 w-10" />
+              <Icon type="info" className="h-9 w-9" />
             </span>
-            <h3 className="font-bold text-[var(--color-primary)]">Labour Estimate</h3>
+            <h3 className="text-[16px] font-bold leading-[1.1] text-[var(--color-primary)] md:text-[17px]">Labour Estimate</h3>
           </div>
-          <p className="pl-14 text-[15px] leading-[1.5] text-[var(--color-text)] md:pl-0" dangerouslySetInnerHTML={{ __html: parts.labour }} />
+          <p className="text-[13px] leading-[1.35] text-[var(--color-text)] md:text-[14px]">{parts.labour}</p>
         </div>
       </div>
 
-      <div className="inline-flex w-fit max-w-[620px] flex-row gap-4 self-start rounded-md border border-[var(--color-border-strong)] bg-[var(--color-surface-raised)] p-4 text-[var(--color-text)] md:p-5">
-        <span className="hidden shrink-0 text-[var(--color-primary)] md:block">
-          <Icon type="crown" className="h-12 w-12 md:h-16 md:w-16" />
+      <div className="inline-flex w-fit max-w-[620px] flex-row gap-3 self-start rounded-md border border-[var(--color-border-strong)] bg-[var(--color-surface-raised)] p-3.5 text-[var(--color-text)] md:p-4">
+        <span className="shrink-0 text-[var(--color-primary)]">
+          <Icon type="crown" className="h-10 w-10 md:h-14 md:w-14" />
         </span>
         <div className="max-w-[540px]">
-          <h3 className="text-[24px] font-bold leading-[1.12] text-[var(--color-primary)] md:text-[30px]">The 3 Series rule - generation is everything:</h3>
-          <p className="mt-2 text-[14px] leading-[1.5] md:text-[15px]" dangerouslySetInnerHTML={{ __html: parts.rule.replace(/^The 3 Series rule - generation is everything:\s*/i, "") }} />
+          <h3 className="text-[22px] font-bold leading-[1.08] text-[var(--color-primary)] md:text-[26px]">The 3 Series rule - generation is everything:</h3>
+          <p className="mt-1.5 text-[13px] leading-[1.35] md:text-[14px]">{parts.rule.replace(/^The 3 Series rule - generation is everything:\s*/i, "")}</p>
           <p className="mt-2 font-bold">Value the car first; the engine decision follows.</p>
         </div>
       </div>
@@ -324,7 +324,7 @@ export default function ReplacementCosts({ data }) {
     <section className="bg-[var(--color-page)] py-6 text-[var(--color-text)]">
       <div className="flex flex-col gap-5 md:grid md:grid-cols-[minmax(0,1fr)_560px] md:items-start">
         <div>
-          <h2 className={`max-w-[620px] ${sectionH2} tracking-normal`}>
+          <h2 className="max-w-[620px] text-[29px] font-bold leading-[1.08] tracking-normal md:text-[45px]">
             {title.main}
             {title.accent ? (
               <>
@@ -336,17 +336,15 @@ export default function ReplacementCosts({ data }) {
           <div className="mt-3">
             <MStripe />
           </div>
-          {data.subHeadline ? (
-            <p className={`mt-4 max-w-[520px] ${sectionDescription} text-[var(--color-text-muted)]`} dangerouslySetInnerHTML={{ __html: cleanText(data.subHeadline) }} />
-          ) : null}
+          {data.subHeadline ? <p className={`mt-3 max-w-[520px] ${sectionDescription} text-[var(--color-text-muted)]`}>{cleanText(data.subHeadline)}</p> : null}
         </div>
 
         <div className="hidden md:block">
           <TrustStrip />
         </div>
 
-        <div className="mt-1 h-[170px] md:hidden">
-          <img src={carImages.classic} alt="" className="h-full w-full object-contain object-right" loading="lazy" />
+        <div className="mt-1 w-full overflow-hidden rounded-md md:hidden">
+          <img src={carImages.classic} alt="" className="h-[170px] w-full object-cover object-center" loading="lazy" />
         </div>
 
         <div className="md:hidden">

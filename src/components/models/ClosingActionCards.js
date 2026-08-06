@@ -130,7 +130,7 @@ function ActionCard({ card, index }) {
   return (
     <Link
       href={card.href || "#"}
-      className={`group relative min-h-[270px] overflow-hidden rounded-md border ${theme.border} ${theme.bg} p-5 shadow-[0_10px_28px_rgba(10,26,43,0.10)] transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[0_16px_34px_rgba(10,26,43,0.16)] md:min-h-[290px] md:p-6 lg:min-h-[285px]`}
+      className={`group relative min-h-[250px] overflow-hidden rounded-md border ${theme.border} ${theme.bg} p-4 shadow-[0_10px_28px_rgba(10,26,43,0.10)] transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[0_16px_34px_rgba(10,26,43,0.16)] md:min-h-[270px] md:p-5 lg:min-h-[270px]`}
       style={{ "--card-accent": theme.accent }}
     >
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_34%,rgba(255,255,255,0.92)_0%,rgba(255,255,255,0.08)_56%,transparent_100%)]" />
@@ -145,11 +145,11 @@ function ActionCard({ card, index }) {
       ) : (
         <UkMapArt accent={theme.accent} />
       )}
-      <div className="relative z-10 flex h-full max-w-[68%] flex-col items-start md:max-w-[72%] lg:max-w-[78%]">
-        <span className="flex h-20 w-20 items-center justify-center rounded-md bg-white/86 text-[var(--card-accent)] shadow-[0_12px_26px_rgba(10,26,43,0.10)] md:h-24 md:w-24">
+      <div className="relative z-10 flex h-full max-w-[70%] flex-col items-start md:max-w-[74%] lg:max-w-[78%]">
+        <span className="flex h-16 w-16 items-center justify-center rounded-md bg-white/86 text-[var(--card-accent)] shadow-[0_12px_26px_rgba(10,26,43,0.10)] md:h-20 md:w-20">
           <CardIcon name={theme.icon} />
         </span>
-        <h3 className="mt-7 text-[28px] font-bold leading-[1.08] text-[var(--color-text)] md:text-[30px] lg:text-[28px]">
+        <h3 className="mt-5 text-[24px] font-bold leading-[1.06] text-black dark:text-black md:text-[26px] lg:text-[24px]">
           {titleParts.before}
           {titleParts.before ? <br className="md:hidden lg:block" /> : null}
           {titleParts.accent ? (
@@ -164,7 +164,7 @@ function ActionCard({ card, index }) {
         <p className={`mt-4 max-w-[360px] text-[var(--color-text)] ${sectionBody} md:text-[17px]`} dangerouslySetInnerHTML={{ __html: cleanText(card.text) }} />
         <span className={`mt-auto inline-flex items-center gap-5 pt-6 font-bold text-[var(--card-accent)] ${sectionButton}`}>
           {theme.cta}
-          <ArrowIcon className="h-8 w-8 transition-transform duration-200 group-hover:translate-x-1" />
+          <ArrowIcon className="h-6 w-6 transition-transform duration-200 group-hover:translate-x-1" />
         </span>
       </div>
     </Link>
@@ -178,17 +178,30 @@ export default function ClosingActionCards({ data }) {
 
   return (
     <section className="relative overflow-hidden bg-[var(--color-page)] pt-2 text-[var(--color-text)]">
-      <div className="relative min-h-[360px] overflow-hidden md:min-h-[340px]">
+      <div className="relative overflow-hidden rounded-md bg-[var(--color-surface-raised)]">
         <Image
-          src="/model/Section 2-bg.webp"
+          src="/model/Hero-bg-image.webp"
           alt=""
           fill
-          className="object-contain object-[72%_74%] opacity-95 md:object-right"
+          className="hidden object-cover object-center md:block"
           sizes="100vw"
         />
-        <div className="absolute inset-0 bg-[linear-gradient(90deg,var(--color-page)_0%,rgba(255,255,255,0.94)_37%,rgba(255,255,255,0.48)_60%,rgba(255,255,255,0.05)_100%)]" />
-        <div className="relative z-10 max-w-[640px] px-0 py-5 md:py-9">
-          <h2 className={`max-w-[570px] font-bold tracking-normal text-[var(--color-text)] ${sectionH2}`}>
+        <div
+          className="absolute inset-0"
+          style={{
+            background:
+              "linear-gradient(90deg, var(--color-page) 0%, var(--color-hero-fade) 34%, var(--color-hero-overlay) 54%, rgba(255,255,255,0.12) 74%, rgba(255,255,255,0) 100%)",
+          }}
+        />
+        <div
+          className="absolute inset-0"
+          style={{
+            background:
+              "radial-gradient(circle at 56% 50%, var(--color-hero-overlay) 0%, rgba(255,255,255,0.18) 25%, rgba(255,255,255,0) 60%)",
+          }}
+        />
+        <div className="relative z-10 max-w-[620px] px-4 py-4 md:px-6 md:py-6">
+          <h2 className="max-w-[570px] text-[29px] font-bold leading-[1.08] tracking-normal text-[var(--color-text)] md:text-[45px]">
             {title.before}
             {title.accent ? (
               <>
@@ -197,10 +210,10 @@ export default function ClosingActionCards({ data }) {
               </>
             ) : null}
           </h2>
-          <div className="mt-5">
+          <div className="mt-4">
             <MStripe />
           </div>
-          <p className={`mt-6 max-w-[500px] text-[var(--color-text)] ${sectionDescription} md:text-[20px]`}>
+          <p className={`mt-4 max-w-[500px] text-[var(--color-text)] ${sectionDescription} md:text-[17px]`}>
             Everything you need to choose with confidence.
             <br />
             Data. Honesty. Specialists. All in one place.
@@ -208,7 +221,7 @@ export default function ClosingActionCards({ data }) {
         </div>
       </div>
 
-      <div className="grid gap-5 md:grid-cols-3">
+      <div className="grid gap-4 md:grid-cols-3">
         {(data.cards || []).map((card, index) => (
           <ActionCard key={card.title || card.href} card={card} index={index} />
         ))}

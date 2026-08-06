@@ -1,6 +1,6 @@
 import Image from "next/image";
 import MStripe from "@/components/reusableComponents/MStripe";
-import { sectionDescription, sectionH2 } from "@/components/models/sectionTypography";
+import { sectionDescription } from "@/components/models/sectionTypography";
 
 const iconPaths = {
   data: <path d="M5 19V9m5 10V5m5 14v-7m5 7H3" />,
@@ -46,8 +46,8 @@ function SignalIcon({ item }) {
   const isHeart = key === "heart";
 
   return (
-    <span className={`flex h-20 w-20 shrink-0 items-center justify-center rounded-md bg-[var(--color-page-soft)] md:h-24 md:w-24 ${isHeart ? "text-[#36b96d]" : "text-[var(--color-primary)]"}`}>
-      <svg aria-hidden="true" viewBox="0 0 24 24" className="h-11 w-11 md:h-12 md:w-12" fill={isHeart ? "currentColor" : "none"} stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+    <span className={`flex h-14 w-14 shrink-0 items-center justify-center rounded-md bg-[var(--color-page-soft)] md:h-16 md:w-16 ${isHeart ? "text-[#36b96d]" : "text-[var(--color-primary)]"}`}>
+      <svg aria-hidden="true" viewBox="0 0 24 24" className="h-8 w-8 md:h-9 md:w-9" fill={isHeart ? "currentColor" : "none"} stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
         {iconPaths[key]}
       </svg>
     </span>
@@ -61,10 +61,10 @@ export default function TrustBlock({ data }) {
   const signals = data.signals || [];
 
   return (
-    <section className="overflow-hidden rounded-md border border-[var(--color-border)] bg-[var(--color-surface-raised)] p-5 text-[var(--color-text)] shadow-[0_10px_30px_var(--color-shadow)] md:p-8">
-      <div className="grid gap-6 lg:grid-cols-[minmax(0,0.92fr)_minmax(420px,1fr)] lg:items-center">
+    <section className="overflow-hidden rounded-md border border-[var(--color-border)] bg-[var(--color-surface-raised)] p-3.5 text-[var(--color-text)] shadow-[0_10px_30px_var(--color-shadow)] md:p-5">
+      <div className="grid gap-4 lg:grid-cols-[minmax(0,0.92fr)_minmax(420px,1fr)] lg:items-center">
         <div>
-          <h2 className={`max-w-[650px] font-bold tracking-normal text-[var(--color-text)] ${sectionH2}`}>
+          <h2 className="max-w-[650px] text-[29px] font-bold leading-[1.08] tracking-normal text-[var(--color-text)] md:text-[45px]">
             {title.before}
             {title.accent ? (
               <>
@@ -73,16 +73,16 @@ export default function TrustBlock({ data }) {
               </>
             ) : null}
           </h2>
-          <div className="mt-3">
+          <div className="mt-2.5">
             <MStripe />
           </div>
 
-          <div className="mt-7">
+          <div className="mt-4">
             {signals.map((item) => (
-              <article key={item.title} className="flex gap-5 border-b border-[var(--color-border)] py-5 first:pt-0 last:border-b-0 last:pb-0">
+              <article key={item.title} className="flex gap-3.5 border-b border-[var(--color-border)] py-3.5 first:pt-0 last:border-b-0 last:pb-0 md:gap-4 md:py-3.5">
                 <SignalIcon item={item} />
-                <p className={`text-[var(--color-text)] ${sectionDescription} md:text-[18px]`}>
-                  <strong className="font-bold text-[var(--color-primary)]" dangerouslySetInnerHTML={{ __html: cleanText(item.title) }} />
+                <p className="text-[var(--color-text)] text-[15px] leading-[1.42] md:text-[16px]">
+                  <strong className="font-bold text-[var(--color-primary)]">{cleanText(item.title)}</strong>
                   {" - "}
                   <span dangerouslySetInnerHTML={{ __html: cleanText(item.text) }} />
                 </p>
@@ -91,8 +91,8 @@ export default function TrustBlock({ data }) {
           </div>
         </div>
 
-        <div className="relative hidden min-h-[420px] lg:block">
-          <div className="absolute right-8 top-0 h-[260px] w-[430px] opacity-35">
+        <div className="relative hidden min-h-[340px] lg:block">
+          <div className="absolute right-8 top-0 h-[230px] w-[390px] opacity-30">
             <svg aria-hidden="true" viewBox="0 0 430 260" className="h-full w-full text-[var(--color-primary)]" fill="none">
               <path d="M12 220h400" stroke="currentColor" strokeOpacity=".25" />
               {[40, 85, 130, 175, 220, 265, 310, 355, 400].map((x) => (
@@ -107,7 +107,7 @@ export default function TrustBlock({ data }) {
               ))}
             </svg>
           </div>
-          <div className="absolute left-0 top-10 h-[250px] w-[250px] opacity-30">
+          <div className="absolute left-0 top-10 h-[220px] w-[220px] opacity-25">
             <svg aria-hidden="true" viewBox="0 0 240 240" className="h-full w-full text-[var(--color-primary)]">
               {Array.from({ length: 210 }).map((_, index) => {
                 const x = 30 + ((index * 29) % 170);
