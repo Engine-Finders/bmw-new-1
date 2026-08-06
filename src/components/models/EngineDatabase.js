@@ -4,7 +4,7 @@ import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import MStripe from "@/components/reusableComponents/MStripe";
 import { useTheme } from "@/components/shared/themeProvider";
-import { sectionDescription, sectionH2 } from "@/components/models/sectionTypography";
+import { sectionDescription } from "@/components/models/sectionTypography";
 
 const defaultFilters = {
   query: "",
@@ -93,9 +93,9 @@ function StatCard({ icon, value, label }) {
     <div className="min-h-[98px] rounded-md border border-[var(--color-border)] bg-[var(--color-surface)] p-5 shadow-[0_8px_22px_var(--color-shadow)]">
       <div className="flex items-center gap-4">
         <span className="shrink-0 text-[var(--color-primary)]">{statIcon(icon)}</span>
-        <strong className="text-[1.28rem] leading-none text-[var(--color-text)]">{cleanText(value)}</strong>
+        <strong className="text-[1.05rem] leading-none text-[var(--color-text)]">{cleanText(value)}</strong>
       </div>
-      <p className="mt-3 text-[15px] leading-[1.45] text-[var(--color-text)]">{label}</p>
+      <p className="mt-3 text-[13px] leading-[1.45] text-[var(--color-text)]">{label}</p>
     </div>
   );
 }
@@ -223,11 +223,11 @@ function applyNativeMobileFilters(section) {
 function DesktopTable({ engines }) {
   return (
     <div className="overflow-hidden rounded-md border border-[var(--color-border)] bg-[var(--color-surface)]">
-      <table className="w-full border-collapse text-left text-[15px] text-[var(--color-text)]">
+      <table className="w-full border-collapse text-left text-[13px] text-[var(--color-text)]">
         <thead>
           <tr className="bg-[var(--color-page-soft)]">
             {["Engine Code", "Family", "Fuel", "Disp.", "Power", "Years", "Gen.", "Reliability", "2025 Enquiries", "Avg. Recon Cost"].map((column) => (
-              <th key={column} className="border-b border-r border-[var(--color-border)] px-4 py-4 text-center text-[15px] font-bold last:border-r-0">
+              <th key={column} className="border-b border-r border-[var(--color-border)] px-3 py-3 text-center text-[13px] font-bold last:border-r-0">
                 {column}
               </th>
             ))}
@@ -236,16 +236,16 @@ function DesktopTable({ engines }) {
         <tbody>
           {engines.slice(0, 10).map((row) => (
             <tr key={row.engineCode}>
-              <td className="border-r border-t border-[var(--color-border)] px-4 py-3 font-bold">{cleanText(row.engineCode)}</td>
-              <td className="border-r border-t border-[var(--color-border)] px-4 py-3 text-center">{cleanText(row.family)}</td>
-              <td className="border-r border-t border-[var(--color-border)] px-4 py-3 text-center">{cleanText(row.fuel)}</td>
-              <td className="border-r border-t border-[var(--color-border)] px-4 py-3 text-center">{cleanText(row.displacement)}</td>
-              <td className="border-r border-t border-[var(--color-border)] px-4 py-3 text-center">{cleanText(row.power)}</td>
-              <td className="border-r border-t border-[var(--color-border)] px-4 py-3 text-center">{cleanText(row.years)}</td>
-              <td className="border-r border-t border-[var(--color-border)] px-4 py-3 text-center">{cleanText(row.model)}</td>
-              <td className="border-r border-t border-[var(--color-border)] px-4 py-3 text-center"><Rating value={row.reliability} /></td>
-              <td className="border-r border-t border-[var(--color-border)] px-4 py-3 text-center">{cleanText(row.enquiries)}</td>
-              <td className="border-t border-[var(--color-border)] px-4 py-3 text-center">{cleanCost(row.avgRebuildCost)}</td>
+              <td className="border-r border-t border-[var(--color-border)] px-3 py-2.5 font-bold">{cleanText(row.engineCode)}</td>
+              <td className="border-r border-t border-[var(--color-border)] px-3 py-2.5 text-center">{cleanText(row.family)}</td>
+              <td className="border-r border-t border-[var(--color-border)] px-3 py-2.5 text-center">{cleanText(row.fuel)}</td>
+              <td className="border-r border-t border-[var(--color-border)] px-3 py-2.5 text-center">{cleanText(row.displacement)}</td>
+              <td className="border-r border-t border-[var(--color-border)] px-3 py-2.5 text-center">{cleanText(row.power)}</td>
+              <td className="border-r border-t border-[var(--color-border)] px-3 py-2.5 text-center">{cleanText(row.years)}</td>
+              <td className="border-r border-t border-[var(--color-border)] px-3 py-2.5 text-center">{cleanText(row.model)}</td>
+              <td className="border-r border-t border-[var(--color-border)] px-3 py-2.5 text-center"><Rating value={row.reliability} /></td>
+              <td className="border-r border-t border-[var(--color-border)] px-3 py-2.5 text-center">{cleanText(row.enquiries)}</td>
+              <td className="border-t border-[var(--color-border)] px-3 py-2.5 text-center">{cleanCost(row.avgRebuildCost)}</td>
             </tr>
           ))}
         </tbody>
@@ -412,9 +412,9 @@ export default function EngineDatabase({ data }) {
   return (
     <section id="engine-database" data-engine-database data-theme-mode={theme} className="bg-[var(--color-page)] py-6 text-[var(--color-text)]">
       <div className="hidden md:block">
-        <div className="grid gap-8 md:grid-cols-[1fr_0.9fr] md:items-start">
+        <div>
           <div>
-            <h2 className={`max-w-[650px] ${sectionH2} tracking-normal`}>
+            <h2 className="max-w-[650px] text-[27px] font-bold tracking-normal md:text-[39px]">
               {title.main}
               {title.accent ? (
                 <>
@@ -423,18 +423,12 @@ export default function EngineDatabase({ data }) {
                 </>
               ) : null}
             </h2>
-            <div className="mt-3">
+            <div className="mt-2">
               <MStripe />
             </div>
-            {data.subHeadline ? <p className={`mt-3 max-w-[610px] ${sectionDescription} text-[var(--color-text-muted)]`}>{cleanText(data.subHeadline)}</p> : null}
+            {data.subHeadline ? <p className="mt-2 max-w-[610px] text-[14px] leading-[1.45] text-[var(--color-text-muted)]">{cleanText(data.subHeadline)}</p> : null}
           </div>
 
-          <div className="grid grid-cols-4 gap-3">
-            <StatCard icon="cube" value="25+" label="Engine Codes Tracked" />
-            <StatCard icon="shield" value="7" label="Generations Covered" />
-            <StatCard icon="chart" value="826+" label="Enquiries in 2025" />
-            <StatCard icon="pound" value="£2.8K-£10K" label="Typical Recon Cost Range" />
-          </div>
         </div>
 
         <div className="mt-5">
@@ -442,12 +436,12 @@ export default function EngineDatabase({ data }) {
         </div>
 
         <div className="mt-3 flex items-center justify-between gap-4">
-          <button type="button" className="flex min-h-11 min-w-[280px] items-center justify-between rounded-md border border-[var(--color-border)] px-5 text-[18px] font-medium text-[var(--color-primary)] transition-all duration-200 hover:text-black hover:shadow-[0_12px_24px_rgba(0,0,0,0.14)]">
+          <button type="button" className="flex min-h-11 min-w-[280px] items-center justify-between rounded-md border border-[var(--color-border)] px-5 text-[14px] font-medium text-[var(--color-primary)] transition-all duration-200 hover:text-black hover:shadow-[0_12px_24px_rgba(0,0,0,0.14)]">
             <span className="flex items-center gap-3">{statIcon("file")} View all {totalEngineCount} engine codes</span>
             <span>v</span>
           </button>
-          <p className="mr-auto border-l border-[var(--color-border)] pl-7 text-[0.84rem] text-[var(--color-text-muted)]">Showing {shownDesktopCount} of {totalEngineCount} engine codes</p>
-          <div className="flex items-center gap-5 rounded-md border border-[var(--color-border)] px-5 py-3 text-[15px]">
+          <p className="mr-auto border-l border-[var(--color-border)] pl-7 text-[12px] text-[var(--color-text-muted)]">Showing {shownDesktopCount} of {totalEngineCount} engine codes</p>
+          <div className="flex items-center gap-5 rounded-md border border-[var(--color-border)] px-5 py-3 text-[13px]">
             <span><Rating value="★☆☆☆☆" /> Poor</span>
             <span><Rating value="★★★☆☆" /> Average</span>
             <span><Rating value="★★★★☆" /> Good</span>
@@ -455,7 +449,7 @@ export default function EngineDatabase({ data }) {
           </div>
         </div>
 
-        <div className="mt-3 flex items-center justify-between rounded-md border border-[var(--color-border)] bg-[var(--color-surface)] px-5 py-4 text-[0.84rem] text-[var(--color-text-muted)]">
+        <div className="mt-3 flex items-center justify-between rounded-md border border-[var(--color-border)] bg-[var(--color-surface)] px-4 py-3 text-[12px] text-[var(--color-text-muted)]">
           <p className="flex items-center gap-3">
             <span className="flex h-8 w-8 items-center justify-center rounded-full bg-[var(--color-primary-soft)] font-bold text-[var(--color-primary)]">i</span>
             All enquiries are from 2025 (to date) and verified via our internal system. Recon costs are supply only and exclude fitting.
@@ -477,12 +471,14 @@ export default function EngineDatabase({ data }) {
           The complete database of BMW 3 Series engine codes with real UK enquiry data, fitted models, and replacement cost insights.
         </p>
 
-        <div className="mt-6 flex gap-5 rounded-md border border-[var(--color-border)] bg-[var(--color-surface)] p-4">
-          <span className="flex h-16 w-16 shrink-0 items-center justify-center rounded-md bg-[var(--color-primary-soft)] text-[var(--color-primary)]">{statIcon("database")}</span>
-          <div>
-            <h3 className="text-[35px] font-bold md:text-[50px]">Proprietary UK Data</h3>
-            <p className="mt-2 text-[15px] leading-[1.5]">Every figure below is powered by 24,650+ real UK owner enquiries in 2025. This is data you won&apos;t find anywhere else.</p>
+        <div className="mt-6 rounded-md border border-[var(--color-border)] bg-[var(--color-surface)] p-4">
+          <div className="flex items-center gap-2.5">
+            <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-md bg-[var(--color-primary-soft)] text-[var(--color-primary)]">{statIcon("database")}</span>
+            <h3 className="flex-1 text-left text-[28px] font-bold leading-[1.1] md:text-[50px]">Proprietary UK Data</h3>
           </div>
+          <p className="mt-3 text-center text-[14px] leading-[1.5]">
+            Every figure below is powered by 24,650+ real UK owner enquiries in 2025. This is data you won&apos;t find anywhere else.
+          </p>
         </div>
 
         <div className="mt-5">

@@ -69,6 +69,17 @@ function splitCardTitle(title = "") {
   };
 }
 
+function GenerationCode({ children }) {
+  return (
+    <>
+      <span className="text-[17px] font-bold leading-[1.1] md:hidden">{children}</span>
+      <span className="hidden font-bold leading-[1.05] md:inline" style={{ fontSize: "17px" }}>
+        {children}
+      </span>
+    </>
+  );
+}
+
 function splitMeta(meta = "") {
   const [years = "", engines = ""] = cleanText(meta).split(" \u2022 ");
   return { years, engines };
@@ -157,7 +168,7 @@ function GenerationCard({ card, index, featured = false, onToggle }) {
 
   return (
     <article
-      className={`rounded-md border bg-[var(--color-surface)] p-3 text-[var(--color-text)] shadow-[0_8px_22px_var(--color-shadow)] ${
+      className={`rounded-md border bg-white p-3 text-[var(--color-text)] shadow-[0_8px_22px_var(--color-shadow)] ${
         featured ? "border-[rgba(7,95,216,0.7)] md:col-span-2" : "border-[var(--color-border)]"
       }`}
     >
@@ -171,9 +182,11 @@ function GenerationCard({ card, index, featured = false, onToggle }) {
         </span>
         <div className="min-w-0 flex-1">
           <p className={`${sectionTableText} font-semibold`}>{title.series}</p>
-          <h3 className="mt-0.5 text-[30px] font-bold leading-[1.05] md:text-[42px]">{title.code}</h3>
-          <p className={`mt-2 ${sectionTableText}`}>{meta.years}</p>
-          {meta.engines ? <p className={sectionTableText}>• {meta.engines}</p> : null}
+          <h3 className="mt-0.5"><GenerationCode>{title.code}</GenerationCode></h3>
+          <p className="mt-2 text-[12px] font-normal leading-[1.35] text-[var(--color-text-muted)]">
+            <span className="text-[13px] md:text-[15px]">{meta.years}</span>
+          </p>
+          {meta.engines ? <p className="text-[12px] font-normal leading-[1.35] text-[var(--color-text-muted)]">• {meta.engines}</p> : null}
         </div>
         <span className="text-[var(--color-primary)]">
           <ChevronIcon open={featured} />
@@ -208,12 +221,19 @@ function GenerationCard({ card, index, featured = false, onToggle }) {
       {!featured && (
         <Link
           href={href}
-          className="mt-12 hidden min-h-9 items-center justify-center gap-3 rounded-md border border-[rgba(7,95,216,0.45)] px-3 text-[18px] font-bold text-[var(--color-primary)] transition-all duration-200 hover:text-black hover:shadow-[0_12px_24px_rgba(0,0,0,0.14)] md:flex"
+          className="mt-3 hidden min-h-9 items-center justify-center gap-3 rounded-md border border-[rgba(7,95,216,0.45)] px-3 text-[18px] font-bold text-[var(--color-primary)] transition-all duration-200 hover:text-black hover:shadow-[0_12px_24px_rgba(0,0,0,0.14)] md:flex"
         >
           <span>{label.replace(/^Explore the\s+/i, "Explore ").replace(/\s*\u2192\s*$/, "")}</span>
-          <ChevronIcon />
+          <ArrowIcon />
         </Link>
       )}
+
+      {!featured && card.verdict ? (
+        <div className="mt-4 hidden text-[15px] leading-[1.45] md:block">
+          <p className="font-bold">Our Verdict:</p>
+          <p className="mt-1">{cleanText(card.verdict)}</p>
+        </div>
+      ) : null}
     </article>
   );
 }
@@ -227,16 +247,18 @@ function MobileGenerationRow({ card, index, onToggle }) {
     <button
       type="button"
       onClick={onToggle}
-      className="flex min-h-[86px] w-full items-center gap-3 rounded-md border border-[var(--color-border)] bg-[var(--color-surface)] p-3 text-left text-[var(--color-text)]"
+      className="flex min-h-[86px] w-full items-center gap-3 rounded-md border border-[var(--color-border)] bg-white p-3 text-left text-[var(--color-text)]"
     >
       <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-md bg-[var(--color-primary)] text-[0.8rem] font-bold text-white shadow-sm">
         {index + 1}
       </span>
       <div className="min-w-0 flex-1">
         <p className={`${sectionTableText} font-semibold`}>{title.series}</p>
-        <h3 className="mt-0.5 text-[30px] font-bold leading-[1.05]">{title.code}</h3>
-        {badge ? <p className={`mt-1 ${sectionTableText} font-bold`}>{badge}</p> : null}
-        <p className={`mt-1 ${sectionTableText}`}>{meta.years} <span className="px-1">•</span> {meta.engines}</p>
+        <h3 className="mt-0.5"><GenerationCode>{title.code}</GenerationCode></h3>
+        {badge ? <p className="mt-1 text-[13px] font-bold leading-[1.35]">{badge}</p> : null}
+        <p className="mt-1 text-[12px] font-normal leading-[1.35] text-[var(--color-text-muted)]">
+          <span className="text-[13px] md:text-[15px]">{meta.years}</span> <span className="px-1">•</span> {meta.engines}
+        </p>
       </div>
       <div className="w-[112px] shrink-0">
         <GenerationImage code={title.code} />
@@ -313,7 +335,7 @@ function ComparisonTable({ rangeTable }) {
 
 export default function GenerationsGrid({ data }) {
   const { theme } = useTheme();
-  const [openMobileIndex, setOpenMobileIndex] = useState(0);
+  const [openMobileIndex, setOpenMobileIndex] = useState(-1);
   const [desktopSlide, setDesktopSlide] = useState(0);
   if (!data) return null;
 
@@ -326,9 +348,9 @@ export default function GenerationsGrid({ data }) {
   }
 
   return (
-    <section data-theme-mode={theme} className="bg-[var(--color-page)] py-5 text-[var(--color-text)] md:py-6">
+    <section data-theme-mode={theme} className="bg-white py-5 text-[var(--color-text)] md:py-6">
       <div>
-      <h2 className={`max-w-[640px] ${sectionH2} tracking-normal`}>
+      <h2 className="max-w-[640px] text-[29px] font-bold leading-[1.08] tracking-normal md:text-[45px]">
           {title.main}
           {title.accent ? (
             <>
@@ -360,7 +382,6 @@ export default function GenerationsGrid({ data }) {
                     key={card.title}
                     card={card}
                     index={slideIndex * 4 + cardIndex}
-                    featured
                   />
                 ))}
               </div>
