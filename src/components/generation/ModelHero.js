@@ -65,9 +65,9 @@ export default function ModelHero({ data }) {
             }`}
           >
             <GenIcon name="car" className="h-4 w-4 shrink-0 text-[var(--color-primary)]" />
-            <strong className="font-semibold text-[var(--color-primary)]">{pill.model}</strong>
-            <span>{pill.body}</span>
-            <span>{pill.years}</span>
+            <strong className="font-semibold text-[var(--color-primary)]" dangerouslySetInnerHTML={{ __html: pill.model }} />
+            <span dangerouslySetInnerHTML={{ __html: pill.body }} />
+            <span dangerouslySetInnerHTML={{ __html: pill.years }} />
           </span>
 
           {/* Headline */}
@@ -75,9 +75,8 @@ export default function ModelHero({ data }) {
             className={`text-[32px] font-bold leading-[0.95] tracking-normal md:max-w-[720px] md:text-[3.5rem] md:leading-[0.94] ${
               isDark ? "text-white" : "text-[var(--color-text)]"
             }`}
-          >
-            {data.h1}
-          </h1>
+            dangerouslySetInnerHTML={{ __html: data.h1 }}
+          />
 
           {/* MStripe decorative accent — matches home hero (blue / blue / red / grey slashes + trailing line) */}
           <MStripe />
@@ -115,7 +114,7 @@ export default function ModelHero({ data }) {
               href={data.primaryCta.href}
               className="mt-4 inline-flex w-full items-center justify-center gap-3 rounded-md bg-[var(--color-primary)] px-6 py-4 text-[1rem] font-bold text-white shadow-[0_12px_28px_var(--color-shadow)] md:hidden"
             >
-              {data.primaryCta.label.replace(/\s*→\s*$/, "")}
+              <span dangerouslySetInnerHTML={{ __html: data.primaryCta.label.replace(/\s*→\s*$/, "") }} />
               <GenIcon name="arrow" className="h-5 w-5" />
             </Link>
           ) : null}
@@ -143,13 +142,11 @@ export default function ModelHero({ data }) {
                     </span>
                     <span className={isDark ? "text-white" : "text-[var(--color-text-muted)]"}>
                       {stat.value ? (
-                        <strong className="block text-[0.86rem] font-bold leading-none md:text-[1.15rem]">{stat.value}</strong>
+                        <strong className="block text-[0.86rem] font-bold leading-none md:text-[1.15rem]" dangerouslySetInnerHTML={{ __html: stat.value }} />
                       ) : null}
-                      <span className="mt-1 block text-[10px] leading-[1.3] md:text-[0.8rem]">{stat.label}</span>
+                      <span className="mt-1 block text-[10px] leading-[1.3] md:text-[0.8rem]" dangerouslySetInnerHTML={{ __html: stat.label }} />
                       {stat.tag ? (
-                        <span className="mt-1 block text-[9px] font-semibold uppercase tracking-wide text-[var(--color-primary)] md:text-[0.68rem]">
-                          {stat.tag}
-                        </span>
+                        <span className="mt-1 block text-[9px] font-semibold uppercase tracking-wide text-[var(--color-primary)] md:text-[0.68rem]" dangerouslySetInnerHTML={{ __html: stat.tag }} />
                       ) : null}
                     </span>
                   </li>
@@ -165,9 +162,7 @@ export default function ModelHero({ data }) {
               className="hidden w-full items-center justify-between rounded-[1.25rem] border border-[rgba(41,115,219,0.75)] bg-[linear-gradient(180deg,rgba(14,79,184,0.98)_0%,rgba(8,59,143,0.98)_100%)] px-5 py-4 text-white shadow-lg shadow-black/30 md:flex md:w-fit md:justify-start md:gap-5 md:rounded md:border-0 md:bg-[var(--color-primary)] md:px-7 md:py-3.5 md:text-base md:shadow-lg md:shadow-[var(--color-shadow)]"
             >
               <span className="text-left">
-                <span className="block text-lg font-bold tracking-[0.08em] md:text-[1.05rem] md:tracking-normal">
-                  {data.primaryCta.label.replace(/\s*→\s*$/, "")}
-                </span>
+                <span className="block text-lg font-bold tracking-[0.08em] md:text-[1.05rem] md:tracking-normal" dangerouslySetInnerHTML={{ __html: data.primaryCta.label.replace(/\s*→\s*$/, "") }} />
               </span>
               <span className="flex h-14 w-14 items-center justify-center rounded-full border border-white/10 bg-[rgba(3,14,31,0.55)] md:h-auto md:w-auto md:rounded-none md:border-0 md:bg-transparent">
                 <GenIcon name="arrow" className="h-7 w-7" />

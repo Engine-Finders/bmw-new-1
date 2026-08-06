@@ -155,7 +155,7 @@ function BuyerRow({ row, index }) {
         <div className="flex min-w-0 items-center gap-3 px-3 py-3.5 md:px-5 md:py-4">
           <CircleIcon>{profileIcons[iconKey]}</CircleIcon>
           <div className="min-w-0">
-            <h3 className="text-[16px] font-bold leading-[1.12] text-[var(--color-text)] md:text-[18px]">{cleanText(row.buyerProfile)}</h3>
+            <h3 className="text-[16px] font-bold leading-[1.12] text-[var(--color-text)] md:text-[18px]" dangerouslySetInnerHTML={{ __html: cleanText(row.buyerProfile) }} />
             <div className="mt-3 lg:hidden">
               <Stars rating={row.rating} />
             </div>
@@ -167,9 +167,7 @@ function BuyerRow({ row, index }) {
         <Stars rating={row.rating} />
       </div>
 
-      <p className={`border-t border-[var(--color-border)] px-3 py-3 text-[var(--color-text)] md:px-4 md:py-3 lg:border-t-0 ${sectionTableText} md:text-[14px]`}>
-        {cleanText(row.verdict)}
-      </p>
+      <p className={`border-t border-[var(--color-border)] px-3 py-3 text-[var(--color-text)] md:px-4 md:py-3 lg:border-t-0 ${sectionTableText} md:text-[14px]`} dangerouslySetInnerHTML={{ __html: cleanText(row.verdict) }} />
     </article>
   );
 }
@@ -186,11 +184,11 @@ export default function WhoShouldBuy({ data }) {
       <div className="flex flex-col gap-5 lg:grid lg:grid-cols-[minmax(0,0.92fr)_minmax(520px,1fr)] lg:items-start">
         <div>
           <h2 className="max-w-[760px] text-[29px] font-bold leading-[1.08] tracking-normal text-[var(--color-text)] md:text-[45px]">
-            {title.before}
+            <span dangerouslySetInnerHTML={{ __html: title.before }} />
             {title.accent ? (
               <>
                 {" "}
-                <span className="text-[var(--color-primary)]">{title.accent}</span>
+                <span className="text-[var(--color-primary)]" dangerouslySetInnerHTML={{ __html: title.accent }} />
               </>
             ) : null}
           </h2>
@@ -198,7 +196,7 @@ export default function WhoShouldBuy({ data }) {
             <MStripe />
           </div>
           <p className={`mt-3 max-w-[620px] text-[var(--color-text-muted)] ${sectionDescription}`}>
-            Different buyers, different priorities. Here is our verdict on who the {modelName} is perfect for - and who should think twice.
+            Different buyers, different priorities. Here is our verdict on who the <span dangerouslySetInnerHTML={{ __html: modelName }} /> is perfect for - and who should think twice.
           </p>
         </div>
 
@@ -227,14 +225,14 @@ export default function WhoShouldBuy({ data }) {
             i
           </span>
           <p className={`max-w-[760px] text-[var(--color-text)] ${sectionBody}`}>
-            <strong className="font-bold text-[var(--color-primary)]">Real talk.</strong> The right {modelName} for you depends on your budget, your mileage, and your patience for maintenance. Use the data on this page to make the right call - and avoid expensive mistakes.
+            <strong className="font-bold text-[var(--color-primary)]">Real talk.</strong> The right <span dangerouslySetInnerHTML={{ __html: modelName }} /> for you depends on your budget, your mileage, and your patience for maintenance. Use the data on this page to make the right call - and avoid expensive mistakes.
           </p>
         </div>
         <Link
           href="#engine-database"
           className="inline-flex min-h-12 shrink-0 items-center justify-center gap-4 rounded-md bg-[var(--color-primary)] px-5 py-3 text-[16px] font-bold text-white shadow-[0_12px_28px_var(--color-shadow)] transition-all duration-200 hover:text-black hover:shadow-[0_18px_36px_rgba(0,0,0,0.24)] md:min-w-[260px]"
         >
-          Explore {modelName} Engines
+          Explore <span dangerouslySetInnerHTML={{ __html: modelName }} /> Engines
           <svg aria-hidden="true" viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2">
             <path d="M5 12h14m-6-6 6 6-6 6" />
           </svg>

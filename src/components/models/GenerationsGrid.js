@@ -351,11 +351,11 @@ export default function GenerationsGrid({ data }) {
     <section data-theme-mode={theme} className="bg-[var(--color-page)] py-5 text-[var(--color-text)] md:py-6">
       <div>
       <h2 className="max-w-[640px] text-[29px] font-bold leading-[1.08] tracking-normal md:text-[45px]">
-          {title.main}
+          <span dangerouslySetInnerHTML={{ __html: title.main }} />
           {title.accent ? (
             <>
               <br />
-              <span className="text-[var(--color-primary)]">{title.accent}</span>
+              <span className="text-[var(--color-primary)]" dangerouslySetInnerHTML={{ __html: title.accent }} />
             </>
           ) : null}
         </h2>
@@ -438,7 +438,7 @@ export default function GenerationsGrid({ data }) {
           </span>
           <span>Read the full comparison:</span>
           <Link href={data.comparisonLink.href} className="font-bold text-[var(--color-primary)] transition-all duration-200 hover:text-black hover:shadow-[0_12px_24px_rgba(0,0,0,0.14)]">
-            {cleanText(data.comparisonLink.label).replace("Read the full comparison:", "").replace(/\s*\u2192\s*$/, "")}
+            <span dangerouslySetInnerHTML={{ __html: cleanText(data.comparisonLink.label).replace("Read the full comparison:", "").replace(/\s*\u2192\s*$/, "") }} />
           </Link>
           <ArrowIcon />
         </p>

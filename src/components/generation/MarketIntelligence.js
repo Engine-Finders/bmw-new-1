@@ -53,7 +53,7 @@ export default function MarketIntelligence({ data }) {
               <RankedList items={data.mostRequestedVariants} />
             </StatCard>
             <StatCard icon="dollar" title="Average E90 Replacement Cost">
-              <p className="text-[1.5rem] font-bold text-[var(--color-text)]">{data.averageReplacementCost}</p>
+              <p className="text-[1.5rem] font-bold text-[var(--color-text)]" dangerouslySetInnerHTML={{ __html: data.averageReplacementCost }} />
               {data.averageReplacementCostNote ? (
                 <p className="text-[0.68rem] leading-[1.3] text-[var(--color-text-soft)]" dangerouslySetInnerHTML={{ __html: data.averageReplacementCostNote }} />
               ) : null}
@@ -84,14 +84,14 @@ export default function MarketIntelligence({ data }) {
                   }`}
                 >
                   <div className="grid grid-cols-[1.2fr_0.9fr_1fr] items-start gap-2">
-                    <span className="font-semibold">{row.vehicle}</span>
-                    <span className="text-[var(--color-text-muted)]">{row.location}</span>
-                    <span className="text-[var(--color-text-muted)]">{row.issue}</span>
+                    <span className="font-semibold" dangerouslySetInnerHTML={{ __html: row.vehicle }} />
+                    <span className="text-[var(--color-text-muted)]" dangerouslySetInnerHTML={{ __html: row.location }} />
+                    <span className="text-[var(--color-text-muted)]" dangerouslySetInnerHTML={{ __html: row.issue }} />
                   </div>
                   <div className="mt-1 flex items-center gap-2 text-[0.72rem] text-[var(--color-text-soft)]">
-                    <span>{row.enquiries}</span>
+                    <span dangerouslySetInnerHTML={{ __html: row.enquiries }} />
                     <span>•</span>
-                    <span>{row.updated}</span>
+                    <span dangerouslySetInnerHTML={{ __html: row.updated }} />
                   </div>
                 </div>
               ))}

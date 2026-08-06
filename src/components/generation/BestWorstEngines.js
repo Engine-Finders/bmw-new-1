@@ -54,14 +54,14 @@ function Card({ item, isDark }) {
         <span className={`flex h-7 w-7 shrink-0 items-center justify-center rounded-full ${badgeClass}`}>
           <GenIcon name={style.icon} className="h-3.5 w-3.5" />
         </span>
-        <p className={`flex-1 text-[0.76rem] font-semibold leading-tight ${badgeClass.split(" ")[0]}`}>{item.slot}</p>
+        <p className={`flex-1 text-[0.76rem] font-semibold leading-tight ${badgeClass.split(" ")[0]}`} dangerouslySetInnerHTML={{ __html: item.slot }} />
         <span className="shrink-0 text-[var(--color-text-soft)]">
           <GenIcon name="chevron" className="h-4 w-4" />
         </span>
       </div>
 
       <div>
-        <p className="text-[1.05rem] font-bold leading-tight text-[var(--color-text)]">{item.engine}</p>
+        <p className="text-[1.05rem] font-bold leading-tight text-[var(--color-text)]" dangerouslySetInnerHTML={{ __html: item.engine }} />
         {item.engineNote ? (
           <p className="mt-0.5 text-[0.76rem] text-[var(--color-text-muted)]" dangerouslySetInnerHTML={{ __html: item.engineNote }} />
         ) : null}
@@ -98,8 +98,8 @@ function OverlookedCard({ item, isDark }) {
             <GenIcon name={style.icon} className="h-5 w-5" />
           </span>
           <div>
-            <p className={`text-[0.82rem] font-semibold ${badgeClass.split(" ")[0]}`}>{item.slot}</p>
-            <p className="mt-1 text-[1.05rem] font-bold leading-tight text-[var(--color-text)]">{item.engine}</p>
+            <p className={`text-[0.82rem] font-semibold ${badgeClass.split(" ")[0]}`} dangerouslySetInnerHTML={{ __html: item.slot }} />
+            <p className="mt-1 text-[1.05rem] font-bold leading-tight text-[var(--color-text)]" dangerouslySetInnerHTML={{ __html: item.engine }} />
             {item.engineNote ? <p className="mt-0.5 text-[0.78rem] text-[var(--color-text-muted)]" dangerouslySetInnerHTML={{ __html: item.engineNote }} /> : null}
           </div>
         </div>

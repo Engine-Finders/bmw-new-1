@@ -177,11 +177,11 @@ export default function OwnershipVerdict({ data }) {
         <div className="grid gap-6 lg:grid-cols-[0.7fr_1fr] lg:items-start">
           <div>
             <h2 className={`max-w-[640px] font-bold tracking-normal text-[var(--color-text)] ${sectionH2}`}>
-              {title.before}
+              <span dangerouslySetInnerHTML={{ __html: title.before }} />
               {title.accent ? (
                 <>
                   <br />
-                  <span className="text-[var(--color-primary)]">{title.accent}</span>
+                  <span className="text-[var(--color-primary)]" dangerouslySetInnerHTML={{ __html: title.accent }} />
                 </>
               ) : null}
             </h2>
@@ -232,8 +232,8 @@ export default function OwnershipVerdict({ data }) {
               <li key={`${stat.value}-${stat.label}`} className="flex items-center gap-4 border-r border-[var(--color-border)] px-7 py-5 last:border-r-0">
                 <StatIcon iconKey={stat.iconKey} />
                 <p className={`text-[var(--color-text)] ${sectionTableText}`}>
-                  {stat.value ? <strong className="mr-1 text-[1.45rem] leading-none text-[var(--color-primary)]">{stat.value}</strong> : null}
-                  {stat.label}
+                  {stat.value ? <strong className="mr-1 text-[1.45rem] leading-none text-[var(--color-primary)]" dangerouslySetInnerHTML={{ __html: stat.value }} /> : null}
+                  <span dangerouslySetInnerHTML={{ __html: stat.label }} />
                 </p>
               </li>
             ))}

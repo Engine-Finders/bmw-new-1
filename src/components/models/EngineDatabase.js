@@ -415,11 +415,11 @@ export default function EngineDatabase({ data }) {
         <div>
           <div>
             <h2 className="max-w-[650px] text-[27px] font-bold tracking-normal md:text-[39px]">
-              {title.main}
+              <span dangerouslySetInnerHTML={{ __html: title.main }} />
               {title.accent ? (
                 <>
                   <br />
-                  <span className="text-[var(--color-primary)]">{title.accent}</span>
+                  <span className="text-[var(--color-primary)]" dangerouslySetInnerHTML={{ __html: title.accent }} />
                 </>
               ) : null}
             </h2>
@@ -460,7 +460,7 @@ export default function EngineDatabase({ data }) {
 
       <div className="md:hidden">
         <h2 className="text-[2rem] font-bold leading-[1.08] tracking-normal">
-          {shortTitle(data.h2).replace("Engine Codes - The Database", "Engine Codes -")}
+          <span dangerouslySetInnerHTML={{ __html: shortTitle(data.h2).replace("Engine Codes - The Database", "Engine Codes -") }} />
           <br />
           <span className="text-[var(--color-primary)]">The Database</span>
         </h2>

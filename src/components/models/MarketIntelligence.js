@@ -146,7 +146,7 @@ function SignalTable({ rows }) {
           <div key={`${row.signal}-${index}`} className="grid grid-cols-[34%_30%_36%] border-t border-[var(--color-border)] text-[var(--color-text)] md:grid-cols-[32%_33%_35%]">
             <div className="flex min-w-0 items-center gap-2 px-2 py-3 md:gap-4 md:px-3 md:py-3">
               <CircleIcon small>{signalIconPaths[isEngine ? 1 : 0]}</CircleIcon>
-              <p className="min-w-0 break-words text-[12px] font-bold leading-[1.25] md:text-[15px]">{cleanText(row.signal)}</p>
+              <p className="min-w-0 break-words text-[12px] font-bold leading-[1.25] md:text-[15px]" dangerouslySetInnerHTML={{ __html: cleanText(row.signal) }} />
             </div>
             <div className="border-l border-[var(--color-border)] px-2 py-3 text-[12px] leading-[1.35] md:px-3 md:text-[15px]">
               <RichText value={row.data} />
@@ -233,9 +233,9 @@ function PullQuote({ data }) {
           <div className="flex">
             <div>
               <p className="text-[11px] font-bold uppercase text-[var(--color-primary)] md:text-[12px]">Editorial Pull-Quote</p>
-              <h3 className="mt-1.5 max-w-[560px] text-[22px] font-bold leading-[1.1] text-[var(--color-text)] md:text-[31px]">{cleanText(data.title)}</h3>
+              <h3 className="mt-1.5 max-w-[560px] text-[22px] font-bold leading-[1.1] text-[var(--color-text)] md:text-[31px]" dangerouslySetInnerHTML={{ __html: cleanText(data.title) }} />
               <blockquote className="mt-2 max-w-[760px] text-[12px] leading-[1.45] text-[var(--color-text)] md:text-[13px]">
-                &ldquo;{cleanText(data.quote)}&rdquo;
+                &ldquo;<span dangerouslySetInnerHTML={{ __html: cleanText(data.quote) }} />&rdquo;
               </blockquote>
             </div>
           </div>
@@ -258,11 +258,11 @@ export default function MarketIntelligence({ data, quoteData }) {
         <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
           <div>
             <h2 className="max-w-[960px] text-[29px] font-bold leading-[1.08] tracking-normal text-[var(--color-text)] md:text-[45px]">
-              {title.before}
+              <span dangerouslySetInnerHTML={{ __html: title.before }} />
               {title.accent ? (
                 <>
                   {" "}
-                  <span className="text-[var(--color-primary)]">- {title.accent}</span>
+                  <span className="text-[var(--color-primary)]" dangerouslySetInnerHTML={{ __html: `- ${title.accent}` }} />
                 </>
               ) : null}
               {title.after}
@@ -274,7 +274,7 @@ export default function MarketIntelligence({ data, quoteData }) {
           <div className="flex min-w-[210px] items-center gap-4 rounded-md border border-[var(--color-border)] bg-[var(--color-surface-raised)] p-4 shadow-[0_8px_22px_var(--color-shadow)] md:p-5">
             <CircleIcon>{<path d="M16 11a4 4 0 0 1-8 0m11 8a7 7 0 0 0-14 0m15-11a3 3 0 1 1-2.8-3M4 8a3 3 0 1 0 2.8-3" />}</CircleIcon>
             <div>
-              <p className="text-[24px] font-bold leading-none text-[var(--color-text)] md:text-[34px]">{metricFromTitle(data.h2)}</p>
+              <p className="text-[24px] font-bold leading-none text-[var(--color-text)] md:text-[34px]" dangerouslySetInnerHTML={{ __html: metricFromTitle(data.h2) }} />
               <p className="mt-2 text-[13px] leading-[1.45] text-[var(--color-text-muted)] md:text-[14px]">Total Enquiries in 2025</p>
               <p className="mt-1 text-[13px] font-medium text-[var(--color-primary)] md:text-[14px]">[BMW-VERIFIED]</p>
             </div>

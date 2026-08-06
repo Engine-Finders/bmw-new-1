@@ -2,7 +2,7 @@
 
 import { useMemo, useState } from "react";
 import MStripe from "@/components/reusableComponents/MStripe";
-import { sectionDescription, sectionTableText } from "@/components/models/sectionTypography";
+import { sectionDescription, sectionH2, sectionTableText } from "@/components/models/sectionTypography";
 
 const carImages = {
   classic: "https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=760&q=85",
@@ -252,21 +252,21 @@ function MobileTabs({ tables }) {
         </div>
       </div>
 
-      <article className="rounded-b-md border border-t-0 border-[var(--color-border)] bg-[var(--color-surface-raised)] p-3.5">
-        <h3 className="text-[32px] font-bold leading-tight text-[var(--color-text)] md:text-[46px]">
-          {active.label} <span className="text-[var(--color-primary)]">({active.years})</span>
+      <article className="rounded-b-md border border-t-0 border-[var(--color-border)] bg-[var(--color-surface-raised)] p-4">
+        <h3 className="text-[35px] font-bold leading-tight text-[var(--color-text)] md:text-[50px]">
+          <span dangerouslySetInnerHTML={{ __html: active.label }} /> <span className="text-[var(--color-primary)]">(<span dangerouslySetInnerHTML={{ __html: active.years }} />)</span>
         </h3>
-        <div className="mt-2.5 h-[190px] overflow-hidden rounded-md">
-          <img src={carImages[key]} alt="" className="h-full w-full object-cover object-center" loading="lazy" />
+        <div className="mt-3 h-[190px]">
+          <img src={carImages[key]} alt="" className="h-full w-full object-contain" loading="lazy" />
         </div>
-        <div className="mt-3 overflow-x-auto">
+        <div className="mt-4 overflow-x-auto">
           <div className="min-w-[720px]">
             <CostTable table={activeTable} />
           </div>
         </div>
-        <div className="mt-3 flex items-center gap-3 rounded-md bg-[var(--color-page-soft)] px-3 py-2.5 text-[14px] leading-[1.35] text-[var(--color-text)]">
+        <div className="mt-4 flex items-center gap-3 rounded-md bg-[var(--color-page-soft)] px-4 py-3 text-[15px] text-[var(--color-text)]">
           <span className="shrink-0 text-[var(--color-primary)]">
-            <Icon type="info" className="h-6 w-6" />
+            <Icon type="info" className="h-7 w-7" />
           </span>
           Prices are supply only. Labour and ancillary parts extra.
         </div>
@@ -278,34 +278,34 @@ function MobileTabs({ tables }) {
 function Notes({ parts }) {
   return (
     <div className="grid gap-4 md:grid-cols-[1.15fr_0.85fr]">
-      <div className="grid gap-3 rounded-md border border-[var(--color-border)] bg-[var(--color-surface-raised)] p-4 md:grid-cols-2 md:gap-4">
-        <div className="flex flex-col gap-2.5 border-[var(--color-border)] md:border-r md:pr-5">
-          <div className="flex items-start gap-3.5">
+      <div className="grid gap-4 rounded-md border border-[var(--color-border)] bg-[var(--color-surface-raised)] p-5 md:grid-cols-2">
+        <div className="flex flex-col gap-3 border-[var(--color-border)] md:border-r md:pr-6">
+          <div className="flex items-start gap-4">
             <span className="shrink-0 text-[var(--color-primary)]">
-              <Icon type="note" className="h-10 w-10" />
+              <Icon type="note" className="h-12 w-12" />
             </span>
-            <h3 className="text-[16px] font-bold leading-[1.1] text-[var(--color-primary)] md:text-[17px]">Important Notes</h3>
+            <h3 className="font-bold text-[var(--color-primary)]">Important Notes</h3>
           </div>
-          <p className="text-[13px] leading-[1.35] text-[var(--color-text)] md:text-[14px]">{parts.important}</p>
+          <p className="pl-16 text-[15px] leading-[1.5] text-[var(--color-text)] md:pl-0" dangerouslySetInnerHTML={{ __html: parts.important }} />
         </div>
-        <div className="flex flex-col gap-2.5">
-          <div className="flex items-start gap-3.5">
+        <div className="flex flex-col gap-3">
+          <div className="flex items-start gap-4">
             <span className="shrink-0 text-[var(--color-primary)]">
-              <Icon type="info" className="h-9 w-9" />
+              <Icon type="info" className="h-10 w-10" />
             </span>
-            <h3 className="text-[16px] font-bold leading-[1.1] text-[var(--color-primary)] md:text-[17px]">Labour Estimate</h3>
+            <h3 className="font-bold text-[var(--color-primary)]">Labour Estimate</h3>
           </div>
-          <p className="text-[13px] leading-[1.35] text-[var(--color-text)] md:text-[14px]">{parts.labour}</p>
+          <p className="pl-14 text-[15px] leading-[1.5] text-[var(--color-text)] md:pl-0" dangerouslySetInnerHTML={{ __html: parts.labour }} />
         </div>
       </div>
 
-      <div className="inline-flex w-fit max-w-[620px] flex-row gap-3 self-start rounded-md border border-[var(--color-border-strong)] bg-[var(--color-surface-raised)] p-3.5 text-[var(--color-text)] md:p-4">
-        <span className="shrink-0 text-[var(--color-primary)]">
-          <Icon type="crown" className="h-10 w-10 md:h-14 md:w-14" />
+      <div className="inline-flex w-fit max-w-[620px] flex-row gap-4 self-start rounded-md border border-[var(--color-border-strong)] bg-[var(--color-surface-raised)] p-4 text-[var(--color-text)] md:p-5">
+        <span className="hidden shrink-0 text-[var(--color-primary)] md:block">
+          <Icon type="crown" className="h-12 w-12 md:h-16 md:w-16" />
         </span>
         <div className="max-w-[540px]">
-          <h3 className="text-[22px] font-bold leading-[1.08] text-[var(--color-primary)] md:text-[26px]">The 3 Series rule - generation is everything:</h3>
-          <p className="mt-1.5 text-[13px] leading-[1.35] md:text-[14px]">{parts.rule.replace(/^The 3 Series rule - generation is everything:\s*/i, "")}</p>
+          <h3 className="text-[24px] font-bold leading-[1.12] text-[var(--color-primary)] md:text-[30px]">The 3 Series rule - generation is everything:</h3>
+          <p className="mt-2 text-[14px] leading-[1.5] md:text-[15px]" dangerouslySetInnerHTML={{ __html: parts.rule.replace(/^The 3 Series rule - generation is everything:\s*/i, "") }} />
           <p className="mt-2 font-bold">Value the car first; the engine decision follows.</p>
         </div>
       </div>
@@ -324,12 +324,12 @@ export default function ReplacementCosts({ data }) {
     <section className="bg-[var(--color-page)] py-6 text-[var(--color-text)]">
       <div className="flex flex-col gap-5 md:grid md:grid-cols-[minmax(0,1fr)_560px] md:items-start">
         <div>
-          <h2 className="max-w-[620px] text-[29px] font-bold leading-[1.08] tracking-normal md:text-[45px]">
-            {title.main}
+          <h2 className={`max-w-[620px] ${sectionH2} tracking-normal`}>
+            <span dangerouslySetInnerHTML={{ __html: title.main }} />
             {title.accent ? (
               <>
                 <br />
-                <span className="text-[var(--color-primary)]">{title.accent}</span>
+                <span className="text-[var(--color-primary)]" dangerouslySetInnerHTML={{ __html: title.accent }} />
               </>
             ) : null}
           </h2>

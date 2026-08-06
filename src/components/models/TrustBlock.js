@@ -65,11 +65,11 @@ export default function TrustBlock({ data }) {
       <div className="grid gap-4 lg:grid-cols-[minmax(0,0.92fr)_minmax(420px,1fr)] lg:items-center">
         <div>
           <h2 className="max-w-[650px] text-[29px] font-bold leading-[1.08] tracking-normal text-[var(--color-text)] md:text-[45px]">
-            {title.before}
+            <span dangerouslySetInnerHTML={{ __html: title.before }} />
             {title.accent ? (
               <>
                 <br />
-                <span className="text-[var(--color-primary)]">{title.accent}</span>
+                <span className="text-[var(--color-primary)]" dangerouslySetInnerHTML={{ __html: title.accent }} />
               </>
             ) : null}
           </h2>
@@ -82,7 +82,7 @@ export default function TrustBlock({ data }) {
               <article key={item.title} className="flex gap-3.5 border-b border-[var(--color-border)] py-3.5 first:pt-0 last:border-b-0 last:pb-0 md:gap-4 md:py-3.5">
                 <SignalIcon item={item} />
                 <p className="text-[var(--color-text)] text-[15px] leading-[1.42] md:text-[16px]">
-                  <strong className="font-bold text-[var(--color-primary)]">{cleanText(item.title)}</strong>
+                  <strong className="font-bold text-[var(--color-primary)]" dangerouslySetInnerHTML={{ __html: cleanText(item.title) }} />
                   {" - "}
                   <span dangerouslySetInnerHTML={{ __html: cleanText(item.text) }} />
                 </p>

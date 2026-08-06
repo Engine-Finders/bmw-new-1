@@ -150,15 +150,15 @@ function ActionCard({ card, index }) {
           <CardIcon name={theme.icon} />
         </span>
         <h3 className="mt-5 text-[24px] font-bold leading-[1.06] text-black dark:text-black md:text-[26px] lg:text-[24px]">
-          {titleParts.before}
+          <span dangerouslySetInnerHTML={{ __html: titleParts.before }} />
           {titleParts.before ? <br className="md:hidden lg:block" /> : null}
           {titleParts.accent ? (
             <>
               {" "}
-              <span className="text-[var(--card-accent)]">{titleParts.accent}</span>
+              <span className="text-[var(--card-accent)]" dangerouslySetInnerHTML={{ __html: titleParts.accent }} />
             </>
           ) : null}
-          {titleParts.after ? <> {titleParts.after}</> : null}
+          {titleParts.after ? <> <span dangerouslySetInnerHTML={{ __html: titleParts.after }} /></> : null}
         </h3>
         <span className="mt-4 block h-1 w-12 rounded-full bg-[var(--card-accent)]" />
         <p className={`mt-4 max-w-[360px] text-[var(--color-text)] ${sectionBody} md:text-[17px]`} dangerouslySetInnerHTML={{ __html: cleanText(card.text) }} />
@@ -202,11 +202,11 @@ export default function ClosingActionCards({ data }) {
         />
         <div className="relative z-10 max-w-[620px] px-4 py-4 md:px-6 md:py-6">
           <h2 className="max-w-[570px] text-[29px] font-bold leading-[1.08] tracking-normal text-[var(--color-text)] md:text-[45px]">
-            {title.before}
+            <span dangerouslySetInnerHTML={{ __html: title.before }} />
             {title.accent ? (
               <>
                 <br />
-                <span className="text-[var(--color-primary)]">{title.accent}</span>
+                <span className="text-[var(--color-primary)]" dangerouslySetInnerHTML={{ __html: title.accent }} />
               </>
             ) : null}
           </h2>

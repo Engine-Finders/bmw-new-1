@@ -122,7 +122,7 @@ function DesktopTable({ eras, columns }) {
           <div key={era.era} className="grid grid-cols-[19%_10%_26%_22%_23%] border-t border-[var(--color-border)] text-[var(--color-text)]">
             <div className="border-r border-[var(--color-border)] px-4 py-3 md:px-5 md:py-4">
               <h3 className="text-[17px] font-bold leading-tight text-[var(--color-primary)] md:text-[19px]">
-                {title.lead}
+                <span dangerouslySetInnerHTML={{ __html: title.lead }} />
                 {title.detail ? (
                   <>
                     <br />
@@ -136,7 +136,7 @@ function DesktopTable({ eras, columns }) {
             <div className="flex items-center justify-center border-r border-[var(--color-border)] px-3 py-3.5 md:px-4 md:py-4">
               <EngineBadges engines={era.keyEngines} />
             </div>
-            <p className={`border-r border-[var(--color-border)] px-4 py-4 ${sectionTableText} leading-[1.45] text-[var(--color-text)] md:px-6 md:py-5`}>{cleanText(era.whyBmwChanged)}</p>
+            <p className={`border-r border-[var(--color-border)] px-4 py-4 ${sectionTableText} leading-[1.45] text-[var(--color-text)] md:px-6 md:py-5`} dangerouslySetInnerHTML={{ __html: cleanText(era.whyBmwChanged) }} />
             <div className="flex gap-3 px-4 py-4 md:px-6 md:py-5">
               <span className="mt-1 flex h-7 w-7 shrink-0 items-center justify-center rounded-full border border-[var(--color-primary)] text-[var(--color-primary)]">
                 <Icon type="info" className="h-5 w-5" />
@@ -215,8 +215,8 @@ export default function EngineEvolution({ data }) {
       <div className="grid gap-6 md:grid-cols-[minmax(0,1fr)_600px] md:items-start">
         <div>
         <h2 className="max-w-[760px] text-[29px] font-bold leading-[1.08] tracking-normal md:text-[45px]">
-            {title.main}
-            {title.accent ? <span className="text-[var(--color-primary)]"> {title.accent}</span> : null}
+            <span dangerouslySetInnerHTML={{ __html: title.main }} />
+            {title.accent ? <span className="text-[var(--color-primary)]" dangerouslySetInnerHTML={{ __html: title.accent }} /> : null}
           </h2>
           <div className="mt-3">
             <MStripe />

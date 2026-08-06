@@ -73,9 +73,7 @@ export default function Overview({ data }) {
               Overview
             </span>
 
-            <h2 className="mt-1.5 text-[2.55rem] font-bold leading-[1.05] tracking-normal text-[var(--color-text)] md:text-[3.5rem]">
-              {data.h2}
-            </h2>
+            <h2 className="mt-1.5 text-[2.55rem] font-bold leading-[1.05] tracking-normal text-[var(--color-text)] md:text-[3.5rem]" dangerouslySetInnerHTML={{ __html: data.h2 }} />
 
             <div className="mt-2.5">
               <MStripe />
@@ -101,7 +99,7 @@ export default function Overview({ data }) {
                         <GenIcon name={factIcons[index % factIcons.length]} className="h-4 w-4" />
                       </span>
                       <div className="min-w-0 flex-1">
-                        <p className="text-[0.8rem] font-semibold leading-[1.25] text-[var(--color-text)]">{fact.label}</p>
+                        <p className="text-[0.8rem] font-semibold leading-[1.25] text-[var(--color-text)]" dangerouslySetInnerHTML={{ __html: fact.label }} />
                         <p className="mt-0.5 text-[0.74rem] leading-[1.3] text-[var(--color-text-muted)]" dangerouslySetInnerHTML={{ __html: fact.value }} />
                       </div>
                     </div>

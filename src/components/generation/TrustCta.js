@@ -6,13 +6,13 @@ import GenIcon from "./GenIcons";
 
 const pointIcons = ["shield", "scale", "wrench"];
 
-function TitleWithAccent({ title }) {
+function TitleWithAccent({ title = "" }) {
   const markerIndex = title.indexOf(".uk");
-  if (markerIndex === -1) return title;
+  if (markerIndex === -1) return <span dangerouslySetInnerHTML={{ __html: title }} />;
 
   return (
     <>
-      {title.slice(0, markerIndex)}
+      <span dangerouslySetInnerHTML={{ __html: title.slice(0, markerIndex) }} />
       <span className="text-[var(--color-primary)]">.uk</span>
     </>
   );
@@ -44,7 +44,7 @@ export default function TrustCta({ data }) {
                     <GenIcon name={point.icon || pointIcons[index % pointIcons.length]} className="h-4.5 w-4.5" />
                   </span>
                   <div className="min-w-0 flex-1">
-                    <p className="text-[0.95rem] font-semibold text-[var(--color-text)]">{point.title}</p>
+                    <p className="text-[0.95rem] font-semibold text-[var(--color-text)]" dangerouslySetInnerHTML={{ __html: point.title }} />
                     <p className="text-[0.83rem] leading-[1.45] text-[var(--color-text-muted)]" dangerouslySetInnerHTML={{ __html: point.text }} />
                   </div>
                   <span className="mt-1 shrink-0 text-[var(--color-primary)]">
@@ -84,7 +84,7 @@ export default function TrustCta({ data }) {
                 href={data.ctaButton.href}
                 className="flex w-full shrink-0 items-center justify-center gap-2 text-center rounded-md bg-[var(--color-primary)] px-5 py-3 text-[0.8rem] font-bold uppercase tracking-wide text-white shadow-[0_12px_28px_var(--color-shadow)] md:inline-flex md:w-auto md:whitespace-nowrap"
               >
-                {data.ctaButton.label.replace(/\s*→\s*$/, "")}
+                <span dangerouslySetInnerHTML={{ __html: data.ctaButton.label.replace(/\s*→\s*$/, "") }} />
                 <GenIcon name="chevron" className="h-4 w-4" />
               </a>
             ) : null}

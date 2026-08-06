@@ -21,7 +21,7 @@ function VariantPanel({ title, icon, variants, tone }) {
         <p className="mt-1 text-[0.98rem] font-bold leading-snug text-[var(--color-text)]">
           {variants.map((v, index) => (
             <span key={index}>
-              <Link href={v.url}>{v.name}</Link> {index < variants.length - 1 && " • "}
+              <Link href={v.url} dangerouslySetInnerHTML={{ __html: v.name }} /> {index < variants.length - 1 && " • "}
             </span>
           ))}
         </p>

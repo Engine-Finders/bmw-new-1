@@ -258,9 +258,9 @@ function DesktopRow({ item }) {
   }
 
   return (
-    <Link href={models[0].href} className={rowClasses}>
+    <div className={rowClasses}>
       {content}
-    </Link>
+    </div>
   );
 }
 
@@ -325,9 +325,9 @@ function MobileRow({ item }) {
   }
 
   return (
-    <Link href={models[0].href} className={rowClasses}>
+    <div className={rowClasses}>
       {content}
-    </Link>
+    </div>
   );
 }
 

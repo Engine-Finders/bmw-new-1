@@ -1,6 +1,6 @@
 import Link from "next/link";
 import MStripe from "@/components/reusableComponents/MStripe";
-import { sectionBody, sectionButton, sectionTableText } from "@/components/models/sectionTypography";
+import { sectionBody, sectionButton, sectionH2, sectionTableText } from "@/components/models/sectionTypography";
 
 function cleanText(text = "") {
   return text
@@ -73,12 +73,12 @@ export default function FAQAccordion({ data }) {
 
   return (
     <section className="rounded-md border border-[var(--color-border)] bg-[var(--color-surface-raised)] p-4 text-[var(--color-text)] shadow-[0_10px_30px_var(--color-shadow)] md:p-6">
-      <h2 className="max-w-[980px] text-[29px] font-bold leading-[1.08] tracking-normal text-[var(--color-text)] md:text-[45px]">
-        {title.before}
+      <h2 className={`max-w-[980px] font-bold tracking-normal text-[var(--color-text)] ${sectionH2}`}>
+        <span dangerouslySetInnerHTML={{ __html: title.before }} />
         {title.accent ? (
           <>
             {" "}
-            <span className="text-[var(--color-primary)]">{title.accent}</span>
+            <span className="text-[var(--color-primary)]" dangerouslySetInnerHTML={{ __html: title.accent }} />
           </>
         ) : null}
       </h2>

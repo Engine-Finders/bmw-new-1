@@ -17,13 +17,13 @@ function TieredCostTable({ tiers }) {
           <div key={tier.tier} className="border-b border-[var(--color-border)] p-3 last:border-b-0">
             <p className={`flex items-center gap-1.5 text-[0.76rem] font-semibold uppercase tracking-wide ${toneClass}`}>
               <GenIcon name={isCatastrophic ? "warning" : "wrench"} className="h-3.5 w-3.5" />
-              {tier.tier}
+              <span dangerouslySetInnerHTML={{ __html: tier.tier }} />
             </p>
             <div className="mt-1.5 grid grid-cols-2 gap-x-3 gap-y-0.5 text-[0.78rem]">
               <span className="text-[var(--color-text-soft)]">Dealer</span>
-              <span className="text-right text-[var(--color-text)]">{tier.dealer}</span>
+              <span className="text-right text-[var(--color-text)]" dangerouslySetInnerHTML={{ __html: tier.dealer }} />
               <span className="text-[var(--color-text-soft)]">Specialist</span>
-              <span className="text-right font-semibold text-[var(--color-text)]">{tier.specialist}</span>
+              <span className="text-right font-semibold text-[var(--color-text)]" dangerouslySetInnerHTML={{ __html: tier.specialist }} />
             </div>
             <p className="mt-1.5 text-[0.76rem] leading-[1.35] text-[var(--color-text-muted)]" dangerouslySetInnerHTML={{ __html: tier.work }} />
             {tier.note ? <p className="mt-0.5 text-[0.72rem] italic text-[var(--color-text-soft)]" dangerouslySetInnerHTML={{ __html: tier.note }} /> : null}
@@ -51,9 +51,9 @@ function ProblemCard({ problem }) {
             <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-md bg-[var(--color-primary)] text-[0.8rem] font-bold text-white">
               {String(problem.id).padStart(2, "0")}
             </span>
-            <p className="text-[1rem] font-bold leading-tight text-[var(--color-text)]">{code}</p>
+            <p className="text-[1rem] font-bold leading-tight text-[var(--color-text)]" dangerouslySetInnerHTML={{ __html: code }} />
           </div>
-          {name ? <p className="mt-1 text-[1rem] font-bold leading-tight text-[var(--color-text)]">{name}</p> : null}
+          {name ? <p className="mt-1 text-[1rem] font-bold leading-tight text-[var(--color-text)]" dangerouslySetInnerHTML={{ __html: name }} /> : null}
         </div>
         <div className="relative h-20 w-20 shrink-0 overflow-hidden rounded-md">
           <Image src="/e90/section6.png" alt={problem.title} fill className="object-cover" sizes="90px" />
@@ -66,14 +66,14 @@ function ProblemCard({ problem }) {
             <GenIcon name="clock" className="h-3.5 w-3.5" />
             Affected models:
           </p>
-          <p className="mt-0.5 text-[var(--color-text-muted)]">{problem.affectedModels}</p>
+          <p className="mt-0.5 text-[var(--color-text-muted)]" dangerouslySetInnerHTML={{ __html: problem.affectedModels }} />
         </div>
         <div>
           <p className="flex items-center gap-1.5 font-semibold text-[var(--color-primary)]">
             <GenIcon name="clock" className="h-3.5 w-3.5" />
             Typical failure mileage:
           </p>
-          <p className="mt-0.5 text-[var(--color-text-muted)]">{problem.typicalFailureMileage}</p>
+          <p className="mt-0.5 text-[var(--color-text-muted)]" dangerouslySetInnerHTML={{ __html: problem.typicalFailureMileage }} />
         </div>
         <div>
           <p className="flex items-center gap-1.5 font-semibold text-[var(--color-primary)]">
@@ -107,7 +107,7 @@ function ProblemCard({ problem }) {
             href={problem.cta.href}
             className="flex items-center justify-center gap-2 rounded-md bg-[var(--color-primary)] px-4 py-2.5 text-center text-[0.8rem] font-semibold text-white"
           >
-            {problem.cta.label.replace(/\s*→\s*$/, "")}
+            <span dangerouslySetInnerHTML={{ __html: problem.cta.label.replace(/\s*→\s*$/, "") }} />
             <GenIcon name="arrow" className="h-4 w-4" />
           </a>
         </div>
@@ -122,9 +122,7 @@ export default function CommonProblems({ data }) {
   return (
     <section className="w-full bg-[var(--color-page)] py-8 text-[var(--color-text)] md:py-10">
       <div className="relative mx-auto w-full max-w-8xl px-4 md:px-8">
-        <h2 className="text-[2.55rem] font-bold leading-[1.05] tracking-normal text-[var(--color-text)] md:text-[3.5rem]">
-          {data.h2 || "Common Problems"}
-        </h2>
+        <h2 className="text-[2.55rem] font-bold leading-[1.05] tracking-normal text-[var(--color-text)] md:text-[3.5rem]" dangerouslySetInnerHTML={{ __html: data.h2 || "Common Problems" }} />
         <div className="mt-3">
           <MStripe />
         </div>
@@ -146,7 +144,7 @@ export default function CommonProblems({ data }) {
                   <GenIcon name={item.icon} className="h-5 w-5" />
                 </span>
                 <div>
-                  <p className="text-[0.85rem] font-semibold text-[var(--color-text)]">{item.title}</p>
+                  <p className="text-[0.85rem] font-semibold text-[var(--color-text)]" dangerouslySetInnerHTML={{ __html: item.title }} />
                   <p className="text-[0.76rem] leading-[1.35] text-[var(--color-text-muted)]" dangerouslySetInnerHTML={{ __html: item.text }} />
                 </div>
               </div>

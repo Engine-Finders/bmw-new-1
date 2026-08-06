@@ -103,16 +103,14 @@ function HeroTitle({ title, isDark }) {
 
   if (guideIndex === -1) {
     return (
-      <h1 className={`max-w-[720px] font-bold tracking-normal ${sectionH1} ${textClass}`}>
-        {title}
-      </h1>
+      <h1 className={`max-w-[720px] font-bold tracking-normal ${sectionH1} ${textClass}`} dangerouslySetInnerHTML={{ __html: title }} />
     );
   }
 
   return (
     <h1 className={`max-w-[760px] font-bold tracking-normal ${sectionH1} ${textClass}`}>
-      {title.slice(0, guideIndex)}
-      <span className="text-[var(--color-primary)]">{title.slice(guideIndex)}</span>
+      <span dangerouslySetInnerHTML={{ __html: title.slice(0, guideIndex) }} />
+      <span className="text-[var(--color-primary)]" dangerouslySetInnerHTML={{ __html: title.slice(guideIndex) }} />
     </h1>
   );
 }
@@ -133,14 +131,14 @@ function StatCard({ item, index, isDark }) {
         <p className="text-[19px] font-bold leading-tight text-[var(--color-text)] md:text-[18px]">
           {stat.value ? (
             <>
-              {stat.value} <span className="text-[12px] font-semibold md:text-[12px]">{renderStatLabel(stat.label)}</span>
+              <span dangerouslySetInnerHTML={{ __html: stat.value }} /> <span className="text-[12px] font-semibold md:text-[12px]">{renderStatLabel(stat.label)}</span>
             </>
           ) : (
             renderStatLabel(stat.label)
           )}
         </p>
         <span className="mt-2 block h-px w-full bg-[var(--color-border)] opacity-70 md:hidden" />
-        {stat.detail ? <p className="mt-1.5 text-[12px] leading-[1.3] text-[var(--color-text-muted)] md:mt-1">{stat.detail}</p> : null}
+        {stat.detail ? <p className="mt-1.5 text-[12px] leading-[1.3] text-[var(--color-text-muted)] md:mt-1" dangerouslySetInnerHTML={{ __html: stat.detail }} /> : null}
       </div>
     </li>
   );
@@ -188,14 +186,14 @@ export default function ModelHero({ data }) {
             }`}
           >
             <MetaIcon />
-            <strong className="font-semibold text-[var(--color-primary)]">{meta.model}</strong>
+            <strong className="font-semibold text-[var(--color-primary)]" dangerouslySetInnerHTML={{ __html: meta.model }} />
             <MetaSeparator />
-            <span>{meta.years}</span>
+            <span dangerouslySetInnerHTML={{ __html: meta.years }} />
             <MetaSeparator />
-            <span>{meta.generations}</span>
+            <span dangerouslySetInnerHTML={{ __html: meta.generations }} />
             <MetaSeparator />
             <MetaIcon type="engine" />
-            <span>{meta.engines}</span>
+            <span dangerouslySetInnerHTML={{ __html: meta.engines }} />
           </div>
 
           <div className="mt-6 md:mt-8">
@@ -211,7 +209,7 @@ export default function ModelHero({ data }) {
               href={data.primaryCta.href}
               className={`mt-5 inline-flex min-h-10 items-center justify-center gap-3 rounded-md bg-[var(--color-primary)] px-4 py-2 font-bold text-white shadow-[0_12px_28px_var(--color-shadow)] transition-all duration-200 hover:text-black hover:shadow-[0_18px_40px_rgba(0,0,0,0.28)] ${sectionButton} md:min-h-11 md:px-5`}
             >
-              <span>{data.primaryCta.label.replace(/\s*(?:→|â†’)\s*$/, "")}</span>
+              <span dangerouslySetInnerHTML={{ __html: data.primaryCta.label.replace(/\s*(?:→|â†’)\s*$/, "") }} />
               <ArrowIcon />
             </Link>
           ) : null}

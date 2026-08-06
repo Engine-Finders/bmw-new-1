@@ -112,7 +112,7 @@ function Feature({ icon, title, text }) {
         <Icon name={icon} className="h-7 w-7 md:h-8 md:w-8" stroke={2.2} />
       </span>
       <span className="min-w-0">
-        <strong className="block text-[13px] leading-tight text-[var(--color-text)] md:text-[14px]">{title}</strong>
+        <strong className="block text-[13px] leading-tight text-[var(--color-text)] md:text-[14px]" dangerouslySetInnerHTML={{ __html: title }} />
         <span className="mt-0.5 block text-[12px] leading-[1.2] text-[var(--color-text-muted)] md:text-[13px]">{text}</span>
       </span>
     </li>
@@ -137,7 +137,7 @@ function PrimaryPath({ path, modelName }) {
             <span className="text-[var(--color-primary)]">Know</span> your engine?
           </h3>
           <p className={`mt-2 max-w-[420px] text-[var(--color-text-muted)] ${sectionDescription}`}>
-            Launch the BMW diagnostic calculator with {modelName} pre-selected.
+            Launch the BMW diagnostic calculator with <span dangerouslySetInnerHTML={{ __html: modelName }} /> pre-selected.
           </p>
         </div>
         <CircleIcon name="engineSearch" large className="order-1 md:order-2" />
@@ -148,7 +148,7 @@ function PrimaryPath({ path, modelName }) {
           <Icon name="calculator" className="h-8 w-8 shrink-0" />
           <span className="min-w-0">
             <span className="block leading-tight">Launch BMW Diagnostic Calculator</span>
-            <span className="mt-0.5 block text-[12px] font-normal leading-tight md:text-[13px]">{modelName} pre-selected</span>
+            <span className="mt-0.5 block text-[12px] font-normal leading-tight md:text-[13px]"><span dangerouslySetInnerHTML={{ __html: modelName }} /> pre-selected</span>
           </span>
         </span>
         <ArrowIcon className="h-5 w-5 shrink-0" />
@@ -197,7 +197,7 @@ function SecondaryPath({ path }) {
           <Icon name="info" className="h-5 w-5" />
         </span>
         <p className={`text-[var(--color-text)] ${sectionBody}`}>
-          <strong className="font-bold">{note}</strong>
+          <strong className="font-bold" dangerouslySetInnerHTML={{ __html: note }} />
           <br />
           <span className="text-[var(--color-text-muted)]">We&apos;ll pinpoint your exact engine code before running the diagnostics.</span>
         </p>
@@ -255,11 +255,11 @@ export default function CalculatorCTA({ data }) {
         <div className="relative z-10 px-4 py-5 lg:px-6 lg:py-6">
           <div className="max-w-[820px]">
             <h2 className="max-w-[820px] text-[29px] font-bold leading-[1.08] tracking-normal text-[var(--color-text)] md:text-[45px]">
-              {title.before}
+              <span dangerouslySetInnerHTML={{ __html: title.before }} />
               {title.accent ? (
                 <>
                   {" "}
-                  <span className="text-[var(--color-primary)]">{title.accent}</span>
+                  <span className="text-[var(--color-primary)]" dangerouslySetInnerHTML={{ __html: title.accent }} />
                 </>
               ) : null}
             </h2>

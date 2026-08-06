@@ -20,12 +20,12 @@ function DesktopRow({ row, isDark }) {
     <div
       className={`grid grid-cols-[1.3fr_1fr_1fr_1.1fr_1fr_0.8fr] items-center gap-px ${rowClass} px-5 py-3.5 text-[0.85rem] border-b ${borderBottom} last:border-b-0`}
     >
-      <span className={`px-3 font-semibold border-r ${cellDivider}`}>{row.variant}</span>
-      <span className={`px-3 ${codeText} border-r ${cellDivider}`}>{row.engineCode}</span>
-      <span className={`px-3 ${mutedText} border-r ${cellDivider}`}>{row.usedSupply}</span>
-      <span className={`px-3 font-semibold border-r ${cellDivider}`}>{row.reconditionedSupply}</span>
-      <span className={`px-3 ${mutedText} border-r ${cellDivider}`}>{row.rebuiltSupply}</span>
-      <span className={`px-3 ${mutedText}`}>{row.labourHours}</span>
+      <span className={`px-3 font-semibold border-r ${cellDivider}`} dangerouslySetInnerHTML={{ __html: row.variant }} />
+      <span className={`px-3 ${codeText} border-r ${cellDivider}`} dangerouslySetInnerHTML={{ __html: row.engineCode }} />
+      <span className={`px-3 ${mutedText} border-r ${cellDivider}`} dangerouslySetInnerHTML={{ __html: row.usedSupply }} />
+      <span className={`px-3 font-semibold border-r ${cellDivider}`} dangerouslySetInnerHTML={{ __html: row.reconditionedSupply }} />
+      <span className={`px-3 ${mutedText} border-r ${cellDivider}`} dangerouslySetInnerHTML={{ __html: row.rebuiltSupply }} />
+      <span className={`px-3 ${mutedText}`} dangerouslySetInnerHTML={{ __html: row.labourHours }} />
     </div>
   );
 }
@@ -44,18 +44,18 @@ function FuelGroup({ title, icon, rows, isDark }) {
       {rows.map((row) => (
         <div key={row.engineCode} className="border-b border-[var(--color-border)] p-4 last:border-b-0">
           <div className="flex items-center justify-between">
-            <p className="text-[0.92rem] font-bold text-[var(--color-text)]">{row.variant}</p>
-            <span className="text-[0.78rem] font-semibold text-[var(--color-primary)]">{row.engineCode}</span>
+            <p className="text-[0.92rem] font-bold text-[var(--color-text)]" dangerouslySetInnerHTML={{ __html: row.variant }} />
+            <span className="text-[0.78rem] font-semibold text-[var(--color-primary)]" dangerouslySetInnerHTML={{ __html: row.engineCode }} />
           </div>
           <div className="mt-2 grid grid-cols-2 gap-y-1 text-[0.8rem]">
             <span className="text-[var(--color-text-soft)]">Used</span>
-            <span className="text-right text-[var(--color-text)]">{row.usedSupply}</span>
+            <span className="text-right text-[var(--color-text)]" dangerouslySetInnerHTML={{ __html: row.usedSupply }} />
             <span className="text-[var(--color-text-soft)]">Reconditioned</span>
-            <span className="text-right font-semibold text-[var(--color-text)]">{row.reconditionedSupply}</span>
+            <span className="text-right font-semibold text-[var(--color-text)]" dangerouslySetInnerHTML={{ __html: row.reconditionedSupply }} />
             <span className="text-[var(--color-text-soft)]">Rebuilt</span>
-            <span className="text-right text-[var(--color-text)]">{row.rebuiltSupply}</span>
+            <span className="text-right text-[var(--color-text)]" dangerouslySetInnerHTML={{ __html: row.rebuiltSupply }} />
             <span className="text-[var(--color-text-soft)]">Labour</span>
-            <span className="text-right text-[var(--color-text)]">{row.labourHours}</span>
+            <span className="text-right text-[var(--color-text)]" dangerouslySetInnerHTML={{ __html: row.labourHours }} />
           </div>
         </div>
       ))}
@@ -90,9 +90,7 @@ export default function ReplacementCosts({ data }) {
         </div>
 
         <div className="relative mx-auto w-full max-w-8xl px-4 py-6 md:px-8 md:py-10">
-          <h2 className="max-w-[720px] text-[2.55rem] font-bold leading-[1.05] tracking-normal text-[var(--color-text)] md:text-[3.5rem]">
-            {data.h2}
-          </h2>
+          <h2 className="max-w-[720px] text-[2.55rem] font-bold leading-[1.05] tracking-normal text-[var(--color-text)] md:text-[3.5rem]" dangerouslySetInnerHTML={{ __html: data.h2 }} />
           <div className="mt-3">
             <MStripe />
           </div>
@@ -132,7 +130,7 @@ export default function ReplacementCosts({ data }) {
                   <GenIcon name={item.icon} className="h-5 w-5" />
                 </span>
                 <div>
-                  <p className="text-[0.85rem] font-semibold text-[var(--color-text)]">{item.title}</p>
+                  <p className="text-[0.85rem] font-semibold text-[var(--color-text)]" dangerouslySetInnerHTML={{ __html: item.title }} />
                   <p className="text-[0.76rem] leading-[1.35] text-[var(--color-text-muted)]" dangerouslySetInnerHTML={{ __html: item.text }} />
                 </div>
               </div>

@@ -111,14 +111,11 @@ function ProblemCard({ problem, index }) {
 <div className="mt-3 md:hidden">
   <SeverityBadge severity={problem.severity} />
 </div>
-<p
-  className="mt-2 text-[13px] leading-[1.45] text-[var(--color-text-muted)] md:mt-2.5 md:text-[14px]"
-  dangerouslySetInnerHTML={{ __html: cleanText(problem.description) }}
-/>
-<Link href={href} className="mt-auto flex items-center justify-end gap-2 pt-3 text-[15px] font-bold text-[var(--color-primary)] md:pt-4 md:text-[16px]">
-  {label.replace(/\s*\u2192\s*$/, "")}
-  <ArrowIcon />
-</Link>
+<p className={`mt-2 ${sectionTableText} text-[var(--color-text-muted)] md:mt-3`} dangerouslySetInnerHTML={{ __html: cleanText(problem.description) }} />
+        <Link href={href} className="mt-auto flex items-center justify-end gap-2 pt-4 text-[18px] font-bold text-[var(--color-primary)]">
+          <span dangerouslySetInnerHTML={{ __html: label.replace(/\s*\u2192\s*$/, "") }} />
+          <ArrowIcon />
+        </Link>
       </div>
     </article>
   );
@@ -128,20 +125,20 @@ function UrgencyKey({ items }) {
   if (!items?.length) return null;
 
   return (
-    <div className="rounded-md border border-[var(--color-border)] bg-[var(--color-surface)] p-3.5 shadow-[0_8px_22px_var(--color-shadow)] md:p-4">
-      <div className="grid grid-cols-2 gap-3 md:grid-cols-[1fr_repeat(4,1.2fr)] md:items-start">
-        <h3 className="col-span-2 text-center text-[15px] font-bold uppercase text-[var(--color-text)] md:col-span-1 md:text-left">Urgency Key</h3>
+    <div className="rounded-md border border-[var(--color-border)] bg-[var(--color-surface)] p-4 shadow-[0_8px_22px_var(--color-shadow)]">
+      <div className="grid gap-4 md:grid-cols-[1fr_repeat(4,1.2fr)] md:items-start">
+        <h3 className="text-[15px] font-bold uppercase text-[var(--color-text)]">Urgency Key</h3>
         {items.map((item) => {
           const label = cleanText(item.label);
           const type = label.toLowerCase();
           const dot = severityStyles[type]?.dot || "bg-yellow-400";
 
           return (
-            <div key={label} className="flex items-start gap-3 border-[var(--color-border)] md:border-l md:pl-6">
+            <div key={label} className="flex gap-3 border-[var(--color-border)] md:border-l md:pl-6">
               <span className={`mt-1 h-4 w-4 shrink-0 rounded-full ${dot}`} />
-              <p className="text-[13px] leading-[1.35] text-[var(--color-text-muted)] md:text-[15px]">
-                <strong className="block text-[var(--color-text)]">{label}</strong>
-                {cleanText(item.text)}
+              <p className="text-[15px] leading-[1.35] text-[var(--color-text-muted)]">
+                <strong className="block text-[var(--color-text)]" dangerouslySetInnerHTML={{ __html: label }} />
+                <span dangerouslySetInnerHTML={{ __html: cleanText(item.text) }} />
               </p>
             </div>
           );
@@ -160,9 +157,9 @@ export default function CommonProblems({ data }) {
   return (
     <section data-theme-mode={theme} className="bg-[var(--color-page)] py-6 text-[var(--color-text)]">
       <div>
-        <h2 className="max-w-[860px] text-[29px] font-bold leading-[1.08] tracking-normal md:text-[45px]">
-          {title.main}
-          {title.accent ? <span className="text-[var(--color-primary)]">{title.accent}</span> : null}
+        <h2 className={`max-w-[860px] ${sectionH2} tracking-normal`}>
+          <span dangerouslySetInnerHTML={{ __html: title.main }} />
+          {title.accent ? <span className="text-[var(--color-primary)]" dangerouslySetInnerHTML={{ __html: title.accent }} /> : null}
         </h2>
         <div className="mt-2">
           <MStripe />

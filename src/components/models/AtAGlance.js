@@ -170,7 +170,7 @@ function RatingCard({ row }) {
       </span>
       <div>
         <p className="text-[18px] font-bold">Overall Rating</p>
-        <p className="mt-2 text-[40px] leading-none text-[var(--color-primary)] md:text-[50px]">{cleanText(row.value).replace(" 3.9/5", "")}</p>
+        <p className="mt-2 text-[40px] leading-none text-[var(--color-primary)] md:text-[50px]" dangerouslySetInnerHTML={{ __html: cleanText(row.value).replace(" 3.9/5", "") }} />
         <p className="mt-2 text-[18px] font-bold text-[var(--color-primary)]">3.9/5</p>
         <p className="mt-2 text-[15px] leading-[1.35] text-white/82">
           A perfect blend of performance, engineering excellence, and drivability.
@@ -212,11 +212,11 @@ export default function AtAGlance({ data }) {
       <div className="relative mx-auto w-full max-w-8xl px-4 md:px-8">
         <div className="max-w-[510px]">
           <h2 className={`font-bold tracking-normal text-[var(--color-text)] ${sectionH2}`}>
-            {title.before}
+            <span dangerouslySetInnerHTML={{ __html: title.before }} />
             {title.accent ? (
               <>
                 <br />
-                <span className="text-[var(--color-primary)]">{title.accent}</span>
+                <span className="text-[var(--color-primary)]" dangerouslySetInnerHTML={{ __html: title.accent }} />
               </>
             ) : null}
           </h2>
