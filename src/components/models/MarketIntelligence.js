@@ -132,10 +132,10 @@ function RichText({ value, strongFirst = false }) {
 function SignalTable({ rows }) {
   return (
     <div className="overflow-hidden rounded-md border border-[var(--color-border)] bg-[var(--color-surface-raised)] shadow-[0_10px_30px_var(--color-shadow)]">
-      <div className="grid grid-cols-[39%_28%_33%] bg-[var(--color-primary-strong)] text-[15px] font-bold text-white md:grid-cols-[32%_33%_35%] md:text-[16px]">
-        <div className="px-3 py-3 md:px-6">Signal</div>
-        <div className="border-l border-white/28 px-3 py-3 md:px-6">2025 Data</div>
-        <div className="border-l border-white/28 px-3 py-3 md:px-6">Demand Trend</div>
+      <div className="grid grid-cols-[34%_30%_36%] bg-[var(--color-primary-strong)] text-[12px] font-bold text-white md:grid-cols-[32%_33%_35%] md:text-[14px]">
+        <div className="px-2 py-2 md:px-5 md:py-3">Signal</div>
+        <div className="border-l border-white/28 px-2 py-2 md:px-3 md:py-2">2025 Data</div>
+        <div className="border-l border-white/28 px-2 py-2 md:px-3 md:py-2">Demand Trend</div>
       </div>
 
       {rows.map((row, index) => {
@@ -143,17 +143,17 @@ function SignalTable({ rows }) {
         const isEngine = row.signal?.includes("(");
 
         return (
-          <div key={`${row.signal}-${index}`} className="grid grid-cols-[39%_28%_33%] border-t border-[var(--color-border)] text-[var(--color-text)] md:grid-cols-[32%_33%_35%]">
-            <div className="flex items-center gap-2 px-3 py-4 md:gap-5 md:px-6">
+          <div key={`${row.signal}-${index}`} className="grid grid-cols-[34%_30%_36%] border-t border-[var(--color-border)] text-[var(--color-text)] md:grid-cols-[32%_33%_35%]">
+            <div className="flex min-w-0 items-center gap-2 px-2 py-3 md:gap-4 md:px-3 md:py-3">
               <CircleIcon small>{signalIconPaths[isEngine ? 1 : 0]}</CircleIcon>
-              <p className={`min-w-0 ${sectionTableText} font-bold leading-[1.25] md:text-[18px]`}>{cleanText(row.signal)}</p>
+              <p className="min-w-0 break-words text-[12px] font-bold leading-[1.25] md:text-[15px]">{cleanText(row.signal)}</p>
             </div>
-            <div className={`border-l border-[var(--color-border)] px-3 py-4 ${sectionTableText} leading-[1.35] md:px-6 md:text-[18px]`}>
+            <div className="border-l border-[var(--color-border)] px-2 py-3 text-[12px] leading-[1.35] md:px-3 md:text-[15px]">
               <RichText value={row.data} />
             </div>
-            <div className={`flex items-start gap-2 border-l border-[var(--color-border)] px-3 py-4 ${sectionTableText} leading-[1.35] md:items-center md:gap-4 md:px-6 md:text-[18px]`}>
+            <div className="flex min-w-0 items-start gap-2 border-l border-[var(--color-border)] px-2 py-3 text-[12px] leading-[1.35] md:items-center md:gap-4 md:px-3 md:text-[15px]">
               <TrendIcon trend={trend.trend} />
-              <p>
+              <p className="min-w-0 break-words hyphens-auto whitespace-normal">
                 <strong className="font-bold text-[var(--color-text)]">{trend.label.split(" ")[0]}</strong>
                 {trend.label.includes(" ") ? ` ${trend.label.split(" ").slice(1).join(" ")}` : ""}
                 {trend.note ? <span className="ml-1 text-[var(--color-primary)]">{trend.note}</span> : null}
@@ -170,19 +170,19 @@ function InsightsPanel({ insights }) {
   if (!insights?.length) return null;
 
   return (
-    <div className="rounded-md border border-[var(--color-border)] bg-[var(--color-surface-raised)] p-5 shadow-[0_10px_30px_var(--color-shadow)] md:col-span-3 md:p-6">
-      <div className="mb-5 flex items-center gap-3 text-[var(--color-primary)]">
-        <svg aria-hidden="true" viewBox="0 0 24 24" className="h-6 w-6" fill="none" stroke="currentColor" strokeWidth="2.4">
+    <div className="rounded-md border border-[var(--color-border)] bg-[var(--color-surface-raised)] p-3 shadow-[0_10px_30px_var(--color-shadow)] md:col-span-3 md:p-3.5">
+      <div className="mb-4 flex items-center gap-3 text-[var(--color-primary)]">
+        <svg aria-hidden="true" viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="2.4">
           <path d="M5 19V9m5 10V5m5 14v-7m5 7H3" />
         </svg>
-        <h3 className="text-[18px] font-bold md:text-[18px]">Insights from the data:</h3>
+        <h3 className="text-[15px] font-bold md:text-[16px]">Insights from the data:</h3>
       </div>
 
-      <div className="grid gap-5 md:grid-cols-3 md:gap-0">
+      <div className="grid gap-3 md:grid-cols-3 md:gap-0">
         {insights.map((insight, index) => (
-          <article key={insight} className="flex gap-4 border-[var(--color-border)] md:border-l md:px-7 md:first:border-l-0 md:first:pl-0 md:last:pr-0">
+          <article key={insight} className="flex gap-3 border-[var(--color-border)] md:border-l md:px-3 md:first:border-l-0 md:first:pl-0 md:last:pr-0">
             <CircleIcon>{insightIconPaths[index] || insightIconPaths[0]}</CircleIcon>
-            <p className={`text-[15px] leading-[1.42] text-[var(--color-text)] md:text-[16px]`}>
+            <p className="text-[13px] leading-[1.42] text-[var(--color-text)] md:text-[14px]">
               <RichText value={insight} strongFirst />
             </p>
           </article>
@@ -198,10 +198,10 @@ function LiveFeed({ note }) {
   const displayNote = /module embeds here/i.test(note) ? "Real-time enquiry activity across the UK." : cleanText(note);
 
   return (
-    <aside className="rounded-md border border-[var(--color-border)] bg-[var(--color-surface-raised)] p-5 shadow-[0_10px_30px_var(--color-shadow)] md:p-6">
+    <aside className="rounded-md border border-[var(--color-border)] bg-[var(--color-surface-raised)] p-4 shadow-[0_10px_30px_var(--color-shadow)] md:p-5">
       <div className="flex items-center justify-between gap-4">
-        <h3 className="text-[18px] font-bold text-[var(--color-text)] md:text-[18px]">Live Enquiry Feed</h3>
-        <span className="inline-flex items-center gap-2 text-[15px] text-[var(--color-text-muted)]">
+        <h3 className="text-[16px] font-bold text-[var(--color-text)] md:text-[17px]">Live Enquiry Feed</h3>
+        <span className="inline-flex items-center gap-2 text-[13px] text-[var(--color-text-muted)]">
           <span className="h-2 w-2 rounded-full bg-[var(--color-primary)]" />
           Live
         </span>
@@ -213,8 +213,8 @@ function LiveFeed({ note }) {
           <circle key={x} cx={x} cy={[64, 40, 37, 26, 25][index]} r="4" fill="var(--color-surface)" stroke="currentColor" strokeWidth="3" />
         ))}
       </svg>
-      <p className="mt-3 text-[15px] leading-[1.35] text-[var(--color-text-muted)]">{displayNote}</p>
-      <Link href="#" className="mt-4 inline-flex min-h-11 w-full items-center justify-center gap-3 rounded-md border border-[var(--color-primary)] px-5 py-3 text-[18px] font-bold text-[var(--color-primary)] transition-all duration-200 hover:text-black hover:shadow-[0_12px_24px_rgba(0,0,0,0.14)]">
+      <p className="mt-3 text-[14px] leading-[1.35] text-[var(--color-text-muted)]">{displayNote}</p>
+      <Link href="#" className="mt-4 inline-flex min-h-11 w-full items-center justify-center gap-3 rounded-md border border-[var(--color-primary)] px-5 py-3 text-[15px] font-bold text-[var(--color-primary)] transition-all duration-200 hover:text-black hover:shadow-[0_12px_24px_rgba(0,0,0,0.14)]">
         View Live Feed
         <svg aria-hidden="true" viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2">
           <path d="M5 12h14m-6-6 6 6-6 6" />
@@ -227,23 +227,23 @@ function LiveFeed({ note }) {
 function PullQuote({ data }) {
   if (!data) return null;
 
-  return (
-    <div className="grid overflow-hidden rounded-md border border-[var(--color-border)] bg-[var(--color-surface-raised)] shadow-[0_10px_30px_var(--color-shadow)] md:grid-cols-[minmax(0,1.55fr)_minmax(360px,0.85fr)]">
-      <div className="p-6 md:p-8">
-        <div className="flex">
-          <div>
-            <p className="text-[15px] font-bold uppercase text-[var(--color-primary)]">Editorial Pull-Quote</p>
-            <h3 className="mt-2 max-w-[560px] text-[35px] font-bold leading-[1.15] text-[var(--color-text)] md:text-[50px]">{cleanText(data.title)}</h3>
-            <blockquote className="mt-4 max-w-[760px] text-[15px] leading-[1.55] text-[var(--color-text)] md:text-[16px]">
-              &ldquo;{cleanText(data.quote)}&rdquo;
-            </blockquote>
+    return (
+      <div className="grid overflow-hidden rounded-md border border-[var(--color-border)] bg-[var(--color-surface-raised)] shadow-[0_10px_30px_var(--color-shadow)] md:grid-cols-[minmax(0,1.46fr)_minmax(290px,0.7fr)]">
+        <div className="p-3 md:p-3.5">
+          <div className="flex">
+            <div>
+              <p className="text-[11px] font-bold uppercase text-[var(--color-primary)] md:text-[12px]">Editorial Pull-Quote</p>
+              <h3 className="mt-1.5 max-w-[560px] text-[22px] font-bold leading-[1.1] text-[var(--color-text)] md:text-[31px]">{cleanText(data.title)}</h3>
+              <blockquote className="mt-2 max-w-[760px] text-[12px] leading-[1.45] text-[var(--color-text)] md:text-[13px]">
+                &ldquo;{cleanText(data.quote)}&rdquo;
+              </blockquote>
+            </div>
           </div>
         </div>
+        <div className="relative min-h-[140px] md:min-h-full">
+          <Image src="/model/Hero-bg-image.webp" alt="" fill className="object-cover object-center" sizes="(min-width: 768px) 35vw, 100vw" />
+        </div>
       </div>
-      <div className="relative min-h-[190px] md:min-h-full">
-        <Image src="/model/Hero-bg-image.webp" alt="" fill className="object-cover object-center" sizes="(min-width: 768px) 35vw, 100vw" />
-      </div>
-    </div>
   );
 }
 
@@ -253,11 +253,11 @@ export default function MarketIntelligence({ data, quoteData }) {
   const title = splitTitle(data.h2);
 
   return (
-    <section className="relative overflow-hidden bg-[var(--color-page)] py-6 text-[var(--color-text)] md:py-7">
+    <section className="relative overflow-hidden py-5 text-[var(--color-text)] md:py-6">
       <div className="relative">
-        <div className="flex flex-col gap-5 md:flex-row md:items-center md:justify-between">
+        <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
           <div>
-            <h2 className={`max-w-[960px] ${sectionH2} tracking-normal text-[var(--color-text)]`}>
+            <h2 className="max-w-[960px] text-[29px] font-bold leading-[1.08] tracking-normal text-[var(--color-text)] md:text-[45px]">
               {title.before}
               {title.accent ? (
                 <>
@@ -267,30 +267,30 @@ export default function MarketIntelligence({ data, quoteData }) {
               ) : null}
               {title.after}
             </h2>
-            <div className="mt-3">
+            <div className="mt-2">
               <MStripe />
             </div>
           </div>
-          <div className="flex min-w-[210px] items-center gap-4 rounded-md border border-[var(--color-border)] bg-[var(--color-surface-raised)] p-5 shadow-[0_8px_22px_var(--color-shadow)]">
+          <div className="flex min-w-[210px] items-center gap-4 rounded-md border border-[var(--color-border)] bg-[var(--color-surface-raised)] p-4 shadow-[0_8px_22px_var(--color-shadow)] md:p-5">
             <CircleIcon>{<path d="M16 11a4 4 0 0 1-8 0m11 8a7 7 0 0 0-14 0m15-11a3 3 0 1 1-2.8-3M4 8a3 3 0 1 0 2.8-3" />}</CircleIcon>
             <div>
-              <p className="text-[28px] font-bold leading-none text-[var(--color-text)] md:text-[40px]">{metricFromTitle(data.h2)}</p>
-              <p className={`mt-2 ${sectionDescription} text-[var(--color-text-muted)]`}>Total Enquiries in 2025</p>
-              <p className="mt-1 text-[15px] font-medium text-[var(--color-primary)]">[BMW-VERIFIED]</p>
+              <p className="text-[24px] font-bold leading-none text-[var(--color-text)] md:text-[34px]">{metricFromTitle(data.h2)}</p>
+              <p className="mt-2 text-[13px] leading-[1.45] text-[var(--color-text-muted)] md:text-[14px]">Total Enquiries in 2025</p>
+              <p className="mt-1 text-[13px] font-medium text-[var(--color-primary)] md:text-[14px]">[BMW-VERIFIED]</p>
             </div>
           </div>
         </div>
 
-        <div className="mt-5">
+        <div className="mt-4">
           <SignalTable rows={data.signals || []} />
         </div>
 
-        <div className="mt-5 grid gap-5 md:grid-cols-[1fr_1fr_1fr_260px]">
+        <div className="mt-4 grid gap-4 md:grid-cols-[1fr_1fr_1fr_260px]">
           <InsightsPanel insights={data.insights || []} />
           <LiveFeed note={data.liveEnquiryFeedNote} />
         </div>
 
-        <div className="mt-5">
+        <div className="mt-4">
           <PullQuote data={quoteData} />
         </div>
       </div>

@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import MStripe from "@/components/reusableComponents/MStripe";
-import { sectionBody, sectionButton, sectionDescription, sectionH2 } from "@/components/models/sectionTypography";
+import { sectionBody, sectionButton, sectionDescription } from "@/components/models/sectionTypography";
 
 const iconPaths = {
   calculator: (
@@ -107,13 +107,13 @@ function CircleIcon({ name, large = false, className = "" }) {
 
 function Feature({ icon, title, text }) {
   return (
-    <li className="flex min-w-0 items-start gap-3 border-r border-[var(--color-border)] pr-4 last:border-r-0 last:pr-0 md:gap-4">
+      <li className="flex min-w-0 items-start gap-2.5 pr-3 last:pr-0 md:gap-3 md:pr-4">
       <span className="mt-0.5 shrink-0 text-[var(--color-primary)]">
-        <Icon name={icon} className="h-8 w-8 md:h-9 md:w-9" stroke={2.2} />
+        <Icon name={icon} className="h-7 w-7 md:h-8 md:w-8" stroke={2.2} />
       </span>
       <span className="min-w-0">
-        <strong className="block text-[15px] leading-tight text-[var(--color-text)]">{title}</strong>
-        <span className="mt-1 block text-[15px] leading-[1.35] text-[var(--color-text-muted)]">{text}</span>
+        <strong className="block text-[13px] leading-tight text-[var(--color-text)] md:text-[14px]">{title}</strong>
+        <span className="mt-0.5 block text-[12px] leading-[1.2] text-[var(--color-text-muted)] md:text-[13px]">{text}</span>
       </span>
     </li>
   );
@@ -129,32 +129,32 @@ function ArrowIcon({ className = "h-7 w-7" }) {
 
 function PrimaryPath({ path, modelName }) {
   return (
-    <article className="rounded-md border border-[var(--color-border)] bg-[var(--color-surface-raised)] p-5 shadow-[0_10px_28px_var(--color-shadow)] md:p-7">
-      <span className="inline-flex rounded bg-[var(--color-primary)] px-3 py-1.5 text-[15px] font-bold uppercase leading-none text-white">Path 1</span>
-      <div className="mt-5 grid grid-cols-[auto_1fr] items-center gap-5 md:grid-cols-[1fr_auto] md:items-start">
+    <article className="rounded-md bg-[var(--color-surface-raised)] p-3.5 shadow-[0_10px_28px_var(--color-shadow)] md:p-4">
+      <span className="inline-flex rounded bg-[var(--color-primary)] px-2 py-1 text-[12px] font-bold uppercase leading-none text-white md:px-2.5 md:py-1 md:text-[13px]">Path 1</span>
+      <div className="mt-3.5 grid grid-cols-[auto_1fr] items-center gap-3.5 md:grid-cols-[1fr_auto] md:items-start">
         <div className="order-2 md:order-1">
-          <h3 className="text-[35px] font-bold leading-[1.08] text-[var(--color-text)] md:text-[40px]">
+          <h3 className="text-[30px] font-bold leading-[1.06] text-[var(--color-text)] md:text-[42px]">
             <span className="text-[var(--color-primary)]">Know</span> your engine?
           </h3>
-          <p className={`mt-3 max-w-[420px] text-[var(--color-text-muted)] ${sectionDescription}`}>
+          <p className={`mt-2 max-w-[420px] text-[var(--color-text-muted)] ${sectionDescription}`}>
             Launch the BMW diagnostic calculator with {modelName} pre-selected.
           </p>
         </div>
         <CircleIcon name="engineSearch" large className="order-1 md:order-2" />
       </div>
 
-      <Link href={path?.href || "/fault-diagnostic-calculator"} className={`mt-5 flex min-h-16 items-center justify-between gap-4 rounded-md bg-[var(--color-primary)] px-5 py-4 font-bold text-white shadow-[0_12px_28px_var(--color-shadow)] transition-all duration-200 hover:text-black hover:shadow-[0_18px_36px_rgba(0,0,0,0.24)] ${sectionButton}`}>
-        <span className="flex min-w-0 items-center gap-4">
-          <Icon name="calculator" className="h-10 w-10 shrink-0" />
+      <Link href={path?.href || "/fault-diagnostic-calculator"} className={`mt-3.5 flex min-h-12 items-center justify-between gap-2.5 rounded-md bg-[var(--color-primary)] px-3.5 py-2.5 font-bold text-white shadow-[0_12px_28px_var(--color-shadow)] transition-all duration-200 hover:text-black hover:shadow-[0_18px_36px_rgba(0,0,0,0.24)] ${sectionButton}`}>
+        <span className="flex min-w-0 items-center gap-2.5">
+          <Icon name="calculator" className="h-8 w-8 shrink-0" />
           <span className="min-w-0">
             <span className="block leading-tight">Launch BMW Diagnostic Calculator</span>
-            <span className="mt-1 block text-[15px] font-normal leading-tight">{modelName} pre-selected</span>
+            <span className="mt-0.5 block text-[12px] font-normal leading-tight md:text-[13px]">{modelName} pre-selected</span>
           </span>
         </span>
-        <ArrowIcon className="h-8 w-8 shrink-0" />
+        <ArrowIcon className="h-5 w-5 shrink-0" />
       </Link>
 
-      <ul className="mt-6 grid grid-cols-3 gap-4">
+      <ul className="mt-4 grid grid-cols-3 gap-2.5">
         <Feature icon="check" title={`${modelName} pre-selected`} text="All generations covered" />
         <Feature icon="chart" title="Real UK cost data" text="Used, recon & rebuilt" />
         <Feature icon="shield" title="Instant verdict" text="Repair vs replace" />
@@ -169,32 +169,32 @@ function SecondaryPath({ path }) {
     : "Identification is the first step inside the tool.";
 
   return (
-    <article className="rounded-md border border-[var(--color-border)] bg-[var(--color-surface-raised)] p-5 shadow-[0_10px_28px_var(--color-shadow)] md:p-7">
-      <span className="inline-flex rounded bg-[var(--color-primary)] px-3 py-1.5 text-[15px] font-bold uppercase leading-none text-white">Path 2</span>
-      <div className="mt-5 grid grid-cols-[auto_1fr] items-center gap-5 md:grid-cols-[1fr_auto] md:items-start">
+    <article className="rounded-md bg-[var(--color-surface-raised)] p-3.5 shadow-[0_10px_28px_var(--color-shadow)] md:p-4">
+      <span className="inline-flex rounded bg-[var(--color-primary)] px-2 py-1 text-[12px] font-bold uppercase leading-none text-white md:px-2.5 md:py-1 md:text-[13px]">Path 2</span>
+      <div className="mt-3.5 grid grid-cols-[auto_1fr] items-center gap-3.5 md:grid-cols-[1fr_auto] md:items-start">
         <div className="order-2 md:order-1">
-          <h3 className="max-w-[420px] text-[35px] font-bold leading-[1.08] text-[var(--color-text)] md:text-[40px]">
+          <h3 className="max-w-[420px] text-[30px] font-bold leading-[1.06] text-[var(--color-text)] md:text-[42px]">
             <span className="text-[var(--color-primary)]">Not sure</span> which engine you have?
           </h3>
-          <p className={`mt-3 text-[var(--color-text-muted)] ${sectionDescription}`}>We&apos;ll identify it first.</p>
+          <p className={`mt-2 text-[var(--color-text-muted)] ${sectionDescription}`}>We&apos;ll identify it first.</p>
         </div>
         <CircleIcon name="documentSearch" large className="order-1 md:order-2" />
       </div>
 
-      <Link href={path?.href || "#"} className={`mt-5 flex min-h-16 items-center justify-between gap-4 rounded-md border border-[var(--color-primary)] px-5 py-4 font-bold text-[var(--color-primary)] transition-all duration-200 hover:text-black hover:shadow-[0_12px_24px_rgba(0,0,0,0.14)] ${sectionButton}`}>
-        <span className="flex min-w-0 items-center gap-4">
-          <Icon name="engineQuestion" className="h-11 w-11 shrink-0" />
+      <Link href={path?.href || "#"} className={`mt-3.5 flex min-h-12 items-center justify-between gap-2.5 rounded-md px-3.5 py-2.5 font-bold text-[var(--color-primary)] transition-all duration-200 hover:text-black hover:shadow-[0_12px_24px_rgba(0,0,0,0.14)] ${sectionButton}`}>
+        <span className="flex min-w-0 items-center gap-2.5">
+          <Icon name="engineQuestion" className="h-8 w-8 shrink-0" />
           <span className="min-w-0">
             <span className="block leading-tight">Identify My Engine First</span>
-            <span className="mt-1 block text-[15px] font-normal leading-tight text-[var(--color-text-muted)]">Then launch the diagnostic calculator</span>
+            <span className="mt-0.5 block text-[12px] font-normal leading-tight text-[var(--color-text-muted)] md:text-[13px]">Then launch the diagnostic calculator</span>
           </span>
         </span>
-        <ArrowIcon className="h-8 w-8 shrink-0" />
+        <ArrowIcon className="h-5 w-5 shrink-0" />
       </Link>
 
-      <div className="mt-6 flex gap-4 rounded-md bg-[var(--color-page-soft)] p-4">
-        <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-[var(--color-primary)] text-white">
-          <Icon name="info" className="h-7 w-7" />
+      <div className="mt-4 flex gap-3 rounded-md bg-[var(--color-page-soft)] p-3.5">
+        <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-[var(--color-primary)] text-white">
+          <Icon name="info" className="h-5 w-5" />
         </span>
         <p className={`text-[var(--color-text)] ${sectionBody}`}>
           <strong className="font-bold">{note}</strong>
@@ -208,11 +208,11 @@ function SecondaryPath({ path }) {
 
 function SmartDecision() {
   return (
-    <div className="flex max-w-[620px] gap-5 rounded-md bg-[var(--color-page-soft)] p-5 shadow-[0_8px_22px_var(--color-shadow)]">
+    <div className="flex max-w-[620px] gap-3.5 rounded-md bg-[var(--color-page-soft)] p-3.5 shadow-[0_8px_22px_var(--color-shadow)] md:p-4">
       <span className="shrink-0 text-[var(--color-primary)]">
-        <Icon name="calculator" className="h-12 w-12 md:h-14 md:w-14" stroke={2.2} />
+        <Icon name="calculator" className="h-9 w-9 md:h-11 md:w-11" stroke={2.2} />
       </span>
-      <p className={`text-[var(--color-text)] ${sectionBody} md:text-[18px]`}>
+      <p className={`text-[var(--color-text)] ${sectionBody} md:text-[17px]`}>
         <strong className="font-bold text-[var(--color-primary)]">The smarter way to decide:</strong> Get a personalised repair-vs-replace verdict using real UK cost data.
       </p>
     </div>
@@ -229,69 +229,77 @@ export default function CalculatorCTA({ data }) {
 
   return (
     <section className="relative overflow-hidden bg-[var(--color-page)] py-6 text-[var(--color-text)] md:py-8">
-      <div className="grid gap-5 lg:grid-cols-[minmax(0,1fr)_minmax(380px,0.72fr)] lg:items-start">
-        <div className="relative z-10">
-          <h2 className={`max-w-[820px] font-bold tracking-normal text-[var(--color-text)] ${sectionH2}`}>
-            {title.before}
-            {title.accent ? (
-              <>
-                {" "}
-                <span className="text-[var(--color-primary)]">{title.accent}</span>
-              </>
-            ) : null}
-          </h2>
-          <div className="mt-3">
-            <MStripe />
-          </div>
-          {data.intro ? (
-            <div className={`mt-5 max-w-[700px] text-[var(--color-text-muted)] ${sectionDescription}`}>
-              <p>{intro.first}</p>
-              {intro.second ? <p className="mt-2">{intro.second}</p> : null}
+      <div className="relative overflow-hidden rounded-md bg-[var(--color-surface-raised)]">
+        <Image
+          src="/model/Hero-bg-image.webp"
+          alt=""
+          fill
+          className="object-cover object-center"
+          sizes="100vw"
+          priority={false}
+        />
+        <div
+          className="absolute inset-0"
+          style={{
+            background:
+              "linear-gradient(90deg, var(--color-hero-fade) 0%, var(--color-hero-fade) 32%, var(--color-hero-overlay) 52%, rgba(255,255,255,0.18) 68%, rgba(255,255,255,0) 86%)",
+          }}
+        />
+        <div
+          className="absolute inset-0"
+          style={{
+            background:
+              "radial-gradient(circle at 58% 50%, var(--color-hero-overlay) 0%, rgba(255,255,255,0.22) 24%, rgba(255,255,255,0) 58%)",
+          }}
+        />
+        <div className="relative z-10 px-4 py-5 lg:px-6 lg:py-6">
+          <div className="max-w-[820px]">
+            <h2 className="max-w-[820px] text-[29px] font-bold leading-[1.08] tracking-normal text-[var(--color-text)] md:text-[45px]">
+              {title.before}
+              {title.accent ? (
+                <>
+                  {" "}
+                  <span className="text-[var(--color-primary)]">{title.accent}</span>
+                </>
+              ) : null}
+            </h2>
+            <div className="mt-3">
+              <MStripe />
             </div>
-          ) : null}
-
-          <div className="mt-7 hidden lg:block">
-            <SmartDecision />
+            {data.intro ? (
+              <div className={`mt-3 max-w-[700px] text-[var(--color-text-muted)] ${sectionDescription}`}>
+                <p>{intro.first}</p>
+                {intro.second ? <p className="mt-1.5">{intro.second}</p> : null}
+              </div>
+            ) : null}
           </div>
-        </div>
-
-        <div className="relative min-h-[210px] overflow-hidden lg:min-h-[330px]">
-          <div className="absolute right-0 top-0 h-[280px] w-[280px] rounded-full bg-[var(--color-primary-soft)] opacity-80 md:h-[420px] md:w-[420px]" />
-          <Image
-            src="/model/Section 2-bg.webp"
-            alt=""
-            fill
-            className="relative z-10 object-contain object-right"
-            sizes="(min-width: 1024px) 40vw, 100vw"
-            priority={false}
-          />
         </div>
       </div>
 
-      <div className="mt-5 lg:hidden">
+      <div className="mt-4 lg:hidden">
         <SmartDecision />
       </div>
 
-      <div className="mt-6 grid gap-5 lg:grid-cols-2">
+      <div className="mt-5 grid gap-4 lg:grid-cols-2">
         <PrimaryPath path={paths[0]} modelName={modelName} />
         <SecondaryPath path={paths[1]} />
       </div>
 
-      <div className="mt-5 flex flex-col gap-5 rounded-md bg-[linear-gradient(120deg,#020b1f_0%,#06265a_100%)] p-5 text-white shadow-[0_12px_32px_var(--color-shadow)] md:flex-row md:items-center md:justify-between md:p-7">
-        <div className="flex gap-5">
-          <span className="flex h-20 w-20 shrink-0 items-center justify-center rounded-full border border-[rgba(36,132,255,0.7)] bg-[rgba(7,95,216,0.22)] text-white shadow-[0_0_28px_rgba(36,132,255,0.35)]">
-            <Icon name="target" className="h-12 w-12" />
+      <div className="mt-5 flex flex-col gap-4 rounded-md bg-[linear-gradient(120deg,#020b1f_0%,#06265a_100%)] p-4 text-white shadow-[0_12px_32px_var(--color-shadow)] md:flex-row md:items-center md:justify-between md:p-5">
+        <div className="flex gap-4">
+            <span className="flex h-16 w-16 shrink-0 items-center justify-center rounded-full bg-[rgba(7,95,216,0.22)] text-white shadow-[0_0_28px_rgba(36,132,255,0.35)]">
+            <Icon name="target" className="h-10 w-10" />
           </span>
           <div className="max-w-[700px]">
-            <h3 className="text-[22px] font-bold leading-tight md:text-[24px]">Stop guessing. Get the right answer.</h3>
+            <h3 className="text-[20px] font-bold leading-tight md:text-[22px]">Stop guessing. Get the right answer.</h3>
             <p className={`mt-2 text-white/90 ${sectionDescription}`}>
               Our calculator compares real repair and replacement costs against your car&apos;s value - so you know the financially smarter move.
             </p>
           </div>
         </div>
-        <Link href={paths[0]?.href || "/fault-diagnostic-calculator"} className={`inline-flex min-h-14 shrink-0 items-center justify-center gap-5 rounded-md bg-[var(--color-primary)] px-6 py-4 font-bold text-white shadow-[0_12px_28px_rgba(0,0,0,0.28)] transition-all duration-200 hover:text-black md:min-w-[390px] ${sectionButton}`}>
+        <Link href={paths[0]?.href || "/fault-diagnostic-calculator"} className={`inline-flex min-h-14 shrink-0 items-center justify-center gap-4 rounded-md bg-[var(--color-primary)] px-5 py-3.5 font-bold text-white shadow-[0_12px_28px_rgba(0,0,0,0.28)] transition-all duration-200 hover:text-black md:min-w-[360px] ${sectionButton}`}>
           Start Your Verdict Now
-          <ArrowIcon className="h-8 w-8" />
+          <ArrowIcon className="h-6 w-6" />
         </Link>
       </div>
     </section>

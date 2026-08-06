@@ -125,12 +125,12 @@ function ProofStrip() {
   return (
     <ul className="hidden overflow-hidden rounded-md border border-[var(--color-border)] bg-[var(--color-surface-raised)] shadow-[0_10px_30px_var(--color-shadow)] lg:grid lg:grid-cols-4">
       {proofItems.map((item) => (
-        <li key={item.title} className="flex flex-col items-center justify-start border-r border-[var(--color-border)] px-7 py-4 text-center last:border-r-0">
-          <svg aria-hidden="true" viewBox="0 0 24 24" className="h-11 w-11 text-[var(--color-primary)]" fill="none" stroke="currentColor" strokeWidth="1.9">
+        <li key={item.title} className="flex flex-col items-center justify-start border-r border-[var(--color-border)] px-5 py-3.5 text-center last:border-r-0">
+          <svg aria-hidden="true" viewBox="0 0 24 24" className="h-9 w-9 text-[var(--color-primary)]" fill="none" stroke="currentColor" strokeWidth="1.9">
             {item.icon}
           </svg>
-          <strong className="mt-2 text-[15px] leading-tight text-[var(--color-text)]">{item.title}</strong>
-          <span className="mt-1 text-[15px] leading-[1.35] text-[var(--color-text-muted)]">{item.text}</span>
+          <strong className="mt-1.5 text-[14px] leading-tight text-[var(--color-text)]">{item.title}</strong>
+          <span className="mt-0.5 text-[13px] leading-[1.25] text-[var(--color-text-muted)]">{item.text}</span>
         </li>
       ))}
     </ul>
@@ -152,10 +152,10 @@ function BuyerRow({ row, index }) {
             sizes="(min-width: 1024px) 300px, (min-width: 768px) 300px, 31vw"
           />
         </div>
-        <div className="flex min-w-0 items-center gap-4 px-4 py-4 md:px-7">
+        <div className="flex min-w-0 items-center gap-3 px-3 py-3.5 md:px-5 md:py-4">
           <CircleIcon>{profileIcons[iconKey]}</CircleIcon>
           <div className="min-w-0">
-            <h3 className="text-[18px] font-bold leading-[1.18] text-[var(--color-text)] md:text-[22px]">{cleanText(row.buyerProfile)}</h3>
+            <h3 className="text-[16px] font-bold leading-[1.12] text-[var(--color-text)] md:text-[18px]">{cleanText(row.buyerProfile)}</h3>
             <div className="mt-3 lg:hidden">
               <Stars rating={row.rating} />
             </div>
@@ -163,11 +163,11 @@ function BuyerRow({ row, index }) {
         </div>
       </div>
 
-      <div className="hidden items-center justify-center border-r border-[var(--color-border)] px-5 py-4 lg:flex">
+      <div className="hidden items-center justify-center border-r border-[var(--color-border)] px-3 py-3 lg:flex">
         <Stars rating={row.rating} />
       </div>
 
-      <p className={`border-t border-[var(--color-border)] px-4 py-4 text-[var(--color-text)] md:px-7 md:py-5 lg:border-t-0 ${sectionTableText} md:text-[18px]`}>
+      <p className={`border-t border-[var(--color-border)] px-3 py-3 text-[var(--color-text)] md:px-4 md:py-3 lg:border-t-0 ${sectionTableText} md:text-[14px]`}>
         {cleanText(row.verdict)}
       </p>
     </article>
@@ -185,7 +185,7 @@ export default function WhoShouldBuy({ data }) {
     <section className="bg-[var(--color-page)] py-6 text-[var(--color-text)] md:py-8">
       <div className="flex flex-col gap-5 lg:grid lg:grid-cols-[minmax(0,0.92fr)_minmax(520px,1fr)] lg:items-start">
         <div>
-          <h2 className={`max-w-[760px] font-bold tracking-normal text-[var(--color-text)] ${sectionH2}`}>
+          <h2 className="max-w-[760px] text-[29px] font-bold leading-[1.08] tracking-normal text-[var(--color-text)] md:text-[45px]">
             {title.before}
             {title.accent ? (
               <>
@@ -197,7 +197,7 @@ export default function WhoShouldBuy({ data }) {
           <div className="mt-3">
             <MStripe />
           </div>
-          <p className={`mt-4 max-w-[620px] text-[var(--color-text-muted)] ${sectionDescription}`}>
+          <p className={`mt-3 max-w-[620px] text-[var(--color-text-muted)] ${sectionDescription}`}>
             Different buyers, different priorities. Here is our verdict on who the {modelName} is perfect for - and who should think twice.
           </p>
         </div>
@@ -206,9 +206,9 @@ export default function WhoShouldBuy({ data }) {
       </div>
 
       <div className="mt-6 overflow-hidden rounded-md border border-[var(--color-border)] bg-[var(--color-surface-raised)] shadow-[0_12px_32px_var(--color-shadow)]">
-        <div className="hidden grid-cols-[40%_18%_42%] bg-[var(--color-primary-strong)] text-[18px] font-bold text-white lg:grid">
+        <div className="hidden grid-cols-[40%_18%_42%] bg-[var(--color-primary-strong)] text-[14px] font-bold text-white lg:grid">
           {(data.columns || ["Buyer Profile", "Rating", "Our Verdict"]).map((column, index) => (
-            <div key={column} className={`px-7 py-4 ${index > 0 ? "border-l border-white/20" : ""}`}>
+            <div key={column} className={`px-3 py-2.5 ${index > 0 ? "border-l border-white/20" : ""}`}>
               {column}
             </div>
           ))}
@@ -221,9 +221,9 @@ export default function WhoShouldBuy({ data }) {
         </div>
       </div>
 
-      <div className="mt-5 flex flex-col gap-5 rounded-md border border-[var(--color-border)] bg-[var(--color-page-soft)] p-5 shadow-[0_8px_24px_var(--color-shadow)] md:flex-row md:items-center md:justify-between md:p-6">
-        <div className="flex gap-4">
-          <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[var(--color-primary)] text-[24px] font-bold italic leading-none text-white">
+      <div className="mt-5 flex flex-col gap-4 rounded-md border border-[var(--color-border)] bg-[var(--color-page-soft)] p-4 shadow-[0_8px_24px_var(--color-shadow)] md:flex-row md:items-center md:justify-between md:p-5">
+        <div className="flex gap-3.5">
+          <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[var(--color-primary)] text-[20px] font-bold italic leading-none text-white">
             i
           </span>
           <p className={`max-w-[760px] text-[var(--color-text)] ${sectionBody}`}>
@@ -232,10 +232,10 @@ export default function WhoShouldBuy({ data }) {
         </div>
         <Link
           href="#engine-database"
-          className="inline-flex min-h-12 shrink-0 items-center justify-center gap-5 rounded-md bg-[var(--color-primary)] px-6 py-3 text-[18px] font-bold text-white shadow-[0_12px_28px_var(--color-shadow)] transition-all duration-200 hover:text-black hover:shadow-[0_18px_36px_rgba(0,0,0,0.24)] md:min-w-[280px]"
+          className="inline-flex min-h-12 shrink-0 items-center justify-center gap-4 rounded-md bg-[var(--color-primary)] px-5 py-3 text-[16px] font-bold text-white shadow-[0_12px_28px_var(--color-shadow)] transition-all duration-200 hover:text-black hover:shadow-[0_18px_36px_rgba(0,0,0,0.24)] md:min-w-[260px]"
         >
           Explore {modelName} Engines
-          <svg aria-hidden="true" viewBox="0 0 24 24" className="h-6 w-6" fill="none" stroke="currentColor" strokeWidth="2">
+          <svg aria-hidden="true" viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2">
             <path d="M5 12h14m-6-6 6 6-6 6" />
           </svg>
         </Link>
