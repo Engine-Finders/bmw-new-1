@@ -113,7 +113,7 @@
               "name": "Which BMW 8 Series G14 powertrain is the most reliable?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "The B58B30 3.0-litre six-cylinder (840i) is widely regarded as BMW's most reliable modern six-cylinder -proven durability, no major design flaws, and only minor HPFP and cooling system maintenance required. On diesel, the B57D30B (840d) is also highly reliable, with timing chain issues described as 'exceedingly rare.'"
+                "text": "The B58B30 3.0-litre six-cylinder (840i) is widely regarded as BMW\u0027s most reliable modern six-cylinder -proven durability, no major design flaws, and only minor HPFP and cooling system maintenance required. On diesel, the B57D30B (840d) is also highly reliable, with timing chain issues described as \u0027exceedingly rare.\u0027"
               }
             },
             {
@@ -153,7 +153,7 @@
               "name": "Is it worth replacing a BMW 8 Series G14 powertrain, or should I scrap the car?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Apply the 70% BMW scrap threshold -but this is a £30,000+ car, so value assessment differs. Against a well-kept £40,000 G14, a £6,000 N63 recon is 15% of the car's value -safe. Against a tired £30,000 early example, the same recon is 20% -still safe. For sub-£25,000 examples, evaluate carefully."
+                "text": "Apply the 70% BMW scrap threshold -but this is a £30,000+ car, so value assessment differs. Against a well-kept £40,000 G14, a £6,000 N63 recon is 15% of the car\u0027s value -safe. Against a tired £30,000 early example, the same recon is 20% -still safe. For sub-£25,000 examples, evaluate carefully."
               }
             },
             {
@@ -177,7 +177,7 @@
               "name": "How do I find my BMW 8 Series G14 powertrain code?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "The powertrain code is listed on the VIN plate, vehicle documentation, and on a sticker under the bonnet. For 3.0 petrol, look for B58B30C (pre-LCI 840i) or B58B30M1 (LCI 840i). For 4.4 V8, look for N63B44D (pre-LCI M850i) or N63B44T3 (LCI M850i). For M8, look for S63B44B (pre-LCI) or S63B44T4 (LCI). For diesel, look for B57D30B (840d). Tell us your variant and year, and we'll confirm."
+                "text": "The powertrain code is listed on the VIN plate, vehicle documentation, and on a sticker under the bonnet. For 3.0 petrol, look for B58B30C (pre-LCI 840i) or B58B30M1 (LCI 840i). For 4.4 V8, look for N63B44D (pre-LCI M850i) or N63B44T3 (LCI M850i). For M8, look for S63B44B (pre-LCI) or S63B44T4 (LCI). For diesel, look for B57D30B (840d). Tell us your variant and year, and we\u0027ll confirm."
               }
             }
           ]
@@ -211,7 +211,7 @@
         {
           "@type": "Dataset",
           "name": "BMW 8 Series G14 UK Enquiry Data 2025",
-          "description": "Proprietary UK enquiry volumes and demand trends for BMW 8 Series G14 powertrains, sourced from bmwengines.uk's specialist marketplace activity.",
+          "description": "Proprietary UK enquiry volumes and demand trends for BMW 8 Series G14 powertrains, sourced from bmwengines.uk\u0027s specialist marketplace activity.",
           "creator": {
             "@type": "Organization",
             "name": "bmwengines.uk"
@@ -245,7 +245,7 @@
   "hero": {
     "tagPill": "BMW 8 Series G14 • Convertible • 2018–2026",
     "h1": "BMW 8 Series G14 Engines -The Complete UK Guide",
-    "subHeadline": "Every powertrain fitted to the G14-generation BMW 8 Series Convertible -from the 3.0-litre B58 six-cylinder to the 4.4-litre N63 V8 and the fire-breathing S63-powered M8 Competition. Real UK costs, honest failure data, and the hot-vee V8's defining role in this generation's ownership story. Backed by real UK 8 Series enquiries in 2025 [BMW-VERIFIED].",
+    "subHeadline": "Every powertrain fitted to the G14-generation BMW 8 Series Convertible -from the 3.0-litre B58 six-cylinder to the 4.4-litre <a href='https://bmwengines.uk/engine/n62-n63'>N63</a> V8 and the fire-breathing <a href='https://bmwengines.uk/engine/s63-s65'>S63</a>-powered M8 Competition. Real UK costs, honest failure data, and the hot-vee V8\u0027s defining role in this generation\u0027s ownership story. Backed by real UK 8 Series enquiries in 2025 [BMW-VERIFIED].",
     "trustStrip": [
       {
         "icon": "📊",
@@ -360,7 +360,7 @@
       },
       {
         "engineCode": "B57D30B",
-        "family": "B57",
+        "family": "<a href='https://bmwengines.uk/engine/b57-b58'>B57</a>",
         "fuel": "Diesel, twin-turbo I6 MHEV",
         "displacement": "3.0L (2993cc)",
         "power": "235–250 kW (315–340 hp)",
@@ -379,7 +379,7 @@
   },
   "overview": {
     "h2": "BMW 8 Series G14 -Overview",
-    "intro": "The BMW G14 is the convertible variant of the second-generation BMW 8 Series, a range of grand tourers produced since 2018. Launched in November 2018, the G14 features a folding cloth roof that operates in 15 seconds at speeds up to 50 km/h (31 mph). Built on BMW's CLAR platform, the G14 shares its powertrain line-up with the G15 Coupé and G16 Gran Coupé. The engine range includes the 3.0-litre B58 six-cylinder petrol (840i), the 4.4-litre N63 V8 petrol (M850i xDrive), the high-performance S63 V8 (M8 Competition), and the 3.0-litre B57 six-cylinder diesel (840d xDrive), all mated to an 8-speed automatic transmission. An LCI facelift in 2020 introduced updated engines and mild-hybrid technology on the diesel variant. The 8 Series range is scheduled to end production in 2026.",
+    "intro": "The BMW G14 is the convertible variant of the second-generation BMW 8 Series, a range of grand tourers produced since 2018. Launched in November 2018, the G14 features a folding cloth roof that operates in 15 seconds at speeds up to 50 km/h (31 mph). Built on BMW\u0027s CLAR platform, the G14 shares its powertrain line-up with the G15 Coupé and G16 Gran Coupé. The engine range includes the 3.0-litre B58 six-cylinder petrol (840i), the 4.4-litre N63 V8 petrol (M850i xDrive), the high-performance S63 V8 (M8 Competition), and the 3.0-litre B57 six-cylinder diesel (840d xDrive), all mated to an 8-speed automatic transmission. An LCI facelift in 2020 introduced updated engines and mild-hybrid technology on the diesel variant. The 8 Series range is scheduled to end production in 2026.",
     "keyFacts": "Platform: BMW CLAR (Cluster Architecture) • Predecessor: BMW 6 Series Convertible (F12) • Successor: None (production ends 2026) • Sibling body styles: G15 Coupé, G16 Gran Coupé",
     "marketIntelligenceLine": "The G14 8 Series Convertible is a low-volume luxury grand tourer; enquiries are concentrated on the B58 six-cylinder and N63 V8 petrol engines, with values ranging from £35,000 for early 840i examples to £80,000+ for well-specced M8 Competitions."
   },
@@ -387,7 +387,7 @@
     "items": [
       {
         "slot": "Best Petrol Overall",
-        "engine": "B58B30M1 3.0-litre six-cylinder (840i) -The 335 bhp B58 is widely regarded as BMW's most reliable modern six-cylinder. Delivering 500 Nm of torque and 0-62 in approximately 5.2 seconds, it offers genuine grand touring performance with proven durability. The TU2 version (2020+) adds mild improvements without compromising reliability.",
+        "engine": "B58B30M1 3.0-litre six-cylinder (840i) -The 335 bhp B58 is widely regarded as BMW\u0027s most reliable modern six-cylinder. Delivering 500 Nm of torque and 0-62 in approximately 5.2 seconds, it offers genuine grand touring performance with proven durability. The TU2 version (2020+) adds mild improvements without compromising reliability.",
         "quote": "",
         "whoItsFor": "buyers who want the sweet spot of performance, refinement, and reliability."
       },
@@ -399,25 +399,25 @@
       },
       {
         "slot": "Highest Risk",
-        "engine": "N63B44D/N63B44T3 4.4-litre V8 (M850i xDrive) -The hot-vee V8 design places turbochargers in the engine's 'V', generating significant heat. Valve stem seal wear and cooling system leaks are well-documented on N63-family engines. The updated TU3 version (2020+) is improved but still demands meticulous maintenance.",
+        "engine": "N63B44D/N63B44T3 4.4-litre V8 (M850i xDrive) -The hot-vee V8 design places turbochargers in the engine\u0027s \u0027V\u0027, generating significant heat. Valve stem seal wear and cooling system leaks are well-documented on N63-family engines. The updated TU3 version (2020+) is improved but still demands meticulous maintenance.",
         "quote": "",
         "whoItsFor": "buyers who accept the premium and keep the car under warranty."
       },
       {
         "slot": "Most Expensive Failure",
-        "engine": "S63B44B/S63B44T4 4.4-litre V8 (M8 Competition) -The 625 bhp S63 is the most expensive powertrain in the G14 line-up to replace, with reconditioned units costing £8,000–£14,000. The high-performance V8 shares the N63's hot-vee architecture with additional stresses from higher boost and output.",
+        "engine": "S63B44B/S63B44T4 4.4-litre V8 (M8 Competition) -The 625 bhp S63 is the most expensive powertrain in the G14 line-up to replace, with reconditioned units costing £8,000–£14,000. The high-performance V8 shares the N63\u0027s hot-vee architecture with additional stresses from higher boost and output.",
         "quote": "",
         "whoItsFor": "collectors and enthusiasts who accept the premium."
       },
       {
         "slot": "Best Value",
-        "engine": "B58B30M1 3.0-litre six-cylinder (840i) -The 335 bhp B58 offers the best balance of performance, refinement, and running costs. It's the most common G14 engine, parts are widely available, and the recon cost is significantly lower than the V8 options.",
+        "engine": "B58B30M1 3.0-litre six-cylinder (840i) -The 335 bhp B58 offers the best balance of performance, refinement, and running costs. It\u0027s the most common G14 engine, parts are widely available, and the recon cost is significantly lower than the V8 options.",
         "quote": "",
         "whoItsFor": "the majority of G14 buyers who want genuine grand touring performance without V8 running costs."
       },
       {
         "slot": "Most Overlooked",
-        "engine": "B57D30B 3.0-litre diesel (840d xDrive) -Often overlooked by buyers who default to the petrol six or V8, the 840d delivers effortless torque, 40+ mpg economy, and genuine long-distance capability. With 680 Nm of torque and 0-62 in approximately 5.1 seconds, it's the ultimate motorway cruiser in the G14 range.",
+        "engine": "B57D30B 3.0-litre diesel (840d xDrive) -Often overlooked by buyers who default to the petrol six or V8, the 840d delivers effortless torque, 40+ mpg economy, and genuine long-distance capability. With 680 Nm of torque and 0-62 in approximately 5.1 seconds, it\u0027s the ultimate motorway cruiser in the G14 range.",
         "quote": "",
         "whoItsFor": "buyers who prioritise long-distance touring economy without sacrificing performance."
       }
@@ -469,7 +469,7 @@
     ],
     "economicsRule": {
       "title": "The G14 rule",
-      "text": "A £6,000–£10,000 N63 recon against a £30,000–£40,000 early G14 sits at 15–33% of the car's value -safe. Against a well-kept £50,000+ example, the same recon drops to a routine 12–20% -a repair decision, not a financial one. For a high-value luxury car, the 70% BMW threshold rarely applies, but we'll still honestly tell you when a repair doesn't make sense."
+      "text": "A £6,000–£10,000 N63 recon against a £30,000–£40,000 early G14 sits at 15–33% of the car\u0027s value -safe. Against a well-kept £50,000+ example, the same recon drops to a routine 12–20% -a repair decision, not a financial one. For a high-value luxury car, the 70% BMW threshold rarely applies, but we\u0027ll still honestly tell you when a repair doesn\u0027t make sense."
     },
     "keyTakeaways": [
       {
@@ -546,7 +546,7 @@
       },
       {
         "id": 3,
-        "title": "B57 Diesel DPF & EGR Issues",
+        "title": "B57 Diesel DPF \u0026 EGR Issues",
         "affectedModels": "G14 840d xDrive (B57D30B).",
         "typicalFailureMileage": "60,000–120,000 miles.",
         "rootCause": "DPF blockage is common on cars used predominantly for urban driving, with fault codes indicating DPF sensor failure. EGR cooler issues can also develop. The mild-hybrid system adds some complexity to the diesel powertrain.",
@@ -622,13 +622,28 @@
   },
   "coreVariants": {
     "dieselVariants": [
-      "840d xDrive"
+      {
+        "name": "840d xDrive",
+        "url": "https://bmwengines.uk/8-series/840d"
+      }
     ],
     "petrolVariants": [
-      "840i",
-      "840i xDrive",
-      "M850i xDrive",
-      "M8 Competition"
+      {
+        "name": "840i",
+        "url": "https://bmwengines.uk/8-series/840i"
+      },
+      {
+        "name": "840i xDrive",
+        "url": "https://bmwengines.uk/8-series/840i"
+      },
+      {
+        "name": "M850i xDrive",
+        "url": "https://bmwengines.uk/8-series/m850i"
+      },
+      {
+        "name": "M8 Competition",
+        "url": "#"
+      }
     ],
     "scopeNote": "All variants listed are G14 8 Series Convertible only. The G15 Coupé and G16 Gran Coupé share these powertrains but are covered on their own Generation Pages. The M8 Competition is the high-performance variant powered by the S63 V8. The LCI facelift (2020) introduced the updated B58B30M1 and N63B44T3 engines, along with mild-hybrid technology on the 840d."
   },
@@ -643,7 +658,7 @@
     "mostCommonFailures": [
       "1. N63/S63 V8 valve stem seal wear",
       "2. B58 HPFP failure",
-      "3. B57 diesel DPF & EGR issues"
+      "3. B57 diesel DPF \u0026 EGR issues"
     ],
     "liveFeed": [
       {
@@ -679,7 +694,7 @@
       {
         "id": 2,
         "question": "Which BMW 8 Series G14 powertrain is the most reliable?",
-        "answer": "The B58B30 3.0-litre six-cylinder (840i) is widely regarded as BMW's most reliable modern six-cylinder -proven durability, no major design flaws, and only minor HPFP and cooling system maintenance required. On diesel, the B57D30B (840d) is also highly reliable, with timing chain issues described as \"exceedingly rare.\""
+        "answer": "The B58B30 3.0-litre six-cylinder (840i) is widely regarded as BMW\u0027s most reliable modern six-cylinder -proven durability, no major design flaws, and only minor HPFP and cooling system maintenance required. On diesel, the B57D30B (840d) is also highly reliable, with timing chain issues described as \"exceedingly rare.\""
       },
       {
         "id": 3,
@@ -704,7 +719,7 @@
       {
         "id": 7,
         "question": "Is it worth replacing a BMW 8 Series G14 powertrain, or should I scrap the car?",
-        "answer": "Apply the 70% BMW scrap threshold -but this is a £30,000+ car, so value assessment differs. Against a well-kept £40,000 G14, a £6,000 N63 recon is 15% of the car's value -safe. Against a tired £30,000 early example, the same recon is 20% -still safe. For sub-£25,000 examples, evaluate carefully."
+        "answer": "Apply the 70% BMW scrap threshold -but this is a £30,000+ car, so value assessment differs. Against a well-kept £40,000 G14, a £6,000 N63 recon is 15% of the car\u0027s value -safe. Against a tired £30,000 early example, the same recon is 20% -still safe. For sub-£25,000 examples, evaluate carefully."
       },
       {
         "id": 8,
@@ -719,7 +734,7 @@
       {
         "id": 10,
         "question": "How do I find my BMW 8 Series G14 powertrain code?",
-        "answer": "The powertrain code is listed on the VIN plate, vehicle documentation, and on a sticker under the bonnet. For 3.0 petrol, look for B58B30C (pre-LCI 840i) or B58B30M1 (LCI 840i). For 4.4 V8, look for N63B44D (pre-LCI M850i) or N63B44T3 (LCI M850i). For M8, look for S63B44B (pre-LCI) or S63B44T4 (LCI). For diesel, look for B57D30B (840d). Tell us your variant and year, and we'll confirm."
+        "answer": "The powertrain code is listed on the VIN plate, vehicle documentation, and on a sticker under the bonnet. For 3.0 petrol, look for B58B30C (pre-LCI 840i) or B58B30M1 (LCI 840i). For 4.4 V8, look for N63B44D (pre-LCI M850i) or N63B44T3 (LCI M850i). For M8, look for S63B44B (pre-LCI) or S63B44T4 (LCI). For diesel, look for B57D30B (840d). Tell us your variant and year, and we\u0027ll confirm."
       }
     ]
   },
@@ -732,11 +747,11 @@
       },
       {
         "title": "Compare G14 Powertrain Replacement Companies",
-        "text": "see prices, warranty terms and supply & fit options side-by-side before you commit."
+        "text": "see prices, warranty terms and supply \u0026 fit options side-by-side before you commit."
       },
       {
         "title": "UK Powertrain Replacement Services for G14",
-        "text": "covering every variant from 840i to M8 Competition, with supply-only or full supply & fit available nationwide."
+        "text": "covering every variant from 840i to M8 Competition, with supply-only or full supply \u0026 fit available nationwide."
       }
     ],
     "finalCta": "Find the best BMW 8 Series G14 powertrain replacement UK drivers rely on. Compare real prices from trusted specialists on EnginesMarket today and get back on the road with confidence.",

@@ -379,7 +379,7 @@
     }
   },
   "hero": {
-    "tagPill": "BMW 5 Series • 1972–Present • 8 Generations (E12, E28, E34, E39, E60, F10, G30, G60) • M57, N47, N52, N54, N55, B47, B48, B58, N63",
+    "tagPill": "BMW 5 Series • 1972–Present • 8 Generations (E12, E28, E34, E39, E60, F10, G30, G60) • <a href='https://bmwengines.uk/engine/m57'>M57</a>, <a href='https://bmwengines.uk/engine/n47'>N47</a>, <a href='https://bmwengines.uk/engine/n52-n53'>N52</a>, <a href='https://bmwengines.uk/engine/n54-n55'>N54</a>, N55, <a href='https://bmwengines.uk/engine/b37-b47'>B47</a>, <a href='https://bmwengines.uk/engine/b38-b48'>B48</a>, B58, N63",
     "h1": "5 Series Engines -The Complete UK Guide",
     "subHeadline": "Every BMW 5 Series engine across eight generations -from the carburetted sixes of the E12 to the B58 straight-six and electrified powertrains of the G60. Real UK replacement costs, known failure patterns, and honest ownership economics for the executive saloon that defined a segment. Backed by 500+ real UK 5 Series engine enquiries in 2025 [BMW-VERIFIED].",
     "trustStrip": [
@@ -434,7 +434,7 @@
       },
       {
         "metric": "Best Diesel Buy",
-        "ourCall": "2016+ F10 LCI / G30 with B47 or B57 -revised architecture, strong economy"
+        "ourCall": "2016+ F10 LCI / G30 with B47 or <a href='https://bmwengines.uk/engine/b57-b58'>B57</a> -revised architecture, strong economy"
       },
       {
         "metric": "Average Engine Replacement",
@@ -503,34 +503,34 @@
       {
         "title": "BMW 5 Series E12",
         "badge": "",
-        "meta": "1972–1981 • M10, M20, M30 six-cylinder",
+        "meta": "1972–1981 • <a href='https://bmwengines.uk/engine/m10'>M10</a>, <a href='https://bmwengines.uk/engine/m20'>M20</a>, <a href='https://bmwengines.uk/engine/m30'>M30</a> six-cylinder",
         "rating": "★★★☆☆",
         "verdict": "The original -the car that created the executive saloon segment. Now a genuine classic where preservation, not daily-driver economics, drives the decision. M30 six-cylinder cars are the ones to seek.",
         "cta": {
           "label": "Explore the E12 →",
-          "href": "#"
+          "href": "https://bmwengines.uk/5-series/e12"
         }
       },
       {
         "title": "BMW 5 Series E28",
         "badge": "",
-        "meta": "1981–1988 • M20, M30, M21 diesel",
+        "meta": "1981–1988 • M20, M30, <a href='https://bmwengines.uk/engine/m21'>M21</a> diesel",
         "rating": "★★★★☆",
         "verdict": "The E28 refined the formula -sharper handling, better engines, and the M535i that defined the sports saloon. M30 sixes and the M21 diesel are the robust choices; bodywork is the real project.",
         "cta": {
           "label": "Explore the E28 →",
-          "href": "#"
+          "href": "https://bmwengines.uk/5-series/e28"
         }
       },
       {
         "title": "BMW 5 Series E34",
         "badge": "",
-        "meta": "1988–1996 • M20, M30, M50, M60 V8, M51 diesel",
+        "meta": "1988–1996 • M20, M30, <a href='https://bmwengines.uk/engine/m50-m52-m54'>M50</a>, M60 V8, M51 diesel",
         "rating": "★★★★☆",
         "verdict": "The E34 is the 5 Series at its most beautifully engineered -the M50 six-cylinder is near-bulletproof, the M60 V8 is smooth but carries Nikasil liner caveats on early cars. A rising classic.",
         "cta": {
           "label": "Explore the E34 →",
-          "href": "#"
+          "href": "https://bmwengines.uk/5-series/e34"
         }
       },
       {
@@ -541,31 +541,64 @@
         "verdict": "The 5 Series at its peak -often called the best executive saloon ever made. The M57 diesel (530d) is one of the most dependable engines BMW ever built; the M54 petrol is smooth and robust. Cooling systems are the only real caveat.",
         "cta": {
           "label": "Explore the E39 →",
-          "href": "#"
+          "href": "https://bmwengines.uk/5-series/e39"
         }
       },
       {
         "title": "BMW 5 Series E60/E61",
         "badge": "🔥 Most Enquired -226 enquiries (2025) [BMW-VERIFIED]",
-        "meta": "2003–2010 • N46, N52, N53, N54, N62 V8, S85 V10, M47/N47, M57",
+        "meta": "2003–2010 • <a href='https://bmwengines.uk/engine/n40-n42-n43-n45-n46'>N46</a>, N52, N53, N54, <a href='https://bmwengines.uk/engine/n62-n63'>N62</a> V8, <a href='https://bmwengines.uk/engine/s70-s85'>S85</a> V10, <a href='https://bmwengines.uk/engine/m47'>M47</a>/N47, M57",
         "rating": "★★★½",
         "verdict": "The controversial Bangle-era 5 Series -advanced for its time, but the N47 diesel's rear-chain tensioner and the N54's HPFP issues define this generation's reputation. The M57 530d is the robust pick; the N52 petrol six is the smooth one.",
         "cta": {
           "label": "Explore the E60 →",
-          "href": "#"
+          "href": "https://bmwengines.uk/5-series/e60"
         }
       },
+      {
+  "title": "E61 (2003–2010)",
+  "badge": "",
+  "meta": "2003–2010 • M54/N52/N53 petrol • M57/N47 diesel",
+  "rating": "★★★☆☆",
+  "verdict": "The E60 estate—the 5 Series Touring with the same engine range as the saloon. The M57 diesel (pre-2007) is the most durable; the N47 (post-2007) carries timing chain risk. The N52 straight-six petrol is reliable. E61 values are strong, making replacement viable on most examples—but the N47 chain risk applies, so buy with history.",
+  "cta": {
+    "label": "Explore E61 →",
+    "href": "https://bmwengines.uk/5-series/e61"
+  }
+},
+{
+  "title": "F07 (2009–2017) — Gran Turismo",
+  "badge": "",
+  "meta": "2009–2017 • N20/N55 petrol • N47/N57 diesel",
+  "rating": "★★★☆☆",
+  "verdict": "The 5 Series Gran Turismo—a raised, fastback 5 Series with a unique design. Powered by N20 four-cylinder petrol (timing chain watchpoint), N55 six-cylinder petrol, N47 four-cylinder diesel (timing chain risk), and N57 six-cylinder diesel. The N55 and N57 are the most reliable choices. A niche model—buy with documented engine history.",
+  "cta": {
+    "label": "Explore F07 →",
+    "href": "https://bmwengines.uk/5-series/f07"
+  }
+},
       {
         "title": "BMW 5 Series F10/F11",
         "badge": "🔥 Most Enquired -300 enquiries (2025) [BMW-VERIFIED]",
         "meta": "2010–2016 • N47, N55, N63 V8, B47 (LCI)",
         "rating": "★★★★☆",
-        "verdict": "The generation that returned to classic proportions -and quietly fixed some of the E60's issues. Early N47 diesels carry the chain caveat; 2016+ B47 cars are the sweet spot. The 535i with N55 is the petrol pick; the M5 with S63 is the full-fat experience.",
+        "verdict": "The generation that returned to classic proportions -and quietly fixed some of the E60's issues. Early N47 diesels carry the chain caveat; 2016+ B47 cars are the sweet spot. The 535i with N55 is the petrol pick; the M5 with <a href='https://bmwengines.uk/engine/s63-s65'>S63</a> is the full-fat experience.",
         "cta": {
           "label": "Explore the F10 →",
-          "href": "#"
+          "href": "https://bmwengines.uk/5-series/f10"
         }
       },
+      {
+  "title": "F11 (2010–2017)",
+  "badge": "",
+  "meta": "2010–2017 • N20/N55 petrol • N47/N57 diesel",
+  "rating": "★★★☆☆",
+  "verdict": "The F10 estate—the 5 Series Touring with the same engine range as the saloon. The N55 six-cylinder petrol is the most reliable; the N47 diesel carries timing chain risk; the N57 six-cylinder diesel is robust. The B-family engines in later models are improved. F11 values are strong, making replacement viable on most examples.",
+  "cta": {
+    "label": "Explore F11 →",
+    "href": "https://bmwengines.uk/5-series/f11"
+  }
+},
       {
         "title": "BMW 5 Series G30/G31",
         "badge": "",
@@ -574,9 +607,20 @@
         "verdict": "The CLAR-platform 5 Series -lighter, sharper, and the most dependable modern 5 Series ever made. B-family engines only (except the V8), so the chain caveat is gone. The 540i with the B58 is the sweet spot; the 530d with B57 is the diesel perfection.",
         "cta": {
           "label": "Explore the G30 →",
-          "href": "#"
+          "href": "https://bmwengines.uk/5-series/g30"
         }
       },
+      {
+  "title": "G31 (2017–2023)",
+  "badge": "",
+  "meta": "2017–2023 • B48 petrol • B47/B57 diesel • B58 six-cylinder",
+  "rating": "★★★★☆",
+  "verdict": "The G30 estate—the current-generation 5 Series Touring. Powered by the modular B-family engines: B48 four-cylinder petrol, B47/B57 diesel, and B58 six-cylinder. The B58 and B48 are proven and reliable; the B47 has EGR and DPF watchpoints. Modern, well-supported, and values are high—replacement is almost always viable.",
+  "cta": {
+    "label": "Explore G31 →",
+    "href": "https://bmwengines.uk/5-series/g31"
+  }
+},
       {
         "title": "BMW 5 Series G60/G61",
         "badge": "",
@@ -585,9 +629,20 @@
         "verdict": "The eighth-generation 5 Series -available with combustion, mild-hybrid, and fully electric i5 powertrains. The B58 in the 540i is as robust as ever; the i5 is the future. Too new for volume reliability data, but the B-family record is impeccable.",
         "cta": {
           "label": "Explore the G60 →",
-          "href": "#"
+          "href": "https://bmwengines.uk/5-series/g60"
         }
       },
+      {
+  "title": "G61 (2023–present)",
+  "badge": "",
+  "meta": "2023–present • B48 petrol • B58 six-cylinder",
+  "rating": "★★★★☆",
+  "verdict": "The G60 estate—the latest-generation 5 Series Touring. UK market is petrol-only with B48 four-cylinder and B58 six-cylinder engines. The B58 is proven and reliable; the B48 is well-regarded. Too new for long-term data, but the B-family engines have a strong reliability reputation. High values make replacement very safe.",
+  "cta": {
+    "label": "Explore G61 →",
+    "href": "https://bmwengines.uk/5-series/g61"
+  }
+},
       {
         "title": "The E60 to F10 Transition -The Line That Matters",
         "badge": "",

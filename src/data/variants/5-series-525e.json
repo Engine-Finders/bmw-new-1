@@ -191,7 +191,7 @@
     }
   },
   "hero": {
-    "tagPill": "BMW 525e • 2020–present • 2.0L Turbo PHEV (B48 + e-motor)",
+    "tagPill": "BMW 525e • 2020–present • 2.0L Turbo PHEV (<a href='https://bmwengines.uk/engine/b38-b48'>B48</a> + e-motor)",
     "h1": "BMW 525e Engine Replacement - Compare Prices & Get Quotes",
     "subHeadline": "Get quotes today from trusted UK BMW 5 Series specialists. Compare reconditioned, rebuilt and used B48 PHEV powertrains - supply & fit available nationwide.",
     "trustBadges": [
@@ -320,7 +320,7 @@
           "label": "Check",
           "text": "book inspection urgently"
         },
-        "recommendation": "The B48's water pump and thermostat are known weak points, similar to the B58. If you're experiencing coolant loss or overheating, have the cooling system inspected promptly. The B48 uses an electric water pump that can fail.",
+        "recommendation": "The B48's water pump and thermostat are known weak points, similar to the <a href='https://bmwengines.uk/engine/b57-b58'>B58</a>. If you're experiencing coolant loss or overheating, have the cooling system inspected promptly. The B48 uses an electric water pump that can fail.",
         "failureLink": {
           "label": "Read the full coolant leak guide",
           "href": "/failures/coolant-leak/"
@@ -338,7 +338,7 @@
           "label": "Immediate",
           "text": "if you hear rattle lasting more than 2 seconds, book an inspection today"
         },
-        "recommendation": "While the B48 is an improvement over the N20, timing chain wear remains a possibility - especially with extended oil change intervals. The B48 has revised timing chain guides but tensioner wear is still a known pattern. At the first sign of cold-start rattle, get the chain and tensioners inspected immediately.",
+        "recommendation": "While the B48 is an improvement over the <a href='https://bmwengines.uk/engine/n13-n20'>N20</a>, timing chain wear remains a possibility - especially with extended oil change intervals. The B48 has revised timing chain guides but tensioner wear is still a known pattern. At the first sign of cold-start rattle, get the chain and tensioners inspected immediately.",
         "failureLink": {
           "label": "Read the full timing chain failure guide",
           "href": "/failures/timing-chain-wear/"

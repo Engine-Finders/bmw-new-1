@@ -197,7 +197,7 @@
     }
   },
   "hero": {
-    "tagPill": "BMW X1 25d • 2015–2022 • B47",
+    "tagPill": "BMW X1 25d • 2015–2022 • <a href='https://bmwengines.uk/engine/b37-b47'>B47</a>",
     "h1": "BMW X1 25d Engine Replacement -Compare Prices & Get Quotes",
     "subHeadline": "The 25d badge delivers BMW's most powerful 2.0-litre four-cylinder diesel in the X1 -231 hp and 450 Nm of torque across the F48 generation. Get quotes from trusted UK specialists today.",
     "trustBadges": [
@@ -291,7 +291,7 @@
           "label": "Immediate",
           "text": "if you hear rattle, book an inspection today"
         },
-        "recommendation": "While the B47 is more reliable than the N47, timing chain stretch is still a known issue. The chain, guides and tensioners can wear over time, causing a metallic rattling when cold. If you hear a rattling noise on cold start, have the chain inspected immediately -ignoring it can lead to catastrophic engine damage. Regular oil changes every 5,000–8,000 miles with BMW LL‑04 spec oil are essential. Many specialists also recommend disabling stop‑start to reduce chain wear.",
+        "recommendation": "While the B47 is more reliable than the <a href='https://bmwengines.uk/engine/n47'>N47</a>, timing chain stretch is still a known issue. The chain, guides and tensioners can wear over time, causing a metallic rattling when cold. If you hear a rattling noise on cold start, have the chain inspected immediately -ignoring it can lead to catastrophic engine damage. Regular oil changes every 5,000–8,000 miles with BMW LL‑04 spec oil are essential. Many specialists also recommend disabling stop‑start to reduce chain wear.",
         "failureLink": {
           "label": "",
           "href": "/failures/timing-chain-stretch/"

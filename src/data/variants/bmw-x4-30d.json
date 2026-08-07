@@ -23,7 +23,7 @@
     "jsonLd": {}
   },
   "hero": {
-    "tagPill": "BMW X4 30d • 2014–present • N57 / B57 3.0 Straight-Six Diesel",
+    "tagPill": "BMW X4 30d • 2014–present • <a href='https://bmwengines.uk/engine/n57'>N57</a> / <a href='https://bmwengines.uk/engine/b57-b58'>B57</a> 3.0 Straight-Six Diesel",
     "h1": "BMW X4 30d Engine Replacement -Compare Prices & Get Quotes",
     "subHeadline": "Get quotes today from trusted UK BMW X4 30d specialists. Compare reconditioned, rebuilt and used N57 and B57 3.0-litre straight-six diesel engines -supply & fit available nationwide for BMW's sporty coupé-SUV.",
     "trustBadges": [
@@ -142,7 +142,7 @@
           "label": "Immediate",
           "text": "if you hear rattle, book an inspection today"
         },
-        "recommendation": "The N57's timing chain is a known weak point. While less notorious than the four-cylinder N47, chain stretch and tensioner failure can occur, particularly on higher-mileage examples. A rattling or clattering noise from the engine, especially during startup, can indicate a loose or worn timing chain. Over time, the chain can stretch due to wear and tear, affecting the engine's timing. A cold-start rattle is the early warning sign -ignore it and you risk piston-valve contact and a full engine replacement. Regular oil changes with the correct BMW-approved oil are the best prevention. At the first sign of rattle, get it inspected immediately.",
+        "recommendation": "The N57's timing chain is a known weak point. While less notorious than the four-cylinder <a href='https://bmwengines.uk/engine/n47'>N47</a>, chain stretch and tensioner failure can occur, particularly on higher-mileage examples. A rattling or clattering noise from the engine, especially during startup, can indicate a loose or worn timing chain. Over time, the chain can stretch due to wear and tear, affecting the engine's timing. A cold-start rattle is the early warning sign -ignore it and you risk piston-valve contact and a full engine replacement. Regular oil changes with the correct BMW-approved oil are the best prevention. At the first sign of rattle, get it inspected immediately.",
         "failureLink": {
           "label": "",
           "href": "/failures/n57-timing-chain/"

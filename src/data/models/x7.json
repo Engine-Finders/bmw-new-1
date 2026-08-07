@@ -235,7 +235,7 @@
     }
   },
   "hero": {
-    "tagPill": "BMW X7 • 2018–Present • 1 Generation (G07) • B58, B57, N63, S68, S63",
+    "tagPill": "BMW X7 • 2018–Present • 1 Generation (G07) • B58, <a href='https://bmwengines.uk/engine/b57-b58'>B57</a>, <a href='https://bmwengines.uk/engine/n62-n63'>N63</a>, S68, <a href='https://bmwengines.uk/engine/s63-s65'>S63</a>",
     "h1": "X7 Engines - The Complete UK Guide",
     "subHeadline": "Every BMW X7 engine across the G07 generation - from the B58 straight-six and B57 diesel to the S68 twin-turbo V8 in the M60i and ALPINA XB7. Real UK replacement costs, known failure patterns, and honest ownership economics for BMW's flagship luxury SUV. Backed by real UK X7 engine enquiries in 2025 [BMW-VERIFIED].",
     "trustStrip": [
@@ -364,7 +364,7 @@
         "verdict": "BMW's flagship SUV - the largest, most luxurious, and most expensive BMW ever built. The B58 xDrive40i is the dependable choice; the S68 M60i is the performance pick. The LCI (2023+) brought 48V mild-hybrid assistance and the S68 V8. Buy the B58 unless you have the budget for V8 bills.",
         "cta": {
           "label": "Explore the G07 →",
-          "href": "#"
+          "href": "https://bmwengines.uk/x7/g07"
         }
       },
       {

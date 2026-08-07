@@ -15,7 +15,7 @@
   "hero": {
     "tagPill": "BMW 7 Series E65/E66 • Saloon • 2001–2008",
     "h1": "BMW 7 Series E65/E66 Engines -The Complete UK Guide",
-    "subHeadline": "Every engine fitted to the fourth-generation 7 Series -from the 3.0-litre straight-six petrols and diesels to the 4.4 and 4.8-litre N62 V8s, the 6.0-litre N73 V12 in the 760Li, and the M67 diesel V8. Real UK replacement costs, honest failure data, and the valve stem seal, coolant pipe and HPFP issues that define this generation's ownership story. Backed by real UK enquiry data [PATTERN DATA].",
+    "subHeadline": "Every engine fitted to the fourth-generation 7 Series -from the 3.0-litre straight-six petrols and diesels to the 4.4 and 4.8-litre <a href='https://bmwengines.uk/engine/n62-n63'>N62</a> V8s, the 6.0-litre <a href='https://bmwengines.uk/engine/n73-n74'>N73</a> V12 in the 760Li, and the M67 diesel V8. Real UK replacement costs, honest failure data, and the valve stem seal, coolant pipe and HPFP issues that define this generation\u0027s ownership story. Backed by real UK enquiry data [PATTERN DATA].",
     "trustStrip": [
       {
         "icon": "📊",
@@ -58,7 +58,7 @@
     "engines": [
       {
         "engineCode": "M54B30",
-        "family": "M54",
+        "family": "<a href='https://bmwengines.uk/engine/m50-m52-m54'>M54</a>",
         "fuel": "Petrol",
         "displacement": "3.0L",
         "power": "228–231 bhp",
@@ -70,7 +70,7 @@
       },
       {
         "engineCode": "N52B30",
-        "family": "N52",
+        "family": "<a href='https://bmwengines.uk/engine/n52-n53'>N52</a>",
         "fuel": "Petrol",
         "displacement": "3.0L",
         "power": "255 bhp",
@@ -142,7 +142,7 @@
       },
       {
         "engineCode": "M57D30TU",
-        "family": "M57",
+        "family": "<a href='https://bmwengines.uk/engine/m57'>M57</a>",
         "fuel": "Diesel",
         "displacement": "3.0L",
         "power": "215–231 bhp",
@@ -194,7 +194,7 @@
       {
         "slot": "Thin-Data Summary",
         "engine": "",
-        "quote": "Thin-Data Fallback mode -exactly one paragraph: The M57 3.0-litre straight-six diesel in the 730d is the most dependable E65/E66 engine -robust, economical, and capable of exceptional mileage, with documented examples exceeding 500,000 kilometres. Among petrols, the M54B30 and N52B30 six-cylinders in the 730i are the most reliable, avoiding the N62's expensive valve stem seal issues. The N62 V8s -particularly the 4.4-litre in the 745i -are smooth and powerful but have well-documented weaknesses: valve stem seals causing blue smoke on start-up, alternator bracket gasket oil leaks, and coolant transfer pipe failures. The N73 V12 in the 760Li is a masterpiece -the world's first production V12 with gasoline direct injection, producing 445 bhp -but it's complex and expensive to service; high-pressure fuel pump failures and coolant leaks are known issues. For most buyers, the 730d diesel is the smartest choice; the 730i is the sensible petrol option.",
+        "quote": "Thin-Data Fallback mode -exactly one paragraph: The M57 3.0-litre straight-six diesel in the 730d is the most dependable E65/E66 engine -robust, economical, and capable of exceptional mileage, with documented examples exceeding 500,000 kilometres. Among petrols, the M54B30 and N52B30 six-cylinders in the 730i are the most reliable, avoiding the N62\u0027s expensive valve stem seal issues. The N62 V8s -particularly the 4.4-litre in the 745i -are smooth and powerful but have well-documented weaknesses: valve stem seals causing blue smoke on start-up, alternator bracket gasket oil leaks, and coolant transfer pipe failures. The N73 V12 in the 760Li is a masterpiece -the world\u0027s first production V12 with gasoline direct injection, producing 445 bhp -but it\u0027s complex and expensive to service; high-pressure fuel pump failures and coolant leaks are known issues. For most buyers, the 730d diesel is the smartest choice; the 730i is the sensible petrol option.",
         "whoItsFor": ""
       }
     ]
@@ -216,7 +216,7 @@
         "commonMajorFailure": "Cooling system; oil leaks",
         "repairCostSpecialist": "£300–£900",
         "replacementCostRecon": "£2,200–£4,500",
-        "ownershipVerdict": "Best Petrol Six -reliable, smooth, but underpowered for the 7's weight."
+        "ownershipVerdict": "Best Petrol Six -reliable, smooth, but underpowered for the 7\u0027s weight."
       },
       {
         "engine": "N52B30 (730i)",
@@ -227,7 +227,7 @@
         "ownershipVerdict": "Best Petrol Six -refined and reliable."
       },
       {
-        "engine": "N62B36 / B40 / B44 / B48",
+        "engine": "N62B36 / B40 / B44 / <a href='https://bmwengines.uk/engine/b38-b48'>B48</a>",
         "typicalMileage": "60k–120k",
         "commonMajorFailure": "Valve stem seals; alternator bracket gasket; coolant transfer pipe",
         "repairCostSpecialist": "£1,000–£3,000",
@@ -285,7 +285,7 @@
         "title": "N62 V8 Valve Stem Seal Failure",
         "affectedModels": "E65/E66 735i, 740i, 745i, 750i (all N62 V8-engined variants).",
         "typicalFailureMileage": "60,000–100,000 miles.",
-        "rootCause": "The N62 V8's valve stem seals become brittle with age and heat cycling, allowing oil to leak past the seals into the combustion chamber. The classic symptom is blue smoke on start-up after the car has been idling for 5+ minutes. This is the N62's most infamous and expensive failure.",
+        "rootCause": "The N62 V8\u0027s valve stem seals become brittle with age and heat cycling, allowing oil to leak past the seals into the combustion chamber. The classic symptom is blue smoke on start-up after the car has been idling for 5+ minutes. This is the N62\u0027s most infamous and expensive failure.",
         "tieredCosts": [
           {
             "tier": "Preventative (Repair)",
@@ -341,7 +341,7 @@
         "title": "N62 Coolant Transfer Pipe Failure",
         "affectedModels": "E65/E66 735i, 740i, 745i, 750i (all N62 V8-engined variants).",
         "typicalFailureMileage": "60,000–100,000 miles.",
-        "rootCause": "The N62's coolant transfer pipe -located in the V of the engine -can leak. The pipe is difficult to access and labour-intensive to replace. This is the same issue that affects N62-powered E60 5 Series and E63 6 Series models.",
+        "rootCause": "The N62\u0027s coolant transfer pipe -located in the V of the engine -can leak. The pipe is difficult to access and labour-intensive to replace. This is the same issue that affects N62-powered E60 5 Series and E63 6 Series models.",
         "tieredCosts": [
           {
             "tier": "Preventative (Repair)",
@@ -397,7 +397,7 @@
         "title": "M57 Diesel Swirl Flap and EGR Issues",
         "affectedModels": "E65/E66 730d, 730Ld (M57 diesel engine).",
         "typicalFailureMileage": "80,000–150,000 miles.",
-        "rootCause": "The M57's swirl flaps can fail, with the flap detaching and entering the cylinder -this is a known issue across BMW's M57 diesel family. EGR valve clogging with carbon deposits is also common.",
+        "rootCause": "The M57\u0027s swirl flaps can fail, with the flap detaching and entering the cylinder -this is a known issue across BMW\u0027s M57 diesel family. EGR valve clogging with carbon deposits is also common.",
         "tieredCosts": [
           {
             "tier": "Preventative (Repair)",
@@ -518,24 +518,72 @@
   },
   "coreVariants": {
     "dieselVariants": [
-      "730d",
-      "730Ld",
-      "740d",
-      "745d"
+      {
+        "name": "730d",
+        "url": "https://bmwengines.uk/7-series/730d"
+      },
+      {
+        "name": "730Ld",
+        "url": "#"
+      },
+      {
+        "name": "740d",
+        "url": "https://bmwengines.uk/7-series/740d"
+      },
+      {
+        "name": "745d",
+        "url": "#"
+      }
     ],
     "petrolVariants": [
-      "730i",
-      "730Li",
-      "735i",
-      "735Li",
-      "740i",
-      "740Li",
-      "745i",
-      "745Li",
-      "750i",
-      "750Li",
-      "760i",
-      "760Li"
+      {
+        "name": "730i",
+        "url": "https://bmwengines.uk/7-series/730i"
+      },
+      {
+        "name": "730Li",
+        "url": "#"
+      },
+      {
+        "name": "735i",
+        "url": "https://bmwengines.uk/7-series/735i"
+      },
+      {
+        "name": "735Li",
+        "url": "#"
+      },
+      {
+        "name": "740i",
+        "url": "https://bmwengines.uk/7-series/740i"
+      },
+      {
+        "name": "740Li",
+        "url": "#"
+      },
+      {
+        "name": "745i",
+        "url": "https://bmwengines.uk/7-series/745i"
+      },
+      {
+        "name": "745Li",
+        "url": "#"
+      },
+      {
+        "name": "750i",
+        "url": "https://bmwengines.uk/7-series/750i"
+      },
+      {
+        "name": "750Li",
+        "url": "#"
+      },
+      {
+        "name": "760i",
+        "url": "https://bmwengines.uk/7-series/760i"
+      },
+      {
+        "name": "760Li",
+        "url": "#"
+      }
     ],
     "scopeNote": "All variants listed are BMW 7 Series E65/E66 only. Available in short-wheelbase (E65) and long-wheelbase (E66) body styles -both share the same engine lineup and are covered under this Generation Page. The E67 (high-security) and E68 (Hydrogen 7) are rare special variants. Alpina B7 variants with a supercharged 4.4-litre V8 are covered on their own page."
   },
@@ -556,7 +604,7 @@
       {
         "id": 2,
         "question": "Which BMW 7 Series E65/E66 engine is the most reliable?",
-        "answer": "The M57 3.0-litre straight-six diesel in the 730d is the most reliable E65/E66 engine -robust, economical, and documented examples have exceeded 500,000 kilometres. Among petrols, the M54B30 and N52B30 six-cylinders in the 730i are the most reliable, avoiding the N62's expensive valve stem seal issues."
+        "answer": "The M57 3.0-litre straight-six diesel in the 730d is the most reliable E65/E66 engine -robust, economical, and documented examples have exceeded 500,000 kilometres. Among petrols, the M54B30 and N52B30 six-cylinders in the 730i are the most reliable, avoiding the N62\u0027s expensive valve stem seal issues."
       },
       {
         "id": 3,
@@ -566,12 +614,12 @@
       {
         "id": 4,
         "question": "Is the BMW 7 Series E65/E66 reliable?",
-        "answer": "It depends heavily on which engine you choose. The M57 diesel in the 730d is one of BMW's most reliable engines. The M54 and N52 six-cylinder petrols are also solid. The N62 V8s have well-documented valve stem seal and coolant pipe issues that can be expensive to fix. The N73 V12 is reliable but complex and expensive to service. The E65/E66 is known for electronic gremlins -iDrive failures, battery drain, and sensor issues are common."
+        "answer": "It depends heavily on which engine you choose. The M57 diesel in the 730d is one of BMW\u0027s most reliable engines. The M54 and N52 six-cylinder petrols are also solid. The N62 V8s have well-documented valve stem seal and coolant pipe issues that can be expensive to fix. The N73 V12 is reliable but complex and expensive to service. The E65/E66 is known for electronic gremlins -iDrive failures, battery drain, and sensor issues are common."
       },
       {
         "id": 5,
         "question": "Which E65/E66 engine should I avoid?",
-        "answer": "We don't recommend outright avoidance -but an N62 V8 without documented valve stem seal history is the one purchase we consistently advise against. Valve stem seal failure is common and expensive to fix, often exceeding the car's value. The 760Li V12 is spectacular but budget for £1,000–£2,000 a year in maintenance. For a sensible daily driver, the 730d diesel is the smartest choice."
+        "answer": "We don\u0027t recommend outright avoidance -but an N62 V8 without documented valve stem seal history is the one purchase we consistently advise against. Valve stem seal failure is common and expensive to fix, often exceeding the car\u0027s value. The 760Li V12 is spectacular but budget for £1,000–£2,000 a year in maintenance. For a sensible daily driver, the 730d diesel is the smartest choice."
       },
       {
         "id": 6,
@@ -586,7 +634,7 @@
       {
         "id": 8,
         "question": "How long do BMW 7 Series E65/E66 engines last?",
-        "answer": "The M57 diesel in the 730d can exceed 500,000 kilometres with proper servicing -a documented example has been recorded on a German market 730d. The M54 and N52 six-cylinder petrols can exceed 300,000 miles with proper care. The N62 V8's limiting factor is the valve stem seals -addressed proactively, the engine is durable. The N73 V12 is reliable but needs HPFP and coolant system attention."
+        "answer": "The M57 diesel in the 730d can exceed 500,000 kilometres with proper servicing -a documented example has been recorded on a German market 730d. The M54 and N52 six-cylinder petrols can exceed 300,000 miles with proper care. The N62 V8\u0027s limiting factor is the valve stem seals -addressed proactively, the engine is durable. The N73 V12 is reliable but needs HPFP and coolant system attention."
       },
       {
         "id": 9,
@@ -596,7 +644,7 @@
       {
         "id": 10,
         "question": "How do I find my BMW 7 Series E65/E66 engine code?",
-        "answer": "Listed on the VIN plate and vehicle documentation; block stamping varies by engine. For the M54/N52 six-cylinder, the code is on the block face below the inlet manifold. For the N62 V8, it's on the block face near the timing cover. For the N73 V12, it's on the block face between the cylinder banks. Tell us your registration and we'll identify it -20+ vetted BMW specialists will confirm it for free."
+        "answer": "Listed on the VIN plate and vehicle documentation; block stamping varies by engine. For the M54/N52 six-cylinder, the code is on the block face below the inlet manifold. For the N62 V8, it\u0027s on the block face near the timing cover. For the N73 V12, it\u0027s on the block face between the cylinder banks. Tell us your registration and we\u0027ll identify it -20+ vetted BMW specialists will confirm it for free."
       }
     ]
   },

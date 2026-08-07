@@ -187,7 +187,7 @@
   "hero": {
     "tagPill": "BMW 4 Series M440d • 2020–present • 1 Engine Generation",
     "h1": "BMW M440d Engine Replacement - Compare Prices & Get Quotes",
-    "subHeadline": "Get quotes today from trusted UK BMW M440d specialists. The 3.0-litre B57 twin-turbo inline-six diesel is BMW's most powerful six-cylinder diesel for the 4 Series - compare reconditioned, rebuilt and used engines with supply & fit available nationwide.",
+    "subHeadline": "Get quotes today from trusted UK BMW M440d specialists. The 3.0-litre <a href='https://bmwengines.uk/engine/b57-b58'>B57</a> twin-turbo inline-six diesel is BMW's most powerful six-cylinder diesel for the 4 Series - compare reconditioned, rebuilt and used engines with supply & fit available nationwide.",
     "trustBadges": [
       "🔧 Supply & Fit Available",
       "✅ 12-Month Warranty",
@@ -222,7 +222,7 @@
         "engineCode": "B57D30T2 (B57D30B)",
         "reliability": "★★★★☆ [NEWLY ASSIGNED - see Data Note]",
         "reconCost": "£4,000–£6,500 [PLACEHOLDER]",
-        "eraNote": "3.0L twin-turbo inline-six diesel with 48V MHEV - 340 hp, 700 Nm. Chain durability notably improved over N57"
+        "eraNote": "3.0L twin-turbo inline-six diesel with 48V MHEV - 340 hp, 700 Nm. Chain durability notably improved over <a href='https://bmwengines.uk/engine/n57'>N57</a>"
       }
     ],
     "sourceNote": "",
@@ -549,7 +549,7 @@
       {
         "id": 2,
         "question": "Is the BMW M440d engine reliable?",
-        "answer": "Yes - the B57 is widely regarded as one of BMW's most reliable modern diesel engines. It's described as \"the golden mean between performance, consumption and longevity\" and \"probably one of the best engines BMW has ever produced\". Unlike the N47 and early N57 engines, B57 timing chain issues are \"exceedingly rare\". However, EGR cooler coolant leaks (subject to BMW recalls), DPF clogging from short journeys, carbon buildup, and injector wear are well-documented issues."
+        "answer": "Yes - the B57 is widely regarded as one of BMW's most reliable modern diesel engines. It's described as \"the golden mean between performance, consumption and longevity\" and \"probably one of the best engines BMW has ever produced\". Unlike the <a href='https://bmwengines.uk/engine/n47'>N47</a> and early N57 engines, B57 timing chain issues are \"exceedingly rare\". However, EGR cooler coolant leaks (subject to BMW recalls), DPF clogging from short journeys, carbon buildup, and injector wear are well-documented issues."
       },
       {
         "id": 3,

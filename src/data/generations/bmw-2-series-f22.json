@@ -179,7 +179,7 @@
               "name": "Which F22 engine is the most reliable?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "The B58B30O0 (M240i, 2016–2021) is the F22's most reliable engine -BMW's modern turbocharged straight-six is smooth, responsive, and genuinely robust, addressing many of the N55's weaknesses. The B48 four-cylinder is also very reliable, and the B47 diesel is improved over the N47."
+                "text": "The B58B30O0 (M240i, 2016–2021) is the F22\u0027s most reliable engine -BMW\u0027s modern turbocharged straight-six is smooth, responsive, and genuinely robust, addressing many of the N55\u0027s weaknesses. The B48 four-cylinder is also very reliable, and the B47 diesel is improved over the N47."
               }
             },
             {
@@ -203,7 +203,7 @@
               "name": "Which F22 engine should I avoid?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Pre-2015 N20 (220i/228i) without documented timing chain replacement -it's a well-known weakness. Also avoid pre-2015 N47 diesel without chain history. The S55 M2 Competition is fantastic but expensive to maintain; if you're not prepared for that, skip it. Any engine without full service history is a risk."
+                "text": "Pre-2015 N20 (220i/228i) without documented timing chain replacement -it\u0027s a well-known weakness. Also avoid pre-2015 N47 diesel without chain history. The S55 M2 Competition is fantastic but expensive to maintain; if you\u0027re not prepared for that, skip it. Any engine without full service history is a risk."
               }
             },
             {
@@ -219,7 +219,7 @@
               "name": "Is it worth replacing an F22 engine, or should I scrap the car?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Depends on the car's value. Against a £15,000 M240i, a £4,500–£7,000 B58 recon is 30–47% -well within our 70% BMW threshold. Against a £8,000 228i, a £2,500–£4,500 N20 recon is 31–56% -borderline but often viable for a well-kept example. For an M2 Competition at £25,000+, a £6,000–£10,000 S55 recon is 24–40% -a repair decision, not a scrap question. Value the car first; if it's a pre-2015 N20 without chain history, walk away or budget for the work immediately."
+                "text": "Depends on the car\u0027s value. Against a £15,000 M240i, a £4,500–£7,000 B58 recon is 30–47% -well within our 70% BMW threshold. Against a £8,000 228i, a £2,500–£4,500 N20 recon is 31–56% -borderline but often viable for a well-kept example. For an M2 Competition at £25,000+, a £6,000–£10,000 S55 recon is 24–40% -a repair decision, not a scrap question. Value the car first; if it\u0027s a pre-2015 N20 without chain history, walk away or budget for the work immediately."
               }
             },
             {
@@ -227,7 +227,7 @@
               "name": "How long do F22 engines last?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "The B58 and B48 can comfortably exceed 150,000 miles with proper servicing. The N55 is capable of high mileage but oil leaks and charge pipe issues require attention around 60k–100k miles. The N20's timing chain is the limiting factor -addressed proactively, it can reach 100,000+ miles. The S55 is robust but high-strung; treat 50,000 miles as a major service checkpoint."
+                "text": "The B58 and B48 can comfortably exceed 150,000 miles with proper servicing. The N55 is capable of high mileage but oil leaks and charge pipe issues require attention around 60k–100k miles. The N20\u0027s timing chain is the limiting factor -addressed proactively, it can reach 100,000+ miles. The S55 is robust but high-strung; treat 50,000 miles as a major service checkpoint."
               }
             },
             {
@@ -243,7 +243,7 @@
               "name": "How do I find my F22 engine code?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Listed on the VIN plate and vehicle documentation; the engine code is also stamped on the cylinder block. For petrol: N20B20 (early 220i/228i), N55B30O0 (M235i), B48B20 (later 220i/230i), B58B30O0 (M240i), N55B30T0 (M2), S55 (M2 Competition). For diesel: N47D20O1 (early 218d/220d) or B47D20 (later). Tell us your variant and registration year and we'll identify it -20+ vetted BMW specialists will confirm it for free."
+                "text": "Listed on the VIN plate and vehicle documentation; the engine code is also stamped on the cylinder block. For petrol: N20B20 (early 220i/228i), N55B30O0 (M235i), B48B20 (later 220i/230i), B58B30O0 (M240i), N55B30T0 (M2), S55 (M2 Competition). For diesel: N47D20O1 (early 218d/220d) or B47D20 (later). Tell us your variant and registration year and we\u0027ll identify it -20+ vetted BMW specialists will confirm it for free."
               }
             }
           ]
@@ -277,7 +277,7 @@
         {
           "@type": "Dataset",
           "name": "BMW 2 Series F22 UK Engine Enquiry Data 2025",
-          "description": "Proprietary UK enquiry volumes and demand trends for BMW 2 Series F22 engines, sourced from BMWEngines.uk's specialist marketplace activity.",
+          "description": "Proprietary UK enquiry volumes and demand trends for BMW 2 Series F22 engines, sourced from BMWEngines.uk\u0027s specialist marketplace activity.",
           "creator": {
             "@type": "Organization",
             "name": "BMWEngines.uk"
@@ -311,7 +311,7 @@
   "hero": {
     "tagPill": "BMW 2 Series F22 • Coupé • 2014–2021",
     "h1": "BMW 2 Series F22 Engines -The Complete UK Guide",
-    "subHeadline": "Every engine fitted to the F22 coupé -from the N20 four-cylinder and N55 six-cylinder to the B48, B58, and the S55-powered M2 Competition. Real UK replacement costs and honest reliability data for BMW's compact sports coupé. Backed by real UK enquiries [BMW-VERIFIED].",
+    "subHeadline": "Every engine fitted to the F22 coupé -from the <a href='https://bmwengines.uk/engine/n13-n20'>N20</a> four-cylinder and <a href='https://bmwengines.uk/engine/n54-n55'>N55</a> six-cylinder to the <a href='https://bmwengines.uk/engine/b38-b48'>B48</a>, <a href='https://bmwengines.uk/engine/b57-b58'>B58</a>, and the <a href='https://bmwengines.uk/engine/s55'>S55</a>-powered M2 Competition. Real UK replacement costs and honest reliability data for BMW\u0027s compact sports coupé. Backed by real UK enquiries [BMW-VERIFIED].",
     "trustStrip": [
       {
         "icon": "📊",
@@ -438,7 +438,7 @@
       },
       {
         "engineCode": "N47D20O1",
-        "family": "BMW N47",
+        "family": "BMW <a href='https://bmwengines.uk/engine/n47'>N47</a>",
         "fuel": "Diesel",
         "displacement": "2.0L (1995cc)",
         "power": "141–181 bhp",
@@ -450,7 +450,7 @@
       },
       {
         "engineCode": "B47D20",
-        "family": "BMW B47",
+        "family": "BMW <a href='https://bmwengines.uk/engine/b37-b47'>B47</a>",
         "fuel": "Diesel",
         "displacement": "2.0L (1995cc)",
         "power": "148–221 bhp",
@@ -463,13 +463,13 @@
     ],
     "confidenceScore": {
       "title": "How confident are these ratings?",
-      "text": "All ratings are provisional -no dedicated Engine Page exists for any F22 engine family. The B48 and B58 are widely regarded as the most reliable options, representing BMW's newer modular engine architecture with fewer known issues than the N20 and N55. The B47 diesel is also considered more reliable than the N47 it replaced. The N20 is known for timing chain guide wear, the N55 for oil leaks and VANOS issues, and the S55 (while robust for a high-performance engine) adds complexity and cost."
+      "text": "All ratings are provisional -no dedicated Engine Page exists for any F22 engine family. The B48 and B58 are widely regarded as the most reliable options, representing BMW\u0027s newer modular engine architecture with fewer known issues than the N20 and N55. The B47 diesel is also considered more reliable than the N47 it replaced. The N20 is known for timing chain guide wear, the N55 for oil leaks and VANOS issues, and the S55 (while robust for a high-performance engine) adds complexity and cost."
     },
     "dataCorrections": []
   },
   "overview": {
     "h2": "BMW 2 Series F22 -Overview",
-    "intro": "The F22 is the first generation of the BMW 2 Series coupé, launched in November 2013 as the successor to the E82 1 Series coupé. Designed by Christopher Weil, it introduced a new naming convention for BMW's compact rear-wheel-drive models, reviving the spirit of the legendary BMW 2002. Built on a shortened version of the F30 3 Series platform, the F22 features a 50:50 weight distribution, MacPherson strut front suspension, and a five-link rear setup. The engine line‑up evolved significantly: the launch N20 four‑cylinder and N55 six‑cylinder were replaced by the more modern B48 and B58 from 2016. The high‑performance M2 (F87) arrived in 2015, with the M2 Competition following in 2018. Production ended in 2021.",
+    "intro": "The F22 is the first generation of the BMW 2 Series coupé, launched in November 2013 as the successor to the E82 1 Series coupé. Designed by Christopher Weil, it introduced a new naming convention for BMW\u0027s compact rear-wheel-drive models, reviving the spirit of the legendary BMW 2002. Built on a shortened version of the F30 3 Series platform, the F22 features a 50:50 weight distribution, MacPherson strut front suspension, and a five-link rear setup. The engine line‑up evolved significantly: the launch N20 four‑cylinder and N55 six‑cylinder were replaced by the more modern B48 and B58 from 2016. The high‑performance M2 (F87) arrived in 2015, with the M2 Competition following in 2018. Production ended in 2021.",
     "keyFacts": "Platform: BMW F22 (rear‑wheel drive, shortened F30 architecture) • Predecessor: BMW 1 Series (E82/E88) • Successor: BMW 2 Series (G42) • Sibling body styles in this generation: F23 Convertible, F87 M2",
     "marketIntelligenceLine": "The 2 Series nameplate generated significant UK engine enquiries in 2025 [BMW-VERIFIED], with the B58-powered M240i representing the majority of F22-related demand based on market patterns."
   },
@@ -478,25 +478,25 @@
       {
         "slot": "Best Value",
         "engine": "B48B20 (230i)",
-        "quote": "The B48 four-cylinder delivers 248 bhp -more than the N20 it replaced -with better reliability and fuel economy. It's the sensible choice that doesn't feel sensible: 0–60 in 5.6 seconds and a genuine 40+ mpg on a run.",
+        "quote": "The B48 four-cylinder delivers 248 bhp -more than the N20 it replaced -with better reliability and fuel economy. It\u0027s the sensible choice that doesn\u0027t feel sensible: 0–60 in 5.6 seconds and a genuine 40+ mpg on a run.",
         "whoItsFor": "buyers who want daily-driver usability with genuine performance."
       },
       {
         "slot": "Highest Risk",
         "engine": "N20B20 (early 220i/228i, pre‑2015)",
-        "quote": "The N20's timing chain guide wear is well-documented -a failure that can destroy the engine. BMW revised the guides in 2015, but early cars remain a gamble without documented chain work. The plastic charge pipe is another common failure point.",
+        "quote": "The N20\u0027s timing chain guide wear is well-documented -a failure that can destroy the engine. BMW revised the guides in 2015, but early cars remain a gamble without documented chain work. The plastic charge pipe is another common failure point.",
         "whoItsFor": "only buyers with documented timing chain replacement or post‑2015 cars."
       },
       {
         "slot": "Most Expensive Failure",
         "engine": "S55 (M2 Competition)",
-        "quote": "The S55 is a high‑performance version of the N55 with twin turbos and a closed‑deck block. It's robust for what it is, but parts are expensive, and a full engine replacement can exceed £10,000. The M2 CS's 444 bhp variant is even more costly.",
+        "quote": "The S55 is a high‑performance version of the N55 with twin turbos and a closed‑deck block. It\u0027s robust for what it is, but parts are expensive, and a full engine replacement can exceed £10,000. The M2 CS\u0027s 444 bhp variant is even more costly.",
         "whoItsFor": "buyers with deep pockets who want the ultimate F22‑based M car."
       },
       {
         "slot": "Most Overlooked",
         "engine": "N55B30T0 (M2, 2015–2018)",
-        "quote": "The original M2's N55 is often overshadowed by the later S55‑powered Competition, but it's a more characterful engine -less clinical, more engaging. It's also cheaper to buy and maintain than the S55 cars.",
+        "quote": "The original M2\u0027s N55 is often overshadowed by the later S55‑powered Competition, but it\u0027s a more characterful engine -less clinical, more engaging. It\u0027s also cheaper to buy and maintain than the S55 cars.",
         "whoItsFor": "buyers who want M2 performance on a tighter budget and prefer character over outright pace."
       }
     ]
@@ -579,7 +579,7 @@
     ],
     "economicsRule": {
       "title": "The F22 rule",
-      "text": "A £4,500–£7,000 B58 recon against a £10,000–£20,000 M240i sits at 23–70% of the car's value -at the upper end, that brushes our 70% BMW scrap threshold. Against a £15,000+ example, the same recon drops to 30–47% -a repair decision, not a scrap question. For an N20 228i at £8,000–£12,000, a £2,500–£4,500 recon is 21–56% -borderline but often viable for a well‑kept example. Value the car first; if it's a pre‑2015 N20 without timing chain history, walk away or budget for the work immediately."
+      "text": "A £4,500–£7,000 B58 recon against a £10,000–£20,000 M240i sits at 23–70% of the car\u0027s value -at the upper end, that brushes our 70% BMW scrap threshold. Against a £15,000+ example, the same recon drops to 30–47% -a repair decision, not a scrap question. For an N20 228i at £8,000–£12,000, a £2,500–£4,500 recon is 21–56% -borderline but often viable for a well‑kept example. Value the car first; if it\u0027s a pre‑2015 N20 without timing chain history, walk away or budget for the work immediately."
     },
     "keyTakeaways": [
       {
@@ -605,7 +605,7 @@
         "typicalFailureMileage": "",
         "rootCause": "",
         "tieredCosts": [],
-        "recommendation": "If you're buying a pre‑2015 N20 F22, look for documented timing chain work or budget £1,200–£2,500 immediately. A preventative chain and tensioner replacement is dramatically cheaper than the £2,500+ replacement that follows a failure. On a car worth under £8,000, evaluate carefully before committing.",
+        "recommendation": "If you\u0027re buying a pre‑2015 N20 F22, look for documented timing chain work or budget £1,200–£2,500 immediately. A preventative chain and tensioner replacement is dramatically cheaper than the £2,500+ replacement that follows a failure. On a car worth under £8,000, evaluate carefully before committing.",
         "cta": {
           "label": "",
           "href": "#"
@@ -613,7 +613,7 @@
       },
       {
         "id": 2,
-        "title": "N55 Oil Leaks & Charge Pipe Failure (M235i, M2)",
+        "title": "N55 Oil Leaks \u0026 Charge Pipe Failure (M235i, M2)",
         "affectedModels": "",
         "typicalFailureMileage": "",
         "rootCause": "",
@@ -631,7 +631,7 @@
         "typicalFailureMileage": "",
         "rootCause": "",
         "tieredCosts": [],
-        "recommendation": "If you're buying an M2 Competition, budget for a crank hub fix if the car is modified or you plan to modify it -£1,800–£3,000 is cheaper than the £6,000+ replacement that follows a failure. On a stock car, it's a risk you can manage, but the peace of mind is worth the cost.",
+        "recommendation": "If you\u0027re buying an M2 Competition, budget for a crank hub fix if the car is modified or you plan to modify it -£1,800–£3,000 is cheaper than the £6,000+ replacement that follows a failure. On a stock car, it\u0027s a risk you can manage, but the peace of mind is worth the cost.",
         "cta": {
           "label": "",
           "href": "#"
@@ -740,20 +740,64 @@
   },
   "coreVariants": {
     "dieselVariants": [
-      "218d",
-      "220d",
-      "225d"
+      {
+        "name": "218d",
+        "url": "https://bmwengines.uk/2-series/218d"
+      },
+      {
+        "name": "220d",
+        "url": "https://bmwengines.uk/2-series/220d"
+      },
+      {
+        "name": "225d",
+        "url": "#"
+      },
+      {
+        "name": "214d",
+        "url": "https://bmwengines.uk/2-series/214d"
+      },
+      {
+        "name": "216d",
+        "url": "https://bmwengines.uk/2-series/216d"
+      }
     ],
     "petrolVariants": [
-      "218i",
-      "220i",
-      "228i",
-      "230i",
-      "M235i",
-      "M240i",
-      "M2",
-      "M2 Competition",
-      "M2 CS"
+      {
+        "name": "218i",
+        "url": "https://bmwengines.uk/2-series/218i"
+      },
+      {
+        "name": "220i",
+        "url": "https://bmwengines.uk/2-series/220i"
+      },
+      {
+        "name": "228i",
+        "url": "#"
+      },
+      {
+        "name": "230i",
+        "url": "https://bmwengines.uk/2-series/230i"
+      },
+      {
+        "name": "M235i",
+        "url": "https://bmwengines.uk/2-series/m235i"
+      },
+      {
+        "name": "M240i",
+        "url": "https://bmwengines.uk/2-series/m240i"
+      },
+      {
+        "name": "M2",
+        "url": "https://bmwengines.uk/2-series/m240i"
+      },
+      {
+        "name": "M2 Competition",
+        "url": "#"
+      },
+      {
+        "name": "M2 CS",
+        "url": "#"
+      }
     ],
     "scopeNote": "All variants listed are F22 coupé only. The F23 Convertible shares most of these engines but is covered on its own Generation Page. The F87 M2 is also covered separately."
   },
@@ -763,15 +807,11 @@
       "2. B48B20 (230i) -pattern data",
       "3. S55 (M2 Competition) -pattern data"
     ],
-    "mostRequestedVariants": [
-      "1. M240i",
-      "2. 230i",
-      "3. M2 Competition"
-    ],
+    "mostRequestedVariants": ["1. M240i", "2. 230i", "3. M2 Competition"],
     "averageReplacementCost": "£3,500–£6,500 (reconditioned, supply only) [BMW-QUOTE]",
     "mostCommonFailures": [
       "1. N20 timing chain guide wear (pre-2015)",
-      "2. N55 oil leaks & charge pipe failure",
+      "2. N55 oil leaks \u0026 charge pipe failure",
       "3. S55 crank hub spin (M2 Competition)"
     ],
     "liveFeed": [
@@ -808,7 +848,7 @@
       {
         "id": 2,
         "question": "Which F22 engine is the most reliable?",
-        "answer": "The B58B30O0 (M240i, 2016–2021) is the F22's most reliable engine -BMW's modern turbocharged straight-six is smooth, responsive, and genuinely robust, addressing many of the N55's weaknesses. The B48 four-cylinder is also very reliable, and the B47 diesel is improved over the N47."
+        "answer": "The B58B30O0 (M240i, 2016–2021) is the F22\u0027s most reliable engine -BMW\u0027s modern turbocharged straight-six is smooth, responsive, and genuinely robust, addressing many of the N55\u0027s weaknesses. The B48 four-cylinder is also very reliable, and the B47 diesel is improved over the N47."
       },
       {
         "id": 3,
@@ -823,7 +863,7 @@
       {
         "id": 5,
         "question": "Which F22 engine should I avoid?",
-        "answer": "Pre-2015 N20 (220i/228i) without documented timing chain replacement -it's a well-known weakness. Also avoid pre-2015 N47 diesel without chain history. The S55 M2 Competition is fantastic but expensive to maintain; if you're not prepared for that, skip it. Any engine without full service history is a risk."
+        "answer": "Pre-2015 N20 (220i/228i) without documented timing chain replacement -it\u0027s a well-known weakness. Also avoid pre-2015 N47 diesel without chain history. The S55 M2 Competition is fantastic but expensive to maintain; if you\u0027re not prepared for that, skip it. Any engine without full service history is a risk."
       },
       {
         "id": 6,
@@ -833,12 +873,12 @@
       {
         "id": 7,
         "question": "Is it worth replacing an F22 engine, or should I scrap the car?",
-        "answer": "Depends on the car's value. Against a £15,000 M240i, a £4,500–£7,000 B58 recon is 30–47% -well within our 70% BMW threshold. Against a £8,000 228i, a £2,500–£4,500 N20 recon is 31–56% -borderline but often viable for a well-kept example. For an M2 Competition at £25,000+, a £6,000–£10,000 S55 recon is 24–40% -a repair decision, not a scrap question. Value the car first; if it's a pre-2015 N20 without chain history, walk away or budget for the work immediately."
+        "answer": "Depends on the car\u0027s value. Against a £15,000 M240i, a £4,500–£7,000 B58 recon is 30–47% -well within our 70% BMW threshold. Against a £8,000 228i, a £2,500–£4,500 N20 recon is 31–56% -borderline but often viable for a well-kept example. For an M2 Competition at £25,000+, a £6,000–£10,000 S55 recon is 24–40% -a repair decision, not a scrap question. Value the car first; if it\u0027s a pre-2015 N20 without chain history, walk away or budget for the work immediately."
       },
       {
         "id": 8,
         "question": "How long do F22 engines last?",
-        "answer": "The B58 and B48 can comfortably exceed 150,000 miles with proper servicing. The N55 is capable of high mileage but oil leaks and charge pipe issues require attention around 60k–100k miles. The N20's timing chain is the limiting factor -addressed proactively, it can reach 100,000+ miles. The S55 is robust but high-strung; treat 50,000 miles as a major service checkpoint."
+        "answer": "The B58 and B48 can comfortably exceed 150,000 miles with proper servicing. The N55 is capable of high mileage but oil leaks and charge pipe issues require attention around 60k–100k miles. The N20\u0027s timing chain is the limiting factor -addressed proactively, it can reach 100,000+ miles. The S55 is robust but high-strung; treat 50,000 miles as a major service checkpoint."
       },
       {
         "id": 9,
@@ -848,7 +888,7 @@
       {
         "id": 10,
         "question": "How do I find my F22 engine code?",
-        "answer": "Listed on the VIN plate and vehicle documentation; the engine code is also stamped on the cylinder block. For petrol: N20B20 (early 220i/228i), N55B30O0 (M235i), B48B20 (later 220i/230i), B58B30O0 (M240i), N55B30T0 (M2), S55 (M2 Competition). For diesel: N47D20O1 (early 218d/220d) or B47D20 (later). Tell us your variant and registration year and we'll identify it -20+ vetted BMW specialists will confirm it for free."
+        "answer": "Listed on the VIN plate and vehicle documentation; the engine code is also stamped on the cylinder block. For petrol: N20B20 (early 220i/228i), N55B30O0 (M235i), B48B20 (later 220i/230i), B58B30O0 (M240i), N55B30T0 (M2), S55 (M2 Competition). For diesel: N47D20O1 (early 218d/220d) or B47D20 (later). Tell us your variant and registration year and we\u0027ll identify it -20+ vetted BMW specialists will confirm it for free."
       }
     ]
   },
@@ -861,11 +901,11 @@
       },
       {
         "title": "Compare F22 Engine Replacement Companies",
-        "text": "see prices, warranty terms and supply & fit options side‑by‑side before you commit."
+        "text": "see prices, warranty terms and supply \u0026 fit options side‑by‑side before you commit."
       },
       {
         "title": "UK Engine Replacement Services for F22",
-        "text": "covering every variant from 218d to M2 CS, with supply‑only or full supply & fit available nationwide."
+        "text": "covering every variant from 218d to M2 CS, with supply‑only or full supply \u0026 fit available nationwide."
       }
     ],
     "finalCta": "Find the best BMW 2 Series F22 engine replacement UK drivers rely on. Compare real prices from trusted specialists on EnginesMarket today and get back on the road with confidence.",

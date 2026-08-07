@@ -107,7 +107,7 @@
               "name": "Which BMW M3 E36 engine is the most reliable?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "The S50B30 3.0-litre is the most reliable E36 M3 engine -its single VANOS system is simpler and cheaper to repair than the Evolution's double VANOS, and the iron-block construction is proven and durable. Both engines are robust with proper maintenance."
+                "text": "The S50B30 3.0-litre is the most reliable E36 M3 engine -its single VANOS system is simpler and cheaper to repair than the Evolution\u0027s double VANOS, and the iron-block construction is proven and durable. Both engines are robust with proper maintenance."
               }
             },
             {
@@ -147,7 +147,7 @@
               "name": "Is it worth replacing a BMW M3 E36 engine, or should I scrap the car?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Apply the 70% BMW scrap threshold -but this is a classic M car, so value assessment differs. Against a well-kept £18,000 Evolution, a £4,500 S50B32 recon is 25% of the car's value -safe. Against a tired £10,000 example, the same recon is 45% -borderline. For a cherished Evolution or low-mileage example, the emotional value may justify the spend."
+                "text": "Apply the 70% BMW scrap threshold -but this is a classic M car, so value assessment differs. Against a well-kept £18,000 Evolution, a £4,500 S50B32 recon is 25% of the car\u0027s value -safe. Against a tired £10,000 example, the same recon is 45% -borderline. For a cherished Evolution or low-mileage example, the emotional value may justify the spend."
               }
             },
             {
@@ -171,7 +171,7 @@
               "name": "How do I find my BMW M3 E36 engine code?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "The engine code is listed on the VIN plate, vehicle documentation, and on a casting on the engine block. For the 3.0-litre M3 (1992–1995), look for S50B30. For the 3.2-litre Evolution (1995–1999), look for S50B32. Tell us your variant and year, and we'll confirm."
+                "text": "The engine code is listed on the VIN plate, vehicle documentation, and on a casting on the engine block. For the 3.0-litre M3 (1992–1995), look for S50B30. For the 3.2-litre Evolution (1995–1999), look for S50B32. Tell us your variant and year, and we\u0027ll confirm."
               }
             }
           ]
@@ -205,7 +205,7 @@
         {
           "@type": "Dataset",
           "name": "BMW M3 E36 UK Engine Enquiry Data 2025",
-          "description": "Proprietary UK enquiry volumes and demand trends for BMW M3 E36 engines, sourced from bmwengines.uk's specialist marketplace activity.",
+          "description": "Proprietary UK enquiry volumes and demand trends for BMW M3 E36 engines, sourced from bmwengines.uk\u0027s specialist marketplace activity.",
           "creator": {
             "@type": "Organization",
             "name": "bmwengines.uk"
@@ -239,7 +239,7 @@
   "hero": {
     "tagPill": "BMW M3 E36 • Coupé/Saloon/Convertible • 1992–1999",
     "h1": "BMW M3 E36 Engines -The Complete UK Guide",
-    "subHeadline": "Every engine fitted to the E36-generation BMW M3 -from the 3.0-litre S50B30 single-VANOS six to the 3.2-litre S50B32 double-VANOS Evolution. Real UK costs, honest reliability data, and the VANOS question that defines this generation's ownership story. Backed by real UK M3 enquiries in 2025 [BMW-VERIFIED].",
+    "subHeadline": "Every engine fitted to the E36-generation BMW M3 -from the 3.0-litre S50B30 single-VANOS six to the 3.2-litre S50B32 double-VANOS Evolution. Real UK costs, honest reliability data, and the VANOS question that defines this generation\u0027s ownership story. Backed by real UK M3 enquiries in 2025 [BMW-VERIFIED].",
     "trustStrip": [
       {
         "icon": "📊",
@@ -266,7 +266,7 @@
   },
   "engineDatabase": {
     "h2": "BMW M3 E36 Engine Codes -The Complete Database",
-    "subHeadline": "Every engine fitted to the E36 M3 specifically -from the 1992 launch through to 1999, covering the full range of S50 six-cylinder power units. UK/Euro-spec engines only.",
+    "subHeadline": "Every engine fitted to the E36 M3 specifically -from the 1992 launch through to 1999, covering the full range of <a href='https://bmwengines.uk/engine/s50-s52-s54'>S50</a> six-cylinder power units. UK/Euro-spec engines only.",
     "columns": [
       "Engine Code",
       "Family",
@@ -333,7 +333,7 @@
       },
       {
         "slot": "Most Overlooked",
-        "engine": "S50B30 3.0-litre -Often overshadowed by the Evolution, the 3.0-litre S50B30 delivers 286 hp and 320 Nm of torque with simpler single VANOS, lower purchase prices, and cheaper parts. It's the smart buy for enthusiasts who want the E36 M3 experience without the Evolution's running costs.",
+        "engine": "S50B30 3.0-litre -Often overshadowed by the Evolution, the 3.0-litre S50B30 delivers 286 hp and 320 Nm of torque with simpler single VANOS, lower purchase prices, and cheaper parts. It\u0027s the smart buy for enthusiasts who want the E36 M3 experience without the Evolution\u0027s running costs.",
         "quote": "",
         "whoItsFor": "buyers who want the E36 M3 driving experience with more manageable maintenance costs."
       }
@@ -369,7 +369,7 @@
     ],
     "economicsRule": {
       "title": "The E36 M3 rule",
-      "text": "A £4,500–£8,500 S50B32 recon against a £10,000–£15,000 Evolution sits at 30–85% of the car's value. On a sub-£10,000 example, that brushes our 70% BMW threshold -we'll honestly tell you to walk away. Against a well-kept £18,000+ example, the same recon drops to a routine 25–47% -a repair decision, not a financial one. For a classic M car, the emotional value may justify the spend."
+      "text": "A £4,500–£8,500 S50B32 recon against a £10,000–£15,000 Evolution sits at 30–85% of the car\u0027s value. On a sub-£10,000 example, that brushes our 70% BMW threshold -we\u0027ll honestly tell you to walk away. Against a well-kept £18,000+ example, the same recon drops to a routine 25–47% -a repair decision, not a financial one. For a classic M car, the emotional value may justify the spend."
     },
     "keyTakeaways": [
       {
@@ -393,7 +393,7 @@
         "title": "S50 VANOS Failure",
         "affectedModels": "All E36 M3 -S50B30 (single VANOS) and S50B32 (double VANOS).",
         "typicalFailureMileage": "40,000–80,000 miles.",
-        "rootCause": "The VANOS variable camshaft timing system on S50 engines can develop issues due to worn seals and failing solenoids. Symptoms include loss of low-end torque, a rattle on startup, and poor idle. The S50B32's double VANOS system is more complex and expensive to repair than the S50B30's single VANOS. Specialist companies like Mr. VANOS offer overhaul services.",
+        "rootCause": "The VANOS variable camshaft timing system on S50 engines can develop issues due to worn seals and failing solenoids. Symptoms include loss of low-end torque, a rattle on startup, and poor idle. The S50B32\u0027s double VANOS system is more complex and expensive to repair than the S50B30\u0027s single VANOS. Specialist companies like Mr. VANOS offer overhaul services.",
         "tieredCosts": [
           {
             "tier": "Preventative (Repair)",
@@ -449,7 +449,7 @@
         "title": "S50B32 Rod Bearing Wear",
         "affectedModels": "E36 M3 Evolution (S50B32), particularly higher-mileage and track-used examples.",
         "typicalFailureMileage": "40,000–80,000 miles.",
-        "rootCause": "The S50B32's high-revving nature and 11.3:1 compression ratio place significant stress on the rod bearings. High-rev abuse and poor oiling can cause wear. Unlike the later S54, the S50B32 is less prone to catastrophic failure but bearings should still be considered a wear item.",
+        "rootCause": "The S50B32\u0027s high-revving nature and 11.3:1 compression ratio place significant stress on the rod bearings. High-rev abuse and poor oiling can cause wear. Unlike the later S54, the S50B32 is less prone to catastrophic failure but bearings should still be considered a wear item.",
         "tieredCosts": [
           {
             "tier": "Preventative (Repair)",
@@ -507,16 +507,19 @@
   "coreVariants": {
     "dieselVariants": [],
     "petrolVariants": [
-      "M3 3.0",
-      "M3 Evolution 3.2"
+      {
+        "name": "M3 3.0",
+        "url": "#"
+      },
+      {
+        "name": "M3 Evolution 3.2",
+        "url": "#"
+      }
     ],
     "scopeNote": "All engine variants listed are Euro-spec E36 M3 only. The US-market M3 received detuned S50B30US (1995) and S52B32 (1996–1999) engines producing 240 hp and are not covered on this page. The M3 Evolution (also known as the M3 3.2) featured the S50B32 engine, a six-speed Getrag manual transmission (SMG optional from 1997), and revised suspension and brakes. The Saloon was produced from 1994 to 1997."
   },
   "marketIntelligence": {
-    "mostRequestedEngines": [
-      "1. S50B32 3.2 Evolution",
-      "2. S50B30 3.0"
-    ],
+    "mostRequestedEngines": ["1. S50B32 3.2 Evolution", "2. S50B30 3.0"],
     "mostRequestedVariants": [
       "1. M3 Evolution (3.2)",
       "2. M3 3.0",
@@ -562,7 +565,7 @@
       {
         "id": 2,
         "question": "Which BMW M3 E36 engine is the most reliable?",
-        "answer": "The S50B30 3.0-litre is the most reliable E36 M3 engine -its single VANOS system is simpler and cheaper to repair than the Evolution's double VANOS, and the iron-block construction is proven and durable. Both engines are robust with proper maintenance."
+        "answer": "The S50B30 3.0-litre is the most reliable E36 M3 engine -its single VANOS system is simpler and cheaper to repair than the Evolution\u0027s double VANOS, and the iron-block construction is proven and durable. Both engines are robust with proper maintenance."
       },
       {
         "id": 3,
@@ -587,7 +590,7 @@
       {
         "id": 7,
         "question": "Is it worth replacing a BMW M3 E36 engine, or should I scrap the car?",
-        "answer": "Apply the 70% BMW scrap threshold -but this is a classic M car, so value assessment differs. Against a well-kept £18,000 Evolution, a £4,500 S50B32 recon is 25% of the car's value -safe. Against a tired £10,000 example, the same recon is 45% -borderline. For a cherished Evolution or low-mileage example, the emotional value may justify the spend."
+        "answer": "Apply the 70% BMW scrap threshold -but this is a classic M car, so value assessment differs. Against a well-kept £18,000 Evolution, a £4,500 S50B32 recon is 25% of the car\u0027s value -safe. Against a tired £10,000 example, the same recon is 45% -borderline. For a cherished Evolution or low-mileage example, the emotional value may justify the spend."
       },
       {
         "id": 8,
@@ -602,7 +605,7 @@
       {
         "id": 10,
         "question": "How do I find my BMW M3 E36 engine code?",
-        "answer": "The engine code is listed on the VIN plate, vehicle documentation, and on a casting on the engine block. For the 3.0-litre M3 (1992–1995), look for S50B30. For the 3.2-litre Evolution (1995–1999), look for S50B32. Tell us your variant and year, and we'll confirm."
+        "answer": "The engine code is listed on the VIN plate, vehicle documentation, and on a casting on the engine block. For the 3.0-litre M3 (1992–1995), look for S50B30. For the 3.2-litre Evolution (1995–1999), look for S50B32. Tell us your variant and year, and we\u0027ll confirm."
       }
     ]
   },
@@ -615,11 +618,11 @@
       },
       {
         "title": "Compare E36 M3 Engine Replacement Companies",
-        "text": "see prices, warranty terms and supply & fit options side-by-side before you commit."
+        "text": "see prices, warranty terms and supply \u0026 fit options side-by-side before you commit."
       },
       {
         "title": "UK Engine Replacement Services for E36 M3",
-        "text": "covering every variant from M3 3.0 to Evolution, with supply-only or full supply & fit available nationwide."
+        "text": "covering every variant from M3 3.0 to Evolution, with supply-only or full supply \u0026 fit available nationwide."
       }
     ],
     "finalCta": "Find the best BMW M3 E36 engine replacement UK drivers rely on. Compare real prices from trusted specialists on EnginesMarket today and get back on the road with confidence.",

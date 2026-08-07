@@ -105,9 +105,10 @@ export default function HomeSec1({ data }) {
 
           <div className="h-0.5 w-18 bg-[var(--color-primary)] md:hidden" />
 
-          <p className="max-w-[620px] text-[0.88rem] leading-[1.42] text-white/88 md:text-[1.08rem] md:leading-[1.42] md:text-[var(--color-text-muted)]">
-            {data.subHeadline}
-          </p>
+          <p
+            className="max-w-[620px] text-[0.88rem] leading-[1.42] text-white/88 md:text-[1.08rem] md:leading-[1.42] md:text-[var(--color-text-muted)]"
+            dangerouslySetInnerHTML={{ __html: data.subHeadline }}
+          />
 
           <div className="relative mt-1 h-[310px] md:hidden" />
 

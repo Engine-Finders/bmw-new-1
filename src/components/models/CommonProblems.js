@@ -67,14 +67,14 @@ function SeverityBadge({ severity }) {
   return (
     <span className={`inline-flex items-center gap-2 text-[15px] font-bold ${classes.text}`}>
       <span className={`h-3 w-3 rounded-full ${classes.dot}`} />
-      {cleanText(severity?.label)}
+      <span dangerouslySetInnerHTML={{ __html: cleanText(severity?.label) }} />
     </span>
   );
 }
 
 function ProblemImage({ index }) {
   return (
-    <div className="relative h-full min-h-[160px] overflow-hidden bg-[var(--color-page-soft)] md:min-h-[236px]">
+    <div className="relative h-full min-h-[150px] overflow-hidden bg-[var(--color-page-soft)] md:min-h-[210px]">
       <img
         src={problemImages[index] || defaultProblemImage}
         alt=""
@@ -98,21 +98,22 @@ function ProblemCard({ problem, index }) {
   return (
     <article className="grid grid-cols-[0.85fr_1.55fr] overflow-hidden rounded-md border border-[var(--color-border)] bg-[var(--color-surface)] shadow-[0_8px_22px_var(--color-shadow)] md:grid-cols-[0.9fr_1.3fr]">
       <ProblemImage index={index} />
-      <div className="flex min-w-0 flex-col p-3 md:p-5">
-        <div className="flex items-start justify-between gap-4">
-        <h3 className={`${sectionTableText} font-bold leading-[1.12] text-[var(--color-text)] md:text-[18px]`}>{cleanText(problem.issue)}</h3>
-          <div className="hidden shrink-0 md:block">
-            <SeverityBadge severity={problem.severity} />
-          </div>
-        </div>
-        <div className="mt-3 md:hidden">
-          <SeverityBadge severity={problem.severity} />
-        </div>
-        <p className={`mt-2 ${sectionTableText} text-[var(--color-text-muted)] md:mt-3`}>
-          {cleanText(problem.description)}
-        </p>
+      <div className="flex min-w-0 flex-col p-2.5 md:p-4">
+      <div className="flex items-start justify-between gap-4">
+  <h3
+    className="text-[13px] font-bold leading-[1.12] text-[var(--color-text)] md:text-[16px]"
+    dangerouslySetInnerHTML={{ __html: cleanText(problem.issue) }}
+  />
+  <div className="hidden shrink-0 md:block">
+    <SeverityBadge severity={problem.severity} />
+  </div>
+</div>
+<div className="mt-3 md:hidden">
+  <SeverityBadge severity={problem.severity} />
+</div>
+<p className={`mt-2 ${sectionTableText} text-[var(--color-text-muted)] md:mt-3`} dangerouslySetInnerHTML={{ __html: cleanText(problem.description) }} />
         <Link href={href} className="mt-auto flex items-center justify-end gap-2 pt-4 text-[18px] font-bold text-[var(--color-primary)]">
-          {label.replace(/\s*\u2192\s*$/, "")}
+          <span dangerouslySetInnerHTML={{ __html: label.replace(/\s*\u2192\s*$/, "") }} />
           <ArrowIcon />
         </Link>
       </div>
@@ -136,8 +137,8 @@ function UrgencyKey({ items }) {
             <div key={label} className="flex gap-3 border-[var(--color-border)] md:border-l md:pl-6">
               <span className={`mt-1 h-4 w-4 shrink-0 rounded-full ${dot}`} />
               <p className="text-[15px] leading-[1.35] text-[var(--color-text-muted)]">
-                <strong className="block text-[var(--color-text)]">{label}</strong>
-                {cleanText(item.text)}
+                <strong className="block text-[var(--color-text)]" dangerouslySetInnerHTML={{ __html: label }} />
+                <span dangerouslySetInnerHTML={{ __html: cleanText(item.text) }} />
               </p>
             </div>
           );
@@ -157,26 +158,26 @@ export default function CommonProblems({ data }) {
     <section data-theme-mode={theme} className="bg-[var(--color-page)] py-6 text-[var(--color-text)]">
       <div>
         <h2 className={`max-w-[860px] ${sectionH2} tracking-normal`}>
-          {title.main}
-          {title.accent ? <span className="text-[var(--color-primary)]">{title.accent}</span> : null}
+          <span dangerouslySetInnerHTML={{ __html: title.main }} />
+          {title.accent ? <span className="text-[var(--color-primary)]" dangerouslySetInnerHTML={{ __html: title.accent }} /> : null}
         </h2>
-        <div className="mt-3">
+        <div className="mt-2">
           <MStripe />
         </div>
         {data.subHeadline ? (
-          <p className={`mt-4 max-w-[620px] ${sectionDescription} text-[var(--color-text-muted)]`}>
+          <p className="mt-3 max-w-[620px] text-[14px] leading-[1.45] text-[var(--color-text-muted)] md:text-[16px]">
             {cleanText(data.subHeadline)}
           </p>
         ) : null}
       </div>
 
-      <div className="mt-6 grid gap-4 md:grid-cols-3">
+      <div className="mt-5 grid gap-3 md:mt-6 md:grid-cols-3">
         {(data.problems || []).map((problem, index) => (
           <ProblemCard key={problem.id || problem.issue} problem={problem} index={index} />
         ))}
       </div>
 
-      <div className="mt-5">
+      <div className="mt-4">
         <UrgencyKey items={data.urgencyKey} />
       </div>
     </section>

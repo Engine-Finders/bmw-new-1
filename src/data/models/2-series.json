@@ -247,7 +247,7 @@
     }
   },
   "hero": {
-    "tagPill": "BMW 2 Series • 2014–Present • 5 Bodystyles (F22/F23, F44, F45/F46, G42) • B38, N20, N47, B47, B48, B58",
+    "tagPill": "BMW 2 Series • 2014–Present • 5 Bodystyles (F22/F23, F44, F45/F46, G42) • <a href='https://bmwengines.uk/engine/b38-b48'>B38</a>, <a href='https://bmwengines.uk/engine/n13-n20'>N20</a>, <a href='https://bmwengines.uk/engine/n47'>N47</a>, <a href='https://bmwengines.uk/engine/b37-b47'>B47</a>, B48, <a href='https://bmwengines.uk/engine/b57-b58'>B58</a>",
     "h1": "2 Series Engines -The Complete UK Guide",
     "subHeadline": "Every BMW 2 Series engine across five distinct bodystyles -from the B38 three-cylinder in the Active Tourer to the B58 straight-six in the M240i. Real UK replacement costs, known failure patterns, and honest ownership economics for every F22 to G42. Backed by 400+ real UK 2 Series engine enquiries in 2025 [BMW-VERIFIED].",
     "trustStrip": [
@@ -376,7 +376,7 @@
         "verdict": "The spiritual successor to the E30 -RWD, compact, and available with the B58 straight-six in the M240i. Early N20/N47 cars carry the chain caveat; 2017+ LCI cars with B48/B58 are the sweet spot. The M240i is a future classic.",
         "cta": {
           "label": "Explore the F22 →",
-          "href": "#"
+          "href": "https://bmwengines.uk/2-series/f22"
         }
       },
       {
@@ -387,7 +387,7 @@
         "verdict": "The second-generation RWD coupé -CLAR platform, B-family engines only, and the M240i xDrive with 374 bhp. No manual gearbox, but the B58 is the most dependable modern BMW engine. The safest 2 Series ever made.",
         "cta": {
           "label": "Explore the G42 →",
-          "href": "#"
+          "href": "https://bmwengines.uk/2-series/g42"
         }
       },
       {
@@ -398,9 +398,20 @@
         "verdict": "BMW's first front-wheel-drive production car -a compact MPV that competes with the Mercedes B-Class. The B47 diesel is the sensible choice; the 225xe PHEV is the urban commuter's pick.",
         "cta": {
           "label": "Explore the F45 →",
-          "href": "#"
+          "href": "https://bmwengines.uk/2-series-active-tourer/f45"
         }
       },
+      {
+  "title": "F23 (2014–2021)",
+  "badge": "",
+  "meta": "2014–2021 • N20/B48 petrol • N47/B47 diesel",
+  "rating": "★★★☆☆",
+  "verdict": "The 2 Series convertible—the drop-top sibling to the F22 coupé. Engine range spans the N20 (pre-2016, timing chain watchpoint) and B48/B47 (post-2015, significantly improved). The B48 230i is the sweet spot; the B47 220d is the economical choice. Convertible values are strong, making replacement viable on most examples.",
+  "cta": {
+    "label": "Explore F23 →",
+    "href": "https://bmwengines.uk/2-series/f23"
+  }
+},
       {
         "title": "BMW 2 Series Gran Tourer F46",
         "badge": "",
@@ -409,7 +420,7 @@
         "verdict": "The seven-seat Active Tourer -the most practical 2 Series you can buy. Same B47/B48 engines, more space. The sensible family hauler that still wears a BMW badge.",
         "cta": {
           "label": "Explore the F46 →",
-          "href": "#"
+          "href": "https://bmwengines.uk/2-series/f46"
         }
       },
       {
@@ -420,9 +431,31 @@
         "verdict": "The four-door coupé on the UKL2 platform -BMW's answer to the Mercedes CLA. Shares its engines with the 1 Series F40. The M235i xDrive with 306 bhp is the pick; the 218i with B38 is the entry point.",
         "cta": {
           "label": "Explore the F44 →",
-          "href": "#"
+          "href": "https://bmwengines.uk/2-series/f44"
         }
       },
+      {
+  "title": "F74 (2024–present)",
+  "badge": "",
+  "meta": "2024–present • B38 petrol • B48 petrol",
+  "rating": "★★★★☆",
+  "verdict": "The second-generation 2 Series Gran Coupé—based on the UKL2 front-wheel-drive platform shared with the F70 1 Series. UK market is petrol-only: the B38 1.5-litre three-cylinder (218i) and B48 2.0-litre four-cylinder in 220i and M235i xDrive forms. Modern, efficient, and too new for long-term data—the B38/B48 are proven and reliable.",
+  "cta": {
+    "label": "Explore F74 →",
+    "href": "https://bmwengines.uk/2-series/f74"
+  }
+},
+      {
+  "title": "U06 (2021–present)",
+  "badge": "",
+  "meta": "2021–present • B38 petrol • B48 petrol",
+  "rating": "★★★★☆",
+  "verdict": "The second-generation 2 Series Active Tourer—BMW's premium compact MPV. UK market is petrol-only with the B38 1.5-litre three-cylinder and B48 2.0-litre four-cylinder. The B48 223i offers the best balance of performance and refinement. Modern, efficient, and well-supported—cooling system leaks are the only known watchpoint.",
+  "cta": {
+    "label": "Explore U06 →",
+    "href": "https://bmwengines.uk/2-series-active-tourer/u06"
+  }
+},
       {
         "title": "The RWD vs FWD Divide -What You Need to Know",
         "badge": "",
@@ -507,7 +540,7 @@
       },
       {
         "engineCode": "N55B30",
-        "family": "N55",
+        "family": "<a href='https://bmwengines.uk/engine/n54-n55'>N55</a>",
         "fuel": "Petrol",
         "displacement": "3.0L",
         "power": "326 bhp",

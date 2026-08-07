@@ -167,7 +167,7 @@
               "name": "Which E12 engine is the most reliable?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "The M30B28 (528/528i) is widely considered the most reliable E12 engine – the 'Big Six' is renowned for exceeding 200,000 miles with proper maintenance. The carburetted M10B18 (518) is also bulletproof, while the M20B20 (520/6) requires diligent timing belt changes every 40,000 miles."
+                "text": "The M30B28 (528/528i) is widely considered the most reliable E12 engine – the \u0027Big Six\u0027 is renowned for exceeding 200,000 miles with proper maintenance. The carburetted M10B18 (518) is also bulletproof, while the M20B20 (520/6) requires diligent timing belt changes every 40,000 miles."
               }
             },
             {
@@ -183,7 +183,7 @@
               "name": "Is the BMW 5 Series E12 reliable?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Yes – the E12 is one of BMW's most durable classic cars. The M30 six-cylinder is legendary for its longevity, and the M10 four-cylinder is similarly robust. The key to reliability is maintenance: cooling system refreshes, timing belt changes on M20 engines, and attention to fuel injection systems on injected models."
+                "text": "Yes – the E12 is one of BMW\u0027s most durable classic cars. The M30 six-cylinder is legendary for its longevity, and the M10 four-cylinder is similarly robust. The key to reliability is maintenance: cooling system refreshes, timing belt changes on M20 engines, and attention to fuel injection systems on injected models."
               }
             },
             {
@@ -223,7 +223,7 @@
               "name": "What is the difference between the E12, E28 and other 5 Series generations?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "The E12 (1972–1981) is the first-generation 5 Series, followed by the E28 (1981–1987), E34 (1987–1995), E39 (1995–2003), E60 (2003–2010), F10 (2010–2016) and G30 (2016–present). The E12 is characterised by its classic Paul Bracq styling and was available only as a 4-door saloon. It pioneered BMW's 'Series' naming convention and established the 5 Series as a benchmark executive car."
+                "text": "The E12 (1972–1981) is the first-generation 5 Series, followed by the E28 (1981–1987), E34 (1987–1995), E39 (1995–2003), E60 (2003–2010), F10 (2010–2016) and G30 (2016–present). The E12 is characterised by its classic Paul Bracq styling and was available only as a 4-door saloon. It pioneered BMW\u0027s \u0027Series\u0027 naming convention and established the 5 Series as a benchmark executive car."
               }
             },
             {
@@ -231,7 +231,7 @@
               "name": "How do I find my E12 engine code?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Listed on the VIN plate (visible through the windscreen) and vehicle documentation. The engine code is also stamped on the cylinder block – on M30 engines, it's on the left-hand side of the block near the starter motor. Tell us your variant and year and we'll identify it – 20+ vetted BMW specialists will confirm it for free."
+                "text": "Listed on the VIN plate (visible through the windscreen) and vehicle documentation. The engine code is also stamped on the cylinder block – on M30 engines, it\u0027s on the left-hand side of the block near the starter motor. Tell us your variant and year and we\u0027ll identify it – 20+ vetted BMW specialists will confirm it for free."
               }
             }
           ]
@@ -265,7 +265,7 @@
         {
           "@type": "Dataset",
           "name": "BMW 5 Series E12 UK Engine Enquiry Data 2025",
-          "description": "Proprietary UK enquiry volumes and demand trends for BMW 5 Series E12 engines, sourced from BMWEngines.uk's specialist marketplace activity.",
+          "description": "Proprietary UK enquiry volumes and demand trends for BMW 5 Series E12 engines, sourced from BMWEngines.uk\u0027s specialist marketplace activity.",
           "creator": {
             "@type": "Organization",
             "name": "BMWEngines.uk"
@@ -299,7 +299,7 @@
   "hero": {
     "tagPill": "BMW 5 Series E12 • Saloon • 1972–1981",
     "h1": "BMW 5 Series E12 Engines -The Complete UK Guide",
-    "subHeadline": "Every engine fitted to the E12 -from the 1.8-litre M10 four-cylinder that launched BMW's first 5 Series to the 3.0-litre M30 six-cylinder and the M535i's M90 that paved the way for the M5. Real UK replacement costs, honest reliability data, and the fuel injection and cooling system quirks that define this classic generation. Backed by real UK E12 enquiries in 2025 [BMW-VERIFIED].",
+    "subHeadline": "Every engine fitted to the E12 -from the 1.8-litre <a href='https://bmwengines.uk/engine/m10'>M10</a> four-cylinder that launched BMW\u0027s first 5 Series to the 3.0-litre <a href='https://bmwengines.uk/engine/m30'>M30</a> six-cylinder and the M535i\u0027s M90 that paved the way for the M5. Real UK replacement costs, honest reliability data, and the fuel injection and cooling system quirks that define this classic generation. Backed by real UK E12 enquiries in 2025 [BMW-VERIFIED].",
     "trustStrip": [
       {
         "icon": "📊",
@@ -378,7 +378,7 @@
       },
       {
         "engineCode": "M20B20",
-        "family": "M20",
+        "family": "<a href='https://bmwengines.uk/engine/m20'>M20</a>",
         "fuel": "Petrol",
         "displacement": "2.0L (1,990 cc)",
         "power": "122 hp (90 kW)",
@@ -465,7 +465,7 @@
     "items": [
       {
         "slot": "Best Petrol Overall",
-        "engine": "M30B28 (528i, 1977–1981) – \"The 2.8-litre M30 six-cylinder with Bosch L-Jetronic injection delivers 177 hp of smooth, linear power. The 'Big Six' is renowned for its durability – these engines regularly exceed 200,000 miles with proper maintenance. Cooling system and fuel injection are the only real demands.\"",
+        "engine": "M30B28 (528i, 1977–1981) – \"The 2.8-litre M30 six-cylinder with Bosch L-Jetronic injection delivers 177 hp of smooth, linear power. The \u0027Big Six\u0027 is renowned for its durability – these engines regularly exceed 200,000 miles with proper maintenance. Cooling system and fuel injection are the only real demands.\"",
         "quote": "",
         "whoItsFor": "buyers who want the definitive E12 driving experience."
       },
@@ -477,21 +477,21 @@
       },
       {
         "slot": "Most Expensive Failure",
-        "engine": "M88/1 (South African M535i) – \"The M88/1 is a rare and valuable engine – essentially a detuned version of the M1's engine with individual throttle bodies and 276 hp. Parts are extremely expensive and specialist-only. A full rebuild can exceed £10,000.\"",
+        "engine": "M88/1 (South African M535i) – \"The M88/1 is a rare and valuable engine – essentially a detuned version of the M1\u0027s engine with individual throttle bodies and 276 hp. Parts are extremely expensive and specialist-only. A full rebuild can exceed £10,000.\"",
         "quote": "",
         "whoItsFor": "collectors and enthusiasts with very deep pockets."
       },
       {
         "slot": "Best Value",
-        "engine": "M10B18 (518, 1974–1981) – \"The 1.8-litre four-cylinder is the simplest, cheapest E12 to run and maintain. Carburetted, with no complex injection system to fail, it delivers 90 hp – enough for relaxed cruising and minimal running costs. It's the entry point to E12 ownership.\"",
+        "engine": "M10B18 (518, 1974–1981) – \"The 1.8-litre four-cylinder is the simplest, cheapest E12 to run and maintain. Carburetted, with no complex injection system to fail, it delivers 90 hp – enough for relaxed cruising and minimal running costs. It\u0027s the entry point to E12 ownership.\"",
         "quote": "",
         "whoItsFor": "buyers who want classic E12 style with minimal maintenance headaches."
       },
       {
         "slot": "Most Overlooked",
-        "engine": "M20B20 (520/6, 1977–1981) – \"The 2.0-litre six-cylinder is often overlooked in favour of the M30 cars, but it delivers 122 hp with the smoothness of a six-cylinder and lower running costs than the 2.5-litre. It's the cheapest way into six-cylinder E12 ownership.\"",
+        "engine": "M20B20 (520/6, 1977–1981) – \"The 2.0-litre six-cylinder is often overlooked in favour of the M30 cars, but it delivers 122 hp with the smoothness of a six-cylinder and lower running costs than the 2.5-litre. It\u0027s the cheapest way into six-cylinder E12 ownership.\"",
         "quote": "",
-        "whoItsFor": "buyers who want six-cylinder refinement without the M30's fuel bills."
+        "whoItsFor": "buyers who want six-cylinder refinement without the M30\u0027s fuel bills."
       }
     ]
   },
@@ -581,7 +581,7 @@
     ],
     "economicsRule": {
       "title": "The E12 rule",
-      "text": "A £2,500–£5,000 M30B28 recon against a £3,000–£10,000 E12 sits at 25–167% of the car's value. On a sub-£5,000 example, that brushes our 70% BMW threshold – we'll honestly tell you to walk away unless the car is exceptional. Against a £8,000+ low-mileage example, the same recon drops to a routine 31–63% – a repair decision, not a financial one. For the M535i, values are high enough that even a £7,000 rebuild is a viable investment on a £15,000+ car."
+      "text": "A £2,500–£5,000 M30B28 recon against a £3,000–£10,000 E12 sits at 25–167% of the car\u0027s value. On a sub-£5,000 example, that brushes our 70% BMW threshold – we\u0027ll honestly tell you to walk away unless the car is exceptional. Against a £8,000+ low-mileage example, the same recon drops to a routine 31–63% – a repair decision, not a financial one. For the M535i, values are high enough that even a £7,000 rebuild is a viable investment on a £15,000+ car."
     },
     "keyTakeaways": [
       {
@@ -605,7 +605,7 @@
         "title": "Cooling System Vulnerabilities (All Engines)",
         "affectedModels": "All E12 petrol variants (1972–1981).",
         "typicalFailureMileage": "60,000–100,000 miles.",
-        "rootCause": "The cooling system is the Achilles heel of the E12 – radiators, water pumps and hoses degrade with age. Overheating can lead to head gasket failure on both four- and six-cylinder engines. The 530i's thermal reactor (US-spec) generates significant heat, accelerating cooling system wear.",
+        "rootCause": "The cooling system is the Achilles heel of the E12 – radiators, water pumps and hoses degrade with age. Overheating can lead to head gasket failure on both four- and six-cylinder engines. The 530i\u0027s thermal reactor (US-spec) generates significant heat, accelerating cooling system wear.",
         "tieredCosts": [
           {
             "tier": "Preventative (Repair)",
@@ -686,10 +686,10 @@
       },
       {
         "id": 4,
-        "title": "Electrical & Grounding Issues (All Models)",
+        "title": "Electrical \u0026 Grounding Issues (All Models)",
         "affectedModels": "All E12 variants (1972–1981).",
         "typicalFailureMileage": "Age-related, not mileage-dependent.",
-        "rootCause": "The E12's electrical system is sensitive to corroded grounds and aging wiring. Common issues include the fuel pump relay, alternator ground, and fuel injection grounds above the valve cover. These can cause random cutting out, starting issues and rough running.",
+        "rootCause": "The E12\u0027s electrical system is sensitive to corroded grounds and aging wiring. Common issues include the fuel pump relay, alternator ground, and fuel injection grounds above the valve cover. These can cause random cutting out, starting issues and rough running.",
         "tieredCosts": [
           {
             "tier": "Preventative (Repair)",
@@ -811,15 +811,42 @@
   "coreVariants": {
     "dieselVariants": [],
     "petrolVariants": [
-      "518",
-      "520",
-      "520i",
-      "520/6",
-      "525",
-      "528",
-      "528i",
-      "530i",
-      "M535i"
+      {
+        "name": "518",
+        "url": "https://bmwengines.uk/5-series/518i"
+      },
+      {
+        "name": "520",
+        "url": "https://bmwengines.uk/5-series/520i"
+      },
+      {
+        "name": "520i",
+        "url": "https://bmwengines.uk/5-series/520i"
+      },
+      {
+        "name": "520/6",
+        "url": "#"
+      },
+      {
+        "name": "525",
+        "url": "https://bmwengines.uk/5-series/525i"
+      },
+      {
+        "name": "528",
+        "url": "https://bmwengines.uk/5-series/528i"
+      },
+      {
+        "name": "528i",
+        "url": "https://bmwengines.uk/5-series/528i"
+      },
+      {
+        "name": "530i",
+        "url": "https://bmwengines.uk/5-series/530i"
+      },
+      {
+        "name": "M535i",
+        "url": "#"
+      }
     ],
     "scopeNote": "All variants listed are E12 only. The E28 (1981–1987) is the successor generation with its own engine line-up – see the E28 Generation Page for those specifications. The M535i is the precursor to the M5, not an M5 itself – no official M5 was produced in the E12 generation."
   },
@@ -829,11 +856,7 @@
       "2. M90 (M535i) – collector and performance enquiries",
       "3. M10B18 (518) – entry-level classic enquiries [PATTERN DATA]."
     ],
-    "mostRequestedVariants": [
-      "1. 528i",
-      "2. M535i",
-      "3. 520i [PATTERN DATA]."
-    ],
+    "mostRequestedVariants": ["1. 528i", "2. M535i", "3. 520i [PATTERN DATA]."],
     "averageReplacementCost": "£1,200–£10,000 supply only [BMW-QUOTE].",
     "mostCommonFailures": [
       "1. Cooling system failures (all engines)",
@@ -884,7 +907,7 @@
       {
         "id": 4,
         "question": "Is the BMW 5 Series E12 reliable?",
-        "answer": "Yes – the E12 is one of BMW's most durable classic cars. The M30 six-cylinder is legendary for its longevity, and the M10 four-cylinder is similarly robust. The key to reliability is maintenance: cooling system refreshes, timing belt changes on M20 engines, and attention to fuel injection systems on injected models."
+        "answer": "Yes – the E12 is one of BMW\u0027s most durable classic cars. The M30 six-cylinder is legendary for its longevity, and the M10 four-cylinder is similarly robust. The key to reliability is maintenance: cooling system refreshes, timing belt changes on M20 engines, and attention to fuel injection systems on injected models."
       },
       {
         "id": 5,
@@ -909,12 +932,12 @@
       {
         "id": 9,
         "question": "What is the difference between the E12, E28 and other 5 Series generations?",
-        "answer": "The E12 (1972–1981) is the first-generation 5 Series, followed by the E28 (1981–1987), E34 (1987–1995), E39 (1995–2003), E60 (2003–2010), F10 (2010–2016) and G30 (2016–present). The E12 is characterised by its classic Paul Bracq styling and was available only as a 4-door saloon. It pioneered BMW's \"Series\" naming convention and established the 5 Series as a benchmark executive car."
+        "answer": "The E12 (1972–1981) is the first-generation 5 Series, followed by the E28 (1981–1987), E34 (1987–1995), E39 (1995–2003), E60 (2003–2010), F10 (2010–2016) and G30 (2016–present). The E12 is characterised by its classic Paul Bracq styling and was available only as a 4-door saloon. It pioneered BMW\u0027s \"Series\" naming convention and established the 5 Series as a benchmark executive car."
       },
       {
         "id": 10,
         "question": "How do I find my E12 engine code?",
-        "answer": "Listed on the VIN plate (visible through the windscreen) and vehicle documentation. The engine code is also stamped on the cylinder block – on M30 engines, it's on the left-hand side of the block near the starter motor. Tell us your variant and year and we'll identify it – 20+ vetted BMW specialists will confirm it for free."
+        "answer": "Listed on the VIN plate (visible through the windscreen) and vehicle documentation. The engine code is also stamped on the cylinder block – on M30 engines, it\u0027s on the left-hand side of the block near the starter motor. Tell us your variant and year and we\u0027ll identify it – 20+ vetted BMW specialists will confirm it for free."
       }
     ]
   },
@@ -927,11 +950,11 @@
       },
       {
         "title": "Compare E12 Engine Replacement Companies",
-        "text": "see prices, warranty terms and supply & fit options side-by-side before you commit."
+        "text": "see prices, warranty terms and supply \u0026 fit options side-by-side before you commit."
       },
       {
         "title": "UK Engine Replacement Services for E12",
-        "text": "covering every variant from 518 to M535i, with supply-only or full supply & fit available nationwide."
+        "text": "covering every variant from 518 to M535i, with supply-only or full supply \u0026 fit available nationwide."
       }
     ],
     "finalCta": "Find the best BMW 5 Series E12 engine replacement UK drivers rely on. Compare real prices from trusted specialists on EnginesMarket today and get back on the road with confidence.",

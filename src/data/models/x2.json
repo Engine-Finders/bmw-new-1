@@ -229,7 +229,7 @@
     }
   },
   "hero": {
-    "tagPill": "BMW X2 • 2017–Present • 2 Generations (F39, U10) • B38, B48, B47, N47",
+    "tagPill": "BMW X2 • 2017–Present • 2 Generations (F39, U10) • <a href='https://bmwengines.uk/engine/b38-b48'>B38</a>, B48, <a href='https://bmwengines.uk/engine/b37-b47'>B47</a>, <a href='https://bmwengines.uk/engine/n47'>N47</a>",
     "h1": "X2 Engines - The Complete UK Guide",
     "subHeadline": "Every BMW X2 engine across two generations - from the N47 diesel and B48 four-cylinder of the F39 to the B38 three-cylinder and electrified B48 of the U10. Real UK replacement costs, known failure patterns, and honest ownership economics for BMW's stylish crossover coupé. Backed by real UK X2 engine enquiries in 2025 [BMW-VERIFIED].",
     "trustStrip": [
@@ -358,7 +358,7 @@
         "verdict": "The original X2 - BMW's stylish crossover coupé based on the UKL2 platform shared with the X1 and Mini Countryman. The B48 petrol and B47 diesel are the dependable choices; early N47 diesels carry the chain-tensioner caveat. The M35i xDrive with 306 hp is the performance pick. Buy 2019+ for the revised B-family engines.",
         "cta": {
           "label": "Explore the F39 →",
-          "href": "#"
+          "href": "https://bmwengines.uk/x2/f39"
         }
       },
       {
@@ -369,7 +369,7 @@
         "verdict": "The second-generation X2 - revealed October 2023, launched 2024. Available with petrol, mild-hybrid, plug-in hybrid, and fully electric iX2 powertrains. The B48 in the M35i xDrive produces 312 hp with 48V mild-hybrid assistance. The iX2 is BMW's first electric X2. Too new for volume reliability data, but the B-family record is impeccable.",
         "cta": {
           "label": "Explore the U10 →",
-          "href": "#"
+          "href": "https://bmwengines.uk/x2/u10"
         }
       },
       {
@@ -431,7 +431,7 @@
         "years": "2017–present",
         "model": "F39, U10",
         "reliability": "★★★★½",
-        "enquiries": "- (pattern data - under B58 aggregate)",
+        "enquiries": "- (pattern data - under <a href='https://bmwengines.uk/engine/b57-b58'>B58</a> aggregate)",
         "avgRebuildCost": "£3,000–£5,000 [PLACEHOLDER - confirm vs cost sheet]"
       },
       {

@@ -36,7 +36,7 @@ function RankedList({ items }) {
       {items?.map((item, index) => (
         <li key={item} className="flex gap-1.5 text-[0.74rem] leading-[1.3] text-[var(--color-text)]">
           <span className="font-semibold text-[var(--color-primary)]">{index + 1}.</span>
-          {item}
+          <span dangerouslySetInnerHTML={{ __html: item }} />
         </li>
       ))}
     </ol>
@@ -76,9 +76,9 @@ export default function MarketIntelligence({ data }) {
                 <RankedList items={data.mostRequestedVariants} />
               </StatCard>
               <StatCard icon="dollar" title="Average E90 Replacement Cost">
-                <p className="text-[1.5rem] font-bold text-[var(--color-text)]">{data.averageReplacementCost}</p>
+                <p className="text-[1.5rem] font-bold text-[var(--color-text)]" dangerouslySetInnerHTML={{ __html: data.averageReplacementCost }} />
                 {data.averageReplacementCostNote ? (
-                  <p className="text-[0.68rem] leading-[1.3] text-[var(--color-text-soft)]">{data.averageReplacementCostNote}</p>
+                  <p className="text-[0.68rem] leading-[1.3] text-[var(--color-text-soft)]" dangerouslySetInnerHTML={{ __html: data.averageReplacementCostNote }} />
                 ) : null}
               </StatCard>
               <StatCard icon="warning" title="Most Common E90 Failures">
@@ -118,24 +118,24 @@ export default function MarketIntelligence({ data }) {
                             <Image src="/live_feed.webp" alt={model} fill className="object-cover" sizes="44px" />
                           </span>
                           <div className="min-w-0">
-                            <p className={`truncate font-semibold ${feedText}`}>{model}</p>
-                            {chassis ? <p className={`truncate text-[0.7rem] ${feedSoft}`}>{chassis}</p> : null}
+                            <p className={`truncate font-semibold ${feedText}`} dangerouslySetInnerHTML={{ __html: model }} />
+                            {chassis ? <p className={`truncate text-[0.7rem] ${feedSoft}`} dangerouslySetInnerHTML={{ __html: chassis }} /> : null}
                           </div>
                         </div>
 
                         <div className={`flex items-center gap-1.5 ${feedMuted}`}>
                           <GenIcon name="pin" className="h-3.5 w-3.5 shrink-0 text-[var(--color-primary)]" />
-                          {row.location}
+                          <span dangerouslySetInnerHTML={{ __html: row.location }} />
                         </div>
 
                         <div className={`flex items-center gap-1.5 ${feedMuted}`}>
                           <GenIcon name="warning" className="h-3.5 w-3.5 shrink-0 text-[var(--color-primary)]" />
-                          {row.issue}
+                          <span dangerouslySetInnerHTML={{ __html: row.issue }} />
                         </div>
 
                         <div className="leading-[1.25]">
-                          <p className={`font-semibold ${feedText}`}>{count}</p>
-                          {label ? <p className={`text-[0.7rem] ${feedSoft}`}>{label}</p> : null}
+                          <p className={`font-semibold ${feedText}`} dangerouslySetInnerHTML={{ __html: count }} />
+                          {label ? <p className={`text-[0.7rem] ${feedSoft}`} dangerouslySetInnerHTML={{ __html: label }} /> : null}
                         </div>
                       </div>
                     );
@@ -146,7 +146,7 @@ export default function MarketIntelligence({ data }) {
               {data.liveFeed[0]?.updated ? (
                 <div className={`flex items-center justify-end gap-1.5 border-t px-4 py-2.5 text-[0.72rem] ${feedBorder} ${feedSoft}`}>
                   <GenIcon name="refresh" className="h-3.5 w-3.5 shrink-0 text-[var(--color-primary)]" />
-                  {data.liveFeed[0].updated}
+                  <span dangerouslySetInnerHTML={{ __html: data.liveFeed[0].updated }} />
                 </div>
               ) : null}
             </div>

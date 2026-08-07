@@ -191,7 +191,7 @@
     }
   },
   "hero": {
-    "tagPill": "BMW 3 Series 324d / 324td • 1985–1993 • 2.4-litre M21 Diesel",
+    "tagPill": "BMW 3 Series 324d / 324td • 1985–1993 • 2.4-litre <a href='https://bmwengines.uk/engine/m21'>M21</a> Diesel",
     "h1": "BMW 324d / 324td Engine Replacement - Compare Prices & Get Quotes",
     "subHeadline": "The 324d and 324td are rare E30 diesels powered by BMW's first diesel engine - the M21. The naturally aspirated 324d is slow but frugal; the turbocharged 324td is quicker but suffers from cylinder head and injection pump issues. Get quotes from UK specialists for reconditioned, rebuilt and used units today.",
     "trustBadges": [
@@ -285,7 +285,7 @@
           "label": "Immediate",
           "text": "if the belt fails, the engine stops instantly and internal damage is highly likely"
         },
-        "recommendation": "Like the M20 petrol engine it's based on, the M21 uses a timing belt - not a chain. BMW recommends replacement every 40,000 miles or 6 years. A snapped timing belt on this interference engine means valve and piston damage - effectively an engine replacement. If you're buying an M21-engined E30, demand proof of timing belt replacement. Budget for it immediately if there's no evidence. These engines are becoming rare - a snapped belt can write off the car.",
+        "recommendation": "Like the <a href='https://bmwengines.uk/engine/m20'>M20</a> petrol engine it's based on, the M21 uses a timing belt - not a chain. BMW recommends replacement every 40,000 miles or 6 years. A snapped timing belt on this interference engine means valve and piston damage - effectively an engine replacement. If you're buying an M21-engined E30, demand proof of timing belt replacement. Budget for it immediately if there's no evidence. These engines are becoming rare - a snapped belt can write off the car.",
         "failureLink": {
           "label": "Read the full timing belt failure guide",
           "href": "/failures/timing-belt-failure/"

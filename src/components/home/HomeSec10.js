@@ -239,7 +239,7 @@ export default function HomeSec10({ data }) {
             <div className="mt-4">
               <MStripe />
             </div>
-            <p className={`mt-4 max-w-[620px] text-[0.92rem] leading-[1.55] ${isDark ? "text-white/78" : "text-[#172334]"}`}>{data.subHeadline}</p>
+            <p className={`mt-4 max-w-[620px] text-[0.92rem] leading-[1.55] ${isDark ? "text-white/78" : "text-[#172334]"}`} dangerouslySetInnerHTML={{ __html: data.subHeadline }} />
           </div>
 
           <div className="hidden md:block">

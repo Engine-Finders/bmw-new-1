@@ -199,7 +199,7 @@
   "hero": {
     "tagPill": "BMW X3 M40i • 2018–present • 1 Engine Generation (2 Power Levels)",
     "h1": "BMW X3 M40i Engine Replacement - Compare Prices & Get Quotes",
-    "subHeadline": "Get quotes today from trusted UK BMW X3 M40i specialists. The 3.0-litre B58 turbocharged inline-six is one of BMW's most celebrated modern engines - compare reconditioned, rebuilt and used engines with supply & fit available nationwide.",
+    "subHeadline": "Get quotes today from trusted UK BMW X3 M40i specialists. The 3.0-litre <a href='https://bmwengines.uk/engine/b57-b58'>B58</a> turbocharged inline-six is one of BMW's most celebrated modern engines - compare reconditioned, rebuilt and used engines with supply & fit available nationwide.",
     "trustBadges": [
       "🔧 Supply & Fit Available",
       "✅ 12-Month Warranty",
@@ -596,7 +596,7 @@
       {
         "id": 6,
         "question": "Does the B58 have timing chain issues?",
-        "answer": "Unlike BMW's earlier turbo engines (N54, N55), the B58's timing chain is not a common failure point. The B58TU1 introduced a redesigned one-piece timing chain arrangement. The chain is designed to last the life of the engine and does not require routine replacement. However, VANOS solenoid issues can affect timing performance."
+        "answer": "Unlike BMW's earlier turbo engines (<a href='https://bmwengines.uk/engine/n54-n55'>N54</a>, N55), the B58's timing chain is not a common failure point. The B58TU1 introduced a redesigned one-piece timing chain arrangement. The chain is designed to last the life of the engine and does not require routine replacement. However, VANOS solenoid issues can affect timing performance."
       }
     ],
     "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty - always confirm terms with your chosen supplier."

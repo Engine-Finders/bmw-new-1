@@ -6,7 +6,7 @@ import MStripe from "@/components/reusableComponents/MStripe";
 import { useTheme } from "@/components/shared/themeProvider";
 import GenIcon from "./GenIcons";
 
-function VariantPanel({ title, icon, variants, tone, parentSlug, isDark }) {
+function VariantPanel({ title, icon, variants, tone, isDark }) {
   if (!variants?.length) return null;
   const isDiesel = tone === "diesel";
   const labelToneClass = isDiesel ? "text-[var(--color-primary)]" : "text-[#189454]";
@@ -27,32 +27,27 @@ function VariantPanel({ title, icon, variants, tone, parentSlug, isDark }) {
           {title}
         </p>
         <p className={`mt-1 flex flex-wrap items-center gap-x-2 gap-y-1 text-[0.98rem] font-bold leading-snug ${textClass}`}>
-          {variants.map((variant, index) => {
-            const slug = String(variant).toLowerCase();
-            const href = parentSlug ? `/${parentSlug}/${slug}/` : "#";
-            return (
-              <span key={`${variant}-${index}`} className="inline-flex items-center">
-                <Link
-                  href={href}
-                  className={`cursor-pointer rounded-sm px-1 py-0.5 transition-colors duration-200 hover:text-[var(--color-primary)] focus-visible:text-[var(--color-primary)] focus-visible:outline-none active:text-[var(--color-primary)] ${textClass}`}
-                >
-                  {variant}
-                </Link>
-                {index < variants.length - 1 ? (
-                  <span aria-hidden="true" className={separatorClass}>
-                    •
-                  </span>
-                ) : null}
-              </span>
-            );
-          })}
+          {variants.map((variant, index) => (
+            <span key={variant.url || variant.name || index} className="inline-flex items-center">
+              <Link
+                href={variant.url || "#"}
+                className={`cursor-pointer rounded-sm px-1 py-0.5 transition-colors duration-200 hover:text-[var(--color-primary)] focus-visible:text-[var(--color-primary)] focus-visible:outline-none active:text-[var(--color-primary)] ${textClass}`}
+                dangerouslySetInnerHTML={{ __html: variant.name }}
+              />
+              {index < variants.length - 1 ? (
+                <span aria-hidden="true" className={separatorClass}>
+                  •
+                </span>
+              ) : null}
+            </span>
+          ))}
         </p>
       </div>
     </div>
   );
 }
 
-export default function CoreVariants({ data, parentSlug }) {
+export default function CoreVariants({ data }) {
   const { theme } = useTheme();
   if (!data) return null;
 
@@ -69,7 +64,7 @@ export default function CoreVariants({ data, parentSlug }) {
       </span>
       <p className={`text-[0.82rem] leading-[1.5] ${scopeNoteTextClass}`}>
         <span className={`font-semibold ${scopeNoteStrongClass}`}>Scope note: </span>
-        {data.scopeNote}
+        <span dangerouslySetInnerHTML={{ __html: data.scopeNote }} />
       </p>
     </div>
   ) : null;
@@ -81,7 +76,6 @@ export default function CoreVariants({ data, parentSlug }) {
         icon="drum"
         variants={data.dieselVariants}
         tone="diesel"
-        parentSlug={parentSlug}
         isDark={isDark}
       />
       <VariantPanel
@@ -89,7 +83,6 @@ export default function CoreVariants({ data, parentSlug }) {
         icon="drum"
         variants={data.petrolVariants}
         tone="petrol"
-        parentSlug={parentSlug}
         isDark={isDark}
       />
     </div>

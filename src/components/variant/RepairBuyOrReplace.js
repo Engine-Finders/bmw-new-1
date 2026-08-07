@@ -22,7 +22,7 @@ export default function RepairBuyOrReplace({ data }) {
                   <td>{row.problem}</td>
                   <td>{row.repairable}</td>
                   <td>{row.typicalCost}</td>
-                  <td>{row.whenItMakesSense}</td>
+                  <td dangerouslySetInnerHTML={{ __html: row.whenItMakesSense }} />
                 </tr>
               ))}
             </tbody>
@@ -38,7 +38,7 @@ export default function RepairBuyOrReplace({ data }) {
               <h4>Buy if</h4>
               <ul>
                 {data.buyingChecks.buyIf.map((item) => (
-                  <li key={item}>{item}</li>
+                  <li key={item} dangerouslySetInnerHTML={{ __html: item }} />
                 ))}
               </ul>
             </>
@@ -48,7 +48,7 @@ export default function RepairBuyOrReplace({ data }) {
               <h4>Avoid if</h4>
               <ul>
                 {data.buyingChecks.avoidIf.map((item) => (
-                  <li key={item}>{item}</li>
+                  <li key={item} dangerouslySetInnerHTML={{ __html: item }} />
                 ))}
               </ul>
             </>
@@ -56,7 +56,7 @@ export default function RepairBuyOrReplace({ data }) {
         </>
       )}
 
-      {data.closingVerdict && <p>{data.closingVerdict}</p>}
+      {data.closingVerdict && <p dangerouslySetInnerHTML={{ __html: data.closingVerdict }} />}
       {data.cta && (
         <p>
           <a href={data.cta.href}>{data.cta.label}</a>

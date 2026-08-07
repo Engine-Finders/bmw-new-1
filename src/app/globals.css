@@ -51,3 +51,8 @@ button,
 a {
   cursor: pointer;
 }
+
+a {
+  font-weight: 900;
+  text-decoration: underline;
+}

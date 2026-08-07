@@ -197,7 +197,7 @@
               "name": "Which E70 engine is the most reliable?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "The N52B30 3.0-litre straight-six (3.0si/xDrive30i, 2006–2008) -a naturally aspirated, proven engine from the E90-era BMWs -offers 272 hp, smooth refinement, and a proven 200,000-mile reputation with few inherent weaknesses beyond the electric water pump. The N55B30 (xDrive35i, 2010–2013) is BMW's more robust single-turbo replacement for the N54, delivering 306 hp with solid reliability. The M57/N57 3.0-litre diesels are also robust and torque-rich, with many owners reporting 200,000+ miles with proper servicing."
+                "text": "The N52B30 3.0-litre straight-six (3.0si/xDrive30i, 2006–2008) -a naturally aspirated, proven engine from the E90-era BMWs -offers 272 hp, smooth refinement, and a proven 200,000-mile reputation with few inherent weaknesses beyond the electric water pump. The N55B30 (xDrive35i, 2010–2013) is BMW\u0027s more robust single-turbo replacement for the N54, delivering 306 hp with solid reliability. The M57/N57 3.0-litre diesels are also robust and torque-rich, with many owners reporting 200,000+ miles with proper servicing."
               }
             },
             {
@@ -237,7 +237,7 @@
               "name": "Is it worth replacing an E70 engine, or should I scrap the car?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Depends on the car's value. Against a well-kept £15,000 X5, a £2,500–£4,500 N57 recon is 15–30% of the car's value -safe. Against a tired £6,000 example, the same recon is 40–75% -borderline. Our 70% BMW threshold is the line: if the lowest viable replacement cost exceeds 70% of the vehicle's current market value, evaluate scrap value first."
+                "text": "Depends on the car\u0027s value. Against a well-kept £15,000 X5, a £2,500–£4,500 N57 recon is 15–30% of the car\u0027s value -safe. Against a tired £6,000 example, the same recon is 40–75% -borderline. Our 70% BMW threshold is the line: if the lowest viable replacement cost exceeds 70% of the vehicle\u0027s current market value, evaluate scrap value first."
               }
             },
             {
@@ -253,7 +253,7 @@
               "name": "What is the difference between the E53, E70 and F15?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "The E53 (2000–2006) is the first-generation X5 -built on a modified E39 5 Series platform with the 4.4 V8 and 3.0 diesels. The E70 (2006–2013, this page) is the second-generation X5 -larger, more luxurious, with newer engines including the N63 V8 and M57/N57 diesels. The F15 (2013–2018) is the third-generation X5 -lighter, more efficient, with the B58/B47 engines and a more modern chassis. Costs and reliability profiles differ -see each generation's own page for specifics."
+                "text": "The E53 (2000–2006) is the first-generation X5 -built on a modified E39 5 Series platform with the 4.4 V8 and 3.0 diesels. The E70 (2006–2013, this page) is the second-generation X5 -larger, more luxurious, with newer engines including the N63 V8 and M57/N57 diesels. The F15 (2013–2018) is the third-generation X5 -lighter, more efficient, with the B58/B47 engines and a more modern chassis. Costs and reliability profiles differ -see each generation\u0027s own page for specifics."
               }
             },
             {
@@ -261,7 +261,7 @@
               "name": "How do I find my BMW E70 engine code?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Listed on the VIN plate and vehicle documentation; the engine number is stamped on the block -on six-cylinder engines (N52, N55, M57, N57) it's on the front of the block near the timing cover; on V8s (N62, N63, S63) it's on the front of the block. Tell us your variant and approximate registration date and we'll identify it -20+ vetted BMW specialists will confirm it for free."
+                "text": "Listed on the VIN plate and vehicle documentation; the engine number is stamped on the block -on six-cylinder engines (N52, N55, M57, N57) it\u0027s on the front of the block near the timing cover; on V8s (N62, N63, S63) it\u0027s on the front of the block. Tell us your variant and approximate registration date and we\u0027ll identify it -20+ vetted BMW specialists will confirm it for free."
               }
             }
           ]
@@ -318,7 +318,7 @@
   "hero": {
     "tagPill": "BMW X5 E70 • SUV • 2006–2013",
     "h1": "BMW X5 E70 Engines -The Complete UK Guide",
-    "subHeadline": "Every engine fitted to the second‑generation X5 -from the N52 and N55 straight‑sixes to the N62 V8, the N63 twin‑turbo V8, the S63 in the X5 M, and the M57/N57 diesel range. Real UK costs and honest reliability data for BMW's flagship luxury SUV. Backed by real UK enquiries in 2025 [BMW-VERIFIED].",
+    "subHeadline": "Every engine fitted to the second‑generation X5 -from the <a href='https://bmwengines.uk/engine/n52-n53'>N52</a> and N55 straight‑sixes to the <a href='https://bmwengines.uk/engine/n62-n63'>N62</a> V8, the N63 twin‑turbo V8, the <a href='https://bmwengines.uk/engine/s63-s65'>S63</a> in the X5 M, and the <a href='https://bmwengines.uk/engine/m57'>M57</a>/N57 diesel range. Real UK costs and honest reliability data for BMW\u0027s flagship luxury SUV. Backed by real UK enquiries in 2025 [BMW-VERIFIED].",
     "trustStrip": [
       {
         "icon": "📊",
@@ -445,7 +445,7 @@
       },
       {
         "engineCode": "N57D30O0",
-        "family": "N57",
+        "family": "<a href='https://bmwengines.uk/engine/n57'>N57</a>",
         "fuel": "Diesel I6, turbo",
         "displacement": "3.0L",
         "power": "180 kW / 245 hp",
@@ -482,13 +482,13 @@
     ],
     "confidenceScore": {
       "title": "How confident are these ratings?",
-      "text": "All ratings are [PROVISIONAL] -no dedicated Engine Page exists for any E70 engine family. Ratings are derived from triangulated specialist sources (BMW forums, reliability guides, AustralianCar.Reviews). The N52B30 and N55B30 straight‑sixes are widely regarded as reliable -the N52 is a proven naturally aspirated design, while the N55 is BMW's more robust single‑turbo replacement for the problematic N54. The M57 and N57 diesel families are generally robust, though DPF and EGR issues are common. The N62 V8 is characterful but suffers from valve stem seal wear and cooling system issues. The N63 twin‑turbo V8 carries higher risk due to hot‑vee heat management problems. The S63 in the X5 M is a masterpiece but demands deep pockets."
+      "text": "All ratings are [PROVISIONAL] -no dedicated Engine Page exists for any E70 engine family. Ratings are derived from triangulated specialist sources (BMW forums, reliability guides, AustralianCar.Reviews). The N52B30 and N55B30 straight‑sixes are widely regarded as reliable -the N52 is a proven naturally aspirated design, while the N55 is BMW\u0027s more robust single‑turbo replacement for the problematic <a href='https://bmwengines.uk/engine/n54-n55'>N54</a>. The M57 and N57 diesel families are generally robust, though DPF and EGR issues are common. The N62 V8 is characterful but suffers from valve stem seal wear and cooling system issues. The N63 twin‑turbo V8 carries higher risk due to hot‑vee heat management problems. The S63 in the X5 M is a masterpiece but demands deep pockets."
     },
     "dataCorrections": []
   },
   "overview": {
     "h2": "BMW X5 E70 -Overview",
-    "intro": "The E70 is the second‑generation BMW X5, produced from July 2006 to June 2013. It replaced the E53 and introduced a larger, more luxurious body with improved interior space and the xDrive all‑wheel‑drive system. Designed by Pierre Leclercq, the E70 was built on the BMW L4 platform and offered a range of petrol and diesel engines: from the N52 and N55 straight‑sixes to the N62 V8, the twin‑turbo N63 V8, the S63 in the X5 M, and the M57/N57 diesel family -including the world's first production tri‑turbo diesel in the M50d. A 2010 facelift brought updated engines and technology.",
+    "intro": "The E70 is the second‑generation BMW X5, produced from July 2006 to June 2013. It replaced the E53 and introduced a larger, more luxurious body with improved interior space and the xDrive all‑wheel‑drive system. Designed by Pierre Leclercq, the E70 was built on the BMW L4 platform and offered a range of petrol and diesel engines: from the N52 and N55 straight‑sixes to the N62 V8, the twin‑turbo N63 V8, the S63 in the X5 M, and the M57/N57 diesel family -including the world\u0027s first production tri‑turbo diesel in the M50d. A 2010 facelift brought updated engines and technology.",
     "keyFacts": "Platform: BMW L4 (shared with E60 5 Series) • Predecessor: BMW X5 (E53) • Successor: BMW X5 (F15) • Sibling body styles in this generation: None (E70 is 5‑door SUV only).",
     "marketIntelligenceLine": "The E70 generates consistent UK enquiries [PATTERN DATA], concentrated on xDrive30d diesel and xDrive35i petrol variants as these luxury SUVs enter affordable‑maintenance territory."
   },
@@ -497,7 +497,7 @@
       {
         "slot": "Thin-Data Summary",
         "engine": "",
-        "quote": "Most dependable: The N52B30 3.0‑litre straight‑six (3.0si/xDrive30i, 2006–2008) -a naturally aspirated, proven engine -offers 272 hp, smooth refinement, and a genuine 200,000‑mile reputation with few inherent weaknesses. The N55B30 (xDrive35i, 2010–2013) is BMW's more robust single‑turbo replacement for the N54 -reliable and punchy with 306 hp. The M57/N57 3.0‑litre diesels are also robust and torque‑rich, with many owners reporting 200,000+ miles with proper servicing. The N62 V8 (4.8i) is characterful but suffers from valve stem seal wear and cooling system issues. The N63 V8 (xDrive50i) carries the highest risk -hot‑vee heat management problems are well‑documented. Buyers should prioritise a well‑maintained N52, N55, or M57/N57 with documented service history.",
+        "quote": "Most dependable: The N52B30 3.0‑litre straight‑six (3.0si/xDrive30i, 2006–2008) -a naturally aspirated, proven engine -offers 272 hp, smooth refinement, and a genuine 200,000‑mile reputation with few inherent weaknesses. The N55B30 (xDrive35i, 2010–2013) is BMW\u0027s more robust single‑turbo replacement for the N54 -reliable and punchy with 306 hp. The M57/N57 3.0‑litre diesels are also robust and torque‑rich, with many owners reporting 200,000+ miles with proper servicing. The N62 V8 (4.8i) is characterful but suffers from valve stem seal wear and cooling system issues. The N63 V8 (xDrive50i) carries the highest risk -hot‑vee heat management problems are well‑documented. Buyers should prioritise a well‑maintained N52, N55, or M57/N57 with documented service history.",
         "whoItsFor": ""
       }
     ]
@@ -519,7 +519,7 @@
         "commonMajorFailure": "Water pump, oil leaks, VANOS",
         "repairCostSpecialist": "£300–£800",
         "replacementCostRecon": "£2,200–£4,000",
-        "ownershipVerdict": "Best Petrol Six -the E70's most reliable engine"
+        "ownershipVerdict": "Best Petrol Six -the E70\u0027s most reliable engine"
       },
       {
         "engine": "N55B30 (xDrive35i)",
@@ -588,7 +588,7 @@
     ],
     "economicsRule": {
       "title": "The E70 rule",
-      "text": "A £2,500–£5,000 M57/N57 recon against a £5,000–£20,000 X5 sits at 12–100% of the car's value. On a sub‑£7,000 E70, that brushes our 70% BMW threshold -we'll honestly tell you to walk away. Against a well‑kept £15,000+ example, the same recon drops to a routine 15–35% -a repair decision, not a financial one. Value the car first."
+      "text": "A £2,500–£5,000 M57/N57 recon against a £5,000–£20,000 X5 sits at 12–100% of the car\u0027s value. On a sub‑£7,000 E70, that brushes our 70% BMW threshold -we\u0027ll honestly tell you to walk away. Against a well‑kept £15,000+ example, the same recon drops to a routine 15–35% -a repair decision, not a financial one. Value the car first."
     },
     "keyTakeaways": []
   },
@@ -609,10 +609,10 @@
       },
       {
         "id": 2,
-        "title": "N63 V8 Oil Consumption & Turbo Failure",
+        "title": "N63 V8 Oil Consumption \u0026 Turbo Failure",
         "affectedModels": "E70 xDrive50i (2010–2013) with N63 V8.",
         "typicalFailureMileage": "60,000–120,000 miles.",
-        "rootCause": "The N63's hot‑vee design leads to heat‑related issues -valve stem seals degrade causing oil consumption, and turbochargers can fail due to oil starvation.",
+        "rootCause": "The N63\u0027s hot‑vee design leads to heat‑related issues -valve stem seals degrade causing oil consumption, and turbochargers can fail due to oil starvation.",
         "tieredCosts": [],
         "recommendation": "If your V8‑powered E70 produces blue smoke on start‑up or shows excessive oil consumption, get the valve stem seals and turbos inspected -£800–£1,800 now is cheaper than the £4,500–£8,500 replacement that follows if ignored.",
         "cta": {
@@ -625,7 +625,7 @@
         "title": "N52/N55 Electric Water Pump Failure",
         "affectedModels": "E70 3.0si, xDrive30i, xDrive35i (2006–2013) with N52 or N55 engine.",
         "typicalFailureMileage": "60,000–120,000 miles.",
-        "rootCause": "The N52 and N55's electric water pump is a known weak point -failure leads to overheating, loss of cooling, and potential engine damage if not addressed promptly.",
+        "rootCause": "The N52 and N55\u0027s electric water pump is a known weak point -failure leads to overheating, loss of cooling, and potential engine damage if not addressed promptly.",
         "tieredCosts": [],
         "recommendation": "On any N52‑ or N55‑powered E70, budget for water pump replacement at 80k miles -a £300–£600 preventative job is cheap insurance against the £2,500–£4,800 replacement that follows a catastrophic overheat.",
         "cta": {
@@ -635,10 +635,10 @@
       },
       {
         "id": 4,
-        "title": "M57/N57 Diesel DPF & EGR Clogging",
+        "title": "M57/N57 Diesel DPF \u0026 EGR Clogging",
         "affectedModels": "E70 3.0d, xDrive30d, xDrive35d, xDrive40d, M50d (2007–2013) with M57 or N57 engine.",
         "typicalFailureMileage": "60,000–120,000 miles.",
-        "rootCause": "The M57 and N57 diesel's DPF and EGR system clog with soot, particularly on urban‑use vehicles -leading to reduced power, increased fuel consumption, and eventual engine warning lights.",
+        "rootCause": "The M57 and N57 diesel\u0027s DPF and EGR system clog with soot, particularly on urban‑use vehicles -leading to reduced power, increased fuel consumption, and eventual engine warning lights.",
         "tieredCosts": [],
         "recommendation": "If your diesel‑powered E70 is used primarily for short trips, a £150–£400 DPF and EGR service every 20k miles is cheap insurance against the £600–£1,200 replacement that follows.",
         "cta": {
@@ -653,7 +653,7 @@
         "typicalFailureMileage": "60,000–100,000 miles.",
         "rootCause": "Not an engine failure, but a common non‑engine issue on the E70 -the rear air suspension compressor fails or the system develops leaks, causing the vehicle to sit unevenly or fail to raise.",
         "tieredCosts": [],
-        "recommendation": "Have the air suspension inspected on any E70 over 60,000 miles -it's one of the most common reasons an otherwise sound X5 becomes a costly ownership proposition.",
+        "recommendation": "Have the air suspension inspected on any E70 over 60,000 miles -it\u0027s one of the most common reasons an otherwise sound X5 becomes a costly ownership proposition.",
         "cta": {
           "label": "Compare E70 air suspension repair quotes →",
           "href": "#"
@@ -753,25 +753,84 @@
         "labourHours": "12–16 hrs"
       }
     ],
-    "note": "No Generation variance from the Model Page's baseline figures -E70 shares similar engine‑bay access across all variants, so costs are inherited directly per the Authority Model, with no divergence note required. All costs are [BMW-QUOTE] from Table A -Engine Replacement Economics."
+    "note": "No Generation variance from the Model Page\u0027s baseline figures -E70 shares similar engine‑bay access across all variants, so costs are inherited directly per the Authority Model, with no divergence note required. All costs are [BMW-QUOTE] from Table A -Engine Replacement Economics."
   },
   "coreVariants": {
     "dieselVariants": [
-      "3.0d",
-      "xDrive30d",
-      "3.0sd",
-      "xDrive35d",
-      "xDrive40d",
-      "M50d"
+      {
+        "name": "3.0d",
+        "url": "#"
+      },
+      {
+        "name": "xDrive30d",
+        "url": "https://bmwengines.uk/x5/xdrive30d"
+      },
+      {
+        "name": "3.0sd",
+        "url": "#"
+      },
+      {
+        "name": "xDrive35d",
+        "url": "#"
+      },
+      {
+        "name": "xDrive40d",
+        "url": "https://bmwengines.uk/x5/xdrive40d"
+      },
+      {
+        "name": "M50d",
+        "url": "https://bmwengines.uk/x5/m50d"
+      },
+      {
+        "name": "25d",
+        "url": "https://bmwengines.uk/x5/25d"
+      },
+      {
+        "name": "30sd / 35d",
+        "url": "https://bmwengines.uk/x5/30sd-35d"
+      }
     ],
     "petrolVariants": [
-      "3.0si",
-      "xDrive30i",
-      "xDrive35i",
-      "4.8i",
-      "xDrive48i",
-      "xDrive50i",
-      "X5 M"
+      {
+        "name": "3.0si",
+        "url": "#"
+      },
+      {
+        "name": "xDrive30i",
+        "url": "#"
+      },
+      {
+        "name": "xDrive35i",
+        "url": "https://bmwengines.uk/x5/xdrive35i"
+      },
+      {
+        "name": "4.8i",
+        "url": "#"
+      },
+      {
+        "name": "xDrive48i",
+        "url": "#"
+      },
+      {
+        "name": "xDrive50i",
+        "url": "https://bmwengines.uk/x5/xdrive50i"
+      },
+      {
+        "name": "X5 M",
+        "url": "https://bmwengines.uk/x5/x5-m"
+      },
+      {
+        "name": "30si",
+        "url": "https://bmwengines.uk/x5/30si"
+      },
+      {
+        "name": "40i",
+        "url": "https://bmwengines.uk/x5/40i"
+      },
+      {
+        "name": "4.4i",
+        "url": "https://bmwengines.uk/x5/44i"
+      }
     ],
     "scopeNote": "All variants listed are BMW X5 E70 (second generation) only -5‑door SUV body style. X5 E53 (first generation) and X5 F15 (third generation) are covered on their own Generation Pages."
   },
@@ -792,7 +851,7 @@
       {
         "id": 2,
         "question": "Which E70 engine is the most reliable?",
-        "answer": "The N52B30 3.0-litre straight-six (3.0si/xDrive30i, 2006–2008) -a naturally aspirated, proven engine from the E90-era BMWs -offers 272 hp, smooth refinement, and a proven 200,000-mile reputation with few inherent weaknesses beyond the electric water pump. The N55B30 (xDrive35i, 2010–2013) is BMW's more robust single-turbo replacement for the N54, delivering 306 hp with solid reliability. The M57/N57 3.0-litre diesels are also robust and torque-rich, with many owners reporting 200,000+ miles with proper servicing."
+        "answer": "The N52B30 3.0-litre straight-six (3.0si/xDrive30i, 2006–2008) -a naturally aspirated, proven engine from the E90-era BMWs -offers 272 hp, smooth refinement, and a proven 200,000-mile reputation with few inherent weaknesses beyond the electric water pump. The N55B30 (xDrive35i, 2010–2013) is BMW\u0027s more robust single-turbo replacement for the N54, delivering 306 hp with solid reliability. The M57/N57 3.0-litre diesels are also robust and torque-rich, with many owners reporting 200,000+ miles with proper servicing."
       },
       {
         "id": 3,
@@ -817,7 +876,7 @@
       {
         "id": 7,
         "question": "Is it worth replacing an E70 engine, or should I scrap the car?",
-        "answer": "Depends on the car's value. Against a well-kept £15,000 X5, a £2,500–£4,500 N57 recon is 15–30% of the car's value -safe. Against a tired £6,000 example, the same recon is 40–75% -borderline. Our 70% BMW threshold is the line: if the lowest viable replacement cost exceeds 70% of the vehicle's current market value, evaluate scrap value first."
+        "answer": "Depends on the car\u0027s value. Against a well-kept £15,000 X5, a £2,500–£4,500 N57 recon is 15–30% of the car\u0027s value -safe. Against a tired £6,000 example, the same recon is 40–75% -borderline. Our 70% BMW threshold is the line: if the lowest viable replacement cost exceeds 70% of the vehicle\u0027s current market value, evaluate scrap value first."
       },
       {
         "id": 8,
@@ -827,12 +886,12 @@
       {
         "id": 9,
         "question": "What is the difference between the E53, E70 and F15?",
-        "answer": "The E53 (2000–2006) is the first-generation X5 -built on a modified E39 5 Series platform with the 4.4 V8 and 3.0 diesels. The E70 (2006–2013, this page) is the second-generation X5 -larger, more luxurious, with newer engines including the N63 V8 and M57/N57 diesels. The F15 (2013–2018) is the third-generation X5 -lighter, more efficient, with the B58/B47 engines and a more modern chassis. Costs and reliability profiles differ -see each generation's own page for specifics."
+        "answer": "The E53 (2000–2006) is the first-generation X5 -built on a modified E39 5 Series platform with the 4.4 V8 and 3.0 diesels. The E70 (2006–2013, this page) is the second-generation X5 -larger, more luxurious, with newer engines including the N63 V8 and M57/N57 diesels. The F15 (2013–2018) is the third-generation X5 -lighter, more efficient, with the <a href='https://bmwengines.uk/engine/b57-b58'>B58</a>/B47 engines and a more modern chassis. Costs and reliability profiles differ -see each generation\u0027s own page for specifics."
       },
       {
         "id": 10,
         "question": "How do I find my BMW E70 engine code?",
-        "answer": "Listed on the VIN plate and vehicle documentation; the engine number is stamped on the block -on six-cylinder engines (N52, N55, M57, N57) it's on the front of the block near the timing cover; on V8s (N62, N63, S63) it's on the front of the block. Tell us your variant and approximate registration date and we'll identify it -20+ vetted BMW specialists will confirm it for free."
+        "answer": "Listed on the VIN plate and vehicle documentation; the engine number is stamped on the block -on six-cylinder engines (N52, N55, M57, N57) it\u0027s on the front of the block near the timing cover; on V8s (N62, N63, S63) it\u0027s on the front of the block. Tell us your variant and approximate registration date and we\u0027ll identify it -20+ vetted BMW specialists will confirm it for free."
       }
     ]
   },
@@ -845,11 +904,11 @@
       },
       {
         "title": "Compare E70 Engine Replacement Companies",
-        "text": "see prices, warranty terms and supply & fit options side-by-side before you commit."
+        "text": "see prices, warranty terms and supply \u0026 fit options side-by-side before you commit."
       },
       {
         "title": "UK Engine Replacement Services for BMW X5 E70",
-        "text": "covering every variant from xDrive30i to X5 M and 3.0d to M50d, with supply-only or full supply & fit available nationwide."
+        "text": "covering every variant from xDrive30i to X5 M and 3.0d to M50d, with supply-only or full supply \u0026 fit available nationwide."
       }
     ],
     "finalCta": "Find the best BMW X5 E70 engine replacement UK drivers rely on. Compare real prices from trusted specialists on EnginesMarket today and get back on the road with confidence.",

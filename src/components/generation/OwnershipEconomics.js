@@ -20,7 +20,7 @@ function VerdictPill({ verdictType, text, isDark }) {
   return (
     <span className={`inline-flex items-start gap-2 text-[0.78rem] leading-[1.25] ${textColor}`}>
       <GenIcon name={style.icon} className={`mt-0.5 h-4 w-4 shrink-0 ${iconColor}`} />
-      {text}
+      <span dangerouslySetInnerHTML={{ __html: text }} />
     </span>
   );
 }
@@ -37,11 +37,11 @@ function DesktopRow({ row, isDark }) {
     <div
       className={`grid grid-cols-[110px_100px_1fr_130px_150px_1.4fr] items-center gap-px ${rowClass} px-5 py-3.5 text-[0.85rem] border-b ${borderBottom} last:border-b-0`}
     >
-      <span className={`px-3 font-semibold border-r ${cellDivider}`}>{row.engine}</span>
-      <span className={`px-3 ${mutedText} border-r ${cellDivider}`}>{row.typicalMileage}</span>
-      <span className={`px-3 ${mutedText} border-r ${cellDivider}`}>{row.commonMajorFailure}</span>
-      <span className={`px-3 ${mutedText} border-r ${cellDivider}`}>{row.repairCostSpecialist}</span>
-      <span className={`px-3 font-semibold border-r ${cellDivider}`}>{row.replacementCostRecon}</span>
+      <span className={`px-3 font-semibold border-r ${cellDivider}`} dangerouslySetInnerHTML={{ __html: row.engine }} />
+      <span className={`px-3 ${mutedText} border-r ${cellDivider}`} dangerouslySetInnerHTML={{ __html: row.typicalMileage }} />
+      <span className={`px-3 ${mutedText} border-r ${cellDivider}`} dangerouslySetInnerHTML={{ __html: row.commonMajorFailure }} />
+      <span className={`px-3 ${mutedText} border-r ${cellDivider}`} dangerouslySetInnerHTML={{ __html: row.repairCostSpecialist }} />
+      <span className={`px-3 font-semibold border-r ${cellDivider}`} dangerouslySetInnerHTML={{ __html: row.replacementCostRecon }} />
       <div className="pl-3">
         <VerdictPill verdictType={row.verdictType} text={row.ownershipVerdict} isDark={isDark} />
       </div>
@@ -63,11 +63,11 @@ function MobileRow({ row, isDark }) {
     <div
       className={`grid ${MOBILE_COLS} items-center gap-px ${rowClass} px-3 py-3 text-[0.72rem] leading-[1.3] border-b ${borderBottom} last:border-b-0`}
     >
-      <span className={`px-2 font-semibold border-r ${cellDivider}`}>{row.engine}</span>
-      <span className={`px-2 ${mutedText} border-r ${cellDivider}`}>{row.typicalMileage}</span>
-      <span className={`px-2 ${mutedText} border-r ${cellDivider}`}>{row.commonMajorFailure}</span>
-      <span className={`px-2 ${mutedText} border-r ${cellDivider}`}>{row.repairCostSpecialist}</span>
-      <span className={`px-2 font-semibold border-r ${cellDivider}`}>{row.replacementCostRecon}</span>
+      <span className={`px-2 font-semibold border-r ${cellDivider}`} dangerouslySetInnerHTML={{ __html: row.engine }} />
+      <span className={`px-2 ${mutedText} border-r ${cellDivider}`} dangerouslySetInnerHTML={{ __html: row.typicalMileage }} />
+      <span className={`px-2 ${mutedText} border-r ${cellDivider}`} dangerouslySetInnerHTML={{ __html: row.commonMajorFailure }} />
+      <span className={`px-2 ${mutedText} border-r ${cellDivider}`} dangerouslySetInnerHTML={{ __html: row.repairCostSpecialist }} />
+      <span className={`px-2 font-semibold border-r ${cellDivider}`} dangerouslySetInnerHTML={{ __html: row.replacementCostRecon }} />
       <div className="pl-2">
         <VerdictPill verdictType={row.verdictType} text={row.ownershipVerdict} isDark={isDark} />
       </div>
@@ -122,9 +122,10 @@ export default function OwnershipEconomics({ data }) {
         </div>
 
         <div className="relative mx-auto w-full max-w-8xl px-4 py-6 md:px-8 md:py-10">
-          <h2 className={`max-w-[720px] text-[2.15rem] font-bold leading-[1.1] tracking-normal md:text-[3rem] ${headerHeadingClass}`}>
-            {data.h2}
-          </h2>
+          <h2
+            className={`max-w-[720px] text-[2.15rem] font-bold leading-[1.1] tracking-normal md:text-[3rem] ${headerHeadingClass}`}
+            dangerouslySetInnerHTML={{ __html: data.h2 }}
+          />
           <div className="mt-3">
             <MStripe />
           </div>
@@ -174,12 +175,19 @@ export default function OwnershipEconomics({ data }) {
                 <GenIcon name="scale" className="h-10 w-10" />
               </span>
               <div className="min-w-0 flex-1">
-                <p className="text-[0.78rem] font-semibold uppercase tracking-wide text-[var(--color-primary)]">
-                  {data.economicsRule.title}
-                </p>
-                <p className="mt-2 text-[0.85rem] leading-[1.5] text-[var(--color-text)]">{data.economicsRule.text}</p>
+                <p
+                  className="text-[0.78rem] font-semibold uppercase tracking-wide text-[var(--color-primary)]"
+                  dangerouslySetInnerHTML={{ __html: data.economicsRule.title }}
+                />
+                <p
+                  className="mt-2 text-[0.85rem] leading-[1.5] text-[var(--color-text)]"
+                  dangerouslySetInnerHTML={{ __html: data.economicsRule.text }}
+                />
                 {data.economicsRule.highlight ? (
-                  <p className="mt-2 text-[0.9rem] font-bold text-[var(--color-primary)]">{data.economicsRule.highlight}</p>
+                  <p
+                    className="mt-2 text-[0.9rem] font-bold text-[var(--color-primary)]"
+                    dangerouslySetInnerHTML={{ __html: data.economicsRule.highlight }}
+                  />
                 ) : null}
               </div>
             </div>
@@ -197,8 +205,8 @@ export default function OwnershipEconomics({ data }) {
                       <GenIcon name={takeawayIcons[index % takeawayIcons.length]} className="h-4.5 w-4.5" />
                     </span>
                     <div className="min-w-0 flex-1">
-                      <p className="text-[0.85rem] font-semibold text-[var(--color-text)]">{item.question}</p>
-                      <p className="text-[0.8rem] leading-[1.4] text-[var(--color-text-muted)]">{item.answer}</p>
+                      <p className="text-[0.85rem] font-semibold text-[var(--color-text)]" dangerouslySetInnerHTML={{ __html: item.question }} />
+                      <p className="text-[0.8rem] leading-[1.4] text-[var(--color-text-muted)]" dangerouslySetInnerHTML={{ __html: item.answer }} />
                     </div>
                   </li>
                 ))}

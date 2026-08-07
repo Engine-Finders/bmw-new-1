@@ -85,7 +85,7 @@ function ComparisonCard({ item, isDark }) {
 
         <div className="flex min-w-0 flex-col p-4 md:p-5">
           <h3 className={`text-[1.35rem] font-bold leading-tight md:text-[1.25rem] ${isDark ? "text-white" : "text-[#071827]"}`}>{item.title}</h3>
-          <p className={`mt-4 text-[0.81rem] leading-[1.5] md:mt-3 md:text-[0.9rem] ${isDark ? "text-white/78" : "text-[#172b4a]"}`}>{item.preview}</p>
+          <p className={`mt-4 text-[0.81rem] leading-[1.5] md:mt-3 md:text-[0.9rem] ${isDark ? "text-white/78" : "text-[#172b4a]"}`} dangerouslySetInnerHTML={{ __html: item.preview }} />
           <Link href={item.link.href} className="mt-5 flex items-center justify-end gap-3 text-[0.95rem] font-semibold text-[var(--color-primary)] md:mt-auto md:text-[0.9rem]">
             <span>{item.link.label}</span>
             <ArrowIcon />
@@ -117,7 +117,7 @@ export default function HomeSec5({ data }) {
           <div className="mt-4">
             <MStripe />
           </div>
-          <p className={`mt-4 max-w-[690px] text-[0.85rem] leading-[1.55] md:text-[1.02rem] ${isDark ? "text-white/82" : "text-[#172b4a]"}`}>{data.subHeadline}</p>
+          <p className={`mt-4 max-w-[690px] text-[0.85rem] leading-[1.55] md:text-[1.02rem] ${isDark ? "text-white/82" : "text-[#172b4a]"}`} dangerouslySetInnerHTML={{ __html: data.subHeadline }} />
         </div>
 
         <div className="mt-7 grid gap-4 md:grid-cols-2 md:gap-4">

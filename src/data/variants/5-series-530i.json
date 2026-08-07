@@ -25,7 +25,7 @@
   "hero": {
     "tagPill": "BMW 5 Series 530i • 1992–present • 5 Engine Generations",
     "h1": "BMW 5 Series 530i Engine Replacement - Compare Prices & Get Quotes",
-    "subHeadline": "Get quotes today from trusted UK BMW 530i specialists. Compare reconditioned, rebuilt and used 3.0-litre engines - from the classic M60 V8 and M54 straight-six to the modern B48 turbo four - supply & fit available nationwide.",
+    "subHeadline": "Get quotes today from trusted UK BMW 530i specialists. Compare reconditioned, rebuilt and used 3.0-litre engines - from the classic M60 V8 and <a href='https://bmwengines.uk/engine/m50-m52-m54'>M54</a> straight-six to the modern <a href='https://bmwengines.uk/engine/b38-b48'>B48</a> turbo four - supply & fit available nationwide.",
     "trustBadges": [
       "🔧 Supply & Fit Available",
       "✅ 12-Month Warranty",
@@ -153,7 +153,7 @@
         "bestFor": "Insurance jobs, warranty claims"
       }
     ],
-    "figuresNote": "Figures above reflect current 530i replacement costs. The N55 and B48 variants typically sit at the higher end of the range. See the Era Map above for generation-specific pricing.",
+    "figuresNote": "Figures above reflect current 530i replacement costs. The <a href='https://bmwengines.uk/engine/n54-n55'>N55</a> and B48 variants typically sit at the higher end of the range. See the Era Map above for generation-specific pricing.",
     "labourEstimate": "Fitting a 530i engine typically takes 10–14 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer).",
     "cta": {
       "label": "→ Compare 530i engine prices from UK specialists",
@@ -182,7 +182,7 @@
       },
       {
         "id": 2,
-        "title": "Oil Leaks - Valve Cover & Oil Filter Housing (M54, N52, N55)",
+        "title": "Oil Leaks - Valve Cover & Oil Filter Housing (M54, <a href='https://bmwengines.uk/engine/n52-n53'>N52</a>, N55)",
         "symptoms": "",
         "typicalMileage": "",
         "repairCost": "",

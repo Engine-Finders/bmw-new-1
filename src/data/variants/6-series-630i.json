@@ -223,7 +223,7 @@
   "hero": {
     "tagPill": "BMW 6 Series 630i • 2003–2020 • 4 Engine Generations",
     "h1": "BMW 6 Series 630i Engine Replacement - Compare Prices & Get Quotes",
-    "subHeadline": "The 630i badge spans four generations of BMW grand tourer - from the naturally aspirated N52 and N53 straight-sixes to the turbocharged N55 and B48. Get quotes from trusted UK BMW specialists for every era, supply & fit available nationwide.",
+    "subHeadline": "The 630i badge spans four generations of BMW grand tourer - from the naturally aspirated <a href='https://bmwengines.uk/engine/n52-n53'>N52</a> and N53 straight-sixes to the turbocharged N55 and <a href='https://bmwengines.uk/engine/b38-b48'>B48</a>. Get quotes from trusted UK BMW specialists for every era, supply & fit available nationwide.",
     "trustBadges": [
       "🔧 Supply & Fit Available",
       "✅ 12-Month Warranty",
@@ -384,7 +384,7 @@
           "label": "Monitor",
           "text": "book inspection soon if symptoms appear."
         },
-        "recommendation": "The N55 is a significant improvement over the N54, but it still suffers from oil leaks from the valve cover and oil filter housing gaskets. HPFP failures can also occur. The oil filter housing gasket leak is particularly critical - oil dripping onto the serpentine belt can cause belt failure and potential engine damage. If you notice a burning oil smell, have the gaskets inspected promptly.",
+        "recommendation": "The N55 is a significant improvement over the <a href='https://bmwengines.uk/engine/n54-n55'>N54</a>, but it still suffers from oil leaks from the valve cover and oil filter housing gaskets. HPFP failures can also occur. The oil filter housing gasket leak is particularly critical - oil dripping onto the serpentine belt can cause belt failure and potential engine damage. If you notice a burning oil smell, have the gaskets inspected promptly.",
         "failureLink": {
           "label": "",
           "href": "/failures/oil-leak/"

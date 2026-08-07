@@ -231,7 +231,7 @@
       ],
       "avoidIf": [
         "* Cold-start rattle and no chain history - assume it's overdue and budget £650–£1,800",
-        "* No service history - the N47 is unforgiving of neglect",
+        "* No service history - the <a href='https://bmwengines.uk/engine/n47'>N47</a> is unforgiving of neglect",
         "* Short-journey ownership history - DPF issues likely",
         "* Engine warning light with no diagnosis - could be timing, DPF, or EGR issues"
       ]

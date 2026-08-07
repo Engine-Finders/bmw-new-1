@@ -69,6 +69,17 @@ function splitCardTitle(title = "") {
   };
 }
 
+function GenerationCode({ children }) {
+  return (
+    <>
+      <span className="text-[17px] font-bold leading-[1.1] md:hidden">{children}</span>
+      <span className="hidden font-bold leading-[1.05] md:inline" style={{ fontSize: "17px" }}>
+        {children}
+      </span>
+    </>
+  );
+}
+
 function splitMeta(meta = "") {
   const [years = "", engines = ""] = cleanText(meta).split(" \u2022 ");
   return { years, engines };
@@ -143,11 +154,11 @@ function GenerationImage({ code, large = false }) {
         onError={(event) => {
           event.currentTarget.src = defaultCarImage;
         }}
-        className={`max-h-full max-w-full object-contain mix-blend-multiply ${large ? "w-[86%]" : "w-[78%]"}`}
-      />
-    </div>
-  );
-}
+        className={`max-h-full max-w-full object-contain ${large ? "w-[86%]" : "w-[78%]"}`}
+        />
+      </div>
+    );
+  }
 
 function GenerationCard({ card, index, featured = false, onToggle }) {
   const title = splitCardTitle(card.title);
@@ -157,7 +168,7 @@ function GenerationCard({ card, index, featured = false, onToggle }) {
 
   return (
     <article
-      className={`rounded-md border bg-[var(--color-surface)] p-3 text-[var(--color-text)] shadow-[0_8px_22px_var(--color-shadow)] ${
+      className={`rounded-md border bg-[var(--color-surface-raised)] p-3 text-[var(--color-text)] shadow-[0_8px_22px_var(--color-shadow)] ${
         featured ? "border-[rgba(7,95,216,0.7)] md:col-span-2" : "border-[var(--color-border)]"
       }`}
     >
@@ -170,10 +181,12 @@ function GenerationCard({ card, index, featured = false, onToggle }) {
           {index + 1}
         </span>
         <div className="min-w-0 flex-1">
-          <p className={`${sectionTableText} font-semibold`}>{title.series}</p>
-          <h3 className="mt-0.5 text-[35px] font-bold leading-[1.05] md:text-[50px]">{title.code}</h3>
-          <p className={`mt-2 ${sectionTableText}`}>{meta.years}</p>
-          {meta.engines ? <p className={sectionTableText}>• {meta.engines}</p> : null}
+          <p className={`${sectionTableText} font-semibold`} dangerouslySetInnerHTML={{ __html: title.series }} />
+          <h3 className="mt-0.5"><GenerationCode><span dangerouslySetInnerHTML={{ __html: title.code }} /></GenerationCode></h3>
+          <p className="mt-2 text-[12px] font-normal leading-[1.35] text-[var(--color-text-muted)]">
+            <span className="text-[13px] md:text-[15px]" dangerouslySetInnerHTML={{ __html: meta.years }} />
+          </p>
+          {meta.engines ? <p className="text-[12px] font-normal leading-[1.35] text-[var(--color-text-muted)]">• <span dangerouslySetInnerHTML={{ __html: meta.engines }} /></p> : null}
         </div>
         <span className="text-[var(--color-primary)]">
           <ChevronIcon open={featured} />
@@ -201,19 +214,26 @@ function GenerationCard({ card, index, featured = false, onToggle }) {
       {featured && card.verdict ? (
         <div className="mt-4 text-[15px] leading-[1.45]">
           <p className="font-bold">Our Verdict:</p>
-          <p className="mt-1">{cleanText(card.verdict)}</p>
+          <p className="mt-1" dangerouslySetInnerHTML={{ __html: cleanText(card.verdict) }} />
         </div>
       ) : null}
 
       {!featured && (
         <Link
           href={href}
-          className="mt-12 hidden min-h-9 items-center justify-center gap-3 rounded-md border border-[rgba(7,95,216,0.45)] px-3 text-[18px] font-bold text-[var(--color-primary)] transition-all duration-200 hover:text-black hover:shadow-[0_12px_24px_rgba(0,0,0,0.14)] md:flex"
+          className="mt-3 hidden min-h-9 items-center justify-center gap-3 rounded-md border border-[rgba(7,95,216,0.45)] px-3 text-[18px] font-bold text-[var(--color-primary)] transition-all duration-200 hover:text-black hover:shadow-[0_12px_24px_rgba(0,0,0,0.14)] md:flex"
         >
           <span>{label.replace(/^Explore the\s+/i, "Explore ").replace(/\s*\u2192\s*$/, "")}</span>
-          <ChevronIcon />
+          <ArrowIcon />
         </Link>
       )}
+
+      {!featured && card.verdict ? (
+        <div className="mt-4 hidden text-[15px] leading-[1.45] md:block">
+          <p className="font-bold">Our Verdict:</p>
+          <p className="mt-1" dangerouslySetInnerHTML={{ __html: cleanText(card.verdict) }} />
+        </div>
+      ) : null}
     </article>
   );
 }
@@ -227,16 +247,18 @@ function MobileGenerationRow({ card, index, onToggle }) {
     <button
       type="button"
       onClick={onToggle}
-      className="flex min-h-[86px] w-full items-center gap-3 rounded-md border border-[var(--color-border)] bg-[var(--color-surface)] p-3 text-left text-[var(--color-text)]"
+      className="flex min-h-[86px] w-full items-center gap-3 rounded-md border border-[var(--color-border)] bg-[var(--color-surface-raised)] p-3 text-left text-[var(--color-text)]"
     >
       <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-md bg-[var(--color-primary)] text-[0.8rem] font-bold text-white shadow-sm">
         {index + 1}
       </span>
       <div className="min-w-0 flex-1">
-        <p className={`${sectionTableText} font-semibold`}>{title.series}</p>
-        <h3 className="mt-0.5 text-[35px] font-bold leading-[1.05]">{title.code}</h3>
-        {badge ? <p className={`mt-1 ${sectionTableText} font-bold`}>{badge}</p> : null}
-        <p className={`mt-1 ${sectionTableText}`}>{meta.years} <span className="px-1">•</span> {meta.engines}</p>
+        <p className={`${sectionTableText} font-semibold`} dangerouslySetInnerHTML={{ __html: title.series }} />
+        <h3 className="mt-0.5"><GenerationCode><span dangerouslySetInnerHTML={{ __html: title.code }} /></GenerationCode></h3>
+        {badge ? <p className="mt-1 text-[13px] font-bold leading-[1.35]" dangerouslySetInnerHTML={{ __html: badge }} /> : null}
+        <p className="mt-1 text-[12px] font-normal leading-[1.35] text-[var(--color-text-muted)]">
+          <span className="text-[13px] md:text-[15px]" dangerouslySetInnerHTML={{ __html: meta.years }} /> <span className="px-1">•</span> <span dangerouslySetInnerHTML={{ __html: meta.engines }} />
+        </p>
       </div>
       <div className="w-[112px] shrink-0">
         <GenerationImage code={title.code} />
@@ -263,12 +285,12 @@ function ComparisonTable({ rangeTable }) {
   const recommendation = cleanText(rows[4]?.model || "The 3 Series we recommend for daily ownership");
 
   return (
-    <div className="rounded-md border border-[var(--color-border)] bg-[var(--color-surface)] p-3 shadow-[0_8px_22px_var(--color-shadow)]">
+    <div className="rounded-md border border-[var(--color-border)] bg-[var(--color-surface-raised)] p-3 shadow-[0_8px_22px_var(--color-shadow)]">
       <div className="mb-3 flex items-center gap-3">
         <span className="flex h-7 w-7 items-center justify-center rounded-md bg-[var(--color-primary-soft)]">
           <TableIcon type="scale" />
         </span>
-        <h3 className={`${sectionTableText} font-bold text-[var(--color-text)] md:text-[18px]`}>{cleanText(rangeTable.title)}</h3>
+        <h3 className={`${sectionTableText} font-bold text-[var(--color-text)] md:text-[18px]`} dangerouslySetInnerHTML={{ __html: cleanText(rangeTable.title) }} />
       </div>
 
       <div className="overflow-x-auto">
@@ -293,16 +315,16 @@ function ComparisonTable({ rangeTable }) {
           <tbody>
             <tr>
               <th className="border border-[var(--color-border)] p-3 font-bold"><span className="flex items-center gap-2"><TableIcon type="fuel" />Core diesel</span></th>
-              <td className="border border-[var(--color-border)] p-3"><strong className="text-red-600">{diesel.pre.split(" ")[0]}</strong>{diesel.pre.replace(diesel.pre.split(" ")[0], "")}</td>
-              <td className="border border-[var(--color-border)] p-3"><strong className="text-red-600">{diesel.middle.split(" ")[0]}</strong>{diesel.middle.replace(diesel.middle.split(" ")[0], "")}</td>
-              <td className="border border-[var(--color-border)] p-3"><strong className="text-green-700">{diesel.post.split(" ")[0]}</strong>{diesel.post.replace(diesel.post.split(" ")[0], "")}</td>
-              <td rowSpan={2} className="border border-green-100 bg-green-50 p-3 text-[15px] font-bold leading-[1.35] text-green-700">{recommendation}</td>
+              <td className="border border-[var(--color-border)] p-3"><strong className="text-red-600" dangerouslySetInnerHTML={{ __html: diesel.pre.split(" ")[0] }} /><span dangerouslySetInnerHTML={{ __html: diesel.pre.replace(diesel.pre.split(" ")[0], "") }} /></td>
+              <td className="border border-[var(--color-border)] p-3"><strong className="text-red-600" dangerouslySetInnerHTML={{ __html: diesel.middle.split(" ")[0] }} /><span dangerouslySetInnerHTML={{ __html: diesel.middle.replace(diesel.middle.split(" ")[0], "") }} /></td>
+              <td className="border border-[var(--color-border)] p-3"><strong className="text-green-700" dangerouslySetInnerHTML={{ __html: diesel.post.split(" ")[0] }} /><span dangerouslySetInnerHTML={{ __html: diesel.post.replace(diesel.post.split(" ")[0], "") }} /></td>
+              <td rowSpan={2} className="border border-green-100 bg-green-50 p-3 text-[15px] font-bold leading-[1.35] text-green-700" dangerouslySetInnerHTML={{ __html: recommendation }} />
             </tr>
             <tr>
               <th className="border border-[var(--color-border)] p-3 font-bold"><span className="flex items-center gap-2"><TableIcon type="fuel" />Core petrol</span></th>
-              <td className="border border-[var(--color-border)] p-3">{petrol.pre}</td>
-              <td className="border border-[var(--color-border)] p-3">{petrol.middle}</td>
-              <td className="border border-[var(--color-border)] p-3"><strong className="text-green-700">{petrol.post.split(" ")[0]}</strong>{petrol.post.replace(petrol.post.split(" ")[0], "")}</td>
+              <td className="border border-[var(--color-border)] p-3" dangerouslySetInnerHTML={{ __html: petrol.pre }} />
+              <td className="border border-[var(--color-border)] p-3" dangerouslySetInnerHTML={{ __html: petrol.middle }} />
+              <td className="border border-[var(--color-border)] p-3"><strong className="text-green-700" dangerouslySetInnerHTML={{ __html: petrol.post.split(" ")[0] }} /><span dangerouslySetInnerHTML={{ __html: petrol.post.replace(petrol.post.split(" ")[0], "") }} /></td>
             </tr>
           </tbody>
         </table>
@@ -313,7 +335,7 @@ function ComparisonTable({ rangeTable }) {
 
 export default function GenerationsGrid({ data }) {
   const { theme } = useTheme();
-  const [openMobileIndex, setOpenMobileIndex] = useState(0);
+  const [openMobileIndex, setOpenMobileIndex] = useState(-1);
   const [desktopSlide, setDesktopSlide] = useState(0);
   if (!data) return null;
 
@@ -328,12 +350,12 @@ export default function GenerationsGrid({ data }) {
   return (
     <section data-theme-mode={theme} className="bg-[var(--color-page)] py-5 text-[var(--color-text)] md:py-6">
       <div>
-      <h2 className={`max-w-[640px] ${sectionH2} tracking-normal`}>
-          {title.main}
+      <h2 className="max-w-[640px] text-[29px] font-bold leading-[1.08] tracking-normal md:text-[45px]">
+          <span dangerouslySetInnerHTML={{ __html: title.main }} />
           {title.accent ? (
             <>
               <br />
-              <span className="text-[var(--color-primary)]">{title.accent}</span>
+              <span className="text-[var(--color-primary)]" dangerouslySetInnerHTML={{ __html: title.accent }} />
             </>
           ) : null}
         </h2>
@@ -341,9 +363,7 @@ export default function GenerationsGrid({ data }) {
           <MStripe />
         </div>
         {data.subHeadline ? (
-          <p className={`mt-3 max-w-[640px] ${sectionDescription} text-[var(--color-text-muted)]`}>
-            {cleanText(data.subHeadline)}
-          </p>
+          <p className={`mt-3 max-w-[640px] ${sectionDescription} text-[var(--color-text-muted)]`} dangerouslySetInnerHTML={{ __html: cleanText(data.subHeadline) }} />
         ) : null}
       </div>
 
@@ -360,7 +380,6 @@ export default function GenerationsGrid({ data }) {
                     key={card.title}
                     card={card}
                     index={slideIndex * 4 + cardIndex}
-                    featured
                   />
                 ))}
               </div>
@@ -419,7 +438,7 @@ export default function GenerationsGrid({ data }) {
           </span>
           <span>Read the full comparison:</span>
           <Link href={data.comparisonLink.href} className="font-bold text-[var(--color-primary)] transition-all duration-200 hover:text-black hover:shadow-[0_12px_24px_rgba(0,0,0,0.14)]">
-            {cleanText(data.comparisonLink.label).replace("Read the full comparison:", "").replace(/\s*\u2192\s*$/, "")}
+            <span dangerouslySetInnerHTML={{ __html: cleanText(data.comparisonLink.label).replace("Read the full comparison:", "").replace(/\s*\u2192\s*$/, "") }} />
           </Link>
           <ArrowIcon />
         </p>

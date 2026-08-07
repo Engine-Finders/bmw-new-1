@@ -66,9 +66,7 @@ function DesktopHeader({ data, isDark }) {
         <div className="mt-4">
           <MStripe />
         </div>
-        <p className={`mt-5 max-w-[520px] text-[0.96rem] leading-[1.55] ${isDark ? "text-white/78" : "text-[#172334]"}`}>
-          {data.subHeadline}
-        </p>
+        <p className={`mt-5 max-w-[520px] text-[0.96rem] leading-[1.55] ${isDark ? "text-white/78" : "text-[#172334]"}`} dangerouslySetInnerHTML={{ __html: data.subHeadline }} />
       </div>
       <HeaderImage data={data} isDark={isDark} />
     </div>
@@ -85,9 +83,7 @@ function MobileHeader({ data, isDark }) {
       <div className="mt-4">
         <MStripe />
       </div>
-      <p className={`mt-4 max-w-[380px] text-[0.94rem] leading-[1.5] sm:text-[0.98rem] ${isDark ? "text-white/78" : "text-[#172334]"}`}>
-        {data.subHeadline}
-      </p>
+      <p className={`mt-4 max-w-[380px] text-[0.94rem] leading-[1.5] sm:text-[0.98rem] ${isDark ? "text-white/78" : "text-[#172334]"}`} dangerouslySetInnerHTML={{ __html: data.subHeadline }} />
       <HeaderImage data={data} isDark={isDark} />
     </div>
   );
@@ -200,7 +196,7 @@ function KeyTakeaway({ text, isDark }) {
         </span>
         <p className={`text-[0.9rem] leading-[1.52] md:text-[1.02rem] ${isDark ? "text-white/84" : "text-[#172334]"}`}>
           <span className="mr-2 font-bold uppercase text-[var(--color-primary)]">Key Takeaway:</span>
-          {text}
+          <span dangerouslySetInnerHTML={{ __html: text }} />
         </p>
       </div>
     </div>

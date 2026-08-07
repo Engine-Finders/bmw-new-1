@@ -69,24 +69,23 @@ function MobileCard({ item, isDark }) {
       </div>
 
       <div className="flex min-w-0 flex-1 flex-col gap-1.5">
-        <p className={`text-[0.72rem] font-semibold leading-tight ${badgeClass.split(" ")[0]}`}>{item.slot}</p>
+        <p className={`text-[0.72rem] font-semibold leading-tight ${badgeClass.split(" ")[0]}`} dangerouslySetInnerHTML={{ __html: item.slot }} />
 
         <p className="flex flex-wrap items-baseline gap-x-1.5 text-[1rem] font-bold leading-tight text-[var(--color-text)]">
-          {item.engine}
+          <span dangerouslySetInnerHTML={{ __html: item.engine }} />
           {item.engineNote ? (
-            <span className="text-[0.72rem] font-normal text-[var(--color-text-muted)]">{item.engineNote}</span>
+            <span className="text-[0.72rem] font-normal text-[var(--color-text-muted)]" dangerouslySetInnerHTML={{ __html: item.engineNote }} />
           ) : null}
         </p>
 
-        <p className="text-[0.78rem] leading-[1.35] text-[var(--color-text-muted)]">&ldquo;{item.quote}&rdquo;</p>
+        <p className="text-[0.78rem] leading-[1.35] text-[var(--color-text-muted)]">&ldquo;<span dangerouslySetInnerHTML={{ __html: item.quote }} />&rdquo;</p>
 
         <p className="border-t border-[var(--color-border)] pt-2 text-[0.76rem] leading-[1.3] text-[var(--color-text)]">
-          <span className="font-semibold" style={{ color: style.color }}>Who it&apos;s for:</span> {item.whoItsFor}
+          <span className="font-semibold" style={{ color: style.color }}>Who it&apos;s for:</span>{" "}
+          <span dangerouslySetInnerHTML={{ __html: item.whoItsFor }} />
         </p>
         {item.modelWideNote ? (
-          <p className="rounded-md bg-[var(--color-page-soft)] p-1.5 text-[0.68rem] leading-[1.3] text-[var(--color-text-soft)]">
-            {item.modelWideNote}
-          </p>
+          <p className="rounded-md bg-[var(--color-page-soft)] p-1.5 text-[0.68rem] leading-[1.3] text-[var(--color-text-soft)]" dangerouslySetInnerHTML={{ __html: item.modelWideNote }} />
         ) : null}
       </div>
     </div>
@@ -103,13 +102,13 @@ function Card({ item, isDark }) {
         <span className={`flex h-7 w-7 shrink-0 items-center justify-center rounded-full ${badgeClass}`}>
           <GenIcon name={style.icon} className="h-3.5 w-3.5" />
         </span>
-        <p className={`flex-1 text-[0.76rem] font-semibold leading-tight ${badgeClass.split(" ")[0]}`}>{item.slot}</p>
+        <p className={`flex-1 text-[0.76rem] font-semibold leading-tight ${badgeClass.split(" ")[0]}`} dangerouslySetInnerHTML={{ __html: item.slot }} />
       </div>
 
       <p className="flex flex-wrap items-baseline gap-x-1.5 text-[1.05rem] font-bold leading-tight text-[var(--color-text)]">
-        {item.engine}
+        <span dangerouslySetInnerHTML={{ __html: item.engine }} />
         {item.engineNote ? (
-          <span className="text-[0.76rem] font-normal text-[var(--color-text-muted)]">{item.engineNote}</span>
+          <span className="text-[0.76rem] font-normal text-[var(--color-text-muted)]" dangerouslySetInnerHTML={{ __html: item.engineNote }} />
         ) : null}
       </p>
 
@@ -117,17 +116,15 @@ function Card({ item, isDark }) {
         <div className="relative -ml-3 h-36 w-24 shrink-0 overflow-hidden rounded-sm">
           <Image src="/e90/engine.png" alt={`${item.engine} engine`} fill className="object-contain" sizes="100px" />
         </div>
-        <p className="text-[0.8rem] leading-[1.35] text-[var(--color-text-muted)]">&ldquo;{item.quote}&rdquo;</p>
+        <p className="text-[0.8rem] leading-[1.35] text-[var(--color-text-muted)]">&ldquo;<span dangerouslySetInnerHTML={{ __html: item.quote }} />&rdquo;</p>
       </div>
 
       <div className="mt-auto">
         <p className="border-t border-[var(--color-border)] pt-2 text-[0.78rem] leading-[1.3] text-[var(--color-text)]">
-          <span className="font-semibold">Who it&apos;s for:</span> {item.whoItsFor}
+          <span className="font-semibold">Who it&apos;s for:</span> <span dangerouslySetInnerHTML={{ __html: item.whoItsFor }} />
         </p>
         {item.modelWideNote ? (
-          <p className="mt-1.5 rounded-md bg-[var(--color-page-soft)] p-1.5 text-[0.7rem] leading-[1.3] text-[var(--color-text-soft)]">
-            {item.modelWideNote}
-          </p>
+          <p className="mt-1.5 rounded-md bg-[var(--color-page-soft)] p-1.5 text-[0.7rem] leading-[1.3] text-[var(--color-text-soft)]" dangerouslySetInnerHTML={{ __html: item.modelWideNote }} />
         ) : null}
       </div>
     </div>
@@ -146,20 +143,20 @@ function OverlookedCard({ item, isDark }) {
             <GenIcon name={style.icon} className="h-5 w-5" />
           </span>
           <div>
-            <p className={`text-[0.82rem] font-semibold ${badgeClass.split(" ")[0]}`}>{item.slot}</p>
-            <p className="mt-1 text-[1.05rem] font-bold leading-tight text-[var(--color-text)]">{item.engine}</p>
-            {item.engineNote ? <p className="mt-0.5 text-[0.78rem] text-[var(--color-text-muted)]">{item.engineNote}</p> : null}
+            <p className={`text-[0.82rem] font-semibold ${badgeClass.split(" ")[0]}`} dangerouslySetInnerHTML={{ __html: item.slot }} />
+            <p className="mt-1 text-[1.05rem] font-bold leading-tight text-[var(--color-text)]" dangerouslySetInnerHTML={{ __html: item.engine }} />
+            {item.engineNote ? <p className="mt-0.5 text-[0.78rem] text-[var(--color-text-muted)]" dangerouslySetInnerHTML={{ __html: item.engineNote }} /> : null}
           </div>
         </div>
 
         <div className="p-5 md:pt-5">
-          <p className="text-[0.88rem] leading-[1.5] text-[var(--color-text-muted)]">&ldquo;{item.quote}&rdquo;</p>
+          <p className="text-[0.88rem] leading-[1.5] text-[var(--color-text-muted)]">&ldquo;<span dangerouslySetInnerHTML={{ __html: item.quote }} />&rdquo;</p>
         </div>
 
         <div className="p-5 md:flex md:items-center">
           <p className="text-[0.82rem] leading-[1.5] text-[var(--color-text)]">
             <span className="font-semibold text-[var(--color-primary)]">Who it&apos;s for: </span>
-            {item.whoItsFor}
+            <span dangerouslySetInnerHTML={{ __html: item.whoItsFor }} />
           </p>
         </div>
       </div>

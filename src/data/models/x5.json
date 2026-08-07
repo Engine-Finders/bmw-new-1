@@ -289,7 +289,7 @@
     }
   },
   "hero": {
-    "tagPill": "BMW X5 • 1999–Present • 4 Generations (E53, E70, F15, G05) • M54, M62, N52, N55, N62, N63, B58, B57, S63, S68",
+    "tagPill": "BMW X5 • 1999–Present • 4 Generations (E53, E70, F15, G05) • <a href='https://bmwengines.uk/engine/m50-m52-m54'>M54</a>, M62, <a href='https://bmwengines.uk/engine/n52-n53'>N52</a>, <a href='https://bmwengines.uk/engine/n54-n55'>N55</a>, <a href='https://bmwengines.uk/engine/n62-n63'>N62</a>, N63, B58, <a href='https://bmwengines.uk/engine/b57-b58'>B57</a>, <a href='https://bmwengines.uk/engine/s63-s65'>S63</a>, S68",
     "h1": "X5 Engines - The Complete UK Guide",
     "subHeadline": "Every BMW X5 engine across four generations - from the M54 straight-six and M62 V8 of the E53 to the B58 straight-six, B57 diesel and S68 V8 of the G05. Real UK replacement costs, known failure patterns, and honest ownership economics for BMW's original luxury SUV. Backed by real UK X5 engine enquiries in 2025 [BMW-VERIFIED].",
     "trustStrip": [
@@ -328,7 +328,7 @@
       },
       {
         "metric": "Reliability",
-        "ourCall": "★★★★☆ - the B58 and B57 are the modern gold standard; the M54 and M57 are robust classics; the N62 and early N63 V8s carry significant reliability caveats"
+        "ourCall": "★★★★☆ - the B58 and B57 are the modern gold standard; the M54 and <a href='https://bmwengines.uk/engine/m57'>M57</a> are robust classics; the N62 and early N63 V8s carry significant reliability caveats"
       },
       {
         "metric": "Most Reliable Engine",
@@ -418,40 +418,40 @@
         "verdict": "The original X5 - BMW's first SUV, based on the E39 5 Series platform. The M54 straight-six is one of BMW's most reliable engines; the M57 diesel is a bulletproof classic; the M62 V8 is robust but ageing. The N62 V8 (2004–2006) carries the valve stem seal caveat. Buy the M54 or M57 - the V8s are for the committed.",
         "cta": {
           "label": "Explore the E53 →",
-          "href": "#"
+          "href": "https://bmwengines.uk/x5/e53"
         }
       },
       {
         "title": "Second Generation - E70 (2007–2013)",
         "badge": "BMW X5 E70 🔥 Most Enquired - N62/N63 drives volume [BMW-VERIFIED]",
-        "meta": "2007–2013 • N52, N55, N62, N63, M57, N57 - L4 platform",
+        "meta": "2007–2013 • N52, N55, N62, N63, M57, <a href='https://bmwengines.uk/engine/n57'>N57</a> - L4 platform",
         "rating": "★★★☆☆",
         "verdict": "The second-generation X5 - bigger, more refined, and available with the N62 V8 and early N63 V8. The N62 4.8i suffers from valve stem seal failure (a £4,000+ repair); the N63 50i carries excessive oil consumption and timing chain issues. The M57 diesel and N52/N55 straight-sixes are the robust picks. Buy the six-cylinder or a diesel - the V8s are the trap.",
         "cta": {
           "label": "Explore the E70 →",
-          "href": "#"
+          "href": "https://bmwengines.uk/x5/e70"
         }
       },
       {
         "title": "Third Generation - F15 (2014–2018)",
         "badge": "BMW X5 F15 🔥 Most Enquired - N55/N63 drives volume [BMW-VERIFIED]",
-        "meta": "2014–2018 • N55, N63 (updated), N57, B47 (late) - F-platform",
+        "meta": "2014–2018 • N55, N63 (updated), N57, <a href='https://bmwengines.uk/engine/b37-b47'>B47</a> (late) - F-platform",
         "rating": "★★★★☆",
         "verdict": "The third-generation X5 - the N55 six-cylinder is robust; the updated N63 V8 is improved but still carries oil consumption caveats. The N57 diesel is proven; late models received the B47 diesel. The F15 is the X5 for buyers who want a modern SUV without the G05 price tag - buy the N55 or N57.",
         "cta": {
           "label": "Explore the F15 →",
-          "href": "#"
+          "href": "https://bmwengines.uk/x5/f15"
         }
       },
       {
         "title": "Fourth Generation - G05 (2019–present)",
         "badge": "BMW X5 G05 🔥 Most Enquired - B58/B57 drives volume [BMW-VERIFIED]",
-        "meta": "2019–present • B58, B57, B48, N63 (updated), S63, S68 - CLAR platform",
+        "meta": "2019–present • B58, B57, <a href='https://bmwengines.uk/engine/b38-b48'>B48</a>, N63 (updated), S63, S68 - CLAR platform",
         "rating": "★★★★★",
         "verdict": "The fourth-generation X5 - CLAR platform, B-family engines, and the most dependable X5 ever made. The B58 in the xDrive40i is widely regarded as one of BMW's most reliable modern engines. The B57 diesel delivers 295+ hp and 40+ mpg. The S68 V8 in the M60i and X5 M is the most powerful X5 ever - 617–625 hp with 48V mild-hybrid. This is the X5 generation to buy.",
         "cta": {
           "label": "Explore the G05 →",
-          "href": "#"
+          "href": "https://bmwengines.uk/x5/g05"
         }
       },
       {

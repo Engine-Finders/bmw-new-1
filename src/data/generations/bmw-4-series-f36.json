@@ -203,7 +203,7 @@
               "name": "Which BMW 4 Series F36 engine is the most reliable?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "The B58 3.0-litre straight-six (440i, 2016–2020) is the most reliable F36 engine -smooth, powerful, and with a reputation for bulletproof reliability that has made it one of BMW's most dependable modern engines. The B48 four-cylinder is also well-regarded for its reliability and efficiency."
+                "text": "The B58 3.0-litre straight-six (440i, 2016–2020) is the most reliable F36 engine -smooth, powerful, and with a reputation for bulletproof reliability that has made it one of BMW\u0027s most dependable modern engines. The B48 four-cylinder is also well-regarded for its reliability and efficiency."
               }
             },
             {
@@ -243,7 +243,7 @@
               "name": "Is it worth replacing a BMW 4 Series F36 engine, or should I scrap the car?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Depends on the car's value. Against a £12,000 F36, a £5,000 B58 recon is 42% -within our 70% BMW threshold. Against a well-kept £18,000+ example, the same recon is 22–28% -a routine repair decision. Against a sub-£8,000 high-mileage example, a major engine failure is borderline. On an M4, the calculus is different -the car's value justifies the S55's high replacement cost."
+                "text": "Depends on the car\u0027s value. Against a £12,000 F36, a £5,000 B58 recon is 42% -within our 70% BMW threshold. Against a well-kept £18,000+ example, the same recon is 22–28% -a routine repair decision. Against a sub-£8,000 high-mileage example, a major engine failure is borderline. On an M4, the calculus is different -the car\u0027s value justifies the S55\u0027s high replacement cost."
               }
             },
             {
@@ -251,7 +251,7 @@
               "name": "How long do BMW 4 Series F36 engines last?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "The B58 can exceed 150,000–200,000 miles with proper maintenance. The B48 is similarly durable. The N20 and N47's limiting factor is the timing chain -addressed proactively, either can reach high mileage. The S55 is robust but requires crank hub and rod bearing preventative work."
+                "text": "The B58 can exceed 150,000–200,000 miles with proper maintenance. The B48 is similarly durable. The N20 and N47\u0027s limiting factor is the timing chain -addressed proactively, either can reach high mileage. The S55 is robust but requires crank hub and rod bearing preventative work."
               }
             },
             {
@@ -267,7 +267,7 @@
               "name": "How do I find my BMW 4 Series F36 engine code?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Listed on the VIN plate and vehicle documentation; block stamping is visible on the engine itself. Tell us your variant (420i, 430i, 440i, M4, 420d, etc.) and approximate registration date and we'll identify it -20+ vetted specialists will confirm it for free."
+                "text": "Listed on the VIN plate and vehicle documentation; block stamping is visible on the engine itself. Tell us your variant (420i, 430i, 440i, M4, 420d, etc.) and approximate registration date and we\u0027ll identify it -20+ vetted specialists will confirm it for free."
               }
             }
           ]
@@ -324,7 +324,7 @@
   "hero": {
     "tagPill": "BMW 4 Series F36 • Gran Coupé • 2014–2020",
     "h1": "BMW 4 Series F36 Engines -The Complete UK Guide",
-    "subHeadline": "Every engine fitted to the F36 Gran Coupé -from the N47 diesel four to the B58 straight-six and the S55-powered M4. Real UK replacement costs, honest failure data, and the N47 timing chain risk that every Gran Coupé buyer must know.",
+    "subHeadline": "Every engine fitted to the F36 Gran Coupé -from the <a href='https://bmwengines.uk/engine/n47'>N47</a> diesel four to the <a href='https://bmwengines.uk/engine/b57-b58'>B58</a> straight-six and the <a href='https://bmwengines.uk/engine/s55'>S55</a>-powered M4. Real UK replacement costs, honest failure data, and the N47 timing chain risk that every Gran Coupé buyer must know.",
     "trustStrip": [
       {
         "icon": "📊",
@@ -351,7 +351,7 @@
   },
   "engineDatabase": {
     "h2": "BMW 4 Series F36 Engine Codes -The Complete Database",
-    "subHeadline": "Every engine fitted to the F36 Gran Coupé -from the four-cylinder petrol and diesel units to the six-cylinder N55, B58 and the S55 in the M4.",
+    "subHeadline": "Every engine fitted to the F36 Gran Coupé -from the four-cylinder petrol and diesel units to the six-cylinder <a href='https://bmwengines.uk/engine/n54-n55'>N55</a>, B58 and the S55 in the M4.",
     "columns": [
       "Engine Code",
       "Family",
@@ -367,7 +367,7 @@
         "fuel": "2025 Enquiries",
         "displacement": "Avg. Recon Cost",
         "power": "B38A15M0",
-        "years": "B38",
+        "years": "<a href='https://bmwengines.uk/engine/b38-b48'>B38</a>",
         "variants": "",
         "reliability": "",
         "enquiries": "",
@@ -389,7 +389,7 @@
         "engineCode": "-(pattern data)",
         "family": "£2,000–£3,500 [PLACEHOLDER -confirm vs cost sheet]",
         "fuel": "N20B20",
-        "displacement": "N20",
+        "displacement": "<a href='https://bmwengines.uk/engine/n13-n20'>N20</a>",
         "power": "Petrol, turbo",
         "years": "2.0L (1997cc)",
         "variants": "",
@@ -509,7 +509,7 @@
         "engineCode": "-(pattern data)",
         "family": "£2,500–£4,500 [PLACEHOLDER -confirm vs cost sheet]",
         "fuel": "B47D20",
-        "displacement": "B47",
+        "displacement": "<a href='https://bmwengines.uk/engine/b37-b47'>B47</a>",
         "power": "Diesel, turbo",
         "years": "2.0L (1995cc)",
         "variants": "",
@@ -531,7 +531,7 @@
       },
       {
         "engineCode": "N57D30",
-        "family": "N57",
+        "family": "<a href='https://bmwengines.uk/engine/n57'>N57</a>",
         "fuel": "Diesel, turbo",
         "displacement": "3.0L (2993cc)",
         "power": "255–308 bhp",
@@ -550,7 +550,7 @@
   },
   "overview": {
     "h2": "BMW 4 Series F36 -Overview",
-    "intro": "The F36 is the Gran Coupé (five-door liftback) variant of BMW's first-generation 4 Series, unveiled at the 2014 Geneva Motor Show and produced from July 2014 to 2020. Built on the same platform as the F32 coupé and F33 convertible, the F36 offers coupé styling with the practicality of a five-door liftback, featuring a fastback rear and a C-pillar located behind the rear doors. The Gran Coupé shares its engine range with the rest of the F3x family, including four-cylinder and six-cylinder turbocharged petrol and diesel units.",
+    "intro": "The F36 is the Gran Coupé (five-door liftback) variant of BMW\u0027s first-generation 4 Series, unveiled at the 2014 Geneva Motor Show and produced from July 2014 to 2020. Built on the same platform as the F32 coupé and F33 convertible, the F36 offers coupé styling with the practicality of a five-door liftback, featuring a fastback rear and a C-pillar located behind the rear doors. The Gran Coupé shares its engine range with the rest of the F3x family, including four-cylinder and six-cylinder turbocharged petrol and diesel units.",
     "keyFacts": "Platform: BMW L7 (shared with F30, F32, F33) • Predecessor: None -first 4 Series Gran Coupé • Successor: BMW 4 Series G26 Gran Coupé • Sibling body styles in this generation: F32 (coupé), F33 (convertible)",
     "marketIntelligenceLine": "As a lower-volume Gran Coupé variant, the F36 is a niche enthusiast vehicle -the 440i with the B58 remains the most sought-after, while the 420d is the most practical daily driver."
   },
@@ -559,7 +559,7 @@
       {
         "slot": "Thin-Data Summary",
         "engine": "",
-        "quote": "The F36's engine range spans three distinct eras. The B58 3.0-litre straight-six (440i, 2016–2020) is the standout -322 bhp, 450 Nm of torque, and a reputation for bulletproof reliability that has made it one of BMW's most dependable modern engines. The N55 3.0-litre six (435i, 2014–2016) is also a strong performer but lacks the B58's refinement and efficiency. The B48 2.0-litre four-cylinder (420i, 430i, 2016–2020) is the volume choice -responsive, efficient, and well-proven. The N20 2.0-litre four-cylinder (420i, 428i, 2014–2016) has a known timing chain guide issue that can be catastrophic. The N47 2.0-litre diesel (418d, 420d, 425d, 2014–2016) carries the rear-mounted timing chain risk that defines this era -the later B47 (2015–2020) is a significant improvement. The S55 in the M4 is a high-performance twin-turbo six with 425–493 bhp, but it demands meticulous maintenance and has known crank hub and rod bearing concerns. If you're buying an F36, the B58 is the emotional choice; the B48 is the sensible one; the B47 is for high-mileage drivers; the N20 and N47 require documented history.",
+        "quote": "The F36\u0027s engine range spans three distinct eras. The B58 3.0-litre straight-six (440i, 2016–2020) is the standout -322 bhp, 450 Nm of torque, and a reputation for bulletproof reliability that has made it one of BMW\u0027s most dependable modern engines. The N55 3.0-litre six (435i, 2014–2016) is also a strong performer but lacks the B58\u0027s refinement and efficiency. The B48 2.0-litre four-cylinder (420i, 430i, 2016–2020) is the volume choice -responsive, efficient, and well-proven. The N20 2.0-litre four-cylinder (420i, 428i, 2014–2016) has a known timing chain guide issue that can be catastrophic. The N47 2.0-litre diesel (418d, 420d, 425d, 2014–2016) carries the rear-mounted timing chain risk that defines this era -the later B47 (2015–2020) is a significant improvement. The S55 in the M4 is a high-performance twin-turbo six with 425–493 bhp, but it demands meticulous maintenance and has known crank hub and rod bearing concerns. If you\u0027re buying an F36, the B58 is the emotional choice; the B48 is the sensible one; the B47 is for high-mileage drivers; the N20 and N47 require documented history.",
         "whoItsFor": ""
       }
     ]
@@ -650,7 +650,7 @@
     ],
     "economicsRule": {
       "title": "The F36 rule",
-      "text": "A £4,000–£7,000 B58 recon against a £12,000 F36 sits at 33–58% of the car's value -within our 70% BMW threshold. Against a well-kept £18,000+ example, the same recon drops to 22–39% -a routine repair decision. Against a sub-£8,000 high-mileage example, a major engine failure is borderline. Value the car first."
+      "text": "A £4,000–£7,000 B58 recon against a £12,000 F36 sits at 33–58% of the car\u0027s value -within our 70% BMW threshold. Against a well-kept £18,000+ example, the same recon drops to 22–39% -a routine repair decision. Against a sub-£8,000 high-mileage example, a major engine failure is borderline. Value the car first."
     },
     "keyTakeaways": [
       {
@@ -663,7 +663,7 @@
       },
       {
         "question": "Which F36 Is Best Value?",
-        "answer": "B58 440i -bulletproof six-cylinder performance without the M4's running costs."
+        "answer": "B58 440i -bulletproof six-cylinder performance without the M4\u0027s running costs."
       }
     ]
   },
@@ -674,7 +674,7 @@
         "title": "N20 Timing Chain Guide Failure",
         "affectedModels": "F36 420i, 428i (2014–2016, N20 engine).",
         "typicalFailureMileage": "40,000–80,000 miles.",
-        "rootCause": "The N20's timing chain guides are made of a plastic material that can become brittle and fail over time. When the guides break, the timing chain can slip or snap, causing catastrophic engine damage. A whining noise from the engine, particularly on cold start, is the classic early warning.",
+        "rootCause": "The N20\u0027s timing chain guides are made of a plastic material that can become brittle and fail over time. When the guides break, the timing chain can slip or snap, causing catastrophic engine damage. A whining noise from the engine, particularly on cold start, is the classic early warning.",
         "tieredCosts": [],
         "recommendation": "At the first sign of a whining noise from the engine on an N20-powered F36, get the timing chain inspected immediately. An £800–£1,800 preventative repair is dramatically cheaper than the £2,200–£4,000 replacement that follows if ignored. Avoid pre-2015 N20 cars without documented chain history.",
         "cta": {
@@ -687,7 +687,7 @@
         "title": "N47 Diesel Timing Chain Stretch",
         "affectedModels": "F36 418d, 420d, 425d (2014–2016, N47 engine).",
         "typicalFailureMileage": "60,000–120,000 miles.",
-        "rootCause": "The N47's timing chain is mounted at the rear of the engine, making it a major labour-intensive job to replace. The chain, guides, and tensioners can wear prematurely, causing chain stretch. If the chain stretches too far, it can \"jump\" a tooth or snap, causing pistons to strike open valves. Cold-start rattle for 1–2 seconds is the classic early warning.",
+        "rootCause": "The N47\u0027s timing chain is mounted at the rear of the engine, making it a major labour-intensive job to replace. The chain, guides, and tensioners can wear prematurely, causing chain stretch. If the chain stretches too far, it can \"jump\" a tooth or snap, causing pistons to strike open valves. Cold-start rattle for 1–2 seconds is the classic early warning.",
         "tieredCosts": [],
         "recommendation": "At the first sign of cold-start rattle on an N47 diesel F36, get the timing chain inspected immediately. A £1,000–£1,800 preventative repair is dramatically cheaper than the £2,500–£4,500 replacement that follows if ignored. Consider the B47-equipped cars (2015–2020) which have an improved chain design.",
         "cta": {
@@ -697,10 +697,10 @@
       },
       {
         "id": 3,
-        "title": "B58 PCV Valve & Cooling System",
+        "title": "B58 PCV Valve \u0026 Cooling System",
         "affectedModels": "F36 440i (2016–2020, B58 engine).",
         "typicalFailureMileage": "40,000–80,000 miles.",
-        "rootCause": "The B58's Positive Crankcase Ventilation (PCV) valve can fail, causing increased oil consumption, rough idle, and check engine lights. The electric water pump also has a finite service life and can fail without warning, leading to overheating. The cooling system uses plastic components that can become brittle with age.",
+        "rootCause": "The B58\u0027s Positive Crankcase Ventilation (PCV) valve can fail, causing increased oil consumption, rough idle, and check engine lights. The electric water pump also has a finite service life and can fail without warning, leading to overheating. The cooling system uses plastic components that can become brittle with age.",
         "tieredCosts": [],
         "recommendation": "Replace the water pump proactively at 60,000–80,000 miles on any B58-powered F36. A £400–£800 preventative job is far cheaper than a £4,000+ engine replacement. Monitor oil consumption and investigate any increase immediately.",
         "cta": {
@@ -710,10 +710,10 @@
       },
       {
         "id": 4,
-        "title": "S55 Crank Hub & Rod Bearings (M4)",
+        "title": "S55 Crank Hub \u0026 Rod Bearings (M4)",
         "affectedModels": "F36 M4 (2014–2020, S55 engine).",
         "typicalFailureMileage": "30,000–60,000 miles.",
-        "rootCause": "The S55's crank hub can spin on the crankshaft, causing timing to slip and potentially catastrophic engine damage. The rod bearings can also wear prematurely, particularly on cars that have been tracked or driven hard. Both issues are well-documented in the M community.",
+        "rootCause": "The S55\u0027s crank hub can spin on the crankshaft, causing timing to slip and potentially catastrophic engine damage. The rod bearings can also wear prematurely, particularly on cars that have been tracked or driven hard. Both issues are well-documented in the M community.",
         "tieredCosts": [],
         "recommendation": "If you own an M4, budget for a crank hub fix and rod bearing replacement as preventative maintenance. A £1,500–£3,000 investment is far cheaper than the £8,000–£14,000 engine replacement that follows a failure. Use the correct oil and warm the engine properly before hard driving.",
         "cta": {
@@ -811,23 +811,68 @@
   },
   "coreVariants": {
     "dieselVariants": [
-      "418d",
-      "420d",
-      "425d",
-      "430d",
-      "435d"
+      {
+        "name": "418d",
+        "url": "https://bmwengines.uk/4-series/418d"
+      },
+      {
+        "name": "420d",
+        "url": "https://bmwengines.uk/4-series/420d"
+      },
+      {
+        "name": "425d",
+        "url": "https://bmwengines.uk/4-series/425d"
+      },
+      {
+        "name": "430d",
+        "url": "https://bmwengines.uk/4-series/430d"
+      },
+      {
+        "name": "435d",
+        "url": "https://bmwengines.uk/4-series/435d"
+      }
     ],
     "petrolVariants": [
-      "418i",
-      "420i",
-      "428i",
-      "430i",
-      "435i",
-      "440i",
-      "M4",
-      "M4 Competition",
-      "M4 CS",
-      "M4 GTS"
+      {
+        "name": "418i",
+        "url": "https://bmwengines.uk/4-series/418i"
+      },
+      {
+        "name": "420i",
+        "url": "https://bmwengines.uk/4-series/420i"
+      },
+      {
+        "name": "428i",
+        "url": "https://bmwengines.uk/4-series/428i"
+      },
+      {
+        "name": "430i",
+        "url": "https://bmwengines.uk/4-series/430i"
+      },
+      {
+        "name": "435i",
+        "url": "https://bmwengines.uk/4-series/435i"
+      },
+      {
+        "name": "440i",
+        "url": "https://bmwengines.uk/4-series/440i"
+      },
+      {
+        "name": "M4",
+        "url": "#"
+      },
+      {
+        "name": "M4 Competition",
+        "url": "#"
+      },
+      {
+        "name": "M4 CS",
+        "url": "#"
+      },
+      {
+        "name": "M4 GTS",
+        "url": "#"
+      }
     ],
     "scopeNote": "All variants listed are F36-generation 4 Series Gran Coupé only (2014–2020). The M4 uses the S55 engine and is included for completeness."
   },
@@ -848,7 +893,7 @@
       {
         "id": 2,
         "question": "Which BMW 4 Series F36 engine is the most reliable?",
-        "answer": "The B58 3.0-litre straight-six (440i, 2016–2020) is the most reliable F36 engine -smooth, powerful, and with a reputation for bulletproof reliability that has made it one of BMW's most dependable modern engines. The B48 four-cylinder is also well-regarded for its reliability and efficiency."
+        "answer": "The B58 3.0-litre straight-six (440i, 2016–2020) is the most reliable F36 engine -smooth, powerful, and with a reputation for bulletproof reliability that has made it one of BMW\u0027s most dependable modern engines. The B48 four-cylinder is also well-regarded for its reliability and efficiency."
       },
       {
         "id": 3,
@@ -873,12 +918,12 @@
       {
         "id": 7,
         "question": "Is it worth replacing a BMW 4 Series F36 engine, or should I scrap the car?",
-        "answer": "Depends on the car's value. Against a £12,000 F36, a £5,000 B58 recon is 42% -within our 70% BMW threshold. Against a well-kept £18,000+ example, the same recon is 22–28% -a routine repair decision. Against a sub-£8,000 high-mileage example, a major engine failure is borderline. On an M4, the calculus is different -the car's value justifies the S55's high replacement cost."
+        "answer": "Depends on the car\u0027s value. Against a £12,000 F36, a £5,000 B58 recon is 42% -within our 70% BMW threshold. Against a well-kept £18,000+ example, the same recon is 22–28% -a routine repair decision. Against a sub-£8,000 high-mileage example, a major engine failure is borderline. On an M4, the calculus is different -the car\u0027s value justifies the S55\u0027s high replacement cost."
       },
       {
         "id": 8,
         "question": "How long do BMW 4 Series F36 engines last?",
-        "answer": "The B58 can exceed 150,000–200,000 miles with proper maintenance. The B48 is similarly durable. The N20 and N47's limiting factor is the timing chain -addressed proactively, either can reach high mileage. The S55 is robust but requires crank hub and rod bearing preventative work."
+        "answer": "The B58 can exceed 150,000–200,000 miles with proper maintenance. The B48 is similarly durable. The N20 and N47\u0027s limiting factor is the timing chain -addressed proactively, either can reach high mileage. The S55 is robust but requires crank hub and rod bearing preventative work."
       },
       {
         "id": 9,
@@ -888,7 +933,7 @@
       {
         "id": 10,
         "question": "How do I find my BMW 4 Series F36 engine code?",
-        "answer": "Listed on the VIN plate and vehicle documentation; block stamping is visible on the engine itself. Tell us your variant (420i, 430i, 440i, M4, 420d, etc.) and approximate registration date and we'll identify it -20+ vetted specialists will confirm it for free."
+        "answer": "Listed on the VIN plate and vehicle documentation; block stamping is visible on the engine itself. Tell us your variant (420i, 430i, 440i, M4, 420d, etc.) and approximate registration date and we\u0027ll identify it -20+ vetted specialists will confirm it for free."
       }
     ]
   },
@@ -901,11 +946,11 @@
       },
       {
         "title": "Compare F36 Engine Replacement Companies",
-        "text": "see prices, warranty terms and supply & fit options side-by-side before you commit."
+        "text": "see prices, warranty terms and supply \u0026 fit options side-by-side before you commit."
       },
       {
         "title": "UK Engine Replacement Services for F36",
-        "text": "covering every variant from 418i to M4 GTS, with supply-only or full supply & fit available nationwide."
+        "text": "covering every variant from 418i to M4 GTS, with supply-only or full supply \u0026 fit available nationwide."
       }
     ],
     "finalCta": "Find the best BMW 4 Series F36 engine replacement UK drivers rely on. Compare real prices from trusted specialists on EnginesMarket today and get back on the road with confidence.",

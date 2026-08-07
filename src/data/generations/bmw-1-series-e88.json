@@ -197,7 +197,7 @@
               "name": "Which BMW 1 Series E88 engine should I avoid?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "The N54 twin-turbo without documented HPFP and injector history -it's a high-performance engine with high-performance maintenance costs. A pre-2010 N47 diesel without timing chain replacement history is also a risky purchase. No engine is inherently bad, but history is everything."
+                "text": "The N54 twin-turbo without documented HPFP and injector history -it\u0027s a high-performance engine with high-performance maintenance costs. A pre-2010 N47 diesel without timing chain replacement history is also a risky purchase. No engine is inherently bad, but history is everything."
               }
             },
             {
@@ -213,7 +213,7 @@
               "name": "Is it worth replacing a BMW 1 Series E88 engine, or should I scrap the car?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Depends on the car's value. Against a well-kept £8,000 E88, a £4,000 N47 recon is 50% of the car's value -safe. Against a tired £4,000 example, the same recon is 100% -walk away. Our 70% BMW threshold is the line. On a well-kept example, replacement makes sense; on a cheap one, it doesn't."
+                "text": "Depends on the car\u0027s value. Against a well-kept £8,000 E88, a £4,000 N47 recon is 50% of the car\u0027s value -safe. Against a tired £4,000 example, the same recon is 100% -walk away. Our 70% BMW threshold is the line. On a well-kept example, replacement makes sense; on a cheap one, it doesn\u0027t."
               }
             },
             {
@@ -221,7 +221,7 @@
               "name": "How long do BMW 1 Series E88 engines last?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "The N52 six-cylinder can exceed 200,000 miles with proper maintenance. The N47 diesel's limiting factor is the timing chain -addressed proactively, it can also reach high mileage. The N54 and N55 turbos are durable but require meticulous maintenance, particularly for the HPFP and injectors."
+                "text": "The N52 six-cylinder can exceed 200,000 miles with proper maintenance. The N47 diesel\u0027s limiting factor is the timing chain -addressed proactively, it can also reach high mileage. The N54 and N55 turbos are durable but require meticulous maintenance, particularly for the HPFP and injectors."
               }
             },
             {
@@ -237,7 +237,7 @@
               "name": "How do I find my BMW 1 Series E88 engine code?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Listed on the VIN plate and vehicle documentation; block stamping is visible from below on N47/N52/N54/N55 units. Tell us your variant (118i, 120d, 135i, etc.) and approximate registration date and we'll identify it -20+ vetted specialists will confirm it for free."
+                "text": "Listed on the VIN plate and vehicle documentation; block stamping is visible from below on N47/N52/N54/N55 units. Tell us your variant (118i, 120d, 135i, etc.) and approximate registration date and we\u0027ll identify it -20+ vetted specialists will confirm it for free."
               }
             }
           ]
@@ -271,7 +271,7 @@
         {
           "@type": "Dataset",
           "name": "BMW 1 Series E88 UK Engine Enquiry Data 2025",
-          "description": "Proprietary UK enquiry volumes and demand trends for BMW 1 Series E88 engines, sourced from bmwengines.uk's specialist marketplace activity.",
+          "description": "Proprietary UK enquiry volumes and demand trends for BMW 1 Series E88 engines, sourced from bmwengines.uk\u0027s specialist marketplace activity.",
           "creator": {
             "@type": "Organization",
             "name": "bmwengines.uk"
@@ -305,7 +305,7 @@
   "hero": {
     "tagPill": "BMW 1 Series E88 • Convertible • 2007–2013",
     "h1": "BMW 1 Series E88 Engines -The Complete UK Guide",
-    "subHeadline": "Every engine fitted to the E88 convertible -from the N47 four-cylinder diesel to the N54 twin-turbo six. Real UK replacement costs, honest failure data, and the N47 timing chain risk that defines this generation.",
+    "subHeadline": "Every engine fitted to the E88 convertible -from the <a href='https://bmwengines.uk/engine/n47'>N47</a> four-cylinder diesel to the <a href='https://bmwengines.uk/engine/n54-n55'>N54</a> twin-turbo six. Real UK replacement costs, honest failure data, and the N47 timing chain risk that defines this generation.",
     "trustStrip": [
       {
         "icon": "📊",
@@ -332,7 +332,7 @@
   },
   "engineDatabase": {
     "h2": "BMW 1 Series E88 Engine Codes -The Complete Database",
-    "subHeadline": "Every engine fitted to the E88 convertible -from the N43 four-cylinder petrol to the N54 twin-turbo six and the N47 turbodiesel.",
+    "subHeadline": "Every engine fitted to the E88 convertible -from the <a href='https://bmwengines.uk/engine/n40-n42-n43-n45-n46'>N43</a> four-cylinder petrol to the N54 twin-turbo six and the N47 turbodiesel.",
     "columns": [
       "Engine Code",
       "Family",
@@ -430,7 +430,7 @@
         "engineCode": "-(pattern data)",
         "family": "£2,000–£3,800 [PLACEHOLDER -confirm vs cost sheet]",
         "fuel": "N52B30",
-        "displacement": "N52",
+        "displacement": "<a href='https://bmwengines.uk/engine/n52-n53'>N52</a>",
         "power": "Petrol",
         "years": "3.0L (2996cc)",
         "variants": "",
@@ -490,7 +490,7 @@
         "engineCode": "-(pattern data)",
         "family": "£3,800–£6,000 [PLACEHOLDER -confirm vs cost sheet]",
         "fuel": "M47D20",
-        "displacement": "M47",
+        "displacement": "<a href='https://bmwengines.uk/engine/m47'>M47</a>",
         "power": "Diesel, turbo",
         "years": "2.0L (1995cc)",
         "variants": "",
@@ -555,7 +555,7 @@
   },
   "overview": {
     "h2": "BMW 1 Series E88 -Overview",
-    "intro": "The E88 is the convertible variant of BMW's first-generation 1 Series, launched in 2007 as the E82 coupé's drop-top sibling. Built alongside the E81/E82/E87, the E88 shares the same rear-wheel-drive platform, 50:50 weight balance, and engine range -including the N47 diesel and the turbocharged N54/N55 six-cylinder. Production ran until 2013.",
+    "intro": "The E88 is the convertible variant of BMW\u0027s first-generation 1 Series, launched in 2007 as the E82 coupé\u0027s drop-top sibling. Built alongside the E81/E82/E87, the E88 shares the same rear-wheel-drive platform, 50:50 weight balance, and engine range -including the N47 diesel and the turbocharged N54/N55 six-cylinder. Production ran until 2013.",
     "keyFacts": "Platform: BMW E8x (shared with E81, E82, E87) • Predecessor: None -first 1 Series convertible • Successor: BMW 2 Series Convertible (F23) • Sibling body styles in this generation: E81 (3-door hatch), E82 (coupé), E87 (5-door hatch)",
     "marketIntelligenceLine": "As a lower-volume convertible variant, the E88 is a niche enthusiast vehicle -the 135i remains the most sought-after, while the 120d is the most practical daily driver."
   },
@@ -564,7 +564,7 @@
       {
         "slot": "Thin-Data Summary",
         "engine": "",
-        "quote": "The E88's engine range spans three distinct characters. The N52 3.0-litre naturally aspirated six is the most dependable petrol option -smooth, linear power, and none of the turbo-related complexity that defines the N54. The N55 3.0-litre single-turbo (2010–2013) is a significant improvement over the earlier N54, with fewer HPFP failures and more reliable wastegate design. The N47 2.0-litre diesel is the most economical choice but carries this generation's defining risk: the rear-mounted timing chain can stretch and fail catastrophically. If you're buying an E88, the N52 six is the sensible choice; the N55 is the performance sweet spot; the N47 requires documented chain history.",
+        "quote": "The E88\u0027s engine range spans three distinct characters. The N52 3.0-litre naturally aspirated six is the most dependable petrol option -smooth, linear power, and none of the turbo-related complexity that defines the N54. The N55 3.0-litre single-turbo (2010–2013) is a significant improvement over the earlier N54, with fewer HPFP failures and more reliable wastegate design. The N47 2.0-litre diesel is the most economical choice but carries this generation\u0027s defining risk: the rear-mounted timing chain can stretch and fail catastrophically. If you\u0027re buying an E88, the N52 six is the sensible choice; the N55 is the performance sweet spot; the N47 requires documented chain history.",
         "whoItsFor": ""
       }
     ]
@@ -610,7 +610,7 @@
         "commonMajorFailure": "HPFP (less common), water pump",
         "repairCostSpecialist": "£800–£2,000",
         "replacementCostRecon": "£3,800–£6,000",
-        "ownershipVerdict": "Best Turbo -N54's successor, more reliable"
+        "ownershipVerdict": "Best Turbo -N54\u0027s successor, more reliable"
       },
       {
         "engine": "M47/N47 2.0 Diesel",
@@ -623,7 +623,7 @@
     ],
     "economicsRule": {
       "title": "The E88 rule",
-      "text": "A £2,500–£5,000 N47 recon against a £5,000 E88 sits at 50–100% of the car's value -right at our 70% BMW threshold. Against a well-kept £8,000+ example, the same recon drops to 31–63% -a repair decision, not a financial one. Against a sub-£4,000 E88, a major engine failure is a write-off. Value the car first."
+      "text": "A £2,500–£5,000 N47 recon against a £5,000 E88 sits at 50–100% of the car\u0027s value -right at our 70% BMW threshold. Against a well-kept £8,000+ example, the same recon drops to 31–63% -a repair decision, not a financial one. Against a sub-£4,000 E88, a major engine failure is a write-off. Value the car first."
     },
     "keyTakeaways": [
       {
@@ -647,7 +647,7 @@
         "title": "N47 Diesel Timing Chain Stretch",
         "affectedModels": "E88 118d, 120d, 123d (2007–2013).",
         "typicalFailureMileage": "60,000–120,000 miles.",
-        "rootCause": "The N47's timing chain is mounted at the rear of the engine, making it a major labour-intensive job to replace. The chain, guides, and tensioners can wear prematurely, causing chain stretch. If the chain stretches too far, it can \"jump\" a tooth or snap, causing pistons to strike open valves. Cold-start rattle for 1–2 seconds is the classic early warning.",
+        "rootCause": "The N47\u0027s timing chain is mounted at the rear of the engine, making it a major labour-intensive job to replace. The chain, guides, and tensioners can wear prematurely, causing chain stretch. If the chain stretches too far, it can \"jump\" a tooth or snap, causing pistons to strike open valves. Cold-start rattle for 1–2 seconds is the classic early warning.",
         "tieredCosts": [],
         "recommendation": "At the first sign of cold-start rattle on an N47 diesel E88, get the timing chain inspected immediately. A £1,000–£1,800 preventative repair is dramatically cheaper than the £2,500–£5,000 replacement that follows if ignored. On an E88 worth under £5,000, this decision alone determines whether the car stays economically viable.",
         "cta": {
@@ -657,7 +657,7 @@
       },
       {
         "id": 2,
-        "title": "N54 HPFP & Injector Failure",
+        "title": "N54 HPFP \u0026 Injector Failure",
         "affectedModels": "E88 135i (2007–2010).",
         "typicalFailureMileage": "30,000–80,000 miles.",
         "rootCause": "The high-pressure fuel pump on the N54 is a known weak point -internal wear leads to fuel pressure loss, hard starting, and eventual engine damage. Injector issues frequently follow, with the injectors failing to seal properly and causing fuel to wash the cylinder walls.",
@@ -670,10 +670,10 @@
       },
       {
         "id": 3,
-        "title": "N52 Water Pump & VANOS Solenoids",
+        "title": "N52 Water Pump \u0026 VANOS Solenoids",
         "affectedModels": "E88 125i, 128i, 130i (2008–2013).",
         "typicalFailureMileage": "80,000–120,000 miles.",
-        "rootCause": "The N52's electric water pump has a finite service life and can fail without warning, leading to overheating. The VANOS solenoids can also become clogged or fail, causing rough idle, reduced power, and check engine lights.",
+        "rootCause": "The N52\u0027s electric water pump has a finite service life and can fail without warning, leading to overheating. The VANOS solenoids can also become clogged or fail, causing rough idle, reduced power, and check engine lights.",
         "tieredCosts": [],
         "recommendation": "Replace the water pump proactively at 80,000 miles on any N52-powered E88. A £400–£800 preventative job is far cheaper than a £2,500+ engine replacement. Clean the VANOS solenoids at the same time.",
         "cta": {
@@ -755,19 +755,52 @@
   },
   "coreVariants": {
     "dieselVariants": [
-      "116d",
-      "118d",
-      "120d",
-      "123d"
+      {
+        "name": "116d",
+        "url": "https://bmwengines.uk/1-series/116d"
+      },
+      {
+        "name": "118d",
+        "url": "https://bmwengines.uk/1-series/118d"
+      },
+      {
+        "name": "120d",
+        "url": "https://bmwengines.uk/1-series/120d"
+      },
+      {
+        "name": "123d",
+        "url": "https://bmwengines.uk/1-series/123d"
+      }
     ],
     "petrolVariants": [
-      "116i",
-      "118i",
-      "120i",
-      "125i",
-      "128i",
-      "130i",
-      "135i"
+      {
+        "name": "116i",
+        "url": "https://bmwengines.uk/1-series/116i"
+      },
+      {
+        "name": "118i",
+        "url": "https://bmwengines.uk/1-series/118i"
+      },
+      {
+        "name": "120i",
+        "url": "https://bmwengines.uk/1-series/120i"
+      },
+      {
+        "name": "125i",
+        "url": "https://bmwengines.uk/1-series/125i"
+      },
+      {
+        "name": "128i",
+        "url": "#"
+      },
+      {
+        "name": "130i",
+        "url": "https://bmwengines.uk/1-series/130i"
+      },
+      {
+        "name": "135i",
+        "url": "https://bmwengines.uk/1-series/135i"
+      }
     ],
     "scopeNote": "All variants listed are E88-generation 1 Series Convertible only (2007–2013). The 1 Series M Coupé (E82) was coupé-only and not available as a convertible."
   },
@@ -803,7 +836,7 @@
       {
         "id": 5,
         "question": "Which BMW 1 Series E88 engine should I avoid?",
-        "answer": "The N54 twin-turbo without documented HPFP and injector history -it's a high-performance engine with high-performance maintenance costs. A pre-2010 N47 diesel without timing chain replacement history is also a risky purchase. No engine is inherently bad, but history is everything."
+        "answer": "The N54 twin-turbo without documented HPFP and injector history -it\u0027s a high-performance engine with high-performance maintenance costs. A pre-2010 N47 diesel without timing chain replacement history is also a risky purchase. No engine is inherently bad, but history is everything."
       },
       {
         "id": 6,
@@ -813,12 +846,12 @@
       {
         "id": 7,
         "question": "Is it worth replacing a BMW 1 Series E88 engine, or should I scrap the car?",
-        "answer": "Depends on the car's value. Against a well-kept £8,000 E88, a £4,000 N47 recon is 50% of the car's value -safe. Against a tired £4,000 example, the same recon is 100% -walk away. Our 70% BMW threshold is the line. On a well-kept example, replacement makes sense; on a cheap one, it doesn't."
+        "answer": "Depends on the car\u0027s value. Against a well-kept £8,000 E88, a £4,000 N47 recon is 50% of the car\u0027s value -safe. Against a tired £4,000 example, the same recon is 100% -walk away. Our 70% BMW threshold is the line. On a well-kept example, replacement makes sense; on a cheap one, it doesn\u0027t."
       },
       {
         "id": 8,
         "question": "How long do BMW 1 Series E88 engines last?",
-        "answer": "The N52 six-cylinder can exceed 200,000 miles with proper maintenance. The N47 diesel's limiting factor is the timing chain -addressed proactively, it can also reach high mileage. The N54 and N55 turbos are durable but require meticulous maintenance, particularly for the HPFP and injectors."
+        "answer": "The N52 six-cylinder can exceed 200,000 miles with proper maintenance. The N47 diesel\u0027s limiting factor is the timing chain -addressed proactively, it can also reach high mileage. The N54 and N55 turbos are durable but require meticulous maintenance, particularly for the HPFP and injectors."
       },
       {
         "id": 9,
@@ -828,7 +861,7 @@
       {
         "id": 10,
         "question": "How do I find my BMW 1 Series E88 engine code?",
-        "answer": "Listed on the VIN plate and vehicle documentation; block stamping is visible from below on N47/N52/N54/N55 units. Tell us your variant (118i, 120d, 135i, etc.) and approximate registration date and we'll identify it -20+ vetted specialists will confirm it for free."
+        "answer": "Listed on the VIN plate and vehicle documentation; block stamping is visible from below on N47/N52/N54/N55 units. Tell us your variant (118i, 120d, 135i, etc.) and approximate registration date and we\u0027ll identify it -20+ vetted specialists will confirm it for free."
       }
     ]
   },
@@ -841,11 +874,11 @@
       },
       {
         "title": "Compare E88 Engine Replacement Companies",
-        "text": "see prices, warranty terms and supply & fit options side-by-side before you commit."
+        "text": "see prices, warranty terms and supply \u0026 fit options side-by-side before you commit."
       },
       {
         "title": "UK Engine Replacement Services for E88",
-        "text": "covering every variant from 116i to 135i, with supply-only or full supply & fit available nationwide."
+        "text": "covering every variant from 116i to 135i, with supply-only or full supply \u0026 fit available nationwide."
       }
     ],
     "finalCta": "Find the best BMW 1 Series E88 engine replacement UK drivers rely on. Compare real prices from trusted specialists on EnginesMarket today and get back on the road with confidence.",

@@ -189,7 +189,7 @@
               "name": "Is it worth replacing an E81 engine, or should I scrap the car?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Depends on the car's value. Against a well-kept £7,000 E81, a £2,500–£4,500 N47 recon is 35–65% of the car's value -safe. Against a tired £3,500 example, the same recon is 70–130% -walk away. Our 70% BMW threshold is the line: if the lowest viable replacement cost exceeds 70% of the vehicle's current market value, evaluate scrap value first."
+                "text": "Depends on the car\u0027s value. Against a well-kept £7,000 E81, a £2,500–£4,500 N47 recon is 35–65% of the car\u0027s value -safe. Against a tired £3,500 example, the same recon is 70–130% -walk away. Our 70% BMW threshold is the line: if the lowest viable replacement cost exceeds 70% of the vehicle\u0027s current market value, evaluate scrap value first."
               }
             },
             {
@@ -205,7 +205,7 @@
               "name": "What is the difference between the E81, E87, E82 and E88?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "All four share the first-generation 1 Series platform and most engines. The E81 is the 3-door hatchback (2007–2012, this page), the E87 is the 5-door hatchback (2004–2012), the E82 is the coupé (2007–2013), and the E88 is the convertible (2008–2013). Costs vary slightly by body style due to labour access -see each generation's own page for specifics."
+                "text": "All four share the first-generation 1 Series platform and most engines. The E81 is the 3-door hatchback (2007–2012, this page), the E87 is the 5-door hatchback (2004–2012), the E82 is the coupé (2007–2013), and the E88 is the convertible (2008–2013). Costs vary slightly by body style due to labour access -see each generation\u0027s own page for specifics."
               }
             },
             {
@@ -213,7 +213,7 @@
               "name": "How do I find my BMW E81 engine code?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Listed on the VIN plate and vehicle documentation; the engine number is stamped on the block -on four-cylinder engines (N45, N46, N43, M47, N47) it's on the left-hand side; on the N52 straight-six it's on the front of the block near the timing cover. Tell us your variant and approximate registration date and we'll identify it -20+ vetted BMW specialists will confirm it for free."
+                "text": "Listed on the VIN plate and vehicle documentation; the engine number is stamped on the block -on four-cylinder engines (N45, N46, N43, M47, N47) it\u0027s on the left-hand side; on the N52 straight-six it\u0027s on the front of the block near the timing cover. Tell us your variant and approximate registration date and we\u0027ll identify it -20+ vetted BMW specialists will confirm it for free."
               }
             }
           ]
@@ -270,7 +270,7 @@
   "hero": {
     "tagPill": "BMW 1 Series E81 • 3‑Door Hatchback • 2007–2012",
     "h1": "BMW 1 Series E81 Engines -The Complete UK Guide",
-    "subHeadline": "Every engine fitted to the three‑door E81 -from the N45 and N43 four‑cylinder petrols to the N52 straight‑six and the N47 diesel range. Real UK costs and honest reliability data for BMW's compact rear‑wheel‑drive hatchback. Backed by real UK enquiries in 2025 [BMW-VERIFIED].",
+    "subHeadline": "Every engine fitted to the three‑door E81 -from the N45 and <a href='https://bmwengines.uk/engine/n40-n42-n43-n45-n46'>N43</a> four‑cylinder petrols to the <a href='https://bmwengines.uk/engine/n52-n53'>N52</a> straight‑six and the <a href='https://bmwengines.uk/engine/n47'>N47</a> diesel range. Real UK costs and honest reliability data for BMW\u0027s compact rear‑wheel‑drive hatchback. Backed by real UK enquiries in 2025 [BMW-VERIFIED].",
     "trustStrip": [
       {
         "icon": "📊",
@@ -373,7 +373,7 @@
       },
       {
         "engineCode": "M47D20",
-        "family": "M47",
+        "family": "<a href='https://bmwengines.uk/engine/m47'>M47</a>",
         "fuel": "Diesel",
         "displacement": "2.0L",
         "power": "95–105 kW / 129–143 bhp",
@@ -404,7 +404,7 @@
   },
   "overview": {
     "h2": "BMW 1 Series E81 -Overview",
-    "intro": "The E81 is the three‑door hatchback variant of BMW's first‑generation 1 Series, introduced in July 2007 as a sportier, more compact alternative to the five‑door E87. Built on BMW's rear‑wheel‑drive L2 platform -a layout unique among compact hatchbacks -the E81 offered engaging driving dynamics that set it apart from front‑wheel‑drive rivals. Under the bonnet, buyers could choose from a range of four‑cylinder petrol and diesel engines, plus the magnificent naturally aspirated 3.0‑litre N52 straight‑six in the 130i. Production ran until 2012, when the second‑generation F20 replaced it.",
+    "intro": "The E81 is the three‑door hatchback variant of BMW\u0027s first‑generation 1 Series, introduced in July 2007 as a sportier, more compact alternative to the five‑door E87. Built on BMW\u0027s rear‑wheel‑drive L2 platform -a layout unique among compact hatchbacks -the E81 offered engaging driving dynamics that set it apart from front‑wheel‑drive rivals. Under the bonnet, buyers could choose from a range of four‑cylinder petrol and diesel engines, plus the magnificent naturally aspirated 3.0‑litre N52 straight‑six in the 130i. Production ran until 2012, when the second‑generation F20 replaced it.",
     "keyFacts": "Platform: BMW L2 (rear‑wheel drive) • Predecessor: None (first‑generation 1 Series) • Successor: BMW F20 • Sibling body styles in this generation: E87 (5‑door hatchback), E82 (coupé), E88 (convertible).",
     "marketIntelligenceLine": "The E81 generates consistent UK enquiries [PATTERN DATA], concentrated on 118d and 120d diesel variants as these compact hatchbacks enter affordable‑maintenance territory."
   },
@@ -459,7 +459,7 @@
         "commonMajorFailure": "VANOS solenoids, coil packs",
         "repairCostSpecialist": "£200–£500",
         "replacementCostRecon": "£1,800–£3,500",
-        "ownershipVerdict": "Simple & Reliable -port injection, no HPFP"
+        "ownershipVerdict": "Simple \u0026 Reliable -port injection, no HPFP"
       },
       {
         "engine": "N52B30",
@@ -467,7 +467,7 @@
         "commonMajorFailure": "Water pump, VANOS",
         "repairCostSpecialist": "£300–£800",
         "replacementCostRecon": "£2,500–£5,000",
-        "ownershipVerdict": "Best Petrol -the E81's most complete engine"
+        "ownershipVerdict": "Best Petrol -the E81\u0027s most complete engine"
       },
       {
         "engine": "M47D20",
@@ -488,7 +488,7 @@
     ],
     "economicsRule": {
       "title": "The E81 rule",
-      "text": "A £2,500–£4,500 N47 recon against a £2,500–£8,000 E81 sits at 30–180% of the car's value. On a sub‑£4,000 E81, that brushes our 70% BMW threshold -we'll honestly tell you to walk away. Against a well‑kept £7,000+ example, the same recon drops to a routine 35–65% -a repair decision, not a financial one. Value the car first."
+      "text": "A £2,500–£4,500 N47 recon against a £2,500–£8,000 E81 sits at 30–180% of the car\u0027s value. On a sub‑£4,000 E81, that brushes our 70% BMW threshold -we\u0027ll honestly tell you to walk away. Against a well‑kept £7,000+ example, the same recon drops to a routine 35–65% -a repair decision, not a financial one. Value the car first."
     },
     "keyTakeaways": []
   },
@@ -509,7 +509,7 @@
       },
       {
         "id": 2,
-        "title": "N43 Petrol Injector & NOx Sensor Failure",
+        "title": "N43 Petrol Injector \u0026 NOx Sensor Failure",
         "affectedModels": "E81 116i, 118i, 120i (2007–2011) with N43 engine.",
         "typicalFailureMileage": "50,000–100,000 miles.",
         "rootCause": "The N43 direct‑injection petrol engines suffer from injector failure and NOx sensor degradation -leading to rough running, engine warning lights, and increased fuel consumption.",
@@ -525,7 +525,7 @@
         "title": "N52 Water Pump Failure",
         "affectedModels": "E81 130i (2007–2011) with N52B30 engine.",
         "typicalFailureMileage": "60,000–120,000 miles.",
-        "rootCause": "The N52's electric water pump is a known weak point -failure leads to overheating, loss of cooling, and potential engine damage if not addressed promptly.",
+        "rootCause": "The N52\u0027s electric water pump is a known weak point -failure leads to overheating, loss of cooling, and potential engine damage if not addressed promptly.",
         "tieredCosts": [],
         "recommendation": "On any 130i, budget for water pump replacement at 80k miles -a £300–£600 preventative job is cheap insurance against the £2,500–£5,000 replacement that follows a catastrophic overheat.",
         "cta": {
@@ -540,7 +540,7 @@
         "typicalFailureMileage": "N/A -age‑related.",
         "rootCause": "Not an engine failure, but the most common non‑engine issue on the E81 -the wiring loom in the tailgate hinge area can fracture, causing rear light failure, central locking issues, and boot release problems.",
         "tieredCosts": [],
-        "recommendation": "Have the tailgate wiring inspected on any E81 -it's a common age‑related failure that can cause MOT issues if left unaddressed.",
+        "recommendation": "Have the tailgate wiring inspected on any E81 -it\u0027s a common age‑related failure that can cause MOT issues if left unaddressed.",
         "cta": {
           "label": "Compare E81 wiring repair quotes →",
           "href": "#"
@@ -553,7 +553,7 @@
         "typicalFailureMileage": "N/A -age‑related.",
         "rootCause": "Not an engine failure, but a known structural issue -the rear subframe mounting points can corrode, particularly in cars exposed to UK road salt.",
         "tieredCosts": [],
-        "recommendation": "Have the rear subframe mounts inspected on any E81 over 8 years old -it's a common MOT failure point on UK‑market cars.",
+        "recommendation": "Have the rear subframe mounts inspected on any E81 over 8 years old -it\u0027s a common MOT failure point on UK‑market cars.",
         "cta": {
           "label": "Compare E81 subframe repair quotes →",
           "href": "#"
@@ -629,20 +629,48 @@
         "labourHours": "10–14 hrs"
       }
     ],
-    "note": "No Generation variance from the Model Page's baseline figures -E81 shares identical engine‑bay access with its E87 sibling, so costs are inherited directly per the Authority Model, with no divergence note required. All costs are [BMW-QUOTE] from Table A -Engine Replacement Economics."
+    "note": "No Generation variance from the Model Page\u0027s baseline figures -E81 shares identical engine‑bay access with its E87 sibling, so costs are inherited directly per the Authority Model, with no divergence note required. All costs are [BMW-QUOTE] from Table A -Engine Replacement Economics."
   },
   "coreVariants": {
     "dieselVariants": [
-      "116d",
-      "118d",
-      "120d",
-      "123d"
+      {
+        "name": "116d",
+        "url": "https://bmwengines.uk/1-series/116d"
+      },
+      {
+        "name": "118d",
+        "url": "https://bmwengines.uk/1-series/118d"
+      },
+      {
+        "name": "120d",
+        "url": "https://bmwengines.uk/1-series/120d"
+      },
+      {
+        "name": "123d",
+        "url": "https://bmwengines.uk/1-series/123d"
+      }
     ],
     "petrolVariants": [
-      "116i",
-      "118i",
-      "120i",
-      "130i"
+      {
+        "name": "116i",
+        "url": "https://bmwengines.uk/1-series/116i"
+      },
+      {
+        "name": "118i",
+        "url": "https://bmwengines.uk/1-series/118i"
+      },
+      {
+        "name": "120i",
+        "url": "https://bmwengines.uk/1-series/120i"
+      },
+      {
+        "name": "130i",
+        "url": "https://bmwengines.uk/1-series/130i"
+      },
+      {
+        "name": "135i",
+        "url": "https://bmwengines.uk/1-series/135i"
+      }
     ],
     "scopeNote": "All variants listed are BMW 1 Series E81 (three‑door hatchback) only. E87 (five‑door hatchback), E82 (coupé) and E88 (convertible) are covered on their own Generation Pages, since fitment and labour access vary slightly by body style."
   },
@@ -688,7 +716,7 @@
       {
         "id": 7,
         "question": "Is it worth replacing an E81 engine, or should I scrap the car?",
-        "answer": "Depends on the car's value. Against a well-kept £7,000 E81, a £2,500–£4,500 N47 recon is 35–65% of the car's value -safe. Against a tired £3,500 example, the same recon is 70–130% -walk away. Our 70% BMW threshold is the line: if the lowest viable replacement cost exceeds 70% of the vehicle's current market value, evaluate scrap value first."
+        "answer": "Depends on the car\u0027s value. Against a well-kept £7,000 E81, a £2,500–£4,500 N47 recon is 35–65% of the car\u0027s value -safe. Against a tired £3,500 example, the same recon is 70–130% -walk away. Our 70% BMW threshold is the line: if the lowest viable replacement cost exceeds 70% of the vehicle\u0027s current market value, evaluate scrap value first."
       },
       {
         "id": 8,
@@ -698,12 +726,12 @@
       {
         "id": 9,
         "question": "What is the difference between the E81, E87, E82 and E88?",
-        "answer": "All four share the first-generation 1 Series platform and most engines. The E81 is the 3-door hatchback (2007–2012, this page), the E87 is the 5-door hatchback (2004–2012), the E82 is the coupé (2007–2013), and the E88 is the convertible (2008–2013). Costs vary slightly by body style due to labour access -see each generation's own page for specifics."
+        "answer": "All four share the first-generation 1 Series platform and most engines. The E81 is the 3-door hatchback (2007–2012, this page), the E87 is the 5-door hatchback (2004–2012), the E82 is the coupé (2007–2013), and the E88 is the convertible (2008–2013). Costs vary slightly by body style due to labour access -see each generation\u0027s own page for specifics."
       },
       {
         "id": 10,
         "question": "How do I find my BMW E81 engine code?",
-        "answer": "Listed on the VIN plate and vehicle documentation; the engine number is stamped on the block -on four-cylinder engines (N45, N46, N43, M47, N47) it's on the left-hand side; on the N52 straight-six it's on the front of the block near the timing cover. Tell us your variant and approximate registration date and we'll identify it -20+ vetted BMW specialists will confirm it for free."
+        "answer": "Listed on the VIN plate and vehicle documentation; the engine number is stamped on the block -on four-cylinder engines (N45, N46, N43, M47, N47) it\u0027s on the left-hand side; on the N52 straight-six it\u0027s on the front of the block near the timing cover. Tell us your variant and approximate registration date and we\u0027ll identify it -20+ vetted BMW specialists will confirm it for free."
       }
     ]
   },
@@ -716,11 +744,11 @@
       },
       {
         "title": "Compare E81 Engine Replacement Companies",
-        "text": "see prices, warranty terms and supply & fit options side-by-side before you commit."
+        "text": "see prices, warranty terms and supply \u0026 fit options side-by-side before you commit."
       },
       {
         "title": "UK Engine Replacement Services for BMW 1 Series E81",
-        "text": "covering every variant from 116i to 130i and 116d to 123d, with supply-only or full supply & fit available nationwide."
+        "text": "covering every variant from 116i to 130i and 116d to 123d, with supply-only or full supply \u0026 fit available nationwide."
       }
     ],
     "finalCta": "Find the best BMW 1 Series E81 engine replacement UK drivers rely on. Compare real prices from trusted specialists on EnginesMarket today and get back on the road with confidence.",

@@ -235,7 +235,7 @@
     }
   },
   "hero": {
-    "tagPill": "BMW X4 • 2014–Present • 2 Generations (F26, G02) • N20, N55, B48, B58, B47, B57, S58",
+    "tagPill": "BMW X4 • 2014–Present • 2 Generations (F26, G02) • <a href='https://bmwengines.uk/engine/n13-n20'>N20</a>, <a href='https://bmwengines.uk/engine/n54-n55'>N55</a>, <a href='https://bmwengines.uk/engine/b38-b48'>B48</a>, B58, <a href='https://bmwengines.uk/engine/b37-b47'>B47</a>, <a href='https://bmwengines.uk/engine/b57-b58'>B57</a>, S58",
     "h1": "X4 Engines - The Complete UK Guide",
     "subHeadline": "Every BMW X4 engine across two generations - from the N20 four-cylinder and N55 six-cylinder of the F26 to the B48, B58 and S58 of the G02. Real UK replacement costs, known failure patterns, and honest ownership economics for BMW's stylish coupé-SUV. Backed by real UK X4 engine enquiries in 2025 [BMW-VERIFIED].",
     "trustStrip": [
@@ -364,7 +364,7 @@
         "verdict": "The original X4 - BMW's first compact coupé-SUV, launched in the UK in July 2014. The N20 four-cylinder petrol carries the chain-tensioner caveat; the N55 six-cylinder is robust. The xDrive28i and M40i continued through the end of the 2018 model year. Buy the N55 or an N20 with documented chain history.",
         "cta": {
           "label": "Explore the F26 →",
-          "href": "#"
+          "href": "https://bmwengines.uk/x4/f26"
         }
       },
       {
@@ -375,7 +375,7 @@
         "verdict": "The second-generation X4 - built on the CLAR platform shared with the G01 X3. B-family engines only, no N-series carryover. The B48 in the xDrive30i produces 248 hp; the B58 in the M40i produces 382 hp; the S58 in the X4 M produces 473–503 hp. The G02 received a mild facelift in 2021. This is the X4 generation to buy.",
         "cta": {
           "label": "Explore the G02 →",
-          "href": "#"
+          "href": "https://bmwengines.uk/x4/g02"
         }
       },
       {
@@ -442,7 +442,7 @@
       },
       {
         "engineCode": "N47D20",
-        "family": "N47",
+        "family": "<a href='https://bmwengines.uk/engine/n47'>N47</a>",
         "fuel": "Diesel",
         "displacement": "2.0L",
         "power": "190 bhp",

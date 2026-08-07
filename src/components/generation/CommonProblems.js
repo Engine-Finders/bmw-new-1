@@ -22,7 +22,7 @@ function TieredCostTable({ tiers, isDark }) {
             <div className="grid grid-cols-[1.6fr_1fr_1fr] items-stretch">
               <div className="flex items-center gap-1.5 border-b border-r border-[var(--color-border)]">
                 <GenIcon name={isCatastrophic ? "warning" : "wrench"} className="h-3.5 w-3.5 shrink-0" />
-                <p className={`text-[0.62rem] uppercase tracking-wide ${toneClass}`}>{tier.tier}</p>
+                <p className={`text-[0.62rem] uppercase tracking-wide ${toneClass}`} dangerouslySetInnerHTML={{ __html: tier.tier }} />
               </div>
               <div className="flex items-center justify-center border-b border-r border-[var(--color-border)]">
                 <p className="text-[0.62rem] uppercase tracking-wide text-[var(--color-text-soft)]">Dealer</p>
@@ -33,15 +33,15 @@ function TieredCostTable({ tiers, isDark }) {
 
               <div className="border-r border-[var(--color-border)]" />
               <div className="flex items-center justify-center border-r border-[var(--color-border)]">
-                <p className="text-[0.62rem] text-[var(--color-text)]">{tier.dealer}</p>
+                <p className="text-[0.62rem] text-[var(--color-text)]" dangerouslySetInnerHTML={{ __html: tier.dealer }} />
               </div>
               <div className="flex items-center justify-center">
-                <p className={`text-[0.62rem] ${specialistClass}`}>{tier.specialist}</p>
+                <p className={`text-[0.62rem] ${specialistClass}`} dangerouslySetInnerHTML={{ __html: tier.specialist }} />
               </div>
             </div>
             <div className="border-t border-[var(--color-border)]">
-              <p className="text-[0.76rem] leading-[1.35] text-[var(--color-text-muted)]">{tier.work}</p>
-              {tier.note ? <p className="mt-0.5 text-[0.72rem] italic text-[var(--color-text-soft)]">{tier.note}</p> : null}
+              <p className="text-[0.76rem] leading-[1.35] text-[var(--color-text-muted)]" dangerouslySetInnerHTML={{ __html: tier.work }} />
+              {tier.note ? <p className="mt-0.5 text-[0.72rem] italic text-[var(--color-text-soft)]" dangerouslySetInnerHTML={{ __html: tier.note }} /> : null}
             </div>
           </div>
         );
@@ -85,7 +85,7 @@ function AccordionCard({ problem, isDark, isOpen, onToggle }) {
               <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-md bg-[var(--color-primary)] text-[0.7rem] font-bold text-white">
                 {String(problem.id).padStart(2, "0")}
               </span>
-              <p className="min-w-0 text-[0.88rem] font-bold leading-tight text-[var(--color-text)]">{problem.title}</p>
+              <p className="min-w-0 text-[0.88rem] font-bold leading-tight text-[var(--color-text)]" dangerouslySetInnerHTML={{ __html: problem.title }} />
             </div>
             <GenIcon
               name="chevronDown"
@@ -96,17 +96,17 @@ function AccordionCard({ problem, isDark, isOpen, onToggle }) {
           <div className="mt-2 grid grid-cols-2 divide-x divide-[var(--color-border)] text-[0.7rem]">
             <div className="flex items-start gap-1.5 pr-2">
               <GenIcon name="car" className="mt-0.5 h-3.5 w-3.5 shrink-0 text-[var(--color-primary)]" />
-              <span className="text-[var(--color-text-muted)]">{problem.affectedModels}</span>
+              <span className="text-[var(--color-text-muted)]" dangerouslySetInnerHTML={{ __html: problem.affectedModels }} />
             </div>
             <div className="flex items-start gap-1.5 pl-2">
               <GenIcon name="gauge" className="mt-0.5 h-3.5 w-3.5 shrink-0 text-[var(--color-primary)]" />
-              <span className="text-[var(--color-text-muted)]">{problem.typicalFailureMileage}</span>
+              <span className="text-[var(--color-text-muted)]" dangerouslySetInnerHTML={{ __html: problem.typicalFailureMileage }} />
             </div>
           </div>
 
           <div className="mt-2 flex items-center gap-1.5">
             <RiskBadge riskLevel={problem.riskLevel} />
-            <span className="min-w-0 flex-1 truncate text-[0.7rem] leading-[1.3] text-[var(--color-text-soft)]">{problem.rootCause}</span>
+            <span className="min-w-0 flex-1 truncate text-[0.7rem] leading-[1.3] text-[var(--color-text-soft)]" dangerouslySetInnerHTML={{ __html: problem.rootCause }} />
           </div>
         </div>
       </button>
@@ -126,7 +126,7 @@ function AccordionCard({ problem, isDark, isOpen, onToggle }) {
                 <GenIcon name="shield" className="h-3.5 w-3.5" />
                 Our Recommendation
               </p>
-              <p className="mt-1 text-[0.8rem] leading-[1.45] text-[var(--color-text-muted)]">{problem.recommendation}</p>
+              <p className="mt-1 text-[0.8rem] leading-[1.45] text-[var(--color-text-muted)]" dangerouslySetInnerHTML={{ __html: problem.recommendation }} />
             </div>
           ) : null}
 
@@ -136,9 +136,7 @@ function AccordionCard({ problem, isDark, isOpen, onToggle }) {
                 href={problem.cta.href}
                 className="flex h-11 w-full items-center rounded-md bg-[var(--color-primary)] px-4 text-white"
               >
-                <span className="flex-1 text-center text-[0.8rem] font-semibold">
-                  {problem.cta.label.replace(/\s*→\s*$/, "")}
-                </span>
+                <span className="flex-1 text-center text-[0.8rem] font-semibold" dangerouslySetInnerHTML={{ __html: problem.cta.label.replace(/\s*→\s*$/, "") }} />
                 <GenIcon name="arrow" className="h-4 w-4 shrink-0" />
               </a>
             </div>
@@ -162,16 +160,16 @@ function ProblemCard({ problem, isDark }) {
               <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-md bg-[var(--color-primary)] text-[0.8rem] font-bold text-white">
                 {String(problem.id).padStart(2, "0")}
               </span>
-              <p className="text-[1rem] font-bold leading-tight text-[var(--color-text)]">{code}</p>
+              <p className="text-[1rem] font-bold leading-tight text-[var(--color-text)]" dangerouslySetInnerHTML={{ __html: code }} />
             </div>
-            {name ? <p className="mt-1 text-[1rem] font-bold leading-tight text-[var(--color-text)]">{name}</p> : null}
+            {name ? <p className="mt-1 text-[1rem] font-bold leading-tight text-[var(--color-text)]" dangerouslySetInnerHTML={{ __html: name }} /> : null}
           </div>
           <div className="text-[0.8rem]">
             <p className="flex items-center gap-1.5 font-semibold text-[var(--color-primary)]">
               <GenIcon name="clock" className="h-3.5 w-3.5" />
               Affected models:
             </p>
-            <p className="mt-0.5 text-[var(--color-text-muted)]">{problem.affectedModels}</p>
+            <p className="mt-0.5 text-[var(--color-text-muted)]" dangerouslySetInnerHTML={{ __html: problem.affectedModels }} />
           </div>
         </div>
         <div className="absolute right-0 top-0 h-full w-[42%] overflow-hidden rounded-bl-md">
@@ -188,14 +186,14 @@ function ProblemCard({ problem, isDark }) {
             <GenIcon name="clock" className="h-3.5 w-3.5" />
             Typical failure mileage:
           </p>
-          <p className="mt-0.5 text-[var(--color-text-muted)]">{problem.typicalFailureMileage}</p>
+          <p className="mt-0.5 text-[var(--color-text-muted)]" dangerouslySetInnerHTML={{ __html: problem.typicalFailureMileage }} />
         </div>
         <div>
           <p className="flex items-center gap-1.5 font-semibold text-[var(--color-primary)]">
             <GenIcon name="wrench" className="h-3.5 w-3.5" />
             Root cause:
           </p>
-          <p className="mt-0.5 leading-[1.45] text-[var(--color-text-muted)]">{problem.rootCause}</p>
+          <p className="mt-0.5 leading-[1.45] text-[var(--color-text-muted)]" dangerouslySetInnerHTML={{ __html: problem.rootCause }} />
         </div>
       </div>
 
@@ -213,7 +211,7 @@ function ProblemCard({ problem, isDark }) {
             <GenIcon name="shield" className="h-3.5 w-3.5" />
             Our Recommendation
           </p>
-          <p className="mt-1 w-full text-[0.8rem] leading-[1.45] text-[var(--color-text-muted)]">{problem.recommendation}</p>
+          <p className="mt-1 w-full text-[0.8rem] leading-[1.45] text-[var(--color-text-muted)]" dangerouslySetInnerHTML={{ __html: problem.recommendation }} />
         </div>
       ) : null}
 
@@ -223,9 +221,7 @@ function ProblemCard({ problem, isDark }) {
             href={problem.cta.href}
             className="flex h-11 w-full items-center rounded-md bg-[var(--color-primary)] px-4 text-white"
           >
-            <span className="flex-1 text-center text-[0.8rem] font-semibold">
-              {problem.cta.label.replace(/\s*→\s*$/, "")}
-            </span>
+            <span className="flex-1 text-center text-[0.8rem] font-semibold" dangerouslySetInnerHTML={{ __html: problem.cta.label.replace(/\s*→\s*$/, "") }} />
             <GenIcon name="arrow" className="h-4 w-4 shrink-0" />
           </a>
         </div>
@@ -244,14 +240,18 @@ export default function CommonProblems({ data }) {
   return (
     <section className="w-full bg-[var(--color-page)] py-8 text-[var(--color-text)] md:py-10">
       <div className="relative mx-auto w-full max-w-8xl px-4 md:px-8">
-        <h2 className="text-[2.15rem] font-bold leading-[1.1] tracking-normal text-[var(--color-text)] md:text-[3rem]">
-          {data.h2 || "Common Problems"}
-        </h2>
+        <h2
+          className="text-[2.15rem] font-bold leading-[1.1] tracking-normal text-[var(--color-text)] md:text-[3rem]"
+          dangerouslySetInnerHTML={{ __html: data.h2 || "Common Problems" }}
+        />
         <div className="mt-3">
           <MStripe />
         </div>
         {data.subHeadline ? (
-          <p className="mt-4 max-w-[920px] text-[0.88rem] leading-[1.4] text-[var(--color-text-muted)] md:mt-5 md:text-[1.08rem] md:leading-[1.42]">{data.subHeadline}</p>
+          <p
+            className="mt-4 max-w-[920px] text-[0.88rem] leading-[1.4] text-[var(--color-text-muted)] md:mt-5 md:text-[1.08rem] md:leading-[1.42]"
+            dangerouslySetInnerHTML={{ __html: data.subHeadline }}
+          />
         ) : null}
 
         {/* Mobile: accordion — one card open at a time */}
@@ -294,8 +294,14 @@ export default function CommonProblems({ data }) {
                   <GenIcon name={item.icon} className="h-4.5 w-4.5" />
                 </span>
                 <div className="min-w-0 flex-1">
-                  <p className={`text-[0.85rem] font-semibold ${isDark ? "text-white" : "text-[var(--color-text)]"}`}>{item.title}</p>
-                  <p className={`text-[0.76rem] leading-[1.35] ${isDark ? "text-white/70" : "text-[var(--color-text-muted)]"}`}>{item.text}</p>
+                  <p
+                    className={`text-[0.85rem] font-semibold ${isDark ? "text-white" : "text-[var(--color-text)]"}`}
+                    dangerouslySetInnerHTML={{ __html: item.title }}
+                  />
+                  <p
+                    className={`text-[0.76rem] leading-[1.35] ${isDark ? "text-white/70" : "text-[var(--color-text-muted)]"}`}
+                    dangerouslySetInnerHTML={{ __html: item.text }}
+                  />
                 </div>
                 <GenIcon name="chevron" className="h-4 w-4 shrink-0 text-[var(--color-text-soft)]" />
               </div>
@@ -308,7 +314,10 @@ export default function CommonProblems({ data }) {
                 </span>
                 <div className="min-w-0 flex-1">
                   <p className="text-[0.85rem] font-semibold text-[var(--color-primary)]">Data Note</p>
-                  <p className={`text-[0.76rem] leading-[1.35] ${isDark ? "text-white/70" : "text-[var(--color-text-muted)]"}`}>{data.footerNote}</p>
+                  <p
+                    className={`text-[0.76rem] leading-[1.35] ${isDark ? "text-white/70" : "text-[var(--color-text-muted)]"}`}
+                    dangerouslySetInnerHTML={{ __html: data.footerNote }}
+                  />
                 </div>
               </div>
             ) : null}

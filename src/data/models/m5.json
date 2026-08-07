@@ -259,7 +259,7 @@
     }
   },
   "hero": {
-    "tagPill": "BMW M5 • 1984–Present • 7 Generations (E28, E34, E39, E60/E61, F10, F90, G90/G99) • S38, S62, S85, S63, S68",
+    "tagPill": "BMW M5 • 1984–Present • 7 Generations (E28, E34, E39, E60/E61, F10, F90, G90/G99) • S38, <a href='https://bmwengines.uk/engine/s62'>S62</a>, <a href='https://bmwengines.uk/engine/s70-s85'>S85</a>, <a href='https://bmwengines.uk/engine/s63-s65'>S63</a>, S68",
     "h1": "M5 Engines - The Complete UK Guide",
     "subHeadline": "Every BMW M5 engine across seven generations - from the M88/3 straight-six of the E28 to the S68 plug-in hybrid V8 of the G90. Real UK replacement costs, known failure patterns, and honest ownership economics for BMW's ultimate super saloon. Backed by real UK M5 engine enquiries in 2025 [BMW-VERIFIED].",
     "trustStrip": [
@@ -388,7 +388,7 @@
         "verdict": "The original M5 - hand-built and the fastest production saloon of its era. The M88/3 engine was derived from the BMW M1 supercar, revving to 7,000 rpm with individual throttle bodies. Now a genuine classic where engine work is restoration, not repair. The E28 M5 is the ultimate M5 investment.",
         "cta": {
           "label": "Explore the E28 M5 →",
-          "href": "#"
+          "href": "https://bmwengines.uk/m5/e28"
         }
       },
       {
@@ -399,7 +399,7 @@
         "verdict": "The second-generation M5 - available as a saloon and, for the first time, a Touring estate. The S38 straight-six is a masterpiece of 1990s engineering, with individual throttle bodies and a 7,000 rpm redline. Cooling systems and VANOS are the defining caveats. A rising classic.",
         "cta": {
           "label": "Explore the E34 M5 →",
-          "href": "#"
+          "href": "https://bmwengines.uk/m5/e34"
         }
       },
       {
@@ -410,7 +410,7 @@
         "verdict": "The M5 at its peak - often called the greatest M5 ever made. The S62 was BMW's first V8 M engine, producing 400 bhp with individual throttle bodies and Double VANOS. The E39 M5 is a modern classic - buy the best you can afford.",
         "cta": {
           "label": "Explore the E39 M5 →",
-          "href": "#"
+          "href": "https://bmwengines.uk/m5/e39"
         }
       },
       {
@@ -421,7 +421,7 @@
         "verdict": "The only V10 M5 - the S85 was inspired by BMW's Formula One program, revving to 8,250 rpm. The rod bearing failure is the defining risk: budget £3,000–£5,000 for preventative replacement. The SMG III gearbox is also a weak point. A masterpiece - but a costly one.",
         "cta": {
           "label": "Explore the E60 M5 →",
-          "href": "#"
+          "href": "https://bmwengines.uk/m5/e60-e61"
         }
       },
       {
@@ -432,7 +432,7 @@
         "verdict": "The first turbocharged M5 - and the last rear-wheel-drive M5. The S63 twin-turbo V8 produces 560 bhp (standard) to 600 bhp (30th Anniversary). The engine is proven but carries oil leak and turbo issues. The F10 is the M5 for the modern era - powerful, refined, and depreciated.",
         "cta": {
           "label": "Explore the F10 M5 →",
-          "href": "#"
+          "href": "https://bmwengines.uk/m5/f10"
         }
       },
       {
@@ -443,7 +443,7 @@
         "verdict": "The first all-wheel-drive M5 - and the most capable. The S63 produces 600 bhp (standard), 625 bhp (Competition), and 635 bhp (CS). The M xDrive system can be deactivated for pure rear-wheel-drive fun. The F90 is the M5 for the modern era - buy it with confidence.",
         "cta": {
           "label": "Explore the F90 M5 →",
-          "href": "#"
+          "href": "https://bmwengines.uk/m5/f90"
         }
       },
       {
@@ -454,7 +454,7 @@
         "verdict": "The seventh-generation M5 - and the first plug-in hybrid. The S68 combines a 585 PS 4.4L V8 with a 197 PS electric motor for 727 PS and 1,000 Nm of torque. Available as a saloon (G90) and a Touring (G99). Too new for volume reliability data, but the S63 lineage is proven.",
         "cta": {
           "label": "Explore the G90 M5 →",
-          "href": "#"
+          "href": "https://bmwengines.uk/m5/g90-g99"
         }
       }
     ],
@@ -571,7 +571,7 @@
     ],
     "confidenceScore": {
       "title": "How confident are these ratings?",
-      "text": "S63B44 and S62B50 ratings: 90% confidence - well-documented across the M range with clear patterns from specialist rebuilders. S85B50 rating: 85% confidence - the V10 is well-documented with rod bearing and SMG pump failures. S68B44 rating: Provisional - the G90 is too new for volume data; ratings reflect early patterns and shared-architecture evidence from the S63. E28/E34 engines: Expert-knowledge tier - decades of documented patterns from the classic M5 era. Data note (internal) - corrections applied: Correction applied: The S85 V10 (E60) rod bearing failure is the defining issue of the generation - bearings fail catastrophically, taking the crankshaft with them. Preventative replacement is recommended at 60,000–80,000 miles. Correction applied: The S63 (F10/F90) is based on the N63 V8 architecture and carries oil leak issues (valve cover gaskets, turbo oil lines) and turbocharger problems. The F90's S63 is more refined than the F10's. Correction applied: The S62 (E39) is one of BMW's most reliable M engines - no catastrophic failure modes, just standard maintenance. Correction applied: The G90/G99 M5's S68 is a plug-in hybrid - combining a 585 PS 4.4L V8 with a 197 PS electric motor for a combined 727 PS and 1,000 Nm of torque. This is the first electrified M5."
+      "text": "S63B44 and S62B50 ratings: 90% confidence - well-documented across the M range with clear patterns from specialist rebuilders. S85B50 rating: 85% confidence - the V10 is well-documented with rod bearing and SMG pump failures. S68B44 rating: Provisional - the G90 is too new for volume data; ratings reflect early patterns and shared-architecture evidence from the S63. E28/E34 engines: Expert-knowledge tier - decades of documented patterns from the classic M5 era. Data note (internal) - corrections applied: Correction applied: The S85 V10 (E60) rod bearing failure is the defining issue of the generation - bearings fail catastrophically, taking the crankshaft with them. Preventative replacement is recommended at 60,000–80,000 miles. Correction applied: The S63 (F10/F90) is based on the <a href='https://bmwengines.uk/engine/n62-n63'>N63</a> V8 architecture and carries oil leak issues (valve cover gaskets, turbo oil lines) and turbocharger problems. The F90's S63 is more refined than the F10's. Correction applied: The S62 (E39) is one of BMW's most reliable M engines - no catastrophic failure modes, just standard maintenance. Correction applied: The G90/G99 M5's S68 is a plug-in hybrid - combining a 585 PS 4.4L V8 with a 197 PS electric motor for a combined 727 PS and 1,000 Nm of torque. This is the first electrified M5."
     },
     "dataCorrections": []
   },

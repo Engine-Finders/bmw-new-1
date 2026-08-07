@@ -412,7 +412,7 @@ function ResultsScreen({ diagnosis, verdict, engineOption, ctas, isDark }) {
               <span className={`text-[0.76rem] font-semibold uppercase tracking-[0.08em] ${isDark ? "text-white/62" : "text-[#607085]"}`}>{diagnosis.evidenceLabel}</span>
             </div>
             <h3 className={`mt-3 text-[1.45rem] font-bold leading-tight md:text-[2rem] ${isDark ? "text-white" : "text-[#071827]"}`}>{diagnosis.headline}</h3>
-            <p className={`mt-3 max-w-[760px] text-[0.92rem] leading-[1.55] ${isDark ? "text-white/78" : "text-[#27384a]"}`}>{diagnosis.summary}</p>
+            <p className={`mt-3 max-w-[760px] text-[0.92rem] leading-[1.55] ${isDark ? "text-white/78" : "text-[#27384a]"}`} dangerouslySetInnerHTML={{ __html: diagnosis.summary }} />
           </div>
           <div className={`rounded-xl border px-4 py-3 ${isDark ? severity.darkBadge : severity.badge}`}>
             <p className="text-[0.7rem] font-bold uppercase tracking-[0.08em]">Tracked engine codes</p>
@@ -456,7 +456,7 @@ function ResultsScreen({ diagnosis, verdict, engineOption, ctas, isDark }) {
             <div className={`rounded-xl border p-4 ${isDark ? verdictInfo.darkBadge : verdictInfo.badge}`}>
               <p className="text-[0.72rem] font-bold uppercase tracking-[0.08em]">Verdict</p>
               <p className="mt-2 text-[1.15rem] font-bold leading-tight">{verdictInfo.title}</p>
-              <p className="mt-2 text-[0.82rem] leading-[1.45]">{verdictInfo.text}</p>
+              <p className="mt-2 text-[0.82rem] leading-[1.45]" dangerouslySetInnerHTML={{ __html: verdictInfo.text }} />
             </div>
 
             <div className={`mt-4 rounded-xl border p-4 ${isDark ? "border-[#223343] bg-[rgba(14,28,41,0.84)]" : "border-[#d7dde6] bg-[#fbfdff]"}`}>
@@ -576,7 +576,7 @@ export default function HomeSec3({ data }) {
           <div className="mt-4">
             <MStripe />
           </div>
-          <p className={`mt-4 max-w-[660px] text-[0.92rem] leading-[1.48] md:text-[1.04rem] ${isDark ? "text-white/78" : "text-[#27384a]"}`}>{data.subHeadline}</p>
+          <p className={`mt-4 max-w-[660px] text-[0.92rem] leading-[1.48] md:text-[1.04rem] ${isDark ? "text-white/78" : "text-[#27384a]"}`} dangerouslySetInnerHTML={{ __html: data.subHeadline }} />
         </div>
 
         <TrustStrip items={data.trustStrip} isDark={isDark} />

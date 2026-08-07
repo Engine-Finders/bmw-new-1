@@ -253,7 +253,7 @@
     }
   },
   "hero": {
-    "tagPill": "BMW X1 • 2009–Present • 3 Generations (E84, F48, U11) • N47, N52, N20, N55, B38, B47, B48",
+    "tagPill": "BMW X1 • 2009–Present • 3 Generations (E84, F48, U11) • <a href='https://bmwengines.uk/engine/n47'>N47</a>, <a href='https://bmwengines.uk/engine/n52-n53'>N52</a>, <a href='https://bmwengines.uk/engine/n13-n20'>N20</a>, <a href='https://bmwengines.uk/engine/n54-n55'>N55</a>, <a href='https://bmwengines.uk/engine/b38-b48'>B38</a>, <a href='https://bmwengines.uk/engine/b37-b47'>B47</a>, B48",
     "h1": "X1 Engines - The Complete UK Guide",
     "subHeadline": "Every BMW X1 engine across three generations - from the N47 diesel and N52 straight-six of the E84 to the B38 three-cylinder and B48 four-cylinder of the F48 and U11. Real UK replacement costs, known failure patterns, and honest ownership economics for BMW's entry-level SUV. Backed by real UK X1 engine enquiries in 2025 [BMW-VERIFIED].",
     "trustStrip": [
@@ -377,12 +377,12 @@
       {
         "title": "First Generation - E84 (2009–2015)",
         "badge": "BMW X1 E84 🔥 Most Enquired - N47 drives volume [BMW-VERIFIED]",
-        "meta": "2009–2015 • N46, N20, N47, N52, N55 - RWD-based (E90 platform)",
+        "meta": "2009–2015 • <a href='https://bmwengines.uk/engine/n40-n42-n43-n45-n46'>N46</a>, N20, N47, N52, N55 - RWD-based (E90 platform)",
         "rating": "★★★☆☆",
         "verdict": "The original X1 - based on the E90 3 Series platform with rear-wheel-drive as standard. The N52 straight-six is the robust pick; the N47 diesel carries the chain-tensioner caveat; the N20 petrol has timing chain issues. Buy the N52 or a diesel with documented chain history.",
         "cta": {
           "label": "Explore the E84 →",
-          "href": "#"
+          "href": "https://bmwengines.uk/x1/e84"
         }
       },
       {
@@ -393,7 +393,7 @@
         "verdict": "The second-generation X1 - switched to front-wheel-drive-based UKL2 platform. The B47 diesel replaced the N47, finally fixing the chain issue. The B38 three-cylinder and B48 four-cylinder are the modern gold standard. This is the X1 generation to buy.",
         "cta": {
           "label": "Explore the F48 →",
-          "href": "#"
+          "href": "https://bmwengines.uk/x1/f48"
         }
       },
       {
@@ -404,7 +404,7 @@
         "verdict": "The third-generation X1 - revealed June 2022, launched October 2022. Available with petrol, diesel, plug-in hybrid, and fully electric iX1 powertrains. The B-family engines are the most dependable ever fitted to the badge - buy with confidence.",
         "cta": {
           "label": "Explore the U11 →",
-          "href": "#"
+          "href": "https://bmwengines.uk/x1/u11"
         }
       },
       {
@@ -538,7 +538,7 @@
         "years": "2015–present",
         "model": "F48, U11",
         "reliability": "★★★★½",
-        "enquiries": "- (pattern data - under B58 aggregate)",
+        "enquiries": "- (pattern data - under <a href='https://bmwengines.uk/engine/b57-b58'>B58</a> aggregate)",
         "avgRebuildCost": "£3,000–£5,000 [PLACEHOLDER - confirm vs cost sheet]"
       },
       {

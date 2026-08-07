@@ -107,7 +107,7 @@
               "name": "Which BMW M1 E26 engine is the most reliable?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "The M88/1 road engine (277 PS) -it's the most common and most durable of the M88 variants, with the lowest state of tune. With proper maintenance, it's genuinely reliable for a high-strung classic engine. The cooling system is the key weakness, so upgraded cooling is recommended."
+                "text": "The M88/1 road engine (277 PS) -it\u0027s the most common and most durable of the M88 variants, with the lowest state of tune. With proper maintenance, it\u0027s genuinely reliable for a high-strung classic engine. The cooling system is the key weakness, so upgraded cooling is recommended."
               }
             },
             {
@@ -115,7 +115,7 @@
               "name": "What are the common problems with the BMW M1 E26?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "M88 cooling system failure (the single most common cause of engine damage), timing chain tensioner wear, Kugelfischer mechanical fuel injection wear and calibration issues, and -due to the car's rarity -parts scarcity and the limited number of specialists who can work on the engine."
+                "text": "M88 cooling system failure (the single most common cause of engine damage), timing chain tensioner wear, Kugelfischer mechanical fuel injection wear and calibration issues, and -due to the car\u0027s rarity -parts scarcity and the limited number of specialists who can work on the engine."
               }
             },
             {
@@ -131,7 +131,7 @@
               "name": "Which BMW M1 E26 engine should I avoid?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "The Group 5 turbo engine (~850 PS) -it's the ultimate M1 engine but incredibly fragile and only suitable for collectors or track use with unlimited budgets. The Procar and Group 4 engines are also high-maintenance. For most buyers, the road-going M88/1 is the right choice."
+                "text": "The Group 5 turbo engine (~850 PS) -it\u0027s the ultimate M1 engine but incredibly fragile and only suitable for collectors or track use with unlimited budgets. The Procar and Group 4 engines are also high-maintenance. For most buyers, the road-going M88/1 is the right choice."
               }
             },
             {
@@ -147,7 +147,7 @@
               "name": "Is it worth replacing a BMW M1 E26 engine, or should I scrap the car?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "This question doesn't apply to an M1 -these cars are worth £350,000–£450,000, so a £10,000 engine rebuild is a trivial percentage of the car's value. The 70% BMW threshold does not apply to a car that has appreciated by over 10,000% from its original price. M1s are never scrapped; they are restored."
+                "text": "This question doesn\u0027t apply to an M1 -these cars are worth £350,000–£450,000, so a £10,000 engine rebuild is a trivial percentage of the car\u0027s value. The 70% BMW threshold does not apply to a car that has appreciated by over 10,000% from its original price. M1s are never scrapped; they are restored."
               }
             },
             {
@@ -155,15 +155,15 @@
               "name": "How long do BMW M1 E26 engines last?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "The M88/1 road engine can exceed 100,000 miles with proper maintenance -it's a durable design. However, many M1s have low mileage (30,000–50,000 miles) due to their collector status. The Procar and Group 5 engines are rebuilt frequently -often after every race event."
+                "text": "The M88/1 road engine can exceed 100,000 miles with proper maintenance -it\u0027s a durable design. However, many M1s have low mileage (30,000–50,000 miles) due to their collector status. The Procar and Group 5 engines are rebuilt frequently -often after every race event."
               }
             },
             {
               "@type": "Question",
-              "name": "What is the difference between the M1 E26 and the M88 engine's later applications?",
+              "name": "What is the difference between the M1 E26 and the M88 engine\u0027s later applications?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "The M88/1 in the M1 is unique -it features Kugelfischer mechanical fuel injection, six individual throttle bodies, and a 277 PS output. The later M88/3 (used in the E24 M6/M635CSi, E28 M5 and E34 M5) used Bosch Motronic electronic fuel injection and produced 286 PS. The M1's mid-engine layout also means the engine is mounted transversely, unlike the longitudinal fitment in the M5 and M6."
+                "text": "The M88/1 in the M1 is unique -it features Kugelfischer mechanical fuel injection, six individual throttle bodies, and a 277 PS output. The later M88/3 (used in the E24 M6/M635CSi, E28 M5 and E34 M5) used Bosch Motronic electronic fuel injection and produced 286 PS. The M1\u0027s mid-engine layout also means the engine is mounted transversely, unlike the longitudinal fitment in the M5 and M6."
               }
             },
             {
@@ -171,7 +171,7 @@
               "name": "How do I find my BMW M1 E26 engine code?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "The engine number is stamped on the block, on the right-hand side near the front of the engine, above the sump. The M88/1 engine number begins with 'M88/1' followed by a sequence number. Tell us your car's VIN and we'll identify it -20+ vetted BMW specialists, including M1 experts, will confirm it for free."
+                "text": "The engine number is stamped on the block, on the right-hand side near the front of the engine, above the sump. The M88/1 engine number begins with \u0027M88/1\u0027 followed by a sequence number. Tell us your car\u0027s VIN and we\u0027ll identify it -20+ vetted BMW specialists, including M1 experts, will confirm it for free."
               }
             }
           ]
@@ -205,7 +205,7 @@
         {
           "@type": "Dataset",
           "name": "BMW M1 E26 UK Engine Enquiry Data 2025",
-          "description": "Proprietary UK enquiry volumes and demand trends for BMW M1 E26 engines, sourced from BMWEngines.uk's specialist marketplace activity.",
+          "description": "Proprietary UK enquiry volumes and demand trends for BMW M1 E26 engines, sourced from BMWEngines.uk\u0027s specialist marketplace activity.",
           "creator": {
             "@type": "Organization",
             "name": "BMWEngines.uk"
@@ -239,7 +239,7 @@
   "hero": {
     "tagPill": "BMW M1 E26 • Coupé • 1978–1981",
     "h1": "BMW M1 E26 Engines -The Complete UK Guide",
-    "subHeadline": "The engine that defined BMW's first supercar -the 3.5-litre M88 straight-six that powered the E26 M1. Real UK replacement costs, honest reliability data, and the Kugelfischer fuel-injection system most guides overlook. Backed by 256+ real UK E26 enquiries in 2025 [BMW-VERIFIED].",
+    "subHeadline": "The engine that defined BMW\u0027s first supercar -the 3.5-litre M88 straight-six that powered the E26 M1. Real UK replacement costs, honest reliability data, and the Kugelfischer fuel-injection system most guides overlook. Backed by 256+ real UK E26 enquiries in 2025 [BMW-VERIFIED].",
     "trustStrip": [
       {
         "icon": "📊",
@@ -363,14 +363,14 @@
     ],
     "confidenceScore": {
       "title": "How confident are these ratings?",
-      "text": "All reliability ratings are [PROVISIONAL] -no dedicated Engine Page exists yet for any E26 engine family. The M88/1's reputation for reliability is good -not bulletproof, but genuinely solid for a high-strung engine of its era. The road engine is considered more durable than the racing variants, which were rebuilt frequently. Ratings derived from cross-referencing multiple specialist and owner sources."
+      "text": "All reliability ratings are [PROVISIONAL] -no dedicated Engine Page exists yet for any E26 engine family. The M88/1\u0027s reputation for reliability is good -not bulletproof, but genuinely solid for a high-strung engine of its era. The road engine is considered more durable than the racing variants, which were rebuilt frequently. Ratings derived from cross-referencing multiple specialist and owner sources."
     },
     "dataCorrections": []
   },
   "overview": {
     "h2": "BMW M1 E26 -Overview",
-    "intro": "The BMW M1 (model code E26) is a mid-engined sports car produced by BMW from 1978 until 1981. It was BMW's first and -until the i8 -only mass-produced mid-engined car. The M1 was conceived as a homologation special for Group 4 racing, with 400 examples required for approval. The project was initially developed in partnership with Lamborghini, but financial difficulties forced BMW to take over production in April 1978. The body was designed by Giorgetto Giugiaro at Italdesign, inspired by the 1972 BMW Turbo show car. A version of the M88 engine later powered the E24 M6/M635CSi, E28 M5 and E34 M5.",
-    "keyFacts": "Platform: BMW E26 (tubular space frame, mid-engine) • Predecessor: BMW Turbo (concept car) • Successor: None (M1 was BMW's only mid-engined supercar until the i8) • Sibling body styles in this generation: None (standalone model)",
+    "intro": "The BMW M1 (model code E26) is a mid-engined sports car produced by BMW from 1978 until 1981. It was BMW\u0027s first and -until the i8 -only mass-produced mid-engined car. The M1 was conceived as a homologation special for Group 4 racing, with 400 examples required for approval. The project was initially developed in partnership with Lamborghini, but financial difficulties forced BMW to take over production in April 1978. The body was designed by Giorgetto Giugiaro at Italdesign, inspired by the 1972 BMW Turbo show car. A version of the M88 engine later powered the E24 M6/M635CSi, E28 M5 and E34 M5.",
+    "keyFacts": "Platform: BMW E26 (tubular space frame, mid-engine) • Predecessor: BMW Turbo (concept car) • Successor: None (M1 was BMW\u0027s only mid-engined supercar until the i8) • Sibling body styles in this generation: None (standalone model)",
     "marketIntelligenceLine": "The E26 M1 generated 256 real UK engine enquiries in 2025 [BMW-VERIFIED], concentrated on the M88/1 engine as these rare supercars continue to appreciate in value and require specialist maintenance."
   },
   "bestWorstEngines": {
@@ -378,13 +378,13 @@
       {
         "slot": "Best Petrol Overall",
         "engine": "M88/1 (3.5-litre straight-six, 277 PS, road)",
-        "quote": "The M88/1 is BMW's first M-dedicated engine -a 3.5-litre DOHC straight-six with Kugelfischer mechanical fuel injection, six individual throttle bodies and 277 PS. It's the engine that defined BMW M's identity and remains one of the most characterful engines ever fitted to a BMW. The road version is genuinely solid for a high-strung engine of its era -not bulletproof, but reliable with proper maintenance.",
-        "whoItsFor": "collectors who want the definitive M1 experience with the road-going engine's relative simplicity."
+        "quote": "The M88/1 is BMW\u0027s first M-dedicated engine -a 3.5-litre DOHC straight-six with Kugelfischer mechanical fuel injection, six individual throttle bodies and 277 PS. It\u0027s the engine that defined BMW M\u0027s identity and remains one of the most characterful engines ever fitted to a BMW. The road version is genuinely solid for a high-strung engine of its era -not bulletproof, but reliable with proper maintenance.",
+        "whoItsFor": "collectors who want the definitive M1 experience with the road-going engine\u0027s relative simplicity."
       },
       {
         "slot": "Highest Risk",
         "engine": "M88/1 Group 5 Turbo (3.2-litre turbo, ~850 PS)",
-        "quote": "The Group 5 turbo engine is the ultimate M88 -a 3.2-litre unit with a KKK turbocharger producing ~850 PS. It's one of the most powerful engines BMW ever built for racing, but the turbocharged M88 is notoriously fragile. Reliability is a secondary concern when you're chasing 850 PS from a 3.2-litre straight-six.",
+        "quote": "The Group 5 turbo engine is the ultimate M88 -a 3.2-litre unit with a KKK turbocharger producing ~850 PS. It\u0027s one of the most powerful engines BMW ever built for racing, but the turbocharged M88 is notoriously fragile. Reliability is a secondary concern when you\u0027re chasing 850 PS from a 3.2-litre straight-six.",
         "whoItsFor": "collectors who want the ultimate M1 -the rarest and most valuable variant."
       },
       {
@@ -396,13 +396,13 @@
       {
         "slot": "Best Value",
         "engine": "M88/1 (road, 277 PS)",
-        "quote": "The road-going M88/1 is the most sensible M1 engine -277 PS is more than enough to enjoy the car's handling, and the naturally aspirated straight-six is significantly more reliable than the racing variants. It's also the engine that most M1s were built with -399 of the 453 produced.",
-        "whoItsFor": "buyers who want the M1 experience without the racing engine's maintenance demands."
+        "quote": "The road-going M88/1 is the most sensible M1 engine -277 PS is more than enough to enjoy the car\u0027s handling, and the naturally aspirated straight-six is significantly more reliable than the racing variants. It\u0027s also the engine that most M1s were built with -399 of the 453 produced.",
+        "whoItsFor": "buyers who want the M1 experience without the racing engine\u0027s maintenance demands."
       },
       {
         "slot": "Most Overlooked",
         "engine": "M88/1 with upgraded cooling",
-        "quote": "Many M1s have received electric water pump conversions and cooling system upgrades to address the engine's weak point. These cars are often overlooked in favour of 'original' examples, but a properly upgraded cooling system makes the M88/1 significantly more reliable and usable.",
+        "quote": "Many M1s have received electric water pump conversions and cooling system upgrades to address the engine\u0027s weak point. These cars are often overlooked in favour of \u0027original\u0027 examples, but a properly upgraded cooling system makes the M88/1 significantly more reliable and usable.",
         "whoItsFor": "buyers who actually want to drive their M1, not just look at it."
       }
     ]
@@ -445,7 +445,7 @@
     ],
     "economicsRule": {
       "title": "The E26 rule",
-      "text": "A £8,000–£15,000 M88 recon against a £350,000–£450,000 M1 sits at 2–4% of the car's value -a trivial percentage for a car of this value. However, the cost of maintaining an M1 goes far beyond the engine: specialist parts, limited specialist knowledge, and the sheer rarity of the car mean that any major engine work is a significant financial commitment. The 70% BMW threshold doesn't apply to a car that has appreciated by over 10,000% from its original £30,000 price."
+      "text": "A £8,000–£15,000 M88 recon against a £350,000–£450,000 M1 sits at 2–4% of the car\u0027s value -a trivial percentage for a car of this value. However, the cost of maintaining an M1 goes far beyond the engine: specialist parts, limited specialist knowledge, and the sheer rarity of the car mean that any major engine work is a significant financial commitment. The 70% BMW threshold doesn\u0027t apply to a car that has appreciated by over 10,000% from its original £30,000 price."
     },
     "keyTakeaways": [
       {
@@ -525,7 +525,7 @@
         "title": "Kugelfischer Mechanical Fuel Injection Wear",
         "affectedModels": "All BMW M1 E26 variants (M88/1, 1978–1981).",
         "typicalFailureMileage": "40,000–80,000 miles.",
-        "rootCause": "The Kugelfischer-Bosch mechanical fuel injection system is a masterpiece of engineering, but it's complex and expensive to maintain. The system can develop leaks, blockages or wear in the injection pump, leading to poor running, misfires, and reduced power. A misfire under load is a common symptom.",
+        "rootCause": "The Kugelfischer-Bosch mechanical fuel injection system is a masterpiece of engineering, but it\u0027s complex and expensive to maintain. The system can develop leaks, blockages or wear in the injection pump, leading to poor running, misfires, and reduced power. A misfire under load is a common symptom.",
         "tieredCosts": [
           {
             "tier": "Specialist",
@@ -550,7 +550,7 @@
       },
       {
         "id": 4,
-        "title": "M1 Parts Scarcity & Specialist Knowledge",
+        "title": "M1 Parts Scarcity \u0026 Specialist Knowledge",
         "affectedModels": "All BMW M1 E26 variants (1978–1981).",
         "typicalFailureMileage": "N/A -parts availability is the issue.",
         "rootCause": "With only 453 M1s ever built, parts are extremely scarce. Many components are unique to the M1 and are no longer produced by BMW. Specialist knowledge is limited to a handful of experts worldwide. The cost of parts and labour is significantly higher than for any other BMW.",
@@ -570,7 +570,7 @@
             "note": ""
           }
         ],
-        "recommendation": "Before buying an M1, establish a relationship with a specialist who knows the car. Join the BMW M1 owners' club and network with other owners to source parts. Be prepared for long lead times and significant costs.",
+        "recommendation": "Before buying an M1, establish a relationship with a specialist who knows the car. Join the BMW M1 owners\u0027 club and network with other owners to source parts. Be prepared for long lead times and significant costs.",
         "cta": {
           "label": "Compare M1 specialist services for your E26 M1 →",
           "href": "#"
@@ -626,7 +626,12 @@
   },
   "coreVariants": {
     "dieselVariants": [],
-    "petrolVariants": [],
+    "petrolVariants": [
+      {
+        "name": "M1 3.5",
+        "url": "https://bmwengines.uk/m1/35"
+      }
+    ],
     "scopeNote": "All variants listed are E26 body code only -the mid-engined supercar produced from 1978 to 1981. All M1s were left-hand drive. The M88/1 engine in the road car produced 277 PS; the Procar and Group 4 variants produced 470 PS; the Group 5 turbo variant produced ~850 PS. Only 453 M1s were built in total."
   },
   "marketIntelligence": {
@@ -680,12 +685,12 @@
       {
         "id": 2,
         "question": "Which BMW M1 E26 engine is the most reliable?",
-        "answer": "The M88/1 road engine (277 PS) -it's the most common and most durable of the M88 variants, with the lowest state of tune. With proper maintenance, it's genuinely reliable for a high-strung classic engine. The cooling system is the key weakness, so upgraded cooling is recommended."
+        "answer": "The M88/1 road engine (277 PS) -it\u0027s the most common and most durable of the M88 variants, with the lowest state of tune. With proper maintenance, it\u0027s genuinely reliable for a high-strung classic engine. The cooling system is the key weakness, so upgraded cooling is recommended."
       },
       {
         "id": 3,
         "question": "What are the common problems with the BMW M1 E26?",
-        "answer": "M88 cooling system failure (the single most common cause of engine damage), timing chain tensioner wear, Kugelfischer mechanical fuel injection wear and calibration issues, and -due to the car's rarity -parts scarcity and the limited number of specialists who can work on the engine."
+        "answer": "M88 cooling system failure (the single most common cause of engine damage), timing chain tensioner wear, Kugelfischer mechanical fuel injection wear and calibration issues, and -due to the car\u0027s rarity -parts scarcity and the limited number of specialists who can work on the engine."
       },
       {
         "id": 4,
@@ -695,7 +700,7 @@
       {
         "id": 5,
         "question": "Which BMW M1 E26 engine should I avoid?",
-        "answer": "The Group 5 turbo engine (~850 PS) -it's the ultimate M1 engine but incredibly fragile and only suitable for collectors or track use with unlimited budgets. The Procar and Group 4 engines are also high-maintenance. For most buyers, the road-going M88/1 is the right choice."
+        "answer": "The Group 5 turbo engine (~850 PS) -it\u0027s the ultimate M1 engine but incredibly fragile and only suitable for collectors or track use with unlimited budgets. The Procar and Group 4 engines are also high-maintenance. For most buyers, the road-going M88/1 is the right choice."
       },
       {
         "id": 6,
@@ -705,22 +710,22 @@
       {
         "id": 7,
         "question": "Is it worth replacing a BMW M1 E26 engine, or should I scrap the car?",
-        "answer": "This question doesn't apply to an M1 -these cars are worth £350,000–£450,000, so a £10,000 engine rebuild is a trivial percentage of the car's value. The 70% BMW threshold does not apply to a car that has appreciated by over 10,000% from its original price. M1s are never scrapped; they are restored."
+        "answer": "This question doesn\u0027t apply to an M1 -these cars are worth £350,000–£450,000, so a £10,000 engine rebuild is a trivial percentage of the car\u0027s value. The 70% BMW threshold does not apply to a car that has appreciated by over 10,000% from its original price. M1s are never scrapped; they are restored."
       },
       {
         "id": 8,
         "question": "How long do BMW M1 E26 engines last?",
-        "answer": "The M88/1 road engine can exceed 100,000 miles with proper maintenance -it's a durable design. However, many M1s have low mileage (30,000–50,000 miles) due to their collector status. The Procar and Group 5 engines are rebuilt frequently -often after every race event."
+        "answer": "The M88/1 road engine can exceed 100,000 miles with proper maintenance -it\u0027s a durable design. However, many M1s have low mileage (30,000–50,000 miles) due to their collector status. The Procar and Group 5 engines are rebuilt frequently -often after every race event."
       },
       {
         "id": 9,
-        "question": "What is the difference between the M1 E26 and the M88 engine's later applications?",
-        "answer": "The M88/1 in the M1 is unique -it features Kugelfischer mechanical fuel injection, six individual throttle bodies, and a 277 PS output. The later M88/3 (used in the E24 M6/M635CSi, E28 M5 and E34 M5) used Bosch Motronic electronic fuel injection and produced 286 PS. The M1's mid-engine layout also means the engine is mounted transversely, unlike the longitudinal fitment in the M5 and M6."
+        "question": "What is the difference between the M1 E26 and the M88 engine\u0027s later applications?",
+        "answer": "The M88/1 in the M1 is unique -it features Kugelfischer mechanical fuel injection, six individual throttle bodies, and a 277 PS output. The later M88/3 (used in the E24 M6/M635CSi, E28 M5 and E34 M5) used Bosch Motronic electronic fuel injection and produced 286 PS. The M1\u0027s mid-engine layout also means the engine is mounted transversely, unlike the longitudinal fitment in the M5 and M6."
       },
       {
         "id": 10,
         "question": "How do I find my BMW M1 E26 engine code?",
-        "answer": "The engine number is stamped on the block, on the right-hand side near the front of the engine, above the sump. The M88/1 engine number begins with \"M88/1\" followed by a sequence number. Tell us your car's VIN and we'll identify it -20+ vetted BMW specialists, including M1 experts, will confirm it for free."
+        "answer": "The engine number is stamped on the block, on the right-hand side near the front of the engine, above the sump. The M88/1 engine number begins with \"M88/1\" followed by a sequence number. Tell us your car\u0027s VIN and we\u0027ll identify it -20+ vetted BMW specialists, including M1 experts, will confirm it for free."
       }
     ]
   },
@@ -733,11 +738,11 @@
       },
       {
         "title": "Compare M1 Engine Replacement Companies",
-        "text": "see prices, warranty terms and supply & fit options side‑by‑side before you commit to a six-figure restoration."
+        "text": "see prices, warranty terms and supply \u0026 fit options side‑by‑side before you commit to a six-figure restoration."
       },
       {
         "title": "UK Engine Replacement Services for M1",
-        "text": "covering every variant from the road M88/1 to the Procar and Group 5 engines, with supply‑only or full supply & fit available from a nationwide network of classic car specialists."
+        "text": "covering every variant from the road M88/1 to the Procar and Group 5 engines, with supply‑only or full supply \u0026 fit available from a nationwide network of classic car specialists."
       }
     ],
     "finalCta": "Find the best BMW M1 E26 engine replacement UK collectors trust. Compare real prices from trusted specialists on EnginesMarket today and protect your investment.",

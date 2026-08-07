@@ -58,9 +58,7 @@ export default function HomeSec13({ data }) {
                       <PlusIcon />
                     </span>
                   </summary>
-                  <p className={`border-t px-4 pb-4 pt-3 text-[0.84rem] leading-[1.5] ${isDark ? "border-[#223343] text-white/74" : "border-[#e7ebf0] text-[#27384a]"}`}>
-                    {item.answer}
-                  </p>
+                  <p className={`border-t px-4 pb-4 pt-3 text-[0.84rem] leading-[1.5] ${isDark ? "border-[#223343] text-white/74" : "border-[#e7ebf0] text-[#27384a]"}`} dangerouslySetInnerHTML={{ __html: item.answer }} />
                 </details>
               ))}
             </div>

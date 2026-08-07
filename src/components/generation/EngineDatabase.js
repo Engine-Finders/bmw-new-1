@@ -32,25 +32,25 @@ function DesktopRow({ engine, isDark }) {
     <div
       className={`grid ${DESKTOP_COLS} items-center gap-px ${rowClass} px-4 py-2 text-[0.78rem] border-b ${borderBottom} last:border-b-0`}
     >
-      <span className={`min-w-0 px-2 font-semibold border-r ${cellDivider}`}>{engine.engineCode}</span>
-      <span className={`min-w-0 px-2 ${mutedText} border-r ${cellDivider}`}>{engine.family}</span>
+      <span className={`min-w-0 px-2 font-semibold border-r ${cellDivider}`} dangerouslySetInnerHTML={{ __html: engine.engineCode }} />
+      <span className={`min-w-0 px-2 ${mutedText} border-r ${cellDivider}`} dangerouslySetInnerHTML={{ __html: engine.family }} />
       <span className={`flex min-w-0 items-center gap-1.5 px-2 ${mutedText} border-r ${cellDivider}`}>
         <FuelIcon fuel={engine.fuel} className="h-3.5 w-3.5 shrink-0" />
-        <span className="min-w-0">{engine.fuel}</span>
+        <span className="min-w-0" dangerouslySetInnerHTML={{ __html: engine.fuel }} />
       </span>
-      <span className={`min-w-0 px-2 ${mutedText} border-r ${cellDivider}`}>{engine.displacement}</span>
-      <span className={`min-w-0 px-2 ${mutedText} border-r ${cellDivider}`}>{engine.power}</span>
-      <span className={`min-w-0 px-2 ${mutedText} border-r ${cellDivider}`}>{engine.years}</span>
-      <span className={`min-w-0 px-2 ${mutedText} border-r ${cellDivider}`}>{engine.variants}</span>
+      <span className={`min-w-0 px-2 ${mutedText} border-r ${cellDivider}`} dangerouslySetInnerHTML={{ __html: engine.displacement }} />
+      <span className={`min-w-0 px-2 ${mutedText} border-r ${cellDivider}`} dangerouslySetInnerHTML={{ __html: engine.power }} />
+      <span className={`min-w-0 px-2 ${mutedText} border-r ${cellDivider}`} dangerouslySetInnerHTML={{ __html: engine.years }} />
+      <span className={`min-w-0 px-2 ${mutedText} border-r ${cellDivider}`} dangerouslySetInnerHTML={{ __html: engine.variants }} />
       <span className={`flex min-w-0 flex-col gap-0.5 px-2 border-r ${cellDivider}`}>
         <Stars value={engine.reliability} className="text-[0.85rem]" />
         <GenBadge tag={engine.reliabilityTag} isDark={isDark} />
         {engine.reliabilityDetail ? (
-          <span className={`text-[0.64rem] leading-[1.2] ${softText}`}>{engine.reliabilityDetail}</span>
+          <span className={`text-[0.64rem] leading-[1.2] ${softText}`} dangerouslySetInnerHTML={{ __html: engine.reliabilityDetail }} />
         ) : null}
       </span>
-      <span className={`min-w-0 px-2 ${mutedText} border-r ${cellDivider}`}>{engine.enquiries}</span>
-      <span className="min-w-0 px-2 font-semibold">{engine.avgReconCost}</span>
+      <span className={`min-w-0 px-2 ${mutedText} border-r ${cellDivider}`} dangerouslySetInnerHTML={{ __html: engine.enquiries }} />
+      <span className="min-w-0 px-2 font-semibold" dangerouslySetInnerHTML={{ __html: engine.avgReconCost }} />
     </div>
   );
 }
@@ -69,22 +69,22 @@ function MobileRow({ engine, isDark }) {
       className={`grid ${MOBILE_COLS} items-center gap-px ${rowClass} px-3 py-1.5 text-[0.68rem] leading-[1.25] border-b ${borderBottom} last:border-b-0`}
     >
       <span className={`px-1.5 border-r ${cellDivider}`}>
-        <span className="block font-semibold">{engine.engineCode}</span>
-        <span className={`block text-[0.62rem] ${softText}`}>{engine.family}</span>
+        <span className="block font-semibold" dangerouslySetInnerHTML={{ __html: engine.engineCode }} />
+        <span className={`block text-[0.62rem] ${softText}`} dangerouslySetInnerHTML={{ __html: engine.family }} />
       </span>
       <span className={`flex items-center gap-1 px-1.5 ${mutedText} border-r ${cellDivider}`}>
         <FuelIcon fuel={engine.fuel} className="h-3.5 w-3.5 shrink-0" />
-        {engine.fuel}
+        <span dangerouslySetInnerHTML={{ __html: engine.fuel }} />
       </span>
-      <span className={`px-1.5 ${mutedText} border-r ${cellDivider}`}>{engine.power}</span>
-      <span className={`px-1.5 ${mutedText} border-r ${cellDivider}`}>{engine.years}</span>
+      <span className={`px-1.5 ${mutedText} border-r ${cellDivider}`} dangerouslySetInnerHTML={{ __html: engine.power }} />
+      <span className={`px-1.5 ${mutedText} border-r ${cellDivider}`} dangerouslySetInnerHTML={{ __html: engine.years }} />
       <span className={`flex flex-col items-start gap-1 px-1.5 border-r ${cellDivider}`}>
         <Stars value={engine.reliability} className="text-[0.72rem]" />
         <GenBadge tag={engine.reliabilityTag} isDark={isDark} />
       </span>
-      <span className={`px-1.5 ${mutedText} border-r ${cellDivider}`}>{engine.enquiries}</span>
+      <span className={`px-1.5 ${mutedText} border-r ${cellDivider}`} dangerouslySetInnerHTML={{ __html: engine.enquiries }} />
       <span className="flex items-center gap-1 px-1.5 font-semibold">
-        {engine.avgReconCost}
+        <span dangerouslySetInnerHTML={{ __html: engine.avgReconCost }} />
         <GenIcon name="chevron" className="h-3.5 w-3.5 shrink-0 text-[var(--color-primary)]" />
       </span>
     </div>
@@ -116,16 +116,18 @@ export default function EngineDatabase({ data }) {
             />
           </span>
 
-          <h2 className="max-w-[760px] text-[2.15rem] font-bold leading-[1.1] tracking-normal text-[var(--color-text)] md:text-[3rem]">
-            {data.h2}
-          </h2>
+          <h2
+            className="max-w-[760px] text-[2.15rem] font-bold leading-[1.1] tracking-normal text-[var(--color-text)] md:text-[3rem]"
+            dangerouslySetInnerHTML={{ __html: data.h2 }}
+          />
           <div className="mt-3">
             <MStripe />
           </div>
           {data.subHeadline ? (
-            <p className="mt-4 max-w-[920px] text-[0.88rem] leading-[1.4] text-[var(--color-text-muted)] md:mt-5 md:text-[1.08rem] md:leading-[1.42]">
-              {data.subHeadline}
-            </p>
+            <p
+              className="mt-4 max-w-[920px] text-[0.88rem] leading-[1.4] text-[var(--color-text-muted)] md:mt-5 md:text-[1.08rem] md:leading-[1.42]"
+              dangerouslySetInnerHTML={{ __html: data.subHeadline }}
+            />
           ) : null}
         </div>
 
@@ -185,11 +187,9 @@ export default function EngineDatabase({ data }) {
                     <span className={`flex h-5 w-5 shrink-0 items-center justify-center ${iconTone}`}>
                       <GenIcon name={item.icon} className="h-5 w-5" />
                     </span>
-                    <span>{item.label}</span>
+                    <span dangerouslySetInnerHTML={{ __html: item.label }} />
                   </p>
-                  <p className="text-[0.8rem] leading-[1.45] text-[var(--color-text-muted)]">
-                    {item.text}
-                  </p>
+                  <p className="text-[0.8rem] leading-[1.45] text-[var(--color-text-muted)]" dangerouslySetInnerHTML={{ __html: item.text }} />
                 </div>
               );
             })}

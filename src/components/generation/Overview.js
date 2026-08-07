@@ -80,8 +80,8 @@ export default function Overview({ data }) {
         </span>
       )}
       <div className="min-w-0 flex-1">
-        <p className={`text-[0.8rem] font-semibold leading-[1.25] ${factLabelClass}`}>{fact.label}</p>
-        <p className={`mt-0.5 text-[0.74rem] leading-[1.3] ${factValueClass}`}>{fact.value}</p>
+        <p className={`text-[0.8rem] font-semibold leading-[1.25] ${factLabelClass}`} dangerouslySetInnerHTML={{ __html: fact.label }} />
+        <p className={`mt-0.5 text-[0.74rem] leading-[1.3] ${factValueClass}`} dangerouslySetInnerHTML={{ __html: fact.value }} />
       </div>
     </div>
   );
@@ -142,8 +142,8 @@ export default function Overview({ data }) {
               </span>
             )}
             <div className="min-w-0 flex-1">
-              <p className={`text-[0.8rem] font-semibold leading-[1.25] ${factLabelClass}`}>{fact.label}</p>
-              <p className={`mt-0.5 text-[0.74rem] leading-[1.3] ${factValueClass}`}>{fact.value}</p>
+              <p className={`text-[0.8rem] font-semibold leading-[1.25] ${factLabelClass}`} dangerouslySetInnerHTML={{ __html: fact.label }} />
+              <p className={`mt-0.5 text-[0.74rem] leading-[1.3] ${factValueClass}`} dangerouslySetInnerHTML={{ __html: fact.value }} />
             </div>
           </div>
         ))}
@@ -213,9 +213,10 @@ export default function Overview({ data }) {
           <p className="text-[0.72rem] font-semibold uppercase tracking-wide text-[var(--color-primary)]">
             Overview
           </p>
-          <h2 className="mt-1.5 text-[2.15rem] font-bold leading-[1.1] tracking-normal">
-            {data.h2}
-          </h2>
+          <h2
+            className="mt-1.5 text-[2.15rem] font-bold leading-[1.1] tracking-normal"
+            dangerouslySetInnerHTML={{ __html: data.h2 }}
+          />
 
           <div className="mt-2.5">
             <MStripe />
@@ -224,7 +225,7 @@ export default function Overview({ data }) {
           {introParts.length > 0 ? (
             <div className={`mt-4 flex flex-col gap-3 text-[0.9rem] leading-[1.5] ${bodyTextClass}`}>
               {introParts.map((para, i) => (
-                <p key={i}>{para}</p>
+                <p key={i} dangerouslySetInnerHTML={{ __html: para }} />
               ))}
             </div>
           ) : null}
@@ -263,9 +264,10 @@ export default function Overview({ data }) {
             <div aria-hidden="true" />
 
             <div className="flex flex-col justify-center pl-8">
-              <h2 className="text-[3rem] font-bold leading-[1.1] tracking-normal">
-                {data.h2}
-              </h2>
+              <h2
+                className="text-[3rem] font-bold leading-[1.1] tracking-normal"
+                dangerouslySetInnerHTML={{ __html: data.h2 }}
+              />
 
               <div className="mt-2.5">
                 <MStripe />
@@ -274,7 +276,7 @@ export default function Overview({ data }) {
               {introParts.length > 0 ? (
                 <div className={`mt-4 flex flex-col gap-3 text-[1.05rem] leading-[1.55] ${bodyTextClass}`}>
                   {introParts.map((para, i) => (
-                    <p key={i}>{para}</p>
+                    <p key={i} dangerouslySetInnerHTML={{ __html: para }} />
                   ))}
                 </div>
               ) : null}

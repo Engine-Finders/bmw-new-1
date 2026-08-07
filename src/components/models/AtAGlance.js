@@ -64,13 +64,13 @@ function IconBox({ metric }) {
 
   return (
     <span
-      className={`flex h-14 w-14 shrink-0 items-center justify-center rounded-md border shadow-sm ${
+      className={`flex h-11 w-11 shrink-0 items-center justify-center rounded-md border shadow-sm md:h-10 md:w-10 ${
         isRisk
           ? "border-red-200 bg-red-50 text-red-500"
           : "border-[rgba(11,103,220,0.18)] bg-[var(--color-primary-soft)] text-[var(--color-primary)]"
       }`}
     >
-      <svg aria-hidden="true" viewBox="0 0 24 24" className="h-8 w-8" fill="none" stroke="currentColor" strokeWidth="2">
+      <svg aria-hidden="true" viewBox="0 0 24 24" className="h-6 w-6 md:h-7 md:w-7" fill="none" stroke="currentColor" strokeWidth="2">
         {iconPaths[metric] || iconPaths.Generations}
       </svg>
     </span>
@@ -83,7 +83,7 @@ function ValueWithBadges({ value }) {
 
   return (
     <span className="inline-flex flex-wrap items-center gap-2">
-      <span className={isRating ? "text-[1.7rem] leading-none text-[var(--color-primary)]" : ""}>{text}</span>
+      <span className={isRating ? "text-[1.7rem] leading-none text-[var(--color-primary)]" : ""} dangerouslySetInnerHTML={{ __html: text }} />
       {parts.map((part) => (
         <span
           key={part}
@@ -92,7 +92,7 @@ function ValueWithBadges({ value }) {
           <svg aria-hidden="true" viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="2">
             <path d="M12 3 5 6v6c0 5 3.3 8.8 7 9 3.7-.2 7-4 7-9V6l-7-3Zm-2 9 1.6 1.6L15 10" />
           </svg>
-          {part}
+          <span dangerouslySetInnerHTML={{ __html: part }} />
         </span>
       ))}
     </span>
@@ -106,16 +106,16 @@ function DesktopTable({ rows, isDark }) {
         isDark ? "border-white/16 bg-[rgba(2,13,25,0.72)]" : "border-[var(--color-border)] bg-[rgba(255,255,255,0.84)]"
       }`}
     >
-      <div className={`grid grid-cols-[80px_0.95fr_1.7fr] border-b border-[var(--color-border)] px-7 py-4 font-semibold text-[var(--color-text)] ${sectionTableText}`}>
+      <div className={`grid grid-cols-[68px_0.95fr_1.7fr] border-b border-[var(--color-border)] px-5 py-3 font-semibold text-[var(--color-text)] md:grid-cols-[72px_0.95fr_1.7fr] md:px-5 md:py-3 ${sectionTableText}`}>
         <span />
         <span>Metric</span>
         <span>Value</span>
       </div>
       {rows.map((row) => (
-        <div key={row.metric} className="grid grid-cols-[80px_0.95fr_1.7fr] items-center border-b border-[var(--color-border)] px-7 py-3.5 last:border-b-0">
+        <div key={row.metric} className="grid grid-cols-[68px_0.95fr_1.7fr] items-center border-b border-[var(--color-border)] px-5 py-2.5 last:border-b-0 md:grid-cols-[72px_0.95fr_1.7fr] md:px-5 md:py-2.5">
           <IconBox metric={row.metric} />
-          <span className={`border-r border-[var(--color-border)] pr-7 font-semibold text-[var(--color-text)] ${sectionTableText}`}>{row.metric}</span>
-          <span className={`pl-9 text-[var(--color-text-muted)] ${sectionTableText}`}>
+          <span className={`border-r border-[var(--color-border)] pr-5 font-semibold text-[var(--color-text)] md:pr-5 ${sectionTableText}`} dangerouslySetInnerHTML={{ __html: row.metric }} />
+          <span className={`pl-5 text-[var(--color-text-muted)] md:pl-6 ${sectionTableText}`}>
             <ValueWithBadges value={row.value} />
           </span>
         </div>
@@ -126,12 +126,12 @@ function DesktopTable({ rows, isDark }) {
 
 function MobileCard({ row, wide = false }) {
   return (
-      <li className={`${wide ? "col-span-2" : ""} border-b border-[var(--color-border)] p-5 last:border-b-0`}>
-      <div className="flex items-center gap-3">
+      <li className={`${wide ? "col-span-2" : ""} border-b border-[var(--color-border)] p-3.5 last:border-b-0 md:p-5`}>
+      <div className="flex items-center gap-2.5 md:gap-3">
         <IconBox metric={row.metric} />
-        <p className={`min-w-0 font-semibold leading-tight text-[var(--color-text)] ${sectionTableText}`}>{row.metric}</p>
+        <p className={`min-w-0 font-semibold leading-tight text-[var(--color-text)] ${sectionTableText}`} dangerouslySetInnerHTML={{ __html: row.metric }} />
       </div>
-      <p className={`mt-3 font-bold leading-[1.35] text-[var(--color-text)] ${sectionBody}`}>
+      <p className={`mt-2.5 font-medium leading-[1.35] text-[var(--color-text)] md:mt-3 ${sectionBody}`}>
         <ValueWithBadges value={row.value} />
       </p>
     </li>
@@ -170,7 +170,7 @@ function RatingCard({ row }) {
       </span>
       <div>
         <p className="text-[18px] font-bold">Overall Rating</p>
-        <p className="mt-2 text-[40px] leading-none text-[var(--color-primary)] md:text-[50px]">{cleanText(row.value).replace(" 3.9/5", "")}</p>
+        <p className="mt-2 text-[40px] leading-none text-[var(--color-primary)] md:text-[50px]" dangerouslySetInnerHTML={{ __html: cleanText(row.value).replace(" 3.9/5", "") }} />
         <p className="mt-2 text-[18px] font-bold text-[var(--color-primary)]">3.9/5</p>
         <p className="mt-2 text-[15px] leading-[1.35] text-white/82">
           A perfect blend of performance, engineering excellence, and drivability.
@@ -212,23 +212,21 @@ export default function AtAGlance({ data }) {
       <div className="relative mx-auto w-full max-w-8xl px-4 md:px-8">
         <div className="max-w-[510px]">
           <h2 className={`font-bold tracking-normal text-[var(--color-text)] ${sectionH2}`}>
-            {title.before}
+            <span dangerouslySetInnerHTML={{ __html: title.before }} />
             {title.accent ? (
               <>
                 <br />
-                <span className="text-[var(--color-primary)]">{title.accent}</span>
+                <span className="text-[var(--color-primary)]" dangerouslySetInnerHTML={{ __html: title.accent }} />
               </>
             ) : null}
           </h2>
           <div className="mt-3">
             <MStripe />
           </div>
-          <p className={`mt-5 max-w-[430px] text-[var(--color-text-muted)] ${sectionDescription}`}>
-            {data.subHeadline}
-          </p>
+          <p className={`mt-5 max-w-[430px] text-[var(--color-text-muted)] ${sectionDescription}`} dangerouslySetInnerHTML={{ __html: data.subHeadline }} />
         </div>
 
-        <div className="mt-[180px] md:mt-6">
+        <div className="mt-6 md:mt-6">
           <DesktopTable rows={rows} isDark={isDark} />
           <MobileCards rows={rows} isDark={isDark} />
           <RatingCard row={ratingRow} />

@@ -113,7 +113,7 @@
               "name": "Which BMW 2 Series G42 engine is the most reliable?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "The B58 3.0-litre straight-six in the M240i xDrive has developed a reputation as one of BMW's most dependable modern engines -robust, smooth, and well-proven across the G20 3 Series and G22 4 Series. The B48 four-cylinder is also well-regarded for its reliability and efficiency."
+                "text": "The B58 3.0-litre straight-six in the M240i xDrive has developed a reputation as one of BMW\u0027s most dependable modern engines -robust, smooth, and well-proven across the G20 3 Series and G22 4 Series. The B48 four-cylinder is also well-regarded for its reliability and efficiency."
               }
             },
             {
@@ -137,7 +137,7 @@
               "name": "Which BMW 2 Series G42 engine should I avoid?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "No engine is inherently problematic, but the B47 diesel (220d) is more complex than the petrol options -if you don't do high mileage, the petrol B48 or B58 is a simpler choice. The M240i's B58 is a performance engine with higher running costs -budget accordingly."
+                "text": "No engine is inherently problematic, but the B47 diesel (220d) is more complex than the petrol options -if you don\u0027t do high mileage, the petrol B48 or B58 is a simpler choice. The M240i\u0027s B58 is a performance engine with higher running costs -budget accordingly."
               }
             },
             {
@@ -153,7 +153,7 @@
               "name": "Is it worth replacing a BMW 2 Series G42 engine, or should I scrap the car?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "On a G42, replacement almost always makes sense. Against a £35,000 G42, a £5,000 B58 recon is 14% of the car's value -well within our 70% BMW threshold. Even against a lower-value example, the G42's relatively high retained value means replacement is financially viable."
+                "text": "On a G42, replacement almost always makes sense. Against a £35,000 G42, a £5,000 B58 recon is 14% of the car\u0027s value -well within our 70% BMW threshold. Even against a lower-value example, the G42\u0027s relatively high retained value means replacement is financially viable."
               }
             },
             {
@@ -161,7 +161,7 @@
               "name": "How long do BMW 2 Series G42 engines last?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "The B58 can exceed 150,000–200,000 miles with proper maintenance. The B48 is similarly durable. The B47 diesel can also reach high mileage -but requires regular servicing and DPF maintenance. The G42's engines are built on well-proven architectures."
+                "text": "The B58 can exceed 150,000–200,000 miles with proper maintenance. The B48 is similarly durable. The B47 diesel can also reach high mileage -but requires regular servicing and DPF maintenance. The G42\u0027s engines are built on well-proven architectures."
               }
             },
             {
@@ -177,7 +177,7 @@
               "name": "How do I find my BMW 2 Series G42 engine code?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Listed on the VIN plate and vehicle documentation; block stamping is visible on the engine itself. Tell us your variant (220i, 230i, M240i, 220d) and we'll identify it -20+ vetted specialists will confirm it for free."
+                "text": "Listed on the VIN plate and vehicle documentation; block stamping is visible on the engine itself. Tell us your variant (220i, 230i, M240i, 220d) and we\u0027ll identify it -20+ vetted specialists will confirm it for free."
               }
             }
           ]
@@ -234,7 +234,7 @@
   "hero": {
     "tagPill": "BMW 2 Series G42 • Coupé • 2021–present",
     "h1": "BMW 2 Series G42 Engines -The Complete UK Guide",
-    "subHeadline": "Every engine fitted to the G42 coupé -from the B48 four-cylinder petrol to the B58 straight-six in the M240i. Real UK replacement costs, honest failure data, and the B58's bulletproof reputation. Backed by verified specialist data.",
+    "subHeadline": "Every engine fitted to the G42 coupé -from the <a href='https://bmwengines.uk/engine/b38-b48'>B48</a> four-cylinder petrol to the <a href='https://bmwengines.uk/engine/b57-b58'>B58</a> straight-six in the M240i. Real UK replacement costs, honest failure data, and the B58\u0027s bulletproof reputation. Backed by verified specialist data.",
     "trustStrip": [
       {
         "icon": "📊",
@@ -321,7 +321,7 @@
       },
       {
         "engineCode": "B47D20B",
-        "family": "B47",
+        "family": "<a href='https://bmwengines.uk/engine/b37-b47'>B47</a>",
         "fuel": "Diesel, turbo",
         "displacement": "2.0L (1995cc)",
         "power": "190 bhp",
@@ -364,16 +364,16 @@
   },
   "overview": {
     "h2": "BMW 2 Series G42 -Overview",
-    "intro": "The G42 is the second generation of the BMW 2 Series Coupé, launched in July 2021 as the successor to the F22. Built on the CLAR platform shared with the G20 3 Series and G22 4 Series, it retains rear-wheel drive -unlike the front-wheel-drive 1 Series -and offers a 50:50 weight distribution. Production began in September 2021 at BMW's San Luis Potosí plant in Mexico -the first BMW designed by BMW of Mexico.",
+    "intro": "The G42 is the second generation of the BMW 2 Series Coupé, launched in July 2021 as the successor to the F22. Built on the CLAR platform shared with the G20 3 Series and G22 4 Series, it retains rear-wheel drive -unlike the front-wheel-drive 1 Series -and offers a 50:50 weight distribution. Production began in September 2021 at BMW\u0027s San Luis Potosí plant in Mexico -the first BMW designed by BMW of Mexico.",
     "keyFacts": "Platform: BMW CLAR (shared with G20 3 Series, G22 4 Series) • Predecessor: BMW 2 Series F22 • Successor: Current model -no successor announced • Sibling body styles in this generation: Coupé only (no convertible)",
-    "marketIntelligenceLine": "As a relatively new model (2021–present), the G42 is still establishing its long-term reliability profile -but the B58 engine in the M240i is already developing a reputation as one of BMW's most dependable modern six-cylinders."
+    "marketIntelligenceLine": "As a relatively new model (2021–present), the G42 is still establishing its long-term reliability profile -but the B58 engine in the M240i is already developing a reputation as one of BMW\u0027s most dependable modern six-cylinders."
   },
   "bestWorstEngines": {
     "items": [
       {
         "slot": "Thin-Data Summary",
         "engine": "",
-        "quote": "The G42's engine range is modern, efficient, and broadly dependable. The B58 3.0-litre straight-six in the M240i xDrive is the standout -374–382 bhp, 500 Nm of torque, and a reputation for bulletproof reliability that has made it a favourite across the BMW range. The B48 2.0-litre four-cylinder (220i, 230i) is the volume choice -responsive, efficient, and well-proven from its use across the G20 3 Series and G22 4 Series. The B47 2.0-litre diesel (220d) offers 190 bhp and strong economy, with mild-hybrid assistance for improved efficiency. All G42 engines are paired with an eight-speed Steptronic automatic transmission -no manual is available. If you're buying a G42, the B58 is the emotional choice; the B48 is the sensible one; the B47 is for high-mileage drivers.",
+        "quote": "The G42\u0027s engine range is modern, efficient, and broadly dependable. The B58 3.0-litre straight-six in the M240i xDrive is the standout -374–382 bhp, 500 Nm of torque, and a reputation for bulletproof reliability that has made it a favourite across the BMW range. The B48 2.0-litre four-cylinder (220i, 230i) is the volume choice -responsive, efficient, and well-proven from its use across the G20 3 Series and G22 4 Series. The B47 2.0-litre diesel (220d) offers 190 bhp and strong economy, with mild-hybrid assistance for improved efficiency. All G42 engines are paired with an eight-speed Steptronic automatic transmission -no manual is available. If you\u0027re buying a G42, the B58 is the emotional choice; the B48 is the sensible one; the B47 is for high-mileage drivers.",
         "whoItsFor": ""
       }
     ]
@@ -424,7 +424,7 @@
     ],
     "economicsRule": {
       "title": "The G42 rule",
-      "text": "A £4,500–£7,500 B58 recon against a £35,000 G42 sits at 13–21% of the car's value -well within our 70% BMW threshold. Against a £50,000 example, the same recon drops to 9–15% -a routine maintenance decision. On a G42, replacement almost always makes sense."
+      "text": "A £4,500–£7,500 B58 recon against a £35,000 G42 sits at 13–21% of the car\u0027s value -well within our 70% BMW threshold. Against a £50,000 example, the same recon drops to 9–15% -a routine maintenance decision. On a G42, replacement almost always makes sense."
     },
     "keyTakeaways": [
       {
@@ -445,10 +445,10 @@
     "problems": [
       {
         "id": 1,
-        "title": "B48/B58 Cooling System & Water Pump Failure",
+        "title": "B48/B58 Cooling System \u0026 Water Pump Failure",
         "affectedModels": "G42 218i, 220i, 230i (B48), M240i (B58) -all models.",
         "typicalFailureMileage": "40,000–80,000 miles.",
-        "rootCause": "BMW's B-series engines use an electric water pump that has a finite service life. The water pump can fail without warning, causing overheating. The cooling system also has plastic components (thermostat housing, coolant pipes) that can become brittle with age and heat cycling.",
+        "rootCause": "BMW\u0027s B-series engines use an electric water pump that has a finite service life. The water pump can fail without warning, causing overheating. The cooling system also has plastic components (thermostat housing, coolant pipes) that can become brittle with age and heat cycling.",
         "tieredCosts": [],
         "recommendation": "Replace the water pump proactively at 60,000–80,000 miles on any G42 -a £400–£800 preventative job is far cheaper than a £2,500+ engine replacement. Monitor the temperature gauge and investigate any coolant loss immediately.",
         "cta": {
@@ -458,12 +458,12 @@
       },
       {
         "id": 2,
-        "title": "B58 PCV Valve & Oil Consumption",
+        "title": "B58 PCV Valve \u0026 Oil Consumption",
         "affectedModels": "G42 M240i xDrive (B58, 2021–present).",
         "typicalFailureMileage": "30,000–70,000 miles.",
-        "rootCause": "The B58's Positive Crankcase Ventilation (PCV) valve can fail, causing increased oil consumption, rough idle, and check engine lights. The PCV valve is integrated into the valve cover on some B58 variants, making replacement more expensive than on earlier BMW engines.",
+        "rootCause": "The B58\u0027s Positive Crankcase Ventilation (PCV) valve can fail, causing increased oil consumption, rough idle, and check engine lights. The PCV valve is integrated into the valve cover on some B58 variants, making replacement more expensive than on earlier BMW engines.",
         "tieredCosts": [],
-        "recommendation": "Monitor oil consumption on your M240i -if you're topping up more than 1 litre between services, have the PCV system inspected. A £150–£300 inspection is far cheaper than a £800+ valve cover replacement.",
+        "recommendation": "Monitor oil consumption on your M240i -if you\u0027re topping up more than 1 litre between services, have the PCV system inspected. A £150–£300 inspection is far cheaper than a £800+ valve cover replacement.",
         "cta": {
           "label": "Compare B58 engine prices for your M240i →",
           "href": "#"
@@ -471,10 +471,10 @@
       },
       {
         "id": 3,
-        "title": "B47 Diesel EGR Cooler & DPF Issues",
+        "title": "B47 Diesel EGR Cooler \u0026 DPF Issues",
         "affectedModels": "G42 220d (B47, 2021–present).",
         "typicalFailureMileage": "40,000–80,000 miles.",
-        "rootCause": "The B47 diesel's EGR cooler can develop internal leaks, allowing coolant to enter the exhaust system and potentially cause engine damage. The DPF can also clog on vehicles used primarily for short urban journeys.",
+        "rootCause": "The B47 diesel\u0027s EGR cooler can develop internal leaks, allowing coolant to enter the exhaust system and potentially cause engine damage. The DPF can also clog on vehicles used primarily for short urban journeys.",
         "tieredCosts": [],
         "recommendation": "If your 220d is used primarily for short journeys, budget for regular DPF regeneration and consider an extended motorway run every few weeks. Have the EGR cooler inspected at every major service.",
         "cta": {
@@ -532,13 +532,28 @@
   },
   "coreVariants": {
     "dieselVariants": [
-      "220d"
+      {
+        "name": "220d",
+        "url": "https://bmwengines.uk/2-series/220d"
+      }
     ],
     "petrolVariants": [
-      "218i",
-      "220i",
-      "230i",
-      "M240i xDrive"
+      {
+        "name": "218i",
+        "url": "https://bmwengines.uk/2-series/218i"
+      },
+      {
+        "name": "220i",
+        "url": "https://bmwengines.uk/2-series/220i"
+      },
+      {
+        "name": "230i",
+        "url": "https://bmwengines.uk/2-series/230i"
+      },
+      {
+        "name": "M240i xDrive",
+        "url": "https://bmwengines.uk/2-series/m240i"
+      }
     ],
     "scopeNote": "All variants listed are G42-generation 2 Series Coupé only (2021–present). The G42 is not available as a convertible -the F23 convertible was discontinued and not replaced."
   },
@@ -559,7 +574,7 @@
       {
         "id": 2,
         "question": "Which BMW 2 Series G42 engine is the most reliable?",
-        "answer": "The B58 3.0-litre straight-six in the M240i xDrive has developed a reputation as one of BMW's most dependable modern engines -robust, smooth, and well-proven across the G20 3 Series and G22 4 Series. The B48 four-cylinder is also well-regarded for its reliability and efficiency."
+        "answer": "The B58 3.0-litre straight-six in the M240i xDrive has developed a reputation as one of BMW\u0027s most dependable modern engines -robust, smooth, and well-proven across the G20 3 Series and G22 4 Series. The B48 four-cylinder is also well-regarded for its reliability and efficiency."
       },
       {
         "id": 3,
@@ -574,7 +589,7 @@
       {
         "id": 5,
         "question": "Which BMW 2 Series G42 engine should I avoid?",
-        "answer": "No engine is inherently problematic, but the B47 diesel (220d) is more complex than the petrol options -if you don't do high mileage, the petrol B48 or B58 is a simpler choice. The M240i's B58 is a performance engine with higher running costs -budget accordingly."
+        "answer": "No engine is inherently problematic, but the B47 diesel (220d) is more complex than the petrol options -if you don\u0027t do high mileage, the petrol B48 or B58 is a simpler choice. The M240i\u0027s B58 is a performance engine with higher running costs -budget accordingly."
       },
       {
         "id": 6,
@@ -584,12 +599,12 @@
       {
         "id": 7,
         "question": "Is it worth replacing a BMW 2 Series G42 engine, or should I scrap the car?",
-        "answer": "On a G42, replacement almost always makes sense. Against a £35,000 G42, a £5,000 B58 recon is 14% of the car's value -well within our 70% BMW threshold. Even against a lower-value example, the G42's relatively high retained value means replacement is financially viable."
+        "answer": "On a G42, replacement almost always makes sense. Against a £35,000 G42, a £5,000 B58 recon is 14% of the car\u0027s value -well within our 70% BMW threshold. Even against a lower-value example, the G42\u0027s relatively high retained value means replacement is financially viable."
       },
       {
         "id": 8,
         "question": "How long do BMW 2 Series G42 engines last?",
-        "answer": "The B58 can exceed 150,000–200,000 miles with proper maintenance. The B48 is similarly durable. The B47 diesel can also reach high mileage -but requires regular servicing and DPF maintenance. The G42's engines are built on well-proven architectures."
+        "answer": "The B58 can exceed 150,000–200,000 miles with proper maintenance. The B48 is similarly durable. The B47 diesel can also reach high mileage -but requires regular servicing and DPF maintenance. The G42\u0027s engines are built on well-proven architectures."
       },
       {
         "id": 9,
@@ -599,7 +614,7 @@
       {
         "id": 10,
         "question": "How do I find my BMW 2 Series G42 engine code?",
-        "answer": "Listed on the VIN plate and vehicle documentation; block stamping is visible on the engine itself. Tell us your variant (220i, 230i, M240i, 220d) and we'll identify it -20+ vetted specialists will confirm it for free."
+        "answer": "Listed on the VIN plate and vehicle documentation; block stamping is visible on the engine itself. Tell us your variant (220i, 230i, M240i, 220d) and we\u0027ll identify it -20+ vetted specialists will confirm it for free."
       }
     ]
   },
@@ -612,11 +627,11 @@
       },
       {
         "title": "Compare G42 Engine Replacement Companies",
-        "text": "see prices, warranty terms and supply & fit options side-by-side before you commit."
+        "text": "see prices, warranty terms and supply \u0026 fit options side-by-side before you commit."
       },
       {
         "title": "UK Engine Replacement Services for G42",
-        "text": "covering every variant from 218i to M240i xDrive, with supply-only or full supply & fit available nationwide."
+        "text": "covering every variant from 218i to M240i xDrive, with supply-only or full supply \u0026 fit available nationwide."
       }
     ],
     "finalCta": "Find the best BMW 2 Series G42 engine replacement UK drivers rely on. Compare real prices from trusted specialists on EnginesMarket today and get back on the road with confidence.",

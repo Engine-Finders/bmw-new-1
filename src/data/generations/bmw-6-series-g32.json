@@ -119,7 +119,7 @@
               "name": "Which BMW 6 Series G32 engine is the most reliable?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "The B58B30 3.0-litre six-cylinder (640i) is widely regarded as BMW's most reliable modern six-cylinder -proven durability, no major design flaws, and only minor HPFP and wastegate maintenance required. On diesel, the B57D30 (630d/640d) is also highly reliable, with timing chain issues described as 'exceedingly rare.'"
+                "text": "The B58B30 3.0-litre six-cylinder (640i) is widely regarded as BMW\u0027s most reliable modern six-cylinder -proven durability, no major design flaws, and only minor HPFP and wastegate maintenance required. On diesel, the B57D30 (630d/640d) is also highly reliable, with timing chain issues described as \u0027exceedingly rare.\u0027"
               }
             },
             {
@@ -135,7 +135,7 @@
               "name": "Is the BMW 6 Series G32 reliable?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Yes -the G32's modular engines (B48, B58, B47, B57) are significantly more reliable than the N-series engines they replaced. The B58 is considered one of BMW's most reliable engines. For any G32, a thorough engine inspection and maintenance history check are essential, particularly on high-performance variants."
+                "text": "Yes -the G32\u0027s modular engines (B48, B58, B47, B57) are significantly more reliable than the N-series engines they replaced. The B58 is considered one of BMW\u0027s most reliable engines. For any G32, a thorough engine inspection and maintenance history check are essential, particularly on high-performance variants."
               }
             },
             {
@@ -159,7 +159,7 @@
               "name": "Is it worth replacing a BMW 6 Series G32 engine, or should I scrap the car?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Apply the 70% BMW scrap threshold. Against a well-kept £20,000 G32, a £4,800 B58 recon is 24% of the car's value -safe. Against a tired £12,000 early example, the same recon is 40% -borderline. For sub-£8,000 examples, we'd recommend walking away."
+                "text": "Apply the 70% BMW scrap threshold. Against a well-kept £20,000 G32, a £4,800 B58 recon is 24% of the car\u0027s value -safe. Against a tired £12,000 early example, the same recon is 40% -borderline. For sub-£8,000 examples, we\u0027d recommend walking away."
               }
             },
             {
@@ -183,7 +183,7 @@
               "name": "How do I find my BMW 6 Series G32 engine code?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "The engine code is listed on the VIN plate, vehicle documentation, and on a sticker under the bonnet. For 2.0 petrol, look for B48B20B (630i). For 3.0 petrol, look for B58B30A (pre-LCI 640i) or B58B30C (LCI 640i). For 2.0 diesel, look for B47D20B (620d). For 3.0 diesel, look for B57D30A (630d pre-LCI) or B57D30B (630d LCI, 640d). Tell us your variant and year, and we'll confirm."
+                "text": "The engine code is listed on the VIN plate, vehicle documentation, and on a sticker under the bonnet. For 2.0 petrol, look for B48B20B (630i). For 3.0 petrol, look for B58B30A (pre-LCI 640i) or B58B30C (LCI 640i). For 2.0 diesel, look for B47D20B (620d). For 3.0 diesel, look for B57D30A (630d pre-LCI) or B57D30B (630d LCI, 640d). Tell us your variant and year, and we\u0027ll confirm."
               }
             }
           ]
@@ -217,7 +217,7 @@
         {
           "@type": "Dataset",
           "name": "BMW 6 Series G32 UK Engine Enquiry Data 2025",
-          "description": "Proprietary UK enquiry volumes and demand trends for BMW 6 Series G32 engines, sourced from bmwengines.uk's specialist marketplace activity.",
+          "description": "Proprietary UK enquiry volumes and demand trends for BMW 6 Series G32 engines, sourced from bmwengines.uk\u0027s specialist marketplace activity.",
           "creator": {
             "@type": "Organization",
             "name": "bmwengines.uk"
@@ -251,7 +251,7 @@
   "hero": {
     "tagPill": "BMW 6 Series G32 Gran Turismo • Liftback • 2017–2023",
     "h1": "BMW 6 Series G32 Engines -The Complete UK Guide",
-    "subHeadline": "Every engine fitted to the G32-generation BMW 6 Series Gran Turismo -from the 2.0-litre B48 four-cylinder to the 3.0-litre B58 six and the B57 diesel range. Real UK costs, honest failure data, and the B58's defining role in this generation's ownership story. Backed by real UK 6 Series enquiries in 2025 [BMW-VERIFIED].",
+    "subHeadline": "Every engine fitted to the G32-generation BMW 6 Series Gran Turismo -from the 2.0-litre <a href='https://bmwengines.uk/engine/b38-b48'>B48</a> four-cylinder to the 3.0-litre B58 six and the <a href='https://bmwengines.uk/engine/b57-b58'>B57</a> diesel range. Real UK costs, honest failure data, and the B58\u0027s defining role in this generation\u0027s ownership story. Backed by real UK 6 Series enquiries in 2025 [BMW-VERIFIED].",
     "trustStrip": [
       {
         "icon": "📊",
@@ -330,7 +330,7 @@
       },
       {
         "engineCode": "B47D20B",
-        "family": "B47",
+        "family": "<a href='https://bmwengines.uk/engine/b37-b47'>B47</a>",
         "fuel": "Diesel, turbo",
         "displacement": "2.0L (1995cc)",
         "power": "140 kW (190 hp)",
@@ -417,7 +417,7 @@
     "items": [
       {
         "slot": "Best Petrol Overall",
-        "engine": "B58B30 3.0-litre six-cylinder (640i) -The 340 bhp B58 is widely regarded as BMW's most reliable modern six-cylinder. Delivering 450 Nm of torque and 0-62 in 5.3 seconds, it offers genuine performance with proven durability. Mild-hybrid versions (2020+) add efficiency without compromising reliability.",
+        "engine": "B58B30 3.0-litre six-cylinder (640i) -The 340 bhp B58 is widely regarded as BMW\u0027s most reliable modern six-cylinder. Delivering 450 Nm of torque and 0-62 in 5.3 seconds, it offers genuine performance with proven durability. Mild-hybrid versions (2020+) add efficiency without compromising reliability.",
         "quote": "",
         "whoItsFor": "buyers who want the sweet spot of performance, refinement, and reliability."
       },
@@ -441,15 +441,15 @@
       },
       {
         "slot": "Best Value",
-        "engine": "B47D20 2.0-litre diesel (620d) -The 190 bhp B47 diesel offers the best balance of performance, economy, and running costs. It's the most economical G32 engine, parts are widely available, and the recon cost is the lowest in the range. Post-recall EGR cooler units are reliable.",
+        "engine": "B47D20 2.0-litre diesel (620d) -The 190 bhp B47 diesel offers the best balance of performance, economy, and running costs. It\u0027s the most economical G32 engine, parts are widely available, and the recon cost is the lowest in the range. Post-recall EGR cooler units are reliable.",
         "quote": "",
         "whoItsFor": "buyers who prioritise running costs."
       },
       {
         "slot": "Most Overlooked",
-        "engine": "B48B20 2.0-litre petrol (630i) -Often overshadowed by the six-cylinder 640i, the 258 bhp B48 delivers genuine performance -0-62 in 6.3 seconds -with the economy of a four-cylinder and the proven reliability of BMW's modular engine family.",
+        "engine": "B48B20 2.0-litre petrol (630i) -Often overshadowed by the six-cylinder 640i, the 258 bhp B48 delivers genuine performance -0-62 in 6.3 seconds -with the economy of a four-cylinder and the proven reliability of BMW\u0027s modular engine family.",
         "quote": "",
-        "whoItsFor": "buyers who want petrol refinement without the six-cylinder's fuel consumption."
+        "whoItsFor": "buyers who want petrol refinement without the six-cylinder\u0027s fuel consumption."
       }
     ]
   },
@@ -507,7 +507,7 @@
     ],
     "economicsRule": {
       "title": "The G32 rule",
-      "text": "A £4,800–£8,000 B58 recon against a £12,000–£18,000 early G32 sits at 27–67% of the car's value. On a sub-£12,000 example, that brushes our 70% BMW threshold -we'll honestly tell you to walk away. Against a well-kept £20,000+ example, the same recon drops to a routine 24–40% -a repair decision, not a financial one. Value the car first."
+      "text": "A £4,800–£8,000 B58 recon against a £12,000–£18,000 early G32 sits at 27–67% of the car\u0027s value. On a sub-£12,000 example, that brushes our 70% BMW threshold -we\u0027ll honestly tell you to walk away. Against a well-kept £20,000+ example, the same recon drops to a routine 24–40% -a repair decision, not a financial one. Value the car first."
     },
     "keyTakeaways": [
       {
@@ -584,7 +584,7 @@
       },
       {
         "id": 3,
-        "title": "B47/B57 Diesel EGR Cooler & DPF Issues",
+        "title": "B47/B57 Diesel EGR Cooler \u0026 DPF Issues",
         "affectedModels": "G32 620d (B47D20B), 630d/640d (B57D30A/B).",
         "typicalFailureMileage": "60,000–120,000 miles.",
         "rootCause": "The EGR cooler on B47 and B57 diesel engines can develop internal coolant leaks, leading to coolant loss. DPF blockage is also common on cars used predominantly for urban driving, with fault codes indicating DPF sensor failure.",
@@ -668,14 +668,32 @@
   },
   "coreVariants": {
     "dieselVariants": [
-      "620d",
-      "630d",
-      "640d xDrive"
+      {
+        "name": "620d",
+        "url": "https://bmwengines.uk/6-series/620d"
+      },
+      {
+        "name": "630d",
+        "url": "https://bmwengines.uk/6-series/630d"
+      },
+      {
+        "name": "640d xDrive",
+        "url": "https://bmwengines.uk/6-series/640d"
+      }
     ],
     "petrolVariants": [
-      "630i",
-      "640i",
-      "640i xDrive"
+      {
+        "name": "630i",
+        "url": "https://bmwengines.uk/6-series/630i"
+      },
+      {
+        "name": "640i",
+        "url": "https://bmwengines.uk/6-series/640i"
+      },
+      {
+        "name": "640i xDrive",
+        "url": "https://bmwengines.uk/6-series/640i"
+      }
     ],
     "scopeNote": "All variants listed are G32 6 Series Gran Turismo only. The 620d was added in 2018. The 2020 LCI facelift introduced 48-volt mild-hybrid technology across the range. The 640i and 640d are available with rear-wheel drive or xDrive all-wheel drive."
   },
@@ -694,7 +712,7 @@
     "mostCommonFailures": [
       "1. B58 HPFP failure",
       "2. B58 turbocharger wastegate rattle",
-      "3. B47/B57 EGR cooler & DPF issues"
+      "3. B47/B57 EGR cooler \u0026 DPF issues"
     ],
     "liveFeed": [
       {
@@ -730,7 +748,7 @@
       {
         "id": 2,
         "question": "Which BMW 6 Series G32 engine is the most reliable?",
-        "answer": "The B58B30 3.0-litre six-cylinder (640i) is widely regarded as BMW's most reliable modern six-cylinder -proven durability, no major design flaws, and only minor HPFP and wastegate maintenance required. On diesel, the B57D30 (630d/640d) is also highly reliable, with timing chain issues described as \"exceedingly rare.\""
+        "answer": "The B58B30 3.0-litre six-cylinder (640i) is widely regarded as BMW\u0027s most reliable modern six-cylinder -proven durability, no major design flaws, and only minor HPFP and wastegate maintenance required. On diesel, the B57D30 (630d/640d) is also highly reliable, with timing chain issues described as \"exceedingly rare.\""
       },
       {
         "id": 3,
@@ -740,7 +758,7 @@
       {
         "id": 4,
         "question": "Is the BMW 6 Series G32 reliable?",
-        "answer": "Yes -the G32's modular engines (B48, B58, B47, B57) are significantly more reliable than the N-series engines they replaced. The B58 is considered one of BMW's most reliable engines. For any G32, a thorough engine inspection and maintenance history check are essential, particularly on high-performance variants."
+        "answer": "Yes -the G32\u0027s modular engines (B48, B58, B47, B57) are significantly more reliable than the N-series engines they replaced. The B58 is considered one of BMW\u0027s most reliable engines. For any G32, a thorough engine inspection and maintenance history check are essential, particularly on high-performance variants."
       },
       {
         "id": 5,
@@ -755,7 +773,7 @@
       {
         "id": 7,
         "question": "Is it worth replacing a BMW 6 Series G32 engine, or should I scrap the car?",
-        "answer": "Apply the 70% BMW scrap threshold. Against a well-kept £20,000 G32, a £4,800 B58 recon is 24% of the car's value -safe. Against a tired £12,000 early example, the same recon is 40% -borderline. For sub-£8,000 examples, we'd recommend walking away."
+        "answer": "Apply the 70% BMW scrap threshold. Against a well-kept £20,000 G32, a £4,800 B58 recon is 24% of the car\u0027s value -safe. Against a tired £12,000 early example, the same recon is 40% -borderline. For sub-£8,000 examples, we\u0027d recommend walking away."
       },
       {
         "id": 8,
@@ -770,7 +788,7 @@
       {
         "id": 10,
         "question": "How do I find my BMW 6 Series G32 engine code?",
-        "answer": "The engine code is listed on the VIN plate, vehicle documentation, and on a sticker under the bonnet. For 2.0 petrol, look for B48B20B (630i). For 3.0 petrol, look for B58B30A (pre-LCI 640i) or B58B30C (LCI 640i). For 2.0 diesel, look for B47D20B (620d). For 3.0 diesel, look for B57D30A (630d pre-LCI) or B57D30B (630d LCI, 640d). Tell us your variant and year, and we'll confirm."
+        "answer": "The engine code is listed on the VIN plate, vehicle documentation, and on a sticker under the bonnet. For 2.0 petrol, look for B48B20B (630i). For 3.0 petrol, look for B58B30A (pre-LCI 640i) or B58B30C (LCI 640i). For 2.0 diesel, look for B47D20B (620d). For 3.0 diesel, look for B57D30A (630d pre-LCI) or B57D30B (630d LCI, 640d). Tell us your variant and year, and we\u0027ll confirm."
       }
     ]
   },
@@ -783,11 +801,11 @@
       },
       {
         "title": "Compare G32 Engine Replacement Companies",
-        "text": "see prices, warranty terms and supply & fit options side-by-side before you commit."
+        "text": "see prices, warranty terms and supply \u0026 fit options side-by-side before you commit."
       },
       {
         "title": "UK Engine Replacement Services for G32",
-        "text": "covering every variant from 620d to 640i xDrive, with supply-only or full supply & fit available nationwide."
+        "text": "covering every variant from 620d to 640i xDrive, with supply-only or full supply \u0026 fit available nationwide."
       }
     ],
     "finalCta": "Find the best BMW 6 Series G32 engine replacement UK drivers rely on. Compare real prices from trusted specialists on EnginesMarket today and get back on the road with confidence.",

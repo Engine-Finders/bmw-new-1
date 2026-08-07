@@ -253,7 +253,7 @@
     }
   },
   "hero": {
-    "tagPill": "BMW 8 Series • 1990–1999, 2018–2026 • 2 Generations (E31, G14/G15/G16) • M60, M62, M70, M73, S70, B58, N63, S63, B57",
+    "tagPill": "BMW 8 Series • 1990–1999, 2018–2026 • 2 Generations (E31, G14/G15/G16) • M60, M62, <a href='https://bmwengines.uk/engine/m70-m73'>M70</a>, M73, <a href='https://bmwengines.uk/engine/s70-s85'>S70</a>, B58, <a href='https://bmwengines.uk/engine/n62-n63'>N63</a>, <a href='https://bmwengines.uk/engine/s63-s65'>S63</a>, <a href='https://bmwengines.uk/engine/b57-b58'>B57</a>",
     "h1": "8 Series Engines - The Complete UK Guide",
     "subHeadline": "Every BMW 8 Series engine across two generations and three body styles - from the M70 V12 of the original E31 to the B58 straight-six and N63 V8 of the modern G15. Real UK replacement costs, known failure patterns, and honest ownership economics for BMW's grand tourer flagship. Backed by 150+ real UK 8 Series engine enquiries in 2025 [BMW-VERIFIED].",
     "trustStrip": [
@@ -382,7 +382,7 @@
         "verdict": "The original 8 Series - a pillarless coupe with pop-up headlights and a V12 that defined 1990s BMW. The M70 and M73 V12s are surprisingly durable if maintained; the V8s (M60/M62) carry the same Nikasil liner caveats as the E34 5 Series. Now a rising classic where engine work is restoration, not repair. The 850CSi with the S70 V12 is a six-figure collector's item.",
         "cta": {
           "label": "Explore the E31 →",
-          "href": "#"
+          "href": "https://bmwengines.uk/8-series/e31"
         }
       },
       {
@@ -393,7 +393,7 @@
         "verdict": "The return of the 8 Series after 19 years - and the B58 straight-six in the 840i is the most dependable engine ever fitted to the badge. The N63 V8 in the M850i carries the hot-vee caveats; the M8 with the S63 is the full-fat experience. The 840i is the sensible choice; the M850i is the emotional one. Buy the B58 unless you have V8 money.",
         "cta": {
           "label": "Explore the G15 →",
-          "href": "#"
+          "href": "https://bmwengines.uk/8-series/g15"
         }
       },
       {
@@ -404,7 +404,7 @@
         "verdict": "The open-top 8 Series - same engines as the G15, but with a fabric roof that adds weight and complexity. The B58 in the 840i Convertible is the sensible pick; the M850i Convertible is the weekend toy. Check the roof mechanism on any used example.",
         "cta": {
           "label": "Explore the G14 →",
-          "href": "#"
+          "href": "https://bmwengines.uk/8-series/g14"
         }
       },
       {
@@ -415,7 +415,7 @@
         "verdict": "The four-door 8 Series - the most practical 8 Series and the one with the most presence. Same engines as the G15/G14, but the G16's added length and rear doors make it a genuine four-seater. The 840i Gran Coupé is the sweet spot; the M850i is the statement.",
         "cta": {
           "label": "Explore the G16 →",
-          "href": "#"
+          "href": "https://bmwengines.uk/8-series/g16"
         }
       }
     ],

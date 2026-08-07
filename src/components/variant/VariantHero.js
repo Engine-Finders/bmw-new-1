@@ -5,7 +5,7 @@ export default function VariantHero({ data }) {
     <section style={{ paddingBottom: 8 }}>
       {data.tagPill && <p>{data.tagPill}</p>}
       <h1>{data.h1}</h1>
-      {data.subHeadline && <p>{data.subHeadline}</p>}
+      {data.subHeadline && <p dangerouslySetInnerHTML={{ __html: data.subHeadline }} />}
 
       {data.trustBadges?.length > 0 && (
         <ul>
@@ -15,7 +15,7 @@ export default function VariantHero({ data }) {
         </ul>
       )}
 
-      {data.priceAnchor && <p>{data.priceAnchor}</p>}
+      {data.priceAnchor && <p dangerouslySetInnerHTML={{ __html: data.priceAnchor }} />}
 
       {data.registrationInput && (
         <p>
@@ -31,7 +31,7 @@ export default function VariantHero({ data }) {
         </p>
       )}
 
-      {data.ticker && <p>{data.ticker}</p>}
+      {data.ticker && <p dangerouslySetInnerHTML={{ __html: data.ticker }} />}
       <hr />
     </section>
   );

@@ -209,7 +209,7 @@
     }
   },
   "hero": {
-    "tagPill": "BMW 5 Series 540d • 2017–present • B57",
+    "tagPill": "BMW 5 Series 540d • 2017–present • <a href='https://bmwengines.uk/engine/b57-b58'>B57</a>",
     "h1": "BMW 5 Series 540d Engine Replacement - Compare Prices & Get Quotes",
     "subHeadline": "The 540d badge delivers BMW's most powerful straight‑six diesel - the B57, with up to 340 hp and 700 Nm of torque - across the G30, G31, G60 and G61 generations. Get quotes from trusted UK specialists today.",
     "trustBadges": [
@@ -394,7 +394,7 @@
           "problem": "Timing chain stretch",
           "repairable": "⚠️ Sometimes",
           "typicalCost": "£1,500–£3,500",
-          "whenItMakesSense": "Less common than N57; viable on lower‑mileage examples"
+          "whenItMakesSense": "Less common than <a href='https://bmwengines.uk/engine/n57'>N57</a>; viable on lower‑mileage examples"
         },
         {
           "problem": "Severe engine damage (overheating / oil starvation)",

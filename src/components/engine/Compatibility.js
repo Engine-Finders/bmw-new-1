@@ -23,7 +23,7 @@ export default function Compatibility({ data }) {
           ))}
         </tbody>
       </table>
-      {data.crossBrandNote && <p>{data.crossBrandNote}</p>}
+      {data.crossBrandNote && <p dangerouslySetInnerHTML={{ __html: data.crossBrandNote }} />}
       <hr />
     </section>
   );

@@ -109,17 +109,17 @@ export default function ModelHero({ data }) {
             }`}
           >
             <GenIcon name="car" className="h-4 w-4 shrink-0 text-[var(--color-primary)]" />
-            <strong className="font-semibold text-[var(--color-primary)]">{pill.model}</strong>
+            <strong className="font-semibold text-[var(--color-primary)]" dangerouslySetInnerHTML={{ __html: pill.model }} />
             {pill.body ? (
               <>
                 <span aria-hidden="true" className="opacity-50">•</span>
-                <span>{pill.body}</span>
+                <span dangerouslySetInnerHTML={{ __html: pill.body }} />
               </>
             ) : null}
             {pill.years ? (
               <>
                 <span aria-hidden="true" className="opacity-50">•</span>
-                <span>{pill.years}</span>
+                <span dangerouslySetInnerHTML={{ __html: pill.years }} />
               </>
             ) : null}
           </span>
@@ -129,9 +129,8 @@ export default function ModelHero({ data }) {
             className={`text-[32px] font-bold leading-[0.95] tracking-normal md:max-w-[720px] md:text-[3.5rem] md:leading-[0.94] ${
               isDark ? "text-white" : "text-[var(--color-text)]"
             }`}
-          >
-            {data.h1}
-          </h1>
+            dangerouslySetInnerHTML={{ __html: data.h1 }}
+          />
 
           {/* MStripe decorative accent — matches home hero (blue / blue / red / grey slashes + trailing line) */}
           <MStripe />
@@ -141,9 +140,8 @@ export default function ModelHero({ data }) {
             className={`max-w-[78%] text-[0.88rem] leading-[1.42] md:max-w-[620px] md:text-[1.08rem] md:leading-[1.42] ${
               isDark ? "text-white/88" : "text-[var(--color-text-muted)]"
             }`}
-          >
-            {data.subHeadline}
-          </p>
+            dangerouslySetInnerHTML={{ __html: data.subHeadline }}
+          />
 
           {/* Mobile: spacer so the CTA/stats sit lower, clear of the car in the lower portion of the image */}
           <div className="h-[130px] md:hidden" aria-hidden="true" />
@@ -154,7 +152,7 @@ export default function ModelHero({ data }) {
               href={data.primaryCta.href}
               className="mt-5 inline-flex w-full items-center justify-center gap-3 rounded-md bg-[var(--color-primary)] px-6 py-4 text-[1rem] font-bold text-white shadow-[0_12px_28px_var(--color-shadow)] md:hidden"
             >
-              {data.primaryCta.label.replace(/\s*→\s*$/, "")}
+              <span dangerouslySetInnerHTML={{ __html: data.primaryCta.label.replace(/\s*→\s*$/, "") }} />
               <GenIcon name="arrow" className="h-5 w-5" />
             </Link>
           ) : null}
@@ -191,9 +189,10 @@ export default function ModelHero({ data }) {
                         <GenIcon name={item.icon} className="h-5 w-5 shrink-0 text-[var(--color-primary)]" />
                         <div className="flex flex-col gap-0.5">
                           {stat.value ? (
-                            <strong className={`text-[1rem] font-bold leading-none md:text-[1.2rem] ${isDark ? "text-white" : "text-[var(--color-text)]"}`}>
-                              {stat.value}
-                            </strong>
+                            <strong
+                              className={`text-[1rem] font-bold leading-none md:text-[1.2rem] ${isDark ? "text-white" : "text-[var(--color-text)]"}`}
+                              dangerouslySetInnerHTML={{ __html: stat.value }}
+                            />
                           ) : null}
                           <span
                             className={`text-[0.7rem] leading-[1.3] ${isDark ? "text-white/85" : "text-[var(--color-text)]"} md:text-[0.82rem]`}
@@ -205,9 +204,8 @@ export default function ModelHero({ data }) {
                               className={`text-[9px] font-semibold uppercase leading-none tracking-wide ${
                                 isDark ? "text-white/55" : "text-[var(--color-text-soft)]"
                               } md:text-[10px]`}
-                            >
-                              {stat.tag}
-                            </span>
+                              dangerouslySetInnerHTML={{ __html: stat.tag }}
+                            />
                           ) : null}
                         </div>
                       </div>
@@ -225,9 +223,7 @@ export default function ModelHero({ data }) {
               className="hidden w-full items-center justify-between rounded-[1.25rem] border border-[rgba(41,115,219,0.75)] bg-[linear-gradient(180deg,rgba(14,79,184,0.98)_0%,rgba(8,59,143,0.98)_100%)] px-5 py-4 text-white shadow-lg shadow-black/30 md:flex md:w-fit md:justify-start md:gap-5 md:rounded md:border-0 md:bg-[var(--color-primary)] md:px-7 md:py-3.5 md:text-base md:shadow-lg md:shadow-[var(--color-shadow)]"
             >
               <span className="text-left">
-                <span className="block text-lg font-bold tracking-[0.08em] md:text-[1.05rem] md:tracking-normal">
-                  {data.primaryCta.label.replace(/\s*→\s*$/, "")}
-                </span>
+                <span className="block text-lg font-bold tracking-[0.08em] md:text-[1.05rem] md:tracking-normal" dangerouslySetInnerHTML={{ __html: data.primaryCta.label.replace(/\s*→\s*$/, "") }} />
               </span>
               <span className="flex h-14 w-14 items-center justify-center rounded-full border border-white/10 bg-[rgba(3,14,31,0.55)] md:h-auto md:w-auto md:rounded-none md:border-0 md:bg-transparent">
                 <GenIcon name="arrow" className="h-7 w-7" />

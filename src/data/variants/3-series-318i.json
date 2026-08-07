@@ -324,7 +324,7 @@
         "supplyOnly": "£500–£1,500",
         "fittedIndie": "£1,000–£2,500",
         "warranty": "1–6 months",
-        "bestFor": "Budget priority; older M10/M40/M42 examples"
+        "bestFor": "Budget priority; older <a href='https://bmwengines.uk/engine/m10'>M10</a>/M40/M42 examples"
       },
       {
         "engineType": "Reconditioned Engine",
@@ -359,7 +359,7 @@
     "problems": [
       {
         "id": 1,
-        "title": "Timing Belt Failure (M10, M40, M43)",
+        "title": "Timing Belt Failure (M10, <a href='https://bmwengines.uk/engine/m40-m42-m43-m44'>M40</a>, M43)",
         "symptoms": "Engine stops suddenly, loss of power, ticking from the front of the engine, complete engine failure",
         "typicalMileage": "40,000–60,000 miles (belt interval)",
         "repairCost": "£300–£600 (preventative timing belt replacement)",
@@ -377,7 +377,7 @@
       },
       {
         "id": 2,
-        "title": "Timing Chain and VANOS Issues (N42/N46)",
+        "title": "Timing Chain and VANOS Issues (<a href='https://bmwengines.uk/engine/n40-n42-n43-n45-n46'>N42</a>/N46)",
         "symptoms": "Rattling noise on cold start lasting 2–5 seconds, metallic ticking, engine warning light, loss of low-end power (VANOS failure)",
         "typicalMileage": "60,000–100,000 miles",
         "repairCost": "£800–£1,800 (timing chain, tensioner, guide and VANOS rebuild)",
@@ -413,7 +413,7 @@
       },
       {
         "id": 4,
-        "title": "Timing Chain and Oil Consumption (N13 Prince Turbo)",
+        "title": "Timing Chain and Oil Consumption (<a href='https://bmwengines.uk/engine/n13-n20'>N13</a> Prince Turbo)",
         "symptoms": "Rattling on cold start, oil level dropping between services, blue smoke on startup, rough idle, engine warning light",
         "typicalMileage": "60,000–100,000 miles",
         "repairCost": "£1,200–£2,500 (timing chain replacement and PCV system service)",
@@ -493,7 +493,7 @@
           "whenItMakesSense": "PCV valve replacement or oil separator service"
         },
         {
-          "problem": "Cooling system leaks (B38/B48)",
+          "problem": "Cooling system leaks (<a href='https://bmwengines.uk/engine/b38-b48'>B38</a>/B48)",
           "repairable": "✅ Yes",
           "typicalCost": "£400–£1,000",
           "whenItMakesSense": "Straightforward replacement - catch before overheating"

@@ -9,7 +9,7 @@ export default function FAQAccordion({ data }) {
           <h3>
             {item.id}. {item.question}
           </h3>
-          <p>{item.answer}</p>
+          <p dangerouslySetInnerHTML={{ __html: item.answer }} />
         </div>
       ))}
       <hr />

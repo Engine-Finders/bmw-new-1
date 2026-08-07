@@ -15,8 +15,8 @@ const iconPaths = [
 
 function StatIcon({ index }) {
   return (
-    <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-[var(--color-primary)] bg-[var(--color-primary-soft)] text-[var(--color-primary)] md:h-14 md:w-14 md:border-0 md:bg-[var(--color-primary-soft)]">
-      <svg aria-hidden="true" viewBox="0 0 24 24" className="h-6 w-6 md:h-8 md:w-8" fill="none" stroke="currentColor" strokeWidth="2">
+    <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-[var(--color-primary)] bg-[var(--color-primary-soft)] text-[var(--color-primary)] md:h-10 md:w-10 md:border-0 md:bg-transparent">
+      <svg aria-hidden="true" viewBox="0 0 24 24" className="h-5 w-5 md:h-6 md:w-6" fill="none" stroke="currentColor" strokeWidth="2">
         {iconPaths[index] || iconPaths[0]}
       </svg>
     </span>
@@ -32,7 +32,7 @@ function MetaIcon({ type }) {
     );
 
   return (
-    <svg aria-hidden="true" viewBox="0 0 24 24" className="h-6 w-6 shrink-0 text-[var(--color-primary)]" fill="none" stroke="currentColor" strokeWidth="2">
+    <svg aria-hidden="true" viewBox="0 0 24 24" className="h-4 w-4 shrink-0 text-[var(--color-primary)]" fill="none" stroke="currentColor" strokeWidth="2">
       {path}
     </svg>
   );
@@ -40,7 +40,7 @@ function MetaIcon({ type }) {
 
 function ArrowIcon() {
   return (
-    <svg aria-hidden="true" viewBox="0 0 24 24" className="h-7 w-7" fill="none" stroke="currentColor" strokeWidth="2">
+    <svg aria-hidden="true" viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2">
       <path d="M5 12h14m-6-6 6 6-6 6" />
     </svg>
   );
@@ -69,22 +69,48 @@ function splitStat(label) {
   };
 }
 
+function renderStatLabel(label) {
+  const powertrainsIndex = label.indexOf("Powertrains");
+  if (powertrainsIndex !== -1) {
+    return (
+      <>
+        {label.slice(0, powertrainsIndex)}
+        <span className="block md:inline">Powertrains</span>
+      </>
+    );
+  }
+
+  const codesIndex = label.indexOf("Codes");
+  if (codesIndex !== -1) {
+    return (
+      <>
+        {label.slice(0, codesIndex)}
+        <span className="block md:inline">Codes</span>
+      </>
+    );
+  }
+
+  return label;
+}
+
+function MetaSeparator() {
+  return <span aria-hidden="true" className="text-[var(--color-text-muted)]">{"\u2022"}</span>;
+}
+
 function HeroTitle({ title, isDark }) {
   const guideIndex = title.indexOf("UK Guide");
   const textClass = isDark ? "text-white" : "text-[var(--color-primary)]";
 
   if (guideIndex === -1) {
     return (
-      <h1 className={`max-w-[720px] font-bold tracking-normal ${sectionH1} ${textClass}`}>
-        {title}
-      </h1>
+      <h1 className={`max-w-[720px] font-bold tracking-normal ${sectionH1} ${textClass}`} dangerouslySetInnerHTML={{ __html: title }} />
     );
   }
 
   return (
     <h1 className={`max-w-[760px] font-bold tracking-normal ${sectionH1} ${textClass}`}>
-      {title.slice(0, guideIndex)}
-      <span className="text-[var(--color-primary)]">{title.slice(guideIndex)}</span>
+      <span dangerouslySetInnerHTML={{ __html: title.slice(0, guideIndex) }} />
+      <span className="text-[var(--color-primary)]" dangerouslySetInnerHTML={{ __html: title.slice(guideIndex) }} />
     </h1>
   );
 }
@@ -94,24 +120,25 @@ function StatCard({ item, index, isDark }) {
 
   return (
     <li
-      className={`flex min-h-[112px] items-start gap-3 border p-3 md:min-h-0 md:items-center md:gap-4 md:border-y-0 md:border-l-0 md:border-r md:px-7 md:py-5 md:last:border-r-0 ${
+      className={`flex min-h-[92px] flex-col items-center justify-center gap-2.5 rounded-md border p-2.5 text-center md:min-h-0 md:flex-row md:items-center md:justify-start md:gap-3 md:rounded-none md:border-y-0 md:border-l-0 md:border-r md:px-5 md:py-3 md:text-left md:last:border-r-0 ${
         isDark
-          ? "border-white/14 bg-[rgba(3,12,24,0.62)] md:border-white/12 md:bg-transparent"
+          ? "border-white/14 bg-[rgba(4,35,82,0.52)] md:border-white/12 md:bg-transparent"
           : "border-[var(--color-border)] bg-[rgba(255,255,255,0.86)] md:border-[var(--color-border)] md:bg-transparent"
       }`}
     >
       <StatIcon index={index} />
-      <div className="min-w-0">
-        <p className="text-[18px] font-bold leading-tight text-[var(--color-text)] md:text-[18px]">
+      <div className="min-w-0 flex-1">
+        <p className="text-[19px] font-bold leading-tight text-[var(--color-text)] md:text-[18px]">
           {stat.value ? (
             <>
-              {stat.value} <span className="text-[15px] font-semibold">{stat.label}</span>
+              <span dangerouslySetInnerHTML={{ __html: stat.value }} /> <span className="text-[12px] font-semibold md:text-[12px]">{renderStatLabel(stat.label)}</span>
             </>
           ) : (
-            stat.label
+            renderStatLabel(stat.label)
           )}
         </p>
-        {stat.detail ? <p className="mt-1 text-[15px] leading-[1.3] text-[var(--color-text-muted)]">{stat.detail}</p> : null}
+        <span className="mt-2 block h-px w-full bg-[var(--color-border)] opacity-70 md:hidden" />
+        {stat.detail ? <p className="mt-1.5 text-[12px] leading-[1.3] text-[var(--color-text-muted)] md:mt-1" dangerouslySetInnerHTML={{ __html: stat.detail }} /> : null}
       </div>
     </li>
   );
@@ -125,7 +152,7 @@ export default function ModelHero({ data }) {
   const meta = splitTagPill(data.tagPill);
 
   return (
-    <section className="relative left-1/2 w-screen -translate-x-1/2 overflow-hidden bg-[var(--color-page)] text-[var(--color-text)] md:min-h-[650px]">
+    <section className="relative left-1/2 w-screen -translate-x-1/2 overflow-hidden bg-[var(--color-page)] text-[var(--color-text)] md:min-h-[620px]">
       <div className="absolute inset-0">
         <Image
           src="/model/Hero-bg-image.webp"
@@ -143,46 +170,46 @@ export default function ModelHero({ data }) {
           }`}
         />
         <div
-          className={`absolute inset-y-0 left-[48%] hidden w-28 -skew-x-[18deg] md:left-[50%] md:block ${
-            isDark ? "bg-[rgba(11,103,220,0.26)]" : "bg-[rgba(11,103,220,0.14)]"
+          className={`absolute inset-y-0 left-[48%] hidden w-14 -skew-x-[18deg] md:left-[48%] md:block ${
+            isDark ? "bg-[rgba(50,126,231,0.26)]" : "bg-[rgba(11,103,220,0.14)]"
           }`}
         />
         <div className="absolute inset-x-0 bottom-0 h-36 bg-[linear-gradient(0deg,var(--color-page)_0%,transparent_100%)] md:h-44" />
       </div>
-
-      <div className="relative mx-auto flex w-full max-w-8xl flex-col px-4 pb-5 pt-7 md:min-h-[650px] md:justify-center md:px-8 md:pb-8 md:pt-12">
-        <div className="max-w-[780px]">
+      <div className="relative mx-auto flex w-full max-w-8xl flex-col px-4 pb-5 pt-3 md:min-h-[620px] md:px-8 md:pb-7 md:pt-11">
+        <div className="max-w-[650px]">
           <div
-            className={`inline-flex max-w-full flex-wrap items-center gap-x-3 gap-y-2 rounded-md border px-3 py-2.5 text-[18px] leading-[1.35] md:px-5 md:py-3 md:text-[18px] md:leading-[1.45] ${
+            className={`inline-flex max-w-full flex-wrap items-center gap-x-2 gap-y-1.5 rounded-md border px-3 py-2 text-[13px] leading-[1.35] md:max-w-[680px] md:px-4 md:py-2.5 md:text-[15px] md:leading-[1.45] ${
               isDark
-                ? "border-white/30 bg-[rgba(2,7,17,0.5)] text-white"
+                ? "border-white/30 bg-[rgba(4,35,82,0.46)] text-white"
                 : "border-[rgba(11,103,220,0.48)] bg-[rgba(255,255,255,0.58)] text-[var(--color-text-muted)]"
             }`}
           >
             <MetaIcon />
-            <strong className="font-semibold text-[var(--color-primary)]">{meta.model}</strong>
-            <span>{meta.years}</span>
-            <span>{meta.generations}</span>
+            <strong className="font-semibold text-[var(--color-primary)]" dangerouslySetInnerHTML={{ __html: meta.model }} />
+            <MetaSeparator />
+            <span dangerouslySetInnerHTML={{ __html: meta.years }} />
+            <MetaSeparator />
+            <span dangerouslySetInnerHTML={{ __html: meta.generations }} />
+            <MetaSeparator />
             <MetaIcon type="engine" />
-            <span>{meta.engines}</span>
+            <span dangerouslySetInnerHTML={{ __html: meta.engines }} />
           </div>
 
-          <div className="mt-9 md:mt-11">
+          <div className="mt-6 md:mt-8">
             <HeroTitle title={data.h1} isDark={isDark} />
           </div>
-          <div className="mt-4">
+          <div className="mt-3">
             <MStripe />
           </div>
-          <p className={`mt-5 max-w-[650px] ${sectionDescription} text-[var(--color-text-muted)]`}>
-            {data.subHeadline}
-          </p>
+          <p className={`mt-4 max-w-[610px] ${sectionDescription} text-[var(--color-text-muted)]`} dangerouslySetInnerHTML={{ __html: data.subHeadline }} />
 
           {data.primaryCta ? (
             <Link
               href={data.primaryCta.href}
-              className={`mt-7 inline-flex min-h-12 items-center justify-center gap-5 rounded-md bg-[var(--color-primary)] px-5 py-3 font-bold text-white shadow-[0_12px_28px_var(--color-shadow)] transition-all duration-200 hover:text-black hover:shadow-[0_18px_40px_rgba(0,0,0,0.28)] ${sectionButton} md:min-h-14 md:gap-6 md:px-6`}
+              className={`mt-5 inline-flex min-h-10 items-center justify-center gap-3 rounded-md bg-[var(--color-primary)] px-4 py-2 font-bold text-white shadow-[0_12px_28px_var(--color-shadow)] transition-all duration-200 hover:text-black hover:shadow-[0_18px_40px_rgba(0,0,0,0.28)] ${sectionButton} md:min-h-11 md:px-5`}
             >
-              <span>{data.primaryCta.label.replace(/\s*(?:→|â†’)\s*$/, "")}</span>
+              <span dangerouslySetInnerHTML={{ __html: data.primaryCta.label.replace(/\s*(?:→|â†’)\s*$/, "") }} />
               <ArrowIcon />
             </Link>
           ) : null}
@@ -190,9 +217,9 @@ export default function ModelHero({ data }) {
 
         {data.trustStrip?.length > 0 ? (
           <ul
-            className={`mt-8 grid grid-cols-2 gap-3 md:mt-9 md:grid-cols-4 md:gap-0 md:overflow-hidden md:rounded-lg md:border md:shadow-[0_14px_36px_var(--color-shadow)] ${
+            className={`mt-8 grid grid-cols-2 gap-2.5 md:mt-auto md:grid-cols-4 md:gap-0 md:overflow-hidden md:rounded-lg md:border md:shadow-[0_14px_36px_var(--color-shadow)] ${
               isDark
-                ? "md:border-white/12 md:bg-[rgba(3,12,24,0.72)]"
+                ? "md:border-white/12 md:bg-[rgba(4,35,82,0.54)]"
                 : "md:border-[var(--color-border)] md:bg-[rgba(255,255,255,0.86)]"
             }`}
           >

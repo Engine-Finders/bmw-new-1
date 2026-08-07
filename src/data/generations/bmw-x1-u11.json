@@ -185,7 +185,7 @@
               "name": "Which BMW X1 U11 engine is the most reliable?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "The B48 2.0-litre four-cylinder petrol in xDrive23i form (218 bhp) is the most reliable U11 engine -it's proven across BMW's UKL platform, avoids the B38's injector issues and the B47 diesel's DPF sensitivity, and offers strong performance. The iX1 electric powertrain is likely to be reliable but is too new for long-term data."
+                "text": "The B48 2.0-litre four-cylinder petrol in xDrive23i form (218 bhp) is the most reliable U11 engine -it\u0027s proven across BMW\u0027s UKL platform, avoids the B38\u0027s injector issues and the B47 diesel\u0027s DPF sensitivity, and offers strong performance. The iX1 electric powertrain is likely to be reliable but is too new for long-term data."
               }
             },
             {
@@ -201,7 +201,7 @@
               "name": "Is the BMW X1 U11 reliable?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Overall, yes -the U11's B48 petrol engines are modern and highly reliable. The B38 has well-documented injector issues but they're manageable with proactive maintenance. The B47 diesel is significantly more robust than its N47 predecessor. The PHEV and iX1 are more complex but well-supported by BMW's network."
+                "text": "Overall, yes -the U11\u0027s B48 petrol engines are modern and highly reliable. The B38 has well-documented injector issues but they\u0027re manageable with proactive maintenance. The B47 diesel is significantly more robust than its N47 predecessor. The PHEV and iX1 are more complex but well-supported by BMW\u0027s network."
               }
             },
             {
@@ -209,7 +209,7 @@
               "name": "Which U11 engine should I avoid?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "We don't recommend outright avoidance -but a B38 without documented injector history is one to approach with caution. Injector failure is common and can lead to piston damage if ignored. For diesels, avoid any B47 used primarily for short urban trips where DPF clogging is more likely. For the PHEV, ensure the battery health is documented."
+                "text": "We don\u0027t recommend outright avoidance -but a B38 without documented injector history is one to approach with caution. Injector failure is common and can lead to piston damage if ignored. For diesels, avoid any B47 used primarily for short urban trips where DPF clogging is more likely. For the PHEV, ensure the battery health is documented."
               }
             },
             {
@@ -225,7 +225,7 @@
               "name": "Is it worth replacing a BMW X1 U11 engine, or should I scrap the car?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Apply our 70% BMW threshold. A £4,800 B48 recon against a £30,000 U11 is just 16% -well within the threshold. Even the M35i's £6,500 recon against a £38,000 car is just 17%. Unlike older BMWs, the U11's high retained value means engine replacement is almost always financially viable. Value the car first -but on a modern U11, a recon is usually a repair decision, not a financial one."
+                "text": "Apply our 70% BMW threshold. A £4,800 B48 recon against a £30,000 U11 is just 16% -well within the threshold. Even the M35i\u0027s £6,500 recon against a £38,000 car is just 17%. Unlike older BMWs, the U11\u0027s high retained value means engine replacement is almost always financially viable. Value the car first -but on a modern U11, a recon is usually a repair decision, not a financial one."
               }
             },
             {
@@ -233,7 +233,7 @@
               "name": "How long do BMW X1 U11 engines last?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "The B48 petrol can exceed 150,000 miles with proper servicing. The B38 is similarly durable when injector issues are addressed proactively. The B47 diesel is robust and can reach 150,000+ miles with regular maintenance. The PHEV's battery health is the limiting factor -expect 8–10 years of service before significant degradation. The iX1's battery is covered by an 8-year/100,000-mile warranty."
+                "text": "The B48 petrol can exceed 150,000 miles with proper servicing. The B38 is similarly durable when injector issues are addressed proactively. The B47 diesel is robust and can reach 150,000+ miles with regular maintenance. The PHEV\u0027s battery health is the limiting factor -expect 8–10 years of service before significant degradation. The iX1\u0027s battery is covered by an 8-year/100,000-mile warranty."
               }
             },
             {
@@ -249,7 +249,7 @@
               "name": "How do I find my BMW X1 U11 engine code?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Listed on the VIN plate and vehicle documentation; block stamping varies by engine. For the B38/B48, the code is on the block near the exhaust manifold. For the B47, it's on the block face below the inlet manifold. Tell us your registration and we'll identify it -20+ vetted BMW specialists will confirm it for free."
+                "text": "Listed on the VIN plate and vehicle documentation; block stamping varies by engine. For the B38/B48, the code is on the block near the exhaust manifold. For the B47, it\u0027s on the block face below the inlet manifold. Tell us your registration and we\u0027ll identify it -20+ vetted BMW specialists will confirm it for free."
               }
             }
           ]
@@ -306,7 +306,7 @@
   "hero": {
     "tagPill": "BMW X1 U11 • SUV • 2022–present",
     "h1": "BMW X1 U11 Engines -The Complete UK Guide",
-    "subHeadline": "Every engine fitted to the third-generation X1 -from the 1.5-litre B38 three-cylinder petrol to the 2.0-litre B48 and B47 four-cylinders, plus the plug-in hybrid xDrive25e and xDrive30e, and the all-electric iX1. Real UK replacement costs, honest reliability data, and the cooling system and injector issues that define this generation's ownership story. Backed by real UK enquiry data [PATTERN DATA].",
+    "subHeadline": "Every engine fitted to the third-generation X1 -from the 1.5-litre <a href='https://bmwengines.uk/engine/b38-b48'>B38</a> three-cylinder petrol to the 2.0-litre B48 and <a href='https://bmwengines.uk/engine/b37-b47'>B47</a> four-cylinders, plus the plug-in hybrid xDrive25e and xDrive30e, and the all-electric iX1. Real UK replacement costs, honest reliability data, and the cooling system and injector issues that define this generation\u0027s ownership story. Backed by real UK enquiry data [PATTERN DATA].",
     "trustStrip": [
       {
         "icon": "📊",
@@ -494,7 +494,7 @@
     ],
     "confidenceScore": {
       "title": "Confidence Score",
-      "text": "All ratings are provisional -no dedicated Engine Page exists for any U11 engine family. The B48 four-cylinder petrols are considered the most reliable based on their proven track record across BMW's UKL platform. The B38 three-cylinder has known injector issues. The B47 diesel is significantly more robust than its N47 predecessor. The iX1 electric powertrain is too new for long-term reliability data."
+      "text": "All ratings are provisional -no dedicated Engine Page exists for any U11 engine family. The B48 four-cylinder petrols are considered the most reliable based on their proven track record across BMW\u0027s UKL platform. The B38 three-cylinder has known injector issues. The B47 diesel is significantly more robust than its <a href='https://bmwengines.uk/engine/n47'>N47</a> predecessor. The iX1 electric powertrain is too new for long-term reliability data."
     },
     "dataCorrections": []
   },
@@ -509,7 +509,7 @@
       {
         "slot": "Thin-Data Summary",
         "engine": "",
-        "quote": "Thin-Data Fallback mode -exactly one paragraph: The B48 2.0-litre four-cylinder petrol in xDrive23i form (218 bhp) is the sweet spot of the U11 range -strong performance, proven reliability across BMW's UKL platform, and without the B38 three-cylinder's injector concerns or the B47 diesel's DPF sensitivity. The M35i is thrilling (300–312 bhp) but carries higher running costs and more strain on the engine. The B47 diesels are solid, torque-rich options for high-mileage buyers, but they're increasingly rare in the UK market. The iX1 electric is the future-proof choice, but battery replacement costs remain high (£8,000–£12,000). For most buyers, the xDrive23i petrol is the sensible, reliable choice.",
+        "quote": "Thin-Data Fallback mode -exactly one paragraph: The B48 2.0-litre four-cylinder petrol in xDrive23i form (218 bhp) is the sweet spot of the U11 range -strong performance, proven reliability across BMW\u0027s UKL platform, and without the B38 three-cylinder\u0027s injector concerns or the B47 diesel\u0027s DPF sensitivity. The M35i is thrilling (300–312 bhp) but carries higher running costs and more strain on the engine. The B47 diesels are solid, torque-rich options for high-mileage buyers, but they\u0027re increasingly rare in the UK market. The iX1 electric is the future-proof choice, but battery replacement costs remain high (£8,000–£12,000). For most buyers, the xDrive23i petrol is the sensible, reliable choice.",
         "whoItsFor": ""
       }
     ]
@@ -592,7 +592,7 @@
     ],
     "economicsRule": {
       "title": "The U11 rule",
-      "text": "A £4,800 B48 recon against a £30,000 U11 sits at 16% -well within our 70% BMW threshold. Even the M35i's £6,500 recon against a £38,000 car is just 17%. Unlike older BMWs, the U11's high retained value means engine replacement is almost always financially viable. Value the car first -but on a modern U11, a recon is usually a repair decision, not a financial one."
+      "text": "A £4,800 B48 recon against a £30,000 U11 sits at 16% -well within our 70% BMW threshold. Even the M35i\u0027s £6,500 recon against a £38,000 car is just 17%. Unlike older BMWs, the U11\u0027s high retained value means engine replacement is almost always financially viable. Value the car first -but on a modern U11, a recon is usually a repair decision, not a financial one."
     },
     "keyTakeaways": [
       {
@@ -616,7 +616,7 @@
         "title": "B38 Three-Cylinder Injector Failure",
         "affectedModels": "U11 sDrive16i, sDrive18i, sDrive20i (B38 engines).",
         "typicalFailureMileage": "30,000–80,000 miles.",
-        "rootCause": "The B38's direct fuel injectors can fail due to heat-soak issues -when the engine is switched off, fuel in the injectors can evaporate, causing them to overheat and become stuck or leak. Symptoms include rough running, misfires, and check engine lights.",
+        "rootCause": "The B38\u0027s direct fuel injectors can fail due to heat-soak issues -when the engine is switched off, fuel in the injectors can evaporate, causing them to overheat and become stuck or leak. Symptoms include rough running, misfires, and check engine lights.",
         "tieredCosts": [
           {
             "tier": "Preventative (Repair)",
@@ -644,7 +644,7 @@
         "title": "B48 Cooling System Failure",
         "affectedModels": "U11 xDrive23i, xDrive28i, M35i (B48 engines).",
         "typicalFailureMileage": "40,000–80,000 miles.",
-        "rootCause": "The B48 four-cylinder petrol engine suffers from water pump failure and cooling system leaks. The plastic coolant pipes and thermostat housing can become brittle with age and heat cycling, leading to coolant loss and potential overheating. The M35i's high-output B48 places additional strain on the cooling system.",
+        "rootCause": "The B48 four-cylinder petrol engine suffers from water pump failure and cooling system leaks. The plastic coolant pipes and thermostat housing can become brittle with age and heat cycling, leading to coolant loss and potential overheating. The M35i\u0027s high-output B48 places additional strain on the cooling system.",
         "tieredCosts": [
           {
             "tier": "Preventative (Repair)",
@@ -821,19 +821,56 @@
   },
   "coreVariants": {
     "dieselVariants": [
-      "sDrive18d",
-      "xDrive20d",
-      "xDrive23d"
+      {
+        "name": "sDrive18d",
+        "url": "#"
+      },
+      {
+        "name": "xDrive20d",
+        "url": "#"
+      },
+      {
+        "name": "xDrive23d",
+        "url": "#"
+      }
     ],
     "petrolVariants": [
-      "sDrive16i",
-      "sDrive18i",
-      "sDrive20i",
-      "xDrive23i",
-      "xDrive28i",
-      "M35i",
-      "xDrive25e",
-      "xDrive30e"
+      {
+        "name": "sDrive16i",
+        "url": "#"
+      },
+      {
+        "name": "sDrive18i",
+        "url": "https://bmwengines.uk/x1/18i"
+      },
+      {
+        "name": "sDrive20i",
+        "url": "https://bmwengines.uk/x1/20i"
+      },
+      {
+        "name": "xDrive23i",
+        "url": "#"
+      },
+      {
+        "name": "xDrive28i",
+        "url": "#"
+      },
+      {
+        "name": "M35i",
+        "url": "#"
+      },
+      {
+        "name": "xDrive25e",
+        "url": "#"
+      },
+      {
+        "name": "xDrive30e",
+        "url": "#"
+      },
+      {
+        "name": "25e / 30e",
+        "url": "https://bmwengines.uk/x1/25e-30e"
+      }
     ],
     "scopeNote": "All variants listed are BMW X1 U11 only. The U12 (long-wheelbase) is a separate model with the same engine lineup, covered on its own Generation Page. The iX1 is the all-electric variant, produced alongside the combustion-engined models."
   },
@@ -854,7 +891,7 @@
       {
         "id": 2,
         "question": "Which BMW X1 U11 engine is the most reliable?",
-        "answer": "The B48 2.0-litre four-cylinder petrol in xDrive23i form (218 bhp) is the most reliable U11 engine -it's proven across BMW's UKL platform, avoids the B38's injector issues and the B47 diesel's DPF sensitivity, and offers strong performance. The iX1 electric powertrain is likely to be reliable but is too new for long-term data."
+        "answer": "The B48 2.0-litre four-cylinder petrol in xDrive23i form (218 bhp) is the most reliable U11 engine -it\u0027s proven across BMW\u0027s UKL platform, avoids the B38\u0027s injector issues and the B47 diesel\u0027s DPF sensitivity, and offers strong performance. The iX1 electric powertrain is likely to be reliable but is too new for long-term data."
       },
       {
         "id": 3,
@@ -864,12 +901,12 @@
       {
         "id": 4,
         "question": "Is the BMW X1 U11 reliable?",
-        "answer": "Overall, yes -the U11's B48 petrol engines are modern and highly reliable. The B38 has well-documented injector issues but they're manageable with proactive maintenance. The B47 diesel is significantly more robust than its N47 predecessor. The PHEV and iX1 are more complex but well-supported by BMW's network."
+        "answer": "Overall, yes -the U11\u0027s B48 petrol engines are modern and highly reliable. The B38 has well-documented injector issues but they\u0027re manageable with proactive maintenance. The B47 diesel is significantly more robust than its N47 predecessor. The PHEV and iX1 are more complex but well-supported by BMW\u0027s network."
       },
       {
         "id": 5,
         "question": "Which U11 engine should I avoid?",
-        "answer": "We don't recommend outright avoidance -but a B38 without documented injector history is one to approach with caution. Injector failure is common and can lead to piston damage if ignored. For diesels, avoid any B47 used primarily for short urban trips where DPF clogging is more likely. For the PHEV, ensure the battery health is documented."
+        "answer": "We don\u0027t recommend outright avoidance -but a B38 without documented injector history is one to approach with caution. Injector failure is common and can lead to piston damage if ignored. For diesels, avoid any B47 used primarily for short urban trips where DPF clogging is more likely. For the PHEV, ensure the battery health is documented."
       },
       {
         "id": 6,
@@ -879,12 +916,12 @@
       {
         "id": 7,
         "question": "Is it worth replacing a BMW X1 U11 engine, or should I scrap the car?",
-        "answer": "Apply our 70% BMW threshold. A £4,800 B48 recon against a £30,000 U11 is just 16% -well within the threshold. Even the M35i's £6,500 recon against a £38,000 car is just 17%. Unlike older BMWs, the U11's high retained value means engine replacement is almost always financially viable. Value the car first -but on a modern U11, a recon is usually a repair decision, not a financial one."
+        "answer": "Apply our 70% BMW threshold. A £4,800 B48 recon against a £30,000 U11 is just 16% -well within the threshold. Even the M35i\u0027s £6,500 recon against a £38,000 car is just 17%. Unlike older BMWs, the U11\u0027s high retained value means engine replacement is almost always financially viable. Value the car first -but on a modern U11, a recon is usually a repair decision, not a financial one."
       },
       {
         "id": 8,
         "question": "How long do BMW X1 U11 engines last?",
-        "answer": "The B48 petrol can exceed 150,000 miles with proper servicing. The B38 is similarly durable when injector issues are addressed proactively. The B47 diesel is robust and can reach 150,000+ miles with regular maintenance. The PHEV's battery health is the limiting factor -expect 8–10 years of service before significant degradation. The iX1's battery is covered by an 8-year/100,000-mile warranty."
+        "answer": "The B48 petrol can exceed 150,000 miles with proper servicing. The B38 is similarly durable when injector issues are addressed proactively. The B47 diesel is robust and can reach 150,000+ miles with regular maintenance. The PHEV\u0027s battery health is the limiting factor -expect 8–10 years of service before significant degradation. The iX1\u0027s battery is covered by an 8-year/100,000-mile warranty."
       },
       {
         "id": 9,
@@ -894,7 +931,7 @@
       {
         "id": 10,
         "question": "How do I find my BMW X1 U11 engine code?",
-        "answer": "Listed on the VIN plate and vehicle documentation; block stamping varies by engine. For the B38/B48, the code is on the block near the exhaust manifold. For the B47, it's on the block face below the inlet manifold. Tell us your registration and we'll identify it -20+ vetted BMW specialists will confirm it for free."
+        "answer": "Listed on the VIN plate and vehicle documentation; block stamping varies by engine. For the B38/B48, the code is on the block near the exhaust manifold. For the B47, it\u0027s on the block face below the inlet manifold. Tell us your registration and we\u0027ll identify it -20+ vetted BMW specialists will confirm it for free."
       }
     ]
   },

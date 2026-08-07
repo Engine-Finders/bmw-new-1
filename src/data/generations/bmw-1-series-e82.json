@@ -149,7 +149,7 @@
               "name": "Which BMW 1 Series E82 engine is the most reliable?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "The N52B30 (125i/128i) -BMW's last naturally aspirated straight-six in the 1 Series. It delivers linear, smooth power without the turbocharging complexity of the N54/N55 or the timing-chain risk of the N47 diesel. VANOS and Valvetronic are the only real wear items."
+                "text": "The N52B30 (125i/128i) -BMW\u0027s last naturally aspirated straight-six in the 1 Series. It delivers linear, smooth power without the turbocharging complexity of the N54/N55 or the timing-chain risk of the N47 diesel. VANOS and Valvetronic are the only real wear items."
               }
             },
             {
@@ -189,7 +189,7 @@
               "name": "Is it worth replacing a BMW 1 Series E82 engine, or should I scrap the car?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Depends on the car's value. Against a well‑kept £10,000 E82, a £4,000 N47 recon is 40% of the car's value -safe. Against a tired £5,000 example, the same recon brushes our 70% BMW threshold -walk away. Our 70% BMW threshold is the line."
+                "text": "Depends on the car\u0027s value. Against a well‑kept £10,000 E82, a £4,000 N47 recon is 40% of the car\u0027s value -safe. Against a tired £5,000 example, the same recon brushes our 70% BMW threshold -walk away. Our 70% BMW threshold is the line."
               }
             },
             {
@@ -197,7 +197,7 @@
               "name": "How long do BMW 1 Series E82 engines last?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "The N52 petrol six can exceed 200,000 miles with proper servicing. The N47 diesel's limiting factor is the timing chain -addressed proactively, it can reach 150,000+ miles. The N54's lifespan is heavily dependent on fuel system maintenance -with proper care, it can also reach high mileages."
+                "text": "The N52 petrol six can exceed 200,000 miles with proper servicing. The N47 diesel\u0027s limiting factor is the timing chain -addressed proactively, it can reach 150,000+ miles. The N54\u0027s lifespan is heavily dependent on fuel system maintenance -with proper care, it can also reach high mileages."
               }
             },
             {
@@ -205,7 +205,7 @@
               "name": "What is the difference between the E82, E81, E87 and E88?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "All four share the first-generation 1 Series platform. The E82 is the 2-door coupé (2007–2013, this page). The E81 is the 3-door hatchback, the E87 is the 5-door hatchback, and the E88 is the 2-door convertible. Costs vary slightly by body style due to labour access -see each generation's own page for specifics."
+                "text": "All four share the first-generation 1 Series platform. The E82 is the 2-door coupé (2007–2013, this page). The E81 is the 3-door hatchback, the E87 is the 5-door hatchback, and the E88 is the 2-door convertible. Costs vary slightly by body style due to labour access -see each generation\u0027s own page for specifics."
               }
             },
             {
@@ -213,7 +213,7 @@
               "name": "How do I find my BMW 1 Series E82 engine code?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Listed on the VIN plate and vehicle documentation; block stamping is visible from below on N47/N52/N54/N55 units. Tell us your variant (118i, 120i, 125i, 128i, 135i, 118d, 120d, 123d or 1M) and we'll identify it -20+ vetted BMW specialists will confirm it for free."
+                "text": "Listed on the VIN plate and vehicle documentation; block stamping is visible from below on N47/N52/N54/N55 units. Tell us your variant (118i, 120i, 125i, 128i, 135i, 118d, 120d, 123d or 1M) and we\u0027ll identify it -20+ vetted BMW specialists will confirm it for free."
               }
             }
           ]
@@ -247,7 +247,7 @@
         {
           "@type": "Dataset",
           "name": "BMW 1 Series E82 UK Engine Enquiry Data 2025",
-          "description": "Proprietary UK enquiry volumes and demand trends for BMW 1 Series E82 engines, sourced from BMWEngines.uk's specialist marketplace activity.",
+          "description": "Proprietary UK enquiry volumes and demand trends for BMW 1 Series E82 engines, sourced from BMWEngines.uk\u0027s specialist marketplace activity.",
           "creator": {
             "@type": "Organization",
             "name": "BMWEngines.uk"
@@ -281,7 +281,7 @@
   "hero": {
     "tagPill": "BMW 1 Series E82 • Coupé • 2007–2013",
     "h1": "BMW 1 Series E82 Engines -The Complete UK Guide",
-    "subHeadline": "Every engine fitted to the E82 coupé -from the N47 twin-turbo diesel to the N54 and N55 straight-sixes that powered the 135i and 1M. Real UK replacement costs, honest failure data, and the high-pressure fuel pump risk that still haunts early turbocharged cars. Backed by 240+ real UK E82 enquiries in 2025 [BMW-VERIFIED].",
+    "subHeadline": "Every engine fitted to the E82 coupé -from the <a href='https://bmwengines.uk/engine/n47'>N47</a> twin-turbo diesel to the <a href='https://bmwengines.uk/engine/n54-n55'>N54</a> and N55 straight-sixes that powered the 135i and 1M. Real UK replacement costs, honest failure data, and the high-pressure fuel pump risk that still haunts early turbocharged cars. Backed by 240+ real UK E82 enquiries in 2025 [BMW-VERIFIED].",
     "trustStrip": [
       {
         "icon": "📊",
@@ -346,7 +346,7 @@
         "engineCode": "-(pattern data)",
         "family": "£1,800–£3,500 [BMW-QUOTE]",
         "fuel": "N43B20",
-        "displacement": "N43",
+        "displacement": "<a href='https://bmwengines.uk/engine/n40-n42-n43-n45-n46'>N43</a>",
         "power": "Petrol",
         "years": "2.0L",
         "variants": "",
@@ -368,7 +368,7 @@
       },
       {
         "engineCode": "N52B30",
-        "family": "N52",
+        "family": "<a href='https://bmwengines.uk/engine/n52-n53'>N52</a>",
         "fuel": "Petrol",
         "displacement": "3.0L",
         "power": "215–230 bhp",
@@ -465,13 +465,13 @@
     ],
     "confidenceScore": {
       "title": "How confident are these ratings?",
-      "text": "N47D20C: 95% confidence, inherited directly from the Model Page's BMW-VERIFIED figures. N52, N54, N55: Expert-knowledge tier, inherited from the Model Page's pattern-data-tier ratings. N46, N43, N47D20D: Provisional-newly-assigned tier -no dedicated Engine Page exists for these codes yet; ratings derived from cross-referencing specialist and owner sources."
+      "text": "N47D20C: 95% confidence, inherited directly from the Model Page\u0027s BMW-VERIFIED figures. N52, N54, N55: Expert-knowledge tier, inherited from the Model Page\u0027s pattern-data-tier ratings. N46, N43, N47D20D: Provisional-newly-assigned tier -no dedicated Engine Page exists for these codes yet; ratings derived from cross-referencing specialist and owner sources."
     },
     "dataCorrections": []
   },
   "overview": {
     "h2": "BMW 1 Series E82 -Overview",
-    "intro": "The E82 is the coupé body of BMW's first-generation 1 Series, launched in 2007 as a two-door, four-seat sports coupé. It shared its platform with the E81/E87 hatchbacks and E88 convertible, but introduced a longer wheelbase and a lower, wider stance. The engine range spanned from efficient four-cylinder petrol and diesel units to the range-topping N54 twin-turbo straight-six in the 135i and the limited-production 1 Series M Coupé. A 2010 Life Cycle Impulse (LCI) brought revised styling and the replacement of the N54 with the single-turbo N55 in the 135i.",
+    "intro": "The E82 is the coupé body of BMW\u0027s first-generation 1 Series, launched in 2007 as a two-door, four-seat sports coupé. It shared its platform with the E81/E87 hatchbacks and E88 convertible, but introduced a longer wheelbase and a lower, wider stance. The engine range spanned from efficient four-cylinder petrol and diesel units to the range-topping N54 twin-turbo straight-six in the 135i and the limited-production 1 Series M Coupé. A 2010 Life Cycle Impulse (LCI) brought revised styling and the replacement of the N54 with the single-turbo N55 in the 135i.",
     "keyFacts": "Platform: BMW E8x (shared with E81/E87/E88) • Predecessor: None (1 Series coupé was a new body style) • Successor: BMW 2 Series F22 (2014–present) • Sibling body styles in this generation: E81 3-door hatchback, E87 5-door hatchback, E88 convertible",
     "marketIntelligenceLine": "The E82 generated 240 real UK engine enquiries in 2025 [BMW-VERIFIED], concentrated on the N47 diesel and N54/N55 petrol units as these cars age into enthusiast ownership and maintenance cycles."
   },
@@ -480,37 +480,37 @@
       {
         "slot": "Best Diesel Overall",
         "engine": "123d (N47D20D, 2.0-litre twin-turbo, 204 bhp)",
-        "quote": "The 123d is the pick of the E82 diesel range -204 bhp and 400 Nm of torque from a twin-turbo four-cylinder that delivers genuine performance without the six-cylinder's fuel consumption. It's the diesel that feels like a petrol, and it's the one enthusiasts choose.",
+        "quote": "The 123d is the pick of the E82 diesel range -204 bhp and 400 Nm of torque from a twin-turbo four-cylinder that delivers genuine performance without the six-cylinder\u0027s fuel consumption. It\u0027s the diesel that feels like a petrol, and it\u0027s the one enthusiasts choose.",
         "whoItsFor": "Buyers who want diesel economy with near-petrol performance."
       },
       {
         "slot": "Best Petrol Overall",
         "engine": "N52B30 (3.0-litre naturally aspirated, 125i/128i)",
-        "quote": "The N52 is the last of BMW's naturally aspirated straight-sixes in the 1 Series -215–230 bhp, linear power delivery, and none of the turbocharging complexity that defines the N54 and N55. VANOS and Valvetronic are the only real wear items.",
+        "quote": "The N52 is the last of BMW\u0027s naturally aspirated straight-sixes in the 1 Series -215–230 bhp, linear power delivery, and none of the turbocharging complexity that defines the N54 and N55. VANOS and Valvetronic are the only real wear items.",
         "whoItsFor": "Enthusiasts who want classic BMW six-cylinder character without turbo anxiety."
       },
       {
         "slot": "Highest Risk",
         "engine": "N54B30 (3.0-litre twin-turbo, 135i/1M, 2007–2010)",
-        "quote": "The N54 was BMW's first mass-production turbocharged direct-injection petrol engine. High-pressure fuel pump (HPFP) failure leads to long cranks and limp mode; injector and wastegate issues often follow. It's a brilliant engine when it works, but it demands deep pockets.",
+        "quote": "The N54 was BMW\u0027s first mass-production turbocharged direct-injection petrol engine. High-pressure fuel pump (HPFP) failure leads to long cranks and limp mode; injector and wastegate issues often follow. It\u0027s a brilliant engine when it works, but it demands deep pockets.",
         "whoItsFor": "135i buyers who know the risks and have a maintenance budget."
       },
       {
         "slot": "Most Expensive Failure",
-        "engine": "N54B30 HPFP & Injector Failure",
-        "quote": "The N54's high-pressure fuel pump is its Achilles heel. Replacement costs run £800–£1,500 at a specialist, and if injectors fail alongside it, the bill climbs quickly. A full engine replacement on an N54 135i can exceed £6,500.",
+        "engine": "N54B30 HPFP \u0026 Injector Failure",
+        "quote": "The N54\u0027s high-pressure fuel pump is its Achilles heel. Replacement costs run £800–£1,500 at a specialist, and if injectors fail alongside it, the bill climbs quickly. A full engine replacement on an N54 135i can exceed £6,500.",
         "whoItsFor": "Buyers who want 300+ bhp and are prepared for the maintenance."
       },
       {
         "slot": "Best Value",
         "engine": "120d (N47D20C, 2.0-litre diesel, 177 bhp)",
-        "quote": "The 120d delivers 177 bhp, 350 Nm of torque, and genuine 50+ mpg economy -the best all-rounder in the E82 range. The N47's timing-chain risk is well-documented, but a car with chain history is the smartest buy in the range.",
+        "quote": "The 120d delivers 177 bhp, 350 Nm of torque, and genuine 50+ mpg economy -the best all-rounder in the E82 range. The N47\u0027s timing-chain risk is well-documented, but a car with chain history is the smartest buy in the range.",
         "whoItsFor": "Buyers who want performance, economy and value in one package."
       },
       {
         "slot": "Most Overlooked",
         "engine": "125i (N52B30, 3.0-litre naturally aspirated, 215 bhp)",
-        "quote": "The 125i is often overshadowed by the 135i's power and the diesels' economy, but it's the sweet spot -215 bhp, rear-wheel drive, and BMW's last naturally aspirated straight-six. It's the E82 that drives like a classic BMW should.",
+        "quote": "The 125i is often overshadowed by the 135i\u0027s power and the diesels\u0027 economy, but it\u0027s the sweet spot -215 bhp, rear-wheel drive, and BMW\u0027s last naturally aspirated straight-six. It\u0027s the E82 that drives like a classic BMW should.",
         "whoItsFor": "Buyers who want the purest E82 driving experience."
       }
     ]
@@ -577,7 +577,7 @@
     ],
     "economicsRule": {
       "title": "The E82 rule",
-      "text": "A £3,200–£5,500 N47 recon against a £5,000–£12,000 E82 sits at 27–110% of the car's value. On a sub-£6,000 E82, that brushes our 70% BMW threshold -we'll honestly tell you to walk away. Against a well-kept £10,000+ example, the same recon drops to a routine 32–55% -a repair decision, not a financial one. Value the car first."
+      "text": "A £3,200–£5,500 N47 recon against a £5,000–£12,000 E82 sits at 27–110% of the car\u0027s value. On a sub-£6,000 E82, that brushes our 70% BMW threshold -we\u0027ll honestly tell you to walk away. Against a well-kept £10,000+ example, the same recon drops to a routine 32–55% -a repair decision, not a financial one. Value the car first."
     },
     "keyTakeaways": [
       {
@@ -601,7 +601,7 @@
         "title": "N47 Diesel Timing Chain Stretch",
         "affectedModels": "E82 118d, 120d, 123d (N47D20C / N47D20D, 2007–2013).",
         "typicalFailureMileage": "60,000–100,000 miles.",
-        "rootCause": "The N47's rear-mounted timing chain receives the last oil feed and is tensioned by a plastic guide that degrades over time. Cold-start rattle for 1–2 seconds is the classic early warning. The 123d's twin-turbo variant shares the same chain design, so the risk applies equally.",
+        "rootCause": "The N47\u0027s rear-mounted timing chain receives the last oil feed and is tensioned by a plastic guide that degrades over time. Cold-start rattle for 1–2 seconds is the classic early warning. The 123d\u0027s twin-turbo variant shares the same chain design, so the risk applies equally.",
         "tieredCosts": [
           {
             "tier": "Dealer",
@@ -626,10 +626,10 @@
       },
       {
         "id": 2,
-        "title": "N54 HPFP & Injector Failure",
+        "title": "N54 HPFP \u0026 Injector Failure",
         "affectedModels": "E82 135i (N54B30, 2007–2010).",
         "typicalFailureMileage": "30,000–80,000 miles.",
-        "rootCause": "The N54's high-pressure fuel pump suffers from internal wear leading to fuel pressure loss, hard starting, and eventual engine damage if ignored. Injector issues frequently follow HPFP failure, and wastegate rattle on the turbos is a separate but common complaint.",
+        "rootCause": "The N54\u0027s high-pressure fuel pump suffers from internal wear leading to fuel pressure loss, hard starting, and eventual engine damage if ignored. Injector issues frequently follow HPFP failure, and wastegate rattle on the turbos is a separate but common complaint.",
         "tieredCosts": [
           {
             "tier": "Dealer",
@@ -654,10 +654,10 @@
       },
       {
         "id": 3,
-        "title": "N52 VANOS Solenoid & Cooling System Wear",
+        "title": "N52 VANOS Solenoid \u0026 Cooling System Wear",
         "affectedModels": "E82 125i / 128i (N52B30, 2008–2013).",
         "typicalFailureMileage": "80,000–120,000 miles.",
-        "rootCause": "The N52's VANOS solenoids can become clogged with debris, causing rough idle, reduced power, and engine warning lights. The cooling system -water pump, thermostat and expansion tank -is also a known weak point as the plastic components age.",
+        "rootCause": "The N52\u0027s VANOS solenoids can become clogged with debris, causing rough idle, reduced power, and engine warning lights. The cooling system -water pump, thermostat and expansion tank -is also a known weak point as the plastic components age.",
         "tieredCosts": [
           {
             "tier": "Dealer",
@@ -702,7 +702,7 @@
             "note": ""
           }
         ],
-        "recommendation": "Have this checked on any E82 over 80,000 miles -it's the single most common reason an otherwise sound E82 fails an inspection.",
+        "recommendation": "Have this checked on any E82 over 80,000 miles -it\u0027s the single most common reason an otherwise sound E82 fails an inspection.",
         "cta": {
           "label": "Compare E82 subframe repair quotes →",
           "href": "#"
@@ -781,8 +781,30 @@
     "note": ""
   },
   "coreVariants": {
-    "dieselVariants": [],
-    "petrolVariants": [],
+    "dieselVariants": [
+      {
+        "name": "118d",
+        "url": "https://bmwengines.uk/1-series/118d"
+      },
+      {
+        "name": "120d",
+        "url": "https://bmwengines.uk/1-series/120d"
+      },
+      {
+        "name": "123d",
+        "url": "https://bmwengines.uk/1-series/123d"
+      }
+    ],
+    "petrolVariants": [
+      {
+        "name": "125i",
+        "url": "https://bmwengines.uk/1-series/125i"
+      },
+      {
+        "name": "135i",
+        "url": "https://bmwengines.uk/1-series/135i"
+      }
+    ],
     "scopeNote": "All variants listed are E82 coupé only -the two-door, four-seat sports coupé produced from 2007 to 2013. E81/E87 hatchbacks and E88 convertible are covered on their own Generation Pages, as fitment and labour access vary slightly by body style."
   },
   "marketIntelligence": {
@@ -836,7 +858,7 @@
       {
         "id": 2,
         "question": "Which BMW 1 Series E82 engine is the most reliable?",
-        "answer": "The N52B30 (125i/128i) -BMW's last naturally aspirated straight-six in the 1 Series. It delivers linear, smooth power without the turbocharging complexity of the N54/N55 or the timing-chain risk of the N47 diesel. VANOS and Valvetronic are the only real wear items."
+        "answer": "The N52B30 (125i/128i) -BMW\u0027s last naturally aspirated straight-six in the 1 Series. It delivers linear, smooth power without the turbocharging complexity of the N54/N55 or the timing-chain risk of the N47 diesel. VANOS and Valvetronic are the only real wear items."
       },
       {
         "id": 3,
@@ -861,22 +883,22 @@
       {
         "id": 7,
         "question": "Is it worth replacing a BMW 1 Series E82 engine, or should I scrap the car?",
-        "answer": "Depends on the car's value. Against a well‑kept £10,000 E82, a £4,000 N47 recon is 40% of the car's value -safe. Against a tired £5,000 example, the same recon brushes our 70% BMW threshold -walk away. Our 70% BMW threshold is the line."
+        "answer": "Depends on the car\u0027s value. Against a well‑kept £10,000 E82, a £4,000 N47 recon is 40% of the car\u0027s value -safe. Against a tired £5,000 example, the same recon brushes our 70% BMW threshold -walk away. Our 70% BMW threshold is the line."
       },
       {
         "id": 8,
         "question": "How long do BMW 1 Series E82 engines last?",
-        "answer": "The N52 petrol six can exceed 200,000 miles with proper servicing. The N47 diesel's limiting factor is the timing chain -addressed proactively, it can reach 150,000+ miles. The N54's lifespan is heavily dependent on fuel system maintenance -with proper care, it can also reach high mileages."
+        "answer": "The N52 petrol six can exceed 200,000 miles with proper servicing. The N47 diesel\u0027s limiting factor is the timing chain -addressed proactively, it can reach 150,000+ miles. The N54\u0027s lifespan is heavily dependent on fuel system maintenance -with proper care, it can also reach high mileages."
       },
       {
         "id": 9,
         "question": "What is the difference between the E82, E81, E87 and E88?",
-        "answer": "All four share the first-generation 1 Series platform. The E82 is the 2-door coupé (2007–2013, this page). The E81 is the 3-door hatchback, the E87 is the 5-door hatchback, and the E88 is the 2-door convertible. Costs vary slightly by body style due to labour access -see each generation's own page for specifics."
+        "answer": "All four share the first-generation 1 Series platform. The E82 is the 2-door coupé (2007–2013, this page). The E81 is the 3-door hatchback, the E87 is the 5-door hatchback, and the E88 is the 2-door convertible. Costs vary slightly by body style due to labour access -see each generation\u0027s own page for specifics."
       },
       {
         "id": 10,
         "question": "How do I find my BMW 1 Series E82 engine code?",
-        "answer": "Listed on the VIN plate and vehicle documentation; block stamping is visible from below on N47/N52/N54/N55 units. Tell us your variant (118i, 120i, 125i, 128i, 135i, 118d, 120d, 123d or 1M) and we'll identify it -20+ vetted BMW specialists will confirm it for free."
+        "answer": "Listed on the VIN plate and vehicle documentation; block stamping is visible from below on N47/N52/N54/N55 units. Tell us your variant (118i, 120i, 125i, 128i, 135i, 118d, 120d, 123d or 1M) and we\u0027ll identify it -20+ vetted BMW specialists will confirm it for free."
       }
     ]
   },
@@ -889,11 +911,11 @@
       },
       {
         "title": "Compare E82 Engine Replacement Companies",
-        "text": "see prices, warranty terms and supply & fit options side‑by‑side before you commit."
+        "text": "see prices, warranty terms and supply \u0026 fit options side‑by‑side before you commit."
       },
       {
         "title": "UK Engine Replacement Services for E82",
-        "text": "covering every variant from 118i to 135i, with supply‑only or full supply & fit available nationwide."
+        "text": "covering every variant from 118i to 135i, with supply‑only or full supply \u0026 fit available nationwide."
       }
     ],
     "finalCta": "Find the best BMW 1 Series E82 engine replacement UK drivers rely on. Compare real prices from trusted specialists on EnginesMarket today and get back on the road with confidence.",

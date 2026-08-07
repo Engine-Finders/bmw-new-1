@@ -253,7 +253,7 @@
     }
   },
   "hero": {
-    "tagPill": "BMW M3 • 1985–Present • 6 Generations (E30, E36, E46, E90, F80, G80) • S14, S50, S52, S54, S65, S55, S58",
+    "tagPill": "BMW M3 • 1985–Present • 6 Generations (E30, E36, E46, E90, F80, G80) • <a href='https://bmwengines.uk/engine/s14'>S14</a>, <a href='https://bmwengines.uk/engine/s50-s52-s54'>S50</a>, S52, S54, <a href='https://bmwengines.uk/engine/s63-s65'>S65</a>, <a href='https://bmwengines.uk/engine/s55'>S55</a>, S58",
     "h1": "M3 Engines - The Complete UK Guide",
     "subHeadline": "Every BMW M3 engine across six generations - from the S14 four-cylinder of the E30 to the S58 straight-six of the G80. Real UK replacement costs, known failure patterns, and honest ownership economics for BMW's most iconic M car. Backed by real UK M3 engine enquiries in 2025 [BMW-VERIFIED].",
     "trustStrip": [
@@ -382,7 +382,7 @@
         "verdict": "The original M3 - the car that started it all. The S14 four-cylinder is a masterpiece of 1980s engineering, revving to 7,500 rpm. Now a six-figure classic where engine work is restoration, not repair. The E30 M3 is the ultimate M3 investment.",
         "cta": {
           "label": "Explore the E30 M3 →",
-          "href": "#"
+          "href": "https://bmwengines.uk/m3/e30"
         }
       },
       {
@@ -393,7 +393,7 @@
         "verdict": "The first M3 with a six-cylinder engine - and a genuine driver's car. The Euro-spec S50 with individual throttle bodies is the one to buy; the US-spec S52 is good but less special. Cooling systems and rear subframe mounts are the caveats.",
         "cta": {
           "label": "Explore the E36 M3 →",
-          "href": "#"
+          "href": "https://bmwengines.uk/m3/e36"
         }
       },
       {
@@ -404,7 +404,7 @@
         "verdict": "The M3 at its peak - often called the greatest M3 ever made. The S54 is one of BMW's finest engines, revving to 8,000 rpm with individual throttle bodies. VANOS and rod bearings are the defining caveats; budget for preventative work. A sorted E46 is a six-figure classic.",
         "cta": {
           "label": "Explore the E46 M3 →",
-          "href": "#"
+          "href": "https://bmwengines.uk/m3/e46"
         }
       },
       {
@@ -415,7 +415,7 @@
         "verdict": "The only V8 M3 - the S65 is a masterpiece that revs to 8,400 rpm. The rod bearing failure is the defining risk: budget £2,500–£4,000 for preventative replacement before they fail. The E90 saloon is the rarest; the E92 coupé is the most desirable.",
         "cta": {
           "label": "Explore the E90 M3 →",
-          "href": "#"
+          "href": "https://bmwengines.uk/m3/e90-e92-e93"
         }
       },
       {
@@ -426,7 +426,7 @@
         "verdict": "The first turbocharged M3 - and the generation that divides opinion. The S55 is proven and powerful, but the crank hub is the Achilles heel. The Competition (444 bhp) is the sweet spot; the CS (454 bhp) is the ultimate F80. Budget for a crank hub fix (£1,500–£3,000) or buy one that's already been done.",
         "cta": {
           "label": "Explore the F80 M3 →",
-          "href": "#"
+          "href": "https://bmwengines.uk/m3/f80"
         }
       },
       {
@@ -437,7 +437,7 @@
         "verdict": "The sixth-generation M3 - the most powerful and the most reliable. The S58 is widely regarded as BMW's most dependable modern performance engine. Available with a six-speed manual (473 bhp) or automatic (503 bhp). The G80 is the M3 for the modern era - buy it with confidence.",
         "cta": {
           "label": "Explore the G80 M3 →",
-          "href": "#"
+          "href": "https://bmwengines.uk/m3/g80-g81"
         }
       }
     ],
@@ -872,14 +872,14 @@
         "era": "E30 - the original",
         "years": "1985–1991",
         "keyEngines": "S14B23",
-        "whyBmwChanged": "BMW's motorsport division created the M3 for Group A touring car racing. The S14 four-cylinder was derived from the M10 and M88 engines, producing 195 bhp in road trim.",
+        "whyBmwChanged": "BMW's motorsport division created the M3 for Group A touring car racing. The S14 four-cylinder was derived from the <a href='https://bmwengines.uk/engine/m10'>M10</a> and M88 engines, producing 195 bhp in road trim.",
         "worthKnowing": "The S14 is a masterpiece of 1980s engineering - revving to 7,500 rpm with individual throttle bodies. The E30 M3 is now a six-figure classic - values are only going one way."
       },
       {
         "era": "E36 - the six-cylinder era begins",
         "years": "1992–1999",
         "keyEngines": "S50B30, S52B32",
-        "whyBmwChanged": "BMW moved to a straight-six for the E36 M3 - the S50 was a development of the M50 engine with individual throttle bodies and a variable-length intake manifold.",
+        "whyBmwChanged": "BMW moved to a straight-six for the E36 M3 - the S50 was a development of the <a href='https://bmwengines.uk/engine/m50-m52-m54'>M50</a> engine with individual throttle bodies and a variable-length intake manifold.",
         "worthKnowing": "The Euro-spec S50 (286–321 bhp) is the one to buy - the US-spec S52 is good but less special. Cooling systems and rear subframe mounts are the defining caveats."
       },
       {
@@ -893,14 +893,14 @@
         "era": "E90 - the V8",
         "years": "2007–2013",
         "keyEngines": "S65B40",
-        "whyBmwChanged": "BMW's only V8 M3 - a 4.0L naturally-aspirated V8 that revved to 8,400 rpm, derived from the S85 V10 in the E60 M5.",
+        "whyBmwChanged": "BMW's only V8 M3 - a 4.0L naturally-aspirated V8 that revved to 8,400 rpm, derived from the <a href='https://bmwengines.uk/engine/s70-s85'>S85</a> V10 in the E60 M5.",
         "worthKnowing": "The S65 is a masterpiece but rod bearings are the defining risk. Preventative replacement at 60,000–80,000 miles is the smart money. The E90 saloon is the rarest; the E92 coupé is the most desirable."
       },
       {
         "era": "F80 - the turbo era",
         "years": "2014–2020",
         "keyEngines": "S55B30",
-        "whyBmwChanged": "The first turbocharged M3 - the S55 was a development of the N55 with closed-deck block, forged internals, and twin turbos.",
+        "whyBmwChanged": "The first turbocharged M3 - the S55 was a development of the <a href='https://bmwengines.uk/engine/n54-n55'>N55</a> with closed-deck block, forged internals, and twin turbos.",
         "worthKnowing": "The S55 is proven and powerful (425–444 bhp), but the crank hub is the Achilles heel. The Competition (444 bhp) is the sweet spot; the CS (454 bhp) is the ultimate F80."
       },
       {

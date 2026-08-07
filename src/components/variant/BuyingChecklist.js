@@ -4,11 +4,11 @@ export default function BuyingChecklist({ data }) {
   return (
     <section style={{ paddingBottom: 8 }}>
       <h2>Buying Checklist</h2>
-      {data.intro && <p>{data.intro}</p>}
+      {data.intro && <p dangerouslySetInnerHTML={{ __html: data.intro }} />}
       {data.items?.length > 0 && (
         <ul>
           {data.items.map((item) => (
-            <li key={item}>{item}</li>
+            <li key={item} dangerouslySetInnerHTML={{ __html: item }} />
           ))}
         </ul>
       )}

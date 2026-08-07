@@ -215,7 +215,7 @@
               "name": "Which F31 engine is the most reliable?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "The B58B30A (340i, post-2015) is widely considered BMW's finest modern engine – smooth, powerful and robust with no major failure points beyond routine cooling system maintenance. Among diesels, the B47 (post-2015) is a significant improvement over the N47. The B48 four-cylinder is also highly reliable."
+                "text": "The B58B30A (340i, post-2015) is widely considered BMW\u0027s finest modern engine – smooth, powerful and robust with no major failure points beyond routine cooling system maintenance. Among diesels, the B47 (post-2015) is a significant improvement over the N47. The B48 four-cylinder is also highly reliable."
               }
             },
             {
@@ -279,7 +279,7 @@
               "name": "How do I find my F31 engine code?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Listed on the VIN plate (visible through the windscreen) and vehicle documentation. The engine code is also stamped on the cylinder block – on B-series engines, it's on the left-hand side near the timing cover. Tell us your variant and year (pre-/post-2015 LCI) and we'll identify it – 20+ vetted BMW specialists will confirm it for free."
+                "text": "Listed on the VIN plate (visible through the windscreen) and vehicle documentation. The engine code is also stamped on the cylinder block – on B-series engines, it\u0027s on the left-hand side near the timing cover. Tell us your variant and year (pre-/post-2015 LCI) and we\u0027ll identify it – 20+ vetted BMW specialists will confirm it for free."
               }
             }
           ]
@@ -313,7 +313,7 @@
         {
           "@type": "Dataset",
           "name": "BMW 3 Series F31 UK Engine Enquiry Data 2025",
-          "description": "Proprietary UK enquiry volumes and demand trends for BMW 3 Series F31 engines, sourced from BMWEngines.uk's specialist marketplace activity.",
+          "description": "Proprietary UK enquiry volumes and demand trends for BMW 3 Series F31 engines, sourced from BMWEngines.uk\u0027s specialist marketplace activity.",
           "creator": {
             "@type": "Organization",
             "name": "BMWEngines.uk"
@@ -347,7 +347,7 @@
   "hero": {
     "tagPill": "BMW 3 Series F31 • Touring • 2012–2019",
     "h1": "BMW 3 Series F31 Engines -The Complete UK Guide",
-    "subHeadline": "Every engine fitted to the F31 Touring – from the 1.6-litre N13 four-cylinder to the 3.0-litre N57 six-cylinder diesel and the B58 that replaced the N55. Real UK replacement costs, honest reliability data, and the timing chain concerns that defined the N20 and N47 era. Backed by real UK F31 enquiries in 2025 [BMW-VERIFIED].",
+    "subHeadline": "Every engine fitted to the F31 Touring – from the 1.6-litre <a href='https://bmwengines.uk/engine/n13-n20'>N13</a> four-cylinder to the 3.0-litre <a href='https://bmwengines.uk/engine/n57'>N57</a> six-cylinder diesel and the <a href='https://bmwengines.uk/engine/b57-b58'>B58</a> that replaced the <a href='https://bmwengines.uk/engine/n54-n55'>N55</a>. Real UK replacement costs, honest reliability data, and the timing chain concerns that defined the N20 and <a href='https://bmwengines.uk/engine/n47'>N47</a> era. Backed by real UK F31 enquiries in 2025 [BMW-VERIFIED].",
     "trustStrip": [
       {
         "icon": "📊",
@@ -438,7 +438,7 @@
       },
       {
         "engineCode": "B38B15",
-        "family": "B38",
+        "family": "<a href='https://bmwengines.uk/engine/b38-b48'>B38</a>",
         "fuel": "Petrol",
         "displacement": "1.5L (1,499 cc)",
         "power": "136 hp (100 kW)",
@@ -510,7 +510,7 @@
       },
       {
         "engineCode": "B47D20A",
-        "family": "B47",
+        "family": "<a href='https://bmwengines.uk/engine/b37-b47'>B47</a>",
         "fuel": "Diesel",
         "displacement": "2.0L (1,995 cc)",
         "power": "150–190 hp (110–140 kW)",
@@ -561,13 +561,13 @@
     "items": [
       {
         "slot": "Best Diesel Overall",
-        "engine": "B47D20A (post-2015, LCI) – \"The B47 is a significant improvement over the N47 – timing chain issues are less prevalent, and the EGR cooler recall has addressed a known weakness. It's smoother, cleaner and more reliable than its predecessor.\"",
+        "engine": "B47D20A (post-2015, LCI) – \"The B47 is a significant improvement over the N47 – timing chain issues are less prevalent, and the EGR cooler recall has addressed a known weakness. It\u0027s smoother, cleaner and more reliable than its predecessor.\"",
         "quote": "",
-        "whoItsFor": "buyers who want diesel economy without the N47's timing chain anxiety."
+        "whoItsFor": "buyers who want diesel economy without the N47\u0027s timing chain anxiety."
       },
       {
         "slot": "Best Petrol Overall",
-        "engine": "B58B30A (340i, post-2015) – \"The B58 straight-six is BMW's finest modern engine – 326 hp of silky-smooth power with none of the N55's earlier weaknesses. Water pump and cooling system are the only real demands; this engine is widely considered bulletproof.\"",
+        "engine": "B58B30A (340i, post-2015) – \"The B58 straight-six is BMW\u0027s finest modern engine – 326 hp of silky-smooth power with none of the N55\u0027s earlier weaknesses. Water pump and cooling system are the only real demands; this engine is widely considered bulletproof.\"",
         "quote": "",
         "whoItsFor": "buyers who want effortless six-cylinder power with modern reliability."
       },
@@ -585,13 +585,13 @@
       },
       {
         "slot": "Best Value",
-        "engine": "B48B20A (320i, post-2015) – \"The B48 four-cylinder delivers 184 hp with none of the N20's timing chain anxiety. It's smoother, more efficient and more reliable than its predecessor – the sweet spot of the F31 petrol range.\"",
+        "engine": "B48B20A (320i, post-2015) – \"The B48 four-cylinder delivers 184 hp with none of the N20\u0027s timing chain anxiety. It\u0027s smoother, more efficient and more reliable than its predecessor – the sweet spot of the F31 petrol range.\"",
         "quote": "",
         "whoItsFor": "buyers who want modern four-cylinder reliability without the N20 gamble."
       },
       {
         "slot": "Most Overlooked",
-        "engine": "B38B15 (318i, post-2015) – \"The 1.5-litre three-cylinder is often dismissed as underpowered, but it delivers 136 hp with excellent economy and a characterful exhaust note. It's the cheapest F31 to run and maintain.\"",
+        "engine": "B38B15 (318i, post-2015) – \"The 1.5-litre three-cylinder is often dismissed as underpowered, but it delivers 136 hp with excellent economy and a characterful exhaust note. It\u0027s the cheapest F31 to run and maintain.\"",
         "quote": "",
         "whoItsFor": "buyers who want F31 estate practicality with minimal running costs."
       }
@@ -654,7 +654,7 @@
         "commonMajorFailure": "Water pump, cooling",
         "repairCostSpecialist": "£400–£800",
         "replacementCostRecon": "£4,000–£7,000",
-        "ownershipVerdict": "Best Six – BMW's finest modern engine."
+        "ownershipVerdict": "Best Six – BMW\u0027s finest modern engine."
       },
       {
         "engine": "N47D20 (316d–320d)",
@@ -691,7 +691,7 @@
     ],
     "economicsRule": {
       "title": "The F31 rule",
-      "text": "A £2,800–£5,000 N47/B47 recon against a £6,000–£15,000 F31 sits at 19–83% of the car's value. On a sub-£8,000 diesel F31, that brushes our 70% BMW threshold – we'll honestly tell you to walk away unless the car has documented chain work. Against a £12,000+ low-mileage example, the same recon drops to a routine 23–42% – a repair decision, not a financial one. The B58 replacement at £7,000 is well within the value of a £20,000 340i."
+      "text": "A £2,800–£5,000 N47/B47 recon against a £6,000–£15,000 F31 sits at 19–83% of the car\u0027s value. On a sub-£8,000 diesel F31, that brushes our 70% BMW threshold – we\u0027ll honestly tell you to walk away unless the car has documented chain work. Against a £12,000+ low-mileage example, the same recon drops to a routine 23–42% – a repair decision, not a financial one. The B58 replacement at £7,000 is well within the value of a £20,000 340i."
     },
     "keyTakeaways": [
       {
@@ -760,7 +760,7 @@
             "note": ""
           }
         ],
-        "recommendation": "If you're considering a pre-2015 diesel F31, budget for timing chain replacement if not already documented – £800–£1,500 now is cheap insurance against a £2,800+ replacement. Post-2015 B47 engines have improved chain design.",
+        "recommendation": "If you\u0027re considering a pre-2015 diesel F31, budget for timing chain replacement if not already documented – £800–£1,500 now is cheap insurance against a £2,800+ replacement. Post-2015 B47 engines have improved chain design.",
         "cta": {
           "label": "Compare N47 engine prices for your BMW 3 Series F31 →",
           "href": "#"
@@ -796,10 +796,10 @@
       },
       {
         "id": 4,
-        "title": "B38/B48/B58 Water Pump & Cooling System",
+        "title": "B38/B48/B58 Water Pump \u0026 Cooling System",
         "affectedModels": "F31 petrol variants with B-series engines (2015–2019).",
         "typicalFailureMileage": "60,000–100,000 miles.",
-        "rootCause": "The plastic water pump impeller and thermostat housing can degrade with heat cycling – a known characteristic of BMW's B-series engines. Coolant leaks are the first sign.",
+        "rootCause": "The plastic water pump impeller and thermostat housing can degrade with heat cycling – a known characteristic of BMW\u0027s B-series engines. Coolant leaks are the first sign.",
         "tieredCosts": [
           {
             "tier": "Preventative (Repair)",
@@ -944,21 +944,64 @@
   },
   "coreVariants": {
     "dieselVariants": [
-      "316d",
-      "318d",
-      "320d",
-      "325d",
-      "330d",
-      "335d xDrive"
+      {
+        "name": "316d",
+        "url": "https://bmwengines.uk/3-series/316d"
+      },
+      {
+        "name": "318d",
+        "url": "https://bmwengines.uk/3-series/318d"
+      },
+      {
+        "name": "320d",
+        "url": "https://bmwengines.uk/3-series/320d"
+      },
+      {
+        "name": "325d",
+        "url": "https://bmwengines.uk/3-series/325d"
+      },
+      {
+        "name": "330d",
+        "url": "https://bmwengines.uk/3-series/330d"
+      },
+      {
+        "name": "335d xDrive",
+        "url": "https://bmwengines.uk/3-series/335d"
+      }
     ],
     "petrolVariants": [
-      "316i",
-      "318i",
-      "320i",
-      "328i",
-      "330i",
-      "335i",
-      "340i"
+      {
+        "name": "316i",
+        "url": "https://bmwengines.uk/3-series/316i"
+      },
+      {
+        "name": "318i",
+        "url": "https://bmwengines.uk/3-series/318i"
+      },
+      {
+        "name": "320i",
+        "url": "https://bmwengines.uk/3-series/320i"
+      },
+      {
+        "name": "328i",
+        "url": "https://bmwengines.uk/3-series/328i"
+      },
+      {
+        "name": "330i",
+        "url": "https://bmwengines.uk/3-series/330i"
+      },
+      {
+        "name": "335i",
+        "url": "https://bmwengines.uk/3-series/335i"
+      },
+      {
+        "name": "340i",
+        "url": "https://bmwengines.uk/3-series/340i"
+      },
+      {
+        "name": "330e",
+        "url": "https://bmwengines.uk/3-series/330e"
+      }
     ],
     "scopeNote": "All variants listed are F31 only. The F30 saloon and F34 Gran Turismo share most of these engines but are covered on their own Generation Pages, since body style affects boot space and weight rather than engine fitment. The 335d xDrive was the only diesel offered with all-wheel drive in the F31 range."
   },
@@ -968,11 +1011,7 @@
       "2. N57D30A (330d) – six-cylinder diesel",
       "3. B48B20B (330i) – post-LCI petrol enquiries [PATTERN DATA]."
     ],
-    "mostRequestedVariants": [
-      "1. 320d",
-      "2. 330d",
-      "3. 330i [PATTERN DATA]."
-    ],
+    "mostRequestedVariants": ["1. 320d", "2. 330d", "3. 330i [PATTERN DATA]."],
     "averageReplacementCost": "£1,500–£8,000 supply only [BMW-QUOTE].",
     "mostCommonFailures": [
       "1. N20 timing chain guides",
@@ -1014,7 +1053,7 @@
       {
         "id": 2,
         "question": "Which F31 engine is the most reliable?",
-        "answer": "The B58B30A (340i, post-2015) is widely considered BMW's finest modern engine – smooth, powerful and robust with no major failure points beyond routine cooling system maintenance. Among diesels, the B47 (post-2015) is a significant improvement over the N47. The B48 four-cylinder is also highly reliable."
+        "answer": "The B58B30A (340i, post-2015) is widely considered BMW\u0027s finest modern engine – smooth, powerful and robust with no major failure points beyond routine cooling system maintenance. Among diesels, the B47 (post-2015) is a significant improvement over the N47. The B48 four-cylinder is also highly reliable."
       },
       {
         "id": 3,
@@ -1054,7 +1093,7 @@
       {
         "id": 10,
         "question": "How do I find my F31 engine code?",
-        "answer": "Listed on the VIN plate (visible through the windscreen) and vehicle documentation. The engine code is also stamped on the cylinder block – on B-series engines, it's on the left-hand side near the timing cover. Tell us your variant and year (pre-/post-2015 LCI) and we'll identify it – 20+ vetted BMW specialists will confirm it for free."
+        "answer": "Listed on the VIN plate (visible through the windscreen) and vehicle documentation. The engine code is also stamped on the cylinder block – on B-series engines, it\u0027s on the left-hand side near the timing cover. Tell us your variant and year (pre-/post-2015 LCI) and we\u0027ll identify it – 20+ vetted BMW specialists will confirm it for free."
       }
     ]
   },
@@ -1067,11 +1106,11 @@
       },
       {
         "title": "Compare F31 Engine Replacement Companies",
-        "text": "see prices, warranty terms and supply & fit options side-by-side before you commit."
+        "text": "see prices, warranty terms and supply \u0026 fit options side-by-side before you commit."
       },
       {
         "title": "UK Engine Replacement Services for F31",
-        "text": "covering every variant from 316d to 340i, with supply-only or full supply & fit available nationwide."
+        "text": "covering every variant from 316d to 340i, with supply-only or full supply \u0026 fit available nationwide."
       }
     ],
     "finalCta": "Find the best BMW 3 Series F31 engine replacement UK drivers rely on. Compare real prices from trusted specialists on EnginesMarket today and get back on the road with confidence.",

@@ -7,13 +7,13 @@ import GenIcon from "./GenIcons";
 
 const pointIcons = ["shield", "scale", "wrench"];
 
-function TitleWithAccent({ title }) {
+function TitleWithAccent({ title = "" }) {
   const markerIndex = title.indexOf(".uk");
-  if (markerIndex === -1) return title;
+  if (markerIndex === -1) return <span dangerouslySetInnerHTML={{ __html: title }} />;
 
   return (
     <>
-      {title.slice(0, markerIndex)}
+      <span dangerouslySetInnerHTML={{ __html: title.slice(0, markerIndex) }} />
       <span className="text-[var(--color-primary)]">.uk</span>
     </>
   );
@@ -40,8 +40,8 @@ export default function TrustCta({ data }) {
             <GenIcon name={point.icon || pointIcons[index % pointIcons.length]} className="h-4.5 w-4.5" />
           </span>
           <div className="min-w-0 flex-1">
-            <p className={`text-[0.95rem] font-semibold ${headingClass}`}>{point.title}</p>
-            <p className={`text-[0.83rem] leading-[1.45] ${bodyTextClass}`}>{point.text}</p>
+            <p className={`text-[0.95rem] font-semibold ${headingClass}`} dangerouslySetInnerHTML={{ __html: point.title }} />
+            <p className={`text-[0.83rem] leading-[1.45] ${bodyTextClass}`} dangerouslySetInnerHTML={{ __html: point.text }} />
           </div>
         </li>
       ))}
@@ -55,7 +55,7 @@ export default function TrustCta({ data }) {
           <span className="mt-0.5 flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-[var(--color-primary)] text-[var(--color-primary)]">
             <GenIcon name="badge" className="h-4.5 w-4.5" />
           </span>
-          <p className={`text-[0.88rem] leading-[1.45] ${finalCtaTextClass}`}>{data.finalCta}</p>
+          <p className={`text-[0.88rem] leading-[1.45] ${finalCtaTextClass}`} dangerouslySetInnerHTML={{ __html: data.finalCta }} />
         </div>
       ) : null}
       {data.ctaButton ? (
@@ -63,7 +63,7 @@ export default function TrustCta({ data }) {
           href={data.ctaButton.href}
           className="flex w-full shrink-0 items-center justify-center gap-2 text-center rounded-md bg-[var(--color-primary)] px-5 py-3 text-[0.8rem] font-bold uppercase tracking-wide text-white shadow-[0_12px_28px_var(--color-shadow)] md:inline-flex md:w-auto md:whitespace-nowrap"
         >
-          {data.ctaButton.label.replace(/\s*→\s*$/, "")}
+          <span dangerouslySetInnerHTML={{ __html: data.ctaButton.label.replace(/\s*→\s*$/, "") }} />
           <GenIcon name="chevron" className="h-4 w-4" />
         </a>
       ) : null}

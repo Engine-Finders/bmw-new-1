@@ -153,7 +153,7 @@
               "name": "How much does a BMW X3 F25 engine replacement cost in the UK?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "A reconditioned F25 engine typically costs £2,200–£8,000 supply only [BMW-QUOTE], depending on engine -the B47 20d sits at £2,800–£5,000, while the N57 35d can reach £8,000. Fitting adds £650–£1,300 depending on engine and specialist location. Evaluate the car's value carefully before committing."
+                "text": "A reconditioned F25 engine typically costs £2,200–£8,000 supply only [BMW-QUOTE], depending on engine -the B47 20d sits at £2,800–£5,000, while the N57 35d can reach £8,000. Fitting adds £650–£1,300 depending on engine and specialist location. Evaluate the car\u0027s value carefully before committing."
               }
             },
             {
@@ -161,7 +161,7 @@
               "name": "Which BMW X3 F25 engine is the most reliable?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "The N55 3.0-litre straight-six petrol is considered one of the most reliable engines in the F25 range -it's a proven, well-understood design. The N52 naturally aspirated six is also exceptionally reliable. The B47 post-LCI diesel is a significant improvement over the N47 [PROVISIONAL -pending dedicated Engine Page]."
+                "text": "The N55 3.0-litre straight-six petrol is considered one of the most reliable engines in the F25 range -it\u0027s a proven, well-understood design. The N52 naturally aspirated six is also exceptionally reliable. The B47 post-LCI diesel is a significant improvement over the N47 [PROVISIONAL -pending dedicated Engine Page]."
               }
             },
             {
@@ -201,7 +201,7 @@
               "name": "Is it worth replacing a BMW X3 F25 engine, or should I scrap the car?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Depends on the car's value. Against a well-kept £8,000 F25, a £3,200–£5,500 N47 recon is 40–69% -borderline but potentially viable. Against a tired £5,000 example, the same recon is 64–110% -walk away. Our 70% BMW scrap threshold is the line [BMW-VERIFIED]. For 35i and 35d cars, even the most expensive replacement is viable."
+                "text": "Depends on the car\u0027s value. Against a well-kept £8,000 F25, a £3,200–£5,500 N47 recon is 40–69% -borderline but potentially viable. Against a tired £5,000 example, the same recon is 64–110% -walk away. Our 70% BMW scrap threshold is the line [BMW-VERIFIED]. For 35i and 35d cars, even the most expensive replacement is viable."
               }
             },
             {
@@ -217,7 +217,7 @@
               "name": "What is the difference between the F25 and the E83 X3?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "The F25 (2010–2017) is the second-generation X3, built on BMW's L6 platform with all-turbocharged engines and improved interior quality. The E83 (2003–2010) was the first generation, built on the E46 platform with naturally aspirated six-cylinder petrols. The F25 was the first X3 built in the USA."
+                "text": "The F25 (2010–2017) is the second-generation X3, built on BMW\u0027s L6 platform with all-turbocharged engines and improved interior quality. The E83 (2003–2010) was the first generation, built on the E46 platform with naturally aspirated six-cylinder petrols. The F25 was the first X3 built in the USA."
               }
             },
             {
@@ -225,7 +225,7 @@
               "name": "How do I find my BMW X3 F25 engine code?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Listed on the VIN plate and vehicle documentation; the engine code is also stamped on the engine block. Tell us your variant and production year, and we'll identify it -20+ vetted BMW specialists will confirm it for free. Note that the xDrive28i switched from the N52 (2011–2012) to the N20 (2012–2017)."
+                "text": "Listed on the VIN plate and vehicle documentation; the engine code is also stamped on the engine block. Tell us your variant and production year, and we\u0027ll identify it -20+ vetted BMW specialists will confirm it for free. Note that the xDrive28i switched from the N52 (2011–2012) to the N20 (2012–2017)."
               }
             }
           ]
@@ -259,7 +259,7 @@
         {
           "@type": "Dataset",
           "name": "BMW X3 F25 UK Engine Enquiry Data 2025",
-          "description": "Proprietary UK enquiry volumes and demand trends for BMW X3 F25 engines, sourced from BMWEngines.uk's specialist marketplace activity.",
+          "description": "Proprietary UK enquiry volumes and demand trends for BMW X3 F25 engines, sourced from BMWEngines.uk\u0027s specialist marketplace activity.",
           "creator": {
             "@type": "Organization",
             "name": "BMWEngines.uk"
@@ -293,7 +293,7 @@
   "hero": {
     "tagPill": "BMW X3 F25 • SUV • 2010–2017",
     "h1": "BMW X3 F25 Engines -The Complete UK Guide",
-    "subHeadline": "Every engine fitted to the X3 F25 -from the 2.0-litre N20 four-cylinder petrol to the 3.0-litre N55 straight-six and the N57 diesel six. Real UK costs and honest reliability data for BMW's first American-built compact SUV. Backed by 316+ real UK F25 enquiries in 2025 [BMW-VERIFIED].",
+    "subHeadline": "Every engine fitted to the X3 F25 -from the 2.0-litre <a href='https://bmwengines.uk/engine/n13-n20'>N20</a> four-cylinder petrol to the 3.0-litre <a href='https://bmwengines.uk/engine/n54-n55'>N55</a> straight-six and the <a href='https://bmwengines.uk/engine/n57'>N57</a> diesel six. Real UK costs and honest reliability data for BMW\u0027s first American-built compact SUV. Backed by 316+ real UK F25 enquiries in 2025 [BMW-VERIFIED].",
     "trustStrip": [
       {
         "icon": "📊",
@@ -360,7 +360,7 @@
       },
       {
         "engineCode": "N52B30",
-        "family": "N52",
+        "family": "<a href='https://bmwengines.uk/engine/n52-n53'>N52</a>",
         "fuel": "Petrol",
         "displacement": "3.0L (2996cc)",
         "power": "240 bhp",
@@ -379,12 +379,12 @@
         "years": "2010–2017",
         "variants": "xDrive35i",
         "reliability": "★★★★☆ [PROVISIONAL -pending dedicated Engine Page]",
-        "enquiries": "540 (B58) [BMW-VERIFIED]",
+        "enquiries": "540 (<a href='https://bmwengines.uk/engine/b57-b58'>B58</a>) [BMW-VERIFIED]",
         "avgReconCost": "£4,000–£7,000 [BMW-QUOTE]"
       },
       {
         "engineCode": "N47D20",
-        "family": "N47",
+        "family": "<a href='https://bmwengines.uk/engine/n47'>N47</a>",
         "fuel": "Diesel",
         "displacement": "2.0L (1995cc)",
         "power": "141–184 bhp",
@@ -396,7 +396,7 @@
       },
       {
         "engineCode": "B47D20",
-        "family": "B47",
+        "family": "<a href='https://bmwengines.uk/engine/b37-b47'>B47</a>",
         "fuel": "Diesel",
         "displacement": "2.0L (1995cc)",
         "power": "150–190 bhp",
@@ -433,7 +433,7 @@
     ],
     "confidenceScore": {
       "title": "How confident are these ratings?",
-      "text": "All ratings are [PROVISIONAL] pending dedicated Engine Pages. The N55 straight-six is a proven, reliable engine -it's been in production since 2009 and powers numerous BMW models. The N52 naturally aspirated six (early xDrive28i) is considered one of BMW's most reliable engines. The N20 four-cylinder petrol is generally reliable but timing chain issues have been reported on early examples. The N47 diesel carries the infamous timing chain risk, while the B47 (LCI) is significantly improved. The N57 diesel six is well-regarded for its refinement and durability."
+      "text": "All ratings are [PROVISIONAL] pending dedicated Engine Pages. The N55 straight-six is a proven, reliable engine -it\u0027s been in production since 2009 and powers numerous BMW models. The N52 naturally aspirated six (early xDrive28i) is considered one of BMW\u0027s most reliable engines. The N20 four-cylinder petrol is generally reliable but timing chain issues have been reported on early examples. The N47 diesel carries the infamous timing chain risk, while the B47 (LCI) is significantly improved. The N57 diesel six is well-regarded for its refinement and durability."
     },
     "dataCorrections": []
   },
@@ -448,7 +448,7 @@
       {
         "slot": "Best Petrol Overall",
         "engine": "N55B30 (xDrive35i, 3.0L straight-six, 302–306 bhp)",
-        "quote": "BMW's N55 single-turbo straight-six is a masterpiece -smooth, responsive, and with a strong torque curve from 1,200 rpm. The xDrive35i offers effortless performance and the unmistakable six-cylinder soundtrack that defines BMW's petrol heritage.",
+        "quote": "BMW\u0027s N55 single-turbo straight-six is a masterpiece -smooth, responsive, and with a strong torque curve from 1,200 rpm. The xDrive35i offers effortless performance and the unmistakable six-cylinder soundtrack that defines BMW\u0027s petrol heritage.",
         "whoItsFor": "buyers who want six-cylinder performance and refinement."
       },
       {
@@ -473,12 +473,12 @@
         "slot": "Best Value",
         "engine": "B47D20 (post-LCI 18d/20d, 2.0L diesel, 150–190 bhp)",
         "quote": "The B47 is a significant improvement over the N47 -timing chain issues are far less frequent, and the engine is smoother and more refined. The post-LCI 20d offers the best blend of economy and reliability in the F25 range.",
-        "whoItsFor": "buyers who want diesel economy without the N47's timing chain anxiety."
+        "whoItsFor": "buyers who want diesel economy without the N47\u0027s timing chain anxiety."
       },
       {
         "slot": "Most Overlooked",
         "engine": "N52B30 (early xDrive28i, 3.0L naturally aspirated, 240 bhp)",
-        "quote": "The N52-powered xDrive28i was only available from 2011–2012 before being replaced by the turbocharged N20 -but it's a gem. No turbos, no HPFP, just smooth, linear six-cylinder power with VANOS as the primary wear item. It's the last of BMW's great naturally aspirated straight-sixes in the X3.",
+        "quote": "The N52-powered xDrive28i was only available from 2011–2012 before being replaced by the turbocharged N20 -but it\u0027s a gem. No turbos, no HPFP, just smooth, linear six-cylinder power with VANOS as the primary wear item. It\u0027s the last of BMW\u0027s great naturally aspirated straight-sixes in the X3.",
         "whoItsFor": "enthusiasts who want the simplicity of a naturally aspirated six."
       }
     ]
@@ -545,7 +545,7 @@
     ],
     "economicsRule": {
       "title": "The F25 rule",
-      "text": "A £3,200–£5,500 N47 recon against a £4,000–£15,000 F25 sits at 21–138% of the car's value【EM-VERIFIED】. On a sub-£5,000 example, that brushes our 70% BMW threshold -we'll honestly tell you to walk away. Against a well-kept £8,000+ example, the same recon drops to 40–69% -a repair decision, not a financial one. Value the car first. For 35i and 35d cars, the higher retained values make replacement more viable."
+      "text": "A £3,200–£5,500 N47 recon against a £4,000–£15,000 F25 sits at 21–138% of the car\u0027s value【EM-VERIFIED】. On a sub-£5,000 example, that brushes our 70% BMW threshold -we\u0027ll honestly tell you to walk away. Against a well-kept £8,000+ example, the same recon drops to 40–69% -a repair decision, not a financial one. Value the car first. For 35i and 35d cars, the higher retained values make replacement more viable."
     },
     "keyTakeaways": [
       {
@@ -569,7 +569,7 @@
         "title": "N47 Diesel Timing Chain Stretch (Pre-LCI)",
         "affectedModels": "F25 sDrive18d, xDrive20d, xDrive28d (2010–2014, N47 engine).",
         "typicalFailureMileage": "60,000–120,000 miles.",
-        "rootCause": "The rear-mounted timing chain receives the last oil feed and is tensioned by a plastic guide that degrades over time -cold-start rattle for 1–2 seconds is the classic early warning. This is the defining weakness of BMW's N47 diesel family.",
+        "rootCause": "The rear-mounted timing chain receives the last oil feed and is tensioned by a plastic guide that degrades over time -cold-start rattle for 1–2 seconds is the classic early warning. This is the defining weakness of BMW\u0027s N47 diesel family.",
         "tieredCosts": [
           {
             "tier": "Preventative (Repair)",
@@ -594,7 +594,7 @@
       },
       {
         "id": 2,
-        "title": "N20 Timing Chain & VANOS Issues",
+        "title": "N20 Timing Chain \u0026 VANOS Issues",
         "affectedModels": "F25 sDrive20i, xDrive20i, xDrive28i (2011–2017, N20 engine).",
         "typicalFailureMileage": "60,000–100,000 miles.",
         "rootCause": "The N20 four-cylinder turbo petrol can suffer from timing chain tensioner wear and VANOS solenoid failure. The chain is located at the front of the engine, making replacement less labour-intensive than the N47, but failure is still catastrophic if ignored.",
@@ -622,10 +622,10 @@
       },
       {
         "id": 3,
-        "title": "N52/N55 Water Pump & Cooling System Failure",
+        "title": "N52/N55 Water Pump \u0026 Cooling System Failure",
         "affectedModels": "F25 xDrive28i (early, N52), xDrive35i (N55).",
         "typicalFailureMileage": "60,000–100,000 miles.",
-        "rootCause": "The electric water pump on N52 and N55 engines is a known weak point -failure leads to sudden overheating and potential engine damage. This is a common issue across BMW's six-cylinder petrol range.",
+        "rootCause": "The electric water pump on N52 and N55 engines is a known weak point -failure leads to sudden overheating and potential engine damage. This is a common issue across BMW\u0027s six-cylinder petrol range.",
         "tieredCosts": [
           {
             "tier": "Preventative (Repair)",
@@ -650,10 +650,10 @@
       },
       {
         "id": 4,
-        "title": "N57 Diesel EGR Cooler & Emission System Issues",
+        "title": "N57 Diesel EGR Cooler \u0026 Emission System Issues",
         "affectedModels": "F25 xDrive30d, xDrive35d (N57 engine).",
         "typicalFailureMileage": "60,000–120,000 miles.",
-        "rootCause": "The N57 diesel's EGR cooler can develop internal leaks, allowing coolant to enter the exhaust system. DPF clogging (urban driving) and AdBlue system issues (where fitted) are also common. BMW has issued recalls for EGR cooler issues on some models.",
+        "rootCause": "The N57 diesel\u0027s EGR cooler can develop internal leaks, allowing coolant to enter the exhaust system. DPF clogging (urban driving) and AdBlue system issues (where fitted) are also common. BMW has issued recalls for EGR cooler issues on some models.",
         "tieredCosts": [
           {
             "tier": "Preventative (Repair)",
@@ -670,7 +670,7 @@
             "note": ""
           }
         ],
-        "recommendation": "Check your N57 F25's VIN against any outstanding EGR cooler recalls -if affected, the repair is free. For DPF health, ensure regular motorway driving to allow regeneration cycles to complete. Have the emission system inspected at 60,000 miles.",
+        "recommendation": "Check your N57 F25\u0027s VIN against any outstanding EGR cooler recalls -if affected, the repair is free. For DPF health, ensure regular motorway driving to allow regeneration cycles to complete. Have the emission system inspected at 60,000 miles.",
         "cta": {
           "label": "Compare N57 diesel engine prices for your F25 →",
           "href": "#"
@@ -750,17 +750,48 @@
   },
   "coreVariants": {
     "dieselVariants": [
-      "sDrive18d",
-      "xDrive20d",
-      "xDrive28d",
-      "xDrive30d",
-      "xDrive35d"
+      {
+        "name": "sDrive18d",
+        "url": "https://bmwengines.uk/x3/18d"
+      },
+      {
+        "name": "xDrive20d",
+        "url": "https://bmwengines.uk/x3/20d-2"
+      },
+      {
+        "name": "xDrive28d",
+        "url": "#"
+      },
+      {
+        "name": "xDrive30d",
+        "url": "https://bmwengines.uk/x3/30d"
+      },
+      {
+        "name": "xDrive35d",
+        "url": "https://bmwengines.uk/x3/35d"
+      }
     ],
     "petrolVariants": [
-      "sDrive20i",
-      "xDrive20i",
-      "xDrive28i",
-      "xDrive35i"
+      {
+        "name": "sDrive20i",
+        "url": "https://bmwengines.uk/x3/20i"
+      },
+      {
+        "name": "xDrive20i",
+        "url": "https://bmwengines.uk/x3/20i"
+      },
+      {
+        "name": "xDrive28i",
+        "url": "https://bmwengines.uk/x3/28i"
+      },
+      {
+        "name": "xDrive35i",
+        "url": "https://bmwengines.uk/x3/35i"
+      },
+      {
+        "name": "M40i",
+        "url": "https://bmwengines.uk/x3/m40i"
+      }
     ],
     "scopeNote": "All variants listed are F25 X3 only. xDrive (all-wheel drive) was standard at launch; sDrive (rear-wheel drive) was introduced in 2012 for some markets. The xDrive28i used the N52B30 (3.0L naturally aspirated) from 2011–2012, then switched to the N20B20 (2.0L turbo) from 2012 onward. The LCI (2014–2017) introduced the B47 diesel engine, replacing the N47 in 18d and 20d models."
   },
@@ -770,11 +801,7 @@
       "2. N57D30",
       "3. N55B30"
     ],
-    "mostRequestedVariants": [
-      "1. xDrive20d",
-      "2. xDrive30d",
-      "3. xDrive35i"
-    ],
+    "mostRequestedVariants": ["1. xDrive20d", "2. xDrive30d", "3. xDrive35i"],
     "averageReplacementCost": "£4,500 reconditioned, supply only [BMW-QUOTE]",
     "mostCommonFailures": [
       "1. N47 timing chain stretch",
@@ -810,12 +837,12 @@
       {
         "id": 1,
         "question": "How much does a BMW X3 F25 engine replacement cost in the UK?",
-        "answer": "A reconditioned F25 engine typically costs £2,200–£8,000 supply only [BMW-QUOTE], depending on engine -the B47 20d sits at £2,800–£5,000, while the N57 35d can reach £8,000. Fitting adds £650–£1,300 depending on engine and specialist location. Evaluate the car's value carefully before committing."
+        "answer": "A reconditioned F25 engine typically costs £2,200–£8,000 supply only [BMW-QUOTE], depending on engine -the B47 20d sits at £2,800–£5,000, while the N57 35d can reach £8,000. Fitting adds £650–£1,300 depending on engine and specialist location. Evaluate the car\u0027s value carefully before committing."
       },
       {
         "id": 2,
         "question": "Which BMW X3 F25 engine is the most reliable?",
-        "answer": "The N55 3.0-litre straight-six petrol (xDrive35i) is considered one of the most reliable engines in the F25 range -it's a proven, well-understood design. The N52 naturally aspirated six (early xDrive28i) is also exceptionally reliable. The B47 post-LCI diesel is a significant improvement over the N47 [PROVISIONAL -pending dedicated Engine Page]."
+        "answer": "The N55 3.0-litre straight-six petrol (xDrive35i) is considered one of the most reliable engines in the F25 range -it\u0027s a proven, well-understood design. The N52 naturally aspirated six (early xDrive28i) is also exceptionally reliable. The B47 post-LCI diesel is a significant improvement over the N47 [PROVISIONAL -pending dedicated Engine Page]."
       },
       {
         "id": 3,
@@ -840,7 +867,7 @@
       {
         "id": 7,
         "question": "Is it worth replacing a BMW X3 F25 engine, or should I scrap the car?",
-        "answer": "Depends on the car's value. Against a well-kept £8,000 F25, a £3,200–£5,500 N47 recon is 40–69% -borderline but potentially viable. Against a tired £5,000 example, the same recon is 64–110% -walk away. Our 70% BMW scrap threshold is the line [BMW-VERIFIED]. For 35i and 35d cars (£10,000–£18,000+), even the most expensive replacement is viable."
+        "answer": "Depends on the car\u0027s value. Against a well-kept £8,000 F25, a £3,200–£5,500 N47 recon is 40–69% -borderline but potentially viable. Against a tired £5,000 example, the same recon is 64–110% -walk away. Our 70% BMW scrap threshold is the line [BMW-VERIFIED]. For 35i and 35d cars (£10,000–£18,000+), even the most expensive replacement is viable."
       },
       {
         "id": 8,
@@ -850,12 +877,12 @@
       {
         "id": 9,
         "question": "What is the difference between the F25 and the E83 X3?",
-        "answer": "The F25 (2010–2017) is the second-generation X3, built on BMW's L6 platform with all-turbocharged engines and improved interior quality. The E83 (2003–2010) was the first generation, built on the E46 3 Series platform with naturally aspirated six-cylinder petrols and the M57 diesel. The F25 is larger, more refined, and features more advanced technology. The F25 was also the first X3 built in the USA (Spartanburg, South Carolina)."
+        "answer": "The F25 (2010–2017) is the second-generation X3, built on BMW\u0027s L6 platform with all-turbocharged engines and improved interior quality. The E83 (2003–2010) was the first generation, built on the E46 3 Series platform with naturally aspirated six-cylinder petrols and the <a href='https://bmwengines.uk/engine/m57'>M57</a> diesel. The F25 is larger, more refined, and features more advanced technology. The F25 was also the first X3 built in the USA (Spartanburg, South Carolina)."
       },
       {
         "id": 10,
         "question": "How do I find my BMW X3 F25 engine code?",
-        "answer": "Listed on the VIN plate and vehicle documentation; the engine code is also stamped on the engine block. Tell us your variant (sDrive20i, xDrive20i, xDrive28i, xDrive35i, sDrive18d, xDrive20d, xDrive28d, xDrive30d, xDrive35d), production year, and we'll identify it -20+ vetted BMW specialists will confirm it for free. Note that the xDrive28i switched from the N52 (2011–2012) to the N20 (2012–2017)."
+        "answer": "Listed on the VIN plate and vehicle documentation; the engine code is also stamped on the engine block. Tell us your variant (sDrive20i, xDrive20i, xDrive28i, xDrive35i, sDrive18d, xDrive20d, xDrive28d, xDrive30d, xDrive35d), production year, and we\u0027ll identify it -20+ vetted BMW specialists will confirm it for free. Note that the xDrive28i switched from the N52 (2011–2012) to the N20 (2012–2017)."
       }
     ]
   },
@@ -868,11 +895,11 @@
       },
       {
         "title": "Compare F25 Engine Replacement Companies",
-        "text": "see prices, warranty terms and supply & fit options side-by-side before you commit."
+        "text": "see prices, warranty terms and supply \u0026 fit options side-by-side before you commit."
       },
       {
         "title": "UK Engine Replacement Services for F25",
-        "text": "covering every variant from sDrive18d to xDrive35i, with supply-only or full supply & fit available nationwide."
+        "text": "covering every variant from sDrive18d to xDrive35i, with supply-only or full supply \u0026 fit available nationwide."
       }
     ],
     "finalCta": "Find the best BMW X3 F25 engine replacement UK drivers rely on. Compare real prices from trusted specialists on EnginesMarket today and get back on the road with confidence.",

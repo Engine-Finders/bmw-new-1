@@ -164,7 +164,7 @@ function MatrixRow({ row, isDark }) {
         <div className="mb-2 md:mb-1">
           <VerdictMark type={row.verdict.type} showLabel />
         </div>
-        <p className={`text-[0.7rem] font-medium leading-[1.35] md:text-[0.68rem] ${isDark ? "text-white/80" : "text-[#071827]"}`}>{verdictText}</p>
+        <p className={`text-[0.7rem] font-medium leading-[1.35] md:text-[0.68rem] ${isDark ? "text-white/80" : "text-[#071827]"}`} dangerouslySetInnerHTML={{ __html: verdictText }} />
       </div>
 
       <span className="justify-self-end text-[var(--color-primary)] md:hidden">
@@ -353,7 +353,7 @@ export default function HomeSec6({ data }) {
           <div className="mt-4">
             <MStripe />
           </div>
-          <p className={`mt-4 max-w-[620px] text-[0.9rem] leading-[1.55] md:text-[1.02rem] ${isDark ? "text-white/80" : "text-[#27384a]"}`}>{cleanText(data.subHeadline)}</p>
+          <p className={`mt-4 max-w-[620px] text-[0.9rem] leading-[1.55] md:text-[1.02rem] ${isDark ? "text-white/80" : "text-[#27384a]"}`} dangerouslySetInnerHTML={{ __html: cleanText(data.subHeadline) }} />
         </div>
 
         <div className="mt-8 grid gap-4 md:grid-cols-[minmax(0,1fr)_450px] md:items-start">

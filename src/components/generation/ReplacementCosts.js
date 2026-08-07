@@ -20,12 +20,12 @@ function DesktopRow({ row, isDark }) {
     <div
       className={`grid grid-cols-[1.3fr_1fr_1fr_1.1fr_1fr_0.8fr] items-center gap-px ${rowClass} px-5 py-3.5 text-[0.85rem] border-b ${borderBottom} last:border-b-0`}
     >
-      <span className={`px-3 font-semibold border-r ${cellDivider}`}>{row.variant}</span>
-      <span className={`px-3 ${codeText} border-r ${cellDivider}`}>{row.engineCode}</span>
-      <span className={`px-3 ${mutedText} border-r ${cellDivider}`}>{row.usedSupply}</span>
-      <span className={`px-3 font-semibold border-r ${cellDivider}`}>{row.reconditionedSupply}</span>
-      <span className={`px-3 ${mutedText} border-r ${cellDivider}`}>{row.rebuiltSupply}</span>
-      <span className={`px-3 ${mutedText}`}>{row.labourHours}</span>
+      <span className={`px-3 font-semibold border-r ${cellDivider}`} dangerouslySetInnerHTML={{ __html: row.variant }} />
+      <span className={`px-3 ${codeText} border-r ${cellDivider}`} dangerouslySetInnerHTML={{ __html: row.engineCode }} />
+      <span className={`px-3 ${mutedText} border-r ${cellDivider}`} dangerouslySetInnerHTML={{ __html: row.usedSupply }} />
+      <span className={`px-3 font-semibold border-r ${cellDivider}`} dangerouslySetInnerHTML={{ __html: row.reconditionedSupply }} />
+      <span className={`px-3 ${mutedText} border-r ${cellDivider}`} dangerouslySetInnerHTML={{ __html: row.rebuiltSupply }} />
+      <span className={`px-3 ${mutedText}`} dangerouslySetInnerHTML={{ __html: row.labourHours }} />
     </div>
   );
 }
@@ -74,10 +74,11 @@ function FuelTable({ title, icon, rows, isDark, tone }) {
                 }
               >
                 <GenIcon name={tone === "diesel" ? "engine" : "car"} className="h-4 w-4" />
-                <span className="text-[0.72rem] font-bold leading-tight">{row.variant}</span>
-                <span className={`text-[0.66rem] leading-tight ${index === 0 ? "text-white/80" : "text-[var(--color-primary)]"}`}>
-                  {row.engineCode}
-                </span>
+                <span className="text-[0.72rem] font-bold leading-tight" dangerouslySetInnerHTML={{ __html: row.variant }} />
+                <span
+                  className={`text-[0.66rem] leading-tight ${index === 0 ? "text-white/80" : "text-[var(--color-primary)]"}`}
+                  dangerouslySetInnerHTML={{ __html: row.engineCode }}
+                />
               </div>
             ))}
           </div>
@@ -97,9 +98,8 @@ function FuelTable({ title, icon, rows, isDark, tone }) {
                 <div
                   key={row.engineCode}
                   className={`flex items-center justify-center border-l px-2 py-3 text-center text-[0.78rem] ${cellDivider} ${rowText}`}
-                >
-                  {row[metric.key]}
-                </div>
+                  dangerouslySetInnerHTML={{ __html: row[metric.key] }}
+                />
               ))}
             </div>
           ))}
@@ -157,14 +157,18 @@ export default function ReplacementCosts({ data }) {
         </div>
 
         <div className="relative mx-auto w-full max-w-8xl px-4 py-6 md:px-8 md:py-10">
-          <h2 className={`max-w-[720px] text-[2.15rem] font-bold leading-[1.1] tracking-normal md:text-[3rem] ${headerHeadingClass}`}>
-            {data.h2}
-          </h2>
+          <h2
+            className={`max-w-[720px] text-[2.15rem] font-bold leading-[1.1] tracking-normal md:text-[3rem] ${headerHeadingClass}`}
+            dangerouslySetInnerHTML={{ __html: data.h2 }}
+          />
           <div className="mt-3">
             <MStripe />
           </div>
           {data.subHeadline ? (
-            <p className={`mt-4 max-w-[560px] text-[0.88rem] leading-[1.4] md:mt-5 md:text-[1.08rem] md:leading-[1.42] ${headerSubClass}`}>{data.subHeadline}</p>
+            <p
+              className={`mt-4 max-w-[560px] text-[0.88rem] leading-[1.4] md:mt-5 md:text-[1.08rem] md:leading-[1.42] ${headerSubClass}`}
+              dangerouslySetInnerHTML={{ __html: data.subHeadline }}
+            />
           ) : null}
         </div>
       </div>
@@ -216,8 +220,8 @@ export default function ReplacementCosts({ data }) {
                             <GenIcon name={item.icon} className="h-5 w-5" />
                           </span>
                           <div className="min-w-0">
-                            <p className="text-[0.85rem] font-semibold text-[var(--color-text)]">{item.title}</p>
-                            <p className="text-[0.76rem] leading-[1.35] text-[var(--color-text-muted)]">{item.text}</p>
+                            <p className="text-[0.85rem] font-semibold text-[var(--color-text)]" dangerouslySetInnerHTML={{ __html: item.title }} />
+                            <p className="text-[0.76rem] leading-[1.35] text-[var(--color-text-muted)]" dangerouslySetInnerHTML={{ __html: item.text }} />
                           </div>
                         </div>
                       </div>
@@ -242,8 +246,8 @@ export default function ReplacementCosts({ data }) {
                     <GenIcon name={item.icon} className="h-5 w-5" />
                   </span>
                   <div>
-                    <p className="text-[0.85rem] font-semibold text-[var(--color-text)]">{item.title}</p>
-                    <p className="text-[0.76rem] leading-[1.35] text-[var(--color-text-muted)]">{item.text}</p>
+                    <p className="text-[0.85rem] font-semibold text-[var(--color-text)]" dangerouslySetInnerHTML={{ __html: item.title }} />
+                    <p className="text-[0.76rem] leading-[1.35] text-[var(--color-text-muted)]" dangerouslySetInnerHTML={{ __html: item.text }} />
                   </div>
                 </div>
               </div>
@@ -251,7 +255,7 @@ export default function ReplacementCosts({ data }) {
           </div>
         ) : null}
 
-        {data.note ? <p className="mt-4 text-[0.78rem] text-[var(--color-text-soft)]">{data.note}</p> : null}
+        {data.note ? <p className="mt-4 text-[0.78rem] text-[var(--color-text-soft)]" dangerouslySetInnerHTML={{ __html: data.note }} /> : null}
       </div>
     </section>
   );

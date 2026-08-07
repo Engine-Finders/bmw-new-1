@@ -217,7 +217,7 @@
     }
   },
   "hero": {
-    "tagPill": "BMW M2 • 2016–2021, 2023–present • 2 Generations (F87, G87) • N55, S55, S58",
+    "tagPill": "BMW M2 • 2016–2021, 2023–present • 2 Generations (F87, G87) • <a href='https://bmwengines.uk/engine/n54-n55'>N55</a>, <a href='https://bmwengines.uk/engine/s55'>S55</a>, S58",
     "h1": "M2 Engines - The Complete UK Guide",
     "subHeadline": "Every BMW M2 engine across two generations - from the N55 straight-six of the original F87 to the S55 in the Competition and CS, and the S58 in the G87. Real UK replacement costs, known failure patterns, and honest ownership economics for BMW's most engaging modern M car. Backed by real UK M2 engine enquiries in 2025 [BMW-VERIFIED].",
     "trustStrip": [
@@ -346,7 +346,7 @@
         "verdict": "The original M2 - the car that recaptured the spirit of the E46 M3. The N55 is robust, the chassis is magnificent, and the values are still sensible. The crank hub is the only caveat - especially on modified cars. The purest M2 experience.",
         "cta": {
           "label": "Explore the F87 →",
-          "href": "#"
+          "href": "https://bmwengines.uk/m2/f87"
         }
       },
       {
@@ -357,7 +357,7 @@
         "verdict": "The M2 with the M3/M4 engine - 405 bhp, improved suspension and brakes, and a more serious character. The S55 is proven and powerful, but the crank hub is the Achilles heel. The sweet spot in the used M2 range - more power than the standard car, less money than the CS.",
         "cta": {
           "label": "Explore the M2 Competition →",
-          "href": "#"
+          "href": "https://bmwengines.uk/m2/f87"
         }
       },
       {
@@ -368,7 +368,7 @@
         "verdict": "The ultimate F87 - 444 bhp, carbon fibre everywhere, and produced in just 2,200 examples. A future classic and a collector's item. The S55 is proven, but the crank hub is still the caveat. Buy it as an investment, drive it as a driver's car.",
         "cta": {
           "label": "Explore the M2 CS →",
-          "href": "#"
+          "href": "https://bmwengines.uk/m2/f87"
         }
       },
       {
@@ -379,7 +379,7 @@
         "verdict": "The second-generation M2 - bigger, more powerful, and built on the CLAR platform shared with the G80 M3. The S58 is widely regarded as one of BMW's most reliable modern performance engines. Available with a six-speed manual - the last manual M car. The G87 is the M2 for the modern era.",
         "cta": {
           "label": "Explore the G87 →",
-          "href": "#"
+          "href": "https://bmwengines.uk/m2/g87"
         }
       }
     ],

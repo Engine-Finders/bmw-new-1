@@ -265,7 +265,7 @@
     }
   },
   "hero": {
-    "tagPill": "BMW Z Series • 1995–Present • 5 Generations (Z3, Z8, E85/E86, E89, G29) • M44, M52, M54, S54, S62, N52, N54, N55, B48, B58",
+    "tagPill": "BMW Z Series • 1995–Present • 5 Generations (Z3, Z8, E85/E86, E89, G29) • <a href='https://bmwengines.uk/engine/m40-m42-m43-m44'>M44</a>, <a href='https://bmwengines.uk/engine/m50-m52-m54'>M52</a>, M54, <a href='https://bmwengines.uk/engine/s50-s52-s54'>S54</a>, <a href='https://bmwengines.uk/engine/s62'>S62</a>, <a href='https://bmwengines.uk/engine/n52-n53'>N52</a>, <a href='https://bmwengines.uk/engine/n54-n55'>N54</a>, N55, <a href='https://bmwengines.uk/engine/b38-b48'>B48</a>, <a href='https://bmwengines.uk/engine/b57-b58'>B58</a>",
     "h1": "Z Series Engines - The Complete UK Guide",
     "subHeadline": "Every BMW Z Series engine across five distinct roadster generations - from the M44 four-cylinder of the Z3 to the S62 V8 of the Z8, the N52 straight-six of the E85 Z4, and the B58 straight-six of the G29. Real UK replacement costs, known failure patterns, and honest ownership economics for BMW's iconic roadster family. Backed by real UK Z Series engine enquiries in 2025 [BMW-VERIFIED].",
     "trustStrip": [
@@ -394,9 +394,20 @@
         "verdict": "The original modern BMW roadster - the car that launched the Z Series and defined 1990s open-top driving. The M52 and M54 straight-sixes are the robust picks; the S54 in the Z3 M is a masterpiece with VANOS caveats; the M44 four-cylinder is the entry point. Buy the six-cylinder - the four-cylinder is for collectors.",
         "cta": {
           "label": "Explore the Z3 →",
-          "href": "#"
+          "href": "https://bmwengines.uk/z3/e36-7"
         }
       },
+      {
+  "title": "E36/8 (1998–2002) — Coupé",
+  "badge": "",
+  "meta": "1998–2002 • M52/M54 six-cylinder • S50/S54 six-cylinder",
+  "rating": "★★★☆☆",
+  "verdict": "The Z3 Coupé—the 'Clown Shoe' shooting-brake that divided opinion and now commands a cult following. Powered by six-cylinder engines only: M52B28 (189 hp), M52TUB28 (190 hp), M54B30 (228 hp), S50B32 (317 hp), and S54B32 (321 hp). The M54 3.0i is the sweet spot—strong performance, reliable, and simpler than the M cars. The S54 has rod bearing and VANOS watchpoints. Bodywork is the biggest cost—rear subframe floor failure is a known structural issue.",
+  "cta": {
+    "label": "Explore E36/8 →",
+    "href": "https://bmwengines.uk/z3/e36-8"
+  }
+},
       {
         "title": "Second Generation - Z8 E52 (1999–2003)",
         "badge": "",
@@ -405,7 +416,7 @@
         "verdict": "The ultimate BMW roadster - a limited-production V8 masterpiece designed by Henrik Fisker. The S62 V8 is shared with the E39 M5, producing 394 bhp. Now a six-figure classic where engine work is restoration, not repair. The Z8 is the Z Series for investors and collectors.",
         "cta": {
           "label": "Explore the Z8 →",
-          "href": "#"
+          "href": "https://bmwengines.uk/z8/e52"
         }
       },
       {
@@ -416,9 +427,20 @@
         "verdict": "The first-generation Z4 - Chris Bangle's controversial styling that aged beautifully. The M54 and N52 straight-sixes are the robust picks; the S54 in the Z4 M is a masterpiece with VANOS caveats. The E85 roadster is the classic open-top experience; the E86 coupé is the rare driver's choice.",
         "cta": {
           "label": "Explore the Z4 →",
-          "href": "#"
+          "href": "https://bmwengines.uk/z4/e85"
         }
       },
+      {
+  "title": "E86 (2006–2008) — Coupé",
+  "badge": "",
+  "meta": "2006–2008 • M54/N52 six-cylinder • S54 six-cylinder",
+  "rating": "★★★☆☆",
+  "verdict": "The Z4 Coupé—a fixed-roof version of the E85 Roadster, produced in limited numbers (approx 17,000). Powered by M54B25 2.5-litre, N52B30 3.0-litre in two states of tune (218 bhp and 258–265 bhp), and the S54 from the E46 M3 in the Z4 M Coupé. The N52 3.0si is the sweet spot—smooth, responsive, and reliable. The S54 is a masterpiece but has VANOS, valve clearance, and rod bearing concerns. A modern classic—values are rising.",
+  "cta": {
+    "label": "Explore E86 →",
+    "href": "https://bmwengines.uk/z4/e86"
+  }
+},
       {
         "title": "Fourth Generation - Z4 E89 (2009–2016)",
         "badge": "BMW Z4 E89 🔥 Most Enquired - N54/N55 drives volume [BMW-VERIFIED]",
@@ -427,7 +449,7 @@
         "verdict": "The retractable hardtop Z4 - the most technologically advanced Z Series. The N52 straight-six is the robust pick; the N54 twin-turbo carries HPFP and injector caveats; the N55 is the improved turbo. Buy the N52 or N55 - the N54 is the trap without documented history.",
         "cta": {
           "label": "Explore the E89 →",
-          "href": "#"
+          "href": "https://bmwengines.uk/z4/e89"
         }
       },
       {
@@ -438,7 +460,7 @@
         "verdict": "The second-generation Z4 - CLAR platform, B-family engines, and the most dependable Z Series ever made. The B58 in the M40i produces 340 hp and is widely regarded as one of BMW's most reliable modern engines. The G29 is the Z Series for the modern era - buy it with confidence.",
         "cta": {
           "label": "Explore the G29 →",
-          "href": "#"
+          "href": "https://bmwengines.uk/z4/g29"
         }
       },
       {

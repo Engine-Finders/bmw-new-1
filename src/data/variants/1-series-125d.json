@@ -25,7 +25,7 @@
   "hero": {
     "tagPill": "BMW 1 Series 125d • 2012–2019 • 2 Engine Generations",
     "h1": "BMW 1 Series 125d Engine Replacement - Compare Prices & Get Quotes",
-    "subHeadline": "Get quotes today from trusted UK BMW 125d specialists. Compare reconditioned, rebuilt and used 2.0-litre twin-turbo diesel engines - N47S1 and B47 variants - supply & fit available nationwide.",
+    "subHeadline": "Get quotes today from trusted UK BMW 125d specialists. Compare reconditioned, rebuilt and used 2.0-litre twin-turbo diesel engines - N47S1 and <a href='https://bmwengines.uk/engine/b37-b47'>B47</a> variants - supply & fit available nationwide.",
     "trustBadges": [
       "🔧 Supply & Fit Available",
       "✅ 12-Month Warranty",
@@ -60,7 +60,7 @@
         "engineCode": "N47D20D (N47S1)",
         "reliability": "★★★☆☆ [NEWLY ASSIGNED - see Data Note]",
         "reconCost": "£3,200–£5,500 [PLACEHOLDER - confirm vs cost sheet]",
-        "eraNote": "Twin-turbo N47 - rear-chain risk; EGR cooler recall. Watch for cold-start rattle."
+        "eraNote": "Twin-turbo <a href='https://bmwengines.uk/engine/n47'>N47</a> - rear-chain risk; EGR cooler recall. Watch for cold-start rattle."
       },
       {
         "generation": "1 Series F20/F21 (facelift)",

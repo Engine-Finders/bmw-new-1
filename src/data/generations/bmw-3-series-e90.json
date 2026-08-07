@@ -141,7 +141,7 @@
               "name": "Is the BMW E90 reliable?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "It depends heavily on which engine and which side of the September 2008 facelift your car sits on. Pre-LCI 330d buyers get the bulletproof M57; post-LCI buyers get the improved but chain-affected N57. The N47 diesel four carries this generation's biggest risk regardless of facelift."
+                "text": "It depends heavily on which engine and which side of the September 2008 facelift your car sits on. Pre-LCI 330d buyers get the bulletproof M57; post-LCI buyers get the improved but chain-affected N57. The N47 diesel four carries this generation\u0027s biggest risk regardless of facelift."
               }
             },
             {
@@ -165,7 +165,7 @@
               "name": "Is it worth replacing a BMW E90 engine, or should I scrap the car?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Depends on the car's value. Against a well-kept £8,000 E90, a £4,000 N47 recon is 50% of the car's value — safe. Against a tired £4,000 example, the same recon is 100% — walk away. Our 70% BMW threshold is the line."
+                "text": "Depends on the car\u0027s value. Against a well-kept £8,000 E90, a £4,000 N47 recon is 50% of the car\u0027s value — safe. Against a tired £4,000 example, the same recon is 100% — walk away. Our 70% BMW threshold is the line."
               }
             },
             {
@@ -173,7 +173,7 @@
               "name": "How long do BMW E90 engines last?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "The M57 diesel six can exceed 300,000 miles with proper servicing. The N52 petrol six is similarly durable. The N47 and N57's limiting factor is the timing chain, not the underlying engine — addressed proactively, either can comfortably reach 150,000+ miles."
+                "text": "The M57 diesel six can exceed 300,000 miles with proper servicing. The N52 petrol six is similarly durable. The N47 and N57\u0027s limiting factor is the timing chain, not the underlying engine — addressed proactively, either can comfortably reach 150,000+ miles."
               }
             },
             {
@@ -181,7 +181,7 @@
               "name": "What is the difference between the E90, E91, E92 and E93?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "All four share the fifth-generation 3 Series platform and most engines. The E90 is the 4-door saloon (2005–2011, this page), the E91 is the Touring estate (2005–2012), the E92 is the 2-door coupé (2006–2013), and the E93 is the 2-door convertible (2007–2013). Costs vary slightly by body style due to labour access — see each generation's own page for specifics."
+                "text": "All four share the fifth-generation 3 Series platform and most engines. The E90 is the 4-door saloon (2005–2011, this page), the E91 is the Touring estate (2005–2012), the E92 is the 2-door coupé (2006–2013), and the E93 is the 2-door convertible (2007–2013). Costs vary slightly by body style due to labour access — see each generation\u0027s own page for specifics."
               }
             },
             {
@@ -189,7 +189,7 @@
               "name": "How do I find my BMW E90 engine code?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Listed on the VIN plate and vehicle documentation; block stamping is visible from below on N47/M57/N57 units. Tell us your variant and approximate registration date (pre- or post-September 2008) and we'll identify it — 20+ vetted specialists will confirm it for free."
+                "text": "Listed on the VIN plate and vehicle documentation; block stamping is visible from below on N47/M57/N57 units. Tell us your variant and approximate registration date (pre- or post-September 2008) and we\u0027ll identify it — 20+ vetted specialists will confirm it for free."
               }
             }
           ]
@@ -223,7 +223,7 @@
         {
           "@type": "Dataset",
           "name": "BMW 3 Series E90 UK Engine Enquiry Data 2025",
-          "description": "Proprietary UK enquiry volumes and demand trends for BMW 3 Series E90 engines, sourced from BMWEngines.uk's specialist marketplace activity.",
+          "description": "Proprietary UK enquiry volumes and demand trends for BMW 3 Series E90 engines, sourced from BMWEngines.uk\u0027s specialist marketplace activity.",
           "creator": {
             "@type": "Organization",
             "name": "BMWEngines.uk"
@@ -252,7 +252,7 @@
   "hero": {
     "tagPill": "BMW 3 Series E90 • Saloon • 2005–2011",
     "h1": "BMW 3 Series E90 Engines — The Complete UK Guide",
-    "subHeadline": "Every engine fitted to the E90 saloon — from the naturally aspirated N52 to the twin-turbo N54 and the M57/N57 diesel-six switch that split this generation's ownership story in two. Real UK replacement costs, honest failure data, and a mid-cycle engine change most guides miss entirely. Backed by 256+ real UK E90 enquiries in 2025 [BMW-VERIFIED].",
+    "subHeadline": "Every engine fitted to the E90 saloon — from the naturally aspirated <a href='https://bmwengines.uk/engine/n52-n53'>N52</a> to the twin-turbo <a href='https://bmwengines.uk/engine/n54-n55'>N54</a> and the <a href='https://bmwengines.uk/engine/m57'>M57</a>/N57 diesel-six switch that split this generation\u0027s ownership story in two. Real UK replacement costs, honest failure data, and a mid-cycle engine change most guides miss entirely. Backed by 256+ real UK E90 enquiries in 2025 [BMW-VERIFIED].",
     "trustStrip": [
       {
         "icon": "chart",
@@ -284,7 +284,7 @@
   },
   "engineDatabase": {
     "h2": "BMW 3 Series E90 Engine Codes — The Complete Database",
-    "subHeadline": "Every engine fitted to the E90 saloon specifically — including the mid-cycle diesel-six switch the Model Page's summary table doesn't break out.",
+    "subHeadline": "Every engine fitted to the E90 saloon specifically — including the mid-cycle diesel-six switch the Model Page\u0027s summary table doesn\u0027t break out.",
     "columns": [
       "Engine Code",
       "Family",
@@ -300,7 +300,7 @@
     "engines": [
       {
         "engineCode": "N46B18/20",
-        "family": "N46",
+        "family": "<a href='https://bmwengines.uk/engine/n40-n42-n43-n45-n46'>N46</a>",
         "fuel": "Petrol",
         "displacement": "1.8–2.0L",
         "power": "116–143 bhp",
@@ -366,7 +366,7 @@
       },
       {
         "engineCode": "N57D30",
-        "family": "N57",
+        "family": "<a href='https://bmwengines.uk/engine/n57'>N57</a>",
         "fuel": "Diesel",
         "displacement": "3.0L",
         "power": "204–302 bhp",
@@ -380,7 +380,7 @@
       },
       {
         "engineCode": "N47D20C",
-        "family": "N47",
+        "family": "<a href='https://bmwengines.uk/engine/n47'>N47</a>",
         "fuel": "Diesel",
         "displacement": "2.0L",
         "power": "174–181 bhp (E90-specific)",
@@ -426,7 +426,7 @@
   },
   "overview": {
     "h2": "BMW 3 Series E90 — Overview",
-    "intro": "The E90 is the saloon body of BMW's fifth-generation 3 Series, launched in March 2005 as the direct successor to the E46. It introduced a longer wheelbase, a stiffer chassis, and — with the 2006 335i — the 3 Series' first turbocharged petrol engine. A significant September 2008 facelift (LCI) brought more than cosmetic changes: it replaced the ageing M57 diesel six with the all-new N57, splitting this generation's ownership story into two genuinely different mechanical eras under one body code.",
+    "intro": "The E90 is the saloon body of BMW\u0027s fifth-generation 3 Series, launched in March 2005 as the direct successor to the E46. It introduced a longer wheelbase, a stiffer chassis, and — with the 2006 335i — the 3 Series\u0027 first turbocharged petrol engine. A significant September 2008 facelift (LCI) brought more than cosmetic changes: it replaced the ageing M57 diesel six with the all-new N57, splitting this generation\u0027s ownership story into two genuinely different mechanical eras under one body code.",
     "keyFacts": "Platform: BMW E9x (shared with E91 Touring, E92 Coupé, E93 Convertible) • Predecessor: BMW 3 Series E46 • Successor: BMW 3 Series F30 • Sibling body styles in this generation: E91 Touring, E92 Coupé, E93 Convertible.",
     "image": {
       "src": "/e90/overview.png",
@@ -442,7 +442,7 @@
         "engine": "M57D30",
         "engineNote": "(pre-LCI, 2005–2008)",
         "quote": "Cast-iron block, no rear-mounted timing chain to worry about, and a documented reputation for exceeding 300,000 miles with routine servicing. Thermostat housings and swirl flaps are its only real demands.",
-        "whoItsFor": "buyers who want the last of BMW's bulletproof diesel-six era."
+        "whoItsFor": "buyers who want the last of BMW\u0027s bulletproof diesel-six era."
       },
       {
         "slot": "Best Petrol Overall",
@@ -458,14 +458,14 @@
         "type": "danger",
         "engine": "N47D20C",
         "engineNote": "(pre-2013, no chain history)",
-        "quote": "The rear-mounted timing chain is this generation's defining risk — cold-start rattle is the warning, and a snapped chain means full replacement.",
+        "quote": "The rear-mounted timing chain is this generation\u0027s defining risk — cold-start rattle is the warning, and a snapped chain means full replacement.",
         "whoItsFor": "only buyers with documented chain-replacement history."
       },
       {
         "slot": "Most Expensive Failure",
         "type": "fire",
         "engine": "N54B30",
-        "engineNote": "HPFP & Injector Failure",
+        "engineNote": "HPFP \u0026 Injector Failure",
         "quote": "High-pressure fuel pump failure leads to long cranks and limp mode on the twin-turbo 335i; injector issues often follow.",
         "whoItsFor": "335i buyers with deep pockets and full service history."
       },
@@ -475,14 +475,14 @@
         "engine": "M57D30",
         "engineNote": "330d (pre-LCI)",
         "quote": "Older than the N57, but proven, cheaper to insure on higher mileage, and free of the rear-chain question entirely.",
-        "whoItsFor": "buyers who want six-cylinder torque without the modern diesel's caveats."
+        "whoItsFor": "buyers who want six-cylinder torque without the modern diesel\u0027s caveats."
       },
       {
         "slot": "Most Overlooked",
         "type": "crown",
         "engine": "N57D30",
         "engineNote": "(post-LCI, single-turbo only)",
-        "quote": "Genuinely improved over the M57 on economy and refinement, and — critically for this specific generation — E90 never received the later twin-turbo N57 variants whose crank-bearing risk affects F30/G30-era cars. E90's N57 is the single-turbo version only.",
+        "quote": "Genuinely improved over the M57 on economy and refinement, and — critically for this specific generation — E90 never received the later twin-turbo N57 variants whose crank-bearing risk affects F30/G30-era cars. E90\u0027s N57 is the single-turbo version only.",
         "whoItsFor": "buyers who want a modern diesel-six without the twin-turbo risk profile that shows up in later cars.",
         "fullWidth": true
       }
@@ -515,7 +515,7 @@
         "repairCostSpecialist": "£200–£600",
         "replacementCostRecon": "£4,500–£7,000",
         "verdictType": "success",
-        "ownershipVerdict": "Best Diesel — the E90's most dependable engine."
+        "ownershipVerdict": "Best Diesel — the E90\u0027s most dependable engine."
       },
       {
         "engine": "N57D30",
@@ -524,7 +524,7 @@
         "repairCostSpecialist": "£600–£1,600",
         "replacementCostRecon": "£4,500–£7,000",
         "verdictType": "info",
-        "ownershipVerdict": "Solid Choice — better than its reputation suggests, for E90's single-turbo application."
+        "ownershipVerdict": "Solid Choice — better than its reputation suggests, for E90\u0027s single-turbo application."
       },
       {
         "engine": "N52B25/30",
@@ -556,7 +556,7 @@
     ],
     "economicsRule": {
       "title": "The E90 Rule",
-      "text": "A £3,200–£5,500 N47 recon against a £6,000 E90 sits at 53–92% of the car's value. On a sub-£5,000 E90, that brushes our 70% BMW threshold — we'll honestly tell you to walk away. Against a well-kept £8,000+ example, the same recon drops to a routine 40–65% — a repair decision, not a financial one.",
+      "text": "A £3,200–£5,500 N47 recon against a £6,000 E90 sits at 53–92% of the car\u0027s value. On a sub-£5,000 E90, that brushes our 70% BMW threshold — we\u0027ll honestly tell you to walk away. Against a well-kept £8,000+ example, the same recon drops to a routine 40–65% — a repair decision, not a financial one.",
       "highlight": "Value the car first."
     },
     "keyTakeaways": [
@@ -570,7 +570,7 @@
       },
       {
         "question": "Which E90 Is Best Value?",
-        "answer": "Pre-LCI 330d (M57D30) — six-cylinder torque without the modern diesel's caveats."
+        "answer": "Pre-LCI 330d (M57D30) — six-cylinder torque without the modern diesel\u0027s caveats."
       }
     ]
   },
@@ -578,10 +578,26 @@
     "h2": "BMW 3 Series E90 — Common Problems",
     "subHeadline": "Real-world issues E90 owners face most — with symptoms, causes, costs and our honest recommendations based on UK specialist experience.",
     "trustStrip": [
-      { "icon": "shield", "title": "UK Specialist Data", "text": "All problems ranked by frequency from 256+ real E90 enquiries in 2025." },
-      { "icon": "chart", "title": "Honest Costing", "text": "Dealer and specialist pricing for real-world decision making." },
-      { "icon": "wrench", "title": "Expert Recommendations", "text": "Our guidance is based on 15+ years of BMW specialist experience." },
-      { "icon": "check", "title": "Transparent Advice", "text": "We tell you when to repair, when to walk, and when it's worth the investment." }
+      {
+        "icon": "shield",
+        "title": "UK Specialist Data",
+        "text": "All problems ranked by frequency from 256+ real E90 enquiries in 2025."
+      },
+      {
+        "icon": "chart",
+        "title": "Honest Costing",
+        "text": "Dealer and specialist pricing for real-world decision making."
+      },
+      {
+        "icon": "wrench",
+        "title": "Expert Recommendations",
+        "text": "Our guidance is based on 15+ years of BMW specialist experience."
+      },
+      {
+        "icon": "check",
+        "title": "Transparent Advice",
+        "text": "We tell you when to repair, when to walk, and when it\u0027s worth the investment."
+      }
     ],
     "problems": [
       {
@@ -609,7 +625,7 @@
         ],
         "recommendation": "At the first sign of cold-start rattle, get the chain inspected immediately — a £650–£1,800 preventative repair is dramatically cheaper than the £3,200–£5,500 replacement that follows if ignored. On an E90 worth under £5,000, this decision alone determines whether the car stays economically viable.",
         "image": {
-          "src": "https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?q=80&w=800&auto=format&fit=crop",
+          "src": "https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?q=80\u0026w=800\u0026auto=format\u0026fit=crop",
           "alt": "Timing chain close-up"
         },
         "cta": {
@@ -619,7 +635,7 @@
       },
       {
         "id": 2,
-        "title": "M57D30 Thermostat & Swirl Flap Wear",
+        "title": "M57D30 Thermostat \u0026 Swirl Flap Wear",
         "riskLevel": "Medium Risk",
         "affectedModels": "E90 325d, 330d (2005–2008, pre-LCI).",
         "typicalFailureMileage": "80,000–130,000 miles.",
@@ -640,9 +656,9 @@
             "note": "Rare, but the reason to inspect proactively."
           }
         ],
-        "recommendation": "This is cheap insurance on the E90's most dependable engine — a £200–£400 thermostat and swirl flap check every service is trivial against the M57's otherwise bulletproof reputation.",
+        "recommendation": "This is cheap insurance on the E90\u0027s most dependable engine — a £200–£400 thermostat and swirl flap check every service is trivial against the M57\u0027s otherwise bulletproof reputation.",
         "image": {
-          "src": "https://images.unsplash.com/photo-1487754180451-c456f719a1fc?q=80&w=800&auto=format&fit=crop",
+          "src": "https://images.unsplash.com/photo-1487754180451-c456f719a1fc?q=80\u0026w=800\u0026auto=format\u0026fit=crop",
           "alt": "Diesel engine bay detail"
         },
         "cta": {
@@ -652,11 +668,11 @@
       },
       {
         "id": 3,
-        "title": "N54B30 HPFP & Injector Failure",
+        "title": "N54B30 HPFP \u0026 Injector Failure",
         "riskLevel": "High Risk",
         "affectedModels": "E90 335i (2006–2010).",
         "typicalFailureMileage": "30,000–80,000 miles.",
-        "rootCause": "The high-pressure fuel pump's internal wear leads to fuel pressure loss, hard starting, and eventual engine damage if ignored; injector issues frequently follow.",
+        "rootCause": "The high-pressure fuel pump\u0027s internal wear leads to fuel pressure loss, hard starting, and eventual engine damage if ignored; injector issues frequently follow.",
         "tieredCosts": [
           {
             "tier": "Preventative (Repair)",
@@ -675,7 +691,7 @@
         ],
         "recommendation": "If your E90 335i has no documented HPFP history, treat it as overdue preventative maintenance — £800–£1,500 now is far cheaper than the £4,500+ replacement that follows a lean-running failure.",
         "image": {
-          "src": "https://images.unsplash.com/photo-1592805723679-a3a4f7d80f6d?q=80&w=800&auto=format&fit=crop",
+          "src": "https://images.unsplash.com/photo-1592805723679-a3a4f7d80f6d?q=80\u0026w=800\u0026auto=format\u0026fit=crop",
           "alt": "High-pressure fuel pump component"
         },
         "cta": {
@@ -706,9 +722,9 @@
             "note": "Required once cracking is advanced."
           }
         ],
-        "recommendation": "Have this checked on any E90 over 80,000 miles — it's the single most common reason an otherwise sound E90 fails an inspection.",
+        "recommendation": "Have this checked on any E90 over 80,000 miles — it\u0027s the single most common reason an otherwise sound E90 fails an inspection.",
         "image": {
-          "src": "https://images.unsplash.com/photo-1486754735734-325b5831c3ad?q=80&w=800&auto=format&fit=crop",
+          "src": "https://images.unsplash.com/photo-1486754735734-325b5831c3ad?q=80\u0026w=800\u0026auto=format\u0026fit=crop",
           "alt": "Underbody suspension component"
         },
         "cta": {
@@ -796,17 +812,91 @@
       }
     ],
     "trustStrip": [
-      { "icon": "badge", "title": "Specialist Prices", "text": "Real-world pricing from UK engine specialists." },
-      { "icon": "shield", "title": "Quality Assured", "text": "All engines are tested, checked and warrantied." },
-      { "icon": "wrench", "title": "Expert Fitment", "text": "Labour guidance from BMW experienced techs." },
-      { "icon": "truck", "title": "UK Wide Delivery", "text": "Fast, secure delivery across the UK." }
+      {
+        "icon": "badge",
+        "title": "Specialist Prices",
+        "text": "Real-world pricing from UK engine specialists."
+      },
+      {
+        "icon": "shield",
+        "title": "Quality Assured",
+        "text": "All engines are tested, checked and warrantied."
+      },
+      {
+        "icon": "wrench",
+        "title": "Expert Fitment",
+        "text": "Labour guidance from BMW experienced techs."
+      },
+      {
+        "icon": "truck",
+        "title": "UK Wide Delivery",
+        "text": "Fast, secure delivery across the UK."
+      }
     ],
-    "note": "No Generation variance from the Model Page's baseline figures — E90 saloon shares identical engine-bay access with its E91/E92/E93 siblings, so costs are inherited directly per the Authority Model."
+    "note": "No Generation variance from the Model Page\u0027s baseline figures — E90 saloon shares identical engine-bay access with its E91/E92/E93 siblings, so costs are inherited directly per the Authority Model."
   },
   "coreVariants": {
     "h2": "Core Variants",
-    "dieselVariants": ["316d", "318d", "320d", "325d", "330d"],
-    "petrolVariants": ["318i", "320i", "325i", "330i", "335i"],
+    "dieselVariants": [
+      {
+        "name": "316d",
+        "url": "https://bmwengines.uk/3-series/316d"
+      },
+      {
+        "name": "318d",
+        "url": "https://bmwengines.uk/3-series/318d"
+      },
+      {
+        "name": "320d",
+        "url": "https://bmwengines.uk/3-series/320d"
+      },
+      {
+        "name": "325d",
+        "url": "https://bmwengines.uk/3-series/325d"
+      },
+      {
+        "name": "330d",
+        "url": "https://bmwengines.uk/3-series/330d"
+      },
+      {
+        "name": "335d",
+        "url": "https://bmwengines.uk/3-series/335d"
+      }
+    ],
+    "petrolVariants": [
+      {
+        "name": "318i",
+        "url": "https://bmwengines.uk/3-series/318i"
+      },
+      {
+        "name": "320i",
+        "url": "https://bmwengines.uk/3-series/320i"
+      },
+      {
+        "name": "325i",
+        "url": "https://bmwengines.uk/3-series/325i"
+      },
+      {
+        "name": "330i",
+        "url": "https://bmwengines.uk/3-series/330i"
+      },
+      {
+        "name": "335i",
+        "url": "https://bmwengines.uk/3-series/335i"
+      },
+      {
+        "name": "316i",
+        "url": "https://bmwengines.uk/3-series/316i"
+      },
+      {
+        "name": "320si",
+        "url": "https://bmwengines.uk/3-series/320si"
+      },
+      {
+        "name": "323i",
+        "url": "https://bmwengines.uk/3-series/323i"
+      }
+    ],
     "scopeNote": "All variants listed are E90 saloon only. E91 Touring, E92 Coupé and E93 Convertible share most of these engines but are covered on their own Generation Pages, since fitment and labour access vary slightly by body style."
   },
   "marketIntelligence": {
@@ -869,7 +959,7 @@
       {
         "id": 4,
         "question": "Is the BMW E90 reliable?",
-        "answer": "It depends heavily on which engine and which side of the September 2008 facelift your car sits on. Pre-LCI 330d buyers get the bulletproof M57; post-LCI buyers get the improved but chain-affected N57. The N47 diesel four carries this generation's biggest risk regardless of facelift."
+        "answer": "It depends heavily on which engine and which side of the September 2008 facelift your car sits on. Pre-LCI 330d buyers get the bulletproof M57; post-LCI buyers get the improved but chain-affected N57. The N47 diesel four carries this generation\u0027s biggest risk regardless of facelift."
       },
       {
         "id": 5,
@@ -884,22 +974,22 @@
       {
         "id": 7,
         "question": "Is it worth replacing a BMW E90 engine, or should I scrap the car?",
-        "answer": "Depends on the car's value. Against a well-kept £8,000 E90, a £4,000 N47 recon is 50% of the car's value — safe. Against a tired £4,000 example, the same recon is 100% — walk away. Our 70% BMW threshold is the line."
+        "answer": "Depends on the car\u0027s value. Against a well-kept £8,000 E90, a £4,000 N47 recon is 50% of the car\u0027s value — safe. Against a tired £4,000 example, the same recon is 100% — walk away. Our 70% BMW threshold is the line."
       },
       {
         "id": 8,
         "question": "How long do BMW E90 engines last?",
-        "answer": "The M57 diesel six can exceed 300,000 miles with proper servicing. The N52 petrol six is similarly durable. The N47 and N57's limiting factor is the timing chain, not the underlying engine — addressed proactively, either can comfortably reach 150,000+ miles."
+        "answer": "The M57 diesel six can exceed 300,000 miles with proper servicing. The N52 petrol six is similarly durable. The N47 and N57\u0027s limiting factor is the timing chain, not the underlying engine — addressed proactively, either can comfortably reach 150,000+ miles."
       },
       {
         "id": 9,
         "question": "What is the difference between the E90, E91, E92 and E93?",
-        "answer": "All four share the fifth-generation 3 Series platform and most engines. The E90 is the 4-door saloon (2005–2011, this page), the E91 is the Touring estate (2005–2012), the E92 is the 2-door coupé (2006–2013), and the E93 is the 2-door convertible (2007–2013). Costs vary slightly by body style due to labour access — see each generation's own page for specifics."
+        "answer": "All four share the fifth-generation 3 Series platform and most engines. The E90 is the 4-door saloon (2005–2011, this page), the E91 is the Touring estate (2005–2012), the E92 is the 2-door coupé (2006–2013), and the E93 is the 2-door convertible (2007–2013). Costs vary slightly by body style due to labour access — see each generation\u0027s own page for specifics."
       },
       {
         "id": 10,
         "question": "How do I find my BMW E90 engine code?",
-        "answer": "Listed on the VIN plate and vehicle documentation; block stamping is visible from below on N47/M57/N57 units. Tell us your variant and approximate registration date (pre- or post-September 2008) and we'll identify it — 20+ vetted specialists will confirm it for free."
+        "answer": "Listed on the VIN plate and vehicle documentation; block stamping is visible from below on N47/M57/N57 units. Tell us your variant and approximate registration date (pre- or post-September 2008) and we\u0027ll identify it — 20+ vetted specialists will confirm it for free."
       }
     ]
   },
@@ -914,12 +1004,12 @@
       {
         "icon": "scale",
         "title": "Compare E90 Engine Replacement Companies",
-        "text": "See prices, warranty terms and supply & fit options side-by-side before you commit."
+        "text": "See prices, warranty terms and supply \u0026 fit options side-by-side before you commit."
       },
       {
         "icon": "wrench",
         "title": "UK Engine Replacement Services for E90",
-        "text": "Covering every variant from 316d to 335i, with supply-only or full supply & fit available nationwide."
+        "text": "Covering every variant from 316d to 335i, with supply-only or full supply \u0026 fit available nationwide."
       }
     ],
     "finalCta": "Find the best BMW E90 engine replacement UK drivers rely on. Compare real prices from trusted specialists on EnginesMarket today and get back on the road with confidence.",
@@ -928,7 +1018,7 @@
       "href": "#"
     },
     "image": {
-      "src": "https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=1200&auto=format&fit=crop",
+      "src": "https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80\u0026w=1200\u0026auto=format\u0026fit=crop",
       "alt": "BMW 3 Series E90 rear three-quarter view"
     }
   }

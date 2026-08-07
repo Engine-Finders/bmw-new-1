@@ -74,14 +74,14 @@ function Icon({ type, className = "h-10 w-10" }) {
 
 function Stats() {
   return (
-    <div className="grid grid-cols-4 overflow-hidden rounded-md border border-[var(--color-border)] bg-[var(--color-surface-raised)] shadow-[0_8px_24px_var(--color-shadow)]">
+      <div className="grid grid-cols-4 overflow-hidden rounded-md border border-[var(--color-border)] bg-[var(--color-surface-raised)] shadow-[0_8px_24px_var(--color-shadow)]">
       {statItems.map((item) => (
-        <div key={item.title} className="flex flex-col items-center justify-center border-r border-[var(--color-border)] px-2 py-5 text-center last:border-r-0 md:px-7">
+        <div key={item.title} className="flex flex-col items-center justify-center border-r border-[var(--color-border)] px-1.5 py-3 text-center last:border-r-0 md:px-4 md:py-3.5">
           <span className="text-[var(--color-primary)]">
-            <Icon type={item.icon} />
+            <Icon type={item.icon} className="h-8 w-8 md:h-9 md:w-9" />
           </span>
-          <strong className="mt-3 text-[15px] leading-tight text-[var(--color-text)] md:text-[18px]">{item.title}</strong>
-          <span className="mt-1 text-[15px] leading-tight text-[var(--color-text-muted)] md:text-[16px]">{item.text}</span>
+          <strong className="mt-1.5 text-[13px] leading-tight text-[var(--color-text)] md:text-[15px]">{item.title}</strong>
+          <span className="mt-0.5 text-[12px] leading-tight text-[var(--color-text-muted)] md:text-[13px]">{item.text}</span>
         </div>
       ))}
     </div>
@@ -98,7 +98,7 @@ function EngineBadges({ engines }) {
           <span className="flex h-14 w-16 items-center justify-center rounded-md bg-[var(--color-page-soft)] text-[var(--color-primary)] md:h-16 md:w-20">
             <Icon type="engine" className="h-8 w-8" />
           </span>
-          <strong className="mt-1 text-[15px] text-[var(--color-text)]">{engine}</strong>
+          <strong className="mt-1 text-[15px] text-[var(--color-text)]" dangerouslySetInnerHTML={{ __html: engine }} />
         </div>
       ))}
     </div>
@@ -107,10 +107,10 @@ function EngineBadges({ engines }) {
 
 function DesktopTable({ eras, columns }) {
   return (
-    <div className="hidden overflow-hidden rounded-md border border-[var(--color-border)] bg-[var(--color-surface-raised)] shadow-[0_8px_24px_var(--color-shadow)] md:block">
-      <div className="grid grid-cols-[19%_10%_26%_22%_23%] bg-[var(--color-primary-strong)] text-[15px] font-bold text-white">
+      <div className="hidden overflow-hidden rounded-md border border-[var(--color-border)] bg-[var(--color-surface-raised)] shadow-[0_8px_24px_var(--color-shadow)] md:block">
+      <div className="grid grid-cols-[19%_10%_26%_22%_23%] bg-[var(--color-primary-strong)] text-[14px] font-bold text-white md:text-[15px]">
         {(columns || []).map((column) => (
-          <div key={column} className="border-r border-white/20 px-5 py-3 last:border-r-0">
+          <div key={column} className="border-r border-white/20 px-4 py-2.5 last:border-r-0 md:px-5 md:py-3">
             {column}
           </div>
         ))}
@@ -120,28 +120,28 @@ function DesktopTable({ eras, columns }) {
 
         return (
           <div key={era.era} className="grid grid-cols-[19%_10%_26%_22%_23%] border-t border-[var(--color-border)] text-[var(--color-text)]">
-            <div className="border-r border-[var(--color-border)] px-5 py-4">
-              <h3 className="text-[18px] font-bold leading-tight text-[var(--color-primary)] md:text-[20px]">
-                {title.lead}
+            <div className="border-r border-[var(--color-border)] px-4 py-3 md:px-5 md:py-4">
+              <h3 className="text-[17px] font-bold leading-tight text-[var(--color-primary)] md:text-[19px]">
+                <span dangerouslySetInnerHTML={{ __html: title.lead }} />
                 {title.detail ? (
                   <>
                     <br />
-                    {title.detail}
+                    <span dangerouslySetInnerHTML={{ __html: title.detail }} />
                   </>
                 ) : null}
               </h3>
-              <img src={carImages[index] || carImages[0]} alt="" className="mt-2 h-[60px] w-full object-contain md:h-[72px]" loading="lazy" />
+              <img src={carImages[index] || carImages[0]} alt="" className="mt-2 h-[66px] w-full object-cover object-center md:h-[78px]" loading="lazy" />
             </div>
-            <div className={`flex items-center justify-center border-r border-[var(--color-border)] px-4 py-4 ${sectionTableText} font-bold`}>{cleanText(era.years)}</div>
-            <div className="flex items-center justify-center border-r border-[var(--color-border)] px-4 py-4">
+            <div className={`flex items-center justify-center border-r border-[var(--color-border)] px-3 py-3.5 ${sectionTableText} font-bold md:px-4 md:py-4`}>{cleanText(era.years)}</div>
+            <div className="flex items-center justify-center border-r border-[var(--color-border)] px-3 py-3.5 md:px-4 md:py-4">
               <EngineBadges engines={era.keyEngines} />
             </div>
-            <p className={`border-r border-[var(--color-border)] px-6 py-5 ${sectionTableText} leading-[1.45] text-[var(--color-text)]`}>{cleanText(era.whyBmwChanged)}</p>
-            <div className="flex gap-4 px-6 py-5">
-              <span className="mt-1 flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-[var(--color-primary)] text-[var(--color-primary)]">
+            <p className={`border-r border-[var(--color-border)] px-4 py-4 ${sectionTableText} leading-[1.45] text-[var(--color-text)] md:px-6 md:py-5`} dangerouslySetInnerHTML={{ __html: cleanText(era.whyBmwChanged) }} />
+            <div className="flex gap-3 px-4 py-4 md:px-6 md:py-5">
+              <span className="mt-1 flex h-7 w-7 shrink-0 items-center justify-center rounded-full border border-[var(--color-primary)] text-[var(--color-primary)]">
                 <Icon type="info" className="h-5 w-5" />
               </span>
-              <p className={`${sectionTableText} leading-[1.45] text-[var(--color-text)]`}>{cleanText(era.worthKnowing)}</p>
+              <p className={`${sectionTableText} leading-[1.45] text-[var(--color-text)]`} dangerouslySetInnerHTML={{ __html: cleanText(era.worthKnowing) }} />
             </div>
           </div>
         );
@@ -162,10 +162,10 @@ function MobileAccordion({ eras }) {
         return (
           <article key={era.era} className={`rounded-md border bg-[var(--color-surface-raised)] ${open ? "border-[var(--color-primary)]" : "border-[var(--color-border)]"}`}>
             <button type="button" onClick={() => setOpenIndex(open ? -1 : index)} className="flex w-full items-center gap-4 p-4 text-left">
-              <img src={carImages[index] || carImages[0]} alt="" className="h-[60px] w-[94px] shrink-0 object-contain md:h-[72px] md:w-[110px]" loading="lazy" />
+              <img src={carImages[index] || carImages[0]} alt="" className="h-[60px] w-[94px] shrink-0 object-cover object-center md:h-[72px] md:w-[110px]" loading="lazy" />
               <span className="min-w-0 flex-1">
                 <strong className="block text-[18px] leading-tight text-[var(--color-primary)] md:text-[20px]">{title.lead}{title.detail ? ` - ${title.detail}` : ""}</strong>
-                <span className={`mt-1 block ${sectionTableText} text-[var(--color-text-muted)]`}>{cleanText(era.years)}</span>
+                <span className={`mt-1 block ${sectionTableText} text-[var(--color-text-muted)]`} dangerouslySetInnerHTML={{ __html: cleanText(era.years) }} />
               </span>
               <span className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-full ${open ? "bg-[var(--color-primary)] text-white" : "bg-[var(--color-primary-soft)] text-[var(--color-primary)]"}`}>
                 <Icon type={open ? "chevronUp" : "chevron"} className="h-6 w-6" />
@@ -179,21 +179,21 @@ function MobileAccordion({ eras }) {
                     <span className="text-[var(--color-primary)]"><Icon type="engine" className="h-8 w-8" /></span>
                     Key Engines
                   </div>
-                  <div className={`p-4 ${sectionTableText} text-[var(--color-text)]`}>{cleanText(era.keyEngines)}</div>
+                  <div className={`p-4 ${sectionTableText} text-[var(--color-text)]`} dangerouslySetInnerHTML={{ __html: cleanText(era.keyEngines) }} />
                 </div>
                 <div className="grid grid-cols-[36%_64%] border-b border-[var(--color-border)]">
                   <div className="flex items-center gap-3 border-r border-[var(--color-border)] p-4 font-bold">
                     <span className="text-[var(--color-primary)]"><Icon type="why" className="h-8 w-8" /></span>
                     Why BMW Changed
                   </div>
-                  <div className={`p-4 ${sectionTableText} leading-[1.45] text-[var(--color-text)]`}>{cleanText(era.whyBmwChanged)}</div>
+                  <div className={`p-4 ${sectionTableText} leading-[1.45] text-[var(--color-text)]`} dangerouslySetInnerHTML={{ __html: cleanText(era.whyBmwChanged) }} />
                 </div>
                 <div className="grid grid-cols-[36%_64%]">
                   <div className="flex items-center gap-3 border-r border-[var(--color-border)] p-4 font-bold">
                     <span className="text-[var(--color-primary)]"><Icon type="info" className="h-8 w-8" /></span>
                     Worth Knowing
                   </div>
-                  <div className={`p-4 ${sectionTableText} leading-[1.45] text-[var(--color-text)]`}>{cleanText(era.worthKnowing)}</div>
+                  <div className={`p-4 ${sectionTableText} leading-[1.45] text-[var(--color-text)]`} dangerouslySetInnerHTML={{ __html: cleanText(era.worthKnowing) }} />
                 </div>
               </div>
             ) : null}
@@ -214,14 +214,14 @@ export default function EngineEvolution({ data }) {
     <section className="bg-[var(--color-page)] py-6 text-[var(--color-text)]">
       <div className="grid gap-6 md:grid-cols-[minmax(0,1fr)_600px] md:items-start">
         <div>
-        <h2 className={`max-w-[760px] ${sectionH2} tracking-normal`}>
-            {title.main}
-            {title.accent ? <span className="text-[var(--color-primary)]"> {title.accent}</span> : null}
+        <h2 className="max-w-[760px] text-[29px] font-bold leading-[1.08] tracking-normal md:text-[45px]">
+            <span dangerouslySetInnerHTML={{ __html: title.main }} />
+            {title.accent ? <span className="text-[var(--color-primary)]" dangerouslySetInnerHTML={{ __html: title.accent }} /> : null}
           </h2>
           <div className="mt-3">
             <MStripe />
           </div>
-          <p className={`mt-4 max-w-[660px] ${sectionDescription} text-[var(--color-text-muted)]`}>
+          <p className={`mt-3 max-w-[660px] ${sectionDescription} text-[var(--color-text-muted)]`}>
             From the original M10 to today&apos;s advanced B-series, explore how engineering, emissions and performance shaped every generation of 3 Series engines.
           </p>
         </div>
@@ -233,9 +233,9 @@ export default function EngineEvolution({ data }) {
         <MobileAccordion eras={eras} />
       </div>
 
-      <div className="mt-3 flex max-w-[780px] items-center gap-4 rounded-md border border-[var(--color-border)] bg-[var(--color-surface-raised)] px-5 py-3 text-[15px] text-[var(--color-text-muted)]">
+      <div className="mt-3 flex max-w-[780px] items-center gap-3 rounded-md border border-[var(--color-border)] bg-[var(--color-surface-raised)] px-4 py-2.5 text-[14px] text-[var(--color-text-muted)] md:px-5 md:py-3 md:text-[15px]">
         <span className="shrink-0 text-[var(--color-primary)]">
-          <Icon type="file" className="h-7 w-7" />
+          <Icon type="file" className="h-6 w-6 md:h-7 md:w-7" />
         </span>
         <p>
           All engine reliability insights and failure patterns are based on 826+ verified enquiries in 2025. Data covers the UK market.{" "}

@@ -5,8 +5,8 @@ export default function VerdictRating({ data }) {
     <section style={{ paddingBottom: 8 }}>
       <h2>Verdict & Rating</h2>
       {data.starRating && <p>Rating: {data.starRating}</p>}
-      {data.confidence && <p>{data.confidence}</p>}
-      {data.scoreNote && <p>{data.scoreNote}</p>}
+      {data.confidence && <p dangerouslySetInnerHTML={{ __html: data.confidence }} />}
+      {data.scoreNote && <p dangerouslySetInnerHTML={{ __html: data.scoreNote }} />}
 
       {data.scoreBreakdown && (
         <table border="1" cellPadding="4" cellSpacing="0">
@@ -28,9 +28,9 @@ export default function VerdictRating({ data }) {
         </table>
       )}
 
-      {data.oneLineVerdict && <p>{data.oneLineVerdict}</p>}
-      {data.bestFor && <p>Best for: {data.bestFor}</p>}
-      {data.avoidIf && <p>Avoid if: {data.avoidIf}</p>}
+      {data.oneLineVerdict && <p dangerouslySetInnerHTML={{ __html: data.oneLineVerdict }} />}
+      {data.bestFor && <p>Best for: <span dangerouslySetInnerHTML={{ __html: data.bestFor }} /></p>}
+      {data.avoidIf && <p>Avoid if: <span dangerouslySetInnerHTML={{ __html: data.avoidIf }} /></p>}
       <hr />
     </section>
   );

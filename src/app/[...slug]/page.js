@@ -170,14 +170,14 @@ export default async function CatchAllPage({ params }) {
     return (
       <main
         style={{
-          padding: "24px 8px 64px",
+          padding: "8px 4px",
           width: "100%",
           maxWidth: "88rem",
           margin: "0 auto",
           lineHeight: 1.5,
           display: "flex",
           flexDirection: "column",
-          gap: 40,
+          
         }}
       >
         {data.meta?.jsonLd && (

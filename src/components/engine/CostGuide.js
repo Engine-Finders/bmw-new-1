@@ -23,8 +23,8 @@ export default function CostGuide({ data }) {
           ))}
         </tbody>
       </table>
-      {data.labourEstimate && <p>{data.labourEstimate}</p>}
-      {data.sharedCostNote && <p>{data.sharedCostNote}</p>}
+      {data.labourEstimate && <p dangerouslySetInnerHTML={{ __html: data.labourEstimate }} />}
+      {data.sharedCostNote && <p dangerouslySetInnerHTML={{ __html: data.sharedCostNote }} />}
       {data.cta && (
         <p>
           <a href={data.cta.href}>{data.cta.label}</a>

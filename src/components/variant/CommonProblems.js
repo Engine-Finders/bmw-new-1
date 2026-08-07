@@ -9,7 +9,7 @@ export default function CommonProblems({ data }) {
           <h3>
             {problem.id}. {problem.title}
           </h3>
-          {problem.symptoms && <p>Symptoms: {problem.symptoms}</p>}
+          {problem.symptoms && <p>Symptoms: <span dangerouslySetInnerHTML={{ __html: problem.symptoms }} /></p>}
           {problem.typicalMileage && (
             <p>Typical mileage: {problem.typicalMileage}</p>
           )}
@@ -20,10 +20,10 @@ export default function CommonProblems({ data }) {
           {problem.urgency && (
             <p>
               Urgency: {problem.urgency.icon} {problem.urgency.label} -{" "}
-              {problem.urgency.text}
+              <span dangerouslySetInnerHTML={{ __html: problem.urgency.text }} />
             </p>
           )}
-          {problem.recommendation && <p>{problem.recommendation}</p>}
+          {problem.recommendation && <p dangerouslySetInnerHTML={{ __html: problem.recommendation }} />}
           {problem.failureLink && (
             <p>
               <a href={problem.failureLink.href}>

@@ -16,13 +16,13 @@ function FAQItem({ item, isOpen, onToggle }) {
         <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-md bg-[var(--color-primary-soft)] text-[0.85rem] font-bold text-[var(--color-primary)]">
           {item.id}
         </span>
-        <span className="flex-1 text-[0.92rem] font-semibold leading-snug text-[var(--color-text)]">{item.question}</span>
+        <span className="flex-1 text-[0.92rem] font-semibold leading-snug text-[var(--color-text)]" dangerouslySetInnerHTML={{ __html: item.question }} />
         <span className={`shrink-0 text-[var(--color-primary)] transition-transform ${isOpen ? "rotate-45" : ""}`}>
           <GenIcon name="plus" className="h-5 w-5" />
         </span>
       </button>
       {isOpen ? (
-        <p className="px-5 pb-4 pl-[60px] text-[0.85rem] leading-[1.55] text-[var(--color-text-muted)]">{item.answer}</p>
+        <p className="px-5 pb-4 pl-[60px] text-[0.85rem] leading-[1.55] text-[var(--color-text-muted)]" dangerouslySetInnerHTML={{ __html: item.answer }} />
       ) : null}
     </div>
   );
@@ -40,9 +40,10 @@ export default function FAQAccordion({ data }) {
   return (
     <section className="w-full bg-[var(--color-page)] py-8 text-[var(--color-text)] md:py-10">
       <div className="relative mx-auto w-full max-w-8xl px-4 md:px-8">
-        <h2 className="text-[2.15rem] font-bold leading-[1.1] tracking-normal text-[var(--color-text)] md:text-[3rem]">
-          {data.h2 || "FAQ"}
-        </h2>
+        <h2
+          className="text-[2.15rem] font-bold leading-[1.1] tracking-normal text-[var(--color-text)] md:text-[3rem]"
+          dangerouslySetInnerHTML={{ __html: data.h2 || "FAQ" }}
+        />
         <div className="mt-3">
           <MStripe />
         </div>

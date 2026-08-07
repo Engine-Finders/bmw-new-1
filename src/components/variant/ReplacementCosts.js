@@ -20,14 +20,14 @@ export default function ReplacementCosts({ data }) {
               <td>{row.supplyOnly}</td>
               <td>{row.fittedIndie}</td>
               <td>{row.warranty}</td>
-              <td>{row.bestFor}</td>
+              <td dangerouslySetInnerHTML={{ __html: row.bestFor }} />
             </tr>
           ))}
         </tbody>
       </table>
 
-      {data.figuresNote && <p>{data.figuresNote}</p>}
-      {data.labourEstimate && <p>{data.labourEstimate}</p>}
+      {data.figuresNote && <p dangerouslySetInnerHTML={{ __html: data.figuresNote }} />}
+      {data.labourEstimate && <p dangerouslySetInnerHTML={{ __html: data.labourEstimate }} />}
       {data.cta && (
         <p>
           <a href={data.cta.href}>{data.cta.label}</a>
