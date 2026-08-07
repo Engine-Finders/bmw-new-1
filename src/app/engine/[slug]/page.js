@@ -64,17 +64,7 @@ export default async function EnginePage({ params }) {
   if (!data) notFound();
 
   return (
-    <main
-      style={{
-        padding: "24px 16px 64px",
-        maxWidth: 1100,
-        margin: "0 auto",
-        lineHeight: 1.5,
-        display: "flex",
-        flexDirection: "column",
-        gap: 40,
-      }}
-    >
+    <main className="flex flex-col">
       {data.meta?.jsonLd && (
         <script
           type="application/ld+json"
