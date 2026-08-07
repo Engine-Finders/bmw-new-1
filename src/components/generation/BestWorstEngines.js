@@ -8,68 +8,114 @@ import GenIcon from "./GenIcons";
 const typeStyles = {
   success: {
     icon: "check",
-    accent: "border-l-[#189454]",
+    color: "#189454",
+    accent: "border-b-[#189454]",
     light: "text-[#13884a] bg-[#eafaf0]",
     dark: "text-[#67d99a] bg-[rgba(24,148,84,0.16)]",
   },
   trophy: {
     icon: "gauge",
-    accent: "border-l-[var(--color-primary)]",
+    color: "var(--color-primary)",
+    accent: "border-b-[var(--color-primary)]",
     light: "text-[var(--color-primary)] bg-[var(--color-primary-soft)]",
     dark: "text-[#7fb2ff] bg-[rgba(36,132,255,0.16)]",
   },
   danger: {
     icon: "warning",
-    accent: "border-l-[#e03232]",
+    color: "#e03232",
+    accent: "border-b-[#e03232]",
     light: "text-[#db2e2e] bg-[#fff0f0]",
     dark: "text-[#ff8b90] bg-[rgba(255,45,53,0.15)]",
   },
   fire: {
     icon: "dollar",
-    accent: "border-l-[#da7a12]",
+    color: "#da7a12",
+    accent: "border-b-[#da7a12]",
     light: "text-[#da7a12] bg-[#fff5ea]",
     dark: "text-[#ffb66a] bg-[rgba(218,122,18,0.15)]",
   },
   diamond: {
     icon: "diamond",
-    accent: "border-l-[#189454]",
+    color: "#189454",
+    accent: "border-b-[#189454]",
     light: "text-[#13884a] bg-[#eafaf0]",
     dark: "text-[#67d99a] bg-[rgba(24,148,84,0.16)]",
   },
   crown: {
     icon: "shield",
-    accent: "border-l-[var(--color-primary)]",
+    color: "var(--color-primary)",
+    accent: "border-b-[var(--color-primary)]",
     light: "text-[var(--color-primary)] bg-[var(--color-primary-soft)]",
     dark: "text-[#7fb2ff] bg-[rgba(36,132,255,0.16)]",
   },
 };
+
+function MobileCard({ item, isDark }) {
+  const style = typeStyles[item.type] || typeStyles.success;
+  const badgeClass = isDark ? style.dark : style.light;
+
+  return (
+    <div
+      className="flex gap-3 overflow-hidden rounded-md border border-[var(--color-border)] bg-[var(--color-surface)] p-3"
+      style={{ borderLeft: `4px solid ${style.color}` }}
+    >
+      <div className="flex w-20 shrink-0 flex-col items-center gap-1.5">
+        <span className={`flex h-7 w-7 shrink-0 items-center justify-center rounded-full ${badgeClass}`}>
+          <GenIcon name={style.icon} className="h-3.5 w-3.5" />
+        </span>
+        <div className="relative h-28 w-20 shrink-0 overflow-hidden">
+          <Image src="/e90/engine.png" alt={`${item.engine} engine`} fill className="object-contain" sizes="80px" />
+        </div>
+      </div>
+
+      <div className="flex min-w-0 flex-1 flex-col gap-1.5">
+        <p className={`text-[0.72rem] font-semibold leading-tight ${badgeClass.split(" ")[0]}`}>{item.slot}</p>
+
+        <p className="flex flex-wrap items-baseline gap-x-1.5 text-[1rem] font-bold leading-tight text-[var(--color-text)]">
+          {item.engine}
+          {item.engineNote ? (
+            <span className="text-[0.72rem] font-normal text-[var(--color-text-muted)]">{item.engineNote}</span>
+          ) : null}
+        </p>
+
+        <p className="text-[0.78rem] leading-[1.35] text-[var(--color-text-muted)]">&ldquo;{item.quote}&rdquo;</p>
+
+        <p className="border-t border-[var(--color-border)] pt-2 text-[0.76rem] leading-[1.3] text-[var(--color-text)]">
+          <span className="font-semibold" style={{ color: style.color }}>Who it&apos;s for:</span> {item.whoItsFor}
+        </p>
+        {item.modelWideNote ? (
+          <p className="rounded-md bg-[var(--color-page-soft)] p-1.5 text-[0.68rem] leading-[1.3] text-[var(--color-text-soft)]">
+            {item.modelWideNote}
+          </p>
+        ) : null}
+      </div>
+    </div>
+  );
+}
 
 function Card({ item, isDark }) {
   const style = typeStyles[item.type] || typeStyles.success;
   const badgeClass = isDark ? style.dark : style.light;
 
   return (
-    <div className={`flex h-full flex-col gap-2 overflow-hidden rounded-md border border-l-4 border-[var(--color-border)] bg-[var(--color-surface)] p-3 ${style.accent}`}>
+    <div className={`hidden h-full flex-col gap-2 overflow-hidden rounded-md border border-b-4 border-[var(--color-border)] bg-[var(--color-surface)] p-3 sm:flex ${style.accent}`}>
       <div className="flex items-center gap-2">
         <span className={`flex h-7 w-7 shrink-0 items-center justify-center rounded-full ${badgeClass}`}>
           <GenIcon name={style.icon} className="h-3.5 w-3.5" />
         </span>
         <p className={`flex-1 text-[0.76rem] font-semibold leading-tight ${badgeClass.split(" ")[0]}`}>{item.slot}</p>
-        <span className="shrink-0 text-[var(--color-text-soft)]">
-          <GenIcon name="chevron" className="h-4 w-4" />
-        </span>
       </div>
 
-      <div>
-        <p className="text-[1.05rem] font-bold leading-tight text-[var(--color-text)]">{item.engine}</p>
+      <p className="flex flex-wrap items-baseline gap-x-1.5 text-[1.05rem] font-bold leading-tight text-[var(--color-text)]">
+        {item.engine}
         {item.engineNote ? (
-          <p className="mt-0.5 text-[0.76rem] text-[var(--color-text-muted)]">{item.engineNote}</p>
+          <span className="text-[0.76rem] font-normal text-[var(--color-text-muted)]">{item.engineNote}</span>
         ) : null}
-      </div>
+      </p>
 
       <div className="flex items-start gap-2.5">
-        <div className="relative h-36 w-14 shrink-0 overflow-hidden rounded-sm">
-          <Image src="/e90/engine.png" alt={`${item.engine} engine`} fill className="object-cover" sizes="60px" />
+        <div className="relative -ml-3 h-36 w-24 shrink-0 overflow-hidden rounded-sm">
+          <Image src="/e90/engine.png" alt={`${item.engine} engine`} fill className="object-contain" sizes="100px" />
         </div>
         <p className="text-[0.8rem] leading-[1.35] text-[var(--color-text-muted)]">&ldquo;{item.quote}&rdquo;</p>
       </div>
@@ -93,7 +139,7 @@ function OverlookedCard({ item, isDark }) {
   const badgeClass = isDark ? style.dark : style.light;
 
   return (
-    <div className={`overflow-hidden rounded-md border border-l-4 border-[var(--color-border)] bg-[var(--color-surface)] ${style.accent}`}>
+    <div className={`overflow-hidden rounded-md border border-b-4 border-[var(--color-border)] bg-[var(--color-surface)] ${style.accent}`}>
       <div className="grid grid-cols-1 md:grid-cols-[0.85fr_1.7fr_1fr] md:divide-x md:divide-[var(--color-border)]">
         <div className="flex items-start gap-3 p-5">
           <span className={`flex h-9 w-9 shrink-0 items-center justify-center rounded-full ${badgeClass}`}>
@@ -133,17 +179,20 @@ export default function BestWorstEngines({ data }) {
   return (
     <section className="w-full bg-[var(--color-page)] py-8 text-[var(--color-text)] md:py-10">
       <div className="relative mx-auto w-full max-w-8xl px-4 md:px-8">
-        <span className="text-[0.75rem] font-semibold uppercase tracking-wide text-[var(--color-primary)]">
-          04 — Best &amp; Worst Engines
-        </span>
-        <h2 className="mt-2 text-[2.55rem] font-bold leading-[1.05] tracking-normal text-[var(--color-text)] md:text-[3.5rem]">
+        <h2 className="text-[2.15rem] font-bold leading-[1.1] tracking-normal text-[var(--color-text)] md:text-[3rem]">
           Best &amp; Worst Engines
         </h2>
         <div className="mt-3">
           <MStripe />
         </div>
 
-        <div className="mt-6 grid grid-cols-1 items-stretch gap-4 sm:grid-cols-2 lg:grid-cols-5">
+        <div className="mt-6 flex flex-col gap-3 sm:hidden">
+          {mainItems.map((item) => (
+            <MobileCard key={item.slot} item={item} isDark={isDark} />
+          ))}
+        </div>
+
+        <div className="mt-6 hidden items-stretch gap-4 sm:grid sm:grid-cols-2 lg:grid-cols-5">
           {mainItems.map((item) => (
             <Card key={item.slot} item={item} isDark={isDark} />
           ))}

@@ -25,9 +25,20 @@ const paths = {
   clock: "M12 7v5l3.5 2M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z",
   tag: "M20.59 13.41 13.42 20.58a2 2 0 0 1-2.83 0L3 13V3h10l7.59 7.59a2 2 0 0 1 0 2.82ZM7 7h.01",
   refresh: "M21 12a9 9 0 0 1-15.5 6.36M3 12a9 9 0 0 1 15.5-6.36M21 3v6h-6M3 21v-6h6",
+  pin: "M12 21s7-6.1 7-11.5A7 7 0 0 0 5 9.5C5 14.9 12 21 12 21Zm0-8.5a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z",
+  target: "M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18Zm0-4.5a4.5 4.5 0 1 0 0-9 4.5 4.5 0 0 0 0 9Zm0-3a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3ZM21 3l-5.5 5.5",
 };
 
 export default function GenIcon({ name, className = "h-5 w-5" }) {
+  if (name === "drum") {
+    return (
+      <svg aria-hidden="true" viewBox="0 0 24 24" className={className} fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <rect x="5" y="3" width="14" height="18" rx="1.5" />
+        <path d="M5 9h14M5 15h14M8 3v18M16 3v18" />
+      </svg>
+    );
+  }
+
   return (
     <svg aria-hidden="true" viewBox="0 0 24 24" className={className} fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
       <path d={paths[name] || paths.info} />

@@ -395,7 +395,32 @@
     ],
     "confidenceScore": {
       "title": "How confident are these ratings?",
-      "text": "N47D20C and M57D30: 95% confidence, inherited directly from the Model Page's BMW-VERIFIED figures. N46, N52, N54 and N55: Expert-knowledge tier, inherited from the Model Page's pattern-data-tier ratings. N57D30: Provisional-newly-assigned tier — no Model Page row or dedicated Engine Page exists for this code yet; the ★★★★☆ rating here is derived from cross-referencing three independent specialist/owner sources (Quarry Motors, Bimmerly, PistonHeads E90/E90-owner threads) that consistently place single-turbo N57D30 reliability above N47 and in line with N52/N55 — confirm against the Engine Page once built."
+      "items": [
+        {
+          "icon": "check",
+          "iconColor": "success",
+          "label": "N47D20C and M57D30:",
+          "text": "95% confidence, inherited directly from the Model Page's BMW-VERIFIED figures."
+        },
+        {
+          "icon": "info",
+          "iconColor": "primary",
+          "label": "N46, N52, N54 and N55:",
+          "text": "Expert-knowledge tier, inherited from the Model Page's pattern-data-tier ratings."
+        },
+        {
+          "icon": "diamond",
+          "iconColor": "primary",
+          "label": "N57D30:",
+          "text": "Provisional-newly-assigned tier — no Model Page row or dedicated Engine Page exists for this code yet."
+        },
+        {
+          "icon": "book",
+          "iconColor": "primary",
+          "label": "The ★★★★☆ rating here is derived",
+          "text": "From cross-referencing three independent specialist/owner sources that consistently place single-turbo N57D30 reliability above N47 and in line with N52/N55 — confirm against the Engine Page once built."
+        }
+      ]
     },
     "dataCorrections": []
   },

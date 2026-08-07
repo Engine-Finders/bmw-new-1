@@ -6,19 +6,20 @@ import MStripe from "@/components/reusableComponents/MStripe";
 import GenIcon from "./GenIcons";
 
 const verdictStyles = {
-  warning: { icon: "warning", light: "text-[#d97517] bg-[#fff6eb]", dark: "text-[#ffb05a] bg-[rgba(236,139,31,0.14)]" },
-  success: { icon: "check", light: "text-[#13884a] bg-[#eefaf3]", dark: "text-[#67d99a] bg-[rgba(24,148,84,0.16)]" },
-  danger: { icon: "warning", light: "text-[#db2e2e] bg-[#fff0f0]", dark: "text-[#ff8b90] bg-[rgba(255,45,53,0.15)]" },
-  info: { icon: "info", light: "text-[var(--color-primary)] bg-[var(--color-primary-soft)]", dark: "text-[#7fb2ff] bg-[rgba(36,132,255,0.16)]" },
+  warning: { icon: "warning", light: "text-[#d97517]", dark: "text-[#ffb05a]" },
+  success: { icon: "check", light: "text-[#13884a]", dark: "text-[#67d99a]" },
+  danger: { icon: "warning", light: "text-[#db2e2e]", dark: "text-[#ff8b90]" },
+  info: { icon: "info", light: "text-[var(--color-primary)]", dark: "text-[#7fb2ff]" },
 };
 
 function VerdictPill({ verdictType, text, isDark }) {
   const style = verdictStyles[verdictType] || verdictStyles.info;
-  const classes = isDark ? style.dark : style.light;
+  const iconColor = isDark ? style.dark : style.light;
+  const textColor = isDark ? "text-white" : "text-black";
 
   return (
-    <span className={`inline-flex items-start gap-2 rounded-md px-2.5 py-1.5 text-[0.78rem] leading-[1.25] ${classes}`}>
-      <GenIcon name={style.icon} className="mt-0.5 h-4 w-4 shrink-0" />
+    <span className={`inline-flex items-start gap-2 text-[0.78rem] leading-[1.25] ${textColor}`}>
+      <GenIcon name={style.icon} className={`mt-0.5 h-4 w-4 shrink-0 ${iconColor}`} />
       {text}
     </span>
   );
@@ -41,7 +42,9 @@ function DesktopRow({ row, isDark }) {
       <span className={`px-3 ${mutedText} border-r ${cellDivider}`}>{row.commonMajorFailure}</span>
       <span className={`px-3 ${mutedText} border-r ${cellDivider}`}>{row.repairCostSpecialist}</span>
       <span className={`px-3 font-semibold border-r ${cellDivider}`}>{row.replacementCostRecon}</span>
-      <VerdictPill verdictType={row.verdictType} text={row.ownershipVerdict} isDark={isDark} />
+      <div className="pl-3">
+        <VerdictPill verdictType={row.verdictType} text={row.ownershipVerdict} isDark={isDark} />
+      </div>
     </div>
   );
 }
@@ -65,7 +68,9 @@ function MobileRow({ row, isDark }) {
       <span className={`px-2 ${mutedText} border-r ${cellDivider}`}>{row.commonMajorFailure}</span>
       <span className={`px-2 ${mutedText} border-r ${cellDivider}`}>{row.repairCostSpecialist}</span>
       <span className={`px-2 font-semibold border-r ${cellDivider}`}>{row.replacementCostRecon}</span>
-      <VerdictPill verdictType={row.verdictType} text={row.ownershipVerdict} isDark={isDark} />
+      <div className="pl-2">
+        <VerdictPill verdictType={row.verdictType} text={row.ownershipVerdict} isDark={isDark} />
+      </div>
     </div>
   );
 }
@@ -81,21 +86,52 @@ export default function OwnershipEconomics({ data }) {
   const headerBg = isDark ? "bg-[#0a1f44]" : "bg-[var(--color-primary)]";
   const headerDivider = isDark ? "border-white/20" : "border-white/25";
   const bodyWrapperBg = isDark ? "bg-black" : "bg-[var(--color-table-surface)]";
+  const headerImage = isDark ? "/e90/engine_replacement_dark.png" : "/e90/engine_replacement_light.png";
+  const headerImageMobile = isDark ? "/e90/engine_replacement_mobile_dark.png" : "/e90/engine_replacement_mobile_light.png";
+  const headerHeadingClass = isDark ? "text-white" : "text-[var(--color-text)]";
 
   return (
     <section className="w-full bg-[var(--color-page)] py-8 text-[var(--color-text)] md:py-10">
-      <div className="relative -mt-8 mb-6 h-[170px] w-full md:hidden">
-        <Image src="/e90/section11.png" alt="" fill className="object-cover object-[65%_30%]" sizes="100vw" />
-        <div className="absolute inset-0 bg-[linear-gradient(180deg,transparent_45%,var(--color-page)_100%)]" />
+      <div className="relative overflow-hidden">
+        <div className="absolute inset-0 hidden md:block">
+          <Image src={headerImage} alt="" fill className="object-cover" sizes="100vw" priority />
+          {isDark ? (
+            <>
+              <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(2,7,17,0.9)_0%,rgba(2,7,11,0.72)_32%,transparent_60%)]" />
+              <div className="absolute inset-x-0 bottom-0 h-16 bg-[linear-gradient(0deg,rgba(2,7,17,0.65)_0%,transparent_100%)]" />
+            </>
+          ) : (
+            <>
+              <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(255,255,255,0.95)_0%,rgba(255,255,255,0.72)_32%,transparent_60%)]" />
+              <div className="absolute inset-x-0 bottom-0 h-16 bg-[linear-gradient(0deg,rgba(255,255,255,0.65)_0%,transparent_100%)]" />
+            </>
+          )}
+        </div>
+
+        <div className="relative -mb-px h-[200px] w-full overflow-hidden md:hidden">
+          <Image src={headerImageMobile} alt="" fill className="object-cover" sizes="100vw" priority />
+          <div
+            className={`absolute inset-0 ${
+              isDark
+                ? "bg-[linear-gradient(180deg,transparent_55%,rgba(2,7,17,1)_97%)]"
+                : "bg-[linear-gradient(180deg,transparent_55%,rgba(255,255,255,1)_97%)]"
+            }`}
+          />
+          {/* Solid strip guarantees full opacity at the very edge — no sub-pixel seam from the gradient's asymptotic stop */}
+          <div className="absolute inset-x-0 bottom-0 h-3 bg-[var(--color-page)]" />
+        </div>
+
+        <div className="relative mx-auto w-full max-w-8xl px-4 py-6 md:px-8 md:py-10">
+          <h2 className={`max-w-[720px] text-[2.15rem] font-bold leading-[1.1] tracking-normal md:text-[3rem] ${headerHeadingClass}`}>
+            {data.h2}
+          </h2>
+          <div className="mt-3">
+            <MStripe />
+          </div>
+        </div>
       </div>
 
       <div className="relative mx-auto w-full max-w-8xl px-4 md:px-8">
-        <h2 className="text-[2.55rem] font-bold leading-[1.05] tracking-normal text-[var(--color-text)] md:text-[3.5rem]">
-          {data.h2}
-        </h2>
-        <div className="mt-3">
-          <MStripe />
-        </div>
 
         <div className="mt-6 hidden overflow-hidden rounded-md border border-[var(--color-border)] bg-[var(--color-table-surface)] shadow-[0_14px_40px_var(--color-shadow)] backdrop-blur md:block">
           <div className={`grid grid-cols-[110px_100px_1fr_130px_150px_1.4fr] gap-px ${headerBg} px-5 py-3 text-[0.82rem] font-semibold text-white`}>
@@ -131,30 +167,30 @@ export default function OwnershipEconomics({ data }) {
           </div>
         </div>
 
-        <div className="mt-6 grid grid-cols-1 gap-4 md:grid-cols-[1.3fr_1fr]">
+        <div className="mt-6 grid grid-cols-1 gap-4 md:grid-cols-[0.85fr_1.15fr]">
           {data.economicsRule ? (
-            <div className="rounded-md border border-[var(--color-primary)] bg-[var(--color-primary-soft)] p-5">
-              <div className="flex items-center gap-4">
-                <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-[var(--color-primary)] text-white">
-                  <GenIcon name="scale" className="h-6 w-6" />
-                </span>
+            <div className="flex items-center gap-4 rounded-md border border-[var(--color-primary)] bg-[var(--color-primary-soft)] p-3.5">
+              <span className="flex h-20 w-20 shrink-0 items-center justify-center rounded-full bg-[var(--color-primary)] text-white">
+                <GenIcon name="scale" className="h-10 w-10" />
+              </span>
+              <div className="min-w-0 flex-1">
                 <p className="text-[0.78rem] font-semibold uppercase tracking-wide text-[var(--color-primary)]">
                   {data.economicsRule.title}
                 </p>
+                <p className="mt-2 text-[0.85rem] leading-[1.5] text-[var(--color-text)]">{data.economicsRule.text}</p>
+                {data.economicsRule.highlight ? (
+                  <p className="mt-2 text-[0.9rem] font-bold text-[var(--color-primary)]">{data.economicsRule.highlight}</p>
+                ) : null}
               </div>
-              <p className="mt-3 text-[0.85rem] leading-[1.5] text-[var(--color-text)]">{data.economicsRule.text}</p>
-              {data.economicsRule.highlight ? (
-                <p className="mt-2 text-[0.9rem] font-bold text-[var(--color-primary)]">{data.economicsRule.highlight}</p>
-              ) : null}
             </div>
           ) : null}
 
           {data.keyTakeaways?.length > 0 ? (
-            <div className="rounded-md border border-[var(--color-border)] bg-[var(--color-surface)] p-5">
+            <div className="glass-panel rounded-md p-3.5">
               <p className="text-[0.78rem] font-semibold uppercase tracking-wide text-[var(--color-primary)]">
                 Key Takeaways
               </p>
-              <ul className="mt-3 flex flex-col gap-3">
+              <ul className="mt-2.5 flex flex-col gap-2.5">
                 {data.keyTakeaways.map((item, index) => (
                   <li key={item.question} className="flex items-start gap-3 border-t border-[var(--color-border)] pt-3 first:border-t-0 first:pt-0">
                     <span className="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[var(--color-primary-soft)] text-[var(--color-primary)]">
@@ -164,9 +200,6 @@ export default function OwnershipEconomics({ data }) {
                       <p className="text-[0.85rem] font-semibold text-[var(--color-text)]">{item.question}</p>
                       <p className="text-[0.8rem] leading-[1.4] text-[var(--color-text-muted)]">{item.answer}</p>
                     </div>
-                    <span className="mt-1 shrink-0 text-[var(--color-primary)]">
-                      <GenIcon name="chevron" className="h-4 w-4" />
-                    </span>
                   </li>
                 ))}
               </ul>

@@ -220,7 +220,7 @@ export default async function CatchAllPage({ params }) {
         <OwnershipEconomics data={data.ownershipEconomics} />
         <GenProblems data={data.commonProblems} />
         <GenReplacementCosts data={data.replacementCosts} />
-        <CoreVariants data={data.coreVariants} />
+        <CoreVariants data={data.coreVariants} parentSlug={entry.parent} />
         <GenMarketIntelligence data={data.marketIntelligence} />
         <GenFAQAccordion data={data.faq} />
         <GenTrustCta data={data.trustCta} />

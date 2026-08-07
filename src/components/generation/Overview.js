@@ -2,17 +2,28 @@
 
 import Image from "next/image";
 import MStripe from "@/components/reusableComponents/MStripe";
+import { useTheme } from "@/components/shared/themeProvider";
 import GenIcon from "./GenIcons";
 
 const factIcons = ["car", "arrow", "arrow", "car"];
+const factIconCircled = [false, true, true, false];
 
-// 2x2 grid on mobile (matches reference), single row on desktop.
-const keyFactCellClasses = [
-  "border-r border-b border-[var(--color-border)] pr-3 pb-3 lg:border-b-0 lg:border-r lg:pb-0 lg:pr-2.5",
-  "border-b border-[var(--color-border)] pb-3 pl-3 lg:border-b-0 lg:border-r lg:border-[var(--color-border)] lg:pb-0 lg:pl-3 lg:pr-2.5",
-  "border-r border-[var(--color-border)] pr-3 pt-3 lg:border-r lg:pt-0 lg:pl-0 lg:pr-2.5",
-  "pl-3 pt-3 lg:pt-0 lg:pl-3",
-];
+// Highlight numeric figures and [TAG] markers inline within a sentence.
+function HighlightedLine({ text = "" }) {
+  const parts = text.split(/(\[[^\]]+\]|\b\d[\d,.]*\b)/g).filter(Boolean);
+  return parts.map((part, i) => {
+    const isTag = /^\[[^\]]+\]$/.test(part);
+    const isNumber = /^\d[\d,.]*$/.test(part);
+    if (isTag || isNumber) {
+      return (
+        <span key={i} className="font-semibold text-[var(--color-primary)]">
+          {part}
+        </span>
+      );
+    }
+    return <span key={i}>{part}</span>;
+  });
+}
 
 function parseKeyFacts(keyFacts) {
   if (Array.isArray(keyFacts)) return keyFacts;
@@ -33,9 +44,19 @@ function parseKeyFacts(keyFacts) {
 }
 
 export default function Overview({ data }) {
+  const { theme } = useTheme();
   if (!data) return null;
 
+  const isDark = theme === "dark";
+  const image = isDark ? "/e90/overview_dark - Copy.png" : "/e90/overview_light.png";
   const keyFacts = parseKeyFacts(data.keyFacts);
+
+  const headingClass = isDark ? "text-white" : "text-[var(--color-text)]";
+  const bodyTextClass = isDark ? "text-white/80" : "text-[var(--color-text-muted)]";
+  const cardDividerClass = isDark ? "border-white/15" : "border-[var(--color-border)]";
+  const factLabelClass = isDark ? "text-white" : "text-[var(--color-text)]";
+  const factValueClass = isDark ? "text-white/70" : "text-[var(--color-text-muted)]";
+  const marketLineClass = isDark ? "text-white/85" : "text-[var(--color-text)]";
 
   // Split the intro into up-to-two paragraphs by sentence boundary
   const introParts = data.intro
@@ -47,82 +68,220 @@ export default function Overview({ data }) {
       })()
     : [];
 
+  const factItem = (fact, index) => (
+    <div className="flex min-w-0 flex-1 items-start gap-2 px-1">
+      {factIconCircled[index % factIconCircled.length] ? (
+        <span className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full border border-[var(--color-primary)] text-[var(--color-primary)]">
+          <GenIcon name={factIcons[index % factIcons.length]} className="h-3 w-3" />
+        </span>
+      ) : (
+        <span className="mt-0.5 shrink-0 text-[var(--color-primary)]">
+          <GenIcon name={factIcons[index % factIcons.length]} className="h-4 w-4" />
+        </span>
+      )}
+      <div className="min-w-0 flex-1">
+        <p className={`text-[0.8rem] font-semibold leading-[1.25] ${factLabelClass}`}>{fact.label}</p>
+        <p className={`mt-0.5 text-[0.74rem] leading-[1.3] ${factValueClass}`}>{fact.value}</p>
+      </div>
+    </div>
+  );
+
+  const keyFactsBlockMobile = keyFacts.length > 0 ? (
+    <div className="glass-panel mt-4 rounded-lg p-3">
+      <p className="text-[0.72rem] font-semibold uppercase tracking-wide text-[var(--color-primary)]">
+        Key Facts
+      </p>
+      <div className="mt-2 flex flex-col">
+        {Array.from({ length: Math.ceil(keyFacts.length / 2) }, (_, row) => {
+          const pair = keyFacts.slice(row * 2, row * 2 + 2);
+          return (
+            <div
+              key={row}
+              className={`flex items-stretch py-2 first:pt-2 ${row > 0 ? `border-t ${cardDividerClass}` : ""}`}
+            >
+              {pair.map((fact, i) => {
+                const index = row * 2 + i;
+                return (
+                  <div key={fact.label} className="flex flex-1 items-stretch">
+                    {i > 0 ? (
+                      <span
+                        aria-hidden="true"
+                        className={`mx-2 my-1 w-px shrink-0 self-center ${isDark ? "bg-white/15" : "bg-[var(--color-border)]"}`}
+                        style={{ height: "70%" }}
+                      />
+                    ) : null}
+                    {factItem(fact, index)}
+                  </div>
+                );
+              })}
+            </div>
+          );
+        })}
+      </div>
+    </div>
+  ) : null;
+
+  const keyFactsBlockDesktop = keyFacts.length > 0 ? (
+    <div className="glass-panel mt-4 rounded-lg p-3">
+      <p className="text-[0.72rem] font-semibold uppercase tracking-wide text-[var(--color-primary)]">
+        Key Facts
+      </p>
+      <div className="mt-2 grid grid-cols-4">
+        {keyFacts.map((fact, index) => (
+          <div
+            key={fact.label}
+            className={`flex items-start gap-2 border-l py-0 pl-3 first:border-l-0 first:pl-0 ${cardDividerClass}`}
+          >
+            {factIconCircled[index % factIconCircled.length] ? (
+              <span className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full border border-[var(--color-primary)] text-[var(--color-primary)]">
+                <GenIcon name={factIcons[index % factIcons.length]} className="h-3 w-3" />
+              </span>
+            ) : (
+              <span className="mt-0.5 shrink-0 text-[var(--color-primary)]">
+                <GenIcon name={factIcons[index % factIcons.length]} className="h-4 w-4" />
+              </span>
+            )}
+            <div className="min-w-0 flex-1">
+              <p className={`text-[0.8rem] font-semibold leading-[1.25] ${factLabelClass}`}>{fact.label}</p>
+              <p className={`mt-0.5 text-[0.74rem] leading-[1.3] ${factValueClass}`}>{fact.value}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  ) : null;
+
+  const marketIntelligenceBlockMobile = data.marketIntelligenceLine ? (
+    <div className="glass-panel relative mt-2.5 flex items-center gap-3 rounded-lg p-3.5">
+      <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-[var(--color-primary)] text-white">
+        <GenIcon name="target" className="h-5.5 w-5.5" />
+      </span>
+      <div className="min-w-0 flex-1">
+        <p className="text-[0.72rem] font-semibold uppercase tracking-wide text-[var(--color-primary)]">
+          Market Intelligence
+        </p>
+        <p className={`mt-1 text-[0.8rem] leading-[1.4] ${marketLineClass}`}>
+          <HighlightedLine text={data.marketIntelligenceLine} />
+        </p>
+      </div>
+    </div>
+  ) : null;
+
+  const marketIntelligenceBlockDesktop = data.marketIntelligenceLine ? (
+    <div className="glass-panel relative mt-2.5 flex items-start gap-3 rounded-lg p-3.5">
+      <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-[var(--color-primary)] text-white">
+        <GenIcon name="target" className="h-4.5 w-4.5" />
+      </span>
+      <div className="min-w-0 flex-1">
+        <p className="text-[0.72rem] font-semibold uppercase tracking-wide text-[var(--color-primary)]">
+          Market Intelligence
+        </p>
+        <p className={`mt-1 text-[0.8rem] leading-[1.4] ${marketLineClass}`}>
+          <HighlightedLine text={data.marketIntelligenceLine} />
+        </p>
+      </div>
+    </div>
+  ) : null;
+
+  const mobileImage = isDark ? "/e90/overview_mobile_dark.png" : "/e90/overview_mobile_light.png";
+
   return (
-    <section className="w-full bg-[var(--color-page)] py-6 text-[var(--color-text)] md:py-8">
-      <div className="relative mx-auto w-full max-w-8xl px-4 md:px-8">
-        <div className="grid grid-cols-1 gap-5 md:grid-cols-[0.6fr_1fr] md:items-stretch md:gap-0">
-          {data.image?.src ? (
-            <div className="relative h-[320px] overflow-hidden rounded-xl md:h-auto md:rounded-none">
-              <Image
-                src={data.image.src}
-                alt={data.image.alt || ""}
-                fill
-                className="object-cover object-[15%_60%] md:object-[5%_62%]"
-                sizes="(min-width: 768px) 45vw, 100vw"
-                priority
-              />
-              {/* soft fade at the image's own right edge, blending it into the page background */}
-              <div className="absolute inset-0 hidden bg-[linear-gradient(90deg,transparent_45%,var(--color-page)_98%)] md:block" />
-              <div className="absolute inset-0 bg-[linear-gradient(180deg,transparent_60%,var(--color-page)_100%)] md:hidden" />
+    <section className={`w-full bg-[var(--color-page)] ${headingClass}`}>
+      {/* MOBILE: hero image up top in normal flow, content stacked below it (not overlaid) */}
+      <div className="md:hidden">
+        <div className="relative -mb-px h-[260px] w-full overflow-hidden">
+          <Image
+            src={mobileImage}
+            alt={data.image?.alt || "BMW 3 Series E90"}
+            fill
+            className="object-cover"
+            sizes="100vw"
+            priority
+          />
+          <div
+            className={`absolute inset-0 ${
+              isDark
+                ? "bg-[linear-gradient(180deg,transparent_40%,rgba(2,7,17,0.75)_75%,rgba(2,7,17,1)_97%)]"
+                : "bg-[linear-gradient(180deg,transparent_40%,rgba(255,255,255,0.75)_75%,rgba(255,255,255,1)_97%)]"
+            }`}
+          />
+          {/* Solid strip guarantees full opacity at the very edge — no sub-pixel seam from the gradient's asymptotic stop */}
+          <div className="absolute inset-x-0 bottom-0 h-3 bg-[var(--color-page)]" />
+        </div>
+
+        <div className="px-4 pb-7 pt-5">
+          <p className="text-[0.72rem] font-semibold uppercase tracking-wide text-[var(--color-primary)]">
+            Overview
+          </p>
+          <h2 className="mt-1.5 text-[2.15rem] font-bold leading-[1.1] tracking-normal">
+            {data.h2}
+          </h2>
+
+          <div className="mt-2.5">
+            <MStripe />
+          </div>
+
+          {introParts.length > 0 ? (
+            <div className={`mt-4 flex flex-col gap-3 text-[0.9rem] leading-[1.5] ${bodyTextClass}`}>
+              {introParts.map((para, i) => (
+                <p key={i}>{para}</p>
+              ))}
             </div>
           ) : null}
 
-          {/* RIGHT: everything else stacks in this column, next to the image */}
-          <div className="flex flex-col justify-center md:pl-8">
-            <span className="text-[0.8rem] font-semibold uppercase tracking-wide text-[var(--color-primary)]">
-              Overview
-            </span>
+          {keyFactsBlockMobile}
+          {marketIntelligenceBlockMobile}
+        </div>
+      </div>
 
-            <h2 className="mt-1.5 text-[2.55rem] font-bold leading-[1.05] tracking-normal text-[var(--color-text)] md:text-[3.5rem]">
-              {data.h2}
-            </h2>
+      {/* DESKTOP: full-bleed background image with content overlaid on top */}
+      <div className={`relative hidden overflow-hidden px-10 md:block md:h-[500px] lg:h-[520px]`}>
+        <div className="absolute inset-0">
+          <Image
+            src={image}
+            alt={data.image?.alt || "BMW 3 Series E90"}
+            fill
+            className="object-cover object-[20%_55%]"
+            sizes="100vw"
+            priority
+          />
+          {isDark ? (
+            <>
+              <div className="absolute inset-0 bg-[radial-gradient(circle_at_22%_58%,transparent_0%,transparent_30%,rgba(2,7,17,0.45)_58%,rgba(2,7,17,0.85)_85%)]" />
+              <div className="absolute inset-0 bg-[linear-gradient(90deg,transparent_28%,rgba(2,7,17,0.92)_40%,rgba(2,7,17,1)_50%,rgba(2,7,17,1)_100%)]" />
+            </>
+          ) : (
+            <>
+              <div className="absolute inset-0 bg-[radial-gradient(circle_at_22%_58%,transparent_0%,transparent_30%,rgba(255,255,255,0.5)_58%,rgba(255,255,255,0.92)_85%)]" />
+              <div className="absolute inset-0 bg-[linear-gradient(90deg,transparent_28%,rgba(255,255,255,0.94)_40%,rgba(255,255,255,1)_50%,rgba(255,255,255,1)_100%)]" />
+            </>
+          )}
+        </div>
 
-            <div className="mt-2.5">
-              <MStripe />
-            </div>
+        <div className="relative mx-auto flex h-full w-full max-w-8xl px-4 md:px-8">
+          <div className="grid h-full w-full grid-cols-[0.6fr_1fr] items-center gap-0">
+            <div aria-hidden="true" />
 
-            {introParts.length > 0 ? (
-              <div className="mt-4 flex flex-col gap-3 text-[1rem] leading-[1.55] text-[var(--color-text-muted)] md:text-[1.05rem]">
-                {introParts.map((para, i) => (
-                  <p key={i}>{para}</p>
-                ))}
+            <div className="flex flex-col justify-center pl-8">
+              <h2 className="text-[3rem] font-bold leading-[1.1] tracking-normal">
+                {data.h2}
+              </h2>
+
+              <div className="mt-2.5">
+                <MStripe />
               </div>
-            ) : null}
 
-            {keyFacts.length > 0 ? (
-              <div className="relative mt-4 rounded-md border border-[var(--color-border)] bg-[var(--color-surface)] p-3.5">
-                <p className="text-[0.72rem] font-semibold uppercase tracking-wide text-[var(--color-primary)]">
-                  Key Facts
-                </p>
-                <div className="mt-2 grid grid-cols-2 lg:grid-cols-4 lg:items-start">
-                  {keyFacts.map((fact, index) => (
-                    <div key={fact.label} className={`flex items-start gap-2 ${keyFactCellClasses[index % keyFactCellClasses.length]}`}>
-                      <span className="mt-0.5 shrink-0 text-[var(--color-primary)]">
-                        <GenIcon name={factIcons[index % factIcons.length]} className="h-4 w-4" />
-                      </span>
-                      <div className="min-w-0 flex-1">
-                        <p className="text-[0.8rem] font-semibold leading-[1.25] text-[var(--color-text)]">{fact.label}</p>
-                        <p className="mt-0.5 text-[0.74rem] leading-[1.3] text-[var(--color-text-muted)]">{fact.value}</p>
-                      </div>
-                    </div>
+              {introParts.length > 0 ? (
+                <div className={`mt-4 flex flex-col gap-3 text-[1.05rem] leading-[1.55] ${bodyTextClass}`}>
+                  {introParts.map((para, i) => (
+                    <p key={i}>{para}</p>
                   ))}
                 </div>
-              </div>
-            ) : null}
+              ) : null}
 
-            {data.marketIntelligenceLine ? (
-              <div className="relative mt-2.5 rounded-md border border-[var(--color-primary-soft)] bg-[var(--color-primary-soft)] p-3.5">
-                <div className="flex items-center gap-2.5">
-                  <span className="shrink-0 text-[var(--color-primary)]">
-                    <GenIcon name="gauge" className="h-4 w-4" />
-                  </span>
-                  <p className="text-[0.72rem] font-semibold uppercase tracking-wide text-[var(--color-primary)]">
-                    Market Intelligence
-                  </p>
-                </div>
-                <p className="mt-1.5 text-[0.8rem] leading-[1.4] text-[var(--color-text)]">{data.marketIntelligenceLine}</p>
-              </div>
-            ) : null}
+              {keyFactsBlockDesktop}
+              {marketIntelligenceBlockDesktop}
+            </div>
           </div>
         </div>
       </div>

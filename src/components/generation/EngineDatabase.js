@@ -1,12 +1,13 @@
 "use client";
 
+import Image from "next/image";
 import MStripe from "@/components/reusableComponents/MStripe";
 import { useTheme } from "@/components/shared/themeProvider";
 import GenIcon from "./GenIcons";
 import GenBadge from "./GenBadge";
 
 const DESKTOP_COLS = "grid-cols-[0.95fr_0.6fr_1.05fr_0.8fr_0.9fr_1.15fr_1fr_1.05fr_1fr_1.05fr]";
-const MOBILE_COLS = "grid-cols-[100px_70px_90px_110px_120px_110px_130px_28px]";
+const MOBILE_COLS = "grid-cols-[100px_70px_90px_110px_120px_110px_130px]";
 const MOBILE_HEADERS = ["Engine Code", "Fuel", "Power", "Years", "Reliability", "Enquiries", "Avg. Recon Cost"];
 
 function FuelIcon({ fuel = "", className }) {
@@ -29,7 +30,7 @@ function DesktopRow({ engine, isDark }) {
 
   return (
     <div
-      className={`grid ${DESKTOP_COLS} items-center gap-px ${rowClass} px-4 py-3 text-[0.78rem] border-b ${borderBottom} last:border-b-0`}
+      className={`grid ${DESKTOP_COLS} items-center gap-px ${rowClass} px-4 py-2 text-[0.78rem] border-b ${borderBottom} last:border-b-0`}
     >
       <span className={`min-w-0 px-2 font-semibold border-r ${cellDivider}`}>{engine.engineCode}</span>
       <span className={`min-w-0 px-2 ${mutedText} border-r ${cellDivider}`}>{engine.family}</span>
@@ -41,7 +42,7 @@ function DesktopRow({ engine, isDark }) {
       <span className={`min-w-0 px-2 ${mutedText} border-r ${cellDivider}`}>{engine.power}</span>
       <span className={`min-w-0 px-2 ${mutedText} border-r ${cellDivider}`}>{engine.years}</span>
       <span className={`min-w-0 px-2 ${mutedText} border-r ${cellDivider}`}>{engine.variants}</span>
-      <span className={`flex min-w-0 flex-col gap-1 px-2 border-r ${cellDivider}`}>
+      <span className={`flex min-w-0 flex-col gap-0.5 px-2 border-r ${cellDivider}`}>
         <Stars value={engine.reliability} className="text-[0.85rem]" />
         <GenBadge tag={engine.reliabilityTag} isDark={isDark} />
         {engine.reliabilityDetail ? (
@@ -65,7 +66,7 @@ function MobileRow({ engine, isDark }) {
 
   return (
     <div
-      className={`grid ${MOBILE_COLS} items-center gap-px ${rowClass} px-3 py-2.5 text-[0.68rem] leading-[1.25] border-b ${borderBottom} last:border-b-0`}
+      className={`grid ${MOBILE_COLS} items-center gap-px ${rowClass} px-3 py-1.5 text-[0.68rem] leading-[1.25] border-b ${borderBottom} last:border-b-0`}
     >
       <span className={`px-1.5 border-r ${cellDivider}`}>
         <span className="block font-semibold">{engine.engineCode}</span>
@@ -82,9 +83,9 @@ function MobileRow({ engine, isDark }) {
         <GenBadge tag={engine.reliabilityTag} isDark={isDark} />
       </span>
       <span className={`px-1.5 ${mutedText} border-r ${cellDivider}`}>{engine.enquiries}</span>
-      <span className={`px-1.5 font-semibold border-r ${cellDivider}`}>{engine.avgReconCost}</span>
-      <span className="flex items-center justify-center text-[var(--color-primary)]">
-        <GenIcon name="chevron" className="h-3.5 w-3.5" />
+      <span className="flex items-center gap-1 px-1.5 font-semibold">
+        {engine.avgReconCost}
+        <GenIcon name="chevron" className="h-3.5 w-3.5 shrink-0 text-[var(--color-primary)]" />
       </span>
     </div>
   );
@@ -104,22 +105,34 @@ export default function EngineDatabase({ data }) {
   return (
     <section className="w-full bg-[var(--color-page)] py-8 text-[var(--color-text)] md:py-10">
       <div className="relative mx-auto w-full max-w-8xl px-4 md:px-8">
-        <h2 className="max-w-[760px] text-[2.55rem] font-bold leading-[1.05] tracking-normal text-[var(--color-text)] md:text-[3.5rem]">
-          {data.h2}
-        </h2>
-        <div className="mt-3">
-          <MStripe />
+        <div className="relative">
+          <span className="pointer-events-none absolute inset-y-0 right-0 hidden w-14 sm:block md:w-auto">
+            <Image
+              src="/e90/stripe.png"
+              alt=""
+              width={220}
+              height={220}
+              className="h-full w-auto object-contain object-right"
+            />
+          </span>
+
+          <h2 className="max-w-[760px] text-[2.15rem] font-bold leading-[1.1] tracking-normal text-[var(--color-text)] md:text-[3rem]">
+            {data.h2}
+          </h2>
+          <div className="mt-3">
+            <MStripe />
+          </div>
+          {data.subHeadline ? (
+            <p className="mt-4 max-w-[920px] text-[0.88rem] leading-[1.4] text-[var(--color-text-muted)] md:mt-5 md:text-[1.08rem] md:leading-[1.42]">
+              {data.subHeadline}
+            </p>
+          ) : null}
         </div>
-        {data.subHeadline ? (
-          <p className="mt-5 max-w-[560px] text-[1rem] leading-[1.5] text-[var(--color-text-muted)] md:text-[1.08rem]">
-            {data.subHeadline}
-          </p>
-        ) : null}
 
         <div className="mt-6 hidden overflow-hidden rounded-md border border-[var(--color-border)] bg-[var(--color-table-surface)] shadow-[0_14px_40px_var(--color-shadow)] backdrop-blur md:block">
-          <div className={`grid ${DESKTOP_COLS} gap-px rounded-t-md ${headerBg} px-4 py-2.5 text-[0.72rem] font-semibold leading-[1.2] text-white`}>
+          <div className={`grid ${DESKTOP_COLS} gap-px rounded-t-md ${headerBg} px-4 py-2 text-[0.72rem] font-semibold leading-[1.2] text-white`}>
             {data.columns?.map((col) => (
-              <span key={col} className={`min-w-0 border-r ${headerDivider} last:border-r-0`}>{col}</span>
+              <span key={col} className={`min-w-0 border-r px-2 ${headerDivider} last:border-r-0`}>{col}</span>
             ))}
           </div>
           <div className={bodyWrapperBg}>
@@ -130,12 +143,11 @@ export default function EngineDatabase({ data }) {
         </div>
 
         <div className="mt-6 overflow-x-auto rounded-md border border-[var(--color-border)] bg-[var(--color-table-surface)] shadow-[0_14px_40px_var(--color-shadow)] backdrop-blur md:hidden">
-          <div className="min-w-[850px]">
-            <div className={`grid ${MOBILE_COLS} gap-px ${headerBg} px-3 py-2.5 text-[0.68rem] font-semibold leading-[1.2] text-white`}>
+          <div className="min-w-[730px]">
+            <div className={`grid ${MOBILE_COLS} gap-px ${headerBg} px-3 py-2 text-[0.68rem] font-semibold leading-[1.2] text-white`}>
               {MOBILE_HEADERS.map((col) => (
-                <span key={col} className={`border-r ${headerDivider} last:border-r-0`}>{col}</span>
+                <span key={col} className={`border-r px-1.5 ${headerDivider} last:border-r-0`}>{col}</span>
               ))}
-              <span />
             </div>
             <div className={bodyWrapperBg}>
               {data.engines?.map((engine) => (
@@ -145,15 +157,42 @@ export default function EngineDatabase({ data }) {
           </div>
         </div>
 
-        {data.confidenceScore?.text ? (
-          <div className="mt-6 rounded-md border border-[var(--color-border)] bg-[var(--color-surface)] p-5">
-            <div className="flex items-center gap-3">
-              <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-[var(--color-primary-soft)] text-[var(--color-primary)]">
-                <GenIcon name="shield" className="h-6 w-6" />
+        {data.confidenceScore?.items?.length > 0 ? (
+          <div className="mt-6 grid grid-cols-1 items-center gap-5 rounded-md border border-[var(--color-border)] bg-[var(--color-surface)] p-5 md:grid-cols-[72px_1fr_1fr_1fr_1.4fr] md:items-start md:gap-0 md:divide-x md:divide-[var(--color-border)]">
+            {/* Column 1: Shield icon */}
+            <div className="flex items-start justify-start md:pr-4">
+              <span className="flex h-14 w-14 shrink-0 items-center justify-center rounded-md bg-[var(--color-primary)] text-white">
+                <GenIcon name="shield" className="h-8 w-8" />
               </span>
-              <p className="text-[1rem] font-semibold text-[var(--color-text)]">{data.confidenceScore.title}</p>
             </div>
-            <p className="mt-3 text-[0.85rem] leading-[1.5] text-[var(--color-text-muted)]">{data.confidenceScore.text}</p>
+            {/* Columns 2-5: info blocks */}
+            {data.confidenceScore.items.map((item, index) => {
+              const iconTone =
+                item.iconColor === "success"
+                  ? "text-[#13884a]"
+                  : "text-[var(--color-primary)]";
+              const labelTone =
+                item.iconColor === "success"
+                  ? "text-[#13884a]"
+                  : "text-[var(--color-primary)]";
+              const padding = index === 0 ? "md:pl-4 md:pr-4" : "md:px-4";
+              return (
+                <div
+                  key={`${item.label}-${index}`}
+                  className={`flex flex-col gap-1.5 ${padding}`}
+                >
+                  <p className={`flex items-center gap-2 text-[0.82rem] font-semibold leading-[1.3] ${labelTone}`}>
+                    <span className={`flex h-5 w-5 shrink-0 items-center justify-center ${iconTone}`}>
+                      <GenIcon name={item.icon} className="h-5 w-5" />
+                    </span>
+                    <span>{item.label}</span>
+                  </p>
+                  <p className="text-[0.8rem] leading-[1.45] text-[var(--color-text-muted)]">
+                    {item.text}
+                  </p>
+                </div>
+              );
+            })}
           </div>
         ) : null}
       </div>
