@@ -9,8 +9,6 @@ const links = [
   { label: "1 SERIES", href: "#" },
   { label: "3 SERIES", href: "#" },
   { label: "5 SERIES", href: "#" },
-  { label: "X3", href: "#" },
-  { label: "X5", href: "#" },
   { label: "M CARS", href: "#" },
   { label: "GUIDES", href: "#" },
   { label: "ABOUT", href: "#" },

@@ -63,6 +63,16 @@ export default async function EnginePage({ params }) {
   const data = await getPageData(entry.dataFile);
   if (!data) notFound();
 
+  const glanceRows = data.atAGlance?.rows || [];
+  const engineLabel =
+    glanceRows.find((row) => row.metric === "Engine Family")?.value || "BMW Engine";
+  const yearsProduced =
+    glanceRows.find((row) => row.metric === "Years Produced")?.value || "";
+  const modelsFitted =
+    glanceRows.find((row) => row.metric === "Models Fitted (BMW only)")?.value || "";
+  const crossBrandFitment =
+    glanceRows.find((row) => row.metric === "Cross-Brand Fitment")?.value || "";
+
   return (
     <main className="flex flex-col">
       {data.meta?.jsonLd && (
@@ -76,10 +86,16 @@ export default async function EnginePage({ params }) {
       <EngineHero data={data.hero} />
       <AtAGlance data={data.atAGlance} />
       <VerdictRating data={data.verdictRating} />
-      <Compatibility data={data.compatibility} />
-      <CostGuide data={data.costGuide} />
-      <FAQAccordion data={data.faq} />
-      <TrustCta data={data.trustCta} />
+      <Compatibility
+        data={data.compatibility}
+        engineLabel={engineLabel}
+        yearsProduced={yearsProduced}
+        modelsFitted={modelsFitted}
+        crossBrandFitment={crossBrandFitment}
+      />
+      <CostGuide data={data.costGuide} engineLabel={engineLabel} />
+      <FAQAccordion data={data.faq} engineLabel={engineLabel} />
+      <TrustCta data={data.trustCta} engineLabel={engineLabel} />
     </main>
   );
 }

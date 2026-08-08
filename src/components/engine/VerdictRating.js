@@ -1,6 +1,7 @@
 "use client";
 
 import { useTheme } from "@/components/shared/themeProvider";
+import MStripe from "@/components/reusableComponents/MStripe";
 import { sectionH2 } from "@/components/models/sectionTypography";
 
 const dimensionIcons = {
@@ -338,14 +339,12 @@ export default function VerdictRating({ data }) {
 
       <div className="relative mx-auto w-full max-w-8xl px-4 md:px-8">
         <div className="text-center md:text-left">
-          <div className="flex items-center justify-center gap-3 text-[var(--color-primary)] md:justify-start">
-            <span className="h-px w-8 bg-[var(--color-primary)] md:w-7" />
-            <p className="text-[12px] font-medium uppercase tracking-[0.08em] md:text-[13px]">Verdict</p>
-            <span className="h-px w-8 bg-[var(--color-primary)] md:w-7" />
-          </div>
-          <h2 className={`mt-2 font-bold tracking-normal ${sectionH2}`}>
+          <h2 className={`font-bold tracking-normal ${sectionH2}`}>
             Verdict <span className="text-[var(--color-primary)]">& Rating</span>
           </h2>
+          <div className="mt-3 flex justify-center md:justify-start">
+            <MStripe />
+          </div>
         </div>
 
         {/* Desktop */}

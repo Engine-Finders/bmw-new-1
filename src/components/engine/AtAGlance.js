@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useTheme } from "@/components/shared/themeProvider";
+import MStripe from "@/components/reusableComponents/MStripe";
 import { sectionDescription, sectionH2 } from "@/components/models/sectionTypography";
 
 const iconPaths = {
@@ -119,15 +120,13 @@ function CircleIcon({ metric, isDark, brand = false, compact = false }) {
 function SectionHeading({ engineName, isDark }) {
   return (
     <div className="mx-auto max-w-[860px] text-center">
-      <div className="flex items-center justify-center gap-4 text-[var(--color-primary)]">
-        <span className="h-px w-10 bg-[var(--color-primary)] md:w-7" />
-        <p className="text-[14px] font-medium uppercase tracking-[0.08em] md:text-[13px]">At A Glance</p>
-        <span className="h-px w-10 bg-[var(--color-primary)] md:w-7" />
-      </div>
-      <h2 className={`mt-3 font-bold tracking-normal ${sectionH2} ${isDark ? "text-white" : "text-[var(--color-text)]"}`}>
+      <h2 className={`font-bold tracking-normal ${sectionH2} ${isDark ? "text-white" : "text-[var(--color-text)]"}`}>
         BMW <span className="text-[var(--color-primary)]">{engineName.replace(/^BMW\s+/, "")}</span> Engine Overview
       </h2>
-      <p className={`mx-auto mt-3 max-w-[680px] ${sectionDescription} ${isDark ? "text-white/80" : "text-[var(--color-text-muted)]"}`}>
+      <div className="mt-3 flex justify-center">
+        <MStripe />
+      </div>
+      <p className={`mx-auto mt-4 max-w-[680px] ${sectionDescription} ${isDark ? "text-white/80" : "text-[var(--color-text-muted)]"}`}>
         All the essential specifications, performance data, and compatibility information at a glance.
       </p>
     </div>

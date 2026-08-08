@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useTheme } from "@/components/shared/themeProvider";
+import MStripe from "@/components/reusableComponents/MStripe";
 import { sectionButton, sectionDescription, sectionH1 } from "@/components/models/sectionTypography";
 
 const statIconPaths = [
@@ -179,16 +180,19 @@ export default function EngineHero({ data }) {
         <div className="absolute bottom-[26%] right-[11%] hidden h-[170px] w-[340px] rounded-[50%] border border-[rgba(79,133,242,0.28)] md:block" />
       </div>
 
-      <div className="relative mx-auto flex w-full max-w-8xl flex-col px-4 pb-[6px] pt-1 md:px-8 md:pb-[12px] md:pt-0">
-        <div className="grid items-end md:gap-4 md:grid-cols-[minmax(0,1.02fr)_minmax(400px,0.98fr)] md:gap-1">
-          <div className="order-1 min-w-0 max-w-[760px] pt-0 md:order-none md:self-center md:pt-0">
+      <div className="relative mx-auto flex w-full max-w-8xl flex-col px-3 pb-[6px] pt-0 md:px-6 md:pb-[12px] md:pt-1">
+        <div className="grid items-start md:grid-cols-[minmax(0,1.02fr)_minmax(400px,0.98fr)] md:gap-2">
+          <div className="order-1 min-w-0 max-w-[760px] pt-1 md:order-none md:self-start md:pt-2">
             <MetaPill items={metaItems} isDark={isDark} />
 
-            <div className="mt-5 md:mt-4">
+            <div className="mt-3 md:mt-3">
               <HeroTitle title={data.h1} isDark={isDark} accentText={accentToken} />
             </div>
+            <div className="mt-3">
+              <MStripe />
+            </div>
 
-            <p className={`mt-3.5 max-w-full break-words pr-1 ${sectionDescription} ${isDark ? "text-white/88" : "text-[var(--color-text-muted)]"}`}>
+            <p className={`mt-3 max-w-full break-words px-0 ${sectionDescription} ${isDark ? "text-white/88" : "text-[var(--color-text-muted)]"}`}>
               {description.split("[BMW-VERIFIED]").map((part, index, array) => (
                 <span key={`${part}-${index}`}>
                   {part}
@@ -208,7 +212,7 @@ export default function EngineHero({ data }) {
             ) : null}
           </div>
 
-          <div className="relative order-2 flex min-h-[255px] items-end justify-center md:min-h-[560px] md:justify-end">
+          <div className="relative order-2 flex min-h-[240px] items-end justify-center md:min-h-[500px] md:justify-end">
             <div className="absolute inset-x-0 bottom-[8%] mx-auto h-[150px] w-[92%] rounded-[50%] border border-[rgba(79,133,242,0.3)] md:bottom-[3%] md:h-[220px] md:w-[86%]" />
             <div className="absolute inset-x-0 bottom-[11%] mx-auto h-[104px] w-[72%] rounded-[50%] border border-[rgba(79,133,242,0.2)] md:bottom-[7%] md:h-[152px] md:w-[64%]" />
             <Image
@@ -217,7 +221,7 @@ export default function EngineHero({ data }) {
               width={522}
               height={608}
               priority
-              className="relative z-10 mx-auto -translate-x-3 h-auto w-[64%] max-w-[270px] object-contain drop-shadow-[0_28px_48px_rgba(0,0,0,0.5)] md:translate-x-0 md:ml-auto md:w-full md:max-w-[522px]"
+              className="relative z-10 mx-auto h-auto w-[64%] max-w-[270px] object-contain drop-shadow-[0_28px_48px_rgba(0,0,0,0.5)] md:ml-auto md:w-full md:max-w-[522px]"
             />
           </div>
         </div>
