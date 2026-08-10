@@ -1,10 +1,15 @@
 {
+  "h2": "<span class=\"block\">BMW Engine History</span><span class=\"block heading-accent\">Six Decades of Engineering</span>",
   "subHeadline": "From the carburetted M10 to the modular B58, mapped against the models that carried it. The complete BMW engine timeline.",
   "headerImage": {
     "src": "https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=1400&q=80",
     "alt": "BMW engine bay"
   },
-  "columns": ["ERA", "KEY ENGINES", "ICONIC MODELS"],
+  "columns": [
+    "ERA",
+    "KEY ENGINES",
+    "ICONIC MODELS"
+  ],
   "eras": [
     {
       "era": "1960s-1970s",

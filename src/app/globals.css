@@ -47,5 +47,19 @@ a {
 
 a {
   font-weight: 900;
+  text-decoration: none;
+}
+
+/* Keep underlines only in Find Your Vehicle (homeSec2) */
+.find-your-vehicle a {
   text-decoration: underline;
+}
+
+/* Accent spans inside headings loaded from JSON */
+.heading-accent {
+  color: var(--color-primary);
+}
+
+.heading-accent-red {
+  color: var(--color-accent-red);
 }

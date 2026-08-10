@@ -346,10 +346,7 @@ export default function HomeSec6({ data }) {
 
       <div className="relative mx-auto w-full max-w-8xl">
         <div className="max-w-[710px] pt-2 md:pt-7">
-          <h2 className={`text-[2.4rem] font-bold leading-[1.02] tracking-normal md:text-[3.6rem] ${isDark ? "text-white" : "text-[#071827]"}`}>
-            The BMW Ownership
-            <span className="block text-[var(--color-primary)]">Economics Centre</span>
-          </h2>
+          <h2 className={`text-[2.4rem] font-bold leading-[1.02] tracking-normal md:text-[3.6rem] ${isDark ? "text-white" : "text-[#071827]"}`} dangerouslySetInnerHTML={{ __html: data.h2 }} />
           <div className="mt-4">
             <MStripe />
           </div>

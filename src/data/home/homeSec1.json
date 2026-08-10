@@ -1,4 +1,5 @@
 {
+  "h1": "<span class=\"block md:whitespace-nowrap\">The UK's Most</span><span class=\"block md:whitespace-nowrap\">Trusted BMW</span><span class=\"block heading-accent md:whitespace-nowrap\">Ownership Guide</span>",
   "subHeadline": "Reliability rankings, real failure data, honest repair-vs-replace economics -for every 1 Series, 3 Series, 5 Series, X3, X5 and M car ever sold in the UK.",
   "trustStrip": [
     {
@@ -20,7 +21,7 @@
   ],
   "cta": {
     "label": "START YOUR RESEARCH",
-    "href": "#"
+    "href": "/quote"
   },
   "image": {
     "src": "https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=1200&q=80",

@@ -68,10 +68,7 @@ export default function HomeSec14({ data }) {
 
         <div className="relative px-5 py-5 md:grid md:grid-cols-[minmax(0,1fr)_34%] md:gap-5 md:px-10 md:py-6">
           <div>
-            <h2 className={`text-[2rem] font-bold leading-tight tracking-normal md:text-[2.18rem] ${isDark ? "text-white" : "text-[#071827]"}`}>
-              Get the <span className="text-[var(--color-primary)]">Right</span> Answer. Not Just{" "}
-              <span className="text-[var(--color-accent-red)]">Any</span> Answer.
-            </h2>
+            <h2 className={`text-[2rem] font-bold leading-tight tracking-normal md:text-[2.18rem] ${isDark ? "text-white" : "text-[#071827]"}`} dangerouslySetInnerHTML={{ __html: data.h2 }} />
             <div className="mt-3">
               <MStripe />
             </div>

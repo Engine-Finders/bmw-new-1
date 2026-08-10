@@ -19,8 +19,8 @@ Build a multi-page site (3–4 pages). Start with the **home page**. Priority is
 - Content is **dynamic** from JSON (one file per section).
 - `src/app/page.js` imports JSON and **passes data as props** to section components.
 - Later JSON → DB/API; keep the same shape so components stay unchanged.
+- **H1 / H2 (home)**: live in each section JSON (`h1` / `h2`). Components render them from `data` (accent spans may use `.heading-accent`). Other pages may still hardcode until migrated.
 - **Do not miss any content** when converting provided copy/data into JSON.
-- **H1 / H2**: hardcode in the component (same pattern across pages). All other section content comes from JSON.
 
 ### Pages
 - Home entry: `src/app/page.js`
@@ -40,8 +40,8 @@ Build a multi-page site (3–4 pages). Start with the **home page**. Priority is
 
 ## Workflow
 1. User provides section content (and optional layout ref image).
-2. Create `src/data/home/homeSecN.json` with **all** content except H1/H2 (nothing omitted).
-3. Create matching `src/components/home/HomeSecN.js` - hardcode H1/H2; rest from `data` props.
+2. Create `src/data/home/homeSecN.json` with **all** content including H1/H2 (nothing omitted).
+3. Create matching `src/components/home/HomeSecN.js` - render H1/H2 from `data`; rest from `data` props.
 4. Wire in `src/app/page.js`: import JSON → pass props → render component.
 5. Repeat section by section.
 

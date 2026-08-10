@@ -59,10 +59,7 @@ function DesktopHeader({ data, isDark }) {
   return (
     <div className="hidden md:grid md:grid-cols-[minmax(0,1fr)_48%] md:items-start">
       <div className="relative z-10 max-w-[640px] pt-6">
-        <h2 className={`text-[3.35rem] font-bold leading-[1.05] tracking-normal ${isDark ? "text-white" : "text-[#071827]"}`}>
-          <span className="block">BMW Engine History</span>
-          <span className="block text-[var(--color-primary)]">Six Decades of Engineering</span>
-        </h2>
+        <h2 className={`text-[3.35rem] font-bold leading-[1.05] tracking-normal ${isDark ? "text-white" : "text-[#071827]"}`} dangerouslySetInnerHTML={{ __html: data.h2 }} />
         <div className="mt-4">
           <MStripe />
         </div>
@@ -76,10 +73,7 @@ function DesktopHeader({ data, isDark }) {
 function MobileHeader({ data, isDark }) {
   return (
     <div className="md:hidden">
-      <h2 className={`mt-3 text-[2rem] font-bold leading-[1.06] tracking-normal sm:text-[2.35rem] ${isDark ? "text-white" : "text-[#071827]"}`}>
-        <span className="block">BMW Engine History</span>
-        <span className="block text-[var(--color-primary)]">Six Decades of Engineering</span>
-      </h2>
+      <h2 className={`mt-3 text-[2rem] font-bold leading-[1.06] tracking-normal sm:text-[2.35rem] ${isDark ? "text-white" : "text-[#071827]"}`} dangerouslySetInnerHTML={{ __html: data.h2 }} />
       <div className="mt-4">
         <MStripe />
       </div>

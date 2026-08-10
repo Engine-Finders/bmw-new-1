@@ -1,4 +1,5 @@
 {
+  "h2": "Comparison Hub - <span class=\"block heading-accent\">Head-to-Head</span> Verdicts",
   "subHeadline": "The comparisons BMW buyers actually want - generation vs generation, engine vs engine, model vs model. Honest, data-backed, and built for real-world decision-making.",
   "heroImages": {
     "light": {
@@ -20,11 +21,20 @@
         "alt": "Three BMW 3 Series generations"
       },
       "options": [
-        { "label": "E90" },
-        { "label": "F30" },
-        { "label": "G20" }
+        {
+          "label": "E90"
+        },
+        {
+          "label": "F30"
+        },
+        {
+          "label": "G20"
+        }
       ],
-      "link": { "label": "Read the verdict", "href": "#" }
+      "link": {
+        "label": "Read the verdict",
+        "href": "#"
+      }
     },
     {
       "id": 2,
@@ -35,10 +45,21 @@
         "alt": "BMW diesel engines"
       },
       "options": [
-        { "label": "N47", "icon": "alert", "tone": "avoid" },
-        { "label": "B47", "icon": "check", "tone": "safe" }
+        {
+          "label": "N47",
+          "icon": "alert",
+          "tone": "avoid"
+        },
+        {
+          "label": "B47",
+          "icon": "check",
+          "tone": "safe"
+        }
       ],
-      "link": { "label": "Read the verdict", "href": "#" }
+      "link": {
+        "label": "Read the verdict",
+        "href": "#"
+      }
     },
     {
       "id": 3,
@@ -49,11 +70,26 @@
         "alt": "BMW petrol engine comparison"
       },
       "options": [
-        { "label": "B58", "icon": "check", "tone": "safe" },
-        { "label": "N55", "icon": "dot", "tone": "info" },
-        { "label": "N54", "icon": "x", "tone": "avoid" }
+        {
+          "label": "B58",
+          "icon": "check",
+          "tone": "safe"
+        },
+        {
+          "label": "N55",
+          "icon": "dot",
+          "tone": "info"
+        },
+        {
+          "label": "N54",
+          "icon": "x",
+          "tone": "avoid"
+        }
       ],
-      "link": { "label": "Read the verdict", "href": "#" }
+      "link": {
+        "label": "Read the verdict",
+        "href": "#"
+      }
     },
     {
       "id": 4,
@@ -64,10 +100,19 @@
         "alt": "BMW 3 Series and 5 Series"
       },
       "options": [
-        { "label": "3 Series", "icon": "car" },
-        { "label": "5 Series", "icon": "car" }
+        {
+          "label": "3 Series",
+          "icon": "car"
+        },
+        {
+          "label": "5 Series",
+          "icon": "car"
+        }
       ],
-      "link": { "label": "Read the verdict", "href": "#" }
+      "link": {
+        "label": "Read the verdict",
+        "href": "#"
+      }
     },
     {
       "id": 5,
@@ -78,10 +123,21 @@
         "alt": "BMW X3 and X5"
       },
       "options": [
-        { "label": "X3", "icon": "car", "note": "316 enquiries [BMW-VERIFIED]" },
-        { "label": "X5", "icon": "car", "note": "288 enquiries [BMW-VERIFIED]" }
+        {
+          "label": "X3",
+          "icon": "car",
+          "note": "316 enquiries [BMW-VERIFIED]"
+        },
+        {
+          "label": "X5",
+          "icon": "car",
+          "note": "288 enquiries [BMW-VERIFIED]"
+        }
       ],
-      "link": { "label": "Read the verdict", "href": "#" }
+      "link": {
+        "label": "Read the verdict",
+        "href": "#"
+      }
     },
     {
       "id": 6,
@@ -92,10 +148,20 @@
         "alt": "Diesel and petrol fuel pumps"
       },
       "options": [
-        { "label": "DIESEL", "icon": "drop" },
-        { "label": "PETROL", "icon": "drop", "tone": "safe" }
+        {
+          "label": "DIESEL",
+          "icon": "drop"
+        },
+        {
+          "label": "PETROL",
+          "icon": "drop",
+          "tone": "safe"
+        }
       ],
-      "link": { "label": "Read the verdict", "href": "#" }
+      "link": {
+        "label": "Read the verdict",
+        "href": "#"
+      }
     }
   ]
 }
