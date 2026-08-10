@@ -36,68 +36,105 @@ function CaretRight() {
   );
 }
 
-function modelChildLinks(model) {
-  return [
-    { label: `${model.label} Overview`, href: model.href },
-    { label: `All Variants (${model.variants})`, href: `${model.href}#variants` },
-    ...(model.generations > 0
-      ? [{ label: `All Generations (${model.generations})`, href: `${model.href}#generations` }]
-      : []),
-  ];
-}
-
 function flatModels(menu) {
   return menu.groups.flatMap((group) => group.items.map((item) => ({ ...item, group: group.title })));
 }
 
-function ModelsPanel({ menu, activeModelHref, setActiveModelHref, onNavigate }) {
-  const models = flatModels(menu);
-  const active = models.find((m) => m.href === activeModelHref) || models[0];
+function ModelFlyout({ item, openLeft, onNavigate }) {
+  const variants = item.variants || [];
+  const generations = item.generations || [];
+  const hasChildren = variants.length > 0 || generations.length > 0;
 
   return (
-    <div className="grid gap-4 md:grid-cols-[1fr_14rem]">
-      <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-        {menu.groups.map((group) => (
+    <div
+      className={`absolute top-0 z-[70] max-h-[min(70vh,32rem)] w-[min(92vw,28rem)] overflow-y-auto rounded border border-[var(--color-border)] bg-[var(--color-surface)] p-3 shadow-[0_12px_28px_var(--color-shadow)] ${
+        openLeft ? "right-full mr-1" : "left-full ml-1"
+      }`}
+    >
+      <Link href={item.href} className={`${mutedLinkClass} mb-2`} onClick={onNavigate}>
+        {item.label} Overview
+      </Link>
+
+      {!hasChildren ? (
+        <p className="text-xs text-[var(--color-text-soft)]">No variant or generation pages listed yet.</p>
+      ) : (
+        <div className={`grid gap-3 ${variants.length && generations.length ? "grid-cols-2" : "grid-cols-1"}`}>
+          {variants.length ? (
+            <div>
+              <p className="mb-1.5 text-[0.68rem] font-bold uppercase tracking-wide text-[var(--color-text-soft)]">
+                Variants ({variants.length})
+              </p>
+              <ul className="grid gap-0.5">
+                {variants.map((link) => (
+                  <li key={link.href}>
+                    <Link href={link.href} className={`${linkClass} py-1 text-[0.82rem]`} onClick={onNavigate}>
+                      {link.label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ) : null}
+
+          {generations.length ? (
+            <div>
+              <p className="mb-1.5 text-[0.68rem] font-bold uppercase tracking-wide text-[var(--color-text-soft)]">
+                Generations ({generations.length})
+              </p>
+              <ul className="grid gap-0.5">
+                {generations.map((link) => (
+                  <li key={link.href}>
+                    <Link href={link.href} className={`${linkClass} py-1 text-[0.82rem]`} onClick={onNavigate}>
+                      {link.label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ) : null}
+        </div>
+      )}
+    </div>
+  );
+}
+
+function ModelsPanel({ menu, activeModelHref, setActiveModelHref, onNavigate }) {
+  return (
+    <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+      {menu.groups.map((group, groupIndex) => {
+        const openLeft = groupIndex >= 2;
+        return (
           <div key={group.title}>
             <p className="mb-2 text-[0.7rem] font-bold uppercase tracking-wide text-[var(--color-text-soft)]">{group.title}</p>
             <ul className="grid gap-1">
               {group.items.map((item) => {
-                const isActive = active?.href === item.href;
+                const isActive = activeModelHref === item.href;
                 return (
-                  <li key={item.href}>
+                  <li
+                    key={item.href}
+                    className="relative"
+                    onMouseEnter={() => setActiveModelHref(item.href)}
+                    onFocusCapture={() => setActiveModelHref(item.href)}
+                  >
                     <button
                       type="button"
                       className={`flex w-full items-center justify-between gap-2 rounded px-2 py-1.5 text-left text-sm font-semibold no-underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--color-primary)] ${
                         isActive ? "bg-[var(--color-primary-soft)] text-[var(--color-primary)]" : "text-[var(--color-text)] hover:bg-[var(--color-page-soft)]"
                       }`}
-                      onMouseEnter={() => setActiveModelHref(item.href)}
-                      onFocus={() => setActiveModelHref(item.href)}
                       aria-expanded={isActive}
                     >
                       <span>{item.label}</span>
                       <CaretRight />
                     </button>
+
+                    {isActive ? <ModelFlyout item={item} openLeft={openLeft} onNavigate={onNavigate} /> : null}
                   </li>
                 );
               })}
             </ul>
           </div>
-        ))}
-      </div>
-      {active ? (
-        <div className="rounded border border-[var(--color-border)] bg-[var(--color-page-soft)] p-3">
-          <p className="mb-2 text-[0.7rem] font-bold uppercase tracking-wide text-[var(--color-text-soft)]">{active.label}</p>
-          <ul className="grid gap-1">
-            {modelChildLinks(active).map((link) => (
-              <li key={link.href}>
-                <Link href={link.href} className={linkClass} onClick={onNavigate}>
-                  {link.label}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </div>
-      ) : null}
+        );
+      })}
     </div>
   );
 }
@@ -204,7 +241,9 @@ export function DesktopNavMenus() {
           id={panelId}
           role="region"
           aria-label={openMenu.label}
-          className="absolute left-1/2 top-full z-50 mt-3 max-h-[70vh] w-[min(96vw,72rem)] -translate-x-1/2 overflow-y-auto border border-[var(--color-border)] bg-[var(--color-surface)] p-4 shadow-[0_16px_40px_var(--color-shadow)]"
+          className={`absolute left-1/2 top-full z-50 mt-3 w-[min(96vw,72rem)] -translate-x-1/2 border border-[var(--color-border)] bg-[var(--color-surface)] p-4 shadow-[0_16px_40px_var(--color-shadow)] ${
+            openMenu.kind === "models" ? "overflow-visible" : "max-h-[70vh] overflow-y-auto"
+          }`}
         >
           {openMenu.kind === "models" ? (
             <ModelsPanel
@@ -222,7 +261,7 @@ export function DesktopNavMenus() {
   );
 }
 
-function MobileRowButton({ label, onClick, expanded, chevron = "plus" }) {
+function MobileRowButton({ label, onClick, expanded }) {
   return (
     <button
       type="button"
@@ -231,7 +270,7 @@ function MobileRowButton({ label, onClick, expanded, chevron = "plus" }) {
       className="flex w-full items-center justify-between gap-3 py-2.5 text-left text-sm font-semibold text-[var(--color-text)]"
     >
       <span>{label}</span>
-      {chevron === "plus" ? <span className="text-lg leading-none">{expanded ? "−" : "+"}</span> : <CaretRight />}
+      <Chevron open={false} />
     </button>
   );
 }
@@ -263,7 +302,7 @@ export function MobileNavMenus({ onNavigate }) {
                 {menu.label}
               </Link>
             ) : (
-              <MobileRowButton label={menu.label} onClick={() => push({ type: "menu", menuId: menu.id })} chevron="plus" />
+              <MobileRowButton label={menu.label} onClick={() => push({ type: "menu", menuId: menu.id })} />
             )}
           </li>
         ))}
@@ -284,7 +323,7 @@ export function MobileNavMenus({ onNavigate }) {
         <ul className="grid gap-1">
           {models.map((model) => (
             <li key={model.href} className="border-b border-[var(--color-border)]">
-              <MobileRowButton label={model.label} onClick={() => push({ type: "model", menuId: menu.id, modelHref: model.href })} chevron="plus" />
+              <MobileRowButton label={model.label} onClick={() => push({ type: "model", menuId: menu.id, modelHref: model.href })} />
             </li>
           ))}
         </ul>
@@ -295,20 +334,52 @@ export function MobileNavMenus({ onNavigate }) {
   if (current.type === "model") {
     const model = flatModels(menu).find((item) => item.href === current.modelHref);
     if (!model) return null;
+    const variants = model.variants || [];
+    const generations = model.generations || [];
     return (
       <div>
         <button type="button" onClick={pop} className="mb-2 text-sm font-bold text-[var(--color-primary)]">
           ← {model.label}
         </button>
         <ul className="grid gap-1">
-          {modelChildLinks(model).map((link) => (
-            <li key={link.href} className="border-b border-[var(--color-border)]">
-              <Link href={link.href} className={`${linkClass} py-2.5`} onClick={() => goLink(link.href)}>
-                {link.label}
-              </Link>
-            </li>
-          ))}
+          <li className="border-b border-[var(--color-border)]">
+            <Link href={model.href} className={`${linkClass} py-2.5`} onClick={() => goLink(model.href)}>
+              {model.label} Overview
+            </Link>
+          </li>
         </ul>
+        {variants.length ? (
+          <div className="mt-3">
+            <p className="mb-1 text-[0.7rem] font-bold uppercase tracking-wide text-[var(--color-text-soft)]">
+              Variants ({variants.length})
+            </p>
+            <ul className="grid gap-1">
+              {variants.map((link) => (
+                <li key={link.href} className="border-b border-[var(--color-border)]">
+                  <Link href={link.href} className={`${linkClass} py-2`} onClick={() => goLink(link.href)}>
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ) : null}
+        {generations.length ? (
+          <div className="mt-3">
+            <p className="mb-1 text-[0.7rem] font-bold uppercase tracking-wide text-[var(--color-text-soft)]">
+              Generations ({generations.length})
+            </p>
+            <ul className="grid gap-1">
+              {generations.map((link) => (
+                <li key={link.href} className="border-b border-[var(--color-border)]">
+                  <Link href={link.href} className={`${linkClass} py-2`} onClick={() => goLink(link.href)}>
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ) : null}
       </div>
     );
   }

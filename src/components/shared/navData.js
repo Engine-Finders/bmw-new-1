@@ -1,58 +1,15 @@
 /** Full navbar inventory from bmwengines.uk URL master list. */
+import modelNavData from "@/components/shared/modelNavData.json";
 
 export const navMenus = [
   {
     id: "models",
     label: "MODELS",
     kind: "models",
-    groups: [
-      {
-        title: "Saloons & Tourers",
-        items: [
-          { label: "1 Series", href: "/1-series", variants: 17, generations: 8 },
-          { label: "2 Series", href: "/2-series", variants: 12, generations: 9 },
-          { label: "3 Series", href: "/3-series", variants: 29, generations: 13 },
-          { label: "4 Series", href: "/4-series", variants: 13, generations: 6 },
-          { label: "5 Series", href: "/5-series", variants: 24, generations: 13 },
-          { label: "6 Series", href: "/6-series", variants: 9, generations: 7 },
-          { label: "7 Series", href: "/7-series", variants: 15, generations: 4 },
-          { label: "8 Series", href: "/8-series", variants: 6, generations: 4 },
-        ],
-      },
-      {
-        title: "SUV (X)",
-        items: [
-          { label: "X1", href: "/x1", variants: 11, generations: 3 },
-          { label: "X2", href: "/x2", variants: 6, generations: 2 },
-          { label: "X3", href: "/x3", variants: 14, generations: 4 },
-          { label: "X4", href: "/x4", variants: 6, generations: 2 },
-          { label: "X5", href: "/x5", variants: 17, generations: 4 },
-          { label: "X6", href: "/x6", variants: 7, generations: 3 },
-          { label: "X7", href: "/x7", variants: 5, generations: 1 },
-        ],
-      },
-      {
-        title: "M Performance",
-        items: [
-          { label: "M1", href: "/m1", variants: 1, generations: 1 },
-          { label: "M2", href: "/m2", variants: 0, generations: 2 },
-          { label: "M3", href: "/m3", variants: 2, generations: 4 },
-          { label: "M4", href: "/m4", variants: 2, generations: 0 },
-          { label: "M5", href: "/m5", variants: 2, generations: 5 },
-          { label: "M6", href: "/m6", variants: 2, generations: 1 },
-          { label: "M8", href: "/m8", variants: 1, generations: 0 },
-        ],
-      },
-      {
-        title: "Other",
-        items: [
-          { label: "Z Series", href: "/z-series", variants: 23, generations: 8 },
-          { label: "2002", href: "/2002", variants: 1, generations: 0 },
-          { label: "i Series", href: "/i-series-electric-motors", variants: 0, generations: 0 },
-          { label: "XM", href: "/xm", variants: 0, generations: 0 },
-        ],
-      },
-    ],
+    groups: modelNavData.groups.map((group) => ({
+      title: group.title,
+      items: group.items.map(({ variantCount, generationCount, ...item }) => item),
+    })),
   },
   {
     id: "engines",
