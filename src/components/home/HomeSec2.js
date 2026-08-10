@@ -348,6 +348,7 @@ export default function HomeSec2({ data }) {
   const isDark = theme === "dark";
   const [query, setQuery] = useState("");
   const [activeFilter, setActiveFilter] = useState(data.filters?.[0]?.value || "all");
+  const [showAllMobile, setShowAllMobile] = useState(false);
   const mobileFilters = splitMobileFilters(data.filters);
   const sectionBg = theme === "dark" ? "/Section-2-bg-dark.webp" : "/Section-2-Bg-light.webp";
 
@@ -375,8 +376,20 @@ export default function HomeSec2({ data }) {
   const mid = Math.ceil(filteredModels.length / 2) || 0;
   const left = filteredModels.slice(0, mid);
   const right = filteredModels.slice(mid);
-  const mobileRows = filteredModels;
+  const mobileLimit = 10;
+  const mobileRows = showAllMobile ? filteredModels : filteredModels.slice(0, mobileLimit);
+  const canExpandMobile = filteredModels.length > mobileLimit && !showAllMobile;
   const searchPlaceholder = data.searchPlaceholder || "Search model (e.g. 3 Series, X5, M3...)";
+
+  function updateQuery(value) {
+    setQuery(value);
+    setShowAllMobile(false);
+  }
+
+  function updateFilter(value) {
+    setActiveFilter(value);
+    setShowAllMobile(false);
+  }
 
   return (
     <section className="find-your-vehicle relative overflow-hidden bg-[var(--color-page)] px-3 py-3 md:px-3 md:py-5">
@@ -427,7 +440,7 @@ export default function HomeSec2({ data }) {
               <input
                 type="search"
                 value={query}
-                onChange={(event) => setQuery(event.target.value)}
+                onChange={(event) => updateQuery(event.target.value)}
                 placeholder={searchPlaceholder}
                 className={`w-full bg-transparent text-[0.86rem] outline-none ${
                   isDark ? "text-white placeholder:text-white/45" : "text-[var(--color-text)] placeholder:text-[var(--color-text-soft)]"
@@ -443,7 +456,7 @@ export default function HomeSec2({ data }) {
                 <button
                   key={filter.value}
                   type="button"
-                  onClick={() => setActiveFilter(filter.value)}
+                  onClick={() => updateFilter(filter.value)}
                   className={`rounded-full border px-4 py-2 text-[0.8rem] font-medium ${
                     isActive
                       ? "border-[var(--color-primary)] bg-[var(--color-primary)] text-white"
@@ -475,17 +488,20 @@ export default function HomeSec2({ data }) {
               </p>
             )}
 
-            <Link
-              href={data.viewAll.href}
-              className="flex items-center justify-center gap-3 px-5 py-3.5 text-[0.9rem] font-medium text-[var(--color-primary)]"
-            >
-              <span>
-                {data.viewAll.label} ({filteredModels.length})
-              </span>
-              <svg aria-hidden="true" viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2">
-                <path d="m6 9 6 6 6-6" />
-              </svg>
-            </Link>
+            {canExpandMobile ? (
+              <button
+                type="button"
+                onClick={() => setShowAllMobile(true)}
+                className="flex w-full items-center justify-center gap-3 px-5 py-3.5 text-[0.9rem] font-medium text-[var(--color-primary)]"
+              >
+                <span>
+                  {data.viewAll.label} ({filteredModels.length})
+                </span>
+                <svg aria-hidden="true" viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2">
+                  <path d="m6 9 6 6 6-6" />
+                </svg>
+              </button>
+            ) : null}
           </div>
 
           <div

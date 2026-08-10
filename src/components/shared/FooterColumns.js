@@ -13,6 +13,7 @@ export const footerColumns = [
       { label: "Failure Trends 2026", href: "/data/bmw-failure-trends-2026" },
       { label: "Engine Cost Index 2026", href: "/data/bmw-cost-index-2026" },
       { label: "Most Reliable by Year", href: "/data/most-reliable-bmw-engines-by-year" },
+      { label: "Methodology", href: "/data/methodology" },
       { label: "Ownership Economics", href: "/economics" },
       { label: "Repair, Replace or Scrap", href: "/economics/repair-replace-scrap-framework" },
     ],
@@ -28,6 +29,7 @@ export const footerColumns = [
       { label: "Oil Finder", href: "/tools/oil-finder" },
       { label: "Engine Compatibility Checker", href: "/tools/engine-compatibility-checker" },
       { label: "Diagnostic Wizard", href: "/tools/diagnostic-wizard" },
+      { label: "Engine Value Checker", href: "/tools/engine-value-checker" },
     ],
   },
   {
@@ -40,6 +42,7 @@ export const footerColumns = [
       { label: "Case Studies", href: "/case-studies" },
       { label: "Guides & Blog", href: "/blog" },
       { label: "Recalls", href: "/recalls" },
+      { label: "Contact", href: "/contact" },
     ],
   },
   {
@@ -52,6 +55,7 @@ export const footerColumns = [
       { label: "Editorial Standards", href: "/about/editorial-standards" },
       { label: "Specialist Vetting", href: "/about/specialist-vetting" },
       { label: "Warranty Standards", href: "/about/warranty-standards" },
+      { label: "Verified Outcomes", href: "/about/verified-outcomes" },
       { label: "Corrections Log", href: "/about/corrections" },
     ],
   },

@@ -2,193 +2,16 @@
 
 import { useEffect, useId, useRef, useState } from "react";
 import Link from "next/link";
+import { navMenus } from "@/components/shared/navData";
 
-/** Sample nav data — fill remaining items later. Paths match the PDF spec. */
-export const navMenus = [
-  {
-    id: "models",
-    label: "MODELS",
-    kind: "models",
-    groups: [
-      {
-        title: "Saloons & Tourers",
-        items: [
-          { label: "1 Series", href: "/1-series", variants: 17, generations: 8 },
-          { label: "3 Series", href: "/3-series", variants: 29, generations: 13 },
-          { label: "5 Series", href: "/5-series", variants: 24, generations: 13 },
-        ],
-      },
-      {
-        title: "SUV (X)",
-        items: [
-          { label: "X3", href: "/x3", variants: 14, generations: 4 },
-          { label: "X5", href: "/x5", variants: 17, generations: 4 },
-        ],
-      },
-      {
-        title: "M Performance",
-        items: [
-          { label: "M3", href: "/m3", variants: 2, generations: 4 },
-          { label: "M5", href: "/m5", variants: 2, generations: 5 },
-        ],
-      },
-      {
-        title: "Other",
-        items: [
-          { label: "Z Series", href: "/z-series", variants: 23, generations: 0 },
-          { label: "i Series", href: "/i-series", variants: 0, generations: 0 },
-        ],
-      },
-    ],
-  },
-  {
-    id: "engines",
-    label: "ENGINES",
-    kind: "columns",
-    groups: [
-      {
-        title: "Modern (B-series)",
-        links: [
-          { label: "B37/B47", href: "/engine/b47" },
-          { label: "B38/B48", href: "/engine/b48" },
-          { label: "B57/B58", href: "/engine/b58" },
-        ],
-      },
-      {
-        title: "N-series",
-        links: [
-          { label: "N13/N20", href: "/engine/n20" },
-          { label: "N47", href: "/engine/n47" },
-          { label: "N54, N55", href: "/engine/n54" },
-        ],
-      },
-      {
-        title: "M-series (classic)",
-        links: [
-          { label: "M50/M52/M54", href: "/engine/m54" },
-          { label: "M57", href: "/engine/m57" },
-        ],
-      },
-      {
-        title: "S-series (M Division)",
-        links: [
-          { label: "S50/S52/S54", href: "/engine/s54" },
-          { label: "S55", href: "/engine/s55" },
-        ],
-      },
-    ],
-    footerLink: { label: "View All Engines →", href: "/engine" },
-  },
-  {
-    id: "problems",
-    label: "PROBLEMS & SYMPTOMS",
-    kind: "columns",
-    groups: [
-      {
-        title: "Common Failures",
-        links: [
-          { label: "Timing Chain (N47)", href: "/failures/timing-chain-n47" },
-          { label: "HPFP Failure (N54)", href: "/failures/hpfp-n54" },
-          { label: "Oil Consumption (N63)", href: "/failures/oil-consumption-n63" },
-        ],
-        viewAll: { label: "View All (26) →", href: "/failures" },
-      },
-      {
-        title: "Symptoms",
-        links: [
-          { label: "Black Smoke", href: "/symptoms/black-smoke" },
-          { label: "Blue Smoke", href: "/symptoms/blue-smoke" },
-          { label: "Cold Start Rattle", href: "/symptoms/cold-start-rattle" },
-        ],
-        viewAll: { label: "View All (63) →", href: "/symptoms" },
-      },
-      {
-        title: "Warning Lights",
-        links: [
-          { label: "Engine Management Light", href: "/warning-lights/engine-management" },
-          { label: "Oil Pressure Warning", href: "/warning-lights/oil-pressure" },
-        ],
-        viewAll: { label: "View All (10) →", href: "/warning-lights" },
-      },
-      {
-        title: "Fault Codes",
-        links: [
-          { label: "P0300 series", href: "/fault-codes/p0300" },
-          { label: "P0016–P0018", href: "/fault-codes/p0016" },
-        ],
-        viewAll: { label: "View All (30) →", href: "/fault-codes" },
-      },
-    ],
-  },
-  {
-    id: "guides",
-    label: "GUIDES",
-    kind: "columns",
-    groups: [
-      {
-        title: "Buying & Ranking",
-        links: [
-          { label: "Best BMW Engines Ranked", href: "/blog/best-bmw-engines-ranked" },
-          { label: "Generation Comparisons", href: "/blog/generation-comparisons" },
-        ],
-      },
-      {
-        title: "Ownership",
-        links: [
-          { label: "How Long Do BMW Engines Last", href: "/blog/how-long-do-bmw-engines-last" },
-          { label: "High Mileage Maintenance", href: "/blog/high-mileage-maintenance" },
-        ],
-      },
-      {
-        title: "Problems Explained",
-        links: [
-          { label: "Timing Chain Failure Timelines", href: "/blog/timing-chain-failure-timelines" },
-          { label: "Myth-Busting", href: "/blog/myth-busting" },
-        ],
-      },
-    ],
-    footerLink: { label: "View All Guides →", href: "/blog" },
-  },
-  {
-    id: "resources",
-    label: "RESOURCES",
-    kind: "columns",
-    groups: [
-      {
-        title: "Compare & Research",
-        links: [
-          { label: "Compare Models & Engines", href: "/compare" },
-          { label: "Fitment Guide", href: "/fitment" },
-          { label: "Technical Library", href: "/technical" },
-        ],
-      },
-      {
-        title: "Tools",
-        links: [
-          { label: "Repair vs Replace Calculator", href: "/tools/repair-vs-replace-calculator" },
-          { label: "Ownership Cost Calculator", href: "/tools/ownership-cost-calculator" },
-          { label: "VIN Decoder", href: "/tools/vin-decoder" },
-        ],
-      },
-      {
-        title: "Data & Reports",
-        links: [
-          { label: "Research Centre", href: "/data" },
-          { label: "Reliability Index 2026", href: "/data/engine-failure-index-2026" },
-          { label: "Failure Trends 2026", href: "/data/bmw-failure-trends-2026" },
-          { label: "Cost Index 2026", href: "/data/bmw-cost-index-2026" },
-          { label: "Most Reliable by Year", href: "/data/most-reliable-bmw-engines-by-year" },
-        ],
-      },
-    ],
-    footerLink: { label: "All Tools →", href: "/tools" },
-  },
-];
+export { navMenus };
 
 const linkClass =
   "block text-sm font-semibold text-[var(--color-text)] no-underline hover:text-[var(--color-primary)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--color-primary)]";
 const mutedLinkClass =
   "block text-sm font-bold text-[var(--color-primary)] no-underline hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--color-primary)]";
+const topLinkClass =
+  "inline-flex items-center text-sm font-semibold text-[var(--color-text)] no-underline hover:text-[var(--color-primary)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--color-primary)]";
 
 function Chevron({ open }) {
   return (
@@ -316,10 +139,11 @@ function ColumnsPanel({ menu, onNavigate }) {
 
 export function DesktopNavMenus() {
   const [openId, setOpenId] = useState(null);
-  const [activeModelHref, setActiveModelHref] = useState(navMenus[0].groups[0].items[0].href);
+  const firstModelHref = navMenus.find((menu) => menu.kind === "models")?.groups?.[0]?.items?.[0]?.href || "/1-series";
+  const [activeModelHref, setActiveModelHref] = useState(firstModelHref);
   const rootRef = useRef(null);
   const baseId = useId();
-  const openMenu = navMenus.find((menu) => menu.id === openId) || null;
+  const openMenu = navMenus.find((menu) => menu.id === openId && menu.kind !== "link") || null;
   const panelId = openMenu ? `${baseId}-${openMenu.id}-panel` : undefined;
 
   useEffect(() => {
@@ -339,8 +163,18 @@ export function DesktopNavMenus() {
 
   return (
     <div ref={rootRef} className="relative hidden flex-1 lg:block">
-      <ul className="flex items-center justify-center gap-5 xl:gap-7">
+      <ul className="flex items-center justify-center gap-4 xl:gap-6">
         {navMenus.map((menu) => {
+          if (menu.kind === "link") {
+            return (
+              <li key={menu.id}>
+                <Link href={menu.href} className={topLinkClass}>
+                  {menu.label}
+                </Link>
+              </li>
+            );
+          }
+
           const isOpen = openId === menu.id;
           return (
             <li key={menu.id}>
@@ -370,7 +204,7 @@ export function DesktopNavMenus() {
           id={panelId}
           role="region"
           aria-label={openMenu.label}
-          className="absolute left-1/2 top-full z-50 mt-3 w-[min(96vw,72rem)] -translate-x-1/2 border border-[var(--color-border)] bg-[var(--color-surface)] p-4 shadow-[0_16px_40px_var(--color-shadow)]"
+          className="absolute left-1/2 top-full z-50 mt-3 max-h-[70vh] w-[min(96vw,72rem)] -translate-x-1/2 overflow-y-auto border border-[var(--color-border)] bg-[var(--color-surface)] p-4 shadow-[0_16px_40px_var(--color-shadow)]"
         >
           {openMenu.kind === "models" ? (
             <ModelsPanel
@@ -424,7 +258,13 @@ export function MobileNavMenus({ onNavigate }) {
       <ul className="grid gap-1">
         {navMenus.map((menu) => (
           <li key={menu.id} className="border-b border-[var(--color-border)]">
-            <MobileRowButton label={menu.label} onClick={() => push({ type: "menu", menuId: menu.id })} chevron="plus" />
+            {menu.kind === "link" ? (
+              <Link href={menu.href} className={`${linkClass} py-2.5`} onClick={() => goLink(menu.href)}>
+                {menu.label}
+              </Link>
+            ) : (
+              <MobileRowButton label={menu.label} onClick={() => push({ type: "menu", menuId: menu.id })} chevron="plus" />
+            )}
           </li>
         ))}
       </ul>
