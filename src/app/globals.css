@@ -19,6 +19,9 @@
   --color-primary-soft: #dceaff;
   --color-accent: #1581ff;
   --color-accent-red: #ed1c24;
+  --color-accent-red-soft: #fff0f0;
+  --color-accent-green: #13884a;
+  --color-accent-green-soft: #eefaf3;
   --color-shadow: rgba(10, 26, 43, 0.16);
   --color-hero-overlay: rgba(255, 255, 255, 0.72);
   --color-hero-fade: rgba(255, 255, 255, 0.96);
@@ -57,4 +60,21 @@ a {
     font-weight: 900;
     text-decoration: underline;
   }
+a {
+  font-weight: 900;
+  text-decoration: none;
+}
+
+/* Keep underlines only in Find Your Vehicle (homeSec2) */
+.find-your-vehicle a {
+  text-decoration: underline;
+}
+
+/* Accent spans inside headings loaded from JSON */
+.heading-accent {
+  color: var(--color-primary);
+}
+
+.heading-accent-red {
+  color: var(--color-accent-red);
 }

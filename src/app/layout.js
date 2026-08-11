@@ -1,6 +1,7 @@
 import "./globals.css";
 import Navbar from "@/components/shared/Navbar";
 import Footer from "@/components/shared/Footer";
+import FreeQuoteSticky from "@/components/shared/FreeQuoteForm";
 import { ThemeProvider } from "@/components/shared/themeProvider";
 
 export const metadata = {
@@ -19,6 +20,7 @@ export default function RootLayout({ children }) {
             <div className="flex-1">{children}</div>
             <Footer />
           </div>
+          <FreeQuoteSticky />
         </ThemeProvider>
       </body>
     </html>

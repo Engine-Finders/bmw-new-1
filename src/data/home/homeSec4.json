@@ -1,4 +1,5 @@
 {
+  "h2": "<span class=\"heading-accent\">BMW</span> Ownership Rankings",
   "subHeadline": "The verdicts people actually want before they read a single spec sheet - the calls we'd make for a friend, backed by real UK enquiry and failure data.",
   "heroImages": {
     "light": {
@@ -32,14 +33,23 @@
       "text": "Engine Finders"
     }
   ],
-  "columns": ["RANKING", "WINNER", "WHY", "VERDICT"],
+  "columns": [
+    "RANKING",
+    "WINNER",
+    "WHY",
+    "VERDICT"
+  ],
   "rankings": [
     {
       "ranking": "Most Reliable Engine",
       "icon": "engine",
       "winner": "B58B30",
       "why": "Modern straight-six with well-understood, repairable failure points - coolant leaks aside, largely trouble-free. Just 540 enquiries in 2025, mostly due-diligence, not failure [BMW-VERIFIED].",
-      "verdict": { "icon": "trophy", "text": "Best", "type": "best" },
+      "verdict": {
+        "icon": "trophy",
+        "text": "Best",
+        "type": "best"
+      },
       "href": "#"
     },
     {
@@ -47,7 +57,11 @@
       "icon": "car",
       "winner": "3 Series G20",
       "why": "B47/B48/B58 engines in the lightest chassis - 190 enquiries in 2025, predominantly pre-purchase research [BMW-VERIFIED].",
-      "verdict": { "icon": "trophy", "text": "Best", "type": "best" },
+      "verdict": {
+        "icon": "trophy",
+        "text": "Best",
+        "type": "best"
+      },
       "href": "#"
     },
     {
@@ -56,7 +70,11 @@
       "winner": "F30 LCI (2016+)",
       "winnerNote": "with B47D20A",
       "why": "Post-chain-revision, modern electronics, depreciated early-mid values - the sweet spot for daily ownership. £2,800-£4,500 recon cost against £7,000-£20,000 vehicle value [BMW-QUOTE].",
-      "verdict": { "icon": "check", "text": "Safe", "type": "safe" },
+      "verdict": {
+        "icon": "check",
+        "text": "Safe",
+        "type": "safe"
+      },
       "href": "#"
     },
     {
@@ -65,7 +83,11 @@
       "winner": "N63B44",
       "winnerNote": "Valve Stem Seals",
       "why": "Hot-vee architecture causes seal failure at 60k-100k miles - known as the \"N63 nightmare.\" £3,000-£6,000 repair or £6,000-£10,000 replacement [BMW-QUOTE].",
-      "verdict": { "icon": "x", "text": "Avoid", "type": "avoid" },
+      "verdict": {
+        "icon": "x",
+        "text": "Avoid",
+        "type": "avoid"
+      },
       "href": "#"
     },
     {
@@ -74,7 +96,11 @@
       "winner": "5 Series G30",
       "winnerNote": "(2017-2023)",
       "why": "Typical values of £14,000-£30,000 against £2,800-£8,000 recon cost - comfortably safe across all engine variants [BMW-QUOTE].",
-      "verdict": { "icon": "check", "text": "Safe", "type": "safe" },
+      "verdict": {
+        "icon": "check",
+        "text": "Safe",
+        "type": "safe"
+      },
       "href": "#"
     },
     {
@@ -83,7 +109,11 @@
       "winner": "E90 N47D20C",
       "winnerNote": "(pre-2013, no chain history)",
       "why": "Ageing host values (£2,500-£7,500) against £3,200-£5,500 recon cost - the 70% BMW threshold risk [BMW-QUOTE].",
-      "verdict": { "icon": "alert", "text": "Watch", "type": "watch" },
+      "verdict": {
+        "icon": "alert",
+        "text": "Watch",
+        "type": "watch"
+      },
       "href": "#"
     },
     {
@@ -92,7 +122,11 @@
       "winner": "X5 G05",
       "winnerNote": "(2018-present)",
       "why": "B57/B58 reliability, 650L boot, 7-seat option, and strong specialist network - values justify replacement across the board.",
-      "verdict": { "icon": "users", "text": "Best", "type": "family" },
+      "verdict": {
+        "icon": "users",
+        "text": "Best",
+        "type": "family"
+      },
       "href": "#"
     },
     {
@@ -101,7 +135,11 @@
       "winner": "E46 330i",
       "winnerNote": "(M54)",
       "why": "The bulletproof naturally-aspirated straight-six - maintenance is an investment, not an expense. One of the most dependable BMWs ever built.",
-      "verdict": { "icon": "trophy", "text": "Best", "type": "best" },
+      "verdict": {
+        "icon": "trophy",
+        "text": "Best",
+        "type": "best"
+      },
       "href": "#"
     }
   ],
@@ -110,6 +148,6 @@
     "title": "Honest, Data-Backed, Unbiased.",
     "text": "We tell you the truth - even when it means walking away. That's the Engine Finders promise.",
     "buttonLabel": "START YOUR RESEARCH",
-    "href": "#"
+    "href": "/quote"
   }
 }

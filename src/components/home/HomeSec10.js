@@ -232,10 +232,7 @@ export default function HomeSec10({ data }) {
       <div className="relative mx-auto w-full max-w-8xl">
         <div className="grid gap-6 md:grid-cols-[minmax(0,1fr)_280px] md:items-start">
           <div className="max-w-[690px]">
-            <h2 className={`text-[2.55rem] font-bold leading-[1.08] tracking-normal md:text-[3rem] ${isDark ? "text-white" : "text-[#071827]"}`}>
-              BMW Market Intelligence -
-              <span className="block text-[var(--color-primary)]">What 24,650+ UK Owners Told Us in 2025</span>
-            </h2>
+            <h2 className={`text-[2.55rem] font-bold leading-[1.08] tracking-normal md:text-[3rem] ${isDark ? "text-white" : "text-[#071827]"}`} dangerouslySetInnerHTML={{ __html: data.h2 }} />
             <div className="mt-4">
               <MStripe />
             </div>

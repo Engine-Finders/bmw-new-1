@@ -55,13 +55,12 @@ function TrustLabel({ label }) {
   return label;
 }
 
-function HeroTitle() {
+function HeroTitle({ html }) {
   return (
-    <h1 className="max-w-[660px] text-[32px] font-bold leading-[0.95] tracking-normal text-white md:max-w-[720px] md:text-[3.5rem] md:leading-[0.94] md:text-[var(--color-text)] lg:text-[4rem]">
-      <span className="block md:whitespace-nowrap">The UK&apos;s Most</span>
-      <span className="block md:whitespace-nowrap">Trusted BMW</span>
-      <span className="block text-[var(--color-primary)] md:whitespace-nowrap">Ownership Guide</span>
-    </h1>
+    <h1
+      className="max-w-[660px] text-[32px] font-bold leading-[0.95] tracking-normal text-white md:max-w-[720px] md:text-[3.5rem] md:leading-[0.94] md:text-[var(--color-text)] lg:text-[4rem]"
+      dangerouslySetInnerHTML={{ __html: html }}
+    />
   );
 }
 
@@ -99,7 +98,7 @@ export default function HomeSec1({ data }) {
 
       <div className="relative mx-auto flex w-full max-w-8xl flex-col px-4 pb-5 pt-8 md:min-h-[620px] md:justify-center md:px-0 md:py-8">
         <div className="relative flex w-full max-w-[720px] flex-col gap-3 md:-ml-6 md:mt-0 md:gap-4">
-          <HeroTitle />
+          <HeroTitle html={data.h1} />
 
           <MStripe />
 

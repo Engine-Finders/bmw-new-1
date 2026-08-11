@@ -1,16 +1,35 @@
 {
+  "h2": "BMW Engine Families -<span class=\"block heading-accent\">The Pillars</span>",
   "subHeadline": "The engines BMW owners search for most, ranked by real 2025 enquiry volume -with our honest verdict on each.",
   "headerImage": {
     "src": "https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=900&q=80",
     "alt": "BMW engine bay"
   },
   "trustStrip": [
-    { "icon": "📊", "label": "Powered by 24,650+ real UK enquiries" },
-    { "icon": "🔧", "label": "20+ vetted BMW specialists" },
-    { "icon": "📖", "label": "OEM part references included" },
-    { "icon": "🏆", "label": "Part of Engine Finders" }
+    {
+      "icon": "📊",
+      "label": "Powered by 24,650+ real UK enquiries"
+    },
+    {
+      "icon": "🔧",
+      "label": "20+ vetted BMW specialists"
+    },
+    {
+      "icon": "📖",
+      "label": "OEM part references included"
+    },
+    {
+      "icon": "🏆",
+      "label": "Part of Engine Finders"
+    }
   ],
-  "columns": ["ENGINE", "FUEL", "YEARS", "2025 ENQUIRIES", "VERDICT"],
+  "columns": [
+    "ENGINE",
+    "FUEL",
+    "YEARS",
+    "2025 ENQUIRIES",
+    "VERDICT"
+  ],
   "engines": [
     {
       "code": "N47",

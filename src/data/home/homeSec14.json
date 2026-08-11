@@ -1,4 +1,5 @@
 {
+  "h2": "Get the <span class=\"heading-accent\">Right</span> Answer. Not Just <span class=\"heading-accent-red\">Any</span> Answer.",
   "subHeadline": "Free, expert guidance. Real data. Honest advice.",
   "stats": [
     "24,650+ UK enquiries analysed",
@@ -9,12 +10,12 @@
   "primaryCta": {
     "label": "GET YOUR FREE GUIDANCE",
     "subLabel": "Ask a BMW engine specialist",
-    "href": "#"
+    "href": "/quote"
   },
   "secondaryCta": {
     "label": "CALL A SPECIALIST",
     "subLabel": "Speak to a BMW expert now",
-    "href": "#"
+    "href": "/quote"
   },
   "review": {
     "brand": "Trustpilot",

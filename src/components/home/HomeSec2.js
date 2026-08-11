@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { useMemo, useState } from "react";
 import MStripe from "@/components/reusableComponents/MStripe";
 import { useTheme } from "@/components/shared/themeProvider";
 
@@ -165,6 +166,17 @@ function splitMobileFilters(filters) {
 
     return filter;
   });
+}
+
+function getModelCategory(item) {
+  const names = (Array.isArray(item.model) ? item.model : [{ name: item.model }]).map((model) =>
+    String(model.name || "").toLowerCase(),
+  );
+
+  if (names.some((name) => /^m\d\b/.test(name) || name.startsWith("m "))) return "m";
+  if (names.some((name) => /^x\d\b/.test(name) || name === "xm")) return "x";
+  if (names.some((name) => /\b[1-8]\s*series\b/.test(name))) return "series";
+  return "other";
 }
 
 function VerdictBadge({ verdict, mobile = false }) {
@@ -334,15 +346,53 @@ function MobileRow({ item }) {
 export default function HomeSec2({ data }) {
   const { theme } = useTheme();
   const isDark = theme === "dark";
-  const mid = Math.ceil(data.models.length / 2);
-  const left = data.models.slice(0, mid);
-  const right = data.models.slice(mid);
-  const mobileRows = left.slice(0, 8);
+  const [query, setQuery] = useState("");
+  const [activeFilter, setActiveFilter] = useState(data.filters?.[0]?.value || "all");
+  const [showAllMobile, setShowAllMobile] = useState(false);
   const mobileFilters = splitMobileFilters(data.filters);
   const sectionBg = theme === "dark" ? "/Section-2-bg-dark.webp" : "/Section-2-Bg-light.webp";
 
+  const filteredModels = useMemo(() => {
+    const normalizedQuery = query.trim().toLowerCase();
+
+    return data.models.filter((item) => {
+      if (activeFilter !== "all" && getModelCategory(item) !== activeFilter) {
+        return false;
+      }
+
+      if (!normalizedQuery) return true;
+
+      const haystack = [
+        ...item.model.map((model) => model.name),
+        item.generations,
+      ]
+        .join(" ")
+        .toLowerCase();
+
+      return haystack.includes(normalizedQuery);
+    });
+  }, [activeFilter, data.models, query]);
+
+  const mid = Math.ceil(filteredModels.length / 2) || 0;
+  const left = filteredModels.slice(0, mid);
+  const right = filteredModels.slice(mid);
+  const mobileLimit = 10;
+  const mobileRows = showAllMobile ? filteredModels : filteredModels.slice(0, mobileLimit);
+  const canExpandMobile = filteredModels.length > mobileLimit && !showAllMobile;
+  const searchPlaceholder = data.searchPlaceholder || "Search model (e.g. 3 Series, X5, M3...)";
+
+  function updateQuery(value) {
+    setQuery(value);
+    setShowAllMobile(false);
+  }
+
+  function updateFilter(value) {
+    setActiveFilter(value);
+    setShowAllMobile(false);
+  }
+
   return (
-    <section className="relative overflow-hidden bg-[var(--color-page)] px-3 py-3 md:px-3 md:py-5">
+    <section className="find-your-vehicle relative overflow-hidden bg-[var(--color-page)] px-3 py-3 md:px-3 md:py-5">
       <div className="absolute inset-0">
         <Image
           src={sectionBg}
@@ -362,9 +412,10 @@ export default function HomeSec2({ data }) {
 
       <div className="relative mx-auto w-full max-w-8xl">
         <div className="max-w-[560px] pt-2 md:max-w-[700px] md:pt-4">
-          <h2 className={`text-[2.4rem] font-bold leading-[0.94] md:text-[3.35rem] ${isDark ? "text-white md:text-[var(--color-text)]" : "text-[var(--color-text)]"}`}>
-            Find Your Vehicle
-          </h2>
+          <h2
+            className={`text-[2.4rem] font-bold leading-[0.94] md:text-[3.35rem] ${isDark ? "text-white md:text-[var(--color-text)]" : "text-[var(--color-text)]"}`}
+            dangerouslySetInnerHTML={{ __html: data.h2 }}
+          />
           <div className="mt-3">
             <MStripe />
           </div>
@@ -388,30 +439,36 @@ export default function HomeSec2({ data }) {
               <SearchIcon />
               <input
                 type="search"
-                placeholder="Search model (e.g. 3 Series, X5, M3...)"
+                value={query}
+                onChange={(event) => updateQuery(event.target.value)}
+                placeholder={searchPlaceholder}
                 className={`w-full bg-transparent text-[0.86rem] outline-none ${
-                  isDark ? "placeholder:text-white/45" : "placeholder:text-[var(--color-text-soft)]"
+                  isDark ? "text-white placeholder:text-white/45" : "text-[var(--color-text)] placeholder:text-[var(--color-text-soft)]"
                 }`}
-                readOnly
               />
             </div>
           </div>
 
           <div className="mt-4 flex flex-wrap gap-2.5">
-            {mobileFilters.map((filter, index) => (
-              <span
-                key={filter.value}
-                className={`rounded-full border px-4 py-2 text-[0.8rem] font-medium ${
-                  index === 0
-                    ? "border-[var(--color-primary)] bg-[var(--color-primary)] text-white"
-                    : isDark
-                      ? "border-white/12 bg-[rgba(10,21,32,0.8)] text-white"
-                      : "border-[var(--color-border)] bg-white/90 text-[var(--color-text)]"
-                }`}
-              >
-                {filter.label}
-              </span>
-            ))}
+            {mobileFilters.map((filter) => {
+              const isActive = activeFilter === filter.value;
+              return (
+                <button
+                  key={filter.value}
+                  type="button"
+                  onClick={() => updateFilter(filter.value)}
+                  className={`rounded-full border px-4 py-2 text-[0.8rem] font-medium ${
+                    isActive
+                      ? "border-[var(--color-primary)] bg-[var(--color-primary)] text-white"
+                      : isDark
+                        ? "border-white/12 bg-[rgba(10,21,32,0.8)] text-white"
+                        : "border-[var(--color-border)] bg-white/90 text-[var(--color-text)]"
+                  }`}
+                >
+                  {filter.label}
+                </button>
+              );
+            })}
           </div>
 
           <div
@@ -421,19 +478,30 @@ export default function HomeSec2({ data }) {
                 : "border-[var(--color-border)] bg-[rgba(255,255,255,0.88)]"
             }`}
           >
-            {mobileRows.map((item) => (
-              <MobileRow key={item.model.map((m) => m.name).join("-")} item={item} />
-            ))}
+            {mobileRows.length ? (
+              mobileRows.map((item) => (
+                <MobileRow key={item.model.map((m) => m.name).join("-")} item={item} />
+              ))
+            ) : (
+              <p className={`px-4 py-5 text-sm ${isDark ? "text-white/70" : "text-[var(--color-text-muted)]"}`}>
+                No models match your search.
+              </p>
+            )}
 
-            <Link
-              href={data.viewAll.href}
-              className="flex items-center justify-center gap-3 px-5 py-3.5 text-[0.9rem] font-medium text-[var(--color-primary)]"
-            >
-              <span>{data.viewAll.label} ({data.models.length})</span>
-              <svg aria-hidden="true" viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2">
-                <path d="m6 9 6 6 6-6" />
-              </svg>
-            </Link>
+            {canExpandMobile ? (
+              <button
+                type="button"
+                onClick={() => setShowAllMobile(true)}
+                className="flex w-full items-center justify-center gap-3 px-5 py-3.5 text-[0.9rem] font-medium text-[var(--color-primary)]"
+              >
+                <span>
+                  {data.viewAll.label} ({filteredModels.length})
+                </span>
+                <svg aria-hidden="true" viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2">
+                  <path d="m6 9 6 6 6-6" />
+                </svg>
+              </button>
+            ) : null}
           </div>
 
           <div
@@ -468,20 +536,69 @@ export default function HomeSec2({ data }) {
           </div>
         </div>
 
-          <div className="mt-6 hidden md:block">
-          <div className="grid gap-3 md:grid-cols-2">
-            {[left, right].map((column, index) => (
-              <div
-                key={index}
-                className="overflow-hidden rounded-md border border-[var(--color-border)] bg-[var(--color-surface-raised)] shadow-[0_14px_40px_var(--color-shadow)] backdrop-blur"
-              >
-                <DesktopHeader columns={data.columns} />
-                {column.map((item) => (
-                <DesktopRow key={item.model.map((m) => m.name).join("-")} item={item} />
-                ))}
-              </div>
-            ))}
+        <div className="mt-6 hidden md:block">
+          <div
+            className={`mb-3 overflow-hidden rounded-md border shadow-[0_14px_40px_var(--color-shadow)] backdrop-blur ${
+              isDark
+                ? "border-white/10 bg-[rgba(10,21,32,0.8)]"
+                : "border-[var(--color-border)] bg-[rgba(255,255,255,0.86)]"
+            }`}
+          >
+            <div className="flex items-center gap-3 px-4 py-3.5">
+              <SearchIcon />
+              <input
+                type="search"
+                value={query}
+                onChange={(event) => setQuery(event.target.value)}
+                placeholder={searchPlaceholder}
+                className={`w-full bg-transparent text-[0.95rem] outline-none ${
+                  isDark ? "text-white placeholder:text-white/45" : "text-[var(--color-text)] placeholder:text-[var(--color-text-soft)]"
+                }`}
+              />
+            </div>
           </div>
+
+          <div className="mb-3 flex flex-wrap gap-2.5">
+            {data.filters.map((filter) => {
+              const isActive = activeFilter === filter.value;
+              return (
+                <button
+                  key={filter.value}
+                  type="button"
+                  onClick={() => setActiveFilter(filter.value)}
+                  className={`rounded-full border px-4 py-2 text-[0.8rem] font-medium ${
+                    isActive
+                      ? "border-[var(--color-primary)] bg-[var(--color-primary)] text-white"
+                      : isDark
+                        ? "border-white/12 bg-[rgba(10,21,32,0.8)] text-white"
+                        : "border-[var(--color-border)] bg-white/90 text-[var(--color-text)]"
+                  }`}
+                >
+                  {filter.label}
+                </button>
+              );
+            })}
+          </div>
+
+          {filteredModels.length ? (
+            <div className="grid gap-3 md:grid-cols-2">
+              {[left, right].filter((column) => column.length > 0).map((column, index) => (
+                <div
+                  key={index}
+                  className="overflow-hidden rounded-md border border-[var(--color-border)] bg-[var(--color-surface-raised)] shadow-[0_14px_40px_var(--color-shadow)] backdrop-blur"
+                >
+                  <DesktopHeader columns={data.columns} />
+                  {column.map((item) => (
+                    <DesktopRow key={item.model.map((m) => m.name).join("-")} item={item} />
+                  ))}
+                </div>
+              ))}
+            </div>
+          ) : (
+            <p className={`rounded-md border border-[var(--color-border)] px-4 py-6 text-sm ${isDark ? "text-white/70" : "text-[var(--color-text-muted)]"}`}>
+              No models match your search.
+            </p>
+          )}
         </div>
       </div>
     </section>

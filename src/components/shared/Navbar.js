@@ -3,19 +3,8 @@
 import { useState } from "react";
 import Link from "next/link";
 import { useTheme } from "@/components/shared/themeProvider";
+import { DesktopNavMenus, MobileNavMenus } from "@/components/shared/NavMenus";
 
-const logoText = "BMW RELIABILITY GUIDE";
-const links = [
-  { label: "1 SERIES", href: "#" },
-  { label: "3 SERIES", href: "#" },
-  { label: "5 SERIES", href: "#" },
-  { label: "X3", href: "#" },
-  { label: "X5", href: "#" },
-  { label: "M CARS", href: "#" },
-  { label: "GUIDES", href: "#" },
-  { label: "ABOUT", href: "#" },
-  { label: "FORUM", href: "#" },
-];
 function MenuIcon() {
   return (
     <svg aria-hidden="true" viewBox="0 0 24 24" className="h-7 w-7" fill="none" stroke="currentColor" strokeWidth="2">
@@ -69,41 +58,36 @@ export default function Navbar() {
 
   return (
     <header className="sticky top-0 z-40 border-b border-[var(--color-border)] bg-[var(--color-navbar)] backdrop-blur">
-      <nav className="mx-auto flex w-full max-w-8xl items-center justify-between gap-4 px-4 py-4 md:px-8 md:py-6">
-        <Link href="/" className="flex shrink-0 items-center gap-3 text-[var(--color-text)]">
+      <nav className="mx-auto flex w-full max-w-8xl items-center justify-between gap-3 px-4 py-3 md:px-8 md:py-4">
+        <Link href="/" className="flex shrink-0 items-center gap-3 text-[var(--color-text)] no-underline">
           <LogoMark />
           <span className="leading-tight">
-            <span className="block text-[2rem] font-extrabold tracking-normal md:text-3xl">BMW</span>
-            <span className="block text-[0.95rem] font-semibold tracking-normal md:text-xl">RELIABILITY GUIDE</span>
+            <span className="block text-[1.6rem] font-extrabold tracking-normal md:text-3xl">BMW</span>
+            <span className="block text-[0.85rem] font-semibold tracking-normal md:text-xl">RELIABILITY GUIDE</span>
           </span>
         </Link>
-        <ul className="hidden flex-1 items-center justify-center gap-9 lg:flex">
-          {links.map((link) => (
-            <li key={link.label}>
-              <Link href={link.href} className="text-sm font-semibold text-[var(--color-text)]">
-                {link.label}
-              </Link>
-            </li>
-          ))}
-        </ul>
-        <div className="hidden items-center gap-5 md:flex">
+
+        <DesktopNavMenus />
+
+        <div className="hidden items-center gap-4 lg:flex">
           <button
             type="button"
             aria-label={nextThemeLabel}
             title={nextThemeLabel}
             onClick={toggleTheme}
-            className="flex h-12 w-12 items-center justify-center rounded border border-[var(--color-border-strong)] text-[var(--color-text)]"
+            className="flex h-11 w-11 items-center justify-center rounded border border-[var(--color-border-strong)] text-[var(--color-text)]"
           >
             <ThemeIcon theme={theme} />
           </button>
           <Link
-            href="#"
-            className="shrink-0 rounded bg-[var(--color-primary)] px-6 py-4 text-sm font-bold text-white shadow-sm shadow-[var(--color-shadow)]"
+            href="/quote"
+            className="shrink-0 rounded bg-[var(--color-primary)] px-5 py-3 text-sm font-bold text-white no-underline shadow-sm shadow-[var(--color-shadow)]"
           >
-            START YOUR RESEARCH
+            START YOUR RESEARCH →
           </Link>
         </div>
-        <div className="ml-auto flex items-center gap-3 md:hidden">
+
+        <div className="ml-auto flex items-center gap-2 lg:hidden">
           <button
             type="button"
             aria-label={nextThemeLabel}
@@ -125,28 +109,10 @@ export default function Navbar() {
           </button>
         </div>
       </nav>
+
       {isMenuOpen ? (
-        <div id="mobile-nav" className="border-t border-[var(--color-border)] bg-[var(--color-surface)] px-4 py-4 md:hidden">
-          <ul className="grid gap-3">
-            {links.map((link) => (
-              <li key={link.label}>
-                <Link
-                  href={link.href}
-                  onClick={() => setIsMenuOpen(false)}
-                  className="block py-2 text-sm font-semibold text-[var(--color-text)]"
-                >
-                  {link.label}
-                </Link>
-              </li>
-            ))}
-          </ul>
-          <Link
-            href="#"
-            onClick={() => setIsMenuOpen(false)}
-            className="mt-4 block rounded bg-[var(--color-primary)] px-5 py-3 text-center text-sm font-bold text-white shadow-sm shadow-[var(--color-shadow)]"
-          >
-            START YOUR RESEARCH
-          </Link>
+        <div id="mobile-nav" className="border-t border-[var(--color-border)] bg-[var(--color-surface)] px-4 py-4 lg:hidden">
+          <MobileNavMenus onNavigate={() => setIsMenuOpen(false)} />
         </div>
       ) : null}
     </header>
