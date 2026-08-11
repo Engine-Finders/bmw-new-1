@@ -5,3 +5,4 @@
 - Keep registry pages.json files in sync with corresponding data directories - each JSON file in src/data/*/ becomes an entry (slug + dataFile = filename without extension, plus type field when applicable). Confidence: 0.70
 - Include a \"type\" field in all registry entries indicating the data category: \"models\", \"generations\", \"variants\", or \"engines\". Confidence: 0.70
 - When making a cross-cutting/infrastructure change (e.g., SEO metadata, canonicals), apply it comprehensively to all affected pages/routes at once rather than incrementally one page at a time. Confidence: 0.80
+- When the user lists specific examples followed by "check other like that if have" (or similar phrasing), they expect a comprehensive search for ALL instances of the described pattern across the codebase — not just the ones they explicitly named. Confidence: 0.75

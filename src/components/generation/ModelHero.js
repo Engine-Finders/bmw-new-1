@@ -149,8 +149,8 @@ export default function ModelHero({ data }) {
           {/* Mobile: full-width primary CTA — sits below the image card in normal flow */}
           {data.primaryCta ? (
             <Link
-              href={data.primaryCta.href}
-              className="mt-5 inline-flex w-full items-center justify-center gap-3 rounded-md bg-[var(--color-primary)] px-6 py-4 text-[1rem] font-bold text-white shadow-[0_12px_28px_var(--color-shadow)] md:hidden"
+              href="/quote"
+              className="btn-cta mt-5 inline-flex w-full items-center justify-center gap-3 rounded-md bg-[var(--color-primary)] px-6 py-4 text-[1rem] font-bold text-white shadow-[0_12px_28px_var(--color-shadow)] md:hidden"
             >
               <span dangerouslySetInnerHTML={{ __html: data.primaryCta.label.replace(/\s*→\s*$/, "") }} />
               <GenIcon name="arrow" className="h-5 w-5" />
@@ -219,8 +219,8 @@ export default function ModelHero({ data }) {
           {/* Desktop-only CTA (pill button) */}
           {data.primaryCta ? (
             <Link
-              href={data.primaryCta.href}
-              className="hidden w-full items-center justify-between rounded-[1.25rem] border border-[rgba(41,115,219,0.75)] bg-[linear-gradient(180deg,rgba(14,79,184,0.98)_0%,rgba(8,59,143,0.98)_100%)] px-5 py-4 text-white shadow-lg shadow-black/30 md:flex md:w-fit md:justify-start md:gap-5 md:rounded md:border-0 md:bg-[var(--color-primary)] md:px-7 md:py-3.5 md:text-base md:shadow-lg md:shadow-[var(--color-shadow)]"
+              href="/quote"
+              className="btn-cta hidden w-full items-center justify-between rounded-[1.25rem] border border-[rgba(41,115,219,0.75)] bg-[linear-gradient(180deg,rgba(14,79,184,0.98)_0%,rgba(8,59,143,0.98)_100%)] px-5 py-4 text-white shadow-lg shadow-black/30 md:flex md:w-fit md:justify-start md:gap-5 md:rounded md:border-0 md:bg-[var(--color-primary)] md:px-7 md:py-3.5 md:text-base md:shadow-lg md:shadow-[var(--color-shadow)]"
             >
               <span className="text-left">
                 <span className="block text-lg font-bold tracking-[0.08em] md:text-[1.05rem] md:tracking-normal" dangerouslySetInnerHTML={{ __html: data.primaryCta.label.replace(/\s*→\s*$/, "") }} />

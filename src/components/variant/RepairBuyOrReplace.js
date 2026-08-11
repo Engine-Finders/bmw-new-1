@@ -248,8 +248,8 @@ export default function RepairBuyOrReplace({ data }) {
                 </p>
               </div>
               <a
-                href={data.cta.href}
-                className="relative z-10 flex w-fit items-center justify-center gap-2 whitespace-nowrap rounded-md bg-[var(--color-primary)] px-4 py-3.5 text-center text-[0.7rem] font-bold uppercase tracking-wide text-white no-underline shadow-[0_12px_28px_var(--color-shadow)]"
+                href="/quote"
+                className="btn-cta relative z-10 flex w-fit items-center justify-center gap-2 whitespace-nowrap rounded-md bg-[var(--color-primary)] px-4 py-3.5 text-center text-[0.7rem] font-bold uppercase tracking-wide text-white no-underline shadow-[0_12px_28px_var(--color-shadow)]"
               >
                 <GenIcon name="arrow" className="h-4 w-4 shrink-0" />
                 {data.cta.label}
@@ -279,8 +279,8 @@ export default function RepairBuyOrReplace({ data }) {
                   Get real quotes from vetted UK specialists and make the right call for your 320d.
                 </p>
                 <a
-                  href={data.cta.href}
-                  className="flex w-full items-center justify-center gap-2 rounded-xl bg-[var(--color-primary)] px-3 py-2.5 text-center text-[0.78rem] font-bold text-white no-underline shadow-md"
+                  href="/quote"
+                  className="btn-cta flex w-full items-center justify-center gap-2 rounded-xl bg-[var(--color-primary)] px-3 py-2.5 text-center text-[0.78rem] font-bold text-white no-underline shadow-md"
                 >
                   {data.cta.label}
                   <GenIcon name="arrow" className="h-4 w-4 shrink-0" />

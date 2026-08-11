@@ -136,8 +136,8 @@ export default function TrustCta({ data, engineLabel = "BMW Engine" }) {
           </p>
           {data.ctaButton?.href ? (
             <Link
-              href={data.ctaButton.href}
-              className="inline-flex min-h-11 shrink-0 items-center justify-center rounded-lg bg-[var(--color-primary)] px-5 text-[13px] font-bold text-white"
+              href="/quote"
+              className="btn-cta inline-flex min-h-11 shrink-0 items-center justify-center rounded-lg bg-[var(--color-primary)] px-5 text-[13px] font-bold text-white"
             >
               {ctaLabel || `Compare BMW ${engineCode} Engine Prices Now`} →
             </Link>
@@ -183,8 +183,8 @@ export default function TrustCta({ data, engineLabel = "BMW Engine" }) {
             </p>
             {data.ctaButton?.href ? (
               <Link
-                href={data.ctaButton.href}
-                className="mt-3 inline-flex min-h-11 w-full items-center justify-center gap-2 rounded-lg bg-[var(--color-primary)] px-4 text-[13px] font-bold text-white"
+                href="/quote"
+                className="btn-cta mt-3 inline-flex min-h-11 w-full items-center justify-center gap-2 rounded-lg bg-[var(--color-primary)] px-4 text-[13px] font-bold text-white"
               >
                 <span>{ctaLabel || `Compare BMW ${engineCode} Engine Prices Now`}</span>
                 <span aria-hidden="true">→</span>

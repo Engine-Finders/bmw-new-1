@@ -1,6 +1,8 @@
 "use client";
 
+import { useState } from "react";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 import MStripe from "@/components/reusableComponents/MStripe";
 import { useTheme } from "@/components/shared/themeProvider";
 import GenIcon from "../generation/GenIcons";
@@ -59,7 +61,20 @@ function UkFlagIcon({ className = "h-4 w-5" }) {
 
 export default function VariantHero({ data }) {
   const { theme } = useTheme();
+  const router = useRouter();
+  const [regNumber, setRegNumber] = useState("");
+
   if (!data) return null;
+
+  function goToQuoteWithReg(event) {
+    event.preventDefault();
+    const cleaned = regNumber.replace(/\s+/g, "").toUpperCase();
+    if (!cleaned) {
+      router.push("/quote");
+      return;
+    }
+    router.push(`/quote?reg=${encodeURIComponent(cleaned)}`);
+  }
 
   const isDark = theme === "dark";
   const heroImage = isDark ? "/320d/hero_dark.webp" : "/320d/hero_light.webp";
@@ -134,33 +149,39 @@ export default function VariantHero({ data }) {
     </div>
   ) : null;
 
-  // Registration lookup row, shared by both card layouts below. Spec's "top
-  // split" row (country dropdown + reg input side by side) holds on every
-  // breakpoint; only the full-width submit button drops to its own row.
+  // Registration row → redirects to /quote with ?reg=… (lookup stays on quote page).
+  // Spec's "top split" row (country + input) holds on every breakpoint;
+  // only the full-width submit button drops to its own row.
   const registrationRow = data.registrationInput ? (
-    <div className="flex w-full flex-col gap-1.5 md:flex-row md:items-center md:gap-3">
+    <form
+      onSubmit={goToQuoteWithReg}
+      className="flex w-full flex-col gap-1.5 md:flex-row md:items-center md:gap-3"
+    >
       <div className="flex w-full items-center gap-1.5 md:flex-1 md:gap-3">
         <span className={`flex shrink-0 items-center gap-1.5 rounded-md border ${cardBorderClass} ${innerBgClass} px-2.5 py-2 text-[0.8rem] font-semibold md:py-3 md:text-[0.92rem] ${headingClass}`}>
           <UkFlagIcon />
           GB
-          <GenIcon name="chevronDown" className="h-3.5 w-3.5" />
         </span>
         <input
           type="text"
+          name="reg"
+          value={regNumber}
+          onChange={(event) => setRegNumber(event.target.value.toUpperCase())}
           placeholder={data.registrationInput.placeholder}
-          className={`min-w-0 flex-1 rounded-md border ${cardBorderClass} ${innerBgClass} px-2.5 py-2 text-[0.8rem] focus:outline-none md:py-3 md:text-[0.92rem] ${headingClass} ${isDark ? "placeholder:text-white/50" : "placeholder:text-[var(--color-text-soft)]"}`}
+          autoComplete="off"
+          className={`min-w-0 flex-1 rounded-md border ${cardBorderClass} ${innerBgClass} px-2.5 py-2 text-[0.8rem] uppercase focus:outline-none md:py-3 md:text-[0.92rem] ${headingClass} ${isDark ? "placeholder:text-white/50" : "placeholder:text-[var(--color-text-soft)]"}`}
         />
       </div>
       {data.registrationInput.cta ? (
-        <a
-          href={data.registrationInput.cta.href}
-          className="flex w-full shrink-0 items-center justify-center gap-2 whitespace-nowrap rounded-md bg-[var(--color-primary)] px-2 py-2 text-center text-[0.68rem] font-bold text-white no-underline shadow-[0_12px_28px_var(--color-shadow)] md:w-auto md:py-3 md:px-6 md:text-[0.9rem]"
+        <button
+          type="submit"
+          className="flex w-full shrink-0 items-center justify-center gap-2 whitespace-nowrap rounded-md bg-[var(--color-primary)] px-2 py-2 text-center text-[0.68rem] font-bold text-white shadow-[0_12px_28px_var(--color-shadow)] md:w-auto md:py-3 md:px-6 md:text-[0.9rem]"
         >
           {data.registrationInput.cta.label.replace(/\s*→\s*$/, "")}
           <GenIcon name="arrow" className="h-4 w-4 shrink-0 md:h-5 md:w-5" />
-        </a>
+        </button>
       ) : null}
-    </div>
+    </form>
   ) : null;
 
   // Mobile: two distinct stacked cards (engine summary, then the reg/quote form).

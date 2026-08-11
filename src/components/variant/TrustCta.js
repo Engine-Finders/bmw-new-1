@@ -63,8 +63,8 @@ export default function TrustCta({ data }) {
                 ) : null}
                 {data.ctaButton ? (
                   <a
-                    href={data.ctaButton.href}
-                    className="flex w-full shrink-0 items-center justify-center gap-2 whitespace-nowrap rounded-lg bg-[#189454] px-4 py-2.5 text-center text-[0.74rem] font-bold text-white no-underline shadow-[0_12px_28px_rgba(0,0,0,0.35)] md:w-auto md:px-6 md:py-3 md:text-[0.8rem]"
+                    href="/quote"
+                    className="btn-cta flex w-full shrink-0 items-center justify-center gap-2 whitespace-nowrap rounded-lg bg-[#189454] px-4 py-2.5 text-center text-[0.74rem] font-bold text-white no-underline shadow-[0_12px_28px_rgba(0,0,0,0.35)] md:w-auto md:px-6 md:py-3 md:text-[0.8rem]"
                   >
                     {data.ctaButton.label.replace(/\s*→\s*$/, "")}
                     <GenIcon name="arrow" className="h-4 w-4 shrink-0" />

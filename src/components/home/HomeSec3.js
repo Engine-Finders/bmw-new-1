@@ -473,7 +473,7 @@ function ResultsScreen({ diagnosis, verdict, engineOption, ctas, isDark }) {
               </ul>
 
               <div className="mt-5 grid gap-3">
-                <Link href={ctas.quote.href} className="flex items-center justify-center gap-3 rounded-lg bg-[var(--color-primary)] px-5 py-3 text-[0.86rem] font-bold text-white">
+                <Link href={ctas.quote.href} className="btn-cta flex items-center justify-center gap-3 rounded-lg bg-[var(--color-primary)] px-5 py-3 text-[0.86rem] font-bold text-white">
                   <span>{ctas.quote.label}</span>
                   <ArrowIcon className="h-4 w-4" />
                 </Link>

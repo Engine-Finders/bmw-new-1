@@ -175,8 +175,8 @@ export default function ReplacementCosts({ data }) {
             ) : null}
             {data.cta?.label ? (
               <a
-                href={data.cta.href}
-                className="flex shrink-0 items-center justify-center gap-2 whitespace-nowrap rounded-xl bg-[var(--color-primary)] px-4 py-2.5 text-[0.8rem] font-bold text-white no-underline shadow-[0_12px_28px_var(--color-shadow)]"
+                href="/quote"
+                className="btn-cta flex shrink-0 items-center justify-center gap-2 whitespace-nowrap rounded-xl bg-[var(--color-primary)] px-4 py-2.5 text-[0.8rem] font-bold text-white no-underline shadow-[0_12px_28px_var(--color-shadow)]"
               >
                 <GenIcon name="arrow" className="h-4 w-4 shrink-0" />
                 {data.cta.label}
@@ -187,8 +187,8 @@ export default function ReplacementCosts({ data }) {
 
         {data.cta?.label ? (
           <a
-            href={data.cta.href}
-            className="mt-4 flex w-full items-center justify-center gap-2 rounded-xl bg-[var(--color-primary)] px-3 py-2.5 text-white no-underline shadow-[0_12px_28px_var(--color-shadow)] md:hidden"
+            href="/quote"
+            className="btn-cta mt-4 flex w-full items-center justify-center gap-2 rounded-xl bg-[var(--color-primary)] px-3 py-2.5 text-white no-underline shadow-[0_12px_28px_var(--color-shadow)] md:hidden"
           >
             <GenIcon name="arrow" className="h-4 w-4 shrink-0" />
             <span className="whitespace-nowrap text-center text-[0.78rem] font-bold md:text-[0.9rem]">{data.cta.label}</span>

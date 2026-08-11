@@ -206,8 +206,8 @@ export default function ModelHero({ data }) {
 
           {data.primaryCta ? (
             <Link
-              href={data.primaryCta.href}
-              className={`mt-5 inline-flex min-h-10 items-center justify-center gap-3 rounded-md bg-[var(--color-primary)] px-4 py-2 font-bold text-white shadow-[0_12px_28px_var(--color-shadow)] transition-all duration-200 hover:text-black hover:shadow-[0_18px_40px_rgba(0,0,0,0.28)] ${sectionButton} md:min-h-11 md:px-5`}
+              href="/quote"
+              className={`btn-cta mt-5 inline-flex min-h-10 items-center justify-center gap-3 rounded-md bg-[var(--color-primary)] px-4 py-2 font-bold text-white shadow-[0_12px_28px_var(--color-shadow)] ${sectionButton} md:min-h-11 md:px-5`}
             >
               <span dangerouslySetInnerHTML={{ __html: data.primaryCta.label.replace(/\s*(?:→|â†’)\s*$/, "") }} />
               <ArrowIcon />

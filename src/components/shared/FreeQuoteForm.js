@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useId, useRef, useState } from "react";
+import { Suspense, useEffect, useId, useRef, useState } from "react";
 import QuoteForm from "@/components/shared/QuoteForm";
 
 export default function FreeQuoteSticky() {
@@ -66,7 +66,9 @@ export default function FreeQuoteSticky() {
                 ✕
               </button>
             </div>
-            <QuoteForm compact onSuccess={() => {}} />
+            <Suspense fallback={<p className="p-4 text-sm text-[var(--color-text-soft)]">Loading…</p>}>
+              <QuoteForm compact onSuccess={() => {}} />
+            </Suspense>
           </div>
         </div>
       ) : null}

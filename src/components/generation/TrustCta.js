@@ -60,8 +60,8 @@ export default function TrustCta({ data }) {
       ) : null}
       {data.ctaButton ? (
         <a
-          href={data.ctaButton.href}
-          className="flex w-full shrink-0 items-center justify-center gap-2 text-center rounded-md bg-[var(--color-primary)] px-5 py-3 text-[0.8rem] font-bold uppercase tracking-wide text-white shadow-[0_12px_28px_var(--color-shadow)] md:inline-flex md:w-auto md:whitespace-nowrap"
+          href="/quote"
+          className="btn-cta flex w-full shrink-0 items-center justify-center gap-2 text-center rounded-md bg-[var(--color-primary)] px-5 py-3 text-[0.8rem] font-bold uppercase tracking-wide text-white shadow-[0_12px_28px_var(--color-shadow)] md:inline-flex md:w-auto md:whitespace-nowrap"
         >
           <span dangerouslySetInnerHTML={{ __html: data.ctaButton.label.replace(/\s*→\s*$/, "") }} />
           <GenIcon name="chevron" className="h-4 w-4" />

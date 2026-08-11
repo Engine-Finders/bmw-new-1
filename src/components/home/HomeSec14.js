@@ -86,7 +86,7 @@ export default function HomeSec14({ data }) {
             </ul>
 
             <div className="mt-6 grid gap-3 md:grid-cols-[272px_240px_minmax(0,1fr)] md:items-center">
-              <Link href={data.primaryCta.href} className="flex min-h-16 items-center gap-4 rounded-lg bg-[var(--color-primary)] px-5 py-3 text-white">
+              <Link href={data.primaryCta.href} className="btn-cta flex min-h-16 items-center gap-4 rounded-lg bg-[var(--color-primary)] px-5 py-3 text-white">
                 <Icon name="chat" className="h-8 w-8 shrink-0" />
                 <span className="min-w-0">
                   <span className="block text-[0.88rem] font-bold leading-tight">{data.primaryCta.label}</span>

@@ -128,8 +128,8 @@ export default function EngineCodes({ data }) {
 
   const quoteCtaBanner = data.cta?.label ? (
     <a
-      href={data.cta.href}
-      className="relative flex items-center gap-4 overflow-hidden rounded-xl border border-[var(--color-border)] bg-[var(--color-primary-strong)] p-5 text-white no-underline shadow-[0_12px_28px_var(--color-shadow)]"
+      href="/quote"
+      className="btn-cta relative flex items-center gap-4 overflow-hidden rounded-xl border border-[var(--color-border)] bg-[var(--color-primary-strong)] p-5 text-white no-underline shadow-[0_12px_28px_var(--color-shadow)]"
     >
       <div className="absolute inset-0">
         <Image src={ENGINE_IMAGE} alt="" fill className="object-cover object-right opacity-60" sizes="400px" />

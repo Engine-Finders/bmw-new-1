@@ -116,16 +116,22 @@ function ModelsPanel({ menu, activeModelHref, setActiveModelHref, onNavigate }) 
                     onMouseEnter={() => setActiveModelHref(item.href)}
                     onFocusCapture={() => setActiveModelHref(item.href)}
                   >
-                    <button
-                      type="button"
-                      className={`flex w-full items-center justify-between gap-2 rounded px-2 py-1.5 text-left text-sm font-semibold no-underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--color-primary)] ${
+                    <div
+                      className={`flex w-full items-center gap-2 rounded px-2 py-1.5 text-sm font-semibold ${
                         isActive ? "bg-[var(--color-primary-soft)] text-[var(--color-primary)]" : "text-[var(--color-text)] hover:bg-[var(--color-page-soft)]"
                       }`}
-                      aria-expanded={isActive}
                     >
-                      <span>{item.label}</span>
-                      <CaretRight />
-                    </button>
+                      <Link
+                        href={item.href}
+                        className="min-w-0 flex-1 no-underline hover:text-[var(--color-primary)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--color-primary)]"
+                        onClick={onNavigate}
+                      >
+                        {item.label}
+                      </Link>
+                      <span className="shrink-0" aria-hidden="true">
+                        <CaretRight />
+                      </span>
+                    </div>
 
                     {isActive ? <ModelFlyout item={item} openLeft={openLeft} onNavigate={onNavigate} /> : null}
                   </li>
@@ -275,6 +281,29 @@ function MobileRowButton({ label, onClick, expanded }) {
   );
 }
 
+/** Model label links to the model page; right-side hit area opens the submenu. */
+function MobileModelRow({ model, onOpenSubmenu, onNavigate }) {
+  return (
+    <div className="flex items-stretch border-b border-[var(--color-border)]">
+      <Link
+        href={model.href}
+        className={`${linkClass} min-w-0 flex-1 py-2.5 pr-2`}
+        onClick={onNavigate}
+      >
+        {model.label}
+      </Link>
+      <button
+        type="button"
+        onClick={onOpenSubmenu}
+        aria-label={`Open ${model.label} variants and generations`}
+        className="flex shrink-0 items-center justify-center px-3 py-2.5 text-[var(--color-text)]"
+      >
+        <Chevron open={false} />
+      </button>
+    </div>
+  );
+}
+
 export function MobileNavMenus({ onNavigate }) {
   const [stack, setStack] = useState([{ type: "root" }]);
   const current = stack[stack.length - 1];
@@ -320,13 +349,16 @@ export function MobileNavMenus({ onNavigate }) {
         <button type="button" onClick={pop} className="mb-2 text-sm font-bold text-[var(--color-primary)]">
           ← {menu.label}
         </button>
-        <ul className="grid gap-1">
+        <div className="grid gap-0">
           {models.map((model) => (
-            <li key={model.href} className="border-b border-[var(--color-border)]">
-              <MobileRowButton label={model.label} onClick={() => push({ type: "model", menuId: menu.id, modelHref: model.href })} />
-            </li>
+            <MobileModelRow
+              key={model.href}
+              model={model}
+              onOpenSubmenu={() => push({ type: "model", menuId: menu.id, modelHref: model.href })}
+              onNavigate={() => goLink(model.href)}
+            />
           ))}
-        </ul>
+        </div>
       </div>
     );
   }

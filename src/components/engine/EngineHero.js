@@ -203,8 +203,8 @@ export default function EngineHero({ data }) {
 
             {data.primaryCta ? (
               <Link
-                href={data.primaryCta.href}
-                className={`mt-4 hidden min-h-11 w-fit items-center justify-center md:gap-3 rounded-lg border border-[rgba(114,160,255,0.34)] bg-[linear-gradient(180deg,var(--color-primary)_0%,var(--color-primary-strong)_100%)] px-6 py-2.5 font-bold text-white shadow-[0_18px_46px_rgba(1,20,48,0.42)] transition-all duration-200 hover:text-white md:inline-flex ${sectionButton}`}
+                href="/quote"
+                className={`btn-cta mt-4 hidden min-h-11 w-fit items-center justify-center md:gap-3 rounded-lg border border-[rgba(114,160,255,0.34)] bg-[linear-gradient(180deg,var(--color-primary)_0%,var(--color-primary-strong)_100%)] px-6 py-2.5 font-bold text-white shadow-[0_18px_46px_rgba(1,20,48,0.42)] md:inline-flex ${sectionButton}`}
               >
                 <span>{ctaLabel}</span>
                 <ArrowIcon />
@@ -228,8 +228,8 @@ export default function EngineHero({ data }) {
 
         {data.primaryCta ? (
           <Link
-            href={data.primaryCta.href}
-            className={`relative z-10 mt-4 inline-flex min-h-12 items-center justify-center gap-3 rounded-2xl border border-[rgba(114,160,255,0.34)] bg-[linear-gradient(180deg,var(--color-primary)_0%,var(--color-primary-strong)_100%)] px-6 py-3 text-center font-bold text-white shadow-[0_18px_46px_rgba(1,20,48,0.42)] transition-all duration-200 hover:text-white md:hidden ${sectionButton}`}
+            href="/quote"
+            className={`btn-cta relative z-10 mt-4 inline-flex min-h-12 items-center justify-center gap-3 rounded-2xl border border-[rgba(114,160,255,0.34)] bg-[linear-gradient(180deg,var(--color-primary)_0%,var(--color-primary-strong)_100%)] px-6 py-3 text-center font-bold text-white shadow-[0_18px_46px_rgba(1,20,48,0.42)] md:hidden ${sectionButton}`}
           >
             <span>{ctaLabel}</span>
             <ArrowIcon />

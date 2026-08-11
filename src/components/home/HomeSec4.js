@@ -188,7 +188,7 @@ export default function HomeSec4({ data }) {
               <p className={`mt-1 text-[0.74rem] leading-[1.35] ${isDark ? "text-white/76" : "text-[#27384a]"}`} dangerouslySetInnerHTML={{ __html: data.bottomCta.text }} />
             </div>
           </div>
-          <Link href={data.bottomCta.href} className="flex items-center justify-center gap-5 rounded-md bg-[var(--color-primary)] px-4 py-3 text-[0.82rem] font-bold text-white">
+          <Link href={data.bottomCta.href} className="btn-cta flex items-center justify-center gap-5 rounded-md bg-[var(--color-primary)] px-4 py-3 text-[0.82rem] font-bold text-white">
             <span>{data.bottomCta.buttonLabel}</span>
             <ArrowIcon />
           </Link>

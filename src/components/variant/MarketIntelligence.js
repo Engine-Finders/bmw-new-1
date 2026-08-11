@@ -214,7 +214,7 @@ export default function MarketIntelligence({ data }) {
                         </div>
                       </div>
 
-                      <p className="mt-4 text-[1.7rem] font-extrabold leading-none text-[var(--color-primary)] md:text-[2rem]">{stat}</p>
+                      <p className="mt-4 text-[16px] font-extrabold leading-none text-[var(--color-primary)] md:text-[18px]">{stat}</p>
 
                       <div className="mt-2 flex flex-col gap-1">
                         {subtext ? <p className="text-[0.72rem] text-[var(--color-text-muted)]">{subtext}</p> : null}

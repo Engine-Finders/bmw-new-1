@@ -1,4 +1,5 @@
 import { sendLeadToCRM } from "@/components/shared/sendLeadToCRM";
+import { sendLeadEmail } from "@/components/shared/sendLeadEmail";
 
 export async function POST(request) {
   try {
@@ -12,8 +13,36 @@ export async function POST(request) {
       return Response.json({ error: "Name, email and phone are required" }, { status: 400 });
     }
 
-    const result = await sendLeadToCRM(payload);
-    return Response.json({ success: true, result });
+    const [crmResult, emailResult] = await Promise.allSettled([
+      sendLeadToCRM(payload),
+      sendLeadEmail(payload),
+    ]);
+
+    if (crmResult.status === "rejected") {
+      console.error("lead CRM failed", crmResult.reason);
+      return Response.json(
+        { error: crmResult.reason?.message || "Failed to send lead to CRM" },
+        { status: 502 },
+      );
+    }
+
+    if (emailResult.status === "rejected") {
+      // Lead is already in CRM — still report success, but log email failure.
+      console.error("lead email failed", emailResult.reason);
+      return Response.json({
+        success: true,
+        result: crmResult.value,
+        emailSent: false,
+        emailError: emailResult.reason?.message || "Failed to send email",
+      });
+    }
+
+    return Response.json({
+      success: true,
+      result: crmResult.value,
+      emailSent: true,
+      emailId: emailResult.value?.id || null,
+    });
   } catch (error) {
     console.error("lead proxy failed", error);
     return Response.json(

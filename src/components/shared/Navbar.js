@@ -111,7 +111,10 @@ export default function Navbar() {
       </nav>
 
       {isMenuOpen ? (
-        <div id="mobile-nav" className="border-t border-[var(--color-border)] bg-[var(--color-surface)] px-4 py-4 lg:hidden">
+        <div
+          id="mobile-nav"
+          className="max-h-[calc(100dvh-5.5rem)] overflow-y-auto overscroll-contain border-t border-[var(--color-border)] bg-[var(--color-surface)] px-4 py-4 lg:hidden"
+        >
           <MobileNavMenus onNavigate={() => setIsMenuOpen(false)} />
         </div>
       ) : null}

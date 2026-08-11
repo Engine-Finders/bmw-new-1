@@ -1,6 +1,7 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
+import { useSearchParams } from "next/navigation";
 import { buildQuoteLeadPayload } from "@/components/shared/sendLeadToCRM";
 
 const emptyVehicle = {
@@ -32,6 +33,7 @@ function Alert({ type, children }) {
 }
 
 export default function QuoteForm({ onSuccess, compact = false }) {
+  const searchParams = useSearchParams();
   const [regInput, setRegInput] = useState("");
   const [vehicle, setVehicle] = useState(emptyVehicle);
   const [lookupLoading, setLookupLoading] = useState(false);
@@ -48,6 +50,13 @@ export default function QuoteForm({ onSuccess, compact = false }) {
   const [submitLoading, setSubmitLoading] = useState(false);
   const [submitAlert, setSubmitAlert] = useState({ type: "", message: "" });
   const [submitted, setSubmitted] = useState(false);
+
+  // Prefill from /quote?reg=… (e.g. variant hero). Lookup still runs on Search.
+  useEffect(() => {
+    const fromUrl = searchParams?.get("reg") || searchParams?.get("vrm") || "";
+    const cleaned = fromUrl.replace(/\s+/g, "").toUpperCase();
+    if (cleaned) setRegInput(cleaned);
+  }, [searchParams]);
 
   const vehicleReady = Boolean(vehicle.vrm && (vehicle.brand || vehicle.series || vehicle.year));
   const canSubmit = vehicleReady && !submitLoading;
@@ -150,7 +159,7 @@ export default function QuoteForm({ onSuccess, compact = false }) {
         </div>
         <h3 className="mt-4 text-xl font-bold text-[var(--color-text)]">Quote Request Sent!</h3>
         <p className="mt-2 text-sm text-[var(--color-text-muted)]">
-          Thank you! We&apos;ve received your details and will be in touch shortly.
+          We&apos;ve received your details and will be contacting you soon.
         </p>
       </div>
     );

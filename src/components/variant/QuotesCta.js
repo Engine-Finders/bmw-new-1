@@ -50,8 +50,8 @@ export default function QuotesCta({ data }) {
 
             {data.button ? (
               <a
-                href={data.button.href}
-                className="mt-1 flex w-full shrink-0 items-center justify-center gap-2 whitespace-nowrap rounded-md bg-[#189454] px-4 py-2.5 text-center text-[0.76rem] font-bold text-white no-underline shadow-[0_12px_28px_rgba(0,0,0,0.35)] md:w-fit md:px-6 md:py-3.5 md:text-[0.85rem]"
+                href="/quote"
+                className="btn-cta mt-1 flex w-full shrink-0 items-center justify-center gap-2 whitespace-nowrap rounded-md bg-[#189454] px-4 py-2.5 text-center text-[0.76rem] font-bold text-white no-underline shadow-[0_12px_28px_rgba(0,0,0,0.35)] md:w-fit md:px-6 md:py-3.5 md:text-[0.85rem]"
               >
                 {data.button.label.replace(/\s*→\s*$/, "")}
                 <GenIcon name="arrow" className="h-4 w-4 shrink-0" />

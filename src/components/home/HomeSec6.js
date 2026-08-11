@@ -323,7 +323,7 @@ function MobileCta({ isDark }) {
         <p className={`text-[0.94rem] font-bold ${isDark ? "text-white" : "text-[#071827]"}`}>Honest. Data-Backed. Unbiased.</p>
         <p className={`mt-1 text-[0.74rem] leading-[1.45] ${isDark ? "text-white/76" : "text-[#27384a]"}`}>We tell you the truth - even when it means walking away. That&apos;s the Engine Finders promise.</p>
       </div>
-      <Link href="#" className="hidden shrink-0 items-center gap-4 rounded-md bg-[var(--color-primary)] px-6 py-4 text-[0.9rem] font-bold text-white sm:flex">
+      <Link href="#" className="btn-cta hidden shrink-0 items-center gap-4 rounded-md bg-[var(--color-primary)] px-6 py-4 text-[0.9rem] font-bold text-white sm:flex">
         Start Your Research
         <Icon name="arrow" />
       </Link>

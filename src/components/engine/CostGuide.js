@@ -157,8 +157,8 @@ function CompareCta({ cta, engineCode, desktop = false }) {
           </p>
         </div>
         <Link
-          href={cta.href}
-          className="mt-5 inline-flex min-h-11 items-center justify-center rounded-lg bg-[var(--color-surface)] px-4 text-[13px] font-bold uppercase tracking-[0.04em] text-[var(--color-text)]"
+          href="/quote"
+          className="btn-cta mt-5 inline-flex min-h-11 items-center justify-center rounded-lg bg-[var(--color-surface)] px-4 text-[13px] font-bold uppercase tracking-[0.04em] text-[var(--color-text)]"
         >
           Compare Prices →
         </Link>
@@ -168,8 +168,8 @@ function CompareCta({ cta, engineCode, desktop = false }) {
 
   return (
     <Link
-      href={cta.href}
-      className="mt-1 flex min-h-12 items-center justify-between gap-3 rounded-xl bg-[var(--color-primary)] px-3.5 py-3 text-white shadow-[0_12px_28px_var(--color-shadow)]"
+      href="/quote"
+      className="btn-cta mt-1 flex min-h-12 items-center justify-between gap-3 rounded-xl bg-[var(--color-primary)] px-3.5 py-3 text-white shadow-[0_12px_28px_var(--color-shadow)]"
     >
       <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-white/40">
         <svg aria-hidden="true" viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="1.9">

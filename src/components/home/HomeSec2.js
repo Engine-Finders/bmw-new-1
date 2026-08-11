@@ -526,7 +526,7 @@ export default function HomeSec2({ data }) {
             </div>
             <Link
               href={data.cta.href}
-              className="mt-4 flex items-center justify-center gap-4 rounded-md bg-[var(--color-primary)] px-5 py-3.5 text-[0.92rem] font-semibold text-white"
+              className="btn-cta mt-4 flex items-center justify-center gap-4 rounded-md bg-[var(--color-primary)] px-5 py-3.5 text-[0.92rem] font-semibold text-white"
             >
               <span>{data.cta.buttonLabel}</span>
               <svg aria-hidden="true" viewBox="0 0 24 24" className="h-6 w-6" fill="none" stroke="currentColor" strokeWidth="2">
