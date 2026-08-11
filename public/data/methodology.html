@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMW Engine Data Methodology — How We Build Our Data</title>
+    <meta name="description" content="BMW engine data methodology: how we collect, verify and publish real UK enquiry data for BMW engine failure rates, replacement costs and reliability insights.">
+    <link rel="canonical" href="https://bmwengines.uk/data/methodology">
+
+    <meta property="og:type" content="article">
+    <meta property="og:site_name" content="BMW Engines UK">
+    <meta property="og:title" content="BMW Engine Data Methodology — How We Build Our Data">
+    <meta property="og:description" content="Transparent methodology behind BMW engine failure rate data: sources, verification, limitations and how to interpret our reports.">
+    <meta property="og:url" content="https://bmwengines.uk/data/methodology">
+    <meta property="og:locale" content="en_GB">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="stylesheet" href="/assets/bmw/style.css">
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://bmwengines.uk/#organization",
+      "name": "BMW Engines UK",
+      "url": "https://bmwengines.uk/"
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://bmwengines.uk/#website",
+      "url": "https://bmwengines.uk/",
+      "publisher": { "@id": "https://bmwengines.uk/#organization" }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://bmwengines.uk/" },
+        { "@type": "ListItem", "position": 2, "name": "Data & Research", "item": "https://bmwengines.uk/data" },
+        { "@type": "ListItem", "position": 3, "name": "Methodology", "item": "https://bmwengines.uk/data/methodology" }
+      ]
+    },
+    {
+      "@type": "Dataset",
+      "name": "BMW Engine Data Methodology — How We Build Our Data",
+      "description": "Transparent methodology behind BMW engine failure rate data: sources, verification, limitations and how to interpret our reports.",
+      "creator": { "@id": "https://bmwengines.uk/#organization" },
+      "temporalCoverage": "2025-01-01/2025-12-31",
+      "spatialCoverage": "GB",
+      "variableMeasured": [
+        "Enquiry volume",
+        "Data source classification",
+        "Verification process",
+        "Refresh cycle",
+        "Data badge system"
+      ],
+      "license": "https://bmwengines.uk/about/editorial-standards",
+      "datePublished": "2026-02-01",
+      "dateModified": "2026-02-15"
+    },
+    {
+      "@type": "Article",
+      "headline": "BMW Engine Data Methodology — How We Build Our Data",
+      "description": "Transparent methodology behind BMW engine failure rate data: sources, verification, limitations and how to interpret our reports.",
+      "author": { "@type": "Organization", "name": "BMW Engines UK Editorial Team" },
+      "publisher": { "@id": "https://bmwengines.uk/#organization" },
+      "datePublished": "2026-02-01",
+      "dateModified": "2026-02-15",
+      "mainEntityOfPage": "https://bmwengines.uk/data/methodology"
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is the source of your BMW engine failure rate data?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Our data comes from internal CRM quote-request data from EnginesMarket.co.uk and EngineFinders.co.uk. In 2025, we processed 24,650 unique engine enquiries across all brands, of which 5,060 related to BMW engines. All figures are tagged with their source, such as [EM-VERIFIED]."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does a high enquiry count mean an engine is unreliable?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Not on its own. Enquiry volume reflects how many vehicles are on the road with that engine as much as it reflects failure frequency. We pair enquiry data with our separate Known Failure Patterns research to distinguish popularity from reliability."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do you verify your data?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "All data goes through a three-stage verification process: source verification (traceable to a primary source), cross-referencing (checked against multiple sources), and editorial review. Any figure that cannot be verified is marked [PLACEHOLDER] and does not publish."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is this data representative of all BMWs on UK roads?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No, and we want to be upfront about that. Our dataset reflects people who contacted us about a replacement engine, which naturally over-represents engines that fail and under-represents ones that don't. Full methodology and limitations are set out in this report."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How often is this data updated?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We update core enquiry data annually, each February, covering the prior full calendar year. Pricing data is reviewed quarterly. Vehicle value bands are updated annually. All updates are logged in our Corrections Log."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<nav class="site-nav">
+    <a href="/" class="brand">BMW<br><span style="color:var(--bmw-blue); font-weight:400;">ENGINES UK</span></a>
+    <ul>
+        <li><a href="/3-series">3-Series</a></li>
+        <li><a href="/5-series">5-Series</a></li>
+        <li><a href="/x3">X3</a></li>
+        <li><a href="/data">Data</a></li>
+        <li><a href="/about">About</a></li>
+    </ul>
+    <a href="#quote" class="cta-btn">START YOUR RESEARCH →</a>
+</nav>
+
+<div class="breadcrumb">
+    <a href="/">Home</a><span>/</span><a href="/data">Data &amp; Research</a><span>/</span>Methodology
+</div>
+
+<header class="hero">
+    <div class="hero-inner">
+        <div>
+            <span class="eyebrow">Data &amp; Research</span>
+            <h1>BMW Engine Data <span class="accent">Methodology</span></h1>
+            <p class="sub">Transparent, repeatable and independently verified: here's exactly how we collect, process and present BMW engine failure rate data, replacement costs and reliability insights.</p>
+        </div>
+        <div class="hero-image">
+            <img src="/assets/bmw/images/methodology-hero.webp" width="640" height="340" fetchpriority="high"
+                 alt="A BMW engine on a diagnostic bench with data charts and spreadsheets representing data analysis methodology"
+                 title="BMW Engine Data Methodology — How We Build Our Data">
+        </div>
+    </div>
+    <div class="stat-strip">
+        <div class="stat-strip-inner">
+            <div class="stat-cell"><div class="stat-icon">📊</div><div><div class="stat-num">24,650</div><div class="stat-label">Total 2025<br>Enquiries</div></div></div>
+            <div class="stat-cell"><div class="stat-icon">🔍</div><div><div class="stat-num">5,060</div><div class="stat-label">BMW-Specific<br>Enquiries</div></div></div>
+            <div class="stat-cell"><div class="stat-icon">✅</div><div><div class="stat-num">7</div><div class="stat-label">Data Badge<br>Levels</div></div></div>
+            <div class="stat-cell"><div class="stat-icon">🏆</div><div><div class="stat-num">100%</div><div class="stat-label">Independent<br>Editorial</div></div></div>
+        </div>
+    </div>
+</header>
+
+<div class="summary-box">
+    <p><strong>Our BMW engine data is built from real UK replacement enquiries, not guesswork.</strong> In 2025, we processed 24,650 unique engine enquiries across all brands, of which 5,060 related specifically to BMW engines. Every figure on this site is tagged with its source — from verified CRM counts to specialist interview insights.</p>
+    <ul>
+        <li><strong>Total 2025 enquiries:</strong> 24,650 <span class="tag">[EM-VERIFIED]</span></li>
+        <li><strong>BMW-specific enquiries:</strong> 5,060 <span class="tag">[EM-VERIFIED]</span></li>
+        <li><strong>Data sources:</strong> CRM enquiries, specialist interviews, third-party market data <span class="tag">[EM-VERIFIED / EM-INTERVIEW / THIRD-PARTY]</span></li>
+        <li><strong>Refresh cycle:</strong> Annual, each February</li>
+        <li><strong>Our commitment:</strong> Full transparency on limitations and methodology</li>
+    </ul>
+    <p>Read the full methodology, including our data badge system, verification process and how to interpret our reports, below.</p>
+</div>
+
+<nav class="toc-bar" aria-label="On this page">
+    <span class="toc-label">On this page</span>
+    <ul>
+        <li><a href="#sources">Data Sources</a></li>
+        <li><a href="#badges">Data Badge System</a></li>
+        <li><a href="#verification">Verification Process</a></li>
+        <li><a href="#limitations">Limitations</a></li>
+        <li><a href="#refresh">Refresh Cycle</a></li>
+        <li><a href="#interpretation">How to Interpret</a></li>
+        <li><a href="#faq">FAQ</a></li>
+    </ul>
+</nav>
+
+<section class="section" id="sources">
+    <div class="section-inner fade-up">
+        <h2>Data Sources</h2>
+        <p class="lede">Where every number on this site comes from.</p>
+        <p>All data published on BMW Engines UK is derived from one or more of the following sources. We never use anecdotal evidence or unverified forum claims as primary data sources — every figure is traceable to a documented source.</p>
+        <div class="data-table-wrap">
+            <table class="data-table">
+                <thead><tr><th>Source</th><th>Description</th><th>Data Type</th><th>Badge</th></tr></thead>
+                <tbody>
+                    <tr><td>Internal CRM Data</td><td>Quote-request data from EnginesMarket.co.uk and EngineFinders.co.uk</td><td>Enquiry volumes, model counts, condition split</td><td><span class="tag">[EM-VERIFIED]</span></td></tr>
+                    <tr><td>Supplier Quotes</td><td>Actual quotes sent to customers through our CRM</td><td>Pricing ranges, labour hours</td><td><span class="tag">[EM-QUOTE]</span></td></tr>
+                    <tr><td>Specialist Interviews</td><td>Direct conversations with 100+ UK engine specialists and workshop owners</td><td>Failure patterns, repairability, prevention</td><td><span class="tag">[EM-INTERVIEW]</span></td></tr>
+                    <tr><td>Post-Sale Surveys</td><td>100+ surveys completed 3-6 months after engine replacement</td><td>Satisfaction, decision-making, outcomes</td><td><span class="tag">[EM-SURVEY]</span></td></tr>
+                    <tr><td>Third-Party Market Data</td><td>Auto Trader, Motors.co.uk, Parkers, manufacturer TSBs</td><td>Vehicle values, market trends, recall data</td><td><span class="tag">[THIRD-PARTY]</span></td></tr>
+                    <tr><td>Pattern Data</td><td>Documented expert-knowledge patterns from multiple sources</td><td>Mileage bands, failure windows, common issues</td><td><span class="tag">[PATTERN DATA]</span></td></tr>
+                    <tr><td>Industry Estimates</td><td>Informed estimates where no proprietary or third-party data exists</td><td>Emerging trends, new engine insights</td><td><span class="tag">[INDUSTRY ESTIMATE]</span></td></tr>
+                </tbody>
+            </table>
+        </div>
+        <p style="font-size:13px; color:var(--bmw-grey-400);">All data is subject to our verification process. Full badge definitions are provided below.</p>
+    </div>
+</section>
+
+<section class="section section-alt" id="badges">
+    <div class="section-inner fade-down">
+        <h2>Data Badge System</h2>
+        <p class="lede">Every number on this site carries a badge showing its source and confidence level.</p>
+        <p>We use a consistent data badge system across all BMW Engines UK content. This ensures that every claim is traceable and that you can assess the reliability of any figure at a glance.</p>
+        <div class="data-table-wrap">
+            <table class="data-table">
+                <thead><tr><th>Badge</th><th>Meaning</th><th>Example</th></tr></thead>
+                <tbody>
+                    <tr><td><span class="tag">[EM-VERIFIED]</span></td><td>Exact count or percentage from our internal CRM (enquiry volumes, model requests, condition split)</td><td>"The N47 generated 1,450 enquiries in 2025" <span class="tag">[EM-VERIFIED]</span></td></tr>
+                    <tr><td><span class="tag">[EM-QUOTE]</span></td><td>Pricing ranges derived from actual supplier quotes sent through our CRM</td><td>"N47 replacement costs £3,200–£5,500" <span class="tag">[EM-QUOTE]</span></td></tr>
+                    <tr><td><span class="tag">[EM-SURVEY]</span></td><td>Post-sale customer survey results</td><td>"78% of owners would replace again" <span class="tag">[EM-SURVEY]</span></td></tr>
+                    <tr><td><span class="tag">[EM-INTERVIEW]</span></td><td>Direct statements from mechanics, workshop owners, or supplier managers</td><td>"Many specialists report timing chain issues" <span class="tag">[EM-INTERVIEW]</span></td></tr>
+                    <tr><td><span class="tag">[THIRD-PARTY]</span></td><td>External data from Auto Trader, Parkers, manufacturer TSBs, etc.</td><td>"Vehicle value: £3,000–£9,000" <span class="tag">[THIRD-PARTY]</span></td></tr>
+                    <tr><td><span class="tag">[PATTERN DATA]</span></td><td>Documented expert-knowledge patterns, no proprietary volume behind it</td><td>"Peak failure window: 60,000–120,000 miles" <span class="tag">[PATTERN DATA]</span></td></tr>
+                    <tr><td><span class="tag">[INDUSTRY ESTIMATE]</span></td><td>Informed estimate where no proprietary or third-party data exists</td><td>"B58 lifespan: 180,000–220,000+ miles" <span class="tag">[INDUSTRY ESTIMATE]</span></td></tr>
+                </tbody>
+            </table>
+        </div>
+        <p style="font-size:13px; color:var(--bmw-grey-400);">A number with no badge is a content error. Every figure on this site is tagged.</p>
+    </div>
+</section>
+
+<section class="section" id="verification" data-lazy-section>
+    <div class="section-inner fade-left">
+        <h2>Verification Process</h2>
+        <p class="lede">How we ensure every number is accurate.</p>
+        <p>All data published on BMW Engines UK goes through a three-stage verification process before publication.</p>
+        <ol style="max-width:760px; color:var(--bmw-grey-400);">
+            <li><strong>Stage 1: Source verification.</strong> Every figure is sourced from a documented primary source — either our internal CRM, a recorded specialist interview, a customer survey, or a named third-party source. We do not use anonymous forum posts or unverified social media claims.</li>
+            <li><strong>Stage 2: Cross-referencing.</strong> Where possible, figures are cross-referenced against multiple sources. For example, pricing data is cross-checked against eBay Motors and PistonHeads classifieds to ensure market accuracy <span class="tag">[EM-QUOTE]</span>.</li>
+            <li><strong>Stage 3: Editorial review.</strong> Every page is reviewed by an editorial team member who checks data tags, source attribution and interpretation. Any figure that cannot be verified is marked <span class="tag">[PLACEHOLDER — confirm vs cost sheet]</span> and does not publish.</li>
+        </ol>
+        <p style="max-width:760px; color:var(--bmw-grey-400);">We also maintain a public <a href="/about/corrections">Corrections Log</a> where any errors or updates are recorded transparently.</p>
+    </div>
+</section>
+
+<section class="section section-alt" id="limitations" data-lazy-section>
+    <div class="section-inner fade-right">
+        <h2>Limitations</h2>
+        <p class="lede">What our data can and cannot tell you.</p>
+        <p>We believe in transparency as much as accuracy. Here are the key limitations of our data.</p>
+        <div style="max-width:760px; color:var(--bmw-grey-400);">
+            <p><strong>Enquiry volume ≠ failure rate.</strong> Our dataset reflects people who contacted us about a replacement engine. A higher enquiry count can mean an engine is more failure-prone, or simply that more of that engine exist in the vehicle parc, or that it's an older engine reaching typical replacement age. We do not claim failure rates against the total vehicle population; only enquiry share within our own dataset <span class="tag">[PATTERN DATA]</span>.</p>
+            <p><strong>Sample bias.</strong> Our data naturally over-represents engines that fail and under-represents ones that don't. This is not a random sample of all BMWs on UK roads, and we are upfront about that in every data report.</p>
+            <p><strong>Costs are indicative.</strong> Pricing ranges are based on actual supplier quotes and market data, but individual quotes vary by region, vehicle condition and specialist availability. Main dealer costs may be 30-50% higher than independent specialist rates <span class="tag">[EM-QUOTE]</span>.</p>
+            <p><strong>Vehicle values are estimates.</strong> Value bands are based on Auto Trader and Motors.co.uk market data, but actual values vary by mileage, condition and specification <span class="tag">[THIRD-PARTY]</span>.</p>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="refresh" data-lazy-section>
+    <div class="section-inner fade-up">
+        <h2>Refresh Cycle</h2>
+        <p class="lede">How often we update our data.</p>
+        <p style="max-width:760px; color:var(--bmw-grey-400);">We update our core enquiry data annually, each February, covering the prior full calendar year. This allows us to show year-on-year trends and track the shift between engine generations, as seen in our <a href="/data/enquiry-trends">Enquiry Trends</a> report.</p>
+        <p style="max-width:760px; color:var(--bmw-grey-400);">Pricing data is reviewed quarterly to reflect market changes. Vehicle value bands are updated annually in line with Auto Trader's market data refresh cycle. All updates are logged in our <a href="/about/corrections">Corrections Log</a>.</p>
+        <p style="max-width:760px; color:var(--bmw-grey-400);">Figures are locked at time of publication and are not silently revised — any correction is logged publicly rather than edited away.</p>
+    </div>
+</section>
+
+<section class="section section-alt" id="interpretation" data-lazy-section>
+    <div class="section-inner fade-down">
+        <h2>How to Interpret Our Data</h2>
+        <p class="lede">A quick guide to reading BMW engine data reports.</p>
+        <div style="max-width:760px; color:var(--bmw-grey-400);">
+            <p><strong>Enquiry volume.</strong> The number of replacement requests we received for a specific engine in a given period. Higher volume = more enquiries, not necessarily higher failure rate. Always read alongside vehicle parc size and age.</p>
+            <p><strong>Replacement cost.</strong> The typical cost of a reconditioned engine supply and fit (R&F) at independent specialist rates. Main dealer costs are higher. Used engines are cheaper but carry more risk <span class="tag">[EM-QUOTE]</span>.</p>
+            <p><strong>R-to-V flag.</strong> Repair-to-Value flag shows whether replacement is financially sensible relative to the vehicle's current market value. ✅ Safe = replacement cost well within value. ⚠️ Watch = cost may be 40-70% of value. 🔴 Scrap = replacement cost may exceed value <span class="tag">[THIRD-PARTY / PATTERN DATA]</span>.</p>
+            <p><strong>Typical mileage at failure.</strong> The mileage band where most enquiries occur. This is a guidance range, not a guarantee. Individual results vary dramatically based on maintenance, driving style and service history <span class="tag">[PATTERN DATA]</span>.</p>
+        </div>
+        <p style="max-width:760px; color:var(--bmw-grey-400);">For the full breakdown behind any single figure on this site, see our per-engine data pages: <a href="/data/n47-failure-rate">N47 Failure Rate</a>, <a href="/data/b47-failure-rate">B47 Failure Rate</a>, <a href="/data/n57-failure-rate">N57 Failure Rate</a>, <a href="/data/b58-failure-rate">B58 Failure Rate</a>, <a href="/data/m47-failure-rate">M47 Failure Rate</a> and <a href="/data/m57-failure-rate">M57 Failure Rate</a>.</p>
+    </div>
+</section>
+
+<section class="section" id="faq" data-lazy-section>
+    <div class="section-inner fade-left">
+        <h2>Frequently Asked Questions</h2>
+        <details class="faq-item" open><summary>What is the source of your BMW engine failure rate data?</summary><p>Our data comes from internal CRM quote-request data from EnginesMarket.co.uk and EngineFinders.co.uk. In 2025, we processed 24,650 unique engine enquiries across all brands, of which 5,060 related to BMW engines. All figures are tagged with their source, such as <span class="tag">[EM-VERIFIED]</span>.</p></details>
+        <details class="faq-item"><summary>Does a high enquiry count mean an engine is unreliable?</summary><p>Not on its own. Enquiry volume reflects how many vehicles are on the road with that engine as much as it reflects failure frequency. We pair enquiry data with our separate Known Failure Patterns research to distinguish popularity from reliability.</p></details>
+        <details class="faq-item"><summary>How do you verify your data?</summary><p>All data goes through a three-stage verification process: source verification (traceable to a primary source), cross-referencing (checked against multiple sources), and editorial review. Any figure that cannot be verified is marked <span class="tag">[PLACEHOLDER]</span> and does not publish.</p></details>
+        <details class="faq-item"><summary>Is this data representative of all BMWs on UK roads?</summary><p>No, and we want to be upfront about that. Our dataset reflects people who contacted us about a replacement engine, which naturally over-represents engines that fail and under-represents ones that don't. Full methodology and limitations are set out in this report.</p></details>
+        <details class="faq-item"><summary>How often is this data updated?</summary><p>We update core enquiry data annually, each February, covering the prior full calendar year. Pricing data is reviewed quarterly. Vehicle value bands are updated annually. All updates are logged in our Corrections Log.</p></details>
+    </div>
+</section>
+
+<div class="trust-strip">
+    <div class="trust-grid">
+        <div class="trust-item"><span class="dot">✓</span><p><strong>5,060 Real Enquiries</strong>The full BMW-specific dataset behind every figure on this site.</p></div>
+        <div class="trust-item"><span class="dot">✓</span><p><strong>Transparent Badging</strong>Every number carries a source badge showing its confidence level.</p></div>
+        <div class="trust-item"><span class="dot">✓</span><p><strong>Limitations Disclosed</strong>We state plainly what our data can't tell you, not just what it can.</p></div>
+        <div class="trust-item"><span class="dot">✓</span><p><strong>100% Independent</strong>No sponsors, no manufacturer influence.</p></div>
+    </div>
+</div>
+
+<section class="final-cta" id="quote">
+    <h2>Explore Our BMW Engine Data</h2>
+    <p>See where your specific engine and vehicle sit in our data, and compare quotes from our vetted specialist network.</p>
+    <a href="/data/n47-failure-rate" class="btn-blue">VIEW N47 DATA →</a>
+    <a href="/data/b47-failure-rate" class="btn-outline">VIEW B47 DATA</a>
+</section>
+
+<footer>
+    <p>BMW Engines UK — part of the Engine Finders network. Independent editorial content; not affiliated with BMW AG.</p>
+    <p><a href="/about/editorial-standards">Editorial Standards</a> · <a href="/about/data-verification">Data Verification</a> · <a href="/about/corrections">Corrections Log</a></p>
+</footer>
+
+<script src="/assets/bmw/effects.js"></script>
+</body>
+</html>
