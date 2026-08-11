@@ -279,8 +279,8 @@
         "eraNote": "The modern, most-reliable generation of this badge - still a chain-tensioned engine, so not risk-free, but the furthest removed from the rear-chain story that defines this badge's reputation."
       }
     ],
-    "sourceNote": "",
-    "dataNote": ""
+    "sourceNote": "This table is the single source every other section on this page matches - Sections 2, 4 and 6 reference it rather than restating conflicting figures.",
+    "dataNote": "E90's N47D20C rating and its 1,450 JLR-wide enquiry figure are real, already-published facts inherited from the BMW 3 Series Model Page and the validated E90 Generation Page - not re-derived here. M47 (E46) and B47 (F30 post-facelift, G20) have no dedicated Engine Page yet, so their ratings are newly assigned on this page, based on live verification: M47's ★★★★½ reflects a strong, consistent cross-source consensus (E46Fanatics, Euro Racing Parts buying guide, TorqueCars, Wikipedia, RMS Motoring, Baby BMW forum, engineexplained.com - 7 sources, all converging on \"bulletproof\"/\"rock-solid\"/exceeds 300,000km, with swirl flaps as the only material weak point on the 150bhp variant). B47's ★★★★☆ reflects Wikipedia (BMW B47, BMW 3 Series F30) plus a dedicated BMW-specialist reliability guide confirming the chain relocation to the front eliminated the specific rear-chain failure mode, while noting the B47 still requires timing-chain monitoring generally. Both should be treated as provisional pending dedicated M47 and B47 Engine Pages."
   },
   "replacementCosts": {
     "h2": "BMW 320d Engine Replacement Costs",
@@ -321,15 +321,70 @@
         "bestFor": "Insurance jobs, warranty claims"
       }
     ],
-    "figuresNote": "",
+    "figuresNote": "Figures above reflect the current G20/late-F30 B47D20 generation, the most common quote request today. Older generations: see the Era Map above for E46/M47 and E90/N47-specific pricing, which runs lower.",
     "labourEstimate": "Fitting a 320d engine typically takes 10–14 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer).",
     "cta": {
-      "label": "",
+      "label": "Compare 320d engine prices from UK specialists",
       "href": "#"
     }
   },
   "commonProblems": {
-    "problems": []
+    "problems": [
+      {
+        "id": 1,
+        "title": "N47 Rear Timing Chain Failure (E90, early F30)",
+        "symptoms": "Cold-start rattle lasting 1–30 seconds, metallic ticking, engine warning light.",
+        "typicalMileage": "60,000–100,000 miles.",
+        "repairCost": "£650–£1,800 (preventative).",
+        "replacementCost": "£3,200–£5,500 (catastrophic).",
+        "urgency": {
+          "icon": "🔴",
+          "label": "Immediate",
+          "text": "if you hear rattle, book an inspection today."
+        },
+        "recommendation": "This is the single most searched 320d issue for good reason - at the first sign of cold-start rattle, get the chain inspected. A £650–£1,800 preventative repair is dramatically cheaper than the £3,200+ replacement that follows.",
+        "failureLink": {
+          "label": "Read the full timing chain failure guide",
+          "href": "/failures/n47-timing-chain/"
+        }
+      },
+      {
+        "id": 2,
+        "title": "Swirl Flap Failure (M47 150bhp variant, E46/early E90)",
+        "symptoms": "Loss of power, rough idle, engine warning light, occasional rattling from the intake.",
+        "typicalMileage": "100,000–180,000 miles.",
+        "repairCost": "£100–£250 (preventative blanking plates).",
+        "replacementCost": "£850–£1,200 (intake manifold, or engine repair if debris entered a cylinder).",
+        "urgency": {
+          "icon": "🟡",
+          "label": "Monitor",
+          "text": "book inspection soon."
+        },
+        "recommendation": "This affects the M47's 150bhp common-rail variant and remains a known issue on early N47s too. Preventive blanking is cheap, effective, and removes the risk entirely with no noticeable performance loss.",
+        "failureLink": {
+          "label": "Read the full swirl flap failure guide",
+          "href": "/failures/swirl-flap-failure/"
+        }
+      },
+      {
+        "id": 3,
+        "title": "EGR Cooler Coolant Leak (N47 and B47, all F30-era)",
+        "symptoms": "Coolant loss with no visible external leak, white exhaust smoke, occasional burning smell.",
+        "typicalMileage": "Any mileage - this was the subject of a global BMW recall affecting both N47 and B47 diesel variants.",
+        "repairCost": "£300–£600 (EGR cooler replacement).",
+        "replacementCost": "N/A - this doesn't typically progress to engine replacement if addressed, but ignored coolant loss can lead to overheating damage.",
+        "urgency": {
+          "icon": "🟠",
+          "label": "Immediate",
+          "text": "check recall completion status on any F30-era 320d."
+        },
+        "recommendation": "Verify recall completion before buying any N47 or B47-engined F30 320d - this is a straightforward, well-documented fix when caught early.",
+        "failureLink": {
+          "label": "Read the full EGR cooler failure guide",
+          "href": "/failures/egr-valve-cooler-failure/"
+        }
+      }
+    ]
   },
   "quotesCta": {
     "headline": "Ready to Compare? Get Matched With a Vetted BMW Specialist →",
@@ -399,7 +454,7 @@
     },
     "closingVerdict": "Across four decades of this badge, the honest advice barely changes: buy on documented history, not on generation alone. The M47 and post-2016 B47 are this badge's two genuinely low-risk eras; the E90 and early F30 N47 demand real chain-history proof before you commit.",
     "cta": {
-      "label": "",
+      "label": "Compare 320d engine prices before you buy",
       "href": "#"
     }
   },
@@ -454,7 +509,7 @@
         "avgReconCost": "£3,400–£5,800 [PLACEHOLDER]"
       }
     ],
-    "matchNote": "",
+    "matchNote": "This table's rows match Section 1B's Era Map exactly.",
     "technicalSpecs": {
       "title": "Technical Specs (current B47D20 generation):",
       "items": [
@@ -481,7 +536,7 @@
       ]
     },
     "cta": {
-      "label": "",
+      "label": "Compare 320d engine prices for your BMW",
       "href": "#"
     }
   },
@@ -549,8 +604,24 @@
     "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty - always confirm terms with your chosen supplier."
   },
   "trustCta": {
-    "h2": "",
-    "trustPoints": [],
+    "h2": "Why UK BMW 320d Owners Trust BMWEngines.uk",
+    "trustPoints": [
+      {
+        "icon": "shield",
+        "title": "Trusted 320d Engine Suppliers",
+        "text": "Every garage and engine rebuilder in our network is vetted, rated and reviewed by real 320d owners, as part of the Engine Finders network, across every engine era from M47 to B47."
+      },
+      {
+        "icon": "scale",
+        "title": "Compare 320d Engine Replacement Companies",
+        "text": "See prices, warranty terms and supply & fit options side-by-side before you commit."
+      },
+      {
+        "icon": "wrench",
+        "title": "UK Engine Replacement Services for 320d",
+        "text": "Supply-only or full supply & fit available nationwide, covering every generation of this badge since 1998."
+      }
+    ],
     "finalCta": "Find the best BMW 320d engine replacement UK drivers rely on. Compare prices from trusted specialists on EnginesMarket today and get back on the road with confidence.",
     "ctaButton": {
       "label": "Compare BMW 320d Engine Prices Now →",

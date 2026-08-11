@@ -25,9 +25,109 @@ const paths = {
   clock: "M12 7v5l3.5 2M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z",
   tag: "M20.59 13.41 13.42 20.58a2 2 0 0 1-2.83 0L3 13V3h10l7.59 7.59a2 2 0 0 1 0 2.82ZM7 7h.01",
   refresh: "M21 12a9 9 0 0 1-15.5 6.36M3 12a9 9 0 0 1 15.5-6.36M21 3v6h-6M3 21v-6h6",
+  pin: "M12 21s7-6.1 7-11.5A7 7 0 0 0 5 9.5C5 14.9 12 21 12 21Zm0-8.5a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z",
+  target: "M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18Zm0-4.5a4.5 4.5 0 1 0 0-9 4.5 4.5 0 0 0 0 9Zm0-3a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3ZM21 3l-5.5 5.5",
+  cart: "M3 4h2l2.4 12.2a2 2 0 0 0 2 1.8h7.6a2 2 0 0 0 2-1.6L21 8H6M9 21a1 1 0 1 0 0-2 1 1 0 0 0 0 2Zm9 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z",
 };
 
 export default function GenIcon({ name, className = "h-5 w-5" }) {
+  if (name === "ear") {
+    return (
+      <svg aria-hidden="true" viewBox="0 0 24 24" className={className} fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M8 13a4 4 0 1 1 8 0c0 2-1 3-2 4-.7.7-1 1.3-1 2.5a2.5 2.5 0 0 1-5 0" />
+        <path d="M8 13c0-4.4 3.6-8 8-8" />
+      </svg>
+    );
+  }
+
+  if (name === "clipboardCheck") {
+    return (
+      <svg aria-hidden="true" viewBox="0 0 24 24" className={className} fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <rect x="5" y="4" width="14" height="17" rx="1.5" />
+        <path d="M9 4V3a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v1" />
+        <path d="m9 13 2 2 4-4" />
+      </svg>
+    );
+  }
+
+  if (name === "cloud") {
+    return (
+      <svg aria-hidden="true" viewBox="0 0 24 24" className={className} fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M7 18a4 4 0 0 1-1-7.9A5 5 0 0 1 15.5 8a4.5 4.5 0 0 1 1.5 8.7" />
+        <path d="M7 18h9" />
+      </svg>
+    );
+  }
+
+  if (name === "fan") {
+    return (
+      <svg aria-hidden="true" viewBox="0 0 24 24" className={className} fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <circle cx="12" cy="12" r="1.5" />
+        <path d="M12 10.5c-1-2-.5-4.5 1-6 1.7-1.7 4-1.5 4.5 0s-.5 3-2.5 4c2.2-.2 4.3.8 5 2.5.7 1.7-.5 3.5-2 3-1.5-.5-2.5-2-3-4 .5 2 0 4.5-1.5 6-1.7 1.7-4 1.5-4.5 0s.5-3 2.5-4c-2.2.2-4.3-.8-5-2.5-.7-1.7.5-3.5 2-3 1.5.5 2.5 2 3 4Z" />
+      </svg>
+    );
+  }
+
+  if (name === "exhaust") {
+    return (
+      <svg aria-hidden="true" viewBox="0 0 24 24" className={className} fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <rect x="2" y="9" width="10" height="6" rx="1.5" />
+        <path d="M12 12h6" />
+        <rect x="18" y="10" width="4" height="4" rx="1" />
+        <path d="M5 9V7m3 2V7" />
+      </svg>
+    );
+  }
+
+  if (name === "oilDrop") {
+    return (
+      <svg aria-hidden="true" viewBox="0 0 24 24" className={className} fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M12 3s6 7 6 11.5a6 6 0 0 1-12 0C6 10 12 3 12 3Z" />
+        <path d="M9.5 15a2.5 2.5 0 0 0 2.5 2.5" />
+      </svg>
+    );
+  }
+
+  if (name === "engineWarning") {
+    return (
+      <svg aria-hidden="true" viewBox="0 0 24 24" className={className} fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M3 12h3m9-3h2l2 2v6h-2M7 9h7v7H7z" />
+        <path d="M9 9V6h3v3" />
+        <circle cx="9" cy="16.5" r="1" fill="currentColor" stroke="none" />
+      </svg>
+    );
+  }
+
+  if (name === "clipboardSearch") {
+    return (
+      <svg aria-hidden="true" viewBox="0 0 24 24" className={className} fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <rect x="5" y="4" width="14" height="17" rx="1.5" />
+        <path d="M9 4V3a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v1" />
+        <circle cx="10.5" cy="13.5" r="2.5" />
+        <path d="m14 17-2-2" />
+      </svg>
+    );
+  }
+
+  if (name === "drum") {
+    return (
+      <svg aria-hidden="true" viewBox="0 0 24 24" className={className} fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <rect x="5" y="3" width="14" height="18" rx="1.5" />
+        <path d="M5 9h14M5 15h14M8 3v18M16 3v18" />
+      </svg>
+    );
+  }
+
+  if (name === "users") {
+    return (
+      <svg aria-hidden="true" viewBox="0 0 24 24" className={className} fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <circle cx="9" cy="8" r="3" />
+        <path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6" />
+        <path d="M16 4.2a3 3 0 0 1 0 5.6M20 20c0-2.7-1.8-5-4.3-5.7" />
+      </svg>
+    );
+  }
+
   return (
     <svg aria-hidden="true" viewBox="0 0 24 24" className={className} fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
       <path d={paths[name] || paths.info} />

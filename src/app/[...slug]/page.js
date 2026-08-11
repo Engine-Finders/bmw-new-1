@@ -220,7 +220,7 @@ export default async function CatchAllPage({ params }) {
         <OwnershipEconomics data={data.ownershipEconomics} />
         <GenProblems data={data.commonProblems} />
         <GenReplacementCosts data={data.replacementCosts} />
-        <CoreVariants data={data.coreVariants} />
+        <CoreVariants data={data.coreVariants} parentSlug={entry.parent} />
         <GenMarketIntelligence data={data.marketIntelligence} />
         <GenFAQAccordion data={data.faq} />
         <GenTrustCta data={data.trustCta} />
@@ -230,17 +230,7 @@ export default async function CatchAllPage({ params }) {
 
   if (type === "variants") {
     return (
-      <main
-        style={{
-          padding: "24px 16px 64px",
-          maxWidth: 1100,
-          margin: "0 auto",
-          lineHeight: 1.5,
-          display: "flex",
-          flexDirection: "column",
-          gap: 40,
-        }}
-      >
+      <main className="flex flex-col">
         {data.meta?.jsonLd && (
           <script
             type="application/ld+json"
