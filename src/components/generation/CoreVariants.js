@@ -52,7 +52,7 @@ export default function CoreVariants({ data }) {
   if (!data) return null;
 
   const isDark = theme === "dark";
-  const image = isDark ? "/e90/core_dark.png" : "/e90/core_light.png";
+  const image = isDark ? "/e90/core_dark.webp" : "/e90/core_light.webp";
   const headingClass = isDark ? "text-white" : "text-[var(--color-text)]";
   const scopeNoteTextClass = isDark ? "text-white/85" : "text-[var(--color-text-muted)]";
   const scopeNoteStrongClass = isDark ? "text-white" : "text-[var(--color-text)]";

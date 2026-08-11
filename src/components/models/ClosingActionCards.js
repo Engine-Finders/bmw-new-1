@@ -17,7 +17,7 @@ const cardThemes = [
     accent: "#078f58",
     border: "border-emerald-200",
     bg: "bg-[linear-gradient(135deg,#f8fffb_0%,#eefaf5_100%)]",
-    image: "/e90/engine.png",
+    image: "/e90/engine.webp",
     imageClass: "object-contain object-right-bottom",
     cta: "Start Diagnosis",
     icon: "stethoscope",

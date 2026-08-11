@@ -22,7 +22,7 @@ export default function TrustCta({ data }) {
   if (!data) return null;
 
   const isDark = theme === "dark";
-  const image = isDark ? "/320d/trust_dark.png" : "/320d/trust_light.png";
+  const image = isDark ? "/320d/trust_dark.webp" : "/320d/trust_light.webp";
   const headingClass = isDark ? "text-white" : "text-[var(--color-text)]";
   const bodyTextClass = isDark ? "text-white/80" : "text-[var(--color-text-muted)]";
 

@@ -48,7 +48,7 @@ export default function Overview({ data }) {
   if (!data) return null;
 
   const isDark = theme === "dark";
-  const image = isDark ? "/e90/overview_dark - Copy.png" : "/e90/overview_light.png";
+  const image = isDark ? "/e90/overview_dark - Copy.webp" : "/e90/overview_light.webp";
   const keyFacts = parseKeyFacts(data.keyFacts);
 
   const headingClass = isDark ? "text-white" : "text-[var(--color-text)]";
@@ -183,7 +183,7 @@ export default function Overview({ data }) {
     </div>
   ) : null;
 
-  const mobileImage = isDark ? "/e90/overview_mobile_dark.png" : "/e90/overview_mobile_light.png";
+  const mobileImage = isDark ? "/e90/overview_mobile_dark.webp" : "/e90/overview_mobile_light.webp";
 
   return (
     <section className={`w-full bg-[var(--color-page)] ${headingClass}`}>

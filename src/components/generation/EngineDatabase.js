@@ -108,7 +108,7 @@ export default function EngineDatabase({ data }) {
         <div className="relative">
           <span className="pointer-events-none absolute inset-y-0 right-0 hidden w-14 sm:block md:w-auto">
             <Image
-              src="/e90/stripe.png"
+              src="/e90/stripe.webp"
               alt=""
               width={220}
               height={220}

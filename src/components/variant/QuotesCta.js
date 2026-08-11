@@ -16,7 +16,7 @@ export default function QuotesCta({ data }) {
   if (!data) return null;
 
   const isDark = theme === "dark";
-  const image = isDark ? "/320d/compare_dark.png" : "/320d/compare_light.png";
+  const image = isDark ? "/320d/compare_dark.webp" : "/320d/compare_light.webp";
   const { title, subtitle } = splitHeadline(data.headline);
   const headingClass = isDark ? "text-white" : "text-[var(--color-text)]";
   const bodyTextClass = isDark ? "text-white/80" : "text-[var(--color-text-muted)]";

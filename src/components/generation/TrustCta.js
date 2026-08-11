@@ -24,8 +24,8 @@ export default function TrustCta({ data }) {
   if (!data) return null;
 
   const isDark = theme === "dark";
-  const image = isDark ? "/e90/section11_dark.png" : "/e90/section11_light.png";
-  const mobileImage = isDark ? "/e90/section11_mobile_dark.png" : "/e90/section11_mobile_light.png";
+  const image = isDark ? "/e90/section11_dark.webp" : "/e90/section11_light.webp";
+  const mobileImage = isDark ? "/e90/section11_mobile_dark.webp" : "/e90/section11_mobile_light.webp";
   const headingClass = isDark ? "text-white" : "text-[var(--color-text)]";
   const bodyTextClass = isDark ? "text-white/75" : "text-[var(--color-text-muted)]";
   const pointPanelClass = "glass-panel md:border-0 md:bg-transparent md:backdrop-blur-none";
