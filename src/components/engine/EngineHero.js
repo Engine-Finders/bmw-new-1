@@ -216,7 +216,7 @@ export default function EngineHero({ data }) {
             <div className="absolute inset-x-0 bottom-[8%] mx-auto h-[150px] w-[92%] rounded-[50%] border border-[rgba(79,133,242,0.3)] md:bottom-[3%] md:h-[220px] md:w-[86%]" />
             <div className="absolute inset-x-0 bottom-[11%] mx-auto h-[104px] w-[72%] rounded-[50%] border border-[rgba(79,133,242,0.2)] md:bottom-[7%] md:h-[152px] md:w-[64%]" />
             <Image
-              src="/e90/engine.png"
+              src="/e90/engine.webp"
               alt={normalizeText(data.h1)}
               width={522}
               height={608}

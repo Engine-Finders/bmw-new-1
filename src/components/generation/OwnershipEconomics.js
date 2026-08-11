@@ -86,8 +86,8 @@ export default function OwnershipEconomics({ data }) {
   const headerBg = isDark ? "bg-[#0a1f44]" : "bg-[var(--color-primary)]";
   const headerDivider = isDark ? "border-white/20" : "border-white/25";
   const bodyWrapperBg = isDark ? "bg-black" : "bg-[var(--color-table-surface)]";
-  const headerImage = isDark ? "/e90/engine_replacement_dark.png" : "/e90/engine_replacement_light.png";
-  const headerImageMobile = isDark ? "/e90/engine_replacement_mobile_dark.png" : "/e90/engine_replacement_mobile_light.png";
+  const headerImage = isDark ? "/e90/engine_replacement_dark.webp" : "/e90/engine_replacement_light.webp";
+  const headerImageMobile = isDark ? "/e90/engine_replacement_mobile_dark.webp" : "/e90/engine_replacement_mobile_light.webp";
   const headerHeadingClass = isDark ? "text-white" : "text-[var(--color-text)]";
 
   return (

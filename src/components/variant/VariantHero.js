@@ -62,8 +62,8 @@ export default function VariantHero({ data }) {
   if (!data) return null;
 
   const isDark = theme === "dark";
-  const heroImage = isDark ? "/320d/hero_dark.png" : "/320d/hero_light.png";
-  const heroImageMobile = isDark ? "/320d/hero_mobile_dark1.png" : "/320d/hero_mobile_light1.png";
+  const heroImage = isDark ? "/320d/hero_dark.webp" : "/320d/hero_light.webp";
+  const heroImageMobile = isDark ? "/320d/hero_mobile_dark1.webp" : "/320d/hero_mobile_light1.webp";
   const price = splitPriceAnchor(data.priceAnchor);
   const pill = splitTagPill(data.tagPill);
   const tickerItems = (data.ticker || "").replace(/^●\s*/, "").split(" · ").filter(Boolean);

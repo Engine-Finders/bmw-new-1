@@ -7,7 +7,7 @@ import MStripe from "@/components/reusableComponents/MStripe";
 import GenIcon from "../generation/GenIcons";
 
 const DESKTOP_COLS = "grid-cols-[1.5fr_0.9fr_0.9fr_1.2fr_1.1fr]";
-const ENGINE_IMAGE = "/320d/engine.png";
+const ENGINE_IMAGE = "/320d/engine.webp";
 
 function shortCode(engineCode = "") {
   return engineCode.split(" / ")[0].split(" (")[0];

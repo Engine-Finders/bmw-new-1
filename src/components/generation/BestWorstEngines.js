@@ -64,7 +64,7 @@ function MobileCard({ item, isDark }) {
           <GenIcon name={style.icon} className="h-3.5 w-3.5" />
         </span>
         <div className="relative h-28 w-20 shrink-0 overflow-hidden">
-          <Image src="/e90/engine.png" alt={`${item.engine} engine`} fill className="object-contain" sizes="80px" />
+          <Image src="/e90/engine.webp" alt={`${item.engine} engine`} fill className="object-contain" sizes="80px" />
         </div>
       </div>
 
@@ -114,7 +114,7 @@ function Card({ item, isDark }) {
 
       <div className="flex items-start gap-2.5">
         <div className="relative -ml-3 h-36 w-24 shrink-0 overflow-hidden rounded-sm">
-          <Image src="/e90/engine.png" alt={`${item.engine} engine`} fill className="object-contain" sizes="100px" />
+          <Image src="/e90/engine.webp" alt={`${item.engine} engine`} fill className="object-contain" sizes="100px" />
         </div>
         <p className="text-[0.8rem] leading-[1.35] text-[var(--color-text-muted)]">&ldquo;<span dangerouslySetInnerHTML={{ __html: item.quote }} />&rdquo;</p>
       </div>

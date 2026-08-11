@@ -197,7 +197,7 @@ function DesktopWideCard({ metric, value, text, isDark, imageType = "none" }) {
       <div className={`relative hidden h-full overflow-hidden lg:flex ${imageType === "engine" ? "items-center justify-center" : "items-end justify-center"}`}>
         {imageType === "engine" ? (
           <Image
-            src="/e90/engine.png"
+            src="/e90/engine.webp"
             alt=""
             width={300}
             height={260}

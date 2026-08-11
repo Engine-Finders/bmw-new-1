@@ -76,7 +76,7 @@ function AccordionCard({ problem, isDark, isOpen, onToggle }) {
     <div className="glass-panel overflow-hidden rounded-md">
       <button type="button" onClick={onToggle} aria-expanded={isOpen} className="flex w-full gap-3 py-3 pr-3 text-left">
         <span className="relative h-20 w-20 shrink-0 overflow-hidden">
-          <Image src="/e90/section6.png" alt={problem.title} fill className="object-cover object-[center_20%] scale-125" sizes="80px" />
+          <Image src="/e90/section6.webp" alt={problem.title} fill className="object-cover object-[center_20%] scale-125" sizes="80px" />
         </span>
 
         <div className="min-w-0 flex-1">
@@ -174,7 +174,7 @@ function ProblemCard({ problem, isDark }) {
         </div>
         <div className="absolute right-0 top-0 h-full w-[42%] overflow-hidden rounded-bl-md">
           <div className="relative h-full min-h-[128px] w-full">
-            <Image src="/e90/section6.png" alt={problem.title} fill className="object-cover" sizes="180px" />
+            <Image src="/e90/section6.webp" alt={problem.title} fill className="object-cover" sizes="180px" />
           </div>
         </div>
       </div>

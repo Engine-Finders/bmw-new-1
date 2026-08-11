@@ -7,7 +7,7 @@ import MStripe from "@/components/reusableComponents/MStripe";
 import GenIcon from "../generation/GenIcons";
 
 const DESKTOP_COLS = "grid-cols-[130px_110px_1.3fr_1.2fr_1.1fr_1.8fr]";
-const CAR_IMAGE = "/320d/era_map.png";
+const CAR_IMAGE = "/320d/era_map.webp";
 
 const TRUST_POINTS = [
   { icon: "dollar", label: "Real UK Cost Data" },

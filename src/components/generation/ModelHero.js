@@ -64,7 +64,7 @@ export default function ModelHero({ data }) {
         {/* Mobile: dedicated portrait crop, narrowed and centered so it reads tall/slim rather than stretched full-width */}
         <div className="absolute inset-x-0 top-[20%] bottom-[2%] md:hidden">
           <Image
-            src={isDark ? "/e90/hero_mobile_dark.png" : "/e90/hero_mobile_day.png"}
+            src={isDark ? "/e90/hero_mobile_dark.webp" : "/e90/hero_mobile_day.webp"}
             alt={data.image?.alt || ""}
             fill
             className="object-fill"

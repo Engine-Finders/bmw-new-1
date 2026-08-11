@@ -40,8 +40,8 @@ export default function BuyingChecklist({ data }) {
   if (!data) return null;
 
   const isDark = theme === "dark";
-  const image = isDark ? "/320d/checklist_dark.png" : "/320d/checklist_light.png";
-  const imageMobile = isDark ? "/320d/checklist_mobile_dark.png" : "/320d/checklist_mobile_light.png";
+  const image = isDark ? "/320d/checklist_dark.webp" : "/320d/checklist_light.webp";
+  const imageMobile = isDark ? "/320d/checklist_mobile_dark.webp" : "/320d/checklist_mobile_light.webp";
   const headingClass = isDark ? "text-white" : "text-[var(--color-text)]";
   const bodyTextClass = isDark ? "text-white/80" : "text-[var(--color-text-muted)]";
 

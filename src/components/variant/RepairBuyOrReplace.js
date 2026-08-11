@@ -98,8 +98,8 @@ export default function RepairBuyOrReplace({ data }) {
   if (!data) return null;
 
   const isDark = theme === "dark";
-  const image = isDark ? "/320d/repair_dark.png" : "/320d/repair_light.png";
-  const imageMobile = isDark ? "/320d/repair_mobile_dark.png" : "/320d/repair_mobile_light.png";
+  const image = isDark ? "/320d/repair_dark.webp" : "/320d/repair_light.webp";
+  const imageMobile = isDark ? "/320d/repair_mobile_dark.webp" : "/320d/repair_mobile_light.webp";
   const headerBg = isDark ? "bg-[#0a1f44]" : "bg-[var(--color-primary)]";
   const headerDivider = isDark ? "border-white/20" : "border-white/25";
   const headingClass = isDark ? "text-white" : "text-[var(--color-text)]";
@@ -231,7 +231,7 @@ export default function RepairBuyOrReplace({ data }) {
           {data.cta?.label ? (
             <div className="glass-panel relative hidden flex-col gap-3 overflow-hidden rounded-md p-4 md:flex">
               <div className="pointer-events-none absolute inset-y-0 right-0 w-2/3">
-                <Image src="/320d/engine.png" alt="" fill className="object-contain object-right opacity-15" sizes="300px" />
+                <Image src="/320d/engine.webp" alt="" fill className="object-contain object-right opacity-15" sizes="300px" />
                 <div
                   className="absolute inset-0"
                   style={{ background: `linear-gradient(90deg, var(--color-surface-glass) 0%, transparent 55%)` }}
@@ -288,7 +288,7 @@ export default function RepairBuyOrReplace({ data }) {
               </div>
 
               <div className="relative h-[110px] w-[110px] shrink-0">
-                <Image src="/320d/engine.png" alt="BMW 320d engine" fill className="object-contain" sizes="110px" />
+                <Image src="/320d/engine.webp" alt="BMW 320d engine" fill className="object-contain" sizes="110px" />
               </div>
             </div>
           ) : null}
