@@ -58,11 +58,8 @@ a {
 @layer base {
   a {
     font-weight: 900;
-    text-decoration: underline;
+    text-decoration: none;
   }
-a {
-  font-weight: 900;
-  text-decoration: none;
 }
 
 /* Keep underlines only in Find Your Vehicle (homeSec2) */
