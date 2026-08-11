@@ -543,6 +543,7 @@
     "marketIntelligenceLine": "As a model that ended production in 2010, the E83 is now a used-market staple -the M57 diesel remains the most sought-after for its durability, while the N47 diesel carries the highest risk."
   },
   "bestWorstEngines": {
+    "h2": "Best &amp; Worst Engines",
     "items": [
       {
         "slot": "Thin-Data Summary",
@@ -632,6 +633,7 @@
     ]
   },
   "commonProblems": {
+    "h2": "Common Problems",
     "problems": [
       {
         "id": 1,
@@ -774,6 +776,8 @@
     "note": ""
   },
   "coreVariants": {
+    "h2": "Diesel &amp; Petrol Lineup",
+    "subheading": "Core Variants",
     "dieselVariants": [
       {
         "name": "2.0d",
@@ -853,6 +857,7 @@
     "scopeNote": "All variants listed are E83-generation X3 only (2003–2010). The X3 was only available as a 5-door SUV."
   },
   "marketIntelligence": {
+    "h2": "Market Intelligence",
     "mostRequestedEngines": [],
     "mostRequestedVariants": [],
     "averageReplacementCost": "",
@@ -860,6 +865,7 @@
     "liveFeed": []
   },
   "faq": {
+    "h2": "FAQ",
     "items": [
       {
         "id": 1,

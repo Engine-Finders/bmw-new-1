@@ -451,6 +451,7 @@
     "marketIntelligenceLine": "The G61 Touring generates steady UK specialist enquiries, concentrated on the 520d and 530e as the most popular UK variants."
   },
   "bestWorstEngines": {
+    "h2": "Best &amp; Worst Engines",
     "items": [
       {
         "slot": "Thin-Data Summary",
@@ -527,6 +528,7 @@
     "keyTakeaways": []
   },
   "commonProblems": {
+    "h2": "Common Problems",
     "problems": [
       {
         "id": 1,
@@ -701,6 +703,8 @@
     "note": "No Generation variance from the Engine Page baseline -no dedicated Engine Pages exist for these families yet, so baseline figures are drawn from the EM_Proprietary_Data Table A. Labour hours estimated at 10–14 hours for four-cylinder engines, 12–16 hours for six-cylinder engines, and 16–22 hours for the M5\u0027s S68 V8 due to additional complexity. Electric i5 variants have no engine replacement costs -battery replacement is a separate consideration."
   },
   "coreVariants": {
+    "h2": "Diesel &amp; Petrol Lineup",
+    "subheading": "Core Variants",
     "dieselVariants": [
       {
         "name": "520d",
@@ -740,6 +744,7 @@
     "scopeNote": "All variants listed are G61 Touring estate only. The G60 saloon and G68 long-wheelbase saloon share most of these engines but are covered on their own Generation Pages. The M5 Touring (G99) is based on the G61 platform but uses the S68 V8 engine; it is covered on its own Generation Page. The 530e and 550e are plug-in hybrids with 19.4 kWh batteries; the 520i/540i/520d/540d feature 48V mild-hybrid technology."
   },
   "marketIntelligence": {
+    "h2": "Market Intelligence",
     "mostRequestedEngines": [],
     "mostRequestedVariants": [],
     "averageReplacementCost": "",
@@ -747,6 +752,7 @@
     "liveFeed": []
   },
   "faq": {
+    "h2": "FAQ",
     "items": [
       {
         "id": 1,

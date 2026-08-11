@@ -265,6 +265,7 @@
     "marketIntelligenceLine": "The G90/G99 M5 generates steady UK specialist enquiries as the first electrified M5 enters the performance car market."
   },
   "bestWorstEngines": {
+    "h2": "Best &amp; Worst Engines",
     "items": [
       {
         "slot": "Thin-Data Summary",
@@ -301,6 +302,7 @@
     "keyTakeaways": []
   },
   "commonProblems": {
+    "h2": "Common Problems",
     "problems": [
       {
         "id": 1,
@@ -419,11 +421,14 @@
     "note": "No Generation variance from the Engine Page baseline -no dedicated Engine Page exists for the S68 family yet, so baseline figures are drawn from the EM_Proprietary_Data Table A. Labour hours estimated at 16–22 hours for the S68 engine due to the complexity of the twin-turbo V8 and plug-in hybrid system. The G99 Touring may require slightly more labour due to body configuration differences."
   },
   "coreVariants": {
+    "h2": "Diesel &amp; Petrol Lineup",
+    "subheading": "Core Variants",
     "dieselVariants": [],
     "petrolVariants": [],
     "scopeNote": "Both variants are powered exclusively by the S68B44A 4.4-litre twin-turbo V8 plug-in hybrid powertrain producing 727 PS. The G90 is the four-door saloon; the G99 is the five-door Touring estate. Both feature M xDrive all-wheel drive with 2WD mode available. The M5 Competition is expected to follow with increased power, but is not yet confirmed."
   },
   "marketIntelligence": {
+    "h2": "Market Intelligence",
     "mostRequestedEngines": [],
     "mostRequestedVariants": [],
     "averageReplacementCost": "",
@@ -431,6 +436,7 @@
     "liveFeed": []
   },
   "faq": {
+    "h2": "FAQ",
     "items": [
       {
         "id": 1,

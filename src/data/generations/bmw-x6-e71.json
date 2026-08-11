@@ -469,6 +469,7 @@
     "marketIntelligenceLine": "The E71 X6 remains a popular choice in the UK used premium SUV market, with strong demand for the xDrive35i petrol and xDrive40d diesel variants [PATTERN DATA]."
   },
   "bestWorstEngines": {
+    "h2": "Best &amp; Worst Engines",
     "items": [
       {
         "slot": "Thin-Data Summary",
@@ -558,6 +559,7 @@
     ]
   },
   "commonProblems": {
+    "h2": "Common Problems",
     "problems": [
       {
         "id": 1,
@@ -768,6 +770,8 @@
     "note": "No Generation variance note required -no Engine Page baseline exists for these engines yet. Costs are sourced from UK specialist suppliers [BMW-QUOTE]."
   },
   "coreVariants": {
+    "h2": "Diesel &amp; Petrol Lineup",
+    "subheading": "Core Variants",
     "dieselVariants": [
       {
         "name": "xDrive30d",
@@ -807,6 +811,7 @@
     "scopeNote": "All variants listed are BMW X6 E71 only. The E72 designation is sometimes used for the ActiveHybrid X6 variant. The successor, the F16 X6 (2014–2019), is covered on its own Generation Page. The X6 M was introduced in 2009."
   },
   "marketIntelligence": {
+    "h2": "Market Intelligence",
     "mostRequestedEngines": [],
     "mostRequestedVariants": [],
     "averageReplacementCost": "",
@@ -814,6 +819,7 @@
     "liveFeed": []
   },
   "faq": {
+    "h2": "FAQ",
     "items": [
       {
         "id": 1,

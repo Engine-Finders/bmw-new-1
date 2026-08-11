@@ -516,6 +516,7 @@
     "marketIntelligenceLine": "The E23 generated real UK engine enquiries in 2025 [BMW-VERIFIED], with the M30B32 (732i/733i) and M90/M30B34 (735i) accounting for the majority of demand as these cars enter classic collector territory."
   },
   "bestWorstEngines": {
+    "h2": "Best &amp; Worst Engines",
     "items": [
       {
         "slot": "Best Petrol Overall",
@@ -669,6 +670,7 @@
     ]
   },
   "commonProblems": {
+    "h2": "Common Problems",
     "problems": [
       {
         "id": 1,
@@ -923,6 +925,8 @@
     "note": ""
   },
   "coreVariants": {
+    "h2": "Diesel &amp; Petrol Lineup",
+    "subheading": "Core Variants",
     "dieselVariants": [],
     "petrolVariants": [
       {
@@ -969,6 +973,7 @@
     "scopeNote": "All variants listed are E23 only. The E32 (1986–1994) is the successor generation with its own engine line-up – see the E32 Generation Page for those specifications. The 745i (SA) is a rare South African variant using the M88/3 engine from the BMW M1."
   },
   "marketIntelligence": {
+    "h2": "Market Intelligence",
     "mostRequestedEngines": [
       "1. M30B32 (732i/733i) – the sweet spot of the range",
       "2. M90/M30B34 (735i) – flagship six-cylinder enquiries",
@@ -1007,6 +1012,7 @@
     ]
   },
   "faq": {
+    "h2": "FAQ",
     "items": [
       {
         "id": 1,

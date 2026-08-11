@@ -265,6 +265,7 @@
     "marketIntelligenceLine": "The M6 E63/E64 generates consistent UK enquiries [PATTERN DATA], concentrated on well‑maintained examples as these V10‑powered grand tourers enter collector and enthusiast territory."
   },
   "bestWorstEngines": {
+    "h2": "Best &amp; Worst Engines",
     "items": [
       {
         "slot": "Thin-Data Summary",
@@ -301,6 +302,7 @@
     "keyTakeaways": []
   },
   "commonProblems": {
+    "h2": "Common Problems",
     "problems": [
       {
         "id": 1,
@@ -392,6 +394,8 @@
     "note": "No Generation variance from the Model Page\u0027s baseline figures -E63 and E64 share identical engine‑bay access, so costs are inherited directly per the Authority Model, with no divergence note required. All costs are [BMW-QUOTE] from Table A -Engine Replacement Economics."
   },
   "coreVariants": {
+    "h2": "Diesel &amp; Petrol Lineup",
+    "subheading": "Core Variants",
     "dieselVariants": [],
     "petrolVariants": [
       {
@@ -406,6 +410,7 @@
     "scopeNote": "All variants listed are BMW M6 E63 (coupé) and E64 (convertible) only -first‑generation M6 with the S85 V10. F06/F12/F13 M6 (twin‑turbo V8) is covered on its own Generation Page."
   },
   "marketIntelligence": {
+    "h2": "Market Intelligence",
     "mostRequestedEngines": [],
     "mostRequestedVariants": [],
     "averageReplacementCost": "",
@@ -413,6 +418,7 @@
     "liveFeed": []
   },
   "faq": {
+    "h2": "FAQ",
     "items": [
       {
         "id": 1,

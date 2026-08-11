@@ -423,6 +423,7 @@
     "marketIntelligenceLine": "As a current-generation model (2022–present), the G70 is still establishing its long-term reliability profile -but the B58 and B57 engines are already well-proven from their use across the BMW range."
   },
   "bestWorstEngines": {
+    "h2": "Best &amp; Worst Engines",
     "items": [
       {
         "slot": "Thin-Data Summary",
@@ -504,6 +505,7 @@
     ]
   },
   "commonProblems": {
+    "h2": "Common Problems",
     "problems": [
       {
         "id": 1,
@@ -614,6 +616,8 @@
     "note": ""
   },
   "coreVariants": {
+    "h2": "Diesel &amp; Petrol Lineup",
+    "subheading": "Core Variants",
     "dieselVariants": [
       {
         "name": "740d xDrive",
@@ -645,6 +649,7 @@
     "scopeNote": "All variants listed are G70-generation 7 Series only (2022–present). The G71 long-wheelbase variant shares the same engines but is covered on its own Generation Page."
   },
   "marketIntelligence": {
+    "h2": "Market Intelligence",
     "mostRequestedEngines": [],
     "mostRequestedVariants": [],
     "averageReplacementCost": "",
@@ -652,6 +657,7 @@
     "liveFeed": []
   },
   "faq": {
+    "h2": "FAQ",
     "items": [
       {
         "id": 1,

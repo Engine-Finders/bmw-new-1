@@ -570,6 +570,7 @@
     "marketIntelligenceLine": "The G31 generated real UK engine enquiries in 2025 [BMW-VERIFIED], with the B47 diesel and B48 petrol accounting for the majority of demand as these cars enter their second and third ownership cycles."
   },
   "bestWorstEngines": {
+    "h2": "Best &amp; Worst Engines",
     "items": [
       {
         "slot": "Best Diesel Overall",
@@ -729,6 +730,7 @@
     ]
   },
   "commonProblems": {
+    "h2": "Common Problems",
     "problems": [
       {
         "id": 1,
@@ -963,6 +965,8 @@
     "note": ""
   },
   "coreVariants": {
+    "h2": "Diesel &amp; Petrol Lineup",
+    "subheading": "Core Variants",
     "dieselVariants": [
       {
         "name": "518d",
@@ -1026,6 +1030,7 @@
     "scopeNote": "All variants listed are G31 only. The G30 saloon and G32 6 Series Gran Turismo share most of these engines but are covered on their own Generation Pages. The M5 (F90) is technically a separate model but shares the G30/G31 platform; its engine is included for completeness. The M550d xDrive with the B57S quad-turbo diesel was discontinued after 2020."
   },
   "marketIntelligence": {
+    "h2": "Market Intelligence",
     "mostRequestedEngines": [
       "1. B47D20A/B (520d) – diesel enquiries dominate the volume",
       "2. B57D30A (530d) – six-cylinder diesel",
@@ -1064,6 +1069,7 @@
     ]
   },
   "faq": {
+    "h2": "FAQ",
     "items": [
       {
         "id": 1,

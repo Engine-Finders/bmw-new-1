@@ -558,6 +558,7 @@
     "marketIntelligenceLine": "The 3 Series nameplate generated significant UK engine enquiries in 2025 [BMW-VERIFIED], with F34 demand concentrated on the four‑cylinder diesels and the B58‑powered 340i based on market patterns."
   },
   "bestWorstEngines": {
+    "h2": "Best &amp; Worst Engines",
     "items": [
       {
         "slot": "Best Value",
@@ -697,6 +698,7 @@
     ]
   },
   "commonProblems": {
+    "h2": "Common Problems",
     "problems": [
       {
         "id": 1,
@@ -831,6 +833,8 @@
     "note": ""
   },
   "coreVariants": {
+    "h2": "Diesel &amp; Petrol Lineup",
+    "subheading": "Core Variants",
     "dieselVariants": [
       {
         "name": "318d",
@@ -914,6 +918,7 @@
     "scopeNote": "All variants listed are F34 Gran Turismo only. The F30 Saloon and F31 Touring share most of these engines but are covered on their own Generation Pages. The ActiveHybrid 3 combines the N55B30 with an electric motor for 335 bhp combined output."
   },
   "marketIntelligence": {
+    "h2": "Market Intelligence",
     "mostRequestedEngines": [
       "1. B47D20A (320d) -pattern data",
       "2. B58B30 (340i) -pattern data",
@@ -951,6 +956,7 @@
     ]
   },
   "faq": {
+    "h2": "FAQ",
     "items": [
       {
         "id": 1,

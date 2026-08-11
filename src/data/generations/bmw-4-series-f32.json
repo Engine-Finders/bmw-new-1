@@ -481,6 +481,7 @@
     "marketIntelligenceLine": "The F32 generates consistent UK enquiries [PATTERN DATA], concentrated on 420d and 430i/440i petrol variants as these executive coupés enter affordable‑maintenance territory."
   },
   "bestWorstEngines": {
+    "h2": "Best &amp; Worst Engines",
     "items": [
       {
         "slot": "Thin-Data Summary",
@@ -581,6 +582,7 @@
     "keyTakeaways": []
   },
   "commonProblems": {
+    "h2": "Common Problems",
     "problems": [
       {
         "id": 1,
@@ -744,6 +746,8 @@
     "note": "No Generation variance from the Model Page\u0027s baseline figures -F32 shares similar engine‑bay access with its F33 and F36 siblings, so costs are inherited directly per the Authority Model, with no divergence note required. All costs are [BMW-QUOTE] from Table A -Engine Replacement Economics."
   },
   "coreVariants": {
+    "h2": "Diesel &amp; Petrol Lineup",
+    "subheading": "Core Variants",
     "dieselVariants": [
       {
         "name": "420d",
@@ -799,6 +803,7 @@
     "scopeNote": "All variants listed are BMW 4 Series F32 (first‑generation coupé) only -2‑door coupé body style. F33 (convertible) and F36 (Gran Coupé) are covered on their own Generation Pages."
   },
   "marketIntelligence": {
+    "h2": "Market Intelligence",
     "mostRequestedEngines": [],
     "mostRequestedVariants": [],
     "averageReplacementCost": "",
@@ -806,6 +811,7 @@
     "liveFeed": []
   },
   "faq": {
+    "h2": "FAQ",
     "items": [
       {
         "id": 1,

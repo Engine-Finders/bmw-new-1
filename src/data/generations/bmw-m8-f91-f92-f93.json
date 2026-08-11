@@ -345,6 +345,7 @@
     "marketIntelligenceLine": "As a low-volume, high-performance model that recently ended production in October 2025, the M8 is a niche enthusiast vehicle -the Competition variants are the most sought-after for their 625 bhp output, while the Gran Coupé offers the most practicality."
   },
   "bestWorstEngines": {
+    "h2": "Best &amp; Worst Engines",
     "items": [
       {
         "slot": "Thin-Data Summary",
@@ -402,6 +403,7 @@
     ]
   },
   "commonProblems": {
+    "h2": "Common Problems",
     "problems": [
       {
         "id": 1,
@@ -483,6 +485,8 @@
     "note": ""
   },
   "coreVariants": {
+    "h2": "Diesel &amp; Petrol Lineup",
+    "subheading": "Core Variants",
     "dieselVariants": [],
     "petrolVariants": [
       {
@@ -497,6 +501,7 @@
     "scopeNote": "All variants listed are first-generation M8 only (2019–2025). The M8 was available in three body styles: F91 (Convertible), F92 (Coupé), and F93 (Gran Coupé). All share the same S63 engine family."
   },
   "marketIntelligence": {
+    "h2": "Market Intelligence",
     "mostRequestedEngines": [],
     "mostRequestedVariants": [],
     "averageReplacementCost": "",
@@ -504,6 +509,7 @@
     "liveFeed": []
   },
   "faq": {
+    "h2": "FAQ",
     "items": [
       {
         "id": 1,

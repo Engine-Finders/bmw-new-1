@@ -392,6 +392,7 @@
     "marketIntelligenceLine": "The F46 Gran Tourer generated 256 real UK engine enquiries in 2025 [BMW-VERIFIED], concentrated on the B47 diesel units as these MPVs reach higher mileages and owners seek reliable replacement options."
   },
   "bestWorstEngines": {
+    "h2": "Best &amp; Worst Engines",
     "items": [
       {
         "slot": "Best Diesel Overall",
@@ -495,6 +496,7 @@
     ]
   },
   "commonProblems": {
+    "h2": "Common Problems",
     "problems": [
       {
         "id": 1,
@@ -657,6 +659,8 @@
     "note": ""
   },
   "coreVariants": {
+    "h2": "Diesel &amp; Petrol Lineup",
+    "subheading": "Core Variants",
     "dieselVariants": [
       {
         "name": "216d",
@@ -688,6 +692,7 @@
     "scopeNote": "All variants listed are F46 Gran Tourer only -the seven-seat MPV produced from 2015 to 2021. The F45 Active Tourer (five-seat MPV) is covered on its own Generation Page. xDrive (all-wheel drive) was available on selected diesel and petrol variants."
   },
   "marketIntelligence": {
+    "h2": "Market Intelligence",
     "mostRequestedEngines": [
       "1. B47C20A/B (218d/220d, 2.0-litre diesel)",
       "2. B48A20A (220i, 2.0-litre petrol)",
@@ -729,6 +734,7 @@
     ]
   },
   "faq": {
+    "h2": "FAQ",
     "items": [
       {
         "id": 1,

@@ -426,6 +426,7 @@
     "marketIntelligenceLine": "The E85 generated real UK engine enquiries in 2025 [BMW-VERIFIED], with the M54B30 and S54B32 accounting for the majority of demand as these cars enter modern classic territory."
   },
   "bestWorstEngines": {
+    "h2": "Best &amp; Worst Engines",
     "items": [
       {
         "slot": "Best Petrol Overall",
@@ -547,6 +548,7 @@
     ]
   },
   "commonProblems": {
+    "h2": "Common Problems",
     "problems": [
       {
         "id": 1,
@@ -769,6 +771,8 @@
     "note": ""
   },
   "coreVariants": {
+    "h2": "Diesel &amp; Petrol Lineup",
+    "subheading": "Core Variants",
     "dieselVariants": [],
     "petrolVariants": [
       {
@@ -823,6 +827,7 @@
     "scopeNote": "All variants listed are E85 only. The E86 coupé (2006–2008) shares most of these engines but is covered on its own Generation Page. The Z4 M Roadster uses the S54B32 engine from the E46 M3."
   },
   "marketIntelligence": {
+    "h2": "Market Intelligence",
     "mostRequestedEngines": [
       "1. M54B30 (3.0i) – the definitive straight-six",
       "2. S54B32 (Z4 M Roadster) – collector and performance enquiries",
@@ -865,6 +870,7 @@
     ]
   },
   "faq": {
+    "h2": "FAQ",
     "items": [
       {
         "id": 1,

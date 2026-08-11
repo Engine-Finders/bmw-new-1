@@ -439,6 +439,7 @@
     "marketIntelligenceLine": "The F01/F02 generates consistent UK enquiries [PATTERN DATA], concentrated on 730d diesel and 740i petrol variants as these flagship luxury saloons enter affordable‑maintenance territory."
   },
   "bestWorstEngines": {
+    "h2": "Best &amp; Worst Engines",
     "items": [
       {
         "slot": "Thin-Data Summary",
@@ -539,6 +540,7 @@
     "keyTakeaways": []
   },
   "commonProblems": {
+    "h2": "Common Problems",
     "problems": [
       {
         "id": 1,
@@ -694,6 +696,8 @@
     "note": "No Generation variance from the Model Page\u0027s baseline figures -F01 and F02 share identical engine‑bay access, so costs are inherited directly per the Authority Model, with no divergence note required. All costs are [BMW-QUOTE] from Table A -Engine Replacement Economics."
   },
   "coreVariants": {
+    "h2": "Diesel &amp; Petrol Lineup",
+    "subheading": "Core Variants",
     "dieselVariants": [
       {
         "name": "730d",
@@ -761,6 +765,7 @@
     "scopeNote": "All variants listed are BMW 7 Series F01 (short‑wheelbase) and F02 (long‑wheelbase) only. F03 (High Security armoured) and F04 (ActiveHybrid 7) are separate variants covered on their own Generation Pages."
   },
   "marketIntelligence": {
+    "h2": "Market Intelligence",
     "mostRequestedEngines": [],
     "mostRequestedVariants": [],
     "averageReplacementCost": "",
@@ -768,6 +773,7 @@
     "liveFeed": []
   },
   "faq": {
+    "h2": "FAQ",
     "items": [
       {
         "id": 1,

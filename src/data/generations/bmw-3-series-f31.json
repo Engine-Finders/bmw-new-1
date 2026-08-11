@@ -558,6 +558,7 @@
     "marketIntelligenceLine": "The F31 generated real UK engine enquiries in 2025 [BMW-VERIFIED], with the N47/B47 diesel and N20/B48 petrol accounting for the majority of demand as these cars enter their second and third ownership cycles."
   },
   "bestWorstEngines": {
+    "h2": "Best &amp; Worst Engines",
     "items": [
       {
         "slot": "Best Diesel Overall",
@@ -709,6 +710,7 @@
     ]
   },
   "commonProblems": {
+    "h2": "Common Problems",
     "problems": [
       {
         "id": 1,
@@ -943,6 +945,8 @@
     "note": ""
   },
   "coreVariants": {
+    "h2": "Diesel &amp; Petrol Lineup",
+    "subheading": "Core Variants",
     "dieselVariants": [
       {
         "name": "316d",
@@ -1006,6 +1010,7 @@
     "scopeNote": "All variants listed are F31 only. The F30 saloon and F34 Gran Turismo share most of these engines but are covered on their own Generation Pages, since body style affects boot space and weight rather than engine fitment. The 335d xDrive was the only diesel offered with all-wheel drive in the F31 range."
   },
   "marketIntelligence": {
+    "h2": "Market Intelligence",
     "mostRequestedEngines": [
       "1. N47D20C / B47D20A (320d) – diesel enquiries dominate",
       "2. N57D30A (330d) – six-cylinder diesel",
@@ -1044,6 +1049,7 @@
     ]
   },
   "faq": {
+    "h2": "FAQ",
     "items": [
       {
         "id": 1,

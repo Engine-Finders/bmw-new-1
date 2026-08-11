@@ -318,6 +318,7 @@
     "marketIntelligenceLine": "The E36 M3 is a modern classic; enquiries are concentrated on S50 VANOS service, rod bearing condition, and cooling system maintenance, with values ranging from £10,000 for higher-mileage 3.0 examples to £40,000+ for low-mileage Evolution models."
   },
   "bestWorstEngines": {
+    "h2": "Best &amp; Worst Engines",
     "items": [
       {
         "slot": "Highest Risk",
@@ -387,6 +388,7 @@
     ]
   },
   "commonProblems": {
+    "h2": "Common Problems",
     "problems": [
       {
         "id": 1,
@@ -505,6 +507,8 @@
     "note": ""
   },
   "coreVariants": {
+    "h2": "Diesel &amp; Petrol Lineup",
+    "subheading": "Core Variants",
     "dieselVariants": [],
     "petrolVariants": [
       {
@@ -519,6 +523,7 @@
     "scopeNote": "All engine variants listed are Euro-spec E36 M3 only. The US-market M3 received detuned S50B30US (1995) and S52B32 (1996–1999) engines producing 240 hp and are not covered on this page. The M3 Evolution (also known as the M3 3.2) featured the S50B32 engine, a six-speed Getrag manual transmission (SMG optional from 1997), and revised suspension and brakes. The Saloon was produced from 1994 to 1997."
   },
   "marketIntelligence": {
+    "h2": "Market Intelligence",
     "mostRequestedEngines": ["1. S50B32 3.2 Evolution", "2. S50B30 3.0"],
     "mostRequestedVariants": [
       "1. M3 Evolution (3.2)",
@@ -556,6 +561,7 @@
     ]
   },
   "faq": {
+    "h2": "FAQ",
     "items": [
       {
         "id": 1,

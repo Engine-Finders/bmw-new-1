@@ -453,6 +453,7 @@
     "marketIntelligenceLine": "The F74 is a new model launched in 2025 -no verified UK enquiry data yet exists for this generation [PATTERN DATA]."
   },
   "bestWorstEngines": {
+    "h2": "Best &amp; Worst Engines",
     "items": [
       {
         "slot": "Thin-Data Summary",
@@ -567,6 +568,7 @@
     "keyTakeaways": []
   },
   "commonProblems": {
+    "h2": "Common Problems",
     "problems": [
       {
         "id": 1,
@@ -725,6 +727,8 @@
     "note": ""
   },
   "coreVariants": {
+    "h2": "Diesel &amp; Petrol Lineup",
+    "subheading": "Core Variants",
     "dieselVariants": [
       {
         "name": "218d",
@@ -764,6 +768,7 @@
     "scopeNote": "All variants listed are F74 Gran Coupé four-door saloon only. BMW has dropped the \u0027i\u0027 suffix from petrol model names. The 220, 223 xDrive, and 220d feature 48V mild-hybrid technology. The M235 xDrive is the range-topping M Performance model. The 228 xDrive produces 241 bhp and 400 Nm. The 223 xDrive produces 218 PS with mild-hybrid assistance. The 218d and 220d share the B47C20B engine in different states of tune (150 PS and 163 PS respectively)."
   },
   "marketIntelligence": {
+    "h2": "Market Intelligence",
     "mostRequestedEngines": [],
     "mostRequestedVariants": [],
     "averageReplacementCost": "",
@@ -771,6 +776,7 @@
     "liveFeed": []
   },
   "faq": {
+    "h2": "FAQ",
     "items": [
       {
         "id": 1,

@@ -396,6 +396,7 @@
     "marketIntelligenceLine": "The G16 generated real UK engine enquiries in 2025 [BMW-VERIFIED], with the B58 six‑cylinder and N63 V8 accounting for the majority of demand as these luxury grand tourers enter their second ownership cycles."
   },
   "bestWorstEngines": {
+    "h2": "Best &amp; Worst Engines",
     "items": [
       {
         "slot": "Best Diesel Overall",
@@ -507,6 +508,7 @@
     ]
   },
   "commonProblems": {
+    "h2": "Common Problems",
     "problems": [
       {
         "id": 1,
@@ -685,6 +687,8 @@
     "note": ""
   },
   "coreVariants": {
+    "h2": "Diesel &amp; Petrol Lineup",
+    "subheading": "Core Variants",
     "dieselVariants": [
       {
         "name": "840d xDrive",
@@ -720,6 +724,7 @@
     "scopeNote": "All variants listed are G16 only. The G14 convertible and G15 coupé share most of these engines but are covered on their own Generation Pages. The Alpina B8 is a related variant built on the G16 platform, while the M8 is the high‑performance variant."
   },
   "marketIntelligence": {
+    "h2": "Market Intelligence",
     "mostRequestedEngines": [
       "1. B58B30M1 (840i) – the volume seller, 340 PS six-cylinder",
       "2. N63B44T3 (M850i xDrive) – V8 performance enquiries",
@@ -761,6 +766,7 @@
     ]
   },
   "faq": {
+    "h2": "FAQ",
     "items": [
       {
         "id": 1,

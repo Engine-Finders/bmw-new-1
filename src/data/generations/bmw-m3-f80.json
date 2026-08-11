@@ -307,6 +307,7 @@
     "marketIntelligenceLine": "The F80 M3 generates steady UK specialist enquiries, concentrated on the standard and Competition Package variants as these turbocharged M cars enter the used performance car market."
   },
   "bestWorstEngines": {
+    "h2": "Best &amp; Worst Engines",
     "items": [
       {
         "slot": "Thin-Data Summary",
@@ -359,6 +360,7 @@
     "keyTakeaways": []
   },
   "commonProblems": {
+    "h2": "Common Problems",
     "problems": [
       {
         "id": 1,
@@ -513,6 +515,8 @@
     "note": "No Generation variance from the Engine Page baseline -no dedicated Engine Page exists for the S55 family yet, so baseline figures are drawn from the EM_Proprietary_Data Table A. Labour hours estimated at 16–22 hours for the S55 engine due to the complexity of the twin-turbo setup and engine bay packaging. The S55 is a high-performance engine requiring specialist tools and expertise."
   },
   "coreVariants": {
+    "h2": "Diesel &amp; Petrol Lineup",
+    "subheading": "Core Variants",
     "dieselVariants": [],
     "petrolVariants": [
       {
@@ -531,6 +535,7 @@
     "scopeNote": "All variants listed are M3 F80 only. The M3 was produced 2014–2016 with 431 PS; the Competition Package was introduced in 2016 with 450 PS and revised suspension; the CS limited edition (1,200 units) was produced 2017–2018 with 460 PS. The F82 M4 Coupé and F83 M4 Convertible are separate models and covered on their own Generation Pages. There is no diesel or hybrid variant for the F80 M3."
   },
   "marketIntelligence": {
+    "h2": "Market Intelligence",
     "mostRequestedEngines": [],
     "mostRequestedVariants": [],
     "averageReplacementCost": "",
@@ -538,6 +543,7 @@
     "liveFeed": []
   },
   "faq": {
+    "h2": "FAQ",
     "items": [
       {
         "id": 1,

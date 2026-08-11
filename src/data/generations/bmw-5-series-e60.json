@@ -607,6 +607,7 @@
     "marketIntelligenceLine": "The E60 generates consistent UK enquiries [PATTERN DATA], concentrated on 520d diesel and 530i petrol variants as these executive saloons enter affordable‑maintenance territory."
   },
   "bestWorstEngines": {
+    "h2": "Best &amp; Worst Engines",
     "items": [
       {
         "slot": "Thin-Data Summary",
@@ -715,6 +716,7 @@
     "keyTakeaways": []
   },
   "commonProblems": {
+    "h2": "Common Problems",
     "problems": [
       {
         "id": 1,
@@ -926,6 +928,8 @@
     "note": "No Generation variance from the Model Page\u0027s baseline figures -E60 saloon and E61 Touring share similar engine‑bay access, so costs are inherited directly per the Authority Model, with no divergence note required. All costs are [BMW-QUOTE] from Table A -Engine Replacement Economics."
   },
   "coreVariants": {
+    "h2": "Diesel &amp; Petrol Lineup",
+    "subheading": "Core Variants",
     "dieselVariants": [
       {
         "name": "520d",
@@ -993,6 +997,7 @@
     "scopeNote": "All variants listed are BMW 5 Series E60 (saloon) only -E61 (Touring/wagon) is covered on its own Generation Page."
   },
   "marketIntelligence": {
+    "h2": "Market Intelligence",
     "mostRequestedEngines": [],
     "mostRequestedVariants": [],
     "averageReplacementCost": "",
@@ -1000,6 +1005,7 @@
     "liveFeed": []
   },
   "faq": {
+    "h2": "FAQ",
     "items": [
       {
         "id": 1,

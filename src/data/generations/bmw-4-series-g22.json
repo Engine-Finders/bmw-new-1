@@ -300,6 +300,7 @@
     "marketIntelligenceLine": "The G22 4 Series Coupé generated 120+ real UK engine enquiries in 2025 [BMW-VERIFIED], concentrated on the 420i petrol and 420d diesel as the range reaches the used market."
   },
   "bestWorstEngines": {
+    "h2": "Best &amp; Worst Engines",
     "items": [
       {
         "slot": "Best Petrol Overall",
@@ -403,6 +404,7 @@
     ]
   },
   "commonProblems": {
+    "h2": "Common Problems",
     "problems": [
       {
         "id": 1,
@@ -581,6 +583,8 @@
     "note": "No Generation variance from the EM_Proprietary_Data baseline figures -G22 4 Series shares the CLAR platform with the G20 3 Series, with similar engine-bay access, so costs are inherited directly per the Authority Model, with no divergence note required."
   },
   "coreVariants": {
+    "h2": "Diesel &amp; Petrol Lineup",
+    "subheading": "Core Variants",
     "dieselVariants": [
       {
         "name": "420d",
@@ -620,6 +624,7 @@
     "scopeNote": "All variants listed are G22 Coupé only. G23 Convertible and G26 Gran Coupé share the same engine families but are covered on their own Generation Pages. M440i, 420d, 430d and M440d feature 48V mild-hybrid technology. 430i power output increased from 245 bhp to 258 bhp with the 2024 LCI facelift."
   },
   "marketIntelligence": {
+    "h2": "Market Intelligence",
     "mostRequestedEngines": [
       "1. B48B20B (420i/430i)",
       "2. B47D20 (420d)",
@@ -657,6 +662,7 @@
     ]
   },
   "faq": {
+    "h2": "FAQ",
     "items": [
       {
         "id": 1,

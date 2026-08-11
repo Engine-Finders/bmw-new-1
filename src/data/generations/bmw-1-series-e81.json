@@ -409,6 +409,7 @@
     "marketIntelligenceLine": "The E81 generates consistent UK enquiries [PATTERN DATA], concentrated on 118d and 120d diesel variants as these compact hatchbacks enter affordable‑maintenance territory."
   },
   "bestWorstEngines": {
+    "h2": "Best &amp; Worst Engines",
     "items": [
       {
         "slot": "Thin-Data Summary",
@@ -493,6 +494,7 @@
     "keyTakeaways": []
   },
   "commonProblems": {
+    "h2": "Common Problems",
     "problems": [
       {
         "id": 1,
@@ -632,6 +634,8 @@
     "note": "No Generation variance from the Model Page\u0027s baseline figures -E81 shares identical engine‑bay access with its E87 sibling, so costs are inherited directly per the Authority Model, with no divergence note required. All costs are [BMW-QUOTE] from Table A -Engine Replacement Economics."
   },
   "coreVariants": {
+    "h2": "Diesel &amp; Petrol Lineup",
+    "subheading": "Core Variants",
     "dieselVariants": [
       {
         "name": "116d",
@@ -675,6 +679,7 @@
     "scopeNote": "All variants listed are BMW 1 Series E81 (three‑door hatchback) only. E87 (five‑door hatchback), E82 (coupé) and E88 (convertible) are covered on their own Generation Pages, since fitment and labour access vary slightly by body style."
   },
   "marketIntelligence": {
+    "h2": "Market Intelligence",
     "mostRequestedEngines": [],
     "mostRequestedVariants": [],
     "averageReplacementCost": "",
@@ -682,6 +687,7 @@
     "liveFeed": []
   },
   "faq": {
+    "h2": "FAQ",
     "items": [
       {
         "id": 1,

@@ -464,6 +464,7 @@
     "marketIntelligenceLine": "The G06 X6 generated 288 real UK engine enquiries in 2025 [BMW-VERIFIED], concentrated on the B57 diesel and N63 V8 petrol units as these luxury SUVs age out of warranty and maintenance costs become a significant consideration."
   },
   "bestWorstEngines": {
+    "h2": "Best &amp; Worst Engines",
     "items": [
       {
         "slot": "Best Diesel Overall",
@@ -583,6 +584,7 @@
     ]
   },
   "commonProblems": {
+    "h2": "Common Problems",
     "problems": [
       {
         "id": 1,
@@ -769,6 +771,8 @@
     "note": ""
   },
   "coreVariants": {
+    "h2": "Diesel &amp; Petrol Lineup",
+    "subheading": "Core Variants",
     "dieselVariants": [
       {
         "name": "xDrive30d",
@@ -796,6 +800,7 @@
     "scopeNote": "All variants listed are G06 (third-generation X6) only, produced from November 2019 onwards. All models feature xDrive all-wheel drive. The F96 X6 M is the high-performance variant with the S63 V8 (pre-LCI) and S68 V8 (LCI). The M50d features a quad-turbo diesel engine. The LCI (facelift) introduced in 2023 brought the S68 engine to M Competition models."
   },
   "marketIntelligence": {
+    "h2": "Market Intelligence",
     "mostRequestedEngines": [
       "1. B57D30B (xDrive30d/40d, 3.0-litre diesel)",
       "2. N63B44D (M50i, 4.4-litre V8)",
@@ -837,6 +842,7 @@
     ]
   },
   "faq": {
+    "h2": "FAQ",
     "items": [
       {
         "id": 1,

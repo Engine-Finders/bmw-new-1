@@ -374,6 +374,7 @@
     "marketIntelligenceLine": "The F06/F12/F13 M6 generated 256 real UK engine enquiries in 2025 [BMW-VERIFIED], concentrated on the S63 V8 as these high-performance M cars age out of warranty and owners seek specialist maintenance and replacement advice."
   },
   "bestWorstEngines": {
+    "h2": "Best &amp; Worst Engines",
     "items": [
       {
         "slot": "Best Petrol Overall",
@@ -463,6 +464,7 @@
     ]
   },
   "commonProblems": {
+    "h2": "Common Problems",
     "problems": [
       {
         "id": 1,
@@ -625,11 +627,14 @@
     "note": ""
   },
   "coreVariants": {
+    "h2": "Diesel &amp; Petrol Lineup",
+    "subheading": "Core Variants",
     "dieselVariants": [],
     "petrolVariants": [],
     "scopeNote": "All variants listed are F06 (Gran Coupé), F12 (Convertible), and F13 (Coupé) third-generation M6 only, produced from 2012 to 2018. The F06 Gran Coupé was introduced in 2013. The Competition Package was available from 2013. A 2015 LCI (Life Cycle Impulse) brought a power increase from 560 PS to 575 PS for standard models. The Competition Package offered 600 PS throughout. Transmissions: 7-speed Getrag dual-clutch automatic (DCT) or 6-speed manual. All models are rear-wheel drive. The F06/F12/F13 M6 was succeeded by the M8 in 2019."
   },
   "marketIntelligence": {
+    "h2": "Market Intelligence",
     "mostRequestedEngines": [
       "1. S63B44T1 (Competition, 600 PS)",
       "2. S63B44T1 (base, 560–575 PS)",
@@ -671,6 +676,7 @@
     ]
   },
   "faq": {
+    "h2": "FAQ",
     "items": [
       {
         "id": 1,

@@ -470,6 +470,7 @@
     "marketIntelligenceLine": "The E9X family generated 256 real UK engine enquiries in 2025 [BMW-VERIFIED], with E93-specific enquiries concentrated on the N47 diesel four and N54/N55 petrol six as these cars exit warranty and major component replacement decisions become critical."
   },
   "bestWorstEngines": {
+    "h2": "Best &amp; Worst Engines",
     "items": [
       {
         "slot": "Best Diesel Overall",
@@ -584,6 +585,7 @@
     "keyTakeaways": []
   },
   "commonProblems": {
+    "h2": "Common Problems",
     "problems": [
       {
         "id": 1,
@@ -770,6 +772,8 @@
     "note": ""
   },
   "coreVariants": {
+    "h2": "Diesel &amp; Petrol Lineup",
+    "subheading": "Core Variants",
     "dieselVariants": [
       {
         "name": "320d",
@@ -817,6 +821,7 @@
     "scopeNote": "All variants listed are E93 convertible only. E90 saloon, E91 Touring and E92 Coupé share most of these engines but are covered on their own Generation Pages, since fitment and labour access vary by body style -particularly in the convertible, where additional structural bracing can complicate engine access. The E93 M3 is covered separately on its own generation page."
   },
   "marketIntelligence": {
+    "h2": "Market Intelligence",
     "mostRequestedEngines": [
       "1. N47D20A/C (1,450 JLR‑wide enquiries [EM‑VERIFIED])",
       "2. M57D30 (830 JLR‑wide [EM‑VERIFIED])",
@@ -854,6 +859,7 @@
     ]
   },
   "faq": {
+    "h2": "FAQ",
     "items": [
       {
         "id": 1,

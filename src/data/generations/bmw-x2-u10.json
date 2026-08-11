@@ -398,6 +398,7 @@
     "marketIntelligenceLine": "The U10 X2 generated 256 real UK engine enquiries in 2025 [BMW-VERIFIED], concentrated on the B38 petrol and B47 diesel units as these compact SUVs enter the used market and owners seek reliable replacement options."
   },
   "bestWorstEngines": {
+    "h2": "Best &amp; Worst Engines",
     "items": [
       {
         "slot": "Best Diesel Overall",
@@ -501,6 +502,7 @@
     ]
   },
   "commonProblems": {
+    "h2": "Common Problems",
     "problems": [
       {
         "id": 1,
@@ -663,6 +665,8 @@
     "note": ""
   },
   "coreVariants": {
+    "h2": "Diesel &amp; Petrol Lineup",
+    "subheading": "Core Variants",
     "dieselVariants": [
       {
         "name": "18d",
@@ -686,6 +690,7 @@
     "scopeNote": "All variants listed are U10 (second-generation X2) only -produced from 2023 onwards. The all-electric iX2 is a separate model and is covered on its own Generation Page. sDrive denotes front-wheel drive; xDrive denotes all-wheel drive."
   },
   "marketIntelligence": {
+    "h2": "Market Intelligence",
     "mostRequestedEngines": [
       "1. B38 A15 P (sDrive16i/18i/20i, 1.5-litre three-cylinder petrol)",
       "2. B47 C20 B (sDrive18d/xDrive20d, 2.0-litre diesel)",
@@ -727,6 +732,7 @@
     ]
   },
   "faq": {
+    "h2": "FAQ",
     "items": [
       {
         "id": 1,

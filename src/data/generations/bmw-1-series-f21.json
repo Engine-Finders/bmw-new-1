@@ -626,6 +626,7 @@
     "marketIntelligenceLine": "The BMW 1 Series F20/F21 generated 344 real UK engine enquiries in 2025 [EM‑VERIFIED], concentrated on the N47 diesel fours as the parc exits affordable‑warranty age and timing‑chain concerns come to the fore."
   },
   "bestWorstEngines": {
+    "h2": "Best &amp; Worst Engines",
     "items": [
       {
         "slot": "Best Diesel Overall",
@@ -780,6 +781,7 @@
     "keyTakeaways": []
   },
   "commonProblems": {
+    "h2": "Common Problems",
     "problems": [
       {
         "id": 1,
@@ -1006,6 +1008,8 @@
     "note": "No Generation variance from the Model Page’s baseline figures -F21 shares its engine‑bay layout with the F20 5‑door, so costs are inherited directly per the Authority Model, with no divergence note required. N47 and B47 costs are carried forward from the Model Page’s existing cost tables."
   },
   "coreVariants": {
+    "h2": "Diesel &amp; Petrol Lineup",
+    "subheading": "Core Variants",
     "dieselVariants": [
       {
         "name": "114d",
@@ -1073,6 +1077,7 @@
     "scopeNote": "All variants listed are F21 3‑door hatchback only. The 125i was offered with the N20B20 engine producing 218 bhp (pre‑LCI) and later 238 bhp. The M135i (pre‑LCI) used the N55B30A six‑cylinder producing 326 bhp. The M140i (LCI) used the B58B30A producing 340 bhp. The 120i was offered with the N13 (pre‑LCI, 177 bhp) and later the B48 (LCI, 184 bhp). The 125d was offered with the N47D20D (pre‑LCI, 218 bhp) and later the B47D20B (LCI, 224 bhp). The 114d and 116d were offered with the N47D16A/N47D20C (pre‑LCI) and later the B37D15A (LCI)."
   },
   "marketIntelligence": {
+    "h2": "Market Intelligence",
     "mostRequestedEngines": [
       "1. N47D20C (1,450 JLR‑wide enquiries [EM‑VERIFIED])",
       "2. B47D20A (930 JLR‑wide [EM‑VERIFIED])",
@@ -1110,6 +1115,7 @@
     ]
   },
   "faq": {
+    "h2": "FAQ",
     "items": [
       {
         "id": 1,

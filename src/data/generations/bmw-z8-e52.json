@@ -283,6 +283,7 @@
     "marketIntelligenceLine": "The Z8 generates consistent UK enquiries [PATTERN DATA], concentrated on the S62‑powered standard Z8 as these modern classics enter collectible and investment territory."
   },
   "bestWorstEngines": {
+    "h2": "Best &amp; Worst Engines",
     "items": [
       {
         "slot": "Thin-Data Summary",
@@ -327,6 +328,7 @@
     "keyTakeaways": []
   },
   "commonProblems": {
+    "h2": "Common Problems",
     "problems": [
       {
         "id": 1,
@@ -413,6 +415,8 @@
     "note": "No Generation variance from the Model Page\u0027s baseline figures -Z8 shares similar engine‑bay access across all variants, so costs are inherited directly per the Authority Model, with no divergence note required. All costs are [BMW-QUOTE] from Table A -Engine Replacement Economics (estimated from specialist supplier data)."
   },
   "coreVariants": {
+    "h2": "Diesel &amp; Petrol Lineup",
+    "subheading": "Core Variants",
     "dieselVariants": [],
     "petrolVariants": [
       {
@@ -431,6 +435,7 @@
     "scopeNote": "All variants listed are BMW Z8 E52 only -2‑door roadster body style. The Alpina Roadster V8 Limited Edition (555 units) is a derivative with the M62B48 engine and 5‑speed automatic."
   },
   "marketIntelligence": {
+    "h2": "Market Intelligence",
     "mostRequestedEngines": [],
     "mostRequestedVariants": [],
     "averageReplacementCost": "",
@@ -438,6 +443,7 @@
     "liveFeed": []
   },
   "faq": {
+    "h2": "FAQ",
     "items": [
       {
         "id": 1,

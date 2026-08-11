@@ -462,6 +462,7 @@
     "marketIntelligenceLine": "The E12 generated real UK engine enquiries in 2025 [BMW-VERIFIED], with the M30B28 (528i) and M90 (M535i) accounting for the majority of demand as these cars enter classic collector territory."
   },
   "bestWorstEngines": {
+    "h2": "Best &amp; Worst Engines",
     "items": [
       {
         "slot": "Best Petrol Overall",
@@ -599,6 +600,7 @@
     ]
   },
   "commonProblems": {
+    "h2": "Common Problems",
     "problems": [
       {
         "id": 1,
@@ -809,6 +811,8 @@
     "note": ""
   },
   "coreVariants": {
+    "h2": "Diesel &amp; Petrol Lineup",
+    "subheading": "Core Variants",
     "dieselVariants": [],
     "petrolVariants": [
       {
@@ -851,6 +855,7 @@
     "scopeNote": "All variants listed are E12 only. The E28 (1981–1987) is the successor generation with its own engine line-up – see the E28 Generation Page for those specifications. The M535i is the precursor to the M5, not an M5 itself – no official M5 was produced in the E12 generation."
   },
   "marketIntelligence": {
+    "h2": "Market Intelligence",
     "mostRequestedEngines": [
       "1. M30B28 (528/528i) – the definitive six-cylinder, highest enquiries",
       "2. M90 (M535i) – collector and performance enquiries",
@@ -888,6 +893,7 @@
     ]
   },
   "faq": {
+    "h2": "FAQ",
     "items": [
       {
         "id": 1,

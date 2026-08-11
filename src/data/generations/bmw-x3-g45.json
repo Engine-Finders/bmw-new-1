@@ -396,6 +396,7 @@
     "marketIntelligenceLine": "The G45 X3 is BMW\u0027s latest-generation compact SUV; enquiries are concentrated on the B48 petrol and B47 diesel variants, with values ranging from £40,000 for entry-level 20d examples to £65,000+ for well-specced M50 models."
   },
   "bestWorstEngines": {
+    "h2": "Best &amp; Worst Engines",
     "items": [
       {
         "slot": "Best Petrol Overall",
@@ -507,6 +508,7 @@
     ]
   },
   "commonProblems": {
+    "h2": "Common Problems",
     "problems": [
       {
         "id": 1,
@@ -649,6 +651,8 @@
     "note": ""
   },
   "coreVariants": {
+    "h2": "Diesel &amp; Petrol Lineup",
+    "subheading": "Core Variants",
     "dieselVariants": [
       {
         "name": "20d xDrive",
@@ -680,6 +684,7 @@
     "scopeNote": "All variants listed are G45 X3 only. The G48 (long-wheelbase) variant for the Chinese market shares the B48 petrol engines but is covered on its own Generation Page. The 40d xDrive was introduced in 2025. The M50 xDrive is the performance flagship, producing 398 PS and 580 Nm of torque."
   },
   "marketIntelligence": {
+    "h2": "Market Intelligence",
     "mostRequestedEngines": [],
     "mostRequestedVariants": [
       "1. 20d xDrive (2.0 diesel)",
@@ -717,6 +722,7 @@
     ]
   },
   "faq": {
+    "h2": "FAQ",
     "items": [
       {
         "id": 1,

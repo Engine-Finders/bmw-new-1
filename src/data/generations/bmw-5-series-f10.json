@@ -579,6 +579,7 @@
     "marketIntelligenceLine": "As a model that ended production in 2017, the F10 is now a used-market staple -the 520d remains the most common variant, while the 535d and M5 are the most sought-after performance options."
   },
   "bestWorstEngines": {
+    "h2": "Best &amp; Worst Engines",
     "items": [
       {
         "slot": "Thin-Data Summary",
@@ -684,6 +685,7 @@
     ]
   },
   "commonProblems": {
+    "h2": "Common Problems",
     "problems": [
       {
         "id": 1,
@@ -842,6 +844,8 @@
     "note": ""
   },
   "coreVariants": {
+    "h2": "Diesel &amp; Petrol Lineup",
+    "subheading": "Core Variants",
     "dieselVariants": [
       {
         "name": "518d",
@@ -909,6 +913,7 @@
     "scopeNote": "All variants listed are F10-generation 5 Series Saloon only (2010–2017). The F11 Touring, F07 Gran Turismo and F18 long-wheelbase variants share most engines but are covered on their own Generation Pages."
   },
   "marketIntelligence": {
+    "h2": "Market Intelligence",
     "mostRequestedEngines": [],
     "mostRequestedVariants": [],
     "averageReplacementCost": "",
@@ -916,6 +921,7 @@
     "liveFeed": []
   },
   "faq": {
+    "h2": "FAQ",
     "items": [
       {
         "id": 1,

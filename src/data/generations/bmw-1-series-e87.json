@@ -420,6 +420,7 @@
     "marketIntelligenceLine": "The E87 generated 240 real UK engine enquiries in 2025 [BMW-VERIFIED], with the N47 diesel variants accounting for the largest share of demand."
   },
   "bestWorstEngines": {
+    "h2": "Best &amp; Worst Engines",
     "items": [
       {
         "slot": "Best Diesel Overall",
@@ -531,6 +532,7 @@
     ]
   },
   "commonProblems": {
+    "h2": "Common Problems",
     "problems": [
       {
         "id": 1,
@@ -701,6 +703,8 @@
     "note": "No Generation variance from the Model Page\u0027s baseline figures -E87 shares identical engine-bay access with its E81/E82/E88 siblings, so costs are inherited directly per the Authority Model, with no divergence note required."
   },
   "coreVariants": {
+    "h2": "Diesel &amp; Petrol Lineup",
+    "subheading": "Core Variants",
     "dieselVariants": [
       {
         "name": "116d",
@@ -740,6 +744,7 @@
     "scopeNote": "All variants listed are E87 five-door hatchback only. E81 (3-door hatchback), E82 (coupé) and E88 (convertible) share most of these engines but are covered on their own Generation Pages, since fitment and labour access vary slightly by body style."
   },
   "marketIntelligence": {
+    "h2": "Market Intelligence",
     "mostRequestedEngines": [
       "1. N47D20 (largest share of 1,450 JLR‑wide figure)",
       "2. M47D20 (share of 1,450 JLR‑wide figure)",
@@ -777,6 +782,7 @@
     ]
   },
   "faq": {
+    "h2": "FAQ",
     "items": [
       {
         "id": 1,

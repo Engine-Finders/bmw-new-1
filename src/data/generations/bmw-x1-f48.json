@@ -462,6 +462,7 @@
     "marketIntelligenceLine": "The X1 F48 generated 154 real UK engine enquiries in 2025 [BMW-VERIFIED], concentrated on the 2.0-litre petrol and diesel variants as the most popular UK choices."
   },
   "bestWorstEngines": {
+    "h2": "Best &amp; Worst Engines",
     "items": [
       {
         "slot": "Best Petrol Overall",
@@ -584,6 +585,7 @@
     "keyTakeaways": []
   },
   "commonProblems": {
+    "h2": "Common Problems",
     "problems": [
       {
         "id": 1,
@@ -750,6 +752,8 @@
     "note": "No Generation variance from the Engine Page baseline -no dedicated Engine Pages exist for these families yet, so baseline figures are drawn from the EM_Proprietary_Data Table A. Labour hours estimated at 8–12 hours for three-cylinder engines and 10–14 hours for four-cylinder engines. The UKL2 platform\u0027s transverse layout affects labour access."
   },
   "coreVariants": {
+    "h2": "Diesel &amp; Petrol Lineup",
+    "subheading": "Core Variants",
     "dieselVariants": [
       {
         "name": "sDrive16d",
@@ -809,6 +813,7 @@
     "scopeNote": "All variants listed are X1 F48 only. sDrive denotes front-wheel drive; xDrive denotes all-wheel drive. The xDrive25e plug-in hybrid (2020–2022) combines a 1.5-litre three-cylinder petrol engine with an electric motor for 220 PS system output."
   },
   "marketIntelligence": {
+    "h2": "Market Intelligence",
     "mostRequestedEngines": [
       "1. B48A20A 20i -930 requests [BMW-VERIFIED]",
       "2. B47C20B 20d -930 requests [BMW-VERIFIED]",
@@ -846,6 +851,7 @@
     ]
   },
   "faq": {
+    "h2": "FAQ",
     "items": [
       {
         "id": 1,

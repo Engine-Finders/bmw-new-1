@@ -632,6 +632,7 @@
     "marketIntelligenceLine": "The E61 Touring generated 300+ real UK engine enquiries in 2025 [BMW-VERIFIED], concentrated on the N47 diesel and M57 six-cylinder units as these Tourings age into enthusiast ownership and maintenance cycles."
   },
   "bestWorstEngines": {
+    "h2": "Best &amp; Worst Engines",
     "items": [
       {
         "slot": "Best Diesel Overall",
@@ -783,6 +784,7 @@
     ]
   },
   "commonProblems": {
+    "h2": "Common Problems",
     "problems": [
       {
         "id": 1,
@@ -1033,6 +1035,8 @@
     "note": ""
   },
   "coreVariants": {
+    "h2": "Diesel &amp; Petrol Lineup",
+    "subheading": "Core Variants",
     "dieselVariants": [
       {
         "name": "518d",
@@ -1088,6 +1092,7 @@
     "scopeNote": "All variants listed are E61 Touring only -the five-door estate produced from 2004 to 2010. E60 Saloon shares most of these engines but is covered on its own Generation Page, as fitment and labour access vary slightly by body style."
   },
   "marketIntelligence": {
+    "h2": "Market Intelligence",
     "mostRequestedEngines": [
       "1. M57D30 (530d/535d, 3.0-litre diesel)",
       "2. N47D20C (520d, 2.0-litre diesel)",
@@ -1129,6 +1134,7 @@
     ]
   },
   "faq": {
+    "h2": "FAQ",
     "items": [
       {
         "id": 1,

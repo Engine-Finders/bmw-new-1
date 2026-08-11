@@ -482,6 +482,7 @@
     "marketIntelligenceLine": "The F33 convertible generated 256 real UK engine enquiries in 2025 [BMW-VERIFIED], concentrated on the N20 four-cylinder petrol and N47 diesel units as these cars age out of warranty and timing-chain issues become a significant concern."
   },
   "bestWorstEngines": {
+    "h2": "Best &amp; Worst Engines",
     "items": [
       {
         "slot": "Best Diesel Overall",
@@ -601,6 +602,7 @@
     ]
   },
   "commonProblems": {
+    "h2": "Common Problems",
     "problems": [
       {
         "id": 1,
@@ -779,6 +781,8 @@
     "note": ""
   },
   "coreVariants": {
+    "h2": "Diesel &amp; Petrol Lineup",
+    "subheading": "Core Variants",
     "dieselVariants": [
       {
         "name": "418d",
@@ -826,6 +830,7 @@
     "scopeNote": "All variants listed are F33 convertible only -the two-door, four-seat convertible produced from 2014 to 2020. F32 Coupé and F36 Gran Coupé are covered on their own Generation Pages, as fitment and labour access vary by body style. M4 (F83) is covered separately."
   },
   "marketIntelligence": {
+    "h2": "Market Intelligence",
     "mostRequestedEngines": [
       "1. N20B20 (420i/428i/430i, 2.0-litre petrol)",
       "2. N47D20C / B47D20 (420d, 2.0-litre diesel)",
@@ -867,6 +872,7 @@
     ]
   },
   "faq": {
+    "h2": "FAQ",
     "items": [
       {
         "id": 1,

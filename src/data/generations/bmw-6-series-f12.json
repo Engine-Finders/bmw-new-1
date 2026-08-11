@@ -378,6 +378,7 @@
     "marketIntelligenceLine": "The F12 Convertible generated 120+ real UK engine enquiries in 2025 [BMW-VERIFIED], concentrated on the 640i petrol and 640d diesel as the range reaches affordable used-car territory."
   },
   "bestWorstEngines": {
+    "h2": "Best &amp; Worst Engines",
     "items": [
       {
         "slot": "Best Petrol Overall",
@@ -481,6 +482,7 @@
     ]
   },
   "commonProblems": {
+    "h2": "Common Problems",
     "problems": [
       {
         "id": 1,
@@ -651,6 +653,8 @@
     "note": "No Generation variance from the EM_Proprietary_Data baseline figures -F12 Convertible shares the L6 platform with the F10 5 Series, with similar engine-bay access, so costs are inherited directly per the Authority Model, with no divergence note required."
   },
   "coreVariants": {
+    "h2": "Diesel &amp; Petrol Lineup",
+    "subheading": "Core Variants",
     "dieselVariants": [
       {
         "name": "640d",
@@ -686,6 +690,7 @@
     "scopeNote": "All variants listed are F12 Convertible only. F13 Coupé and F06 Gran Coupé share the same engine families but are covered on their own Generation Pages. The LCI (late 2014) brought the N63B44B with 450 PS for the 650i. M6 Convertible features the S63B44B V8 with 560 PS."
   },
   "marketIntelligence": {
+    "h2": "Market Intelligence",
     "mostRequestedEngines": [
       "1. N57D30 (largest share of diesel enquiries)",
       "2. N55B30",
@@ -723,6 +728,7 @@
     ]
   },
   "faq": {
+    "h2": "FAQ",
     "items": [
       {
         "id": 1,

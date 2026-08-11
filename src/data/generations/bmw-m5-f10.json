@@ -342,6 +342,7 @@
     "marketIntelligenceLine": "The F10 M5 generated real UK engine enquiries in 2025 [BMW-VERIFIED], with the S63B44TU and Competition Package accounting for the majority of demand as these cars enter second and third ownership cycles."
   },
   "bestWorstEngines": {
+    "h2": "Best &amp; Worst Engines",
     "items": [
       {
         "slot": "Best Petrol Overall",
@@ -439,6 +440,7 @@
     ]
   },
   "commonProblems": {
+    "h2": "Common Problems",
     "problems": [
       {
         "id": 1,
@@ -629,6 +631,8 @@
     "note": ""
   },
   "coreVariants": {
+    "h2": "Diesel &amp; Petrol Lineup",
+    "subheading": "Core Variants",
     "dieselVariants": [],
     "petrolVariants": [
       {
@@ -647,6 +651,7 @@
     "scopeNote": "All variants listed are F10 only. The F90 M5 (2017–present) is the successor generation with its own engine line-up -see the F90 M5 Generation Page for those specifications. The F10 M5 was available exclusively as a saloon; no Touring variant was produced in this generation."
   },
   "marketIntelligence": {
+    "h2": "Market Intelligence",
     "mostRequestedEngines": [
       "1. S63B44TU (LCI) – the improved engine with best reliability",
       "2. S63B44B (Competition Package) – performance enquiries",
@@ -689,6 +694,7 @@
     ]
   },
   "faq": {
+    "h2": "FAQ",
     "items": [
       {
         "id": 1,

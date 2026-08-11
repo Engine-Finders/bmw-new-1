@@ -414,6 +414,7 @@
     "marketIntelligenceLine": "The G32 6 Series Gran Turismo is a niche model; enquiries are concentrated on the B58 six-cylinder petrol and B57 diesel engines, with values ranging from £15,000 for early 620d examples to £35,000+ for well-specced 640i/640d models."
   },
   "bestWorstEngines": {
+    "h2": "Best &amp; Worst Engines",
     "items": [
       {
         "slot": "Best Petrol Overall",
@@ -525,6 +526,7 @@
     ]
   },
   "commonProblems": {
+    "h2": "Common Problems",
     "problems": [
       {
         "id": 1,
@@ -667,6 +669,8 @@
     "note": ""
   },
   "coreVariants": {
+    "h2": "Diesel &amp; Petrol Lineup",
+    "subheading": "Core Variants",
     "dieselVariants": [
       {
         "name": "620d",
@@ -698,6 +702,7 @@
     "scopeNote": "All variants listed are G32 6 Series Gran Turismo only. The 620d was added in 2018. The 2020 LCI facelift introduced 48-volt mild-hybrid technology across the range. The 640i and 640d are available with rear-wheel drive or xDrive all-wheel drive."
   },
   "marketIntelligence": {
+    "h2": "Market Intelligence",
     "mostRequestedEngines": [
       "1. B57D30 3.0 Diesel (630d/640d)",
       "2. B58B30 3.0 Petrol (640i)",
@@ -739,6 +744,7 @@
     ]
   },
   "faq": {
+    "h2": "FAQ",
     "items": [
       {
         "id": 1,

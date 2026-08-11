@@ -588,6 +588,7 @@
     "marketIntelligenceLine": "The 3 Series nameplate generated significant UK engine enquiries in 2025 [BMW-VERIFIED], with the six-cylinder E36 models (325i, 328i, M3) representing the majority of E36-related demand based on market patterns."
   },
   "bestWorstEngines": {
+    "h2": "Best &amp; Worst Engines",
     "items": [
       {
         "slot": "Best Value",
@@ -751,6 +752,7 @@
     ]
   },
   "commonProblems": {
+    "h2": "Common Problems",
     "problems": [
       {
         "id": 1,
@@ -941,6 +943,8 @@
     "note": ""
   },
   "coreVariants": {
+    "h2": "Diesel &amp; Petrol Lineup",
+    "subheading": "Core Variants",
     "dieselVariants": [
       {
         "name": "318tds",
@@ -996,6 +1000,7 @@
     "scopeNote": "All variants listed are E36 only. The 318ti is the 3-door Compact hatchback, which shares the E36 front end with an E30-based rear suspension. The M3 was available as a coupé, saloon and convertible."
   },
   "marketIntelligence": {
+    "h2": "Market Intelligence",
     "mostRequestedEngines": [],
     "mostRequestedVariants": [],
     "averageReplacementCost": "",
@@ -1003,6 +1008,7 @@
     "liveFeed": []
   },
   "faq": {
+    "h2": "FAQ",
     "items": [
       {
         "id": 1,

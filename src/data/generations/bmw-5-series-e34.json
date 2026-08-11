@@ -529,6 +529,7 @@
     "marketIntelligenceLine": "The E34 5 Series generates steady UK specialist enquiries, concentrated on the 525i and 535i as these classic BMWs enter collector-car territory."
   },
   "bestWorstEngines": {
+    "h2": "Best &amp; Worst Engines",
     "items": [
       {
         "slot": "Thin-Data Summary",
@@ -613,6 +614,7 @@
     "keyTakeaways": []
   },
   "commonProblems": {
+    "h2": "Common Problems",
     "problems": [
       {
         "id": 1,
@@ -831,6 +833,8 @@
     "note": "No Generation variance from the Engine Page baseline -no dedicated Engine Pages exist for these families yet, so baseline figures are drawn from the EM_Proprietary_Data Table A. Labour hours estimated at 8–12 hours for four-cylinder and smaller six-cylinder engines, 10–14 hours for larger six-cylinders, 12–16 hours for V8s, and 14–18 hours for the M5\u0027s S38 due to additional complexity."
   },
   "coreVariants": {
+    "h2": "Diesel &amp; Petrol Lineup",
+    "subheading": "Core Variants",
     "dieselVariants": [
       {
         "name": "524td",
@@ -886,6 +890,7 @@
     "scopeNote": "All variants listed are E34 5 Series only. The 525iX is the all-wheel-drive variant. The Touring estate was introduced in September 1992 and shares the same engine range. The M5 received the S38B38 3.8-litre engine from 1992, replacing the S38B36 3.6-litre."
   },
   "marketIntelligence": {
+    "h2": "Market Intelligence",
     "mostRequestedEngines": [],
     "mostRequestedVariants": [],
     "averageReplacementCost": "",
@@ -893,6 +898,7 @@
     "liveFeed": []
   },
   "faq": {
+    "h2": "FAQ",
     "items": [
       {
         "id": 1,

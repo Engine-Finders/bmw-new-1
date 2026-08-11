@@ -373,6 +373,7 @@
     "marketIntelligenceLine": "The E46/5 generates consistent UK enquiries [PATTERN DATA], concentrated on 316ti and 318ti petrol variants as these entry‑level BMWs enter affordable‑maintenance territory."
   },
   "bestWorstEngines": {
+    "h2": "Best &amp; Worst Engines",
     "items": [
       {
         "slot": "Thin-Data Summary",
@@ -449,6 +450,7 @@
     "keyTakeaways": []
   },
   "commonProblems": {
+    "h2": "Common Problems",
     "problems": [
       {
         "id": 1,
@@ -580,6 +582,8 @@
     "note": "No Generation variance from the Model Page\u0027s baseline figures -E46/5 shares similar engine‑bay access with the E46 saloon and touring, so costs are inherited directly per the Authority Model, with no divergence note required. All costs are [BMW-QUOTE] from Table A -Engine Replacement Economics."
   },
   "coreVariants": {
+    "h2": "Diesel &amp; Petrol Lineup",
+    "subheading": "Core Variants",
     "dieselVariants": [
       {
         "name": "318td",
@@ -615,6 +619,7 @@
     "scopeNote": "All variants listed are BMW 3 Series Compact E46/5 (E46‑based) only -3‑door hatchback body style. E46 saloon, coupé, touring and convertible are covered on their own Generation Pages."
   },
   "marketIntelligence": {
+    "h2": "Market Intelligence",
     "mostRequestedEngines": [],
     "mostRequestedVariants": [],
     "averageReplacementCost": "",
@@ -622,6 +627,7 @@
     "liveFeed": []
   },
   "faq": {
+    "h2": "FAQ",
     "items": [
       {
         "id": 1,

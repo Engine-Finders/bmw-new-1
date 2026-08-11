@@ -321,6 +321,7 @@
     "marketIntelligenceLine": "The E39 M5 is a classic car with a dedicated enthusiast following -no verified 2025 enquiry data exists for this model [PATTERN DATA]. Prospective owners should budget £2,000–£3,000 annually for maintenance."
   },
   "bestWorstEngines": {
+    "h2": "Best &amp; Worst Engines",
     "items": [
       {
         "slot": "The Only Engine",
@@ -411,6 +412,7 @@
     "keyTakeaways": []
   },
   "commonProblems": {
+    "h2": "Common Problems",
     "problems": [
       {
         "id": 1,
@@ -557,6 +559,8 @@
     "note": ""
   },
   "coreVariants": {
+    "h2": "Diesel &amp; Petrol Lineup",
+    "subheading": "Core Variants",
     "dieselVariants": [],
     "petrolVariants": [
       {
@@ -575,6 +579,7 @@
     "scopeNote": "All variants listed are E39 M5 Saloon only. No M5 Touring was produced for the E39 generation. The E39 M5 was produced in three main specifications: European left‑hand drive, European right‑hand drive (UK market), and North American specification. Changes were limited to emissions equipment, lighting, and minor trim differences. A facelift was introduced in September 2000, bringing corona‑ring headlights, revised rear lights, grey‑faced instruments, and Alcantara headlining. Engine specifications remained unchanged across all variants and model years."
   },
   "marketIntelligence": {
+    "h2": "Market Intelligence",
     "mostRequestedEngines": [],
     "mostRequestedVariants": [],
     "averageReplacementCost": "",
@@ -582,6 +587,7 @@
     "liveFeed": []
   },
   "faq": {
+    "h2": "FAQ",
     "items": [
       {
         "id": 1,

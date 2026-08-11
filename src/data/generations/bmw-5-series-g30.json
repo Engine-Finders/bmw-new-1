@@ -552,6 +552,7 @@
     "marketIntelligenceLine": "The G30 5 Series generated 300+ real UK engine enquiries in 2025 [BMW-VERIFIED], concentrated on the 2.0-litre B47 diesel and B48 petrol engines as the parc exits warranty and high-mileage maintenance comes to the fore."
   },
   "bestWorstEngines": {
+    "h2": "Best &amp; Worst Engines",
     "items": [
       {
         "slot": "Best Diesel Overall",
@@ -687,6 +688,7 @@
     ]
   },
   "commonProblems": {
+    "h2": "Common Problems",
     "problems": [
       {
         "id": 1,
@@ -877,6 +879,8 @@
     "note": ""
   },
   "coreVariants": {
+    "h2": "Diesel &amp; Petrol Lineup",
+    "subheading": "Core Variants",
     "dieselVariants": [
       {
         "name": "518d",
@@ -940,6 +944,7 @@
     "scopeNote": "All variants listed are G30 saloon only. G31 Touring shares most of these engines but is covered on its own Generation Page. The LCI facelift (2020) introduced mild-hybrid technology to many models, increased power outputs, and added the 545e xDrive plug-in hybrid with the B58 six-cylinder. The M550i xDrive received the updated N63B44D V8 in 2020, increasing power from 456 bhp to 523 bhp."
   },
   "marketIntelligence": {
+    "h2": "Market Intelligence",
     "mostRequestedEngines": [
       "1. B47D20 2.0 Diesel (300 5 Series-wide enquiries)",
       "2. B48B20 2.0 Petrol (300)",
@@ -981,6 +986,7 @@
     ]
   },
   "faq": {
+    "h2": "FAQ",
     "items": [
       {
         "id": 1,

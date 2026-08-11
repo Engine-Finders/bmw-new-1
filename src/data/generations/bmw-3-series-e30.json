@@ -492,6 +492,7 @@
     "marketIntelligenceLine": "The E30 generated real UK engine enquiries in 2025 [BMW-VERIFIED], with the M20B25 (325i) and S14 (M3) accounting for the majority of demand as these cars enter modern classic and collector territory."
   },
   "bestWorstEngines": {
+    "h2": "Best &amp; Worst Engines",
     "items": [
       {
         "slot": "Best Diesel Overall",
@@ -635,6 +636,7 @@
     ]
   },
   "commonProblems": {
+    "h2": "Common Problems",
     "problems": [
       {
         "id": 1,
@@ -873,6 +875,8 @@
     "note": ""
   },
   "coreVariants": {
+    "h2": "Diesel &amp; Petrol Lineup",
+    "subheading": "Core Variants",
     "dieselVariants": [
       {
         "name": "324d",
@@ -928,6 +932,7 @@
     "scopeNote": "All variants listed are E30 only. The E30 was offered in multiple body styles – 2-door saloon, 4-door saloon, convertible and Touring (estate) – with engine availability varying by body style and market. The 325iX was the first BMW production car with all-wheel drive. The M3 is a separate model with the S14 engine."
   },
   "marketIntelligence": {
+    "h2": "Market Intelligence",
     "mostRequestedEngines": [
       "1. M20B25 (325i) – the definitive six-cylinder, highest enquiries",
       "2. S14B23 (M3) – collector and performance enquiries",
@@ -965,6 +970,7 @@
     ]
   },
   "faq": {
+    "h2": "FAQ",
     "items": [
       {
         "id": 1,

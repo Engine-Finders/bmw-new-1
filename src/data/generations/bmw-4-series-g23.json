@@ -512,6 +512,7 @@
     "marketIntelligenceLine": "The G23 shares its engine line‑up with the G22 -B58 enquiries totalled 540 and B47 enquiries totalled 930 in 2025 [EM‑VERIFIED], with the M440i xDrive attracting the highest proportion of performance‑oriented enquiries."
   },
   "bestWorstEngines": {
+    "h2": "Best &amp; Worst Engines",
     "items": [
       {
         "slot": "Best Diesel Overall",
@@ -618,6 +619,7 @@
     "keyTakeaways": []
   },
   "commonProblems": {
+    "h2": "Common Problems",
     "problems": [
       {
         "id": 1,
@@ -796,6 +798,8 @@
     "note": ""
   },
   "coreVariants": {
+    "h2": "Diesel &amp; Petrol Lineup",
+    "subheading": "Core Variants",
     "dieselVariants": [
       {
         "name": "420d",
@@ -839,6 +843,7 @@
     "scopeNote": "All variants listed are G23 convertible only. The 420i uses the B48B20M0 (184 PS). The 430i uses the B48B20O1 (258 PS). The M440i xDrive uses the B58B30B (pre‑LCI, 382 PS) or B58B30TÜ1 (LCI, 382 PS). The 420d uses the B47D20B (190 PS). The 430d uses the B57D30A (282 PS). The M440d xDrive uses the B57D30B (340 PS). All diesel engines feature 48V mild‑hybrid technology. The 420i, 430i, 420d, 430d and M440d come standard with rear‑wheel drive but can be configured with xDrive; the M440i comes with xDrive only."
   },
   "marketIntelligence": {
+    "h2": "Market Intelligence",
     "mostRequestedEngines": [
       "1. B58B30 (540 enquiries [EM-VERIFIED])",
       "2. B47D20B (930 enquiries [EM-VERIFIED])",
@@ -876,6 +881,7 @@
     ]
   },
   "faq": {
+    "h2": "FAQ",
     "items": [
       {
         "id": 1,

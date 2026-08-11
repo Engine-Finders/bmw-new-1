@@ -421,6 +421,7 @@
     "marketIntelligenceLine": "The E21-generation 3 Series is now a modern classic; enquiries are concentrated on M10 carburettor setup, M20 timing belt replacement, and rust remediation, with values ranging from £4,000 for entry-level 316 examples to £20,000+ for well-preserved 323is."
   },
   "bestWorstEngines": {
+    "h2": "Best &amp; Worst Engines",
     "items": [
       {
         "slot": "Overall Verdict",
@@ -502,6 +503,7 @@
     ]
   },
   "commonProblems": {
+    "h2": "Common Problems",
     "problems": [
       {
         "id": 1,
@@ -668,6 +670,8 @@
     "note": ""
   },
   "coreVariants": {
+    "h2": "Diesel &amp; Petrol Lineup",
+    "subheading": "Core Variants",
     "dieselVariants": [],
     "petrolVariants": [
       {
@@ -706,6 +710,7 @@
     "scopeNote": "All variants listed are E21 3 Series only. The 315 was introduced in 1981 as the entry-level model. The 320/6 (1977–1982) was the first E21 to use the M20 six-cylinder engine. The 323i (1978–1982) was the range-topping model. The Baur TC1 convertible was available from 1978 to 1981."
   },
   "marketIntelligence": {
+    "h2": "Market Intelligence",
     "mostRequestedEngines": [],
     "mostRequestedVariants": [],
     "averageReplacementCost": "",
@@ -713,6 +718,7 @@
     "liveFeed": []
   },
   "faq": {
+    "h2": "FAQ",
     "items": [
       {
         "id": 1,

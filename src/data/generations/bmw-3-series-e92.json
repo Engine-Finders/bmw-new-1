@@ -528,6 +528,7 @@
     "marketIntelligenceLine": "The E92 Coupé generated 256+ real UK engine enquiries in 2025 [BMW-VERIFIED], concentrated on the 320d diesel and 335i petrol as the range reaches affordable enthusiast territory."
   },
   "bestWorstEngines": {
+    "h2": "Best &amp; Worst Engines",
     "items": [
       {
         "slot": "Best Petrol Overall",
@@ -671,6 +672,7 @@
     ]
   },
   "commonProblems": {
+    "h2": "Common Problems",
     "problems": [
       {
         "id": 1,
@@ -873,6 +875,8 @@
     "note": "No Generation variance from the EM_Proprietary_Data baseline figures -E92 Coupé shares the E9x platform with the E90 saloon, with similar engine-bay access, so costs are inherited directly per the Authority Model, with no divergence note required."
   },
   "coreVariants": {
+    "h2": "Diesel &amp; Petrol Lineup",
+    "subheading": "Core Variants",
     "dieselVariants": [
       {
         "name": "318d",
@@ -936,6 +940,7 @@
     "scopeNote": "All variants listed are E92 Coupé only. E90 Saloon, E91 Touring and E93 Convertible share most of these engines but are covered on their own Generation Pages, since fitment and body-specific characteristics vary. The 335is (2011–2013, North America) used a factory-tuned N54 with 320 bhp. The 320si is a limited-edition homologation model."
   },
   "marketIntelligence": {
+    "h2": "Market Intelligence",
     "mostRequestedEngines": [
       "1. N47D20 (largest share of diesel enquiries)",
       "2. N54B30",
@@ -973,6 +978,7 @@
     ]
   },
   "faq": {
+    "h2": "FAQ",
     "items": [
       {
         "id": 1,

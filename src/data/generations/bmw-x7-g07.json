@@ -519,6 +519,7 @@
     "marketIntelligenceLine": "As a current-generation flagship SUV (2018–present), the G07 is still establishing its long-term reliability profile -but the B58 engine is already well-proven, while the N63 V8 remains the most complex option in the range."
   },
   "bestWorstEngines": {
+    "h2": "Best &amp; Worst Engines",
     "items": [
       {
         "slot": "Thin-Data Summary",
@@ -592,6 +593,7 @@
     ]
   },
   "commonProblems": {
+    "h2": "Common Problems",
     "problems": [
       {
         "id": 1,
@@ -721,6 +723,8 @@
     "note": ""
   },
   "coreVariants": {
+    "h2": "Diesel &amp; Petrol Lineup",
+    "subheading": "Core Variants",
     "dieselVariants": [
       {
         "name": "30d",
@@ -772,6 +776,7 @@
     "scopeNote": "All variants listed are G07-generation X7 only (2018–present). The X7 is only available as a 5-door SUV."
   },
   "marketIntelligence": {
+    "h2": "Market Intelligence",
     "mostRequestedEngines": [],
     "mostRequestedVariants": [],
     "averageReplacementCost": "",
@@ -779,6 +784,7 @@
     "liveFeed": []
   },
   "faq": {
+    "h2": "FAQ",
     "items": [
       {
         "id": 1,

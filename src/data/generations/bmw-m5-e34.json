@@ -300,6 +300,7 @@
     "marketIntelligenceLine": "The E34 M5 generated 120+ real UK engine enquiries in 2025 [BMW-VERIFIED], concentrated on the S38B38 engine as classic car enthusiasts seek the ultimate naturally aspirated M5."
   },
   "bestWorstEngines": {
+    "h2": "Best &amp; Worst Engines",
     "items": [
       {
         "slot": "Best Overall",
@@ -363,6 +364,7 @@
     ]
   },
   "commonProblems": {
+    "h2": "Common Problems",
     "problems": [
       {
         "id": 1,
@@ -509,6 +511,8 @@
     "note": "No Generation variance from the EM_Proprietary_Data baseline figures -E34 M5 is a unique generation with a hand-built engine. Costs are derived from specialist market data and tagged [BMW-QUOTE]."
   },
   "coreVariants": {
+    "h2": "Diesel &amp; Petrol Lineup",
+    "subheading": "Core Variants",
     "dieselVariants": [],
     "petrolVariants": [
       {
@@ -519,6 +523,7 @@
     "scopeNote": "The E34 M5 was offered with two S38 engine variants: the 3.5/3.6-litre S38B36 (1988–1992) and the 3.8-litre S38B38 (1991–1995). The Touring (estate) was available only in left-hand drive from 1992–1995. The six-speed manual transmission became standard from May 1994. UK-market \u0027Limited Edition\u0027 cars commemorated the final right-hand-drive examples in July 1995."
   },
   "marketIntelligence": {
+    "h2": "Market Intelligence",
     "mostRequestedEngines": [],
     "mostRequestedVariants": [],
     "averageReplacementCost": "",
@@ -526,6 +531,7 @@
     "liveFeed": []
   },
   "faq": {
+    "h2": "FAQ",
     "items": [
       {
         "id": 1,

@@ -645,6 +645,7 @@
     "marketIntelligenceLine": "As a current-generation model (2018–present), the G05 is still establishing its long-term reliability profile -but the B58 engine is already developing a reputation as one of BMW\u0027s most dependable modern six-cylinders, while the N63 V8 remains the most complex option."
   },
   "bestWorstEngines": {
+    "h2": "Best &amp; Worst Engines",
     "items": [
       {
         "slot": "Thin-Data Summary",
@@ -734,6 +735,7 @@
     ]
   },
   "commonProblems": {
+    "h2": "Common Problems",
     "problems": [
       {
         "id": 1,
@@ -900,6 +902,8 @@
     "note": ""
   },
   "coreVariants": {
+    "h2": "Diesel &amp; Petrol Lineup",
+    "subheading": "Core Variants",
     "dieselVariants": [
       {
         "name": "xDrive25d",
@@ -963,6 +967,7 @@
     "scopeNote": "All variants listed are G05-generation X5 only (2018–present). The G18 long-wheelbase variant (China market) shares most engines but is covered on its own Generation Page. The F95 X5 M is included as the high-performance variant."
   },
   "marketIntelligence": {
+    "h2": "Market Intelligence",
     "mostRequestedEngines": [],
     "mostRequestedVariants": [],
     "averageReplacementCost": "",
@@ -970,6 +975,7 @@
     "liveFeed": []
   },
   "faq": {
+    "h2": "FAQ",
     "items": [
       {
         "id": 1,

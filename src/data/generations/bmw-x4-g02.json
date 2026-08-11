@@ -462,6 +462,7 @@
     "marketIntelligenceLine": "The X4 nameplate generated significant UK engine enquiries in 2025 [BMW-VERIFIED], with demand concentrated on the B48-powered xDrive20i and B58-powered M40i models based on market patterns."
   },
   "bestWorstEngines": {
+    "h2": "Best &amp; Worst Engines",
     "items": [
       {
         "slot": "Best Value",
@@ -577,6 +578,7 @@
     ]
   },
   "commonProblems": {
+    "h2": "Common Problems",
     "problems": [
       {
         "id": 1,
@@ -727,6 +729,8 @@
     "note": ""
   },
   "coreVariants": {
+    "h2": "Diesel &amp; Petrol Lineup",
+    "subheading": "Core Variants",
     "dieselVariants": [
       {
         "name": "xDrive20d",
@@ -766,6 +770,7 @@
     "scopeNote": "All variants listed are G02 only. The X4 M (F98) is technically a separate model designation but shares the G02 platform. The xDrive30d (B57 six-cylinder diesel) was available in European markets but not in North America."
   },
   "marketIntelligence": {
+    "h2": "Market Intelligence",
     "mostRequestedEngines": [
       "1. B58B30 (M40i) -pattern data",
       "2. B48B20O1 (xDrive30i) -pattern data",
@@ -803,6 +808,7 @@
     ]
   },
   "faq": {
+    "h2": "FAQ",
     "items": [
       {
         "id": 1,

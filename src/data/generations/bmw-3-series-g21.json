@@ -397,6 +397,7 @@
     "marketIntelligenceLine": "The G21 Touring remains a popular choice in the UK premium estate segment, with strong demand for the 320i petrol and 330e plug-in hybrid variants [PATTERN DATA]."
   },
   "bestWorstEngines": {
+    "h2": "Best &amp; Worst Engines",
     "items": [
       {
         "slot": "Thin-Data Summary",
@@ -486,6 +487,7 @@
     ]
   },
   "commonProblems": {
+    "h2": "Common Problems",
     "problems": [
       {
         "id": 1,
@@ -672,6 +674,8 @@
     "note": "No Generation variance note required -no Engine Page baseline exists for these engines yet. Costs are sourced from UK specialist suppliers [BMW-QUOTE]."
   },
   "coreVariants": {
+    "h2": "Diesel &amp; Petrol Lineup",
+    "subheading": "Core Variants",
     "dieselVariants": [
       {
         "name": "318d",
@@ -731,6 +735,7 @@
     "scopeNote": "All variants listed are BMW 3 Series Touring G21 only. The G20 saloon, G80 M3 saloon and G81 M3 Touring are separate models with different engine availability and are covered on their own pages. Diesel variants were removed from the UK line-up in 2024."
   },
   "marketIntelligence": {
+    "h2": "Market Intelligence",
     "mostRequestedEngines": [],
     "mostRequestedVariants": [],
     "averageReplacementCost": "",
@@ -738,6 +743,7 @@
     "liveFeed": []
   },
   "faq": {
+    "h2": "FAQ",
     "items": [
       {
         "id": 1,

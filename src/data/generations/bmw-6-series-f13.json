@@ -441,6 +441,7 @@
     "marketIntelligenceLine": "As a low-volume grand tourer that ended production in 2018, the F13 is a niche enthusiast vehicle -the 640i remains the most common variant, while the M6 and 650i are the most sought-after for their V8 performance."
   },
   "bestWorstEngines": {
+    "h2": "Best &amp; Worst Engines",
     "items": [
       {
         "slot": "Thin-Data Summary",
@@ -530,6 +531,7 @@
     ]
   },
   "commonProblems": {
+    "h2": "Common Problems",
     "problems": [
       {
         "id": 1,
@@ -648,6 +650,8 @@
     "note": ""
   },
   "coreVariants": {
+    "h2": "Diesel &amp; Petrol Lineup",
+    "subheading": "Core Variants",
     "dieselVariants": [
       {
         "name": "640d",
@@ -691,6 +695,7 @@
     "scopeNote": "All variants listed are F13-generation 6 Series Coupé only (2011–2018). The F12 Convertible, F06 Gran Coupé and the 6 Series Gran Turismo (G32) share some engines but are covered on their own Generation Pages."
   },
   "marketIntelligence": {
+    "h2": "Market Intelligence",
     "mostRequestedEngines": [],
     "mostRequestedVariants": [],
     "averageReplacementCost": "",
@@ -698,6 +703,7 @@
     "liveFeed": []
   },
   "faq": {
+    "h2": "FAQ",
     "items": [
       {
         "id": 1,

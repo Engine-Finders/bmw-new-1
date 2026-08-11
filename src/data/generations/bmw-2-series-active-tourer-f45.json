@@ -469,6 +469,7 @@
     "marketIntelligenceLine": "The F45 generates consistent UK enquiries [PATTERN DATA], concentrated on 218i petrol and 218d/220d diesel variants as these compact MPVs enter affordable‑maintenance territory."
   },
   "bestWorstEngines": {
+    "h2": "Best &amp; Worst Engines",
     "items": [
       {
         "slot": "Thin-Data Summary",
@@ -553,6 +554,7 @@
     "keyTakeaways": []
   },
   "commonProblems": {
+    "h2": "Common Problems",
     "problems": [
       {
         "id": 1,
@@ -692,6 +694,8 @@
     "note": "No Generation variance from the Model Page\u0027s baseline figures -F45 shares identical engine‑bay access across all variants, so costs are inherited directly per the Authority Model, with no divergence note required. All costs are [BMW-QUOTE] from Table A -Engine Replacement Economics."
   },
   "coreVariants": {
+    "h2": "Diesel &amp; Petrol Lineup",
+    "subheading": "Core Variants",
     "dieselVariants": [
       {
         "name": "214d",
@@ -735,6 +739,7 @@
     "scopeNote": "All variants listed are BMW 2 Series Active Tourer F45 (first generation) only -5‑door MPV body style. F46 (Gran Tourer, three‑row MPV) is covered on its own Generation Page."
   },
   "marketIntelligence": {
+    "h2": "Market Intelligence",
     "mostRequestedEngines": [],
     "mostRequestedVariants": [],
     "averageReplacementCost": "",
@@ -742,6 +747,7 @@
     "liveFeed": []
   },
   "faq": {
+    "h2": "FAQ",
     "items": [
       {
         "id": 1,

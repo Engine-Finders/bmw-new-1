@@ -476,6 +476,7 @@
     "marketIntelligenceLine": "The E82 generated 240 real UK engine enquiries in 2025 [BMW-VERIFIED], concentrated on the N47 diesel and N54/N55 petrol units as these cars age into enthusiast ownership and maintenance cycles."
   },
   "bestWorstEngines": {
+    "h2": "Best &amp; Worst Engines",
     "items": [
       {
         "slot": "Best Diesel Overall",
@@ -595,6 +596,7 @@
     ]
   },
   "commonProblems": {
+    "h2": "Common Problems",
     "problems": [
       {
         "id": 1,
@@ -781,6 +783,8 @@
     "note": ""
   },
   "coreVariants": {
+    "h2": "Diesel &amp; Petrol Lineup",
+    "subheading": "Core Variants",
     "dieselVariants": [
       {
         "name": "118d",
@@ -808,6 +812,7 @@
     "scopeNote": "All variants listed are E82 coupé only -the two-door, four-seat sports coupé produced from 2007 to 2013. E81/E87 hatchbacks and E88 convertible are covered on their own Generation Pages, as fitment and labour access vary slightly by body style."
   },
   "marketIntelligence": {
+    "h2": "Market Intelligence",
     "mostRequestedEngines": [
       "1. N47D20C (118d/120d, 2.0-litre diesel)",
       "2. N54B30 (135i, twin-turbo)",
@@ -849,6 +854,7 @@
     ]
   },
   "faq": {
+    "h2": "FAQ",
     "items": [
       {
         "id": 1,

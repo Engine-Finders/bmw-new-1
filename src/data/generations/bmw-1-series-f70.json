@@ -348,6 +348,7 @@
     "marketIntelligenceLine": "The F70 generated real UK engine enquiries in 2025 [BMW-VERIFIED], with the 120 mild‑hybrid accounting for the majority of demand as the entry‑point to BMW ownership."
   },
   "bestWorstEngines": {
+    "h2": "Best &amp; Worst Engines",
     "items": [
       {
         "slot": "Best Diesel Overall",
@@ -451,6 +452,7 @@
     ]
   },
   "commonProblems": {
+    "h2": "Common Problems",
     "problems": [
       {
         "id": 1,
@@ -629,6 +631,8 @@
     "note": ""
   },
   "coreVariants": {
+    "h2": "Diesel &amp; Petrol Lineup",
+    "subheading": "Core Variants",
     "dieselVariants": [
       {
         "name": "118d",
@@ -668,6 +672,7 @@
     "scopeNote": "UK customers receive only petrol variants of the F70 – diesel engines have been dropped from the UK line‑up. All F70 variants are 5‑door hatchbacks with 7‑speed dual‑clutch automatic transmission."
   },
   "marketIntelligence": {
+    "h2": "Market Intelligence",
     "mostRequestedEngines": [
       "1. B38A15P (120) – entry‑level mild‑hybrid petrol",
       "2. B48A20H (M135 xDrive) – performance hot‑hatch enquiries",
@@ -709,6 +714,7 @@
     ]
   },
   "faq": {
+    "h2": "FAQ",
     "items": [
       {
         "id": 1,

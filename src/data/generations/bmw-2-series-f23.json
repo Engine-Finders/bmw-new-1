@@ -444,6 +444,7 @@
     "marketIntelligenceLine": "The F23 convertible generated 147 real UK engine enquiries in 2025 [BMW-VERIFIED], concentrated on the 2.0-litre petrol engines as these stylish convertibles enter the higher-mileage phase of their ownership cycle."
   },
   "bestWorstEngines": {
+    "h2": "Best &amp; Worst Engines",
     "items": [
       {
         "slot": "Best Petrol Overall",
@@ -544,6 +545,7 @@
     "keyTakeaways": []
   },
   "commonProblems": {
+    "h2": "Common Problems",
     "problems": [
       {
         "id": 1,
@@ -710,6 +712,8 @@
     "note": "No Generation variance from the Engine Page baseline -no dedicated Engine Pages exist for these families yet, so baseline figures are drawn from the EM_Proprietary_Data Table A. Labour hours estimated at 8–12 hours for the three-cylinder B38, 10–14 hours for four-cylinder engines, and 12–16 hours for six-cylinder engines due to engine bay packaging."
   },
   "coreVariants": {
+    "h2": "Diesel &amp; Petrol Lineup",
+    "subheading": "Core Variants",
     "dieselVariants": [
       {
         "name": "218d",
@@ -753,6 +757,7 @@
     "scopeNote": "All variants listed are F23 convertible only. The 228i and M235i were produced 2015–2016; the 230i and M240i replaced them from July 2016 production. The 218i (B38) joined the range in 2017. The 225d is the twin-turbo diesel."
   },
   "marketIntelligence": {
+    "h2": "Market Intelligence",
     "mostRequestedEngines": [
       "1. B48B20B 230i -540 requests [BMW-VERIFIED]",
       "2. N20B20A 220i -1450 requests (model-level N47/N20 combined) [BMW-VERIFIED]",
@@ -790,6 +795,7 @@
     ]
   },
   "faq": {
+    "h2": "FAQ",
     "items": [
       {
         "id": 1,

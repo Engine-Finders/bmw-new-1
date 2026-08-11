@@ -327,6 +327,7 @@
     "marketIntelligenceLine": "As a model that ended production in 2021, the F87 M2 is now a used-market icon -the N55 standard car is the most accessible, while the S55 Competition and CS are the most sought-after for their true M-engine character."
   },
   "bestWorstEngines": {
+    "h2": "Best &amp; Worst Engines",
     "items": [
       {
         "slot": "Thin-Data Summary",
@@ -392,6 +393,7 @@
     ]
   },
   "commonProblems": {
+    "h2": "Common Problems",
     "problems": [
       {
         "id": 1,
@@ -473,6 +475,8 @@
     "note": ""
   },
   "coreVariants": {
+    "h2": "Diesel &amp; Petrol Lineup",
+    "subheading": "Core Variants",
     "dieselVariants": [],
     "petrolVariants": [
       {
@@ -491,6 +495,7 @@
     "scopeNote": "All variants listed are F87-generation M2 only (2015–2021). The M2 was only available as a rear-wheel-drive coupé."
   },
   "marketIntelligence": {
+    "h2": "Market Intelligence",
     "mostRequestedEngines": [],
     "mostRequestedVariants": [],
     "averageReplacementCost": "",
@@ -498,6 +503,7 @@
     "liveFeed": []
   },
   "faq": {
+    "h2": "FAQ",
     "items": [
       {
         "id": 1,

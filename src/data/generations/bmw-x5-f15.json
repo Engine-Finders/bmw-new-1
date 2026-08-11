@@ -524,6 +524,7 @@
     "marketIntelligenceLine": "The F15 X5 generated 288 real UK engine enquiries in 2025 [BMW-VERIFIED], concentrated on the N57 diesel and N63 V8 petrol units as these luxury SUVs age out of warranty and maintenance costs become a significant consideration."
   },
   "bestWorstEngines": {
+    "h2": "Best &amp; Worst Engines",
     "items": [
       {
         "slot": "Best Diesel Overall",
@@ -667,6 +668,7 @@
     ]
   },
   "commonProblems": {
+    "h2": "Common Problems",
     "problems": [
       {
         "id": 1,
@@ -869,6 +871,8 @@
     "note": ""
   },
   "coreVariants": {
+    "h2": "Diesel &amp; Petrol Lineup",
+    "subheading": "Core Variants",
     "dieselVariants": [
       {
         "name": "25d",
@@ -916,6 +920,7 @@
     "scopeNote": "All variants listed are F15 (third-generation X5) only, produced from April 2013 to July 2018. sDrive denotes rear-wheel drive; xDrive denotes all-wheel drive. The F85 X5 M is the high-performance variant with the S63 V8. The xDrive40e is the plug-in hybrid variant with the N20 four-cylinder petrol engine and electric motor. The F16 X6 shares most of these engines but is covered on its own Generation Page."
   },
   "marketIntelligence": {
+    "h2": "Market Intelligence",
     "mostRequestedEngines": [
       "1. N57D30A (xDrive30d, 3.0-litre diesel)",
       "2. N63B44B (xDrive50i, 4.4-litre V8)",
@@ -957,6 +962,7 @@
     ]
   },
   "faq": {
+    "h2": "FAQ",
     "items": [
       {
         "id": 1,

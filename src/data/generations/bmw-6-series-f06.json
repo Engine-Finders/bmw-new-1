@@ -440,6 +440,7 @@
     "marketIntelligenceLine": "The BMW 6 Series F06 generated 120 real UK engine enquiries in 2025 [EM-VERIFIED], concentrated on the N63 V8s and N57 diesels as these cars age out of warranty."
   },
   "bestWorstEngines": {
+    "h2": "Best &amp; Worst Engines",
     "items": [
       {
         "slot": "Best Diesel Overall",
@@ -538,6 +539,7 @@
     "keyTakeaways": []
   },
   "commonProblems": {
+    "h2": "Common Problems",
     "problems": [
       {
         "id": 1,
@@ -716,6 +718,8 @@
     "note": ""
   },
   "coreVariants": {
+    "h2": "Diesel &amp; Petrol Lineup",
+    "subheading": "Core Variants",
     "dieselVariants": [
       {
         "name": "640d",
@@ -751,6 +755,7 @@
     "scopeNote": "All variants listed are F06 Gran Coupé (four-door fastback) only. F12 Convertible and F13 Coupé share most of these engines but are covered on their own Generation Pages. The 640i uses the N55B30A (320 PS). The 650i uses the N63B44B (449 PS), with early production using N63B44A (408 PS) and some markets receiving the N63B40A (408 PS, 4.0L). The 640d uses the N57D30B (313 PS). The M6 uses the S63B44B (560–575 PS). xDrive (all-wheel drive) was available as an option on most variants. The F06 Gran Coupé features a 4+1 seating arrangement with two full-size rear seats and one smaller rear middle seat."
   },
   "marketIntelligence": {
+    "h2": "Market Intelligence",
     "mostRequestedEngines": [
       "1. N57D30B (830 JLR‑wide enquiries [EM‑VERIFIED])",
       "2. N63B44A/B (120 F06 enquiries [EM‑VERIFIED])",
@@ -788,6 +793,7 @@
     ]
   },
   "faq": {
+    "h2": "FAQ",
     "items": [
       {
         "id": 1,

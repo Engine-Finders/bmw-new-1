@@ -428,6 +428,7 @@
     "marketIntelligenceLine": "The 8 Series G15 shares its engine line-up with the G14 and G16 -B58 enquiries totalled 540 and N63/S63 enquiries totalled 440/410 in 2025 [EM-VERIFIED], with the M850i xDrive attracting the highest proportion of performance-oriented enquiries."
   },
   "bestWorstEngines": {
+    "h2": "Best &amp; Worst Engines",
     "items": [
       {
         "slot": "Best Diesel Overall",
@@ -534,6 +535,7 @@
     "keyTakeaways": []
   },
   "commonProblems": {
+    "h2": "Common Problems",
     "problems": [
       {
         "id": 1,
@@ -712,6 +714,8 @@
     "note": ""
   },
   "coreVariants": {
+    "h2": "Diesel &amp; Petrol Lineup",
+    "subheading": "Core Variants",
     "dieselVariants": [
       {
         "name": "840d xDrive",
@@ -747,6 +751,7 @@
     "scopeNote": "All variants listed are G15 Coupé (two-door grand tourer) only. G14 Convertible and G16 Gran Coupé share most of these engines but are covered on their own Generation Pages. The 840i uses the B58B30C (340 PS). The M850i xDrive uses the N63B44T3 (530 PS). The M8 uses the S63B44T4 (600 PS) and the M8 Competition produces 625 PS. The 840d xDrive uses the B57D30B with 48V mild-hybrid (340 PS). The Alpina B8 uses a tuned N63 V8 producing 620 PS. The 840i and 840d are available with rear-wheel drive, while the M850i xDrive, M8, and M8 Competition are all-wheel drive (xDrive) only."
   },
   "marketIntelligence": {
+    "h2": "Market Intelligence",
     "mostRequestedEngines": [
       "1. B58B30C (540 enquiries [EM-VERIFIED])",
       "2. N63B44T3 (440 enquiries [EM-VERIFIED])",
@@ -788,6 +793,7 @@
     ]
   },
   "faq": {
+    "h2": "FAQ",
     "items": [
       {
         "id": 1,

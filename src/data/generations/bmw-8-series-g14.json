@@ -384,6 +384,7 @@
     "marketIntelligenceLine": "The G14 8 Series Convertible is a low-volume luxury grand tourer; enquiries are concentrated on the B58 six-cylinder and N63 V8 petrol engines, with values ranging from £35,000 for early 840i examples to £80,000+ for well-specced M8 Competitions."
   },
   "bestWorstEngines": {
+    "h2": "Best &amp; Worst Engines",
     "items": [
       {
         "slot": "Best Petrol Overall",
@@ -487,6 +488,7 @@
     ]
   },
   "commonProblems": {
+    "h2": "Common Problems",
     "problems": [
       {
         "id": 1,
@@ -621,6 +623,8 @@
     "note": ""
   },
   "coreVariants": {
+    "h2": "Diesel &amp; Petrol Lineup",
+    "subheading": "Core Variants",
     "dieselVariants": [
       {
         "name": "840d xDrive",
@@ -648,6 +652,7 @@
     "scopeNote": "All variants listed are G14 8 Series Convertible only. The G15 Coupé and G16 Gran Coupé share these powertrains but are covered on their own Generation Pages. The M8 Competition is the high-performance variant powered by the S63 V8. The LCI facelift (2020) introduced the updated B58B30M1 and N63B44T3 engines, along with mild-hybrid technology on the 840d."
   },
   "marketIntelligence": {
+    "h2": "Market Intelligence",
     "mostRequestedEngines": [],
     "mostRequestedVariants": [
       "1. 840i (3.0 petrol)",
@@ -685,6 +690,7 @@
     ]
   },
   "faq": {
+    "h2": "FAQ",
     "items": [
       {
         "id": 1,

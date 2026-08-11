@@ -177,7 +177,7 @@ export default function BestWorstEngines({ data }) {
     <section className="w-full bg-[var(--color-page)] py-8 text-[var(--color-text)] md:py-10">
       <div className="relative mx-auto w-full max-w-8xl px-4 md:px-8">
         <h2 className="text-[2.15rem] font-bold leading-[1.1] tracking-normal text-[var(--color-text)] md:text-[3rem]">
-          Best &amp; Worst Engines
+          {data.h2 || "Best &amp; Worst Engines"}
         </h2>
         <div className="mt-3">
           <MStripe />

@@ -560,6 +560,7 @@
     "marketIntelligenceLine": "As a lower-volume convertible variant, the E88 is a niche enthusiast vehicle -the 135i remains the most sought-after, while the 120d is the most practical daily driver."
   },
   "bestWorstEngines": {
+    "h2": "Best &amp; Worst Engines",
     "items": [
       {
         "slot": "Thin-Data Summary",
@@ -641,6 +642,7 @@
     ]
   },
   "commonProblems": {
+    "h2": "Common Problems",
     "problems": [
       {
         "id": 1,
@@ -754,6 +756,8 @@
     "note": ""
   },
   "coreVariants": {
+    "h2": "Diesel &amp; Petrol Lineup",
+    "subheading": "Core Variants",
     "dieselVariants": [
       {
         "name": "116d",
@@ -805,6 +809,7 @@
     "scopeNote": "All variants listed are E88-generation 1 Series Convertible only (2007–2013). The 1 Series M Coupé (E82) was coupé-only and not available as a convertible."
   },
   "marketIntelligence": {
+    "h2": "Market Intelligence",
     "mostRequestedEngines": [],
     "mostRequestedVariants": [],
     "averageReplacementCost": "",
@@ -812,6 +817,7 @@
     "liveFeed": []
   },
   "faq": {
+    "h2": "FAQ",
     "items": [
       {
         "id": 1,

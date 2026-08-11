@@ -596,6 +596,7 @@
     "marketIntelligenceLine": "The BMW X3 G01 generated 182 real UK engine enquiries in 2025 [EM-VERIFIED], concentrated on the B47 diesel fours and B58 petrol sixes as these SUVs age out of warranty."
   },
   "bestWorstEngines": {
+    "h2": "Best &amp; Worst Engines",
     "items": [
       {
         "slot": "Best Diesel Overall",
@@ -734,6 +735,7 @@
     "keyTakeaways": []
   },
   "commonProblems": {
+    "h2": "Common Problems",
     "problems": [
       {
         "id": 1,
@@ -952,6 +954,8 @@
     "note": ""
   },
   "coreVariants": {
+    "h2": "Diesel &amp; Petrol Lineup",
+    "subheading": "Core Variants",
     "dieselVariants": [
       {
         "name": "sDrive18d",
@@ -1011,6 +1015,7 @@
     "scopeNote": "All variants listed are G01 X3 SUV only (2017–2024). The X3 M is designated F97 but is included on this page as it shares the G01 platform. The sDrive20i and sDrive18d are rear-wheel drive; all other variants are xDrive (all-wheel drive). The xDrive30e is a plug-in hybrid combining the B48B20A petrol engine with an electric motor for a combined 292 PS. The M40i uses the B58B30O1 (360 PS). The M40d uses the B57D30B (326 PS). The X3 M uses the S58B30A (480 PS) and the X3 M Competition produces 510 PS."
   },
   "marketIntelligence": {
+    "h2": "Market Intelligence",
     "mostRequestedEngines": [
       "1. B47D20A/B (930 enquiries [EM-VERIFIED])",
       "2. B58B30O1/B (540 enquiries [EM-VERIFIED])",
@@ -1048,6 +1053,7 @@
     ]
   },
   "faq": {
+    "h2": "FAQ",
     "items": [
       {
         "id": 1,

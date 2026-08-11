@@ -546,6 +546,7 @@
     "marketIntelligenceLine": "The F11 Touring generated 300+ real UK engine enquiries in 2025 [BMW-VERIFIED], concentrated on the 520d diesel and 535i petrol as the range reaches affordable used-car territory."
   },
   "bestWorstEngines": {
+    "h2": "Best &amp; Worst Engines",
     "items": [
       {
         "slot": "Best Petrol Overall",
@@ -689,6 +690,7 @@
     ]
   },
   "commonProblems": {
+    "h2": "Common Problems",
     "problems": [
       {
         "id": 1,
@@ -915,6 +917,8 @@
     "note": "No Generation variance from the EM_Proprietary_Data baseline figures -F11 Touring shares the L6 platform with the F10 saloon, with similar engine-bay access, so costs are inherited directly per the Authority Model, with no divergence note required."
   },
   "coreVariants": {
+    "h2": "Diesel &amp; Petrol Lineup",
+    "subheading": "Core Variants",
     "dieselVariants": [
       {
         "name": "518d",
@@ -974,6 +978,7 @@
     "scopeNote": "All variants listed are F11 Touring only. F10 Saloon and F07 Gran Turismo share most of these engines but are covered on their own Generation Pages. The 525d switched from an N57 straight-six (2010–2011) to an N47 four-cylinder (2011–2016) -check your car\u0027s production date if you\u0027re buying a 525d. M550d xDrive features the tri-turbo N57S engine with 381 bhp. ActiveHybrid 5 combines an N55 petrol engine with a 40 kW electric motor."
   },
   "marketIntelligence": {
+    "h2": "Market Intelligence",
     "mostRequestedEngines": [
       "1. N47D20 (largest share of diesel enquiries)",
       "2. N57D30",
@@ -1011,6 +1016,7 @@
     ]
   },
   "faq": {
+    "h2": "FAQ",
     "items": [
       {
         "id": 1,

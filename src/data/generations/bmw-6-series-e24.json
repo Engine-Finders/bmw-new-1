@@ -421,6 +421,7 @@
     "marketIntelligenceLine": "The E24 remains a highly sought-after modern classic, with strong demand for the 635CSi and M635CSi variants among UK collectors and enthusiasts [PATTERN DATA]."
   },
   "bestWorstEngines": {
+    "h2": "Best &amp; Worst Engines",
     "items": [
       {
         "slot": "Thin-Data Summary",
@@ -526,6 +527,7 @@
     ]
   },
   "commonProblems": {
+    "h2": "Common Problems",
     "problems": [
       {
         "id": 1,
@@ -720,6 +722,8 @@
     "note": "No Generation variance note required -no Engine Page baseline exists for these engines yet. Costs are sourced from UK specialist suppliers [BMW-QUOTE]."
   },
   "coreVariants": {
+    "h2": "Diesel &amp; Petrol Lineup",
+    "subheading": "Core Variants",
     "dieselVariants": [],
     "petrolVariants": [
       {
@@ -754,6 +758,7 @@
     "scopeNote": "All variants listed are BMW 6 Series E24 only. The E24 was produced exclusively as a 2-door coupé -no estate, convertible or saloon variants exist. The M6 was the North American and Japanese market name for the M635CSi. The successor to the E24 was the E31 8 Series (1989–1999), with the 6 Series name later revived on the E63."
   },
   "marketIntelligence": {
+    "h2": "Market Intelligence",
     "mostRequestedEngines": [],
     "mostRequestedVariants": [],
     "averageReplacementCost": "",
@@ -761,6 +766,7 @@
     "liveFeed": []
   },
   "faq": {
+    "h2": "FAQ",
     "items": [
       {
         "id": 1,

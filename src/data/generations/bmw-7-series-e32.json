@@ -396,6 +396,7 @@
     "marketIntelligenceLine": "The 7 Series nameplate generated significant UK engine enquiries in 2025 [BMW-VERIFIED], with demand for the E32 concentrated on the V8-powered 740i and V12 750i based on market patterns."
   },
   "bestWorstEngines": {
+    "h2": "Best &amp; Worst Engines",
     "items": [
       {
         "slot": "Best Value",
@@ -495,6 +496,7 @@
     ]
   },
   "commonProblems": {
+    "h2": "Common Problems",
     "problems": [
       {
         "id": 1,
@@ -605,6 +607,8 @@
     "note": ""
   },
   "coreVariants": {
+    "h2": "Diesel &amp; Petrol Lineup",
+    "subheading": "Core Variants",
     "dieselVariants": [],
     "petrolVariants": [
       {
@@ -623,6 +627,7 @@
     "scopeNote": "All variants listed are E32 only. The \u0027L\u0027 suffix denotes long-wheelbase. The 730i was offered with both the M30 straight-six and the M60 V8 during overlapping periods (1992–1994). The 735i was only offered with the M30 straight-six."
   },
   "marketIntelligence": {
+    "h2": "Market Intelligence",
     "mostRequestedEngines": [
       "1. M30B34 (735i) -pattern data",
       "2. M60B40 (740i) -pattern data",
@@ -660,6 +665,7 @@
     ]
   },
   "faq": {
+    "h2": "FAQ",
     "items": [
       {
         "id": 1,

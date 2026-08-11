@@ -516,6 +516,7 @@
     "marketIntelligenceLine": "The F30 3 Series generated 380+ real UK engine enquiries in 2025 [BMW-VERIFIED], concentrated on the 2.0-litre N47 and N20 engines as the parc exits warranty and timing-chain concerns come to the fore."
   },
   "bestWorstEngines": {
+    "h2": "Best &amp; Worst Engines",
     "items": [
       {
         "slot": "Best Diesel Overall",
@@ -659,6 +660,7 @@
     ]
   },
   "commonProblems": {
+    "h2": "Common Problems",
     "problems": [
       {
         "id": 1,
@@ -833,6 +835,8 @@
     "note": ""
   },
   "coreVariants": {
+    "h2": "Diesel &amp; Petrol Lineup",
+    "subheading": "Core Variants",
     "dieselVariants": [
       {
         "name": "316d",
@@ -904,6 +908,7 @@
     "scopeNote": "All variants listed are F30 saloon only. F31 Touring, F34 Gran Turismo, and F35 long-wheelbase saloon share most of these engines but are covered on their own Generation Pages. The F30 was the first 3 Series to be offered with a plug-in hybrid (330e) from 2015, and the ActiveHybrid 3 was available from 2012 to 2015. The LCI facelift (2015) introduced the B38, B48, and B58 engines, replacing the N13, N20, and N55 in most applications."
   },
   "marketIntelligence": {
+    "h2": "Market Intelligence",
     "mostRequestedEngines": [
       "1. N47D20 2.0 Diesel (380 F30-wide enquiries)",
       "2. B47D20 2.0 Diesel (380 F30-wide)",
@@ -945,6 +950,7 @@
     ]
   },
   "faq": {
+    "h2": "FAQ",
     "items": [
       {
         "id": 1,

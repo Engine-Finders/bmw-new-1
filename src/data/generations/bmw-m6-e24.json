@@ -283,6 +283,7 @@
     "marketIntelligenceLine": "The E24 M6 remains a highly sought-after modern classic in the UK, with only 524 right-hand-drive examples imported, commanding significant premiums in the collector car market."
   },
   "bestWorstEngines": {
+    "h2": "Best &amp; Worst Engines",
     "items": [
       {
         "slot": "Thin-Data Summary",
@@ -340,6 +341,7 @@
     ]
   },
   "commonProblems": {
+    "h2": "Common Problems",
     "problems": [
       {
         "id": 1,
@@ -458,6 +460,8 @@
     "note": "No Generation variance note required -no Engine Page baseline exists for these engines yet. Costs are estimated from UK specialist suppliers [BMW-QUOTE]. M88/3 engines are particularly rare and expensive due to limited production and parts scarcity."
   },
   "coreVariants": {
+    "h2": "Diesel &amp; Petrol Lineup",
+    "subheading": "Core Variants",
     "dieselVariants": [],
     "petrolVariants": [
       {
@@ -472,6 +476,7 @@
     "scopeNote": "All variants listed are BMW M6 E24 only. The M635CSi was sold in Europe and most other markets; the M6 badge was used in North America and Japan. Both are 2-door coupés -no convertible or saloon variants exist for the E24 generation. Only 524 right-hand-drive M6s were imported to the UK. Total production: 5,855 units."
   },
   "marketIntelligence": {
+    "h2": "Market Intelligence",
     "mostRequestedEngines": [],
     "mostRequestedVariants": [],
     "averageReplacementCost": "",
@@ -479,6 +484,7 @@
     "liveFeed": []
   },
   "faq": {
+    "h2": "FAQ",
     "items": [
       {
         "id": 1,

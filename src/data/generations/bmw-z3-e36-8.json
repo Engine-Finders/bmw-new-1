@@ -354,6 +354,7 @@
     "marketIntelligenceLine": "The E36/8 Z3 Coupé is now a modern classic; enquiries are concentrated on M52/M54 timing chain and cooling system maintenance, S50/S54 VANOS and rod bearing concerns, and rear subframe floor reinforcement, with values ranging from £8,000 for entry-level 2.8 examples to £40,000+ for low-mileage S54 M Coupés."
   },
   "bestWorstEngines": {
+    "h2": "Best &amp; Worst Engines",
     "items": [
       {
         "slot": "Highest Risk",
@@ -439,6 +440,7 @@
     ]
   },
   "commonProblems": {
+    "h2": "Common Problems",
     "problems": [
       {
         "id": 1,
@@ -581,6 +583,8 @@
     "note": ""
   },
   "coreVariants": {
+    "h2": "Diesel &amp; Petrol Lineup",
+    "subheading": "Core Variants",
     "dieselVariants": [],
     "petrolVariants": [
       {
@@ -607,6 +611,7 @@
     "scopeNote": "All variants listed are E36/8 Z3 Coupé only. The Z3 Coupé was never offered with four-cylinder engines -all coupés used six-cylinder inline engines. The 2.8 was available from 1998 to 2000 (initially with the M52B28, later the M52TUB28). The 3.0i replaced the 2.8 in mid-2000 with the M54B30 engine. The M Coupé used the S50B32 from 1998 to 2001 and the S54B32 from 2001 to 2002."
   },
   "marketIntelligence": {
+    "h2": "Market Intelligence",
     "mostRequestedEngines": [
       "1. S54B32 3.2 M Coupé",
       "2. M54B30 3.0i",
@@ -644,6 +649,7 @@
     ]
   },
   "faq": {
+    "h2": "FAQ",
     "items": [
       {
         "id": 1,

@@ -523,6 +523,7 @@
     "marketIntelligenceLine": "The E38 7 Series generates steady UK specialist enquiries, concentrated on the 728i, 740i and 750i as these classic luxury saloons enter collector-car territory."
   },
   "bestWorstEngines": {
+    "h2": "Best &amp; Worst Engines",
     "items": [
       {
         "slot": "Thin-Data Summary",
@@ -615,6 +616,7 @@
     "keyTakeaways": []
   },
   "commonProblems": {
+    "h2": "Common Problems",
     "problems": [
       {
         "id": 1,
@@ -817,6 +819,8 @@
     "note": "No Generation variance from the Engine Page baseline -no dedicated Engine Pages exist for these families yet, so baseline figures are drawn from the EM_Proprietary_Data Table A. Labour hours estimated at 10–14 hours for six-cylinder engines, 12–16 hours for V8s, and 14–18 hours for the V12 and V8 diesel due to additional complexity."
   },
   "coreVariants": {
+    "h2": "Diesel &amp; Petrol Lineup",
+    "subheading": "Core Variants",
     "dieselVariants": [
       {
         "name": "725tds",
@@ -856,6 +860,7 @@
     "scopeNote": "All variants listed are E38 7 Series only. The 730i was produced 1994–1996 and replaced by the 735i. The 740i received a 4.4-litre M62 in 1996, replacing the 4.0-litre M60. The 750i V12 was produced throughout. The 740d (M67 V8 diesel) was introduced in 1999 and is the rarest E38 variant. Long-wheelbase (iL) and Limousine (L7) variants share the same engine range."
   },
   "marketIntelligence": {
+    "h2": "Market Intelligence",
     "mostRequestedEngines": [],
     "mostRequestedVariants": [],
     "averageReplacementCost": "",
@@ -863,6 +868,7 @@
     "liveFeed": []
   },
   "faq": {
+    "h2": "FAQ",
     "items": [
       {
         "id": 1,

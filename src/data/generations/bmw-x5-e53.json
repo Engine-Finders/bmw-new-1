@@ -384,6 +384,7 @@
     "marketIntelligenceLine": "The X5 E53 generated 73 real UK engine enquiries in 2025 [EM-VERIFIED], concentrated on the 3.0d diesel and 3.0i petrol as these early SUVs enter classic-car territory."
   },
   "bestWorstEngines": {
+    "h2": "Best &amp; Worst Engines",
     "items": [
       {
         "slot": "Best Petrol Overall",
@@ -484,6 +485,7 @@
     "keyTakeaways": []
   },
   "commonProblems": {
+    "h2": "Common Problems",
     "problems": [
       {
         "id": 1,
@@ -662,6 +664,8 @@
     "note": "No Generation variance from the Engine Page baseline -no dedicated Engine Pages exist for these families yet, so baseline figures are drawn from the EM_Proprietary_Data Table A. Labour hours estimated at 10–14 hours for six-cylinder engines, 12–16 hours for V8s, and 14–18 hours for the N62B48 due to additional complexity. The E53\u0027s engine bay is relatively spacious, but V8 work requires more disassembly."
   },
   "coreVariants": {
+    "h2": "Diesel &amp; Petrol Lineup",
+    "subheading": "Core Variants",
     "dieselVariants": [
       {
         "name": "3.0d",
@@ -697,6 +701,7 @@
     "scopeNote": "All variants listed are first-generation X5 E53 only. The 4.4i was produced with the M62 V8 from 1999–2003 and the N62 V8 from 2003–2006. The 4.6is was produced 2002–2003; the 4.8is replaced it from 2004–2006. All E53 models feature permanent all-wheel drive."
   },
   "marketIntelligence": {
+    "h2": "Market Intelligence",
     "mostRequestedEngines": [
       "1. M54B30 3.0i -73 requests [EM-VERIFIED]",
       "2. M57D30 3.0d -pattern data",
@@ -734,6 +739,7 @@
     ]
   },
   "faq": {
+    "h2": "FAQ",
     "items": [
       {
         "id": 1,

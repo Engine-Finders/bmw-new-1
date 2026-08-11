@@ -288,6 +288,7 @@
     "marketIntelligenceLine": "The G87 M2 generated 120+ real UK engine enquiries in 2025 [BMW-VERIFIED], concentrated on the S58 engine as enthusiasts seek BMW\u0027s last pure ICE M car."
   },
   "bestWorstEngines": {
+    "h2": "Best &amp; Worst Engines",
     "items": [
       {
         "slot": "Overall Verdict",
@@ -345,6 +346,7 @@
     ]
   },
   "commonProblems": {
+    "h2": "Common Problems",
     "problems": [
       {
         "id": 1,
@@ -491,6 +493,8 @@
     "note": "No Generation variance from the EM_Proprietary_Data baseline figures -G87 M2 is a new generation with no direct predecessor cost comparison for the S58 engine. Costs are derived from BMW specialist market data and tagged [BMW-QUOTE] and [PLACEHOLDER -confirm vs cost sheet] where applicable."
   },
   "coreVariants": {
+    "h2": "Diesel &amp; Petrol Lineup",
+    "subheading": "Core Variants",
     "dieselVariants": [],
     "petrolVariants": [
       {
@@ -501,6 +505,7 @@
     "scopeNote": "The BMW M2 G87 is offered with a single engine option -the S58B30 twin-turbo straight-six. Pre-LCI models (2022–2023) produce 453 bhp; LCI models (2024–present) produce 473 bhp. Both are available with either a six-speed manual or eight-speed automatic transmission. The G87 is rear-wheel drive only; an xDrive model was introduced in Summer 2026. A limited-run M2 CS model was sold in 2025."
   },
   "marketIntelligence": {
+    "h2": "Market Intelligence",
     "mostRequestedEngines": [],
     "mostRequestedVariants": [],
     "averageReplacementCost": "",
@@ -508,6 +513,7 @@
     "liveFeed": []
   },
   "faq": {
+    "h2": "FAQ",
     "items": [
       {
         "id": 1,

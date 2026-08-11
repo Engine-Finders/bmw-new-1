@@ -306,6 +306,7 @@
     "marketIntelligenceLine": "The E46 M3 generated real UK engine enquiries in 2025 [BMW-VERIFIED], with the S54B32 accounting for the majority of demand as these cars enter modern classic and collector territory."
   },
   "bestWorstEngines": {
+    "h2": "Best &amp; Worst Engines",
     "items": [
       {
         "slot": "Best Petrol Overall",
@@ -395,6 +396,7 @@
     ]
   },
   "commonProblems": {
+    "h2": "Common Problems",
     "problems": [
       {
         "id": 1,
@@ -569,6 +571,8 @@
     "note": ""
   },
   "coreVariants": {
+    "h2": "Diesel &amp; Petrol Lineup",
+    "subheading": "Core Variants",
     "dieselVariants": [],
     "petrolVariants": [
       {
@@ -587,6 +591,7 @@
     "scopeNote": "All variants listed are E46 only. The E46 M3 was offered as a Coupé and Convertible with either a six‑speed manual or SMG II transmission. The CSL was a limited‑run (1,383 units) Coupé with the S54B32HP engine, SMG II only, and extensive weight reduction measures including a carbon fibre roof and intake."
   },
   "marketIntelligence": {
+    "h2": "Market Intelligence",
     "mostRequestedEngines": [
       "1. S54B32 (standard M3) – the definitive M3 engine, highest enquiries",
       "2. S54B32HP (CSL) – collector and performance enquiries",
@@ -630,6 +635,7 @@
     ]
   },
   "faq": {
+    "h2": "FAQ",
     "items": [
       {
         "id": 1,

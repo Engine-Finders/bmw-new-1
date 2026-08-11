@@ -319,6 +319,7 @@
     "marketIntelligenceLine": "The Z4 nameplate generated limited UK engine enquiries in 2025 [BMW-VERIFIED], with demand concentrated on the N52-powered 3.0si and the S54-powered Z4 M Coupé based on market patterns."
   },
   "bestWorstEngines": {
+    "h2": "Best &amp; Worst Engines",
     "items": [
       {
         "slot": "Overall Verdict",
@@ -384,6 +385,7 @@
     ]
   },
   "commonProblems": {
+    "h2": "Common Problems",
     "problems": [
       {
         "id": 1,
@@ -478,6 +480,8 @@
     "note": ""
   },
   "coreVariants": {
+    "h2": "Diesel &amp; Petrol Lineup",
+    "subheading": "Core Variants",
     "dieselVariants": [],
     "petrolVariants": [
       {
@@ -500,6 +504,7 @@
     "scopeNote": "All variants listed are E86 only. The E85 Roadster shares the same engines but is covered on its own Generation Page. The 3.0si was offered in two power outputs depending on market and specification."
   },
   "marketIntelligence": {
+    "h2": "Market Intelligence",
     "mostRequestedEngines": [],
     "mostRequestedVariants": [],
     "averageReplacementCost": "",
@@ -507,6 +512,7 @@
     "liveFeed": []
   },
   "faq": {
+    "h2": "FAQ",
     "items": [
       {
         "id": 1,

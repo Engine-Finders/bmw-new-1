@@ -93,10 +93,10 @@ export default function CoreVariants({ data }) {
       {/* MOBILE: no background image — plain page background, content stacks in normal flow */}
       <div className="px-4 py-8 text-[var(--color-text)] md:hidden">
         <p className="text-[0.72rem] font-semibold uppercase tracking-wide text-[var(--color-primary)]">
-          Core Variants
+          {data.subheading || "Core Variants"}
         </p>
         <h2 className="mt-1.5 text-[2.15rem] font-bold leading-[1.1] tracking-normal">
-          Diesel &amp; Petrol Lineup
+          {data.h2 || "Diesel &amp; Petrol Lineup"}
         </h2>
         <div className="mt-2.5">
           <MStripe />
@@ -137,7 +137,7 @@ export default function CoreVariants({ data }) {
           <div className="flex w-full max-w-[640px] flex-col gap-4">
             <div>
               <h2 className={`text-[3rem] font-bold leading-[1.1] tracking-normal ${headingClass}`}>
-                Core Variants
+                {data.h2 || "Core Variants"}
               </h2>
               <div className="mt-3">
                 <MStripe />

@@ -584,6 +584,7 @@
     "marketIntelligenceLine": "The G11/G12 7 Series generated 256 real UK engine enquiries in 2025 [BMW-VERIFIED], concentrated on the B57 diesel and N63 V8 petrol units as these luxury flagships exit warranty and owner maintenance cycles begin."
   },
   "bestWorstEngines": {
+    "h2": "Best &amp; Worst Engines",
     "items": [
       {
         "slot": "Best Diesel Overall",
@@ -735,6 +736,7 @@
     ]
   },
   "commonProblems": {
+    "h2": "Common Problems",
     "problems": [
       {
         "id": 1,
@@ -961,6 +963,8 @@
     "note": ""
   },
   "coreVariants": {
+    "h2": "Diesel &amp; Petrol Lineup",
+    "subheading": "Core Variants",
     "dieselVariants": [
       {
         "name": "725d · 725Ld · 730d · 730Ld · 730d xDrive · 730Ld xDrive · 740d · 740Ld · 740d xDrive · 740Ld xDrive · 750d · 750Ld · 750d xDrive · 750Ld xDrive",
@@ -988,6 +992,7 @@
     "scopeNote": "All variants listed are G11 (short-wheelbase) and G12 (long-wheelbase) sixth-generation 7 Series only, produced from July 2015 to 2022. The 725d was produced 2016–2019 only; the 750d (quad-turbo) was produced 2017–2020 only. M760Li xDrive is the sole V12 variant. Alpina B7 is a separate variant based on the G12 platform."
   },
   "marketIntelligence": {
+    "h2": "Market Intelligence",
     "mostRequestedEngines": [
       "1. B57D30 (730d/740d, 3.0-litre diesel)",
       "2. N63B44 (750i, 4.4-litre V8)",
@@ -1029,6 +1034,7 @@
     ]
   },
   "faq": {
+    "h2": "FAQ",
     "items": [
       {
         "id": 1,

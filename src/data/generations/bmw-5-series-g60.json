@@ -516,6 +516,7 @@
     "marketIntelligenceLine": "The 5 Series nameplate generated significant UK engine enquiries in 2025 [BMW-VERIFIED], with demand for the G60 concentrated on the 520d diesel and 530e plug-in hybrid based on market patterns."
   },
   "bestWorstEngines": {
+    "h2": "Best &amp; Worst Engines",
     "items": [
       {
         "slot": "Best Value",
@@ -562,6 +563,7 @@
     ]
   },
   "commonProblems": {
+    "h2": "Common Problems",
     "problems": [
       {
         "id": 1,
@@ -712,6 +714,8 @@
     "note": ""
   },
   "coreVariants": {
+    "h2": "Diesel &amp; Petrol Lineup",
+    "subheading": "Core Variants",
     "dieselVariants": [
       {
         "name": "520d",
@@ -759,6 +763,7 @@
     "scopeNote": "All variants listed are G60 saloon only. The G61 Touring (estate) and G68 long-wheelbase saloon share most of these powertrains but are covered on their own Generation Pages."
   },
   "marketIntelligence": {
+    "h2": "Market Intelligence",
     "mostRequestedEngines": [],
     "mostRequestedVariants": ["1. 520d", "2. 540i xDrive", "3. 530e"],
     "averageReplacementCost": "£3,500–£6,500 (reconditioned, supply only) [BMW-QUOTE]",
@@ -792,6 +797,7 @@
     ]
   },
   "faq": {
+    "h2": "FAQ",
     "items": [
       {
         "id": 1,

@@ -369,6 +369,7 @@
     "marketIntelligenceLine": "As a relatively new model (2021–present), the G42 is still establishing its long-term reliability profile -but the B58 engine in the M240i is already developing a reputation as one of BMW\u0027s most dependable modern six-cylinders."
   },
   "bestWorstEngines": {
+    "h2": "Best &amp; Worst Engines",
     "items": [
       {
         "slot": "Thin-Data Summary",
@@ -442,6 +443,7 @@
     ]
   },
   "commonProblems": {
+    "h2": "Common Problems",
     "problems": [
       {
         "id": 1,
@@ -531,6 +533,8 @@
     "note": ""
   },
   "coreVariants": {
+    "h2": "Diesel &amp; Petrol Lineup",
+    "subheading": "Core Variants",
     "dieselVariants": [
       {
         "name": "220d",
@@ -558,6 +562,7 @@
     "scopeNote": "All variants listed are G42-generation 2 Series Coupé only (2021–present). The G42 is not available as a convertible -the F23 convertible was discontinued and not replaced."
   },
   "marketIntelligence": {
+    "h2": "Market Intelligence",
     "mostRequestedEngines": [],
     "mostRequestedVariants": [],
     "averageReplacementCost": "",
@@ -565,6 +570,7 @@
     "liveFeed": []
   },
   "faq": {
+    "h2": "FAQ",
     "items": [
       {
         "id": 1,

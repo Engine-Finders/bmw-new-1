@@ -468,6 +468,7 @@
     "marketIntelligenceLine": "The X1 E84 generated 120 real UK engine enquiries in 2025 [BMW-VERIFIED], with the N47 diesel variants accounting for the majority of demand based on market patterns."
   },
   "bestWorstEngines": {
+    "h2": "Best &amp; Worst Engines",
     "items": [
       {
         "slot": "Best Value",
@@ -591,6 +592,7 @@
     ]
   },
   "commonProblems": {
+    "h2": "Common Problems",
     "problems": [
       {
         "id": 1,
@@ -741,6 +743,8 @@
     "note": ""
   },
   "coreVariants": {
+    "h2": "Diesel &amp; Petrol Lineup",
+    "subheading": "Core Variants",
     "dieselVariants": [
       {
         "name": "sDrive16d",
@@ -808,6 +812,7 @@
     "scopeNote": "All variants listed are E84 only. sDrive denotes rear-wheel drive; xDrive denotes all-wheel drive. The xDrive28i used the N52B30 straight-six from 2009–2011 and the N20B20 turbo four from 2011–2015. The xDrive35i with the N55B30 turbo six was introduced in 2012."
   },
   "marketIntelligence": {
+    "h2": "Market Intelligence",
     "mostRequestedEngines": [
       "1. N47D20C (18d/20d) -pattern data",
       "2. N20B20 (20i/28i) -pattern data",
@@ -845,6 +850,7 @@
     ]
   },
   "faq": {
+    "h2": "FAQ",
     "items": [
       {
         "id": 1,

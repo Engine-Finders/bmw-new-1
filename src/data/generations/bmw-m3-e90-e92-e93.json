@@ -336,6 +336,7 @@
     "marketIntelligenceLine": "The M3 nameplate generated significant UK engine enquiries in 2025 [BMW-VERIFIED], with demand concentrated on the S65-powered E9X M3 based on market patterns. The S65 remains one of the most sought-after engines in the M3 lineage."
   },
   "bestWorstEngines": {
+    "h2": "Best &amp; Worst Engines",
     "items": [
       {
         "slot": "Best Value",
@@ -411,6 +412,7 @@
     ]
   },
   "commonProblems": {
+    "h2": "Common Problems",
     "problems": [
       {
         "id": 1,
@@ -505,11 +507,14 @@
     "note": ""
   },
   "coreVariants": {
+    "h2": "Diesel &amp; Petrol Lineup",
+    "subheading": "Core Variants",
     "dieselVariants": [],
     "petrolVariants": [],
     "scopeNote": "All variants listed are E9X M3 only. The standard M3 used the S65B40 4.0-litre V8. The GTS and CRT used the S65B44 4.4-litre V8 and were limited-production models. The E92 M3 GTS was produced in 2010–2011 (135 units), and the E90 M3 CRT in 2011–2012 (67 units). The F80 M3 (2014–2020) used a twin-turbo <a href='https://bmwengines.uk/engine/s55'>S55</a> inline-six and is covered on its own Generation Page."
   },
   "marketIntelligence": {
+    "h2": "Market Intelligence",
     "mostRequestedEngines": [
       "1. S65B40 (4.0 V8) -pattern data",
       "2. S65B44 (GTS/CRT) -pattern data"
@@ -550,6 +555,7 @@
     ]
   },
   "faq": {
+    "h2": "FAQ",
     "items": [
       {
         "id": 1,

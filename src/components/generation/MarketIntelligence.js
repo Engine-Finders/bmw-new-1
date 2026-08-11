@@ -62,7 +62,7 @@ export default function MarketIntelligence({ data }) {
         <div className="grid grid-cols-1 gap-6 lg:grid-cols-[1.35fr_1fr] lg:items-start">
           <div>
             <h2 className="text-[2.15rem] font-bold leading-[1.1] tracking-normal text-[var(--color-text)] md:text-[3rem]">
-              Market Intelligence
+              {data.h2 || "Market Intelligence"}
             </h2>
             <div className="mt-3">
               <MStripe />

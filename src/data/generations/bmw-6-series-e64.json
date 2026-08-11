@@ -422,6 +422,7 @@
     "marketIntelligenceLine": "The E64 convertible generated 256 real UK engine enquiries in 2025 [BMW-VERIFIED], concentrated on the N62 V8 petrol units as these grand tourers age into enthusiast ownership and maintenance cycles."
   },
   "bestWorstEngines": {
+    "h2": "Best &amp; Worst Engines",
     "items": [
       {
         "slot": "Best Diesel Overall",
@@ -541,6 +542,7 @@
     ]
   },
   "commonProblems": {
+    "h2": "Common Problems",
     "problems": [
       {
         "id": 1,
@@ -719,6 +721,8 @@
     "note": ""
   },
   "coreVariants": {
+    "h2": "Diesel &amp; Petrol Lineup",
+    "subheading": "Core Variants",
     "dieselVariants": [],
     "petrolVariants": [
       {
@@ -737,6 +741,7 @@
     "scopeNote": "All variants listed are E64 convertible only -the two-door, four-seat convertible produced from 2004 to 2010. E63 Coupé shares most of these engines but is covered on its own Generation Page, as fitment and labour access vary slightly by body style. The 645Ci was produced only from 2004–2005 and replaced by the 650i from October 2005. The 635d was introduced with the 2007 LCI."
   },
   "marketIntelligence": {
+    "h2": "Market Intelligence",
     "mostRequestedEngines": [
       "1. N62B48 (650i, 4.8-litre V8)",
       "2. N52B30 (630i, 3.0-litre six)",
@@ -778,6 +783,7 @@
     ]
   },
   "faq": {
+    "h2": "FAQ",
     "items": [
       {
         "id": 1,

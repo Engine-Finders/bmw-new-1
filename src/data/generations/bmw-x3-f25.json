@@ -444,6 +444,7 @@
     "marketIntelligenceLine": "The F25 X3 generated 316+ real UK engine enquiries in 2025 [BMW-VERIFIED], concentrated on the 20d diesel and 35i petrol as the range reaches affordable used-car territory."
   },
   "bestWorstEngines": {
+    "h2": "Best &amp; Worst Engines",
     "items": [
       {
         "slot": "Best Petrol Overall",
@@ -563,6 +564,7 @@
     ]
   },
   "commonProblems": {
+    "h2": "Common Problems",
     "problems": [
       {
         "id": 1,
@@ -749,6 +751,8 @@
     "note": "No Generation variance from the EM_Proprietary_Data baseline figures -F25 X3 shares the L6 platform with the F10 5 Series, with similar engine-bay access, so costs are inherited directly per the Authority Model, with no divergence note required."
   },
   "coreVariants": {
+    "h2": "Diesel &amp; Petrol Lineup",
+    "subheading": "Core Variants",
     "dieselVariants": [
       {
         "name": "sDrive18d",
@@ -796,6 +800,7 @@
     "scopeNote": "All variants listed are F25 X3 only. xDrive (all-wheel drive) was standard at launch; sDrive (rear-wheel drive) was introduced in 2012 for some markets. The xDrive28i used the N52B30 (3.0L naturally aspirated) from 2011–2012, then switched to the N20B20 (2.0L turbo) from 2012 onward. The LCI (2014–2017) introduced the B47 diesel engine, replacing the N47 in 18d and 20d models."
   },
   "marketIntelligence": {
+    "h2": "Market Intelligence",
     "mostRequestedEngines": [
       "1. N47D20 (largest share of diesel enquiries)",
       "2. N57D30",
@@ -833,6 +838,7 @@
     ]
   },
   "faq": {
+    "h2": "FAQ",
     "items": [
       {
         "id": 1,

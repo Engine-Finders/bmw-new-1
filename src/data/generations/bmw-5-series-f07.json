@@ -488,6 +488,7 @@
     "marketIntelligenceLine": "The F10/F07 family generated 300 real UK engine enquiries in 2025 [EM-VERIFIED], concentrated on the N57 diesel sixes and N63 V8s as these cars age out of warranty."
   },
   "bestWorstEngines": {
+    "h2": "Best &amp; Worst Engines",
     "items": [
       {
         "slot": "Best Diesel Overall",
@@ -594,6 +595,7 @@
     "keyTakeaways": []
   },
   "commonProblems": {
+    "h2": "Common Problems",
     "problems": [
       {
         "id": 1,
@@ -788,6 +790,8 @@
     "note": ""
   },
   "coreVariants": {
+    "h2": "Diesel &amp; Petrol Lineup",
+    "subheading": "Core Variants",
     "dieselVariants": [
       {
         "name": "520d",
@@ -815,6 +819,7 @@
     "scopeNote": "All variants listed are F07 Gran Turismo (fastback) only. F10 Saloon and F11 Touring share most of these engines but are covered on their own Generation Pages. The 520d was introduced at launch (2009) and continued through to 2017. The 530d was available from 2010 to 2017. The 535d was introduced in 2010. The 535i was available from launch. The 550i was available from launch with the N63B44, and the N63B44B replaced it for LCI models. xDrive (all-wheel drive) was available as an option on most variants."
   },
   "marketIntelligence": {
+    "h2": "Market Intelligence",
     "mostRequestedEngines": [
       "1. N57D30A/B (830 JLR‑wide enquiries [EM‑VERIFIED])",
       "2. N47D20C/N47N (1,450 JLR‑wide [EM‑VERIFIED])",
@@ -852,6 +857,7 @@
     ]
   },
   "faq": {
+    "h2": "FAQ",
     "items": [
       {
         "id": 1,

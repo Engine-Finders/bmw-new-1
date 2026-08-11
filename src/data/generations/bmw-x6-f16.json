@@ -403,6 +403,7 @@
     "marketIntelligenceLine": "The F16 generates consistent UK enquiries [PATTERN DATA], concentrated on xDrive30d diesel and xDrive35i petrol variants as these luxury SUVs enter affordable‑maintenance territory."
   },
   "bestWorstEngines": {
+    "h2": "Best &amp; Worst Engines",
     "items": [
       {
         "slot": "Thin-Data Summary",
@@ -487,6 +488,7 @@
     "keyTakeaways": []
   },
   "commonProblems": {
+    "h2": "Common Problems",
     "problems": [
       {
         "id": 1,
@@ -626,6 +628,8 @@
     "note": "No Generation variance from the Model Page\u0027s baseline figures -F16 shares similar engine‑bay access with its F15 X5 sibling, so costs are inherited directly per the Authority Model, with no divergence note required. All costs are [BMW-QUOTE] from Table A -Engine Replacement Economics."
   },
   "coreVariants": {
+    "h2": "Diesel &amp; Petrol Lineup",
+    "subheading": "Core Variants",
     "dieselVariants": [
       {
         "name": "xDrive30d",
@@ -669,6 +673,7 @@
     "scopeNote": "All variants listed are BMW X6 F16 (second generation) only -5‑door SAC body style. X6 E71 (first generation) and X6 G06 (third generation) are covered on their own Generation Pages."
   },
   "marketIntelligence": {
+    "h2": "Market Intelligence",
     "mostRequestedEngines": [],
     "mostRequestedVariants": [],
     "averageReplacementCost": "",
@@ -676,6 +681,7 @@
     "liveFeed": []
   },
   "faq": {
+    "h2": "FAQ",
     "items": [
       {
         "id": 1,

@@ -555,6 +555,7 @@
     "marketIntelligenceLine": "As a lower-volume Gran Coupé variant, the F36 is a niche enthusiast vehicle -the 440i with the B58 remains the most sought-after, while the 420d is the most practical daily driver."
   },
   "bestWorstEngines": {
+    "h2": "Best &amp; Worst Engines",
     "items": [
       {
         "slot": "Thin-Data Summary",
@@ -668,6 +669,7 @@
     ]
   },
   "commonProblems": {
+    "h2": "Common Problems",
     "problems": [
       {
         "id": 1,
@@ -810,6 +812,8 @@
     "note": ""
   },
   "coreVariants": {
+    "h2": "Diesel &amp; Petrol Lineup",
+    "subheading": "Core Variants",
     "dieselVariants": [
       {
         "name": "418d",
@@ -877,6 +881,7 @@
     "scopeNote": "All variants listed are F36-generation 4 Series Gran Coupé only (2014–2020). The M4 uses the S55 engine and is included for completeness."
   },
   "marketIntelligence": {
+    "h2": "Market Intelligence",
     "mostRequestedEngines": [],
     "mostRequestedVariants": [],
     "averageReplacementCost": "",
@@ -884,6 +889,7 @@
     "liveFeed": []
   },
   "faq": {
+    "h2": "FAQ",
     "items": [
       {
         "id": 1,

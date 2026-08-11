@@ -367,6 +367,7 @@
     "marketIntelligenceLine": "The E36/5 Compact generates steady UK specialist enquiries, concentrated on the 318ti as these entry-level BMWs enter classic-car territory."
   },
   "bestWorstEngines": {
+    "h2": "Best &amp; Worst Engines",
     "items": [
       {
         "slot": "Thin-Data Summary",
@@ -427,6 +428,7 @@
     "keyTakeaways": []
   },
   "commonProblems": {
+    "h2": "Common Problems",
     "problems": [
       {
         "id": 1,
@@ -577,6 +579,8 @@
     "note": "No Generation variance from the Engine Page baseline -no dedicated Engine Pages exist for these families yet, so baseline figures are drawn from the EM_Proprietary_Data Table A. Labour hours estimated at 8–12 hours for four-cylinder engines and 10–14 hours for the six-cylinder M52."
   },
   "coreVariants": {
+    "h2": "Diesel &amp; Petrol Lineup",
+    "subheading": "Core Variants",
     "dieselVariants": [
       {
         "name": "318tds",
@@ -612,6 +616,7 @@
     "scopeNote": "All variants listed are first-generation Compact E36/5 only. The 323ti was exclusive to the German market and is rare in the UK. The 318tds diesel is also uncommon. The 316i and 318ti are the most common UK variants."
   },
   "marketIntelligence": {
+    "h2": "Market Intelligence",
     "mostRequestedEngines": [],
     "mostRequestedVariants": [],
     "averageReplacementCost": "",
@@ -619,6 +624,7 @@
     "liveFeed": []
   },
   "faq": {
+    "h2": "FAQ",
     "items": [
       {
         "id": 1,

@@ -408,6 +408,7 @@
     "marketIntelligenceLine": "The E10 02 Series generated 120+ real UK engine enquiries in 2025 [BMW-VERIFIED], concentrated on the 2002 and 2002 Tii as classic car enthusiasts seek BMW\u0027s most iconic vintage sports saloon."
   },
   "bestWorstEngines": {
+    "h2": "Best &amp; Worst Engines",
     "items": [
       {
         "slot": "Best Value",
@@ -515,6 +516,7 @@
     ]
   },
   "commonProblems": {
+    "h2": "Common Problems",
     "problems": [
       {
         "id": 1,
@@ -693,6 +695,8 @@
     "note": "No Generation variance from the EM_Proprietary_Data baseline figures -the E10 is a unique generation with no direct successor cost comparison. Costs are derived from specialist market data and tagged [BMW-QUOTE]."
   },
   "coreVariants": {
+    "h2": "Diesel &amp; Petrol Lineup",
+    "subheading": "Core Variants",
     "dieselVariants": [],
     "petrolVariants": [
       {
@@ -731,6 +735,7 @@
     "scopeNote": "All variants listed are E10 02 Series only. The 1502 (1975–1977) used a detuned 1.6-litre M10 producing 75 bhp. The 1600-2 (1966–1971) was renamed 1602 for the 1971 model year. The 2002 Ti (1968–1972) used twin Solex carburettors; the 2002 Tii (1971–1975) used Kugelfischer mechanical fuel injection. The 2002 Turbo (1974–1975) was BMW\u0027s first turbocharged production car. The 02 Series was succeeded by the E21 3 Series in 1975, though the 1502 continued until 1977."
   },
   "marketIntelligence": {
+    "h2": "Market Intelligence",
     "mostRequestedEngines": [
       "1. M10B20 (2002)",
       "2. M10B20 Tii (2002 Tii)",
@@ -768,6 +773,7 @@
     ]
   },
   "faq": {
+    "h2": "FAQ",
     "items": [
       {
         "id": 1,

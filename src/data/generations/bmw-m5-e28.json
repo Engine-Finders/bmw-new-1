@@ -303,6 +303,7 @@
     "marketIntelligenceLine": "As a classic icon that ended production in 1988, the E28 M5 is now a highly collectable enthusiast vehicle -the M88/3-powered UK and European cars are the most sought-after, while the S38-powered US cars are rarer but less powerful."
   },
   "bestWorstEngines": {
+    "h2": "Best &amp; Worst Engines",
     "items": [
       {
         "slot": "Thin-Data Summary",
@@ -360,6 +361,7 @@
     ]
   },
   "commonProblems": {
+    "h2": "Common Problems",
     "problems": [
       {
         "id": 1,
@@ -433,6 +435,8 @@
     "note": ""
   },
   "coreVariants": {
+    "h2": "Diesel &amp; Petrol Lineup",
+    "subheading": "Core Variants",
     "dieselVariants": [],
     "petrolVariants": [
       {
@@ -447,6 +451,7 @@
     "scopeNote": "All variants listed are E28-generation M5 only (1984–1988). The M5 was only available as a 4-door saloon in this generation. UK cars were right-hand drive and used the M88/3 engine."
   },
   "marketIntelligence": {
+    "h2": "Market Intelligence",
     "mostRequestedEngines": [],
     "mostRequestedVariants": [],
     "averageReplacementCost": "",
@@ -454,6 +459,7 @@
     "liveFeed": []
   },
   "faq": {
+    "h2": "FAQ",
     "items": [
       {
         "id": 1,

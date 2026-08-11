@@ -432,6 +432,7 @@
     "marketIntelligenceLine": "The F26 generated real UK engine enquiries in 2025 [BMW-VERIFIED], with the N20 petrol and N47/B47 diesel accounting for the majority of demand as these cars enter their second and third ownership cycles."
   },
   "bestWorstEngines": {
+    "h2": "Best &amp; Worst Engines",
     "items": [
       {
         "slot": "Best Diesel Overall",
@@ -559,6 +560,7 @@
     ]
   },
   "commonProblems": {
+    "h2": "Common Problems",
     "problems": [
       {
         "id": 1,
@@ -753,6 +755,8 @@
     "note": ""
   },
   "coreVariants": {
+    "h2": "Diesel &amp; Petrol Lineup",
+    "subheading": "Core Variants",
     "dieselVariants": [
       {
         "name": "xDrive20d",
@@ -792,6 +796,7 @@
     "scopeNote": "All variants listed are F26 only. The G02 X4 (2018–present) is the successor generation with its own engine line-up – see the G02 Generation Page for those specifications. All F26 models feature xDrive all-wheel drive and an 8-speed automatic transmission as standard."
   },
   "marketIntelligence": {
+    "h2": "Market Intelligence",
     "mostRequestedEngines": [
       "1. B47D20A/N47D20A (xDrive20d) – diesel enquiries dominate the volume",
       "2. B58B30M1 (X4 M40i) – performance petrol enquiries",
@@ -834,6 +839,7 @@
     ]
   },
   "faq": {
+    "h2": "FAQ",
     "items": [
       {
         "id": 1,

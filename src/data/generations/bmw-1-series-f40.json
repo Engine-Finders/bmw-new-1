@@ -444,6 +444,7 @@
     "marketIntelligenceLine": "The F40 1 Series generated real UK engine enquiries in 2025, with the 2.0-litre B47 diesel and B48 petrol engines accounting for the largest share of BMW 1 Series enquiries (344 total)."
   },
   "bestWorstEngines": {
+    "h2": "Best &amp; Worst Engines",
     "items": [
       {
         "slot": "Best Diesel Overall",
@@ -555,6 +556,7 @@
     ]
   },
   "commonProblems": {
+    "h2": "Common Problems",
     "problems": [
       {
         "id": 1,
@@ -721,6 +723,8 @@
     "note": ""
   },
   "coreVariants": {
+    "h2": "Diesel &amp; Petrol Lineup",
+    "subheading": "Core Variants",
     "dieselVariants": [
       {
         "name": "116d",
@@ -764,6 +768,7 @@
     "scopeNote": "All variants listed are F40 1 Series only. The F40 marked BMW\u0027s switch to front-wheel drive -the M135i xDrive uses BMW\u0027s xDrive all-wheel-drive system to deliver 306 bhp. The 128ti is a front-wheel-drive hot hatch positioned between the 120i and M135i. The 225xe is the plug-in hybrid variant."
   },
   "marketIntelligence": {
+    "h2": "Market Intelligence",
     "mostRequestedEngines": [
       "1. B47D20A 2.0 Diesel (930 B47-wide enquiries)",
       "2. B48A20 2.0 Petrol (344 1 Series-wide)",
@@ -805,6 +810,7 @@
     ]
   },
   "faq": {
+    "h2": "FAQ",
     "items": [
       {
         "id": 1,

@@ -493,6 +493,7 @@
     "marketIntelligenceLine": "The E70 generates consistent UK enquiries [PATTERN DATA], concentrated on xDrive30d diesel and xDrive35i petrol variants as these luxury SUVs enter affordable‑maintenance territory."
   },
   "bestWorstEngines": {
+    "h2": "Best &amp; Worst Engines",
     "items": [
       {
         "slot": "Thin-Data Summary",
@@ -593,6 +594,7 @@
     "keyTakeaways": []
   },
   "commonProblems": {
+    "h2": "Common Problems",
     "problems": [
       {
         "id": 1,
@@ -756,6 +758,8 @@
     "note": "No Generation variance from the Model Page\u0027s baseline figures -E70 shares similar engine‑bay access across all variants, so costs are inherited directly per the Authority Model, with no divergence note required. All costs are [BMW-QUOTE] from Table A -Engine Replacement Economics."
   },
   "coreVariants": {
+    "h2": "Diesel &amp; Petrol Lineup",
+    "subheading": "Core Variants",
     "dieselVariants": [
       {
         "name": "3.0d",
@@ -835,6 +839,7 @@
     "scopeNote": "All variants listed are BMW X5 E70 (second generation) only -5‑door SUV body style. X5 E53 (first generation) and X5 F15 (third generation) are covered on their own Generation Pages."
   },
   "marketIntelligence": {
+    "h2": "Market Intelligence",
     "mostRequestedEngines": [],
     "mostRequestedVariants": [],
     "averageReplacementCost": "",
@@ -842,6 +847,7 @@
     "liveFeed": []
   },
   "faq": {
+    "h2": "FAQ",
     "items": [
       {
         "id": 1,

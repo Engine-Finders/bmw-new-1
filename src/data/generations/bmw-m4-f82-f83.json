@@ -379,6 +379,7 @@
     "marketIntelligenceLine": "The F82/F83 generates consistent UK enquiries [PATTERN DATA], concentrated on standard and Competition‑spec cars as these high‑performance coupés enter enthusiast and collector territory."
   },
   "bestWorstEngines": {
+    "h2": "Best &amp; Worst Engines",
     "items": [
       {
         "slot": "Thin-Data Summary",
@@ -455,6 +456,7 @@
     "keyTakeaways": []
   },
   "commonProblems": {
+    "h2": "Common Problems",
     "problems": [
       {
         "id": 1,
@@ -586,6 +588,8 @@
     "note": "No Generation variance from the Model Page\u0027s baseline figures -F82 and F83 share identical engine‑bay access, so costs are inherited directly per the Authority Model, with no divergence note required. All costs are [BMW-QUOTE] from Table A -Engine Replacement Economics."
   },
   "coreVariants": {
+    "h2": "Diesel &amp; Petrol Lineup",
+    "subheading": "Core Variants",
     "dieselVariants": [],
     "petrolVariants": [
       {
@@ -616,6 +620,7 @@
     "scopeNote": "All variants listed are BMW M4 F82 (coupé) and F83 (convertible) only -first‑generation M4. F82 is the 2‑door coupé; F83 is the 2‑door convertible with a folding metal roof. F80 M3 (saloon) is covered on its own Generation Page."
   },
   "marketIntelligence": {
+    "h2": "Market Intelligence",
     "mostRequestedEngines": [],
     "mostRequestedVariants": [],
     "averageReplacementCost": "",
@@ -623,6 +628,7 @@
     "liveFeed": []
   },
   "faq": {
+    "h2": "FAQ",
     "items": [
       {
         "id": 1,

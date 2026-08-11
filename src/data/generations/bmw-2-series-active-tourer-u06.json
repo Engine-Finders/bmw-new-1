@@ -312,6 +312,7 @@
     "marketIntelligenceLine": "The U06 2 Series Active Tourer generated 147+ real UK engine enquiries in 2025 [BMW-VERIFIED], concentrated on the 218d diesel and 220i MHEV petrol as the model reaches the used market."
   },
   "bestWorstEngines": {
+    "h2": "Best &amp; Worst Engines",
     "items": [
       {
         "slot": "Best Petrol Overall",
@@ -423,6 +424,7 @@
     ]
   },
   "commonProblems": {
+    "h2": "Common Problems",
     "problems": [
       {
         "id": 1,
@@ -625,6 +627,8 @@
     "note": "No Generation variance from the EM_Proprietary_Data baseline figures -U06 Active Tourer shares the FAAR platform with the F40 1 Series, with similar engine-bay access, so costs are inherited directly per the Authority Model, with no divergence note required."
   },
   "coreVariants": {
+    "h2": "Diesel &amp; Petrol Lineup",
+    "subheading": "Core Variants",
     "dieselVariants": [
       {
         "name": "218d",
@@ -672,6 +676,7 @@
     "scopeNote": "All variants listed are U06 2 Series Active Tourer only. 220i, 223i and 223d feature 48V mild-hybrid technology. 225e xDrive (245 bhp) and 230e xDrive (326 bhp) are plug-in hybrids with 14.2 kWh battery and up to 87 km electric range. 220d was added to the range in July 2024."
   },
   "marketIntelligence": {
+    "h2": "Market Intelligence",
     "mostRequestedEngines": [
       "1. B47D20 (largest share of diesel enquiries)",
       "2. B38A15P (218i/220i)",
@@ -709,6 +714,7 @@
     ]
   },
   "faq": {
+    "h2": "FAQ",
     "items": [
       {
         "id": 1,

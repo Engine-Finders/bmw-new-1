@@ -474,6 +474,7 @@
     "marketIntelligenceLine": "The 2 Series nameplate generated significant UK engine enquiries in 2025 [BMW-VERIFIED], with the B58-powered M240i representing the majority of F22-related demand based on market patterns."
   },
   "bestWorstEngines": {
+    "h2": "Best &amp; Worst Engines",
     "items": [
       {
         "slot": "Best Value",
@@ -597,6 +598,7 @@
     ]
   },
   "commonProblems": {
+    "h2": "Common Problems",
     "problems": [
       {
         "id": 1,
@@ -739,6 +741,8 @@
     "note": ""
   },
   "coreVariants": {
+    "h2": "Diesel &amp; Petrol Lineup",
+    "subheading": "Core Variants",
     "dieselVariants": [
       {
         "name": "218d",
@@ -802,6 +806,7 @@
     "scopeNote": "All variants listed are F22 coupé only. The F23 Convertible shares most of these engines but is covered on its own Generation Page. The F87 M2 is also covered separately."
   },
   "marketIntelligence": {
+    "h2": "Market Intelligence",
     "mostRequestedEngines": [
       "1. B58B30O0 (M240i) -pattern data",
       "2. B48B20 (230i) -pattern data",
@@ -839,6 +844,7 @@
     ]
   },
   "faq": {
+    "h2": "FAQ",
     "items": [
       {
         "id": 1,

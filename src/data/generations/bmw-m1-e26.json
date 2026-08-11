@@ -374,6 +374,7 @@
     "marketIntelligenceLine": "The E26 M1 generated 256 real UK engine enquiries in 2025 [BMW-VERIFIED], concentrated on the M88/1 engine as these rare supercars continue to appreciate in value and require specialist maintenance."
   },
   "bestWorstEngines": {
+    "h2": "Best &amp; Worst Engines",
     "items": [
       {
         "slot": "Best Petrol Overall",
@@ -463,6 +464,7 @@
     ]
   },
   "commonProblems": {
+    "h2": "Common Problems",
     "problems": [
       {
         "id": 1,
@@ -625,6 +627,8 @@
     "note": ""
   },
   "coreVariants": {
+    "h2": "Diesel &amp; Petrol Lineup",
+    "subheading": "Core Variants",
     "dieselVariants": [],
     "petrolVariants": [
       {
@@ -635,6 +639,7 @@
     "scopeNote": "All variants listed are E26 body code only -the mid-engined supercar produced from 1978 to 1981. All M1s were left-hand drive. The M88/1 engine in the road car produced 277 PS; the Procar and Group 4 variants produced 470 PS; the Group 5 turbo variant produced ~850 PS. Only 453 M1s were built in total."
   },
   "marketIntelligence": {
+    "h2": "Market Intelligence",
     "mostRequestedEngines": [
       "1. M88/1 (road, 277 PS)",
       "2. M88/1 Procar (470 PS)",
@@ -676,6 +681,7 @@
     ]
   },
   "faq": {
+    "h2": "FAQ",
     "items": [
       {
         "id": 1,

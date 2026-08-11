@@ -360,6 +360,7 @@
     "marketIntelligenceLine": "The E31 8 Series generated 120+ real UK engine enquiries in 2025 [BMW-VERIFIED], concentrated on the V8 840Ci and V12 850Ci as classic car buyers seek BMW\u0027s flagship grand tourer."
   },
   "bestWorstEngines": {
+    "h2": "Best &amp; Worst Engines",
     "items": [
       {
         "slot": "Highest Risk",
@@ -459,6 +460,7 @@
     ]
   },
   "commonProblems": {
+    "h2": "Common Problems",
     "problems": [
       {
         "id": 1,
@@ -629,6 +631,8 @@
     "note": "No Generation variance from the EM_Proprietary_Data baseline figures -E31 is a unique generation with no direct successor cost comparison. Costs are derived from specialist market data and tagged [BMW-QUOTE]."
   },
   "coreVariants": {
+    "h2": "Diesel &amp; Petrol Lineup",
+    "subheading": "Core Variants",
     "dieselVariants": [],
     "petrolVariants": [
       {
@@ -647,6 +651,7 @@
     "scopeNote": "All variants listed are E31 8 Series only. The 840Ci switched from the M60B40 (1993–1995) to the M62B44 (1995–1999). The 850i (1990–1994) used the M70B50; the 850Ci (1994–1999) used the M73B54. The 850CSi (1992–1996) used the S70B56 and was the only E31 offered exclusively with a 6-speed manual transmission. The 850i became the 850Ci around the introduction of the 850CSi -both M70 and M73-engined cars were sold as 850Ci for a period in 1994."
   },
   "marketIntelligence": {
+    "h2": "Market Intelligence",
     "mostRequestedEngines": [
       "1. M62B44 (largest share of V8 enquiries)",
       "2. M73B54",
@@ -684,6 +689,7 @@
     ]
   },
   "faq": {
+    "h2": "FAQ",
     "items": [
       {
         "id": 1,

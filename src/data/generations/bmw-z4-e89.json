@@ -403,6 +403,7 @@
     "marketIntelligenceLine": "The E89 Z4 generates steady UK specialist enquiries, concentrated on the sDrive20i, sDrive28i and sDrive35i as these stylish roadsters enter enthusiast-car territory."
   },
   "bestWorstEngines": {
+    "h2": "Best &amp; Worst Engines",
     "items": [
       {
         "slot": "Thin-Data Summary",
@@ -479,6 +480,7 @@
     "keyTakeaways": []
   },
   "commonProblems": {
+    "h2": "Common Problems",
     "problems": [
       {
         "id": 1,
@@ -665,6 +667,8 @@
     "note": "No Generation variance from the Engine Page baseline -no dedicated Engine Pages exist for these families yet, so baseline figures are drawn from the EM_Proprietary_Data Table A. Labour hours estimated at 10–14 hours for four- and six-cylinder engines, and 12–16 hours for the N54 due to additional turbo complexity. The E89\u0027s engine bay is relatively spacious but the N54\u0027s twin turbos add complexity."
   },
   "coreVariants": {
+    "h2": "Diesel &amp; Petrol Lineup",
+    "subheading": "Core Variants",
     "dieselVariants": [],
     "petrolVariants": [
       {
@@ -711,6 +715,7 @@
     "scopeNote": "All variants listed are Z4 E89 only. The sDrive23i and sDrive30i (N52 six-cylinders) were produced 2009–2011; the sDrive20i and sDrive28i (N20 four-cylinders) replaced them from 2011–2016; the sDrive18i joined the range in 2013; the sDrive35i was produced 2009–2012; the sDrive35is was produced 2010–2016. There was no Z4 M model for the E89 generation."
   },
   "marketIntelligence": {
+    "h2": "Market Intelligence",
     "mostRequestedEngines": [],
     "mostRequestedVariants": [],
     "averageReplacementCost": "",
@@ -718,6 +723,7 @@
     "liveFeed": []
   },
   "faq": {
+    "h2": "FAQ",
     "items": [
       {
         "id": 1,

@@ -270,6 +270,7 @@
     "marketIntelligenceLine": "The Z1 generated 120+ real UK engine enquiries in 2025 [BMW-VERIFIED], concentrated on the M20B25 engine as classic car enthusiasts seek BMW\u0027s first Z-roadster."
   },
   "bestWorstEngines": {
+    "h2": "Best &amp; Worst Engines",
     "items": [
       {
         "slot": "The Only Engine",
@@ -319,6 +320,7 @@
     ]
   },
   "commonProblems": {
+    "h2": "Common Problems",
     "problems": [
       {
         "id": 1,
@@ -429,6 +431,8 @@
     "note": "No Generation variance from the EM_Proprietary_Data baseline figures -the Z1\u0027s M20B25 is shared with the E30 325i, with similar engine-bay access (though installed as a front mid-engine), so costs are inherited directly per the Authority Model, with no divergence note required."
   },
   "coreVariants": {
+    "h2": "Diesel &amp; Petrol Lineup",
+    "subheading": "Core Variants",
     "dieselVariants": [],
     "petrolVariants": [
       {
@@ -443,6 +447,7 @@
     "scopeNote": "The BMW Z1 was offered with a single engine option -the M20B25 2.5-litre straight-six. No other engine was ever fitted from the factory. All 8,000 Z1s are left-hand drive; the car was never officially exported to right-hand drive markets."
   },
   "marketIntelligence": {
+    "h2": "Market Intelligence",
     "mostRequestedEngines": [],
     "mostRequestedVariants": [],
     "averageReplacementCost": "",
@@ -450,6 +455,7 @@
     "liveFeed": []
   },
   "faq": {
+    "h2": "FAQ",
     "items": [
       {
         "id": 1,

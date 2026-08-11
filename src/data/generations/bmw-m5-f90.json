@@ -319,6 +319,7 @@
     "marketIntelligenceLine": "The 5 Series nameplate generated significant UK engine enquiries in 2025 [BMW-VERIFIED], with demand for the F90 M5 concentrated on the Competition model based on market patterns."
   },
   "bestWorstEngines": {
+    "h2": "Best &amp; Worst Engines",
     "items": [
       {
         "slot": "Overall Verdict",
@@ -384,6 +385,7 @@
     ]
   },
   "commonProblems": {
+    "h2": "Common Problems",
     "problems": [
       {
         "id": 1,
@@ -465,11 +467,14 @@
     "note": ""
   },
   "coreVariants": {
+    "h2": "Diesel &amp; Petrol Lineup",
+    "subheading": "Core Variants",
     "dieselVariants": [],
     "petrolVariants": [],
     "scopeNote": "All variants listed are F90 only. The M5 Competition was introduced in 2018, and the M5 CS in 2021. The LCI facelift (2020) brought revised styling and iDrive 7 but no major mechanical changes to the engine. The F90 was the last purely petrol-powered M5 -the G90 successor uses a hybrid V8."
   },
   "marketIntelligence": {
+    "h2": "Market Intelligence",
     "mostRequestedEngines": [],
     "mostRequestedVariants": [],
     "averageReplacementCost": "",
@@ -477,6 +482,7 @@
     "liveFeed": []
   },
   "faq": {
+    "h2": "FAQ",
     "items": [
       {
         "id": 1,

@@ -505,6 +505,7 @@
     "marketIntelligenceLine": "The U11 X1 remains a popular choice in the UK premium compact SUV segment, with strong demand for the sDrive18i petrol and xDrive23d diesel variants [PATTERN DATA]."
   },
   "bestWorstEngines": {
+    "h2": "Best &amp; Worst Engines",
     "items": [
       {
         "slot": "Thin-Data Summary",
@@ -610,6 +611,7 @@
     ]
   },
   "commonProblems": {
+    "h2": "Common Problems",
     "problems": [
       {
         "id": 1,
@@ -820,6 +822,8 @@
     "note": "No Generation variance note required -no Engine Page baseline exists for these engines yet. Costs are sourced from UK specialist suppliers [BMW-QUOTE]."
   },
   "coreVariants": {
+    "h2": "Diesel &amp; Petrol Lineup",
+    "subheading": "Core Variants",
     "dieselVariants": [
       {
         "name": "sDrive18d",
@@ -875,6 +879,7 @@
     "scopeNote": "All variants listed are BMW X1 U11 only. The U12 (long-wheelbase) is a separate model with the same engine lineup, covered on its own Generation Page. The iX1 is the all-electric variant, produced alongside the combustion-engined models."
   },
   "marketIntelligence": {
+    "h2": "Market Intelligence",
     "mostRequestedEngines": [],
     "mostRequestedVariants": [],
     "averageReplacementCost": "",
@@ -882,6 +887,7 @@
     "liveFeed": []
   },
   "faq": {
+    "h2": "FAQ",
     "items": [
       {
         "id": 1,

@@ -477,6 +477,7 @@
     "marketIntelligenceLine": "The E30 M3 is a classic car with a dedicated enthusiast following -no verified 2025 enquiry data exists for this model [PATTERN DATA]."
   },
   "bestWorstEngines": {
+    "h2": "Best &amp; Worst Engines",
     "items": []
   },
   "ownershipEconomics": {
@@ -584,6 +585,7 @@
     "keyTakeaways": []
   },
   "commonProblems": {
+    "h2": "Common Problems",
     "problems": [
       {
         "id": 1,
@@ -778,6 +780,8 @@
     "note": ""
   },
   "coreVariants": {
+    "h2": "Diesel &amp; Petrol Lineup",
+    "subheading": "Core Variants",
     "dieselVariants": [],
     "petrolVariants": [
       {
@@ -812,6 +816,7 @@
     "scopeNote": "All variants listed are E30 M3 Coupé only. The E30 M3 Convertible is extremely rare (fewer than 800 produced) and covered on its own Generation Page. The Evolution I was produced in 1987. The Evolution II was produced in 1988. The Cecotto and Ravaglia editions were limited editions produced in 1989. The Evolution III was produced in 1990 with the 2.5‑litre S14B25. The Sport Evolution was the ultimate homologation special, also with the 2.5‑litre S14B25."
   },
   "marketIntelligence": {
+    "h2": "Market Intelligence",
     "mostRequestedEngines": [],
     "mostRequestedVariants": [],
     "averageReplacementCost": "",
@@ -819,6 +824,7 @@
     "liveFeed": []
   },
   "faq": {
+    "h2": "FAQ",
     "items": [
       {
         "id": 1,

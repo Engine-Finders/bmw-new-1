@@ -450,6 +450,7 @@
     "marketIntelligenceLine": "The G20 saloon generated 190 real UK engine enquiries in 2025 [BMW-VERIFIED], concentrated on the 320i and 330i as the most popular UK variants."
   },
   "bestWorstEngines": {
+    "h2": "Best &amp; Worst Engines",
     "items": [
       {
         "slot": "Best Petrol Overall",
@@ -550,6 +551,7 @@
     "keyTakeaways": []
   },
   "commonProblems": {
+    "h2": "Common Problems",
     "problems": [
       {
         "id": 1,
@@ -716,6 +718,8 @@
     "note": "No Generation variance from the Engine Page baseline -no dedicated Engine Pages exist for these families yet, so baseline figures are drawn from the EM_Proprietary_Data Table A. Labour hours estimated at 10–14 hours for four-cylinder engines, 12–16 hours for six-cylinder engines, and 16–22 hours for the M3\u0027s S58 due to additional complexity."
   },
   "coreVariants": {
+    "h2": "Diesel &amp; Petrol Lineup",
+    "subheading": "Core Variants",
     "dieselVariants": [
       {
         "name": "318d",
@@ -767,6 +771,7 @@
     "scopeNote": "All variants listed are G20 saloon only. The G21 Touring and G28 long-wheelbase saloon share most of these engines but are covered on their own Generation Pages. The M3 (G80) is based on the G20 platform but uses the S58 engine; it is covered on its own Generation Page. The 330e PHEV uses the B48B20A engine with an electric motor."
   },
   "marketIntelligence": {
+    "h2": "Market Intelligence",
     "mostRequestedEngines": [
       "1. B48B20A 320i -930 requests [BMW-VERIFIED]",
       "2. B48B20B 330i -540 requests [BMW-VERIFIED]",
@@ -804,6 +809,7 @@
     ]
   },
   "faq": {
+    "h2": "FAQ",
     "items": [
       {
         "id": 1,

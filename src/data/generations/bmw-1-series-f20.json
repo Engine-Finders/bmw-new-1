@@ -504,6 +504,7 @@
     "marketIntelligenceLine": "The F20 1 Series generated 344 real UK engine enquiries in 2025 [BMW-VERIFIED], concentrated on the diesel variants (116d, 118d, 120d) as the range reaches affordable used-car territory."
   },
   "bestWorstEngines": {
+    "h2": "Best &amp; Worst Engines",
     "items": [
       {
         "slot": "Best Petrol Overall",
@@ -631,6 +632,7 @@
     ]
   },
   "commonProblems": {
+    "h2": "Common Problems",
     "problems": [
       {
         "id": 1,
@@ -841,6 +843,8 @@
     "note": "No Generation variance from the EM_Proprietary_Data baseline figures -F20 1 Series shares the L7 platform with other BMW models, with similar engine-bay access, so costs are inherited directly per the Authority Model, with no divergence note required."
   },
   "coreVariants": {
+    "h2": "Diesel &amp; Petrol Lineup",
+    "subheading": "Core Variants",
     "dieselVariants": [
       {
         "name": "114d",
@@ -912,6 +916,7 @@
     "scopeNote": "All variants listed are F20 (5-door) and F21 (3-door) 1 Series. The 116d EfficientDynamics Edition (2012–2015) used a 1.6-litre N47 diesel rather than the 2.0-litre. M135i (2012–2016) used the N55 six-cylinder; M140i (2016–2019) used the B58 six-cylinder. Post-LCI (2015–2019) models switched from N13/N20/N47 to B38/B48/B47/B58 engines."
   },
   "marketIntelligence": {
+    "h2": "Market Intelligence",
     "mostRequestedEngines": [
       "1. N47D20 (largest share of diesel enquiries)",
       "2. B47D20",
@@ -949,6 +954,7 @@
     ]
   },
   "faq": {
+    "h2": "FAQ",
     "items": [
       {
         "id": 1,

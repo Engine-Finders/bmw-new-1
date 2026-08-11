@@ -704,6 +704,7 @@
     "marketIntelligenceLine": "As a lower-volume Touring variant, the E91 is a niche enthusiast vehicle -the 330d and 335d remain the most sought-after, while the 320d is the most practical daily driver."
   },
   "bestWorstEngines": {
+    "h2": "Best &amp; Worst Engines",
     "items": [
       {
         "slot": "Thin-Data Summary",
@@ -793,6 +794,7 @@
     ]
   },
   "commonProblems": {
+    "h2": "Common Problems",
     "problems": [
       {
         "id": 1,
@@ -975,6 +977,8 @@
     "note": ""
   },
   "coreVariants": {
+    "h2": "Diesel &amp; Petrol Lineup",
+    "subheading": "Core Variants",
     "dieselVariants": [
       {
         "name": "316d",
@@ -1042,6 +1046,7 @@
     "scopeNote": "All variants listed are E91-generation 3 Series Touring only (2005–2012). The M3 was available as a Touring in Europe -a rare and sought-after variant."
   },
   "marketIntelligence": {
+    "h2": "Market Intelligence",
     "mostRequestedEngines": [],
     "mostRequestedVariants": [],
     "averageReplacementCost": "",
@@ -1049,6 +1054,7 @@
     "liveFeed": []
   },
   "faq": {
+    "h2": "FAQ",
     "items": [
       {
         "id": 1,

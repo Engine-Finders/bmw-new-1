@@ -379,6 +379,7 @@
     "marketIntelligenceLine": "The G80/G81 M3 remains a highly sought-after performance car in the UK, with strong demand for the Competition xDrive and the Touring variant【PATTERN DATA】."
   },
   "bestWorstEngines": {
+    "h2": "Best &amp; Worst Engines",
     "items": [
       {
         "slot": "Thin-Data Summary",
@@ -468,6 +469,7 @@
     ]
   },
   "commonProblems": {
+    "h2": "Common Problems",
     "problems": [
       {
         "id": 1,
@@ -646,6 +648,8 @@
     "note": "No Generation variance note required -no Engine Page baseline exists for the S58 yet. Costs are sourced from UK specialist suppliers [BMW-QUOTE]."
   },
   "coreVariants": {
+    "h2": "Diesel &amp; Petrol Lineup",
+    "subheading": "Core Variants",
     "dieselVariants": [],
     "petrolVariants": [
       {
@@ -672,6 +676,7 @@
     "scopeNote": "All variants listed are BMW M3 G80/G81 only. The G81 Touring is only available in Competition xDrive specification. The base M3 (480 PS) is only available with a 6-speed manual transmission and rear-wheel drive. The M3 CS is a limited-production variant."
   },
   "marketIntelligence": {
+    "h2": "Market Intelligence",
     "mostRequestedEngines": [],
     "mostRequestedVariants": [],
     "averageReplacementCost": "",
@@ -679,6 +684,7 @@
     "liveFeed": []
   },
   "faq": {
+    "h2": "FAQ",
     "items": [
       {
         "id": 1,

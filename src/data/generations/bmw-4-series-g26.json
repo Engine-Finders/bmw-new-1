@@ -294,6 +294,7 @@
     "marketIntelligenceLine": "The i4 G26 is BMW\u0027s best-selling electric model in the UK; enquiries are concentrated on battery health, charging system diagnostics, and range concerns, with values ranging from £35,000 for early eDrive35 examples to £65,000+ for well-specced M60s."
   },
   "bestWorstEngines": {
+    "h2": "Best &amp; Worst Engines",
     "items": [
       {
         "slot": "Highest Risk",
@@ -346,6 +347,7 @@
     ]
   },
   "commonProblems": {
+    "h2": "Common Problems",
     "problems": [
       {
         "id": 1,
@@ -447,6 +449,8 @@
     "note": ""
   },
   "coreVariants": {
+    "h2": "Diesel &amp; Petrol Lineup",
+    "subheading": "Core Variants",
     "dieselVariants": [],
     "petrolVariants": [
       {
@@ -465,6 +469,7 @@
     "scopeNote": "All variants listed are G26 i4 only. The G26 is the electric variant of the 4 Series Gran Coupé -the combustion-engined G26 (420i, 430i, M440i) are covered on a separate Generation Page. The M60 xDrive replaced the M50 in 2024 as the range-topping model. The eDrive35 uses a smaller 66–70 kWh battery; all other variants use the 80.7–83.9 kWh battery."
   },
   "marketIntelligence": {
+    "h2": "Market Intelligence",
     "mostRequestedEngines": [],
     "mostRequestedVariants": ["1. eDrive40", "2. M50", "3. xDrive40"],
     "averageReplacementCost": "£12,000–£28,000 supply-only [BMW-QUOTE]",
@@ -498,6 +503,7 @@
     ]
   },
   "faq": {
+    "h2": "FAQ",
     "items": [
       {
         "id": 1,

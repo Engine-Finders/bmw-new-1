@@ -368,6 +368,7 @@
     "marketIntelligenceLine": "The G82/G83 M4 generated 288 real UK engine enquiries in 2025 [BMW-VERIFIED], concentrated on the S58 engine as these high-performance M cars age out of warranty and owners seek specialist maintenance and replacement advice."
   },
   "bestWorstEngines": {
+    "h2": "Best &amp; Worst Engines",
     "items": [
       {
         "slot": "Best Petrol Overall",
@@ -465,6 +466,7 @@
     ]
   },
   "commonProblems": {
+    "h2": "Common Problems",
     "problems": [
       {
         "id": 1,
@@ -627,11 +629,14 @@
     "note": ""
   },
   "coreVariants": {
+    "h2": "Diesel &amp; Petrol Lineup",
+    "subheading": "Core Variants",
     "dieselVariants": [],
     "petrolVariants": [],
     "scopeNote": "All variants listed are G82 (Coupé) and G83 (Convertible) second-generation M4 only, produced from November 2020 onwards. The G83 Convertible was launched in summer 2021. The M4 CSL (2022–2023) is a limited-production lightweight variant with 550 PS. The LCI facelift (2024–present) brought 530 PS to Competition models. xDrive (all-wheel drive) is available on Competition variants; base models are rear-wheel drive."
   },
   "marketIntelligence": {
+    "h2": "Market Intelligence",
     "mostRequestedEngines": [
       "1. S58B30T0 (Competition, 510–530 PS)",
       "2. S58B30T0 (CSL, 550 PS)",
@@ -673,6 +678,7 @@
     ]
   },
   "faq": {
+    "h2": "FAQ",
     "items": [
       {
         "id": 1,

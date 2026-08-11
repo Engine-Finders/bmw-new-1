@@ -534,6 +534,7 @@
     "marketIntelligenceLine": "The 5 Series nameplate generated significant UK engine enquiries in 2025 [BMW-VERIFIED], with the six-cylinder E28 models (520i, 525i, 528i, 535i, M5) representing the majority of E28-related demand based on market patterns."
   },
   "bestWorstEngines": {
+    "h2": "Best &amp; Worst Engines",
     "items": [
       {
         "slot": "Best Value",
@@ -681,6 +682,7 @@
     ]
   },
   "commonProblems": {
+    "h2": "Common Problems",
     "problems": [
       {
         "id": 1,
@@ -839,6 +841,8 @@
     "note": ""
   },
   "coreVariants": {
+    "h2": "Diesel &amp; Petrol Lineup",
+    "subheading": "Core Variants",
     "dieselVariants": [
       {
         "name": "524d",
@@ -902,6 +906,7 @@
     "scopeNote": "All variants listed are E28 only. The 525e and 528e are the same \"eta\" engine with different market badging -the 525e was sold in Europe, the 528e in North America. The 530i and 533i were US-market only models. The M5 was available globally with the M88/3 (Europe) or S38B35 (North America, South Africa)."
   },
   "marketIntelligence": {
+    "h2": "Market Intelligence",
     "mostRequestedEngines": [
       "1. M30B34 (535i/M535i) -pattern data",
       "2. M30B28 (528i) -pattern data",
@@ -939,6 +944,7 @@
     ]
   },
   "faq": {
+    "h2": "FAQ",
     "items": [
       {
         "id": 1,

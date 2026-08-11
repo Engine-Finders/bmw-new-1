@@ -190,6 +190,7 @@
     "marketIntelligenceLine": "The E65/E66 7 Series remains a popular choice in the UK used luxury car market, with strong demand for the 730d diesel and the V8-powered models [PATTERN DATA]."
   },
   "bestWorstEngines": {
+    "h2": "Best &amp; Worst Engines",
     "items": [
       {
         "slot": "Thin-Data Summary",
@@ -279,6 +280,7 @@
     ]
   },
   "commonProblems": {
+    "h2": "Common Problems",
     "problems": [
       {
         "id": 1,
@@ -517,6 +519,8 @@
     "note": "No Generation variance note required -no Engine Page baseline exists for these engines yet. Costs are sourced from UK specialist suppliers [BMW-QUOTE]."
   },
   "coreVariants": {
+    "h2": "Diesel &amp; Petrol Lineup",
+    "subheading": "Core Variants",
     "dieselVariants": [
       {
         "name": "730d",
@@ -588,6 +592,7 @@
     "scopeNote": "All variants listed are BMW 7 Series E65/E66 only. Available in short-wheelbase (E65) and long-wheelbase (E66) body styles -both share the same engine lineup and are covered under this Generation Page. The E67 (high-security) and E68 (Hydrogen 7) are rare special variants. Alpina B7 variants with a supercharged 4.4-litre V8 are covered on their own page."
   },
   "marketIntelligence": {
+    "h2": "Market Intelligence",
     "mostRequestedEngines": [],
     "mostRequestedVariants": [],
     "averageReplacementCost": "",
@@ -595,6 +600,7 @@
     "liveFeed": []
   },
   "faq": {
+    "h2": "FAQ",
     "items": [
       {
         "id": 1,
