@@ -291,6 +291,13 @@ export default function HomeSec10({ data }) {
           <Icon name="refresh" className="h-4 w-4 text-[var(--color-primary)]" strokeWidth={2.2} />
           <p>{data.liveFeed.footer}</p>
         </div>
+
+        <div className="mt-7 hidden h-3 items-center md:flex">
+          <span className="h-full flex-[1.1] -skew-x-[28deg] bg-[var(--color-primary)]" />
+          <span className="h-full flex-[1.25] -skew-x-[28deg] bg-[#7aa4dd]" />
+          <span className="h-full flex-[1.8] -skew-x-[28deg] bg-[var(--color-accent-red)]" />
+          <span className="h-full flex-[1.5] -skew-x-[28deg] bg-[linear-gradient(90deg,#ed1c24_0%,rgba(237,28,36,0)_100%)]" />
+        </div>
       </div>
     </section>
   );

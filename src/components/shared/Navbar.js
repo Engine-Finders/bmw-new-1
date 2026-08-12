@@ -79,12 +79,6 @@ export default function Navbar() {
           >
             <ThemeIcon theme={theme} />
           </button>
-          <Link
-            href="/quote"
-            className="shrink-0 rounded bg-[var(--color-primary)] px-5 py-3 text-sm font-bold text-white no-underline shadow-sm shadow-[var(--color-shadow)]"
-          >
-            START YOUR RESEARCH →
-          </Link>
         </div>
 
         <div className="ml-auto flex items-center gap-2 lg:hidden">

@@ -397,10 +397,42 @@ function CostCard({ title, value, note, highlight, isDark }) {
   );
 }
 
-function ResultsScreen({ diagnosis, verdict, engineOption, ctas, isDark }) {
+function ResultsScreen({ diagnosis, verdict, engineOption, ctas, isDark, calculatorContext }) {
   const severity = severityMeta[diagnosis.severity];
   const verdictInfo = verdictMeta[verdict.decision];
   const dealerRange = getMainDealerRange(verdict.replacement, diagnosis.dealerMultiplier);
+
+  function goToQuoteWithCalculator(event) {
+    event.preventDefault();
+    const calculator = {
+      source: "diagnostic-calculator",
+      category: calculatorContext?.categoryLabel || "",
+      diagnosis: diagnosis.headline || "",
+      diagnosisKey: diagnosis.key || "",
+      severity: severity?.label || diagnosis.severity || "",
+      evidence: diagnosis.evidenceLabel || "",
+      engineCodes: (diagnosis.engineCodes || []).join(" / "),
+      vehicleAge: calculatorContext?.ageLabel || "",
+      carValue: calculatorContext?.carValue != null ? fmtCurrency(calculatorContext.carValue) : "",
+      engineRoute: engineOption?.label || "",
+      repairCost: `${fmtCurrency(diagnosis.repairCost.low)} - ${fmtCurrency(diagnosis.repairCost.high)}`,
+      replacementCost: `${fmtCurrency(verdict.replacement.low)} - ${fmtCurrency(verdict.replacement.high)}`,
+      dealerEstimate: `${fmtCurrency(dealerRange.low)} - ${fmtCurrency(dealerRange.high)}`,
+      replacementVsValue: `${verdict.replacementPct}%`,
+      repairVsValue: `${verdict.repairPct}%`,
+      verdict: verdictInfo?.title || "",
+    };
+
+    try {
+      sessionStorage.setItem("bmw_quote_calculator", JSON.stringify(calculator));
+    } catch {
+      // Quote form still works without calculator context
+    }
+
+    const href = ctas.quote?.href && ctas.quote.href !== "#" ? ctas.quote.href : "/quote";
+    const url = href.includes("?") ? `${href}&from=calculator` : `${href}?from=calculator`;
+    window.location.href = url;
+  }
 
   return (
     <div className="grid gap-5">
@@ -473,10 +505,14 @@ function ResultsScreen({ diagnosis, verdict, engineOption, ctas, isDark }) {
               </ul>
 
               <div className="mt-5 grid gap-3">
-                <Link href={ctas.quote.href} className="btn-cta flex items-center justify-center gap-3 rounded-lg bg-[var(--color-primary)] px-5 py-3 text-[0.86rem] font-bold text-white">
+                <button
+                  type="button"
+                  onClick={goToQuoteWithCalculator}
+                  className="btn-cta flex items-center justify-center gap-3 rounded-lg bg-[var(--color-primary)] px-5 py-3 text-[0.86rem] font-bold text-white"
+                >
                   <span>{ctas.quote.label}</span>
                   <ArrowIcon className="h-4 w-4" />
-                </Link>
+                </button>
                 <Link href={ctas.specialist.href} className={`flex items-center justify-center gap-3 rounded-lg border px-5 py-3 text-[0.86rem] font-bold ${isDark ? "border-[#375067] bg-[rgba(14,28,41,0.84)] text-white" : "border-[#d7dde6] bg-white text-[#071827]"}`}>
                   <span>{ctas.specialist.label}</span>
                   <ArrowIcon className="h-4 w-4" />
@@ -756,7 +792,18 @@ export default function HomeSec3({ data }) {
                       Start again
                     </button>
                   </div>
-                  <ResultsScreen diagnosis={selectedDiagnosis} verdict={verdict} engineOption={selectedEngineOption} ctas={calculator.ctas} isDark={isDark} />
+                  <ResultsScreen
+                    diagnosis={selectedDiagnosis}
+                    verdict={verdict}
+                    engineOption={selectedEngineOption}
+                    ctas={calculator.ctas}
+                    isDark={isDark}
+                    calculatorContext={{
+                      categoryLabel: selectedCategory?.label || "",
+                      ageLabel: calculator.ageOptions.find((item) => item.id === selectedAgeId)?.label || "",
+                      carValue,
+                    }}
+                  />
                 </div>
               ) : null}
             </div>

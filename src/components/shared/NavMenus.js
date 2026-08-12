@@ -145,29 +145,57 @@ function ModelsPanel({ menu, activeModelHref, setActiveModelHref, onNavigate }) 
   );
 }
 
+const COLUMN_PREVIEW_COUNT = 10;
+
 function ColumnsPanel({ menu, onNavigate }) {
+  const [expandedTitles, setExpandedTitles] = useState(() => new Set());
+
+  function toggleColumn(title) {
+    setExpandedTitles((prev) => {
+      const next = new Set(prev);
+      if (next.has(title)) next.delete(title);
+      else next.add(title);
+      return next;
+    });
+  }
+
   return (
     <>
       <div className={`grid gap-4 ${menu.groups.length >= 4 ? "sm:grid-cols-2 lg:grid-cols-4" : "sm:grid-cols-2 lg:grid-cols-3"}`}>
-        {menu.groups.map((group) => (
-          <div key={group.title}>
-            <p className="mb-2 text-[0.7rem] font-bold uppercase tracking-wide text-[var(--color-text-soft)]">{group.title}</p>
-            <ul className="grid gap-1.5">
-              {group.links.map((link) => (
-                <li key={link.href}>
-                  <Link href={link.href} className={linkClass} onClick={onNavigate}>
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-            {group.viewAll ? (
-              <Link href={group.viewAll.href} className={`mt-3 ${mutedLinkClass}`} onClick={onNavigate}>
-                {group.viewAll.label}
-              </Link>
-            ) : null}
-          </div>
-        ))}
+        {menu.groups.map((group) => {
+          const links = group.links || [];
+          const isExpanded = expandedTitles.has(group.title);
+          const visibleLinks = isExpanded || links.length <= COLUMN_PREVIEW_COUNT ? links : links.slice(0, COLUMN_PREVIEW_COUNT);
+          const canExpand = links.length > COLUMN_PREVIEW_COUNT;
+
+          return (
+            <div key={group.title}>
+              <p className="mb-2 text-[0.7rem] font-bold uppercase tracking-wide text-[var(--color-text-soft)]">{group.title}</p>
+              <ul className="grid gap-1.5">
+                {visibleLinks.map((link) => (
+                  <li key={link.href}>
+                    <Link href={link.href} className={linkClass} onClick={onNavigate}>
+                      {link.label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+              {canExpand ? (
+                <button
+                  type="button"
+                  className={`mt-3 ${mutedLinkClass} text-left`}
+                  onClick={() => toggleColumn(group.title)}
+                >
+                  {isExpanded ? "Show less" : `View all (${links.length})`}
+                </button>
+              ) : group.viewAll ? (
+                <Link href={group.viewAll.href} className={`mt-3 ${mutedLinkClass}`} onClick={onNavigate}>
+                  {group.viewAll.label}
+                </Link>
+              ) : null}
+            </div>
+          );
+        })}
       </div>
       {menu.footerLink ? (
         <div className="mt-4 border-t border-[var(--color-border)] pt-3">
@@ -259,7 +287,7 @@ export function DesktopNavMenus() {
               onNavigate={() => setOpenId(null)}
             />
           ) : (
-            <ColumnsPanel menu={openMenu} onNavigate={() => setOpenId(null)} />
+            <ColumnsPanel key={openMenu.id} menu={openMenu} onNavigate={() => setOpenId(null)} />
           )}
         </div>
       ) : null}
@@ -417,40 +445,70 @@ export function MobileNavMenus({ onNavigate }) {
   }
 
   if (current.type === "menu") {
-    return (
-      <div>
-        <button type="button" onClick={pop} className="mb-2 text-sm font-bold text-[var(--color-primary)]">
-          ← {menu.label}
-        </button>
-        <div className="grid gap-4">
-          {menu.groups.map((group) => (
+    return <MobileColumnsMenu menu={menu} onPop={pop} onGoLink={goLink} />;
+  }
+
+  return null;
+}
+
+function MobileColumnsMenu({ menu, onPop, onGoLink }) {
+  const [expandedTitles, setExpandedTitles] = useState(() => new Set());
+
+  function toggleColumn(title) {
+    setExpandedTitles((prev) => {
+      const next = new Set(prev);
+      if (next.has(title)) next.delete(title);
+      else next.add(title);
+      return next;
+    });
+  }
+
+  return (
+    <div>
+      <button type="button" onClick={onPop} className="mb-2 text-sm font-bold text-[var(--color-primary)]">
+        ← {menu.label}
+      </button>
+      <div className="grid gap-4">
+        {menu.groups.map((group) => {
+          const links = group.links || [];
+          const isExpanded = expandedTitles.has(group.title);
+          const visibleLinks = isExpanded || links.length <= COLUMN_PREVIEW_COUNT ? links : links.slice(0, COLUMN_PREVIEW_COUNT);
+          const canExpand = links.length > COLUMN_PREVIEW_COUNT;
+
+          return (
             <div key={group.title}>
               <p className="mb-1 text-[0.7rem] font-bold uppercase tracking-wide text-[var(--color-text-soft)]">{group.title}</p>
               <ul className="grid gap-1">
-                {group.links.map((link) => (
+                {visibleLinks.map((link) => (
                   <li key={link.href}>
-                    <Link href={link.href} className={`${linkClass} py-1.5`} onClick={() => goLink(link.href)}>
+                    <Link href={link.href} className={`${linkClass} py-1.5`} onClick={() => onGoLink(link.href)}>
                       {link.label}
                     </Link>
                   </li>
                 ))}
               </ul>
-              {group.viewAll ? (
-                <Link href={group.viewAll.href} className={`mt-2 ${mutedLinkClass}`} onClick={() => goLink(group.viewAll.href)}>
+              {canExpand ? (
+                <button
+                  type="button"
+                  className={`mt-2 ${mutedLinkClass} text-left`}
+                  onClick={() => toggleColumn(group.title)}
+                >
+                  {isExpanded ? "Show less" : `View all (${links.length})`}
+                </button>
+              ) : group.viewAll ? (
+                <Link href={group.viewAll.href} className={`mt-2 ${mutedLinkClass}`} onClick={() => onGoLink(group.viewAll.href)}>
                   {group.viewAll.label}
                 </Link>
               ) : null}
             </div>
-          ))}
-          {menu.footerLink ? (
-            <Link href={menu.footerLink.href} className={mutedLinkClass} onClick={() => goLink(menu.footerLink.href)}>
-              {menu.footerLink.label}
-            </Link>
-          ) : null}
-        </div>
+          );
+        })}
+        {menu.footerLink ? (
+          <Link href={menu.footerLink.href} className={mutedLinkClass} onClick={() => onGoLink(menu.footerLink.href)}>
+            {menu.footerLink.label}
+          </Link>
+        ) : null}
       </div>
-    );
-  }
-
-  return null;
+    </div>
+  );
 }

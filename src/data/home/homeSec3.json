@@ -111,11 +111,11 @@
     "ctas": {
       "quote": {
         "label": "Get Replacement Quotes",
-        "href": "#"
+        "href": "/quote"
       },
       "specialist": {
         "label": "Speak to a BMW Specialist",
-        "href": "#"
+        "href": "/quote"
       }
     },
     "knownFaultOrder": [

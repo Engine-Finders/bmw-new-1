@@ -1,4 +1,4 @@
-import { sendLeadToCRM } from "@/components/shared/sendLeadToCRM";
+import { sendLeadToCRM, toCrmLeadPayload } from "@/components/shared/sendLeadToCRM";
 import { sendLeadEmail } from "@/components/shared/sendLeadEmail";
 
 export async function POST(request) {
@@ -13,8 +13,11 @@ export async function POST(request) {
       return Response.json({ error: "Name, email and phone are required" }, { status: 400 });
     }
 
+    // CRM: contact + vehicle only. Email: full payload including calculator.
+    const crmPayload = toCrmLeadPayload(payload);
+
     const [crmResult, emailResult] = await Promise.allSettled([
-      sendLeadToCRM(payload),
+      sendLeadToCRM(crmPayload),
       sendLeadEmail(payload),
     ]);
 
@@ -27,7 +30,6 @@ export async function POST(request) {
     }
 
     if (emailResult.status === "rejected") {
-      // Lead is already in CRM — still report success, but log email failure.
       console.error("lead email failed", emailResult.reason);
       return Response.json({
         success: true,

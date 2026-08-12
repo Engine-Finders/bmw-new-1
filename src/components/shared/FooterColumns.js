@@ -3,7 +3,6 @@
 import Link from "next/link";
 import { useTheme } from "@/components/shared/themeProvider";
 
-/** Sample footer data — fill remaining items later. Paths match the PDF spec. */
 export const footerColumns = [
   {
     title: "Ownership & Data",

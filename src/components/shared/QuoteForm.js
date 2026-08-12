@@ -50,12 +50,26 @@ export default function QuoteForm({ onSuccess, compact = false }) {
   const [submitLoading, setSubmitLoading] = useState(false);
   const [submitAlert, setSubmitAlert] = useState({ type: "", message: "" });
   const [submitted, setSubmitted] = useState(false);
+  const [calculator, setCalculator] = useState(null);
 
   // Prefill from /quote?reg=… (e.g. variant hero). Lookup still runs on Search.
   useEffect(() => {
     const fromUrl = searchParams?.get("reg") || searchParams?.get("vrm") || "";
     const cleaned = fromUrl.replace(/\s+/g, "").toUpperCase();
     if (cleaned) setRegInput(cleaned);
+  }, [searchParams]);
+
+  // Calculator results from HomeSec3 (only when arriving via /quote?from=calculator).
+  useEffect(() => {
+    if (searchParams?.get("from") !== "calculator") return;
+    try {
+      const raw = sessionStorage.getItem("bmw_quote_calculator");
+      if (!raw) return;
+      const parsed = JSON.parse(raw);
+      if (parsed && typeof parsed === "object") setCalculator(parsed);
+    } catch {
+      setCalculator(null);
+    }
   }, [searchParams]);
 
   const vehicleReady = Boolean(vehicle.vrm && (vehicle.brand || vehicle.series || vehicle.year));
@@ -126,6 +140,7 @@ export default function QuoteForm({ onSuccess, compact = false }) {
       const payload = buildQuoteLeadPayload({
         contact: { name, phone, email, postcode, remarks, honeypot },
         vehicle,
+        calculator,
       });
 
       const response = await fetch("/api/lead", {
@@ -137,6 +152,12 @@ export default function QuoteForm({ onSuccess, compact = false }) {
 
       if (!response.ok) {
         throw new Error(data.error || "Failed to send quote request");
+      }
+
+      try {
+        sessionStorage.removeItem("bmw_quote_calculator");
+      } catch {
+        // ignore
       }
 
       setSubmitted(true);
@@ -173,6 +194,12 @@ export default function QuoteForm({ onSuccess, compact = false }) {
       className={`rounded-lg border border-[var(--color-border)] bg-[var(--color-surface)] shadow-[0_14px_40px_var(--color-shadow)] ${compact ? "p-4" : "p-5 md:p-7"}`}
     >
       <div className="text-lg font-extrabold text-[var(--color-text)] md:text-xl">Confirm Details To Show Price</div>
+
+      {calculator ? (
+        <p className="mt-2 rounded border border-[var(--color-primary)]/25 bg-[var(--color-primary-soft)] px-3 py-2 text-xs text-[var(--color-text-muted)]">
+          Diagnostic calculator results will be included with your quote request.
+        </p>
+      ) : null}
 
       <div className="mt-5 text-xs font-extrabold uppercase tracking-wide text-[var(--color-primary)]">Car Details</div>
       {notice ? <p className="mt-1 text-xs text-[var(--color-text-soft)]">{notice}</p> : null}

@@ -20,6 +20,29 @@ function row(label, value) {
   </tr>`;
 }
 
+function buildCalculatorSection(calculator) {
+  if (!calculator || typeof calculator !== "object") return "";
+
+  return `
+          <h2 style="margin:20px 0 10px;font-size:15px;color:#075fd8;text-transform:uppercase;letter-spacing:0.04em;">Diagnostic Calculator</h2>
+          <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="border:1px solid #e5e7eb;border-radius:6px;">
+            ${row("Category", calculator.category)}
+            ${row("Diagnosis", calculator.diagnosis)}
+            ${row("Severity", calculator.severity)}
+            ${row("Evidence", calculator.evidence)}
+            ${row("Engine codes", calculator.engineCodes)}
+            ${row("Vehicle age", calculator.vehicleAge)}
+            ${row("Car value", calculator.carValue)}
+            ${row("Engine route", calculator.engineRoute)}
+            ${row("Repair cost", calculator.repairCost)}
+            ${row("Replacement cost", calculator.replacementCost)}
+            ${row("Dealer estimate", calculator.dealerEstimate)}
+            ${row("Replacement vs value", calculator.replacementVsValue)}
+            ${row("Repair vs value", calculator.repairVsValue)}
+            ${row("Verdict", calculator.verdict)}
+          </table>`;
+}
+
 function buildLeadEmailHtml(payload = {}) {
   return `<!DOCTYPE html>
 <html>
@@ -51,6 +74,7 @@ function buildLeadEmailHtml(payload = {}) {
             ${row("Fuel type", payload.fuelType)}
             ${row("Engine capacity", payload.engin_capacity)}
           </table>
+          ${buildCalculatorSection(payload.calculator)}
         </td>
       </tr>
     </table>
@@ -72,7 +96,8 @@ export async function sendLeadEmail(payload) {
   const customerEmail = String(payload?.email || "").trim();
   const resend = new Resend(apiKey);
   const vrm = payload?.vehicle_vrm ? String(payload.vehicle_vrm).toUpperCase() : "unknown";
-  const subject = `New quote request: ${payload?.name || "Lead"} · ${vrm}`;
+  const fromCalc = payload?.calculator ? " · calculator" : "";
+  const subject = `New quote request: ${payload?.name || "Lead"} · ${vrm}${fromCalc}`;
 
   const { data, error } = await resend.emails.send({
     from: FROM_EMAIL,
