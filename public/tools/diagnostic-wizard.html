@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BMW Diagnostic Wizard — Free Online BMW Engine Diagnostic Tool</title>
+<meta name="description" content="Free BMW diagnostic wizard online — answer 3 questions about your BMW's symptoms, get a ranked list of likely issues, costs and next steps.">
+<link rel="canonical" href="https://bmwengines.uk/tools/diagnostic-wizard">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="BMW Engines Knowledge Centre">
+<meta property="og:title" content="BMW Diagnostic Wizard — Free Online BMW Engine Diagnostic Tool">
+<meta property="og:description" content="Free BMW diagnostic wizard online — answer 3 questions about your BMW's symptoms, get a ranked list of likely issues, costs and next steps.">
+<meta property="og:url" content="https://bmwengines.uk/tools/diagnostic-wizard">
+<meta property="og:image" content="https://bmwengines.uk/assets/bmw/images/diagnostic-wizard-hero.webp">
+<meta property="og:locale" content="en_GB">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="BMW Diagnostic Wizard — Free Online BMW Engine Diagnostic Tool">
+<meta name="twitter:description" content="Free BMW diagnostic wizard online — answer 3 questions about your BMW's symptoms, get a ranked list of likely issues, costs and next steps.">
+<meta name="twitter:image" content="https://bmwengines.uk/assets/bmw/images/diagnostic-wizard-hero.webp">
+
+<link rel="stylesheet" href="/assets/bmw/style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://bmwengines.uk/#organization",
+      "name": "BMW Engines Knowledge Centre",
+      "url": "https://bmwengines.uk/",
+      "logo": "https://bmwengines.uk/assets/bmw/images/logo.png",
+      "description": "Independent BMW engine knowledge base and specialist network, part of the Engine Finders network.",
+      "sameAs": []
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://bmwengines.uk/#website",
+      "url": "https://bmwengines.uk/",
+      "name": "BMW Engines Knowledge Centre",
+      "publisher": {
+        "@id": "https://bmwengines.uk/#organization"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://bmwengines.uk/tools/diagnostic-wizard#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://bmwengines.uk/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Tools",
+          "item": "https://bmwengines.uk/tools"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Diagnostic Wizard",
+          "item": "https://bmwengines.uk/tools/diagnostic-wizard"
+        }
+      ]
+    },
+    {
+      "@type": "WebApplication",
+      "@id": "https://bmwengines.uk/tools/diagnostic-wizard#webapp",
+      "name": "BMW Diagnostic Wizard",
+      "applicationCategory": "UtilitiesApplication",
+      "operatingSystem": "Any",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "GBP"
+      },
+      "url": "https://bmwengines.uk/tools/diagnostic-wizard",
+      "publisher": {
+        "@id": "https://bmwengines.uk/#organization"
+      },
+      "description": "Free online BMW diagnostic wizard — answer 3 questions about your BMW's symptoms, get a ranked list of likely issues, costs and next steps.",
+      "browserRequirements": "Requires JavaScript for interactive diagnostic logic.",
+      "mainEntityOfPage": "https://bmwengines.uk/tools/diagnostic-wizard"
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://bmwengines.uk/tools/diagnostic-wizard#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Is the BMW diagnostic wizard free to use?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes — completely free with no email required to see your diagnostic results. We ask for an email only if you want to save your results or compare quotes."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How accurate is the BMW diagnostic wizard?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Very high for common BMW failure patterns — the ranking is based on real 2025 UK enquiry data and specialist interviews. For rare or intermittent faults, the wizard will direct you to the relevant Symptom Hub or Fault Code Page for deeper investigation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What BMW engines does the diagnostic wizard cover?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "All BMW engines fitted to UK-market models — including N47, B47, N57, B57, N54, N55, B58, N63, S63, M47, M57 and older M-series engines. If your engine isn't in our primary database, you'll be routed to the relevant general Symptom Hub."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What should I do after I get my diagnostic result?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Read the linked Failure Page for the full mechanism and diagnostic steps. Then use our repair vs replace calculator to apply the 70% BMW scrap threshold to your specific vehicle value. Finally, get a quote from one of our 20+ vetted BMW specialists."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How is this different from a generic OBD code reader?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "This wizard uses symptoms and driving behaviour — not OBD codes. It's designed for owners who don't have a code reader, or who have codes but want to understand what they mean in plain English. For specific OBD codes, see our Fault Code Pages."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+
+</head>
+<body>
+
+<nav class="site-nav">
+  <a href="/" class="brand">BMW ENGINES<br><span style="color:var(--bmw-blue); font-weight:400;">KNOWLEDGE CENTRE</span></a>
+  <ul><li><a href="/3-series">3 Series</a></li><li><a href="/5-series">5 Series</a></li><li><a href="/x3">X3</a></li><li><a href="/x5">X5</a></li><li><a href="/engine/n47">Engine Guide</a></li><li><a href="/tools" class="active">Tools</a></li></ul>
+  <a href="#quote" class="cta-btn">FIND YOUR ENGINE →</a>
+</nav>
+<div class="breadcrumb"><a href="/">Home</a><span>/</span><a href="/tools">Tools</a><span>/</span>Diagnostic Wizard</div>
+
+<header class="hero">
+  <div class="hero-inner">
+    <div>
+      <span class="eyebrow">Free Tool</span>
+      <h1>BMW Diagnostic <span class="accent">Wizard</span></h1>
+      <p class="sub">Answer three questions about what your BMW is doing — what it sounds like, how it's driving, and what warnings you see. We'll give you a ranked list of the most likely issues, with estimated costs and a clear next step.</p>
+    </div>
+    <div class="hero-image">
+      <img src="/assets/bmw/images/diagnostic-wizard-hero.webp" width="640" height="340" fetchpriority="high"
+           alt="BMW diagnostic wizard online — free BMW engine diagnostic tool showing a dashboard and warning lights"
+           title="BMW Diagnostic Wizard — Free Online BMW Engine Diagnostic Tool">
+    </div>
+  </div>
+  <div class="stat-strip">
+    <div class="stat-strip-inner">
+      <div class="stat-cell"><div class="stat-icon">🩺</div><div><div class="stat-num">3</div><div class="stat-label">Simple<br>Questions</div></div></div>
+      <div class="stat-cell"><div class="stat-icon">📊</div><div><div class="stat-num">Built On</div><div class="stat-label">9,000+ Real UK<br>Enquiries</div></div></div>
+      <div class="stat-cell"><div class="stat-icon">🔧</div><div><div class="stat-num">20+</div><div class="stat-label">Vetted BMW<br>Specialists</div></div></div>
+      <div class="stat-cell"><div class="stat-icon">⚡</div><div><div class="stat-num">70%</div><div class="stat-label">Scrap<br>Threshold</div></div></div>
+    </div>
+  </div>
+</header>
+
+<div class="summary-box">
+  <p><strong>Free BMW diagnostic wizard online — answer 3 questions and get a ranked list of likely issues, cost ranges and next steps.</strong> No email required.</p>
+  <ul>
+    <li>Based on real 2025 UK enquiry data from <strong>9,000+ BMW quote requests</strong> [EM-VERIFIED]</li>
+    <li>Covers <strong>N47, N57, B47, B58, N63, S63</strong> and all other BMW engines</li>
+    <li>Routes you to the right <a href="/failures">Failure Page</a>, <a href="/symptoms">Symptom Hub</a> or <a href="/fault-codes">Fault Code Page</a></li>
+    <li>Uses the same <strong>70% BMW scrap threshold</strong> as our <a href="/economics/repair-replace-scrap-framework">Decision Framework</a></li>
+  </ul>
+  <p>Try it below — the wizard learns from what you tell it and points you to the most likely cause first.</p>
+</div>
+
+<nav class="toc-bar" aria-label="On this page">
+  <span class="toc-label">On this page</span>
+  <ul>
+    <li><a href="#how">How It Works</a></li>
+    <li><a href="#wizard">The Diagnostic Wizard</a></li>
+    <li><a href="#results">What Your Results Mean</a></li>
+    <li><a href="#data">Where Our Data Comes From</a></li>
+    <li><a href="#faq">FAQ</a></li>
+  </ul>
+</nav>
+
+<section class="section" id="how">
+  <div class="section-inner fade-up">
+    <h2>How the BMW Diagnostic Wizard Works</h2>
+    <div class="card-grid">
+      <div class="card"><div class="icon-circle">1</div><h4>Tell Us What You Hear</h4><p>Is it a rattle, a knock, a whistle, or a tick? Does it happen on cold start, under load, or at idle? Your description points us toward the right group of symptoms — <a href="/symptoms/cold-start-rattle">cold start rattle</a>, <a href="/symptoms/engine-knocking-noise">engine knocking noise</a>, or <a href="/symptoms/turbo-whistle">turbo whistle</a> are our most common starting points.</p></div>
+      <div class="card"><div class="icon-circle">2</div><h4>Tell Us How It Drives</h4><p>Is the car in limp mode? Losing power? Misfiring? Overheating? This step filters the list further — for example, <a href="/symptoms/limp-mode">limp mode</a> combined with a rattle is a very different picture from a rattle with normal performance.</p></div>
+      <div class="card"><div class="icon-circle">3</div><h4>Tell Us What You See</h4><p>Any warning lights? Engine management light? DPF light? Oil pressure? AdBlue? The combination of symptoms and warnings is what our data model uses to rank the most likely failure for your exact scenario.</p></div>
+    </div>
+    <p style="margin-top:20px; max-width:760px; color:var(--bmw-grey-400);">This is one of eight free BMW tools on the site — see also our <a href="/tools/registration-lookup">registration lookup</a> and <a href="/tools/repair-vs-replace-calculator">repair vs replace calculator</a> for related diagnostics.</p>
+  </div>
+</section>
+
+<section class="section section-alt" id="wizard">
+  <div class="section-inner fade-down">
+    <h2>The BMW Diagnostic Wizard</h2>
+    <div class="tool-panel">
+      <div class="tool-steps">
+        <div class="tool-step"><div class="num">1</div><p>Choose your symptom</p></div>
+        <div class="tool-step"><div class="num">2</div><p>Choose driving behaviour</p></div>
+        <div class="tool-step"><div class="num">3</div><p>Choose warning light</p></div>
+      </div>
+      <div class="tool-select-row">
+        <select id="symptomSelect" aria-label="Select your BMW symptom">
+          <option value="rattle">Rattle or ticking noise</option>
+          <option value="knock">Knocking noise</option>
+          <option value="whistle">Whistle or hiss</option>
+          <option value="smoke">Smoke from exhaust</option>
+          <option value="rough">Rough idle or misfire</option>
+          <option value="overheat">Overheating</option>
+        </select>
+        <select id="driveSelect" aria-label="Select how your BMW is driving">
+          <option value="normal">Normal driving, no power loss</option>
+          <option value="limp">Limp mode / reduced power</option>
+          <option value="misfire">Misfiring / hesitation</option>
+          <option value="stall">Stalling or won't start</option>
+          <option value="fuel">Poor fuel economy</option>
+        </select>
+        <select id="lightSelect" aria-label="Select warning light on your BMW dashboard">
+          <option value="none">No warning lights</option>
+          <option value="eml">Engine management light (EML)</option>
+          <option value="oil">Oil pressure / level warning</option>
+          <option value="dpf">DPF warning</option>
+          <option value="adblue">AdBlue / SCR warning</option>
+          <option value="coolant">Coolant temperature warning</option>
+        </select>
+        <button class="tool-submit-btn" onclick="runDiagnostic()">RUN DIAGNOSTIC</button>
+      </div>
+      <div class="tool-result" id="wizardResult">
+        <h4 id="resultTitle">Your Diagnostic Results</h4>
+        <div id="resultContent">
+          <p class="tool-disclaimer">Select your options above and click "Run Diagnostic" to see a ranked list of likely issues.</p>
+        </div>
+      </div>
+      <p class="tool-disclaimer">This diagnostic wizard is a guide based on 2025 UK enquiry data — it is not a substitute for a professional inspection. Always have your BMW checked by a <a href="/about/specialist-vetting">vetted specialist</a> before committing to repairs.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="results" data-lazy-section>
+  <div class="section-inner fade-left">
+    <h2>What Your Diagnostic Results Mean</h2>
+    <p style="max-width:760px; color:var(--bmw-grey-400);">The wizard ranks issues by <strong>likelihood</strong>, based on real enquiry patterns. The <strong>cost range</strong> is supply only for a reconditioned unit — our <a href="/tools/repair-vs-replace-calculator">repair vs replace calculator</a> can help you apply the 70% BMW scrap threshold to your specific vehicle value. Each result links to a full <a href="/failures">Failure Page</a> with the complete mechanism, diagnostic sequence and tiered cost table.</p>
+    <p style="max-width:760px; color:var(--bmw-grey-400);">For a more precise diagnosis, use our <a href="/tools/registration-lookup">registration lookup</a> to identify your exact engine code first — some symptoms affect different BMW engines completely differently.</p>
+  </div>
+</section>
+
+<section class="section section-alt" id="data" data-lazy-section>
+  <div class="section-inner fade-right">
+    <h2>Where Our BMW Diagnostic Data Comes From</h2>
+    <p style="max-width:760px; color:var(--bmw-grey-400);">The diagnostic wizard is built on the same 2025 UK enquiry dataset that powers every page on this site — <strong>9,000+ real BMW quote requests</strong> [EM-VERIFIED] from EnginesMarket.co.uk and EngineFinders.co.uk, plus direct interviews with UK BMW specialists. Full methodology on our <a href="/data/methodology">Data Methodology page</a>.</p>
+    <p style="max-width:760px; color:var(--bmw-grey-400);">We also cross-reference against manufacturer TSBs and public forum data for validation — the result is a ranking based on what real BMW owners actually experience, not just what we think is likely.</p>
+  </div>
+</section>
+
+<section class="section" id="faq" data-lazy-section>
+  <div class="section-inner fade-up">
+    <h2>Frequently Asked Questions</h2>
+    <details class="faq-item" open><summary>Is the BMW diagnostic wizard free to use?</summary><p>Yes — completely free with no email required to see your diagnostic results. We ask for an email only if you want to save your results or compare quotes.</p></details>
+    <details class="faq-item"><summary>How accurate is the BMW diagnostic wizard?</summary><p>Very high for common BMW failure patterns — the ranking is based on real 2025 UK enquiry data and specialist interviews. For rare or intermittent faults, the wizard will direct you to the relevant <a href="/symptoms">Symptom Hub</a> or <a href="/fault-codes">Fault Code Page</a> for deeper investigation.</p></details>
+    <details class="faq-item"><summary>What BMW engines does the diagnostic wizard cover?</summary><p>All BMW engines fitted to UK-market models — including N47, B47, N57, B57, N54, N55, B58, N63, S63, M47, M57 and older M-series engines. If your engine isn't in our primary database, you'll be routed to the relevant general <a href="/symptoms">Symptom Hub</a>.</p></details>
+    <details class="faq-item"><summary>What should I do after I get my diagnostic result?</summary><p>Read the linked <a href="/failures">Failure Page</a> for the full mechanism and diagnostic steps. Then use our <a href="/tools/repair-vs-replace-calculator">repair vs replace calculator</a> to apply the 70% BMW scrap threshold to your specific vehicle value. Finally, get a quote from one of our <a href="/about/specialist-vetting">20+ vetted BMW specialists</a>.</p></details>
+    <details class="faq-item"><summary>How is this different from a generic OBD code reader?</summary><p>This wizard uses symptoms and driving behaviour — not OBD codes. It's designed for owners who don't have a code reader, or who have codes but want to understand what they <em>mean</em> in plain English. For specific OBD codes, see our <a href="/fault-codes">Fault Code Pages</a>.</p></details>
+  </div>
+</section>
+
+<div class="trust-strip">
+  <div class="trust-grid">
+    <div class="trust-item"><span class="dot">✓</span><p><strong>No Email Gate</strong>Results are free and immediate, always — part of the Engine Finders network.</p></div>
+    <div class="trust-item"><span class="dot">✓</span><p><strong>Data-Driven Diagnostics</strong>Every result is backed by 9,000+ real UK BMW enquiries and specialist interviews.</p></div>
+    <div class="trust-item"><span class="dot">✓</span><p><strong>20+ Vetted BMW Specialists</strong>Every diagnostic result routes to a specialist who can confirm and quote.</p></div>
+    <div class="trust-item"><span class="dot">✓</span><p><strong>100% Independent</strong>No sponsors, no manufacturer influence, no BMW AG affiliation.</p></div>
+  </div>
+</div>
+
+<section class="final-cta" id="quote">
+  <h2>Got Your Diagnostic Result? Compare Quotes</h2>
+  <p>Whatever the wizard suggests, compare quotes from our vetted BMW specialist network — with real prices and genuine UK availability.</p>
+  <a href="#" class="btn-blue">COMPARE QUOTES NOW →</a>
+  <a href="/tools/repair-vs-replace-calculator" class="btn-outline">REPAIR VS REPLACE CALCULATOR</a>
+</section>
+
+<footer>
+  <p>BMW Engines Knowledge Centre — part of the Engine Finders network. Independent editorial content; not affiliated with BMW AG or its subsidiaries.</p>
+  <p><a href="/about/editorial-standards">Editorial Standards</a> · <a href="/about/data-verification">Data Verification</a> · <a href="/about/corrections">Corrections Log</a> · <a href="/data/methodology">Data Methodology</a></p>
+</footer>
+
+<script src="/assets/bmw/effects.js"></script>
+<script>
+  function runDiagnostic() {
+    var symptom = document.getElementById('symptomSelect').value;
+    var drive = document.getElementById('driveSelect').value;
+    var light = document.getElementById('lightSelect').value;
+
+    var resultTitle = document.getElementById('resultTitle');
+    var resultContent = document.getElementById('resultContent');
+
+    // Simple demo logic — maps symptom+drive+light to a ranked list
+    var results = [];
+
+    // N47 timing chain
+    if (symptom === 'rattle' && (drive === 'normal' || drive === 'limp') && light !== 'oil') {
+      results.push({
+        title: 'N47 Timing Chain Stretch or Tensioner Failure',
+        likelihood: 'Most Likely',
+        cost: '£650–£1,800 (chain) · £2,500–£6,500 (full engine)',
+        link: '/failures/n47-timing-chain',
+        severity: '🔴 Catastrophic'
+      });
+    }
+
+    // N63 oil consumption
+    if (symptom === 'smoke' && drive === 'normal' && light === 'eml') {
+      results.push({
+        title: 'N63 Valve Stem Seals (Oil Consumption)',
+        likelihood: 'Most Likely',
+        cost: '£3,000–£6,000',
+        link: '/failures/n63-oil-consumption',
+        severity: '🟠 Immediate'
+      });
+    }
+
+    // B58 coolant leak
+    if (symptom === 'overheat' && drive === 'normal' && light === 'coolant') {
+      results.push({
+        title: 'B58 Water Pump or Expansion Tank Leak',
+        likelihood: 'Most Likely',
+        cost: '£500–£1,000',
+        link: '/failures/water-pump-failure',
+        severity: '🟡 Monitor'
+      });
+    }
+
+    // N57 injector seal
+    if (symptom === 'rough' && drive === 'misfire' && light === 'eml') {
+      results.push({
+        title: 'N57 Injector Seal Failure (Black Death)',
+        likelihood: 'Most Likely',
+        cost: '£1,500–£2,500',
+        link: '/failures/n57-injector-seal',
+        severity: '🟠 Immediate'
+      });
+    }
+
+    // B58 PCV
+    if (symptom === 'whistle' && drive === 'normal' && light === 'none') {
+      results.push({
+        title: 'B58 PCV Valve Failure (Whistle from engine)',
+        likelihood: 'Most Likely',
+        cost: '£400–£800',
+        link: '/failures/b58-timing-chain-guide',
+        severity: '🟡 Monitor'
+      });
+    }
+
+    // N20 timing chain
+    if (symptom === 'rattle' && drive === 'limp' && light === 'eml') {
+      results.push({
+        title: 'N20 Timing Chain Tensioner Failure',
+        likelihood: 'Most Likely',
+        cost: '£1,200–£2,500',
+        link: '/failures/n20-timing-chain-tensioner',
+        severity: '🔴 Catastrophic'
+      });
+    }
+
+    // S55 crank hub
+    if (symptom === 'knock' && drive === 'limp' && light === 'eml') {
+      results.push({
+        title: 'S55 Crank Hub Failure (M3/M4)',
+        likelihood: 'Most Likely',
+        cost: '£3,000–£6,000',
+        link: '/failures/s55-crank-hub-failure',
+        severity: '🔴 Catastrophic'
+      });
+    }
+
+    // Fallback
+    if (results.length === 0) {
+      resultTitle.textContent = 'No Specific Match — Try the Symptom Hub';
+      resultContent.innerHTML = '<p>Based on your selections, we don\'t have a specific BMW engine failure match in our demo database. Try adjusting your answers, or explore our general <a href="/symptoms">Symptom Hub</a> for a broader range of possibilities.</p><p class="tool-disclaimer">The full production wizard covers over 30 BMW failure patterns across all engine codes.</p>';
+      return;
+    }
+
+    resultTitle.textContent = 'Your Diagnostic Results (Ranked)';
+    var html = '';
+    for (var i = 0; i < results.length; i++) {
+      var r = results[i];
+      html += '<div class="result-card">';
+      html += '<div class="result-rank">#' + (i+1) + ' — ' + r.likelihood + '</div>';
+      html += '<h4>' + r.title + '</h4>';
+      html += '<div class="result-row"><span>Severity</span><span>' + r.severity + '</span></div>';
+      html += '<div class="result-row"><span>Estimated Cost</span><span>' + r.cost + '</span></div>';
+      html += '<div class="result-row"><span>Full Details</span><span><a href="' + r.link + '">Read the Failure Page →</a></span></div>';
+      html += '</div>';
+    }
+    html += '<p class="tool-disclaimer">Next step: use the <a href="/tools/repair-vs-replace-calculator">repair vs replace calculator</a> to apply the 70% BMW scrap threshold to your vehicle value.</p>';
+    resultContent.innerHTML = html;
+  }
+</script>
+</body>
+</html>

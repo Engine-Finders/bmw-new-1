@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BMW Recalls Index | Complete List of Engine &amp; Safety Recalls | BMW Engines UK</title>
+    <meta name="description" content="Search all BMW engine recalls and safety recalls for every model. Check your VIN, see affected models, and learn what to do next. UK resource." />
+    <link rel="canonical" href="https://bmwengines.uk/recalls" />
+    <link rel="stylesheet" href="/assets/bmw/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&display=swap" rel="stylesheet" />
+    <style>
+        /* Minimal fallback – full design system lives in external stylesheet */
+        body { font-family: 'Inter', sans-serif; margin: 0; padding: 0; background: #fff; color: #16171A; }
+        .container { max-width: 1280px; margin: 0 auto; padding: 0 20px; }
+        .section { padding: 48px 0; }
+        .section-inner { transition: opacity 0.6s ease, transform 0.6s ease; }
+        .section-inner.fade-up { opacity: 0; transform: translateY(30px); }
+        .section-inner.fade-down { opacity: 0; transform: translateY(-30px); }
+        .section-inner.fade-left { opacity: 0; transform: translateX(-30px); }
+        .section-inner.fade-right { opacity: 0; transform: translateX(30px); }
+        .section.visible .section-inner { opacity: 1; transform: translate(0,0); }
+        /* TOC bar */
+        .toc-bar { background: #fff; border-bottom: 1px solid #E3E5E8; position: sticky; top: 0; z-index: 10; height: 56px; display: flex; align-items: center; overflow-x: auto; }
+        .toc-bar .container { display: flex; align-items: center; gap: 16px; white-space: nowrap; }
+        .toc-label { font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em; color: #6F7276; margin-right: 8px; }
+        .toc-bar ul { list-style: none; display: flex; gap: 8px; margin: 0; padding: 0; }
+        .toc-bar ul li a { display: inline-block; padding: 4px 12px; font-size: 13px; color: #16171A; text-decoration: none; border-radius: 20px; background: #F5F6F8; }
+        .toc-bar ul li a:hover { background: #E3E5E8; }
+        /* Hero */
+        .hero { background: #fff; padding: 40px 0 20px; }
+        .hero .eyebrow { font-size: 11px; text-transform: uppercase; letter-spacing: 0.18em; color: #0066B1; margin-bottom: 8px; display: block; }
+        .hero .eyebrow::after { content: " /"; color: #0066B1; }
+        .hero h1 { font-size: 40px; font-weight: 700; line-height: 1.2; margin: 0 0 12px; letter-spacing: -0.02em; }
+        .hero h1 span.accent { color: #0066B1; }
+        .hero .sub { font-size: 18px; color: #6F7276; max-width: 720px; margin: 0 0 20px; }
+        .hero .stat-strip { display: flex; gap: 40px; padding: 16px 0 0; border-top: 1px solid #E3E5E8; flex-wrap: wrap; }
+        .hero .stat-strip .stat { display: flex; align-items: center; gap: 8px; }
+        .hero .stat-strip .stat .num { font-size: 24px; font-weight: 700; color: #0066B1; }
+        .hero .stat-strip .stat .label { font-size: 13px; color: #6F7276; }
+        /* Cards grid */
+        .model-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)); gap: 16px; margin: 24px 0; }
+        .model-grid a { display: block; padding: 16px 12px; background: #F5F6F8; border-radius: 8px; text-decoration: none; color: #16171A; font-weight: 500; text-align: center; border: 1px solid #E3E5E8; transition: background 0.2s; }
+        .model-grid a:hover { background: #E3E5E8; border-color: #0066B1; }
+        .model-grid a small { display: block; font-weight: 400; font-size: 12px; color: #6F7276; margin-top: 4px; }
+        /* Summary box */
+        .summary-box { background: #F5F6F8; border-left: 4px solid #0066B1; padding: 20px 24px; border-radius: 0 8px 8px 0; margin: 16px 0 24px; }
+        .summary-box p { margin: 0 0 12px; font-size: 16px; line-height: 1.6; }
+        .summary-box ul { margin: 0; padding-left: 20px; }
+        .summary-box ul li { margin-bottom: 4px; }
+        /* FAQ */
+        .faq-item { border-bottom: 1px solid #E3E5E8; padding: 16px 0; }
+        .faq-item:last-child { border-bottom: none; }
+        .faq-item h3 { font-size: 18px; font-weight: 600; margin: 0 0 6px; }
+        .faq-item p { margin: 0; color: #2B2D31; }
+        /* Trust strip */
+        .trust-strip { background: #2B2D31; color: #fff; padding: 32px 0; }
+        .trust-strip .grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; text-align: center; }
+        .trust-strip .grid .item .num { font-size: 28px; font-weight: 700; color: #0066B1; }
+        .trust-strip .grid .item .desc { font-size: 14px; color: #8E9092; }
+        .cta { background: #0066B1; color: #fff; text-align: center; padding: 24px 0; }
+        .cta a { display: inline-block; background: #fff; color: #0066B1; padding: 12px 32px; border-radius: 4px; text-decoration: none; font-weight: 600; }
+        .cta a:hover { background: #F5F6F8; }
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 28px; }
+            .hero .stat-strip { gap: 16px; }
+            .model-grid { grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); }
+            .trust-strip .grid { grid-template-columns: 1fr 1fr; gap: 16px; }
+        }
+    </style><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://bmwengines.uk/#organization",
+      "name": "BMW Engines UK",
+      "url": "https://bmwengines.uk",
+      "logo": "https://bmwengines.uk/assets/bmw/logo.png",
+      "description": "Independent BMW engine resource, part of the Engine Finders network.",
+      "sameAs": []
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://bmwengines.uk/#website",
+      "url": "https://bmwengines.uk",
+      "name": "BMW Engines UK",
+      "publisher": {
+        "@id": "https://bmwengines.uk/#organization"
+      },
+      "inLanguage": "en-GB"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://bmwengines.uk/recalls#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@id": "https://bmwengines.uk",
+            "name": "Home"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@id": "https://bmwengines.uk/recalls",
+            "name": "Recalls"
+          }
+        }
+      ]
+    },
+    {
+      "@type": "CollectionPage",
+      "@id": "https://bmwengines.uk/recalls#page",
+      "url": "https://bmwengines.uk/recalls",
+      "name": "BMW Recalls Index – Full List of Engine & Safety Recalls",
+      "description": "Search all BMW engine recalls and safety recalls for every model. Check your VIN, see affected models, and learn what to do next.",
+      "isPartOf": {
+        "@id": "https://bmwengines.uk/#website"
+      },
+      "about": {
+        "@type": "Thing",
+        "name": "BMW Recalls"
+      },
+      "mainEntity": {
+        "@type": "ItemList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@id": "https://bmwengines.uk/recalls/1-series",
+              "name": "1 Series Recalls"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+              "@id": "https://bmwengines.uk/recalls/2-series",
+              "name": "2 Series Recalls"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "item": {
+              "@id": "https://bmwengines.uk/recalls/3-series",
+              "name": "3 Series Recalls"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "item": {
+              "@id": "https://bmwengines.uk/recalls/4-series",
+              "name": "4 Series Recalls"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "item": {
+              "@id": "https://bmwengines.uk/recalls/5-series",
+              "name": "5 Series Recalls"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 6,
+            "item": {
+              "@id": "https://bmwengines.uk/recalls/6-series",
+              "name": "6 Series Recalls"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 7,
+            "item": {
+              "@id": "https://bmwengines.uk/recalls/7-series",
+              "name": "7 Series Recalls"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 8,
+            "item": {
+              "@id": "https://bmwengines.uk/recalls/8-series",
+              "name": "8 Series Recalls"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 9,
+            "item": {
+              "@id": "https://bmwengines.uk/recalls/x1",
+              "name": "X1 Recalls"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 10,
+            "item": {
+              "@id": "https://bmwengines.uk/recalls/x2",
+              "name": "X2 Recalls"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 11,
+            "item": {
+              "@id": "https://bmwengines.uk/recalls/x3",
+              "name": "X3 Recalls"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 12,
+            "item": {
+              "@id": "https://bmwengines.uk/recalls/x4",
+              "name": "X4 Recalls"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 13,
+            "item": {
+              "@id": "https://bmwengines.uk/recalls/x5",
+              "name": "X5 Recalls"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 14,
+            "item": {
+              "@id": "https://bmwengines.uk/recalls/x6",
+              "name": "X6 Recalls"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 15,
+            "item": {
+              "@id": "https://bmwengines.uk/recalls/x7",
+              "name": "X7 Recalls"
+            }
+          }
+        ]
+      },
+      "author": {
+        "@type": "Organization",
+        "name": "BMW Engines UK Editorial Team"
+      },
+      "publisher": {
+        "@id": "https://bmwengines.uk/#organization"
+      },
+      "datePublished": "2026-08-11T12:00:00+01:00",
+      "dateModified": "2026-08-11T12:00:00+01:00",
+      "inLanguage": "en-GB"
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+<!-- HERO -->
+<header class="hero">
+    <div class="container">
+        <span class="eyebrow">Recall Information</span>
+        <h1>BMW Recalls — Full Index of <span class="accent">Engine &amp; Safety Recalls</span></h1>
+        <p class="sub">Every BMW model with documented UK recall campaigns – from 1 Series to X7. Check your VIN, understand what’s covered, and know the difference between a recall and a known failure.</p>
+        <!-- Stat strip -->
+        <div class="stat-strip">
+            <div class="stat"><span class="num">15+</span><span class="label">Model lines covered</span></div>
+            <div class="stat"><span class="num">50+</span><span class="label">Recall campaigns listed</span></div>
+            <div class="stat"><span class="num">9,000+</span><span class="label">UK enquiries analysed</span></div>
+            <div class="stat"><span class="num">20+</span><span class="label">Vetted specialists</span></div>
+        </div>
+    </div>
+</header>
+
+<!-- SUMMARY BOX -->
+<div class="container">
+    <div class="summary-box">
+        <p><strong>BMW has issued numerous recalls across its range, covering engine components, emissions systems, and safety-critical parts.</strong> This index lists every model with documented campaigns, from 1 Series to X7. Use our VIN checker to see if your car is affected, and understand what a recall covers versus a known failure. Our data is sourced from UK and EU recall databases and verified against manufacturer TSBs.</p>
+        <ul>
+            <li><strong>15+</strong> model lines with recall history <span class="badge" style="color:#0066B1;">[EM-VERIFIED]</span></li>
+            <li>Free recall repairs <strong>if outstanding</strong> – no cost to you</li>
+            <li>Not all failures are recalls – see <a href="/data/engine-failure-index-2026">failure index</a> for known issues</li>
+        </ul>
+    </div>
+</div>
+
+<!-- TOC BAR -->
+<nav class="toc-bar" aria-label="On this page">
+    <div class="container">
+        <span class="toc-label">On this page</span>
+        <ul>
+            <li><a href="#model-recalls">Model Recalls</a></li>
+            <li><a href="#check-vin">Check Your VIN</a></li>
+            <li><a href="#what-covers">What a Recall Covers</a></li>
+            <li><a href="#related-faults">Related Known Faults</a></li>
+            <li><a href="#faq">FAQ</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!-- SECTION 1: Model Recalls -->
+<section class="section" id="model-recalls">
+    <div class="container section-inner fade-up">
+        <h2>BMW Model Recalls – Full List</h2>
+        <p>Click any model to see its specific recall campaigns, affected VIN ranges, and remedy details.</p>
+        <div class="model-grid">
+            <a href="/recalls/1-series">1 Series <small>E81, E87, F20, F40</small></a>
+            <a href="/recalls/2-series">2 Series <small>F22, F23, F44, F45</small></a>
+            <a href="/recalls/3-series">3 Series <small>E90, F30, G20</small></a>
+            <a href="/recalls/4-series">4 Series <small>F32, F36, G22</small></a>
+            <a href="/recalls/5-series">5 Series <small>E60, F10, G30</small></a>
+            <a href="/recalls/6-series">6 Series <small>E63, F06, G32</small></a>
+            <a href="/recalls/7-series">7 Series <small>E65, F01, G11</small></a>
+            <a href="/recalls/8-series">8 Series <small>E31, G14, G15</small></a>
+            <a href="/recalls/x1">X1 <small>E84, F48, U11</small></a>
+            <a href="/recalls/x2">X2 <small>F39, U10</small></a>
+            <a href="/recalls/x3">X3 <small>E83, F25, G01</small></a>
+            <a href="/recalls/x4">X4 <small>F26, G02</small></a>
+            <a href="/recalls/x5">X5 <small>E53, E70, F15, G05</small></a>
+            <a href="/recalls/x6">X6 <small>E71, F16, G06</small></a>
+            <a href="/recalls/x7">X7 <small>G07</small></a>
+            <!-- M models are covered under their base model pages -->
+        </div>
+        <p class="note" style="font-size:14px; color:#6F7276; margin-top:12px;"><em>M models (M3, M4, M5, etc.) are included under their respective series pages.</em></p>
+    </div>
+</section>
+
+<!-- SECTION 2: Check Your VIN -->
+<section class="section section-alt" id="check-vin">
+    <div class="container section-inner fade-down">
+        <h2>How to Check Your BMW for Outstanding Recalls</h2>
+        <p>Every BMW has a unique 17‑digit VIN. You can use it to check for open recalls in seconds.</p>
+        <ol style="margin: 16px 0; padding-left: 24px; line-height:1.8;">
+            <li><strong>Find your VIN</strong> – on the driver’s side dashboard (visible through the windscreen) or on the driver’s door pillar.</li>
+            <li><strong>Use our <a href="/tools/vin-decoder">VIN Decoder</a></strong> to see if your car has any outstanding recall campaigns.</li>
+            <li>If a recall is found, contact your nearest <a href="/about/specialist-vetting">BMW specialist</a> or main dealer – repairs are carried out <strong>free of charge</strong>.</li>
+        </ol>
+        <p>You can also check the official <a href="https://www.check-mot.service.gov.uk/" target="_blank" rel="noopener">UK MOT history</a> for recall notes, or the BMW UK website. Our VIN tool combines multiple sources for a single check.</p>
+        <div style="background:#F5F6F8; padding:16px 20px; border-radius:8px; margin-top:12px;">
+            <p><strong>👉 Already know your VIN?</strong> <a href="/tools/vin-decoder">Go straight to the VIN checker</a>.</p>
+        </div>
+    </div>
+</section>
+
+<!-- SECTION 3: What a Recall Covers -->
+<section class="section" id="what-covers">
+    <div class="container section-inner fade-left">
+        <h2>What a Recall Does (and Does Not) Cover</h2>
+        <p>A recall is a manufacturer-led campaign to fix a safety or emissions defect. It is <strong>always free</strong> to the owner, regardless of mileage or age, provided the car is within the recall VIN range.</p>
+        <ul style="margin:16px 0; padding-left:24px; line-height:1.8;">
+            <li><strong>Covered:</strong> Safety-critical faults (airbags, brakes, steering), emissions compliance issues, and certain engine components (EGR coolers, timing chain tensioners where a recall exists).</li>
+            <li><strong>Not covered:</strong> Wear and tear, neglect, or known mechanical failures that are not subject to a formal recall – e.g., N47 timing chain stretch is a <em>known failure</em>, but not a recall. See our <a href="/data/engine-failure-index-2026">Engine Failure Index</a> for those.</li>
+        </ul>
+        <p>If you’re unsure whether your symptom is a recall or a common fault, <a href="/symptoms">browse our symptom guides</a> or use the <a href="/tools/diagnostic-wizard">Diagnostic Wizard</a>.</p>
+        <div style="background:#E3E5E8; padding:12px 16px; border-radius:4px; margin-top:8px;">
+            <p style="margin:0; font-size:14px;"><strong>Tip:</strong> Always check for outstanding recalls before paying for a repair – you could be eligible for a free fix.</p>
+        </div>
+    </div>
+</section>
+
+<!-- SECTION 4: Related Known Faults -->
+<section class="section section-alt" id="related-faults">
+    <div class="container section-inner fade-right">
+        <h2>Related Known Faults (Not Recalls)</h2>
+        <p>Many BMW engine issues are well-documented but have never been subject to a recall. These are covered in depth on our failure pages.</p>
+        <div style="display:flex; flex-wrap:wrap; gap:12px; margin:16px 0;">
+            <a href="/failures/n47-timing-chain" style="background:#F5F6F8; padding:8px 16px; border-radius:20px; text-decoration:none; color:#16171A; border:1px solid #E3E5E8;">N47 Timing Chain</a>
+            <a href="/failures/n20-timing-chain-tensioner" style="background:#F5F6F8; padding:8px 16px; border-radius:20px; text-decoration:none; color:#16171A; border:1px solid #E3E5E8;">N20 Timing Chain</a>
+            <a href="/failures/n63-oil-consumption" style="background:#F5F6F8; padding:8px 16px; border-radius:20px; text-decoration:none; color:#16171A; border:1px solid #E3E5E8;">N63 Oil Consumption</a>
+            <a href="/failures/n54-high-pressure-fuel-pump" style="background:#F5F6F8; padding:8px 16px; border-radius:20px; text-decoration:none; color:#16171A; border:1px solid #E3E5E8;">N54 HPFP</a>
+            <a href="/failures/egr-valve-cooler" style="background:#F5F6F8; padding:8px 16px; border-radius:20px; text-decoration:none; color:#16171A; border:1px solid #E3E5E8;">EGR Cooler</a>
+            <a href="/failures/timing-chain-diagnosis-guide" style="background:#F5F6F8; padding:8px 16px; border-radius:20px; text-decoration:none; color:#16171A; border:1px solid #E3E5E8;">Timing Chain Diagnosis</a>
+        </div>
+        <p>For a full list of known issues by engine, visit our <a href="/data/engine-failure-index-2026">Engine Failure Index</a>.</p>
+    </div>
+</section>
+
+<!-- SECTION 5: FAQ -->
+<section class="section" id="faq">
+    <div class="container section-inner fade-up">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-item">
+            <h3>How do I check if my BMW has an outstanding recall?</h3>
+            <p>Use our <a href="/tools/vin-decoder">VIN Decoder</a> – enter your 17‑digit VIN and we’ll show you any open campaigns. You can also check the official BMW UK recall portal or the DVSA website.</p>
+        </div>
+        <div class="faq-item">
+            <h3>What’s the difference between a recall and a known failure?</h3>
+            <p>A recall is a manufacturer-mandated fix for a safety or emissions defect, carried out free of charge. A known failure is a common mechanical issue that is not covered by a recall – e.g., N47 timing chain stretch – and repair costs are the owner’s responsibility.</p>
+        </div>
+        <div class="faq-item">
+            <h3>Do I have to pay for a recall repair?</h3>
+            <p>No. If your car is within the affected VIN range, the repair is free at any BMW dealer or authorised specialist. This includes parts and labour.</p>
+        </div>
+        <div class="faq-item">
+            <h3>How long does a recall repair take?</h3>
+            <p>It varies, but most are completed in a few hours. Some complex campaigns (e.g., EGR cooler replacement) may require a full day. Your dealer will give a timeframe when you book.</p>
+        </div>
+        <div class="faq-item">
+            <h3>Can a recall fix a failed engine?</h3>
+            <p>Only if the failure is directly caused by the recall defect. For example, a recall for an EGR cooler that leaks coolant into the engine may cover the cooler and associated damage, but not other wear items. Always check the specific campaign details.</p>
+        </div>
+    </div>
+</section>
+
+<!-- TRUST STRIP -->
+<div class="trust-strip">
+    <div class="container">
+        <div class="grid">
+            <div class="item"><div class="num">9,000+</div><div class="desc">UK enquiries analysed</div></div>
+            <div class="item"><div class="num">20+</div><div class="desc">Vetted BMW specialists</div></div>
+            <div class="item"><div class="num">100%</div><div class="desc">Independent editorial content</div></div>
+            <div class="item"><div class="num">70%</div><div class="desc">Scrap threshold – repair vs value</div></div>
+        </div>
+    </div>
+</div>
+
+<!-- CTA -->
+<div class="cta">
+    <div class="container">
+        <p style="margin:0 0 12px; font-size:18px; font-weight:500;">Not sure if your BMW has a recall? Use our VIN checker now.</p>
+        <a href="/tools/vin-decoder">Check Your VIN</a>
+    </div>
+</div>
+
+<!-- FOOTER (minimal) -->
+<footer style="background:#16171A; color:#8E9092; padding:24px 0; text-align:center; font-size:13px;">
+    <div class="container">
+        <p>&copy; 2026 BMW Engines UK. Independent resource. Part of the Engine Finders network.</p>
+        <p><a href="/about" style="color:#8E9092; text-decoration:underline;">About Us</a> · <a href="/contact" style="color:#8E9092; text-decoration:underline;">Contact</a> · <a href="/data/methodology" style="color:#8E9092; text-decoration:underline;">Methodology</a></p>
+    </div>
+</footer>
+
+<!-- Effects script -->
+<script src="/assets/bmw/effects.js" defer></script>
+
+</body>
+</html>

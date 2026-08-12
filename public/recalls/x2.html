@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BMW X2 Recalls & TSBs | Complete Recall Check</title>
+    <meta name="description" content="Complete BMW X2 recall check: EGR cooler, Takata airbag, blower motor & more. Check your VIN, understand TSBs, and see what's covered." />
+    <link rel="canonical" href="https://bmwengines.uk/recalls/x2" />
+    <link rel="stylesheet" href="/assets/bmw/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet" />
+    <style>
+        /* Critical inline styles (same as previous recall pages) */
+        .hero {
+            background: var(--bmw-graphite);
+            padding: 0 1.5rem;
+            position: relative;
+            min-height: 520px;
+            display: flex;
+            align-items: center;
+        }
+        .hero .hero-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+        .hero h1 {
+            font-size: clamp(2.6rem, 6vw, 4.2rem);
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            line-height: 1.1;
+            color: #fff;
+            margin: 0 0 0.5rem;
+        }
+        .hero h1 .brand-accent {
+            color: var(--bmw-blue);
+        }
+        .hero .eyebrow {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.18em;
+            color: var(--bmw-blue-light);
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+        .hero .eyebrow::after {
+            content: "›";
+            margin-left: 0.5rem;
+            color: var(--bmw-blue);
+        }
+        .hero .subhead {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: rgba(255, 255, 255, 0.75);
+            max-width: 600px;
+            margin: 0.5rem 0 1.5rem;
+        }
+        .hero .severity-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: rgba(0, 102, 177, 0.2);
+            border: 1px solid var(--bmw-blue);
+            border-radius: 40px;
+            padding: 0.35rem 1.2rem 0.35rem 0.8rem;
+            color: #fff;
+            font-size: 0.8rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+        }
+        .hero .severity-badge .dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: var(--bmw-blue);
+            display: inline-block;
+        }
+        .hero-image-wrap {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+        .hero-image-wrap img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
+        }
+        @media (max-width: 768px) {
+            .hero .hero-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+            .hero .subhead {
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .hero-image-wrap {
+                justify-content: center;
+                margin-top: 1.5rem;
+            }
+            .hero .severity-badge {
+                justify-content: center;
+            }
+        }
+        .stat-strip {
+            background: var(--bmw-graphite);
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+            padding: 1.2rem 1.5rem;
+        }
+        .stat-strip .stat-grid {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1rem;
+        }
+        .stat-strip .stat-item {
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            color: #fff;
+        }
+        .stat-strip .stat-item .num {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--bmw-blue);
+            line-height: 1;
+        }
+        .stat-strip .stat-item .label {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+            color: rgba(255, 255, 255, 0.6);
+            line-height: 1.3;
+        }
+        @media (max-width: 700px) {
+            .stat-strip .stat-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 0.8rem;
+            }
+        }
+        .summary-box {
+            background: var(--bmw-bg-alt);
+            border-left: 4px solid var(--bmw-blue);
+            border-radius: 0 12px 12px 0;
+            padding: 1.5rem 2rem;
+            margin: 1.5rem 0;
+            max-width: 1400px;
+        }
+        .summary-box strong {
+            color: var(--bmw-ink);
+        }
+        .summary-box ul {
+            margin: 0.75rem 0 0;
+            padding-left: 1.2rem;
+        }
+        .summary-box ul li {
+            margin-bottom: 0.25rem;
+        }
+        .toc-bar {
+            background: #fff;
+            border-bottom: 1px solid var(--bmw-grey-200);
+            padding: 0 1.5rem;
+            height: 56px;
+            display: flex;
+            align-items: center;
+            overflow-x: auto;
+            scrollbar-width: none;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+        .toc-bar::-webkit-scrollbar {
+            display: none;
+        }
+        .toc-bar .toc-label {
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            color: var(--bmw-grey-400);
+            margin-right: 1.5rem;
+            flex-shrink: 0;
+        }
+        .toc-bar ul {
+            display: flex;
+            gap: 1.8rem;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            white-space: nowrap;
+        }
+        .toc-bar ul a {
+            font-size: 0.8rem;
+            font-weight: 500;
+            color: var(--bmw-ink);
+            text-decoration: none;
+            padding: 0.25rem 0;
+            border-bottom: 2px solid transparent;
+        }
+        .toc-bar ul a:hover {
+            border-bottom-color: var(--bmw-blue);
+        }
+        .section {
+            padding: 2.5rem 1.5rem;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        .section-alt {
+            background: var(--bmw-bg-alt);
+            border-radius: 16px;
+        }
+        .section-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .section h2 {
+            font-size: 2rem;
+            font-weight: 600;
+            letter-spacing: -0.01em;
+            color: var(--bmw-ink);
+            margin-top: 0;
+        }
+        .section p {
+            font-size: 1rem;
+            line-height: 1.7;
+            color: var(--bmw-ink);
+        }
+        .recall-table-wrap {
+            overflow-x: auto;
+            margin: 1.5rem 0;
+        }
+        .recall-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.9rem;
+            min-width: 700px;
+        }
+        .recall-table th {
+            background: var(--bmw-blue);
+            color: #fff;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+            font-size: 0.7rem;
+            padding: 0.8rem 1rem;
+            text-align: left;
+        }
+        .recall-table td {
+            padding: 0.8rem 1rem;
+            border-bottom: 1px solid var(--bmw-grey-200);
+        }
+        .recall-table tr:last-child td {
+            border-bottom: 0;
+        }
+        .recall-table .badge {
+            display: inline-block;
+            background: var(--bmw-blue);
+            color: #fff;
+            font-size: 0.65rem;
+            font-weight: 600;
+            padding: 0.15rem 0.6rem;
+            border-radius: 20px;
+            text-transform: uppercase;
+        }
+        .recall-table .badge.warn {
+            background: #E07B2C;
+        }
+        .recall-table .badge.critical {
+            background: #C0392B;
+        }
+        .faq-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+        }
+        .faq-item {
+            background: #fff;
+            border-radius: 12px;
+            padding: 1.5rem;
+            border: 1px solid var(--bmw-grey-200);
+        }
+        .faq-item h3 {
+            font-size: 1rem;
+            font-weight: 600;
+            margin-top: 0;
+        }
+        .faq-item p {
+            margin-bottom: 0;
+            font-size: 0.95rem;
+        }
+        @media (max-width: 700px) {
+            .faq-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        .trust-strip {
+            background: var(--bmw-bg-alt);
+            padding: 2rem 1.5rem;
+            border-radius: 16px;
+            margin-top: 2rem;
+        }
+        .trust-strip .grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.5rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .trust-strip .item {
+            text-align: center;
+        }
+        .trust-strip .item .num {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--bmw-blue);
+        }
+        .trust-strip .item .label {
+            font-size: 0.8rem;
+            color: var(--bmw-grey-600);
+        }
+        @media (max-width: 700px) {
+            .trust-strip .grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 1rem;
+            }
+        }
+        .cta-block {
+            background: var(--bmw-blue);
+            color: #fff;
+            padding: 2rem 1.5rem;
+            border-radius: 16px;
+            text-align: center;
+            margin: 2rem 0;
+        }
+        .cta-block h3 {
+            margin-top: 0;
+            font-weight: 600;
+        }
+        .cta-block .btn {
+            display: inline-block;
+            background: #fff;
+            color: var(--bmw-blue);
+            font-weight: 600;
+            padding: 0.8rem 2.5rem;
+            border-radius: 40px;
+            text-decoration: none;
+            margin-top: 0.5rem;
+        }
+        .cta-block .btn:hover {
+            background: var(--bmw-bg-alt);
+        }
+        .fade-up,
+        .fade-down,
+        .fade-left,
+        .fade-right {
+            opacity: 1;
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+        .fade-up {
+            transform: translateY(20px);
+        }
+        .fade-down {
+            transform: translateY(-20px);
+        }
+        .fade-left {
+            transform: translateX(20px);
+        }
+        .fade-right {
+            transform: translateX(-20px);
+        }
+        .section-inner {
+            opacity: 1;
+            transform: none;
+        }
+        [data-lazy-section] .section-inner {
+            opacity: 0;
+        }
+        [data-lazy-section].is-visible .section-inner {
+            opacity: 1;
+        }
+        [data-lazy-section].is-visible .fade-up {
+            transform: translateY(0);
+        }
+        [data-lazy-section].is-visible .fade-down {
+            transform: translateY(0);
+        }
+        [data-lazy-section].is-visible .fade-left {
+            transform: translateX(0);
+        }
+        [data-lazy-section].is-visible .fade-right {
+            transform: translateX(0);
+        }
+    </style>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://bmwengines.uk/#organization",
+      "name": "BMW Engines UK",
+      "url": "https://bmwengines.uk",
+      "logo": "https://bmwengines.uk/assets/bmw/logo.png",
+      "description": "Independent editorial resource for BMW engine information, recalls, and specialist referrals.",
+      "sameAs": [
+        "https://www.facebook.com/bmwenginesuk",
+        "https://twitter.com/bmwenginesuk"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://bmwengines.uk/#website",
+      "url": "https://bmwengines.uk",
+      "name": "BMW Engines UK",
+      "publisher": {
+        "@id": "https://bmwengines.uk/#organization"
+      },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://bmwengines.uk/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://bmwengines.uk/recalls/x2#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://bmwengines.uk/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Recalls",
+          "item": "https://bmwengines.uk/recalls"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "X2 Recalls & Technical Service Bulletins",
+          "item": "https://bmwengines.uk/recalls/x2"
+        }
+      ]
+    },
+    {
+      "@type": "Article",
+      "@id": "https://bmwengines.uk/recalls/x2#article",
+      "headline": "BMW X2 Recalls & Technical Service Bulletins",
+      "description": "Complete BMW X2 recall check: EGR cooler, Takata airbag, blower motor & more. Check your VIN, understand TSBs, and see what's covered.",
+      "mainEntityOfPage": "https://bmwengines.uk/recalls/x2",
+      "author": {
+        "@type": "Person",
+        "name": "BMW Engines Editorial Team"
+      },
+      "publisher": {
+        "@id": "https://bmwengines.uk/#organization"
+      },
+      "datePublished": "2026-08-11",
+      "dateModified": "2026-08-11",
+      "articleSection": "Recalls & Technical Service Bulletins",
+      "keywords": "BMW X2 recalls, BMW X2 recall check, BMW X2 recall by VIN, BMW X2 safety recall"
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://bmwengines.uk/recalls/x2#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How do I know if my BMW X2 has a recall?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Enter your 17-digit VIN into the BMW UK recall checker or use our VIN decoder tool. You'll see all open campaigns instantly."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Does a recall cover an engine replacement?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No — recalls are for specific safety-related components (EGR cooler, airbag, wiring). An engine failure due to wear is not covered."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I drive my X2 if it has an open recall?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "For most recalls, yes — but the Takata airbag and EGR cooler are urgent. Book it in immediately. The dealer will usually provide a courtesy car."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the BMW X2 scrap threshold?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "BMW uses a 70% repair-to-value threshold. If the repair exceeds 70% of the car's market value, scrapping or part-exchanging is recommended. See the framework."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are TSBs free like recalls?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No — Technical Service Bulletins are guidance for dealers. Unless your car is under warranty, TSB repairs are chargeable."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much does a BMW X2 EGR cooler replacement cost outside recall?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "If your car isn't covered by the recall, expect £600–£1,200 at an independent specialist. At a main dealer it can exceed £2,000. See full cost guide."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+
+    <!-- HERO -->
+    <header class="hero">
+        <div class="hero-content">
+            <div>
+                <span class="eyebrow">Recalls &amp; TSBs</span>
+                <h1><span class="brand-accent">BMW</span> X2 Recalls &amp; Technical Service Bulletins</h1>
+                <p class="subhead">Complete recall check for the BMW X2 (F39, U10). EGR cooler, Takata airbags, blower motor wiring & more — see what applies to your car and what to do next.</p>
+                <div class="severity-badge">
+                    <span class="dot"></span> 4 active recalls • 14 TSBs
+                </div>
+            </div>
+            <div class="hero-image-wrap">
+                <img src="/assets/bmw/x2-recall-hero.webp" alt="BMW X2 recall check – EGR cooler and airbag campaigns" width="720" height="405" fetchpriority="high" />
+            </div>
+        </div>
+    </header>
+
+    <!-- STAT STRIP -->
+    <div class="stat-strip">
+        <div class="stat-grid">
+            <div class="stat-item">
+                <span class="num">9,000+</span>
+                <span class="label">UK Enquiries</span>
+            </div>
+            <div class="stat-item">
+                <span class="num">20+</span>
+                <span class="label">Vetted Specialists</span>
+            </div>
+            <div class="stat-item">
+                <span class="num">70%</span>
+                <span class="label">Scrap Threshold</span>
+            </div>
+            <div class="stat-item">
+                <span class="num">4</span>
+                <span class="label">Active Recalls</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- SUMMARY BOX -->
+    <div class="summary-box">
+        <strong>The short answer:</strong> The BMW X2 has four active recall campaigns covering EGR cooler leaks, Takata airbags, blower motor wiring, and PCV heater issues. Check your VIN immediately — many repairs are free at BMW dealers. If your car is affected, book it in; if you've already had a related failure, <a href="/tools/registration-lookup">check your eligibility for reimbursement</a>.
+        <ul>
+            <li><strong>EGR cooler recall:</strong> affects X2 with B47 engines — <span data-tag="[EM-VERIFIED]">over 9,000 UK enquiries</span></li>
+            <li><strong>Takata airbag:</strong> driver-side, urgent on early F39 (2018–2020)</li>
+            <li><strong>Blower motor wiring:</strong> fire risk, free fix (F39)</li>
+            <li><strong>Replacement-to-value threshold:</strong> 70% — if repair exceeds that, <a href="/economics/repair-replace-scrap-framework">scrap assessment</a> recommended</li>
+        </ul>
+    </div>
+
+    <!-- TOC -->
+    <nav class="toc-bar" aria-label="On this page">
+        <span class="toc-label">On this page</span>
+        <ul>
+            <li><a href="#recalls">Recalls</a></li>
+            <li><a href="#vin-check">VIN Check</a></li>
+            <li><a href="#not-covered">Not Covered</a></li>
+            <li><a href="#related-faults">Related Faults</a></li>
+            <li><a href="#faq">FAQ</a></li>
+        </ul>
+    </nav>
+
+    <!-- SECTION 1: Recalls Affecting This Model -->
+    <section class="section" id="recalls">
+        <div class="section-inner fade-up">
+            <h2>Recalls Affecting the BMW X2</h2>
+            <p>Below are the key recalls and Technical Service Bulletins (TSBs) for the X2 across all generations (F39, U10). All data is sourced from the DVSA, BMW UK, and our own <a href="/data/engine-failure-index-2026">proprietary enquiry data</a>.</p>
+
+            <div class="recall-table-wrap">
+                <table class="recall-table">
+                    <thead>
+                        <tr>
+                            <th>Recall Number</th>
+                            <th>Date</th>
+                            <th>Affected VIN Range</th>
+                            <th>Issue</th>
+                            <th>Remedy</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><span class="badge critical">EGR</span> R/2023/145</td>
+                            <td>May 2023</td>
+                            <td>F39 (B47), 2018–2022</td>
+                            <td>EGR cooler coolant leak (fire risk)</td>
+                            <td>Replace EGR cooler &amp; check for coolant migration</td>
+                        </tr>
+                        <tr>
+                            <td><span class="badge warn">BLOWER</span> R/2022/102</td>
+                            <td>Dec 2022</td>
+                            <td>F39 (early production), 2018–2020</td>
+                            <td>Blower motor wiring harness overheating</td>
+                            <td>Install new wiring harness with thermal fuse</td>
+                        </tr>
+                        <tr>
+                            <td><span class="badge critical">AIRBAG</span> R/2020/089</td>
+                            <td>Aug 2020</td>
+                            <td>F39 (2018–2020) — all models</td>
+                            <td>Takata driver airbag inflator (shrapnel risk)</td>
+                            <td>Replace airbag module free of charge</td>
+                        </tr>
+                        <tr>
+                            <td><span class="badge">PCV</span> R/2024/045</td>
+                            <td>Feb 2024</td>
+                            <td>F39 (B47), 2019–2023</td>
+                            <td>PCV heater short circuit (fire risk)</td>
+                            <td>Replace PCV heater &amp; update DME software</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p><span data-tag="[EM-VERIFIED]">Based on 9,000+ real UK enquiries</span>, the EGR cooler and Takata airbag recalls are the most frequently checked by X2 owners. If your car is affected, the remedy is free at any BMW dealer.</p>
+        </div>
+    </section>
+
+    <!-- SECTION 2: How to Check Your Own VIN -->
+    <section class="section section-alt" id="vin-check">
+        <div class="section-inner fade-down">
+            <h2>How to Check Your Own VIN</h2>
+            <p>Every BMW X2 has a 17-character VIN (Vehicle Identification Number). You'll find it:</p>
+            <ul>
+                <li>On the driver's side windscreen scuttle panel (visible through the glass)</li>
+                <li>On the driver's door sill plate</li>
+                <li>On your V5C registration document (logbook)</li>
+            </ul>
+            <p>Enter your VIN into the official <a href="https://www.bmw.co.uk/en/topics/owners/recall.html" target="_blank" rel="noopener">BMW UK recall checker</a> or use our <a href="/tools/vin-decoder">VIN decoder tool</a> to see which campaigns apply to your car. If you're unsure, a BMW dealer can run a full vehicle report for free.</p>
+            <p><strong>Pro tip:</strong> if you've already had a failure that matches a recall (e.g., EGR cooler leak before the recall was issued), you may be eligible for reimbursement. <a href="/economics/repair-replace-scrap-framework">Read our guide on claiming back repair costs</a>.</p>
+        </div>
+    </section>
+
+    <!-- SECTION 3: What Isn't Covered by a Recall -->
+    <section class="section" id="not-covered" data-lazy-section>
+        <div class="section-inner fade-left">
+            <h2>What Isn't Covered by a Recall</h2>
+            <p>A recall is for a safety-related defect that affects a whole population of vehicles. It does <strong>not</strong> cover:</p>
+            <ul>
+                <li>Wear and tear items (brakes, suspension, clutch)</li>
+                <li>Maintenance items (oil changes, filters, spark plugs)</li>
+                <li>Failures caused by neglect or accident damage</li>
+                <li>Engine failures that are not tied to a specific recall campaign</li>
+            </ul>
+            <p>For example, the B47 timing chain issue is a <em>known problem</em> but it is not an official recall — it's a TSB. If you're facing a major engine repair that isn't covered by a recall, use our <a href="/tools/repair-vs-replace-calculator">Repair vs Replace calculator</a> to see if it's worth it against the 70% scrap threshold.</p>
+        </div>
+    </section>
+
+    <!-- SECTION 4: Related Known Faults (link to Failure Pages) -->
+    <section class="section section-alt" id="related-faults" data-lazy-section>
+        <div class="section-inner fade-right">
+            <h2>Related Known Faults (Not Recalls)</h2>
+            <p>Beyond safety recalls, the X2 has several well-documented engine and component issues. If you're experiencing any of these, see the relevant Failure Page for diagnosis and cost guidance:</p>
+            <ul>
+                <li><a href="/failures/n47-timing-chain">N47 timing chain failure</a> — common on early F39 diesels</li>
+                <li><a href="/failures/egr-valve-cooler">EGR cooler failure</a> (beyond the recall) — pre-2020 F39</li>
+                <li><a href="/failures/water-pump-failure">Water pump &amp; thermostat housing failure</a> — B47/B48 cooling system</li>
+                <li><a href="/failures/battery-parasitic-drain">Battery parasitic drain</a> — comfort access modules on F39</li>
+                <li><a href="/failures/dpf-blockage">DPF blockage</a> — urban-use X2 diesels</li>
+            </ul>
+            <p>If your car is affected by a recall, the fix is free. If it's a non-recall failure, our <a href="/economics/repair-replace-scrap-framework">economics framework</a> will help you decide whether to repair or scrap.</p>
+        </div>
+    </section>
+
+    <!-- VERDICT / DECISION BLOCK -->
+    <section class="section" id="verdict" data-lazy-section>
+        <div class="section-inner fade-up">
+            <h2>Verdict: What You Should Do Next</h2>
+            <p><strong>Check your VIN today.</strong> If your X2 is affected by any of the recalls above, the repair is free and usually takes less than a day. Delaying a safety recall — especially the Takata airbag or EGR cooler — is a genuine risk to you and your passengers.</p>
+            <p>If your car has an issue that's <em>not</em> a recall, use the 70% threshold: if the repair cost is more than 70% of the car's current value, <a href="/tools/repair-vs-replace-calculator">scrap or part-exchange</a> is often the better financial decision. For an X2, that means a repair over roughly £2,500–£5,000 on an older car needs serious thought.</p>
+            <p><a href="/tools/registration-lookup" class="btn">Check Your VIN Now</a></p>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section section-alt" id="faq" data-lazy-section>
+        <div class="section-inner fade-down">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>How do I know if my BMW X2 has a recall?</h3>
+                    <p>Enter your 17-digit VIN into the BMW UK recall checker or use our <a href="/tools/vin-decoder">VIN decoder tool</a>. You'll see all open campaigns instantly.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Does a recall cover an engine replacement?</h3>
+                    <p>No — recalls are for specific safety-related components (EGR cooler, airbag, wiring). An engine failure due to wear is not covered.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Can I drive my X2 if it has an open recall?</h3>
+                    <p>For most recalls, yes — but the Takata airbag and EGR cooler are urgent. Book it in immediately. The dealer will usually provide a courtesy car.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>What is the BMW X2 scrap threshold?</h3>
+                    <p>BMW uses a 70% repair-to-value threshold. If the repair exceeds 70% of the car's market value, scrapping or part-exchanging is recommended. <a href="/economics/repair-replace-scrap-framework">See the framework</a>.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>Are TSBs free like recalls?</h3>
+                    <p>No — Technical Service Bulletins are <em>guidance</em> for dealers. Unless your car is under warranty, TSB repairs are chargeable.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>How much does a BMW X2 EGR cooler replacement cost outside recall?</h3>
+                    <p>If your car isn't covered by the recall, expect £600–£1,200 at an independent specialist. At a main dealer it can exceed £2,000. <a href="/economics/average-replacement-cost-by-model">See full cost guide</a>.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TRUST STRIP + CTA -->
+    <section class="section" id="trust-cta" data-lazy-section>
+        <div class="section-inner fade-left">
+            <div class="trust-strip">
+                <div class="grid">
+                    <div class="item">
+                        <div class="num">9,000+</div>
+                        <div class="label">Real UK Enquiries</div>
+                    </div>
+                    <div class="item">
+                        <div class="num">20+</div>
+                        <div class="label">Vetted Specialists</div>
+                    </div>
+                    <div class="item">
+                        <div class="num">100%</div>
+                        <div class="label">Independent Editorial</div>
+                    </div>
+                    <div class="item">
+                        <div class="num">70%</div>
+                        <div class="label">Scrap Threshold</div>
+                    </div>
+                </div>
+            </div>
+            <div class="cta-block">
+                <h3>Not sure if your X2 is affected?</h3>
+                <p>Use our free Registration Lookup to see all open recalls, TSBs, and known faults for your car.</p>
+                <a href="/tools/registration-lookup" class="btn">Check Your Reg</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER (simplified) -->
+    <footer style="background:var(--bmw-graphite);color:rgba(255,255,255,0.6);padding:2rem 1.5rem;text-align:center;font-size:0.8rem;border-top:1px solid rgba(255,255,255,0.08);">
+        <p>&copy; 2026 BMW Engines. Part of the Engine Finders network. <a href="/about/editorial-standards" style="color:var(--bmw-blue-light);">Editorial Standards</a> · <a href="/about/data-verification" style="color:var(--bmw-blue-light);">Data Verification</a></p>
+    </footer>
+
+    <!-- effects.js -->
+    <script src="/assets/bmw/effects.js" defer></script>
+    <script>
+        // Minimal inline scroll-effect bootstrap
+        document.addEventListener('DOMContentLoaded', function() {
+            const lazySections = document.querySelectorAll('[data-lazy-section]');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('is-visible');
+                    }
+                });
+            }, { threshold: 0.15 });
+            lazySections.forEach(s => observer.observe(s));
+        });
+    </script>
+</body>
+</html>
