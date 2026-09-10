@@ -1,0 +1,8 @@
+# https://bmwengines.uk/robots.txt
+User-agent: *
+Allow: /
+
+# Do not index app APIs or quote form endpoints
+Disallow: /api/
+
+Sitemap: https://bmwengines.uk/sitemap.xml

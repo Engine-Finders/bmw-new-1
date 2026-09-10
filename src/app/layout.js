@@ -8,6 +8,17 @@ export const metadata = {
   metadataBase: new URL("https://bmwengines.uk/"),
   title: "BMW Reliability Guide",
   description: "The UK's Most Trusted BMW Ownership Guide",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
+  },
 };
 
 export default function RootLayout({ children }) {
