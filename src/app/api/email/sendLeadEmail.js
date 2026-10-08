@@ -4,7 +4,7 @@ import { Resend } from "resend";
  * Lead notification email (Resend).
  * Recipient is hardcoded — do not move to env.
  */
-const LEAD_TO_EMAIL = "enginefinders7@gmail.com";
+const LEAD_TO_EMAIL = "ef2crm@gmail.com";
 const LEAD_FROM_EMAIL = "BMW Engines <leads@bmwengines.uk>";
 
 function escapeHtml(value) {
