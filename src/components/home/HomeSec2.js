@@ -261,7 +261,7 @@ function VerdictBadge({ verdict, variant = "plain" }) {
             : "border-[var(--color-border)] bg-[var(--color-surface)] text-[var(--color-text)]"
         }`}
       >
-        <HomeIcon name={iconKey} isDark={isDark} className="h-10 w-10 md:h-8 md:w-8" />
+        <HomeIcon name={iconKey} isDark={isDark} className="h-[38px] w-[38px] md:h-[29px] md:w-[29px]" />
         <span className={colorClass}>{text}</span>
       </span>
     );
@@ -269,7 +269,7 @@ function VerdictBadge({ verdict, variant = "plain" }) {
 
   return (
     <span className={`inline-flex items-center gap-1.5 text-[0.74rem] font-medium leading-tight ${colorClass}`}>
-      <HomeIcon name={iconKey} isDark={isDark} className="h-10 w-10 md:h-8 md:w-8" />
+      <HomeIcon name={iconKey} isDark={isDark} className="h-[38px] w-[38px] md:h-[29px] md:w-[29px]" />
       <span>{text}</span>
     </span>
   );
