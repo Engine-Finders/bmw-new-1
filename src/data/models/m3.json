@@ -64,7 +64,7 @@
               "@type": "ListItem",
               "position": 4,
               "name": "BMW M3 E90/E92/E93 (2007–2013)",
-              "url": "https://bmwengines.uk/m3/e90/"
+              "url": "https://bmwengines.uk/m3/e90-e92-e93"
             },
             {
               "@type": "ListItem",
@@ -76,7 +76,7 @@
               "@type": "ListItem",
               "position": 6,
               "name": "BMW M3 G80 (2020–present)",
-              "url": "https://bmwengines.uk/m3/g80/"
+              "url": "https://bmwengines.uk/m3/g80-g81"
             }
           ]
         },
@@ -88,43 +88,43 @@
               "@type": "ListItem",
               "position": 1,
               "name": "S14B23 Engine",
-              "url": "https://bmwengines.uk/engine/s14b23/"
+              "url": "https://bmwengines.uk/engine/s14"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "S50B30 Engine",
-              "url": "https://bmwengines.uk/engine/s50b30/"
+              "url": "https://bmwengines.uk/engine/s50-s52-s54"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "S52B32 Engine",
-              "url": "https://bmwengines.uk/engine/s52b32/"
+              "url": "https://bmwengines.uk/engine/s50-s52-s54"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "S54B32 Engine",
-              "url": "https://bmwengines.uk/engine/s54b32/"
+              "url": "https://bmwengines.uk/engine/s50-s52-s54"
             },
             {
               "@type": "ListItem",
               "position": 5,
               "name": "S65B40 Engine",
-              "url": "https://bmwengines.uk/engine/s65b40/"
+              "url": "https://bmwengines.uk/engine/s63-s65"
             },
             {
               "@type": "ListItem",
               "position": 6,
               "name": "S55B30 Engine",
-              "url": "https://bmwengines.uk/engine/s55b30/"
+              "url": "https://bmwengines.uk/engine/s55"
             },
             {
               "@type": "ListItem",
               "position": 7,
               "name": "S58B30 Engine",
-              "url": "https://bmwengines.uk/engine/s58b30/"
+              "url": "https://bmwengines.uk/technical/engine-code-decoder"
             }
           ]
         },
@@ -276,7 +276,7 @@
     ],
     "primaryCta": {
       "label": "Explore M3 Engines →",
-      "href": "#"
+      "href": "/m3"
     }
   },
   "ownershipVerdict": {
@@ -448,7 +448,7 @@
     },
     "comparisonLink": {
       "label": "Read the full comparison: BMW M3 F80 vs G80 →",
-      "href": "#"
+      "href": "/compare"
     }
   },
   "engineDatabase": {
@@ -580,7 +580,7 @@
         },
         "link": {
           "label": "Learn more →",
-          "href": "#"
+          "href": "/failures/rod-bearing-wear-s63"
         }
       },
       {
@@ -594,7 +594,7 @@
         },
         "link": {
           "label": "Learn more →",
-          "href": "#"
+          "href": "/failures/s55-crank-hub-failure"
         }
       },
       {
@@ -608,7 +608,7 @@
         },
         "link": {
           "label": "Learn more →",
-          "href": "#"
+          "href": "/failures/rod-bearing-wear-s63"
         }
       },
       {
@@ -622,7 +622,7 @@
         },
         "link": {
           "label": "Learn more →",
-          "href": "#"
+          "href": "/failures/rod-bearing-wear-s63"
         }
       },
       {
@@ -636,7 +636,7 @@
         },
         "link": {
           "label": "Learn more →",
-          "href": "#"
+          "href": "/failures/water-pump-failure"
         }
       },
       {
@@ -650,7 +650,7 @@
         },
         "link": {
           "label": "Learn more →",
-          "href": "#"
+          "href": "/m3/g80-g81"
         }
       }
     ],
@@ -953,11 +953,11 @@
     "paths": [
       {
         "label": "Path 1 - Know your engine? Launch the BMW diagnostic calculator with M3 pre-selected",
-        "href": "/fault-diagnostic-calculator"
+        "href": "/tools/diagnostic-wizard"
       },
       {
         "label": "Path 2 - Not sure which engine you have? We'll identify it first → /fault-diagnostic-calculator (identification is the first step inside the tool)",
-        "href": "#"
+        "href": "/tools/diagnostic-wizard"
       }
     ]
   },
@@ -1044,13 +1044,13 @@
         "icon": "🩺",
         "title": "Diagnose My M3",
         "text": "Symptoms in, verdict out - value-weighted for your generation.",
-        "href": "/fault-diagnostic-calculator"
+        "href": "/tools/diagnostic-wizard"
       },
       {
         "icon": "🤝",
         "title": "Compare UK Specialists",
         "text": "20+ vetted BMW specialists, prices and warranties side-by-side.",
-        "href": "/quotes/?model=m3"
+        "href": "/quote"
       }
     ],
     "footerNote": "(Minimal footer below.)"

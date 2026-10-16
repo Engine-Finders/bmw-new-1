@@ -1,154 +1,254 @@
 {
-  "h2": "<span class=\"block\">BMW Engine History</span><span class=\"block heading-accent\">Six Decades of Engineering</span>",
+  "h2": "BMW Engine History -<br /><span class=\"heading-accent\">Six Decades of Engineering</span>",
   "subHeadline": "From the carburetted M10 to the modular B58, mapped against the models that carried it. The complete BMW engine timeline.",
   "headerImage": {
-    "src": "https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=1400&q=80",
-    "alt": "BMW engine bay"
+    "src": "/home-image/sec-header-light.webp",
+    "alt": "BMW kidney grille and headlights"
+  },
+  "headerImageDark": {
+    "src": "/home-image/sec-header-dark.webp",
+    "alt": "BMW kidney grille and headlights at night"
   },
   "columns": [
-    "ERA",
-    "KEY ENGINES",
-    "ICONIC MODELS"
+    "Era",
+    "Key Engines",
+    "Iconic Models"
   ],
   "eras": [
     {
       "era": "1960s-1970s",
-      "engines": "M10, M30",
-      "engineImage": {
-        "src": "https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=500&q=80",
-        "alt": "Classic BMW engine placeholder"
-      },
-      "models": "2002, E3, E9",
-      "modelImages": [
+      "engines": [
         {
-          "src": "https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=400&q=80",
-          "alt": "Classic BMW coupe placeholder"
+          "name": "M10",
+          "href": "/engine/m10"
         },
         {
-          "src": "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=400&q=80",
-          "alt": "Classic BMW sedan placeholder"
-        },
-        {
-          "src": "https://images.unsplash.com/photo-1549924231-f129b911e442?auto=format&fit=crop&w=400&q=80",
-          "alt": "Classic BMW touring placeholder"
+          "name": "M30",
+          "href": "/engine/m30"
         }
-      ]
+      ],
+      "models": [
+        {
+          "name": "2002",
+          "href": "/2002"
+        },
+        {
+          "name": "E3"
+        },
+        {
+          "name": "E9"
+        }
+      ],
+      "photoHint": "2002",
+      "photoAlt": "BMW 2002"
     },
     {
       "era": "1980s",
-      "engines": "M20, M30B35, S14",
-      "engineImage": {
-        "src": "https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=500&q=80",
-        "alt": "1980s BMW engine placeholder"
-      },
-      "models": "E30, E28, E24",
-      "modelImages": [
+      "engines": [
         {
-          "src": "https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=400&q=80",
-          "alt": "BMW E30 placeholder"
+          "name": "M20",
+          "href": "/engine/m20"
         },
         {
-          "src": "https://images.unsplash.com/photo-1494905998402-395d579af36f?auto=format&fit=crop&w=400&q=80",
-          "alt": "BMW E28 placeholder"
+          "name": "M30B35",
+          "href": "/engine/m30"
         },
         {
-          "src": "https://images.unsplash.com/photo-1502877338535-766e1452684a?auto=format&fit=crop&w=400&q=80",
-          "alt": "BMW E24 placeholder"
+          "name": "S14",
+          "href": "/engine/s14"
         }
-      ]
+      ],
+      "models": [
+        {
+          "name": "E30",
+          "href": "/3-series/e30"
+        },
+        {
+          "name": "E28",
+          "href": "/5-series/e28"
+        },
+        {
+          "name": "E24",
+          "href": "/6-series/e24"
+        }
+      ],
+      "photoHint": "3 Series E30",
+      "photoAlt": "BMW 3 Series E30"
     },
     {
       "era": "1990s",
-      "engines": "M42, M50, M52, S50, S52",
-      "engineImage": {
-        "src": "https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=500&q=80",
-        "alt": "1990s BMW engine placeholder"
-      },
-      "models": "E36, E34, E31",
-      "modelImages": [
+      "engines": [
         {
-          "src": "https://images.unsplash.com/photo-1542362567-b07e54358753?auto=format&fit=crop&w=400&q=80",
-          "alt": "BMW E36 placeholder"
+          "name": "M42",
+          "href": "/engine/m40-m42-m43-m44"
         },
         {
-          "src": "https://images.unsplash.com/photo-1494905998402-395d579af36f?auto=format&fit=crop&w=400&q=80",
-          "alt": "BMW E34 placeholder"
+          "name": "M50",
+          "href": "/engine/m50-m52-m54"
         },
         {
-          "src": "https://images.unsplash.com/photo-1502877338535-766e1452684a?auto=format&fit=crop&w=400&q=80",
-          "alt": "BMW E31 placeholder"
+          "name": "M52",
+          "href": "/engine/m50-m52-m54"
+        },
+        {
+          "name": "S50",
+          "href": "/engine/s50-s52-s54"
+        },
+        {
+          "name": "S52",
+          "href": "/engine/s50-s52-s54"
         }
-      ]
+      ],
+      "models": [
+        {
+          "name": "E36",
+          "href": "/3-series/e36"
+        },
+        {
+          "name": "E34",
+          "href": "/5-series/e34"
+        },
+        {
+          "name": "E31",
+          "href": "/8-series/e31"
+        }
+      ],
+      "photoHint": "3 Series E36",
+      "photoAlt": "BMW 3 Series E36"
     },
     {
       "era": "2000s",
-      "engines": "M54, N52, N54, S54, S62",
-      "engineImage": {
-        "src": "https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=500&q=80",
-        "alt": "2000s BMW engine placeholder"
-      },
-      "models": "E46, E39, E38, E53",
-      "modelImages": [
+      "engines": [
         {
-          "src": "https://images.unsplash.com/photo-1542362567-b07e54358753?auto=format&fit=crop&w=400&q=80",
-          "alt": "BMW E46 placeholder"
+          "name": "M54",
+          "href": "/engine/m50-m52-m54"
         },
         {
-          "src": "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=400&q=80",
-          "alt": "BMW E39 placeholder"
+          "name": "N52",
+          "href": "/engine/n52-n53"
         },
         {
-          "src": "https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?auto=format&fit=crop&w=400&q=80",
-          "alt": "BMW E53 placeholder"
+          "name": "N54",
+          "href": "/engine/n54-n55"
+        },
+        {
+          "name": "S54",
+          "href": "/engine/s50-s52-s54"
+        },
+        {
+          "name": "S62",
+          "href": "/engine/s62"
         }
-      ]
+      ],
+      "models": [
+        {
+          "name": "E46",
+          "href": "/3-series/e46"
+        },
+        {
+          "name": "E39",
+          "href": "/5-series/e39"
+        },
+        {
+          "name": "E38",
+          "href": "/7-series/e38"
+        },
+        {
+          "name": "E53",
+          "href": "/x5/e53"
+        }
+      ],
+      "photoHint": "5 Series E39",
+      "photoAlt": "BMW 5 Series E39"
     },
     {
       "era": "2010s",
-      "engines": "N47, N55, N57, S63, S55",
-      "engineImage": {
-        "src": "https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=500&q=80",
-        "alt": "2010s BMW engine placeholder"
-      },
-      "models": "E90, F10, F30, F15",
-      "modelImages": [
+      "engines": [
         {
-          "src": "https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=400&q=80",
-          "alt": "BMW F30 placeholder"
+          "name": "N47",
+          "href": "/engine/n47"
         },
         {
-          "src": "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=400&q=80",
-          "alt": "BMW F10 placeholder"
+          "name": "N55",
+          "href": "/engine/n54-n55"
         },
         {
-          "src": "https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&w=400&q=80",
-          "alt": "BMW F15 placeholder"
+          "name": "N57",
+          "href": "/engine/n57"
+        },
+        {
+          "name": "S63",
+          "href": "/engine/s63-s65"
+        },
+        {
+          "name": "S55",
+          "href": "/engine/s55"
         }
-      ]
+      ],
+      "models": [
+        {
+          "name": "E90",
+          "href": "/3-series/e90"
+        },
+        {
+          "name": "F10",
+          "href": "/5-series/f10"
+        },
+        {
+          "name": "F30",
+          "href": "/3-series/f30"
+        },
+        {
+          "name": "F15",
+          "href": "/x5/f15"
+        }
+      ],
+      "photoHint": "5 Series F10",
+      "photoAlt": "BMW 5 Series F10"
     },
     {
       "era": "2020s",
-      "engines": "B47, B48, B58, S58",
-      "engineImage": {
-        "src": "https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=500&q=80",
-        "alt": "2020s BMW engine placeholder"
-      },
-      "models": "G20, G30, G05, G07",
-      "modelImages": [
+      "engines": [
         {
-          "src": "https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=400&q=80",
-          "alt": "BMW G20 placeholder"
+          "name": "B47",
+          "href": "/engine/b37-b47"
         },
         {
-          "src": "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=400&q=80",
-          "alt": "BMW G30 placeholder"
+          "name": "B48",
+          "href": "/engine/b38-b48"
         },
         {
-          "src": "https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&w=400&q=80",
-          "alt": "BMW G05 placeholder"
+          "name": "B58",
+          "href": "/engine/b57-b58"
+        },
+        {
+          "name": "S58"
         }
-      ]
+      ],
+      "models": [
+        {
+          "name": "G20",
+          "href": "/3-series/g20"
+        },
+        {
+          "name": "G30",
+          "href": "/5-series/g30"
+        },
+        {
+          "name": "G05",
+          "href": "/x5/g05"
+        },
+        {
+          "name": "G07",
+          "href": "/x7/g07"
+        }
+      ],
+      "photoHint": "X5 G05",
+      "photoAlt": "BMW X5 G05"
     }
   ],
-  "keyTakeaway": "The N47 and N57 defined the diesel era - but the B58 and B47 reversed the reliability perception. The M54 and M57 remain the classic keeper engines; the B58 is the modern gold standard."
+  "keyTakeaway": {
+    "label": "Key Takeaway:",
+    "text": "The N47 and N57 defined the diesel era - but the B58 and B47 reversed the reliability perception. The M54 and M57 remain the classic keeper engines; the B58 is the modern gold standard."
+  }
 }

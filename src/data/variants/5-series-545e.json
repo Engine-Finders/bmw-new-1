@@ -66,7 +66,7 @@
               "@type": "ListItem",
               "position": 1,
               "name": "B58B30C",
-              "url": "https://bmwengines.uk/engine/b58/"
+              "url": "https://bmwengines.uk/engine/b57-b58"
             }
           ]
         },
@@ -276,7 +276,7 @@
         "recommendation": "The B58's cooling system is its most common weak point. The water pump can fail, and the plastic coolant hoses can become brittle. The 545e's hybrid system adds extra cooling complexity, making regular inspection essential. Replace the water pump preventatively at around 60,000–80,000 miles. Check coolant levels regularly and investigate any drop immediately.",
         "failureLink": {
           "label": "Read the full coolant leak guide",
-          "href": "/failures/coolant-leak/"
+          "href": "/failures/m54-cooling-system"
         }
       },
       {
@@ -294,7 +294,7 @@
         "recommendation": "Like all PHEVs, the 545e's 11.6 kWh battery will degrade over time. Battery capacity loss typically becomes noticeable after 5–7 years or 100,000 km. Symptoms include reduced electric range and longer charging times. BMW's battery management system is sophisticated, but regular use and avoiding frequent 100% charges can extend battery life. If you notice significant range loss, have the battery health checked by a BMW specialist. Note that battery replacement is separate from engine replacement - and can be costly.",
         "failureLink": {
           "label": "Read the full hybrid battery failure guide",
-          "href": "/failures/hybrid-battery-failure/"
+          "href": "/failures/battery-parasitic-drain"
         }
       },
       {
@@ -312,7 +312,7 @@
         "recommendation": "The B58's oil filter housing is a known weak point. The housing can crack, causing coolant or oil leaks. Because it sits under the intake manifold, replacement is labour-intensive. Check for oil spots regularly and investigate any drop in fluid levels promptly.",
         "failureLink": {
           "label": "Read the full oil filter housing failure guide",
-          "href": "/failures/oil-filter-housing-failure/"
+          "href": "/failures/n55-valve-cover-oil-leak"
         }
       }
     ]

@@ -82,61 +82,61 @@
               "@type": "ListItem",
               "position": 1,
               "name": "M44B19 Engine",
-              "url": "https://bmwengines.uk/engine/m44b19/"
+              "url": "https://bmwengines.uk/engine/m40-m42-m43-m44"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "M52B20 Engine",
-              "url": "https://bmwengines.uk/engine/m52b20/"
+              "url": "https://bmwengines.uk/engine/m50-m52-m54"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "M54B30 Engine",
-              "url": "https://bmwengines.uk/engine/m54b30/"
+              "url": "https://bmwengines.uk/engine/m50-m52-m54"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "S54B32 Engine",
-              "url": "https://bmwengines.uk/engine/s54b32/"
+              "url": "https://bmwengines.uk/engine/s50-s52-s54"
             },
             {
               "@type": "ListItem",
               "position": 5,
               "name": "S62B50 Engine",
-              "url": "https://bmwengines.uk/engine/s62b50/"
+              "url": "https://bmwengines.uk/engine/s62"
             },
             {
               "@type": "ListItem",
               "position": 6,
               "name": "N52B30 Engine",
-              "url": "https://bmwengines.uk/engine/n52b30/"
+              "url": "https://bmwengines.uk/engine/n52-n53"
             },
             {
               "@type": "ListItem",
               "position": 7,
               "name": "N54B30 Engine",
-              "url": "https://bmwengines.uk/engine/n54b30/"
+              "url": "https://bmwengines.uk/engine/n54-n55"
             },
             {
               "@type": "ListItem",
               "position": 8,
               "name": "N55B30 Engine",
-              "url": "https://bmwengines.uk/engine/n55b30/"
+              "url": "https://bmwengines.uk/engine/n54-n55"
             },
             {
               "@type": "ListItem",
               "position": 9,
               "name": "B48B20 Engine",
-              "url": "https://bmwengines.uk/engine/b48b20/"
+              "url": "https://bmwengines.uk/engine/b38-b48"
             },
             {
               "@type": "ListItem",
               "position": 10,
               "name": "B58B30 Engine",
-              "url": "https://bmwengines.uk/engine/b58b30/"
+              "url": "https://bmwengines.uk/engine/b57-b58"
             }
           ]
         },
@@ -288,7 +288,7 @@
     ],
     "primaryCta": {
       "label": "Explore Z Series Engines →",
-      "href": "#"
+      "href": "/z-series"
     }
   },
   "ownershipVerdict": {
@@ -398,16 +398,16 @@
         }
       },
       {
-  "title": "E36/8 (1998–2002) — Coupé",
-  "badge": "",
-  "meta": "1998–2002 • M52/M54 six-cylinder • S50/S54 six-cylinder",
-  "rating": "★★★☆☆",
-  "verdict": "The Z3 Coupé—the 'Clown Shoe' shooting-brake that divided opinion and now commands a cult following. Powered by six-cylinder engines only: M52B28 (189 hp), M52TUB28 (190 hp), M54B30 (228 hp), S50B32 (317 hp), and S54B32 (321 hp). The M54 3.0i is the sweet spot—strong performance, reliable, and simpler than the M cars. The S54 has rod bearing and VANOS watchpoints. Bodywork is the biggest cost—rear subframe floor failure is a known structural issue.",
-  "cta": {
-    "label": "Explore E36/8 →",
-    "href": "https://bmwengines.uk/z3/e36-8"
-  }
-},
+        "title": "E36/8 (1998–2002) — Coupé",
+        "badge": "",
+        "meta": "1998–2002 • M52/M54 six-cylinder • S50/S54 six-cylinder",
+        "rating": "★★★☆☆",
+        "verdict": "The Z3 Coupé—the 'Clown Shoe' shooting-brake that divided opinion and now commands a cult following. Powered by six-cylinder engines only: M52B28 (189 hp), M52TUB28 (190 hp), M54B30 (228 hp), S50B32 (317 hp), and S54B32 (321 hp). The M54 3.0i is the sweet spot—strong performance, reliable, and simpler than the M cars. The S54 has rod bearing and VANOS watchpoints. Bodywork is the biggest cost—rear subframe floor failure is a known structural issue.",
+        "cta": {
+          "label": "Explore E36/8 →",
+          "href": "https://bmwengines.uk/z3/e36-8"
+        }
+      },
       {
         "title": "Second Generation - Z8 E52 (1999–2003)",
         "badge": "",
@@ -431,16 +431,16 @@
         }
       },
       {
-  "title": "E86 (2006–2008) — Coupé",
-  "badge": "",
-  "meta": "2006–2008 • M54/N52 six-cylinder • S54 six-cylinder",
-  "rating": "★★★☆☆",
-  "verdict": "The Z4 Coupé—a fixed-roof version of the E85 Roadster, produced in limited numbers (approx 17,000). Powered by M54B25 2.5-litre, N52B30 3.0-litre in two states of tune (218 bhp and 258–265 bhp), and the S54 from the E46 M3 in the Z4 M Coupé. The N52 3.0si is the sweet spot—smooth, responsive, and reliable. The S54 is a masterpiece but has VANOS, valve clearance, and rod bearing concerns. A modern classic—values are rising.",
-  "cta": {
-    "label": "Explore E86 →",
-    "href": "https://bmwengines.uk/z4/e86"
-  }
-},
+        "title": "E86 (2006–2008) — Coupé",
+        "badge": "",
+        "meta": "2006–2008 • M54/N52 six-cylinder • S54 six-cylinder",
+        "rating": "★★★☆☆",
+        "verdict": "The Z4 Coupé—a fixed-roof version of the E85 Roadster, produced in limited numbers (approx 17,000). Powered by M54B25 2.5-litre, N52B30 3.0-litre in two states of tune (218 bhp and 258–265 bhp), and the S54 from the E46 M3 in the Z4 M Coupé. The N52 3.0si is the sweet spot—smooth, responsive, and reliable. The S54 is a masterpiece but has VANOS, valve clearance, and rod bearing concerns. A modern classic—values are rising.",
+        "cta": {
+          "label": "Explore E86 →",
+          "href": "https://bmwengines.uk/z4/e86"
+        }
+      },
       {
         "title": "Fourth Generation - Z4 E89 (2009–2016)",
         "badge": "BMW Z4 E89 🔥 Most Enquired - N54/N55 drives volume [BMW-VERIFIED]",
@@ -471,7 +471,7 @@
         "verdict": "",
         "cta": {
           "label": "",
-          "href": "#"
+          "href": "/quote"
         }
       }
     ],
@@ -482,7 +482,7 @@
     },
     "comparisonLink": {
       "label": "Read the full comparison: BMW Z4 E85 vs E89 vs G29 →",
-      "href": "#"
+      "href": "/compare"
     }
   },
   "engineDatabase": {
@@ -662,7 +662,7 @@
         },
         "link": {
           "label": "Learn more →",
-          "href": "#"
+          "href": "/failures/n54-high-pressure-fuel-pump"
         }
       },
       {
@@ -676,7 +676,7 @@
         },
         "link": {
           "label": "Learn more →",
-          "href": "#"
+          "href": "/failures/water-pump-failure"
         }
       },
       {
@@ -690,7 +690,7 @@
         },
         "link": {
           "label": "Learn more →",
-          "href": "#"
+          "href": "/failures/water-pump-failure"
         }
       },
       {
@@ -704,7 +704,7 @@
         },
         "link": {
           "label": "Learn more →",
-          "href": "#"
+          "href": "/failures/rod-bearing-wear-s63"
         }
       },
       {
@@ -718,7 +718,7 @@
         },
         "link": {
           "label": "Learn more →",
-          "href": "#"
+          "href": "/z-series"
         }
       },
       {
@@ -732,7 +732,7 @@
         },
         "link": {
           "label": "Learn more →",
-          "href": "#"
+          "href": "/failures/water-pump-failure"
         }
       }
     ],
@@ -1068,11 +1068,11 @@
     "paths": [
       {
         "label": "Path 1 - Know your engine? Launch the BMW diagnostic calculator with Z4 pre-selected",
-        "href": "/fault-diagnostic-calculator"
+        "href": "/tools/diagnostic-wizard"
       },
       {
         "label": "Path 2 - Not sure which engine you have? We'll identify it first → /fault-diagnostic-calculator (identification is the first step inside the tool)",
-        "href": "#"
+        "href": "/tools/diagnostic-wizard"
       }
     ]
   },
@@ -1159,13 +1159,13 @@
         "icon": "🩺",
         "title": "Diagnose My Z Series",
         "text": "Symptoms in, verdict out - value-weighted for your generation.",
-        "href": "/fault-diagnostic-calculator"
+        "href": "/tools/diagnostic-wizard"
       },
       {
         "icon": "🤝",
         "title": "Compare UK Specialists",
         "text": "20+ vetted BMW specialists, prices and warranties side-by-side.",
-        "href": "/quotes/?model=z-series"
+        "href": "/quote"
       }
     ],
     "footerNote": ""

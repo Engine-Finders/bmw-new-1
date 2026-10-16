@@ -72,7 +72,7 @@
               "@type": "ListItem",
               "position": 1,
               "name": "B48B20A (520e PHEV)",
-              "url": "https://bmwengines.uk/engine/b48/"
+              "url": "https://bmwengines.uk/engine/b38-b48"
             }
           ]
         },
@@ -291,7 +291,7 @@
         "recommendation": "The B48 engine has a well-documented cooling system weakness. Coolant leaks from the water pump, thermostat housing, and coolant hoses are common, with most issues appearing between 40,000 and 80,000 miles. The problem affects components across the cooling system - from the thermostat to hose connections, from the water pump to cylinder head gasket seals. BMW has issued service bulletins for some of these issues. If you notice coolant loss or temperature fluctuations, have the system pressure-tested immediately. Proactive replacement of known weak coolant hoses at 60,000 miles is recommended.",
         "failureLink": {
           "label": "",
-          "href": "/failures/coolant-leak/"
+          "href": "/failures/m54-cooling-system"
         }
       },
       {
@@ -309,7 +309,7 @@
         "recommendation": "Oil leaks from the oil filter housing and valve cover gasket are among the most common issues on B48 engines. The oil filter housing can crack or leak coolant/oil around the 50,000 to 100,000-mile mark. Valve cover gasket leaks can soak spark plugs and ignition coils, creating misfire patterns and check engine lights. Regular inspections can catch these before they become major issues. If you notice oil spots under the car or a burning smell, have it inspected promptly.",
         "failureLink": {
           "label": "",
-          "href": "/failures/oil-filter-housing/"
+          "href": "/failures/n55-valve-cover-oil-leak"
         }
       },
       {
@@ -327,7 +327,7 @@
         "recommendation": "BMW's hybrid batteries can lose capacity over time, and some owners report problems with the charging system where the battery fails to charge fully or takes longer than expected to recharge. The 12.0 kWh battery in the 520e has a gross energy content of 12.0 kWh and can be charged at up to 3.7kW. Battery degradation is gradual - the gasoline engine may run more often at low speeds where it used to stay in electric mode. Regular use and avoiding deep discharges are the best prevention. If the range drops significantly, have the battery health checked.",
         "failureLink": {
           "label": "",
-          "href": "/failures/phev-battery-degradation/"
+          "href": "/failures/battery-parasitic-drain"
         }
       },
       {
@@ -345,7 +345,7 @@
         "recommendation": "The ZF 8HP transmission is widely used across BMW's range and is generally robust, with a typical lifespan of 300,000–400,000 km when properly maintained. However, common issues include harsh or delayed shifting, torque converter shudder, and transmission fluid leaks. The mechatronic unit is a common failure point. Many transmission failures trace back to fluid breakdown rather than catastrophic mechanical failure. BMW's \"lifetime fill\" claim is widely disputed - many specialists recommend transmission fluid changes every 60,000–80,000 miles.",
         "failureLink": {
           "label": "",
-          "href": "/failures/transmission-issues/"
+          "href": "/failures"
         }
       }
     ]

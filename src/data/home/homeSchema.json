@@ -1,0 +1,917 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://bmwengines.uk/#website",
+      "url": "https://bmwengines.uk/",
+      "name": "BMWEngines.uk",
+      "description": "The UK's Most Trusted BMW Ownership Guide. Reliability rankings, real failure data, honest repair-vs-replace economics for every BMW model ever sold in the UK.",
+      "publisher": {
+        "@id": "https://bmwengines.uk/#organization"
+      },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://bmwengines.uk/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://bmwengines.uk/#organization",
+      "name": "BMWEngines.uk",
+      "url": "https://bmwengines.uk/",
+      "logo": "https://bmwengines.uk/images/bmwengines-logo.png",
+      "parentOrganization": {
+        "@type": "Organization",
+        "name": "Engine Finders",
+        "url": "https://enginefinders.co.uk/"
+      },
+      "description": "The UK's definitive BMW engine knowledge base, built from 24,650+ real UK enquiry records. Part of the Engine Finders family, the UK's leading engine replacement marketplace.",
+      "sameAs": [
+        "https://facebook.com/bmwenginesuk",
+        "https://twitter.com/bmwenginesuk",
+        "https://instagram.com/bmwenginesuk"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "customer support",
+        "email": "support@bmwengines.uk",
+        "url": "https://bmwengines.uk/contact"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://bmwengines.uk/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://bmwengines.uk/"
+        }
+      ]
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://bmwengines.uk/#webpage",
+      "url": "https://bmwengines.uk/",
+      "name": "BMW Engines UK — The Complete Ownership Guide",
+      "description": "The UK's Most Trusted BMW Ownership Guide. Reliability rankings, real failure data, honest repair-vs-replace economics for every BMW model ever sold in the UK. Powered by 24,650+ real UK enquiries.",
+      "isPartOf": {
+        "@id": "https://bmwengines.uk/#website"
+      },
+      "about": {
+        "@type": "Thing",
+        "name": "BMW Engine Replacement and Ownership Information"
+      },
+      "author": {
+        "@type": "Organization",
+        "name": "BMWEngines.uk Editorial Team"
+      },
+      "reviewedBy": {
+        "@type": "Organization",
+        "name": "BMWEngines.uk Specialist Network"
+      },
+      "datePublished": "2026-07-06",
+      "dateModified": "2026-07-06",
+      "inLanguage": "en-GB",
+      "breadcrumb": {
+        "@id": "https://bmwengines.uk/#breadcrumb"
+      },
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://bmwengines.uk/images/bmw-homepage-hero.jpg",
+        "caption": "BMW Engines UK — Complete Ownership Guide",
+        "width": 1200,
+        "height": 630
+      }
+    },
+    {
+      "@type": "WebApplication",
+      "@id": "https://bmwengines.uk/#diagnostic-calculator",
+      "name": "BMW Engine Diagnostic Calculator",
+      "description": "Answer a few questions about your BMW symptoms — we'll match you against 15+ known failure patterns, show you the likely diagnosis, OEM part references, and an honest repair vs. replace cost estimate.",
+      "url": "https://bmwengines.uk/#diagnostic-calculator",
+      "applicationCategory": "Automotive Diagnostic Tool",
+      "operatingSystem": "All",
+      "browserRequirements": "Requires JavaScript",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "GBP"
+      },
+      "potentialAction": {
+        "@type": "Action",
+        "name": "Diagnose My BMW Engine",
+        "url": "https://bmwengines.uk/#diagnostic-calculator"
+      }
+    },
+    {
+      "@type": "Service",
+      "@id": "https://bmwengines.uk/#service",
+      "serviceType": "BMW Engine Replacement and Repair",
+      "provider": {
+        "@id": "https://bmwengines.uk/#organization"
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "United Kingdom"
+      },
+      "offers": {
+        "@type": "AggregateOffer",
+        "priceCurrency": "GBP",
+        "lowPrice": "2800",
+        "highPrice": "14000",
+        "offerCount": 7,
+        "availability": "https://schema.org/InStock",
+        "description": "Reconditioned BMW engine supply and fit, priced by engine code. Prices range from £2,800 for B47D20A to £14,000 for S63B44. All engines supplied through EnginesMarket carry a minimum 12-month unlimited-mileage warranty."
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "BMW Engine Replacement Prices",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Product",
+              "name": "N47D20C Reconditioned Engine",
+              "description": "2.0L BMW diesel engine. 1,450 UK enquiries in 2025.",
+              "sku": "N47D20C-RECON",
+              "brand": {
+                "@type": "Brand",
+                "name": "BMW"
+              }
+            },
+            "price": "3200",
+            "priceCurrency": "GBP",
+            "priceSpecification": {
+              "@type": "PriceSpecification",
+              "minPrice": "3200",
+              "maxPrice": "5500",
+              "priceCurrency": "GBP"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Product",
+              "name": "B47D20A Reconditioned Engine",
+              "description": "2.0L BMW diesel engine. 930 UK enquiries in 2025.",
+              "sku": "B47D20A-RECON",
+              "brand": {
+                "@type": "Brand",
+                "name": "BMW"
+              }
+            },
+            "price": "2800",
+            "priceCurrency": "GBP",
+            "priceSpecification": {
+              "@type": "PriceSpecification",
+              "minPrice": "2800",
+              "maxPrice": "4500",
+              "priceCurrency": "GBP"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Product",
+              "name": "N57D30 Reconditioned Engine",
+              "description": "3.0L BMW diesel engine. 830 UK enquiries in 2025.",
+              "sku": "N57D30-RECON",
+              "brand": {
+                "@type": "Brand",
+                "name": "BMW"
+              }
+            },
+            "price": "4500",
+            "priceCurrency": "GBP",
+            "priceSpecification": {
+              "@type": "PriceSpecification",
+              "minPrice": "4500",
+              "maxPrice": "7000",
+              "priceCurrency": "GBP"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Product",
+              "name": "B58B30 Reconditioned Engine",
+              "description": "3.0L BMW petrol engine. 540 UK enquiries in 2025.",
+              "sku": "B58B30-RECON",
+              "brand": {
+                "@type": "Brand",
+                "name": "BMW"
+              }
+            },
+            "price": "3800",
+            "priceCurrency": "GBP",
+            "priceSpecification": {
+              "@type": "PriceSpecification",
+              "minPrice": "3800",
+              "maxPrice": "6000",
+              "priceCurrency": "GBP"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Product",
+              "name": "B57D30 Reconditioned Engine",
+              "description": "3.0L BMW diesel engine. 460 UK enquiries in 2025.",
+              "sku": "B57D30-RECON",
+              "brand": {
+                "@type": "Brand",
+                "name": "BMW"
+              }
+            },
+            "price": "5000",
+            "priceCurrency": "GBP",
+            "priceSpecification": {
+              "@type": "PriceSpecification",
+              "minPrice": "5000",
+              "maxPrice": "8000",
+              "priceCurrency": "GBP"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Product",
+              "name": "N63B44 Reconditioned Engine",
+              "description": "4.4L V8 BMW petrol engine. 440 UK enquiries in 2025.",
+              "sku": "N63B44-RECON",
+              "brand": {
+                "@type": "Brand",
+                "name": "BMW"
+              }
+            },
+            "price": "6000",
+            "priceCurrency": "GBP",
+            "priceSpecification": {
+              "@type": "PriceSpecification",
+              "minPrice": "6000",
+              "maxPrice": "10000",
+              "priceCurrency": "GBP"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Product",
+              "name": "S63B44 Reconditioned Engine",
+              "description": "4.4L V8 BMW M engine. 410 UK enquiries in 2025.",
+              "sku": "S63B44-RECON",
+              "brand": {
+                "@type": "Brand",
+                "name": "BMW"
+              }
+            },
+            "price": "9000",
+            "priceCurrency": "GBP",
+            "priceSpecification": {
+              "@type": "PriceSpecification",
+              "minPrice": "9000",
+              "maxPrice": "14000",
+              "priceCurrency": "GBP"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@type": "CollectionPage",
+      "@id": "https://bmwengines.uk/#models",
+      "name": "BMW Model Finder",
+      "description": "Find your BMW model to explore reliability, common faults and real running costs.",
+      "about": {
+        "@type": "Thing",
+        "name": "BMW Models"
+      },
+      "hasPart": {
+        "@type": "ItemList",
+        "itemListElement": [
+          {
+            "@type": "Thing",
+            "name": "BMW 1 Series",
+            "position": 1
+          },
+          {
+            "@type": "Thing",
+            "name": "BMW 2 Series",
+            "position": 2
+          },
+          {
+            "@type": "Thing",
+            "name": "BMW 3 Series",
+            "position": 3
+          },
+          {
+            "@type": "Thing",
+            "name": "BMW 4 Series",
+            "position": 4
+          },
+          {
+            "@type": "Thing",
+            "name": "BMW 5 Series",
+            "position": 5
+          },
+          {
+            "@type": "Thing",
+            "name": "BMW 6 Series",
+            "position": 6
+          },
+          {
+            "@type": "Thing",
+            "name": "BMW 7 Series",
+            "position": 7
+          },
+          {
+            "@type": "Thing",
+            "name": "BMW 8 Series",
+            "position": 8
+          },
+          {
+            "@type": "Thing",
+            "name": "BMW Z Series",
+            "position": 9
+          },
+          {
+            "@type": "Thing",
+            "name": "BMW i Series",
+            "position": 10
+          },
+          {
+            "@type": "Thing",
+            "name": "BMW X1",
+            "position": 11
+          },
+          {
+            "@type": "Thing",
+            "name": "BMW X2",
+            "position": 12
+          },
+          {
+            "@type": "Thing",
+            "name": "BMW X3",
+            "position": 13
+          },
+          {
+            "@type": "Thing",
+            "name": "BMW X4",
+            "position": 14
+          },
+          {
+            "@type": "Thing",
+            "name": "BMW X5",
+            "position": 15
+          },
+          {
+            "@type": "Thing",
+            "name": "BMW X6",
+            "position": 16
+          },
+          {
+            "@type": "Thing",
+            "name": "BMW X7",
+            "position": 17
+          },
+          {
+            "@type": "Thing",
+            "name": "BMW XM",
+            "position": 18
+          },
+          {
+            "@type": "Thing",
+            "name": "BMW M2",
+            "position": 19
+          },
+          {
+            "@type": "Thing",
+            "name": "BMW M3",
+            "position": 20
+          },
+          {
+            "@type": "Thing",
+            "name": "BMW M4",
+            "position": 21
+          },
+          {
+            "@type": "Thing",
+            "name": "BMW M5",
+            "position": 22
+          },
+          {
+            "@type": "Thing",
+            "name": "BMW M6",
+            "position": 23
+          },
+          {
+            "@type": "Thing",
+            "name": "BMW M8",
+            "position": 24
+          },
+          {
+            "@type": "Thing",
+            "name": "BMW 2002",
+            "position": 25
+          },
+          {
+            "@type": "Thing",
+            "name": "BMW M1",
+            "position": 26
+          }
+        ]
+      }
+    },
+    {
+      "@type": "ItemList",
+      "@id": "https://bmwengines.uk/#engine-families",
+      "name": "BMW Engine Families",
+      "description": "The engines BMW owners search for most, ranked by real 2025 enquiry volume.",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "Product",
+            "name": "BMW N47 Engine",
+            "description": "2.0L Diesel. 2007–2015. 1,450 enquiries in 2025. Known for timing chain stretch risk.",
+            "sku": "BMW-N47",
+            "brand": {
+              "@type": "Brand",
+              "name": "BMW"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "Product",
+            "name": "BMW B47D20A Engine",
+            "description": "2.0L Diesel. 2015–Present. 930 enquiries in 2025. Revised front-chain architecture. Improved reliability.",
+            "sku": "BMW-B47D20A",
+            "brand": {
+              "@type": "Brand",
+              "name": "BMW"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@type": "Product",
+            "name": "BMW N57D30 Engine",
+            "description": "3.0L Diesel. 2008–2018. 830 enquiries in 2025. Rear-chain complexity. Well-maintained examples are fine.",
+            "sku": "BMW-N57D30",
+            "brand": {
+              "@type": "Brand",
+              "name": "BMW"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@type": "Product",
+            "name": "BMW B58B30 Engine",
+            "description": "3.0L Petrol. 2015–Present. 540 enquiries in 2025. Modern straight-six gold standard. Most reliable modern BMW engine.",
+            "sku": "BMW-B58B30",
+            "brand": {
+              "@type": "Brand",
+              "name": "BMW"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "item": {
+            "@type": "Product",
+            "name": "BMW B57D30 Engine",
+            "description": "3.0L Diesel. 2015–Present. 460 enquiries in 2025. Robust modern diesel. Minor cooling issues only.",
+            "sku": "BMW-B57D30",
+            "brand": {
+              "@type": "Brand",
+              "name": "BMW"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "item": {
+            "@type": "Product",
+            "name": "BMW N63B44 Engine",
+            "description": "4.4L V8 Petrol. 2008–Present. 440 enquiries in 2025. Hot-vee architecture. High ownership cost.",
+            "sku": "BMW-N63B44",
+            "brand": {
+              "@type": "Brand",
+              "name": "BMW"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 7,
+          "item": {
+            "@type": "Product",
+            "name": "BMW S63B44 Engine",
+            "description": "4.4L V8 M Engine. 2010–Present. 410 enquiries in 2025. High-performance M-division V8. Similar to N63.",
+            "sku": "BMW-S63B44",
+            "brand": {
+              "@type": "Brand",
+              "name": "BMW"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 8,
+          "item": {
+            "@type": "Product",
+            "name": "BMW N55B30 Engine",
+            "description": "3.0L Petrol. 2010–2019. The bridge engine between N54 and B58. Reliable and well-understood.",
+            "sku": "BMW-N55B30",
+            "brand": {
+              "@type": "Brand",
+              "name": "BMW"
+            }
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 9,
+          "item": {
+            "@type": "Product",
+            "name": "BMW M54 Engine",
+            "description": "3.0L Petrol. 2000–2006. Classic icon. Bulletproof E46-era straight-six.",
+            "sku": "BMW-M54",
+            "brand": {
+              "@type": "Brand",
+              "name": "BMW"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "@type": "ItemList",
+      "@id": "https://bmwengines.uk/#ownership-rankings",
+      "name": "BMW Ownership Rankings",
+      "description": "The verdicts BMW owners actually want — backed by real UK enquiry and failure data.",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "Thing",
+            "name": "Most Reliable Engine",
+            "description": "B58B30 — 540 enquiries in 2025, mostly due-diligence not failure."
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "Thing",
+            "name": "Most Reliable Model (Modern)",
+            "description": "3 Series G20 — 190 enquiries in 2025, predominantly pre-purchase research."
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@type": "Thing",
+            "name": "Best Used Buy",
+            "description": "F30 LCI (2016+) with B47D20A — post-chain-revision, modern electronics, depreciated values."
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@type": "Thing",
+            "name": "Most Expensive Failure",
+            "description": "N63B44 Valve Stem Seals — £3,000–£6,000 repair or £6,000–£10,000 replacement."
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "item": {
+            "@type": "Thing",
+            "name": "Safest BMW to Buy Used",
+            "description": "5 Series G30 (2017–2023) — £14,000–£30,000 value against £2,800–£8,000 recon cost."
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "item": {
+            "@type": "Thing",
+            "name": "Highest Risk Purchase",
+            "description": "E90 N47D20C (pre-2013, no chain history) — £2,500–£7,500 value against £3,200–£5,500 recon cost."
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 7,
+          "item": {
+            "@type": "Thing",
+            "name": "Best Family BMW",
+            "description": "X5 G05 (2018–present) — B57/B58 reliability, 650L boot, 7-seat option."
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 8,
+          "item": {
+            "@type": "Thing",
+            "name": "Best Long-Term Keeper",
+            "description": "E46 330i (M54) — bulletproof naturally-aspirated straight-six."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "ItemList",
+      "@id": "https://bmwengines.uk/#failure-database",
+      "name": "BMW Failure Database",
+      "description": "Permanent, categorised reference for BMW engine failures and common warning signs.",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "Thing",
+            "name": "N47 Timing Chain Failure",
+            "description": "1,450 enquiries in 2025. Cold-start rattle is the early warning. £3,200–£5,500 recon."
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "Thing",
+            "name": "B58 Coolant Leaks",
+            "description": "540 enquiries in 2025. Expansion tank, water pump, plastic fittings. £400–£800 repair."
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@type": "Thing",
+            "name": "N57 Turbocharger & Timing Chain Wear",
+            "description": "830 enquiries in 2025. £1,200–£2,500 repair; £4,500–£7,000 recon."
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@type": "Thing",
+            "name": "N63 Valve Stem Seals",
+            "description": "440 enquiries in 2025. Hot-vee architecture. £3,000–£6,000 repair; £6,000–£10,000 recon."
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "item": {
+            "@type": "Thing",
+            "name": "S63 Timing Chain Tensioner",
+            "description": "410 enquiries in 2025. £9,000–£14,000 recon. M-division V8 complexity."
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "item": {
+            "@type": "Thing",
+            "name": "Cold-Start Rattle",
+            "description": "N47's signature symptom. 1-2 seconds of chain noise on start-up."
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 7,
+          "item": {
+            "@type": "Thing",
+            "name": "Loss of Power / Limp Mode",
+            "description": "Turbo failure, EGR clogging, DPF blockage, or N54/N55 HPFP failure."
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 8,
+          "item": {
+            "@type": "Thing",
+            "name": "Coolant Loss (No Visible Leak)",
+            "description": "B58/N63 expansion tank or water pump failure. £400–£800 repair."
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 9,
+          "item": {
+            "@type": "Thing",
+            "name": "Blue Smoke on Start-Up",
+            "description": "N63 valve stem seal failure — oil seeping past seals into combustion chamber."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "ItemList",
+      "@id": "https://bmwengines.uk/#knowledge-centres",
+      "name": "BMW Knowledge Centres",
+      "description": "Deep, permanent reference hubs for the engines BMW owners research most.",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "Thing",
+            "name": "N47 Knowledge Centre",
+            "description": "Every variant, every failure, every generation fitted to. 1,450 enquiries in 2025."
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "Thing",
+            "name": "B58 Knowledge Centre",
+            "description": "Modern straight-six full ownership profile. 540 enquiries in 2025."
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@type": "Thing",
+            "name": "N57 Knowledge Centre",
+            "description": "3.0 diesel complete guide. 830 enquiries in 2025."
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@type": "Thing",
+            "name": "B47 Knowledge Centre",
+            "description": "Post-chain-revision diesel. 930 enquiries in 2025."
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "item": {
+            "@type": "Thing",
+            "name": "N63/S63 Knowledge Centre",
+            "description": "Hot-vee V8 full story. 440 enquiries (N63) + 410 (S63) in 2025."
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "item": {
+            "@type": "Thing",
+            "name": "B57 Knowledge Centre",
+            "description": "B57 3.0 diesel full profile. Robust, well-supported."
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 7,
+          "item": {
+            "@type": "Thing",
+            "name": "M54 Classic Engine Guide",
+            "description": "Bulletproof E46-era straight-six. The classic keeper engine."
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 8,
+          "item": {
+            "@type": "Thing",
+            "name": "Timing Chain Knowledge Centre",
+            "description": "Complete guide to BMW timing chain failures. #1 failure category in 2025."
+          }
+        }
+      ]
+    },
+    {
+      "@type": "Dataset",
+      "@id": "https://bmwengines.uk/#dataset",
+      "name": "BMW UK Engine Enquiry Data 2025",
+      "description": "Proprietary UK enquiry volumes and demand trends for BMW engines, sourced from BMWEngines.uk's specialist marketplace activity.",
+      "creator": {
+        "@id": "https://bmwengines.uk/#organization"
+      },
+      "temporalCoverage": "2025",
+      "spatialCoverage": "United Kingdom",
+      "keywords": [
+        "BMW engine enquiries",
+        "BMW replacement costs",
+        "BMW reliability data"
+      ],
+      "url": "https://bmwengines.uk/market-intelligence"
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://bmwengines.uk/#faq",
+      "description": "Frequently asked questions about BMW engine replacement, reliability, and ownership costs.",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How much does a BMW engine replacement cost in the UK?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A reconditioned N47D20C (the 320d engine) runs £3,200–£5,500 supply-only, while a reconditioned S63B44 (M5/M6/X5M/X6M) runs £9,000–£14,000. Fitted costs add 10–24 labour hours depending on the engine. Use our diagnostic calculator for a personalised figure."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which BMW engine is the most reliable?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The B58B30 is the most dependable modern BMW engine in our dataset — just 540 enquiries in 2025, mostly due-diligence not failures. From the older era, the M57D30 turbodiesel has the same bulletproof reputation. Both share one thing: regular oil changes are non-negotiable."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the most common BMW engine failure?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The N47 timing chain stretch is our #1 enquiry driver — 1,450 enquiries in 2025. Cold-start rattle from the rear of the engine is the early warning; ignored, chain slip means a full engine replacement at £3,200–£5,500 recon."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is the BMW 3 Series reliable?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It depends entirely on the generation. The N47 era (E90/pre-2016 F30) has a reputation for timing chain issues — but a 2016+ F30 LCI with the B47 diesel is genuinely reliable. The G20 with the B58 is the safest 3 Series ever made."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which BMW engine should I avoid?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "No engine outright — but a pre-2016 N47D20C without a documented timing-chain replacement is the one purchase we consistently advise against. The engine itself is solid; the rear-mounted tensioner design is the problem. The N63's hot-vee architecture is also a high-cost risk."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I know if my BMW timing chain is worn?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Cold-start rattle for 1–2 seconds is the classic early warning. On the N47 and N57, listen for a metallic rattle from the rear of the engine on startup. On the B58, coolant loss from the expansion tank is the early signal. Caught early, it's a repair; ignored, it's a £3,200–£5,500 engine."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is it worth replacing a BMW engine?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Depends entirely on the car's value. Against a £35,000 G20, a £5,000 B58 recon is just 14% of the car's value — safe. Against a £4,500 E90, a £4,000 N47 recon is 89% — walk away. Our 70% BMW threshold is the line."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long do BMW engines last?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A well-maintained BMW diesel (M57, N57, B47, B57) can exceed 200,000 miles. The B58 petrol is also proving durable — with proper servicing, 150,000+ miles is realistic. The N47's chain is the limiting factor, not the engine itself."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which BMW generation should I buy?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "2016+ F30 LCI with the B47 diesel or B48 petrol. You get the facelift architecture, revised chain hardware, and electronics update — plus depreciation has already done most of its work. For petrol performance, a G20 M340i is the sweet spot."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I find my BMW engine code?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Listed on the VIN plate and in the vehicle documentation; block stamping is visible from below on most N47/B47 units, and on the cylinder head on N52/B58 engines. Tell us your model year and variant and we'll identify it."
+          }
+        }
+      ]
+    }
+  ]
+}

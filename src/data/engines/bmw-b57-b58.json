@@ -52,91 +52,91 @@
               "@type": "ListItem",
               "position": 1,
               "name": "BMW 1 Series F20/F21 125d/130i",
-              "url": "https://bmwengines.uk/models/1-series/f20/"
+              "url": "https://bmwengines.uk/1-series/f20"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "BMW 2 Series F22/F23 M240i/230i/225d",
-              "url": "https://bmwengines.uk/models/2-series/f22/"
+              "url": "https://bmwengines.uk/2-series/f22"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "BMW 2 Series G42 M240i",
-              "url": "https://bmwengines.uk/models/2-series/g42/"
+              "url": "https://bmwengines.uk/2-series/g42"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "BMW 3 Series G20/G21 330i/M340i/320d/330d",
-              "url": "https://bmwengines.uk/models/3-series/g20/"
+              "url": "https://bmwengines.uk/3-series/g20"
             },
             {
               "@type": "ListItem",
               "position": 5,
               "name": "BMW 4 Series G22/G23 430i/M440i/420d/430d",
-              "url": "https://bmwengines.uk/models/4-series/g22/"
+              "url": "https://bmwengines.uk/4-series/g22"
             },
             {
               "@type": "ListItem",
               "position": 6,
               "name": "BMW 5 Series G30/G31 530i/540i/520d/530d",
-              "url": "https://bmwengines.uk/models/5-series/g30/"
+              "url": "https://bmwengines.uk/5-series/g30"
             },
             {
               "@type": "ListItem",
               "position": 7,
               "name": "BMW 6 Series G32 630i/640i/630d",
-              "url": "https://bmwengines.uk/models/6-series/g32/"
+              "url": "https://bmwengines.uk/6-series/g32"
             },
             {
               "@type": "ListItem",
               "position": 8,
               "name": "BMW 7 Series G11/G12 730i/740i/730d/740d",
-              "url": "https://bmwengines.uk/models/7-series/g11/"
+              "url": "https://bmwengines.uk/7-series/g11-g12"
             },
             {
               "@type": "ListItem",
               "position": 9,
               "name": "BMW 8 Series G15/G16 840i/840d",
-              "url": "https://bmwengines.uk/models/8-series/g15/"
+              "url": "https://bmwengines.uk/8-series/g15"
             },
             {
               "@type": "ListItem",
               "position": 10,
               "name": "BMW X3 G01 xDrive30i/M40i/xDrive20d/xDrive30d",
-              "url": "https://bmwengines.uk/models/x3/g01/"
+              "url": "https://bmwengines.uk/x3/g01"
             },
             {
               "@type": "ListItem",
               "position": 11,
               "name": "BMW X4 G02 xDrive30i/M40i/xDrive20d/xDrive30d",
-              "url": "https://bmwengines.uk/models/x4/g02/"
+              "url": "https://bmwengines.uk/x4/g02"
             },
             {
               "@type": "ListItem",
               "position": 12,
               "name": "BMW X5 G05 xDrive40i/xDrive30d/xDrive40d",
-              "url": "https://bmwengines.uk/models/x5/g05/"
+              "url": "https://bmwengines.uk/x5/g05"
             },
             {
               "@type": "ListItem",
               "position": 13,
               "name": "BMW X6 G06 xDrive40i/xDrive30d/xDrive40d",
-              "url": "https://bmwengines.uk/models/x6/g06/"
+              "url": "https://bmwengines.uk/x6/g06"
             },
             {
               "@type": "ListItem",
               "position": 14,
               "name": "BMW X7 G07 xDrive40i/xDrive30d/xDrive40d",
-              "url": "https://bmwengines.uk/models/x7/g07/"
+              "url": "https://bmwengines.uk/x7/g07"
             },
             {
               "@type": "ListItem",
               "position": 15,
               "name": "BMW Z4 G29 sDrive20i/M40i",
-              "url": "https://bmwengines.uk/models/z4/g29/"
+              "url": "https://bmwengines.uk/z4/g29"
             }
           ]
         },
@@ -279,7 +279,7 @@
     ],
     "primaryCta": {
       "label": "Compare B57/B58 Engine Prices →",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "atAGlance": {
@@ -490,7 +490,7 @@
     "sharedCostNote": "",
     "cta": {
       "label": "→ Compare BMW B57/B58 engine prices from UK specialists",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "faq": {
@@ -527,7 +527,7 @@
     "finalCta": "Find the best BMW B57 or B58 engine replacement UK drivers rely on. Compare real prices from trusted specialists on EnginesMarket today and get back on the road with confidence.",
     "ctaButton": {
       "label": "Compare BMW B57/B58 Engine Prices Now →",
-      "href": "#"
+      "href": "/quote"
     }
   }
 }

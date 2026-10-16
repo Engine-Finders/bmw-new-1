@@ -78,19 +78,19 @@
               "@type": "ListItem",
               "position": 1,
               "name": "S63B44A",
-              "url": "https://bmwengines.uk/engine/s63b44a/"
+              "url": "https://bmwengines.uk/engine/s63-s65"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "S63B44T2",
-              "url": "https://bmwengines.uk/engine/s63b44t2/"
+              "url": "https://bmwengines.uk/engine/s63-s65"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "S63B44T4",
-              "url": "https://bmwengines.uk/engine/s63b44t4/"
+              "url": "https://bmwengines.uk/engine/s63-s65"
             }
           ]
         },
@@ -325,7 +325,7 @@
         "recommendation": "The S63 engine runs very hot (110°C), causing valve stem seals to harden and fail over time. This is one of the most common issues on early X5 M models. Symptoms include blue smoke on start‑up after idling and oil consumption that can reach 1 litre per 300–500 miles. BMW has a specific oil consumption test procedure (SI B11 03 13) to diagnose the issue. The fix is labour‑intensive - the cylinder heads must be removed, making this a £2,500–£5,000 job. However, if caught early, the engine itself is otherwise durable. Regular oil level checks are essential.",
         "failureLink": {
           "label": "",
-          "href": "/failures/valve-stem-seal-failure/"
+          "href": "/failures/valve-stem-seal-wear"
         }
       },
       {
@@ -343,7 +343,7 @@
         "recommendation": "The timing chain tensioner is one of the most critical issues with the S63 engine. BMW began redesigning the chain tensioner in 2013 to address the problem. If the tensioner fails, the chain can slip, causing the camshafts' timing to deviate from the crankshaft - leading to piston‑to‑valve contact in this interference engine. A £1,500–£3,500 preventative tensioner replacement is far cheaper than a £4,500–£8,500 engine replacement. At the first sign of rattling, have the timing system inspected immediately.",
         "failureLink": {
           "label": "",
-          "href": "/failures/timing-chain-failure/"
+          "href": "/failures/timing-chain-diagnosis-guide"
         }
       },
       {
@@ -361,7 +361,7 @@
         "recommendation": "Oil leaks are one of the most prevalent issues reported by X5 M owners. The S63 engine is prone to leaks from the rear main seal (between the engine and transmission) and the valve cover gaskets. A rear main seal leak requires transmission removal - a labour‑intensive job. If the valve cover gaskets leak, oil can drip onto the hot exhaust manifolds, causing a burning smell and potential fire risk. If you notice oil spots under your X5 M or a burning oil smell, investigate immediately.",
         "failureLink": {
           "label": "",
-          "href": "/failures/oil-leak/"
+          "href": "/failures/n55-valve-cover-oil-leak"
         }
       },
       {
@@ -379,7 +379,7 @@
         "recommendation": "The S63's hot‑vee design places the turbochargers in the V of the engine, creating significant heat‑soak issues. Coolant hoses and plastic fittings fail relatively quickly due to the extreme under‑bonnet temperatures. The water pump and thermostat are also known failure points. If the engine overheats, the aluminium block can warp, leading to a very expensive repair. Regular coolant changes and inspections of the cooling system are essential. If you notice any overheating, stop driving immediately.",
         "failureLink": {
           "label": "",
-          "href": "/failures/overheating/"
+          "href": "/failures/m54-cooling-system"
         }
       },
       {
@@ -397,7 +397,7 @@
         "recommendation": "Fuel injector issues are common on the S63 engine. The high‑pressure injectors can fail, causing engine misfires, rough running, and reduced engine output. A decrease in fuel efficiency may indicate injector problems. When replacing injectors, it's strongly recommended to replace all eight and have the DME calibrated. Ignoring injector issues can lead to catalytic converter damage - a very expensive repair.",
         "failureLink": {
           "label": "",
-          "href": "/failures/fuel-injector-failure/"
+          "href": "/failures/n57-injector-seal"
         }
       }
     ]

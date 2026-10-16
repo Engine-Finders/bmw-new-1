@@ -52,37 +52,37 @@
               "@type": "ListItem",
               "position": 1,
               "name": "BMW 02 Series (1602, 2002)",
-              "url": "https://bmwengines.uk/models/2002/"
+              "url": "https://bmwengines.uk/2002"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "BMW 3 Series E21 316/318/320",
-              "url": "https://bmwengines.uk/models/e21/"
+              "url": "https://bmwengines.uk/3-series/e21"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "BMW 3 Series E30 316/318i",
-              "url": "https://bmwengines.uk/models/e30-316/"
+              "url": "https://bmwengines.uk/3-series/e30"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "BMW 5 Series E12 518/520",
-              "url": "https://bmwengines.uk/models/e12/"
+              "url": "https://bmwengines.uk/5-series/e12"
             },
             {
               "@type": "ListItem",
               "position": 5,
               "name": "BMW 5 Series E28 518/518i",
-              "url": "https://bmwengines.uk/models/e28-518/"
+              "url": "https://bmwengines.uk/5-series/e28"
             },
             {
               "@type": "ListItem",
               "position": 6,
               "name": "BMW Neue Klasse (1500, 1600, 1800, 2000)",
-              "url": "https://bmwengines.uk/models/neue-klasse/"
+              "url": "https://bmwengines.uk/"
             }
           ]
         },
@@ -225,7 +225,7 @@
     ],
     "primaryCta": {
       "label": "Compare M10 Engine Prices →",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "atAGlance": {
@@ -326,7 +326,7 @@
     "sharedCostNote": "The M10 was sold to other manufacturers – ensure you're buying the correct version for your application (mounts, flywheel pattern, sump configuration vary).",
     "cta": {
       "label": "",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "faq": {
@@ -363,7 +363,7 @@
     "finalCta": "",
     "ctaButton": {
       "label": "",
-      "href": "#"
+      "href": "/quote"
     }
   }
 }

@@ -145,7 +145,7 @@
         "recommendation": "The N57's timing chain is a known weak point. While less notorious than the four-cylinder <a href='https://bmwengines.uk/engine/n47'>N47</a>, chain stretch and tensioner failure can occur, particularly on higher-mileage examples. A rattling or clattering noise from the engine, especially during startup, can indicate a loose or worn timing chain. Over time, the chain can stretch due to wear and tear, affecting the engine's timing. A cold-start rattle is the early warning sign -ignore it and you risk piston-valve contact and a full engine replacement. Regular oil changes with the correct BMW-approved oil are the best prevention. At the first sign of rattle, get it inspected immediately.",
         "failureLink": {
           "label": "",
-          "href": "/failures/n57-timing-chain/"
+          "href": "/failures/timing-chain-diagnosis-guide"
         }
       },
       {
@@ -163,7 +163,7 @@
         "recommendation": "DPF clogging is one of the most common issues on both N57 and B57 engines, particularly on cars driven mostly in the city. A 2020 BMW X4 diesel owner reported DPF issues including warning lights, reduced power, and smoke during acceleration, with failed regeneration and emissions problems. The suspected cause was a faulty exhaust back pressure sensor, which can prevent proper DPF regeneration. If you see a DPF warning light, take the car for a sustained motorway run at 2,000–2,500 rpm. If the light persists, have the DPF inspected. Regular motorway driving and using premium diesel can help keep the DPF healthy.",
         "failureLink": {
           "label": "",
-          "href": "/failures/dpf-failure/"
+          "href": "/failures/dpf-blockage"
         }
       },
       {
@@ -181,7 +181,7 @@
         "recommendation": "EGR valve and cooler failures are common on both N57 and B57 engines. Carbon accumulates in the intake, and EGR flow becomes inconsistent. On short-distance driven cars, the EGR system is particularly prone to clogging. BMW has issued recalls for EGR cooler failures on some diesel applications. If you notice a loss of power or a warning light, have the EGR system inspected promptly.",
         "failureLink": {
           "label": "",
-          "href": "/failures/egr-cooler-failure/"
+          "href": "/failures/egr-valve-cooler"
         }
       },
       {
@@ -199,7 +199,7 @@
         "recommendation": "Oil leaks are among the most frequently reported issues on both N57 and B57 engines. Leaks commonly occur around the oil filter housing and the turbocharger. If you notice oil spots under the car or a burning smell, have it inspected promptly. Regular inspections can catch these before they become major issues.",
         "failureLink": {
           "label": "",
-          "href": "/failures/oil-leak/"
+          "href": "/failures/n55-valve-cover-oil-leak"
         }
       },
       {
@@ -217,7 +217,7 @@
         "recommendation": "X4 30d models can experience boost-related issues. Common triggers include turbocharger underboost or actuator failure, faulty fuel injectors, and ECU miscommunication. High fuel consumption can also be linked to turbocharger or intercooler leaks. If you notice a whistling sound or loss of power, have the boost system inspected immediately.",
         "failureLink": {
           "label": "",
-          "href": "/failures/boost-leak/"
+          "href": "/failures"
         }
       }
     ]

@@ -108,13 +108,13 @@
               "@type": "ListItem",
               "position": 4,
               "name": "B57D30B",
-              "url": "https://bmwengines.uk/engine/b57/"
+              "url": "https://bmwengines.uk/engine/b57-b58"
             },
             {
               "@type": "ListItem",
               "position": 5,
               "name": "B57D30B (MHEV)",
-              "url": "https://bmwengines.uk/engine/b57/"
+              "url": "https://bmwengines.uk/engine/b57-b58"
             }
           ]
         },
@@ -365,7 +365,7 @@
         "recommendation": "The N57 engine is prone to excessive timing chain wear which can lead to premature failure. Symptoms can include a rattle on start-up or a change in engine note where the chain is hitting on the guides - sometimes they give you no warning at all. A cold-start rattle is the early warning sign - ignore it and you risk piston-valve contact and a full engine replacement. Regular oil changes with the correct BMW-approved oil are the best prevention. At the first sign of rattle, get it inspected immediately. One X6 owner reported having to do the timing chain immediately after purchase at 152,000 miles.",
         "failureLink": {
           "label": "",
-          "href": "/failures/timing-chain-stretch/"
+          "href": "/failures/timing-chain-diagnosis-guide"
         }
       },
       {
@@ -383,7 +383,7 @@
         "recommendation": "Failure of piezo injectors is a well-documented issue on N57 engines. One X6 xDrive40d owner reported a catastrophic failure where the second cylinder injector failed, destroying the engine - covered by warranty at a cost of approximately £18,000. If you notice rough idling, misfires, or loss of power, have the injectors inspected immediately. Replacing a faulty injector before it fails completely can prevent engine destruction. Regular fuel filter changes and using high-quality diesel are the best prevention.",
         "failureLink": {
           "label": "",
-          "href": "/failures/fuel-injector-failure/"
+          "href": "/failures/n57-injector-seal"
         }
       },
       {
@@ -419,7 +419,7 @@
         "recommendation": "DPF clogging is a common issue on diesel X6 models, particularly on cars driven mostly in the city. One owner reported a DPF blockage causing an underboost code and the DPF being blocked, requiring a long drive to attempt regeneration. The EGR system can also fail, with the bypass flap bolts on the EGR module potentially loosening due to manufacturing defects. If you see a DPF warning light, take the car for a sustained motorway run at 2,000–2,500 rpm. If the light persists, have the DPF inspected. Regular motorway driving and using premium diesel can help keep the DPF healthy.",
         "failureLink": {
           "label": "",
-          "href": "/failures/dpf-failure/"
+          "href": "/failures/dpf-blockage"
         }
       },
       {
@@ -437,7 +437,7 @@
         "recommendation": "Cranking of the connecting rod bushings is a known problem on the N57 engine. If you hear a knocking noise from the bottom end, stop driving immediately and have it inspected. Regular oil changes with BMW-approved oil are the key prevention - many specialists recommend 8,000-mile intervals.",
         "failureLink": {
           "label": "",
-          "href": "/failures/bottom-end-bearing-failure/"
+          "href": "/failures"
         }
       },
       {
@@ -455,7 +455,7 @@
         "recommendation": "The ZF 8HP transmission is widely used across BMW's range and is generally robust. However, common issues include worn clutches, defective solenoid valves in the transmission control unit and contaminated transmission fluid. Similar problems occur in the 30d and 40d diesel variants, but usually only after 100,000–150,000 kilometres. BMW's \"lifetime fill\" claim is widely disputed - many specialists recommend transmission fluid changes every 60,000–80,000 miles.",
         "failureLink": {
           "label": "",
-          "href": "/failures/transmission-issues/"
+          "href": "/failures"
         }
       }
     ]

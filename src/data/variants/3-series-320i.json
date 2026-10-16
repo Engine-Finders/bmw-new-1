@@ -132,49 +132,49 @@
               "@type": "ListItem",
               "position": 3,
               "name": "M50B20",
-              "url": "https://bmwengines.uk/engine/m50/"
+              "url": "https://bmwengines.uk/engine/m50-m52-m54"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "M52B20",
-              "url": "https://bmwengines.uk/engine/m52/"
+              "url": "https://bmwengines.uk/engine/m50-m52-m54"
             },
             {
               "@type": "ListItem",
               "position": 5,
               "name": "M52TUB20",
-              "url": "https://bmwengines.uk/engine/m52/"
+              "url": "https://bmwengines.uk/engine/m50-m52-m54"
             },
             {
               "@type": "ListItem",
               "position": 6,
               "name": "M54B22",
-              "url": "https://bmwengines.uk/engine/m54/"
+              "url": "https://bmwengines.uk/engine/m50-m52-m54"
             },
             {
               "@type": "ListItem",
               "position": 7,
               "name": "N46B20",
-              "url": "https://bmwengines.uk/engine/n46/"
+              "url": "https://bmwengines.uk/engine/n40-n42-n43-n45-n46"
             },
             {
               "@type": "ListItem",
               "position": 8,
               "name": "N43B20",
-              "url": "https://bmwengines.uk/engine/n43/"
+              "url": "https://bmwengines.uk/engine/n40-n42-n43-n45-n46"
             },
             {
               "@type": "ListItem",
               "position": 9,
               "name": "N20B20",
-              "url": "https://bmwengines.uk/engine/n20/"
+              "url": "https://bmwengines.uk/engine/n13-n20"
             },
             {
               "@type": "ListItem",
               "position": 10,
               "name": "B48B20",
-              "url": "https://bmwengines.uk/engine/b48/"
+              "url": "https://bmwengines.uk/engine/b38-b48"
             }
           ]
         },
@@ -465,7 +465,7 @@
         "recommendation": "The N43 is widely considered one of the worst engines BMW ever made. The excessive 18,000-mile service interval is a major contributor to failure - chain guides break up and debris blocks the oil pickup. A preventative chain replacement is essential on any high-mileage N43. At the first sign of cold-start rattle - or even without, as some fail without warning - book an inspection immediately.",
         "failureLink": {
           "label": "",
-          "href": "/failures/timing-chain-failure/"
+          "href": "/failures/timing-chain-diagnosis-guide"
         }
       },
       {
@@ -483,7 +483,7 @@
         "recommendation": "The N20's timing chain tensioner can fail, causing the chain to slip or break. If the tensioner fails completely, it can lead to catastrophic engine failure. Early production N20s (pre-March 2015) are most susceptible. Many specialists recommend preventative chain replacement at 60,000–80,000 miles regardless of symptoms.",
         "failureLink": {
           "label": "",
-          "href": "/failures/timing-chain-failure/"
+          "href": "/failures/timing-chain-diagnosis-guide"
         }
       },
       {
@@ -501,7 +501,7 @@
         "recommendation": "The cooling systems on E36 and E46 six-cylinder 320is are well-documented weak points. The plastic expansion tank, water pump impeller, and thermostat housing all degrade with age. If you see any coolant warnings, have the system inspected immediately - overheating can cause head gasket failure on these otherwise robust engines.",
         "failureLink": {
           "label": "",
-          "href": "/failures/coolant-leak/"
+          "href": "/failures/m54-cooling-system"
         }
       }
     ]

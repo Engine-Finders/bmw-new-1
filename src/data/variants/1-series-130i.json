@@ -66,7 +66,7 @@
               "@type": "ListItem",
               "position": 1,
               "name": "N52B30 (N52B30A / N52B30AF / N52B30B / N52B30BF)",
-              "url": "https://bmwengines.uk/engine/n52/"
+              "url": "https://bmwengines.uk/engine/n52-n53"
             }
           ]
         },
@@ -303,7 +303,7 @@
         "recommendation": "The N52 engine is prone to oil leaks from the valve cover gasket and oil filter housing gasket. These leaks can lead to oil loss, contamination of engine components, and if left unaddressed, can cause engine damage. A valve cover gasket replacement is a straightforward but labour-intensive job. The oil filter housing gasket is a known weak point - the gasket degrades and leaks oil down the front of the engine. If you notice a burning oil smell or oil spots beneath the car, have the gaskets inspected promptly.",
         "failureLink": {
           "label": "Read the full oil leak guide → /failures/oil-leaks-n52/ [NEW FAILURE PAGE NEEDED]",
-          "href": "#"
+          "href": "/failures/n55-valve-cover-oil-leak"
         }
       },
       {
@@ -321,7 +321,7 @@
         "recommendation": "The Valvetronic system - BMW's variable valve lift technology - can develop problems over time. The eccentric shaft sensor, Valvetronic motor, or wiring can fail, leading to rough idling, reduced power, or stalling. Diagnosing Valvetronic problems requires specialist knowledge and diagnostic equipment. The VANOS system can also suffer from cam ledge wear, which is an expensive repair. If you experience rough running, have the system diagnosed by a specialist before the problem worsens.",
         "failureLink": {
           "label": "Read the full Valvetronic failure guide → /failures/valvetronic-system-failure/ [NEW FAILURE PAGE NEEDED]",
-          "href": "#"
+          "href": "/failures"
         }
       }
     ]

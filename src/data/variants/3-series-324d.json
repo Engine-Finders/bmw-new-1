@@ -78,7 +78,7 @@
               "@type": "ListItem",
               "position": 2,
               "name": "M21D24 Turbo",
-              "url": "https://bmwengines.uk/engine/m21-turbo/"
+              "url": "https://bmwengines.uk/engine/m21"
             }
           ]
         },
@@ -288,7 +288,7 @@
         "recommendation": "Like the <a href='https://bmwengines.uk/engine/m20'>M20</a> petrol engine it's based on, the M21 uses a timing belt - not a chain. BMW recommends replacement every 40,000 miles or 6 years. A snapped timing belt on this interference engine means valve and piston damage - effectively an engine replacement. If you're buying an M21-engined E30, demand proof of timing belt replacement. Budget for it immediately if there's no evidence. These engines are becoming rare - a snapped belt can write off the car.",
         "failureLink": {
           "label": "Read the full timing belt failure guide",
-          "href": "/failures/timing-belt-failure/"
+          "href": "/failures/timing-chain-diagnosis-guide"
         }
       },
       {
@@ -306,7 +306,7 @@
         "recommendation": "The 324td's M21 turbo engine is notorious for cylinder head cracking. The turbocharged engine runs hotter than the naturally aspirated version, and the cylinder head is a known weak point. German sources describe the issue as \"Kopfrisse, Kopfrisse, Kopfrisse\" - head cracks, head cracks, head cracks. If you're buying a 324td, have the cylinder head inspected by a specialist. A cracked head can be welded or replaced, but it's an expensive job. Regular cooling system maintenance and avoiding overheating are essential.",
         "failureLink": {
           "label": "Read the full cylinder head failure guide",
-          "href": "/failures/cylinder-head-crack/"
+          "href": "/failures"
         }
       },
       {
@@ -324,7 +324,7 @@
         "recommendation": "The 324td uses one of the first digital diesel injection pumps (DDE - Digital Diesel Electronics) in a passenger car. This early electronic injection pump is a known weak point - if it fails, the car simply won't run. Some owners convert to a mechanical pump from the earlier 524td to avoid the electronic pump's complexity. If you experience hard starting or rough running on a 324td, have the injection pump diagnosed by a specialist. Rebuilding or replacing the pump is expensive but far cheaper than scrapping a rare car.",
         "failureLink": {
           "label": "Read the full injection pump failure guide",
-          "href": "/failures/injection-pump-failure/"
+          "href": "/failures/water-pump-failure"
         }
       }
     ]

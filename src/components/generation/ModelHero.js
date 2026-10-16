@@ -4,36 +4,52 @@ import Image from "next/image";
 import Link from "next/link";
 import MStripe from "@/components/reusableComponents/MStripe";
 import { useTheme } from "@/components/shared/themeProvider";
+import HomeIcon from "@/components/home/homeIcons";
 import GenIcon from "./GenIcons";
+import { splitGenerationHeroH1 } from "./generationSection";
+
+const TRUST_STRIP_ICON_BY_EMOJI = {
+  "📊": "real-inquiries",
+  "🔧": "vehicle",
+  "📖": "engine-codes-book",
+  "🏆": "engine-finders",
+};
+
+const TRUST_STRIP_ICONS = ["real-inquiries", "vehicle", "engine-codes-book", "engine-finders"];
 
 function splitTagPill(tagPill = "") {
   const parts = tagPill.split(" • ");
   return { model: parts[0] || "", body: parts[1] || "", years: parts[2] || "" };
 }
 
-// Split a trust-strip label into a leading bold value (a number/short token)
-// and the remaining text, plus any trailing [TAG] marker rendered as a separate line.
 function splitStat(label = "") {
   const tagMatch = label.match(/\s*\[([^\]]+)\]\s*$/);
   const tag = tagMatch ? tagMatch[1] : "";
   const text = tagMatch ? label.slice(0, tagMatch.index) : label;
 
-  const [first, ...rest] = text.split(" ");
-  const hasValue = /[0-9]/.test(first);
+  const [first, ...rest] = text.trim().split(" ");
+  const hasValue = /[0-9+]/.test(first);
 
   return {
     value: hasValue ? first : "",
-    label: hasValue ? rest.join(" ") : text,
+    label: hasValue ? rest.join(" ") : text.trim(),
     tag,
   };
+}
+
+function trustStripIcon(item, index) {
+  // The body-style stat gets the SUV artwork for SUVs, and the power stat a meter.
+  if (/\bsuv\b/i.test(item.label || "")) return "suv-body";
+  if (/\b\d+\s*(ps|bhp|hp)\b/i.test(item.label || "")) return "diagnosis";
+  return TRUST_STRIP_ICON_BY_EMOJI[item.icon] || TRUST_STRIP_ICONS[index] || "real-inquiries";
 }
 
 function TrustLabel({ label }) {
   if (label === "Part of Engine Finders") {
     return (
       <>
-        <span className="block">Part of Engine</span>
-        <span className="block">Finders</span>
+        <span className="block">Part of</span>
+        <span className="block">Engine Finders</span>
       </>
     );
   }
@@ -49,187 +65,238 @@ function TrustLabel({ label }) {
   return label;
 }
 
+function HeroHeadline({ h1 = "", isDark }) {
+  const parts = splitGenerationHeroH1(h1);
+  const textClass = isDark ? "text-white" : "text-[var(--color-text)]";
+
+  return (
+    <h1 className={`text-[32px] font-bold leading-[0.95] tracking-normal md:max-w-[720px] md:text-[3.5rem] md:leading-[0.94] ${textClass}`}>
+      {parts.before ? <span dangerouslySetInnerHTML={{ __html: parts.before }} /> : null}
+      {parts.accent ? (
+        <>
+          {parts.before ? " " : null}
+          <span className="text-[var(--color-chrome-bright)]" dangerouslySetInnerHTML={{ __html: parts.accent }} />
+        </>
+      ) : null}
+    </h1>
+  );
+}
+
+function DesktopTrustStrip({ items, isDark, cardBorderClass, dividerBorderClass }) {
+  if (!items?.length) return null;
+
+  const badgeTextClass = isDark ? "text-white/85" : "text-[var(--color-text)]";
+  const badgeMutedClass = isDark ? "text-white/55" : "text-[var(--color-text-soft)]";
+  const trustStripClass = `glass-panel hidden w-max shrink-0 rounded-md border ${cardBorderClass} backdrop-blur-sm shadow-[0_10px_30px_var(--color-shadow)] md:block`;
+
+  return (
+    <div className={trustStripClass}>
+      <div className="flex w-max items-stretch">
+        {items.map((item, index) => {
+          const stat = splitStat(item.label);
+          const hasValue = Boolean(stat.value);
+
+          return (
+            <div
+              key={item.label}
+              className={`flex w-auto flex-none items-center gap-3 px-4 py-3.5 text-left ${
+                index > 0 ? `border-l ${dividerBorderClass}` : ""
+              }`}
+            >
+              <span className="flex h-12 w-12 shrink-0 items-center justify-center">
+                <HomeIcon name={trustStripIcon(item, index)} isDark={isDark} className="h-12 w-12 md:h-12 md:w-12 object-contain" />
+              </span>
+              <div className="flex w-max max-w-none flex-col gap-0.5 whitespace-normal">
+                {hasValue ? (
+                  <strong className={`text-[1.2rem] font-bold leading-none ${isDark ? "text-white" : "text-[var(--color-text)]"}`}>
+                    {stat.value}
+                  </strong>
+                ) : (
+                  <strong className={`text-[0.95rem] font-bold leading-tight ${badgeTextClass}`}>
+                    <TrustLabel label={stat.label} />
+                  </strong>
+                )}
+                {hasValue && stat.label ? (
+                  <span className={`max-w-[12rem] text-[0.82rem] leading-[1.3] ${badgeTextClass}`}>{stat.label}</span>
+                ) : null}
+                {stat.tag ? (
+                  <span className={`text-[10px] font-semibold uppercase leading-none tracking-wide ${badgeMutedClass}`}>
+                    {stat.tag}
+                  </span>
+                ) : null}
+              </div>
+            </div>
+          );
+        })}
+      </div>
+    </div>
+  );
+}
+
+function MobileTrustStrip({ items, isDark, trustStripClass, dividerBorderClass, badgeTextClass, badgeMutedClass }) {
+  if (!items?.length) return null;
+
+  return (
+    <div className={`${trustStripClass} mt-3 p-2 md:hidden`}>
+      <div className="grid grid-cols-4 gap-x-0.5 text-center">
+        {items.map((item, index) => {
+          const stat = splitStat(item.label);
+
+          return (
+            <div
+              key={item.label}
+              className={`flex min-w-0 flex-col items-center gap-1 px-0.5 py-1 ${index > 0 ? `border-l ${dividerBorderClass}` : ""}`}
+            >
+              <span className="flex h-12 w-12 shrink-0 items-center justify-center">
+                <HomeIcon name={trustStripIcon(item, index)} isDark={isDark} className="h-12 w-12 md:h-12 md:w-12 object-contain" />
+              </span>
+              {stat.value ? (
+                <strong className={`text-[0.72rem] font-bold leading-none ${isDark ? "text-white" : "text-[var(--color-text)]"}`}>
+                  {stat.value}
+                </strong>
+              ) : null}
+              <span className={`text-[0.52rem] leading-[1.2] ${badgeTextClass}`}>
+                <TrustLabel label={stat.label} />
+              </span>
+              {stat.tag ? (
+                <span className={`text-[0.45rem] font-semibold uppercase leading-none tracking-wide ${badgeMutedClass}`}>
+                  {stat.tag}
+                </span>
+              ) : null}
+            </div>
+          );
+        })}
+      </div>
+    </div>
+  );
+}
+
+// Phones, tablets + small laptops: the scene as its own band, so it never sits behind the copy.
+function SceneBand({ src, alt, className = "" }) {
+  return (
+    <div className={`relative -mx-4 my-3 aspect-[16/10] max-h-[440px] w-[calc(100%+2rem)] overflow-hidden md:-mx-8 md:w-[calc(100%+4rem)] ${className}`}>
+      <Image src={src} alt={alt} fill className="object-cover object-[70%_center]" sizes="100vw" priority />
+      <div className="absolute inset-x-0 top-0 h-14 bg-[linear-gradient(180deg,var(--color-page)_0%,transparent_100%)]" />
+      <div className="absolute inset-x-0 bottom-0 h-14 bg-[linear-gradient(0deg,var(--color-page)_0%,transparent_100%)]" />
+    </div>
+  );
+}
+
 export default function ModelHero({ data }) {
   const { theme } = useTheme();
   if (!data) return null;
 
   const isDark = theme === "dark";
   const pill = splitTagPill(data.tagPill);
-  const imageSrc = isDark ? data.image?.dark : data.image?.light || data.image?.dark;
+  // This generation standing in BMW's own scene, light or dark (set server-side), or the client's
+  // line-up scene when the model has no photo of its own (I-Pace). Laid out like the model hero.
+  const scene = data.heroScene;
+  const sceneSrc = scene ? (isDark && scene.darkSrc) || scene.src : null;
+  const heroAlt = pill.model.replace(/<[^>]*>/g, "");
+  const heroDescriptionShadow = isDark
+    ? ""
+    : "[text-shadow:0_0_8px_#fff,0_0_16px_#fff,0_0_24px_rgba(255,255,255,0.9),0_1px_2px_rgba(255,255,255,0.95)]";
+
+  const cardBorderClass = isDark ? "border-white/20" : "border-[var(--color-border)]";
+  const dividerBorderClass = isDark ? "border-white/35" : "border-[rgba(7,24,39,0.25)]";
+  const badgeTextClass = isDark ? "text-white/85" : "text-[var(--color-text)]";
+  const badgeMutedClass = isDark ? "text-white/55" : "text-[var(--color-text-soft)]";
+  const trustStripClass = `glass-panel rounded-md border ${cardBorderClass} backdrop-blur-sm shadow-[0_10px_30px_var(--color-shadow)]`;
 
   return (
-    <section className="relative min-h-[560px] overflow-hidden bg-[var(--color-page)] text-[var(--color-text)] md:min-h-[620px]">
-      {/* Full-bleed background image on every breakpoint — mobile: vertical fade (dark for text up top, car visible lower down); desktop: left-to-right fade */}
-      <div className="absolute inset-0">
-        {/* Mobile: dedicated portrait crop, narrowed and centered so it reads tall/slim rather than stretched full-width */}
-        <div className="absolute inset-x-0 top-[20%] bottom-[2%] md:hidden">
-          <Image
-            src={isDark ? "/e90/hero_mobile_dark.webp" : "/e90/hero_mobile_day.webp"}
-            alt={data.image?.alt || ""}
-            fill
-            className="object-fill"
-            sizes="84vw"
-            priority
-          />
+    <section className="relative overflow-hidden bg-[var(--color-page)] text-[var(--color-text)] xl:min-h-[620px]">
+      {/* Desktop: the scene sits on the right and fades in from the page colour, as on the model page.
+          Below 1600px it starts a third of the way in so the copy stays on plain page colour. */}
+      {sceneSrc ? (
+        <div className="absolute inset-y-0 left-[34%] right-0 hidden xl:block min-[1600px]:left-auto min-[1600px]:aspect-[1200/676]">
+          <Image src={sceneSrc} alt={heroAlt} fill className="object-cover object-right" sizes="(min-width: 1280px) 1200px, 100vw" priority />
+          <div className="absolute inset-0 bg-[linear-gradient(90deg,var(--color-page)_0%,color-mix(in_srgb,var(--color-page)_88%,transparent)_16%,color-mix(in_srgb,var(--color-page)_45%,transparent)_34%,transparent_56%)]" />
+          <div className="absolute inset-x-0 bottom-0 h-40 bg-[linear-gradient(0deg,var(--color-page)_0%,transparent_100%)]" />
         </div>
-        {imageSrc ? (
-          <Image
-            src={imageSrc}
-            alt={data.image?.alt || ""}
-            fill
-            className="hidden object-cover md:block"
-            sizes="100vw"
-            priority
-          />
-        ) : null}
-        {/* Mobile: top-heavy vertical fade so the tag/H1/subheadline stay readable, clearing by the time the car appears lower in frame */}
-        <div className="absolute inset-0 bg-[linear-gradient(180deg,var(--color-hero-fade)_0%,var(--color-hero-overlay)_38%,transparent_68%)] md:hidden" />
-        <div className="absolute inset-0 bg-[linear-gradient(0deg,var(--color-page)_0%,transparent_22%)] md:hidden" />
-        {/* Mobile, light mode only: soften the top-left corner so the image blends into the white page background */}
-        {!isDark ? (
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(255,255,255,0.85)_0%,transparent_45%)] md:hidden" />
-        ) : null}
-        {/* Light mode only: extra white wash across the very top so it blends cleanly into the page above the hero */}
-        {!isDark ? (
-          <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(255,255,255,0.9)_0%,transparent_30%)]" />
-        ) : null}
-        {/* Desktop: left-to-right + bottom fade so the image blends into the page color */}
-        <div className="absolute inset-0 hidden bg-[linear-gradient(90deg,var(--color-hero-fade)_0%,var(--color-hero-overlay)_35%,transparent_72%)] md:block" />
-        <div className="absolute inset-0 hidden bg-[linear-gradient(0deg,var(--color-page)_0%,transparent_28%)] md:block" />
-      </div>
+      ) : null}
 
-      <div className="relative mx-auto flex w-full max-w-8xl flex-col px-4 pb-5 pt-8 md:min-h-[620px] md:justify-center md:px-8 md:py-10">
-        <div className="relative flex w-full max-w-[720px] flex-col gap-3 md:ml-0 md:mt-0 md:gap-4">
-          {/* Tag pill */}
-          <span
-            className={`inline-flex w-fit max-w-full flex-wrap items-center gap-x-2 gap-y-2 rounded-md border px-3 py-2 text-[0.82rem] leading-[1.35] md:px-4 md:py-2 md:text-[0.88rem] ${
-              isDark
-                ? "border-white/30 bg-[rgba(2,7,17,0.5)] text-white"
-                : "border-[rgba(11,103,220,0.48)] bg-[rgba(255,255,255,0.58)] text-[var(--color-text-muted)]"
-            }`}
-          >
-            <GenIcon name="car" className="h-4 w-4 shrink-0 text-[var(--color-primary)]" />
-            <strong className="font-semibold text-[var(--color-primary)]" dangerouslySetInnerHTML={{ __html: pill.model }} />
-            {pill.body ? (
-              <>
-                <span aria-hidden="true" className="opacity-50">•</span>
-                <span dangerouslySetInnerHTML={{ __html: pill.body }} />
-              </>
-            ) : null}
-            {pill.years ? (
-              <>
-                <span aria-hidden="true" className="opacity-50">•</span>
-                <span dangerouslySetInnerHTML={{ __html: pill.years }} />
-              </>
-            ) : null}
-          </span>
-
-          {/* Headline */}
-          <h1
-            className={`text-[32px] font-bold leading-[0.95] tracking-normal md:max-w-[720px] md:text-[3.5rem] md:leading-[0.94] ${
-              isDark ? "text-white" : "text-[var(--color-text)]"
-            }`}
-            dangerouslySetInnerHTML={{ __html: data.h1 }}
-          />
-
-          {/* MStripe decorative accent — matches home hero (blue / blue / red / grey slashes + trailing line) */}
-          <MStripe />
-
-          {/* subHeadline — sits over the top-heavy fade on mobile, and over the solid background on desktop */}
-          <p
-            className={`max-w-[78%] text-[0.88rem] leading-[1.42] md:max-w-[620px] md:text-[1.08rem] md:leading-[1.42] ${
-              isDark ? "text-white/88" : "text-[var(--color-text-muted)]"
-            }`}
-            dangerouslySetInnerHTML={{ __html: data.subHeadline }}
-          />
-
-          {/* Mobile: spacer so the CTA/stats sit lower, clear of the car in the lower portion of the image */}
-          <div className="h-[130px] md:hidden" aria-hidden="true" />
-
-          {/* Mobile: full-width primary CTA — sits below the image card in normal flow */}
-          {data.primaryCta ? (
-            <Link
-              href="/quote"
-              className="btn-cta mt-5 inline-flex w-full items-center justify-center gap-3 rounded-md bg-[var(--color-primary)] px-6 py-4 text-[1rem] font-bold text-white shadow-[0_12px_28px_var(--color-shadow)] md:hidden"
+      <div className="relative mx-auto flex w-full max-w-8xl flex-col px-4 pb-4 pt-6 md:px-8 md:py-6 xl:min-h-[620px] xl:justify-center">
+        <div className="relative flex w-full flex-col gap-2.5 md:gap-3">
+          <div className="relative flex w-full max-w-[720px] flex-col gap-2.5 md:gap-3">
+            <span
+              className={`inline-flex w-fit max-w-full flex-wrap items-center gap-x-2 gap-y-2 rounded-md border px-3 py-2 text-[0.82rem] leading-[1.35] md:px-4 md:py-2 md:text-[0.88rem] ${
+                isDark
+                  ? "border-white/30 bg-[rgba(2,7,11,0.55)] text-white"
+                  : "border-[var(--color-border-strong)] bg-[rgba(255,255,255,0.58)] text-[var(--color-text-muted)]"
+              }`}
             >
-              <span dangerouslySetInnerHTML={{ __html: data.primaryCta.label.replace(/\s*→\s*$/, "") }} />
-              <GenIcon name="arrow" className="h-5 w-5" />
-            </Link>
-          ) : null}
+              <HomeIcon name="vehicle" isDark={isDark} className="h-4 w-4 shrink-0 object-contain" />
+              <strong className="font-semibold text-[var(--color-primary)]" dangerouslySetInnerHTML={{ __html: pill.model }} />
+              {pill.body ? (
+                <>
+                  <span aria-hidden="true" className="opacity-50">•</span>
+                  <span dangerouslySetInnerHTML={{ __html: pill.body }} />
+                </>
+              ) : null}
+              {pill.years ? (
+                <>
+                  <span aria-hidden="true" className="opacity-50">•</span>
+                  <span dangerouslySetInnerHTML={{ __html: pill.years }} />
+                </>
+              ) : null}
+            </span>
 
-          {/* Trust strip — single horizontal bar, icon-first vertical stack per badge, floating dividers */}
+            <HeroHeadline h1={data.h1} isDark={isDark} />
+
+            <MStripe />
+
+            <p
+              className={`max-w-full text-[0.88rem] leading-[1.42] md:max-w-[620px] md:text-[1.08rem] md:leading-[1.42] ${isDark ? "text-white/88" : "text-[var(--color-text)]"} ${heroDescriptionShadow}`}
+              dangerouslySetInnerHTML={{ __html: data.subHeadline }}
+            />
+
+            {data.primaryCta ? (
+              <Link
+                href={data.primaryCta.href || "/quote"}
+                className="btn-cta mt-4 hidden w-fit items-center gap-5 rounded-md px-7 py-3.5 text-base font-bold shadow-[0_12px_28px_var(--color-shadow)] md:inline-flex"
+              >
+                <span dangerouslySetInnerHTML={{ __html: data.primaryCta.label.replace(/\s*→\s*$/, "") }} />
+                <GenIcon name="arrow" className="h-4 w-4 shrink-0" />
+              </Link>
+            ) : null}
+          </div>
+
+          {sceneSrc ? <SceneBand src={sceneSrc} alt={heroAlt} className="hidden md:block xl:hidden" /> : null}
+
           {data.trustStrip?.length > 0 ? (
-            <div className="glass-panel mt-5 flex items-stretch justify-center rounded-md px-3 py-2.5 shadow-[0_10px_30px_var(--color-shadow)] md:max-w-fit md:rounded-lg md:px-4 md:py-3">
-              {data.trustStrip.map((item, index) => {
-                const stat = splitStat(item.label);
-                const isSimple = !stat.value && !stat.tag && !stat.label.includes(" ");
-
-                return (
-                  <div key={item.label} className="flex items-stretch">
-                    {index > 0 ? (
-                      <span
-                        aria-hidden="true"
-                        className={`mx-2.5 my-1.5 w-px shrink-0 self-center md:mx-3 ${isDark ? "bg-white/15" : "bg-[var(--color-border)]"}`}
-                        style={{ height: "70%" }}
-                      />
-                    ) : null}
-                    {isSimple ? (
-                      /* Simple badge (e.g. Saloon): icon centered on top, single label below */
-                      <div className="flex w-full flex-col items-center gap-1.5 text-center">
-                        <GenIcon name={item.icon} className="h-5 w-5 text-[var(--color-primary)]" />
-                        <span
-                          className={`text-[0.7rem] leading-[1.3] ${isDark ? "text-white/85" : "text-[var(--color-text)]"} md:text-[0.82rem]`}
-                        >
-                          <TrustLabel label={stat.label} />
-                        </span>
-                      </div>
-                    ) : (
-                      /* Icon left, parallel with the text starting beside it */
-                      <div className="flex items-center gap-2 text-left">
-                        <GenIcon name={item.icon} className="h-5 w-5 shrink-0 text-[var(--color-primary)]" />
-                        <div className="flex flex-col gap-0.5">
-                          {stat.value ? (
-                            <strong
-                              className={`text-[1rem] font-bold leading-none md:text-[1.2rem] ${isDark ? "text-white" : "text-[var(--color-text)]"}`}
-                              dangerouslySetInnerHTML={{ __html: stat.value }}
-                            />
-                          ) : null}
-                          <span
-                            className={`text-[0.7rem] leading-[1.3] ${isDark ? "text-white/85" : "text-[var(--color-text)]"} md:text-[0.82rem]`}
-                          >
-                            <TrustLabel label={stat.label} />
-                          </span>
-                          {stat.tag ? (
-                            <span
-                              className={`text-[9px] font-semibold uppercase leading-none tracking-wide ${
-                                isDark ? "text-white/55" : "text-[var(--color-text-soft)]"
-                              } md:text-[10px]`}
-                              dangerouslySetInnerHTML={{ __html: stat.tag }}
-                            />
-                          ) : null}
-                        </div>
-                      </div>
-                    )}
-                  </div>
-                );
-              })}
+            <div className="mt-6 hidden w-max max-w-none md:block">
+              <DesktopTrustStrip
+                items={data.trustStrip}
+                isDark={isDark}
+                cardBorderClass={cardBorderClass}
+                dividerBorderClass={dividerBorderClass}
+              />
             </div>
           ) : null}
+        </div>
 
-          {/* Desktop-only CTA (pill button) */}
+        {/* Phones: the scene as its own band between the copy and the CTA */}
+        {sceneSrc ? <SceneBand src={sceneSrc} alt={heroAlt} className="md:hidden" /> : null}
+
+        <div className="relative flex w-full max-w-[720px] flex-col md:hidden">
           {data.primaryCta ? (
             <Link
-              href="/quote"
-              className="btn-cta hidden w-full items-center justify-between rounded-[1.25rem] border border-[rgba(41,115,219,0.75)] bg-[linear-gradient(180deg,rgba(14,79,184,0.98)_0%,rgba(8,59,143,0.98)_100%)] px-5 py-4 text-white shadow-lg shadow-black/30 md:flex md:w-fit md:justify-start md:gap-5 md:rounded md:border-0 md:bg-[var(--color-primary)] md:px-7 md:py-3.5 md:text-base md:shadow-lg md:shadow-[var(--color-shadow)]"
+              href={data.primaryCta.href || "/quote"}
+              className="btn-cta mt-2 inline-flex w-full items-center justify-center gap-3 rounded-md px-6 py-3.5 text-[1rem] font-bold shadow-[0_12px_28px_var(--color-shadow)]"
             >
-              <span className="text-left">
-                <span className="block text-lg font-bold tracking-[0.08em] md:text-[1.05rem] md:tracking-normal" dangerouslySetInnerHTML={{ __html: data.primaryCta.label.replace(/\s*→\s*$/, "") }} />
-              </span>
-              <span className="flex h-14 w-14 items-center justify-center rounded-full border border-white/10 bg-[rgba(3,14,31,0.55)] md:h-auto md:w-auto md:rounded-none md:border-0 md:bg-transparent">
-                <GenIcon name="arrow" className="h-7 w-7" />
-              </span>
+              <span dangerouslySetInnerHTML={{ __html: data.primaryCta.label.replace(/\s*→\s*$/, "") }} />
+              <GenIcon name="arrow" className="h-4 w-4 shrink-0" />
             </Link>
           ) : null}
+
+          <MobileTrustStrip
+            items={data.trustStrip}
+            isDark={isDark}
+            trustStripClass={trustStripClass}
+            dividerBorderClass={dividerBorderClass}
+            badgeTextClass={badgeTextClass}
+            badgeMutedClass={badgeMutedClass}
+          />
         </div>
       </div>
     </section>

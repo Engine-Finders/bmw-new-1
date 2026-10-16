@@ -102,7 +102,7 @@
               "@type": "ListItem",
               "position": 4,
               "name": "B47D20",
-              "url": "https://bmwengines.uk/engine/b47/"
+              "url": "https://bmwengines.uk/engine/b37-b47"
             }
           ]
         },
@@ -363,7 +363,7 @@
         "recommendation": "This affects the M47's 150bhp common-rail variant and remains a known issue on early N47s too. Preventive blanking is cheap, effective, and removes the risk entirely with no noticeable performance loss.",
         "failureLink": {
           "label": "Read the full swirl flap failure guide",
-          "href": "/failures/swirl-flap-failure/"
+          "href": "/failures/m57-swirl-flap"
         }
       },
       {
@@ -381,7 +381,7 @@
         "recommendation": "Verify recall completion before buying any N47 or B47-engined F30 320d - this is a straightforward, well-documented fix when caught early.",
         "failureLink": {
           "label": "Read the full EGR cooler failure guide",
-          "href": "/failures/egr-valve-cooler-failure/"
+          "href": "/failures/egr-valve-cooler"
         }
       }
     ]

@@ -52,73 +52,73 @@
               "@type": "ListItem",
               "position": 1,
               "name": "BMW 5 Series E60 545i/550i (N62)",
-              "url": "https://bmwengines.uk/models/5-series/e60/"
+              "url": "https://bmwengines.uk/5-series/e60"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "BMW 5 Series F10 550i (N63)",
-              "url": "https://bmwengines.uk/models/5-series/f10/"
+              "url": "https://bmwengines.uk/5-series/f10"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "BMW 6 Series E63/E64 645Ci/650i (N62)",
-              "url": "https://bmwengines.uk/models/6-series/e63/"
+              "url": "https://bmwengines.uk/6-series/e63"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "BMW 6 Series F06/F12/F13 650i (N63)",
-              "url": "https://bmwengines.uk/models/6-series/f06/"
+              "url": "https://bmwengines.uk/6-series/f06"
             },
             {
               "@type": "ListItem",
               "position": 5,
               "name": "BMW 7 Series E65/E66 745i/750i (N62)",
-              "url": "https://bmwengines.uk/models/7-series/e65/"
+              "url": "https://bmwengines.uk/7-series/e65-e66"
             },
             {
               "@type": "ListItem",
               "position": 6,
               "name": "BMW 7 Series F01/F02 750i/760i (N63)",
-              "url": "https://bmwengines.uk/models/7-series/f01/"
+              "url": "https://bmwengines.uk/7-series/f01-f02"
             },
             {
               "@type": "ListItem",
               "position": 7,
               "name": "BMW X5 E53 4.8is (N62)",
-              "url": "https://bmwengines.uk/models/x5/e53/"
+              "url": "https://bmwengines.uk/x5/e53"
             },
             {
               "@type": "ListItem",
               "position": 8,
               "name": "BMW X5 E70 4.8i/50i (N62/N63)",
-              "url": "https://bmwengines.uk/models/x5/e70/"
+              "url": "https://bmwengines.uk/x5/e70"
             },
             {
               "@type": "ListItem",
               "position": 9,
               "name": "BMW X5 F15 50i (N63)",
-              "url": "https://bmwengines.uk/models/x5/f15/"
+              "url": "https://bmwengines.uk/x5/f15"
             },
             {
               "@type": "ListItem",
               "position": 10,
               "name": "BMW X6 E71 50i (N63)",
-              "url": "https://bmwengines.uk/models/x6/e71/"
+              "url": "https://bmwengines.uk/x6/e71"
             },
             {
               "@type": "ListItem",
               "position": 11,
               "name": "BMW X6 F16 50i (N63)",
-              "url": "https://bmwengines.uk/models/x6/f16/"
+              "url": "https://bmwengines.uk/x6/f16"
             },
             {
               "@type": "ListItem",
               "position": 12,
               "name": "BMW X7 G07 40i/50i (N63)",
-              "url": "https://bmwengines.uk/models/x7/g07/"
+              "url": "https://bmwengines.uk/x7/g07"
             }
           ]
         },
@@ -244,7 +244,7 @@
     "trustStrip": [],
     "primaryCta": {
       "label": "Compare N62/N63 Engine Prices →",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "atAGlance": {
@@ -437,7 +437,7 @@
     "sharedCostNote": "",
     "cta": {
       "label": "→ Compare BMW N62/N63 engine prices from UK specialists",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "faq": {
@@ -478,7 +478,7 @@
     "finalCta": "Find the best BMW N62 or N63 engine replacement UK drivers rely on. Compare real prices from trusted specialists on EnginesMarket today and get back on the road with confidence.",
     "ctaButton": {
       "label": "Compare BMW N62/N63 Engine Prices Now →",
-      "href": "#"
+      "href": "/quote"
     }
   }
 }

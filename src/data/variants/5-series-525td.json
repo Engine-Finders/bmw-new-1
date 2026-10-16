@@ -84,25 +84,25 @@
               "@type": "ListItem",
               "position": 1,
               "name": "M51D25UL",
-              "url": "https://bmwengines.uk/engine/m51/"
+              "url": "https://bmwengines.uk/engine/m57"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "M51D25OL",
-              "url": "https://bmwengines.uk/engine/m51/"
+              "url": "https://bmwengines.uk/engine/m57"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "M51D25TUUL",
-              "url": "https://bmwengines.uk/engine/m51/"
+              "url": "https://bmwengines.uk/engine/m57"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "M51D25TUOL",
-              "url": "https://bmwengines.uk/engine/m51/"
+              "url": "https://bmwengines.uk/engine/m57"
             }
           ]
         },
@@ -312,7 +312,7 @@
         "recommendation": "The VP37 electronic injection pump is the single biggest weakness on the M51. Described as \"fragile\" by specialists, it can fail due to wear, contaminated fuel, or electronic issues. Symptoms include poor idle, lack of power, and hot-start problems. Some owners report the pump failing and dumping fuel into the engine oil. Rebuilding or replacing the pump is a specialist job requiring timing tools. Regular fuel filter changes and using high-quality diesel can extend pump life. If you experience rough running or hard starting, have the injection system diagnosed promptly.",
         "failureLink": {
           "label": "Read the full injection pump failure guide",
-          "href": "/failures/injection-pump-failure/"
+          "href": "/failures/water-pump-failure"
         }
       },
       {
@@ -330,7 +330,7 @@
         "recommendation": "The M51 uses timing chains - not belts - but they can stretch and the plastic guides can become brittle and break. Specialist forums report that at around 120,000–150,000 miles, timing chain wear becomes a serious concern. A stretched chain can cause hot-start problems - the ECU cannot properly set timing for a hot start with a retarded chain. If the chain jumps, piston-valve contact is likely. Preventative chain and guide replacement is far cheaper than a full engine replacement. At the first sign of rattling from the front of the engine, book an inspection immediately.",
         "failureLink": {
           "label": "Read the full timing chain failure guide",
-          "href": "/failures/timing-chain-failure/"
+          "href": "/failures/timing-chain-diagnosis-guide"
         }
       },
       {

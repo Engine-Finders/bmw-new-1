@@ -72,13 +72,13 @@
               "@type": "ListItem",
               "position": 1,
               "name": "N57S",
-              "url": "https://bmwengines.uk/engine/n57s/"
+              "url": "https://bmwengines.uk/engine/n57"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "B57S",
-              "url": "https://bmwengines.uk/engine/b57s/"
+              "url": "https://bmwengines.uk/engine/b57-b58"
             }
           ]
         },
@@ -305,7 +305,7 @@
         "recommendation": "",
         "failureLink": {
           "label": "",
-          "href": "#"
+          "href": "/failures/timing-chain-diagnosis-guide"
         }
       },
       {
@@ -323,7 +323,7 @@
         "recommendation": "",
         "failureLink": {
           "label": "",
-          "href": "#"
+          "href": "/failures/egr-valve-cooler"
         }
       },
       {
@@ -341,7 +341,7 @@
         "recommendation": "",
         "failureLink": {
           "label": "",
-          "href": "#"
+          "href": "/failures/n57-injector-seal"
         }
       },
       {
@@ -359,7 +359,7 @@
         "recommendation": "",
         "failureLink": {
           "label": "",
-          "href": "#"
+          "href": "/engine/b57-b58"
         }
       },
       {
@@ -377,7 +377,7 @@
         "recommendation": "",
         "failureLink": {
           "label": "",
-          "href": "#"
+          "href": "/failures/turbocharger-failure"
         }
       }
     ]

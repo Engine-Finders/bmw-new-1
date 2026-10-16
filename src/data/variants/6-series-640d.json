@@ -294,7 +294,7 @@
         "recommendation": "The N57's timing chain is prone to premature wear, particularly on pre‑2015 models. The chain, guides and tensioners weaken over time, causing excessive play and a metallic rattling when cold. If you hear a rattling noise on cold start, have the chain inspected immediately - ignoring it can lead to catastrophic engine damage. Many owners recommend replacing the chain preventatively around 100,000 miles. Regular oil changes every 5,000–8,000 miles are the single most effective prevention.",
         "failureLink": {
           "label": "",
-          "href": "/failures/timing-chain-stretch/"
+          "href": "/failures/timing-chain-diagnosis-guide"
         }
       },
       {
@@ -312,7 +312,7 @@
         "recommendation": "Carbon builds up in the EGR system over time, leading to performance dips and coolant leaks. This issue might seem minor at first, but a faulty EGR cooler can cause the engine to overheat - or even catch fire in extreme cases. If you notice any of these signs, have the system inspected immediately. Periodic cleaning of the EGR system every 40,000–60,000 miles is recommended.",
         "failureLink": {
           "label": "",
-          "href": "/failures/egr-valve-cooler-failure/"
+          "href": "/failures/egr-valve-cooler"
         }
       },
       {
@@ -330,7 +330,7 @@
         "recommendation": "The N57's main bearings are a known weakness - they are marginal compared to the older <a href='https://bmwengines.uk/engine/m57'>M57</a>. Insufficient oil pressure at low RPM (often with no warning lights) can accelerate bearing wear. Frequent oil changes (5,000–8,000 miles max) are essential. Some owners also recommend replacing the connecting rod bearings preventively if mileage exceeds 120,000 miles. If you hear a knocking noise, do not drive the car - bottom-end failure is catastrophic.",
         "failureLink": {
           "label": "",
-          "href": "/failures/crankshaft-bearing-failure/"
+          "href": "/failures"
         }
       }
     ]

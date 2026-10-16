@@ -39,31 +39,31 @@
               "@type": "ListItem",
               "position": 1,
               "name": "N46B20 Engine",
-              "url": "https://bmwengines.uk/engine/n46/"
+              "url": "https://bmwengines.uk/engine/n40-n42-n43-n45-n46"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "M54B25 Engine",
-              "url": "https://bmwengines.uk/engine/m54/"
+              "url": "https://bmwengines.uk/engine/m50-m52-m54"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "N52B25 Engine",
-              "url": "https://bmwengines.uk/engine/n52/"
+              "url": "https://bmwengines.uk/engine/n52-n53"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "M54B30 Engine",
-              "url": "https://bmwengines.uk/engine/m54/"
+              "url": "https://bmwengines.uk/engine/m50-m52-m54"
             },
             {
               "@type": "ListItem",
               "position": 5,
               "name": "N52B30 Engine",
-              "url": "https://bmwengines.uk/engine/n52/"
+              "url": "https://bmwengines.uk/engine/n52-n53"
             },
             {
               "@type": "ListItem",
@@ -99,79 +99,79 @@
               "@type": "ListItem",
               "position": 1,
               "name": "xDrive20i",
-              "url": "https://bmwengines.uk/x3/e83/xdrive20i/"
+              "url": "https://bmwengines.uk/x3/20i"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "2.5i",
-              "url": "https://bmwengines.uk/x3/e83/25i/"
+              "url": "https://bmwengines.uk/x3"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "2.5si",
-              "url": "https://bmwengines.uk/x3/e83/25si/"
+              "url": "https://bmwengines.uk/x3"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "xDrive25i",
-              "url": "https://bmwengines.uk/x3/e83/xdrive25i/"
+              "url": "https://bmwengines.uk/x3"
             },
             {
               "@type": "ListItem",
               "position": 5,
               "name": "3.0i",
-              "url": "https://bmwengines.uk/x3/e83/30i/"
+              "url": "https://bmwengines.uk/x3/30i"
             },
             {
               "@type": "ListItem",
               "position": 6,
               "name": "3.0si",
-              "url": "https://bmwengines.uk/x3/e83/30si/"
+              "url": "https://bmwengines.uk/x3"
             },
             {
               "@type": "ListItem",
               "position": 7,
               "name": "xDrive30i",
-              "url": "https://bmwengines.uk/x3/e83/xdrive30i/"
+              "url": "https://bmwengines.uk/x3/30i"
             },
             {
               "@type": "ListItem",
               "position": 8,
               "name": "2.0d",
-              "url": "https://bmwengines.uk/x3/e83/20d/"
+              "url": "https://bmwengines.uk/x3/20d"
             },
             {
               "@type": "ListItem",
               "position": 9,
               "name": "xDrive18d",
-              "url": "https://bmwengines.uk/x3/e83/xdrive18d/"
+              "url": "https://bmwengines.uk/x3/18d"
             },
             {
               "@type": "ListItem",
               "position": 10,
               "name": "xDrive20d",
-              "url": "https://bmwengines.uk/x3/e83/xdrive20d/"
+              "url": "https://bmwengines.uk/x3/20d"
             },
             {
               "@type": "ListItem",
               "position": 11,
               "name": "3.0d",
-              "url": "https://bmwengines.uk/x3/e83/30d/"
+              "url": "https://bmwengines.uk/x3/30d"
             },
             {
               "@type": "ListItem",
               "position": 12,
               "name": "xDrive30d",
-              "url": "https://bmwengines.uk/x3/e83/xdrive30d/"
+              "url": "https://bmwengines.uk/x3/30d"
             },
             {
               "@type": "ListItem",
               "position": 13,
               "name": "xDrive35d",
-              "url": "https://bmwengines.uk/x3/e83/xdrive35d/"
+              "url": "https://bmwengines.uk/x3/35d"
             }
           ]
         },
@@ -231,7 +231,7 @@
               "name": "Is it worth replacing a BMW X3 E83 engine, or should I scrap the car?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Depends on the car\u0027s value. Against a £4,000 E83, a £3,500 N47 recon is 88% -above our 70% BMW threshold. Against a well-kept £7,000+ example, the same recon drops to 36–50% -a repair decision. Against a sub-£3,500 example, a major engine failure is a write-off. On a well-maintained 3.0d, the calculus is different -the car\u0027s value often justifies the M57\u0027s replacement cost."
+                "text": "Depends on the car's value. Against a £4,000 E83, a £3,500 N47 recon is 88% -above our 70% BMW threshold. Against a well-kept £7,000+ example, the same recon drops to 36–50% -a repair decision. Against a sub-£3,500 example, a major engine failure is a write-off. On a well-maintained 3.0d, the calculus is different -the car's value often justifies the M57's replacement cost."
               }
             },
             {
@@ -239,7 +239,7 @@
               "name": "How long do BMW X3 E83 engines last?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "The M57 diesel six can exceed 200,000–300,000 miles with proper servicing. The M54 and N52 petrol sixes are similarly durable. The N47\u0027s limiting factor is the timing chain -addressed proactively, it can also reach high mileage. The M47 is robust but ageing."
+                "text": "The M57 diesel six can exceed 200,000–300,000 miles with proper servicing. The M54 and N52 petrol sixes are similarly durable. The N47's limiting factor is the timing chain -addressed proactively, it can also reach high mileage. The M47 is robust but ageing."
               }
             },
             {
@@ -255,7 +255,7 @@
               "name": "How do I find my BMW X3 E83 engine code?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Listed on the VIN plate and vehicle documentation; block stamping is visible on the engine itself. Tell us your variant (2.0d, 3.0i, xDrive30d, etc.) and approximate registration date (pre- or post-September 2006) and we\u0027ll identify it -20+ vetted specialists will confirm it for free."
+                "text": "Listed on the VIN plate and vehicle documentation; block stamping is visible on the engine itself. Tell us your variant (2.0d, 3.0i, xDrive30d, etc.) and approximate registration date (pre- or post-September 2006) and we'll identify it -20+ vetted specialists will confirm it for free."
               }
             }
           ]
@@ -333,7 +333,7 @@
     ],
     "primaryCta": {
       "label": "Explore E83 Engines →",
-      "href": "#"
+      "href": "/x3/e83"
     },
     "dataIntegrityNote": ""
   },
@@ -538,7 +538,7 @@
   },
   "overview": {
     "h2": "BMW X3 E83 -Overview",
-    "intro": "The E83 is the first-generation BMW X3, launched in 2003 at the Detroit Motor Show and produced from August 2003 to August 2010. Built on a modified E46 3 Series platform and manufactured by Magna Steyr in Graz, Austria, the E83 introduced BMW\u0027s xDrive all-wheel-drive system to the compact SUV segment. A facelift in September 2006 brought revised engines, including the N52 replacing the M54.",
+    "intro": "The E83 is the first-generation BMW X3, launched in 2003 at the Detroit Motor Show and produced from August 2003 to August 2010. Built on a modified E46 3 Series platform and manufactured by Magna Steyr in Graz, Austria, the E83 introduced BMW's xDrive all-wheel-drive system to the compact SUV segment. A facelift in September 2006 brought revised engines, including the N52 replacing the M54.",
     "keyFacts": "Platform: BMW E46-derived (modified) • Predecessor: None -first BMW X3 • Successor: BMW X3 F25 • Sibling body styles in this generation: 5-door SUV only",
     "marketIntelligenceLine": "As a model that ended production in 2010, the E83 is now a used-market staple -the M57 diesel remains the most sought-after for its durability, while the N47 diesel carries the highest risk."
   },
@@ -548,7 +548,7 @@
       {
         "slot": "Thin-Data Summary",
         "engine": "",
-        "quote": "The E83\u0027s engine range spans three distinct eras. The M57 3.0-litre six-cylinder diesel is the most dependable engine in the range -a cast-iron-block six with a reputation for exceeding 200,000 miles with routine servicing. The M54 3.0-litre straight-six petrol is the best pre-facelift option -smooth, linear power, and proven durability. The N52 3.0-litre straight-six petrol (post-facelift) offers 268 bhp and is also well-regarded, though it has known water pump and thermostat issues. The N47 2.0-litre diesel is the most economical choice but carries this generation\u0027s defining risk: the rear-mounted timing chain can stretch and fail catastrophically. If you\u0027re buying an E83, the M57 six-cylinder diesel is the sensible choice; the M54 or N52 six-cylinder petrol is the refined alternative; the N47 requires documented chain history.",
+        "quote": "The E83's engine range spans three distinct eras. The M57 3.0-litre six-cylinder diesel is the most dependable engine in the range -a cast-iron-block six with a reputation for exceeding 200,000 miles with routine servicing. The M54 3.0-litre straight-six petrol is the best pre-facelift option -smooth, linear power, and proven durability. The N52 3.0-litre straight-six petrol (post-facelift) offers 268 bhp and is also well-regarded, though it has known water pump and thermostat issues. The N47 2.0-litre diesel is the most economical choice but carries this generation's defining risk: the rear-mounted timing chain can stretch and fail catastrophically. If you're buying an E83, the M57 six-cylinder diesel is the sensible choice; the M54 or N52 six-cylinder petrol is the refined alternative; the N47 requires documented chain history.",
         "whoItsFor": ""
       }
     ]
@@ -615,7 +615,7 @@
     ],
     "economicsRule": {
       "title": "The E83 rule",
-      "text": "A £2,500–£4,500 N47 recon against a £4,000 E83 sits at 63–113% of the car\u0027s value -at or above our 70% BMW threshold. Against a well-kept £7,000+ example, the same recon drops to 36–64% -a repair decision, not a financial one. Against a sub-£3,500 E83, a major engine failure is a write-off. Value the car first."
+      "text": "A £2,500–£4,500 N47 recon against a £4,000 E83 sits at 63–113% of the car's value -at or above our 70% BMW threshold. Against a well-kept £7,000+ example, the same recon drops to 36–64% -a repair decision, not a financial one. Against a sub-£3,500 E83, a major engine failure is a write-off. Value the car first."
     },
     "keyTakeaways": [
       {
@@ -628,7 +628,7 @@
       },
       {
         "question": "Which E83 Is Best Value?",
-        "answer": "M57 3.0d -six-cylinder torque and reliability without the N47\u0027s risk."
+        "answer": "M57 3.0d -six-cylinder torque and reliability without the N47's risk."
       }
     ]
   },
@@ -640,17 +640,17 @@
         "title": "N47 Diesel Timing Chain Stretch",
         "affectedModels": "E83 xDrive18d, xDrive20d (2007–2010, N47 engine).",
         "typicalFailureMileage": "40,000–120,000 miles.",
-        "rootCause": "The N47\u0027s timing chain is mounted at the rear of the engine, making it a major labour-intensive job to replace. The chain, guides, and tensioners can wear prematurely, causing chain stretch. If the chain stretches too far, it can \"jump\" a tooth or snap, causing pistons to strike open valves. Cold-start rattle for 1–2 seconds is the classic early warning.",
+        "rootCause": "The N47's timing chain is mounted at the rear of the engine, making it a major labour-intensive job to replace. The chain, guides, and tensioners can wear prematurely, causing chain stretch. If the chain stretches too far, it can \"jump\" a tooth or snap, causing pistons to strike open valves. Cold-start rattle for 1–2 seconds is the classic early warning.",
         "tieredCosts": [],
         "recommendation": "At the first sign of cold-start rattle on an N47 diesel E83, get the timing chain inspected immediately. A £1,000–£1,800 preventative repair is dramatically cheaper than the £2,500–£4,500 replacement that follows if ignored. On an E83 worth under £4,000, this decision alone determines whether the car stays economically viable.",
         "cta": {
           "label": "Compare N47 engine prices for your E83 →",
-          "href": "#"
+          "href": "/quote"
         }
       },
       {
         "id": 2,
-        "title": "M54 Oil Leaks \u0026 Cooling System Failures",
+        "title": "M54 Oil Leaks & Cooling System Failures",
         "affectedModels": "E83 2.5i, 3.0i (2004–2006, M54 engine).",
         "typicalFailureMileage": "80,000–150,000 miles.",
         "rootCause": "The M54 is notorious for oil leaks from the valve cover gasket, oil filter housing gasket, and oil pan gasket. The cooling system is also a weak point -water pumps, thermostats, and radiators can fail, leading to overheating. VANOS failures are also common.",
@@ -658,33 +658,33 @@
         "recommendation": "On any M54-powered E83, treat the cooling system as a maintenance item -replace the water pump and thermostat proactively at 80,000 miles. A £500–£1,000 preventative job is far cheaper than a £2,200+ engine replacement. Address oil leaks promptly to prevent further damage.",
         "cta": {
           "label": "Compare M54 engine prices for your E83 →",
-          "href": "#"
+          "href": "/quote"
         }
       },
       {
         "id": 3,
-        "title": "M57 Swirl Flap \u0026 Vacuum System Issues",
+        "title": "M57 Swirl Flap & Vacuum System Issues",
         "affectedModels": "E83 3.0d, xDrive30d, xDrive35d (M57 engine).",
         "typicalFailureMileage": "80,000–150,000 miles.",
-        "rootCause": "The M57\u0027s swirl flaps in the intake manifold can detach and be ingested into the engine, causing catastrophic damage. The vacuum system -including the vacuum transducer -can also fail, causing rough running and loss of power.",
+        "rootCause": "The M57's swirl flaps in the intake manifold can detach and be ingested into the engine, causing catastrophic damage. The vacuum system -including the vacuum transducer -can also fail, causing rough running and loss of power.",
         "tieredCosts": [],
         "recommendation": "Have the swirl flaps blanked or removed on any M57-powered E83 as a preventative measure -a £300–£600 job is far cheaper than the £4,000+ engine replacement that follows a flap failure. If the engine runs rough, check the vacuum system first.",
         "cta": {
           "label": "Compare M57 engine prices for your E83 →",
-          "href": "#"
+          "href": "/quote"
         }
       },
       {
         "id": 4,
-        "title": "N52 Water Pump \u0026 Ignition Coil Failures",
+        "title": "N52 Water Pump & Ignition Coil Failures",
         "affectedModels": "E83 2.5si, 3.0si, xDrive25i, xDrive30i (2006–2010, N52 engine).",
         "typicalFailureMileage": "80,000–120,000 miles.",
-        "rootCause": "The N52\u0027s electric water pump has a finite service life and can fail without warning, leading to overheating. Ignition coils are also a known weak point, causing misfires and rough running. The magnesium engine block uses aluminium bolts that can shear.",
+        "rootCause": "The N52's electric water pump has a finite service life and can fail without warning, leading to overheating. Ignition coils are also a known weak point, causing misfires and rough running. The magnesium engine block uses aluminium bolts that can shear.",
         "tieredCosts": [],
         "recommendation": "Replace the water pump proactively at 80,000 miles on any N52-powered E83. A £400–£800 preventative job is far cheaper than a £2,800+ engine replacement. If you experience misfires, replace all ignition coils as a set.",
         "cta": {
           "label": "Compare N52 engine prices for your E83 →",
-          "href": "#"
+          "href": "/quote"
         }
       }
     ]
@@ -781,7 +781,7 @@
     "dieselVariants": [
       {
         "name": "2.0d",
-        "url": "#"
+        "url": "/x3/20d"
       },
       {
         "name": "xDrive18d",
@@ -793,7 +793,7 @@
       },
       {
         "name": "3.0d",
-        "url": "#"
+        "url": "/x3/30d"
       },
       {
         "name": "xDrive30d",
@@ -801,7 +801,7 @@
       },
       {
         "name": "xDrive35d",
-        "url": "#"
+        "url": "/x3/35d"
       },
       {
         "name": "30d / 30sd",
@@ -811,7 +811,7 @@
     "petrolVariants": [
       {
         "name": "2.0i",
-        "url": "#"
+        "url": "/x3/20i"
       },
       {
         "name": "xDrive20i",
@@ -819,27 +819,27 @@
       },
       {
         "name": "2.5i",
-        "url": "#"
+        "url": "/x3"
       },
       {
         "name": "2.5si",
-        "url": "#"
+        "url": "/x3"
       },
       {
         "name": "xDrive25i",
-        "url": "#"
+        "url": "/x3"
       },
       {
         "name": "3.0i",
-        "url": "#"
+        "url": "/x3/30i"
       },
       {
         "name": "3.0si",
-        "url": "#"
+        "url": "/x3"
       },
       {
         "name": "xDrive30i",
-        "url": "#"
+        "url": "/x3/30i"
       },
       {
         "name": "28i",
@@ -900,12 +900,12 @@
       {
         "id": 7,
         "question": "Is it worth replacing a BMW X3 E83 engine, or should I scrap the car?",
-        "answer": "Depends on the car\u0027s value. Against a £4,000 E83, a £3,500 N47 recon is 88% -above our 70% BMW threshold. Against a well-kept £7,000+ example, the same recon drops to 36–50% -a repair decision. Against a sub-£3,500 example, a major engine failure is a write-off. On a well-maintained 3.0d, the calculus is different -the car\u0027s value often justifies the M57\u0027s replacement cost."
+        "answer": "Depends on the car's value. Against a £4,000 E83, a £3,500 N47 recon is 88% -above our 70% BMW threshold. Against a well-kept £7,000+ example, the same recon drops to 36–50% -a repair decision. Against a sub-£3,500 example, a major engine failure is a write-off. On a well-maintained 3.0d, the calculus is different -the car's value often justifies the M57's replacement cost."
       },
       {
         "id": 8,
         "question": "How long do BMW X3 E83 engines last?",
-        "answer": "The M57 diesel six can exceed 200,000–300,000 miles with proper servicing. The M54 and N52 petrol sixes are similarly durable. The N47\u0027s limiting factor is the timing chain -addressed proactively, it can also reach high mileage. The M47 is robust but ageing."
+        "answer": "The M57 diesel six can exceed 200,000–300,000 miles with proper servicing. The M54 and N52 petrol sixes are similarly durable. The N47's limiting factor is the timing chain -addressed proactively, it can also reach high mileage. The M47 is robust but ageing."
       },
       {
         "id": 9,
@@ -915,7 +915,7 @@
       {
         "id": 10,
         "question": "How do I find my BMW X3 E83 engine code?",
-        "answer": "Listed on the VIN plate and vehicle documentation; block stamping is visible on the engine itself. Tell us your variant (2.0d, 3.0i, xDrive30d, etc.) and approximate registration date (pre- or post-September 2006) and we\u0027ll identify it -20+ vetted specialists will confirm it for free."
+        "answer": "Listed on the VIN plate and vehicle documentation; block stamping is visible on the engine itself. Tell us your variant (2.0d, 3.0i, xDrive30d, etc.) and approximate registration date (pre- or post-September 2006) and we'll identify it -20+ vetted specialists will confirm it for free."
       }
     ]
   },
@@ -928,17 +928,17 @@
       },
       {
         "title": "Compare E83 Engine Replacement Companies",
-        "text": "see prices, warranty terms and supply \u0026 fit options side-by-side before you commit."
+        "text": "see prices, warranty terms and supply & fit options side-by-side before you commit."
       },
       {
         "title": "UK Engine Replacement Services for E83",
-        "text": "covering every variant from xDrive20i to xDrive35d, with supply-only or full supply \u0026 fit available nationwide."
+        "text": "covering every variant from xDrive20i to xDrive35d, with supply-only or full supply & fit available nationwide."
       }
     ],
     "finalCta": "Find the best BMW X3 E83 engine replacement UK drivers rely on. Compare real prices from trusted specialists on EnginesMarket today and get back on the road with confidence.",
     "ctaButton": {
       "label": "Compare BMW X3 E83 Engine Prices on EnginesMarket →",
-      "href": "#",
+      "href": "/quote",
       "note": "[PLACEHOLDER -confirm EnginesMarket URL structure]"
     }
   }

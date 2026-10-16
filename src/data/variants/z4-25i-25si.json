@@ -72,13 +72,13 @@
               "@type": "ListItem",
               "position": 1,
               "name": "M54B25",
-              "url": "https://bmwengines.uk/engine/m54/"
+              "url": "https://bmwengines.uk/engine/m50-m52-m54"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "N52B25",
-              "url": "https://bmwengines.uk/engine/n52/"
+              "url": "https://bmwengines.uk/engine/n52-n53"
             }
           ]
         },
@@ -288,7 +288,7 @@
         "recommendation": "The M54's VANOS system is a common weak point. The original seals degrade over time, causing loss of low-end torque and hesitation. Upgraded Viton/Teflon seals (OEM kit 11367841015) are available and restore throttle response. Replacement is well-understood by BMW specialists. If you notice hesitation or rough idle on an M54-engined Z4, have the VANOS system inspected.",
         "failureLink": {
           "label": "Read the full VANOS failure guide",
-          "href": "/failures/vanos-failure/"
+          "href": "/failures/vanos-solenoid-failure"
         }
       },
       {
@@ -306,7 +306,7 @@
         "recommendation": "Both the M54 and N52 suffer from cooling system weaknesses. The water pump, thermostat, and expansion tank are known failure points. On the M54, the expansion tank (OEM 17117573781) and water pump (11517527910) should be replaced preventatively. Overheating is the leading cause of engine damage on these engines. Check coolant levels regularly and investigate any drop immediately.",
         "failureLink": {
           "label": "Read the full coolant leak guide",
-          "href": "/failures/coolant-leak/"
+          "href": "/failures/m54-cooling-system"
         }
       },
       {
@@ -324,7 +324,7 @@
         "recommendation": "The N52's Valvetronic system can suffer from sensor failure, causing rough idle and stalling. Oil leaks from the valve cover gasket and oil filter housing are also common on the N52. If you notice rough idle or oil spots, have the Valvetronic system and gaskets inspected. Catch oil leaks early to prevent low oil pressure and potential engine damage.",
         "failureLink": {
           "label": "Read the full Valvetronic failure guide",
-          "href": "/failures/valvetronic-failure/"
+          "href": "/failures"
         }
       }
     ]

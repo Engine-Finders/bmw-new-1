@@ -1,38 +1,23 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
 import MStripe from "@/components/reusableComponents/MStripe";
-import { sectionBody, sectionButton, sectionDescription, sectionH2 } from "@/components/models/sectionTypography";
+import { useTheme } from "@/components/shared/themeProvider";
+import HomeIcon from "@/components/home/homeIcons";
+import { sectionBody, sectionButton, sectionDescription } from "@/components/models/sectionTypography";
 
+// Monochrome cards, as in the reference: search, diagnose and specialists, each with its own art.
 const cardThemes = [
-  {
-    accent: "var(--color-primary)",
-    border: "border-blue-200",
-    bg: "bg-[linear-gradient(135deg,#f7fbff_0%,#eef6ff_100%)]",
-    image: "/model/Hero-bg-image.webp",
-    imageClass: "object-cover object-[68%_70%]",
-    cta: "Explore Now",
-    icon: "search",
-  },
-  {
-    accent: "#078f58",
-    border: "border-emerald-200",
-    bg: "bg-[linear-gradient(135deg,#f8fffb_0%,#eefaf5_100%)]",
-    image: "/e90/engine.webp",
-    imageClass: "object-contain object-right-bottom",
-    cta: "Start Diagnosis",
-    icon: "stethoscope",
-  },
-  {
-    accent: "#ee8500",
-    border: "border-orange-200",
-    bg: "bg-[linear-gradient(135deg,#fffdf9_0%,#fff5e8_100%)]",
-    cta: "Compare Specialists",
-    icon: "handshake",
-  },
+  { cta: "Explore Now", icon: "search", art: "lineup" },
+  { cta: "Start Diagnosis", icon: "diagnose", art: "engine" },
+  { cta: "Compare Specialists", icon: "vetted-specialist", art: "map" },
 ];
 
+const DIAGNOSIS_STEPS = ["Symptoms", "Engine Code", "Mileage", "History"];
+
 function cleanText(text = "") {
-  return text
+  return String(text ?? "")
     .replaceAll("â†’", "")
     .replace(/\s+/g, " ")
     .trim();
@@ -51,7 +36,27 @@ function splitTitle(title = "") {
   };
 }
 
-function ArrowIcon({ className = "h-7 w-7" }) {
+function splitCardTitle(title = "") {
+  const clean = cleanText(title);
+  const diagnoseMatch = clean.match(/^(Diagnose)\s+(My\s+.+)$/i);
+  if (diagnoseMatch) {
+    return { before: diagnoseMatch[1], accent: diagnoseMatch[2], after: "" };
+  }
+
+  const exploreMatch = clean.match(/^(Explore)\s+(.+?)\s+(Generations)$/i);
+  if (exploreMatch) {
+    return { before: exploreMatch[1], accent: exploreMatch[2], after: exploreMatch[3] };
+  }
+
+  const compareMatch = clean.match(/^(Compare)\s+(.+)$/i);
+  if (compareMatch) {
+    return { before: compareMatch[1], accent: compareMatch[2], after: "" };
+  }
+
+  return { before: clean, accent: "", after: "" };
+}
+
+function ArrowIcon({ className = "h-6 w-6" }) {
   return (
     <svg aria-hidden="true" viewBox="0 0 24 24" className={className} fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
       <path d="M5 12h14m-6-6 6 6-6 6" />
@@ -59,39 +64,8 @@ function ArrowIcon({ className = "h-7 w-7" }) {
   );
 }
 
-function CardIcon({ name }) {
-  const paths = {
-    search: (
-      <>
-        <circle cx="10.5" cy="10.5" r="6.5" />
-        <path d="m16 16 5 5" />
-      </>
-    ),
-    stethoscope: (
-      <>
-        <path d="M6 3v5a4 4 0 0 0 8 0V3" />
-        <path d="M10 12v2a5 5 0 0 0 10 0v-1.5" />
-        <circle cx="20" cy="10" r="2" />
-        <path d="M4 3h4M12 3h4" />
-      </>
-    ),
-    handshake: (
-      <>
-        <path d="m8 12 2.4-2.4a2 2 0 0 1 2.8 0l.8.8a2 2 0 0 0 2.8 0L18 9" />
-        <path d="m5 13 5 5a2 2 0 0 0 2.8 0l.3-.3.7.7a2 2 0 0 0 2.8 0l2.4-2.4" />
-        <path d="m2 9 4-4 4 4-4 4-4-4ZM14 6l4-4 4 4-4 4-4-4Z" />
-      </>
-    ),
-  };
-
-  return (
-    <svg aria-hidden="true" viewBox="0 0 24 24" className="h-14 w-14 md:h-16 md:w-16" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-      {paths[name] || paths.search}
-    </svg>
-  );
-}
-
-function UkMapArt({ accent }) {
+function UkMapArt({ isDark }) {
+  const pin = isDark ? "#e6e6e4" : "#111111";
   const pins = [
     [56, 24],
     [66, 39],
@@ -103,68 +77,124 @@ function UkMapArt({ accent }) {
   ];
 
   return (
-    <svg aria-hidden="true" viewBox="0 0 180 220" className="absolute bottom-3 right-3 h-[82%] w-[48%] opacity-80 md:right-8 md:w-[44%]">
+    <svg aria-hidden="true" viewBox="0 0 180 220" className="h-full w-auto opacity-80">
       <path
         d="M80 10 65 24l9 15-18 12 10 17-16 13 20 13-11 20 22 8-16 28 28 8 10 31 24-17 25 13-2-31 20-11-19-21 10-28-20-16 4-28-28-1-10-28-27 8Z"
-        fill="#ead9bd"
+        fill={isDark ? "#27384a" : "#e2e2e0"}
       />
-      <path d="M33 105 16 121l22 8 17-12-22-12ZM72 189l-34 13 31 9 31-13-28-9Z" fill="#ead9bd" opacity="0.72" />
+      <path d="M33 105 16 121l22 8 17-12-22-12ZM72 189l-34 13 31 9 31-13-28-9Z" fill={isDark ? "#27384a" : "#e2e2e0"} opacity="0.72" />
       {pins.map(([cx, cy]) => (
         <g key={`${cx}-${cy}`} transform={`translate(${cx} ${cy})`}>
-          <path d="M0-10c5.2 0 9 3.8 9 8.5C9 5-0 13-0 13S-9 5-9-1.5C-9-6.2-5.2-10 0-10Z" fill={accent} />
-          <circle r="3" fill="white" />
+          <path d="M0-10c5.2 0 9 3.8 9 8.5C9 5-0 13-0 13S-9 5-9-1.5C-9-6.2-5.2-10 0-10Z" fill={pin} />
+          <circle r="3" fill={isDark ? "#1a1a1a" : "white"} />
         </g>
       ))}
     </svg>
   );
 }
 
-function ActionCard({ card, index }) {
+function DiagnosisList({ isDark }) {
+  return (
+    <div
+      className={`rounded-md border px-2.5 py-2 text-[11px] leading-none shadow-[0_8px_18px_rgba(0,0,0,0.08)] ${
+        isDark ? "border-white/12 bg-[#0a1520] text-white/80" : "border-[#e1e7ef] bg-white text-[#222]"
+      }`}
+    >
+      <p className={`mb-1.5 text-[9px] font-semibold uppercase tracking-[0.08em] ${isDark ? "text-white/50" : "text-[#617084]"}`}>
+        Diagnosis
+      </p>
+      <ul className="space-y-1.5">
+        {DIAGNOSIS_STEPS.map((step) => (
+          <li key={step} className="flex items-center gap-1.5">
+            <span
+              aria-hidden="true"
+              className={`flex h-3 w-3 items-center justify-center rounded-[2px] text-[8px] ${
+                isDark ? "bg-white text-[var(--color-text)]" : "bg-[var(--color-primary)] text-white"
+              }`}
+            >
+              {"\u2713"}
+            </span>
+            {step}
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+
+// The art sits in its own slot beside the icon, above the title, so it never covers the text.
+function CardArt({ art, heroCar, engineImage, isDark }) {
+  if (art === "lineup" && heroCar) {
+    // The same picture as this model's hero.
+    return (
+      <div className="relative h-full w-full">
+        <Image src={heroCar.src} alt="" fill className="object-contain object-right" sizes="(min-width: 768px) 22vw, 70vw" />
+      </div>
+    );
+  }
+  if (art === "engine" && engineImage) {
+    return (
+      <div className="flex h-full items-start justify-end gap-2">
+        <div className="mt-1 hidden shrink-0 sm:block md:hidden xl:block">
+          <DiagnosisList isDark={isDark} />
+        </div>
+        <div className="relative aspect-square h-full max-w-full">
+          <Image src={engineImage} alt="" fill className="object-contain object-right" sizes="(min-width: 768px) 12vw, 45vw" />
+        </div>
+      </div>
+    );
+  }
+  if (art === "map") {
+    return (
+      <div className="flex h-full justify-end">
+        <UkMapArt isDark={isDark} />
+      </div>
+    );
+  }
+  return null;
+}
+
+function ActionCard({ card, index, heroCar, engineImage, isDark }) {
   const theme = cardThemes[index] || cardThemes[0];
-  const titleParts = [
-    { before: "Explore", accent: "3 Series", after: "Generations" },
-    { before: "Diagnose", accent: "My 3 Series", after: "" },
-    { before: "Compare", accent: "UK Specialists", after: "" },
-  ][index] || { before: cleanText(card.title), accent: "", after: "" };
+  const titleParts = splitCardTitle(card.title);
+  const title = [titleParts.before, titleParts.accent, titleParts.after].filter(Boolean).join(" ");
 
   return (
     <Link
       href={card.href || "#"}
-      className={`group relative min-h-[250px] overflow-hidden rounded-md border ${theme.border} ${theme.bg} p-4 shadow-[0_10px_28px_rgba(10,26,43,0.10)] transition-all duration-200 hover:-translate-y-0.5 hover:shadow-[0_16px_34px_rgba(10,26,43,0.16)] md:min-h-[270px] md:p-5 lg:min-h-[270px]`}
-      style={{ "--card-accent": theme.accent }}
+      className={`group relative flex min-h-[230px] flex-col overflow-hidden rounded-md border p-4 transition-all duration-200 hover:-translate-y-0.5 md:min-h-[300px] md:p-5 ${
+        isDark
+          ? "border-[var(--color-border)] bg-[var(--color-surface-raised)] hover:border-white/25"
+          : "border-[#e1e7ef] bg-white shadow-[0_10px_28px_rgba(10,26,43,0.08)] hover:shadow-[0_16px_34px_rgba(10,26,43,0.14)]"
+      }`}
     >
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_80%_34%,rgba(255,255,255,0.92)_0%,rgba(255,255,255,0.08)_56%,transparent_100%)]" />
-      {theme.image ? (
-        <Image
-          src={theme.image}
-          alt=""
-          fill
-          className={`opacity-45 mix-blend-multiply ${theme.imageClass}`}
-          sizes="(min-width: 1024px) 31vw, 100vw"
+      <div className="flex flex-1 flex-col items-start">
+        <div className="flex w-full items-start gap-3">
+          <span
+            className={`flex h-12 w-12 shrink-0 items-center justify-center rounded-md shadow-[0_10px_24px_rgba(10,26,43,0.12)] md:h-16 md:w-16 ${
+              isDark ? "bg-[#0a1520]" : "bg-white"
+            }`}
+          >
+            <HomeIcon name={theme.icon} isDark={isDark} className="h-12 w-12 md:h-16 md:w-16" />
+          </span>
+          <div aria-hidden="true" className="pointer-events-none h-[140px] min-w-0 flex-1 md:h-[150px] lg:h-[170px]">
+            <CardArt art={theme.art} heroCar={heroCar} engineImage={engineImage} isDark={isDark} />
+          </div>
+        </div>
+        <h3
+          className={`mt-auto pt-5 text-[20px] font-bold leading-[1.1] md:pt-6 md:text-[24px] ${isDark ? "text-white" : "text-[var(--color-text)]"}`}
+          dangerouslySetInnerHTML={{ __html: title }}
         />
-      ) : (
-        <UkMapArt accent={theme.accent} />
-      )}
-      <div className="relative z-10 flex h-full max-w-[70%] flex-col items-start md:max-w-[74%] lg:max-w-[78%]">
-        <span className="flex h-16 w-16 items-center justify-center rounded-md bg-white/86 text-[var(--card-accent)] shadow-[0_12px_26px_rgba(10,26,43,0.10)] md:h-20 md:w-20">
-          <CardIcon name={theme.icon} />
-        </span>
-        <h3 className="mt-5 text-[24px] font-bold leading-[1.06] text-black dark:text-black md:text-[26px] lg:text-[24px]">
-          <span dangerouslySetInnerHTML={{ __html: titleParts.before }} />
-          {titleParts.before ? <br className="md:hidden lg:block" /> : null}
-          {titleParts.accent ? (
-            <>
-              {" "}
-              <span className="text-[var(--card-accent)]" dangerouslySetInnerHTML={{ __html: titleParts.accent }} />
-            </>
-          ) : null}
-          {titleParts.after ? <> <span dangerouslySetInnerHTML={{ __html: titleParts.after }} /></> : null}
-        </h3>
-        <span className="mt-4 block h-1 w-12 rounded-full bg-[var(--card-accent)]" />
-        <p className={`mt-4 max-w-[360px] text-[var(--color-text)] ${sectionBody} md:text-[17px]`} dangerouslySetInnerHTML={{ __html: cleanText(card.text) }} />
-        <span className={`mt-auto inline-flex items-center gap-5 pt-6 font-bold text-[var(--card-accent)] ${sectionButton}`}>
+        <span className={`mt-3 block h-[3px] w-10 md:w-12 ${isDark ? "bg-white" : "bg-[var(--color-primary)]"}`} />
+        {card.text ? (
+          <p
+            className={`mt-3 max-w-[360px] ${sectionBody} md:text-[17px] ${isDark ? "text-white/80" : "text-[var(--color-text)]"}`}
+            dangerouslySetInnerHTML={{ __html: cleanText(card.text) }}
+          />
+        ) : null}
+        <span className={`mt-4 inline-flex items-center gap-3 font-bold md:gap-4 ${sectionButton} ${isDark ? "text-white" : "text-[var(--color-text)]"}`}>
           {theme.cta}
-          <ArrowIcon className="h-6 w-6 transition-transform duration-200 group-hover:translate-x-1" />
+          <ArrowIcon className="h-5 w-5 transition-transform duration-200 group-hover:translate-x-1 md:h-6 md:w-6" />
         </span>
       </div>
     </Link>
@@ -172,59 +202,91 @@ function ActionCard({ card, index }) {
 }
 
 export default function ClosingActionCards({ data }) {
+  const { theme } = useTheme();
+  const isDark = theme === "dark";
+
   if (!data) return null;
 
   const title = splitTitle(data.h2);
+  const sectionBg = isDark ? "bg-[var(--color-page)]" : "bg-[#eef2f7]";
 
   return (
-    <section className="relative overflow-hidden bg-[var(--color-page)] pt-2 text-[var(--color-text)]">
-      <div className="relative overflow-hidden rounded-md bg-[var(--color-surface-raised)]">
-        <Image
-          src="/model/Hero-bg-image.webp"
-          alt=""
-          fill
-          className="hidden object-cover object-center md:block"
-          sizes="100vw"
-        />
-        <div
-          className="absolute inset-0"
-          style={{
-            background:
-              "linear-gradient(90deg, var(--color-page) 0%, var(--color-hero-fade) 34%, var(--color-hero-overlay) 54%, rgba(255,255,255,0.12) 74%, rgba(255,255,255,0) 100%)",
-          }}
-        />
-        <div
-          className="absolute inset-0"
-          style={{
-            background:
-              "radial-gradient(circle at 56% 50%, var(--color-hero-overlay) 0%, rgba(255,255,255,0.18) 25%, rgba(255,255,255,0) 60%)",
-          }}
-        />
-        <div className="relative z-10 max-w-[620px] px-4 py-4 md:px-6 md:py-6">
-          <h2 className="max-w-[570px] text-[29px] font-bold leading-[1.08] tracking-normal text-[var(--color-text)] md:text-[45px]">
-            <span dangerouslySetInnerHTML={{ __html: title.before }} />
-            {title.accent ? (
-              <>
-                <br />
-                <span className="text-[var(--color-primary)]" dangerouslySetInnerHTML={{ __html: title.accent }} />
-              </>
-            ) : null}
-          </h2>
-          <div className="mt-4">
-            <MStripe />
+    <section className={`overflow-x-hidden ${sectionBg}`}>
+      <div className={`relative overflow-hidden ${sectionBg}`}>
+        <div className="absolute inset-y-0 right-0 w-[62%] md:w-[48%]">
+          <Image
+            src="/home-image/sec2-bg.webp"
+            alt=""
+            fill
+            className="object-cover object-right"
+            sizes="(max-width: 768px) 62vw, 48vw"
+          />
+          <div
+            className={
+              isDark
+                ? "absolute inset-0 bg-[linear-gradient(90deg,var(--color-page)_0%,rgba(2,7,11,0.82)_34%,rgba(2,7,11,0.18)_100%)]"
+                : "absolute inset-0 bg-[linear-gradient(90deg,#eef2f7_0%,rgba(244,247,251,0.88)_34%,rgba(244,247,251,0.18)_100%)]"
+            }
+          />
+        </div>
+
+        <div className="relative mx-auto w-full max-w-8xl px-4 pb-3 pt-5 md:px-6 md:pb-3.5 md:pt-7 lg:px-8">
+          <div className="max-w-[620px]">
+            <p
+              className={`text-[0.64rem] font-bold uppercase tracking-[0.14em] ${
+                isDark ? "text-white/55" : "text-[var(--color-text-muted)]"
+              }`}
+            >
+              Next Steps
+            </p>
+            <h2
+              className={`mt-1.5 text-[1.55rem] font-bold leading-[1.02] sm:text-[1.85rem] md:text-[2.35rem] md:leading-[0.98] lg:text-[2.5rem] ${
+                isDark ? "text-white" : "text-[var(--color-text)]"
+              }`}
+            >
+              <span dangerouslySetInnerHTML={{ __html: title.before }} />
+              {title.accent ? (
+                <>
+                  <br />
+                  <span className="text-[var(--color-chrome-bright)]" dangerouslySetInnerHTML={{ __html: title.accent }} />
+                </>
+              ) : null}
+            </h2>
+            <div className="mt-2.5">
+              <MStripe />
+            </div>
+            <p
+              className={`mt-2 max-w-[500px] ${sectionDescription} md:text-[17px] ${
+                isDark ? "text-white/75" : "text-[var(--color-text-muted)]"
+              }`}
+            >
+              Everything you need to choose with confidence.
+              <br />
+              Data. Honesty. Specialists. All in one place.
+            </p>
           </div>
-          <p className={`mt-4 max-w-[500px] text-[var(--color-text)] ${sectionDescription} md:text-[17px]`}>
-            Everything you need to choose with confidence.
-            <br />
-            Data. Honesty. Specialists. All in one place.
-          </p>
         </div>
       </div>
 
-      <div className="grid gap-4 md:grid-cols-3">
-        {(data.cards || []).map((card, index) => (
-          <ActionCard key={card.title || card.href} card={card} index={index} />
-        ))}
+      <div className="mx-auto w-full min-w-0 max-w-8xl px-4 pb-5 pt-2 md:px-6 md:pb-6 md:pt-2.5 lg:px-8">
+        <div className="grid gap-4 md:grid-cols-3">
+          {(data.cards || []).map((card, index) => (
+            <ActionCard
+              key={card.title || card.href}
+              card={card}
+              index={index}
+              heroCar={data.heroCar}
+              engineImage={data.engineImage}
+              isDark={isDark}
+            />
+          ))}
+        </div>
+        {data.footerNote ? (
+          <p
+            className={`mt-4 text-center text-[0.82rem] ${isDark ? "text-white/60" : "text-[var(--color-text-muted)]"}`}
+            dangerouslySetInnerHTML={{ __html: cleanText(data.footerNote) }}
+          />
+        ) : null}
       </div>
     </section>
   );

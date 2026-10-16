@@ -44,7 +44,7 @@
     ],
     "primaryCta": {
       "label": "Explore 3 Series Engines →",
-      "href": "#"
+      "href": "/3-series"
     }
   },
   "ownershipVerdict": {
@@ -205,16 +205,16 @@
         }
       },
       {
-  "title": "E36/5 (1994–2000)",
-  "badge": "",
-  "meta": "1994–2000 • M43 petrol • M44 petrol • M52 six-cylinder",
-  "rating": "★★★☆☆",
-  "verdict": "The 3 Series Compact—a shortened, hatchback version of the E36 with a distinctive rear end. Powered by four-cylinder M43 and M44 petrol engines, plus the six-cylinder M52 in the 323ti. The M44 1.9-litre is the most durable; the M52 323ti is the performance pick. Ageing, but simple and well-supported—cooling system maintenance is the key.",
-  "cta": {
-    "label": "Explore E36/5 →",
-    "href": "https://bmwengines.uk/3-series-compact/e36-5"
-  }
-},
+        "title": "E36/5 (1994–2000)",
+        "badge": "",
+        "meta": "1994–2000 • M43 petrol • M44 petrol • M52 six-cylinder",
+        "rating": "★★★☆☆",
+        "verdict": "The 3 Series Compact—a shortened, hatchback version of the E36 with a distinctive rear end. Powered by four-cylinder M43 and M44 petrol engines, plus the six-cylinder M52 in the 323ti. The M44 1.9-litre is the most durable; the M52 323ti is the performance pick. Ageing, but simple and well-supported—cooling system maintenance is the key.",
+        "cta": {
+          "label": "Explore E36/5 →",
+          "href": "https://bmwengines.uk/3-series-compact/e36-5"
+        }
+      },
       {
         "title": "BMW 3 Series E46",
         "badge": "",
@@ -227,16 +227,16 @@
         }
       },
       {
-  "title": "E46/5 (2001–2004)",
-  "badge": "",
-  "meta": "2001–2004 • N42/N46 petrol • M47 diesel",
-  "rating": "★★★☆☆",
-  "verdict": "The E46 Compact—the final generation of BMW's 3 Series hatchback. Powered by N42/N46 four-cylinder petrol engines and the M47 diesel. The N46 is the most durable petrol; the M47 diesel is robust. Cooling system and VANOS are the main watchpoints. Values are low—replacement viability depends heavily on the car's overall condition.",
-  "cta": {
-    "label": "Explore E46/5 →",
-    "href": "https://bmwengines.uk/3-series-compact/e46-5"
-  }
-},
+        "title": "E46/5 (2001–2004)",
+        "badge": "",
+        "meta": "2001–2004 • N42/N46 petrol • M47 diesel",
+        "rating": "★★★☆☆",
+        "verdict": "The E46 Compact—the final generation of BMW's 3 Series hatchback. Powered by N42/N46 four-cylinder petrol engines and the M47 diesel. The N46 is the most durable petrol; the M47 diesel is robust. Cooling system and VANOS are the main watchpoints. Values are low—replacement viability depends heavily on the car's overall condition.",
+        "cta": {
+          "label": "Explore E46/5 →",
+          "href": "https://bmwengines.uk/3-series-compact/e46-5"
+        }
+      },
       {
         "title": "BMW 3 Series E90/E91/E92/E93",
         "badge": "🔥 Most Enquired - 256 enquiries (2025) [BMW-VERIFIED]",
@@ -249,38 +249,38 @@
         }
       },
       {
-  "title": "E91 (2005–2012)",
-  "badge": "",
-  "meta": "2005–2012 • N43/N52/N53 petrol • M47/N47 diesel",
-  "rating": "★★★☆☆",
-  "verdict": "The E90 estate—a practical load-lugger with the same engine range as the saloon. The N52 straight-six petrol is the most reliable; the N47 diesel carries the rear-mounted timing chain risk. The M47 (pre-2007) is more durable than the N47. E91 values are higher than saloons, making replacement more viable—but the N47 chain risk still applies.",
-  "cta": {
-    "label": "Explore E91 →",
-    "href": "https://bmwengines.uk/3-series/e91"
-  }
-},
-{
-  "title": "E92 (2006–2013)",
-  "badge": "",
-  "meta": "2006–2013 • N43/N52/N53 petrol • N47 diesel • N54/N55 six-cylinder",
-  "rating": "★★★☆☆",
-  "verdict": "The E90 coupé—a sleek two-door with a lower, wider stance. Shares the engine range with the saloon, plus the N54/N55 turbocharged six-cylinders in the 335i. The N52 is the most reliable; the N54 is fast but has HPFP and injector risks; the N47 diesel demands timing chain history. The 335i is a performance bargain with known watchpoints.",
-  "cta": {
-    "label": "Explore E92 →",
-    "href": "https://bmwengines.uk/3-series/e92"
-  }
-},
-{
-  "title": "E93 (2006–2013)",
-  "badge": "",
-  "meta": "2006–2013 • N43/N52/N53 petrol • N47 diesel • N54/N55 six-cylinder",
-  "rating": "★★★☆☆",
-  "verdict": "The E90 convertible—a folding hardtop version of the 3 Series. Shares the same engine range as the coupé and saloon. The folding roof adds weight, so the N52 330i is the sweet spot—enough power to carry the extra mass. The N47 diesel demands chain history; the N54 335i is a performance bargain with HPFP and injector watchpoints.",
-  "cta": {
-    "label": "Explore E93 →",
-    "href": "https://bmwengines.uk/3-series/e93"
-  }
-},
+        "title": "E91 (2005–2012)",
+        "badge": "",
+        "meta": "2005–2012 • N43/N52/N53 petrol • M47/N47 diesel",
+        "rating": "★★★☆☆",
+        "verdict": "The E90 estate—a practical load-lugger with the same engine range as the saloon. The N52 straight-six petrol is the most reliable; the N47 diesel carries the rear-mounted timing chain risk. The M47 (pre-2007) is more durable than the N47. E91 values are higher than saloons, making replacement more viable—but the N47 chain risk still applies.",
+        "cta": {
+          "label": "Explore E91 →",
+          "href": "https://bmwengines.uk/3-series/e91"
+        }
+      },
+      {
+        "title": "E92 (2006–2013)",
+        "badge": "",
+        "meta": "2006–2013 • N43/N52/N53 petrol • N47 diesel • N54/N55 six-cylinder",
+        "rating": "★★★☆☆",
+        "verdict": "The E90 coupé—a sleek two-door with a lower, wider stance. Shares the engine range with the saloon, plus the N54/N55 turbocharged six-cylinders in the 335i. The N52 is the most reliable; the N54 is fast but has HPFP and injector risks; the N47 diesel demands timing chain history. The 335i is a performance bargain with known watchpoints.",
+        "cta": {
+          "label": "Explore E92 →",
+          "href": "https://bmwengines.uk/3-series/e92"
+        }
+      },
+      {
+        "title": "E93 (2006–2013)",
+        "badge": "",
+        "meta": "2006–2013 • N43/N52/N53 petrol • N47 diesel • N54/N55 six-cylinder",
+        "rating": "★★★☆☆",
+        "verdict": "The E90 convertible—a folding hardtop version of the 3 Series. Shares the same engine range as the coupé and saloon. The folding roof adds weight, so the N52 330i is the sweet spot—enough power to carry the extra mass. The N47 diesel demands chain history; the N54 335i is a performance bargain with HPFP and injector watchpoints.",
+        "cta": {
+          "label": "Explore E93 →",
+          "href": "https://bmwengines.uk/3-series/e93"
+        }
+      },
       {
         "title": "BMW 3 Series F30/F31",
         "badge": "🔥 Most Enquired - 380 enquiries (2025) [BMW-VERIFIED]",
@@ -293,27 +293,27 @@
         }
       },
       {
-  "title": "F31 (2012–2019)",
-  "badge": "",
-  "meta": "2012–2019 • N20/B48 petrol • N47/B47 diesel",
-  "rating": "★★★☆☆",
-  "verdict": "The F30 estate—the 3 Series Touring with the same engine range as the saloon. The B48 (post-2015) is significantly more reliable than the N20 (pre-2015, timing chain watchpoint). The B47 diesel is improved over the N47. The 330e plug-in hybrid offers efficiency but adds complexity. F31 values are strong, making replacement viable on most examples.",
-  "cta": {
-    "label": "Explore F31 →",
-    "href": "https://bmwengines.uk/3-series/f31"
-  }
-},
-{
-  "title": "F34 (2013–2020) — Gran Turismo",
-  "badge": "",
-  "meta": "2013–2020 • N20/B48 petrol • N47/B47 diesel",
-  "rating": "★★★☆☆",
-  "verdict": "The 3 Series Gran Turismo—a raised, hatchback version with a distinctive fastback profile. Shares the F30 engine range: the N20 (pre-2015, timing chain watchpoint) and B48/B47 (post-2015, significantly improved). The B48 330i and B47 330d are the sweet spots. A niche model with strong practicality—engine choice is generation-dependent.",
-  "cta": {
-    "label": "Explore F34 →",
-    "href": "https://bmwengines.uk/3-series/f34"
-  }
-},
+        "title": "F31 (2012–2019)",
+        "badge": "",
+        "meta": "2012–2019 • N20/B48 petrol • N47/B47 diesel",
+        "rating": "★★★☆☆",
+        "verdict": "The F30 estate—the 3 Series Touring with the same engine range as the saloon. The B48 (post-2015) is significantly more reliable than the N20 (pre-2015, timing chain watchpoint). The B47 diesel is improved over the N47. The 330e plug-in hybrid offers efficiency but adds complexity. F31 values are strong, making replacement viable on most examples.",
+        "cta": {
+          "label": "Explore F31 →",
+          "href": "https://bmwengines.uk/3-series/f31"
+        }
+      },
+      {
+        "title": "F34 (2013–2020) — Gran Turismo",
+        "badge": "",
+        "meta": "2013–2020 • N20/B48 petrol • N47/B47 diesel",
+        "rating": "★★★☆☆",
+        "verdict": "The 3 Series Gran Turismo—a raised, hatchback version with a distinctive fastback profile. Shares the F30 engine range: the N20 (pre-2015, timing chain watchpoint) and B48/B47 (post-2015, significantly improved). The B48 330i and B47 330d are the sweet spots. A niche model with strong practicality—engine choice is generation-dependent.",
+        "cta": {
+          "label": "Explore F34 →",
+          "href": "https://bmwengines.uk/3-series/f34"
+        }
+      },
       {
         "title": "BMW 3 Series G20/G21",
         "badge": "",
@@ -326,70 +326,82 @@
         }
       },
       {
-  "title": "G21 (2019–present)",
-  "badge": "",
-  "meta": "2019–present • B48 petrol • B47 diesel • B58 six-cylinder",
-  "rating": "★★★★☆",
-  "verdict": "The G20 estate—the current-generation 3 Series Touring. Powered by the modular B-family engines: B48 four-cylinder petrol, B47 four-cylinder diesel, and B58 six-cylinder in the M340i. The B58 and B48 are proven and reliable; the B47 has EGR and DPF watchpoints. Modern, well-supported, and values are high—replacement is almost always viable.",
-  "cta": {
-    "label": "Explore G21 →",
-    "href": "https://bmwengines.uk/3-series/g21"
-  }
-}
+        "title": "G21 (2019–present)",
+        "badge": "",
+        "meta": "2019–present • B48 petrol • B47 diesel • B58 six-cylinder",
+        "rating": "★★★★☆",
+        "verdict": "The G20 estate—the current-generation 3 Series Touring. Powered by the modular B-family engines: B48 four-cylinder petrol, B47 four-cylinder diesel, and B58 six-cylinder in the M340i. The B58 and B48 are proven and reliable; the B47 has EGR and DPF watchpoints. Modern, well-supported, and values are high—replacement is almost always viable.",
+        "cta": {
+          "label": "Explore G21 →",
+          "href": "https://bmwengines.uk/3-series/g21"
+        }
+      }
     ],
     "rangeTable": {
       "title": "Pre-Facelift vs LCI - The Line That Matters",
       "columns": [
         "Aspect",
         "Pre-2013 (E90/F30 early)",
-        "2013–2015 (F30 pre-LCI)"
+        "2013–2015 (F30 pre-LCI)",
+        "2016+ (F30 LCI / G20)"
       ],
       "rows": [
         {
-          "model": "2016+ (F30 LCI / G20)",
-          "engineCode": "Core diesel",
-          "power": "N47D20C - rear-chain risk",
-          "induction": "",
-          "years": "",
-          "notes": ""
+          "label": "Core diesel",
+          "cells": [
+            {
+              "text": "N47D20C - rear-chain risk",
+              "tone": "risk"
+            },
+            {
+              "text": "N47D20C (revised tensioner)",
+              "tone": "risk"
+            },
+            {
+              "text": "B47D20A - front-chain, revised architecture",
+              "tone": "safe"
+            }
+          ]
         },
         {
-          "model": "N47D20C (revised tensioner)",
-          "engineCode": "B47D20A - front-chain, revised architecture",
-          "power": "Core petrol",
-          "induction": "",
-          "years": "",
-          "notes": ""
+          "label": "Core petrol",
+          "cells": [
+            {
+              "text": "N52/N54/N55"
+            },
+            {
+              "text": "N55B30"
+            },
+            {
+              "text": "B48B20/B58B30 - modular family",
+              "tone": "safe"
+            }
+          ]
         },
         {
-          "model": "N52/N54/N55",
-          "engineCode": "N55B30",
-          "power": "B48B20/B58B30 - modular family",
-          "induction": "",
-          "years": "",
-          "notes": ""
-        },
-        {
-          "model": "Our position",
-          "engineCode": "Only with documented chain replacement",
-          "power": "The improved tensioner reduces risk, but still recommend inspection",
-          "induction": "",
-          "years": "",
-          "notes": ""
-        },
-        {
-          "model": "The 3 Series we recommend for daily ownership",
-          "engineCode": "The Badge Ambiguity - \"320d\" Means Different Things",
-          "power": "Correction applied (internal): The \"320d\" badge covers three different engines depending on generation and year. On the E46 (2001–2005), it's the M57D20 four-cylinder (2.0L, 150 bhp). On the E90 (2005–2012), it's the N47D20C (2.0L, 177–184 bhp) - the chain-tensioner engine. On the F30 LCI (2016+), it's the B47D20A (2.0L, 190 bhp) - the revised architecture. All share a badge. None share a reliability profile. Ensure the model pages call out the distinction.",
-          "induction": "",
-          "years": "",
-          "notes": ""
+          "label": "Our position",
+          "cells": [
+            {
+              "text": "Only with documented chain replacement"
+            },
+            {
+              "text": "The improved tensioner reduces risk, but still recommend inspection"
+            },
+            {
+              "text": "The 3 Series we recommend for daily ownership",
+              "tone": "safe"
+            }
+          ]
         }
-      ]
+      ],
+      "internalNote": {
+        "title": "The Badge Ambiguity - \"320d\" Means Different Things",
+        "text": "Correction applied (internal): The \"320d\" badge covers three different engines depending on generation and year. On the E46 (2001–2005), it's the M57D20 four-cylinder (2.0L, 150 bhp). On the E90 (2005–2012), it's the N47D20C (2.0L, 177–184 bhp) - the chain-tensioner engine. On the F30 LCI (2016+), it's the B47D20A (2.0L, 190 bhp) - the revised architecture. All share a badge. None share a reliability profile. Ensure the model pages call out the distinction."
+      }
     },
     "comparisonLink": {
       "label": "Read the full comparison: BMW 3 Series E90 vs F30 →",
-      "href": "#"
+      "href": "/compare/e90-vs-f30"
     }
   },
   "engineDatabase": {
@@ -701,7 +713,7 @@
         },
         "link": {
           "label": "Learn more →",
-          "href": "#"
+          "href": "/failures/n47-timing-chain"
         }
       },
       {
@@ -715,7 +727,7 @@
         },
         "link": {
           "label": "Learn more →",
-          "href": "#"
+          "href": "/failures/n54-high-pressure-fuel-pump"
         }
       },
       {
@@ -729,7 +741,7 @@
         },
         "link": {
           "label": "Learn more →",
-          "href": "#"
+          "href": "/failures/water-pump-failure"
         }
       },
       {
@@ -743,7 +755,7 @@
         },
         "link": {
           "label": "Learn more →",
-          "href": "#"
+          "href": "/3-series/e46"
         }
       },
       {
@@ -757,7 +769,7 @@
         },
         "link": {
           "label": "Learn more →",
-          "href": "#"
+          "href": "/failures/m54-cooling-system"
         }
       },
       {
@@ -771,7 +783,7 @@
         },
         "link": {
           "label": "Learn more →",
-          "href": "#"
+          "href": "/failures/egr-valve-cooler"
         }
       }
     ],
@@ -1189,11 +1201,11 @@
     "paths": [
       {
         "label": "Path 1 - Know your engine? Launch the BMW diagnostic calculator with 3 Series pre-selected",
-        "href": "/fault-diagnostic-calculator"
+        "href": "/tools/diagnostic-wizard"
       },
       {
         "label": "Path 2 - Not sure which engine you have? We'll identify it first → /fault-diagnostic-calculator (identification is the first step inside the tool)",
-        "href": "#"
+        "href": "/tools/diagnostic-wizard"
       }
     ]
   },
@@ -1280,13 +1292,13 @@
         "icon": "🩺",
         "title": "Diagnose My 3 Series",
         "text": "Symptoms in, verdict out - value-weighted for your generation.",
-        "href": "/fault-diagnostic-calculator"
+        "href": "/tools/diagnostic-wizard"
       },
       {
         "icon": "🤝",
         "title": "Compare UK Specialists",
         "text": "20+ vetted BMW specialists, prices and warranties side-by-side.",
-        "href": "/quotes/?model=3-series"
+        "href": "/quote"
       }
     ],
     "footerNote": "(Minimal footer below.)"

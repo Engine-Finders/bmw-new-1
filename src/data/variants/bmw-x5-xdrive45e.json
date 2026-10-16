@@ -66,7 +66,7 @@
               "@type": "ListItem",
               "position": 1,
               "name": "B58B30 + e-motor 3.0L PHEV",
-              "url": "https://bmwengines.uk/engine/b58b30-phev/"
+              "url": "https://bmwengines.uk/engine/b57-b58"
             }
           ]
         },
@@ -285,7 +285,7 @@
         "recommendation": "",
         "failureLink": {
           "label": "",
-          "href": "#"
+          "href": "/failures/battery-parasitic-drain"
         }
       },
       {
@@ -303,7 +303,7 @@
         "recommendation": "",
         "failureLink": {
           "label": "",
-          "href": "#"
+          "href": "/failures/water-pump-failure"
         }
       },
       {
@@ -321,7 +321,7 @@
         "recommendation": "",
         "failureLink": {
           "label": "",
-          "href": "#"
+          "href": "/x5"
         }
       },
       {
@@ -339,7 +339,7 @@
         "recommendation": "",
         "failureLink": {
           "label": "",
-          "href": "#"
+          "href": "/x5"
         }
       }
     ]

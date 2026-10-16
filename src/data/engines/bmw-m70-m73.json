@@ -52,25 +52,25 @@
               "@type": "ListItem",
               "position": 1,
               "name": "BMW 8 Series E31 850i/850Ci (M70)",
-              "url": "https://bmwengines.uk/models/8-series/e31/"
+              "url": "https://bmwengines.uk/8-series/e31"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "BMW 8 Series E31 850Ci (M73)",
-              "url": "https://bmwengines.uk/models/8-series/e31/"
+              "url": "https://bmwengines.uk/8-series/e31"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "BMW 7 Series E32 750iL/750i (M70)",
-              "url": "https://bmwengines.uk/models/7-series/e32/"
+              "url": "https://bmwengines.uk/7-series/e32"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "BMW 7 Series E38 750iL/750i (M73)",
-              "url": "https://bmwengines.uk/models/7-series/e38/"
+              "url": "https://bmwengines.uk/7-series/e38"
             }
           ]
         },
@@ -196,7 +196,7 @@
     "trustStrip": [],
     "primaryCta": {
       "label": "Compare M70/M73 Engine Prices →",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "atAGlance": {
@@ -359,7 +359,7 @@
     "sharedCostNote": "",
     "cta": {
       "label": "→ Compare BMW M70/M73 engine prices from UK specialists",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "faq": {
@@ -400,7 +400,7 @@
     "finalCta": "Find the best BMW M70 or M73 engine replacement UK enthusiasts rely on. Compare real prices from trusted specialists on EnginesMarket today and get back on the road with confidence.",
     "ctaButton": {
       "label": "Compare BMW M70/M73 Engine Prices Now →",
-      "href": "#"
+      "href": "/quote"
     }
   }
 }

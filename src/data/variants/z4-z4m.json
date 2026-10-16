@@ -66,7 +66,7 @@
               "@type": "ListItem",
               "position": 1,
               "name": "S54B32 (3.2L Straight-Six)",
-              "url": "https://bmwengines.uk/engine/s54/"
+              "url": "https://bmwengines.uk/engine/s50-s52-s54"
             }
           ]
         },
@@ -285,7 +285,7 @@
         "recommendation": "Rod bearing wear is the S54's most notorious issue. The original bearings have tight clearances and can wear prematurely, especially on cars that are tracked or driven hard. Many owners proactively replace rod bearings as preventative maintenance. If you hear knocking from the bottom end, do not drive the car - catastrophic engine failure is imminent. Regular oil analysis can help monitor bearing health.",
         "failureLink": {
           "label": "Read the full rod bearing failure guide",
-          "href": "/failures/rod-bearing-failure/"
+          "href": "/failures/rod-bearing-wear-s63"
         }
       },
       {
@@ -303,7 +303,7 @@
         "recommendation": "The S54's VANOS solenoid block can become restricted with debris over time, causing rough idling, hard starts, and VANOS noise. The Z4 M's S54 is generally considered more reliable than the E46 M3's version, as BMW addressed many early VANOS issues. However, VANOS maintenance remains important. Cleaning or replacing the solenoid block is a well-understood repair.",
         "failureLink": {
           "label": "Read the full VANOS failure guide",
-          "href": "/failures/vanos-failure/"
+          "href": "/failures/vanos-solenoid-failure"
         }
       },
       {
@@ -321,7 +321,7 @@
         "recommendation": "Oil leaks from the valve cover and oil filter housing are common on ageing S54 engines. The electric water pump is also a known failure point - if it fails, the car will overheat at low engine speed, such as sitting at a stoplight. If you notice oil spots or coolant loss, have the engine inspected promptly.",
         "failureLink": {
           "label": "Read the full oil leak guide",
-          "href": "/failures/oil-leak/"
+          "href": "/failures/n55-valve-cover-oil-leak"
         }
       }
     ]

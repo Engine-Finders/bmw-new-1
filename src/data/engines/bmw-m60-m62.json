@@ -52,37 +52,37 @@
               "@type": "ListItem",
               "position": 1,
               "name": "BMW 8 Series E31 840Ci",
-              "url": "https://bmwengines.uk/models/e31-840ci/"
+              "url": "https://bmwengines.uk/8-series/e31"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "BMW 7 Series E32 730i/740i",
-              "url": "https://bmwengines.uk/models/e32-7-series/"
+              "url": "https://bmwengines.uk/7-series/e32"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "BMW 7 Series E38 730i/740i",
-              "url": "https://bmwengines.uk/models/e38-7-series/"
+              "url": "https://bmwengines.uk/7-series/e38"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "BMW 5 Series E34 540i",
-              "url": "https://bmwengines.uk/models/e34-540i/"
+              "url": "https://bmwengines.uk/5-series/e34"
             },
             {
               "@type": "ListItem",
               "position": 5,
               "name": "BMW 5 Series E39 540i",
-              "url": "https://bmwengines.uk/models/e39-540i/"
+              "url": "https://bmwengines.uk/5-series/e39"
             },
             {
               "@type": "ListItem",
               "position": 6,
               "name": "BMW X5 E53 4.4i",
-              "url": "https://bmwengines.uk/models/e53-x5-44i/"
+              "url": "https://bmwengines.uk/x5/e53"
             }
           ]
         },
@@ -225,7 +225,7 @@
     ],
     "primaryCta": {
       "label": "Compare M60/M62 Engine Prices →",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "atAGlance": {
@@ -326,7 +326,7 @@
     "sharedCostNote": "Parts cost is identical across BMW and Land Rover applications; labour time varies slightly by engine bay access.",
     "cta": {
       "label": "",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "faq": {
@@ -363,7 +363,7 @@
     "finalCta": "",
     "ctaButton": {
       "label": "",
-      "href": "#"
+      "href": "/quote"
     }
   }
 }

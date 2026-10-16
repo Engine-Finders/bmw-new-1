@@ -39,49 +39,49 @@
               "@type": "ListItem",
               "position": 1,
               "name": "B48B20A 318i/320i Engine",
-              "url": "https://bmwengines.uk/engine/b48b20a/"
+              "url": "https://bmwengines.uk/engine/b38-b48"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "B48B20B 330i Engine",
-              "url": "https://bmwengines.uk/engine/b48b20b/"
+              "url": "https://bmwengines.uk/engine/b38-b48"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "B48B20A 330e PHEV Engine",
-              "url": "https://bmwengines.uk/engine/b48b20a-phev/"
+              "url": "https://bmwengines.uk/engine/b38-b48"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "B58B30B M340i Engine",
-              "url": "https://bmwengines.uk/engine/b58b30b/"
+              "url": "https://bmwengines.uk/engine/b57-b58"
             },
             {
               "@type": "ListItem",
               "position": 5,
               "name": "B58B30P M340i LCI Engine",
-              "url": "https://bmwengines.uk/engine/b58b30p/"
+              "url": "https://bmwengines.uk/engine/b57-b58"
             },
             {
               "@type": "ListItem",
               "position": 6,
               "name": "B47D20B 318d/320d Engine",
-              "url": "https://bmwengines.uk/engine/b47d20b/"
+              "url": "https://bmwengines.uk/engine/b37-b47"
             },
             {
               "@type": "ListItem",
               "position": 7,
               "name": "B57D30A 330d Engine",
-              "url": "https://bmwengines.uk/engine/b57d30a/"
+              "url": "https://bmwengines.uk/engine/b57-b58"
             },
             {
               "@type": "ListItem",
               "position": 8,
               "name": "S58B30A M3 Engine",
-              "url": "https://bmwengines.uk/engine/s58b30a/"
+              "url": "https://bmwengines.uk/technical/engine-code-decoder"
             }
           ]
         },
@@ -141,13 +141,13 @@
               "@type": "ListItem",
               "position": 9,
               "name": "M3",
-              "url": "https://bmwengines.uk/3-series/m3/"
+              "url": "https://bmwengines.uk/3-series"
             },
             {
               "@type": "ListItem",
               "position": 10,
               "name": "M3 Competition",
-              "url": "https://bmwengines.uk/3-series/m3-competition/"
+              "url": "https://bmwengines.uk/3-series"
             }
           ]
         },
@@ -183,7 +183,7 @@
               "name": "Is the BMW G20 reliable overall?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Yes -the G20 is considered BMW\u0027s most reliable modern 3 Series. The B-series engines (B38, B48, B58) are BMW\u0027s most dependable family, and the G20\u0027s overall build quality is excellent. The 330e adds hybrid complexity but the combustion engine itself is robust."
+                "text": "Yes -the G20 is considered BMW's most reliable modern 3 Series. The B-series engines (B38, B48, B58) are BMW's most dependable family, and the G20's overall build quality is excellent. The 330e adds hybrid complexity but the combustion engine itself is robust."
               }
             },
             {
@@ -191,7 +191,7 @@
               "name": "Which G20 engine should I avoid?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "No outright avoidance -but a 330e without documented battery health or charging system history deserves a thorough inspection. The M3\u0027s S58 is a high-performance engine; budget accordingly for maintenance."
+                "text": "No outright avoidance -but a 330e without documented battery health or charging system history deserves a thorough inspection. The M3's S58 is a high-performance engine; budget accordingly for maintenance."
               }
             },
             {
@@ -207,7 +207,7 @@
               "name": "Is it worth replacing a G20 engine, or should I scrap the car?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Depends on the car\u0027s value. Against a well-kept £15,000+ G20, a £3,200 B48 recon is 21% of the car\u0027s value -safe. Against a tired £10,000 example, the same recon is 32% -still within our 70% BMW threshold. The G20 holds value well; replacement is almost always viable."
+                "text": "Depends on the car's value. Against a well-kept £15,000+ G20, a £3,200 B48 recon is 21% of the car's value -safe. Against a tired £10,000 example, the same recon is 32% -still within our 70% BMW threshold. The G20 holds value well; replacement is almost always viable."
               }
             },
             {
@@ -223,7 +223,7 @@
               "name": "What is the difference between the G20, G21 and G80?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "The G20 is the 3 Series Saloon (2018–2026), the G21 is the Touring estate (2019–2026), and the G80 is the M3 (2021–present). All are built on the CLAR platform, but the G80 uses the S58 engine and has unique bodywork. Engine costs and maintenance vary -see each generation\u0027s own page for specifics."
+                "text": "The G20 is the 3 Series Saloon (2018–2026), the G21 is the Touring estate (2019–2026), and the G80 is the M3 (2021–present). All are built on the CLAR platform, but the G80 uses the S58 engine and has unique bodywork. Engine costs and maintenance vary -see each generation's own page for specifics."
               }
             },
             {
@@ -231,7 +231,7 @@
               "name": "How do I find my G20 engine code?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Check the VIN plate, vehicle documentation, or the engine block -2.0-litre four-cylinder B48 variants include B48B20A (318i/320i/330e) and B48B20B (330i), 3.0-litre six-cylinder B58 variants include B58B30B (M340i pre-LCI) and B58B30P (M340i LCI), diesel variants include B47D20B (320d) and B57D30A (330d), and the M3 uses S58B30A. Tell us your variant and registration year and we\u0027ll identify it -20+ vetted BMW specialists will confirm it for free."
+                "text": "Check the VIN plate, vehicle documentation, or the engine block -2.0-litre four-cylinder B48 variants include B48B20A (318i/320i/330e) and B48B20B (330i), 3.0-litre six-cylinder B58 variants include B58B30B (M340i pre-LCI) and B58B30P (M340i LCI), diesel variants include B47D20B (320d) and B57D30A (330d), and the M3 uses S58B30A. Tell us your variant and registration year and we'll identify it -20+ vetted BMW specialists will confirm it for free."
               }
             }
           ]
@@ -265,7 +265,7 @@
         {
           "@type": "Dataset",
           "name": "BMW 3 Series G20 UK Engine Enquiry Data 2025",
-          "description": "Proprietary UK enquiry volumes and demand trends for BMW 3 Series G20 engines, sourced from BMWEngines.uk\u0027s specialist marketplace activity.",
+          "description": "Proprietary UK enquiry volumes and demand trends for BMW 3 Series G20 engines, sourced from BMWEngines.uk's specialist marketplace activity.",
           "creator": {
             "@type": "Organization",
             "name": "BMWEngines.uk"
@@ -299,7 +299,7 @@
   "hero": {
     "tagPill": "BMW 3 Series G20 • Saloon • 2018–2026",
     "h1": "BMW 3 Series G20 Engines -The Complete UK Guide",
-    "subHeadline": "Every engine fitted to the seventh-generation 3 Series G20 saloon -from the 2.0-litre B48 four-cylinder to the 3.0-litre B58 six-cylinder, the plug-in hybrid 330e and the range-topping M340i. Real UK costs, honest reliability data, and BMW\u0027s modular engine family at its best. Backed by 190+ real UK G20 enquiries in 2025 [BMW-VERIFIED].",
+    "subHeadline": "Every engine fitted to the seventh-generation 3 Series G20 saloon -from the 2.0-litre B48 four-cylinder to the 3.0-litre B58 six-cylinder, the plug-in hybrid 330e and the range-topping M340i. Real UK costs, honest reliability data, and BMW's modular engine family at its best. Backed by 190+ real UK G20 enquiries in 2025 [BMW-VERIFIED].",
     "trustStrip": [
       {
         "icon": "📊",
@@ -320,7 +320,7 @@
     ],
     "primaryCta": {
       "label": "Explore G20 Engines →",
-      "href": "#"
+      "href": "/3-series/g20"
     },
     "dataIntegrityNote": ""
   },
@@ -445,7 +445,7 @@
   },
   "overview": {
     "h2": "BMW 3 Series G20 -Overview",
-    "intro": "The seventh-generation BMW 3 Series (codenamed G20 for the saloon) was unveiled at the 2018 Paris Motor Show on 2 October 2018 and entered production later that month. Built on BMW\u0027s CLAR platform, the G20 marked a significant evolution over the F30 -lighter, stiffer and more technologically advanced. The engine range launched with 2.0-litre B48 four-cylinder petrols (320i, 330i) and the 3.0-litre B58 six-cylinder (M340i), joined by B47 four-cylinder and B57 six-cylinder diesels. A plug-in hybrid 330e arrived in 2019, and a July 2022 facelift (LCI) brought mild-hybrid technology to the range. The M3 (G80), based on the G20 platform, uses the S58 engine and is covered on its own Generation Page.",
+    "intro": "The seventh-generation BMW 3 Series (codenamed G20 for the saloon) was unveiled at the 2018 Paris Motor Show on 2 October 2018 and entered production later that month. Built on BMW's CLAR platform, the G20 marked a significant evolution over the F30 -lighter, stiffer and more technologically advanced. The engine range launched with 2.0-litre B48 four-cylinder petrols (320i, 330i) and the 3.0-litre B58 six-cylinder (M340i), joined by B47 four-cylinder and B57 six-cylinder diesels. A plug-in hybrid 330e arrived in 2019, and a July 2022 facelift (LCI) brought mild-hybrid technology to the range. The M3 (G80), based on the G20 platform, uses the S58 engine and is covered on its own Generation Page.",
     "keyFacts": "Platform: BMW CLAR (Cluster Architecture) • Predecessor: BMW 3 Series F30 • Successor: Current (in production) • Sibling body styles in this generation: G21 Touring, G28 Long-Wheelbase Saloon, G80 M3.",
     "marketIntelligenceLine": "The G20 saloon generated 190 real UK engine enquiries in 2025 [BMW-VERIFIED], concentrated on the 320i and 330i as the most popular UK variants."
   },
@@ -455,7 +455,7 @@
       {
         "slot": "Best Petrol Overall",
         "engine": "B48B20B -330i (2018–2026)",
-        "quote": "The B48 is BMW\u0027s most refined four-cylinder -smooth, responsive and genuinely reliable. The 330i\u0027s 258 PS is the sweet spot: more powerful than the 320i, but without the complexity or running costs of the six-cylinder M340i.",
+        "quote": "The B48 is BMW's most refined four-cylinder -smooth, responsive and genuinely reliable. The 330i's 258 PS is the sweet spot: more powerful than the 320i, but without the complexity or running costs of the six-cylinder M340i.",
         "whoItsFor": "buyers who want the best all-round G20 petrol."
       },
       {
@@ -479,8 +479,8 @@
       {
         "slot": "Most Overlooked",
         "engine": "B47D20B -320d",
-        "quote": "The B47 is a significant improvement over the <a href='https://bmwengines.uk/engine/n47'>N47</a> -timing chain issues are far less common, and EGR cooler problems are well-documented and manageable. The 320d offers excellent economy without the petrol\u0027s fuel bills.",
-        "whoItsFor": "buyers who want diesel economy and don\u0027t need six-cylinder pace."
+        "quote": "The B47 is a significant improvement over the <a href='https://bmwengines.uk/engine/n47'>N47</a> -timing chain issues are far less common, and EGR cooler problems are well-documented and manageable. The 320d offers excellent economy without the petrol's fuel bills.",
+        "whoItsFor": "buyers who want diesel economy and don't need six-cylinder pace."
       }
     ]
   },
@@ -546,7 +546,7 @@
     ],
     "economicsRule": {
       "title": "The G20 rule",
-      "text": "A £3,200–£5,000 B48 recon against a £15,000–£35,000 G20 sits at 9–33% of the car\u0027s value -well within our 70% BMW threshold. Even against a sub-£12,000 high-mileage example, the same recon is 27–42% -a repair decision, not a financial one. The G20 holds value well enough that engine replacement is almost always viable."
+      "text": "A £3,200–£5,000 B48 recon against a £15,000–£35,000 G20 sits at 9–33% of the car's value -well within our 70% BMW threshold. Even against a sub-£12,000 high-mileage example, the same recon is 27–42% -a repair decision, not a financial one. The G20 holds value well enough that engine replacement is almost always viable."
     },
     "keyTakeaways": []
   },
@@ -578,7 +578,7 @@
         "recommendation": "On any B-series G20 approaching 60,000 miles, have the cooling system inspected -a £400–£900 preventative repair is cheaper than the £2,800+ replacement that follows an overheating failure.",
         "cta": {
           "label": "Compare B48 engine prices for your G20 →",
-          "href": "#"
+          "href": "/quote"
         }
       },
       {
@@ -586,7 +586,7 @@
         "title": "B47 Diesel EGR Cooler",
         "affectedModels": "G20 318d, 320d (B47 diesel, 2018–2026).",
         "typicalFailureMileage": "60,000–120,000 miles.",
-        "rootCause": "The B47 diesel\u0027s EGR cooler can develop internal leaks, allowing coolant into the exhaust. This is a known issue across BMW\u0027s B47 engine family. The B47 is otherwise a significant improvement over the N47 -timing chain issues are far less common.",
+        "rootCause": "The B47 diesel's EGR cooler can develop internal leaks, allowing coolant into the exhaust. This is a known issue across BMW's B47 engine family. The B47 is otherwise a significant improvement over the N47 -timing chain issues are far less common.",
         "tieredCosts": [
           {
             "tier": "Preventative (Repair)",
@@ -606,12 +606,12 @@
         "recommendation": "At the first sign of coolant loss or white smoke, get the EGR cooler inspected -a £400–£900 repair is cheaper than the £3,200+ replacement that follows if ignored.",
         "cta": {
           "label": "Compare B47 engine prices for your G20 →",
-          "href": "#"
+          "href": "/quote"
         }
       },
       {
         "id": 3,
-        "title": "330e Hybrid Battery \u0026 Charging System",
+        "title": "330e Hybrid Battery & Charging System",
         "affectedModels": "G20 330e (PHEV, 2019–2026).",
         "typicalFailureMileage": "60,000–100,000 miles.",
         "rootCause": "The 330e adds significant complexity -a 12 kWh lithium-ion battery pack, electric motor and charging system. Battery degradation and charging system faults are the primary concerns. The internal combustion engine (B48) is robust, but the hybrid system requires specialist attention.",
@@ -631,10 +631,10 @@
             "note": ""
           }
         ],
-        "recommendation": "If you\u0027re buying a 330e, have a full battery health check and charging system inspection before purchase. Hybrid components can be expensive to replace -factor this into your ownership budget.",
+        "recommendation": "If you're buying a 330e, have a full battery health check and charging system inspection before purchase. Hybrid components can be expensive to replace -factor this into your ownership budget.",
         "cta": {
           "label": "Compare 330e engine prices for your G20 →",
-          "href": "#"
+          "href": "/quote"
         }
       }
     ]
@@ -715,7 +715,7 @@
         "labourHours": "16–22 hrs"
       }
     ],
-    "note": "No Generation variance from the Engine Page baseline -no dedicated Engine Pages exist for these families yet, so baseline figures are drawn from the EM_Proprietary_Data Table A. Labour hours estimated at 10–14 hours for four-cylinder engines, 12–16 hours for six-cylinder engines, and 16–22 hours for the M3\u0027s S58 due to additional complexity."
+    "note": "No Generation variance from the Engine Page baseline -no dedicated Engine Pages exist for these families yet, so baseline figures are drawn from the EM_Proprietary_Data Table A. Labour hours estimated at 10–14 hours for four-cylinder engines, 12–16 hours for six-cylinder engines, and 16–22 hours for the M3's S58 due to additional complexity."
   },
   "coreVariants": {
     "h2": "Diesel &amp; Petrol Lineup",
@@ -757,7 +757,7 @@
       },
       {
         "name": "M3 Competition",
-        "url": "#"
+        "url": "/m3"
       },
       {
         "name": "330e",
@@ -777,7 +777,11 @@
       "2. B48B20B 330i -540 requests [BMW-VERIFIED]",
       "3. B58B30B M340i -540 requests [BMW-VERIFIED]"
     ],
-    "mostRequestedVariants": ["1. 320i", "2. 330i", "3. M340i"],
+    "mostRequestedVariants": [
+      "1. 320i",
+      "2. 330i",
+      "3. M340i"
+    ],
     "averageReplacementCost": "£4,500 reconditioned, supply only [BMW-QUOTE]",
     "mostCommonFailures": [
       "1. Cooling system leaks (B-series)",
@@ -829,12 +833,12 @@
       {
         "id": 4,
         "question": "Is the BMW G20 reliable overall?",
-        "answer": "Yes -the G20 is considered BMW\u0027s most reliable modern 3 Series. The B-series engines (<a href='https://bmwengines.uk/engine/b38-b48'>B38</a>, B48, B58) are BMW\u0027s most dependable family, and the G20\u0027s overall build quality is excellent. The 330e adds hybrid complexity but the combustion engine itself is robust."
+        "answer": "Yes -the G20 is considered BMW's most reliable modern 3 Series. The B-series engines (<a href='https://bmwengines.uk/engine/b38-b48'>B38</a>, B48, B58) are BMW's most dependable family, and the G20's overall build quality is excellent. The 330e adds hybrid complexity but the combustion engine itself is robust."
       },
       {
         "id": 5,
         "question": "Which G20 engine should I avoid?",
-        "answer": "No outright avoidance -but a 330e without documented battery health or charging system history deserves a thorough inspection. The M3\u0027s S58 is a high-performance engine; budget accordingly for maintenance."
+        "answer": "No outright avoidance -but a 330e without documented battery health or charging system history deserves a thorough inspection. The M3's S58 is a high-performance engine; budget accordingly for maintenance."
       },
       {
         "id": 6,
@@ -844,7 +848,7 @@
       {
         "id": 7,
         "question": "Is it worth replacing a G20 engine, or should I scrap the car?",
-        "answer": "Depends on the car\u0027s value. Against a well-kept £15,000+ G20, a £3,200 B48 recon is 21% of the car\u0027s value -safe. Against a tired £10,000 example, the same recon is 32% -still within our 70% BMW threshold. The G20 holds value well; replacement is almost always viable."
+        "answer": "Depends on the car's value. Against a well-kept £15,000+ G20, a £3,200 B48 recon is 21% of the car's value -safe. Against a tired £10,000 example, the same recon is 32% -still within our 70% BMW threshold. The G20 holds value well; replacement is almost always viable."
       },
       {
         "id": 8,
@@ -854,12 +858,12 @@
       {
         "id": 9,
         "question": "What is the difference between the G20, G21 and G80?",
-        "answer": "The G20 is the 3 Series Saloon (2018–2026), the G21 is the Touring estate (2019–2026), and the G80 is the M3 (2021–present). All are built on the CLAR platform, but the G80 uses the S58 engine and has unique bodywork. Engine costs and maintenance vary -see each generation\u0027s own page for specifics."
+        "answer": "The G20 is the 3 Series Saloon (2018–2026), the G21 is the Touring estate (2019–2026), and the G80 is the M3 (2021–present). All are built on the CLAR platform, but the G80 uses the S58 engine and has unique bodywork. Engine costs and maintenance vary -see each generation's own page for specifics."
       },
       {
         "id": 10,
         "question": "How do I find my G20 engine code?",
-        "answer": "Check the VIN plate, vehicle documentation, or the engine block -2.0-litre four-cylinder B48 variants include B48B20A (318i/320i/330e) and B48B20B (330i), 3.0-litre six-cylinder B58 variants include B58B30B (M340i pre-LCI) and B58B30P (M340i LCI), diesel variants include B47D20B (320d) and B57D30A (330d), and the M3 uses S58B30A. Tell us your variant and registration year and we\u0027ll identify it -20+ vetted BMW specialists will confirm it for free."
+        "answer": "Check the VIN plate, vehicle documentation, or the engine block -2.0-litre four-cylinder B48 variants include B48B20A (318i/320i/330e) and B48B20B (330i), 3.0-litre six-cylinder B58 variants include B58B30B (M340i pre-LCI) and B58B30P (M340i LCI), diesel variants include B47D20B (320d) and B57D30A (330d), and the M3 uses S58B30A. Tell us your variant and registration year and we'll identify it -20+ vetted BMW specialists will confirm it for free."
       }
     ]
   },
@@ -872,17 +876,17 @@
       },
       {
         "title": "Compare G20 Engine Replacement Companies",
-        "text": "see prices, warranty terms and supply \u0026 fit options side-by-side before you commit."
+        "text": "see prices, warranty terms and supply & fit options side-by-side before you commit."
       },
       {
         "title": "UK Engine Replacement Services for G20",
-        "text": "covering every variant from 318i to M3, with supply-only or full supply \u0026 fit available nationwide."
+        "text": "covering every variant from 318i to M3, with supply-only or full supply & fit available nationwide."
       }
     ],
     "finalCta": "Find the best BMW 3 Series G20 engine replacement UK drivers rely on. Compare real prices from trusted specialists on EnginesMarket today and get back on the road with confidence.",
     "ctaButton": {
       "label": "Compare BMW 3 Series G20 Engine Prices on EnginesMarket →",
-      "href": "#",
+      "href": "/quote",
       "note": "[PLACEHOLDER -confirm EnginesMarket URL structure]"
     }
   }

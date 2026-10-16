@@ -282,7 +282,7 @@
         "recommendation": "The S62's VANOS system is the most common failure point. Earlier S62s had oil consumption issues and VANOS cold‑start rattle. Specialist companies offer rebuilt units with upgraded seals and anti‑rattle kits. At the first sign of loss of power or rattle, have the VANOS inspected - catching it early prevents more serious engine damage.",
         "failureLink": {
           "label": "",
-          "href": "/failures/vanos-failure/"
+          "href": "/failures/vanos-solenoid-failure"
         }
       },
       {
@@ -300,7 +300,7 @@
         "recommendation": "The S62 engine is known to have issues with rod bearing wear. While not as common as VANOS failure, bearings are guaranteed to be worn by now in most normal, properly maintained S62s. Regular oil changes with the correct 10W‑60 oil are crucial. Many specialists recommend replacing the rod bearings preventatively - a relatively small cost compared to a full engine replacement. If you hear knocking, do not drive the car.",
         "failureLink": {
           "label": "",
-          "href": "/failures/rod-bearing-failure/"
+          "href": "/failures/rod-bearing-wear-s63"
         }
       },
       {
@@ -318,7 +318,7 @@
         "recommendation": "The plastic timing chain guides degrade over time, causing noise and potential catastrophic failure if neglected. Preventive replacement around 100,000 miles is strongly recommended. At the first sign of rattling on cold start, have the guides inspected immediately.",
         "failureLink": {
           "label": "",
-          "href": "/failures/timing-chain-stretch/"
+          "href": "/failures/timing-chain-diagnosis-guide"
         }
       }
     ]

@@ -1,14 +1,16 @@
 "use client";
 
 import { ComposableMap, Geographies, Geography } from "react-simple-maps";
+import { useTheme } from "@/components/shared/themeProvider";
 import MStripe from "@/components/reusableComponents/MStripe";
 import GenIcon from "../generation/GenIcons";
+import { marketIconFor } from "@/components/shared/labelIcons";
+import { variantSectionBg, VariantSectionHeading, primaryBadgeClass } from "./variantSection";
 
-const ITEM_ICONS = ["warning", "gauge", "dollar", "tag", "clock", "chart"];
 const UK_REGIONS_GEO = "/320d/uk-regions-topo.json";
 
 // England's 9 electoral regions (used as a stand-in for Government Office
-// Regions — free boundary file, see martinjc/UK-GeoJSON). Any region not
+// Regions - free boundary file, see martinjc/UK-GeoJSON). Any region not
 // explicitly called out in the data rolls up into the "Other Regions" share.
 const NAMED_REGIONS = ["London", "South East", "North West"];
 
@@ -35,7 +37,7 @@ const BUBBLE_POSITION = {
   "Other Regions": "left-[6%] bottom-0",
 };
 
-// Connector line endpoints (percent of the map container) — start is the edge
+// Connector line endpoints (percent of the map container) - start is the edge
 // of each bubble facing the map, end is roughly where that region sits on it.
 const CONNECTOR_LINE = {
   London: { x1: 78, y1: 62, x2: 61, y2: 56 },
@@ -79,16 +81,18 @@ function regionShare(regions, name) {
   return Number.isNaN(num) ? 0 : num;
 }
 
-function fillForRegionGeoName(geoName, regions) {
+function fillForRegionGeoName(geoName, regions, isDark) {
   const isNamed = NAMED_REGIONS.includes(geoName);
   const share = isNamed ? regionShare(regions, geoName) : regionShare(regions, "Other Regions") / 6;
-  // 0-25% share maps to a light-to-strong primary blue fill.
   const intensity = Math.min(share / 25, 1);
-  const alpha = 0.18 + intensity * 0.65;
-  return `rgba(11, 103, 220, ${alpha.toFixed(2)})`;
+  const alpha = 0.15 + intensity * (isDark ? 0.55 : 0.45);
+  if (isDark) {
+    return `rgba(216, 217, 213, ${alpha.toFixed(2)})`;
+  }
+  return `rgba(17, 18, 16, ${alpha.toFixed(2)})`;
 }
 
-function RegionalDemandMap({ regions }) {
+function RegionalDemandMap({ regions, isDark }) {
   const otherShare = regionShare(regions, "Other Regions");
   const bubbleRegions = [
     ...regions.filter((region) => NAMED_REGIONS.includes(region.name)),
@@ -97,7 +101,7 @@ function RegionalDemandMap({ regions }) {
 
   return (
     <div className="flex h-full flex-col rounded-xl border border-[var(--color-border)] bg-[var(--color-surface)] p-4">
-      <p className="text-[0.85rem] font-bold uppercase tracking-wide text-[var(--color-text)]">Regional Demand Breakdown</p>
+      <p className="font-heading text-[1.05rem] font-bold uppercase tracking-wide text-[var(--color-text)] md:text-[1.15rem]">Regional Demand Breakdown</p>
       <div className="relative mt-4 min-h-[320px] w-full flex-1">
         <ComposableMap
           projection="geoMercator"
@@ -112,7 +116,7 @@ function RegionalDemandMap({ regions }) {
                   <Geography
                     key={geo.rsmKey}
                     geography={geo}
-                    fill={fillForRegionGeoName(name, regions)}
+                    fill={fillForRegionGeoName(name, regions, isDark)}
                     stroke="var(--color-surface)"
                     strokeWidth={0.75}
                     style={{ default: { outline: "none" }, hover: { outline: "none" }, pressed: { outline: "none" } }}
@@ -159,20 +163,21 @@ function RegionalDemandMap({ regions }) {
 }
 
 export default function MarketIntelligence({ data }) {
+  const { theme } = useTheme();
   if (!data) return null;
+
+  const isDark = theme === "dark";
 
   const items = data.items || [];
   const regionalItem = items.find((item) => item.label === "Regional Demand");
   const { regions, tag } = regionalItem ? parseRegionalDemand(regionalItem.value) : { regions: [], tag: "" };
 
   return (
-    <section className="w-full border-t border-[var(--color-border)] bg-[var(--color-page)] py-8 text-[var(--color-text)] md:py-10">
+    <section className={`w-full overflow-x-hidden border-t border-[var(--color-border)] py-5 text-[var(--color-text)] md:py-6 ${variantSectionBg(isDark, false)}`}>
       <div className="relative mx-auto w-full max-w-8xl px-4 md:px-8">
         <div className="grid grid-cols-1 gap-6 lg:grid-cols-12">
           <div className="lg:col-span-8">
-            <h2 className="text-[2.15rem] font-bold leading-[1.1] tracking-normal md:text-[3rem]">
-              Market Intelligence
-            </h2>
+            <VariantSectionHeading title="Market Intelligence" />
             <div className="mt-3">
               <MStripe />
             </div>
@@ -185,9 +190,9 @@ export default function MarketIntelligence({ data }) {
                       <div key={item.label} className="glass-panel flex flex-col gap-2 rounded-md p-4">
                         <div className="flex items-center gap-3">
                           <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-[var(--color-primary-soft)] text-[var(--color-primary)]">
-                            <GenIcon name="chart" className="h-4.5 w-4.5" />
+                            <GenIcon name={marketIconFor(item.label)} className="h-8 w-8 md:h-6 md:w-6" />
                           </span>
-                          <p className="text-[0.72rem] font-semibold uppercase tracking-wide text-[var(--color-primary)]">{item.label}</p>
+                          <p className="text-[0.88rem] font-semibold uppercase tracking-wide text-[var(--color-primary)] md:text-[0.95rem]">{item.label}</p>
                         </div>
                         <div className="flex flex-col">
                           {regions.map((region) => (
@@ -205,16 +210,16 @@ export default function MarketIntelligence({ data }) {
                   return (
                     <div key={item.label} className="flex flex-col justify-between rounded-xl border border-[var(--color-border)] bg-[var(--color-surface)] p-5 shadow-sm">
                       <div className="flex items-center gap-3">
-                        <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[var(--color-primary)] text-white">
-                          <GenIcon name={ITEM_ICONS[index % ITEM_ICONS.length]} className="h-5 w-5" />
+                        <span className={`flex h-12 w-12 shrink-0 items-center justify-center rounded-full ${primaryBadgeClass(isDark)}`}>
+                          <GenIcon name={marketIconFor(item.label)} inverted className="h-10 w-10 md:h-8 md:w-8" />
                         </span>
                         <div className="flex min-w-0 flex-col gap-0.5">
-                          <p className="text-[0.7rem] font-medium text-[var(--color-text-soft)]">{item.label}</p>
+                          <p className="text-[0.88rem] font-semibold leading-snug text-[var(--color-text)] md:text-[0.95rem]">{item.label}</p>
                           {title ? <p className="text-[0.8rem] font-bold leading-tight text-[var(--color-text)]">{title}</p> : null}
                         </div>
                       </div>
 
-                      <p className="mt-4 text-[16px] font-extrabold leading-none text-[var(--color-primary)] md:text-[18px]">{stat}</p>
+                      <p className="font-heading mt-4 text-[16px] font-bold leading-[1.3] text-[var(--color-primary)] md:text-[28px] md:leading-none">{stat}</p>
 
                       <div className="mt-2 flex flex-col gap-1">
                         {subtext ? <p className="text-[0.72rem] text-[var(--color-text-muted)]">{subtext}</p> : null}
@@ -231,7 +236,7 @@ export default function MarketIntelligence({ data }) {
 
           {regions.length > 0 ? (
             <div className="lg:col-span-4 lg:h-full">
-              <RegionalDemandMap regions={regions} />
+              <RegionalDemandMap regions={regions} isDark={isDark} />
             </div>
           ) : null}
         </div>

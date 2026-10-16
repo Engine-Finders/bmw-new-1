@@ -145,7 +145,7 @@
         "recommendation": "HPFP failure is the most notorious issue with the N54 engine. BMW issued recalls covering over 150,000 vehicles in the US for N54 HPFP failures. Symptoms include extended cranking times, particularly when hot, and the car going into limp mode. A failed HPFP can leave you stranded. While replacement is straightforward, the N54's HPFP is a known weak point - budget for it. The N55 uses an updated HPFP design that is more reliable.",
         "failureLink": {
           "label": "",
-          "href": "/failures/hpfp-failure/"
+          "href": "/failures/n54-high-pressure-fuel-pump"
         }
       },
       {
@@ -163,7 +163,7 @@
         "recommendation": "The N54's piezo direct injectors are a known failure point. BMW released updated injectors (index 12) to address the issue, but failure can still occur on higher-mileage examples. Symptoms include rough idle, misfire, and fuel smell. When replacing injectors, it's strongly recommended to replace all six and have the DME calibrated. A full set replacement typically costs £800–£2,000 including labour - cheaper than dealing with a failed catalytic converter or engine damage.",
         "failureLink": {
           "label": "",
-          "href": "/failures/fuel-injector-failure/"
+          "href": "/failures/n57-injector-seal"
         }
       },
       {
@@ -199,7 +199,7 @@
         "recommendation": "Both N54 and N55 engines are known for oil leaks from the valve cover gasket and oil filter housing gasket (OFHG). The N55's valve cover is particularly prone to warping, requiring full cover replacement. If the OFHG fails, oil can leak onto the serpentine belt, causing it to slip or break - which can then be ingested into the engine through the front crankshaft seal, causing catastrophic failure. A £300–£800 gasket replacement is far cheaper than the consequences of a snapped belt.",
         "failureLink": {
           "label": "",
-          "href": "/failures/oil-leak/"
+          "href": "/failures/n55-valve-cover-oil-leak"
         }
       },
       {

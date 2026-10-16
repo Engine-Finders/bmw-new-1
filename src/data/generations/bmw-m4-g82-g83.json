@@ -39,25 +39,25 @@
               "@type": "ListItem",
               "position": 1,
               "name": "S58B30T0 (base) Engine",
-              "url": "https://bmwengines.uk/engine/s58/"
+              "url": "https://bmwengines.uk/technical/engine-code-decoder"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "S58B30T0 (Competition) Engine",
-              "url": "https://bmwengines.uk/engine/s58/"
+              "url": "https://bmwengines.uk/technical/engine-code-decoder"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "S58B30T0/A (Competition LCI) Engine",
-              "url": "https://bmwengines.uk/engine/s58/"
+              "url": "https://bmwengines.uk/technical/engine-code-decoder"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "S58B30T0 (CSL) Engine",
-              "url": "https://bmwengines.uk/engine/s58-csl/"
+              "url": "https://bmwengines.uk/technical/engine-code-decoder"
             }
           ]
         },
@@ -69,19 +69,19 @@
               "@type": "ListItem",
               "position": 1,
               "name": "BMW M4",
-              "url": "https://bmwengines.uk/m4/base/"
+              "url": "https://bmwengines.uk/m4"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "BMW M4 Competition",
-              "url": "https://bmwengines.uk/m4/competition/"
+              "url": "https://bmwengines.uk/m4"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "BMW M4 CSL",
-              "url": "https://bmwengines.uk/m4/csl/"
+              "url": "https://bmwengines.uk/m4"
             }
           ]
         },
@@ -254,7 +254,7 @@
     ],
     "primaryCta": {
       "label": "Explore G82/G83 Engines →",
-      "href": "#"
+      "href": "/m4/g82-g83"
     },
     "dataIntegrityNote": ""
   },
@@ -493,7 +493,7 @@
         "recommendation": "Check oil levels regularly -BMW recommends checking at every fuel fill. Use the correct oil specification (BMW LL-04 or LL-12FE) and change oil every 8,000–10,000 miles if the car is used on track. A £100–£200 top-up routine is dramatically cheaper than the £6,000+ replacement that follows oil starvation.",
         "cta": {
           "label": "Compare S58 oil service prices for your M4 G82/G83 →",
-          "href": "#"
+          "href": "/quote"
         }
       },
       {
@@ -521,7 +521,7 @@
         "recommendation": "If you experience misfires or reduced performance, have the fuel system inspected immediately. A £500–£1,000 preventative repair is dramatically cheaper than the £6,000+ replacement that follows if the engine runs lean and suffers damage. Use high-quality fuel and consider fuel system cleaner treatments.",
         "cta": {
           "label": "Compare S58 fuel system repair prices for your M4 G82/G83 →",
-          "href": "#"
+          "href": "/quote"
         }
       },
       {
@@ -549,7 +549,7 @@
         "recommendation": "Consider upgrading the plastic charge pipe to an aluminium unit if you track your car or plan to tune it. A £250–£550 preventative upgrade is dramatically cheaper than the £6,000+ replacement that follows if the plastic pipe fails and causes overheating.",
         "cta": {
           "label": "Compare S58 cooling system upgrades for your M4 G82/G83 →",
-          "href": "#"
+          "href": "/m4/g82-g83"
         }
       },
       {
@@ -577,7 +577,7 @@
         "recommendation": "Have the roof mechanism inspected regularly -a £200–£500 preventative service is dramatically cheaper than the £1,500+ repair that follows if the hydraulic system fails.",
         "cta": {
           "label": "Compare G83 roof mechanism repair quotes →",
-          "href": "#"
+          "href": "/quote"
         }
       }
     ]
@@ -751,7 +751,7 @@
     "finalCta": "Find the best BMW M4 G82/G83 engine replacement UK drivers rely on. Compare real prices from trusted specialists on EnginesMarket today and get back on the road with confidence.",
     "ctaButton": {
       "label": "Compare BMW M4 G82/G83 Engine Prices on EnginesMarket →",
-      "href": "#",
+      "href": "/quote",
       "note": "[PLACEHOLDER -confirm EnginesMarket URL structure]"
     }
   }

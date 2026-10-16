@@ -18,6 +18,12 @@
   --color-primary-strong: #034daf;
   --color-primary-soft: #dceaff;
   --color-accent: #1581ff;
+  --color-chrome: #a9bdd8;
+  --color-chrome-strong: #6f8fbf;
+  --color-chrome-bright: #075fd8;
+  --color-chrome-soft: rgba(7, 95, 216, 0.1);
+  --color-cta-bg: #075fd8;
+  --color-cta-text: #ffffff;
   --color-accent-red: #ed1c24;
   --color-accent-red-soft: #fff0f0;
   --color-accent-green: #13884a;
@@ -64,9 +70,9 @@ a {
   }
 }
 
-/* Keep underlines only in Find Your Vehicle (homeSec2) */
+/* Find Your Vehicle cards: no underline (names underline on hover only) */
 .find-your-vehicle a {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 /* Accent spans inside headings loaded from JSON */
@@ -79,6 +85,12 @@ a {
 }
 
 /* CTA button — primary solid background, dark overlay on hover */
+@layer components {
+  .btn-cta {
+    background: var(--color-cta-bg);
+    color: var(--color-cta-text);
+  }
+}
 .btn-cta {
   transition: all 0.2s ease;
 }

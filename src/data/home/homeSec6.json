@@ -1,146 +1,164 @@
 {
-  "h2": "The BMW Ownership<span class=\"block heading-accent\">Economics Centre</span>",
-  "subHeadline": "The question every BMW owner eventually faces, answered honestly rather than sold around. We tell you when to repair, when to replace, and when to scrap -based on real UK data, not estimates.",
+  "h2": "The BMW Ownership <span class=\"heading-accent\">Economics Centre</span>",
+  "subHeadline": "The question every BMW owner eventually faces, answered honestly rather than sold around. We tell you when to repair, when to replace, and when to scrap - based on real UK data, not estimates.",
   "headerImage": {
-    "src": "https://images.unsplash.com/photo-1617531653332-bd46c24f2068?auto=format&fit=crop&w=900&q=80",
-    "alt": "BMW ownership economics"
+    "src": "/home-image/sec-header-light.webp",
+    "alt": "BMW kidney grille and headlights"
+  },
+  "heroImages": {
+    "light": {
+      "src": "/home-image/sec-header-light.webp",
+      "alt": "BMW kidney grille and headlights"
+    },
+    "dark": {
+      "src": "/home-image/sec-header-dark.webp",
+      "alt": "BMW kidney grille and headlights at night"
+    }
   },
   "matrix": {
+    "h3": "The Decision Matrix",
     "columns": [
-      "MODEL & ENGINE",
-      "TYPICAL VEHICLE VALUE",
-      "REPLACEMENT COST (RECON)",
-      "VERDICT"
+      {
+        "label": "Model & Engine",
+        "icon": "vehicle"
+      },
+      {
+        "label": "Typical Vehicle Value",
+        "icon": "pound"
+      },
+      {
+        "label": "Replacement Cost (Recon)",
+        "icon": "repair"
+      },
+      {
+        "label": "Verdict",
+        "icon": "shield"
+      }
     ],
     "rows": [
       {
         "model": "3 Series E90 (N47D20C)",
         "image": {
-          "src": "https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=200&q=80",
-          "alt": "3 Series E90"
+          "alt": "BMW 3 Series E90"
         },
-        "vehicleValue": "£2,500–£7,500 [THIRD-PARTY]",
-        "replacementCost": "£3,200–£5,500 [BMW-QUOTE]",
+        "vehicleValue": "£2,500-£7,500 [THIRD-PARTY]",
+        "replacementCost": "£3,200-£5,500 [BMW-QUOTE]",
         "verdict": {
-          "icon": "🔴",
-          "text": "Scrap threshold -recon cost frequently exceeds car value on sub-£4k examples. The 70% BMW threshold is live here.",
+          "text": "Scrap threshold - recon cost frequently exceeds car value on sub-£4k examples. The 70% BMW threshold is live here.",
           "type": "scrap"
         },
-        "href": "#"
+        "href": "/3-series/e90"
       },
       {
         "model": "3 Series F30 (B47D20A)",
         "image": {
-          "src": "https://images.unsplash.com/photo-1617531653332-bd46c24f2068?auto=format&fit=crop&w=200&q=80",
-          "alt": "3 Series F30"
+          "alt": "BMW 3 Series F30"
         },
-        "vehicleValue": "£7,000–£20,000 [THIRD-PARTY]",
-        "replacementCost": "£2,800–£4,500 [BMW-QUOTE]",
+        "vehicleValue": "£7,000-£20,000 [THIRD-PARTY]",
+        "replacementCost": "£2,800-£4,500 [BMW-QUOTE]",
         "verdict": {
-          "icon": "✅",
-          "text": "Safe -replacement well within value. The B47 is the sensible daily choice.",
+          "text": "Safe - replacement well within value. The B47 is the sensible daily choice.",
           "type": "safe"
         },
-        "href": "#"
+        "href": "/3-series/f30"
       },
       {
         "model": "3 Series G20 (B58B30)",
         "image": {
-          "src": "https://images.unsplash.com/photo-1617814076367-b759c7d7e738?auto=format&fit=crop&w=200&q=80",
-          "alt": "3 Series G20"
+          "alt": "BMW 3 Series G20"
         },
-        "vehicleValue": "£18,000–£35,000 [THIRD-PARTY]",
-        "replacementCost": "£3,800–£6,000 [BMW-QUOTE]",
+        "vehicleValue": "£18,000-£35,000 [THIRD-PARTY]",
+        "replacementCost": "£3,800-£6,000 [BMW-QUOTE]",
         "verdict": {
-          "icon": "✅",
-          "text": "Safe -very safe across all variants. The safest 3 Series generation for engine reliability.",
+          "text": "Safe - very safe across all variants. The safest 3 Series generation for engine reliability.",
           "type": "safe"
         },
-        "href": "#"
+        "href": "/3-series/g20"
       },
       {
         "model": "5 Series F10 (N57D30)",
         "image": {
-          "src": "https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=200&q=80",
-          "alt": "5 Series F10"
+          "alt": "BMW 5 Series F10"
         },
-        "vehicleValue": "£5,000–£16,000 [THIRD-PARTY]",
-        "replacementCost": "£4,500–£7,000 [BMW-QUOTE]",
+        "vehicleValue": "£5,000-£16,000 [THIRD-PARTY]",
+        "replacementCost": "£4,500-£7,000 [BMW-QUOTE]",
         "verdict": {
-          "icon": "⚠️",
-          "text": "Watch -sub-£8k examples approach the 70% threshold. Buy with documented service history.",
+          "text": "Watch - sub-£8k examples approach the 70% threshold. Buy with documented service history.",
           "type": "watch"
         },
-        "href": "#"
+        "href": "/5-series/f10"
       },
       {
         "model": "X5 F15 (N63B44)",
         "image": {
-          "src": "https://images.unsplash.com/photo-1617531653332-bd46c24f2068?auto=format&fit=crop&w=200&q=80",
-          "alt": "X5 F15"
+          "alt": "BMW X5 F15"
         },
-        "vehicleValue": "£10,000–£28,000 [THIRD-PARTY]",
-        "replacementCost": "£6,000–£10,000 [BMW-QUOTE]",
+        "vehicleValue": "£10,000-£28,000 [THIRD-PARTY]",
+        "replacementCost": "£6,000-£10,000 [BMW-QUOTE]",
         "verdict": {
-          "icon": "⚠️",
-          "text": "Watch -N63 recon can be 40–60% of vehicle value. The \"N63 nightmare\" is real.",
+          "text": "Watch - N63 recon can be 40-60% of vehicle value. The \"N63 nightmare\" is real.",
           "type": "watch"
         },
-        "href": "#"
+        "href": "/x5/f15"
       },
       {
         "model": "F10 M5 (S63B44)",
         "image": {
-          "src": "https://images.unsplash.com/photo-1617814076367-b759c7d7e738?auto=format&fit=crop&w=200&q=80",
-          "alt": "F10 M5"
+          "alt": "BMW F10 M5"
         },
-        "vehicleValue": "£8,000–£22,000 [THIRD-PARTY]",
-        "replacementCost": "£9,000–£14,000 [BMW-QUOTE]",
+        "vehicleValue": "£8,000-£22,000 [THIRD-PARTY]",
+        "replacementCost": "£9,000-£14,000 [BMW-QUOTE]",
         "verdict": {
-          "icon": "⚠️",
-          "text": "Watch -M-division V8 recon frequently approaches or exceeds vehicle value on older examples. Buy only with full service history and a specialist PPI.",
+          "text": "Watch - M-division V8 recon frequently approaches or exceeds vehicle value on older examples. Buy only with full service history and a specialist PPI.",
           "type": "watch"
         },
-        "href": "#"
+        "href": "/m5/f10"
       }
     ]
   },
   "ruleOfThumb": {
     "title": "The BMW Rule of Thumb",
-    "percent": "70%",
-    "percentLabel": "BMW THRESHOLD",
-    "text": "If reconditioned engine cost runs at 70% or more of what your car is actually worth on today's market, get a scrap valuation alongside any repair quote -don't decide on repair cost alone. This is our BMW-specific threshold, derived from analysing 826 3 Series enquiries in 2025 [BMW-VERIFIED] and the real cost-vs-value data behind them."
+    "lead": "If reconditioned engine cost runs at",
+    "highlight": "70% or more",
+    "body": "of what your car is actually worth on today's market, get a scrap valuation alongside any repair quote - don't decide on repair cost alone.",
+    "note": "This is our BMW-specific threshold, derived from analysing 826 3 Series enquiries in 2025 [BMW-VERIFIED] and the real cost-vs-value data behind them."
   },
   "deeperLinks": [
     {
-      "id": 1,
+      "id": "01",
       "label": "Is It Worth Replacing a 3 Series Engine? →",
       "purpose": "Full breakdown of E90/F30/G20 ownership economics",
-      "href": "#"
+      "icon": "engine",
+      "href": "/economics/is-it-worth-replacing-a-3-series-engine"
     },
     {
-      "id": 2,
+      "id": "02",
       "label": "Is a BMW N47 Failure a Write-Off? →",
       "purpose": "When repair makes sense vs when to walk away",
-      "href": "#"
+      "icon": "flame",
+      "href": "/economics/is-an-n47-failure-a-write-off"
     },
     {
-      "id": 3,
+      "id": "03",
       "label": "When Should You Scrap a BMW? →",
       "purpose": "The decision framework for older vehicles",
-      "href": "#"
+      "icon": "scale",
+      "href": "/economics/when-should-you-scrap-a-bmw"
     },
     {
-      "id": 4,
+      "id": "04",
       "label": "Most Expensive BMW Repairs →",
       "purpose": "The top 5 repairs and what they cost",
-      "href": "#"
+      "icon": "pound",
+      "href": "/economics/most-expensive-bmw-repairs"
     },
     {
-      "id": 5,
+      "id": "05",
       "label": "Cheapest BMWs to Own →",
       "purpose": "Which models offer the best value for money",
-      "href": "#"
+      "icon": "value",
+      "href": "/economics/cheapest-bmws-to-own"
     }
-  ]
+  ],
+  "deeperLinksTitle": "Deeper Analysis Links"
 }

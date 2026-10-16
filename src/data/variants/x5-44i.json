@@ -78,13 +78,13 @@
               "@type": "ListItem",
               "position": 1,
               "name": "M62B44TU",
-              "url": "https://bmwengines.uk/engine/m62/"
+              "url": "https://bmwengines.uk/engine/m60-m62"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "N62B44",
-              "url": "https://bmwengines.uk/engine/n62/"
+              "url": "https://bmwengines.uk/engine/n62-n63"
             }
           ]
         },
@@ -319,7 +319,7 @@
         "recommendation": "The M62's timing chain guides are its Achilles' heel. The plastic guides become brittle with age and break, sending debris into the oil system. If the chain jumps timing, it can cause catastrophic engine damage. At the first sign of rattling, book an inspection immediately. Preventative replacement is far cheaper than a full engine rebuild. Replace the chain tensioner every 50,000–100,000 miles to extend guide life.",
         "failureLink": {
           "label": "",
-          "href": "/failures/timing-chain-failure/"
+          "href": "/failures/timing-chain-diagnosis-guide"
         }
       },
       {
@@ -337,7 +337,7 @@
         "recommendation": "The N62's valve stem seals are its most notorious failure. The seals harden over time and allow oil to leak into the combustion chamber. A special tool allows replacement without removing the cylinder heads, but the job remains complex. At the first sign of blue smoke on startup, have the valve stem seals inspected. Some specialists recommend using a valve seal conditioning additive as a temporary measure, but replacement is the only permanent fix.",
         "failureLink": {
           "label": "",
-          "href": "/failures/valve-stem-seal-failure/"
+          "href": "/failures/valve-stem-seal-wear"
         }
       },
       {
@@ -355,7 +355,7 @@
         "recommendation": "The M62 is described as \"the leakiest engine BMW ever made\". N62 engines are equally notorious for oil leaks from valve cover gaskets, upper timing cover gaskets, and the alternator bracket gasket. Coolant transfer pipe seal failure is also common on the N62. Regular inspection of gaskets and seals is essential. If you notice a burning oil smell or visible oil, have the engine inspected promptly. Address coolant leaks immediately to avoid overheating.",
         "failureLink": {
           "label": "",
-          "href": "/failures/oil-leak/"
+          "href": "/failures/n55-valve-cover-oil-leak"
         }
       }
     ]

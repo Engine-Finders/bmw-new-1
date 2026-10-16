@@ -54,13 +54,13 @@
               "@type": "ListItem",
               "position": 1,
               "name": "2 Series Active/Gran Tourer F45/F46 (B38A15A, 102 PS, 2014-2018)",
-              "url": "https://bmwengines.uk/2-series/f45/"
+              "url": "https://bmwengines.uk/2-series-active-tourer/f45"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "2 Series Active/Gran Tourer LCI F45/F46 (B38A15A, 109 PS, 2018-2021)",
-              "url": "https://bmwengines.uk/2-series/f45/"
+              "url": "https://bmwengines.uk/2-series-active-tourer/f45"
             },
             {
               "@type": "ListItem",
@@ -72,7 +72,7 @@
               "@type": "ListItem",
               "position": 4,
               "name": "2 Series Active Tourer U06 (B38A15P, 122 PS, 2022-present)",
-              "url": "https://bmwengines.uk/2-series/u06/"
+              "url": "https://bmwengines.uk/2-series-active-tourer/u06"
             }
           ]
         },
@@ -84,25 +84,25 @@
               "@type": "ListItem",
               "position": 1,
               "name": "B38A15A (102 PS)",
-              "url": "https://bmwengines.uk/engine/b38/"
+              "url": "https://bmwengines.uk/engine/b38-b48"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "B38A15A (109 PS)",
-              "url": "https://bmwengines.uk/engine/b38/"
+              "url": "https://bmwengines.uk/engine/b38-b48"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "B38A15 (109 PS)",
-              "url": "https://bmwengines.uk/engine/b38/"
+              "url": "https://bmwengines.uk/engine/b38-b48"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "B38A15P (122 PS)",
-              "url": "https://bmwengines.uk/engine/b38/"
+              "url": "https://bmwengines.uk/engine/b38-b48"
             }
           ]
         },
@@ -345,7 +345,7 @@
         "recommendation": "The B38 timing chain tensioner is known to wear prematurely, a common issue across the B-series engine family. A failing tensioner can cause rattling noises and, if ignored, may lead to severe engine damage. Cold-start rattle is the early warning sign - ignore it and you risk piston-valve contact and a full engine replacement. Regular oil changes with the correct BMW-approved oil are the best prevention. If you hear any rattle on startup, have the timing system inspected immediately.",
         "failureLink": {
           "label": "",
-          "href": "/failures/timing-chain-tensioner/"
+          "href": "/failures/timing-chain-diagnosis-guide"
         }
       },
       {
@@ -363,7 +363,7 @@
         "recommendation": "Excessive oil consumption and timing cover oil leaks are frequently reported issues with the B38 engine. Owners have noted oil pooling on the bay liner and a burning smell after motorway runs. Check your oil level regularly - this engine is not one you can neglect. Use the correct grade of fully synthetic BMW-approved oil and consider reducing oil change intervals to 8,000 miles. If you notice a burning oil smell or oil on the front of the engine, have the timing cover seal inspected.",
         "failureLink": {
           "label": "",
-          "href": "/failures/oil-consumption/"
+          "href": "/failures/n63-oil-consumption"
         }
       },
       {
@@ -381,7 +381,7 @@
         "recommendation": "BMW 216i owners have reported engine mount failures causing cabin vibrations and clunking noises. The front engine mount can develop cracked rubber and leak damping fluid. Some owners have needed a full set of engine and transmission mounts replaced. If you notice excessive vibration at idle or clunking on gear changes, have the mounts inspected - replacement is straightforward and restores smoothness.",
         "failureLink": {
           "label": "",
-          "href": "/failures/engine-mount-failure/"
+          "href": "/failures"
         }
       },
       {
@@ -399,7 +399,7 @@
         "recommendation": "Cooling system issues have been noted in B38 engines, particularly with the thermostat and water pump. Some owners have reported the engine running hot in traffic with no visible coolant leak. Overheating can lead to severe engine damage, so it's vital to address any cooling issues promptly. If you notice temperature fluctuations or the engine running hotter than normal, have the cooling system pressure-tested immediately.",
         "failureLink": {
           "label": "",
-          "href": "/failures/coolant-leak/"
+          "href": "/failures/m54-cooling-system"
         }
       },
       {

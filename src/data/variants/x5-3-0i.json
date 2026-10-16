@@ -84,25 +84,25 @@
               "@type": "ListItem",
               "position": 1,
               "name": "M54B30",
-              "url": "https://bmwengines.uk/engine/m54/"
+              "url": "https://bmwengines.uk/engine/m50-m52-m54"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "N52B30",
-              "url": "https://bmwengines.uk/engine/n52/"
+              "url": "https://bmwengines.uk/engine/n52-n53"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "N55B30A",
-              "url": "https://bmwengines.uk/engine/n55/"
+              "url": "https://bmwengines.uk/engine/n54-n55"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "B58B30",
-              "url": "https://bmwengines.uk/engine/b58/"
+              "url": "https://bmwengines.uk/engine/b57-b58"
             }
           ]
         },
@@ -345,7 +345,7 @@
         "recommendation": "The M54's cooling system is its most significant weakness. Water pump failures, thermostat issues, and radiator leaks are common. The water pump impeller can fail without warning, leading to sudden overheating. If you notice the temperature gauge creeping up or any coolant loss, have the system inspected immediately. Proactive replacement of the water pump, thermostat and hoses at 80,000-mile intervals is recommended preventative maintenance.",
         "failureLink": {
           "label": "",
-          "href": "/failures/cooling-system-failure/"
+          "href": "/failures/m54-cooling-system"
         }
       },
       {
@@ -363,7 +363,7 @@
         "recommendation": "Oil leaks are among the most common issues on both the M54 and N52 engines. The M54 is prone to leaks from the valve cover gasket, oil filter housing gasket, and rear main seal. The N52 shares these issues, with the valve cover gasket, oil filter housing gasket, and oil pan gasket being common failure points. The \"Mickey Mouse flange\" coolant connector is also a known leak point on the N52. If you notice oil spots under the car or a burning smell, have it inspected promptly.",
         "failureLink": {
           "label": "",
-          "href": "/failures/oil-leak/"
+          "href": "/failures/n55-valve-cover-oil-leak"
         }
       },
       {
@@ -381,7 +381,7 @@
         "recommendation": "The VANOS system, which controls variable valve timing, can be a source of headaches on both the M54 and N52. Common issues include rattling noises at startup and loss of power and efficiency. The M54's VANOS seals can degrade over time, causing a loss of low-end torque. The N52 had a 2023 recall affecting 155,627 vehicles, where bolts securing the VANOS mechanism could loosen or break. If you hear a rattling sound at startup or notice a loss of power, have the VANOS system inspected.",
         "failureLink": {
           "label": "",
-          "href": "/failures/vanos-failure/"
+          "href": "/failures/vanos-solenoid-failure"
         }
       },
       {
@@ -399,7 +399,7 @@
         "recommendation": "The N55 engine in the F15 X5 suffers from oil leaks around seals, gaskets and the cylinder head, as well as timing chain wear (after 100,000 km). Some owners have reported increased oil consumption at higher mileages. A cold-start rattle is the early warning sign for timing chain issues - ignore it and you risk piston-valve contact and a full engine replacement. Regular oil changes with the correct BMW-approved oil are the best prevention.",
         "failureLink": {
           "label": "",
-          "href": "/failures/n55-timing-chain/"
+          "href": "/failures/timing-chain-diagnosis-guide"
         }
       },
       {
@@ -417,7 +417,7 @@
         "recommendation": "The B58 engine is widely regarded as BMW's most reliable modern straight-six, but it has minor known issues. The PCV valve can fail, causing rough idle and misfires. Valve cover gasket and oil filter housing gasket leaks can also occur. Cooling system issues are generally less severe than on earlier engines. Regular maintenance and early detection will keep the B58 running smoothly for hundreds of thousands of miles.",
         "failureLink": {
           "label": "",
-          "href": "/failures/b58-pcv/"
+          "href": "/failures"
         }
       }
     ]

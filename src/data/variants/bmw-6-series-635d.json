@@ -66,7 +66,7 @@
               "@type": "ListItem",
               "position": 1,
               "name": "M57TU2 3.0L Twin-Turbo Diesel",
-              "url": "https://bmwengines.uk/engine/m57tu2/"
+              "url": "https://bmwengines.uk/engine/m57"
             }
           ]
         },
@@ -285,7 +285,7 @@
         "recommendation": "",
         "failureLink": {
           "label": "",
-          "href": "#"
+          "href": "/failures/n57-injector-seal"
         }
       },
       {
@@ -303,7 +303,7 @@
         "recommendation": "",
         "failureLink": {
           "label": "",
-          "href": "#"
+          "href": "/failures/dpf-blockage"
         }
       },
       {
@@ -321,7 +321,7 @@
         "recommendation": "",
         "failureLink": {
           "label": "",
-          "href": "#"
+          "href": "/failures/egr-valve-cooler"
         }
       },
       {
@@ -339,7 +339,7 @@
         "recommendation": "",
         "failureLink": {
           "label": "",
-          "href": "#"
+          "href": "/failures/m57-swirl-flap"
         }
       }
     ]

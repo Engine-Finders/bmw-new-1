@@ -60,7 +60,7 @@
               "@type": "ListItem",
               "position": 2,
               "name": "F22/F23 220d (B47D20A, 2015–2021)",
-              "url": "https://bmwengines.uk/2-series/f22-lci/"
+              "url": "https://bmwengines.uk/2-series/f22"
             },
             {
               "@type": "ListItem",
@@ -78,7 +78,7 @@
               "@type": "ListItem",
               "position": 5,
               "name": "F45/F46 Tourer 220d (N47D20C/B47D20A, 2015–2021)",
-              "url": "https://bmwengines.uk/2-series/f45/"
+              "url": "https://bmwengines.uk/2-series-active-tourer/f45"
             }
           ]
         },
@@ -96,13 +96,13 @@
               "@type": "ListItem",
               "position": 2,
               "name": "B47D20A",
-              "url": "https://bmwengines.uk/engine/b47/"
+              "url": "https://bmwengines.uk/engine/b37-b47"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "B47C20B",
-              "url": "https://bmwengines.uk/engine/b47/"
+              "url": "https://bmwengines.uk/engine/b37-b47"
             }
           ]
         },
@@ -371,7 +371,7 @@
         "recommendation": "BMW's B47 engine uses a single-row timing chain system prone to premature stretch and guide wear. BMW Service Bulletin SI B11 02 17 confirms timing chain tensioner wear as a known weakness in pre-2018 models, recommending inspection and replacement if rattle exceeds 3 seconds. BMW extended warranty coverage to 10 years / 120,000 miles for affected engines. If your car is now out of warranty, dealers charge £4,200–£5,200 for a new engine.",
         "failureLink": {
           "label": "Read the full timing chain failure guide → /failures/b47-timing-chain/ [NEW FAILURE PAGE NEEDED]",
-          "href": "#"
+          "href": "/failures/timing-chain-diagnosis-guide"
         }
       },
       {
@@ -389,7 +389,7 @@
         "recommendation": "BMW recalled 1.6 million diesel vehicles globally over EGR cooler faults that could cause coolant leaks and, in rare cases, fire risk. The recall covers 2 Series models manufactured between July 2013 and December 2017. Glycol leakage from the EGR cooler can combine with soot deposits and lead to melting of the intake manifold. Verify recall completion before buying any 220d. Some owners report running issues after EGR replacement - ensure the work was completed correctly.",
         "failureLink": {
           "label": "Read the full EGR cooler failure guide",
-          "href": "/failures/egr-valve-cooler-failure/"
+          "href": "/failures/egr-valve-cooler"
         }
       },
       {
@@ -407,7 +407,7 @@
         "recommendation": "Like all modern diesels, the 220d's DPF is sensitive to short urban journeys. The B47 has a reported service life of 210,000–360,000 km (130,000–220,000 miles) if properly maintained with correct quality oil and fuel. If you primarily drive short urban journeys, factor in regular motorway runs to allow passive DPF regenerations. Some owners report DPF clogging requiring manual regeneration or cleaning.",
         "failureLink": {
           "label": "Read the full DPF clogging guide",
-          "href": "/failures/dpf-clogging/"
+          "href": "/failures/dpf-blockage"
         }
       }
     ]

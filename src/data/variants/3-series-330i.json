@@ -96,31 +96,31 @@
               "@type": "ListItem",
               "position": 1,
               "name": "M54B30",
-              "url": "https://bmwengines.uk/engine/m54/"
+              "url": "https://bmwengines.uk/engine/m50-m52-m54"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "N52B30",
-              "url": "https://bmwengines.uk/engine/n52/"
+              "url": "https://bmwengines.uk/engine/n52-n53"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "N53B30",
-              "url": "https://bmwengines.uk/engine/n53/"
+              "url": "https://bmwengines.uk/engine/n52-n53"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "N20B20",
-              "url": "https://bmwengines.uk/engine/n20/"
+              "url": "https://bmwengines.uk/engine/n13-n20"
             },
             {
               "@type": "ListItem",
               "position": 5,
               "name": "B48B20",
-              "url": "https://bmwengines.uk/engine/b48/"
+              "url": "https://bmwengines.uk/engine/b38-b48"
             }
           ]
         },
@@ -379,7 +379,7 @@
         "recommendation": "The N20's timing chain guides are made of plastic that deteriorates over time . Once they break, pieces drop into the oil pan and the chain can slip, leading to piston-valve contact in this interference engine . BMW's 15,000-mile oil change interval has been identified as a contributing factor - specialists recommend 8,000–10,000 mile intervals . If you hear any rattling from the engine, especially on cold start, book an inspection immediately.",
         "failureLink": {
           "label": "",
-          "href": "/failures/n20-timing-chain-failure/"
+          "href": "/failures/n20-timing-chain-tensioner"
         }
       },
       {
@@ -397,7 +397,7 @@
         "recommendation": "The N53's high-pressure fuel pump and piezo injectors are well-documented weak points . When one injector fails, the others are often not far behind . Injector replacement requires proper coding by a specialist or BMW dealer . Use 97 RON fuel as a minimum and avoid thrashing the car from cold to help mitigate issues .",
         "failureLink": {
           "label": "",
-          "href": "/failures/hpfp-failure/"
+          "href": "/failures/n54-high-pressure-fuel-pump"
         }
       },
       {
@@ -415,7 +415,7 @@
         "recommendation": "The M54's cooling system is its most critical weak point. The plastic expansion tank, water pump, and thermostat housing all degrade with age . Neglecting the cooling system can lead to catastrophic overheating . If you see any coolant warnings, have the system inspected immediately.",
         "failureLink": {
           "label": "",
-          "href": "/failures/coolant-leak/"
+          "href": "/failures/m54-cooling-system"
         }
       }
     ]

@@ -60,7 +60,7 @@
               "@type": "ListItem",
               "position": 1,
               "name": "U06 223i (B48 MHEV, 2022–present)",
-              "url": "https://bmwengines.uk/2-series/u06/"
+              "url": "https://bmwengines.uk/2-series-active-tourer/u06"
             }
           ]
         },
@@ -72,7 +72,7 @@
               "@type": "ListItem",
               "position": 1,
               "name": "B48 (2.0-litre 4-cyl turbo MHEV)",
-              "url": "https://bmwengines.uk/engine/b48/"
+              "url": "https://bmwengines.uk/engine/b38-b48"
             }
           ]
         },
@@ -300,7 +300,7 @@
         "recommendation": "B48 injectors are generally reliable, but they can fail over time. Using high-quality fuel and regular service can extend their life. If you experience rough running or misfires, have the injectors tested - replacing them as a set is recommended if multiple are failing.",
         "failureLink": {
           "label": "",
-          "href": "/failures/injector-failure/"
+          "href": "/failures/n57-injector-seal"
         }
       },
       {
@@ -318,7 +318,7 @@
         "recommendation": "The 48V MHEV system is generally reliable, but the 48V battery and electric motor can experience issues. If you notice warning lights or reduced power, have the system diagnostics run. Many issues are software-related and can be resolved with updates.",
         "failureLink": {
           "label": "",
-          "href": "/failures/hybrid-system-failure/ (Note: may need to create if not exists)"
+          "href": "/failures"
         }
       }
     ]

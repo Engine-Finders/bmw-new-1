@@ -72,7 +72,7 @@
               "@type": "ListItem",
               "position": 1,
               "name": "B38A15A",
-              "url": "https://bmwengines.uk/engine/b38a15a/"
+              "url": "https://bmwengines.uk/engine/b38-b48"
             }
           ]
         },
@@ -291,7 +291,7 @@
         "recommendation": "The B38 engine uses a timing chain tensioner that can wear prematurely. A failing tensioner causes rattling noises and, if ignored, may lead to severe engine damage. This is the single most important issue to monitor on the 18i. A cold‑start rattle is the classic warning sign -don't ignore it. A preventative tensioner and chain replacement at £800–£1,800 is far cheaper than a £1,800–£3,500 engine replacement.",
         "failureLink": {
           "label": "",
-          "href": "/failures/timing-chain-failure/"
+          "href": "/failures/timing-chain-diagnosis-guide"
         }
       },
       {
@@ -309,7 +309,7 @@
         "recommendation": "Oil leaks from the oil filter housing and valve cover have been reported on the B38 engine. If the oil filter housing gasket fails, oil can leak onto the serpentine belt, causing it to slip or break -which can then be ingested into the engine through the front crankshaft seal, causing catastrophic failure. If you notice oil spots under your X2 18i or a burning oil smell, investigate immediately.",
         "failureLink": {
           "label": "",
-          "href": "/failures/oil-leak/"
+          "href": "/failures/n55-valve-cover-oil-leak"
         }
       },
       {
@@ -327,7 +327,7 @@
         "recommendation": "Ignition coil failure is a known issue on the B38 engine. Symptoms include misfire, rough idle, and hesitation. Coils are relatively inexpensive and straightforward to replace, but ignoring them can lead to catalytic converter damage from unburnt fuel. If you notice misfire or rough running, have the ignition system inspected promptly.",
         "failureLink": {
           "label": "",
-          "href": "/failures/ignition-system-failure/"
+          "href": "/failures"
         }
       },
       {
@@ -345,7 +345,7 @@
         "recommendation": "Owners have reported issues with the PCV system and coolant hoses on the B38 engine. Deterioration of hoses and the PCV system can lead to coolant leaks, engine performance issues, and oil consumption. Regular inspection of coolant levels and hoses is essential. If you notice any coolant loss or engine performance issues, have the vehicle inspected promptly.",
         "failureLink": {
           "label": "",
-          "href": "/failures/cooling-system-failure/"
+          "href": "/failures/m54-cooling-system"
         }
       }
     ]

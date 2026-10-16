@@ -351,7 +351,7 @@
         "recommendation": "Head gasket failure is one of the most significant issues on higher-mileage M30 engines. Early cars (1977–1980) are particularly vulnerable - a horrible EGR system created excessive heat and warped cylinder heads, leading to a class-action lawsuit and BMW replacing most heads with an updated design that did not warp. Failing head gaskets have become a known issue as the engine has aged, particularly around cylinder 6. If you notice coolant loss, overheating, or white smoke, have the head gasket tested immediately. Proactive replacement of the cooling system (water pump, thermostat, hoses) can help prevent overheating that causes head gasket failure.",
         "failureLink": {
           "label": "",
-          "href": "/failures/head-gasket-failure/"
+          "href": "/failures"
         }
       },
       {
@@ -369,7 +369,7 @@
         "recommendation": "Oil leaks are among the most common issues with the M30, particularly from the valve cover gasket and oil pan. Over time, gaskets can wear out, leading to leaks that can create a mess and potentially affect engine performance. The M30 engine is very durable if well maintained. The problem is, most aren't. Regular inspections can catch these before they become major issues. If you notice oil spots under the car or a burning smell, have it inspected promptly.",
         "failureLink": {
           "label": "",
-          "href": "/failures/oil-leak/"
+          "href": "/failures/n55-valve-cover-oil-leak"
         }
       },
       {
@@ -387,7 +387,7 @@
         "recommendation": "The M30's timing chain is generally durable, but the chain will stretch with time, and the spring in the tensioner will get weak. After 250,000 km (approx 155,000 miles), the timing chain may require replacement. Symptoms of wear include metallic sounds on startup. If the chain skips a tooth, the engine can suffer from bent valves and very low compression. A cold-start rattle is the early warning sign - ignore it and you risk piston-valve contact and a full engine replacement. Regular oil changes and maintaining correct oil pressure are the best prevention.",
         "failureLink": {
           "label": "",
-          "href": "/failures/timing-chain-wear/"
+          "href": "/failures/timing-chain-diagnosis-guide"
         }
       },
       {
@@ -405,7 +405,7 @@
         "recommendation": "The water pump and thermostat will eventually fail - though less frequently than on newer models. The M30's cooling system is relatively simple but age takes its toll. If you notice coolant loss or temperature fluctuations, have the cooling system pressure-tested immediately. Proactive replacement of the water pump, thermostat and hoses at 100,000-mile intervals is recommended preventative maintenance.",
         "failureLink": {
           "label": "",
-          "href": "/failures/coolant-leak/"
+          "href": "/failures/m54-cooling-system"
         }
       },
       {
@@ -423,7 +423,7 @@
         "recommendation": "The M30's valvetrain uses rocker arms and adjustable valve lash. Most everything in the head can cause problems: the occasional broken rocker (more likely if you run at high RPM a lot), worn adjusters. Failure to adjust valves and a loose cam oiler bar results in a worn camshaft. Regular valve adjustments (every 15,000–20,000 miles) are essential for the M30. If you hear tapping from the top of the engine, have the valve clearances checked and adjusted.",
         "failureLink": {
           "label": "",
-          "href": "/failures/valve-train-wear/"
+          "href": "/failures"
         }
       }
     ]

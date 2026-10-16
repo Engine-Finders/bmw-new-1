@@ -78,13 +78,13 @@
               "@type": "ListItem",
               "position": 1,
               "name": "N54 (3.0 twin-turbo)",
-              "url": "https://bmwengines.uk/engine/n54/"
+              "url": "https://bmwengines.uk/engine/n54-n55"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "N55 (3.0 single-turbo)",
-              "url": "https://bmwengines.uk/engine/n55/"
+              "url": "https://bmwengines.uk/engine/n54-n55"
             }
           ]
         },
@@ -294,7 +294,7 @@
         "recommendation": "The N54's HPFP is its defining weakness - a well-documented issue that plagued early cars. If you experience long cranking or loss of power, have the fuel pressure tested. BMW issued recalls for this, but many cars are now out of warranty. Replacing the HPFP with a revised unit is the permanent fix.",
         "failureLink": {
           "label": "",
-          "href": "/failures/high-pressure-fuel-pump-failure/"
+          "href": "/failures/n54-high-pressure-fuel-pump"
         }
       },
       {
@@ -312,7 +312,7 @@
         "recommendation": "N54 injectors are another well-known weak point - they can leak or fail, causing misfires and fuel contamination. BMW issued revised injectors (index 12) which are more reliable. If you experience rough running, have the injectors tested - replacing them as a set is recommended.",
         "failureLink": {
           "label": "",
-          "href": "/failures/injector-failure/"
+          "href": "/failures/n57-injector-seal"
         }
       },
       {

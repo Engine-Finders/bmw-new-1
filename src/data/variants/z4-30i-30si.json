@@ -78,13 +78,13 @@
               "@type": "ListItem",
               "position": 1,
               "name": "M54B30",
-              "url": "https://bmwengines.uk/engine/m54b30/"
+              "url": "https://bmwengines.uk/engine/m50-m52-m54"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "N52B30",
-              "url": "https://bmwengines.uk/engine/n52b30/"
+              "url": "https://bmwengines.uk/engine/n52-n53"
             }
           ]
         },
@@ -319,7 +319,7 @@
         "recommendation": "The M54's VANOS system uses rubber seals that degrade over time, causing a loss of low‑end torque and sluggish response. The DISA valve (which adjusts intake runner length) uses a plastic flap that can break, sending debris into the intake manifold - potentially causing catastrophic engine damage. Replacing VANOS seals with upgraded versions and reinforcing or replacing the DISA valve with a metal unit are essential preventative measures. If you hear rattling from the intake manifold, have the DISA valve inspected immediately.",
         "failureLink": {
           "label": "",
-          "href": "/failures/vanos-failure/"
+          "href": "/failures/vanos-solenoid-failure"
         }
       },
       {
@@ -337,7 +337,7 @@
         "recommendation": "The N52 is known for oil leaks from the valve cover gasket, oil filter housing, and valvetronic motor gasket. The valve cover itself can warp, requiring full replacement. If the oil filter housing gasket fails, oil can leak onto the serpentine belt, causing it to slip or break - which can then be ingested into the engine through the front crankshaft seal, causing catastrophic failure. A £300–£900 gasket replacement is far cheaper than the consequences of a snapped belt. Replacing the valvetronic motor gasket preventatively is recommended.",
         "failureLink": {
           "label": "",
-          "href": "/failures/oil-leak/"
+          "href": "/failures/n55-valve-cover-oil-leak"
         }
       },
       {
@@ -373,7 +373,7 @@
         "recommendation": "The N52's VANOS system uses steel oil sealing rings at the front of the camshafts. These can wear a groove into the alloy cam carrier, causing oil pressure loss and VANOS malfunction. If the inlet bearing ledge is worn, a new cylinder head assembly is required at a cost of approximately £4,000. The exhaust bearing ledge is replaceable at around £365 plus 4‑5 hours of labour. A light chattering noise often sounds like a piston issue but is actually wear in the cam carriers. Regular oil changes (every year or 8,000 miles with fully synthetic oil) are critical to prevent this issue. While rare, this is the most expensive potential repair on the N52.",
         "failureLink": {
           "label": "",
-          "href": "/failures/vanos-failure/"
+          "href": "/failures/vanos-solenoid-failure"
         }
       },
       {
@@ -391,7 +391,7 @@
         "recommendation": "The N52 can suffer from hydraulic valve adjuster (lifter) noise, particularly on cold starts. This issue was corrected on many cars early in their life under warranty. If the noise is present only when cold and disappears when warm, it is more of an annoyance and should not result in catastrophic engine failure. However, if it persists, have the lifters inspected. You can ask a BMW dealer to check the service history using the VIN to confirm if the issue was addressed.",
         "failureLink": {
           "label": "",
-          "href": "/failures/hydraulic-lifter-failure/"
+          "href": "/failures"
         }
       }
     ]

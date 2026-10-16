@@ -66,7 +66,7 @@
               "@type": "ListItem",
               "position": 1,
               "name": "N55B30A (3.0L Straight-Six Turbo + 80 PS e-motor)",
-              "url": "https://bmwengines.uk/engine/n55/"
+              "url": "https://bmwengines.uk/engine/n54-n55"
             }
           ]
         },
@@ -285,7 +285,7 @@
         "recommendation": "The N55's HPFP is its most notorious weak point. If you experience long cranking or hesitation, don't ignore it - a failing HPFP can lead to lean running and catalytic converter damage. The ActiveHybrid 3 uses the same HPFP as the standard N55, so the same warning applies. The replacement is well-understood and well-documented.",
         "failureLink": {
           "label": "Read the full HPFP failure guide",
-          "href": "/failures/hpfp-failure/"
+          "href": "/failures/n54-high-pressure-fuel-pump"
         }
       },
       {
@@ -303,7 +303,7 @@
         "recommendation": "The N55's plastic chargepipe is prone to cracking, especially on tuned cars. The solution is an aftermarket metal chargepipe - fit once and forget. This is a straightforward fix for a known weak point.",
         "failureLink": {
           "label": "Read the full chargepipe failure guide",
-          "href": "/failures/chargepipe-failure/"
+          "href": "/failures"
         }
       },
       {
@@ -321,7 +321,7 @@
         "recommendation": "The ActiveHybrid 3's hybrid system uses a 1.3 kWh lithium-ion battery and an electric motor integrated into the transmission. Battery degradation and electric motor faults are the main concerns. The battery is the most expensive single component to replace. If your electric range has dropped significantly or you experience drivetrain errors, have the hybrid system inspected.",
         "failureLink": {
           "label": "Read the full hybrid battery degradation guide",
-          "href": "/failures/hybrid-battery-degradation/"
+          "href": "/failures/battery-parasitic-drain"
         }
       }
     ]
