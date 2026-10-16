@@ -261,7 +261,7 @@ function VerdictBadge({ verdict, variant = "plain" }) {
             : "border-[var(--color-border)] bg-[var(--color-surface)] text-[var(--color-text)]"
         }`}
       >
-        <HomeIcon name={iconKey} isDark={isDark} className="h-[2.1rem] w-[2.1rem] md:h-[1.575rem] md:w-[1.575rem]" />
+        <HomeIcon name={iconKey} isDark={isDark} className="h-10 w-10 md:h-8 md:w-8" />
         <span className={colorClass}>{text}</span>
       </span>
     );
@@ -269,7 +269,7 @@ function VerdictBadge({ verdict, variant = "plain" }) {
 
   return (
     <span className={`inline-flex items-center gap-1.5 text-[0.74rem] font-medium leading-tight ${colorClass}`}>
-      <HomeIcon name={iconKey} isDark={isDark} className="h-[2.1rem] w-[2.1rem] md:h-[1.575rem] md:w-[1.575rem]" />
+      <HomeIcon name={iconKey} isDark={isDark} className="h-10 w-10 md:h-8 md:w-8" />
       <span>{text}</span>
     </span>
   );
@@ -282,11 +282,11 @@ function CategoryHeader({ label, icon }) {
   return (
     <div className="mb-2 flex items-center gap-2.5 md:mb-2.5 md:gap-3">
       <span
-        className={`flex h-12 w-12 shrink-0 items-center justify-center rounded-full border md:h-[3.25rem] md:w-[3.25rem] ${
+        className={`flex h-14 w-14 shrink-0 items-center justify-center rounded-full border md:h-[3.75rem] md:w-[3.75rem] ${
           isDark ? "border-white/20" : "border-[var(--color-chrome)]"
         }`}
       >
-        <HomeIcon name={icon === "suv" ? "suv" : "vehicle"} isDark={isDark} className="h-12 w-12 md:h-14 md:w-14" />
+        <HomeIcon name={icon === "suv" ? "suv" : "vehicle"} isDark={isDark} className="h-14 w-14 md:h-16 md:w-16" />
       </span>
       <p
         className={`shrink-0 text-[0.72rem] font-semibold uppercase tracking-[0.12em] md:text-[0.78rem] ${
