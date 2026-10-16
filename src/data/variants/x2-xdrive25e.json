@@ -66,7 +66,7 @@
               "@type": "ListItem",
               "position": 1,
               "name": "B38A15A PHEV",
-              "url": "https://bmwengines.uk/engine/b38/"
+              "url": "https://bmwengines.uk/engine/b38-b48"
             }
           ]
         },
@@ -285,7 +285,7 @@
         "recommendation": "The 10 kWh battery is the hybrid system's Achilles' heel. Many owners experience faster capacity loss than expected, with real-world electric range dropping to 20–30 km rather than the claimed 50–60 km. The battery typically lasts around 1,500 charge cycles - about 75,000 km with daily charging. To maximise battery life, avoid frequent rapid charging, keep the battery between 20% and 80% for daily use, and use the BMW app to monitor battery health.",
         "failureLink": {
           "label": "",
-          "href": "/failures/hybrid-battery-failure/"
+          "href": "/failures/battery-parasitic-drain"
         }
       },
       {
@@ -303,7 +303,7 @@
         "recommendation": "Charging problems are common - faulty welded joints in the battery unit can cause short circuits, leading to error messages or complete system failure. The 12V battery can also drain faster than expected, causing starting problems. If you experience any charging issues, have the system inspected promptly. A BMW specialist with PHEV diagnostic equipment is essential for accurate fault finding.",
         "failureLink": {
           "label": "",
-          "href": "/failures/hybrid-charging-failure/"
+          "href": "/failures"
         }
       },
       {
@@ -321,7 +321,7 @@
         "recommendation": "The X2 xDrive25e is \"a rolling computer,\" and software glitches are a common frustration. The central display can freeze or go black, affecting infotainment, navigation, and even basic functions like the gear selector. Sensor failures - such as rollover detection sensors in 2020 models - can affect airbag deployment. A software update or reset often resolves these issues, but persistent problems may require component replacement. Having a vehicle that costs nearly €50,000 and needs a \"reboot\" to start is understandably frustrating.",
         "failureLink": {
           "label": "",
-          "href": "/failures/electrical-failure/"
+          "href": "/failures"
         }
       }
     ]

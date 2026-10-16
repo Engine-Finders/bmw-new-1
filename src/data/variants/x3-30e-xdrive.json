@@ -72,13 +72,13 @@
               "@type": "ListItem",
               "position": 1,
               "name": "B48B20A",
-              "url": "https://bmwengines.uk/engine/b48b20a/"
+              "url": "https://bmwengines.uk/engine/b38-b48"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "B48B20V",
-              "url": "https://bmwengines.uk/engine/b48b20v/"
+              "url": "https://bmwengines.uk/engine/b38-b48"
             }
           ]
         },
@@ -323,7 +323,7 @@
         "recommendation": "The B48's PCV valve is a known weak point. A failing PCV valve can cause rough running, engine misfires, and blue/white smoke from the exhaust due to oil being drawn into the intake. If the PCV valve fails, the engine may run rough and consume oil. Early diagnosis and replacement are essential - ignoring it can lead to more expensive repairs.",
         "failureLink": {
           "label": "",
-          "href": "/failures/pcv-valve-failure/"
+          "href": "/failures"
         }
       },
       {
@@ -341,7 +341,7 @@
         "recommendation": "The X3 30e's lithium‑ion battery is a significant component. Over time, battery degradation is inevitable - the range will drop, and charging may take longer. BMW batteries are generally well‑engineered, but if the battery fails outside of the warranty period (typically 6‑8 years), replacement is expensive. If you notice a significant drop in electric range or warning lights, have the battery health checked by a specialist. Some owners have reported electronic control units refusing to enter low‑power sleep mode, causing overnight battery drain.",
         "failureLink": {
           "label": "",
-          "href": "/failures/hybrid-battery-failure/"
+          "href": "/failures/battery-parasitic-drain"
         }
       },
       {
@@ -359,7 +359,7 @@
         "recommendation": "The 2.0‑litre turbocharged engine in the xDrive30e is known for its performance, but it can develop turbocharger issues and oil leaks over time. Common problems include oil leaks, worn bearings, or damaged turbine blades. If the oil filter housing gasket fails, oil can leak onto the serpentine belt, causing it to slip or break - which can then be ingested into the engine through the front crankshaft seal, causing catastrophic failure. If you notice oil spots under your X3 30e or a burning oil smell, investigate immediately.",
         "failureLink": {
           "label": "",
-          "href": "/failures/oil-leak/"
+          "href": "/failures/n55-valve-cover-oil-leak"
         }
       }
     ]

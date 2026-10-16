@@ -66,7 +66,7 @@
               "@type": "ListItem",
               "position": 1,
               "name": "B48A20T1",
-              "url": "https://bmwengines.uk/engine/b48/"
+              "url": "https://bmwengines.uk/engine/b38-b48"
             }
           ]
         },
@@ -276,7 +276,7 @@
         "recommendation": "The B48's oil filter housing is a known weak point. The unit can crack, causing coolant or oil leaks. Because it sits under the intake manifold, replacement is labour-intensive. Dealership costs can be significant - one US owner reported a $3,000 quote. However, once replaced, the issue rarely recurs. Check for coolant loss or oil spots regularly, and investigate any drop in fluid levels promptly.",
         "failureLink": {
           "label": "Read the full oil filter housing failure guide",
-          "href": "/failures/oil-filter-housing-failure/"
+          "href": "/failures/n55-valve-cover-oil-leak"
         }
       },
       {
@@ -294,7 +294,7 @@
         "recommendation": "The B48's electric water pump and coolant return line hoses are known to fail. Owners report that coolant hose failure is \"not a matter of if they will fail, but when\". These are typically 60,000–100,000 mile items. Replacing the water pump and hoses preventatively at around 70,000 miles is cheaper than dealing with an overheated engine.",
         "failureLink": {
           "label": "Read the full coolant leak guide",
-          "href": "/failures/coolant-leak/"
+          "href": "/failures/m54-cooling-system"
         }
       },
       {
@@ -312,7 +312,7 @@
         "recommendation": "Some 128ti owners report transmission hesitation or jerky shifts. BMW has acknowledged this as a known characteristic on some vehicles. A software update or gearbox adaptation reset often improves behaviour. If you experience severe issues, have the transmission inspected under warranty. Not all cars suffer from this - many owners report smooth operation.",
         "failureLink": {
           "label": "Read the full transmission failure guide",
-          "href": "/failures/transmission-failure/"
+          "href": "/failures"
         }
       }
     ]

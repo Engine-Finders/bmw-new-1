@@ -72,13 +72,13 @@
               "@type": "ListItem",
               "position": 1,
               "name": "B58B30 (335-340 bhp)",
-              "url": "https://bmwengines.uk/engine/b58/"
+              "url": "https://bmwengines.uk/engine/b57-b58"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "B58B30M2 (374-392 bhp)",
-              "url": "https://bmwengines.uk/engine/b58/"
+              "url": "https://bmwengines.uk/engine/b57-b58"
             }
           ]
         },
@@ -305,7 +305,7 @@
         "recommendation": "Though the B58 engine has proven mostly reliable, it has one well-known problem: failure of the PCV valve. This issue is especially common on cars with upgraded turbos. The PCV diaphragm cap is prone to failure with age and mileage, as the rubber portion naturally dries and cracks over time. Signs include misfires, rough idle, and oil in the intake. The good news is that this is easily fixed with an affordable repair kit.",
         "failureLink": {
           "label": "",
-          "href": "/failures/pcv-valve-failure/"
+          "href": "/failures"
         }
       },
       {
@@ -323,7 +323,7 @@
         "recommendation": "The B58 engine can be prone to coolant leaks. Problems with the coolant reservoir cap seals can bleed coolant slowly, whereas if the leak is heavy, check the charge-cooler hasn't been punctured. Some owners have reported the need to top up coolant on a monthly basis. If you notice a \"Coolant Low\" message, investigate further immediately. Regular coolant system inspections are recommended.",
         "failureLink": {
           "label": "",
-          "href": "/failures/coolant-leak/"
+          "href": "/failures/m54-cooling-system"
         }
       },
       {
@@ -341,7 +341,7 @@
         "recommendation": "Valve cover gasket failure is one of the most common issues with the BMW B58 engine. The gasket is made of rubber and has a tendency to become brittle, crack and start to leak due to constant exposure to heat and engine oil. Obvious oil leaks are the most common symptom. Leaking oil can saturate and degrade vacuum, coolant, and air intake hoses, and can foul spark plugs. Regular inspections can catch this before it becomes a major issue.",
         "failureLink": {
           "label": "",
-          "href": "/failures/valve-cover-gasket/"
+          "href": "/failures/n55-valve-cover-oil-leak"
         }
       },
       {
@@ -359,7 +359,7 @@
         "recommendation": "A common problem with the B58 is that upon servicing, the oil filter has a chance of sticking and not coming out cleanly. This results in longer service times. Many owners of older B58s have experienced a leaky oil filter housing, with the average lifespan for the component appearing to be around eight years. Regular oil changes (every 12,000 miles, or 6–8,000 miles if driven hard) are recommended.",
         "failureLink": {
           "label": "",
-          "href": "/failures/oil-filter-housing/"
+          "href": "/failures/n55-valve-cover-oil-leak"
         }
       },
       {
@@ -377,7 +377,7 @@
         "recommendation": "Common B58 engine problems include VANOS solenoid failure due to O-ring wear, which can affect variable valve timing. The timing chain and tensioners are inaccessible at the back of the engine, making timing-related repairs an engine-out job. If you experience rough idle or hesitation, have the VANOS system inspected promptly.",
         "failureLink": {
           "label": "",
-          "href": "/failures/vanos-failure/"
+          "href": "/failures/vanos-solenoid-failure"
         }
       }
     ]

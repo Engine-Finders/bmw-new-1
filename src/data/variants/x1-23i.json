@@ -66,7 +66,7 @@
               "@type": "ListItem",
               "position": 1,
               "name": "B48A20M2 (2.0L 4-cyl Turbo MHEV)",
-              "url": "https://bmwengines.uk/engine/b48a20m2/"
+              "url": "https://bmwengines.uk/engine/b38-b48"
             }
           ]
         },
@@ -285,7 +285,7 @@
         "recommendation": "Timing chain wear is a known issue on B48 engines, particularly on earlier examples. The B48A20M2 has revised timing chain guides, but tensioner wear remains a possibility -especially with extended oil change intervals. At the first sign of cold-start rattle, get the chain and tensioners inspected immediately. Regular oil changes using BMW LL-01 approved oil are the single most effective preventative measure.",
         "failureLink": {
           "label": "Read the full timing chain failure guide",
-          "href": "/failures/timing-chain-wear/"
+          "href": "/failures/timing-chain-diagnosis-guide"
         }
       },
       {
@@ -303,7 +303,7 @@
         "recommendation": "Ignition coil failure is a very common cause of misfires in B48 and <a href='https://bmwengines.uk/engine/b57-b58'>B58</a> engines. BMW has issued repair instructions for B48 engines in the U11 X1 regarding ignition coil replacement. Diagnosis is simple: swap the suspected bad coil with a good one and see if the misfire code follows. If you experience misfires or rough running, have the ignition system inspected.",
         "failureLink": {
           "label": "Read the full ignition coil failure guide",
-          "href": "/failures/ignition-coil-failure/"
+          "href": "/failures"
         }
       },
       {
@@ -321,7 +321,7 @@
         "recommendation": "Oil leaks from the valve cover gasket or oil filter housing are common on B48 engines. If you notice oil spots or a burning smell, have the engine inspected promptly. Left unchecked, oil loss can lead to low oil levels and potential engine damage. The valve cover gasket is a well-understood repair on BMW four-cylinder engines.",
         "failureLink": {
           "label": "Read the full oil leak guide",
-          "href": "/failures/oil-leak/"
+          "href": "/failures/n55-valve-cover-oil-leak"
         }
       }
     ]

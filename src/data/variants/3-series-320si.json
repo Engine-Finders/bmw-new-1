@@ -72,7 +72,7 @@
               "@type": "ListItem",
               "position": 1,
               "name": "N45B20S (hand-built)",
-              "url": "https://bmwengines.uk/engine/n45b20s/"
+              "url": "https://bmwengines.uk/engine/n40-n42-n43-n45-n46"
             }
           ]
         },
@@ -291,7 +291,7 @@
         "recommendation": "The N45 family is notorious for timing chain problems. The original tensioner was too short, allowing the chain to become slack and rub against the guides. By 100,000 km, the tensioner can fail completely. This is the single biggest reliability concern on the 320si. A cold-start rattle is the early warning sign - ignore it and you risk piston-valve contact and a full engine replacement. Given the rarity of the N45B20S, sourcing a replacement engine is increasingly difficult. Use only BMW-approved 5W-30 oil and reduce oil change intervals to 8,000 miles.",
         "failureLink": {
           "label": "",
-          "href": "/failures/timing-chain-tensioner/"
+          "href": "/failures/timing-chain-diagnosis-guide"
         }
       },
       {
@@ -309,7 +309,7 @@
         "recommendation": "Oil consumption in the BMW N45 engine is a common issue with several potential causes, ranging from relatively minor seal failures to more significant internal wear. Worn valve stem seals, piston ring and cylinder wall wear, and crankcase ventilation system (CCV) diaphragm failure are all known causes. Check your oil level regularly - this engine is not one you can neglect. BMW strongly discourages the use of any alternative engine oil, as the consequences can be very serious.",
         "failureLink": {
           "label": "",
-          "href": "/failures/oil-consumption/"
+          "href": "/failures/n63-oil-consumption"
         }
       },
       {
@@ -327,7 +327,7 @@
         "recommendation": "The N45B20S uses double VANOS variable valve timing. Idle vibration is a common symptom, with the most frequent cause being the VANOS system. Cleaning the VANOS unit is a common repair measure. If you experience rough idle or hesitation, have the VANOS system inspected promptly.",
         "failureLink": {
           "label": "",
-          "href": "/failures/vanos-failure/"
+          "href": "/failures/vanos-solenoid-failure"
         }
       },
       {
@@ -345,7 +345,7 @@
         "recommendation": "The N45 series has an obvious drawback: detonation of the fuel mixture. The problem arises from poor quality fuel or oil. BMW strongly recommends using only high-quality premium unleaded fuel and the correct grade of BMW-approved engine oil. Using the wrong oil can have very serious consequences, potentially requiring major repairs.",
         "failureLink": {
           "label": "",
-          "href": "/failures/fuel-system-issues/"
+          "href": "/failures"
         }
       }
     ]

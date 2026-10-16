@@ -72,13 +72,13 @@
               "@type": "ListItem",
               "position": 1,
               "name": "N20B20",
-              "url": "https://bmwengines.uk/engine/n20/"
+              "url": "https://bmwengines.uk/engine/n13-n20"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "B48B20",
-              "url": "https://bmwengines.uk/engine/b48/"
+              "url": "https://bmwengines.uk/engine/b38-b48"
             }
           ]
         },
@@ -305,7 +305,7 @@
         "recommendation": "The N20's timing chain tensioner is the defining weak point of this engine generation. Pre-2016 cars are the highest risk, with the chain guides being prone to failure. BMW revised the tensioner and guides in 2016, but the risk remains on all N20 engines to some degree. A cold-start rattle is the early warning sign - ignore it and you risk piston-valve contact and a full engine replacement. Regular oil changes with the correct BMW-approved oil are the best prevention. At the first sign of rattle, get it inspected immediately.",
         "failureLink": {
           "label": "",
-          "href": "/failures/n20-timing-chain/"
+          "href": "/failures/n20-timing-chain-tensioner"
         }
       },
       {
@@ -323,7 +323,7 @@
         "recommendation": "The N20's oil filter housing gasket is prone to failure, causing oil leaks that can damage other components if left unaddressed. The gasket becomes brittle and cracks over time. A leaking oil filter housing can also lead to oil starvation, which is catastrophic for the engine. Regular inspections can catch this before it becomes a major issue.",
         "failureLink": {
           "label": "",
-          "href": "/failures/oil-filter-housing/"
+          "href": "/failures/n55-valve-cover-oil-leak"
         }
       },
       {
@@ -341,7 +341,7 @@
         "recommendation": "The B48 is a significant improvement over the N20, but it has its own quirks. Coolant leaks (often from the coolant reservoir, water pump, or charge cooler) are more common than in the N20. The PCV system is also a known weak point, with the valve and diaphragm being prone to failure and causing drivability issues. BMW has released several revised parts for these issues. If you notice coolant loss or rough idle, have the system inspected immediately.",
         "failureLink": {
           "label": "",
-          "href": "/failures/b48-coolant-leak/"
+          "href": "/failures/m54-cooling-system"
         }
       },
       {
@@ -359,7 +359,7 @@
         "recommendation": "Both the N20 and B48 can suffer from valve cover gasket failure. The gasket is made of rubber and has a tendency to become brittle and crack over time due to heat exposure. Obvious oil leaks are the most common symptom. Leaking oil can saturate and degrade vacuum, coolant, and air intake hoses. Regular inspections can catch this before it becomes a major issue.",
         "failureLink": {
           "label": "",
-          "href": "/failures/valve-cover-gasket/"
+          "href": "/failures/n55-valve-cover-oil-leak"
         }
       },
       {
@@ -377,7 +377,7 @@
         "recommendation": "VANOS solenoid failure due to O-ring wear can affect variable valve timing on the N20. If you experience rough idle or hesitation, have the VANOS system inspected promptly.",
         "failureLink": {
           "label": "",
-          "href": "/failures/vanos-failure/"
+          "href": "/failures/vanos-solenoid-failure"
         }
       }
     ]

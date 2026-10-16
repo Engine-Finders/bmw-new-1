@@ -72,7 +72,7 @@
               "@type": "ListItem",
               "position": 1,
               "name": "B58B30 3.0L Turbo Inline-Six",
-              "url": "https://bmwengines.uk/engine/b58b30/"
+              "url": "https://bmwengines.uk/engine/b57-b58"
             }
           ]
         },
@@ -299,7 +299,7 @@
         "recommendation": "",
         "failureLink": {
           "label": "",
-          "href": "#"
+          "href": "/failures/water-pump-failure"
         }
       },
       {
@@ -317,7 +317,7 @@
         "recommendation": "",
         "failureLink": {
           "label": "",
-          "href": "#"
+          "href": "/"
         }
       },
       {
@@ -335,7 +335,7 @@
         "recommendation": "",
         "failureLink": {
           "label": "",
-          "href": "#"
+          "href": "/failures/n55-valve-cover-oil-leak"
         }
       },
       {
@@ -353,7 +353,7 @@
         "recommendation": "",
         "failureLink": {
           "label": "",
-          "href": "#"
+          "href": "/"
         }
       }
     ]

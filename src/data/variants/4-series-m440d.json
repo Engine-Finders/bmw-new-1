@@ -72,7 +72,7 @@
               "@type": "ListItem",
               "position": 1,
               "name": "B57D30T2 (B57D30B)",
-              "url": "https://bmwengines.uk/engine/b57/"
+              "url": "https://bmwengines.uk/engine/b57-b58"
             }
           ]
         },
@@ -291,7 +291,7 @@
         "recommendation": "The EGR cooler is one of the most prevalent problems with the B57 engine. Coolant can seep into the intake system, causing white exhaust smoke, rough idling, or in worst cases, serious engine damage. BMW has issued multiple recalls affecting millions of diesel vehicles globally over EGR cooler faults that could cause coolant leaks and, in rare cases, fire risk. Verify recall completion before buying any M440d - this is a free fix at the dealership. If the vehicle is out of warranty and the recall wasn't performed, replacement costs can be significant.",
         "failureLink": {
           "label": "Read the full EGR cooler failure guide",
-          "href": "/failures/egr-valve-cooler-failure/"
+          "href": "/failures/egr-valve-cooler"
         }
       },
       {
@@ -309,7 +309,7 @@
         "recommendation": "Like all modern diesels, the M440d's DPF is sensitive to short urban journeys that prevent the engine from reaching optimal temperatures for regeneration. If you primarily drive short distances, factor in regular motorway runs to allow passive DPF regenerations. Ignoring DPF warnings can lead to clogged filters, requiring expensive replacement. Some owners report that driving the car hard on the motorway can clear minor blockages - but if the warning persists, book a forced regeneration at a specialist.",
         "failureLink": {
           "label": "Read the full DPF clogging guide",
-          "href": "/failures/dpf-clogging/"
+          "href": "/failures/dpf-blockage"
         }
       },
       {
@@ -327,7 +327,7 @@
         "recommendation": "If you're doing the majority of your driving in short distances or stop-and-go traffic, carbon buildup in the intake valves and manifold is a known issue. The engine may not reach the temperature needed to burn away oil vapour and soot, leading to clogging. Symptoms include reduced responsiveness, poorer fuel efficiency, and slower acceleration. Regular long journeys and using premium diesel can help mitigate this issue. If symptoms develop, an intake cleaning (walnut blasting) is the recommended solution.",
         "failureLink": {
           "label": "Read the full carbon buildup guide → /failures/carbon-buildup-intake/ [NEW FAILURE PAGE NEEDED]",
-          "href": "#"
+          "href": "/failures"
         }
       },
       {
@@ -345,7 +345,7 @@
         "recommendation": "The B57 uses Bosch common-rail diesel injectors that can wear over time. Symptoms include rough idle, misfires, and increased fuel consumption. A new Bosch injector for the B57D30B costs approximately £406.74 including VAT. If you experience rough running or black smoke, have the injectors tested and replaced as necessary. Catching injector wear early prevents more serious engine damage.",
         "failureLink": {
           "label": "Read the full injector failure guide",
-          "href": "/failures/injector-failure/"
+          "href": "/failures/n57-injector-seal"
         }
       }
     ]

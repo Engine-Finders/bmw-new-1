@@ -3,19 +3,10 @@
 import Image from "next/image";
 import { useTheme } from "@/components/shared/themeProvider";
 import MStripe from "@/components/reusableComponents/MStripe";
+import HomeIcon from "@/components/home/homeIcons";
 import { sectionDescription, sectionH2 } from "@/components/models/sectionTypography";
+import { engineSectionBg } from "./engineSection";
 
-const ENGINE_IMAGE =
-  "https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=800&q=80";
-
-const CAR_IMAGES = [
-  "https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=640&q=80",
-  "https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=640&q=80",
-  "https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=640&q=80",
-  "https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=640&q=80",
-  "https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=640&q=80",
-  "https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=640&q=80",
-];
 
 function cleanText(text = "") {
   return String(text)
@@ -78,6 +69,7 @@ function groupModels(rows = []) {
         variants: [],
         years: [],
         rowCount: 0,
+        image: row.cardImage || null,
       });
     }
 
@@ -119,26 +111,15 @@ function cardClass(isDark) {
     : "border-[var(--color-border-strong)] bg-[var(--color-surface)] shadow-[0_8px_20px_var(--color-shadow)]";
 }
 
-function carImageFor(model = "") {
-  const clean = cleanText(model);
-  let hash = 0;
-  for (let i = 0; i < clean.length; i += 1) hash += clean.charCodeAt(i);
-  return CAR_IMAGES[hash % CAR_IMAGES.length];
-}
-
-function ShieldIcon({ className = "h-4 w-4" }) {
-  return (
-    <svg aria-hidden="true" viewBox="0 0 24 24" className={className} fill="none" stroke="currentColor" strokeWidth="1.9">
-      <path d="M12 3 5 6v6c0 5 3.3 8.8 7 9 3.7-.2 7-4 7-9V6l-7-3Zm-2 9 1.6 1.6L15 10" />
-    </svg>
-  );
+function ShieldIcon({ isDark, className = "h-4 w-4" }) {
+  return <HomeIcon name="shield" isDark={isDark} className={`${className} object-contain`} />;
 }
 
 function ExclusiveBadge({ isDark }) {
   return (
     <div className={`flex max-w-[260px] items-start gap-2 rounded-lg border px-2.5 py-2 ${cardClass(isDark)}`}>
-      <span className="mt-0.5 flex h-7 w-7 shrink-0 items-center justify-center rounded-full border border-[var(--color-primary)] bg-[var(--color-primary-soft)] text-[var(--color-primary)]">
-        <ShieldIcon className="h-3.5 w-3.5" />
+      <span className="mt-0.5 flex h-7 w-7 shrink-0 items-center justify-center rounded-full border border-[var(--color-primary)] bg-[var(--color-primary-soft)]">
+        <ShieldIcon isDark={isDark} className="h-4 w-4" />
       </span>
       <div className="min-w-0">
         <p className="text-[10px] font-bold uppercase tracking-[0.04em] text-[var(--color-primary)]">BMW Exclusive Engine</p>
@@ -150,7 +131,7 @@ function ExclusiveBadge({ isDark }) {
   );
 }
 
-function ProductionTimeline({ start, end, span }) {
+function ProductionTimeline({ start, end, span, isDark }) {
   if (!start || !end) return null;
 
   return (
@@ -159,7 +140,7 @@ function ProductionTimeline({ start, end, span }) {
       <div className="relative h-px flex-1 bg-[var(--color-primary)]">
         <span className="absolute left-0 top-1/2 h-2.5 w-2.5 -translate-y-1/2 rounded-full bg-[var(--color-primary)]" />
         <span className="absolute right-0 top-1/2 h-2.5 w-2.5 -translate-y-1/2 rounded-full bg-[var(--color-primary)]" />
-        <span className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 whitespace-nowrap rounded-full bg-[var(--color-primary)] px-3 py-1 text-[10px] font-bold uppercase tracking-[0.04em] text-white md:text-[11px]">
+        <span className={`absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 whitespace-nowrap rounded-full px-3 py-1 text-[10px] font-bold uppercase tracking-[0.04em] text-white md:text-[11px] ${isDark ? "bg-[var(--color-chrome)]" : "bg-[var(--color-primary)]"}`}>
           {span} Years of Production
         </span>
       </div>
@@ -172,20 +153,21 @@ function DesktopModelCard({ item, isDark }) {
   const series = seriesParts(item.model);
 
   return (
-    <article className={`flex h-full flex-col rounded-lg border p-2.5 ${cardClass(isDark)}`}>
+    <article className={`flex h-full min-w-0 flex-col overflow-hidden rounded-lg border p-2.5 ${cardClass(isDark)}`}>
       <div className="flex items-start justify-between gap-2">
-        <div className="min-w-0">
-          <p className="text-[26px] font-bold leading-none text-[var(--color-primary)]">{series.big}</p>
+        <div className="min-w-0 flex-1">
+          <p className="truncate text-[20px] font-bold leading-none text-[var(--color-primary)] md:text-[22px]">{series.big}</p>
           {series.label ? (
-            <p className="mt-0.5 text-[10px] font-semibold uppercase tracking-[0.06em] text-[var(--color-text-soft)]">{series.label}</p>
+            <p className="mt-0.5 truncate text-[10px] font-semibold uppercase tracking-[0.06em] text-[var(--color-text-soft)]">{series.label}</p>
           ) : null}
         </div>
         <div className="relative h-11 w-[84px] shrink-0 overflow-hidden rounded-md">
-          <Image src={carImageFor(item.model)} alt="" fill sizes="84px" className="object-cover object-center" />
+          {/* Photos are set server-side, none twice; models with no photo (e.g. XJS, Daimler) show none */}
+          {item.image ? <Image src={item.image} alt="" fill sizes="84px" className="object-contain object-center" /> : null}
         </div>
       </div>
 
-      <div className="mt-2">
+      <div className="mt-2 min-w-0">
         <span className="inline-flex max-w-full rounded-full bg-[var(--color-page-soft)] px-2 py-0.5 text-[10px] font-semibold text-[var(--color-text)]">
           <span className="truncate">{item.generationLabel}</span>
         </span>
@@ -194,8 +176,8 @@ function DesktopModelCard({ item, isDark }) {
       <p className="mt-1.5 line-clamp-2 min-h-[28px] text-[11px] leading-[1.3] text-[var(--color-text-muted)]">{item.variantLabel}</p>
 
       <div className="mt-auto flex items-center justify-between gap-2 border-t border-[var(--color-border)] pt-1.5">
-        <span className="text-[10px] text-[var(--color-text-soft)]">{item.yearLabel}</span>
-        <span className="text-[10px] font-semibold uppercase tracking-[0.04em] text-[var(--color-primary)]">
+        <span className="truncate text-[10px] text-[var(--color-text-soft)]">{item.yearLabel}</span>
+        <span className="shrink-0 text-[10px] font-semibold uppercase tracking-[0.04em] text-[var(--color-primary)]">
           {item.variantCount} Variants →
         </span>
       </div>
@@ -207,48 +189,52 @@ function MobileModelRow({ row, isDark }) {
   const series = seriesParts(row.model);
 
   return (
-    <article className={`grid grid-cols-[68px_minmax(0,1fr)_auto] items-center gap-2 rounded-lg border px-2.5 py-2 ${cardClass(isDark)}`}>
-      <div className="min-w-0 overflow-hidden">
-        <p className="text-[22px] font-bold leading-none text-[var(--color-primary)]">{series.big}</p>
-        {series.label ? (
-          <p className="mt-0.5 text-[9px] font-semibold uppercase tracking-[0.06em] text-[var(--color-text-soft)]">{series.label}</p>
-        ) : null}
-        <div className="relative mt-1 h-8 w-full overflow-hidden rounded">
-          <Image src={carImageFor(row.model)} alt="" fill sizes="68px" className="object-cover object-center" />
+    <article className={`overflow-hidden rounded-lg border px-2.5 py-2.5 ${cardClass(isDark)}`}>
+      <div className="flex items-start gap-2.5">
+        <div className="w-[72px] shrink-0">
+          <p className="truncate text-[15px] font-bold leading-none text-[var(--color-primary)]">{series.big}</p>
+          {series.label ? (
+            <p className="mt-0.5 truncate text-[8px] font-semibold uppercase leading-tight tracking-[0.04em] text-[var(--color-text-soft)]">
+              {series.label}
+            </p>
+          ) : null}
+          <div className="relative mt-1.5 h-10 w-full overflow-hidden rounded">
+            {row.image ? <Image src={row.image} alt="" fill sizes="72px" className="object-contain object-center" /> : null}
+          </div>
+        </div>
+
+        <div className="min-w-0 flex-1">
+          <div className="grid gap-2">
+            <div className="min-w-0">
+              <p className="text-[9px] uppercase tracking-[0.04em] text-[var(--color-text-soft)]">Generation</p>
+              <span className="mt-0.5 inline-flex max-w-full rounded-full bg-[var(--color-page-soft)] px-2 py-0.5 text-[10px] font-semibold text-[var(--color-text)]">
+                <span className="truncate">{cleanText(row.generation).replace(/\s*\/\s*/g, "/")}</span>
+              </span>
+            </div>
+            <div className="min-w-0">
+              <p className="text-[9px] uppercase tracking-[0.04em] text-[var(--color-text-soft)]">Variant/Badge</p>
+              <p className="mt-0.5 line-clamp-2 text-[11px] leading-[1.3] text-[var(--color-text)]">{cleanText(row.variantBadge)}</p>
+            </div>
+          </div>
         </div>
       </div>
 
-      <div className="grid min-w-0 gap-2 sm:grid-cols-2">
+      <div className="mt-2 flex items-center justify-between gap-2 border-t border-[var(--color-border)] pt-2">
         <div className="min-w-0">
-          <p className="text-[10px] uppercase tracking-[0.04em] text-[var(--color-text-soft)]">Generation</p>
-          <span className="mt-1 inline-flex max-w-full rounded-full bg-[var(--color-page-soft)] px-2 py-1 text-[11px] font-semibold text-[var(--color-text)]">
-            <span className="truncate">{cleanText(row.generation).replace(/\s*\/\s*/g, "/")}</span>
-          </span>
+          <p className="text-[9px] uppercase tracking-[0.04em] text-[var(--color-text-soft)]">Years</p>
+          <p className="mt-0.5 truncate text-[12px] font-semibold text-[var(--color-primary)]">{stripTags(row.years)}</p>
         </div>
-        <div className="min-w-0">
-          <p className="text-[10px] uppercase tracking-[0.04em] text-[var(--color-text-soft)]">Variant/Badge</p>
-          <p className="mt-1 text-[11px] leading-[1.3] text-[var(--color-text)]">{cleanText(row.variantBadge)}</p>
-        </div>
-      </div>
-
-      <div className="flex items-center gap-2 pl-1">
-        <div className="text-right">
-          <p className="text-[10px] uppercase tracking-[0.04em] text-[var(--color-text-soft)]">Years</p>
-          <p className="mt-1 text-[12px] font-semibold text-[var(--color-primary)]">{stripTags(row.years)}</p>
-        </div>
-        <span aria-hidden="true" className="text-[18px] font-bold text-[var(--color-primary)]">›</span>
+        <span aria-hidden="true" className="shrink-0 text-[16px] font-bold text-[var(--color-primary)]">›</span>
       </div>
     </article>
   );
 }
 
-function VerifiedStrip() {
+function VerifiedStrip({ isDark }) {
   return (
     <article className="flex w-full items-start gap-3 rounded-lg border border-[var(--color-primary)] bg-[var(--color-primary-soft)] px-3.5 py-3 md:items-center md:px-4 md:py-3.5">
-      <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-md border border-[var(--color-primary)] bg-[var(--color-surface)] text-[var(--color-primary)]">
-        <svg aria-hidden="true" viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="1.9">
-          <path d="M8 7h11M8 12h11M8 17h11M5 7h.01M5 12h.01M5 17h.01" />
-        </svg>
+      <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-md border border-[var(--color-primary)] bg-[var(--color-surface)]">
+        <HomeIcon name="genuine-failure-data" isDark={isDark} className="h-7 w-7 md:h-5 md:w-5 object-contain" />
       </span>
       <div className="min-w-0">
         <p className="text-[12px] font-bold uppercase tracking-[0.04em] text-[var(--color-primary)]">Compatibility Verified</p>
@@ -267,6 +253,7 @@ export default function Compatibility({
   yearsProduced = "",
   modelsFitted = "",
   crossBrandFitment = "",
+  engineImage,
 }) {
   const { theme } = useTheme();
   if (!data) return null;
@@ -280,65 +267,49 @@ export default function Compatibility({
   const exclusiveNote = cleanText(data.crossBrandNote || crossBrandFitment || "(Exclusive mode – no cross-link)");
 
   return (
-    <section className="relative left-1/2 w-screen -translate-x-1/2 overflow-hidden bg-[var(--color-page)] py-6 text-[var(--color-text)] md:py-9">
-      {/* Engine background + fog */}
-      <div className="absolute inset-0">
-        <div className={`absolute inset-0 ${isDark ? "bg-[var(--color-page)]" : "bg-[var(--color-page-soft)]"}`} />
-
-        <div className="absolute inset-y-0 right-0 w-full md:w-[62%]">
-          <Image
-            src={ENGINE_IMAGE}
-            alt=""
-            fill
-            sizes="(max-width: 768px) 100vw, 62vw"
-            className="object-cover object-[center_30%] opacity-55 md:object-center md:opacity-70"
-            priority={false}
-          />
-        </div>
-
-        {/* Fog / smoke between image and content */}
-        <div
-          className={`absolute inset-0 ${
-            isDark
-              ? "bg-[linear-gradient(90deg,var(--color-page)_0%,var(--color-page)_34%,var(--color-hero-overlay)_58%,transparent_78%)]"
-              : "bg-[linear-gradient(90deg,var(--color-page-soft)_0%,var(--color-page-soft)_34%,var(--color-hero-overlay)_58%,transparent_78%)]"
-          }`}
-        />
-        <div
-          className={`absolute inset-0 ${
-            isDark
-              ? "bg-[linear-gradient(180deg,var(--color-hero-overlay)_0%,transparent_28%,transparent_72%,var(--color-hero-fade)_100%)]"
-              : "bg-[linear-gradient(180deg,var(--color-hero-overlay)_0%,transparent_30%,transparent_70%,var(--color-hero-fade)_100%)]"
-          }`}
-        />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_78%_42%,transparent_0%,var(--color-hero-overlay)_58%,var(--color-hero-fade)_100%)] opacity-90" />
-      </div>
-
+    <section className={`relative w-full overflow-x-hidden py-6 text-[var(--color-text)] md:py-9 ${engineSectionBg(isDark, true)}`}>
       <div className="relative mx-auto w-full max-w-8xl px-4 md:px-8">
-        <div className="grid max-w-[720px] items-start gap-4 md:grid-cols-[minmax(0,1fr)_auto] md:gap-5">
+        <div className="grid items-start gap-4 md:grid-cols-[minmax(0,1fr)_minmax(220px,0.55fr)] md:gap-6">
           <div className="min-w-0">
-            <h2 className={`font-bold tracking-normal ${sectionH2}`}>
-              Compatible <span className="text-[var(--color-primary)]">BMW Models</span>
-            </h2>
-            <div className="mt-3">
-              <MStripe />
+            <div className="grid max-w-[720px] items-start gap-4 md:grid-cols-[minmax(0,1fr)_auto] md:gap-5">
+              <div className="min-w-0">
+                <h2 className={`font-bold tracking-normal ${sectionH2}`}>
+                  Compatible <span className="text-[var(--color-primary)]">BMW Models</span>
+                </h2>
+                <div className="mt-3">
+                  <MStripe />
+                </div>
+                <p className={`mt-4 max-w-[540px] ${sectionDescription} ${isDark ? "text-white/80" : "text-[var(--color-text-muted)]"}`}>
+                  BMW {engineCode} engines are fitted across{" "}
+                  <span className="font-semibold text-[var(--color-primary)]">{modelCountLabel}</span> from{" "}
+                  <span className="font-semibold text-[var(--color-primary)]">
+                    {bounds.start && bounds.end ? `${bounds.start}\u2013${bounds.end}` : stripTags(yearsProduced) || "multiple years"}
+                  </span>
+                  .
+                </p>
+              </div>
+
+              <div className="md:pt-2">
+                <ExclusiveBadge isDark={isDark} />
+              </div>
             </div>
-            <p className={`mt-4 max-w-[540px] ${sectionDescription} ${isDark ? "text-white/80" : "text-[var(--color-text-muted)]"}`}>
-              BMW {engineCode} engines are fitted across{" "}
-              <span className="font-semibold text-[var(--color-primary)]">{modelCountLabel}</span> from{" "}
-              <span className="font-semibold text-[var(--color-primary)]">
-                {bounds.start && bounds.end ? `${bounds.start}\u2013${bounds.end}` : stripTags(yearsProduced) || "multiple years"}
-              </span>
-              .
-            </p>
           </div>
 
-          <div className="md:pt-2">
-            <ExclusiveBadge isDark={isDark} />
-          </div>
+          {/* The engine's photo (set server-side); hidden for engines with none */}
+          {engineImage ? (
+            <div className="relative mx-auto h-[160px] w-full max-w-[280px] md:mx-0 md:h-[200px] md:max-w-none">
+              <Image
+                src={engineImage}
+                alt=""
+                fill
+                sizes="(max-width: 768px) 280px, 320px"
+                className="object-contain object-right drop-shadow-[0_16px_32px_rgba(0,0,0,0.25)]"
+              />
+            </div>
+          ) : null}
         </div>
 
-        <ProductionTimeline start={bounds.start} end={bounds.end} span={bounds.span} />
+        <ProductionTimeline start={bounds.start} end={bounds.end} span={bounds.span} isDark={isDark} />
 
         {/* Desktop cards */}
         <div className="mt-4 hidden md:block">
@@ -360,7 +331,7 @@ export default function Compatibility({
           </div>
 
           <div className="mt-2.5">
-            <VerifiedStrip />
+            <VerifiedStrip isDark={isDark} />
           </div>
         </div>
 
@@ -383,11 +354,11 @@ export default function Compatibility({
             <span className="shrink-0 text-[11px] font-semibold text-[var(--color-primary)]">View full details ›</span>
           </article>
 
-          <VerifiedStrip />
+          <VerifiedStrip isDark={isDark} />
 
           <div className={`flex items-center gap-2 rounded-lg border px-3 py-2.5 ${cardClass(isDark)}`}>
-            <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full border border-[var(--color-primary)] bg-[var(--color-primary-soft)] text-[var(--color-primary)]">
-              <ShieldIcon className="h-3.5 w-3.5" />
+            <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full border border-[var(--color-primary)] bg-[var(--color-primary-soft)]">
+              <ShieldIcon isDark={isDark} className="h-4 w-4" />
             </span>
             <p className="text-[11px] text-[var(--color-text-soft)]">{exclusiveNote}</p>
           </div>

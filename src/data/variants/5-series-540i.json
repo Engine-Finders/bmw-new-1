@@ -66,7 +66,7 @@
               "@type": "ListItem",
               "position": 1,
               "name": "B58B30 (3.0L Straight-Six Turbo)",
-              "url": "https://bmwengines.uk/engine/b58/"
+              "url": "https://bmwengines.uk/engine/b57-b58"
             }
           ]
         },
@@ -285,7 +285,7 @@
         "recommendation": "The B58's oil filter housing is made of brittle plastic and is prone to cracking and leaking. If the housing fails internally, oil and coolant can mix - a potentially catastrophic failure. Many owners of older B58s have experienced a leaky oil filter housing. If you notice oil spots or a burning smell, have the oil filter housing inspected promptly. An aftermarket metal housing upgrade is available for a permanent fix.",
         "failureLink": {
           "label": "Read the full oil leak guide",
-          "href": "/failures/oil-leak/"
+          "href": "/failures/n55-valve-cover-oil-leak"
         }
       },
       {
@@ -303,7 +303,7 @@
         "recommendation": "The PCV diaphragm on first-generation B58 engines can tear, causing high crankcase vacuum and smoking. The stock diaphragm is fragile and can crack or tear over time. The good news is this is easily fixed with an affordable repair kit that doesn't require replacing the entire valve cover. If you notice rough idle, whistling, or smoke on startup, have the PCV system inspected.",
         "failureLink": {
           "label": "Read the full PCV failure guide",
-          "href": "/failures/pcv-valve-failure/"
+          "href": "/failures"
         }
       },
       {
@@ -321,7 +321,7 @@
         "recommendation": "The B58's electric water pump is prone to failure around 70k–100k miles. The thermostat is often replaced with the pump due to shared failure rates. Cooling system complexity with more hoses, expansion tanks, and plastic components means more potential leak points over time. If you're experiencing coolant loss or overheating, have the cooling system inspected promptly.",
         "failureLink": {
           "label": "Read the full coolant leak guide",
-          "href": "/failures/coolant-leak/"
+          "href": "/failures/m54-cooling-system"
         }
       }
     ]

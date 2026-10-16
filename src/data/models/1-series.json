@@ -70,55 +70,55 @@
               "@type": "ListItem",
               "position": 1,
               "name": "N45B16 Engine",
-              "url": "https://bmwengines.uk/engine/n45b16/"
+              "url": "https://bmwengines.uk/engine/n40-n42-n43-n45-n46"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "N46B18 Engine",
-              "url": "https://bmwengines.uk/engine/n46b18/"
+              "url": "https://bmwengines.uk/engine/n40-n42-n43-n45-n46"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "N52B25 Engine",
-              "url": "https://bmwengines.uk/engine/n52b25/"
+              "url": "https://bmwengines.uk/engine/n52-n53"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "N54B30 Engine",
-              "url": "https://bmwengines.uk/engine/n54b30/"
+              "url": "https://bmwengines.uk/engine/n54-n55"
             },
             {
               "@type": "ListItem",
               "position": 5,
               "name": "N55B30 Engine",
-              "url": "https://bmwengines.uk/engine/n55b30/"
+              "url": "https://bmwengines.uk/engine/n54-n55"
             },
             {
               "@type": "ListItem",
               "position": 6,
               "name": "B48B20 Engine",
-              "url": "https://bmwengines.uk/engine/b48b20/"
+              "url": "https://bmwengines.uk/engine/b38-b48"
             },
             {
               "@type": "ListItem",
               "position": 7,
               "name": "B58B30 Engine",
-              "url": "https://bmwengines.uk/engine/b58b30/"
+              "url": "https://bmwengines.uk/engine/b57-b58"
             },
             {
               "@type": "ListItem",
               "position": 8,
               "name": "N47D20C Engine",
-              "url": "https://bmwengines.uk/engine/n47d20c/"
+              "url": "https://bmwengines.uk/engine/n47"
             },
             {
               "@type": "ListItem",
               "position": 9,
               "name": "B47D20A Engine",
-              "url": "https://bmwengines.uk/engine/b47d20a/"
+              "url": "https://bmwengines.uk/engine/b37-b47"
             }
           ]
         },
@@ -270,7 +270,7 @@
     ],
     "primaryCta": {
       "label": "Explore 1 Series Engines →",
-      "href": "#"
+      "href": "/1-series"
     }
   },
   "ownershipVerdict": {
@@ -380,38 +380,38 @@
         }
       },
       {
-  "title": "E81 (2007–2012)",
-  "badge": "",
-  "meta": "2007–2012 • N45/N43 petrol • M47/N47 diesel • N52 six-cylinder",
-  "rating": "★★★☆☆",
-  "verdict": "The three-door hatchback that brought rear-wheel drive to the compact class. The N52B30 straight-six in the 130i is the most reliable—258 bhp, naturally aspirated, and proven. The N47 diesel carries the defining risk: rear-mounted timing chain stretch. Buy a well-maintained N52 or a diesel with documented chain history.",
-  "cta": {
-    "label": "Explore E81 →",
-    "href": "https://bmwengines.uk/1-series/e81"
-  }
-},
-{
-  "title": "E82 (2007–2013)",
-  "badge": "",
-  "meta": "2007–2013 • N46/N43 petrol • N47 diesel • N52/N54/N55 six-cylinder",
-  "rating": "★★★☆☆",
-  "verdict": "The 1 Series coupé—a two-door, four-seat sports car with a longer wheelbase than the hatch. The N52 125i offers classic naturally aspirated six-cylinder character; the N54 135i is fast but has HPFP and injector risks; the N47 diesel requires documented timing chain history. The 123d twin-turbo diesel is the enthusiast's diesel choice.",
-  "cta": {
-    "label": "Explore E82 →",
-    "href": "https://bmwengines.uk/1-series/e82"
-  }
-},
-{
-  "title": "E88 (2007–2013)",
-  "badge": "",
-  "meta": "2007–2013 • N43/N46 petrol • N47 diesel • N52/N54/N55 six-cylinder",
-  "rating": "★★★☆☆",
-  "verdict": "The 1 Series convertible—the drop-top sibling to the E82 coupé. Shares the same engine range, with the N52 125i/130i offering the most reliable naturally aspirated experience. The N47 diesel demands chain history; the N54 135i is a performance bargain but carries HPFP and injector risks. Lower-volume, niche enthusiast choice.",
-  "cta": {
-    "label": "Explore E88 →",
-    "href": "https://bmwengines.uk/1-series/e88"
-  }
-},
+        "title": "E81 (2007–2012)",
+        "badge": "",
+        "meta": "2007–2012 • N45/N43 petrol • M47/N47 diesel • N52 six-cylinder",
+        "rating": "★★★☆☆",
+        "verdict": "The three-door hatchback that brought rear-wheel drive to the compact class. The N52B30 straight-six in the 130i is the most reliable—258 bhp, naturally aspirated, and proven. The N47 diesel carries the defining risk: rear-mounted timing chain stretch. Buy a well-maintained N52 or a diesel with documented chain history.",
+        "cta": {
+          "label": "Explore E81 →",
+          "href": "https://bmwengines.uk/1-series/e81"
+        }
+      },
+      {
+        "title": "E82 (2007–2013)",
+        "badge": "",
+        "meta": "2007–2013 • N46/N43 petrol • N47 diesel • N52/N54/N55 six-cylinder",
+        "rating": "★★★☆☆",
+        "verdict": "The 1 Series coupé—a two-door, four-seat sports car with a longer wheelbase than the hatch. The N52 125i offers classic naturally aspirated six-cylinder character; the N54 135i is fast but has HPFP and injector risks; the N47 diesel requires documented timing chain history. The 123d twin-turbo diesel is the enthusiast's diesel choice.",
+        "cta": {
+          "label": "Explore E82 →",
+          "href": "https://bmwengines.uk/1-series/e82"
+        }
+      },
+      {
+        "title": "E88 (2007–2013)",
+        "badge": "",
+        "meta": "2007–2013 • N43/N46 petrol • N47 diesel • N52/N54/N55 six-cylinder",
+        "rating": "★★★☆☆",
+        "verdict": "The 1 Series convertible—the drop-top sibling to the E82 coupé. Shares the same engine range, with the N52 125i/130i offering the most reliable naturally aspirated experience. The N47 diesel demands chain history; the N54 135i is a performance bargain but carries HPFP and injector risks. Lower-volume, niche enthusiast choice.",
+        "cta": {
+          "label": "Explore E88 →",
+          "href": "https://bmwengines.uk/1-series/e88"
+        }
+      },
       {
         "title": "BMW 1 Series F20/F21",
         "badge": "🔥 Most Enquired -344 enquiries (2025) [BMW-VERIFIED]",
@@ -424,16 +424,16 @@
         }
       },
       {
-  "title": "F21 (2011–2019)",
-  "badge": "",
-  "meta": "2011–2019 • N13 petrol • N47/B47 diesel • N55/B58 six-cylinder",
-  "rating": "★★★☆☆",
-  "verdict": "The three-door hatchback—second-generation 1 Series, still rear-wheel drive. The B58 in the M140i (2016+) is the most reliable engine in the range. The N47 diesel (pre-2015) carries rear-chain risk; the B47 (post-2015) is significantly improved. The N13 petrol has timing chain and HPFP watchpoints. Buy post-2015 for the cleanest slate.",
-  "cta": {
-    "label": "Explore F21 →",
-    "href": "https://bmwengines.uk/1-series/f21"
-  }
-},
+        "title": "F21 (2011–2019)",
+        "badge": "",
+        "meta": "2011–2019 • N13 petrol • N47/B47 diesel • N55/B58 six-cylinder",
+        "rating": "★★★☆☆",
+        "verdict": "The three-door hatchback—second-generation 1 Series, still rear-wheel drive. The B58 in the M140i (2016+) is the most reliable engine in the range. The N47 diesel (pre-2015) carries rear-chain risk; the B47 (post-2015) is significantly improved. The N13 petrol has timing chain and HPFP watchpoints. Buy post-2015 for the cleanest slate.",
+        "cta": {
+          "label": "Explore F21 →",
+          "href": "https://bmwengines.uk/1-series/f21"
+        }
+      },
       {
         "title": "BMW 1 Series F40",
         "badge": "",
@@ -446,16 +446,16 @@
         }
       },
       {
-  "title": "F70 (2024–present)",
-  "badge": "",
-  "meta": "2024–present • B38 MHEV petrol • B48 petrol",
-  "rating": "★★★★☆",
-  "verdict": "The fourth-generation 1 Series—front-wheel-drive UKL2 platform, celebrating 20 years of the nameplate. UK market is petrol-only: the B38 1.5-litre three-cylinder with 48V mild-hybrid assistance (120), the B48 2.0-litre four-cylinder (123 xDrive), and the B48 high-output M135 xDrive. Too new for long-term reliability data, but the B38/B48 are proven and well-regarded.",
-  "cta": {
-    "label": "Explore F70 →",
-    "href": "https://bmwengines.uk/1-series/f70"
-  }
-}
+        "title": "F70 (2024–present)",
+        "badge": "",
+        "meta": "2024–present • B38 MHEV petrol • B48 petrol",
+        "rating": "★★★★☆",
+        "verdict": "The fourth-generation 1 Series—front-wheel-drive UKL2 platform, celebrating 20 years of the nameplate. UK market is petrol-only: the B38 1.5-litre three-cylinder with 48V mild-hybrid assistance (120), the B48 2.0-litre four-cylinder (123 xDrive), and the B48 high-output M135 xDrive. Too new for long-term reliability data, but the B38/B48 are proven and well-regarded.",
+        "cta": {
+          "label": "Explore F70 →",
+          "href": "https://bmwengines.uk/1-series/f70"
+        }
+      }
     ],
     "rangeTable": {
       "title": "Pre-Facelift vs LCI -The Line That Matters",
@@ -466,34 +466,47 @@
       ],
       "rows": [
         {
-          "model": "Core diesel",
-          "engineCode": "N47D20C -rear-chain risk",
-          "power": "B47D20A -front-chain, revised architecture",
-          "induction": "",
-          "years": "",
-          "notes": ""
+          "label": "Core diesel",
+          "cells": [
+            {
+              "text": "N47D20C -rear-chain risk",
+              "tone": "risk"
+            },
+            {
+              "text": "B47D20A -front-chain, revised architecture",
+              "tone": "safe"
+            }
+          ]
         },
         {
-          "model": "Core petrol",
-          "engineCode": "N46 (E87) / N55 (F20 pre-LCI)",
-          "power": "B48B20 / B58B30 -modular family",
-          "induction": "",
-          "years": "",
-          "notes": ""
+          "label": "Core petrol",
+          "cells": [
+            {
+              "text": "N46 (E87) / N55 (F20 pre-LCI)"
+            },
+            {
+              "text": "B48B20 / B58B30 -modular family",
+              "tone": "safe"
+            }
+          ]
         },
         {
-          "model": "Our position",
-          "engineCode": "Only with documented chain replacement",
-          "power": "The 1 Series we recommend for first-time buyers",
-          "induction": "",
-          "years": "",
-          "notes": ""
+          "label": "Our position",
+          "cells": [
+            {
+              "text": "Only with documented chain replacement"
+            },
+            {
+              "text": "The 1 Series we recommend for first-time buyers",
+              "tone": "safe"
+            }
+          ]
         }
       ]
     },
     "comparisonLink": {
       "label": "Read the full comparison: BMW 1 Series E87 vs F20 →",
-      "href": "#"
+      "href": "/compare"
     }
   },
   "engineDatabase": {
@@ -649,7 +662,7 @@
         },
         "link": {
           "label": "Learn more →",
-          "href": "#"
+          "href": "/failures/n47-timing-chain"
         }
       },
       {
@@ -663,7 +676,7 @@
         },
         "link": {
           "label": "Learn more →",
-          "href": "#"
+          "href": "/failures/n54-high-pressure-fuel-pump"
         }
       },
       {
@@ -677,7 +690,7 @@
         },
         "link": {
           "label": "Learn more →",
-          "href": "#"
+          "href": "/1-series/e87"
         }
       },
       {
@@ -691,7 +704,7 @@
         },
         "link": {
           "label": "Learn more →",
-          "href": "#"
+          "href": "/engine/n40-n42-n43-n45-n46"
         }
       },
       {
@@ -705,7 +718,7 @@
         },
         "link": {
           "label": "Learn more →",
-          "href": "#"
+          "href": "/failures/m54-cooling-system"
         }
       },
       {
@@ -719,7 +732,7 @@
         },
         "link": {
           "label": "Learn more →",
-          "href": "#"
+          "href": "/failures/egr-valve-cooler"
         }
       }
     ],
@@ -988,11 +1001,11 @@
     "paths": [
       {
         "label": "Path 1 -Know your engine? Launch the BMW diagnostic calculator with 1 Series pre-selected",
-        "href": "/fault-diagnostic-calculator"
+        "href": "/tools/diagnostic-wizard"
       },
       {
         "label": "Path 2 -Not sure which engine you have? We'll identify it first → /fault-diagnostic-calculator (identification is the first step inside the tool)",
-        "href": "#"
+        "href": "/tools/diagnostic-wizard"
       }
     ]
   },
@@ -1079,13 +1092,13 @@
         "icon": "🩺",
         "title": "Diagnose My 1 Series",
         "text": "Symptoms in, verdict out -value-weighted for your generation.",
-        "href": "/fault-diagnostic-calculator"
+        "href": "/tools/diagnostic-wizard"
       },
       {
         "icon": "🤝",
         "title": "Compare UK Specialists",
         "text": "20+ vetted BMW specialists, prices and warranties side-by-side.",
-        "href": "/quotes/?model=1-series"
+        "href": "/quote"
       }
     ],
     "footerNote": "(Minimal footer below.)"

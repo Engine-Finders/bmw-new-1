@@ -60,13 +60,13 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Z3 M (S50B32, 1997–2000)",
-              "url": "https://bmwengines.uk/z3/e36/"
+              "url": "https://bmwengines.uk/3-series-compact/e36-5"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "Z3 M (S54B32, 2001–2002)",
-              "url": "https://bmwengines.uk/z3/e36/"
+              "url": "https://bmwengines.uk/3-series-compact/e36-5"
             }
           ]
         },
@@ -78,13 +78,13 @@
               "@type": "ListItem",
               "position": 1,
               "name": "S50B32 (3.2 straight-six)",
-              "url": "https://bmwengines.uk/engine/s50/"
+              "url": "https://bmwengines.uk/engine/s50-s52-s54"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "S54B32 (3.2 straight-six)",
-              "url": "https://bmwengines.uk/engine/s54/"
+              "url": "https://bmwengines.uk/engine/s50-s52-s54"
             }
           ]
         },
@@ -294,7 +294,7 @@
         "recommendation": "The S50 and S54's VANOS systems are the most common weakness. On the S50, seals leak and cause a loss in performance; on the S54, the bolts are the weak point and can fail catastrophically. Specialist companies like Dr. VANOS offer rebuilt units with upgraded seals for around £400. At the first sign of loss of power or rattle, have the VANOS inspected - catching it early prevents more serious engine damage.",
         "failureLink": {
           "label": "",
-          "href": "/failures/vanos-failure/"
+          "href": "/failures/vanos-solenoid-failure"
         }
       },
       {
@@ -312,7 +312,7 @@
         "recommendation": "The S54 engine had a rod bearing recall when new. If this work has not been performed, the bearings are a ticking time bomb. Many specialists recommend replacing the rod bearings preventatively - a relatively small cost compared to a full engine replacement. If you hear knocking, do not drive the car.",
         "failureLink": {
           "label": "",
-          "href": "/failures/rod-bearing-failure/"
+          "href": "/failures/rod-bearing-wear-s63"
         }
       },
       {
@@ -330,7 +330,7 @@
         "recommendation": "Oil leaks are common on both S50 and S54 engines as they age. The valve cover gasket, oil pan gasket and rear main seal are the most frequent sources. If you notice oil spots or a burning smell, have the gaskets inspected. Replacing them promptly prevents low oil levels and potential engine damage.",
         "failureLink": {
           "label": "",
-          "href": "/failures/oil-leak/"
+          "href": "/failures/n55-valve-cover-oil-leak"
         }
       }
     ]

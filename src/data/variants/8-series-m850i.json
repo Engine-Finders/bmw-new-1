@@ -78,7 +78,7 @@
               "@type": "ListItem",
               "position": 1,
               "name": "N63B44T3 / N63B44D",
-              "url": "https://bmwengines.uk/engine/n63/"
+              "url": "https://bmwengines.uk/engine/n62-n63"
             }
           ]
         },
@@ -288,7 +288,7 @@
         "recommendation": "The N63's timing chain guides are made of brittle plastic that can break apart, sending metal fragments through the engine. The \"hot-vee\" design generates extreme heat loads that accelerate component wear. This is one of the most severe and common problems on the N63. BMW faced class action lawsuits over N63 timing chain and oil consumption issues. If you hear any rattling from the front of the engine, book an inspection immediately. A preventative chain replacement is far cheaper than a full engine replacement.",
         "failureLink": {
           "label": "Read the full timing chain failure guide",
-          "href": "/failures/timing-chain-failure/"
+          "href": "/failures/timing-chain-diagnosis-guide"
         }
       },
       {
@@ -306,7 +306,7 @@
         "recommendation": "The N63 is notorious for excessive oil consumption. This is caused by valve stem seal leaks, turbocharger oil seal failure, and PCV system issues. BMW even launched a Customer Care Package program to address widespread issues. Check oil levels regularly - if you're topping up more than 1L between services, have the valve stem seals and turbochargers inspected. Ignoring oil consumption can lead to catastrophic engine failure.",
         "failureLink": {
           "label": "Read the full valve stem seal failure guide",
-          "href": "/failures/valve-stem-seal-failure/"
+          "href": "/failures/valve-stem-seal-wear"
         }
       },
       {

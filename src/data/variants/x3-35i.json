@@ -66,7 +66,7 @@
               "@type": "ListItem",
               "position": 1,
               "name": "N55B30A (3.0L Straight-Six Turbo)",
-              "url": "https://bmwengines.uk/engine/n55/"
+              "url": "https://bmwengines.uk/engine/n54-n55"
             }
           ]
         },
@@ -285,7 +285,7 @@
         "recommendation": "The N55's HPFP is its most notorious weak point. If you experience long cranking or hesitation, don't ignore it - a failing HPFP can lead to lean running and catalytic converter damage. The replacement is well-understood and well-documented. If the HPFP fails completely, symptoms include rough idling, misfires, and a Check Engine Light.",
         "failureLink": {
           "label": "Read the full HPFP failure guide",
-          "href": "/failures/hpfp-failure/"
+          "href": "/failures/n54-high-pressure-fuel-pump"
         }
       },
       {
@@ -303,7 +303,7 @@
         "recommendation": "The N55's plastic chargepipe is prone to cracking with age and constant heat cycles. The factory plastic pipes become brittle and often crack, resulting in boost leaks, check engine lights, and poor running conditions. The solution is an aftermarket metal chargepipe - fit once and forget.",
         "failureLink": {
           "label": "Read the full chargepipe failure guide",
-          "href": "/failures/chargepipe-failure/"
+          "href": "/failures"
         }
       },
       {
@@ -321,7 +321,7 @@
         "recommendation": "Oil leaks from the valve cover gasket and oil filter housing gasket are common on the N55. The plastic valve cover becomes brittle from engine heat and typically needs replacement around 100,000 miles. If you notice oil spots or a burning smell, have the engine inspected promptly. Left unchecked, oil loss can lead to low oil levels and potential engine damage.",
         "failureLink": {
           "label": "Read the full oil leak guide",
-          "href": "/failures/oil-leak/"
+          "href": "/failures/n55-valve-cover-oil-leak"
         }
       }
     ]

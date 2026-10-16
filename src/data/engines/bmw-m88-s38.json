@@ -52,37 +52,37 @@
               "@type": "ListItem",
               "position": 1,
               "name": "BMW M1 E26 (M88/1)",
-              "url": "https://bmwengines.uk/models/m1/e26/"
+              "url": "https://bmwengines.uk/m1/e26"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "BMW 5 Series E28 M5 (M88/3)",
-              "url": "https://bmwengines.uk/models/5-series/e28/"
+              "url": "https://bmwengines.uk/5-series/e28"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "BMW 6 Series E24 M635CSi (M88/3)",
-              "url": "https://bmwengines.uk/models/6-series/e24/"
+              "url": "https://bmwengines.uk/6-series/e24"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "BMW 5 Series E34 M5 (S38B36/B38)",
-              "url": "https://bmwengines.uk/models/5-series/e34/"
+              "url": "https://bmwengines.uk/5-series/e34"
             },
             {
               "@type": "ListItem",
               "position": 5,
               "name": "BMW 6 Series E24 M6 (S38B35 – US)",
-              "url": "https://bmwengines.uk/models/6-series/e24/"
+              "url": "https://bmwengines.uk/6-series/e24"
             },
             {
               "@type": "ListItem",
               "position": 6,
               "name": "BMW 5 Series E28 M5 (S38B35 – US)",
-              "url": "https://bmwengines.uk/models/5-series/e28/"
+              "url": "https://bmwengines.uk/5-series/e28"
             }
           ]
         },
@@ -208,7 +208,7 @@
     "trustStrip": [],
     "primaryCta": {
       "label": "Compare M88/S38 Engine Prices →",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "atAGlance": {
@@ -365,7 +365,7 @@
     "sharedCostNote": "",
     "cta": {
       "label": "→ Compare BMW M88/S38 engine prices from UK specialists",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "faq": {
@@ -406,7 +406,7 @@
     "finalCta": "Find the best BMW M88 or S38 engine replacement UK enthusiasts rely on. Compare real prices from trusted specialists on EnginesMarket today and get back on the road with confidence.",
     "ctaButton": {
       "label": "Compare BMW M88/S38 Engine Prices Now →",
-      "href": "#"
+      "href": "/quote"
     }
   }
 }

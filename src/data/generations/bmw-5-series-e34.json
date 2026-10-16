@@ -39,73 +39,73 @@
               "@type": "ListItem",
               "position": 1,
               "name": "M40B18 518i Engine",
-              "url": "https://bmwengines.uk/engine/m40b18/"
+              "url": "https://bmwengines.uk/engine/m40-m42-m43-m44"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "M43B18 518i Engine",
-              "url": "https://bmwengines.uk/engine/m43b18/"
+              "url": "https://bmwengines.uk/engine/m40-m42-m43-m44"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "M20B20 520i Engine",
-              "url": "https://bmwengines.uk/engine/m20b20/"
+              "url": "https://bmwengines.uk/engine/m20"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "M50B20 520i Engine",
-              "url": "https://bmwengines.uk/engine/m50b20/"
+              "url": "https://bmwengines.uk/engine/m50-m52-m54"
             },
             {
               "@type": "ListItem",
               "position": 5,
               "name": "M50B25 525i Engine",
-              "url": "https://bmwengines.uk/engine/m50b25/"
+              "url": "https://bmwengines.uk/engine/m50-m52-m54"
             },
             {
               "@type": "ListItem",
               "position": 6,
               "name": "M30B34 535i Engine",
-              "url": "https://bmwengines.uk/engine/m30b34/"
+              "url": "https://bmwengines.uk/engine/m30"
             },
             {
               "@type": "ListItem",
               "position": 7,
               "name": "M60B30 530i Engine",
-              "url": "https://bmwengines.uk/engine/m60b30/"
+              "url": "https://bmwengines.uk/engine/m60-m62"
             },
             {
               "@type": "ListItem",
               "position": 8,
               "name": "M60B40 540i Engine",
-              "url": "https://bmwengines.uk/engine/m60b40/"
+              "url": "https://bmwengines.uk/engine/m60-m62"
             },
             {
               "@type": "ListItem",
               "position": 9,
               "name": "M21D24 524td Engine",
-              "url": "https://bmwengines.uk/engine/m21d24/"
+              "url": "https://bmwengines.uk/engine/m21"
             },
             {
               "@type": "ListItem",
               "position": 10,
               "name": "M51D25 525td/525tds Engine",
-              "url": "https://bmwengines.uk/engine/m51d25/"
+              "url": "https://bmwengines.uk/engine/m57"
             },
             {
               "@type": "ListItem",
               "position": 11,
               "name": "S38B36 M5 Engine",
-              "url": "https://bmwengines.uk/engine/s38b36/"
+              "url": "https://bmwengines.uk/engine/m88-s38"
             },
             {
               "@type": "ListItem",
               "position": 12,
               "name": "S38B38 M5 Engine",
-              "url": "https://bmwengines.uk/engine/s38b38/"
+              "url": "https://bmwengines.uk/engine/m88-s38"
             }
           ]
         },
@@ -135,7 +135,7 @@
               "@type": "ListItem",
               "position": 4,
               "name": "525iX",
-              "url": "https://bmwengines.uk/5-series/525ix/"
+              "url": "https://bmwengines.uk/5-series"
             },
             {
               "@type": "ListItem",
@@ -159,7 +159,7 @@
               "@type": "ListItem",
               "position": 8,
               "name": "524td",
-              "url": "https://bmwengines.uk/5-series/524td/"
+              "url": "https://bmwengines.uk/5-series"
             },
             {
               "@type": "ListItem",
@@ -171,13 +171,13 @@
               "@type": "ListItem",
               "position": 10,
               "name": "525tds",
-              "url": "https://bmwengines.uk/5-series/525tds/"
+              "url": "https://bmwengines.uk/5-series"
             },
             {
               "@type": "ListItem",
               "position": 11,
               "name": "M5",
-              "url": "https://bmwengines.uk/5-series/m5/"
+              "url": "https://bmwengines.uk/5-series"
             }
           ]
         },
@@ -213,7 +213,7 @@
               "name": "Is the BMW E34 5 Series reliable overall?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Yes -the E34 is considered one of BMW\u0027s most solid classic models. The six-cylinder M50 and M30 engines are genuinely robust; the M60 V8 is refined but more complex; the M51 diesel is economical but requires specialist attention. The M5\u0027s S38 engine is a high-performance unit with corresponding maintenance costs."
+                "text": "Yes -the E34 is considered one of BMW's most solid classic models. The six-cylinder M50 and M30 engines are genuinely robust; the M60 V8 is refined but more complex; the M51 diesel is economical but requires specialist attention. The M5's S38 engine is a high-performance unit with corresponding maintenance costs."
               }
             },
             {
@@ -237,7 +237,7 @@
               "name": "Is it worth replacing an E34 5 Series engine, or should I scrap the car?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Depends on the car\u0027s value. Against a well-kept £4,000+ E34, a £2,500 M50 recon is 63% of the car\u0027s value -approaching our 70% BMW threshold, assess carefully. Against a tired £1,500 example, the same recon is 167% -walk away. For M5s, the calculus is different: these are appreciating classics, and engine replacement can be justified if the car is otherwise excellent."
+                "text": "Depends on the car's value. Against a well-kept £4,000+ E34, a £2,500 M50 recon is 63% of the car's value -approaching our 70% BMW threshold, assess carefully. Against a tired £1,500 example, the same recon is 167% -walk away. For M5s, the calculus is different: these are appreciating classics, and engine replacement can be justified if the car is otherwise excellent."
               }
             },
             {
@@ -253,7 +253,7 @@
               "name": "What is the difference between the E34 and the E39?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "The E34 (1987–1996) is the third-generation 5 Series -a classic 1980s/1990s design with traditional BMW straight-six and V8 engines. The E39 (1995–2003) is the fourth-generation successor -more refined, with more advanced suspension and the introduction of the M62 V8. Engine costs and maintenance vary significantly. The E34 is a classic car; the E39 is a modern classic. See each generation\u0027s own page for specifics."
+                "text": "The E34 (1987–1996) is the third-generation 5 Series -a classic 1980s/1990s design with traditional BMW straight-six and V8 engines. The E39 (1995–2003) is the fourth-generation successor -more refined, with more advanced suspension and the introduction of the M62 V8. Engine costs and maintenance vary significantly. The E34 is a classic car; the E39 is a modern classic. See each generation's own page for specifics."
               }
             },
             {
@@ -261,7 +261,7 @@
               "name": "How do I find my E34 5 Series engine code?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Check the VIN plate, vehicle documentation, or the engine block -1.8-litre four-cylinder is M40B18 or M43B18, 2.0-litre six-cylinder is M20B20 or M50B20, 2.5-litre six-cylinder is M50B25, 3.4-litre six-cylinder is M30B34, 3.0-litre V8 is M60B30, 4.0-litre V8 is M60B40, 2.4-litre diesel is M21D24, 2.5-litre diesel is M51D25, 3.6-litre M5 is S38B36, 3.8-litre M5 is S38B38. Tell us your variant and registration year and we\u0027ll identify it -20+ vetted BMW specialists will confirm it for free."
+                "text": "Check the VIN plate, vehicle documentation, or the engine block -1.8-litre four-cylinder is M40B18 or M43B18, 2.0-litre six-cylinder is M20B20 or M50B20, 2.5-litre six-cylinder is M50B25, 3.4-litre six-cylinder is M30B34, 3.0-litre V8 is M60B30, 4.0-litre V8 is M60B40, 2.4-litre diesel is M21D24, 2.5-litre diesel is M51D25, 3.6-litre M5 is S38B36, 3.8-litre M5 is S38B38. Tell us your variant and registration year and we'll identify it -20+ vetted BMW specialists will confirm it for free."
               }
             }
           ]
@@ -318,7 +318,7 @@
   "hero": {
     "tagPill": "BMW 5 Series E34 • Saloon/Estate • 1987–1996",
     "h1": "BMW 5 Series E34 Engines -The Complete UK Guide",
-    "subHeadline": "Every engine fitted to the E34 5 Series -from the 1.8-litre <a href='https://bmwengines.uk/engine/m40-m42-m43-m44'>M40</a> four-cylinder to the 3.8-litre S38 in the M5, including the <a href='https://bmwengines.uk/engine/m20'>M20</a>, <a href='https://bmwengines.uk/engine/m30'>M30</a>, <a href='https://bmwengines.uk/engine/m50-m52-m54'>M50</a> straight-sixes, the M60 V8 and the M51 diesel. Real UK costs, honest failure data, and BMW\u0027s first V8-powered 5 Series. Backed by genuine UK specialist data for 2025.",
+    "subHeadline": "Every engine fitted to the E34 5 Series -from the 1.8-litre <a href='https://bmwengines.uk/engine/m40-m42-m43-m44'>M40</a> four-cylinder to the 3.8-litre S38 in the M5, including the <a href='https://bmwengines.uk/engine/m20'>M20</a>, <a href='https://bmwengines.uk/engine/m30'>M30</a>, <a href='https://bmwengines.uk/engine/m50-m52-m54'>M50</a> straight-sixes, the M60 V8 and the M51 diesel. Real UK costs, honest failure data, and BMW's first V8-powered 5 Series. Backed by genuine UK specialist data for 2025.",
     "trustStrip": [
       {
         "icon": "📊",
@@ -339,13 +339,13 @@
     ],
     "primaryCta": {
       "label": "Explore E34 Engines →",
-      "href": "#"
+      "href": "/5-series/e34"
     },
     "dataIntegrityNote": ""
   },
   "engineDatabase": {
     "h2": "BMW 5 Series E34 Engine Codes -The Complete Database",
-    "subHeadline": "Every engine fitted to the E34 5 Series specifically -from the entry-level 518i to the range-topping M5, including BMW\u0027s first V8-powered 5 Series and the all-wheel-drive 525iX.",
+    "subHeadline": "Every engine fitted to the E34 5 Series specifically -from the entry-level 518i to the range-topping M5, including BMW's first V8-powered 5 Series and the all-wheel-drive 525iX.",
     "columns": [
       "Engine Code",
       "Family",
@@ -609,7 +609,7 @@
     ],
     "economicsRule": {
       "title": "The E34 rule",
-      "text": "A £2,000–£4,000 M50 recon against a £1,500–£6,000 E34 sits at 33–267% of the car\u0027s value. On a sub-£2,000 high-mileage example, that brushes our 70% BMW threshold -we\u0027ll honestly tell you to walk away. Against a well-kept £4,000+ example, the same recon drops to 50–100% -assess carefully. Value the car first. M5 ownership is a different proposition entirely -budget for specialist maintenance."
+      "text": "A £2,000–£4,000 M50 recon against a £1,500–£6,000 E34 sits at 33–267% of the car's value. On a sub-£2,000 high-mileage example, that brushes our 70% BMW threshold -we'll honestly tell you to walk away. Against a well-kept £4,000+ example, the same recon drops to 50–100% -assess carefully. Value the car first. M5 ownership is a different proposition entirely -budget for specialist maintenance."
     },
     "keyTakeaways": []
   },
@@ -618,7 +618,7 @@
     "problems": [
       {
         "id": 1,
-        "title": "M50 VANOS \u0026 Cooling System",
+        "title": "M50 VANOS & Cooling System",
         "affectedModels": "520i, 525i (M50 engine, 1990–1996).",
         "typicalFailureMileage": "100,000–150,000 miles.",
         "rootCause": "The M50 is a robust engine, but VANOS units can develop rattle or loss of low-end torque. Cooling system components -water pump, thermostat housing -are known weak points across the E34 range.",
@@ -641,12 +641,12 @@
         "recommendation": "On any M50-powered E34, budget for cooling system preventative maintenance -a £400–£1,000 repair is cheaper than the £2,000+ replacement that follows an overheating failure. Regular oil changes are critical for VANOS longevity.",
         "cta": {
           "label": "Compare M50 engine prices for your E34 →",
-          "href": "#"
+          "href": "/quote"
         }
       },
       {
         "id": 2,
-        "title": "M60 V8 Nikasil \u0026 Cooling System",
+        "title": "M60 V8 Nikasil & Cooling System",
         "affectedModels": "530i, 540i (M60 V8, 1992–1996).",
         "typicalFailureMileage": "80,000–120,000 miles.",
         "rootCause": "Early M60 V8s suffered from Nikasil cylinder lining degradation due to high-sulphur fuel -a known issue resolved on later engines. Cooling system components (water pump, expansion tank) are also common failure points.",
@@ -666,18 +666,18 @@
             "note": ""
           }
         ],
-        "recommendation": "If you\u0027re buying an E34 V8, have a compression test and cooling system inspection done before purchase. Nikasil-affected engines can be identified by poor compression -walk away from any with known issues.",
+        "recommendation": "If you're buying an E34 V8, have a compression test and cooling system inspection done before purchase. Nikasil-affected engines can be identified by poor compression -walk away from any with known issues.",
         "cta": {
           "label": "Compare M60 engine prices for your E34 →",
-          "href": "#"
+          "href": "/quote"
         }
       },
       {
         "id": 3,
-        "title": "M30 Oil Leaks \u0026 Cooling System",
+        "title": "M30 Oil Leaks & Cooling System",
         "affectedModels": "535i (M30B34, 1988–1995).",
         "typicalFailureMileage": "100,000–200,000+ miles.",
-        "rootCause": "The M30 is one of BMW\u0027s most durable engines, but oil leaks from valve cover gaskets and oil pan seals are common with age. Cooling system components also require attention.",
+        "rootCause": "The M30 is one of BMW's most durable engines, but oil leaks from valve cover gaskets and oil pan seals are common with age. Cooling system components also require attention.",
         "tieredCosts": [
           {
             "tier": "Preventative (Repair)",
@@ -697,12 +697,12 @@
         "recommendation": "The M30 is a tough engine -regular maintenance and prompt attention to leaks will keep it running indefinitely. Cooling system preventative work at 100,000 miles is strongly recommended.",
         "cta": {
           "label": "Compare M30 engine prices for your E34 →",
-          "href": "#"
+          "href": "/quote"
         }
       },
       {
         "id": 4,
-        "title": "M51 Diesel Injector \u0026 Turbo Issues",
+        "title": "M51 Diesel Injector & Turbo Issues",
         "affectedModels": "525td, 525tds (M51 diesel, 1991–1996).",
         "typicalFailureMileage": "100,000–150,000 miles.",
         "rootCause": "The M51 diesel is a robust unit but injector wear and turbocharger issues are common at high mileage. The 525tds (intercooled version) has additional complexity.",
@@ -722,10 +722,10 @@
             "note": ""
           }
         ],
-        "recommendation": "If you\u0027re considering an E34 diesel, have a full inspection by a diesel specialist before purchase. Injector and turbo work can be expensive relative to the car\u0027s value.",
+        "recommendation": "If you're considering an E34 diesel, have a full inspection by a diesel specialist before purchase. Injector and turbo work can be expensive relative to the car's value.",
         "cta": {
           "label": "Compare M51 engine prices for your E34 →",
-          "href": "#"
+          "href": "/quote"
         }
       }
     ]
@@ -830,7 +830,7 @@
         "labourHours": "14–18 hrs"
       }
     ],
-    "note": "No Generation variance from the Engine Page baseline -no dedicated Engine Pages exist for these families yet, so baseline figures are drawn from the EM_Proprietary_Data Table A. Labour hours estimated at 8–12 hours for four-cylinder and smaller six-cylinder engines, 10–14 hours for larger six-cylinders, 12–16 hours for V8s, and 14–18 hours for the M5\u0027s S38 due to additional complexity."
+    "note": "No Generation variance from the Engine Page baseline -no dedicated Engine Pages exist for these families yet, so baseline figures are drawn from the EM_Proprietary_Data Table A. Labour hours estimated at 8–12 hours for four-cylinder and smaller six-cylinder engines, 10–14 hours for larger six-cylinders, 12–16 hours for V8s, and 14–18 hours for the M5's S38 due to additional complexity."
   },
   "coreVariants": {
     "h2": "Diesel &amp; Petrol Lineup",
@@ -838,15 +838,15 @@
     "dieselVariants": [
       {
         "name": "524td",
-        "url": "#"
+        "url": "/5-series"
       },
       {
         "name": "525td",
-        "url": "https://bmwengines.uk/5-series/525tds"
+        "url": "https://bmwengines.uk/5-series"
       },
       {
         "name": "525tds",
-        "url": "https://bmwengines.uk/5-series/525tds"
+        "url": "https://bmwengines.uk/5-series"
       },
       {
         "name": "525d",
@@ -884,7 +884,7 @@
       },
       {
         "name": "M5",
-        "url": "#"
+        "url": "/m5"
       }
     ],
     "scopeNote": "All variants listed are E34 5 Series only. The 525iX is the all-wheel-drive variant. The Touring estate was introduced in September 1992 and shares the same engine range. The M5 received the S38B38 3.8-litre engine from 1992, replacing the S38B36 3.6-litre."
@@ -918,7 +918,7 @@
       {
         "id": 4,
         "question": "Is the BMW E34 5 Series reliable overall?",
-        "answer": "Yes -the E34 is considered one of BMW\u0027s most solid classic models. The six-cylinder M50 and M30 engines are genuinely robust; the M60 V8 is refined but more complex; the M51 diesel is economical but requires specialist attention. The M5\u0027s S38 engine is a high-performance unit with corresponding maintenance costs."
+        "answer": "Yes -the E34 is considered one of BMW's most solid classic models. The six-cylinder M50 and M30 engines are genuinely robust; the M60 V8 is refined but more complex; the M51 diesel is economical but requires specialist attention. The M5's S38 engine is a high-performance unit with corresponding maintenance costs."
       },
       {
         "id": 5,
@@ -933,7 +933,7 @@
       {
         "id": 7,
         "question": "Is it worth replacing an E34 5 Series engine, or should I scrap the car?",
-        "answer": "Depends on the car\u0027s value. Against a well-kept £4,000+ E34, a £2,500 M50 recon is 63% of the car\u0027s value -approaching our 70% BMW threshold, assess carefully. Against a tired £1,500 example, the same recon is 167% -walk away. For M5s, the calculus is different: these are appreciating classics, and engine replacement can be justified if the car is otherwise excellent."
+        "answer": "Depends on the car's value. Against a well-kept £4,000+ E34, a £2,500 M50 recon is 63% of the car's value -approaching our 70% BMW threshold, assess carefully. Against a tired £1,500 example, the same recon is 167% -walk away. For M5s, the calculus is different: these are appreciating classics, and engine replacement can be justified if the car is otherwise excellent."
       },
       {
         "id": 8,
@@ -943,12 +943,12 @@
       {
         "id": 9,
         "question": "What is the difference between the E34 and the E39?",
-        "answer": "The E34 (1987–1996) is the third-generation 5 Series -a classic 1980s/1990s design with traditional BMW straight-six and V8 engines. The E39 (1995–2003) is the fourth-generation successor -more refined, with more advanced suspension and the introduction of the M62 V8. Engine costs and maintenance vary significantly. The E34 is a classic car; the E39 is a modern classic. See each generation\u0027s own page for specifics."
+        "answer": "The E34 (1987–1996) is the third-generation 5 Series -a classic 1980s/1990s design with traditional BMW straight-six and V8 engines. The E39 (1995–2003) is the fourth-generation successor -more refined, with more advanced suspension and the introduction of the M62 V8. Engine costs and maintenance vary significantly. The E34 is a classic car; the E39 is a modern classic. See each generation's own page for specifics."
       },
       {
         "id": 10,
         "question": "How do I find my E34 5 Series engine code?",
-        "answer": "Check the VIN plate, vehicle documentation, or the engine block -1.8-litre four-cylinder is M40B18 or M43B18, 2.0-litre six-cylinder is M20B20 or M50B20, 2.5-litre six-cylinder is M50B25, 3.4-litre six-cylinder is M30B34, 3.0-litre V8 is M60B30, 4.0-litre V8 is M60B40, 2.4-litre diesel is M21D24, 2.5-litre diesel is M51D25, 3.6-litre M5 is S38B36, 3.8-litre M5 is S38B38. Tell us your variant and registration year and we\u0027ll identify it -20+ vetted BMW specialists will confirm it for free."
+        "answer": "Check the VIN plate, vehicle documentation, or the engine block -1.8-litre four-cylinder is M40B18 or M43B18, 2.0-litre six-cylinder is M20B20 or M50B20, 2.5-litre six-cylinder is M50B25, 3.4-litre six-cylinder is M30B34, 3.0-litre V8 is M60B30, 4.0-litre V8 is M60B40, 2.4-litre diesel is M21D24, 2.5-litre diesel is M51D25, 3.6-litre M5 is S38B36, 3.8-litre M5 is S38B38. Tell us your variant and registration year and we'll identify it -20+ vetted BMW specialists will confirm it for free."
       }
     ]
   },
@@ -961,17 +961,17 @@
       },
       {
         "title": "Compare E34 Engine Replacement Companies",
-        "text": "see prices, warranty terms and supply \u0026 fit options side-by-side before you commit."
+        "text": "see prices, warranty terms and supply & fit options side-by-side before you commit."
       },
       {
         "title": "UK Engine Replacement Services for E34",
-        "text": "covering every variant from 518i to M5, with supply-only or full supply \u0026 fit available nationwide."
+        "text": "covering every variant from 518i to M5, with supply-only or full supply & fit available nationwide."
       }
     ],
     "finalCta": "Find the best BMW 5 Series E34 engine replacement UK drivers rely on. Compare real prices from trusted specialists on EnginesMarket today and get back on the road with confidence.",
     "ctaButton": {
       "label": "Compare BMW 5 Series E34 Engine Prices on EnginesMarket →",
-      "href": "#",
+      "href": "/quote",
       "note": "[PLACEHOLDER -confirm EnginesMarket URL structure]"
     }
   }

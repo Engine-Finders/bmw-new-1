@@ -39,25 +39,25 @@
               "@type": "ListItem",
               "position": 1,
               "name": "S63B44T1 (base, 560 PS) Engine",
-              "url": "https://bmwengines.uk/engine/s63/"
+              "url": "https://bmwengines.uk/engine/s63-s65"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "S63B44T1 (LCI, 575 PS) Engine",
-              "url": "https://bmwengines.uk/engine/s63/"
+              "url": "https://bmwengines.uk/engine/s63-s65"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "S63B44T1 (Competition, 600 PS) Engine",
-              "url": "https://bmwengines.uk/engine/s63/"
+              "url": "https://bmwengines.uk/engine/s63-s65"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "S63B44B Engine",
-              "url": "https://bmwengines.uk/engine/s63/"
+              "url": "https://bmwengines.uk/engine/s63-s65"
             }
           ]
         },
@@ -69,25 +69,25 @@
               "@type": "ListItem",
               "position": 1,
               "name": "BMW M6 Coupé (F13)",
-              "url": "https://bmwengines.uk/m6/f13/"
+              "url": "https://bmwengines.uk/m6/f06-f12-f13"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "BMW M6 Convertible (F12)",
-              "url": "https://bmwengines.uk/m6/f12/"
+              "url": "https://bmwengines.uk/m6/f06-f12-f13"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "BMW M6 Gran Coupé (F06)",
-              "url": "https://bmwengines.uk/m6/f06/"
+              "url": "https://bmwengines.uk/m6/f06-f12-f13"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "BMW M6 Competition",
-              "url": "https://bmwengines.uk/m6/competition/"
+              "url": "https://bmwengines.uk/m6"
             }
           ]
         },
@@ -260,7 +260,7 @@
     ],
     "primaryCta": {
       "label": "Explore M6 Engines →",
-      "href": "#"
+      "href": "/m6"
     },
     "dataIntegrityNote": ""
   },
@@ -491,7 +491,7 @@
         "recommendation": "If you own an F06/F12/F13 M6, budget for rod bearing replacement as preventative maintenance at 50,000 miles -£2,000–£4,000 is dramatically cheaper than the £6,000+ replacement that follows if the bearings fail. Listen for any metallic knocking and use the correct 10W-60 oil. This applies to all S63-engined cars, but early pre-2015 cars are the highest risk.",
         "cta": {
           "label": "Compare S63 engine prices for your M6 F06/F12/F13 →",
-          "href": "#"
+          "href": "/quote"
         }
       },
       {
@@ -519,7 +519,7 @@
         "recommendation": "If your S63 V8 smokes on startup, budget for valve-stem-seal replacement immediately -a £1,500–£3,000 repair is dramatically cheaper than the £6,000+ replacement that follows if the catalytic converters are destroyed or the engine overheats. Regular oil changes (5,000-mile intervals) with high-quality oil are essential.",
         "cta": {
           "label": "Compare S63 engine prices for your M6 F06/F12/F13 →",
-          "href": "#"
+          "href": "/quote"
         }
       },
       {
@@ -547,7 +547,7 @@
         "recommendation": "Consider upgrading the plastic charge pipes to aluminium units if you track your car or plan to tune it. A £500–£1,000 preventative upgrade is dramatically cheaper than the £6,000+ replacement that follows if the turbo fails and causes engine damage.",
         "cta": {
           "label": "Compare S63 turbo and charge pipe upgrades for your M6 F06/F12/F13 →",
-          "href": "#"
+          "href": "/m6/f06-f12-f13"
         }
       },
       {
@@ -575,7 +575,7 @@
         "recommendation": "Check if your M6 has had the driveshaft recall performed -this is a free repair from BMW. If you hear loud noises from the rear differential, have it inspected immediately.",
         "cta": {
           "label": "Compare M6 driveshaft and differential repair quotes →",
-          "href": "#"
+          "href": "/quote"
         }
       }
     ]
@@ -749,7 +749,7 @@
     "finalCta": "Find the best BMW M6 F06/F12/F13 engine replacement UK drivers rely on. Compare real prices from trusted specialists on EnginesMarket today and get back on the road with confidence.",
     "ctaButton": {
       "label": "Compare BMW M6 F06/F12/F13 Engine Prices on EnginesMarket →",
-      "href": "#",
+      "href": "/quote",
       "note": "[PLACEHOLDER -confirm EnginesMarket URL structure]"
     }
   }

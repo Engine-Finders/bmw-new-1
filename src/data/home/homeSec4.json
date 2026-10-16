@@ -1,43 +1,25 @@
 {
   "h2": "<span class=\"heading-accent\">BMW</span> Ownership Rankings",
   "subHeadline": "The verdicts people actually want before they read a single spec sheet - the calls we'd make for a friend, backed by real UK enquiry and failure data.",
+  "headerImage": {
+    "src": "/home-image/sec-header-light.webp",
+    "alt": "BMW kidney grille and headlights"
+  },
   "heroImages": {
     "light": {
-      "src": "/hero-day.webp",
-      "alt": "White BMW front for ownership rankings"
+      "src": "/home-image/sec-header-light.webp",
+      "alt": "BMW kidney grille and headlights"
     },
     "dark": {
-      "src": "/Hero-dark.webp",
-      "alt": "BMW front in a dark garage"
+      "src": "/home-image/sec-header-dark.webp",
+      "alt": "BMW kidney grille and headlights at night"
     }
   },
-  "trustStrip": [
-    {
-      "icon": "chart",
-      "value": "24,650+",
-      "text": "Real UK Enquiries"
-    },
-    {
-      "icon": "wrench",
-      "value": "20+",
-      "text": "Vetted BMW Specialists"
-    },
-    {
-      "icon": "book",
-      "value": "OEM",
-      "text": "Part References Included"
-    },
-    {
-      "icon": "trophy",
-      "value": "Part of",
-      "text": "Engine Finders"
-    }
-  ],
   "columns": [
-    "RANKING",
-    "WINNER",
-    "WHY",
-    "VERDICT"
+    "Ranking",
+    "Winner",
+    "Why",
+    "Verdict"
   ],
   "rankings": [
     {
@@ -46,11 +28,11 @@
       "winner": "B58B30",
       "why": "Modern straight-six with well-understood, repairable failure points - coolant leaks aside, largely trouble-free. Just 540 enquiries in 2025, mostly due-diligence, not failure [BMW-VERIFIED].",
       "verdict": {
-        "icon": "trophy",
+        "icon": "🏆",
         "text": "Best",
         "type": "best"
       },
-      "href": "#"
+      "href": "/engine/b57-b58"
     },
     {
       "ranking": "Most Reliable Model (Modern)",
@@ -58,96 +40,136 @@
       "winner": "3 Series G20",
       "why": "B47/B48/B58 engines in the lightest chassis - 190 enquiries in 2025, predominantly pre-purchase research [BMW-VERIFIED].",
       "verdict": {
-        "icon": "trophy",
+        "icon": "🏆",
         "text": "Best",
         "type": "best"
       },
-      "href": "#"
+      "href": "/3-series/g20"
     },
     {
       "ranking": "Best Used Buy",
       "icon": "tag",
-      "winner": "F30 LCI (2016+)",
-      "winnerNote": "with B47D20A",
+      "winner": "F30 LCI (2016+) with B47D20A",
       "why": "Post-chain-revision, modern electronics, depreciated early-mid values - the sweet spot for daily ownership. £2,800-£4,500 recon cost against £7,000-£20,000 vehicle value [BMW-QUOTE].",
       "verdict": {
-        "icon": "check",
+        "icon": "✅",
         "text": "Safe",
         "type": "safe"
       },
-      "href": "#"
+      "href": "/3-series/f30"
     },
     {
       "ranking": "Most Expensive Failure",
-      "icon": "warning",
-      "winner": "N63B44",
-      "winnerNote": "Valve Stem Seals",
+      "icon": "flame",
+      "winner": "N63B44 Valve Stem Seals",
       "why": "Hot-vee architecture causes seal failure at 60k-100k miles - known as the \"N63 nightmare.\" £3,000-£6,000 repair or £6,000-£10,000 replacement [BMW-QUOTE].",
       "verdict": {
-        "icon": "x",
+        "icon": "🔴",
         "text": "Avoid",
         "type": "avoid"
       },
-      "href": "#"
+      "href": "/engine/n62-n63"
     },
     {
       "ranking": "Safest BMW to Buy Used",
       "icon": "shield",
-      "winner": "5 Series G30",
-      "winnerNote": "(2017-2023)",
+      "winner": "5 Series G30 (2017-2023)",
       "why": "Typical values of £14,000-£30,000 against £2,800-£8,000 recon cost - comfortably safe across all engine variants [BMW-QUOTE].",
       "verdict": {
-        "icon": "check",
+        "icon": "✅",
         "text": "Safe",
         "type": "safe"
       },
-      "href": "#"
+      "href": "/5-series/g30"
     },
     {
       "ranking": "Highest Risk Purchase",
-      "icon": "flame",
-      "winner": "E90 N47D20C",
-      "winnerNote": "(pre-2013, no chain history)",
+      "icon": "warning",
+      "winner": "E90 N47D20C (pre-2013, no chain history)",
       "why": "Ageing host values (£2,500-£7,500) against £3,200-£5,500 recon cost - the 70% BMW threshold risk [BMW-QUOTE].",
       "verdict": {
-        "icon": "alert",
+        "icon": "⚠️",
         "text": "Watch",
         "type": "watch"
       },
-      "href": "#"
+      "href": "/3-series/e90"
     },
     {
       "ranking": "Best Family BMW",
-      "icon": "users",
-      "winner": "X5 G05",
-      "winnerNote": "(2018-present)",
+      "icon": "best-family",
+      "winner": "X5 G05 (2018-present)",
       "why": "B57/B58 reliability, 650L boot, 7-seat option, and strong specialist network - values justify replacement across the board.",
       "verdict": {
-        "icon": "users",
+        "icon": "👨‍👩‍👧‍👦",
         "text": "Best",
         "type": "family"
       },
-      "href": "#"
+      "href": "/x5/g05"
     },
     {
       "ranking": "Best Long-Term Keeper",
-      "icon": "crown",
-      "winner": "E46 330i",
-      "winnerNote": "(M54)",
+      "icon": "long-term",
+      "winner": "E46 330i (M54)",
       "why": "The bulletproof naturally-aspirated straight-six - maintenance is an investment, not an expense. One of the most dependable BMWs ever built.",
       "verdict": {
-        "icon": "trophy",
+        "icon": "🏆",
         "text": "Best",
         "type": "best"
       },
-      "href": "#"
+      "href": "/3-series/e46"
     }
   ],
-  "bottomCta": {
-    "icon": "shield",
-    "title": "Honest, Data-Backed, Unbiased.",
-    "text": "We tell you the truth - even when it means walking away. That's the Engine Finders promise.",
-    "buttonLabel": "START YOUR RESEARCH",
-    "href": "/quote"
+  "dataSources": {
+    "title": "Quick Reference: Data Sources Used in Sections 1-4",
+    "columns": [
+      "Claim",
+      "Source"
+    ],
+    "rows": [
+      {
+        "claim": "24,650+ enquiries",
+        "source": "market-intelligence.json / EM_Proprietary_Data_2025.txt"
+      },
+      {
+        "claim": "20+ vetted BMW specialists",
+        "source": "Brand constants (Prerequisite 4)"
+      },
+      {
+        "claim": "F30 380 enquiries",
+        "source": "EM_Proprietary_Data_2025.txt - Model table row 1"
+      },
+      {
+        "claim": "E90 256 enquiries",
+        "source": "EM_Proprietary_Data_2025.txt - Model table row 26"
+      },
+      {
+        "claim": "G20 190 enquiries",
+        "source": "EM_Proprietary_Data_2025.txt - Model table row 52"
+      },
+      {
+        "claim": "F25 316 enquiries",
+        "source": "EM_Proprietary_Data_2025.txt - Model table row 11"
+      },
+      {
+        "claim": "B58 540 enquiries",
+        "source": "EM_Proprietary_Data_2025.txt - Engine table row 16"
+      },
+      {
+        "claim": "N63 440 enquiries",
+        "source": "EM_Proprietary_Data_2025.txt - Engine table row 21"
+      },
+      {
+        "claim": "N47 £3,200-£5,500",
+        "source": "Table A - Engine Replacement Economics (row 1)"
+      },
+      {
+        "claim": "B47 £2,800-£4,500",
+        "source": "Table A - Engine Replacement Economics (row 6)"
+      },
+      {
+        "claim": "Vehicle value bands",
+        "source": "Model Ownership Decision Table - BMW section"
+      }
+    ]
   }
 }

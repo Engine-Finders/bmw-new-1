@@ -52,13 +52,13 @@
               "@type": "ListItem",
               "position": 1,
               "name": "BMW 5 Series E39 M5",
-              "url": "https://bmwengines.uk/models/e39-m5/"
+              "url": "https://bmwengines.uk/5-series/e39"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "BMW Z8 E52",
-              "url": "https://bmwengines.uk/models/e52-z8/"
+              "url": "https://bmwengines.uk/z8/e52"
             }
           ]
         },
@@ -201,7 +201,7 @@
     ],
     "primaryCta": {
       "label": "Compare S62 Engine Prices →",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "atAGlance": {
@@ -302,7 +302,7 @@
     "sharedCostNote": "",
     "cta": {
       "label": "",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "faq": {
@@ -339,7 +339,7 @@
     "finalCta": "",
     "ctaButton": {
       "label": "",
-      "href": "#"
+      "href": "/quote"
     }
   }
 }

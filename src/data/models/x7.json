@@ -64,49 +64,49 @@
               "@type": "ListItem",
               "position": 1,
               "name": "B58B30C Engine",
-              "url": "https://bmwengines.uk/engine/b58b30c/"
+              "url": "https://bmwengines.uk/engine/b57-b58"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "B58B30P Engine",
-              "url": "https://bmwengines.uk/engine/b58b30p/"
+              "url": "https://bmwengines.uk/engine/b57-b58"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "N63B44D Engine",
-              "url": "https://bmwengines.uk/engine/n63b44d/"
+              "url": "https://bmwengines.uk/engine/n62-n63"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "S63B44 Engine",
-              "url": "https://bmwengines.uk/engine/s63b44/"
+              "url": "https://bmwengines.uk/engine/s63-s65"
             },
             {
               "@type": "ListItem",
               "position": 5,
               "name": "S68B44A Engine",
-              "url": "https://bmwengines.uk/engine/s68b44a/"
+              "url": "https://bmwengines.uk/technical/engine-code-decoder"
             },
             {
               "@type": "ListItem",
               "position": 6,
               "name": "B57D30B Engine",
-              "url": "https://bmwengines.uk/engine/b57d30b/"
+              "url": "https://bmwengines.uk/engine/b57-b58"
             },
             {
               "@type": "ListItem",
               "position": 7,
               "name": "B57D30T0 Engine",
-              "url": "https://bmwengines.uk/engine/b57d30t0/"
+              "url": "https://bmwengines.uk/engine/b57-b58"
             },
             {
               "@type": "ListItem",
               "position": 8,
               "name": "B57D30 Engine",
-              "url": "https://bmwengines.uk/engine/b57d30/"
+              "url": "https://bmwengines.uk/engine/b57-b58"
             }
           ]
         },
@@ -258,7 +258,7 @@
     ],
     "primaryCta": {
       "label": "Explore X7 Engines →",
-      "href": "#"
+      "href": "/x7"
     }
   },
   "ownershipVerdict": {
@@ -375,7 +375,7 @@
         "verdict": "",
         "cta": {
           "label": "",
-          "href": "#"
+          "href": "/quote"
         }
       }
     ],
@@ -386,7 +386,7 @@
     },
     "comparisonLink": {
       "label": "Read the full comparison: BMW X7 Pre-LCI vs LCI →",
-      "href": "#"
+      "href": "/compare"
     }
   },
   "engineDatabase": {
@@ -530,7 +530,7 @@
         },
         "link": {
           "label": "Learn more →",
-          "href": "#"
+          "href": "/failures/water-pump-failure"
         }
       },
       {
@@ -544,7 +544,7 @@
         },
         "link": {
           "label": "Learn more →",
-          "href": "#"
+          "href": "/engine/b57-b58"
         }
       },
       {
@@ -558,7 +558,7 @@
         },
         "link": {
           "label": "Learn more →",
-          "href": "#"
+          "href": "/failures/valve-stem-seal-wear"
         }
       },
       {
@@ -572,7 +572,7 @@
         },
         "link": {
           "label": "Learn more →",
-          "href": "#"
+          "href": "/failures/water-pump-failure"
         }
       },
       {
@@ -586,7 +586,7 @@
         },
         "link": {
           "label": "Learn more →",
-          "href": "#"
+          "href": "/failures/egr-valve-cooler"
         }
       },
       {
@@ -600,7 +600,7 @@
         },
         "link": {
           "label": "Learn more →",
-          "href": "#"
+          "href": "/x7/g07"
         }
       }
     ],
@@ -826,11 +826,11 @@
     "paths": [
       {
         "label": "Path 1 - Know your engine? Launch the BMW diagnostic calculator with X7 pre-selected",
-        "href": "/fault-diagnostic-calculator"
+        "href": "/tools/diagnostic-wizard"
       },
       {
         "label": "Path 2 - Not sure which engine you have? We'll identify it first → /fault-diagnostic-calculator (identification is the first step inside the tool)",
-        "href": "#"
+        "href": "/tools/diagnostic-wizard"
       }
     ]
   },
@@ -917,13 +917,13 @@
         "icon": "🩺",
         "title": "Diagnose My X7",
         "text": "Symptoms in, verdict out - value-weighted for your generation.",
-        "href": "/fault-diagnostic-calculator"
+        "href": "/tools/diagnostic-wizard"
       },
       {
         "icon": "🤝",
         "title": "Compare UK Specialists",
         "text": "20+ vetted BMW specialists, prices and warranties side-by-side.",
-        "href": "/quotes/?model=x7"
+        "href": "/quote"
       }
     ],
     "footerNote": "(Minimal footer below.)"

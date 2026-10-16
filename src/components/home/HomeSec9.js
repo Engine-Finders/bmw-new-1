@@ -4,165 +4,328 @@ import Image from "next/image";
 import Link from "next/link";
 import MStripe from "@/components/reusableComponents/MStripe";
 import { useTheme } from "@/components/shared/themeProvider";
+import HomeIcon from "@/components/home/homeIcons";
+import { engineImageFor } from "@/components/shared/carImage";
 
-const severityConfig = {
-  catastrophic: { dot: "bg-[#ff2b2b]", text: "text-[#07113a]" },
-  immediate: { dot: "bg-[#ff8a00]", text: "text-[#07113a]" },
-  monitor: { dot: "bg-[#ffd400]", text: "text-[#07113a]" },
-  low: { dot: "bg-[#25a844]", text: "text-[#07113a]" },
+const ENGINE_IMAGE = null;
+const ICON_LG = "h-10 w-10 md:h-11 md:w-11";
+
+const severityStyle = {
+  catastrophic: {
+    dot: "bg-[#ed1c24]",
+    text: "text-[#ed1c24]",
+    pill: "border-[#f7c8cc] bg-[#fff0f1] text-[#c42430]",
+    darkPill: "border-[rgba(255,90,100,0.34)] bg-[rgba(255,45,53,0.14)] text-[#ff9aa0]",
+  },
+  immediate: {
+    dot: "bg-[#ff7900]",
+    text: "text-[#e06a00]",
+    pill: "border-[#f5d4ad] bg-[#fff6ea] text-[#d97810]",
+    darkPill: "border-[rgba(246,161,73,0.34)] bg-[rgba(246,161,73,0.14)] text-[#ffba6c]",
+  },
+  monitor: {
+    dot: "bg-[#f6b800]",
+    text: "text-[#c77700]",
+    pill: "border-[#ecd7a7] bg-[#fff9ea] text-[#9c6a00]",
+    darkPill: "border-[rgba(222,177,65,0.34)] bg-[rgba(222,177,65,0.13)] text-[#ffd473]",
+  },
+  low: {
+    dot: "bg-[#20a84a]",
+    text: "text-[#1c8b3d]",
+    pill: "border-[#cce7d7] bg-[#eefaf3] text-[#17824f]",
+    darkPill: "border-[rgba(77,198,124,0.34)] bg-[rgba(24,148,84,0.13)] text-[#74d7a1]",
+  },
 };
 
-const iconPaths = {
-  gear: (
-    <>
-      <path d="M12 8.4a3.6 3.6 0 1 0 0 7.2 3.6 3.6 0 0 0 0-7.2Z" />
-      <path d="m19.4 15.1.1 2.2-2.2 2.2-2.2-.9-1.3.5-.9 2.1H9.8l-.9-2.1-1.3-.5-2.2.9-2.2-2.2.1-2.2-.6-1.2-2-1v-3.1l2-1 .6-1.2-.1-2.2 2.2-2.2 2.2.9 1.3-.5.9-2.1h3.1l.9 2.1 1.3.5 2.2-.9 2.2 2.2-.1 2.2.6 1.2 2 1v3.1l-2 1-.6 1.2Z" />
-    </>
-  ),
-  warning: (
-    <>
-      <path d="M12 7.5v5.4" />
-      <path d="M12 16.5h.01" />
-      <path d="M10.2 4.8 2.7 18a2 2 0 0 0 1.7 3h15.2a2 2 0 0 0 1.7-3L13.8 4.8a2.1 2.1 0 0 0-3.6 0Z" />
-    </>
-  ),
-  arrow: <path d="M5 12h14m-6-6 6 6-6 6" />,
-};
+function cleanText(value = "") {
+  return String(value || "")
+    .replaceAll("Â£", "£")
+    .replaceAll("â€“", "–")
+    .replaceAll("â€”", "—")
+    .trim();
+}
 
-function Icon({ name, className = "h-5 w-5", strokeWidth = 2 }) {
+function unlinkHtml(value = "") {
+  return cleanText(value).replace(
+    /<a\b[^>]*>([\s\S]*?)<\/a>/gi,
+    '<span class="font-semibold text-[var(--color-chrome-bright)]">$1</span>'
+  );
+}
+
+function SeverityBadge({ severity, isDark, variant = "plain" }) {
+  const style = severityStyle[severity?.type] || severityStyle.monitor;
+
+  if (variant === "pill") {
+    return (
+      <span
+        className={`inline-flex shrink-0 items-center gap-1.5 rounded-full border px-2 py-1 text-[0.58rem] font-bold uppercase tracking-[0.04em] ${
+          isDark ? style.darkPill : style.pill
+        }`}
+      >
+        <span className={`h-1.5 w-1.5 shrink-0 rounded-full ${style.dot}`} />
+        {severity?.label}
+      </span>
+    );
+  }
+
   return (
-    <svg
-      aria-hidden="true"
-      viewBox="0 0 24 24"
-      className={className}
-      fill="none"
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={strokeWidth}
+    <span className={`inline-flex items-center gap-1.5 text-[0.68rem] font-bold uppercase tracking-[0.04em] ${style.text}`}>
+      <span className={`h-2 w-2 shrink-0 rounded-full ${style.dot}`} />
+      {severity?.label}
+    </span>
+  );
+}
+
+function CategoryLabel({ title, icon, isDark }) {
+  return (
+    <div className="mb-1 flex items-center gap-1.5 md:mb-1.5 md:gap-2">
+      <HomeIcon name={icon} isDark={isDark} className={ICON_LG} />
+      <p
+        className={`text-[0.68rem] font-bold uppercase tracking-[0.12em] ${
+          isDark ? "text-white/70" : "text-[var(--color-text-muted)]"
+        }`}
+      >
+        {title}
+      </p>
+    </div>
+  );
+}
+
+function EngineCard({ row, isDark }) {
+  // Each engine failure shows the engine it names (276DT, AJ133, Ingenium, AJ126...).
+  const engineImage = engineImageFor(unlinkHtml(row.title)) || engineImageFor(unlinkHtml(row.description)) || ENGINE_IMAGE;
+  const linkLabel = (row.link?.label || "Read more").replace(/\s*→\s*$/, "");
+
+  return (
+    <article
+      className={`relative overflow-hidden rounded-lg border md:flex md:h-full md:flex-col md:rounded-xl ${
+        isDark
+          ? "border-[var(--color-border)] bg-[var(--color-surface-raised)]"
+          : "border-[#e4e9f0] bg-white shadow-[0_8px_20px_rgba(10,26,43,0.04)]"
+      }`}
     >
-      {iconPaths[name] || iconPaths.gear}
-    </svg>
-  );
-}
-
-function Severity({ severity }) {
-  const config = severityConfig[severity.type] || severityConfig.monitor;
-
-  return (
-    <span className={`inline-flex items-center gap-2 text-[0.86rem] leading-none md:gap-3 md:text-[0.95rem] ${config.text}`}>
-      <span className={`h-4 w-4 shrink-0 rounded-full ${config.dot}`} />
-      <span>{severity.label}</span>
-    </span>
-  );
-}
-
-function SectionIcon({ icon }) {
-  return (
-    <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded bg-[var(--color-primary)] text-white md:h-9 md:w-11">
-      <Icon name={icon} className="h-7 w-7 md:h-5 md:w-5" strokeWidth={2.3} />
-    </span>
-  );
-}
-
-function TableHeader({ block, isDark }) {
-  return (
-    <div className={`flex items-center border-b ${isDark ? "border-[#223343] bg-[rgba(10,21,32,0.94)]" : "border-[#dfe5ed] bg-white"}`}>
-      <SectionIcon icon={block.icon} />
-      <h3 className={`px-4 py-3 text-[1.15rem] font-bold uppercase text-[var(--color-primary)] md:py-2 md:text-[1rem] ${isDark ? "md:text-white" : "md:text-[#071827]"}`}>
-        {block.title}
-      </h3>
-    </div>
-  );
-}
-
-function DesktopRows({ block, isDark }) {
-  return (
-    <div className="hidden md:block">
-      <div className={`grid grid-cols-[60px_minmax(230px,0.95fr)_minmax(420px,1.8fr)_180px_170px] border-b text-[0.72rem] font-bold uppercase ${isDark ? "border-[#223343] bg-[rgba(14,27,41,0.95)] text-white/88" : "border-[#dfe5ed] bg-[#fbfcfe] text-[#071827]"}`}>
-        {block.columns.map((column) => (
-          <span key={column} className={`border-r px-6 py-2 last:border-r-0 ${isDark ? "border-[#223343]" : "border-[#e5e9ef]"}`}>
-            {column}
-          </span>
-        ))}
-      </div>
-
-      {block.rows.map((row) => (
-        <div
-          key={row.id}
-          className={`grid grid-cols-[60px_minmax(230px,0.95fr)_minmax(420px,1.8fr)_180px_170px] border-b last:border-b-0 ${isDark ? "border-[#223343]" : "border-[#e5e9ef]"}`}
+      {/* Mobile: horizontal ref layout */}
+      <div className="flex gap-3 p-3 md:hidden">
+        <span
+          className={`absolute left-2.5 top-2.5 z-10 flex h-6 w-6 items-center justify-center rounded-full text-[0.7rem] font-bold ${
+            isDark ? "bg-white/12 text-white/80" : "bg-[#eef2f7] text-[#4a5b70]"
+          }`}
         >
-          <div className={`border-r px-6 py-4 text-[1.55rem] font-bold leading-none text-[var(--color-primary)] ${isDark ? "border-[#223343]" : "border-[#e5e9ef]"}`}>
-            {row.id}
-          </div>
-          <div className={`border-r px-6 py-4 text-[1rem] font-bold leading-tight ${isDark ? "border-[#223343] text-white" : "border-[#e5e9ef] text-[#071827]"}`}>
-            {row.title}
-          </div>
-          <p className={`border-r px-6 py-3 text-[0.82rem] leading-[1.25] ${isDark ? "border-[#223343] text-white/76" : "border-[#e5e9ef] text-[#171f2a]"}`} dangerouslySetInnerHTML={{ __html: row.description }} />
-          <div className={`border-r px-6 py-4 ${isDark ? "border-[#223343]" : "border-[#e5e9ef]"}`}>
-            <Severity severity={row.severity} />
-          </div>
-          <Link href={row.link.href} className="flex items-center gap-3 px-6 py-4 text-[0.9rem] font-medium text-[var(--color-primary)]">
-            {row.link.label}
-            <Icon name="arrow" className="h-4 w-4" />
-          </Link>
-        </div>
-      ))}
-    </div>
-  );
-}
+          {row.id}
+        </span>
 
-function MobileRows({ block, isDark }) {
-  return (
-    <div className="md:hidden">
-      {block.rows.map((row) => (
-        <div key={row.id} className={`border-b px-4 py-4 last:border-b-0 ${isDark ? "border-[#223343]" : "border-[#dfe5ed]"}`}>
-          <div className="flex items-start gap-3">
-            <span className="w-8 shrink-0 text-[1.65rem] font-bold leading-none text-[var(--color-primary)]">
-              {row.id}
+        <div className="relative mt-5 h-[92px] w-[88px] shrink-0">
+          {engineImage ? (
+            <Image src={engineImage} alt="" fill className="object-contain object-center" sizes="88px" />
+          ) : (
+            <span className="flex h-full w-full items-center justify-center">
+              <HomeIcon name="engine" isDark={isDark} className="h-16 w-16" />
             </span>
-            <div className="min-w-0 flex-1">
-              <h4 className={`text-[1.05rem] font-bold leading-tight ${isDark ? "text-white" : "text-[#07113a]"}`}>{row.title}</h4>
-              <div className="mt-2">
-                <Severity severity={row.severity} />
-              </div>
-            </div>
-          </div>
-          <p className={`mt-3 text-[0.86rem] leading-[1.48] ${isDark ? "text-white/78" : "text-[#07113a]"}`} dangerouslySetInnerHTML={{ __html: row.description }} />
-          <Link href={row.link.href} className="mt-4 inline-flex items-center gap-3 text-[0.95rem] font-bold text-[var(--color-primary)]">
-            {row.link.label}
-            <Icon name="arrow" className="h-5 w-5" />
-          </Link>
+          )}
         </div>
-      ))}
-    </div>
-  );
-}
 
-function FailureTable({ block, isDark }) {
-  return (
-    <div className={`border-y md:overflow-hidden md:rounded-md md:border md:shadow-[0_12px_32px_rgba(10,26,43,0.06)] ${isDark ? "border-[#223343] bg-[rgba(10,21,32,0.92)]" : "border-[#dfe5ed] bg-white"}`}>
-      <TableHeader block={block} isDark={isDark} />
-      <DesktopRows block={block} isDark={isDark} />
-      <MobileRows block={block} isDark={isDark} />
-    </div>
-  );
-}
-
-function UrgencyKey({ items, isDark }) {
-  return (
-    <div className={`border-y px-4 py-4 md:rounded-md md:border md:px-8 md:shadow-[0_12px_32px_rgba(10,26,43,0.04)] ${isDark ? "border-[#223343] bg-[rgba(10,21,32,0.92)]" : "border-[#dfe5ed] bg-white"}`}>
-      <div className="flex flex-col gap-3 md:flex-row md:items-center md:gap-8">
-        <p className={`text-[0.9rem] font-bold uppercase md:mr-2 ${isDark ? "text-white" : "text-[#071827]"}`}>Urgency Key:</p>
-        {items.map((item) => (
-          <div key={item.label} className={`flex items-center gap-3 text-[0.88rem] ${isDark ? "text-white/84" : "text-[#071827]"}`}>
-            <span className={`h-4 w-4 shrink-0 rounded-full ${(severityConfig[item.type] || severityConfig.monitor).dot}`} />
-            <span>
-              <strong>{item.label}</strong> - <span dangerouslySetInnerHTML={{ __html: item.text }} />
-            </span>
+        <div className="min-w-0 flex-1 pt-0.5">
+          <div className="flex items-start justify-between gap-2">
+            <h3
+              className={`min-w-0 flex-1 text-[0.88rem] font-bold leading-tight ${
+                isDark ? "text-white" : "text-[var(--color-text)]"
+              }`}
+              dangerouslySetInnerHTML={{ __html: unlinkHtml(row.title) }}
+            />
+            <SeverityBadge severity={row.severity} isDark={isDark} variant="pill" />
           </div>
+
+          <p
+            className={`mt-1.5 text-[0.72rem] font-normal leading-[1.35] ${
+              isDark ? "text-white/65" : "text-[var(--color-text-muted)]"
+            }`}
+            dangerouslySetInnerHTML={{ __html: unlinkHtml(row.description) }}
+          />
+
+          <div className="mt-2.5 flex justify-end">
+            <Link
+              href={row.link?.href || "#"}
+              className={`text-[0.76rem] font-semibold ${isDark ? "text-white" : "text-[var(--color-text)]"}`}
+            >
+              {linkLabel} →
+            </Link>
+          </div>
+        </div>
+      </div>
+
+      {/* Desktop: vertical card (unchanged) */}
+      <div className="hidden h-full flex-col md:flex">
+        <span
+          className={`pointer-events-none absolute left-3 top-2 font-heading text-[1.4rem] font-semibold leading-none ${
+            isDark ? "text-white/12" : "text-[#dde4ed]"
+          }`}
+        >
+          {row.id}
+        </span>
+
+        <div className="relative mx-auto mt-8 h-[100px] w-full max-w-[160px]">
+          {engineImage ? (
+            <Image src={engineImage} alt="" fill className="object-contain object-center" sizes="160px" />
+          ) : (
+            <span className="flex h-full w-full items-center justify-center">
+              <HomeIcon name="engine" isDark={isDark} className="h-16 w-16" />
+            </span>
+          )}
+        </div>
+
+        <div className="flex flex-1 flex-col px-4 pb-4 pt-2">
+          <h3
+            className={`text-[0.92rem] font-bold leading-tight ${isDark ? "text-white" : "text-[var(--color-text)]"}`}
+            dangerouslySetInnerHTML={{ __html: unlinkHtml(row.title) }}
+          />
+          <p
+            className={`mt-1.5 text-[0.76rem] leading-[1.35] ${
+              isDark ? "text-white/65" : "text-[var(--color-text-muted)]"
+            }`}
+            dangerouslySetInnerHTML={{ __html: unlinkHtml(row.description) }}
+          />
+
+          <div className="mt-auto flex items-center justify-between gap-2 pt-3">
+            <SeverityBadge severity={row.severity} isDark={isDark} />
+            <Link
+              href={row.link?.href || "#"}
+              className={`shrink-0 text-[0.8rem] font-semibold ${isDark ? "text-white" : "text-[var(--color-text)]"}`}
+            >
+              {linkLabel} →
+            </Link>
+          </div>
+        </div>
+      </div>
+    </article>
+  );
+}
+
+// List rows show the engine they name; symptoms with no single engine show their icon.
+function listImage(row) {
+  return engineImageFor(unlinkHtml(row.title)) || engineImageFor(unlinkHtml(row.description)) || ENGINE_IMAGE;
+}
+
+function FailureListItem({ row, isDark }) {
+  return (
+    <div
+      className={`flex items-center gap-2.5 border-b py-2.5 last:border-b-0 md:gap-3 md:py-3 ${
+        isDark ? "border-[var(--color-border)]" : "border-[#eef2f7]"
+      }`}
+    >
+      <span
+        className={`w-4 shrink-0 font-heading text-[0.9rem] font-bold leading-none md:w-5 md:text-[1rem] ${
+          isDark ? "text-white/45" : "text-[#c3cdda]"
+        }`}
+      >
+        {row.id}
+      </span>
+
+      <div className="relative h-11 w-11 shrink-0 overflow-hidden rounded-md md:h-12 md:w-12">
+        {listImage(row) ? (
+          <Image src={listImage(row)} alt="" fill className="object-contain object-center" sizes="48px" />
+        ) : (
+          <span className="flex h-full w-full items-center justify-center">
+            <HomeIcon name={row.icon || "warning"} isDark={isDark} className="h-9 w-9" />
+          </span>
+        )}
+      </div>
+
+      <div className="min-w-0 flex-1">
+        <p
+          className={`text-[0.88rem] font-bold leading-tight ${
+            isDark ? "text-white" : "text-[var(--color-text)]"
+          }`}
+          dangerouslySetInnerHTML={{ __html: unlinkHtml(row.title) }}
+        />
+        <p
+          className={`mt-1.5 text-[0.72rem] font-normal leading-[1.35] ${
+            isDark ? "text-white/65" : "text-[var(--color-text-muted)]"
+          }`}
+          dangerouslySetInnerHTML={{ __html: unlinkHtml(row.description) }}
+        />
+      </div>
+
+      <div className="flex shrink-0 flex-col items-end gap-1.5 pl-1">
+        <SeverityBadge severity={row.severity} isDark={isDark} variant="pill" />
+        <Link
+          href={row.link?.href || "#"}
+          className={`text-[0.76rem] font-semibold ${
+            isDark ? "text-white" : "text-[var(--color-text)]"
+          }`}
+        >
+          {(row.link?.label || "Read more").replace(/\s*→\s*$/, "")} →
+        </Link>
+      </div>
+    </div>
+  );
+}
+
+function FailureColumn({ block, isDark }) {
+  if (!block?.rows?.length) return null;
+
+  return (
+    <div>
+      <CategoryLabel title={block.title} icon={block.icon} isDark={isDark} />
+      <div
+        className={`rounded-xl border px-3 py-1.5 md:px-3.5 md:py-2 ${
+          isDark
+            ? "border-[var(--color-border)] bg-[var(--color-surface-raised)]"
+            : "border-[#e4e9f0] bg-white shadow-[0_8px_20px_rgba(10,26,43,0.04)]"
+        }`}
+      >
+        {block.rows.map((row) => (
+          <FailureListItem key={`${block.title}-${row.id}`} row={row} isDark={isDark} />
         ))}
       </div>
+    </div>
+  );
+}
+
+function NoteWithBadge({ text, badge, isDark }) {
+  const cleaned = cleanText(text);
+  const marker = badge ? `[${badge}]` : null;
+  const parts = marker && cleaned.includes(marker) ? cleaned.split(marker) : [cleaned];
+
+  return (
+    <>
+      {parts.map((part, i) => (
+        <span key={i}>
+          {part}
+          {i < parts.length - 1 ? (
+            <span
+              className={`mx-1 inline-flex translate-y-[-1px] items-center rounded border px-1.5 py-[1px] text-[0.58rem] font-bold uppercase tracking-[0.06em] ${
+                isDark
+                  ? "border-white/25 bg-white/5 text-white/80"
+                  : "border-[#cdd5e0] bg-white text-[var(--color-text-muted)]"
+              }`}
+            >
+              {badge}
+            </span>
+          ) : null}
+        </span>
+      ))}
+    </>
+  );
+}
+
+function DataNote({ note, isDark }) {
+  if (!note) return null;
+
+  return (
+    <div
+      className={`mt-3 flex items-center gap-2.5 rounded-xl border px-3 py-2.5 md:mt-3.5 md:px-3.5 md:py-2.5 ${
+        isDark
+          ? "border-[var(--color-border)] bg-[var(--color-surface-raised)]"
+          : "border-[#e4e9f0] bg-[#f4f7fb]"
+      }`}
+    >
+      <span className="flex h-9 w-9 shrink-0 items-center justify-center md:h-10 md:w-10">
+        <HomeIcon name="info" isDark={isDark} className={ICON_LG} />
+      </span>
+      <p className={`min-w-0 text-[0.72rem] leading-[1.35] md:text-[0.76rem] ${isDark ? "text-white/70" : "text-[var(--color-text-muted)]"}`}>
+        <strong className={isDark ? "text-white" : "text-[var(--color-text)]"}>{note.label}</strong>{" "}
+        <NoteWithBadge text={note.text} badge={note.badge} isDark={isDark} />
+      </p>
     </div>
   );
 }
@@ -170,35 +333,105 @@ function UrgencyKey({ items, isDark }) {
 export default function HomeSec9({ data }) {
   const { theme } = useTheme();
   const isDark = theme === "dark";
+  const headerImage = (isDark && data.headerImageDark) || data.headerImage || {
+    src: "/home-image/sec-header-light.webp",
+    alt: "BMW failure database",
+  };
+  const engine = data.engineFailures;
+  const columns = [data.suspensionFailures, data.drivetrainFailures, data.electricalFailures].filter(Boolean);
+  const sectionBg = isDark ? "bg-[var(--color-page)]" : "bg-[#eef2f7]";
 
   return (
-    <section className={`relative overflow-hidden px-4 py-8 md:px-6 md:py-8 ${isDark ? "bg-[#02070b]" : "bg-white"}`}>
-      <div className="absolute inset-x-0 top-0 h-[390px] md:h-[295px]">
-        <Image
-          src={data.headerImage.src}
-          alt={data.headerImage.alt}
-          fill
-          className="object-cover object-[88%_top] md:object-[82%_center]"
-          sizes="100vw"
-        />
-        <div className={isDark ? "absolute inset-0 bg-[linear-gradient(115deg,#02070b_0%,rgba(2,7,11,0.98)_42%,rgba(2,7,11,0.72)_66%,rgba(2,7,11,0.18)_100%)] md:bg-[linear-gradient(90deg,#02070b_0%,rgba(2,7,11,0.95)_38%,rgba(2,7,11,0.45)_70%,rgba(2,7,11,0.2)_100%)]" : "absolute inset-0 bg-[linear-gradient(115deg,white_0%,rgba(255,255,255,0.98)_42%,rgba(255,255,255,0.68)_66%,rgba(255,255,255,0.18)_100%)] md:bg-[linear-gradient(90deg,white_0%,rgba(255,255,255,0.96)_38%,rgba(255,255,255,0.45)_70%,rgba(255,255,255,0.2)_100%)]"} />
-        <div className={isDark ? "absolute inset-x-0 bottom-0 h-32 bg-[linear-gradient(0deg,#02070b_0%,rgba(2,7,11,0)_100%)]" : "absolute inset-x-0 bottom-0 h-32 bg-[linear-gradient(0deg,white_0%,rgba(255,255,255,0)_100%)]"} />
+    <section className={`overflow-x-hidden ${sectionBg}`}>
+      {/* Header — same pattern as Sec2/Sec3 */}
+      <div className={`relative overflow-hidden ${sectionBg}`}>
+        <div className="absolute inset-y-0 right-0 w-[62%] md:w-[48%]">
+          <Image
+            src={headerImage.src}
+            alt={headerImage.alt || ""}
+            fill
+            className="object-cover object-right"
+            sizes="(max-width: 768px) 62vw, 48vw"
+          />
+          <div
+            className={
+              isDark
+                ? "absolute inset-0 bg-[linear-gradient(90deg,var(--color-page)_0%,rgba(2,7,11,0.82)_34%,rgba(2,7,11,0.18)_100%)]"
+                : "absolute inset-0 bg-[linear-gradient(90deg,#eef2f7_0%,rgba(244,247,251,0.88)_34%,rgba(244,247,251,0.18)_100%)]"
+            }
+          />
+        </div>
+
+        <div className="relative mx-auto w-full max-w-8xl px-4 pt-5 pb-4 md:px-6 md:pt-7 md:pb-5 lg:px-8">
+          <div className="max-w-[620px]">
+            <p
+              className={`text-[0.64rem] font-bold uppercase tracking-[0.14em] ${
+                isDark ? "text-white/55" : "text-[var(--color-text-muted)]"
+              }`}
+            >
+              Failure Database
+            </p>
+            <h2
+              className={`mt-1.5 text-[2rem] font-bold leading-[0.98] md:text-[2.75rem] md:leading-[0.96] ${
+                isDark ? "text-white" : "text-[var(--color-text)]"
+              }`}
+            
+              dangerouslySetInnerHTML={{ __html: data.h2 }}
+            />
+            <div className="mt-2.5">
+              <MStripe />
+            </div>
+            <p
+              className={`mt-1.5 max-w-[540px] text-[0.86rem] leading-[1.4] md:text-[0.95rem] ${
+                isDark ? "text-white/80" : "text-[var(--color-text-muted)]"
+              }`}
+              dangerouslySetInnerHTML={{ __html: cleanText(data.subHeadline) }}
+            />
+          </div>
+        </div>
       </div>
 
-      <div className="relative mx-auto w-full max-w-8xl">
-        <div className="max-w-[740px] pt-3 md:pt-6">
-          <h2 className={`text-[2.9rem] font-bold leading-[1.03] tracking-normal md:text-[3.45rem] ${isDark ? "text-white" : "text-[#07113a] md:text-black"}`} dangerouslySetInnerHTML={{ __html: data.h2 }} />
-          <div className="mt-4">
-            <MStripe />
+      <div className="mx-auto w-full min-w-0 max-w-8xl px-4 pt-1 pb-5 md:px-6 md:pt-1.5 md:pb-6 lg:px-8">
+        {/* Engine failures — 4 cards */}
+        {engine?.rows?.length ? (
+          <div>
+            <CategoryLabel title={engine.title} icon={engine.icon} isDark={isDark} />
+            <div className="grid grid-cols-1 gap-2.5 sm:grid-cols-2 lg:grid-cols-5 lg:gap-3">
+              {engine.rows.map((row) => (
+                <EngineCard key={row.id} row={row} isDark={isDark} />
+              ))}
+            </div>
           </div>
-          <p className={`mt-5 max-w-[665px] text-[0.92rem] leading-[1.55] md:text-[1rem] ${isDark ? "text-white/78" : "text-[#07113a] md:text-[#171f2a]"}`} dangerouslySetInnerHTML={{ __html: data.subHeadline }} />
-        </div>
+        ) : null}
 
-        <div className="mt-8 -mx-4 grid gap-4 md:mx-0 md:mt-5">
-          <FailureTable block={data.engineFailures} isDark={isDark} />
-          <FailureTable block={data.warningSigns} isDark={isDark} />
-          <UrgencyKey items={data.urgencyKey} isDark={isDark} />
-        </div>
+        {/* Suspension / Drivetrain / Electrical */}
+        {columns.length ? (
+          <div className="mt-3 grid gap-2 md:mt-3 md:grid-cols-3 md:gap-2.5">
+            {columns.map((block) => (
+              <FailureColumn key={block.title} block={block} isDark={isDark} />
+            ))}
+          </div>
+        ) : null}
+
+        {/* Common warning signs: one wide block, two items per row on desktop */}
+        {data.warningSigns?.rows?.length ? (
+          <div className="mt-3 md:mt-4">
+            <CategoryLabel title={data.warningSigns.title} icon={data.warningSigns.icon} isDark={isDark} />
+            <div
+              className={`grid rounded-xl border px-3 py-1.5 md:grid-cols-2 md:gap-x-6 md:px-3.5 md:py-2 ${
+                isDark
+                  ? "border-[var(--color-border)] bg-[var(--color-surface-raised)]"
+                  : "border-[#e4e9f0] bg-white shadow-[0_8px_20px_rgba(10,26,43,0.04)]"
+              }`}
+            >
+              {data.warningSigns.rows.map((row) => (
+                <FailureListItem key={`warning-${row.id}`} row={row} isDark={isDark} />
+              ))}
+            </div>
+          </div>
+        ) : null}
+
+        <DataNote note={data.dataNote} isDark={isDark} />
       </div>
     </section>
   );

@@ -17,6 +17,7 @@ import CalculatorCTA from "@/components/models/CalculatorCTA";
 import TrustBlock from "@/components/models/TrustBlock";
 import FAQAccordion from "@/components/models/FAQAccordion";
 import ClosingActionCards from "@/components/models/ClosingActionCards";
+import { withGenerationPageImages, withModelPageImages, withVariantPageImages } from "@/components/shared/pageCarImages";
 
 import GenHero from "@/components/generation/ModelHero";
 import GenEngineDatabase from "@/components/generation/EngineDatabase";
@@ -25,8 +26,7 @@ import BestWorstEngines from "@/components/generation/BestWorstEngines";
 import OwnershipEconomics from "@/components/generation/OwnershipEconomics";
 import GenProblems from "@/components/generation/CommonProblems";
 import GenReplacementCosts from "@/components/generation/ReplacementCosts";
-import CoreVariants from "@/components/generation/CoreVariants";
-import GenMarketIntelligence from "@/components/generation/MarketIntelligence";
+import CoreVariantsMarketGroup from "@/components/generation/CoreVariantsMarketGroup";
 import GenFAQAccordion from "@/components/generation/FAQAccordion";
 import GenTrustCta from "@/components/generation/TrustCta";
 
@@ -95,14 +95,17 @@ export async function generateStaticParams() {
   const paths = [];
 
   for (const page of modelPages) {
+    if (!page?.slug) continue;
     paths.push({ slug: [page.slug] });
   }
 
   for (const page of genPages) {
+    if (!page?.parent || !page?.slug) continue;
     paths.push({ slug: [page.parent, page.slug] });
   }
 
   for (const page of variantPages) {
+    if (!page?.parent || !page?.slug) continue;
     paths.push({ slug: [page.parent, page.slug] });
   }
 
@@ -167,19 +170,9 @@ export default async function CatchAllPage({ params }) {
   if (!data) notFound();
 
   if (type === "models") {
+    data = withModelPageImages(data);
     return (
-      <main
-        style={{
-          padding: "8px 4px",
-          width: "100%",
-          maxWidth: "88rem",
-          margin: "0 auto",
-          lineHeight: 1.5,
-          display: "flex",
-          flexDirection: "column",
-          
-        }}
-      >
+      <main className="flex flex-col">
         {data.meta?.jsonLd && (
           <script
             type="application/ld+json"
@@ -205,8 +198,9 @@ export default async function CatchAllPage({ params }) {
   }
 
   if (type === "generations") {
+    data = withGenerationPageImages(data);
     return (
-      <main className="flex flex-col">
+      <main className="flex flex-col overflow-x-hidden">
         {data.meta?.jsonLd && (
           <script
             type="application/ld+json"
@@ -216,12 +210,14 @@ export default async function CatchAllPage({ params }) {
         <GenHero data={data.hero} />
         <GenEngineDatabase data={data.engineDatabase} />
         <Overview data={data.overview} />
-        <BestWorstEngines data={data.bestWorstEngines} />
+        <BestWorstEngines data={data.bestWorstEngines && { generationCode: entry.slug, ...data.bestWorstEngines }} />
         <OwnershipEconomics data={data.ownershipEconomics} />
         <GenProblems data={data.commonProblems} />
         <GenReplacementCosts data={data.replacementCosts} />
-        <CoreVariants data={data.coreVariants} parentSlug={entry.parent} />
-        <GenMarketIntelligence data={data.marketIntelligence} />
+        <CoreVariantsMarketGroup
+          coreVariants={data.coreVariants}
+          marketIntelligence={data.marketIntelligence}
+        />
         <GenFAQAccordion data={data.faq} />
         <GenTrustCta data={data.trustCta} />
       </main>
@@ -229,8 +225,9 @@ export default async function CatchAllPage({ params }) {
   }
 
   if (type === "variants") {
+    data = withVariantPageImages(data, entry.parent);
     return (
-      <main className="flex flex-col">
+      <main className="flex flex-col overflow-x-hidden">
         {data.meta?.jsonLd && (
           <script
             type="application/ld+json"

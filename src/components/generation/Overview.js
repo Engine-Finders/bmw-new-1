@@ -1,12 +1,20 @@
 "use client";
 
-import Image from "next/image";
 import MStripe from "@/components/reusableComponents/MStripe";
 import { useTheme } from "@/components/shared/themeProvider";
-import GenIcon from "./GenIcons";
+import CarOnBackground from "@/components/shared/CarOnBackground";
+import HomeIcon from "@/components/home/homeIcons";
+import { generationSectionBg } from "./generationSection";
 
-const factIcons = ["car", "arrow", "arrow", "car"];
-const factIconCircled = [false, true, true, false];
+// Key fact label -> client icon; the predecessor arrow is mirrored to point back.
+function factIcon(label = "") {
+  const value = label.toLowerCase();
+  if (value.includes("platform")) return { name: "platform" };
+  if (value.includes("predecessor")) return { name: "predecessor-successor", mirrored: true };
+  if (value.includes("successor")) return { name: "predecessor-successor" };
+  if (value.includes("sibling") || value.includes("body")) return { name: "body-styles" };
+  return { name: "car" };
+}
 
 // Highlight numeric figures and [TAG] markers inline within a sentence.
 function HighlightedLine({ text = "" }) {
@@ -48,7 +56,10 @@ export default function Overview({ data }) {
   if (!data) return null;
 
   const isDark = theme === "dark";
-  const image = isDark ? "/e90/overview_dark - Copy.webp" : "/e90/overview_light.webp";
+  const sectionBg = generationSectionBg(isDark, false);
+  // This generation's photo (set server-side) on BMW's own background.
+  const carImage = data.image;
+  const carAlt = String(data.h2 || "").replace(/<[^>]*>/g, "");
   const keyFacts = parseKeyFacts(data.keyFacts);
 
   const headingClass = isDark ? "text-white" : "text-[var(--color-text)]";
@@ -57,6 +68,9 @@ export default function Overview({ data }) {
   const factLabelClass = isDark ? "text-white" : "text-[var(--color-text)]";
   const factValueClass = isDark ? "text-white/70" : "text-[var(--color-text-muted)]";
   const marketLineClass = isDark ? "text-white/85" : "text-[var(--color-text)]";
+  const mobileHeadingShadow = isDark
+    ? ""
+    : "[text-shadow:0_0_8px_#fff,0_0_16px_#fff,0_0_24px_rgba(255,255,255,0.9),0_1px_2px_rgba(255,255,255,0.95)]";
 
   // Split the intro into up-to-two paragraphs by sentence boundary
   const introParts = data.intro
@@ -68,23 +82,29 @@ export default function Overview({ data }) {
       })()
     : [];
 
-  const factItem = (fact, index) => (
-    <div className="flex min-w-0 flex-1 items-start gap-2 px-1">
-      {factIconCircled[index % factIconCircled.length] ? (
-        <span className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full border border-[var(--color-primary)] text-[var(--color-primary)]">
-          <GenIcon name={factIcons[index % factIcons.length]} className="h-3 w-3" />
-        </span>
-      ) : (
-        <span className="mt-0.5 shrink-0 text-[var(--color-primary)]">
-          <GenIcon name={factIcons[index % factIcons.length]} className="h-4 w-4" />
-        </span>
-      )}
-      <div className="min-w-0 flex-1">
-        <p className={`text-[0.8rem] font-semibold leading-[1.25] ${factLabelClass}`} dangerouslySetInnerHTML={{ __html: fact.label }} />
-        <p className={`mt-0.5 text-[0.74rem] leading-[1.3] ${factValueClass}`} dangerouslySetInnerHTML={{ __html: fact.value }} />
+  const factItem = (fact, index, { mobile = false } = {}) => {
+    const icon = factIcon(fact.label);
+
+    return (
+      <div className="flex min-w-0 flex-1 flex-col items-center gap-2 px-1 text-center">
+        <HomeIcon
+          name={icon.name}
+          isDark={isDark}
+          className={`${mobile ? "h-10 w-10" : "h-9 w-9"} ${icon.mirrored ? "-scale-x-100" : ""}`}
+        />
+        <div className="min-w-0 w-full">
+          <p
+            className={`font-semibold leading-[1.25] ${factLabelClass} ${mobile ? "text-[0.84rem]" : "text-[0.8rem]"}`}
+            dangerouslySetInnerHTML={{ __html: fact.label }}
+          />
+          <p
+            className={`mt-0.5 leading-[1.3] ${factValueClass} ${mobile ? "text-[0.78rem]" : "text-[0.74rem]"}`}
+            dangerouslySetInnerHTML={{ __html: fact.value }}
+          />
+        </div>
       </div>
-    </div>
-  );
+    );
+  };
 
   const keyFactsBlockMobile = keyFacts.length > 0 ? (
     <div className="glass-panel mt-4 rounded-lg p-3">
@@ -110,7 +130,7 @@ export default function Overview({ data }) {
                         style={{ height: "70%" }}
                       />
                     ) : null}
-                    {factItem(fact, index)}
+                    {factItem(fact, index, { mobile: true })}
                   </div>
                 );
               })}
@@ -130,21 +150,9 @@ export default function Overview({ data }) {
         {keyFacts.map((fact, index) => (
           <div
             key={fact.label}
-            className={`flex items-start gap-2 border-l py-0 pl-3 first:border-l-0 first:pl-0 ${cardDividerClass}`}
+            className={`border-l py-0 pl-3 first:border-l-0 first:pl-0 ${cardDividerClass}`}
           >
-            {factIconCircled[index % factIconCircled.length] ? (
-              <span className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full border border-[var(--color-primary)] text-[var(--color-primary)]">
-                <GenIcon name={factIcons[index % factIcons.length]} className="h-3 w-3" />
-              </span>
-            ) : (
-              <span className="mt-0.5 shrink-0 text-[var(--color-primary)]">
-                <GenIcon name={factIcons[index % factIcons.length]} className="h-4 w-4" />
-              </span>
-            )}
-            <div className="min-w-0 flex-1">
-              <p className={`text-[0.8rem] font-semibold leading-[1.25] ${factLabelClass}`} dangerouslySetInnerHTML={{ __html: fact.label }} />
-              <p className={`mt-0.5 text-[0.74rem] leading-[1.3] ${factValueClass}`} dangerouslySetInnerHTML={{ __html: fact.value }} />
-            </div>
+            {factItem(fact, index)}
           </div>
         ))}
       </div>
@@ -153,8 +161,8 @@ export default function Overview({ data }) {
 
   const marketIntelligenceBlockMobile = data.marketIntelligenceLine ? (
     <div className="glass-panel relative mt-2.5 flex items-center gap-3 rounded-lg p-3.5">
-      <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-[var(--color-primary)] text-white">
-        <GenIcon name="target" className="h-5.5 w-5.5" />
+      <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-[var(--color-primary)]">
+        <HomeIcon name="insight" isDark={!isDark} className="h-10 w-10 md:h-8 md:w-8 object-contain" />
       </span>
       <div className="min-w-0 flex-1">
         <p className="text-[0.72rem] font-semibold uppercase tracking-wide text-[var(--color-primary)]">
@@ -169,8 +177,8 @@ export default function Overview({ data }) {
 
   const marketIntelligenceBlockDesktop = data.marketIntelligenceLine ? (
     <div className="glass-panel relative mt-2.5 flex items-start gap-3 rounded-lg p-3.5">
-      <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-[var(--color-primary)] text-white">
-        <GenIcon name="target" className="h-4.5 w-4.5" />
+      <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-[var(--color-primary)]">
+        <HomeIcon name="insight" isDark={!isDark} className="h-9 w-9 md:h-7 md:w-7 object-contain" />
       </span>
       <div className="min-w-0 flex-1">
         <p className="text-[0.72rem] font-semibold uppercase tracking-wide text-[var(--color-primary)]">
@@ -183,45 +191,43 @@ export default function Overview({ data }) {
     </div>
   ) : null;
 
-  const mobileImage = isDark ? "/e90/overview_mobile_dark.webp" : "/e90/overview_mobile_light.webp";
-
   return (
-    <section className={`w-full bg-[var(--color-page)] ${headingClass}`}>
+    <section className={`w-full ${sectionBg} ${headingClass}`}>
       {/* MOBILE: hero image up top in normal flow, content stacked below it (not overlaid) */}
       <div className="md:hidden">
         <div className="relative -mb-px h-[260px] w-full overflow-hidden">
-          <Image
-            src={mobileImage}
-            alt={data.image?.alt || "BMW 3 Series E90"}
-            fill
-            className="object-cover"
+          <CarOnBackground
+            src={carImage}
+            alt={carAlt}
+            isDark={isDark}
+            className="absolute inset-0"
+            carClassName="inset-x-[10%] top-[4%] bottom-[34%]"
             sizes="100vw"
-            priority
           />
           <div
             className={`absolute inset-0 ${
               isDark
-                ? "bg-[linear-gradient(180deg,transparent_40%,rgba(2,7,17,0.75)_75%,rgba(2,7,17,1)_97%)]"
-                : "bg-[linear-gradient(180deg,transparent_40%,rgba(255,255,255,0.75)_75%,rgba(255,255,255,1)_97%)]"
+                ? "bg-[linear-gradient(180deg,rgba(2,7,11,0.15)_0%,rgba(2,7,11,0.45)_55%,rgba(2,7,11,0.92)_100%)]"
+                : "bg-[linear-gradient(180deg,rgba(255,255,255,0.15)_0%,rgba(255,255,255,0.55)_55%,rgba(255,255,255,0.95)_100%)]"
             }`}
           />
-          {/* Solid strip guarantees full opacity at the very edge — no sub-pixel seam from the gradient's asymptotic stop */}
-          <div className="absolute inset-x-0 bottom-0 h-3 bg-[var(--color-page)]" />
+          <div className="absolute inset-x-0 bottom-0 z-10 px-4 pb-4 pt-16 text-left">
+            <p
+              className={`text-[0.72rem] font-semibold uppercase tracking-wide text-[var(--color-primary)] ${mobileHeadingShadow}`}
+            >
+              Overview
+            </p>
+            <h2
+              className={`mt-1.5 text-left text-[2.15rem] font-bold leading-[1.1] tracking-normal ${isDark ? "text-white" : "text-[var(--color-text)]"} ${mobileHeadingShadow}`}
+              dangerouslySetInnerHTML={{ __html: data.h2 }}
+            />
+            <div className="mt-2.5">
+              <MStripe />
+            </div>
+          </div>
         </div>
 
-        <div className="px-4 pb-7 pt-5">
-          <p className="text-[0.72rem] font-semibold uppercase tracking-wide text-[var(--color-primary)]">
-            Overview
-          </p>
-          <h2
-            className="mt-1.5 text-[2.15rem] font-bold leading-[1.1] tracking-normal"
-            dangerouslySetInnerHTML={{ __html: data.h2 }}
-          />
-
-          <div className="mt-2.5">
-            <MStripe />
-          </div>
-
+        <div className="px-4 pb-5 pt-4 md:px-8">
           {introParts.length > 0 ? (
             <div className={`mt-4 flex flex-col gap-3 text-[0.9rem] leading-[1.5] ${bodyTextClass}`}>
               {introParts.map((para, i) => (
@@ -236,20 +242,20 @@ export default function Overview({ data }) {
       </div>
 
       {/* DESKTOP: full-bleed background image with content overlaid on top */}
-      <div className={`relative hidden overflow-hidden px-10 md:block md:h-[500px] lg:h-[520px]`}>
+      <div className="relative hidden md:block md:min-h-[520px]">
         <div className="absolute inset-0">
-          <Image
-            src={image}
-            alt={data.image?.alt || "BMW 3 Series E90"}
-            fill
-            className="object-cover object-[20%_55%]"
-            sizes="100vw"
-            priority
+          <CarOnBackground
+            src={carImage}
+            alt={carAlt}
+            isDark={isDark}
+            className="absolute inset-0"
+            carClassName="left-[max(2rem,calc((100%-88rem)/2+2rem))] top-[16%] bottom-[14%] w-[min(34%,560px)]"
+            sizes="(max-width: 1400px) 40vw, 560px"
           />
           {isDark ? (
             <>
-              <div className="absolute inset-0 bg-[radial-gradient(circle_at_22%_58%,transparent_0%,transparent_30%,rgba(2,7,17,0.45)_58%,rgba(2,7,17,0.85)_85%)]" />
-              <div className="absolute inset-0 bg-[linear-gradient(90deg,transparent_28%,rgba(2,7,17,0.92)_40%,rgba(2,7,17,1)_50%,rgba(2,7,17,1)_100%)]" />
+              <div className="absolute inset-0 bg-[radial-gradient(circle_at_22%_58%,transparent_0%,transparent_30%,rgba(2,7,11,0.45)_58%,rgba(2,7,11,0.85)_85%)]" />
+              <div className="absolute inset-0 bg-[linear-gradient(90deg,transparent_28%,rgba(2,7,11,0.92)_40%,rgba(2,7,11,1)_50%,rgba(2,7,11,1)_100%)]" />
             </>
           ) : (
             <>
@@ -259,11 +265,11 @@ export default function Overview({ data }) {
           )}
         </div>
 
-        <div className="relative mx-auto flex h-full w-full max-w-8xl px-4 md:px-8">
-          <div className="grid h-full w-full grid-cols-[0.6fr_1fr] items-center gap-0">
+        <div className="relative mx-auto w-full max-w-8xl px-4 py-6 md:px-8 md:py-8">
+          <div className="grid w-full grid-cols-[0.6fr_1fr] items-start gap-0">
             <div aria-hidden="true" />
 
-            <div className="flex flex-col justify-center pl-8">
+            <div className="flex flex-col pl-8">
               <h2
                 className="text-[3rem] font-bold leading-[1.1] tracking-normal"
                 dangerouslySetInnerHTML={{ __html: data.h2 }}

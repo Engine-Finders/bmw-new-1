@@ -84,25 +84,25 @@
               "@type": "ListItem",
               "position": 1,
               "name": "N62B48",
-              "url": "https://bmwengines.uk/engine/n62b48/"
+              "url": "https://bmwengines.uk/engine/n62-n63"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "N63B44A",
-              "url": "https://bmwengines.uk/engine/n63b44a/"
+              "url": "https://bmwengines.uk/engine/n62-n63"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "N63B44O1",
-              "url": "https://bmwengines.uk/engine/n63b44o1/"
+              "url": "https://bmwengines.uk/engine/n62-n63"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "N63B44M3",
-              "url": "https://bmwengines.uk/engine/n63b44m3/"
+              "url": "https://bmwengines.uk/engine/n62-n63"
             }
           ]
         },
@@ -345,7 +345,7 @@
         "recommendation": "The N62's valve stem seals are the defining weakness of this otherwise robust engine. Over time, the seals harden and allow oil to enter the combustion chamber. Symptoms include blue smoke on start-up and after idling, and oil consumption that can reach 1 litre per 1,000 miles. The fix is labour‑intensive - the cylinder heads must be removed, making this a £2,000–£4,000 job. However, if caught early, the engine itself is otherwise durable. As one specialist noted, \"the unreliability is not breakdown/catastrophic type unreliability it's often leaks, both oil and coolant and the valve stem seals\".",
         "failureLink": {
           "label": "",
-          "href": "/failures/valve-stem-seal-failure/"
+          "href": "/failures/valve-stem-seal-wear"
         }
       },
       {
@@ -363,7 +363,7 @@
         "recommendation": "The N63's plastic timing chain guides can become brittle and fail, causing chain stretch. BMW even launched a Customer Care Package program to address widespread issues. As one source noted, \"many N63 motors will see timing chain rattle past 100,000 miles\". A £2,500–£5,000 preventative chain replacement is far cheaper than a £3,500–£6,500 engine replacement. At the first sign of cold‑start rattle, have the timing system inspected immediately. The N63 has been described as \"the most unreliable BMW engine ever made\" by some owners.",
         "failureLink": {
           "label": "",
-          "href": "/failures/timing-chain-failure/"
+          "href": "/failures/timing-chain-diagnosis-guide"
         }
       },
       {
@@ -381,7 +381,7 @@
         "recommendation": "The early N63 engines are notorious for excessive oil consumption - up to 1 litre per 1,000 km. This is often due to piston ring wear or oil control issues. Fuel injector failure is also common, with failing injectors causing misfires and rough running. The N63TU (2013+) addressed some of these issues, but oil consumption remains a concern. Regular oil level checks and top‑ups are essential - running low on oil can cause catastrophic engine failure.",
         "failureLink": {
           "label": "",
-          "href": "/failures/oil-consumption/"
+          "href": "/failures/n63-oil-consumption"
         }
       },
       {
@@ -399,7 +399,7 @@
         "recommendation": "The N63's hot‑vee design places the turbochargers in the V of the engine, which creates significant heat‑soak issues. Coolant lines to the turbos can fail, and the engine's cooling system is under constant stress. Regular coolant changes and inspections of the cooling system are essential. If you notice any overheating, stop driving immediately - aluminium V8s do not tolerate overheating well.",
         "failureLink": {
           "label": "",
-          "href": "/failures/overheating/"
+          "href": "/failures/m54-cooling-system"
         }
       }
     ]

@@ -78,7 +78,7 @@
               "@type": "ListItem",
               "position": 2,
               "name": "B57D30",
-              "url": "https://bmwengines.uk/engine/b57/"
+              "url": "https://bmwengines.uk/engine/b57-b58"
             }
           ]
         },
@@ -305,7 +305,7 @@
         "recommendation": "While N57 timing chain failures are rarer than the notorious N47 issues, they do occur. The problem stems from chain stretch and wear on the plastic guides. A cold-start rattle is the early warning sign - ignore it and you risk piston-valve contact and a full engine replacement. Regular oil changes with the correct BMW-approved oil are the best prevention - many specialists recommend 8,000-mile intervals rather than BMW's 18,000-mile CBS schedule. At the first sign of rattle, get it inspected immediately.",
         "failureLink": {
           "label": "",
-          "href": "/failures/n57-timing-chain/"
+          "href": "/failures/timing-chain-diagnosis-guide"
         }
       },
       {
@@ -323,7 +323,7 @@
         "recommendation": "N57 engines can suffer from bottom-end bearing failure, often linked to oil starvation or oil degradation. Extended oil change intervals are a contributing factor. If you hear a knocking noise from the bottom end, stop driving immediately and have it inspected. Regular oil changes with BMW-approved oil are the key prevention - many specialists recommend 8,000-mile intervals.",
         "failureLink": {
           "label": "",
-          "href": "/failures/bottom-end-bearing-failure/"
+          "href": "/failures"
         }
       },
       {
@@ -341,7 +341,7 @@
         "recommendation": "EGR cooler failure is a well-documented issue across N57 and B57 engines. BMW has extended its diesel car recall multiple times due to concerns that a faulty part presents a fire risk. Glycol leakage from the EGR cooler can occur, and in some cases, can create a fire risk. Check your vehicle's recall status immediately - if your 430d hasn't had the updated EGR cooler fitted, get it done. This is a safety-critical item.",
         "failureLink": {
           "label": "",
-          "href": "/failures/egr-cooler-failure/"
+          "href": "/failures/egr-valve-cooler"
         }
       },
       {
@@ -359,7 +359,7 @@
         "recommendation": "The B57 engine has a well-documented tendency for oil leaks from the valve cover gasket and oil filter housing. The rubber seals harden due to heat and age, causing oil to leak. Leaking oil can saturate and degrade vacuum, coolant, and air intake hoses, and can foul other components. Regular inspections can catch this before it becomes a major issue. If you notice oil spots under your car or a burning oil smell, have it inspected promptly.",
         "failureLink": {
           "label": "",
-          "href": "/failures/oil-leak/"
+          "href": "/failures/n55-valve-cover-oil-leak"
         }
       },
       {

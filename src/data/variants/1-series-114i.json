@@ -72,7 +72,7 @@
               "@type": "ListItem",
               "position": 1,
               "name": "N13B16A",
-              "url": "https://bmwengines.uk/engine/n13b16a/"
+              "url": "https://bmwengines.uk/engine/n13-n20"
             }
           ]
         },
@@ -291,7 +291,7 @@
         "recommendation": "The N13 engine uses a plastic timing chain guide system that can wear prematurely, causing the chain to stretch. This is a well‑documented weakness in the Prince engine family (shared with MINI and PSA). When the chain stretches, it can rattle on cold start, and if ignored, may jump a tooth or snap, causing piston‑to‑valve contact in this interference engine. A £800‑£1,800 preventative chain replacement is far cheaper than a £1,800‑£3,500 engine replacement. At the first sign of cold‑start rattle, have the timing system inspected immediately.",
         "failureLink": {
           "label": "",
-          "href": "/failures/timing-chain-failure/"
+          "href": "/failures/timing-chain-diagnosis-guide"
         }
       },
       {
@@ -309,7 +309,7 @@
         "recommendation": "The N13's high‑pressure fuel pump is a known failure point - a common issue across many direct‑injection BMW engines. Symptoms include long cranking times, particularly when hot, and loss of power. If the HPFP fails, the engine may run lean, causing misfires and potentially damaging the catalytic converter. Regular fuel filter changes and using high‑quality fuel can help prolong pump life, but HPFP replacement is a common maintenance item on higher‑mileage N13 engines.",
         "failureLink": {
           "label": "",
-          "href": "/failures/hpfp-failure/"
+          "href": "/failures/n54-high-pressure-fuel-pump"
         }
       },
       {
@@ -327,7 +327,7 @@
         "recommendation": "As a direct‑injection engine, the N13 doesn't have fuel washing over the intake valves to keep them clean. Over time, carbon deposits build up on the intake valves, reducing airflow and causing rough running and power loss. Walnut blasting (a specialist intake valve cleaning procedure) is the effective remedy. This is a maintenance item on higher‑mileage direct‑injection BMWs - budget for it every 40,000‑80,000 miles depending on driving style.",
         "failureLink": {
           "label": "",
-          "href": "/failures/carbon-buildup/"
+          "href": "/failures"
         }
       }
     ]

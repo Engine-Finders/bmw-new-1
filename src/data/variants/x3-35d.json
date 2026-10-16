@@ -294,7 +294,7 @@
         "recommendation": "The N57's main bearings are a known weakness - several cases of spun main bearings have been reported. Insufficient oil pressure at low RPM (often with no warning lights) can accelerate bearing wear. Frequent oil changes (5,000–8,000 miles max) are essential - the extended 18,000‑mile BMW service interval is a significant risk factor. If you hear a knocking noise, do not drive the car - bottom‑end failure is catastrophic.",
         "failureLink": {
           "label": "",
-          "href": "/failures/crankshaft-bearing-failure/"
+          "href": "/failures"
         }
       },
       {
@@ -312,7 +312,7 @@
         "recommendation": "Timing chain stretch is a known issue on the N57. If you hear a rattling noise on cold start, have the chain inspected immediately - ignoring it can lead to catastrophic engine damage that may require a full engine replacement. Regular oil changes with BMW LL‑04 spec oil and disabling stop‑start can help reduce chain wear.",
         "failureLink": {
           "label": "",
-          "href": "/failures/timing-chain-stretch/"
+          "href": "/failures/timing-chain-diagnosis-guide"
         }
       },
       {
@@ -330,7 +330,7 @@
         "recommendation": "The EGR cooler is a significant weakness across BMW diesel engines of this era - BMW issued a recall affecting multiple models. The defect can allow glycol coolant to leak, which combined with soot and high temperatures can create a fire risk. If you notice coolant loss, white smoke, or a burning smell, have the EGR cooler inspected immediately. Even after recall work, failures have been reported.",
         "failureLink": {
           "label": "",
-          "href": "/failures/egr-valve-cooler-failure/"
+          "href": "/failures/egr-valve-cooler"
         }
       }
     ]

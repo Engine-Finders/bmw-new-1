@@ -39,19 +39,19 @@
               "@type": "ListItem",
               "position": 1,
               "name": "S63B44T4 Engine",
-              "url": "https://bmwengines.uk/engine/s63/"
+              "url": "https://bmwengines.uk/engine/s63-s65"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "S63B44B Engine (M5 Competition)",
-              "url": "https://bmwengines.uk/engine/s63/"
+              "url": "https://bmwengines.uk/engine/s63-s65"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "S63B44B Engine (M5 CS)",
-              "url": "https://bmwengines.uk/engine/s63/"
+              "url": "https://bmwengines.uk/engine/s63-s65"
             }
           ]
         },
@@ -63,19 +63,19 @@
               "@type": "ListItem",
               "position": 1,
               "name": "M5",
-              "url": "https://bmwengines.uk/m5/m5/"
+              "url": "https://bmwengines.uk/m5"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "M5 Competition",
-              "url": "https://bmwengines.uk/m5/m5-competition/"
+              "url": "https://bmwengines.uk/m5"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "M5 CS",
-              "url": "https://bmwengines.uk/m5/m5-cs/"
+              "url": "https://bmwengines.uk/m5"
             }
           ]
         },
@@ -237,7 +237,7 @@
     ],
     "primaryCta": {
       "label": "Explore F90 M5 Powertrains →",
-      "href": "#"
+      "href": "/m5/f90"
     },
     "dataIntegrityNote": ""
   },
@@ -397,7 +397,7 @@
         "recommendation": "If you're buying any F90 M5, budget for a billet aluminium expansion tank replacement immediately -£200–£500 is dramatically cheaper than the £4,000+ repair that follows a failure. This is the single most important preventative measure for any F90 M5 owner.",
         "cta": {
           "label": "",
-          "href": "#"
+          "href": "/quote"
         }
       },
       {
@@ -410,7 +410,7 @@
         "recommendation": "Have the valve cover and oil filter housing inspected at every service -a £500–£1,500 gasket replacement is cheaper than the £5,000+ replacement that follows a catastrophic oil loss.",
         "cta": {
           "label": "",
-          "href": "#"
+          "href": "/quote"
         }
       },
       {
@@ -423,7 +423,7 @@
         "recommendation": "If your M5 shows signs of stalling or hard starting, have the fuel system inspected immediately -a £400–£1,000 fuel pump replacement is cheaper than the £5,000+ replacement that follows a catastrophic failure.",
         "cta": {
           "label": "",
-          "href": "#"
+          "href": "/quote"
         }
       }
     ]
@@ -555,7 +555,7 @@
     "finalCta": "Find the best BMW M5 F90 engine replacement UK drivers rely on. Compare real prices from trusted specialists on EnginesMarket today and get back on the road with confidence.",
     "ctaButton": {
       "label": "Compare BMW M5 F90 Engine Prices on EnginesMarket →",
-      "href": "#",
+      "href": "/quote",
       "note": "[PLACEHOLDER -confirm EnginesMarket URL structure]"
     }
   }

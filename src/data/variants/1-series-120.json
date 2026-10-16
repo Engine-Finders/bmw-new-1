@@ -72,7 +72,7 @@
               "@type": "ListItem",
               "position": 1,
               "name": "B38A15P (120 MHEV)",
-              "url": "https://bmwengines.uk/engine/b38a15p/"
+              "url": "https://bmwengines.uk/engine/b38-b48"
             }
           ]
         },
@@ -291,7 +291,7 @@
         "recommendation": "The B38 timing chain tensioner is known to wear prematurely. A failing tensioner can cause rattling noises and, if ignored, may lead to severe engine damage. Timing chain problems are prevalent in B38 engines, often leading to poor engine performance and even engine failure if not addressed promptly. A cold-start rattle is the early warning sign - ignore it and you risk piston-valve contact and a full engine replacement. Regular oil changes with the correct BMW-approved oil are the best prevention.",
         "failureLink": {
           "label": "",
-          "href": "/failures/timing-chain-tensioner/"
+          "href": "/failures/timing-chain-diagnosis-guide"
         }
       },
       {
@@ -309,7 +309,7 @@
         "recommendation": "Excessive oil consumption is one of the most frequently reported issues with the B38 engine. Owners have noted that they need to top off their oil levels more often than expected. Some BMW 1 Series owners have reported excessive oil consumption in certain situations. Check your oil level regularly - this engine is not one you can neglect. Use the correct grade of fully synthetic BMW-approved oil and reduce oil change intervals to 8,000 miles if you do mostly short journeys.",
         "failureLink": {
           "label": "",
-          "href": "/failures/oil-consumption/"
+          "href": "/failures/n63-oil-consumption"
         }
       },
       {
@@ -327,7 +327,7 @@
         "recommendation": "Cooling system failures have been noted in B38 engines, particularly with the water pump and thermostat. Overheating can lead to severe engine damage, so it's vital to keep an eye on your temperature gauge and address any cooling issues promptly. Water pump failures are another common problem encountered in B38 engines, primarily due to the pump's constant operation to regulate engine temperature. If you notice coolant loss or temperature fluctuations, have the cooling system pressure-tested immediately.",
         "failureLink": {
           "label": "",
-          "href": "/failures/coolant-leak/"
+          "href": "/failures/m54-cooling-system"
         }
       },
       {
@@ -345,7 +345,7 @@
         "recommendation": "The 120's 48V mild-hybrid system adds complexity. With a 20hp electric motor and a 0.9kWh battery, the hybridisation can lead to rather random battery regeneration during deceleration. If the stop-start stops working or you get battery warnings, get the 48V system checked. The 48V system is complex and requires specialist diagnostic equipment - generic scanners may not be able to read BMW's MHEV systems correctly.",
         "failureLink": {
           "label": "",
-          "href": "/failures/mhev-system-failure/"
+          "href": "/failures"
         }
       }
     ]

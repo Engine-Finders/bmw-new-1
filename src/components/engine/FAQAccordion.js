@@ -5,9 +5,7 @@ import Image from "next/image";
 import { useTheme } from "@/components/shared/themeProvider";
 import MStripe from "@/components/reusableComponents/MStripe";
 import { sectionDescription, sectionH2 } from "@/components/models/sectionTypography";
-
-const ENGINE_IMAGE =
-  "https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=900&q=80";
+import { engineSectionBg } from "./engineSection";
 
 function cleanText(text = "") {
   return String(text)
@@ -20,12 +18,12 @@ function cleanText(text = "") {
 }
 
 function shortEngineName(engineLabel = "") {
-  return cleanText(engineLabel).replace(/^BMW\s+/i, "") || "Engine";
+  return cleanText(engineLabel).replace(/^BMW\s+/i, "").replace(/^BMW\s+/i, "") || "Engine";
 }
 
 function parseQuestion(question = "") {
   const clean = cleanText(question);
-  const match = clean.match(/^(.+?)\s*[-–—]\s*[“"']?(.+?)[”"']?\s*$/);
+  const match = clean.match(/^(.+?)\s*[-–-]\s*[“"']?(.+?)[”"']?\s*$/);
   if (!match) return { topic: "", title: clean };
   return {
     topic: match[1].trim(),
@@ -37,7 +35,7 @@ function renderTaggedText(text = "") {
   return cleanText(text).split(/(\[[^\]]+\])/g).map((part, index) => {
     if (/^\[[^\]]+\]$/.test(part)) {
       return (
-        <span key={`${part}-${index}`} className="font-semibold text-[var(--color-primary)]">
+        <span key={`${part}-${index}`} className="font-semibold text-[var(--color-chrome-bright)]">
           {part}
         </span>
       );
@@ -57,7 +55,13 @@ function FaqItem({ item, open, onToggle, isLast, isDark }) {
         className="flex w-full items-start gap-3 px-4 py-3.5 text-left md:gap-3.5 md:px-5 md:py-4"
         aria-expanded={open}
       >
-        <span className="mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-md bg-[var(--color-primary-soft)] text-[13px] font-bold text-[var(--color-primary)]">
+        <span
+          className={`mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-md text-[13px] font-bold ${
+            isDark
+              ? "bg-[var(--color-primary-soft)] text-[var(--color-chrome-bright)]"
+              : "bg-[var(--color-primary-soft)] text-[var(--color-primary)]"
+          }`}
+        >
           {item.id}
         </span>
         <span className="min-w-0 flex-1">
@@ -71,14 +75,16 @@ function FaqItem({ item, open, onToggle, isLast, isDark }) {
             )}
           </span>
           {open ? (
-            <span className={`mt-1.5 block text-[13px] leading-[1.45] ${isDark ? "text-white/78" : "text-[var(--color-text-muted)]"}`}>
+            <span className={`mt-1.5 block text-[13px] leading-[1.45] ${isDark ? "text-white/80" : "text-[var(--color-text-muted)]"}`}>
               {renderTaggedText(item.answer)}
             </span>
           ) : null}
         </span>
         <span
           aria-hidden="true"
-          className={`mt-1 shrink-0 text-[15px] font-bold text-[var(--color-primary)] transition-transform ${open ? "rotate-180" : ""}`}
+          className={`mt-1 shrink-0 text-[15px] font-bold transition-transform ${open ? "rotate-180" : ""} ${
+            isDark ? "text-[var(--color-chrome-bright)]" : "text-[var(--color-primary)]"
+          }`}
         >
           ▾
         </span>
@@ -87,7 +93,7 @@ function FaqItem({ item, open, onToggle, isLast, isDark }) {
   );
 }
 
-export default function FAQAccordion({ data, engineLabel = "BMW Engine" }) {
+export default function FAQAccordion({ data, engineLabel = "BMW Engine", engineImage }) {
   const { theme } = useTheme();
   const items = data?.items || [];
   const [openId, setOpenId] = useState(items[0]?.id ?? null);
@@ -98,50 +104,36 @@ export default function FAQAccordion({ data, engineLabel = "BMW Engine" }) {
   const engineCode = shortEngineName(engineLabel);
 
   return (
-    <section className="relative left-1/2 w-screen -translate-x-1/2 overflow-hidden bg-[var(--color-page)] py-6 text-[var(--color-text)] md:py-9">
-      {/* Full-section engine background */}
-      <div className="absolute inset-0">
-        <div className={`absolute inset-0 ${isDark ? "bg-[var(--color-page)]" : "bg-[var(--color-page-soft)]"}`} />
-        <Image
-          src={ENGINE_IMAGE}
-          alt=""
-          fill
-          sizes="100vw"
-          className="object-cover object-[center_35%] opacity-80 md:opacity-90"
-        />
-        <div
-          className={`absolute inset-0 ${
-            isDark
-              ? "bg-[linear-gradient(90deg,var(--color-page)_0%,var(--color-hero-overlay)_42%,transparent_72%)]"
-              : "bg-[linear-gradient(90deg,var(--color-page-soft)_0%,var(--color-hero-overlay)_42%,transparent_72%)]"
-          }`}
-        />
-        <div
-          className={`absolute inset-0 ${
-            isDark
-              ? "bg-[linear-gradient(180deg,var(--color-hero-overlay)_0%,transparent_30%,transparent_70%,var(--color-hero-fade)_100%)]"
-              : "bg-[linear-gradient(180deg,var(--color-hero-overlay)_0%,transparent_32%,transparent_68%,var(--color-hero-fade)_100%)]"
-          }`}
-        />
-      </div>
-
-      <div className="relative z-[1] mx-auto w-full max-w-8xl px-4 md:px-8">
+    <section className={`relative w-full overflow-x-hidden py-6 text-[var(--color-text)] md:py-9 ${engineSectionBg(isDark, true)}`}>
+      <div className="relative mx-auto w-full max-w-8xl px-4 md:px-8">
         <div className="grid items-start gap-5 md:grid-cols-[minmax(260px,0.85fr)_minmax(0,1.35fr)] md:gap-8 lg:gap-10">
           <div className="min-w-0 max-w-[480px]">
-            <h2 className={`font-bold tracking-normal ${sectionH2}`}>
+            <h2 className={`font-bold tracking-normal ${sectionH2} ${isDark ? "text-white" : "text-[var(--color-text)]"}`}>
               Frequently Asked Questions
             </h2>
             <div className="mt-3">
               <MStripe />
             </div>
-            <p className={`mt-4 ${sectionDescription} ${isDark ? "text-white" : "text-[var(--color-text)]"}`}>
+            <p className={`mt-4 ${sectionDescription} ${isDark ? "text-white/80" : "text-[var(--color-text-muted)]"}`}>
               Expert answers to the most common BMW{" "}
-              <span className="font-semibold text-[var(--color-primary)]">{engineCode}</span> engine questions.
+              <span className="font-semibold text-[var(--color-chrome-bright)]">{engineCode}</span> engine questions.
             </p>
+
+            {engineImage ? (
+              <div className="relative mx-auto mt-5 h-[130px] w-full max-w-[360px] md:mx-0 md:mt-6 md:h-[150px]">
+                <Image
+                  src={engineImage}
+                  alt=""
+                  fill
+                  sizes="360px"
+                  className="object-contain object-center drop-shadow-[0_16px_32px_rgba(0,0,0,0.25)] md:object-left"
+                />
+              </div>
+            ) : null}
           </div>
 
           <div
-            className={`overflow-hidden rounded-xl border backdrop-blur-[2px] ${
+            className={`overflow-hidden rounded-xl border ${
               isDark
                 ? "border-[var(--color-border)] bg-[var(--color-surface)]"
                 : "border-[var(--color-border)] bg-[var(--color-surface)] shadow-[0_14px_36px_var(--color-shadow)]"

@@ -58,7 +58,7 @@
               "@type": "ListItem",
               "position": 1,
               "name": "M88/1 Engine",
-              "url": "https://bmwengines.uk/engine/m88-1/"
+              "url": "https://bmwengines.uk/engine/m88-s38"
             }
           ]
         },
@@ -210,7 +210,7 @@
     ],
     "primaryCta": {
       "label": "Explore M1 Engines →",
-      "href": "#"
+      "href": "/m1"
     }
   },
   "ownershipVerdict": {
@@ -327,7 +327,7 @@
         "verdict": "",
         "cta": {
           "label": "",
-          "href": "#"
+          "href": "/quote"
         }
       }
     ],
@@ -338,7 +338,7 @@
     },
     "comparisonLink": {
       "label": "Read the full comparison: BMW M1 vs M635CSi →",
-      "href": "#"
+      "href": "/compare"
     }
   },
   "engineDatabase": {
@@ -398,7 +398,7 @@
         },
         "link": {
           "label": "Learn more →",
-          "href": "#"
+          "href": "/engine/m88-s38"
         }
       },
       {
@@ -412,7 +412,7 @@
         },
         "link": {
           "label": "Learn more →",
-          "href": "#"
+          "href": "/failures/timing-chain-diagnosis-guide"
         }
       },
       {
@@ -426,7 +426,7 @@
         },
         "link": {
           "label": "Learn more →",
-          "href": "#"
+          "href": "/engine/m88-s38"
         }
       },
       {
@@ -440,7 +440,7 @@
         },
         "link": {
           "label": "Learn more →",
-          "href": "#"
+          "href": "/failures/n55-valve-cover-oil-leak"
         }
       },
       {
@@ -454,7 +454,7 @@
         },
         "link": {
           "label": "Learn more →",
-          "href": "#"
+          "href": "/failures/water-pump-failure"
         }
       },
       {
@@ -468,7 +468,7 @@
         },
         "link": {
           "label": "Learn more →",
-          "href": "#"
+          "href": "/engine/m88-s38"
         }
       }
     ],
@@ -638,11 +638,11 @@
     "paths": [
       {
         "label": "Path 1 - Know your engine? Launch the BMW diagnostic calculator with M1 pre-selected",
-        "href": "/fault-diagnostic-calculator"
+        "href": "/tools/diagnostic-wizard"
       },
       {
         "label": "Path 2 - Not sure which engine you have? We'll identify it first → /fault-diagnostic-calculator (identification is the first step inside the tool)",
-        "href": "#"
+        "href": "/tools/diagnostic-wizard"
       }
     ]
   },
@@ -729,13 +729,13 @@
         "icon": "🩺",
         "title": "Diagnose My M1",
         "text": "Symptoms in, verdict out - restoration economics for the original M car.",
-        "href": "/fault-diagnostic-calculator"
+        "href": "/tools/diagnostic-wizard"
       },
       {
         "icon": "🤝",
         "title": "Compare UK Specialists",
         "text": "20+ vetted BMW specialists, with M88 expertise available.",
-        "href": "/quotes/?model=m1"
+        "href": "/quote"
       }
     ],
     "footerNote": ""

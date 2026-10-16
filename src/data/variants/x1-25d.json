@@ -78,13 +78,13 @@
               "@type": "ListItem",
               "position": 1,
               "name": "B47C20B (2.0 4-cyl twin-turbo diesel)",
-              "url": "https://bmwengines.uk/engine/b47/"
+              "url": "https://bmwengines.uk/engine/b37-b47"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "B47C20T0 (2.0 4-cyl twin-turbo diesel)",
-              "url": "https://bmwengines.uk/engine/b47/"
+              "url": "https://bmwengines.uk/engine/b37-b47"
             }
           ]
         },
@@ -294,7 +294,7 @@
         "recommendation": "While the B47 is more reliable than the <a href='https://bmwengines.uk/engine/n47'>N47</a>, timing chain stretch is still a known issue. The chain, guides and tensioners can wear over time, causing a metallic rattling when cold. If you hear a rattling noise on cold start, have the chain inspected immediately -ignoring it can lead to catastrophic engine damage. Regular oil changes every 5,000–8,000 miles with BMW LL‑04 spec oil are essential. Many specialists also recommend disabling stop‑start to reduce chain wear.",
         "failureLink": {
           "label": "",
-          "href": "/failures/timing-chain-stretch/"
+          "href": "/failures/timing-chain-diagnosis-guide"
         }
       },
       {
@@ -312,7 +312,7 @@
         "recommendation": "The B47's EGR cooler is a significant weakness -BMW issued a recall affecting 800,000 diesel engines. The defect can allow glycol coolant to leak, which combined with soot and high temperatures can create a fire risk. If you notice coolant loss, white smoke, or a burning smell, have the EGR cooler inspected immediately. Even after recall work, failures have been reported on replacement parts. Checking recall completion status is essential when buying an X1 25d.",
         "failureLink": {
           "label": "",
-          "href": "/failures/egr-valve-cooler-failure/"
+          "href": "/failures/egr-valve-cooler"
         }
       },
       {
@@ -330,7 +330,7 @@
         "recommendation": "Like all modern diesels, the B47 needs regular long runs for passive DPF regeneration. If your X1 25d is used primarily for short journeys, plan a 30–45 minute motorway run every two weeks. If the DPF warning light comes on, book a forced regeneration promptly -ignoring it can lead to costly DPF replacement.",
         "failureLink": {
           "label": "",
-          "href": "/failures/dpf-clogging/"
+          "href": "/failures/dpf-blockage"
         }
       }
     ]

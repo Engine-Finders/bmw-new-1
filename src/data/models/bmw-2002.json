@@ -46,7 +46,7 @@
               "@type": "ListItem",
               "position": 1,
               "name": "BMW 2002 E10 (1968–1976)",
-              "url": "https://bmwengines.uk/2002/e10/"
+              "url": "https://bmwengines.uk/2-series/e10"
             }
           ]
         },
@@ -58,7 +58,7 @@
               "@type": "ListItem",
               "position": 1,
               "name": "M05 Engine",
-              "url": "https://bmwengines.uk/engine/m05/"
+              "url": "https://bmwengines.uk/technical/engine-code-decoder"
             },
             {
               "@type": "ListItem",
@@ -70,19 +70,19 @@
               "@type": "ListItem",
               "position": 3,
               "name": "M15 Engine",
-              "url": "https://bmwengines.uk/engine/m15/"
+              "url": "https://bmwengines.uk/technical/engine-code-decoder"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "M31 Engine",
-              "url": "https://bmwengines.uk/engine/m31/"
+              "url": "https://bmwengines.uk/technical/engine-code-decoder"
             },
             {
               "@type": "ListItem",
               "position": 5,
               "name": "M115 Engine",
-              "url": "https://bmwengines.uk/engine/m115/"
+              "url": "https://bmwengines.uk/technical/engine-code-decoder"
             }
           ]
         },
@@ -234,7 +234,7 @@
     ],
     "primaryCta": {
       "label": "Explore 2002 Engines →",
-      "href": "#"
+      "href": "/2002"
     }
   },
   "ownershipVerdict": {
@@ -351,7 +351,7 @@
         "verdict": "",
         "cta": {
           "label": "",
-          "href": "#"
+          "href": "/quote"
         }
       }
     ],
@@ -362,7 +362,7 @@
     },
     "comparisonLink": {
       "label": "Read the full comparison: BMW 2002 vs 2002tii vs 2002 Turbo →",
-      "href": "#"
+      "href": "/compare"
     }
   },
   "engineDatabase": {
@@ -470,7 +470,7 @@
         },
         "link": {
           "label": "Learn more →",
-          "href": "#"
+          "href": "/failures/timing-chain-diagnosis-guide"
         }
       },
       {
@@ -484,7 +484,7 @@
         },
         "link": {
           "label": "Learn more →",
-          "href": "#"
+          "href": "/engine/m10"
         }
       },
       {
@@ -498,7 +498,7 @@
         },
         "link": {
           "label": "Learn more →",
-          "href": "#"
+          "href": "/failures/turbocharger-failure"
         }
       },
       {
@@ -512,7 +512,7 @@
         },
         "link": {
           "label": "Learn more →",
-          "href": "#"
+          "href": "/failures/m54-cooling-system"
         }
       },
       {
@@ -526,7 +526,7 @@
         },
         "link": {
           "label": "Learn more →",
-          "href": "#"
+          "href": "/failures/n55-valve-cover-oil-leak"
         }
       },
       {
@@ -540,7 +540,7 @@
         },
         "link": {
           "label": "Learn more →",
-          "href": "#"
+          "href": "/failures/turbocharger-failure"
         }
       }
     ],
@@ -758,11 +758,11 @@
     "paths": [
       {
         "label": "Path 1 - Know your engine? Launch the BMW diagnostic calculator with 2002 pre-selected",
-        "href": "/fault-diagnostic-calculator"
+        "href": "/tools/diagnostic-wizard"
       },
       {
         "label": "Path 2 - Not sure which engine you have? We'll identify it first → /fault-diagnostic-calculator (identification is the first step inside the tool)",
-        "href": "#"
+        "href": "/tools/diagnostic-wizard"
       }
     ]
   },
@@ -849,13 +849,13 @@
         "icon": "🩺",
         "title": "Diagnose My 2002",
         "text": "Symptoms in, verdict out - restoration economics for the original sports saloon.",
-        "href": "/fault-diagnostic-calculator"
+        "href": "/tools/diagnostic-wizard"
       },
       {
         "icon": "🤝",
         "title": "Compare UK Specialists",
         "text": "20+ vetted BMW specialists, with M10 expertise available.",
-        "href": "/quotes/?model=2002"
+        "href": "/quote"
       }
     ],
     "footerNote": "(Minimal footer below.)"

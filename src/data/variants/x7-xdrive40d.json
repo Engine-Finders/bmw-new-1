@@ -72,7 +72,7 @@
               "@type": "ListItem",
               "position": 1,
               "name": "B57D30B",
-              "url": "https://bmwengines.uk/engine/b57d30b/"
+              "url": "https://bmwengines.uk/engine/b57-b58"
             }
           ]
         },
@@ -291,7 +291,7 @@
         "recommendation": "Due to a manufacturing defect, the Exhaust Gas Recirculation (EGR) cooler may develop an internal coolant leak. If this occurs, the leaking coolant and recirculated exhaust gas may combine, which may result in a reduction of engine power and potentially a fire while driving. BMW has issued recalls for EGR cooler issues affecting multiple diesel models including the X7 xDrive40d. Check your VIN against the recall database immediately. If you notice any coolant loss, white smoke, or warning lights, have the vehicle inspected promptly.",
         "failureLink": {
           "label": "",
-          "href": "/failures/egr-valve-cooler-failure/"
+          "href": "/failures/egr-valve-cooler"
         }
       },
       {
@@ -309,7 +309,7 @@
         "recommendation": "The B57 engine uses an AdBlue (SCR) system to reduce NOx emissions. Common issues include AdBlue pump failure, NOx sensor failure, and crystallisation blocking the dosing unit. Owners have reported cases where the AdBlue tank appeared empty despite being filled, preventing the engine from starting. Regular servicing and using high‑quality AdBlue can help prevent issues. If the engine warning light appears with AdBlue‑related codes or the car won't start, have the system diagnosed promptly.",
         "failureLink": {
           "label": "",
-          "href": "/failures/adblue-system-failure/"
+          "href": "/failures/adblue-scr-failure"
         }
       },
       {
@@ -327,7 +327,7 @@
         "recommendation": "The B57 diesel is sensitive to driving patterns. If used primarily for short urban trips, the Diesel Particulate Filter (DPF) will clog due to lack of proper regeneration cycles. Common symptoms include reduced power, excessive smoke, and warning lights. A defective exhaust back pressure sensor can also prevent DPF regeneration. Regular motorway runs (30+ minutes at 60+ mph) are essential to maintain the exhaust filtration system. If a DPF warning appears, a forced regeneration or cleaning may be required.",
         "failureLink": {
           "label": "",
-          "href": "/failures/dpf-failure/"
+          "href": "/failures/dpf-blockage"
         }
       },
       {
@@ -345,7 +345,7 @@
         "recommendation": "Valve cover gaskets and oil filter housing gaskets are known leak points on both petrol and diesel X7 models. Because the X7 engine sits deep within the bay, small leaks can be hard to spot until smells or smoke appear. If the oil filter housing gasket fails, oil can leak onto the serpentine belt, causing it to slip or break - which can then be ingested into the engine through the front crankshaft seal, causing catastrophic failure. A £300–£900 gasket replacement is far cheaper than the consequences of a snapped belt. Regular oil level checks are essential.",
         "failureLink": {
           "label": "",
-          "href": "/failures/oil-leak/"
+          "href": "/failures/n55-valve-cover-oil-leak"
         }
       }
     ]

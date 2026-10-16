@@ -72,7 +72,7 @@
               "@type": "ListItem",
               "position": 1,
               "name": "B57D30O0 (B57D30A)",
-              "url": "https://bmwengines.uk/engine/b57/"
+              "url": "https://bmwengines.uk/engine/b57-b58"
             }
           ]
         },
@@ -291,7 +291,7 @@
         "recommendation": "The EGR cooler is one of the most prevalent problems with the B57 engine. A manufacturing defect can cause the EGR cooler to develop an internal coolant leak. The leaking coolant and recirculated exhaust gas may combine, potentially reducing engine power and creating a fire risk. BMW has issued multiple recalls affecting diesel vehicles globally over EGR cooler faults. Verify recall completion before buying any X7 xDrive30d - this is a free fix at the dealership.",
         "failureLink": {
           "label": "Read the full EGR cooler failure guide",
-          "href": "/failures/egr-valve-cooler-failure/"
+          "href": "/failures/egr-valve-cooler"
         }
       },
       {
@@ -309,7 +309,7 @@
         "recommendation": "Unlike the infamous <a href='https://bmwengines.uk/engine/n47'>N47</a> diesel, the B57's timing chain is \"notably robust and reliable\" and issues such as timing chain stretch and guide failures are \"exceedingly rare\". However, in high-mileage or poorly serviced engines, timing chain stretch can still occur. BMW claims the timing chain is a \"lifetime part\" and does not service it, but regular oil changes and early attention to warning signs like rattling noises can help prevent costly engine damage. At the first sign of cold-start rattle, get the chain inspected immediately.",
         "failureLink": {
           "label": "Read the full timing chain failure guide → /failures/b57-timing-chain/ [NEW FAILURE PAGE NEEDED]",
-          "href": "#"
+          "href": "/failures/timing-chain-diagnosis-guide"
         }
       },
       {
@@ -327,7 +327,7 @@
         "recommendation": "A 2021 BMW X7 diesel experienced power loss and emitted black smoke, with a DPF warning light indicating a failure to regenerate. The suspected cause was a faulty exhaust back pressure sensor, which can prevent proper DPF regeneration. Replacing the sensor and performing a forced DPF regeneration resolved the issue. If you primarily drive short distances, factor in regular motorway runs to allow passive DPF regenerations. If the warning appears, have the sensor and DPF system inspected.",
         "failureLink": {
           "label": "Read the full DPF clogging guide",
-          "href": "/failures/dpf-clogging/"
+          "href": "/failures/dpf-blockage"
         }
       },
       {
@@ -345,7 +345,7 @@
         "recommendation": "Valve cover gaskets and oil filter housing gaskets are known leak points on both petrol and diesel X7 models. Because the X7 engine sits deep within the bay, small leaks can be hard to spot until smells or smoke appear. If you notice a burning smell or oil spots, have the gaskets inspected promptly. Catching leaks early prevents oil contamination of other components and more serious engine damage.",
         "failureLink": {
           "label": "Read the full oil leak guide → /failures/b57-oil-leaks/ [NEW FAILURE PAGE NEEDED]",
-          "href": "#"
+          "href": "/failures/n55-valve-cover-oil-leak"
         }
       }
     ]

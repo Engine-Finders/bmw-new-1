@@ -1,119 +1,125 @@
 {
-  "h2": "BMW Market Intelligence -<span class=\"block heading-accent\">What 24,650+ UK Owners Told Us in 2025</span>",
+  "h2": "BMW Market Intelligence -<br /><span class=\"heading-accent\">What 24,650+ UK Owners Told Us in 2025</span>",
   "subHeadline": "Drawn from real UK enquiries, not estimates. This is the data competitors can't replicate - 24,650+ real enquiries, 50+ engine codes tracked, and live market insights updated monthly.",
   "headerImage": {
-    "src": "/hero-day.webp",
-    "alt": "BMW market intelligence"
+    "src": "/home-image/sec-header-light.webp",
+    "alt": "BMW kidney grille and headlights"
   },
-  "stats": [
-    {
-      "icon": "users",
-      "value": "24,650+",
-      "label": "Real UK Enquiries in 2025"
-    },
-    {
-      "icon": "engine",
-      "value": "50+",
-      "label": "Engine Codes Tracked"
-    },
-    {
-      "icon": "refresh",
-      "value": "Updated",
-      "label": "Monthly"
-    }
-  ],
+  "headerImageDark": {
+    "src": "/home-image/sec-header-dark.webp",
+    "alt": "BMW kidney grille and headlights at night"
+  },
   "engines": {
     "title": "Most-Enquired BMW Engines (2025)",
     "icon": "engine",
     "columns": [
-      "RANK",
-      "ENGINE CODE",
-      "LABEL",
-      "ENQUIRIES"
+      "Rank",
+      "Engine Code",
+      "Label",
+      "Enquiries"
     ],
     "rows": [
       {
         "rank": 1,
-        "code": "N47D20C",
+        "code": "<a href='/engine/n47'>N47D20C</a>",
         "label": "2.0L Diesel",
-        "enquiries": "1,450 [BMW-VERIFIED]"
+        "enquiries": "1,450",
+        "tag": "BMW-VERIFIED"
       },
       {
         "rank": 2,
-        "code": "B47D20A",
+        "code": "<a href='/engine/b37-b47'>B47D20A</a>",
         "label": "2.0L Diesel",
-        "enquiries": "930 [BMW-VERIFIED]"
+        "enquiries": "930",
+        "tag": "BMW-VERIFIED"
       },
       {
         "rank": 3,
-        "code": "N57D30",
+        "code": "<a href='/engine/n57'>N57D30</a>",
         "label": "3.0L Diesel",
-        "enquiries": "830 [BMW-VERIFIED]"
+        "enquiries": "830",
+        "tag": "BMW-VERIFIED"
       },
       {
         "rank": 4,
-        "code": "B58B30",
+        "code": "<a href='/engine/b57-b58'>B58B30</a>",
         "label": "3.0L Petrol",
-        "enquiries": "540 [BMW-VERIFIED]"
+        "enquiries": "540",
+        "tag": "BMW-VERIFIED"
       },
       {
         "rank": 5,
-        "code": "B57D30",
+        "code": "<a href='/engine/b57-b58'>B57D30</a>",
         "label": "3.0L Diesel",
-        "enquiries": "460 [BMW-VERIFIED]"
+        "enquiries": "460",
+        "tag": "BMW-VERIFIED"
       },
       {
         "rank": 6,
-        "code": "N63B44",
+        "code": "<a href='/engine/n62-n63'>N63B44</a>",
         "label": "4.4L V8 Petrol",
-        "enquiries": "440 [BMW-VERIFIED]"
+        "enquiries": "440",
+        "tag": "BMW-VERIFIED"
       },
       {
         "rank": 7,
-        "code": "S63B44",
+        "code": "<a href='/engine/s63-s65'>S63B44</a>",
         "label": "4.4L V8 M Engine",
-        "enquiries": "410 [BMW-VERIFIED]"
+        "enquiries": "410",
+        "tag": "BMW-VERIFIED"
       }
     ]
   },
   "models": {
     "title": "Most-Enquired BMW Models (2025)",
-    "icon": "car",
+    "icon": "vehicle",
     "columns": [
-      "RANK",
-      "MODEL",
-      "ENQUIRIES"
+      "Rank",
+      "Model",
+      "Enquiries"
     ],
     "rows": [
       {
         "rank": 1,
         "model": "BMW 3 Series F30",
-        "enquiries": "380 [BMW-VERIFIED]"
+        "href": "/3-series/f30",
+        "enquiries": "380",
+        "tag": "BMW-VERIFIED"
       },
       {
         "rank": 2,
         "model": "BMW 1 Series F20",
-        "enquiries": "344 [BMW-VERIFIED]"
+        "href": "/1-series/f20",
+        "enquiries": "344",
+        "tag": "BMW-VERIFIED"
       },
       {
         "rank": 3,
         "model": "BMW X3 F25",
-        "enquiries": "316 [BMW-VERIFIED]"
+        "href": "/x3/f25",
+        "enquiries": "316",
+        "tag": "BMW-VERIFIED"
       },
       {
         "rank": 4,
         "model": "BMW 5 Series F10",
-        "enquiries": "300 [BMW-VERIFIED]"
+        "href": "/5-series/f10",
+        "enquiries": "300",
+        "tag": "BMW-VERIFIED"
       },
       {
         "rank": 5,
         "model": "BMW X5 F15",
-        "enquiries": "288 [BMW-VERIFIED]"
+        "href": "/x5/f15",
+        "enquiries": "288",
+        "tag": "BMW-VERIFIED"
       },
       {
         "rank": 6,
         "model": "BMW 3 Series E90",
-        "enquiries": "256 [BMW-VERIFIED]"
+        "href": "/3-series/e90",
+        "enquiries": "256",
+        "tag": "BMW-VERIFIED"
       }
     ]
   },
@@ -122,8 +128,8 @@
     "subtitle": "Reconditioned, Supply-Only",
     "icon": "pound",
     "columns": [
-      "ENGINE CODE",
-      "COST RANGE"
+      "Engine Code",
+      "Cost Range"
     ],
     "rows": [
       {
@@ -160,14 +166,14 @@
     "title": "Most Common BMW Failures",
     "icon": "warning",
     "columns": [
-      "RANK",
-      "FAILURE",
-      "RISK LEVEL"
+      "Failure",
+      "Risk Level"
     ],
     "rows": [
       {
         "rank": 1,
-        "failure": "N47 timing chain stretch and tensioner failure",
+        "failure": "<span class='mr-1.5 font-bold'>1</span>N47 timing chain stretch and tensioner failure",
+        "icon": "chain",
         "risk": {
           "label": "Catastrophic",
           "type": "catastrophic"
@@ -175,7 +181,8 @@
       },
       {
         "rank": 2,
-        "failure": "N57 turbocharger and timing chain wear",
+        "failure": "<span class='mr-1.5 font-bold'>2</span>N57 turbocharger and timing chain wear",
+        "icon": "turbo",
         "risk": {
           "label": "Immediate",
           "type": "immediate"
@@ -183,7 +190,8 @@
       },
       {
         "rank": 3,
-        "failure": "B58 coolant leaks (expansion tank, water pump, plastic fittings)",
+        "failure": "<span class='mr-1.5 font-bold'>3</span>B58 coolant leaks (expansion tank, water pump, plastic fittings)",
+        "icon": "cooling",
         "risk": {
           "label": "Monitor",
           "type": "monitor"
@@ -191,7 +199,8 @@
       },
       {
         "rank": 4,
-        "failure": "N63 valve stem seals and hot-vee issues",
+        "failure": "<span class='mr-1.5 font-bold'>4</span>N63 valve stem seals and hot-vee issues",
+        "icon": "valve",
         "risk": {
           "label": "Catastrophic",
           "type": "catastrophic"
@@ -199,7 +208,8 @@
       },
       {
         "rank": 5,
-        "failure": "S63 timing chain tensioner wear",
+        "failure": "<span class='mr-1.5 font-bold'>5</span>S63 timing chain tensioner wear",
+        "icon": "chain",
         "risk": {
           "label": "Catastrophic",
           "type": "catastrophic"
@@ -207,44 +217,45 @@
       }
     ]
   },
-  "regionalDemand": {
+  "regional": {
     "title": "Regional Demand",
-    "icon": "globe",
+    "icon": "pin",
     "columns": [
-      "REGION",
-      "PERCENTAGE"
+      "Region",
+      "Percentage"
     ],
     "rows": [
       {
         "region": "London",
         "percentage": "22%",
-        "source": "[EM-VERIFIED]"
+        "tag": "EM-VERIFIED"
       },
       {
         "region": "South East",
         "percentage": "18%",
-        "source": "[EM-VERIFIED]"
+        "tag": "EM-VERIFIED"
       },
       {
         "region": "North West",
         "percentage": "12%",
-        "source": "[EM-VERIFIED]"
+        "tag": "EM-VERIFIED"
       },
       {
         "region": "Midlands",
         "percentage": "11%",
-        "source": "[EM-VERIFIED]"
+        "tag": "EM-VERIFIED"
       }
     ]
   },
   "liveFeed": {
     "title": "Live Enquiry Feed",
-    "icon": "pulse",
+    "icon": "live",
+    "liveBadge": "Live - Updated Monthly",
     "columns": [
-      "VEHICLE",
-      "LOCATION",
-      "ISSUE",
-      "TIMESTAMP"
+      "Vehicle",
+      "Location",
+      "Issue",
+      "Timestamp"
     ],
     "rows": [
       {
@@ -265,7 +276,10 @@
         "issue": "Turbo failure",
         "timestamp": "6 hours ago"
       }
-    ],
-    "footer": "Updated monthly from BMWEngines.uk CRM data"
+    ]
+  },
+  "dataNote": {
+    "label": "",
+    "text": "<em>Updated monthly from <a href='https://bmwengines.uk/'>BMWEngines.uk</a> CRM data</em>"
   }
 }

@@ -78,13 +78,13 @@
               "@type": "ListItem",
               "position": 1,
               "name": "M42B18",
-              "url": "https://bmwengines.uk/engine/m42/"
+              "url": "https://bmwengines.uk/engine/m40-m42-m43-m44"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "M44B19",
-              "url": "https://bmwengines.uk/engine/m44/"
+              "url": "https://bmwengines.uk/engine/m40-m42-m43-m44"
             }
           ]
         },
@@ -319,7 +319,7 @@
         "recommendation": "The timing case profile gasket is the most notorious weak point on the M42 engine. The profile gasket seals the lower cam chain case to the underside of the cylinder head. BMW updated the gasket material and instituted a warranty program, but many cars have not had this addressed. If the gasket fails, oil can leak out rapidly, leading to catastrophic engine failure. One owner reported: \"the timing case profile gasket let go twice, which cooked two engines\". If you see oil leaks from the front of the engine, book an inspection immediately. Replacing the gasket is far cheaper than replacing the engine.",
         "failureLink": {
           "label": "Read the full profile gasket failure guide → /failures/m42-profile-gasket/ [NEW FAILURE PAGE NEEDED]",
-          "href": "#"
+          "href": "/failures"
         }
       },
       {
@@ -337,7 +337,7 @@
         "recommendation": "The cooling system on the 318is is a well-known weak point. As one specialist noted: \"if it's got 100k on it, the water pump, radiator, and expansion tank should have been replaced already or else they need to be done\". The factory water pump had a plastic impeller that can fail - replacing it with a metal impeller version is a common upgrade. Common failures include the radiator end tanks cracking, plastic coolant pipes under the intake manifold, and the thermostat sticking. Never let the engine go near the red zone on the temperature gauge - shut it down and get it towed.",
         "failureLink": {
           "label": "Read the full cooling system failure guide",
-          "href": "/failures/cooling-system-failure/"
+          "href": "/failures/m54-cooling-system"
         }
       },
       {
@@ -355,7 +355,7 @@
         "recommendation": "The M42 and M44 have a timing chain that can suffer from tensioner wear. One owner reported: \"the rattling you've been hearing was probably the tensioner going bad. They have a tendency to do that\". If the tensioner cannot keep the chain tight, the chain can jump time. Since the M42 and M44 are interference engines, a broken timing chain will cause pistons to hit valves, requiring a full engine replacement. At the first sign of cold-start rattling, have the tensioner inspected. Replacing the tensioner is a relatively inexpensive preventative measure.",
         "failureLink": {
           "label": "Read the full timing chain tensioner guide",
-          "href": "/failures/timing-chain-tensioner/"
+          "href": "/failures/timing-chain-diagnosis-guide"
         }
       },
       {
@@ -373,7 +373,7 @@
         "recommendation": "The M44 engine introduced BMW's DISA (Differentiated Intake System) - a variable intake manifold system that optimises torque across the rev range. The DISA valve has a plastic flap that can wear or break over time, causing a rattling noise and loss of low-end torque. A broken DISA flap can also send debris into the engine. If you experience poor low-end response or hear a rattle from the intake, have the DISA valve inspected. Rebuild kits are available, or the entire unit can be replaced.",
         "failureLink": {
           "label": "Read the full DISA valve failure guide → /failures/disa-valve-failure/ [NEW FAILURE PAGE NEEDED]",
-          "href": "#"
+          "href": "/failures"
         }
       }
     ]

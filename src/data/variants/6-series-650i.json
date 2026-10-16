@@ -78,19 +78,19 @@
               "@type": "ListItem",
               "position": 1,
               "name": "N62B48B",
-              "url": "https://bmwengines.uk/engine/n62/"
+              "url": "https://bmwengines.uk/engine/n62-n63"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "N63B44A",
-              "url": "https://bmwengines.uk/engine/n63/"
+              "url": "https://bmwengines.uk/engine/n62-n63"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "N63B44B",
-              "url": "https://bmwengines.uk/engine/n63/"
+              "url": "https://bmwengines.uk/engine/n62-n63"
             }
           ]
         },
@@ -300,7 +300,7 @@
         "recommendation": "The N62's valve stem seals degrade over time, allowing oil to enter the combustion chamber. This is not a catastrophic failure -you can drive like that forever -but it leads to high oil consumption, blue smoke, and eventual catalytic converter failure. Replacement is expensive (£2,500–£4,500) because it requires cylinder head disassembly. Many owners choose to live with the oil consumption, but if you're buying an N62 650i, budget for this work or accept the oil top-ups. The N63 also suffers from valve stem seal leaks.",
         "failureLink": {
           "label": "Read the full valve stem seal failure guide",
-          "href": "/failures/valve-stem-seal-failure/"
+          "href": "/failures/valve-stem-seal-wear"
         }
       },
       {
@@ -318,7 +318,7 @@
         "recommendation": "The N63's timing chain guides are made of brittle plastic that can break apart, sending metal fragments through the engine. The \"hot-vee\" design generates extreme heat loads that accelerate component wear. This is one of the most severe and common problems on the N63. BMW even launched a Customer Care Package program to address widespread issues. If you hear any rattling from the front of the engine on an N63 650i, book an inspection immediately. A preventative chain replacement is far cheaper than a full engine replacement.",
         "failureLink": {
           "label": "Read the full timing chain failure guide",
-          "href": "/failures/timing-chain-failure/"
+          "href": "/failures/timing-chain-diagnosis-guide"
         }
       },
       {

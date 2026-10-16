@@ -60,7 +60,7 @@
               "@type": "ListItem",
               "position": 2,
               "name": "E70 LCI X5 xDrive35d (N57D30, 2010–2013)",
-              "url": "https://bmwengines.uk/x5/e70-lci/"
+              "url": "https://bmwengines.uk/x5/e70"
             },
             {
               "@type": "ListItem",
@@ -325,7 +325,7 @@
         "recommendation": "N57 timing chain failure is a well-documented issue. One X5 35d owner reported: \"The car would not crank. Towed to dealership and they said the timing chain had broken and the engine was gone. No warning light, codes, nothing!\" BMW claims the timing chain is a \"lifetime part\" and does not service it, yet failures are common. At the first sign of cold-start rattling, get the chain inspected immediately. A £1,500–£3,000 preventative repair is dramatically cheaper than a £5,000–£8,000 engine replacement.",
         "failureLink": {
           "label": "Read the full timing chain failure guide",
-          "href": "/failures/n57-timing-chain/"
+          "href": "/failures/timing-chain-diagnosis-guide"
         }
       },
       {
@@ -343,7 +343,7 @@
         "recommendation": "The 35d's biturbo setup has failures much more frequently than single-turbo variants. Common issues include vacuum solenoids (pressure converters) for the various flaps controlling the biturbo system - the turbine control flap, bypass plate and wastegate are all actuated via vacuum. EGR flow insufficient (P0401) and turbo underboost (P0299) codes are frequently reported on X5 35d models. If you experience these symptoms, have the turbo system and vacuum lines inspected immediately.",
         "failureLink": {
           "label": "Read the full turbo failure guide",
-          "href": "/failures/turbo-failure/"
+          "href": "/failures/turbocharger-failure"
         }
       },
       {
@@ -361,7 +361,7 @@
         "recommendation": "EGR cooler failure is a well-documented issue on X5 35d models. One owner reported: \"This post is to add to the general knowledge base concerning 35d reliability and the EGR cooler recall\". BMW issued recall 11E-A03 for check/replacement of the high-pressure EGR valve on X5 xDrive35d (E70) models. Thermostat failure can prevent DPF regeneration, leading to DPF clogging. Verify recall completion before buying any X5 35d - this is a free fix at the dealership.",
         "failureLink": {
           "label": "Read the full EGR cooler failure guide",
-          "href": "/failures/egr-valve-cooler-failure/"
+          "href": "/failures/egr-valve-cooler"
         }
       }
     ]

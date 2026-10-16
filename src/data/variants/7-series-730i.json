@@ -78,19 +78,19 @@
               "@type": "ListItem",
               "position": 5,
               "name": "E65/E66 (2003–2008) N52B30",
-              "url": "https://bmwengines.uk/7-series/e65/"
+              "url": "https://bmwengines.uk/7-series/e65-e66"
             },
             {
               "@type": "ListItem",
               "position": 6,
               "name": "F01/F02 (2008–2015) N52B30",
-              "url": "https://bmwengines.uk/7-series/f01/"
+              "url": "https://bmwengines.uk/7-series/f01-f02"
             },
             {
               "@type": "ListItem",
               "position": 7,
               "name": "G11/G12 (2015–2022) B48B20B",
-              "url": "https://bmwengines.uk/7-series/g11/"
+              "url": "https://bmwengines.uk/7-series/g11-g12"
             }
           ]
         },
@@ -108,31 +108,31 @@
               "@type": "ListItem",
               "position": 2,
               "name": "M60B30",
-              "url": "https://bmwengines.uk/engine/m60/"
+              "url": "https://bmwengines.uk/engine/m60-m62"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "N52B30A",
-              "url": "https://bmwengines.uk/engine/n52/"
+              "url": "https://bmwengines.uk/engine/n52-n53"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "N52B30BF",
-              "url": "https://bmwengines.uk/engine/n52/"
+              "url": "https://bmwengines.uk/engine/n52-n53"
             },
             {
               "@type": "ListItem",
               "position": 5,
               "name": "N52B30AF",
-              "url": "https://bmwengines.uk/engine/n52/"
+              "url": "https://bmwengines.uk/engine/n52-n53"
             },
             {
               "@type": "ListItem",
               "position": 6,
               "name": "B48B20B",
-              "url": "https://bmwengines.uk/engine/b48/"
+              "url": "https://bmwengines.uk/engine/b38-b48"
             }
           ]
         },
@@ -399,7 +399,7 @@
         "recommendation": "The M60 V8's Nikasil cylinder lining was damaged by high-sulfur fuels commonly sold in the UK in the 1990s. This caused bore wear and compression loss. Most affected engines were replaced under warranty, but if you're buying an E32 or E38 730i V8 today, a compression test is essential. Replacement engines with Alusil liners are available and resolve the issue.",
         "failureLink": {
           "label": "",
-          "href": "/failures/nikasil-bore-wear/"
+          "href": "/failures"
         }
       },
       {
@@ -417,7 +417,7 @@
         "recommendation": "The N52 is a reliable engine, but oil leaks from the valve cover, oil filter housing, and oil pan gaskets are common. The electric water pump is also prone to failure. Oil dripping from the oil filter housing gasket can contaminate the serpentine belt, leading to belt failure and potential engine damage. If you notice a burning oil smell or coolant warnings, have the system inspected promptly.",
         "failureLink": {
           "label": "",
-          "href": "/failures/oil-leak/"
+          "href": "/failures/n55-valve-cover-oil-leak"
         }
       },
       {
@@ -435,7 +435,7 @@
         "recommendation": "The B48's cooling system is its most notorious weak point. Owners report major coolant leaks as early as the second year of ownership. The oil filter housing can also crack, creating coolant or oil leaks around the 50,000 to 100,000-mile mark. If you see any coolant warnings, have the system inspected immediately - these engines can overheat quickly.",
         "failureLink": {
           "label": "",
-          "href": "/failures/coolant-leak/"
+          "href": "/failures/m54-cooling-system"
         }
       }
     ]

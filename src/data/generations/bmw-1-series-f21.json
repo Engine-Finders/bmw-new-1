@@ -39,37 +39,37 @@
               "@type": "ListItem",
               "position": 1,
               "name": "N13B16A Engine",
-              "url": "https://bmwengines.uk/engine/n13/"
+              "url": "https://bmwengines.uk/engine/n13-n20"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "N20B20 Engine",
-              "url": "https://bmwengines.uk/engine/n20/"
+              "url": "https://bmwengines.uk/engine/n13-n20"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "N55B30A Engine",
-              "url": "https://bmwengines.uk/engine/n55/"
+              "url": "https://bmwengines.uk/engine/n54-n55"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "B38B15A Engine",
-              "url": "https://bmwengines.uk/engine/b38/"
+              "url": "https://bmwengines.uk/engine/b38-b48"
             },
             {
               "@type": "ListItem",
               "position": 5,
               "name": "B48B20A Engine",
-              "url": "https://bmwengines.uk/engine/b48/"
+              "url": "https://bmwengines.uk/engine/b38-b48"
             },
             {
               "@type": "ListItem",
               "position": 6,
               "name": "B58B30A Engine",
-              "url": "https://bmwengines.uk/engine/b58/"
+              "url": "https://bmwengines.uk/engine/b57-b58"
             },
             {
               "@type": "ListItem",
@@ -87,25 +87,25 @@
               "@type": "ListItem",
               "position": 9,
               "name": "N47D20D/N47S1 Engine",
-              "url": "https://bmwengines.uk/engine/n47s1/"
+              "url": "https://bmwengines.uk/engine/n47"
             },
             {
               "@type": "ListItem",
               "position": 10,
               "name": "B37D15A Engine",
-              "url": "https://bmwengines.uk/engine/b37/"
+              "url": "https://bmwengines.uk/engine/b37-b47"
             },
             {
               "@type": "ListItem",
               "position": 11,
               "name": "B47D20A Engine",
-              "url": "https://bmwengines.uk/engine/b47/"
+              "url": "https://bmwengines.uk/engine/b37-b47"
             },
             {
               "@type": "ListItem",
               "position": 12,
               "name": "B47D20B Engine",
-              "url": "https://bmwengines.uk/engine/b47/"
+              "url": "https://bmwengines.uk/engine/b37-b47"
             }
           ]
         },
@@ -203,7 +203,7 @@
               "name": "Which BMW 1 Series F21 engine is the most reliable?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "The B58B30A in the M140i (2016–2019) is the most reliable engine in the F21 range -BMW\u0027s modular straight‑six is chain‑driven, robust, and has few reported major failures. On the diesel side, the B47D20A (post‑2015 118d/120d) is the most dependable, with a front‑mounted timing chain that\u0027s far more accessible than the N47\u0027s rear‑mounted design."
+                "text": "The B58B30A in the M140i (2016–2019) is the most reliable engine in the F21 range -BMW's modular straight‑six is chain‑driven, robust, and has few reported major failures. On the diesel side, the B47D20A (post‑2015 118d/120d) is the most dependable, with a front‑mounted timing chain that's far more accessible than the N47's rear‑mounted design."
               }
             },
             {
@@ -211,7 +211,7 @@
               "name": "What are the common problems with the BMW 1 Series F21?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "The N47 timing chain stretch (pre‑2015 diesel fours) is the biggest issue -cold‑start rattle is the warning. The N13 timing chain tensioner wear affects pre‑2015 petrol fours, and the N55 HPFP and injector failure is the M135i\u0027s defining risk. On LCI three‑cylinder models (B38/B37), engine mount wear is a common but minor issue."
+                "text": "The N47 timing chain stretch (pre‑2015 diesel fours) is the biggest issue -cold‑start rattle is the warning. The N13 timing chain tensioner wear affects pre‑2015 petrol fours, and the N55 HPFP and injector failure is the M135i's defining risk. On LCI three‑cylinder models (B38/B37), engine mount wear is a common but minor issue."
               }
             },
             {
@@ -227,7 +227,7 @@
               "name": "Which BMW 1 Series F21 engine should I avoid?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "We don\u0027t say \u0027avoid\u0027 outright -but a pre‑2015 N47D20C without a documented timing‑chain replacement is the one purchase we consistently advise against. A pre‑2015 N13 without chain history is the second. A neglected N55 M135i without HPFP history is also a gamble."
+                "text": "We don't say 'avoid' outright -but a pre‑2015 N47D20C without a documented timing‑chain replacement is the one purchase we consistently advise against. A pre‑2015 N13 without chain history is the second. A neglected N55 M135i without HPFP history is also a gamble."
               }
             },
             {
@@ -243,7 +243,7 @@
               "name": "Is it worth replacing a BMW 1 Series F21 engine, or should I scrap the car?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Depends on the car\u0027s value. Against a well‑kept £10,000 F21, a £3,200–£5,500 N47 recon is 32–55% of the car\u0027s value -safe. Against a tired £4,000 example, the same recon is 80–137% -that crosses our 70% BMW threshold, so we\u0027d advise walking away. For an M135i or M140i, the higher retained values make replacement more viable."
+                "text": "Depends on the car's value. Against a well‑kept £10,000 F21, a £3,200–£5,500 N47 recon is 32–55% of the car's value -safe. Against a tired £4,000 example, the same recon is 80–137% -that crosses our 70% BMW threshold, so we'd advise walking away. For an M135i or M140i, the higher retained values make replacement more viable."
               }
             },
             {
@@ -251,7 +251,7 @@
               "name": "How long do BMW 1 Series F21 engines last?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "The B58 six‑cylinder can exceed 200,000 miles with proper servicing -it\u0027s one of BMW\u0027s most durable modern engines. The B47 and B48 fours are similarly robust. The N47 and N13\u0027s limiting factor is the timing chain -addressed proactively, either can reach 150,000+ miles."
+                "text": "The B58 six‑cylinder can exceed 200,000 miles with proper servicing -it's one of BMW's most durable modern engines. The B47 and B48 fours are similarly robust. The N47 and N13's limiting factor is the timing chain -addressed proactively, either can reach 150,000+ miles."
               }
             },
             {
@@ -267,7 +267,7 @@
               "name": "How do I find my BMW 1 Series F21 engine code?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Listed on the VIN plate and vehicle documentation; the engine code is also stamped on the cylinder block. Common F21 codes include N13B16A (114i/116i/118i pre‑LCI), N20B20 (125i), N55B30A (M135i), B38B15A (116i/118i LCI), B48B20A (120i LCI), B58B30A (M140i), N47D16A/D20C/D20D (114d/116d/118d/120d/125d pre‑LCI), B37D15A (114d/116d LCI), B47D20A/B (118d/120d/125d LCI). Tell us your variant and registration date (pre‑ or post‑July 2015) and we\u0027ll identify it for you."
+                "text": "Listed on the VIN plate and vehicle documentation; the engine code is also stamped on the cylinder block. Common F21 codes include N13B16A (114i/116i/118i pre‑LCI), N20B20 (125i), N55B30A (M135i), B38B15A (116i/118i LCI), B48B20A (120i LCI), B58B30A (M140i), N47D16A/D20C/D20D (114d/116d/118d/120d/125d pre‑LCI), B37D15A (114d/116d LCI), B47D20A/B (118d/120d/125d LCI). Tell us your variant and registration date (pre‑ or post‑July 2015) and we'll identify it for you."
               }
             }
           ]
@@ -301,7 +301,7 @@
         {
           "@type": "Dataset",
           "name": "BMW 1 Series F21 UK Engine Enquiry Data 2025",
-          "description": "Proprietary UK enquiry volumes and demand trends for BMW 1 Series F21 engines, sourced from bmwengines.uk\u0027s specialist marketplace activity.",
+          "description": "Proprietary UK enquiry volumes and demand trends for BMW 1 Series F21 engines, sourced from bmwengines.uk's specialist marketplace activity.",
           "creator": {
             "@type": "Organization",
             "name": "bmwengines.uk"
@@ -356,7 +356,7 @@
     ],
     "primaryCta": {
       "label": "Explore F21 Engines →",
-      "href": "#"
+      "href": "/1-series/f21"
     },
     "dataIntegrityNote": ""
   },
@@ -808,7 +808,7 @@
         "recommendation": "At the first sign of cold‑start rattle on any N47‑powered F21, get the chain inspected immediately -a £650–£1,800 preventative repair is dramatically cheaper than the £3,200–£5,500 replacement that follows if ignored. On an F21 worth under £5,000, this decision alone determines whether the car stays economically viable.",
         "cta": {
           "label": "Compare N47 engine prices for your F21 →",
-          "href": "#"
+          "href": "/quote"
         }
       },
       {
@@ -836,12 +836,12 @@
         "recommendation": "On any pre‑2015 petrol F21, have the timing chain tensioner inspected at 60,000 miles -a £650–£1,800 preventative repair is far cheaper than the £1,500–£3,500 replacement that follows a snapped chain. The N13 is otherwise a robust engine, but this single weak point defines its ownership experience.",
         "cta": {
           "label": "Compare N13 engine prices for your F21 →",
-          "href": "#"
+          "href": "/quote"
         }
       },
       {
         "id": 3,
-        "title": "N55 HPFP \u0026 Injector Failure (M135i)",
+        "title": "N55 HPFP & Injector Failure (M135i)",
         "affectedModels": "F21 M135i (2012–2016).",
         "typicalFailureMileage": "30,000–80,000 miles.",
         "rootCause": "The high‑pressure fuel pump’s internal wear leads to fuel pressure loss, hard starting, and eventual engine damage if ignored; injector issues frequently follow. This is the M135i’s defining ownership cost risk.",
@@ -864,7 +864,7 @@
         "recommendation": "If your M135i has no documented HPFP history, treat it as overdue preventative maintenance -£800–£1,500 now is far cheaper than the £4,500+ replacement that follows a lean‑running failure. This is the single most important maintenance item on the N55.",
         "cta": {
           "label": "Compare N55 engine prices for your M135i →",
-          "href": "#"
+          "href": "/quote"
         }
       },
       {
@@ -892,7 +892,7 @@
         "recommendation": "This is a minor but common issue on three‑cylinder F21s -a £200–£400 mount replacement restores the car’s refinement and is one of the cheapest fixes on the range. The B38 and B37 engines themselves are robust and chain‑driven; this is the only recurring issue.",
         "cta": {
           "label": "Compare B38/B37 engine mount replacement quotes →",
-          "href": "#"
+          "href": "/quote"
         }
       }
     ]
@@ -1083,7 +1083,11 @@
       "2. B47D20A (930 JLR‑wide [EM‑VERIFIED])",
       "3. N55B30A (M135i pattern data)"
     ],
-    "mostRequestedVariants": ["1. 120d", "2. 118d", "3. M135i"],
+    "mostRequestedVariants": [
+      "1. 120d",
+      "2. 118d",
+      "3. M135i"
+    ],
     "averageReplacementCost": "£2,800–£5,500 supply only [BMW‑QUOTE]",
     "mostCommonFailures": [
       "1. N47 timing chain stretch",
@@ -1125,12 +1129,12 @@
       {
         "id": 2,
         "question": "Which BMW 1 Series F21 engine is the most reliable?",
-        "answer": "The B58B30A in the M140i (2016–2019) is the most reliable engine in the F21 range -BMW\u0027s modular straight‑six is chain‑driven, robust, and has few reported major failures. On the diesel side, the B47D20A (post‑2015 118d/120d) is the most dependable, with a front‑mounted timing chain that\u0027s far more accessible than the N47\u0027s rear‑mounted design."
+        "answer": "The B58B30A in the M140i (2016–2019) is the most reliable engine in the F21 range -BMW's modular straight‑six is chain‑driven, robust, and has few reported major failures. On the diesel side, the B47D20A (post‑2015 118d/120d) is the most dependable, with a front‑mounted timing chain that's far more accessible than the N47's rear‑mounted design."
       },
       {
         "id": 3,
         "question": "What are the common problems with the BMW 1 Series F21?",
-        "answer": "The N47 timing chain stretch (pre‑2015 diesel fours) is the biggest issue -cold‑start rattle is the warning. The N13 timing chain tensioner wear affects pre‑2015 petrol fours, and the N55 HPFP and injector failure is the M135i\u0027s defining risk. On LCI three‑cylinder models (B38/B37), engine mount wear is a common but minor issue."
+        "answer": "The N47 timing chain stretch (pre‑2015 diesel fours) is the biggest issue -cold‑start rattle is the warning. The N13 timing chain tensioner wear affects pre‑2015 petrol fours, and the N55 HPFP and injector failure is the M135i's defining risk. On LCI three‑cylinder models (B38/B37), engine mount wear is a common but minor issue."
       },
       {
         "id": 4,
@@ -1140,7 +1144,7 @@
       {
         "id": 5,
         "question": "Which BMW 1 Series F21 engine should I avoid?",
-        "answer": "We don\u0027t say \"avoid\" outright -but a pre‑2015 N47D20C without a documented timing‑chain replacement is the one purchase we consistently advise against. A pre‑2015 N13 without chain history is the second. A neglected N55 M135i without HPFP history is also a gamble."
+        "answer": "We don't say \"avoid\" outright -but a pre‑2015 N47D20C without a documented timing‑chain replacement is the one purchase we consistently advise against. A pre‑2015 N13 without chain history is the second. A neglected N55 M135i without HPFP history is also a gamble."
       },
       {
         "id": 6,
@@ -1150,12 +1154,12 @@
       {
         "id": 7,
         "question": "Is it worth replacing a BMW 1 Series F21 engine, or should I scrap the car?",
-        "answer": "Depends on the car\u0027s value. Against a well‑kept £10,000 F21, a £3,200–£5,500 N47 recon is 32–55% of the car\u0027s value -safe. Against a tired £4,000 example, the same recon is 80–137% -that crosses our 70% BMW threshold, so we\u0027d advise walking away. For an M135i or M140i, the higher retained values make replacement more viable."
+        "answer": "Depends on the car's value. Against a well‑kept £10,000 F21, a £3,200–£5,500 N47 recon is 32–55% of the car's value -safe. Against a tired £4,000 example, the same recon is 80–137% -that crosses our 70% BMW threshold, so we'd advise walking away. For an M135i or M140i, the higher retained values make replacement more viable."
       },
       {
         "id": 8,
         "question": "How long do BMW 1 Series F21 engines last?",
-        "answer": "The B58 six‑cylinder can exceed 200,000 miles with proper servicing -it\u0027s one of BMW\u0027s most durable modern engines. The B47 and B48 fours are similarly robust. The N47 and N13\u0027s limiting factor is the timing chain -addressed proactively, either can reach 150,000+ miles."
+        "answer": "The B58 six‑cylinder can exceed 200,000 miles with proper servicing -it's one of BMW's most durable modern engines. The B47 and B48 fours are similarly robust. The N47 and N13's limiting factor is the timing chain -addressed proactively, either can reach 150,000+ miles."
       },
       {
         "id": 9,
@@ -1165,7 +1169,7 @@
       {
         "id": 10,
         "question": "How do I find my BMW 1 Series F21 engine code?",
-        "answer": "Listed on the VIN plate and vehicle documentation; the engine code is also stamped on the cylinder block. Common F21 codes include N13B16A (114i/116i/118i pre‑LCI), N20B20 (125i), N55B30A (M135i), B38B15A (116i/118i LCI), B48B20A (120i LCI), B58B30A (M140i), N47D16A/D20C/D20D (114d/116d/118d/120d/125d pre‑LCI), B37D15A (114d/116d LCI), B47D20A/B (118d/120d/125d LCI). Tell us your variant and registration date (pre‑ or post‑July 2015) and we\u0027ll identify it for you."
+        "answer": "Listed on the VIN plate and vehicle documentation; the engine code is also stamped on the cylinder block. Common F21 codes include N13B16A (114i/116i/118i pre‑LCI), N20B20 (125i), N55B30A (M135i), B38B15A (116i/118i LCI), B48B20A (120i LCI), B58B30A (M140i), N47D16A/D20C/D20D (114d/116d/118d/120d/125d pre‑LCI), B37D15A (114d/116d LCI), B47D20A/B (118d/120d/125d LCI). Tell us your variant and registration date (pre‑ or post‑July 2015) and we'll identify it for you."
       }
     ]
   },
@@ -1178,17 +1182,17 @@
       },
       {
         "title": "Compare F21 Engine Replacement Companies",
-        "text": "see prices, warranty terms and supply \u0026 fit options side‑by‑side before you commit."
+        "text": "see prices, warranty terms and supply & fit options side‑by‑side before you commit."
       },
       {
         "title": "UK Engine Replacement Services for F21",
-        "text": "covering every variant from 114d to M140i, with supply‑only or full supply \u0026 fit available nationwide."
+        "text": "covering every variant from 114d to M140i, with supply‑only or full supply & fit available nationwide."
       }
     ],
     "finalCta": "Find the best BMW 1 Series F21 engine replacement UK drivers rely on. Compare real prices from trusted specialists on EnginesMarket today and get back on the road with confidence.",
     "ctaButton": {
       "label": "Compare BMW 1 Series F21 Engine Prices on EnginesMarket →",
-      "href": "#",
+      "href": "/quote",
       "note": "[PLACEHOLDER -confirm EnginesMarket URL structure]"
     }
   }

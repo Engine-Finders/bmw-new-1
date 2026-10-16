@@ -108,7 +108,7 @@
               "@type": "ListItem",
               "position": 5,
               "name": "B57D30",
-              "url": "https://bmwengines.uk/engine/b57/"
+              "url": "https://bmwengines.uk/engine/b57-b58"
             }
           ]
         },
@@ -359,7 +359,7 @@
         "recommendation": "The N57's rear-mounted timing chain is the defining weak point of this engine generation. Unlike the front-mounted M57 chain, N57 chain replacement is a labour-intensive job. From 2015 onwards, BMW revised the guides with filled-in ribs to reduce failure rates, but the risk remains. Regular oil changes (10,000 miles max, not BMW's CBS intervals) are the best prevention. At the first sign of rear-engine rattle, get it inspected immediately - a £1,500–£3,500 preventative chain replacement is dramatically cheaper than a £4,500+ engine swap.",
         "failureLink": {
           "label": "",
-          "href": "/failures/n57-timing-chain/"
+          "href": "/failures/timing-chain-diagnosis-guide"
         }
       },
       {
@@ -377,7 +377,7 @@
         "recommendation": "The M57's swirl flaps in the intake manifold can fail, with the metal flap breaking off and being ingested into the engine - catastrophic if it happens. This affects pre-2003 M57 engines most severely, but post-2003 revisions reduced the risk. Preventative blanking plates (£100–£300) remove the risk entirely with no noticeable performance loss. If your E46 or early E90 330d hasn't had this done, consider it essential preventative maintenance.",
         "failureLink": {
           "label": "",
-          "href": "/failures/swirl-flap-failure/"
+          "href": "/failures/m57-swirl-flap"
         }
       },
       {
@@ -395,7 +395,7 @@
         "recommendation": "EGR cooler failure is a well-documented issue across N57 and B57 engines. BMW issued multiple recalls for this - the latest with an updated part number. A leaking EGR cooler can allow coolant into the exhaust system, and in some cases, can create a fire risk. Check your vehicle's recall status immediately - if your 330d hasn't had the updated EGR cooler fitted, get it done. This is a safety-critical item.",
         "failureLink": {
           "label": "",
-          "href": "/failures/egr-cooler-failure/"
+          "href": "/failures/egr-valve-cooler"
         }
       },
       {
@@ -413,7 +413,7 @@
         "recommendation": "N57 engines can suffer from bottom-end bearing failure, particularly on higher-mileage examples. The twin-turbo versions (335d) seem to suffer more than the single-turbo 330d, but it's still a known risk. Regular oil changes with the correct BMW-spec oil are the key prevention - many specialists recommend 8,000–10,000 mile intervals rather than BMW's CBS schedule. If you hear a knocking noise from the bottom end, stop driving immediately and have it inspected.",
         "failureLink": {
           "label": "",
-          "href": "/failures/bottom-end-bearing-failure/"
+          "href": "/failures"
         }
       },
       {
@@ -431,7 +431,7 @@
         "recommendation": "All modern diesels - M57, N57 and B57 - suffer from DPF issues if used primarily for short urban journeys. The DPF needs regular motorway runs to regenerate passively. If the car has been used mostly for short trips, the DPF can clog, leading to expensive repairs. Regular motorway driving and using premium diesel (e.g., Shell V-Power) can help keep the DPF healthy.",
         "failureLink": {
           "label": "",
-          "href": "/failures/dpf-failure/"
+          "href": "/failures/dpf-blockage"
         }
       }
     ]

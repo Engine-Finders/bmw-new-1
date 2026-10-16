@@ -78,7 +78,7 @@
               "@type": "ListItem",
               "position": 2,
               "name": "B47D20",
-              "url": "https://bmwengines.uk/engine/b47/"
+              "url": "https://bmwengines.uk/engine/b37-b47"
             }
           ]
         },
@@ -288,7 +288,7 @@
         "recommendation": "The N47's timing chain is mounted at the rear of the engine - a design that makes replacement exceptionally labour-intensive (engine-out job). The chain can stretch and the plastic guides can break, leading to catastrophic engine failure. BMW faced widespread complaints and class action lawsuits over this issue. If you're buying an N47-engined X3 18d and there's no proof of timing chain work, budget for it immediately - or walk away. Frequent oil changes (every 5,000–8,000 miles) can help prevent chain wear.",
         "failureLink": {
           "label": "Read the full timing chain failure guide",
-          "href": "/failures/timing-chain-failure/"
+          "href": "/failures/timing-chain-diagnosis-guide"
         }
       },
       {
@@ -306,7 +306,7 @@
         "recommendation": "The EGR cooler is a known weak point on both the N47 and B47. Coolant leaks from the cooler can lead to overheating if not caught early. Replacement is straightforward and parts are readily available from BMW specialists. Check coolant levels regularly and investigate any unexplained drop. If left unchecked, coolant loss can lead to head gasket failure. BMW issued recalls for EGR cooler issues on some models - check if your car is affected.",
         "failureLink": {
           "label": "Read the full EGR cooler failure guide",
-          "href": "/failures/egr-cooler-failure/"
+          "href": "/failures/egr-valve-cooler"
         }
       },
       {
@@ -324,7 +324,7 @@
         "recommendation": "Diesel engines suffer from oil dilution - fuel gets past the piston rings during DPF regeneration cycles. Short journeys make this worse. Check the oil level regularly; if it's rising, get an oil change immediately using the correct BMW-spec oil (5W-30 LL-04). Extended dilution damages bearings and leads to catastrophic failure. Regular motorway runs to allow passive DPF regeneration are essential.",
         "failureLink": {
           "label": "Read the full oil dilution guide",
-          "href": "/failures/oil-dilution/"
+          "href": "/failures"
         }
       }
     ]

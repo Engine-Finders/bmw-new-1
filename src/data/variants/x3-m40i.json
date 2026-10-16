@@ -66,7 +66,7 @@
               "@type": "ListItem",
               "position": 2,
               "name": "G01 LCI X3 M40i (B58B30O1/B58B30B, 2021–present)",
-              "url": "https://bmwengines.uk/x3/g01-lci/"
+              "url": "https://bmwengines.uk/x3/g01"
             }
           ]
         },
@@ -78,13 +78,13 @@
               "@type": "ListItem",
               "position": 1,
               "name": "B58B30O0",
-              "url": "https://bmwengines.uk/engine/b58/"
+              "url": "https://bmwengines.uk/engine/b57-b58"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "B58B30O1 / B58B30B",
-              "url": "https://bmwengines.uk/engine/b58/"
+              "url": "https://bmwengines.uk/engine/b57-b58"
             }
           ]
         },
@@ -311,7 +311,7 @@
         "recommendation": "BMW chose to make the B58's oil filter housing out of plastic. Over time, the plastic becomes brittle from heat cycles, cracking and leaking oil, coolant, or both. BMW is facing a class action lawsuit over faulty oil filter housings that leak coolant, resulting in owners having to spend thousands of pounds in repairs. A replacement oil filter housing with labour can run from £800 to £2,500. If you notice oil spots or coolant loss, have the oil filter housing inspected immediately - catching this early prevents catastrophic engine failure.",
         "failureLink": {
           "label": "Read the full oil filter housing failure guide → /failures/b58-oil-filter-housing/ [NEW FAILURE PAGE NEEDED]",
-          "href": "#"
+          "href": "/failures/n55-valve-cover-oil-leak"
         }
       },
       {
@@ -329,7 +329,7 @@
         "recommendation": "One of the most frequent failure points on the B58 is the coolant hose connector behind the heat management module. The OE plastic connector is prone to cracking and leaks due to hydrolysis and repeated heat cycles. An upgraded aluminium connector eliminates this failure point. Coolant leaks are common across the B58 platform. If you're topping up coolant regularly, have the system pressure-tested and inspect the plastic connectors behind the intake manifold.",
         "failureLink": {
           "label": "Read the full coolant leak guide → /failures/b58-coolant-leak/ [NEW FAILURE PAGE NEEDED]",
-          "href": "#"
+          "href": "/failures/m54-cooling-system"
         }
       },
       {
@@ -347,7 +347,7 @@
         "recommendation": "One of the most frequently reported issues on the B58 is oil leaks from the valve cover gasket and oil filter housing. The rubber gasket deteriorates from heat cycling and age, leading to oil leaks that can cause low oil levels and potential engine damage if not addressed promptly. Valve cover gasket leaks are \"manageable expenses\" when caught early. If you notice a burning smell or oil spots, have the gasket inspected promptly.",
         "failureLink": {
           "label": "Read the full oil leak guide → /failures/b58-oil-leaks/ [NEW FAILURE PAGE NEEDED]",
-          "href": "#"
+          "href": "/failures/n55-valve-cover-oil-leak"
         }
       },
       {
