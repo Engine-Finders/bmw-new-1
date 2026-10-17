@@ -67,15 +67,15 @@ function VerdictIcon({ type, mobile = false }) {
 
   if (type === "safe" || type === "avoid") {
     return (
-      <span className={`flex shrink-0 items-center justify-center rounded-full border-2 ${mobile ? "h-9 w-9" : "h-7 w-7"} ${config.color}`}>
-        <Icon name={config.icon} className={mobile ? "h-6 w-6" : "h-4.5 w-4.5"} strokeWidth={2.3} />
+      <span className={`flex shrink-0 items-center justify-center rounded-full border-2 ${mobile ? "h-8 w-8" : "h-7 w-7"} ${config.color}`}>
+        <Icon name={config.icon} className={mobile ? "h-5 w-5" : "h-4.5 w-4.5"} strokeWidth={2.3} />
       </span>
     );
   }
 
   return (
     <span className={`flex shrink-0 items-center justify-center ${config.color}`}>
-      <Icon name={config.icon} className={mobile ? "h-10 w-10" : "h-7 w-7"} strokeWidth={type === "warning" ? 1.8 : 2} />
+      <Icon name={config.icon} className={mobile ? "h-7 w-7" : "h-6 w-6"} strokeWidth={type === "warning" ? 1.8 : 2} />
     </span>
   );
 }
