@@ -32,6 +32,27 @@ function Icon({ name, className = "h-5 w-5", strokeWidth = 2 }) {
   );
 }
 
+// Phone list: the client's icon artwork in a tinted tile; "when not to repair" is the green heart.
+const SIGNAL_TILES = {
+  chart: { icon: "real-inquiries", tone: "blue" },
+  shield: { icon: "heart", tone: "green" },
+  wrench: { icon: "vetted-specialist", tone: "blue" },
+  trophy: { icon: "engine-finders", tone: "blue" },
+};
+
+function SignalTile({ name, isDark }) {
+  const tile = SIGNAL_TILES[name] || SIGNAL_TILES.chart;
+  const tone =
+    tile.tone === "green"
+      ? isDark ? "bg-[#0d2a1d] text-[#4fd18b]" : "bg-[#e9f8ef] text-[#2fb36a]"
+      : isDark ? "bg-[#0c2748] text-[#7fb0ff]" : "bg-[#eef4ff] text-[var(--color-primary)]";
+  return (
+    <span className={`flex h-14 w-14 shrink-0 items-center justify-center rounded-xl ${tone}`}>
+      <BrandIcon name={tile.icon} className="h-8 w-8" scale={1.15} />
+    </span>
+  );
+}
+
 function signalIcon(title) {
   const lower = title.toLowerCase();
   if (lower.includes("real data")) return "chart";
@@ -46,7 +67,7 @@ export default function HomeSec12({ data }) {
 
   return (
     <section className={`relative overflow-hidden px-3 py-7 md:px-6 md:py-8 ${isDark ? "bg-[#02070b]" : "bg-white"}`}>
-      <div className="absolute inset-x-0 top-0 hidden h-[260px] md:block">
+      <div className="absolute inset-x-0 top-0 hidden h-[260px] lg:block">
 
         {/* Banner on the right: the car (or engine) stays whole at header height */}
         <div className="absolute inset-y-0 right-0 w-full md:w-[64%]">
@@ -65,7 +86,21 @@ export default function HomeSec12({ data }) {
           <p className={`mt-5 max-w-[620px] text-[0.9rem] leading-[1.58] md:text-[1rem] ${isDark ? "text-white/78" : "text-[#27384a]"}`} dangerouslySetInnerHTML={{ __html: cleanText(data.subHeadline) }} />
         </div>
 
-        <div className="mt-8 grid grid-cols-1 gap-3 sm:grid-cols-2 md:mt-7 md:grid-cols-4 md:gap-4">
+        {/* Phones and tablets: one card, icon tile left, title running into the description */}
+        <div className={`mt-6 rounded-xl border px-4 shadow-[0_12px_28px_rgba(10,26,43,0.06)] md:px-6 lg:hidden ${isDark ? "border-[#223343] bg-[rgba(10,21,32,0.92)]" : "border-[#e3e9f1] bg-white"}`}>
+          {data.signals.map((item, index) => (
+            <article key={item.id} className={`flex items-start gap-4 py-4 ${index ? `border-t ${isDark ? "border-[#223343]" : "border-[#e8edf3]"}` : ""}`}>
+              <SignalTile name={signalIcon(item.title)} isDark={isDark} />
+              <p className={`min-w-0 text-[0.92rem] leading-[1.55] ${isDark ? "text-white/80" : "text-[#27384a]"}`}>
+                <strong className="font-bold text-[var(--color-primary)]">{item.title}</strong>
+                {" \u2014 "}
+                <span dangerouslySetInnerHTML={{ __html: cleanText(item.description) }} />
+              </p>
+            </article>
+          ))}
+        </div>
+
+        <div className="mt-7 hidden grid-cols-4 gap-4 lg:grid">
           {data.signals.map((item) => (
             <article key={item.id} className={`rounded-md border p-4 shadow-[0_12px_28px_rgba(10,26,43,0.06)] ${isDark ? "border-[#223343] bg-[rgba(10,21,32,0.92)]" : "border-[#dfe5ed] bg-white"}`}>
               <div className="mb-3 flex items-center gap-3">
