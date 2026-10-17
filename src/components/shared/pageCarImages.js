@@ -96,7 +96,8 @@ export function withModelPageImages(data) {
   if (out.closingActionCards) {
     out.closingActionCards = {
       ...out.closingActionCards,
-      heroCar: hero?.card ? hero.card : null,
+      // Transparent line-up of the model's generations; the line-up photo only when there is none.
+      heroCar: hero?.lineup ? { ...hero.lineup, cutout: true } : hero?.card || null,
       engineImage: modelEngineImage(model),
     };
   }

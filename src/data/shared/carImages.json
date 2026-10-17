@@ -5923,7 +5923,12 @@
     "width": 640,
     "height": 221
    },
-   "cars": []
+   "cars": [],
+   "lineup": {
+    "src": "/model/lineup/1-series.webp",
+    "width": 711,
+    "height": 228
+   }
   },
   "2-series": {
    "scene": {
@@ -5936,7 +5941,12 @@
     "width": 640,
     "height": 221
    },
-   "cars": []
+   "cars": [],
+   "lineup": {
+    "src": "/model/lineup/2-series.webp",
+    "width": 711,
+    "height": 228
+   }
   },
   "2002": {
    "scene": {
@@ -5962,7 +5972,12 @@
     "width": 640,
     "height": 221
    },
-   "cars": []
+   "cars": [],
+   "lineup": {
+    "src": "/model/lineup/3-series.webp",
+    "width": 706,
+    "height": 228
+   }
   },
   "4-series": {
    "scene": {
@@ -5975,7 +5990,12 @@
     "width": 640,
     "height": 221
    },
-   "cars": []
+   "cars": [],
+   "lineup": {
+    "src": "/model/lineup/4-series.webp",
+    "width": 704,
+    "height": 228
+   }
   },
   "5-series": {
    "scene": {
@@ -5988,7 +6008,12 @@
     "width": 640,
     "height": 221
    },
-   "cars": []
+   "cars": [],
+   "lineup": {
+    "src": "/model/lineup/5-series.webp",
+    "width": 713,
+    "height": 228
+   }
   },
   "6-series": {
    "scene": {
@@ -6053,7 +6078,12 @@
     "width": 640,
     "height": 221
    },
-   "cars": []
+   "cars": [],
+   "lineup": {
+    "src": "/model/lineup/m1.webp",
+    "width": 587,
+    "height": 261
+   }
   },
   "m2": {
    "scene": {
@@ -6066,7 +6096,12 @@
     "width": 640,
     "height": 221
    },
-   "cars": []
+   "cars": [],
+   "lineup": {
+    "src": "/model/lineup/m2.webp",
+    "width": 640,
+    "height": 243
+   }
   },
   "m3": {
    "scene": {
@@ -6079,7 +6114,12 @@
     "width": 640,
     "height": 221
    },
-   "cars": []
+   "cars": [],
+   "lineup": {
+    "src": "/model/lineup/m3.webp",
+    "width": 710,
+    "height": 228
+   }
   },
   "m4": {
    "scene": {
@@ -6092,7 +6132,12 @@
     "width": 640,
     "height": 221
    },
-   "cars": []
+   "cars": [],
+   "lineup": {
+    "src": "/model/lineup/m4.webp",
+    "width": 643,
+    "height": 243
+   }
   },
   "m5": {
    "scene": {
@@ -6105,7 +6150,12 @@
     "width": 640,
     "height": 221
    },
-   "cars": []
+   "cars": [],
+   "lineup": {
+    "src": "/model/lineup/m5.webp",
+    "width": 704,
+    "height": 228
+   }
   },
   "m6": {
    "scene": {
@@ -6118,7 +6168,12 @@
     "width": 640,
     "height": 221
    },
-   "cars": []
+   "cars": [],
+   "lineup": {
+    "src": "/model/lineup/m6.webp",
+    "width": 715,
+    "height": 228
+   }
   },
   "m7": {
    "scene": {
@@ -6144,7 +6199,12 @@
     "width": 640,
     "height": 221
    },
-   "cars": []
+   "cars": [],
+   "lineup": {
+    "src": "/model/lineup/m8.webp",
+    "width": 660,
+    "height": 243
+   }
   },
   "x1": {
    "scene": {
@@ -6157,7 +6217,12 @@
     "width": 640,
     "height": 221
    },
-   "cars": []
+   "cars": [],
+   "lineup": {
+    "src": "/model/lineup/x1.webp",
+    "width": 702,
+    "height": 228
+   }
   },
   "x2": {
    "scene": {
@@ -6170,7 +6235,12 @@
     "width": 640,
     "height": 221
    },
-   "cars": []
+   "cars": [],
+   "lineup": {
+    "src": "/model/lineup/x2.webp",
+    "width": 612,
+    "height": 243
+   }
   },
   "x3": {
    "scene": {
@@ -6183,7 +6253,12 @@
     "width": 640,
     "height": 221
    },
-   "cars": []
+   "cars": [],
+   "lineup": {
+    "src": "/model/lineup/x3.webp",
+    "width": 680,
+    "height": 228
+   }
   },
   "x4": {
    "scene": {
@@ -6196,7 +6271,12 @@
     "width": 640,
     "height": 221
    },
-   "cars": []
+   "cars": [],
+   "lineup": {
+    "src": "/model/lineup/x4.webp",
+    "width": 594,
+    "height": 243
+   }
   },
   "x5": {
    "scene": {
@@ -6209,7 +6289,12 @@
     "width": 640,
     "height": 221
    },
-   "cars": []
+   "cars": [],
+   "lineup": {
+    "src": "/model/lineup/x5.webp",
+    "width": 688,
+    "height": 228
+   }
   },
   "x6": {
    "scene": {
@@ -6222,7 +6307,12 @@
     "width": 640,
     "height": 221
    },
-   "cars": []
+   "cars": [],
+   "lineup": {
+    "src": "/model/lineup/x6.webp",
+    "width": 707,
+    "height": 228
+   }
   },
   "x7": {
    "scene": {
@@ -6235,7 +6325,12 @@
     "width": 640,
     "height": 221
    },
-   "cars": []
+   "cars": [],
+   "lineup": {
+    "src": "/model/lineup/x7.webp",
+    "width": 592,
+    "height": 243
+   }
   },
   "xm": {
    "scene": {
@@ -6261,7 +6356,12 @@
     "width": 640,
     "height": 221
    },
-   "cars": []
+   "cars": [],
+   "lineup": {
+    "src": "/model/lineup/z-series.webp",
+    "width": 713,
+    "height": 228
+   }
   }
  },
  "generationHeroes": {

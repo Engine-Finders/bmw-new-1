@@ -124,11 +124,19 @@ function DiagnosisList({ isDark }) {
 
 // The art sits in its own slot beside the icon, above the title, so it never covers the text.
 function CardArt({ art, heroCar, engineImage, isDark }) {
-  if (art === "lineup" && heroCar) {
-    // The same picture as this model's hero.
+  if (art === "lineup" && heroCar?.cutout) {
+    // The model's generations as cut-outs, standing on the card like the engine beside it.
     return (
       <div className="relative h-full w-full">
-        <Image src={heroCar.src} alt="" fill className="object-contain object-right" sizes="(min-width: 768px) 22vw, 70vw" />
+        <Image src={heroCar.src} alt="" fill className="object-contain object-right-bottom" sizes="(min-width: 768px) 22vw, 70vw" />
+      </div>
+    );
+  }
+  if (art === "lineup" && heroCar) {
+    // No cut-outs for this model: the hero line-up photo, framed to fill the slot.
+    return (
+      <div className={`relative h-full w-full overflow-hidden rounded-md border ${isDark ? "border-white/10" : "border-[#e1e7ef]"}`}>
+        <Image src={heroCar.src} alt="" fill className="object-cover object-center" sizes="(min-width: 768px) 22vw, 70vw" />
       </div>
     );
   }
