@@ -1,44 +1,33 @@
 {
-  "h2": "Get the <span class=\"heading-accent\">Right</span> Answer. Not Just <span class=\"heading-accent\">Any</span> Answer.",
+  "h2": "Get the <span class=\"heading-accent\">Right</span> Answer. Not Just <span class=\"heading-accent-red\">Any</span> Answer.",
   "subHeadline": "Free, expert guidance. Real data. Honest advice.",
-  "headerImage": {
-    "src": "/home-image/sec-header-light.webp",
-    "alt": "BMW kidney grille and headlights"
-  },
-  "headerImageDark": {
-    "src": "/home-image/sec-header-dark.webp",
-    "alt": "BMW kidney grille and headlights at night"
-  },
   "stats": [
-    {
-      "icon": "trend",
-      "label": "24,650+ UK enquiries analysed"
-    },
-    {
-      "icon": "engine",
-      "label": "50+ engine codes tracked"
-    },
-    {
-      "icon": "note",
-      "label": "Real quotes, real costs"
-    },
-    {
-      "icon": "independent",
-      "label": "Independent & unbiased"
-    }
+    "24,650+ UK enquiries analysed",
+    "50+ engine codes tracked",
+    "Real quotes, real costs",
+    "Independent & unbiased"
   ],
-  "guidance": {
-    "eyebrow": "GET YOUR FREE GUIDANCE",
-    "title": "Ask a BMW engine specialist",
-    "cta": {
-      "label": "CALL A SPECIALIST",
-      "subLabel": "Speak to a BMW expert now",
-      "href": "/quote"
-    }
+  "primaryCta": {
+    "label": "GET YOUR FREE GUIDANCE",
+    "subLabel": "Ask a BMW engine specialist",
+    "href": "/quote"
+  },
+  "secondaryCta": {
+    "label": "CALL A SPECIALIST",
+    "subLabel": "Speak to a BMW expert now",
+    "href": "/quote"
   },
   "review": {
     "brand": "Trustpilot",
-    "stars": 5,
-    "score": "4.8 out of 5 from 1200+ reviews"
+    "score": "4.8 out of 5 from 1200+ reviews",
+    "stars": 5
+  },
+  "image": {
+    "src": "/home-image/cta-light.webp",
+    "alt": "BMW M4 CS under the arch"
+  },
+  "imageDark": {
+    "src": "/home-image/cta-dark.webp",
+    "alt": "BMW X7 under the arch at night"
   }
 }

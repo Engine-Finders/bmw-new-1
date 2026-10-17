@@ -142,12 +142,13 @@ export default function ModelHero({ data }) {
   return (
     <section className="relative left-1/2 w-screen -translate-x-1/2 overflow-hidden bg-[var(--color-page)] text-[var(--color-text)] xl:min-h-[620px]">
       {scene ? (
-        // Below 1600px the scene starts a third of the way in (its faded left edge is cropped) so the
-        // copy stays on plain page colour; wider screens show it whole at its own aspect ratio.
-        <div className="absolute inset-y-0 left-[34%] right-0 hidden xl:block min-[1600px]:left-auto min-[1600px]:aspect-[1200/676]">
-          <Image src={scene.src} alt="" fill className="object-cover object-right" sizes="(min-width: 1280px) 1200px, 100vw" priority />
-          <div className="absolute inset-0 bg-[linear-gradient(90deg,var(--color-page)_0%,color-mix(in_srgb,var(--color-page)_88%,transparent)_16%,color-mix(in_srgb,var(--color-page)_45%,transparent)_34%,transparent_56%)]" />
-          <div className="absolute inset-x-0 bottom-0 h-40 bg-[linear-gradient(0deg,var(--color-page)_0%,transparent_100%)]" />
+        // The whole line-up scene, zoomed out to fit: anchored to the right edge and the floor so every
+        // generation stands on the ground, its sky fading into the page above and the copy on the left.
+        <div className="absolute inset-y-0 left-[30%] right-0 hidden xl:block min-[1600px]:left-auto min-[1600px]:aspect-[1200/676]">
+          <Image src={scene.src} alt="" fill className="object-contain object-right-bottom" sizes="(min-width: 1280px) 1200px, 100vw" priority />
+          <div className="absolute inset-0 bg-[linear-gradient(90deg,var(--color-page)_0%,color-mix(in_srgb,var(--color-page)_85%,transparent)_14%,color-mix(in_srgb,var(--color-page)_35%,transparent)_30%,transparent_48%)]" />
+          <div className="absolute inset-x-0 top-0 h-24 bg-[linear-gradient(180deg,var(--color-page)_0%,transparent_100%)]" />
+          <div className="absolute inset-x-0 bottom-0 h-8 bg-[linear-gradient(0deg,var(--color-page)_0%,transparent_100%)]" />
         </div>
       ) : (
       <div className="absolute inset-0 hidden xl:block">
@@ -237,8 +238,8 @@ export default function ModelHero({ data }) {
         </div>
 
         {/* Phones, tablets + small laptops: background and car as their own band, so they never sit behind the copy */}
-        <div className="relative -mx-4 mt-6 aspect-[16/10] max-h-[440px] w-[calc(100%+2rem)] overflow-hidden md:-mx-8 md:w-[calc(100%+4rem)] xl:hidden">
-          <Image src={backgroundSrc} alt="" fill className={`object-cover ${scene ? "object-[70%_center]" : "object-[72%_70%]"}`} sizes="100vw" priority />
+        <div className={`relative -mx-4 mt-6 max-h-[440px] w-[calc(100%+2rem)] overflow-hidden md:-mx-8 md:w-[calc(100%+4rem)] xl:hidden ${scene ? "aspect-[16/9]" : "aspect-[16/10]"}`}>
+          <Image src={backgroundSrc} alt="" fill className={`object-cover ${scene ? "object-bottom" : "object-[72%_70%]"}`} sizes="100vw" priority />
           <div className="absolute inset-x-0 top-0 h-14 bg-[linear-gradient(180deg,var(--color-page)_0%,transparent_100%)]" />
           <div className="absolute inset-x-0 bottom-0 h-14 bg-[linear-gradient(0deg,var(--color-page)_0%,transparent_100%)]" />
           {car ? (

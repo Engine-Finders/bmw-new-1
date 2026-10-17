@@ -1,25 +1,43 @@
 {
   "h2": "<span class=\"heading-accent\">BMW</span> Ownership Rankings",
   "subHeadline": "The verdicts people actually want before they read a single spec sheet - the calls we'd make for a friend, backed by real UK enquiry and failure data.",
-  "headerImage": {
-    "src": "/home-image/sec-header-light.webp",
-    "alt": "BMW kidney grille and headlights"
-  },
   "heroImages": {
     "light": {
-      "src": "/home-image/sec-header-light.webp",
-      "alt": "BMW kidney grille and headlights"
+      "src": "/home-image/rankings-light.webp",
+      "alt": "BMW X5 under the arch"
     },
     "dark": {
-      "src": "/home-image/sec-header-dark.webp",
-      "alt": "BMW kidney grille and headlights at night"
+      "src": "/home-image/rankings-dark.webp",
+      "alt": "BMW X5 under the arch at night"
     }
   },
+  "trustStrip": [
+    {
+      "icon": "chart",
+      "value": "24,650+",
+      "text": "Real UK Enquiries"
+    },
+    {
+      "icon": "wrench",
+      "value": "20+",
+      "text": "Vetted BMW Specialists"
+    },
+    {
+      "icon": "book",
+      "value": "OEM",
+      "text": "Part References Included"
+    },
+    {
+      "icon": "trophy",
+      "value": "Part of",
+      "text": "Engine Finders"
+    }
+  ],
   "columns": [
-    "Ranking",
-    "Winner",
-    "Why",
-    "Verdict"
+    "RANKING",
+    "WINNER",
+    "WHY",
+    "VERDICT"
   ],
   "rankings": [
     {
@@ -28,7 +46,7 @@
       "winner": "B58B30",
       "why": "Modern straight-six with well-understood, repairable failure points - coolant leaks aside, largely trouble-free. Just 540 enquiries in 2025, mostly due-diligence, not failure [BMW-VERIFIED].",
       "verdict": {
-        "icon": "🏆",
+        "icon": "trophy",
         "text": "Best",
         "type": "best"
       },
@@ -40,7 +58,7 @@
       "winner": "3 Series G20",
       "why": "B47/B48/B58 engines in the lightest chassis - 190 enquiries in 2025, predominantly pre-purchase research [BMW-VERIFIED].",
       "verdict": {
-        "icon": "🏆",
+        "icon": "trophy",
         "text": "Best",
         "type": "best"
       },
@@ -49,10 +67,11 @@
     {
       "ranking": "Best Used Buy",
       "icon": "tag",
-      "winner": "F30 LCI (2016+) with B47D20A",
+      "winner": "F30 LCI (2016+)",
+      "winnerNote": "with B47D20A",
       "why": "Post-chain-revision, modern electronics, depreciated early-mid values - the sweet spot for daily ownership. £2,800-£4,500 recon cost against £7,000-£20,000 vehicle value [BMW-QUOTE].",
       "verdict": {
-        "icon": "✅",
+        "icon": "check",
         "text": "Safe",
         "type": "safe"
       },
@@ -60,11 +79,12 @@
     },
     {
       "ranking": "Most Expensive Failure",
-      "icon": "flame",
-      "winner": "N63B44 Valve Stem Seals",
+      "icon": "warning",
+      "winner": "N63B44",
+      "winnerNote": "Valve Stem Seals",
       "why": "Hot-vee architecture causes seal failure at 60k-100k miles - known as the \"N63 nightmare.\" £3,000-£6,000 repair or £6,000-£10,000 replacement [BMW-QUOTE].",
       "verdict": {
-        "icon": "🔴",
+        "icon": "x",
         "text": "Avoid",
         "type": "avoid"
       },
@@ -73,10 +93,11 @@
     {
       "ranking": "Safest BMW to Buy Used",
       "icon": "shield",
-      "winner": "5 Series G30 (2017-2023)",
+      "winner": "5 Series G30",
+      "winnerNote": "(2017-2023)",
       "why": "Typical values of £14,000-£30,000 against £2,800-£8,000 recon cost - comfortably safe across all engine variants [BMW-QUOTE].",
       "verdict": {
-        "icon": "✅",
+        "icon": "check",
         "text": "Safe",
         "type": "safe"
       },
@@ -84,11 +105,12 @@
     },
     {
       "ranking": "Highest Risk Purchase",
-      "icon": "warning",
-      "winner": "E90 N47D20C (pre-2013, no chain history)",
+      "icon": "flame",
+      "winner": "E90 N47D20C",
+      "winnerNote": "(pre-2013, no chain history)",
       "why": "Ageing host values (£2,500-£7,500) against £3,200-£5,500 recon cost - the 70% BMW threshold risk [BMW-QUOTE].",
       "verdict": {
-        "icon": "⚠️",
+        "icon": "alert",
         "text": "Watch",
         "type": "watch"
       },
@@ -96,11 +118,12 @@
     },
     {
       "ranking": "Best Family BMW",
-      "icon": "best-family",
-      "winner": "X5 G05 (2018-present)",
+      "icon": "users",
+      "winner": "X5 G05",
+      "winnerNote": "(2018-present)",
       "why": "B57/B58 reliability, 650L boot, 7-seat option, and strong specialist network - values justify replacement across the board.",
       "verdict": {
-        "icon": "👨‍👩‍👧‍👦",
+        "icon": "users",
         "text": "Best",
         "type": "family"
       },
@@ -108,17 +131,25 @@
     },
     {
       "ranking": "Best Long-Term Keeper",
-      "icon": "long-term",
-      "winner": "E46 330i (M54)",
+      "icon": "crown",
+      "winner": "E46 330i",
+      "winnerNote": "(M54)",
       "why": "The bulletproof naturally-aspirated straight-six - maintenance is an investment, not an expense. One of the most dependable BMWs ever built.",
       "verdict": {
-        "icon": "🏆",
+        "icon": "trophy",
         "text": "Best",
         "type": "best"
       },
       "href": "/3-series/e46"
     }
   ],
+  "bottomCta": {
+    "icon": "shield",
+    "title": "Honest, Data-Backed, Unbiased.",
+    "text": "We tell you the truth - even when it means walking away. That's the Engine Finders promise.",
+    "buttonLabel": "START YOUR RESEARCH",
+    "href": "/quote"
+  },
   "dataSources": {
     "title": "Quick Reference: Data Sources Used in Sections 1-4",
     "columns": [

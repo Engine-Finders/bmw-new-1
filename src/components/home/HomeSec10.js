@@ -1,163 +1,87 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
 import MStripe from "@/components/reusableComponents/MStripe";
 import { useTheme } from "@/components/shared/themeProvider";
-import HomeIcon from "@/components/home/homeIcons";
-import { carImageFor } from "@/components/shared/carImage";
+import BrandIcon, { hasBrandIcon } from "@/components/home/brandIcon";
 
-const ICON_LG = "h-12 w-12 md:h-14 md:w-14";
-
-const riskDot = {
-  catastrophic: "bg-[#ed1c24]",
-  immediate: "bg-[#ff7900]",
-  monitor: "bg-[#f6b800]",
+const riskClass = {
+  catastrophic: "bg-[#ed1c24] text-white",
+  immediate: "bg-[#ff7900] text-white",
+  monitor: "bg-[#f6b800] text-white",
 };
 
-function cleanText(value = "") {
-  return String(value || "")
-    .replaceAll("Â£", "£")
-    .replaceAll("â€“", "–")
-    .replaceAll("â€”", "—")
-    .trim();
-}
+const iconPaths = {
+  users: (
+    <>
+      <path d="M16 19c0-2.2-1.8-4-4-4H7c-2.2 0-4 1.8-4 4" />
+      <path d="M9.5 11a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Z" />
+      <path d="M21 19c0-2-1.2-3.3-3.2-3.8" />
+      <path d="M16.5 4.4a3.2 3.2 0 0 1 0 6.2" />
+    </>
+  ),
+  engine: <path d="M3 13h2v-3h4V7H7V5h8v2h-2v3h3l2 2h3v7h-3l-2 2H7v-3H5v-3H3v-2Zm6-1v7h6.2l1.8-2h2v-3h-2l-1.8-2H9Z" />,
+  refresh: <path d="M20 6v5h-5M4 18v-5h5M18.2 9A7 7 0 0 0 6.7 6.7L4 9m2 6a7 7 0 0 0 11.3 2.3L20 15" />,
+  car: <path d="m5 13 1.4-4.2A3 3 0 0 1 9.2 7h5.6a3 3 0 0 1 2.8 1.8L19 13m-15 0h16v5H4v-5Zm2 5v2m12-2v2M7 13l-2-1m12 1 2-1M8 16h.01M16 16h.01" />,
+  pound: <path d="M16 6.5A4 4 0 0 0 8.8 9v8M6 12h8M6 17h11" />,
+  warning: <path d="M12 8v5m0 4h.01M10.2 4.8 2.7 18a2 2 0 0 0 1.7 3h15.2a2 2 0 0 0 1.7-3L13.8 4.8a2.1 2.1 0 0 0-3.6 0Z" />,
+  globe: (
+    <>
+      <circle cx="12" cy="12" r="9" />
+      <path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18" />
+    </>
+  ),
+  pulse: <path d="M3 12h4l2-6 4 12 2-6h6" />,
+  chevron: <path d="m6 9 6 6 6-6" />,
+};
 
-function stripTags(value = "") {
-  return cleanText(value).replace(/<[^>]*>/g, "").trim();
-}
-
-// Engine codes link to their engine page (styled like the rest of the table text).
-function linkHtml(value = "") {
-  return String(value).replace(/<a\b([^>]*)>/gi, '<a$1 class="underline-offset-2 hover:underline">');
-}
-
-function unlinkHtml(value = "") {
-  return cleanText(value).replace(
-    /<a\b[^>]*>([\s\S]*?)<\/a>/gi,
-    '<span class="font-semibold text-[var(--color-chrome-bright)]">$1</span>'
-  );
-}
-
-function ChevronIcon({ className = "h-5 w-5" }) {
+function Icon({ name, className = "h-5 w-5", strokeWidth = 2 }) {
+  // The client's icon artwork where it has one; arrows and chevrons stay as line icons.
+  if (hasBrandIcon(name)) return <BrandIcon name={name} className={className} />;
   return (
-    <svg aria-hidden="true" viewBox="0 0 24 24" className={className} fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-      <path d="m6 9 6 6 6-6" />
+    <svg aria-hidden="true" viewBox="0 0 24 24" className={className} fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth={strokeWidth}>
+      {iconPaths[name] || iconPaths.engine}
     </svg>
   );
 }
 
-function PinIcon({ className = "h-3.5 w-3.5" }) {
+function PanelTitle({ block, isDark }) {
   return (
-    <svg aria-hidden="true" viewBox="0 0 24 24" className={className} fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-      <path d="M12 21s7-5.2 7-11a7 7 0 1 0-14 0c0 5.8 7 11 7 11Z" />
-      <circle cx="12" cy="10" r="2.5" />
-    </svg>
-  );
-}
-
-function VerifiedPill({ tag, isDark }) {
-  if (!tag) return null;
-  return (
-    <span
-      className={`inline-flex items-center rounded-full px-2 py-0.5 text-[0.58rem] font-semibold uppercase tracking-[0.04em] ${
-        isDark ? "bg-white/10 text-white/70" : "bg-[#eef2f7] text-[#5a6b80]"
-      }`}
-    >
-      {tag}
-    </span>
-  );
-}
-
-function PanelFooter({ footer, isDark }) {
-  if (!footer?.label) return null;
-  return (
-    <div
-      className={`border-t px-3.5 py-2.5 md:px-4 md:py-2.5 ${
-        isDark
-          ? "border-[var(--color-border)] bg-white/[0.03]"
-          : "border-[#eef2f7] bg-[#f5f5f4]"
-      }`}
-    >
-      <Link
-        href={footer.href || "#"}
-        className={`flex w-full items-center justify-center gap-1.5 text-center text-[0.78rem] font-medium md:text-[0.8rem] ${
-          isDark ? "text-white/85" : "text-[#27384a]"
-        }`}
-      >
-        <span>{footer.label}</span>
-        <span aria-hidden="true">→</span>
-      </Link>
-    </div>
-  );
-}
-
-function PanelTitle({ block, isDark, trailing = null }) {
-  return (
-    <div className={`flex items-center gap-2.5 border-b px-3.5 py-2.5 md:gap-3 md:px-2 md:py-1 ${isDark ? "border-[var(--color-border)]" : "border-[#eef2f7]"}`}>
-      <span className="shrink-0">
-        <HomeIcon name={block.icon} isDark={isDark} className={ICON_LG} />
+    <div className={`flex items-center gap-4 border-b px-4 py-4 md:px-5 ${isDark ? "border-[#223343]" : "border-[#dfe5ed]"}`}>
+      <span className={`shrink-0 text-[var(--color-primary)] ${block.icon === "warning" ? "text-[#ff9d00]" : ""}`}>
+        <Icon name={block.icon} className="h-8 w-8" strokeWidth={2.1} />
       </span>
-      <div className="min-w-0 flex-1">
-        <h3 className={`text-[0.78rem] font-bold uppercase tracking-[0.04em] md:text-[0.84rem] ${isDark ? "text-white" : "text-[var(--color-text)]"}`}>
-          {block.title}
-        </h3>
-        {block.subtitle ? (
-          <p className={`mt-0.5 text-[0.7rem] ${isDark ? "text-white/60" : "text-[var(--color-text-muted)]"}`}>
-            {block.subtitle}
-          </p>
-        ) : null}
-      </div>
-      {trailing}
+      <h3 className={`text-[1rem] font-bold uppercase leading-tight ${isDark ? "text-white" : "text-[#071827]"}`}>
+        {block.title}
+        {block.subtitle ? <span className="block text-[0.78rem]">{block.subtitle}</span> : null}
+      </h3>
     </div>
   );
 }
 
-function DataPanel({ children, block, isDark, className = "", trailing = null }) {
+function DataPanel({ children, block, isDark, className = "" }) {
   return (
-    <section
-      className={`flex h-full flex-col overflow-hidden rounded-xl border ${
-        isDark
-          ? "border-[var(--color-border)] bg-[var(--color-surface-raised)]"
-          : "border-[#e4e9f0] bg-white shadow-[0_8px_24px_rgba(10,26,43,0.05)]"
-      } ${className}`}
-    >
-      <PanelTitle block={block} isDark={isDark} trailing={trailing} />
-      <div className="min-w-0 flex-1 overflow-x-auto">{children}</div>
-      <PanelFooter footer={block.footer} isDark={isDark} />
+    <section className={`overflow-hidden rounded-md border shadow-[0_10px_28px_rgba(10,26,43,0.05)] ${isDark ? "border-[#223343] bg-[rgba(10,21,32,0.92)]" : "border-[#dfe5ed] bg-white"} ${className}`}>
+      <PanelTitle block={block} isDark={isDark} />
+      {children}
     </section>
   );
 }
 
 function EnginesTable({ data, isDark }) {
   return (
-    <div className="min-w-[480px] md:min-w-0">
-      <div
-        className={`grid grid-cols-[44px_minmax(110px,1.1fr)_minmax(100px,1fr)_minmax(110px,1fr)] gap-2 border-b px-3.5 py-1.5 text-[0.6rem] font-bold uppercase tracking-[0.04em] md:px-4 ${
-          isDark ? "border-[var(--color-border)] text-white/55" : "border-[#eef2f7] text-[var(--color-text-muted)]"
-        }`}
-      >
+    <div>
+      <div className={`grid grid-cols-[58px_1fr_1fr_1.1fr] border-b px-4 py-2 text-[0.68rem] font-bold uppercase ${isDark ? "border-[#223343] text-white/88" : "border-[#dfe5ed] text-[#071827]"}`}>
         {data.columns.map((column) => (
           <span key={column}>{column}</span>
         ))}
       </div>
       {data.rows.map((row) => (
-        <div
-          key={stripTags(row.code) || row.rank}
-          className={`grid grid-cols-[44px_minmax(110px,1.1fr)_minmax(100px,1fr)_minmax(110px,1fr)] items-center gap-2 border-b px-3.5 py-2 text-[0.78rem] last:border-b-0 md:px-4 md:text-[0.82rem] ${
-            isDark ? "border-[var(--color-border)]" : "border-[#eef2f7]"
-          }`}
-        >
-          <span className={`text-center font-bold ${isDark ? "text-white" : "text-[var(--color-text)]"}`}>{row.rank}</span>
-          <span
-            className={`font-semibold leading-snug ${isDark ? "text-white" : "text-[var(--color-text)]"}`}
-            dangerouslySetInnerHTML={{ __html: linkHtml(row.code) }}
-          />
-          <span className={`leading-snug ${isDark ? "text-white/70" : "text-[var(--color-text-muted)]"}`}>{row.label}</span>
-          <span className="flex flex-wrap items-center gap-1.5">
-            <span className={`font-semibold ${isDark ? "text-white" : "text-[var(--color-text)]"}`}>{row.enquiries}</span>
-            <VerifiedPill tag={row.tag} isDark={isDark} />
-          </span>
+        <div key={row.code} className={`grid grid-cols-[58px_1fr_1fr_1.1fr] border-b px-4 py-2.5 text-[0.88rem] last:border-b-0 ${isDark ? "border-[#223343]" : "border-[#e7ebf0]"}`}>
+          <span className="text-center text-[1.15rem] font-bold leading-none text-[var(--color-primary)]">{row.rank}</span>
+          <span className={`font-semibold ${isDark ? "text-white" : "text-[#071827]"}`}>{row.code}</span>
+          <span className={`${isDark ? "text-white/76" : "text-[#172334]"}`}>{row.label}</span>
+          <span className="font-medium text-[var(--color-primary)]">{row.enquiries}</span>
         </div>
       ))}
     </div>
@@ -166,35 +90,17 @@ function EnginesTable({ data, isDark }) {
 
 function ModelsTable({ data, isDark }) {
   return (
-    <div className="min-w-[320px] md:min-w-0">
-      <div
-        className={`grid grid-cols-[44px_1fr_minmax(110px,0.9fr)] gap-2 border-b px-3.5 py-1.5 text-[0.6rem] font-bold uppercase tracking-[0.04em] md:px-4 ${
-          isDark ? "border-[var(--color-border)] text-white/55" : "border-[#eef2f7] text-[var(--color-text-muted)]"
-        }`}
-      >
+    <div>
+      <div className={`grid grid-cols-[58px_1fr_1.1fr] border-b px-4 py-2 text-[0.68rem] font-bold uppercase ${isDark ? "border-[#223343] text-white/88" : "border-[#dfe5ed] text-[#071827]"}`}>
         {data.columns.map((column) => (
           <span key={column}>{column}</span>
         ))}
       </div>
       {data.rows.map((row) => (
-        <div
-          key={row.model}
-          className={`grid grid-cols-[44px_1fr_minmax(110px,0.9fr)] items-center gap-2 border-b px-3.5 py-2 text-[0.78rem] last:border-b-0 md:px-4 md:text-[0.82rem] ${
-            isDark ? "border-[var(--color-border)]" : "border-[#eef2f7]"
-          }`}
-        >
-          <span className={`text-center font-bold ${isDark ? "text-white" : "text-[var(--color-text)]"}`}>{row.rank}</span>
-          {row.href ? (
-            <Link href={row.href} className={`hover:underline ${isDark ? "text-white" : "text-[var(--color-text)]"}`}>
-              {row.model}
-            </Link>
-          ) : (
-            <span className={isDark ? "text-white" : "text-[var(--color-text)]"}>{row.model}</span>
-          )}
-          <span className="flex flex-wrap items-center gap-1.5">
-            <span className={`font-semibold ${isDark ? "text-white" : "text-[var(--color-text)]"}`}>{row.enquiries}</span>
-            <VerifiedPill tag={row.tag} isDark={isDark} />
-          </span>
+        <div key={row.model} className={`grid grid-cols-[58px_1fr_1.1fr] border-b px-4 py-2.5 text-[0.9rem] last:border-b-0 ${isDark ? "border-[#223343]" : "border-[#e7ebf0]"}`}>
+          <span className="text-center text-[1.15rem] font-bold leading-none text-[var(--color-primary)]">{row.rank}</span>
+          <span className={isDark ? "text-white" : "text-[#071827]"}>{row.model}</span>
+          <span className="font-medium text-[var(--color-primary)]">{row.enquiries}</span>
         </div>
       ))}
     </div>
@@ -203,58 +109,16 @@ function ModelsTable({ data, isDark }) {
 
 function CostsTable({ data, isDark }) {
   return (
-    <div className="min-w-[280px] md:min-w-0">
-      <div
-        className={`grid grid-cols-[1fr_1fr] gap-2 border-b px-3.5 py-1.5 text-[0.6rem] font-bold uppercase tracking-[0.04em] md:px-4 ${
-          isDark ? "border-[var(--color-border)] text-white/55" : "border-[#eef2f7] text-[var(--color-text-muted)]"
-        }`}
-      >
+    <div>
+      <div className={`grid grid-cols-[0.75fr_1.45fr] border-b px-5 py-2 text-[0.68rem] font-bold uppercase ${isDark ? "border-[#223343] text-white/88" : "border-[#dfe5ed] text-[#071827]"}`}>
         {data.columns.map((column) => (
           <span key={column}>{column}</span>
         ))}
       </div>
       {data.rows.map((row) => (
-        <div
-          key={row.code}
-          className={`grid grid-cols-[1fr_1fr] items-center gap-2 border-b px-3.5 py-2 text-[0.78rem] last:border-b-0 md:px-4 md:text-[0.82rem] ${
-            isDark ? "border-[var(--color-border)]" : "border-[#eef2f7]"
-          }`}
-        >
-          <span className={`font-semibold ${isDark ? "text-white" : "text-[var(--color-text)]"}`}>{row.code}</span>
-          <span className={isDark ? "text-white/85" : "text-[var(--color-text)]"}>{cleanText(row.cost)}</span>
-        </div>
-      ))}
-    </div>
-  );
-}
-
-function RegionalTable({ data, isDark }) {
-  return (
-    <div className="min-w-[260px] md:min-w-0">
-      <div
-        className={`grid grid-cols-[1fr_minmax(120px,0.9fr)] gap-2 border-b px-3.5 py-1.5 text-[0.6rem] font-bold uppercase tracking-[0.04em] md:px-4 ${
-          isDark ? "border-[var(--color-border)] text-white/55" : "border-[#eef2f7] text-[var(--color-text-muted)]"
-        }`}
-      >
-        {data.columns.map((column) => (
-          <span key={column}>{column}</span>
-        ))}
-      </div>
-      {data.rows.map((row) => (
-        <div
-          key={row.region}
-          className={`grid grid-cols-[1fr_minmax(120px,0.9fr)] items-center gap-2 border-b px-3.5 py-2 text-[0.78rem] last:border-b-0 md:px-4 md:text-[0.82rem] ${
-            isDark ? "border-[var(--color-border)]" : "border-[#eef2f7]"
-          }`}
-        >
-          <span className={`font-semibold ${isDark ? "text-white" : "text-[var(--color-text)]"}`}>{row.region}</span>
-          <span className="flex items-center gap-2">
-            <span className={`h-1.5 flex-1 overflow-hidden rounded-full ${isDark ? "bg-white/10" : "bg-[#e4e9f0]"}`}>
-              <span className="block h-full rounded-full bg-[var(--color-primary)]" style={{ width: `${Math.min(100, parseFloat(row.percentage) * 3)}%` }} />
-            </span>
-            <span className={`font-semibold ${isDark ? "text-white" : "text-[var(--color-text)]"}`}>{row.percentage}</span>
-            <VerifiedPill tag={row.tag} isDark={isDark} />
-          </span>
+        <div key={row.code} className={`grid grid-cols-[0.75fr_1.45fr] border-b px-5 py-2.5 text-[0.9rem] last:border-b-0 ${isDark ? "border-[#223343]" : "border-[#e7ebf0]"}`}>
+          <span className={`font-bold ${isDark ? "text-white" : "text-[#071827]"}`}>{row.code}</span>
+          <span className={`font-medium ${isDark ? "text-white/84" : "text-[#071827]"}`}>{row.cost.replaceAll("Â£", "£")}</span>
         </div>
       ))}
     </div>
@@ -263,226 +127,131 @@ function RegionalTable({ data, isDark }) {
 
 function FailuresTable({ data, isDark }) {
   return (
-    <div className="min-w-[520px] md:min-w-0">
-      <div
-        className={`grid ${data.columns.length > 2 ? "grid-cols-[minmax(180px,1.3fr)_minmax(110px,0.7fr)_minmax(160px,1fr)]" : "grid-cols-[minmax(180px,1.5fr)_minmax(110px,0.6fr)]"} gap-2 border-b px-3.5 py-1.5 text-[0.6rem] font-bold uppercase tracking-[0.04em] md:px-4 ${
-          isDark ? "border-[var(--color-border)] text-white/55" : "border-[#eef2f7] text-[var(--color-text-muted)]"
-        }`}
-      >
-        {data.columns.map((column) => (
-          <span key={column}>{column}</span>
-        ))}
-      </div>
-      {data.rows.map((row) => {
-        const type = row.risk?.type || "monitor";
-        return (
-          <div
-            key={stripTags(row.failure)}
-            className={`grid ${data.columns.length > 2 ? "grid-cols-[minmax(180px,1.3fr)_minmax(110px,0.7fr)_minmax(160px,1fr)]" : "grid-cols-[minmax(180px,1.5fr)_minmax(110px,0.6fr)]"} items-center gap-2 border-b px-3.5 py-2 text-[0.78rem] last:border-b-0 md:px-4 md:text-[0.82rem] ${
-              isDark ? "border-[var(--color-border)]" : "border-[#eef2f7]"
-            }`}
-          >
-            <div className="flex min-w-0 items-start gap-2">
-              <span
-                className={`mt-0.5 flex h-11 w-11 shrink-0 items-center justify-center rounded-full md:h-12 md:w-12 ${
-                  isDark ? "bg-white/10" : "bg-[#eef2f7]"
-                }`}
-              >
-                <HomeIcon name={row.icon || "engine"} isDark={false} className="h-7 w-7 md:h-8 md:w-8" />
-              </span>
-              <span
-                className={`min-w-0 font-semibold leading-snug ${isDark ? "text-white" : "text-[var(--color-text)]"}`}
-                dangerouslySetInnerHTML={{ __html: unlinkHtml(row.failure) }}
-              />
-            </div>
-            <div className="flex items-center gap-1.5">
-              <span className={`h-2 w-2 shrink-0 rounded-full ${riskDot[type] || riskDot.monitor}`} />
-              <span className={`font-medium ${isDark ? "text-white/85" : "text-[var(--color-text)]"}`}>
-                {row.risk?.label}
-              </span>
-            </div>
-            {row.note ? (
-              <span className={`leading-snug ${isDark ? "text-white/65" : "text-[var(--color-text-muted)]"}`}>{row.note}</span>
-            ) : null}
-          </div>
-        );
-      })}
-    </div>
-  );
-}
-
-function FeedTable({ data, isDark }) {
-  return (
-    <div className="min-w-[520px] md:min-w-0">
-      <div
-        className={`grid grid-cols-[minmax(140px,1.2fr)_minmax(90px,0.8fr)_minmax(120px,1.1fr)_minmax(90px,0.7fr)] gap-2 border-b px-3.5 py-1.5 text-[0.6rem] font-bold uppercase tracking-[0.04em] md:px-4 ${
-          isDark ? "border-[var(--color-border)] text-white/55" : "border-[#eef2f7] text-[var(--color-text-muted)]"
-        }`}
-      >
+    <div>
+      <div className={`grid grid-cols-[52px_1fr_110px] border-b px-4 py-2 text-[0.68rem] font-bold uppercase md:grid-cols-[58px_1fr_120px] ${isDark ? "border-[#223343] text-white/88" : "border-[#dfe5ed] text-[#071827]"}`}>
         {data.columns.map((column) => (
           <span key={column}>{column}</span>
         ))}
       </div>
       {data.rows.map((row) => (
-        <div
-          key={`${row.vehicle}-${row.timestamp}`}
-          className={`grid grid-cols-[minmax(140px,1.2fr)_minmax(90px,0.8fr)_minmax(120px,1.1fr)_minmax(90px,0.7fr)] items-center gap-2 border-b px-3.5 py-2 text-[0.76rem] last:border-b-0 md:px-4 md:text-[0.8rem] ${
-            isDark ? "border-[var(--color-border)]" : "border-[#eef2f7]"
-          }`}
-        >
-          <span className={`flex min-w-0 items-center gap-2 font-semibold ${isDark ? "text-white" : "text-[var(--color-text)]"}`}>
-            <span className="relative h-8 w-11 shrink-0 overflow-hidden rounded-sm md:h-9 md:w-12">
-              {row.photo || carImageFor(row.vehicle) ? (
-                <Image
-                  src={row.photo || carImageFor(row.vehicle)}
-                  alt=""
-                  fill
-                  className="object-contain object-center"
-                  sizes="48px"
-                />
-              ) : null}
-            </span>
-            <span className="min-w-0 leading-snug">{row.vehicle}</span>
+        <div key={row.rank} className={`grid grid-cols-[52px_1fr_110px] items-center border-b px-4 py-3 text-[0.88rem] last:border-b-0 md:grid-cols-[58px_1fr_120px] md:py-2.5 ${isDark ? "border-[#223343]" : "border-[#e7ebf0]"}`}>
+          <span className="text-center text-[1.25rem] font-bold leading-none text-[var(--color-primary)]">{row.rank}</span>
+          <span className={`pr-3 leading-snug ${isDark ? "text-white/84" : "text-[#071827]"}`}>{row.failure}</span>
+          <span className={`justify-self-end rounded px-3 py-1 text-[0.78rem] font-bold ${riskClass[row.risk.type] || "bg-gray-100 text-gray-800"}`}>
+            {row.risk.label}
           </span>
-          <span className={`inline-flex items-center gap-1 ${isDark ? "text-white/75" : "text-[var(--color-text)]"}`}>
-            <PinIcon className={`h-3.5 w-3.5 shrink-0 ${isDark ? "text-white/55" : "text-[#617084]"}`} />
-            {row.location}
-          </span>
-          <span className={isDark ? "text-white/70" : "text-[var(--color-text-muted)]"}>{row.issue}</span>
-          <span className={isDark ? "text-white/55" : "text-[var(--color-text-muted)]"}>{row.timestamp}</span>
         </div>
       ))}
     </div>
   );
 }
 
-function LiveBadge({ text, isDark }) {
-  if (!text) return null;
+function RegionChart({ data, isDark }) {
   return (
-    <span className={`inline-flex shrink-0 items-center gap-1.5 text-[0.68rem] font-medium ${isDark ? "text-white/70" : "text-[var(--color-text-muted)]"}`}>
-      <span className="h-2 w-2 rounded-full bg-[#f6a21a]" />
-      {text}
-    </span>
+    <div className="grid gap-5 px-5 py-5 sm:grid-cols-[150px_1fr] sm:items-center md:grid-cols-[150px_1fr]">
+      <div className="mx-auto h-36 w-36 rounded-full bg-[conic-gradient(#075fd8_0_35%,#166be8_35%_56%,#3d8dff_56%_74%,#74aaff_74%_84%,#dbe9ff_84%_100%)] p-9">
+        <div className={`h-full w-full rounded-full ${isDark ? "bg-[#0a1520]" : "bg-white"}`} />
+      </div>
+      <ul className="grid gap-4">
+        {data.rows.map((row, index) => (
+          <li key={row.region} className="grid grid-cols-[16px_1fr_auto_auto] items-center gap-3 text-[0.9rem]">
+            <span className={`h-3.5 w-3.5 rounded-full ${index === 3 ? "bg-[#74aaff]" : "bg-[var(--color-primary)]"}`} />
+            <span className={isDark ? "text-white/84" : "text-[#071827]"}>{row.region}</span>
+            <strong className={isDark ? "text-white" : "text-[#071827]"}>{row.percentage}</strong>
+            <span className="text-[0.7rem] font-medium text-[var(--color-primary)]">{row.source}</span>
+          </li>
+        ))}
+      </ul>
+    </div>
   );
 }
 
-function MobileAccordion({ block, children, isDark, trailing = null }) {
+function FeedTable({ data, isDark }) {
   return (
-    <details
-      className={`group overflow-hidden rounded-xl border ${
-        isDark
-          ? "border-[var(--color-border)] bg-[var(--color-surface-raised)]"
-          : "border-[#e4e9f0] bg-white shadow-[0_8px_24px_rgba(10,26,43,0.05)]"
-      }`}
-    >
-      <summary className="flex cursor-pointer list-none items-center gap-2.5 px-3.5 py-2.5 marker:hidden md:px-4">
-        <span className="shrink-0">
-          <HomeIcon name={block.icon} isDark={isDark} className={ICON_LG} />
-        </span>
-        <div className="min-w-0 flex-1">
-          <h3 className={`text-[0.78rem] font-bold uppercase tracking-[0.04em] ${isDark ? "text-white" : "text-[var(--color-text)]"}`}>
-            {block.title}
-          </h3>
-          {block.subtitle ? (
-            <p className={`mt-0.5 text-[0.7rem] ${isDark ? "text-white/60" : "text-[var(--color-text-muted)]"}`}>
-              {block.subtitle}
-            </p>
-          ) : null}
-        </div>
-        {trailing}
-        <ChevronIcon className={`h-5 w-5 shrink-0 transition-transform group-open:rotate-180 ${isDark ? "text-white/60" : "text-[#617084]"}`} />
-      </summary>
-      <div className={`overflow-x-auto border-t ${isDark ? "border-[var(--color-border)]" : "border-[#eef2f7]"}`}>
-        {children}
+    <div>
+      <div className={`grid grid-cols-[1.2fr_0.95fr_1.2fr_0.9fr] border-b px-3 py-3 text-[0.58rem] font-bold uppercase sm:px-4 sm:text-[0.64rem] md:grid-cols-4 md:text-[0.68rem] ${isDark ? "border-[#223343] text-white/88" : "border-[#dfe5ed] text-[#071827]"}`}>
+        {data.columns.map((column) => (
+          <span key={column}>{column}</span>
+        ))}
       </div>
-      <PanelFooter footer={block.footer} isDark={isDark} />
+      {data.rows.map((row) => (
+        <div key={`${row.vehicle}-${row.timestamp}`} className={`grid grid-cols-[1.2fr_0.95fr_1.2fr_0.9fr] border-b px-3 py-3 text-[0.78rem] last:border-b-0 sm:px-4 sm:text-[0.84rem] md:grid-cols-4 md:text-[0.88rem] ${isDark ? "border-[#223343] text-white/76" : "border-[#e7ebf0]"}`}>
+          <span className={`pr-2 font-medium ${isDark ? "text-white" : "text-[#071827]"}`}>{row.vehicle}</span>
+          <span>{row.location}</span>
+          <span className="pr-2">{row.issue}</span>
+          <span>{row.timestamp}</span>
+        </div>
+      ))}
+    </div>
+  );
+}
+
+function MobileAccordion({ block, children, isDark }) {
+  return (
+    <details className={`group rounded-md border shadow-[0_10px_28px_rgba(10,26,43,0.06)] ${isDark ? "border-[#223343] bg-[rgba(10,21,32,0.92)]" : "border-[#dfe5ed] bg-white"}`}>
+      <summary className="flex cursor-pointer list-none items-center gap-4 px-5 py-4 marker:hidden">
+        <span className="shrink-0 text-[var(--color-primary)]">
+          <Icon name={block.icon} className="h-8 w-8" />
+        </span>
+        <h3 className={`min-w-0 flex-1 text-[1rem] font-bold uppercase leading-tight ${isDark ? "text-white" : "text-[#071827]"}`}>
+          {block.title}
+          {block.subtitle ? <span className="block text-[0.78rem]">{block.subtitle}</span> : null}
+        </h3>
+        <Icon name="chevron" className="h-5 w-5 shrink-0 transition-transform group-open:rotate-180" />
+      </summary>
+      <div className={`border-t overflow-x-auto ${isDark ? "border-[#223343]" : "border-[#dfe5ed]"}`}>{children}</div>
     </details>
   );
 }
 
-function DataNote({ note, isDark }) {
-  if (!note) return null;
+function StatsPanel({ stats, isDark }) {
   return (
-    <div
-      className={`mt-3 flex items-center gap-2.5 rounded-xl border px-3 py-2.5 md:mt-3.5 md:px-3.5 md:py-2.5 ${
-        isDark
-          ? "border-[var(--color-border)] bg-[var(--color-surface-raised)]"
-          : "border-[#e4e9f0] bg-[#f4f7fb]"
-      }`}
-    >
-      <span className="flex h-10 w-10 shrink-0 items-center justify-center md:h-11 md:w-11">
-        <HomeIcon name="info" isDark={isDark} className={ICON_LG} />
-      </span>
-      <p className={`min-w-0 flex-1 text-[0.72rem] leading-[1.35] md:text-[0.78rem] ${isDark ? "text-white/75" : "text-[var(--color-text-muted)]"}`}>
-        <strong className={isDark ? "text-white" : "text-[var(--color-text)]"}>{note.label}</strong>{" "}
-        <span dangerouslySetInnerHTML={{ __html: cleanText(note.text) }} />
-      </p>
-    </div>
+    <ul className={`grid rounded-md border px-7 shadow-[0_10px_28px_rgba(10,26,43,0.05)] ${isDark ? "border-[#223343] bg-[rgba(10,21,32,0.92)]" : "border-[#dfe5ed] bg-white"}`}>
+      {stats.map((stat) => (
+        <li key={stat.label} className={`flex items-center gap-5 border-b py-6 last:border-b-0 ${isDark ? "border-[#223343]" : "border-[#e7ebf0]"}`}>
+          <Icon name={stat.icon} className="h-9 w-9 text-[var(--color-primary)]" strokeWidth={2.2} />
+          <span>
+            <strong className={`block text-[1.9rem] leading-none ${isDark ? "text-white" : "text-[#071827]"}`}>{stat.value}</strong>
+            <span className={`mt-1 block text-[0.82rem] ${isDark ? "text-white/74" : "text-[#172334]"}`}>{stat.label}</span>
+          </span>
+        </li>
+      ))}
+    </ul>
   );
 }
 
 export default function HomeSec10({ data }) {
   const { theme } = useTheme();
   const isDark = theme === "dark";
-  const sectionBg = "bg-[var(--color-page)]";
-  const headerImage = (isDark && data.headerImageDark) || data.headerImage || {
-    src: "/home-image/sec-header-light.webp",
-    alt: "BMW market intelligence",
-  };
 
   return (
-    <section className={`overflow-x-hidden ${sectionBg}`}>
-      {/* Header — same pattern as other home sections */}
-      <div className={`relative overflow-hidden ${sectionBg}`}>
-        <div className="absolute inset-y-0 right-0 w-[62%] md:w-[48%]">
-          <Image
-            src={headerImage.src}
-            alt={headerImage.alt || ""}
-            fill
-            className="object-cover object-right"
-            sizes="(max-width: 768px) 62vw, 48vw"
-          />
-          <div
-            className={
-              isDark
-                ? "absolute inset-0 bg-[linear-gradient(90deg,var(--color-page)_0%,rgba(2,7,11,0.82)_34%,rgba(2,7,11,0.18)_100%)]"
-                : "absolute inset-0 bg-[linear-gradient(90deg,var(--color-page)_0%,rgba(255,255,255,0.88)_34%,rgba(255,255,255,0.18)_100%)]"
-            }
-          />
-        </div>
+    <section className={`relative overflow-hidden px-4 py-7 md:px-6 md:py-8 ${isDark ? "bg-[#02070b]" : "bg-white"}`}>
+      <div className="absolute inset-x-0 top-0 hidden h-[330px] md:block">
 
-        <div className="relative mx-auto w-full max-w-8xl px-4 pb-3 pt-5 md:px-6 md:pb-3.5 md:pt-7 lg:px-8">
-          <div className="max-w-[720px]">
-            <p
-              className={`text-[0.64rem] font-bold uppercase tracking-[0.14em] ${
-                isDark ? "text-white/55" : "text-[var(--color-text-muted)]"
-              }`}
-            >
-              Market Intelligence
-            </p>
-            <h2
-              className={`mt-1.5 whitespace-nowrap text-[1.65rem] font-semibold leading-[0.98] sm:text-[2rem] md:text-[2.55rem] md:leading-[0.96] lg:text-[2.75rem] ${
-                isDark ? "text-white" : "text-[var(--color-text)]"
-              }`}
-            
-              dangerouslySetInnerHTML={{ __html: data.h2 }}
-            />
-            <div className="mt-2.5">
-              <MStripe />
-            </div>
-            <p
-              className={`mt-2 max-w-[640px] text-[0.86rem] leading-[1.4] md:text-[0.98rem] ${
-                isDark ? "text-white/80" : "text-[var(--color-text-muted)]"
-              }`}
-              dangerouslySetInnerHTML={{ __html: cleanText(data.subHeadline) }}
-            />
-          </div>
+        {/* Banner on the right: the car (or engine) stays whole at header height */}
+        <div className="absolute inset-y-0 right-0 w-full md:right-[17%] md:w-[46%]">
+          <Image src={(isDark && data.headerImageDark ? data.headerImageDark : data.headerImage).src} alt={(isDark && data.headerImageDark ? data.headerImageDark : data.headerImage).alt} fill className="object-cover object-[78%_55%] md:object-[center_55%]" sizes="100vw" />
         </div>
+        <div className={isDark ? "absolute inset-0 bg-[linear-gradient(90deg,#02070b_0%,rgba(2,7,11,0.94)_30%,rgba(2,7,11,0.18)_52%,rgba(2,7,11,0.05)_72%,rgba(2,7,11,0.7)_100%)]" : "absolute inset-0 bg-[linear-gradient(90deg,white_0%,rgba(255,255,255,0.94)_30%,rgba(255,255,255,0.18)_52%,rgba(255,255,255,0.05)_72%,rgba(255,255,255,0.7)_100%)]"} />
+        <div className={isDark ? "absolute inset-x-0 bottom-0 h-10 bg-[linear-gradient(0deg,#02070b_0%,rgba(2,7,11,0)_100%)]" : "absolute inset-x-0 bottom-0 h-10 bg-[linear-gradient(0deg,white_0%,rgba(255,255,255,0)_100%)]"} />
       </div>
 
-      <div className="mx-auto w-full min-w-0 max-w-8xl px-4 pb-5 pt-2 md:px-6 md:pb-6 md:pt-2.5 lg:px-8">
-        {/* Desktop: 3 + 2 card grid */}
-        <div className="hidden gap-3 md:grid md:grid-cols-3">
+      <div className="relative mx-auto w-full max-w-8xl">
+        <div className="grid gap-6 md:grid-cols-[minmax(0,1fr)_280px] md:items-start">
+          <div className="max-w-[690px]">
+            <h2 className={`text-[2.55rem] font-bold leading-[1.08] tracking-normal md:text-[3rem] ${isDark ? "text-white" : "text-[#071827]"}`} dangerouslySetInnerHTML={{ __html: data.h2 }} />
+            <div className="mt-4">
+              <MStripe />
+            </div>
+            <p className={`mt-4 max-w-[620px] text-[0.92rem] leading-[1.55] ${isDark ? "text-white/78" : "text-[#172334]"}`} dangerouslySetInnerHTML={{ __html: data.subHeadline }} />
+          </div>
+
+          <div className="hidden md:block">
+            <StatsPanel stats={data.stats} isDark={isDark} />
+          </div>
+        </div>
+
+        <div className="mt-6 hidden grid-cols-3 gap-3 md:grid">
           <DataPanel block={data.engines} isDark={isDark}>
             <EnginesTable data={data.engines} isDark={isDark} />
           </DataPanel>
@@ -492,28 +261,18 @@ export default function HomeSec10({ data }) {
           <DataPanel block={data.replacementCosts} isDark={isDark}>
             <CostsTable data={data.replacementCosts} isDark={isDark} />
           </DataPanel>
-        </div>
-
-        <div className={`mt-3 hidden gap-3 md:grid ${data.regional ? "md:grid-cols-[1.25fr_0.75fr_1.25fr]" : "md:grid-cols-2"}`}>
           <DataPanel block={data.failures} isDark={isDark}>
             <FailuresTable data={data.failures} isDark={isDark} />
           </DataPanel>
-          {data.regional ? (
-            <DataPanel block={data.regional} isDark={isDark}>
-              <RegionalTable data={data.regional} isDark={isDark} />
-            </DataPanel>
-          ) : null}
-          <DataPanel
-            block={data.liveFeed}
-            isDark={isDark}
-            trailing={<LiveBadge text={data.liveFeed?.liveBadge} isDark={isDark} />}
-          >
+          <DataPanel block={data.regionalDemand} isDark={isDark}>
+            <RegionChart data={data.regionalDemand} isDark={isDark} />
+          </DataPanel>
+          <DataPanel block={data.liveFeed} isDark={isDark}>
             <FeedTable data={data.liveFeed} isDark={isDark} />
           </DataPanel>
         </div>
 
-        {/* Mobile: keep existing accordion pattern for top 3; panels for failures + live feed */}
-        <div className="grid gap-2.5 md:hidden">
+        <div className="mt-8 grid gap-3 md:hidden">
           <MobileAccordion block={data.engines} isDark={isDark}>
             <EnginesTable data={data.engines} isDark={isDark} />
           </MobileAccordion>
@@ -524,24 +283,28 @@ export default function HomeSec10({ data }) {
             <CostsTable data={data.replacementCosts} isDark={isDark} />
           </MobileAccordion>
 
-          <DataPanel block={data.failures} isDark={isDark} className="mt-0.5">
+          <DataPanel block={data.failures} isDark={isDark} className="mt-3 shadow-[0_10px_28px_rgba(10,26,43,0.06)]">
             <FailuresTable data={data.failures} isDark={isDark} />
           </DataPanel>
-          {data.regional ? (
-            <DataPanel block={data.regional} isDark={isDark}>
-              <RegionalTable data={data.regional} isDark={isDark} />
-            </DataPanel>
-          ) : null}
-          <DataPanel
-            block={data.liveFeed}
-            isDark={isDark}
-            trailing={<LiveBadge text={data.liveFeed?.liveBadge} isDark={isDark} />}
-          >
+          <DataPanel block={data.regionalDemand} isDark={isDark} className="shadow-[0_10px_28px_rgba(10,26,43,0.06)]">
+            <RegionChart data={data.regionalDemand} isDark={isDark} />
+          </DataPanel>
+          <DataPanel block={data.liveFeed} isDark={isDark} className="shadow-[0_10px_28px_rgba(10,26,43,0.06)]">
             <FeedTable data={data.liveFeed} isDark={isDark} />
           </DataPanel>
         </div>
 
-        <DataNote note={data.dataNote} isDark={isDark} />
+        <div className={`mt-5 flex items-center justify-center gap-2 border-t pt-3 text-center text-[0.82rem] md:mt-4 ${isDark ? "border-[#223343] text-white/74" : "border-[#dfe5ed] text-[#172334]"}`}>
+          <Icon name="refresh" className="h-4 w-4 text-[var(--color-primary)]" strokeWidth={2.2} />
+          <p>{data.liveFeed.footer}</p>
+        </div>
+
+        <div className="mt-7 hidden h-3 items-center md:flex">
+          <span className="h-full flex-[1.1] -skew-x-[28deg] bg-[var(--color-primary)]" />
+          <span className="h-full flex-[1.25] -skew-x-[28deg] bg-[#7aa4dd]" />
+          <span className="h-full flex-[1.8] -skew-x-[28deg] bg-[var(--color-accent-red)]" />
+          <span className="h-full flex-[1.5] -skew-x-[28deg] bg-[linear-gradient(90deg,#ed1c24_0%,rgba(237,28,36,0)_100%)]" />
+        </div>
       </div>
     </section>
   );

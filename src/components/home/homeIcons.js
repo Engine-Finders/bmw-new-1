@@ -176,6 +176,11 @@ const FILES = {
 // badges. The 16px floor keeps the smallest boxes legible.
 const GLYPH_SCALE = "h-[65%] w-[65%] min-h-4 min-w-4";
 
+/** The artwork file for an icon key, or undefined. */
+export function iconFileFor(name) {
+  return FILES[name];
+}
+
 /** True when `name` is a known icon key. */
 export function hasHomeIcon(name) {
   return Boolean(FILES[name]);

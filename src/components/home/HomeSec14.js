@@ -1,220 +1,125 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import MStripe from "@/components/reusableComponents/MStripe";
 import { useTheme } from "@/components/shared/themeProvider";
-import HomeIcon from "@/components/home/homeIcons";
+import BrandIcon, { hasBrandIcon } from "@/components/home/brandIcon";
 
-const ICON_LG = "h-11 w-11 md:h-12 md:w-12";
-const ICON_XL = "h-12 w-12 md:h-14 md:w-14";
+const iconPaths = {
+  check: <path d="m5 12 4 4L19 6" />,
+  chat: <path d="M5 18.5V20l3.2-1.6H17a4 4 0 0 0 4-4V8a4 4 0 0 0-4-4H7a4 4 0 0 0-4 4v6.4a4 4 0 0 0 2 3.5Z" />,
+  phone: <path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.2-1.2a2 2 0 0 1 2.1-.5c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.7 2Z" />,
+};
 
-function ArrowIcon({ className = "h-4 w-4" }) {
+function Icon({ name, className = "h-5 w-5" }) {
+  // The client's icon artwork where it has one; arrows and chevrons stay as line icons.
+  if (hasBrandIcon(name)) return <BrandIcon name={name} className={className} />;
   return (
     <svg aria-hidden="true" viewBox="0 0 24 24" className={className} fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-      <path d="M5 12h14m-6-6 6 6-6 6" />
+      {iconPaths[name] || iconPaths.check}
     </svg>
   );
 }
 
-function TrustpilotMark({ className = "h-5 w-5" }) {
+function StarBox({ faded = false }) {
   return (
-    <svg aria-hidden="true" viewBox="0 0 24 24" className={className} fill="currentColor">
-      <path d="m12 2.8 2.8 5.8 6.4.9-4.6 4.5 1.1 6.3-5.7-3-5.7 3 1.1-6.3-4.6-4.5 6.4-.9L12 2.8Z" />
-    </svg>
-  );
-}
-
-function StarBox({ isDark }) {
-  return (
-    <span
-      className={`flex h-8 w-8 items-center justify-center md:h-9 md:w-9 ${
-        isDark ? "bg-[var(--color-chrome)] text-[var(--color-page)]" : "bg-[var(--color-primary)] text-white"
-      }`}
-    >
-      <svg aria-hidden="true" viewBox="0 0 24 24" className="h-4 w-4 md:h-5 md:w-5" fill="currentColor">
+    <span className={`flex h-6 w-6 items-center justify-center text-white ${faded ? "bg-[#9ed9c0]" : "bg-[#00b67a]"}`}>
+      <svg aria-hidden="true" viewBox="0 0 24 24" className="h-4 w-4" fill="currentColor">
         <path d="m12 2.8 2.8 5.8 6.4.9-4.6 4.5 1.1 6.3-5.7-3-5.7 3 1.1-6.3-4.6-4.5 6.4-.9L12 2.8Z" />
       </svg>
     </span>
   );
 }
 
+function TrustIcon() {
+  return (
+    <svg aria-hidden="true" viewBox="0 0 24 24" className="h-5 w-5 text-[#00b67a]" fill="currentColor">
+      <path d="m12 2.8 2.8 5.8 6.4.9-4.6 4.5 1.1 6.3-5.7-3-5.7 3 1.1-6.3-4.6-4.5 6.4-.9L12 2.8Z" />
+    </svg>
+  );
+}
+
 export default function HomeSec14({ data }) {
   const { theme } = useTheme();
   const isDark = theme === "dark";
-  const headerImage = (isDark && data.headerImageDark) || data.headerImage || {
-    src: "/home-image/sec-header-light.webp",
-    alt: "BMW specialist guidance",
-  };
-  const stats = data.stats || [];
-  const guidance = data.guidance || {};
-  const review = data.review || null;
-  const cta = guidance.cta || {};
+  const [showDesktopImage, setShowDesktopImage] = useState(false);
+
+  useEffect(() => {
+    function syncViewport() {
+      setShowDesktopImage(window.innerWidth >= 768);
+    }
+
+    syncViewport();
+    window.addEventListener("resize", syncViewport);
+
+    return () => {
+      window.removeEventListener("resize", syncViewport);
+    };
+  }, []);
 
   return (
-    <section className={`overflow-x-hidden ${isDark ? "bg-[var(--color-page)]" : "bg-[#f8f8f7]"}`}>
-      {/* Header — same pattern as Sec2 */}
-      <div className="relative overflow-hidden bg-[var(--color-page)]">
-        <div className="absolute inset-y-0 right-0 w-[62%] md:w-[48%]">
-          <Image
-            src={headerImage.src}
-            alt={headerImage.alt || ""}
-            fill
-            className="object-cover object-right"
-            sizes="(max-width: 768px) 62vw, 48vw"
-          />
-          <div
-            className={
-              isDark
-                ? "absolute inset-0 bg-[linear-gradient(90deg,var(--color-page)_0%,rgba(2,7,11,0.82)_34%,rgba(2,7,11,0.18)_100%)]"
-                : "absolute inset-0 bg-[linear-gradient(90deg,var(--color-page)_0%,rgba(255,255,255,0.88)_34%,rgba(255,255,255,0.18)_100%)]"
-            }
-          />
-        </div>
+    <section className={`px-3 pb-7 pt-2 md:px-6 md:pb-8 ${isDark ? "bg-[#02070b]" : "bg-white"}`}>
+      <div className={`relative mx-auto w-full max-w-8xl overflow-hidden rounded-lg border ${isDark ? "border-[#223343] bg-[#07121d]" : "border-[#dfe5ed] bg-white"}`}>
+        {showDesktopImage ? (
+          <div className="absolute inset-y-0 right-0 hidden w-[42%] md:block">
+            <Image src={(isDark && data.imageDark ? data.imageDark : data.image).src} alt={(isDark && data.imageDark ? data.imageDark : data.image).alt} fill className="object-cover object-center" sizes="42vw" />
+            <div className={isDark ? "absolute inset-0 bg-[linear-gradient(90deg,#07121d_0%,rgba(7,18,29,0.68)_28%,rgba(7,18,29,0.1)_100%)]" : "absolute inset-0 bg-[linear-gradient(90deg,white_0%,rgba(255,255,255,0.64)_28%,rgba(255,255,255,0.04)_100%)]"} />
+          </div>
+        ) : null}
 
-        <div className="relative mx-auto w-full max-w-8xl px-4 py-6 md:px-6 md:py-8 lg:px-8">
-          <div className="max-w-[640px]">
-            <h2
-              className={`text-[2rem] font-semibold leading-[1.05] md:text-[2.85rem] md:leading-[1.02] ${
-                isDark ? "text-white" : "text-[var(--color-text)]"
-              }`}
-            
-              dangerouslySetInnerHTML={{ __html: data.h2 }}
-            />
+        <div className="relative px-5 py-5 md:grid md:grid-cols-[minmax(0,1fr)_34%] md:gap-5 md:px-10 md:py-6">
+          <div>
+            <h2 className={`text-[2rem] font-bold leading-tight tracking-normal md:text-[2.18rem] ${isDark ? "text-white" : "text-[#071827]"}`} dangerouslySetInnerHTML={{ __html: data.h2 }} />
             <div className="mt-3">
               <MStripe />
             </div>
-            <h3
-              className={`mt-3 text-[0.78rem] font-bold uppercase tracking-[0.12em] md:text-[0.84rem] ${
-                isDark ? "text-white/75" : "text-[var(--color-text-muted)]"
-              }`}
-            >
-              {data.subHeadline}
-            </h3>
+            <h3 className={`mt-2 text-[1rem] font-normal leading-snug md:text-[1.08rem] ${isDark ? "text-white/78" : "text-[#172334]"}`} dangerouslySetInnerHTML={{ __html: data.subHeadline }} />
 
-            {stats.length ? (
-              <ul className="mt-5 grid max-w-[600px] grid-cols-4 md:mt-6">
-                {stats.map((stat, index) => {
-                  const borderColor = isDark ? "border-white/15" : "border-[#d7dde6]";
+            <ul className="mt-5 grid gap-2 text-[0.88rem] md:grid-cols-4 md:gap-0">
+              {data.stats.map((stat) => (
+                <li key={stat} className={`flex items-center gap-2 md:border-r md:px-4 md:first:pl-0 md:last:border-r-0 ${isDark ? "text-white/78 md:border-[#375067]" : "text-[#172334] md:border-[#d7dde6]"}`}>
+                  <span className="flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[var(--color-primary)] text-white">
+                    <Icon name="check" className="h-3.5 w-3.5" />
+                  </span>
+                  <span className="leading-tight">{stat}</span>
+                </li>
+              ))}
+            </ul>
 
-                  return (
-                    <li
-                      key={stat.label}
-                      className={`flex flex-col items-center px-1.5 py-2 text-center md:px-3 ${
-                        index > 0 ? `border-l ${borderColor}` : ""
-                      }`}
-                    >
-                      <span
-                        className={`flex h-12 w-12 items-center justify-center rounded-full md:h-14 md:w-14 ${
-                          isDark ? "bg-white/10" : "bg-[#eef2f7]"
-                        }`}
-                      >
-                        <HomeIcon name={stat.icon} isDark={isDark} className="h-11 w-11 md:h-12 md:w-12" />
-                      </span>
-                      <span
-                        className={`mt-1.5 max-w-[120px] text-center text-[0.62rem] leading-[1.25] md:mt-2 md:text-[0.78rem] ${
-                          isDark ? "text-white/80" : "text-[var(--color-text)]"
-                        }`}
-                      >
-                        {stat.label}
-                      </span>
-                    </li>
-                  );
-                })}
-              </ul>
-            ) : null}
-          </div>
-        </div>
-      </div>
-
-      {/* Bottom cards */}
-      <div className="mx-auto w-full max-w-8xl px-4 py-4 md:px-6 md:py-5 lg:px-8">
-        <div className="grid gap-3 md:grid-cols-2 md:gap-4">
-          {/* Ask a specialist */}
-          <div
-            className={`flex flex-col items-center justify-center rounded-xl border px-5 py-6 text-center md:px-8 md:py-7 ${
-              isDark
-                ? "border-[var(--color-border)] bg-[var(--color-surface-raised)]"
-                : "border-[#e4e9f0] bg-white shadow-[0_8px_22px_rgba(10,26,43,0.04)]"
-            }`}
-          >
-            <h4
-              className={`text-[0.64rem] font-bold uppercase tracking-[0.14em] ${
-                isDark ? "text-white/55" : "text-[var(--color-text-muted)]"
-              }`}
-            >
-              {guidance.eyebrow}
-            </h4>
-            <p
-              className={`mt-2 font-heading text-[1.35rem] font-semibold leading-tight md:text-[1.55rem] ${
-                isDark ? "text-white" : "text-[var(--color-text)]"
-              }`}
-            >
-              {guidance.title}
-            </p>
-            <div className={`mx-auto mt-3 h-px w-12 ${isDark ? "bg-white/25" : "bg-[#cdd5e0]"}`} />
-
-            <Link
-              href={cta.href || "#"}
-              className={`mt-5 flex w-full max-w-[420px] items-center gap-3 rounded-lg px-4 py-3.5 md:mt-6 md:gap-4 md:px-5 md:py-4 ${
-                isDark ? "bg-[var(--color-chrome)] text-[var(--color-page)]" : "bg-[var(--color-primary)] text-white"
-              }`}
-            >
-              <span
-                className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-full md:h-11 md:w-11 ${
-                  isDark ? "bg-[var(--color-page)]" : "bg-white"
-                }`}
-              >
-                <svg aria-hidden="true" viewBox="0 0 24 24" className="h-5 w-5 text-[var(--color-primary)] md:h-6 md:w-6" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2Z" />
-                </svg>
-              </span>
-              <span className="min-w-0 flex-1 text-left">
-                <h5 className="block text-[0.82rem] font-bold uppercase tracking-[0.04em] md:text-[0.9rem]">
-                  {cta.label}
-                </h5>
-                <span className={`mt-0.5 block text-[0.72rem] md:text-[0.78rem] ${isDark ? "opacity-80" : "text-white/80"}`}>
-                  {cta.subLabel}
+            <div className="mt-6 grid gap-3 md:grid-cols-[272px_240px_minmax(0,1fr)] md:items-center">
+              <Link href={data.primaryCta.href} className="btn-cta flex min-h-16 items-center gap-4 rounded-lg bg-[var(--color-primary)] px-5 py-3 text-white">
+                <Icon name="chat" className="h-8 w-8 shrink-0" />
+                <span className="min-w-0">
+                  <h4 className="block text-[0.88rem] font-bold leading-tight">{data.primaryCta.label}</h4>
+                  <strong className="mt-1 block text-[0.78rem] font-semibold leading-tight text-white/90">{data.primaryCta.subLabel}</strong>
                 </span>
-              </span>
-              <ArrowIcon className="h-4 w-4 shrink-0 md:h-5 md:w-5" />
-            </Link>
+              </Link>
+
+              <Link href={data.secondaryCta.href} className={`flex min-h-16 items-center gap-4 rounded-lg border px-5 py-3 ${isDark ? "border-[#375067] bg-[#0a1520] text-white" : "border-[#d7dde6] bg-white text-[#071827]"}`}>
+                <Icon name="phone" className="h-7 w-7 shrink-0" />
+                <span className="min-w-0">
+                  <h5 className="block text-[0.88rem] font-bold leading-tight">{data.secondaryCta.label}</h5>
+                  <span className={`mt-1 block text-[0.78rem] leading-tight ${isDark ? "text-white/70" : "text-[#27384a]"}`}>{data.secondaryCta.subLabel}</span>
+                </span>
+              </Link>
+
+              <div className="min-w-0">
+                <div className={`flex items-center gap-1 text-[1.05rem] font-bold ${isDark ? "text-white" : "text-[#071827]"}`}>
+                  <TrustIcon />
+                  <span>{data.review.brand}</span>
+                </div>
+                <div className="mt-1 flex gap-0.5">
+                  {Array.from({ length: data.review.stars }).map((_, index) => (
+                    <StarBox key={index} faded={index === data.review.stars - 1} />
+                  ))}
+                </div>
+                <p className={`mt-1 text-[0.74rem] leading-tight ${isDark ? "text-white/70" : "text-[#27384a]"}`}>{data.review.score}</p>
+              </div>
+            </div>
           </div>
 
-          {/* Trustpilot */}
-          {review ? (
-            <div
-              className={`flex flex-col items-center justify-center rounded-xl border px-5 py-6 text-center md:px-8 md:py-7 ${
-                isDark
-                  ? "border-[var(--color-border)] bg-[var(--color-surface-raised)]"
-                  : "border-[#e4e9f0] bg-white shadow-[0_8px_22px_rgba(10,26,43,0.04)]"
-              }`}
-            >
-              <div className={`flex items-center gap-2 text-[1.25rem] font-bold md:gap-2.5 md:text-[1.45rem] ${isDark ? "text-white" : "text-[var(--color-text)]"}`}>
-                <TrustpilotMark className="h-7 w-7 md:h-8 md:w-8" />
-                <span>{review.brand}</span>
-              </div>
-
-              <div className="mt-3.5 flex gap-1 md:mt-4">
-                {Array.from({ length: review.stars || 5 }).map((_, index) => (
-                  <StarBox key={index} isDark={isDark} />
-                ))}
-              </div>
-
-              <p className={`mt-3 text-[0.9rem] md:text-[1rem] ${isDark ? "text-white/80" : "text-[var(--color-text)]"}`}>
-                {review.score}
-              </p>
-
-              {review.footer ? (
-                <>
-                  <div className={`my-3.5 h-px w-full max-w-[280px] ${isDark ? "bg-white/20" : "bg-[#dde4ed]"}`} />
-                  <p className={`max-w-[280px] text-[0.78rem] leading-[1.4] md:text-[0.84rem] ${isDark ? "text-white/70" : "text-[var(--color-text)]"}`}>
-                    {review.footer}
-                  </p>
-                </>
-              ) : null}
-            </div>
-          ) : null}
         </div>
       </div>
     </section>
