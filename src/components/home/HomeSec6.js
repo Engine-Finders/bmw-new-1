@@ -4,186 +4,266 @@ import Image from "next/image";
 import Link from "next/link";
 import MStripe from "@/components/reusableComponents/MStripe";
 import { useTheme } from "@/components/shared/themeProvider";
-import HomeIcon from "@/components/home/homeIcons";
-import { carImageFor } from "@/components/shared/carImage";
+import BrandIcon, { hasBrandIcon } from "@/components/home/brandIcon";
 
+const iconPaths = {
+  chart: <path d="M4 19V9m5 10V5m5 14v-7m5 7H3" />,
+  shield: <path d="M12 3 5 6v6c0 5 3.3 8.8 7 9 3.7-.2 7-4 7-9V6l-7-3Zm-2 9 1.5 1.5L15 10" />,
+  link: <path d="M10 13a5 5 0 0 0 7.1 0l1.4-1.4a5 5 0 0 0-7.1-7.1l-.8.8M14 11a5 5 0 0 0-7.1 0l-1.4 1.4a5 5 0 0 0 7.1 7.1l.8-.8" />,
+  wrench: <path d="m14.7 6.3 3-3a4 4 0 0 1 0 5.7l-1.4 1.4-2.7-2.7L7 14.3V17H4.3l6.6-6.6-2.7-2.7 1.4-1.4a4 4 0 0 1 5.1 0Z" />,
+  file: <path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9l-6-6Zm0 0v6h6M8 13h8M8 17h8M8 9h2" />,
+  arrow: <path d="M5 12h14m-6-6 6 6-6 6" />,
+  chevron: <path d="m9 6 6 6-6 6" />,
+  check: <path d="m5 12 4 4L19 6" />,
+  x: <path d="M8 8l8 8M16 8l-8 8" />,
+  warning: <path d="M12 8v5m0 4h.01M10 4.9 2.6 18a2 2 0 0 0 1.74 3h15.32A2 2 0 0 0 21.4 18L14 4.9a2 2 0 0 0-3.48 0Z" />,
+};
 
 const statusConfig = {
   scrap: {
-    circle: "bg-[#ed1c24] text-white",
+    label: "Scrap",
     icon: "x",
+    circle: "bg-[#ed1c24] text-white",
+    pill: "bg-[#ffe4e4] text-[#ed1c24]",
   },
   safe: {
-    circle: "bg-[#20a84a] text-white",
+    label: "Safe",
     icon: "check",
+    circle: "bg-[#20a84a] text-white",
+    pill: "bg-[#dff7e6] text-[#1c8b3d]",
   },
   watch: {
-    circle: "bg-[#f7a51b] text-white",
+    label: "Watch",
     icon: "warning",
+    circle: "bg-[#f7a51b] text-white",
+    pill: "bg-[#fff1d9] text-[#e18a00]",
+  },
+};
+
+const trustItems = [
+  {
+    icon: "chart",
+    title: "Real UK Market Values",
+    text: "Live third-party pricing data.",
+  },
+  {
+    icon: "file",
+    title: "BMW-Verified Enquiries",
+    text: "Based on 24,650+ real enquiries.",
+  },
+  {
+    icon: "wrench",
+    title: "20+ Vetted Specialists",
+    text: "Trusted by thousands of owners.",
+  },
+  {
+    icon: "shield",
+    title: "Honest Advice",
+    text: "We tell you the truth, not what you want to hear.",
+  },
+];
+
+const comparisonHeroImages = {
+  light: {
+    src: "/home-image/economics-light.webp",
+    alt: "BMW 5 Series under the arch",
+  },
+  dark: {
+    src: "/home-image/economics-dark.webp",
+    alt: "BMW 5 Series under the arch at night",
   },
 };
 
 function cleanText(value = "") {
   return value
     .replaceAll("Â£", "£")
-    .replaceAll("â€“", "–")
-    .replaceAll("â€”", "—")
+    .replaceAll("â€“", "-")
+    .replaceAll("â€”", "-")
     .replaceAll("â†’", "")
+    .replaceAll("â€º", "")
+    .replaceAll("âœ…", "")
+    .replaceAll("ðŸ”´", "")
+    .replaceAll("âš ï¸", "")
     .trim();
 }
 
-function stripTags(value = "") {
-  return cleanText(value).replace(/<[^>]*>/g, "").trim();
-}
-
-function unlinkHtml(value = "", { emphasize = true } = {}) {
-  return cleanText(value).replace(
-    /<a\b[^>]*>([\s\S]*?)<\/a>/gi,
-    emphasize
-      ? '<span class="font-semibold text-[var(--color-chrome-bright)]">$1</span>'
-      : '<span class="font-normal text-[var(--color-chrome-bright)]">$1</span>'
-  );
-}
-
-function StatusSvg({ name, className = "h-3.5 w-3.5" }) {
-  if (name === "check") {
-    return (
-      <svg aria-hidden="true" viewBox="0 0 24 24" className={className} fill="none" stroke="currentColor" strokeWidth="2.6" strokeLinecap="round" strokeLinejoin="round">
-        <path d="m5 12 4 4L19 6" />
-      </svg>
-    );
-  }
-  if (name === "x") {
-    return (
-      <svg aria-hidden="true" viewBox="0 0 24 24" className={className} fill="none" stroke="currentColor" strokeWidth="2.6" strokeLinecap="round" strokeLinejoin="round">
-        <path d="M8 8l8 8M16 8l-8 8" />
-      </svg>
-    );
-  }
+function Icon({ name, className = "h-5 w-5", strokeWidth = 2 }) {
+  // The client's icon artwork where it has one; arrows and chevrons stay as line icons.
+  if (hasBrandIcon(name)) return <BrandIcon name={name} className={className} />;
   return (
-    <svg aria-hidden="true" viewBox="0 0 24 24" className={className} fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round">
-      <path d="M12 9v4m0 4h.01M10.2 4.8 2.7 18a1.8 1.8 0 0 0 1.56 2.7h15.48A1.8 1.8 0 0 0 21.3 18L13.8 4.8a1.8 1.8 0 0 0-3.12 0Z" />
+    <svg aria-hidden="true" viewBox="0 0 24 24" className={className} fill="none" stroke="currentColor" strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round">
+      {iconPaths[name] || iconPaths.chart}
     </svg>
   );
 }
 
-function ValueCell({ value, isDark }) {
+function modelParts(model) {
+  const match = model.match(/^(.+?)\s+([A-Z]\d+|F10 M5|X5)\s+\((.+)\)$/);
+  if (!match) {
+    return { family: model, generation: "", engine: "" };
+  }
+
+  return {
+    family: match[1] === "F10 M5" ? "F10 M5" : match[1],
+    generation: match[2],
+    engine: match[3],
+  };
+}
+
+function ValueBlock({ value, className = "" }) {
   const cleaned = cleanText(value);
   const parts = cleaned.match(/^(.+?)\s+\[(.+)\]$/);
 
   return (
-    <p className={`text-[0.68rem] font-medium leading-[1.3] md:text-[0.84rem] md:leading-[1.35] ${isDark ? "text-white/90" : "text-[var(--color-text)]"}`}>
+    <p className={`text-[0.63rem] font-semibold leading-[1.35] md:text-[0.8rem] md:leading-[1.45] ${className}`}>
       <span className="block">{parts ? parts[1] : cleaned}</span>
-      {parts ? (
-        <span className={`mt-0.5 block text-[0.55rem] uppercase tracking-[0.04em] md:text-[0.62rem] ${isDark ? "text-white/55" : "text-[var(--color-text-muted)]"}`}>
-          [{parts[2]}]
-        </span>
-      ) : null}
+      {parts ? <span className="block text-[0.52rem] uppercase opacity-85 md:text-[0.68rem]">[{parts[2]}]</span> : null}
     </p>
   );
 }
 
-function VerdictCell({ verdict, isDark }) {
-  const status = statusConfig[verdict?.type] || statusConfig.watch;
+function VerdictMark({ type, showLabel = false }) {
+  const status = statusConfig[type] || statusConfig.watch;
 
   return (
-    <div className="flex items-start gap-1.5 md:gap-2">
-      <span className={`mt-0.5 flex h-4 w-4 shrink-0 items-center justify-center rounded-full md:h-5 md:w-5 ${status.circle}`}>
-        <StatusSvg name={status.icon} className="h-2.5 w-2.5 md:h-3 md:w-3" />
+    <span className="inline-flex items-center gap-2">
+      <span className={`flex h-6 w-6 shrink-0 items-center justify-center rounded-full ${status.circle}`}>
+        <Icon name={status.icon} className="h-3.5 w-3.5" strokeWidth={2.6} />
       </span>
-      <p
-        className={`min-w-0 text-[0.65rem] font-normal leading-[1.3] md:text-[0.78rem] md:leading-[1.35] ${isDark ? "text-white/80" : "text-[var(--color-text)]"}`}
-        dangerouslySetInnerHTML={{ __html: unlinkHtml(verdict?.text || "", { emphasize: false }) }}
-      />
-    </div>
+      {showLabel ? <span className={`rounded-md px-2 py-0.5 text-[0.72rem] font-bold ${status.pill}`}>{status.label}</span> : null}
+    </span>
   );
 }
 
 function MatrixRow({ row, isDark }) {
+  const parts = modelParts(row.model);
+  const verdictText = cleanText(row.verdict.text);
+
   return (
     <Link
-      href={row.href || "#"}
-      className={`grid grid-cols-[minmax(170px,1.15fr)_minmax(120px,1fr)_minmax(120px,1fr)_minmax(170px,1.2fr)] items-center gap-2 border-b px-3 py-2.5 last:border-b-0 md:gap-3 md:px-5 md:py-3 ${
-        isDark
-          ? "border-[var(--color-border)] hover:bg-white/[0.03]"
-          : "border-[#eef2f7] hover:bg-[#fafafa]"
+      href={row.href}
+      className={`grid grid-cols-[92px_92px_minmax(100px,1fr)_10px] items-center border-b px-1 py-4 last:border-b-0 md:grid-cols-[112px_minmax(140px,1fr)_minmax(165px,1fr)_minmax(165px,1fr)_minmax(175px,1.12fr)] md:px-5 md:py-2.5 ${
+        isDark ? "border-[#223a51] text-white hover:bg-[rgba(22,51,74,0.42)]" : "border-[#e3e8ef] text-[#071827] hover:bg-[#f8fbff]"
       }`}
     >
-      <div className="flex min-w-0 items-center gap-2 md:gap-3">
-        <div className="relative h-9 w-12 shrink-0 overflow-hidden rounded-sm md:h-11 md:w-16">
-          {row.photo || carImageFor(stripTags(row.model)) ? (
-            <Image
-              src={row.photo || carImageFor(stripTags(row.model))}
-              alt={row.image?.alt || stripTags(row.model)}
-              fill
-              className="object-contain object-center"
-              sizes="64px"
-            />
-          ) : null}
+      <div className="flex min-w-0 flex-col items-center gap-2 pr-2 text-center md:contents">
+        <div className="relative h-11 w-16 md:h-11 md:w-20">
+          <Image src={row.image.src} alt={row.image.alt} fill className="object-contain" sizes="100px" />
         </div>
-        <p
-          className={`min-w-0 text-[0.75rem] font-semibold leading-[1.25] md:text-[0.9rem] ${
-            isDark ? "text-white" : "text-[var(--color-text)]"
-          }`}
-          dangerouslySetInnerHTML={{ __html: unlinkHtml(row.model) }}
-        />
+
+        <div className="min-w-0 md:pr-3 md:text-left">
+          <p className="text-[0.82rem] font-bold leading-[1.16] md:text-[0.9rem]">{parts.family}</p>
+          {parts.generation ? <p className="text-[0.82rem] font-bold leading-[1.16] md:text-[0.86rem]">{parts.generation}</p> : null}
+          {parts.engine ? <p className={`mt-1 text-[0.62rem] leading-[1.15] md:text-[0.68rem] ${isDark ? "text-white/74" : "text-[#172b4a]"}`}>({parts.engine})</p> : null}
+        </div>
       </div>
 
-      <ValueCell value={row.vehicleValue} isDark={isDark} />
-      <ValueCell value={row.replacementCost} isDark={isDark} />
-      <VerdictCell verdict={row.verdict} isDark={isDark} />
+      <div className="grid gap-3 md:contents">
+        <ValueBlock value={row.vehicleValue} className={isDark ? "text-white/92" : "text-[#061638]"} />
+        <ValueBlock value={row.replacementCost} className={isDark ? "text-white/92" : "text-[#061638]"} />
+      </div>
+
+      <div className="min-w-0">
+        <div className="mb-2 md:mb-1">
+          <VerdictMark type={row.verdict.type} showLabel />
+        </div>
+        <p className={`text-[0.7rem] font-medium leading-[1.35] md:text-[0.68rem] ${isDark ? "text-white/80" : "text-[#071827]"}`} dangerouslySetInnerHTML={{ __html: verdictText }} />
+      </div>
+
+      <span className="justify-self-end text-[var(--color-primary)] md:hidden">
+        <Icon name="chevron" />
+      </span>
     </Link>
   );
 }
 
 function DecisionMatrix({ data, isDark }) {
-  const columns = data.matrix?.columns || [];
-  const rows = data.matrix?.rows || [];
+  return (
+    <div className={`overflow-hidden rounded-md border shadow-[0_16px_36px_rgba(10,26,43,0.08)] ${isDark ? "border-[#223a51] bg-[rgba(7,23,36,0.9)]" : "border-[#dfe5ed] bg-white"}`}>
+      <div className={`flex items-center gap-3 border-b px-4 py-4 md:px-5 md:py-4 ${isDark ? "border-[#223a51]" : "border-[#dfe5ed]"}`}>
+        <span className={`flex h-6 w-6 items-center justify-center rounded-md ${isDark ? "bg-[#0c2748] text-[#7fb0ff]" : "bg-[#eef5ff] text-[var(--color-primary)]"}`}>
+          <Icon name="chart" className="h-5 w-5" />
+        </span>
+        <h3 className="text-[1rem] font-bold uppercase text-[var(--color-primary)] md:text-[#071827]">The Decision Matrix</h3>
+      </div>
+
+      <div className={`hidden grid-cols-[112px_minmax(140px,1fr)_minmax(165px,1fr)_minmax(165px,1fr)_minmax(175px,1.12fr)] border-b px-5 py-3 text-[0.66rem] font-bold uppercase md:grid ${isDark ? "border-[#223a51] text-white/78" : "border-[#e3e8ef] text-[#071827]"}`}>
+        <span />
+        {data.matrix.columns.map((col) => (
+          <span key={col}>{col}</span>
+        ))}
+      </div>
+
+      <div className={`grid grid-cols-[92px_92px_minmax(100px,1fr)_10px] border-b px-1 py-3 text-center text-[0.62rem] font-bold uppercase leading-[1.18] md:hidden ${isDark ? "border-[#223a51] text-white/75" : "border-[#e3e8ef] text-[#061638]"}`}>
+        <span>{data.matrix.columns[0]}</span>
+        <span>
+          Typical Vehicle Value
+          <br />
+          Replacement Cost
+          <br />
+          <span className="opacity-75">[Recon]</span>
+        </span>
+        <span>Verdict</span>
+        <span />
+      </div>
+
+      <div>
+        {data.matrix.rows.map((row) => (
+          <MatrixRow key={row.model} row={row} isDark={isDark} />
+        ))}
+      </div>
+    </div>
+  );
+}
+
+function RuleCard({ data, isDark }) {
+  const [mainText, sourceText] = cleanText(data.ruleOfThumb.text).split("This is our BMW-specific threshold,");
 
   return (
-    <div className="w-full min-w-0 max-w-full">
-      <p
-        className={`mb-2.5 text-[0.68rem] font-bold uppercase tracking-[0.14em] ${
-          isDark ? "text-white/70" : "text-[var(--color-text-muted)]"
-        }`}
-      >
-        The Decision Matrix
-      </p>
+    <div className={`rounded-md border p-5 shadow-[0_16px_36px_rgba(10,26,43,0.08)] md:min-h-[260px] md:p-6 ${isDark ? "border-[#223a51] bg-[rgba(7,23,36,0.9)]" : "border-[#dfe5ed] bg-white"}`}>
+      <div className="md:hidden">
+        <div className="flex items-start gap-4">
+          <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[var(--color-primary)] text-white shadow-[0_10px_22px_rgba(7,95,216,0.28)]">
+            <Icon name="shield" className="h-7 w-7" />
+          </span>
+          <h3 className={`min-w-0 flex-1 pt-1 text-[0.98rem] font-bold uppercase ${isDark ? "text-white" : "text-[#071827]"}`}>{data.ruleOfThumb.title}</h3>
+        </div>
 
-      <div
-        className={`w-full min-w-0 max-w-full overflow-hidden rounded-xl border ${
-          isDark
-            ? "border-[var(--color-border)] bg-[var(--color-surface-raised)]"
-            : "border-[#e4e9f0] bg-white shadow-[0_8px_24px_rgba(10,26,43,0.06)]"
-        }`}
-      >
-        <div className="w-full max-w-full overflow-x-auto overscroll-x-contain [-webkit-overflow-scrolling:touch]">
-          <div className="w-[640px] md:w-full">
-            <div
-              className={`grid grid-cols-[minmax(170px,1.15fr)_minmax(120px,1fr)_minmax(120px,1fr)_minmax(170px,1.2fr)] gap-2 border-b px-3 py-2.5 md:gap-3 md:px-5 md:py-3 ${
-                isDark ? "border-[var(--color-border)] bg-white/[0.03]" : "border-[#eef2f7] bg-[#f7f7f6]"
-              }`}
-            >
-              {columns.map((col) => {
-                const isVerdict = String(col.label || "").toUpperCase() === "VERDICT";
-                return (
-                  <div
-                    key={col.label}
-                    className={`flex items-center gap-1.5 text-[0.58rem] uppercase tracking-[0.05em] md:text-[0.62rem] md:tracking-[0.06em] ${
-                      isVerdict ? "font-normal" : "font-bold"
-                    } ${isDark ? "text-white/65" : "text-[var(--color-text-muted)]"}`}
-                  >
-                    <HomeIcon name={col.icon} isDark={isDark} className="h-5 w-5 shrink-0 md:h-6 md:w-6" />
-                    <span className="leading-tight">{col.label}</span>
-                  </div>
-                );
-              })}
+        <div className="mt-5">
+          <div className="relative">
+            <span className={`absolute -left-1 -top-4 text-5xl font-bold leading-none ${isDark ? "text-white/14" : "text-[#b6c2d1]"}`}>&quot;</span>
+            <p className={`relative text-[0.88rem] font-medium leading-[1.5] ${isDark ? "text-white/84" : "text-[#071827]"}`}>
+              {mainText}
+            </p>
+            {sourceText ? <p className={`mt-4 text-[0.72rem] leading-[1.45] ${isDark ? "text-white/68" : "text-[#27384a]"}`}>This is our BMW-specific threshold,{sourceText}</p> : null}
+          </div>
+
+          <div className="relative mt-5 text-center">
+            <span className={`absolute inset-0 -z-0 mx-auto h-28 w-28 rounded-full ${isDark ? "bg-[#0c2748]" : "bg-[#eef5ff]"}`} />
+            <p className="relative text-[4.2rem] font-bold leading-none text-[var(--color-primary)]">{data.ruleOfThumb.percent}</p>
+            <p className="relative mt-1 text-[0.95rem] font-bold uppercase text-[var(--color-primary)]">{data.ruleOfThumb.percentLabel}</p>
+          </div>
+        </div>
+      </div>
+
+      <div className="hidden items-start gap-4 md:flex">
+        <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[var(--color-primary)] text-white shadow-[0_10px_22px_rgba(7,95,216,0.28)]">
+          <Icon name="shield" className="h-7 w-7" />
+        </span>
+        <div className="min-w-0 flex-1">
+          <h3 className={`text-[0.98rem] font-bold uppercase ${isDark ? "text-white" : "text-[#071827]"}`}>{data.ruleOfThumb.title}</h3>
+          <div className="mt-5 grid gap-5 md:grid-cols-[minmax(0,1fr)_120px] md:items-center">
+            <div className="relative">
+              <span className={`absolute -left-1 -top-4 text-5xl font-bold leading-none ${isDark ? "text-white/14" : "text-[#b6c2d1]"}`}>&quot;</span>
+              <p className={`relative text-[0.88rem] font-medium leading-[1.5] md:text-[0.9rem] ${isDark ? "text-white/84" : "text-[#071827]"}`}>
+                {mainText}
+              </p>
+              {sourceText ? <p className={`mt-4 text-[0.72rem] leading-[1.45] ${isDark ? "text-white/68" : "text-[#27384a]"}`}>This is our BMW-specific threshold,{sourceText}</p> : null}
             </div>
-
-            <div>
-              {rows.map((row) => (
-                <MatrixRow key={stripTags(row.model) || row.href} row={row} isDark={isDark} />
-              ))}
+            <div className="relative text-center">
+              <span className={`absolute inset-0 -z-0 mx-auto h-28 w-28 rounded-full ${isDark ? "bg-[#0c2748]" : "bg-[#eef5ff]"}`} />
+              <p className="relative text-[4.2rem] font-bold leading-none text-[var(--color-primary)] md:text-[3.75rem]">{data.ruleOfThumb.percent}</p>
+              <p className="relative mt-1 text-[0.95rem] font-bold uppercase text-[var(--color-primary)] md:hidden">{data.ruleOfThumb.percentLabel}</p>
             </div>
           </div>
         </div>
@@ -192,176 +272,64 @@ function DecisionMatrix({ data, isDark }) {
   );
 }
 
-function RuleCard({ data, isDark }) {
-  const rule = data.ruleOfThumb || {};
-
+function LinksCard({ links, isDark }) {
   return (
-    <div
-      className={`flex h-full min-h-full flex-col items-center rounded-xl border px-4 py-5 text-center md:px-4 md:py-6 ${
-        isDark
-          ? "border-[var(--color-border)] bg-[var(--color-surface-raised)]"
-          : "border-[#e4e9f0] bg-white shadow-[0_8px_24px_rgba(10,26,43,0.06)]"
-      }`}
-    >
-      <span
-        className={`flex h-14 w-14 items-center justify-center rounded-full md:h-16 md:w-16 ${
-          isDark ? "bg-white/10" : "bg-[#eef2f7] shadow-[0_2px_8px_rgba(0,0,0,0.06)]"
-        }`}
-      >
-        <HomeIcon name="calculator" isDark={isDark} className="h-9 w-9 md:h-10 md:w-10" />
-      </span>
-
-      <p
-        className={`mt-4 text-[0.72rem] font-bold uppercase tracking-[0.14em] ${
-          isDark ? "text-white" : "text-[var(--color-text)]"
-        }`}
-      >
-        {rule.title}
-      </p>
-
-      {/* Short line under title */}
-      <div className={`mt-3 h-[2px] w-10 ${isDark ? "bg-white/55" : "bg-[#1c2c40]"}`} />
-
-      <p
-        className={`mt-5 max-w-[240px] text-[0.88rem] leading-[1.45] ${
-          isDark ? "text-white/80" : "text-[var(--color-text)]"
-        }`}
-      >
-        {cleanText(rule.lead)}
-      </p>
-
-      <p
-        className={`mt-3 font-heading text-[2.1rem] font-semibold leading-none md:text-[2.35rem] ${
-          isDark ? "text-white" : "text-[var(--color-text)]"
-        }`}
-      >
-        {cleanText(rule.highlight)}
-      </p>
-
-      <p
-        className={`mt-4 max-w-[260px] text-[0.78rem] leading-[1.45] ${
-          isDark ? "text-white/70" : "text-[var(--color-text)]"
-        }`}
-      >
-        {cleanText(rule.body)}
-      </p>
-
-      {rule.note ? (
-        <p className={`mt-3 max-w-[260px] text-[0.72rem] leading-[1.45] ${isDark ? "text-white/60" : "text-[var(--color-text-muted)]"}`}>
-          {cleanText(rule.note)}
-        </p>
-      ) : null}
-
-      {/* Tapered bottom line — matches ref */}
-      <div
-        className="mt-auto w-full max-w-[220px] pt-6"
-        aria-hidden="true"
-      >
-        <div
-          className={`h-px w-full ${
-            isDark
-              ? "bg-[linear-gradient(90deg,transparent_0%,rgba(255,255,255,0.55)_50%,transparent_100%)]"
-              : "bg-[linear-gradient(90deg,transparent_0%,#5a6b80_50%,transparent_100%)]"
-          }`}
-        />
-        <div
-          className={`mx-auto -mt-px h-[2px] w-[55%] ${
-            isDark
-              ? "bg-[linear-gradient(90deg,transparent_0%,rgba(255,255,255,0.7)_50%,transparent_100%)]"
-              : "bg-[linear-gradient(90deg,transparent_0%,#27384a_50%,transparent_100%)]"
-          }`}
-        />
+    <div className={`overflow-hidden rounded-md border shadow-[0_16px_36px_rgba(10,26,43,0.08)] ${isDark ? "border-[#223a51] bg-[rgba(7,23,36,0.9)]" : "border-[#dfe5ed] bg-white"}`}>
+      <div className="flex items-center gap-4 px-5 py-4">
+        <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[var(--color-primary)] text-white">
+          <Icon name="link" className="h-5 w-5" />
+        </span>
+        <h3 className={`text-[0.95rem] font-bold uppercase ${isDark ? "text-white" : "text-[#071827]"}`}>Deeper Analysis Links</h3>
       </div>
-    </div>
-  );
-}
-
-function DeeperLinks({ links, isDark }) {
-  if (!links?.length) return null;
-
-  return (
-    <div className="mt-6 md:mt-7">
-      <div className="mb-2.5 flex items-center gap-2.5 md:mb-3 md:gap-3">
-        <p
-          className={`shrink-0 text-[0.68rem] font-bold uppercase tracking-[0.14em] ${
-            isDark ? "text-white/70" : "text-[var(--color-text-muted)]"
-          }`}
-        >
-          Deeper Analysis Links
-        </p>
-        <span className={`h-px flex-1 ${isDark ? "bg-white/18" : "bg-[#d7dde6]"}`} />
-      </div>
-
-      <div className="grid grid-cols-2 gap-2.5 lg:grid-cols-5 lg:gap-3">
-        {links.map((link) => {
-          const title = cleanText(link.label).replace(/\s*→\s*$/, "");
-
-          return (
-            <Link
-              key={link.id}
-              href={link.href || "#"}
-              className={`relative flex min-h-[158px] flex-col items-center rounded-xl border px-3 pb-4 pt-5 text-center transition last:col-span-2 last:mx-auto last:w-[calc(50%-0.3125rem)] md:px-3.5 md:pb-4 md:pt-5 lg:last:col-span-1 lg:last:mx-0 lg:last:w-auto ${
-                isDark
-                  ? "border-[var(--color-border)] bg-[var(--color-surface-raised)] hover:border-white/25"
-                  : "border-[#e4e9f0] bg-white shadow-[0_8px_22px_rgba(10,26,43,0.05)] hover:border-[var(--color-chrome)]"
-              }`}
-            >
-              <span
-                className={`pointer-events-none absolute left-3 top-2 font-heading text-[2.2rem] font-semibold leading-none ${
-                  isDark ? "text-white/10" : "text-[#e1e7ef]"
-                }`}
-              >
-                {String(link.id).padStart(2, "0")}
+      <ul>
+        {links.map((link) => (
+          <li key={link.id} className={`border-t ${isDark ? "border-[#223a51]" : "border-[#e3e8ef]"}`}>
+            <Link href={link.href} className={`flex items-center gap-4 px-5 py-3 text-[0.9rem] font-medium ${isDark ? "text-white hover:bg-[rgba(22,51,74,0.42)]" : "text-[#071827] hover:bg-[#f8fbff]"}`}>
+              <span className={`flex h-6 w-6 shrink-0 items-center justify-center rounded-full text-[0.78rem] font-bold ${isDark ? "bg-[#0c2748] text-[#7fb0ff]" : "bg-[#eaf2ff] text-[var(--color-primary)]"}`}>{link.id}</span>
+              <span className="min-w-0 flex-1">{cleanText(link.label)}</span>
+              <span className="text-[var(--color-primary)]">
+                <Icon name="arrow" />
               </span>
-
-              <span className="relative z-[1] mt-1">
-                <HomeIcon name={link.icon || "link"} isDark={isDark} className="h-11 w-11 md:h-12 md:w-12" />
-              </span>
-
-              <h3
-                className={`relative z-[1] mt-2.5 mx-auto max-w-[10rem] text-balance font-heading text-[0.82rem] font-medium leading-[1.3] md:max-w-[10.5rem] md:text-[0.86rem] ${
-                  isDark ? "text-white" : "text-[var(--color-text)]"
-                }`}
-              >
-                {title}
-                {"\u00A0→"}
-              </h3>
-
-              <div className={`my-2 h-px w-10 ${isDark ? "bg-white/20" : "bg-[#d7dde6]"}`} />
-
-              <p
-                className={`relative z-[1] text-[0.72rem] font-normal leading-[1.4] ${
-                  isDark ? "text-white/65" : "text-[var(--color-text-muted)]"
-                }`}
-              >
-                {cleanText(link.purpose)}
-              </p>
             </Link>
-          );
-        })}
-      </div>
+          </li>
+        ))}
+      </ul>
     </div>
   );
 }
 
-function DataNote({ note, isDark }) {
-  if (!note) return null;
-
+function TrustStrip({ isDark }) {
   return (
-    <div
-      className={`mt-4 flex items-start gap-3 rounded-xl border px-3.5 py-3 md:mt-5 md:items-center md:px-4 md:py-2.5 ${
-        isDark
-          ? "border-[var(--color-border)] bg-[var(--color-surface-raised)]"
-          : "border-[#e4e9f0] bg-white"
-      }`}
-    >
-      <span className="flex h-11 w-11 shrink-0 items-center justify-center md:h-12 md:w-12">
-        <HomeIcon name="info" isDark={isDark} className="h-10 w-10 md:h-11 md:w-11" />
+    <ul className={`hidden overflow-hidden rounded-md border shadow-[0_16px_36px_rgba(10,26,43,0.08)] md:grid md:grid-cols-4 ${isDark ? "border-[#223a51] bg-[rgba(7,23,36,0.9)]" : "border-[#dfe5ed] bg-white"}`}>
+      {trustItems.map((item) => (
+        <li key={item.title} className={`flex items-center gap-5 border-r px-8 py-4 last:border-r-0 ${isDark ? "border-[#223a51]" : "border-[#e3e8ef]"}`}>
+          <span className={`flex h-14 w-14 shrink-0 items-center justify-center rounded-full border ${isDark ? "border-[#29445e] bg-[#0c2748] text-[#7fb0ff]" : "border-[#dbe7f7] bg-white text-[var(--color-primary)]"}`}>
+            <Icon name={item.icon} className="h-8 w-8" />
+          </span>
+          <span>
+            <strong className={`block text-[0.95rem] ${isDark ? "text-white" : "text-[#071827]"}`}>{item.title}</strong>
+            <span className={`mt-1 block text-[0.76rem] leading-[1.35] ${isDark ? "text-white/72" : "text-[#27384a]"}`}>{item.text}</span>
+          </span>
+        </li>
+      ))}
+    </ul>
+  );
+}
+
+function MobileCta({ isDark }) {
+  return (
+    <div className={`flex items-center gap-5 rounded-md border p-5 shadow-[0_16px_36px_rgba(10,26,43,0.08)] md:hidden ${isDark ? "border-[#223a51] bg-[rgba(7,23,36,0.9)]" : "border-[#dfe5ed] bg-[#f2f7ff]"}`}>
+      <span className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-[var(--color-primary)] text-white shadow-[0_10px_22px_rgba(7,95,216,0.28)]">
+        <Icon name="shield" className="h-8 w-8" />
       </span>
-      <p className={`min-w-0 flex-1 text-[0.76rem] leading-[1.45] md:text-[0.82rem] ${isDark ? "text-white/75" : "text-[var(--color-text-muted)]"}`}>
-        <strong className={isDark ? "text-white" : "text-[var(--color-text)]"}>{note.label}</strong>{" "}
-        <span dangerouslySetInnerHTML={{ __html: cleanText(note.text) }} />
-      </p>
+      <div className="min-w-0 flex-1">
+        <p className={`text-[0.94rem] font-bold ${isDark ? "text-white" : "text-[#071827]"}`}>Honest. Data-Backed. Unbiased.</p>
+        <p className={`mt-1 text-[0.74rem] leading-[1.45] ${isDark ? "text-white/76" : "text-[#27384a]"}`}>We tell you the truth - even when it means walking away. That&apos;s the Engine Finders promise.</p>
+      </div>
+      <Link href="#" className="btn-cta hidden shrink-0 items-center gap-4 rounded-md bg-[var(--color-primary)] px-6 py-4 text-[0.9rem] font-bold text-white sm:flex">
+        Start Your Research
+        <Icon name="arrow" />
+      </Link>
     </div>
   );
 }
@@ -369,76 +337,47 @@ function DataNote({ note, isDark }) {
 export default function HomeSec6({ data }) {
   const { theme } = useTheme();
   const isDark = theme === "dark";
-  const sectionBg = "bg-[var(--color-page)]";
-  const headerImage = (isDark && data.headerImageDark) || data.headerImage || {
-    src: "/home-image/sec-header-light.webp",
-    alt: "BMW ownership economics",
-  };
+  const heroImage = isDark ? comparisonHeroImages.dark : comparisonHeroImages.light;
 
   return (
-    <section className={`overflow-x-hidden ${sectionBg}`}>
-      {/* Header — same pattern as other home sections */}
-      <div className={`relative overflow-hidden ${sectionBg}`}>
-        <div className="absolute inset-y-0 right-0 w-[62%] md:w-[48%]">
-          <Image
-            src={headerImage.src}
-            alt={headerImage.alt || ""}
-            fill
-            className="object-cover object-right"
-            sizes="(max-width: 768px) 62vw, 48vw"
-          />
-          <div
-            className={
-              isDark
-                ? "absolute inset-0 bg-[linear-gradient(90deg,var(--color-page)_0%,rgba(2,7,11,0.82)_34%,rgba(2,7,11,0.18)_100%)]"
-                : "absolute inset-0 bg-[linear-gradient(90deg,var(--color-page)_0%,rgba(255,255,255,0.88)_34%,rgba(255,255,255,0.18)_100%)]"
-            }
-          />
-        </div>
+    <section className={`relative overflow-hidden px-3 py-6 md:py-8 ${isDark ? "bg-[#02070b]" : "bg-white"}`}>
+      <div className="absolute inset-x-0 top-0 h-[335px] md:h-[330px]">
 
-        <div className="relative mx-auto w-full max-w-8xl px-4 pb-3 pt-5 md:px-6 md:pb-3.5 md:pt-7 lg:px-8">
-          <div className="max-w-[720px]">
-            <p
-              className={`text-[0.64rem] font-bold uppercase tracking-[0.14em] ${
-                isDark ? "text-white/55" : "text-[var(--color-text-muted)]"
-              }`}
-            >
-              Ownership Economics
-            </p>
-            <h2
-              className={`mt-1.5 whitespace-nowrap text-[1.65rem] font-semibold leading-[0.98] sm:text-[2rem] md:text-[2.55rem] md:leading-[0.96] lg:text-[2.75rem] ${
-                isDark ? "text-white" : "text-[var(--color-text)]"
-              }`}
-            
-              dangerouslySetInnerHTML={{ __html: data.h2 }}
-            />
-            <div className="mt-2.5">
-              <MStripe />
-            </div>
-            <p
-              className={`mt-2 max-w-[620px] text-[0.86rem] leading-[1.4] md:text-[0.98rem] ${
-                isDark ? "text-white/80" : "text-[var(--color-text-muted)]"
-              }`}
-              dangerouslySetInnerHTML={{ __html: cleanText(data.subHeadline) }}
-            />
-          </div>
+        {/* Banner on the right: the car (or engine) stays whole at header height */}
+        <div className="absolute inset-y-0 right-0 w-full md:w-[64%]">
+          <Image src={heroImage.src} alt={heroImage.alt} fill className="object-cover object-[78%_55%] md:object-[center_55%]" priority={false} sizes="100vw" />
         </div>
+        <div className={isDark ? "absolute inset-0 bg-[linear-gradient(90deg,rgba(2,7,11,0.98)_0%,rgba(2,7,11,0.82)_42%,rgba(2,7,11,0.24)_76%)]" : "absolute inset-0 bg-[linear-gradient(90deg,rgba(255,255,255,0.98)_0%,rgba(255,255,255,0.9)_44%,rgba(255,255,255,0.22)_76%)]"} />
+        <div className={isDark ? "absolute inset-x-0 bottom-0 h-10 bg-[linear-gradient(0deg,#02070b_0%,transparent_100%)]" : "absolute inset-x-0 bottom-0 h-10 bg-[linear-gradient(0deg,white_0%,transparent_100%)]"} />
       </div>
 
-      <div className="mx-auto w-full min-w-0 max-w-8xl px-4 pb-5 pt-2 md:px-6 md:pb-6 md:pt-2.5 lg:px-8">
-        {/* Matrix + Rule of Thumb */}
-        <div className="grid min-w-0 gap-4 md:grid-cols-[minmax(0,1fr)_minmax(220px,270px)] md:items-stretch md:gap-4 lg:grid-cols-[minmax(0,1fr)_minmax(230px,280px)]">
-          <DecisionMatrix data={data} isDark={isDark} />
-          <div className="flex min-h-0 flex-col">
-            <div className="mb-2.5 hidden h-[0.68rem] md:block" aria-hidden="true" />
-            <div className="flex min-h-0 flex-1 flex-col">
-              <RuleCard data={data} isDark={isDark} />
-            </div>
+      <div className="relative mx-auto w-full max-w-8xl">
+        <div className="max-w-[710px] pt-2 md:pt-7">
+          <h2 className={`text-[2.4rem] font-bold leading-[1.02] tracking-normal md:text-[3.6rem] ${isDark ? "text-white" : "text-[#071827]"}`} dangerouslySetInnerHTML={{ __html: data.h2 }} />
+          <div className="mt-4">
+            <MStripe />
+          </div>
+          <p className={`mt-4 max-w-[620px] text-[0.9rem] leading-[1.55] md:text-[1.02rem] ${isDark ? "text-white/80" : "text-[#27384a]"}`} dangerouslySetInnerHTML={{ __html: cleanText(data.subHeadline) }} />
+        </div>
+
+        <div className="mt-8 grid gap-4 md:grid-cols-[minmax(0,1fr)_450px] md:items-start">
+          <div className="overflow-x-auto pb-1 md:overflow-visible md:pb-0">
+            <DecisionMatrix data={data} isDark={isDark} />
+          </div>
+
+          <div className="grid gap-4">
+            <RuleCard data={data} isDark={isDark} />
+            <LinksCard links={data.deeperLinks} isDark={isDark} />
           </div>
         </div>
 
-        <DeeperLinks links={data.deeperLinks} isDark={isDark} />
-        <DataNote note={data.dataNote} isDark={isDark} />
+        <div className="mt-4">
+          <TrustStrip isDark={isDark} />
+        </div>
+
+        <div className="mt-5">
+          <MobileCta isDark={isDark} />
+        </div>
       </div>
     </section>
   );

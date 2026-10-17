@@ -1,5 +1,5 @@
 {
- "_note": "BMW photos from the shared 'bmw split' folder: background removed with rembg (u2net) and saved as PNG, then encoded once to WebP at the original pixel size (<= 49 KB). Paint colour was checked from the pixels; black, grey, silver, white and blue are used, and red, yellow, orange, green, gold and violet cars only where a generation exists in no other colour. Pools: model|generation -> view (45, side, front) -> [file, colour]. Heroes: the client's model-page line-up scenes (scene) and a crop of each for card slots (card). Generation heroes: one 45-degree cut-out per generation and the same car composed onto BMW's light and dark backgrounds (scene). Engines: the shared 'BMW Engines - No Background' cut-outs at 540px. The shared B47D20A/B photo is the same picture as the N47D20C one, so B47 slots use the B47D20D photo.",
+ "_note": "BMW photos from the shared 'bmw split' folder: background removed with rembg (u2net) and saved as PNG, then encoded once to WebP at the original pixel size (<= 49 KB). Paint colour was checked from the pixels; black, grey, silver, white and blue are used, and red, yellow, orange, green, gold and violet cars only where a generation exists in no other colour. Pools: model|generation -> view (45, side, front) -> [file, colour]. Heroes: the client's model-page line-up scenes (scene) and a crop of each for card slots (card). Generation heroes: one 45-degree cut-out per generation and the same car standing on the floor of BMW's light and dark backgrounds (scene, 1200x800). Engines: the shared 'BMW Engines - No Background' cut-outs at 540px. The shared B47D20A/B photo is the same picture as the N47D20C one, so B47 slots use the B47D20D photo.",
  "basePath": "/cars/",
  "defaultGeneration": {
   "1-series": "f70",
@@ -6271,10 +6271,10 @@
    "height": 352,
    "car": "bmw-1-series-e81-116i-118i-se-3-door-hatchback-2004-2007-new-sparkling-graphite-e81-se-45.webp",
    "scene": {
-    "src": "/generation/scene/1-series-e81-light.webp",
-    "darkSrc": "/generation/scene/1-series-e81-dark.webp",
+    "src": "/generation/stage/1-series-e81-light.webp",
+    "darkSrc": "/generation/stage/1-series-e81-dark.webp",
     "width": 1200,
-    "height": 676
+    "height": 800
    }
   },
   "1-series|e82": {
@@ -6283,10 +6283,10 @@
    "height": 352,
    "car": "bmw-1-series-e82-120d-coupe-coupe-2007-2013-new-montego-blue-e82-120d-45.webp",
    "scene": {
-    "src": "/generation/scene/1-series-e82-light.webp",
-    "darkSrc": "/generation/scene/1-series-e82-dark.webp",
+    "src": "/generation/stage/1-series-e82-light.webp",
+    "darkSrc": "/generation/stage/1-series-e82-dark.webp",
     "width": 1200,
-    "height": 676
+    "height": 800
    }
   },
   "1-series|e87": {
@@ -6295,10 +6295,10 @@
    "height": 348,
    "car": "bmw-1-series-e87-116i-118i-se-5-door-hatchback-2004-2007-new-titanium-silver-e87-se-45.webp",
    "scene": {
-    "src": "/generation/scene/1-series-e87-light.webp",
-    "darkSrc": "/generation/scene/1-series-e87-dark.webp",
+    "src": "/generation/stage/1-series-e87-light.webp",
+    "darkSrc": "/generation/stage/1-series-e87-dark.webp",
     "width": 1200,
-    "height": 676
+    "height": 800
    }
   },
   "1-series|e88": {
@@ -6307,10 +6307,10 @@
    "height": 311,
    "car": "bmw-1-series-e88-125i-convertible-convertible-2008-2013-new-deep-sea-blue-e88-125i-45.webp",
    "scene": {
-    "src": "/generation/scene/1-series-e88-light.webp",
-    "darkSrc": "/generation/scene/1-series-e88-dark.webp",
+    "src": "/generation/stage/1-series-e88-light.webp",
+    "darkSrc": "/generation/stage/1-series-e88-dark.webp",
     "width": 1200,
-    "height": 676
+    "height": 800
    }
   },
   "1-series|f20": {
@@ -6319,10 +6319,10 @@
    "height": 328,
    "car": "bmw-1-series-f20-125d-m-sport-5-door-hatchback-2012-2015-new-mineral-grey-f20-125d-45.webp",
    "scene": {
-    "src": "/generation/scene/1-series-f20-light.webp",
-    "darkSrc": "/generation/scene/1-series-f20-dark.webp",
+    "src": "/generation/stage/1-series-f20-light.webp",
+    "darkSrc": "/generation/stage/1-series-f20-dark.webp",
     "width": 1200,
-    "height": 676
+    "height": 800
    }
   },
   "1-series|f20 lci": {
@@ -6331,10 +6331,10 @@
    "height": 344,
    "car": "bmw-1-series-f20-lci-m140i-shadow-edition-5-door-hatchback-2017-2019-special-black-sapphire-m140i-shadow-45.webp",
    "scene": {
-    "src": "/generation/scene/1-series-f20-lci-light.webp",
-    "darkSrc": "/generation/scene/1-series-f20-lci-dark.webp",
+    "src": "/generation/stage/1-series-f20-lci-light.webp",
+    "darkSrc": "/generation/stage/1-series-f20-lci-dark.webp",
     "width": 1200,
-    "height": 676
+    "height": 800
    }
   },
   "1-series|f21": {
@@ -6343,10 +6343,10 @@
    "height": 333,
    "car": "bmw-1-series-f21-125d-m-sport-3-door-hatchback-2012-2015-new-estoril-blue-f21-125d-45.webp",
    "scene": {
-    "src": "/generation/scene/1-series-f21-light.webp",
-    "darkSrc": "/generation/scene/1-series-f21-dark.webp",
+    "src": "/generation/stage/1-series-f21-light.webp",
+    "darkSrc": "/generation/stage/1-series-f21-dark.webp",
     "width": 1200,
-    "height": 676
+    "height": 800
    }
   },
   "1-series|f40": {
@@ -6355,10 +6355,10 @@
    "height": 336,
    "car": "bmw-1-series-f40-118i-sport-hatchback-2019-2024-new-mineral-grey-f40-sport-45.webp",
    "scene": {
-    "src": "/generation/scene/1-series-f40-light.webp",
-    "darkSrc": "/generation/scene/1-series-f40-dark.webp",
+    "src": "/generation/stage/1-series-f40-light.webp",
+    "darkSrc": "/generation/stage/1-series-f40-dark.webp",
     "width": 1200,
-    "height": 676
+    "height": 800
    }
   },
   "1-series|f70": {
@@ -6367,10 +6367,10 @@
    "height": 341,
    "car": "bmw-1-series-f70-120-sport-hatchback-2024-new-skyscraper-grey-f70-120-45.webp",
    "scene": {
-    "src": "/generation/scene/1-series-f70-light.webp",
-    "darkSrc": "/generation/scene/1-series-f70-dark.webp",
+    "src": "/generation/stage/1-series-f70-light.webp",
+    "darkSrc": "/generation/stage/1-series-f70-dark.webp",
     "width": 1200,
-    "height": 676
+    "height": 800
    }
   },
   "2-series|f22": {
@@ -6379,10 +6379,10 @@
    "height": 330,
    "car": "bmw-2-series-f22-218d-coupe-coupe-2014-2017-new-mineral-grey-f22-218d-45.webp",
    "scene": {
-    "src": "/generation/scene/2-series-f22-light.webp",
-    "darkSrc": "/generation/scene/2-series-f22-dark.webp",
+    "src": "/generation/stage/2-series-f22-light.webp",
+    "darkSrc": "/generation/stage/2-series-f22-dark.webp",
     "width": 1200,
-    "height": 676
+    "height": 800
    }
   },
   "2-series|f23": {
@@ -6391,10 +6391,10 @@
    "height": 309,
    "car": "bmw-2-series-f23-220d-convertible-convertible-2014-2017-new-mineral-grey-f23-220d-45.webp",
    "scene": {
-    "src": "/generation/scene/2-series-f23-light.webp",
-    "darkSrc": "/generation/scene/2-series-f23-dark.webp",
+    "src": "/generation/stage/2-series-f23-light.webp",
+    "darkSrc": "/generation/stage/2-series-f23-dark.webp",
     "width": 1200,
-    "height": 676
+    "height": 800
    }
   },
   "2-series|f44": {
@@ -6403,10 +6403,10 @@
    "height": 317,
    "car": "bmw-2-series-f44-218i-gran-coupe-4-door-coupe-2019-2024-new-mineral-white-f44-218i-45.webp",
    "scene": {
-    "src": "/generation/scene/2-series-f44-light.webp",
-    "darkSrc": "/generation/scene/2-series-f44-dark.webp",
+    "src": "/generation/stage/2-series-f44-light.webp",
+    "darkSrc": "/generation/stage/2-series-f44-dark.webp",
     "width": 1200,
-    "height": 676
+    "height": 800
    }
   },
   "2-series|f45": {
@@ -6415,10 +6415,10 @@
    "height": 329,
    "car": "bmw-2-series-f45-218i-active-tourer-mpv-2014-2018-new-alpine-white-f45-218i-45.webp",
    "scene": {
-    "src": "/generation/scene/2-series-f45-light.webp",
-    "darkSrc": "/generation/scene/2-series-f45-dark.webp",
+    "src": "/generation/stage/2-series-f45-light.webp",
+    "darkSrc": "/generation/stage/2-series-f45-dark.webp",
     "width": 1200,
-    "height": 676
+    "height": 800
    }
   },
   "2-series|f46": {
@@ -6427,10 +6427,10 @@
    "height": 328,
    "car": "bmw-2-series-f46-218d-gran-tourer-mpv-2015-2018-new-mineral-grey-f46-218d-45.webp",
    "scene": {
-    "src": "/generation/scene/2-series-f46-light.webp",
-    "darkSrc": "/generation/scene/2-series-f46-dark.webp",
+    "src": "/generation/stage/2-series-f46-light.webp",
+    "darkSrc": "/generation/stage/2-series-f46-dark.webp",
     "width": 1200,
-    "height": 676
+    "height": 800
    }
   },
   "2-series|g42": {
@@ -6439,10 +6439,10 @@
    "height": 323,
    "car": "bmw-2-series-g42-220d-m-sport-coupe-2021-new-brooklyn-grey-g42-220d-45.webp",
    "scene": {
-    "src": "/generation/scene/2-series-g42-light.webp",
-    "darkSrc": "/generation/scene/2-series-g42-dark.webp",
+    "src": "/generation/stage/2-series-g42-light.webp",
+    "darkSrc": "/generation/stage/2-series-g42-dark.webp",
     "width": 1200,
-    "height": 676
+    "height": 800
    }
   },
   "3-series|e21": {
@@ -6451,10 +6451,10 @@
    "height": 302,
    "car": "bmw-3-series-e21-320i-coupe-1975-1983-new-polaris-silver-e21-320i-45.webp",
    "scene": {
-    "src": "/generation/scene/3-series-e21-light.webp",
-    "darkSrc": "/generation/scene/3-series-e21-dark.webp",
+    "src": "/generation/stage/3-series-e21-light.webp",
+    "darkSrc": "/generation/stage/3-series-e21-dark.webp",
     "width": 1200,
-    "height": 676
+    "height": 800
    }
   },
   "3-series|e30": {
@@ -6463,10 +6463,10 @@
    "height": 310,
    "car": "bmw-3-series-e30-325i-touring-estate-1987-1994-new-diamond-black-e30-touring-45.webp",
    "scene": {
-    "src": "/generation/scene/3-series-e30-light.webp",
-    "darkSrc": "/generation/scene/3-series-e30-dark.webp",
+    "src": "/generation/stage/3-series-e30-light.webp",
+    "darkSrc": "/generation/stage/3-series-e30-dark.webp",
     "width": 1200,
-    "height": 676
+    "height": 800
    }
   },
   "3-series|e36": {
@@ -6475,10 +6475,10 @@
    "height": 316,
    "car": "bmw-3-series-e36-325i-sport-saloon-1991-1995-new-montreal-blue-e36-325i-45.webp",
    "scene": {
-    "src": "/generation/scene/3-series-e36-light.webp",
-    "darkSrc": "/generation/scene/3-series-e36-dark.webp",
+    "src": "/generation/stage/3-series-e36-light.webp",
+    "darkSrc": "/generation/stage/3-series-e36-dark.webp",
     "width": 1200,
-    "height": 676
+    "height": 800
    }
   },
   "3-series|e46": {
@@ -6487,10 +6487,10 @@
    "height": 323,
    "car": "bmw-3-series-e46-330xd-touring-estate-2000-2005-new-titanium-silver-e46-touring-45.webp",
    "scene": {
-    "src": "/generation/scene/3-series-e46-light.webp",
-    "darkSrc": "/generation/scene/3-series-e46-dark.webp",
+    "src": "/generation/stage/3-series-e46-light.webp",
+    "darkSrc": "/generation/stage/3-series-e46-dark.webp",
     "width": 1200,
-    "height": 676
+    "height": 800
    }
   },
   "3-series|e90": {
@@ -6499,10 +6499,10 @@
    "height": 348,
    "car": "bmw-3-series-e90-320d-se-saloon-2005-2008-new-sparkling-graphite-e90-320d-45.webp",
    "scene": {
-    "src": "/generation/scene/3-series-e90-light.webp",
-    "darkSrc": "/generation/scene/3-series-e90-dark.webp",
+    "src": "/generation/stage/3-series-e90-light.webp",
+    "darkSrc": "/generation/stage/3-series-e90-dark.webp",
     "width": 1200,
-    "height": 676
+    "height": 800
    }
   },
   "3-series|e91": {
@@ -6511,10 +6511,10 @@
    "height": 317,
    "car": "bmw-3-series-e91-330d-m-sport-estate-2006-2012-new-space-grey-e91-330d-45.webp",
    "scene": {
-    "src": "/generation/scene/3-series-e91-light.webp",
-    "darkSrc": "/generation/scene/3-series-e91-dark.webp",
+    "src": "/generation/stage/3-series-e91-light.webp",
+    "darkSrc": "/generation/stage/3-series-e91-dark.webp",
     "width": 1200,
-    "height": 676
+    "height": 800
    }
   },
   "3-series|e92": {
@@ -6523,10 +6523,10 @@
    "height": 330,
    "car": "bmw-3-series-e92-m3-coupe-2007-2013-new-jerez-black-e92-m3-45.webp",
    "scene": {
-    "src": "/generation/scene/3-series-e92-light.webp",
-    "darkSrc": "/generation/scene/3-series-e92-dark.webp",
+    "src": "/generation/stage/3-series-e92-light.webp",
+    "darkSrc": "/generation/stage/3-series-e92-dark.webp",
     "width": 1200,
-    "height": 676
+    "height": 800
    }
   },
   "3-series|e93": {
@@ -6535,10 +6535,10 @@
    "height": 316,
    "car": "bmw-3-series-e93-335i-m-sport-convertible-2007-2013-new-space-grey-e93-335i-45.webp",
    "scene": {
-    "src": "/generation/scene/3-series-e93-light.webp",
-    "darkSrc": "/generation/scene/3-series-e93-dark.webp",
+    "src": "/generation/stage/3-series-e93-light.webp",
+    "darkSrc": "/generation/stage/3-series-e93-dark.webp",
     "width": 1200,
-    "height": 676
+    "height": 800
    }
   },
   "3-series|f30": {
@@ -6547,10 +6547,10 @@
    "height": 313,
    "car": "bmw-3-series-f30-318d-320d-se-saloon-2012-2015-new-mineral-grey-f30-se-45.webp",
    "scene": {
-    "src": "/generation/scene/3-series-f30-light.webp",
-    "darkSrc": "/generation/scene/3-series-f30-dark.webp",
+    "src": "/generation/stage/3-series-f30-light.webp",
+    "darkSrc": "/generation/stage/3-series-f30-dark.webp",
     "width": 1200,
-    "height": 676
+    "height": 800
    }
   },
   "3-series|f30 lci": {
@@ -6559,10 +6559,10 @@
    "height": 314,
    "car": "bmw-3-series-f30-lci-330e-iperformance-saloon-2016-2018-new-imperial-blue-330e-45.webp",
    "scene": {
-    "src": "/generation/scene/3-series-f30-lci-light.webp",
-    "darkSrc": "/generation/scene/3-series-f30-lci-dark.webp",
+    "src": "/generation/stage/3-series-f30-lci-light.webp",
+    "darkSrc": "/generation/stage/3-series-f30-lci-dark.webp",
     "width": 1200,
-    "height": 676
+    "height": 800
    }
   },
   "3-series|f31": {
@@ -6571,10 +6571,10 @@
    "height": 315,
    "car": "bmw-3-series-f31-320d-m-sport-estate-2012-2015-new-mineral-grey-f31-320d-45.webp",
    "scene": {
-    "src": "/generation/scene/3-series-f31-light.webp",
-    "darkSrc": "/generation/scene/3-series-f31-dark.webp",
+    "src": "/generation/stage/3-series-f31-light.webp",
+    "darkSrc": "/generation/stage/3-series-f31-dark.webp",
     "width": 1200,
-    "height": 676
+    "height": 800
    }
   },
   "3-series|f34": {
@@ -6583,10 +6583,10 @@
    "height": 307,
    "car": "bmw-3-series-f34-320d-gt-gran-turismo-2013-2016-new-estoril-blue-f34-320d-45.webp",
    "scene": {
-    "src": "/generation/scene/3-series-f34-light.webp",
-    "darkSrc": "/generation/scene/3-series-f34-dark.webp",
+    "src": "/generation/stage/3-series-f34-light.webp",
+    "darkSrc": "/generation/stage/3-series-f34-dark.webp",
     "width": 1200,
-    "height": 676
+    "height": 800
    }
   },
   "3-series|g20": {
@@ -6595,10 +6595,10 @@
    "height": 318,
    "car": "bmw-3-series-g20-330d-xdrive-m-sport-saloon-2019-new-dravit-grey-g20-330d-png-45.webp",
    "scene": {
-    "src": "/generation/scene/3-series-g20-light.webp",
-    "darkSrc": "/generation/scene/3-series-g20-dark.webp",
+    "src": "/generation/stage/3-series-g20-light.webp",
+    "darkSrc": "/generation/stage/3-series-g20-dark.webp",
     "width": 1200,
-    "height": 676
+    "height": 800
    }
   },
   "3-series|g20 lci": {
@@ -6607,10 +6607,10 @@
    "height": 326,
    "car": "bmw-3-series-g20-lci-320d-m-sport-saloon-2022-new-skyscraper-grey-g20-lci-320d-45.webp",
    "scene": {
-    "src": "/generation/scene/3-series-g20-lci-light.webp",
-    "darkSrc": "/generation/scene/3-series-g20-lci-dark.webp",
+    "src": "/generation/stage/3-series-g20-lci-light.webp",
+    "darkSrc": "/generation/stage/3-series-g20-lci-dark.webp",
     "width": 1200,
-    "height": 676
+    "height": 800
    }
   },
   "3-series|g21": {
@@ -6619,10 +6619,10 @@
    "height": 320,
    "car": "bmw-3-series-g21-m340i-xdrive-touring-estate-2019-new-tanzanite-blue-g21-m340-45.webp",
    "scene": {
-    "src": "/generation/scene/3-series-g21-light.webp",
-    "darkSrc": "/generation/scene/3-series-g21-dark.webp",
+    "src": "/generation/stage/3-series-g21-light.webp",
+    "darkSrc": "/generation/stage/3-series-g21-dark.webp",
     "width": 1200,
-    "height": 676
+    "height": 800
    }
   },
   "4-series|f32": {
@@ -6631,10 +6631,10 @@
    "height": 328,
    "car": "bmw-4-series-f32-420d-coupe-coupe-2013-2017-new-mineral-grey-f32-420d-45.webp",
    "scene": {
-    "src": "/generation/scene/4-series-f32-light.webp",
-    "darkSrc": "/generation/scene/4-series-f32-dark.webp",
+    "src": "/generation/stage/4-series-f32-light.webp",
+    "darkSrc": "/generation/stage/4-series-f32-dark.webp",
     "width": 1200,
-    "height": 676
+    "height": 800
    }
   },
   "4-series|f32 lci": {
@@ -6643,10 +6643,10 @@
    "height": 303,
    "car": "bmw-4-series-f32-lci-420d-m-sport-coupe-2017-2020-new-snapper-rocks-blue-f32-lci-420d-45.webp",
    "scene": {
-    "src": "/generation/scene/4-series-f32-lci-light.webp",
-    "darkSrc": "/generation/scene/4-series-f32-lci-dark.webp",
+    "src": "/generation/stage/4-series-f32-lci-light.webp",
+    "darkSrc": "/generation/stage/4-series-f32-lci-dark.webp",
     "width": 1200,
-    "height": 676
+    "height": 800
    }
   },
   "4-series|f33": {
@@ -6655,10 +6655,10 @@
    "height": 310,
    "car": "bmw-4-series-f33-420d-convertible-convertible-2014-2017-new-mineral-grey-f33-420d-45.webp",
    "scene": {
-    "src": "/generation/scene/4-series-f33-light.webp",
-    "darkSrc": "/generation/scene/4-series-f33-dark.webp",
+    "src": "/generation/stage/4-series-f33-light.webp",
+    "darkSrc": "/generation/stage/4-series-f33-dark.webp",
     "width": 1200,
-    "height": 676
+    "height": 800
    }
   },
   "4-series|f36": {
@@ -6667,10 +6667,10 @@
    "height": 331,
    "car": "bmw-4-series-f36-420d-gran-coupe-4-door-coupe-2014-2017-new-mineral-grey-f36-420d-45.webp",
    "scene": {
-    "src": "/generation/scene/4-series-f36-light.webp",
-    "darkSrc": "/generation/scene/4-series-f36-dark.webp",
+    "src": "/generation/stage/4-series-f36-light.webp",
+    "darkSrc": "/generation/stage/4-series-f36-dark.webp",
     "width": 1200,
-    "height": 676
+    "height": 800
    }
   },
   "4-series|g22": {
@@ -6679,10 +6679,10 @@
    "height": 315,
    "car": "bmw-4-series-g22-420d-m-sport-coupe-2020-new-brooklyn-grey-g22-420d-45.webp",
    "scene": {
-    "src": "/generation/scene/4-series-g22-light.webp",
-    "darkSrc": "/generation/scene/4-series-g22-dark.webp",
+    "src": "/generation/stage/4-series-g22-light.webp",
+    "darkSrc": "/generation/stage/4-series-g22-dark.webp",
     "width": 1200,
-    "height": 676
+    "height": 800
    }
   },
   "4-series|g23": {
@@ -6691,10 +6691,10 @@
    "height": 293,
    "car": "bmw-4-series-g23-420i-m-sport-convertible-convertible-2021-new-portimao-blue-g23-420i-45.webp",
    "scene": {
-    "src": "/generation/scene/4-series-g23-light.webp",
-    "darkSrc": "/generation/scene/4-series-g23-dark.webp",
+    "src": "/generation/stage/4-series-g23-light.webp",
+    "darkSrc": "/generation/stage/4-series-g23-dark.webp",
     "width": 1200,
-    "height": 676
+    "height": 800
    }
   },
   "4-series|g26": {
@@ -6703,10 +6703,10 @@
    "height": 319,
    "car": "bmw-4-series-g26-420d-gran-coupe-4-door-coupe-2021-new-brooklyn-grey-g26-420d-45.webp",
    "scene": {
-    "src": "/generation/scene/4-series-g26-light.webp",
-    "darkSrc": "/generation/scene/4-series-g26-dark.webp",
+    "src": "/generation/stage/4-series-g26-light.webp",
+    "darkSrc": "/generation/stage/4-series-g26-dark.webp",
     "width": 1200,
-    "height": 676
+    "height": 800
    }
   },
   "5-series|e12": {
@@ -6715,10 +6715,10 @@
    "height": 296,
    "car": "bmw-5-series-e12-520i-saloon-1972-1981-new-polaris-silver-e12-520i-45.webp",
    "scene": {
-    "src": "/generation/scene/5-series-e12-light.webp",
-    "darkSrc": "/generation/scene/5-series-e12-dark.webp",
+    "src": "/generation/stage/5-series-e12-light.webp",
+    "darkSrc": "/generation/stage/5-series-e12-dark.webp",
     "width": 1200,
-    "height": 676
+    "height": 800
    }
   },
   "5-series|e28": {
@@ -6727,10 +6727,10 @@
    "height": 302,
    "car": "bmw-5-series-e28-535i-saloon-1981-1987-new-lachssilber-e28-535i-45.webp",
    "scene": {
-    "src": "/generation/scene/5-series-e28-light.webp",
-    "darkSrc": "/generation/scene/5-series-e28-dark.webp",
+    "src": "/generation/stage/5-series-e28-light.webp",
+    "darkSrc": "/generation/stage/5-series-e28-dark.webp",
     "width": 1200,
-    "height": 676
+    "height": 800
    }
   },
   "5-series|e34": {
@@ -6739,10 +6739,10 @@
    "height": 295,
    "car": "bmw-5-series-e34-m5-3-6-saloon-1988-1992-new-macao-blue-e34-m5-45.webp",
    "scene": {
-    "src": "/generation/scene/5-series-e34-light.webp",
-    "darkSrc": "/generation/scene/5-series-e34-dark.webp",
+    "src": "/generation/stage/5-series-e34-light.webp",
+    "darkSrc": "/generation/stage/5-series-e34-dark.webp",
     "width": 1200,
-    "height": 676
+    "height": 800
    }
   },
   "5-series|e39": {
@@ -6751,10 +6751,10 @@
    "height": 330,
    "car": "bmw-5-series-e39-m5-individual-saloon-2001-2003-special-carbon-black-e39-m5-ind-45.webp",
    "scene": {
-    "src": "/generation/scene/5-series-e39-light.webp",
-    "darkSrc": "/generation/scene/5-series-e39-dark.webp",
+    "src": "/generation/stage/5-series-e39-light.webp",
+    "darkSrc": "/generation/stage/5-series-e39-dark.webp",
     "width": 1200,
-    "height": 676
+    "height": 800
    }
   },
   "5-series|e60": {
@@ -6763,10 +6763,10 @@
    "height": 344,
    "car": "bmw-5-series-e60-525d-sport-saloon-2004-2007-new-sparkling-graphite-e60-525d-45.webp",
    "scene": {
-    "src": "/generation/scene/5-series-e60-light.webp",
-    "darkSrc": "/generation/scene/5-series-e60-dark.webp",
+    "src": "/generation/stage/5-series-e60-light.webp",
+    "darkSrc": "/generation/stage/5-series-e60-dark.webp",
     "width": 1200,
-    "height": 676
+    "height": 800
    }
   },
   "5-series|e61": {
@@ -6775,10 +6775,10 @@
    "height": 334,
    "car": "bmw-5-series-e61-530d-touring-estate-2004-2007-new-titanium-silver-e61-530d-45.webp",
    "scene": {
-    "src": "/generation/scene/5-series-e61-light.webp",
-    "darkSrc": "/generation/scene/5-series-e61-dark.webp",
+    "src": "/generation/stage/5-series-e61-light.webp",
+    "darkSrc": "/generation/stage/5-series-e61-dark.webp",
     "width": 1200,
-    "height": 676
+    "height": 800
    }
   },
   "5-series|f07": {
@@ -6787,10 +6787,10 @@
    "height": 322,
    "car": "bmw-5-series-f07-530d-gt-gran-turismo-2009-2013-new-space-grey-f07-530d-45.webp",
    "scene": {
-    "src": "/generation/scene/5-series-f07-light.webp",
-    "darkSrc": "/generation/scene/5-series-f07-dark.webp",
+    "src": "/generation/stage/5-series-f07-light.webp",
+    "darkSrc": "/generation/stage/5-series-f07-dark.webp",
     "width": 1200,
-    "height": 676
+    "height": 800
    }
   },
   "5-series|f10": {
@@ -6799,10 +6799,10 @@
    "height": 298,
    "car": "bmw-5-series-f10-520d-se-saloon-2010-2013-new-space-grey-f10-520d-45.webp",
    "scene": {
-    "src": "/generation/scene/5-series-f10-light.webp",
-    "darkSrc": "/generation/scene/5-series-f10-dark.webp",
+    "src": "/generation/stage/5-series-f10-light.webp",
+    "darkSrc": "/generation/stage/5-series-f10-dark.webp",
     "width": 1200,
-    "height": 676
+    "height": 800
    }
   },
   "5-series|f11": {
@@ -6811,10 +6811,10 @@
    "height": 299,
    "car": "bmw-5-series-f11-520d-touring-estate-2010-2013-new-space-grey-f11-520d-2-45.webp",
    "scene": {
-    "src": "/generation/scene/5-series-f11-light.webp",
-    "darkSrc": "/generation/scene/5-series-f11-dark.webp",
+    "src": "/generation/stage/5-series-f11-light.webp",
+    "darkSrc": "/generation/stage/5-series-f11-dark.webp",
     "width": 1200,
-    "height": 676
+    "height": 800
    }
   },
   "5-series|g30": {
@@ -6823,10 +6823,10 @@
    "height": 304,
    "car": "bmw-5-series-g30-530d-m-sport-saloon-2017-2020-new-sophisto-grey-g30-530d-45.webp",
    "scene": {
-    "src": "/generation/scene/5-series-g30-light.webp",
-    "darkSrc": "/generation/scene/5-series-g30-dark.webp",
+    "src": "/generation/stage/5-series-g30-light.webp",
+    "darkSrc": "/generation/stage/5-series-g30-dark.webp",
     "width": 1200,
-    "height": 676
+    "height": 800
    }
   },
   "5-series|g30 lci": {
@@ -6835,10 +6835,10 @@
    "height": 309,
    "car": "bmw-5-series-g30-lci-530d-m-sport-saloon-2020-2023-new-bernina-grey-g30-lci-530d-45.webp",
    "scene": {
-    "src": "/generation/scene/5-series-g30-lci-light.webp",
-    "darkSrc": "/generation/scene/5-series-g30-lci-dark.webp",
+    "src": "/generation/stage/5-series-g30-lci-light.webp",
+    "darkSrc": "/generation/stage/5-series-g30-lci-dark.webp",
     "width": 1200,
-    "height": 676
+    "height": 800
    }
   },
   "5-series|g31": {
@@ -6847,10 +6847,10 @@
    "height": 300,
    "car": "bmw-5-series-g31-530d-touring-estate-2017-2020-new-sophisto-grey-g31-530d-45.webp",
    "scene": {
-    "src": "/generation/scene/5-series-g31-light.webp",
-    "darkSrc": "/generation/scene/5-series-g31-dark.webp",
+    "src": "/generation/stage/5-series-g31-light.webp",
+    "darkSrc": "/generation/stage/5-series-g31-dark.webp",
     "width": 1200,
-    "height": 676
+    "height": 800
    }
   },
   "5-series|g60": {
@@ -6859,10 +6859,10 @@
    "height": 315,
    "car": "bmw-5-series-g60-520d-m-sport-saloon-2023-new-oxide-grey-g60-520d-45.webp",
    "scene": {
-    "src": "/generation/scene/5-series-g60-light.webp",
-    "darkSrc": "/generation/scene/5-series-g60-dark.webp",
+    "src": "/generation/stage/5-series-g60-light.webp",
+    "darkSrc": "/generation/stage/5-series-g60-dark.webp",
     "width": 1200,
-    "height": 676
+    "height": 800
    }
   },
   "5-series|g61": {
@@ -6871,10 +6871,10 @@
    "height": 309,
    "car": "bmw-5-series-g61-520d-touring-estate-2024-new-skyscraper-grey-g61-520d-45.webp",
    "scene": {
-    "src": "/generation/scene/5-series-g61-light.webp",
-    "darkSrc": "/generation/scene/5-series-g61-dark.webp",
+    "src": "/generation/stage/5-series-g61-light.webp",
+    "darkSrc": "/generation/stage/5-series-g61-dark.webp",
     "width": 1200,
-    "height": 676
+    "height": 800
    }
   },
   "m1|e26": {
@@ -6883,10 +6883,10 @@
    "height": 252,
    "car": "bmw-m1-e26-m1-procar-racing-coupe-1979-1980-special-bmw-motorsport-white-m1-procar-45.webp",
    "scene": {
-    "src": "/generation/scene/m1-e26-light.webp",
-    "darkSrc": "/generation/scene/m1-e26-dark.webp",
+    "src": "/generation/stage/m1-e26-light.webp",
+    "darkSrc": "/generation/stage/m1-e26-dark.webp",
     "width": 1200,
-    "height": 676
+    "height": 800
    }
   },
   "m2|f87": {
@@ -6895,10 +6895,10 @@
    "height": 314,
    "car": "bmw-m2-f87-m2-competition-coupe-2018-2021-new-hockenheim-silver-f87-comp-45.webp",
    "scene": {
-    "src": "/generation/scene/m2-f87-light.webp",
-    "darkSrc": "/generation/scene/m2-f87-dark.webp",
+    "src": "/generation/stage/m2-f87-light.webp",
+    "darkSrc": "/generation/stage/m2-f87-dark.webp",
     "width": 1200,
-    "height": 676
+    "height": 800
    }
   },
   "m2|g87": {
@@ -6907,10 +6907,10 @@
    "height": 325,
    "car": "bmw-m2-g87-m2-cs-coupe-2025-special-frozen-white-g87-m2-cs-45.webp",
    "scene": {
-    "src": "/generation/scene/m2-g87-light.webp",
-    "darkSrc": "/generation/scene/m2-g87-dark.webp",
+    "src": "/generation/stage/m2-g87-light.webp",
+    "darkSrc": "/generation/stage/m2-g87-dark.webp",
     "width": 1200,
-    "height": 676
+    "height": 800
    }
   },
   "m3|e30": {
@@ -6919,10 +6919,10 @@
    "height": 316,
    "car": "bmw-m3-e30-m3-convertible-convertible-1988-1991-new-alpine-white-e30-m3-cab-45.webp",
    "scene": {
-    "src": "/generation/scene/m3-e30-light.webp",
-    "darkSrc": "/generation/scene/m3-e30-dark.webp",
+    "src": "/generation/stage/m3-e30-light.webp",
+    "darkSrc": "/generation/stage/m3-e30-dark.webp",
     "width": 1200,
-    "height": 676
+    "height": 800
    }
   },
   "m3|e36": {
@@ -6931,10 +6931,10 @@
    "height": 278,
    "car": "bmw-m3-e36-m3-3-2-coupe-1995-1999-new-estoril-blue-e36-m3-3-2-45.webp",
    "scene": {
-    "src": "/generation/scene/m3-e36-light.webp",
-    "darkSrc": "/generation/scene/m3-e36-dark.webp",
+    "src": "/generation/stage/m3-e36-light.webp",
+    "darkSrc": "/generation/stage/m3-e36-dark.webp",
     "width": 1200,
-    "height": 676
+    "height": 800
    }
   },
   "m3|e46": {
@@ -6943,10 +6943,10 @@
    "height": 323,
    "car": "bmw-m3-e46-m3-csl-coupe-2003-special-silver-grey-e46-csl-45.webp",
    "scene": {
-    "src": "/generation/scene/m3-e46-light.webp",
-    "darkSrc": "/generation/scene/m3-e46-dark.webp",
+    "src": "/generation/stage/m3-e46-light.webp",
+    "darkSrc": "/generation/stage/m3-e46-dark.webp",
     "width": 1200,
-    "height": 676
+    "height": 800
    }
   },
   "m3|e92": {
@@ -6955,10 +6955,10 @@
    "height": 332,
    "car": "bmw-m3-e92-m3-coupe-2007-2013-new-jerez-black-e92-m3-45.webp",
    "scene": {
-    "src": "/generation/scene/m3-e92-light.webp",
-    "darkSrc": "/generation/scene/m3-e92-dark.webp",
+    "src": "/generation/stage/m3-e92-light.webp",
+    "darkSrc": "/generation/stage/m3-e92-dark.webp",
     "width": 1200,
-    "height": 676
+    "height": 800
    }
   },
   "m3|f80": {
@@ -6967,10 +6967,10 @@
    "height": 282,
    "car": "bmw-3-series-f80-m3-saloon-2014-2018-new-yas-marina-blue-f80-m3-45.webp",
    "scene": {
-    "src": "/generation/scene/m3-f80-light.webp",
-    "darkSrc": "/generation/scene/m3-f80-dark.webp",
+    "src": "/generation/stage/m3-f80-light.webp",
+    "darkSrc": "/generation/stage/m3-f80-dark.webp",
     "width": 1200,
-    "height": 676
+    "height": 800
    }
   },
   "m3|g80": {
@@ -6979,10 +6979,10 @@
    "height": 329,
    "car": "bmw-3-series-g80-m3-cs-saloon-2023-2024-special-frozen-solid-white-m3-cs-45.webp",
    "scene": {
-    "src": "/generation/scene/m3-g80-light.webp",
-    "darkSrc": "/generation/scene/m3-g80-dark.webp",
+    "src": "/generation/stage/m3-g80-light.webp",
+    "darkSrc": "/generation/stage/m3-g80-dark.webp",
     "width": 1200,
-    "height": 676
+    "height": 800
    }
   },
   "m4|f82": {
@@ -6991,10 +6991,10 @@
    "height": 314,
    "car": "bmw-4-series-f82-m4-gts-coupe-2016-special-frozen-dark-grey-m4-gts-45.webp",
    "scene": {
-    "src": "/generation/scene/m4-f82-light.webp",
-    "darkSrc": "/generation/scene/m4-f82-dark.webp",
+    "src": "/generation/stage/m4-f82-light.webp",
+    "darkSrc": "/generation/stage/m4-f82-dark.webp",
     "width": 1200,
-    "height": 676
+    "height": 800
    }
   },
   "m4|g82": {
@@ -7003,10 +7003,10 @@
    "height": 310,
    "car": "bmw-m4-g82-m4-csl-coupe-2022-special-frozen-brooklyn-grey-g82-csl-45.webp",
    "scene": {
-    "src": "/generation/scene/m4-g82-light.webp",
-    "darkSrc": "/generation/scene/m4-g82-dark.webp",
+    "src": "/generation/stage/m4-g82-light.webp",
+    "darkSrc": "/generation/stage/m4-g82-dark.webp",
     "width": 1200,
-    "height": 676
+    "height": 800
    }
   },
   "m5|e28": {
@@ -7015,10 +7015,10 @@
    "height": 294,
    "car": "bmw-m5-e28-m5-saloon-1984-1988-new-black-recoloured-e28-m5-45.webp",
    "scene": {
-    "src": "/generation/scene/m5-e28-light.webp",
-    "darkSrc": "/generation/scene/m5-e28-dark.webp",
+    "src": "/generation/stage/m5-e28-light.webp",
+    "darkSrc": "/generation/stage/m5-e28-dark.webp",
     "width": 1200,
-    "height": 676
+    "height": 800
    }
   },
   "m5|e34": {
@@ -7027,10 +7027,10 @@
    "height": 300,
    "car": "bmw-m5-e34-m5-touring-estate-1992-1995-new-british-racing-green-e34-touring-45.webp",
    "scene": {
-    "src": "/generation/scene/m5-e34-light.webp",
-    "darkSrc": "/generation/scene/m5-e34-dark.webp",
+    "src": "/generation/stage/m5-e34-light.webp",
+    "darkSrc": "/generation/stage/m5-e34-dark.webp",
     "width": 1200,
-    "height": 676
+    "height": 800
    }
   },
   "m5|e60": {
@@ -7039,10 +7039,10 @@
    "height": 300,
    "car": "bmw-m5-e60-m5-saloon-2005-2010-new-interlagos-blue-e60-m5-45.webp",
    "scene": {
-    "src": "/generation/scene/m5-e60-light.webp",
-    "darkSrc": "/generation/scene/m5-e60-dark.webp",
+    "src": "/generation/stage/m5-e60-light.webp",
+    "darkSrc": "/generation/stage/m5-e60-dark.webp",
     "width": 1200,
-    "height": 676
+    "height": 800
    }
   },
   "m5|f10": {
@@ -7051,10 +7051,10 @@
    "height": 328,
    "car": "bmw-m5-f10-m5-30-jahre-saloon-2014-special-frozen-dark-silver-30-jahre-45.webp",
    "scene": {
-    "src": "/generation/scene/m5-f10-light.webp",
-    "darkSrc": "/generation/scene/m5-f10-dark.webp",
+    "src": "/generation/stage/m5-f10-light.webp",
+    "darkSrc": "/generation/stage/m5-f10-dark.webp",
     "width": 1200,
-    "height": 676
+    "height": 800
    }
   },
   "m5|f90": {
@@ -7063,10 +7063,10 @@
    "height": 297,
    "car": "bmw-5-series-f90-m5-saloon-2017-2020-new-marina-bay-blue-f90-m5-45.webp",
    "scene": {
-    "src": "/generation/scene/m5-f90-light.webp",
-    "darkSrc": "/generation/scene/m5-f90-dark.webp",
+    "src": "/generation/stage/m5-f90-light.webp",
+    "darkSrc": "/generation/stage/m5-f90-dark.webp",
     "width": 1200,
-    "height": 676
+    "height": 800
    }
   },
   "m5|g90": {
@@ -7075,10 +7075,10 @@
    "height": 341,
    "car": "bmw-m5-g90-m5-touring-estate-2024-new-frozen-deep-grey-g99-m5-touring-45.webp",
    "scene": {
-    "src": "/generation/scene/m5-g90-light.webp",
-    "darkSrc": "/generation/scene/m5-g90-dark.webp",
+    "src": "/generation/stage/m5-g90-light.webp",
+    "darkSrc": "/generation/stage/m5-g90-dark.webp",
     "width": 1200,
-    "height": 676
+    "height": 800
    }
   },
   "m6|e24": {
@@ -7087,10 +7087,10 @@
    "height": 328,
    "car": "bmw-m6-e24-m635csi-m6-coupe-1983-1989-new-black-recoloured-e24-m6-45.webp",
    "scene": {
-    "src": "/generation/scene/m6-e24-light.webp",
-    "darkSrc": "/generation/scene/m6-e24-dark.webp",
+    "src": "/generation/stage/m6-e24-light.webp",
+    "darkSrc": "/generation/stage/m6-e24-dark.webp",
     "width": 1200,
-    "height": 676
+    "height": 800
    }
   },
   "m6|e63": {
@@ -7099,10 +7099,10 @@
    "height": 302,
    "car": "bmw-m6-e63-m6-coupe-2005-2010-new-interlagos-blue-e63-m6-45.webp",
    "scene": {
-    "src": "/generation/scene/m6-e63-light.webp",
-    "darkSrc": "/generation/scene/m6-e63-dark.webp",
+    "src": "/generation/stage/m6-e63-light.webp",
+    "darkSrc": "/generation/stage/m6-e63-dark.webp",
     "width": 1200,
-    "height": 676
+    "height": 800
    }
   },
   "m6|f06": {
@@ -7111,10 +7111,10 @@
    "height": 305,
    "car": "bmw-m6-f06-m6-gran-coupe-4-door-coupe-2013-2018-new-singapore-grey-f06-m6-45.webp",
    "scene": {
-    "src": "/generation/scene/m6-f06-light.webp",
-    "darkSrc": "/generation/scene/m6-f06-dark.webp",
+    "src": "/generation/stage/m6-f06-light.webp",
+    "darkSrc": "/generation/stage/m6-f06-dark.webp",
     "width": 1200,
-    "height": 676
+    "height": 800
    }
   },
   "m6|f13": {
@@ -7123,10 +7123,10 @@
    "height": 322,
    "car": "bmw-m6-f13-m6-coupe-coupe-2012-2018-new-san-marino-blue-f13-m6-45.webp",
    "scene": {
-    "src": "/generation/scene/m6-f13-light.webp",
-    "darkSrc": "/generation/scene/m6-f13-dark.webp",
+    "src": "/generation/stage/m6-f13-light.webp",
+    "darkSrc": "/generation/stage/m6-f13-dark.webp",
     "width": 1200,
-    "height": 676
+    "height": 800
    }
   },
   "m8|f91": {
@@ -7135,10 +7135,10 @@
    "height": 307,
    "car": "bmw-m8-f91-m8-convertible-convertible-2019-2022-new-san-marino-blue-f91-m8-45.webp",
    "scene": {
-    "src": "/generation/scene/m8-f91-light.webp",
-    "darkSrc": "/generation/scene/m8-f91-dark.webp",
+    "src": "/generation/stage/m8-f91-light.webp",
+    "darkSrc": "/generation/stage/m8-f91-dark.webp",
     "width": 1200,
-    "height": 676
+    "height": 800
    }
   },
   "m8|f92": {
@@ -7147,10 +7147,10 @@
    "height": 309,
    "car": "bmw-m8-f92-m8-coupe-coupe-2019-2022-new-marina-bay-blue-f92-m8-45.webp",
    "scene": {
-    "src": "/generation/scene/m8-f92-light.webp",
-    "darkSrc": "/generation/scene/m8-f92-dark.webp",
+    "src": "/generation/stage/m8-f92-light.webp",
+    "darkSrc": "/generation/stage/m8-f92-dark.webp",
     "width": 1200,
-    "height": 676
+    "height": 800
    }
   },
   "m8|f93": {
@@ -7159,10 +7159,10 @@
    "height": 277,
    "car": "bmw-m8-f93-m8-competition-gran-coupe-4-door-coupe-2019-2022-new-marina-bay-blue-f93-comp-45.webp",
    "scene": {
-    "src": "/generation/scene/m8-f93-light.webp",
-    "darkSrc": "/generation/scene/m8-f93-dark.webp",
+    "src": "/generation/stage/m8-f93-light.webp",
+    "darkSrc": "/generation/stage/m8-f93-dark.webp",
     "width": 1200,
-    "height": 676
+    "height": 800
    }
   },
   "x1|e84": {
@@ -7171,10 +7171,10 @@
    "height": 308,
    "car": "bmw-x1-e84-xdrive20d-se-suv-2009-2012-new-space-grey-e84-20d-45.webp",
    "scene": {
-    "src": "/generation/scene/x1-e84-light.webp",
-    "darkSrc": "/generation/scene/x1-e84-dark.webp",
+    "src": "/generation/stage/x1-e84-light.webp",
+    "darkSrc": "/generation/stage/x1-e84-dark.webp",
     "width": 1200,
-    "height": 676
+    "height": 800
    }
   },
   "x1|f48": {
@@ -7183,10 +7183,10 @@
    "height": 317,
    "car": "bmw-x1-f48-xdrive25d-m-sport-suv-2015-2019-new-mineral-grey-f48-25d-45.webp",
    "scene": {
-    "src": "/generation/scene/x1-f48-light.webp",
-    "darkSrc": "/generation/scene/x1-f48-dark.webp",
+    "src": "/generation/stage/x1-f48-light.webp",
+    "darkSrc": "/generation/stage/x1-f48-dark.webp",
     "width": 1200,
-    "height": 676
+    "height": 800
    }
   },
   "x1|f48 lci": {
@@ -7195,10 +7195,10 @@
    "height": 306,
    "car": "bmw-x1-f48-lci-sdrive18i-m-sport-suv-2019-2022-new-storm-bay-f48-lci-m-45.webp",
    "scene": {
-    "src": "/generation/scene/x1-f48-lci-light.webp",
-    "darkSrc": "/generation/scene/x1-f48-lci-dark.webp",
+    "src": "/generation/stage/x1-f48-lci-light.webp",
+    "darkSrc": "/generation/stage/x1-f48-lci-dark.webp",
     "width": 1200,
-    "height": 676
+    "height": 800
    }
   },
   "x1|u11": {
@@ -7207,10 +7207,10 @@
    "height": 353,
    "car": "bmw-x1-u11-m35i-xdrive-edition-suv-2023-special-frozen-pure-grey-m35i-edition-45.webp",
    "scene": {
-    "src": "/generation/scene/x1-u11-light.webp",
-    "darkSrc": "/generation/scene/x1-u11-dark.webp",
+    "src": "/generation/stage/x1-u11-light.webp",
+    "darkSrc": "/generation/stage/x1-u11-dark.webp",
     "width": 1200,
-    "height": 676
+    "height": 800
    }
   },
   "x2|f39": {
@@ -7219,10 +7219,10 @@
    "height": 321,
    "car": "bmw-x2-f39-sdrive18d-m-sport-sac-2018-2020-new-mineral-grey-f39-18d-45.webp",
    "scene": {
-    "src": "/generation/scene/x2-f39-light.webp",
-    "darkSrc": "/generation/scene/x2-f39-dark.webp",
+    "src": "/generation/stage/x2-f39-light.webp",
+    "darkSrc": "/generation/stage/x2-f39-dark.webp",
     "width": 1200,
-    "height": 676
+    "height": 800
    }
   },
   "x2|f39 lci": {
@@ -7231,10 +7231,10 @@
    "height": 318,
    "car": "bmw-x2-f39-lci-m-mesh-edition-sac-2020-2023-special-brooklyn-grey-m-mesh-45.webp",
    "scene": {
-    "src": "/generation/scene/x2-f39-lci-light.webp",
-    "darkSrc": "/generation/scene/x2-f39-lci-dark.webp",
+    "src": "/generation/stage/x2-f39-lci-light.webp",
+    "darkSrc": "/generation/stage/x2-f39-lci-dark.webp",
     "width": 1200,
-    "height": 676
+    "height": 800
    }
   },
   "x2|u10": {
@@ -7243,10 +7243,10 @@
    "height": 340,
    "car": "bmw-x2-u10-xdrive20d-m-sport-sac-2024-new-skyscraper-grey-u10-20d-45.webp",
    "scene": {
-    "src": "/generation/scene/x2-u10-light.webp",
-    "darkSrc": "/generation/scene/x2-u10-dark.webp",
+    "src": "/generation/stage/x2-u10-light.webp",
+    "darkSrc": "/generation/stage/x2-u10-dark.webp",
     "width": 1200,
-    "height": 676
+    "height": 800
    }
   },
   "x3|e83": {
@@ -7255,10 +7255,10 @@
    "height": 350,
    "car": "bmw-x3-e83-2-0d-se-suv-2004-2006-new-silver-grey-e83-20d-45.webp",
    "scene": {
-    "src": "/generation/scene/x3-e83-light.webp",
-    "darkSrc": "/generation/scene/x3-e83-dark.webp",
+    "src": "/generation/stage/x3-e83-light.webp",
+    "darkSrc": "/generation/stage/x3-e83-dark.webp",
     "width": 1200,
-    "height": 676
+    "height": 800
    }
   },
   "x3|f25": {
@@ -7267,10 +7267,10 @@
    "height": 305,
    "car": "bmw-x3-f25-xdrive20d-se-suv-2010-2014-new-space-grey-f25-20d-45.webp",
    "scene": {
-    "src": "/generation/scene/x3-f25-light.webp",
-    "darkSrc": "/generation/scene/x3-f25-dark.webp",
+    "src": "/generation/stage/x3-f25-light.webp",
+    "darkSrc": "/generation/stage/x3-f25-dark.webp",
     "width": 1200,
-    "height": 676
+    "height": 800
    }
   },
   "x3|g01": {
@@ -7279,10 +7279,10 @@
    "height": 327,
    "car": "bmw-x3-g01-x3-m-competition-suv-2019-2021-new-donington-grey-x3-m-comp-45.webp",
    "scene": {
-    "src": "/generation/scene/x3-g01-light.webp",
-    "darkSrc": "/generation/scene/x3-g01-dark.webp",
+    "src": "/generation/stage/x3-g01-light.webp",
+    "darkSrc": "/generation/stage/x3-g01-dark.webp",
     "width": 1200,
-    "height": 676
+    "height": 800
    }
   },
   "x3|g01 lci": {
@@ -7291,10 +7291,10 @@
    "height": 318,
    "car": "bmw-x3-g01-lci-m40d-suv-2021-new-frozen-pure-grey-g01-lci-m40d-45.webp",
    "scene": {
-    "src": "/generation/scene/x3-g01-lci-light.webp",
-    "darkSrc": "/generation/scene/x3-g01-lci-dark.webp",
+    "src": "/generation/stage/x3-g01-lci-light.webp",
+    "darkSrc": "/generation/stage/x3-g01-lci-dark.webp",
     "width": 1200,
-    "height": 676
+    "height": 800
    }
   },
   "x3|g45": {
@@ -7303,10 +7303,10 @@
    "height": 340,
    "car": "bmw-x3-g45-20-xdrive-m-sport-suv-2024-new-brooklyn-grey-g45-20-45.webp",
    "scene": {
-    "src": "/generation/scene/x3-g45-light.webp",
-    "darkSrc": "/generation/scene/x3-g45-dark.webp",
+    "src": "/generation/stage/x3-g45-light.webp",
+    "darkSrc": "/generation/stage/x3-g45-dark.webp",
     "width": 1200,
-    "height": 676
+    "height": 800
    }
   },
   "x4|f26": {
@@ -7315,10 +7315,10 @@
    "height": 339,
    "car": "bmw-x4-f26-xdrive20d-m-sport-sac-2014-2017-new-mineral-grey-f26-m-sport-45.webp",
    "scene": {
-    "src": "/generation/scene/x4-f26-light.webp",
-    "darkSrc": "/generation/scene/x4-f26-dark.webp",
+    "src": "/generation/stage/x4-f26-light.webp",
+    "darkSrc": "/generation/stage/x4-f26-dark.webp",
     "width": 1200,
-    "height": 676
+    "height": 800
    }
   },
   "x4|g02": {
@@ -7327,10 +7327,10 @@
    "height": 299,
    "car": "bmw-x4-g02-xdrive30d-m-sport-sac-2018-2021-new-sophisto-grey-g02-30d-45.webp",
    "scene": {
-    "src": "/generation/scene/x4-g02-light.webp",
-    "darkSrc": "/generation/scene/x4-g02-dark.webp",
+    "src": "/generation/stage/x4-g02-light.webp",
+    "darkSrc": "/generation/stage/x4-g02-dark.webp",
     "width": 1200,
-    "height": 676
+    "height": 800
    }
   },
   "x4|g02 lci": {
@@ -7339,10 +7339,10 @@
    "height": 331,
    "car": "bmw-x4-g02-lci-m40d-sac-2021-new-skyscraper-grey-g02-lci-m40d-45.webp",
    "scene": {
-    "src": "/generation/scene/x4-g02-lci-light.webp",
-    "darkSrc": "/generation/scene/x4-g02-lci-dark.webp",
+    "src": "/generation/stage/x4-g02-lci-light.webp",
+    "darkSrc": "/generation/stage/x4-g02-lci-dark.webp",
     "width": 1200,
-    "height": 676
+    "height": 800
    }
   },
   "x5|e53": {
@@ -7351,10 +7351,10 @@
    "height": 348,
    "car": "bmw-x5-e53-3-0i-se-suv-1999-2003-new-titanium-silver-e53-30i-45.webp",
    "scene": {
-    "src": "/generation/scene/x5-e53-light.webp",
-    "darkSrc": "/generation/scene/x5-e53-dark.webp",
+    "src": "/generation/stage/x5-e53-light.webp",
+    "darkSrc": "/generation/stage/x5-e53-dark.webp",
     "width": 1200,
-    "height": 676
+    "height": 800
    }
   },
   "x5|e53 lci": {
@@ -7363,10 +7363,10 @@
    "height": 337,
    "car": "bmw-x5-e53-lci-3-0d-sport-suv-2004-2006-new-sterling-grey-e53-lci-30d-45.webp",
    "scene": {
-    "src": "/generation/scene/x5-e53-lci-light.webp",
-    "darkSrc": "/generation/scene/x5-e53-lci-dark.webp",
+    "src": "/generation/stage/x5-e53-lci-light.webp",
+    "darkSrc": "/generation/stage/x5-e53-lci-dark.webp",
     "width": 1200,
-    "height": 676
+    "height": 800
    }
   },
   "x5|e70": {
@@ -7375,10 +7375,10 @@
    "height": 330,
    "car": "bmw-x5-e70-xdrive30d-m-sport-suv-2007-2010-new-space-grey-e70-m-sport-45.webp",
    "scene": {
-    "src": "/generation/scene/x5-e70-light.webp",
-    "darkSrc": "/generation/scene/x5-e70-dark.webp",
+    "src": "/generation/stage/x5-e70-light.webp",
+    "darkSrc": "/generation/stage/x5-e70-dark.webp",
     "width": 1200,
-    "height": 676
+    "height": 800
    }
   },
   "x5|f15": {
@@ -7387,10 +7387,10 @@
    "height": 316,
    "car": "bmw-x5-f15-xdrive30d-se-suv-2013-2015-new-space-grey-f15-30d-45.webp",
    "scene": {
-    "src": "/generation/scene/x5-f15-light.webp",
-    "darkSrc": "/generation/scene/x5-f15-dark.webp",
+    "src": "/generation/stage/x5-f15-light.webp",
+    "darkSrc": "/generation/stage/x5-f15-dark.webp",
     "width": 1200,
-    "height": 676
+    "height": 800
    }
   },
   "x5|f95": {
@@ -7399,10 +7399,10 @@
    "height": 316,
    "car": "bmw-x5-f95-x5-m-competition-suv-2020-2023-new-marina-bay-blue-f95-comp-45.webp",
    "scene": {
-    "src": "/generation/scene/x5-f95-light.webp",
-    "darkSrc": "/generation/scene/x5-f95-dark.webp",
+    "src": "/generation/stage/x5-f95-light.webp",
+    "darkSrc": "/generation/stage/x5-f95-dark.webp",
     "width": 1200,
-    "height": 676
+    "height": 800
    }
   },
   "x5|g05": {
@@ -7411,10 +7411,10 @@
    "height": 300,
    "car": "bmw-x5-g05-xdrive30d-se-suv-2018-2023-new-arctic-grey-g05-30d-45.webp",
    "scene": {
-    "src": "/generation/scene/x5-g05-light.webp",
-    "darkSrc": "/generation/scene/x5-g05-dark.webp",
+    "src": "/generation/stage/x5-g05-light.webp",
+    "darkSrc": "/generation/stage/x5-g05-dark.webp",
     "width": 1200,
-    "height": 676
+    "height": 800
    }
   },
   "x6|e71": {
@@ -7423,10 +7423,10 @@
    "height": 292,
    "car": "bmw-x6-e71-activehybrid-x6-sac-2009-2010-new-platinum-grey-activehybrid-x6-45.webp",
    "scene": {
-    "src": "/generation/scene/x6-e71-light.webp",
-    "darkSrc": "/generation/scene/x6-e71-dark.webp",
+    "src": "/generation/stage/x6-e71-light.webp",
+    "darkSrc": "/generation/stage/x6-e71-dark.webp",
     "width": 1200,
-    "height": 676
+    "height": 800
    }
   },
   "x6|f16": {
@@ -7435,10 +7435,10 @@
    "height": 301,
    "car": "bmw-x6-f16-xdrive30d-m-sport-sac-2014-2019-new-space-grey-f16-30d-45.webp",
    "scene": {
-    "src": "/generation/scene/x6-f16-light.webp",
-    "darkSrc": "/generation/scene/x6-f16-dark.webp",
+    "src": "/generation/stage/x6-f16-light.webp",
+    "darkSrc": "/generation/stage/x6-f16-dark.webp",
     "width": 1200,
-    "height": 676
+    "height": 800
    }
   },
   "x6|g06": {
@@ -7447,10 +7447,10 @@
    "height": 317,
    "car": "bmw-x6-g06-xdrive30d-m-sport-sac-2019-2023-new-arctic-grey-g06-30d-45.webp",
    "scene": {
-    "src": "/generation/scene/x6-g06-light.webp",
-    "darkSrc": "/generation/scene/x6-g06-dark.webp",
+    "src": "/generation/stage/x6-g06-light.webp",
+    "darkSrc": "/generation/stage/x6-g06-dark.webp",
     "width": 1200,
-    "height": 676
+    "height": 800
    }
   },
   "x6|g06 lci": {
@@ -7459,10 +7459,10 @@
    "height": 328,
    "car": "bmw-x6-g06-lci-xdrive30d-m-sport-sac-2023-new-skyscraper-grey-g06-lci-30d-45.webp",
    "scene": {
-    "src": "/generation/scene/x6-g06-lci-light.webp",
-    "darkSrc": "/generation/scene/x6-g06-lci-dark.webp",
+    "src": "/generation/stage/x6-g06-lci-light.webp",
+    "darkSrc": "/generation/stage/x6-g06-lci-dark.webp",
     "width": 1200,
-    "height": 676
+    "height": 800
    }
   },
   "x7|g07": {
@@ -7471,10 +7471,10 @@
    "height": 332,
    "car": "bmw-x7-g07-dark-shadow-edition-suv-2020-special-frozen-arctic-grey-dark-shadow-45.webp",
    "scene": {
-    "src": "/generation/scene/x7-g07-light.webp",
-    "darkSrc": "/generation/scene/x7-g07-dark.webp",
+    "src": "/generation/stage/x7-g07-light.webp",
+    "darkSrc": "/generation/stage/x7-g07-dark.webp",
     "width": 1200,
-    "height": 676
+    "height": 800
    }
   },
   "x7|g07 lci": {
@@ -7483,10 +7483,10 @@
    "height": 316,
    "car": "bmw-x7-g07-lci-xdrive40d-m-sport-suv-2022-new-skyscraper-grey-g07-lci-40d-45.webp",
    "scene": {
-    "src": "/generation/scene/x7-g07-lci-light.webp",
-    "darkSrc": "/generation/scene/x7-g07-lci-dark.webp",
+    "src": "/generation/stage/x7-g07-lci-light.webp",
+    "darkSrc": "/generation/stage/x7-g07-lci-dark.webp",
     "width": 1200,
-    "height": 676
+    "height": 800
    }
   },
   "z3|e36 7": {
@@ -7495,10 +7495,10 @@
    "height": 315,
    "car": "bmw-z3-e36-7-z3-3-0i-roadster-roadster-2000-2002-new-estoril-blue-z3-30-45.webp",
    "scene": {
-    "src": "/generation/scene/z3-e36-7-light.webp",
-    "darkSrc": "/generation/scene/z3-e36-7-dark.webp",
+    "src": "/generation/stage/z3-e36-7-light.webp",
+    "darkSrc": "/generation/stage/z3-e36-7-dark.webp",
     "width": 1200,
-    "height": 676
+    "height": 800
    }
   },
   "z3|e36 8": {
@@ -7507,10 +7507,10 @@
    "height": 307,
    "car": "bmw-z3-e36-8-z3-coupe-3-0-coupe-2000-2002-new-estoril-blue-z3-c30-45.webp",
    "scene": {
-    "src": "/generation/scene/z3-e36-8-light.webp",
-    "darkSrc": "/generation/scene/z3-e36-8-dark.webp",
+    "src": "/generation/stage/z3-e36-8-light.webp",
+    "darkSrc": "/generation/stage/z3-e36-8-dark.webp",
     "width": 1200,
-    "height": 676
+    "height": 800
    }
   },
   "z4|e85": {
@@ -7519,10 +7519,10 @@
    "height": 349,
    "car": "bmw-z4-e85-2-0i-roadster-roadster-2003-2005-new-sterling-grey-e85-20i-45.webp",
    "scene": {
-    "src": "/generation/scene/z4-e85-light.webp",
-    "darkSrc": "/generation/scene/z4-e85-dark.webp",
+    "src": "/generation/stage/z4-e85-light.webp",
+    "darkSrc": "/generation/stage/z4-e85-dark.webp",
     "width": 1200,
-    "height": 676
+    "height": 800
    }
   },
   "z4|e85 lci": {
@@ -7531,10 +7531,10 @@
    "height": 308,
    "car": "bmw-z4-e85-lci-2-5si-roadster-2006-2008-new-montego-blue-e85-25si-45.webp",
    "scene": {
-    "src": "/generation/scene/z4-e85-lci-light.webp",
-    "darkSrc": "/generation/scene/z4-e85-lci-dark.webp",
+    "src": "/generation/stage/z4-e85-lci-light.webp",
+    "darkSrc": "/generation/stage/z4-e85-lci-dark.webp",
     "width": 1200,
-    "height": 676
+    "height": 800
    }
   },
   "z4|e86": {
@@ -7543,10 +7543,10 @@
    "height": 340,
    "car": "bmw-z4-e86-3-0si-coupe-coupe-2006-2008-new-sparkling-graphite-e86-coupe-45.webp",
    "scene": {
-    "src": "/generation/scene/z4-e86-light.webp",
-    "darkSrc": "/generation/scene/z4-e86-dark.webp",
+    "src": "/generation/stage/z4-e86-light.webp",
+    "darkSrc": "/generation/stage/z4-e86-dark.webp",
     "width": 1200,
-    "height": 676
+    "height": 800
    }
   },
   "z4|e89": {
@@ -7555,10 +7555,10 @@
    "height": 311,
    "car": "bmw-z4-e89-sdrive23i-roadster-2009-2011-new-space-grey-e89-23i-45.webp",
    "scene": {
-    "src": "/generation/scene/z4-e89-light.webp",
-    "darkSrc": "/generation/scene/z4-e89-dark.webp",
+    "src": "/generation/stage/z4-e89-light.webp",
+    "darkSrc": "/generation/stage/z4-e89-dark.webp",
     "width": 1200,
-    "height": 676
+    "height": 800
    }
   },
   "z4|g29": {
@@ -7567,10 +7567,10 @@
    "height": 310,
    "car": "bmw-z4-g29-m40i-roadster-2019-new-frozen-grey-g29-m40i-45.webp",
    "scene": {
-    "src": "/generation/scene/z4-g29-light.webp",
-    "darkSrc": "/generation/scene/z4-g29-dark.webp",
+    "src": "/generation/stage/z4-g29-light.webp",
+    "darkSrc": "/generation/stage/z4-g29-dark.webp",
     "width": 1200,
-    "height": 676
+    "height": 800
    }
   },
   "z8|e52": {
@@ -7579,10 +7579,10 @@
    "height": 312,
    "car": "bmw-z8-e52-alpina-v8-roadster-roadster-2003-special-alpina-blue-z8-alpina-45.webp",
    "scene": {
-    "src": "/generation/scene/z8-e52-light.webp",
-    "darkSrc": "/generation/scene/z8-e52-dark.webp",
+    "src": "/generation/stage/z8-e52-light.webp",
+    "darkSrc": "/generation/stage/z8-e52-dark.webp",
     "width": 1200,
-    "height": 676
+    "height": 800
    }
   }
  },

@@ -1,174 +1,190 @@
 {
-  "h2": "Comparison Hub -<br /><span class=\"heading-accent\">Head-to-Head Verdicts</span>",
+  "h2": "Comparison Hub - <span class=\"block heading-accent\">Head-to-Head</span> Verdicts",
   "subHeadline": "The comparisons BMW buyers actually want - generation vs generation, engine vs engine, model vs model. Honest, data-backed, and built for real-world decision-making.",
-  "headerImage": {
-    "src": "/home-image/sec-header-light.webp",
-    "alt": "BMW kidney grille and headlights"
-  },
   "heroImages": {
     "light": {
-      "src": "/home-image/sec-header-light.webp",
-      "alt": "BMW kidney grille and headlights"
+      "src": "/home-image/compare-light.webp",
+      "alt": "BMW 3 Series F30 under the arch"
     },
     "dark": {
-      "src": "/home-image/sec-header-dark.webp",
-      "alt": "BMW kidney grille and headlights at night"
+      "src": "/home-image/compare-dark.webp",
+      "alt": "BMW 3 Series F30 under the arch at night"
     }
   },
-  "columns": [
-    "#",
-    "Comparison",
-    "Verdict Preview",
-    "Link"
-  ],
   "comparisons": [
     {
-      "id": "01",
+      "id": 1,
       "title": "E90 vs F30 vs G20 3 Series",
       "preview": "Which 3 Series generation to buy - the verdict on reliability, running costs, and long-term value. The F30 LCI (2016+) is the sweet spot; the E90 is the bargain-with-risk; the G20 is the safest.",
-      "icon": "timeline",
-      "sides": [
+      "image": {
+        "src": "/home-image/cards/compare-e90-f30-g20-light.webp",
+        "alt": "BMW 3 Series E90, F30 and G20"
+      },
+      "options": [
         {
-          "label": "E90",
-          "hint": "3 Series E90",
-          "image": {
-            "alt": "BMW E90"
-          }
+          "label": "E90"
         },
         {
-          "label": "F30",
-          "hint": "3 Series F30 LCI",
-          "image": {
-            "alt": "BMW F30"
-          }
+          "label": "F30"
         },
         {
-          "label": "G20",
-          "hint": "3 Series G20",
-          "image": {
-            "alt": "BMW G20"
-          }
+          "label": "G20"
         }
       ],
       "link": {
-        "label": "Read the verdict →",
+        "label": "Read the verdict",
         "href": "/compare/e90-vs-f30"
+      },
+      "imageDark": {
+        "src": "/home-image/cards/compare-e90-f30-g20-dark.webp",
+        "alt": "BMW 3 Series E90, F30 and G20"
       }
     },
     {
-      "id": "02",
+      "id": 2,
       "title": "N47 vs B47 Diesel",
       "preview": "The chain-tensioner risk vs the revised architecture. N47: 1,450 enquiries in 2025, mostly timing chain [BMW-VERIFIED]. B47: 930 enquiries, significantly lower failure rate [BMW-VERIFIED]. The B47 wins on reliability; the N47 wins on purchase price - but only with documented chain history.",
-      "icon": "chain",
-      "left": {
-        "label": "N47",
-        "image": {
-          "alt": "BMW N47"
-        }
+      "image": {
+        "src": "/home-image/cards/compare-n47-b47-light.webp",
+        "alt": "BMW N47 and B47 diesel engines"
       },
-      "right": {
-        "label": "B47",
-        "image": {
-          "alt": "BMW B47"
+      "options": [
+        {
+          "label": "N47",
+          "icon": "alert",
+          "tone": "avoid"
+        },
+        {
+          "label": "B47",
+          "icon": "check",
+          "tone": "safe"
         }
-      },
+      ],
       "link": {
-        "label": "Read the verdict →",
+        "label": "Read the verdict",
         "href": "/compare/b47-vs-n47"
+      },
+      "imageDark": {
+        "src": "/home-image/cards/compare-n47-b47-dark.webp",
+        "alt": "BMW N47 and B47 diesel engines"
       }
     },
     {
-      "id": "03",
+      "id": 3,
       "title": "B58 vs N55 Petrol",
       "preview": "The modern straight-six vs its twin-scroll predecessor. B58: 540 enquiries, well-understood cooling issues [BMW-VERIFIED]. N55: pattern-data tier, solid but older. The B58 is more reliable; the N55 is cheaper to buy. Both are better than the N54's HPFP woes.",
-      "icon": "engine",
-      "left": {
-        "label": "B58",
-        "image": {
-          "alt": "BMW B58"
-        }
+      "image": {
+        "src": "/home-image/cards/compare-b58-n55-light.webp",
+        "alt": "BMW B58 and N55 petrol engines"
       },
-      "right": {
-        "label": "N55",
-        "image": {
-          "alt": "BMW N55"
+      "options": [
+        {
+          "label": "B58",
+          "icon": "check",
+          "tone": "safe"
+        },
+        {
+          "label": "N55",
+          "icon": "dot",
+          "tone": "info"
+        },
+        {
+          "label": "N54",
+          "icon": "x",
+          "tone": "avoid"
         }
-      },
+      ],
       "link": {
-        "label": "Read the verdict →",
+        "label": "Read the verdict",
         "href": "/compare/b58-vs-n55"
+      },
+      "imageDark": {
+        "src": "/home-image/cards/compare-b58-n55-dark.webp",
+        "alt": "BMW B58 and N55 petrol engines"
       }
     },
     {
-      "id": "04",
+      "id": 4,
       "title": "3 Series vs 5 Series",
       "preview": "Which offers better value for money over 3-5 years - the compact saloon or the executive estate? They share engines, so buy on condition, not badge. The 5 Series is heavier but more refined; the 3 Series is lighter and more agile. Both are excellent if you pick the right engine.",
-      "icon": "scales",
-      "left": {
-        "label": "3 Series",
-        "hint": "3 Series G20",
-        "image": {
-          "alt": "BMW 3 Series"
-        }
+      "image": {
+        "src": "/home-image/cards/compare-3-5-series-light.webp",
+        "alt": "BMW 3 Series and 5 Series"
       },
-      "right": {
-        "label": "5 Series",
-        "hint": "5 Series G31 touring",
-        "image": {
-          "alt": "BMW 5 Series"
+      "options": [
+        {
+          "label": "3 Series",
+          "icon": "car"
+        },
+        {
+          "label": "5 Series",
+          "icon": "car"
         }
-      },
+      ],
       "link": {
-        "label": "Read the verdict →",
+        "label": "Read the verdict",
         "href": "/compare"
+      },
+      "imageDark": {
+        "src": "/home-image/cards/compare-3-5-series-dark.webp",
+        "alt": "BMW 3 Series and 5 Series"
       }
     },
     {
-      "id": "05",
+      "id": 5,
       "title": "X3 vs X5",
       "preview": "The mid-size SUV vs the large SUV - which one should you own? X3 F25: 316 enquiries [BMW-VERIFIED]. X5 F15: 288 enquiries [BMW-VERIFIED]. The X3 is cheaper to run; the X5 offers more space. Both share engines - choose based on your space needs, not reliability.",
-      "icon": "suv",
-      "left": {
-        "label": "X3",
-        "hint": "X3 F25",
-        "image": {
-          "alt": "BMW X3"
-        }
+      "image": {
+        "src": "/home-image/cards/compare-x3-x5-light.webp",
+        "alt": "BMW X3 and X5"
       },
-      "right": {
-        "label": "X5",
-        "hint": "X5 F15",
-        "image": {
-          "alt": "BMW X5"
+      "options": [
+        {
+          "label": "X3",
+          "icon": "car",
+          "note": "316 enquiries [BMW-VERIFIED]"
+        },
+        {
+          "label": "X5",
+          "icon": "car",
+          "note": "288 enquiries [BMW-VERIFIED]"
         }
-      },
+      ],
       "link": {
-        "label": "Read the verdict →",
+        "label": "Read the verdict",
         "href": "/compare/x5-vs-x3"
+      },
+      "imageDark": {
+        "src": "/home-image/cards/compare-x3-x5-dark.webp",
+        "alt": "BMW X3 and X5"
       }
     },
     {
-      "id": "06",
+      "id": 6,
       "title": "Petrol vs Diesel Running Costs",
       "preview": "Which fuel type is cheaper to own in 2026? Diesel: better motorway economy but higher DPF/EGR maintenance. Petrol: lower purchase price (used market) but higher fuel costs. The B47 diesel is the motorway champion; the B48 petrol is the urban winner.",
-      "icon": "fuel",
-      "left": {
-        "label": "Petrol",
-        "hint": "B48",
-        "image": {
-          "alt": "BMW B48 petrol engine"
-        }
+      "image": {
+        "src": "/home-image/cards/compare-petrol-diesel-light.webp",
+        "alt": "BMW B48 petrol and B47 diesel engines"
       },
-      "right": {
-        "label": "Diesel",
-        "hint": "B47",
-        "image": {
-          "alt": "BMW B47 diesel engine"
+      "options": [
+        {
+          "label": "DIESEL",
+          "icon": "drop"
+        },
+        {
+          "label": "PETROL",
+          "icon": "drop",
+          "tone": "safe"
         }
-      },
+      ],
       "link": {
-        "label": "Read the verdict →",
+        "label": "Read the verdict",
         "href": "/compare/diesel-vs-petrol-running-costs"
+      },
+      "imageDark": {
+        "src": "/home-image/cards/compare-petrol-diesel-dark.webp",
+        "alt": "BMW B48 petrol and B47 diesel engines"
       }
     }
   ]

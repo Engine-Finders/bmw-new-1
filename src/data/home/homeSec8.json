@@ -1,109 +1,162 @@
 {
   "h2": "<span class=\"heading-accent\">BMW</span> Knowledge Centres",
-  "subHeadline": "Deep, permanent reference hubs for the engines BMW owners research most - not blog posts, not one-off articles. Every guide is built on real UK enquiry data and BMW-specific expertise.",
+  "subHeadline": "Deep, permanent reference hubs for the engines BMW owners research most -not blog posts, not one-off articles. Every guide is built on real UK enquiry data and BMW-specific expertise.",
   "headerImage": {
-    "src": "/home-image/sec-header-light.webp",
-    "alt": "BMW kidney grille and headlights"
+    "src": "/home-image/knowledge-light.webp",
+    "alt": "BMW N47 engine"
   },
-  "headerImageDark": {
-    "src": "/home-image/sec-header-dark.webp",
-    "alt": "BMW kidney grille and headlights at night"
-  },
-  "columns": [
-    "#",
-    "Tile",
-    "Icon",
-    "Description",
-    "Link"
-  ],
   "centres": [
     {
-      "id": "01",
+      "id": 1,
       "title": "N47 Knowledge Centre",
-      "emoji": "⛓️",
-      "icon": "chain",
-      "description": "Every variant, every failure, every generation it was fitted to - the definitive N47 guide. Covering 1,450 enquiries in 2025, this is the most-researched BMW diesel [BMW-VERIFIED].",
+      "icon": "⛓️",
+      "description": "Every variant, every failure, every generation it was fitted to -the definitive N47 guide. Covering 1,450 enquiries in 2025, this is the most-researched BMW diesel [BMW-VERIFIED].",
+      "image": {
+        "src": "/home-image/cards/centre-n47-light.webp",
+        "alt": "BMW N47 diesel engine"
+      },
       "link": {
         "label": "Explore →",
         "href": "/engine/n47"
+      },
+      "imageDark": {
+        "src": "/home-image/cards/centre-n47-dark.webp",
+        "alt": "BMW N47 diesel engine"
       }
     },
     {
-      "id": "02",
+      "id": 2,
       "title": "B58 Knowledge Centre",
-      "emoji": "🔧",
-      "icon": "wrench",
-      "description": "The modern straight-six's full ownership profile - performance, reliability, and known issues. The engine BMW owners trust most, with just 540 enquiries in 2025 [BMW-VERIFIED].",
+      "icon": "🔧",
+      "description": "The modern straight-six's full ownership profile -performance, reliability, and known issues. The engine BMW owners trust most, with just 540 enquiries in 2025 [BMW-VERIFIED].",
+      "image": {
+        "src": "/home-image/cards/centre-b58-light.webp",
+        "alt": "BMW B58 petrol engine"
+      },
       "link": {
         "label": "Explore →",
         "href": "/engine/b57-b58"
+      },
+      "imageDark": {
+        "src": "/home-image/cards/centre-b58-dark.webp",
+        "alt": "BMW B58 petrol engine"
       }
     },
     {
-      "id": "03",
+      "id": 3,
       "title": "N57 Knowledge Centre",
-      "emoji": "🔧",
-      "icon": "wrench",
-      "description": "The 3.0 diesel's complete guide - 330d, 530d, X3, X5, and known wear patterns. 830 enquiries in 2025 [BMW-VERIFIED].",
+      "icon": "🔧",
+      "description": "The 3.0 diesel's complete guide -330d, 530d, X3, X5, and known wear patterns. 830 enquiries in 2025 [BMW-VERIFIED].",
+      "image": {
+        "src": "/home-image/cards/centre-n57-light.webp",
+        "alt": "BMW N57 diesel engine"
+      },
       "link": {
         "label": "Explore →",
         "href": "/engine/n57"
+      },
+      "imageDark": {
+        "src": "/home-image/cards/centre-n57-dark.webp",
+        "alt": "BMW N57 diesel engine"
       }
     },
     {
-      "id": "04",
+      "id": 4,
       "title": "B47 Knowledge Centre",
-      "emoji": "⛓️",
-      "icon": "chain",
+      "icon": "⛓️",
       "description": "The post-chain-revision diesel that changed BMW's reliability story. 930 enquiries in 2025, predominantly due-diligence, not failure [BMW-VERIFIED].",
+      "image": {
+        "src": "/home-image/cards/centre-b47-light.webp",
+        "alt": "BMW B47 diesel engine"
+      },
       "link": {
         "label": "Explore →",
         "href": "/engine/b37-b47"
+      },
+      "imageDark": {
+        "src": "/home-image/cards/centre-b47-dark.webp",
+        "alt": "BMW B47 diesel engine"
       }
     },
     {
-      "id": "05",
+      "id": 5,
       "title": "N63/S63 Knowledge Centre",
-      "emoji": "🏆",
-      "icon": "trophy",
-      "description": "The hot-vee V8's full story - valve seals, turbo lines, and when to walk away. 440 enquiries (N63) + 410 (S63) in 2025 [BMW-VERIFIED].",
+      "icon": "🏆",
+      "description": "The hot-vee V8's full story -valve seals, turbo lines, and when to walk away. 440 enquiries (N63) + 410 (S63) in 2025 [BMW-VERIFIED].",
+      "image": {
+        "src": "/home-image/cards/centre-n63-s63-light.webp",
+        "alt": "BMW S63 V8 engine"
+      },
       "link": {
         "label": "Explore →",
         "href": "/engine/n62-n63"
+      },
+      "imageDark": {
+        "src": "/home-image/cards/centre-n63-s63-dark.webp",
+        "alt": "BMW S63 V8 engine"
       }
     },
     {
-      "id": "06",
+      "id": 6,
       "title": "B57 Knowledge Centre",
-      "emoji": "🔧",
-      "icon": "wrench",
-      "description": "The B57 3.0 diesel's full profile - the G30/G20/G05 diesel of choice. Robust, well-supported, and increasingly common in the used market.",
+      "icon": "🔧",
+      "description": "The B57 3.0 diesel's full profile -the G30/G20/G05 diesel of choice. Robust, well-supported, and increasingly common in the used market.",
+      "image": {
+        "src": "/home-image/cards/centre-b57-light.webp",
+        "alt": "BMW B57 diesel engine"
+      },
       "link": {
         "label": "Explore →",
         "href": "/engine/b57-b58"
+      },
+      "imageDark": {
+        "src": "/home-image/cards/centre-b57-dark.webp",
+        "alt": "BMW B57 diesel engine"
       }
     },
     {
-      "id": "07",
+      "id": 7,
       "title": "M54 Classic Engine Guide",
-      "emoji": "🏆",
-      "icon": "trophy",
-      "description": "The bulletproof E46-era straight-six - why it's the keeper engine, what goes wrong, and why values are rising. The classic BMW engine hub.",
+      "icon": "🏆",
+      "description": "The bulletproof E46-era straight-six -why it's the keeper engine, what goes wrong, and why values are rising. The classic BMW engine hub.",
+      "image": {
+        "src": "/home-image/cards/centre-m54-light.webp",
+        "alt": "BMW E46 330i (M54)"
+      },
       "link": {
         "label": "Explore →",
         "href": "/engine/m50-m52-m54"
+      },
+      "imageDark": {
+        "src": "/home-image/cards/centre-m54-dark.webp",
+        "alt": "BMW E46 330i (M54)"
       }
     },
     {
-      "id": "08",
+      "id": 8,
       "title": "Timing Chain Knowledge Centre",
-      "emoji": "⛓️",
-      "icon": "chain",
-      "description": "The complete guide to BMW timing chain failures - N47, N57, S63 and more. The #1 failure category in our 2025 data, with N47 alone generating 1,450 enquiries [BMW-VERIFIED].",
+      "icon": "⛓️",
+      "description": "The complete guide to BMW timing chain failures -N47, N57, S63 and more. The #1 failure category in our 2025 data, with N47 alone generating 1,450 enquiries [BMW-VERIFIED].",
+      "image": {
+        "src": "/home-image/cards/centre-timing-chain-light.webp",
+        "alt": "BMW timing chain kit"
+      },
       "link": {
         "label": "Explore →",
         "href": "/failures/timing-chain-diagnosis-guide"
+      },
+      "imageDark": {
+        "src": "/home-image/cards/centre-timing-chain-dark.webp",
+        "alt": "BMW timing chain kit"
       }
     }
-  ]
+  ],
+  "footer": {
+    "title": "100% Data-Verified. Built for BMW Owners.",
+    "text": "Every knowledge centre is built on real UK enquiry data and BMW-specific expertise."
+  },
+  "headerImageDark": {
+    "src": "/home-image/knowledge-dark.webp",
+    "alt": "BMW N47 engine at night"
+  }
 }

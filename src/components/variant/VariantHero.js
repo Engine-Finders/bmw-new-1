@@ -319,10 +319,10 @@ export default function VariantHero({ data }) {
         {/* Desktop: the scene sits on the right and fades in from the page colour, as on the model page.
             Below 1600px it starts a third of the way in so the copy stays on plain page colour. */}
         {sceneSrc ? (
-          <div className="absolute inset-y-0 left-[34%] right-0 hidden xl:block min-[1600px]:left-auto min-[1600px]:aspect-[1200/676]">
-            <Image src={sceneSrc} alt={carAlt} fill className="object-cover object-right" sizes="(min-width: 1280px) 1200px, 100vw" priority />
+          <div className="absolute inset-y-0 left-[34%] right-0 hidden xl:block min-[1600px]:left-auto min-[1600px]:aspect-[3/2]">
+            <Image src={sceneSrc} alt={carAlt} fill className="object-cover object-right-bottom" sizes="(min-width: 1280px) 1200px, 100vw" priority />
             <div className="absolute inset-0 bg-[linear-gradient(90deg,var(--color-page)_0%,color-mix(in_srgb,var(--color-page)_88%,transparent)_16%,color-mix(in_srgb,var(--color-page)_45%,transparent)_34%,transparent_56%)]" />
-            <div className="absolute inset-x-0 bottom-0 h-40 bg-[linear-gradient(0deg,var(--color-page)_0%,transparent_100%)]" />
+            <div className="absolute inset-x-0 bottom-0 h-8 bg-[linear-gradient(0deg,var(--color-page)_0%,transparent_100%)]" />
           </div>
         ) : null}
 
@@ -359,8 +359,8 @@ export default function VariantHero({ data }) {
 
           {/* Phones, tablets + small laptops: the scene as its own band, so it never sits behind the copy */}
           {sceneSrc ? (
-            <div className="relative -mx-4 my-3 aspect-[16/10] max-h-[440px] w-[calc(100%+2rem)] overflow-hidden md:-mx-8 md:w-[calc(100%+4rem)] xl:hidden">
-              <Image src={sceneSrc} alt={carAlt} fill className="object-cover object-[70%_center]" sizes="100vw" priority />
+            <div className="relative -mx-4 my-3 aspect-[3/2] max-h-[460px] w-[calc(100%+2rem)] overflow-hidden md:-mx-8 md:w-[calc(100%+4rem)] xl:hidden">
+              <Image src={sceneSrc} alt={carAlt} fill className="object-cover object-[70%_bottom]" sizes="100vw" priority />
               <div className="absolute inset-x-0 top-0 h-14 bg-[linear-gradient(180deg,var(--color-page)_0%,transparent_100%)]" />
               <div className="absolute inset-x-0 bottom-0 h-14 bg-[linear-gradient(0deg,var(--color-page)_0%,transparent_100%)]" />
             </div>

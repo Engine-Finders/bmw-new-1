@@ -1,72 +1,61 @@
 {
   "h2": "Diagnose Your <span class=\"heading-accent\">BMW Engine Problem</span>",
   "subHeadline": "Answer a few questions about your symptoms - we'll match you against 15+ known BMW failure patterns, show you the likely diagnosis, OEM part references, and an honest repair vs. replace cost estimate.",
-  "headerImage": {
-    "src": "/home-image/sec-header-light.webp",
-    "alt": "BMW diagnostic calculator"
-  },
   "heroImages": {
     "light": {
-      "src": "/home-image/sec-header-light.webp",
-      "alt": "BMW kidney grille and headlights"
+      "src": "/home-image/diagnose-light.webp",
+      "alt": "BMW 5 Series under the arch"
     },
     "dark": {
-      "src": "/home-image/sec-header-dark.webp",
-      "alt": "BMW kidney grille and headlights at night"
+      "src": "/home-image/diagnose-dark.webp",
+      "alt": "BMW 5 Series under the arch at night"
     }
   },
-  "trustStripLabel": "Trust Strip (above calculator)",
   "trustStrip": [
     {
       "icon": "real-inquiries",
-      "text": "Powered by 24,650+ real UK enquiries"
+      "value": "24,650+",
+      "prefix": "Powered by",
+      "text": "real UK enquiries"
     },
     {
       "icon": "vetted-specialist",
-      "text": "20+ vetted BMW specialists"
+      "value": "20+",
+      "text": "vetted BMW specialists"
     },
     {
       "icon": "oem-references",
+      "value": "",
       "text": "OEM part references included"
     },
     {
       "icon": "engine-finders",
+      "value": "",
       "text": "Part of Engine Finders"
     }
   ],
   "howItWorks": {
-    "h3": "How It Works",
+    "title": "How It Works",
     "steps": [
       {
         "step": 1,
-        "icon": "shortcut",
+        "icon": "symptoms",
         "title": "Tell us your symptoms",
         "text": "Select from common failure categories or use the shortcut grid if you already know the fault."
       },
       {
         "step": 2,
-        "icon": "car",
+        "icon": "vehicle",
         "title": "Tell us about your vehicle",
         "text": "Age and estimated value help us calculate whether repair or replacement makes financial sense."
       },
       {
         "step": 3,
-        "icon": "clipboard",
+        "icon": "diagnose",
         "title": "Get your diagnosis",
         "text": "We'll show you the likely fault, OEM part numbers, severity level, and a transparent cost breakdown."
       }
     ]
-  },
-  "whyTrust": {
-    "h3": "Why Trust This Diagnosis?",
-    "columns": [
-      "Trust Signal",
-      "What It Means"
-    ]
-  },
-  "shortcuts": {
-    "title": "Known BMW Failure Patterns",
-    "text": "Already know the fault? Jump straight to it - or start from your symptoms."
   },
   "calculator": {
     "stepLabels": [
@@ -1206,6 +1195,14 @@
         "title": "Honest Verdict System",
         "text": "We tell you when replacement isn't worth it - not every site does that."
       }
+    ]
+  },
+  "trustStripLabel": "Trust Strip (above calculator)",
+  "whyTrust": {
+    "title": "Why Trust This Diagnosis?",
+    "columns": [
+      "Trust Signal",
+      "What It Means"
     ]
   }
 }

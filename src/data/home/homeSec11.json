@@ -1,254 +1,150 @@
 {
-  "h2": "BMW Engine History -<br /><span class=\"heading-accent\">Six Decades of Engineering</span>",
+  "h2": "<span class=\"block\">BMW Engine History</span><span class=\"block heading-accent\">Six Decades of Engineering</span>",
   "subHeadline": "From the carburetted M10 to the modular B58, mapped against the models that carried it. The complete BMW engine timeline.",
   "headerImage": {
-    "src": "/home-image/sec-header-light.webp",
-    "alt": "BMW kidney grille and headlights"
-  },
-  "headerImageDark": {
-    "src": "/home-image/sec-header-dark.webp",
-    "alt": "BMW kidney grille and headlights at night"
+    "src": "/home-image/history-light.webp",
+    "alt": "BMW S68 V8 engine"
   },
   "columns": [
-    "Era",
-    "Key Engines",
-    "Iconic Models"
+    "ERA",
+    "KEY ENGINES",
+    "ICONIC MODELS"
   ],
   "eras": [
     {
       "era": "1960s-1970s",
-      "engines": [
+      "engines": "M10, M30",
+      "engineImage": null,
+      "models": "2002, E3, E9",
+      "modelImages": [
         {
-          "name": "M10",
-          "href": "/engine/m10"
-        },
-        {
-          "name": "M30",
-          "href": "/engine/m30"
+          "src": "/model/hero/2002-card.webp",
+          "alt": "BMW 2002"
         }
-      ],
-      "models": [
-        {
-          "name": "2002",
-          "href": "/2002"
-        },
-        {
-          "name": "E3"
-        },
-        {
-          "name": "E9"
-        }
-      ],
-      "photoHint": "2002",
-      "photoAlt": "BMW 2002"
+      ]
     },
     {
       "era": "1980s",
-      "engines": [
+      "engines": "M20, M30B35, S14",
+      "engineImage": null,
+      "models": "E30, E28, E24",
+      "modelImages": [
         {
-          "name": "M20",
-          "href": "/engine/m20"
+          "src": "/cars/bmw-3-series-e30-318i-saloon-1982-1991-new-alpine-white-e30-318i-45.webp",
+          "alt": "BMW E30"
         },
         {
-          "name": "M30B35",
-          "href": "/engine/m30"
+          "src": "/cars/bmw-5-series-e28-535i-saloon-1981-1987-new-lachssilber-e28-535i-45.webp",
+          "alt": "BMW E28"
         },
         {
-          "name": "S14",
-          "href": "/engine/s14"
+          "src": "/cars/bmw-m6-e24-m635csi-m6-coupe-1983-1989-new-black-recoloured-e24-m6-45.webp",
+          "alt": "BMW E24"
         }
-      ],
-      "models": [
-        {
-          "name": "E30",
-          "href": "/3-series/e30"
-        },
-        {
-          "name": "E28",
-          "href": "/5-series/e28"
-        },
-        {
-          "name": "E24",
-          "href": "/6-series/e24"
-        }
-      ],
-      "photoHint": "3 Series E30",
-      "photoAlt": "BMW 3 Series E30"
+      ]
     },
     {
       "era": "1990s",
-      "engines": [
+      "engines": "M42, M50, M52, S50, S52",
+      "engineImage": null,
+      "models": "E36, E34, E31",
+      "modelImages": [
         {
-          "name": "M42",
-          "href": "/engine/m40-m42-m43-m44"
+          "src": "/cars/bmw-3-series-e36-325i-sport-saloon-1991-1995-new-montreal-blue-e36-325i-45.webp",
+          "alt": "BMW E36"
         },
         {
-          "name": "M50",
-          "href": "/engine/m50-m52-m54"
+          "src": "/cars/bmw-5-series-e34-m5-3-6-saloon-1988-1992-new-macao-blue-e34-m5-45.webp",
+          "alt": "BMW E34"
         },
         {
-          "name": "M52",
-          "href": "/engine/m50-m52-m54"
-        },
-        {
-          "name": "S50",
-          "href": "/engine/s50-s52-s54"
-        },
-        {
-          "name": "S52",
-          "href": "/engine/s50-s52-s54"
+          "src": "/model/hero/8-series-card.webp",
+          "alt": "BMW E31"
         }
-      ],
-      "models": [
-        {
-          "name": "E36",
-          "href": "/3-series/e36"
-        },
-        {
-          "name": "E34",
-          "href": "/5-series/e34"
-        },
-        {
-          "name": "E31",
-          "href": "/8-series/e31"
-        }
-      ],
-      "photoHint": "3 Series E36",
-      "photoAlt": "BMW 3 Series E36"
+      ]
     },
     {
       "era": "2000s",
-      "engines": [
+      "engines": "M54, N52, N54, S54, S62",
+      "engineImage": null,
+      "models": "E46, E39, E38, E53",
+      "modelImages": [
         {
-          "name": "M54",
-          "href": "/engine/m50-m52-m54"
+          "src": "/cars/bmw-3-series-e46-330xd-touring-estate-2000-2005-new-titanium-silver-e46-touring-45.webp",
+          "alt": "BMW E46"
         },
         {
-          "name": "N52",
-          "href": "/engine/n52-n53"
+          "src": "/cars/bmw-5-series-e39-530d-touring-estate-1998-2003-new-titanium-silver-e39-touring-45.webp",
+          "alt": "BMW E39"
         },
         {
-          "name": "N54",
-          "href": "/engine/n54-n55"
+          "src": "/model/hero/7-series-card.webp",
+          "alt": "BMW E38"
         },
         {
-          "name": "S54",
-          "href": "/engine/s50-s52-s54"
-        },
-        {
-          "name": "S62",
-          "href": "/engine/s62"
+          "src": "/cars/bmw-x5-e53-3-0i-se-suv-1999-2003-new-titanium-silver-e53-30i-45.webp",
+          "alt": "BMW E53"
         }
-      ],
-      "models": [
-        {
-          "name": "E46",
-          "href": "/3-series/e46"
-        },
-        {
-          "name": "E39",
-          "href": "/5-series/e39"
-        },
-        {
-          "name": "E38",
-          "href": "/7-series/e38"
-        },
-        {
-          "name": "E53",
-          "href": "/x5/e53"
-        }
-      ],
-      "photoHint": "5 Series E39",
-      "photoAlt": "BMW 5 Series E39"
+      ]
     },
     {
       "era": "2010s",
-      "engines": [
+      "engines": "N47, N55, N57, S63, S55",
+      "engineImage": {
+        "src": "/engines/n47d20c.webp",
+        "alt": "BMW N47 engine"
+      },
+      "models": "E90, F10, F30, F15",
+      "modelImages": [
         {
-          "name": "N47",
-          "href": "/engine/n47"
+          "src": "/cars/bmw-3-series-e90-lci-330d-m-sport-saloon-2008-2012-new-space-grey-e90-330d-45.webp",
+          "alt": "BMW E90"
         },
         {
-          "name": "N55",
-          "href": "/engine/n54-n55"
+          "src": "/cars/bmw-5-series-f10-lci-m550d-xdrive-saloon-2013-2016-new-carbon-black-m550d-45.webp",
+          "alt": "BMW F10"
         },
         {
-          "name": "N57",
-          "href": "/engine/n57"
+          "src": "/cars/bmw-3-series-f30-330d-m-sport-saloon-2012-2015-new-mineral-white-f30-330d-45.webp",
+          "alt": "BMW F30"
         },
         {
-          "name": "S63",
-          "href": "/engine/s63-s65"
-        },
-        {
-          "name": "S55",
-          "href": "/engine/s55"
+          "src": "/cars/bmw-x5-f15-xdrive30d-se-suv-2013-2015-new-space-grey-f15-30d-45.webp",
+          "alt": "BMW F15"
         }
-      ],
-      "models": [
-        {
-          "name": "E90",
-          "href": "/3-series/e90"
-        },
-        {
-          "name": "F10",
-          "href": "/5-series/f10"
-        },
-        {
-          "name": "F30",
-          "href": "/3-series/f30"
-        },
-        {
-          "name": "F15",
-          "href": "/x5/f15"
-        }
-      ],
-      "photoHint": "5 Series F10",
-      "photoAlt": "BMW 5 Series F10"
+      ]
     },
     {
       "era": "2020s",
-      "engines": [
+      "engines": "B47, B48, B58, S58",
+      "engineImage": {
+        "src": "/engines/b58b30.webp",
+        "alt": "BMW B47 engine"
+      },
+      "models": "G20, G30, G05, G07",
+      "modelImages": [
         {
-          "name": "B47",
-          "href": "/engine/b37-b47"
+          "src": "/cars/bmw-3-series-g20-lci-320d-m-sport-saloon-2022-new-skyscraper-grey-g20-lci-320d-45.webp",
+          "alt": "BMW G20"
         },
         {
-          "name": "B48",
-          "href": "/engine/b38-b48"
+          "src": "/cars/bmw-5-series-g30-lci-530e-m-sport-saloon-2020-2023-new-tanzanite-blue-g30-lci-530e-45.webp",
+          "alt": "BMW G30"
         },
         {
-          "name": "B58",
-          "href": "/engine/b57-b58"
+          "src": "/cars/bmw-x5-g05-lci-m60i-xdrive-suv-2023-new-marina-bay-blue-g05-m60i-45.webp",
+          "alt": "BMW G05"
         },
         {
-          "name": "S58"
+          "src": "/cars/bmw-x7-g07-lci-xdrive40d-m-sport-suv-2022-new-skyscraper-grey-g07-lci-40d-45.webp",
+          "alt": "BMW G07"
         }
-      ],
-      "models": [
-        {
-          "name": "G20",
-          "href": "/3-series/g20"
-        },
-        {
-          "name": "G30",
-          "href": "/5-series/g30"
-        },
-        {
-          "name": "G05",
-          "href": "/x5/g05"
-        },
-        {
-          "name": "G07",
-          "href": "/x7/g07"
-        }
-      ],
-      "photoHint": "X5 G05",
-      "photoAlt": "BMW X5 G05"
+      ]
     }
   ],
-  "keyTakeaway": {
-    "label": "Key Takeaway:",
-    "text": "The N47 and N57 defined the diesel era - but the B58 and B47 reversed the reliability perception. The M54 and M57 remain the classic keeper engines; the B58 is the modern gold standard."
+  "keyTakeaway": "The N47 and N57 defined the diesel era - but the B58 and B47 reversed the reliability perception. The M54 and M57 remain the classic keeper engines; the B58 is the modern gold standard.",
+  "headerImageDark": {
+    "src": "/home-image/history-dark.webp",
+    "alt": "BMW S68 V8 engine at night"
   }
 }

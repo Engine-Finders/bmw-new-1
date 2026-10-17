@@ -27,8 +27,6 @@ import homeSec12Data from "@/data/home/homeSec12.json";
 import homeSec13Data from "@/data/home/homeSec13.json";
 import homeSec14Data from "@/data/home/homeSec14.json";
 import homeSchema from "@/data/home/homeSchema.json";
-import { withHomeImages } from "@/components/shared/pageCarImages";
-import carImages from "@/data/shared/carImages.json";
 
 const DESCRIPTION =
   "The UK's Most Trusted BMW Ownership Guide. Reliability rankings, real failure data, honest repair-vs-replace economics for every BMW model ever sold in the UK. Powered by 24,650+ real UK enquiries.";
@@ -52,34 +50,20 @@ export function generateMetadata() {
 }
 
 export default function Home() {
-  // The hero car photos (light + dark theme) are already on screen, so sections below skip them.
-  const sections = withHomeImages(
-    {
-      homeSec2: homeSec2Data,
-      homeSec5: homeSec5Data,
-      homeSec6: homeSec6Data,
-      homeSec7: homeSec7Data,
-      homeSec10: homeSec10Data,
-      homeSec11: homeSec11Data,
-    },
-    carImages.homeHeroCars || []
-  );
-
-  // Sections follow the order of the BMW homepage content (sections 1-12; 12 is trust, FAQ and final CTA).
   return (
     <main>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(homeSchema) }} />
       <HomeSec1 data={homeSec1Data} />
-      <HomeSec2 data={sections.homeSec2} />
+      <HomeSec2 data={homeSec2Data} />
       <HomeSec3 data={homeSec3Data} />
       <HomeSec4 data={homeSec4Data} />
-      <HomeSec5 data={sections.homeSec5} />
-      <HomeSec6 data={sections.homeSec6} />
-      <HomeSec7 data={sections.homeSec7} />
+      <HomeSec5 data={homeSec5Data} />
+      <HomeSec6 data={homeSec6Data} />
+      <HomeSec7 data={homeSec7Data} />
       <HomeSec8 data={homeSec8Data} />
       <HomeSec9 data={homeSec9Data} />
-      <HomeSec10 data={sections.homeSec10} />
-      <HomeSec11 data={sections.homeSec11} />
+      <HomeSec10 data={homeSec10Data} />
+      <HomeSec11 data={homeSec11Data} />
       <HomeSec12 data={homeSec12Data} />
       <HomeSec13 data={homeSec13Data} />
       <HomeSec14 data={homeSec14Data} />
