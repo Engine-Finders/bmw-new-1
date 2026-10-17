@@ -48,7 +48,7 @@ function CentreCard({ item, isDark }) {
         {item.id}
       </span>
 
-      <div className="relative h-38 md:h-30">
+      <div className={`relative h-38 md:h-30 ${isDark ? "bg-[linear-gradient(180deg,#0b1826_0%,#08131e_100%)]" : "bg-[linear-gradient(180deg,#f6f8fb_0%,#edf1f6_100%)]"}`}>
         <Image src={(isDark && item.imageDark ? item.imageDark : item.image).src} alt={item.image.alt} fill className="object-cover object-center" sizes="(max-width: 768px) 100vw, 25vw" />
         <div className={isDark ? "absolute inset-x-0 bottom-0 h-14 bg-[linear-gradient(0deg,rgba(7,23,36,0.94)_0%,transparent_100%)]" : "absolute inset-x-0 bottom-0 h-14 bg-[linear-gradient(0deg,white_0%,rgba(255,255,255,0)_100%)]"} />
       </div>
@@ -75,7 +75,7 @@ export default function HomeSec8({ data }) {
 
   return (
     <section className={`relative overflow-hidden px-3 py-7 md:py-8 ${isDark ? "bg-[#02070b]" : "bg-white"}`}>
-      <div className="absolute inset-x-0 top-0 h-[520px] md:h-[330px]">
+      <div className="absolute inset-x-0 top-0 hidden h-[330px] md:block">
 
         {/* Banner on the right: the car (or engine) stays whole at header height */}
         <div className="absolute inset-y-0 right-0 w-full md:w-[64%]">

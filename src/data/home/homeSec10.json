@@ -2,7 +2,7 @@
   "h2": "BMW Market Intelligence -<span class=\"block heading-accent\">What 24,650+ UK Owners Told Us in 2025</span>",
   "subHeadline": "Drawn from real UK enquiries, not estimates. This is the data competitors can't replicate - 24,650+ real enquiries, 50+ engine codes tracked, and live market insights updated monthly.",
   "headerImage": {
-    "src": "/home-image/market-light.webp",
+    "src": "/home-image/cut/market-light.webp",
     "alt": "BMW X3 under the arch"
   },
   "stats": [
@@ -269,7 +269,7 @@
     "footer": "Updated monthly from BMWEngines.uk CRM data"
   },
   "headerImageDark": {
-    "src": "/home-image/market-dark.webp",
+    "src": "/home-image/cut/market-dark.webp",
     "alt": "BMW X3 under the arch at night"
   }
 }

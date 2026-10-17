@@ -2,7 +2,7 @@
   "h2": "<span class=\"block\">BMW Engine History</span><span class=\"block heading-accent\">Six Decades of Engineering</span>",
   "subHeadline": "From the carburetted M10 to the modular B58, mapped against the models that carried it. The complete BMW engine timeline.",
   "headerImage": {
-    "src": "/home-image/history-light.webp",
+    "src": "/home-image/cut/history-light.webp",
     "alt": "BMW S68 V8 engine"
   },
   "columns": [
@@ -144,7 +144,7 @@
   ],
   "keyTakeaway": "The N47 and N57 defined the diesel era - but the B58 and B47 reversed the reliability perception. The M54 and M57 remain the classic keeper engines; the B58 is the modern gold standard.",
   "headerImageDark": {
-    "src": "/home-image/history-dark.webp",
+    "src": "/home-image/cut/history-dark.webp",
     "alt": "BMW S68 V8 engine at night"
   }
 }

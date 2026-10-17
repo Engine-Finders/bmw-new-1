@@ -2,7 +2,7 @@
   "h2": "Why BMW Owners Trust<span class=\"block heading-accent\">BMWEngines.uk</span>",
   "subHeadline": "Built on real data, verified by specialists, and completely independent -no sponsors, no bias, just honest advice.",
   "headerImage": {
-    "src": "/home-image/trust-light.webp",
+    "src": "/home-image/cut/trust-light.webp",
     "alt": "BMW 4 Series under the arch"
   },
   "signals": [
@@ -32,7 +32,7 @@
     }
   ],
   "headerImageDark": {
-    "src": "/home-image/trust-dark.webp",
+    "src": "/home-image/cut/trust-dark.webp",
     "alt": "BMW 4 Series under the arch at night"
   }
 }

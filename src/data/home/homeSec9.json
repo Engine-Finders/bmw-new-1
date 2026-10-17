@@ -2,7 +2,7 @@
   "h2": "The BMW <span class=\"heading-accent\">Failure Database</span>",
   "subHeadline": "A permanent, categorised reference - not symptom-chasing blog posts. Every entry links to a full breakdown of symptoms, root cause, mileage window, repair cost, and replacement cost.",
   "headerImage": {
-    "src": "/home-image/failures-light.webp",
+    "src": "/home-image/cut/failures-light.webp",
     "alt": "BMW N57 engine"
   },
   "engineFailures": {
@@ -207,7 +207,7 @@
     }
   ],
   "headerImageDark": {
-    "src": "/home-image/failures-dark.webp",
+    "src": "/home-image/cut/failures-dark.webp",
     "alt": "BMW N57 engine at night"
   }
 }

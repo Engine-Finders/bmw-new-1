@@ -47,7 +47,7 @@ function HeaderImage({ data, isDark }) {
           src={(isDark && data.headerImageDark ? data.headerImageDark : data.headerImage).src}
           alt={(isDark && data.headerImageDark ? data.headerImageDark : data.headerImage).alt}
           fill
-          className="object-cover object-center"
+          className="object-cover object-right md:object-center"
           sizes="(max-width: 768px) 100vw, 48vw"
         />
         <div className={isDark ? "absolute inset-0 bg-[linear-gradient(180deg,rgba(2,7,11,0.14)_0%,rgba(2,7,11,0.32)_100%)] md:hidden" : "absolute inset-0 bg-[linear-gradient(180deg,rgba(255,255,255,0.03)_0%,rgba(255,255,255,0.06)_100%)] md:hidden"} />

@@ -79,9 +79,8 @@ function ComparisonCard({ item, isDark }) {
       <NumberBadge id={item.id} />
       <div className="grid md:grid-cols-[minmax(260px,0.98fr)_minmax(280px,1fr)]">
         <div className={`min-w-0 border-b md:border-b-0 md:border-r ${isDark ? "border-[#223a51]" : "border-[#dfe5ed]"}`}>
-          <div className="relative h-40 md:h-36">
+          <div className={`relative h-40 md:h-36 ${isDark ? "bg-[linear-gradient(180deg,#0b1826_0%,#08131e_100%)]" : "bg-[linear-gradient(180deg,#f6f8fb_0%,#edf1f6_100%)]"}`}>
             <Image src={(isDark && item.imageDark ? item.imageDark : item.image).src} alt={item.image.alt} fill className="object-cover object-center" sizes="(max-width: 768px) 100vw, 360px" />
-            <div className={isDark ? "absolute inset-0 bg-[rgba(2,7,11,0.14)]" : "absolute inset-0 bg-[rgba(255,255,255,0.1)]"} />
           </div>
           <OptionRow options={item.options} isDark={isDark} />
         </div>

@@ -188,7 +188,7 @@ export default function HomeSec9({ data }) {
 
   return (
     <section className={`relative overflow-hidden px-4 py-8 md:px-6 md:py-8 ${isDark ? "bg-[#02070b]" : "bg-white"}`}>
-      <div className="absolute inset-x-0 top-0 h-[390px] md:h-[295px]">
+      <div className="absolute inset-x-0 top-0 hidden h-[295px] md:block">
 
         {/* Banner on the right: the car (or engine) stays whole at header height */}
         <div className="absolute inset-y-0 right-0 w-full md:w-[64%]">
