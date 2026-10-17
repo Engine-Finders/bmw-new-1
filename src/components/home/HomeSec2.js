@@ -134,7 +134,7 @@ function VerdictBadge({ verdict, mobile = false }) {
         mobile ? "px-2.5 py-1.5 text-[0.74rem] font-medium leading-[1.15]" : "px-2.5 py-1.5 text-[0.78rem] font-medium leading-[1.15] md:px-2.5 md:py-1.5"
       }`}
     >
-      <VerdictIcon type={verdict.type} className={mobile ? "h-[38px] w-[38px]" : "h-[29px] w-[29px]"} />
+      <VerdictIcon type={verdict.type} className={mobile ? "h-[30px] w-[30px]" : "h-[29px] w-[29px]"} />
       <span>{text}</span>
     </span>
   );
