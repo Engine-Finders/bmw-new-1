@@ -5,6 +5,9 @@ const { rewrites: publicHtmlRewrites, redirects: publicHtmlRedirects } = getPubl
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
+    // Serve /public images as-is. The Vercel image optimizer for this account returns
+    // 402 (quota used up), which left every next/image on the live site blank.
+    unoptimized: true,
     remotePatterns: [
       {
         protocol: "https",
