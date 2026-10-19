@@ -2,17 +2,18 @@
   "h2": "Find Your Vehicle",
   "subHeadline": "Choose your model to explore reliability, common faults and real running costs.",
   "headerImage": {
-    "src": "https://images.unsplash.com/photo-1617531653332-bd46c24f2068?auto=format&fit=crop&w=900&q=80",
-    "alt": "White BMW front detail"
+    "dark": "/cars/home/grille-angled-dark.webp",
+    "light": "/cars/home/grille-angled-light.webp",
+    "alt": "BMW front three-quarter view with headlights on"
   },
-  "searchPlaceholder": "Search model...",
+  "searchPlaceholder": "Search model (e.g. 3 Series, X5, M3...)",
   "filters": [
     {
       "label": "ALL MODELS",
       "value": "all"
     },
     {
-      "label": "1-8 SERIES",
+      "label": "1–8 SERIES",
       "value": "series"
     },
     {
@@ -20,12 +21,12 @@
       "value": "x"
     },
     {
-      "label": "M CARS",
+      "label": "M MODELS",
       "value": "m"
     },
     {
-      "label": "Z / i / CLASSIC",
-      "value": "other"
+      "label": "ELECTRIC",
+      "value": "electric"
     }
   ],
   "columns": [
@@ -43,12 +44,11 @@
       ],
       "generations": "E81, E87, F20, F40",
       "verdict": {
-        "icon": "⚠️",
-        "text": "Check Value (E87 sub-£4k)",
-        "type": "warning"
+        "type": "warning",
+        "title": "Check Value (E87 sub-£4k)"
       },
       "image": {
-        "src": "/cars/bmw-1-series-f70-120-sport-hatchback-2024-new-skyscraper-grey-f70-120-45.webp",
+        "src": "/cars/home/fyv/side-1-series.webp",
         "alt": "BMW 1 Series"
       }
     },
@@ -61,12 +61,11 @@
       ],
       "generations": "F22, F44, G42",
       "verdict": {
-        "icon": "✅",
-        "text": "Modern Choice",
-        "type": "success"
+        "type": "success",
+        "title": "Modern Choice"
       },
       "image": {
-        "src": "/cars/bmw-2-series-g42-220i-m-sport-coupe-2021-new-portimao-blue-g42-220i-45.webp",
+        "src": "/cars/home/fyv/side-2-series.webp",
         "alt": "BMW 2 Series"
       }
     },
@@ -79,12 +78,12 @@
       ],
       "generations": "E21, E30, E36, E46, E90, F30, G20",
       "verdict": {
-        "icon": "🏆",
-        "text": "Most Enquired (F30: 380 enquiries [BMW-VERIFIED])",
-        "type": "trophy"
+        "type": "trophy",
+        "title": "Most Enquired",
+        "note": "(F30: 380 enquiries [BMW-VERIFIED])"
       },
       "image": {
-        "src": "/cars/bmw-3-series-g20-320d-se-saloon-2019-2022-new-portimao-blue-g20-320d-45.webp",
+        "src": "/cars/home/fyv/side-3-series.webp",
         "alt": "BMW 3 Series"
       }
     },
@@ -97,12 +96,11 @@
       ],
       "generations": "F32, F33, F36, G22",
       "verdict": {
-        "icon": "💎",
-        "text": "Coupe Style",
-        "type": "diamond"
+        "type": "diamond",
+        "title": "Coupe Style"
       },
       "image": {
-        "src": "/cars/bmw-4-series-g22-420d-m-sport-coupe-2020-new-brooklyn-grey-g22-420d-45.webp",
+        "src": "/cars/home/fyv/side-4-series.webp",
         "alt": "BMW 4 Series"
       }
     },
@@ -115,12 +113,11 @@
       ],
       "generations": "E28, E34, E39, E60, F10, G30",
       "verdict": {
-        "icon": "✅",
-        "text": "Best Executive Buy",
-        "type": "success"
+        "type": "success",
+        "title": "Best Executive Buy"
       },
       "image": {
-        "src": "/cars/bmw-5-series-g60-520d-m-sport-saloon-2023-new-oxide-grey-g60-520d-45.webp",
+        "src": "/cars/home/fyv/side-5-series.webp",
         "alt": "BMW 5 Series"
       }
     },
@@ -133,12 +130,11 @@
       ],
       "generations": "E63, F06, F12, G32",
       "verdict": {
-        "icon": "🔴",
-        "text": "High V8 Risk (N63)",
-        "type": "danger"
+        "type": "danger",
+        "title": "High V8 Risk (N63)"
       },
       "image": {
-        "src": "/cars/bmw-m6-f06-m6-gran-coupe-4-door-coupe-2013-2018-new-singapore-grey-f06-m6-45.webp",
+        "src": "/cars/home/fyv/side-6-series.webp",
         "alt": "BMW 6 Series"
       }
     },
@@ -151,12 +147,11 @@
       ],
       "generations": "E23, E32, E38, E65, F01, G11, G70",
       "verdict": {
-        "icon": "👑",
-        "text": "Flagship Choice",
-        "type": "crown"
+        "type": "crown",
+        "title": "Flagship Choice"
       },
       "image": {
-        "src": "/model/hero/7-series-card.webp",
+        "src": "/cars/home/fyv/side-7-series.webp",
         "alt": "BMW 7 Series line-up"
       }
     },
@@ -169,12 +164,11 @@
       ],
       "generations": "E31, G15",
       "verdict": {
-        "icon": "✅",
-        "text": "Grand Tourer",
-        "type": "success"
+        "type": "success",
+        "title": "Grand Tourer"
       },
       "image": {
-        "src": "/cars/bmw-m8-f93-m8-competition-gran-coupe-4-door-coupe-2019-2022-new-marina-bay-blue-f93-comp-45.webp",
+        "src": "/cars/home/fyv/side-8-series.webp",
         "alt": "BMW 8 Series"
       }
     },
@@ -187,12 +181,11 @@
       ],
       "generations": "Z3 (E36), Z4 (E85/E89/G29), Z8",
       "verdict": {
-        "icon": "🏆",
-        "text": "Roadster Legends",
-        "type": "trophy"
+        "type": "trophy",
+        "title": "Roadster Legends"
       },
       "image": {
-        "src": "/cars/bmw-z4-g29-sdrive20i-sport-roadster-2019-new-alpine-white-g29-20i-45.webp",
+        "src": "/cars/home/fyv/side-z-series.webp",
         "alt": "BMW Z Series"
       }
     },
@@ -205,12 +198,11 @@
       ],
       "generations": "i3, i4, i5, i7, iX",
       "verdict": {
-        "icon": "✅",
-        "text": "Electric Future",
-        "type": "success"
+        "type": "success",
+        "title": "Electric Future"
       },
       "image": {
-        "src": "/cars/bmw-4-series-g26-i4-edrive40-electric-gran-coupe-2021-new-frozen-pure-grey-i4-edrive40-45.webp",
+        "src": "/cars/home/fyv/side-i-series.webp",
         "alt": "BMW i Series"
       }
     },
@@ -223,12 +215,11 @@
       ],
       "generations": "E84, F48, U11",
       "verdict": {
-        "icon": "✅",
-        "text": "Family Crossover",
-        "type": "success"
+        "type": "success",
+        "title": "Family Crossover"
       },
       "image": {
-        "src": "/cars/bmw-x1-u11-ix1-xdrive30-m-sport-electric-suv-2022-new-storm-bay-ix1-xdrive30-45.webp",
+        "src": "/cars/home/fyv/side-x1.webp",
         "alt": "BMW X1"
       }
     },
@@ -241,12 +232,11 @@
       ],
       "generations": "F39, U10",
       "verdict": {
-        "icon": "💎",
-        "text": "Style SUV",
-        "type": "diamond"
+        "type": "diamond",
+        "title": "Style SUV"
       },
       "image": {
-        "src": "/cars/bmw-x2-u10-ix2-edrive20-electric-sac-2024-new-alpine-white-ix2-e20-45.webp",
+        "src": "/cars/home/fyv/side-x2.webp",
         "alt": "BMW X2"
       }
     },
@@ -259,12 +249,12 @@
       ],
       "generations": "E83, F25, G01, G45",
       "verdict": {
-        "icon": "🔥",
-        "text": "Most Enquired SUV (F25: 316 enquiries [BMW-VERIFIED])",
-        "type": "fire"
+        "type": "fire",
+        "title": "Most Enquired SUV",
+        "note": "(F25: 316 enquiries [BMW-VERIFIED])"
       },
       "image": {
-        "src": "/cars/bmw-x3-g45-20-xdrive-m-sport-suv-2024-new-brooklyn-grey-g45-20-45.webp",
+        "src": "/cars/home/fyv/side-x3.webp",
         "alt": "BMW X3"
       }
     },
@@ -277,12 +267,12 @@
       ],
       "generations": "F26, G02",
       "verdict": {
-        "icon": "⚠️",
-        "text": "Watch (N57 on older examples)",
-        "type": "warning"
+        "type": "warning",
+        "title": "Watch",
+        "note": "(N57 on older examples)"
       },
       "image": {
-        "src": "/cars/bmw-x4-g02-m40d-sac-2019-2021-new-carbon-black-g02-m40d-45.webp",
+        "src": "/cars/home/fyv/side-x4.webp",
         "alt": "BMW X4"
       }
     },
@@ -295,12 +285,15 @@
       ],
       "generations": "E53, E70, F15, G05",
       "verdict": {
-        "icon": "⚠️",
-        "text": "V8 Watch (N63) / ✅ Safe (B57/B58)",
-        "type": "warning"
+        "type": "warning",
+        "title": "V8 Watch (N63) /",
+        "also": {
+          "type": "success",
+          "title": "Safe (B57/B58)"
+        }
       },
       "image": {
-        "src": "/cars/bmw-x5-g05-m50d-suv-2018-2020-new-tanzanite-blue-g05-m50d-45.webp",
+        "src": "/cars/home/fyv/side-x5.webp",
         "alt": "BMW X5"
       }
     },
@@ -313,12 +306,11 @@
       ],
       "generations": "E71, F16, G06",
       "verdict": {
-        "icon": "🔴",
-        "text": "High Risk (N63 hot-vee)",
-        "type": "danger"
+        "type": "danger",
+        "title": "High Risk (N63 hot-vee)"
       },
       "image": {
-        "src": "/cars/bmw-x6-g06-xdrive30d-m-sport-sac-2019-2023-new-arctic-grey-g06-30d-45.webp",
+        "src": "/cars/home/fyv/side-x6.webp",
         "alt": "BMW X6"
       }
     },
@@ -331,12 +323,11 @@
       ],
       "generations": "G07",
       "verdict": {
-        "icon": "👑",
-        "text": "Large SUV",
-        "type": "crown"
+        "type": "crown",
+        "title": "Large SUV"
       },
       "image": {
-        "src": "/cars/bmw-x7-g07-xdrive30d-m-sport-suv-2019-2022-new-carbon-black-g07-m-sport-45.webp",
+        "src": "/cars/home/fyv/side-x7.webp",
         "alt": "BMW X7"
       }
     },
@@ -349,49 +340,12 @@
       ],
       "generations": "G09",
       "verdict": {
-        "icon": "🔥",
-        "text": "High-Performance Hybrid",
-        "type": "fire"
+        "type": "fire",
+        "title": "High-Performance Hybrid"
       },
       "image": {
-        "src": "/model/hero/xm-card.webp",
+        "src": "/cars/home/fyv/side-xm.webp",
         "alt": "BMW XM line-up"
-      }
-    },
-    {
-      "model": [
-        {
-          "name": "2002",
-          "href": "https://bmwengines.uk/2002"
-        }
-      ],
-      "generations": "1968–1976",
-      "verdict": {
-        "icon": "🏆",
-        "text": "Classic Icon",
-        "type": "trophy"
-      },
-      "image": {
-        "src": "/model/hero/2002-card.webp",
-        "alt": "BMW 2002 line-up"
-      }
-    },
-    {
-      "model": [
-        {
-          "name": "M1",
-          "href": "https://bmwengines.uk/m1"
-        }
-      ],
-      "generations": "1978–1981",
-      "verdict": {
-        "icon": "🏆",
-        "text": "Legend",
-        "type": "trophy"
-      },
-      "image": {
-        "src": "/cars/bmw-m1-e26-m1-procar-racing-coupe-1979-1980-special-bmw-motorsport-white-m1-procar-45.webp",
-        "alt": "BMW M1"
       }
     },
     {
@@ -407,12 +361,11 @@
       ],
       "generations": "F87, G80 / E30, E36, E46, E90, F80, G80",
       "verdict": {
-        "icon": "🏆",
-        "text": "M Sweet Spot",
-        "type": "trophy"
+        "type": "trophy",
+        "title": "M Sweet Spot"
       },
       "image": {
-        "src": "/cars/bmw-3-series-g80-m3-cs-saloon-2023-2024-special-frozen-solid-white-m3-cs-45.webp",
+        "src": "/cars/home/fyv/side-m2.webp",
         "alt": "BMW M2/M3"
       }
     },
@@ -429,12 +382,11 @@
       ],
       "generations": "F82, G82 / E28, E34, E39, E60, F10, F90",
       "verdict": {
-        "icon": "⚠️",
-        "text": "S63 Power / High Cost",
-        "type": "warning"
+        "type": "warning",
+        "title": "S63 Power / High Cost"
       },
       "image": {
-        "src": "/cars/bmw-m4-g82-m4-csl-coupe-2022-special-frozen-brooklyn-grey-g82-csl-45.webp",
+        "src": "/cars/home/fyv/side-m4.webp",
         "alt": "BMW M4/M5"
       }
     },
@@ -451,13 +403,46 @@
       ],
       "generations": "E63, F06, F12 / F92, G15",
       "verdict": {
-        "icon": "🔴",
-        "text": "Expensive Failure (S63)",
-        "type": "danger"
+        "type": "danger",
+        "title": "Expensive Failure (S63)"
       },
       "image": {
-        "src": "/cars/bmw-m8-f92-m8-coupe-coupe-2019-2022-new-marina-bay-blue-f92-m8-45.webp",
+        "src": "/cars/home/fyv/side-m6.webp",
         "alt": "BMW M6/M8"
+      }
+    },
+    {
+      "model": [
+        {
+          "name": "2002",
+          "href": "https://bmwengines.uk/2002"
+        }
+      ],
+      "generations": "1968–1976",
+      "verdict": {
+        "type": "trophy",
+        "title": "Classic Icon"
+      },
+      "image": {
+        "src": "/cars/home/fyv/cut-2002.webp",
+        "alt": "BMW 2002 line-up"
+      }
+    },
+    {
+      "model": [
+        {
+          "name": "M1",
+          "href": "https://bmwengines.uk/m1"
+        }
+      ],
+      "generations": "1978–1981",
+      "verdict": {
+        "type": "trophy",
+        "title": "Legend"
+      },
+      "image": {
+        "src": "/cars/home/fyv/cut-m1.webp",
+        "alt": "BMW M1"
       }
     }
   ],
@@ -470,5 +455,11 @@
     "text": "Start with our research tools -rankings, faults and real running costs.",
     "buttonLabel": "START YOUR RESEARCH",
     "href": "/quote"
+  },
+  "split": 10,
+  "mobileLimit": 8,
+  "trust": {
+    "title": "Unbiased. Data-Driven. Trusted by Thousands.",
+    "text": "Independent reliability data and real ownership insights so you can make the right decision with confidence."
   }
 }

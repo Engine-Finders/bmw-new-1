@@ -2,143 +2,110 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import MStripe from "@/components/reusableComponents/MStripe";
 import { useTheme } from "@/components/shared/themeProvider";
 import BrandIcon from "@/components/home/brandIcon";
 
-// Trust strip icons: the client's artwork, in the strip's blue (white in the dark theme).
-const STAT_ICONS = ["real-inquiries", "vetted-specialist", "generation-honest-rated", "engine-finders"];
+// Hero, four reference layouts: desktop light / dark (copy left, car right on the scene) and
+// phone light (scene on top, copy below) / dark (copy over the dark scene, car between copy and stats).
 
-function StatIcon({ index }) {
+const BLUE = "#0b4fb8";
+const BLUE_DARK_THEME = "#1a5fd0";
+const CTA_BLUE = "#0b47a8";
+
+function Arrow({ className = "h-6 w-6" }) {
   return (
-    <span className="flex h-10 w-10 shrink-0 items-center justify-center text-[var(--color-primary)] md:h-auto md:w-auto">
-      <BrandIcon name={STAT_ICONS[index] || STAT_ICONS[0]} className="h-9 w-9 md:h-9 md:w-9" scale={1} />
-    </span>
+    <svg aria-hidden="true" viewBox="0 0 24 24" className={className} fill="none" stroke="currentColor" strokeWidth="1.8">
+      <path d="M4 12h16m-6-6 6 6-6 6" />
+    </svg>
   );
 }
 
-function splitStat(label) {
-  const [first, ...rest] = label.split(" ");
-  const hasMetric = /[0-9+]/.test(first);
-
-  return {
-    value: hasMetric ? first : "",
-    text: hasMetric ? rest.join(" ") : label,
-  };
+// M stripe: slanted bars (blue, dark blue, red, then pale blues) and an optional fading rule.
+function Stripe({ bars = ["#1c69d4", "#0b3d91", "#e4262c", "#9fb6d8", "#9fb6d8"], line = true, isDark }) {
+  return (
+    <div className="flex items-center gap-[3px]" aria-hidden="true">
+      {bars.map((color, i) => (
+        <span key={i} className="h-[9px] w-[14px] -skew-x-[30deg] md:h-[10px] md:w-[16px]" style={{ backgroundColor: color }} />
+      ))}
+      {line ? (
+        <span
+          className="ml-1 h-[2px] w-[180px] md:w-[240px]"
+          style={{
+            background: `linear-gradient(90deg, ${isDark ? "#2a5aa8" : "#9fb6d8"} 0%, transparent 100%)`,
+          }}
+        />
+      ) : null}
+    </div>
+  );
 }
 
-function TrustLabel({ label }) {
-  if (label === "Every Generation, Honestly Rated") {
-    return (
-      <>
-        <span className="block">Every Generation,</span>
-        <span className="block">Honestly</span>
-        <span className="block">Rated</span>
-      </>
-    );
-  }
-
-  if (label === "Part of Engine Finders") {
-    return (
-      <>
-        <span className="block">Part of Engine</span>
-        <span className="block">Finders</span>
-      </>
-    );
-  }
-
-  return label;
-}
-
-function HeroTitle({ html }) {
+function Title({ html, className }) {
   return (
     <h1
-      className="max-w-[660px] text-[32px] font-bold leading-[0.95] tracking-normal text-white md:max-w-[720px] md:text-[3.5rem] md:leading-[0.94] md:text-[var(--color-text)] lg:text-[4rem]"
+      className={`font-bold tracking-[-0.02em] [&_.heading-accent]:text-[var(--hero-accent)] ${className}`}
       dangerouslySetInnerHTML={{ __html: html }}
     />
   );
 }
 
-export default function HomeSec1({ data }) {
-  const { theme } = useTheme();
-  // BMW's own background with the 3 Series standing on the floor under the arch (light / dark).
-  const heroImageSrc = theme === "dark" ? "/hero/home-dark.webp" : "/hero/home-light.webp";
-  // Phones get a portrait crop with the car centred in the gap between the copy and the stats.
-  const heroImageMobileSrc = theme === "dark" ? "/hero/home-mobile-dark.webp" : "/hero/home-mobile-light.webp";
-  const isDark = theme === "dark";
+/* ---------- Desktop / tablet (md and up) ---------- */
+
+function DesktopHero({ data, isDark }) {
+  const text = isDark ? "text-white" : "text-[#071423]";
+  const muted = isDark ? "text-white/82" : "text-[#26364a]";
 
   return (
-    <section className="relative overflow-hidden bg-[var(--color-page)] text-[var(--color-text)] md:min-h-[620px]">
-      <div className="absolute inset-0 md:hidden">
-        <Image
-          src={heroImageMobileSrc}
-          alt=""
-          fill
-          className="object-cover object-center"
-          sizes="100vw"
-          priority
-        />
-        <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(2,7,11,0.94)_0%,rgba(2,7,11,0.84)_34%,rgba(2,7,11,0.36)_68%,rgba(2,7,11,0.94)_100%)]" />
-      </div>
+    <div className="relative hidden min-h-[640px] md:block lg:min-h-[calc(100vh-88px)] lg:max-h-[920px]">
+      <Image
+        src={isDark ? data.image.desktop.dark : data.image.desktop.light}
+        alt={data.image.alt}
+        fill
+        priority
+        sizes="100vw"
+        className="object-cover object-[78%_center] lg:object-center"
+      />
+      <div
+        className="absolute inset-0"
+        style={{
+          background: isDark
+            ? "linear-gradient(90deg, rgba(3,6,10,0.92) 0%, rgba(3,6,10,0.7) 38%, transparent 62%)"
+            : "linear-gradient(90deg, rgba(248,250,252,0.95) 0%, rgba(248,250,252,0.75) 38%, transparent 62%)",
+        }}
+      />
 
-      <div className="absolute inset-0 hidden md:block">
-        <Image
-          src={heroImageSrc}
-          alt=""
-          fill
-          className="object-cover object-center"
-          sizes="100vw"
-          priority
-        />
-        <div className="absolute inset-0 bg-[linear-gradient(90deg,var(--color-hero-fade)_0%,var(--color-hero-overlay)_35%,transparent_72%)]" />
-        <div className="absolute inset-0 bg-[linear-gradient(0deg,var(--color-page)_0%,transparent_28%)]" />
-      </div>
+      <div className="relative mx-auto flex w-full max-w-8xl flex-col justify-center px-8 py-14 lg:min-h-[calc(100vh-88px)] lg:max-h-[920px] lg:px-[5.5%]">
+        <div className="flex max-w-[660px] flex-col">
+          <Title html={data.h1} className={`${text} text-[3.6rem] leading-[1.08] lg:text-[4.6rem]`} />
 
-      <div className="relative mx-auto flex w-full max-w-8xl flex-col px-4 pb-5 pt-8 md:min-h-[620px] md:justify-center md:px-6 md:py-8 lg:px-8">
-        <div className="relative flex w-full max-w-[720px] flex-col gap-3 md:mt-0 md:gap-4">
-          <HeroTitle html={data.h1} />
+          <div className="mt-7">
+            <Stripe isDark={isDark} />
+          </div>
 
-          <MStripe />
-
-          <div className="h-0.5 w-18 bg-[var(--color-primary)] md:hidden" />
-
-          <p
-            className="max-w-[620px] text-[0.88rem] leading-[1.42] text-white/88 md:text-[1.08rem] md:leading-[1.42] md:text-[var(--color-text-muted)]"
-            dangerouslySetInnerHTML={{ __html: data.subHeadline }}
-          />
-
-          <div className="relative mt-1 h-[310px] md:hidden" />
+          <p className={`mt-7 max-w-[575px] text-[1.2rem] leading-[1.38] lg:text-[1.55rem] ${muted}`}>{data.subHeadline}</p>
 
           <ul
-            className={`grid grid-cols-4 overflow-hidden rounded-md border shadow-[0_14px_32px_rgba(10,26,43,0.12)] backdrop-blur-xl md:max-w-[700px] md:rounded-lg md:border-[var(--color-border)] md:bg-[var(--color-surface-glass)] md:shadow-[0_10px_30px_var(--color-shadow)] md:grid-cols-4 ${
+            className={`mt-8 grid max-w-[655px] grid-cols-4 rounded-[6px] border py-4 ${
               isDark
-                ? "border-white/10 bg-[rgba(11,17,24,0.44)] shadow-black/30"
-                : "border-[var(--color-border)] bg-[rgba(255,255,255,0.4)] shadow-[var(--color-shadow)]"
+                ? "border-white/10 bg-[rgba(14,20,28,0.72)]"
+                : "border-[#e3e8ef] bg-white/90 shadow-[0_10px_30px_rgba(10,26,43,0.08)]"
             }`}
           >
-            {data.trustStrip.map((item, index) => {
-              const stat = splitStat(item.label);
-
+            {data.trustStrip.map((item) => {
+              const isNumber = /\d/.test(item.value);
               return (
                 <li
                   key={item.label}
-                  className={`flex flex-col items-center justify-start gap-2 border-r px-1.5 py-3.5 text-center last:border-r-0 md:gap-2 md:border-b-0 md:border-r md:border-[var(--color-border)] md:px-3 md:py-3 md:last:border-r-0 ${
-                    isDark ? "border-white/10" : "border-[var(--color-border)]"
+                  className={`flex flex-col items-center px-2 text-center [&:not(:last-child)]:border-r ${
+                    isDark ? "border-white/12" : "border-[#e3e8ef]"
                   }`}
                 >
-                  <span className="flex h-10 w-10 items-center justify-center md:h-auto md:w-auto md:rounded-none md:border-0 md:bg-transparent">
-                    <StatIcon index={index} />
+                  <span style={{ color: isDark ? BLUE_DARK_THEME : BLUE }}>
+                    <BrandIcon name={item.icon} className="h-11 w-11" scale={1} />
                   </span>
-                  <span className={`text-[0.95rem] leading-tight ${isDark ? "text-white" : "text-[var(--color-text)]"} md:text-[var(--color-text)]`}>
-                    {stat.value && <strong className="block text-[0.86rem] font-bold leading-none md:inline md:text-[1.25rem]">{stat.value}</strong>}
-                    <span
-                      className={`mt-1.5 block text-[10px] uppercase leading-[1.3] tracking-normal ${
-                        isDark ? "text-white/78" : "text-[var(--color-text-muted)]"
-                      } md:mt-0 md:max-w-none md:text-[0.9rem] md:font-normal md:leading-[1.25] md:text-[var(--color-text-muted)] md:normal-case`}
-                    >
-                      <TrustLabel label={stat.text} />
-                    </span>
+                  <span className={`mt-2.5 leading-tight ${text} ${isNumber ? "text-[1.5rem] font-bold" : "text-[1.12rem] font-medium"}`}>
+                    {item.value}
                   </span>
+                  <span className={`mt-0.5 text-[1.05rem] leading-[1.4] ${muted}`}>{item.label}</span>
                 </li>
               );
             })}
@@ -146,55 +113,155 @@ export default function HomeSec1({ data }) {
 
           <Link
             href={data.cta.href}
-            className={`btn-cta rounded-[1.15rem] border p-4 shadow-lg md:hidden ${
-              isDark
-                ? "border-[rgba(41,115,219,0.75)] bg-[linear-gradient(180deg,rgba(14,79,184,0.98)_0%,rgba(8,59,143,0.98)_100%)] text-white shadow-black/30"
-                : "border-[rgba(41,115,219,0.28)] bg-[linear-gradient(180deg,rgba(14,79,184,0.98)_0%,rgba(8,59,143,0.98)_100%)] text-white shadow-[var(--color-shadow)]"
-            }`}
+            className="mt-9 inline-flex w-fit items-center gap-7 rounded-[3px] px-9 py-[1.15rem] text-[1.2rem] font-bold text-white transition hover:brightness-110"
+            style={{ backgroundColor: CTA_BLUE }}
           >
-            <div className="flex items-center gap-3">
-                <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[rgba(255,255,255,0.08)]">
-                  <svg aria-hidden="true" viewBox="0 0 24 24" className="h-8 w-8" fill="none" stroke="currentColor" strokeWidth="2">
-                    <path d="M12 3 5 6v6c0 5 3.3 8.8 7 9 3.7-.2 7-4 7-9V6l-7-3Zm-2 9 1.6 1.6L15 10" />
-                  </svg>
-                </div>
-              <div className="min-w-0 flex-1">
-                <p className="text-[0.86rem] font-semibold tracking-[0.06em]">{data.cta.label}</p>
-                <p className="mt-1 text-[0.7rem] leading-[1.25] text-white/82">
-                  UNBIASED. DATA-DRIVEN. TRUSTED BY THOUSANDS.
-                </p>
-              </div>
-              <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border border-white/12 bg-[rgba(3,14,31,0.4)]">
-                <svg aria-hidden="true" viewBox="0 0 24 24" className="h-6 w-6" fill="none" stroke="currentColor" strokeWidth="2">
-                  <path d="M5 12h14m-6-6 6 6-6 6" />
-                </svg>
-              </span>
-            </div>
+            {data.cta.label}
+            <Arrow className="h-9 w-9" />
           </Link>
-
-          <Link
-            href={data.cta.href}
-            className="btn-cta hidden w-full items-center justify-between rounded-[1.25rem] border border-[rgba(41,115,219,0.75)] bg-[linear-gradient(180deg,rgba(14,79,184,0.98)_0%,rgba(8,59,143,0.98)_100%)] px-5 py-4 text-white shadow-lg shadow-black/30 md:flex md:w-fit md:justify-start md:gap-5 md:rounded md:border-0 md:bg-[var(--color-primary)] md:px-7 md:py-3.5 md:text-base md:shadow-lg md:shadow-[var(--color-shadow)]"
-          >
-            <span className="text-left">
-              <span className="block text-lg font-bold tracking-[0.08em] md:text-[1.05rem] md:tracking-normal">{data.cta.label}</span>
-            </span>
-            <span className="flex h-14 w-14 items-center justify-center rounded-full border border-white/10 bg-[rgba(3,14,31,0.55)] md:h-auto md:w-auto md:rounded-none md:border-0 md:bg-transparent">
-              <svg aria-hidden="true" viewBox="0 0 24 24" className="h-7 w-7" fill="none" stroke="currentColor" strokeWidth="2">
-                <path d="M5 12h14m-6-6 6 6-6 6" />
-              </svg>
-            </span>
-          </Link>
-
-          <div className="flex items-center justify-center gap-3 text-[10px] text-white/62 md:hidden">
-            <span>100% INDEPENDENT</span>
-            <span className="h-1.5 w-1.5 rounded-full bg-white/35" />
-            <span>NO SPONSORSHIP</span>
-            <span className="h-1.5 w-1.5 rounded-full bg-white/35" />
-            <span>COMPLETELY UNBIASED</span>
-          </div>
         </div>
       </div>
+    </div>
+  );
+}
+
+/* ---------- Phone, dark ---------- */
+
+function MobileDarkHero({ data }) {
+  return (
+    <div className="relative overflow-hidden bg-[#05080c] text-white md:hidden">
+      <div className="relative px-6 pt-10">
+        <Stripe bars={["#1c69d4", "#0b3d91", "#e4262c", "#7f93b0", "#7f93b0"]} line={false} isDark />
+        <Title html={data.h1} className="mt-6 text-[2.15rem] leading-[1.12] min-[400px]:text-[2.4rem]" />
+        <span className="mt-6 block h-[2px] w-[52px]" style={{ backgroundColor: BLUE_DARK_THEME }} />
+        <p className="mt-6 max-w-[340px] text-[0.98rem] leading-[1.5] text-white/88">{data.subHeadline}</p>
+      </div>
+
+      {/* Scene with the car: starts behind the copy, fades into the page at both ends. */}
+      <div className="relative -mt-[38%] aspect-[3/4] w-full">
+        <Image
+          src={data.image.mobile.dark}
+          alt={data.image.alt}
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover [mask-image:linear-gradient(180deg,transparent_0%,black_38%,black_82%,transparent_100%)]"
+        />
+      </div>
+
+      <div className="relative -mt-[16%] px-4 pb-6">
+        <ul className="grid grid-cols-4 rounded-[14px] border border-white/12 bg-[rgba(12,18,26,0.82)] px-1 py-5 backdrop-blur">
+          {data.trustStrip.map((item) => (
+            <li key={item.label} className="flex flex-col items-center px-1 text-center [&:not(:last-child)]:border-r [&:not(:last-child)]:border-white/12">
+              <span className="flex h-12 w-12 items-center justify-center rounded-full bg-white/[0.06]" style={{ color: BLUE_DARK_THEME }}>
+                <BrandIcon name={item.icon} className="h-[26px] w-[26px]" scale={1} />
+              </span>
+              <span className="mt-3 text-[0.98rem] font-bold uppercase leading-tight">{item.value}</span>
+              <span className="mt-1.5 text-[0.62rem] uppercase leading-[1.45] text-white/80">{item.label}</span>
+            </li>
+          ))}
+        </ul>
+
+        <Link
+          href={data.cta.href}
+          className="mt-4 flex items-center gap-3 rounded-[12px] border border-[#2a6ae0] p-3 text-white"
+          style={{ background: "linear-gradient(90deg, #0a1f4d 0%, #0b2f7a 55%, #0a2a6b 100%)" }}
+        >
+          <span className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-black/25">
+            <svg aria-hidden="true" viewBox="0 0 24 24" className="h-12 w-12">
+              <path d="M12 2.5 4.5 5.5v6c0 5 3.3 9 7.5 10 4.2-1 7.5-5 7.5-10v-6L12 2.5Z" fill="#1c4fb0" stroke="#d6dde8" strokeWidth="1.2" />
+              <path d="m8.5 12 2.4 2.4L15.8 9.5" fill="none" stroke="#fff" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
+            </svg>
+          </span>
+          <span className="min-w-0 flex-1">
+            <span className="block text-[0.95rem] font-bold tracking-[0.16em]">{data.cta.label}</span>
+            <span className="mt-1 block text-[0.56rem] leading-[1.3] text-white/85">{data.cta.tagline}</span>
+          </span>
+          <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-black/40">
+            <Arrow className="h-5 w-5" />
+          </span>
+        </Link>
+
+        <div className="mt-4 flex items-center justify-center gap-2 text-[0.6rem] text-white/60">
+          <svg aria-hidden="true" viewBox="0 0 24 24" className="h-3 w-3" fill="currentColor">
+            <path d="M7 10V7a5 5 0 0 1 10 0v3h1a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1v-9a1 1 0 0 1 1-1h1Zm2 0h6V7a3 3 0 0 0-6 0v3Z" />
+          </svg>
+          {data.trustBadges.map((badge, i) => (
+            <span key={badge} className="flex items-center gap-2">
+              {i > 0 ? <span className="h-1 w-1 rounded-full bg-white/50" /> : null}
+              {badge}
+            </span>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+/* ---------- Phone, light ---------- */
+
+function MobileLightHero({ data }) {
+  return (
+    <div className="bg-white text-[#141a22] md:hidden">
+      <div className="relative aspect-[976/813] w-full">
+        <Image
+          src={data.image.mobile.light}
+          alt={data.image.alt}
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover [mask-image:linear-gradient(180deg,black_80%,transparent_100%)]"
+        />
+      </div>
+
+      <div className="px-6 pb-8">
+        <Title html={data.h1} className="mt-2 text-[2.15rem] leading-[1.12] min-[400px]:text-[2.4rem]" />
+        <div className="mt-5">
+          <Stripe bars={["#1c69d4", "#0b3d91", "#e4262c", "#c9d6ea", "#c9d6ea"]} />
+        </div>
+        <p className="mt-5 max-w-[310px] text-[0.94rem] leading-[1.55] text-[#1f2a37]">{data.subHeadline}</p>
+
+        <ul className="mt-5 rounded-[8px] border border-[#e1e5eb] px-4 py-1">
+          {data.trustStrip.map((item, i) => {
+            const isNumber = /\d/.test(item.value);
+            const isLast = i === data.trustStrip.length - 1;
+            return (
+              <li key={item.label} className="flex items-center gap-4">
+                <span className="flex h-[26px] w-[26px] shrink-0 items-center justify-center rounded-[3px] text-white" style={{ backgroundColor: "#0a55d6" }}>
+                  <BrandIcon name={item.icon} className="h-4 w-4" scale={1} />
+                </span>
+                <span className={`flex-1 py-2.5 text-[0.9rem] ${isLast ? "" : "border-b border-[#e1e5eb]"}`}>
+                  {isNumber ? <strong className="font-bold">{item.value}</strong> : item.value} {item.label}
+                </span>
+              </li>
+            );
+          })}
+        </ul>
+
+        <Link
+          href={data.cta.href}
+          className="mt-5 flex items-center justify-center gap-5 rounded-[6px] py-4 text-[1.1rem] font-bold text-white"
+          style={{ backgroundColor: "#0a55d6" }}
+        >
+          {data.cta.label}
+          <Arrow className="h-6 w-6" />
+        </Link>
+      </div>
+    </div>
+  );
+}
+
+export default function HomeSec1({ data }) {
+  const { theme } = useTheme();
+  const isDark = theme === "dark";
+
+  return (
+    <section
+      className={`relative overflow-hidden ${isDark ? "bg-[#05080c]" : "bg-white"}`}
+      style={{ "--hero-accent": isDark ? BLUE_DARK_THEME : BLUE }}
+    >
+      <DesktopHero data={data} isDark={isDark} />
+      {isDark ? <MobileDarkHero data={data} /> : <MobileLightHero data={data} />}
     </section>
   );
 }
