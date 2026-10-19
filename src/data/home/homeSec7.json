@@ -1,26 +1,43 @@
 {
-  "h2": "BMW Engine Families -<span class=\"block heading-accent\">The Pillars</span>",
-  "subHeadline": "The engines BMW owners search for most, ranked by real 2025 enquiry volume -with our honest verdict on each.",
+  "h2": "<span class=\"block\">BMW Engine Families —</span><span class=\"block heading-accent\">The Pillars</span>",
+  "subHeadline": "The engines BMW owners search for most, ranked by real 2025 enquiry volume — with our honest verdict on each.",
   "headerImage": {
-    "src": "/home-image/cut/engines-light.webp",
-    "alt": "BMW B58 engine"
+    "light": "/home-image/sec07/engine-bay-light.webp",
+    "dark": "/home-image/sec07/engine-bay-dark.webp",
+    "alt": "BMW engine bay with the engine cover",
+    "phone": "/home-image/sec07/engine-bay-phone-light.webp"
   },
   "trustStrip": [
     {
-      "icon": "📊",
-      "label": "Powered by 24,650+ real UK enquiries"
+      "icon": "real-inquiries",
+      "lines": [
+        "Powered by",
+        "**24,650+**",
+        "real UK enquiries"
+      ]
     },
     {
-      "icon": "🔧",
-      "label": "20+ vetted BMW specialists"
+      "icon": "vetted-specialist",
+      "lines": [
+        "20+ vetted",
+        "**BMW**",
+        "specialists"
+      ]
     },
     {
-      "icon": "📖",
-      "label": "OEM part references included"
+      "icon": "oem-references",
+      "lines": [
+        "OEM part",
+        "**references**",
+        "included"
+      ]
     },
     {
-      "icon": "🏆",
-      "label": "Part of Engine Finders"
+      "icon": "engine-finders",
+      "lines": [
+        "Part of",
+        "**Engine Finders**"
+      ]
     }
   ],
   "columns": [
@@ -36,153 +53,171 @@
       "spec": "2.0L Diesel",
       "fuel": "Diesel",
       "fuelIcon": "🛢️",
-      "years": "2007–2015",
+      "years": "2007 – 2015",
       "enquiries": "1,450 enquiries",
       "sourceTag": "[BMW-VERIFIED]",
       "verdict": {
         "icon": "⚠️",
         "label": "Watch",
         "text": "rear-chain risk; buy with documented history. The defining diesel of a generation.",
-        "type": "watch"
+        "type": "watch",
+        "desktop": "Watch — rear-chain risk; buy with documented history.\nThe defining diesel of a generation."
       },
-      "href": "/engine/n47"
+      "href": "/engine/n47",
+      "yearsPhone": "2007 – 2015"
     },
     {
       "code": "B47D20A",
       "spec": "2.0L Diesel",
       "fuel": "Diesel",
       "fuelIcon": "🛢️",
-      "years": "2015–Present",
+      "years": "2015 – Present",
       "enquiries": "930 enquiries",
       "sourceTag": "[BMW-VERIFIED]",
       "verdict": {
         "icon": "✅",
         "label": "Safe",
         "text": "revised front-chain architecture; much improved reliability. The modern sensible choice.",
-        "type": "safe"
+        "type": "safe",
+        "desktop": "Safe — revised front-chain architecture;\nmuch improved reliability. The modern sensible choice."
       },
-      "href": "/engine/b37-b47"
+      "href": "/engine/b37-b47",
+      "yearsPhone": "2015 –\nPresent"
     },
     {
       "code": "N57D30",
       "spec": "3.0L Diesel",
       "fuel": "Diesel",
       "fuelIcon": "🛢️",
-      "years": "2008–2018",
+      "years": "2008 – 2018",
       "enquiries": "830 enquiries",
       "sourceTag": "[BMW-VERIFIED]",
       "verdict": {
         "icon": "⚠️",
         "label": "Watch",
         "text": "rear-chain complexity; well-maintained examples are fine. The 330d/530d workhorse.",
-        "type": "watch"
+        "type": "watch",
+        "desktop": "Watch — rear-chain complexity; well-maintained\nexamples are fine. The 330d/530d workhorse."
       },
-      "href": "/engine/n57"
+      "href": "/engine/n57",
+      "yearsPhone": "2008 – 2018"
     },
     {
       "code": "B58B30",
       "spec": "3.0L Petrol",
       "fuel": "Petrol",
       "fuelIcon": "⛽",
-      "years": "2015–Present",
+      "years": "2015 – Present",
       "enquiries": "540 enquiries",
       "sourceTag": "[BMW-VERIFIED]",
       "verdict": {
         "icon": "🏆",
         "label": "Best",
         "text": "modern straight-six gold standard. The engine BMW owners trust most.",
-        "type": "best"
+        "type": "best",
+        "desktop": "Best — modern straight-six gold standard.\nThe engine BMW owners trust most."
       },
-      "href": "/engine/b57-b58"
+      "href": "/engine/b57-b58",
+      "yearsPhone": "2015 –\nPresent"
     },
     {
       "code": "B57D30",
       "spec": "3.0L Diesel",
       "fuel": "Diesel",
       "fuelIcon": "🛢️",
-      "years": "2015–Present",
+      "years": "2015 – Present",
       "enquiries": "460 enquiries",
       "sourceTag": "[BMW-VERIFIED]",
       "verdict": {
         "icon": "✅",
         "label": "Safe",
         "text": "robust modern diesel; minor cooling issues only. The G-series 30d choice.",
-        "type": "safe"
+        "type": "safe",
+        "desktop": "Safe — robust modern diesel;\nminor cooling issues only. The G-series 30d choice."
       },
-      "href": "/engine/b57-b58"
+      "href": "/engine/b57-b58",
+      "yearsPhone": "2015 –\nPresent"
     },
     {
       "code": "N63B44",
       "spec": "4.4L V8 Petrol",
       "fuel": "Petrol",
       "fuelIcon": "⛽",
-      "years": "2008–Present",
+      "years": "2008 – Present",
       "enquiries": "440 enquiries",
       "sourceTag": "[BMW-VERIFIED]",
       "verdict": {
         "icon": "🔴",
         "label": "Avoid",
         "text": "hot-vee failures; high ownership cost. Known as the \"N63 nightmare.\"",
-        "type": "avoid"
+        "type": "avoid",
+        "desktop": "Avoid — hot-vee failures; high ownership cost.\nKnown as the “N63 nightmare.”"
       },
-      "href": "/engine/n62-n63"
+      "href": "/engine/n62-n63",
+      "yearsPhone": "2008 –\nPresent"
     },
     {
       "code": "S63B44",
       "spec": "4.4L V8 M Engine",
       "fuel": "Petrol",
       "fuelIcon": "⛽",
-      "years": "2010–Present",
+      "years": "2010 – Present",
       "enquiries": "410 enquiries",
       "sourceTag": "[BMW-VERIFIED]",
       "verdict": {
         "icon": "🔴",
         "label": "Avoid",
         "text": "similar to N63; M-division complexity adds cost. Buy only with deep pockets.",
-        "type": "avoid"
+        "type": "avoid",
+        "desktop": "Avoid — similar to N63; M-division complexity\nadds cost. Buy only with deep pockets."
       },
-      "href": "/engine/s63-s65"
+      "href": "/engine/s63-s65",
+      "yearsPhone": "2010 –\nPresent"
     },
     {
       "code": "N55B30",
       "spec": "3.0L Petrol",
       "fuel": "Petrol",
       "fuelIcon": "⛽",
-      "years": "2010–2019",
+      "years": "2010 – 2019",
       "enquiries": "Pattern data",
       "sourceTag": "[PATTERN DATA]",
       "verdict": {
         "icon": "⭐",
         "label": "Solid",
         "text": "the bridge engine between N54 and B58. Reliable, well-understood, widely available. A safer used buy than the N54.",
-        "type": "solid"
+        "type": "solid",
+        "desktop": "Solid — the bridge engine between N54 and B58.\nReliable, well-understood, widely available.\nA safer used buy than the N54."
       },
-      "href": "/engine/n54-n55"
+      "href": "/engine/n54-n55",
+      "yearsPhone": "2010 – 2019"
     },
     {
       "code": "M54",
       "spec": "3.0L Petrol",
       "fuel": "Petrol",
       "fuelIcon": "⛽",
-      "years": "2000–2006",
+      "years": "2000 – 2006",
       "enquiries": "Classic icon",
       "sourceTag": "[PATTERN DATA]",
       "verdict": {
         "icon": "🏆",
         "label": "Best",
         "text": "bulletproof E46-era straight-six. The classic keeper engine.",
-        "type": "best"
+        "type": "best",
+        "desktop": "Best — bulletproof E46-era straight-six.\nThe classic keeper engine."
       },
-      "href": "/engine/m50-m52-m54"
+      "href": "/engine/m50-m52-m54",
+      "yearsPhone": "2000 – 2006"
     }
   ],
   "legend": {
     "title": "What do these verdicts mean?",
     "text": "Our verdicts combine failure frequency, repair complexity, and total cost of ownership to help you make the right decision.",
-    "href": "/about/how-it-works"
+    "href": "/about/how-it-works",
+    "textPhone": "Our verdicts combine failure frequency, repair complexity,\nand total cost of ownership to help you make the right decision."
   },
-  "headerImageDark": {
-    "src": "/home-image/cut/engines-dark.webp",
-    "alt": "BMW B58 engine at night"
-  }
+  "subHeadlineDesktop": "The engines BMW owners search for most, ranked by real 2025 enquiry\nvolume — with our honest verdict on each.",
+  "h2Phone": "<span class=\"block\">BMW Engine</span><span class=\"block\">Families —</span><span class=\"block heading-accent\">The Pillars</span>",
+  "subHeadlinePhone": "The engines BMW owners search for most,\nranked by real 2025 enquiry volume —\nwith our honest verdict on each."
 }

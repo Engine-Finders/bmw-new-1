@@ -1,6 +1,6 @@
 {
-  "h2": "Diagnose Your <span class=\"heading-accent\">BMW Engine Problem</span>",
-  "subHeadline": "Answer a few questions about your symptoms - we'll match you against 15+ known BMW failure patterns, show you the likely diagnosis, OEM part references, and an honest repair vs. replace cost estimate.",
+  "h2": "<span class=\"block\">Diagnose Your</span><span class=\"block\"><span class=\"heading-accent\">BMW</span> Engine Problem</span>",
+  "subHeadline": "Answer a few questions about your symptoms — we'll match you against 15+ known BMW failure patterns, show you the likely diagnosis, OEM part references, and an honest repair vs. replace cost estimate.",
   "heroImages": {
     "light": {
       "src": "/home-image/cut/diagnose-light.webp",
@@ -14,24 +14,29 @@
   "trustStrip": [
     {
       "icon": "real-inquiries",
+      "lead": "Powered by",
       "value": "24,650+",
-      "prefix": "Powered by",
       "text": "real UK enquiries"
     },
     {
       "icon": "vetted-specialist",
+      "lead": "",
       "value": "20+",
-      "text": "vetted BMW specialists"
+      "tail": "vetted",
+      "text": "BMW specialists"
     },
     {
       "icon": "oem-references",
-      "value": "",
-      "text": "OEM part references included"
+      "lead": "",
+      "value": "OEM",
+      "tail": "part",
+      "text": "references included"
     },
     {
       "icon": "engine-finders",
+      "lead": "Part of",
       "value": "",
-      "text": "Part of Engine Finders"
+      "text": "Engine Finders"
     }
   ],
   "howItWorks": {
@@ -1177,8 +1182,8 @@
     "whyTrust": [
       {
         "icon": "shield",
-        "title": "EM-VERIFIED Data",
-        "text": "Every cost range and enquiry volume comes from real 2025 UK data - not estimates or guesswork."
+        "title": "BMW-VERIFIED Data",
+        "text": "Every cost range and enquiry volume comes from real 2025 UK data — not estimates or guesswork."
       },
       {
         "icon": "specific-knowledge",
@@ -1186,14 +1191,14 @@
         "text": "We use exact BMW terminology (N47, B58, VANOS, Valvetronic) and OEM part numbers."
       },
       {
-        "icon": "vetted-specialist",
+        "icon": "users-team",
         "title": "Vetted Specialist Network",
         "text": "Our recommendations route you to 20+ BMW specialists who work on these engines daily."
       },
       {
-        "icon": "honest-verdict",
+        "icon": "top-choice",
         "title": "Honest Verdict System",
-        "text": "We tell you when replacement isn't worth it - not every site does that."
+        "text": "We tell you when replacement isn't worth it — not every site does that."
       }
     ]
   },
@@ -1203,6 +1208,123 @@
     "columns": [
       "Trust Signal",
       "What It Means"
+    ]
+  },
+  "images": {
+    "desktop": {
+      "light": "/cars/home/s3-g20-dravit-front.webp",
+      "dark": "/cars/home/s3-g20-white-front.webp",
+      "alt": "BMW 3 Series (G20) front view"
+    },
+    "phone": {
+      "src": "/cars/home/s3-g20-white-front.webp",
+      "alt": "BMW 3 Series (G20) in Mineral White"
+    }
+  },
+  "step1": {
+    "label": "STEP 1 OF 3",
+    "title": "Tell us your symptoms",
+    "text": "Select from common failure categories or use the shortcut grid.",
+    "cta": "CONTINUE TO STEP 2"
+  },
+  "symptomTiles": [
+    {
+      "id": "performance",
+      "label": "Engine Performance Issues",
+      "icon": "engine",
+      "categoryId": "performance"
+    },
+    {
+      "id": "oil",
+      "label": "Oil Leaks & Consumption",
+      "icon": "oil-leak",
+      "categoryId": "leaks"
+    },
+    {
+      "id": "cooling",
+      "label": "Cooling System Faults",
+      "icon": "cooling-temp",
+      "categoryId": "cooling"
+    },
+    {
+      "id": "timing",
+      "label": "Timing Chain & Drive Issues",
+      "icon": "chain",
+      "categoryId": "drivetrain"
+    },
+    {
+      "id": "turbo",
+      "label": "Turbo / Boost Problems",
+      "icon": "turbo",
+      "categoryId": "performance"
+    },
+    {
+      "id": "starting",
+      "label": "Starting & Charging",
+      "icon": "battery",
+      "categoryId": "control"
+    },
+    {
+      "id": "misfire",
+      "label": "Misfires & Rough Idle",
+      "icon": "injector",
+      "categoryId": "performance"
+    },
+    {
+      "id": "exhaust",
+      "label": "Exhaust & Emissions",
+      "icon": "exhaust",
+      "categoryId": "leaks"
+    },
+    {
+      "id": "electrical",
+      "label": "Electrical Faults",
+      "icon": "electrical",
+      "categoryId": "control"
+    },
+    {
+      "id": "other",
+      "label": "Other / Not Sure",
+      "icon": "bulb",
+      "categoryId": "control"
+    }
+  ],
+  "whyTrustTitle": "Why Trust This Diagnosis?",
+  "exampleResult": {
+    "label": "EXAMPLE RESULT",
+    "title": "Likely Diagnosis",
+    "fault": "Oil Filter Housing Gasket Leak",
+    "likelihood": "High Likelihood",
+    "rows": [
+      [
+        "Common on:",
+        "N47, N57, B47, B57"
+      ],
+      [
+        "Symptoms Match:",
+        "4 / 5"
+      ]
+    ],
+    "repairLabel": "Estimated Repair Cost",
+    "repair": "£450 – £750",
+    "replaceLabel": "vs Replace Cost",
+    "replace": "£2,800 – £4,500",
+    "basis": "Based on 184 verified UK enquiries in 2025",
+    "verdictTitle": "Get your exact verdict",
+    "verdictText": "Our step-by-step diagnosis takes under 2 minutes and gives you a clear answer you can trust.",
+    "cta": "START DIAGNOSIS",
+    "badges": [
+      "100% Independent",
+      "No Sponsorship",
+      "Completely Unbiased"
+    ]
+  },
+  "promise": {
+    "title": "The Engine Finders Promise",
+    "lines": [
+      "Independent data. Real enquiries.",
+      "Honest answers.",
+      "Helping BMW owners make the right decision with confidence."
     ]
   }
 }

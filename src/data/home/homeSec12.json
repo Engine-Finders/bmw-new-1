@@ -1,38 +1,167 @@
 {
   "h2": "Why BMW Owners Trust<span class=\"block heading-accent\">BMWEngines.uk</span>",
-  "subHeadline": "Built on real data, verified by specialists, and completely independent -no sponsors, no bias, just honest advice.",
-  "headerImage": {
-    "src": "/home-image/cut/trust-light.webp",
-    "alt": "BMW 4 Series under the arch"
-  },
+  "subHeadline": "Built on real data, verified by specialists, and completely independent — no sponsors, no bias, just honest advice.",
   "signals": [
     {
       "id": 1,
-      "icon": "📊",
+      "icon": "chart",
       "title": "Built on Real Data",
-      "description": "Every reliability rating and cost range comes from genuine UK quote and enquiry data -not manufacturer marketing, not forum guesswork. 24,650+ real enquiries in 2025 [BMW-VERIFIED]."
+      "description": "Every reliability rating and cost range comes from genuine UK quote and enquiry data — not manufacturer marketing, not forum guesswork.",
+      "highlight": "24,650+ real enquiries in 2025 [BMW-VERIFIED].",
+      "titleDesktop": "Built on Real Data",
+      "descriptionDesktop": "Every reliability rating and cost\nrange comes from genuine UK\nquote and enquiry data — not\nmanufacturer marketing, not\nforum guesswork.",
+      "titlePhone": "Built on Real Data",
+      "descriptionPhone": "Every reliability rating and cost range\ncomes from genuine UK quote and\nenquiry data — not manufacturer\nmarketing, not forum guesswork.",
+      "highlightDesktop": "24,650+ real enquiries in 2025\n[BMW-VERIFIED].",
+      "highlightPhone": "24,650+ real enquiries in 2025\n[BMW-VERIFIED]."
     },
     {
       "id": 2,
-      "icon": "💚",
+      "icon": "heart",
       "title": "We Tell You When Not to Repair",
-      "description": "Where replacement cost exceeds what the car is worth, we say so. That's the difference between a knowledge base and a sales page. Our 70% BMW threshold is the line."
+      "description": "Where replacement cost exceeds what the car is worth, we say so. That's the difference between a knowledge base and a sales page.",
+      "inline": {
+        "before": "Our ",
+        "link": "70% BMW threshold",
+        "after": " is the line."
+      },
+      "titleDesktop": "We Tell You When\nNot to Repair",
+      "descriptionDesktop": "Where replacement cost exceeds\nwhat the car is worth, we say so.\nThat's the difference between a\nknowledge base and a sales page.",
+      "titlePhone": "We Tell You When\nNot to Repair",
+      "descriptionPhone": "Where replacement cost exceeds\nwhat the car is worth, we say so.\nThat's the difference between a\nknowledge base and a sales page."
     },
     {
       "id": 3,
-      "icon": "🔧",
+      "icon": "wrench",
       "title": "Vetted BMW Specialists",
-      "description": "Every specialist in our network is vetted specifically for BMW work -not generalists who happen to take on BMW jobs. 20+ vetted BMW specialists across the UK."
+      "description": "Every specialist in our network is vetted specifically for BMW work — not generalists who happen to take on BMW jobs.",
+      "highlight": "20+ vetted BMW specialists across the UK.",
+      "titleDesktop": "Vetted BMW\nSpecialists",
+      "descriptionDesktop": "Every specialist in our network\nis vetted specifically for BMW\nwork — not generalists who\nhappen to take on BMW jobs.",
+      "titlePhone": "Vetted BMW Specialists",
+      "descriptionPhone": "Every specialist in our network\nis vetted specifically for BMW\nwork — not generalists who\nhappen to take on BMW jobs.",
+      "highlightDesktop": "20+ vetted BMW specialists\nacross the UK.",
+      "highlightPhone": "20+ vetted BMW specialists\nacross the UK."
     },
     {
       "id": 4,
-      "icon": "🏆",
+      "icon": "trophy",
       "title": "Part of Engine Finders",
-      "description": "BMWEngines.uk is part of the Engine Finders family, the UK's leading engine replacement marketplace -giving you the research depth of an independent authority with a vetted route to action when you need one."
+      "description": "BMWEngines.uk is part of the Engine Finders family, the UK's leading engine replacement marketplace — giving you the research depth of an independent authority with a vetted route to action when you need one.",
+      "titleDesktop": "Part of\nEngine Finders",
+      "descriptionDesktop": "BMWEngines.uk is part of the\nEngine Finders family, the UK's\nleading engine replacement\nmarketplace — giving you the\nresearch depth of an independent\nauthority with a vetted route to\naction when you need one.",
+      "titlePhone": "Part of\nEngine Finders",
+      "descriptionPhone": "BMWEngines.uk is part of the Engine\nFinders family, the UK's leading engine\nreplacement marketplace — giving\nyou the research depth of an\nindependent authority with a vetted\nroute to action when you need one."
     }
   ],
-  "headerImageDark": {
-    "src": "/home-image/cut/trust-dark.webp",
-    "alt": "BMW 4 Series under the arch at night"
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "more": {
+      "lead": "More questions?",
+      "label": "Visit our FAQ hub",
+      "href": "/about"
+    },
+    "items": [
+      {
+        "q": "How do you calculate reliability ratings?",
+        "a": "Every rating combines failure frequency, repair complexity and total cost of ownership, drawn from 24,650+ real UK enquiries in 2025 [BMW-VERIFIED] — not manufacturer marketing or forum guesswork."
+      },
+      {
+        "q": "Are your cost ranges all-in prices?",
+        "a": "No. Replacement ranges are for reconditioned engines, supply-only [BMW-QUOTE]. Fitting adds labour on top, which varies by engine and garage."
+      },
+      {
+        "q": "Why is the N47 so high-risk?",
+        "a": "Its rear-mounted timing chain stretches and the tensioner fails. Cold-start rattle is the early warning; ignored, chain slip means full engine replacement at £3,200–£5,500 recon [BMW-QUOTE]. It was our #1 enquiry driver in 2025 with 1,450 enquiries [BMW-VERIFIED]."
+      },
+      {
+        "q": "When should I replace rather than repair?",
+        "a": "Use our 70% BMW threshold: if reconditioned engine cost runs at 70% or more of what the car is worth on today's market, get a scrap valuation alongside any repair quote — don't decide on repair cost alone."
+      },
+      {
+        "q": "Which BMW engine is the most reliable?",
+        "a": "The B58B30 is the most dependable modern BMW engine in our data — just 540 enquiries in 2025, mostly due-diligence, not failure [BMW-VERIFIED]."
+      },
+      {
+        "q": "Do you sell engines directly?",
+        "a": "BMWEngines.uk is an independent research site and part of the Engine Finders family. When you need an engine, we route you to vetted BMW specialists for a quote."
+      },
+      {
+        "q": "How often is your data updated?",
+        "a": "Monthly, from BMWEngines.uk CRM data."
+      },
+      {
+        "q": "Can you recommend a BMW specialist near me?",
+        "a": "Yes. Our network covers 20+ vetted BMW specialists across the UK. Ask for free guidance and we will route you to one."
+      },
+      {
+        "q": "What is the 70% BMW threshold?",
+        "a": "Our BMW-specific rule of thumb: when reconditioned engine cost reaches 70% or more of the car's market value, replacement stops making financial sense on its own. It is derived from analysing 826 3 Series enquiries in 2025 [BMW-VERIFIED]."
+      }
+    ]
+  },
+  "cta": {
+    "h2": "Get the <span class=\"heading-accent\">Right</span> Answer. Not Just <span class=\"heading-accent-red\">Any</span> Answer.",
+    "subHeadline": "Free, expert guidance. Real data. Honest advice.",
+    "stats": [
+      "24,650+ UK enquiries analysed",
+      "50+ engine codes tracked",
+      "Real quotes, real costs",
+      "Independent & unbiased"
+    ],
+    "primaryCta": {
+      "label": "GET YOUR FREE GUIDANCE",
+      "subLabel": "Ask a BMW engine specialist",
+      "href": "/quote"
+    },
+    "secondaryCta": {
+      "label": "CALL A SPECIALIST",
+      "subLabel": "Speak to a BMW expert now",
+      "href": "/quote"
+    },
+    "review": {
+      "brand": "Trustpilot",
+      "score": "4.8 out of 5 from 1,200+ reviews",
+      "stars": 5
+    },
+    "images": {
+      "light": "/cars/home/sec12-cta-cut.webp",
+      "dark": "/cars/home/sec12-cta-cut.webp",
+      "alt": "BMW 5 Series (G30) front view"
+    },
+    "h2Phone": "<span class=\"block\">Get the <span class=\"heading-accent\">Right</span> Answer.</span><span class=\"block\">Not Just <span class=\"heading-accent-red\">Any</span> Answer.</span>",
+    "subHeadlinePhone": "Free, expert guidance. Real data.\nHonest advice.",
+    "backdrop": {
+      "light": "/home-image/sec12/cta-streaks-light.webp",
+      "dark": "/home-image/sec12/cta-streaks-dark.webp",
+      "phone": "/home-image/sec12/cta-streaks-phone.webp"
+    }
+  },
+  "disclaimer": {
+    "title": "Important Disclaimer",
+    "text": "All costs are estimates based on real UK market data and BMW specialist quotes. Prices vary by location, vehicle condition, and specification. Always obtain a professional diagnosis before making any decision.",
+    "textPhone": "All costs are estimates based on real UK\nmarket data and BMW specialist quotes.\nPrices vary by location, vehicle condition,\nand specification. Always obtain a\nprofessional diagnosis before making\nany decision."
+  },
+  "subHeadlineDesktop": "Built on real data, verified by specialists, and completely independent —\nno sponsors, no bias, just honest advice.",
+  "subHeadlinePhone": "Built on real data, verified by specialists,\nand completely independent —\nno sponsors, no bias, just honest advice.",
+  "h2Phone": "<span class=\"block\">Why BMW Owners</span><span class=\"block\">Trust</span><span class=\"block heading-accent\">BMWEngines.uk</span>",
+  "workshop": {
+    "light": "/home-image/sec12/workshop-light.webp",
+    "dark": "/home-image/sec12/workshop-dark.webp",
+    "alt": "BMW specialist at work in a workshop"
+  },
+  "phoneHero": {
+    "src": "/cars/home/sec12-phone-cut.webp",
+    "alt": "BMW 3 Series (F30) front view",
+    "bbox": [
+      33,
+      77,
+      529,
+      434
+    ],
+    "size": [
+      563,
+      501
+    ]
   }
 }

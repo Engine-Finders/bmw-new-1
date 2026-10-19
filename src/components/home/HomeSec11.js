@@ -1,210 +1,220 @@
 "use client";
 
 import Image from "next/image";
-import MStripe from "@/components/reusableComponents/MStripe";
 import { useTheme } from "@/components/shared/themeProvider";
-import BrandIcon, { hasBrandIcon } from "@/components/home/brandIcon";
+import ScaleBox from "@/components/home/ScaleBox";
 
-const iconPaths = {
-  timeline: <path d="M12 8v8M8 12h8M5 5h14v14H5z" />,
-  car: <path d="m5 13 1.4-4.2A3 3 0 0 1 9.2 7h5.6a3 3 0 0 1 2.8 1.8L19 13m-15 0h16v5H4v-5Zm2 5v2m12-2v2M7 13l-2-1m12 1 2-1M8 16h.01M16 16h.01" />,
-  insight: <path d="M4 20h16M7 16V9m5 7V5m5 11v-4m-9 8 4-4 3 3 5-7" />,
-  chevron: <path d="m9 6 6 6-6 6" />,
-};
+// BMW Engine History — era timeline table (era / key engines / iconic models) with a key takeaway.
 
-function Icon({ name, className = "h-5 w-5", strokeWidth = 2 }) {
-  // The client's icon artwork where it has one; arrows and chevrons stay as line icons.
-  if (hasBrandIcon(name)) return <BrandIcon name={name} className={className} />;
+function CarGlyph({ style }) {
   return (
-    <svg
-      aria-hidden="true"
-      viewBox="0 0 24 24"
-      className={className}
-      fill="none"
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={strokeWidth}
-    >
-      {iconPaths[name] || iconPaths.car}
+    <svg aria-hidden="true" viewBox="2.5 3.5 19 16" style={style} fill="currentColor">
+      <path d="M5.5 10 7 5.5A2 2 0 0 1 8.9 4h6.2a2 2 0 0 1 1.9 1.5L18.5 10H20a1 1 0 0 1 1 1v6h-2v2h-3v-2H8v2H5v-2H3v-6a1 1 0 0 1 1-1h1.5Zm2.2 0h8.6l-1.2-3.8H8.9L7.7 10ZM6.5 14.5a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5Zm11 0a1.25 1.25 0 1 0 0-2.5 1.25 1.25 0 0 0 0 2.5Z" />
     </svg>
   );
 }
 
-function EraIcon({ isDark }) {
+function TrendGlyph({ style }) {
   return (
-    <span className={`relative z-10 flex h-12 w-12 shrink-0 items-center justify-center rounded-full border-2 text-[var(--color-primary)] shadow-[0_8px_20px_rgba(7,95,216,0.12)] md:h-14 md:w-14 ${isDark ? "border-[#3e5e7c] bg-[#0a1520]" : "border-[var(--color-primary)] bg-white"}`}>
-      <Icon name="car" className="h-5.5 w-5.5 md:h-6 md:w-6" strokeWidth={2.1} />
+    <svg aria-hidden="true" viewBox="0 0 24 24" style={style} fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M4 20v-4m4 4v-7m4 7v-5m4 5V10m4 10V7M4 12l5-5 4 3 7-6m0 0h-4m4 0v4" />
+    </svg>
+  );
+}
+
+// Arial cap-height offset: where a capital's top sits inside a line box of height lh.
+const capOffset = (fs, lh) => (lh - 1.117 * fs) / 2 + 0.189 * fs;
+
+function Cap({ as: Tag = "span", left, right, cap, fs, lh, className = "", style, children }) {
+  const l = lh ?? fs * 1.2;
+  return (
+    <Tag className={`absolute ${className}`} style={{ left, right, top: cap - capOffset(fs, l), fontSize: fs, lineHeight: `${l}px`, ...style }}>
+      {children}
+    </Tag>
+  );
+}
+
+// Car photo sized by the car itself (bbox from the JSON): `width` is the car's width, bottom-aligned.
+function Car({ image, left, bottom, width }) {
+  const [x0, y0, x1, y1] = image.bbox;
+  const [W, H] = image.size;
+  const boxW = width / (x1 - x0);
+  const boxH = (boxW * H) / W;
+  const h = boxH * (y1 - y0);
+  return (
+    <span className="absolute overflow-hidden" style={{ left, top: bottom - h, width, height: h }}>
+      <Image src={image.dark} alt={image.alt} width={W} height={H} sizes="130px" className="absolute max-w-none" style={{ left: -x0 * boxW, top: -y0 * boxH, width: boxW, height: boxH }} />
     </span>
   );
 }
 
-function HeaderImage({ data, isDark }) {
-  return (
-    <div className={`relative mt-5 overflow-hidden rounded-md border shadow-[0_12px_28px_rgba(10,26,43,0.06)] md:mt-0 md:h-[308px] md:rounded-none md:border-0 md:bg-transparent md:shadow-none ${isDark ? "border-[#223343] bg-[#0a1520]" : "border-[#dfe5ed] bg-white"}`}>
-      <div className="relative h-[220px] sm:h-[250px] md:h-full">
-        <Image
-          src={(isDark && data.headerImageDark ? data.headerImageDark : data.headerImage).src}
-          alt={(isDark && data.headerImageDark ? data.headerImageDark : data.headerImage).alt}
-          fill
-          className="object-cover object-right md:object-center"
-          sizes="(max-width: 768px) 100vw, 48vw"
-        />
-        <div className={isDark ? "absolute inset-0 bg-[linear-gradient(180deg,rgba(2,7,11,0.14)_0%,rgba(2,7,11,0.32)_100%)] md:hidden" : "absolute inset-0 bg-[linear-gradient(180deg,rgba(255,255,255,0.03)_0%,rgba(255,255,255,0.06)_100%)] md:hidden"} />
-        <div className={`absolute left-[-28px] top-0 hidden h-full w-18 skew-x-[-22deg] md:block ${isDark ? "bg-[#02070b]" : "bg-white"}`} />
-        <div className="absolute left-[-10px] top-0 hidden h-full w-2 skew-x-[-22deg] bg-[var(--color-primary)] md:block" />
-      </div>
-    </div>
-  );
-}
+// Desktop spec measured on the 1536px references (Section 11.1.png light, Section 11.png dark).
+// Section-relative tops; table x values are px from the card's left edge.
+const SPEC = {
+  light: {
+    h: 942, h2: { left: 57, caps: [63, 122], fs: 51, track: "-0.03em" }, p: { left: 57, cap: 186, fs: 18.1, lh: 28.5 },
+    img: { left: 650, top: 1, w: 886, h: 275 },
+    card: { left: 49, right: 73, top: 278, hdr: 42, rows: [83, 80, 80, 80, 80, 80] },
+    dividers: [302, 735, 1211], labelCx: [137.5, 510, 988.5], label: 15.5,
+    circleCx: 51, circle: 48, eraX: 114, era: 22.5, engX: 329, eng: 20, engLh: 27, engCap1: -4.5, eimg: { x: 566, w: 128 }, cars: { x: [774, 904, 1032], w: 115, bottom: 70 }, modelsX: 1212, models: 18,
+    key: { top: 818, h: 101, icon: [30, 19, 64], labelX: 131, labelCap: 36, label: 18.4, textX: 302, textCap: 32, text: 20.3, textLh: 29 },
+  },
+  dark: {
+    h: 942, h2: { left: 55, caps: [63, 118], fs: 51, track: "-0.03em" }, p: { left: 55, cap: 181, fs: 18.1, lh: 25 },
+    img: { left: 650, top: 1, w: 886, h: 270 },
+    card: { left: 45, right: 68, top: 274, hdr: 45, rows: [80, 81, 81, 81, 82, 82] },
+    dividers: [302, 754, 1223], labelCx: [135, 519, 1002], label: 15.5,
+    circleCx: 51, circle: 48, eraX: 114, era: 22.5, engX: 345, eng: 20.6, engLh: 25, engCap1: -7.5, eimg: { x: 575, w: 124 }, cars: { x: [797, 921, 1045], w: 110, bottom: 65 }, modelsX: 1223, models: 18.9,
+    key: { top: 824, h: 95, icon: [30, 17, 64], labelX: 135, labelCap: 32, label: 17.9, textX: 302, textCap: 28, text: 20.4, textLh: 29 },
+  },
+};
 
-function DesktopHeader({ data, isDark }) {
+const COL = {
+  light: { bg: "#fefefe", h2: "#05070f", accent: "#0b4fe0", para: "#262b3d", card: "#ffffff", border: "#e8ebf0", line: "#eef0f3", band: "linear-gradient(90deg,#3570e3,#3d74e3)", bandText: "#ffffff",
+    circleBg: "#ffffff", circle: "#2a71d0", glyph: "#0b4fe0", timeline: "#1f63d6", text: "#0b1236", soft: "#1d2230", keyBg: "#ffffff", keyBorder: "#e8ebf0", keyIcon: "#0b55e6", label: "#0b4fe0", shadow: "0 2px 12px rgba(16,24,48,0.04)" },
+  dark: { bg: "#01070d", h2: "#ffffff", accent: "#1f6fe6", para: "#e8ebef", card: "#010d15", border: "#2a3444", line: "#1c2632", band: "linear-gradient(90deg,#01264f,#011c3a)", bandText: "#ffffff",
+    circleBg: "#040d14", circle: "#c5d6f2", glyph: "#ffffff", timeline: "#1f63d6", text: "#ffffff", soft: "#f2f4f7", keyBg: "#000e18", keyBorder: "#2a3444", keyIcon: "#0a47a0", label: "#2f7bec", shadow: "none" },
+};
+
+function Desktop({ data, isDark }) {
+  const t = isDark ? "dark" : "light";
+  const S = SPEC[t];
+  const C = COL[t];
+  const K = S.card;
+  const tops = K.rows.map((_, i) => K.hdr + K.rows.slice(0, i).reduce((a, b) => a + b, 0));
+  const total = K.hdr + K.rows.reduce((a, b) => a + b, 0);
+  const lines = data.h2.match(/<span[^>]*>.*?<\/span>/g) || [data.h2];
+  const [kt1, kt2] = data.keyTakeawayDesktop.split("\n");
+
   return (
-    <div className="hidden md:grid md:grid-cols-[minmax(0,1fr)_48%] md:items-start">
-      <div className="relative z-10 max-w-[640px] pt-6">
-        <h2 className={`text-[3.35rem] font-bold leading-[1.05] tracking-normal ${isDark ? "text-white" : "text-[#071827]"}`} dangerouslySetInnerHTML={{ __html: data.h2 }} />
-        <div className="mt-4">
-          <MStripe />
+    <div className="relative mx-auto hidden w-full max-w-[1536px] overflow-hidden lg:block" style={{ height: S.h }}>
+      <div aria-hidden="true" className="pointer-events-none absolute" style={{ left: S.img.left, top: S.img.top, width: S.img.w, height: S.img.h }}>
+        <Image src={data.headerImage[t]} alt="" fill sizes="900px" className="object-cover [mask-image:linear-gradient(90deg,transparent,black_4%)]" />
+      </div>
+      {lines.map((l, i) => (
+        <h2 key={i} className="absolute whitespace-nowrap font-bold [&_.heading-accent]:!text-[var(--acc)]" style={{ left: S.h2.left, top: S.h2.caps[i] - capOffset(S.h2.fs, S.h2.fs * 1.15), fontSize: S.h2.fs, lineHeight: `${S.h2.fs * 1.15}px`, letterSpacing: S.h2.track, color: C.h2, "--acc": C.accent }} dangerouslySetInnerHTML={{ __html: l }} />
+      ))}
+      <Cap as="p" left={S.p.left} cap={S.p.cap} fs={S.p.fs} lh={S.p.lh} className="whitespace-pre" style={{ color: C.para }}>{data.subHeadlineDesktop}</Cap>
+
+      <div className="absolute overflow-hidden rounded-[8px]" style={{ left: K.left, right: K.right, top: K.top, height: total, background: C.card, border: `1px solid ${C.border}`, boxShadow: C.shadow }}>
+        <div className="absolute inset-x-0 top-0" style={{ height: K.hdr, background: C.band }}>
+          {data.columns.map((c, i) => (
+            <Cap key={c} left={S.labelCx[i] - 150} cap={K.hdr / 2 - 6} fs={S.label} className="w-[300px] text-center font-bold uppercase" style={{ color: C.bandText }}>{c}</Cap>
+          ))}
         </div>
-        <p className={`mt-5 max-w-[520px] text-[0.96rem] leading-[1.55] ${isDark ? "text-white/78" : "text-[#172334]"}`} dangerouslySetInnerHTML={{ __html: data.subHeadline }} />
-      </div>
-      <HeaderImage data={data} isDark={isDark} />
-    </div>
-  );
-}
-
-function MobileHeader({ data, isDark }) {
-  return (
-    <div className="md:hidden">
-      <h2 className={`mt-3 text-[2rem] font-bold leading-[1.06] tracking-normal sm:text-[2.35rem] ${isDark ? "text-white" : "text-[#071827]"}`} dangerouslySetInnerHTML={{ __html: data.h2 }} />
-      <div className="mt-4">
-        <MStripe />
-      </div>
-      <p className={`mt-4 max-w-[380px] text-[0.94rem] leading-[1.5] sm:text-[0.98rem] ${isDark ? "text-white/78" : "text-[#172334]"}`} dangerouslySetInnerHTML={{ __html: data.subHeadline }} />
-      <HeaderImage data={data} isDark={isDark} />
-    </div>
-  );
-}
-
-function DesktopTimeline({ data, isDark }) {
-  return (
-    <div className={`hidden overflow-hidden rounded-md border shadow-[0_14px_36px_rgba(10,26,43,0.06)] md:block ${isDark ? "border-[#223343] bg-[rgba(10,21,32,0.92)]" : "border-[#dfe5ed] bg-white"}`}>
-      <div className="grid grid-cols-[300px_1fr_680px] bg-[linear-gradient(90deg,#3478f6_0%,#1f63df_100%)] text-white">
-        {data.columns.map((column) => (
-          <div key={column} className="border-r border-white/18 px-8 py-3 text-center text-[1rem] font-bold uppercase last:border-r-0">
-            {column}
-          </div>
+        {S.dividers.map((d) => (
+          <span key={d} aria-hidden="true" className="absolute bottom-0" style={{ left: d, top: 0, width: 1, background: C.line }} />
         ))}
+        <span aria-hidden="true" className="absolute" style={{ left: S.circleCx - 1.5, width: 3, top: tops[0] + K.rows[0] / 2, height: tops[5] + K.rows[5] / 2 - (tops[0] + K.rows[0] / 2), background: C.timeline }} />
+        {data.eras.map((e, i) => {
+          const top = tops[i];
+          const h = K.rows[i];
+          const c = top + h / 2;
+          const eng = e.enginesDesktop.split("\n");
+          return (
+            <div key={e.era}>
+              {i ? <span aria-hidden="true" className="absolute" style={{ left: S.circleCx + 30, right: 0, top, height: 1, background: C.line }} /> : null}
+              <span className="absolute flex items-center justify-center rounded-full" style={{ left: S.circleCx - S.circle / 2, top: c - S.circle / 2, width: S.circle, height: S.circle, background: C.circleBg, border: `2px solid ${C.circle}`, color: C.glyph }}>
+                <CarGlyph style={{ width: 24, height: 20 }} />
+              </span>
+              <Cap as="h3" left={S.eraX} cap={c - 7.5} fs={S.era} className="whitespace-nowrap font-bold" style={{ color: C.text }}>{e.era}</Cap>
+              <Cap as="p" left={S.engX} cap={eng.length > 1 ? c - 19 : c + S.engCap1} fs={S.eng} lh={S.engLh} className="whitespace-pre" style={{ color: C.text }}>{e.enginesDesktop}</Cap>
+              <span className="absolute" style={{ left: S.eimg.x, top: top - 2, width: S.eimg.w, height: h + 4 }}>
+                <Image src={e.engineImage.src} alt={e.engineImage.alt} fill sizes="130px" className={`object-contain ${isDark ? "" : "mix-blend-multiply"}`} />
+              </span>
+              {e.modelImages.map((m, j) => (
+                <Car key={m.src} image={m} left={S.cars.x[j]} bottom={top + S.cars.bottom} width={S.cars.w} />
+              ))}
+              <Cap as="p" left={S.modelsX} cap={c - 5.5} fs={S.models} className="whitespace-nowrap" style={{ color: C.soft }}>{e.models}</Cap>
+            </div>
+          );
+        })}
       </div>
 
-      <div className="relative">
-        <div className="absolute bottom-5 left-[53px] top-5 w-px bg-[var(--color-primary)]" />
-        {data.eras.map((row) => (
-          <div key={row.era} className={`grid grid-cols-[300px_1fr_680px] border-b last:border-b-0 ${isDark ? "border-[#223343]" : "border-[#e7ebf0]"}`}>
-            <div className="flex items-center gap-6 px-6 py-5">
-              <EraIcon isDark={isDark} />
-              <p className={`text-[1.05rem] font-bold ${isDark ? "text-white" : "text-[#071827]"}`}>{row.era}</p>
-            </div>
-
-            <div className={`grid grid-cols-[1fr_156px] items-center gap-5 border-l px-6 py-4 ${isDark ? "border-[#223343]" : "border-[#e7ebf0]"}`}>
-              <p className={`text-[1rem] font-semibold leading-[1.4] ${isDark ? "text-white/84" : "text-[#172334]"}`}>{row.engines}</p>
-              <div className="relative h-28 overflow-hidden rounded-md">
-                <EngineVisual image={row.engineImage} sizes="156px" iconClass="h-14 w-14" />
-              </div>
-            </div>
-
-            <div className={`grid grid-cols-[1fr_168px] items-center gap-6 border-l px-6 py-4 ${isDark ? "border-[#223343]" : "border-[#e7ebf0]"}`}>
-              <div className={`grid gap-3 ${row.modelImages.length > 3 ? "grid-cols-4" : "grid-cols-3"}`}>
-                {row.modelImages.map((image, index) => (
-                  <div key={`${row.era}-${index}`} className="relative h-20 overflow-hidden rounded-md">
-                    <Image src={image.src} alt={image.alt} fill className="object-contain" sizes="140px" />
-                  </div>
-                ))}
-              </div>
-              <p className={`text-[1rem] font-medium ${isDark ? "text-white/84" : "text-[#172334]"}`}>{row.models}</p>
-            </div>
-          </div>
-        ))}
-      </div>
-    </div>
-  );
-}
-
-// The era's engine photo, or the engine icon for eras whose engines have no photo yet.
-function EngineVisual({ image, sizes, iconClass }) {
-  if (image?.src) return <Image src={image.src} alt={image.alt} fill className="object-contain" sizes={sizes} />;
-  return (
-    <span className="flex h-full w-full items-center justify-center text-[var(--color-primary)]">
-      <BrandIcon name="engine" className={iconClass} />
-    </span>
-  );
-}
-
-function MobileTimeline({ data, isDark }) {
-  return (
-    <div className="relative mt-4 md:hidden">
-      <div className="absolute bottom-6 left-[29px] top-6 w-px bg-[var(--color-primary)]" />
-      <div className="grid gap-3">
-        {data.eras.map((row) => (
-          <div key={row.era} className="relative flex gap-3">
-            <div className="w-11 shrink-0 pt-4">
-              <EraIcon isDark={isDark} />
-            </div>
-
-            <article className={`min-w-0 flex-1 rounded-md border px-4 py-4 shadow-[0_10px_24px_rgba(10,26,43,0.05)] ${isDark ? "border-[#223343] bg-[rgba(10,21,32,0.92)]" : "border-[#dfe5ed] bg-white"}`}>
-              <div className="grid gap-4 sm:grid-cols-[120px_1fr]">
-                <div>
-                  <p className={`text-[0.92rem] font-bold sm:text-[0.98rem] ${isDark ? "text-white" : "text-[#071827]"}`}>{row.era}</p>
-                </div>
-
-                <div className={`grid gap-4 border-t pt-3 sm:border-l sm:border-t-0 sm:pl-4 sm:pt-0 ${isDark ? "border-[#223343]" : "border-[#e7ebf0]"}`}>
-                  <div className="grid gap-2 sm:grid-cols-[1fr_110px] sm:items-center">
-                    <div>
-                      <p className="text-[0.76rem] font-bold uppercase text-[var(--color-primary)]">Key Engines</p>
-                      <p className={`mt-1.5 text-[0.9rem] leading-[1.4] sm:text-[0.95rem] ${isDark ? "text-white/84" : "text-[#172334]"}`}>{row.engines}</p>
-                    </div>
-                    <div className="relative mx-auto h-22 w-full max-w-[112px] overflow-hidden rounded-md sm:h-24 sm:max-w-[120px]">
-                      <EngineVisual image={row.engineImage} sizes="120px" iconClass="h-12 w-12" />
-                    </div>
-                  </div>
-
-                  <div className={`grid gap-2 border-t pt-3 sm:grid-cols-[1fr_auto] sm:items-center ${isDark ? "border-[#223343]" : "border-[#e7ebf0]"}`}>
-                    <div>
-                      <p className="text-[0.76rem] font-bold uppercase text-[var(--color-primary)]">Iconic Models</p>
-                      <div className={`mt-1.5 grid gap-1.5 ${row.modelImages.length > 3 ? "grid-cols-4" : "grid-cols-3"}`}>
-                        {row.modelImages.map((image, index) => (
-                          <div key={`${row.era}-mobile-${index}`} className="relative h-12 overflow-hidden rounded-md sm:h-14">
-                            <Image src={image.src} alt={image.alt} fill className="object-contain" sizes="90px" />
-                          </div>
-                        ))}
-                      </div>
-                      <p className={`mt-1.5 text-[0.9rem] leading-[1.4] sm:text-[0.95rem] ${isDark ? "text-white/84" : "text-[#172334]"}`}>{row.models}</p>
-                    </div>
-                    <span className="hidden text-[var(--color-primary)] sm:block">
-                      <Icon name="chevron" className="h-7 w-7" />
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </article>
-          </div>
-        ))}
-      </div>
-    </div>
-  );
-}
-
-function KeyTakeaway({ text, isDark }) {
-  return (
-    <div className={`mt-4 rounded-md border px-4 py-4 shadow-[0_12px_28px_rgba(10,26,43,0.04)] md:mt-4 md:px-8 md:py-5 ${isDark ? "border-[#223343] bg-[linear-gradient(180deg,#0a1520_0%,#07121d_100%)]" : "border-[#dfe5ed] bg-[linear-gradient(180deg,#ffffff_0%,#f8fbff_100%)]"}`}>
-      <div className="grid gap-4 md:grid-cols-[92px_1fr] md:items-center">
-        <span className="flex h-15 w-15 items-center justify-center rounded-md bg-[var(--color-primary)] text-white shadow-[0_12px_26px_rgba(7,95,216,0.2)] md:h-16 md:w-16">
-          <Icon name="insight" className="h-9 w-9 md:h-8 md:w-8" strokeWidth={2.2} />
+      <div className="absolute rounded-[8px]" style={{ left: K.left, right: K.right, top: S.key.top, height: S.key.h, background: C.keyBg, border: `1px solid ${C.keyBorder}`, boxShadow: C.shadow }}>
+        <span className="absolute flex items-center justify-center rounded-[6px] text-white" style={{ left: S.key.icon[0], top: S.key.icon[1], width: S.key.icon[2], height: S.key.icon[2], background: C.keyIcon }}>
+          <TrendGlyph style={{ width: 36, height: 36 }} />
         </span>
-        <p className={`text-[0.9rem] leading-[1.52] md:text-[1.02rem] ${isDark ? "text-white/84" : "text-[#172334]"}`}>
-          <span className="mr-2 font-bold uppercase text-[var(--color-primary)]">Key Takeaway:</span>
-          <span dangerouslySetInnerHTML={{ __html: text }} />
-        </p>
+        <Cap as="p" left={S.key.labelX} cap={S.key.labelCap} fs={S.key.label} className="whitespace-nowrap font-bold uppercase" style={{ color: C.label }}>{data.keyTakeawayLabel}</Cap>
+        <Cap as="p" left={S.key.textX} cap={S.key.textCap} fs={S.key.text} lh={S.key.textLh} className="whitespace-nowrap" style={{ color: C.text }}>
+          <span className="block">{kt1}</span>
+          <span className="block">{kt2}</span>
+        </Cap>
+      </div>
+    </div>
+  );
+}
+
+// Phone spec measured on Section 11.2.png (864px capture, compared at 432px). CSS px.
+const P = {
+  h: 862, inset: 12.5,
+  img: { left: 197.5, top: 0.5, w: 234.5, h: 199.5 },
+  h2: [{ cap: 40.5, fs: 20.5, track: "-0.055em" }, { cap: 67, fs: 31.5, track: "-0.02em" }, { cap: 92, fs: 31.5, track: "-0.02em" }], h2Left: 17.5,
+  underline: { left: 18, top: 129, w: 29, h: 2 }, p: { left: 18, cap: 147.5, fs: 8.3, lh: 14 },
+  cards: [208.5, 301, 394, 487, 579.5, 672], cardH: 85.5,
+  circle: { cx: 25.5, cy: 33.5, d: 32 }, eraX: 51, eraCap: 29.5, era: 10,
+  labelCap: 11.5, label: 7.3, engX: 128, engCap1: 39, engCap2: [32.5, 44.5], eng: 9, engImg: { x: 180.5, top: 15.5, w: 66.5, h: 58 },
+  modelsLabelX: 268, cars: { x: 264, w2: [50, 50], w3: [36.5, 36.5, 36.5], gap: 3, bottom2: 56.5, bottom3: 55.5 }, modelsX: 268, modelsCap: 68, models: 8.6,
+  chev: { x: 387.5, w: 5.5, h: 11 },
+  key: { top: 768, h: 83.5, icon: [13.5, 18.5, 40.5], labelX: 73.5, cap: 17, label: 9.4, firstX: 157, text: 9.6, lh: 15.5 },
+};
+
+function Phone({ data, isDark }) {
+  const C = COL[isDark ? "dark" : "light"];
+  const lines = data.h2Phone.match(/<span[^>]*>.*?<\/span>/g) || [];
+  const kt = data.keyTakeawayPhone.split("\n");
+  const card = { left: P.inset, right: P.inset, height: P.cardH, background: C.card, border: `1px solid ${C.border}`, borderRadius: 6, boxShadow: isDark ? "none" : "0 3px 12px rgba(16,24,48,0.05)" };
+  const labels = data.columns.slice(1);
+
+  return (
+    <div className="relative overflow-hidden lg:hidden" style={{ height: P.h }}>
+      <div aria-hidden="true" className="pointer-events-none absolute" style={{ left: P.img.left, top: P.img.top, width: P.img.w, height: P.img.h }}>
+        <Image src={isDark ? data.headerImage.dark : data.headerImage.phone} alt="" fill sizes="240px" className={isDark ? "object-cover object-[45%_50%] [mask-image:linear-gradient(90deg,transparent,black_25%)]" : "object-cover object-left-top"} />
+      </div>
+      {lines.map((l, i) => (
+        <h2 key={i} className="absolute whitespace-nowrap font-bold [&_.heading-accent]:!text-[var(--acc)]" style={{ left: P.h2Left, top: P.h2[i].cap - capOffset(P.h2[i].fs, P.h2[i].fs * 1.15), fontSize: P.h2[i].fs, lineHeight: `${P.h2[i].fs * 1.15}px`, letterSpacing: P.h2[i].track, color: C.h2, "--acc": C.accent }} dangerouslySetInnerHTML={{ __html: l }} />
+      ))}
+      <span aria-hidden="true" className="absolute" style={{ left: P.underline.left, top: P.underline.top, width: P.underline.w, height: P.underline.h, background: C.accent }} />
+      <Cap as="p" left={P.p.left} cap={P.p.cap} fs={P.p.fs} lh={P.p.lh} className="whitespace-pre" style={{ color: C.para }}>{data.subHeadlineDesktop}</Cap>
+
+      <span aria-hidden="true" className="absolute z-[1]" style={{ left: P.inset + P.circle.cx - 1, width: 2, top: P.cards[0] + P.circle.cy, height: P.cards[5] - P.cards[0], background: C.timeline }} />
+      {data.eras.map((e, i) => {
+        const imgs = i === 0 ? e.modelImages.slice(0, 2) : e.modelImages;
+        const ws = i === 0 ? P.cars.w2 : P.cars.w3;
+        const bottom = i === 0 ? P.cars.bottom2 : P.cars.bottom3;
+        const eng = e.enginesPhone.split("\n");
+        return (
+          <div key={e.era} className="absolute" style={{ ...card, top: P.cards[i] }}>
+            <span className="absolute z-[2] flex items-center justify-center rounded-full" style={{ left: P.circle.cx - P.circle.d / 2, top: P.circle.cy - P.circle.d / 2, width: P.circle.d, height: P.circle.d, background: C.circleBg, border: `1px solid ${C.circle}`, color: C.glyph }}>
+              <CarGlyph style={{ width: 16, height: 13.5 }} />
+            </span>
+            <Cap as="h3" left={P.eraX} cap={P.eraCap} fs={P.era} className="whitespace-nowrap font-bold" style={{ color: C.text }}>{e.era}</Cap>
+            <span aria-hidden="true" className="absolute" style={{ left: P.engX - 9, top: 12, bottom: 12, width: 1, background: C.line }} />
+            <Cap left={P.engX} cap={P.labelCap} fs={P.label} className="whitespace-nowrap font-bold uppercase" style={{ color: C.label }}>{labels[0]}</Cap>
+            <Cap as="p" left={P.engX} cap={eng.length > 1 ? P.engCap2[0] : P.engCap1} fs={P.eng} lh={P.engCap2[1] - P.engCap2[0]} className="whitespace-pre" style={{ color: C.text }}>{e.enginesPhone}</Cap>
+            <span className="absolute" style={{ left: P.engImg.x, top: P.engImg.top, width: P.engImg.w, height: P.engImg.h }}>
+              <Image src={e.engineImage.src} alt={e.engineImage.alt} fill sizes="70px" className={`object-contain ${isDark ? "" : "mix-blend-multiply"}`} />
+            </span>
+            <Cap left={P.modelsLabelX} cap={P.labelCap} fs={P.label} className="whitespace-nowrap font-bold uppercase" style={{ color: C.label }}>{labels[1]}</Cap>
+            {imgs.map((m, j) => (
+              <Car key={m.src} image={m} left={P.cars.x + ws.slice(0, j).reduce((a, b) => a + b + P.cars.gap, 0)} bottom={bottom} width={ws[j]} />
+            ))}
+            <Cap as="p" left={P.modelsX} cap={P.modelsCap} fs={P.models} className="whitespace-nowrap" style={{ color: C.soft }}>{e.models}</Cap>
+            <svg aria-hidden="true" viewBox="0 0 6 11" className="absolute" style={{ left: P.chev.x, top: P.cardH / 2 - P.chev.h / 2 + 3, width: P.chev.w, height: P.chev.h, color: C.label }} fill="none" stroke="currentColor" strokeWidth="1.4">
+              <path d="m.8.8 4.4 4.7L.8 10.2" />
+            </svg>
+          </div>
+        );
+      })}
+
+      <div className="absolute" style={{ left: P.inset, right: P.inset, top: P.key.top, height: P.key.h, background: isDark ? C.keyBg : "#eef3fd", border: `1px solid ${isDark ? C.keyBorder : "#e6edfb"}`, borderRadius: 6 }}>
+        <span className="absolute flex items-center justify-center rounded-[5px] text-white" style={{ left: P.key.icon[0], top: P.key.icon[1], width: P.key.icon[2], height: P.key.icon[2], background: C.keyIcon }}>
+          <TrendGlyph style={{ width: 24, height: 24 }} />
+        </span>
+        <Cap left={P.key.labelX} cap={P.key.cap} fs={P.key.label} className="whitespace-nowrap font-bold uppercase" style={{ color: C.label }}>{data.keyTakeawayLabel}</Cap>
+        {kt.map((l, i) => (
+          <Cap key={i} left={i ? P.key.labelX : P.key.firstX} cap={P.key.cap + i * P.key.lh} fs={P.key.text} className="whitespace-nowrap" style={{ color: C.text }}>{l}</Cap>
+        ))}
       </div>
     </div>
   );
@@ -213,22 +223,14 @@ function KeyTakeaway({ text, isDark }) {
 export default function HomeSec11({ data }) {
   const { theme } = useTheme();
   const isDark = theme === "dark";
-
   return (
-    <section className={`relative overflow-hidden px-4 py-7 md:px-6 md:py-8 ${isDark ? "bg-[#02070b]" : "bg-white"}`}>
-      <div className="absolute inset-x-0 top-0 hidden h-[318px] md:block">
-        <div className={isDark ? "absolute inset-0 bg-[linear-gradient(90deg,#02070b_0%,rgba(2,7,11,0.96)_44%,rgba(2,7,11,0)_70%)]" : "absolute inset-0 bg-[linear-gradient(90deg,white_0%,rgba(255,255,255,0.96)_44%,rgba(255,255,255,0)_70%)]"} />
-      </div>
-
-      <div className="relative mx-auto w-full max-w-8xl">
-        <DesktopHeader data={data} isDark={isDark} />
-        <MobileHeader data={data} isDark={isDark} />
-        <div className="mt-6">
-          <DesktopTimeline data={data} isDark={isDark} />
-          <MobileTimeline data={data} isDark={isDark} />
-        </div>
-        <KeyTakeaway text={data.keyTakeaway} isDark={isDark} />
-      </div>
+    <section className="relative overflow-hidden" style={{ background: isDark ? COL.dark.bg : COL.light.bg }}>
+      <ScaleBox width={1536}>
+        <Desktop data={data} isDark={isDark} />
+      </ScaleBox>
+      <ScaleBox width={432} max={1.5}>
+        <Phone data={data} isDark={isDark} />
+      </ScaleBox>
     </section>
   );
 }
