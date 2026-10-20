@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import { TABLE_HEADER_BG, TABLE_HEADER_TEXT } from "@/components/shared/tableHeader";
 import { useTheme } from "@/components/shared/themeProvider";
 import ScaleBox from "@/components/home/ScaleBox";
 import { MobileCard, MobileHeading, MobileLabel, MobileLead, MobileSection } from "@/components/home/mobileKit";
@@ -98,7 +99,7 @@ function Desktop({ data, isDark }) {
       <Cap as="p" left={S.p.left} cap={S.p.cap} fs={S.p.fs} lh={S.p.lh} className="whitespace-pre" style={{ color: C.para }}>{data.subHeadlineDesktop}</Cap>
 
       <div className="absolute overflow-hidden rounded-[8px]" style={{ left: K.left, right: K.right, top: K.top, height: total, background: C.card, border: `1px solid ${C.border}`, boxShadow: C.shadow }}>
-        <div className="absolute inset-x-0 top-0" style={{ height: K.hdr, background: C.band }}>
+        <div className="absolute inset-x-0 top-0" style={{ height: K.hdr, background: TABLE_HEADER_BG }}>
           {data.columns.map((c, i) => (
             <Cap key={c} left={S.labelCx[i] - 150} cap={K.hdr / 2 - 6} fs={S.label} className="w-[300px] text-center font-bold uppercase" style={{ color: C.bandText }}>{c}</Cap>
           ))}
@@ -181,7 +182,7 @@ function Phone({ data, isDark }) {
                 <MobileLabel color={C.label}>{modelLabel}</MobileLabel>
                 <div className="mt-2 grid grid-cols-3 gap-2">
                   {e.modelImages.map((m) => (
-                    <span key={m.src} className="relative h-[44px]">
+                    <span key={m.src} className="relative h-[64px]">
                       <Image src={m.dark} alt={m.alt} fill sizes="110px" className="object-contain" />
                     </span>
                   ))}

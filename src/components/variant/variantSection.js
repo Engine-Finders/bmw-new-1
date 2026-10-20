@@ -34,11 +34,7 @@ export function splitSectionH2(title = "") {
   return { before: clean, accent: "" };
 }
 
-export function tableHeaderClass(isDark) {
-  return isDark
-    ? "bg-[var(--color-chrome)] text-[var(--color-page)]"
-    : "bg-[var(--color-primary)] text-white";
-}
+export { tableHeaderClass } from "@/components/shared/tableHeader";
 
 export function indexBadgeClass(isDark) {
   return isDark

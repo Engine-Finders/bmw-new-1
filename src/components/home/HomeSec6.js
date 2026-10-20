@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { TABLE_HEADER_BG, TABLE_HEADER_TEXT } from "@/components/shared/tableHeader";
 import { useTheme } from "@/components/shared/themeProvider";
 import ScaleBox from "@/components/home/ScaleBox";
 import { MobileCard, MobileHeading, MobileLabel, MobileLead, MobileSection } from "@/components/home/mobileKit";
@@ -196,7 +197,7 @@ function Desktop({ data, isDark }) {
             </h3>
           </div>
           <div aria-hidden="true" style={{ height: 1, background: C.line, marginLeft: isDark ? 0 : 22, marginRight: isDark ? 0 : 22 }} />
-          <div className="relative grid" style={{ gridTemplateColumns: colTpl, height: M.hdrH, background: C.hdrBand }}>
+          <div className="relative grid" style={{ gridTemplateColumns: colTpl, height: M.hdrH, background: TABLE_HEADER_BG }}>
             {data.matrix.columns.map((c, i) => (
               <span
                 key={c}
@@ -205,7 +206,7 @@ function Desktop({ data, isDark }) {
                   paddingTop: M.hdrLabelTop,
                   fontSize: 12,
                   lineHeight: "12px",
-                  color: C.label,
+                  color: TABLE_HEADER_TEXT,
                   textAlign: i === 0 ? "center" : "left",
                   paddingLeft: i === 0 ? M.label1Pad : M.labelX[i] - M.dividers[i - 1],
                 }}
@@ -311,6 +312,21 @@ const VERDICT_PILL = {
   dark: { scrap: ["rgba(220,38,38,0.18)", "#f87171"], safe: ["rgba(34,197,94,0.16)", "#4ade80"], watch: ["rgba(245,158,11,0.16)", "#fbbf24"] },
 };
 
+// Car photo cropped to the car itself (bbox from the JSON), so it fills its slot instead of
+// floating in the photo's white margin.
+function CarCrop({ image, isDark, width }) {
+  const [x0, y0, x1, y1] = image.bbox;
+  const [W, H] = image.size;
+  const boxW = width / (x1 - x0);
+  const boxH = (boxW * H) / W;
+  const h = boxH * (y1 - y0);
+  return (
+    <span className="relative shrink-0 overflow-hidden" style={{ width, height: h }}>
+      <Image src={isDark ? image.dark : image.src} alt={image.alt} width={W} height={H} sizes={`${Math.round(width * 2)}px`} className={`absolute max-w-none ${isDark ? "" : "mix-blend-multiply"}`} style={{ left: -x0 * boxW, top: -y0 * boxH, width: boxW, height: boxH }} />
+    </span>
+  );
+}
+
 // Phone / tablet: readable stacked layout (body 17px, entries 16–18px, labels 13px).
 function Phone({ data, isDark }) {
   const t = isDark ? "dark" : "light";
@@ -340,26 +356,24 @@ function Phone({ data, isDark }) {
             return (
               <li key={row.href} className="border-b last:border-b-0" style={{ borderColor: C.line }}>
                 <Link href={row.href} className="block px-4 py-4 font-normal" style={{ color: C.strong }}>
-                  <span className="flex items-center gap-3">
-                    <span className="relative h-[44px] w-[76px] shrink-0">
-                      <Image src={isDark ? row.image.dark : row.image.src} alt={row.image.alt} fill sizes="80px" className={`object-contain ${isDark ? "" : "mix-blend-multiply"}`} />
-                    </span>
+                  <span className="flex items-center gap-4">
+                    <CarCrop image={row.image} isDark={isDark} width={148} />
                     <span className="min-w-0 flex-1">
                       <span className="block text-[18px] font-bold leading-tight">{row.name}</span>
-                      <span className="mt-0.5 block text-[15px]" style={{ color: C.code }}>{row.code}</span>
+                      <span className="mt-0.5 block text-[14px]" style={{ color: C.code }}>{row.code}</span>
                     </span>
                     <svg aria-hidden="true" viewBox="0 0 24 24" className="h-5 w-5 shrink-0" fill="none" stroke="currentColor" strokeWidth="2" style={{ color: C.blue }}>
                       <path d="m9 5 7 7-7 7" />
                     </svg>
                   </span>
-                  <span className="mt-3 grid gap-2">
+                  <span className="mt-3 block rounded-[8px] px-3.5" style={{ background: isDark ? C.boxBg : "#f6f8fc" }}>
                     {[row.vehicleValue, row.replacementCost].map((v, i) => (
-                      <span key={i} className="flex items-center justify-between gap-3 rounded-[8px] px-3.5 py-2.5" style={{ background: isDark ? C.boxBg : "#f6f8fc" }}>
-                        <span>
-                          <MobileLabel color={C.tag}>{cols[i + 1]}</MobileLabel>
-                          <span className="block text-[13px]" style={{ color: C.tag }}>{v.tag}</span>
+                      <span key={i} className="flex items-center justify-between gap-3 border-b py-2.5 last:border-b-0" style={{ borderColor: isDark ? C.boxBorder : "#e6eaf2" }}>
+                        <span style={{ color: C.tag }}>
+                          <span className="block text-[12px] font-semibold uppercase tracking-[0.03em]">{cols[i + 1]}</span>
+                          <span className="block text-[11px] opacity-80">{v.tag}</span>
                         </span>
-                        <span className="whitespace-nowrap text-[18px] font-bold">{v.value}</span>
+                        <span className="whitespace-nowrap text-[15px] font-semibold">{v.value}</span>
                       </span>
                     ))}
                   </span>

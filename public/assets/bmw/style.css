@@ -15,6 +15,10 @@
   --bmw-bg:         #FFFFFF;
   --bmw-bg-alt:     #F5F6F7;
 
+  /* One table-header colour for every table on the site (matches the React pages). */
+  --table-head:      #0b47a8;
+  --table-head-text: #ffffff;
+
   --stripe-blue-dark: #1B4F9C;
   --stripe-blue:      #3D9BE0;
   --stripe-red:       #C8102E;
@@ -265,8 +269,8 @@ table { border-collapse: collapse; width: 100%; }
 .data-table-wrap { overflow-x: auto; border-radius: var(--radius-md); box-shadow: var(--shadow-card); border: 1px solid var(--bmw-grey-200); }
 .data-table { min-width: 640px; background: var(--bmw-bg); }
 .data-table thead th {
-  background: var(--bmw-blue);
-  color: #fff;
+  background: var(--table-head);
+  color: var(--table-head-text);
   text-transform: uppercase;
   font-size: 11px;
   letter-spacing: 0.05em;
@@ -280,6 +284,27 @@ table { border-collapse: collapse; width: 100%; }
 }
 .data-table tbody tr:last-child td { border-bottom: none; }
 .data-table tbody tr:hover { background: var(--bmw-bg-alt); }
+
+/* Same blue header on every other table type used across the static pages. */
+.recall-table thead th,
+.matrix-table thead th,
+table thead th {
+  background: var(--table-head);
+  color: var(--table-head-text);
+}
+.matrix-wrap { overflow-x: auto; border-radius: var(--radius-md); box-shadow: var(--shadow-card); border: 1px solid var(--bmw-grey-200); }
+.matrix-table { width: 100%; min-width: 640px; border-collapse: collapse; background: var(--bmw-bg); }
+.matrix-table thead th {
+  text-transform: uppercase;
+  font-size: 11px;
+  letter-spacing: 0.05em;
+  padding: 13px 16px;
+  text-align: left;
+}
+.matrix-table tbody th { padding: 13px 16px; text-align: left; font-weight: 600; background: var(--bmw-bg-alt); border-bottom: 1px solid var(--bmw-grey-200); }
+.matrix-table tbody td { padding: 13px 16px; border-bottom: 1px solid var(--bmw-grey-200); font-size: 14.5px; }
+.matrix-table tbody tr:last-child th,
+.matrix-table tbody tr:last-child td { border-bottom: none; }
 
 .sev-dot { display: inline-block; width: 9px; height: 9px; border-radius: 50%; margin-right: 7px; }
 .sev-critical { background: var(--sev-critical); }

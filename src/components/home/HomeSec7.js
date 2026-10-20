@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { TABLE_HEADER_BG, TABLE_HEADER_TEXT } from "@/components/shared/tableHeader";
 import { useTheme } from "@/components/shared/themeProvider";
 import ScaleBox from "@/components/home/ScaleBox";
 import { MobileHeading, MobileLabel, MobileLead, MobileSection } from "@/components/home/mobileKit";
@@ -125,7 +126,7 @@ function Desktop({ data, isDark }) {
       </div>
 
       <div className="relative overflow-hidden rounded-[10px]" style={{ marginLeft: K.left - S.padL, marginRight: K.right, background: C.card, border: `1px solid ${C.border}`, boxShadow: C.shadow }}>
-        <div className="relative uppercase" style={{ height: K.hdrH, background: C.hdrBand, color: C.hdr, borderBottom: `1px solid ${C.line}` }}>
+        <div className="relative uppercase" style={{ height: K.hdrH, background: TABLE_HEADER_BG, color: TABLE_HEADER_TEXT }}>
           {data.columns.map((c, i) => (
             <span key={c} className={`absolute whitespace-nowrap ${isDark ? "" : "font-bold"}`} style={{ left: pct(S.labelX[i]), top: padFor(K.hdrCap, K.hdr), ...fs(K.hdr) }}>{c}</span>
           ))}

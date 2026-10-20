@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { TABLE_HEADER_BG, TABLE_HEADER_TEXT } from "@/components/shared/tableHeader";
 import { useTheme } from "@/components/shared/themeProvider";
 import BrandIcon from "@/components/home/brandIcon";
 import VerdictGlyph from "@/components/home/VerdictGlyph";
@@ -107,9 +108,8 @@ export default function HomeSec4({ data }) {
           }`}
         >
           <div
-            className={`grid ${desktopGrid} items-center border-b px-9 py-4 text-[0.95rem] ${line} ${
-              isDark ? "bg-[rgba(14,30,58,0.7)] text-white" : "font-medium text-[#0b4fc0]"
-            }`}
+            className={`grid ${desktopGrid} items-center px-9 py-4 text-[0.95rem] font-medium uppercase`}
+            style={{ background: TABLE_HEADER_BG, color: TABLE_HEADER_TEXT }}
           >
             <span>{data.columns[0]}</span>
             <span>{data.columns[1]}</span>

@@ -120,7 +120,7 @@ export default function LeadsPage() {
 
       <div className="mt-4 overflow-x-auto rounded border border-[var(--color-border)] bg-[var(--color-surface)]">
         <table className="min-w-full border-collapse text-left text-sm">
-          <thead className="bg-[var(--color-page-soft)] text-xs uppercase tracking-wide text-[var(--color-text-muted)]">
+          <thead className="bg-[#0b47a8] text-xs uppercase tracking-wide text-white">
             <tr>
               <th className="whitespace-nowrap px-3 py-2 font-bold">ID</th>
               <th className="whitespace-nowrap px-3 py-2 font-bold">Created</th>
