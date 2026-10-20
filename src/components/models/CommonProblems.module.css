@@ -1,0 +1,701 @@
+/*
+ * Model page "Common Engine Problems" (section 6), built to the reference designs
+ * (light + dark desktop at 1536px, light phone at 836px).
+ * Sizes are reference pixels times --u, so the section is the reference scaled to its own width:
+ * below 1024px the phone reference (one card per row), from 1024px the desktop reference
+ * (3 x 2 cards). On small phones text has a floor so it stays readable.
+ */
+
+.section {
+  overflow-y: clip;
+  background: var(--p-page);
+  color: var(--p-text);
+}
+
+.frame {
+  container-type: inline-size;
+  max-width: 1628px;
+  margin: 0 auto;
+}
+
+.inner {
+  --u: calc(100cqw / 836);
+  padding: calc(77 * var(--u)) calc(36 * var(--u)) calc(12 * var(--u)) calc(37 * var(--u));
+}
+
+/* ---------- theme tokens ---------- */
+
+.light {
+  --p-page: #f7f8fc;
+  --p-text: #0d1222;
+  --p-accent: #1556e6;
+  --p-copy: #4f5164;
+  --p-card: #ffffff;
+  --p-card-border: #e5e9f0;
+  --p-card-shadow: 0 4px 14px rgba(20, 40, 90, 0.05);
+  --p-title: #0f1424;
+  --p-desc: #23252f;
+  --p-photo: linear-gradient(135deg, #2a2a2e 0%, #0d0d10 100%);
+  --p-num-bg: #ffffff;
+  --p-num: #1652e0;
+  --p-cost-icon-bg: #e4edfc;
+  --p-cost-icon: #1c55d6;
+  --p-cost-border: transparent;
+  --p-tag: #2457c8;
+  --p-learn: #1550d8;
+  --p-divider: #e3e6ec;
+  --p-key-text: #2f3240;
+  --sev-catastrophic: #e5352f;
+  --sev-immediate: #f2611c;
+  --sev-monitor: #f4b51e;
+  --sev-monitor-text: #e7a419;
+  --sev-low: #2e9b3c;
+}
+
+.dark {
+  --p-page: #020a16;
+  --p-text: #f3f5fa;
+  --p-accent: #2b74f0;
+  --p-copy: #c7cfdc;
+  --p-card: #061224;
+  --p-card-border: rgba(90, 120, 170, 0.3);
+  --p-card-shadow: none;
+  --p-title: #f3f6fb;
+  --p-desc: #d3dae6;
+  --p-photo: linear-gradient(135deg, #1d1e22 0%, #07080b 100%);
+  --p-num-bg: #0b2a5e;
+  --p-num: #ffffff;
+  --p-cost-icon-bg: #142f5d;
+  --p-cost-icon: #9cc1ff;
+  --p-cost-border: rgba(110, 140, 190, 0.35);
+  --p-tag: #3c78e0;
+  --p-learn: #3d82f2;
+  --p-divider: rgba(110, 140, 190, 0.25);
+  --p-key-text: #c9d2e0;
+  --sev-catastrophic: #ef4136;
+  --sev-immediate: #f6662a;
+  --sev-monitor: #f6bb26;
+  --sev-monitor-text: #f3b523;
+  --sev-low: #34a845;
+}
+
+.deskOnly {
+  display: none;
+}
+
+/* ---------- heading ---------- */
+
+.title {
+  margin: 0 0 0 calc(3 * var(--u));
+  font-size: calc(42 * var(--u));
+  font-weight: 700;
+  line-height: calc(50 * var(--u));
+  letter-spacing: -0.05em;
+  color: var(--p-text);
+}
+
+/* the phone reference puts "Engine Problems" on its own line */
+.accent {
+  display: block;
+  color: var(--p-accent);
+}
+
+.bar {
+  display: none;
+}
+
+.copy {
+  margin: calc(12.5 * var(--u)) 0 0 calc(3 * var(--u));
+  font-size: calc(18.6 * var(--u));
+  line-height: calc(29 * var(--u));
+  color: var(--p-copy);
+}
+
+/* ---------- shared bits ---------- */
+
+.severity {
+  display: inline-flex;
+  align-items: center;
+  font-weight: 600;
+  color: var(--sev);
+}
+
+.dot {
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: var(--sev-dot, var(--sev));
+}
+
+.sev_catastrophic { --sev: var(--sev-catastrophic); }
+.sev_immediate { --sev: var(--sev-immediate); }
+.sev_monitor { --sev: var(--sev-monitor-text); --sev-dot: var(--sev-monitor); }
+.sev_low { --sev: var(--sev-low); }
+
+.learn {
+  display: inline-flex;
+  align-items: center;
+  color: var(--p-learn);
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.photo {
+  position: relative;
+  overflow: hidden;
+  background: var(--p-photo);
+}
+
+.photoImg {
+  object-fit: cover;
+}
+
+.num {
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: calc(8 * var(--u));
+  background: var(--p-num-bg);
+  color: var(--p-num);
+  font-weight: 600;
+  line-height: 1;
+}
+
+/* ---------- phone cards ---------- */
+
+.pList {
+  display: flex;
+  flex-direction: column;
+  gap: calc(14 * var(--u));
+  margin-top: calc(26.5 * var(--u));
+}
+
+.pList.phoneOnly {
+  display: flex;
+}
+
+.pCard {
+  display: grid;
+  grid-template-columns: calc(197 * var(--u)) 1fr calc(162 * var(--u));
+  min-height: calc(180 * var(--u));
+  padding: calc(4 * var(--u));
+  border: 1px solid var(--p-card-border);
+  border-radius: calc(10 * var(--u));
+  background: var(--p-card);
+  box-shadow: var(--p-card-shadow);
+}
+
+.pCard .photo {
+  border-radius: calc(8 * var(--u));
+}
+
+.pCard .num {
+  top: calc(5 * var(--u));
+  left: calc(6 * var(--u));
+  width: calc(46 * var(--u));
+  height: calc(46 * var(--u));
+  font-size: calc(25 * var(--u));
+}
+
+.pBody {
+  padding: calc(13 * var(--u)) calc(19 * var(--u)) calc(15 * var(--u)) calc(23 * var(--u));
+}
+
+.pTitle {
+  margin: 0;
+  font-size: calc(21.4 * var(--u));
+  font-weight: 600;
+  line-height: calc(30 * var(--u));
+  letter-spacing: -0.02em;
+  white-space: nowrap;
+  color: var(--p-title);
+}
+
+.pDesc {
+  margin: calc(6.3 * var(--u)) 0 0;
+  white-space: nowrap;
+  font-size: calc(16.3 * var(--u));
+  line-height: calc(25.4 * var(--u));
+  color: var(--p-desc);
+}
+
+.pSide {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: calc(16 * var(--u));
+}
+
+.pSide .severity {
+  gap: calc(12 * var(--u));
+  font-size: calc(17 * var(--u));
+  line-height: calc(26 * var(--u));
+}
+
+.pSide .dot {
+  width: calc(18 * var(--u));
+  height: calc(18 * var(--u));
+}
+
+.pLearn {
+  gap: calc(10 * var(--u));
+  margin-top: calc(25 * var(--u));
+  font-size: calc(18 * var(--u));
+  line-height: calc(26 * var(--u));
+}
+
+.pLearn .learnArrow {
+  width: calc(22 * var(--u));
+  height: calc(22 * var(--u));
+}
+
+/* ---------- urgency key ---------- */
+
+.key {
+  position: relative;
+  margin-top: calc(23 * var(--u));
+  padding: calc(4 * var(--u)) 0 calc(13 * var(--u));
+  border: 1px solid var(--p-card-border);
+  border-radius: calc(10 * var(--u));
+  background: var(--p-card);
+  box-shadow: var(--p-card-shadow);
+}
+
+.keyTitle {
+  margin: 0 0 0 calc(16 * var(--u));
+  font-size: calc(18 * var(--u));
+  font-weight: 700;
+  line-height: calc(26 * var(--u));
+  color: var(--p-title);
+}
+
+.keyList {
+  display: grid;
+  grid-template-columns: 219fr 192fr 176fr 176fr;
+  margin: calc(8 * var(--u)) 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.keyItem {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  gap: calc(11 * var(--u));
+  padding-left: calc(26 * var(--u));
+}
+
+.keyItem + .keyItem::before {
+  content: "";
+  position: absolute;
+  top: calc(-2 * var(--u));
+  bottom: calc(2 * var(--u));
+  left: 0;
+  width: 1px;
+  background: var(--p-divider);
+}
+
+.keyDot {
+  flex-shrink: 0;
+  width: calc(16 * var(--u));
+  height: calc(16 * var(--u));
+  margin-top: calc(4 * var(--u));
+  border-radius: 50%;
+  background: var(--sev-dot, var(--sev));
+}
+
+.keyText {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+.keyText strong {
+  font-size: calc(14.2 * var(--u));
+  font-weight: 600;
+  line-height: calc(24 * var(--u));
+  color: var(--p-title);
+}
+
+.keyText span {
+  margin-top: calc(1 * var(--u));
+  font-size: calc(13.7 * var(--u));
+  line-height: calc(21 * var(--u));
+  color: var(--p-key-text);
+}
+
+/* ======================= Small phones ======================= */
+/* At exact reference scale the phone text would be ~8px on a 390px phone, so it gets minimum sizes. */
+@container (max-width: 650px) {
+  .inner {
+    padding: 24px 12px 14px;
+  }
+
+  .title {
+    margin-left: 0;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: -0.03em;
+  }
+
+  .copy {
+    margin: 8px 0 0;
+    font-size: 14px;
+    line-height: 1.55;
+  }
+
+  .copy br,
+  .pDesc br {
+    display: none;
+  }
+
+  .pList {
+    gap: 10px;
+    margin-top: 16px;
+  }
+
+  .pCard {
+    grid-template-columns: 26% 1fr 84px;
+    min-height: 0;
+    padding: 3px;
+    border-radius: 10px;
+  }
+
+  .pCard .photo {
+    border-radius: 7px;
+  }
+
+  .pCard .num {
+    top: 5px;
+    left: 5px;
+    width: 26px;
+    height: 26px;
+    border-radius: 6px;
+    font-size: 13px;
+  }
+
+  .pBody {
+    padding: 8px 8px 10px 10px;
+  }
+
+  .pTitle {
+    white-space: normal;
+    font-size: 14px;
+    line-height: 1.35;
+  }
+
+  .pDesc {
+    white-space: normal;
+    margin-top: 4px;
+    font-size: 12px;
+    line-height: 1.5;
+  }
+
+  .pSide {
+    padding: 9px 4px 0 0;
+  }
+
+  .pSide .severity {
+    gap: 5px;
+    font-size: 11.5px;
+    line-height: 1.4;
+  }
+
+  .pSide .dot {
+    width: 9px;
+    height: 9px;
+  }
+
+  .pLearn {
+    gap: 3px;
+    margin-top: 10px;
+    font-size: 11.5px;
+    line-height: 1.4;
+  }
+
+  .pLearn .learnArrow {
+    width: 13px;
+    height: 13px;
+  }
+
+  .key {
+    margin-top: 12px;
+    padding: 8px 0 10px;
+    border-radius: 10px;
+  }
+
+  .keyTitle {
+    margin-left: 10px;
+    font-size: 13px;
+    line-height: 1.4;
+  }
+
+  .keyList {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 10px;
+    margin-top: 8px;
+  }
+
+  .keyItem {
+    gap: 6px;
+    padding-left: 10px;
+  }
+
+  .keyItem + .keyItem::before {
+    top: 0;
+    bottom: 0;
+  }
+
+  .keyItem:nth-child(3)::before {
+    display: none;
+  }
+
+  .keyDot {
+    width: 10px;
+    height: 10px;
+    margin-top: 3px;
+  }
+
+  .keyText strong {
+    font-size: 12px;
+    line-height: 1.4;
+  }
+
+  .keyText span {
+    font-size: 11.5px;
+    line-height: 1.4;
+  }
+
+  .keyText br {
+    display: none;
+  }
+}
+
+/* ======================= Laptops and desktops ======================= */
+
+@media (min-width: 1024px) {
+  .inner {
+    --u: calc(100cqw / 1536);
+    padding: calc(62 * var(--u)) calc(48 * var(--u)) calc(12 * var(--u)) calc(47 * var(--u));
+  }
+
+  .deskOnly {
+    display: block;
+  }
+
+  .phoneOnly,
+  .pList.phoneOnly {
+    display: none;
+  }
+
+  .title {
+    margin-left: 0;
+    font-size: calc(42 * var(--u));
+    line-height: calc(52 * var(--u));
+    letter-spacing: -0.045em;
+  }
+
+  .accent {
+    display: inline;
+  }
+
+  .bar {
+    display: block;
+    width: calc(31 * var(--u));
+    height: calc(3 * var(--u));
+    margin-top: calc(6 * var(--u));
+    background: var(--p-accent);
+  }
+
+  .copy {
+    margin: calc(7.4 * var(--u)) 0 0;
+    font-size: calc(16.3 * var(--u));
+    line-height: calc(25 * var(--u));
+  }
+
+  /* ---------- 3 x 2 cards ---------- */
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: calc(315 * var(--u)) calc(270 * var(--u));
+    gap: calc(21 * var(--u));
+    margin-top: calc(21.6 * var(--u));
+  }
+
+  .card {
+    position: relative;
+    display: grid;
+    grid-template-columns: calc(191 * var(--u)) 1fr;
+    overflow: hidden;
+    border: 1px solid var(--p-card-border);
+    border-radius: calc(10 * var(--u));
+    background: var(--p-card);
+    box-shadow: var(--p-card-shadow);
+  }
+
+  .card .num {
+    top: calc(9 * var(--u));
+    left: calc(8 * var(--u));
+    width: calc(42 * var(--u));
+    height: calc(40 * var(--u));
+    font-size: calc(24 * var(--u));
+  }
+
+  .body {
+    position: relative;
+    padding: calc(13.4 * var(--u)) calc(16 * var(--u)) 0 calc(22 * var(--u));
+  }
+
+  .cardTitle {
+    margin: 0;
+    font-size: calc(18.9 * var(--u));
+    font-weight: 600;
+    line-height: calc(25 * var(--u));
+    letter-spacing: -0.01em;
+    color: var(--p-title);
+  }
+
+  .cardSeverity {
+    gap: calc(9 * var(--u));
+    margin-top: calc(11.6 * var(--u));
+    font-size: calc(13.4 * var(--u));
+    line-height: calc(18 * var(--u));
+  }
+
+  .cardSeverity .dot {
+    width: calc(13 * var(--u));
+    height: calc(13 * var(--u));
+  }
+
+  .desc {
+    margin: calc(11 * var(--u)) 0 0;
+    white-space: nowrap;
+    font-size: calc(12.5 * var(--u));
+    line-height: calc(18.3 * var(--u));
+    color: var(--p-desc);
+  }
+
+  .cost {
+    display: flex;
+    align-items: center;
+    gap: calc(10 * var(--u));
+    width: fit-content;
+    margin-top: calc(14 * var(--u));
+    padding: calc(2 * var(--u)) calc(12 * var(--u)) calc(2 * var(--u)) 0;
+    border: 1px solid var(--p-cost-border);
+    border-radius: calc(8 * var(--u));
+  }
+
+  /* dark reference: the price sits in an outlined pill, a little higher, clear of "Learn more" */
+  .dark .cost {
+    margin-top: calc(6 * var(--u));
+    padding-top: calc(4 * var(--u));
+    padding-bottom: calc(4 * var(--u));
+    padding-left: calc(9 * var(--u));
+  }
+
+  .costIcon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(30 * var(--u));
+    height: calc(30 * var(--u));
+    border-radius: 50%;
+    background: var(--p-cost-icon-bg);
+    color: var(--p-cost-icon);
+    font-size: calc(17 * var(--u));
+    font-weight: 500;
+  }
+
+  .costText {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .costText strong {
+    font-size: calc(13.3 * var(--u));
+    font-weight: 600;
+    line-height: calc(17 * var(--u));
+    color: var(--p-title);
+  }
+
+  .costText span {
+    font-size: calc(11 * var(--u));
+    line-height: calc(15 * var(--u));
+    color: var(--p-tag);
+  }
+
+  .cardLearn {
+    position: absolute;
+    right: calc(16 * var(--u));
+    bottom: calc(10 * var(--u));
+    gap: calc(9 * var(--u));
+    font-size: calc(12.9 * var(--u));
+    line-height: calc(18 * var(--u));
+  }
+
+  .cardLearn .learnArrow {
+    width: calc(16 * var(--u));
+    height: calc(16 * var(--u));
+  }
+
+  /* ---------- urgency key ---------- */
+
+  .key {
+    height: calc(97 * var(--u));
+    margin-top: calc(22 * var(--u));
+    padding: 0;
+  }
+
+  .keyTitle {
+    position: absolute;
+    top: calc(18 * var(--u));
+    left: calc(25 * var(--u));
+    margin: 0;
+    font-size: calc(16 * var(--u));
+    line-height: calc(22 * var(--u));
+  }
+
+  .keyList {
+    position: absolute;
+    top: calc(17 * var(--u));
+    left: calc(203 * var(--u));
+    right: 0;
+    grid-template-columns: 315fr 273fr 272fr 378fr;
+    margin: 0;
+  }
+
+  .keyItem {
+    gap: calc(12 * var(--u));
+    padding-left: calc(65 * var(--u));
+  }
+
+  .keyItem + .keyItem::before {
+    top: calc(10 * var(--u));
+    bottom: calc(10 * var(--u));
+  }
+
+  .keyItem:first-child {
+    padding-left: calc(65 * var(--u));
+  }
+
+  .keyDot {
+    width: calc(20 * var(--u));
+    height: calc(20 * var(--u));
+    margin-top: calc(1 * var(--u));
+  }
+
+  .keyText strong {
+    font-size: calc(14.5 * var(--u));
+    line-height: calc(22 * var(--u));
+  }
+
+  .keyText span {
+    margin-top: calc(3 * var(--u));
+    font-size: calc(12.8 * var(--u));
+    line-height: calc(18 * var(--u));
+  }
+}

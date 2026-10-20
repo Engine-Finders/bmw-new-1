@@ -1,0 +1,1002 @@
+/*
+ * Model page "At a Glance" (section 3), built to the reference designs
+ * (light + dark desktop at 1536px, light phone at 856px).
+ * Sizes are reference pixels times --u, so the section is the reference scaled to its own width:
+ * below 1024px the 856px-wide phone reference (cards), from 1024px the 1536px-wide desktop
+ * reference (table). On small phones text has a floor (max(…px, …)) so it stays readable.
+ */
+
+.section {
+  position: relative;
+  overflow: hidden;
+  background: var(--ag-bg);
+  color: var(--ag-text);
+}
+
+.frame {
+  container-type: inline-size;
+  max-width: 1628px;
+  margin: 0 auto;
+}
+
+.inner {
+  --u: calc(100cqw / 856);
+  position: relative;
+  isolation: isolate;
+  padding: calc(72 * var(--u)) calc(26 * var(--u)) calc(15 * var(--u)) calc(33 * var(--u));
+}
+
+/* ---------- theme tokens ---------- */
+
+.light {
+  --ag-bg: #f8f9fd;
+  --ag-text: #060f21;
+  --ag-accent: #0a55e6;
+  --ag-copy: #262a38;
+  --ag-card-bg: rgba(255, 255, 255, 0.94);
+  --ag-card-border: #e3e8f0;
+  --ag-card-shadow: 0 12px 34px rgba(25, 50, 100, 0.07);
+  --ag-th: #1b274e;
+  --ag-label: #0c142f;
+  --ag-value: #1a1c24;
+  --ag-divider: #e6e9ef;
+  --ag-tile-bg: #ffffff;
+  --ag-tile-border: #e1e8f3;
+  --ag-tile-shadow: 0 3px 8px rgba(30, 70, 140, 0.08);
+  --ag-icon: #195ee3;
+  --ag-risk: #e5484d;
+  --ag-risk-bg: #fff5f5;
+  --ag-risk-border: #f6d6d6;
+  --ag-star: #0f5bea;
+  --ag-star-off: #8fa3c4;
+  --ag-badge-bg: #eef4fd;
+  --ag-badge-border: #cddbf3;
+  --ag-badge-text: #2f5fc4;
+  --ag-score-bg: #e6eefb;
+  --ag-score-text: #2f5cc2;
+  --ag-ok: #3d9a3f;
+  --ag-band: rgba(214, 228, 248, 0.55);
+  --ag-line-a: transparent;
+  --ag-line-b: transparent;
+}
+
+.dark {
+  --ag-bg: #000710;
+  --ag-text: #f8f8fa;
+  --ag-accent: #065be8;
+  --ag-copy: #dde3eb;
+  --ag-card-bg: rgba(4, 16, 32, 0.72);
+  --ag-card-border: rgba(90, 130, 190, 0.32);
+  --ag-card-shadow: 0 0 18px rgba(30, 90, 200, 0.12);
+  --ag-th: #dde4ee;
+  --ag-label: #f3f7fd;
+  --ag-value: #d6dee9;
+  --ag-divider: rgba(140, 170, 210, 0.14);
+  --ag-tile-bg: #0b1a2f;
+  --ag-tile-border: rgba(80, 120, 180, 0.28);
+  --ag-tile-shadow: none;
+  --ag-icon: #2f77e2;
+  --ag-risk: #ef5350;
+  --ag-risk-bg: #2a1016;
+  --ag-risk-border: rgba(239, 83, 80, 0.3);
+  --ag-star: #0d5fe9;
+  --ag-star-off: #7f8ea6;
+  --ag-badge-bg: rgba(20, 50, 100, 0.35);
+  --ag-badge-border: rgba(80, 120, 190, 0.45);
+  --ag-badge-text: #5784d4;
+  --ag-score-bg: rgba(20, 50, 100, 0.45);
+  --ag-score-text: #4f86dc;
+  --ag-ok: #43a047;
+  --ag-band: rgba(16, 50, 120, 0.22);
+  --ag-line-a: rgba(60, 130, 255, 0.85);
+  --ag-line-b: rgba(40, 100, 220, 0.4);
+}
+
+/* ---------- backdrop: car scene, diagonal band and lines ---------- */
+
+.art {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.band {
+  position: absolute;
+  top: 0;
+  left: calc(330 * var(--u));
+  width: calc(150 * var(--u));
+  height: calc(300 * var(--u));
+  background: linear-gradient(90deg, transparent, var(--ag-band) 45%, transparent);
+  transform: skewX(-38deg);
+  transform-origin: 0 100%;
+}
+
+.scene {
+  position: absolute;
+}
+
+.scene img {
+  object-fit: cover;
+}
+
+/* light references: the sky and the tops of the towers fade into the page */
+.light .scene::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, var(--ag-bg) 0%, var(--ag-bg) 43%, color-mix(in srgb, var(--ag-bg) 45%, transparent) 50%, transparent 55%);
+  /* ...but not over the car itself (silhouette mask from the JSON) */
+  -webkit-mask-image: var(--scene-mask, none);
+  -webkit-mask-size: 100% 100%;
+  mask-image: var(--scene-mask, none);
+  mask-size: 100% 100%;
+}
+
+/* phone reference: the car stands to the right of the heading and copy */
+.light .scene {
+  left: calc(-144 * var(--u));
+  top: calc(-113 * var(--u));
+  width: calc(1059 * var(--u));
+  aspect-ratio: 1536 / 1024;
+  -webkit-mask-image: linear-gradient(90deg, transparent 30%, #000 46%), linear-gradient(180deg, #000 63%, transparent 73%);
+  -webkit-mask-composite: source-in;
+  mask-image: linear-gradient(90deg, transparent 30%, #000 46%), linear-gradient(180deg, #000 63%, transparent 73%);
+  mask-composite: intersect;
+}
+
+.dark .scene {
+  left: calc(324 * var(--u));
+  top: calc(92 * var(--u));
+  width: calc(556 * var(--u));
+  aspect-ratio: 816 / 307;
+  -webkit-mask-image: linear-gradient(90deg, transparent 0%, #000 16%), linear-gradient(180deg, transparent 0%, #000 10%, #000 86%, transparent 100%);
+  -webkit-mask-composite: source-in;
+  mask-image: linear-gradient(90deg, transparent 0%, #000 16%), linear-gradient(180deg, transparent 0%, #000 10%, #000 86%, transparent 100%);
+  mask-composite: intersect;
+}
+
+.lineA,
+.lineB {
+  position: absolute;
+  height: 1.5px;
+  transform-origin: 0 50%;
+  transform: rotate(-44deg);
+}
+
+.lineA {
+  left: calc(437 * var(--u));
+  top: calc(306 * var(--u));
+  width: calc(366 * var(--u));
+  background: linear-gradient(90deg, transparent, var(--ag-line-a) 30%, var(--ag-line-a) 70%, transparent);
+  box-shadow: 0 0 8px var(--ag-line-a);
+}
+
+.lineB {
+  left: calc(385 * var(--u));
+  top: calc(306 * var(--u));
+  width: calc(330 * var(--u));
+  background: linear-gradient(90deg, transparent, var(--ag-line-b) 40%, transparent);
+}
+
+/* phone: no lines (the phone reference has none) */
+.lineA,
+.lineB {
+  display: none;
+}
+
+/* ---------- heading ---------- */
+
+.head {
+  padding-left: calc(7 * var(--u));
+}
+
+.title {
+  margin: 0;
+  font-size: calc(52 * var(--u));
+  font-weight: 700;
+  line-height: calc(63 * var(--u));
+  letter-spacing: -0.03em;
+  color: var(--ag-text);
+}
+
+.accent {
+  color: var(--ag-accent);
+}
+
+.copy {
+  max-width: calc(290 * var(--u));
+  margin: calc(17 * var(--u)) 0 0;
+  font-size: calc(17.2 * var(--u));
+  line-height: calc(29.7 * var(--u));
+  color: var(--ag-copy);
+}
+
+/* ---------- shared bits ---------- */
+
+.tileIcon {
+  width: 24px;
+  height: 24px;
+}
+
+.risk {
+  --ag-icon: var(--ag-risk);
+  --ag-tile-bg: var(--ag-risk-bg);
+  --ag-tile-border: var(--ag-risk-border);
+}
+
+.badge {
+  display: inline-flex;
+  flex-shrink: 0;
+  align-items: center;
+  gap: calc(7 * var(--u));
+  height: calc(34 * var(--u));
+  padding: 0 calc(12 * var(--u));
+  border: 1px solid var(--ag-badge-border);
+  border-radius: calc(8 * var(--u));
+  background: var(--ag-badge-bg);
+  color: var(--ag-badge-text);
+  font-size: calc(15.5 * var(--u));
+  font-weight: 500;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.badgeIcon {
+  width: calc(19 * var(--u));
+  height: calc(19 * var(--u));
+}
+
+.flag {
+  display: inline-block;
+  flex-shrink: 0;
+  width: calc(24 * var(--u));
+  height: calc(24 * var(--u));
+  margin-left: calc(12 * var(--u));
+  vertical-align: calc(-5 * var(--u));
+}
+
+.flagOk {
+  color: var(--ag-ok);
+}
+
+.flagAlert {
+  color: var(--ag-risk);
+}
+
+.stars {
+  display: inline-flex;
+  align-items: center;
+}
+
+.starOn {
+  fill: var(--ag-star);
+}
+
+.starOff {
+  fill: none;
+  stroke: var(--ag-star-off);
+  stroke-width: 1.3;
+  stroke-linejoin: round;
+}
+
+/* ---------- desktop table (hidden on phones) ---------- */
+
+.table {
+  display: none;
+}
+
+/* ---------- phone cards ---------- */
+
+.cards {
+  display: grid;
+  grid-template-columns: calc(377 * var(--u)) 1fr;
+  margin: calc(40 * var(--u)) 0 0;
+  padding: 0 calc(22 * var(--u));
+  list-style: none;
+  border: 1px solid var(--ag-card-border);
+  border-radius: calc(22 * var(--u));
+  background: var(--ag-card-bg);
+  box-shadow: var(--ag-card-shadow);
+}
+
+.card {
+  display: flex;
+  align-items: flex-start;
+  gap: calc(28 * var(--u));
+  padding: calc(22 * var(--u)) 0 calc(20 * var(--u)) calc(13 * var(--u));
+  border-bottom: 1px solid var(--ag-divider);
+}
+
+.card:nth-child(-n + 2) {
+  padding-top: calc(40 * var(--u));
+}
+
+.cardLeft {
+  border-right: 1px solid var(--ag-divider);
+}
+
+.cardRight {
+  gap: calc(26 * var(--u));
+  padding-left: calc(25 * var(--u));
+}
+
+.cardWide {
+  grid-column: 1 / -1;
+}
+
+.cardLast {
+  border-bottom: 0;
+}
+
+.cardTile {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  width: calc(78 * var(--u));
+  height: calc(78 * var(--u));
+  margin-top: calc(-2 * var(--u));
+  border: 1px solid var(--ag-tile-border);
+  border-radius: calc(16 * var(--u));
+  background: var(--ag-tile-bg);
+  box-shadow: var(--ag-tile-shadow);
+  color: var(--ag-icon);
+}
+
+.cardTile .tileIcon {
+  width: calc(46 * var(--u));
+  height: calc(46 * var(--u));
+}
+
+.cardBody {
+  min-width: 0;
+}
+
+.cardLabel {
+  margin: 0;
+  font-size: calc(17 * var(--u));
+  font-weight: 400;
+  line-height: calc(22 * var(--u));
+  color: var(--ag-label);
+}
+
+.cardLabelStrong {
+  font-weight: 500;
+}
+
+.cardValue {
+  margin: calc(10 * var(--u)) 0 0;
+  font-size: calc(18.6 * var(--u));
+  font-weight: 500;
+  line-height: calc(28.5 * var(--u));
+  color: var(--ag-label);
+}
+
+.cardValue strong {
+  font-weight: 700;
+}
+
+.size_lg {
+  font-size: calc(23 * var(--u));
+  font-weight: 700;
+  line-height: calc(30 * var(--u));
+}
+
+.size_price {
+  font-size: calc(21.7 * var(--u));
+  font-weight: 700;
+  line-height: calc(30 * var(--u));
+}
+
+.size_md {
+  font-size: calc(18.5 * var(--u));
+  font-weight: 400;
+  line-height: calc(28 * var(--u));
+}
+
+.size_host {
+  font-size: calc(19.1 * var(--u));
+  font-weight: 500;
+  line-height: calc(29 * var(--u));
+}
+
+.cardNote .flag {
+  margin-left: calc(8 * var(--u));
+}
+
+.cardNote {
+  margin: calc(9 * var(--u)) 0 0;
+  font-size: calc(16.2 * var(--u));
+  line-height: calc(27 * var(--u));
+  color: var(--ag-value);
+}
+
+.cardBody .badge {
+  margin-top: calc(8 * var(--u));
+}
+
+/* overall rating: a dark panel in both themes */
+.ratingCard {
+  position: relative;
+  min-height: calc(201 * var(--u));
+  margin-top: calc(16 * var(--u));
+  padding: calc(20 * var(--u)) calc(30 * var(--u)) calc(20 * var(--u)) calc(222 * var(--u));
+  border: 1px solid rgba(60, 110, 220, 0.3);
+  border-radius: calc(22 * var(--u));
+  background: linear-gradient(90deg, #06183c 0%, #0a2152 55%, #0b1d47 100%);
+  color: #ffffff;
+}
+
+.ratingRing {
+  position: absolute;
+  top: calc(28 * var(--u));
+  left: calc(44 * var(--u));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: calc(136 * var(--u));
+  height: calc(136 * var(--u));
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(30, 90, 230, 0.32) 0%, rgba(30, 90, 230, 0.12) 45%, transparent 70%);
+}
+
+/* the progress arc around the disc */
+.ratingRing::before {
+  content: "";
+  position: absolute;
+  inset: calc(14 * var(--u));
+  border-radius: 50%;
+  background: conic-gradient(from 180deg, #2f6ff0 0deg 160deg, rgba(47, 111, 240, 0.16) 160deg 360deg);
+  -webkit-mask-image: radial-gradient(circle closest-side, transparent calc(100% - 7px), #000 calc(100% - 6px));
+  mask-image: radial-gradient(circle closest-side, transparent calc(100% - 7px), #000 calc(100% - 6px));
+}
+
+.ratingDisc {
+  position: relative;
+}
+
+.ratingDisc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: calc(64 * var(--u));
+  height: calc(64 * var(--u));
+  border: 2px solid #2f6ff0;
+  border-radius: 50%;
+  background: #0c2c6e;
+  box-shadow: 0 0 22px rgba(47, 111, 240, 0.55);
+  color: #4f8cff;
+}
+
+.ratingIcon {
+  width: calc(40 * var(--u));
+  height: calc(40 * var(--u));
+}
+
+.ratingLabel {
+  margin: 0;
+  font-size: calc(22 * var(--u));
+  font-weight: 600;
+  line-height: calc(30 * var(--u));
+}
+
+.ratingRow {
+  display: flex;
+  align-items: center;
+  margin-top: calc(16 * var(--u));
+}
+
+.ratingStars {
+  gap: calc(4 * var(--u));
+}
+
+.ratingStars svg {
+  width: calc(58 * var(--u));
+  height: calc(58 * var(--u));
+}
+
+.ratingStars .starOn {
+  fill: #0f5bea;
+}
+
+.ratingStars .starOff {
+  stroke: #7f8ea6;
+}
+
+.ratingScore {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: calc(105 * var(--u));
+  height: calc(48 * var(--u));
+  margin-left: calc(20 * var(--u));
+  border: 1.5px solid rgba(110, 140, 190, 0.45);
+  border-radius: calc(10 * var(--u));
+  font-size: calc(22 * var(--u));
+  color: #3d7cf0;
+}
+
+.ratingText {
+  max-width: calc(420 * var(--u));
+  margin: calc(9 * var(--u)) 0 0;
+  font-size: calc(17.6 * var(--u));
+  line-height: calc(29 * var(--u));
+  color: #d8e0ee;
+}
+
+/* phone light reference: x 382–856, y 0–372 of the 856px phone reference
+   (placed from the heading block, which starts at x 33, y 72) */
+.headPhoneScene {
+  position: relative;
+}
+
+.scenePhone {
+  position: absolute;
+  z-index: -1;
+  top: calc(-72 * var(--u));
+  left: calc(349 * var(--u));
+  width: calc(474 * var(--u));
+  aspect-ratio: 474 / 372;
+  -webkit-mask-image: linear-gradient(90deg, transparent 0%, #000 6%), linear-gradient(180deg, #000 94%, transparent 100%);
+  -webkit-mask-composite: source-in;
+  mask-image: linear-gradient(90deg, transparent 0%, #000 6%), linear-gradient(180deg, #000 94%, transparent 100%);
+  mask-composite: intersect;
+}
+
+.scenePhone img {
+  object-fit: cover;
+}
+
+/* dark: a wider crop, the same car width, standing on the same wheel line; the page shows above it */
+.scenePhoneDark img {
+  object-fit: contain;
+  object-position: center bottom;
+}
+
+.scenePhoneDark {
+  -webkit-mask-image: linear-gradient(90deg, transparent 0%, #000 8%), linear-gradient(180deg, transparent 38%, #000 52%, #000 94%, transparent 100%);
+  mask-image: linear-gradient(90deg, transparent 0%, #000 8%), linear-gradient(180deg, transparent 38%, #000 52%, #000 94%, transparent 100%);
+}
+
+.hasPhoneScene .scene,
+.hasPhoneScene .band {
+  display: none;
+}
+
+/* ======================= Small phones ======================= */
+/* At exact reference scale the phone text would be ~7px on a 390px phone, so it gets minimum sizes. */
+@container (max-width: 650px) {
+  .inner {
+    padding: 26px 16px 16px;
+  }
+
+  .head {
+    padding-left: 0;
+  }
+
+  .title {
+    font-size: 28px;
+    line-height: 1.18;
+  }
+
+  .copy {
+    max-width: 52%;
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  /* same width and right edge as the reference; its bottom meets the cards, as in the reference */
+  .scenePhone {
+    top: auto;
+    right: -16px;
+    bottom: -20px;
+    left: auto;
+    width: 55.37cqw;
+  }
+
+  /* tall enough that the car never rises above the section top */
+  .headPhoneScene {
+    min-height: calc(43.46cqw - 46px);
+  }
+
+  /* keep the copy clear of the car, which starts 44.6% across */
+  .headPhoneScene .copy {
+    max-width: calc(44.6cqw - 22px);
+    font-size: 13px;
+    line-height: 1.5;
+  }
+
+  .light .scene {
+    left: 6%;
+    top: 4px;
+    width: 128%;
+  }
+
+  .dark .scene {
+    left: 40%;
+    top: 76px;
+    width: 76%;
+  }
+
+  .cards {
+    grid-template-columns: 50% 1fr;
+    margin-top: 20px;
+    padding: 0 8px;
+    border-radius: 14px;
+  }
+
+  .card,
+  .cardRight {
+    gap: 8px;
+    padding: 14px 6px 14px 4px;
+  }
+
+  .cardRight {
+    padding-left: 8px;
+  }
+
+  .card:nth-child(-n + 2) {
+    padding-top: 16px;
+  }
+
+  .cardTile {
+    width: 34px;
+    height: 34px;
+    margin-top: 0;
+    border-radius: 9px;
+  }
+
+  .cardTile .tileIcon {
+    width: 18px;
+    height: 18px;
+  }
+
+  .cardLabel {
+    font-size: 12px;
+    line-height: 1.35;
+  }
+
+  .cardValue,
+  .size_md,
+  .size_host {
+    margin-top: 4px;
+    font-size: 13.5px;
+    line-height: 1.4;
+  }
+
+  .size_lg,
+  .size_price {
+    font-size: 16px;
+    line-height: 1.35;
+  }
+
+  .cardNote {
+    margin-top: 3px;
+    font-size: 12px;
+    line-height: 1.4;
+  }
+
+  .cardValue br,
+  .cardNote br {
+    display: none;
+  }
+
+  .badge {
+    gap: 4px;
+    height: 22px;
+    padding: 0 7px;
+    border-radius: 6px;
+    font-size: 11px;
+  }
+
+  .badgeIcon {
+    width: 12px;
+    height: 12px;
+  }
+
+  .cardBody .badge {
+    margin-top: 6px;
+  }
+
+  .flag {
+    width: 15px;
+    height: 15px;
+    margin-left: 5px;
+    vertical-align: -2px;
+  }
+
+  .ratingCard {
+    min-height: 0;
+    margin-top: 14px;
+    padding: 16px 14px 16px 104px;
+    border-radius: 14px;
+  }
+
+  .ratingRing {
+    top: 50%;
+    left: 14px;
+    width: 76px;
+    height: 76px;
+    transform: translateY(-50%);
+  }
+
+  .ratingDisc {
+    width: 38px;
+    height: 38px;
+  }
+
+  .ratingIcon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .ratingLabel {
+    font-size: 16px;
+    line-height: 1.3;
+  }
+
+  .ratingRow {
+    margin-top: 8px;
+  }
+
+  .ratingStars {
+    gap: 4px;
+  }
+
+  .ratingStars svg {
+    width: 22px;
+    height: 22px;
+  }
+
+  .ratingScore {
+    width: 52px;
+    height: 26px;
+    margin-left: 8px;
+    border-radius: 6px;
+    font-size: 13px;
+  }
+
+  .ratingText {
+    margin-top: 8px;
+    font-size: 13px;
+    line-height: 1.45;
+  }
+}
+
+/* ======================= Laptops and desktops ======================= */
+
+@media (min-width: 1024px) {
+  .inner {
+    --u: calc(100cqw / 1536);
+    padding: calc(64 * var(--u)) calc(113 * var(--u)) calc(34 * var(--u)) calc(65 * var(--u));
+  }
+
+  .mobile,
+  .scenePhone {
+    display: none;
+  }
+
+  .hasPhoneScene .scene,
+  .hasPhoneScene .band {
+    display: block;
+  }
+
+  .headPhoneScene {
+    min-height: 0;
+  }
+
+  .head {
+    padding-left: 0;
+  }
+
+  .title {
+    font-size: calc(57 * var(--u));
+    line-height: calc(65 * var(--u));
+    letter-spacing: -0.04em;
+  }
+
+  .copy {
+    max-width: calc(350 * var(--u));
+    margin-top: calc(10 * var(--u));
+    font-size: calc(16 * var(--u));
+    line-height: calc(27.5 * var(--u));
+  }
+
+  .light .scene {
+    left: calc(205 * var(--u));
+    top: calc(-249 * var(--u));
+    width: calc(1260 * var(--u));
+    -webkit-mask-image: linear-gradient(90deg, transparent 30%, #000 42%), linear-gradient(180deg, #000 62%, transparent 68%);
+    mask-image: linear-gradient(90deg, transparent 30%, #000 42%), linear-gradient(180deg, #000 62%, transparent 68%);
+  }
+
+  .dark .scene {
+    left: calc(720 * var(--u));
+    top: calc(-4 * var(--u));
+    width: calc(816 * var(--u));
+    -webkit-mask-image: linear-gradient(90deg, transparent 0%, #000 12%), linear-gradient(180deg, #000 0%, #000 92%, transparent 100%);
+    mask-image: linear-gradient(90deg, transparent 0%, #000 12%), linear-gradient(180deg, #000 0%, #000 92%, transparent 100%);
+  }
+
+  .band {
+    left: calc(560 * var(--u));
+    width: calc(190 * var(--u));
+    height: calc(306 * var(--u));
+  }
+
+  .lineA,
+  .lineB {
+    display: block;
+  }
+
+  .table {
+    display: block;
+    margin-top: calc(17 * var(--u));
+    overflow: hidden;
+    border: 1px solid var(--ag-card-border);
+    border-radius: calc(18 * var(--u));
+    background: var(--ag-card-bg);
+    box-shadow: var(--ag-card-shadow);
+    backdrop-filter: blur(6px);
+  }
+
+  .row {
+    display: grid;
+    grid-template-columns: calc(102 * var(--u)) calc(402 * var(--u)) 1fr;
+    align-items: stretch;
+    height: calc(52 * var(--u));
+    padding-right: calc(27 * var(--u));
+  }
+
+  .headRow {
+    height: calc(50 * var(--u));
+  }
+
+  .row:nth-child(2) {
+    height: calc(53 * var(--u));
+  }
+
+  .row:last-child {
+    height: calc(70 * var(--u));
+  }
+
+  .tileCell {
+    display: flex;
+    align-items: center;
+    padding-left: calc(30 * var(--u));
+  }
+
+  .tile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(56 * var(--u));
+    height: calc(46 * var(--u));
+    border: 1px solid var(--ag-tile-border);
+    border-radius: calc(12 * var(--u));
+    background: var(--ag-tile-bg);
+    box-shadow: var(--ag-tile-shadow);
+    color: var(--ag-icon);
+  }
+
+  .tile .tileIcon {
+    width: calc(31 * var(--u));
+    height: calc(31 * var(--u));
+  }
+
+  .labelCell,
+  .valueCell {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid var(--ag-divider);
+  }
+
+  .row:last-child .labelCell,
+  .row:last-child .valueCell {
+    border-bottom: 0;
+  }
+
+  .labelCell {
+    padding-left: calc(20 * var(--u));
+    font-size: calc(16.8 * var(--u));
+    font-weight: 600;
+    color: var(--ag-label);
+  }
+
+  .valueCell {
+    position: relative;
+    padding-left: calc(57 * var(--u));
+    font-size: calc(17.1 * var(--u));
+    color: var(--ag-value);
+  }
+
+  .valueCell::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: calc(-1 * var(--u));
+    left: 0;
+    width: 1px;
+    background: var(--ag-divider);
+  }
+
+  .headRow .valueCell::before {
+    top: calc(17 * var(--u));
+  }
+
+  .row:last-child .valueCell::before {
+    bottom: calc(20 * var(--u));
+  }
+
+  .headRow .labelCell,
+  .headRow .valueCell {
+    padding-top: calc(1 * var(--u));
+    font-size: calc(14.8 * var(--u));
+    font-weight: 600;
+    color: var(--ag-th);
+  }
+
+  .value {
+    display: inline-flex;
+    align-items: center;
+    white-space: nowrap;
+  }
+
+  .value .badge {
+    gap: calc(6 * var(--u));
+    height: calc(30 * var(--u));
+    margin-left: calc(22 * var(--u));
+    padding: 0 calc(12 * var(--u));
+    border-radius: calc(7 * var(--u));
+    font-size: calc(14.2 * var(--u));
+  }
+
+  .value .badgeIcon {
+    width: calc(19 * var(--u));
+    height: calc(19 * var(--u));
+  }
+
+  .value .flag {
+    width: calc(24 * var(--u));
+    height: calc(24 * var(--u));
+    margin-left: calc(18 * var(--u));
+    vertical-align: 0;
+  }
+
+  .value .flagAlert {
+    width: calc(22 * var(--u));
+    height: calc(22 * var(--u));
+    margin-left: calc(17 * var(--u));
+  }
+
+  .value .stars {
+    gap: 0;
+  }
+
+  .value .stars svg {
+    width: calc(35 * var(--u));
+    height: calc(35 * var(--u));
+  }
+
+  .score {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(75 * var(--u));
+    height: calc(35 * var(--u));
+    margin-left: calc(23 * var(--u));
+    border-radius: calc(8 * var(--u));
+    background: var(--ag-score-bg);
+    color: var(--ag-score-text);
+    font-size: calc(17 * var(--u));
+  }
+}
+
+/* dark references: the cards catch a blue light along their top edge */
+.dark .table,
+.dark .cards {
+  border-top-color: rgba(80, 145, 255, 0.55);
+}

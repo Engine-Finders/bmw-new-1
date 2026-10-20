@@ -1,0 +1,1026 @@
+/*
+ * Model page "Engine Replacement Costs — By Generation" (section 8), built to the reference designs
+ * (light + dark desktop at 1536px, light phone at 855px).
+ * Sizes are reference pixels times --u, so the section is the reference scaled to its own width:
+ * below 1024px the phone reference (generation tabs), from 1024px the desktop reference
+ * (five generation rows). On small phones text has a floor so it stays readable.
+ */
+
+.section {
+  overflow-y: clip;
+  background: var(--r-page);
+  color: var(--r-text);
+}
+
+.frame {
+  container-type: inline-size;
+  max-width: 1628px;
+  margin: 0 auto;
+}
+
+.panel {
+  --u: calc(100cqw / 855);
+  padding: calc(70 * var(--u)) calc(33 * var(--u)) calc(14 * var(--u)) calc(32 * var(--u));
+}
+
+/* ---------- theme tokens ---------- */
+
+.light {
+  --r-page: #fafbfe;
+  --r-text: #080d29;
+  --r-accent: #1047d2;
+  --r-copy: #3e4050;
+  --r-card: #ffffff;
+  --r-card-border: #ebeef3;
+  --r-card-shadow: 0 6px 18px rgba(20, 40, 90, 0.05);
+  --r-icon: #1a4fcf;
+  --r-trust-title: #1a1d2c;
+  --r-trust-text: #3f4253;
+  --r-divider: #e3e6ec;
+  --r-gen-title: #1d43b8;
+  --r-years: #303140;
+  --r-head-bg: #02215d;
+  --r-head-text: #ffffff;
+  --r-line: #eceef3;
+  --r-variant: #28292b;
+  --r-code: #383a47;
+  --r-price: #1e3a8a;
+  --r-hours: #34353b;
+  --r-tab-bg: #ffffff;
+  --r-tab-on: #1658f0;
+  --r-tab-text: #1a1d2c;
+  --r-note-bg: #f4f7fd;
+  --r-note-border: #cfdcf3;
+  --r-note-title: #1a3ab0;
+  --r-note-text: #4a4c58;
+  --r-rule-bg: #fffdf6;
+  --r-rule-border: #f0dfae;
+  --r-gold: #b5831d;
+  --r-gold-soft: #f7e6b9;
+  --r-gold-title: #a06c1e;
+  --r-rule-text: #404048;
+}
+
+.dark {
+  --r-page: #010c1b;
+  --r-text: #f7f9fc;
+  --r-accent: #276ae0;
+  --r-copy: #c5cddc;
+  --r-card: #04142a;
+  --r-card-border: rgba(80, 110, 160, 0.3);
+  --r-card-shadow: none;
+  --r-icon: #3478ea;
+  --r-trust-title: #f2f7fd;
+  --r-trust-text: #bac4d1;
+  --r-divider: rgba(110, 140, 190, 0.25);
+  --r-gen-title: #3c80e6;
+  --r-years: #c2c8d2;
+  --r-head-bg: #0a2c63;
+  --r-head-text: #dbebff;
+  --r-line: rgba(80, 110, 160, 0.26);
+  --r-variant: #e0e7f2;
+  --r-code: #c3ccdc;
+  --r-price: #c3cdda;
+  --r-hours: #c8d3e3;
+  --r-tab-bg: #04142a;
+  --r-tab-on: #1658f0;
+  --r-tab-text: #e6ecf5;
+  --r-note-bg: #04142a;
+  --r-note-border: rgba(80, 110, 160, 0.3);
+  --r-note-title: #f1f5fa;
+  --r-note-text: #bbc3cf;
+  --r-rule-bg: #0d1114;
+  --r-rule-border: #a17a2c;
+  --r-gold: #d79f37;
+  --r-gold-soft: rgba(215, 159, 55, 0.18);
+  --r-gold-title: #f0c96c;
+  --r-rule-text: #cbced0;
+}
+
+.deskOnly,
+.deskFlex {
+  display: none;
+}
+
+.phoneOnly {
+  display: block;
+}
+
+/* ---------- top: heading, phone car, trust strip ---------- */
+
+.top {
+  position: relative;
+}
+
+.head {
+  max-width: calc(400 * var(--u));
+}
+
+.title {
+  margin: 0 0 0 calc(3 * var(--u));
+  font-size: calc(34.5 * var(--u));
+  font-weight: 600;
+  line-height: calc(47 * var(--u));
+  letter-spacing: -0.02em;
+  color: var(--r-text);
+}
+
+.accent {
+  color: var(--r-accent);
+}
+
+.copy {
+  margin: calc(12 * var(--u)) 0 0 calc(3 * var(--u));
+  font-size: calc(16.6 * var(--u));
+  line-height: calc(28.5 * var(--u));
+  color: var(--r-copy);
+}
+
+.headCar {
+  position: absolute;
+  top: calc(10 * var(--u));
+  right: calc(-8 * var(--u));
+  width: calc(410 * var(--u));
+  height: calc(196 * var(--u));
+}
+
+.carImg {
+  object-fit: contain;
+  object-position: center bottom;
+}
+
+.trust {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: calc(21 * var(--u)) 0 0;
+  padding: calc(22 * var(--u)) 0 calc(26 * var(--u));
+  list-style: none;
+  border: 1px solid var(--r-card-border);
+  border-radius: calc(14 * var(--u));
+  background: var(--r-card);
+  box-shadow: var(--r-card-shadow);
+}
+
+.trustItem {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.trustItem + .trustItem::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 1px;
+  background: var(--r-divider);
+}
+
+.trustIcon {
+  width: calc(60 * var(--u));
+  height: calc(60 * var(--u));
+  color: var(--r-icon);
+}
+
+.trustItem strong {
+  margin-top: calc(14 * var(--u));
+  color: var(--r-trust-title);
+  font-size: calc(16 * var(--u));
+  font-weight: 600;
+  line-height: calc(24 * var(--u));
+}
+
+.trustItem span {
+  margin-top: calc(6 * var(--u));
+  color: var(--r-trust-text);
+  font-size: calc(15 * var(--u));
+  line-height: calc(22 * var(--u));
+}
+
+/* ---------- tables (shared) ---------- */
+
+.table {
+  overflow: hidden;
+  background: var(--r-card);
+}
+
+.tr {
+  display: grid;
+  border-top: 1px solid var(--r-line);
+}
+
+.thead {
+  border-top: 0;
+  background: var(--r-head-bg);
+  color: var(--r-head-text);
+}
+
+.tr > span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.tr > span:first-child {
+  justify-content: flex-start;
+  text-align: left;
+}
+
+.tr:not(.thead) > span:nth-child(1) {
+  color: var(--r-variant);
+  font-weight: 600;
+}
+
+.tr:not(.thead) > span:nth-child(2) {
+  color: var(--r-code);
+}
+
+.tr:not(.thead) > span:nth-child(3),
+.tr:not(.thead) > span:nth-child(4),
+.tr:not(.thead) > span:nth-child(5) {
+  color: var(--r-price);
+}
+
+.tr:not(.thead) > span:nth-child(6) {
+  color: var(--r-hours);
+}
+
+.tr a {
+  color: inherit;
+  font-weight: inherit;
+  text-decoration: none;
+}
+
+/* ---------- phone tabs ---------- */
+
+.tabs {
+  display: grid;
+  grid-template-columns: 143fr 151fr 179fr 159fr 158fr;
+  margin-top: calc(24 * var(--u));
+  overflow: hidden;
+  border: 1px solid var(--r-card-border);
+  border-bottom: 0;
+  border-radius: calc(14 * var(--u)) calc(14 * var(--u)) 0 0;
+  background: var(--r-tab-bg);
+}
+
+.tab {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: calc(89 * var(--u));
+  border: 0;
+  border-left: 1px solid var(--r-divider);
+  background: transparent;
+  color: var(--r-tab-text);
+  font: inherit;
+  cursor: pointer;
+}
+
+.tab:first-child {
+  border-left: 0;
+}
+
+.tab strong {
+  font-size: calc(16.4 * var(--u));
+  font-weight: 600;
+  line-height: calc(26 * var(--u));
+}
+
+.tab span {
+  font-size: calc(16 * var(--u));
+  line-height: calc(26 * var(--u));
+}
+
+.tabOn {
+  border-radius: calc(14 * var(--u)) calc(14 * var(--u)) 0 0;
+  background: var(--r-tab-on);
+  color: #ffffff;
+}
+
+.pCard {
+  padding: calc(30 * var(--u)) calc(15 * var(--u)) calc(21 * var(--u));
+  border: 1px solid var(--r-card-border);
+  border-top: 0;
+  border-radius: 0 0 calc(14 * var(--u)) calc(14 * var(--u));
+  background: var(--r-card);
+  box-shadow: var(--r-card-shadow);
+}
+
+.pTitle {
+  margin: 0 0 0 calc(3 * var(--u));
+  color: var(--r-text);
+  font-size: calc(21.5 * var(--u));
+  font-weight: 600;
+  line-height: calc(30 * var(--u));
+}
+
+.pTitle span {
+  color: var(--r-accent);
+  font-size: calc(18 * var(--u));
+}
+
+.pCar {
+  position: relative;
+  width: calc(495 * var(--u));
+  height: calc(186 * var(--u));
+  margin: calc(-1 * var(--u)) 0 0 calc(118 * var(--u));
+}
+
+.pTable {
+  margin-top: calc(8 * var(--u));
+  border-radius: calc(10 * var(--u)) calc(10 * var(--u)) 0 0;
+}
+
+.pTable .tr {
+  grid-template-columns: 139fr 135fr 112fr 134fr 123fr 117fr;
+  height: calc(63 * var(--u));
+  font-size: calc(14.3 * var(--u));
+  line-height: calc(22 * var(--u));
+}
+
+.pTable .tr:nth-child(6) {
+  height: calc(67 * var(--u));
+}
+
+.pTable .tr > span {
+  border-left: 1px solid var(--r-line);
+}
+
+.pTable .tr > span:first-child {
+  padding-left: calc(12 * var(--u));
+  border-left: 0;
+}
+
+.pTable .thead {
+  height: calc(60 * var(--u));
+  font-size: calc(15.5 * var(--u));
+  font-weight: 600;
+  line-height: calc(22 * var(--u));
+}
+
+.pTable .thead > span {
+  border-left-color: rgba(255, 255, 255, 0.12);
+}
+
+.pNote {
+  display: flex;
+  align-items: center;
+  gap: calc(16 * var(--u));
+  height: calc(52 * var(--u));
+  margin: calc(6 * var(--u)) 0 0;
+  padding-left: calc(16 * var(--u));
+  border-radius: calc(8 * var(--u));
+  background: var(--r-note-bg);
+  color: var(--r-note-text);
+  font-size: calc(14.8 * var(--u));
+}
+
+.pNoteIcon {
+  width: calc(26 * var(--u));
+  height: calc(26 * var(--u));
+  color: var(--r-icon);
+}
+
+/* ---------- bottom: notes + rule ---------- */
+
+.notes {
+  margin-top: calc(10 * var(--u));
+  padding: calc(18 * var(--u)) calc(20 * var(--u)) calc(5 * var(--u)) calc(28 * var(--u));
+  border: 1px solid var(--r-note-border);
+  border-radius: calc(12 * var(--u));
+  background: var(--r-note-bg);
+}
+
+.note {
+  display: flex;
+  align-items: flex-start;
+  gap: calc(42 * var(--u));
+}
+
+.noteIcon {
+  flex-shrink: 0;
+  width: calc(64 * var(--u));
+  height: calc(80 * var(--u));
+  color: var(--r-icon);
+}
+
+.noteTitle {
+  margin: 0;
+  color: var(--r-note-title);
+  font-size: calc(17.9 * var(--u));
+  font-weight: 600;
+  line-height: calc(26 * var(--u));
+}
+
+.noteText {
+  margin: calc(8 * var(--u)) 0 0;
+  color: var(--r-note-text);
+  font-size: calc(13.5 * var(--u));
+  line-height: calc(19 * var(--u));
+}
+
+.note.deskFlex {
+  display: none;
+}
+
+.noteList {
+  list-style: disc;
+  margin: calc(8 * var(--u)) 0 0;
+  padding-left: calc(14 * var(--u));
+  color: var(--r-note-text);
+  font-size: calc(13.2 * var(--u));
+  line-height: calc(22.5 * var(--u));
+}
+
+.noteList li + li {
+  margin-top: calc(6 * var(--u));
+}
+
+.rule {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  gap: calc(22 * var(--u));
+  margin-top: calc(10 * var(--u));
+  padding: calc(11 * var(--u)) calc(130 * var(--u)) calc(14 * var(--u)) calc(14 * var(--u));
+  border: 1px solid var(--r-rule-border);
+  border-radius: calc(12 * var(--u));
+  background: var(--r-rule-bg);
+}
+
+.crown {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  width: calc(80 * var(--u));
+  height: calc(80 * var(--u));
+  margin-top: calc(14 * var(--u));
+  border: 1.5px solid var(--r-gold);
+  border-radius: 50%;
+  background: var(--r-gold-soft);
+  color: var(--r-gold);
+}
+
+.crownSvg {
+  width: 58%;
+  height: 58%;
+}
+
+.ruleTitle {
+  margin: 0;
+  color: var(--r-gold-title);
+  font-size: calc(18.1 * var(--u));
+  font-weight: 600;
+  line-height: calc(28 * var(--u));
+}
+
+.ruleText {
+  margin: calc(6 * var(--u)) 0 0;
+  color: var(--r-rule-text);
+  font-size: calc(14.4 * var(--u));
+  line-height: calc(22 * var(--u));
+}
+
+.ruleText strong {
+  color: var(--r-text);
+  font-weight: 600;
+}
+
+.ruleShield {
+  position: absolute;
+  top: calc(18 * var(--u));
+  right: calc(14 * var(--u));
+  width: calc(96 * var(--u));
+  height: calc(110 * var(--u));
+  color: var(--r-gold);
+  opacity: 0.85;
+}
+
+.footer {
+  margin: calc(14 * var(--u)) 0 0;
+  color: var(--r-trust-text);
+  font-size: calc(12.9 * var(--u));
+  text-align: center;
+}
+
+.bullet {
+  margin: 0 calc(12 * var(--u));
+}
+
+/* ======================= Small phones ======================= */
+@container (max-width: 650px) {
+  .panel {
+    padding: 22px 12px 14px;
+  }
+
+  .head {
+    max-width: 54%;
+  }
+
+  .headCar {
+    width: 44%;
+  }
+
+  .title {
+    margin-left: 0;
+    font-size: min(22px, 5.4cqw);
+    line-height: 1.3;
+  }
+
+  /* the dash stays with "Costs" */
+  .title > span:first-child {
+    display: inline-block;
+    max-width: 100%;
+  }
+
+  .copy {
+    margin: 8px 0 0;
+    font-size: 13px;
+    line-height: 1.55;
+  }
+
+  .copy br {
+    display: none;
+  }
+
+  .headCar {
+    top: 10px;
+    right: -6px;
+    height: auto;
+    aspect-ratio: 410 / 196;
+  }
+
+  .trust {
+    margin-top: 16px;
+    padding: 12px 0 14px;
+    border-radius: 10px;
+  }
+
+  .trustIcon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .trustItem strong {
+    margin-top: 6px;
+    font-size: 11.5px;
+    line-height: 1.35;
+  }
+
+  .trustItem span {
+    margin-top: 2px;
+    font-size: 11px;
+    line-height: 1.35;
+  }
+
+  .tabs {
+    display: flex;
+    margin-top: 14px;
+    overflow-x: auto;
+    border-radius: 10px 10px 0 0;
+    scrollbar-width: none;
+  }
+
+  .tab {
+    flex: 0 0 auto;
+    height: 52px;
+    padding: 0 12px;
+  }
+
+  .tab strong,
+  .tab span {
+    font-size: 12.5px;
+    line-height: 1.4;
+    white-space: nowrap;
+  }
+
+  .tabOn {
+    border-radius: 10px 10px 0 0;
+  }
+
+  .pCard {
+    padding: 14px 8px 10px;
+    border-radius: 0 0 10px 10px;
+  }
+
+  .pTitle {
+    margin-left: 2px;
+    font-size: 15px;
+    line-height: 1.4;
+  }
+
+  .pTitle span {
+    font-size: 13px;
+  }
+
+  .pCar {
+    width: 64%;
+    height: auto;
+    aspect-ratio: 495 / 186;
+    margin: 6px auto 0;
+  }
+
+  .pTable {
+    margin-top: 6px;
+    border-radius: 8px 8px 0 0;
+  }
+
+  .pTable .tr,
+  .pTable .tr:nth-child(6) {
+    height: auto;
+    min-height: 0;
+    font-size: 10px;
+    line-height: 1.4;
+  }
+
+  .pTable .tr > span {
+    padding: 7px 2px;
+  }
+
+  .pTable .tr > span:first-child {
+    padding-left: 5px;
+  }
+
+  .pTable .thead {
+    height: auto;
+    font-size: 10px;
+  }
+
+  .pNote {
+    gap: 8px;
+    height: auto;
+    margin-top: 8px;
+    padding: 8px 10px;
+    font-size: 11.5px;
+    line-height: 1.4;
+  }
+
+  .pNoteIcon {
+    flex-shrink: 0;
+    width: 16px;
+    height: 16px;
+  }
+
+  .notes {
+    margin-top: 10px;
+    padding: 12px;
+    border-radius: 10px;
+  }
+
+  .note {
+    gap: 10px;
+  }
+
+  .noteIcon {
+    width: 32px;
+    height: 40px;
+  }
+
+  .noteTitle {
+    font-size: 14.5px;
+    line-height: 1.4;
+  }
+
+  .noteList {
+    margin-top: 4px;
+    font-size: 12px;
+    line-height: 1.5;
+  }
+
+  .noteList br,
+  .ruleText br {
+    display: none;
+  }
+
+  .rule {
+    gap: 10px;
+    padding: 12px 64px 12px 10px;
+    border-radius: 10px;
+  }
+
+  .crown {
+    width: 42px;
+    height: 42px;
+    margin-top: 4px;
+  }
+
+  .ruleTitle {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  .ruleText {
+    margin-top: 4px;
+    font-size: 12.5px;
+    line-height: 1.5;
+  }
+
+  .ruleShield {
+    top: 12px;
+    right: 8px;
+    width: 48px;
+    height: 56px;
+  }
+
+  .footer {
+    font-size: 11px;
+    line-height: 1.6;
+  }
+
+  .bullet {
+    margin: 0 6px;
+  }
+}
+
+/* ======================= Laptops and desktops ======================= */
+
+@media (min-width: 1024px) {
+  .panel {
+    --u: calc(100cqw / 1536);
+    padding: calc(37 * var(--u)) calc(79 * var(--u)) calc(12 * var(--u)) calc(46 * var(--u));
+  }
+
+  .deskOnly {
+    display: block;
+  }
+
+  .deskFlex,
+  .note.deskFlex {
+    display: flex;
+  }
+
+  .phoneOnly {
+    display: none;
+  }
+
+  .top {
+    min-height: calc(131 * var(--u));
+  }
+
+  .head {
+    max-width: none;
+  }
+
+  .title {
+    margin: 0;
+    font-size: calc(30.2 * var(--u));
+    line-height: calc(37 * var(--u));
+    letter-spacing: -0.01em;
+  }
+
+  .copy {
+    margin: calc(9 * var(--u)) 0 0;
+    font-size: calc(14.1 * var(--u));
+    line-height: calc(20 * var(--u));
+  }
+
+  .trust {
+    position: absolute;
+    top: calc(-17 * var(--u));
+    right: 0;
+    width: calc(576 * var(--u));
+    height: calc(118 * var(--u));
+    margin: 0;
+    padding: calc(16 * var(--u)) 0 0;
+    border-radius: calc(10 * var(--u));
+  }
+
+  .trustItem + .trustItem::before {
+    top: calc(2 * var(--u));
+    bottom: calc(14 * var(--u));
+  }
+
+  .trustIcon {
+    width: calc(40 * var(--u));
+    height: calc(40 * var(--u));
+  }
+
+  .trustItem strong {
+    margin-top: calc(10 * var(--u));
+    font-size: calc(11.3 * var(--u));
+    line-height: calc(16 * var(--u));
+  }
+
+  .trustItem span {
+    margin-top: calc(3 * var(--u));
+    font-size: calc(11 * var(--u));
+    line-height: calc(16 * var(--u));
+  }
+
+  /* ---------- generation rows ---------- */
+
+  .gens {
+    display: grid;
+    gap: calc(6 * var(--u));
+  }
+
+  .gen {
+    display: grid;
+    grid-template-columns: calc(299 * var(--u)) 1fr;
+    gap: 0;
+  }
+
+  .gen:nth-child(1) { height: calc(158 * var(--u)); }
+  .gen:nth-child(2) { height: calc(144 * var(--u)); }
+  .gen:nth-child(3) { height: calc(133 * var(--u)); }
+  .gen:nth-child(4) { height: calc(130 * var(--u)); }
+  .gen:nth-child(5) { height: calc(123 * var(--u)); }
+
+  .genCard {
+    position: relative;
+    padding: calc(17 * var(--u)) 0 0 calc(15 * var(--u));
+    border: 1px solid var(--r-card-border);
+    border-radius: calc(8 * var(--u)) 0 0 calc(8 * var(--u));
+    background: var(--r-card);
+  }
+
+  .genTitle {
+    margin: 0;
+    color: var(--r-gen-title);
+    font-size: calc(16.2 * var(--u));
+    font-weight: 600;
+    line-height: calc(22 * var(--u));
+  }
+
+  .genTitle,
+  .genYears {
+    position: relative;
+    z-index: 1;
+  }
+
+  .genYears {
+    margin: calc(2 * var(--u)) 0 0;
+    color: var(--r-years);
+    font-size: calc(12 * var(--u));
+    line-height: calc(18 * var(--u));
+  }
+
+  .genCar {
+    position: absolute;
+    right: calc(2 * var(--u));
+    bottom: calc(1 * var(--u));
+    left: calc(1 * var(--u));
+    height: calc(100 * var(--u));
+  }
+
+  .gen:nth-child(n + 2) .genCar {
+    height: calc(88 * var(--u));
+  }
+
+  .gen .tr > span {
+    white-space: nowrap;
+  }
+
+  .gen .tr > span:nth-child(2) {
+    font-size: calc(10.6 * var(--u));
+  }
+
+  .table {
+    border-radius: calc(6 * var(--u)) calc(6 * var(--u)) 0 0;
+  }
+
+  .gen .tr {
+    grid-template-columns: 178fr 167fr 170fr 218fr 213fr 165fr;
+    height: calc(20 * var(--u));
+    font-size: calc(11.4 * var(--u));
+  }
+
+  .gen:nth-child(n + 3) .tr {
+    height: calc(19.4 * var(--u));
+  }
+
+  .gen .thead,
+  .gen:nth-child(n + 3) .thead {
+    height: calc(26 * var(--u));
+    font-size: calc(10.9 * var(--u));
+    font-weight: 500;
+  }
+
+  .gen:nth-child(n + 3) .thead {
+    height: calc(23 * var(--u));
+  }
+
+  .gen .thead > span,
+  .gen .tr > span:nth-child(2) {
+    justify-content: flex-start;
+  }
+
+  .gen .tr > span:first-child {
+    padding-left: calc(27 * var(--u));
+  }
+
+  .gen .tr > span:nth-child(2) {
+    padding-left: calc(21 * var(--u));
+    border-left: 1px solid var(--r-line);
+  }
+
+  .gen .thead > span:nth-child(n + 3) {
+    justify-content: center;
+  }
+
+  .gen .tr > span:nth-child(n + 3) {
+    border-left: 1px solid var(--r-line);
+  }
+
+  .gen .thead > span {
+    border-left-color: rgba(255, 255, 255, 0.12);
+  }
+
+  /* ---------- bottom ---------- */
+
+  .bottom {
+    display: grid;
+    grid-template-columns: calc(642 * var(--u)) 1fr;
+    gap: calc(10 * var(--u));
+    margin-top: calc(-2 * var(--u));
+  }
+
+  .notes {
+    display: grid;
+    grid-template-columns: calc(309 * var(--u)) 1fr;
+    height: calc(115 * var(--u));
+    margin: calc(15 * var(--u)) 0 0;
+    padding: calc(18 * var(--u)) 0 0 calc(25 * var(--u));
+    border-color: var(--r-card-border);
+    border-radius: calc(8 * var(--u));
+    background: var(--r-card);
+    box-shadow: var(--r-card-shadow);
+  }
+
+  .note {
+    gap: calc(22 * var(--u));
+  }
+
+  .note + .note {
+    padding-left: calc(22 * var(--u));
+    border-left: 1px solid var(--r-divider);
+    gap: calc(21 * var(--u));
+  }
+
+  .noteIcon {
+    width: calc(32 * var(--u));
+    height: calc(40 * var(--u));
+    margin-left: calc(-1 * var(--u));
+  }
+
+  .note + .note .noteIcon {
+    width: calc(30 * var(--u));
+    height: calc(30 * var(--u));
+  }
+
+  .noteTitle {
+    font-size: calc(13.6 * var(--u));
+    line-height: calc(18 * var(--u));
+  }
+
+  .dark .noteTitle {
+    color: var(--r-text);
+  }
+
+  .noteText {
+    white-space: nowrap;
+    margin-top: calc(7 * var(--u));
+    font-size: calc(10.4 * var(--u));
+    line-height: calc(17.6 * var(--u));
+  }
+
+  .rule {
+    height: calc(118 * var(--u));
+    gap: calc(26 * var(--u));
+    margin-top: calc(13 * var(--u));
+    padding: calc(14 * var(--u)) 0 0 calc(16 * var(--u));
+    border-radius: calc(10 * var(--u));
+  }
+
+  .crown {
+    width: calc(70 * var(--u));
+    height: calc(70 * var(--u));
+    margin-top: calc(10 * var(--u));
+  }
+
+  .ruleTitle {
+    font-size: calc(17.3 * var(--u));
+    line-height: calc(22 * var(--u));
+  }
+
+  .ruleText {
+    margin-top: calc(8 * var(--u));
+    font-size: calc(10.9 * var(--u));
+    line-height: calc(17.2 * var(--u));
+    white-space: nowrap;
+  }
+
+  .ruleShield {
+    top: calc(16 * var(--u));
+    right: calc(28 * var(--u));
+    width: calc(76 * var(--u));
+    height: calc(88 * var(--u));
+  }
+}

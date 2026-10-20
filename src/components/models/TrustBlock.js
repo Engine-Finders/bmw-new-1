@@ -1,156 +1,111 @@
 "use client";
 
 import Image from "next/image";
-import MStripe from "@/components/reusableComponents/MStripe";
+import { Inter } from "next/font/google";
 import { useTheme } from "@/components/shared/themeProvider";
-import HomeIcon from "@/components/home/homeIcons";
+import s from "./TrustBlock.module.css";
+import TrustBlockLegacy from "./TrustBlockLegacy";
 
-const ICON_LG = "h-10 w-10 md:h-12 md:w-12";
+const inter = Inter({ subsets: ["latin"], weight: ["400", "500", "600", "700"], display: "swap" });
 
-function cleanText(text = "") {
-  return String(text ?? "")
-    .replaceAll("Ãƒâ€šÃ‚Â£", "\u00a3")
-    .replaceAll("Ã‚Â£", "\u00a3")
-    .replaceAll("Ã¢â‚¬â€œ", "-")
-    .replaceAll("Ã¢â‚¬â€", "-")
-    .replace(/\s+-\s+/g, " - ")
-    .replace(/\s+/g, " ")
-    .trim();
-}
+// a space before each break keeps words apart where the break is hidden
+const spaced = (html = "") => String(html).replace(/([^-])\s*<br\s*\/?>\s*/g, "$1 <br>");
 
-function splitTitle(title = "") {
-  const clean = cleanText(title);
-  const markers = ["bmwengines.uk", "BMWEngines.uk", "bmwengines.uk"];
+const ICONS = {
+  chart: (
+    <g fill="currentColor">
+      <rect x="1.8" y="12.4" width="5" height="8.2" rx="0.5" />
+      <rect x="9.5" y="7.6" width="5" height="13" rx="0.5" />
+      <rect x="17.2" y="2" width="5" height="18.6" rx="0.5" />
+      <rect x="0.8" y="21.7" width="22.4" height="1.4" rx="0.4" />
+    </g>
+  ),
+  heart: (
+    <path
+      d="M12 21.2l-1.4-1.3C5.4 15.2 2 12.1 2 8.3 2 5.2 4.4 2.8 7.5 2.8c1.7 0 3.4.8 4.5 2.1 1.1-1.3 2.8-2.1 4.5-2.1 3.1 0 5.5 2.4 5.5 5.5 0 3.8-3.4 6.9-8.6 11.6z"
+      fill="currentColor"
+    />
+  ),
+  wrench: (
+    <path
+      d="M21.4 6.3l-3.3 3.3-2.9-.8-.8-2.9 3.3-3.3c-2.2-.9-4.8-.4-6.6 1.4-1.8 1.8-2.3 4.4-1.5 6.6L2.9 17.3a2.2 2.2 0 0 0 0 3.1l.7.7a2.2 2.2 0 0 0 3.1 0l6.7-6.7c2.2.8 4.8.3 6.6-1.5 1.8-1.8 2.3-4.4 1.4-6.6z"
+      fill="currentColor"
+    />
+  ),
+  shieldStar: (
+    <g>
+      <path d="M12 1.8l8.6 3.2v6.4c0 5.3-3.6 9.3-8.6 11.1-5-1.8-8.6-5.8-8.6-11.1V5z" fill="currentColor" />
+      <path d="M12 7.2l1.35 2.75 3.05.45-2.2 2.15.52 3.03L12 14.15l-2.72 1.43.52-3.03-2.2-2.15 3.05-.45z" fill="#fff" />
+    </g>
+  ),
+};
 
-  for (const marker of markers) {
-    const index = clean.toLowerCase().indexOf(marker.toLowerCase());
-    if (index !== -1) {
-      return {
-        before: clean.slice(0, index).trim(),
-        accent: clean.slice(index).trim(),
-      };
-    }
-  }
+// per-icon sizing (24-unit grid) so each glyph matches the reference
+const FIT = {
+  heart: "translate(12 12) scale(1.08 1.09) translate(-12 -12)",
+  wrench: "translate(12 12) scale(1.09) translate(-12 -12)",
+  shieldStar: "translate(12 11.8) scale(1.03 1.05) translate(-12 -12)",
+};
 
-  return { before: clean, accent: "" };
-}
-
-function signalIconKey(item = {}, index = 0) {
-  const value = `${item.icon || ""} ${item.title || ""} ${item.text || ""}`.toLowerCase();
-  if (value.includes("not to repair") || value.includes("💚")) return "honest-verdict";
-  if (value.includes("specialist") || value.includes("🔧")) return "vetted-specialist";
-  if (value.includes("engine finders") || value.includes("🏆")) return "engine-finders";
-  if (value.includes("real data") || value.includes("📊")) return "real-data";
-  return ["real-data", "honest-verdict", "vetted-specialist", "engine-finders"][index] || "real-data";
-}
-
-function TrustCard({ item, index, isDark }) {
-  const iconKey = signalIconKey(item, index);
-
+function Icon({ name, className }) {
   return (
-    <article
-      className={`relative flex h-full overflow-hidden rounded-xl border px-3.5 pb-3.5 pt-5 md:px-4 md:pb-4 md:pt-5 ${
-        isDark
-          ? "border-[var(--color-border)] bg-[var(--color-surface-raised)]"
-          : "border-[#e4e9f0] bg-white shadow-[0_8px_22px_rgba(10,26,43,0.05)]"
-      }`}
-    >
-      <span
-        className={`absolute left-0 top-0 flex h-[22px] min-w-[26px] items-center justify-center rounded-br-md px-1.5 font-heading text-[0.72rem] font-bold ${
-          isDark ? "bg-[var(--color-chrome)] text-[var(--color-page)]" : "bg-[var(--color-primary)] text-white"
-        }`}
-      >
-        {index + 1}
-      </span>
-
-      <div className="mt-1 overflow-hidden">
-        <span
-          className={`float-left mr-3 mb-1 flex h-16 w-16 items-center justify-center rounded-full md:mr-3.5 md:h-[4.5rem] md:w-[4.5rem] ${
-            isDark ? "bg-white/10" : "bg-[#eef2f7]"
-          }`}
-        >
-          <HomeIcon name={iconKey} isDark={isDark} className={ICON_LG} />
-        </span>
-        <p
-          className={`text-[0.9rem] leading-[1.4] md:text-[0.95rem] ${
-            isDark ? "text-white/70" : "text-[var(--color-text-muted)]"
-          }`}
-        >
-          <strong
-            className={`font-bold ${isDark ? "text-white" : "text-[var(--color-text)]"}`}
-            dangerouslySetInnerHTML={{ __html: cleanText(item.title) }}
-          />{" "}
-          <span dangerouslySetInnerHTML={{ __html: cleanText(item.text) }} />
-        </p>
-      </div>
-    </article>
+    <svg aria-hidden="true" viewBox="0 0 24 24" className={className}>
+      <g transform={FIT[name]}>{ICONS[name]}</g>
+    </svg>
   );
 }
 
+function Title({ lines, className }) {
+  return (
+    <h2 className={className}>
+      {lines.map((line, index) => (
+        <span key={line}>
+          {index ? <br /> : null}
+          <span dangerouslySetInnerHTML={{ __html: line }} />
+        </span>
+      ))}
+    </h2>
+  );
+}
+
+// Model JSONs migrated to the reference design carry `items`; the rest keep the previous layout.
 export default function TrustBlock({ data }) {
+  if (!data) return null;
+  return data.items ? <TrustBlockReference data={data} /> : <TrustBlockLegacy data={data} />;
+}
+
+function TrustBlockReference({ data }) {
   const { theme } = useTheme();
   const isDark = theme === "dark";
-
-  if (!data) return null;
-
-  const title = splitTitle(data.h2);
-  const signals = data.signals || [];
-  const sectionBg = isDark ? "bg-[var(--color-page)]" : "bg-[#eef2f7]";
+  const art = data.art || {};
 
   return (
-    <section className={`overflow-x-hidden ${sectionBg}`}>
-      <div className={`relative overflow-hidden ${sectionBg}`}>
-        <div className="absolute inset-y-0 right-0 w-[62%] md:w-[48%]">
-          <Image
-            src="/home-image/sec2-bg.webp"
-            alt=""
-            fill
-            className="object-cover object-right"
-            sizes="(max-width: 768px) 62vw, 48vw"
-          />
-          <div
-            className={
-              isDark
-                ? "absolute inset-0 bg-[linear-gradient(90deg,var(--color-page)_0%,rgba(2,7,11,0.82)_34%,rgba(2,7,11,0.18)_100%)]"
-                : "absolute inset-0 bg-[linear-gradient(90deg,#eef2f7_0%,rgba(244,247,251,0.88)_34%,rgba(244,247,251,0.18)_100%)]"
-            }
-          />
-        </div>
-
-        <div className="relative mx-auto w-full max-w-8xl px-4 pb-3 pt-5 md:px-6 md:pb-3.5 md:pt-7 lg:px-8">
-          <div className="max-w-[720px]">
-            <p
-              className={`text-[0.64rem] font-bold uppercase tracking-[0.14em] ${
-                isDark ? "text-white/55" : "text-[var(--color-text-muted)]"
-              }`}
-            >
-              Trust Signals
-            </p>
-            <h2
-              className={`mt-1.5 text-[1.55rem] font-bold leading-[1.02] sm:text-[1.85rem] md:text-[2.35rem] md:leading-[0.98] lg:text-[2.5rem] ${
-                isDark ? "text-white" : "text-[var(--color-text)]"
-              }`}
-            >
-              <span dangerouslySetInnerHTML={{ __html: title.before }} />
-              {title.accent ? (
-                <>
-                  <br />
-                  <span className="text-[var(--color-chrome-bright)]" dangerouslySetInnerHTML={{ __html: title.accent }} />
-                </>
-              ) : null}
-            </h2>
-            <div className="mt-2.5">
-              <MStripe />
-            </div>
+    <section id="trust" className={`${inter.className} ${s.section} ${isDark ? s.dark : s.light}`}>
+      <div className={s.frame}>
+        <div className={s.panel}>
+          <div className={s.card}>
+            {art.light ? (
+              <span className={s.art}>
+                <Image src={isDark ? art.dark : art.light} alt="" fill className={s.artImg} sizes="(min-width: 1024px) 54vw, 1px" />
+              </span>
+            ) : null}
+            <Title lines={data.titleLinesMobile || data.titleLines || [data.h2]} className={`${s.title} ${s.phoneOnly}`} />
+            <Title lines={data.titleLines || [data.h2]} className={`${s.title} ${s.deskOnly}`} />
+            <ul className={s.items}>
+              {data.items.map((item) => (
+                <li key={item.title} className={s.item}>
+                  <span className={`${s.tile} ${item.icon === "heart" ? s.tileGreen : ""}`}>
+                    <Icon name={item.icon} className={s.tileIcon} />
+                  </span>
+                  <p className={s.text}>
+                    <strong>{item.title}</strong>{" "}
+                    <span className={s.deskInline} dangerouslySetInnerHTML={{ __html: spaced(item.text) }} />
+                    <span className={s.phoneInline} dangerouslySetInnerHTML={{ __html: spaced(item.textMobile || item.text) }} />
+                  </p>
+                </li>
+              ))}
+            </ul>
           </div>
-        </div>
-      </div>
-
-      <div className="mx-auto w-full min-w-0 max-w-8xl px-4 pb-5 pt-2 md:px-6 md:pb-6 md:pt-2.5 lg:px-8">
-        <div className="grid grid-cols-1 gap-2.5 sm:grid-cols-2 lg:grid-cols-4 lg:gap-3">
-          {signals.map((item, index) => (
-            <TrustCard key={item.title || index} item={item} index={index} isDark={isDark} />
-          ))}
         </div>
       </div>
     </section>

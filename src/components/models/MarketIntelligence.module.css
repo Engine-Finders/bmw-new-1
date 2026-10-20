@@ -1,0 +1,1219 @@
+/*
+ * Model page "Market Intelligence" + editorial pull-quote (section 7), built to the reference designs
+ * (light + dark desktop at 1536px, light phone at 864px).
+ * Sizes are reference pixels times --u, so the section is the reference scaled to its own width:
+ * below 1024px the phone reference, from 1024px the desktop reference.
+ * On small phones text has a floor so it stays readable.
+ */
+
+.section {
+  overflow-y: clip;
+  background: var(--m-page);
+  color: var(--m-text);
+}
+
+.frame {
+  container-type: inline-size;
+  max-width: 1628px;
+  margin: 0 auto;
+}
+
+.panel {
+  --u: calc(100cqw / 864);
+  padding: calc(57 * var(--u)) calc(24 * var(--u)) calc(20 * var(--u)) calc(25 * var(--u));
+}
+
+/* ---------- theme tokens ---------- */
+
+.light {
+  --m-page: #ffffff;
+  --m-text: #0f1635;
+  --m-accent: #0c58e6;
+  --m-card: #ffffff;
+  --m-card-border: #e8ebf1;
+  --m-card-shadow: 0 6px 18px rgba(20, 40, 90, 0.05);
+  --m-head-bg: #0a1f40;
+  --m-head-text: #ffffff;
+  --m-line: #e7eaf0;
+  --m-signal: #21233a;
+  --m-value: #28283f;
+  --m-tag: #3e66c2;
+  --m-note: #60616d;
+  --m-tile: #e8eff9;
+  --m-tile-icon: #1c4fcf;
+  --m-up: #2e9157;
+  --m-flat: #1d5be0;
+  --m-insight: #35364a;
+  --m-lead: #0f1635;
+  --m-lead-blue: #1958d0;
+  --m-divider: #e5e8ee;
+  --m-live-dot: #2aa04f;
+  --m-spark: #1f55d6;
+  --m-spark-fill: rgba(31, 85, 214, 0.12);
+  --m-btn-border: #2f63d6;
+  --m-btn-text: #2558cf;
+  --m-quote-bg: linear-gradient(90deg, #f3f7fe 0%, #f6f9ff 55%, #ffffff 100%);
+  --m-quote-border: #d9e4f6;
+  --m-quote-mark: #1555e3;
+  --m-quote-title: #0d1440;
+  --m-quote-text: #333b59;
+  --m-label: #2a5dd0;
+}
+
+.dark {
+  --m-page: #01070c;
+  --m-text: #f4f6f7;
+  --m-accent: #1d6be6;
+  --m-card: #04101d;
+  --m-card-border: rgba(80, 110, 160, 0.3);
+  --m-card-shadow: none;
+  --m-head-bg: #04172c;
+  --m-head-text: #f0f7ff;
+  --m-line: rgba(80, 110, 160, 0.26);
+  --m-signal: #eff3f8;
+  --m-value: #f8fbfe;
+  --m-tag: #2f6bc0;
+  --m-note: #c2c6cf;
+  --m-tile: #0d2848;
+  --m-tile-icon: #3b7fe6;
+  --m-up: #36a05a;
+  --m-flat: #2d6fea;
+  --m-insight: #d7dce3;
+  --m-lead: #f2f6fb;
+  --m-lead-blue: #3478e0;
+  --m-divider: rgba(110, 140, 190, 0.22);
+  --m-live-dot: #2fb05a;
+  --m-spark: #2d6bea;
+  --m-spark-fill: rgba(45, 107, 234, 0.18);
+  --m-btn-border: #3c79e6;
+  --m-btn-text: #6f9ff0;
+  --m-quote-bg: #04101d;
+  --m-quote-border: rgba(80, 110, 160, 0.3);
+  --m-quote-mark: #0b3fc0;
+  --m-quote-title: #f6f9fd;
+  --m-quote-text: #d1d5dd;
+  --m-label: #3b77cc;
+}
+
+.deskInline,
+.deskBlock {
+  display: none;
+}
+
+.phoneInline {
+  display: inline;
+}
+
+.phoneBlock {
+  display: block;
+}
+
+/* ---------- top: title + stat card ---------- */
+
+.top {
+  position: relative;
+  min-height: calc(92 * var(--u));
+}
+
+.title {
+  max-width: calc(560 * var(--u));
+  margin: calc(2 * var(--u)) 0 0 calc(10 * var(--u));
+  font-size: calc(29.9 * var(--u));
+  font-weight: 600;
+  line-height: calc(46 * var(--u));
+  letter-spacing: -0.03em;
+  color: var(--m-text);
+}
+
+.titleLine2 span {
+  color: var(--m-accent);
+}
+
+.stat {
+  position: absolute;
+  top: calc(-38 * var(--u));
+  right: 0;
+  display: flex;
+  align-items: center;
+  gap: calc(12 * var(--u));
+  width: calc(242 * var(--u));
+  height: calc(130 * var(--u));
+  padding-left: calc(12 * var(--u));
+  border: 1px solid var(--m-card-border);
+  border-radius: calc(12 * var(--u));
+  background: var(--m-card);
+  box-shadow: var(--m-card-shadow);
+}
+
+.statTile {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  width: calc(66 * var(--u));
+  height: calc(66 * var(--u));
+  border-radius: 50%;
+  background: var(--m-tile);
+  color: var(--m-tile-icon);
+}
+
+.statSvg {
+  width: 56%;
+  height: 56%;
+}
+
+.statText {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+.statText strong {
+  font-size: calc(26 * var(--u));
+  font-weight: 500;
+  line-height: calc(36 * var(--u));
+  color: var(--m-text);
+}
+
+.statText span {
+  font-size: calc(13.4 * var(--u));
+  line-height: calc(23 * var(--u));
+  color: var(--m-signal);
+  white-space: nowrap;
+}
+
+.statText .statTag {
+  color: var(--m-tag);
+}
+
+/* ---------- signal table ---------- */
+
+.table {
+  margin-top: calc(23 * var(--u));
+  overflow: hidden;
+  border: 1px solid var(--m-line);
+  border-radius: calc(10 * var(--u));
+  background: var(--m-card);
+}
+
+.tr {
+  display: grid;
+  grid-template-columns: 315fr 231fr 269fr;
+  border-top: 1px solid var(--m-line);
+}
+
+.thead {
+  height: calc(52 * var(--u));
+  border-top: 0;
+  background: var(--m-head-bg);
+  color: var(--m-head-text);
+  font-size: calc(15.4 * var(--u));
+  font-weight: 500;
+}
+
+.thead span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-left: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+.thead span:first-child {
+  justify-content: flex-start;
+  padding-left: calc(24 * var(--u));
+  border-left: 0;
+}
+
+.tr:nth-child(2) { height: calc(120 * var(--u)); }
+.tr:nth-child(3) { height: calc(103 * var(--u)); }
+.tr:nth-child(4) { height: calc(92 * var(--u)); }
+.tr:nth-child(5) { height: calc(86 * var(--u)); }
+.tr:nth-child(6) { height: calc(86 * var(--u)); }
+
+.cSignal,
+.cData,
+.cTrend {
+  display: flex;
+  align-items: center;
+}
+
+.cData,
+.cTrend {
+  border-left: 1px solid var(--m-line);
+}
+
+.cSignal {
+  gap: calc(20 * var(--u));
+  padding-left: calc(21 * var(--u));
+}
+
+.rowIcon {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  width: calc(47 * var(--u));
+  height: calc(47 * var(--u));
+  border-radius: 50%;
+  background: var(--m-tile);
+  color: var(--m-tile-icon);
+}
+
+.rowSvg {
+  width: 62%;
+  height: 62%;
+}
+
+.signalText {
+  font-size: calc(15.4 * var(--u));
+  line-height: calc(25 * var(--u));
+  color: var(--m-signal);
+}
+
+.signalText strong {
+  font-weight: 500;
+}
+
+.suffix {
+  font-weight: 400;
+}
+
+/* phone: "(JLR-wide)" drops to its own line, as in the phone reference */
+.suffix {
+  display: block;
+}
+
+.cData {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding-left: calc(33 * var(--u));
+}
+
+.value {
+  font-size: calc(17.4 * var(--u));
+  font-weight: 500;
+  line-height: calc(25 * var(--u));
+  color: var(--m-value);
+}
+
+.tag {
+  font-size: calc(14 * var(--u));
+  line-height: calc(23 * var(--u));
+  color: var(--m-tag);
+}
+
+.note {
+  font-size: calc(14 * var(--u));
+  line-height: calc(22 * var(--u));
+  color: var(--m-note);
+}
+
+.cTrend {
+  align-items: flex-start;
+  gap: calc(20 * var(--u));
+  padding: calc(28 * var(--u)) calc(8 * var(--u)) 0 calc(30 * var(--u));
+}
+
+.tr:nth-child(3) .cTrend { padding-top: calc(18 * var(--u)); }
+.tr:nth-child(4) .cTrend,
+.tr:nth-child(5) .cTrend,
+.tr:nth-child(6) .cTrend { padding-top: calc(22 * var(--u)); }
+
+.trendIcon {
+  flex-shrink: 0;
+  width: calc(34 * var(--u));
+  height: calc(34 * var(--u));
+  margin-top: calc(-3 * var(--u));
+}
+
+.up .trendIcon { color: var(--m-up); }
+.flat .trendIcon { color: var(--m-flat); }
+
+.trendText {
+  display: flex;
+  flex-direction: column;
+}
+
+.trendLine {
+  font-size: calc(16 * var(--u));
+  line-height: calc(23 * var(--u));
+  color: var(--m-signal);
+}
+
+.trendLine strong {
+  font-weight: 500;
+}
+
+.trendNote {
+  font-size: calc(15 * var(--u));
+}
+
+.placeholder {
+  font-size: calc(14 * var(--u));
+  line-height: calc(22 * var(--u));
+  color: var(--m-tag);
+  white-space: nowrap;
+}
+
+/* ---------- insights + live feed ---------- */
+
+.lower {
+  display: block;
+}
+
+.insights {
+  margin-top: calc(16 * var(--u));
+  padding: calc(14 * var(--u)) calc(16 * var(--u)) calc(0 * var(--u)) calc(18 * var(--u));
+  border: 1px solid var(--m-card-border);
+  border-radius: calc(12 * var(--u));
+  background: var(--m-card);
+  box-shadow: var(--m-card-shadow);
+}
+
+.insightsTitle {
+  display: flex;
+  align-items: center;
+  gap: calc(20 * var(--u));
+  margin: 0 0 0 calc(10 * var(--u));
+  color: var(--m-lead-blue);
+  font-size: calc(18 * var(--u));
+  font-weight: 500;
+  line-height: calc(26 * var(--u));
+}
+
+.insightsIcon {
+  width: calc(22 * var(--u));
+  height: calc(22 * var(--u));
+}
+
+.insight {
+  display: flex;
+  align-items: flex-start;
+  gap: calc(27 * var(--u));
+  padding: calc(18 * var(--u)) 0 calc(16 * var(--u)) calc(5 * var(--u));
+}
+
+.insight + .insight {
+  border-top: 1px solid var(--m-divider);
+}
+
+.insightTile {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  width: calc(66 * var(--u));
+  height: calc(66 * var(--u));
+  border-radius: 50%;
+  background: var(--m-tile);
+  color: var(--m-tile-icon);
+}
+
+.insightSvg {
+  width: 52%;
+  height: 52%;
+}
+
+.insightText {
+  max-width: calc(530 * var(--u));
+  margin: 0;
+  font-size: calc(15.3 * var(--u));
+  line-height: calc(23 * var(--u));
+  color: var(--m-insight);
+}
+
+.leadDark,
+.leadBlue {
+  font-size: calc(17 * var(--u));
+  font-weight: 600;
+  color: var(--m-lead-blue);
+}
+
+.live {
+  position: relative;
+  margin-top: calc(11 * var(--u));
+  height: calc(166 * var(--u));
+  padding: calc(16 * var(--u)) calc(26 * var(--u));
+  border: 1px solid var(--m-card-border);
+  border-radius: calc(12 * var(--u));
+  background: var(--m-card);
+  box-shadow: var(--m-card-shadow);
+}
+
+.liveHead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: calc(390 * var(--u));
+}
+
+.liveTitle {
+  margin: 0;
+  color: var(--m-text);
+  font-size: calc(18 * var(--u));
+  font-weight: 600;
+  line-height: calc(24 * var(--u));
+}
+
+.liveBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: calc(7 * var(--u));
+  color: var(--m-insight);
+  font-size: calc(14 * var(--u));
+}
+
+.liveDot {
+  width: calc(7 * var(--u));
+  height: calc(7 * var(--u));
+  border-radius: 50%;
+  background: var(--m-live-dot);
+}
+
+.spark {
+  display: block;
+  width: calc(362 * var(--u));
+  height: calc(56 * var(--u));
+  margin-top: calc(12 * var(--u));
+}
+
+.sparkLine { stroke: var(--m-spark); }
+.sparkDot { fill: var(--m-card); stroke: var(--m-spark); stroke-width: 1.3; }
+.sparkFillA { stop-color: var(--m-spark-fill); }
+.sparkFillB { stop-color: transparent; }
+
+.liveText {
+  margin: calc(8 * var(--u)) 0 0;
+  color: var(--m-insight);
+  font-size: calc(14 * var(--u));
+  line-height: calc(21 * var(--u));
+}
+
+.liveCta {
+  position: absolute;
+  top: calc(56 * var(--u));
+  right: calc(39 * var(--u));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: calc(10 * var(--u));
+  width: calc(236 * var(--u));
+  height: calc(47 * var(--u));
+  border: 1.5px solid var(--m-btn-border);
+  border-radius: calc(7 * var(--u));
+  color: var(--m-btn-text);
+  font-size: calc(17.4 * var(--u));
+  font-weight: 500;
+}
+
+.liveArrow {
+  width: calc(20 * var(--u));
+  height: calc(20 * var(--u));
+}
+
+/* ---------- pull quote ---------- */
+
+.quote {
+  position: relative;
+  min-height: calc(288 * var(--u));
+  margin-top: calc(14 * var(--u));
+  overflow: hidden;
+  border: 1px solid var(--m-quote-border);
+  border-radius: calc(12 * var(--u));
+  background: var(--m-quote-bg);
+}
+
+.quoteBody {
+  position: relative;
+  max-width: calc(420 * var(--u));
+  padding: calc(22 * var(--u)) 0 calc(24 * var(--u)) calc(25 * var(--u));
+}
+
+.quoteMark {
+  position: absolute;
+  top: calc(44 * var(--u));
+  left: calc(24 * var(--u));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: calc(49 * var(--u));
+  height: calc(49 * var(--u));
+  border-radius: 50%;
+  background: var(--m-quote-mark);
+  color: #ffffff;
+}
+
+.quoteSvg {
+  width: 52%;
+  height: 52%;
+}
+
+.quoteLabel {
+  margin: 0 0 0 calc(64 * var(--u));
+  color: var(--m-label);
+  font-size: calc(13 * var(--u));
+  font-weight: 500;
+  line-height: calc(22 * var(--u));
+}
+
+.quoteTitle {
+  margin: calc(6 * var(--u)) 0 0 calc(64 * var(--u));
+  color: var(--m-quote-title);
+  font-size: calc(19.2 * var(--u));
+  font-weight: 600;
+  line-height: calc(27 * var(--u));
+}
+
+.quoteText {
+  margin: calc(16 * var(--u)) 0 0;
+  color: var(--m-quote-text);
+  font-size: calc(14 * var(--u));
+  line-height: calc(23 * var(--u));
+}
+
+.quoteCar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: calc(394 * var(--u));
+  /* the photo's left edge leans, as in the references */
+  clip-path: polygon(11.4% 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.quoteImg {
+  object-fit: cover;
+}
+
+/* ======================= Small phones ======================= */
+@container (max-width: 650px) {
+  .panel {
+    padding: 24px 12px 16px;
+  }
+
+  .top {
+    min-height: 0;
+  }
+
+  /* each reference line stays whole, so the dash never sits alone */
+  .title {
+    max-width: none;
+    margin: 0;
+    font-size: min(23px, 5cqw);
+    line-height: 1.3;
+    white-space: nowrap;
+  }
+
+  .stat {
+    position: static;
+    width: auto;
+    height: auto;
+    margin-top: 14px;
+    padding: 12px;
+    border-radius: 10px;
+  }
+
+  .statTile {
+    width: 46px;
+    height: 46px;
+  }
+
+  .statText strong {
+    font-size: 20px;
+    line-height: 1.3;
+  }
+
+  .statText span {
+    font-size: 12.5px;
+    line-height: 1.5;
+  }
+
+  .table {
+    margin-top: 14px;
+  }
+
+  .tr {
+    grid-template-columns: 37% 29% 34%;
+  }
+
+  .tr:nth-child(n) {
+    height: auto;
+    min-height: 0;
+  }
+
+  .thead {
+    height: 38px;
+    font-size: 12px;
+  }
+
+  .thead span:first-child {
+    padding-left: 10px;
+  }
+
+  .cSignal {
+    gap: 6px;
+    padding: 10px 4px 10px 8px;
+  }
+
+  .rowIcon {
+    width: 26px;
+    height: 26px;
+  }
+
+  .signalText {
+    font-size: 11.5px;
+    line-height: 1.4;
+  }
+
+  .cData {
+    padding: 10px 4px 10px 8px;
+  }
+
+  .value {
+    font-size: 13.5px;
+    line-height: 1.35;
+  }
+
+  .tag,
+  .note,
+  .placeholder,
+  .trendNote {
+    font-size: 10.5px;
+    line-height: 1.45;
+  }
+
+  .note br,
+  .trendNote br,
+  .placeholder br {
+    display: none;
+  }
+
+  .placeholder {
+    white-space: normal;
+  }
+
+  .tag {
+    white-space: nowrap;
+    font-size: min(10.5px, 2.75cqw);
+  }
+
+  .cTrend,
+  .tr:nth-child(n) .cTrend {
+    gap: 5px;
+    padding: 10px 4px 10px 6px;
+  }
+
+  .trendIcon {
+    width: 18px;
+    height: 18px;
+    margin-top: 0;
+  }
+
+  .trendLine {
+    font-size: 12.5px;
+    line-height: 1.4;
+  }
+
+  .insights {
+    margin-top: 12px;
+    padding: 12px;
+    border-radius: 10px;
+  }
+
+  .insightsTitle {
+    gap: 8px;
+    margin-left: 0;
+    font-size: 14.5px;
+    line-height: 1.4;
+  }
+
+  .insightsIcon {
+    width: 16px;
+    height: 16px;
+  }
+
+  .insight {
+    gap: 10px;
+    padding: 12px 0;
+  }
+
+  .insightTile {
+    width: 38px;
+    height: 38px;
+  }
+
+  .insightText {
+    max-width: none;
+    font-size: 13px;
+    line-height: 1.55;
+  }
+
+  .leadDark,
+  .leadBlue {
+    font-size: 13.5px;
+  }
+
+  .live {
+    height: auto;
+    margin-top: 10px;
+    padding: 12px 14px 14px;
+    border-radius: 10px;
+  }
+
+  .liveHead,
+  .spark {
+    width: 100%;
+  }
+
+  .liveTitle {
+    font-size: 15px;
+  }
+
+  .liveBadge {
+    font-size: 12px;
+  }
+
+  .liveDot {
+    width: 6px;
+    height: 6px;
+  }
+
+  .spark {
+    height: 44px;
+  }
+
+  .liveText {
+    font-size: 12.5px;
+    line-height: 1.5;
+  }
+
+  .liveText br {
+    display: none;
+  }
+
+  .liveCta {
+    position: static;
+    width: 100%;
+    height: 40px;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+
+  .liveArrow {
+    width: 16px;
+    height: 16px;
+  }
+
+  .quote {
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+    margin-top: 12px;
+    border-radius: 10px;
+  }
+
+  .quoteBody {
+    max-width: none;
+    padding: 14px 14px 14px;
+  }
+
+  .quoteMark {
+    top: 16px;
+    left: 14px;
+    width: 36px;
+    height: 36px;
+  }
+
+  .quoteLabel,
+  .quoteTitle {
+    margin-left: 48px;
+  }
+
+  .quoteLabel {
+    font-size: 11px;
+    line-height: 1.5;
+  }
+
+  .quoteTitle {
+    margin-top: 2px;
+    font-size: 16px;
+    line-height: 1.35;
+  }
+
+  .quoteTitle br {
+    display: none;
+  }
+
+  .quoteText {
+    margin-top: 10px;
+    font-size: 13px;
+    line-height: 1.55;
+  }
+
+  .quoteCar.phoneBlock {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 392 / 285;
+    clip-path: none;
+  }
+}
+
+/* ======================= Laptops and desktops ======================= */
+
+@media (min-width: 1024px) {
+  .panel {
+    --u: calc(100cqw / 1536);
+    padding: calc(34 * var(--u)) calc(58 * var(--u)) calc(16 * var(--u)) calc(55 * var(--u));
+  }
+
+  .deskInline {
+    display: inline;
+  }
+
+  .deskBlock {
+    display: block;
+  }
+
+  .phoneInline,
+  .phoneBlock {
+    display: none;
+  }
+
+  .top {
+    min-height: calc(111 * var(--u));
+  }
+
+  .title {
+    max-width: none;
+    margin: 0;
+    font-size: calc(37.6 * var(--u));
+    line-height: calc(47 * var(--u));
+    letter-spacing: -0.012em;
+  }
+
+  .stat {
+    top: calc(-4 * var(--u));
+    gap: calc(19 * var(--u));
+    width: calc(263 * var(--u));
+    height: calc(104 * var(--u));
+    padding-left: calc(18 * var(--u));
+  }
+
+  .statTile {
+    width: calc(64 * var(--u));
+    height: calc(64 * var(--u));
+  }
+
+  .statText strong {
+    font-size: calc(25.5 * var(--u));
+    line-height: calc(30 * var(--u));
+  }
+
+  .statText span {
+    font-size: calc(12.9 * var(--u));
+    line-height: calc(21 * var(--u));
+  }
+
+  .statText .statTag {
+    font-size: calc(11.6 * var(--u));
+  }
+
+  .table {
+    margin-top: calc(0 * var(--u));
+    border-radius: calc(10 * var(--u));
+  }
+
+  .tr {
+    grid-template-columns: 452fr 469fr 502fr;
+    height: calc(55 * var(--u));
+  }
+
+  .tr:nth-child(n) {
+    height: calc(54.8 * var(--u));
+  }
+
+  .thead,
+  .tr.thead {
+    height: calc(41 * var(--u));
+    font-size: calc(14.3 * var(--u));
+  }
+
+  .thead span {
+    justify-content: flex-start;
+    padding-left: calc(36 * var(--u));
+  }
+
+  .thead span:first-child {
+    padding-left: calc(26 * var(--u));
+  }
+
+  .cSignal {
+    gap: calc(30 * var(--u));
+    padding-left: calc(25 * var(--u));
+  }
+
+  .rowIcon {
+    width: calc(40 * var(--u));
+    height: calc(40 * var(--u));
+  }
+
+  .signalText {
+    font-size: calc(14.4 * var(--u));
+  }
+
+  .suffix {
+    display: inline;
+  }
+
+  .cData {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: calc(13 * var(--u));
+    padding-left: calc(36 * var(--u));
+  }
+
+  .value {
+    font-size: calc(15.5 * var(--u));
+  }
+
+  .tag {
+    font-size: calc(12.7 * var(--u));
+  }
+
+  .note {
+    margin-left: calc(-2 * var(--u));
+    font-size: calc(12.7 * var(--u));
+  }
+
+  .cTrend,
+  .tr:nth-child(n) .cTrend {
+    align-items: center;
+    gap: calc(16 * var(--u));
+    padding: 0 0 0 calc(25 * var(--u));
+  }
+
+  .trendIcon {
+    width: calc(27 * var(--u));
+    height: calc(27 * var(--u));
+    margin-top: 0;
+  }
+
+  .trendText {
+    flex-direction: row;
+    align-items: baseline;
+    gap: calc(22 * var(--u));
+  }
+
+  .trendLine {
+    font-size: calc(14.6 * var(--u));
+  }
+
+  .trendNote {
+    font-size: calc(13.4 * var(--u));
+  }
+
+  .placeholder {
+    font-size: calc(12.1 * var(--u));
+  }
+
+  /* insights card with the live feed as its fourth column */
+  .lower {
+    display: grid;
+    grid-template-columns: 1fr calc(256 * var(--u));
+    margin-top: calc(11 * var(--u));
+    border: 1px solid var(--m-card-border);
+    border-radius: calc(10 * var(--u));
+    background: var(--m-card);
+    box-shadow: var(--m-card-shadow);
+  }
+
+  .insights {
+    position: relative;
+    height: calc(226 * var(--u));
+    margin: 0;
+    padding: calc(15 * var(--u)) 0 0 calc(25 * var(--u));
+    border: 0;
+    border-radius: 0;
+    background: none;
+    box-shadow: none;
+  }
+
+  .insightsTitle {
+    gap: calc(16 * var(--u));
+    margin: 0;
+    font-size: calc(15 * var(--u));
+    line-height: calc(22 * var(--u));
+  }
+
+  .insightsIcon {
+    width: calc(18 * var(--u));
+    height: calc(18 * var(--u));
+  }
+
+  .insightList {
+    display: grid;
+    grid-template-columns: calc(396 * var(--u)) calc(393 * var(--u)) 1fr;
+    margin-top: calc(14 * var(--u));
+  }
+
+  .insight,
+  .insight + .insight {
+    gap: calc(16 * var(--u));
+    padding: calc(2 * var(--u)) 0 0 calc(-14 * var(--u));
+    border-top: 0;
+  }
+
+  .insight + .insight {
+    gap: calc(18 * var(--u));
+    padding-left: calc(15 * var(--u));
+    border-left: 1px solid var(--m-divider);
+    height: calc(158 * var(--u));
+  }
+
+  .insightTile {
+    width: calc(52 * var(--u));
+    height: calc(52 * var(--u));
+    margin-top: calc(1 * var(--u));
+  }
+
+  .insight + .insight .insightTile {
+    margin-top: calc(7 * var(--u));
+  }
+
+  .insightText {
+    max-width: calc(300 * var(--u));
+    font-size: calc(11.4 * var(--u));
+    line-height: calc(17.25 * var(--u));
+  }
+
+  /* the reference's own line breaks */
+  .fixedLines {
+    max-width: none;
+    white-space: nowrap;
+  }
+
+  .insight + .insight .insightText {
+    margin-top: calc(6 * var(--u));
+  }
+
+  .leadDark,
+  .leadBlue {
+    font-size: calc(11.8 * var(--u));
+  }
+
+  .leadDark {
+    color: var(--m-lead);
+  }
+
+  .live {
+    height: auto;
+    margin: calc(10 * var(--u)) 0 calc(14 * var(--u));
+    padding: calc(5 * var(--u)) calc(24 * var(--u)) 0 calc(23 * var(--u));
+    border: 0;
+    border-left: 1px solid var(--m-divider);
+    border-radius: 0;
+    background: none;
+    box-shadow: none;
+  }
+
+  .liveHead {
+    width: auto;
+  }
+
+  .liveTitle {
+    font-size: calc(15.6 * var(--u));
+    line-height: calc(22 * var(--u));
+  }
+
+  .liveBadge {
+    gap: calc(6 * var(--u));
+    font-size: calc(12 * var(--u));
+  }
+
+  .liveDot {
+    width: calc(6 * var(--u));
+    height: calc(6 * var(--u));
+  }
+
+  .spark {
+    width: calc(207 * var(--u));
+    height: calc(50 * var(--u));
+    margin-top: calc(13 * var(--u));
+    padding-bottom: 0;
+    border-bottom: 1px solid var(--m-divider);
+  }
+
+  .liveText {
+    margin-top: calc(24 * var(--u));
+    font-size: calc(11.6 * var(--u));
+    line-height: calc(17 * var(--u));
+  }
+
+  .liveCta {
+    position: static;
+    width: calc(186 * var(--u));
+    height: calc(32 * var(--u));
+    margin-top: calc(15 * var(--u));
+    gap: calc(8 * var(--u));
+    border-width: 1px;
+    border-radius: calc(5 * var(--u));
+    font-size: calc(13 * var(--u));
+  }
+
+  .liveArrow {
+    width: calc(15 * var(--u));
+    height: calc(15 * var(--u));
+  }
+
+  .quote {
+    min-height: calc(178 * var(--u));
+    margin-top: calc(14 * var(--u));
+    border-radius: calc(10 * var(--u));
+  }
+
+  .quoteBody {
+    max-width: none;
+    padding: calc(22 * var(--u)) 0 calc(20 * var(--u)) calc(97 * var(--u));
+  }
+
+  .quoteMark {
+    top: calc(20 * var(--u));
+    left: calc(25 * var(--u));
+    width: calc(46 * var(--u));
+    height: calc(46 * var(--u));
+  }
+
+  .quoteLabel,
+  .quoteTitle {
+    margin-left: 0;
+  }
+
+  .quoteLabel {
+    font-size: calc(12.4 * var(--u));
+    line-height: calc(16 * var(--u));
+  }
+
+  .quoteTitle {
+    margin-top: calc(6 * var(--u));
+    font-size: calc(20.9 * var(--u));
+    line-height: calc(28 * var(--u));
+  }
+
+  .quoteText {
+    margin-top: calc(12 * var(--u));
+    font-size: calc(14.35 * var(--u));
+    line-height: calc(24.5 * var(--u));
+  }
+
+  .quoteCar {
+    width: calc(531 * var(--u));
+    clip-path: polygon(5.85% 0, 100% 0, 100% 100%, 0 100%);
+  }
+
+  .dark .quoteCar {
+    width: calc(531 * var(--u));
+    clip-path: polygon(6.4% 0, 100% 0, 100% 100%, 0 100%);
+  }
+}

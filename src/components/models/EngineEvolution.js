@@ -2,360 +2,231 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import MStripe from "@/components/reusableComponents/MStripe";
+import { Inter } from "next/font/google";
 import { useTheme } from "@/components/shared/themeProvider";
-import HomeIcon from "@/components/home/homeIcons";
-import { carImageFor } from "@/components/shared/carImage";
-import { sectionDescription, sectionTableText, tableHeaderClass } from "@/components/models/sectionTypography";
+import s from "./EngineEvolution.module.css";
+import EngineEvolutionLegacy from "./EngineEvolutionLegacy";
 
+const inter = Inter({ subsets: ["latin"], weight: ["400", "500", "600", "700"], display: "swap" });
 
-function cleanText(text = "") {
-  return String(text ?? "")
-    .replaceAll("Ã‚Â£", "\u00a3")
-    .replaceAll("Â£", "\u00a3")
-    .replaceAll("Ã¢â‚¬â€œ", "\u2013")
-    .replaceAll("â€“", "\u2013")
-    .replaceAll("Ã¢â‚¬â€", "\u2014")
-    .replaceAll("â€”", "\u2014")
-    .replace(/\s+/g, " ")
-    .trim();
-}
+// a space before each break keeps words apart where the break is hidden
+const spaced = (html = "") => String(html).replace(/([^-])\s*<br\s*\/?>\s*/g, "$1 <br>");
 
-function splitTitle(title = "") {
-  const clean = cleanText(title);
-  const dashIndex = clean.lastIndexOf(" - ");
-  if (dashIndex !== -1) {
-    return {
-      main: clean.slice(0, dashIndex).trim(),
-      accent: clean.slice(dashIndex + 3).trim(),
-    };
-  }
+const ICONS = {
+  shield7: (
+    <g>
+      <path d="M12 2.8l7.5 2.8v5.6c0 4.6-3.2 8.2-7.5 10-4.3-1.8-7.5-5.4-7.5-10V5.6z" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round" />
+      <path d="M9.6 8.8h4.8l-2.7 6.6" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+    </g>
+  ),
+  gear: (
+    <g fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round">
+      <path d="M10.3 2.8h3.4l.5 2.4 1.8.9 2.1-1.4 2.4 2.4-1.4 2.1.9 1.8 2.4.5v3.4l-2.4.5-.9 1.8 1.4 2.1-2.4 2.4-2.1-1.4-1.8.9-.5 2.4h-3.4l-.5-2.4-1.8-.9-2.1 1.4-2.4-2.4 1.4-2.1-.9-1.8-2.4-.5v-3.4l2.4-.5.9-1.8-1.4-2.1 2.4-2.4 2.1 1.4 1.8-.9z" />
+      <circle cx="12" cy="12" r="3.6" />
+    </g>
+  ),
+  chart: (
+    <g fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+      <rect x="3.5" y="14" width="3.6" height="6.5" rx="0.8" />
+      <rect x="10.2" y="11" width="3.6" height="9.5" rx="0.8" />
+      <rect x="16.9" y="8" width="3.6" height="12.5" rx="0.8" />
+      <path d="M4 10.5l5.5-4 3.5 2.5 6.5-5.5M15.8 3.5h3.7v3.7" />
+    </g>
+  ),
+  award: (
+    <g fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+      <circle cx="12" cy="9" r="6" />
+      <circle cx="12" cy="9" r="3.4" />
+      <path d="M8.2 13.6L6.5 21l3-1.6 2.5 2 2.5-2 3 1.6-1.7-7.4" />
+    </g>
+  ),
+  info: (
+    <g fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round">
+      <circle cx="12" cy="12" r="9.4" />
+      <path d="M12.6 10.6l-1.6 5.8M12.9 7.4v.1" strokeWidth="1.8" />
+    </g>
+  ),
+  engine: (
+    <path
+      d="M7 6.5h6M10 6.5v2.5M5.5 9h9.5l2 2.2h2v-1.7h2.5v7.5H19v-1.7h-2l-2.3 2.7H8.5l-2-2.2H4.5v2H2.5V11h2v2h1z"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+  ),
+  cycle: (
+    <g fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M19 12a7 7 0 0 1-11.8 5.1M5 12a7 7 0 0 1 11.8-5.1" />
+      <path d="M16.8 3.6v3.5h-3.5M7.2 20.4v-3.5h3.5" />
+    </g>
+  ),
+  doc: (
+    <g fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M6 2.5h8.5l4 4v15H6z" />
+      <path d="M14.5 2.5v4h4M8.8 10.5h7M8.8 13h7M8.8 15.5h7M8.8 18h5" />
+    </g>
+  ),
+  chevron: <path d="M7 10l5 5 5-5" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />,
+};
 
-  const match = clean.match(/^(.*?)(\d{4}\s+to\s+Today)$/i);
-  return {
-    main: match ? match[1].trim() : clean,
-    accent: match ? match[2] : "",
-  };
-}
-
-function eraParts(era = "") {
-  const clean = cleanText(era);
-  const [lead, detail = ""] = clean.split(/\s+\u2014\s+| - /);
-  return { lead: lead || clean, detail };
-}
-
-function engineList(value = "") {
-  return cleanText(value)
-    .split(",")
-    .map((item) => item.trim())
-    .filter(Boolean);
-}
-
-function buildStats(eras = []) {
-  const years = eras.map((era) => cleanText(era.years)).filter(Boolean);
-  const engineCount = eras.reduce((count, era) => count + engineList(era.keyEngines).length, 0);
-  const firstYear = years[0]?.match(/\d{4}/)?.[0] || "";
-  const lastYear = years[years.length - 1] || "";
-
-  return [
-    {
-      title: `${eras.length || 1} Era${eras.length === 1 ? "" : "s"}`,
-      text: firstYear ? `${firstYear} to Present` : "Tracked generations",
-      icon: "generations",
-    },
-    {
-      title: `${engineCount || "—"} Key Engines`,
-      text: "Across the timeline",
-      icon: "engine",
-    },
-    {
-      title: "Hardware Revisions",
-      text: lastYear || "Facelift & updates",
-      icon: "timeline",
-    },
-    {
-      title: "Buyer Focused",
-      text: "What changed & why",
-      icon: "insight",
-    },
-  ];
-}
-
-function Stats({ eras, isDark }) {
-  const items = buildStats(eras);
-
+function Icon({ name, className }) {
   return (
-    <div className="grid grid-cols-2 gap-px overflow-hidden rounded-md border border-[var(--color-border)] bg-[var(--color-border)] shadow-[0_8px_24px_var(--color-shadow)] md:grid-cols-4 md:gap-0">
-      {items.map((item) => (
-        <div
-          key={item.title}
-          className="flex flex-col items-center justify-center bg-[var(--color-surface-raised)] px-1.5 py-2.5 text-center md:px-4 md:py-3.5"
-        >
-          <span className="flex h-10 w-10 items-center justify-center md:h-14 md:w-14">
-            <HomeIcon name={item.icon} isDark={isDark} className="h-8 w-8 object-contain md:h-11 md:w-11" />
-          </span>
-          <strong className="mt-1.5 text-[12px] leading-tight text-[var(--color-text)] md:text-[15px]">
-            {item.title}
-          </strong>
-          <span className="mt-0.5 text-[11px] leading-tight text-[var(--color-text-muted)] md:text-[13px]">
-            {item.text}
-          </span>
-        </div>
-      ))}
-    </div>
+    <svg aria-hidden="true" viewBox="0 0 24 24" className={className}>
+      {ICONS[name]}
+    </svg>
   );
 }
 
-function EngineList({ engines }) {
-  const items = engineList(engines);
-
+function Title({ lines, className }) {
   return (
-    <div className="flex flex-col items-center justify-center gap-1.5 px-2">
-      {items.map((engine) => (
-        <strong
-          key={engine}
-          className={`text-center ${sectionTableText} text-[var(--color-text)]`}
-          dangerouslySetInnerHTML={{ __html: engine }}
-        />
+    <h2 className={className}>
+      {lines.map((line, index) => (
+        <span key={line}>
+          {index ? <br /> : null}
+          <span dangerouslySetInnerHTML={{ __html: line }} />
+        </span>
       ))}
-    </div>
+    </h2>
   );
 }
 
-function DesktopTable({ eras, columns, isDark }) {
+function DesktopTable({ data, isDark }) {
+  const columns = data.columns || [];
   return (
-    <div className="hidden overflow-hidden rounded-md border border-[var(--color-border)] bg-[var(--color-surface-raised)] shadow-[0_8px_24px_var(--color-shadow)] md:block">
-      <div className={`grid grid-cols-[19%_10%_26%_22%_23%] text-[14px] font-bold md:text-[15px] ${tableHeaderClass(isDark)}`}>
-        {(columns || []).map((column) => (
-          <div key={column} className="border-r border-white/20 px-4 py-2.5 last:border-r-0 md:px-5 md:py-3">
+    <div className={s.table} role="table">
+      <div className={`${s.tr} ${s.thead}`} role="row">
+        {columns.map((column) => (
+          <span key={column} role="columnheader">
             {column}
-          </div>
+          </span>
         ))}
       </div>
-      {eras.map((era) => {
-        const title = eraParts(era.era);
-
-        return (
-          <div
-            key={era.era}
-            className="grid grid-cols-[19%_10%_26%_22%_23%] border-t border-[var(--color-border)] text-[var(--color-text)]"
-          >
-            <div className="border-r border-[var(--color-border)] px-4 py-3 md:px-5 md:py-4">
-              <h3 className="text-[17px] font-bold leading-tight text-[var(--color-text)] md:text-[19px]">
-                <span dangerouslySetInnerHTML={{ __html: title.lead }} />
-                {title.detail ? (
-                  <>
-                    <br />
-                    <span
-                      className="text-[var(--color-chrome-bright)]"
-                      dangerouslySetInnerHTML={{ __html: title.detail }}
-                    />
-                  </>
-                ) : null}
-              </h3>
-              <div className="relative mt-2 h-[72px] w-full overflow-hidden rounded-md md:h-[88px]">
-                {era.image ? <Image src={era.image} alt="" fill className="object-contain object-center" sizes="220px" /> : null}
-              </div>
-            </div>
-            <div
-              className={`flex items-center justify-center border-r border-[var(--color-border)] px-3 py-3.5 font-heading text-[1.05rem] font-semibold md:px-4 md:py-4 ${sectionTableText}`}
-            >
-              {cleanText(era.years)}
-            </div>
-            <div className="flex items-center justify-center border-r border-[var(--color-border)] px-3 py-3.5 md:px-4 md:py-4">
-              <EngineList engines={era.keyEngines} />
-            </div>
-            <p
-              className={`border-r border-[var(--color-border)] px-4 py-4 leading-[1.45] text-[var(--color-text)] md:px-6 md:py-5 ${sectionTableText}`}
-              dangerouslySetInnerHTML={{ __html: cleanText(era.whyBmwChanged) }}
-            />
-            <div className="flex gap-3 px-4 py-4 md:px-6 md:py-5">
-              <span
-                className={`mt-1 flex h-9 w-9 shrink-0 items-center justify-center rounded-full ${
-                  isDark ? "bg-white/10" : "bg-[#eef2f7]"
-                }`}
-              >
-                <HomeIcon name="note" isDark={isDark} className="h-7 w-7 object-contain" />
+      {(data.eras || []).map((era) => (
+        <div key={era.key} className={s.tr} role="row">
+          <span className={s.cEra} role="rowheader">
+            <span className={s.eraName} dangerouslySetInnerHTML={{ __html: era.era }} />
+            <span className={s.eraCar}>
+              <Image src={isDark ? era.images.dark : era.images.light} alt="" fill className={s.img} sizes="(min-width: 1024px) 16vw, 1px" />
+            </span>
+          </span>
+          <span className={s.cYears} role="cell">
+            {era.years}
+          </span>
+          <span className={s.cEngines} role="cell" data-count={era.engines.length}>
+            {era.engines.map((engine) => (
+              <span key={engine.label} className={s.engine}>
+                <span className={s.engineImg}>
+                  <Image src={isDark ? engine.images.dark : engine.images.light} alt="" fill className={s.img} sizes="(min-width: 1024px) 7vw, 1px" />
+                </span>
+                <span className={s.engineLabel}>{engine.label}</span>
               </span>
-              <p
-                className={`${sectionTableText} leading-[1.45] text-[var(--color-text)]`}
-                dangerouslySetInnerHTML={{ __html: cleanText(era.worthKnowing) }}
-              />
-            </div>
-          </div>
-        );
-      })}
+            ))}
+          </span>
+          <span className={s.cWhy} role="cell" dangerouslySetInnerHTML={{ __html: spaced(era.whyBmwChanged) }} />
+          <span className={s.cWorth} role="cell">
+            <Icon name="info" className={s.infoIcon} />
+            <span dangerouslySetInnerHTML={{ __html: spaced(era.worthKnowing) }} />
+          </span>
+        </div>
+      ))}
     </div>
   );
 }
 
-function MobileDetailRow({ label, icon, children, isDark, bordered = true }) {
+function PhoneAccordion({ data, isDark }) {
+  const [open, setOpen] = useState(0);
+  const [lKey, lWhy, lWorth] = data.mobileLabels || ["Key Engines", "Why BMW Changed", "Worth Knowing"];
   return (
-    <div
-      className={`overflow-hidden p-3 ${bordered ? "border-b border-[var(--color-border)] last:border-b-0" : ""}`}
-    >
-      <HomeIcon
-        name={icon}
-        isDark={isDark}
-        className="float-left mr-2.5 mb-1 h-7 w-7 object-contain"
-      />
-      <p className={`leading-[1.45] ${sectionTableText} text-[var(--color-text)]`}>
-        <strong className="font-bold">{label}</strong>{" "}
-        {children}
-      </p>
-    </div>
-  );
-}
-
-function MobileAccordion({ eras, isDark }) {
-  const [openIndex, setOpenIndex] = useState(0);
-
-  return (
-    <div className="space-y-3 md:hidden">
-      {eras.map((era, index) => {
-        const open = index === openIndex;
-        const title = eraParts(era.era);
-
+    <div className={s.acc}>
+      {(data.eras || []).map((era, index) => {
+        const isOpen = open === index;
         return (
-          <article
-            key={era.era}
-            className={`rounded-md border bg-[var(--color-surface-raised)] ${
-              open ? "border-[var(--color-chrome)]" : "border-[var(--color-border)]"
-            }`}
-          >
-            <button
-              type="button"
-              onClick={() => setOpenIndex(open ? -1 : index)}
-              className="flex w-full items-center gap-4 p-4 text-left"
-            >
-              <span className="relative h-[64px] w-[96px] shrink-0 overflow-hidden rounded-md">
-                {era.image ? <Image src={era.image} alt="" fill className="object-contain object-center" sizes="96px" /> : null}
+          <div key={era.key} className={`${s.accItem} ${isOpen ? s.accOpen : ""}`}>
+            <button type="button" className={s.accHead} aria-expanded={isOpen} onClick={() => setOpen(isOpen ? -1 : index)}>
+              <span className={s.accCar}>
+                <Image src={(isDark ? era.images.dark : era.images.phone) || era.images.light} alt="" fill className={s.img} sizes="(max-width: 1023px) 26vw, 1px" />
               </span>
-              <span className="min-w-0 flex-1">
-                <strong className="block text-[18px] leading-tight text-[var(--color-text)]">
-                  {title.lead}
-                  {title.detail ? ` - ${title.detail}` : ""}
-                </strong>
-                <span
-                  className={`mt-1 block ${sectionTableText} text-[var(--color-text-muted)]`}
-                  dangerouslySetInnerHTML={{ __html: cleanText(era.years) }}
-                />
+              <span className={s.accText}>
+                <strong>{era.eraMobile || era.era}</strong>
+                <span>{era.years}</span>
               </span>
-              <span
-                className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-full ${
-                  open
-                    ? isDark
-                      ? "bg-[var(--color-chrome)] text-[var(--color-page)]"
-                      : "bg-[var(--color-primary)] text-white"
-                    : isDark
-                      ? "bg-white/10"
-                      : "bg-[#eef2f7]"
-                }`}
-              >
-                <HomeIcon
-                  name={open ? "note" : "insight"}
-                  isDark={open ? !isDark : isDark}
-                  className="h-6 w-6 object-contain"
-                />
+              <span className={s.accToggle}>
+                <Icon name="chevron" className={s.accChevron} />
               </span>
             </button>
-
-            {open ? (
-              <div className="mx-3 mb-3 overflow-hidden rounded-md border border-[var(--color-border)] bg-[var(--color-surface)] md:mx-4 md:mb-4">
-                <MobileDetailRow label="Key Engines" icon="engine" isDark={isDark}>
-                  <span dangerouslySetInnerHTML={{ __html: cleanText(era.keyEngines) }} />
-                </MobileDetailRow>
-                <MobileDetailRow label="Why It Changed" icon="timeline" isDark={isDark}>
-                  <span dangerouslySetInnerHTML={{ __html: cleanText(era.whyBmwChanged) }} />
-                </MobileDetailRow>
-                <MobileDetailRow label="Worth Knowing" icon="note" isDark={isDark} bordered={false}>
-                  <span dangerouslySetInnerHTML={{ __html: cleanText(era.worthKnowing) }} />
-                </MobileDetailRow>
+            {isOpen ? (
+              <div className={s.accBody}>
+                {[
+                  ["engine", lKey, era.keyEngines],
+                  ["cycle", lWhy, era.whyBmwChangedMobile || era.whyBmwChanged],
+                  ["info", lWorth, era.worthKnowingMobile || era.worthKnowing],
+                ].map(([icon, label, value]) => (
+                  <div key={label} className={s.accRow}>
+                    <Icon name={icon} className={s.accIcon} />
+                    <strong className={s.accLabel}>{label}</strong>
+                    <p className={s.accValue} dangerouslySetInnerHTML={{ __html: spaced(value) }} />
+                  </div>
+                ))}
               </div>
             ) : null}
-          </article>
+          </div>
         );
       })}
     </div>
   );
 }
 
+// Model JSONs migrated to the reference design carry `stats`; the rest keep the previous layout.
 export default function EngineEvolution({ data }) {
-  const { theme } = useTheme();
   if (!data) return null;
+  return data.stats ? <EngineEvolutionReference data={data} /> : <EngineEvolutionLegacy data={data} />;
+}
 
+function EngineEvolutionReference({ data }) {
+  const { theme } = useTheme();
   const isDark = theme === "dark";
-  const title = splitTitle(data.h2);
-  const eras = (data.eras || []).map((era) => ({ ...era, image: era.image || carImageFor(era.era, era.years, data.h2) }));
-  const sectionBg = isDark ? "bg-[var(--color-page)]" : "bg-[var(--color-page)]";
 
   return (
-    <section className={`overflow-x-hidden ${sectionBg} text-[var(--color-text)]`}>
-      <div className={`relative overflow-hidden ${sectionBg}`}>
-        <div className="absolute inset-y-0 right-0 w-[62%] md:w-[48%]">
-          <Image
-            src="/home-image/sec2-bg.webp"
-            alt=""
-            fill
-            className="object-cover object-right"
-            sizes="(max-width: 768px) 62vw, 48vw"
-          />
-          <div
-            className={
-              isDark
-                ? "absolute inset-0 bg-[linear-gradient(90deg,var(--color-page)_0%,rgba(2,7,11,0.82)_34%,rgba(2,7,11,0.18)_100%)]"
-                : "absolute inset-0 bg-[linear-gradient(90deg,var(--color-page)_0%,rgba(255,255,255,0.88)_34%,rgba(255,255,255,0.18)_100%)]"
-            }
-          />
-        </div>
-
-        <div className="relative mx-auto w-full max-w-8xl px-4 pb-3 pt-5 md:px-6 md:pb-3.5 md:pt-7 lg:px-8">
-          <div className="grid gap-6 md:grid-cols-[minmax(0,1fr)_600px] md:items-start">
-            <div>
-              <h2 className="max-w-[760px] text-[29px] font-bold leading-[1.08] tracking-normal md:text-[45px]">
-                <span dangerouslySetInnerHTML={{ __html: title.main }} />
-                {title.accent ? (
-                  <>
-                    <br />
-                    <span
-                      className="text-[var(--color-chrome-bright)]"
-                      dangerouslySetInnerHTML={{ __html: title.accent }}
-                    />
-                  </>
-                ) : null}
-              </h2>
-              <div className="mt-3">
-                <MStripe />
-              </div>
-              <p className={`mt-3 max-w-[660px] ${sectionDescription} text-[var(--color-text-muted)]`}>
-                {data.subHeadline
-                  ? cleanText(data.subHeadline)
-                  : "Follow each era of this model's engines — what launched, what was revised, and what buyers need to know before committing."}
-              </p>
+    <section id="engine-evolution" className={`${inter.className} ${s.section} ${isDark ? s.dark : s.light}`}>
+      <div className={s.frame}>
+        <div className={s.panel}>
+          <div className={s.top}>
+            <div className={s.head}>
+              <Title lines={data.titleLines || [data.h2]} className={`${s.title} ${s.deskOnly}`} />
+              <Title lines={data.titleLinesMobile || data.titleLines || [data.h2]} className={`${s.title} ${s.phoneOnly}`} />
+              <p className={`${s.copy} ${s.deskOnly}`} dangerouslySetInnerHTML={{ __html: spaced(data.subHeadline) }} />
+              <p className={`${s.copy} ${s.phoneOnly}`} dangerouslySetInnerHTML={{ __html: spaced(data.subHeadlineMobile || data.subHeadline) }} />
             </div>
-            <Stats eras={eras} isDark={isDark} />
+            <ul className={s.stats}>
+              {(data.stats || []).map((stat) => (
+                <li key={stat.title} className={s.stat}>
+                  <Icon name={stat.icon} className={s.statIcon} />
+                  <strong>{stat.title}</strong>
+                  <span>{stat.text}</span>
+                </li>
+              ))}
+            </ul>
           </div>
-        </div>
-      </div>
 
-      <div className="mx-auto w-full min-w-0 max-w-8xl px-4 pb-5 pt-2 md:px-6 md:pb-6 md:pt-2.5 lg:px-8">
-        <div className="mt-2">
-          <DesktopTable eras={eras} columns={data.columns} isDark={isDark} />
-          <MobileAccordion eras={eras} isDark={isDark} />
-        </div>
+          <div className={s.deskOnly}>
+            <DesktopTable data={data} isDark={isDark} />
+          </div>
+          <div className={s.phoneOnly}>
+            <PhoneAccordion data={data} isDark={isDark} />
+          </div>
 
-        <div className="mt-3 flex max-w-[780px] items-center gap-3 rounded-md border border-[var(--color-border)] bg-[var(--color-surface-raised)] px-4 py-2.5 text-[14px] text-[var(--color-text-muted)] md:px-5 md:py-3 md:text-[15px]">
-          <span
-            className={`flex h-9 w-9 shrink-0 items-center justify-center rounded-full ${
-              isDark ? "bg-white/10" : "bg-[#eef2f7]"
-            }`}
-          >
-            <HomeIcon name="database" isDark={isDark} className="h-6 w-6 object-contain" />
-          </span>
-          <p>
-            Engine reliability insights and failure patterns are based on verified UK enquiry data.{" "}
-            <span className="text-[var(--color-chrome-bright)]">[BMW-VERIFIED]</span>
-          </p>
+          {data.footnote ? (
+            <p className={s.foot}>
+              <Icon name="doc" className={s.footIcon} />
+              <span className={s.footText}>
+                <span className={s.deskInline}>{data.footnote}</span>
+                <span className={s.phoneInline} dangerouslySetInnerHTML={{ __html: spaced(data.footnoteMobile || data.footnote) }} />{" "}
+                <span className={s.footTag}>{data.footnoteTag}</span>
+              </span>
+            </p>
+          ) : null}
         </div>
       </div>
     </section>

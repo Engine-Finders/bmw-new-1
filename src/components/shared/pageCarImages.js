@@ -42,7 +42,10 @@ export function withModelPageImages(data) {
       ...out.hero,
       model,
       heroCar: hero?.src ? { src: hero.src, width: hero.width, height: hero.height } : null,
-      heroScene: hero?.scene || null,
+      // The bright line-up backdrop made for the model hero when there is one, else the scene;
+      // the light theme gets its hazier version (pale sky and skyline, cars at full colour).
+      heroScene: hero?.backdrop || hero?.scene || null,
+      heroSceneLight: hero?.backdropLight || null,
     };
   }
 
