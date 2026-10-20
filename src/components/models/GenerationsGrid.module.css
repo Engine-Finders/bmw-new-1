@@ -1,0 +1,1351 @@
+/*
+ * Model page "Generations — Find Your Vehicle" (section 4), built to the reference designs
+ * (light + dark desktop at 1536px, light phone at 863px).
+ * Sizes are reference pixels times --u, so the section is the reference scaled to its own width:
+ * below 1024px the 863px-wide phone reference (accordion), from 1024px the 1536px-wide desktop
+ * reference (seven cards). On small phones text has a floor so it stays readable.
+ */
+
+.section {
+  /* keeps the panel's shadow from reaching into the sections above and below */
+  overflow-x: visible;
+  overflow-y: clip;
+  background: var(--g-page);
+  color: var(--g-text);
+}
+
+.frame {
+  container-type: inline-size;
+  max-width: 1628px;
+  margin: 0 auto;
+}
+
+.panel {
+  --u: calc(100cqw / 863);
+  position: relative;
+  margin: 0 calc(8 * var(--u)) calc(10 * var(--u)) calc(10 * var(--u));
+  padding: 0 calc(24 * var(--u)) calc(12 * var(--u)) calc(23 * var(--u));
+  border: 1px solid var(--g-panel-border);
+  border-radius: calc(18 * var(--u));
+  background: var(--g-panel);
+  box-shadow: var(--g-panel-shadow);
+}
+
+/* ---------- theme tokens ---------- */
+
+.light {
+  --g-page: #fefefe;
+  --g-panel: #fefefe;
+  --g-panel-border: #eef0f4;
+  --g-panel-shadow: 0 2px 14px rgba(20, 40, 80, 0.05);
+  --g-text: #0a0a30;
+  --g-accent: #1651e6;
+  --g-copy: #52536a;
+  --g-card: #fefefe;
+  --g-card-border: #e9edf3;
+  --g-card-shadow: 0 4px 14px rgba(20, 40, 90, 0.04);
+  --g-open-border: #9bb8f4;
+  --g-num: #1557e6;
+  --g-label: #2d2c47;
+  --g-meta: #30324b;
+  --g-badge: #1f172b;
+  --g-tag: #1f5ae0;
+  --g-star: #174fea;
+  --g-star-off: #d9dce4;
+  --g-btn-border: #c3d1f0;
+  --g-btn-bg: #fefefe;
+  --g-btn-text: #2042aa;
+  --g-chevron: #2046b8;
+  --g-grid-border: #e3e7ee;
+  --g-grid-head: #fbfcfe;
+  --g-th: #14142e;
+  --g-cell: #30334a;
+  --g-icon: #3f66cf;
+  --g-risk: #d23f3f;
+  --g-safe: #3a8a55;
+  --g-pos-bg: #eef8ef;
+  --g-pos-head: #e6f7e8;
+  --g-pos-border: #cfe6d4;
+  --g-pos-text: #2f7a46;
+  --g-pos-icon: #2e9a4c;
+  --g-link: #2e2f45;
+  --g-link-a: #1d4fd0;
+  --g-link-icon-bg: #eef3fd;
+}
+
+.dark {
+  --g-page: #00091a;
+  --g-panel: #000e1e;
+  --g-panel-border: rgba(80, 110, 160, 0.22);
+  --g-panel-shadow: none;
+  --g-text: #f4f6fb;
+  --g-accent: #2069e4;
+  --g-copy: #dbe1ee;
+  --g-card: #020f1f;
+  --g-card-border: rgba(90, 120, 170, 0.28);
+  --g-card-shadow: none;
+  --g-open-border: #2a62d6;
+  --g-num: #1557e6;
+  --g-label: #e0e5f3;
+  --g-meta: #d6dde8;
+  --g-badge: #edf3ff;
+  --g-tag: #2e6fe0;
+  --g-star: #1c5fe3;
+  --g-star-off: #5d6878;
+  --g-btn-border: rgba(130, 150, 190, 0.42);
+  --g-btn-bg: #040f1e;
+  --g-btn-text: #f0f7ff;
+  --g-chevron: #e8eef9;
+  --g-open-btn-border: #2e6fd8;
+  --g-open-btn-text: #3a78d6;
+  --g-grid-border: rgba(110, 140, 190, 0.22);
+  --g-grid-head: #020c1c;
+  --g-th: #f1f7ff;
+  --g-cell: #e4e9f8;
+  --g-icon: #3f7ae6;
+  --g-risk: #e2414a;
+  --g-safe: #3c9f69;
+  --g-pos-bg: #031c1e;
+  --g-pos-head: #031f20;
+  --g-pos-border: rgba(60, 160, 100, 0.35);
+  --g-pos-text: #53ad79;
+  --g-pos-icon: #3cbf68;
+  --g-link: #e0e9f6;
+  --g-link-a: #266cc3;
+  --g-link-icon-bg: rgba(40, 90, 180, 0.18);
+}
+
+/* ---------- heading ---------- */
+
+.head {
+  padding-top: calc(56 * var(--u));
+}
+
+.title {
+  margin: 0 0 0 calc(12 * var(--u));
+  font-size: calc(36 * var(--u));
+  font-weight: 700;
+  line-height: calc(46 * var(--u));
+  color: var(--g-text);
+}
+
+.accent {
+  font-size: calc(35.1 * var(--u));
+  color: var(--g-accent);
+}
+
+.copy {
+  max-width: calc(410 * var(--u));
+  margin: calc(9 * var(--u)) 0 0 calc(10 * var(--u));
+  font-size: calc(15.47 * var(--u));
+  line-height: calc(26.5 * var(--u));
+  color: var(--g-copy);
+}
+
+.deskOnly {
+  display: none;
+}
+
+/* ---------- shared bits ---------- */
+
+.num {
+  display: inline-flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  border-radius: calc(4 * var(--u));
+  background: var(--g-num);
+  color: #ffffff;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.cardLabel {
+  display: block;
+  margin: 0;
+  color: var(--g-label);
+}
+
+.code {
+  display: block;
+  margin: 0;
+  font-weight: 700;
+  color: var(--g-text);
+}
+
+.years,
+.engines {
+  display: block;
+  margin: 0;
+  color: var(--g-meta);
+}
+
+.engines a {
+  color: inherit;
+  font-weight: inherit;
+  text-decoration: none;
+}
+
+.badgeLine {
+  margin: 0;
+  font-weight: 600;
+  color: var(--g-badge);
+}
+
+.badgeTag {
+  margin: 0;
+  font-weight: 600;
+  color: var(--g-tag);
+}
+
+.carImg {
+  object-fit: contain;
+  object-position: center bottom;
+}
+
+.stars {
+  display: inline-flex;
+}
+
+.starBase {
+  fill: var(--g-star);
+}
+
+.starOff .starBase {
+  fill: var(--g-star-off);
+}
+
+.starHalf .starBase {
+  fill: var(--g-star-off);
+}
+
+.starFill {
+  fill: var(--g-star);
+}
+
+.verdictLabel {
+  margin: 0;
+  font-weight: 700;
+  color: var(--g-text);
+}
+
+.verdictText {
+  margin: 0;
+  color: var(--g-meta);
+}
+
+/* ---------- phone accordion ---------- */
+
+.pCards {
+  display: flex;
+  flex-direction: column;
+  gap: calc(6.5 * var(--u));
+  margin-top: calc(17 * var(--u));
+}
+
+.pCards.phoneOnly {
+  display: flex;
+}
+
+.pCard {
+  border: 1px solid var(--g-card-border);
+  border-radius: calc(14 * var(--u));
+  background: var(--g-card);
+  box-shadow: var(--g-card-shadow);
+}
+
+.pOpen {
+  margin-bottom: calc(3 * var(--u));
+}
+
+.pHead {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  min-height: calc(91 * var(--u));
+  padding: calc(15.75 * var(--u)) calc(64 * var(--u)) calc(9 * var(--u)) calc(19 * var(--u));
+  border: 0;
+  background: none;
+  color: inherit;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.pHead .num {
+  width: calc(27 * var(--u));
+  height: calc(28 * var(--u));
+  font-size: calc(15 * var(--u));
+}
+
+.pText {
+  display: block;
+  min-width: 0;
+  padding-left: calc(22 * var(--u));
+}
+
+.pHead .cardLabel {
+  font-size: calc(13.1 * var(--u));
+  font-weight: 600;
+  line-height: calc(18 * var(--u));
+}
+
+.pHead .code {
+  margin-top: calc(2.2 * var(--u));
+  font-size: calc(21.8 * var(--u));
+  line-height: calc(26 * var(--u));
+}
+
+/* rows with the "Most Enquired" badge sit a little tighter, as in the reference */
+.pHead:has(.badgeBlock) {
+  padding-top: calc(13.75 * var(--u));
+  padding-bottom: calc(1.5 * var(--u));
+}
+
+.pHead .badgeBlock {
+  margin-top: calc(2 * var(--u));
+}
+
+.pHead .badgeLine,
+.pHead .badgeTag {
+  font-size: calc(12.9 * var(--u));
+  line-height: calc(22 * var(--u));
+}
+
+.pMeta {
+  display: block;
+  margin-top: calc(4.2 * var(--u));
+  font-size: calc(11.2 * var(--u));
+  line-height: calc(18 * var(--u));
+  color: var(--g-meta);
+}
+
+.pEngines {
+  margin-left: calc(8 * var(--u));
+}
+
+.pEngines a {
+  color: inherit;
+  font-weight: inherit;
+  text-decoration: none;
+}
+
+.pThumb {
+  position: absolute;
+  top: calc(13 * var(--u));
+  left: calc(547 * var(--u));
+  width: calc(137 * var(--u));
+  height: calc(72 * var(--u));
+}
+
+.pChevron {
+  position: absolute;
+  top: calc(17 * var(--u));
+  right: calc(28 * var(--u));
+  width: calc(22 * var(--u));
+  height: calc(22 * var(--u));
+  color: var(--g-chevron);
+}
+
+/* open card: bigger header text, then car, button, stars, verdict */
+.pOpen .pHead {
+  min-height: 0;
+  padding-top: calc(20 * var(--u));
+  padding-left: calc(22 * var(--u));
+}
+
+.pOpen .pHead .num {
+  width: calc(28 * var(--u));
+  height: calc(28 * var(--u));
+}
+
+.pOpen .pText {
+  padding-left: calc(24 * var(--u));
+}
+
+.pOpen .pHead .cardLabel {
+  font-size: calc(14.6 * var(--u));
+  line-height: calc(20 * var(--u));
+}
+
+.pOpen .pHead .code {
+  margin-top: calc(3 * var(--u));
+  font-size: calc(27.6 * var(--u));
+  line-height: calc(34 * var(--u));
+}
+
+.pOpen .pHead .years {
+  margin-top: calc(7 * var(--u));
+  font-size: calc(16 * var(--u));
+  line-height: calc(24 * var(--u));
+}
+
+.pOpen .pHead .engines {
+  font-size: calc(15.6 * var(--u));
+  line-height: calc(24 * var(--u));
+}
+
+.pOpen .pChevron {
+  top: calc(20 * var(--u));
+}
+
+.pBody {
+  position: relative;
+  padding: 0 calc(21 * var(--u)) calc(16 * var(--u)) calc(22 * var(--u));
+}
+
+.pCar {
+  position: relative;
+  width: calc(413 * var(--u));
+  height: calc(165 * var(--u));
+  margin: calc(-28 * var(--u)) 0 0 calc(145 * var(--u));
+}
+
+.pCta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: calc(49 * var(--u));
+  margin-top: calc(12 * var(--u));
+  border: 1.5px solid var(--g-open-btn-border, var(--g-num));
+  border-radius: calc(7 * var(--u));
+  color: var(--g-open-btn-text, var(--g-accent));
+  font-size: calc(17.4 * var(--u));
+  font-weight: 600;
+}
+
+.pCtaIcon {
+  position: absolute;
+  top: 50%;
+  right: calc(32 * var(--u));
+  width: calc(22 * var(--u));
+  height: calc(22 * var(--u));
+  transform: translateY(-50%);
+}
+
+.pStars {
+  gap: calc(4 * var(--u));
+  margin-top: calc(13 * var(--u));
+}
+
+.pStars svg {
+  width: calc(26 * var(--u));
+  height: calc(26 * var(--u));
+}
+
+.pVerdict {
+  max-width: calc(492 * var(--u));
+  margin-top: calc(9 * var(--u));
+}
+
+.pVerdict .verdictLabel {
+  font-size: calc(16.6 * var(--u));
+  line-height: calc(24 * var(--u));
+}
+
+.pVerdict .verdictText {
+  margin-top: calc(6 * var(--u));
+  font-size: calc(16.47 * var(--u));
+  line-height: calc(26.5 * var(--u));
+}
+
+/* ---------- comparison ---------- */
+
+.compare {
+  margin-top: calc(7 * var(--u));
+  padding: calc(9 * var(--u)) calc(10 * var(--u)) calc(14 * var(--u)) calc(11 * var(--u));
+  border: 1px solid var(--g-card-border);
+  border-radius: calc(14 * var(--u));
+  background: var(--g-card);
+}
+
+.compareTitle {
+  display: flex;
+  align-items: center;
+  gap: calc(14 * var(--u));
+  margin: 0 0 0 calc(6 * var(--u));
+  font-size: calc(17.9 * var(--u));
+  font-weight: 600;
+  line-height: calc(26 * var(--u));
+  color: var(--g-text);
+}
+
+.compareIcon {
+  width: calc(28 * var(--u));
+  height: calc(26 * var(--u));
+  padding: calc(3 * var(--u)) calc(4 * var(--u));
+  border-radius: calc(6 * var(--u));
+  background: var(--g-link-icon-bg);
+  color: var(--g-icon);
+}
+
+.grid {
+  position: relative;
+  display: grid;
+  margin-top: calc(9 * var(--u));
+  overflow: hidden;
+  border: 1px solid var(--g-grid-border);
+  border-radius: calc(8 * var(--u));
+}
+
+.gridPhone {
+  grid-template-columns: 131fr 157fr 168fr 167fr 154fr;
+  font-size: calc(12 * var(--u));
+}
+
+.gHead,
+.gRow {
+  display: contents;
+}
+
+.gCorner,
+.gTh,
+.posHead,
+.gLabel,
+.gCell {
+  display: flex;
+  align-items: center;
+  border-right: 1px solid var(--g-grid-border);
+  border-bottom: 1px solid var(--g-grid-border);
+}
+
+.gCorner,
+.gTh {
+  background: var(--g-grid-head);
+}
+
+.gridPhone .gCorner,
+.gridPhone .gTh,
+.gridPhone .posHead {
+  height: calc(47 * var(--u));
+}
+
+.gTh {
+  gap: calc(19 * var(--u));
+  color: var(--g-th);
+}
+
+.gridPhone .gTh {
+  justify-content: center;
+  text-align: center;
+}
+
+.thText {
+  display: flex;
+  flex-direction: column;
+}
+
+.thText strong {
+  font-weight: 600;
+}
+
+.gridPhone .thText strong {
+  font-size: calc(13.8 * var(--u));
+  line-height: calc(19 * var(--u));
+}
+
+.gridPhone .thText span {
+  font-size: calc(12.2 * var(--u));
+  line-height: calc(19 * var(--u));
+  color: var(--g-cell);
+}
+
+.thIcon {
+  flex-shrink: 0;
+  width: calc(22 * var(--u));
+  height: calc(22 * var(--u));
+  color: var(--g-icon);
+}
+
+.posHead {
+  gap: calc(12 * var(--u));
+  border-right: 0;
+  border-left: 1px solid var(--g-pos-border);
+  border-bottom-color: var(--g-pos-border);
+  background: var(--g-pos-head);
+  color: var(--g-pos-text);
+  font-weight: 600;
+}
+
+.gridPhone .posHead {
+  justify-content: center;
+  padding: 0 calc(8 * var(--u));
+  font-size: calc(13 * var(--u));
+}
+
+.posIcon {
+  flex-shrink: 0;
+  width: calc(20 * var(--u));
+  height: calc(20 * var(--u));
+  color: var(--g-pos-icon);
+}
+
+.gLabel {
+  gap: calc(14 * var(--u));
+  font-weight: 600;
+  color: var(--g-th);
+}
+
+.gridPhone .gLabel {
+  gap: calc(10 * var(--u));
+  padding-left: calc(4 * var(--u));
+  font-size: calc(11.6 * var(--u));
+}
+
+.gridPhone .rowIcon {
+  width: calc(24 * var(--u));
+  height: calc(24 * var(--u));
+}
+
+.rowIcon {
+  flex-shrink: 0;
+  width: calc(22 * var(--u));
+  height: calc(22 * var(--u));
+  color: var(--g-icon);
+}
+
+.gCell {
+  color: var(--g-cell);
+}
+
+.gridPhone .gCell {
+  padding-left: calc(19 * var(--u));
+  font-size: calc(12 * var(--u));
+  line-height: calc(19 * var(--u));
+}
+
+.gridPhone .gRow:nth-child(2) > * {
+  height: calc(59 * var(--u));
+}
+
+.gridPhone .gRow:nth-child(3) > * {
+  height: calc(49 * var(--u));
+}
+
+.gRow:last-child > * {
+  border-bottom: 0;
+}
+
+.tone_risk {
+  color: var(--g-risk);
+}
+
+.tone_safe {
+  color: var(--g-safe);
+}
+
+/* position text: the merged last column, spanning the body rows */
+.posText {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  border-left: 1px solid var(--g-pos-border);
+  border-bottom: 0 !important;
+  height: auto !important;
+  align-self: stretch;
+  background: var(--g-pos-bg);
+  color: var(--g-pos-text);
+  font-weight: 600;
+}
+
+.gridPhone .posText {
+  padding: calc(4 * var(--u)) calc(8 * var(--u)) 0 calc(19 * var(--u));
+  font-size: calc(12.6 * var(--u));
+  line-height: calc(19 * var(--u));
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  margin: calc(10 * var(--u)) 0 0 calc(5 * var(--u));
+  color: var(--g-link);
+  font-size: calc(13.5 * var(--u));
+}
+
+.linkIcon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: calc(24 * var(--u));
+  height: calc(24 * var(--u));
+  margin-right: calc(16 * var(--u));
+  border-radius: 50%;
+  background: var(--g-link-icon-bg);
+  color: var(--g-icon);
+}
+
+.linkSvg {
+  width: 72%;
+  height: 72%;
+}
+
+.linkA {
+  display: inline-flex;
+  align-items: center;
+  gap: calc(10 * var(--u));
+  margin-left: calc(20 * var(--u));
+  color: var(--g-link-a);
+  font-size: calc(15.9 * var(--u));
+  font-weight: 700;
+}
+
+.linkArrow {
+  width: calc(18 * var(--u));
+  height: calc(18 * var(--u));
+}
+
+/* ======================= Small phones ======================= */
+/* At exact reference scale text would be ~6px on a 390px phone, so it gets minimum sizes. */
+@container (max-width: 650px) {
+  .panel {
+    margin: 0 0 10px;
+    padding: 0 12px 12px;
+    border-radius: 0;
+    border-width: 1px 0;
+  }
+
+  .head {
+    padding-top: 24px;
+  }
+
+  .title,
+  .accent {
+    margin-left: 0;
+    font-size: 23px;
+    line-height: 1.25;
+  }
+
+  .copy {
+    max-width: none;
+    margin-left: 0;
+    font-size: 14px;
+    line-height: 1.55;
+  }
+
+  .pCards {
+    gap: 8px;
+    margin-top: 16px;
+  }
+
+  .pCard {
+    border-radius: 12px;
+  }
+
+  .pHead,
+  .pOpen .pHead {
+    min-height: 0;
+    padding: 12px 40px 12px 12px;
+  }
+
+  .pHead .num,
+  .pOpen .pHead .num {
+    width: 22px;
+    height: 22px;
+    font-size: 12px;
+  }
+
+  .pText,
+  .pOpen .pText {
+    max-width: calc(100% - 116px);
+    padding-left: 10px;
+  }
+
+  .pOpen .pText {
+    max-width: none;
+  }
+
+  .pHead .cardLabel,
+  .pOpen .pHead .cardLabel {
+    font-size: 12px;
+    line-height: 1.4;
+  }
+
+  .pHead .code {
+    font-size: 18px;
+    line-height: 1.3;
+  }
+
+  .pOpen .pHead .code {
+    font-size: 22px;
+  }
+
+  .pHead .badgeLine,
+  .pHead .badgeTag {
+    font-size: 11.5px;
+    line-height: 1.5;
+  }
+
+  .pMeta {
+    font-size: 11.5px;
+    line-height: 1.5;
+  }
+
+  .pOpen .pHead .years,
+  .pOpen .pHead .engines {
+    font-size: 13px;
+    line-height: 1.5;
+  }
+
+  .pEngines {
+    margin-left: 4px;
+  }
+
+  .pThumb {
+    top: 12px;
+    right: 34px;
+    left: auto;
+    width: 96px;
+    height: 52px;
+  }
+
+  .pChevron,
+  .pOpen .pChevron {
+    top: 14px;
+    right: 10px;
+    width: 18px;
+    height: 18px;
+  }
+
+  .pBody {
+    padding: 0 12px 14px;
+  }
+
+  .pCar {
+    width: 70%;
+    height: auto;
+    aspect-ratio: 413 / 165;
+    margin: -6px 0 0 auto;
+  }
+
+  .pCta {
+    height: 42px;
+    margin-top: 10px;
+    border-radius: 7px;
+    font-size: 15px;
+  }
+
+  .pCtaIcon {
+    right: 16px;
+    width: 18px;
+    height: 18px;
+  }
+
+  .pStars {
+    gap: 4px;
+    margin-top: 12px;
+  }
+
+  .pStars svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .pVerdict {
+    max-width: none;
+    margin-top: 10px;
+  }
+
+  .pVerdict .verdictLabel {
+    font-size: 14.5px;
+    line-height: 1.4;
+  }
+
+  .pVerdict .verdictText {
+    margin-top: 4px;
+    font-size: 14px;
+    line-height: 1.55;
+  }
+
+  .compare {
+    margin-top: 10px;
+    padding: 10px 8px 12px;
+    border-radius: 12px;
+  }
+
+  .compareTitle {
+    gap: 8px;
+    margin-left: 2px;
+    font-size: 15px;
+    line-height: 1.35;
+  }
+
+  .compareIcon {
+    width: 20px;
+    height: 20px;
+  }
+
+  /* the comparison table scales with its own width, so the phone reference's line breaks always fit */
+  .gridWrap {
+    container-type: inline-size;
+  }
+
+  .gridPhone {
+    grid-template-columns: 63fr 64fr 75fr 79fr 67fr;
+    margin-top: 10px;
+    border-radius: 8px;
+    font-size: 2.1cqw;
+  }
+
+  .gridPhone .gCorner,
+  .gridPhone .gTh,
+  .gridPhone .posHead {
+    height: auto;
+    min-height: 0;
+    padding: 0.7em 0.25em;
+  }
+
+  .gridPhone .thText strong {
+    font-size: 1.1em;
+    line-height: 1.35;
+  }
+
+  .gridPhone .thText span,
+  .gridPhone .gCell,
+  .gridPhone .gLabel,
+  .gridPhone .posHead,
+  .gridPhone .posText {
+    font-size: 1em;
+    line-height: 1.4;
+  }
+
+  .gridPhone .gLabel {
+    gap: 0.35em;
+    padding: 0 0.2em 0 0.45em;
+    white-space: nowrap;
+  }
+
+  .gridPhone .rowIcon {
+    width: 1.3em;
+    height: 1.3em;
+  }
+
+  .gridPhone .posHead {
+    gap: 0.35em;
+  }
+
+  .gridPhone .posIcon {
+    width: 1.25em;
+    height: 1.25em;
+  }
+
+  .gridPhone .gRow:nth-child(2) > *,
+  .gridPhone .gRow:nth-child(3) > * {
+    height: auto;
+    min-height: 0;
+  }
+
+  .gridPhone .gCell {
+    padding: 0.8em 0.25em 0.8em 0.55em;
+  }
+
+  .gridPhone .posText {
+    padding: 0.4em 0.3em 0 0.6em;
+  }
+
+  /* one line, as in the reference */
+  .link {
+    margin-left: 0;
+    white-space: nowrap;
+    font-size: 2.7cqw;
+  }
+
+  .linkIcon {
+    flex-shrink: 0;
+    width: 5.4cqw;
+    height: 5.4cqw;
+    margin-right: 2cqw;
+  }
+
+  .linkA {
+    gap: 1.4cqw;
+    margin-left: 2cqw;
+    font-size: 3.1cqw;
+  }
+
+  .linkArrow {
+    width: 3.4cqw;
+    height: 3.4cqw;
+  }
+}
+
+/* ======================= Laptops and desktops ======================= */
+
+@media (min-width: 1024px) {
+  .panel {
+    --u: calc(100cqw / 1536);
+    margin: calc(3 * var(--u)) calc(11 * var(--u)) calc(11 * var(--u));
+    padding: 0 calc(25 * var(--u)) calc(24 * var(--u)) calc(25 * var(--u));
+    border-radius: calc(16 * var(--u));
+  }
+
+  .deskOnly {
+    display: block;
+  }
+
+  .phoneOnly,
+  .pCards.phoneOnly {
+    display: none;
+  }
+
+  .head {
+    padding-top: calc(62 * var(--u));
+  }
+
+  .title {
+    margin-left: calc(14 * var(--u));
+    font-size: calc(34.6 * var(--u));
+    line-height: calc(44 * var(--u));
+    letter-spacing: 0;
+  }
+
+  .accent {
+    font-size: calc(33.5 * var(--u));
+  }
+
+  .copy {
+    max-width: none;
+    margin: calc(5 * var(--u)) 0 0 calc(13 * var(--u));
+    font-size: calc(13.8 * var(--u));
+    line-height: calc(24 * var(--u));
+  }
+
+  /* ---------- seven cards ---------- */
+
+  .cards {
+    display: grid;
+    grid-template-columns: 291fr 178fr 178fr 177fr 190fr 176fr 188fr;
+    column-gap: calc(14 * var(--u));
+    align-items: start;
+    margin-top: calc(26 * var(--u));
+  }
+
+  .card {
+    position: relative;
+    height: calc(435 * var(--u));
+    margin-top: calc(3 * var(--u));
+    border: 1px solid var(--g-card-border);
+    border-radius: calc(12 * var(--u));
+    background: var(--g-card);
+    box-shadow: var(--g-card-shadow);
+    --codeX: 46;
+    --codeY: 50.8;
+    --codeFs: 20.4;
+    --metaX: 44.5;
+    --metaY: 87.6;
+    --metaLh: 19;
+    --metaFs: 11.2;
+    --starsX: 13.5;
+    --starsY: 290;
+  }
+
+  .cardOpen {
+    height: calc(441 * var(--u));
+    margin-top: 0;
+    border-color: var(--g-open-border);
+    --codeX: 55.5;
+    --codeY: 45;
+    --codeFs: 26.3;
+    --metaX: 54;
+    --metaY: 81;
+    --metaLh: 20;
+    --metaFs: 13.5;
+    --starsX: 17;
+    --starsY: 236;
+  }
+
+  .card:nth-child(3) { --codeX: 46; --metaX: 45.5; --starsX: 16.5; }
+  .card:nth-child(4) { --codeX: 47; --metaX: 45.5; --starsX: 14.5; }
+  .card:nth-child(5) { --codeX: 21; --codeY: 46.3; --codeFs: 16.9; --metaX: 19.5; --metaY: 78.7; --metaLh: 18; --starsX: 16; --starsY: 301; }
+  .card:nth-child(6) { --codeX: 41; --codeY: 47.3; --codeFs: 17.6; --metaX: 20.5; --metaY: 81.7; --metaLh: 18; --starsX: 16; --starsY: 301; }
+  .card:nth-child(7) { --codeX: 40.5; --codeY: 47.3; --codeFs: 18.6; --metaX: 40.5; --metaY: 85; --metaLh: 18.5; --starsX: 15; --starsY: 301; }
+
+  .cardHead {
+    position: absolute;
+    top: calc(21 * var(--u));
+    left: calc(15 * var(--u));
+    right: calc(15 * var(--u));
+    display: flex;
+    align-items: center;
+  }
+
+  .cardOpen .cardHead {
+    left: calc(21 * var(--u));
+  }
+
+  .card:nth-child(5) .cardHead {
+    left: calc(20 * var(--u));
+  }
+
+  .card .num {
+    width: calc(22 * var(--u));
+    height: calc(22 * var(--u));
+    border-radius: calc(4 * var(--u));
+    font-size: calc(12 * var(--u));
+  }
+
+  .card .cardLabel {
+    margin-left: calc(12 * var(--u));
+    font-size: calc(13 * var(--u));
+    line-height: calc(18 * var(--u));
+    padding-top: calc(4 * var(--u));
+  }
+
+  .cardOpen .cardLabel {
+    margin-left: calc(14 * var(--u));
+    padding-top: calc(1 * var(--u));
+  }
+
+  .headChevron {
+    width: calc(20 * var(--u));
+    height: calc(20 * var(--u));
+    margin-left: auto;
+    color: var(--g-chevron);
+  }
+
+  .card .code {
+    position: absolute;
+    top: calc(var(--codeY) * var(--u));
+    left: calc(var(--codeX) * var(--u));
+    font-size: calc(var(--codeFs) * var(--u));
+    line-height: calc(26 * var(--u));
+    white-space: nowrap;
+  }
+
+  .cardOpen .code {
+    line-height: calc(30 * var(--u));
+  }
+
+  .meta {
+    position: absolute;
+    top: calc(var(--metaY) * var(--u));
+    left: calc(var(--metaX) * var(--u));
+    right: calc(6 * var(--u));
+    font-size: calc(var(--metaFs) * var(--u));
+    line-height: calc(var(--metaLh) * var(--u));
+  }
+
+  .meta .badgeLine,
+  .meta .badgeTag {
+    font-size: calc(11.5 * var(--u));
+  }
+
+  .card:nth-child(5) .meta .badgeLine,
+  .card:nth-child(5) .meta .badgeTag {
+    line-height: calc(19.5 * var(--u));
+  }
+
+  .meta .badgeBlock + .years {
+    margin-top: calc(10 * var(--u));
+  }
+
+  .card:nth-child(6) .meta .badgeBlock + .years {
+    margin-top: calc(11.4 * var(--u));
+  }
+
+  .meta .years,
+  .meta .engines {
+    white-space: nowrap;
+  }
+
+  .car {
+    position: absolute;
+  }
+
+  /* car boxes: where each car stands in the light reference */
+  .card:nth-child(1) .car { left: calc(42 * var(--u)); top: calc(131 * var(--u)); width: calc(195 * var(--u)); height: calc(98 * var(--u)); }
+  .card:nth-child(2) .car { left: calc(13 * var(--u)); top: calc(198 * var(--u)); width: calc(141 * var(--u)); height: calc(71 * var(--u)); }
+  .card:nth-child(3) .car { left: calc(21 * var(--u)); top: calc(201 * var(--u)); width: calc(131 * var(--u)); height: calc(71 * var(--u)); }
+  .card:nth-child(4) .car { left: calc(19 * var(--u)); top: calc(200 * var(--u)); width: calc(135 * var(--u)); height: calc(73 * var(--u)); }
+  .card:nth-child(5) .car { left: calc(20 * var(--u)); top: calc(217 * var(--u)); width: calc(141 * var(--u)); height: calc(70 * var(--u)); }
+  .card:nth-child(6) .car { left: calc(17 * var(--u)); top: calc(219 * var(--u)); width: calc(137 * var(--u)); height: calc(66 * var(--u)); }
+  .card:nth-child(7) .car { left: calc(23 * var(--u)); top: calc(203 * var(--u)); width: calc(136 * var(--u)); height: calc(74 * var(--u)); }
+
+  .cardStars {
+    position: absolute;
+    top: calc(var(--starsY) * var(--u));
+    left: calc(var(--starsX) * var(--u));
+    gap: calc(2 * var(--u));
+  }
+
+  .cardStars svg {
+    width: calc(20 * var(--u));
+    height: calc(20 * var(--u));
+  }
+
+  .verdict {
+    position: absolute;
+    top: calc(269.7 * var(--u));
+    left: calc(18 * var(--u));
+    right: calc(14 * var(--u));
+  }
+
+  .verdict .verdictLabel {
+    font-size: calc(12.8 * var(--u));
+    line-height: calc(18 * var(--u));
+  }
+
+  .verdict .verdictText {
+    margin-top: calc(2.5 * var(--u));
+    font-size: calc(12.6 * var(--u));
+    line-height: calc(20.67 * var(--u));
+  }
+
+  .cta {
+    position: absolute;
+    top: calc(386 * var(--u));
+    left: calc(16 * var(--u));
+    right: calc(16 * var(--u));
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: calc(36 * var(--u));
+    padding: 0 calc(11 * var(--u)) 0 calc(17 * var(--u));
+    border: 1px solid var(--g-btn-border);
+    border-radius: calc(6 * var(--u));
+    background: var(--g-btn-bg);
+    color: var(--g-btn-text);
+    font-size: calc(12.9 * var(--u));
+    font-weight: 600;
+  }
+
+  .cardOpen .cta {
+    top: calc(389 * var(--u));
+    left: calc(20 * var(--u));
+    right: calc(17 * var(--u));
+    justify-content: center;
+    gap: calc(14 * var(--u));
+    padding: 0;
+    border-color: var(--g-open-btn-border, var(--g-btn-border));
+    color: var(--g-open-btn-text, var(--g-btn-text));
+  }
+
+  /* dark reference: "Explore the E30" centred with the chevron beside it */
+  .dark .cta {
+    justify-content: center;
+    gap: calc(14 * var(--u));
+    padding: 0;
+    white-space: nowrap;
+  }
+
+  .ctaIcon {
+    width: calc(19 * var(--u));
+    height: calc(19 * var(--u));
+    color: var(--g-chevron);
+  }
+
+  .cardOpen .ctaIcon {
+    color: inherit;
+  }
+
+  /* ---------- comparison ---------- */
+
+  .compare {
+    margin: calc(23 * var(--u)) 0 0 calc(1 * var(--u));
+    padding: calc(13 * var(--u)) calc(31 * var(--u)) calc(18 * var(--u)) calc(24 * var(--u));
+    border-radius: calc(14 * var(--u));
+  }
+
+  .compareTitle {
+    gap: calc(20 * var(--u));
+    margin-left: calc(1 * var(--u));
+    font-size: calc(18.8 * var(--u));
+    line-height: calc(24 * var(--u));
+  }
+
+  .compareIcon {
+    width: calc(27 * var(--u));
+    height: calc(27 * var(--u));
+    padding: 0;
+    background: none;
+  }
+
+  .gridDesk {
+    grid-template-columns: 214fr 316fr 299fr 292fr 284fr;
+    margin-top: calc(6 * var(--u));
+    border-radius: calc(10 * var(--u));
+    font-size: calc(13.6 * var(--u));
+  }
+
+  .gridDesk .gCorner,
+  .gridDesk .gTh,
+  .gridDesk .posHead {
+    height: calc(55 * var(--u));
+  }
+
+  .gridDesk .gTh {
+    padding-left: calc(55 * var(--u));
+  }
+
+  .gridDesk .thText strong {
+    font-size: calc(13.7 * var(--u));
+    line-height: calc(20 * var(--u));
+  }
+
+  .gridDesk .thText span {
+    font-size: calc(13.4 * var(--u));
+    line-height: calc(20 * var(--u));
+    color: var(--g-cell);
+  }
+
+  .gridDesk .posHead {
+    padding-left: calc(40 * var(--u));
+    gap: calc(17 * var(--u));
+    font-size: calc(13.5 * var(--u));
+  }
+
+  .gridDesk .gLabel {
+    padding-left: calc(20 * var(--u));
+    gap: calc(16 * var(--u));
+  }
+
+  .gridDesk .gRow:nth-child(2) > * {
+    height: calc(62 * var(--u));
+  }
+
+  .gridDesk .gRow:nth-child(3) > * {
+    height: calc(63 * var(--u));
+  }
+
+  .gridDesk .gCell {
+    padding-left: calc(58 * var(--u));
+    line-height: calc(21.5 * var(--u));
+  }
+
+  .gridDesk .gCell:nth-child(3) {
+    padding-left: calc(51 * var(--u));
+  }
+
+  .gridDesk .gCell:nth-child(4) {
+    padding-left: calc(46 * var(--u));
+  }
+
+  .gridDesk .posText {
+    padding: calc(8 * var(--u)) 0 0 calc(39 * var(--u));
+    font-size: calc(13.7 * var(--u));
+    line-height: calc(21 * var(--u));
+  }
+
+  .link {
+    margin: calc(16 * var(--u)) 0 0 calc(-1 * var(--u));
+    font-size: calc(13.9 * var(--u));
+  }
+
+  .linkIcon {
+    width: calc(24 * var(--u));
+    height: calc(24 * var(--u));
+    margin-right: calc(17 * var(--u));
+  }
+
+  .linkA {
+    gap: calc(12 * var(--u));
+    margin-left: calc(20 * var(--u));
+    font-size: calc(15.7 * var(--u));
+  }
+
+  .linkArrow {
+    width: calc(16 * var(--u));
+    height: calc(16 * var(--u));
+  }
+}

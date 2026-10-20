@@ -2,240 +2,259 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import MStripe from "@/components/reusableComponents/MStripe";
+import { Inter } from "next/font/google";
 import { useTheme } from "@/components/shared/themeProvider";
-import HomeIcon from "@/components/home/homeIcons";
-import { buyerIconFor } from "@/components/shared/labelIcons";
-import { carImageFor } from "@/components/shared/carImage";
-import { sectionBody, sectionDescription, sectionTableText, tableHeaderClass } from "@/components/models/sectionTypography";
+import s from "./WhoShouldBuy.module.css";
+import WhoShouldBuyLegacy from "./WhoShouldBuyLegacy";
 
-const proofItems = [
-  { title: "Built for Real Life", text: "Practical. Powerful. Proven.", icon: "best-family" },
-  { title: "Data-Backed Ratings", text: "UK enquiries analysed in 2025.", icon: "chart" },
-  { title: "Honest Verdicts", text: "No hype. Just the truth about ownership.", icon: "scale" },
-  { title: "Buyer-Focused", text: "Find the right model for your needs.", icon: "safest-buy" },
-];
+const inter = Inter({ subsets: ["latin"], weight: ["400", "500", "600", "700"], display: "swap" });
 
-function cleanText(text = "") {
-  return String(text ?? "")
-    .replaceAll("Ã‚Â£", "\u00a3")
-    .replaceAll("Ãƒâ€šÃ‚Â£", "\u00a3")
-    .replaceAll("Ã¢â‚¬â€œ", "-")
-    .replaceAll("Ã¢â‚¬â€", "-")
-    .replaceAll("ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“", "-")
-    .replaceAll("ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â", "-")
-    .replace(/\s+-\s+/g, " - ")
-    .replace(/\s+/g, " ")
-    .trim();
-}
+// a space before each break keeps words apart where the break is hidden
+const spaced = (html = "") => String(html).replace(/([^-])\s*<br\s*\/?>\s*/g, "$1 <br>");
 
-function modelNameFromTitle(title = "") {
-  const clean = cleanText(title);
-  const match = clean.match(/Buy (?:an?|the)\s+(.+?)\?/i);
-  return match ? match[1] : "BMW";
-}
+// rosette edge: a circle with twelve soft scallops
+const ROSETTE = Array.from({ length: 97 }, (_, i) => {
+  const a = (i / 96) * Math.PI * 2;
+  const r = 6.5 + 0.55 * Math.cos(a * 12);
+  return `${i ? "L" : "M"}${(12 + r * Math.sin(a)).toFixed(2)} ${(9 - r * Math.cos(a)).toFixed(2)}`;
+}).join("") + "z";
 
-function splitTitle(title = "") {
-  const clean = cleanText(title);
-  const modelName = modelNameFromTitle(clean);
-  const index = clean.indexOf(modelName);
+const ICONS = {
+  group: (
+    <g fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round">
+      <circle cx="12" cy="7.4" r="3.5" />
+      <path d="M6.4 20.6v-2.3a5.6 5.6 0 0 1 11.2 0v2.3z" />
+      <path d="M8.6 5.9a2.8 2.8 0 1 0-.9 5.1M15.4 5.9a2.8 2.8 0 1 1 .9 5.1" />
+      <path d="M6.6 12.9a4.4 4.4 0 0 0-5.8 4.2v1.6h4.4M17.4 12.9a4.4 4.4 0 0 1 5.8 4.2v1.6h-4.4" />
+    </g>
+  ),
+  shieldCheck: (
+    <g fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M12 2.4l8.4 3.1v6.3c0 5.1-3.5 8.8-8.4 10.7-4.9-1.9-8.4-5.6-8.4-10.7V5.5z" />
+      <path d="M8.6 12.2l2.4 2.4 4.5-4.7" />
+    </g>
+  ),
+  award: (
+    <g fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round">
+      <path d={ROSETTE} />
+      <circle cx="12" cy="9" r="3.6" />
+      <path d="M8.3 14.9L6 21.1l2.9-.8 1.7 2.3 1.4-4.6M15.7 14.9l2.3 6.2-2.9-.8-1.7 2.3-1.4-4.6" />
+    </g>
+  ),
+  wheel: (
+    <g fill="none" stroke="currentColor" strokeWidth="1" strokeLinecap="round" strokeLinejoin="round">
+      <circle cx="12" cy="12" r="11.2" />
+      <path d="M3.4 9.6c5.6-2 11.6-2 17.2 0" />
+      <circle cx="12" cy="11.6" r="1.6" />
+      <path d="M12 13.2v2.6M3.9 13.3c3 .2 5.5 1.9 6.2 4.6l.4 3.6c-3.4-.8-6-3.9-6.6-8.2zM20.1 13.3c-3 .2-5.5 1.9-6.2 4.6l-.4 3.6c3.4-.8 6-3.9 6.6-8.2z" />
+    </g>
+  ),
+  family: (
+    <g fill="none" stroke="currentColor" strokeWidth="1.15" strokeLinecap="round" strokeLinejoin="round">
+      <circle cx="7.7" cy="7.6" r="3" />
+      <circle cx="16.3" cy="7.6" r="3" />
+      <path d="M2.4 19.6v-2a5.3 5.3 0 0 1 10.6 0v2M11 19.6v-2a5.3 5.3 0 0 1 10.6 0v2" />
+    </g>
+  ),
+  briefcase: (
+    <g fill="none" stroke="currentColor" strokeWidth="1.15" strokeLinecap="round" strokeLinejoin="round">
+      <rect x="2.8" y="7.2" width="18.4" height="13" rx="1.4" />
+      <path d="M8.7 7.2V5.3c0-.7.5-1.2 1.2-1.2h4.2c.7 0 1.2.5 1.2 1.2v1.9M2.8 12.6h7.4M13.8 12.6h7.4" />
+      <circle cx="12" cy="12.6" r="1.6" />
+    </g>
+  ),
+  piggy: (
+    <g fill="none" stroke="currentColor" strokeWidth="1.1" strokeLinecap="round" strokeLinejoin="round">
+      <circle cx="11.6" cy="4.4" r="2" />
+      <path d="M5.6 11.6c.8-2.7 3.5-4.4 7-4.4 2.2 0 4.1.6 5.5 1.7l1.6-1.6.4 2.8c.8.7 1.3 1.5 1.6 2.3h1.5v3.5h-1.6c-.6 1.2-1.6 2.2-2.8 2.9v2.6h-2.7v-1.8c-.6.1-1.2.1-1.9.1-.6 0-1.3 0-1.9-.1v1.8H8.1v-2.7c-1.6-1-2.6-2.6-2.6-4.6z" />
+      <path d="M5.6 11.7c-1.3 0-2.4-1-2.4-2.3" />
+      <circle cx="17.6" cy="11.4" r=".45" fill="currentColor" stroke="none" />
+    </g>
+  ),
+  gauge: (
+    <g fill="none" stroke="currentColor" strokeWidth="1.15" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M4.3 19.1A9.4 9.4 0 1 1 19.7 19.1" />
+      <path d="M12 4.9v1.7M6.2 7.4l1.2 1.2M17.8 7.4l-1.2 1.2M3.3 13.4H5M20.7 13.4H19M5.5 17.9l1.2-.9M18.5 17.9l-1.2-.9" />
+      <path d="M12 14.2l3.1-4" strokeWidth="1.5" />
+      <circle cx="12" cy="14.3" r="1.35" fill="currentColor" stroke="none" />
+    </g>
+  ),
+  shield: (
+    <path
+      d="M12 3l7.6 2.8v5.9c0 4.8-3.2 8.4-7.6 10.1-4.4-1.7-7.6-5.3-7.6-10.1V5.8z"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.15"
+      strokeLinejoin="round"
+    />
+  ),
+  info: (
+    <g>
+      <circle cx="12" cy="12" r="12" fill="currentColor" />
+      <circle cx="12.3" cy="7" r="1.45" fill="#fff" />
+      <path d="M10.3 10.4h2.5v6.6M10.2 17.2h4.4" fill="none" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+    </g>
+  ),
+  arrow: <path d="M3.5 12h16m-6.2-6.2 6.2 6.2-6.2 6.2" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round" />,
+};
 
-  if (index === -1) {
-    return { before: clean, accent: "" };
-  }
+const STAR = "M12 1.6l3.1 6.6 7.2.9-5.3 5 1.4 7.1L12 17.7l-6.4 3.5L7 14.1l-5.3-5 7.2-.9z";
 
-  return {
-    before: clean.slice(0, index).trim(),
-    accent: clean.slice(index).trim(),
-  };
-}
+// per-icon nudges (24-unit grid) so each glyph sits where the reference draws it
+const FIT = {
+  group: "translate(0 2)",
+  shieldCheck: "translate(12 13.5) scale(1 1.05) translate(-12 -12)",
+  award: "translate(12 12.7) scale(1.16 1.07) translate(-12 -12)",
+  wheel: "translate(12 12.75) scale(0.958) translate(-12 -12)",
+  family: "translate(12 12.5) scale(1 0.94) translate(-12 -12)",
+  briefcase: "translate(10.5 12) scale(0.925 0.97) translate(-12 -12)",
+  piggy: "translate(9.5 11.9) scale(0.94) translate(-12 -12)",
+  gauge: "translate(10.7 11.2) scale(1 1.03) translate(-12 -12)",
+  shield: "translate(11.1 11.3) scale(0.94) translate(-12 -12)",
+};
 
-function filledStars(rating = "") {
-  const text = String(rating);
-  const empty = (text.match(/\u2606/g) || []).length;
-  const filled = (text.match(/\u2b50/g) || []).length + (text.match(/\u2605/g) || []).length;
-
-  if (filled > 0) return filled;
-  if (empty > 0) return Math.max(0, 5 - empty);
-
-  return 0;
-}
-
-function Stars({ rating }) {
-  const filled = filledStars(rating);
-  const star = String.fromCharCode(9733);
-
+function Icon({ name, className }) {
   return (
-    <div className="flex items-center gap-1 text-[24px] leading-none text-[var(--color-chrome-bright)] md:gap-1.5 md:text-[32px]">
-      {Array.from({ length: 5 }).map((_, index) => (
-        <span key={index} className={index < filled ? "" : "opacity-35"}>
-          {star}
+    <svg aria-hidden="true" viewBox="0 0 24 24" className={className}>
+      <g transform={FIT[name]}>{ICONS[name]}</g>
+    </svg>
+  );
+}
+
+function Title({ lines, className }) {
+  return (
+    <h2 className={className}>
+      {lines.map((line, index) => (
+        <span key={line}>
+          {index ? <br /> : null}
+          <span dangerouslySetInnerHTML={{ __html: line }} />
         </span>
+      ))}
+    </h2>
+  );
+}
+
+function Stars({ count, className }) {
+  return (
+    <span className={className} role="img" aria-label={`${count} out of 5`}>
+      {Array.from({ length: 5 }).map((_, index) => (
+        <svg key={index} aria-hidden="true" viewBox="0 0 24 24" className={index < count ? s.starOn : s.starOff}>
+          <path d={STAR} />
+        </svg>
+      ))}
+    </span>
+  );
+}
+
+function DesktopTable({ data, isDark }) {
+  const columns = data.columns || [];
+  return (
+    <div className={s.table} role="table">
+      <div className={s.thead} role="row">
+        {columns.map((column) => (
+          <span key={column} role="columnheader">
+            {column}
+          </span>
+        ))}
+      </div>
+      {(data.profiles || []).map((row) => (
+        <div key={row.key} className={s.tr} role="row">
+          <span className={s.cProfile} role="rowheader">
+            <span className={s.car}>
+              <Image src={isDark ? row.images.dark : row.images.light} alt="" fill className={s.img} sizes="(min-width: 1024px) 17vw, 1px" />
+            </span>
+            <span className={s.badge}>
+              <Icon name={row.icon} className={s.badgeIcon} />
+            </span>
+            <strong className={s.name}>{row.buyerProfile}</strong>
+          </span>
+          <span className={s.cRating} role="cell">
+            <Stars count={row.stars} className={s.stars} />
+          </span>
+          <span className={s.cVerdict} role="cell" dangerouslySetInnerHTML={{ __html: spaced(row.verdict) }} />
+        </div>
       ))}
     </div>
   );
 }
 
-function CircleIcon({ name, isDark }) {
+function PhoneCards({ data }) {
   return (
-    <span
-      className={`flex h-14 w-14 shrink-0 items-center justify-center rounded-full md:h-16 md:w-16 ${
-        isDark ? "bg-white/10" : "bg-[#eef2f7]"
-      }`}
-    >
-      <HomeIcon name={name} isDark={isDark} className="h-10 w-10 object-contain md:h-12 md:w-12" />
-    </span>
-  );
-}
-
-function ProofStrip({ isDark }) {
-  return (
-    <ul className="hidden overflow-hidden rounded-md border border-[var(--color-border)] bg-[var(--color-surface-raised)] shadow-[0_10px_30px_var(--color-shadow)] lg:grid lg:grid-cols-4">
-      {proofItems.map((item) => (
-        <li
-          key={item.title}
-          className="flex flex-col items-center justify-start border-r border-[var(--color-border)] px-5 py-3.5 text-center last:border-r-0"
-        >
-          <span
-            className={`flex h-14 w-14 items-center justify-center rounded-full ${
-              isDark ? "bg-white/10" : "bg-[#eef2f7]"
-            }`}
-          >
-            <HomeIcon name={item.icon} isDark={isDark} className="h-10 w-10 object-contain" />
+    <div className={s.cards}>
+      {(data.profiles || []).map((row) => (
+        <article key={row.key} className={s.card}>
+          <span className={s.cardCar}>
+            <Image src={row.images.phone || row.images.light} alt="" fill className={s.img} sizes="(max-width: 1023px) 30vw, 1px" />
           </span>
-          <strong className="mt-1.5 text-[14px] leading-tight text-[var(--color-text)]">{item.title}</strong>
-          <span className="mt-0.5 text-[13px] leading-[1.25] text-[var(--color-text-muted)]">{item.text}</span>
-        </li>
+          <span className={s.badge}>
+            <Icon name={row.icon} className={s.badgeIcon} />
+          </span>
+          <span className={s.cardHead}>
+            <strong className={s.name}>{row.buyerProfile}</strong>
+            <Stars count={row.stars} className={s.stars} />
+          </span>
+          <p className={s.cardText} dangerouslySetInnerHTML={{ __html: spaced(row.verdictMobile || row.verdict) }} />
+        </article>
       ))}
-    </ul>
+    </div>
   );
 }
 
-function BuyerRow({ row, index, model, isDark }) {
-  const iconKey = buyerIconFor(row.buyerProfile);
-  // The page gives each buyer row its own photo (a different colour per row).
-  const carImage = row.image || carImageFor(model, row.verdict);
-
-  return (
-    <article className="grid overflow-hidden rounded-md border border-[var(--color-border)] bg-[var(--color-surface-raised)] shadow-[0_10px_26px_var(--color-shadow)] md:rounded-none md:border-0 md:border-t md:shadow-none lg:grid-cols-[40%_18%_42%]">
-      <div className="grid grid-cols-[31%_69%] md:grid-cols-[300px_1fr] lg:border-r lg:border-[var(--color-border)]">
-        <div className="relative flex min-h-[150px] items-center md:min-h-[124px]">
-          {carImage ? (
-            <Image
-              src={carImage}
-              alt=""
-              fill
-              className="object-contain p-2"
-              sizes="(min-width: 1024px) 300px, (min-width: 768px) 300px, 31vw"
-            />
-          ) : null}
-        </div>
-        <div className="flex min-w-0 items-center gap-3 px-3 py-3.5 md:px-5 md:py-4">
-          <CircleIcon name={iconKey} isDark={isDark} />
-          <div className="min-w-0">
-            <h3
-              className="text-[16px] font-bold leading-[1.12] text-[var(--color-text)] md:text-[18px]"
-              dangerouslySetInnerHTML={{ __html: cleanText(row.buyerProfile) }}
-            />
-            <div className="mt-3 lg:hidden">
-              <Stars rating={row.rating} />
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div className="hidden items-center justify-center border-r border-[var(--color-border)] px-3 py-3 lg:flex">
-        <Stars rating={row.rating} />
-      </div>
-
-      <p
-        className={`border-t border-[var(--color-border)] px-3 py-3 text-[var(--color-text)] md:px-4 md:py-3 lg:border-t-0 ${sectionTableText} md:text-[14px]`}
-        dangerouslySetInnerHTML={{ __html: cleanText(row.verdict) }}
-      />
-    </article>
-  );
-}
-
+// Model JSONs migrated to the reference design carry `proof`; the rest keep the previous layout.
 export default function WhoShouldBuy({ data }) {
-  const { theme } = useTheme();
   if (!data) return null;
+  return data.proof ? <WhoShouldBuyReference data={data} /> : <WhoShouldBuyLegacy data={data} />;
+}
 
+function WhoShouldBuyReference({ data }) {
+  const { theme } = useTheme();
   const isDark = theme === "dark";
-  const title = splitTitle(data.h2);
-  const modelName = modelNameFromTitle(data.h2);
-  const profiles = data.profiles || [];
-  const sectionBg = isDark ? "bg-[var(--color-page)]" : "bg-[#eef2f7]";
+  const note = data.note || {};
+  const cta = data.cta || {};
 
   return (
-    <section className={`${sectionBg} py-6 text-[var(--color-text)] md:py-8`}>
-      <div className="mx-auto w-full max-w-8xl px-4 md:px-8">
-        <div className="flex flex-col gap-5 lg:grid lg:grid-cols-[minmax(0,0.92fr)_minmax(520px,1fr)] lg:items-start">
-          <div>
-            <h2 className="max-w-[760px] text-[29px] font-bold leading-[1.08] tracking-normal text-[var(--color-text)] md:text-[45px]">
-              <span dangerouslySetInnerHTML={{ __html: title.before }} />
-              {title.accent ? (
-                <>
-                  {" "}
-                  <span
-                    className="text-[var(--color-chrome-bright)]"
-                    dangerouslySetInnerHTML={{ __html: title.accent }}
-                  />
-                </>
-              ) : null}
-            </h2>
-            <div className="mt-3">
-              <MStripe />
+    <section id="who-should-buy" className={`${inter.className} ${s.section} ${isDark ? s.dark : s.light}`}>
+      <div className={s.frame}>
+        <div className={s.panel}>
+          <div className={s.top}>
+            <div className={s.head}>
+              <Title lines={data.titleLines || [data.h2]} className={`${s.title} ${s.deskOnly}`} />
+              <Title lines={data.titleLinesMobile || data.titleLines || [data.h2]} className={`${s.title} ${s.phoneOnly}`} />
+              <p className={`${s.copy} ${s.deskOnly}`} dangerouslySetInnerHTML={{ __html: spaced(data.subHeadline) }} />
+              <p className={`${s.copy} ${s.phoneOnly}`} dangerouslySetInnerHTML={{ __html: spaced(data.subHeadlineMobile || data.subHeadline) }} />
             </div>
-            <p className={`mt-3 max-w-[620px] text-[var(--color-text-muted)] ${sectionDescription}`}>
-              Different buyers, different priorities. Here is our verdict on who the{" "}
-              <span dangerouslySetInnerHTML={{ __html: modelName }} /> is perfect for - and who should think twice.
+            <ul className={s.proof}>
+              {(data.proof || []).map((item) => (
+                <li key={item.title} className={s.proofItem}>
+                  <Icon name={item.icon} className={s.proofIcon} />
+                  <strong>{item.title}</strong>
+                  <span dangerouslySetInnerHTML={{ __html: spaced(item.text) }} />
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div className={s.deskOnly}>
+            <DesktopTable data={data} isDark={isDark} />
+          </div>
+          <div className={s.phoneOnly}>
+            <PhoneCards data={data} />
+          </div>
+
+          <div className={s.note}>
+            <Icon name="info" className={s.noteIcon} />
+            <p className={s.noteText}>
+              <strong>{note.title}</strong>{" "}
+              <span className={s.deskInline} dangerouslySetInnerHTML={{ __html: spaced(note.text) }} />
+              <span className={s.phoneInline} dangerouslySetInnerHTML={{ __html: spaced(note.textMobile || note.text) }} />
             </p>
+            {cta.label ? (
+              <Link href={cta.href || "#"} className={s.cta}>
+                <span>{cta.label}</span>
+                <Icon name="arrow" className={s.ctaArrow} />
+              </Link>
+            ) : null}
           </div>
-
-          <ProofStrip isDark={isDark} />
-        </div>
-
-        <div className="mt-6 overflow-hidden rounded-md border border-[var(--color-border)] bg-[var(--color-surface-raised)] shadow-[0_12px_32px_var(--color-shadow)]">
-          <div className={`hidden grid-cols-[40%_18%_42%] text-[14px] font-bold lg:grid ${tableHeaderClass(isDark)}`}>
-            {(data.columns || ["Buyer Profile", "Rating", "Our Verdict"]).map((column, index) => (
-              <div key={column} className={`px-3 py-2.5 ${index > 0 ? "border-l border-white/20" : ""}`}>
-                {column}
-              </div>
-            ))}
-          </div>
-
-          <div className="grid gap-5 bg-[var(--color-page)] md:gap-0 lg:block">
-            {profiles.map((row, index) => (
-              <BuyerRow key={`${row.buyerProfile}-${index}`} row={row} index={index} model={modelName} isDark={isDark} />
-            ))}
-          </div>
-        </div>
-
-        <div className="mt-5 flex flex-col gap-4 rounded-md border border-[var(--color-border)] bg-[var(--color-surface-raised)] p-4 shadow-[0_8px_24px_var(--color-shadow)] md:flex-row md:items-center md:justify-between md:p-5">
-          <div className="flex gap-3.5">
-            <span
-              className={`flex h-11 w-11 shrink-0 items-center justify-center rounded-full ${
-                isDark ? "bg-white/10" : "bg-[#eef2f7]"
-              }`}
-            >
-              <HomeIcon name="note" isDark={isDark} className="h-7 w-7 object-contain" />
-            </span>
-            <p className={`max-w-[760px] text-[var(--color-text)] ${sectionBody}`}>
-              <strong className="font-bold text-[var(--color-chrome-bright)]">Real talk.</strong> The right{" "}
-              <span dangerouslySetInnerHTML={{ __html: modelName }} /> for you depends on your budget, your mileage,
-              and your patience for maintenance. Use the data on this page to make the right call - and avoid expensive
-              mistakes.
-            </p>
-          </div>
-          <Link
-            href="#engine-database"
-            className="btn-cta inline-flex min-h-12 shrink-0 items-center justify-center gap-4 rounded-md px-5 py-3 text-[16px] font-bold shadow-[0_12px_28px_var(--color-shadow)] md:min-w-[260px]"
-          >
-            Explore <span dangerouslySetInnerHTML={{ __html: modelName }} /> Engines
-            <svg aria-hidden="true" viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2">
-              <path d="M5 12h14m-6-6 6 6-6 6" />
-            </svg>
-          </Link>
         </div>
       </div>
     </section>

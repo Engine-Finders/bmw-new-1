@@ -1,0 +1,308 @@
+/*
+ * Model page "Why BMW 3 Series Owners Trust BMWEngines.uk" (section 12), built to the reference designs
+ * (light + dark desktop at 1536px, light phone at 864px).
+ * Sizes are reference pixels times --u, so the section is the reference scaled to its own width:
+ * below 1024px the phone reference (stacked reasons, no car), from 1024px the desktop reference
+ * (reasons left, map + chart + car right). Both themes use the light layout; the dark reference
+ * gives the colours and its own car artwork.
+ */
+
+.section {
+  overflow: clip;
+  background: var(--k-page);
+  color: var(--k-text);
+}
+
+.frame {
+  container-type: inline-size;
+  max-width: 1628px;
+  margin: 0 auto;
+}
+
+.panel {
+  --u: calc(100cqw / 864);
+  padding: 0 calc(30 * var(--u)) calc(8 * var(--u)) calc(26 * var(--u));
+}
+
+/* ---------- theme tokens ---------- */
+
+.light {
+  --k-page: #fefefe;
+  --k-text: #050720;
+  --k-accent: #0a4ef3;
+  --k-card: linear-gradient(90deg, #fdfcfe 0%, #fbfbfd 45%, #f3f5f9 100%);
+  --k-card-border: #e9ebef;
+  --k-card-shadow: 0 4px 14px rgba(20, 40, 90, 0.03);
+  --k-item-title: #1249d6;
+  --k-copy: #10132b;
+  --k-divider: #ebedf0;
+  --k-tile: #eef3fc;
+  --k-tile-border: transparent;
+  --k-tile-icon: #0b52ee;
+  --k-tile-green: #e9f6ef;
+  --k-heart: #41c074;
+}
+
+.dark {
+  --k-page: #000102;
+  --k-text: #fefefe;
+  --k-accent: #0d5ef7;
+  --k-card: linear-gradient(90deg, #030b14 0%, #02080f 55%, #010810 100%);
+  --k-card-border: #1e252d;
+  --k-card-shadow: none;
+  --k-item-title: #1f70e4;
+  --k-copy: #f2f5f8;
+  --k-divider: #1a2129;
+  --k-tile: #040c15;
+  --k-tile-border: #1d252e;
+  --k-tile-icon: #095bf8;
+  --k-tile-green: #040c15;
+  --k-heart: #38be6f;
+}
+
+.deskOnly,
+.deskInline {
+  display: none;
+}
+
+.phoneOnly {
+  display: block;
+}
+
+.phoneInline {
+  display: inline;
+}
+
+/* ---------- card ---------- */
+
+.card {
+  position: relative;
+  height: calc(939.5 * var(--u));
+  margin-top: calc(-20 * var(--u));
+  overflow: hidden;
+  border: 1px solid var(--k-card-border);
+  border-radius: calc(16 * var(--u));
+  background: var(--k-card);
+  box-shadow: var(--k-card-shadow);
+}
+
+.art {
+  display: none;
+}
+
+.title {
+  position: absolute;
+  top: calc(92 * var(--u));
+  left: calc(28 * var(--u));
+  margin: 0;
+  font-size: calc(47 * var(--u));
+  font-weight: 700;
+  line-height: calc(55 * var(--u));
+  letter-spacing: -0.068em;
+  color: var(--k-text);
+  white-space: nowrap;
+}
+
+.title span span span {
+  color: var(--k-accent);
+}
+
+/* ---------- reasons ---------- */
+
+.items {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.item {
+  --tile: 237;
+  --tile-h: 115;
+  --text: 228.7;
+}
+
+.item:nth-child(2) {
+  --tile: 406;
+  --tile-h: 117;
+  --text: 403.7;
+  --div: 383.5;
+}
+
+.item:nth-child(3) {
+  --tile: 615;
+  --tile-h: 117;
+  --text: 613.7;
+  --div: 594;
+}
+
+.item:nth-child(4) {
+  --tile: 823;
+  --tile-h: 89;
+  --text: 823.7;
+  --div: 802;
+}
+
+.item + .item::before {
+  content: "";
+  position: absolute;
+  top: calc(var(--div) * var(--u));
+  left: calc(28 * var(--u));
+  width: calc(732 * var(--u));
+  height: 1px;
+  background: var(--k-divider);
+}
+
+.tile {
+  position: absolute;
+  top: calc(var(--tile) * var(--u));
+  left: calc(28 * var(--u));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: calc(113 * var(--u));
+  height: calc(var(--tile-h) * var(--u));
+  border: 1px solid var(--k-tile-border);
+  border-radius: calc(14 * var(--u));
+  background: var(--k-tile);
+  color: var(--k-tile-icon);
+}
+
+.tileGreen {
+  background: var(--k-tile-green);
+  color: var(--k-heart);
+}
+
+.tileIcon {
+  width: calc(60 * var(--u));
+  height: calc(60 * var(--u));
+}
+
+.item:nth-child(4) .tileIcon {
+  transform: translateY(calc(-2 * var(--u))) scale(1.13);
+}
+
+.text {
+  position: absolute;
+  top: calc(var(--text) * var(--u));
+  left: calc(170 * var(--u));
+  margin: 0;
+  margin-top: calc(1 * var(--u));
+  font-size: calc(21.6 * var(--u));
+  line-height: calc(34.3 * var(--u));
+  letter-spacing: -0.01em;
+  color: var(--k-copy);
+  white-space: nowrap;
+}
+
+.text strong {
+  font-weight: 600;
+  color: var(--k-item-title);
+}
+
+.text span span {
+  color: var(--k-accent);
+}
+
+/* ======================= Laptops and desktops ======================= */
+
+@media (min-width: 1024px) {
+  .panel {
+    --u: calc(100cqw / 1536);
+    padding: calc(19 * var(--u)) calc(25 * var(--u)) calc(8 * var(--u)) calc(25 * var(--u));
+  }
+
+  .deskOnly {
+    display: block;
+  }
+
+  .deskInline {
+    display: inline;
+  }
+
+  .phoneOnly,
+  .phoneInline {
+    display: none;
+  }
+
+  .card {
+    height: calc(568 * var(--u));
+    margin-top: 0;
+    border-radius: calc(14 * var(--u));
+  }
+
+  .art {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    width: calc(820 * var(--u));
+    height: calc(566 * var(--u));
+    -webkit-mask-image: linear-gradient(90deg, transparent 0%, #000 14%);
+    mask-image: linear-gradient(90deg, transparent 0%, #000 14%);
+  }
+
+  .artImg {
+    object-fit: cover;
+  }
+
+  .title {
+    top: calc(48 * var(--u));
+    left: calc(22 * var(--u));
+    font-size: calc(41.3 * var(--u));
+    line-height: calc(48 * var(--u));
+    letter-spacing: -0.043em;
+  }
+
+  .item {
+    --tile: 169;
+    --tile-h: 73;
+    --text: 170.5;
+  }
+
+  .item:nth-child(2) {
+    --tile: 271;
+    --tile-h: 74;
+    --text: 263.5;
+    --div: 249;
+  }
+
+  .item:nth-child(3) {
+    --tile: 377;
+    --tile-h: 73;
+    --text: 377.5;
+    --div: 362;
+  }
+
+  .item:nth-child(4) {
+    --tile: 477;
+    --tile-h: 73;
+    --text: 491.5;
+    --div: 476;
+  }
+
+  .item + .item::before {
+    left: calc(133 * var(--u));
+    width: calc(525 * var(--u));
+  }
+
+  .tile {
+    left: calc(28 * var(--u));
+    width: calc(79 * var(--u));
+    border-radius: calc(12 * var(--u));
+  }
+
+  .tileIcon,
+  .item:nth-child(4) .tileIcon {
+    width: calc(42 * var(--u));
+    height: calc(42 * var(--u));
+    transform: none;
+  }
+
+  .text {
+    margin-top: 0;
+    left: calc(135 * var(--u));
+    font-size: calc(15.8 * var(--u));
+    line-height: calc(22.5 * var(--u));
+    letter-spacing: -0.01em;
+  }
+}

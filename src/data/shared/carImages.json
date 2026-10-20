@@ -5918,6 +5918,16 @@
     "width": 1120,
     "height": 630
    },
+   "backdrop": {
+    "src": "/model/hero/1-series-backdrop.webp",
+    "width": 1672,
+    "height": 941
+   },
+   "backdropLight": {
+    "src": "/model/hero/1-series-backdrop-light.webp",
+    "width": 1672,
+    "height": 941
+   },
    "card": {
     "src": "/model/hero/1-series-card.webp",
     "width": 640,
@@ -5935,6 +5945,16 @@
     "src": "/model/hero/2-series-scene.webp",
     "width": 1120,
     "height": 630
+   },
+   "backdrop": {
+    "src": "/model/hero/2-series-backdrop.webp",
+    "width": 1672,
+    "height": 941
+   },
+   "backdropLight": {
+    "src": "/model/hero/2-series-backdrop-light.webp",
+    "width": 1672,
+    "height": 941
    },
    "card": {
     "src": "/model/hero/2-series-card.webp",
@@ -5967,6 +5987,16 @@
     "width": 1120,
     "height": 630
    },
+   "backdrop": {
+    "src": "/model/hero/3-series-backdrop.webp",
+    "width": 1672,
+    "height": 941
+   },
+   "backdropLight": {
+    "src": "/model/hero/3-series-backdrop-light.webp",
+    "width": 1672,
+    "height": 941
+   },
    "card": {
     "src": "/model/hero/3-series-card.webp",
     "width": 640,
@@ -5985,6 +6015,16 @@
     "width": 1040,
     "height": 585
    },
+   "backdrop": {
+    "src": "/model/hero/4-series-backdrop.webp",
+    "width": 1672,
+    "height": 941
+   },
+   "backdropLight": {
+    "src": "/model/hero/4-series-backdrop-light.webp",
+    "width": 1672,
+    "height": 941
+   },
    "card": {
     "src": "/model/hero/4-series-card.webp",
     "width": 640,
@@ -6002,6 +6042,16 @@
     "src": "/model/hero/5-series-scene.webp",
     "width": 1040,
     "height": 585
+   },
+   "backdrop": {
+    "src": "/model/hero/5-series-backdrop.webp",
+    "width": 1672,
+    "height": 941
+   },
+   "backdropLight": {
+    "src": "/model/hero/5-series-backdrop-light.webp",
+    "width": 1672,
+    "height": 941
    },
    "card": {
     "src": "/model/hero/5-series-card.webp",
@@ -6073,6 +6123,16 @@
     "width": 1120,
     "height": 630
    },
+   "backdrop": {
+    "src": "/model/hero/m1-backdrop.webp",
+    "width": 1672,
+    "height": 941
+   },
+   "backdropLight": {
+    "src": "/model/hero/m1-backdrop-light.webp",
+    "width": 1672,
+    "height": 941
+   },
    "card": {
     "src": "/model/hero/m1-card.webp",
     "width": 640,
@@ -6090,6 +6150,16 @@
     "src": "/model/hero/m2-scene.webp",
     "width": 1120,
     "height": 630
+   },
+   "backdrop": {
+    "src": "/model/hero/m2-backdrop.webp",
+    "width": 1672,
+    "height": 941
+   },
+   "backdropLight": {
+    "src": "/model/hero/m2-backdrop-light.webp",
+    "width": 1672,
+    "height": 941
    },
    "card": {
     "src": "/model/hero/m2-card.webp",
@@ -6109,6 +6179,16 @@
     "width": 1040,
     "height": 585
    },
+   "backdrop": {
+    "src": "/model/hero/m3-backdrop.webp",
+    "width": 1672,
+    "height": 941
+   },
+   "backdropLight": {
+    "src": "/model/hero/m3-backdrop-light.webp",
+    "width": 1672,
+    "height": 941
+   },
    "card": {
     "src": "/model/hero/m3-card.webp",
     "width": 640,
@@ -6126,6 +6206,16 @@
     "src": "/model/hero/m4-scene.webp",
     "width": 1040,
     "height": 585
+   },
+   "backdrop": {
+    "src": "/model/hero/m4-backdrop.webp",
+    "width": 1672,
+    "height": 941
+   },
+   "backdropLight": {
+    "src": "/model/hero/m4-backdrop-light.webp",
+    "width": 1672,
+    "height": 941
    },
    "card": {
     "src": "/model/hero/m4-card.webp",
@@ -6145,6 +6235,16 @@
     "width": 1200,
     "height": 675
    },
+   "backdrop": {
+    "src": "/model/hero/m5-backdrop.webp",
+    "width": 1672,
+    "height": 941
+   },
+   "backdropLight": {
+    "src": "/model/hero/m5-backdrop-light.webp",
+    "width": 1672,
+    "height": 941
+   },
    "card": {
     "src": "/model/hero/m5-card.webp",
     "width": 640,
@@ -6162,6 +6262,16 @@
     "src": "/model/hero/m6-scene.webp",
     "width": 1120,
     "height": 630
+   },
+   "backdrop": {
+    "src": "/model/hero/m6-backdrop.webp",
+    "width": 1672,
+    "height": 941
+   },
+   "backdropLight": {
+    "src": "/model/hero/m6-backdrop-light.webp",
+    "width": 1672,
+    "height": 941
    },
    "card": {
     "src": "/model/hero/m6-card.webp",
@@ -6194,6 +6304,16 @@
     "width": 1120,
     "height": 630
    },
+   "backdrop": {
+    "src": "/model/hero/m8-backdrop.webp",
+    "width": 1672,
+    "height": 941
+   },
+   "backdropLight": {
+    "src": "/model/hero/m8-backdrop-light.webp",
+    "width": 1672,
+    "height": 941
+   },
    "card": {
     "src": "/model/hero/m8-card.webp",
     "width": 640,
@@ -6211,6 +6331,16 @@
     "src": "/model/hero/x1-scene.webp",
     "width": 1040,
     "height": 585
+   },
+   "backdrop": {
+    "src": "/model/hero/x1-backdrop.webp",
+    "width": 1672,
+    "height": 941
+   },
+   "backdropLight": {
+    "src": "/model/hero/x1-backdrop-light.webp",
+    "width": 1672,
+    "height": 941
    },
    "card": {
     "src": "/model/hero/x1-card.webp",
@@ -6230,6 +6360,16 @@
     "width": 1040,
     "height": 585
    },
+   "backdrop": {
+    "src": "/model/hero/x2-backdrop.webp",
+    "width": 1672,
+    "height": 941
+   },
+   "backdropLight": {
+    "src": "/model/hero/x2-backdrop-light.webp",
+    "width": 1672,
+    "height": 941
+   },
    "card": {
     "src": "/model/hero/x2-card.webp",
     "width": 640,
@@ -6247,6 +6387,16 @@
     "src": "/model/hero/x3-scene.webp",
     "width": 1040,
     "height": 585
+   },
+   "backdrop": {
+    "src": "/model/hero/x3-backdrop.webp",
+    "width": 1672,
+    "height": 941
+   },
+   "backdropLight": {
+    "src": "/model/hero/x3-backdrop-light.webp",
+    "width": 1672,
+    "height": 941
    },
    "card": {
     "src": "/model/hero/x3-card.webp",
@@ -6266,6 +6416,16 @@
     "width": 1040,
     "height": 585
    },
+   "backdrop": {
+    "src": "/model/hero/x4-backdrop.webp",
+    "width": 1672,
+    "height": 941
+   },
+   "backdropLight": {
+    "src": "/model/hero/x4-backdrop-light.webp",
+    "width": 1672,
+    "height": 941
+   },
    "card": {
     "src": "/model/hero/x4-card.webp",
     "width": 640,
@@ -6283,6 +6443,16 @@
     "src": "/model/hero/x5-scene.webp",
     "width": 1120,
     "height": 630
+   },
+   "backdrop": {
+    "src": "/model/hero/x5-backdrop.webp",
+    "width": 1672,
+    "height": 941
+   },
+   "backdropLight": {
+    "src": "/model/hero/x5-backdrop-light.webp",
+    "width": 1672,
+    "height": 941
    },
    "card": {
     "src": "/model/hero/x5-card.webp",
@@ -6302,6 +6472,16 @@
     "width": 1040,
     "height": 585
    },
+   "backdrop": {
+    "src": "/model/hero/x6-backdrop.webp",
+    "width": 1672,
+    "height": 941
+   },
+   "backdropLight": {
+    "src": "/model/hero/x6-backdrop-light.webp",
+    "width": 1672,
+    "height": 941
+   },
    "card": {
     "src": "/model/hero/x6-card.webp",
     "width": 640,
@@ -6319,6 +6499,16 @@
     "src": "/model/hero/x7-scene.webp",
     "width": 1040,
     "height": 585
+   },
+   "backdrop": {
+    "src": "/model/hero/x7-backdrop.webp",
+    "width": 1672,
+    "height": 941
+   },
+   "backdropLight": {
+    "src": "/model/hero/x7-backdrop-light.webp",
+    "width": 1672,
+    "height": 941
    },
    "card": {
     "src": "/model/hero/x7-card.webp",
@@ -6350,6 +6540,16 @@
     "src": "/model/hero/z-series-scene.webp",
     "width": 1040,
     "height": 585
+   },
+   "backdrop": {
+    "src": "/model/hero/z-series-backdrop.webp",
+    "width": 1672,
+    "height": 941
+   },
+   "backdropLight": {
+    "src": "/model/hero/z-series-backdrop-light.webp",
+    "width": 1672,
+    "height": 941
    },
    "card": {
     "src": "/model/hero/z-series-card.webp",

@@ -1,269 +1,276 @@
 "use client";
 
+import { useLayoutEffect, useRef } from "react";
 import Image from "next/image";
-import { heroBackground } from "@/components/shared/carImage";
 import Link from "next/link";
-import MStripe from "@/components/reusableComponents/MStripe";
+import { Inter } from "next/font/google";
 import { useTheme } from "@/components/shared/themeProvider";
-import HomeIcon from "@/components/home/homeIcons";
-import { sectionButton, sectionDescription, sectionH1 } from "@/components/models/sectionTypography";
+import s from "./ModelHero.module.css";
 
-const trustStripIconKeys = [
-  "most-enquired",
-  "generations",
-  "engine-codes",
-  "engine-finders",
-];
+const inter = Inter({ subsets: ["latin"], weight: ["400", "500", "600", "700"], display: "swap" });
 
-function ArrowIcon() {
+// Line icons drawn to match the reference (24px grid, stroke = currentColor).
+const ICON_PATHS = {
+  chart: ["M3 13h4v8H3z", "M10 9h4v12h-4z", "M17 3h4v18h-4z"],
+  wrench: [
+    "M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z",
+  ],
+  book: [
+    "M2 4h6a4 4 0 0 1 4 4v13a3 3 0 0 0-3-3H2z",
+    "M22 4h-6a4 4 0 0 0-4 4v13a3 3 0 0 1 3-3h7z",
+    "M5 8.5h3.5M5 11.5h3.5M5 14.5h3.5M15.5 8.5H19M15.5 11.5H19M15.5 14.5H19",
+  ],
+  trophy: [
+    "M7 3h10v6a5 5 0 0 1-10 0z",
+    "M7 5H4.5a2.5 2.5 0 0 0 2.6 4.6M17 5h2.5a2.5 2.5 0 0 1-2.6 4.6",
+    "M12 14v3M9.5 17h5l1 4h-7z",
+  ],
+  shield: [
+    "M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z",
+    "m9 12 2 2 4-4",
+  ],
+  arrow: ["M5 12h14", "m13 6 6 6-6 6"],
+};
+
+const STAT_ICONS = ["chart", "wrench", "book", "trophy"];
+
+function LineIcon({ name, className, strokeWidth = 1.8 }) {
   return (
-    <svg aria-hidden="true" viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2">
-      <path d="M5 12h14m-6-6 6 6-6 6" />
+    <svg aria-hidden="true" viewBox="0 0 24 24" className={className} fill="none" stroke="currentColor" strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round">
+      {ICON_PATHS[name].map((d) => (
+        <path key={d} d={d} />
+      ))}
     </svg>
   );
 }
 
-function splitTagPill(tagPill = "") {
-  const parts = String(tagPill).split(" • ");
-
-  return {
-    brand: parts[0] || "BMW",
-    model: parts[1] || "",
-    years: parts[2] || "",
-    generations: parts[3] || "",
-    engines: parts.slice(4).join(" • "),
-  };
-}
-
-function splitStat(label = "") {
-  const cleaned = String(label);
-  const [main, detail = ""] = cleaned.split(/\s+[—–-]\s+/);
-  const [value, ...rest] = main.split(" ");
-  const hasValue = /[0-9+]/.test(value);
-
-  return {
-    value: hasValue ? value : "",
-    label: hasValue ? rest.join(" ") : main,
-    detail: detail.trim(),
-  };
-}
-
-function MetaSeparator({ isDark }) {
+function EngineIcon({ className }) {
   return (
-    <span aria-hidden="true" className={isDark ? "text-white/35" : "text-[var(--color-chrome)]"}>
-      {"\u2022"}
-    </span>
+    <svg aria-hidden="true" viewBox="0 0 24 24" className={className} fill="currentColor">
+      <path d="M7 4v2h3v2H7l-2 2v3H3v-3H1v8h2v-3h2v3h3l2 2h8v-4h2v3h3V9h-3v3h-2V8h-6V6h3V4z" />
+    </svg>
   );
 }
 
-function HeroTitle({ title, isDark }) {
-  const guideIndex = title.indexOf("UK Guide");
-  const textClass = isDark ? "text-white" : "text-[var(--color-text)]";
+// "BMW 3 Series • 1975–Present • 7 Generations • M10, M20, ..." -> brand, middle parts, engines.
+function splitTagPill(tagPill = "") {
+  const parts = String(tagPill).split(/\s*•\s*/).filter(Boolean);
+  const hasEngines = parts.length > 2;
+  return {
+    brand: parts[0] || "",
+    meta: hasEngines ? parts.slice(1, -1) : parts.slice(1),
+    engines: hasEngines ? parts[parts.length - 1] : "",
+  };
+}
 
-  if (guideIndex === -1) {
-    return (
-      <h1
-        className={`max-w-[720px] font-bold tracking-normal ${sectionH1} ${textClass}`}
-        dangerouslySetInnerHTML={{ __html: title }}
-      />
-    );
+// "3 Series Engines - The Complete UK Guide" -> ["3 Series Engines", "The Complete ", "UK Guide"]
+function splitTitle(h1 = "") {
+  const match = String(h1).match(/^(.*?)\s*[-–—]\s*(.*)$/);
+  const first = match ? match[1] : "";
+  const rest = match ? match[2] : String(h1);
+  const accentAt = rest.indexOf("UK Guide");
+  return {
+    first,
+    plain: accentAt === -1 ? rest : rest.slice(0, accentAt),
+    accent: accentAt === -1 ? "" : rest.slice(accentAt),
+  };
+}
+
+// Dashes as in the reference, the enquiry count and the [BMW-VERIFIED] tag picked out.
+function copyHtml(text = "") {
+  return String(text)
+    .replace(/\s+-\s+/g, " — ")
+    .replace(/(\d[\d,]*\+)/, `<span class="${s.num}">$1</span>`)
+    .replace(/(\[[A-Z][A-Z -]+\])/g, `<span class="${s.verified}">$1</span>`);
+}
+
+// Trust strip label -> the pieces each stat shows:
+// "826+ Enquiries (2025) [BMW-VERIFIED] - #1 Most-Enquired BMW Model" -> value, label, tag, detail.
+function parseStat(item, index) {
+  let text = String(item.label || "");
+  const tag = text.match(/\[[^\]]+\]/)?.[0] || "";
+  if (tag) text = text.replace(tag, " ");
+  const [main = "", ...rest] = text.split(/\s+[-–—]\s+/);
+  const clean = main.replace(/\s+/g, " ").trim();
+  const base = { tag, detail: rest.join(" – ").trim(), note: item.note || "" };
+
+  if (/^part of\s/i.test(clean)) {
+    return { ...base, shape: "partof", pre: clean.slice(0, 7), label: clean.slice(8) };
   }
 
-  return (
-    <h1 className={`max-w-[760px] font-bold tracking-normal ${sectionH1} ${textClass}`}>
-      <span dangerouslySetInnerHTML={{ __html: title.slice(0, guideIndex) }} />
-      <span
-        className="text-[var(--color-chrome-bright)]"
-        dangerouslySetInnerHTML={{ __html: title.slice(guideIndex) }}
-      />
-    </h1>
-  );
+  const [first, ...words] = clean.split(" ");
+  if (!/^[\d.,]+\+?$/.test(first)) return { ...base, shape: "plain", label: clean };
+  if (tag || base.detail) return { ...base, shape: "tagged", value: first, label: words.join(" ") };
+  if (index === 1 && words.length > 1) {
+    return { ...base, shape: "split", value: first, label: words[0], sub: words.slice(1).join(" ") };
+  }
+  return { ...base, shape: "stack", value: first, label: words.join(" ") };
 }
 
-function StatCard({ item, index, isDark }) {
-  const stat = splitStat(item.label);
-  const iconKey = trustStripIconKeys[index] || "real-inquiries";
+function Stat({ item, index }) {
+  const stat = parseStat(item, index);
 
   return (
-    <li
-      className={`flex flex-col items-center gap-1.5 border-r px-1 py-0.5 text-center last:border-r-0 md:flex-row md:items-center md:gap-2.5 md:px-4 md:py-3 md:text-left ${
-        isDark ? "border-white/12" : "border-[var(--color-chrome)]/45"
-      }`}
-    >
-      <span className="flex h-14 w-14 shrink-0 items-center justify-center md:h-14 md:w-14">
-        <HomeIcon name={iconKey} isDark={isDark} className="h-14 w-14 object-contain" />
+    <li className={`${s.stat} ${s[stat.shape]}`}>
+      <span className={s.statIcon}>
+        <LineIcon name={STAT_ICONS[index] || "chart"} strokeWidth={1.6} />
       </span>
-      <div className={`min-w-0 flex-1 ${isDark ? "text-white" : "text-[var(--color-text)]"}`}>
-        {stat.value ? (
-          <p className="leading-tight">
-            <strong className="block text-[0.9rem] font-bold leading-none md:inline md:text-[1.05rem]">
-              {stat.value}
-            </strong>
-            {stat.label ? (
-              <span
-                className={`mt-0.5 block text-[11px] leading-[1.25] md:mt-0 md:ml-1.5 md:inline md:text-[0.9rem] md:leading-snug ${
-                  isDark ? "text-white/88" : "text-[var(--color-text)]"
-                }`}
-              >
-                {stat.label}
-              </span>
-            ) : null}
+      <div className={s.statBody}>
+        <p className={s.statHead}>
+          {stat.pre ? <span className={s.pre}>{stat.pre}</span> : null}
+          {stat.value ? <strong className={s.value}>{stat.value}</strong> : null}
+          {stat.label ? <span className={s.label}>{stat.label}</span> : null}
+        </p>
+        {stat.sub ? <p className={s.statSub}>{stat.sub}</p> : null}
+        {stat.tag ? (
+          <p className={s.statTag}>
+            {stat.tag}
+            {stat.detail ? <span className={s.tagDash}> —</span> : null}
           </p>
-        ) : (
-          <p className="text-[11px] font-semibold leading-tight md:text-[0.88rem]">{stat.label}</p>
-        )}
-        {stat.detail ? (
-          <p
-            className={`mt-0.5 text-[10px] leading-[1.25] md:text-[0.72rem] ${
-              isDark ? "text-white/65" : "text-[var(--color-text-muted)]"
-            }`}
-            dangerouslySetInnerHTML={{ __html: stat.detail }}
-          />
         ) : null}
+        {stat.note ? <p className={s.statNote}>{stat.note}</p> : null}
       </div>
+      {stat.detail ? <p className={s.statDetail}>{stat.detail}</p> : null}
     </li>
   );
 }
 
 export default function ModelHero({ data }) {
   const { theme } = useTheme();
+  const upperRef = useRef(null);
+  const wrapRef = useRef(null);
+  const flowRef = useRef(null);
+  const copyRef = useRef(null);
+
+  // Phones: size the invisible float beside the paragraph so its lines follow the diagonal.
+  // Its shape depends on where the paragraph starts and how tall it ends up, so settle in a few passes.
+  useLayoutEffect(() => {
+    const upper = upperRef.current;
+    const wrap = wrapRef.current;
+    const flow = flowRef.current;
+    const copy = copyRef.current;
+    if (!upper || !wrap || !flow || !copy) return undefined;
+
+    let width = 0;
+    const fit = () => {
+      if (getComputedStyle(flow).display === "none") {
+        wrap.style.removeProperty("--flow-top");
+        wrap.style.removeProperty("--flow-h");
+        return;
+      }
+      wrap.style.setProperty("--flow-top", `${wrap.getBoundingClientRect().top - upper.getBoundingClientRect().top}px`);
+      let height = 0;
+      for (let pass = 0; pass < 6; pass += 1) {
+        const next = Math.ceil(copy.getBoundingClientRect().bottom - wrap.getBoundingClientRect().top);
+        if (Math.abs(next - height) < 1) break;
+        height = next;
+        wrap.style.setProperty("--flow-h", `${height}px`);
+      }
+    };
+
+    fit();
+    document.fonts?.ready.then(fit);
+    const observer = new ResizeObserver(([entry]) => {
+      if (Math.round(entry.contentRect.width) === width) return;
+      width = Math.round(entry.contentRect.width);
+      fit();
+    });
+    observer.observe(upper);
+    return () => observer.disconnect();
+  }, [data?.subHeadline, data?.h1, data?.tagPill]);
+
   if (!data) return null;
 
   const isDark = theme === "dark";
-  const meta = splitTagPill(data.tagPill);
+  const pill = splitTagPill(data.tagPill);
+  const title = splitTitle(data.h1);
+  const scene = (!isDark && data.heroSceneLight) || data.heroScene;
   const ctaHref = data.primaryCta?.href && data.primaryCta.href !== "#" ? data.primaryCta.href : "/quote";
-  // The model's own line-up scene sits on the right and fades into the page from the left.
-  // Without one, BMW's background fills the hero with the model's cut-out photo on top.
-  const scene = data.heroScene;
-  const backgroundSrc = scene?.src || heroBackground(isDark);
-  const car = scene ? null : data.heroCar;
-  const wideCar = car && car.width / car.height > 2;
 
   return (
-    <section className="relative left-1/2 w-screen -translate-x-1/2 overflow-hidden bg-[var(--color-page)] text-[var(--color-text)] xl:min-h-[620px]">
-      {scene ? (
-        // The whole line-up scene, zoomed out to fit: anchored to the right edge and the floor so every
-        // generation stands on the ground, its sky fading into the page above and the copy on the left.
-        <div className="absolute inset-y-0 left-[30%] right-0 hidden xl:block min-[1600px]:left-auto min-[1600px]:aspect-[1200/676]">
-          <Image src={scene.src} alt="" fill className="object-contain object-right-bottom" sizes="(min-width: 1280px) 1200px, 100vw" priority />
-          <div className="absolute inset-0 bg-[linear-gradient(90deg,var(--color-page)_0%,color-mix(in_srgb,var(--color-page)_85%,transparent)_14%,color-mix(in_srgb,var(--color-page)_35%,transparent)_30%,transparent_48%)]" />
-          <div className="absolute inset-x-0 top-0 h-24 bg-[linear-gradient(180deg,var(--color-page)_0%,transparent_100%)]" />
-          <div className="absolute inset-x-0 bottom-0 h-8 bg-[linear-gradient(0deg,var(--color-page)_0%,transparent_100%)]" />
-        </div>
-      ) : (
-      <div className="absolute inset-0 hidden xl:block">
-        <Image src={backgroundSrc} alt="" fill className="object-cover object-center" sizes="100vw" priority />
-        <div
-          className={`absolute inset-0 ${
-            isDark
-              ? "bg-[linear-gradient(100deg,rgba(2,7,17,0.97)_0%,rgba(2,7,17,0.9)_41%,rgba(2,7,17,0.28)_67%,rgba(2,7,17,0.12)_100%)]"
-              : "bg-[linear-gradient(90deg,var(--color-hero-fade)_0%,rgba(255,255,255,0.91)_35%,rgba(255,255,255,0.3)_66%,rgba(255,255,255,0.06)_100%)]"
-          }`}
-        />
-        <div className="absolute inset-x-0 bottom-0 h-44 bg-[linear-gradient(0deg,var(--color-page)_0%,transparent_100%)]" />
-      </div>
-      )}
+    <section className={`${inter.className} ${s.section} ${isDark ? s.dark : s.light}`}>
+      <div className={s.frame}>
+        <div className={s.card}>
+          <div ref={upperRef} className={s.upper}>
+            {scene ? (
+              <div className={s.art} aria-hidden="true">
+                <div className={s.panel}>
+                  <div className={s.inner}>
+                    <div className={s.sky} />
+                    <div className={s.photo}>
+                      <Image src={scene.src} alt="" fill sizes="(min-width: 1024px) 70vw, 130vw" priority />
+                      <div className={s.wash} />
+                    </div>
+                  </div>
+                </div>
+                <div className={s.spill}>
+                  <Image src={scene.src} alt="" fill sizes="70vw" />
+                </div>
+                <div className={s.stripe} />
+                <div className={s.scrim} />
+              </div>
+            ) : null}
 
-      <div className="relative mx-auto flex w-full max-w-8xl flex-col px-4 pb-5 pt-3 md:px-8 md:pb-7 md:pt-11 xl:min-h-[620px]">
-        {/* Desktop: the car sits on the right, wholly inside the content width, above the stats strip */}
-        {car ? (
-          <div
-            aria-hidden="true"
-            className={`pointer-events-none absolute right-8 hidden xl:block ${
-              wideCar ? "top-[30%] w-[min(46%,640px)]" : "top-[16%] w-[min(38%,520px)]"
-            }`}
-          >
-            <Image src={car.src} alt="" width={car.width} height={car.height} className="h-auto w-full" sizes="640px" priority />
-          </div>
-        ) : null}
-        <div className="max-w-[650px]">
-          <div
-            className={`inline-flex w-fit max-w-full flex-nowrap items-center gap-x-2 overflow-x-auto whitespace-nowrap rounded-md border px-3 py-2 text-[12px] leading-none md:overflow-x-visible md:gap-x-2.5 md:px-4 md:py-2.5 md:text-[14px] ${
-              isDark
-                ? "border-white/20 bg-[rgba(7,16,26,0.55)] text-white/88"
-                : "border-[var(--color-border)] bg-[rgba(255,255,255,0.72)] text-[var(--color-text-muted)]"
-            }`}
-          >
-            <HomeIcon name="shield" isDark={isDark} className="h-7 w-7 shrink-0 object-contain md:h-8 md:w-8" />
-            <strong className={`shrink-0 font-semibold ${isDark ? "text-white" : "text-[var(--color-text)]"}`}>
-              {meta.brand}
-            </strong>
-            {meta.model ? (
-              <>
-                <MetaSeparator isDark={isDark} />
-                <span className="shrink-0" dangerouslySetInnerHTML={{ __html: meta.model }} />
-              </>
-            ) : null}
-            {meta.years ? (
-              <>
-                <MetaSeparator isDark={isDark} />
-                <span className="shrink-0" dangerouslySetInnerHTML={{ __html: meta.years }} />
-              </>
-            ) : null}
-            {meta.generations ? (
-              <>
-                <MetaSeparator isDark={isDark} />
-                <span className="shrink-0" dangerouslySetInnerHTML={{ __html: meta.generations }} />
-              </>
-            ) : null}
-            {meta.engines ? (
-              <>
-                <MetaSeparator isDark={isDark} />
-                <HomeIcon name="engine" isDark={isDark} className="h-7 w-7 shrink-0 object-contain md:h-8 md:w-8" />
-                <span className="shrink-0" dangerouslySetInnerHTML={{ __html: meta.engines }} />
-              </>
-            ) : null}
-          </div>
+            <div className={s.content}>
+              <div className={s.pill}>
+                <LineIcon name="shield" className={`${s.pillIcon} ${s.pillShield}`} strokeWidth={1.9} />
+                {pill.engines ? <EngineIcon className={`${s.pillIcon} ${s.pillEngineCol}`} /> : null}
+                <p className={s.pillText}>
+                  <span className={s.pillMeta}>
+                    <span className={s.pillBrand} dangerouslySetInnerHTML={{ __html: pill.brand }} />
+                    {pill.meta.map((part) => (
+                      <span key={part}>
+                        <span className={s.dot} aria-hidden="true">•</span>
+                        <span dangerouslySetInnerHTML={{ __html: part }} />
+                      </span>
+                    ))}
+                  </span>
+                  {pill.engines ? (
+                    <>
+                      <span className={`${s.dot} ${s.pillSep}`} aria-hidden="true">•</span>
+                      <EngineIcon className={s.pillEngineInline} />
+                      <span className={s.pillEngines} dangerouslySetInnerHTML={{ __html: pill.engines }} />
+                    </>
+                  ) : null}
+                </p>
+              </div>
 
-          <div className="mt-6 md:mt-8">
-            <HeroTitle title={data.h1} isDark={isDark} />
-            <div className="mt-3">
-              <MStripe />
+              <h1 className={s.title}>
+                {title.first ? (
+                  <>
+                    <span dangerouslySetInnerHTML={{ __html: title.first }} />{" "}
+                    {/* The references use an en dash, except the dark desktop one (em dash). */}
+                    <span className={s.dashEn}>–</span>
+                    <span className={s.dashEm}>—</span>
+                    <br />
+                  </>
+                ) : null}
+                <span dangerouslySetInnerHTML={{ __html: title.plain }} />
+                {title.accent ? <span className={s.titleAccent} dangerouslySetInnerHTML={{ __html: title.accent }} /> : null}
+              </h1>
+
+              <div ref={wrapRef} className={s.copyWrap}>
+                <span ref={flowRef} className={s.copyFlow} aria-hidden="true" />
+                <p ref={copyRef} className={s.copy} dangerouslySetInnerHTML={{ __html: copyHtml(data.subHeadline) }} />
+              </div>
+
+              {data.primaryCta ? (
+                <Link href={ctaHref} className={s.cta}>
+                  <span dangerouslySetInnerHTML={{ __html: data.primaryCta.label.replace(/\s*(?:→|â†’)\s*$/, "") }} />
+                  <LineIcon name="arrow" strokeWidth={2.2} />
+                </Link>
+              ) : null}
             </div>
-            <p
-              className={`mt-4 max-w-[610px] ${sectionDescription} ${isDark ? "text-white/80" : "text-[var(--color-text-muted)]"}`}
-              dangerouslySetInnerHTML={{ __html: data.subHeadline }}
-            />
-
-            {data.primaryCta ? (
-              <Link
-                href={ctaHref}
-                className={`btn-cta mt-5 inline-flex min-h-10 items-center justify-center gap-3 rounded-md px-4 py-2 font-bold shadow-[0_12px_28px_var(--color-shadow)] ${sectionButton} md:min-h-11 md:px-5`}
-              >
-                <span dangerouslySetInnerHTML={{ __html: data.primaryCta.label.replace(/\s*(?:→|â†’)\s*$/, "") }} />
-                <ArrowIcon />
-              </Link>
-            ) : null}
           </div>
-        </div>
 
-        {/* Phones, tablets + small laptops: background and car as their own band, so they never sit behind the copy */}
-        <div className={`relative -mx-4 mt-6 max-h-[440px] w-[calc(100%+2rem)] overflow-hidden md:-mx-8 md:w-[calc(100%+4rem)] xl:hidden ${scene ? "aspect-[16/9]" : "aspect-[16/10]"}`}>
-          <Image src={backgroundSrc} alt="" fill className={`object-cover ${scene ? "object-bottom" : "object-[72%_70%]"}`} sizes="100vw" priority />
-          <div className="absolute inset-x-0 top-0 h-14 bg-[linear-gradient(180deg,var(--color-page)_0%,transparent_100%)]" />
-          <div className="absolute inset-x-0 bottom-0 h-14 bg-[linear-gradient(0deg,var(--color-page)_0%,transparent_100%)]" />
-          {car ? (
-            <div className={`absolute bottom-[9%] left-1/2 -translate-x-1/2 ${wideCar ? "w-[88%]" : "w-[62%]"}`}>
-              <Image src={car.src} alt="" width={car.width} height={car.height} className="h-auto w-full" sizes="90vw" priority />
-            </div>
-          ) : null}
-        </div>
-
-        {data.trustStrip?.length > 0 ? (
-          <div
-            className={`mt-4 w-full max-w-[1000px] overflow-hidden rounded-md backdrop-blur-xl md:rounded-xl xl:mt-auto md:border md:shadow-[0_14px_36px_rgba(10,26,43,0.1)] ${
-              isDark
-                ? "bg-[rgba(7,16,26,0.55)] md:border-white/16 md:shadow-[0_16px_40px_rgba(0,0,0,0.45)]"
-                : "bg-[rgba(255,255,255,0.86)] md:border-[var(--color-border)]"
-            }`}
-          >
-            <ul className="grid grid-cols-4">
+          {data.trustStrip?.length > 0 ? (
+            <ul className={s.stats}>
               {data.trustStrip.map((item, index) => (
-                <StatCard key={item.label} item={item} index={index} isDark={isDark} />
+                <Stat key={item.label} item={item} index={index} />
               ))}
             </ul>
-          </div>
-        ) : null}
+          ) : null}
+        </div>
       </div>
     </section>
   );

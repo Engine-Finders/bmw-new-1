@@ -1,481 +1,254 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useState } from "react";
 import Image from "next/image";
-import MStripe from "@/components/reusableComponents/MStripe";
+import { Inter } from "next/font/google";
 import { useTheme } from "@/components/shared/themeProvider";
-import HomeIcon from "@/components/home/homeIcons";
-import { carImageFor } from "@/components/shared/carImage";
-import { sectionDescription, sectionH2, sectionTableText, tableHeaderClass } from "@/components/models/sectionTypography";
+import s from "./ReplacementCosts.module.css";
+import ReplacementCostsLegacy from "./ReplacementCostsLegacy";
 
+const inter = Inter({ subsets: ["latin"], weight: ["400", "500", "600", "700"], display: "swap" });
 
-const f30Fallback = {
-  title: "F30/F31 - 3 Series (2012–2019)",
-  columns: ["Variant", "Engine Code", "Used (Supply)", "Reconditioned (Supply)", "Rebuilt (Supply)", "Labour Hours"],
-  rows: [
-    {
-      model: "316d–320d (N47 pre-2016)",
-      engineCode: "N47D20C",
-      usedSupply: "£1,800–£3,200",
-      reconditionedSupply: "£3,200–£5,500",
-      rebuiltSupply: "£4,500–£6,500",
-      labourHours: "10–14 hrs",
-    },
-    {
-      model: "316d–320d (B47 2016+)",
-      engineCode: "B47D20A",
-      usedSupply: "£1,500–£2,800",
-      reconditionedSupply: "£2,800–£4,500",
-      rebuiltSupply: "£3,800–£5,800",
-      labourHours: "8–12 hrs",
-    },
-    {
-      model: "325d–330d (N57)",
-      engineCode: "N57D30",
-      usedSupply: "£2,500–£4,500",
-      reconditionedSupply: "£4,500–£7,000",
-      rebuiltSupply: "£6,000–£9,000",
-      labourHours: "12–16 hrs",
-    },
-    {
-      model: "330i (B48)",
-      engineCode: "B48B20",
-      usedSupply: "£1,500–£2,800",
-      reconditionedSupply: "£3,000–£5,000",
-      rebuiltSupply: "£4,200–£6,500",
-      labourHours: "10–14 hrs",
-    },
-    {
-      model: "335i/340i (N55/B58)",
-      engineCode: "N55B30 / B58B30",
-      usedSupply: "£2,000–£4,000",
-      reconditionedSupply: "£3,800–£6,000",
-      rebuiltSupply: "£5,000–£8,000",
-      labourHours: "10–16 hrs",
-    },
-  ],
+// a space before each break keeps words apart where the break is hidden
+const spaced = (html = "") => String(html).replace(/([^-])\s*<br\s*\/?>\s*/g, "$1 <br>");
+
+const KEYS = ["model", "engineCode", "usedSupply", "reconditionedSupply", "rebuiltSupply", "labourHours"];
+
+const ICONS = {
+  pound: (
+    <g fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M12 2.8l7.5 2.8v5.6c0 4.6-3.2 8.2-7.5 10-4.3-1.8-7.5-5.4-7.5-10V5.6z" />
+      <path d="M14 8.6a2 2 0 0 0-3.7 1c0 1.2.5 2 .5 3.1 0 .9-.5 1.6-1.3 2h5M9.4 11.8h3.4" />
+    </g>
+  ),
+  gear: (
+    <g fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinejoin="round">
+      <path d="M10.3 2.8h3.4l.5 2.4 1.8.9 2.1-1.4 2.4 2.4-1.4 2.1.9 1.8 2.4.5v3.4l-2.4.5-.9 1.8 1.4 2.1-2.4 2.4-2.1-1.4-1.8.9-.5 2.4h-3.4l-.5-2.4-1.8-.9-2.1 1.4-2.4-2.4 1.4-2.1-.9-1.8-2.4-.5v-3.4l2.4-.5.9-1.8-1.4-2.1 2.4-2.4 2.1 1.4 1.8-.9z" />
+      <circle cx="12" cy="12" r="3.6" />
+    </g>
+  ),
+  wrench: (
+    <path
+      d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.4-3.4a6 6 0 0 1-7.9 7.9l-6.6 6.6a2.1 2.1 0 0 1-3-3l6.6-6.6a6 6 0 0 1 7.9-7.9z"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.6"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+  ),
+  shield: (
+    <g fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M12 2.8l7.5 2.8v5.6c0 4.6-3.2 8.2-7.5 10-4.3-1.8-7.5-5.4-7.5-10V5.6z" />
+      <path d="M8.6 12.1l2.4 2.4 4.4-4.6" />
+    </g>
+  ),
+  doc: (
+    <g fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M6 2.5h8.5l4 4v15H6z" />
+      <path d="M14.5 2.5v4h4M8.8 10.5h7M8.8 13h7M8.8 15.5h7M8.8 18h5" />
+    </g>
+  ),
+  clock: (
+    <g fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round">
+      <circle cx="12" cy="12" r="9" />
+      <path d="M12 7v5l3 2M12 3.8v1M12 19.2v1M3.8 12h1M19.2 12h1" />
+    </g>
+  ),
+  info: (
+    <g fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round">
+      <circle cx="12" cy="12" r="9" />
+      <path d="M12 11v5.5M12 7.6v.2" strokeWidth="2.2" />
+    </g>
+  ),
+  crown: <path d="M4 17.5L2.8 8.2l4.9 3.6L12 5.2l4.3 6.6 4.9-3.6L20 17.5zM4.6 19.5h14.8" fill="currentColor" stroke="currentColor" strokeWidth="1.2" strokeLinejoin="round" />,
+  shieldBars: (
+    <g>
+      <path d="M12 2.6l8 3v6c0 5-3.4 8.7-8 10.6-4.6-1.9-8-5.6-8-10.6v-6z" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round" />
+      <path d="M8.2 16v-3.2h2v3.2zM11 16v-5h2v5zM13.8 16V9h2v7z" fill="currentColor" />
+    </g>
+  ),
 };
 
-const trustItems = [
-  { title: "Transparent", text: "Real UK Prices", icon: "pound-shield" },
-  { title: "Quality Assured", text: "Tested Engines", icon: "engine" },
-  { title: "Fitted by Experts", text: "Trusted Garages", icon: "fitting-engine" },
-  { title: "12 Months", text: "Warranty", icon: "shield" },
-];
-
-function cleanText(text = "") {
-  return String(text ?? "")
-    .replaceAll("Ã‚Â£", "\u00a3")
-    .replaceAll("Â£", "\u00a3")
-    .replaceAll("Ã¢â‚¬â€œ", "\u2013")
-    .replaceAll("â€“", "\u2013")
-    .replaceAll("Ã¢â‚¬â€", "\u2014")
-    .replaceAll("â€”", "\u2014")
-    .replace(/\s+/g, " ")
-    .trim();
-}
-
-function splitTitle(title = "") {
-  const clean = cleanText(title);
-  const replacementIndex = clean.search(/\bReplacement\b/i);
-
-  if (replacementIndex !== -1) {
-    const endOfWord = replacementIndex + "Replacement".length;
-    return {
-      main: clean.slice(0, endOfWord).trim(),
-      accent: clean.slice(endOfWord).replace(/^[\s\-—]+/, "").trim(),
-    };
-  }
-
-  const byMatch = clean.match(/^(.*?)\s*[-—]\s*(By\s+.+)$/i);
-  if (byMatch) {
-    return { main: byMatch[1].trim(), accent: byMatch[2].trim() };
-  }
-
-  const dashIndex = clean.lastIndexOf(" - ");
-  if (dashIndex !== -1) {
-    return {
-      main: clean.slice(0, dashIndex).trim(),
-      accent: clean.slice(dashIndex + 3).trim(),
-    };
-  }
-
-  return { main: clean, accent: "" };
-}
-
-function tableKey(title = "") {
-  const clean = cleanText(title).toLowerCase();
-  if (clean.includes("classic")) return "classic";
-  if (clean.includes("e46")) return "e46";
-  if (clean.includes("e90")) return "e90";
-  if (clean.includes("f30")) return "f30";
-  if (clean.includes("g20")) return "g20";
-  return "classic";
-}
-
-function tableLabel(title = "") {
-  const clean = cleanText(title);
-  const years = clean.match(/\(([^)]+)\)/)?.[1] || "";
-  const label = clean.replace(/\s*\([^)]+\)\s*$/, "").replace(" - 3 Series", "");
-  return { label, years };
-}
-
-function normalizeTables(tables = []) {
-  const output = [];
-  let insertedF30 = false;
-
-  tables.forEach((table) => {
-    const key = tableKey(table.title);
-
-    if (key === "f30") {
-      if (!insertedF30) {
-        output.push(table.rows?.length ? table : f30Fallback);
-        insertedF30 = true;
-      }
-      return;
-    }
-
-    if (table.rows?.length) output.push(table);
-  });
-
-  return output;
-}
-
-function splitFiguresNote(note = "", economicsBox) {
-  const clean = cleanText(typeof note === "string" ? note : "");
-  const econText =
-    economicsBox && typeof economicsBox === "object"
-      ? cleanText(economicsBox.text || "")
-      : cleanText(typeof economicsBox === "string" ? economicsBox : "");
-
-  // Split once, right before "The <Model> rule"; a leading \s* in the lookahead matched twice
-  // (before and after the space) and lost the rule text.
-  const ruleIndex = clean.search(/\bThe\s+[\wÀ-ÿ\-\u2011]+\s+rule\b/i);
-  const ruleSplit = ruleIndex > -1 ? [clean.slice(0, ruleIndex), clean.slice(ruleIndex)] : [clean];
-  const labourPart = (ruleSplit[0] || clean).replace(/^Labour estimate:\s*/i, "").trim();
-  const ruleRaw = (ruleSplit[1] || "").trim();
-  const ruleBody = ruleRaw.replace(/^The\s+.+?\s+rule\s*[-—:]\s*/i, "").trim() || econText;
-
-  return {
-    important: labourPart || clean || "Figures are UK specialist supply-only rates [BMW-QUOTE].",
-    labour: labourPart || clean,
-    rule: ruleBody,
-    ruleHeading: ruleRaw.match(/^(The\s+.+?\s+rule\s*[-—:][^\n:]*)/i)?.[1]?.trim() || "",
-  };
-}
-
-function FloatNoteText({ html, title, iconName, isDark }) {
-  const clean = cleanText(html);
-  if (!clean) return null;
-
+function Icon({ name, className }) {
   return (
-    <div className="overflow-hidden">
-      <span
-        className={`float-left mr-3 mb-1 grid h-16 w-16 shrink-0 place-items-center rounded-full ${
-          isDark ? "bg-white/10" : "bg-[#eef2f7]"
-        }`}
-      >
-        <HomeIcon name={iconName} isDark={isDark} className="h-10 w-10 object-contain" />
-      </span>
-      <p className="text-[15px] leading-[1.5] text-[var(--color-text)]">
-        <strong className="font-bold">{title}</strong>{" "}
-        <span dangerouslySetInnerHTML={{ __html: clean }} />
-      </p>
-    </div>
+    <svg aria-hidden="true" viewBox="0 0 24 24" className={className}>
+      {ICONS[name]}
+    </svg>
   );
 }
 
-function TrustStrip({ isDark }) {
+function CostTable({ columns, rows, mobile, className }) {
   return (
-    <div className="grid grid-cols-4 overflow-hidden rounded-md border border-[var(--color-border)] bg-[var(--color-surface-raised)] shadow-[0_8px_24px_var(--color-shadow)]">
-      {trustItems.map((item) => (
-        <div
-          key={item.title}
-          className="flex flex-col items-center justify-center border-r border-[var(--color-border)] px-1.5 py-3 text-center last:border-r-0 md:px-4 md:py-3.5"
-        >
-          <span
-            className={`flex h-12 w-12 items-center justify-center rounded-full md:h-14 md:w-14 ${
-              isDark ? "bg-white/10" : "bg-[#eef2f7]"
-            }`}
-          >
-            <HomeIcon name={item.icon} isDark={isDark} className="h-9 w-9 object-contain md:h-11 md:w-11" />
-          </span>
-          <strong className="mt-1.5 text-[13px] leading-[1.1] text-[var(--color-text)] md:text-[15px]">
-            {item.title}
-          </strong>
-          <span className="mt-0.5 text-[12px] leading-[1.1] text-[var(--color-text-muted)] md:text-[13px]">
-            {item.text}
-          </span>
+    <div className={`${s.table} ${className || ""}`} role="table">
+      <div className={`${s.tr} ${s.thead}`} role="row">
+        {columns.map((column) => (
+          <span key={column} role="columnheader" dangerouslySetInnerHTML={{ __html: spaced(column) }} />
+        ))}
+      </div>
+      {rows.map((row) => (
+        <div key={row.model} className={s.tr} role="row">
+          {KEYS.map((key) => {
+            const value = (mobile && row[`${key}Mobile`]) || row[key];
+            // phones break prices after the dash, as in the phone reference
+            const html = mobile && /Supply$/.test(key) ? String(value).replace(" – ", " –<br>") : value;
+            return <span key={key} role="cell" dangerouslySetInnerHTML={{ __html: spaced(html) }} />;
+          })}
         </div>
       ))}
     </div>
   );
 }
 
-function CostTable({ table, isDark }) {
-  if (!table) return null;
-
-  const columns = table.columns || [];
-
-  return (
-    <div className="overflow-hidden rounded-md border border-[var(--color-border)] bg-[var(--color-surface)]">
-      <table className="w-full border-collapse text-left text-[14px] text-[var(--color-text)] md:text-[15px]">
-        <thead>
-          <tr className={tableHeaderClass(isDark)}>
-            {columns.map((column) => (
-              <th
-                key={column}
-                className="border-r border-white/20 px-2 py-2 text-left font-bold last:border-r-0 md:px-4 md:py-2"
-              >
-                {column}
-              </th>
-            ))}
-          </tr>
-        </thead>
-        <tbody>
-          {(table.rows || []).map((row) => (
-            <tr key={`${row.model}-${row.engineCode}`}>
-              <td className="border-r border-t border-[var(--color-border)] px-2 py-2 font-bold md:px-4 md:py-2" dangerouslySetInnerHTML={{ __html: cleanText(row.model) }} />
-              <td className="border-r border-t border-[var(--color-border)] px-2 py-2 md:px-4 md:py-2">
-                {cleanText(row.engineCode)}
-              </td>
-              <td className="border-r border-t border-[var(--color-border)] px-2 py-2 font-normal text-[var(--color-text)] md:px-4 md:py-2">
-                {cleanText(row.usedSupply)}
-              </td>
-              <td className="border-r border-t border-[var(--color-border)] px-2 py-2 font-normal text-[var(--color-text)] md:px-4 md:py-2">
-                {cleanText(row.reconditionedSupply)}
-              </td>
-              <td className="border-r border-t border-[var(--color-border)] px-2 py-2 font-normal text-[var(--color-text)] md:px-4 md:py-2">
-                {cleanText(row.rebuiltSupply)}
-              </td>
-              <td className="border-t border-[var(--color-border)] px-2 py-2 text-center md:px-4 md:py-2">
-                {cleanText(row.labourHours)}
-              </td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
-    </div>
-  );
+function CarImage({ src, sizes }) {
+  if (!src) return null;
+  return <Image src={src} alt="" fill className={s.carImg} sizes={sizes} />;
 }
 
-function DesktopGenerationRow({ table, isDark }) {
-  const { label, years } = tableLabel(table.title);
-
-  return (
-    <div className="grid gap-0 md:grid-cols-[260px_minmax(0,1fr)]">
-      <div className="border border-r-0 border-[var(--color-border)] bg-[var(--color-surface-raised)] p-3.5 md:rounded-l-md md:p-4">
-        <h3 className="text-[17px] font-bold leading-[1.08] text-[var(--color-text)] md:text-[19px]">{label}</h3>
-        <p className={`mt-1 ${sectionTableText}`}>{years}</p>
-        {table.subtitle ? <p className={`${sectionTableText} text-[var(--color-text-muted)]`}>({cleanText(table.subtitle)})</p> : null}
-        <div className="relative mt-2 h-[130px] overflow-hidden rounded-md md:h-[160px]">
-          {table.image ? <Image src={table.image} alt="" fill className="object-contain object-center" sizes="260px" /> : null}
-        </div>
-      </div>
-      <CostTable table={table} isDark={isDark} />
-    </div>
-  );
-}
-
-function MobileTabs({ tables, isDark }) {
-  const [activeIndex, setActiveIndex] = useState(0);
-  const activeTable = tables[activeIndex] || tables[0];
-  if (!activeTable) return null;
-
-  const active = tableLabel(activeTable?.title);
-
-  return (
-    <div className="md:hidden">
-      <div className="overflow-hidden rounded-t-md border border-[var(--color-border)] bg-[var(--color-surface)]">
-        <div className="flex overflow-x-auto">
-          {tables.map((table, index) => {
-            const label = tableLabel(table.title);
-            const selected = index === activeIndex;
-
-            return (
-              <button
-                key={table.title}
-                type="button"
-                onClick={() => setActiveIndex(index)}
-                className={`min-w-[150px] border-r border-[var(--color-border)] px-3 py-3.5 text-center last:border-r-0 transition-all duration-200 hover:shadow-[0_12px_24px_rgba(0,0,0,0.14)] ${
-                  selected
-                    ? isDark
-                      ? "bg-[var(--color-chrome)] text-[var(--color-page)]"
-                      : "bg-[var(--color-primary)] text-white"
-                    : "bg-[var(--color-surface)] text-[var(--color-text)]"
-                }`}
-              >
-                <span className="block text-[0.95rem] font-bold leading-tight">{label.label}</span>
-                <span className="mt-1 block text-[14px] leading-tight">{label.years}</span>
-              </button>
-            );
-          })}
-        </div>
-      </div>
-
-      <article className="rounded-b-md border border-t-0 border-[var(--color-border)] bg-[var(--color-surface-raised)] p-4">
-        <h3 className="font-heading text-[1.75rem] font-semibold leading-tight text-[var(--color-text)]">
-          <span dangerouslySetInnerHTML={{ __html: active.label }} />{" "}
-          {active.years ? (
-            <span className="text-[var(--color-chrome-bright)]">
-              (<span dangerouslySetInnerHTML={{ __html: active.years }} />)
-            </span>
-          ) : null}
-        </h3>
-        <div className="relative mt-3 h-[230px] overflow-hidden rounded-md">
-          {activeTable.image ? <Image src={activeTable.image} alt="" fill className="object-contain object-center" sizes="100vw" /> : null}
-        </div>
-        <div className="mt-4 overflow-x-auto">
-          <div className="min-w-[720px]">
-            <CostTable table={activeTable} isDark={isDark} />
-          </div>
-        </div>
-        <div className="mt-4 flex items-center gap-3 rounded-md bg-[var(--color-page-soft)] px-4 py-3 text-[15px] text-[var(--color-text)]">
-          <span
-            className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-full ${
-              isDark ? "bg-white/10" : "bg-[#eef2f7]"
-            }`}
-          >
-            <HomeIcon name="note" isDark={isDark} className="h-7 w-7 object-contain" />
-          </span>
-          Prices are supply only. Labour and ancillary parts extra.
-        </div>
-      </article>
-    </div>
-  );
-}
-
-function Notes({ parts, isDark, ruleTitle }) {
-  return (
-    <div className="grid gap-4 md:grid-cols-[1.15fr_0.85fr]">
-      <div className="grid gap-4 rounded-md border border-[var(--color-border)] bg-[var(--color-surface-raised)] p-5 md:grid-cols-2">
-        <div className="border-[var(--color-border)] md:border-r md:pr-6">
-          <FloatNoteText title="Important Notes" iconName="note" html={parts.important} isDark={isDark} />
-        </div>
-        <div>
-          <FloatNoteText title="Labour Estimate" iconName="info" html={parts.labour} isDark={isDark} />
-        </div>
-      </div>
-
-      <div className="inline-flex w-fit max-w-[620px] flex-row gap-4 self-start rounded-md border border-[var(--color-border-strong)] bg-[var(--color-surface-raised)] p-4 text-[var(--color-text)] md:p-5">
-        <span
-          className={`hidden h-16 w-16 shrink-0 items-center justify-center rounded-full md:flex ${
-            isDark ? "bg-white/10" : "bg-[#eef2f7]"
-          }`}
-        >
-          <HomeIcon name="crown" isDark={isDark} className="h-12 w-12 object-contain md:h-14 md:w-14" />
-        </span>
-        <div className="max-w-[540px]">
-          <h3 className="text-[24px] font-bold leading-[1.12] text-[var(--color-chrome-bright)] md:text-[30px]">
-            {ruleTitle}
-          </h3>
-          <p
-            className="mt-2 text-[14px] leading-[1.5] md:text-[15px]"
-            dangerouslySetInnerHTML={{ __html: parts.rule }}
-          />
-          <p className="mt-2 font-bold">Value the car first; the engine decision follows.</p>
-        </div>
-      </div>
-    </div>
-  );
-}
-
+// Model JSONs migrated to the reference design carry `generations`; the rest keep the previous layout.
 export default function ReplacementCosts({ data }) {
-  const { theme } = useTheme();
-  const tables = useMemo(
-    () => normalizeTables(data?.tables || []).map((table) => ({ ...table, image: table.image || carImageFor(table.title, data?.h2) })),
-    [data]
-  );
   if (!data) return null;
+  return data.generations ? <ReplacementCostsReference data={data} /> : <ReplacementCostsLegacy data={data} />;
+}
 
+function ReplacementCostsReference({ data }) {
+  const { theme } = useTheme();
+  const [tab, setTab] = useState(0);
   const isDark = theme === "dark";
-  const title = splitTitle(data.h2);
-  const notes = splitFiguresNote(data.figuresNote || data.labourEstimate, data.economicsBox);
-  const sectionBg = isDark ? "bg-[var(--color-page)]" : "bg-[#eef2f7]";
-  const ruleTitle =
-    notes.ruleHeading ||
-    (cleanText(data.h2).match(/^([^-]+)/)?.[1]?.trim()
-      ? `The ${cleanText(data.h2).match(/^([^-]+)/)[1].trim()} rule - generation is everything:`
-      : "The ownership rule - generation is everything:");
+  const gens = data.generations || [];
+  const title = String(data.h2).match(/^(.*?\s[-–—])\s+(.*)$/) || [null, data.h2, ""];
+  const active = gens[tab] || gens[0];
 
   return (
-    <section className={`overflow-x-hidden ${sectionBg} text-[var(--color-text)]`}>
-      <div className={`relative overflow-hidden ${sectionBg}`}>
-        <div className="absolute inset-y-0 right-0 w-[62%] md:w-[48%]">
-          <Image
-            src="/home-image/sec2-bg.webp"
-            alt=""
-            fill
-            className="object-cover object-right"
-            sizes="(max-width: 768px) 62vw, 48vw"
-          />
-          <div
-            className={
-              isDark
-                ? "absolute inset-0 bg-[linear-gradient(90deg,var(--color-page)_0%,rgba(2,7,11,0.82)_34%,rgba(2,7,11,0.18)_100%)]"
-                : "absolute inset-0 bg-[linear-gradient(90deg,#eef2f7_0%,rgba(244,247,251,0.88)_34%,rgba(244,247,251,0.18)_100%)]"
-            }
-          />
-        </div>
-
-        <div className="relative mx-auto w-full max-w-8xl px-4 pb-3 pt-5 md:px-6 md:pb-3.5 md:pt-7 lg:px-8">
-          <div className="flex flex-col gap-5 md:grid md:grid-cols-[minmax(0,1fr)_560px] md:items-start">
-            <div>
-              <h2 className={`max-w-[900px] ${sectionH2} tracking-normal`}>
-                <span dangerouslySetInnerHTML={{ __html: title.main }} />
-                {title.accent ? (
-                  <>
-                    <br />
-                    <span
-                      className="text-[var(--color-chrome-bright)]"
-                      dangerouslySetInnerHTML={{ __html: title.accent }}
-                    />
-                  </>
-                ) : null}
+    <section id="replacement-costs" className={`${inter.className} ${s.section} ${isDark ? s.dark : s.light}`}>
+      <div className={s.frame}>
+        <div className={s.panel}>
+          <div className={s.top}>
+            <div className={s.head}>
+              <h2 className={s.title}>
+                <span dangerouslySetInnerHTML={{ __html: String(title[1]).replace(/\s([-–—])$/, "\u00a0$1") }} />
+                <br />
+                <span className={s.accent}>{title[2]}</span>
               </h2>
-              <div className="mt-3">
-                <MStripe />
+              <p className={`${s.copy} ${s.deskOnly}`} dangerouslySetInnerHTML={{ __html: spaced(data.subHeadline) }} />
+              <p className={`${s.copy} ${s.phoneOnly}`} dangerouslySetInnerHTML={{ __html: spaced(data.subHeadlineMobile || data.subHeadline) }} />
+            </div>
+            {data.headerImageMobile ? (
+              <div className={`${s.headCar} ${s.phoneOnly}`}>
+                <CarImage src={isDark ? gens[0]?.images?.dark : data.headerImageMobile} sizes="(max-width: 1023px) 48vw, 1px" />
               </div>
-              {data.subHeadline ? (
-                <p className={`mt-3 max-w-[520px] ${sectionDescription} text-[var(--color-text-muted)]`}>
-                  {cleanText(data.subHeadline)}
-                </p>
-              ) : null}
-            </div>
-
-            <div className="hidden md:block">
-              <TrustStrip isDark={isDark} />
-            </div>
-
-            <div className="md:hidden">
-              <TrustStrip isDark={isDark} />
-            </div>
+            ) : null}
+            <ul className={s.trust}>
+              {(data.trust || []).map((item) => (
+                <li key={item.title} className={s.trustItem}>
+                  <Icon name={item.icon} className={s.trustIcon} />
+                  <strong>{item.title}</strong>
+                  <span>{item.text}</span>
+                </li>
+              ))}
+            </ul>
           </div>
-        </div>
-      </div>
 
-      <div className="mx-auto w-full min-w-0 max-w-8xl px-4 pb-5 pt-2 md:px-6 md:pb-6 md:pt-2.5 lg:px-8">
-        {tables.length > 0 ? (
-          <>
-            <div className="hidden space-y-3 md:block">
-              {tables.map((table) => (
-                <DesktopGenerationRow key={table.title} table={table} isDark={isDark} />
+          {/* desktop: one row per generation, car card + table */}
+          <div className={`${s.gens} ${s.deskOnly}`}>
+            {gens.map((gen) => (
+              <div key={gen.key} className={s.gen}>
+                <div className={s.genCard}>
+                  <p className={s.genTitle}>{gen.title}</p>
+                  <p className={s.genYears}>{gen.years}</p>
+                  <div className={s.genCar}>
+                    <CarImage src={isDark ? gen.images?.dark : gen.images?.light} sizes="(min-width: 1024px) 20vw, 1px" />
+                  </div>
+                </div>
+                <CostTable columns={data.columns} rows={gen.rows} />
+              </div>
+            ))}
+          </div>
+
+          {/* phones: tabs, one generation at a time */}
+          <div className={s.phoneOnly}>
+            <div className={s.tabs} role="tablist">
+              {gens.map((gen, index) => (
+                <button key={gen.key} type="button" role="tab" aria-selected={tab === index} className={`${s.tab} ${tab === index ? s.tabOn : ""}`} onClick={() => setTab(index)}>
+                  <strong>{gen.tab}</strong>
+                  <span>{gen.tabYears}</span>
+                </button>
               ))}
             </div>
+            {active ? (
+              <div className={s.pCard} role="tabpanel">
+                <p className={s.pTitle}>
+                  {active.title} <span>{active.mobileYears}</span>
+                </p>
+                <div className={s.pCar}>
+                  <CarImage src={(isDark ? active.images?.dark : active.images?.phone) || active.images?.light} sizes="(max-width: 1023px) 60vw, 1px" />
+                </div>
+                <CostTable columns={data.columnsMobile || data.columns} rows={active.rows} mobile className={s.pTable} />
+                {data.mobileNote ? (
+                  <p className={s.pNote}>
+                    <Icon name="info" className={s.pNoteIcon} />
+                    {data.mobileNote}
+                  </p>
+                ) : null}
+              </div>
+            ) : null}
+          </div>
 
-            <div>
-              <MobileTabs tables={tables} isDark={isDark} />
+          <div className={s.bottom}>
+            <div className={s.notes}>
+              {data.notes ? (
+                <div className={s.note}>
+                  <Icon name="doc" className={s.noteIcon} />
+                  <div>
+                    <p className={s.noteTitle}>{data.notes.title}</p>
+                    <p className={`${s.noteText} ${s.deskOnly}`} dangerouslySetInnerHTML={{ __html: spaced(data.notes.text) }} />
+                    <ul className={`${s.noteList} ${s.phoneOnly}`}>
+                      {(data.notes.mobileBullets || []).map((bullet) => (
+                        <li key={bullet} dangerouslySetInnerHTML={{ __html: spaced(bullet) }} />
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+              ) : null}
+              {data.labour ? (
+                <div className={`${s.note} ${s.deskFlex}`}>
+                  <Icon name="clock" className={s.noteIcon} />
+                  <div>
+                    <p className={s.noteTitle}>{data.labour.title}</p>
+                    <p className={s.noteText} dangerouslySetInnerHTML={{ __html: spaced(data.labour.text) }} />
+                  </div>
+                </div>
+              ) : null}
             </div>
-          </>
-        ) : null}
-
-        <div className="mt-5">
-          <Notes parts={notes} isDark={isDark} ruleTitle={ruleTitle} />
+            {data.rule ? (
+              <div className={s.rule}>
+                <span className={s.crown}>
+                  <Icon name="crown" className={s.crownSvg} />
+                </span>
+                <div className={s.ruleBody}>
+                  <p className={s.ruleTitle}>{data.rule.title}</p>
+                  <p className={`${s.ruleText} ${s.deskOnly}`} dangerouslySetInnerHTML={{ __html: spaced(data.rule.text) }} />
+                  <div className={s.phoneOnly}>
+                    {(data.rule.mobileParagraphs || []).map((paragraph) => (
+                      <p key={paragraph} className={s.ruleText} dangerouslySetInnerHTML={{ __html: paragraph }} />
+                    ))}
+                  </div>
+                </div>
+                <Icon name="shieldBars" className={s.ruleShield} />
+              </div>
+            ) : null}
+            {data.footerMobile ? (
+              <p className={`${s.footer} ${s.phoneOnly}`}>
+                {data.footerMobile.map((part, index) => (
+                  <span key={part}>
+                    {index ? <span className={s.bullet}>•</span> : null}
+                    {part}
+                  </span>
+                ))}
+              </p>
+            ) : null}
+          </div>
         </div>
-
-        <p className="mt-5 text-center text-[15px] text-[var(--color-text-soft)] md:hidden">
-          All prices in GBP (£) &nbsp; • &nbsp; Supply only &nbsp; • &nbsp; Subject to availability and condition
-        </p>
       </div>
     </section>
   );

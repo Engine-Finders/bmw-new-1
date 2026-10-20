@@ -1,0 +1,985 @@
+/*
+ * Model page hero, built to the reference designs (light + dark desktop, phone).
+ * Sizes are reference pixels times --u, so the card is the reference scaled to its own width:
+ * below 1024px the 976px-wide phone card, from 1024px the 1628px-wide desktop card.
+ * Text has a floor (max(…px, …)) so it stays readable on small phones and small laptops.
+ */
+
+.section {
+  padding: 0 2.34vw 12px;
+}
+
+.frame {
+  container-type: inline-size;
+  max-width: 1628px;
+  margin: 0 auto;
+}
+
+.card {
+  --u: calc(100cqw / 976);
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  border-radius: calc(22 * var(--u));
+  background: var(--hero-bg);
+  color: var(--hero-text);
+  box-shadow: var(--hero-shadow);
+}
+
+/* ---------- theme tokens ---------- */
+
+.light {
+  --hero-bg: #ffffff;
+  --hero-text: #0a0f1c;
+  --hero-muted: #3d4350;
+  --hero-accent: #0656e8;
+  --hero-brand: #1d5bd6;
+  --hero-shadow: 0 0 0 1px #edf0f4, 0 6px 24px rgba(15, 30, 60, 0.06);
+  --pill-border: #bacae5;
+  --pill-bg: rgba(255, 255, 255, 0.85);
+  --pill-text: #13161e;
+  --pill-icon: #1d5bd6;
+  --cta-bg: #024fe9;
+  --cta-text: #ffffff;
+  --cta-shadow: 0 10px 24px rgba(2, 79, 233, 0.2);
+  --verified: #0a4fd6;
+  --sky: linear-gradient(90deg, #eff4fb 0%, #e9f1fa 50%, #e4ecf6 100%);
+  --photo-filter: none;
+  --wash: linear-gradient(0deg, #ffffff 0%, rgba(255, 255, 255, 0.6) 9%, rgba(255, 255, 255, 0) 24%);
+  /* Light reference: a crisp deeper-blue line with a pale-blue line beside it, fading out before the cars. */
+  --stripe: linear-gradient(90deg, transparent 0 14%, rgba(58, 128, 252, 0.4) 14% 58%, rgba(58, 128, 252, 0.2) 58% 96%, transparent 96%);
+  --stripe-mask: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0.9) 22%, rgba(0, 0, 0, 0.62) 42%, rgba(0, 0, 0, 0.22) 58%, transparent 68%);
+  --stat-bg: #ffffff;
+  --stat-border: #e6eaf0;
+  --stat-shadow: 0 10px 30px rgba(20, 40, 80, 0.08);
+  --stat-divider: #e3e4e8;
+  --stat-icon: #1a5fd6;
+  --stat-circle: #f0f5fd;
+  --stat-circle-border: #dce7f8;
+  --stat-text: #0a0f1c;
+  --stat-muted: #3d4350;
+  --stat-tag: #0a4fd6;
+}
+
+.dark {
+  --hero-bg: #00102a;
+  --hero-text: #ffffff;
+  --hero-muted: rgba(255, 255, 255, 0.92);
+  --hero-accent: #2f6ff0;
+  --hero-brand: #ffffff;
+  --hero-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  --pill-border: rgba(150, 160, 190, 0.5);
+  --pill-bg: rgba(0, 16, 42, 0.35);
+  --pill-text: #ffffff;
+  --pill-icon: #ffffff;
+  --cta-bg: #ffffff;
+  --cta-text: #0a47d1;
+  --cta-shadow: none;
+  --verified: #2f6ff0;
+  --sky: linear-gradient(90deg, #cfe0f3 0%, #b5d4f4 50%, #91bdee 100%);
+  --photo-filter: brightness(0.86) saturate(1.45) contrast(1.08);
+  --ground: linear-gradient(180deg, #ffffff 0%, #7f93b8 30%, #0b2148 68%, #00102a 100%);
+  --wash: linear-gradient(180deg, rgba(12, 44, 110, 0.5) 0%, rgba(12, 44, 110, 0.32) 30%, rgba(12, 44, 110, 0) 48%, rgba(0, 16, 42, 0) 78%, #00102a 100%);
+  --stripe: linear-gradient(90deg, rgba(2, 40, 100, 0.45) 0%, rgba(4, 44, 104, 0.6) 100%);
+  --stripe-mask: linear-gradient(180deg, #000 0%, #000 78%, transparent 92%);
+  --stat-bg: rgba(255, 255, 255, 0.025);
+  --stat-border: rgba(255, 255, 255, 0.14);
+  --stat-shadow: none;
+  --stat-divider: rgba(255, 255, 255, 0.13);
+  --stat-icon: #2f72ee;
+  --stat-circle: rgba(10, 30, 70, 0.35);
+  --stat-circle-border: rgba(64, 100, 190, 0.6);
+  --stat-text: #ffffff;
+  --stat-muted: rgba(255, 255, 255, 0.9);
+  --stat-tag: #2f6ff0;
+}
+
+/* ---------- top block: copy over the diagonal photo panel ---------- */
+
+.upper {
+  position: relative;
+  padding: calc(31 * var(--u)) calc(40 * var(--u)) calc(34 * var(--u));
+}
+
+.art {
+  --edge: 748;
+  --skew: 26.565deg;
+  --stripe-w: 40;
+  --img-left: -311;
+  --img-w: 1287;
+  /* Phone card: the car's front wheels sit just under the CTA's top edge (0 at reference size). */
+  --photo-bottom: calc(3.33 * calc(24 * var(--u)) - 80 * var(--u));
+  position: absolute;
+  inset: 0 0 calc(-11 * var(--u)) 0;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Skewed so the left edge is the diagonal; the inner layer is skewed back so the photo stays straight. */
+.panel,
+.stripe {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  transform: skewX(calc(-1 * var(--skew)));
+  transform-origin: 0 0;
+}
+
+.panel {
+  left: calc(var(--edge) * var(--u));
+  width: 400%;
+  overflow: hidden;
+}
+
+.inner {
+  --bleed: 3000;
+  position: absolute;
+  inset: 0 0 0 calc(var(--bleed) * var(--u) * -1);
+  transform: skewX(var(--skew));
+  transform-origin: calc(var(--bleed) * var(--u)) 0;
+  background: var(--hero-bg);
+}
+
+/* The photo's own top colours carry on above it, so a short copy block never shows a hard edge. */
+.sky,
+.photo {
+  position: absolute;
+  left: calc((var(--img-left) - var(--edge) + var(--bleed)) * var(--u));
+  width: calc(var(--img-w) * var(--u));
+}
+
+.sky {
+  top: 0;
+  bottom: calc(var(--photo-bottom) + var(--img-w) * var(--u) * 0.28);
+  background: var(--sky);
+  filter: var(--photo-filter);
+}
+
+.photo {
+  bottom: var(--photo-bottom);
+  aspect-ratio: 1672 / 941;
+  -webkit-mask-image: linear-gradient(180deg, transparent 0%, #000 9%);
+  mask-image: linear-gradient(180deg, transparent 0%, #000 9%);
+}
+
+.photo img {
+  object-fit: cover;
+  object-position: center bottom;
+  filter: var(--photo-filter);
+}
+
+.dark .photo::after {
+  content: "";
+  position: absolute;
+  inset: 50% 0 0;
+  background: var(--ground);
+  mix-blend-mode: multiply;
+}
+
+.wash {
+  position: absolute;
+  z-index: 1;
+  inset: 0;
+  background: var(--wash);
+}
+
+/* Light desktop reference: the line-up spills past the diagonal onto the white, fading out. */
+.spill,
+.scrim {
+  display: none;
+}
+
+.stripe {
+  left: calc((var(--edge) - var(--stripe-w)) * var(--u));
+  width: calc(var(--stripe-w) * var(--u));
+  background: var(--stripe);
+  -webkit-mask-image: var(--stripe-mask);
+  mask-image: var(--stripe-mask);
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+}
+
+/* ---------- tag pill: [shield] meta line / [engine] engine list ---------- */
+
+.pill {
+  display: grid;
+  grid-template-columns: 1.72em auto;
+  column-gap: 0.83em;
+  align-items: center;
+  width: min(100%, 27.06em);
+  padding: 0.6em 0.98em 0.35em 1.15em;
+  border: 1.5px solid var(--pill-border);
+  border-radius: 1.08em;
+  background: var(--pill-bg);
+  color: var(--pill-text);
+  font-size: calc(20.4 * var(--u));
+  line-height: 1.62;
+}
+
+.pill a {
+  color: inherit;
+  font-weight: inherit;
+}
+
+.pillIcon {
+  justify-self: center;
+  color: var(--pill-icon);
+}
+
+.pillShield {
+  grid-column: 1;
+  grid-row: 1;
+  width: 1.72em;
+  height: 1.72em;
+}
+
+.pillEngineCol {
+  grid-column: 1;
+  grid-row: 2;
+  width: 1.7em;
+  height: 1.7em;
+}
+
+.pillText {
+  display: contents;
+}
+
+.pillMeta {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.pillEngines {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.pillBrand {
+  color: var(--hero-brand);
+}
+
+.dot {
+  display: inline-block;
+  margin: 0 0.2em;
+}
+
+.pillSep,
+.pillEngineInline {
+  display: none;
+}
+
+.copyFlow {
+  display: none;
+}
+
+/* ---------- heading, copy, CTA ---------- */
+
+.title {
+  margin: calc(28.5 * var(--u)) 0 0;
+  font-size: calc(56.2 * var(--u));
+  font-weight: 700;
+  line-height: 1.22;
+  letter-spacing: -0.012em;
+  color: var(--hero-text);
+}
+
+.dashEm {
+  display: none;
+}
+
+.titleAccent {
+  display: block;
+  color: var(--hero-accent);
+}
+
+.copy {
+  /* with the slight word spacing, Inter breaks the lines exactly where the phone reference does */
+  max-width: 20.31em;
+  margin: calc(21.5 * var(--u)) 0 0;
+  word-spacing: 0.04em;
+  font-size: calc(20.3 * var(--u));
+  line-height: 1.75;
+  color: var(--hero-muted);
+}
+
+.verified {
+  font-weight: 600;
+  color: var(--verified);
+}
+
+.cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 1.17em;
+  height: 3.33em;
+  margin-top: calc(23 * var(--u));
+  padding: 0 1.33em 0 1.42em;
+  border-radius: 0.42em;
+  background: var(--cta-bg);
+  color: var(--cta-text);
+  box-shadow: var(--cta-shadow);
+  font-size: calc(24 * var(--u));
+  font-weight: 600;
+  white-space: nowrap;
+  transition: filter 0.2s ease;
+}
+
+.cta:hover {
+  filter: brightness(0.93);
+}
+
+.cta svg {
+  width: 1.05em;
+  height: 1.05em;
+  stroke-width: 2.6;
+}
+
+/* ---------- stats: 2 x 2 cards ---------- */
+
+.stats {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: calc(21 * var(--u)) calc(23 * var(--u));
+  margin: 0 calc(39 * var(--u)) calc(25 * var(--u));
+  padding: 0;
+  list-style: none;
+}
+
+.stat {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: calc(205 * var(--u));
+  padding: calc(26 * var(--u)) calc(20 * var(--u)) calc(24 * var(--u)) calc(149 * var(--u));
+  border: 1px solid var(--stat-border);
+  border-radius: calc(18 * var(--u));
+  background: var(--stat-bg);
+  color: var(--stat-text);
+}
+
+.statIcon {
+  position: absolute;
+  top: calc(34 * var(--u));
+  left: calc(25 * var(--u));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: calc(96 * var(--u));
+  height: calc(96 * var(--u));
+  border: 1.5px solid var(--stat-circle-border);
+  border-radius: 50%;
+  background: var(--stat-circle);
+  color: var(--stat-icon);
+}
+
+.statIcon svg {
+  width: 50%;
+  height: 50%;
+}
+
+.statHead,
+.statSub,
+.statTag,
+.statDetail,
+.statNote {
+  margin: 0;
+}
+
+.value {
+  display: block;
+  font-size: calc(34 * var(--u));
+  font-weight: 700;
+  line-height: 1.18;
+}
+
+.label,
+.statSub {
+  display: block;
+  font-size: calc(24.5 * var(--u));
+  line-height: 1.3;
+}
+
+.pre {
+  display: block;
+  font-size: calc(21.5 * var(--u));
+  line-height: 1.4;
+}
+
+.statTag {
+  font-size: calc(21.3 * var(--u));
+  font-weight: 700;
+  line-height: 1.88;
+  color: var(--stat-tag);
+}
+
+.tagDash {
+  display: none;
+}
+
+.statDetail {
+  margin: calc(10 * var(--u)) calc(12 * var(--u)) 0 calc(-120 * var(--u));
+  padding-top: calc(10 * var(--u));
+  border-top: 1px solid var(--stat-divider);
+  font-size: calc(21 * var(--u));
+  line-height: 1.43;
+}
+
+.statNote {
+  margin-top: calc(12 * var(--u));
+  font-size: calc(21.4 * var(--u));
+  line-height: 1.4;
+  color: var(--stat-muted);
+}
+
+.tagged .label {
+  font-size: calc(21 * var(--u));
+  line-height: 1.29;
+}
+
+.split .label {
+  font-weight: 600;
+}
+
+.split .statSub {
+  line-height: 1.55;
+}
+
+.stack .label {
+  line-height: 1.47;
+}
+
+.partof .label {
+  font-size: calc(25 * var(--u));
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.plain .label {
+  font-weight: 700;
+}
+
+.split .statBody::after,
+.stack .statBody::after {
+  content: "";
+  display: block;
+  margin-right: calc(10 * var(--u));
+  border-top: 1px solid var(--stat-divider);
+}
+
+.split .statBody::after {
+  margin-top: calc(20 * var(--u));
+}
+
+.stack .statBody::after {
+  margin-top: calc(37 * var(--u));
+}
+
+/* Small phones: fonts hit their floors, so the copy needs a fade behind it and the cards stack icon over text. */
+/*
+ * Phones (card up to 650px): the phone reference layout, but at sizes that read well on a phone.
+ * At exact reference scale the copy would be ~8px on a 390px phone, so text gets minimum sizes,
+ * the copy column keeps to the left half and the G20 grows to stand beside it, as in the reference.
+ */
+@container (max-width: 650px) {
+  /* Phone diagonal: steeper and further right so the copy column stays on the navy side.
+     --text-edge = where text must stop at the card's top (diagonal minus the light band and a gap). */
+  .card {
+    --p-edge: 820;
+    --p-tan: 0.2679;
+    --text-edge: calc((820 - 40 - 14) * var(--u));
+  }
+
+  .art {
+    --edge: var(--p-edge);
+    --skew: 15deg;
+    --img-left: -290;
+    --img-w: 1450;
+    /* wheels 10u under the CTA top (G20 wheels sit 122u above the photo bottom at this size) */
+    --photo-bottom: calc(3.33 * max(15px, calc(24 * var(--u))) - 87 * var(--u));
+  }
+
+  .pill {
+    font-size: max(11px, calc(20.4 * var(--u)));
+  }
+
+  .title {
+    font-size: max(26px, calc(56.2 * var(--u)));
+  }
+
+  .copyWrap {
+    display: flow-root;
+  }
+
+  .copy {
+    max-width: 20.31em;
+    font-size: max(13.5px, calc(20.3 * var(--u)));
+    line-height: 1.62;
+  }
+
+  /*
+   * Invisible float whose left edge runs parallel to the diagonal: each paragraph line ends just
+   * before the photo panel. --flow-top / --flow-h (the wrapper's offset in the card and the
+   * paragraph height) are set by ModelHero after layout.
+   */
+  .copyFlow {
+    /* fallbacks = typical values at 390px, so the first paint already wraps along the diagonal */
+    --ft: var(--flow-top, calc(487 * var(--u)));
+    --fh: var(--flow-h, calc(654 * var(--u)));
+    --x0: calc(var(--text-edge) - 40 * var(--u) - var(--ft) * var(--p-tan));
+    display: block;
+    float: right;
+    width: 100%;
+    height: var(--fh);
+    shape-outside: polygon(var(--x0) 0, 100% 0, 100% 100%, max(150px, calc(var(--x0) - var(--fh) * var(--p-tan))) 100%);
+  }
+
+  .cta {
+    font-size: max(15px, calc(24 * var(--u)));
+  }
+
+
+  .stat {
+    padding-left: calc(25 * var(--u) + max(40px, calc(96 * var(--u))) + 10px);
+    padding-right: 8px;
+  }
+
+  .statIcon {
+    width: max(40px, calc(96 * var(--u)));
+    height: max(40px, calc(96 * var(--u)));
+  }
+
+  .value {
+    font-size: max(20px, calc(34 * var(--u)));
+  }
+
+  .label,
+  .statSub,
+  .partof .label {
+    font-size: max(13px, calc(24.5 * var(--u)));
+  }
+
+  .tagged .label,
+  .pre,
+  .statDetail,
+  .statNote {
+    font-size: max(12px, calc(21 * var(--u)));
+  }
+
+  .statTag {
+    font-size: max(11.5px, calc(21.3 * var(--u)));
+  }
+
+  .statTag {
+    white-space: nowrap;
+  }
+
+  .statDetail {
+    margin-left: calc(-1 * (max(40px, calc(96 * var(--u))) + 10px));
+    margin-right: 0;
+  }
+}
+
+/* ======================= Laptops and desktops ======================= */
+
+@media (min-width: 1024px) {
+  .section {
+    padding: 18px 16px 12px;
+  }
+
+  .card {
+    --u: calc(100cqw / 1628);
+    border-radius: calc(24 * var(--u));
+  }
+
+  .dark {
+    --hero-bg: #021d46;
+    --hero-accent: #3384f8;
+    --pill-border: rgba(150, 165, 200, 0.42);
+    --pill-bg: transparent;
+    --verified: #3b82ff;
+    --photo-filter: brightness(0.9) saturate(1.3) contrast(1.05);
+    --ground: linear-gradient(180deg, #ffffff 0%, #8597b8 30%, #0d2a5a 68%, #021d46 100%);
+    --stripe: linear-gradient(90deg, rgba(70, 105, 160, 0.75) 0%, rgba(60, 95, 150, 0.7) 100%);
+    --stripe-mask: linear-gradient(180deg, #000 0%, #000 72%, transparent 97%);
+    --wash: linear-gradient(180deg, rgba(2, 29, 70, 0.12) 0%, rgba(2, 29, 70, 0) 30%, rgba(2, 29, 70, 0) 76%, #021d46 100%);
+    --stat-bg: transparent;
+    --stat-border: rgba(255, 255, 255, 0.2);
+    --stat-divider: rgba(255, 255, 255, 0.18);
+    --stat-icon: #2e81eb;
+    --stat-circle: transparent;
+    --stat-circle-border: transparent;
+    --stat-tag: #4b8dff;
+  }
+
+  .light {
+    --stat-tag: #3d4350;
+    --stat-circle-border: transparent;
+  }
+
+  .upper {
+    padding: calc(60 * var(--u)) 0 calc(40 * var(--u)) calc(50 * var(--u));
+  }
+
+  .art {
+    --edge: 1106;
+    --skew: 22.29deg;
+    --img-left: 535;
+    --img-w: 1135;
+    --photo-bottom: 0px;
+    inset: 0 0 calc(-15 * var(--u)) 0;
+  }
+
+  .dark .art {
+    --edge: 975;
+    --stripe-w: 24;
+  }
+
+}
+
+@media (min-width: 1440px) {
+  .light .spill {
+    position: absolute;
+    bottom: 0;
+    left: calc(var(--img-left) * var(--u));
+    display: block;
+    width: calc(var(--img-w) * var(--u));
+    aspect-ratio: 1672 / 941;
+    -webkit-mask-image: linear-gradient(90deg, transparent 20%, #000 26%), linear-gradient(180deg, transparent 50%, #000 57%);
+    -webkit-mask-composite: source-in;
+    mask-image: linear-gradient(90deg, transparent 20%, #000 26%), linear-gradient(180deg, transparent 50%, #000 57%);
+    mask-composite: intersect;
+  }
+
+  .light .spill img {
+    object-fit: cover;
+  }
+
+  .light .spill::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(0deg, #ffffff 0%, rgba(255, 255, 255, 0.6) 9%, rgba(255, 255, 255, 0) 24%);
+  }
+}
+
+@media (min-width: 1024px) {
+  /* pill: icon column + one flowing text block */
+  .pill {
+    grid-template-columns: 1.1em auto;
+    column-gap: 0.95em;
+    align-items: start;
+    width: fit-content;
+    max-width: 50.9em;
+    padding: 0.58em 1.2em 0.58em 1.15em;
+    border-radius: 1.22em;
+    font-size: max(12px, calc(18 * var(--u)));
+    line-height: 1.944;
+  }
+
+  .pillShield,
+  .pillEngineCol {
+    width: 1.15em;
+    height: 1.15em;
+    margin-top: 0.4em;
+  }
+
+  .pillText {
+    display: block;
+    grid-column: 2;
+    grid-row: 1 / span 2;
+  }
+
+  .dot {
+    margin: 0 0.62em;
+  }
+
+  .pillMeta,
+  .pillEngines {
+    display: inline;
+  }
+
+  .pillSep {
+    display: inline-block;
+  }
+
+  .pillEngineInline {
+    display: inline-block;
+    width: 1.1em;
+    height: 1.1em;
+    margin: 0 0.75em 0 0;
+    vertical-align: -0.2em;
+    color: var(--pill-icon);
+  }
+
+  .light .pillEngineCol,
+  .dark .pillEngineInline {
+    display: none;
+  }
+
+  .dark .pillBrand {
+    color: #ffffff;
+  }
+
+  .title {
+    margin-top: calc(39.6 * var(--u));
+    font-size: max(36px, calc(72 * var(--u)));
+    line-height: 1.208;
+    letter-spacing: -0.035em;
+  }
+
+  .titleAccent {
+    display: inline;
+  }
+
+  .dark .dashEn {
+    display: none;
+  }
+
+  .dark .dashEm {
+    display: inline;
+  }
+
+  /* dark desktop reference: tighter pill, heading and copy, shorter strip */
+  .dark .upper {
+    padding-top: calc(60.3 * var(--u));
+    padding-bottom: calc(40.9 * var(--u));
+  }
+
+  .dark .pill {
+    padding-top: 0.53em;
+    padding-bottom: 0.53em;
+    font-size: max(12px, calc(var(--dark-pill-fs, 16.5) * var(--u)));
+    line-height: 1.77;
+  }
+
+  .dark .title {
+    margin-top: calc(35.4 * var(--u));
+    line-height: 1.121;
+    letter-spacing: -0.042em;
+  }
+
+  .dark .copy {
+    margin-top: calc(15.4 * var(--u));
+    font-size: max(14px, calc(19.43 * var(--u)));
+    line-height: 1.714;
+  }
+
+  .dark .cta {
+    margin-top: calc(28.8 * var(--u));
+  }
+
+  .dark .stats {
+    margin-bottom: calc(47.6 * var(--u));
+  }
+
+  .copy {
+    max-width: 32.7em;
+    word-spacing: normal;
+    margin-top: calc(21.4 * var(--u));
+    font-size: max(14px, calc(19 * var(--u)));
+    line-height: 1.8;
+  }
+
+  .dark .copy .num {
+    color: var(--verified);
+  }
+
+  .cta {
+    height: 3.11em;
+    margin-top: calc(29 * var(--u));
+    padding: 0 1.62em 0 1.49em;
+    gap: 1.05em;
+    border-radius: 0.36em;
+    font-size: max(14px, calc(22.8 * var(--u)));
+  }
+
+  /* stats: one white strip (light) / outlined strip (dark) */
+  .stats {
+    grid-template-columns: 428fr 359fr 343fr 388fr;
+    gap: 0;
+    margin: 0 calc(63 * var(--u)) calc(38 * var(--u)) calc(47 * var(--u));
+    border: 1px solid var(--stat-border);
+    border-radius: calc(16 * var(--u));
+    background: var(--stat-bg);
+    box-shadow: var(--stat-shadow);
+  }
+
+  .dark .stats {
+    border-radius: calc(18 * var(--u));
+  }
+
+  .stat {
+    display: grid;
+    grid-template-columns: calc(80 * var(--u)) auto;
+    column-gap: calc(24 * var(--u));
+    align-content: center;
+    align-items: center;
+    justify-content: start;
+    min-height: calc(178 * var(--u));
+    padding: 0 0 0 calc(49 * var(--u));
+    border: 0;
+    border-radius: 0;
+    background: none;
+  }
+
+  .dark .stat {
+    min-height: calc(137 * var(--u));
+  }
+
+  .stat:first-child {
+    padding-left: calc(35 * var(--u));
+  }
+
+  .stat + .stat::before {
+    content: "";
+    position: absolute;
+    top: calc(27 * var(--u));
+    bottom: calc(27 * var(--u));
+    left: 0;
+    width: 1px;
+    background: var(--stat-divider);
+  }
+
+  .statIcon {
+    position: static;
+    grid-row: 1 / span 2;
+    width: calc(80 * var(--u));
+    height: calc(80 * var(--u));
+    border: 0;
+  }
+
+  .statIcon svg {
+    width: 84%;
+    height: 84%;
+  }
+
+  .dark .statIcon svg {
+    width: 86%;
+    height: 86%;
+  }
+
+  .statBody,
+  .statDetail {
+    grid-column: 2;
+  }
+
+  .statNote,
+  .split .statBody::after,
+  .stack .statBody::after {
+    display: none;
+  }
+
+  .statHead {
+    line-height: calc(32 * var(--u));
+  }
+
+  .stat .value {
+    display: inline;
+    font-size: max(18px, calc(30 * var(--u)));
+    line-height: inherit;
+  }
+
+  .stat .label,
+  .stat .statSub,
+  .stat .pre {
+    font-size: max(12px, calc(18 * var(--u)));
+    line-height: calc(29 * var(--u));
+  }
+
+  .statTag,
+  .statDetail {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: max(12px, calc(17.8 * var(--u)));
+    font-weight: 400;
+    line-height: calc(29 * var(--u));
+    color: var(--stat-tag);
+  }
+
+  .statDetail {
+    color: var(--stat-muted);
+  }
+
+  .light .tagged .statDetail {
+    max-width: calc(175 * var(--u));
+    line-height: calc(28 * var(--u));
+  }
+
+  .tagDash {
+    display: inline;
+  }
+
+  /* light shapes */
+  .tagged .label {
+    display: inline;
+    margin-left: 0.32em;
+    font-weight: 600;
+    line-height: inherit;
+  }
+
+  .split .label {
+    display: inline;
+    margin-left: 0.3em;
+    font-size: max(12px, calc(18.6 * var(--u)));
+    line-height: inherit;
+  }
+
+  .split .value,
+  .stack .value {
+    font-size: max(18px, calc(32 * var(--u)));
+  }
+
+  .split .statSub {
+    color: var(--stat-muted);
+  }
+
+  .partof .pre {
+    font-size: max(12px, calc(17.6 * var(--u)));
+  }
+
+  .partof .label {
+    font-weight: 600;
+    font-size: max(12px, calc(18.2 * var(--u)));
+  }
+
+  /* dark shapes */
+  .dark .tagged .value {
+    font-size: max(18px, calc(29.3 * var(--u)));
+    font-weight: 500;
+  }
+
+  .dark .tagged .label {
+    font-weight: 400;
+  }
+
+  .dark .split .value,
+  .dark .split .label {
+    font-size: max(13px, calc(20.3 * var(--u)));
+    font-weight: 600;
+  }
+
+  .dark .split .label {
+    margin-left: 0.25em;
+  }
+
+  .dark .stack .value {
+    font-size: max(18px, calc(29.3 * var(--u)));
+    font-weight: 500;
+  }
+
+  .dark .partof .pre {
+    font-size: max(13px, calc(20.4 * var(--u)));
+    font-weight: 600;
+  }
+
+  .dark .partof .label {
+    font-weight: 400;
+  }
+}
