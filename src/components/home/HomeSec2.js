@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useMemo, useState } from "react";
+import { TABLE_HEADER_BG, TABLE_HEADER_TEXT } from "@/components/shared/tableHeader";
 import { useTheme } from "@/components/shared/themeProvider";
 import VerdictGlyph from "@/components/home/VerdictGlyph";
 import GrilleImage from "@/components/home/GrilleImage";
@@ -77,7 +78,7 @@ function Table({ rows, columns, isDark, right = false }) {
     <div className={right ? `border-l ${isDark ? "border-white/[0.1]" : "border-[#e3e8ef]"}` : ""}>
       <div
         className={`grid ${grid} items-center py-3 text-[0.95rem] font-medium uppercase tracking-[0.01em] ${isDark ? "text-white" : "text-white"}`}
-        style={{ background: isDark ? "linear-gradient(180deg,#0f2a52,#0b2040)" : "#0b4fc0" }}
+        style={{ background: TABLE_HEADER_BG, color: TABLE_HEADER_TEXT }}
       >
         <span className="col-span-2 pl-[42%]">{columns[0]}</span>
         <span className="pl-3">{columns[1]}</span>

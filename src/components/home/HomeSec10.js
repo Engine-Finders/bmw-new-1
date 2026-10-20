@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useState } from "react";
+import { TABLE_HEADER_BG, TABLE_HEADER_TEXT } from "@/components/shared/tableHeader";
 import { useTheme } from "@/components/shared/themeProvider";
 import ScaleBox from "@/components/home/ScaleBox";
 import { MobileCard, MobileHeading, MobileLead } from "@/components/home/mobileKit";
@@ -179,7 +180,8 @@ function Desktop({ data, isDark }) {
   const card = (ci, ri) => ({ left: S.cols[ci][0], width: S.cols[ci][1] - S.cols[ci][0], top: S.rows[ri][0], height: S.rows[ri][1], background: C.card, border: `1px solid ${C.border}`, boxShadow: C.shadow });
   const hline = (top, inset = 0) => <span aria-hidden="true" className="absolute" style={{ left: inset, right: inset, top, height: 1, background: C.line }} />;
   const vline = (left, top, bottom) => <span key={left} aria-hidden="true" className="absolute" style={{ left, top, bottom, width: 1, background: C.line }} />;
-  const hdr = (labels, xs, cap, fs = 11) => labels.map((l, i) => <Cap key={l} left={xs[i]} cap={cap} fs={fs} className="whitespace-nowrap uppercase" style={{ color: C.text }}>{l}</Cap>);
+  const hdr = (labels, xs, cap, fs = 11) => labels.map((l, i) => <Cap key={l} left={xs[i]} cap={cap} fs={fs} className="whitespace-nowrap uppercase" style={{ color: TABLE_HEADER_TEXT }}>{l}</Cap>);
+  const band = (top, bottom) => <span aria-hidden="true" className="absolute inset-x-0" style={{ top, height: bottom - top + 1, background: TABLE_HEADER_BG }} />;
   const Kt = isDark ? KD : K;
   const E = Kt.eng, M = Kt.mod, R = Kt.cost, F = Kt.fail, G = Kt.reg, L = Kt.feed;
 
@@ -226,9 +228,8 @@ function Desktop({ data, isDark }) {
       {/* Engines */}
       <div className="absolute overflow-hidden rounded-[8px]" style={card(0, 0)}>
         <CardHead title={data.engines.title} icon={data.engines.icon} C={C} at={isDark ? [14, 16, 60, 23] : [17, 17, 62, 25]} />
-        {hline(E.hdrLine)}
+        {band(E.hdrLine, E.hdrLine2)}
         {hdr(data.engines.columns, E.hdrX, E.hdrCap, E.hdr)}
-        {hline(E.hdrLine2)}
         {E.dividers.map((d) => vline(d, E.hdrLine2 + 4, 10))}
         {data.engines.rows.map((r, i) => {
           const cap = E.row0 + i * E.pitch;
@@ -250,9 +251,8 @@ function Desktop({ data, isDark }) {
       {/* Models */}
       <div className="absolute overflow-hidden rounded-[8px]" style={card(1, 0)}>
         <CardHead title={data.models.title} icon={data.models.icon} C={C} at={isDark ? [19, 18, 67, 25] : [22, 21, 72, 25]} />
-        {hline(M.hdrLine)}
+        {band(M.hdrLine, M.hdrLine2)}
         {hdr(data.models.columns, M.hdrX, M.hdrCap, 11)}
-        {hline(M.hdrLine2)}
         {M.dividers.map((d) => vline(d, M.hdrLine2 + 4, 10))}
         {data.models.rows.map((r, i) => {
           const cap = M.row0 + i * M.pitch;
@@ -273,9 +273,8 @@ function Desktop({ data, isDark }) {
       {/* Replacement cost index */}
       <div className="absolute overflow-hidden rounded-[8px]" style={card(2, 0)}>
         <CardHead title={data.replacementCosts.title} icon={data.replacementCosts.icon} C={C} sub={data.replacementCosts.subtitle} at={isDark ? [20, 16, 67, 25] : [23, 24, 69, 25]} />
-        {hline(R.hdrLine)}
+        {band(R.hdrLine, R.hdrLine2)}
         {hdr(data.replacementCosts.columns, R.hdrX, R.hdrCap, 11)}
-        {hline(R.hdrLine2)}
         {vline(R.divider, R.hdrLine2 + 4, 10)}
         {data.replacementCosts.rows.map((r, i) => {
           const cap = R.row0 + i * R.pitch;
@@ -295,9 +294,8 @@ function Desktop({ data, isDark }) {
       {/* Failures */}
       <div className="absolute overflow-hidden rounded-[8px]" style={card(0, 1)}>
         <CardHead title={data.failures.title} icon={data.failures.icon} C={C} at={isDark ? [19, 12, 60, 21] : [17, 10, 62, 21]} />
-        {hline(F.hdrLine)}
+        {band(F.hdrLine, F.hdrLine2)}
         {hdr(data.failures.columns, F.hdrX, F.hdrCap, 11)}
-        {hline(F.hdrLine2)}
         {data.failures.rows.map((r, i) => {
           const cap = F.row0 + i * F.pitch;
           const m = r.failure.match(/^(.*?)\s*(\(.*\))$/);
@@ -338,9 +336,8 @@ function Desktop({ data, isDark }) {
       {/* Live feed */}
       <div className="absolute overflow-hidden rounded-[8px]" style={card(2, 1)}>
         <CardHead title={data.liveFeed.title} icon={data.liveFeed.icon} C={C} at={isDark ? [16, 14, 59, 23] : [20, 16, 69, 22]} />
-        {hline(L.hdrLine)}
+        {band(L.hdrLine, L.hdrLine2)}
         {hdr(data.liveFeed.columns, L.hdrX, L.hdrCap, 11)}
-        {hline(L.hdrLine2)}
         {data.liveFeed.rows.map((r, i) => {
           const cap = L.row0 + i * L.pitch;
           return (

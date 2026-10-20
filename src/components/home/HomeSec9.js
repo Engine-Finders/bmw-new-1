@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { TABLE_HEADER_BG, TABLE_HEADER_TEXT } from "@/components/shared/tableHeader";
 import { useTheme } from "@/components/shared/themeProvider";
 import ScaleBox from "@/components/home/ScaleBox";
 import { MobileCard, MobileHeading, MobileLabel, MobileLead, MobileSection } from "@/components/home/mobileKit";
@@ -86,9 +87,9 @@ function Table({ block, spec, rows, C, titleKey, titleX }) {
         <Icon style={{ width: 24, height: 24 }} />
       </span>
       <Cap as="h3" left={D.tabText.left} cap={D.tabText.cap} fs={D.tabText.fs} className="whitespace-nowrap uppercase" style={{ color: C.tabText }}>{block.title}</Cap>
-      <div className="absolute inset-x-0" style={{ top: spec.tab, height: spec.hdr, background: C.hdrBand, borderTop: `1px solid ${C.line}`, borderBottom: `1px solid ${C.line}` }}>
+      <div className="absolute inset-x-0" style={{ top: spec.tab, height: spec.hdr, background: TABLE_HEADER_BG, borderTop: `1px solid ${C.line}`, borderBottom: `1px solid ${C.line}` }}>
         {block.columns.map((c, i) => (
-          <Cap key={c} left={pct(D.hdr.x[i])} cap={D.hdr.cap} fs={D.hdr.fs} className="whitespace-nowrap uppercase" style={{ color: C.label }}>{c}</Cap>
+          <Cap key={c} left={pct(D.hdr.x[i])} cap={D.hdr.cap} fs={D.hdr.fs} className="whitespace-nowrap uppercase" style={{ color: TABLE_HEADER_TEXT }}>{c}</Cap>
         ))}
       </div>
       {D.dividers.map((d) => (

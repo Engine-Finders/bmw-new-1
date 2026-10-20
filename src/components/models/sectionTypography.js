@@ -5,8 +5,4 @@ export const sectionBody = "text-[15px] leading-[1.45]";
 export const sectionButton = "text-[16px]";
 export const sectionTableText = "text-[14px] leading-[1.45]";
 
-export function tableHeaderClass(isDark) {
-  return isDark
-    ? "bg-[var(--color-chrome)] text-[var(--color-page)]"
-    : "bg-[var(--color-primary)] text-white";
-}
+export { tableHeaderClass } from "@/components/shared/tableHeader";
