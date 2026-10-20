@@ -146,7 +146,7 @@ function Desktop({ data, isDark }) {
   );
 }
 
-// Phone / tablet: readable timeline cards (body 15px, entries 14–16px, labels 11px).
+// Phone / tablet: readable timeline cards (body 17px, entries 16–18px, labels 13px).
 function Phone({ data, isDark }) {
   const C = COL[isDark ? "dark" : "light"];
   const [, engLabel, modelLabel] = data.columns;
@@ -167,11 +167,11 @@ function Phone({ data, isDark }) {
               <CarGlyph style={{ width: 22, height: 18 }} />
             </span>
             <MobileCard C={C} className="px-4 py-4">
-              <h3 className="text-[19px] font-bold" style={{ color: C.text }}>{e.era}</h3>
+              <h3 className="text-[22px] font-bold" style={{ color: C.text }}>{e.era}</h3>
               <div className="mt-3 flex items-center gap-3 border-t pt-3" style={{ borderColor: C.line }}>
                 <div className="min-w-0 flex-1">
                   <MobileLabel color={C.label}>{engLabel}</MobileLabel>
-                  <p className="mt-1 text-[15px] leading-[1.45]" style={{ color: C.text }}>{e.engines}</p>
+                  <p className="mt-1 text-[17px] leading-[1.45]" style={{ color: C.text }}>{e.engines}</p>
                 </div>
                 <span className="relative h-[60px] w-[84px] shrink-0">
                   <Image src={e.engineImage.src} alt={e.engineImage.alt} fill sizes="90px" className={`object-contain ${isDark ? "" : "mix-blend-multiply"}`} />
@@ -186,7 +186,7 @@ function Phone({ data, isDark }) {
                     </span>
                   ))}
                 </div>
-                <p className="mt-2 text-[14px]" style={{ color: C.soft }}>{e.models}</p>
+                <p className="mt-2 text-[16px]" style={{ color: C.soft }}>{e.models}</p>
               </div>
             </MobileCard>
           </li>
@@ -197,7 +197,7 @@ function Phone({ data, isDark }) {
         <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-[10px] text-white" style={{ background: C.keyIcon }}>
           <TrendGlyph style={{ width: 26, height: 26 }} />
         </span>
-        <p className="text-[15px] leading-[1.6]" style={{ color: C.text }}>
+        <p className="text-[17px] leading-[1.6]" style={{ color: C.text }}>
           <strong className="mr-1 font-bold uppercase" style={{ color: C.label }}>{data.keyTakeawayLabel}</strong>
           {data.keyTakeaway}
         </p>

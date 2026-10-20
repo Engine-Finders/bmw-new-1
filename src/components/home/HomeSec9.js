@@ -152,7 +152,7 @@ function Desktop({ data, isDark }) {
   );
 }
 
-// Phone / tablet: readable stacked layout (body 15px, entries 14px, labels 11px).
+// Phone / tablet: readable stacked layout (body 17px, entries 16–18px, labels 13px).
 function Phone({ data, isDark }) {
   const C = COL[isDark ? "dark" : "light"];
   const blocks = [data.engineFailures, data.warningSigns];
@@ -169,7 +169,7 @@ function Phone({ data, isDark }) {
         const Icon = b.icon === "warning" ? Warn : Gear;
         return (
           <MobileCard key={b.title} C={C} className="mt-6">
-            <h3 className="flex items-center gap-3 border-b px-4 py-3.5 text-[14px] font-bold uppercase tracking-[0.03em]" style={{ color: isDark ? "#ffffff" : "#0b4fe0", borderColor: C.line }}>
+            <h3 className="flex items-center gap-3 border-b px-4 py-3.5 text-[16px] font-bold uppercase tracking-[0.03em]" style={{ color: isDark ? "#ffffff" : "#0b4fe0", borderColor: C.line }}>
               <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-[6px] bg-[#0b47d8] text-white">
                 <Icon style={{ width: 17, height: 17 }} />
               </span>
@@ -179,16 +179,16 @@ function Phone({ data, isDark }) {
               {b.rows.map((r) => (
                 <li key={r.id} className="border-b last:border-b-0" style={{ borderColor: C.line }}>
                   <Link href={r.link.href} className="flex gap-3 px-4 py-4 font-normal">
-                    <span className="w-5 shrink-0 text-[18px] font-semibold leading-[1.3]" style={{ color: C.num }}>{r.id}</span>
+                    <span className="w-5 shrink-0 text-[20px] font-semibold leading-[1.3]" style={{ color: C.num }}>{r.id}</span>
                     <span className="min-w-0 flex-1">
-                      <span className="block text-[16px] font-bold leading-[1.3]" style={{ color: C.title }}>{r.title}</span>
-                      <span className="mt-1.5 block text-[14px] leading-[1.55]" style={{ color: C.desc }}>{r.description}</span>
+                      <span className="block text-[18px] font-bold leading-[1.3]" style={{ color: C.title }}>{r.title}</span>
+                      <span className="mt-1.5 block text-[16px] leading-[1.55]" style={{ color: C.desc }}>{r.description}</span>
                       <span className="mt-3 flex items-center justify-between gap-3">
-                        <span className="flex items-center gap-2 text-[13px] font-semibold" style={{ color: C.sev }}>
+                        <span className="flex items-center gap-2 text-[15px] font-semibold" style={{ color: C.sev }}>
                           <span aria-hidden="true" className="h-2.5 w-2.5 rounded-full" style={{ background: SEV[r.severity.type] }} />
                           {r.severity.label}
                         </span>
-                        <span className="flex items-center gap-1.5 text-[14px] font-semibold" style={{ color: C.link }}>
+                        <span className="flex items-center gap-1.5 text-[16px] font-semibold" style={{ color: C.link }}>
                           {r.link.label}
                           <Arrow style={{ width: 16, height: 16 }} />
                         </span>
@@ -203,10 +203,10 @@ function Phone({ data, isDark }) {
       })}
 
       <MobileCard C={C} className="mt-5 px-4 py-4">
-        <MobileLabel color={isDark ? "#ffffff" : "#0b4fe0"} className="!text-[12px]">Urgency key</MobileLabel>
+        <MobileLabel color={isDark ? "#ffffff" : "#0b4fe0"} className="!text-[14px]">Urgency key</MobileLabel>
         <ul className="mt-3 grid gap-2.5">
           {data.urgencyKey.map((u) => (
-            <li key={u.type} className="flex items-start gap-2.5 text-[14px] leading-[1.45]" style={{ color: C.title }}>
+            <li key={u.type} className="flex items-start gap-2.5 text-[16px] leading-[1.45]" style={{ color: C.title }}>
               <span aria-hidden="true" className="mt-[5px] h-2.5 w-2.5 shrink-0 rounded-full" style={{ background: SEV[u.type] }} />
               <span>
                 <strong className="font-semibold">{u.label}</strong>

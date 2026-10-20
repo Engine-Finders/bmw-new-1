@@ -311,7 +311,7 @@ const VERDICT_PILL = {
   dark: { scrap: ["rgba(220,38,38,0.18)", "#f87171"], safe: ["rgba(34,197,94,0.16)", "#4ade80"], watch: ["rgba(245,158,11,0.16)", "#fbbf24"] },
 };
 
-// Phone / tablet: readable stacked layout (body 15px, table text 14px, labels 11px).
+// Phone / tablet: readable stacked layout (body 17px, entries 16–18px, labels 13px).
 function Phone({ data, isDark }) {
   const t = isDark ? "dark" : "light";
   const C = COL[t];
@@ -330,7 +330,7 @@ function Phone({ data, isDark }) {
 
       {/* Decision matrix: one card per model */}
       <MobileCard C={C} className="mt-7">
-        <h3 className="flex items-center gap-2.5 border-b px-4 py-3.5 text-[13px] font-bold uppercase tracking-[0.04em]" style={{ color: C.blue, borderColor: C.line }}>
+        <h3 className="flex items-center gap-2.5 border-b px-4 py-3.5 text-[15px] font-bold uppercase tracking-[0.04em]" style={{ color: C.blue, borderColor: C.line }}>
           <BarsIcon className="h-4 w-4" />
           {data.matrix.title}
         </h3>
@@ -345,19 +345,21 @@ function Phone({ data, isDark }) {
                       <Image src={isDark ? row.image.dark : row.image.src} alt={row.image.alt} fill sizes="80px" className={`object-contain ${isDark ? "" : "mix-blend-multiply"}`} />
                     </span>
                     <span className="min-w-0 flex-1">
-                      <span className="block text-[16px] font-bold leading-tight">{row.name}</span>
-                      <span className="mt-0.5 block text-[13px]" style={{ color: C.code }}>{row.code}</span>
+                      <span className="block text-[18px] font-bold leading-tight">{row.name}</span>
+                      <span className="mt-0.5 block text-[15px]" style={{ color: C.code }}>{row.code}</span>
                     </span>
                     <svg aria-hidden="true" viewBox="0 0 24 24" className="h-5 w-5 shrink-0" fill="none" stroke="currentColor" strokeWidth="2" style={{ color: C.blue }}>
                       <path d="m9 5 7 7-7 7" />
                     </svg>
                   </span>
-                  <span className="mt-3 grid grid-cols-2 gap-3">
+                  <span className="mt-3 grid gap-2">
                     {[row.vehicleValue, row.replacementCost].map((v, i) => (
-                      <span key={i} className="rounded-[8px] px-3 py-2.5" style={{ background: isDark ? C.boxBg : "#f6f8fc" }}>
-                        <MobileLabel color={C.tag}>{cols[i + 1]}</MobileLabel>
-                        <span className="mt-1 block text-[15px] font-semibold">{v.value}</span>
-                        <span className="block text-[11px]" style={{ color: C.tag }}>{v.tag}</span>
+                      <span key={i} className="flex items-center justify-between gap-3 rounded-[8px] px-3.5 py-2.5" style={{ background: isDark ? C.boxBg : "#f6f8fc" }}>
+                        <span>
+                          <MobileLabel color={C.tag}>{cols[i + 1]}</MobileLabel>
+                          <span className="block text-[13px]" style={{ color: C.tag }}>{v.tag}</span>
+                        </span>
+                        <span className="whitespace-nowrap text-[18px] font-bold">{v.value}</span>
                       </span>
                     ))}
                   </span>
@@ -365,8 +367,8 @@ function Phone({ data, isDark }) {
                     <span className="mt-[1px] h-5 w-5 shrink-0">
                       <VerdictGlyph type={GLYPH[row.verdict.type]} round className="h-full w-full" />
                     </span>
-                    <span className="text-[14px] leading-[1.55]" style={{ color: C.verdict }}>
-                      <span className="mr-1.5 inline-block rounded-[4px] px-2 py-[1px] text-[12px] font-semibold" style={{ background: pillBg, color: pillFg }}>{row.verdict.label}</span>
+                    <span className="text-[16px] leading-[1.55]" style={{ color: C.verdict }}>
+                      <span className="mr-1.5 inline-block rounded-[4px] px-2 py-[1px] text-[14px] font-semibold" style={{ background: pillBg, color: pillFg }}>{row.verdict.label}</span>
                       {row.verdict.lead === row.verdict.label ? row.verdict.text.charAt(0).toUpperCase() + row.verdict.text.slice(1) : `${row.verdict.lead} — ${row.verdict.text}`}
                     </span>
                   </span>
@@ -380,7 +382,7 @@ function Phone({ data, isDark }) {
       {/* Rule of thumb */}
       <div className="mt-5 rounded-[12px] border p-5" style={{ background: isDark ? C.boxBg : "#f4f7fe", borderColor: isDark ? C.boxBorder : "#e6ecfa" }}>
         <div className="flex items-start justify-between gap-4">
-          <h3 className="flex items-center gap-3 text-[14px] font-bold uppercase tracking-[0.03em]" style={{ color: C.strong }}>
+          <h3 className="flex items-center gap-3 text-[16px] font-bold uppercase tracking-[0.03em]" style={{ color: C.strong }}>
             <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#0b47d4] text-white">
               <ShieldGlyph className="h-5 w-5" />
             </span>
@@ -388,20 +390,20 @@ function Phone({ data, isDark }) {
           </h3>
           <span className="shrink-0 text-right">
             <span className="block text-[40px] font-bold leading-none tracking-[-0.03em]" style={{ color: C.blue }}>{rule.percent}</span>
-            <span className="mt-1 block text-[11px] font-bold uppercase" style={{ color: C.blue }}>{data.phoneThresholdLabel}</span>
+            <span className="mt-1 block text-[13px] font-bold uppercase" style={{ color: C.blue }}>{data.phoneThresholdLabel}</span>
           </span>
         </div>
-        <p className="mt-4 text-[15px] leading-[1.6]" style={{ color: C.strong }}>
+        <p className="mt-4 text-[17px] leading-[1.6]" style={{ color: C.strong }}>
           {pre}
           <strong className="font-bold" style={{ color: C.blue }}>{rule.percent}</strong>
           {rest.join(rule.percent)}
         </p>
-        <p className="mt-3 text-[13px] leading-[1.6]" style={{ color: C.note }}>{rule.note}</p>
+        <p className="mt-3 text-[15px] leading-[1.6]" style={{ color: C.note }}>{rule.note}</p>
       </div>
 
       {/* Deeper analysis links */}
       <MobileCard C={C} className="mt-5">
-        <h3 className="flex items-center gap-3 px-4 pt-4 text-[14px] font-bold uppercase tracking-[0.03em]" style={{ color: C.strong }}>
+        <h3 className="flex items-center gap-3 px-4 pt-4 text-[16px] font-bold uppercase tracking-[0.03em]" style={{ color: C.strong }}>
           <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-[#0b47d4] text-white">
             <WrenchGlyph className="h-4 w-4" />
           </span>
@@ -410,8 +412,8 @@ function Phone({ data, isDark }) {
         <ul className="px-4 pb-2 pt-2">
           {data.deeperLinks.map((l) => (
             <li key={l.id} className="border-b last:border-b-0" style={{ borderColor: C.line }}>
-              <Link href={l.href} className="flex items-center gap-3 py-3.5 text-[15px] font-normal" style={{ color: C.strong }}>
-                <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full text-[13px] font-bold" style={{ background: isDark ? "#10233d" : "#e8eefd", color: C.blue }}>{l.id}</span>
+              <Link href={l.href} className="flex items-center gap-3 py-3.5 text-[17px] font-normal" style={{ color: C.strong }}>
+                <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full text-[15px] font-bold" style={{ background: isDark ? "#10233d" : "#e8eefd", color: C.blue }}>{l.id}</span>
                 <span className="flex-1">{l.label}</span>
                 <Arrow className="h-5 w-5 shrink-0" style={{ color: C.blue }} />
               </Link>
@@ -425,11 +427,11 @@ function Phone({ data, isDark }) {
         <div className="flex items-start gap-4">
           <ShieldBadge className="h-12 w-12" />
           <div>
-            <p className="text-[17px] font-bold" style={{ color: C.strong }}>{data.bottomCta.title}</p>
-            <p className="mt-1.5 text-[14px] leading-[1.6]" style={{ color: C.note }}>{data.bottomCta.text}</p>
+            <p className="text-[19px] font-bold" style={{ color: C.strong }}>{data.bottomCta.title}</p>
+            <p className="mt-1.5 text-[16px] leading-[1.6]" style={{ color: C.note }}>{data.bottomCta.text}</p>
           </div>
         </div>
-        <Link href={data.bottomCta.href} className="mt-4 flex h-12 items-center justify-center gap-2 rounded-[8px] bg-[#023fd3] text-[15px] font-semibold text-white">
+        <Link href={data.bottomCta.href} className="mt-4 flex h-12 items-center justify-center gap-2 rounded-[8px] bg-[#023fd3] text-[17px] font-semibold text-white">
           {data.bottomCta.buttonLabel}
           <Arrow className="h-4 w-4" />
         </Link>

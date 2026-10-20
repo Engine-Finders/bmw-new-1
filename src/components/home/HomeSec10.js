@@ -364,7 +364,7 @@ function Desktop({ data, isDark }) {
   );
 }
 
-// Phone / tablet: readable stacked layout (body 15px, table text 14px, labels 11px).
+// Phone / tablet: readable stacked layout (body 17px, entries 16–18px, labels 13px).
 function Phone({ data, isDark }) {
   const [open, setOpen] = useState(null);
   const C = COL[isDark ? "dark" : "light"];
@@ -379,9 +379,9 @@ function Phone({ data, isDark }) {
       <span className="h-8 w-8 shrink-0" style={{ color: C.icon }}>
         <PanelIcon name={p.icon} className="h-full w-full" />
       </span>
-      <span className="text-[14px] font-bold uppercase leading-[1.3] tracking-[0.02em]" style={{ color: C.text }}>
+      <span className="text-[16px] font-bold uppercase leading-[1.3] tracking-[0.02em]" style={{ color: C.text }}>
         {p.title}
-        {p.subtitle ? <span className="block text-[12px] font-semibold normal-case tracking-normal" style={{ color: C.soft }}>({p.subtitle})</span> : null}
+        {p.subtitle ? <span className="block text-[14px] font-semibold normal-case tracking-normal" style={{ color: C.soft }}>({p.subtitle})</span> : null}
       </span>
     </span>
   );
@@ -389,8 +389,8 @@ function Phone({ data, isDark }) {
     const [v, tag] = split(text);
     return (
       <span className="shrink-0 text-right">
-        <span className="block text-[15px] font-bold" style={{ color: C.blue }}>{v}</span>
-        <span className="block text-[11px]" style={{ color: C.tag }}>{tag}</span>
+        <span className="block text-[17px] font-bold" style={{ color: C.blue }}>{v}</span>
+        <span className="block text-[13px]" style={{ color: C.tag }}>{tag}</span>
       </span>
     );
   };
@@ -412,8 +412,8 @@ function Phone({ data, isDark }) {
                 <span className="h-8 w-8" style={{ color: "#2f7bec" }}>
                   <PanelIcon name={st.icon} className="h-full w-full" />
                 </span>
-                <span className="mt-2 text-[20px] font-bold leading-tight text-white">{i < 2 ? st.value : null}</span>
-                <span className="mt-0.5 text-[12px] leading-[1.35] text-[#d7dbe1]">{i < 2 ? st.label : `${st.value} ${st.label}`}</span>
+                <span className="mt-2 text-[23px] font-bold leading-tight text-white">{i < 2 ? st.value : null}</span>
+                <span className="mt-0.5 text-[14px] leading-[1.35] text-[#d7dbe1]">{i < 2 ? st.label : `${st.value} ${st.label}`}</span>
               </li>
             ))}
           </ul>
@@ -436,10 +436,10 @@ function Phone({ data, isDark }) {
                 <ul className="border-t px-4" style={{ borderColor: C.line }}>
                   {p.rows.map((r, j) => (
                     <li key={j} className="flex items-center gap-3 border-b py-3 last:border-b-0" style={{ borderColor: C.line }}>
-                      {r.rank ? <span className="w-5 shrink-0 text-[16px] font-semibold" style={{ color: C.blue }}>{r.rank}</span> : null}
+                      {r.rank ? <span className="w-5 shrink-0 text-[18px] font-semibold" style={{ color: C.blue }}>{r.rank}</span> : null}
                       <span className="min-w-0 flex-1">
-                        <span className="block text-[15px] font-bold" style={{ color: C.text }}>{r.code || r.model}</span>
-                        {r.label ? <span className="block text-[13px]" style={{ color: C.soft }}>{r.label}</span> : null}
+                        <span className="block text-[17px] font-bold" style={{ color: C.text }}>{r.code || r.model}</span>
+                        {r.label ? <span className="block text-[15px]" style={{ color: C.soft }}>{r.label}</span> : null}
                       </span>
                       {valueTag(r.enquiries || r.cost)}
                     </li>
@@ -456,10 +456,10 @@ function Phone({ data, isDark }) {
           <ul className="mt-2">
             {data.failures.rows.map((r) => (
               <li key={r.rank} className="flex gap-3 border-t py-3.5" style={{ borderColor: C.line }}>
-                <span className="w-5 shrink-0 text-[17px] font-semibold leading-[1.3]" style={{ color: C.blue }}>{r.rank}</span>
+                <span className="w-5 shrink-0 text-[19px] font-semibold leading-[1.3]" style={{ color: C.blue }}>{r.rank}</span>
                 <span className="flex-1">
-                  <span className="block text-[15px] leading-[1.45]" style={{ color: C.soft }}>{r.failure}</span>
-                  <span className="mt-2 inline-block rounded-[4px] px-2.5 py-1 text-[12px] font-semibold text-white" style={{ background: RISK_BG[r.risk.type] }}>{r.risk.label}</span>
+                  <span className="block text-[17px] leading-[1.45]" style={{ color: C.soft }}>{r.failure}</span>
+                  <span className="mt-2 inline-block rounded-[4px] px-2.5 py-1 text-[14px] font-semibold text-white" style={{ background: RISK_BG[r.risk.type] }}>{r.risk.label}</span>
                 </span>
               </li>
             ))}
@@ -475,13 +475,13 @@ function Phone({ data, isDark }) {
             </span>
             <ul className="grid flex-1 gap-2.5">
               {data.regionalDemand.rows.map((r, j) => (
-                <li key={r.region} className="flex items-center gap-2.5 text-[14px]" style={{ color: C.text }}>
+                <li key={r.region} className="flex items-center gap-2.5 text-[16px]" style={{ color: C.text }}>
                   <span aria-hidden="true" className="h-3 w-3 shrink-0 rounded-full" style={{ background: ["#0b50e3", "#1f5fe8", "#2f6fef", "#6f9ef4"][j] }} />
                   <span className="flex-1">{r.region}</span>
                   <span className="font-bold">{r.percentage}</span>
                 </li>
               ))}
-              <li className="text-[11px]" style={{ color: C.tag }}>{data.regionalDemand.rows[0].source}</li>
+              <li className="text-[13px]" style={{ color: C.tag }}>{data.regionalDemand.rows[0].source}</li>
             </ul>
           </div>
         </MobileCard>
@@ -493,10 +493,10 @@ function Phone({ data, isDark }) {
             {data.liveFeed.rows.map((r) => (
               <li key={r.vehicle} className="border-t py-3" style={{ borderColor: C.line }}>
                 <span className="flex items-baseline justify-between gap-3">
-                  <span className="text-[15px] font-bold" style={{ color: C.text }}>{r.vehicle}</span>
-                  <span className="shrink-0 text-[12px]" style={{ color: C.soft }}>{r.timestamp}</span>
+                  <span className="text-[17px] font-bold" style={{ color: C.text }}>{r.vehicle}</span>
+                  <span className="shrink-0 text-[14px]" style={{ color: C.soft }}>{r.timestamp}</span>
                 </span>
-                <span className="mt-0.5 block text-[14px]" style={{ color: C.soft }}>
+                <span className="mt-0.5 block text-[16px]" style={{ color: C.soft }}>
                   {r.issue} · {r.location}
                 </span>
               </li>
@@ -504,7 +504,7 @@ function Phone({ data, isDark }) {
           </ul>
         </MobileCard>
 
-        <p className="flex items-center justify-center gap-2 text-center text-[13px]" style={{ color: C.soft }}>
+        <p className="flex items-center justify-center gap-2 text-center text-[15px]" style={{ color: C.soft }}>
           <span className="h-4 w-4 shrink-0" style={{ color: C.icon }}>
             <PanelIcon name="refresh" className="h-full w-full" />
           </span>

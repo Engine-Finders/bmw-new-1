@@ -187,7 +187,7 @@ function TrustGlyph({ name }) {
 
 const VERDICT_TONE = { watch: "#d97706", safe: "#16a34a", avoid: "#dc2626", solid: "#1d4fd8", best: "#1d4fd8" };
 
-// Phone / tablet: readable stacked layout (body 15px, table text 14px, labels 11px).
+// Phone / tablet: readable stacked layout (body 17px, entries 16–18px, labels 13px).
 function Phone({ data, isDark }) {
   const C = COL[isDark ? "dark" : "light"];
   const card = { background: C.card, borderColor: C.border };
@@ -206,7 +206,7 @@ function Phone({ data, isDark }) {
             <span className="h-6 w-6 shrink-0" style={{ color: isDark ? "#3b82f6" : C.hdr }}>
               <TrustGlyph name={t.icon} />
             </span>
-            <span className="text-[13px] leading-[1.35]" style={{ color: C.text }}>
+            <span className="text-[15px] leading-[1.35]" style={{ color: C.text }}>
               {t.lines.map((l) => (l.startsWith("**") ? <strong key={l} className="block font-bold">{l.slice(2, -2)}</strong> : <span key={l} className="block">{l}</span>))}
             </span>
           </li>
@@ -219,33 +219,33 @@ function Phone({ data, isDark }) {
             <Link href={e.href} className="block rounded-[12px] border border-l-[3px] px-4 py-4 font-normal" style={{ ...card, borderLeftColor: isDark ? C.bar : "#9cbdf7", color: C.text }}>
               <span className="flex items-start justify-between gap-3">
                 <span>
-                  <span className="block text-[19px] font-bold leading-tight" style={{ color: C.code }}>{e.code}</span>
-                  <span className="mt-0.5 block text-[13px]" style={{ color: C.spec }}>{e.spec}</span>
+                  <span className="block text-[22px] font-bold leading-tight" style={{ color: C.code }}>{e.code}</span>
+                  <span className="mt-0.5 block text-[15px]" style={{ color: C.spec }}>{e.spec}</span>
                 </span>
                 <span className="flex shrink-0 items-center gap-2">
                   <VerdictMark type={e.verdict.type} style={{ width: 24, height: 24 }} />
-                  <span className="text-[13px] font-bold" style={{ color: VERDICT_TONE[e.verdict.type] ?? C.code }}>{e.verdict.label}</span>
+                  <span className="text-[15px] font-bold" style={{ color: VERDICT_TONE[e.verdict.type] ?? C.code }}>{e.verdict.label}</span>
                 </span>
               </span>
-              <span className="mt-3 grid grid-cols-3 gap-2 border-y py-2.5" style={{ borderColor: C.line }}>
+              <span className="mt-3 grid grid-cols-[auto_auto_1fr] gap-x-5 border-y py-3" style={{ borderColor: C.line }}>
                 <span>
                   <MobileLabel color={C.tag}>{data.columns[1]}</MobileLabel>
-                  <span className="mt-1 flex items-center gap-1.5 text-[14px]">
+                  <span className="mt-1 flex items-center gap-1.5 text-[16px]">
                     <FuelMark fuel={e.fuel} color={C.fuelIcon} style={{ width: 12, height: 16 }} />
                     {e.fuel}
                   </span>
                 </span>
                 <span>
                   <MobileLabel color={C.tag}>{data.columns[2]}</MobileLabel>
-                  <span className="mt-1 block text-[14px]">{e.years}</span>
+                  <span className="mt-1 block whitespace-nowrap text-[16px]">{e.years}</span>
                 </span>
                 <span>
                   <MobileLabel color={C.tag}>{data.columns[3].replace(/^\d{4}\s/, "")}</MobileLabel>
-                  <span className="mt-1 block text-[14px] font-bold" style={{ color: C.enq }}>{e.enquiries.replace(/ enquiries$/, "")}</span>
-                  <span className="block text-[11px]" style={{ color: C.tag }}>{e.sourceTag}</span>
+                  <span className="mt-1 block text-[16px] font-bold" style={{ color: C.enq }}>{e.enquiries.replace(/ enquiries$/, "")}</span>
+                  <span className="block whitespace-nowrap text-[12px]" style={{ color: C.tag }}>{e.sourceTag}</span>
                 </span>
               </span>
-              <span className="mt-3 flex items-start gap-2 text-[14px] leading-[1.55]" style={{ color: C.vt }}>
+              <span className="mt-3 flex items-start gap-2 text-[16px] leading-[1.55]" style={{ color: C.vt }}>
                 <span className="flex-1">{e.verdict.text.charAt(0).toUpperCase() + e.verdict.text.slice(1)}</span>
                 <svg aria-hidden="true" viewBox="0 0 24 24" className="mt-0.5 h-5 w-5 shrink-0" fill="none" stroke="currentColor" strokeWidth="2" style={{ color: C.code }}>
                   <path d="m9 5 7 7-7 7" />
@@ -264,8 +264,8 @@ function Phone({ data, isDark }) {
           </svg>
         </span>
         <span className="flex-1">
-          <span className="block text-[16px] font-bold" style={{ color: C.code }}>{data.legend.title}</span>
-          <span className="mt-1 block text-[14px] leading-[1.55]" style={{ color: C.vt }}>{data.legend.text}</span>
+          <span className="block text-[18px] font-bold" style={{ color: C.code }}>{data.legend.title}</span>
+          <span className="mt-1 block text-[16px] leading-[1.55]" style={{ color: C.vt }}>{data.legend.text}</span>
         </span>
       </Link>
     </MobileSection>
