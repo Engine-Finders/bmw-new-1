@@ -4,6 +4,7 @@ import Image from "next/image";
 import { useState } from "react";
 import { useTheme } from "@/components/shared/themeProvider";
 import ScaleBox from "@/components/home/ScaleBox";
+import { MobileCard, MobileHeading, MobileLead } from "@/components/home/mobileKit";
 
 // BMW Market Intelligence — header with stats card, then six data panels (3 × 2 on desktop).
 // On phones the first three panels are accordions (closed until tapped), the rest stay open.
@@ -363,189 +364,157 @@ function Desktop({ data, isDark }) {
   );
 }
 
-// Phone spec measured on Section 10.2.png (panel 1 = first screen, panel 2 = engines opened). CSS px at 503.
-const PH = {
-  heroH: 569, inset: [25, 23],
-  car: { left: 293.9, top: 13.7, width: 390 }, backdrop: { left: 331, top: 1, w: 172, h: 397 },
-  h2: { left: 27, cap: 64, fs: 35, lh: 39.75, track: "-0.03em" }, p: { left: 27, cap: 273, fs: 16.2, lh: 23.75 },
-  stats: { top: 404, h: 149, cx: [78, 222, 362], iconTop: 15, icon: [50, 44], valueCap: 69, value: 22, labelCap: 97, label: 14.2, labelLh: 20 },
-  acc: { tops: [6, 8, 6.5], h: 74, icon: [14, 13, 50], titleX: 75, cap: [20, 42], fs: 15.9, chevX: 410 },
-  open: { h: 458, icon: [21, 28], titleCap: [28, 51], hdrCap: 93, hdrX: [21, 77, 211], hdrRight: 25, row0: 125, pitch: 47, rankCx: 31, codeX: 77, labelX: 206, valRight: 25, tagCap: 140 },
-  fail: { mt: 12.5, h: 379, icon: [19, 21], titleX: 74, titleCap: 31, hdrCap: 79, row0: 112, pitch: 54.6, rankCx: 31.5, textX: 74, text: 13.6, textLh: 20, pillX: 342, pill: [94, 23] },
-  reg: { mt: 15, h: 215, icon: [21, 14], titleX: 74, titleCap: 23, donut: { cx: 92.5, cy: 134, d: 118, inner: 58 }, dotX: 177, labelX: 204, pctX: 313, tagX: 369, row0: 66, pitch: 37.3 },
-  feed: { mt: 19, h: 176, w: 470, icon: [17, 11], titleX: 61, titleCap: 19, hdrCap: 58, hdrX: [10, 141, 244], hdrRight: 30, row0: 88, pitch: 31.5, x: [10, 141, 244], right: 28, fs: 13.4 },
-  footer: { mt: 16, h: 40 },
-};
-
+// Phone / tablet: readable stacked layout (body 17px, entries 16–18px, labels 13px).
 function Phone({ data, isDark }) {
   const [open, setOpen] = useState(null);
   const C = COL[isDark ? "dark" : "light"];
   const H = COL.dark;
-  const card = { marginLeft: PH.inset[0], marginRight: PH.inset[1], background: C.card, border: `1px solid ${C.border}`, borderRadius: 8, boxShadow: isDark ? "none" : "0 3px 14px rgba(16,24,48,0.06)" };
   const panels = [
     ["engines", data.engines],
     ["models", data.models],
     ["replacementCosts", data.replacementCosts],
   ];
-  const chev = (up) => (
-    <svg aria-hidden="true" viewBox="0 0 16 9" className="absolute" style={{ left: PH.acc.chevX, top: up ? 40 : 34, width: 15, height: 8, color: C.text }} fill="none" stroke="currentColor" strokeWidth="1.8">
-      <path d={up ? "M1 8 8 1.5 15 8" : "M1 1 8 7.5 15 1"} />
-    </svg>
+  const head = (p) => (
+    <span className="flex items-center gap-3">
+      <span className="h-8 w-8 shrink-0" style={{ color: C.icon }}>
+        <PanelIcon name={p.icon} className="h-full w-full" />
+      </span>
+      <span className="text-[16px] font-bold uppercase leading-[1.3] tracking-[0.02em]" style={{ color: C.text }}>
+        {p.title}
+        {p.subtitle ? <span className="block text-[14px] font-semibold normal-case tracking-normal" style={{ color: C.soft }}>({p.subtitle})</span> : null}
+      </span>
+    </span>
   );
-  const title2 = (t, sub) => {
-    if (sub) return [t, `(${sub})`];
-    const m = t.match(/^(Most-Enquired)\s+(.*)$/);
-    return m ? [m[1], m[2]] : [t, ""];
+  const valueTag = (text) => {
+    const [v, tag] = split(text);
+    return (
+      <span className="shrink-0 text-right">
+        <span className="block text-[17px] font-bold" style={{ color: C.blue }}>{v}</span>
+        <span className="block text-[13px]" style={{ color: C.tag }}>{tag}</span>
+      </span>
+    );
   };
-  const fx = (v) => `${(v / PH.feed.w) * 100}%`;
 
   return (
-    <div className="relative lg:hidden" style={{ paddingBottom: 6 }}>
-      {/* Hero (dark on both themes, as in the reference) */}
-      <div className="relative overflow-hidden" style={{ height: PH.heroH, background: H.bg }}>
-        <span aria-hidden="true" className="pointer-events-none absolute [mask-image:linear-gradient(90deg,transparent,black_25%)]" style={{ left: PH.backdrop.left, top: PH.backdrop.top, width: PH.backdrop.w, height: PH.backdrop.h }}>
-          <Image src={data.headerImage.backdrop.phone} alt="" fill sizes="180px" className="object-cover" />
-        </span>
-        <div aria-hidden="true" className="pointer-events-none absolute" style={{ left: PH.car.left, top: PH.car.top, width: PH.car.width }}>
-          <Image src={data.headerImage.phone} alt="" width={662} height={504} sizes="400px" className="h-auto w-full" style={{ filter: "brightness(0.66) contrast(1.2)" }} />
-          <span className="absolute inset-0 mix-blend-multiply" style={{ background: "#9fb2d0", WebkitMask: `url("${data.headerImage.phone}") center / 100% 100% no-repeat`, mask: `url("${data.headerImage.phone}") center / 100% 100% no-repeat` }} />
-        </div>
-        <h2 className="absolute whitespace-nowrap font-bold [&_.heading-accent]:!text-[var(--acc)]" style={{ left: PH.h2.left, top: PH.h2.cap - capOffset(PH.h2.fs, PH.h2.lh), fontSize: PH.h2.fs, lineHeight: `${PH.h2.lh}px`, letterSpacing: PH.h2.track, color: "#ffffff", "--acc": H.accent }} dangerouslySetInnerHTML={{ __html: data.h2Phone }} />
-        <Cap as="p" left={PH.p.left} cap={PH.p.cap} fs={PH.p.fs} lh={PH.p.lh} className="whitespace-pre" style={{ color: "#ffffff" }}>{data.subHeadlinePhone}</Cap>
-        <div className="absolute rounded-[8px]" style={{ left: PH.inset[0], right: PH.inset[1], top: PH.stats.top, height: PH.stats.h, background: "rgba(14,22,32,0.92)", border: "1px solid #253142" }}>
-          {data.stats.map((st, i) => (
-            <span key={st.label}>
-              {i ? <span aria-hidden="true" className="absolute" style={{ left: `${((PH.stats.cx[i - 1] + PH.stats.cx[i]) / 2 / 455) * 100}%`, top: 18, bottom: 18, width: 1, background: "#253142" }} /> : null}
-              <span className="absolute -translate-x-1/2" style={{ left: `${(PH.stats.cx[i] / 455) * 100}%`, top: PH.stats.iconTop, width: PH.stats.icon[0], height: PH.stats.icon[1], color: "#2f7bec" }}>
-                <PanelIcon name={st.icon} className="h-full w-full" />
-              </span>
-              <span className="absolute -translate-x-1/2 text-center" style={{ left: `${(PH.stats.cx[i] / 455) * 100}%`, top: i < 2 ? PH.stats.valueCap - capOffset(PH.stats.value, PH.stats.value * 1.2) : 70, color: "#ffffff" }}>
-                {i < 2 ? <span className="block whitespace-nowrap" style={{ fontSize: PH.stats.value, lineHeight: `${PH.stats.value * 1.2}px` }}>{st.value}</span> : <span className="block whitespace-nowrap" style={{ fontSize: PH.stats.label, lineHeight: `${PH.stats.labelLh}px` }}>{st.value}</span>}
-                <span className="block whitespace-pre" style={{ fontSize: PH.stats.label, lineHeight: `${PH.stats.labelLh}px`, marginTop: i < 2 ? -2 : 0 }}>{st.labelPhone}</span>
-              </span>
-            </span>
-          ))}
-        </div>
-      </div>
-
-      {/* Accordions */}
-      {panels.map(([key, p], i) => {
-        const isOpen = open === key;
-        const [t1, t2] = title2(p.title, p.subtitle);
-        const rows = p.rows;
-        return (
-          <div key={key} className="relative overflow-hidden" style={{ ...card, marginTop: PH.acc.tops[i], height: isOpen ? (key === "engines" ? PH.open.h : 100 + rows.length * PH.open.pitch) : PH.acc.h }}>
-            <button type="button" aria-expanded={isOpen} onClick={() => setOpen(isOpen ? null : key)} className="absolute inset-x-0 top-0 block text-left" style={{ height: PH.acc.h }}>
-              <span className="absolute" style={{ left: PH.acc.icon[0], top: PH.acc.icon[1] - 2, width: PH.acc.icon[2], height: PH.acc.icon[2], color: C.icon }}>
-                <PanelIcon name={p.icon} className="h-full w-full" />
-              </span>
-              <Cap left={PH.acc.titleX} cap={PH.acc.cap[0]} fs={PH.acc.fs} className="whitespace-nowrap font-bold uppercase" style={{ color: C.text }}>{t1}</Cap>
-              <Cap left={PH.acc.titleX} cap={PH.acc.cap[1]} fs={p.subtitle ? 12.8 : PH.acc.fs} className="whitespace-nowrap font-bold uppercase" style={{ color: C.text }}>{t2}</Cap>
-              {chev(isOpen)}
-            </button>
-            {isOpen ? (
-              <div className="absolute inset-x-0 bottom-0" style={{ top: 0 }}>
-                {p.columns.map((c, j) => (
-                  <Cap key={c} left={j === p.columns.length - 1 ? undefined : [21, 77, 211][j]} right={j === p.columns.length - 1 ? PH.open.hdrRight : undefined} cap={PH.open.hdrCap} fs={10} className="whitespace-nowrap uppercase" style={{ color: C.text }}>{c}</Cap>
-                ))}
-                {rows.map((r, j) => {
-                  const cap = PH.open.row0 + j * PH.open.pitch;
-                  const val = r.enquiries || r.cost;
-                  const [v, tag] = split(val);
-                  return (
-                    <span key={j}>
-                      <span aria-hidden="true" className="absolute" style={{ left: 18, right: 18, top: cap - 23, height: 1, background: C.line }} />
-                      {r.rank ? <Cap left={PH.open.rankCx - 10} cap={cap} fs={16} className="w-[20px] text-center" style={{ color: C.blue }}>{r.rank}</Cap> : null}
-                      <Cap left={r.rank ? PH.open.codeX : 21} cap={cap} fs={14.5} className="whitespace-nowrap font-bold" style={{ color: C.text }}>{r.code || r.model}</Cap>
-                      {r.label ? <Cap left={PH.open.labelX} cap={cap + 1} fs={12.5} className="whitespace-nowrap" style={{ color: C.soft }}>{r.label}</Cap> : null}
-                      <Cap right={PH.open.valRight} cap={cap - 2} fs={16} className="whitespace-nowrap text-right font-bold" style={{ color: C.blue }}>{v}</Cap>
-                      <Cap right={PH.open.valRight} cap={cap + 17} fs={10} className="whitespace-nowrap text-right" style={{ color: C.tag }}>{tag}</Cap>
-                    </span>
-                  );
-                })}
-              </div>
-            ) : null}
+    <div className="lg:hidden">
+      {/* Hero: dark in both themes, as in the reference */}
+      <div className="relative overflow-hidden" style={{ background: H.bg }}>
+        <div className="relative mx-auto max-w-[720px] px-4 pb-8 pt-10">
+          <div className="relative mb-6 h-[200px] overflow-hidden rounded-[16px]">
+            <Image src={data.headerImage.backdrop.dark} alt="" fill sizes="720px" className="object-cover" />
+            <Image src={data.headerImage.phone} alt={data.headerImage.alt} fill sizes="400px" className="object-contain object-bottom px-4 pt-3" style={{ filter: "brightness(0.66) contrast(1.2)" }} />
           </div>
-        );
-      })}
-
-      {/* Failures */}
-      <div className="relative" style={{ ...card, marginTop: PH.fail.mt, height: PH.fail.h }}>
-        <span className="absolute" style={{ left: PH.fail.icon[0] - 2, top: PH.fail.icon[1] - 3, width: 38, height: 38 }}>
-          <PanelIcon name={data.failures.icon} className="h-full w-full" />
-        </span>
-        <Cap as="h3" left={PH.fail.titleX} cap={PH.fail.titleCap} fs={15.5} className="whitespace-nowrap font-bold uppercase" style={{ color: C.text }}>{data.failures.title}</Cap>
-        {data.failures.columns.map((c, j) => (
-          <Cap key={c} left={j === 2 ? undefined : [20, 74][j]} right={j === 2 ? 30 : undefined} cap={PH.fail.hdrCap} fs={10} className="whitespace-nowrap uppercase" style={{ color: C.text }}>{c}</Cap>
-        ))}
-        {data.failures.rows.map((r, j) => {
-          const cap = PH.fail.row0 + j * PH.fail.pitch;
-          return (
-            <span key={r.rank}>
-              <span aria-hidden="true" className="absolute" style={{ left: 18, right: 18, top: cap - 15, height: 1, background: C.line }} />
-              <Cap left={PH.fail.rankCx - 10} cap={cap} fs={18} className="w-[20px] text-center" style={{ color: C.blue }}>{r.rank}</Cap>
-              <Cap left={PH.fail.textX} cap={cap} fs={PH.fail.text} lh={PH.fail.textLh} className="whitespace-pre" style={{ color: C.soft }}>{r.failurePhone}</Cap>
-              <span className="absolute flex items-center justify-center rounded-[3px] text-white" style={{ left: PH.fail.pillX, top: cap - 2, width: PH.fail.pill[0], height: PH.fail.pill[1], fontSize: 14, background: RISK_BG[r.risk.type] }}>{r.risk.label}</span>
-            </span>
-          );
-        })}
+          <MobileHeading html={data.h2} color="#ffffff" accent={H.accent} />
+          <MobileLead color="#e6e9ee">{data.subHeadline}</MobileLead>
+          <ul className="mt-6 grid grid-cols-3 rounded-[12px] border" style={{ background: "rgba(14,22,32,0.92)", borderColor: "#253142" }}>
+            {data.stats.map((st, i) => (
+              <li key={st.label} className="flex flex-col items-center px-2 py-4 text-center" style={{ borderLeft: i ? "1px solid #253142" : undefined }}>
+                <span className="h-8 w-8" style={{ color: "#2f7bec" }}>
+                  <PanelIcon name={st.icon} className="h-full w-full" />
+                </span>
+                <span className="mt-2 text-[23px] font-bold leading-tight text-white">{i < 2 ? st.value : null}</span>
+                <span className="mt-0.5 text-[14px] leading-[1.35] text-[#d7dbe1]">{i < 2 ? st.label : `${st.value} ${st.label}`}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
 
-      {/* Regional */}
-      <div className="relative" style={{ ...card, marginTop: PH.reg.mt, height: PH.reg.h }}>
-        <span className="absolute" style={{ left: PH.reg.icon[0] - 2, top: PH.reg.icon[1] - 2, width: 36, height: 36, color: C.icon }}>
-          <PanelIcon name={data.regionalDemand.icon} className="h-full w-full" />
-        </span>
-        <Cap as="h3" left={PH.reg.titleX} cap={PH.reg.titleCap} fs={15.5} className="whitespace-nowrap font-bold uppercase" style={{ color: C.text }}>{data.regionalDemand.title}</Cap>
-        <span className="absolute" style={{ left: PH.reg.donut.cx - PH.reg.donut.d / 2, top: PH.reg.donut.cy - PH.reg.donut.d / 2, width: PH.reg.donut.d, height: PH.reg.donut.d }}>
-          <Donut size={PH.reg.donut.d} inner={PH.reg.donut.inner} isDark={isDark} />
-        </span>
-        {data.regionalDemand.rows.map((r, j) => {
-          const cap = PH.reg.row0 + j * PH.reg.pitch;
+      <div className="mx-auto grid max-w-[720px] gap-4 px-4 pb-10 pt-6">
+        {/* Accordions */}
+        {panels.map(([key, p]) => {
+          const isOpen = open === key;
           return (
-            <span key={r.region}>
-              <span aria-hidden="true" className="absolute rounded-full" style={{ left: PH.reg.dotX, top: cap - 1, width: 13, height: 13, background: ["#0b50e3", "#1f5fe8", "#2f6fef", "#6f9ef4"][j] }} />
-              <Cap left={PH.reg.labelX} cap={cap} fs={14.2} className="whitespace-nowrap" style={{ color: C.text }}>{r.region}</Cap>
-              <Cap left={PH.reg.pctX} cap={cap} fs={14.5} className="whitespace-nowrap font-bold" style={{ color: C.text }}>{r.percentage}</Cap>
-              <Cap left={PH.reg.tagX} cap={cap + 1} fs={9.6} className="whitespace-nowrap" style={{ color: C.tag }}>{r.source}</Cap>
-            </span>
+            <MobileCard key={key} C={C}>
+              <button type="button" aria-expanded={isOpen} onClick={() => setOpen(isOpen ? null : key)} className="flex w-full items-center justify-between gap-3 px-4 py-4 text-left">
+                {head(p)}
+                <svg aria-hidden="true" viewBox="0 0 16 9" className={`h-2.5 w-4 shrink-0 transition-transform ${isOpen ? "rotate-180" : ""}`} fill="none" stroke="currentColor" strokeWidth="1.8" style={{ color: C.text }}>
+                  <path d="M1 1 8 7.5 15 1" />
+                </svg>
+              </button>
+              {isOpen ? (
+                <ul className="border-t px-4" style={{ borderColor: C.line }}>
+                  {p.rows.map((r, j) => (
+                    <li key={j} className="flex items-center gap-3 border-b py-3 last:border-b-0" style={{ borderColor: C.line }}>
+                      {r.rank ? <span className="w-5 shrink-0 text-[18px] font-semibold" style={{ color: C.blue }}>{r.rank}</span> : null}
+                      <span className="min-w-0 flex-1">
+                        <span className="block text-[17px] font-bold" style={{ color: C.text }}>{r.code || r.model}</span>
+                        {r.label ? <span className="block text-[15px]" style={{ color: C.soft }}>{r.label}</span> : null}
+                      </span>
+                      {valueTag(r.enquiries || r.cost)}
+                    </li>
+                  ))}
+                </ul>
+              ) : null}
+            </MobileCard>
           );
         })}
-      </div>
 
-      {/* Live feed */}
-      <div className="relative" style={{ ...card, marginTop: PH.feed.mt, height: PH.feed.h }}>
-        <span className="absolute" style={{ left: PH.feed.icon[0] - 2, top: PH.feed.icon[1] - 2, width: 32, height: 32, color: C.icon }}>
-          <PanelIcon name={data.liveFeed.icon} className="h-full w-full" />
-        </span>
-        <Cap as="h3" left={PH.feed.titleX} cap={PH.feed.titleCap} fs={15.2} className="whitespace-nowrap font-bold uppercase" style={{ color: C.text }}>{data.liveFeed.title}</Cap>
-        {data.liveFeed.columns.map((c, j) => (
-          <Cap key={c} left={j < 3 ? fx(PH.feed.hdrX[j]) : undefined} right={j === 3 ? PH.feed.hdrRight : undefined} cap={PH.feed.hdrCap} fs={9.8} className="whitespace-nowrap uppercase" style={{ color: C.text }}>{c}</Cap>
-        ))}
-        <span aria-hidden="true" className="absolute" style={{ left: 8, right: 8, top: PH.feed.hdrCap + 15, height: 1, background: C.line }} />
-        {data.liveFeed.rows.map((r, j) => {
-          const cap = PH.feed.row0 + j * PH.feed.pitch;
-          return (
-            <span key={r.vehicle}>
-              {[r.vehicle, r.location, r.issue].map((v, k) => (
-                <Cap key={k} left={fx(PH.feed.x[k])} cap={cap} fs={PH.feed.fs} className="whitespace-nowrap" style={{ color: C.soft }}>{v}</Cap>
+        {/* Failures */}
+        <MobileCard C={C} className="px-4 pt-4">
+          {head(data.failures)}
+          <ul className="mt-2">
+            {data.failures.rows.map((r) => (
+              <li key={r.rank} className="flex gap-3 border-t py-3.5" style={{ borderColor: C.line }}>
+                <span className="w-5 shrink-0 text-[19px] font-semibold leading-[1.3]" style={{ color: C.blue }}>{r.rank}</span>
+                <span className="flex-1">
+                  <span className="block text-[17px] leading-[1.45]" style={{ color: C.soft }}>{r.failure}</span>
+                  <span className="mt-2 inline-block rounded-[4px] px-2.5 py-1 text-[14px] font-semibold text-white" style={{ background: RISK_BG[r.risk.type] }}>{r.risk.label}</span>
+                </span>
+              </li>
+            ))}
+          </ul>
+        </MobileCard>
+
+        {/* Regional demand */}
+        <MobileCard C={C} className="p-4">
+          {head(data.regionalDemand)}
+          <div className="mt-4 flex items-center gap-5">
+            <span className="relative h-[116px] w-[116px] shrink-0">
+              <Donut size={116} inner={56} isDark={isDark} />
+            </span>
+            <ul className="grid flex-1 gap-2.5">
+              {data.regionalDemand.rows.map((r, j) => (
+                <li key={r.region} className="flex items-center gap-2.5 text-[16px]" style={{ color: C.text }}>
+                  <span aria-hidden="true" className="h-3 w-3 shrink-0 rounded-full" style={{ background: ["#0b50e3", "#1f5fe8", "#2f6fef", "#6f9ef4"][j] }} />
+                  <span className="flex-1">{r.region}</span>
+                  <span className="font-bold">{r.percentage}</span>
+                </li>
               ))}
-              <Cap right={PH.feed.right} cap={cap} fs={PH.feed.fs} className="whitespace-nowrap" style={{ color: C.soft }}>{r.timestamp}</Cap>
-            </span>
-          );
-        })}
-      </div>
+              <li className="text-[13px]" style={{ color: C.tag }}>{data.regionalDemand.rows[0].source}</li>
+            </ul>
+          </div>
+        </MobileCard>
 
-      <p className="flex items-center justify-center gap-2" style={{ marginTop: PH.footer.mt, height: 24, fontSize: 14.6, color: C.soft }}>
-        <span style={{ width: 16, height: 16, color: C.icon }}>
-          <PanelIcon name="refresh" className="h-full w-full" />
-        </span>
-        <span>
-          {data.liveFeed.footer.split("BMWEngines.uk")[0]}
-          <span style={{ color: C.blue }}>BMWEngines.uk</span>
-          {data.liveFeed.footer.split("BMWEngines.uk")[1]}
-        </span>
-      </p>
+        {/* Live feed */}
+        <MobileCard C={C} className="px-4 pt-4">
+          {head(data.liveFeed)}
+          <ul className="mt-2">
+            {data.liveFeed.rows.map((r) => (
+              <li key={r.vehicle} className="border-t py-3" style={{ borderColor: C.line }}>
+                <span className="flex items-baseline justify-between gap-3">
+                  <span className="text-[17px] font-bold" style={{ color: C.text }}>{r.vehicle}</span>
+                  <span className="shrink-0 text-[14px]" style={{ color: C.soft }}>{r.timestamp}</span>
+                </span>
+                <span className="mt-0.5 block text-[16px]" style={{ color: C.soft }}>
+                  {r.issue} · {r.location}
+                </span>
+              </li>
+            ))}
+          </ul>
+        </MobileCard>
+
+        <p className="flex items-center justify-center gap-2 text-center text-[15px]" style={{ color: C.soft }}>
+          <span className="h-4 w-4 shrink-0" style={{ color: C.icon }}>
+            <PanelIcon name="refresh" className="h-full w-full" />
+          </span>
+          <span>
+            {data.liveFeed.footer.split("BMWEngines.uk")[0]}
+            <span style={{ color: C.blue }}>BMWEngines.uk</span>
+            {data.liveFeed.footer.split("BMWEngines.uk")[1]}
+          </span>
+        </p>
+      </div>
     </div>
   );
 }
@@ -558,9 +527,7 @@ export default function HomeSec10({ data }) {
       <ScaleBox width={1536}>
         <Desktop data={data} isDark={isDark} />
       </ScaleBox>
-      <ScaleBox width={503} max={1.5}>
-        <Phone data={data} isDark={isDark} />
-      </ScaleBox>
+      <Phone data={data} isDark={isDark} />
     </section>
   );
 }

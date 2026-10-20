@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useTheme } from "@/components/shared/themeProvider";
 import ScaleBox from "@/components/home/ScaleBox";
+import { MobileHeading, MobileLabel, MobileLead, MobileSection } from "@/components/home/mobileKit";
 import BrandIcon from "@/components/home/brandIcon";
 
 // BMW Engine Families — The Pillars: engine table (engine / fuel / years / enquiries / verdict)
@@ -161,24 +162,6 @@ function Desktop({ data, isDark }) {
   );
 }
 
-// Phone spec measured on Section 7.2.png (864px capture, compared at 432px). CSS px; caps are
-// cap-height tops relative to the section / card / row top; table x values are /402 of the card.
-const PH = {
-  inset: 15,
-  img: { left: 140, top: 0, w: 292, h: 210.5 },
-  h2: { left: 19, caps: 45, fs: 29.5, lh: 33.75, track: "-0.04em" },
-  p: { left: 19, cap: 152, fs: 9.38, lh: 16.75 },
-  trust: { top: 211.5, h: 90, iconCy: 22.75, icon: 19.5, caps: 42.5, caps2: 46.5, fs: 8.2, lh: 13.75 },
-  table: { top: 314, h: 439, w: 402, hdrCap: 12, hdr: 8.3, labelX: [11.5, 126.75, 196.5, 245, 362.25], labelAlign: ["left", "center", "center", "left", "center"],
-    dividers: [93.25, 161.5, 232, 326.75], rows: [31, 76.25, 122.25, 168, 213.5, 258.75, 303.75, 348.75, 393.75, 439],
-    codeX: 11.5, codeCap: 13, code: 11.5, specGap: 15, spec: 7.7, fuelIconX: 113, fuelIconCy: 22, fuelIcon: { Diesel: [11, 15.5], Petrol: [13, 13] },
-    fuelX: 128, fuelCap: 20, fuel: 8.4, yearsX: 174, yearsCap: 20, yearsCap2: 13.75, years: 8.4, yearsLh: 12,
-    enqX: 245, enqCap: 13, enq: 8.85, tagCap: 27, tag: 7.4, iconCx: 353.75, iconCy: 22.75, icon: { watch: [19.5, 17.5], safe: [17.5, 17.5], avoid: [17.5, 17.5], solid: [17, 17], best: [17.5, 20] },
-    chevCx: 387, chev: [4.5, 8] },
-  legend: { top: 770, h: 65, icon: [11.5, 12, 37.5], textX: 66.5, titleCap: 14.5, title: 10.2, textCap: 31, text: 8.9, textLh: 14, chevX: 382, chevCy: 33 },
-  h: 853,
-};
-
 // Trust-strip artwork drawn to the phone reference (bars, wrench, open book, trophy).
 function TrustGlyph({ name }) {
   if (name === "real-inquiries")
@@ -202,101 +185,90 @@ function TrustGlyph({ name }) {
   return <VerdictMark type="best" className="h-full w-full" />;
 }
 
-function PhoneCap({ left, right, cap, fs, lh, className = "", style, children }) {
-  const l = lh ?? fs * 1.2;
-  return (
-    <span className={`absolute ${className}`} style={{ left, right, top: cap - capOffset(fs, l), fontSize: fs, lineHeight: `${l}px`, ...style }}>
-      {children}
-    </span>
-  );
-}
+const VERDICT_TONE = { watch: "#d97706", safe: "#16a34a", avoid: "#dc2626", solid: "#1d4fd8", best: "#1d4fd8" };
 
+// Phone / tablet: readable stacked layout (body 17px, entries 16–18px, labels 13px).
 function Phone({ data, isDark }) {
   const C = COL[isDark ? "dark" : "light"];
-  const T = PH.table;
-  const x = (v) => `${(v / T.w) * 100}%`;
-  const card = { left: PH.inset, right: PH.inset, background: C.card, border: `1px solid ${C.border}`, borderRadius: 8, boxShadow: isDark ? "none" : "0 4px 16px rgba(16,24,48,0.04)" };
-  const chevron = (style) => (
-    <svg aria-hidden="true" viewBox="0 0 6 11" className="absolute" style={style} fill="none" stroke="currentColor" strokeWidth="1.4">
-      <path d="m.8.8 4.4 4.7L.8 10.2" />
-    </svg>
-  );
+  const card = { background: C.card, borderColor: C.border };
 
   return (
-    <div className="relative lg:hidden" style={{ height: PH.h }}>
-      <div aria-hidden="true" className="pointer-events-none absolute overflow-hidden" style={{ left: PH.img.left, right: 0, top: PH.img.top, height: PH.img.h }}>
-        {isDark ? (
-          <Image src={data.headerImage.dark} alt="" fill sizes="300px" className="object-cover object-right [mask-image:linear-gradient(90deg,transparent,black_30%)]" />
-        ) : (
-          <Image src={data.headerImage.phone} alt="" fill sizes="300px" className="object-cover object-left-top" />
-        )}
+    <MobileSection>
+      <div className="relative mb-6 h-[170px] overflow-hidden rounded-[16px]">
+        <Image src={isDark ? data.headerImage.dark : data.headerImage.light} alt={data.headerImage.alt} fill sizes="720px" className="object-cover object-[70%_50%]" />
       </div>
+      <MobileHeading html={data.h2} color={C.h2} accent={C.accent} />
+      <MobileLead color={C.para}>{data.subHeadline}</MobileLead>
 
-      <h2 className="absolute whitespace-nowrap font-bold [&_.heading-accent]:text-[var(--acc)]" style={{ left: PH.h2.left, top: PH.h2.caps - capOffset(PH.h2.fs, PH.h2.lh), fontSize: PH.h2.fs, lineHeight: `${PH.h2.lh}px`, letterSpacing: PH.h2.track, color: C.h2, "--acc": C.accent }} dangerouslySetInnerHTML={{ __html: data.h2Phone }} />
-      <PhoneCap left={PH.p.left} cap={PH.p.cap} fs={PH.p.fs} lh={PH.p.lh} className="whitespace-pre" style={{ color: C.para }}>{data.subHeadlinePhone}</PhoneCap>
-
-      {/* Trust strip */}
-      <ul className="absolute grid grid-cols-4" style={{ ...card, top: PH.trust.top, height: PH.trust.h, paddingRight: "2%" }}>
-        {data.trustStrip.map((t, i) => (
-          <li key={t.icon} className="relative text-center" style={{ borderLeft: i ? `1px solid ${C.line}` : undefined, marginTop: 14, marginBottom: 14 }}>
-            <span className="absolute left-1/2 flex -translate-x-1/2 -translate-y-1/2 items-center justify-center" style={{ top: PH.trust.iconCy - 14, width: PH.trust.icon, height: PH.trust.icon, color: isDark ? "#3b82f6" : C.hdr }}>
+      <ul className="mt-7 grid grid-cols-2 gap-3">
+        {data.trustStrip.map((t) => (
+          <li key={t.icon} className="flex items-center gap-3 rounded-[12px] border px-3.5 py-3.5" style={card}>
+            <span className="h-6 w-6 shrink-0" style={{ color: isDark ? "#3b82f6" : C.hdr }}>
               <TrustGlyph name={t.icon} />
             </span>
-            <PhoneCap left={0} right={0} cap={(t.lines.length < 3 ? PH.trust.caps2 : PH.trust.caps) - 14} fs={PH.trust.fs} lh={PH.trust.lh} style={{ color: C.text }}>
+            <span className="text-[15px] leading-[1.35]" style={{ color: C.text }}>
               {t.lines.map((l) => (l.startsWith("**") ? <strong key={l} className="block font-bold">{l.slice(2, -2)}</strong> : <span key={l} className="block">{l}</span>))}
-            </PhoneCap>
+            </span>
           </li>
         ))}
       </ul>
 
-      {/* Engine table */}
-      <div className="absolute overflow-hidden" style={{ ...card, top: T.top, height: T.h }}>
-        {data.columns.map((c, i) => (
-          <PhoneCap key={c} left={T.labelAlign[i] === "center" ? `calc(${x(T.labelX[i])} - 50px)` : x(T.labelX[i])} cap={T.hdrCap} fs={T.hdr} className={`whitespace-nowrap font-bold uppercase ${T.labelAlign[i] === "center" ? "w-[100px] text-center" : ""}`} style={{ color: isDark ? "#ffffff" : C.hdr }}>
-            {c}
-          </PhoneCap>
-        ))}
-        <span aria-hidden="true" className="absolute" style={{ left: 9, right: 9, top: T.rows[0], height: 1, background: C.line }} />
-        {T.dividers.map((d) => (
-          <span key={d} aria-hidden="true" className="absolute" style={{ left: x(d), top: 8, bottom: 0, width: 1, background: C.line }} />
-        ))}
-        {data.engines.map((e, ri) => {
-          const top = T.rows[ri];
-          const h = T.rows[ri + 1] - top;
-          const [fw, fh] = T.fuelIcon[e.fuel] ?? T.fuelIcon.Petrol;
-          const [iw, ih] = T.icon[e.verdict.type] ?? T.icon.best;
-          const twoLine = e.yearsPhone.includes("\n");
-          return (
-            <Link key={e.code} href={e.href} className="absolute inset-x-0 font-normal" style={{ top, height: h, color: C.text }}>
-              <span aria-hidden="true" className="absolute inset-y-0 left-0" style={{ width: 2, background: isDark ? C.bar : "#b2c9f5" }} />
-              {ri ? <span aria-hidden="true" className="absolute" style={{ left: 9, right: 9, top: 0, height: 1, background: C.line }} /> : null}
-              <PhoneCap left={x(T.codeX)} cap={T.codeCap} fs={T.code} className="whitespace-nowrap font-bold" style={{ color: C.code }}>{e.code}</PhoneCap>
-              <PhoneCap left={x(T.codeX)} cap={T.codeCap + T.specGap} fs={T.spec} className="whitespace-nowrap" style={{ color: C.spec }}>{e.spec}</PhoneCap>
-              <FuelMark fuel={e.fuel} color={C.fuelIcon} className="absolute" style={{ left: `calc(${x(T.fuelIconX)} - ${fw / 2}px)`, top: T.fuelIconCy - fh / 2, width: fw, height: fh }} />
-              <PhoneCap left={x(T.fuelX)} cap={T.fuelCap} fs={T.fuel} className="whitespace-nowrap">{e.fuel}</PhoneCap>
-              <PhoneCap left={x(T.yearsX)} cap={twoLine ? T.yearsCap2 : T.yearsCap} fs={T.years} lh={T.yearsLh} className="whitespace-pre">{e.yearsPhone}</PhoneCap>
-              <PhoneCap left={x(T.enqX)} cap={T.enqCap} fs={T.enq} className="whitespace-nowrap font-bold" style={{ color: C.enq }}>{e.enquiries}</PhoneCap>
-              <PhoneCap left={x(T.enqX)} cap={T.tagCap} fs={T.tag} className="whitespace-nowrap" style={{ color: C.tag }}>{e.sourceTag}</PhoneCap>
-              <VerdictMark type={e.verdict.type} className="absolute" style={{ left: `calc(${x(T.iconCx)} - ${iw / 2}px)`, top: T.iconCy - ih / 2, width: iw, height: ih }} />
-              {chevron({ left: `calc(${x(T.chevCx)} - ${T.chev[0] / 2}px)`, top: T.iconCy - T.chev[1] / 2, width: T.chev[0], height: T.chev[1], color: C.code })}
+      <ul className="mt-5 grid gap-3">
+        {data.engines.map((e) => (
+          <li key={e.code}>
+            <Link href={e.href} className="block rounded-[12px] border border-l-[3px] px-4 py-4 font-normal" style={{ ...card, borderLeftColor: isDark ? C.bar : "#9cbdf7", color: C.text }}>
+              <span className="flex items-start justify-between gap-3">
+                <span>
+                  <span className="block text-[22px] font-bold leading-tight" style={{ color: C.code }}>{e.code}</span>
+                  <span className="mt-0.5 block text-[15px]" style={{ color: C.spec }}>{e.spec}</span>
+                </span>
+                <span className="flex shrink-0 items-center gap-2">
+                  <VerdictMark type={e.verdict.type} style={{ width: 24, height: 24 }} />
+                  <span className="text-[15px] font-bold" style={{ color: VERDICT_TONE[e.verdict.type] ?? C.code }}>{e.verdict.label}</span>
+                </span>
+              </span>
+              <span className="mt-3 grid grid-cols-[auto_auto_1fr] gap-x-5 border-y py-3" style={{ borderColor: C.line }}>
+                <span>
+                  <MobileLabel color={C.tag}>{data.columns[1]}</MobileLabel>
+                  <span className="mt-1 flex items-center gap-1.5 text-[16px]">
+                    <FuelMark fuel={e.fuel} color={C.fuelIcon} style={{ width: 12, height: 16 }} />
+                    {e.fuel}
+                  </span>
+                </span>
+                <span>
+                  <MobileLabel color={C.tag}>{data.columns[2]}</MobileLabel>
+                  <span className="mt-1 block whitespace-nowrap text-[16px]">{e.years}</span>
+                </span>
+                <span>
+                  <MobileLabel color={C.tag}>{data.columns[3].replace(/^\d{4}\s/, "")}</MobileLabel>
+                  <span className="mt-1 block text-[16px] font-bold" style={{ color: C.enq }}>{e.enquiries.replace(/ enquiries$/, "")}</span>
+                  <span className="block whitespace-nowrap text-[12px]" style={{ color: C.tag }}>{e.sourceTag}</span>
+                </span>
+              </span>
+              <span className="mt-3 flex items-start gap-2 text-[16px] leading-[1.55]" style={{ color: C.vt }}>
+                <span className="flex-1">{e.verdict.text.charAt(0).toUpperCase() + e.verdict.text.slice(1)}</span>
+                <svg aria-hidden="true" viewBox="0 0 24 24" className="mt-0.5 h-5 w-5 shrink-0" fill="none" stroke="currentColor" strokeWidth="2" style={{ color: C.code }}>
+                  <path d="m9 5 7 7-7 7" />
+                </svg>
+              </span>
             </Link>
-          );
-        })}
-      </div>
+          </li>
+        ))}
+      </ul>
 
-      {/* Verdict legend */}
-      <Link href={data.legend.href} className="absolute font-normal" style={{ ...card, top: PH.legend.top, height: PH.legend.h }}>
-        <span className="absolute flex items-center justify-center rounded-[6px] bg-[#0a55e6] text-white" style={{ left: PH.legend.icon[0], top: PH.legend.icon[1], width: PH.legend.icon[2], height: PH.legend.icon[2] }}>
-          <svg aria-hidden="true" viewBox="0 0 24 24" className="h-[58%] w-[58%]" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round">
+      <Link href={data.legend.href} className="mt-5 flex items-center gap-4 rounded-[12px] border p-4 font-normal" style={card}>
+        <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-[10px] bg-[#0a55e6] text-white">
+          <svg aria-hidden="true" viewBox="0 0 24 24" className="h-6 w-6" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round">
             <path d="M9 18h6M10 21h4M12 2.5a6.5 6.5 0 0 0-3.8 11.8c.6.5.8 1.1.8 1.8V16h6v-.1c0-.7.3-1.3.8-1.8A6.5 6.5 0 0 0 12 2.5Z" />
             <path d="M12 6.5a3 3 0 0 0-3 3" />
           </svg>
         </span>
-        <PhoneCap left={PH.legend.textX} cap={PH.legend.titleCap} fs={PH.legend.title} className="whitespace-nowrap font-bold" style={{ color: C.code }}>{data.legend.title}</PhoneCap>
-        <PhoneCap left={PH.legend.textX} cap={PH.legend.textCap} fs={PH.legend.text} lh={PH.legend.textLh} className="whitespace-pre" style={{ color: C.vt }}>{data.legend.textPhone}</PhoneCap>
-        {chevron({ left: PH.legend.chevX, top: PH.legend.chevCy - 4.5, width: 5, height: 9, color: C.code })}
+        <span className="flex-1">
+          <span className="block text-[18px] font-bold" style={{ color: C.code }}>{data.legend.title}</span>
+          <span className="mt-1 block text-[16px] leading-[1.55]" style={{ color: C.vt }}>{data.legend.text}</span>
+        </span>
       </Link>
-    </div>
+    </MobileSection>
   );
 }
 
@@ -316,11 +288,7 @@ export default function HomeSec7({ data }) {
         <Desktop data={data} isDark={isDark} />
       </ScaleBox>
 
-      <ScaleBox width={432} max={1.5}>
-
-        <Phone data={data} isDark={isDark} />
-
-      </ScaleBox>
+      <Phone data={data} isDark={isDark} />
     </section>
   );
 }

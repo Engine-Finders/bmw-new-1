@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { useTheme } from "@/components/shared/themeProvider";
 import ScaleBox from "@/components/home/ScaleBox";
+import { MobileCard, MobileHeading, MobileLabel, MobileLead, MobileSection } from "@/components/home/mobileKit";
 
 // BMW Engine History — era timeline table (era / key engines / iconic models) with a key takeaway.
 
@@ -145,78 +146,63 @@ function Desktop({ data, isDark }) {
   );
 }
 
-// Phone spec measured on Section 11.2.png (864px capture, compared at 432px). CSS px.
-const P = {
-  h: 862, inset: 12.5,
-  img: { left: 197.5, top: 0.5, w: 234.5, h: 199.5 },
-  h2: [{ cap: 40.5, fs: 20.5, track: "-0.055em" }, { cap: 67, fs: 31.5, track: "-0.02em" }, { cap: 92, fs: 31.5, track: "-0.02em" }], h2Left: 17.5,
-  underline: { left: 18, top: 129, w: 29, h: 2 }, p: { left: 18, cap: 147.5, fs: 8.3, lh: 14 },
-  cards: [208.5, 301, 394, 487, 579.5, 672], cardH: 85.5,
-  circle: { cx: 25.5, cy: 33.5, d: 32 }, eraX: 51, eraCap: 29.5, era: 10,
-  labelCap: 11.5, label: 7.3, engX: 128, engCap1: 39, engCap2: [32.5, 44.5], eng: 9, engImg: { x: 180.5, top: 15.5, w: 66.5, h: 58 },
-  modelsLabelX: 268, cars: { x: 264, w2: [50, 50], w3: [36.5, 36.5, 36.5], gap: 3, bottom2: 56.5, bottom3: 55.5 }, modelsX: 268, modelsCap: 68, models: 8.6,
-  chev: { x: 387.5, w: 5.5, h: 11 },
-  key: { top: 768, h: 83.5, icon: [13.5, 18.5, 40.5], labelX: 73.5, cap: 17, label: 9.4, firstX: 157, text: 9.6, lh: 15.5 },
-};
-
+// Phone / tablet: readable timeline cards (body 17px, entries 16–18px, labels 13px).
 function Phone({ data, isDark }) {
   const C = COL[isDark ? "dark" : "light"];
-  const lines = data.h2Phone.match(/<span[^>]*>.*?<\/span>/g) || [];
-  const kt = data.keyTakeawayPhone.split("\n");
-  const card = { left: P.inset, right: P.inset, height: P.cardH, background: C.card, border: `1px solid ${C.border}`, borderRadius: 6, boxShadow: isDark ? "none" : "0 3px 12px rgba(16,24,48,0.05)" };
-  const labels = data.columns.slice(1);
+  const [, engLabel, modelLabel] = data.columns;
 
   return (
-    <div className="relative overflow-hidden lg:hidden" style={{ height: P.h }}>
-      <div aria-hidden="true" className="pointer-events-none absolute" style={{ left: P.img.left, top: P.img.top, width: P.img.w, height: P.img.h }}>
-        <Image src={isDark ? data.headerImage.dark : data.headerImage.phone} alt="" fill sizes="240px" className={isDark ? "object-cover object-[45%_50%] [mask-image:linear-gradient(90deg,transparent,black_25%)]" : "object-cover object-left-top"} />
+    <MobileSection>
+      <div className="relative mb-6 h-[170px] overflow-hidden rounded-[16px]">
+        <Image src={isDark ? data.headerImage.dark : data.headerImage.light} alt={data.headerImage.alt} fill sizes="720px" className="object-cover object-[60%_50%]" />
       </div>
-      {lines.map((l, i) => (
-        <h2 key={i} className="absolute whitespace-nowrap font-bold [&_.heading-accent]:!text-[var(--acc)]" style={{ left: P.h2Left, top: P.h2[i].cap - capOffset(P.h2[i].fs, P.h2[i].fs * 1.15), fontSize: P.h2[i].fs, lineHeight: `${P.h2[i].fs * 1.15}px`, letterSpacing: P.h2[i].track, color: C.h2, "--acc": C.accent }} dangerouslySetInnerHTML={{ __html: l }} />
-      ))}
-      <span aria-hidden="true" className="absolute" style={{ left: P.underline.left, top: P.underline.top, width: P.underline.w, height: P.underline.h, background: C.accent }} />
-      <Cap as="p" left={P.p.left} cap={P.p.cap} fs={P.p.fs} lh={P.p.lh} className="whitespace-pre" style={{ color: C.para }}>{data.subHeadlineDesktop}</Cap>
+      <MobileHeading html={data.h2} color={C.h2} accent={C.accent} />
+      <MobileLead color={C.para}>{data.subHeadline}</MobileLead>
 
-      <span aria-hidden="true" className="absolute z-[1]" style={{ left: P.inset + P.circle.cx - 1, width: 2, top: P.cards[0] + P.circle.cy, height: P.cards[5] - P.cards[0], background: C.timeline }} />
-      {data.eras.map((e, i) => {
-        const imgs = i === 0 ? e.modelImages.slice(0, 2) : e.modelImages;
-        const ws = i === 0 ? P.cars.w2 : P.cars.w3;
-        const bottom = i === 0 ? P.cars.bottom2 : P.cars.bottom3;
-        const eng = e.enginesPhone.split("\n");
-        return (
-          <div key={e.era} className="absolute" style={{ ...card, top: P.cards[i] }}>
-            <span className="absolute z-[2] flex items-center justify-center rounded-full" style={{ left: P.circle.cx - P.circle.d / 2, top: P.circle.cy - P.circle.d / 2, width: P.circle.d, height: P.circle.d, background: C.circleBg, border: `1px solid ${C.circle}`, color: C.glyph }}>
-              <CarGlyph style={{ width: 16, height: 13.5 }} />
+      <ol className="relative mt-7 grid gap-4">
+        <span aria-hidden="true" className="absolute bottom-10 left-[23px] top-10 w-[2px]" style={{ background: C.timeline }} />
+        {data.eras.map((e) => (
+          <li key={e.era} className="relative pl-[58px]">
+            <span className="absolute left-0 top-3 z-[1] flex h-12 w-12 items-center justify-center rounded-full" style={{ background: C.circleBg, border: `2px solid ${C.circle}`, color: C.glyph }}>
+              <CarGlyph style={{ width: 22, height: 18 }} />
             </span>
-            <Cap as="h3" left={P.eraX} cap={P.eraCap} fs={P.era} className="whitespace-nowrap font-bold" style={{ color: C.text }}>{e.era}</Cap>
-            <span aria-hidden="true" className="absolute" style={{ left: P.engX - 9, top: 12, bottom: 12, width: 1, background: C.line }} />
-            <Cap left={P.engX} cap={P.labelCap} fs={P.label} className="whitespace-nowrap font-bold uppercase" style={{ color: C.label }}>{labels[0]}</Cap>
-            <Cap as="p" left={P.engX} cap={eng.length > 1 ? P.engCap2[0] : P.engCap1} fs={P.eng} lh={P.engCap2[1] - P.engCap2[0]} className="whitespace-pre" style={{ color: C.text }}>{e.enginesPhone}</Cap>
-            <span className="absolute" style={{ left: P.engImg.x, top: P.engImg.top, width: P.engImg.w, height: P.engImg.h }}>
-              <Image src={e.engineImage.src} alt={e.engineImage.alt} fill sizes="70px" className={`object-contain ${isDark ? "" : "mix-blend-multiply"}`} />
-            </span>
-            <Cap left={P.modelsLabelX} cap={P.labelCap} fs={P.label} className="whitespace-nowrap font-bold uppercase" style={{ color: C.label }}>{labels[1]}</Cap>
-            {imgs.map((m, j) => (
-              <Car key={m.src} image={m} left={P.cars.x + ws.slice(0, j).reduce((a, b) => a + b + P.cars.gap, 0)} bottom={bottom} width={ws[j]} />
-            ))}
-            <Cap as="p" left={P.modelsX} cap={P.modelsCap} fs={P.models} className="whitespace-nowrap" style={{ color: C.soft }}>{e.models}</Cap>
-            <svg aria-hidden="true" viewBox="0 0 6 11" className="absolute" style={{ left: P.chev.x, top: P.cardH / 2 - P.chev.h / 2 + 3, width: P.chev.w, height: P.chev.h, color: C.label }} fill="none" stroke="currentColor" strokeWidth="1.4">
-              <path d="m.8.8 4.4 4.7L.8 10.2" />
-            </svg>
-          </div>
-        );
-      })}
-
-      <div className="absolute" style={{ left: P.inset, right: P.inset, top: P.key.top, height: P.key.h, background: isDark ? C.keyBg : "#eef3fd", border: `1px solid ${isDark ? C.keyBorder : "#e6edfb"}`, borderRadius: 6 }}>
-        <span className="absolute flex items-center justify-center rounded-[5px] text-white" style={{ left: P.key.icon[0], top: P.key.icon[1], width: P.key.icon[2], height: P.key.icon[2], background: C.keyIcon }}>
-          <TrendGlyph style={{ width: 24, height: 24 }} />
-        </span>
-        <Cap left={P.key.labelX} cap={P.key.cap} fs={P.key.label} className="whitespace-nowrap font-bold uppercase" style={{ color: C.label }}>{data.keyTakeawayLabel}</Cap>
-        {kt.map((l, i) => (
-          <Cap key={i} left={i ? P.key.labelX : P.key.firstX} cap={P.key.cap + i * P.key.lh} fs={P.key.text} className="whitespace-nowrap" style={{ color: C.text }}>{l}</Cap>
+            <MobileCard C={C} className="px-4 py-4">
+              <h3 className="text-[22px] font-bold" style={{ color: C.text }}>{e.era}</h3>
+              <div className="mt-3 flex items-center gap-3 border-t pt-3" style={{ borderColor: C.line }}>
+                <div className="min-w-0 flex-1">
+                  <MobileLabel color={C.label}>{engLabel}</MobileLabel>
+                  <p className="mt-1 text-[17px] leading-[1.45]" style={{ color: C.text }}>{e.engines}</p>
+                </div>
+                <span className="relative h-[60px] w-[84px] shrink-0">
+                  <Image src={e.engineImage.src} alt={e.engineImage.alt} fill sizes="90px" className={`object-contain ${isDark ? "" : "mix-blend-multiply"}`} />
+                </span>
+              </div>
+              <div className="mt-3 border-t pt-3" style={{ borderColor: C.line }}>
+                <MobileLabel color={C.label}>{modelLabel}</MobileLabel>
+                <div className="mt-2 grid grid-cols-3 gap-2">
+                  {e.modelImages.map((m) => (
+                    <span key={m.src} className="relative h-[44px]">
+                      <Image src={m.dark} alt={m.alt} fill sizes="110px" className="object-contain" />
+                    </span>
+                  ))}
+                </div>
+                <p className="mt-2 text-[16px]" style={{ color: C.soft }}>{e.models}</p>
+              </div>
+            </MobileCard>
+          </li>
         ))}
+      </ol>
+
+      <div className="mt-5 flex items-start gap-4 rounded-[12px] border p-4" style={{ background: isDark ? C.keyBg : "#eef3fd", borderColor: isDark ? C.keyBorder : "#e0e8fa" }}>
+        <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-[10px] text-white" style={{ background: C.keyIcon }}>
+          <TrendGlyph style={{ width: 26, height: 26 }} />
+        </span>
+        <p className="text-[17px] leading-[1.6]" style={{ color: C.text }}>
+          <strong className="mr-1 font-bold uppercase" style={{ color: C.label }}>{data.keyTakeawayLabel}</strong>
+          {data.keyTakeaway}
+        </p>
       </div>
-    </div>
+    </MobileSection>
   );
 }
 
@@ -228,9 +214,7 @@ export default function HomeSec11({ data }) {
       <ScaleBox width={1536}>
         <Desktop data={data} isDark={isDark} />
       </ScaleBox>
-      <ScaleBox width={432} max={1.5}>
-        <Phone data={data} isDark={isDark} />
-      </ScaleBox>
+      <Phone data={data} isDark={isDark} />
     </section>
   );
 }

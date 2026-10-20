@@ -2181,3 +2181,9 @@ View directions verified visually on a 24-image sample (6 per view) and consiste
 
 ## Changes outside sections 6–12 (user-requested)
 - 2026-10-19: Section 5 dark rear car. On request, the white floor patch left under the car by the background cut was removed. `public/cars/home/s5-rear-dark-clean.webp` is a cleaned copy (floor pixels turned into a soft dark shadow); `s5-rear-dark.webp` is kept. `homeSec5.json` `headerCars.rearDark` now points to the clean copy. No other Section 5 change.
+
+## Mobile readability pass (2026-10-20, user request)
+- Phone/tablet layouts of sections 6, 7, 9, 10 and 11 rebuilt as flowing, readable layouts (shared `src/components/home/mobileKit.js`): heading 32px, body 17px, entries 16–18px, labels 13px (raised again on request). Wide tables became stacked cards (no tiny text, no sideways scroll).
+- Sections 1, 3 and 4: small phone labels raised (Section 4 rankings table became cards).
+- Measured: smallest text on every section is 11px or more at 360 and 390px (was 4.1–9px). No horizontal overflow from 390 to 1920px.
+- The phone layouts no longer copy the tiny type of the 2x reference captures; desktop layouts are unchanged.

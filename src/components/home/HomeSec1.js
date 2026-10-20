@@ -157,7 +157,7 @@ function MobileDarkHero({ data }) {
                 <BrandIcon name={item.icon} className="h-[26px] w-[26px]" scale={1} />
               </span>
               <span className="mt-3 text-[0.98rem] font-bold uppercase leading-tight">{item.value}</span>
-              <span className="mt-1.5 text-[0.62rem] uppercase leading-[1.45] text-white/80">{item.label}</span>
+              <span className="mt-1.5 text-[0.75rem] uppercase leading-[1.4] text-white/80">{item.label}</span>
             </li>
           ))}
         </ul>
@@ -175,14 +175,14 @@ function MobileDarkHero({ data }) {
           </span>
           <span className="min-w-0 flex-1">
             <span className="block text-[0.95rem] font-bold tracking-[0.16em]">{data.cta.label}</span>
-            <span className="mt-1 block text-[0.56rem] leading-[1.3] text-white/85">{data.cta.tagline}</span>
+            <span className="mt-1 block text-[0.72rem] leading-[1.35] text-white/85">{data.cta.tagline}</span>
           </span>
           <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-black/40">
             <Arrow className="h-5 w-5" />
           </span>
         </Link>
 
-        <div className="mt-4 flex items-center justify-center gap-2 text-[0.6rem] text-white/60">
+        <div className="mt-4 flex flex-wrap items-center justify-center gap-2 text-[0.72rem] text-white/70">
           <svg aria-hidden="true" viewBox="0 0 24 24" className="h-3 w-3" fill="currentColor">
             <path d="M7 10V7a5 5 0 0 1 10 0v3h1a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1v-9a1 1 0 0 1 1-1h1Zm2 0h6V7a3 3 0 0 0-6 0v3Z" />
           </svg>

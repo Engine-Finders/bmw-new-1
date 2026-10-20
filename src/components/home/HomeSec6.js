@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useTheme } from "@/components/shared/themeProvider";
 import ScaleBox from "@/components/home/ScaleBox";
+import { MobileCard, MobileHeading, MobileLabel, MobileLead, MobileSection } from "@/components/home/mobileKit";
 import BrandIcon from "@/components/home/brandIcon";
 import VerdictGlyph from "@/components/home/VerdictGlyph";
 
@@ -305,220 +306,139 @@ function Desktop({ data, isDark }) {
   );
 }
 
-// Phone spec measured from Section 6.4.png (852px capture, compared at 426px). Values are CSS px;
-// tops are cap-height tops relative to the section (or card) top, x inside the matrix is /397.
-const PH = {
-  h2: { left: 16, cap: 31.5, fs: 21, lh: 23 },
-  p: { left: 16, cap: 85.5, fs: 8.1, lh: 12.85 },
-  car: { left: 236.6, top: 8.4, width: 171.4 },
-  inset: 14.5,
-  matrix: {
-    top: 148, h: 386.5, w: 397, titleIcon: [9, 7.5, 9.5], title: { left: 24.5, cap: 8, fs: 7.8 }, titleLine: 23.75, hdrLine: 54,
-    cols: [90.5, 76, 74, 131.5, 25], hdr: { fs: [5.2, 4.5, 4.5, 5.2], lh: 6.25, caps: [[36], [31, 41], [30.5, 37, 43], [36]] },
-    rowTops: [54, 110, 162.9, 215.6, 268.6, 322.9, 379.1],
-    thumb: { left: 6.8, w: 41 }, nameX: 55.5, name: 7, gen: 8, code: 6.2, nameCaps: [-12.5, -1.5, 10], nameCapsShort: [-8, 4],
-    valueX: [108.5, 185], value: 6.05, tag: 5.6, valueCaps: [-6, 3],
-    glyphX: 256, glyph: 11, pillX: 271, pill: [23, 11, 6.4], pillTops: [11.5, 11.5, 8.1, 10.9, 12.4, 4.1], textGap: 16, verdict: [6.35, 9.75],
-    chevX: 384, chev: [3, 5],
-  },
-  rule: { top: 542.5, h: 105, badge: [11, 12, 29], title: { left: 51, cap: 11.5, fs: 7.7 }, body: { cap: 26.5, fs: 7.65, lh: 12.75 }, note: { cap: 68.5, fs: 6.75, lh: 10.5 },
-    pct: { right: 29.5, cap: 25.5, fs: 36.3 }, label: { cx: 61.25, cap: 62, fs: 7.9 }, ring: { cx: 61.25, cy: 52.5, r: 37.5, sw: 10 } },
-  links: { top: 651, h: 145, icon: [11, 7.5, 15], title: { left: 36, cap: 11.5, fs: 8.25 }, row0: 34, pitch: 22.5, num: { cx: 18.5, d: 14, fs: 7.4 }, text: { left: 36, fs: 7.5 },
-    lineTop: 48, lineRight: 13, arrow: { right: 17.5, w: 7.5 } },
-  cta: { top: 805, h: 53, badge: [11, 11, 30], title: { left: 51.5, cap: 11.5, fs: 7.6 }, text: { cap: 25, fs: 6.7, lh: 12 }, btn: { right: 13.5, top: 14.5, w: 126, h: 26.5, fs: 7.6 } },
-  h: 873,
-};
-
-const PILL = {
-  light: { scrap: ["#fee4e5", "#cd1f1f"], safe: ["#def2de", "#1f8a3d"], watch: ["#fef0dc", "#de7b06"] },
+const VERDICT_PILL = {
+  light: { scrap: ["#fde8e8", "#c81e1e"], safe: ["#e2f5e7", "#15803d"], watch: ["#fdf0dc", "#b45309"] },
   dark: { scrap: ["rgba(220,38,38,0.18)", "#f87171"], safe: ["rgba(34,197,94,0.16)", "#4ade80"], watch: ["rgba(245,158,11,0.16)", "#fbbf24"] },
 };
 
-// Absolute text placed by its cap top (Arial).
-function CapText({ as: Tag = "span", left, right, cap, fs, lh, style, className = "", children }) {
-  const l = lh ?? fs * 1.2;
-  return (
-    <Tag className={`absolute ${className}`} style={{ left, right, top: cap - capOffset(fs, l), fontSize: fs, lineHeight: `${l}px`, ...style }}>
-      {children}
-    </Tag>
-  );
-}
-
-function ChainGlyph({ className }) {
-  return (
-    <svg aria-hidden="true" viewBox="0 0 24 24" className={className} fill="none" stroke="currentColor" strokeWidth="2.6" strokeLinecap="round">
-      <path d="M10 14a3.5 3.5 0 0 0 5 0l3.5-3.5a3.5 3.5 0 0 0-5-5L12 7" />
-      <path d="M14 10a3.5 3.5 0 0 0-5 0l-3.5 3.5a3.5 3.5 0 0 0 5 5L12 17" />
-    </svg>
-  );
-}
-
-// Car thumbnail sized by the car itself (bbox from the JSON), so the photo's white margin is cropped in CSS.
-function Thumb({ image, isDark, left, cy, width }) {
-  const [x0, y0, x1, y1] = image.bbox;
-  const [W, H] = image.size;
-  const boxW = width / (x1 - x0);
-  const boxH = (boxW * H) / W;
-  const h = boxH * (y1 - y0);
-  return (
-    <span className="absolute overflow-hidden" style={{ left, top: cy - h / 2, width, height: h }}>
-      <Image src={isDark ? image.dark : image.src} alt={image.alt} width={W} height={H} sizes="64px" className={`absolute max-w-none ${isDark ? "" : "mix-blend-multiply"}`} style={{ left: -x0 * boxW, top: -y0 * boxH, width: boxW, height: boxH }} />
-    </span>
-  );
-}
-
+// Phone / tablet: readable stacked layout (body 17px, entries 16–18px, labels 13px).
 function Phone({ data, isDark }) {
   const t = isDark ? "dark" : "light";
   const C = COL[t];
-  const M = PH.matrix;
-  const R = PH.rule;
-  const K = PH.links;
-  const A = PH.cta;
-  const rows = data.matrix.rows;
   const rule = data.ruleOfThumb;
-  const x = (v) => `${(v / M.w) * 100}%`;
-  const card = { left: PH.inset, right: PH.inset, background: C.card, border: `1px solid ${C.border}`, borderRadius: 6, boxShadow: isDark ? "none" : "0 2px 10px rgba(16,24,48,0.04)" };
-  const soft = { left: PH.inset, right: PH.inset, background: isDark ? C.boxBg : "#f5f7fe", border: `1px solid ${isDark ? C.boxBorder : "#f0f3fb"}`, borderRadius: 6 };
-  const edges = M.cols.reduce((a, w) => a.concat(a[a.length - 1] + w), [0]);
-  const [pre, post] = rule.textPhone.split(rule.percent);
+  const [pre, ...rest] = rule.text.split(rule.percent);
+  const cols = data.matrix.phoneColumns.map((c) => c.short ?? c.label.replace("\n", " "));
 
   return (
-    <div className="relative lg:hidden" style={{ height: PH.h }}>
-      <div aria-hidden="true" className="pointer-events-none absolute" style={{ left: PH.car.left, top: PH.car.top, width: PH.car.width }}>
-        {isDark ? (
-          <div className="absolute inset-[-14%] bg-[radial-gradient(ellipse_at_50%_45%,rgba(70,96,140,0.35),transparent_65%)]" />
-        ) : (
-          <div className="absolute -inset-x-[30%] -top-[20%] bottom-[-6%] bg-[radial-gradient(ellipse_at_55%_45%,#ffffff_0%,#eef0f3_50%,rgba(254,254,254,0)_78%)]" />
-        )}
-        <Image src={isDark ? data.headerImage.phoneDark : data.headerImage.phone} alt={data.headerImage.alt} width={547} height={495} sizes="180px" className={`relative h-auto w-full ${isDark ? "" : "mix-blend-multiply"}`} />
+    <MobileSection>
+      <div className="relative mb-6 h-[200px] overflow-hidden rounded-[16px]">
+        <Image src={isDark ? data.headerImage.backdropDark : data.headerImage.backdropLight} alt="" fill sizes="720px" className="object-cover" />
+        <Image src={data.headerImage.phoneDark} alt={data.headerImage.alt} fill sizes="400px" className="object-contain object-bottom p-3 pb-1" style={{ filter: isDark ? "brightness(0.6) contrast(1.2)" : undefined }} />
       </div>
+      <MobileHeading html={data.h2} color={C.h2} accent={C.accent} />
+      <MobileLead color={C.para}>{data.subHeadline}</MobileLead>
 
-      <CapText as="h2" left={PH.h2.left} cap={PH.h2.cap} fs={PH.h2.fs} lh={PH.h2.lh} className="whitespace-nowrap font-bold tracking-[-0.02em] [&_.heading-accent]:text-[var(--acc)]" style={{ color: C.h2, "--acc": C.accent }}>
-        <span dangerouslySetInnerHTML={{ __html: data.h2 }} />
-      </CapText>
-      <CapText as="p" left={PH.p.left} cap={PH.p.cap} fs={PH.p.fs} lh={PH.p.lh} className="whitespace-pre" style={{ color: C.para }}>
-        {data.subHeadlinePhone}
-      </CapText>
-
-      {/* Decision matrix */}
-      <div className="absolute overflow-hidden" style={{ ...card, top: M.top, height: M.h }}>
-        <BarsIcon className="absolute" style={{ left: M.titleIcon[0], top: M.titleIcon[1], width: M.titleIcon[2], height: M.titleIcon[2], color: C.blue }} />
-        <CapText as="h3" left={M.title.left} cap={M.title.cap} fs={M.title.fs} className="font-bold uppercase" style={{ color: C.blue }}>{data.matrix.title}</CapText>
-        <span aria-hidden="true" className="absolute" style={{ left: 7.5, right: 7.5, top: M.titleLine, height: 1, background: C.line }} />
-        {data.matrix.phoneColumns.map((c, i) => (
-          <span key={c.label} className="absolute text-center uppercase" style={{ left: x(edges[i]), width: x(M.cols[i]) }}>
-            {[c.label.split("\n"), c.sub ? [c.sub] : []].flat().map((ln, j) => (
-              <CapText key={ln} left={0} right={0} cap={M.hdr.caps[i][j]} fs={M.hdr.fs[i]} lh={M.hdr.lh} className={ln === c.sub ? "" : "font-bold"} style={{ color: ln === c.sub ? C.tag : C.blue }}>
-                {ln}
-              </CapText>
-            ))}
-          </span>
-        ))}
-        {[1, 2, 3].map((i) => (
-          <span key={i} aria-hidden="true" className="absolute" style={{ left: x(edges[i]), top: M.titleLine + 6, height: M.hdrLine - M.titleLine - 12, width: 1, background: C.line }} />
-        ))}
-        <span aria-hidden="true" className="absolute" style={{ left: 7.5, right: 7.5, top: M.hdrLine, height: 1, background: C.line }} />
-        <span aria-hidden="true" className="absolute" style={{ left: x(edges[2]), top: M.hdrLine + 12, bottom: 12, width: 1, background: C.line }} />
-        {rows.map((row, ri) => {
-          const top = M.rowTops[ri];
-          const h = M.rowTops[ri + 1] - top;
-          const c = h / 2;
-          const [gen, ...engine] = row.code.split(" ");
-          const lines = engine.length ? [[row.name, M.name], [gen, M.gen], [engine.join(" "), M.code]] : [[row.name, M.gen], [row.code, M.code]];
-          const caps = engine.length ? M.nameCaps : M.nameCapsShort;
-          const pt = M.pillTops[ri];
-          const [pillBg, pillFg] = PILL[t][row.verdict.type];
-          return (
-            <Link key={row.href} href={row.href} className="absolute inset-x-0 font-normal" style={{ top, height: h, color: C.strong }}>
-              <Thumb image={row.image} isDark={isDark} left={x(M.thumb.left)} cy={c} width={M.thumb.w} />
-              {lines.map(([txt, fs], i) => (
-                <CapText key={txt} left={x(M.nameX)} cap={c + caps[i]} fs={fs} className={`whitespace-nowrap ${i === lines.length - 1 ? "" : "font-bold"}`} style={{ color: i === lines.length - 1 ? C.code : C.strong }}>
-                  {txt}
-                </CapText>
-              ))}
-              {[row.vehicleValue, row.replacementCost].map((v, i) => (
-                <span key={i}>
-                  <CapText left={x(M.valueX[i])} cap={c + M.valueCaps[0]} fs={M.value} className="whitespace-nowrap">{v.value}</CapText>
-                  <CapText left={x(M.valueX[i])} cap={c + M.valueCaps[1]} fs={M.tag} className="whitespace-nowrap" style={{ color: C.tag }}>{v.tag}</CapText>
-                </span>
-              ))}
-              <span className="absolute" style={{ left: x(M.glyphX), top: pt - 0.5, width: M.glyph, height: M.glyph }}>
-                <VerdictGlyph type={GLYPH[row.verdict.type]} round className="h-full w-full" />
-              </span>
-              <span className="absolute flex items-center justify-center rounded-[3px]" style={{ left: x(M.pillX), top: pt - 2, width: M.pill[0], height: M.pill[1], fontSize: M.pill[2], lineHeight: 1, background: pillBg, color: pillFg }}>
-                {row.verdict.label}
-              </span>
-              <CapText left={x(M.glyphX)} cap={pt + M.textGap} fs={M.verdict[0]} lh={M.verdict[1]} className="whitespace-pre" style={{ color: C.verdict }}>
-                {row.verdict.phone}
-              </CapText>
-              <svg aria-hidden="true" viewBox="0 0 5 9" className="absolute" style={{ left: x(M.chevX), top: c - M.chev[1] / 2 + 1, width: M.chev[0], height: M.chev[1], color: C.blue }} fill="none" stroke="currentColor" strokeWidth="1.6">
-                <path d="m.8.8 3.4 3.7L.8 8.2" />
-              </svg>
-            </Link>
-          );
-        })}
-      </div>
+      {/* Decision matrix: one card per model */}
+      <MobileCard C={C} className="mt-7">
+        <h3 className="flex items-center gap-2.5 border-b px-4 py-3.5 text-[15px] font-bold uppercase tracking-[0.04em]" style={{ color: C.blue, borderColor: C.line }}>
+          <BarsIcon className="h-4 w-4" />
+          {data.matrix.title}
+        </h3>
+        <ul>
+          {data.matrix.rows.map((row) => {
+            const [pillBg, pillFg] = VERDICT_PILL[t][row.verdict.type];
+            return (
+              <li key={row.href} className="border-b last:border-b-0" style={{ borderColor: C.line }}>
+                <Link href={row.href} className="block px-4 py-4 font-normal" style={{ color: C.strong }}>
+                  <span className="flex items-center gap-3">
+                    <span className="relative h-[44px] w-[76px] shrink-0">
+                      <Image src={isDark ? row.image.dark : row.image.src} alt={row.image.alt} fill sizes="80px" className={`object-contain ${isDark ? "" : "mix-blend-multiply"}`} />
+                    </span>
+                    <span className="min-w-0 flex-1">
+                      <span className="block text-[18px] font-bold leading-tight">{row.name}</span>
+                      <span className="mt-0.5 block text-[15px]" style={{ color: C.code }}>{row.code}</span>
+                    </span>
+                    <svg aria-hidden="true" viewBox="0 0 24 24" className="h-5 w-5 shrink-0" fill="none" stroke="currentColor" strokeWidth="2" style={{ color: C.blue }}>
+                      <path d="m9 5 7 7-7 7" />
+                    </svg>
+                  </span>
+                  <span className="mt-3 grid gap-2">
+                    {[row.vehicleValue, row.replacementCost].map((v, i) => (
+                      <span key={i} className="flex items-center justify-between gap-3 rounded-[8px] px-3.5 py-2.5" style={{ background: isDark ? C.boxBg : "#f6f8fc" }}>
+                        <span>
+                          <MobileLabel color={C.tag}>{cols[i + 1]}</MobileLabel>
+                          <span className="block text-[13px]" style={{ color: C.tag }}>{v.tag}</span>
+                        </span>
+                        <span className="whitespace-nowrap text-[18px] font-bold">{v.value}</span>
+                      </span>
+                    ))}
+                  </span>
+                  <span className="mt-3 flex items-start gap-2.5">
+                    <span className="mt-[1px] h-5 w-5 shrink-0">
+                      <VerdictGlyph type={GLYPH[row.verdict.type]} round className="h-full w-full" />
+                    </span>
+                    <span className="text-[16px] leading-[1.55]" style={{ color: C.verdict }}>
+                      <span className="mr-1.5 inline-block rounded-[4px] px-2 py-[1px] text-[14px] font-semibold" style={{ background: pillBg, color: pillFg }}>{row.verdict.label}</span>
+                      {row.verdict.lead === row.verdict.label ? row.verdict.text.charAt(0).toUpperCase() + row.verdict.text.slice(1) : `${row.verdict.lead} — ${row.verdict.text}`}
+                    </span>
+                  </span>
+                </Link>
+              </li>
+            );
+          })}
+        </ul>
+      </MobileCard>
 
       {/* Rule of thumb */}
-      <div className="absolute overflow-hidden" style={{ ...soft, top: R.top, height: R.h }}>
-        <svg aria-hidden="true" className="absolute" viewBox="-50 -50 100 100" style={{ right: R.ring.cx - 50, top: R.ring.cy - 50, width: 100, height: 100 }}>
-          <path d={`M ${-R.ring.r * Math.sin(0.6)} ${R.ring.r * Math.cos(0.6)} A ${R.ring.r} ${R.ring.r} 0 1 1 ${R.ring.r * Math.sin(0.6)} ${R.ring.r * Math.cos(0.6)}`} fill="none" stroke={isDark ? "rgba(47,111,224,0.10)" : "#ebf0fb"} strokeWidth={R.ring.sw} />
-        </svg>
-        <span className="absolute flex items-center justify-center rounded-full" style={{ left: R.badge[0], top: R.badge[1], width: R.badge[2], height: R.badge[2], background: isDark ? "#10233d" : "#e4ebfa" }}>
-          <svg aria-hidden="true" viewBox="3.5 1.5 17 21" style={{ width: 21, height: 25 }}>
-            <path d="M12 2 4 5v6.5c0 5.3 3.4 9.4 8 10.5 4.6-1.1 8-5.2 8-10.5V5l-8-3Z" fill="#0b47d4" />
-            <path d="M12 8.5 9 10v2.3c0 2 1.3 3.6 3 4 1.7-.4 3-2 3-4V10l-3-1.5Z" fill="none" stroke="rgba(255,255,255,0.45)" strokeWidth="0.9" />
-          </svg>
-        </span>
-        <CapText as="h3" left={R.title.left} cap={R.title.cap} fs={R.title.fs} className="font-bold uppercase" style={{ color: C.strong }}>{rule.title}</CapText>
-        <CapText as="p" left={R.title.left} cap={R.body.cap} fs={R.body.fs} lh={R.body.lh} className="whitespace-pre" style={{ color: C.strong }}>
+      <div className="mt-5 rounded-[12px] border p-5" style={{ background: isDark ? C.boxBg : "#f4f7fe", borderColor: isDark ? C.boxBorder : "#e6ecfa" }}>
+        <div className="flex items-start justify-between gap-4">
+          <h3 className="flex items-center gap-3 text-[16px] font-bold uppercase tracking-[0.03em]" style={{ color: C.strong }}>
+            <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#0b47d4] text-white">
+              <ShieldGlyph className="h-5 w-5" />
+            </span>
+            {rule.title}
+          </h3>
+          <span className="shrink-0 text-right">
+            <span className="block text-[40px] font-bold leading-none tracking-[-0.03em]" style={{ color: C.blue }}>{rule.percent}</span>
+            <span className="mt-1 block text-[13px] font-bold uppercase" style={{ color: C.blue }}>{data.phoneThresholdLabel}</span>
+          </span>
+        </div>
+        <p className="mt-4 text-[17px] leading-[1.6]" style={{ color: C.strong }}>
           {pre}
           <strong className="font-bold" style={{ color: C.blue }}>{rule.percent}</strong>
-          {post}
-        </CapText>
-        <CapText as="p" left={R.title.left} cap={R.note.cap} fs={R.note.fs} lh={R.note.lh} className="whitespace-pre" style={{ color: C.note }}>{rule.notePhone}</CapText>
-        <CapText right={R.pct.right} cap={R.pct.cap} fs={R.pct.fs} lh={R.pct.fs} className="font-bold tracking-[-0.07em]" style={{ color: C.blue }}>{rule.percent}</CapText>
-        <CapText right={R.label.cx - 50} cap={R.label.cap} fs={R.label.fs} className="w-[100px] text-center font-bold uppercase" style={{ color: C.blue }}>{rule.percentLabel}</CapText>
+          {rest.join(rule.percent)}
+        </p>
+        <p className="mt-3 text-[15px] leading-[1.6]" style={{ color: C.note }}>{rule.note}</p>
       </div>
 
       {/* Deeper analysis links */}
-      <div className="absolute" style={{ ...card, top: K.top, height: K.h }}>
-        <span className="absolute flex items-center justify-center rounded-full bg-[#0b47d4] text-white" style={{ left: K.icon[0], top: K.icon[1], width: K.icon[2], height: K.icon[2] }}>
-          <ChainGlyph className="h-[60%] w-[60%]" />
-        </span>
-        <CapText as="h3" left={K.title.left} cap={K.title.cap} fs={K.title.fs} className="font-bold uppercase" style={{ color: C.strong }}>{data.deeperLinksTitle}</CapText>
-        {data.deeperLinks.map((l, i) => {
-          const cap = K.row0 + i * K.pitch;
-          return (
-            <Link key={l.id} href={l.href} className="absolute inset-x-0 font-normal" style={{ top: 0, height: 0, color: C.strong }}>
-              <span className="absolute flex items-center justify-center rounded-full" style={{ left: K.num.cx - K.num.d / 2, top: cap + 3.2 - K.num.d / 2, width: K.num.d, height: K.num.d, fontSize: K.num.fs, fontWeight: 700, background: isDark ? "#10233d" : "#e8eefd", color: C.blue }}>{l.id}</span>
-              <CapText left={K.text.left} cap={cap} fs={K.text.fs} className="whitespace-nowrap">{l.label}</CapText>
-              <Arrow className="absolute" style={{ right: K.arrow.right - 1, top: cap - 1, width: K.arrow.w + 2, height: K.arrow.w + 2, color: C.blue }} />
-              {i < data.deeperLinks.length - 1 ? <span aria-hidden="true" className="absolute" style={{ left: K.text.left - 0.5, right: K.lineRight, top: K.lineTop + i * K.pitch, height: 1, background: C.line }} /> : null}
-            </Link>
-          );
-        })}
-      </div>
+      <MobileCard C={C} className="mt-5">
+        <h3 className="flex items-center gap-3 px-4 pt-4 text-[16px] font-bold uppercase tracking-[0.03em]" style={{ color: C.strong }}>
+          <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-[#0b47d4] text-white">
+            <WrenchGlyph className="h-4 w-4" />
+          </span>
+          {data.deeperLinksTitle}
+        </h3>
+        <ul className="px-4 pb-2 pt-2">
+          {data.deeperLinks.map((l) => (
+            <li key={l.id} className="border-b last:border-b-0" style={{ borderColor: C.line }}>
+              <Link href={l.href} className="flex items-center gap-3 py-3.5 text-[17px] font-normal" style={{ color: C.strong }}>
+                <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full text-[15px] font-bold" style={{ background: isDark ? "#10233d" : "#e8eefd", color: C.blue }}>{l.id}</span>
+                <span className="flex-1">{l.label}</span>
+                <Arrow className="h-5 w-5 shrink-0" style={{ color: C.blue }} />
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </MobileCard>
 
       {/* Promise */}
-      <div className="absolute" style={{ ...soft, top: A.top, height: A.h }}>
-        <span className="absolute flex items-center justify-center rounded-full bg-[#0b47d4]" style={{ left: A.badge[0], top: A.badge[1], width: A.badge[2], height: A.badge[2], boxShadow: isDark ? "none" : "0 0 0 2px #e6ecfb" }}>
-          <svg aria-hidden="true" viewBox="0 0 24 24" className="h-[62%] w-[62%]">
-            <path d="M12 2.5 5 5.2v5.6c0 4.8 3 8.5 7 9.7 4-1.2 7-4.9 7-9.7V5.2l-7-2.7Z" fill="#fff" stroke="#9db5ef" strokeWidth="1" />
-            <path d="M12 7.5c.4 1.6 2.6 2.4 2.6 4.8a2.6 2.6 0 0 1-5.2 0c0-1 .5-1.7 1-2.2.1.8.6 1.3 1 1.3-.3-1.6.1-2.8.6-3.9Z" fill="#0b47d4" />
-          </svg>
-        </span>
-        <CapText as="p" left={A.title.left} cap={A.title.cap} fs={A.title.fs} className="font-bold" style={{ color: C.strong }}>{data.bottomCta.title}</CapText>
-        <CapText as="p" left={A.title.left} cap={A.text.cap} fs={A.text.fs} lh={A.text.lh} className="whitespace-pre" style={{ color: C.note }}>{data.bottomCta.textPhone}</CapText>
-        <Link href={data.bottomCta.href} className="absolute flex items-center justify-center gap-[5px] rounded-[3px] bg-[#023fd3] font-normal text-white" style={{ right: A.btn.right, top: A.btn.top, width: A.btn.w, height: A.btn.h, fontSize: A.btn.fs }}>
+      <div className="mt-5 rounded-[12px] border p-5" style={{ background: isDark ? C.boxBg : "#f4f7fe", borderColor: isDark ? C.boxBorder : "#e6ecfa" }}>
+        <div className="flex items-start gap-4">
+          <ShieldBadge className="h-12 w-12" />
+          <div>
+            <p className="text-[19px] font-bold" style={{ color: C.strong }}>{data.bottomCta.title}</p>
+            <p className="mt-1.5 text-[16px] leading-[1.6]" style={{ color: C.note }}>{data.bottomCta.text}</p>
+          </div>
+        </div>
+        <Link href={data.bottomCta.href} className="mt-4 flex h-12 items-center justify-center gap-2 rounded-[8px] bg-[#023fd3] text-[17px] font-semibold text-white">
           {data.bottomCta.buttonLabel}
-          <Arrow className="h-[9px] w-[9px]" />
+          <Arrow className="h-4 w-4" />
         </Link>
       </div>
-    </div>
+    </MobileSection>
   );
 }
-
 
 export default function HomeSec6({ data }) {
   const { theme } = useTheme();
@@ -529,9 +449,7 @@ export default function HomeSec6({ data }) {
       <ScaleBox width={1536}>
         <Desktop data={data} isDark={isDark} />
       </ScaleBox>
-      <ScaleBox width={426} max={1.5}>
-        <Phone data={data} isDark={isDark} />
-      </ScaleBox>
+      <Phone data={data} isDark={isDark} />
     </section>
   );
 }

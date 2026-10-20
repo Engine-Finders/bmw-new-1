@@ -41,7 +41,7 @@ function Verdict({ verdict, isDark, phone = false }) {
   return (
     <span
       className={`inline-flex items-center rounded-[5px] border ${cls} ${isDark ? "text-white" : "text-[#0b1626]"} ${
-        phone ? "gap-1.5 px-1.5 py-1.5 text-[0.7rem]" : "w-[130px] gap-3 px-4 py-2.5 text-[1.05rem]"
+        phone ? "shrink-0 gap-1.5 px-2 py-1 text-[0.8rem]" : "w-[130px] gap-3 px-4 py-2.5 text-[1.05rem]"
       }`}
     >
       <VerdictGlyph type={verdict.type} isDark={isDark} className={phone ? "h-[14px] w-[14px] shrink-0" : "h-7 w-7"} />
@@ -82,7 +82,6 @@ export default function HomeSec4({ data }) {
   const soft = isDark ? "text-white/80" : "text-[#2a3646]";
   const line = isDark ? "border-white/[0.08]" : "border-[#e8ecf1]";
   const grille = isDark ? data.headerImage.dark : data.headerImage.light;
-  const phoneGrid = "grid-cols-[30px_54px_58px_minmax(0,1fr)_62px_10px]";
   const desktopGrid = "grid-cols-[minmax(0,0.95fr)_minmax(0,0.6fr)_minmax(0,1.55fr)_150px_32px]";
 
   return (
@@ -154,31 +153,27 @@ export default function HomeSec4({ data }) {
           <TrustStrip items={data.trustStrip} isDark={isDark} />
         </div>
 
-        <div className={`mt-4 overflow-hidden rounded-[8px] border ${isDark ? "border-white/10 bg-[#0b111a]" : "border-[#e3e7ed] bg-white"}`}>
-          <div className={`grid ${phoneGrid} items-center gap-1.5 bg-[#0b47a8] px-2 py-2.5 text-[0.62rem] font-medium text-white`}>
-            <span className="col-span-2 pl-5">{data.columns[0]}</span>
-            <span>{data.columns[1]}</span>
-            <span className="text-center">{data.columns[2]}</span>
-            <span className="col-span-2 pl-3">{data.columns[3]}</span>
-          </div>
+        <ul className="mt-4 grid gap-3">
           {data.rankings.map((row) => (
-            <Link
-              key={row.ranking}
-              href={row.href}
-              className={`grid ${phoneGrid} items-center gap-1.5 border-b px-2 py-3 font-normal last:border-b-0 ${line} ${strong}`}
-            >
-              <RankIcon row={row} phone />
-              <span className="text-[0.7rem] font-medium leading-[1.45]">{row.ranking}</span>
-              <span>
-                <span className="block text-[0.78rem] font-semibold leading-tight">{row.winner}</span>
-                {row.winnerNote ? <span className={`mt-0.5 block text-[0.62rem] leading-[1.35] ${soft}`}>{row.winnerNote}</span> : null}
-              </span>
-              <span className={`border-l pl-2 text-[0.64rem] leading-[1.5] ${line} ${soft}`}>{row.why}</span>
-              <Verdict verdict={row.verdict} isDark={isDark} phone />
-              <Chevron className="h-3.5 w-3.5" />
-            </Link>
+            <li key={row.ranking}>
+              <Link href={row.href} className={`block rounded-[12px] border p-4 font-normal ${isDark ? "border-white/10 bg-[#0b111a]" : "border-[#e3e7ed] bg-white"} ${strong}`}>
+                <span className="flex items-center gap-3">
+                  <RankIcon row={row} phone />
+                  <span className={`flex-1 text-[13px] font-semibold uppercase leading-[1.35] tracking-[0.02em] ${isDark ? "text-[#3b82f6]" : "text-[#0b4fc0]"}`}>{row.ranking}</span>
+                  <Verdict verdict={row.verdict} isDark={isDark} phone />
+                </span>
+                <span className="mt-3 block text-[17px] font-bold leading-tight">
+                  {row.winner}
+                  {row.winnerNote ? <span className={`ml-1.5 text-[13px] font-normal ${soft}`}>{row.winnerNote}</span> : null}
+                </span>
+                <span className={`mt-1.5 flex items-start gap-2 text-[14px] leading-[1.55] ${soft}`}>
+                  <span className="flex-1">{row.why}</span>
+                  <Chevron className="mt-1 h-4 w-4 shrink-0" />
+                </span>
+              </Link>
+            </li>
           ))}
-        </div>
+        </ul>
 
         <div className={`mt-4 flex flex-col gap-3 rounded-[8px] border p-4 ${isDark ? "border-white/10 bg-[#0b111a]" : "border-[#e3e7ed] bg-[#f6f8fb]"}`}>
           <div className="flex gap-3.5">
@@ -187,8 +182,8 @@ export default function HomeSec4({ data }) {
               <path d="m8.5 12 2.5 2.5 4.5-5" fill="none" stroke="#fff" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
             <span>
-              <span className={`block text-[0.95rem] font-semibold ${strong}`}>{data.bottomCta.title}</span>
-              <span className={`mt-1 block text-[0.8rem] leading-[1.5] ${soft}`}>{data.bottomCta.text}</span>
+              <span className={`block text-[1.05rem] font-semibold ${strong}`}>{data.bottomCta.title}</span>
+              <span className={`mt-1 block text-[0.875rem] leading-[1.55] ${soft}`}>{data.bottomCta.text}</span>
             </span>
           </div>
           <Link href={data.bottomCta.href} className="flex items-center justify-center gap-3 rounded-[4px] bg-[#0b47a8] py-3 text-[0.85rem] font-medium text-white">

@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useTheme } from "@/components/shared/themeProvider";
 import ScaleBox from "@/components/home/ScaleBox";
+import { MobileCard, MobileHeading, MobileLabel, MobileLead, MobileSection } from "@/components/home/mobileKit";
 
 // The BMW Failure Database — engine failures + warning signs tables with severity and links,
 // under an engine-bay header, closed by the urgency key.
@@ -151,88 +152,71 @@ function Desktop({ data, isDark }) {
   );
 }
 
-// Phone spec measured on Section 9.3.png (862px capture, compared at 431px). CSS px.
-const P = {
-  h: 878, inset: [17.5, 23], cardW: 390.5,
-  img: { left: 200, top: 0.5, w: 231, h: 168 },
-  h2: { left: 17, cap: 40.5, fs: 35, lh: 30.5, track: "-0.05em" }, p: { left: 17.5, cap: 114.5, fs: 9.15, lh: 14.75 },
-  tables: [
-    { top: 165.5, tab: 29, tabX: 40.5, tabFs: 9.8, titleX: 42, rows: [75.5, 77.5, 77.5, 64.5, 77], title: 10, desc: 7.8, descLh: 11.5, descDy: 26.5, linkDy: [52, 55.5, 53.5, 46.5, 52] },
-    { top: 574.5, tab: 28, tabX: 35, tabFs: 8.65, titleX: 38, rows: [56.5, 46, 56, 46], title: 9, desc: 7.2, descLh: 10.9, descDy: 22, linkDy: [36.5, 27.5, 30, 30] },
-  ],
-  sq: { left: 8, top: 5, d: 20.5 }, tabText: { left: 40.5, cap: 12, fs: 9.8 },
-  dividers: [31, 295], numCx: 15, num: { cap: 10.5, fs: 14.5 }, titleX: 42, titleCap: 10, dotCx: 312.25, dotCy: 15.5, dot: 7.5, sevX: 322, sevCap: 12.5, sev: 8.4, linkX: 322, link: 8.4,
-  key: { top: 814, h: 52, label: { left: 8.5, cap: 7, fs: 7.7 }, dotX: [8.5, 232.5], dotY: [19.5, 32.5], textX: [20.5, 245], textCap: [20.5, 33.5], fs: 7.25, dot: 7 },
-};
-
+// Phone / tablet: readable stacked layout (body 17px, entries 16–18px, labels 13px).
 function Phone({ data, isDark }) {
   const C = COL[isDark ? "dark" : "light"];
-  const x = (v) => `${(v / P.cardW) * 100}%`;
   const blocks = [data.engineFailures, data.warningSigns];
-  const K = P.key;
-  return (
-    <div className="relative overflow-hidden lg:hidden" style={{ height: P.h }}>
-      <div aria-hidden="true" className="pointer-events-none absolute right-0" style={{ top: P.img.top, width: P.img.w, height: P.img.h }}>
-        {isDark ? (
-          <Image src={data.headerImage.dark} alt="" fill sizes="240px" className="object-cover object-right [mask-image:linear-gradient(90deg,transparent,black_30%)]" />
-        ) : (
-          <Image src={data.headerImage.phone} alt="" fill sizes="240px" className="object-cover object-left-top" />
-        )}
-      </div>
-      <h2 className="absolute whitespace-nowrap font-bold [&_.heading-accent]:!text-[var(--acc)]" style={{ left: P.h2.left, top: P.h2.cap - capOffset(P.h2.fs, P.h2.lh), fontSize: P.h2.fs, lineHeight: `${P.h2.lh}px`, letterSpacing: P.h2.track, color: C.h2, "--acc": isDark ? "#2f7bec" : "#0b4fe0" }} dangerouslySetInnerHTML={{ __html: data.h2Phone }} />
-      <Cap as="p" left={P.p.left} cap={P.p.cap} fs={P.p.fs} lh={P.p.lh} className="whitespace-pre" style={{ color: C.para }}>{data.subHeadlinePhone}</Cap>
 
-      {blocks.map((b, bi) => {
-        const T = P.tables[bi];
+  return (
+    <MobileSection>
+      <div className="relative mb-6 h-[170px] overflow-hidden rounded-[16px]">
+        <Image src={isDark ? data.headerImage.dark : data.headerImage.light} alt={data.headerImage.alt} fill sizes="720px" className="object-cover object-[65%_50%]" />
+      </div>
+      <MobileHeading html={data.h2} color={C.h2} accent={isDark ? "#2f7bec" : "#0b4fe0"} />
+      <MobileLead color={C.para}>{data.subHeadline}</MobileLead>
+
+      {blocks.map((b) => {
         const Icon = b.icon === "warning" ? Warn : Gear;
-        const tops = T.rows.map((_, i) => T.tab + T.rows.slice(0, i).reduce((a, v) => a + v, 0));
         return (
-          <div key={b.title} className="absolute overflow-hidden rounded-[6px]" style={{ left: P.inset[0], right: P.inset[1], top: T.top, height: T.tab + T.rows.reduce((a, v) => a + v, 0), background: C.card, border: `1px solid ${C.border}`, boxShadow: C.shadow }}>
-            <span className="absolute flex items-center justify-center rounded-[3px] text-white" style={{ left: P.sq.left, top: P.sq.top, width: P.sq.d, height: P.sq.d, background: "#0b47d8" }}>
-              <Icon style={{ width: 12, height: 12 }} />
-            </span>
-            <Cap as="h3" left={T.tabX} cap={P.tabText.cap} fs={T.tabFs} className="whitespace-nowrap font-bold uppercase" style={{ color: isDark ? "#ffffff" : "#0b4fe0" }}>{b.title}</Cap>
-            <span aria-hidden="true" className="absolute inset-x-0" style={{ top: T.tab, height: 1, background: C.line }} />
-            {P.dividers.map((d) => (
-              <span key={d} aria-hidden="true" className="absolute bottom-0" style={{ left: x(d), top: T.tab, width: 1, background: C.line }} />
-            ))}
-            {b.rows.map((r, i) => {
-              const top = tops[i];
-              const h = T.rows[i];
-              return (
-                <Link key={r.id} href={r.link.href} className="absolute inset-x-0 font-normal" style={{ top, height: h, borderTop: i ? `1px solid ${C.line}` : undefined }}>
-                  <Cap left={`calc(${x(P.numCx)} - 8px)`} cap={P.num.cap} fs={P.num.fs} className="w-[16px] text-center" style={{ color: C.num }}>{r.id}</Cap>
-                  <Cap as="h4" left={x(T.titleX)} cap={P.titleCap - (bi ? 1 : 0)} fs={T.title} className="whitespace-nowrap font-bold" style={{ color: C.title }}>{r.title}</Cap>
-                  <Cap as="p" left={x(T.titleX)} cap={T.descDy} fs={T.desc} lh={T.descLh} className="whitespace-pre" style={{ color: C.desc }}>{r.descriptionPhone}</Cap>
-                  <span aria-hidden="true" className="absolute rounded-full" style={{ left: `calc(${x(P.dotCx)} - ${P.dot / 2}px)`, top: P.dotCy - P.dot / 2, width: P.dot, height: P.dot, background: SEV[r.severity.type] }} />
-                  <Cap left={x(P.sevX)} cap={P.sevCap} fs={P.sev} className="whitespace-nowrap" style={{ color: C.sev }}>{r.severity.label}</Cap>
-                  <Cap left={x(P.linkX)} cap={T.linkDy[i]} fs={P.link} className="flex items-center gap-[5px] whitespace-nowrap font-bold" style={{ color: C.link }}>
-                    {r.link.label}
-                    <Arrow style={{ width: 10, height: 10 }} />
-                  </Cap>
-                </Link>
-              );
-            })}
-          </div>
+          <MobileCard key={b.title} C={C} className="mt-6">
+            <h3 className="flex items-center gap-3 border-b px-4 py-3.5 text-[16px] font-bold uppercase tracking-[0.03em]" style={{ color: isDark ? "#ffffff" : "#0b4fe0", borderColor: C.line }}>
+              <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-[6px] bg-[#0b47d8] text-white">
+                <Icon style={{ width: 17, height: 17 }} />
+              </span>
+              {b.title}
+            </h3>
+            <ul>
+              {b.rows.map((r) => (
+                <li key={r.id} className="border-b last:border-b-0" style={{ borderColor: C.line }}>
+                  <Link href={r.link.href} className="flex gap-3 px-4 py-4 font-normal">
+                    <span className="w-5 shrink-0 text-[20px] font-semibold leading-[1.3]" style={{ color: C.num }}>{r.id}</span>
+                    <span className="min-w-0 flex-1">
+                      <span className="block text-[18px] font-bold leading-[1.3]" style={{ color: C.title }}>{r.title}</span>
+                      <span className="mt-1.5 block text-[16px] leading-[1.55]" style={{ color: C.desc }}>{r.description}</span>
+                      <span className="mt-3 flex items-center justify-between gap-3">
+                        <span className="flex items-center gap-2 text-[15px] font-semibold" style={{ color: C.sev }}>
+                          <span aria-hidden="true" className="h-2.5 w-2.5 rounded-full" style={{ background: SEV[r.severity.type] }} />
+                          {r.severity.label}
+                        </span>
+                        <span className="flex items-center gap-1.5 text-[16px] font-semibold" style={{ color: C.link }}>
+                          {r.link.label}
+                          <Arrow style={{ width: 16, height: 16 }} />
+                        </span>
+                      </span>
+                    </span>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </MobileCard>
         );
       })}
 
-      <div className="absolute rounded-[6px]" style={{ left: P.inset[0], right: P.inset[1], top: K.top, height: K.h, background: C.card, border: `1px solid ${C.border}`, boxShadow: C.shadow }}>
-        <Cap left={K.label.left} cap={K.label.cap} fs={K.label.fs} className="whitespace-nowrap font-bold uppercase" style={{ color: isDark ? "#ffffff" : "#0b4fe0" }}>Urgency key</Cap>
-        {data.urgencyKey.map((u, i) => {
-          const col = [0, 1, 0, 1][i];
-          const row = [0, 0, 1, 1][i];
-          return (
-            <span key={u.type}>
-              <span aria-hidden="true" className="absolute rounded-full" style={{ left: x(K.dotX[col]), top: K.dotY[row], width: K.dot, height: K.dot, background: SEV[u.type] }} />
-              <Cap left={x(K.textX[col])} cap={K.textCap[row]} fs={K.fs} className="whitespace-nowrap" style={{ color: C.title }}>
-                {u.label} — {u.text}
-              </Cap>
-            </span>
-          );
-        })}
-      </div>
-    </div>
+      <MobileCard C={C} className="mt-5 px-4 py-4">
+        <MobileLabel color={isDark ? "#ffffff" : "#0b4fe0"} className="!text-[14px]">Urgency key</MobileLabel>
+        <ul className="mt-3 grid gap-2.5">
+          {data.urgencyKey.map((u) => (
+            <li key={u.type} className="flex items-start gap-2.5 text-[16px] leading-[1.45]" style={{ color: C.title }}>
+              <span aria-hidden="true" className="mt-[5px] h-2.5 w-2.5 shrink-0 rounded-full" style={{ background: SEV[u.type] }} />
+              <span>
+                <strong className="font-semibold">{u.label}</strong>
+                <span style={{ color: C.keyMuted }}> — {u.text}</span>
+              </span>
+            </li>
+          ))}
+        </ul>
+      </MobileCard>
+    </MobileSection>
   );
 }
 
@@ -245,9 +229,7 @@ export default function HomeSec9({ data }) {
       <ScaleBox width={1536}>
         <Desktop data={data} isDark={isDark} />
       </ScaleBox>
-      <ScaleBox width={431} max={1.5}>
-        <Phone data={data} isDark={isDark} />
-      </ScaleBox>
+      <Phone data={data} isDark={isDark} />
     </section>
   );
 }

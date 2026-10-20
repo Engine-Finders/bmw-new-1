@@ -248,11 +248,13 @@
       },
       {
         "label": "Typical Vehicle Value",
-        "sub": "[THIRD-PARTY]"
+        "sub": "[THIRD-PARTY]",
+        "short": "Vehicle value"
       },
       {
         "label": "Replacement Cost\n(Recon)",
-        "sub": "[BMW-QUOTE]"
+        "sub": "[BMW-QUOTE]",
+        "short": "Recon cost"
       },
       {
         "label": "Verdict"
