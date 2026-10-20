@@ -262,10 +262,10 @@ function TrustStrip({ items, isDark, phone = false }) {
           <span className={isDark ? "text-[#3b82f6]" : "text-[#0b4fc0]"}>
             <Icon name={item.icon} className={phone ? "h-9 w-9" : "h-9 w-9"} />
           </span>
-          <span className={`leading-[1.3] ${phone ? "text-[0.72rem]" : "text-[0.85rem]"}`}>
+          <span className={`leading-[1.3] ${phone ? "text-[0.8rem]" : "text-[0.85rem]"}`}>
             <span className={`block ${strong}`}>
               {item.lead ? <span className={phone ? "block" : ""}>{item.lead} </span> : null}
-              {item.value ? <strong className={`font-semibold ${phone ? "block text-[0.86rem]" : "text-[1.05rem]"}`}>{item.value}</strong> : null}
+              {item.value ? <strong className={`font-semibold ${phone ? "block text-[0.95rem]" : "text-[1.05rem]"}`}>{item.value}</strong> : null}
               {item.tail ? <span className={phone ? "block" : ""}> {item.tail}</span> : null}
             </span>
             <span className={`block ${soft}`}>{item.text}</span>
@@ -281,7 +281,7 @@ function HowItWorks({ data, isDark, numbered = false }) {
   const soft = isDark ? "text-white/75" : "text-[#3b4656]";
   return (
     <div className={`rounded-[10px] border p-4 ${card(isDark)}`}>
-      <h3 className={`px-1 pt-1 font-semibold uppercase ${numbered ? "text-[0.72rem]" : "text-[1rem]"} ${isDark ? "text-[#3b82f6]" : "text-[#0b4fc0]"}`}>
+      <h3 className={`px-1 pt-1 font-semibold uppercase ${numbered ? "text-[0.85rem]" : "text-[1rem]"} ${isDark ? "text-[#3b82f6]" : "text-[#0b4fc0]"}`}>
         {data.title}
       </h3>
       <ul className={`mt-3.5 grid ${numbered ? "gap-0" : "gap-3"}`}>
@@ -294,8 +294,8 @@ function HowItWorks({ data, isDark, numbered = false }) {
                 <Icon name={step.icon} className="h-7 w-7" />
               </span>
               <span className={`${i < data.steps.length - 1 ? `border-b pb-3 ${isDark ? "border-white/10" : "border-[#e6eaf0]"}` : ""}`}>
-                <span className={`block text-[0.95rem] font-semibold ${strong}`}>{step.title}</span>
-                <span className={`mt-1 block text-[0.78rem] leading-[1.5] ${soft}`}>{step.text}</span>
+                <span className={`block text-[1rem] font-semibold ${strong}`}>{step.title}</span>
+                <span className={`mt-1 block text-[0.875rem] leading-[1.55] ${soft}`}>{step.text}</span>
               </span>
               <Chevron className={`h-4 w-4 ${strong}`} />
             </li>
@@ -324,7 +324,7 @@ function WhyTrust({ title, items, isDark, phone = false }) {
   if (phone) {
     return (
       <div className={`rounded-[10px] border p-4 ${card(isDark)}`}>
-        <h3 className={`px-1 pt-1 text-[0.8rem] font-semibold uppercase ${isDark ? "text-[#3b82f6]" : "text-[#0b4fc0]"}`}>{title}</h3>
+        <h3 className={`px-1 pt-1 text-[0.85rem] font-semibold uppercase ${isDark ? "text-[#3b82f6]" : "text-[#0b4fc0]"}`}>{title}</h3>
         <ul className="mt-2">
           {items.map((item) => (
             <li key={item.title} className={`grid grid-cols-[44px_minmax(0,1fr)_16px] items-center gap-3.5 border-b py-3 last:border-b-0 ${isDark ? "border-white/10" : "border-[#e6eaf0]"}`}>
@@ -332,8 +332,8 @@ function WhyTrust({ title, items, isDark, phone = false }) {
                 <Icon name={item.icon} className="h-6 w-6" />
               </span>
               <span>
-                <span className={`block text-[0.86rem] font-medium ${strong}`}>{item.title}</span>
-                <span className={`mt-0.5 block text-[0.72rem] leading-[1.45] ${soft}`}>{item.text}</span>
+                <span className={`block text-[0.95rem] font-medium ${strong}`}>{item.title}</span>
+                <span className={`mt-0.5 block text-[0.875rem] leading-[1.5] ${soft}`}>{item.text}</span>
               </span>
               <Chevron className={`h-4 w-4 ${strong}`} />
             </li>
@@ -387,7 +387,7 @@ function SymptomTiles({ tiles, selectedId, onSelect, isDark, phone = false }) {
             <span className={isDark && !active ? "text-[#3b82f6]" : "text-[#0b4fc0]"}>
               <Icon name={tile.icon} className={phone ? "h-11 w-11" : "h-12 w-12"} />
             </span>
-            <span className={`mt-2.5 leading-[1.35] ${phone ? "text-[0.74rem]" : "text-[0.86rem]"} ${active ? "text-[#0b1626]" : strong}`}>{tile.label}</span>
+            <span className={`mt-2.5 leading-[1.35] ${phone ? "text-[0.82rem]" : "text-[0.86rem]"} ${active ? "text-[#0b1626]" : strong}`}>{tile.label}</span>
             {!phone ? <Chevron className={`mt-auto h-4 w-4 pt-1 ${active ? "text-[#0b1626]" : strong}`} /> : null}
           </button>
         );
@@ -979,13 +979,15 @@ export default function HomeSec3({ data }) {
             <Image src={data.images.phone.src} alt={data.images.phone.alt} fill sizes="70vw" className="object-contain object-left-top" />
           </div>
         </div>
-        <h2 className={`relative text-[6.3vw] font-bold leading-[1.08] tracking-[-0.02em] ${strong}`}>
-          <span className="block">Diagnose Your</span>
-          <span className="heading-accent block">BMW</span>
-          <span className="block">Engine Problem</span>
-        </h2>
-        <p className={`relative mt-[3.4vw] max-w-[44vw] text-[2.05vw] leading-[1.5] ${soft}`}>{data.subHeadline}</p>
-        <div className="relative z-10 mt-[9vw]">
+        <div className="relative flex min-h-[calc(60vw-14px)] items-center">
+          <h2 className={`max-w-[58%] text-[clamp(26px,7.4vw,34px)] font-bold leading-[1.1] tracking-[-0.02em] ${strong}`}>
+            <span className="block">Diagnose Your</span>
+            <span className="heading-accent block">BMW</span>
+            <span className="block">Engine Problem</span>
+          </h2>
+        </div>
+        <p className={`relative mt-4 text-[15px] leading-[1.6] ${soft}`}>{data.subHeadline}</p>
+        <div className="relative z-10 mt-6">
           <TrustStrip items={data.trustStrip} isDark={isDark} phone />
         </div>
         <div className="relative mt-4">
