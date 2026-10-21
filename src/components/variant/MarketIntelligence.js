@@ -153,8 +153,8 @@ function RegionalDemandMap({ regions, isDark }) {
             key={region.name}
             className={`absolute flex aspect-square h-14 w-14 shrink-0 flex-col items-center justify-center rounded-full border border-[var(--color-primary)] bg-[var(--color-surface)] p-1 text-center shadow-[0_8px_20px_var(--color-shadow)] md:h-20 md:w-20 md:p-1.5 ${BUBBLE_POSITION[region.name] || ""}`}
           >
-            <span className="text-[0.68rem] font-bold leading-none text-[var(--color-primary)] md:text-[0.95rem]">{region.share}</span>
-            <span className="mt-1 text-[0.48rem] leading-[1.1] text-[var(--color-text-muted)] md:text-[0.6rem]">{region.name}</span>
+            <span className="text-[12px] font-bold leading-none text-[var(--color-primary)] md:text-[0.95rem]">{region.share}</span>
+            <span className="lg:text-[15px] mt-1 text-[12px] leading-[1.1] text-[var(--color-text-muted)] md:text-[13px]">{region.name}</span>
           </div>
         ))}
       </div>
@@ -197,12 +197,12 @@ export default function MarketIntelligence({ data }) {
                         <div className="flex flex-col">
                           {regions.map((region) => (
                             <div key={region.name} className="flex items-center justify-between border-t border-[var(--color-border)] py-1.5 first:border-t-0 first:pt-0">
-                              <span className="text-[0.78rem] text-[var(--color-text-muted)]">{region.name}</span>
-                              <span className="text-[0.8rem] font-semibold text-[var(--color-text)]">{region.share}</span>
+                              <span className="lg:text-[15px] text-[0.78rem] text-[var(--color-text-muted)]">{region.name}</span>
+                              <span className="lg:text-[15px] text-[0.8rem] font-semibold text-[var(--color-text)]">{region.share}</span>
                             </div>
                           ))}
                         </div>
-                        {tag ? <p className="text-[0.62rem] font-semibold uppercase tracking-wide text-[var(--color-text-soft)]">{tag}</p> : null}
+                        {tag ? <p className="lg:text-[15px] text-[12px] font-semibold uppercase tracking-wide text-[var(--color-text-soft)]">{tag}</p> : null}
                       </div>
                     );
                   }
@@ -215,16 +215,16 @@ export default function MarketIntelligence({ data }) {
                         </span>
                         <div className="flex min-w-0 flex-col gap-0.5">
                           <p className="text-[0.88rem] font-semibold leading-snug text-[var(--color-text)] md:text-[0.95rem]">{item.label}</p>
-                          {title ? <p className="text-[0.8rem] font-bold leading-tight text-[var(--color-text)]">{title}</p> : null}
+                          {title ? <p className="lg:text-[15px] text-[0.8rem] font-bold leading-tight text-[var(--color-text)]">{title}</p> : null}
                         </div>
                       </div>
 
                       <p className="font-heading mt-4 text-[16px] font-bold leading-[1.3] text-[var(--color-primary)] md:text-[28px] md:leading-none">{stat}</p>
 
                       <div className="mt-2 flex flex-col gap-1">
-                        {subtext ? <p className="text-[0.72rem] text-[var(--color-text-muted)]">{subtext}</p> : null}
+                        {subtext ? <p className="lg:text-[15px] text-[12px] text-[var(--color-text-muted)]">{subtext}</p> : null}
                         {metricTag ? (
-                          <p className="mt-1 text-[10px] font-semibold uppercase tracking-wider text-[var(--color-primary)]">[{metricTag}]</p>
+                          <p className="lg:text-[15px] mt-1 text-[12px] font-semibold uppercase tracking-wider text-[var(--color-primary)]">[{metricTag}]</p>
                         ) : null}
                       </div>
                     </div>

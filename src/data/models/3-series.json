@@ -2643,24 +2643,67 @@
   },
   "closingActionCards": {
     "h2": "Ready to Make a Decision?",
+    "titleLines": [
+      "Ready to Make",
+      "<span>a Decision?</span>"
+    ],
+    "intro": "Everything you need to choose with confidence.<br>Data. Honesty. Specialists. All in one place.",
+    "introMobile": "Everything you need to choose<br>with confidence.<br>Data. Honesty. Specialists.<br>All in one place.",
+    "heroImage": {
+      "light": "/model/s14-hero-light.webp",
+      "dark": "/cars/bmw-3-series-g20-320i-m-sport-saloon-2019-new-mineral-white-g20-320i-45.webp"
+    },
     "cards": [
       {
-        "icon": "🔍",
+        "icon": "search",
+        "tone": "blue",
         "title": "Explore 3 Series Generations",
-        "text": "Seven generations, fifty years, honestly rated.",
-        "href": "/3-series/"
+        "titleLines": [
+          "Explore",
+          "<span>3 Series</span> Generations"
+        ],
+        "text": "Seven generations, fifty years,<br>honestly rated.",
+        "cta": "Explore Now",
+        "href": "/3-series/",
+        "art": {
+          "kind": "lineup",
+          "light": "/model/s14-lineup-light.webp",
+          "dark": "/model/lineup/3-series.webp"
+        }
       },
       {
-        "icon": "🩺",
+        "icon": "stethoscope",
+        "tone": "green",
         "title": "Diagnose My 3 Series",
-        "text": "Symptoms in, verdict out - value-weighted for your generation.",
-        "href": "/tools/diagnostic-wizard"
+        "titleLines": [
+          "Diagnose",
+          "<span>My 3 Series</span>"
+        ],
+        "text": "Symptoms in, verdict out —<br>value-weighted for your generation.",
+        "cta": "Start Diagnosis",
+        "href": "/tools/diagnostic-wizard",
+        "art": {
+          "kind": "engine",
+          "light": "/model/s14-engine-light.webp",
+          "dark": "/model/s14-engine-light.webp"
+        }
       },
       {
-        "icon": "🤝",
+        "icon": "handshake",
+        "tone": "orange",
         "title": "Compare UK Specialists",
-        "text": "20+ vetted BMW specialists, prices and warranties side-by-side.",
-        "href": "/quote"
+        "titleLines": [
+          "Compare",
+          "<span>UK Specialists</span>"
+        ],
+        "text": "20+ vetted BMW specialists,<br>prices and warranties side-by-side.",
+        "cta": "Compare Specialists",
+        "href": "/quote",
+        "art": {
+          "kind": "map",
+          "light": "/model/s14-map-light.webp",
+          "dark": "/model/s14-map-light.webp"
+        }
       }
     ],
     "footerNote": "(Minimal footer below.)"

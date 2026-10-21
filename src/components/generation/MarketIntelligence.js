@@ -67,7 +67,7 @@ function StatCard({ icon, title, children, isDark }) {
     <div className="glass-panel flex h-full min-h-[168px] flex-col gap-2 rounded-md p-3">
       <div className="flex items-start gap-2">
         <StatCardIcon icon={icon} isDark={isDark} compact />
-        <p className="min-w-0 flex-1 text-[0.75rem] font-semibold uppercase leading-[1.25] tracking-wide text-[var(--color-primary)] md:text-[0.68rem]">
+        <p className="lg:text-[15px] min-w-0 flex-1 text-[0.75rem] font-semibold uppercase leading-[1.25] tracking-wide text-[var(--color-primary)] md:text-[13px]">
           {title}
         </p>
       </div>
@@ -102,18 +102,18 @@ function AverageCostCard({ value, note }) {
     <div className="flex h-full flex-col justify-between gap-2">
       <div>
         <p
-          className="text-[1.1rem] font-bold leading-[1.1] text-[var(--color-text)] md:text-[0.92rem]"
+          className="lg:text-[15px] text-[1.1rem] font-bold leading-[1.1] text-[var(--color-text)] md:text-[0.92rem]"
           dangerouslySetInnerHTML={{ __html: price }}
         />
         {displayNote ? (
           <p
-            className="mt-1 text-[0.76rem] leading-[1.3] text-[var(--color-text-soft)] md:text-[0.64rem]"
+            className="lg:text-[15px] mt-1 text-[0.76rem] leading-[1.3] text-[var(--color-text-soft)] md:text-[13px]"
             dangerouslySetInnerHTML={{ __html: displayNote }}
           />
         ) : null}
       </div>
       {quote ? (
-        <p className="text-[0.74rem] font-semibold text-[var(--color-primary)] md:text-[0.64rem]" dangerouslySetInnerHTML={{ __html: quote }} />
+        <p className="lg:text-[15px] text-[12px] font-semibold text-[var(--color-primary)] md:text-[13px]" dangerouslySetInnerHTML={{ __html: quote }} />
       ) : null}
     </div>
   );
@@ -121,7 +121,7 @@ function AverageCostCard({ value, note }) {
 
 function LiveFeedHeader({ isDark, feedBorder, feedText }) {
   return (
-    <div className={`flex items-center gap-2 border-b px-4 py-3 text-[0.82rem] font-semibold uppercase tracking-wide ${feedBorder} ${feedText}`}>
+    <div className={`lg:text-[15px] flex items-center gap-2 border-b px-4 py-3 text-[0.82rem] font-semibold uppercase tracking-wide ${feedBorder} ${feedText}`}>
       <HomeIcon name="live" isDark={isDark} className="h-8 w-8 md:h-6 md:w-6 object-contain" />
       Live Feed
     </div>
@@ -133,11 +133,11 @@ function MobileLiveFeedRow({ row, feedBorder, feedText, feedMuted, feedSoft, sho
   const { count, label } = splitEnquiries(row.enquiries);
 
   return (
-    <div className={`grid grid-cols-[minmax(0,1.15fr)_minmax(0,0.8fr)_minmax(0,0.95fr)_minmax(0,0.8fr)] items-stretch text-[0.8rem] md:text-[0.68rem] ${feedText}`}>
+    <div className={`lg:text-[15px] grid grid-cols-[minmax(0,1.15fr)_minmax(0,0.8fr)_minmax(0,0.95fr)_minmax(0,0.8fr)] items-stretch text-[0.8rem] md:text-[13px] ${feedText}`}>
       <div className={`border-r px-2.5 py-3 ${feedBorder}`}>
         <div className="min-w-0">
           <p className="font-semibold leading-[1.25]" dangerouslySetInnerHTML={{ __html: model }} />
-          {chassis ? <p className={`mt-0.5 text-[0.72rem] md:text-[0.6rem] ${feedSoft}`} dangerouslySetInnerHTML={{ __html: chassis }} /> : null}
+          {chassis ? <p className={`lg:text-[15px] mt-0.5 text-[12px] md:text-[13px] ${feedSoft}`} dangerouslySetInnerHTML={{ __html: chassis }} /> : null}
         </div>
       </div>
 
@@ -153,9 +153,9 @@ function MobileLiveFeedRow({ row, feedBorder, feedText, feedMuted, feedSoft, sho
 
       <div className="flex flex-col justify-center px-2 py-3 leading-[1.2]">
         <p className="text-[0.95rem] font-bold leading-none" dangerouslySetInnerHTML={{ __html: count }} />
-        {label ? <p className={`text-[0.58rem] ${feedSoft}`} dangerouslySetInnerHTML={{ __html: label }} /> : null}
+        {label ? <p className={`lg:text-[15px] text-[12px] ${feedSoft}`} dangerouslySetInnerHTML={{ __html: label }} /> : null}
         {showUpdated && row.updated ? (
-          <div className={`mt-1.5 flex items-center gap-1 text-[0.56rem] ${feedSoft}`}>
+          <div className={`lg:text-[15px] mt-1.5 flex items-center gap-1 text-[12px] ${feedSoft}`}>
             <GenIcon name="refresh" className="h-4 w-4 shrink-0" />
             <span dangerouslySetInnerHTML={{ __html: row.updated }} />
           </div>
@@ -196,7 +196,7 @@ export function DesktopLiveFeed({ liveFeed, isDark }) {
 
       <div className="overflow-x-auto">
         <div className="min-w-[560px] md:min-w-0">
-          <div className={`grid grid-cols-[1.3fr_0.9fr_1fr_0.7fr] gap-2 border-b px-4 py-2 text-[0.68rem] font-semibold uppercase tracking-wide ${feedBorder} ${feedHeaderBg}`}>
+          <div className={`lg:text-[15px] grid grid-cols-[1.3fr_0.9fr_1fr_0.7fr] gap-2 border-b px-4 py-2 text-[12px] font-semibold uppercase tracking-wide ${feedBorder} ${feedHeaderBg}`}>
             <span className={`border-r pr-2 ${feedHeaderDivider}`}>Vehicle</span>
             <span className={`border-r pr-2 ${feedHeaderDivider}`}>Location</span>
             <span className={`border-r pr-2 ${feedHeaderDivider}`}>Issue</span>
@@ -216,7 +216,7 @@ export function DesktopLiveFeed({ liveFeed, isDark }) {
               >
                 <div className="min-w-0">
                   <p className={`font-semibold leading-[1.25] ${feedText}`} dangerouslySetInnerHTML={{ __html: model }} />
-                  {chassis ? <p className={`mt-0.5 text-[0.7rem] ${feedSoft}`} dangerouslySetInnerHTML={{ __html: chassis }} /> : null}
+                  {chassis ? <p className={`lg:text-[15px] mt-0.5 text-[12px] ${feedSoft}`} dangerouslySetInnerHTML={{ __html: chassis }} /> : null}
                 </div>
 
                 <div className={`flex items-center gap-1.5 ${feedMuted}`}>
@@ -231,7 +231,7 @@ export function DesktopLiveFeed({ liveFeed, isDark }) {
 
                 <div className="leading-[1.25]">
                   <p className={`font-semibold ${feedText}`} dangerouslySetInnerHTML={{ __html: count }} />
-                  {label ? <p className={`text-[0.7rem] ${feedSoft}`} dangerouslySetInnerHTML={{ __html: label }} /> : null}
+                  {label ? <p className={`lg:text-[15px] text-[12px] ${feedSoft}`} dangerouslySetInnerHTML={{ __html: label }} /> : null}
                 </div>
               </div>
             );
@@ -240,7 +240,7 @@ export function DesktopLiveFeed({ liveFeed, isDark }) {
       </div>
 
       {liveFeed[0]?.updated ? (
-        <div className={`flex items-center justify-end gap-1.5 border-t px-4 py-2.5 text-[0.72rem] ${feedBorder} ${feedSoft}`}>
+        <div className={`lg:text-[15px] flex items-center justify-end gap-1.5 border-t px-4 py-2.5 text-[12px] ${feedBorder} ${feedSoft}`}>
           <GenIcon name="refresh" className="h-3.5 w-3.5 shrink-0 text-[var(--color-primary)]" />
           <span dangerouslySetInnerHTML={{ __html: liveFeed[0].updated }} />
         </div>

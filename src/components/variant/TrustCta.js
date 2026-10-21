@@ -48,7 +48,7 @@ export default function TrustCta({ data }) {
                   </span>
                   <p className="font-heading min-w-0 pt-1 text-[1.15rem] font-bold leading-snug text-[var(--color-text)] md:text-[1.25rem]">{point.title}</p>
                 </div>
-                <p className="text-[0.85rem] leading-relaxed text-[var(--color-text-muted)] md:text-[0.9rem]" dangerouslySetInnerHTML={{ __html: point.text }} />
+                <p className="lg:text-[15px] text-[0.85rem] leading-relaxed text-[var(--color-text-muted)] md:text-[0.9rem]" dangerouslySetInnerHTML={{ __html: point.text }} />
               </li>
             ))}
           </ul>
@@ -84,7 +84,7 @@ export default function TrustCta({ data }) {
                 {data.ctaButton ? (
                   <a
                     href="/quote"
-                    className="btn-cta flex w-full shrink-0 items-center justify-center gap-2 whitespace-nowrap rounded-lg bg-[#189454] px-4 py-2.5 text-center text-[0.74rem] font-bold text-white no-underline shadow-[0_12px_28px_rgba(0,0,0,0.35)] md:w-auto md:px-6 md:py-3 md:text-[0.8rem]"
+                    className="lg:text-[15px] btn-cta flex w-full shrink-0 items-center justify-center gap-2 whitespace-nowrap rounded-lg bg-[#189454] px-4 py-2.5 text-center text-[12px] font-bold text-white no-underline shadow-[0_12px_28px_rgba(0,0,0,0.35)] md:w-auto md:px-6 md:py-3 md:text-[13px]"
                   >
                     {data.ctaButton.label.replace(/\s*→\s*$/, "")}
                     <GenIcon name="arrow" className="h-4 w-4 shrink-0" />
@@ -113,8 +113,8 @@ export default function TrustCta({ data }) {
                       <div className="flex flex-1 items-center gap-2.5">
                         <GenIcon name={item.icon} className="h-10 w-10 md:h-8 md:w-8 shrink-0" />
                         <div className="min-w-0">
-                          <p className="text-[0.8rem] font-semibold leading-tight text-[var(--color-text)]">{item.title}</p>
-                          <p className="text-[0.7rem] leading-tight text-[var(--color-text-muted)]">{item.text}</p>
+                          <p className="lg:text-[15px] text-[0.8rem] font-semibold leading-tight text-[var(--color-text)]">{item.title}</p>
+                          <p className="lg:text-[15px] text-[12px] leading-tight text-[var(--color-text-muted)]">{item.text}</p>
                         </div>
                       </div>
                     </div>
@@ -134,8 +134,8 @@ export default function TrustCta({ data }) {
                 <div className="flex items-center gap-2.5">
                   <GenIcon name={item.icon} className="h-10 w-10 md:h-8 md:w-8 shrink-0" />
                   <div className="min-w-0">
-                    <p className="text-[0.8rem] font-semibold leading-tight text-[var(--color-text)]">{item.title}</p>
-                    <p className="text-[0.7rem] leading-tight text-[var(--color-text-muted)]">{item.text}</p>
+                    <p className="lg:text-[15px] text-[0.8rem] font-semibold leading-tight text-[var(--color-text)]">{item.title}</p>
+                    <p className="lg:text-[15px] text-[12px] leading-tight text-[var(--color-text-muted)]">{item.text}</p>
                   </div>
                 </div>
               </div>

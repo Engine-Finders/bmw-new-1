@@ -22,7 +22,7 @@ function DesktopRow({ row, isDark }) {
 
   return (
     <div
-      className={`grid grid-cols-[1.3fr_1fr_1fr_1.1fr_1fr_0.8fr] items-center gap-px ${rowClass} border-b px-5 py-3 text-[0.85rem] ${borderBottom} last:border-b-0`}
+      className={`lg:text-[15px] grid grid-cols-[1.3fr_1fr_1fr_1.1fr_1fr_0.8fr] items-center gap-px ${rowClass} border-b px-5 py-3 text-[0.85rem] ${borderBottom} last:border-b-0`}
     >
       <span className={`border-r px-3 font-semibold ${cellDivider}`} dangerouslySetInnerHTML={{ __html: row.variant }} />
       <span className={`border-r px-3 ${codeText} ${cellDivider}`} dangerouslySetInnerHTML={{ __html: row.engineCode }} />
@@ -55,7 +55,7 @@ function FuelTable({ title, icon, rows, isDark, tone }) {
 
   return (
     <div className={`overflow-hidden rounded-md border ${cellDivider} ${rowBg} shadow-[0_14px_40px_var(--color-shadow)] backdrop-blur`}>
-      <div className={`flex items-center gap-2 px-4 py-2.5 text-[0.78rem] font-semibold uppercase tracking-wide ${tabBg}`}>
+      <div className={`lg:text-[15px] flex items-center gap-2 px-4 py-2.5 text-[0.78rem] font-semibold uppercase tracking-wide ${tabBg}`}>
         <GenIcon name={icon} onDark={tone !== "diesel"} inverted={tone === "diesel"} className="h-8 w-8 md:h-6 md:w-6" />
         {title}
       </div>
@@ -82,9 +82,9 @@ function FuelTable({ title, icon, rows, isDark, tone }) {
                   inverted={index === 0 && tone === "diesel"}
                   className="h-6 w-6"
                 />
-                <span className="text-[0.72rem] font-bold leading-tight" dangerouslySetInnerHTML={{ __html: row.variant }} />
+                <span className="lg:text-[15px] text-[12px] font-bold leading-tight" dangerouslySetInnerHTML={{ __html: row.variant }} />
                 <span
-                  className={`text-[0.66rem] leading-tight ${index === 0 ? "text-white/80" : isDark ? "text-white/70" : "text-[var(--color-primary)]"}`}
+                  className={`lg:text-[15px] text-[12px] leading-tight ${index === 0 ? "text-white/80" : isDark ? "text-white/70" : "text-[var(--color-primary)]"}`}
                   dangerouslySetInnerHTML={{ __html: row.engineCode }}
                 />
               </div>
@@ -97,14 +97,14 @@ function FuelTable({ title, icon, rows, isDark, tone }) {
               className={`grid ${metricIndex === METRIC_ROWS.length - 1 ? "" : `border-b ${cellDivider}`}`}
               style={{ gridTemplateColumns: gridCols }}
             >
-              <div className={`flex items-center gap-1.5 border-r px-2 py-3 text-[0.68rem] font-semibold uppercase tracking-wide ${cellDivider} ${labelBg} ${mutedText}`}>
+              <div className={`lg:text-[15px] flex items-center gap-1.5 border-r px-2 py-3 text-[12px] font-semibold uppercase tracking-wide ${cellDivider} ${labelBg} ${mutedText}`}>
                 <GenIcon name={metric.icon} className="h-7 w-7 md:h-5 md:w-5 shrink-0" />
                 {metric.label}
               </div>
               {rows.map((row) => (
                 <div
                   key={row.engineCode}
-                  className={`flex items-center justify-center border-l px-2 py-3 text-center text-[0.78rem] ${cellDivider} ${rowText}`}
+                  className={`lg:text-[15px] flex items-center justify-center border-l px-2 py-3 text-center text-[0.78rem] ${cellDivider} ${rowText}`}
                   dangerouslySetInnerHTML={{ __html: row[metric.key] }}
                 />
               ))}
@@ -136,7 +136,7 @@ export default function ReplacementCosts({ data }) {
 
       <div className="relative mx-auto w-full max-w-8xl px-4 pb-5 pt-4 md:px-8 md:pb-6 md:pt-5">
         <div className="hidden overflow-hidden rounded-md border border-[var(--color-border)] bg-[var(--color-table-surface)] shadow-[0_14px_40px_var(--color-shadow)] backdrop-blur md:block">
-          <div className={`grid grid-cols-[1.3fr_1fr_1fr_1.1fr_1fr_0.8fr] gap-px rounded-t-md ${headerBg} px-5 py-2.5 text-[0.82rem] font-semibold leading-[1.2]`}>
+          <div className={`lg:text-[15px] grid grid-cols-[1.3fr_1fr_1fr_1.1fr_1fr_0.8fr] gap-px rounded-t-md ${headerBg} px-5 py-2.5 text-[0.82rem] font-semibold leading-[1.2]`}>
             {data.columns?.map((col, index) => (
               <span key={col} className={`flex items-center gap-2 border-r px-3 ${headerDivider} last:border-r-0`}>
                 <GenIcon name={COLUMN_ICONS[index]} inverted className="h-8 w-8 md:h-6 md:w-6 shrink-0" />
@@ -180,8 +180,8 @@ export default function ReplacementCosts({ data }) {
                             <GenIcon name={item.icon} className="h-8 w-8 md:h-6 md:w-6" />
                           </span>
                           <div className="min-w-0">
-                            <p className="text-[0.85rem] font-semibold text-[var(--color-text)]" dangerouslySetInnerHTML={{ __html: item.title }} />
-                            <p className="text-[0.76rem] leading-[1.35] text-[var(--color-text-muted)]" dangerouslySetInnerHTML={{ __html: item.text }} />
+                            <p className="lg:text-[15px] text-[0.85rem] font-semibold text-[var(--color-text)]" dangerouslySetInnerHTML={{ __html: item.title }} />
+                            <p className="lg:text-[15px] text-[0.76rem] leading-[1.35] text-[var(--color-text-muted)]" dangerouslySetInnerHTML={{ __html: item.text }} />
                           </div>
                         </div>
                       </div>
@@ -205,8 +205,8 @@ export default function ReplacementCosts({ data }) {
                     <GenIcon name={item.icon} className="h-8 w-8 md:h-6 md:w-6" />
                   </span>
                   <div>
-                    <p className="text-[0.85rem] font-semibold text-[var(--color-text)]" dangerouslySetInnerHTML={{ __html: item.title }} />
-                    <p className="text-[0.76rem] leading-[1.35] text-[var(--color-text-muted)]" dangerouslySetInnerHTML={{ __html: item.text }} />
+                    <p className="lg:text-[15px] text-[0.85rem] font-semibold text-[var(--color-text)]" dangerouslySetInnerHTML={{ __html: item.title }} />
+                    <p className="lg:text-[15px] text-[0.76rem] leading-[1.35] text-[var(--color-text-muted)]" dangerouslySetInnerHTML={{ __html: item.text }} />
                   </div>
                 </div>
               </div>
@@ -214,7 +214,7 @@ export default function ReplacementCosts({ data }) {
           </div>
         ) : null}
 
-        {data.note ? <p className="mt-3 text-[0.78rem] text-[var(--color-text-soft)] md:mt-4" dangerouslySetInnerHTML={{ __html: data.note }} /> : null}
+        {data.note ? <p className="lg:text-[15px] mt-3 text-[0.78rem] text-[var(--color-text-soft)] md:mt-4" dangerouslySetInnerHTML={{ __html: data.note }} /> : null}
       </div>
     </section>
   );

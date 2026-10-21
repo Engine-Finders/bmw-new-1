@@ -80,7 +80,7 @@ function CircleIcon({ metric, isDark, compact = false }) {
 function VerifiedBadge({ isDark }) {
   return (
     <span
-      className={`inline-flex w-fit items-center gap-1.5 rounded-md border px-2.5 py-1 text-[12px] font-semibold ${
+      className={`lg:text-[15px] inline-flex w-fit items-center gap-1.5 rounded-md border px-2.5 py-1 text-[12px] font-semibold ${
         isDark ? "border-white/16 bg-white/8 text-white/85" : "border-[var(--color-chrome)]/40 bg-[#f4f7fb] text-[var(--color-text)]"
       }`}
     >
@@ -116,7 +116,7 @@ function DesktopSmallCard({ metric, value, isDark }) {
       <div className="flex items-start gap-4">
         <CircleIcon metric={metric} isDark={isDark} />
         <div className="min-w-0 pt-1">
-          <p className={`text-[13px] font-medium uppercase leading-none tracking-[0.04em] ${isDark ? "text-white/72" : "text-[var(--color-text-soft)]"}`}>
+          <p className={`lg:text-[15px] text-[13px] font-medium uppercase leading-none tracking-[0.04em] ${isDark ? "text-white/72" : "text-[var(--color-text-soft)]"}`}>
             {metric}
           </p>
           {score ? (
@@ -154,7 +154,7 @@ function DesktopWideCard({ metric, value, text, isDark, imageType = "none", engi
       <div className="flex items-start gap-4 px-5 py-5">
         <CircleIcon metric={metric} isDark={isDark} />
         <div className="min-w-0 pt-1">
-          <p className={`text-[13px] font-medium uppercase leading-none tracking-[0.04em] ${isDark ? "text-white/72" : "text-[var(--color-text-soft)]"}`}>
+          <p className={`lg:text-[15px] text-[13px] font-medium uppercase leading-none tracking-[0.04em] ${isDark ? "text-white/72" : "text-[var(--color-text-soft)]"}`}>
             {metric}
           </p>
           <p className={`font-heading mt-3 text-[18px] font-bold leading-snug md:text-[20px] ${isDark ? "text-white" : "text-[var(--color-text)]"}`}>
@@ -198,10 +198,10 @@ function TrustFooter({ isDark }) {
               <HomeIcon name={item.icon} isDark={isDark} className="h-10 w-10 md:h-8 md:w-8 object-contain" />
             </span>
             <div>
-              <p className={`text-[14px] font-semibold leading-[1.15] ${isDark ? "text-white" : "text-[var(--color-text)]"}`}>
+              <p className={`lg:text-[15px] text-[14px] font-semibold leading-[1.15] ${isDark ? "text-white" : "text-[var(--color-text)]"}`}>
                 {item.title}
               </p>
-              <p className={`mt-1 text-[13px] leading-[1.45] ${isDark ? "text-white/78" : "text-[var(--color-text-muted)]"}`}>
+              <p className={`lg:text-[15px] mt-1 text-[13px] leading-[1.45] ${isDark ? "text-white/78" : "text-[var(--color-text-muted)]"}`}>
                 {item.text}
               </p>
             </div>
@@ -220,7 +220,7 @@ function MobileRow({ metric, value, isDark }) {
     <article className={`grid grid-cols-[minmax(132px,0.42fr)_1px_minmax(0,1fr)] items-center overflow-hidden rounded-md border px-3 py-3 ${cardClass(isDark)}`}>
       <div className="flex min-w-0 items-center gap-2 pr-2">
         <CircleIcon metric={metric} isDark={isDark} compact />
-        <p className={`min-w-0 break-words text-[11px] font-medium leading-[1.2] ${isDark ? "text-white/85" : "text-[var(--color-text-muted)]"}`}>
+        <p className={`lg:text-[15px] min-w-0 break-words text-[12px] font-medium leading-[1.2] ${isDark ? "text-white/85" : "text-[var(--color-text-muted)]"}`}>
           {metric}
         </p>
       </div>

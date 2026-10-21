@@ -48,7 +48,7 @@ function TrustPoint({ point, icon, isDark }) {
           dangerouslySetInnerHTML={{ __html: point.title }}
         />
         <p
-          className={`mt-1.5 text-[0.82rem] leading-[1.5] md:text-[0.88rem] ${isDark ? "text-white/72" : "text-[var(--color-text-muted)]"}`}
+          className={`lg:text-[15px] mt-1.5 text-[0.82rem] leading-[1.5] md:text-[0.88rem] ${isDark ? "text-white/72" : "text-[var(--color-text-muted)]"}`}
           dangerouslySetInnerHTML={{ __html: point.text }}
         />
       </div>
@@ -119,7 +119,7 @@ export default function TrustCta({ data }) {
 
               {data.finalCta ? (
                 <p
-                  className={`text-[0.84rem] leading-[1.55] md:text-[0.92rem] ${isDark ? "text-white/88" : "text-[var(--color-text-muted)]"}`}
+                  className={`lg:text-[15px] text-[0.84rem] leading-[1.55] md:text-[0.92rem] ${isDark ? "text-white/88" : "text-[var(--color-text-muted)]"}`}
                   dangerouslySetInnerHTML={{ __html: data.finalCta }}
                 />
               ) : (

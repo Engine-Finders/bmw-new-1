@@ -11,6 +11,8 @@ const inter = Inter({ subsets: ["latin"], weight: ["400", "500", "600", "700"], 
 
 // a space before each break keeps words apart where the break is hidden
 const spaced = (html = "") => String(html).replace(/([^-])\s*<br\s*\/?>\s*/g, "$1 <br>");
+// Desktop notes wrap to their column: the copy's line breaks were set for the old type size.
+const flat = (html = "") => String(html).replace(/\s*<br\s*\/?>\s*/g, " ");
 
 const KEYS = ["model", "engineCode", "usedSupply", "reconditionedSupply", "rebuiltSupply", "labourHours"];
 
@@ -133,11 +135,6 @@ function ReplacementCostsReference({ data }) {
               <p className={`${s.copy} ${s.deskOnly}`} dangerouslySetInnerHTML={{ __html: spaced(data.subHeadline) }} />
               <p className={`${s.copy} ${s.phoneOnly}`} dangerouslySetInnerHTML={{ __html: spaced(data.subHeadlineMobile || data.subHeadline) }} />
             </div>
-            {data.headerImageMobile ? (
-              <div className={`${s.headCar} ${s.phoneOnly}`}>
-                <CarImage src={isDark ? gens[0]?.images?.dark : data.headerImageMobile} sizes="(max-width: 1023px) 48vw, 1px" />
-              </div>
-            ) : null}
             <ul className={s.trust}>
               {(data.trust || []).map((item) => (
                 <li key={item.title} className={s.trustItem}>
@@ -198,41 +195,41 @@ function ReplacementCostsReference({ data }) {
             <div className={s.notes}>
               {data.notes ? (
                 <div className={s.note}>
-                  <Icon name="doc" className={s.noteIcon} />
-                  <div>
+                  <div className={s.noteHead}>
+                    <Icon name="doc" className={s.noteIcon} />
                     <p className={s.noteTitle}>{data.notes.title}</p>
-                    <p className={`${s.noteText} ${s.deskOnly}`} dangerouslySetInnerHTML={{ __html: spaced(data.notes.text) }} />
-                    <ul className={`${s.noteList} ${s.phoneOnly}`}>
-                      {(data.notes.mobileBullets || []).map((bullet) => (
-                        <li key={bullet} dangerouslySetInnerHTML={{ __html: spaced(bullet) }} />
-                      ))}
-                    </ul>
+                  </div>
+                  <p className={`${s.noteText} ${s.deskOnly}`} dangerouslySetInnerHTML={{ __html: flat(data.notes.text) }} />
+                  <div className={`${s.noteList} ${s.phoneOnly}`}>
+                    {(data.notes.mobileBullets || []).map((bullet) => (
+                      <p key={bullet} dangerouslySetInnerHTML={{ __html: spaced(bullet) }} />
+                    ))}
                   </div>
                 </div>
               ) : null}
               {data.labour ? (
                 <div className={`${s.note} ${s.deskFlex}`}>
-                  <Icon name="clock" className={s.noteIcon} />
-                  <div>
+                  <div className={s.noteHead}>
+                    <Icon name="clock" className={s.noteIcon} />
                     <p className={s.noteTitle}>{data.labour.title}</p>
-                    <p className={s.noteText} dangerouslySetInnerHTML={{ __html: spaced(data.labour.text) }} />
                   </div>
+                  <p className={s.noteText} dangerouslySetInnerHTML={{ __html: flat(data.labour.text) }} />
                 </div>
               ) : null}
             </div>
             {data.rule ? (
               <div className={s.rule}>
-                <span className={s.crown}>
-                  <Icon name="crown" className={s.crownSvg} />
-                </span>
-                <div className={s.ruleBody}>
+                <div className={s.ruleHead}>
+                  <span className={s.crown}>
+                    <Icon name="crown" className={s.crownSvg} />
+                  </span>
                   <p className={s.ruleTitle}>{data.rule.title}</p>
-                  <p className={`${s.ruleText} ${s.deskOnly}`} dangerouslySetInnerHTML={{ __html: spaced(data.rule.text) }} />
-                  <div className={s.phoneOnly}>
-                    {(data.rule.mobileParagraphs || []).map((paragraph) => (
-                      <p key={paragraph} className={s.ruleText} dangerouslySetInnerHTML={{ __html: paragraph }} />
-                    ))}
-                  </div>
+                </div>
+                <p className={`${s.ruleText} ${s.deskOnly}`} dangerouslySetInnerHTML={{ __html: flat(data.rule.text) }} />
+                <div className={s.phoneOnly}>
+                  {(data.rule.mobileParagraphs || []).map((paragraph) => (
+                    <p key={paragraph} className={s.ruleText} dangerouslySetInnerHTML={{ __html: paragraph }} />
+                  ))}
                 </div>
                 <Icon name="shieldBars" className={s.ruleShield} />
               </div>

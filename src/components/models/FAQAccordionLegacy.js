@@ -69,13 +69,13 @@ function FaqItem({ item, isDark }) {
         }`}
       >
         <span
-          className={`mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full text-[0.72rem] font-bold md:h-7 md:w-7 ${
+          className={`lg:text-[15px] mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full text-[12px] font-bold md:h-7 md:w-7 ${
             isDark ? "bg-[var(--color-chrome)] text-[var(--color-page)]" : "bg-[var(--color-primary)] text-white"
           }`}
         >
           {item.id}
         </span>
-        <span className="min-w-0 flex-1 pt-0.5 text-[0.84rem] font-semibold leading-snug md:text-[0.9rem]">
+        <span className="lg:text-[15px] min-w-0 flex-1 pt-0.5 text-[0.84rem] font-semibold leading-snug md:text-[0.9rem]">
           {cleanText(item.question)}
         </span>
         <ChevronIcon
@@ -85,7 +85,7 @@ function FaqItem({ item, isDark }) {
       </summary>
       <div className="px-3.5 pb-3 pl-[2.75rem] md:px-4 md:pb-3.5 md:pl-[3.1rem]">
         <p
-          className={`${sectionBody} text-[0.76rem] leading-[1.45] md:text-[0.8rem] ${
+          className={`lg:text-[15px] ${sectionBody} text-[0.76rem] leading-[1.45] md:text-[13px] ${
             isDark ? "text-white/70" : "text-[var(--color-text-muted)]"
           }`}
           dangerouslySetInnerHTML={{ __html: formatAnswer(item.answer) }}
@@ -130,14 +130,14 @@ export default function FAQAccordionLegacy({ data }) {
         <div className="relative mx-auto w-full max-w-8xl px-4 pb-3 pt-5 md:px-6 md:pb-3.5 md:pt-7 lg:px-8">
           <div className="max-w-[760px]">
             <p
-              className={`text-[0.64rem] font-bold uppercase tracking-[0.14em] ${
+              className={`lg:text-[15px] text-[12px] font-bold uppercase tracking-[0.14em] ${
                 isDark ? "text-white/55" : "text-[var(--color-text-muted)]"
               }`}
             >
               FAQ
             </p>
             <h2
-              className={`mt-1.5 text-[1.55rem] font-bold leading-[1.02] sm:text-[1.85rem] md:text-[2.35rem] md:leading-[0.98] lg:text-[2.5rem] ${
+              className={`mt-1.5 t-h2 ${
                 isDark ? "text-white" : "text-[var(--color-text)]"
               }`}
             >

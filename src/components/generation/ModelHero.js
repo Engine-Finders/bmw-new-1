@@ -117,10 +117,10 @@ function DesktopTrustStrip({ items, isDark, cardBorderClass, dividerBorderClass 
                   </strong>
                 )}
                 {hasValue && stat.label ? (
-                  <span className={`max-w-[12rem] text-[0.82rem] leading-[1.3] ${badgeTextClass}`}>{stat.label}</span>
+                  <span className={`lg:text-[15px] max-w-[12rem] text-[0.82rem] leading-[1.3] ${badgeTextClass}`}>{stat.label}</span>
                 ) : null}
                 {stat.tag ? (
-                  <span className={`text-[10px] font-semibold uppercase leading-none tracking-wide ${badgeMutedClass}`}>
+                  <span className={`lg:text-[15px] text-[12px] font-semibold uppercase leading-none tracking-wide ${badgeMutedClass}`}>
                     {stat.tag}
                   </span>
                 ) : null}
@@ -151,15 +151,15 @@ function MobileTrustStrip({ items, isDark, trustStripClass, dividerBorderClass, 
                 <HomeIcon name={trustStripIcon(item, index)} isDark={isDark} className="h-12 w-12 md:h-12 md:w-12 object-contain" />
               </span>
               {stat.value ? (
-                <strong className={`text-[0.72rem] font-bold leading-none ${isDark ? "text-white" : "text-[var(--color-text)]"}`}>
+                <strong className={`lg:text-[15px] text-[12px] font-bold leading-none ${isDark ? "text-white" : "text-[var(--color-text)]"}`}>
                   {stat.value}
                 </strong>
               ) : null}
-              <span className={`text-[0.52rem] leading-[1.2] ${badgeTextClass}`}>
+              <span className={`lg:text-[15px] text-[12px] leading-[1.2] ${badgeTextClass}`}>
                 <TrustLabel label={stat.label} />
               </span>
               {stat.tag ? (
-                <span className={`text-[0.45rem] font-semibold uppercase leading-none tracking-wide ${badgeMutedClass}`}>
+                <span className={`lg:text-[15px] text-[12px] font-semibold uppercase leading-none tracking-wide ${badgeMutedClass}`}>
                   {stat.tag}
                 </span>
               ) : null}
@@ -219,7 +219,7 @@ export default function ModelHero({ data }) {
         <div className="relative flex w-full flex-col gap-2.5 md:gap-3">
           <div className="relative flex w-full max-w-[720px] flex-col gap-2.5 md:gap-3">
             <span
-              className={`inline-flex w-fit max-w-full flex-wrap items-center gap-x-2 gap-y-2 rounded-md border px-3 py-2 text-[0.82rem] leading-[1.35] md:px-4 md:py-2 md:text-[0.88rem] ${
+              className={`lg:text-[15px] inline-flex w-fit max-w-full flex-wrap items-center gap-x-2 gap-y-2 rounded-md border px-3 py-2 text-[0.82rem] leading-[1.35] md:px-4 md:py-2 md:text-[0.88rem] ${
                 isDark
                   ? "border-white/30 bg-[rgba(2,7,11,0.55)] text-white"
                   : "border-[var(--color-border-strong)] bg-[rgba(255,255,255,0.58)] text-[var(--color-text-muted)]"

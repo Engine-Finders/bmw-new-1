@@ -203,7 +203,7 @@ function TrustStrip({ isDark }) {
           <strong className="mt-1.5 text-[13px] leading-[1.1] text-[var(--color-text)] md:text-[15px]">
             {item.title}
           </strong>
-          <span className="mt-0.5 text-[12px] leading-[1.1] text-[var(--color-text-muted)] md:text-[13px]">
+          <span className="lg:text-[15px] mt-0.5 text-[12px] leading-[1.1] text-[var(--color-text-muted)] md:text-[13px]">
             {item.text}
           </span>
         </div>
@@ -306,7 +306,7 @@ function MobileTabs({ tables, isDark }) {
                 }`}
               >
                 <span className="block text-[0.95rem] font-bold leading-tight">{label.label}</span>
-                <span className="mt-1 block text-[14px] leading-tight">{label.years}</span>
+                <span className="lg:text-[15px] mt-1 block text-[14px] leading-tight">{label.years}</span>
               </button>
             );
           })}

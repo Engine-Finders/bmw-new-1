@@ -169,10 +169,11 @@ function enquiryNumber(value = "") {
   return match ? Number(match[0].replaceAll(",", "")) : 0;
 }
 
-function DesktopTable({ data }) {
+function DesktopTable({ data, showAll }) {
   const columns = data.columns || [];
   const info = new Set(data.infoColumns || []);
-  const rows = (data.engines || []).slice(0, data.desktopRows || 10);
+  const all = data.engines || [];
+  const rows = showAll ? all : all.slice(0, data.desktopRows || 10);
   return (
     <div className={s.table} role="table">
       <div className={`${s.tr} ${s.thead}`} role="row">
@@ -381,6 +382,9 @@ function EngineDatabaseReference({ data }) {
   const title = splitTitle(data.h2);
   const mobile = data.mobile || {};
   const mobileTitle = splitTitle(mobile.h2 || data.h2);
+  const [showAll, setShowAll] = useState(false);
+  const allCount = (data.engines || []).length;
+  const hasMore = allCount > (data.desktopRows || 10);
 
   return (
     <section id="engine-database" className={`${inter.className} ${s.section} ${isDark ? s.dark : s.light}`}>
@@ -418,15 +422,17 @@ function EngineDatabaseReference({ data }) {
           </div>
 
           <div className={s.deskOnly}>
-            <DesktopTable data={data} />
+            <DesktopTable data={data} showAll={showAll} />
 
             <div className={s.footer}>
-              <button type="button" className={s.viewAll}>
-                <Icon name="list" className={s.viewIcon} />
-                <span>{data.viewAllLabel}</span>
-                <Icon name="chevron" className={s.viewChevron} />
-              </button>
-              <p className={s.showing}>{data.showingText}</p>
+              {hasMore ? (
+                <button type="button" className={s.viewAll} aria-expanded={showAll} onClick={() => setShowAll((v) => !v)}>
+                  <Icon name="list" className={s.viewIcon} />
+                  <span>{showAll ? "Show fewer engine codes" : data.viewAllLabel}</span>
+                  <Icon name="chevron" className={`${s.viewChevron} ${showAll ? s.viewChevronUp : ""}`} />
+                </button>
+              ) : null}
+              <p className={s.showing}>{showAll ? `Showing all ${allCount} engine codes` : data.showingText}</p>
               <ul className={s.legend}>
                 {(data.legend || []).map((item) => (
                   <li key={item.label}>

@@ -25,7 +25,8 @@
     {
       "icon": "book",
       "value": "OEM",
-      "text": "Part References Included"
+      "text": "References Included",
+      "tail": "Part"
     },
     {
       "icon": "trophy",

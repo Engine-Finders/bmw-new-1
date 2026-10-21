@@ -24,23 +24,21 @@ const TEXT = {
 
 function Verdict({ verdict, isDark, mobile = false }) {
   const text = isDark ? "text-white" : TEXT[verdict.type] || TEXT.success;
-  const icon = mobile ? "h-[15px] w-[15px]" : "h-[17px] w-[17px]";
+  const icon = mobile ? "h-5 w-5" : "h-[18px] w-[18px]";
   return (
-    <span
-      className={`inline-flex flex-col gap-0.5 ${text} ${mobile ? "text-[0.8rem]" : "text-[0.9rem]"}`}
-    >
-      <span className={`flex items-center ${mobile ? "gap-2" : "gap-2"}`}>
+    <span className={`inline-flex flex-col gap-1 ${text} ${mobile ? "text-[14px]" : "text-[15px]"}`}>
+      <span className="flex items-center gap-2">
         <VerdictGlyph type={verdict.type} isDark={isDark} round={mobile} className={`${icon} shrink-0`} />
-        <span className={`leading-tight ${mobile ? "" : "whitespace-nowrap"}`}>{verdict.title}</span>
+        <span className="leading-[1.3]">{verdict.title}</span>
       </span>
       {verdict.also ? (
-        <span className={`flex items-center ${mobile ? "gap-3" : "gap-2"}`}>
+        <span className="flex items-center gap-2">
           <VerdictGlyph type={verdict.also.type} isDark={isDark} round={mobile} className={`${icon} shrink-0`} />
-          <span className="leading-tight">{verdict.also.title}</span>
+          <span className="leading-[1.3]">{verdict.also.title}</span>
         </span>
       ) : null}
       {verdict.note ? (
-        <span className={`leading-[1.45] ${isDark ? "text-white/80" : "text-[#3b4656]"} ${mobile ? "pl-[26px] text-[0.7rem]" : "pl-[25px] text-[0.72rem]"}`}>
+        <span className={`leading-[1.4] ${isDark ? "text-white/80" : "text-[#3b4656]"} ${mobile ? "pl-7 text-[13px]" : "pl-[26px] text-[15px]"}`}>
           {verdict.note}
         </span>
       ) : null}
@@ -54,7 +52,7 @@ function ModelName({ item, className }) {
       {item.model.map((m, i) => (
         <span key={m.name}>
           {i > 0 ? " / " : null}
-          <Link href={m.href} className="font-[inherit] hover:underline">
+          <Link href={m.href} className="font-normal hover:underline">
             {m.name}
           </Link>
         </span>
@@ -71,34 +69,31 @@ function CarThumb({ item, className }) {
   );
 }
 
+// One grid template for the header and the rows, so every heading starts where its column does.
+const GRID = "grid grid-cols-[96px_minmax(76px,0.7fr)_minmax(0,1fr)_minmax(0,1.25fr)] gap-x-4 px-5";
+
 function Table({ rows, columns, isDark, right = false }) {
-  const grid = right ? "grid-cols-[124px_96px_minmax(0,1fr)_minmax(0,1.18fr)]" : "grid-cols-[124px_96px_minmax(0,1fr)_minmax(0,1.12fr)]";
   const line = isDark ? "border-white/[0.07]" : "border-[#e8ecf1]";
   return (
-    <div className={right ? `border-l ${isDark ? "border-white/[0.1]" : "border-[#e3e8ef]"}` : ""}>
-      <div
-        className={`grid ${grid} items-center py-3 text-[0.95rem] font-medium uppercase tracking-[0.01em] ${isDark ? "text-white" : "text-white"}`}
-        style={{ background: TABLE_HEADER_BG, color: TABLE_HEADER_TEXT }}
-      >
-        <span className="col-span-2 pl-[42%]">{columns[0]}</span>
-        <span className="pl-3">{columns[1]}</span>
-        <span className="pl-[14%]">{columns[2]}</span>
+    <div className={right ? `border-t lg:border-l lg:border-t-0 ${isDark ? "border-white/[0.1]" : "border-[#e3e8ef]"}` : ""}>
+      <div className={`${GRID} t-label items-center py-3 font-semibold uppercase tracking-[0.02em]`} style={{ background: TABLE_HEADER_BG, color: TABLE_HEADER_TEXT }}>
+        <span className="col-span-2">{columns[0]}</span>
+        <span>{columns[1]}</span>
+        <span>{columns[2]}</span>
       </div>
-      <div className="px-4">
-        {rows.map((item) => (
-          <div
-            key={item.model[0].name}
-            className={`grid ${grid} min-h-[52px] items-center border-b py-2 last:border-b-0 ${line} ${isDark ? "text-white" : "text-[#0b1626]"}`}
-          >
-            <CarThumb item={item} className="h-[42px] w-[112px]" />
-            <ModelName item={item} className="text-[1.1rem] font-medium" />
-            <span className={`pl-3 pr-4 text-[0.98rem] leading-[1.4] ${isDark ? "text-white/85" : "text-[#2a3646]"}`}>{item.generations}</span>
-            <span className="pr-3">
-              <Verdict verdict={item.verdict} isDark={isDark} />
-            </span>
-          </div>
-        ))}
-      </div>
+      {rows.map((item) => (
+        <div
+          key={item.model[0].name}
+          className={`${GRID} min-h-[60px] items-center border-b py-2.5 last:border-b-0 ${line} ${isDark ? "text-white" : "text-[#0b1626]"}`}
+        >
+          <CarThumb item={item} className="h-[40px] w-[96px]" />
+          <ModelName item={item} className="t-body" />
+          <span className={`t-body ${isDark ? "text-white/85" : "text-[#2a3646]"}`}>{item.generations}</span>
+          <span>
+            <Verdict verdict={item.verdict} isDark={isDark} />
+          </span>
+        </div>
+      ))}
     </div>
   );
 }
@@ -138,28 +133,31 @@ export default function HomeSec2({ data }) {
   return (
     <section id="find-your-vehicle" className={`find-your-vehicle relative overflow-hidden ${isDark ? "bg-[#060a10]" : "bg-[#f7f9fb]"}`}>
       {/* Desktop / tablet */}
-      <div className="relative mx-auto hidden w-full max-w-[1600px] px-6 pb-12 pt-14 md:block lg:px-[3%]">
-        <GrilleImage src={isDark ? data.headerImage.dark : data.headerImage.light} className="right-0 top-0 h-[218px] w-[56%]" fadeStart="90%" position="object-cover object-[35%_100%]" />
-        <div className="relative max-w-[600px] pl-2 lg:pl-[2.5%]">
-          <h2 className={`text-[3.4rem] font-bold leading-[1.05] tracking-[-0.02em] lg:text-[4rem] ${heading}`} dangerouslySetInnerHTML={{ __html: data.h2 }} />
-          <p className={`mt-3 max-w-[470px] text-[1.15rem] leading-[1.4] lg:text-[1.2rem] ${muted}`}>{data.subHeadline}</p>
-        </div>
-        <div
-          className={`relative mt-6 grid overflow-hidden rounded-[14px] border lg:grid-cols-[1fr_1.03fr] ${
-            isDark ? "border-[#1b3256] bg-[rgba(12,20,32,0.92)]" : "border-[#e3e8ef] bg-white shadow-[0_8px_30px_rgba(10,26,43,0.06)]"
-          }`}
-        >
-          <Table rows={left} columns={data.columns} isDark={isDark} />
-          <Table rows={right} columns={data.columns} isDark={isDark} right />
+      <div className="relative hidden md:block">
+        <GrilleImage src={isDark ? data.headerImage.dark : data.headerImage.light} className="right-0 top-0 h-[230px] w-[52%]" fadeStart="88%" position="object-cover object-[35%_100%]" />
+        <div className="site-container section-y relative">
+          <div className="max-w-[620px]">
+            <h2 className={`t-h2 ${heading}`} dangerouslySetInnerHTML={{ __html: data.h2 }} />
+            <p className={`t-p mt-3 max-w-[520px] ${muted}`}>{data.subHeadline}</p>
+          </div>
+          <div
+            className={`relative mt-8 grid overflow-hidden rounded-[14px] border lg:grid-cols-2 ${
+              isDark ? "border-[#1b3256] bg-[rgba(12,20,32,0.92)]" : "border-[#e3e8ef] bg-white shadow-[0_8px_30px_rgba(10,26,43,0.06)]"
+            }`}
+          >
+            <Table rows={left} columns={data.columns} isDark={isDark} />
+            <Table rows={right} columns={data.columns} isDark={isDark} right />
+          </div>
         </div>
       </div>
 
       {/* Phone */}
-      <div className="relative px-4 pb-6 pt-8 md:hidden">
-        <GrilleImage src={isDark ? data.headerImage.dark : data.headerImage.light} className="right-0 top-3 h-[112px] w-[44%]" fadeStart="92%" position="object-cover object-[30%_100%]" />
-        <div className="relative max-w-[60%]">
-          <h2 className={`text-[1.85rem] font-bold leading-[1.1] tracking-[-0.02em] ${heading}`} dangerouslySetInnerHTML={{ __html: data.h2 }} />
-          <p className={`mt-2.5 text-[0.85rem] leading-[1.45] ${muted}`}>{data.subHeadline}</p>
+      <div className="relative px-4 pb-8 pt-8 md:hidden">
+        {/* Reference: large white/black grille top right, bleeding off the edge behind the heading. */}
+        <GrilleImage src={isDark ? data.headerImage.dark : data.headerImage.light} className="-right-2 top-0 h-[190px] w-[50%]" fadeStart="78%" position="object-cover object-[22%_70%]" />
+        <div className="relative max-w-[62%]">
+          <h2 className={`t-h2 ${heading}`} dangerouslySetInnerHTML={{ __html: data.h2 }} />
+          <p className={`t-body mt-3 ${muted}`}>{data.subHeadline}</p>
         </div>
 
         <label
@@ -179,7 +177,7 @@ export default function HomeSec2({ data }) {
               setShowAll(false);
             }}
             placeholder={data.searchPlaceholder}
-            className={`w-full bg-transparent text-[0.9rem] outline-none ${isDark ? "text-white placeholder:text-white/45" : "text-[#0b1626] placeholder:text-[#8a94a3]"}`}
+            className={`w-full bg-transparent text-[15px] outline-none ${isDark ? "text-white placeholder:text-white/45" : "text-[#0b1626] placeholder:text-[#8a94a3]"}`}
           />
         </label>
 
@@ -194,7 +192,7 @@ export default function HomeSec2({ data }) {
                   setFilter(f.value);
                   setShowAll(false);
                 }}
-                className={`shrink-0 rounded-full border px-3.5 py-1.5 text-[0.78rem] font-medium ${
+                className={`shrink-0 rounded-full border px-4 py-2 text-[13px] font-medium ${
                   active
                     ? "border-[#0a55d6] bg-[#0a55d6] text-white"
                     : isDark
@@ -212,26 +210,26 @@ export default function HomeSec2({ data }) {
           {mobileRows.map((item) => (
             <div
               key={item.model[0].name}
-              className={`grid grid-cols-[78px_minmax(0,1fr)_140px] items-center gap-2.5 border-b px-2.5 py-2.5 ${
+              className={`grid grid-cols-[84px_minmax(0,1fr)_132px] items-center gap-2.5 border-b px-3 py-3 ${
                 isDark ? "border-white/10 text-white" : "border-[#e8ecf1] text-[#0b1626]"
               }`}
             >
-              <CarThumb item={item} className="h-[30px] w-[78px]" />
+              <CarThumb item={item} className="h-[36px] w-[84px]" />
               <span className="min-w-0">
-                <ModelName item={item} className="block text-[0.95rem] font-semibold leading-tight" />
-                <span className={`mt-0.5 block text-[0.75rem] leading-[1.4] ${muted}`}>{item.generations}</span>
+                <ModelName item={item} className="block text-[17px] leading-tight" />
+                <span className={`mt-1 block text-[14px] leading-[1.4] ${muted}`}>{item.generations}</span>
               </span>
               <span>
                 <Verdict verdict={item.verdict} isDark={isDark} mobile />
               </span>
             </div>
           ))}
-          {!mobileRows.length ? <p className={`px-4 py-5 text-sm ${muted}`}>No models match your search.</p> : null}
+          {!mobileRows.length ? <p className={`t-body px-4 py-5 ${muted}`}>No models match your search.</p> : null}
           {filtered.length > data.mobileLimit ? (
             <button
               type="button"
               onClick={() => setShowAll((v) => !v)}
-              className="flex w-full items-center justify-center gap-3 py-3.5 text-[0.95rem] text-[#0a4fc2]"
+              className="t-body flex w-full items-center justify-center gap-3 py-3.5 text-[#0a4fc2]"
             >
               {showAll ? "Show fewer models" : `${data.viewAll.label} (${filtered.length})`}
               <svg aria-hidden="true" viewBox="0 0 24 24" className={`h-4 w-4 ${showAll ? "rotate-180" : ""}`} fill="none" stroke="currentColor" strokeWidth="1.8">
@@ -250,13 +248,13 @@ export default function HomeSec2({ data }) {
               </svg>
             </span>
             <span>
-              <span className={`block text-[0.9rem] font-semibold ${heading}`}>{data.trust.title}</span>
-              <span className={`mt-1 block text-[0.8rem] leading-[1.45] ${muted}`}>{data.trust.text}</span>
+              <span className={`block text-[16px] font-semibold ${heading}`}>{data.trust.title}</span>
+              <span className={`t-body mt-1 block ${muted}`}>{data.trust.text}</span>
             </span>
           </div>
           <Link
             href={data.cta.href}
-            className="mt-3.5 flex items-center justify-center gap-3 rounded-[4px] bg-[#0b47a8] py-3 text-[0.9rem] font-semibold text-white"
+            className="mt-3.5 flex items-center justify-center gap-3 rounded-[4px] bg-[#0b47a8] py-3 text-[15px] font-semibold text-white"
           >
             {data.cta.buttonLabel}
             <svg aria-hidden="true" viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="1.8">

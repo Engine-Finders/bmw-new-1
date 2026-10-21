@@ -43,7 +43,7 @@ export default function QuotesCta({ data }) {
         <div className="relative z-10 flex flex-col justify-between gap-6 md:flex-row md:items-center">
           <div className="flex flex-col gap-3 md:max-w-[55%]">
             <div>
-              <h2 className={`text-[1.6rem] font-bold leading-[1.15] md:text-[2.1rem] ${headingClass}`}>
+              <h2 className={`t-h4 ${headingClass}`}>
                 {headlineParts.before ? <span dangerouslySetInnerHTML={{ __html: headlineParts.before }} /> : null}
                 {headlineParts.accent ? (
                   <>
@@ -61,13 +61,13 @@ export default function QuotesCta({ data }) {
             </div>
 
             {data.supportingLine ? (
-              <p className={`text-[0.88rem] leading-[1.5] ${bodyTextClass}`} dangerouslySetInnerHTML={{ __html: data.supportingLine }} />
+              <p className={`lg:text-[15px] text-[0.88rem] leading-[1.5] ${bodyTextClass}`} dangerouslySetInnerHTML={{ __html: data.supportingLine }} />
             ) : null}
 
             {data.button ? (
               <a
                 href="/quote"
-                className="btn-cta mt-1 flex w-full shrink-0 items-center justify-center gap-2 whitespace-nowrap rounded-md bg-[#189454] px-4 py-2.5 text-center text-[0.76rem] font-bold text-white no-underline shadow-[0_12px_28px_rgba(0,0,0,0.35)] md:w-fit md:px-6 md:py-3.5 md:text-[0.85rem]"
+                className="lg:text-[15px] btn-cta mt-1 flex w-full shrink-0 items-center justify-center gap-2 whitespace-nowrap rounded-md bg-[#189454] px-4 py-2.5 text-center text-[0.76rem] font-bold text-white no-underline shadow-[0_12px_28px_rgba(0,0,0,0.35)] md:w-fit md:px-6 md:py-3.5 md:text-[0.85rem]"
               >
                 {data.button.label.replace(/\s*→\s*$/, "")}
                 <GenIcon name="arrow" className="h-4 w-4 shrink-0" />

@@ -22,7 +22,7 @@ function VariantPanel({ title, icon, variants, tone, isDark }) {
         <GenIcon name={icon} onDark className="h-12 w-12 md:h-10 md:w-10" />
       </span>
       <div className="min-w-0 flex-1 py-4 pl-3 pr-4">
-        <p className={`text-[0.76rem] font-semibold uppercase tracking-wide ${labelToneClass}`}>
+        <p className={`lg:text-[15px] text-[0.76rem] font-semibold uppercase tracking-wide ${labelToneClass}`}>
           {title}
         </p>
         <ul className="mt-2 grid grid-cols-2 gap-x-3 gap-y-1.5">
@@ -30,7 +30,7 @@ function VariantPanel({ title, icon, variants, tone, isDark }) {
             <li key={`${variant.name || variant.url}-${index}`} className="min-w-0">
               <Link
                 href={variant.url || "#"}
-                className={`block text-[0.88rem] font-bold leading-snug transition-colors duration-200 hover:text-[var(--color-primary)] focus-visible:text-[var(--color-primary)] focus-visible:outline-none ${textClass}`}
+                className={`lg:text-[15px] block text-[0.88rem] font-bold leading-snug transition-colors duration-200 hover:text-[var(--color-primary)] focus-visible:text-[var(--color-primary)] focus-visible:outline-none ${textClass}`}
                 dangerouslySetInnerHTML={{ __html: variant.name }}
               />
             </li>
@@ -56,7 +56,7 @@ export default function CoreVariants({ data, grouped = false, className = "" }) 
   const scopeNoteBlock = data.scopeNote ? (
     <div className="glass-panel flex gap-3 rounded-md p-4">
       <GenIcon name="info" className="h-8 w-8 md:h-6 md:w-6 shrink-0" />
-      <p className={`text-[0.82rem] leading-[1.5] ${isDark ? "text-white/85" : "text-[var(--color-text-muted)]"}`}>
+      <p className={`lg:text-[15px] text-[0.82rem] leading-[1.5] ${isDark ? "text-white/85" : "text-[var(--color-text-muted)]"}`}>
         <span className={`font-semibold ${isDark ? "text-white" : "text-[var(--color-text)]"}`}>Scope note: </span>
         <span dangerouslySetInnerHTML={{ __html: data.scopeNote }} />
       </p>

@@ -56,7 +56,7 @@ function TrustCard({ item, index, isDark }) {
       }`}
     >
       <span
-        className={`absolute left-0 top-0 flex h-[22px] min-w-[26px] items-center justify-center rounded-br-md px-1.5 font-heading text-[0.72rem] font-bold ${
+        className={`lg:text-[15px] absolute left-0 top-0 flex h-[22px] min-w-[26px] items-center justify-center rounded-br-md px-1.5 font-heading text-[12px] font-bold ${
           isDark ? "bg-[var(--color-chrome)] text-[var(--color-page)]" : "bg-[var(--color-primary)] text-white"
         }`}
       >
@@ -120,14 +120,14 @@ export default function TrustBlockLegacy({ data }) {
         <div className="relative mx-auto w-full max-w-8xl px-4 pb-3 pt-5 md:px-6 md:pb-3.5 md:pt-7 lg:px-8">
           <div className="max-w-[720px]">
             <p
-              className={`text-[0.64rem] font-bold uppercase tracking-[0.14em] ${
+              className={`lg:text-[15px] text-[12px] font-bold uppercase tracking-[0.14em] ${
                 isDark ? "text-white/55" : "text-[var(--color-text-muted)]"
               }`}
             >
               Trust Signals
             </p>
             <h2
-              className={`mt-1.5 text-[1.55rem] font-bold leading-[1.02] sm:text-[1.85rem] md:text-[2.35rem] md:leading-[0.98] lg:text-[2.5rem] ${
+              className={`mt-1.5 t-h2 ${
                 isDark ? "text-white" : "text-[var(--color-text)]"
               }`}
             >

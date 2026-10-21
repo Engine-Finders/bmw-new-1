@@ -97,7 +97,7 @@ function Stats({ eras, isDark }) {
           <strong className="mt-1.5 text-[12px] leading-tight text-[var(--color-text)] md:text-[15px]">
             {item.title}
           </strong>
-          <span className="mt-0.5 text-[11px] leading-tight text-[var(--color-text-muted)] md:text-[13px]">
+          <span className="lg:text-[15px] mt-0.5 text-[12px] leading-tight text-[var(--color-text-muted)] md:text-[13px]">
             {item.text}
           </span>
         </div>
@@ -312,7 +312,7 @@ export default function EngineEvolutionLegacy({ data }) {
         <div className="relative mx-auto w-full max-w-8xl px-4 pb-3 pt-5 md:px-6 md:pb-3.5 md:pt-7 lg:px-8">
           <div className="grid gap-6 md:grid-cols-[minmax(0,1fr)_600px] md:items-start">
             <div>
-              <h2 className="max-w-[760px] text-[29px] font-bold leading-[1.08] tracking-normal md:text-[45px]">
+              <h2 className="max-w-[760px] t-h2">
                 <span dangerouslySetInnerHTML={{ __html: title.main }} />
                 {title.accent ? (
                   <>

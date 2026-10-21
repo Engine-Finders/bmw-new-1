@@ -56,7 +56,7 @@ function FaqItem({ item, open, onToggle, isLast, isDark }) {
         aria-expanded={open}
       >
         <span
-          className={`mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-md text-[13px] font-bold ${
+          className={`lg:text-[15px] mt-0.5 flex h-8 w-8 shrink-0 items-center justify-center rounded-md text-[13px] font-bold ${
             isDark
               ? "bg-[var(--color-primary-soft)] text-[var(--color-chrome-bright)]"
               : "bg-[var(--color-primary-soft)] text-[var(--color-primary)]"
@@ -65,7 +65,7 @@ function FaqItem({ item, open, onToggle, isLast, isDark }) {
           {item.id}
         </span>
         <span className="min-w-0 flex-1">
-          <span className={`block text-[14px] font-bold leading-[1.3] ${isDark ? "text-white" : "text-[var(--color-text)]"}`}>
+          <span className={`lg:text-[15px] block text-[14px] font-bold leading-[1.3] ${isDark ? "text-white" : "text-[var(--color-text)]"}`}>
             {topic ? (
               <>
                 {topic} – “{title}”
@@ -75,7 +75,7 @@ function FaqItem({ item, open, onToggle, isLast, isDark }) {
             )}
           </span>
           {open ? (
-            <span className={`mt-1.5 block text-[13px] leading-[1.45] ${isDark ? "text-white/80" : "text-[var(--color-text-muted)]"}`}>
+            <span className={`lg:text-[15px] mt-1.5 block text-[13px] leading-[1.45] ${isDark ? "text-white/80" : "text-[var(--color-text-muted)]"}`}>
               {renderTaggedText(item.answer)}
             </span>
           ) : null}

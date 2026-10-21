@@ -162,20 +162,20 @@ function RatingCard({ starRating, confidence, isDark }) {
 
   return (
     <article className={`rounded-xl border px-3.5 py-3.5 md:px-5 md:py-5 ${cardClass(isDark)}`}>
-      <p className={`text-[12px] font-medium md:text-[14px] ${isDark ? "text-[var(--color-text)]" : "text-[var(--color-text-soft)]"}`}>Rating:</p>
+      <p className={`lg:text-[15px] text-[12px] font-medium md:text-[14px] ${isDark ? "text-[var(--color-text)]" : "text-[var(--color-text-soft)]"}`}>Rating:</p>
 
       <div className="mt-1.5 flex flex-wrap items-end gap-x-2.5 gap-y-1 md:mt-2 md:gap-x-3">
         <p className="font-heading text-[36px] font-bold leading-none text-[var(--color-primary)] md:text-[48px]">{rating.display}</p>
         <div className="mb-0.5 flex items-center gap-1.5 md:mb-1 md:gap-2">
           <StarRating value={rating.numeric} />
-          <span className="text-[11px] text-[var(--color-text-soft)] md:text-[13px]">out of 5</span>
+          <span className="lg:text-[15px] text-[12px] text-[var(--color-text-soft)] md:text-[13px]">out of 5</span>
         </div>
       </div>
 
       <div className="mt-3 border-t border-[var(--color-border)] pt-3">
         <div className="flex items-start gap-2.5">
           <CircleIcon isDark={isDark} icon="shield" className="mt-0.5 h-9 w-9 md:h-8 md:w-8" iconClass="h-7 w-7 md:h-5 md:w-5" />
-          <p className="min-w-0 text-[12px] leading-[1.4] text-[var(--color-text-muted)] md:text-[13px]">
+          <p className="lg:text-[15px] min-w-0 text-[12px] leading-[1.4] text-[var(--color-text-muted)] md:text-[13px]">
             {renderTaggedText(confidence)}
           </p>
         </div>
@@ -200,7 +200,7 @@ function VerdictQuote({ oneLineVerdict, isDark }) {
         {quote}
       </p>
       {meta ? (
-        <p className="relative z-[1] mt-2.5 px-1 text-[10px] leading-[1.35] text-[var(--color-text-soft)] md:mt-3 md:text-[11px]">
+        <p className="lg:text-[15px] relative z-[1] mt-2.5 px-1 text-[12px] leading-[1.35] text-[var(--color-text-soft)] md:mt-3 md:text-[13px]">
           {meta}
         </p>
       ) : null}
@@ -224,7 +224,7 @@ function AdviceCards({ bestFor, avoidIf, isDark }) {
           </span>
           <p className="text-[15px] font-semibold md:text-[17px]">Best for:</p>
         </div>
-        <p className="mt-2 text-[13px] leading-[1.45] text-[var(--color-text)] md:text-[14px]">{cleanText(bestFor)}</p>
+        <p className="lg:text-[15px] mt-2 text-[13px] leading-[1.45] text-[var(--color-text)] md:text-[14px]">{cleanText(bestFor)}</p>
       </article>
 
       <article
@@ -240,7 +240,7 @@ function AdviceCards({ bestFor, avoidIf, isDark }) {
           </span>
           <p className="text-[15px] font-semibold md:text-[17px]">Avoid if:</p>
         </div>
-        <p className="mt-2 text-[13px] leading-[1.45] text-[var(--color-text)] md:text-[14px]">{cleanText(avoidIf)}</p>
+        <p className="lg:text-[15px] mt-2 text-[13px] leading-[1.45] text-[var(--color-text)] md:text-[14px]">{cleanText(avoidIf)}</p>
       </article>
     </div>
   );
@@ -268,7 +268,7 @@ function ScoreBreakdown({ scoreNote, scoreBreakdown, isDark }) {
         <p className="text-[13px] font-semibold text-[var(--color-text)] md:text-[15px]">{cleanText(scoreNote)}</p>
       </div>
 
-      <div className="mt-2.5 grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2 bg-[#0b47a8] px-3.5 py-2 text-[11px] font-semibold uppercase tracking-[0.03em] text-white md:mt-3 md:gap-3 md:px-5 md:py-2.5 md:text-[13px]">
+      <div className="lg:text-[15px] mt-2.5 grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2 bg-[#0b47a8] px-3.5 py-2 text-[12px] font-semibold uppercase tracking-[0.03em] text-white md:mt-3 md:gap-3 md:px-5 md:py-2.5 md:text-[13px]">
         <span>{columns[0] || "Dimension"}</span>
         <span className="text-right">{columns[1] || "Score (of 20)"}</span>
       </div>
@@ -282,15 +282,15 @@ function ScoreBreakdown({ scoreNote, scoreBreakdown, isDark }) {
             <div className="flex min-w-0 items-start gap-2 md:gap-3">
               <DimensionIcon dimension={row.dimension} isDark={isDark} />
               <div className="min-w-0">
-                <p className="font-heading text-[12px] font-semibold leading-tight text-[var(--color-text)] md:text-[14px]">{row.dimension}</p>
+                <p className="lg:text-[15px] font-heading text-[12px] font-semibold leading-tight text-[var(--color-text)] md:text-[14px]">{row.dimension}</p>
                 {row.detail ? (
-                  <p className="mt-0.5 text-[11px] leading-[1.35] text-[var(--color-text-soft)] md:mt-1 md:text-[12px]">{row.detail}</p>
+                  <p className="lg:text-[15px] mt-0.5 text-[12px] leading-[1.35] text-[var(--color-text-soft)] md:mt-1 md:text-[13px]">{row.detail}</p>
                 ) : null}
               </div>
             </div>
             <p className="shrink-0 pt-0.5 text-right leading-none">
               <span className="font-heading text-[20px] font-bold text-[var(--color-primary)] md:text-[26px]">{row.points}</span>
-              <span className={`text-[11px] font-medium md:text-[13px] ${isDark ? "text-[var(--color-text)]" : "text-[var(--color-text-muted)]"}`}> /{row.outOf}</span>
+              <span className={`lg:text-[15px] text-[12px] font-medium md:text-[13px] ${isDark ? "text-[var(--color-text)]" : "text-[var(--color-text-muted)]"}`}> /{row.outOf}</span>
             </p>
           </div>
         ))}
@@ -301,12 +301,12 @@ function ScoreBreakdown({ scoreNote, scoreBreakdown, isDark }) {
           isDark ? "bg-[var(--color-page-soft)]" : "bg-[var(--color-primary-soft)]"
         }`}
       >
-        <p className="font-heading text-[11px] font-bold uppercase tracking-[0.04em] text-[var(--color-text)] md:text-[13px]">
+        <p className="lg:text-[15px] font-heading text-[12px] font-bold uppercase tracking-[0.04em] text-[var(--color-text)] md:text-[13px]">
           Total Engine Score
         </p>
         <p className="text-right leading-none">
           <span className="font-heading text-[26px] font-bold text-[var(--color-primary)] md:text-[34px]">{totalPoints}</span>
-          <span className={`text-[12px] font-medium md:text-[14px] ${isDark ? "text-[var(--color-text)]" : "text-[var(--color-text-muted)]"}`}> / {totalOutOf}</span>
+          <span className={`lg:text-[15px] text-[12px] font-medium md:text-[14px] ${isDark ? "text-[var(--color-text)]" : "text-[var(--color-text-muted)]"}`}> / {totalOutOf}</span>
         </p>
       </div>
     </article>

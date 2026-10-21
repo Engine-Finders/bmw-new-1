@@ -205,7 +205,7 @@ function StepIndicator({ labels, stageIndex, isDark }) {
           <div key={label} className="flex min-w-0 flex-1 items-center gap-2 md:gap-3">
             <div className="flex min-w-0 items-center gap-2">
               <span
-                className={`flex h-8 w-8 shrink-0 items-center justify-center rounded-full border text-[0.82rem] font-bold ${
+                className={`flex h-8 w-8 shrink-0 items-center justify-center rounded-full border t-label font-bold ${
                   done || active
                     ? "border-[var(--color-primary)] bg-[var(--color-primary)] text-white"
                     : isDark
@@ -215,7 +215,7 @@ function StepIndicator({ labels, stageIndex, isDark }) {
               >
                 {done ? "✓" : stepNumber}
               </span>
-              <span className={`truncate text-[0.72rem] font-semibold uppercase tracking-[0.06em] md:text-[0.78rem] ${done || active ? "text-[var(--color-primary)]" : isDark ? "text-white/62" : "text-[#607085]"}`}>
+              <span className={`t-label truncate font-semibold uppercase tracking-[0.04em] ${done || active ? "text-[var(--color-primary)]" : isDark ? "text-white/62" : "text-[#607085]"}`}>
                 {label}
               </span>
             </div>
@@ -248,24 +248,24 @@ function TrustStrip({ items, isDark, phone = false }) {
   const soft = isDark ? "text-white/78" : "text-[#3b4656]";
   return (
     <ul
-      className={`grid grid-cols-4 rounded-[8px] border ${
-        phone ? "px-1 py-4" : "px-2 py-3.5"
-      } ${isDark ? "border-[#1e3350] bg-[rgba(10,18,30,0.85)]" : "border-[#e6eaf0] bg-white shadow-[0_8px_30px_rgba(10,26,43,0.06)]"}`}
+      className={`grid grid-cols-4 rounded-[10px] border ${phone ? "px-1 py-3.5" : "py-3"} ${
+        isDark ? "border-[#1e3350] bg-[rgba(10,18,30,0.85)]" : "border-[#e6eaf0] bg-white shadow-[0_8px_30px_rgba(10,26,43,0.06)]"
+      }`}
     >
       {items.map((item) => (
         <li
           key={item.text}
-          className={`flex [&:not(:last-child)]:border-r ${isDark ? "border-white/10" : "border-[#e6eaf0]"} ${
-            phone ? "flex-col items-center gap-2 px-1 text-center" : "items-center gap-3.5 px-5"
-          }`}
+          className={`relative flex [&:not(:last-child)]:after:absolute [&:not(:last-child)]:after:right-0 [&:not(:last-child)]:after:top-1/2 [&:not(:last-child)]:after:h-[60%] [&:not(:last-child)]:after:w-px [&:not(:last-child)]:after:-translate-y-1/2 ${
+            isDark ? "after:bg-white/12" : "after:bg-[#e3e8ef]"
+          } ${phone ? "flex-col items-center gap-1.5 px-1 text-center" : "items-center gap-3 px-4"}`}
         >
           <span className={isDark ? "text-[#3b82f6]" : "text-[#0b4fc0]"}>
-            <Icon name={item.icon} className={phone ? "h-9 w-9" : "h-9 w-9"} />
+            <Icon name={item.icon} className={phone ? "h-8 w-8" : "h-8 w-8 shrink-0"} />
           </span>
-          <span className={`leading-[1.3] ${phone ? "text-[0.8rem]" : "text-[0.85rem]"}`}>
+          <span className={phone ? "text-[13px] leading-[1.3]" : "t-label"}>
             <span className={`block ${strong}`}>
               {item.lead ? <span className={phone ? "block" : ""}>{item.lead} </span> : null}
-              {item.value ? <strong className={`font-semibold ${phone ? "block text-[0.95rem]" : "text-[1.05rem]"}`}>{item.value}</strong> : null}
+              {item.value ? <strong className={`font-semibold ${phone ? "block text-[15px]" : "text-[16px]"}`}>{item.value}</strong> : null}
               {item.tail ? <span className={phone ? "block" : ""}> {item.tail}</span> : null}
             </span>
             <span className={`block ${soft}`}>{item.text}</span>
@@ -281,7 +281,7 @@ function HowItWorks({ data, isDark, numbered = false }) {
   const soft = isDark ? "text-white/75" : "text-[#3b4656]";
   return (
     <div className={`rounded-[10px] border p-4 ${card(isDark)}`}>
-      <h3 className={`px-1 pt-1 font-semibold uppercase ${numbered ? "text-[0.85rem]" : "text-[1rem]"} ${isDark ? "text-[#3b82f6]" : "text-[#0b4fc0]"}`}>
+      <h3 className={`t-label px-1 pt-1 font-semibold uppercase tracking-[0.02em] ${isDark ? "text-[#3b82f6]" : "text-[#0b4fc0]"}`}>
         {data.title}
       </h3>
       <ul className={`mt-3.5 grid ${numbered ? "gap-0" : "gap-3"}`}>
@@ -289,27 +289,29 @@ function HowItWorks({ data, isDark, numbered = false }) {
           numbered ? (
             <li key={step.step} className="relative grid grid-cols-[32px_46px_minmax(0,1fr)_16px] items-center gap-3 py-3">
               {i < data.steps.length - 1 ? <span className={`absolute left-[15px] top-[50%] h-full w-px ${isDark ? "bg-white/15" : "bg-[#dfe5ee]"}`} /> : null}
-              <span className="relative flex h-[32px] w-[32px] items-center justify-center rounded-full bg-[#0b47a8] text-[0.9rem] font-semibold text-white">{step.step}</span>
+              <span className="relative flex h-[32px] w-[32px] items-center justify-center rounded-full bg-[#0b47a8] t-body font-semibold text-white">{step.step}</span>
               <span className="flex h-[46px] w-[46px] items-center justify-center rounded-[6px] bg-[#0b4fc0] text-white">
                 <Icon name={step.icon} className="h-7 w-7" />
               </span>
               <span className={`${i < data.steps.length - 1 ? `border-b pb-3 ${isDark ? "border-white/10" : "border-[#e6eaf0]"}` : ""}`}>
-                <span className={`block text-[1rem] font-semibold ${strong}`}>{step.title}</span>
-                <span className={`mt-1 block text-[0.875rem] leading-[1.55] ${soft}`}>{step.text}</span>
+                <span className={`block text-[17px] font-semibold leading-[1.3] ${strong}`}>{step.title}</span>
+                <span className={`t-body mt-1 block ${soft}`}>{step.text}</span>
               </span>
               <Chevron className={`h-4 w-4 ${strong}`} />
             </li>
           ) : (
-            <li key={step.step} className={`grid grid-cols-[56px_minmax(0,1fr)_16px] items-center gap-4 rounded-[8px] border px-3 py-4 ${innerCard(isDark)}`}>
-              <span className="flex h-14 w-14 items-center justify-center self-start rounded-[6px] bg-[#0b4fc0] text-white">
-                <Icon name={step.icon} className="h-8 w-8" />
+            <li key={step.step} className={`relative rounded-[8px] border p-4 ${innerCard(isDark)}`}>
+              <span className="flex items-center gap-3 pr-6">
+                <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-[6px] bg-[#0b4fc0] text-white">
+                  <Icon name={step.icon} className="h-7 w-7" />
+                </span>
+                <span className="min-w-0">
+                  <span className={`t-label block font-medium ${isDark ? "text-[#3b82f6]" : "text-[#0b4fc0]"}`}>Step {step.step}</span>
+                  <span className={`block text-[18px] font-semibold leading-[1.3] ${strong}`}>{step.title}</span>
+                </span>
               </span>
-              <span>
-                <span className={`block text-[0.88rem] font-medium ${isDark ? "text-[#3b82f6]" : "text-[#0b4fc0]"}`}>Step {step.step}</span>
-                <span className={`mt-1 block text-[0.95rem] font-medium ${strong}`}>{step.title}</span>
-                <span className={`mt-1.5 block text-[0.78rem] leading-[1.5] ${soft}`}>{step.text}</span>
-              </span>
-              <Chevron className={`h-4 w-4 ${strong}`} />
+              <Chevron className={`absolute right-3 top-5 h-4 w-4 ${strong}`} />
+              <span className={`t-body mt-3 block ${soft}`}>{step.text}</span>
             </li>
           ),
         )}
@@ -321,21 +323,22 @@ function HowItWorks({ data, isDark, numbered = false }) {
 function WhyTrust({ title, items, isDark, phone = false }) {
   const strong = isDark ? "text-white" : "text-[#0b1626]";
   const soft = isDark ? "text-white/75" : "text-[#3b4656]";
+  const heading = `t-label px-1 pt-1 font-semibold uppercase tracking-[0.02em] ${isDark ? "text-[#3b82f6]" : "text-[#0b4fc0]"}`;
   if (phone) {
     return (
       <div className={`rounded-[10px] border p-4 ${card(isDark)}`}>
-        <h3 className={`px-1 pt-1 text-[0.85rem] font-semibold uppercase ${isDark ? "text-[#3b82f6]" : "text-[#0b4fc0]"}`}>{title}</h3>
+        <h3 className={heading}>{title}</h3>
         <ul className="mt-2">
           {items.map((item) => (
-            <li key={item.title} className={`grid grid-cols-[44px_minmax(0,1fr)_16px] items-center gap-3.5 border-b py-3 last:border-b-0 ${isDark ? "border-white/10" : "border-[#e6eaf0]"}`}>
-              <span className="flex h-11 w-11 items-center justify-center rounded-full bg-[#0b4fc0] text-white">
-                <Icon name={item.icon} className="h-6 w-6" />
+            <li key={item.title} className={`border-b py-3.5 last:border-b-0 ${isDark ? "border-white/10" : "border-[#e6eaf0]"}`}>
+              <span className="flex items-center gap-3">
+                <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-[#0b4fc0] text-white">
+                  <Icon name={item.icon} className="h-6 w-6" />
+                </span>
+                <span className={`flex-1 text-[17px] font-semibold leading-[1.3] ${strong}`}>{item.title}</span>
+                <Chevron className={`h-4 w-4 ${strong}`} />
               </span>
-              <span>
-                <span className={`block text-[0.95rem] font-medium ${strong}`}>{item.title}</span>
-                <span className={`mt-0.5 block text-[0.875rem] leading-[1.5] ${soft}`}>{item.text}</span>
-              </span>
-              <Chevron className={`h-4 w-4 ${strong}`} />
+              <span className={`t-body mt-2 block ${soft}`}>{item.text}</span>
             </li>
           ))}
         </ul>
@@ -344,17 +347,18 @@ function WhyTrust({ title, items, isDark, phone = false }) {
   }
   return (
     <div className={`rounded-[10px] border p-4 ${card(isDark)}`}>
-      <h3 className={`px-1 pt-1 text-[1rem] font-semibold uppercase ${isDark ? "text-[#3b82f6]" : "text-[#0b4fc0]"}`}>{title}</h3>
+      <h3 className={heading}>{title}</h3>
       <ul className="mt-3.5 grid gap-2.5">
         {items.map((item) => (
-          <li key={item.title} className={`flex items-start gap-4 rounded-[8px] border px-3 py-3.5 ${innerCard(isDark)}`}>
-            <span className="flex h-[58px] w-[58px] shrink-0 items-center justify-center rounded-full bg-[#0b4fc0] text-white">
-              <Icon name={item.icon} className="h-8 w-8" />
+          <li key={item.title} className={`relative rounded-[8px] border p-4 ${innerCard(isDark)}`}>
+            <span className="flex items-center gap-3 pr-6">
+              <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[#0b4fc0] text-white">
+                <Icon name={item.icon} className="h-7 w-7" />
+              </span>
+              <span className={`text-[18px] font-semibold leading-[1.3] ${strong}`}>{item.title}</span>
             </span>
-            <span>
-              <span className={`block text-[0.92rem] font-medium ${strong}`}>{item.title}</span>
-              <span className={`mt-1.5 block text-[0.78rem] leading-[1.5] ${soft}`}>{item.text}</span>
-            </span>
+            <Chevron className={`absolute right-3 top-5 h-4 w-4 ${strong}`} />
+            <span className={`t-body mt-3 block ${soft}`}>{item.text}</span>
           </li>
         ))}
       </ul>
@@ -387,7 +391,7 @@ function SymptomTiles({ tiles, selectedId, onSelect, isDark, phone = false }) {
             <span className={isDark && !active ? "text-[#3b82f6]" : "text-[#0b4fc0]"}>
               <Icon name={tile.icon} className={phone ? "h-11 w-11" : "h-12 w-12"} />
             </span>
-            <span className={`mt-2.5 leading-[1.35] ${phone ? "text-[0.82rem]" : "text-[0.86rem]"} ${active ? "text-[#0b1626]" : strong}`}>{tile.label}</span>
+            <span className={`mt-2.5 leading-[1.35] ${phone ? "text-[14px]" : "t-label"} ${active ? "text-[#0b1626]" : strong}`}>{tile.label}</span>
             {!phone ? <Chevron className={`mt-auto h-4 w-4 pt-1 ${active ? "text-[#0b1626]" : strong}`} /> : null}
           </button>
         );
@@ -402,21 +406,21 @@ function ExampleResult({ data, isDark }) {
   const blue = isDark ? "text-[#5b9bff]" : "text-[#0b4fc0]";
   return (
     <div className={`rounded-[10px] border p-4 ${isDark ? "border-[#1e3350] bg-[rgba(10,18,30,0.92)]" : "border-[#e3e8ef] bg-[#f4f7fc]"}`}>
-      <span className={`inline-block rounded-[4px] px-2.5 py-1.5 text-[0.78rem] font-medium ${isDark ? "bg-white/10 text-[#5b9bff]" : "bg-[#e3ebf8] text-[#0b4fc0]"}`}>{data.label}</span>
-      <h3 className={`mt-4 text-[1.4rem] font-semibold ${strong}`}>{data.title}</h3>
+      <span className={`inline-block rounded-[4px] px-2.5 py-1.5 t-label font-medium ${isDark ? "bg-white/10 text-[#5b9bff]" : "bg-[#e3ebf8] text-[#0b4fc0]"}`}>{data.label}</span>
+      <h3 className={`mt-4 t-h5 ${strong}`}>{data.title}</h3>
       <div className={`mt-4 rounded-[8px] border p-4 ${innerCard(isDark)}`}>
-        <p className={`text-[0.95rem] font-medium ${strong}`}>{data.fault}</p>
-        <span className="mt-2.5 inline-block rounded-[4px] bg-[#fde2e2] px-2.5 py-1 text-[0.8rem] text-[#c81e1e]">{data.likelihood}</span>
+        <p className={`t-body font-medium ${strong}`}>{data.fault}</p>
+        <span className="mt-2.5 inline-block rounded-[4px] bg-[#fde2e2] px-2.5 py-1 t-label text-[#c81e1e]">{data.likelihood}</span>
         {data.rows.map(([k, v]) => (
-          <p key={k} className={`mt-2.5 text-[0.85rem] ${strong}`}>
+          <p key={k} className={`mt-2.5 t-label ${strong}`}>
             {k} <span className={soft}>{v}</span>
           </p>
         ))}
-        <p className={`mt-4 text-[0.85rem] ${strong}`}>{data.repairLabel}</p>
-        <p className={`mt-1 text-[1.5rem] font-bold ${blue}`}>{data.repair}</p>
-        <p className={`mt-3 text-[0.85rem] ${strong}`}>{data.replaceLabel}</p>
-        <p className={`mt-1 text-[1.5rem] font-bold ${blue}`}>{data.replace}</p>
-        <p className={`mt-4 flex items-center gap-2 text-[0.75rem] ${soft}`}>
+        <p className={`mt-4 t-label ${strong}`}>{data.repairLabel}</p>
+        <p className={`mt-1 t-num ${blue}`}>{data.repair}</p>
+        <p className={`mt-3 t-label ${strong}`}>{data.replaceLabel}</p>
+        <p className={`mt-1 t-num ${blue}`}>{data.replace}</p>
+        <p className={`mt-4 flex items-center gap-2 t-label ${soft}`}>
           <Icon name="shield" className={`h-4 w-4 ${blue}`} />
           {data.basis}
         </p>
@@ -429,15 +433,15 @@ function ExampleResult({ data, isDark }) {
           </svg>
         </span>
         <span>
-          <span className={`block text-[0.9rem] font-medium ${strong}`}>{data.verdictTitle}</span>
-          <span className={`mt-1 block text-[0.82rem] leading-[1.5] ${soft}`}>{data.verdictText}</span>
+          <span className={`block t-body font-medium ${strong}`}>{data.verdictTitle}</span>
+          <span className={`mt-1 block t-label leading-[1.5] ${soft}`}>{data.verdictText}</span>
         </span>
       </div>
-      <a href="#diagnose" className="mt-4 flex items-center justify-between rounded-[4px] bg-[#0b47a8] px-6 py-3.5 text-[1rem] font-medium text-white">
+      <a href="#diagnose" className="mt-4 flex items-center justify-between rounded-[4px] bg-[#0b47a8] px-6 py-3.5 t-body font-medium text-white">
         {data.cta}
         <ArrowIcon className="h-5 w-5" />
       </a>
-      <p className={`mt-3.5 text-center text-[0.8rem] leading-[1.6] ${soft}`}>
+      <p className={`mt-3.5 text-center t-label leading-[1.6] ${soft}`}>
         <svg aria-hidden="true" viewBox="0 0 24 24" className="mr-2 inline h-3.5 w-3.5 align-[-2px]" fill="currentColor">
           <path d="M7 10V7a5 5 0 0 1 10 0v3h1a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1v-9a1 1 0 0 1 1-1h1Zm2 0h6V7a3 3 0 0 0-6 0v3Z" />
         </svg>
@@ -460,9 +464,9 @@ function PromiseCard({ data, isDark }) {
           <path d="m8 12.2 2.8 2.8L16.5 9" fill="none" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
         </svg>
         <div>
-          <p className={`text-[1.05rem] font-medium ${strong}`}>{data.title}</p>
+          <p className={`t-body font-medium ${strong}`}>{data.title}</p>
           {data.lines.map((line) => (
-            <p key={line} className={`mt-1 text-[0.92rem] leading-[1.5] ${soft}`}>
+            <p key={line} className={`mt-1 t-body leading-[1.5] ${soft}`}>
               {line}
             </p>
           ))}
@@ -491,12 +495,12 @@ function ShortcutCard({ diagnosis, isDark, onSelect }) {
         <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[var(--color-primary-soft)] text-[var(--color-primary)]">
           <Icon name={diagnosis.icon} className="h-5 w-5" />
         </span>
-        <span className={`rounded-full border px-2 py-1 text-[0.64rem] font-bold uppercase tracking-[0.08em] ${isDark ? severity.darkBadge : severity.badge}`}>
+        <span className={`rounded-full border px-2 py-1 t-label font-bold uppercase tracking-[0.04em] ${isDark ? severity.darkBadge : severity.badge}`}>
           {severity.shortLabel}
         </span>
       </div>
-      <p className={`mt-3 text-[0.85rem] font-semibold leading-tight ${isDark ? "text-white" : "text-[#071827]"}`}>{diagnosis.shortcutLabel}</p>
-      <p className={`mt-1 text-[0.72rem] leading-[1.4] ${isDark ? "text-white/68" : "text-[#27384a]"}`}>{diagnosis.evidenceLabel}</p>
+      <p className={`mt-3 t-label font-semibold leading-tight ${isDark ? "text-white" : "text-[#071827]"}`}>{diagnosis.shortcutLabel}</p>
+      <p className={`mt-1 t-label leading-[1.4] ${isDark ? "text-white/68" : "text-[#27384a]"}`}>{diagnosis.evidenceLabel}</p>
     </button>
   );
 }
@@ -517,8 +521,8 @@ function CategoryCard({ category, selected, isDark, onSelect }) {
       <span className={`flex h-11 w-11 items-center justify-center rounded-full ${selected ? "bg-[var(--color-primary)] text-white" : "bg-[var(--color-primary-soft)] text-[var(--color-primary)]"}`}>
         <Icon name={category.icon} className="h-5 w-5" />
       </span>
-      <p className={`mt-3 text-[0.92rem] font-semibold leading-tight ${selected ? "text-[#071827]" : isDark ? "text-white" : "text-[#071827]"}`}>{category.label}</p>
-      <p className={`mt-1 text-[0.76rem] leading-[1.35] ${selected ? "text-[#27384a]" : isDark ? "text-white/72" : "text-[#27384a]"}`}>{category.description}</p>
+      <p className={`mt-3 t-body font-semibold leading-tight ${selected ? "text-[#071827]" : isDark ? "text-white" : "text-[#071827]"}`}>{category.label}</p>
+      <p className={`mt-1 t-label leading-[1.35] ${selected ? "text-[#27384a]" : isDark ? "text-white/72" : "text-[#27384a]"}`}>{category.description}</p>
     </button>
   );
 }
@@ -530,7 +534,7 @@ function AnswerButton({ answer, isDark, onSelect }) {
       onClick={() => onSelect(answer.diagnosisKey)}
       className={`flex w-full items-center justify-between gap-4 rounded-lg border px-4 py-4 text-left transition ${isDark ? "border-[#223343] bg-[rgba(14,28,41,0.84)] text-white hover:border-[#375067]" : "border-[#d7dde6] bg-white text-[#071827] hover:border-[var(--color-primary)] hover:bg-[#f8fbff]"}`}
     >
-      <span className="text-[0.88rem] leading-[1.4]">{answer.label}</span>
+      <span className="t-label leading-[1.4]">{answer.label}</span>
       <span className="shrink-0 text-[var(--color-primary)]">
         <ArrowIcon className="h-4 w-4" />
       </span>
@@ -541,7 +545,7 @@ function AnswerButton({ answer, isDark, onSelect }) {
 function SeverityBadge({ severity, isDark }) {
   const meta = severityMeta[severity];
 
-  return <span className={`inline-flex rounded-full border px-3 py-1.5 text-[0.72rem] font-bold uppercase tracking-[0.08em] ${isDark ? meta.darkBadge : meta.badge}`}>{meta.label}</span>;
+  return <span className={`inline-flex rounded-full border px-3 py-1.5 t-label font-bold uppercase tracking-[0.04em] ${isDark ? meta.darkBadge : meta.badge}`}>{meta.label}</span>;
 }
 
 function OverridePanel({ diagnosis, isDark, onContinue }) {
@@ -555,11 +559,11 @@ function OverridePanel({ diagnosis, isDark, onContinue }) {
         </span>
         <div className="min-w-0">
           <SeverityBadge severity={diagnosis.severity} isDark={isDark} />
-          <h3 className={`mt-3 text-[1.3rem] font-bold leading-tight md:text-[1.7rem] ${isDark ? "text-white" : "text-[#071827]"}`}>{diagnosis.overrideCopy.headline}</h3>
-          <p className={`mt-3 text-[0.9rem] leading-[1.5] ${isDark ? "text-white/78" : "text-[#27384a]"}`}>{diagnosis.overrideCopy.body}</p>
+          <h3 className={`mt-3 t-h5 ${isDark ? "text-white" : "text-[#071827]"}`}>{diagnosis.overrideCopy.headline}</h3>
+          <p className={`mt-3 t-body leading-[1.5] ${isDark ? "text-white/78" : "text-[#27384a]"}`}>{diagnosis.overrideCopy.body}</p>
           <ul className="mt-4 grid gap-2">
             {diagnosis.overrideCopy.actions.map((action) => (
-              <li key={action} className={`flex items-start gap-3 text-[0.82rem] leading-[1.45] ${isDark ? "text-white/74" : "text-[#27384a]"}`}>
+              <li key={action} className={`flex items-start gap-3 t-label leading-[1.45] ${isDark ? "text-white/74" : "text-[#27384a]"}`}>
                 <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[var(--color-primary)] text-white">
                   <Icon name="shield" className="h-3 w-3" strokeWidth={2.3} />
                 </span>
@@ -568,7 +572,7 @@ function OverridePanel({ diagnosis, isDark, onContinue }) {
             ))}
           </ul>
           <div className="mt-5 flex flex-col gap-3 md:flex-row">
-            <button type="button" onClick={onContinue} className="flex items-center justify-center gap-3 rounded-lg bg-[var(--color-primary)] px-5 py-3 text-[0.88rem] font-bold text-white">
+            <button type="button" onClick={onContinue} className="flex items-center justify-center gap-3 rounded-lg bg-[var(--color-primary)] px-5 py-3 t-label font-bold text-white">
               <span>I understand - continue</span>
               <ArrowIcon className="h-4 w-4" />
             </button>
@@ -582,9 +586,9 @@ function OverridePanel({ diagnosis, isDark, onContinue }) {
 function CostCard({ title, value, note, highlight, isDark }) {
   return (
     <article className={`rounded-lg border p-4 ${highlight ? "border-[var(--color-primary)] bg-[var(--color-primary-soft)]" : isDark ? "border-[#223343] bg-[rgba(14,28,41,0.84)]" : "border-[#d7dde6] bg-white"}`}>
-      <p className={`text-[0.72rem] font-bold uppercase tracking-[0.08em] ${highlight ? "text-[var(--color-primary)]" : isDark ? "text-white/62" : "text-[#607085]"}`}>{title}</p>
-      <p className={`mt-2 text-[1.1rem] font-bold leading-tight ${highlight ? "text-[#071827]" : isDark ? "text-white" : "text-[#071827]"}`}>{value}</p>
-      <p className={`mt-1 text-[0.76rem] leading-[1.35] ${highlight ? "text-[#27384a]" : isDark ? "text-white/68" : "text-[#27384a]"}`}>{note}</p>
+      <p className={`t-label font-bold uppercase tracking-[0.04em] ${highlight ? "text-[var(--color-primary)]" : isDark ? "text-white/62" : "text-[#607085]"}`}>{title}</p>
+      <p className={`mt-2 text-[18px] font-bold leading-tight ${highlight ? "text-[#071827]" : isDark ? "text-white" : "text-[#071827]"}`}>{value}</p>
+      <p className={`mt-1 t-label leading-[1.35] ${highlight ? "text-[#27384a]" : isDark ? "text-white/68" : "text-[#27384a]"}`}>{note}</p>
     </article>
   );
 }
@@ -633,14 +637,14 @@ function ResultsScreen({ diagnosis, verdict, engineOption, ctas, isDark, calcula
           <div className="min-w-0">
             <div className="flex flex-wrap items-center gap-3">
               <SeverityBadge severity={diagnosis.severity} isDark={isDark} />
-              <span className={`text-[0.76rem] font-semibold uppercase tracking-[0.08em] ${isDark ? "text-white/62" : "text-[#607085]"}`}>{diagnosis.evidenceLabel}</span>
+              <span className={`t-label font-semibold uppercase tracking-[0.04em] ${isDark ? "text-white/62" : "text-[#607085]"}`}>{diagnosis.evidenceLabel}</span>
             </div>
-            <h3 className={`mt-3 text-[1.45rem] font-bold leading-tight md:text-[2rem] ${isDark ? "text-white" : "text-[#071827]"}`}>{diagnosis.headline}</h3>
-            <p className={`mt-3 max-w-[760px] text-[0.92rem] leading-[1.55] ${isDark ? "text-white/78" : "text-[#27384a]"}`} dangerouslySetInnerHTML={{ __html: diagnosis.summary }} />
+            <h3 className={`mt-3 t-h5 ${isDark ? "text-white" : "text-[#071827]"}`}>{diagnosis.headline}</h3>
+            <p className={`mt-3 max-w-[760px] t-body leading-[1.55] ${isDark ? "text-white/78" : "text-[#27384a]"}`} dangerouslySetInnerHTML={{ __html: diagnosis.summary }} />
           </div>
           <div className={`rounded-xl border px-4 py-3 ${isDark ? severity.darkBadge : severity.badge}`}>
-            <p className="text-[0.7rem] font-bold uppercase tracking-[0.08em]">Tracked engine codes</p>
-            <p className="mt-1 text-[0.86rem] font-semibold leading-tight">{diagnosis.engineCodes.join(" / ")}</p>
+            <p className="t-label font-bold uppercase tracking-[0.04em]">Tracked engine codes</p>
+            <p className="mt-1 t-label font-semibold leading-tight">{diagnosis.engineCodes.join(" / ")}</p>
           </div>
         </div>
 
@@ -655,22 +659,22 @@ function ResultsScreen({ diagnosis, verdict, engineOption, ctas, isDark, calcula
       <section className={`rounded-xl border p-5 shadow-[0_12px_34px_rgba(10,26,43,0.06)] ${isDark ? "border-[#223343] bg-[rgba(10,21,32,0.9)]" : "border-[#d7dde6] bg-white"}`}>
         <div className="grid gap-5 lg:grid-cols-[minmax(0,1.25fr)_minmax(0,0.95fr)]">
           <div>
-            <h4 className={`text-[0.82rem] font-bold uppercase tracking-[0.08em] text-[var(--color-primary)]`}>Commonly affecting</h4>
+            <h4 className={`t-label font-bold uppercase tracking-[0.04em] text-[var(--color-primary)]`}>Commonly affecting</h4>
             <div className="mt-3 flex flex-wrap gap-2">
               {diagnosis.chassis.map((item) => (
-                <span key={`${item.code}-${item.model}`} className={`rounded-lg border px-3 py-2 text-[0.78rem] ${isDark ? "border-[#223343] bg-[rgba(14,28,41,0.84)] text-white" : "border-[#d7dde6] bg-[#fbfdff] text-[#071827]"}`}>
+                <span key={`${item.code}-${item.model}`} className={`rounded-lg border px-3 py-2 t-label ${isDark ? "border-[#223343] bg-[rgba(14,28,41,0.84)] text-white" : "border-[#d7dde6] bg-[#fbfdff] text-[#071827]"}`}>
                   <strong>{item.model}</strong> {item.code}
                   <span className={`${isDark ? "text-white/64" : "text-[#607085]"}`}> {item.years}</span>
                 </span>
               ))}
             </div>
 
-            <h4 className="mt-5 text-[0.82rem] font-bold uppercase tracking-[0.08em] text-[var(--color-primary)]">OEM references</h4>
+            <h4 className="mt-5 t-label font-bold uppercase tracking-[0.04em] text-[var(--color-primary)]">OEM references</h4>
             <div className={`mt-3 overflow-hidden rounded-lg border ${isDark ? "border-[#223343]" : "border-[#d7dde6]"}`}>
               {diagnosis.oemParts.map((part) => (
                 <div key={part.part} className={`grid grid-cols-[minmax(0,1fr)_minmax(140px,0.8fr)] gap-3 border-b px-4 py-3 last:border-b-0 ${isDark ? "border-[#223343] bg-[rgba(14,28,41,0.84)]" : "border-[#d7dde6] bg-white"}`}>
-                  <span className={`text-[0.82rem] ${isDark ? "text-white/78" : "text-[#27384a]"}`}>{part.label}</span>
-                  <span className={`text-[0.82rem] font-semibold ${isDark ? "text-white" : "text-[#071827]"}`}>{part.part}</span>
+                  <span className={`t-label ${isDark ? "text-white/78" : "text-[#27384a]"}`}>{part.label}</span>
+                  <span className={`t-label font-semibold ${isDark ? "text-white" : "text-[#071827]"}`}>{part.part}</span>
                 </div>
               ))}
             </div>
@@ -678,16 +682,16 @@ function ResultsScreen({ diagnosis, verdict, engineOption, ctas, isDark, calcula
 
           <div>
             <div className={`rounded-xl border p-4 ${isDark ? verdictInfo.darkBadge : verdictInfo.badge}`}>
-              <p className="text-[0.72rem] font-bold uppercase tracking-[0.08em]">Verdict</p>
-              <p className="mt-2 text-[1.15rem] font-bold leading-tight">{verdictInfo.title}</p>
-              <p className="mt-2 text-[0.82rem] leading-[1.45]" dangerouslySetInnerHTML={{ __html: verdictInfo.text }} />
+              <p className="t-label font-bold uppercase tracking-[0.04em]">Verdict</p>
+              <p className="mt-2 text-[18px] font-bold leading-tight">{verdictInfo.title}</p>
+              <p className="mt-2 t-label leading-[1.45]" dangerouslySetInnerHTML={{ __html: verdictInfo.text }} />
             </div>
 
             <div className={`mt-4 rounded-xl border p-4 ${isDark ? "border-[#223343] bg-[rgba(14,28,41,0.84)]" : "border-[#d7dde6] bg-[#fbfdff]"}`}>
-              <p className="text-[0.82rem] font-bold uppercase tracking-[0.08em] text-[var(--color-primary)]">Next steps</p>
+              <p className="t-label font-bold uppercase tracking-[0.04em] text-[var(--color-primary)]">Next steps</p>
               <ul className="mt-3 grid gap-2">
                 {diagnosis.nextSteps.map((step) => (
-                  <li key={step} className={`flex items-start gap-3 text-[0.8rem] leading-[1.45] ${isDark ? "text-white/76" : "text-[#27384a]"}`}>
+                  <li key={step} className={`flex items-start gap-3 t-label leading-[1.45] ${isDark ? "text-white/76" : "text-[#27384a]"}`}>
                     <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[var(--color-primary)] text-white">
                       <Icon name="shield" className="h-3 w-3" strokeWidth={2.3} />
                     </span>
@@ -700,12 +704,12 @@ function ResultsScreen({ diagnosis, verdict, engineOption, ctas, isDark, calcula
                 <button
                   type="button"
                   onClick={goToQuoteWithCalculator}
-                  className="btn-cta flex items-center justify-center gap-3 rounded-lg bg-[var(--color-primary)] px-5 py-3 text-[0.86rem] font-bold text-white"
+                  className="btn-cta flex items-center justify-center gap-3 rounded-lg bg-[var(--color-primary)] px-5 py-3 t-label font-bold text-white"
                 >
                   <span>{ctas.quote.label}</span>
                   <ArrowIcon className="h-4 w-4" />
                 </button>
-                <Link href={ctas.specialist.href} className={`flex items-center justify-center gap-3 rounded-lg border px-5 py-3 text-[0.86rem] font-bold ${isDark ? "border-[#375067] bg-[rgba(14,28,41,0.84)] text-white" : "border-[#d7dde6] bg-white text-[#071827]"}`}>
+                <Link href={ctas.specialist.href} className={`flex items-center justify-center gap-3 rounded-lg border px-5 py-3 t-label font-bold ${isDark ? "border-[#375067] bg-[rgba(14,28,41,0.84)] text-white" : "border-[#d7dde6] bg-white text-[#071827]"}`}>
                   <span>{ctas.specialist.label}</span>
                   <ArrowIcon className="h-4 w-4" />
                 </Link>
@@ -768,9 +772,9 @@ export default function HomeSec3({ data }) {
 
   const renderStepOne = (phone = false) => (
       <div>
-        <p className={`font-semibold uppercase ${phone ? "text-[0.85rem]" : "text-[1rem]"} ${isDark ? "text-[#3b82f6]" : "text-[#0b4fc0]"}`}>{data.step1.label}</p>
-        <h3 className={`mt-2 font-medium ${phone ? "text-[1.3rem]" : "text-[1.75rem]"} ${strong}`}>{data.step1.title}</h3>
-        <p className={`mt-1.5 ${phone ? "max-w-[240px] text-[0.8rem] leading-[1.5]" : "text-[0.9rem]"} ${sub}`}>{data.step1.text}</p>
+        <p className={`t-label font-semibold uppercase tracking-[0.02em] ${isDark ? "text-[#3b82f6]" : "text-[#0b4fc0]"}`}>{data.step1.label}</p>
+        <h3 className={`t-h5 mt-2 ${strong}`}>{data.step1.title}</h3>
+        <p className={`t-body mt-1.5 ${sub}`}>{data.step1.text}</p>
         <div className="mt-4">
           <SymptomTiles tiles={data.symptomTiles} selectedId={selectedTileId} onSelect={setSelectedTileId} isDark={isDark} phone={phone} />
         </div>
@@ -778,7 +782,7 @@ export default function HomeSec3({ data }) {
           type="button"
           onClick={continueFromTiles}
           aria-disabled={!selectedTileId}
-          className={`mt-6 flex items-center justify-between gap-4 rounded-[4px] bg-[#0b47a8] px-7 py-2.5 text-[0.88rem] font-medium text-white ${phone ? "w-full" : "w-[336px] max-w-full"} ${
+          className={`mt-6 flex items-center justify-between gap-4 rounded-[4px] bg-[#0b47a8] px-7 py-3 text-[15px] font-semibold text-white ${phone ? "w-full" : "w-[336px] max-w-full"} ${
             selectedTileId ? "" : "opacity-95"
           }`}
         >
@@ -801,15 +805,15 @@ export default function HomeSec3({ data }) {
 
         {stage === "question" && selectedCategory ? (
           <div>
-            <p className="text-[0.76rem] font-bold uppercase tracking-[0.08em] text-[var(--color-primary)]">{data.step1.label}</p>
-            <h3 className={`mt-2 text-[1.35rem] font-bold leading-tight md:text-[1.6rem] ${strong}`}>{selectedCategory.question}</h3>
-            <p className={`mt-2 text-[0.82rem] leading-[1.45] ${soft}`}>Choose the closest symptom cluster. We route high-risk faults into safety advice before showing cost maths.</p>
+            <p className="t-label font-bold uppercase tracking-[0.04em] text-[var(--color-primary)]">{data.step1.label}</p>
+            <h3 className={`mt-2 t-h5 ${strong}`}>{selectedCategory.question}</h3>
+            <p className={`mt-2 t-label leading-[1.45] ${soft}`}>Choose the closest symptom cluster. We route high-risk faults into safety advice before showing cost maths.</p>
             <div className="mt-5 grid gap-3">
               {selectedCategory.answers.map((answer) => (
                 <AnswerButton key={answer.label} answer={answer} isDark={isDark} onSelect={goToDiagnosis} />
               ))}
             </div>
-            <button type="button" onClick={() => setStage("entry")} className={`mt-5 text-[0.82rem] font-semibold ${sub}`}>
+            <button type="button" onClick={() => setStage("entry")} className={`mt-5 t-label font-semibold ${sub}`}>
               Back to symptom categories
             </button>
           </div>
@@ -819,17 +823,17 @@ export default function HomeSec3({ data }) {
 
         {stage === "vehicle" ? (
           <div>
-            <p className="text-[0.76rem] font-bold uppercase tracking-[0.08em] text-[var(--color-primary)]">Step 2 of 3</p>
-            <h3 className={`mt-2 text-[1.35rem] font-bold leading-tight md:text-[1.6rem] ${strong}`}>Tell us about your vehicle</h3>
+            <p className="t-label font-bold uppercase tracking-[0.04em] text-[var(--color-primary)]">Step 2 of 3</p>
+            <h3 className={`mt-2 t-h5 ${strong}`}>Tell us about your vehicle</h3>
             <div className="mt-5">
-              <p className={`text-[0.78rem] font-bold uppercase tracking-[0.08em] ${sub}`}>Vehicle age</p>
+              <p className={`t-label font-bold uppercase tracking-[0.04em] ${sub}`}>Vehicle age</p>
               <div className="mt-3 flex flex-wrap gap-2">
                 {calculator.ageOptions.map((item) => (
                   <button
                     key={item.id}
                     type="button"
                     onClick={() => setSelectedAgeId(item.id)}
-                    className={`rounded-full border px-4 py-2 text-[0.82rem] font-semibold ${
+                    className={`rounded-full border px-4 py-2 t-label font-semibold ${
                       selectedAgeId === item.id ? "border-[#0b4fc0] bg-[#0b4fc0] text-white" : isDark ? "border-[#1e3350] bg-[rgba(16,26,42,0.9)] text-white" : "border-[#d7dde6] bg-white text-[#0b1626]"
                     }`}
                   >
@@ -839,10 +843,10 @@ export default function HomeSec3({ data }) {
               </div>
             </div>
             <div className="mt-6">
-              <p className={`text-[0.78rem] font-bold uppercase tracking-[0.08em] ${sub}`}>Estimated current value</p>
+              <p className={`t-label font-bold uppercase tracking-[0.04em] ${sub}`}>Estimated current value</p>
               <div className={`mt-3 rounded-xl border px-5 py-4 ${innerCard(isDark)}`}>
-                <strong className={`block text-[2rem] leading-none ${strong}`}>{fmtCurrency(carValue)}</strong>
-                <span className={`mt-1 block text-[0.76rem] ${sub}`}>What would the car roughly sell for in its current condition?</span>
+                <strong className={`t-h4 block leading-none ${strong}`}>{fmtCurrency(carValue)}</strong>
+                <span className={`mt-1 block t-label ${sub}`}>What would the car roughly sell for in its current condition?</span>
                 <input
                   type="range"
                   min={0}
@@ -852,7 +856,7 @@ export default function HomeSec3({ data }) {
                   onChange={(event) => setCarValue(calculator.valueSteps[Number(event.target.value)])}
                   className="mt-4 w-full accent-[#0b4fc0]"
                 />
-                <div className={`mt-3 flex justify-between gap-2 text-[0.66rem] ${sub}`}>
+                <div className={`mt-3 flex justify-between gap-2 t-label ${sub}`}>
                   {calculator.valueSteps.map((step) => (
                     <span key={step}>{formatStepValue(step)}</span>
                   ))}
@@ -860,14 +864,14 @@ export default function HomeSec3({ data }) {
               </div>
             </div>
             <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:items-center">
-              <button type="button" onClick={() => setStage(selectedCategoryId ? "question" : "entry")} className={`text-[0.82rem] font-semibold ${sub}`}>
+              <button type="button" onClick={() => setStage(selectedCategoryId ? "question" : "entry")} className={`t-label font-semibold ${sub}`}>
                 Back
               </button>
               <button
                 type="button"
                 onClick={() => setStage("engine")}
                 disabled={!selectedAgeId}
-                className="flex items-center justify-center gap-3 rounded-[4px] bg-[#0b47a8] px-5 py-3 text-[0.88rem] font-medium text-white disabled:cursor-not-allowed disabled:opacity-50"
+                className="flex items-center justify-center gap-3 rounded-[4px] bg-[#0b47a8] px-5 py-3 t-label font-medium text-white disabled:cursor-not-allowed disabled:opacity-50"
               >
                 CONTINUE TO STEP 3
                 <ArrowIcon className="h-4 w-4" />
@@ -878,9 +882,9 @@ export default function HomeSec3({ data }) {
 
         {stage === "engine" ? (
           <div>
-            <p className="text-[0.76rem] font-bold uppercase tracking-[0.08em] text-[var(--color-primary)]">Step 3 of 3</p>
-            <h3 className={`mt-2 text-[1.35rem] font-bold leading-tight md:text-[1.6rem] ${strong}`}>Which replacement path are you comparing?</h3>
-            <p className={`mt-2 text-[0.82rem] leading-[1.45] ${soft}`}>This changes the replacement range and therefore the verdict. Reconditioned stays the conservative baseline.</p>
+            <p className="t-label font-bold uppercase tracking-[0.04em] text-[var(--color-primary)]">Step 3 of 3</p>
+            <h3 className={`mt-2 t-h5 ${strong}`}>Which replacement path are you comparing?</h3>
+            <p className={`mt-2 t-label leading-[1.45] ${soft}`}>This changes the replacement range and therefore the verdict. Reconditioned stays the conservative baseline.</p>
             <div className="mt-5 grid gap-3 md:grid-cols-3">
               {calculator.engineOptions.map((option) => (
                 <button
@@ -889,16 +893,16 @@ export default function HomeSec3({ data }) {
                   onClick={() => setSelectedEngine(option.id)}
                   className={`rounded-xl border p-4 text-left ${selectedEngine === option.id ? "border-[#0b4fc0] bg-[#eef3fb]" : innerCard(isDark)}`}
                 >
-                  <p className={`text-[0.92rem] font-semibold leading-tight ${selectedEngine === option.id ? "text-[#0b1626]" : strong}`}>{option.label}</p>
-                  <p className={`mt-2 text-[0.76rem] leading-[1.35] ${selectedEngine === option.id ? "text-[#3b4656]" : sub}`}>{option.subLabel}</p>
+                  <p className={`t-body font-semibold leading-tight ${selectedEngine === option.id ? "text-[#0b1626]" : strong}`}>{option.label}</p>
+                  <p className={`mt-2 t-label leading-[1.35] ${selectedEngine === option.id ? "text-[#3b4656]" : sub}`}>{option.subLabel}</p>
                 </button>
               ))}
             </div>
             <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:items-center">
-              <button type="button" onClick={() => setStage("vehicle")} className={`text-[0.82rem] font-semibold ${sub}`}>
+              <button type="button" onClick={() => setStage("vehicle")} className={`t-label font-semibold ${sub}`}>
                 Back
               </button>
-              <button type="button" onClick={() => setStage("results")} className="flex items-center justify-center gap-3 rounded-[4px] bg-[#0b47a8] px-5 py-3 text-[0.88rem] font-medium text-white">
+              <button type="button" onClick={() => setStage("results")} className="flex items-center justify-center gap-3 rounded-[4px] bg-[#0b47a8] px-5 py-3 t-label font-medium text-white">
                 SEE DIAGNOSIS AND COSTS
                 <ArrowIcon className="h-4 w-4" />
               </button>
@@ -909,8 +913,8 @@ export default function HomeSec3({ data }) {
         {stage === "results" && selectedDiagnosis && verdict ? (
           <div>
             <div className="mb-5 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
-              <h3 className={`text-[1.35rem] font-bold leading-tight md:text-[1.6rem] ${strong}`}>Diagnosis, cost range, and ownership verdict</h3>
-              <button type="button" onClick={resetFlow} className={`text-[0.82rem] font-semibold ${sub}`}>
+              <h3 className={`t-h5 ${strong}`}>Diagnosis, cost range, and ownership verdict</h3>
+              <button type="button" onClick={resetFlow} className={`t-label font-semibold ${sub}`}>
                 Start again
               </button>
             </div>
@@ -934,60 +938,59 @@ export default function HomeSec3({ data }) {
   return (
     <section id="diagnose" className={`relative overflow-hidden ${isDark ? "bg-[#05090f]" : "bg-[#f9fafc]"}`}>
       {/* ---------- Desktop / tablet ---------- */}
-      <div className="relative mx-auto hidden w-full max-w-[1600px] px-6 pb-10 pt-12 md:block lg:px-[5%]">
+      <div className="relative hidden md:block">
         <div
           aria-hidden="true"
-          className={`pointer-events-none absolute -right-6 top-0 h-[470px] w-[60%] [mask-image:linear-gradient(90deg,transparent_0%,black_32%),linear-gradient(180deg,black_70%,transparent)] [mask-composite:intersect] ${
+          className={`pointer-events-none absolute right-0 top-0 h-[470px] w-[60%] [mask-image:linear-gradient(90deg,transparent_0%,black_32%),linear-gradient(180deg,black_70%,transparent)] [mask-composite:intersect] ${
             isDark
               ? "bg-[radial-gradient(ellipse_at_62%_40%,#2a3240_0%,#11161e_45%,#05090f_80%)]"
               : "bg-[radial-gradient(ellipse_at_62%_35%,#ffffff_0%,#eceef1_45%,#dfe2e6_75%,#f9fafc_100%)]"
           }`}
         />
-        <div aria-hidden="true" className="pointer-events-none absolute right-[8.5%] top-8 h-[400px] w-[523px] max-w-[42%]">
-          <div className={`absolute inset-x-[4%] -bottom-[2%] h-[10%] rounded-[50%] blur-xl ${isDark ? "bg-black/80" : "bg-black/35"}`} />
-          <Image src={isDark ? data.images.desktop.dark : data.images.desktop.light} alt={data.images.desktop.alt} fill sizes="40vw" className="object-contain object-bottom" />
-        </div>
-        <div className="relative max-w-[640px]">
-          <h2 className={`text-[3.3rem] font-bold leading-[1.08] tracking-[-0.02em] lg:text-[4rem] [&>span]:whitespace-nowrap ${strong}`} dangerouslySetInnerHTML={{ __html: data.h2 }} />
-          <p className={`mt-5 max-w-[510px] text-[1.02rem] leading-[1.6] ${soft}`}>{data.subHeadline}</p>
-        </div>
-        <div className="relative z-10 mt-7 max-w-[950px]">
-          <TrustStrip items={data.trustStrip} isDark={isDark} />
-        </div>
+        <div className="site-container section-y relative">
+          <div aria-hidden="true" className="pointer-events-none absolute right-[var(--gutter)] top-6 h-[360px] w-[470px] max-w-[40%]">
+            <div className={`absolute inset-x-[4%] -bottom-[2%] h-[10%] rounded-[50%] blur-xl ${isDark ? "bg-black/80" : "bg-black/35"}`} />
+            <Image src={isDark ? data.images.desktop.dark : data.images.desktop.light} alt={data.images.desktop.alt} fill sizes="40vw" className="object-contain object-bottom" />
+          </div>
+          <div className="relative max-w-[620px]">
+            <h2 className={`t-h2 [&>span]:whitespace-nowrap ${strong}`} dangerouslySetInnerHTML={{ __html: data.h2 }} />
+            <p className={`t-p mt-4 max-w-[560px] ${soft}`}>{data.subHeadline}</p>
+          </div>
+          <div className="relative z-10 mt-7 max-w-[900px]">
+            <TrustStrip items={data.trustStrip} isDark={isDark} />
+          </div>
 
-        <div className="relative mt-6 grid gap-4 lg:grid-cols-[340px_minmax(0,1fr)_336px]">
-          <div className="hidden lg:block">
-            <HowItWorks data={data.howItWorks} isDark={isDark} />
-          </div>
-          <div className={`rounded-[10px] border p-5 ${isDark ? "border-[#2563eb]/60 bg-[rgba(10,18,30,0.92)]" : "border-[#c9d8f1] bg-white"}`}>
-            {stage === "entry" ? renderStepOne() : flow}
-          </div>
-          <div className="hidden lg:block">
-            <WhyTrust title={data.whyTrustTitle} items={calculator.whyTrust} isDark={isDark} />
-          </div>
-          <div className="grid gap-4 md:grid-cols-2 lg:hidden">
-            <HowItWorks data={data.howItWorks} isDark={isDark} />
-            <WhyTrust title={data.whyTrustTitle} items={calculator.whyTrust} isDark={isDark} />
+          <div className="relative mt-6 grid gap-4 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.7fr)_minmax(0,1fr)]">
+            <div className="hidden lg:block">
+              <HowItWorks data={data.howItWorks} isDark={isDark} />
+            </div>
+            <div className={`rounded-[10px] border p-5 ${isDark ? "border-[#2563eb]/60 bg-[rgba(10,18,30,0.92)]" : "border-[#c9d8f1] bg-white"}`}>
+              {stage === "entry" ? renderStepOne() : flow}
+            </div>
+            <div className="hidden lg:block">
+              <WhyTrust title={data.whyTrustTitle} items={calculator.whyTrust} isDark={isDark} />
+            </div>
+            <div className="grid gap-4 md:grid-cols-2 lg:hidden">
+              <HowItWorks data={data.howItWorks} isDark={isDark} />
+              <WhyTrust title={data.whyTrustTitle} items={calculator.whyTrust} isDark={isDark} />
+            </div>
           </div>
         </div>
       </div>
 
       {/* ---------- Phone (same layout in both themes; only colours change) ---------- */}
-      <div className="relative px-4 pb-6 pt-8 md:hidden">
-        <div aria-hidden="true" className="pointer-events-none absolute right-0 top-[18px] h-[60vw] w-[41vw] overflow-hidden [mask-image:linear-gradient(90deg,transparent_0%,black_10%)]">
-          <div className="absolute left-0 top-0 h-[60vw] w-[79vw]">
-            <Image src={data.images.phone.src} alt={data.images.phone.alt} fill sizes="70vw" className="object-contain object-left-top" />
+      <div className="relative px-4 pb-8 pt-8 md:hidden">
+        <h2 className={`t-h2 relative ${strong}`}>
+          Diagnose Your <span className="heading-accent">BMW</span> Engine Problem
+        </h2>
+        <p className={`t-body relative mt-3 ${soft}`}>{data.subHeadline}</p>
+        {/* Reference: the car sits right under the copy, on the right, bleeding off the edge. */}
+        <div aria-hidden="true" className="pointer-events-none relative -mr-4 mt-2 ml-auto h-[150px] w-[72%] overflow-hidden [mask-image:linear-gradient(90deg,transparent_0%,black_22%)]">
+          <div className="absolute inset-y-0 left-0 w-[125%]">
+            <Image src={data.images.phone.src} alt={data.images.phone.alt} fill sizes="80vw" className="object-contain object-left-bottom" />
           </div>
         </div>
-        <div className="relative flex min-h-[calc(60vw-14px)] items-center">
-          <h2 className={`max-w-[58%] text-[clamp(26px,7.4vw,34px)] font-bold leading-[1.1] tracking-[-0.02em] ${strong}`}>
-            <span className="block">Diagnose Your</span>
-            <span className="heading-accent block">BMW</span>
-            <span className="block">Engine Problem</span>
-          </h2>
-        </div>
-        <p className={`relative mt-4 text-[15px] leading-[1.6] ${soft}`}>{data.subHeadline}</p>
-        <div className="relative z-10 mt-6">
+        <div className="relative z-10 -mt-4">
           <TrustStrip items={data.trustStrip} isDark={isDark} phone />
         </div>
         <div className="relative mt-4">

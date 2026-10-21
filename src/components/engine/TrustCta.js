@@ -94,7 +94,7 @@ export default function TrustCta({ data, engineLabel = "BMW Engine" }) {
                 <TrustIcon index={index} isDark={isDark} />
                 <div className="min-w-0">
                   <p className="text-[15px] font-bold text-[var(--color-text)]">{point.title}</p>
-                  <p className="mt-1.5 text-[13px] leading-[1.45] text-[var(--color-text-muted)]">{point.text}</p>
+                  <p className="lg:text-[15px] mt-1.5 text-[13px] leading-[1.45] text-[var(--color-text-muted)]">{point.text}</p>
                 </div>
               </div>
             </article>
@@ -111,13 +111,13 @@ export default function TrustCta({ data, engineLabel = "BMW Engine" }) {
           <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-[var(--color-surface)] shadow-[0_4px_12px_var(--color-shadow)]">
             <HomeIcon name="engine-finders" isDark={isDark} className="h-9 w-9 md:h-7 md:w-7 object-contain" />
           </span>
-          <p className="min-w-0 flex-1 text-[13px] leading-[1.45] text-[var(--color-text)]">
+          <p className="lg:text-[15px] min-w-0 flex-1 text-[13px] leading-[1.45] text-[var(--color-text)]">
             {highlightConfidence(cleanText(data.finalCta || ""))}
           </p>
           {data.ctaButton?.href ? (
             <Link
               href="/quote"
-              className="btn-cta inline-flex min-h-11 shrink-0 items-center justify-center rounded-lg bg-[var(--color-primary)] px-5 text-[13px] font-bold text-white"
+              className="lg:text-[15px] btn-cta inline-flex min-h-11 shrink-0 items-center justify-center rounded-lg bg-[var(--color-primary)] px-5 text-[13px] font-bold text-white"
             >
               {ctaLabel || `Compare BMW ${engineCode} Engine Prices Now`} →
             </Link>
@@ -132,8 +132,8 @@ export default function TrustCta({ data, engineLabel = "BMW Engine" }) {
             >
               <TrustIcon index={index} isDark={isDark} />
               <div className="min-w-0">
-                <p className="text-[14px] font-bold text-[var(--color-text)]">{point.title}</p>
-                <p className="mt-1 text-[12px] leading-[1.4] text-[var(--color-text-muted)]">{point.text}</p>
+                <p className="lg:text-[15px] text-[14px] font-bold text-[var(--color-text)]">{point.title}</p>
+                <p className="lg:text-[15px] mt-1 text-[12px] leading-[1.4] text-[var(--color-text-muted)]">{point.text}</p>
               </div>
             </article>
           ))}
@@ -151,7 +151,7 @@ export default function TrustCta({ data, engineLabel = "BMW Engine" }) {
             <p className="mt-3 text-[20px] font-bold leading-[1.25] text-[var(--color-text)]">
               Find the best BMW {engineCode} engine replacement UK drivers rely on.
             </p>
-            <p className="mt-2 text-[12px] leading-[1.4] text-[var(--color-text-muted)]">
+            <p className="lg:text-[15px] mt-2 text-[12px] leading-[1.4] text-[var(--color-text-muted)]">
               {highlightConfidence(
                 cleanText(data.finalCta || "")
                   
@@ -165,7 +165,7 @@ export default function TrustCta({ data, engineLabel = "BMW Engine" }) {
             {data.ctaButton?.href ? (
               <Link
                 href="/quote"
-                className="btn-cta mt-3 inline-flex min-h-11 w-full items-center justify-center gap-2 rounded-lg bg-[var(--color-primary)] px-4 text-[13px] font-bold text-white"
+                className="lg:text-[15px] btn-cta mt-3 inline-flex min-h-11 w-full items-center justify-center gap-2 rounded-lg bg-[var(--color-primary)] px-4 text-[13px] font-bold text-white"
               >
                 <span>{ctaLabel || `Compare BMW ${engineCode} Engine Prices Now`}</span>
                 <span aria-hidden="true">→</span>

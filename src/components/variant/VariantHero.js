@@ -198,7 +198,7 @@ export default function VariantHero({ data }) {
                 <span className="flex h-12 w-12 shrink-0 items-center justify-center md:h-14 md:w-14">
                   <HomeIcon name={icon} isDark={isDark} className="h-12 w-12 object-contain md:h-14 md:w-14" />
                 </span>
-                <span className={`text-[0.88rem] leading-[1.3] ${badgeTextClass}`}>{label}</span>
+                <span className={`lg:text-[15px] text-[0.88rem] leading-[1.3] ${badgeTextClass}`}>{label}</span>
               </div>
             </div>
           );
@@ -222,7 +222,7 @@ export default function VariantHero({ data }) {
               <span className="flex h-12 w-12 shrink-0 items-center justify-center">
                 <HomeIcon name={icon} isDark={isDark} className="h-12 w-12 md:h-12 md:w-12 object-contain" />
               </span>
-              <span className={`text-[0.58rem] leading-tight ${badgeTextClass}`}>{label}</span>
+              <span className={`lg:text-[15px] text-[12px] leading-tight ${badgeTextClass}`}>{label}</span>
             </div>
           );
         })}
@@ -235,7 +235,7 @@ export default function VariantHero({ data }) {
   const priceLinkClass = "[&_a]:text-[var(--color-primary)] [&_a]:underline [&_a]:underline-offset-2";
 
   const priceRow = data.priceAnchor ? (
-    <div className="flex flex-wrap items-center gap-2 text-[0.74rem] md:text-[0.92rem]">
+    <div className="lg:text-[15px] flex flex-wrap items-center gap-2 text-[12px] md:text-[0.92rem]">
       <GenIcon name="tag" className="h-8 w-8 shrink-0 md:h-7 md:w-7" />
       <span className={`font-semibold ${headingClass} ${priceLinkClass}`} dangerouslySetInnerHTML={{ __html: price.headline }} />
       {price.note ? (
@@ -255,7 +255,7 @@ export default function VariantHero({ data }) {
       className="flex w-full flex-col gap-1.5 md:flex-row md:items-center md:gap-3"
     >
       <div className="flex w-full items-center gap-1.5 md:flex-1 md:gap-3">
-        <span className={`flex shrink-0 items-center gap-1.5 rounded-md border ${cardBorderClass} ${innerBgClass} px-2.5 py-2 text-[0.8rem] font-semibold md:py-3 md:text-[0.92rem] ${headingClass}`}>
+        <span className={`lg:text-[15px] flex shrink-0 items-center gap-1.5 rounded-md border ${cardBorderClass} ${innerBgClass} px-2.5 py-2 text-[0.8rem] font-semibold md:py-3 md:text-[0.92rem] ${headingClass}`}>
           <UkFlagIcon />
           GB
         </span>
@@ -266,7 +266,7 @@ export default function VariantHero({ data }) {
           onChange={(event) => setRegNumber(event.target.value.toUpperCase())}
           placeholder={data.registrationInput.placeholder}
           autoComplete="off"
-          className={`min-w-0 flex-1 rounded-md border ${cardBorderClass} ${innerBgClass} px-2.5 py-2 text-[0.8rem] uppercase focus:outline-none md:py-3 md:text-[0.92rem] ${headingClass} ${isDark ? "placeholder:text-white/50" : "placeholder:text-[var(--color-text-soft)]"}`}
+          className={`lg:text-[15px] min-w-0 flex-1 rounded-md border ${cardBorderClass} ${innerBgClass} px-2.5 py-2 text-[0.8rem] uppercase focus:outline-none md:py-3 md:text-[0.92rem] ${headingClass} ${isDark ? "placeholder:text-white/50" : "placeholder:text-[var(--color-text-soft)]"}`}
         />
       </div>
       {data.registrationInput.cta ? (
@@ -288,11 +288,11 @@ export default function VariantHero({ data }) {
       <GenIcon name="tag" className="h-11 w-11 md:h-9 md:w-9 shrink-0" />
       <div className="flex min-w-0 flex-col gap-0.5">
         <span
-          className={`text-[0.74rem] font-semibold ${headingClass} ${priceLinkClass}`}
+          className={`lg:text-[15px] text-[12px] font-semibold ${headingClass} ${priceLinkClass}`}
           dangerouslySetInnerHTML={{ __html: price.headline }}
         />
         {price.note ? (
-          <span className={`text-[0.7rem] ${bodyTextClass} ${priceLinkClass}`} dangerouslySetInnerHTML={{ __html: price.note }} />
+          <span className={`lg:text-[15px] text-[12px] ${bodyTextClass} ${priceLinkClass}`} dangerouslySetInnerHTML={{ __html: price.note }} />
         ) : null}
       </div>
     </div>
@@ -328,7 +328,7 @@ export default function VariantHero({ data }) {
 
         <div className="relative mx-auto flex w-full max-w-8xl flex-col px-4 pb-4 pt-2 md:px-8 md:pb-6 md:pt-5 xl:min-h-[640px] xl:justify-center xl:py-8">
           <div className="flex w-full max-w-[640px] flex-col gap-1.5 md:gap-2">
-            <span className={`inline-flex w-fit max-w-full flex-wrap items-center gap-x-2 gap-y-1 rounded-md border px-3 py-2 text-[0.82rem] leading-[1.35] md:px-2.5 md:py-1.5 md:text-[0.78rem] ${tagPillClass}`}>
+            <span className={`lg:text-[15px] inline-flex w-fit max-w-full flex-wrap items-center gap-x-2 gap-y-1 rounded-md border px-3 py-2 text-[0.82rem] leading-[1.35] md:px-2.5 md:py-1.5 md:text-[13px] ${tagPillClass}`}>
               <GenIcon name="car" className="h-3.5 w-3.5 shrink-0 text-[var(--color-primary)]" />
               <strong className="font-semibold text-[var(--color-primary)]" dangerouslySetInnerHTML={{ __html: pill.model }} />
               {pill.body ? (
@@ -345,14 +345,14 @@ export default function VariantHero({ data }) {
               ) : null}
             </span>
 
-            <h1 className={`text-[32px] font-bold leading-[0.95] tracking-normal md:text-[2.6rem] md:leading-[1.08] ${headingClass}`}>
+            <h1 className={`t-h1 ${headingClass}`}>
               <HeroHeadline h1={data.h1} />
             </h1>
 
             <MStripe />
 
             <p
-              className={`max-w-full text-[0.88rem] leading-[1.42] md:max-w-[560px] md:text-[0.92rem] md:leading-[1.35] ${isDark ? "text-white/85" : "text-[var(--color-text)]"} ${heroDescriptionShadow}`}
+              className={`t-p max-w-full md:max-w-[560px] ${isDark ? "text-white/85" : "text-[var(--color-text)]"} ${heroDescriptionShadow}`}
               dangerouslySetInnerHTML={{ __html: data.subHeadline }}
             />
           </div>
@@ -376,7 +376,7 @@ export default function VariantHero({ data }) {
             {/* Bottom micro-feature ticker: compact card in the mobile stack,
                 matching the other hero cards; desktop keeps the full-bleed strip below. */}
             {tickerItems.length > 0 ? (
-              <div className={`mt-1.5 overflow-hidden rounded-md border ${cardBorderClass} ${isDark ? "bg-black/70" : "bg-white/85"} py-2.5 text-[0.65rem] ${bodyTextClass} md:hidden`}>
+              <div className={`lg:text-[15px] mt-1.5 overflow-hidden rounded-md border ${cardBorderClass} ${isDark ? "bg-black/70" : "bg-white/85"} py-2.5 text-[12px] ${bodyTextClass} md:hidden`}>
                 <TickerTrack items={tickerItems} isDark={isDark} dotSizeClass="h-1.5 w-1.5" />
               </div>
             ) : null}
@@ -386,7 +386,7 @@ export default function VariantHero({ data }) {
 
       {tickerItems.length > 0 ? (
         <div className="hidden w-full overflow-hidden border-b border-[var(--color-border)] bg-[var(--color-surface)] py-3 md:block">
-          <div className="text-[0.72rem] text-[var(--color-text-muted)] md:text-[0.8rem]">
+          <div className="lg:text-[15px] text-[12px] text-[var(--color-text-muted)] md:text-[13px]">
             <TickerTrack items={tickerItems} isDark={isDark} />
           </div>
         </div>

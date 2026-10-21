@@ -15,17 +15,17 @@ function FAQItem({ item, isOpen, onToggle, isDark }) {
         aria-expanded={isOpen}
         className="flex w-full items-center gap-4 px-5 py-4 text-left"
       >
-        <span className={`flex h-8 w-8 shrink-0 items-center justify-center rounded-md text-[0.85rem] font-bold ${indexBadgeClass(isDark)}`}>
+        <span className={`lg:text-[15px] flex h-8 w-8 shrink-0 items-center justify-center rounded-md text-[0.85rem] font-bold ${indexBadgeClass(isDark)}`}>
           {item.id}
         </span>
-        <span className="flex-1 text-[0.92rem] font-semibold leading-snug text-[var(--color-text)]" dangerouslySetInnerHTML={{ __html: item.question }} />
+        <span className="lg:text-[15px] flex-1 text-[0.92rem] font-semibold leading-snug text-[var(--color-text)]" dangerouslySetInnerHTML={{ __html: item.question }} />
         <GenIcon
           name="chevronDown"
           className={`h-4 w-4 shrink-0 transition-transform ${isDark ? "text-white/55" : "text-[#617084]"} ${isOpen ? "rotate-180" : ""}`}
         />
       </button>
       {isOpen ? (
-        <p className="px-5 pb-4 pl-[60px] text-[0.85rem] leading-[1.55] text-[var(--color-text-muted)]" dangerouslySetInnerHTML={{ __html: item.answer }} />
+        <p className="lg:text-[15px] px-5 pb-4 pl-[60px] text-[0.85rem] leading-[1.55] text-[var(--color-text-muted)]" dangerouslySetInnerHTML={{ __html: item.answer }} />
       ) : null}
     </div>
   );
@@ -75,7 +75,7 @@ export default function FAQAccordion({ data }) {
         </div>
 
         {data.disclaimer ? (
-          <p className="mt-4 text-[0.74rem] leading-[1.5] text-[var(--color-text-soft)] md:mt-5" dangerouslySetInnerHTML={{ __html: data.disclaimer }} />
+          <p className="lg:text-[15px] mt-4 text-[12px] leading-[1.5] text-[var(--color-text-soft)] md:mt-5" dangerouslySetInnerHTML={{ __html: data.disclaimer }} />
         ) : null}
       </div>
     </section>

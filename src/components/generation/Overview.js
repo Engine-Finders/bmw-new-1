@@ -108,7 +108,7 @@ export default function Overview({ data }) {
 
   const keyFactsBlockMobile = keyFacts.length > 0 ? (
     <div className="glass-panel mt-4 rounded-lg p-3">
-      <p className="text-[0.72rem] font-semibold uppercase tracking-wide text-[var(--color-primary)]">
+      <p className="lg:text-[15px] text-[12px] font-semibold uppercase tracking-wide text-[var(--color-primary)]">
         Key Facts
       </p>
       <div className="mt-2 flex flex-col">
@@ -143,7 +143,7 @@ export default function Overview({ data }) {
 
   const keyFactsBlockDesktop = keyFacts.length > 0 ? (
     <div className="glass-panel mt-4 rounded-lg p-3">
-      <p className="text-[0.72rem] font-semibold uppercase tracking-wide text-[var(--color-primary)]">
+      <p className="lg:text-[15px] text-[12px] font-semibold uppercase tracking-wide text-[var(--color-primary)]">
         Key Facts
       </p>
       <div className="mt-2 grid grid-cols-4">
@@ -165,10 +165,10 @@ export default function Overview({ data }) {
         <HomeIcon name="insight" isDark={!isDark} className="h-10 w-10 md:h-8 md:w-8 object-contain" />
       </span>
       <div className="min-w-0 flex-1">
-        <p className="text-[0.72rem] font-semibold uppercase tracking-wide text-[var(--color-primary)]">
+        <p className="lg:text-[15px] text-[12px] font-semibold uppercase tracking-wide text-[var(--color-primary)]">
           Market Intelligence
         </p>
-        <p className={`mt-1 text-[0.8rem] leading-[1.4] ${marketLineClass}`}>
+        <p className={`lg:text-[15px] mt-1 text-[0.8rem] leading-[1.4] ${marketLineClass}`}>
           <HighlightedLine text={data.marketIntelligenceLine} />
         </p>
       </div>
@@ -181,10 +181,10 @@ export default function Overview({ data }) {
         <HomeIcon name="insight" isDark={!isDark} className="h-9 w-9 md:h-7 md:w-7 object-contain" />
       </span>
       <div className="min-w-0 flex-1">
-        <p className="text-[0.72rem] font-semibold uppercase tracking-wide text-[var(--color-primary)]">
+        <p className="lg:text-[15px] text-[12px] font-semibold uppercase tracking-wide text-[var(--color-primary)]">
           Market Intelligence
         </p>
-        <p className={`mt-1 text-[0.8rem] leading-[1.4] ${marketLineClass}`}>
+        <p className={`lg:text-[15px] mt-1 text-[0.8rem] leading-[1.4] ${marketLineClass}`}>
           <HighlightedLine text={data.marketIntelligenceLine} />
         </p>
       </div>
@@ -213,12 +213,12 @@ export default function Overview({ data }) {
           />
           <div className="absolute inset-x-0 bottom-0 z-10 px-4 pb-4 pt-16 text-left">
             <p
-              className={`text-[0.72rem] font-semibold uppercase tracking-wide text-[var(--color-primary)] ${mobileHeadingShadow}`}
+              className={`lg:text-[15px] text-[12px] font-semibold uppercase tracking-wide text-[var(--color-primary)] ${mobileHeadingShadow}`}
             >
               Overview
             </p>
             <h2
-              className={`mt-1.5 text-left text-[2.15rem] font-bold leading-[1.1] tracking-normal ${isDark ? "text-white" : "text-[var(--color-text)]"} ${mobileHeadingShadow}`}
+              className={`t-h2 mt-1.5 text-left ${isDark ? "text-white" : "text-[var(--color-text)]"} ${mobileHeadingShadow}`}
               dangerouslySetInnerHTML={{ __html: data.h2 }}
             />
             <div className="mt-2.5">
@@ -229,7 +229,7 @@ export default function Overview({ data }) {
 
         <div className="px-4 pb-5 pt-4 md:px-8">
           {introParts.length > 0 ? (
-            <div className={`mt-4 flex flex-col gap-3 text-[0.9rem] leading-[1.5] ${bodyTextClass}`}>
+            <div className={`lg:text-[15px] mt-4 flex flex-col gap-3 text-[0.9rem] leading-[1.5] ${bodyTextClass}`}>
               {introParts.map((para, i) => (
                 <p key={i} dangerouslySetInnerHTML={{ __html: para }} />
               ))}
@@ -271,7 +271,7 @@ export default function Overview({ data }) {
 
             <div className="flex flex-col pl-8">
               <h2
-                className="text-[3rem] font-bold leading-[1.1] tracking-normal"
+                className="t-h2"
                 dangerouslySetInnerHTML={{ __html: data.h2 }}
               />
 

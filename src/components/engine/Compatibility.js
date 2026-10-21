@@ -122,8 +122,8 @@ function ExclusiveBadge({ isDark }) {
         <ShieldIcon isDark={isDark} className="h-4 w-4" />
       </span>
       <div className="min-w-0">
-        <p className="text-[10px] font-bold uppercase tracking-[0.04em] text-[var(--color-primary)]">BMW Exclusive Engine</p>
-        <p className="mt-0.5 text-[10px] leading-[1.35] text-[var(--color-text-muted)]">
+        <p className="lg:text-[15px] text-[12px] font-bold uppercase tracking-[0.04em] text-[var(--color-primary)]">BMW Exclusive Engine</p>
+        <p className="lg:text-[15px] mt-0.5 text-[12px] leading-[1.35] text-[var(--color-text-muted)]">
           This is an exclusive BMW engine. No cross-platform sharing.
         </p>
       </div>
@@ -136,15 +136,15 @@ function ProductionTimeline({ start, end, span, isDark }) {
 
   return (
     <div className="mt-4 flex items-center gap-3 md:mt-5">
-      <span className="text-[13px] font-semibold text-[var(--color-primary)] md:text-[14px]">{start}</span>
+      <span className="lg:text-[15px] text-[13px] font-semibold text-[var(--color-primary)] md:text-[14px]">{start}</span>
       <div className="relative h-px flex-1 bg-[var(--color-primary)]">
         <span className="absolute left-0 top-1/2 h-2.5 w-2.5 -translate-y-1/2 rounded-full bg-[var(--color-primary)]" />
         <span className="absolute right-0 top-1/2 h-2.5 w-2.5 -translate-y-1/2 rounded-full bg-[var(--color-primary)]" />
-        <span className={`absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 whitespace-nowrap rounded-full px-3 py-1 text-[10px] font-bold uppercase tracking-[0.04em] text-white md:text-[11px] ${isDark ? "bg-[var(--color-chrome)]" : "bg-[var(--color-primary)]"}`}>
+        <span className={`lg:text-[15px] absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 whitespace-nowrap rounded-full px-3 py-1 text-[12px] font-bold uppercase tracking-[0.04em] text-white md:text-[13px] ${isDark ? "bg-[var(--color-chrome)]" : "bg-[var(--color-primary)]"}`}>
           {span} Years of Production
         </span>
       </div>
-      <span className="text-[13px] font-semibold text-[var(--color-primary)] md:text-[14px]">{end}</span>
+      <span className="lg:text-[15px] text-[13px] font-semibold text-[var(--color-primary)] md:text-[14px]">{end}</span>
     </div>
   );
 }
@@ -158,7 +158,7 @@ function DesktopModelCard({ item, isDark }) {
         <div className="min-w-0 flex-1">
           <p className="truncate text-[20px] font-bold leading-none text-[var(--color-primary)] md:text-[22px]">{series.big}</p>
           {series.label ? (
-            <p className="mt-0.5 truncate text-[10px] font-semibold uppercase tracking-[0.06em] text-[var(--color-text-soft)]">{series.label}</p>
+            <p className="lg:text-[15px] mt-0.5 truncate text-[12px] font-semibold uppercase tracking-[0.06em] text-[var(--color-text-soft)]">{series.label}</p>
           ) : null}
         </div>
         <div className="relative h-11 w-[84px] shrink-0 overflow-hidden rounded-md">
@@ -168,16 +168,16 @@ function DesktopModelCard({ item, isDark }) {
       </div>
 
       <div className="mt-2 min-w-0">
-        <span className="inline-flex max-w-full rounded-full bg-[var(--color-page-soft)] px-2 py-0.5 text-[10px] font-semibold text-[var(--color-text)]">
+        <span className="lg:text-[15px] inline-flex max-w-full rounded-full bg-[var(--color-page-soft)] px-2 py-0.5 text-[12px] font-semibold text-[var(--color-text)]">
           <span className="truncate">{item.generationLabel}</span>
         </span>
       </div>
 
-      <p className="mt-1.5 line-clamp-2 min-h-[28px] text-[11px] leading-[1.3] text-[var(--color-text-muted)]">{item.variantLabel}</p>
+      <p className="lg:text-[15px] mt-1.5 line-clamp-2 min-h-[28px] text-[12px] leading-[1.3] text-[var(--color-text-muted)]">{item.variantLabel}</p>
 
       <div className="mt-auto flex items-center justify-between gap-2 border-t border-[var(--color-border)] pt-1.5">
-        <span className="truncate text-[10px] text-[var(--color-text-soft)]">{item.yearLabel}</span>
-        <span className="shrink-0 text-[10px] font-semibold uppercase tracking-[0.04em] text-[var(--color-primary)]">
+        <span className="lg:text-[15px] truncate text-[12px] text-[var(--color-text-soft)]">{item.yearLabel}</span>
+        <span className="lg:text-[15px] shrink-0 text-[12px] font-semibold uppercase tracking-[0.04em] text-[var(--color-primary)]">
           {item.variantCount} Variants →
         </span>
       </div>
@@ -194,7 +194,7 @@ function MobileModelRow({ row, isDark }) {
         <div className="w-[72px] shrink-0">
           <p className="truncate text-[15px] font-bold leading-none text-[var(--color-primary)]">{series.big}</p>
           {series.label ? (
-            <p className="mt-0.5 truncate text-[8px] font-semibold uppercase leading-tight tracking-[0.04em] text-[var(--color-text-soft)]">
+            <p className="lg:text-[15px] mt-0.5 truncate text-[12px] font-semibold uppercase leading-tight tracking-[0.04em] text-[var(--color-text-soft)]">
               {series.label}
             </p>
           ) : null}
@@ -206,14 +206,14 @@ function MobileModelRow({ row, isDark }) {
         <div className="min-w-0 flex-1">
           <div className="grid gap-2">
             <div className="min-w-0">
-              <p className="text-[9px] uppercase tracking-[0.04em] text-[var(--color-text-soft)]">Generation</p>
-              <span className="mt-0.5 inline-flex max-w-full rounded-full bg-[var(--color-page-soft)] px-2 py-0.5 text-[10px] font-semibold text-[var(--color-text)]">
+              <p className="lg:text-[15px] text-[12px] uppercase tracking-[0.04em] text-[var(--color-text-soft)]">Generation</p>
+              <span className="lg:text-[15px] mt-0.5 inline-flex max-w-full rounded-full bg-[var(--color-page-soft)] px-2 py-0.5 text-[12px] font-semibold text-[var(--color-text)]">
                 <span className="truncate">{cleanText(row.generation).replace(/\s*\/\s*/g, "/")}</span>
               </span>
             </div>
             <div className="min-w-0">
-              <p className="text-[9px] uppercase tracking-[0.04em] text-[var(--color-text-soft)]">Variant/Badge</p>
-              <p className="mt-0.5 line-clamp-2 text-[11px] leading-[1.3] text-[var(--color-text)]">{cleanText(row.variantBadge)}</p>
+              <p className="lg:text-[15px] text-[12px] uppercase tracking-[0.04em] text-[var(--color-text-soft)]">Variant/Badge</p>
+              <p className="lg:text-[15px] mt-0.5 line-clamp-2 text-[12px] leading-[1.3] text-[var(--color-text)]">{cleanText(row.variantBadge)}</p>
             </div>
           </div>
         </div>
@@ -221,8 +221,8 @@ function MobileModelRow({ row, isDark }) {
 
       <div className="mt-2 flex items-center justify-between gap-2 border-t border-[var(--color-border)] pt-2">
         <div className="min-w-0">
-          <p className="text-[9px] uppercase tracking-[0.04em] text-[var(--color-text-soft)]">Years</p>
-          <p className="mt-0.5 truncate text-[12px] font-semibold text-[var(--color-primary)]">{stripTags(row.years)}</p>
+          <p className="lg:text-[15px] text-[12px] uppercase tracking-[0.04em] text-[var(--color-text-soft)]">Years</p>
+          <p className="lg:text-[15px] mt-0.5 truncate text-[12px] font-semibold text-[var(--color-primary)]">{stripTags(row.years)}</p>
         </div>
         <span aria-hidden="true" className="shrink-0 text-[16px] font-bold text-[var(--color-primary)]">›</span>
       </div>
@@ -237,8 +237,8 @@ function VerifiedStrip({ isDark }) {
         <HomeIcon name="genuine-failure-data" isDark={isDark} className="h-7 w-7 md:h-5 md:w-5 object-contain" />
       </span>
       <div className="min-w-0">
-        <p className="text-[12px] font-bold uppercase tracking-[0.04em] text-[var(--color-primary)]">Compatibility Verified</p>
-        <p className="mt-0.5 text-[12px] leading-[1.4] text-[var(--color-text-muted)]">
+        <p className="lg:text-[15px] text-[12px] font-bold uppercase tracking-[0.04em] text-[var(--color-primary)]">Compatibility Verified</p>
+        <p className="lg:text-[15px] mt-0.5 text-[12px] leading-[1.4] text-[var(--color-text-muted)]">
           All compatibility data verified from BMW parts catalogues and specialist databases.{" "}
           <span className="font-semibold text-[var(--color-primary)]">[BMW-VERIFIED]</span>
         </p>
@@ -322,11 +322,11 @@ export default function Compatibility({
               <span className="flex h-7 w-7 items-center justify-center rounded-full border border-[var(--color-primary)] text-[16px] font-bold text-[var(--color-primary)]">
                 +
               </span>
-              <p className="mt-2 text-[11px] font-bold uppercase tracking-[0.04em] text-[var(--color-primary)]">Other BMW Models</p>
-              <p className="mt-1 text-[11px] leading-[1.35] text-[var(--color-text-muted)]">
+              <p className="lg:text-[15px] mt-2 text-[12px] font-bold uppercase tracking-[0.04em] text-[var(--color-primary)]">Other BMW Models</p>
+              <p className="lg:text-[15px] mt-1 text-[12px] leading-[1.35] text-[var(--color-text-muted)]">
                 {engineCode} also appears in limited variants and markets.
               </p>
-              <p className="mt-2 text-[11px] font-semibold text-[var(--color-primary)]">View full details →</p>
+              <p className="lg:text-[15px] mt-2 text-[12px] font-semibold text-[var(--color-primary)]">View full details →</p>
             </article>
           </div>
 
@@ -346,12 +346,12 @@ export default function Compatibility({
               +
             </span>
             <div className="min-w-0 flex-1">
-              <p className="text-[12px] font-bold uppercase tracking-[0.04em] text-[var(--color-primary)]">Other BMW Models</p>
-              <p className="mt-0.5 text-[11px] leading-[1.35] text-[var(--color-text-muted)]">
+              <p className="lg:text-[15px] text-[12px] font-bold uppercase tracking-[0.04em] text-[var(--color-primary)]">Other BMW Models</p>
+              <p className="lg:text-[15px] mt-0.5 text-[12px] leading-[1.35] text-[var(--color-text-muted)]">
                 {engineCode} also appears in limited variants and markets.
               </p>
             </div>
-            <span className="shrink-0 text-[11px] font-semibold text-[var(--color-primary)]">View full details ›</span>
+            <span className="lg:text-[15px] shrink-0 text-[12px] font-semibold text-[var(--color-primary)]">View full details ›</span>
           </article>
 
           <VerifiedStrip isDark={isDark} />
@@ -360,7 +360,7 @@ export default function Compatibility({
             <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full border border-[var(--color-primary)] bg-[var(--color-primary-soft)]">
               <ShieldIcon isDark={isDark} className="h-4 w-4" />
             </span>
-            <p className="text-[11px] text-[var(--color-text-soft)]">{exclusiveNote}</p>
+            <p className="lg:text-[15px] text-[12px] text-[var(--color-text-soft)]">{exclusiveNote}</p>
           </div>
         </div>
       </div>

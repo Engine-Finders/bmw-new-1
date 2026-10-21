@@ -542,7 +542,7 @@
 
   .copy {
     margin: 8px 0 0;
-    font-size: 13px;
+    font-size: 14px;
     line-height: 1.55;
   }
 
@@ -570,13 +570,13 @@
 
   .trustItem strong {
     margin-top: 6px;
-    font-size: 11.5px;
+    font-size: 13px;
     line-height: 1.35;
   }
 
   .trustItem span {
     margin-top: 2px;
-    font-size: 11px;
+    font-size: 13px;
     line-height: 1.35;
   }
 
@@ -596,7 +596,7 @@
 
   .tab strong,
   .tab span {
-    font-size: 12.5px;
+    font-size: 13px;
     line-height: 1.4;
     white-space: nowrap;
   }
@@ -612,12 +612,12 @@
 
   .pTitle {
     margin-left: 2px;
-    font-size: 15px;
+    font-size: 16px;
     line-height: 1.4;
   }
 
   .pTitle span {
-    font-size: 13px;
+    font-size: 14px;
   }
 
   .pCar {
@@ -636,7 +636,7 @@
   .pTable .tr:nth-child(6) {
     height: auto;
     min-height: 0;
-    font-size: 10px;
+    font-size: 13px;
     line-height: 1.4;
   }
 
@@ -650,7 +650,7 @@
 
   .pTable .thead {
     height: auto;
-    font-size: 10px;
+    font-size: 13px;
   }
 
   .pNote {
@@ -658,7 +658,7 @@
     height: auto;
     margin-top: 8px;
     padding: 8px 10px;
-    font-size: 11.5px;
+    font-size: 13px;
     line-height: 1.4;
   }
 
@@ -684,13 +684,13 @@
   }
 
   .noteTitle {
-    font-size: 14.5px;
+    font-size: 15px;
     line-height: 1.4;
   }
 
   .noteList {
     margin-top: 4px;
-    font-size: 12px;
+    font-size: 13px;
     line-height: 1.5;
   }
 
@@ -712,13 +712,13 @@
   }
 
   .ruleTitle {
-    font-size: 14px;
+    font-size: 15px;
     line-height: 1.4;
   }
 
   .ruleText {
     margin-top: 4px;
-    font-size: 12.5px;
+    font-size: 13px;
     line-height: 1.5;
   }
 
@@ -730,7 +730,7 @@
   }
 
   .footer {
-    font-size: 11px;
+    font-size: 13px;
     line-height: 1.6;
   }
 
@@ -743,7 +743,7 @@
 
 @media (min-width: 1024px) {
   .panel {
-    --u: calc(100cqw / 1536);
+    --u: calc(100cqw / 1411);
     padding: calc(37 * var(--u)) calc(79 * var(--u)) calc(12 * var(--u)) calc(46 * var(--u));
   }
 
@@ -761,7 +761,13 @@
   }
 
   .top {
-    min-height: calc(131 * var(--u));
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 16px 24px;
+    min-height: 0;
+    margin-bottom: 18px;
   }
 
   .head {
@@ -770,25 +776,25 @@
 
   .title {
     margin: 0;
-    font-size: calc(30.2 * var(--u));
-    line-height: calc(37 * var(--u));
+    font-size: var(--fs-h2);
+    line-height: 1.23;
     letter-spacing: -0.01em;
   }
 
   .copy {
     margin: calc(9 * var(--u)) 0 0;
-    font-size: calc(14.1 * var(--u));
-    line-height: calc(20 * var(--u));
+    font-size: var(--fs-label);
+    line-height: 1.42;
   }
 
   .trust {
-    position: absolute;
-    top: calc(-17 * var(--u));
-    right: 0;
-    width: calc(576 * var(--u));
-    height: calc(118 * var(--u));
+    position: static;
+    flex-shrink: 0;
+    width: auto;
+    min-width: 520px;
+    height: auto;
     margin: 0;
-    padding: calc(16 * var(--u)) 0 0;
+    padding: 14px 0;
     border-radius: calc(10 * var(--u));
   }
 
@@ -804,14 +810,14 @@
 
   .trustItem strong {
     margin-top: calc(10 * var(--u));
-    font-size: calc(11.3 * var(--u));
-    line-height: calc(16 * var(--u));
+    font-size: var(--fs-label);
+    line-height: 1.42;
   }
 
   .trustItem span {
     margin-top: calc(3 * var(--u));
-    font-size: calc(11 * var(--u));
-    line-height: calc(16 * var(--u));
+    font-size: var(--fs-label);
+    line-height: 1.45;
   }
 
   /* ---------- generation rows ---------- */
@@ -827,11 +833,9 @@
     gap: 0;
   }
 
-  .gen:nth-child(1) { height: calc(158 * var(--u)); }
-  .gen:nth-child(2) { height: calc(144 * var(--u)); }
-  .gen:nth-child(3) { height: calc(133 * var(--u)); }
-  .gen:nth-child(4) { height: calc(130 * var(--u)); }
-  .gen:nth-child(5) { height: calc(123 * var(--u)); }
+  .gen {
+    min-height: 130px;
+  }
 
   .genCard {
     position: relative;
@@ -844,9 +848,9 @@
   .genTitle {
     margin: 0;
     color: var(--r-gen-title);
-    font-size: calc(16.2 * var(--u));
+    font-size: var(--fs-body);
     font-weight: 600;
-    line-height: calc(22 * var(--u));
+    line-height: 1.36;
   }
 
   .genTitle,
@@ -858,8 +862,8 @@
   .genYears {
     margin: calc(2 * var(--u)) 0 0;
     color: var(--r-years);
-    font-size: calc(12 * var(--u));
-    line-height: calc(18 * var(--u));
+    font-size: var(--fs-label);
+    line-height: 1.50;
   }
 
   .genCar {
@@ -875,11 +879,12 @@
   }
 
   .gen .tr > span {
-    white-space: nowrap;
+    white-space: normal;
+    padding-block: 2px;
   }
 
   .gen .tr > span:nth-child(2) {
-    font-size: calc(10.6 * var(--u));
+    font-size: var(--fs-label);
   }
 
   .table {
@@ -887,24 +892,18 @@
   }
 
   .gen .tr {
-    grid-template-columns: 178fr 167fr 170fr 218fr 213fr 165fr;
-    height: calc(20 * var(--u));
-    font-size: calc(11.4 * var(--u));
-  }
-
-  .gen:nth-child(n + 3) .tr {
-    height: calc(19.4 * var(--u));
+    grid-template-columns: 178fr 190fr 160fr 200fr 200fr 130fr;
+    height: auto;
+    min-height: 26px;
+    font-size: var(--fs-label);
   }
 
   .gen .thead,
   .gen:nth-child(n + 3) .thead {
-    height: calc(26 * var(--u));
-    font-size: calc(10.9 * var(--u));
+    height: auto;
+    min-height: 30px;
+    font-size: var(--fs-label);
     font-weight: 500;
-  }
-
-  .gen:nth-child(n + 3) .thead {
-    height: calc(23 * var(--u));
   }
 
   .gen .thead > span,
@@ -937,17 +936,17 @@
 
   .bottom {
     display: grid;
-    grid-template-columns: calc(642 * var(--u)) 1fr;
-    gap: calc(10 * var(--u));
-    margin-top: calc(-2 * var(--u));
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: 14px;
+    margin-top: 14px;
   }
 
   .notes {
     display: grid;
-    grid-template-columns: calc(309 * var(--u)) 1fr;
-    height: calc(115 * var(--u));
-    margin: calc(15 * var(--u)) 0 0;
-    padding: calc(18 * var(--u)) 0 0 calc(25 * var(--u));
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    height: auto;
+    margin: 0;
+    padding: 18px 20px;
     border-color: var(--r-card-border);
     border-radius: calc(8 * var(--u));
     background: var(--r-card);
@@ -976,8 +975,8 @@
   }
 
   .noteTitle {
-    font-size: calc(13.6 * var(--u));
-    line-height: calc(18 * var(--u));
+    font-size: var(--fs-label);
+    line-height: 1.32;
   }
 
   .dark .noteTitle {
@@ -985,17 +984,18 @@
   }
 
   .noteText {
-    white-space: nowrap;
+    white-space: normal;
     margin-top: calc(7 * var(--u));
-    font-size: calc(10.4 * var(--u));
-    line-height: calc(17.6 * var(--u));
+    font-size: var(--fs-label);
+    line-height: 1.65;
   }
 
   .rule {
-    height: calc(118 * var(--u));
-    gap: calc(26 * var(--u));
-    margin-top: calc(13 * var(--u));
-    padding: calc(14 * var(--u)) 0 0 calc(16 * var(--u));
+    position: relative;
+    height: auto;
+    gap: 18px;
+    margin-top: 0;
+    padding: 16px 110px 16px 16px;
     border-radius: calc(10 * var(--u));
   }
 
@@ -1006,15 +1006,15 @@
   }
 
   .ruleTitle {
-    font-size: calc(17.3 * var(--u));
-    line-height: calc(22 * var(--u));
+    font-size: var(--fs-p);
+    line-height: 1.27;
   }
 
   .ruleText {
     margin-top: calc(8 * var(--u));
-    font-size: calc(10.9 * var(--u));
-    line-height: calc(17.2 * var(--u));
-    white-space: nowrap;
+    font-size: var(--fs-label);
+    line-height: 1.58;
+    white-space: normal;
   }
 
   .ruleShield {
@@ -1022,5 +1022,110 @@
     right: calc(28 * var(--u));
     width: calc(76 * var(--u));
     height: calc(88 * var(--u));
+  }
+
+  /* Site container: same width and side padding as every other section. */
+  .frame {
+    max-width: var(--container-8xl);
+    padding-inline: var(--gutter);
+  }
+
+  .panel {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+/* Notes and the 3 Series rule: icon and title on one row, text underneath from the left edge. */
+.note:not(.deskFlex),
+.rule {
+  display: block;
+}
+
+@media (min-width: 1024px) {
+  .note.deskFlex {
+    display: block;
+  }
+}
+
+.noteHead,
+.ruleHead {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.noteHead .noteIcon,
+.note + .note .noteHead .noteIcon {
+  width: 30px;
+  height: 30px;
+  margin: 0;
+}
+
+.noteHead .noteTitle,
+.ruleHead .ruleTitle {
+  margin: 0;
+}
+
+.noteText,
+.noteList {
+  margin-top: 8px;
+}
+
+.noteList {
+  list-style: none;
+  padding-left: 0;
+  font-size: 15px;
+  line-height: 1.55;
+}
+
+.noteList p + p {
+  margin-top: 6px;
+}
+
+.ruleHead .crown {
+  flex-shrink: 0;
+  width: 52px;
+  height: 52px;
+  margin: 0;
+}
+
+.ruleText {
+  margin-top: 10px;
+}
+
+@media (max-width: 1023px) {
+  .note + .note {
+    margin-top: 14px;
+  }
+
+  .rule {
+    padding-right: 14px;
+  }
+
+  .ruleHead {
+    padding-right: 56px;
+  }
+
+  .ruleText {
+    font-size: 15px;
+    line-height: 1.55;
+  }
+}
+
+/* Phones and tablets: one heading size and one body size across every model-page section. */
+@media (max-width: 1023px) {
+  h2.title,
+  h2.title span,
+  h2.title .accent {
+    font-size: var(--fs-h2) !important;
+    line-height: 1.15 !important;
+    letter-spacing: -0.02em !important;
+    white-space: normal !important;
+  }
+
+  .copy {
+    font-size: 15px !important;
+    line-height: 1.55 !important;
   }
 }

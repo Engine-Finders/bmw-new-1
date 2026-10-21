@@ -27,7 +27,7 @@ function splitBracketTag(value = "") {
 function GenerationBadge({ generation, className = "", isDark }) {
   return (
     <span
-      className={`absolute left-0 top-0 flex h-full w-12 items-start justify-center pt-1 text-[0.72rem] font-bold ${primaryBadgeClass(isDark)} ${className}`}
+      className={`lg:text-[15px] absolute left-0 top-0 flex h-full w-12 items-start justify-center pt-1 text-[12px] font-bold ${primaryBadgeClass(isDark)} ${className}`}
       style={{ clipPath: "polygon(0 0, 100% 0, 45% 100%, 0 100%)" }}
     >
       {generation}
@@ -64,7 +64,7 @@ function DesktopRow({ row, isDark }) {
   const borderBottom = isDark ? "border-white/15" : "border-[var(--color-border)]";
 
   return (
-    <div className={`grid ${DESKTOP_COLS} items-stretch gap-px ${rowClass} text-[0.82rem] border-b ${borderBottom} last:border-b-0`}>
+    <div className={`lg:text-[15px] grid ${DESKTOP_COLS} items-stretch gap-px ${rowClass} text-[0.82rem] border-b ${borderBottom} last:border-b-0`}>
       <div className="flex items-center px-2 py-2">
         <GenerationThumb generation={row.generation} image={row.image} isDark={isDark} imageOnly />
       </div>
@@ -91,8 +91,8 @@ function MobileCard({ row, isOpen, onToggle, isDark }) {
         <GenIcon name="chevronDown" className={`absolute right-3 top-3 h-4 w-4 shrink-0 text-[var(--color-primary)] transition-transform ${isOpen ? "rotate-180" : ""}`} />
 
         <div className="flex flex-col items-center gap-0.5 pr-2.5">
-          <span className={`w-full rounded-md px-2 py-0.5 text-center text-[0.7rem] font-bold leading-tight ${primaryBadgeClass(isDark)}`}>{row.generation}</span>
-          <span className="text-center text-[0.64rem] leading-tight text-[var(--color-text-muted)]" dangerouslySetInnerHTML={{ __html: row.years }} />
+          <span className={`lg:text-[15px] w-full rounded-md px-2 py-0.5 text-center text-[12px] font-bold leading-tight ${primaryBadgeClass(isDark)}`}>{row.generation}</span>
+          <span className="lg:text-[15px] text-center text-[12px] leading-tight text-[var(--color-text-muted)]" dangerouslySetInnerHTML={{ __html: row.years }} />
           {row.image ? (
             <div className="relative h-20 w-full">
               <Image src={row.image} alt={carAlt(row.generation)} fill className="object-contain" sizes="104px" />
@@ -101,26 +101,26 @@ function MobileCard({ row, isOpen, onToggle, isDark }) {
         </div>
 
         <div className="flex min-w-0 flex-col gap-1 border-l border-[var(--color-border)] px-2.5">
-          <p className="text-[0.64rem] font-semibold uppercase tracking-wide text-[var(--color-text-soft)]">Engine Code</p>
-          <p className="text-[0.8rem] font-bold leading-tight text-[var(--color-text)]" dangerouslySetInnerHTML={{ __html: row.engineCode }} />
+          <p className="lg:text-[15px] text-[12px] font-semibold uppercase tracking-wide text-[var(--color-text-soft)]">Engine Code</p>
+          <p className="lg:text-[15px] text-[0.8rem] font-bold leading-tight text-[var(--color-text)]" dangerouslySetInnerHTML={{ __html: row.engineCode }} />
         </div>
 
         <div className="flex min-w-0 flex-col gap-2 border-l border-[var(--color-border)] px-2.5 pr-5">
           <div>
-            <p className="text-[0.64rem] font-semibold uppercase tracking-wide text-[var(--color-text-soft)]">Reliability</p>
-            <p className="text-[0.85rem] font-bold leading-tight text-[var(--color-primary)]" dangerouslySetInnerHTML={{ __html: reliability.main }} />
+            <p className="lg:text-[15px] text-[12px] font-semibold uppercase tracking-wide text-[var(--color-text-soft)]">Reliability</p>
+            <p className="lg:text-[15px] text-[0.85rem] font-bold leading-tight text-[var(--color-primary)]" dangerouslySetInnerHTML={{ __html: reliability.main }} />
           </div>
           <div>
-            <p className="text-[0.64rem] font-semibold uppercase tracking-wide text-[var(--color-text-soft)]">Recon Cost (Guide)</p>
-            <p className="text-[0.78rem] font-bold leading-tight text-[var(--color-primary)]" dangerouslySetInnerHTML={{ __html: reconCost.main }} />
+            <p className="lg:text-[15px] text-[12px] font-semibold uppercase tracking-wide text-[var(--color-text-soft)]">Recon Cost (Guide)</p>
+            <p className="lg:text-[15px] text-[0.78rem] font-bold leading-tight text-[var(--color-primary)]" dangerouslySetInnerHTML={{ __html: reconCost.main }} />
           </div>
         </div>
       </button>
 
       {isOpen ? (
         <div className="border-t border-[var(--color-border)] px-3.5 py-3">
-          <p className="text-[0.66rem] font-semibold uppercase tracking-wide text-[var(--color-text-soft)]">Era Note</p>
-          <p className="mt-0.5 text-[0.76rem] leading-[1.4] text-[var(--color-text-muted)]" dangerouslySetInnerHTML={{ __html: row.eraNote }} />
+          <p className="lg:text-[15px] text-[12px] font-semibold uppercase tracking-wide text-[var(--color-text-soft)]">Era Note</p>
+          <p className="lg:text-[15px] mt-0.5 text-[0.76rem] leading-[1.4] text-[var(--color-text-muted)]" dangerouslySetInnerHTML={{ __html: row.eraNote }} />
         </div>
       ) : null}
     </div>
@@ -149,7 +149,7 @@ export default function EraMap({ data }) {
               >
                 <GenIcon name="history" inverted className="h-9 w-9 md:h-7 md:w-7" />
               </span>
-              <h2 className="text-[1.6rem] font-bold leading-[1.1] tracking-normal md:text-[2.4rem]">
+              <h2 className="t-h2">
                 {titleParts.before ? <span dangerouslySetInnerHTML={{ __html: titleParts.before }} /> : null}
                 {titleParts.accent ? (
                   <>
@@ -162,7 +162,7 @@ export default function EraMap({ data }) {
             <div className="mt-3">
               <MStripe />
             </div>
-            <p className="mt-3 max-w-[520px] text-[0.82rem] leading-[1.45] text-[var(--color-text-muted)] md:text-[0.9rem]">
+            <p className="lg:text-[15px] mt-3 max-w-[520px] text-[0.82rem] leading-[1.45] text-[var(--color-text-muted)] md:text-[0.9rem]">
               Four generations. Four eras. One guide to reliability, costs and what really matters.
             </p>
           </div>
@@ -181,7 +181,7 @@ export default function EraMap({ data }) {
         </div>
 
         <div className="mt-6 hidden overflow-hidden rounded-md border border-[var(--color-border)] bg-[var(--color-table-surface)] shadow-[0_14px_40px_var(--color-shadow)] backdrop-blur md:block">
-          <div className={`grid ${DESKTOP_COLS} gap-px ${headerBg} px-2 py-2.5 text-[0.78rem] font-semibold`}>
+          <div className={`lg:text-[15px] grid ${DESKTOP_COLS} gap-px ${headerBg} px-2 py-2.5 text-[0.78rem] font-semibold`}>
             {data.columns?.map((col) => (
               <span key={col} className={`flex items-center px-3 border-r ${headerDivider} last:border-r-0`}>{col}</span>
             ))}
@@ -201,7 +201,7 @@ export default function EraMap({ data }) {
             <div>
               <p className="text-[0.95rem] font-bold text-[var(--color-text)]">Why use this era map?</p>
               <p
-                className="mt-1 text-[0.8rem] leading-[1.45] text-[var(--color-text-muted)]"
+                className="lg:text-[15px] mt-1 text-[0.8rem] leading-[1.45] text-[var(--color-text-muted)]"
                 dangerouslySetInnerHTML={{
                   __html:
                     data.sourceNote ||
@@ -221,7 +221,7 @@ export default function EraMap({ data }) {
                 ) : null}
                 <div className="flex items-center gap-2">
                   <GenIcon name={point.icon} className="h-11 w-11 md:h-9 md:w-9 shrink-0" />
-                  <span className="whitespace-nowrap text-[0.78rem] font-semibold text-[var(--color-text)]">{point.label}</span>
+                  <span className="lg:text-[15px] whitespace-nowrap text-[0.78rem] font-semibold text-[var(--color-text)]">{point.label}</span>
                 </div>
               </div>
             ))}
@@ -229,7 +229,7 @@ export default function EraMap({ data }) {
         </div>
 
         {data.dataNote ? (
-          <p className="mt-4 text-[0.74rem] leading-[1.5] text-[var(--color-text-soft)]" dangerouslySetInnerHTML={{ __html: data.dataNote }} />
+          <p className="lg:text-[15px] mt-4 text-[12px] leading-[1.5] text-[var(--color-text-soft)]" dangerouslySetInnerHTML={{ __html: data.dataNote }} />
         ) : null}
       </div>
     </section>

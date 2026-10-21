@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useRef, useState } from "react";
 import Image from "next/image";
 import { Inter } from "next/font/google";
 import { useTheme } from "@/components/shared/themeProvider";
@@ -11,6 +11,8 @@ const inter = Inter({ subsets: ["latin"], weight: ["400", "500", "600", "700"], 
 
 // a space before each break keeps words apart where the break is hidden
 const spaced = (html = "") => String(html).replace(/([^-])\s*<br\s*\/?>\s*/g, "$1 <br>");
+// Table cells wrap to their column (the copy's breaks were set for the old type size).
+const flat = (html = "") => String(html).replace(/\s*<br\s*\/?>\s*/g, " ");
 
 const ICONS = {
   shield7: (
@@ -92,6 +94,40 @@ function Title({ lines, className }) {
   );
 }
 
+// Key engines: three per cell; more than three scroll sideways inside the cell (arrows + swipe).
+function EngineSlider({ engines, isDark }) {
+  const track = useRef(null);
+  const more = engines.length > 3;
+  const step = (dir) => {
+    const el = track.current;
+    if (el) el.scrollBy({ left: dir * el.clientWidth, behavior: "smooth" });
+  };
+  return (
+    <span className={s.slider}>
+      {more ? (
+        <button type="button" className={`${s.slideBtn} ${s.slidePrev}`} aria-label="Previous engines" onClick={() => step(-1)}>
+          <Icon name="chevron" className={s.slideIcon} />
+        </button>
+      ) : null}
+      <span ref={track} className={`${s.track} ${more ? s.trackScroll : ""}`}>
+        {engines.map((engine) => (
+          <span key={engine.label} className={s.engine}>
+            <span className={s.engineImg}>
+              <Image src={isDark ? engine.images.dark : engine.images.light} alt="" fill className={s.img} sizes="(min-width: 1024px) 7vw, 1px" />
+            </span>
+            <span className={s.engineLabel}>{engine.label}</span>
+          </span>
+        ))}
+      </span>
+      {more ? (
+        <button type="button" className={`${s.slideBtn} ${s.slideNext}`} aria-label="More engines" onClick={() => step(1)}>
+          <Icon name="chevron" className={s.slideIcon} />
+        </button>
+      ) : null}
+    </span>
+  );
+}
+
 function DesktopTable({ data, isDark }) {
   const columns = data.columns || [];
   return (
@@ -114,20 +150,13 @@ function DesktopTable({ data, isDark }) {
           <span className={s.cYears} role="cell">
             {era.years}
           </span>
-          <span className={s.cEngines} role="cell" data-count={era.engines.length}>
-            {era.engines.map((engine) => (
-              <span key={engine.label} className={s.engine}>
-                <span className={s.engineImg}>
-                  <Image src={isDark ? engine.images.dark : engine.images.light} alt="" fill className={s.img} sizes="(min-width: 1024px) 7vw, 1px" />
-                </span>
-                <span className={s.engineLabel}>{engine.label}</span>
-              </span>
-            ))}
+          <span className={s.cEngines} role="cell">
+            <EngineSlider engines={era.engines} isDark={isDark} />
           </span>
-          <span className={s.cWhy} role="cell" dangerouslySetInnerHTML={{ __html: spaced(era.whyBmwChanged) }} />
+          <span className={s.cWhy} role="cell" dangerouslySetInnerHTML={{ __html: flat(era.whyBmwChanged) }} />
           <span className={s.cWorth} role="cell">
             <Icon name="info" className={s.infoIcon} />
-            <span dangerouslySetInnerHTML={{ __html: spaced(era.worthKnowing) }} />
+            <span dangerouslySetInnerHTML={{ __html: flat(era.worthKnowing) }} />
           </span>
         </div>
       ))}

@@ -178,7 +178,7 @@ function Rating({ value }) {
           </span>
         ))}
       </div>
-      {caption ? <p className="mt-1 text-[12px] leading-snug text-[var(--color-text-muted)]">{caption}</p> : null}
+      {caption ? <p className="lg:text-[15px] mt-1 text-[12px] leading-snug text-[var(--color-text-muted)]">{caption}</p> : null}
     </div>
   );
 }
@@ -204,7 +204,7 @@ function GenerationCard({ card, index, modelName, defaultOpen = false, isDark })
       <div className="flex items-start gap-3">
         <IndexBadge index={index} isDark={isDark} />
         <div className="min-w-0 flex-1">
-          <p className="text-[14px] font-semibold leading-tight text-[var(--color-text)]">{cleanText(card.label) || modelName}</p>
+          <p className="lg:text-[15px] text-[14px] font-semibold leading-tight text-[var(--color-text)]">{cleanText(card.label) || modelName}</p>
           <h3 className="mt-0.5 text-[22px] font-bold leading-[1.1]" dangerouslySetInnerHTML={{ __html: title.code }} />
         </div>
         {verdict ? (
@@ -220,7 +220,7 @@ function GenerationCard({ card, index, modelName, defaultOpen = false, isDark })
         ) : null}
       </div>
 
-      <div className="mt-3 min-h-[5.5rem] pl-11 text-[13px] leading-[1.45] text-[var(--color-text)]">
+      <div className="lg:text-[15px] mt-3 min-h-[5.5rem] pl-11 text-[13px] leading-[1.45] text-[var(--color-text)]">
         {subtitle ? <p dangerouslySetInnerHTML={{ __html: subtitle }} /> : null}
         {engines?.length ? (
           <ul className="mt-1">
@@ -247,7 +247,7 @@ function GenerationCard({ card, index, modelName, defaultOpen = false, isDark })
       </div>
 
       {open && verdict ? (
-        <div className="mt-4 text-[14px] leading-[1.5]">
+        <div className="lg:text-[15px] mt-4 text-[14px] leading-[1.5]">
           <p className="font-bold">Our Verdict:</p>
           <p className="mt-1" dangerouslySetInnerHTML={{ __html: verdict }} />
         </div>
@@ -293,7 +293,7 @@ function ComparisonTable({ table, isDark }) {
         </p>
       ) : null}
       <div className="overflow-x-auto rounded-md border border-[var(--color-border)] bg-[var(--color-surface-raised)] shadow-[0_8px_22px_var(--color-shadow)]">
-        <table className="w-full min-w-[720px] border-collapse text-left text-[14px] text-[var(--color-text)]">
+        <table className="lg:text-[15px] w-full min-w-[720px] border-collapse text-left text-[14px] text-[var(--color-text)]">
           <thead>
             <tr>
               {columns.map((column) => (
