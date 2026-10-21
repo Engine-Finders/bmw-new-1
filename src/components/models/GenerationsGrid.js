@@ -158,17 +158,18 @@ function ctaLabel(cta, isDark) {
   return String((isDark && cta.labelDark) || cta.label || "").replace(/\s*(?:→|â†’)\s*$/, "");
 }
 
-// Desktop card: the first is open (verdict + filled button), the rest closed, as in the references.
+// Desktop card: every card starts collapsed; the header toggles it open to show the verdict
+// inside the card (same behaviour as the generation cards on the other model pages).
 function DesktopCard({ card, index, isDark }) {
-  const open = index === 0;
+  const [open, setOpen] = useState(false);
   const label = ctaLabel(card.cta, isDark);
   return (
     <article className={`${s.card} ${open ? s.cardOpen : ""}`}>
-      <div className={s.cardHead}>
+      <button type="button" className={s.cardHead} aria-expanded={open} onClick={() => setOpen((v) => !v)}>
         <span className={s.num}>{index + 1}</span>
-        <p className={s.cardLabel}>{card.label}</p>
-        {open ? <Chevron up className={s.headChevron} /> : null}
-      </div>
+        <span className={s.cardLabel}>{card.label}</span>
+        <Chevron up={open} className={s.headChevron} />
+      </button>
       <h3 className={s.code} dangerouslySetInnerHTML={{ __html: card.code }} />
       <div className={s.meta}>
         <BadgeBlock lines={card.badgeLines} tag={card.tag} />
@@ -189,7 +190,7 @@ function DesktopCard({ card, index, isDark }) {
       ) : null}
       <Link href={card.cta.href || "#"} className={s.cta}>
         <span dangerouslySetInnerHTML={{ __html: label }} />
-        {open ? <Arrow className={s.ctaIcon} /> : <Chevron className={s.ctaIcon} />}
+        <Arrow className={s.ctaIcon} />
       </Link>
     </article>
   );
@@ -331,7 +332,7 @@ export default function GenerationsGrid({ data }) {
 
 function GenerationsReference({ data }) {
   const { theme } = useTheme();
-  const [openPhone, setOpenPhone] = useState(0);
+  const [openPhone, setOpenPhone] = useState(-1);
 
   const isDark = theme === "dark";
   const title = splitTitle(data.h2);

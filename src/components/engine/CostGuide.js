@@ -7,7 +7,7 @@ import HomeIcon from "@/components/home/homeIcons";
 import { sectionDescription } from "@/components/models/sectionTypography";
 import { engineSectionBg } from "./engineSection";
 
-const priceH2 = "text-[22px] font-bold leading-[1.12] tracking-normal md:text-[28px]";
+const priceH2 = "t-h2";
 
 function cleanText(text = "") {
   return String(text)
@@ -102,7 +102,7 @@ function PriceCard({ row, popular = false, isDark, compact = false }) {
       }`}
     >
       {popular ? (
-        <span className={`absolute -top-2.5 left-1/2 -translate-x-1/2 rounded-md px-2.5 py-0.5 text-center text-[10px] font-bold uppercase tracking-[0.04em] ${badgeClass(isDark)}`}>
+        <span className={`lg:text-[15px] absolute -top-2.5 left-1/2 -translate-x-1/2 rounded-md px-2.5 py-0.5 text-center text-[12px] font-bold uppercase tracking-[0.04em] ${badgeClass(isDark)}`}>
           Most Popular
         </span>
       ) : null}
@@ -115,34 +115,34 @@ function PriceCard({ row, popular = false, isDark, compact = false }) {
       {compact ? (
         <div className="mt-3">
           <div className="border-b border-[var(--color-border)] pb-2.5">
-            <p className={`text-[10px] font-semibold uppercase tracking-[0.04em] ${labelClass}`}>Supply Only</p>
+            <p className={`lg:text-[15px] text-[12px] font-semibold uppercase tracking-[0.04em] ${labelClass}`}>Supply Only</p>
             <p className={`mt-1 text-[18px] font-bold leading-none ${valueClass}`}>{supply.price}</p>
-            {supply.tag ? <p className={`mt-1 text-[11px] font-semibold ${tagClass}`}>{supply.tag}</p> : null}
+            {supply.tag ? <p className={`lg:text-[15px] mt-1 text-[12px] font-semibold ${tagClass}`}>{supply.tag}</p> : null}
           </div>
           <div className="border-b border-[var(--color-border)] py-2.5">
-            <p className={`text-[10px] font-semibold uppercase tracking-[0.04em] ${labelClass}`}>Fitted (Indie)</p>
+            <p className={`lg:text-[15px] text-[12px] font-semibold uppercase tracking-[0.04em] ${labelClass}`}>Fitted (Indie)</p>
             <p className={`mt-1 text-[16px] font-bold ${valueClass}`}>{fitted.price}</p>
           </div>
           <div className="pt-2.5">
-            <p className={`text-[10px] font-semibold uppercase tracking-[0.04em] ${labelClass}`}>Warranty</p>
-            <span className={`mt-1.5 inline-flex rounded-full px-2.5 py-1 text-[11px] font-semibold ${badgeClass(isDark)}`}>
+            <p className={`lg:text-[15px] text-[12px] font-semibold uppercase tracking-[0.04em] ${labelClass}`}>Warranty</p>
+            <span className={`lg:text-[15px] mt-1.5 inline-flex rounded-full px-2.5 py-1 text-[12px] font-semibold ${badgeClass(isDark)}`}>
               {warranty}
             </span>
           </div>
         </div>
       ) : (
         <div className="mt-3">
-          <p className={`text-[10px] font-semibold uppercase tracking-[0.04em] ${labelClass}`}>Supply Only</p>
+          <p className={`lg:text-[15px] text-[12px] font-semibold uppercase tracking-[0.04em] ${labelClass}`}>Supply Only</p>
           <p className={`mt-1 text-[22px] font-bold leading-none md:text-[24px] ${valueClass}`}>{supply.price}</p>
-          {supply.tag ? <p className={`mt-1.5 text-[11px] font-semibold ${tagClass}`}>{supply.tag}</p> : null}
+          {supply.tag ? <p className={`lg:text-[15px] mt-1.5 text-[12px] font-semibold ${tagClass}`}>{supply.tag}</p> : null}
 
           <div className="mt-3 border-t border-[var(--color-border)] pt-2.5">
-            <p className={`text-[10px] font-semibold uppercase tracking-[0.04em] ${labelClass}`}>Fitted (Indie)</p>
+            <p className={`lg:text-[15px] text-[12px] font-semibold uppercase tracking-[0.04em] ${labelClass}`}>Fitted (Indie)</p>
             <p className={`mt-1 text-[15px] font-bold ${valueClass}`}>{fitted.price}</p>
           </div>
 
           <div className="mt-3 flex justify-center">
-            <span className={`inline-flex rounded-full px-2.5 py-1 text-[11px] font-semibold ${badgeClass(isDark)}`}>
+            <span className={`lg:text-[15px] inline-flex rounded-full px-2.5 py-1 text-[12px] font-semibold ${badgeClass(isDark)}`}>
               {warranty}
             </span>
           </div>
@@ -177,13 +177,13 @@ function CompareCta({ cta, engineCode, desktop = false, isDark }) {
           <p className="mt-4 text-[18px] font-bold leading-[1.2]">
             Compare Prices from UK specialists
           </p>
-          <p className={`mt-2 text-[13px] leading-[1.4] ${isDark ? "text-[var(--color-page)]/80" : "text-white/85"}`}>
+          <p className={`lg:text-[15px] mt-2 text-[13px] leading-[1.4] ${isDark ? "text-[var(--color-page)]/80" : "text-white/85"}`}>
             Get live pricing from 20+ trusted engine suppliers.
           </p>
         </div>
         <Link
           href="/quote"
-          className={`mt-5 inline-flex min-h-11 items-center justify-center rounded-lg px-4 text-[13px] font-bold uppercase tracking-[0.04em] ${
+          className={`lg:text-[15px] mt-5 inline-flex min-h-11 items-center justify-center rounded-lg px-4 text-[13px] font-bold uppercase tracking-[0.04em] ${
             isDark ? "bg-[var(--color-page)] text-white" : "bg-[var(--color-surface)] text-[var(--color-text)]"
           }`}
         >
@@ -207,7 +207,7 @@ function CompareCta({ cta, engineCode, desktop = false, isDark }) {
       >
         <HomeIcon name="real-inquiries" isDark={!isDark} className="h-7 w-7 md:h-5 md:w-5 object-contain" />
       </span>
-      <span className="min-w-0 flex-1 text-center text-[13px] font-bold leading-[1.25]">
+      <span className="lg:text-[15px] min-w-0 flex-1 text-center text-[13px] font-bold leading-[1.25]">
         {label || `Compare BMW ${engineCode} engine prices from UK specialists`}
       </span>
       <span aria-hidden="true" className="text-[18px] font-bold">→</span>
@@ -247,7 +247,7 @@ export default function CostGuide({ data, engineLabel = "BMW Engine" }) {
                     <span className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full border border-[var(--color-border-strong)] bg-[var(--color-primary-soft)]">
                       <HomeIcon name="info" isDark={isDark} className="h-4 w-4 object-contain" />
                     </span>
-                    <p className={`text-[12px] leading-[1.4] ${isDark ? "text-white/80" : "text-[var(--color-text-muted)]"}`}>
+                    <p className={`lg:text-[15px] text-[12px] leading-[1.4] ${isDark ? "text-white/80" : "text-[var(--color-text-muted)]"}`}>
                       {renderTaggedText(data.labourEstimate)}
                     </p>
                   </div>
@@ -258,7 +258,7 @@ export default function CostGuide({ data, engineLabel = "BMW Engine" }) {
                 <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full border border-[var(--color-border-strong)] bg-[var(--color-primary-soft)]">
                   <HomeIcon name="shield" isDark={isDark} className="h-4 w-4 object-contain" />
                 </span>
-                <p className={`text-[11px] ${isDark ? "text-white/65" : "text-[var(--color-text-soft)]"}`}>{exclusiveNote}</p>
+                <p className={`lg:text-[15px] text-[12px] ${isDark ? "text-white/65" : "text-[var(--color-text-soft)]"}`}>{exclusiveNote}</p>
               </div>
             </div>
 
@@ -282,10 +282,10 @@ export default function CostGuide({ data, engineLabel = "BMW Engine" }) {
               <MStripe />
             </div>
 
-            <p className={`mt-4 text-[13px] leading-[1.4] ${isDark ? "text-white/80" : "text-[var(--color-text-muted)]"}`}>
+            <p className={`lg:text-[15px] mt-4 text-[13px] leading-[1.4] ${isDark ? "text-white/80" : "text-[var(--color-text-muted)]"}`}>
               All prices are estimates from UK specialists
             </p>
-            <p className="mt-1 text-[12px] font-semibold text-[var(--color-chrome-bright)]">{quoteTag}</p>
+            <p className="lg:text-[15px] mt-1 text-[12px] font-semibold text-[var(--color-chrome-bright)]">{quoteTag}</p>
 
             <div className="mt-4 grid gap-3">
               {rows.map((row) => (
@@ -304,7 +304,7 @@ export default function CostGuide({ data, engineLabel = "BMW Engine" }) {
                 <span className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full border border-[var(--color-border-strong)] bg-[var(--color-primary-soft)]">
                   <HomeIcon name="info" isDark={isDark} className="h-4 w-4 object-contain" />
                 </span>
-                <p className={`text-[11px] leading-[1.4] ${isDark ? "text-white/80" : "text-[var(--color-text-muted)]"}`}>
+                <p className={`lg:text-[15px] text-[12px] leading-[1.4] ${isDark ? "text-white/80" : "text-[var(--color-text-muted)]"}`}>
                   {renderTaggedText(data.labourEstimate)}
                 </p>
               </div>
@@ -314,7 +314,7 @@ export default function CostGuide({ data, engineLabel = "BMW Engine" }) {
               <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full border border-[var(--color-border-strong)] bg-[var(--color-primary-soft)]">
                 <HomeIcon name="shield" isDark={isDark} className="h-4 w-4 object-contain" />
               </span>
-              <p className={`text-[11px] ${isDark ? "text-white/65" : "text-[var(--color-text-soft)]"}`}>{exclusiveNote}</p>
+              <p className={`lg:text-[15px] text-[12px] ${isDark ? "text-white/65" : "text-[var(--color-text-soft)]"}`}>{exclusiveNote}</p>
             </div>
 
             <div className="mt-3">

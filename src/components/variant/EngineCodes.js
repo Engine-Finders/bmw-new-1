@@ -31,7 +31,7 @@ function DesktopRow({ row, isDark }) {
   const borderBottom = isDark ? "border-white/15" : "border-[var(--color-border)]";
 
   return (
-    <div className={`grid ${DESKTOP_COLS} items-center gap-px ${rowClass} px-2 py-2.5 text-[0.8rem] border-b ${borderBottom} last:border-b-0`}>
+    <div className={`lg:text-[15px] grid ${DESKTOP_COLS} items-center gap-px ${rowClass} px-2 py-2.5 text-[0.8rem] border-b ${borderBottom} last:border-b-0`}>
       <span className="flex items-center gap-2 px-2 font-semibold">
         <span className="relative h-9 w-11 shrink-0 overflow-hidden">
           {row.image ? <Image src={row.image} alt="" fill className="object-contain" sizes="44px" /> : null}
@@ -57,7 +57,7 @@ function DetailCard({ row }) {
           <Image src={row.image} alt="" fill className="object-contain" sizes="112px" />
         </span>
       ) : null}
-      <div className="flex min-w-0 flex-1 flex-col gap-2.5 text-[0.82rem]">
+      <div className="lg:text-[15px] flex min-w-0 flex-1 flex-col gap-2.5 text-[0.82rem]">
         <p className="truncate text-[1rem] font-bold text-[var(--color-text)]">{row.engineCode}</p>
         <div className="flex flex-wrap items-center justify-between gap-x-3 gap-y-1 border-b border-[var(--color-border)] pb-2.5">
           <span className="flex items-center gap-1.5 text-[var(--color-text-muted)]">
@@ -108,9 +108,9 @@ export default function EngineCodes({ data }) {
   const technicalSpecsCard = data.technicalSpecs ? (
     <div className="overflow-hidden rounded-xl border border-[var(--color-border)] bg-[var(--color-surface)]">
       <div className="flex flex-wrap items-center gap-x-2 gap-y-1 border-b border-[var(--color-border)] px-4 py-3">
-        <p className="text-[0.85rem] font-bold uppercase tracking-wide text-[var(--color-text)]">{specsTitle.title}</p>
+        <p className="lg:text-[15px] text-[0.85rem] font-bold uppercase tracking-wide text-[var(--color-text)]">{specsTitle.title}</p>
         {specsTitle.tag ? (
-          <span className="text-[0.68rem] font-semibold uppercase tracking-wide text-[var(--color-primary)]">{specsTitle.tag}</span>
+          <span className="lg:text-[15px] text-[12px] font-semibold uppercase tracking-wide text-[var(--color-primary)]">{specsTitle.tag}</span>
         ) : null}
       </div>
       <div className="flex flex-col">
@@ -119,11 +119,11 @@ export default function EngineCodes({ data }) {
             key={item.label}
             className={`grid grid-cols-[1fr_1fr] gap-3 px-4 py-3 ${index > 0 ? "border-t border-[var(--color-border)]" : ""}`}
           >
-            <span className="flex items-center gap-2 border-r border-[var(--color-border)] pr-3 text-[0.78rem] text-[var(--color-text-muted)]">
+            <span className="lg:text-[15px] flex items-center gap-2 border-r border-[var(--color-border)] pr-3 text-[0.78rem] text-[var(--color-text-muted)]">
               <GenIcon name={specIconFor(item.label.replace(/^\*\s*/, ""))} className="h-8 w-8 md:h-6 md:w-6 shrink-0" />
               {item.label.replace(/^\*\s*/, "")}
             </span>
-            <span className="text-[0.8rem] font-semibold text-[var(--color-text)]" dangerouslySetInnerHTML={{ __html: item.value }} />
+            <span className="lg:text-[15px] text-[0.8rem] font-semibold text-[var(--color-text)]" dangerouslySetInnerHTML={{ __html: item.value }} />
           </div>
         ))}
       </div>
@@ -162,7 +162,7 @@ export default function EngineCodes({ data }) {
         </span>
         <div className="min-w-0">
           <p className={`text-[0.95rem] font-bold leading-tight ${isDark ? "text-white" : "text-white"}`}>{data.cta.label}</p>
-          <p className={`mt-1 text-[0.78rem] leading-[1.4] ${isDark ? "text-white/80" : "text-white/80"}`}>Get quotes from trusted UK specialists in minutes.</p>
+          <p className={`lg:text-[15px] mt-1 text-[0.78rem] leading-[1.4] ${isDark ? "text-white/80" : "text-white/80"}`}>Get quotes from trusted UK specialists in minutes.</p>
         </div>
       </div>
     </a>
@@ -178,7 +178,7 @@ export default function EngineCodes({ data }) {
               <MStripe />
             </div>
             {data.matchNote ? (
-              <p className="mt-3 text-[0.78rem] text-[var(--color-text-soft)]" dangerouslySetInnerHTML={{ __html: data.matchNote }} />
+              <p className="lg:text-[15px] mt-3 text-[0.78rem] text-[var(--color-text-soft)]" dangerouslySetInnerHTML={{ __html: data.matchNote }} />
             ) : null}
 
             <div className="mt-6 grid grid-cols-4 gap-1.5 md:hidden">
@@ -195,8 +195,8 @@ export default function EngineCodes({ data }) {
                       : "border-[var(--color-border)] bg-[var(--color-surface)] text-[var(--color-text)]"
                   }`}
                 >
-                  <span className="truncate text-[0.7rem] font-bold leading-tight">{shortCode(row.engineCode)}</span>
-                  <span className={`truncate text-[0.58rem] ${activeIndex === index ? (isDark ? "text-[var(--color-page)]/80" : "text-white/80") : "text-[var(--color-text-muted)]"}`}>{row.years}</span>
+                  <span className="lg:text-[15px] truncate text-[12px] font-bold leading-tight">{shortCode(row.engineCode)}</span>
+                  <span className={`lg:text-[15px] truncate text-[12px] ${activeIndex === index ? (isDark ? "text-[var(--color-page)]/80" : "text-white/80") : "text-[var(--color-text-muted)]"}`}>{row.years}</span>
                 </button>
               ))}
             </div>
@@ -205,7 +205,7 @@ export default function EngineCodes({ data }) {
             </div>
 
             <div className="mt-6 hidden overflow-hidden rounded-xl border border-[var(--color-border)] bg-[var(--color-table-surface)] shadow-lg backdrop-blur md:block">
-              <div className={`grid ${DESKTOP_COLS} gap-px ${headerBg} px-2 py-2.5 text-[0.78rem] font-semibold`}>
+              <div className={`lg:text-[15px] grid ${DESKTOP_COLS} gap-px ${headerBg} px-2 py-2.5 text-[0.78rem] font-semibold`}>
                 {data.columns?.map((col, index) => (
                   <span key={col} className={`px-2 ${index > 0 ? `border-l ${headerDivider}` : ""}`}>{col}</span>
                 ))}

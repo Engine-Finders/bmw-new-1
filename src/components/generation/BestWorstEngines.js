@@ -195,13 +195,13 @@ function EngineCard({ item, generationCode, isDark }) {
           >
             <GenIcon name={style.icon} onDark={!style.iconInverted} inverted={style.iconInverted} className="h-8 w-8 md:h-6 md:w-6" />
           </span>
-          <p className={`text-[0.68rem] font-bold uppercase tracking-[0.08em] ${style.label}`} dangerouslySetInnerHTML={{ __html: item.slot }} />
+          <p className={`lg:text-[15px] text-[12px] font-bold uppercase tracking-[0.08em] ${style.label}`} dangerouslySetInnerHTML={{ __html: item.slot }} />
         </div>
 
         <p className={`mt-3 text-[0.98rem] font-bold leading-[1.25] ${titleTextClass}`}>
           <span dangerouslySetInnerHTML={{ __html: item.engine }} />
           {item.engineNote ? (
-            <span className={`mt-0.5 block text-[0.72rem] font-normal ${bodyTextClass}`} dangerouslySetInnerHTML={{ __html: item.engineNote }} />
+            <span className={`lg:text-[15px] mt-0.5 block text-[12px] font-normal ${bodyTextClass}`} dangerouslySetInnerHTML={{ __html: item.engineNote }} />
           ) : null}
         </p>
 
@@ -214,11 +214,11 @@ function EngineCard({ item, generationCode, isDark }) {
           )}
         </div>
 
-        <p className={`text-[0.8rem] leading-[1.45] ${bodyTextClass}`}>
+        <p className={`lg:text-[15px] text-[0.8rem] leading-[1.45] ${bodyTextClass}`}>
           &ldquo;<span dangerouslySetInnerHTML={{ __html: item.quote }} />&rdquo;
         </p>
 
-        <p className={`mt-auto border-t pt-3 text-[0.78rem] leading-[1.35] ${isDark ? "border-white/12 text-white/88" : "border-[var(--color-border)] text-[var(--color-text)]"}`}>
+        <p className={`lg:text-[15px] mt-auto border-t pt-3 text-[0.78rem] leading-[1.35] ${isDark ? "border-white/12 text-white/88" : "border-[var(--color-border)] text-[var(--color-text)]"}`}>
           <span className="font-semibold" style={{ color: style.color }}>
             Who it&apos;s for:
           </span>{" "}
@@ -226,7 +226,7 @@ function EngineCard({ item, generationCode, isDark }) {
         </p>
 
         {item.modelWideNote ? (
-          <p className={`mt-2 rounded-md p-2 text-[0.68rem] leading-[1.3] ${noteBgClass}`} dangerouslySetInnerHTML={{ __html: item.modelWideNote }} />
+          <p className={`lg:text-[15px] mt-2 rounded-md p-2 text-[12px] leading-[1.3] ${noteBgClass}`} dangerouslySetInnerHTML={{ __html: item.modelWideNote }} />
         ) : null}
       </div>
     </article>
@@ -314,18 +314,18 @@ function OverlookedBanner({ item, databaseCta, isDark }) {
         </div>
 
         <div className="min-w-0">
-          <p className="text-[0.82rem] font-bold text-[var(--color-text)]" dangerouslySetInnerHTML={{ __html: item.slot }} />
+          <p className="lg:text-[15px] text-[0.82rem] font-bold text-[var(--color-text)]" dangerouslySetInnerHTML={{ __html: item.slot }} />
           <p className="mt-1 text-[1rem] font-bold leading-tight text-[var(--color-text)]" dangerouslySetInnerHTML={{ __html: item.engine }} />
           {item.engineNote ? (
-            <p className="mt-0.5 text-[0.78rem] text-[var(--color-text-muted)]" dangerouslySetInnerHTML={{ __html: item.engineNote }} />
+            <p className="lg:text-[15px] mt-0.5 text-[0.78rem] text-[var(--color-text-muted)]" dangerouslySetInnerHTML={{ __html: item.engineNote }} />
           ) : null}
-          <p className="mt-2 text-[0.84rem] leading-[1.5] text-[var(--color-text-muted)]">
+          <p className="lg:text-[15px] mt-2 text-[0.84rem] leading-[1.5] text-[var(--color-text-muted)]">
             &ldquo;<span dangerouslySetInnerHTML={{ __html: item.quote }} />&rdquo;
           </p>
         </div>
 
         <div className="min-w-0 border-t border-[var(--color-border)] pt-3 md:border-t-0 md:pt-0">
-          <p className="text-[0.82rem] leading-[1.5] text-[var(--color-text)]">
+          <p className="lg:text-[15px] text-[0.82rem] leading-[1.5] text-[var(--color-text)]">
             <span className="font-semibold text-[var(--color-text)]">Who it&apos;s for: </span>
             <span dangerouslySetInnerHTML={{ __html: item.whoItsFor }} />
           </p>
@@ -334,7 +334,7 @@ function OverlookedBanner({ item, databaseCta, isDark }) {
         {ctaLabel ? (
           <a
             href={cta.href || "/engine"}
-            className={`inline-flex h-11 shrink-0 items-center justify-center gap-2 rounded-md border px-4 text-[0.78rem] font-semibold whitespace-nowrap ${
+            className={`lg:text-[15px] inline-flex h-11 shrink-0 items-center justify-center gap-2 rounded-md border px-4 text-[0.78rem] font-semibold whitespace-nowrap ${
               isDark
                 ? "border-white/20 bg-transparent text-white hover:bg-white/5"
                 : "border-[var(--color-border-strong)] bg-white text-[var(--color-text)] hover:bg-[var(--color-page-soft)]"

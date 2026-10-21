@@ -577,14 +577,14 @@
   }
 
   .title {
-    font-size: 28px;
+    font-size: var(--fs-h2);
     line-height: 1.18;
   }
 
   .copy {
     max-width: 52%;
     margin-top: 10px;
-    font-size: 14px;
+    font-size: 15px;
     line-height: 1.5;
   }
 
@@ -605,7 +605,7 @@
   /* keep the copy clear of the car, which starts 44.6% across */
   .headPhoneScene .copy {
     max-width: calc(44.6cqw - 22px);
-    font-size: 13px;
+    font-size: 14px;
     line-height: 1.5;
   }
 
@@ -655,7 +655,7 @@
   }
 
   .cardLabel {
-    font-size: 12px;
+    font-size: 13px;
     line-height: 1.35;
   }
 
@@ -663,7 +663,7 @@
   .size_md,
   .size_host {
     margin-top: 4px;
-    font-size: 13.5px;
+    font-size: 14px;
     line-height: 1.4;
   }
 
@@ -675,7 +675,7 @@
 
   .cardNote {
     margin-top: 3px;
-    font-size: 12px;
+    font-size: 13px;
     line-height: 1.4;
   }
 
@@ -689,7 +689,7 @@
     height: 22px;
     padding: 0 7px;
     border-radius: 6px;
-    font-size: 11px;
+    font-size: 13px;
   }
 
   .badgeIcon {
@@ -756,12 +756,12 @@
     height: 26px;
     margin-left: 8px;
     border-radius: 6px;
-    font-size: 13px;
+    font-size: 14px;
   }
 
   .ratingText {
     margin-top: 8px;
-    font-size: 13px;
+    font-size: 14px;
     line-height: 1.45;
   }
 }
@@ -770,7 +770,7 @@
 
 @media (min-width: 1024px) {
   .inner {
-    --u: calc(100cqw / 1536);
+    --u: calc(100cqw / 1358);
     padding: calc(64 * var(--u)) calc(113 * var(--u)) calc(34 * var(--u)) calc(65 * var(--u));
   }
 
@@ -793,16 +793,16 @@
   }
 
   .title {
-    font-size: calc(57 * var(--u));
-    line-height: calc(65 * var(--u));
+    font-size: var(--fs-h2);
+    line-height: 1.15;
     letter-spacing: -0.04em;
   }
 
   .copy {
     max-width: calc(350 * var(--u));
     margin-top: calc(10 * var(--u));
-    font-size: calc(16 * var(--u));
-    line-height: calc(27.5 * var(--u));
+    font-size: var(--fs-body);
+    line-height: 1.65;
   }
 
   .light .scene {
@@ -901,7 +901,7 @@
 
   .labelCell {
     padding-left: calc(20 * var(--u));
-    font-size: calc(16.8 * var(--u));
+    font-size: var(--fs-body);
     font-weight: 600;
     color: var(--ag-label);
   }
@@ -909,7 +909,7 @@
   .valueCell {
     position: relative;
     padding-left: calc(57 * var(--u));
-    font-size: calc(17.1 * var(--u));
+    font-size: var(--fs-p);
     color: var(--ag-value);
   }
 
@@ -934,7 +934,7 @@
   .headRow .labelCell,
   .headRow .valueCell {
     padding-top: calc(1 * var(--u));
-    font-size: calc(14.8 * var(--u));
+    font-size: var(--fs-body);
     font-weight: 600;
     color: var(--ag-th);
   }
@@ -951,7 +951,7 @@
     margin-left: calc(22 * var(--u));
     padding: 0 calc(12 * var(--u));
     border-radius: calc(7 * var(--u));
-    font-size: calc(14.2 * var(--u));
+    font-size: var(--fs-label);
   }
 
   .value .badgeIcon {
@@ -991,7 +991,18 @@
     border-radius: calc(8 * var(--u));
     background: var(--ag-score-bg);
     color: var(--ag-score-text);
-    font-size: calc(17 * var(--u));
+    font-size: var(--fs-p);
+  }
+
+  /* Site container: same width and side padding as every other section. */
+  .frame {
+    max-width: var(--container-8xl);
+    padding-inline: var(--gutter);
+  }
+
+  .inner {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
@@ -999,4 +1010,21 @@
 .dark .table,
 .dark .cards {
   border-top-color: rgba(80, 145, 255, 0.55);
+}
+
+/* Phones and tablets: one heading size and one body size across every model-page section. */
+@media (max-width: 1023px) {
+  h2.title,
+  h2.title span,
+  h2.title .accent {
+    font-size: var(--fs-h2) !important;
+    line-height: 1.15 !important;
+    letter-spacing: -0.02em !important;
+    white-space: normal !important;
+  }
+
+  .copy {
+    font-size: 15px !important;
+    line-height: 1.55 !important;
+  }
 }

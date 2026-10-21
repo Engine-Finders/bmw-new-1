@@ -298,7 +298,7 @@
 
 @media (min-width: 1024px) {
   .panel {
-    --u: calc(100cqw / 1536);
+    --u: calc(100cqw / 1485);
     padding: calc(8 * var(--u)) calc(25 * var(--u)) calc(11 * var(--u)) calc(26 * var(--u));
   }
 
@@ -323,8 +323,8 @@
   .title {
     margin-top: calc(1 * var(--u));
     margin-left: calc(2 * var(--u));
-    font-size: calc(34 * var(--u));
-    line-height: calc(40 * var(--u));
+    font-size: var(--fs-h2);
+    line-height: 1.18;
     letter-spacing: -0.048em;
   }
 
@@ -359,13 +359,13 @@
     width: calc(24 * var(--u));
     height: calc(24 * var(--u));
     border-radius: calc(4 * var(--u));
-    font-size: calc(14 * var(--u));
+    font-size: var(--fs-label);
   }
 
   .question {
     margin-left: calc(24 * var(--u));
-    font-size: calc(16 * var(--u));
-    line-height: calc(22 * var(--u));
+    font-size: var(--fs-body);
+    line-height: 1.38;
     letter-spacing: -0.023em;
   }
 
@@ -377,8 +377,8 @@
 
   .answer {
     padding: 0 calc(48 * var(--u)) calc(14 * var(--u)) calc(64 * var(--u));
-    font-size: calc(14.5 * var(--u));
-    line-height: calc(22 * var(--u));
+    font-size: var(--fs-body);
+    line-height: 1.52;
   }
 
   .compare {
@@ -398,14 +398,14 @@
   .compareText {
     margin-left: calc(16 * var(--u));
     transform: translateY(calc(-2 * var(--u)));
-    font-size: calc(14.9 * var(--u));
-    line-height: calc(22 * var(--u));
+    font-size: var(--fs-body);
+    line-height: 1.48;
     letter-spacing: -0.02em;
   }
 
   .compareText strong {
-    font-size: calc(16.3 * var(--u));
-    line-height: calc(22 * var(--u));
+    font-size: var(--fs-body);
+    line-height: 1.35;
   }
 
   .cta {
@@ -418,7 +418,7 @@
     background: var(--f-cta);
     box-shadow: var(--f-cta-shadow);
     color: #ffffff;
-    font-size: calc(18.5 * var(--u));
+    font-size: var(--fs-p);
     font-weight: 600;
     letter-spacing: -0.037em;
     white-space: nowrap;
@@ -436,5 +436,107 @@
     width: calc(26.5 * var(--u));
     height: calc(26.5 * var(--u));
     transform: none;
+  }
+
+  /* Site container: same width and side padding as every other section. */
+  .frame {
+    max-width: var(--container-8xl);
+    padding-inline: var(--gutter);
+  }
+
+  .panel {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+/* Phones and tablets: one heading size and one body size across every model-page section. */
+@media (max-width: 1023px) {
+  h2.title,
+  h2.title span,
+  h2.title .accent {
+    font-size: var(--fs-h2) !important;
+    line-height: 1.15 !important;
+    letter-spacing: -0.02em !important;
+    white-space: normal !important;
+  }
+
+  .copy {
+    font-size: 15px !important;
+    line-height: 1.55 !important;
+  }
+}
+
+/* Phones and tablets: readable FAQ rows (no artboard scaling). */
+@media (max-width: 1023px) {
+  .summary {
+    min-height: 52px !important;
+    gap: 12px;
+    padding: 10px 12px;
+  }
+
+  .num {
+    width: 26px;
+    height: 26px;
+    font-size: 14px;
+  }
+
+  .question {
+    font-size: 16px;
+    line-height: 1.4;
+    white-space: normal;
+  }
+
+  .chevron {
+    width: 20px;
+    height: 20px;
+  }
+
+  .answer {
+    padding: 0 14px 14px 50px;
+    font-size: 15px;
+    line-height: 1.55;
+  }
+
+  .compare {
+    min-height: 0;
+    padding: 14px;
+    gap: 12px;
+  }
+
+  .compareIcon {
+    width: 52px;
+    height: 52px;
+  }
+
+  .compareText {
+    font-size: 15px;
+    line-height: 1.5;
+  }
+
+  .compareText strong {
+    font-size: 16px;
+  }
+
+  .ctaArrow {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+/* Desktop: no inner card around the section, so the heading lines up with every other section. */
+@media (min-width: 1024px) {
+  .card {
+    padding-left: 0;
+    padding-right: 0;
+    border-color: transparent !important;
+    background: transparent !important;
+    box-shadow: none !important;
+  }
+}
+
+@media (min-width: 1024px) {
+  .title {
+    margin-left: 0;
   }
 }

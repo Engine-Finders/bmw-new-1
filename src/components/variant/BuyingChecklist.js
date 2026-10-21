@@ -27,8 +27,8 @@ function TrustCard({ className = "", isDark, vehicle = "BMW" }) {
         <GenIcon name="shield" inverted className="h-9 w-9 md:h-7 md:w-7" />
       </span>
       <div className="min-w-0">
-        <p className={`text-[0.92rem] font-bold leading-tight ${titleClass}`}>Buy smart. Drive with confidence.</p>
-        <p className={`mt-1 text-[0.8rem] leading-[1.4] ${bodyClass}`}>
+        <p className={`lg:text-[15px] text-[0.92rem] font-bold leading-tight ${titleClass}`}>Buy smart. Drive with confidence.</p>
+        <p className={`lg:text-[15px] mt-1 text-[0.8rem] leading-[1.4] ${bodyClass}`}>
           A few checks today can save thousands tomorrow. Use this checklist to avoid the most common {vehicle} pitfalls.
         </p>
       </div>
@@ -109,12 +109,12 @@ export default function BuyingChecklist({ data }) {
                   const { label, text } = splitItem(item);
                   return (
                     <div key={item} className="relative flex flex-col items-center gap-2 rounded-md bg-[var(--color-surface)] p-4 text-center shadow-[0_14px_40px_var(--color-shadow)]">
-                      <span className={`absolute left-3 top-3 flex h-6 w-6 shrink-0 items-center justify-center rounded-md text-[0.7rem] font-bold ${indexBadgeClass(isDark)}`}>
+                      <span className={`lg:text-[15px] absolute left-3 top-3 flex h-6 w-6 shrink-0 items-center justify-center rounded-md text-[12px] font-bold ${indexBadgeClass(isDark)}`}>
                         {index + 1}
                       </span>
                       <GenIcon name={checkIconFor(label)} className="mt-2 h-12 w-12 md:h-12 md:w-12" />
-                      <p className="text-[0.92rem] font-bold leading-tight text-[var(--color-text)]">{label}</p>
-                      {text ? <p className="text-[0.8rem] leading-[1.4] text-[var(--color-text-muted)]">{text}</p> : null}
+                      <p className="lg:text-[15px] text-[0.92rem] font-bold leading-tight text-[var(--color-text)]">{label}</p>
+                      {text ? <p className="lg:text-[15px] text-[0.8rem] leading-[1.4] text-[var(--color-text-muted)]">{text}</p> : null}
                     </div>
                   );
                 })}

@@ -489,14 +489,14 @@
 
   .title {
     margin-top: 20px;
-    font-size: 28px;
+    font-size: var(--fs-h2);
     line-height: 1.18;
   }
 
   .copy {
     max-width: 54%;
     margin-top: 10px;
-    font-size: 14px;
+    font-size: 15px;
     line-height: 1.5;
   }
 
@@ -532,7 +532,7 @@
 
   .head {
     height: 40px;
-    font-size: 13px;
+    font-size: 14px;
   }
 
   .head span:first-child {
@@ -576,7 +576,7 @@
   }
 
   .metricLabel {
-    font-size: 13px;
+    font-size: 14px;
   }
 
   .callCell {
@@ -587,7 +587,7 @@
   }
 
   .call {
-    font-size: 12.5px;
+    font-size: 13px;
     line-height: 1.5;
   }
 
@@ -638,12 +638,12 @@
 
   .verdictLabel {
     padding-right: 22px;
-    font-size: 15px;
+    font-size: 16px;
     line-height: 1.4;
   }
 
   .verdictText {
-    font-size: 14px;
+    font-size: 15px;
     line-height: 1.5;
   }
 }
@@ -652,36 +652,41 @@
 
 @media (min-width: 1024px) {
   .inner {
-    --u: calc(100cqw / 1536);
+    --u: calc(100cqw / 1455);
     padding: calc(17 * var(--u)) calc(54 * var(--u)) calc(24 * var(--u)) calc(27 * var(--u));
   }
 
+  /* Left and right edges fade into the page (white / dark) so no hard cut shows. */
   .light .scene {
     left: calc(-35 * var(--u));
-    top: calc(26 * var(--u));
+    top: calc(96 * var(--u));
     width: calc(1202 * var(--u));
-    -webkit-mask-image: linear-gradient(180deg, transparent 0%, transparent 32%, #000 41%, #000 78%, transparent 97%);
-    mask-image: linear-gradient(180deg, transparent 0%, transparent 32%, #000 41%, #000 78%, transparent 97%);
+    -webkit-mask-image: linear-gradient(90deg, transparent 0%, #000 14%, #000 86%, transparent 100%), linear-gradient(180deg, transparent 0%, transparent 32%, #000 41%, #000 78%, transparent 97%);
+    -webkit-mask-composite: source-in;
+    mask-image: linear-gradient(90deg, transparent 0%, #000 14%, #000 86%, transparent 100%), linear-gradient(180deg, transparent 0%, transparent 32%, #000 41%, #000 78%, transparent 97%);
+    mask-composite: intersect;
   }
 
   .light .sceneEdge {
     left: calc(470 * var(--u));
-    top: calc(26 * var(--u));
+    top: calc(96 * var(--u));
     display: block;
     width: calc(1202 * var(--u));
     aspect-ratio: 1536 / 1024;
-    -webkit-mask-image: linear-gradient(90deg, transparent 80%, #000 86%), linear-gradient(180deg, transparent 32%, #000 41%, #000 78%, transparent 97%);
+    -webkit-mask-image: linear-gradient(90deg, transparent 80%, #000 86%, #000 90%, transparent 100%), linear-gradient(180deg, transparent 32%, #000 41%, #000 78%, transparent 97%);
     -webkit-mask-composite: source-in;
-    mask-image: linear-gradient(90deg, transparent 80%, #000 86%), linear-gradient(180deg, transparent 32%, #000 41%, #000 78%, transparent 97%);
+    mask-image: linear-gradient(90deg, transparent 80%, #000 86%, #000 90%, transparent 100%), linear-gradient(180deg, transparent 32%, #000 41%, #000 78%, transparent 97%);
     mask-composite: intersect;
   }
 
   .dark .scene {
     left: 0;
-    top: calc(284 * var(--u));
-    width: calc(668 * var(--u));
-    -webkit-mask-image: linear-gradient(180deg, transparent 0%, #000 8%);
-    mask-image: linear-gradient(180deg, transparent 0%, #000 8%);
+    top: calc(400 * var(--u));
+    width: calc(560 * var(--u));
+    -webkit-mask-image: linear-gradient(90deg, transparent 0%, #000 14%, #000 86%, transparent 100%), linear-gradient(180deg, transparent 0%, #000 8%);
+    -webkit-mask-composite: source-in;
+    mask-image: linear-gradient(90deg, transparent 0%, #000 14%, #000 86%, transparent 100%), linear-gradient(180deg, transparent 0%, #000 8%);
+    mask-composite: intersect;
   }
 
   .top {
@@ -697,17 +702,17 @@
   }
 
   .title {
-    margin: 0 0 0 calc(29 * var(--u));
-    font-size: calc(53 * var(--u));
-    line-height: calc(62 * var(--u));
+    margin: 0;
+    font-size: var(--fs-h2);
+    line-height: 1.17;
     letter-spacing: -0.042em;
   }
 
   .copy {
     max-width: calc(470 * var(--u));
-    margin: calc(19 * var(--u)) 0 0 calc(30 * var(--u));
-    font-size: calc(15.5 * var(--u));
-    line-height: calc(26.5 * var(--u));
+    margin: calc(19 * var(--u)) 0 0;
+    font-size: var(--fs-body);
+    line-height: 1.65;
   }
 
   .carSlot {
@@ -732,7 +737,7 @@
   .head {
     height: calc(59 * var(--u));
     padding-top: calc(4 * var(--u));
-    font-size: calc(15.7 * var(--u));
+    font-size: var(--fs-body);
     color: var(--ov-th);
   }
 
@@ -767,8 +772,8 @@
 
   .metricLabel {
     padding-top: var(--lo);
-    font-size: calc(14.85 * var(--u));
-    line-height: calc(23.5 * var(--u));
+    font-size: var(--fs-body);
+    line-height: 1.58;
   }
 
   .callCell {
@@ -778,8 +783,8 @@
   }
 
   .call {
-    font-size: calc(14.35 * var(--u));
-    line-height: calc(23.5 * var(--u));
+    font-size: var(--fs-label);
+    line-height: 1.64;
   }
 
   .row {
@@ -872,14 +877,14 @@
   }
 
   .verdictLabel {
-    font-size: calc(18.4 * var(--u));
-    line-height: calc(26 * var(--u));
+    font-size: var(--fs-p);
+    line-height: 1.41;
   }
 
   .verdictText {
     margin-top: calc(4 * var(--u));
-    font-size: calc(15 * var(--u));
-    line-height: calc(24.6 * var(--u));
+    font-size: var(--fs-body);
+    line-height: 1.64;
   }
 
   .stats {
@@ -942,15 +947,43 @@
 
   .statText {
     margin: 0;
-    font-size: calc(14.7 * var(--u));
-    line-height: calc(24 * var(--u));
+    font-size: var(--fs-body);
+    line-height: 1.63;
     color: var(--ov-stat-text);
   }
 
   .statValue {
     margin-right: calc(6 * var(--u));
-    font-size: calc(22 * var(--u));
+    font-size: var(--fs-num);
     font-weight: 700;
     color: var(--ov-stat-val);
+  }
+
+  /* Site container: same width and side padding as every other section. */
+  .frame {
+    max-width: var(--container-8xl);
+    padding-inline: var(--gutter);
+  }
+
+  .inner {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+/* Phones and tablets: one heading size and one body size across every model-page section. */
+@media (max-width: 1023px) {
+  h2.title,
+  h2.title span,
+  h2.title .accent {
+    font-size: var(--fs-h2) !important;
+    line-height: 1.15 !important;
+    letter-spacing: -0.02em !important;
+    white-space: normal !important;
+  }
+
+  .copy {
+    font-size: 15px !important;
+    line-height: 1.55 !important;
   }
 }

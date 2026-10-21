@@ -58,7 +58,7 @@ function VerdictPill({ verdictType, text, isDark }) {
   const toneClass = isDark ? style.dark : style.light;
 
   return (
-    <span className={`inline-flex items-start gap-2 text-[0.78rem] font-semibold leading-[1.25] ${toneClass}`}>
+    <span className={`lg:text-[15px] inline-flex items-start gap-2 text-[0.78rem] font-semibold leading-[1.25] ${toneClass}`}>
       <GenIcon name={style.icon} className="h-7 w-7 md:h-5 md:w-5 shrink-0" />
       <span dangerouslySetInnerHTML={{ __html: text }} />
     </span>
@@ -75,7 +75,7 @@ function DesktopRow({ row, isDark }) {
 
   return (
     <div
-      className={`grid grid-cols-[118px_108px_1fr_130px_150px_1.4fr] items-center gap-px ${rowClass} border-b px-5 py-3 text-[0.85rem] ${borderBottom} last:border-b-0`}
+      className={`lg:text-[15px] grid grid-cols-[118px_108px_1fr_130px_150px_1.4fr] items-center gap-px ${rowClass} border-b px-5 py-3 text-[0.85rem] ${borderBottom} last:border-b-0`}
     >
       <span className={`border-r pr-5 pl-3 font-semibold ${cellDivider}`} dangerouslySetInnerHTML={{ __html: row.engine }} />
       <span className={`border-r pr-3 pl-5 ${mutedText} ${cellDivider}`} dangerouslySetInnerHTML={{ __html: row.typicalMileage }} />
@@ -101,7 +101,7 @@ function MobileRow({ row, isDark }) {
 
   return (
     <div
-      className={`grid ${MOBILE_COLS} items-center gap-px ${rowClass} border-b px-3 py-3 text-[0.72rem] leading-[1.3] ${borderBottom} last:border-b-0`}
+      className={`lg:text-[15px] grid ${MOBILE_COLS} items-center gap-px ${rowClass} border-b px-3 py-3 text-[12px] leading-[1.3] ${borderBottom} last:border-b-0`}
     >
       <span className={`border-r pr-4 pl-2 font-semibold ${cellDivider}`} dangerouslySetInnerHTML={{ __html: row.engine }} />
       <span className={`border-r pr-2 pl-4 ${mutedText} ${cellDivider}`} dangerouslySetInnerHTML={{ __html: row.typicalMileage }} />
@@ -144,7 +144,7 @@ export default function OwnershipEconomics({ data }) {
 
       <div className="relative mx-auto w-full max-w-8xl px-4 pb-5 pt-4 md:px-8 md:pb-6 md:pt-5">
         <div className="hidden overflow-hidden rounded-md border border-[var(--color-border)] bg-[var(--color-table-surface)] shadow-[0_14px_40px_var(--color-shadow)] backdrop-blur md:block">
-          <div className={`grid grid-cols-[118px_108px_1fr_130px_150px_1.4fr] gap-px rounded-t-md ${headerBg} px-5 py-2.5 text-[0.82rem] font-semibold leading-[1.2]`}>
+          <div className={`lg:text-[15px] grid grid-cols-[118px_108px_1fr_130px_150px_1.4fr] gap-px rounded-t-md ${headerBg} px-5 py-2.5 text-[0.82rem] font-semibold leading-[1.2]`}>
             {data.columns?.map((col, index) => (
               <span
                 key={col}
@@ -166,7 +166,7 @@ export default function OwnershipEconomics({ data }) {
 
         <div className="overflow-x-auto rounded-md border border-[var(--color-border)] bg-[var(--color-table-surface)] shadow-[0_14px_40px_var(--color-shadow)] backdrop-blur md:hidden">
           <div className="min-w-[850px]">
-            <div className={`grid ${MOBILE_COLS} gap-px ${headerBg} px-3 py-2.5 text-[0.7rem] font-semibold leading-[1.2]`}>
+            <div className={`lg:text-[15px] grid ${MOBILE_COLS} gap-px ${headerBg} px-3 py-2.5 text-[12px] font-semibold leading-[1.2]`}>
               {data.columns?.map((col, index) => (
                 <span
                   key={col}
@@ -195,16 +195,16 @@ export default function OwnershipEconomics({ data }) {
               </span>
               <div className="min-w-0 flex-1">
                 <p
-                  className="text-[0.78rem] font-semibold uppercase tracking-wide text-[var(--color-primary)]"
+                  className="lg:text-[15px] text-[0.78rem] font-semibold uppercase tracking-wide text-[var(--color-primary)]"
                   dangerouslySetInnerHTML={{ __html: data.economicsRule.title }}
                 />
                 <p
-                  className="mt-2 text-[0.85rem] leading-[1.5] text-[var(--color-text)]"
+                  className="lg:text-[15px] mt-2 text-[0.85rem] leading-[1.5] text-[var(--color-text)]"
                   dangerouslySetInnerHTML={{ __html: data.economicsRule.text }}
                 />
                 {data.economicsRule.highlight ? (
                   <p
-                    className="mt-2 text-[0.9rem] font-bold text-[var(--color-primary)]"
+                    className="lg:text-[15px] mt-2 text-[0.9rem] font-bold text-[var(--color-primary)]"
                     dangerouslySetInnerHTML={{ __html: data.economicsRule.highlight }}
                   />
                 ) : null}
@@ -214,7 +214,7 @@ export default function OwnershipEconomics({ data }) {
 
           {data.keyTakeaways?.length > 0 ? (
             <div className="glass-panel rounded-md p-3.5">
-              <p className="text-[0.78rem] font-semibold uppercase tracking-wide text-[var(--color-primary)]">
+              <p className="lg:text-[15px] text-[0.78rem] font-semibold uppercase tracking-wide text-[var(--color-primary)]">
                 Key Takeaways
               </p>
               <ul className="mt-2.5 flex flex-col gap-2.5">
@@ -224,8 +224,8 @@ export default function OwnershipEconomics({ data }) {
                       <GenIcon name={takeawayIcon(item.question)} className="h-8 w-8 md:h-6 md:w-6" />
                     </span>
                     <div className="min-w-0 flex-1">
-                      <p className="text-[0.85rem] font-semibold text-[var(--color-text)]" dangerouslySetInnerHTML={{ __html: item.question }} />
-                      <p className="text-[0.8rem] leading-[1.4] text-[var(--color-text-muted)]" dangerouslySetInnerHTML={{ __html: item.answer }} />
+                      <p className="lg:text-[15px] text-[0.85rem] font-semibold text-[var(--color-text)]" dangerouslySetInnerHTML={{ __html: item.question }} />
+                      <p className="lg:text-[15px] text-[0.8rem] leading-[1.4] text-[var(--color-text-muted)]" dangerouslySetInnerHTML={{ __html: item.answer }} />
                     </div>
                   </li>
                 ))}

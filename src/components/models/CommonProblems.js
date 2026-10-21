@@ -1,5 +1,6 @@
 "use client";
 
+import { useLayoutEffect, useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { Inter } from "next/font/google";
@@ -49,10 +50,40 @@ function LearnMore({ link, className }) {
 
 function Photo({ problem }) {
   return (
-    <div className={s.photo}>
+    <div className={`${s.photo} ${problem.partPhoto ? s.partPhoto : ""}`}>
       {problem.image ? <Image src={problem.image} alt="" fill className={s.photoImg} sizes="(min-width: 1024px) 13vw, 24vw" /> : null}
       <span className={s.num}>{problem.number || String(problem.id).padStart(2, "0")}</span>
     </div>
+  );
+}
+
+// Description: at most six lines with an ellipsis; "Read more" opens the rest when it is longer.
+function ClampedText({ html, className }) {
+  const ref = useRef(null);
+  const [open, setOpen] = useState(false);
+  const [overflows, setOverflows] = useState(false);
+
+  useLayoutEffect(() => {
+    const el = ref.current;
+    if (!el) return undefined;
+    const check = () => {
+      if (!open) setOverflows(el.scrollHeight > el.clientHeight + 1);
+    };
+    check();
+    const observer = new ResizeObserver(check);
+    observer.observe(el);
+    return () => observer.disconnect();
+  }, [open, html]);
+
+  return (
+    <>
+      <p ref={ref} className={`${className} ${open ? "" : s.clamp6}`} dangerouslySetInnerHTML={{ __html: html }} />
+      {overflows || open ? (
+        <button type="button" className={s.readMore} aria-expanded={open} onClick={() => setOpen((v) => !v)}>
+          {open ? "Read less" : "Read more"}
+        </button>
+      ) : null}
+    </>
   );
 }
 
@@ -61,20 +92,9 @@ function DesktopCard({ problem }) {
     <article className={s.card}>
       <Photo problem={problem} />
       <div className={s.body}>
-        <h3 className={s.cardTitle} dangerouslySetInnerHTML={{ __html: problem.titleDesktop || problem.issue }} />
+        <h3 className={s.cardTitle} dangerouslySetInnerHTML={{ __html: problem.issue }} />
         <Severity severity={problem.severity} className={s.cardSeverity} />
-        <p className={s.desc} dangerouslySetInnerHTML={{ __html: spaced(problem.descriptionDesktop || problem.description) }} />
-        {problem.cost ? (
-          <div className={s.cost}>
-            <span className={s.costIcon} aria-hidden="true">
-              £
-            </span>
-            <p className={s.costText}>
-              <strong>{problem.cost.value}</strong>
-              <span>{problem.cost.tag}</span>
-            </p>
-          </div>
-        ) : null}
+        <ClampedText className={s.desc} html={problem.description} />
         <LearnMore link={problem.link} className={s.cardLearn} />
       </div>
     </article>
@@ -87,7 +107,7 @@ function PhoneCard({ problem }) {
       <Photo problem={problem} />
       <div className={s.pBody}>
         <h3 className={s.pTitle}>{problem.issue}</h3>
-        <p className={s.pDesc} dangerouslySetInnerHTML={{ __html: spaced(problem.descriptionMobile || problem.description) }} />
+        <ClampedText className={s.pDesc} html={problem.description} />
       </div>
       <div className={s.pSide}>
         <Severity severity={problem.severity} />

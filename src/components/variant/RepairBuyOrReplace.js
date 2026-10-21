@@ -52,15 +52,15 @@ function Table({ columns, rows, cols, headerBg, headerDivider, isDark }) {
         const cellBorderBottom = isLastRow ? "" : `border-b ${borderBottom}`;
         return (
           <Fragment key={row.problem}>
-            <span className={`${rowClass} px-4 py-2 text-[0.8rem] font-semibold ${cellBorderBottom}`} dangerouslySetInnerHTML={{ __html: row.problem }} />
-            <span className={`${rowClass} border-l ${cellDivider} px-4 py-2 text-[0.8rem] font-semibold ${cellBorderBottom} ${repairableTone(row.repairable)}`}>
+            <span className={`lg:text-[15px] ${rowClass} px-4 py-2 text-[0.8rem] font-semibold ${cellBorderBottom}`} dangerouslySetInnerHTML={{ __html: row.problem }} />
+            <span className={`lg:text-[15px] ${rowClass} border-l ${cellDivider} px-4 py-2 text-[0.8rem] font-semibold ${cellBorderBottom} ${repairableTone(row.repairable)}`}>
               {row.repairable}
             </span>
-            <span className={`${rowClass} border-l ${cellDivider} px-4 py-2 text-[0.8rem] ${cellBorderBottom} ${mutedText}`}>
+            <span className={`lg:text-[15px] ${rowClass} border-l ${cellDivider} px-4 py-2 text-[0.8rem] ${cellBorderBottom} ${mutedText}`}>
               {row.typicalCost}
             </span>
             <span
-              className={`${rowClass} border-l ${cellDivider} px-4 py-2 text-[0.8rem] ${cellBorderBottom} ${mutedText}`}
+              className={`lg:text-[15px] ${rowClass} border-l ${cellDivider} px-4 py-2 text-[0.8rem] ${cellBorderBottom} ${mutedText}`}
               dangerouslySetInnerHTML={{ __html: row.whenItMakesSense }}
             />
           </Fragment>
@@ -74,7 +74,7 @@ function CheckList({ title, items, icon, tone, toneBorder, toneBg }) {
   if (!items?.length) return null;
   return (
     <div className={`flex h-full flex-1 flex-col rounded-md border ${toneBorder} ${toneBg}`}>
-      <p className={`flex items-center gap-2 border-b ${toneBorder} px-3 py-2.5 text-[0.82rem] font-semibold uppercase tracking-wide ${tone}`}>
+      <p className={`lg:text-[15px] flex items-center gap-2 border-b ${toneBorder} px-3 py-2.5 text-[0.82rem] font-semibold uppercase tracking-wide ${tone}`}>
         <GenIcon name={icon} className="h-8 w-8 md:h-6 md:w-6" />
         {title}
       </p>
@@ -137,7 +137,7 @@ export default function RepairBuyOrReplace({ data }) {
           <div className="mt-3">
             <MStripe />
           </div>
-          <p className={`mt-4 max-w-[560px] text-[0.88rem] leading-[1.45] ${bodyTextClass}`}>
+          <p className={`lg:text-[15px] mt-4 max-w-[560px] text-[0.88rem] leading-[1.45] ${bodyTextClass}`}>
             Every {vehicle} has a story. Make the right call with clear data, real-world costs, and honest guidance from UK specialists.
           </p>
         </div>
@@ -158,7 +158,7 @@ export default function RepairBuyOrReplace({ data }) {
         </div>
 
         <div className="relative mx-auto w-full max-w-8xl px-4 py-5 md:px-8 md:py-6">
-          <VariantSectionHeading title={data.h2} className={`max-w-[600px] md:text-[3rem] ${headingClass}`} />
+          <VariantSectionHeading title={data.h2} className={`max-w-[600px] ${headingClass}`} />
           <div className="mt-3">
             <MStripe />
           </div>
@@ -238,10 +238,10 @@ export default function RepairBuyOrReplace({ data }) {
                 <span className={`flex h-9 w-9 shrink-0 items-center justify-center rounded-full ${primaryBadgeClass(isDark)}`}>
                   <GenIcon name="shield" inverted className="h-8 w-8 md:h-6 md:w-6" />
                 </span>
-                <p className="text-[0.72rem] font-semibold uppercase tracking-wide text-[var(--color-primary)]">Closing Verdict</p>
+                <p className="lg:text-[15px] text-[12px] font-semibold uppercase tracking-wide text-[var(--color-primary)]">Closing Verdict</p>
               </div>
               <p
-                className="w-full text-[0.85rem] leading-[1.5] text-[var(--color-text)]"
+                className="lg:text-[15px] w-full text-[0.85rem] leading-[1.5] text-[var(--color-text)]"
                 dangerouslySetInnerHTML={{ __html: data.closingVerdict }}
               />
             </div>
@@ -298,7 +298,7 @@ export default function RepairBuyOrReplace({ data }) {
                     </span>
                     <h3 className="text-[1rem] font-bold leading-tight text-[var(--color-text)]">Don&apos;t Guess. Compare.</h3>
                   </div>
-                  <p className="text-[0.8rem] leading-[1.45] text-[var(--color-text-muted)]">
+                  <p className="lg:text-[15px] text-[0.8rem] leading-[1.45] text-[var(--color-text-muted)]">
                     Get real quotes from vetted UK specialists and make the right call for your {vehicle}.
                   </p>
                 </div>
@@ -328,7 +328,7 @@ export default function RepairBuyOrReplace({ data }) {
                 ) : null}
                 <div className="flex w-full flex-col items-center gap-1 text-center">
                   <GenIcon name={item.icon} className="h-10 w-10 md:h-8 md:w-8 shrink-0" />
-                  <span className="text-[0.56rem] font-semibold leading-tight text-[var(--color-text)]">{item.label}</span>
+                  <span className="lg:text-[15px] text-[12px] font-semibold leading-tight text-[var(--color-text)]">{item.label}</span>
                 </div>
               </div>
             ))}

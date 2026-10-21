@@ -4,7 +4,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { TABLE_HEADER_BG, TABLE_HEADER_TEXT } from "@/components/shared/tableHeader";
 import { useTheme } from "@/components/shared/themeProvider";
-import ScaleBox from "@/components/home/ScaleBox";
 import { MobileCard, MobileHeading, MobileLabel, MobileLead, MobileSection } from "@/components/home/mobileKit";
 
 // The BMW Failure Database — engine failures + warning signs tables with severity and links,
@@ -38,36 +37,6 @@ function Arrow({ style }) {
   );
 }
 
-// Arial cap-height offset: where a capital's top sits inside a line box of height lh.
-const capOffset = (fs, lh) => (lh - 1.117 * fs) / 2 + 0.189 * fs;
-
-function Cap({ as: Tag = "span", left, right, cap, fs, lh, className = "", style, children }) {
-  const l = lh ?? fs * 1.2;
-  return (
-    <Tag className={`absolute ${className}`} style={{ left, right, top: cap - capOffset(fs, l), fontSize: fs, lineHeight: `${l}px`, ...style }}>
-      {children}
-    </Tag>
-  );
-}
-
-// Desktop spec measured on the 1536px references (Section 9.1.png light, Section 9.png dark — same geometry).
-// Section-relative tops; card x values are px from the card's left edge at 1536 (card width 1398.5).
-const D = {
-  h: 942, padL: 60.5, padR: 77, cardW: 1398.5,
-  img: { left: 700, top: 1, w: 836, h: 226 },
-  h2: { left: 69, cap: 60, fs: 54, lh: 60, track: "-0.05em" }, underline: { top: 122, w: 82 },
-  p: { left: 70, cap: 143, fs: 15.7, lh: 24 },
-  tables: [
-    { top: 227, tab: 36, hdr: 27, rows: { light: [60, 61, 60, 60, 59], dark: [60, 61, 60, 60, 59] }, tabW: 250 },
-    { top: 600, tab: 35, hdr: 27, rows: { light: [58.5, 45.5, 46, 50.5], dark: [59.5, 46.5, 47, 48.5] }, tabW: 360 },
-  ],
-  dividers: [60.5, 369.5, 994.5, 1216.5], sq: 54.5,
-  tabText: { left: 75.5, cap: 13, fs: 16 }, hdr: { cap: 8, fs: 11.2, x: [27.5, 82.5, 401.5, 1049.5, 1280.5] },
-  numCx: 30, num: { dy: -10, fs: 22.5 }, titleX: 82.5, titleX2: { light: 78, dark: 83 }, title: { dy: -7, fs: 17.3, lh: 22 }, descX: 401, desc: { fs: 13.15, lh: 17.5 },
-  dotX: 1043.5, dot: 15, sevX: 1068.5, sev: { dy: -6, fs: 15 }, linkX: 1256.5, link: { dy: -6, fs: 15 },
-  key: { top: 876, h: 48, label: { left: 37.5, cap: 19, fs: 14.7 }, dotX: [183.5, 620.5, 891.5, 1151.5], textX: [207.5, 643.5, 914.5, 1173.5], dot: 13, fs: 14.15 },
-};
-
 const COL = {
   light: { bg: "#ffffff", h2: "#05070f", accent: "#05070f", para: "#2e3245", card: "#ffffff", border: "#e8ebf0", line: "#eef0f3", hdrBand: "#f8f9f9", tabBg: "#ffffff", tabEdge: "#e8ebf0",
     sq: "#0048b9", tabText: "#0b1236", label: "#1d2230", num: "#0b4fe0", title: "#0b1236", desc: "#1e2230", sev: "#1d2230", link: "#0b4fe0", keyMuted: "#40465a", shadow: "0 2px 10px rgba(16,24,48,0.03)" },
@@ -75,79 +44,76 @@ const COL = {
     sq: "#003f97", tabText: "#ffffff", label: "#f2f4f7", num: "#2f7bec", title: "#ffffff", desc: "#e1e4e9", sev: "#ffffff", link: "#3b82f6", keyMuted: "#c4c9d1", shadow: "none" },
 };
 
-function Table({ block, spec, rows, C, titleKey, titleX }) {
-  const pct = (v) => `${(v / D.cardW) * 100}%`;
+// One grid for the column headings and the rows, so each heading starts where its column does.
+const GRID = "grid grid-cols-[44px_minmax(0,1.15fr)_minmax(0,2.6fr)_minmax(0,0.85fr)_minmax(0,0.75fr)] gap-x-4 px-5";
+
+function Table({ block, C, titleKey }) {
   const Icon = block.icon === "warning" ? Warn : Gear;
-  const tops = rows.map((_, i) => spec.tab + spec.hdr + rows.slice(0, i).reduce((a, b) => a + b, 0));
   return (
-    <div className="absolute overflow-hidden rounded-[8px]" style={{ left: D.padL, right: D.padR, top: spec.top, height: spec.tab + spec.hdr + rows.reduce((a, b) => a + b, 0), background: C.card, border: `1px solid ${C.border}`, boxShadow: C.shadow }}>
-      <span aria-hidden="true" className="absolute left-0 top-0 [clip-path:polygon(0_0,calc(100%-24px)_0,100%_100%,0_100%)]" style={{ width: spec.tabW, height: spec.tab, background: C.tabEdge }} />
-      <span aria-hidden="true" className="absolute left-0 top-0 [clip-path:polygon(0_0,calc(100%-24px)_0,100%_100%,0_100%)]" style={{ width: spec.tabW - 1, height: spec.tab - 1, background: C.tabBg }} />
-      <span className="absolute left-0 top-0 flex items-center justify-center rounded-tl-[8px] text-white" style={{ width: D.sq, height: spec.tab, background: C.sq }}>
-        <Icon style={{ width: 24, height: 24 }} />
-      </span>
-      <Cap as="h3" left={D.tabText.left} cap={D.tabText.cap} fs={D.tabText.fs} className="whitespace-nowrap uppercase" style={{ color: C.tabText }}>{block.title}</Cap>
-      <div className="absolute inset-x-0" style={{ top: spec.tab, height: spec.hdr, background: TABLE_HEADER_BG, borderTop: `1px solid ${C.line}`, borderBottom: `1px solid ${C.line}` }}>
-        {block.columns.map((c, i) => (
-          <Cap key={c} left={pct(D.hdr.x[i])} cap={D.hdr.cap} fs={D.hdr.fs} className="whitespace-nowrap uppercase" style={{ color: TABLE_HEADER_TEXT }}>{c}</Cap>
+    <div className="overflow-hidden rounded-[8px] border" style={{ background: C.card, borderColor: C.border, boxShadow: C.shadow }}>
+      <div className="relative flex h-11 items-center">
+        <span aria-hidden="true" className="absolute inset-y-0 left-0 w-[340px] [clip-path:polygon(0_0,calc(100%-24px)_0,100%_100%,0_100%)]" style={{ background: C.tabEdge }} />
+        <span aria-hidden="true" className="absolute left-0 top-0 h-[calc(100%-1px)] w-[339px] [clip-path:polygon(0_0,calc(100%-24px)_0,100%_100%,0_100%)]" style={{ background: C.tabBg }} />
+        <span className="relative flex h-full w-14 items-center justify-center text-white" style={{ background: C.sq }}>
+          <Icon style={{ width: 22, height: 22 }} />
+        </span>
+        <h3 className="t-label relative ml-4 font-semibold uppercase tracking-[0.02em]" style={{ color: C.tabText }}>{block.title}</h3>
+      </div>
+      <div className={`${GRID} t-label items-center py-2.5 font-semibold uppercase tracking-[0.02em]`} style={{ background: TABLE_HEADER_BG, color: TABLE_HEADER_TEXT }}>
+        {block.columns.map((c) => (
+          <span key={c}>{c}</span>
         ))}
       </div>
-      {D.dividers.map((d) => (
-        <span key={d} aria-hidden="true" className="absolute bottom-0" style={{ left: pct(d), top: spec.tab + spec.hdr, width: 1, background: C.line }} />
+      {block.rows.map((r) => (
+        <Link key={r.id} href={r.link.href} className={`${GRID} items-center border-t py-3 font-normal`} style={{ borderColor: C.line }}>
+          <span className="t-num" style={{ color: C.num }}>{r.id}</span>
+          <h4 className="text-[17px] font-semibold leading-[1.3]" style={{ color: C.title }}>{(titleKey && r[titleKey] ? r[titleKey] : r.title).replace(/\n/g, " ")}</h4>
+          <p className="t-body" style={{ color: C.desc }}>{r.description}</p>
+          <span className="t-body flex items-center gap-2.5" style={{ color: C.sev }}>
+            <span aria-hidden="true" className="h-3.5 w-3.5 shrink-0 rounded-full" style={{ background: SEV[r.severity.type] }} />
+            {r.severity.label}
+          </span>
+          <span className="t-body flex items-center gap-2 font-medium" style={{ color: C.link }}>
+            {r.link.label}
+            <Arrow style={{ width: 16, height: 16 }} />
+          </span>
+        </Link>
       ))}
-      {block.rows.map((r, i) => {
-        const top = tops[i];
-        const h = rows[i];
-        const c = h / 2;
-        const title = (titleKey && r[titleKey]) || r.title;
-        const n = title.split("\n").length;
-        const nd = r.descriptionDesktop.split("\n").length;
-        return (
-          <Link key={r.id} href={r.link.href} className="absolute inset-x-0 font-normal" style={{ top, height: h, borderTop: i ? `1px solid ${C.line}` : undefined }}>
-            <Cap left={`calc(${pct(D.numCx)} - 10px)`} cap={c + D.num.dy} fs={D.num.fs} className="w-[20px] text-center" style={{ color: C.num }}>{r.id}</Cap>
-            <Cap as="h4" left={pct(titleX)} cap={c + D.title.dy - ((n - 1) * D.title.lh) / 2} fs={D.title.fs} lh={D.title.lh} className="whitespace-pre" style={{ color: C.title }}>{title}</Cap>
-            <Cap as="p" left={pct(D.descX)} cap={c - 4 - ((nd - 1) * D.desc.lh) / 2} fs={D.desc.fs} lh={D.desc.lh} className="whitespace-pre" style={{ color: C.desc }}>{r.descriptionDesktop}</Cap>
-            <span aria-hidden="true" className="absolute rounded-full" style={{ left: pct(D.dotX), top: c - 1 - D.dot / 2, width: D.dot, height: D.dot, background: SEV[r.severity.type] }} />
-            <Cap left={pct(D.sevX)} cap={c + D.sev.dy} fs={D.sev.fs} className="whitespace-nowrap" style={{ color: C.sev }}>{r.severity.label}</Cap>
-            <Cap left={pct(D.linkX)} cap={c + D.link.dy} fs={D.link.fs} className="flex items-center gap-[9px] whitespace-nowrap" style={{ color: C.link }}>
-              {r.link.label}
-              <Arrow style={{ width: 16, height: 16 }} />
-            </Cap>
-          </Link>
-        );
-      })}
     </div>
   );
 }
 
 function Desktop({ data, isDark }) {
-  const t = isDark ? "dark" : "light";
-  const C = COL[t];
-  const K = D.key;
-  const pct = (v) => `${(v / D.cardW) * 100}%`;
+  const C = COL[isDark ? "dark" : "light"];
   return (
-    <div className="relative mx-auto hidden w-full max-w-[1600px] overflow-hidden lg:block" style={{ height: D.h }}>
-      <div aria-hidden="true" className="pointer-events-none absolute right-0" style={{ top: D.img.top, width: `${(D.img.w / 1536) * 100}%`, maxWidth: D.img.w, aspectRatio: `${D.img.w} / ${D.img.h}` }}>
-        <Image src={isDark ? data.headerImage.dark : data.headerImage.light} alt="" fill sizes="840px" className="object-cover [mask-image:linear-gradient(90deg,transparent,black_12%)]" />
+    <div className="relative hidden lg:block">
+      <div aria-hidden="true" className="pointer-events-none absolute right-0 top-0 aspect-[836/226] w-[54%] max-w-[836px]">
+        <Image src={isDark ? data.headerImage.dark : data.headerImage.light} alt="" fill sizes="54vw" className="object-cover [mask-image:linear-gradient(90deg,transparent,black_12%)]" />
       </div>
-      <h2 className="absolute whitespace-nowrap font-bold [&_.heading-accent]:!text-[var(--acc)]" style={{ left: D.h2.left, top: D.h2.cap - capOffset(D.h2.fs, D.h2.lh), fontSize: D.h2.fs, lineHeight: `${D.h2.lh}px`, letterSpacing: D.h2.track, color: C.h2, "--acc": C.accent }} dangerouslySetInnerHTML={{ __html: data.h2 }} />
-      <span aria-hidden="true" className="absolute h-[3px] bg-[linear-gradient(90deg,#0b55e6_60%,transparent)]" style={{ left: D.p.left, top: D.underline.top, width: D.underline.w }} />
-      <Cap as="p" left={D.p.left} cap={D.p.cap} fs={D.p.fs} lh={D.p.lh} className="whitespace-pre" style={{ color: C.para }}>{data.subHeadlineDesktop}</Cap>
+      <div className="site-container section-y relative">
+        <div className="max-w-[640px]">
+          <h2 className="t-h2 [&_.heading-accent]:!text-[var(--acc)]" style={{ color: C.h2, "--acc": C.accent }} dangerouslySetInnerHTML={{ __html: data.h2 }} />
+          <span aria-hidden="true" className="mt-4 block h-[3px] w-[82px] bg-[linear-gradient(90deg,#0b55e6_60%,transparent)]" />
+          <p className="t-p mt-4 max-w-[600px]" style={{ color: C.para }}>{data.subHeadline}</p>
+        </div>
 
-      <Table block={data.engineFailures} spec={D.tables[0]} rows={D.tables[0].rows[t]} C={C} titleKey="titleDesktop" titleX={D.titleX} />
-      <Table block={data.warningSigns} spec={D.tables[1]} rows={D.tables[1].rows[t]} C={C} titleX={D.titleX2[t]} />
+        <div className="mt-8 grid gap-5">
+          <Table block={data.engineFailures} C={C} titleKey="titleDesktop" />
+          <Table block={data.warningSigns} C={C} />
+        </div>
 
-      <div className="absolute rounded-[8px]" style={{ left: D.padL - 2, right: D.padR, top: K.top, height: K.h, background: C.card, border: `1px solid ${C.border}`, boxShadow: C.shadow }}>
-        <Cap left={K.label.left} cap={K.label.cap} fs={K.label.fs} className="whitespace-nowrap font-bold uppercase" style={{ color: C.title }}>Urgency key:</Cap>
-        {data.urgencyKey.map((u, i) => (
-          <span key={u.type}>
-            <span aria-hidden="true" className="absolute rounded-full" style={{ left: pct(K.dotX[i]), top: K.h / 2 - 1 - K.dot / 2, width: K.dot, height: K.dot, background: SEV[u.type] }} />
-            <Cap left={pct(K.textX[i])} cap={K.label.cap + 1} fs={K.fs} className="whitespace-nowrap" style={{ color: C.title }}>
-              {u.label}
-              <span style={{ color: C.keyMuted }}> — {u.text}</span>
-            </Cap>
-          </span>
-        ))}
+        <div className="mt-5 flex flex-wrap items-center gap-x-6 gap-y-2 rounded-[8px] border px-6 py-3.5" style={{ background: C.card, borderColor: C.border, boxShadow: C.shadow }}>
+          <span className="t-label font-bold uppercase" style={{ color: C.title }}>Urgency key:</span>
+          {data.urgencyKey.map((u) => (
+            <span key={u.type} className="t-label flex items-center gap-2.5" style={{ color: C.title }}>
+              <span aria-hidden="true" className="h-3 w-3 shrink-0 rounded-full" style={{ background: SEV[u.type] }} />
+              <span>
+                {u.label}
+                <span style={{ color: C.keyMuted }}> — {u.text}</span>
+              </span>
+            </span>
+          ))}
+        </div>
       </div>
     </div>
   );
@@ -160,11 +126,11 @@ function Phone({ data, isDark }) {
 
   return (
     <MobileSection>
-      <div className="relative mb-6 h-[170px] overflow-hidden rounded-[16px]">
+      <MobileHeading html={data.h2} color={C.h2} accent={isDark ? "#2f7bec" : "#0b4fe0"} />
+      <div className="relative mt-5 h-[170px] overflow-hidden rounded-[16px]">
         <Image src={isDark ? data.headerImage.dark : data.headerImage.light} alt={data.headerImage.alt} fill sizes="720px" className="object-cover object-[65%_50%]" />
       </div>
-      <MobileHeading html={data.h2} color={C.h2} accent={isDark ? "#2f7bec" : "#0b4fe0"} />
-      <MobileLead color={C.para}>{data.subHeadline}</MobileLead>
+      <MobileLead color={C.para} className="!mt-5">{data.subHeadline}</MobileLead>
 
       {blocks.map((b) => {
         const Icon = b.icon === "warning" ? Warn : Gear;
@@ -227,9 +193,7 @@ export default function HomeSec9({ data }) {
 
   return (
     <section className="relative overflow-hidden" style={{ background: isDark ? COL.dark.bg : COL.light.bg }}>
-      <ScaleBox width={1536}>
-        <Desktop data={data} isDark={isDark} />
-      </ScaleBox>
+      <Desktop data={data} isDark={isDark} />
       <Phone data={data} isDark={isDark} />
     </section>
   );

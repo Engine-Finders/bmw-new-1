@@ -211,7 +211,7 @@ function applyNativeMobileFilters(section) {
 function DesktopTable({ engines, isDark }) {
   return (
     <div className="overflow-hidden rounded-md border border-[var(--color-border)] bg-[var(--color-surface)]">
-      <table className="w-full border-collapse text-left text-[13px] text-[var(--color-text)]">
+      <table className="lg:text-[15px] w-full border-collapse text-left text-[13px] text-[var(--color-text)]">
         <thead>
           <tr className={tableHeaderClass(isDark)}>
             {[
@@ -228,7 +228,7 @@ function DesktopTable({ engines, isDark }) {
             ].map((column) => (
               <th
                 key={column}
-                className="border-b border-r border-white/20 px-3 py-3 text-center text-[13px] font-bold last:border-r-0"
+                className="lg:text-[15px] border-b border-r border-white/20 px-3 py-3 text-center text-[13px] font-bold last:border-r-0"
               >
                 {column}
               </th>
@@ -563,7 +563,7 @@ export default function EngineDatabaseLegacy({ data }) {
           <div className="mt-3 flex flex-wrap items-center justify-between gap-4">
             <button
               type="button"
-              className="flex min-h-11 min-w-[280px] items-center justify-between rounded-md border border-[var(--color-border)] px-5 text-[14px] font-medium text-[var(--color-text)] transition-all duration-200 hover:shadow-[0_12px_24px_rgba(0,0,0,0.14)]"
+              className="lg:text-[15px] flex min-h-11 min-w-[280px] items-center justify-between rounded-md border border-[var(--color-border)] px-5 text-[14px] font-medium text-[var(--color-text)] transition-all duration-200 hover:shadow-[0_12px_24px_rgba(0,0,0,0.14)]"
             >
               <span className="flex items-center gap-3">
                 <StatIcon name="database" isDark={isDark} className="h-5 w-5 object-contain" />
@@ -571,10 +571,10 @@ export default function EngineDatabaseLegacy({ data }) {
               </span>
               <span>v</span>
             </button>
-            <p className="mr-auto border-l border-[var(--color-border)] pl-7 text-[12px] text-[var(--color-text-muted)]">
+            <p className="lg:text-[15px] mr-auto border-l border-[var(--color-border)] pl-7 text-[12px] text-[var(--color-text-muted)]">
               Showing {shownDesktopCount} of {totalEngineCount} engine codes
             </p>
-            <div className="flex items-center gap-5 rounded-md border border-[var(--color-border)] px-5 py-3 text-[13px]">
+            <div className="lg:text-[15px] flex items-center gap-5 rounded-md border border-[var(--color-border)] px-5 py-3 text-[13px]">
               <span>
                 <Rating value="★☆☆☆☆" /> Poor
               </span>
@@ -590,7 +590,7 @@ export default function EngineDatabaseLegacy({ data }) {
             </div>
           </div>
 
-          <div className="mt-3 flex flex-wrap items-center justify-between gap-3 rounded-md border border-[var(--color-border)] bg-[var(--color-surface)] px-4 py-3 text-[12px] text-[var(--color-text-muted)]">
+          <div className="lg:text-[15px] mt-3 flex flex-wrap items-center justify-between gap-3 rounded-md border border-[var(--color-border)] bg-[var(--color-surface)] px-4 py-3 text-[12px] text-[var(--color-text-muted)]">
             <p className="flex items-center gap-3">
               <span
                 className={`flex h-8 w-8 items-center justify-center rounded-full ${
@@ -626,7 +626,7 @@ export default function EngineDatabaseLegacy({ data }) {
                 Proprietary UK Data
               </h3>
             </div>
-            <p className="mt-3 text-center text-[14px] leading-[1.5]">
+            <p className="lg:text-[15px] mt-3 text-center text-[14px] leading-[1.5]">
               Every figure below is powered by real UK owner enquiries in 2025. This is data you won&apos;t find anywhere
               else.
             </p>

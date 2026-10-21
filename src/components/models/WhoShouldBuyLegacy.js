@@ -103,8 +103,8 @@ function ProofStrip({ isDark }) {
           >
             <HomeIcon name={item.icon} isDark={isDark} className="h-10 w-10 object-contain" />
           </span>
-          <strong className="mt-1.5 text-[14px] leading-tight text-[var(--color-text)]">{item.title}</strong>
-          <span className="mt-0.5 text-[13px] leading-[1.25] text-[var(--color-text-muted)]">{item.text}</span>
+          <strong className="lg:text-[15px] mt-1.5 text-[14px] leading-tight text-[var(--color-text)]">{item.title}</strong>
+          <span className="lg:text-[15px] mt-0.5 text-[13px] leading-[1.25] text-[var(--color-text-muted)]">{item.text}</span>
         </li>
       ))}
     </ul>
@@ -149,7 +149,7 @@ function BuyerRow({ row, index, model, isDark }) {
       </div>
 
       <p
-        className={`border-t border-[var(--color-border)] px-3 py-3 text-[var(--color-text)] md:px-4 md:py-3 lg:border-t-0 ${sectionTableText} md:text-[14px]`}
+        className={`lg:text-[15px] border-t border-[var(--color-border)] px-3 py-3 text-[var(--color-text)] md:px-4 md:py-3 lg:border-t-0 ${sectionTableText} md:text-[14px]`}
         dangerouslySetInnerHTML={{ __html: cleanText(row.verdict) }}
       />
     </article>
@@ -171,7 +171,7 @@ export default function WhoShouldBuyLegacy({ data }) {
       <div className="mx-auto w-full max-w-8xl px-4 md:px-8">
         <div className="flex flex-col gap-5 lg:grid lg:grid-cols-[minmax(0,0.92fr)_minmax(520px,1fr)] lg:items-start">
           <div>
-            <h2 className="max-w-[760px] text-[29px] font-bold leading-[1.08] tracking-normal text-[var(--color-text)] md:text-[45px]">
+            <h2 className="max-w-[760px] t-h2 text-[var(--color-text)]">
               <span dangerouslySetInnerHTML={{ __html: title.before }} />
               {title.accent ? (
                 <>
@@ -196,7 +196,7 @@ export default function WhoShouldBuyLegacy({ data }) {
         </div>
 
         <div className="mt-6 overflow-hidden rounded-md border border-[var(--color-border)] bg-[var(--color-surface-raised)] shadow-[0_12px_32px_var(--color-shadow)]">
-          <div className={`hidden grid-cols-[40%_18%_42%] text-[14px] font-bold lg:grid ${tableHeaderClass(isDark)}`}>
+          <div className={`lg:text-[15px] hidden grid-cols-[40%_18%_42%] text-[14px] font-bold lg:grid ${tableHeaderClass(isDark)}`}>
             {(data.columns || ["Buyer Profile", "Rating", "Our Verdict"]).map((column, index) => (
               <div key={column} className={`px-3 py-2.5 ${index > 0 ? "border-l border-white/20" : ""}`}>
                 {column}

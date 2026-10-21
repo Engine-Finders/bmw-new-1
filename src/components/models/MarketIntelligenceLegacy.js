@@ -132,7 +132,7 @@ function RichText({ value, strongFirst = false }) {
 function SignalTable({ rows, isDark }) {
   return (
     <div className="overflow-hidden rounded-md border border-[var(--color-border)] bg-[var(--color-surface-raised)] shadow-[0_10px_30px_var(--color-shadow)]">
-      <div className={`grid grid-cols-[34%_30%_36%] text-[12px] font-bold md:grid-cols-[32%_33%_35%] md:text-[14px] ${tableHeaderClass(isDark)}`}>
+      <div className={`lg:text-[15px] grid grid-cols-[34%_30%_36%] text-[12px] font-bold md:grid-cols-[32%_33%_35%] md:text-[14px] ${tableHeaderClass(isDark)}`}>
         <div className="px-2 py-2 md:px-5 md:py-3">Signal</div>
         <div className="border-l border-white/28 px-2 py-2 md:px-3 md:py-2">2025 Data</div>
         <div className="border-l border-white/28 px-2 py-2 md:px-3 md:py-2">Demand Trend</div>
@@ -193,7 +193,7 @@ function InsightsPanel({ insights, isDark }) {
             <span className="float-left mr-3 mb-1 md:mr-3.5">
               <CircleIcon name={insightIconKeys[index] || insightIconKeys[0]} isDark={isDark} />
             </span>
-            <p className="text-[13px] leading-[1.42] text-[var(--color-text)] md:text-[14px]">
+            <p className="lg:text-[15px] text-[13px] leading-[1.42] text-[var(--color-text)] md:text-[14px]">
               <RichText value={insight} strongFirst />
             </p>
           </article>
@@ -212,7 +212,7 @@ function LiveFeed({ note, isDark }) {
     <aside className="rounded-md border border-[var(--color-border)] bg-[var(--color-surface-raised)] p-4 shadow-[0_10px_30px_var(--color-shadow)] md:p-5">
       <div className="flex items-center justify-between gap-4">
         <h3 className="text-[16px] font-bold text-[var(--color-text)] md:text-[17px]">Live Enquiry Feed</h3>
-        <span className="inline-flex items-center gap-2 text-[13px] text-[var(--color-text-muted)]">
+        <span className="lg:text-[15px] inline-flex items-center gap-2 text-[13px] text-[var(--color-text-muted)]">
           <span className="h-2 w-2 rounded-full bg-[var(--color-chrome-bright)]" />
           Live
         </span>
@@ -220,7 +220,7 @@ function LiveFeed({ note, isDark }) {
       <div className="mt-5 flex h-20 items-center justify-center">
         <HomeIcon name="live" isDark={isDark} className="h-14 w-14 object-contain opacity-80" />
       </div>
-      <p className="mt-3 text-[14px] leading-[1.35] text-[var(--color-text-muted)]">{displayNote}</p>
+      <p className="lg:text-[15px] mt-3 text-[14px] leading-[1.35] text-[var(--color-text-muted)]">{displayNote}</p>
       <Link
         href="/data/most-enquired-models"
         className="mt-4 inline-flex min-h-11 w-full items-center justify-center gap-3 rounded-md border border-[var(--color-border-strong)] px-5 py-3 text-[15px] font-bold text-[var(--color-text)] transition-all duration-200 hover:shadow-[0_12px_24px_rgba(0,0,0,0.14)]"
@@ -240,7 +240,7 @@ function PullQuote({ data, isDark }) {
       <div className="p-3 md:p-3.5">
         <div className="flex items-center gap-2.5">
           <HomeIcon name="quote" isDark={isDark} className="h-7 w-7 shrink-0 object-contain opacity-70" />
-          <p className="text-[11px] font-bold uppercase text-[var(--color-chrome-bright)] md:text-[12px]">
+          <p className="lg:text-[15px] text-[12px] font-bold uppercase text-[var(--color-chrome-bright)] md:text-[13px]">
             Editorial Pull-Quote
           </p>
         </div>
@@ -248,7 +248,7 @@ function PullQuote({ data, isDark }) {
           className="mt-2 max-w-[560px] font-heading text-[22px] font-semibold leading-[1.1] text-[var(--color-text)] md:mt-2.5 md:text-[31px]"
           dangerouslySetInnerHTML={{ __html: cleanText(data.title) }}
         />
-        <blockquote className="mt-2 max-w-[760px] text-[12px] leading-[1.45] text-[var(--color-text)] md:text-[13px]">
+        <blockquote className="lg:text-[15px] mt-2 max-w-[760px] text-[12px] leading-[1.45] text-[var(--color-text)] md:text-[13px]">
           &ldquo;<span dangerouslySetInnerHTML={{ __html: cleanText(data.quote) }} />&rdquo;
         </blockquote>
       </div>
@@ -280,7 +280,7 @@ export default function MarketIntelligenceLegacy({ data, quoteData }) {
       <div className="relative mx-auto w-full max-w-8xl px-4 md:px-8">
         <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
           <div>
-            <h2 className="max-w-[960px] text-[29px] font-bold leading-[1.08] tracking-normal text-[var(--color-text)] md:text-[45px]">
+            <h2 className="max-w-[960px] t-h2 text-[var(--color-text)]">
               <span dangerouslySetInnerHTML={{ __html: title.before }} />
               {title.accent ? (
                 <>
@@ -304,10 +304,10 @@ export default function MarketIntelligenceLegacy({ data, quoteData }) {
                 className="font-heading text-[24px] font-semibold leading-none text-[var(--color-text)] md:text-[34px]"
                 dangerouslySetInnerHTML={{ __html: metricFromTitle(data.h2) }}
               />
-              <p className="mt-2 text-[13px] leading-[1.45] text-[var(--color-text-muted)] md:text-[14px]">
+              <p className="lg:text-[15px] mt-2 text-[13px] leading-[1.45] text-[var(--color-text-muted)] md:text-[14px]">
                 Total Enquiries in 2025
               </p>
-              <p className="mt-1 text-[13px] font-medium text-[var(--color-chrome-bright)] md:text-[14px]">
+              <p className="lg:text-[15px] mt-1 text-[13px] font-medium text-[var(--color-chrome-bright)] md:text-[14px]">
                 [BMW-VERIFIED]
               </p>
             </div>

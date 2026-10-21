@@ -19,7 +19,7 @@ function DesktopRow({ row, icon, isDark }) {
   const borderBottom = isDark ? "border-white/15" : "border-[var(--color-border)]";
 
   return (
-    <div className={`grid ${DESKTOP_COLS} items-center gap-px ${rowClass} px-2 py-3 text-[0.82rem] border-b ${borderBottom} last:border-b-0`}>
+    <div className={`lg:text-[15px] grid ${DESKTOP_COLS} items-center gap-px ${rowClass} px-2 py-3 text-[0.82rem] border-b ${borderBottom} last:border-b-0`}>
       <span className="flex items-center gap-2 px-2 font-semibold">
         <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-[var(--color-primary-soft)] text-[var(--color-primary)]">
           <GenIcon name={icon} className="h-8 w-8 md:h-6 md:w-6" />
@@ -53,15 +53,15 @@ function AccordionRow({ row, icon, isOpen, onToggle, isDark }) {
             <GenIcon name={icon} inverted className="h-8 w-8 md:h-6 md:w-6" />
           </span>
           <div className="min-w-0">
-            <p className="text-[0.92rem] font-bold leading-tight text-[var(--color-text)]" dangerouslySetInnerHTML={{ __html: row.engineType }} />
-            <p className="mt-0.5 truncate text-[0.74rem] text-[var(--color-text-muted)]" dangerouslySetInnerHTML={{ __html: row.bestFor }} />
+            <p className="lg:text-[15px] text-[0.92rem] font-bold leading-tight text-[var(--color-text)]" dangerouslySetInnerHTML={{ __html: row.engineType }} />
+            <p className="lg:text-[15px] mt-0.5 truncate text-[12px] text-[var(--color-text-muted)]" dangerouslySetInnerHTML={{ __html: row.bestFor }} />
           </div>
         </div>
         <GenIcon name="chevronDown" className={`h-4 w-4 shrink-0 text-[var(--color-primary)] transition-transform ${isOpen ? "rotate-180" : ""}`} />
       </button>
 
       {isOpen ? (
-        <div className="flex flex-col gap-2.5 px-4 pb-4 text-[0.84rem]">
+        <div className="lg:text-[15px] flex flex-col gap-2.5 px-4 pb-4 text-[0.84rem]">
           <div className="flex flex-wrap items-center justify-between gap-x-3 gap-y-1 border-t border-[var(--color-border)] pt-2.5">
             <span className="flex items-center gap-1.5 text-[var(--color-text-muted)]">
               <GenIcon name="tag" className="h-7 w-7 md:h-5 md:w-5 shrink-0" />
@@ -146,7 +146,7 @@ export default function ReplacementCosts({ data }) {
 
         {/* Desktop only: original table */}
         <div className="mt-6 hidden overflow-hidden rounded-md border border-[var(--color-border)] bg-[var(--color-table-surface)] shadow-[0_14px_40px_var(--color-shadow)] backdrop-blur md:block">
-          <div className={`grid ${DESKTOP_COLS} gap-px ${headerBg} px-2 py-3 text-[0.82rem] font-semibold`}>
+          <div className={`lg:text-[15px] grid ${DESKTOP_COLS} gap-px ${headerBg} px-2 py-3 text-[0.82rem] font-semibold`}>
             {data.columns?.map((col, index) => (
               <span key={col} className={`px-2 ${index > 0 ? `border-l ${headerDivider}` : ""}`}>{col}</span>
             ))}
@@ -161,7 +161,7 @@ export default function ReplacementCosts({ data }) {
         {data.figuresNote ? (
           <div className="glass-panel mt-6 flex gap-3 rounded-md p-4">
             <GenIcon name="info" className="h-8 w-8 md:h-6 md:w-6 shrink-0" />
-            <p className="text-[0.82rem] leading-[1.5] text-[var(--color-text-muted)]" dangerouslySetInnerHTML={{ __html: data.figuresNote }} />
+            <p className="lg:text-[15px] text-[0.82rem] leading-[1.5] text-[var(--color-text-muted)]" dangerouslySetInnerHTML={{ __html: data.figuresNote }} />
           </div>
         ) : null}
 
@@ -171,7 +171,7 @@ export default function ReplacementCosts({ data }) {
             <span className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-full ${primaryBadgeClass(isDark)}`}>
               <GenIcon name="labour-time" inverted className="h-9 w-9 md:h-7 md:w-7" />
             </span>
-            <p className="text-[0.82rem] leading-[1.45] text-[var(--color-text)]">
+            <p className="lg:text-[15px] text-[0.82rem] leading-[1.45] text-[var(--color-text)]">
               <span className="font-bold">Labour estimate: </span>
               <span dangerouslySetInnerHTML={{ __html: data.labourEstimate }} />
             </p>
@@ -186,7 +186,7 @@ export default function ReplacementCosts({ data }) {
                 <span className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-full ${primaryBadgeClass(isDark)}`}>
                   <GenIcon name="labour-time" inverted className="h-9 w-9 md:h-7 md:w-7" />
                 </span>
-                <p className="flex-1 text-[0.82rem] leading-[1.45] text-[var(--color-text)]">
+                <p className="lg:text-[15px] flex-1 text-[0.82rem] leading-[1.45] text-[var(--color-text)]">
                   <span className="font-bold">Labour estimate: </span>
                   <span dangerouslySetInnerHTML={{ __html: data.labourEstimate }} />
                 </p>
@@ -209,7 +209,7 @@ export default function ReplacementCosts({ data }) {
             href="/quote"
             className={`${primaryCtaClass("mt-4 flex w-full items-center justify-center gap-2 rounded-xl px-3 py-2.5 md:hidden")}`}
           >
-            <span className="whitespace-nowrap text-center text-[0.78rem] font-bold md:text-[0.9rem]">{ctaLabel}</span>
+            <span className="lg:text-[15px] whitespace-nowrap text-center text-[0.78rem] font-bold md:text-[0.9rem]">{ctaLabel}</span>
             <GenIcon name="arrow" className="h-4 w-4 shrink-0" />
           </a>
         ) : null}

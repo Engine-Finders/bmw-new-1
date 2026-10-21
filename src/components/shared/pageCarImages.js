@@ -8,6 +8,7 @@ import {
   modelEngineImage,
 } from "@/components/shared/carImage";
 import carImages from "@/data/shared/carImages.json";
+import { partImageFor } from "@/components/shared/partImage";
 
 // Server-side: give every car slot on a page its own photo before the page renders, so
 // the same picture never shows twice on one page and colours vary from row to row.
@@ -44,13 +45,26 @@ export function withModelPageImages(data) {
       heroCar: hero?.src ? { src: hero.src, width: hero.width, height: hero.height } : null,
       // The bright line-up backdrop made for the model hero when there is one, else the scene;
       // the light theme gets its hazier version (pale sky and skyline, cars at full colour).
-      heroScene: hero?.backdrop || hero?.scene || null,
-      heroSceneLight: hero?.backdropLight || null,
+      // The client's own hero image for this model (IBS-Modelpage-Hero-images) wins in both themes.
+      heroScene: hero?.provided || hero?.backdrop || hero?.scene || null,
+      heroSceneLight: hero?.provided ? null : hero?.backdropLight || null,
     };
   }
 
   // Sections are about this model: hints carry the model name so "F30" alone resolves.
   const modelName = model ? model.replace("-", " ") : "";
+
+  // Problem cards: the background-removed photo of the part each problem names (title first, then its text).
+  if (out.commonProblems?.problems) {
+    out.commonProblems = {
+      ...out.commonProblems,
+      problems: out.commonProblems.problems.map((problem) => ({
+        ...problem,
+        image: partImageFor(problem.issue || problem.title) || partImageFor(problem.description) || problem.image || null,
+        partPhoto: Boolean(partImageFor(problem.issue || problem.title) || partImageFor(problem.description)),
+      })),
+    };
+  }
 
   if (out.ownershipVerdict) {
     const [image] = pick([[modelName, stripTags(out.ownershipVerdict.h2)]]);
@@ -177,7 +191,11 @@ export function withGenerationPageImages(data) {
     };
     out.commonProblems = {
       ...out.commonProblems,
-      problems: out.commonProblems.problems.map((problem) => ({ ...problem, image: engineImageForProblem(problem) })),
+      // The part the problem names first (background-removed part photo), else the engine.
+      problems: out.commonProblems.problems.map((problem) => ({
+        ...problem,
+        image: partImageFor(problem.issue || problem.title) || partImageFor(problem.description) || engineImageForProblem(problem),
+      })),
     };
   }
 

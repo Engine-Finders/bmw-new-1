@@ -713,14 +713,14 @@
   .title,
   .accent {
     margin-left: 0;
-    font-size: 23px;
+    font-size: 18px;
     line-height: 1.25;
   }
 
   .copy {
     max-width: none;
     margin-left: 0;
-    font-size: 14px;
+    font-size: 15px;
     line-height: 1.55;
   }
 
@@ -743,7 +743,7 @@
   .pOpen .pHead .num {
     width: 22px;
     height: 22px;
-    font-size: 12px;
+    font-size: 13px;
   }
 
   .pText,
@@ -758,7 +758,7 @@
 
   .pHead .cardLabel,
   .pOpen .pHead .cardLabel {
-    font-size: 12px;
+    font-size: 13px;
     line-height: 1.4;
   }
 
@@ -768,23 +768,23 @@
   }
 
   .pOpen .pHead .code {
-    font-size: 22px;
+    font-size: 18px;
   }
 
   .pHead .badgeLine,
   .pHead .badgeTag {
-    font-size: 11.5px;
+    font-size: 13px;
     line-height: 1.5;
   }
 
   .pMeta {
-    font-size: 11.5px;
+    font-size: 13px;
     line-height: 1.5;
   }
 
   .pOpen .pHead .years,
   .pOpen .pHead .engines {
-    font-size: 13px;
+    font-size: 14px;
     line-height: 1.5;
   }
 
@@ -823,7 +823,7 @@
     height: 42px;
     margin-top: 10px;
     border-radius: 7px;
-    font-size: 15px;
+    font-size: 16px;
   }
 
   .pCtaIcon {
@@ -848,13 +848,13 @@
   }
 
   .pVerdict .verdictLabel {
-    font-size: 14.5px;
+    font-size: 15px;
     line-height: 1.4;
   }
 
   .pVerdict .verdictText {
     margin-top: 4px;
-    font-size: 14px;
+    font-size: 15px;
     line-height: 1.55;
   }
 
@@ -867,7 +867,7 @@
   .compareTitle {
     gap: 8px;
     margin-left: 2px;
-    font-size: 15px;
+    font-size: 16px;
     line-height: 1.35;
   }
 
@@ -974,7 +974,7 @@
 
 @media (min-width: 1024px) {
   .panel {
-    --u: calc(100cqw / 1536);
+    --u: calc(100cqw / 1514);
     margin: calc(3 * var(--u)) calc(11 * var(--u)) calc(11 * var(--u));
     padding: 0 calc(25 * var(--u)) calc(24 * var(--u)) calc(25 * var(--u));
     border-radius: calc(16 * var(--u));
@@ -995,243 +995,165 @@
 
   .title {
     margin-left: calc(14 * var(--u));
-    font-size: calc(34.6 * var(--u));
-    line-height: calc(44 * var(--u));
+    font-size: var(--fs-h2);
+    line-height: 1.27;
     letter-spacing: 0;
   }
 
   .accent {
-    font-size: calc(33.5 * var(--u));
+    font-size: var(--fs-h2);
   }
 
   .copy {
     max-width: none;
     margin: calc(5 * var(--u)) 0 0 calc(13 * var(--u));
-    font-size: calc(13.8 * var(--u));
-    line-height: calc(24 * var(--u));
+    font-size: var(--fs-label);
+    line-height: 1.65;
   }
 
-  /* ---------- seven cards ---------- */
+  /* ---------- seven cards: flow layout, collapsed by default, open on click ---------- */
 
   .cards {
     display: grid;
-    grid-template-columns: 291fr 178fr 178fr 177fr 190fr 176fr 188fr;
-    column-gap: calc(14 * var(--u));
+    grid-template-columns: repeat(var(--count, 7), minmax(0, 1fr));
+    column-gap: 12px;
     align-items: start;
-    margin-top: calc(26 * var(--u));
+    margin-top: 28px;
   }
 
   .card {
     position: relative;
-    height: calc(435 * var(--u));
-    margin-top: calc(3 * var(--u));
+    display: flex;
+    flex-direction: column;
+    padding: 14px 12px 14px;
     border: 1px solid var(--g-card-border);
-    border-radius: calc(12 * var(--u));
+    border-radius: 12px;
     background: var(--g-card);
     box-shadow: var(--g-card-shadow);
-    --codeX: 46;
-    --codeY: 50.8;
-    --codeFs: 20.4;
-    --metaX: 44.5;
-    --metaY: 87.6;
-    --metaLh: 19;
-    --metaFs: 11.2;
-    --starsX: 13.5;
-    --starsY: 290;
   }
 
   .cardOpen {
-    height: calc(441 * var(--u));
-    margin-top: 0;
     border-color: var(--g-open-border);
-    --codeX: 55.5;
-    --codeY: 45;
-    --codeFs: 26.3;
-    --metaX: 54;
-    --metaY: 81;
-    --metaLh: 20;
-    --metaFs: 13.5;
-    --starsX: 17;
-    --starsY: 236;
   }
-
-  .card:nth-child(3) { --codeX: 46; --metaX: 45.5; --starsX: 16.5; }
-  .card:nth-child(4) { --codeX: 47; --metaX: 45.5; --starsX: 14.5; }
-  .card:nth-child(5) { --codeX: 21; --codeY: 46.3; --codeFs: 16.9; --metaX: 19.5; --metaY: 78.7; --metaLh: 18; --starsX: 16; --starsY: 301; }
-  .card:nth-child(6) { --codeX: 41; --codeY: 47.3; --codeFs: 17.6; --metaX: 20.5; --metaY: 81.7; --metaLh: 18; --starsX: 16; --starsY: 301; }
-  .card:nth-child(7) { --codeX: 40.5; --codeY: 47.3; --codeFs: 18.6; --metaX: 40.5; --metaY: 85; --metaLh: 18.5; --starsX: 15; --starsY: 301; }
 
   .cardHead {
-    position: absolute;
-    top: calc(21 * var(--u));
-    left: calc(15 * var(--u));
-    right: calc(15 * var(--u));
     display: flex;
     align-items: center;
-  }
-
-  .cardOpen .cardHead {
-    left: calc(21 * var(--u));
-  }
-
-  .card:nth-child(5) .cardHead {
-    left: calc(20 * var(--u));
+    gap: 8px;
+    width: 100%;
+    padding: 0;
+    border: 0;
+    background: none;
+    color: inherit;
+    text-align: left;
   }
 
   .card .num {
-    width: calc(22 * var(--u));
-    height: calc(22 * var(--u));
-    border-radius: calc(4 * var(--u));
-    font-size: calc(12 * var(--u));
+    flex-shrink: 0;
+    width: 22px;
+    height: 22px;
+    border-radius: 4px;
+    font-size: 13px;
   }
 
   .card .cardLabel {
-    margin-left: calc(12 * var(--u));
-    font-size: calc(13 * var(--u));
-    line-height: calc(18 * var(--u));
-    padding-top: calc(4 * var(--u));
-  }
-
-  .cardOpen .cardLabel {
-    margin-left: calc(14 * var(--u));
-    padding-top: calc(1 * var(--u));
+    min-width: 0;
+    font-size: var(--fs-label);
+    line-height: 1.3;
   }
 
   .headChevron {
-    width: calc(20 * var(--u));
-    height: calc(20 * var(--u));
+    flex-shrink: 0;
+    width: 18px;
+    height: 18px;
     margin-left: auto;
     color: var(--g-chevron);
   }
 
   .card .code {
-    position: absolute;
-    top: calc(var(--codeY) * var(--u));
-    left: calc(var(--codeX) * var(--u));
-    font-size: calc(var(--codeFs) * var(--u));
-    line-height: calc(26 * var(--u));
-    white-space: nowrap;
-  }
-
-  .cardOpen .code {
-    line-height: calc(30 * var(--u));
+    margin-top: 10px;
+    font-size: var(--fs-h6);
+    line-height: 1.25;
   }
 
   .meta {
-    position: absolute;
-    top: calc(var(--metaY) * var(--u));
-    left: calc(var(--metaX) * var(--u));
-    right: calc(6 * var(--u));
-    font-size: calc(var(--metaFs) * var(--u));
-    line-height: calc(var(--metaLh) * var(--u));
+    min-height: 168px;
+    margin-top: 6px;
+    font-size: var(--fs-label);
+    line-height: 1.4;
   }
 
   .meta .badgeLine,
   .meta .badgeTag {
-    font-size: calc(11.5 * var(--u));
-  }
-
-  .card:nth-child(5) .meta .badgeLine,
-  .card:nth-child(5) .meta .badgeTag {
-    line-height: calc(19.5 * var(--u));
+    font-size: var(--fs-label);
+    line-height: 1.35;
   }
 
   .meta .badgeBlock + .years {
-    margin-top: calc(10 * var(--u));
-  }
-
-  .card:nth-child(6) .meta .badgeBlock + .years {
-    margin-top: calc(11.4 * var(--u));
-  }
-
-  .meta .years,
-  .meta .engines {
-    white-space: nowrap;
+    margin-top: 6px;
   }
 
   .car {
-    position: absolute;
+    position: relative;
+    height: 74px;
+    margin-top: 10px;
   }
 
-  /* car boxes: where each car stands in the light reference */
-  .card:nth-child(1) .car { left: calc(42 * var(--u)); top: calc(131 * var(--u)); width: calc(195 * var(--u)); height: calc(98 * var(--u)); }
-  .card:nth-child(2) .car { left: calc(13 * var(--u)); top: calc(198 * var(--u)); width: calc(141 * var(--u)); height: calc(71 * var(--u)); }
-  .card:nth-child(3) .car { left: calc(21 * var(--u)); top: calc(201 * var(--u)); width: calc(131 * var(--u)); height: calc(71 * var(--u)); }
-  .card:nth-child(4) .car { left: calc(19 * var(--u)); top: calc(200 * var(--u)); width: calc(135 * var(--u)); height: calc(73 * var(--u)); }
-  .card:nth-child(5) .car { left: calc(20 * var(--u)); top: calc(217 * var(--u)); width: calc(141 * var(--u)); height: calc(70 * var(--u)); }
-  .card:nth-child(6) .car { left: calc(17 * var(--u)); top: calc(219 * var(--u)); width: calc(137 * var(--u)); height: calc(66 * var(--u)); }
-  .card:nth-child(7) .car { left: calc(23 * var(--u)); top: calc(203 * var(--u)); width: calc(136 * var(--u)); height: calc(74 * var(--u)); }
-
   .cardStars {
-    position: absolute;
-    top: calc(var(--starsY) * var(--u));
-    left: calc(var(--starsX) * var(--u));
-    gap: calc(2 * var(--u));
+    margin-top: 10px;
+    gap: 2px;
   }
 
   .cardStars svg {
-    width: calc(20 * var(--u));
-    height: calc(20 * var(--u));
+    width: 17px;
+    height: 17px;
   }
 
   .verdict {
-    position: absolute;
-    top: calc(269.7 * var(--u));
-    left: calc(18 * var(--u));
-    right: calc(14 * var(--u));
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid var(--g-card-border);
   }
 
   .verdict .verdictLabel {
-    font-size: calc(12.8 * var(--u));
-    line-height: calc(18 * var(--u));
+    font-size: var(--fs-label);
+    font-weight: 600;
+    line-height: 1.4;
   }
 
   .verdict .verdictText {
-    margin-top: calc(2.5 * var(--u));
-    font-size: calc(12.6 * var(--u));
-    line-height: calc(20.67 * var(--u));
+    margin-top: 4px;
+    font-size: var(--fs-label);
+    line-height: 1.55;
   }
 
   .cta {
-    position: absolute;
-    top: calc(386 * var(--u));
-    left: calc(16 * var(--u));
-    right: calc(16 * var(--u));
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    height: calc(36 * var(--u));
-    padding: 0 calc(11 * var(--u)) 0 calc(17 * var(--u));
+    justify-content: center;
+    gap: 8px;
+    min-height: 38px;
+    margin-top: 12px;
+    padding: 6px 8px;
     border: 1px solid var(--g-btn-border);
-    border-radius: calc(6 * var(--u));
+    border-radius: 6px;
     background: var(--g-btn-bg);
     color: var(--g-btn-text);
-    font-size: calc(12.9 * var(--u));
+    font-size: 14px;
     font-weight: 600;
+    line-height: 1.2;
+    text-align: center;
   }
 
   .cardOpen .cta {
-    top: calc(389 * var(--u));
-    left: calc(20 * var(--u));
-    right: calc(17 * var(--u));
-    justify-content: center;
-    gap: calc(14 * var(--u));
-    padding: 0;
     border-color: var(--g-open-btn-border, var(--g-btn-border));
     color: var(--g-open-btn-text, var(--g-btn-text));
   }
 
-  /* dark reference: "Explore the E30" centred with the chevron beside it */
-  .dark .cta {
-    justify-content: center;
-    gap: calc(14 * var(--u));
-    padding: 0;
-    white-space: nowrap;
-  }
-
   .ctaIcon {
-    width: calc(19 * var(--u));
-    height: calc(19 * var(--u));
+    flex-shrink: 0;
+    width: 16px;
+    height: 16px;
     color: var(--g-chevron);
   }
 
@@ -1250,8 +1172,8 @@
   .compareTitle {
     gap: calc(20 * var(--u));
     margin-left: calc(1 * var(--u));
-    font-size: calc(18.8 * var(--u));
-    line-height: calc(24 * var(--u));
+    font-size: var(--fs-p);
+    line-height: 1.28;
   }
 
   .compareIcon {
@@ -1265,7 +1187,7 @@
     grid-template-columns: 214fr 316fr 299fr 292fr 284fr;
     margin-top: calc(6 * var(--u));
     border-radius: calc(10 * var(--u));
-    font-size: calc(13.6 * var(--u));
+    font-size: var(--fs-label);
   }
 
   .gridDesk .gCorner,
@@ -1279,20 +1201,20 @@
   }
 
   .gridDesk .thText strong {
-    font-size: calc(13.7 * var(--u));
-    line-height: calc(20 * var(--u));
+    font-size: var(--fs-label);
+    line-height: 1.46;
   }
 
   .gridDesk .thText span {
-    font-size: calc(13.4 * var(--u));
-    line-height: calc(20 * var(--u));
+    font-size: var(--fs-label);
+    line-height: 1.49;
     color: var(--g-cell);
   }
 
   .gridDesk .posHead {
     padding-left: calc(40 * var(--u));
     gap: calc(17 * var(--u));
-    font-size: calc(13.5 * var(--u));
+    font-size: var(--fs-label);
   }
 
   .gridDesk .gLabel {
@@ -1323,13 +1245,13 @@
 
   .gridDesk .posText {
     padding: calc(8 * var(--u)) 0 0 calc(39 * var(--u));
-    font-size: calc(13.7 * var(--u));
-    line-height: calc(21 * var(--u));
+    font-size: var(--fs-label);
+    line-height: 1.53;
   }
 
   .link {
     margin: calc(16 * var(--u)) 0 0 calc(-1 * var(--u));
-    font-size: calc(13.9 * var(--u));
+    font-size: var(--fs-label);
   }
 
   .linkIcon {
@@ -1341,11 +1263,57 @@
   .linkA {
     gap: calc(12 * var(--u));
     margin-left: calc(20 * var(--u));
-    font-size: calc(15.7 * var(--u));
+    font-size: var(--fs-body);
   }
 
   .linkArrow {
     width: calc(16 * var(--u));
     height: calc(16 * var(--u));
+  }
+
+  /* Site container: same width and side padding as every other section. */
+  .frame {
+    max-width: var(--container-8xl);
+    padding-inline: var(--gutter);
+  }
+
+  .panel {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+/* Phones and tablets: one heading size and one body size across every model-page section. */
+@media (max-width: 1023px) {
+  h2.title,
+  h2.title span,
+  h2.title .accent {
+    font-size: var(--fs-h2) !important;
+    line-height: 1.15 !important;
+    letter-spacing: -0.02em !important;
+    white-space: normal !important;
+  }
+
+  .copy {
+    font-size: 15px !important;
+    line-height: 1.55 !important;
+  }
+}
+
+/* Desktop: no inner card around the section, so the heading lines up with every other section. */
+@media (min-width: 1024px) {
+  .panel {
+    padding-left: 0;
+    padding-right: 0;
+    border-color: transparent;
+    background: transparent;
+    box-shadow: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  .title,
+  .copy {
+    margin-left: 0;
   }
 }

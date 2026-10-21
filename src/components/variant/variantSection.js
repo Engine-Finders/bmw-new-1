@@ -65,7 +65,7 @@ export function VariantSectionHeading({ title, className = "" }) {
 
   return (
     <h2
-      className={`text-[2.15rem] font-bold leading-[1.1] tracking-normal md:text-[3rem] ${className}`}
+      className={`t-h2 ${className}`}
     >
       {parts.before ? <span dangerouslySetInnerHTML={{ __html: parts.before }} /> : null}
       {parts.accent ? (

@@ -92,7 +92,7 @@ function DesktopRow({ engine, isDark }) {
 
   return (
     <div
-      className={`grid ${DESKTOP_COLS} items-center gap-px ${rowClass} px-4 py-2 text-[0.78rem] border-b ${borderBottom} last:border-b-0`}
+      className={`lg:text-[15px] grid ${DESKTOP_COLS} items-center gap-px ${rowClass} px-4 py-2 text-[0.78rem] border-b ${borderBottom} last:border-b-0`}
     >
       <span className={`min-w-0 px-2 font-semibold border-r ${cellDivider}`} dangerouslySetInnerHTML={{ __html: engine.engineCode }} />
       <span className={`min-w-0 px-2 ${mutedText} border-r ${cellDivider}`} dangerouslySetInnerHTML={{ __html: engine.family }} />
@@ -105,10 +105,10 @@ function DesktopRow({ engine, isDark }) {
       <span className={`min-w-0 px-2 ${mutedText} border-r ${cellDivider}`} dangerouslySetInnerHTML={{ __html: engine.years }} />
       <span className={`min-w-0 px-2 ${mutedText} border-r ${cellDivider}`} dangerouslySetInnerHTML={{ __html: engine.variants }} />
       <span className={`flex min-w-0 flex-col gap-0.5 px-2 border-r ${cellDivider}`}>
-        <Stars value={engine.reliability} className="text-[0.85rem]" />
+        <Stars value={engine.reliability} className="lg:text-[15px] text-[0.85rem]" />
         <GenBadge tag={engine.reliabilityTag} isDark={isDark} />
         {engine.reliabilityDetail ? (
-          <span className={`text-[0.64rem] leading-[1.2] ${softText}`} dangerouslySetInnerHTML={{ __html: engine.reliabilityDetail }} />
+          <span className={`lg:text-[15px] text-[12px] leading-[1.2] ${softText}`} dangerouslySetInnerHTML={{ __html: engine.reliabilityDetail }} />
         ) : null}
       </span>
       <span className={`min-w-0 px-2 ${mutedText} border-r ${cellDivider}`} dangerouslySetInnerHTML={{ __html: engine.enquiries }} />
@@ -128,11 +128,11 @@ function MobileRow({ engine, isDark }) {
 
   return (
     <div
-      className={`grid ${MOBILE_COLS} items-start gap-px ${rowClass} text-[0.7rem] border-b ${borderBottom} last:border-b-0`}
+      className={`lg:text-[15px] grid ${MOBILE_COLS} items-start gap-px ${rowClass} text-[12px] border-b ${borderBottom} last:border-b-0`}
     >
       <span className={`${MOBILE_CELL} border-r ${cellDivider}`}>
         <span className="block font-semibold [overflow-wrap:anywhere]" dangerouslySetInnerHTML={{ __html: engine.engineCode }} />
-        <span className={`mt-0.5 block text-[0.64rem] [overflow-wrap:anywhere] ${softText}`} dangerouslySetInnerHTML={{ __html: engine.family }} />
+        <span className={`lg:text-[15px] mt-0.5 block text-[12px] [overflow-wrap:anywhere] ${softText}`} dangerouslySetInnerHTML={{ __html: engine.family }} />
       </span>
       <span className={`flex items-start gap-1.5 ${MOBILE_CELL} ${mutedText} border-r ${cellDivider}`}>
         <FuelIcon fuel={engine.fuel} className="h-7 w-7 md:h-5 md:w-5 shrink-0" />
@@ -141,7 +141,7 @@ function MobileRow({ engine, isDark }) {
       <span className={`${MOBILE_CELL} ${mutedText} border-r ${cellDivider} [overflow-wrap:anywhere]`} dangerouslySetInnerHTML={{ __html: engine.power }} />
       <span className={`${MOBILE_CELL} ${mutedText} border-r ${cellDivider} [overflow-wrap:anywhere]`} dangerouslySetInnerHTML={{ __html: engine.years }} />
       <span className={`flex min-w-0 flex-col items-start gap-1 ${MOBILE_CELL} border-r ${cellDivider}`}>
-        <Stars value={engine.reliability} className="text-[0.72rem] [overflow-wrap:anywhere]" />
+        <Stars value={engine.reliability} className="lg:text-[15px] text-[12px] [overflow-wrap:anywhere]" />
         <GenBadge tag={engine.reliabilityTag} isDark={isDark} />
       </span>
       <span className={`${MOBILE_CELL} ${mutedText} border-r ${cellDivider} [overflow-wrap:anywhere]`} dangerouslySetInnerHTML={{ __html: engine.enquiries }} />
@@ -170,7 +170,7 @@ export default function EngineDatabase({ data }) {
 
       <div className="relative mx-auto w-full max-w-8xl px-4 pb-5 pt-4 md:px-8 md:pb-6 md:pt-5">
         <div className="hidden overflow-hidden rounded-md border border-[var(--color-border)] bg-[var(--color-table-surface)] shadow-[0_14px_40px_var(--color-shadow)] backdrop-blur md:block">
-          <div className={`grid ${DESKTOP_COLS} gap-px rounded-t-md ${headerBg} px-4 py-2 text-[0.72rem] font-semibold leading-[1.2]`}>
+          <div className={`lg:text-[15px] grid ${DESKTOP_COLS} gap-px rounded-t-md ${headerBg} px-4 py-2 text-[12px] font-semibold leading-[1.2]`}>
             {data.columns?.map((col) => (
               <span key={col} className={`min-w-0 border-r px-2 ${headerDivider} last:border-r-0`}>{col}</span>
             ))}
@@ -184,7 +184,7 @@ export default function EngineDatabase({ data }) {
 
         <div className="overflow-x-auto overscroll-x-contain rounded-md border border-[var(--color-border)] bg-[var(--color-table-surface)] shadow-[0_14px_40px_var(--color-shadow)] backdrop-blur md:hidden">
           <div className={MOBILE_MIN_WIDTH}>
-            <div className={`grid ${MOBILE_COLS} gap-px ${headerBg} text-[0.7rem] font-semibold`}>
+            <div className={`lg:text-[15px] grid ${MOBILE_COLS} gap-px ${headerBg} text-[12px] font-semibold`}>
               {MOBILE_HEADERS.map((col) => (
                 <span key={col} className={`border-r ${MOBILE_HEADER_CELL} ${headerDivider} last:border-r-0`}>{col}</span>
               ))}
@@ -219,13 +219,13 @@ export default function EngineDatabase({ data }) {
                   key={`${item.label}-${index}`}
                   className={`flex flex-col gap-1.5 ${padding}`}
                 >
-                  <p className={`flex items-center gap-2 text-[0.82rem] font-semibold leading-[1.3] ${labelTone}`}>
+                  <p className={`lg:text-[15px] flex items-center gap-2 text-[0.82rem] font-semibold leading-[1.3] ${labelTone}`}>
                     <span className={`flex h-5 w-5 shrink-0 items-center justify-center ${iconTone}`}>
                       <GenIcon name={item.icon} className="h-7 w-7 md:h-5 md:w-5" />
                     </span>
                     <span dangerouslySetInnerHTML={{ __html: item.label }} />
                   </p>
-                  <p className="text-[0.8rem] leading-[1.45] text-[var(--color-text-muted)]" dangerouslySetInnerHTML={{ __html: item.text }} />
+                  <p className="lg:text-[15px] text-[0.8rem] leading-[1.45] text-[var(--color-text-muted)]" dangerouslySetInnerHTML={{ __html: item.text }} />
                 </div>
               );
             })}

@@ -114,21 +114,23 @@ function Options({ item, isDark, phone }) {
   const strong = isDark ? "text-white" : "text-[#0b1426]";
   const muted = isDark ? "text-white/75" : "text-[#3a4152]";
   const plain = item.options.every((o) => !o.icon);
-  const label = plain ? (phone ? "text-[19px]" : "text-[19px]") : item.options[0].icon === "drop" ? "text-[14px] font-medium" : "text-[17px]";
+  const label = plain ? "text-[18px]" : item.options[0].icon === "drop" ? "text-[15px] font-medium uppercase" : "text-[16px]";
   return (
-    <div className={`flex h-full items-center justify-center ${plain ? "gap-[30px]" : "gap-[22px]"}`}>
-      {item.options.map((option, i) => (
-        <span key={option.label} className={`flex items-center ${plain ? "gap-[30px]" : "gap-[22px]"}`}>
-          {i > 0 ? <span className={`text-[14px] ${muted}`}>vs</span> : null}
-          <span className={`flex items-center gap-[8px] ${strong}`}>
-            <OptionMark option={option} isDark={isDark} size={option.icon === "drop" ? "h-[24px] w-[20px]" : "h-[21px] w-[21px]"} />
-            <span>
-              <span className={`block font-medium leading-tight ${label}`}>{option.label}</span>
-              {option.note ? <span className={`mt-[2px] block max-w-[92px] text-[11px] leading-[1.45] ${muted}`}>{option.note}</span> : null}
-            </span>
+    <div className={`flex flex-wrap items-center justify-center px-3 py-3 ${plain ? "gap-x-5" : "gap-x-3"} gap-y-2`}>
+      {item.options.map((option, i) => [
+        i > 0 ? (
+          <span key={`vs-${option.label}`} className={`${phone ? "text-[13px]" : "t-label"} ${muted}`}>
+            vs
           </span>
-        </span>
-      ))}
+        ) : null,
+        <span key={option.label} className={`flex items-center gap-2 ${strong}`}>
+          <OptionMark option={option} isDark={isDark} size={option.icon === "drop" ? "h-[24px] w-[20px]" : "h-[21px] w-[21px]"} />
+          <span>
+            <span className={`block font-medium leading-tight ${label}`}>{option.label}</span>
+            {option.note ? <span className={`mt-[2px] block max-w-[120px] leading-[1.35] ${phone ? "text-[13px]" : "t-label"} ${muted}`}>{option.note}</span> : null}
+          </span>
+        </span>,
+      ])}
     </div>
   );
 }
@@ -137,7 +139,7 @@ function Badge({ id, phone }) {
   return (
     <span
       className={`absolute left-0 top-0 z-10 flex items-center justify-center bg-[#1557d6] font-medium text-white [clip-path:polygon(0_0,100%_0,80%_100%,0_100%)] ${
-        phone ? "h-[42px] w-[44px] pr-[7px] text-[23px]" : "h-[41px] w-[44px] pr-[7px] text-[22px]"
+        phone ? "h-[40px] w-[44px] pr-[7px] text-[20px]" : "h-[40px] w-[44px] pr-[7px] text-[20px]"
       }`}
     >
       {id}
@@ -145,7 +147,7 @@ function Badge({ id, phone }) {
   );
 }
 
-function Card({ item, isDark, phone = false, right = false }) {
+function Card({ item, isDark, phone = false }) {
   const strong = isDark ? "text-white" : "text-[#0b1426]";
   const soft = isDark ? "text-[#c0c7d1]" : "text-[#3a4152]";
   const link = isDark ? "text-[#3d7cf2]" : "text-[#1557d6]";
@@ -162,13 +164,13 @@ function Card({ item, isDark, phone = false, right = false }) {
         <div className="h-[138px] overflow-hidden">
           <Panel item={item} isDark={isDark} phone />
         </div>
-        <div className={`${item.options.some((o) => o.note) ? "h-[66px]" : "h-[49px]"} border-b ${divider} ${labelRow}`}>
+        <div className={`${item.options.some((o) => o.note) ? "min-h-[66px]" : "min-h-[49px]"} border-b ${divider} ${labelRow}`}>
           <Options item={item} isDark={isDark} phone />
         </div>
         <div className="px-[17px] pb-[20px] pt-[19px]">
-          <h3 className={`text-[22px] font-semibold leading-[1.25] tracking-[-0.01em] ${strong}`}>{item.title}</h3>
-          <p className={`mt-[12px] text-[13.5px] leading-[22.4px] tracking-[-0.012em] ${soft}`}>{item.preview}</p>
-          <Link href={item.link.href} className={`mt-[18px] flex items-center justify-end gap-[10px] pr-[6px] text-[17px] font-normal ${link}`}>
+          <h3 className={`t-h6 ${strong}`}>{item.title}</h3>
+          <p className={`t-body mt-2.5 ${soft}`}>{item.preview}</p>
+          <Link href={item.link.href} className={`mt-4 flex items-center justify-end gap-[10px] pr-[6px] text-[16px] font-medium ${link}`}>
             {item.link.label}
             <Arrow className="h-[20px] w-[20px]" />
           </Link>
@@ -178,22 +180,22 @@ function Card({ item, isDark, phone = false, right = false }) {
   }
 
   return (
-    <article className={`relative grid ${right ? "grid-cols-[305px_minmax(0,1fr)]" : "grid-cols-[335px_minmax(0,1fr)]"} overflow-hidden rounded-[12px] border ${shell}`}>
+    <article className={`relative grid grid-cols-[minmax(0,0.82fr)_minmax(0,1fr)] overflow-hidden rounded-[12px] border ${shell}`}>
       <Badge id={item.id} />
       <div className={`flex flex-col border-r ${divider}`}>
-        <div className="h-[130px] overflow-hidden">
+        <div className="aspect-[335/150] overflow-hidden">
           <Panel item={item} isDark={isDark} />
         </div>
-        <div className={`flex-1 ${item.options.some((o) => o.note) ? "min-h-[75px]" : "min-h-[57px]"} ${labelRow}`}>
+        <div className={`flex-1 border-t ${divider} ${labelRow}`}>
           <Options item={item} isDark={isDark} />
         </div>
       </div>
-      <div className={`flex flex-col pb-[3px] pl-[26px] pt-[13px] ${right ? "pr-[35px]" : "pr-[17px]"}`}>
-        <h3 className={`text-[21px] font-semibold leading-[25px] tracking-[-0.01em] ${strong}`}>{item.title}</h3>
-        <p className={`mt-[6px] whitespace-pre-line text-[13px] leading-[19.5px] tracking-[-0.012em] ${soft}`}>{item.previewDesktop}</p>
-        <Link href={item.link.href} className={`mt-auto flex items-center justify-end gap-[7px] pt-[3px] text-[14px] font-normal leading-[18px] ${link}`}>
+      <div className="flex flex-col px-5 pb-4 pt-4">
+        <h3 className={`t-h6 ${strong}`}>{item.title}</h3>
+        <p className={`t-body mt-2 whitespace-pre-line ${soft}`}>{item.previewDesktop}</p>
+        <Link href={item.link.href} className={`mt-auto flex items-center justify-end gap-2 pt-3 text-[15px] font-medium ${link}`}>
           {item.link.label}
-          <Arrow className="h-[15px] w-[15px]" />
+          <Arrow className="h-4 w-4" />
         </Link>
       </div>
     </article>
@@ -215,35 +217,37 @@ export default function HomeSec5({ data }) {
   return (
     <section className={`relative overflow-hidden ${isDark ? "bg-[#030c16]" : "bg-[#fefefe]"}`}>
       {/* Desktop / tablet */}
-      <div className="relative mx-auto hidden w-full max-w-[1600px] px-6 pb-[18px] pt-[61px] md:block lg:px-[75px]">
-        <div aria-hidden="true" className="pointer-events-none absolute left-[50%] top-[5px] hidden h-[260px] w-[722px] xl:block">
-          <span className="absolute right-[0px] top-[28px] block h-[202px] w-[345px]">
-            <Image src={rear} alt="" fill sizes="345px" className="object-contain object-bottom" />
-          </span>
-          <span className="absolute left-0 top-0 block h-[260px] w-[387px]">
-            <Image src={front} alt={cars.alt} fill sizes="387px" className="object-contain object-bottom" />
-          </span>
+      <div className="relative hidden md:block">
+        <div className="site-container section-y relative">
+          <div aria-hidden="true" className="pointer-events-none absolute right-[var(--gutter)] top-2 hidden h-[230px] w-[46%] max-w-[640px] lg:block">
+            <span className="absolute bottom-0 right-0 block h-[78%] w-[48%]">
+              <Image src={rear} alt="" fill sizes="320px" className="object-contain object-bottom" />
+            </span>
+            <span className="absolute bottom-0 left-0 block h-full w-[55%]">
+              <Image src={front} alt={cars.alt} fill sizes="360px" className="object-contain object-bottom" />
+            </span>
+          </div>
+          <div className="relative max-w-[640px]">
+            <h2 className={`t-h2 ${strong}`} dangerouslySetInnerHTML={{ __html: data.h2 }} />
+            <p className={`t-p mt-3 max-w-[600px] ${soft}`}>{data.subHeadlineDesktop}</p>
+          </div>
+          <div className="relative mt-8 grid gap-4 lg:grid-cols-2">
+            {data.comparisons.map((item) => (
+              <Card key={item.id} item={item} isDark={isDark} />
+            ))}
+          </div>
+          <div aria-hidden="true" className={`mt-6 h-[10px] w-full [clip-path:polygon(0.4%_0,100%_0,99.6%_100%,0_100%)] ${stripe}`} />
         </div>
-        <div className="relative">
-          <h2 className={`whitespace-nowrap text-[54px] font-bold leading-[62px] tracking-[-0.02em] ${strong}`} dangerouslySetInnerHTML={{ __html: data.h2 }} />
-          <p className={`mt-[14px] max-w-[600px] text-[16px] leading-[26px] ${soft}`}>{data.subHeadlineDesktop}</p>
-        </div>
-        <div className="relative mt-[23px] grid gap-x-[21px] gap-y-[14px] xl:grid-cols-[684px_minmax(0,1fr)]">
-          {data.comparisons.map((item, i) => (
-            <Card key={item.id} item={item} isDark={isDark} right={i % 2 === 1} />
-          ))}
-        </div>
-        <div aria-hidden="true" className={`mt-[24px] h-[10px] [clip-path:polygon(0.4%_0,100%_0,99.6%_100%,0_100%)] -ml-[7px] w-[calc(100%+56px)] ${stripe}`} />
       </div>
 
       {/* Phone */}
-      <div className="relative px-[17px] pb-6 pt-[58px] md:hidden">
-        <h2 className={`text-[38px] font-bold leading-[46px] tracking-[-0.02em] ${strong}`}>
+      <div className="relative px-4 pb-8 pt-8 md:hidden">
+        <h2 className={`t-h2 ${strong}`}>
           <span className="block">Comparison Hub —</span>
           <span className="heading-accent block">Head-to-Head</span>
           <span className="block">Verdicts</span>
         </h2>
-        <p className={`mt-[12px] text-[16px] leading-[27px] ${soft}`}>{data.subHeadline}</p>
+        <p className={`t-body mt-3 ${soft}`}>{data.subHeadline}</p>
         <div className="mt-[17px] grid gap-[21px]">
           {data.comparisons.map((item) => (
             <Card key={item.id} item={item} isDark={isDark} phone />
@@ -259,11 +263,11 @@ export default function HomeSec5({ data }) {
               </span>
             </span>
             <span>
-              <span className={`block whitespace-nowrap text-[16px] font-semibold leading-[1.3] ${strong}`}>{data.bottomCta.title}</span>
-              <span className={`mt-[4px] block text-[13.5px] leading-[1.5] ${soft}`}>{data.bottomCta.text}</span>
+              <span className={`block text-[17px] font-semibold leading-[1.3] ${strong}`}>{data.bottomCta.title}</span>
+              <span className={`t-body mt-1 block ${soft}`}>{data.bottomCta.text}</span>
             </span>
           </div>
-          <Link href={data.bottomCta.href} className="mt-[12px] flex h-[44px] items-center justify-center gap-[22px] rounded-[6px] bg-[#1452d4] text-[16px] font-normal text-white">
+          <Link href={data.bottomCta.href} className="mt-3 flex h-[46px] items-center justify-center gap-4 rounded-[6px] bg-[#1452d4] text-[15px] font-semibold text-white">
             {data.bottomCta.buttonLabel}
             <Arrow className="h-[22px] w-[22px]" />
           </Link>

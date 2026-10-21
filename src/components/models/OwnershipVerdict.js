@@ -151,8 +151,8 @@ function parseCall(text = "") {
 }
 
 function callHtml(html) {
-  // a space before each break keeps words apart where phones drop the breaks
-  return html.replace(/\s*(<br[^>]*>)\s*/g, " $1").replace(/\[BMW-VERIFIED\]/g, `<span class="${s.verified}">[BMW-VERIFIED]</span>`);
+  // Line breaks in the copy were set for the old type size; let the text wrap to the column instead.
+  return html.replace(/\s*<br[^>]*>\s*/g, " ").replace(/\[BMW-VERIFIED\]/g, `<span class="${s.verified}">[BMW-VERIFIED]</span>`);
 }
 
 function Call({ text }) {

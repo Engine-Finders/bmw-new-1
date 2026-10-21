@@ -183,7 +183,7 @@ export default function EngineHero({ data, engineImage, heroCar }) {
         <div className="absolute bottom-[26%] right-[11%] hidden h-[170px] w-[340px] rounded-[50%] border border-[var(--color-border)]/70 md:block" />
       </div>
 
-      <div className="relative mx-auto flex w-full max-w-8xl flex-col px-3 pb-[6px] pt-0 md:px-6 md:pb-[12px] md:pt-1">
+      <div className="site-container relative flex flex-col pb-[6px] pt-0 md:pb-[12px] md:pt-1">
         <div className="grid items-start md:grid-cols-[minmax(0,1.18fr)_minmax(340px,0.85fr)] md:gap-3 lg:gap-4">
           <div className="order-1 min-w-0 max-w-[820px] pt-1 md:order-none md:self-start md:pt-2">
             <MetaPill items={metaItems} isDark={isDark} />

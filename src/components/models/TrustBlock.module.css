@@ -207,7 +207,7 @@
 
 @media (min-width: 1024px) {
   .panel {
-    --u: calc(100cqw / 1536);
+    --u: calc(100cqw / 1486);
     padding: calc(19 * var(--u)) calc(25 * var(--u)) calc(8 * var(--u)) calc(25 * var(--u));
   }
 
@@ -248,8 +248,8 @@
   .title {
     top: calc(48 * var(--u));
     left: calc(22 * var(--u));
-    font-size: calc(41.3 * var(--u));
-    line-height: calc(48 * var(--u));
+    font-size: var(--fs-h2);
+    line-height: 1.16;
     letter-spacing: -0.043em;
   }
 
@@ -301,8 +301,179 @@
   .text {
     margin-top: 0;
     left: calc(135 * var(--u));
-    font-size: calc(15.8 * var(--u));
-    line-height: calc(22.5 * var(--u));
+    font-size: var(--fs-body);
+    line-height: 1.42;
     letter-spacing: -0.01em;
+  }
+
+  /* Site container: same width and side padding as every other section. */
+  .frame {
+    max-width: var(--container-8xl);
+    padding-inline: var(--gutter);
+  }
+
+  .panel {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+/* Phones and tablets: one heading size and one body size across every model-page section. */
+@media (max-width: 1023px) {
+  h2.title,
+  h2.title span,
+  h2.title .accent {
+    font-size: var(--fs-h2) !important;
+    line-height: 1.15 !important;
+    letter-spacing: -0.02em !important;
+    white-space: normal !important;
+  }
+
+  .copy {
+    font-size: 15px !important;
+    line-height: 1.55 !important;
+  }
+}
+
+/* Phones and tablets: a readable stacked list (icon + text), no fixed-size artboard. */
+@media (max-width: 1023px) {
+  .card {
+    height: auto;
+    margin-top: 0;
+    padding: 24px 16px 18px;
+  }
+
+  .title {
+    position: static;
+    margin-bottom: 16px;
+  }
+
+  .item {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    padding: 14px 0;
+  }
+
+  .item + .item {
+    border-top: 1px solid var(--k-divider);
+  }
+
+  .item + .item::before {
+    display: none;
+  }
+
+  .tile {
+    position: static;
+    flex-shrink: 0;
+    width: 52px;
+    height: 52px;
+    border-radius: 10px;
+  }
+
+  .tileIcon,
+  .item:nth-child(4) .tileIcon {
+    width: 28px;
+    height: 28px;
+    transform: none;
+  }
+
+  .text {
+    position: static;
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.55;
+    white-space: normal;
+  }
+
+  .text br {
+    display: none;
+  }
+}
+
+/* Desktop: no inner card around the section, so the heading lines up with every other section. */
+@media (min-width: 1024px) {
+  .card {
+    margin-left: calc(-22 * var(--u));
+    margin-right: calc(-22 * var(--u));
+    border-color: transparent;
+    background: transparent;
+    box-shadow: none;
+  }
+}
+
+/* Desktop: heading and the four reasons in normal flow on the left, the art on the right. */
+@media (min-width: 1024px) {
+  .card {
+    height: auto;
+    min-height: calc(560 * var(--u));
+    padding: 40px 0 28px calc(22 * var(--u));
+  }
+
+  .title {
+    position: relative;
+    top: auto;
+    left: auto;
+    z-index: 1;
+    max-width: 62%;
+    margin-bottom: 18px;
+    white-space: normal;
+  }
+
+  .art {
+    -webkit-mask-image: linear-gradient(90deg, transparent 0%, #000 14%, #000 90%, transparent 100%), linear-gradient(180deg, #000 80%, transparent 100%);
+    -webkit-mask-composite: source-in;
+    mask-image: linear-gradient(90deg, transparent 0%, #000 14%, #000 90%, transparent 100%), linear-gradient(180deg, #000 80%, transparent 100%);
+    mask-composite: intersect;
+  }
+
+  .items {
+    position: relative;
+    z-index: 1;
+    max-width: 50%;
+  }
+
+  .item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding: 14px 0;
+  }
+
+  .item + .item {
+    border-top: 1px solid var(--k-divider);
+  }
+
+  .item + .item::before {
+    display: none;
+  }
+
+  .tile {
+    position: static;
+    flex-shrink: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 12px;
+  }
+
+  .tileIcon,
+  .item:nth-child(4) .tileIcon {
+    width: 32px;
+    height: 32px;
+    transform: none;
+  }
+
+  .text {
+    position: static;
+    margin: 0;
+    font-size: var(--fs-body);
+    line-height: 1.55;
+    white-space: normal;
+  }
+
+  .text br {
+    display: none;
   }
 }

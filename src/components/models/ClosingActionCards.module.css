@@ -1,0 +1,607 @@
+/*
+ * Model page closing section "Ready to Make a Decision?" (section 14), built to the reference
+ * designs (light desktop at 1536px, light phone at 887px; no dark reference, so dark keeps the
+ * light layout with dark colours).
+ * Sizes are reference pixels times --u, so the section is the reference scaled to its own width:
+ * below 1024px the phone reference, from 1024px the desktop reference. Phone text has a floor
+ * (max(…px, …)) so it stays readable on small phones.
+ */
+
+.section {
+  overflow: hidden;
+  background: var(--c-page);
+  color: var(--c-text);
+}
+
+.frame {
+  container-type: inline-size;
+  max-width: 1628px;
+  margin: 0 auto;
+}
+
+.panel {
+  --u: calc(100cqw / 887);
+  position: relative;
+  padding: 0 calc(47 * var(--u)) calc(30 * var(--u));
+}
+
+/* ---------- theme tokens ---------- */
+
+.light {
+  --c-page: #fefefe;
+  --c-text: #03051b;
+  --c-copy: #08091e;
+  --c-accent: #0551fb;
+  --c-bar: #0d54ee;
+  --c-tile: #ffffff;
+  --c-tile-shadow: 0 calc(4 * var(--u)) calc(14 * var(--u)) rgba(40, 80, 160, 0.13);
+  --c-card-shadow: 0 calc(3 * var(--u)) calc(12 * var(--u)) rgba(20, 40, 80, 0.05);
+  --c-art-filter: none;
+}
+
+.dark {
+  --c-page: #02070b;
+  --c-text: #ffffff;
+  --c-copy: rgba(255, 255, 255, 0.86);
+  --c-accent: #3a7bff;
+  --c-bar: #3a7bff;
+  --c-tile: #0c1624;
+  --c-tile-shadow: 0 calc(4 * var(--u)) calc(14 * var(--u)) rgba(0, 0, 0, 0.45);
+  --c-card-shadow: none;
+  /* the light art's pale card colour turns into the dark card colour; the engine and map keep their hue */
+  --c-art-filter: invert(1) hue-rotate(180deg);
+}
+
+.blue {
+  --k-bg: #f3f8fe;
+  --k-border: #e1e6ef;
+  --k-accent: #0b4dea;
+}
+
+.green {
+  --k-bg: #f5fbf8;
+  --k-border: #e0eae7;
+  --k-accent: #0e7b52;
+}
+
+.orange {
+  --k-bg: #fefcf8;
+  --k-border: #f1ece4;
+  --k-accent: #dd8b15;
+}
+
+.dark .blue {
+  --k-bg: #08111d;
+  --k-border: #1c2838;
+  --k-accent: #3a7bff;
+}
+
+.dark .green {
+  --k-bg: #020906;
+  --k-border: #16261f;
+  --k-accent: #2bb57d;
+}
+
+.dark .orange {
+  --k-bg: #070502;
+  --k-border: #2a2217;
+  --k-accent: #f2a43a;
+}
+
+.deskOnly {
+  display: none;
+}
+
+.phoneOnly {
+  display: block;
+}
+
+/* ---------- heading block ---------- */
+
+.head {
+  position: relative;
+  padding-top: calc(99.85 * var(--u));
+}
+
+.hero {
+  position: absolute;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.heroImg {
+  object-fit: contain;
+}
+
+.light .hero {
+  /* car front at the copy's right edge (or the reference x, whichever is further right) */
+  --car-x: max(calc(415 * var(--u)), calc(51 * var(--u) + max(calc(21 * var(--u)), 15px) * 14.62 + 14px));
+  left: calc(var(--car-x) - 184 * var(--u) - 47 * var(--u));
+  bottom: calc(-21.6 * var(--u));
+  width: calc(704 * var(--u));
+  aspect-ratio: 1036 / 392;
+}
+
+.dark .hero {
+  --car-x: max(calc(415 * var(--u)), calc(51 * var(--u) + max(calc(21 * var(--u)), 15px) * 14.62 + 14px));
+  left: calc(var(--car-x) - 47 * var(--u));
+  bottom: calc(-12 * var(--u));
+  width: calc(455 * var(--u));
+  aspect-ratio: 720 / 400;
+}
+
+.dark .heroImg {
+  object-position: center bottom;
+}
+
+.title,
+.bar,
+.intro {
+  position: relative;
+  z-index: 1;
+}
+
+.title {
+  margin: 0;
+  font-size: max(28px, calc(52 * var(--u)));
+  font-weight: 700;
+  line-height: 1.192;
+  letter-spacing: 0;
+  color: var(--c-text);
+}
+
+.title .titleLine {
+  display: block;
+}
+
+.title span span {
+  color: var(--c-accent);
+}
+
+.bar {
+  display: block;
+  width: calc(70 * var(--u));
+  height: max(3px, calc(4 * var(--u)));
+  margin: calc(30 * var(--u)) 0 0 calc(2 * var(--u));
+  background: var(--c-bar);
+}
+
+.intro {
+  margin: calc(19.4 * var(--u)) 0 0 calc(4 * var(--u));
+  font-size: max(15px, calc(21 * var(--u)));
+  line-height: 1.74;
+  letter-spacing: 0;
+  color: var(--c-copy);
+}
+
+/* ---------- action cards ---------- */
+
+.cards {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: calc(25 * var(--u));
+  margin-top: calc(33.6 * var(--u));
+}
+
+.card {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  min-height: calc(298 * var(--u));
+  padding: calc(21 * var(--u)) calc(24 * var(--u)) calc(35 * var(--u)) calc(23 * var(--u));
+  overflow: hidden;
+  border: 1px solid var(--k-border);
+  border-radius: calc(13 * var(--u));
+  background: var(--k-bg);
+  box-shadow: var(--c-card-shadow);
+  color: var(--c-text);
+  /* the card is a link: undo the site-wide bold link weight */
+  font-weight: 400;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+}
+
+.art {
+  position: absolute;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.artImg {
+  object-fit: contain;
+}
+
+.dark .art-engine .artImg,
+.dark .art-map .artImg {
+  filter: var(--c-art-filter);
+}
+
+/* phone art boxes (card-relative, reference px) */
+.art-lineup .art {
+  left: calc(393 * var(--u));
+  top: calc(140 * var(--u));
+  width: calc(400 * var(--u));
+  aspect-ratio: 465 / 114;
+}
+
+.dark .art-lineup .art {
+  left: calc(470 * var(--u));
+  top: calc(92 * var(--u));
+  width: calc(320 * var(--u));
+  aspect-ratio: 706 / 228;
+}
+
+.art-engine .art {
+  left: calc(391.5 * var(--u));
+  top: calc(1 * var(--u));
+  width: calc(377 * var(--u));
+  aspect-ratio: 343 / 230;
+}
+
+.art-map .art {
+  left: calc(510 * var(--u));
+  top: calc(10 * var(--u));
+  width: calc(248 * var(--u));
+  aspect-ratio: 258 / 349;
+}
+
+.tile {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex: none;
+  align-items: center;
+  justify-content: center;
+  width: max(50px, calc(94 * var(--u)));
+  height: max(50px, calc(94 * var(--u)));
+  border-radius: calc(14 * var(--u));
+  background: var(--c-tile);
+  box-shadow: var(--c-tile-shadow);
+  color: var(--k-accent);
+}
+
+.tileIcon {
+  width: 60%;
+  height: 60%;
+}
+
+.green .tileIcon {
+  width: 74%;
+  height: 74%;
+  transform: translate(7%, 9%);
+}
+
+.orange .tileIcon {
+  width: 82%;
+  height: 82%;
+  transform: translate(8%, 6%);
+}
+
+.body {
+  position: relative;
+  z-index: 1;
+  display: block;
+  min-width: 0;
+  margin-left: max(calc(33 * var(--u)), 14px);
+  padding-top: calc(7 * var(--u));
+}
+
+.cardTitle {
+  margin: 0;
+  font-size: max(19px, calc(29 * var(--u)));
+  font-weight: 700;
+  line-height: 1.414;
+  letter-spacing: 0;
+  color: var(--c-text);
+}
+
+.cardTitle .titleLine {
+  display: block;
+}
+
+.cardTitle span span {
+  color: var(--k-accent);
+}
+
+.cardBar {
+  display: block;
+  width: max(26px, calc(46 * var(--u)));
+  height: max(2px, calc(3 * var(--u)));
+  margin-top: calc(17 * var(--u));
+  background: var(--k-accent);
+}
+
+.cardText {
+  margin: calc(18.9 * var(--u)) 0 0;
+  font-size: max(14px, calc(17.7 * var(--u)));
+  line-height: 1.75;
+  letter-spacing: 0;
+  color: var(--c-copy);
+}
+
+.cardCta {
+  display: inline-flex;
+  align-items: center;
+  gap: 1.55em;
+  margin-top: calc(28 * var(--u));
+  font-size: max(15px, calc(20.2 * var(--u)));
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: 0;
+  color: var(--k-accent);
+}
+
+.ctaArrow {
+  width: 1.38em;
+  height: 1.38em;
+  transition: transform 0.2s ease;
+}
+
+.card:hover .ctaArrow {
+  transform: translateX(3px);
+}
+
+/*
+ * Small phones: the copy is at its floor size and fills the width the car had beside it, so the car
+ * moves under the copy (right-aligned, tucked up beside the short last line) and the line-up runs
+ * along the bottom of its card under the call to action.
+ */
+@container (max-width: 560px) {
+  .head {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .light .hero,
+  .dark .hero {
+    position: relative;
+    left: auto;
+    bottom: auto;
+    order: 9;
+    align-self: flex-end;
+    margin-top: -34px;
+  }
+
+  .light .hero {
+    /* the car is 65% of this photo, starting 26% in; its misty right edge runs off the screen */
+    width: min(360px, 98cqw);
+    margin-right: calc(-47 * var(--u) - min(360px, 98cqw) * 0.09);
+  }
+
+  .dark .hero {
+    width: min(240px, 64cqw);
+    margin-right: calc(-10 * var(--u));
+  }
+
+  .cards {
+    margin-top: 12px;
+  }
+
+  .card.art-lineup {
+    padding-bottom: calc(35 * var(--u) + 58px);
+  }
+
+  .art-lineup .art,
+  .dark .art-lineup .art {
+    left: auto;
+    right: -14px;
+    top: auto;
+    bottom: 10px;
+    width: min(300px, 80cqw);
+  }
+
+  /* dark uses the taller transparent line-up photo */
+  .dark .card.art-lineup {
+    padding-bottom: calc(35 * var(--u) + 76px);
+  }
+
+  .dark .art-lineup .art {
+    right: -6px;
+    bottom: 8px;
+    width: min(220px, 58cqw);
+  }
+
+  .art-engine .art {
+    left: auto;
+    right: calc(-70 * var(--u));
+    width: calc(360 * var(--u));
+    opacity: 0.6;
+  }
+
+  .art-map .art {
+    left: auto;
+    right: calc(-40 * var(--u));
+    width: calc(240 * var(--u));
+    opacity: 0.6;
+  }
+}
+
+/* ======================= Laptops and desktops ======================= */
+
+@media (min-width: 1024px) {
+  .panel {
+    --u: calc(100cqw / 1448);
+    padding: 0 calc(44 * var(--u)) calc(28 * var(--u));
+  }
+
+  .deskOnly {
+    display: block;
+  }
+
+  .phoneOnly {
+    display: none;
+  }
+
+  .head {
+    height: calc(395 * var(--u));
+    padding-top: calc(84 * var(--u));
+    margin-left: calc(10 * var(--u));
+  }
+
+  .light .hero {
+    left: calc((500 - 54) * var(--u));
+    top: 0;
+    bottom: auto;
+    width: calc(1036 * var(--u));
+  }
+
+  .dark .hero {
+    left: calc((770 - 54) * var(--u));
+    top: calc(40 * var(--u));
+    bottom: auto;
+    width: calc(680 * var(--u));
+  }
+
+  .title {
+    font-size: var(--fs-h2);
+    line-height: 1.21;
+    letter-spacing: 0;
+  }
+
+  .bar {
+    width: calc(64 * var(--u));
+    height: calc(4.5 * var(--u));
+    margin: calc(28 * var(--u)) 0 0 calc(1 * var(--u));
+  }
+
+  .intro {
+    margin: calc(19.5 * var(--u)) 0 0 calc(0.5 * var(--u));
+    font-size: var(--fs-h6);
+    line-height: 1.63;
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: 469fr 457fr 470fr;
+    flex-direction: row;
+    gap: calc(26.5 * var(--u));
+    margin-top: 0;
+  }
+
+  .card {
+    display: block;
+    height: calc(357 * var(--u));
+    min-height: 0;
+    padding: 0;
+    border-radius: calc(12 * var(--u));
+  }
+
+  .tile {
+    position: absolute;
+    top: calc(21 * var(--u));
+    left: calc(22 * var(--u));
+    width: calc(75 * var(--u));
+    height: calc(75 * var(--u));
+    border-radius: calc(12 * var(--u));
+  }
+
+  .body {
+    position: absolute;
+    top: calc(179.5 * var(--u));
+    left: calc(27 * var(--u));
+    right: calc(10 * var(--u));
+    margin: 0;
+    padding: 0;
+  }
+
+  .cardTitle {
+    font-size: var(--fs-h5);
+    line-height: 1.28;
+    letter-spacing: 0;
+    white-space: nowrap;
+  }
+
+  .cardTitle .titleLine {
+    display: inline;
+  }
+
+  .cardBar {
+    width: calc(42 * var(--u));
+    height: calc(3 * var(--u));
+    margin-top: calc(16.5 * var(--u));
+    margin-left: calc(1 * var(--u));
+  }
+
+  .cardText {
+    margin-top: calc(9.9 * var(--u));
+    font-size: var(--fs-body);
+    line-height: 1.60;
+  }
+
+  .cardCta {
+    gap: calc(31 * var(--u));
+    margin-top: calc(16.7 * var(--u));
+    font-size: var(--fs-p);
+    line-height: 1.33;
+  }
+
+  .ctaArrow {
+    width: calc(27 * var(--u));
+    height: calc(27 * var(--u));
+  }
+
+  /* desktop art boxes (card-relative, reference px) */
+  .art-lineup .art {
+    left: calc(1 * var(--u));
+    top: calc(56 * var(--u));
+    width: calc(465 * var(--u));
+  }
+
+  .dark .art-lineup .art {
+    left: calc(150 * var(--u));
+    top: calc(28 * var(--u));
+    width: calc(310 * var(--u));
+  }
+
+  .art-engine .art {
+    left: calc(111 * var(--u));
+    top: calc(8 * var(--u));
+    width: calc(343 * var(--u));
+  }
+
+  .art-map .art {
+    left: calc(209 * var(--u));
+    top: calc(4 * var(--u));
+    width: calc(258 * var(--u));
+  }
+
+  /* Site container: same width and side padding as every other section. */
+  .frame {
+    max-width: var(--container-8xl);
+    padding-inline: var(--gutter);
+  }
+
+  .panel {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+/* Phones and tablets: one heading size and one body size across every model-page section. */
+@media (max-width: 1023px) {
+  h2.title,
+  h2.title span,
+  h2.title .accent {
+    font-size: var(--fs-h2) !important;
+    line-height: 1.15 !important;
+    letter-spacing: -0.02em !important;
+    white-space: normal !important;
+  }
+
+  .copy {
+    font-size: 15px !important;
+    line-height: 1.55 !important;
+  }
+}
+
+@media (min-width: 1024px) {
+  .head {
+    margin-left: 0;
+  }
+}

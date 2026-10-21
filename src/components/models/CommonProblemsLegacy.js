@@ -154,7 +154,7 @@ function UrgencyKey({ items, isDark }) {
               <span className="mx-auto flex h-11 w-11 shrink-0 items-center justify-center md:mx-0 md:h-12 md:w-12">
                 <HomeIcon name={style.icon} isDark={isDark} className="h-11 w-11 object-contain md:h-14 md:w-14" />
               </span>
-              <p className="mt-1.5 text-center text-[11px] leading-[1.3] text-[var(--color-text-muted)] md:mt-0 md:text-left md:text-[15px] md:leading-[1.35]">
+              <p className="mt-1.5 text-center text-[12px] leading-[1.3] text-[var(--color-text-muted)] md:mt-0 md:text-left md:text-[15px] md:leading-[1.35]">
                 <strong className="block text-[var(--color-text)]" dangerouslySetInnerHTML={{ __html: label }} />
                 <span dangerouslySetInnerHTML={{ __html: cleanText(item.text) }} />
               </p>

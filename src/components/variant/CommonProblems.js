@@ -39,7 +39,7 @@ function ProblemDetail({ problem, index, isDark }) {
         </h3>
       </div>
 
-      <div className="flex flex-col gap-2 text-[0.8rem] leading-[1.4]">
+      <div className="lg:text-[15px] flex flex-col gap-2 text-[0.8rem] leading-[1.4]">
         {problem.symptoms ? (
           <p className="flex items-start gap-1.5 text-[var(--color-text-muted)]">
             <GenIcon name="symptoms" className="h-7 w-7 md:h-5 md:w-5 shrink-0" />
@@ -77,7 +77,7 @@ function ProblemDetail({ problem, index, isDark }) {
           </p>
         ) : null}
         {problem.urgency ? (
-          <span className={`inline-flex w-fit items-center gap-1.5 rounded-full px-2.5 py-1 text-[0.72rem] font-semibold ${urgencyClass}`}>
+          <span className={`lg:text-[15px] inline-flex w-fit items-center gap-1.5 rounded-full px-2.5 py-1 text-[12px] font-semibold ${urgencyClass}`}>
             <GenIcon name={urgencyIcon(problem)} className="h-7 w-7 md:h-5 md:w-5 shrink-0" />
             <span>
               {problem.urgency.label} - <span dangerouslySetInnerHTML={{ __html: problem.urgency.text }} />
@@ -87,14 +87,14 @@ function ProblemDetail({ problem, index, isDark }) {
       </div>
 
       {problem.recommendation ? (
-        <div className="border-t border-[var(--color-border)] pt-2.5 text-[0.8rem] leading-[1.45]">
+        <div className="lg:text-[15px] border-t border-[var(--color-border)] pt-2.5 text-[0.8rem] leading-[1.45]">
           <p className="font-semibold text-[var(--color-text)]">Our recommendation:</p>
           <p className="mt-1 text-[var(--color-text-muted)]" dangerouslySetInnerHTML={{ __html: problem.recommendation }} />
         </div>
       ) : null}
 
       {problem.failureLink ? (
-        <a href={problem.failureLink.href} className="mt-auto flex items-center gap-1.5 text-[0.78rem] font-semibold text-[var(--color-primary)] no-underline">
+        <a href={problem.failureLink.href} className="lg:text-[15px] mt-auto flex items-center gap-1.5 text-[0.78rem] font-semibold text-[var(--color-primary)] no-underline">
           {problem.failureLink.label}
           <GenIcon name="arrow" className="h-3.5 w-3.5 shrink-0" />
         </a>
@@ -129,7 +129,7 @@ export default function CommonProblems({ data }) {
                 key={problem.id}
                 type="button"
                 onClick={() => setActiveIndex(index)}
-                className="flex flex-1 shrink-0 items-center gap-2 rounded-md px-2.5 py-2 text-[0.76rem] font-semibold"
+                className="lg:text-[15px] flex flex-1 shrink-0 items-center gap-2 rounded-md px-2.5 py-2 text-[0.76rem] font-semibold"
                 style={
                   isActive
                     ? { color: accent, boxShadow: `inset 0 -2px 0 ${accent}` }

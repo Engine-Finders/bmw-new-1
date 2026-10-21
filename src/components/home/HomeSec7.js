@@ -4,7 +4,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { TABLE_HEADER_BG, TABLE_HEADER_TEXT } from "@/components/shared/tableHeader";
 import { useTheme } from "@/components/shared/themeProvider";
-import ScaleBox from "@/components/home/ScaleBox";
 import { MobileHeading, MobileLabel, MobileLead, MobileSection } from "@/components/home/mobileKit";
 import BrandIcon from "@/components/home/brandIcon";
 
@@ -70,33 +69,6 @@ function FuelMark({ fuel, color = "#1d6ff0", style, className = "" }) {
   );
 }
 
-// Arial cap-height offset: where a capital's top sits inside a line box of height lh.
-const capOffset = (fs, lh) => (lh - 1.117 * fs) / 2 + 0.189 * fs;
-const padFor = (cap, fs, lh = fs * 1.2) => cap - capOffset(fs, lh);
-
-// Desktop spec measured on the 1536px references (Section 7.1.png light, Section 7.png dark).
-// Card x values are px from the card's left edge at 1536 and become % of the card width.
-const SPEC = {
-  light: {
-    padL: 73, h2: { cap: 72, fs: 53, lh: 59, track: "-0.04em", dx: -2.5 }, p: { cap: 196, fs: 16, lh: 24 }, underline: null, img: { top: 0, left: 560 - 0, w: 976 },
-    card: { top: 258, left: 72, right: 74, w: 1390, hdrH: 47, hdrCap: 20, hdr: 14, bar: 3, bottom: 30 },
-    cols: [0, 230, 404, 585.5, 821, 1390], labelX: [36.5, 295.5, 471, 621.5, 882],
-    rows: [70, 68.5, 66.5, 64, 64, 65, 65, 72, 72], codeCap: [19, 18, 16.5, 16, 16, 17, 17, 19, 16.5], enqCap: [20, 20, 18.5, 17, 17, 18, 18, 22, 20], vtCap: [20, 20, 18.5, 16, 16, 17, 18, 13, 20],
-    codeX: 35.5, code: 20, codeBold: true, specGap: 25.7, spec: 13.4, fuelIconX: 278.5, fuelIconDy: { Diesel: 17, Petrol: 15.5 }, fuelIcon: { Diesel: [17.6, 24], Petrol: [19, 20] }, fuelX: 312.5, fuelDy: 13, fuel: 13.3,
-    yearsCenter: true, yearsX: null, yearsDy: 13, years: 14, enqX: 620.5, enq: 15.3, enqBold: true, tagGap: 22.5, tag: 14.2,
-    iconX: 871.5, iconDy: 15.5, icon: { watch: [30, 28.5], safe: [28, 28], avoid: [28, 28], solid: [26, 26], best: [28, 29] }, vtX: 909, vt: [14.6, 21],
-  },
-  dark: {
-    padL: 73, h2: { cap: 63, fs: 56, lh: 62, track: "-0.045em", dx: -1 }, p: { cap: 206, fs: 16.65, lh: 25 }, underline: { top: 185, w: 92 }, img: { top: 0, left: 560, w: 976 },
-    card: { top: 260, left: 70, right: 86, w: 1380, hdrH: 46.5, hdrCap: 19, hdr: 14.8, bar: 4, bottom: 48 },
-    cols: [0, 237.5, 390.5, 549.5, 792.5, 1380], labelX: [35.5, 284.5, 440, 584, 831],
-    rows: [64, 63, 62, 61, 62, 61, 61, 79, 68], codeCap: [14.5, 14.5, 14.5, 13.5, 14.5, 13.5, 12.5, 19.5, 13], enqCap: [15.5, 15.5, 15.5, 15.5, 15.5, 14.5, 14.5, 22.5, 17.5], vtCap: [14.5, 13.5, 13.5, 12.5, 13.5, 12.5, 13.5, 12.5, 17.5],
-    codeX: 34.5, code: 22, codeBold: true, specGap: 26.5, spec: 14.4, fuelIconX: 280, fuelIconDy: { Diesel: 17.5, Petrol: 16 }, fuelIcon: { Diesel: [18.4, 25], Petrol: [20, 21] }, fuelX: 308, fuelDy: 11, fuel: 14.2,
-    yearsCenter: false, yearsX: 422, yearsDy: 12, years: 14.6, enqX: 584, enq: 17.8, enqBold: false, tagGap: 23, tag: 15.2,
-    iconX: 842.5, iconDy: 15, icon: { watch: [34, 31.5], safe: [31, 31], avoid: [31, 31], solid: [29, 29], best: [31, 32] }, vtX: 875, vt: [14.8, 21.5],
-  },
-};
-
 const COL = {
   light: { bg: "#fefefe", h2: "#0a0f2c", accent: "#0b4fe0", para: "#4f5775", hdr: "#0b3fd6", code: "#0b1236", spec: "#2456da", text: "#1a2140", enq: "#0b1236", tag: "#1f55d8",
     vt: "#343a55", fuelIcon: "#1747e0", card: "#ffffff", border: "#eef2f8", line: "#eef2f8", hdrBand: "transparent", bar: "#9cbdf7", shadow: "0 6px 24px rgba(16,24,48,0.05)" },
@@ -104,60 +76,51 @@ const COL = {
     vt: "#d8dadd", fuelIcon: "#0b78e6", card: "#0e1318", border: "#3a3d40", line: "#24282d", hdrBand: "#0c0f13", bar: "#0a66e0", shadow: "none" },
 };
 
+// Desktop (lg+): engine-bay header on the right, one grid for the header row and the engine rows.
+const GRID = "grid grid-cols-[minmax(0,1fr)_minmax(0,0.8fr)_minmax(0,0.85fr)_minmax(0,1.05fr)_minmax(0,2.6fr)] gap-x-4 px-6";
+
 function Desktop({ data, isDark }) {
-  const t = isDark ? "dark" : "light";
-  const S = SPEC[t];
-  const C = COL[t];
-  const K = S.card;
-  const pct = (v) => `${(v / K.w) * 100}%`;
-  const tpl = S.cols.slice(1).map((c, i) => `minmax(0,${c - S.cols[i]}fr)`).join(" ");
-  const fs = (size, lh) => ({ fontSize: size, lineHeight: `${lh ?? size * 1.2}px` });
-
+  const C = COL[isDark ? "dark" : "light"];
   return (
-    <div className="relative mx-auto hidden w-full max-w-[1600px] lg:block" style={{ paddingLeft: S.padL, paddingBottom: K.bottom }}>
-      <div aria-hidden="true" className="pointer-events-none absolute right-0 top-0 w-[63.5%] max-w-[976px]">
-        <Image src={isDark ? data.headerImage.dark : data.headerImage.light} alt="" width={976} height={260} sizes="976px" className="h-auto w-full [mask-image:linear-gradient(90deg,transparent,black_8%)]" />
+    <div className="relative hidden lg:block">
+      <div aria-hidden="true" className="pointer-events-none absolute right-0 top-0 w-[58%] max-w-[976px]">
+        <Image src={isDark ? data.headerImage.dark : data.headerImage.light} alt="" width={976} height={260} sizes="60vw" className="h-auto w-full [mask-image:linear-gradient(90deg,transparent,black_10%),linear-gradient(180deg,black_80%,transparent)] [mask-composite:intersect]" />
       </div>
-
-      <div className="relative" style={{ height: K.top }}>
-        <h2 className="absolute whitespace-nowrap font-bold [&_.heading-accent]:text-[var(--acc)]" style={{ left: S.h2.dx, top: padFor(S.h2.cap, S.h2.fs, S.h2.lh), ...fs(S.h2.fs, S.h2.lh), letterSpacing: S.h2.track, color: C.h2, "--acc": C.accent }} dangerouslySetInnerHTML={{ __html: data.h2 }} />
-        {S.underline ? <span aria-hidden="true" className="absolute left-0 h-[3px] bg-[linear-gradient(90deg,#0a5bd8_55%,transparent)]" style={{ top: S.underline.top, width: S.underline.w }} /> : null}
-        <p className="absolute whitespace-pre-line" style={{ top: padFor(S.p.cap, S.p.fs, S.p.lh), ...fs(S.p.fs, S.p.lh), color: C.para }}>{data.subHeadlineDesktop}</p>
-      </div>
-
-      <div className="relative overflow-hidden rounded-[10px]" style={{ marginLeft: K.left - S.padL, marginRight: K.right, background: C.card, border: `1px solid ${C.border}`, boxShadow: C.shadow }}>
-        <div className="relative uppercase" style={{ height: K.hdrH, background: TABLE_HEADER_BG, color: TABLE_HEADER_TEXT }}>
-          {data.columns.map((c, i) => (
-            <span key={c} className={`absolute whitespace-nowrap ${isDark ? "" : "font-bold"}`} style={{ left: pct(S.labelX[i]), top: padFor(K.hdrCap, K.hdr), ...fs(K.hdr) }}>{c}</span>
-          ))}
+      <div className="site-container section-y relative">
+        <div className="max-w-[620px]">
+          <h2 className="t-h2 [&_.heading-accent]:text-[var(--acc)]" style={{ color: C.h2, "--acc": C.accent }} dangerouslySetInnerHTML={{ __html: data.h2 }} />
+          <p className="t-p mt-3 max-w-[560px]" style={{ color: C.para }}>{data.subHeadline}</p>
         </div>
-        {data.engines.map((e, ri) => {
-          const code = S.codeCap[ri];
-          const [iw, ih] = S.icon[e.verdict.type] ?? S.icon.best;
-          const [fw, fh] = S.fuelIcon[e.fuel] ?? S.fuelIcon.Petrol;
-          return (
-            <Link key={e.code} href={e.href} className="relative grid font-normal" style={{ gridTemplateColumns: tpl, minHeight: S.rows[ri], color: C.text, borderTop: ri ? `1px solid ${C.line}` : undefined }}>
-              <span aria-hidden="true" className="absolute inset-y-0 left-0" style={{ width: K.bar, background: C.bar }} />
-              <span style={{ paddingLeft: S.codeX, paddingTop: padFor(code, S.code) }}>
-                <span className={`block whitespace-nowrap ${S.codeBold ? "font-bold" : ""}`} style={{ ...fs(S.code), color: C.code }}>{e.code}</span>
-                <span className="block whitespace-nowrap" style={{ ...fs(S.spec), marginTop: S.specGap - S.code * 1.2 + capOffset(S.code, S.code * 1.2) - capOffset(S.spec, S.spec * 1.2), color: C.spec }}>{e.spec}</span>
+
+        <div className="relative mt-8 overflow-hidden rounded-[10px] border" style={{ background: C.card, borderColor: C.border, boxShadow: C.shadow }}>
+          <div className={`${GRID} t-label items-center py-3.5 font-semibold uppercase tracking-[0.02em]`} style={{ background: TABLE_HEADER_BG, color: TABLE_HEADER_TEXT }}>
+            {data.columns.map((c) => (
+              <span key={c}>{c}</span>
+            ))}
+          </div>
+          {data.engines.map((e) => (
+            <Link key={e.code} href={e.href} className={`${GRID} relative items-center border-t py-3.5 font-normal`} style={{ color: C.text, borderColor: C.line }}>
+              <span aria-hidden="true" className="absolute inset-y-0 left-0 w-[3px]" style={{ background: C.bar }} />
+              <span>
+                <span className="block text-[18px] font-bold leading-tight" style={{ color: C.code }}>{e.code}</span>
+                <span className="t-label block" style={{ color: C.spec }}>{e.spec}</span>
               </span>
-              <span className="relative" style={{ borderLeft: `1px solid ${C.line}` }}>
-                <FuelMark fuel={e.fuel} color={C.fuelIcon} className="absolute" style={{ left: `calc(${((S.fuelIconX - S.cols[1]) / (S.cols[2] - S.cols[1])) * 100}% - ${fw / 2}px)`, top: code + S.fuelIconDy[e.fuel === "Diesel" ? "Diesel" : "Petrol"] - fh / 2, width: fw, height: fh }} />
-                <span className="absolute whitespace-nowrap" style={{ left: `${((S.fuelX - S.cols[1]) / (S.cols[2] - S.cols[1])) * 100}%`, top: padFor(code + S.fuelDy, S.fuel), ...fs(S.fuel) }}>{e.fuel}</span>
+              <span className="t-body flex items-center gap-2">
+                <FuelMark fuel={e.fuel} color={C.fuelIcon} style={{ width: 18, height: 22 }} />
+                {e.fuel}
               </span>
-              <span className={`whitespace-nowrap ${S.yearsCenter ? "text-center" : ""}`} style={{ borderLeft: `1px solid ${C.line}`, paddingLeft: S.yearsCenter ? 0 : `${((S.yearsX - S.cols[2]) / (S.cols[3] - S.cols[2])) * 100}%`, paddingTop: padFor(code + S.yearsDy, S.years), ...fs(S.years) }}>{e.years}</span>
-              <span style={{ borderLeft: `1px solid ${C.line}`, paddingLeft: `${((S.enqX - S.cols[3]) / (S.cols[4] - S.cols[3])) * 100}%`, paddingTop: padFor(S.enqCap[ri], S.enq) }}>
-                <span className={`block whitespace-nowrap ${S.enqBold ? "font-bold" : ""}`} style={{ ...fs(S.enq), color: C.enq }}>{e.enquiries}</span>
-                <span className="block whitespace-nowrap" style={{ ...fs(S.tag), marginTop: S.tagGap - S.enq * 1.2 + capOffset(S.enq, S.enq * 1.2) - capOffset(S.tag, S.tag * 1.2), color: C.tag }}>{e.sourceTag}</span>
+              <span className="t-body">{e.years}</span>
+              <span>
+                <span className="t-body block font-semibold" style={{ color: C.enq }}>{e.enquiries}</span>
+                <span className="t-label block" style={{ color: C.tag }}>{e.sourceTag}</span>
               </span>
-              <span className="relative" style={{ borderLeft: `1px solid ${C.line}`, paddingLeft: S.vtX - S.cols[4], paddingRight: 16, paddingTop: padFor(S.vtCap[ri], S.vt[0], S.vt[1]) }}>
-                <VerdictMark type={e.verdict.type} className="absolute" style={{ left: S.iconX - S.cols[4] - iw / 2, top: code + S.iconDy - ih / 2, width: iw, height: ih }} />
-                <span className="block whitespace-pre-line" style={{ ...fs(S.vt[0], S.vt[1]), color: C.vt }}>{e.verdict.desktop}</span>
+              <span className="flex items-center gap-3">
+                <VerdictMark type={e.verdict.type} className="shrink-0" style={{ width: 26, height: 26 }} />
+                <span className="t-body" style={{ color: C.vt }}>{e.verdict.desktop.replace(/\n/g, " ")}</span>
               </span>
             </Link>
-          );
-        })}
+          ))}
+        </div>
       </div>
     </div>
   );
@@ -194,21 +157,32 @@ function Phone({ data, isDark }) {
   const card = { background: C.card, borderColor: C.border };
 
   return (
-    <MobileSection>
-      <div className="relative mb-6 h-[170px] overflow-hidden rounded-[16px]">
-        <Image src={isDark ? data.headerImage.dark : data.headerImage.light} alt={data.headerImage.alt} fill sizes="720px" className="object-cover object-[70%_50%]" />
+    <MobileSection className="!pt-0">
+      {/* Reference: engine bay top right, behind the heading, with the copy on the left. */}
+      <div aria-hidden="true" className="pointer-events-none absolute right-0 top-0 h-[270px] w-[56%] overflow-hidden [mask-image:linear-gradient(90deg,transparent_0%,black_45%),linear-gradient(180deg,black_65%,transparent)] [mask-composite:intersect]">
+        <Image src={isDark ? data.headerImage.dark : data.headerImage.light} alt="" fill sizes="56vw" className="object-cover object-[70%_50%]" />
       </div>
-      <MobileHeading html={data.h2} color={C.h2} accent={C.accent} />
-      <MobileLead color={C.para}>{data.subHeadline}</MobileLead>
+      <div className="relative pt-10">
+        <div className="max-w-[70%]">
+          <MobileHeading html={data.h2} color={C.h2} accent={C.accent} />
+        </div>
+        <div className="max-w-[66%]">
+          <MobileLead color={C.para}>{data.subHeadline}</MobileLead>
+        </div>
+      </div>
 
-      <ul className="mt-7 grid grid-cols-2 gap-3">
+      <ul className="relative mt-7 grid grid-cols-4 rounded-[12px] border py-3.5" style={card}>
         {data.trustStrip.map((t) => (
-          <li key={t.icon} className="flex items-center gap-3 rounded-[12px] border px-3.5 py-3.5" style={card}>
-            <span className="h-6 w-6 shrink-0" style={{ color: isDark ? "#3b82f6" : C.hdr }}>
+          <li
+            key={t.icon}
+            className="relative flex flex-col items-center gap-1.5 px-1 text-center [&:not(:last-child)]:after:absolute [&:not(:last-child)]:after:right-0 [&:not(:last-child)]:after:top-1/2 [&:not(:last-child)]:after:h-[60%] [&:not(:last-child)]:after:w-px [&:not(:last-child)]:after:-translate-y-1/2 after:bg-[var(--div)]"
+            style={{ "--div": isDark ? "#2a2f36" : "#e6eaf0" }}
+          >
+            <span className="h-7 w-7 shrink-0" style={{ color: isDark ? "#3b82f6" : C.hdr }}>
               <TrustGlyph name={t.icon} />
             </span>
-            <span className="text-[15px] leading-[1.35]" style={{ color: C.text }}>
-              {t.lines.map((l) => (l.startsWith("**") ? <strong key={l} className="block font-bold">{l.slice(2, -2)}</strong> : <span key={l} className="block">{l}</span>))}
+            <span className="text-[13px] leading-[1.3]" style={{ color: C.text }}>
+              {t.lines.map((l) => (l.startsWith("**") ? <strong key={l} className="block text-[14px] font-bold">{l.slice(2, -2)}</strong> : <span key={l} className="block">{l}</span>))}
             </span>
           </li>
         ))}
@@ -276,18 +250,9 @@ function Phone({ data, isDark }) {
 export default function HomeSec7({ data }) {
   const { theme } = useTheme();
   const isDark = theme === "dark";
-  const strong = isDark ? "text-white" : "text-[#0b1626]";
-  const soft = isDark ? "text-white/80" : "text-[#2a3646]";
-  const blue = isDark ? "text-[#3b82f6]" : "text-[#0b4fc0]";
-  const line = isDark ? "border-white/[0.08]" : "border-[#e8ecf1]";
-  const panel = isDark ? "border-white/[0.1] bg-[rgba(10,16,26,0.9)]" : "border-[#e6eaf0] bg-white";
-  const grid = "grid-cols-[minmax(0,1.05fr)_minmax(0,0.68fr)_minmax(0,0.72fr)_minmax(0,1.05fr)_minmax(0,2.5fr)]";
-
   return (
     <section className="relative overflow-hidden" style={{ background: isDark ? COL.dark.bg : COL.light.bg }}>
-      <ScaleBox width={1536}>
-        <Desktop data={data} isDark={isDark} />
-      </ScaleBox>
+      <Desktop data={data} isDark={isDark} />
 
       <Phone data={data} isDark={isDark} />
     </section>

@@ -380,7 +380,7 @@
 
   .copy {
     margin: 8px 0 0;
-    font-size: 13.5px;
+    font-size: 14px;
     line-height: 1.55;
   }
 
@@ -402,14 +402,14 @@
 
   .stat strong {
     margin-top: 6px;
-    font-size: 10.5px;
+    font-size: 13px;
     line-height: 1.35;
     white-space: normal;
   }
 
   .stat span {
     margin-top: 2px;
-    font-size: 10px;
+    font-size: 13px;
     line-height: 1.35;
     white-space: normal;
   }
@@ -450,13 +450,13 @@
   }
 
   .accText strong {
-    font-size: 14px;
+    font-size: 15px;
     line-height: 1.35;
   }
 
   .accText span {
     margin-top: 2px;
-    font-size: 13px;
+    font-size: 14px;
     line-height: 1.4;
   }
 
@@ -491,13 +491,13 @@
   .accLabel {
     margin: 8px 0;
     padding-left: 4px;
-    font-size: 12px;
+    font-size: 13px;
     line-height: 1.35;
   }
 
   .accValue {
     padding: 10px 10px 10px 12px;
-    font-size: 13px;
+    font-size: 14px;
     line-height: 1.5;
   }
 
@@ -506,7 +506,7 @@
     margin-top: 12px;
     padding: 12px;
     border-radius: 10px;
-    font-size: 12.5px;
+    font-size: 13px;
     line-height: 1.55;
   }
 
@@ -521,7 +521,7 @@
 
 @media (min-width: 1024px) {
   .panel {
-    --u: calc(100cqw / 1536);
+    --u: calc(100cqw / 1442);
     padding: calc(48 * var(--u)) calc(47 * var(--u)) calc(14 * var(--u)) calc(47 * var(--u));
   }
 
@@ -539,31 +539,36 @@
   }
 
   .top {
-    min-height: calc(167 * var(--u));
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 16px 24px;
+    min-height: 0;
+    margin-bottom: 18px;
   }
 
   .title {
     margin: 0;
-    font-size: calc(37.6 * var(--u));
-    line-height: calc(47 * var(--u));
+    font-size: var(--fs-h2);
+    line-height: 1.25;
     letter-spacing: -0.014em;
   }
 
   .copy {
     margin: calc(10 * var(--u)) 0 0;
-    font-size: calc(15.1 * var(--u));
-    line-height: calc(23 * var(--u));
+    font-size: var(--fs-body);
+    line-height: 1.52;
   }
 
   .stats {
-    position: absolute;
-    top: calc(-13 * var(--u));
-    right: 0;
-    grid-template-columns: 148fr 169fr 182fr 150fr;
-    width: calc(671 * var(--u));
-    height: calc(154 * var(--u));
+    position: static;
+    flex-shrink: 0;
+    grid-template-columns: repeat(4, minmax(130px, auto));
+    width: auto;
+    height: auto;
     margin: 0;
-    padding: calc(24 * var(--u)) calc(22 * var(--u)) 0 0;
+    padding: 16px 18px;
     border-radius: calc(12 * var(--u));
   }
 
@@ -579,14 +584,14 @@
 
   .stat strong {
     margin-top: calc(13 * var(--u));
-    font-size: calc(13.1 * var(--u));
-    line-height: calc(20 * var(--u));
+    font-size: var(--fs-label);
+    line-height: 1.53;
   }
 
   .stat span {
     margin-top: calc(3 * var(--u));
-    font-size: calc(12.4 * var(--u));
-    line-height: calc(20 * var(--u));
+    font-size: var(--fs-label);
+    line-height: 1.61;
   }
 
   /* ---------- table ---------- */
@@ -609,7 +614,7 @@
     border-top: 0;
     background: var(--v-head-bg);
     color: var(--v-head-text);
-    font-size: calc(14.7 * var(--u));
+    font-size: var(--fs-body);
     font-weight: 500;
   }
 
@@ -626,12 +631,9 @@
     border-left: 0;
   }
 
-  .tr:nth-child(2) { height: calc(128 * var(--u)); }
-  .tr:nth-child(3) { height: calc(124 * var(--u)); }
-  .tr:nth-child(4) { height: calc(123 * var(--u)); }
-  .tr:nth-child(5) { height: calc(120 * var(--u)); }
-  .tr:nth-child(6) { height: calc(113 * var(--u)); }
-  .tr:nth-child(7) { height: calc(115 * var(--u)); }
+  .tr:not(.thead) {
+    min-height: 128px;
+  }
 
   .tr:not(.thead) > span + span {
     border-left: 1px solid var(--v-line);
@@ -647,9 +649,9 @@
     z-index: 1;
     display: block;
     color: var(--v-era);
-    font-size: calc(15.3 * var(--u));
+    font-size: var(--fs-body);
     font-weight: 500;
-    line-height: calc(19.5 * var(--u));
+    line-height: 1.27;
   }
 
   .eraCar {
@@ -673,37 +675,99 @@
     align-items: center;
     justify-content: center;
     color: var(--v-years);
-    font-size: calc(14.5 * var(--u));
+    font-size: var(--fs-body);
     font-weight: 500;
   }
 
   .cEngines {
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: calc(var(--gap, 36) * var(--u));
-    padding-right: calc(12 * var(--u));
+    min-width: 0;
+    padding: 8px 6px;
   }
 
-  .cEngines[data-count="2"] { --gap: 40; --w: 88; }
-  .cEngines[data-count="3"] { --gap: 33; --w: 82; }
-  .cEngines[data-count="4"] { --gap: 20; --w: 74; }
+  /* three engines per view; the rest scroll inside the cell */
+  .slider {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    min-width: 0;
+  }
+
+  .track {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% - 16px) / 3);
+    gap: 8px;
+    width: 100%;
+    overflow: hidden;
+    justify-content: center;
+  }
+
+  .trackScroll {
+    justify-content: start;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+  }
+
+  .trackScroll::-webkit-scrollbar {
+    display: none;
+  }
+
+  .slideBtn {
+    position: absolute;
+    top: 38%;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 26px;
+    height: 26px;
+    padding: 0;
+    border: 1px solid var(--v-line);
+    border-radius: 50%;
+    background: var(--v-card);
+    color: var(--v-era);
+    box-shadow: 0 2px 6px rgba(10, 26, 43, 0.12);
+    cursor: pointer;
+  }
+
+  .slidePrev {
+    left: -4px;
+  }
+
+  .slideNext {
+    right: -4px;
+  }
+
+  .slideIcon {
+    width: 14px;
+    height: 14px;
+  }
+
+  .slidePrev .slideIcon {
+    transform: rotate(90deg);
+  }
+
+  .slideNext .slideIcon {
+    transform: rotate(-90deg);
+  }
 
   .engine {
     display: flex;
     flex-direction: column;
     align-items: center;
+    min-width: 0;
+    scroll-snap-align: start;
   }
 
   .engineImg {
     position: relative;
     display: block;
-    width: calc(var(--w, 86) * var(--u));
-    height: calc(84 * var(--u));
-  }
-
-  .cEngines[data-count="4"] .engineImg {
-    height: calc(71 * var(--u));
+    width: 100%;
+    height: 72px;
   }
 
   .engineImg .img {
@@ -713,29 +777,29 @@
   .engineLabel {
     margin-top: calc(4 * var(--u));
     color: var(--v-label);
-    font-size: calc(11.8 * var(--u));
+    font-size: var(--fs-label);
     font-weight: 500;
-    line-height: calc(16 * var(--u));
+    line-height: 1.36;
     white-space: nowrap;
   }
 
   .cWhy {
     display: flex;
     align-items: center;
-    padding-left: calc(36 * var(--u));
+    padding: 10px 16px;
     color: var(--v-body);
-    font-size: calc(13 * var(--u));
-    line-height: calc(21.3 * var(--u));
+    font-size: var(--fs-label);
+    line-height: 1.64;
   }
 
   .cWorth {
     display: flex;
     align-items: center;
-    gap: calc(15 * var(--u));
-    padding-left: calc(31 * var(--u));
+    gap: 12px;
+    padding: 10px 16px;
     color: var(--v-body);
-    font-size: calc(12.9 * var(--u));
-    line-height: calc(21 * var(--u));
+    font-size: var(--fs-label);
+    line-height: 1.63;
   }
 
   .infoIcon {
@@ -743,7 +807,7 @@
     align-self: center;
     width: calc(34 * var(--u));
     height: calc(34 * var(--u));
-    margin-top: calc(-36 * var(--u));
+    margin-top: 0;
     color: var(--v-info);
   }
 
@@ -757,13 +821,41 @@
     padding: calc(8 * var(--u)) calc(28 * var(--u)) calc(8 * var(--u)) calc(21 * var(--u));
     border-radius: calc(8 * var(--u));
     background: var(--v-card);
-    font-size: calc(11.9 * var(--u));
-    line-height: calc(17 * var(--u));
+    font-size: var(--fs-label);
+    line-height: 1.43;
   }
 
   .footIcon {
     width: calc(18 * var(--u));
     height: calc(20 * var(--u));
     margin: 0;
+  }
+
+  /* Site container: same width and side padding as every other section. */
+  .frame {
+    max-width: var(--container-8xl);
+    padding-inline: var(--gutter);
+  }
+
+  .panel {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+/* Phones and tablets: one heading size and one body size across every model-page section. */
+@media (max-width: 1023px) {
+  h2.title,
+  h2.title span,
+  h2.title .accent {
+    font-size: var(--fs-h2) !important;
+    line-height: 1.15 !important;
+    letter-spacing: -0.02em !important;
+    white-space: normal !important;
+  }
+
+  .copy {
+    font-size: 15px !important;
+    line-height: 1.55 !important;
   }
 }

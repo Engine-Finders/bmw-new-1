@@ -171,7 +171,7 @@ function DesktopTable({ data, isDark }) {
           <span className={s.cRating} role="cell">
             <Stars count={row.stars} className={s.stars} />
           </span>
-          <span className={s.cVerdict} role="cell" dangerouslySetInnerHTML={{ __html: spaced(row.verdict) }} />
+          <span className={s.cVerdict} role="cell" dangerouslySetInnerHTML={{ __html: String(row.verdict).replace(/\s*<br\s*\/?>\s*/g, " ") }} />
         </div>
       ))}
     </div>

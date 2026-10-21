@@ -34,13 +34,13 @@
     "COMPLETELY UNBIASED"
   ],
   "image": {
-    "desktop": {
-      "light": "/hero/f30-hero-light.webp",
-      "dark": "/hero/f30-hero-dark.webp"
+    "scene": {
+      "light": "/hero/hero-car-light.webp",
+      "dark": "/hero/hero-car-dark.webp"
     },
-    "mobile": {
-      "light": "/hero/f30-hero-phone-light.webp",
-      "dark": "/hero/f30-hero-mobile-dark.webp"
+    "backdrop": {
+      "light": "/hero/bmw-bg-light.webp",
+      "dark": "/hero/bmw-bg-dark.webp"
     },
     "alt": "BMW 3 Series (F30 LCI) M Sport under a concrete arch with a city skyline behind"
   }

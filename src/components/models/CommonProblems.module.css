@@ -334,14 +334,14 @@
 
   .title {
     margin-left: 0;
-    font-size: 26px;
+    font-size: var(--fs-h2);
     line-height: 1.2;
     letter-spacing: -0.03em;
   }
 
   .copy {
     margin: 8px 0 0;
-    font-size: 14px;
+    font-size: 15px;
     line-height: 1.55;
   }
 
@@ -372,7 +372,7 @@
     width: 26px;
     height: 26px;
     border-radius: 6px;
-    font-size: 13px;
+    font-size: 14px;
   }
 
   .pBody {
@@ -381,14 +381,14 @@
 
   .pTitle {
     white-space: normal;
-    font-size: 14px;
+    font-size: 15px;
     line-height: 1.35;
   }
 
   .pDesc {
     white-space: normal;
     margin-top: 4px;
-    font-size: 12px;
+    font-size: 13px;
     line-height: 1.5;
   }
 
@@ -398,7 +398,7 @@
 
   .pSide .severity {
     gap: 5px;
-    font-size: 11.5px;
+    font-size: 13px;
     line-height: 1.4;
   }
 
@@ -410,7 +410,7 @@
   .pLearn {
     gap: 3px;
     margin-top: 10px;
-    font-size: 11.5px;
+    font-size: 13px;
     line-height: 1.4;
   }
 
@@ -427,7 +427,7 @@
 
   .keyTitle {
     margin-left: 10px;
-    font-size: 13px;
+    font-size: 14px;
     line-height: 1.4;
   }
 
@@ -458,12 +458,12 @@
   }
 
   .keyText strong {
-    font-size: 12px;
+    font-size: 13px;
     line-height: 1.4;
   }
 
   .keyText span {
-    font-size: 11.5px;
+    font-size: 13px;
     line-height: 1.4;
   }
 
@@ -476,7 +476,7 @@
 
 @media (min-width: 1024px) {
   .inner {
-    --u: calc(100cqw / 1536);
+    --u: calc(100cqw / 1441);
     padding: calc(62 * var(--u)) calc(48 * var(--u)) calc(12 * var(--u)) calc(47 * var(--u));
   }
 
@@ -491,8 +491,8 @@
 
   .title {
     margin-left: 0;
-    font-size: calc(42 * var(--u));
-    line-height: calc(52 * var(--u));
+    font-size: var(--fs-h2);
+    line-height: 1.24;
     letter-spacing: -0.045em;
   }
 
@@ -510,8 +510,8 @@
 
   .copy {
     margin: calc(7.4 * var(--u)) 0 0;
-    font-size: calc(16.3 * var(--u));
-    line-height: calc(25 * var(--u));
+    font-size: var(--fs-body);
+    line-height: 1.53;
   }
 
   /* ---------- 3 x 2 cards ---------- */
@@ -519,15 +519,16 @@
   .grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: calc(315 * var(--u)) calc(270 * var(--u));
-    gap: calc(21 * var(--u));
+    align-items: start;
+    gap: 18px;
     margin-top: calc(21.6 * var(--u));
   }
 
   .card {
     position: relative;
     display: grid;
-    grid-template-columns: calc(191 * var(--u)) 1fr;
+    grid-template-columns: minmax(0, 0.72fr) minmax(0, 1fr);
+    min-height: 100%;
     overflow: hidden;
     border: 1px solid var(--p-card-border);
     border-radius: calc(10 * var(--u));
@@ -540,19 +541,21 @@
     left: calc(8 * var(--u));
     width: calc(42 * var(--u));
     height: calc(40 * var(--u));
-    font-size: calc(24 * var(--u));
+    font-size: var(--fs-num);
   }
 
   .body {
     position: relative;
-    padding: calc(13.4 * var(--u)) calc(16 * var(--u)) 0 calc(22 * var(--u));
+    display: flex;
+    flex-direction: column;
+    padding: 16px 18px 14px;
   }
 
   .cardTitle {
     margin: 0;
-    font-size: calc(18.9 * var(--u));
+    font-size: var(--fs-p);
     font-weight: 600;
-    line-height: calc(25 * var(--u));
+    line-height: 1.32;
     letter-spacing: -0.01em;
     color: var(--p-title);
   }
@@ -560,8 +563,8 @@
   .cardSeverity {
     gap: calc(9 * var(--u));
     margin-top: calc(11.6 * var(--u));
-    font-size: calc(13.4 * var(--u));
-    line-height: calc(18 * var(--u));
+    font-size: var(--fs-label);
+    line-height: 1.34;
   }
 
   .cardSeverity .dot {
@@ -570,10 +573,9 @@
   }
 
   .desc {
-    margin: calc(11 * var(--u)) 0 0;
-    white-space: nowrap;
-    font-size: calc(12.5 * var(--u));
-    line-height: calc(18.3 * var(--u));
+    margin: 10px 0 0;
+    font-size: var(--fs-body);
+    line-height: 1.5;
     color: var(--p-desc);
   }
 
@@ -605,7 +607,7 @@
     border-radius: 50%;
     background: var(--p-cost-icon-bg);
     color: var(--p-cost-icon);
-    font-size: calc(17 * var(--u));
+    font-size: var(--fs-p);
     font-weight: 500;
   }
 
@@ -616,25 +618,25 @@
   }
 
   .costText strong {
-    font-size: calc(13.3 * var(--u));
+    font-size: var(--fs-label);
     font-weight: 600;
-    line-height: calc(17 * var(--u));
+    line-height: 1.28;
     color: var(--p-title);
   }
 
   .costText span {
-    font-size: calc(11 * var(--u));
-    line-height: calc(15 * var(--u));
+    font-size: var(--fs-label);
+    line-height: 1.36;
     color: var(--p-tag);
   }
 
   .cardLearn {
-    position: absolute;
-    right: calc(16 * var(--u));
-    bottom: calc(10 * var(--u));
+    align-self: flex-end;
+    margin-top: auto;
+    padding-top: 12px;
     gap: calc(9 * var(--u));
-    font-size: calc(12.9 * var(--u));
-    line-height: calc(18 * var(--u));
+    font-size: var(--fs-label);
+    line-height: 1.40;
   }
 
   .cardLearn .learnArrow {
@@ -655,8 +657,8 @@
     top: calc(18 * var(--u));
     left: calc(25 * var(--u));
     margin: 0;
-    font-size: calc(16 * var(--u));
-    line-height: calc(22 * var(--u));
+    font-size: var(--fs-body);
+    line-height: 1.38;
   }
 
   .keyList {
@@ -689,13 +691,76 @@
   }
 
   .keyText strong {
-    font-size: calc(14.5 * var(--u));
-    line-height: calc(22 * var(--u));
+    font-size: var(--fs-body);
+    line-height: 1.52;
   }
 
   .keyText span {
     margin-top: calc(3 * var(--u));
-    font-size: calc(12.8 * var(--u));
-    line-height: calc(18 * var(--u));
+    font-size: var(--fs-label);
+    line-height: 1.41;
+  }
+
+  /* Site container: same width and side padding as every other section. */
+  .frame {
+    max-width: var(--container-8xl);
+    padding-inline: var(--gutter);
+  }
+
+  .inner {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+/* Six lines at most, ellipsis on the sixth; "Read more" opens the rest. */
+.clamp6 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 6;
+  line-clamp: 6;
+  overflow: hidden;
+}
+
+.readMore {
+  align-self: flex-start;
+  margin-top: 6px;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--p-learn, #0b57e3);
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* Background-removed part photos: whole part on a soft panel instead of a full-bleed photo. */
+.photo.partPhoto {
+  background: radial-gradient(circle at 50% 45%, #ffffff 0%, #eef2f8 70%);
+}
+
+.dark .photo.partPhoto {
+  background: radial-gradient(circle at 50% 45%, #1d2735 0%, #0c121b 70%);
+}
+
+.partPhoto .photoImg {
+  object-fit: contain !important;
+  padding: 14%;
+}
+
+/* Phones and tablets: one heading size and one body size across every model-page section. */
+@media (max-width: 1023px) {
+  h2.title,
+  h2.title span,
+  h2.title .accent {
+    font-size: var(--fs-h2) !important;
+    line-height: 1.15 !important;
+    letter-spacing: -0.02em !important;
+    white-space: normal !important;
+  }
+
+  .copy {
+    font-size: 15px !important;
+    line-height: 1.55 !important;
   }
 }
