@@ -151,6 +151,17 @@ function TrustCard({ s, C, phone = false }) {
   );
 }
 
+// "Frequently Asked Questions" with the last word in the accent colour, like the other headings.
+function FaqTitle({ title, C }) {
+  const words = String(title).split(" ");
+  const last = words.pop();
+  return (
+    <>
+      {words.join(" ")} <span style={{ color: C.blue }}>{last}</span>
+    </>
+  );
+}
+
 function Faq({ q, isOpen, onToggle, C }) {
   return (
     <div className="rounded-[6px] border" style={{ background: C.card, borderColor: C.border }}>
@@ -228,7 +239,9 @@ function Desktop({ data, isDark, open, setOpen }) {
         </div>
 
         <div className="mt-10 flex items-end justify-between gap-4">
-          <h3 className="t-h5" style={{ color: C.text }}>{data.faq.title}</h3>
+          <h3 className="t-h4" style={{ color: C.text }}>
+            <FaqTitle title={data.faq.title} C={C} />
+          </h3>
           <p className="t-label" style={{ color: C.soft }}>
             {data.faq.more.lead}{" "}
             <a href={data.faq.more.href} className="font-semibold" style={{ color: C.blue }}>{data.faq.more.label} →</a>
@@ -294,8 +307,11 @@ function PhoneView({ data, isDark, open, setOpen }) {
         ))}
       </div>
 
-      <h3 className="t-h5 mt-8" style={{ color: C.text }}>{data.faq.title}</h3>
-      <p className="t-label mt-1" style={{ color: C.soft }}>
+      {/* Same heading style as the other phone section headings, with breathing room above. */}
+      <h3 className="t-h2 mt-12" style={{ color: C.text }}>
+        <FaqTitle title={data.faq.title} C={C} />
+      </h3>
+      <p className="t-body mt-3" style={{ color: C.soft }}>
         {data.faq.more.lead}{" "}
         <a href={data.faq.more.href} className="font-semibold" style={{ color: C.blue }}>{data.faq.more.label} →</a>
       </p>
