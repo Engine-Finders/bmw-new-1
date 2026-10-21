@@ -911,3 +911,27 @@
     line-height: 1.55 !important;
   }
 }
+
+/* Note bar: the text wraps beside the CTA instead of running under it (any note length). */
+@media (min-width: 1024px) {
+  .note {
+    height: auto;
+    min-height: calc(77 * var(--u));
+    gap: 16px;
+    padding-block: 12px;
+  }
+
+  .noteText {
+    flex: 1;
+    min-width: 0;
+    white-space: normal;
+  }
+
+  .noteText br {
+    display: none;
+  }
+
+  .cta {
+    flex-shrink: 0;
+  }
+}

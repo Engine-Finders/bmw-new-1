@@ -185,10 +185,10 @@ function DesktopTable({ data, showAll }) {
           </span>
         ))}
       </div>
-      {rows.map((row) => {
+      {rows.map((row, i) => {
         const { cost, tag } = splitCost(row.avgRebuildCost);
         return (
-          <div key={row.engineCode} className={s.tr} role="row">
+          <div key={`${row.engineCode}-${i}`} className={s.tr} role="row">
             <span className={`${s.td} ${s.code}`} role="cell" dangerouslySetInnerHTML={{ __html: row.engineCode }} />
             <span className={s.td} role="cell" dangerouslySetInnerHTML={{ __html: row.family }} />
             <span className={s.td} role="cell">{row.fuel}</span>
@@ -329,7 +329,7 @@ function PhoneDatabase({ mobile, engines }) {
           <span role="columnheader">{cView}</span>
         </div>
         {shown.map((row) => (
-          <div key={row.code} className={s.pRow} role="row">
+          <div key={`${row.code}-${row.index}`} className={s.pRow} role="row">
             <span className={s.pCode} role="cell">
               {row.code}
             </span>

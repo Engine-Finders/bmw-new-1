@@ -18,6 +18,7 @@ import TrustBlock from "@/components/models/TrustBlock";
 import FAQAccordion from "@/components/models/FAQAccordion";
 import ClosingActionCards from "@/components/models/ClosingActionCards";
 import { withGenerationPageImages, withModelPageImages, withVariantPageImages } from "@/components/shared/pageCarImages";
+import { withReferenceSections } from "@/components/models/referenceAdapter";
 
 import GenHero from "@/components/generation/ModelHero";
 import GenEngineDatabase from "@/components/generation/EngineDatabase";
@@ -170,7 +171,8 @@ export default async function CatchAllPage({ params }) {
   if (!data) notFound();
 
   if (type === "models") {
-    data = withModelPageImages(data);
+    // Every model page gets the 3 Series section designs, built from its own content.
+    data = withReferenceSections(withModelPageImages(data));
     return (
       <main className="flex flex-col">
         {data.meta?.jsonLd && (

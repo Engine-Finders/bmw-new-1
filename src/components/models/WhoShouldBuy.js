@@ -157,11 +157,11 @@ function DesktopTable({ data, isDark }) {
           </span>
         ))}
       </div>
-      {(data.profiles || []).map((row) => (
-        <div key={row.key} className={s.tr} role="row">
+      {(data.profiles || []).map((row, rowIndex) => (
+        <div key={`${row.key}-${rowIndex}`} className={s.tr} role="row">
           <span className={s.cProfile} role="rowheader">
             <span className={s.car}>
-              <Image src={isDark ? row.images.dark : row.images.light} alt="" fill className={s.img} sizes="(min-width: 1024px) 17vw, 1px" />
+              {row.images?.light ? <Image src={isDark ? row.images.dark || row.images.light : row.images.light} alt="" fill className={s.img} sizes="(min-width: 1024px) 17vw, 1px" /> : null}
             </span>
             <span className={s.badge}>
               <Icon name={row.icon} className={s.badgeIcon} />
@@ -181,10 +181,10 @@ function DesktopTable({ data, isDark }) {
 function PhoneCards({ data }) {
   return (
     <div className={s.cards}>
-      {(data.profiles || []).map((row) => (
-        <article key={row.key} className={s.card}>
+      {(data.profiles || []).map((row, rowIndex) => (
+        <article key={`${row.key}-${rowIndex}`} className={s.card}>
           <span className={s.cardCar}>
-            <Image src={row.images.phone || row.images.light} alt="" fill className={s.img} sizes="(max-width: 1023px) 30vw, 1px" />
+            {row.images?.light ? <Image src={row.images.phone || row.images.light} alt="" fill className={s.img} sizes="(max-width: 1023px) 30vw, 1px" /> : null}
           </span>
           <span className={s.badge}>
             <Icon name={row.icon} className={s.badgeIcon} />

@@ -1015,8 +1015,8 @@
 
   .cards {
     display: grid;
-    grid-template-columns: repeat(var(--count, 7), minmax(0, 1fr));
-    column-gap: 12px;
+    grid-template-columns: repeat(clamp(4, var(--count, 7), 7), minmax(0, 1fr));
+    gap: 14px 12px;
     align-items: start;
     margin-top: 28px;
   }
@@ -1314,6 +1314,19 @@
 @media (min-width: 1024px) {
   .title,
   .copy {
+    margin-left: 0;
+  }
+}
+
+/* Long comparison labels wrap on phones instead of pushing the page wider. */
+@media (max-width: 1023px) {
+  .link {
+    flex-wrap: wrap;
+    row-gap: 4px;
+    white-space: normal;
+  }
+
+  .linkA {
     margin-left: 0;
   }
 }

@@ -127,8 +127,8 @@ function SignalTable({ data }) {
               </>
             ) : null}
           </span>
-          <span className={`${s.cTrend} ${row.trend === "flat" ? s.flat : s.up}`} role="cell">
-            <Icon name={row.trend === "flat" ? "flat" : "up"} className={s.trendIcon} />
+          <span className={`${s.cTrend} ${row.trend === "flat" ? s.flat : row.trend === "down" ? s.down : s.up}`} role="cell">
+            <Icon name={row.trend === "flat" ? "flat" : "up"} className={`${s.trendIcon} ${row.trend === "down" ? s.trendDown : ""}`} />
             <span className={s.trendText}>
               <span className={s.trendLine}>
                 <strong>{row.trendLabel}</strong>
