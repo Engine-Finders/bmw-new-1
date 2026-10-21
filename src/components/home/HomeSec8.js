@@ -61,8 +61,10 @@ function Stripe({ isDark, style, className = "" }) {
 function Card({ c, C, isDark, phone = false }) {
   return (
     <article className="relative flex flex-col overflow-hidden rounded-[10px] border" style={{ background: C.card, borderColor: C.border, boxShadow: C.shadow }}>
-      <div className="relative aspect-[340/135] w-full">
-        <Image src={isDark ? c.image.dark : phone ? c.image.phone : c.image.src} alt={c.image.alt} fill sizes={phone ? "92vw" : "(min-width: 1408px) 340px, 25vw"} className="object-cover object-left-top" />
+      <div className="relative aspect-[340/165] w-full">
+        {/* Exact engine for the card (transparent cut-out) on a soft studio panel. */}
+        <span aria-hidden="true" className="absolute inset-0" style={{ background: isDark ? "radial-gradient(ellipse at 50% 55%, #1a2738 0%, #0a121c 75%)" : "radial-gradient(ellipse at 50% 55%, #ffffff 0%, #eef2f7 75%)" }} />
+        <Image src={isDark ? c.image.dark : phone ? c.image.phone : c.image.src} alt={c.image.alt} fill sizes={phone ? "92vw" : "(min-width: 1408px) 340px, 25vw"} className={c.image.contain ? "object-contain px-3 pb-5 pt-3" : "object-cover object-left-top"} />
         <span
           className={`absolute left-0 top-0 flex h-9 w-9 items-center justify-center text-[18px] text-white ${isDark ? "[clip-path:polygon(0_0,100%_0,82%_100%,0_100%)] pr-1" : "rounded-br-[6px]"}`}
           style={{ background: C.badge }}
