@@ -88,8 +88,8 @@ function CostTable({ columns, rows, mobile, className }) {
           <span key={column} role="columnheader" dangerouslySetInnerHTML={{ __html: spaced(column) }} />
         ))}
       </div>
-      {rows.map((row) => (
-        <div key={row.model} className={s.tr} role="row">
+      {rows.map((row, i) => (
+        <div key={`${row.model}-${i}`} className={s.tr} role="row">
           {KEYS.map((key) => {
             const value = (mobile && row[`${key}Mobile`]) || row[key];
             // phones break prices after the dash, as in the phone reference

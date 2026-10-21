@@ -859,3 +859,25 @@
     line-height: 1.55 !important;
   }
 }
+
+.engineMark {
+  position: absolute;
+  inset: 12% 18%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: var(--v-head-bg);
+  opacity: 0.12;
+}
+
+.engineMarkIcon {
+  width: 60%;
+  height: 60%;
+}
+
+.engineMark {
+  opacity: 1;
+  background: color-mix(in srgb, var(--v-era) 10%, transparent);
+  color: var(--v-era);
+}

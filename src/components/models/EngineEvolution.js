@@ -110,10 +110,17 @@ function EngineSlider({ engines, isDark }) {
         </button>
       ) : null}
       <span ref={track} className={`${s.track} ${more ? s.trackScroll : ""}`}>
-        {engines.map((engine) => (
-          <span key={engine.label} className={s.engine}>
+        {engines.map((engine, engineIndex) => (
+          <span key={`${engine.label}-${engineIndex}`} className={s.engine}>
             <span className={s.engineImg}>
-              <Image src={isDark ? engine.images.dark : engine.images.light} alt="" fill className={s.img} sizes="(min-width: 1024px) 7vw, 1px" />
+              {engine.images ? (
+                <Image src={isDark ? engine.images.dark : engine.images.light} alt="" fill className={s.img} sizes="(min-width: 1024px) 7vw, 1px" />
+              ) : (
+                // No photo of this engine yet: an engine mark instead of another engine's picture.
+                <span className={s.engineMark}>
+                  <Icon name="engine" className={s.engineMarkIcon} />
+                </span>
+              )}
             </span>
             <span className={s.engineLabel}>{engine.label}</span>
           </span>
@@ -139,12 +146,12 @@ function DesktopTable({ data, isDark }) {
           </span>
         ))}
       </div>
-      {(data.eras || []).map((era) => (
-        <div key={era.key} className={s.tr} role="row">
+      {(data.eras || []).map((era, eraIndex) => (
+        <div key={`${era.key}-${eraIndex}`} className={s.tr} role="row">
           <span className={s.cEra} role="rowheader">
             <span className={s.eraName} dangerouslySetInnerHTML={{ __html: era.era }} />
             <span className={s.eraCar}>
-              <Image src={isDark ? era.images.dark : era.images.light} alt="" fill className={s.img} sizes="(min-width: 1024px) 16vw, 1px" />
+              {era.images?.light ? <Image src={isDark ? era.images.dark || era.images.light : era.images.light} alt="" fill className={s.img} sizes="(min-width: 1024px) 16vw, 1px" /> : null}
             </span>
           </span>
           <span className={s.cYears} role="cell">
@@ -172,10 +179,10 @@ function PhoneAccordion({ data, isDark }) {
       {(data.eras || []).map((era, index) => {
         const isOpen = open === index;
         return (
-          <div key={era.key} className={`${s.accItem} ${isOpen ? s.accOpen : ""}`}>
+          <div key={`${era.key}-${index}`} className={`${s.accItem} ${isOpen ? s.accOpen : ""}`}>
             <button type="button" className={s.accHead} aria-expanded={isOpen} onClick={() => setOpen(isOpen ? -1 : index)}>
               <span className={s.accCar}>
-                <Image src={(isDark ? era.images.dark : era.images.phone) || era.images.light} alt="" fill className={s.img} sizes="(max-width: 1023px) 26vw, 1px" />
+                {era.images?.light ? <Image src={(isDark ? era.images.dark : era.images.phone) || era.images.light} alt="" fill className={s.img} sizes="(max-width: 1023px) 26vw, 1px" /> : null}
               </span>
               <span className={s.accText}>
                 <strong>{era.eraMobile || era.era}</strong>

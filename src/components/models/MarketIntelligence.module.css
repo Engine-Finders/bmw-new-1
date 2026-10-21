@@ -1271,3 +1271,12 @@
     overflow-wrap: anywhere;
   }
 }
+
+/* falling demand: the rising arrow flipped, in red */
+.down .trendIcon {
+  color: #d92d20;
+}
+
+.trendDown {
+  transform: scaleY(-1);
+}

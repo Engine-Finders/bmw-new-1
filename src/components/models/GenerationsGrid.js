@@ -367,14 +367,14 @@ function GenerationsReference({ data }) {
 
           <div className={`${s.cards} ${s.deskOnly}`} style={{ "--count": cards.length }}>
             {cards.map((card, index) => (
-              <DesktopCard key={card.code} card={card} index={index} isDark={isDark} />
+              <DesktopCard key={`${card.code}-${index}`} card={card} index={index} isDark={isDark} />
             ))}
           </div>
 
           <div className={`${s.pCards} ${s.phoneOnly}`}>
             {cards.map((card, index) => (
               <PhoneCard
-                key={card.code}
+                key={`${card.code}-${index}`}
                 card={card}
                 index={index}
                 isDark={isDark}
