@@ -89,7 +89,7 @@ function PathCard({ card, C, isDark }) {
   const solid = card.button?.style === "solid";
   return (
     <article className="flex flex-col rounded-[12px] border p-5 lg:p-6" style={{ background: C.card, borderColor: C.border, boxShadow: C.shadow }}>
-      <span className="w-fit rounded-[4px] bg-[#0b57e3] px-2 py-1 text-[13px] font-semibold uppercase leading-none text-white">{card.badge}</span>
+      <span className="w-fit rounded-[4px] bg-[#0b57e3] t-label px-2.5 py-1 font-semibold uppercase leading-none text-white">{card.badge}</span>
       <div className="mt-4 flex items-center gap-4 lg:flex-row-reverse lg:items-start lg:justify-between">
         <span className="flex h-16 w-16 shrink-0 items-center justify-center rounded-full lg:h-[84px] lg:w-[84px]" style={{ background: C.soft, color: C.accent }}>
           <Icon name={card.icon} className="h-9 w-9 lg:h-11 lg:w-11" />
@@ -112,7 +112,7 @@ function PathCard({ card, C, isDark }) {
             <Icon name={card.button.icon} className="h-8 w-8 shrink-0" />
           </span>
           <span className="min-w-0 flex-1 leading-tight">
-            <span className="block text-[16px] font-semibold" style={solid ? undefined : { color: C.accent }}>{card.button.label}</span>
+            <span className="block t-body font-semibold" style={solid ? undefined : { color: C.accent }}>{card.button.label}</span>
             <span className={`t-label mt-0.5 block ${solid ? "text-white/85" : ""}`} style={solid ? undefined : { color: C.muted }}>{card.button.sub}</span>
           </span>
           <span style={solid ? undefined : { color: C.accent }}>
@@ -129,8 +129,8 @@ function PathCard({ card, C, isDark }) {
                 <Icon name={f.icon} className="h-6 w-6 shrink-0" />
               </span>
               <span className="min-w-0">
-                <strong className="block text-[14px] font-semibold leading-tight lg:text-[15px]" style={{ color: C.text }}>{f.title}</strong>
-                <span className="mt-0.5 block text-[13px] leading-[1.35] lg:text-[15px]" style={{ color: C.muted }}>{f.text}</span>
+                <strong className="t-label block font-semibold leading-tight" style={{ color: C.text }}>{f.title}</strong>
+                <span className="t-label mt-0.5 block" style={{ color: C.muted }}>{f.text}</span>
               </span>
             </li>
           ))}
@@ -230,8 +230,15 @@ export default function CalculatorCTA({ data: raw }) {
               </div>
             ) : null}
           </div>
-          {car ? (
+          {car === "/model/s11-calc-light.webp" ? (
+            // 3 Series reference photo: car on its backdrop, edges faded into the page.
             <div aria-hidden="true" className="relative mx-auto aspect-[1015/760] w-full max-w-[560px] [mask-composite:intersect] [mask-image:linear-gradient(90deg,transparent,black_14%,black_88%,transparent),linear-gradient(180deg,transparent,black_12%,black_86%,transparent)]">
+              <Image src={car} alt="" fill sizes="(min-width: 1024px) 40vw, 90vw" className="object-contain" />
+            </div>
+          ) : car ? (
+            // Other models: the whole car, three-quarter view, standing on a soft shadow.
+            <div aria-hidden="true" className="relative mx-auto aspect-[16/10] w-full max-w-[520px]">
+              <span className="absolute inset-x-[10%] bottom-[8%] h-[10%] rounded-[50%] bg-black/25 blur-xl" />
               <Image src={car} alt="" fill sizes="(min-width: 1024px) 40vw, 90vw" className="object-contain" />
             </div>
           ) : null}
@@ -256,7 +263,7 @@ export default function CalculatorCTA({ data: raw }) {
                 <p className="t-body mt-1 text-white/80">{flat(banner.text)}</p>
               </div>
             </div>
-            <Link href={banner.cta?.href || "/tools/diagnostic-wizard"} className="inline-flex shrink-0 items-center justify-center gap-3 rounded-[8px] bg-[#0b57e3] px-7 py-3.5 text-[16px] font-semibold text-white transition hover:brightness-110">
+            <Link href={banner.cta?.href || "/tools/diagnostic-wizard"} className="inline-flex shrink-0 items-center justify-center gap-3 rounded-[8px] bg-[#0b57e3] px-7 py-3.5 t-body font-semibold text-white transition hover:brightness-110">
               {banner.cta?.label}
               <Icon name="arrow" className="h-5 w-5" />
             </Link>

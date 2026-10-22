@@ -88,7 +88,7 @@ function FAQReference({ data }) {
 
   return (
     <section id="faq" className={`${inter.className} ${s.section} ${isDark ? s.dark : s.light}`}>
-      <div className={s.frame}>
+      <div className={`site-container ${s.frame}`}>
         <div className={s.panel}>
           <div className={s.card}>
             <Title lines={data.titleLines || [data.h2]} className={`${s.title} ${s.deskOnly}`} />

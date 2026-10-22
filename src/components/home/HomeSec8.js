@@ -77,7 +77,9 @@ function Card({ c, C, isDark, phone = false }) {
       </div>
       <div className="flex flex-1 flex-col px-4 pb-4 pt-8">
         <h3 className="t-h6" style={{ color: C.title }}>{c.title}</h3>
-        <p className="t-body mt-2" style={{ color: C.desc }}>{c.description}</p>
+        <p className="t-body mt-2 line-clamp-3" style={{ color: C.desc }} title={c.description}>
+          {c.description}
+        </p>
         <Link href={c.link.href} className="mt-auto flex items-center justify-end gap-2 pt-3 text-[15px] font-semibold" style={{ color: C.blue }}>
           {c.link.label.replace(" →", "")}
           <Arrow style={{ width: 18, height: 18 }} />

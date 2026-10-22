@@ -1,7 +1,7 @@
 # BMW Web - Agent Notes
 
 ## Goal
-Build a multi-page site (3–4 pages). Start with the **home page**. Priority is **data flow**, not UI polish. UI is a basic white-theme skeleton only (minimal padding/spacing). Later: swap JSON → DB with minimal changes.
+Build a multi-page site (3–4 pages). Start with the **home page**. Data flow stays JSON-driven; every page and section follows **`UI_RULES.md`**. Later: swap JSON → DB with minimal changes.
 
 ## Architecture (current)
 
@@ -33,9 +33,9 @@ Build a multi-page site (3–4 pages). Start with the **home page**. Priority is
 - `next.config.mjs` must allow remote image hosts when using `next/image`.
 
 ### UI rules (strict)
-- **No UI focus** - skeleton only: white theme, basic layout, tight spacing.
-- Section reference images (when provided) are only for **structure** (e.g. image left / text right), not visual polish.
-- Do not spend tokens on styling, animations, or design systems.
+- **`UI_RULES.md` is the single source** for container, 100%-zoom fit, type scale, cards, badges, tables, buttons, responsive, images, theme and the definition of done. It overrides older notes.
+- Fix once, apply everywhere: a fix for one section goes to every page/section with the same pattern.
+- Check pages with `scripts/ui-audit.js` (paste into the browser console at 1536 and 1280).
 - Do **not** render "/ SECTION N" labels on sections.
 
 ## Workflow
@@ -54,6 +54,4 @@ Build a multi-page site (3–4 pages). Start with the **home page**. Priority is
 - [ ] Other pages (later)
 
 ### Layout width
-- Desktop content width: `max-w-8xl` (`--container-8xl: 88rem` in `globals.css`)
-- Every section uses `.site-container` (same width + side padding as the navbar); headings start on the navbar's left edge.
-- Type scale (desktop) via `.t-h1`–`.t-h6`, `.t-p`, `.t-body`, `.t-num`, `.t-label` in `globals.css`: H1 60 / H2 54 / H3 44 / H4 34 / H5 24 / H6 20 / paragraph 18 / card text 16 / numbers 20 / labels 15. Never 11–13px text on desktop. No fixed-size scaled artboards.
+- See `UI_RULES.md` §1 (container) and §3 (type scale).

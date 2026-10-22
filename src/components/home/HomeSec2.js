@@ -6,7 +6,6 @@ import { useMemo, useState } from "react";
 import { TABLE_HEADER_BG, TABLE_HEADER_TEXT } from "@/components/shared/tableHeader";
 import { useTheme } from "@/components/shared/themeProvider";
 import VerdictGlyph from "@/components/home/VerdictGlyph";
-import GrilleImage from "@/components/home/GrilleImage";
 
 // Find Your Vehicle — desktop: two tables (1–8 Series, Z, i | X, M, classics); phone: search,
 // filter chips, a single list, "View all models" and a trust card with the CTA.
@@ -134,7 +133,6 @@ export default function HomeSec2({ data }) {
     <section id="find-your-vehicle" className={`find-your-vehicle relative overflow-hidden ${isDark ? "bg-[#060a10]" : "bg-[#f7f9fb]"}`}>
       {/* Desktop / tablet */}
       <div className="relative hidden md:block">
-        <GrilleImage src={isDark ? data.headerImage.dark : data.headerImage.light} className="right-0 top-0 h-[230px] w-[52%]" fadeStart="88%" position="object-cover object-[35%_100%]" />
         <div className="site-container section-y relative">
           <div className="max-w-[620px]">
             <h2 className={`t-h2 ${heading}`} dangerouslySetInnerHTML={{ __html: data.h2 }} />
@@ -153,9 +151,7 @@ export default function HomeSec2({ data }) {
 
       {/* Phone */}
       <div className="relative px-4 pb-8 pt-8 md:hidden">
-        {/* Reference: large white/black grille top right, bleeding off the edge behind the heading. */}
-        <GrilleImage src={isDark ? data.headerImage.dark : data.headerImage.light} className="-right-2 top-0 h-[190px] w-[50%]" fadeStart="78%" position="object-cover object-[22%_70%]" />
-        <div className="relative max-w-[62%]">
+        <div className="relative">
           <h2 className={`t-h2 ${heading}`} dangerouslySetInnerHTML={{ __html: data.h2 }} />
           <p className={`t-body mt-3 ${muted}`}>{data.subHeadline}</p>
         </div>

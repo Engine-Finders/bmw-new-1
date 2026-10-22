@@ -20,8 +20,7 @@
 }
 
 .panel {
-  --u: calc(100cqw / 864);
-  padding: 0 calc(30 * var(--u)) calc(8 * var(--u)) calc(26 * var(--u));
+  padding: 0 calc(30 * 0.4514px) calc(8 * 0.4514px) calc(26 * 0.4514px);
 }
 
 /* ---------- theme tokens ---------- */
@@ -77,11 +76,11 @@
 
 .card {
   position: relative;
-  height: calc(939.5 * var(--u));
-  margin-top: calc(-20 * var(--u));
+  height: calc(939.5 * 0.4514px);
+  margin-top: calc(-20 * 0.4514px);
   overflow: hidden;
   border: 1px solid var(--k-card-border);
-  border-radius: calc(16 * var(--u));
+  border-radius: calc(16 * 0.4514px);
   background: var(--k-card);
   box-shadow: var(--k-card-shadow);
 }
@@ -92,12 +91,12 @@
 
 .title {
   position: absolute;
-  top: calc(92 * var(--u));
-  left: calc(28 * var(--u));
+  top: calc(92 * 0.4514px);
+  left: calc(28 * 0.4514px);
   margin: 0;
-  font-size: calc(47 * var(--u));
+  font-size: calc(47 * 0.4514px);
   font-weight: 700;
-  line-height: calc(55 * var(--u));
+  line-height: calc(55 * 0.4514px);
   letter-spacing: -0.068em;
   color: var(--k-text);
   white-space: nowrap;
@@ -145,24 +144,24 @@
 .item + .item::before {
   content: "";
   position: absolute;
-  top: calc(var(--div) * var(--u));
-  left: calc(28 * var(--u));
-  width: calc(732 * var(--u));
+  top: calc(var(--div) * 0.4514px);
+  left: calc(28 * 0.4514px);
+  width: calc(732 * 0.4514px);
   height: 1px;
   background: var(--k-divider);
 }
 
 .tile {
   position: absolute;
-  top: calc(var(--tile) * var(--u));
-  left: calc(28 * var(--u));
+  top: calc(var(--tile) * 0.4514px);
+  left: calc(28 * 0.4514px);
   display: flex;
   align-items: center;
   justify-content: center;
-  width: calc(113 * var(--u));
-  height: calc(var(--tile-h) * var(--u));
+  width: calc(113 * 0.4514px);
+  height: calc(var(--tile-h) * 0.4514px);
   border: 1px solid var(--k-tile-border);
-  border-radius: calc(14 * var(--u));
+  border-radius: calc(14 * 0.4514px);
   background: var(--k-tile);
   color: var(--k-tile-icon);
 }
@@ -173,22 +172,22 @@
 }
 
 .tileIcon {
-  width: calc(60 * var(--u));
-  height: calc(60 * var(--u));
+  width: calc(60 * 0.4514px);
+  height: calc(60 * 0.4514px);
 }
 
 .item:nth-child(4) .tileIcon {
-  transform: translateY(calc(-2 * var(--u))) scale(1.13);
+  transform: translateY(calc(-2 * 0.4514px)) scale(1.13);
 }
 
 .text {
   position: absolute;
-  top: calc(var(--text) * var(--u));
-  left: calc(170 * var(--u));
+  top: calc(var(--text) * 0.4514px);
+  left: calc(170 * 0.4514px);
   margin: 0;
-  margin-top: calc(1 * var(--u));
-  font-size: calc(21.6 * var(--u));
-  line-height: calc(34.3 * var(--u));
+  margin-top: calc(1 * 0.4514px);
+  font-size: calc(21.6 * 0.4514px);
+  line-height: calc(34.3 * 0.4514px);
   letter-spacing: -0.01em;
   color: var(--k-copy);
   white-space: nowrap;
@@ -207,8 +206,7 @@
 
 @media (min-width: 1024px) {
   .panel {
-    --u: calc(100cqw / 1486);
-    padding: calc(19 * var(--u)) calc(25 * var(--u)) calc(8 * var(--u)) calc(25 * var(--u));
+    padding: calc(19 * 0.9044px) calc(25 * 0.9044px) calc(8 * 0.9044px) calc(25 * 0.9044px);
   }
 
   .deskOnly {
@@ -225,9 +223,9 @@
   }
 
   .card {
-    height: calc(568 * var(--u));
+    height: calc(568 * 0.9044px);
     margin-top: 0;
-    border-radius: calc(14 * var(--u));
+    border-radius: calc(14 * 0.9044px);
   }
 
   .art {
@@ -235,8 +233,8 @@
     top: 0;
     right: 0;
     display: block;
-    width: calc(820 * var(--u));
-    height: calc(566 * var(--u));
+    width: calc(820 * 0.9044px);
+    height: calc(566 * 0.9044px);
     -webkit-mask-image: linear-gradient(90deg, transparent 0%, #000 14%);
     mask-image: linear-gradient(90deg, transparent 0%, #000 14%);
   }
@@ -246,8 +244,8 @@
   }
 
   .title {
-    top: calc(48 * var(--u));
-    left: calc(22 * var(--u));
+    top: calc(48 * 0.9044px);
+    left: calc(22 * 0.9044px);
     font-size: var(--fs-h2);
     line-height: 1.16;
     letter-spacing: -0.043em;
@@ -281,26 +279,26 @@
   }
 
   .item + .item::before {
-    left: calc(133 * var(--u));
-    width: calc(525 * var(--u));
+    left: calc(133 * 0.9044px);
+    width: calc(525 * 0.9044px);
   }
 
   .tile {
-    left: calc(28 * var(--u));
-    width: calc(79 * var(--u));
-    border-radius: calc(12 * var(--u));
+    left: calc(28 * 0.9044px);
+    width: calc(79 * 0.9044px);
+    border-radius: calc(12 * 0.9044px);
   }
 
   .tileIcon,
   .item:nth-child(4) .tileIcon {
-    width: calc(42 * var(--u));
-    height: calc(42 * var(--u));
+    width: calc(42 * 0.9044px);
+    height: calc(42 * 0.9044px);
     transform: none;
   }
 
   .text {
     margin-top: 0;
-    left: calc(135 * var(--u));
+    left: calc(135 * 0.9044px);
     font-size: var(--fs-body);
     line-height: 1.42;
     letter-spacing: -0.01em;
@@ -395,8 +393,8 @@
 /* Desktop: no inner card around the section, so the heading lines up with every other section. */
 @media (min-width: 1024px) {
   .card {
-    margin-left: calc(-22 * var(--u));
-    margin-right: calc(-22 * var(--u));
+    margin-left: calc(-22 * 0.9044px);
+    margin-right: calc(-22 * 0.9044px);
     border-color: transparent;
     background: transparent;
     box-shadow: none;
@@ -407,8 +405,8 @@
 @media (min-width: 1024px) {
   .card {
     height: auto;
-    min-height: calc(560 * var(--u));
-    padding: 40px 0 28px calc(22 * var(--u));
+    min-height: calc(560 * 0.9044px);
+    padding: 40px 0 28px calc(22 * 0.9044px);
   }
 
   .title {
@@ -476,4 +474,34 @@
   .text br {
     display: none;
   }
+}
+
+
+/* Desktop values for base rules (fixed px; nothing scales with the viewport). */
+@media (min-width: 1024px) {
+  .item + .item::before {
+    top: calc(var(--div) * 0.9044px);
+  }
+
+  .tile {
+    top: calc(var(--tile) * 0.9044px);
+  }
+
+  .text {
+    top: calc(var(--text) * 0.9044px);
+  }
+}
+
+/* Site container on every width: content starts on the navbar's edge; the section wrapper adds no side space. */
+.frame {
+  max-width: var(--container-8xl);
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+}
+
+.panel {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
 }

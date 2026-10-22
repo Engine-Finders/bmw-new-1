@@ -88,27 +88,27 @@ export default function FooterColumns() {
   const isDark = theme === "dark";
 
   const linkClass = isDark
-    ? "text-xs font-semibold text-[var(--color-text-muted)] no-underline hover:text-[var(--color-primary)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--color-primary)]"
-    : "text-xs font-semibold text-[var(--color-primary)] no-underline hover:text-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--color-primary)]";
+    ? "t-label font-normal text-[var(--color-text-muted)] no-underline hover:text-[var(--color-primary)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--color-primary)]"
+    : "t-label font-normal text-[var(--color-primary)] no-underline hover:text-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--color-primary)]";
 
   const softTextClass = isDark ? "text-[var(--color-text-muted)]" : "text-black";
   const softerTextClass = isDark ? "text-[var(--color-text-soft)]" : "text-black";
   const brandTextClass = isDark ? "text-[var(--color-text)]" : "text-black";
 
   return (
-    <div className="mx-auto w-full max-w-8xl px-4 py-6 md:px-8 md:py-8">
+    <div className="site-container py-6 md:py-8">
       <Link href="/" className={`mb-6 inline-flex items-center gap-3 no-underline ${brandTextClass}`}>
         <LogoMark />
         <span className="leading-tight">
-          <span className="block text-xl font-extrabold tracking-normal">BMW</span>
-          <span className="block text-sm font-semibold tracking-normal">RELIABILITY GUIDE</span>
+          <span className="t-h6 block font-bold tracking-normal">BMW</span>
+          <span className="t-label block font-semibold tracking-normal">RELIABILITY GUIDE</span>
         </span>
       </Link>
 
       <div className="grid grid-cols-2 gap-x-4 gap-y-6 lg:grid-cols-4 lg:gap-6">
         {footerColumns.map((column) => (
           <div key={column.title}>
-            <h2 className="mb-2 text-[0.75rem] font-extrabold uppercase tracking-wide text-[var(--color-text)]">{column.title}</h2>
+            <h2 className="t-label mb-2 font-semibold uppercase tracking-wide text-[var(--color-text)]">{column.title}</h2>
             <ul className="grid gap-1.5">
               {column.links.map((link) => (
                 <li key={link.href}>
@@ -123,9 +123,9 @@ export default function FooterColumns() {
       </div>
 
       <div className="mt-6 border-t border-[var(--color-border)] pt-4">
-        <p className={`text-xs ${softTextClass}`}>{footerLegal.copyright}</p>
-        <p className={`mt-1 text-xs ${softerTextClass}`}>{footerLegal.disclaimer}</p>
-        <ul className={`mt-2 flex flex-wrap gap-x-2 gap-y-1 text-xs ${softTextClass}`}>
+        <p className={`t-label ${softTextClass}`}>{footerLegal.copyright}</p>
+        <p className={`t-label mt-1 ${softerTextClass}`}>{footerLegal.disclaimer}</p>
+        <ul className={`t-label mt-2 flex flex-wrap gap-x-2 gap-y-1 ${softTextClass}`}>
           {footerLegal.links.map((link, index) => (
             <li key={link.href} className="flex items-center gap-2">
               {index > 0 ? <span aria-hidden="true">·</span> : null}

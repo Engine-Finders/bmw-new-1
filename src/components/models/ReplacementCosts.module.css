@@ -19,8 +19,7 @@
 }
 
 .panel {
-  --u: calc(100cqw / 855);
-  padding: calc(70 * var(--u)) calc(33 * var(--u)) calc(14 * var(--u)) calc(32 * var(--u));
+  padding: calc(70 * 0.4561px) calc(33 * 0.4561px) calc(14 * 0.4561px) calc(32 * 0.4561px);
 }
 
 /* ---------- theme tokens ---------- */
@@ -113,14 +112,14 @@
 }
 
 .head {
-  max-width: calc(400 * var(--u));
+  max-width: calc(400 * 0.4561px);
 }
 
 .title {
-  margin: 0 0 0 calc(3 * var(--u));
-  font-size: calc(34.5 * var(--u));
+  margin: 0 0 0 calc(3 * 0.4561px);
+  font-size: calc(34.5 * 0.4561px);
   font-weight: 600;
-  line-height: calc(47 * var(--u));
+  line-height: calc(47 * 0.4561px);
   letter-spacing: -0.02em;
   color: var(--r-text);
 }
@@ -130,18 +129,18 @@
 }
 
 .copy {
-  margin: calc(12 * var(--u)) 0 0 calc(3 * var(--u));
-  font-size: calc(16.6 * var(--u));
-  line-height: calc(28.5 * var(--u));
+  margin: calc(12 * 0.4561px) 0 0 calc(3 * 0.4561px);
+  font-size: calc(16.6 * 0.4561px);
+  line-height: calc(28.5 * 0.4561px);
   color: var(--r-copy);
 }
 
 .headCar {
   position: absolute;
-  top: calc(10 * var(--u));
-  right: calc(-8 * var(--u));
-  width: calc(410 * var(--u));
-  height: calc(196 * var(--u));
+  top: calc(10 * 0.4561px);
+  right: calc(-8 * 0.4561px);
+  width: calc(410 * 0.4561px);
+  height: calc(196 * 0.4561px);
 }
 
 .carImg {
@@ -152,11 +151,11 @@
 .trust {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  margin: calc(21 * var(--u)) 0 0;
-  padding: calc(22 * var(--u)) 0 calc(26 * var(--u));
+  margin: calc(21 * 0.4561px) 0 0;
+  padding: calc(22 * 0.4561px) 0 calc(26 * 0.4561px);
   list-style: none;
   border: 1px solid var(--r-card-border);
-  border-radius: calc(14 * var(--u));
+  border-radius: calc(14 * 0.4561px);
   background: var(--r-card);
   box-shadow: var(--r-card-shadow);
 }
@@ -180,24 +179,24 @@
 }
 
 .trustIcon {
-  width: calc(60 * var(--u));
-  height: calc(60 * var(--u));
+  width: calc(60 * 0.4561px);
+  height: calc(60 * 0.4561px);
   color: var(--r-icon);
 }
 
 .trustItem strong {
-  margin-top: calc(14 * var(--u));
+  margin-top: calc(14 * 0.4561px);
   color: var(--r-trust-title);
-  font-size: calc(16 * var(--u));
+  font-size: calc(16 * 0.4561px);
   font-weight: 600;
-  line-height: calc(24 * var(--u));
+  line-height: calc(24 * 0.4561px);
 }
 
 .trustItem span {
-  margin-top: calc(6 * var(--u));
+  margin-top: calc(6 * 0.4561px);
   color: var(--r-trust-text);
-  font-size: calc(15 * var(--u));
-  line-height: calc(22 * var(--u));
+  font-size: calc(15 * 0.4561px);
+  line-height: calc(22 * 0.4561px);
 }
 
 /* ---------- tables (shared) ---------- */
@@ -260,11 +259,11 @@
 .tabs {
   display: grid;
   grid-template-columns: 143fr 151fr 179fr 159fr 158fr;
-  margin-top: calc(24 * var(--u));
+  margin-top: calc(24 * 0.4561px);
   overflow: hidden;
   border: 1px solid var(--r-card-border);
   border-bottom: 0;
-  border-radius: calc(14 * var(--u)) calc(14 * var(--u)) 0 0;
+  border-radius: calc(14 * 0.4561px) calc(14 * 0.4561px) 0 0;
   background: var(--r-tab-bg);
 }
 
@@ -273,7 +272,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: calc(89 * var(--u));
+  height: calc(89 * 0.4561px);
   border: 0;
   border-left: 1px solid var(--r-divider);
   background: transparent;
@@ -287,65 +286,65 @@
 }
 
 .tab strong {
-  font-size: calc(16.4 * var(--u));
+  font-size: calc(16.4 * 0.4561px);
   font-weight: 600;
-  line-height: calc(26 * var(--u));
+  line-height: calc(26 * 0.4561px);
 }
 
 .tab span {
-  font-size: calc(16 * var(--u));
-  line-height: calc(26 * var(--u));
+  font-size: calc(16 * 0.4561px);
+  line-height: calc(26 * 0.4561px);
 }
 
 .tabOn {
-  border-radius: calc(14 * var(--u)) calc(14 * var(--u)) 0 0;
+  border-radius: calc(14 * 0.4561px) calc(14 * 0.4561px) 0 0;
   background: var(--r-tab-on);
   color: #ffffff;
 }
 
 .pCard {
-  padding: calc(30 * var(--u)) calc(15 * var(--u)) calc(21 * var(--u));
+  padding: calc(30 * 0.4561px) calc(15 * 0.4561px) calc(21 * 0.4561px);
   border: 1px solid var(--r-card-border);
   border-top: 0;
-  border-radius: 0 0 calc(14 * var(--u)) calc(14 * var(--u));
+  border-radius: 0 0 calc(14 * 0.4561px) calc(14 * 0.4561px);
   background: var(--r-card);
   box-shadow: var(--r-card-shadow);
 }
 
 .pTitle {
-  margin: 0 0 0 calc(3 * var(--u));
+  margin: 0 0 0 calc(3 * 0.4561px);
   color: var(--r-text);
-  font-size: calc(21.5 * var(--u));
+  font-size: calc(21.5 * 0.4561px);
   font-weight: 600;
-  line-height: calc(30 * var(--u));
+  line-height: calc(30 * 0.4561px);
 }
 
 .pTitle span {
   color: var(--r-accent);
-  font-size: calc(18 * var(--u));
+  font-size: calc(18 * 0.4561px);
 }
 
 .pCar {
   position: relative;
-  width: calc(495 * var(--u));
-  height: calc(186 * var(--u));
-  margin: calc(-1 * var(--u)) 0 0 calc(118 * var(--u));
+  width: calc(495 * 0.4561px);
+  height: calc(186 * 0.4561px);
+  margin: calc(-1 * 0.4561px) 0 0 calc(118 * 0.4561px);
 }
 
 .pTable {
-  margin-top: calc(8 * var(--u));
-  border-radius: calc(10 * var(--u)) calc(10 * var(--u)) 0 0;
+  margin-top: calc(8 * 0.4561px);
+  border-radius: calc(10 * 0.4561px) calc(10 * 0.4561px) 0 0;
 }
 
 .pTable .tr {
   grid-template-columns: 139fr 135fr 112fr 134fr 123fr 117fr;
-  height: calc(63 * var(--u));
-  font-size: calc(14.3 * var(--u));
-  line-height: calc(22 * var(--u));
+  height: calc(63 * 0.4561px);
+  font-size: calc(14.3 * 0.4561px);
+  line-height: calc(22 * 0.4561px);
 }
 
 .pTable .tr:nth-child(6) {
-  height: calc(67 * var(--u));
+  height: calc(67 * 0.4561px);
 }
 
 .pTable .tr > span {
@@ -353,15 +352,15 @@
 }
 
 .pTable .tr > span:first-child {
-  padding-left: calc(12 * var(--u));
+  padding-left: calc(12 * 0.4561px);
   border-left: 0;
 }
 
 .pTable .thead {
-  height: calc(60 * var(--u));
-  font-size: calc(15.5 * var(--u));
+  height: calc(60 * 0.4561px);
+  font-size: calc(15.5 * 0.4561px);
   font-weight: 600;
-  line-height: calc(22 * var(--u));
+  line-height: calc(22 * 0.4561px);
 }
 
 .pTable .thead > span {
@@ -371,58 +370,58 @@
 .pNote {
   display: flex;
   align-items: center;
-  gap: calc(16 * var(--u));
-  height: calc(52 * var(--u));
-  margin: calc(6 * var(--u)) 0 0;
-  padding-left: calc(16 * var(--u));
-  border-radius: calc(8 * var(--u));
+  gap: calc(16 * 0.4561px);
+  height: calc(52 * 0.4561px);
+  margin: calc(6 * 0.4561px) 0 0;
+  padding-left: calc(16 * 0.4561px);
+  border-radius: calc(8 * 0.4561px);
   background: var(--r-note-bg);
   color: var(--r-note-text);
-  font-size: calc(14.8 * var(--u));
+  font-size: calc(14.8 * 0.4561px);
 }
 
 .pNoteIcon {
-  width: calc(26 * var(--u));
-  height: calc(26 * var(--u));
+  width: calc(26 * 0.4561px);
+  height: calc(26 * 0.4561px);
   color: var(--r-icon);
 }
 
 /* ---------- bottom: notes + rule ---------- */
 
 .notes {
-  margin-top: calc(10 * var(--u));
-  padding: calc(18 * var(--u)) calc(20 * var(--u)) calc(5 * var(--u)) calc(28 * var(--u));
+  margin-top: calc(10 * 0.4561px);
+  padding: calc(18 * 0.4561px) calc(20 * 0.4561px) calc(5 * 0.4561px) calc(28 * 0.4561px);
   border: 1px solid var(--r-note-border);
-  border-radius: calc(12 * var(--u));
+  border-radius: calc(12 * 0.4561px);
   background: var(--r-note-bg);
 }
 
 .note {
   display: flex;
   align-items: flex-start;
-  gap: calc(42 * var(--u));
+  gap: calc(42 * 0.4561px);
 }
 
 .noteIcon {
   flex-shrink: 0;
-  width: calc(64 * var(--u));
-  height: calc(80 * var(--u));
+  width: calc(64 * 0.4561px);
+  height: calc(80 * 0.4561px);
   color: var(--r-icon);
 }
 
 .noteTitle {
   margin: 0;
   color: var(--r-note-title);
-  font-size: calc(17.9 * var(--u));
+  font-size: calc(17.9 * 0.4561px);
   font-weight: 600;
-  line-height: calc(26 * var(--u));
+  line-height: calc(26 * 0.4561px);
 }
 
 .noteText {
-  margin: calc(8 * var(--u)) 0 0;
+  margin: calc(8 * 0.4561px) 0 0;
   color: var(--r-note-text);
-  font-size: calc(13.5 * var(--u));
-  line-height: calc(19 * var(--u));
+  font-size: calc(13.5 * 0.4561px);
+  line-height: calc(19 * 0.4561px);
 }
 
 .note.deskFlex {
@@ -431,26 +430,26 @@
 
 .noteList {
   list-style: disc;
-  margin: calc(8 * var(--u)) 0 0;
-  padding-left: calc(14 * var(--u));
+  margin: calc(8 * 0.4561px) 0 0;
+  padding-left: calc(14 * 0.4561px);
   color: var(--r-note-text);
-  font-size: calc(13.2 * var(--u));
-  line-height: calc(22.5 * var(--u));
+  font-size: calc(13.2 * 0.4561px);
+  line-height: calc(22.5 * 0.4561px);
 }
 
 .noteList li + li {
-  margin-top: calc(6 * var(--u));
+  margin-top: calc(6 * 0.4561px);
 }
 
 .rule {
   position: relative;
   display: flex;
   align-items: flex-start;
-  gap: calc(22 * var(--u));
-  margin-top: calc(10 * var(--u));
-  padding: calc(11 * var(--u)) calc(130 * var(--u)) calc(14 * var(--u)) calc(14 * var(--u));
+  gap: calc(22 * 0.4561px);
+  margin-top: calc(10 * 0.4561px);
+  padding: calc(11 * 0.4561px) calc(130 * 0.4561px) calc(14 * 0.4561px) calc(14 * 0.4561px);
   border: 1px solid var(--r-rule-border);
-  border-radius: calc(12 * var(--u));
+  border-radius: calc(12 * 0.4561px);
   background: var(--r-rule-bg);
 }
 
@@ -459,9 +458,9 @@
   flex-shrink: 0;
   align-items: center;
   justify-content: center;
-  width: calc(80 * var(--u));
-  height: calc(80 * var(--u));
-  margin-top: calc(14 * var(--u));
+  width: calc(80 * 0.4561px);
+  height: calc(80 * 0.4561px);
+  margin-top: calc(14 * 0.4561px);
   border: 1.5px solid var(--r-gold);
   border-radius: 50%;
   background: var(--r-gold-soft);
@@ -476,16 +475,16 @@
 .ruleTitle {
   margin: 0;
   color: var(--r-gold-title);
-  font-size: calc(18.1 * var(--u));
+  font-size: calc(18.1 * 0.4561px);
   font-weight: 600;
-  line-height: calc(28 * var(--u));
+  line-height: calc(28 * 0.4561px);
 }
 
 .ruleText {
-  margin: calc(6 * var(--u)) 0 0;
+  margin: calc(6 * 0.4561px) 0 0;
   color: var(--r-rule-text);
-  font-size: calc(14.4 * var(--u));
-  line-height: calc(22 * var(--u));
+  font-size: calc(14.4 * 0.4561px);
+  line-height: calc(22 * 0.4561px);
 }
 
 .ruleText strong {
@@ -495,23 +494,23 @@
 
 .ruleShield {
   position: absolute;
-  top: calc(18 * var(--u));
-  right: calc(14 * var(--u));
-  width: calc(96 * var(--u));
-  height: calc(110 * var(--u));
+  top: calc(18 * 0.4561px);
+  right: calc(14 * 0.4561px);
+  width: calc(96 * 0.4561px);
+  height: calc(110 * 0.4561px);
   color: var(--r-gold);
   opacity: 0.85;
 }
 
 .footer {
-  margin: calc(14 * var(--u)) 0 0;
+  margin: calc(14 * 0.4561px) 0 0;
   color: var(--r-trust-text);
-  font-size: calc(12.9 * var(--u));
+  font-size: calc(12.9 * 0.4561px);
   text-align: center;
 }
 
 .bullet {
-  margin: 0 calc(12 * var(--u));
+  margin: 0 calc(12 * 0.4561px);
 }
 
 /* ======================= Small phones ======================= */
@@ -530,7 +529,7 @@
 
   .title {
     margin-left: 0;
-    font-size: min(22px, 5.4cqw);
+    font-size: min(22px, 21.06px);
     line-height: 1.3;
   }
 
@@ -743,8 +742,7 @@
 
 @media (min-width: 1024px) {
   .panel {
-    --u: calc(100cqw / 1411);
-    padding: calc(37 * var(--u)) calc(79 * var(--u)) calc(12 * var(--u)) calc(46 * var(--u));
+    padding: calc(37 * 0.9525px) calc(79 * 0.9525px) calc(12 * 0.9525px) calc(46 * 0.9525px);
   }
 
   .deskOnly {
@@ -782,7 +780,7 @@
   }
 
   .copy {
-    margin: calc(9 * var(--u)) 0 0;
+    margin: calc(9 * 0.9525px) 0 0;
     font-size: var(--fs-label);
     line-height: 1.42;
   }
@@ -795,27 +793,27 @@
     height: auto;
     margin: 0;
     padding: 14px 0;
-    border-radius: calc(10 * var(--u));
+    border-radius: calc(10 * 0.9525px);
   }
 
   .trustItem + .trustItem::before {
-    top: calc(2 * var(--u));
-    bottom: calc(14 * var(--u));
+    top: calc(2 * 0.9525px);
+    bottom: calc(14 * 0.9525px);
   }
 
   .trustIcon {
-    width: calc(40 * var(--u));
-    height: calc(40 * var(--u));
+    width: calc(40 * 0.9525px);
+    height: calc(40 * 0.9525px);
   }
 
   .trustItem strong {
-    margin-top: calc(10 * var(--u));
+    margin-top: calc(10 * 0.9525px);
     font-size: var(--fs-label);
     line-height: 1.42;
   }
 
   .trustItem span {
-    margin-top: calc(3 * var(--u));
+    margin-top: calc(3 * 0.9525px);
     font-size: var(--fs-label);
     line-height: 1.45;
   }
@@ -824,12 +822,12 @@
 
   .gens {
     display: grid;
-    gap: calc(6 * var(--u));
+    gap: calc(6 * 0.9525px);
   }
 
   .gen {
     display: grid;
-    grid-template-columns: calc(299 * var(--u)) 1fr;
+    grid-template-columns: calc(299 * 0.9525px) 1fr;
     gap: 0;
   }
 
@@ -839,9 +837,9 @@
 
   .genCard {
     position: relative;
-    padding: calc(17 * var(--u)) 0 0 calc(15 * var(--u));
+    padding: calc(17 * 0.9525px) 0 0 calc(15 * 0.9525px);
     border: 1px solid var(--r-card-border);
-    border-radius: calc(8 * var(--u)) 0 0 calc(8 * var(--u));
+    border-radius: calc(8 * 0.9525px) 0 0 calc(8 * 0.9525px);
     background: var(--r-card);
   }
 
@@ -860,7 +858,7 @@
   }
 
   .genYears {
-    margin: calc(2 * var(--u)) 0 0;
+    margin: calc(2 * 0.9525px) 0 0;
     color: var(--r-years);
     font-size: var(--fs-label);
     line-height: 1.50;
@@ -868,14 +866,14 @@
 
   .genCar {
     position: absolute;
-    right: calc(2 * var(--u));
-    bottom: calc(1 * var(--u));
-    left: calc(1 * var(--u));
-    height: calc(100 * var(--u));
+    right: calc(2 * 0.9525px);
+    bottom: calc(1 * 0.9525px);
+    left: calc(1 * 0.9525px);
+    height: calc(100 * 0.9525px);
   }
 
   .gen:nth-child(n + 2) .genCar {
-    height: calc(88 * var(--u));
+    height: calc(88 * 0.9525px);
   }
 
   .gen .tr > span {
@@ -888,7 +886,7 @@
   }
 
   .table {
-    border-radius: calc(6 * var(--u)) calc(6 * var(--u)) 0 0;
+    border-radius: calc(6 * 0.9525px) calc(6 * 0.9525px) 0 0;
   }
 
   .gen .tr {
@@ -912,11 +910,11 @@
   }
 
   .gen .tr > span:first-child {
-    padding-left: calc(27 * var(--u));
+    padding-left: calc(27 * 0.9525px);
   }
 
   .gen .tr > span:nth-child(2) {
-    padding-left: calc(21 * var(--u));
+    padding-left: calc(21 * 0.9525px);
     border-left: 1px solid var(--r-line);
   }
 
@@ -948,30 +946,30 @@
     margin: 0;
     padding: 18px 20px;
     border-color: var(--r-card-border);
-    border-radius: calc(8 * var(--u));
+    border-radius: calc(8 * 0.9525px);
     background: var(--r-card);
     box-shadow: var(--r-card-shadow);
   }
 
   .note {
-    gap: calc(22 * var(--u));
+    gap: calc(22 * 0.9525px);
   }
 
   .note + .note {
-    padding-left: calc(22 * var(--u));
+    padding-left: calc(22 * 0.9525px);
     border-left: 1px solid var(--r-divider);
-    gap: calc(21 * var(--u));
+    gap: calc(21 * 0.9525px);
   }
 
   .noteIcon {
-    width: calc(32 * var(--u));
-    height: calc(40 * var(--u));
-    margin-left: calc(-1 * var(--u));
+    width: calc(32 * 0.9525px);
+    height: calc(40 * 0.9525px);
+    margin-left: calc(-1 * 0.9525px);
   }
 
   .note + .note .noteIcon {
-    width: calc(30 * var(--u));
-    height: calc(30 * var(--u));
+    width: calc(30 * 0.9525px);
+    height: calc(30 * 0.9525px);
   }
 
   .noteTitle {
@@ -985,7 +983,7 @@
 
   .noteText {
     white-space: normal;
-    margin-top: calc(7 * var(--u));
+    margin-top: calc(7 * 0.9525px);
     font-size: var(--fs-label);
     line-height: 1.65;
   }
@@ -996,13 +994,13 @@
     gap: 18px;
     margin-top: 0;
     padding: 16px 110px 16px 16px;
-    border-radius: calc(10 * var(--u));
+    border-radius: calc(10 * 0.9525px);
   }
 
   .crown {
-    width: calc(70 * var(--u));
-    height: calc(70 * var(--u));
-    margin-top: calc(10 * var(--u));
+    width: calc(70 * 0.9525px);
+    height: calc(70 * 0.9525px);
+    margin-top: calc(10 * 0.9525px);
   }
 
   .ruleTitle {
@@ -1011,17 +1009,17 @@
   }
 
   .ruleText {
-    margin-top: calc(8 * var(--u));
+    margin-top: calc(8 * 0.9525px);
     font-size: var(--fs-label);
     line-height: 1.58;
     white-space: normal;
   }
 
   .ruleShield {
-    top: calc(16 * var(--u));
-    right: calc(28 * var(--u));
-    width: calc(76 * var(--u));
-    height: calc(88 * var(--u));
+    top: calc(16 * 0.9525px);
+    right: calc(28 * 0.9525px);
+    width: calc(76 * 0.9525px);
+    height: calc(88 * 0.9525px);
   }
 
   /* Site container: same width and side padding as every other section. */
@@ -1128,4 +1126,144 @@
     font-size: 15px !important;
     line-height: 1.55 !important;
   }
+}
+
+
+/* Desktop values for base rules (fixed px; nothing scales with the viewport). */
+@media (min-width: 1024px) {
+  .headCar {
+    top: calc(10 * 0.9525px);
+    right: calc(-8 * 0.9525px);
+    width: calc(410 * 0.9525px);
+    height: calc(196 * 0.9525px);
+  }
+
+  .tabs {
+    margin-top: calc(24 * 0.9525px);
+    border-radius: calc(14 * 0.9525px) calc(14 * 0.9525px) 0 0;
+  }
+
+  .tab {
+    height: calc(89 * 0.9525px);
+  }
+
+  .tab strong {
+    font-size: calc(16.4 * 0.9525px);
+    line-height: calc(26 * 0.9525px);
+  }
+
+  .tab span {
+    font-size: calc(16 * 0.9525px);
+    line-height: calc(26 * 0.9525px);
+  }
+
+  .tabOn {
+    border-radius: calc(14 * 0.9525px) calc(14 * 0.9525px) 0 0;
+  }
+
+  .pCard {
+    padding: calc(30 * 0.9525px) calc(15 * 0.9525px) calc(21 * 0.9525px);
+    border-radius: 0 0 calc(14 * 0.9525px) calc(14 * 0.9525px);
+  }
+
+  .pTitle {
+    margin: 0 0 0 calc(3 * 0.9525px);
+    font-size: calc(21.5 * 0.9525px);
+    line-height: calc(30 * 0.9525px);
+  }
+
+  .pTitle span {
+    font-size: calc(18 * 0.9525px);
+  }
+
+  .pCar {
+    width: calc(495 * 0.9525px);
+    height: calc(186 * 0.9525px);
+    margin: calc(-1 * 0.9525px) 0 0 calc(118 * 0.9525px);
+  }
+
+  .pTable {
+    margin-top: calc(8 * 0.9525px);
+    border-radius: calc(10 * 0.9525px) calc(10 * 0.9525px) 0 0;
+  }
+
+  .pTable .tr {
+    height: calc(63 * 0.9525px);
+    font-size: calc(14.3 * 0.9525px);
+    line-height: calc(22 * 0.9525px);
+  }
+
+  .pTable .tr:nth-child(6) {
+    height: calc(67 * 0.9525px);
+  }
+
+  .pTable .tr > span:first-child {
+    padding-left: calc(12 * 0.9525px);
+  }
+
+  .pTable .thead {
+    height: calc(60 * 0.9525px);
+    font-size: calc(15.5 * 0.9525px);
+    line-height: calc(22 * 0.9525px);
+  }
+
+  .pNote {
+    gap: calc(16 * 0.9525px);
+    height: calc(52 * 0.9525px);
+    margin: calc(6 * 0.9525px) 0 0;
+    padding-left: calc(16 * 0.9525px);
+    border-radius: calc(8 * 0.9525px);
+    font-size: calc(14.8 * 0.9525px);
+  }
+
+  .pNoteIcon {
+    width: calc(26 * 0.9525px);
+    height: calc(26 * 0.9525px);
+  }
+
+  .notes {
+    margin-top: calc(10 * 0.9525px);
+  }
+
+  .noteText {
+    margin: calc(8 * 0.9525px) 0 0;
+  }
+
+  .noteList {
+    margin: calc(8 * 0.9525px) 0 0;
+    padding-left: calc(14 * 0.9525px);
+    font-size: calc(13.2 * 0.9525px);
+    line-height: calc(22.5 * 0.9525px);
+  }
+
+  .noteList li + li {
+    margin-top: calc(6 * 0.9525px);
+  }
+
+  .ruleText {
+    margin: calc(6 * 0.9525px) 0 0;
+  }
+
+  .footer {
+    margin: calc(14 * 0.9525px) 0 0;
+    font-size: calc(12.9 * 0.9525px);
+  }
+
+  .bullet {
+    margin: 0 calc(12 * 0.9525px);
+  }
+}
+
+/* Site container on every width: content starts on the navbar's edge; the section wrapper adds no side space. */
+.frame {
+  max-width: var(--container-8xl);
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+}
+
+.panel {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
 }
