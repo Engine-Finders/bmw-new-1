@@ -7,7 +7,7 @@
 import { engineImageFor, heroCarFor, modelEngineImage } from "@/components/shared/carImage";
 
 const strip = (html = "") => String(html ?? "").replace(/<[^>]*>/g, "");
-const dash = (text = "") => String(text ?? "").replace(/\s+-\s*(?=\S)/g, " — ");
+const dash = (text = "") => String(text ?? "").replace(/\s+-\s*(?=\S)/g, " - ");
 const slug = (text = "") => strip(text).toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
 const pad = (n) => String(n).padStart(2, "0");
 
@@ -49,7 +49,7 @@ function generations(section, names) {
       return {
         ...card,
         label: label || names.full,
-        code: code || title.replace(/\s*\(.*$/, "").replace(/^.*?\s[-–—]\s*/, "") || title,
+        code: code || title.replace(/\s*\(.*$/, "").replace(/^.*?\s[-–-]\s*/, "") || title,
         // The grid shows one card per generation, like the 3 Series: explainer cards ("The Line That Matters")
         // and body-style repeats (an E61 card after "E60/E61") stay in the data but out of the grid.
         variant: card.variant || isRepeat(code, card, seen),
@@ -81,9 +81,9 @@ function engineDatabase(section, names, ctx) {
     ...section,
     stats: [
       { icon: "cube", value: String(count), label: "Engine Codes<br>Tracked" },
-      { icon: "shield", value: String(generationsCount || "—"), label: `Generation${generationsCount === 1 ? "" : "s"}<br>Covered` },
+      { icon: "shield", value: String(generationsCount || "-"), label: `Generation${generationsCount === 1 ? "" : "s"}<br>Covered` },
       { icon: "chart", value: ctx.enquiries || "24,650+", label: ctx.enquiries ? "Enquiries<br>in 2025" : "BMW Enquiries<br>in 2025" },
-      { icon: "pound", value: low != null ? `${kilo(low)}–${kilo(high)}` : "—", label: "Typical Recon<br>Cost Range" },
+      { icon: "pound", value: low != null ? `${kilo(low)}–${kilo(high)}` : "-", label: "Typical Recon<br>Cost Range" },
     ],
     sortColumn: section.columns?.[0] || "Engine Code",
     infoColumns: ["Reliability", "2025 Enquiries", "Avg. Recon Cost"],
@@ -99,7 +99,7 @@ function engineDatabase(section, names, ctx) {
     note: "All enquiries are from 2025 (to date) and verified via our internal system.<br>Recon costs are supply only and exclude fitting.",
     noteLink: { label: "How we collect engine data", href: "/data/methodology" },
     mobile: {
-      h2: `${names.short} Engine Codes — The Database`,
+      h2: `${names.short} Engine Codes - The Database`,
       subHeadline: `The complete database of ${names.full} engine codes with real UK enquiry data, fitted models, and replacement cost insights.`,
       dataCard: {
         title: "Proprietary UK Data",
@@ -112,12 +112,12 @@ function engineDatabase(section, names, ctx) {
       engines: engines.map((e) => ({
         code: e.engineCode,
         fuel: /diesel/i.test(e.fuel) ? "Diesel" : /electric|hybrid/i.test(e.fuel) ? e.fuel : "Petrol",
-        enquiries: String(e.enquiries || "").match(/^[\d,]+/)?.[0] || "—",
+        enquiries: String(e.enquiries || "").match(/^[\d,]+/)?.[0] || "-",
       })),
       sourcesTitle: "DATA SOURCES:",
       sources: [
         { icon: "chart", label: "Enquiry volumes:", text: "EM_Proprietary_Data_2025.txt [EM-VERIFIED]" },
-        { icon: "pound", label: "Costs:", text: "Table A — Engine Replacement Economics [EM-QUOTE]" },
+        { icon: "pound", label: "Costs:", text: "Table A - Engine Replacement Economics [EM-QUOTE]" },
         { icon: "doc", label: "Engine codes:", text: "Cross-referenced from your existing data" },
       ],
     },
@@ -153,17 +153,17 @@ function marketRow(signal) {
   const rawTrend = String(signal.demandTrend || "");
   const placeholder = dash(rawTrend.match(/\[PLACEHOLDER[^\]]*\]/)?.[0] || "");
   const trendText = dash(rawTrend.replace(/\[PLACEHOLDER[^\]]*\]/, "").replace(/^[^\p{L}]+/u, "").trim());
-  const [trendLabel, ...noteParts] = trendText.split(/\s+—\s+/);
+  const [trendLabel, ...noteParts] = trendText.split(/\s+-\s+/);
   const trend = /⬇|↓|falling|declin/i.test(rawTrend) ? "down" : /➡|→|stable|flat|steady/i.test(rawTrend) ? "flat" : "up";
   return {
     icon: ENGINE_CODE.test(signal.signal) ? "engine" : "car",
     signal: strip(signal.signal),
-    value: value || "—",
+    value: value || "-",
     tag,
-    note: value ? withoutTag.slice(value.length).trim() : withoutTag.replace(/^[—–-]\s*/, ""),
+    note: value ? withoutTag.slice(value.length).trim() : withoutTag.replace(/^[-–-]\s*/, ""),
     trend,
     trendLabel: trendLabel || trendText,
-    trendNote: noteParts.join(" — "),
+    trendNote: noteParts.join(" - "),
     placeholder,
   };
 }
@@ -181,11 +181,11 @@ function insightCard(text, index) {
 function marketIntelligence(section, names, ctx) {
   if (!section || section.rows) return section;
   const h2 = dash(section.h2 || "");
-  const [first, ...rest] = h2.split(/\s+—\s+/);
-  const second = rest.join(" — ").replace(/(\d[\d,]*\+?\s+)?UK Owners/, (m) => `<span>${m}</span>`);
+  const [first, ...rest] = h2.split(/\s+-\s+/);
+  const second = rest.join(" - ").replace(/(\d[\d,]*\+?\s+)?UK Owners/, (m) => `<span>${m}</span>`);
   return {
     ...section,
-    titleLines: rest.length ? [`${first} —`, second] : [h2],
+    titleLines: rest.length ? [`${first} -`, second] : [h2],
     stat: { value: ctx.enquiries || "24,650+", label: ctx.enquiries ? "Total Enquiries in 2025" : "BMW Enquiries in 2025", tag: "[BMW-VERIFIED]" },
     columns: ["Signal", "2025 Data", "Demand Trend"],
     rows: (section.signals || []).map(marketRow),
@@ -205,7 +205,7 @@ function editorialQuote(quote) {
 function replacementCosts(section, names) {
   if (!section?.tables || section.generations) return section;
   const labourSource = dash(section.labourEstimate || section.figuresNote || "").replace(/^Labour estimate:\s*/i, "");
-  const ruleAt = labourSource.search(/The [^.]{1,30}? rule\s*—/);
+  const ruleAt = labourSource.search(/The [^.]{1,30}? rule\s*-/);
   const labour = (ruleAt > 0 ? labourSource.slice(0, ruleAt) : labourSource).trim();
   let ruleTitle = "";
   let ruleText = "";
@@ -224,7 +224,7 @@ function replacementCosts(section, names) {
     const title = dash(strip(table.title));
     const years = title.match(/\(([^)]*\d{4}[^)]*)\)/)?.[1] || "";
     const name = title.replace(/\s*\([^)]*\)\s*$/, "").trim();
-    const tab = name.split(/\s+—\s+/)[0];
+    const tab = name.split(/\s+-\s+/)[0];
     const image = table.image;
     return {
       key: slug(name) || slug(title),
@@ -253,7 +253,7 @@ function replacementCosts(section, names) {
     mobileNote: "Prices are supply only. Labour and ancillary parts extra.",
     notes: {
       title: "Important Notes",
-      text: figuresIsNote ? dash(section.figuresNote) : "Prices are supply only and exclude fitting. Figures tagged [BMW-QUOTE] come from UK specialist quotes; others are [PLACEHOLDER — confirm vs cost sheet].",
+      text: figuresIsNote ? dash(section.figuresNote) : "Prices are supply only and exclude fitting. Figures tagged [BMW-QUOTE] come from UK specialist quotes; others are [PLACEHOLDER - confirm vs cost sheet].",
       mobileBullets: [figuresIsNote ? dash(section.figuresNote) : "Prices are supply only and exclude fitting.", labour ? `Labour estimate: ${labour}` : ""].filter(Boolean),
     },
     labour: labour ? { title: "Labour Estimate", text: labour } : null,
@@ -278,15 +278,15 @@ function evolutionEngines(keyEngines = "") {
 function engineEvolution(section, names, ctx) {
   if (!section?.eras || section.stats) return section;
   const h2 = dash(section.h2 || "");
-  const m = h2.match(/^(.*?)\s+(Evolved)\s*—\s*(.*)$/);
+  const m = h2.match(/^(.*?)\s+(Evolved)\s*-\s*(.*)$/);
   const firstYear = String(section.eras[0]?.years || "").match(/\d{4}/)?.[0];
   const span = firstYear ? new Date().getFullYear() - Number(firstYear) : null;
   const families = ctx.families;
   return {
     ...section,
     h2,
-    titleLines: m ? [m[1], `${m[2]} — <span>${m[3]}</span>`] : [h2],
-    titleLinesMobile: m ? [m[1], `${m[2]} —`, `<span>${m[3]}</span>`] : [h2],
+    titleLines: m ? [m[1], `${m[2]} - <span>${m[3]}</span>`] : [h2],
+    titleLinesMobile: m ? [m[1], `${m[2]} -`, `<span>${m[3]}</span>`] : [h2],
     subHeadline:
       section.subHeadline ||
       `From ${families[0] ? `the ${families[0]}` : "the first engines"} to ${families.length > 1 ? `today’s ${families[families.length - 1]}` : "today"}, explore how engineering, emissions and performance shaped every generation of ${names.short} engines.`,
@@ -333,7 +333,7 @@ function whoShouldBuy(section, names, ctx) {
   return {
     ...section,
     titleLines: [h2.replace(names.full, `<span>${names.full}</span>`)],
-    subHeadline: `Different buyers, different priorities. Here’s our verdict on who the ${names.short} is perfect for — and who should think twice.`,
+    subHeadline: `Different buyers, different priorities. Here’s our verdict on who the ${names.short} is perfect for - and who should think twice.`,
     proof: [
       { icon: "group", title: "Built for Real Life", text: "Practical. Powerful.<br>Proven." },
       { icon: "shieldCheck", title: "Data-Backed Ratings", text: ctx.enquiries ? `${ctx.enquiries} UK enquiries<br>analysed in 2025.` : "Real UK enquiry data<br>analysed in 2025." },
@@ -351,7 +351,7 @@ function whoShouldBuy(section, names, ctx) {
     })),
     note: {
       title: "Real talk.",
-      text: `The right ${names.short} for you depends on your budget, your mileage, and your patience for maintenance. Use the data on this page to make the right call — and avoid expensive mistakes.`,
+      text: `The right ${names.short} for you depends on your budget, your mileage, and your patience for maintenance. Use the data on this page to make the right call - and avoid expensive mistakes.`,
     },
     cta: { label: `Explore ${names.short} Engines`, href: "#engine-database" },
   };
@@ -376,7 +376,7 @@ function trustBlock(section, names, ctx) {
     titleLines: m ? [m[1], m[2].replace(/(BMWEngines\.uk)/i, "<span>$1</span>")] : [h2],
     items: section.signals.map((signal) => {
       const text = dash(signal.text).replace(/(\[[A-Z][A-Z -]+\])/g, "<span>$1</span>");
-      return { icon: trustIcon(signal), title: signal.title, text: `— ${text}` };
+      return { icon: trustIcon(signal), title: signal.title, text: `- ${text}` };
     }),
     art: ctx.scene ? { light: ctx.scene, dark: ctx.scene } : section.art,
   };

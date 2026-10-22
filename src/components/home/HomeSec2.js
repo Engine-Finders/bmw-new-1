@@ -8,7 +8,7 @@ import { useTheme } from "@/components/shared/themeProvider";
 import VerdictGlyph from "@/components/home/VerdictGlyph";
 import GrilleImage from "@/components/home/GrilleImage";
 
-// Find Your Vehicle — desktop: two tables (1–8 Series, Z, i | X, M, classics); phone: search,
+// Find Your Vehicle - desktop: two tables (1–8 Series, Z, i | X, M, classics); phone: search,
 // filter chips, a single list, "View all models" and a trust card with the CTA.
 
 // Verdict text colour per type (no box behind it); dark theme uses white text like the reference.
@@ -156,7 +156,7 @@ export default function HomeSec2({ data }) {
         {/* Reference: large white/black grille top right, bleeding off the edge behind the heading. */}
         <GrilleImage src={isDark ? data.headerImage.dark : data.headerImage.light} className="-right-2 top-0 h-[190px] w-[50%]" fadeStart="78%" position="object-cover object-[22%_70%]" />
         <div className="relative max-w-[62%]">
-          <h2 className={`t-h2 ${heading}`} dangerouslySetInnerHTML={{ __html: data.h2 }} />
+          <p className={`t-h2 ${heading}`} dangerouslySetInnerHTML={{ __html: data.h2 }} />
           <p className={`t-body mt-3 ${muted}`}>{data.subHeadline}</p>
         </div>
 

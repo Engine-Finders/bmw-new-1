@@ -4,7 +4,7 @@ import Image from "next/image";
 import { useState } from "react";
 import { useTheme } from "@/components/shared/themeProvider";
 
-// Why BMW Owners Trust BMWEngines.uk — four trust cards, a 3-column FAQ, and the final CTA panel.
+// Why BMW Owners Trust BMWEngines.uk - four trust cards, a 3-column FAQ, and the final CTA panel.
 // Phone stacks everything and ends with the disclaimer card.
 
 function SignalIcon({ name, className = "h-8 w-8", style }) {
@@ -132,7 +132,11 @@ function TrustCard({ s, C, phone = false }) {
         </span>
         <span>
           <span className="t-label block font-bold" style={{ color: C.blue }}>{String(s.id).padStart(2, "0")}</span>
-          <h3 className="text-[18px] font-bold leading-[1.3]" style={{ color: C.text }}>{s.title}</h3>
+          {phone ? (
+            <p className="text-[18px] font-bold leading-[1.3]" style={{ color: C.text }}>{s.title}</p>
+          ) : (
+            <h3 className="text-[18px] font-bold leading-[1.3]" style={{ color: C.text }}>{s.title}</h3>
+          )}
         </span>
       </div>
       <p className="t-body mt-3" style={{ color: C.soft }}>
@@ -295,7 +299,7 @@ function PhoneView({ data, isDark, open, setOpen }) {
 
   return (
     <div className="relative mx-auto w-full max-w-[720px] px-4 pb-10 pt-10 lg:hidden">
-      <h2 className="t-h2 [&_.heading-accent]:!text-[var(--acc)]" style={{ color: C.h2, "--acc": C.accent }} dangerouslySetInnerHTML={{ __html: data.h2Phone }} />
+      <p className="t-h2 [&_.heading-accent]:!text-[var(--acc)]" style={{ color: C.h2, "--acc": C.accent }} dangerouslySetInnerHTML={{ __html: data.h2Phone }} />
       <p className="t-body mt-3" style={{ color: C.para }}>{data.subHeadline}</p>
       <span aria-hidden="true" className="pointer-events-none mx-auto mt-4 block w-[86%] max-w-[420px]">
         <Image src={data.phoneHero.src} alt={data.phoneHero.alt} width={W} height={data.phoneHero.size[1]} sizes="420px" className="h-auto w-full" />
@@ -308,9 +312,9 @@ function PhoneView({ data, isDark, open, setOpen }) {
       </div>
 
       {/* Same heading style as the other phone section headings, with breathing room above. */}
-      <h3 className="t-h2 mt-12" style={{ color: C.text }}>
+      <p className="t-h2 mt-12" style={{ color: C.text }}>
         <FaqTitle title={data.faq.title} C={C} />
-      </h3>
+      </p>
       <p className="t-body mt-3" style={{ color: C.soft }}>
         {data.faq.more.lead}{" "}
         <a href={data.faq.more.href} className="font-semibold" style={{ color: C.blue }}>{data.faq.more.label} →</a>
@@ -323,7 +327,7 @@ function PhoneView({ data, isDark, open, setOpen }) {
 
       <div className="mt-8 overflow-hidden rounded-[10px] border" style={{ background: isDark ? C.card : "#f4f7fd", borderColor: C.border }}>
         <div className="px-5 pt-6 text-center">
-          <h2 className="t-h4 [&_.heading-accent]:!text-[var(--acc)]" style={{ color: C.text, "--acc": C.accent }} dangerouslySetInnerHTML={{ __html: cta.h2Phone }} />
+          <p className="t-h4 [&_.heading-accent]:!text-[var(--acc)]" style={{ color: C.text, "--acc": C.accent }} dangerouslySetInnerHTML={{ __html: cta.h2Phone }} />
           <p className="t-body mt-2" style={{ color: C.soft }}>{cta.subHeadline}</p>
         </div>
         <ul className="mt-4 grid gap-2.5 px-5">
@@ -352,7 +356,7 @@ function PhoneView({ data, isDark, open, setOpen }) {
           <Shield style={{ width: 28, height: 28 }} />
         </span>
         <span>
-          <h3 className="text-[17px] font-bold" style={{ color: C.blue }}>{data.disclaimer.title}</h3>
+          <p className="text-[17px] font-bold" style={{ color: C.blue }}>{data.disclaimer.title}</p>
           <p className="t-body mt-1" style={{ color: C.soft }}>{data.disclaimer.text}</p>
         </span>
       </div>

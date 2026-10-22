@@ -37,8 +37,8 @@ function Stripe({ bars = ["#1c69d4", "#0b3d91", "#e4262c", "#9fb6d8", "#9fb6d8"]
   );
 }
 
-function Title({ html, className = "" }) {
-  return <h1 className={`t-h1 [&_.heading-accent]:text-[var(--hero-accent)] ${className}`} dangerouslySetInnerHTML={{ __html: html }} />;
+function Title({ html, className = "", as: Tag = "h1" }) {
+  return <Tag className={`t-h1 [&_.heading-accent]:text-[var(--hero-accent)] ${className}`} dangerouslySetInnerHTML={{ __html: html }} />;
 }
 
 // Short divider between badge items: half height, centred, away from the top and bottom edges.
@@ -156,7 +156,7 @@ function MobileHero({ data, isDark }) {
     <div className="relative overflow-hidden lg:hidden">
       <div className="relative mx-auto max-w-[640px] px-4 pb-5 pt-6">
         <Stripe bars={["#1c69d4", "#0b3d91", "#e4262c", isDark ? "#7f93b0" : "#9fb6d8", isDark ? "#7f93b0" : "#9fb6d8"]} line={false} isDark={isDark} />
-        <Title html={data.h1} className={`mt-4 ${text}`} />
+        <Title as="p" html={data.h1} className={`mt-4 ${text}`} />
         <span className="mt-4 block h-[2px] w-[52px]" style={{ backgroundColor: accent }} />
         <p className={`t-p mt-4 ${muted}`}>{data.subHeadline}</p>
 

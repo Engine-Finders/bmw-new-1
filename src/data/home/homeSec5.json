@@ -1,6 +1,6 @@
 {
-  "h2": "<span class=\"block\">Comparison Hub —</span><span class=\"block\"><span class=\"heading-accent\">Head-to-Head</span> Verdicts</span>",
-  "subHeadline": "The comparisons BMW buyers actually want — generation vs generation, engine vs engine, model vs model. Honest, data-backed, and built for real-world decision-making.",
+  "h2": "<span class=\"block\">Comparison Hub -</span><span class=\"block\"><span class=\"heading-accent\">Head-to-Head</span> Verdicts</span>",
+  "subHeadline": "The comparisons BMW buyers actually want - generation vs generation, engine vs engine, model vs model. Honest, data-backed, and built for real-world decision-making.",
   "heroImages": {
     "light": {
       "src": "/home-image/cut/compare-light.webp",
@@ -15,7 +15,7 @@
     {
       "id": 1,
       "title": "E90 vs F30 vs G20 3 Series",
-      "preview": "Which 3 Series generation to buy — the verdict on reliability, running costs, and long-term value. The F30 LCI (2016+) is the sweet spot; the E90 is the bargain-with-risk; the G20 is the safest.",
+      "preview": "Which 3 Series generation to buy - the verdict on reliability, running costs, and long-term value. The F30 LCI (2016+) is the sweet spot; the E90 is the bargain-with-risk; the G20 is the safest.",
       "options": [
         {
           "label": "E90"
@@ -36,12 +36,12 @@
         "dark": "/cars/home/s5/e90-f30-g20-dark.webp",
         "alt": "E90 vs F30 vs G20 3 Series"
       },
-      "previewDesktop": "Which 3 Series generation to buy — the verdict on reliability, running costs, and long-term value.\nThe F30 LCI (2016+) is the sweet spot; the E90 is the bargain-with-risk; the G20 is the safest."
+      "previewDesktop": "Which 3 Series generation to buy - the verdict on reliability, running costs, and long-term value.\nThe F30 LCI (2016+) is the sweet spot; the E90 is the bargain-with-risk; the G20 is the safest."
     },
     {
       "id": 2,
       "title": "N47 vs B47 Diesel",
-      "preview": "The chain-tensioner risk vs the revised architecture. N47: 1,450 enquiries in 2025, mostly timing chain [BMW-VERIFIED]. B47: 930 enquiries, significantly lower failure rate [BMW-VERIFIED]. The B47 wins on reliability; the N47 wins on purchase price — but only with documented chain history.",
+      "preview": "The chain-tensioner risk vs the revised architecture. N47: 1,450 enquiries in 2025, mostly timing chain [BMW-VERIFIED]. B47: 930 enquiries, significantly lower failure rate [BMW-VERIFIED]. The B47 wins on reliability; the N47 wins on purchase price - but only with documented chain history.",
       "options": [
         {
           "label": "N47",
@@ -63,7 +63,7 @@
         "dark": "/cars/home/s5/n47-b47-dark.webp",
         "alt": "N47 vs B47 Diesel"
       },
-      "previewDesktop": "The chain-tensioner risk vs the revised architecture.\nN47: 1,450 enquiries in 2025, mostly timing chain [BMW-VERIFIED]. B47: 930 enquiries, significantly lower failure rate [BMW-VERIFIED]. The B47 wins on reliability; the N47 wins on purchase price — but only with documented chain history."
+      "previewDesktop": "The chain-tensioner risk vs the revised architecture.\nN47: 1,450 enquiries in 2025, mostly timing chain [BMW-VERIFIED]. B47: 930 enquiries, significantly lower failure rate [BMW-VERIFIED]. The B47 wins on reliability; the N47 wins on purchase price - but only with documented chain history."
     },
     {
       "id": 3,
@@ -104,7 +104,7 @@
     {
       "id": 4,
       "title": "3 Series vs 5 Series",
-      "preview": "Which offers better value for money over 3–5 years — the compact saloon or the executive estate? They share engines, so buy on condition, not badge. The 5 Series is heavier but more refined; the 3 Series is lighter and more agile. Both are excellent if you pick the right engine.",
+      "preview": "Which offers better value for money over 3–5 years - the compact saloon or the executive estate? They share engines, so buy on condition, not badge. The 5 Series is heavier but more refined; the 3 Series is lighter and more agile. Both are excellent if you pick the right engine.",
       "options": [
         {
           "label": "3 Series",
@@ -124,12 +124,12 @@
         "dark": "/cars/home/s5/3-vs-5-dark.webp",
         "alt": "3 Series vs 5 Series"
       },
-      "previewDesktop": "Which offers better value for money over 3–5 years — the compact saloon or the executive estate?\nThey share engines, so buy on condition, not badge.\nThe 5 Series is heavier but more refined; the 3 Series is lighter and more agile. Both are excellent if you pick the right engine."
+      "previewDesktop": "Which offers better value for money over 3–5 years - the compact saloon or the executive estate?\nThey share engines, so buy on condition, not badge.\nThe 5 Series is heavier but more refined; the 3 Series is lighter and more agile. Both are excellent if you pick the right engine."
     },
     {
       "id": 5,
       "title": "X3 vs X5",
-      "preview": "The mid-size SUV vs the large SUV — which one should you own? X3 F25: 316 enquiries [BMW-VERIFIED]. X5 F15: 288 enquiries [BMW-VERIFIED]. The X3 is cheaper to run; the X5 offers more space. Both share engines — choose based on your space needs, not reliability.",
+      "preview": "The mid-size SUV vs the large SUV - which one should you own? X3 F25: 316 enquiries [BMW-VERIFIED]. X5 F15: 288 enquiries [BMW-VERIFIED]. The X3 is cheaper to run; the X5 offers more space. Both share engines - choose based on your space needs, not reliability.",
       "options": [
         {
           "label": "X3",
@@ -151,7 +151,7 @@
         "dark": "/cars/home/s5/x3-x5-dark.webp",
         "alt": "X3 vs X5"
       },
-      "previewDesktop": "The mid-size SUV vs the large SUV — which one should you own? X3 F25: 316 enquiries [BMW-VERIFIED]. X5 F15: 288 enquiries [BMW-VERIFIED]. The X3 is cheaper to run; the X5 offers more space. Both share engines — choose based on your space needs, not reliability."
+      "previewDesktop": "The mid-size SUV vs the large SUV - which one should you own? X3 F25: 316 enquiries [BMW-VERIFIED]. X5 F15: 288 enquiries [BMW-VERIFIED]. The X3 is cheaper to run; the X5 offers more space. Both share engines - choose based on your space needs, not reliability."
     },
     {
       "id": 6,
@@ -192,5 +192,5 @@
     "buttonLabel": "Start Your Diagnosis",
     "href": "#diagnose"
   },
-  "subHeadlineDesktop": "The comparisons BMW buyers actually want — generation vs generation, engine vs engine, model vs model. Honest, data-driven, real-world decision-making."
+  "subHeadlineDesktop": "The comparisons BMW buyers actually want - generation vs generation, engine vs engine, model vs model. Honest, data-driven, real-world decision-making."
 }

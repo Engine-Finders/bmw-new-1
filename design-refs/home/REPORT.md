@@ -76,7 +76,7 @@ Desktop: 1536px, light and dark. Phone: compared at half the 2x capture width. P
 ### sec07: done (desktop light/dark 1536, phone light 432, phone dark = light layout with dark colours)
 
 - ✅ columns, row heights, cap positions, icon sizes within ±1–2px (ink-box check) in both themes and on phone.
-- ❌ Font is Arial, so the em dash in "Families —" runs ~9px wider on phone and glyph shapes differ.
+- ❌ Font is Arial, so the em dash in "Families -" runs ~9px wider on phone and glyph shapes differ.
 - ❌ Pump and trophy icons are redrawn SVGs, close but not identical artwork.
 - ❌ Phone dark has no reference; it reuses the desktop dark engine photo.
 

@@ -132,7 +132,7 @@ function Stars({ filled, total }) {
 
 // "BMW 3 Series – The Ownership Verdict" -> "BMW 3 Series –" / "The Ownership Verdict"
 function splitTitle(title = "") {
-  const match = String(title).match(/^(.*?\s[-–—])\s+(.*)$/);
+  const match = String(title).match(/^(.*?\s[-–-])\s+(.*)$/);
   return match ? { before: match[1], accent: match[2] } : { before: String(title), accent: "" };
 }
 

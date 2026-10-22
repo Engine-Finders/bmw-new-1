@@ -23,7 +23,7 @@
   "hero": {
     "tagPill": "BMW 3 Series • 1975–Present • 7 Generations • <a href='https://bmwengines.uk/engine/m10'>M10</a>, <a href='https://bmwengines.uk/engine/m20'>M20</a>, M42, <a href='https://bmwengines.uk/engine/m50-m52-m54'>M50</a>, M52, M54, <a href='https://bmwengines.uk/engine/n40-n42-n43-n45-n46'>N42</a>, N46, <a href='https://bmwengines.uk/engine/n52-n53'>N52</a>, <a href='https://bmwengines.uk/engine/n54-n55'>N54</a>, <a href='https://bmwengines.uk/engine/n57'>N57</a>, <a href='https://bmwengines.uk/engine/n47'>N47</a>, <a href='https://bmwengines.uk/engine/b37-b47'>B47</a>, B58",
     "h1": "3 Series Engines - The Complete UK Guide",
-    "subHeadline": "Every BMW 3 Series engine across seven generations — from the carburetted M10 to the B58 turbo straight-six. Real UK replacement costs, known failure patterns, and honest ownership economics for every E21 to G20. Backed by 826+ real UK 3 Series engine enquiries in 2025 [BMW-VERIFIED].",
+    "subHeadline": "Every BMW 3 Series engine across seven generations - from the carburetted M10 to the B58 turbo straight-six. Real UK replacement costs, known failure patterns, and honest ownership economics for every E21 to G20. Backed by 826+ real UK 3 Series engine enquiries in 2025 [BMW-VERIFIED].",
     "trustStrip": [
       {
         "icon": "📊",
@@ -50,8 +50,8 @@
   },
   "ownershipVerdict": {
     "h2": "BMW 3 Series – The Ownership Verdict",
-    "h2Dark": "BMW 3 Series — The Ownership Verdict",
-    "subHeadline": "Seven generations. Dozens of engine codes. One clear truth: the 3 Series is brilliant — when you know which engine you’re buying, and which you’re not.",
+    "h2Dark": "BMW 3 Series - The Ownership Verdict",
+    "subHeadline": "Seven generations. Dozens of engine codes. One clear truth: the 3 Series is brilliant - when you know which engine you’re buying, and which you’re not.",
     "scene": "/model/Section 2-bg.webp",
     "sceneDark": "/model/s2-verdict-car-dark.webp",
     "tableHeaders": [
@@ -69,37 +69,37 @@
         "metric": "Replacement Economics",
         "icon": "scale",
         "tone": "orange",
-        "ourCall": "⚠️ The 3 Series rule — generation is everything: an N47 recon<br>at £3,200–£5,500 is 60% of a £6,000 E90 but just 25% of a<br>£22,000 G20. On the E90, run the maths; on the G20,<br>it's a routine repair."
+        "ourCall": "⚠️ The 3 Series rule - generation is everything: an N47 recon<br>at £3,200–£5,500 is 60% of a £6,000 E90 but just 25% of a<br>£22,000 G20. On the E90, run the maths; on the G20,<br>it's a routine repair."
       },
       {
         "metric": "Reliability",
         "icon": "shield",
         "tone": "green",
-        "ourCall": "★★★★☆ — one badge, seven distinct engineering<br>eras. The <a href='https://bmwengines.uk/engine/m57'>M57</a> and B58 are amongst BMW’s finest;<br>the N47 chain question defined a decade."
+        "ourCall": "★★★★☆ - one badge, seven distinct engineering<br>eras. The <a href='https://bmwengines.uk/engine/m57'>M57</a> and B58 are amongst BMW’s finest;<br>the N47 chain question defined a decade."
       },
       {
         "metric": "Most Reliable Engine",
         "icon": "trophy",
         "tone": "gold",
-        "ourCall": "B58B30 — the modern straight-six gold standard •<br>M57 Td6 (E46/E90 era)"
+        "ourCall": "B58B30 - the modern straight-six gold standard •<br>M57 Td6 (E46/E90 era)"
       },
       {
         "metric": "Highest-Risk Engine",
         "icon": "warning",
         "tone": "red",
-        "ourCall": "N47D20C — rear-mounted timing chain on pre-2013<br>E90/F30 examples without documented replacement"
+        "ourCall": "N47D20C - rear-mounted timing chain on pre-2013<br>E90/F30 examples without documented replacement"
       },
       {
         "metric": "Best Used Buy",
         "icon": "cart",
         "tone": "blue",
-        "ourCall": "2016+ F30 LCI with B47D20A — post-chain-revision,<br>modern electronics, depreciated early-mid values"
+        "ourCall": "2016+ F30 LCI with B47D20A - post-chain-revision,<br>modern electronics, depreciated early-mid values"
       },
       {
         "metric": "Best Petrol Buy",
         "icon": "fuel",
         "tone": "green",
-        "ourCall": "G20 330i with B48B20 — the four-cylinder <br data-mobile>at its most refined"
+        "ourCall": "G20 330i with B48B20 - the four-cylinder <br data-mobile>at its most refined"
       },
       {
         "metric": "Average Engine Replacement",
@@ -117,11 +117,11 @@
         "metric": "BMW Ranking",
         "icon": "crown",
         "tone": "copper",
-        "ourCall": "🥇 #1 Most-Enquired BMW Model —<br>826 enquiries (2025) [BMW-VERIFIED]"
+        "ourCall": "🥇 #1 Most-Enquired BMW Model -<br>826 enquiries (2025) [BMW-VERIFIED]"
       }
     ],
     "oneLineVerdictLabel": "One-line verdict:",
-    "oneLineVerdict": "The 3 Series is where BMW’s engine engineering lives — from the robust simplicity of the M57 to the N47’s rear-mounted tensioner that made a generation of owners nervous. Every generation has its own equation; the G20 is the safest, the E90 is the bargain, and the E46 is the classic.",
+    "oneLineVerdict": "The 3 Series is where BMW’s engine engineering lives - from the robust simplicity of the M57 to the N47’s rear-mounted tensioner that made a generation of owners nervous. Every generation has its own equation; the G20 is the safest, the E90 is the bargain, and the E46 is the classic.",
     "summaryStats": [
       {
         "iconKey": "chart",
@@ -186,7 +186,7 @@
       {
         "metric": "Most Enquired Engine (2025)",
         "icon": "trend",
-        "value": "N47D20C — 1,450 JLR-wide; 380 F30 model-level [BMW-VERIFIED]"
+        "value": "N47D20C - 1,450 JLR-wide; 380 F30 model-level [BMW-VERIFIED]"
       },
       {
         "metric": "Most Reliable",
@@ -248,7 +248,7 @@
       {
         "label": "Most Enquired Engine (2025)",
         "icon": "trend",
-        "value": "<strong>N47D20C</strong> — 1,450 JLR-wide; 380 F30 model-level",
+        "value": "<strong>N47D20C</strong> - 1,450 JLR-wide; 380 F30 model-level",
         "badge": "BMW-VERIFIED",
         "wide": true
       },
@@ -291,7 +291,7 @@
     }
   },
   "generations": {
-    "h2": "BMW 3 Series Generations — Find Your Vehicle",
+    "h2": "BMW 3 Series Generations - Find Your Vehicle",
     "subHeadline": "Seven generations, fifty years, and one nameplate that defined the sports saloon.<br>The right 3 Series depends entirely on which era you're willing to live with.",
     "cards": [
       {
@@ -299,7 +299,7 @@
         "badge": "",
         "meta": "1975–1983 • M10 1.6–2.0, M20 2.0–2.3",
         "rating": "★★★☆☆",
-        "verdict": "The original. Carburetted simplicity and 1970s chassis dynamics — now a classic where preservation, not daily-driver economics, drives the decision.",
+        "verdict": "The original. Carburetted simplicity and 1970s chassis dynamics - now a classic where preservation, not daily-driver economics, drives the decision.",
         "cta": {
           "label": "Explore the E21 →",
           "href": "https://bmwengines.uk/3-series/e21",
@@ -376,7 +376,7 @@
         "badge": "",
         "meta": "1994–2000 • M43 petrol • M44 petrol • M52 six-cylinder",
         "rating": "★★★☆☆",
-        "verdict": "The 3 Series Compact—a shortened, hatchback version of the E36 with a distinctive rear end. Powered by four-cylinder M43 and M44 petrol engines, plus the six-cylinder M52 in the 323ti. The M44 1.9-litre is the most durable; the M52 323ti is the performance pick. Ageing, but simple and well-supported—cooling system maintenance is the key.",
+        "verdict": "The 3 Series Compact-a shortened, hatchback version of the E36 with a distinctive rear end. Powered by four-cylinder M43 and M44 petrol engines, plus the six-cylinder M52 in the 323ti. The M44 1.9-litre is the most durable; the M52 323ti is the performance pick. Ageing, but simple and well-supported-cooling system maintenance is the key.",
         "cta": {
           "label": "Explore E36/5 →",
           "href": "https://bmwengines.uk/3-series-compact/e36-5"
@@ -388,7 +388,7 @@
         "badge": "",
         "meta": "1998–2005 • M43, M54, M57, S54",
         "rating": "★★★★☆",
-        "verdict": "The 3 Series at its most loved — and the M57 diesel is one of the most dependable engines ever fitted to a BMW. Subframe cracks and cooling systems are the price of entry; the driving experience is worth it.",
+        "verdict": "The 3 Series at its most loved - and the M57 diesel is one of the most dependable engines ever fitted to a BMW. Subframe cracks and cooling systems are the price of entry; the driving experience is worth it.",
         "cta": {
           "label": "Explore E46",
           "href": "https://bmwengines.uk/3-series/e46",
@@ -414,7 +414,7 @@
         "badge": "",
         "meta": "2001–2004 • N42/N46 petrol • M47 diesel",
         "rating": "★★★☆☆",
-        "verdict": "The E46 Compact—the final generation of BMW's 3 Series hatchback. Powered by N42/N46 four-cylinder petrol engines and the M47 diesel. The N46 is the most durable petrol; the M47 diesel is robust. Cooling system and VANOS are the main watchpoints. Values are low—replacement viability depends heavily on the car's overall condition.",
+        "verdict": "The E46 Compact-the final generation of BMW's 3 Series hatchback. Powered by N42/N46 four-cylinder petrol engines and the M47 diesel. The N46 is the most durable petrol; the M47 diesel is robust. Cooling system and VANOS are the main watchpoints. Values are low-replacement viability depends heavily on the car's overall condition.",
         "cta": {
           "label": "Explore E46/5 →",
           "href": "https://bmwengines.uk/3-series-compact/e46-5"
@@ -426,7 +426,7 @@
         "badge": "🔥 Most Enquired - 256 enquiries (2025) [BMW-VERIFIED]",
         "meta": "2005–2013 • N46, N52, N54, N47D20C, N57D30",
         "rating": "★★★½",
-        "verdict": "The N47 diesel's rear-chain tensioner defined this generation's reputation — but a documented chain replacement turns a £3,500 risk into a £4,500 bargain. Buy with paperwork or budget for the job.",
+        "verdict": "The N47 diesel's rear-chain tensioner defined this generation's reputation - but a documented chain replacement turns a £3,500 risk into a £4,500 bargain. Buy with paperwork or budget for the job.",
         "cta": {
           "label": "Explore E90",
           "href": "https://bmwengines.uk/3-series/e90",
@@ -441,10 +441,10 @@
         ],
         "enginesMobile": "• N46, N52, N54, N47D20C, N57D30",
         "badgeLines": [
-          "🔥 Most Enquired —",
+          "🔥 Most Enquired -",
           "256 enquiries (2025)"
         ],
-        "badgeMobile": "🔥 Most Enquired — 256 enquiries (2025)",
+        "badgeMobile": "🔥 Most Enquired - 256 enquiries (2025)",
         "badgeTag": "[BMW-VERIFIED]",
         "verdictLabel": "Our Verdict:",
         "images": {
@@ -458,7 +458,7 @@
         "badge": "",
         "meta": "2005–2012 • N43/N52/N53 petrol • M47/N47 diesel",
         "rating": "★★★☆☆",
-        "verdict": "The E90 estate—a practical load-lugger with the same engine range as the saloon. The N52 straight-six petrol is the most reliable; the N47 diesel carries the rear-mounted timing chain risk. The M47 (pre-2007) is more durable than the N47. E91 values are higher than saloons, making replacement more viable—but the N47 chain risk still applies.",
+        "verdict": "The E90 estate-a practical load-lugger with the same engine range as the saloon. The N52 straight-six petrol is the most reliable; the N47 diesel carries the rear-mounted timing chain risk. The M47 (pre-2007) is more durable than the N47. E91 values are higher than saloons, making replacement more viable-but the N47 chain risk still applies.",
         "cta": {
           "label": "Explore E91 →",
           "href": "https://bmwengines.uk/3-series/e91"
@@ -470,7 +470,7 @@
         "badge": "",
         "meta": "2006–2013 • N43/N52/N53 petrol • N47 diesel • N54/N55 six-cylinder",
         "rating": "★★★☆☆",
-        "verdict": "The E90 coupé—a sleek two-door with a lower, wider stance. Shares the engine range with the saloon, plus the N54/N55 turbocharged six-cylinders in the 335i. The N52 is the most reliable; the N54 is fast but has HPFP and injector risks; the N47 diesel demands timing chain history. The 335i is a performance bargain with known watchpoints.",
+        "verdict": "The E90 coupé-a sleek two-door with a lower, wider stance. Shares the engine range with the saloon, plus the N54/N55 turbocharged six-cylinders in the 335i. The N52 is the most reliable; the N54 is fast but has HPFP and injector risks; the N47 diesel demands timing chain history. The 335i is a performance bargain with known watchpoints.",
         "cta": {
           "label": "Explore E92 →",
           "href": "https://bmwengines.uk/3-series/e92"
@@ -482,7 +482,7 @@
         "badge": "",
         "meta": "2006–2013 • N43/N52/N53 petrol • N47 diesel • N54/N55 six-cylinder",
         "rating": "★★★☆☆",
-        "verdict": "The E90 convertible—a folding hardtop version of the 3 Series. Shares the same engine range as the coupé and saloon. The folding roof adds weight, so the N52 330i is the sweet spot—enough power to carry the extra mass. The N47 diesel demands chain history; the N54 335i is a performance bargain with HPFP and injector watchpoints.",
+        "verdict": "The E90 convertible-a folding hardtop version of the 3 Series. Shares the same engine range as the coupé and saloon. The folding roof adds weight, so the N52 330i is the sweet spot-enough power to carry the extra mass. The N47 diesel demands chain history; the N54 335i is a performance bargain with HPFP and injector watchpoints.",
         "cta": {
           "label": "Explore E93 →",
           "href": "https://bmwengines.uk/3-series/e93"
@@ -510,10 +510,10 @@
         ],
         "enginesMobile": "• N47D20C, B47D20A, N55B30, B58B30",
         "badgeLines": [
-          "🔥 Most Enquired —",
+          "🔥 Most Enquired -",
           "380 enquiries (2025)"
         ],
-        "badgeMobile": "🔥 Most Enquired — 380 enquiries (2025)",
+        "badgeMobile": "🔥 Most Enquired - 380 enquiries (2025)",
         "badgeTag": "[BMW-VERIFIED]",
         "verdictLabel": "Our Verdict:",
         "images": {
@@ -527,7 +527,7 @@
         "badge": "",
         "meta": "2012–2019 • N20/B48 petrol • N47/B47 diesel",
         "rating": "★★★☆☆",
-        "verdict": "The F30 estate—the 3 Series Touring with the same engine range as the saloon. The B48 (post-2015) is significantly more reliable than the N20 (pre-2015, timing chain watchpoint). The B47 diesel is improved over the N47. The 330e plug-in hybrid offers efficiency but adds complexity. F31 values are strong, making replacement viable on most examples.",
+        "verdict": "The F30 estate-the 3 Series Touring with the same engine range as the saloon. The B48 (post-2015) is significantly more reliable than the N20 (pre-2015, timing chain watchpoint). The B47 diesel is improved over the N47. The 330e plug-in hybrid offers efficiency but adds complexity. F31 values are strong, making replacement viable on most examples.",
         "cta": {
           "label": "Explore F31 →",
           "href": "https://bmwengines.uk/3-series/f31"
@@ -535,11 +535,11 @@
         "variant": true
       },
       {
-        "title": "F34 (2013–2020) — Gran Turismo",
+        "title": "F34 (2013–2020) - Gran Turismo",
         "badge": "",
         "meta": "2013–2020 • N20/B48 petrol • N47/B47 diesel",
         "rating": "★★★☆☆",
-        "verdict": "The 3 Series Gran Turismo—a raised, hatchback version with a distinctive fastback profile. Shares the F30 engine range: the N20 (pre-2015, timing chain watchpoint) and B48/B47 (post-2015, significantly improved). The B48 330i and B47 330d are the sweet spots. A niche model with strong practicality—engine choice is generation-dependent.",
+        "verdict": "The 3 Series Gran Turismo-a raised, hatchback version with a distinctive fastback profile. Shares the F30 engine range: the N20 (pre-2015, timing chain watchpoint) and B48/B47 (post-2015, significantly improved). The B48 330i and B47 330d are the sweet spots. A niche model with strong practicality-engine choice is generation-dependent.",
         "cta": {
           "label": "Explore F34 →",
           "href": "https://bmwengines.uk/3-series/f34"
@@ -551,7 +551,7 @@
         "badge": "",
         "meta": "2019–present • B47D20A, B48B20, B58B30",
         "rating": "★★★★★",
-        "verdict": "The safest 3 Series ever made for engine reliability — the B-family engines are proving the most robust modern BMWs. Electronics and emissions hardware are the new caveats, but the powertrains are genuinely strong.",
+        "verdict": "The safest 3 Series ever made for engine reliability - the B-family engines are proving the most robust modern BMWs. Electronics and emissions hardware are the new caveats, but the powertrains are genuinely strong.",
         "cta": {
           "label": "Explore G20",
           "href": "https://bmwengines.uk/3-series/g20",
@@ -577,7 +577,7 @@
         "badge": "",
         "meta": "2019–present • B48 petrol • B47 diesel • B58 six-cylinder",
         "rating": "★★★★☆",
-        "verdict": "The G20 estate—the current-generation 3 Series Touring. Powered by the modular B-family engines: B48 four-cylinder petrol, B47 four-cylinder diesel, and B58 six-cylinder in the M340i. The B58 and B48 are proven and reliable; the B47 has EGR and DPF watchpoints. Modern, well-supported, and values are high—replacement is almost always viable.",
+        "verdict": "The G20 estate-the current-generation 3 Series Touring. Powered by the modular B-family engines: B48 four-cylinder petrol, B47 four-cylinder diesel, and B58 six-cylinder in the M340i. The B58 and B48 are proven and reliable; the B47 has EGR and DPF watchpoints. Modern, well-supported, and values are high-replacement is almost always viable.",
         "cta": {
           "label": "Explore G21 →",
           "href": "https://bmwengines.uk/3-series/g21"
@@ -586,7 +586,7 @@
       }
     ],
     "rangeTable": {
-      "title": "Pre-Facelift vs LCI — The Line That Matters",
+      "title": "Pre-Facelift vs LCI - The Line That Matters",
       "columns": [
         "Aspect",
         "Pre-2013 (E90/F30 early)",
@@ -598,18 +598,18 @@
           "label": "Core diesel",
           "cells": [
             {
-              "text": "N47D20C — rear-chain risk",
+              "text": "N47D20C - rear-chain risk",
               "tone": "risk",
-              "mobileText": "N47D20C —<br>rear-chain risk"
+              "mobileText": "N47D20C -<br>rear-chain risk"
             },
             {
               "text": "N47D20C<br>(revised tensioner)",
               "tone": "risk"
             },
             {
-              "text": "B47D20A — front-chain,<br>revised architecture",
+              "text": "B47D20A - front-chain,<br>revised architecture",
               "tone": "safe",
-              "mobileText": "B47D20A —<br>front-chain,<br>revised architecture"
+              "mobileText": "B47D20A -<br>front-chain,<br>revised architecture"
             }
           ],
           "icon": "fuel-diesel"
@@ -624,7 +624,7 @@
               "text": "N55B30"
             },
             {
-              "text": "B48B20/B58B30 —<br>modular family",
+              "text": "B48B20/B58B30 -<br>modular family",
               "tone": "safe"
             }
           ],
@@ -664,8 +664,8 @@
     "subHeadlineMobile": "Seven generations, fifty years, and one nameplate that defined the sports saloon. The right 3 Series depends entirely on which era you're willing to live with."
   },
   "engineDatabase": {
-    "h2": "BMW 3 Series Engine Codes — The Complete Database",
-    "subHeadline": "Every engine ever fitted to a BMW 3 Series — verified codes,<br>specifications and real UK ownership data.",
+    "h2": "BMW 3 Series Engine Codes - The Complete Database",
+    "subHeadline": "Every engine ever fitted to a BMW 3 Series - verified codes,<br>specifications and real UK ownership data.",
     "stats": [
       {
         "icon": "cube",
@@ -717,7 +717,7 @@
         "years": "1975–1983",
         "model": "E21",
         "reliability": "★★★★☆",
-        "enquiries": "— (pattern data)",
+        "enquiries": "- (pattern data)",
         "avgRebuildCost": "£1,500–£3,000 [PLACEHOLDER - confirm vs cost sheet]"
       },
       {
@@ -729,7 +729,7 @@
         "years": "1975–1992",
         "model": "E21, E30",
         "reliability": "★★★★☆",
-        "enquiries": "— (pattern data)",
+        "enquiries": "- (pattern data)",
         "avgRebuildCost": "£1,500–£3,500 [PLACEHOLDER - confirm vs cost sheet]"
       },
       {
@@ -741,7 +741,7 @@
         "years": "1987–1994",
         "model": "E30",
         "reliability": "★★★☆☆",
-        "enquiries": "— (pattern data)",
+        "enquiries": "- (pattern data)",
         "avgRebuildCost": "£1,200–£2,800 [PLACEHOLDER - confirm vs cost sheet]"
       },
       {
@@ -753,7 +753,7 @@
         "years": "1989–1996",
         "model": "E30, E36",
         "reliability": "★★★½",
-        "enquiries": "— (pattern data)",
+        "enquiries": "- (pattern data)",
         "avgRebuildCost": "£1,500–£3,000 [PLACEHOLDER - confirm vs cost sheet]"
       },
       {
@@ -765,7 +765,7 @@
         "years": "1992–2000",
         "model": "E36",
         "reliability": "★★★½",
-        "enquiries": "— (pattern data)",
+        "enquiries": "- (pattern data)",
         "avgRebuildCost": "£1,200–£2,800 [PLACEHOLDER - confirm vs cost sheet]"
       },
       {
@@ -777,7 +777,7 @@
         "years": "1996–2000",
         "model": "E36",
         "reliability": "★★★☆☆",
-        "enquiries": "— (pattern data)",
+        "enquiries": "- (pattern data)",
         "avgRebuildCost": "£1,200–£2,800 [PLACEHOLDER - confirm vs cost sheet]"
       },
       {
@@ -789,7 +789,7 @@
         "years": "1990–1996",
         "model": "E36",
         "reliability": "★★★★☆",
-        "enquiries": "— (pattern data)",
+        "enquiries": "- (pattern data)",
         "avgRebuildCost": "£1,500–£3,500 [PLACEHOLDER - confirm vs cost sheet]"
       },
       {
@@ -801,7 +801,7 @@
         "years": "1994–2001",
         "model": "E36, E46",
         "reliability": "★★★★☆",
-        "enquiries": "— (pattern data)",
+        "enquiries": "- (pattern data)",
         "avgRebuildCost": "£1,800–£4,000 [PLACEHOLDER - confirm vs cost sheet]"
       },
       {
@@ -813,7 +813,7 @@
         "years": "2000–2006",
         "model": "E46",
         "reliability": "★★★★½",
-        "enquiries": "— (pattern data)",
+        "enquiries": "- (pattern data)",
         "avgRebuildCost": "£2,000–£4,500 [PLACEHOLDER - confirm vs cost sheet]"
       },
       {
@@ -825,7 +825,7 @@
         "years": "1992–1999",
         "model": "E36",
         "reliability": "★★★★☆",
-        "enquiries": "— (pattern data)",
+        "enquiries": "- (pattern data)",
         "avgRebuildCost": "£4,000–£8,000 [PLACEHOLDER - confirm vs cost sheet]"
       },
       {
@@ -837,7 +837,7 @@
         "years": "2001–2006",
         "model": "E46",
         "reliability": "★★★★☆",
-        "enquiries": "— (pattern data)",
+        "enquiries": "- (pattern data)",
         "avgRebuildCost": "£5,000–£10,000 [PLACEHOLDER - confirm vs cost sheet]"
       },
       {
@@ -849,7 +849,7 @@
         "years": "2001–2006",
         "model": "E46",
         "reliability": "★★★☆☆",
-        "enquiries": "— (pattern data)",
+        "enquiries": "- (pattern data)",
         "avgRebuildCost": "£1,800–£3,500 [PLACEHOLDER - confirm vs cost sheet]"
       },
       {
@@ -861,7 +861,7 @@
         "years": "2004–2011",
         "model": "E90",
         "reliability": "★★★☆☆",
-        "enquiries": "— (pattern data)",
+        "enquiries": "- (pattern data)",
         "avgRebuildCost": "£1,800–£3,500 [PLACEHOLDER - confirm vs cost sheet]"
       },
       {
@@ -873,7 +873,7 @@
         "years": "2004–2013",
         "model": "E90",
         "reliability": "★★★★☆",
-        "enquiries": "— (pattern data)",
+        "enquiries": "- (pattern data)",
         "avgRebuildCost": "£2,500–£5,000 [BMW-QUOTE]"
       },
       {
@@ -885,7 +885,7 @@
         "years": "2006–2010",
         "model": "E90",
         "reliability": "★★★☆☆",
-        "enquiries": "— (pattern data)",
+        "enquiries": "- (pattern data)",
         "avgRebuildCost": "£3,500–£6,500 [PLACEHOLDER - confirm vs cost sheet]"
       },
       {
@@ -897,7 +897,7 @@
         "years": "2010–2019",
         "model": "E90, F30",
         "reliability": "★★★★☆",
-        "enquiries": "— (pattern data)",
+        "enquiries": "- (pattern data)",
         "avgRebuildCost": "£3,800–£6,000 [BMW-QUOTE]"
       },
       {
@@ -909,7 +909,7 @@
         "years": "2014–present",
         "model": "F30, G20",
         "reliability": "★★★★½",
-        "enquiries": "— (pattern data - under B58 aggregate in source data)",
+        "enquiries": "- (pattern data - under B58 aggregate in source data)",
         "avgRebuildCost": "£3,000–£5,000 [PLACEHOLDER - confirm vs cost sheet]"
       },
       {
@@ -933,7 +933,7 @@
         "years": "2001–2005",
         "model": "E46",
         "reliability": "★★★★★",
-        "enquiries": "— (pattern data)",
+        "enquiries": "- (pattern data)",
         "avgRebuildCost": "£2,500–£4,500 [PLACEHOLDER - confirm vs cost sheet]"
       },
       {
@@ -999,7 +999,7 @@
       "href": "/data/methodology"
     },
     "mobile": {
-      "h2": "3 Series Engine Codes — The Database",
+      "h2": "3 Series Engine Codes - The Database",
       "subHeadline": "The complete database of BMW 3 Series engine codes<br>with real UK enquiry data, fitted models, and<br>replacement cost insights.",
       "dataCard": {
         "title": "Proprietary UK Data",
@@ -1049,22 +1049,22 @@
         {
           "code": "N55B30",
           "fuel": "Petrol",
-          "enquiries": "—"
+          "enquiries": "-"
         },
         {
           "code": "S55B30",
           "fuel": "Petrol",
-          "enquiries": "—"
+          "enquiries": "-"
         },
         {
           "code": "S58B30",
           "fuel": "Petrol",
-          "enquiries": "—"
+          "enquiries": "-"
         },
         {
           "code": "M52TUB25",
           "fuel": "Petrol",
-          "enquiries": "—"
+          "enquiries": "-"
         }
       ],
       "sourcesTitle": "DATA SOURCES:",
@@ -1077,7 +1077,7 @@
         {
           "icon": "pound",
           "label": "Costs:",
-          "text": "Table A — Engine Replacement Economics [EM-QUOTE]"
+          "text": "Table A - Engine Replacement Economics [EM-QUOTE]"
         },
         {
           "icon": "doc",
@@ -1094,7 +1094,7 @@
   },
   "commonProblems": {
     "h2": "Common BMW 3 Series Engine Problems",
-    "subHeadline": "The six most common failure patterns across seven generations —<br>symptoms, costs and urgency.",
+    "subHeadline": "The six most common failure patterns across seven generations -<br>symptoms, costs and urgency.",
     "columns": [
       "#",
       "Problem",
@@ -1129,7 +1129,7 @@
       {
         "id": 2,
         "issue": "N54 HPFP & Injector Failure",
-        "description": "The twin-turbo 335i's Achilles heel — high-pressure fuel pump failure leads to long cranks and limp mode; injector issues follow. Affects E90 335i (2006–2010). BMW extended warranty covered many; check history before buying.",
+        "description": "The twin-turbo 335i's Achilles heel - high-pressure fuel pump failure leads to long cranks and limp mode; injector issues follow. Affects E90 335i (2006–2010). BMW extended warranty covered many; check history before buying.",
         "severity": {
           "icon": "🟡",
           "label": "Monitor",
@@ -1141,14 +1141,14 @@
         },
         "titleDesktop": "N54 HPFP &<br>Injector Failure",
         "number": "02",
-        "descriptionDesktop": "The twin-turbo 335i's Achilles heel —<br>high-pressure fuel pump failure leads<br>to long cranks and limp mode; injector<br>issues follow. Affects E90 335i<br>(2006–2010). BMW extended<br>warranty covered many; check<br>history before buying.",
-        "descriptionMobile": "The twin-turbo 335i's Achilles heel —<br>high-pressure fuel pump failure leads<br>to long cranks and limp mode; injector<br>issues follow. Affects E90 335i<br>(2006–2010). BMW extended warranty<br>covered many; check history before<br>buying.",
+        "descriptionDesktop": "The twin-turbo 335i's Achilles heel -<br>high-pressure fuel pump failure leads<br>to long cranks and limp mode; injector<br>issues follow. Affects E90 335i<br>(2006–2010). BMW extended<br>warranty covered many; check<br>history before buying.",
+        "descriptionMobile": "The twin-turbo 335i's Achilles heel -<br>high-pressure fuel pump failure leads<br>to long cranks and limp mode; injector<br>issues follow. Affects E90 335i<br>(2006–2010). BMW extended warranty<br>covered many; check history before<br>buying.",
         "image": "/model/s6-problem-02.webp"
       },
       {
         "id": 3,
         "issue": "M54 Cooling System Failure",
-        "description": "The E46 era's most common failure — plastic water pump impellers, expansion tanks and thermostat housings all degrade. Overheating kills the M54's alloy head. Replace proactively every 60k miles.",
+        "description": "The E46 era's most common failure - plastic water pump impellers, expansion tanks and thermostat housings all degrade. Overheating kills the M54's alloy head. Replace proactively every 60k miles.",
         "severity": {
           "icon": "🟡",
           "label": "Monitor",
@@ -1160,14 +1160,14 @@
         },
         "titleDesktop": "M54 Cooling System<br>Failure",
         "number": "03",
-        "descriptionDesktop": "The E46 era's most common failure —<br>plastic water pump impellers, expansion<br>tanks and thermostat housings all<br>degrade. Overheating kills the M54's<br>alloy head. Replace proactively every<br>60k miles.",
-        "descriptionMobile": "The E46 era's most common failure —<br>plastic water pump impellers, expansion<br>tanks and thermostat housings all<br>degrade. Overheating kills the M54's<br>alloy head. Replace proactively every<br>60k miles.",
+        "descriptionDesktop": "The E46 era's most common failure -<br>plastic water pump impellers, expansion<br>tanks and thermostat housings all<br>degrade. Overheating kills the M54's<br>alloy head. Replace proactively every<br>60k miles.",
+        "descriptionMobile": "The E46 era's most common failure -<br>plastic water pump impellers, expansion<br>tanks and thermostat housings all<br>degrade. Overheating kills the M54's<br>alloy head. Replace proactively every<br>60k miles.",
         "image": "/model/s6-problem-03.webp"
       },
       {
         "id": 4,
         "issue": "E46/E90 Subframe Mount Cracking",
-        "description": "Not an engine failure — but the most common non-engine 3 Series enquiry in our dataset. Rear axle carrier panel cracks on E46 (and early E90) high-mileage cars. Check on any 3 Series over 80k.",
+        "description": "Not an engine failure - but the most common non-engine 3 Series enquiry in our dataset. Rear axle carrier panel cracks on E46 (and early E90) high-mileage cars. Check on any 3 Series over 80k.",
         "severity": {
           "icon": "🟡",
           "label": "Monitor",
@@ -1179,14 +1179,14 @@
         },
         "titleDesktop": "E46/E90 Subframe<br>Mount Cracking",
         "number": "04",
-        "descriptionDesktop": "Not an engine failure — but the most<br>common non-engine 3 Series enquiry<br>in our dataset. Rear axle carrier panel<br>cracks on E46 (and early E90) high-<br>mileage cars. Check on any 3 Series<br>over 80k.",
-        "descriptionMobile": "Not an engine failure — but the most<br>common non-engine 3 Series enquiry<br>in our dataset. Rear axle carrier panel<br>cracks on E46 (and early E90) high-<br>mileage cars. Check on any 3 Series<br>over 80k.",
+        "descriptionDesktop": "Not an engine failure - but the most<br>common non-engine 3 Series enquiry<br>in our dataset. Rear axle carrier panel<br>cracks on E46 (and early E90) high-<br>mileage cars. Check on any 3 Series<br>over 80k.",
+        "descriptionMobile": "Not an engine failure - but the most<br>common non-engine 3 Series enquiry<br>in our dataset. Rear axle carrier panel<br>cracks on E46 (and early E90) high-<br>mileage cars. Check on any 3 Series<br>over 80k.",
         "image": "/model/s6-problem-04.webp"
       },
       {
         "id": 5,
         "issue": "B58 Coolant & PCV Issues",
-        "description": "The modern straight-six's known weak points — coolant expansion tank leaks and PCV valve failures. Repairs are £400–£800, not catastrophic if caught early. Affects F30 LCI and G20 340i.",
+        "description": "The modern straight-six's known weak points - coolant expansion tank leaks and PCV valve failures. Repairs are £400–£800, not catastrophic if caught early. Affects F30 LCI and G20 340i.",
         "severity": {
           "icon": "🟢",
           "label": "Low",
@@ -1198,14 +1198,14 @@
         },
         "titleDesktop": "B58 Coolant &<br>PCV Issues",
         "number": "05",
-        "descriptionDesktop": "The modern straight-six's known<br>weak points — coolant expansion tank<br>leaks and PCV valve failures. Repairs<br>are £400–£800, not catastrophic if<br>caught early. Affects F30 LCI and<br>G20 340i.",
-        "descriptionMobile": "The modern straight-six's known weak<br>points — coolant expansion tank leaks<br>and PCV valve failures. Repairs are<br>£400–£800, not catastrophic if caught<br>early. Affects F30 LCI and G20 340i.",
+        "descriptionDesktop": "The modern straight-six's known<br>weak points - coolant expansion tank<br>leaks and PCV valve failures. Repairs<br>are £400–£800, not catastrophic if<br>caught early. Affects F30 LCI and<br>G20 340i.",
+        "descriptionMobile": "The modern straight-six's known weak<br>points - coolant expansion tank leaks<br>and PCV valve failures. Repairs are<br>£400–£800, not catastrophic if caught<br>early. Affects F30 LCI and G20 340i.",
         "image": "/model/s6-problem-05.webp"
       },
       {
         "id": 6,
         "issue": "B47D20A EGR Cooler & DPF",
-        "description": "The B47's primary weak points — EGR cooler leaks and DPF clogging on urban-driven cars. Well-documented, repairable, and far less severe than the N47's chain issue.",
+        "description": "The B47's primary weak points - EGR cooler leaks and DPF clogging on urban-driven cars. Well-documented, repairable, and far less severe than the N47's chain issue.",
         "severity": {
           "icon": "🟢",
           "label": "Low",
@@ -1217,8 +1217,8 @@
         },
         "titleDesktop": "B47D20A EGR Cooler<br>& DPF",
         "number": "06",
-        "descriptionDesktop": "The B47's primary weak points —<br>EGR cooler leaks and DPF clogging<br>on urban-driven cars. Well-documented,<br>repairable, and far less severe than<br>the N47's chain issue.",
-        "descriptionMobile": "The B47's primary weak points — EGR<br>cooler leaks and DPF clogging on<br>urban-driven cars. Well-documented,<br>repairable, and far less severe than the<br>N47's chain issue.",
+        "descriptionDesktop": "The B47's primary weak points -<br>EGR cooler leaks and DPF clogging<br>on urban-driven cars. Well-documented,<br>repairable, and far less severe than<br>the N47's chain issue.",
+        "descriptionMobile": "The B47's primary weak points - EGR<br>cooler leaks and DPF clogging on<br>urban-driven cars. Well-documented,<br>repairable, and far less severe than the<br>N47's chain issue.",
         "image": "/model/s6-problem-06.webp"
       }
     ],
@@ -1248,11 +1248,11 @@
         "type": "low"
       }
     ],
-    "subHeadlineMobile": "The six most common failure patterns across seven<br>generations — symptoms, costs and urgency.",
+    "subHeadlineMobile": "The six most common failure patterns across seven<br>generations - symptoms, costs and urgency.",
     "urgencyTitle": "URGENCY KEY"
   },
   "marketIntelligence": {
-    "h2": "BMW 3 Series Market Intelligence — What 826 UK Owners Told Us in 2025",
+    "h2": "BMW 3 Series Market Intelligence - What 826 UK Owners Told Us in 2025",
     "signals": [
       {
         "signal": "BMW 3 Series F30 enquiries",
@@ -1287,7 +1287,7 @@
     ],
     "liveEnquiryFeedNote": "Live Enquiry Feed module embeds here.",
     "titleLines": [
-      "BMW 3 Series Market Intelligence —",
+      "BMW 3 Series Market Intelligence -",
       "What <span>826 UK Owners</span> Told Us in 2025"
     ],
     "stat": {
@@ -1306,12 +1306,12 @@
         "signal": "BMW 3 Series F30 enquiries",
         "value": "380",
         "tag": "[BMW-VERIFIED]",
-        "note": "— #1 single generation in the dataset",
-        "noteMobile": "— #1 single generation<br>in the dataset",
+        "note": "- #1 single generation in the dataset",
+        "noteMobile": "- #1 single generation<br>in the dataset",
         "trend": "up",
         "trendLabel": "Rising",
-        "placeholder": "[PLACEHOLDER — YoY % from source data]",
-        "placeholderMobile": "[PLACEHOLDER —<br>YoY % from source data]"
+        "placeholder": "[PLACEHOLDER - YoY % from source data]",
+        "placeholderMobile": "[PLACEHOLDER -<br>YoY % from source data]"
       },
       {
         "icon": "car",
@@ -1322,7 +1322,7 @@
         "trendLabel": "Rising",
         "trendNote": "as the parc exits warranty cover",
         "trendNoteMobile": "as the parc<br>exits warranty cover",
-        "placeholder": "[PLACEHOLDER — YoY %]"
+        "placeholder": "[PLACEHOLDER - YoY %]"
       },
       {
         "icon": "car",
@@ -1331,7 +1331,7 @@
         "tag": "[BMW-VERIFIED]",
         "trend": "flat",
         "trendLabel": "Stable",
-        "placeholder": "[PLACEHOLDER — YoY %]"
+        "placeholder": "[PLACEHOLDER - YoY %]"
       },
       {
         "icon": "engine",
@@ -1341,7 +1341,7 @@
         "tag": "[BMW-VERIFIED]",
         "trend": "up",
         "trendLabel": "Rising",
-        "placeholder": "[PLACEHOLDER — YoY %]"
+        "placeholder": "[PLACEHOLDER - YoY %]"
       },
       {
         "icon": "engine",
@@ -1351,7 +1351,7 @@
         "tag": "[BMW-VERIFIED]",
         "trend": "up",
         "trendLabel": "Rising",
-        "placeholder": "[PLACEHOLDER — YoY %]"
+        "placeholder": "[PLACEHOLDER - YoY %]"
       }
     ],
     "insightsTitle": "Insights from the data:",
@@ -1361,21 +1361,21 @@
         "lead": "Interesting insight:",
         "leadStyle": "dark",
         "leadMobile": "Interesting insight:",
-        "text": "The 3 Series generates more engine enquiries than any other BMW model — but the split tells the story: the F30 (380) dominates, followed by the E90 (256), with the G20 (190) showing that newer cars generate due-diligence searches, not failure enquiries. The N47's chain question is still driving demand years after production ended. (Editorial synthesis — specialist sense-check before publishing.)"
+        "text": "The 3 Series generates more engine enquiries than any other BMW model - but the split tells the story: the F30 (380) dominates, followed by the E90 (256), with the G20 (190) showing that newer cars generate due-diligence searches, not failure enquiries. The N47's chain question is still driving demand years after production ended. (Editorial synthesis - specialist sense-check before publishing.)"
       },
       {
         "icon": "shield",
         "lead": "E90 enquiries",
         "leadStyle": "blue",
-        "text": "are concentrated on the 2007–2012 diesel parc now exiting affordable-warranty age — exactly the cars where a £3,500+ engine decision meets a £4,000–£7,000 vehicle. The 60% threshold is live on this generation. (Editorial synthesis.)",
-        "textDesktop": "are concentrated on the 2007–2012<br>diesel parc now exiting affordable-warranty age —<br>exactly the cars where a £3,500+ engine decision<br>meets a £4,000–£7,000 vehicle. The 60%<br>threshold is live on this generation.<br>(Editorial synthesis.)"
+        "text": "are concentrated on the 2007–2012 diesel parc now exiting affordable-warranty age - exactly the cars where a £3,500+ engine decision meets a £4,000–£7,000 vehicle. The 60% threshold is live on this generation. (Editorial synthesis.)",
+        "textDesktop": "are concentrated on the 2007–2012<br>diesel parc now exiting affordable-warranty age -<br>exactly the cars where a £3,500+ engine decision<br>meets a £4,000–£7,000 vehicle. The 60%<br>threshold is live on this generation.<br>(Editorial synthesis.)"
       },
       {
         "icon": "star",
         "lead": "Petrol enquiries",
         "leadStyle": "blue",
-        "text": "(N54, N55, B58) remain minimal compared to diesel — consistent with the smaller petrol parc on UK roads, not evidence of superior reliability alone. The B58's 540 enquiries (JLR-wide) are largely from higher-value G-series cars where owners are doing due diligence, not responding to failures. (Editorial synthesis.)",
-        "textDesktop": "(N54, N55, B58) remain<br>minimal compared to diesel — consistent<br>with the smaller petrol parc on UK roads,<br>not evidence of superior reliability alone.<br>The B58's 540 enquiries (JLR-wide) are<br>largely from higher-value G-series cars<br>where owners are doing due diligence, not<br>responding to failures. (Editorial synthesis.)"
+        "text": "(N54, N55, B58) remain minimal compared to diesel - consistent with the smaller petrol parc on UK roads, not evidence of superior reliability alone. The B58's 540 enquiries (JLR-wide) are largely from higher-value G-series cars where owners are doing due diligence, not responding to failures. (Editorial synthesis.)",
+        "textDesktop": "(N54, N55, B58) remain<br>minimal compared to diesel - consistent<br>with the smaller petrol parc on UK roads,<br>not evidence of superior reliability alone.<br>The B58's 540 enquiries (JLR-wide) are<br>largely from higher-value G-series cars<br>where owners are doing due diligence, not<br>responding to failures. (Editorial synthesis.)"
       }
     ],
     "liveFeed": {
@@ -1390,7 +1390,7 @@
   },
   "editorialPullQuote": {
     "title": "The One Thing We’d Tell Every BMW 3 Series Buyer",
-    "quote": "If you buy one 3 Series based on this page, buy a 2016+ F30 LCI with the B47 diesel or B48 petrol.<br>The LCI brought the revised chain hardware that changed the diesel’s reliability story — and on an<br>E90 N47, a documented timing-chain inspection is worth more than any service stamp.",
+    "quote": "If you buy one 3 Series based on this page, buy a 2016+ F30 LCI with the B47 diesel or B48 petrol.<br>The LCI brought the revised chain hardware that changed the diesel’s reliability story - and on an<br>E90 N47, a documented timing-chain inspection is worth more than any service stamp.",
     "label": "EDITORIAL PULL-QUOTE",
     "titleMobile": "The One Thing We’d Tell Every<br>BMW 3 Series Buyer",
     "images": {
@@ -1400,9 +1400,9 @@
     }
   },
   "replacementCosts": {
-    "h2": "BMW 3 Series Engine Replacement Costs — By Generation",
-    "subHeadline": "Real UK pricing for used, reconditioned and rebuilt engines —<br>supply only, with labour guidance.",
-    "subHeadlineMobile": "Real UK pricing for used, reconditioned<br>and rebuilt engines — supply only,<br>with labour guidance.",
+    "h2": "BMW 3 Series Engine Replacement Costs - By Generation",
+    "subHeadline": "Real UK pricing for used, reconditioned and rebuilt engines -<br>supply only, with labour guidance.",
+    "subHeadlineMobile": "Real UK pricing for used, reconditioned<br>and rebuilt engines - supply only,<br>with labour guidance.",
     "headerImageMobile": "/model/s8-cost-classic-phone-head.webp",
     "trust": [
       {
@@ -1445,7 +1445,7 @@
     "generations": [
       {
         "key": "classic",
-        "title": "Classic Era — E21, E30, E36",
+        "title": "Classic Era - E21, E30, E36",
         "years": "1975 – 2000",
         "tab": "Classic Era",
         "tabYears": "1975–2000",
@@ -1510,7 +1510,7 @@
       },
       {
         "key": "e46",
-        "title": "E46 — 3 Series",
+        "title": "E46 - 3 Series",
         "years": "1998 – 2005",
         "tab": "E46",
         "tabYears": "1998–2005",
@@ -1564,7 +1564,7 @@
       },
       {
         "key": "e90",
-        "title": "E90/E91/E92/E93 — 3 Series",
+        "title": "E90/E91/E92/E93 - 3 Series",
         "years": "2005 – 2013",
         "tab": "E90/E91/E92/E93",
         "tabYears": "2005–2013",
@@ -1618,7 +1618,7 @@
       },
       {
         "key": "f30",
-        "title": "F30/F31 — 3 Series",
+        "title": "F30/F31 - 3 Series",
         "years": "2012 – 2019",
         "tab": "F30/F31",
         "tabYears": "2012–2019",
@@ -1672,7 +1672,7 @@
       },
       {
         "key": "g20",
-        "title": "G20/G21 — 3 Series",
+        "title": "G20/G21 - 3 Series",
         "years": "2019 – Present",
         "tab": "G20/G21",
         "tabYears": "2019–Present",
@@ -1728,9 +1728,9 @@
     "mobileNote": "Prices are supply only. Labour and ancillary parts extra.",
     "notes": {
       "title": "Important Notes",
-      "text": "N47D20C, B47D20A, N57D30, B58B30 figures<br>[BMW-QUOTE]; older engines [PLACEHOLDER —<br>confirm vs cost sheet].",
+      "text": "N47D20C, B47D20A, N57D30, B58B30 figures<br>[BMW-QUOTE]; older engines [PLACEHOLDER -<br>confirm vs cost sheet].",
       "mobileBullets": [
-        "N47D20C, B47D20A, N57D30, B58B30 figures [BMW-QUOTE];<br>older engines [PLACEHOLDER — confirm vs cost sheet].",
+        "N47D20C, B47D20A, N57D30, B58B30 figures [BMW-QUOTE];<br>older engines [PLACEHOLDER - confirm vs cost sheet].",
         "Labour estimate: Fitting a BMW 3 Series engine typically takes<br>8–16 hours at £65–£95/hr (independent) or £110–£160/hr<br>(London/SE dealer) [BMW-QUOTE]."
       ]
     },
@@ -1739,11 +1739,11 @@
       "text": "Fitting a BMW 3 Series engine typically takes<br>8–16 hours at £65–£95/hr (independent) or<br>£110–£160/hr (London/SE dealer) [BMW-QUOTE]."
     },
     "rule": {
-      "title": "The 3 Series rule — generation is everything:",
-      "text": "A £3,200–£5,500 N47 recon against a £6,000 E90 sits at 53–92% of the car’s value.<br>On an older sub-£5k E90, that brushes our 70% BMW threshold — we’ll honestly tell you to walk away.<br>Against a £22,000 F30 LCI or a £35,000 G20, the same recon is just 15–25% of the car’s value —<br>a routine repair, not a life-or-death decision. Value the car first; the engine decision follows.",
+      "title": "The 3 Series rule - generation is everything:",
+      "text": "A £3,200–£5,500 N47 recon against a £6,000 E90 sits at 53–92% of the car’s value.<br>On an older sub-£5k E90, that brushes our 70% BMW threshold - we’ll honestly tell you to walk away.<br>Against a £22,000 F30 LCI or a £35,000 G20, the same recon is just 15–25% of the car’s value -<br>a routine repair, not a life-or-death decision. Value the car first; the engine decision follows.",
       "mobileParagraphs": [
-        "A £3,200–£5,500 N47 recon against a £6,000 E90 sits at 53–92% of the car’s value. On an older sub-£5k E90, that brushes our 70% BMW threshold — we’ll honestly tell you to walk away.",
-        "Against a £22,000 F30 LCI or a £35,000 G20, the same recon is just 15–25% of the car’s value — a routine repair, not a life-or-death decision.",
+        "A £3,200–£5,500 N47 recon against a £6,000 E90 sits at 53–92% of the car’s value. On an older sub-£5k E90, that brushes our 70% BMW threshold - we’ll honestly tell you to walk away.",
+        "Against a £22,000 F30 LCI or a £35,000 G20, the same recon is just 15–25% of the car’s value - a routine repair, not a life-or-death decision.",
         "<strong>Value the car first; the engine decision follows.</strong>"
       ]
     },
@@ -2006,14 +2006,14 @@
     }
   },
   "engineEvolution": {
-    "h2": "How the BMW 3 Series Engine Range Evolved — 1975 to Today",
+    "h2": "How the BMW 3 Series Engine Range Evolved - 1975 to Today",
     "titleLines": [
       "How the BMW 3 Series Engine Range",
-      "Evolved — <span>1975 to Today</span>"
+      "Evolved - <span>1975 to Today</span>"
     ],
     "titleLinesMobile": [
       "How the BMW 3 Series",
-      "Engine Range Evolved —",
+      "Engine Range Evolved -",
       "<span>1975 to Today</span>"
     ],
     "subHeadline": "From the original M10 to today’s advanced B-series, explore how engineering,<br>emissions and performance shaped every generation of 3 Series engines.",
@@ -2055,8 +2055,8 @@
     "eras": [
       {
         "key": "launch",
-        "era": "Launch era —<br>M10 & early sixes",
-        "eraMobile": "Launch era — M10 & early sixes",
+        "era": "Launch era -<br>M10 & early sixes",
+        "eraMobile": "Launch era - M10 & early sixes",
         "years": "1975–1983",
         "keyEngines": "M10, M20",
         "engines": [
@@ -2087,8 +2087,8 @@
       },
       {
         "key": "e30",
-        "era": "E30 refinement —<br>four-valve era",
-        "eraMobile": "E30 refinement — four-valve era",
+        "era": "E30 refinement -<br>four-valve era",
+        "eraMobile": "E30 refinement - four-valve era",
         "years": "1984–1994",
         "keyEngines": "M40, M42, M50 (late)",
         "engines": [
@@ -2114,9 +2114,9 @@
             }
           }
         ],
-        "whyBmwChanged": "BMW’s move to four-valve-per-cylinder<br>technology improved breathing and fuel<br>efficiency — the M42 16-valve arrived<br>in 1989.",
+        "whyBmwChanged": "BMW’s move to four-valve-per-cylinder<br>technology improved breathing and fuel<br>efficiency - the M42 16-valve arrived<br>in 1989.",
         "worthKnowing": "The M42’s timing chain is robust;<br>E30 values now justify<br>full rebuilds.",
-        "whyBmwChangedMobile": "BMW's move to four-valve-per-cylinder technology improved breathing and fuel efficiency — the M42 16-valve arrived in 1989.",
+        "whyBmwChangedMobile": "BMW's move to four-valve-per-cylinder technology improved breathing and fuel efficiency - the M42 16-valve arrived in 1989.",
         "worthKnowingMobile": "The M42's timing chain is robust; E30 values now justify full rebuilds.",
         "images": {
           "light": "/model/s9-car-e30-light.webp",
@@ -2126,8 +2126,8 @@
       },
       {
         "key": "e36",
-        "era": "E36 transition —<br>VANOS arrives",
-        "eraMobile": "E36 transition — VANOS arrives",
+        "era": "E36 transition -<br>VANOS arrives",
+        "eraMobile": "E36 transition - VANOS arrives",
         "years": "1990–2000",
         "keyEngines": "M43, M44, M50, M52",
         "engines": [
@@ -2165,8 +2165,8 @@
       },
       {
         "key": "e46",
-        "era": "E46 peak —<br>M54 & M57",
-        "eraMobile": "E46 peak — M54 & M57",
+        "era": "E46 peak -<br>M54 & M57",
+        "eraMobile": "E46 peak - M54 & M57",
         "years": "1998–2005",
         "keyEngines": "M54, M57D20/D30, S54",
         "engines": [
@@ -2204,8 +2204,8 @@
       },
       {
         "key": "e90",
-        "era": "E90/F30 —<br>N-series & turbos",
-        "eraMobile": "E90/F30 — N-series & turbos",
+        "era": "E90/F30 -<br>N-series & turbos",
+        "eraMobile": "E90/F30 - N-series & turbos",
         "years": "2005–2016",
         "keyEngines": "N52, N54, N55, N47, N57",
         "engines": [
@@ -2239,9 +2239,9 @@
           }
         ],
         "whyBmwChanged": "Emissions targets forced the move<br>from naturally aspirated to<br>turbocharged; the N47 was BMW’s<br>first modern common-rail diesel.",
-        "worthKnowing": "The N47’s rear-chain tensioner<br>defined this era’s reputation —<br>every used purchase lives in<br>its shadow.",
+        "worthKnowing": "The N47’s rear-chain tensioner<br>defined this era’s reputation -<br>every used purchase lives in<br>its shadow.",
         "whyBmwChangedMobile": "Emissions targets forced the move from naturally aspirated to turbocharged; the N47 was BMW's first modern common-rail diesel.",
-        "worthKnowingMobile": "The N47's rear-chain tensioner defined this era's reputation — every used purchase lives in its shadow.",
+        "worthKnowingMobile": "The N47's rear-chain tensioner defined this era's reputation - every used purchase lives in its shadow.",
         "images": {
           "light": "/model/s9-car-e90-light.webp",
           "dark": "/model/s9-car-e90-dark.webp",
@@ -2285,9 +2285,9 @@
           }
         ],
         "whyBmwChanged": "The modular B-family engines brought<br>unified architecture across four, six<br>and eight-cylinders; mild-hybrids and<br>plug-ins followed.",
-        "worthKnowing": "The B-series reversed the reliability<br>perception — front-chain, better<br>materials, and 20% fewer failures<br>in our data.",
+        "worthKnowing": "The B-series reversed the reliability<br>perception - front-chain, better<br>materials, and 20% fewer failures<br>in our data.",
         "whyBmwChangedMobile": "The modular B-family engines brought unified architecture across four, six and eight-cylinders; mild-hybrids and plug-ins followed.",
-        "worthKnowingMobile": "The B-series reversed the reliability perception — front-chain, better materials, and 20% fewer failures in our data.",
+        "worthKnowingMobile": "The B-series reversed the reliability perception - front-chain, better materials, and 20% fewer failures in our data.",
         "images": {
           "light": "/model/s9-car-bseries-light.webp",
           "dark": "/model/s9-car-bseries-dark.webp",
@@ -2308,8 +2308,8 @@
       "Who Should Buy a",
       "<span>BMW 3 Series</span>?"
     ],
-    "subHeadline": "Different buyers, different priorities. Here’s our verdict on who the 3 Series<br>is perfect for — and who should think twice.",
-    "subHeadlineMobile": "Different buyers, different priorities. Here’s our<br>verdict on who the 3 Series is perfect for —<br>and who should think twice.",
+    "subHeadline": "Different buyers, different priorities. Here’s our verdict on who the 3 Series<br>is perfect for - and who should think twice.",
+    "subHeadlineMobile": "Different buyers, different priorities. Here’s our<br>verdict on who the 3 Series is perfect for -<br>and who should think twice.",
     "proof": [
       {
         "icon": "group",
@@ -2344,8 +2344,8 @@
         "buyerProfile": "Family Buyer",
         "rating": "⭐⭐⭐⭐☆",
         "stars": 4,
-        "verdict": "The 3 Series Touring (E91/F31/G21) is one of the most capable<br>family estates on sale — room for four, 500+ litres of boot, and<br>a B47 diesel that returns 55+ mpg on the motorway. Buy 2016+<br>F31 LCI and it’s a genuinely sensible choice.",
-        "verdictMobile": "The 3 Series Touring (E91/F31/G21) is<br>one of the most capable family estates<br>on sale — room for four, 500+ litres of<br>boot, and a B47 diesel that returns 55+<br>mpg on the motorway. Buy 2016+ F31<br>LCI and it’s a genuinely sensible choice.",
+        "verdict": "The 3 Series Touring (E91/F31/G21) is one of the most capable<br>family estates on sale - room for four, 500+ litres of boot, and<br>a B47 diesel that returns 55+ mpg on the motorway. Buy 2016+<br>F31 LCI and it’s a genuinely sensible choice.",
+        "verdictMobile": "The 3 Series Touring (E91/F31/G21) is<br>one of the most capable family estates<br>on sale - room for four, 500+ litres of<br>boot, and a B47 diesel that returns 55+<br>mpg on the motorway. Buy 2016+ F31<br>LCI and it’s a genuinely sensible choice.",
         "images": {
           "light": "/model/s10-buyer-family-light.webp",
           "dark": "/model/s10-buyer-family-dark.webp",
@@ -2372,8 +2372,8 @@
         "buyerProfile": "Budget Owner",
         "rating": "⭐⭐⭐☆☆",
         "stars": 3,
-        "verdict": "A cheap E90 N47 is not a cheap 3 Series — it’s an expensive<br>one with the first year’s bills prepaid by nobody. A £4,000 E90<br>with chain paperwork is the bargain; a £3,000 one without it<br>is the trap.",
-        "verdictMobile": "A cheap E90 N47 is not a cheap<br>3 Series — it’s an expensive one with<br>the first year’s bills prepaid by nobody.<br>A £4,000 E90 with chain paperwork is<br>the bargain; a £3,000 one without it<br>is the trap.",
+        "verdict": "A cheap E90 N47 is not a cheap 3 Series - it’s an expensive<br>one with the first year’s bills prepaid by nobody. A £4,000 E90<br>with chain paperwork is the bargain; a £3,000 one without it<br>is the trap.",
+        "verdictMobile": "A cheap E90 N47 is not a cheap<br>3 Series - it’s an expensive one with<br>the first year’s bills prepaid by nobody.<br>A £4,000 E90 with chain paperwork is<br>the bargain; a £3,000 one without it<br>is the trap.",
         "images": {
           "light": "/model/s10-buyer-budget-light.webp",
           "dark": "/model/s10-buyer-budget-dark.webp",
@@ -2386,8 +2386,8 @@
         "buyerProfile": "Performance Buyer",
         "rating": "⭐⭐⭐⭐⭐",
         "stars": 5,
-        "verdict": "The M-lite cars (335i/340i, M340i) with the B58 are the modern<br>sweet spot — 370+ bhp, bulletproof internals, and exhaust<br>notes that remind you why BMW built the straight-six.<br>G20 M340i is the peak.",
-        "verdictMobile": "The M-lite cars (335i/340i, M340i)<br>with the B58 are the modern sweet<br>spot — 370+ bhp, bulletproof internals,<br>and exhaust notes that remind you<br>why BMW built the straight-six.<br>G20 M340i is the peak.",
+        "verdict": "The M-lite cars (335i/340i, M340i) with the B58 are the modern<br>sweet spot - 370+ bhp, bulletproof internals, and exhaust<br>notes that remind you why BMW built the straight-six.<br>G20 M340i is the peak.",
+        "verdictMobile": "The M-lite cars (335i/340i, M340i)<br>with the B58 are the modern sweet<br>spot - 370+ bhp, bulletproof internals,<br>and exhaust notes that remind you<br>why BMW built the straight-six.<br>G20 M340i is the peak.",
         "images": {
           "light": "/model/s10-buyer-performance-light.webp",
           "dark": "/model/s10-buyer-performance-dark.webp",
@@ -2400,8 +2400,8 @@
         "buyerProfile": "Long-Term Keeper",
         "rating": "⭐⭐⭐⭐☆",
         "stars": 4,
-        "verdict": "An E46 330i with the M54 or an F30 LCI 340i with the B58<br>are the 3 Series keepers — engines that will outlast the cars<br>around them. Buy the best example you can afford;<br>maintenance is an investment, not an expense.",
-        "verdictMobile": "An E46 330i with the M54 or an<br>F30 LCI 340i with the B58 are the<br>3 Series keepers — engines that will<br>outlast the cars around them. Buy the<br>best example you can afford;<br>maintenance is an investment,<br>not an expense.",
+        "verdict": "An E46 330i with the M54 or an F30 LCI 340i with the B58<br>are the 3 Series keepers - engines that will outlast the cars<br>around them. Buy the best example you can afford;<br>maintenance is an investment, not an expense.",
+        "verdictMobile": "An E46 330i with the M54 or an<br>F30 LCI 340i with the B58 are the<br>3 Series keepers - engines that will<br>outlast the cars around them. Buy the<br>best example you can afford;<br>maintenance is an investment,<br>not an expense.",
         "images": {
           "light": "/model/s10-buyer-keeper-light.webp",
           "dark": "/model/s10-buyer-keeper-dark.webp",
@@ -2411,8 +2411,8 @@
     ],
     "note": {
       "title": "Real talk.",
-      "text": "The right 3 Series for you depends on your budget, your mileage, and your patience for maintenance.<br>Use the data on this page to make the right call — and avoid expensive mistakes.",
-      "textMobile": "The right 3 Series for you depends on your budget,<br>your mileage, and your patience for maintenance.<br>Use the data on this page to make the right call —<br>and avoid expensive mistakes."
+      "text": "The right 3 Series for you depends on your budget, your mileage, and your patience for maintenance.<br>Use the data on this page to make the right call - and avoid expensive mistakes.",
+      "textMobile": "The right 3 Series for you depends on your budget,<br>your mileage, and your patience for maintenance.<br>Use the data on this page to make the right call -<br>and avoid expensive mistakes."
     },
     "cta": {
       "label": "Explore 3 Series Engines",
@@ -2434,18 +2434,18 @@
     ],
     "titleLines": [
       "Can I Repair My BMW 3 Series",
-      "Engine — <span>or Should I Replace It?</span>"
+      "Engine - <span>or Should I Replace It?</span>"
     ],
     "titleLinesMobile": [
       "Can I Repair My",
-      "BMW 3 Series Engine —",
+      "BMW 3 Series Engine -",
       "or <span>Should I Replace It?</span>"
     ],
     "introLead": "Cold-start rattle on an N47? Chain noise on a high-mileage F30?",
     "introLeadMobile": "Cold-start rattle on an N47? Chain noise on a<br>high-mileage F30?",
-    "introBody": "On the 3 Series, the answer swings on your car’s value — an E90 at £5,000<br>and a G20 at £30,000 face very different economics.",
-    "introBodyDark": "On the 3 Series, the answer swings on your car’s value —<br>an E90 at £5,000 and a G20 at £30,000 face very different economics.",
-    "introBodyMobile": "On the 3 Series, the answer swings on<br>your car’s value — an E90 at £5,000<br>and a G20 at £30,000 face very<br>different economics.",
+    "introBody": "On the 3 Series, the answer swings on your car’s value - an E90 at £5,000<br>and a G20 at £30,000 face very different economics.",
+    "introBodyDark": "On the 3 Series, the answer swings on your car’s value -<br>an E90 at £5,000 and a G20 at £30,000 face very different economics.",
+    "introBodyMobile": "On the 3 Series, the answer swings on<br>your car’s value - an E90 at £5,000<br>and a G20 at £30,000 face very<br>different economics.",
     "callout": {
       "title": "The smarter way to decide:",
       "text": "Get a personalised repair-vs-replace<br>verdict using real UK cost data.",
@@ -2513,9 +2513,9 @@
     ],
     "banner": {
       "title": "Stop guessing. Get the right answer.",
-      "text": "Our calculator compares real repair and replacement costs against your car’s<br>value — so you know the financially smarter move.",
-      "textDark": "Our calculator compares real repair and replacement costs<br>against your car’s value — so you know the financially smarter move.",
-      "textMobile": "Our calculator compares real repair and<br>replacement costs against your car’s value —<br>so you know the financially smarter move.",
+      "text": "Our calculator compares real repair and replacement costs against your car’s<br>value - so you know the financially smarter move.",
+      "textDark": "Our calculator compares real repair and replacement costs<br>against your car’s value - so you know the financially smarter move.",
+      "textMobile": "Our calculator compares real repair and<br>replacement costs against your car’s value -<br>so you know the financially smarter move.",
       "cta": {
         "label": "Start Your Verdict Now",
         "href": "/tools/diagnostic-wizard"
@@ -2554,26 +2554,26 @@
       {
         "icon": "chart",
         "title": "Built on Real Data",
-        "text": "— 826 BMW 3 Series enquiries in 2025 alone<br><span>[BMW-VERIFIED]</span> — the highest model-level BMW volume in our<br>dataset. Nobody has seen more UK 3 Series engine decisions.",
-        "textMobile": "— 826 BMW 3 Series enquiries<br>in 2025 alone <span>[BMW-VERIFIED]</span> — the highest<br>model-level BMW volume in our dataset. Nobody<br>has seen more UK 3 Series engine decisions."
+        "text": "- 826 BMW 3 Series enquiries in 2025 alone<br><span>[BMW-VERIFIED]</span> - the highest model-level BMW volume in our<br>dataset. Nobody has seen more UK 3 Series engine decisions.",
+        "textMobile": "- 826 BMW 3 Series enquiries<br>in 2025 alone <span>[BMW-VERIFIED]</span> - the highest<br>model-level BMW volume in our dataset. Nobody<br>has seen more UK 3 Series engine decisions."
       },
       {
         "icon": "heart",
         "title": "We Tell You When Not to Repair",
-        "text": "— On a tired E90 N47, sometimes<br>the honest answer is walk away. We’ll give you that answer for free —<br>if the recon cost exceeds 70% of your car’s value, we’ll say so<br>before you spend.",
-        "textMobile": "— On a tired E90<br>N47, sometimes the honest answer is walk away.<br>We’ll give you that answer for free — if the recon<br>cost exceeds 70% of your car’s value, we’ll say so<br>before you spend."
+        "text": "- On a tired E90 N47, sometimes<br>the honest answer is walk away. We’ll give you that answer for free -<br>if the recon cost exceeds 70% of your car’s value, we’ll say so<br>before you spend.",
+        "textMobile": "- On a tired E90<br>N47, sometimes the honest answer is walk away.<br>We’ll give you that answer for free - if the recon<br>cost exceeds 70% of your car’s value, we’ll say so<br>before you spend."
       },
       {
         "icon": "wrench",
         "title": "Vetted BMW Specialists",
-        "text": "— 20+ vetted BMW specialists across<br>the UK, specifically assessed on N47 chain assessment, B58<br>diagnostics and E46 cooling-system work. Not generalist garages —<br>BMW-focused workshops.",
-        "textMobile": "— 20+ vetted BMW<br>specialists across the UK, specifically assessed on<br>N47 chain assessment, B58 diagnostics and E46<br>cooling-system work. Not generalist garages —<br>BMW-focused workshops."
+        "text": "- 20+ vetted BMW specialists across<br>the UK, specifically assessed on N47 chain assessment, B58<br>diagnostics and E46 cooling-system work. Not generalist garages -<br>BMW-focused workshops.",
+        "textMobile": "- 20+ vetted BMW<br>specialists across the UK, specifically assessed on<br>N47 chain assessment, B58 diagnostics and E46<br>cooling-system work. Not generalist garages -<br>BMW-focused workshops."
       },
       {
         "icon": "shieldStar",
         "title": "Part of Engine Finders",
-        "text": "— the UK’s leading engine replacement<br>marketplace.",
-        "textMobile": "— the UK’s leading engine<br>replacement marketplace."
+        "text": "- the UK’s leading engine replacement<br>marketplace.",
+        "textMobile": "- the UK’s leading engine<br>replacement marketplace."
       }
     ],
     "art": {
@@ -2622,7 +2622,7 @@
       },
       {
         "id": 8,
-        "question": "BMW 3 Series vs 5 Series — which is more reliable?",
+        "question": "BMW 3 Series vs 5 Series - which is more reliable?",
         "answer": "Mechanically they share engines across the same eras - the N47/B47/B58 story is identical. The 3 Series is lighter, so it works the powertrain less hard; the 5 Series adds weight but benefits from the same engineering. Buy on engine and year, not badge. Read the full head-to-head →"
       }
     ],
@@ -2679,7 +2679,7 @@
           "Diagnose",
           "<span>My 3 Series</span>"
         ],
-        "text": "Symptoms in, verdict out —<br>value-weighted for your generation.",
+        "text": "Symptoms in, verdict out -<br>value-weighted for your generation.",
         "cta": "Start Diagnosis",
         "href": "/tools/diagnostic-wizard",
         "art": {

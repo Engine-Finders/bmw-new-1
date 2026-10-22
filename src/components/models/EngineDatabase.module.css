@@ -1,5 +1,5 @@
 /*
- * Model page "Engine Codes — The Complete Database" (section 5), built to the reference designs
+ * Model page "Engine Codes - The Complete Database" (section 5), built to the reference designs
  * (light + dark desktop at 1536px; light phone, whose screen is 737px wide in its 863px image).
  * Sizes are reference pixels times --u, so the section is the reference scaled to its own width:
  * below 1024px the phone screen (search, filters, short list), from 1024px the desktop table.

@@ -25,9 +25,9 @@ function splitMeta(meta = "") {
   return { years: years || "", engines: rest.length ? `• ${rest.join(", ")}` : "" };
 }
 
-// "BMW 3 Series Generations — Find Your Vehicle" -> "BMW 3 Series Generations —" / "Find Your Vehicle"
+// "BMW 3 Series Generations - Find Your Vehicle" -> "BMW 3 Series Generations -" / "Find Your Vehicle"
 function splitTitle(title = "") {
-  const match = String(title).match(/^(.*?\s[-–—])\s+(.*)$/);
+  const match = String(title).match(/^(.*?\s[-–-])\s+(.*)$/);
   return match ? { main: match[1], accent: match[2] } : { main: String(title), accent: "" };
 }
 
@@ -36,7 +36,7 @@ function cardView(card, modelLabel) {
   const meta = splitMeta(card.meta);
   const badge = String(card.badge || "");
   const tag = card.badgeTag || badge.match(/\[[A-Z][A-Z-]+\]/)?.[0] || "";
-  const badgeText = badge.replace(/\s*\[[A-Z][A-Z-]+\]/, "").replace(/\s+-\s+/, " — ");
+  const badgeText = badge.replace(/\s*\[[A-Z][A-Z-]+\]/, "").replace(/\s+-\s+/, " - ");
   return {
     label: card.label || modelLabel,
     code: card.code || codeFromTitle(card.title, modelLabel),
@@ -250,7 +250,7 @@ function PhoneCard({ card, index, open, onToggle, isDark }) {
   );
 }
 
-// "N47D20C — rear-chain risk" -> code coloured by tone, the rest in the body colour.
+// "N47D20C - rear-chain risk" -> code coloured by tone, the rest in the body colour.
 function Cell({ cell, mobile }) {
   const text = String((mobile && cell.mobileText) || cell.text || "").replace(/\s*<br\s*\/?>\s*/g, " <br>");
   const match = text.match(/^([A-Z0-9/]+\d[A-Z0-9/]*)(.*)$/s);

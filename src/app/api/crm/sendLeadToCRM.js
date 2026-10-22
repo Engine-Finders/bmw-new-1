@@ -16,7 +16,7 @@ function capacityToLitres(engineCapacity) {
   const capacityRaw = engineCapacity ? String(engineCapacity).replace(/[^\d.]/g, "") : "";
   const capacityNum = capacityRaw ? Number(capacityRaw) : NaN;
   if (!Number.isFinite(capacityNum) || capacityNum <= 0) return "";
-  // DVLA often returns cc (e.g. 1995) — convert to litres for CRM.
+  // DVLA often returns cc (e.g. 1995) - convert to litres for CRM.
   if (capacityNum >= 100) return (capacityNum / 1000).toFixed(1);
   return String(capacityNum);
 }
@@ -50,7 +50,7 @@ export function buildQuoteLeadPayload({ contact, vehicle, calculator = null, sou
     honeypot: contact?.honeypot || "",
   };
 
-  // Email-only — stripped before CRM POST.
+  // Email-only - stripped before CRM POST.
   if (calculator && typeof calculator === "object") {
     payload.calculator = calculator;
   }

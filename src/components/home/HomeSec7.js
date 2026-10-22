@@ -7,7 +7,7 @@ import { useTheme } from "@/components/shared/themeProvider";
 import { MobileHeading, MobileLabel, MobileLead, MobileSection } from "@/components/home/mobileKit";
 import BrandIcon from "@/components/home/brandIcon";
 
-// BMW Engine Families — The Pillars: engine table (engine / fuel / years / enquiries / verdict)
+// BMW Engine Families - The Pillars: engine table (engine / fuel / years / enquiries / verdict)
 // under an engine-bay header framed by blue diagonals. Phone adds the trust strip and a legend card.
 
 // Icons use tight viewBoxes so the box size is the ink size measured on the references.

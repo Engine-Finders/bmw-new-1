@@ -6,7 +6,7 @@ import { TABLE_HEADER_BG, TABLE_HEADER_TEXT } from "@/components/shared/tableHea
 import { useTheme } from "@/components/shared/themeProvider";
 import { MobileCard, MobileHeading, MobileLead } from "@/components/home/mobileKit";
 
-// BMW Market Intelligence — header with stats card, then six data panels (3 × 2 on desktop).
+// BMW Market Intelligence - header with stats card, then six data panels (3 × 2 on desktop).
 // On phones the first three panels are accordions (closed until tapped), the rest stay open.
 
 function PanelIcon({ name, className = "h-7 w-7" }) {

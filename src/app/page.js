@@ -29,13 +29,13 @@ const DESCRIPTION =
 
 export function generateMetadata() {
   return {
-    title: "BMW Engines UK — The Complete Ownership Guide",
+    title: "BMW Engines UK - The Complete Ownership Guide",
     description: DESCRIPTION,
     alternates: {
       canonical: "https://bmwengines.uk/",
     },
     openGraph: {
-      title: "BMW Engines UK — The Complete Ownership Guide",
+      title: "BMW Engines UK - The Complete Ownership Guide",
       description: DESCRIPTION,
       url: "https://bmwengines.uk/",
       siteName: "BMWEngines.uk",

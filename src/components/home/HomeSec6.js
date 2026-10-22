@@ -8,7 +8,7 @@ import { MobileCard, MobileHeading, MobileLabel, MobileLead, MobileSection } fro
 import BrandIcon from "@/components/home/brandIcon";
 import VerdictGlyph from "@/components/home/VerdictGlyph";
 
-// Ownership Economics Centre — decision matrix (left), rule of thumb + deeper links (right),
+// Ownership Economics Centre - decision matrix (left), rule of thumb + deeper links (right),
 // and a four-item trust strip underneath. Phone stacks them and ends with the promise card.
 
 const GLYPH = { scrap: "avoid", safe: "safe", watch: "watch" };
@@ -112,7 +112,7 @@ function StripIcon({ name }) {
   );
 }
 
-// Desktop (lg+): fluid layout in the shared container — decision matrix left, rule of thumb and
+// Desktop (lg+): fluid layout in the shared container - decision matrix left, rule of thumb and
 // deeper links right, trust strip underneath.
 function Desktop({ data, isDark }) {
   const C = COL[isDark ? "dark" : "light"];
@@ -281,10 +281,10 @@ function Phone({ data, isDark }) {
 
       {/* Decision matrix: one card per model */}
       <MobileCard C={C} className="mt-7">
-        <h3 className="flex items-center gap-2.5 border-b px-4 py-3.5 text-[15px] font-bold uppercase tracking-[0.04em]" style={{ color: C.blue, borderColor: C.line }}>
+        <p className="flex items-center gap-2.5 border-b px-4 py-3.5 text-[15px] font-bold uppercase tracking-[0.04em]" style={{ color: C.blue, borderColor: C.line }}>
           <BarsIcon className="h-4 w-4" />
           {data.matrix.title}
-        </h3>
+        </p>
         <ul>
           {data.matrix.rows.map((row) => {
             const [pillBg, pillFg] = VERDICT_PILL[t][row.verdict.type];
@@ -318,7 +318,7 @@ function Phone({ data, isDark }) {
                     </span>
                     <span className="text-[16px] leading-[1.55]" style={{ color: C.verdict }}>
                       <span className="mr-1.5 inline-block rounded-[4px] px-2 py-[1px] text-[14px] font-semibold" style={{ background: pillBg, color: pillFg }}>{row.verdict.label}</span>
-                      {row.verdict.lead === row.verdict.label ? row.verdict.text.charAt(0).toUpperCase() + row.verdict.text.slice(1) : `${row.verdict.lead} — ${row.verdict.text}`}
+                      {row.verdict.lead === row.verdict.label ? row.verdict.text.charAt(0).toUpperCase() + row.verdict.text.slice(1) : `${row.verdict.lead} - ${row.verdict.text}`}
                     </span>
                   </span>
                 </Link>
@@ -331,12 +331,12 @@ function Phone({ data, isDark }) {
       {/* Rule of thumb */}
       <div className="mt-5 rounded-[12px] border p-5" style={{ background: isDark ? C.boxBg : "#f4f7fe", borderColor: isDark ? C.boxBorder : "#e6ecfa" }}>
         <div className="flex items-start justify-between gap-4">
-          <h3 className="flex items-center gap-3 text-[16px] font-bold uppercase tracking-[0.03em]" style={{ color: C.strong }}>
+          <p className="flex items-center gap-3 text-[16px] font-bold uppercase tracking-[0.03em]" style={{ color: C.strong }}>
             <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#0b47d4] text-white">
               <ShieldGlyph className="h-5 w-5" />
             </span>
             {rule.title}
-          </h3>
+          </p>
           <span className="shrink-0 text-right">
             <span className="block text-[40px] font-bold leading-none tracking-[-0.03em]" style={{ color: C.blue }}>{rule.percent}</span>
             <span className="mt-1 block text-[13px] font-bold uppercase" style={{ color: C.blue }}>{data.phoneThresholdLabel}</span>
@@ -352,12 +352,12 @@ function Phone({ data, isDark }) {
 
       {/* Deeper analysis links */}
       <MobileCard C={C} className="mt-5">
-        <h3 className="flex items-center gap-3 px-4 pt-4 text-[16px] font-bold uppercase tracking-[0.03em]" style={{ color: C.strong }}>
+        <p className="flex items-center gap-3 px-4 pt-4 text-[16px] font-bold uppercase tracking-[0.03em]" style={{ color: C.strong }}>
           <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-[#0b47d4] text-white">
             <WrenchGlyph className="h-4 w-4" />
           </span>
           {data.deeperLinksTitle}
-        </h3>
+        </p>
         <ul className="px-4 pb-2 pt-2">
           {data.deeperLinks.map((l) => (
             <li key={l.id} className="border-b last:border-b-0" style={{ borderColor: C.line }}>

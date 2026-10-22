@@ -65,7 +65,7 @@ function splitTagPill(tagPill = "") {
 
 // "3 Series Engines - The Complete UK Guide" -> ["3 Series Engines", "The Complete ", "UK Guide"]
 function splitTitle(h1 = "") {
-  const match = String(h1).match(/^(.*?)\s*[-–—]\s*(.*)$/);
+  const match = String(h1).match(/^(.*?)\s*[-–-]\s*(.*)$/);
   const first = match ? match[1] : "";
   const rest = match ? match[2] : String(h1);
   const accentAt = rest.indexOf("UK Guide");
@@ -79,7 +79,7 @@ function splitTitle(h1 = "") {
 // Dashes as in the reference, the enquiry count and the [BMW-VERIFIED] tag picked out.
 function copyHtml(text = "") {
   return String(text)
-    .replace(/\s+-\s+/g, " — ")
+    .replace(/\s+-\s+/g, " - ")
     .replace(/(\d[\d,]*\+)/, `<span class="font-semibold">$1</span>`)
     .replace(/(\[[A-Z][A-Z -]+\])/g, `<span class="font-semibold text-[var(--mh-accent)]">$1</span>`);
 }
@@ -90,7 +90,7 @@ function parseStat(item) {
   let text = String(item.label || "");
   const tag = text.match(/\[[^\]]+\]/)?.[0] || "";
   if (tag) text = text.replace(tag, " ");
-  const [main = "", ...rest] = text.split(/\s+[-–—]\s+/);
+  const [main = "", ...rest] = text.split(/\s+[-–-]\s+/);
   const clean = main.replace(/\s+/g, " ").trim();
   const base = { tag, detail: rest.join(" – ").trim(), note: item.note || "" };
   if (/^part of\s/i.test(clean)) return { ...base, pre: clean.slice(0, 7), label: clean.slice(8) };
@@ -149,9 +149,9 @@ function Pill({ pill, C, className = "" }) {
   );
 }
 
-function Title({ title, C, className = "" }) {
+function Title({ title, C, className = "", as: Tag = "h1" }) {
   return (
-    <h1 className={`t-h1 ${className}`} style={{ color: C.text }}>
+    <Tag className={`t-h1 ${className}`} style={{ color: C.text }}>
       {title.first ? (
         <>
           <span dangerouslySetInnerHTML={{ __html: title.first }} /> –<br />
@@ -159,7 +159,7 @@ function Title({ title, C, className = "" }) {
       ) : null}
       <span dangerouslySetInnerHTML={{ __html: title.plain }} />
       {title.accent ? <span style={{ color: C.accent }} dangerouslySetInnerHTML={{ __html: title.accent }} /> : null}
-    </h1>
+    </Tag>
   );
 }
 
@@ -220,7 +220,7 @@ export default function ModelHero({ data }) {
       {/* ---------- Phone / tablet ---------- */}
       <div className="relative mx-auto max-w-[720px] px-4 pb-8 pt-6 lg:hidden">
         <Pill pill={pill} C={C} />
-        <Title title={title} C={C} className="mt-5" />
+        <Title as="p" title={title} C={C} className="mt-5" />
         <p className="t-body mt-4" style={{ color: C.muted }} dangerouslySetInnerHTML={{ __html: copyHtml(data.subHeadline) }} />
         {scene ? (
           <div aria-hidden="true" className="relative -mr-4 mt-5 aspect-[16/9] [clip-path:polygon(14%_0,100%_0,100%_100%,0_100%)]">

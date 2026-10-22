@@ -3,13 +3,13 @@
 import { Fragment, useEffect, useState } from "react";
 
 function formatValue(value) {
-  if (value === null || value === undefined || value === "") return "—";
+  if (value === null || value === undefined || value === "") return "-";
   if (typeof value === "boolean") return value ? "Yes" : "No";
   return String(value);
 }
 
 function formatDate(value) {
-  if (!value) return "—";
+  if (!value) return "-";
   try {
     return new Date(value).toLocaleString("en-GB", {
       timeZone: "Europe/London",

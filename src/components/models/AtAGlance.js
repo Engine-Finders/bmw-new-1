@@ -153,7 +153,7 @@ function parseRating(value = "") {
   return { filled: (match[1].match(/★/g) || []).length, total: match[1].length, score: match[2] };
 }
 
-// "N47D20C — ... [BMW-VERIFIED]" -> text + badge names
+// "N47D20C - ... [BMW-VERIFIED]" -> text + badge names
 function splitBadges(value = "") {
   const badges = [];
   const text = String(value)

@@ -1,5 +1,5 @@
 /* ============================================================
-   BMW — SHARED BRAND STYLESHEET
+   BMW - SHARED BRAND STYLESHEET
    Per IBS Master AI Handover 5.1, Part 3.3
    ============================================================ */
 
@@ -71,7 +71,7 @@ table { border-collapse: collapse; width: 100%; }
 }
 .eyebrow::before { content: "/"; font-weight: 900; }
 
-/* ---------- TRICOLOUR STRIPE — BMW signature, hero only ---------- */
+/* ---------- TRICOLOUR STRIPE - BMW signature, hero only ---------- */
 .tricolour-stripe {
   display: flex;
   width: 140px;
@@ -408,7 +408,7 @@ table thead th {
 footer { background: var(--bmw-bg); border-top: 1px solid var(--bmw-grey-200); color: var(--bmw-grey-600); padding: 30px 32px; text-align: center; font-size: 13px; }
 footer a { color: var(--bmw-grey-600); }
 
-/* ---------- SCROLL REVEAL — directional fade-in ---------- */
+/* ---------- SCROLL REVEAL - directional fade-in ---------- */
 .fade-up, .fade-down, .fade-left, .fade-right {
   opacity: 0;
   transition: opacity 0.6s ease, transform 0.6s ease;
@@ -447,7 +447,7 @@ footer a { color: var(--bmw-grey-600); }
 }
 
 /* ============================================================
-   RESEARCH CENTRE REPORT COMPONENTS (v1) — added for annual
+   RESEARCH CENTRE REPORT COMPONENTS (v1) - added for annual
    data reports. Distinct from blog/KC styling: report pages need
    an executive-summary callout, large citable stat cards, real
    Chart.js containers, and a methodology/limitations box.

@@ -81,16 +81,16 @@ function Icon({ name, className }) {
   );
 }
 
-function Title({ lines, className }) {
+function Title({ lines, className, as: Tag = "h2" }) {
   return (
-    <h2 className={className}>
+    <Tag className={className}>
       {lines.map((line, index) => (
         <span key={line}>
           {index ? <br /> : null}
           <span dangerouslySetInnerHTML={{ __html: line }} />
         </span>
       ))}
-    </h2>
+    </Tag>
   );
 }
 
@@ -231,7 +231,7 @@ function EngineEvolutionReference({ data }) {
           <div className={s.top}>
             <div className={s.head}>
               <Title lines={data.titleLines || [data.h2]} className={`${s.title} ${s.deskOnly}`} />
-              <Title lines={data.titleLinesMobile || data.titleLines || [data.h2]} className={`${s.title} ${s.phoneOnly}`} />
+              <Title as="p" lines={data.titleLinesMobile || data.titleLines || [data.h2]} className={`${s.title} ${s.phoneOnly}`} />
               <p className={`${s.copy} ${s.deskOnly}`} dangerouslySetInnerHTML={{ __html: spaced(data.subHeadline) }} />
               <p className={`${s.copy} ${s.phoneOnly}`} dangerouslySetInnerHTML={{ __html: spaced(data.subHeadlineMobile || data.subHeadline) }} />
             </div>

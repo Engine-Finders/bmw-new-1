@@ -84,7 +84,7 @@ a {
   color: var(--color-accent-red);
 }
 
-/* CTA button — primary solid background, dark overlay on hover */
+/* CTA button - primary solid background, dark overlay on hover */
 @layer components {
   .btn-cta {
     background: var(--color-cta-bg);

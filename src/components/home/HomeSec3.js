@@ -281,9 +281,9 @@ function HowItWorks({ data, isDark, numbered = false }) {
   const soft = isDark ? "text-white/75" : "text-[#3b4656]";
   return (
     <div className={`rounded-[10px] border p-4 ${card(isDark)}`}>
-      <h3 className={`t-label px-1 pt-1 font-semibold uppercase tracking-[0.02em] ${isDark ? "text-[#3b82f6]" : "text-[#0b4fc0]"}`}>
+      <p className={`t-label px-1 pt-1 font-semibold uppercase tracking-[0.02em] ${isDark ? "text-[#3b82f6]" : "text-[#0b4fc0]"}`}>
         {data.title}
-      </h3>
+      </p>
       <ul className={`mt-3.5 grid ${numbered ? "gap-0" : "gap-3"}`}>
         {data.steps.map((step, i) =>
           numbered ? (
@@ -327,7 +327,7 @@ function WhyTrust({ title, items, isDark, phone = false }) {
   if (phone) {
     return (
       <div className={`rounded-[10px] border p-4 ${card(isDark)}`}>
-        <h3 className={heading}>{title}</h3>
+        <p className={heading}>{title}</p>
         <ul className="mt-2">
           {items.map((item) => (
             <li key={item.title} className={`border-b py-3.5 last:border-b-0 ${isDark ? "border-white/10" : "border-[#e6eaf0]"}`}>
@@ -347,7 +347,7 @@ function WhyTrust({ title, items, isDark, phone = false }) {
   }
   return (
     <div className={`rounded-[10px] border p-4 ${card(isDark)}`}>
-      <h3 className={heading}>{title}</h3>
+      <p className={heading}>{title}</p>
       <ul className="mt-3.5 grid gap-2.5">
         {items.map((item) => (
           <li key={item.title} className={`relative rounded-[8px] border p-4 ${innerCard(isDark)}`}>
@@ -407,7 +407,7 @@ function ExampleResult({ data, isDark }) {
   return (
     <div className={`rounded-[10px] border p-4 ${isDark ? "border-[#1e3350] bg-[rgba(10,18,30,0.92)]" : "border-[#e3e8ef] bg-[#f4f7fc]"}`}>
       <span className={`inline-block rounded-[4px] px-2.5 py-1.5 t-label font-medium ${isDark ? "bg-white/10 text-[#5b9bff]" : "bg-[#e3ebf8] text-[#0b4fc0]"}`}>{data.label}</span>
-      <h3 className={`mt-4 t-h5 ${strong}`}>{data.title}</h3>
+      <p className={`mt-4 t-h5 ${strong}`}>{data.title}</p>
       <div className={`mt-4 rounded-[8px] border p-4 ${innerCard(isDark)}`}>
         <p className={`t-body font-medium ${strong}`}>{data.fault}</p>
         <span className="mt-2.5 inline-block rounded-[4px] bg-[#fde2e2] px-2.5 py-1 t-label text-[#c81e1e]">{data.likelihood}</span>
@@ -559,7 +559,7 @@ function OverridePanel({ diagnosis, isDark, onContinue }) {
         </span>
         <div className="min-w-0">
           <SeverityBadge severity={diagnosis.severity} isDark={isDark} />
-          <h3 className={`mt-3 t-h5 ${isDark ? "text-white" : "text-[#071827]"}`}>{diagnosis.overrideCopy.headline}</h3>
+          <p className={`mt-3 t-h5 ${isDark ? "text-white" : "text-[#071827]"}`}>{diagnosis.overrideCopy.headline}</p>
           <p className={`mt-3 t-body leading-[1.5] ${isDark ? "text-white/78" : "text-[#27384a]"}`}>{diagnosis.overrideCopy.body}</p>
           <ul className="mt-4 grid gap-2">
             {diagnosis.overrideCopy.actions.map((action) => (
@@ -639,7 +639,7 @@ function ResultsScreen({ diagnosis, verdict, engineOption, ctas, isDark, calcula
               <SeverityBadge severity={diagnosis.severity} isDark={isDark} />
               <span className={`t-label font-semibold uppercase tracking-[0.04em] ${isDark ? "text-white/62" : "text-[#607085]"}`}>{diagnosis.evidenceLabel}</span>
             </div>
-            <h3 className={`mt-3 t-h5 ${isDark ? "text-white" : "text-[#071827]"}`}>{diagnosis.headline}</h3>
+            <p className={`mt-3 t-h5 ${isDark ? "text-white" : "text-[#071827]"}`}>{diagnosis.headline}</p>
             <p className={`mt-3 max-w-[760px] t-body leading-[1.55] ${isDark ? "text-white/78" : "text-[#27384a]"}`} dangerouslySetInnerHTML={{ __html: diagnosis.summary }} />
           </div>
           <div className={`rounded-xl border px-4 py-3 ${isDark ? severity.darkBadge : severity.badge}`}>
@@ -659,7 +659,7 @@ function ResultsScreen({ diagnosis, verdict, engineOption, ctas, isDark, calcula
       <section className={`rounded-xl border p-5 shadow-[0_12px_34px_rgba(10,26,43,0.06)] ${isDark ? "border-[#223343] bg-[rgba(10,21,32,0.9)]" : "border-[#d7dde6] bg-white"}`}>
         <div className="grid gap-5 lg:grid-cols-[minmax(0,1.25fr)_minmax(0,0.95fr)]">
           <div>
-            <h4 className={`t-label font-bold uppercase tracking-[0.04em] text-[var(--color-primary)]`}>Commonly affecting</h4>
+            <p className={`t-label font-bold uppercase tracking-[0.04em] text-[var(--color-primary)]`}>Commonly affecting</p>
             <div className="mt-3 flex flex-wrap gap-2">
               {diagnosis.chassis.map((item) => (
                 <span key={`${item.code}-${item.model}`} className={`rounded-lg border px-3 py-2 t-label ${isDark ? "border-[#223343] bg-[rgba(14,28,41,0.84)] text-white" : "border-[#d7dde6] bg-[#fbfdff] text-[#071827]"}`}>
@@ -669,7 +669,7 @@ function ResultsScreen({ diagnosis, verdict, engineOption, ctas, isDark, calcula
               ))}
             </div>
 
-            <h4 className="mt-5 t-label font-bold uppercase tracking-[0.04em] text-[var(--color-primary)]">OEM references</h4>
+            <p className="mt-5 t-label font-bold uppercase tracking-[0.04em] text-[var(--color-primary)]">OEM references</p>
             <div className={`mt-3 overflow-hidden rounded-lg border ${isDark ? "border-[#223343]" : "border-[#d7dde6]"}`}>
               {diagnosis.oemParts.map((part) => (
                 <div key={part.part} className={`grid grid-cols-[minmax(0,1fr)_minmax(140px,0.8fr)] gap-3 border-b px-4 py-3 last:border-b-0 ${isDark ? "border-[#223343] bg-[rgba(14,28,41,0.84)]" : "border-[#d7dde6] bg-white"}`}>
@@ -773,7 +773,7 @@ export default function HomeSec3({ data }) {
   const renderStepOne = (phone = false) => (
       <div>
         <p className={`t-label font-semibold uppercase tracking-[0.02em] ${isDark ? "text-[#3b82f6]" : "text-[#0b4fc0]"}`}>{data.step1.label}</p>
-        <h3 className={`t-h5 mt-2 ${strong}`}>{data.step1.title}</h3>
+        <p className={`t-h5 mt-2 ${strong}`}>{data.step1.title}</p>
         <p className={`t-body mt-1.5 ${sub}`}>{data.step1.text}</p>
         <div className="mt-4">
           <SymptomTiles tiles={data.symptomTiles} selectedId={selectedTileId} onSelect={setSelectedTileId} isDark={isDark} phone={phone} />
@@ -806,7 +806,7 @@ export default function HomeSec3({ data }) {
         {stage === "question" && selectedCategory ? (
           <div>
             <p className="t-label font-bold uppercase tracking-[0.04em] text-[var(--color-primary)]">{data.step1.label}</p>
-            <h3 className={`mt-2 t-h5 ${strong}`}>{selectedCategory.question}</h3>
+            <p className={`mt-2 t-h5 ${strong}`}>{selectedCategory.question}</p>
             <p className={`mt-2 t-label leading-[1.45] ${soft}`}>Choose the closest symptom cluster. We route high-risk faults into safety advice before showing cost maths.</p>
             <div className="mt-5 grid gap-3">
               {selectedCategory.answers.map((answer) => (
@@ -824,7 +824,7 @@ export default function HomeSec3({ data }) {
         {stage === "vehicle" ? (
           <div>
             <p className="t-label font-bold uppercase tracking-[0.04em] text-[var(--color-primary)]">Step 2 of 3</p>
-            <h3 className={`mt-2 t-h5 ${strong}`}>Tell us about your vehicle</h3>
+            <p className={`mt-2 t-h5 ${strong}`}>Tell us about your vehicle</p>
             <div className="mt-5">
               <p className={`t-label font-bold uppercase tracking-[0.04em] ${sub}`}>Vehicle age</p>
               <div className="mt-3 flex flex-wrap gap-2">
@@ -883,7 +883,7 @@ export default function HomeSec3({ data }) {
         {stage === "engine" ? (
           <div>
             <p className="t-label font-bold uppercase tracking-[0.04em] text-[var(--color-primary)]">Step 3 of 3</p>
-            <h3 className={`mt-2 t-h5 ${strong}`}>Which replacement path are you comparing?</h3>
+            <p className={`mt-2 t-h5 ${strong}`}>Which replacement path are you comparing?</p>
             <p className={`mt-2 t-label leading-[1.45] ${soft}`}>This changes the replacement range and therefore the verdict. Reconditioned stays the conservative baseline.</p>
             <div className="mt-5 grid gap-3 md:grid-cols-3">
               {calculator.engineOptions.map((option) => (
@@ -913,7 +913,7 @@ export default function HomeSec3({ data }) {
         {stage === "results" && selectedDiagnosis && verdict ? (
           <div>
             <div className="mb-5 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
-              <h3 className={`t-h5 ${strong}`}>Diagnosis, cost range, and ownership verdict</h3>
+              <p className={`t-h5 ${strong}`}>Diagnosis, cost range, and ownership verdict</p>
               <button type="button" onClick={resetFlow} className={`t-label font-semibold ${sub}`}>
                 Start again
               </button>
@@ -980,9 +980,9 @@ export default function HomeSec3({ data }) {
 
       {/* ---------- Phone (same layout in both themes; only colours change) ---------- */}
       <div className="relative px-4 pb-8 pt-8 md:hidden">
-        <h2 className={`t-h2 relative ${strong}`}>
+        <p className={`t-h2 relative ${strong}`}>
           Diagnose Your <span className="heading-accent">BMW</span> Engine Problem
-        </h2>
+        </p>
         <p className={`t-body relative mt-3 ${soft}`}>{data.subHeadline}</p>
         {/* Reference: the car sits right under the copy, on the right, bleeding off the edge. */}
         <div aria-hidden="true" className="pointer-events-none relative -mr-4 mt-2 ml-auto h-[150px] w-[72%] overflow-hidden [mask-image:linear-gradient(90deg,transparent_0%,black_22%)]">

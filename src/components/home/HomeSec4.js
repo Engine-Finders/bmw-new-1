@@ -7,7 +7,7 @@ import { useTheme } from "@/components/shared/themeProvider";
 import BrandIcon from "@/components/home/brandIcon";
 import VerdictGlyph from "@/components/home/VerdictGlyph";
 
-// BMW Ownership Rankings — ranking / winner / why / verdict table under a grille header.
+// BMW Ownership Rankings - ranking / winner / why / verdict table under a grille header.
 // Phone adds the trust strip above the table and the "Honest, Data-Backed" card below it.
 
 const TONE = { red: "bg-[#e3262b]", orange: "bg-[#f5a20b]" };
@@ -127,7 +127,7 @@ export default function HomeSec4({ data }) {
 
       {/* Phone */}
       <div className="relative px-4 pb-8 pt-8 md:hidden">
-        <h2 className={`t-h2 ${strong}`}>BMW Ownership Rankings</h2>
+        <p className={`t-h2 ${strong}`}>BMW Ownership Rankings</p>
         <p className={`t-body mt-3 ${soft}`}>{data.subHeadline}</p>
         <div className="mt-4">
           <TrustStrip items={data.trustStrip} isDark={isDark} />

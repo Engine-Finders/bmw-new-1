@@ -1,6 +1,6 @@
 {
   "h2": "The BMW <span class=\"heading-accent\">Failure Database</span>",
-  "subHeadline": "A permanent, categorised reference — not symptom-chasing blog posts. Every entry links to a full breakdown of symptoms, root cause, mileage window, repair cost, and replacement cost.",
+  "subHeadline": "A permanent, categorised reference - not symptom-chasing blog posts. Every entry links to a full breakdown of symptoms, root cause, mileage window, repair cost, and replacement cost.",
   "headerImage": {
     "light": "/home-image/sec09/engine-bay-light.webp",
     "dark": "/home-image/sec09/engine-bay-dark.webp",
@@ -40,7 +40,7 @@
       {
         "id": 2,
         "title": "B58 Coolant Leaks",
-        "description": "The modern straight-six's primary weak point — expansion tank, water pump, and plastic fittings all degrade over time. Well-understood, non-catastrophic if caught early. 540 enquiries in 2025 [BMW-VERIFIED]. £400–£800 repair [BMW-QUOTE].",
+        "description": "The modern straight-six's primary weak point - expansion tank, water pump, and plastic fittings all degrade over time. Well-understood, non-catastrophic if caught early. 540 enquiries in 2025 [BMW-VERIFIED]. £400–£800 repair [BMW-QUOTE].",
         "severity": {
           "label": "Monitor",
           "type": "monitor"
@@ -53,8 +53,8 @@
           "src": "/parts/coolant-expansion-tank.webp",
           "alt": "Coolant expansion tank"
         },
-        "descriptionDesktop": "The modern straight-six's primary weak point — expansion tank, water pump, and\nplastic fittings all degrade over time. Well-understood, non-catastrophic if caught early.\n540 enquiries in 2025 [BMW-VERIFIED]. £400–£800 repair [BMW-QUOTE].",
-        "descriptionPhone": "The modern straight-six's primary weak point — expansion tank,\nwater pump, and plastic fittings all degrade over time. Well-\nunderstood, non-catastrophic if caught early. 540 enquiries in 2025\n[BMW-VERIFIED]. £400–£800 repair [BMW-QUOTE]."
+        "descriptionDesktop": "The modern straight-six's primary weak point - expansion tank, water pump, and\nplastic fittings all degrade over time. Well-understood, non-catastrophic if caught early.\n540 enquiries in 2025 [BMW-VERIFIED]. £400–£800 repair [BMW-QUOTE].",
+        "descriptionPhone": "The modern straight-six's primary weak point - expansion tank,\nwater pump, and plastic fittings all degrade over time. Well-\nunderstood, non-catastrophic if caught early. 540 enquiries in 2025\n[BMW-VERIFIED]. £400–£800 repair [BMW-QUOTE]."
       },
       {
         "id": 3,
@@ -130,7 +130,7 @@
       {
         "id": 1,
         "title": "Cold-Start Rattle",
-        "description": "The N47's signature symptom — 1–2 seconds of chain noise on start-up. The earlier it's caught, the cheaper the fix. Ignored, it becomes a £3,200–£5,500 recon [BMW-QUOTE].",
+        "description": "The N47's signature symptom - 1–2 seconds of chain noise on start-up. The earlier it's caught, the cheaper the fix. Ignored, it becomes a £3,200–£5,500 recon [BMW-QUOTE].",
         "severity": {
           "label": "Immediate",
           "type": "immediate"
@@ -143,13 +143,13 @@
           "src": "/parts/camshaft.webp",
           "alt": "Camshaft and timing drive"
         },
-        "descriptionDesktop": "The N47's signature symptom — 1–2 seconds of chain noise on start-up.\nThe earlier it's caught, the cheaper the fix. Ignored, it becomes a\n£3,200–£5,500 recon [BMW-QUOTE].",
-        "descriptionPhone": "The N47's signature symptom — 1–2 seconds of chain noise on start-up.\nThe earlier it's caught, the cheaper the fix. Ignored, it becomes a\n£3,200–£5,500 recon [BMW-QUOTE]."
+        "descriptionDesktop": "The N47's signature symptom - 1–2 seconds of chain noise on start-up.\nThe earlier it's caught, the cheaper the fix. Ignored, it becomes a\n£3,200–£5,500 recon [BMW-QUOTE].",
+        "descriptionPhone": "The N47's signature symptom - 1–2 seconds of chain noise on start-up.\nThe earlier it's caught, the cheaper the fix. Ignored, it becomes a\n£3,200–£5,500 recon [BMW-QUOTE]."
       },
       {
         "id": 2,
         "title": "Loss of Power / Limp Mode",
-        "description": "Multiple causes — turbo failure, EGR clogging, DPF blockage, or HPFP failure on N54/N55. The N54's HPFP is the defining petrol issue.",
+        "description": "Multiple causes - turbo failure, EGR clogging, DPF blockage, or HPFP failure on N54/N55. The N54's HPFP is the defining petrol issue.",
         "severity": {
           "label": "Monitor",
           "type": "monitor"
@@ -162,13 +162,13 @@
           "src": "/parts/high-pressure-fuel-pump.webp",
           "alt": "High-pressure fuel pump"
         },
-        "descriptionDesktop": "Multiple causes — turbo failure, EGR clogging, DPF blockage, or HPFP\nfailure on N54/N55. The N54's HPFP is the defining petrol issue.",
-        "descriptionPhone": "Multiple causes — turbo failure, EGR clogging, DPF blockage, or\nHPFP failure on N54/N55. The N54's HPFP is the defining petrol issue."
+        "descriptionDesktop": "Multiple causes - turbo failure, EGR clogging, DPF blockage, or HPFP\nfailure on N54/N55. The N54's HPFP is the defining petrol issue.",
+        "descriptionPhone": "Multiple causes - turbo failure, EGR clogging, DPF blockage, or\nHPFP failure on N54/N55. The N54's HPFP is the defining petrol issue."
       },
       {
         "id": 3,
         "title": "Coolant Loss (No Visible Leak)",
-        "description": "B58/N63 expansion tank or water pump failure — can lead to overheating if ignored. The B58's most common failure, costing £400–£800 to repair [BMW-QUOTE].",
+        "description": "B58/N63 expansion tank or water pump failure - can lead to overheating if ignored. The B58's most common failure, costing £400–£800 to repair [BMW-QUOTE].",
         "severity": {
           "label": "Monitor",
           "type": "monitor"
@@ -181,13 +181,13 @@
           "src": "/parts/water-pump.webp",
           "alt": "Water pump"
         },
-        "descriptionDesktop": "B58/N63 expansion tank or water pump failure — can lead to overheating\nif ignored. The B58's most common failure, costing £400–£800 to repair [BMW-QUOTE].",
-        "descriptionPhone": "B58/N63 expansion tank or water pump failure — can lead to\noverheating if ignored. The B58's most common failure, costing\n£400–£800 to repair [BMW-QUOTE]."
+        "descriptionDesktop": "B58/N63 expansion tank or water pump failure - can lead to overheating\nif ignored. The B58's most common failure, costing £400–£800 to repair [BMW-QUOTE].",
+        "descriptionPhone": "B58/N63 expansion tank or water pump failure - can lead to\noverheating if ignored. The B58's most common failure, costing\n£400–£800 to repair [BMW-QUOTE]."
       },
       {
         "id": 4,
         "title": "Blue Smoke on Start-Up",
-        "description": "N63 valve stem seal failure — oil seeping past seals into the combustion chamber. The telltale sign of the \"N63 nightmare.\"",
+        "description": "N63 valve stem seal failure - oil seeping past seals into the combustion chamber. The telltale sign of the \"N63 nightmare.\"",
         "severity": {
           "label": "Catastrophic",
           "type": "catastrophic"
@@ -200,8 +200,8 @@
           "src": "/parts/cylinder-head.webp",
           "alt": "Cylinder head (valve stem seals)"
         },
-        "descriptionDesktop": "N63 valve stem seal failure — oil seeping past seals into the combustion chamber.\nThe telltale sign of the \"N63 nightmare.\"",
-        "descriptionPhone": "N63 valve stem seal failure — oil seeping past seals into the\ncombustion chamber. The telltale sign of the \"N63 nightmare.\""
+        "descriptionDesktop": "N63 valve stem seal failure - oil seeping past seals into the combustion chamber.\nThe telltale sign of the \"N63 nightmare.\"",
+        "descriptionPhone": "N63 valve stem seal failure - oil seeping past seals into the\ncombustion chamber. The telltale sign of the \"N63 nightmare.\""
       }
     ]
   },
@@ -227,7 +227,7 @@
       "text": "plan at next service"
     }
   ],
-  "subHeadlineDesktop": "A permanent, categorised reference — not symptom-chasing blog posts.\nEvery entry links to a full breakdown of symptoms, root cause, mileage window,\nrepair cost, and replacement cost.",
-  "subHeadlinePhone": "A permanent, categorised reference — not symptom-chasing\nblog posts. Every entry links to a full breakdown of symptoms,\nroot cause, mileage window, repair cost, and replacement cost.",
+  "subHeadlineDesktop": "A permanent, categorised reference - not symptom-chasing blog posts.\nEvery entry links to a full breakdown of symptoms, root cause, mileage window,\nrepair cost, and replacement cost.",
+  "subHeadlinePhone": "A permanent, categorised reference - not symptom-chasing\nblog posts. Every entry links to a full breakdown of symptoms,\nroot cause, mileage window, repair cost, and replacement cost.",
   "h2Phone": "<span class=\"block\">The BMW</span><span class=\"block heading-accent\">Failure Database</span>"
 }

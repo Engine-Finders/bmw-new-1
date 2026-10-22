@@ -19,16 +19,16 @@ function answerHtml(value = "") {
     .trim();
 }
 
-function Title({ lines, className }) {
+function Title({ lines, className, as: Tag = "h2" }) {
   return (
-    <h2 className={className}>
+    <Tag className={className}>
       {lines.map((line, index) => (
         <span key={line}>
           {index ? <br /> : null}
           <span dangerouslySetInnerHTML={{ __html: line }} />
         </span>
       ))}
-    </h2>
+    </Tag>
   );
 }
 
@@ -92,7 +92,7 @@ function FAQReference({ data }) {
         <div className={s.panel}>
           <div className={s.card}>
             <Title lines={data.titleLines || [data.h2]} className={`${s.title} ${s.deskOnly}`} />
-            <Title lines={data.titleLinesMobile || data.titleLines || [data.h2]} className={`${s.title} ${s.phoneOnly}`} />
+            <Title as="p" lines={data.titleLinesMobile || data.titleLines || [data.h2]} className={`${s.title} ${s.phoneOnly}`} />
             <div className={s.lists}>
               {[items.slice(0, half), items.slice(half)].map((col, index) => (
                 <div key={index} className={s.col}>

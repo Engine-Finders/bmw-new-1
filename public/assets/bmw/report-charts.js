@@ -1,7 +1,7 @@
 /* ============================================================
-   BMW RELIABILITY INDEX 2026 — CHART CONFIGURATIONS
+   BMW RELIABILITY INDEX 2026 - CHART CONFIGURATIONS
    Chart.js itself is loaded via CDN in the page <head>
-   (https://cdn.jsdelivr.net/npm/chart.js) — this file only
+   (https://cdn.jsdelivr.net/npm/chart.js) - this file only
    contains this report's specific chart configs and data
    binding. Lives in assets/bmw/ alongside style.css/effects.js.
    ============================================================ */
@@ -129,13 +129,13 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 /* ============================================================
-   BMW ENGINE FAILURE TRENDS REPORT 2026 — chart configs
+   BMW ENGINE FAILURE TRENDS REPORT 2026 - chart configs
    ============================================================ */
 document.addEventListener("DOMContentLoaded", function () {
   if (typeof Chart === "undefined") return;
   var BRAND_BLUE = "#0166B1", GOLD = "#C8A24C", RED = "#C0392B", GREY = "#8E9092";
 
-  /* Failure type distribution — doughnut */
+  /* Failure type distribution - doughnut */
   var failTypeCtx = document.getElementById("failureTypeChart");
   if (failTypeCtx) {
     new Chart(failTypeCtx, {
@@ -152,7 +152,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  /* Mileage-at-failure bands — floating horizontal bar */
+  /* Mileage-at-failure bands - floating horizontal bar */
   var mileageCtx = document.getElementById("mileageBandChart");
   if (mileageCtx) {
     new Chart(mileageCtx, {
@@ -180,13 +180,13 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 /* ============================================================
-   BMW ENGINE COST INDEX 2026 — chart configs
+   BMW ENGINE COST INDEX 2026 - chart configs
    ============================================================ */
 document.addEventListener("DOMContentLoaded", function () {
   if (typeof Chart === "undefined") return;
   var BRAND_BLUE = "#0166B1", GOLD = "#C8A24C", GREY = "#C7CBD1";
 
-  /* Cost range by engine — floating bar (used low -> rebuilt high) */
+  /* Cost range by engine - floating bar (used low -> rebuilt high) */
   var costRangeCtx = document.getElementById("costRangeChart");
   if (costRangeCtx) {
     new Chart(costRangeCtx, {
@@ -236,7 +236,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 /* ============================================================
-   REPORT 2 ADDITIONS — Fuel Type Split, Severity Matrix
+   REPORT 2 ADDITIONS - Fuel Type Split, Severity Matrix
    ============================================================ */
 document.addEventListener("DOMContentLoaded", function () {
   if (typeof Chart === "undefined") return;
@@ -256,7 +256,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 /* ============================================================
-   REPORT 3 ADDITIONS — Cost Inflation, Mileage Bands
+   REPORT 3 ADDITIONS - Cost Inflation, Mileage Bands
    ============================================================ */
 document.addEventListener("DOMContentLoaded", function () {
   if (typeof Chart === "undefined") return;

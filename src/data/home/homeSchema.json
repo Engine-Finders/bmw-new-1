@@ -56,7 +56,7 @@
       "@type": "WebPage",
       "@id": "https://bmwengines.uk/#webpage",
       "url": "https://bmwengines.uk/",
-      "name": "BMW Engines UK — The Complete Ownership Guide",
+      "name": "BMW Engines UK - The Complete Ownership Guide",
       "description": "The UK's Most Trusted BMW Ownership Guide. Reliability rankings, real failure data, honest repair-vs-replace economics for every BMW model ever sold in the UK. Powered by 24,650+ real UK enquiries.",
       "isPartOf": {
         "@id": "https://bmwengines.uk/#website"
@@ -82,7 +82,7 @@
       "primaryImageOfPage": {
         "@type": "ImageObject",
         "url": "https://bmwengines.uk/images/bmw-homepage-hero.jpg",
-        "caption": "BMW Engines UK — Complete Ownership Guide",
+        "caption": "BMW Engines UK - Complete Ownership Guide",
         "width": 1200,
         "height": 630
       }
@@ -91,7 +91,7 @@
       "@type": "WebApplication",
       "@id": "https://bmwengines.uk/#diagnostic-calculator",
       "name": "BMW Engine Diagnostic Calculator",
-      "description": "Answer a few questions about your BMW symptoms — we'll match you against 15+ known failure patterns, show you the likely diagnosis, OEM part references, and an honest repair vs. replace cost estimate.",
+      "description": "Answer a few questions about your BMW symptoms - we'll match you against 15+ known failure patterns, show you the likely diagnosis, OEM part references, and an honest repair vs. replace cost estimate.",
       "url": "https://bmwengines.uk/#diagnostic-calculator",
       "applicationCategory": "Automotive Diagnostic Tool",
       "operatingSystem": "All",
@@ -564,7 +564,7 @@
       "@type": "ItemList",
       "@id": "https://bmwengines.uk/#ownership-rankings",
       "name": "BMW Ownership Rankings",
-      "description": "The verdicts BMW owners actually want — backed by real UK enquiry and failure data.",
+      "description": "The verdicts BMW owners actually want - backed by real UK enquiry and failure data.",
       "itemListElement": [
         {
           "@type": "ListItem",
@@ -572,7 +572,7 @@
           "item": {
             "@type": "Thing",
             "name": "Most Reliable Engine",
-            "description": "B58B30 — 540 enquiries in 2025, mostly due-diligence not failure."
+            "description": "B58B30 - 540 enquiries in 2025, mostly due-diligence not failure."
           }
         },
         {
@@ -581,7 +581,7 @@
           "item": {
             "@type": "Thing",
             "name": "Most Reliable Model (Modern)",
-            "description": "3 Series G20 — 190 enquiries in 2025, predominantly pre-purchase research."
+            "description": "3 Series G20 - 190 enquiries in 2025, predominantly pre-purchase research."
           }
         },
         {
@@ -590,7 +590,7 @@
           "item": {
             "@type": "Thing",
             "name": "Best Used Buy",
-            "description": "F30 LCI (2016+) with B47D20A — post-chain-revision, modern electronics, depreciated values."
+            "description": "F30 LCI (2016+) with B47D20A - post-chain-revision, modern electronics, depreciated values."
           }
         },
         {
@@ -599,7 +599,7 @@
           "item": {
             "@type": "Thing",
             "name": "Most Expensive Failure",
-            "description": "N63B44 Valve Stem Seals — £3,000–£6,000 repair or £6,000–£10,000 replacement."
+            "description": "N63B44 Valve Stem Seals - £3,000–£6,000 repair or £6,000–£10,000 replacement."
           }
         },
         {
@@ -608,7 +608,7 @@
           "item": {
             "@type": "Thing",
             "name": "Safest BMW to Buy Used",
-            "description": "5 Series G30 (2017–2023) — £14,000–£30,000 value against £2,800–£8,000 recon cost."
+            "description": "5 Series G30 (2017–2023) - £14,000–£30,000 value against £2,800–£8,000 recon cost."
           }
         },
         {
@@ -617,7 +617,7 @@
           "item": {
             "@type": "Thing",
             "name": "Highest Risk Purchase",
-            "description": "E90 N47D20C (pre-2013, no chain history) — £2,500–£7,500 value against £3,200–£5,500 recon cost."
+            "description": "E90 N47D20C (pre-2013, no chain history) - £2,500–£7,500 value against £3,200–£5,500 recon cost."
           }
         },
         {
@@ -626,7 +626,7 @@
           "item": {
             "@type": "Thing",
             "name": "Best Family BMW",
-            "description": "X5 G05 (2018–present) — B57/B58 reliability, 650L boot, 7-seat option."
+            "description": "X5 G05 (2018–present) - B57/B58 reliability, 650L boot, 7-seat option."
           }
         },
         {
@@ -635,7 +635,7 @@
           "item": {
             "@type": "Thing",
             "name": "Best Long-Term Keeper",
-            "description": "E46 330i (M54) — bulletproof naturally-aspirated straight-six."
+            "description": "E46 330i (M54) - bulletproof naturally-aspirated straight-six."
           }
         }
       ]
@@ -724,7 +724,7 @@
           "item": {
             "@type": "Thing",
             "name": "Blue Smoke on Start-Up",
-            "description": "N63 valve stem seal failure — oil seeping past seals into combustion chamber."
+            "description": "N63 valve stem seal failure - oil seeping past seals into combustion chamber."
           }
         }
       ]
@@ -844,7 +844,7 @@
           "name": "Which BMW engine is the most reliable?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "The B58B30 is the most dependable modern BMW engine in our dataset — just 540 enquiries in 2025, mostly due-diligence not failures. From the older era, the M57D30 turbodiesel has the same bulletproof reputation. Both share one thing: regular oil changes are non-negotiable."
+            "text": "The B58B30 is the most dependable modern BMW engine in our dataset - just 540 enquiries in 2025, mostly due-diligence not failures. From the older era, the M57D30 turbodiesel has the same bulletproof reputation. Both share one thing: regular oil changes are non-negotiable."
           }
         },
         {
@@ -852,7 +852,7 @@
           "name": "What is the most common BMW engine failure?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "The N47 timing chain stretch is our #1 enquiry driver — 1,450 enquiries in 2025. Cold-start rattle from the rear of the engine is the early warning; ignored, chain slip means a full engine replacement at £3,200–£5,500 recon."
+            "text": "The N47 timing chain stretch is our #1 enquiry driver - 1,450 enquiries in 2025. Cold-start rattle from the rear of the engine is the early warning; ignored, chain slip means a full engine replacement at £3,200–£5,500 recon."
           }
         },
         {
@@ -860,7 +860,7 @@
           "name": "Is the BMW 3 Series reliable?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "It depends entirely on the generation. The N47 era (E90/pre-2016 F30) has a reputation for timing chain issues — but a 2016+ F30 LCI with the B47 diesel is genuinely reliable. The G20 with the B58 is the safest 3 Series ever made."
+            "text": "It depends entirely on the generation. The N47 era (E90/pre-2016 F30) has a reputation for timing chain issues - but a 2016+ F30 LCI with the B47 diesel is genuinely reliable. The G20 with the B58 is the safest 3 Series ever made."
           }
         },
         {
@@ -868,7 +868,7 @@
           "name": "Which BMW engine should I avoid?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "No engine outright — but a pre-2016 N47D20C without a documented timing-chain replacement is the one purchase we consistently advise against. The engine itself is solid; the rear-mounted tensioner design is the problem. The N63's hot-vee architecture is also a high-cost risk."
+            "text": "No engine outright - but a pre-2016 N47D20C without a documented timing-chain replacement is the one purchase we consistently advise against. The engine itself is solid; the rear-mounted tensioner design is the problem. The N63's hot-vee architecture is also a high-cost risk."
           }
         },
         {
@@ -884,7 +884,7 @@
           "name": "Is it worth replacing a BMW engine?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Depends entirely on the car's value. Against a £35,000 G20, a £5,000 B58 recon is just 14% of the car's value — safe. Against a £4,500 E90, a £4,000 N47 recon is 89% — walk away. Our 70% BMW threshold is the line."
+            "text": "Depends entirely on the car's value. Against a £35,000 G20, a £5,000 B58 recon is just 14% of the car's value - safe. Against a £4,500 E90, a £4,000 N47 recon is 89% - walk away. Our 70% BMW threshold is the line."
           }
         },
         {
@@ -892,7 +892,7 @@
           "name": "How long do BMW engines last?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "A well-maintained BMW diesel (M57, N57, B47, B57) can exceed 200,000 miles. The B58 petrol is also proving durable — with proper servicing, 150,000+ miles is realistic. The N47's chain is the limiting factor, not the engine itself."
+            "text": "A well-maintained BMW diesel (M57, N57, B47, B57) can exceed 200,000 miles. The B58 petrol is also proving durable - with proper servicing, 150,000+ miles is realistic. The N47's chain is the limiting factor, not the engine itself."
           }
         },
         {
@@ -900,7 +900,7 @@
           "name": "Which BMW generation should I buy?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "2016+ F30 LCI with the B47 diesel or B48 petrol. You get the facelift architecture, revised chain hardware, and electronics update — plus depreciation has already done most of its work. For petrol performance, a G20 M340i is the sweet spot."
+            "text": "2016+ F30 LCI with the B47 diesel or B48 petrol. You get the facelift architecture, revised chain hardware, and electronics update - plus depreciation has already done most of its work. For petrol performance, a G20 M340i is the sweet spot."
           }
         },
         {

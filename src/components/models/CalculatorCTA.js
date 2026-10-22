@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useTheme } from "@/components/shared/themeProvider";
 
-// "Can I Repair My … Engine — or Should I Replace It?" (model page). Built to the reference:
+// "Can I Repair My … Engine - or Should I Replace It?" (model page). Built to the reference:
 // heading, two-line intro and the "smarter way" callout beside the car, two path cards, and the
 // navy "Stop guessing" bar. Phones stack the same blocks; path cards put the icon beside the heading.
 
@@ -155,10 +155,10 @@ function PathCard({ card, C, isDark }) {
 // Model JSONs without the reference fields get the same blocks built from h2 / intro / paths.
 function withDefaults(data) {
   if (data.pathCards) return data;
-  const h2 = String(data.h2 || "").replace(/\s+-\s+/g, " — ");
+  const h2 = String(data.h2 || "").replace(/\s+-\s+/g, " - ");
   const model = h2.match(/My\s+(.+?)\s+Engine/i)?.[1] || "BMW";
   const marker = h2.indexOf("or Should I Replace It?");
-  const sentences = String(data.intro || "").replace(/\s+-\s+/g, " — ").match(/[^.!?]+[.!?]+/g) || [String(data.intro || "")];
+  const sentences = String(data.intro || "").replace(/\s+-\s+/g, " - ").match(/[^.!?]+[.!?]+/g) || [String(data.intro || "")];
   const href = data.paths?.[0]?.href || "/tools/diagnostic-wizard";
   return {
     ...data,
@@ -192,7 +192,7 @@ function withDefaults(data) {
     ],
     banner: {
       title: "Stop guessing. Get the right answer.",
-      text: "Our calculator compares real repair and replacement costs against your car’s value — so you know the financially smarter move.",
+      text: "Our calculator compares real repair and replacement costs against your car’s value - so you know the financially smarter move.",
       cta: { label: "Start Your Verdict Now", href },
     },
   };

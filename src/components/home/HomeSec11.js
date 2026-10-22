@@ -5,7 +5,7 @@ import { TABLE_HEADER_BG, TABLE_HEADER_TEXT } from "@/components/shared/tableHea
 import { useTheme } from "@/components/shared/themeProvider";
 import { MobileCard, MobileHeading, MobileLabel, MobileLead, MobileSection } from "@/components/home/mobileKit";
 
-// BMW Engine History — era timeline table (era / key engines / iconic models) with a key takeaway.
+// BMW Engine History - era timeline table (era / key engines / iconic models) with a key takeaway.
 
 function CarGlyph({ style }) {
   return (
@@ -133,7 +133,7 @@ function Phone({ data, isDark }) {
               <CarGlyph style={{ width: 22, height: 18 }} />
             </span>
             <MobileCard C={C} className="px-4 py-4">
-              <h3 className="text-[22px] font-bold" style={{ color: C.text }}>{e.era}</h3>
+              <p className="text-[22px] font-bold" style={{ color: C.text }}>{e.era}</p>
               <div className="mt-3 border-t pt-3" style={{ borderColor: C.line }}>
                 <MobileLabel color={C.label}>{engLabel}</MobileLabel>
                 <div className="mt-2 flex items-center gap-3">

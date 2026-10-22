@@ -210,7 +210,7 @@ function PullQuote({ quote, isDark }) {
         </span>
         <p className={s.quoteLabel}>{quote.label || "EDITORIAL PULL-QUOTE"}</p>
         <h3 className={`${s.quoteTitle} ${s.deskBlock}`}>{oneLine(quote.title)}</h3>
-        <h3 className={`${s.quoteTitle} ${s.phoneBlock}`} dangerouslySetInnerHTML={{ __html: spaced(quote.titleMobile || quote.title) }} />
+        <p className={`${s.quoteTitle} ${s.phoneBlock}`} dangerouslySetInnerHTML={{ __html: spaced(quote.titleMobile || quote.title) }} />
         <p className={`${s.quoteText} ${s.deskBlock}`} dangerouslySetInnerHTML={{ __html: `“${spaced(quote.quote)}”` }} />
         <p className={`${s.quoteText} ${s.phoneBlock}`}>“{oneLine(quote.quote)}”</p>
       </div>
@@ -245,8 +245,8 @@ function MarketIntelligenceReference({ data, quote }) {
         <div className={s.panel}>
           <div className={s.top}>
             <h2 className={s.title}>
-              {/* keep the dash on the first line (no orphaned "—") */}
-              <span>{String(line1).replace(/\s+([—–-])\s*$/, "\u00a0$1")}</span>
+              {/* keep the dash on the first line (no orphaned "-") */}
+              <span>{String(line1).replace(/\s+([-–-])\s*$/, "\u00a0$1")}</span>
               <br />
               <span className={s.titleLine2} dangerouslySetInnerHTML={{ __html: line2 }} />
             </h2>

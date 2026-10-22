@@ -5,9 +5,10 @@ export function MobileSection({ children, className = "" }) {
   return <div className={`relative mx-auto w-full max-w-[720px] px-4 pb-10 pt-10 lg:hidden ${className}`}>{children}</div>;
 }
 
+/** Visual section title for phone trees. Uses <p> so SEO sees one H2 (desktop), not duplicates. */
 export function MobileHeading({ html, color, accent, className = "" }) {
   return (
-    <h2
+    <p
       className={`text-[32px] font-bold leading-[1.15] tracking-[-0.02em] [&_.heading-accent]:!text-[var(--acc)] ${className}`}
       style={{ color, "--acc": accent }}
       dangerouslySetInnerHTML={{ __html: html }}

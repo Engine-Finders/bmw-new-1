@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useTheme } from "@/components/shared/themeProvider";
 
-// Comparison Hub — six numbered head-to-head cards. Desktop: two columns, photo panel + labels on
+// Comparison Hub - six numbered head-to-head cards. Desktop: two columns, photo panel + labels on
 // the left of each card and the verdict copy on the right, under a G20 front / 5 Series rear pair.
 // Phone: cards stacked (photo, labels, copy) and a "Not sure which is right for you?" card.
 // Measurements follow the 1536px desktop and 390px phone references.
@@ -168,7 +168,7 @@ function Card({ item, isDark, phone = false }) {
           <Options item={item} isDark={isDark} phone />
         </div>
         <div className="px-[17px] pb-[20px] pt-[19px]">
-          <h3 className={`t-h6 ${strong}`}>{item.title}</h3>
+          <p className={`t-h6 ${strong}`}>{item.title}</p>
           <p className={`t-body mt-2.5 ${soft}`}>{item.preview}</p>
           <Link href={item.link.href} className={`mt-4 flex items-center justify-end gap-[10px] pr-[6px] text-[16px] font-medium ${link}`}>
             {item.link.label}
@@ -242,11 +242,11 @@ export default function HomeSec5({ data }) {
 
       {/* Phone */}
       <div className="relative px-4 pb-8 pt-8 md:hidden">
-        <h2 className={`t-h2 ${strong}`}>
-          <span className="block">Comparison Hub —</span>
+        <p className={`t-h2 ${strong}`}>
+          <span className="block">Comparison Hub -</span>
           <span className="heading-accent block">Head-to-Head</span>
           <span className="block">Verdicts</span>
-        </h2>
+        </p>
         <p className={`t-body mt-3 ${soft}`}>{data.subHeadline}</p>
         <div className="mt-[17px] grid gap-[21px]">
           {data.comparisons.map((item) => (

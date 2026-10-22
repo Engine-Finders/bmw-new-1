@@ -417,7 +417,7 @@
 
 /*
  * Phones (section up to 700px wide): at reference scale the copy would be ~7px, so the cards
- * reflow instead — photo, badge, name and stars in a row, the verdict under them at full width —
+ * reflow instead - photo, badge, name and stars in a row, the verdict under them at full width -
  * at sizes that read comfortably on a phone. The reference line breaks are dropped so text wraps.
  */
 @container (max-width: 700px) {

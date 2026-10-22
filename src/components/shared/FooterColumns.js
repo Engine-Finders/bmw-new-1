@@ -65,7 +65,7 @@ export const footerLegal = {
   disclaimer: "Independent editorial content; not affiliated with BMW AG.",
   links: [
     { label: "Privacy Policy", href: "/privacy" },
-    { label: "Terms", href: "/terms" },
+    { label: "Terms and Conditions", href: "/terms" },
     { label: "Cookie Policy", href: "/cookies" },
   ],
 };

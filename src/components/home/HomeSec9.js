@@ -6,7 +6,7 @@ import { TABLE_HEADER_BG, TABLE_HEADER_TEXT } from "@/components/shared/tableHea
 import { useTheme } from "@/components/shared/themeProvider";
 import { MobileCard, MobileHeading, MobileLabel, MobileLead, MobileSection } from "@/components/home/mobileKit";
 
-// The BMW Failure Database — engine failures + warning signs tables with severity and links,
+// The BMW Failure Database - engine failures + warning signs tables with severity and links,
 // under an engine-bay header, closed by the urgency key.
 
 const SEV = { catastrophic: "#f1332e", immediate: "#fd9b0d", monitor: "#fce21b", low: "#39a943" };
@@ -109,7 +109,7 @@ function Desktop({ data, isDark }) {
               <span aria-hidden="true" className="h-3 w-3 shrink-0 rounded-full" style={{ background: SEV[u.type] }} />
               <span>
                 {u.label}
-                <span style={{ color: C.keyMuted }}> — {u.text}</span>
+                <span style={{ color: C.keyMuted }}> - {u.text}</span>
               </span>
             </span>
           ))}
@@ -136,12 +136,12 @@ function Phone({ data, isDark }) {
         const Icon = b.icon === "warning" ? Warn : Gear;
         return (
           <MobileCard key={b.title} C={C} className="mt-6">
-            <h3 className="flex items-center gap-3 border-b px-4 py-3.5 text-[16px] font-bold uppercase tracking-[0.03em]" style={{ color: isDark ? "#ffffff" : "#0b4fe0", borderColor: C.line }}>
+            <p className="flex items-center gap-3 border-b px-4 py-3.5 text-[16px] font-bold uppercase tracking-[0.03em]" style={{ color: isDark ? "#ffffff" : "#0b4fe0", borderColor: C.line }}>
               <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-[6px] bg-[#0b47d8] text-white">
                 <Icon style={{ width: 17, height: 17 }} />
               </span>
               {b.title}
-            </h3>
+            </p>
             <ul>
               {b.rows.map((r) => (
                 <li key={r.id} className="border-b last:border-b-0" style={{ borderColor: C.line }}>
@@ -177,7 +177,7 @@ function Phone({ data, isDark }) {
               <span aria-hidden="true" className="mt-[5px] h-2.5 w-2.5 shrink-0 rounded-full" style={{ background: SEV[u.type] }} />
               <span>
                 <strong className="font-semibold">{u.label}</strong>
-                <span style={{ color: C.keyMuted }}> — {u.text}</span>
+                <span style={{ color: C.keyMuted }}> - {u.text}</span>
               </span>
             </li>
           ))}

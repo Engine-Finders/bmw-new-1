@@ -55,16 +55,16 @@ function Icon({ name, className }) {
   );
 }
 
-function Title({ lines, className }) {
+function Title({ lines, className, as: Tag = "h2" }) {
   return (
-    <h2 className={className}>
+    <Tag className={className}>
       {lines.map((line, index) => (
         <span key={line}>
           {index ? <br /> : null}
           <span dangerouslySetInnerHTML={{ __html: line }} />
         </span>
       ))}
-    </h2>
+    </Tag>
   );
 }
 
@@ -89,7 +89,7 @@ function TrustBlockReference({ data }) {
                 <Image src={isDark ? art.dark : art.light} alt="" fill className={s.artImg} sizes="(min-width: 1024px) 54vw, 1px" />
               </span>
             ) : null}
-            <Title lines={data.titleLinesMobile || data.titleLines || [data.h2]} className={`${s.title} ${s.phoneOnly}`} />
+            <Title as="p" lines={data.titleLinesMobile || data.titleLines || [data.h2]} className={`${s.title} ${s.phoneOnly}`} />
             <Title lines={data.titleLines || [data.h2]} className={`${s.title} ${s.deskOnly}`} />
             <ul className={s.items}>
               {data.items.map((item) => (

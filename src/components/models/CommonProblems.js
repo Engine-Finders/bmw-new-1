@@ -106,7 +106,7 @@ function PhoneCard({ problem }) {
     <article className={s.pCard}>
       <Photo problem={problem} />
       <div className={s.pBody}>
-        <h3 className={s.pTitle}>{problem.issue}</h3>
+        <p className={s.pTitle}>{problem.issue}</p>
         <ClampedText className={s.pDesc} html={problem.description} />
       </div>
       <div className={s.pSide}>

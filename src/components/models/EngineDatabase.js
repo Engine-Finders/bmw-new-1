@@ -138,9 +138,9 @@ function Stars({ value, className }) {
   );
 }
 
-// "BMW 3 Series Engine Codes — The Complete Database" -> "…Codes —" / "The Complete Database"
+// "BMW 3 Series Engine Codes - The Complete Database" -> "…Codes -" / "The Complete Database"
 function splitTitle(title = "") {
-  const match = String(title).match(/^(.*?\s[-–—])\s+(.*)$/);
+  const match = String(title).match(/^(.*?\s[-–-])\s+(.*)$/);
   return match ? { main: match[1], accent: match[2] } : { main: String(title), accent: "" };
 }
 
@@ -150,14 +150,14 @@ function splitCost(value = "") {
   return match ? { cost: match[1], tag: `[${match[2]}]` } : { cost: String(value), tag: "" };
 }
 
-// "— (pattern data)" -> dash + italic note
+// "- (pattern data)" -> dash + italic note
 function Enquiries({ value }) {
   const str = String(value);
-  const match = str.match(/^—\s*(\(.*\))$/);
+  const match = str.match(/^-\s*(\(.*\))$/);
   if (match) {
     return (
       <span>
-        — <em className={s.pattern}>{match[1]}</em>
+        - <em className={s.pattern}>{match[1]}</em>
       </span>
     );
   }
@@ -301,7 +301,7 @@ function PhoneDatabase({ mobile, engines }) {
           <Icon name="chevron" className={s.selectChevron} />
           <select value={filters.sort} onChange={set("sort")} aria-label={f.sortLabel}>
             <option value="listed">{f.sortValue}</option>
-            <option value="enquiries">{f.sortValue} — highest first</option>
+            <option value="enquiries">{f.sortValue} - highest first</option>
             <option value="code">Engine code</option>
           </select>
         </label>
@@ -400,11 +400,11 @@ function EngineDatabaseReference({ data }) {
               <p className={s.copy} dangerouslySetInnerHTML={{ __html: spaced(data.subHeadline) }} />
             </div>
             <div className={`${s.head} ${s.phoneOnly}`}>
-              <h2 className={s.title}>
+              <p className={s.title}>
                 <span>{mobileTitle.main}</span>
                 <br />
                 <span className={s.accent}>{mobileTitle.accent}</span>
-              </h2>
+              </p>
               <p className={s.copy} dangerouslySetInnerHTML={{ __html: spaced(mobile.subHeadline || data.subHeadline) }} />
             </div>
 

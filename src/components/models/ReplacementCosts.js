@@ -118,7 +118,7 @@ function ReplacementCostsReference({ data }) {
   const [tab, setTab] = useState(0);
   const isDark = theme === "dark";
   const gens = data.generations || [];
-  const title = String(data.h2).match(/^(.*?\s[-–—])\s+(.*)$/) || [null, data.h2, ""];
+  const title = String(data.h2).match(/^(.*?\s[-–-])\s+(.*)$/) || [null, data.h2, ""];
   const active = gens[tab] || gens[0];
 
   return (
@@ -128,7 +128,7 @@ function ReplacementCostsReference({ data }) {
           <div className={s.top}>
             <div className={s.head}>
               <h2 className={s.title}>
-                <span dangerouslySetInnerHTML={{ __html: String(title[1]).replace(/\s([-–—])$/, "\u00a0$1") }} />
+                <span dangerouslySetInnerHTML={{ __html: String(title[1]).replace(/\s([-–-])$/, "\u00a0$1") }} />
                 <br />
                 <span className={s.accent}>{title[2]}</span>
               </h2>

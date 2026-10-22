@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useTheme } from "@/components/shared/themeProvider";
 
-// BMW Knowledge Centres — eight numbered engine cards (4 × 2 on desktop, stacked on phones)
+// BMW Knowledge Centres - eight numbered engine cards (4 × 2 on desktop, stacked on phones)
 // under a G30 front view, closed by the M-colour stripe.
 
 function CardIcon({ type, className = "h-6 w-6", style, strokeWidth = 1.9 }) {
@@ -76,7 +76,11 @@ function Card({ c, C, isDark, phone = false }) {
         </span>
       </div>
       <div className="flex flex-1 flex-col px-4 pb-4 pt-8">
-        <h3 className="t-h6" style={{ color: C.title }}>{c.title}</h3>
+        {phone ? (
+          <p className="t-h6" style={{ color: C.title }}>{c.title}</p>
+        ) : (
+          <h3 className="t-h6" style={{ color: C.title }}>{c.title}</h3>
+        )}
         <p className="t-body mt-2" style={{ color: C.desc }}>{c.description}</p>
         <Link href={c.link.href} className="mt-auto flex items-center justify-end gap-2 pt-3 text-[15px] font-semibold" style={{ color: C.blue }}>
           {c.link.label.replace(" →", "")}
@@ -118,7 +122,7 @@ function Phone({ data, isDark }) {
   const C = COL[isDark ? "dark" : "light"];
   return (
     <div className="relative mx-auto w-full max-w-[720px] px-4 pb-10 pt-10 lg:hidden">
-      <h2 className="t-h2 [&_.heading-accent]:text-[var(--acc)]" style={{ color: C.h2, "--acc": isDark ? "#2f7bec" : C.accent }} dangerouslySetInnerHTML={{ __html: data.h2Phone }} />
+      <p className="t-h2 [&_.heading-accent]:text-[var(--acc)]" style={{ color: C.h2, "--acc": isDark ? "#2f7bec" : C.accent }} dangerouslySetInnerHTML={{ __html: data.h2Phone }} />
       <span aria-hidden="true" className="mt-4 block h-[4px] w-14 rounded-[1px]" style={{ background: C.blue }} />
       <p className="t-body mt-4" style={{ color: C.para }}>{data.subHeadline}</p>
 
