@@ -219,6 +219,12 @@ export function generationHeroFor(key) {
   return (key && carImages.generationHeroes[key]) || null;
 }
 
+/** Cut-out photo path of a generation hero's car (the car the generation's scene shows). */
+export function generationHeroCar(key) {
+  const photo = generationHeroFor(key);
+  return photo?.car ? photoPath(photo.car) : null;
+}
+
 /** BMW's own hero background (no car) for the current theme. */
 export function heroBackground(isDark) {
   return isDark ? carImages.background.dark : carImages.background.light;

@@ -1,159 +1,197 @@
-"use client";
+import Link from "next/link";
+import VIcon from "./VariantIcons";
+import { Tabs } from "./VariantToggles";
+import { Rich, TONE_VAR, byKeyword, dash, fill, pageValues, plain, stripMarker, ui, urgencyTone } from "./variantUi";
 
-import { useState } from "react";
-import { useTheme } from "@/components/shared/themeProvider";
-import MStripe from "@/components/reusableComponents/MStripe";
-import GenIcon from "../generation/GenIcons";
-import { variantSectionBg, VariantSectionHeading } from "./variantSection";
+const copy = ui.commonProblems;
+const ROWS = ["symptoms", "typicalMileage", "repairCost", "replacementCost"];
 
-const ACCENT_BY_INDEX = ["#e03232", "#da7a12", "#6b6b68"];
-const URGENCY_TONE = {
-  "🔴": { light: "text-[#db2e2e] bg-[#fff0f0]", dark: "text-[#ff8b90] bg-[rgba(255,45,53,0.15)]" },
-  "🟠": { light: "text-[#da7a12] bg-[#fff5ea]", dark: "text-[#ffb66a] bg-[rgba(218,122,18,0.15)]" },
-  "🟡": { light: "text-[#a3860f] bg-[#fffbe6]", dark: "text-[#e6c94d] bg-[rgba(214,180,20,0.15)]" },
-};
-
-// 🔴 / 🟠 / 🟡 urgency -> client icon (GenIcon maps the emoji); no urgency reads as 🟠.
-function urgencyIcon(problem) {
-  return problem.urgency?.icon || "🟠";
+// "N47 Rear Timing Chain Failure (E90, early F30)" -> name + bracketed detail.
+function splitTitle(title = "") {
+  const match = String(title).match(/^(.*?)\s*(\([^)]*\))\s*$/);
+  return match ? { name: match[1], detail: match[2] } : { name: String(title), detail: "" };
 }
 
-function shortTitle(title = "") {
-  const beforeParen = title.split(" (")[0];
-  return beforeParen.replace(/^N47 Rear |^BMW /, "");
+function shortName(problem) {
+  const fromList = byKeyword(copy.tabNames, problem.title, "name");
+  if (fromList) return fromList;
+  return plain(splitTitle(dash(problem.title)).name).split(" — ")[0].split(" ").slice(0, 2).join(" ");
 }
 
-function ProblemDetail({ problem, index, isDark }) {
-  const accent = ACCENT_BY_INDEX[index % ACCENT_BY_INDEX.length];
-  const urgencyTone = URGENCY_TONE[problem.urgency?.icon] || URGENCY_TONE["🟠"];
-  const urgencyClass = isDark ? urgencyTone.dark : urgencyTone.light;
-
+function ToneCircle({ tone, icon, className = "h-12 w-12" }) {
   return (
-    <div className="glass-panel flex h-full flex-col gap-3 overflow-hidden rounded-md p-4" style={{ borderLeft: `4px solid ${accent}` }}>
-      <div className="flex items-start gap-2">
-        <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full text-white" style={{ backgroundColor: accent }}>
-          <GenIcon name={urgencyIcon(problem)} onDark className="h-8 w-8 md:h-6 md:w-6" />
-        </span>
-        <h3 className="min-w-0 text-[0.95rem] font-bold leading-tight text-[var(--color-text)]">
-          {index + 1}. {problem.title}
-        </h3>
-      </div>
-
-      <div className="lg:text-[15px] flex flex-col gap-2 text-[0.8rem] leading-[1.4]">
-        {problem.symptoms ? (
-          <p className="flex items-start gap-1.5 text-[var(--color-text-muted)]">
-            <GenIcon name="symptoms" className="h-7 w-7 md:h-5 md:w-5 shrink-0" />
-            <span>
-              <span className="font-semibold text-[var(--color-text)]">Symptoms: </span>
-              <span dangerouslySetInnerHTML={{ __html: problem.symptoms }} />
-            </span>
-          </p>
-        ) : null}
-        {problem.typicalMileage ? (
-          <p className="flex items-start gap-1.5 text-[var(--color-text-muted)]">
-            <GenIcon name="gauge" className="h-7 w-7 md:h-5 md:w-5 shrink-0" />
-            <span>
-              <span className="font-semibold text-[var(--color-text)]">Typical mileage: </span>
-              {problem.typicalMileage}
-            </span>
-          </p>
-        ) : null}
-        {problem.repairCost ? (
-          <p className="flex items-start gap-1.5 text-[var(--color-text-muted)]">
-            <GenIcon name="wrench" className="h-7 w-7 md:h-5 md:w-5 shrink-0" />
-            <span>
-              <span className="font-semibold text-[var(--color-text)]">Repair cost: </span>
-              {problem.repairCost}
-            </span>
-          </p>
-        ) : null}
-        {problem.replacementCost ? (
-          <p className="flex items-start gap-1.5 text-[var(--color-text-muted)]">
-            <GenIcon name="engine" className="h-7 w-7 md:h-5 md:w-5 shrink-0" />
-            <span>
-              <span className="font-semibold text-[var(--color-text)]">Replacement cost: </span>
-              {problem.replacementCost}
-            </span>
-          </p>
-        ) : null}
-        {problem.urgency ? (
-          <span className={`lg:text-[15px] inline-flex w-fit items-center gap-1.5 rounded-full px-2.5 py-1 text-[12px] font-semibold ${urgencyClass}`}>
-            <GenIcon name={urgencyIcon(problem)} className="h-7 w-7 md:h-5 md:w-5 shrink-0" />
-            <span>
-              {problem.urgency.label} - <span dangerouslySetInnerHTML={{ __html: problem.urgency.text }} />
-            </span>
-          </span>
-        ) : null}
-      </div>
-
-      {problem.recommendation ? (
-        <div className="lg:text-[15px] border-t border-[var(--color-border)] pt-2.5 text-[0.8rem] leading-[1.45]">
-          <p className="font-semibold text-[var(--color-text)]">Our recommendation:</p>
-          <p className="mt-1 text-[var(--color-text-muted)]" dangerouslySetInnerHTML={{ __html: problem.recommendation }} />
-        </div>
-      ) : null}
-
-      {problem.failureLink ? (
-        <a href={problem.failureLink.href} className="lg:text-[15px] mt-auto flex items-center gap-1.5 text-[0.78rem] font-semibold text-[var(--color-primary)] no-underline">
-          {problem.failureLink.label}
-          <GenIcon name="arrow" className="h-3.5 w-3.5 shrink-0" />
-        </a>
-      ) : null}
-    </div>
+    <span className={`flex shrink-0 items-center justify-center rounded-full text-white ${className}`} style={{ background: TONE_VAR[tone] }}>
+      <VIcon name={icon} className="h-[50%] w-[50%]" strokeWidth={2} />
+    </span>
   );
 }
 
-export default function CommonProblems({ data }) {
-  const { theme } = useTheme();
-  const [activeIndex, setActiveIndex] = useState(0);
-  if (!data) return null;
+function Urgency({ urgency, tone }) {
+  if (!urgency?.label && !urgency?.text) return null;
+  return (
+    <>
+      <span aria-hidden="true" className="mx-1 inline-block h-3 w-3 translate-y-[1px] rounded-full" style={{ background: TONE_VAR[tone] }} />
+      {[urgency.label, urgency.text].filter(Boolean).join(" — ")}
+    </>
+  );
+}
 
-  const isDark = theme === "dark";
-  const problems = data.problems || [];
+function FailureLink({ link, className = "" }) {
+  if (!link?.label) return null;
+  return (
+    <Link href={link.href || "#"} className={`t-body block font-normal text-[var(--color-v-blue)] hover:underline ${className}`}>
+      {stripMarker(link.label)} <span aria-hidden="true">→</span>
+      {link.href ? <span className="block">{link.href}</span> : null}
+    </Link>
+  );
+}
+
+function rowValue(problem, key) {
+  return <Rich html={problem[key]} />;
+}
+
+function Card({ problem, index }) {
+  const tone = urgencyTone(problem.urgency, index);
+  const icon = byKeyword(copy.problemIcons, problem.title, "icon", "wrench");
+  const number = problem.id ?? index + 1;
+  return (
+    <article
+      className="flex h-full flex-col rounded-[10px] border border-[var(--color-v-border)] border-l-[3px] bg-[var(--color-v-panel)] p-5 shadow-[0_6px_18px_var(--color-v-shadow)]"
+      style={{ borderLeftColor: TONE_VAR[tone] }}
+    >
+      <div className="flex items-center gap-4">
+        <ToneCircle tone={tone} icon={icon} />
+        <h3 className="t-h6 text-[var(--color-v-text)]">
+          {number}. <Rich html={splitTitle(problem.title).name} />
+          {splitTitle(problem.title).detail ? <Rich html={splitTitle(problem.title).detail} className="block" /> : null}
+        </h3>
+      </div>
+      <ul className="t-body mt-4 flex flex-col gap-2.5 text-[var(--color-v-text)]">
+        {ROWS.filter((key) => problem[key]).map((key) => (
+          <li key={key} className="flex gap-3">
+            <VIcon name={copy.rowIcons[key]} className="mt-0.5 h-[18px] w-[18px] shrink-0 text-[var(--color-v-muted)]" />
+            <p>
+              <strong className="font-semibold">{copy.labels[key]}</strong> {rowValue(problem, key)}
+            </p>
+          </li>
+        ))}
+        {problem.urgency?.label || problem.urgency?.text ? (
+          <li className="flex gap-3">
+            <VIcon name={copy.rowIcons.urgency} className="mt-0.5 h-[18px] w-[18px] shrink-0 text-[var(--color-v-muted)]" />
+            <p>
+              <strong className="font-semibold">{copy.labels.urgency}</strong> <Urgency urgency={problem.urgency} tone={tone} />
+            </p>
+          </li>
+        ) : null}
+      </ul>
+      {problem.recommendation ? (
+        <div className="t-body mt-4 text-[var(--color-v-text)]">
+          <p className="font-semibold">{copy.labels.recommendation}</p>
+          <Rich as="p" html={problem.recommendation} className="mt-0.5" />
+        </div>
+      ) : null}
+      <FailureLink link={problem.failureLink} className="mt-auto pt-5" />
+    </article>
+  );
+}
+
+function MobilePanel({ problem, index }) {
+  const tone = urgencyTone(problem.urgency, index);
+  const icon = byKeyword(copy.problemIcons, problem.title, "icon", "wrench");
+  const { name, detail } = splitTitle(problem.title);
+  const number = problem.id ?? index + 1;
+  const tile = (name) => (
+    <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-[8px] bg-[var(--color-v-band)] text-[var(--color-v-muted)] [[data-theme=dark]_&]:bg-[var(--color-v-panel-soft)]">
+      <VIcon name={name} className="h-5 w-5" />
+    </span>
+  );
+  return (
+    <article className="rounded-[10px] border border-[var(--color-v-border)] bg-[var(--color-v-panel)] p-4 shadow-[0_6px_18px_var(--color-v-shadow)]">
+      <div className="flex items-center gap-4 border-b border-[var(--color-v-border)] pb-4">
+        <ToneCircle tone={tone} icon={icon} className="h-14 w-14" />
+        <h3 className="t-h6 text-[var(--color-v-text)]">
+          {number}. <Rich html={name} />
+          {detail ? <Rich html={detail} className="t-body block font-normal text-[var(--color-v-muted)]" /> : null}
+        </h3>
+      </div>
+      <ul className="t-body flex flex-col gap-3 border-b border-[var(--color-v-border)] py-4 text-[var(--color-v-text)]">
+        {ROWS.filter((key) => problem[key]).map((key) => (
+          <li key={key} className="flex items-center gap-3">
+            {tile(copy.rowIcons[key])}
+            <p>
+              <strong className="font-semibold">{copy.labels[key]}</strong> {rowValue(problem, key)}
+            </p>
+          </li>
+        ))}
+        {problem.urgency?.label || problem.urgency?.text ? (
+          <li className="flex items-center gap-3">
+            {tile(copy.rowIcons.urgency)}
+            <p>
+              <strong className="font-semibold">{copy.labels.urgency}</strong> <Urgency urgency={problem.urgency} tone={tone} />
+            </p>
+          </li>
+        ) : null}
+      </ul>
+      {problem.recommendation ? (
+        <div className="flex gap-3 border-b border-[var(--color-v-border)] py-4">
+          {tile(copy.rowIcons.recommendation)}
+          <div className="t-body text-[var(--color-v-text)]">
+            <p className="font-semibold">{copy.labels.recommendation}</p>
+            <Rich as="p" html={problem.recommendation} className="mt-0.5" />
+          </div>
+        </div>
+      ) : null}
+      {problem.failureLink?.label ? (
+        <div className="flex items-center gap-3 pt-4">
+          {tile(copy.rowIcons.link)}
+          <FailureLink link={problem.failureLink} />
+        </div>
+      ) : null}
+    </article>
+  );
+}
+
+export default function CommonProblems({ data, vehicle }) {
+  const problems = data?.problems || [];
+  if (!problems.length) return null;
+  const h2 = data.h2 || fill(copy.h2, pageValues(vehicle));
+  // Balanced rows: 4 -> 2 + 2, 5 -> 3 + 2, 6 -> 3 + 3.
+  const columns = problems.length === 4 ? "lg:grid-cols-2" : problems.length === 1 ? "lg:grid-cols-1" : problems.length === 2 ? "lg:grid-cols-2" : "lg:grid-cols-3";
+
+  const tabs = problems.map((problem, index) => {
+    const tone = urgencyTone(problem.urgency, index);
+    return {
+      key: `${plain(problem.title)}-${index}`,
+      activeStyle: { color: TONE_VAR[tone], borderBottomColor: TONE_VAR[tone] },
+      label: (
+        <>
+          <ToneCircle tone={tone} icon={byKeyword(copy.problemIcons, problem.title, "icon", "wrench")} className="h-9 w-9 sm:h-10 sm:w-10" />
+          <span>{shortName(problem)}</span>
+        </>
+      ),
+      panel: <MobilePanel problem={problem} index={index} />,
+    };
+  });
 
   return (
-    <section className={`w-full overflow-x-hidden py-5 text-[var(--color-text)] md:py-6 ${variantSectionBg(isDark, false)}`}>
-      <div className="relative mx-auto w-full max-w-8xl px-4 md:px-8">
-        <VariantSectionHeading title="Common Problems" />
-        <div className="mt-3">
-          <MStripe />
+    <section className="section-y bg-[var(--color-v-page)] text-[var(--color-v-text)]">
+      <div className="site-container">
+        <h2 className="t-h2">{h2}</h2>
+
+        <div className="mt-6 lg:hidden">
+          <Tabs
+            tabs={tabs}
+            label={h2}
+            listClassName="flex overflow-x-auto rounded-[10px] border border-[var(--color-v-border)] bg-[var(--color-v-panel)]"
+            tabClassName="t-body flex min-w-[33.333%] flex-1 shrink-0 items-center justify-center gap-2 border-b-[3px] px-2 py-3 text-left font-semibold leading-tight [overflow-wrap:anywhere] sm:px-3 [&+&]:border-l [&+&]:border-l-[var(--color-v-border)]"
+            inactiveClassName="border-b-transparent text-[var(--color-v-text)]"
+            panelClassName="mt-4"
+          />
         </div>
 
-        {/* Mobile: tab switcher - one problem shown at a time */}
-        <div className="mt-6 flex gap-2 overflow-x-auto overscroll-x-contain rounded-md border border-[var(--color-border)] bg-[var(--color-surface)] p-1.5 md:hidden">
-          {problems.map((problem, index) => {
-            const accent = ACCENT_BY_INDEX[index % ACCENT_BY_INDEX.length];
-            const isActive = activeIndex === index;
-            return (
-              <button
-                key={problem.id}
-                type="button"
-                onClick={() => setActiveIndex(index)}
-                className="lg:text-[15px] flex flex-1 shrink-0 items-center gap-2 rounded-md px-2.5 py-2 text-[0.76rem] font-semibold"
-                style={
-                  isActive
-                    ? { color: accent, boxShadow: `inset 0 -2px 0 ${accent}` }
-                    : { color: "var(--color-text-muted)" }
-                }
-              >
-                <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full text-white" style={{ backgroundColor: accent }}>
-                  <GenIcon name={urgencyIcon(problem)} onDark className="h-7 w-7 md:h-5 md:w-5" />
-                </span>
-                <span className="truncate">{shortTitle(problem.title)}</span>
-              </button>
-            );
-          })}
-        </div>
-        <div className="mt-3 md:hidden">
-          {problems[activeIndex] ? (
-            <ProblemDetail problem={problems[activeIndex]} index={activeIndex} isDark={isDark} />
-          ) : null}
-        </div>
-
-        {/* Desktop: full 3-column grid, all cards visible */}
-        <div className="mt-6 hidden gap-4 md:grid md:grid-cols-3">
+        <div className={`mt-7 hidden gap-4 lg:grid ${columns}`}>
           {problems.map((problem, index) => (
-            <ProblemDetail key={problem.id} problem={problem} index={index} isDark={isDark} />
+            <Card key={`${plain(problem.title)}-${index}`} problem={problem} index={index} />
           ))}
         </div>
       </div>

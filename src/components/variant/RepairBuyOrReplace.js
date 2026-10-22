@@ -1,339 +1,302 @@
-"use client";
-
-import { Fragment } from "react";
 import Image from "next/image";
-import { useTheme } from "@/components/shared/themeProvider";
-import CarOnBackground from "@/components/shared/CarOnBackground";
-import MStripe from "@/components/reusableComponents/MStripe";
-import GenIcon from "../generation/GenIcons";
-import { variantSectionBg, VariantSectionHeading, tableHeaderClass, primaryBadgeClass, primaryCtaClass, stripCtaArrow } from "./variantSection";
+import Link from "next/link";
+import VIcon from "./VariantIcons";
+import { TagLine } from "./EraMap";
+import { Rich, byKeyword, dash, fill, pageValues, plain, splitTags, stripMarker, ui } from "./variantUi";
 
-const DESKTOP_COLS = "grid-cols-[1.6fr_0.9fr_1fr_1.7fr]";
-const MOBILE_COLS = "grid-cols-[220px_110px_140px_240px]";
+const copy = ui.repairBuyOrReplace;
 
-// Generic trust guarantees for the bottom ticker bar - not tied to page-specific copy.
-const TRUST_TICKER = [
-  { icon: "vetted-specialist", label: "20+ Vetted Specialists UK Network" },
-  { icon: "shield", label: "12-Month Warranty as Standard" },
-  { icon: "truck", label: "Nationwide Delivery & Collection" },
-  { icon: "dollar", label: "Transparent Pricing, No Hidden Fees" },
-  { icon: "users", label: "Thousands of BMW Owners Helped" },
-];
-
-function repairableTone(repairable = "") {
-  if (repairable.includes("✅")) return "text-[#13884a]";
-  if (repairable.includes("❌")) return "text-[#db2e2e]";
-  return "text-[#da7a12]";
+// "✅ Yes" / "❌ Usually No" / "⚠️ Sometimes" -> status + text without the emoji.
+function parseRepairable(value = "") {
+  const text = String(value).replace(/^[\s✅❌⚠️️]+/u, "").trim();
+  if (value.includes("✅")) return { tone: "green", icon: "checkCircleSolid", text };
+  if (value.includes("❌")) return { tone: "red", icon: "xCircleSolid", text };
+  return { tone: "orange", icon: "alertSolid", text };
 }
 
-// Header + every row live in ONE shared grid (not one grid per row) so the
-// column edges are guaranteed pixel-identical - stacking separate same-spec
-// grids can drift a fraction of a px apart per instance with gap-px tracks,
-// which is what made the header background fall short of the row content.
-function Table({ columns, rows, cols, headerBg, headerDivider, isDark }) {
-  const rowClass = isDark ? "bg-[var(--color-primary)] text-white" : "bg-[var(--color-table-surface)] text-[var(--color-text)]";
-  const cellDivider = isDark ? "border-white/15" : "border-[var(--color-border)]";
-  const mutedText = isDark ? "text-white/70" : "text-[var(--color-text-muted)]";
-  const borderBottom = isDark ? "border-white/15" : "border-[var(--color-border)]";
+const TONE_TEXT = {
+  green: "text-[var(--color-v-green)]",
+  red: "text-[var(--color-v-red)]",
+  orange: "text-[var(--color-v-orange)]",
+};
 
+// "£400–£900 [PLACEHOLDER]": the cost, then the tag on its own line.
+function Cost({ value }) {
+  const { main, tags } = splitTags(value);
   return (
-    <div className={`grid ${cols} gap-px`}>
-      {columns?.map((col, index) => (
-        <span
-          key={col}
-          className={`${headerBg} px-4 py-2.5 text-[0.72rem] font-semibold ${index > 0 ? `border-l ${headerDivider}` : ""}`}
-        >
-          {col}
-        </span>
-      ))}
+    <>
+      <Rich html={main} className="block" />
+      <TagLine tags={tags} className="font-normal" />
+    </>
+  );
+}
 
-      {rows?.map((row, rowIndex) => {
-        const isLastRow = rowIndex === rows.length - 1;
-        const cellBorderBottom = isLastRow ? "" : `border-b ${borderBottom}`;
-        return (
-          <Fragment key={row.problem}>
-            <span className={`lg:text-[15px] ${rowClass} px-4 py-2 text-[0.8rem] font-semibold ${cellBorderBottom}`} dangerouslySetInnerHTML={{ __html: row.problem }} />
-            <span className={`lg:text-[15px] ${rowClass} border-l ${cellDivider} px-4 py-2 text-[0.8rem] font-semibold ${cellBorderBottom} ${repairableTone(row.repairable)}`}>
-              {row.repairable}
-            </span>
-            <span className={`lg:text-[15px] ${rowClass} border-l ${cellDivider} px-4 py-2 text-[0.8rem] ${cellBorderBottom} ${mutedText}`}>
-              {row.typicalCost}
-            </span>
-            <span
-              className={`lg:text-[15px] ${rowClass} border-l ${cellDivider} px-4 py-2 text-[0.8rem] ${cellBorderBottom} ${mutedText}`}
-              dangerouslySetInnerHTML={{ __html: row.whenItMakesSense }}
-            />
-          </Fragment>
-        );
-      })}
+function NavyCircle({ icon, className = "h-11 w-11" }) {
+  return (
+    <span className={`flex shrink-0 items-center justify-center rounded-full bg-[var(--color-v-tile)] text-white ${className}`}>
+      <VIcon name={icon} className="h-[50%] w-[50%]" />
+    </span>
+  );
+}
+
+function PanelHeader({ icon, title }) {
+  return (
+    <div className="flex items-center gap-4 bg-[var(--color-v-navy)] px-4 py-3 text-white [[data-theme=dark]_&]:border-b [[data-theme=dark]_&]:border-[var(--color-v-border-strong)] lg:px-5">
+      <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-white/10">
+        <VIcon name={icon} className="h-5 w-5" strokeWidth={2} />
+      </span>
+      <h3 className="t-body font-semibold uppercase lg:text-[length:var(--fs-p)]">{title}</h3>
     </div>
   );
 }
 
-function CheckList({ title, items, icon, tone, toneBorder, toneBg }) {
-  if (!items?.length) return null;
+function Status({ status, className = "" }) {
   return (
-    <div className={`flex h-full flex-1 flex-col rounded-md border ${toneBorder} ${toneBg}`}>
-      <p className={`lg:text-[15px] flex items-center gap-2 border-b ${toneBorder} px-3 py-2.5 text-[0.82rem] font-semibold uppercase tracking-wide ${tone}`}>
-        <GenIcon name={icon} className="h-8 w-8 md:h-6 md:w-6" />
-        {title}
-      </p>
-      <ul className="flex flex-1 flex-col">
-        {items.map((item, index) => (
-          <li
-            key={item}
-            className={`flex items-start gap-2 px-3 py-2 text-[0.82rem] leading-[1.4] text-[var(--color-text-muted)] ${
-              index > 0 ? `border-t ${toneBorder}` : ""
-            }`}
-          >
-            <GenIcon name={icon} className="h-7 w-7 md:h-5 md:w-5 shrink-0" />
-            <span dangerouslySetInnerHTML={{ __html: item.replace(/^\*\s*/, "") }} />
-          </li>
-        ))}
-      </ul>
-    </div>
+    <span className={`flex flex-wrap items-center gap-x-2 gap-y-1 xl:gap-x-3 ${className}`}>
+      <VIcon name={status.icon} solid className={`h-6 w-6 shrink-0 xl:h-7 xl:w-7 ${TONE_TEXT[status.tone]}`} />
+      <span className="min-w-0 text-[var(--color-v-text)]">{status.text}</span>
+    </span>
   );
 }
 
-export default function RepairBuyOrReplace({ data }) {
-  const { theme } = useTheme();
-  if (!data) return null;
-
-  const isDark = theme === "dark";
-  // This car's photo and engine photo (set server-side); the engine graphic hides when there is none.
-  const vehicle = data.vehicle || "BMW";
-  const carAlt = `BMW ${data.vehicle || ""}`.trim();
-  const engineImage = data.engineImage;
-  const headerBg = tableHeaderClass(isDark);
-  const headerDivider = isDark ? "border-white/20" : "border-white/25";
-  const headingClass = isDark ? "text-white" : "text-[var(--color-text)]";
-  const bodyTextClass = isDark ? "text-white/80" : "text-[var(--color-text-muted)]";
-  const ctaLabel = stripCtaArrow(data.cta?.label);
-
+function RepairTable({ block }) {
+  const rows = block?.rows || [];
+  const columns = block?.columns?.length === 4 ? block.columns : ["Problem", "Repairable?", "Typical Cost", "When It Makes Sense"];
+  const cell = "border-r border-[var(--color-v-border)] px-3 py-3.5 align-middle last:border-r-0 xl:px-4";
   return (
-    <section className={`w-full overflow-x-hidden text-[var(--color-text)] ${variantSectionBg(isDark, true)}`}>
-      {/* Mobile: image sits at the top of the block (ModelHero pattern), with a
-          seamless fade into the page background instead of a hard-edged box;
-          text flows below it in normal page flow. */}
-      <div className="relative w-full overflow-hidden md:hidden">
-        <div className="relative h-[220px] w-full bg-[var(--color-page)]">
-          <CarOnBackground
-            src={data.image}
-            alt={carAlt}
-            isDark={isDark}
-            className="absolute inset-0"
-            carClassName="inset-x-[8%] top-[10%] bottom-[14%]"
-            sizes="100vw"
-          />
-          {isDark ? (
-            <div className="absolute inset-x-0 bottom-0 h-16 bg-[linear-gradient(0deg,rgba(0,0,0,0.85)_0%,transparent_100%)]" />
-          ) : (
-            <div className="absolute inset-x-0 bottom-0 h-16 bg-[linear-gradient(0deg,var(--color-page)_0%,transparent_100%)]" />
-          )}
-        </div>
-
-        <div className="mx-auto w-full max-w-8xl px-4 pb-5">
-          <VariantSectionHeading title={data.h2} className={headingClass} />
-          <div className="mt-3">
-            <MStripe />
-          </div>
-          <p className={`lg:text-[15px] mt-4 max-w-[560px] text-[0.88rem] leading-[1.45] ${bodyTextClass}`}>
-            Every {vehicle} has a story. Make the right call with clear data, real-world costs, and honest guidance from UK specialists.
-          </p>
-        </div>
-      </div>
-
-      {/* Desktop: unchanged - bg image behind title/subtitle only */}
-      <div className="relative hidden w-full overflow-hidden md:block">
-        <div className="absolute inset-0">
-          <CarOnBackground
-            src={data.image}
-            alt={carAlt}
-            isDark={isDark}
-            className="absolute inset-0"
-            carClassName="right-[5%] top-[10%] bottom-[8%] w-[min(42%,560px)]"
-            overlayClassName={isDark ? "bg-[linear-gradient(90deg,rgba(2,7,11,0.95)_0%,rgba(2,7,11,0.75)_45%,rgba(2,7,11,0.15)_85%)]" : "bg-[linear-gradient(90deg,rgba(255,255,255,0.96)_0%,rgba(255,255,255,0.84)_42%,rgba(255,255,255,0.12)_80%)]"}
-            sizes="560px"
-          />
-        </div>
-
-        <div className="relative mx-auto w-full max-w-8xl px-4 py-5 md:px-8 md:py-6">
-          <VariantSectionHeading title={data.h2} className={`max-w-[600px] ${headingClass}`} />
-          <div className="mt-3">
-            <MStripe />
-          </div>
-          <p className={`mt-4 max-w-[560px] text-[0.88rem] leading-[1.45] md:text-[1rem] ${bodyTextClass}`}>
-            Every {vehicle} has a story. Make the right call with clear data, real-world costs, and honest guidance from UK specialists.
-          </p>
-        </div>
-      </div>
-
-      <div className="relative mx-auto w-full max-w-8xl px-4 py-5 md:px-8 md:py-6">
-        <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
-          {data.canItBeRepaired ? (
-            <div className="rounded-xl border border-[var(--color-border)] bg-[var(--color-surface)] p-4 shadow-lg md:border-0 md:bg-transparent md:p-0 md:shadow-none">
-              <p className="flex items-center gap-2 text-[0.95rem] font-bold uppercase tracking-wide text-[var(--color-text)]">
-                <GenIcon name="wrench" className="h-9 w-9 md:h-7 md:w-7" />
-                {data.canItBeRepaired.title}
-              </p>
-              <div className="mt-3 max-w-full overflow-x-auto overscroll-x-contain rounded-md border border-[var(--color-border)] shadow-[0_14px_40px_var(--color-shadow)]">
-                <div className="min-w-[650px] lg:min-w-0">
-                  <div className="hidden lg:block">
-                    <Table
-                      columns={data.canItBeRepaired.columns}
-                      rows={data.canItBeRepaired.rows}
-                      cols={DESKTOP_COLS}
-                      headerBg={headerBg}
-                      headerDivider={headerDivider}
-                      isDark={isDark}
-                    />
-                  </div>
-                  <div className="lg:hidden">
-                    <Table
-                      columns={data.canItBeRepaired.columns}
-                      rows={data.canItBeRepaired.rows}
-                      cols={MOBILE_COLS}
-                      headerBg={headerBg}
-                      headerDivider={headerDivider}
-                      isDark={isDark}
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-          ) : null}
-
-          {data.buyingChecks ? (
-            <div className="flex h-full flex-col rounded-xl border border-[var(--color-border)] bg-[var(--color-surface)] p-4 shadow-lg md:border-0 md:bg-transparent md:p-0 md:shadow-none">
-              <p className="flex items-center gap-2 text-[0.95rem] font-bold uppercase tracking-wide text-[var(--color-text)]">
-                <GenIcon name="cart" className="h-9 w-9 md:h-7 md:w-7" />
-                {data.buyingChecks.title}
-              </p>
-              <div className="mt-3 grid flex-1 grid-cols-1 gap-4 md:grid-cols-2">
-                <CheckList
-                  title="Buy If"
-                  items={data.buyingChecks.buyIf}
-                  icon="check"
-                  tone="text-[#13884a]"
-                  toneBorder="border-[#189454]/40"
-                  toneBg="bg-[rgba(16,163,74,0.08)]"
-                />
-                <CheckList
-                  title="Avoid If"
-                  items={data.buyingChecks.avoidIf}
-                  icon="warning"
-                  tone="text-[#db2e2e]"
-                  toneBorder="border-[#db2e2e]/40"
-                  toneBg="bg-[rgba(219,46,46,0.08)]"
-                />
-              </div>
-            </div>
-          ) : null}
-        </div>
-
-        <div className="mt-8 grid grid-cols-1 gap-4 md:grid-cols-2">
-          {data.closingVerdict ? (
-            <div className="glass-panel flex flex-col gap-2 rounded-md p-4 md:px-3">
-              <div className="flex items-center gap-3">
-                <span className={`flex h-9 w-9 shrink-0 items-center justify-center rounded-full ${primaryBadgeClass(isDark)}`}>
-                  <GenIcon name="shield" inverted className="h-8 w-8 md:h-6 md:w-6" />
-                </span>
-                <p className="lg:text-[15px] text-[12px] font-semibold uppercase tracking-wide text-[var(--color-primary)]">Closing Verdict</p>
-              </div>
-              <p
-                className="lg:text-[15px] w-full text-[0.85rem] leading-[1.5] text-[var(--color-text)]"
-                dangerouslySetInnerHTML={{ __html: data.closingVerdict }}
-              />
-            </div>
-          ) : null}
-
-          {/* Desktop: small CTA card with the engine graphic faded in on the right */}
-          {ctaLabel ? (
-            <div className="glass-panel relative hidden flex-col gap-3 overflow-hidden rounded-md p-4 md:flex md:px-3">
-              {engineImage ? (
-                <div className="pointer-events-none absolute inset-y-0 right-0 w-2/3">
-                  <Image src={engineImage} alt="" fill className="object-contain object-right opacity-15" sizes="300px" />
-                  <div
-                    className="absolute inset-0"
-                    style={{ background: `linear-gradient(90deg, var(--color-surface-glass) 0%, transparent 55%)` }}
-                  />
-                </div>
-              ) : null}
-
-              <div className="relative z-10 flex items-start gap-3">
-                <span className="mt-0.5 flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[var(--color-primary-soft)] text-[var(--color-primary)]">
-                  <GenIcon name="dollar" className="h-10 w-10 md:h-8 md:w-8" />
-                </span>
-                <p className="text-[1.15rem] font-semibold leading-[1.35] text-[var(--color-text)] md:text-[1.25rem]">
-                  <span className="block">Don&apos;t guess.</span>
-                  <span className="block">Get the right engine at the right price.</span>
-                </p>
-              </div>
-              <a
-                href="/quote"
-                className={`${primaryCtaClass("relative z-10 flex w-fit items-center justify-center gap-2 whitespace-nowrap rounded-md px-4 py-3.5 text-center text-[0.7rem] uppercase tracking-wide")}`}
-              >
-                {ctaLabel}
-                <GenIcon name="arrow" className="h-4 w-4 shrink-0" />
-              </a>
-            </div>
-          ) : null}
-        </div>
-
-        {/* Mobile only: Conversion CTA banner (image right, content left) + trust ticker */}
-        <div className="mt-4 flex flex-col gap-4 md:hidden">
-          {ctaLabel ? (
-            <div
-              className={`flex flex-col gap-3 rounded-xl border p-4 shadow-sm ${
-                isDark
-                  ? "border-white/15 bg-[linear-gradient(90deg,rgba(2,7,11,0.95)_0%,rgba(2,7,11,0.55)_60%,var(--color-page)_100%)]"
-                  : "border-[var(--color-border)] bg-[linear-gradient(90deg,var(--color-surface)_0%,rgba(244,247,251,0.85)_60%,white_100%)]"
-              }`}
-            >
-              <div className="flex flex-row items-center gap-3">
-                <div className="flex min-w-0 flex-1 flex-col gap-2">
-                  <div className="flex items-center gap-2.5">
-                    <span className={`flex h-9 w-9 shrink-0 items-center justify-center rounded-full ${primaryBadgeClass(isDark)}`}>
-                      <GenIcon name="tag" inverted className="h-8 w-8 md:h-6 md:w-6" />
-                    </span>
-                    <h3 className="text-[1rem] font-bold leading-tight text-[var(--color-text)]">Don&apos;t Guess. Compare.</h3>
-                  </div>
-                  <p className="lg:text-[15px] text-[0.8rem] leading-[1.45] text-[var(--color-text-muted)]">
-                    Get real quotes from vetted UK specialists and make the right call for your {vehicle}.
-                  </p>
-                </div>
-
-                {engineImage ? (
-                  <div className="relative h-[96px] w-[96px] shrink-0">
-                    <Image src={engineImage} alt={`${carAlt} engine`} fill className="object-contain" sizes="96px" />
-                  </div>
-                ) : null}
-              </div>
-
-              <a
-                href="/quote"
-                className={`${primaryCtaClass("flex w-full items-center justify-center gap-2 rounded-xl px-3 py-2.5 text-center text-[0.78rem]")}`}
-              >
-                {ctaLabel}
-                <GenIcon name="arrow" className="h-4 w-4 shrink-0" />
-              </a>
-            </div>
-          ) : null}
-
-          <div className="flex items-stretch rounded-xl border border-[var(--color-border)] bg-[var(--color-surface)] p-3 shadow-sm">
-            {TRUST_TICKER.map((item, index) => (
-              <div key={item.label} className="flex flex-1 items-stretch">
-                {index > 0 ? (
-                  <span aria-hidden="true" className="mx-1.5 my-1 w-px shrink-0 self-center bg-[var(--color-border)]" style={{ height: "70%" }} />
-                ) : null}
-                <div className="flex w-full flex-col items-center gap-1 text-center">
-                  <GenIcon name={item.icon} className="h-10 w-10 md:h-8 md:w-8 shrink-0" />
-                  <span className="lg:text-[15px] text-[12px] font-semibold leading-tight text-[var(--color-text)]">{item.label}</span>
-                </div>
-              </div>
+    <>
+      {/* Desktop and tablet: four columns */}
+      <table className="t-body hidden w-full table-fixed border-collapse md:table">
+        <colgroup>
+          <col className="w-[31%]" />
+          <col className="w-[20%]" />
+          <col className="w-[18%]" />
+          <col className="w-[31%]" />
+        </colgroup>
+        <thead>
+          <tr>
+            {columns.map((column, index) => (
+              <th key={column} scope="col" className={`t-label border-r border-[var(--color-v-border)] px-4 py-3 font-normal text-[var(--color-v-text)] last:border-r-0 ${index === 0 ? "pl-[4.75rem] text-left" : index === 3 ? "text-left" : "text-center"}`}>
+                {column}
+              </th>
             ))}
+          </tr>
+        </thead>
+        <tbody>
+          {rows.map((row, index) => {
+            const status = parseRepairable(row.repairable);
+            return (
+              <tr key={`${plain(row.problem)}-${index}`} className="border-t border-[var(--color-v-border)]">
+                <td className={cell}>
+                  <span className="flex items-center gap-4">
+                    <NavyCircle icon={byKeyword(copy.problemIcons, row.problem, "icon", "wrench")} />
+                    <span className="min-w-0 font-semibold text-[var(--color-v-text)]" dangerouslySetInnerHTML={{ __html: dash(row.problem) }} />
+                  </span>
+                </td>
+                <td className={cell}>
+                  <Status status={status} className="justify-center" />
+                </td>
+                <td className={`${cell} text-center font-semibold ${TONE_TEXT[status.tone]}`}>
+                  <Cost value={row.typicalCost} />
+                </td>
+                <td className={`${cell} text-[var(--color-v-muted)]`}>
+                  <Rich html={row.whenItMakesSense} />
+                </td>
+              </tr>
+            );
+          })}
+        </tbody>
+      </table>
+
+      {/* Phones: "Repairable? / Typical Cost" share one header, as in the design */}
+      <div className="md:hidden">
+        <div className="t-label grid grid-cols-[minmax(0,1.4fr)_minmax(0,1.05fr)_minmax(0,1fr)] gap-2 px-3 py-3 text-[var(--color-v-text)]">
+          <span className="pl-10">{columns[0]}</span>
+          <span>
+            {columns[1]}
+            <span className="block">{columns[2]}</span>
+          </span>
+          <span>{columns[3]}</span>
+        </div>
+        {rows.map((row, index) => {
+          const status = parseRepairable(row.repairable);
+          return (
+            <div key={`${plain(row.problem)}-${index}`} className="t-body grid grid-cols-[minmax(0,1.4fr)_minmax(0,1.05fr)_minmax(0,1fr)] items-center gap-2 border-t border-[var(--color-v-border)] px-3 py-3">
+              <span className="flex items-center gap-2">
+                <NavyCircle icon={byKeyword(copy.problemIcons, row.problem, "icon", "wrench")} className="h-8 w-8" />
+                <span className="t-label min-w-0 font-semibold text-[var(--color-v-text)]" dangerouslySetInnerHTML={{ __html: dash(row.problem) }} />
+              </span>
+              <span className="flex flex-col gap-1">
+                <span className="flex flex-wrap items-center gap-x-2 gap-y-1">
+                  <VIcon name={status.icon} solid className={`h-6 w-6 shrink-0 ${TONE_TEXT[status.tone]}`} />
+                  <span className="t-label min-w-0 text-[var(--color-v-text)]">{status.text}</span>
+                </span>
+                <span className={`font-semibold ${TONE_TEXT[status.tone]}`}>
+                  <Cost value={row.typicalCost} />
+                </span>
+              </span>
+              <Rich html={row.whenItMakesSense} className="t-label text-[var(--color-v-muted)]" />
+            </div>
+          );
+        })}
+      </div>
+    </>
+  );
+}
+
+function CheckList({ items, tone }) {
+  const good = tone === "green";
+  return (
+    <ul className="mt-3 flex flex-col gap-2 pl-0 lg:pl-[52px]">
+      {items.map((item) => (
+        <li key={item} className="t-body flex gap-3 text-[var(--color-v-text)]">
+          <VIcon name={good ? "checkCircleSolid" : "xCircleSolid"} solid className={`mt-0.5 h-[18px] w-[18px] shrink-0 ${TONE_TEXT[tone]}`} />
+          <Rich html={stripMarker(item)} />
+        </li>
+      ))}
+    </ul>
+  );
+}
+
+function BuyingChecks({ block }) {
+  if (!block) return null;
+  const buy = block.buyIf || [];
+  const avoid = block.avoidIf || [];
+  return (
+    <div className="flex flex-col overflow-hidden rounded-[10px] border border-[var(--color-v-border)] bg-[var(--color-v-panel)]">
+      <PanelHeader icon="search" title={block.title} />
+      {buy.length ? (
+        <div className="bg-[var(--color-v-green-soft)] px-4 py-5 lg:px-5">
+          <p className="flex items-center gap-4">
+            <VIcon name="checkCircleSolid" solid className="h-9 w-9 shrink-0 text-[var(--color-v-green)]" />
+            <span className="t-h6 uppercase text-[var(--color-v-green)]">{copy.buyIf}</span>
+          </p>
+          <CheckList items={buy} tone="green" />
+        </div>
+      ) : null}
+      {avoid.length ? (
+        <div className="flex-1 border-t border-[var(--color-v-border)] bg-[var(--color-v-red-soft)] px-4 py-5 lg:px-5">
+          <p className="flex items-center gap-4">
+            <VIcon name="xCircleSolid" solid className="h-9 w-9 shrink-0 text-[var(--color-v-red)]" />
+            <span className="t-h6 uppercase text-[var(--color-v-red)]">{copy.avoidIf}</span>
+          </p>
+          <CheckList items={avoid} tone="red" />
+        </div>
+      ) : null}
+    </div>
+  );
+}
+
+export default function RepairBuyOrReplace({ data, vehicle }) {
+  if (!data) return null;
+  const values = pageValues(vehicle || data.vehicle);
+  const cta = data.cta;
+  const car = data.image;
+  const engine = data.engineImage;
+
+  return (
+    <section className="section-y relative overflow-hidden border-t border-[var(--color-v-border)] bg-[var(--color-v-page)] text-[var(--color-v-text)]">
+      {/* Desktop: car on an angled panel with the engine, top right */}
+      {car || engine ? (
+        <div aria-hidden="true" className="pointer-events-none absolute right-0 top-0 hidden h-[300px] w-[48%] lg:block">
+          {engine ? (
+            <div className="absolute inset-y-0 right-0 w-[46%] overflow-hidden bg-[linear-gradient(135deg,var(--color-v-tile),var(--color-v-banner))] [clip-path:polygon(28%_0,100%_0,100%_100%,0_100%)]">
+              <Image src={engine} alt="" fill sizes="22vw" className="scale-125 object-cover object-center opacity-90" />
+            </div>
+          ) : null}
+          {car ? (
+            <div className="absolute bottom-[2%] right-[30%] aspect-[3/2] w-[62%]">
+              <span className="absolute inset-x-[8%] bottom-[5%] h-[12%] rounded-[50%] bg-black/35 blur-xl" />
+              <Image src={car} alt="" fill sizes="30vw" className="object-contain" />
+            </div>
+          ) : null}
+        </div>
+      ) : null}
+
+      <div className="site-container relative">
+        <div className="flex items-end gap-2 lg:block lg:min-h-[180px]">
+          <div className="min-w-0 flex-1 lg:max-w-[52%]">
+            <h2 className="t-h2">{dash(data.h2)}</h2>
+            <p className="t-p mt-3 text-[var(--color-v-text)]">
+              {copy.intro.map((line) => (
+                <span key={line} className="block">{line}</span>
+              ))}
+            </p>
+          </div>
+          {car ? (
+            <div className="pointer-events-none relative -mr-[var(--gutter)] aspect-[3/2] w-[46%] shrink-0 lg:hidden">
+              <Image src={car} alt={`BMW ${values.variant}`} fill sizes="46vw" className="object-contain" />
+            </div>
+          ) : null}
+        </div>
+
+        <div className="mt-6 grid gap-5 lg:mt-8 lg:grid-cols-[minmax(0,1.7fr)_minmax(0,1fr)] lg:gap-4">
+          {data.canItBeRepaired ? (
+            <div className="overflow-hidden rounded-[10px] border border-[var(--color-v-border)] bg-[var(--color-v-panel)]">
+              <PanelHeader icon="wrench" title={data.canItBeRepaired.title} />
+              <RepairTable block={data.canItBeRepaired} />
+            </div>
+          ) : null}
+          <BuyingChecks block={data.buyingChecks} />
+        </div>
+
+        {/* Closing verdict + Don't guess. Compare. */}
+        <div className="mt-5 grid gap-4 lg:grid-cols-1">
+          <div className="grid overflow-hidden rounded-[10px] border border-[var(--color-v-border)] bg-[var(--color-v-panel-soft)] lg:grid-cols-[minmax(0,1fr)_auto_minmax(0,1.25fr)]">
+            {data.closingVerdict ? (
+              <div className="flex items-start gap-5 p-5 lg:p-6">
+                <span className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-[var(--color-v-navy)] text-white lg:h-16 lg:w-16 [[data-theme=dark]_&]:bg-[var(--color-v-tile)]">
+                  <VIcon name="shieldCheck" className="h-7 w-7 lg:h-8 lg:w-8" />
+                </span>
+                <div>
+                  <p className="t-h6 uppercase text-[var(--color-v-blue)]">{copy.closingLabel}</p>
+                  <Rich as="p" html={data.closingVerdict} className="t-body mt-2 text-[var(--color-v-text)]" />
+                </div>
+              </div>
+            ) : null}
+            <span aria-hidden="true" className="my-6 hidden w-px bg-[var(--color-v-border-strong)] lg:block" />
+            <div className="grid grid-cols-[auto_minmax(0,1fr)_32%] items-center gap-x-4 gap-y-4 border-t border-[var(--color-v-border)] p-5 sm:grid-cols-[auto_minmax(0,1fr)_34%] lg:border-t-0 lg:p-6 lg:pr-2">
+              <span className="flex h-12 w-12 shrink-0 items-center justify-center self-start rounded-full border-2 border-[var(--color-v-blue)] text-[var(--color-v-blue)] lg:h-14 lg:w-14">
+                <VIcon name="tag" className="h-6 w-6" />
+              </span>
+              <div className="min-w-0">
+                <p className="t-h5 font-bold text-[var(--color-v-text)] lg:text-[length:var(--fs-h4)]">{copy.compareTitle}</p>
+                <p className="t-body mt-1 text-[var(--color-v-muted)]">{fill(copy.compareText, values)}</p>
+              </div>
+              {engine ? (
+                <div className="pointer-events-none relative row-span-1 aspect-square w-full sm:row-span-2">
+                  <span aria-hidden="true" className="absolute inset-[4%] rounded-full border border-[var(--color-v-blue)] opacity-20" />
+                  <span aria-hidden="true" className="absolute inset-[16%] rounded-full border border-[var(--color-v-blue)] opacity-30" />
+                  <span aria-hidden="true" className="absolute inset-[20%] rounded-full bg-[var(--color-v-blue)] opacity-15 blur-2xl" />
+                  <Image src={engine} alt="" fill sizes="(min-width: 1024px) 18vw, 34vw" className="object-contain" />
+                </div>
+              ) : <span />}
+              {cta?.label ? (
+                <Link
+                  href={cta.href || "/quote"}
+                  className="t-body col-span-3 inline-flex items-center justify-center gap-3 rounded-[6px] bg-[var(--color-v-blue-btn)] px-6 py-3 font-semibold text-white transition hover:brightness-110 sm:col-span-1 sm:col-start-2 sm:w-fit"
+                >
+                  {stripMarker(cta.label)}
+                  <VIcon name="arrowRight" className="h-[18px] w-[18px] shrink-0" strokeWidth={2.2} />
+                </Link>
+              ) : null}
+            </div>
           </div>
         </div>
+
+        {/* Trust strip */}
+        <ul className="mt-5 grid grid-cols-5 rounded-[10px] border border-[var(--color-v-border)] bg-[var(--color-v-panel)] px-2 py-4 lg:px-4">
+          {copy.trust.map((item, index) => (
+            <li key={item.label} className="relative flex flex-col items-center gap-2 px-1 text-center lg:flex-row lg:justify-center lg:gap-4 lg:px-3 lg:text-left">
+              {index ? <span aria-hidden="true" className="absolute left-0 top-1/2 h-[60%] w-px -translate-y-1/2 bg-[var(--color-v-border-strong)]" /> : null}
+              <VIcon name={item.icon} solid={item.icon === "users" || item.icon === "truck"} className="h-7 w-7 shrink-0 text-[var(--color-v-blue)] [[data-theme=light]_&]:text-[var(--color-v-navy)] lg:h-8 lg:w-8" />
+              <span className="t-label text-[var(--color-v-text)]">
+                <span className="block">{fill(item.label, values)}</span>
+                <span className="block text-[var(--color-v-muted)]">{item.sub}</span>
+              </span>
+            </li>
+          ))}
+        </ul>
       </div>
     </section>
   );

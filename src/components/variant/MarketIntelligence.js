@@ -1,245 +1,186 @@
-"use client";
+import ukMap from "@/data/shared/ukDemandMap.json";
+import VIcon from "./VariantIcons";
+import { TagLine } from "./EraMap";
+import { byKeyword, dash, fill, pageValues, splitTags, ui } from "./variantUi";
 
-import { ComposableMap, Geographies, Geography } from "react-simple-maps";
-import { useTheme } from "@/components/shared/themeProvider";
-import MStripe from "@/components/reusableComponents/MStripe";
-import GenIcon from "../generation/GenIcons";
-import { marketIconFor } from "@/components/shared/labelIcons";
-import { variantSectionBg, VariantSectionHeading, primaryBadgeClass } from "./variantSection";
+const copy = ui.marketIntelligence;
+const NUMBER = /^(?:approximately\s+|around\s+|~)?(£?[\d][\d,.]*(?:\s*[–-]\s*£?[\d][\d,.]*)?%?)\s*(.*)$/i;
+const capitalise = (text = "") => (text ? text[0].toUpperCase() + text.slice(1) : text);
 
-const UK_REGIONS_GEO = "/320d/uk-regions-topo.json";
+/**
+ * "N47 rear timing chain - approximately 65% of pre-2016 320d enquiries [TAG]"
+ * -> { title: "N47 rear timing chain", stat: "65%", caption: "of pre-2016 320d enquiries", tags }.
+ */
+function parseMetric(label = "", value = "") {
+  const { main, tags } = splitTags(value);
+  const index = main.indexOf(" - ");
+  const left = index === -1 ? main : main.slice(0, index).trim();
+  const right = index === -1 ? "" : main.slice(index + 3).trim();
+  const failure = /failure/i.test(label);
 
-// England's 9 electoral regions (used as a stand-in for Government Office
-// Regions - free boundary file, see martinjc/UK-GeoJSON). Any region not
-// explicitly called out in the data rolls up into the "Other Regions" share.
-const NAMED_REGIONS = ["London", "South East", "North West"];
+  if (right) {
+    const numbered = right.match(NUMBER);
+    if (numbered && /^\D{0,14}\d/.test(right)) return { title: left, stat: numbered[1], caption: numbered[2], tags };
+    if (failure) return { title: left, stat: "", caption: capitalise(right), tags };
+    return { title: "", stat: left, caption: capitalise(right), tags };
+  }
+  const numbered = left.match(NUMBER);
+  if (numbered && /^[£\d]/.test(left)) return { title: "", stat: numbered[1], caption: numbered[2], tags };
+  return { title: "", stat: left, caption: "", tags };
+}
 
-function parseRegionalDemand(value = "") {
-  const tagMatch = value.match(/\s*\[([^\]]+)\]\s*$/);
-  const tag = tagMatch ? tagMatch[1] : "";
-  const clean = tagMatch ? value.slice(0, tagMatch.index) : value;
-  const regions = clean
+// "London (22%), South East (18%), North West (12%) [TAG]" -> rows + the remaining share as "Other Regions".
+function parseRegions(value = "") {
+  const { main, tags } = splitTags(value);
+  const rows = main
     .split(",")
-    .map((part) => {
-      const match = part.trim().match(/^(.*?)\s*\(([^)]+)\)$/);
-      return match ? { name: match[1].trim(), share: match[2].trim() } : { name: part.trim(), share: "" };
-    })
-    .filter((region) => region.name);
-  return { regions, tag };
+    .map((part) => part.trim().match(/^(.*?)\s*\((\d+(?:\.\d+)?)%\)$/))
+    .filter(Boolean)
+    .map((match) => ({ name: match[1].trim(), share: Number(match[2]) }));
+  const rest = Math.round(100 - rows.reduce((sum, row) => sum + row.share, 0));
+  if (rows.length && rest > 0) rows.push({ name: copy.otherRegions, share: rest, other: true });
+  return { rows, tags };
 }
 
-// Bubble positions approximate where each named region sits on the England map,
-// so the label doesn't have to be squeezed inside the (often narrow) region shape.
-const BUBBLE_POSITION = {
-  London: "right-[10%] top-[58%]",
-  "South East": "right-0 top-[74%]",
-  "North West": "left-0 top-[22%]",
-  "Other Regions": "left-[6%] bottom-0",
-};
-
-// Connector line endpoints (percent of the map container) - start is the edge
-// of each bubble facing the map, end is roughly where that region sits on it.
-const CONNECTOR_LINE = {
-  London: { x1: 78, y1: 62, x2: 61, y2: 56 },
-  "South East": { x1: 88, y1: 76, x2: 66, y2: 68 },
-  "North West": { x1: 12, y1: 26, x2: 36, y2: 22 },
-  "Other Regions": { x1: 18, y1: 92, x2: 42, y2: 78 },
-};
-
-// Splits a combined metric string like "N47 rear timing chain - approximately 65% of
-// pre-2016 320d enquiries [PATTERN DATA]" into a headline stat ("65%"), an optional
-// title line ("N47 rear timing chain"), descriptive subtext, and the trailing tag.
-function parseMetric(value = "") {
-  const tagMatch = value.match(/\s*\[([^\]]+)\]\s*$/);
-  const tag = tagMatch ? tagMatch[1] : "";
-  const clean = (tagMatch ? value.slice(0, tagMatch.index) : value).trim();
-
-  const numberLead = /^(?:approximately\s+)?(£[\d,.]+|[\d,.]+%|[\d,.]+)\s*(.*)$/i;
-
-  const dashIndex = clean.indexOf(" - ");
-  if (dashIndex !== -1) {
-    const left = clean.slice(0, dashIndex).trim();
-    const right = clean.slice(dashIndex + 3).trim();
-    const rightMatch = right.match(numberLead);
-    if (rightMatch) {
-      return { title: left, stat: rightMatch[1], subtext: rightMatch[2].trim(), tag };
-    }
-    return { title: "", stat: left, subtext: right, tag };
-  }
-
-  const leadMatch = clean.match(numberLead);
-  if (leadMatch && /^[\d£]/.test(clean)) {
-    return { title: "", stat: leadMatch[1], subtext: leadMatch[2].trim(), tag };
-  }
-  return { title: "", stat: clean, subtext: "", tag };
+// Map regions a data row covers ("Midlands" covers East and West Midlands, "East of England" is "Eastern").
+function regionMatches(rowName, mapName) {
+  const row = rowName.toLowerCase().replace(/^east of england$/, "eastern").replace(/^yorkshire.*$/, "yorkshire and the humber");
+  const map = mapName.toLowerCase();
+  return map === row || (row === "midlands" && map.endsWith("midlands")) || (row === "north" && (map === "north east" || map === "north west"));
 }
 
-function regionShare(regions, name) {
-  const match = regions.find((region) => region.name === name);
-  if (!match) return 0;
-  const num = parseFloat(match.share);
-  return Number.isNaN(num) ? 0 : num;
-}
+const SHADES = ["var(--color-v-map-5)", "var(--color-v-map-4)", "var(--color-v-map-3)"];
+// Bubble slots around the map (viewBox units): two on the right, two on the left.
+const SLOTS = { right: [[372, 300], [392, 410]], left: [[52, 345], [62, 470]] };
 
-function fillForRegionGeoName(geoName, regions, isDark) {
-  const isNamed = NAMED_REGIONS.includes(geoName);
-  const share = isNamed ? regionShare(regions, geoName) : regionShare(regions, "Other Regions") / 6;
-  const intensity = Math.min(share / 25, 1);
-  const alpha = 0.15 + intensity * (isDark ? 0.55 : 0.45);
-  if (isDark) {
-    return `rgba(216, 217, 213, ${alpha.toFixed(2)})`;
-  }
-  return `rgba(17, 18, 16, ${alpha.toFixed(2)})`;
-}
+function DemandMap({ rows }) {
+  const [, , width, height] = ukMap.viewBox;
+  const named = rows.filter((row) => !row.other);
+  const fillFor = (region) => {
+    const rank = named.findIndex((row) => regionMatches(row.name, region.name));
+    if (rank !== -1) return SHADES[Math.min(rank, SHADES.length - 1)];
+    return region.country === "England" ? "var(--color-v-map-2)" : "var(--color-v-map-1)";
+  };
 
-function RegionalDemandMap({ regions, isDark }) {
-  const otherShare = regionShare(regions, "Other Regions");
-  const bubbleRegions = [
-    ...regions.filter((region) => NAMED_REGIONS.includes(region.name)),
-    ...(otherShare ? [{ name: "Other Regions", share: `${otherShare}%` }] : []),
-  ];
+  // Each bubble points at its region; "Other Regions" points at the largest unnamed English region.
+  const target = (row) => {
+    const hits = ukMap.regions.filter((region) => (row.other ? region.name === "South West" : regionMatches(row.name, region.name)));
+    if (!hits.length) return null;
+    return [hits.reduce((s, r) => s + r.cx, 0) / hits.length, hits.reduce((s, r) => s + r.cy, 0) / hits.length];
+  };
+  const bubbles = rows
+    .map((row) => ({ ...row, at: target(row) }))
+    .filter((row) => row.at)
+    .slice(0, 4);
+  const byX = [...bubbles].sort((a, b) => b.at[0] - a.at[0]);
+  const right = byX.slice(0, 2).sort((a, b) => a.at[1] - b.at[1]);
+  const left = byX.slice(2).sort((a, b) => a.at[1] - b.at[1]);
+  const placed = [...right.map((row, i) => ({ ...row, slot: SLOTS.right[i] })), ...left.map((row, i) => ({ ...row, slot: SLOTS.left[i] }))];
 
   return (
-    <div className="flex h-full flex-col rounded-xl border border-[var(--color-border)] bg-[var(--color-surface)] p-4">
-      <p className="font-heading text-[1.05rem] font-bold uppercase tracking-wide text-[var(--color-text)] md:text-[1.15rem]">Regional Demand Breakdown</p>
-      <div className="relative mt-4 min-h-[320px] w-full flex-1">
-        <ComposableMap
-          projection="geoMercator"
-          projectionConfig={{ center: [-1.8, 52.7], scale: 3200 }}
-          className="absolute inset-0 h-full w-full"
-        >
-          <Geographies geography={UK_REGIONS_GEO}>
-            {({ geographies }) =>
-              geographies.map((geo) => {
-                const name = geo.properties.EER13NM;
-                return (
-                  <Geography
-                    key={geo.rsmKey}
-                    geography={geo}
-                    fill={fillForRegionGeoName(name, regions, isDark)}
-                    stroke="var(--color-surface)"
-                    strokeWidth={0.75}
-                    style={{ default: { outline: "none" }, hover: { outline: "none" }, pressed: { outline: "none" } }}
-                  />
-                );
-              })
-            }
-          </Geographies>
-        </ComposableMap>
-
-        <svg viewBox="0 0 100 100" preserveAspectRatio="none" className="pointer-events-none absolute inset-0 z-[5] h-full w-full">
-          {bubbleRegions.map((region) => {
-            const line = CONNECTOR_LINE[region.name];
-            if (!line) return null;
-            const midX = (line.x1 + line.x2) / 2;
-            const midY = Math.min(line.y1, line.y2) - 6;
-            return (
-              <path
-                key={region.name}
-                d={`M ${line.x1} ${line.y1} Q ${midX} ${midY} ${line.x2} ${line.y2}`}
-                fill="none"
-                stroke="var(--color-primary)"
-                strokeWidth="0.6"
-                strokeLinecap="round"
-                opacity="0.55"
-                vectorEffect="non-scaling-stroke"
-              />
-            );
-          })}
-        </svg>
-
-        {bubbleRegions.map((region) => (
-          <div
-            key={region.name}
-            className={`absolute flex aspect-square h-14 w-14 shrink-0 flex-col items-center justify-center rounded-full border border-[var(--color-primary)] bg-[var(--color-surface)] p-1 text-center shadow-[0_8px_20px_var(--color-shadow)] md:h-20 md:w-20 md:p-1.5 ${BUBBLE_POSITION[region.name] || ""}`}
-          >
-            <span className="text-[12px] font-bold leading-none text-[var(--color-primary)] md:text-[0.95rem]">{region.share}</span>
-            <span className="lg:text-[15px] mt-1 text-[12px] leading-[1.1] text-[var(--color-text-muted)] md:text-[13px]">{region.name}</span>
-          </div>
+    <div className="relative mx-auto w-full max-w-[460px]" style={{ aspectRatio: `${width} / ${height}` }}>
+      <svg viewBox={ukMap.viewBox.join(" ")} className="absolute inset-0 h-full w-full" role="img" aria-label={rows.map((row) => `${row.name} ${row.share}%`).join(", ")}>
+        {ukMap.regions.map((region) => (
+          <path key={region.name} d={region.d} fill={fillFor(region)} stroke="var(--color-v-panel)" strokeWidth="1.2" strokeLinejoin="round" />
         ))}
-      </div>
+        {placed.map((row) => (
+          <path
+            key={row.name}
+            d={`M ${row.slot[0]} ${row.slot[1]} Q ${(row.slot[0] + row.at[0]) / 2} ${row.slot[1] - 30} ${row.at[0]} ${row.at[1]}`}
+            fill="none"
+            stroke="var(--color-v-border-strong)"
+            strokeWidth="1.2"
+          />
+        ))}
+      </svg>
+      {placed.map((row) => (
+        <span
+          key={row.name}
+          className="absolute flex h-[17%] w-auto -translate-x-1/2 -translate-y-1/2 flex-col items-center justify-center rounded-full border border-[var(--color-v-border-strong)] bg-[var(--color-v-panel)] text-center shadow-[0_6px_16px_var(--color-v-shadow)]"
+          style={{ left: `${(row.slot[0] / width) * 100}%`, top: `${(row.slot[1] / height) * 100}%`, aspectRatio: "1 / 1" }}
+        >
+          <span className="t-num text-[var(--color-v-blue)]">{row.share}%</span>
+          <span className="t-label max-w-[90%] leading-tight text-[var(--color-v-text)]">{row.name}</span>
+        </span>
+      ))}
     </div>
   );
 }
 
-export default function MarketIntelligence({ data }) {
-  const { theme } = useTheme();
-  if (!data) return null;
+function StatCard({ item }) {
+  const icon = byKeyword(copy.icons, item.label, "icon", "barChart");
+  const metric = parseMetric(item.label, item.value);
+  return (
+    <div className="flex h-full flex-col rounded-[10px] border border-[var(--color-v-border)] bg-[var(--color-v-panel)] p-3.5 shadow-[0_6px_18px_var(--color-v-shadow)] md:p-5">
+      <div className="flex items-start gap-2.5 md:gap-3">
+        <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[var(--color-v-tile)] text-white md:h-11 md:w-11">
+          <VIcon name={icon} className="h-5 w-5" />
+        </span>
+        <p className="t-label min-w-0 pt-0.5 text-[var(--color-v-text)]">
+          {item.label}
+          {metric.title ? <span className="t-body mt-0.5 block font-semibold">{dash(metric.title)}</span> : null}
+        </p>
+      </div>
+      {metric.stat ? <p className="t-h3 mt-3 break-words font-bold text-[var(--color-v-blue)] md:mt-4 lg:text-[length:var(--fs-h4)]">{metric.stat}</p> : null}
+      {metric.caption ? <p className="t-body mt-2 text-[var(--color-v-text)]">{dash(metric.caption)}</p> : null}
+      <TagLine tags={metric.tags} className="mt-2" />
+    </div>
+  );
+}
 
-  const isDark = theme === "dark";
+function RegionCard({ item, regions }) {
+  return (
+    <div className="flex h-full flex-col rounded-[10px] border border-[var(--color-v-border)] bg-[var(--color-v-panel)] p-3.5 shadow-[0_6px_18px_var(--color-v-shadow)] md:p-5">
+      <div className="flex items-center gap-2.5 md:gap-3">
+        <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[var(--color-v-tile)] text-white md:h-11 md:w-11">
+          <VIcon name="barChart" className="h-5 w-5" />
+        </span>
+        <p className="t-label text-[var(--color-v-text)]">{item.label}</p>
+      </div>
+      <dl className="t-body mt-4">
+        {regions.rows.map((row) => (
+          <div key={row.name} className="flex items-center justify-between gap-3 border-t border-[var(--color-v-border)] py-1.5 first:border-t-0">
+            <dt className="text-[var(--color-v-text)]">{row.name}</dt>
+            <dd className="font-semibold text-[var(--color-v-text)]">{row.share}%</dd>
+          </div>
+        ))}
+      </dl>
+      <TagLine tags={regions.tags} className="mt-2" />
+    </div>
+  );
+}
 
-  const items = data.items || [];
-  const regionalItem = items.find((item) => item.label === "Regional Demand");
-  const { regions, tag } = regionalItem ? parseRegionalDemand(regionalItem.value) : { regions: [], tag: "" };
+export default function MarketIntelligence({ data, vehicle }) {
+  const items = data?.items || [];
+  if (!items.length) return null;
+  const values = pageValues(vehicle);
+  const regionalItem = items.find((item) => /regional/i.test(item.label));
+  const regions = regionalItem ? parseRegions(regionalItem.value) : { rows: [], tags: [] };
 
   return (
-    <section className={`w-full overflow-x-hidden border-t border-[var(--color-border)] py-5 text-[var(--color-text)] md:py-6 ${variantSectionBg(isDark, false)}`}>
-      <div className="relative mx-auto w-full max-w-8xl px-4 md:px-8">
-        <div className="grid grid-cols-1 gap-6 lg:grid-cols-12">
-          <div className="lg:col-span-8">
-            <VariantSectionHeading title="Market Intelligence" />
-            <div className="mt-3">
-              <MStripe />
-            </div>
-
-            {items.length > 0 ? (
-              <div className="mt-6 grid grid-cols-2 gap-3 lg:grid-cols-3">
-                {items.map((item, index) => {
-                  if (item.label === "Regional Demand") {
-                    return (
-                      <div key={item.label} className="glass-panel flex flex-col gap-2 rounded-md p-4">
-                        <div className="flex items-center gap-3">
-                          <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-[var(--color-primary-soft)] text-[var(--color-primary)]">
-                            <GenIcon name={marketIconFor(item.label)} className="h-8 w-8 md:h-6 md:w-6" />
-                          </span>
-                          <p className="text-[0.88rem] font-semibold uppercase tracking-wide text-[var(--color-primary)] md:text-[0.95rem]">{item.label}</p>
-                        </div>
-                        <div className="flex flex-col">
-                          {regions.map((region) => (
-                            <div key={region.name} className="flex items-center justify-between border-t border-[var(--color-border)] py-1.5 first:border-t-0 first:pt-0">
-                              <span className="lg:text-[15px] text-[0.78rem] text-[var(--color-text-muted)]">{region.name}</span>
-                              <span className="lg:text-[15px] text-[0.8rem] font-semibold text-[var(--color-text)]">{region.share}</span>
-                            </div>
-                          ))}
-                        </div>
-                        {tag ? <p className="lg:text-[15px] text-[12px] font-semibold uppercase tracking-wide text-[var(--color-text-soft)]">{tag}</p> : null}
-                      </div>
-                    );
-                  }
-                  const { title, stat, subtext, tag: metricTag } = parseMetric(item.value);
-                  return (
-                    <div key={item.label} className="flex flex-col justify-between rounded-xl border border-[var(--color-border)] bg-[var(--color-surface)] p-5 shadow-sm">
-                      <div className="flex items-center gap-3">
-                        <span className={`flex h-12 w-12 shrink-0 items-center justify-center rounded-full ${primaryBadgeClass(isDark)}`}>
-                          <GenIcon name={marketIconFor(item.label)} inverted className="h-10 w-10 md:h-8 md:w-8" />
-                        </span>
-                        <div className="flex min-w-0 flex-col gap-0.5">
-                          <p className="text-[0.88rem] font-semibold leading-snug text-[var(--color-text)] md:text-[0.95rem]">{item.label}</p>
-                          {title ? <p className="lg:text-[15px] text-[0.8rem] font-bold leading-tight text-[var(--color-text)]">{title}</p> : null}
-                        </div>
-                      </div>
-
-                      <p className="font-heading mt-4 text-[16px] font-bold leading-[1.3] text-[var(--color-primary)] md:text-[28px] md:leading-none">{stat}</p>
-
-                      <div className="mt-2 flex flex-col gap-1">
-                        {subtext ? <p className="lg:text-[15px] text-[12px] text-[var(--color-text-muted)]">{subtext}</p> : null}
-                        {metricTag ? (
-                          <p className="lg:text-[15px] mt-1 text-[12px] font-semibold uppercase tracking-wider text-[var(--color-primary)]">[{metricTag}]</p>
-                        ) : null}
-                      </div>
-                    </div>
-                  );
-                })}
-              </div>
-            ) : null}
+    <section className="section-y border-t border-[var(--color-v-border)] bg-[var(--color-v-page)] text-[var(--color-v-text)]">
+      <div className="site-container grid gap-6 lg:grid-cols-[minmax(0,1.9fr)_minmax(0,1fr)] lg:gap-6">
+        <div className="min-w-0">
+          <h2 className="t-h2">{copy.h2}</h2>
+          <p className="t-p mt-2 text-[var(--color-v-text)]">{fill(copy.subtitle, values)}</p>
+          <div className="mt-6 grid grid-cols-2 gap-3 md:grid-cols-3 lg:gap-4">
+            {items.map((item) =>
+              item === regionalItem && regions.rows.length ? (
+                <RegionCard key={item.label} item={item} regions={regions} />
+              ) : (
+                <StatCard key={item.label} item={item} />
+              ),
+            )}
           </div>
-
-          {regions.length > 0 ? (
-            <div className="lg:col-span-4 lg:h-full">
-              <RegionalDemandMap regions={regions} isDark={isDark} />
-            </div>
-          ) : null}
         </div>
+        {regions.rows.length ? (
+          <div className="flex flex-col rounded-[10px] border border-[var(--color-v-border)] bg-[var(--color-v-panel)] p-5 shadow-[0_6px_18px_var(--color-v-shadow)] lg:p-6">
+            <h3 className="t-h6 text-[var(--color-v-text)]">{copy.mapTitle}</h3>
+            <div className="mt-4 flex flex-1 items-center">
+              <DemandMap rows={regions.rows} />
+            </div>
+          </div>
+        ) : null}
       </div>
     </section>
   );

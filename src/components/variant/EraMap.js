@@ -1,236 +1,246 @@
-"use client";
-
 import Image from "next/image";
-import { useState } from "react";
-import { useTheme } from "@/components/shared/themeProvider";
-import MStripe from "@/components/reusableComponents/MStripe";
-import GenIcon from "../generation/GenIcons";
-import { variantSectionBg, splitSectionH2, tableHeaderClass, primaryBadgeClass } from "./variantSection";
+import VIcon, { Stars } from "./VariantIcons";
+import { Disclosure } from "./VariantToggles";
+import { RICH_LINKS, countWord, dash, fill, plain, splitTags, parseStars, titleCaseShouting, ui } from "./variantUi";
 
-const DESKTOP_COLS = "grid-cols-[96px_110px_1.3fr_1.2fr_1.1fr_1.8fr]";
+const copy = ui.eraMap;
+const LINKS = "[&_a]:font-[inherit] [&_a]:text-inherit hover:[&_a]:underline";
 
-const TRUST_POINTS = [
-  { icon: "dollar", label: "Real UK Cost Data" },
-  { icon: "shield", label: "Verified Reliability" },
-  { icon: "expert", label: "Expert Insights" },
-  { icon: "calendar", label: "Updated for 2025" },
-];
-
-// Splits a trailing "[TAG]" or "[TAG - detail]" marker off a value string,
-// e.g. "£2,800-£4,500 [PLACEHOLDER - confirm vs cost sheet]" -> main/tag.
-function splitBracketTag(value = "") {
-  const match = value.match(/^(.*?)\s*\[([^\]]+)\]\s*$/);
-  if (!match) return { main: value, tag: "" };
-  return { main: match[1].trim(), tag: match[2] };
-}
-
-function GenerationBadge({ generation, className = "", isDark }) {
+/** Blue tag line: "[BMW-VERIFIED]". */
+export function TagLine({ tags = [], className = "" }) {
+  if (!tags.length) return null;
   return (
-    <span
-      className={`lg:text-[15px] absolute left-0 top-0 flex h-full w-12 items-start justify-center pt-1 text-[12px] font-bold ${primaryBadgeClass(isDark)} ${className}`}
-      style={{ clipPath: "polygon(0 0, 100% 0, 45% 100%, 0 100%)" }}
-    >
-      {generation}
+    <span className={`t-label block text-[var(--color-v-blue)] ${className}`}>
+      {tags.map((tag) => `[${tag}]`).join(" ")}
     </span>
   );
 }
 
-// Each row's own generation photo is set server-side (row.image); no photo leaves the slot empty.
-function carAlt(generation = "") {
-  return `BMW ${String(generation).replace(/<[^>]*>/g, "")}`;
-}
-
-function GenerationThumb({ generation, image, isDark, imageOnly = false }) {
+// "M47 (M47D20 → M47TU → M47TU2)": codes in weight 600, the bracketed detail in regular weight.
+function EngineCode({ value, align = "center" }) {
+  const parts = String(value || "").split(/(\([^)]*\))/).filter((part) => part.trim());
   return (
-    <div className={`relative w-full ${imageOnly ? "h-14" : "h-16"}`}>
-      {!imageOnly ? <GenerationBadge generation={generation} isDark={isDark} /> : null}
-      {image ? (
-        <Image
-          src={image}
-          alt={carAlt(generation)}
-          fill
-          className={`object-contain ${imageOnly ? "" : "relative z-10"}`}
-          sizes={imageOnly ? "96px" : "130px"}
-        />
-      ) : null}
-    </div>
+    <span className={`block ${RICH_LINKS} ${align === "center" ? "text-center" : "text-left"}`}>
+      {parts.map((part, index) =>
+        part.startsWith("(") ? (
+          <span key={index} className={`block font-normal text-[var(--color-v-muted)] ${align === "left" ? "t-label" : ""}`} dangerouslySetInnerHTML={{ __html: part }} />
+        ) : (
+          <span key={index} className="block font-semibold text-[var(--color-v-text)]" dangerouslySetInnerHTML={{ __html: part.trim() }} />
+        ),
+      )}
+    </span>
   );
 }
 
-function DesktopRow({ row, isDark }) {
-  const rowClass = isDark ? "bg-[var(--color-primary)] text-white" : "bg-[var(--color-table-surface)] text-[var(--color-text)]";
-  const cellDivider = isDark ? "border-white/15" : "border-[var(--color-border)]";
-  const mutedText = isDark ? "text-white/70" : "text-[var(--color-text-muted)]";
-  const borderBottom = isDark ? "border-white/15" : "border-[var(--color-border)]";
+function starColor(rating) {
+  return rating >= 4 ? "var(--color-v-star-green)" : "var(--color-v-star-amber)";
+}
 
+// "★★★☆☆ pre-facelift / ★★★★☆ post-facelift [TAG]" -> one star row per part, divided.
+function Reliability({ value, align = "center", starClass = "h-5 w-5" }) {
+  const { main, tags } = splitTags(value);
+  const parts = main.split(/\s+\/\s+(?=[★☆])/).map(parseStars).filter(Boolean);
+  if (!parts.length) {
+    return (
+      <span className={`block ${align === "center" ? "text-center" : "text-left"}`}>
+        <span className="block" dangerouslySetInnerHTML={{ __html: main }} />
+        <TagLine tags={tags} />
+      </span>
+    );
+  }
   return (
-    <div className={`lg:text-[15px] grid ${DESKTOP_COLS} items-stretch gap-px ${rowClass} text-[0.82rem] border-b ${borderBottom} last:border-b-0`}>
-      <div className="flex items-center px-2 py-2">
-        <GenerationThumb generation={row.generation} image={row.image} isDark={isDark} imageOnly />
-      </div>
-      <span className={`flex items-center px-3 border-r ${cellDivider}`} dangerouslySetInnerHTML={{ __html: row.years }} />
-      <span className={`flex items-center px-3 ${mutedText} border-r ${cellDivider}`} dangerouslySetInnerHTML={{ __html: row.engineCode }} />
-      <span className={`flex items-center px-3 font-semibold text-[var(--color-primary)] border-r ${cellDivider}`} dangerouslySetInnerHTML={{ __html: row.reliability }} />
-      <span className={`flex items-center px-3 font-semibold border-r ${cellDivider}`} dangerouslySetInnerHTML={{ __html: row.reconCost }} />
-      <span className={`flex items-center px-3 py-3 leading-[1.4] ${mutedText}`} dangerouslySetInnerHTML={{ __html: row.eraNote }} />
-    </div>
+    <span className={`flex flex-col gap-2 ${align === "center" ? "items-center text-center" : "items-start text-left"}`}>
+      {parts.map((part, index) => (
+        <span key={index} className={`flex flex-col gap-1 ${align === "center" ? "items-center" : "items-start"} ${index ? "w-full border-t border-[var(--color-v-border)] pt-2" : ""}`}>
+          <Stars rating={part.rating} className={starClass} color={starColor(part.rating)} />
+          {part.caption ? <span className="t-label text-[var(--color-v-muted)]">{part.caption}</span> : null}
+        </span>
+      ))}
+      <TagLine tags={tags} />
+    </span>
   );
 }
 
-// Mobile: a collapsible accordion card per generation - a spacious 3-column
-// grid header (generation badge/years/thumbnail | engine code | reliability
-// + recon cost, each split from their trailing [TAG]), chevron pinned to the
-// card's top-right corner; era note revealed only when expanded.
-function MobileCard({ row, isOpen, onToggle, isDark }) {
-  const reliability = splitBracketTag(row.reliability);
-  const reconCost = splitBracketTag(row.reconCost);
+// "£3,000–£5,200 (N47) / £3,400–£5,800 (B47) [PLACEHOLDER]"
+function ReconCost({ value, align = "center" }) {
+  const { main, tags } = splitTags(value);
+  return (
+    <span className={`block ${align === "center" ? "text-center" : "text-left"}`}>
+      {main.split(/\s+\/\s+/).map((part, index) => {
+        const match = part.match(/^(.*?)\s*(\([^)]*\))$/);
+        return (
+          <span key={index} className="t-body block font-semibold text-[var(--color-v-blue)] lg:whitespace-nowrap">
+            {match ? match[1] : part}
+            {match ? <span className="t-label font-normal"> {match[2]}</span> : null}
+          </span>
+        );
+      })}
+      <TagLine tags={tags} className="mt-0.5" />
+    </span>
+  );
+}
+
+function CarImage({ src, generation, sizes }) {
+  if (!src) return null;
+  return (
+    <span className="relative mt-1 block aspect-[16/9] w-full max-w-[150px]">
+      <Image src={src} alt={`BMW ${plain(generation)}`} fill sizes={sizes} className="object-contain object-left" />
+    </span>
+  );
+}
+
+function MobileCard({ row }) {
+  const summary = (
+    <span className="grid min-w-0 flex-1 grid-cols-[minmax(0,0.8fr)_minmax(0,0.95fr)_minmax(0,1.25fr)] gap-2 [overflow-wrap:anywhere] sm:gap-3">
+      <span className="flex min-w-0 flex-col items-start gap-1.5">
+        <span className="t-body max-w-full rounded-[6px] bg-[var(--color-v-blue-btn)] px-2.5 py-1 font-semibold text-white [overflow-wrap:anywhere]" dangerouslySetInnerHTML={{ __html: row.generation }} />
+        <span className="t-body text-[var(--color-v-text)]" dangerouslySetInnerHTML={{ __html: row.years }} />
+        <CarImage src={row.image} generation={row.generation} sizes="120px" />
+      </span>
+      <span className="min-w-0 border-l border-[var(--color-v-border)] pl-2 sm:pl-3">
+        <span className="t-label block text-[var(--color-v-soft)]">{copy.columns[2]}</span>
+        <span className="t-body mt-1 block">
+          <EngineCode value={row.engineCode} align="left" />
+        </span>
+      </span>
+      <span className="flex min-w-0 flex-col gap-3 border-l border-[var(--color-v-border)] pl-2 sm:pl-3">
+        <span>
+          <span className="t-label block text-[var(--color-v-soft)]">{copy.columns[3]}</span>
+          <span className="mt-1 block">
+            <Reliability value={row.reliability} align="left" starClass="h-4 w-4" />
+          </span>
+        </span>
+        <span>
+          <span className="t-label block text-[var(--color-v-soft)]">{copy.columns[4]}</span>
+          <span className="mt-1 block">
+            <ReconCost value={row.reconCost} align="left" />
+          </span>
+        </span>
+      </span>
+    </span>
+  );
 
   return (
-    <div className={`overflow-hidden rounded-md border ${isOpen ? "border-[var(--color-primary)]" : "border-[var(--color-border)]"} bg-[var(--color-surface)]`}>
-      <button type="button" onClick={onToggle} aria-expanded={isOpen} className="relative grid w-full grid-cols-[104px_1fr_1fr] p-3 text-left">
-        <GenIcon name="chevronDown" className={`absolute right-3 top-3 h-4 w-4 shrink-0 text-[var(--color-primary)] transition-transform ${isOpen ? "rotate-180" : ""}`} />
-
-        <div className="flex flex-col items-center gap-0.5 pr-2.5">
-          <span className={`lg:text-[15px] w-full rounded-md px-2 py-0.5 text-center text-[12px] font-bold leading-tight ${primaryBadgeClass(isDark)}`}>{row.generation}</span>
-          <span className="lg:text-[15px] text-center text-[12px] leading-tight text-[var(--color-text-muted)]" dangerouslySetInnerHTML={{ __html: row.years }} />
-          {row.image ? (
-            <div className="relative h-20 w-full">
-              <Image src={row.image} alt={carAlt(row.generation)} fill className="object-contain" sizes="104px" />
-            </div>
-          ) : null}
-        </div>
-
-        <div className="flex min-w-0 flex-col gap-1 border-l border-[var(--color-border)] px-2.5">
-          <p className="lg:text-[15px] text-[12px] font-semibold uppercase tracking-wide text-[var(--color-text-soft)]">Engine Code</p>
-          <p className="lg:text-[15px] text-[0.8rem] font-bold leading-tight text-[var(--color-text)]" dangerouslySetInnerHTML={{ __html: row.engineCode }} />
-        </div>
-
-        <div className="flex min-w-0 flex-col gap-2 border-l border-[var(--color-border)] px-2.5 pr-5">
-          <div>
-            <p className="lg:text-[15px] text-[12px] font-semibold uppercase tracking-wide text-[var(--color-text-soft)]">Reliability</p>
-            <p className="lg:text-[15px] text-[0.85rem] font-bold leading-tight text-[var(--color-primary)]" dangerouslySetInnerHTML={{ __html: reliability.main }} />
-          </div>
-          <div>
-            <p className="lg:text-[15px] text-[12px] font-semibold uppercase tracking-wide text-[var(--color-text-soft)]">Recon Cost (Guide)</p>
-            <p className="lg:text-[15px] text-[0.78rem] font-bold leading-tight text-[var(--color-primary)]" dangerouslySetInnerHTML={{ __html: reconCost.main }} />
-          </div>
-        </div>
-      </button>
-
-      {isOpen ? (
-        <div className="border-t border-[var(--color-border)] px-3.5 py-3">
-          <p className="lg:text-[15px] text-[12px] font-semibold uppercase tracking-wide text-[var(--color-text-soft)]">Era Note</p>
-          <p className="lg:text-[15px] mt-0.5 text-[0.76rem] leading-[1.4] text-[var(--color-text-muted)]" dangerouslySetInnerHTML={{ __html: row.eraNote }} />
-        </div>
-      ) : null}
-    </div>
+    <Disclosure
+      summary={summary}
+      className="rounded-[10px] border border-[var(--color-v-border)] bg-[var(--color-v-panel)] shadow-[0_6px_18px_var(--color-v-shadow)]"
+      headerClassName="flex items-center gap-1.5 p-3.5 sm:gap-2 sm:p-4"
+      chevronClassName="h-5 w-5 text-[var(--color-v-text)]"
+      bodyClassName="mx-4 border-t border-[var(--color-v-border)] pb-4 pt-3"
+    >
+      <p className="t-label text-[var(--color-v-soft)]">{copy.columns[5]}</p>
+      <p className={`t-body mt-1 text-[var(--color-v-text)] ${LINKS}`} dangerouslySetInnerHTML={{ __html: dash(row.eraNote) }} />
+    </Disclosure>
   );
 }
 
 export default function EraMap({ data }) {
-  const { theme } = useTheme();
-  const [openIndex, setOpenIndex] = useState(0);
-  if (!data) return null;
+  const rows = data?.rows || [];
+  if (!rows.length) return null;
 
-  const isDark = theme === "dark";
-  const headerBg = tableHeaderClass(isDark);
-  const titleParts = splitSectionH2(data.title);
-  const headerDivider = isDark ? "border-white/20" : "border-white/25";
-  const bodyWrapperBg = isDark ? "bg-[var(--color-primary)]" : "bg-[var(--color-table-surface)]";
+  const count = countWord(rows.length);
+  const plural = rows.length === 1 ? 0 : 1;
+  const subtitle = fill(copy.subtitle, { count, generations: copy.generationWord[plural], eras: copy.eraWord[plural] });
+  const cell = "border-r border-[var(--color-v-border)] px-4 py-4 align-middle last:border-r-0";
 
   return (
-    <section className={`w-full overflow-x-hidden py-5 text-[var(--color-text)] md:py-6 ${variantSectionBg(isDark, false)}`}>
-      <div className="relative mx-auto w-full max-w-8xl px-4 md:px-8">
-        <div className="flex flex-col gap-4 md:flex-row md:items-start md:justify-between">
-          <div>
-            <div className="flex items-center gap-2.5">
-              <span
-                className={`hidden h-9 w-9 shrink-0 items-center justify-center rounded-md md:flex ${primaryBadgeClass(isDark)}`}
-              >
-                <GenIcon name="history" inverted className="h-9 w-9 md:h-7 md:w-7" />
-              </span>
-              <h2 className="t-h2">
-                {titleParts.before ? <span dangerouslySetInnerHTML={{ __html: titleParts.before }} /> : null}
-                {titleParts.accent ? (
-                  <>
-                    {titleParts.before ? " " : null}
-                    <span className="text-[var(--color-chrome-bright)]" dangerouslySetInnerHTML={{ __html: titleParts.accent }} />
-                  </>
-                ) : null}
-              </h2>
+    <section id="era-map" className="section-y scroll-mt-24 bg-[var(--color-v-page)] text-[var(--color-v-text)]">
+      <div className="site-container">
+        <div className="flex flex-col gap-5 md:flex-row md:items-start md:justify-between">
+          <div className="flex items-start gap-4 lg:gap-5">
+            <span className="flex h-14 w-14 shrink-0 items-center justify-center rounded-[10px] bg-[var(--color-v-tile)] text-white [[data-theme=dark]_&]:border [[data-theme=dark]_&]:border-[var(--color-v-border-strong)] [[data-theme=dark]_&]:bg-[var(--color-v-panel)] [[data-theme=dark]_&]:text-[var(--color-v-blue)]">
+              <VIcon name="calendarDays" className="h-7 w-7" />
+            </span>
+            <div className="min-w-0">
+              <h2 className="t-h2" dangerouslySetInnerHTML={{ __html: titleCaseShouting(dash(data.title)) }} />
+              <p className="t-p mt-2 text-[var(--color-v-muted)]">{subtitle}</p>
             </div>
-            <div className="mt-3">
-              <MStripe />
-            </div>
-            <p className="lg:text-[15px] mt-3 max-w-[520px] text-[0.82rem] leading-[1.45] text-[var(--color-text-muted)] md:text-[0.9rem]">
-              Four generations. Four eras. One guide to reliability, costs and what really matters.
-            </p>
           </div>
+          {data.sourceNote ? (
+            <aside className="hidden shrink-0 items-start gap-3 rounded-[10px] border border-[var(--color-v-border)] bg-[var(--color-v-panel)] p-4 md:flex md:max-w-[300px] lg:max-w-[320px]">
+              <VIcon name="info" className="mt-0.5 h-6 w-6 shrink-0 text-[var(--color-v-blue)]" />
+              <p className="t-label text-[var(--color-v-muted)]">{dash(data.sourceNote)}</p>
+            </aside>
+          ) : null}
         </div>
 
-        <div className="mt-6 flex flex-col gap-3 md:hidden">
-          {data.rows?.map((row, index) => (
-            <MobileCard
-              key={row.generation}
-              row={row}
-              isOpen={openIndex === index}
-              onToggle={() => setOpenIndex(openIndex === index ? null : index)}
-              isDark={isDark}
-            />
+        {/* Phones and tablets: one card per generation */}
+        <div className="mt-6 flex flex-col gap-4 lg:hidden">
+          {rows.map((row, index) => (
+            <MobileCard key={`${plain(row.generation)}-${index}`} row={row} />
           ))}
         </div>
 
-        <div className="mt-6 hidden overflow-hidden rounded-md border border-[var(--color-border)] bg-[var(--color-table-surface)] shadow-[0_14px_40px_var(--color-shadow)] backdrop-blur md:block">
-          <div className={`lg:text-[15px] grid ${DESKTOP_COLS} gap-px ${headerBg} px-2 py-2.5 text-[0.78rem] font-semibold`}>
-            {data.columns?.map((col) => (
-              <span key={col} className={`flex items-center px-3 border-r ${headerDivider} last:border-r-0`}>{col}</span>
-            ))}
-          </div>
-          <div className={bodyWrapperBg}>
-            {data.rows?.map((row) => (
-              <DesktopRow key={row.generation} row={row} isDark={isDark} />
-            ))}
-          </div>
+        {/* Desktop table */}
+        <div className="mt-7 hidden overflow-hidden rounded-[10px] border border-[var(--color-v-border)] bg-[var(--color-v-panel)] shadow-[0_10px_30px_var(--color-v-shadow)] lg:block">
+          <table className="t-body w-full table-fixed border-collapse">
+            <colgroup>
+              <col className="w-[17%]" />
+              <col className="w-[11%]" />
+              <col className="w-[13.5%]" />
+              <col className="w-[15.5%]" />
+              <col className="w-[17%]" />
+              <col className="w-[26%]" />
+            </colgroup>
+            <thead>
+              <tr className="bg-[var(--color-v-navy)] text-white [[data-theme=dark]_&]:border-b [[data-theme=dark]_&]:border-[var(--color-v-border-strong)]">
+                {copy.columns.map((column) => (
+                  <th key={column} scope="col" className="t-label border-r border-[var(--color-v-navy-line)] px-4 py-3.5 text-center font-semibold last:border-r-0">
+                    {column}
+                  </th>
+                ))}
+              </tr>
+            </thead>
+            <tbody>
+              {rows.map((row, index) => (
+                <tr key={`${plain(row.generation)}-${index}`} className="border-t border-[var(--color-v-border)] first:border-t-0">
+                  <td className={`${cell} text-left`}>
+                    <span className="t-h6 block font-semibold text-[var(--color-v-blue)] [overflow-wrap:anywhere]" dangerouslySetInnerHTML={{ __html: row.generation }} />
+                    <CarImage src={row.image} generation={row.generation} sizes="150px" />
+                  </td>
+                  <td className={`${cell} text-center`} dangerouslySetInnerHTML={{ __html: row.years }} />
+                  <td className={cell}>
+                    <EngineCode value={row.engineCode} />
+                  </td>
+                  <td className={cell}>
+                    <Reliability value={row.reliability} />
+                  </td>
+                  <td className={cell}>
+                    <ReconCost value={row.reconCost} />
+                  </td>
+                  <td className={`${cell} text-left text-[var(--color-v-text)] ${LINKS}`} dangerouslySetInnerHTML={{ __html: dash(row.eraNote) }} />
+                </tr>
+              ))}
+            </tbody>
+          </table>
         </div>
 
-        <div className="mt-6 flex flex-col items-start gap-5 rounded-xl border border-[var(--color-border)] bg-[var(--color-card)] px-5 py-4 shadow-lg lg:flex-row lg:items-center lg:justify-between md:px-6 md:py-4">
-          <div className="flex items-start gap-4 lg:max-w-[45%] lg:items-center">
-            <span className={`flex h-12 w-12 shrink-0 items-center justify-center rounded-full border text-[var(--color-primary)] ${isDark ? "border-white/15 bg-white/5" : "border-[var(--color-border)] bg-[var(--color-surface)]"}`}>
-              <GenIcon name="shield" className="h-10 w-10 md:h-8 md:w-8" />
+        {/* Why use this era map? */}
+        <div className="mt-6 flex flex-col gap-5 rounded-[10px] border border-[var(--color-v-border)] bg-[var(--color-v-panel-soft)] p-5 lg:flex-row lg:items-center lg:gap-6 lg:px-6">
+          <div className="flex items-center gap-4 lg:max-w-[44%]">
+            <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border border-[var(--color-v-border-strong)] bg-[var(--color-v-panel)] text-[var(--color-v-navy)] [[data-theme=dark]_&]:text-[var(--color-v-blue)]">
+              <VIcon name="shieldCheck" className="h-6 w-6" />
             </span>
             <div>
-              <p className="text-[0.95rem] font-bold text-[var(--color-text)]">Why use this era map?</p>
-              <p
-                className="lg:text-[15px] mt-1 text-[0.8rem] leading-[1.45] text-[var(--color-text-muted)]"
-                dangerouslySetInnerHTML={{
-                  __html:
-                    data.sourceNote ||
-                    "Every cost guide, reliability rating and engine code on this page is aligned to the data above. This keeps everything consistent and trustworthy.",
-                }}
-              />
+              <p className="t-h6 text-[var(--color-v-text)]">{copy.whyTitle}</p>
+              <p className="t-label mt-1 text-[var(--color-v-muted)]">{copy.whyText}</p>
             </div>
           </div>
-
-          <span aria-hidden="true" className="hidden h-12 w-px shrink-0 bg-white/10 lg:block" />
-
-          <div className="flex w-full flex-wrap items-center justify-between gap-6 lg:w-auto lg:flex-nowrap">
-            {TRUST_POINTS.map((point, index) => (
-              <div key={point.label} className="flex items-center gap-4">
-                {index > 0 ? (
-                  <span aria-hidden="true" className="h-6 w-px shrink-0 bg-[var(--color-border)] lg:h-8" />
-                ) : null}
-                <div className="flex items-center gap-2">
-                  <GenIcon name={point.icon} className="h-11 w-11 md:h-9 md:w-9 shrink-0" />
-                  <span className="lg:text-[15px] whitespace-nowrap text-[0.78rem] font-semibold text-[var(--color-text)]">{point.label}</span>
-                </div>
-              </div>
+          <span aria-hidden="true" className="hidden h-12 w-px shrink-0 bg-[var(--color-v-border-strong)] lg:block" />
+          <ul className="grid flex-1 grid-cols-2 gap-4 sm:grid-cols-4 lg:gap-0">
+            {copy.points.map((point, index) => (
+              <li key={point.label} className="relative flex items-center gap-3 lg:justify-center lg:px-3">
+                {index ? <span aria-hidden="true" className="absolute left-0 top-1/2 hidden h-8 w-px -translate-y-1/2 bg-[var(--color-v-border-strong)] lg:block" /> : null}
+                <VIcon name={point.icon} className="h-8 w-8 shrink-0 text-[var(--color-v-blue)]" strokeWidth={1.6} />
+                <span className="t-label leading-[1.3] text-[var(--color-v-text)]">
+                  {point.label.split("|").map((line) => (
+                    <span key={line} className="block whitespace-nowrap">{line}</span>
+                  ))}
+                </span>
+              </li>
             ))}
-          </div>
+          </ul>
         </div>
-
-        {data.dataNote ? (
-          <p className="lg:text-[15px] mt-4 text-[12px] leading-[1.5] text-[var(--color-text-soft)]" dangerouslySetInnerHTML={{ __html: data.dataNote }} />
-        ) : null}
       </div>
     </section>
   );

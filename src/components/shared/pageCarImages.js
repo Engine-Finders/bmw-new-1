@@ -3,7 +3,9 @@ import {
   carModelFor,
   createCarPicker,
   engineImageFor,
+  generationHeroCar,
   generationHeroFor,
+  heroBackground,
   heroCarFor,
   modelEngineImage,
 } from "@/components/shared/carImage";
@@ -228,7 +230,10 @@ export function withVariantPageImages(data, parentSlug = "") {
   const engineImage = firstEngineImage(pill, ...engineCodes, ...eraEngines);
   const out = { ...data };
 
-  if (out.hero) out.hero = { ...out.hero, ...hero, vehicle };
+  // Variant hero: BMW's own arch + skyline background with this generation's cut-out car on it.
+  const heroCar = generationHeroCar(key);
+  const background = heroCar ? { light: heroBackground(false), dark: heroBackground(true) } : null;
+  if (out.hero) out.hero = { ...out.hero, ...hero, heroCar, background, vehicle };
 
   if (out.eraMap?.rows) {
     const images = pick(out.eraMap.rows.map((row) => [pill.split("•")[0], parent, stripTags(row.generation), stripTags(row.years)]));
@@ -237,17 +242,17 @@ export function withVariantPageImages(data, parentSlug = "") {
 
   if (out.quotesCta) {
     const [image] = pick([hints]);
-    out.quotesCta = { ...out.quotesCta, image, vehicle };
+    out.quotesCta = { ...out.quotesCta, image, background: heroBackground(true), vehicle };
   }
 
   if (out.repairBuyOrReplace) {
-    const [image] = pick([hints], { view: "side" });
+    const [image] = pick([hints]);
     out.repairBuyOrReplace = { ...out.repairBuyOrReplace, image, engineImage, vehicle };
   }
 
   if (out.buyingChecklist) {
     const [image] = pick([hints]);
-    out.buyingChecklist = { ...out.buyingChecklist, image, vehicle };
+    out.buyingChecklist = { ...out.buyingChecklist, image, background: { light: heroBackground(false), dark: heroBackground(true) }, vehicle };
   }
 
   if (out.engineCodes?.rows) {
@@ -260,7 +265,7 @@ export function withVariantPageImages(data, parentSlug = "") {
 
   if (out.trustCta) {
     const [image] = pick([hints]);
-    out.trustCta = { ...out.trustCta, image, engineImage, vehicle };
+    out.trustCta = { ...out.trustCta, image, engineImage, background: { light: heroBackground(false), dark: heroBackground(true) }, vehicle };
   }
 
   return out;

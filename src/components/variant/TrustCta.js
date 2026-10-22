@@ -1,147 +1,121 @@
-"use client";
-
 import Image from "next/image";
-import { useTheme } from "@/components/shared/themeProvider";
-import CarOnBackground from "@/components/shared/CarOnBackground";
-import MStripe from "@/components/reusableComponents/MStripe";
-import GenIcon from "../generation/GenIcons";
-import { variantSectionBg, VariantSectionHeading, primaryBadgeClass } from "./variantSection";
+import Link from "next/link";
+import VIcon from "./VariantIcons";
+import { Rich, dash, fill, pageValues, stripMarker, ui } from "./variantUi";
 
-const pointIcons = ["shield", "scale", "truck"];
+const copy = ui.trustCta;
 
-// Generic trust guarantees, not tied to page-specific copy - same 5 columns
-// regardless of which variant page this renders on.
-const TICKER_ITEMS = [
-  { icon: "pound-shield", title: "100% Free", text: "No hidden fees" },
-  { icon: "handshake", title: "No Obligation", text: "Get quotes with zero pressure" },
-  { icon: "expert", title: "UK Specialists", text: "20+ vetted experts" },
-  { icon: "shield", title: "12-Month Warranty", text: "As standard" },
-  { icon: "truck", title: "Nationwide Delivery", text: "Supply & fit available" },
-];
+// "Find the best … rely on. Compare prices … confidence." -> heading + paragraph.
+function splitFinal(text = "") {
+  const clean = dash(text).trim();
+  const index = clean.indexOf(". ");
+  if (index === -1) return { title: clean, body: "" };
+  return { title: clean.slice(0, index + 1), body: clean.slice(index + 2) };
+}
 
-export default function TrustCta({ data }) {
-  const { theme } = useTheme();
+export default function TrustCta({ data, vehicle }) {
   if (!data) return null;
-
-  const isDark = theme === "dark";
-  // This car (left) and its engine (right), set server-side, on BMW's own background; desktop only,
-  // so the stacked copy on phones sits on plain background.
-  const carAlt = `BMW ${data.vehicle || ""}`.trim();
-  const headingClass = isDark ? "text-white" : "text-[var(--color-text)]";
-  const bodyTextClass = isDark ? "text-white/80" : "text-[var(--color-text-muted)]";
+  const values = pageValues(vehicle || data.vehicle);
+  const points = data.trustPoints || [];
+  const final = splitFinal(data.finalCta);
+  const button = data.ctaButton;
+  const bg = data.background;
 
   return (
-    <section className={`w-full overflow-x-hidden py-5 text-[var(--color-text)] md:py-6 ${variantSectionBg(isDark, false)}`}>
-      <div className="relative mx-auto w-full max-w-8xl px-4 md:px-8">
-        <VariantSectionHeading title={data.h2} className="max-w-[720px]" />
-        <div className="mt-3">
-          <MStripe />
-        </div>
+    <section className="section-y border-t border-[var(--color-v-border)] bg-[var(--color-v-page)] text-[var(--color-v-text)]">
+      <div className="site-container">
+        <h2 className="t-h2">{data.h2 || fill(copy.h2, values)}</h2>
+        <span aria-hidden="true" className="mt-3 flex h-[3px] w-32">
+          <span className="w-1/2 rounded-l-full bg-[var(--color-v-blue-soft)] [[data-theme=light]_&]:bg-[var(--color-v-border-strong)]" />
+          <span className="w-1/2 rounded-r-full bg-[var(--color-v-blue-btn)]" />
+        </span>
 
-        {data.trustPoints?.length > 0 ? (
-          <ul className="mt-6 grid grid-cols-1 gap-6 md:grid-cols-3">
-            {data.trustPoints.map((point, index) => (
-              <li key={point.title} className="flex flex-col gap-2.5 rounded-2xl border border-[var(--color-border)] bg-[var(--color-surface)] p-5 shadow-sm">
-                <div className="flex items-start gap-4">
-                  <span className={`flex h-12 w-12 shrink-0 items-center justify-center rounded-full ${primaryBadgeClass(isDark)}`}>
-                    <GenIcon name={point.icon || pointIcons[index % pointIcons.length]} inverted className="h-10 w-10 md:h-8 md:w-8" />
-                  </span>
-                  <p className="font-heading min-w-0 pt-1 text-[1.15rem] font-bold leading-snug text-[var(--color-text)] md:text-[1.25rem]">{point.title}</p>
+        {points.length ? (
+          <ul className="mt-6 grid gap-4 md:grid-cols-3">
+            {points.map((point, index) => (
+              <li key={point.title} className="flex items-start gap-5 rounded-[10px] border border-[var(--color-v-border)] bg-[var(--color-v-panel)] p-5 shadow-[0_6px_18px_var(--color-v-shadow)]">
+                <span className="flex h-16 w-16 shrink-0 items-center justify-center rounded-full bg-[var(--color-v-blue-btn)] text-white lg:h-[72px] lg:w-[72px]">
+                  <VIcon name={copy.pointIcons[index % copy.pointIcons.length]} className="h-8 w-8" />
+                </span>
+                <div className="min-w-0">
+                  <h3 className="t-h5 text-[var(--color-v-text)]">{dash(point.title)}</h3>
+                  <Rich as="p" html={point.text} className="t-body mt-2 text-[var(--color-v-muted)]" />
                 </div>
-                <p className="lg:text-[15px] text-[0.85rem] leading-relaxed text-[var(--color-text-muted)] md:text-[0.9rem]" dangerouslySetInnerHTML={{ __html: point.text }} />
               </li>
             ))}
           </ul>
         ) : null}
 
-        {data.finalCta || data.ctaButton ? (
-          <div className="relative mt-6 overflow-hidden rounded-xl border border-[var(--color-border)]">
-            <CarOnBackground
-              src={data.image}
-              alt={carAlt}
-              isDark={isDark}
-              className="absolute inset-0"
-              carClassName="left-[3%] top-[12%] bottom-[8%] hidden w-[26%] md:block"
-              overlayClassName={
-                isDark
-                  ? "bg-[radial-gradient(ellipse_at_center,rgba(2,7,11,0.88)_0%,rgba(2,7,11,0.7)_45%,rgba(2,7,11,0.2)_80%)]"
-                  : "bg-[radial-gradient(ellipse_at_center,rgba(255,255,255,0.92)_0%,rgba(255,255,255,0.75)_45%,rgba(255,255,255,0.15)_80%)]"
-              }
-              sizes="360px"
-            >
-              {data.engineImage ? (
-                <div className="absolute bottom-[8%] right-[3%] top-[12%] hidden w-[22%] md:block">
-                  <Image src={data.engineImage} alt={`${carAlt} engine`} fill className="object-contain" sizes="300px" />
+        {final.title ? (
+          <div className="relative mt-5 overflow-hidden rounded-[12px] border border-[var(--color-v-border)] bg-[var(--color-v-panel-soft)]">
+            {bg ? (
+              <div aria-hidden="true" className="absolute right-0 top-0 h-[60%] w-[60%] opacity-70 md:inset-y-0 md:left-0 md:right-auto md:h-auto md:w-[42%] md:opacity-100">
+                <Image src={bg.light} alt="" fill sizes="40vw" className="object-cover object-[75%_45%] [[data-theme=dark]_&]:hidden" />
+                <Image src={bg.dark} alt="" fill sizes="40vw" className="hidden object-cover object-[75%_45%] [[data-theme=dark]_&]:block" />
+                <div className="absolute inset-0 bg-[linear-gradient(90deg,var(--color-v-panel-soft)_0%,transparent_40%)] md:bg-[linear-gradient(90deg,transparent_55%,var(--color-v-panel-soft)_100%)]" />
+              </div>
+            ) : null}
+            <div className="relative grid gap-5 p-5 md:grid-cols-[minmax(0,0.8fr)_minmax(0,1.2fr)_minmax(0,0.55fr)] md:items-center md:p-6 lg:gap-6">
+              {data.image ? (
+                <div className="pointer-events-none relative hidden aspect-[3/2] md:block">
+                  <span aria-hidden="true" className="absolute inset-x-[8%] bottom-[5%] h-[12%] rounded-[50%] bg-black/35 blur-xl" />
+                  <Image src={data.image} alt={`BMW ${values.variant}`} fill sizes="30vw" className="object-contain" />
                 </div>
               ) : null}
-            </CarOnBackground>
-
-            <div className="relative flex w-full flex-col items-center gap-4 p-5 text-center md:min-h-[200px] md:flex-row md:justify-center md:p-8">
-              <div className="flex max-w-[520px] flex-col items-center gap-3">
-                {data.finalCta ? (
-                  <p className={`font-heading text-[1.15rem] font-bold leading-[1.4] md:text-[1.4rem] ${headingClass}`} dangerouslySetInnerHTML={{ __html: data.finalCta }} />
-                ) : null}
-                {data.ctaButton ? (
-                  <a
-                    href="/quote"
-                    className="lg:text-[15px] btn-cta flex w-full shrink-0 items-center justify-center gap-2 whitespace-nowrap rounded-lg bg-[#189454] px-4 py-2.5 text-center text-[12px] font-bold text-white no-underline shadow-[0_12px_28px_rgba(0,0,0,0.35)] md:w-auto md:px-6 md:py-3 md:text-[13px]"
+              <div className="relative">
+                <div className="relative z-10 max-w-[56%] md:max-w-none">
+                  <p className="t-h5 font-bold text-[var(--color-v-text)] md:text-[length:var(--fs-h4)]">{final.title}</p>
+                  {final.body ? <p className="t-body mt-2 text-[var(--color-v-muted)]">{final.body}</p> : null}
+                </div>
+                {/* Phones: car over the engine on the right */}
+                <div aria-hidden="true" className="pointer-events-none absolute -right-3 top-0 flex w-[50%] flex-col md:hidden">
+                  {data.image ? (
+                    <span className="relative block aspect-[3/2] w-full">
+                      <Image src={data.image} alt="" fill sizes="50vw" className="object-contain" />
+                    </span>
+                  ) : null}
+                  {data.engineImage ? (
+                    <span className="relative -mt-2 ml-[12%] block aspect-square w-[88%]">
+                      <Image src={data.engineImage} alt="" fill sizes="45vw" className="object-contain" />
+                    </span>
+                  ) : null}
+                </div>
+                {button?.label ? (
+                  <Link
+                    href={button.href || "/quote"}
+                    className="t-body relative z-10 mt-5 inline-flex max-w-[56%] items-center justify-center gap-3 rounded-[6px] bg-[var(--color-v-green-btn)] px-5 py-3 font-semibold text-white transition hover:brightness-110 md:max-w-none md:whitespace-nowrap md:px-6"
                   >
-                    {data.ctaButton.label.replace(/\s*→\s*$/, "")}
-                    <GenIcon name="arrow" className="h-4 w-4 shrink-0" />
-                  </a>
+                    {stripMarker(button.label)}
+                    <VIcon name="arrowRight" className="h-[18px] w-[18px] shrink-0" strokeWidth={2.2} />
+                  </Link>
                 ) : null}
               </div>
+              {data.engineImage ? (
+                <div className="pointer-events-none relative hidden aspect-square md:block">
+                  <Image src={data.engineImage} alt="" fill sizes="20vw" className="object-contain" />
+                </div>
+              ) : null}
             </div>
           </div>
         ) : null}
 
-        <div className="mt-6 rounded-xl border border-[var(--color-border)] bg-[var(--color-surface)] p-4">
-          {/* Mobile: 2-per-row with a floating vertical divider between columns and a horizontal divider between rows */}
-          <div className="flex flex-col lg:hidden">
-            {Array.from({ length: Math.ceil(TICKER_ITEMS.length / 2) }, (_, row) => {
-              const pair = TICKER_ITEMS.slice(row * 2, row * 2 + 2);
-              return (
-                <div
-                  key={row}
-                  className={`flex items-stretch py-2.5 first:pt-0 last:pb-0 ${row > 0 ? "border-t border-[var(--color-border)]" : ""}`}
-                >
-                  {pair.map((item, i) => (
-                    <div key={item.title} className="flex flex-1 items-stretch">
-                      {i > 0 ? (
-                        <span aria-hidden="true" className="mx-3 my-1 w-px shrink-0 self-center bg-[var(--color-border)]" style={{ height: "70%" }} />
-                      ) : null}
-                      <div className="flex flex-1 items-center gap-2.5">
-                        <GenIcon name={item.icon} className="h-10 w-10 md:h-8 md:w-8 shrink-0" />
-                        <div className="min-w-0">
-                          <p className="lg:text-[15px] text-[0.8rem] font-semibold leading-tight text-[var(--color-text)]">{item.title}</p>
-                          <p className="lg:text-[15px] text-[12px] leading-tight text-[var(--color-text-muted)]">{item.text}</p>
-                        </div>
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              );
-            })}
-          </div>
-
-          {/* Desktop: single row, floating vertical dividers between every item */}
-          <div className="hidden lg:flex lg:items-stretch">
-            {TICKER_ITEMS.map((item, index) => (
-              <div key={item.title} className="flex flex-1 items-stretch">
-                {index > 0 ? (
-                  <span aria-hidden="true" className="mx-3 my-1 w-px shrink-0 self-center bg-[var(--color-border)]" style={{ height: "70%" }} />
-                ) : null}
-                <div className="flex items-center gap-2.5">
-                  <GenIcon name={item.icon} className="h-10 w-10 md:h-8 md:w-8 shrink-0" />
-                  <div className="min-w-0">
-                    <p className="lg:text-[15px] text-[0.8rem] font-semibold leading-tight text-[var(--color-text)]">{item.title}</p>
-                    <p className="lg:text-[15px] text-[12px] leading-tight text-[var(--color-text-muted)]">{item.text}</p>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
+        {/* Desktop trust row (the phone design ends with the banner) */}
+        <ul className="mt-4 hidden grid-cols-5 rounded-[10px] border border-[var(--color-v-border)] bg-[var(--color-v-panel)] px-4 py-4 md:grid">
+          {copy.trust.map((item, index) => (
+            <li key={item.label} className="relative flex items-center justify-center gap-3 px-2">
+              {index ? <span aria-hidden="true" className="absolute left-0 top-1/2 h-[60%] w-px -translate-y-1/2 bg-[var(--color-v-border-strong)]" /> : null}
+              <VIcon
+                name={item.icon}
+                solid={["tag", "checkCircleSolid", "users", "truck"].includes(item.icon)}
+                className="h-7 w-7 shrink-0 text-[var(--color-v-blue)] [[data-theme=light]_&]:text-[var(--color-v-navy)]"
+              />
+              <span className="t-label min-w-0 text-[var(--color-v-text)]">
+                <span className="block font-semibold">{item.label}</span>
+                <span className="block text-[var(--color-v-muted)]">{item.sub}</span>
+              </span>
+            </li>
+          ))}
+        </ul>
       </div>
     </section>
   );
