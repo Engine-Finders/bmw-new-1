@@ -192,7 +192,7 @@ function CtaButton({ cta, primary, C }) {
       <Icon style={{ width: 24, height: 24, flexShrink: 0 }} />
       <span className="leading-tight">
         <span className="block whitespace-nowrap text-[15px] font-semibold tracking-[0.01em]">{cta.label}</span>
-        <span className="mt-0.5 block whitespace-nowrap text-[13px] opacity-90">{cta.subLabel}</span>
+        <span className="t-label mt-0.5 block whitespace-nowrap opacity-90">{cta.subLabel}</span>
       </span>
     </a>
   );

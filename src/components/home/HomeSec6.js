@@ -138,7 +138,7 @@ function Desktop({ data, isDark }) {
           <p className="t-p mt-3 max-w-[600px]" style={{ color: C.para }}>{data.subHeadline}</p>
         </div>
 
-        <div className="relative mt-8 grid grid-cols-[minmax(0,1.9fr)_minmax(0,1fr)] gap-4">
+        <div className="relative mt-8 grid grid-cols-[minmax(0,4fr)_minmax(0,1fr)] gap-4">
           {/* Decision matrix */}
           <div className={`${card} overflow-hidden`} style={cardStyle}>
             <h3 className="t-label flex items-center gap-3 px-5 py-4 font-semibold uppercase tracking-[0.02em]" style={{ color: C.strong }}>
@@ -186,16 +186,15 @@ function Desktop({ data, isDark }) {
                 </span>
                 {rule.title}
               </h3>
-              <div className="mt-4 flex items-start gap-4">
-                <p className="t-body flex-1" style={{ color: C.strong }}>
-                  <span aria-hidden="true" className="mr-1 font-serif text-[30px] leading-none" style={{ color: C.quote }}>“</span>
-                  {rule.text}
-                </p>
-                <span className="shrink-0 text-right">
-                  <span className="t-h3 block" style={{ color: C.blue }}>{rule.percent}</span>
-                  <span className="t-label mt-1 block font-semibold uppercase" style={{ color: C.blue }}>{rule.percentLabel}</span>
-                </span>
-              </div>
+              {/* The column is narrow (20%), so the figure sits above the quote instead of beside it. */}
+              <span className="mt-4 flex flex-wrap items-baseline gap-x-2">
+                <span className="t-h3" style={{ color: C.blue }}>{rule.percent}</span>
+                <span className="t-label font-semibold uppercase" style={{ color: C.blue }}>{rule.percentLabel}</span>
+              </span>
+              <p className="t-body mt-3" style={{ color: C.strong }}>
+                <span aria-hidden="true" className="t-h4 mr-1 font-serif leading-none" style={{ color: C.quote }}>“</span>
+                {rule.text}
+              </p>
               <p className="t-body mt-4" style={{ color: C.note }}>{rule.note}</p>
             </div>
 
@@ -211,7 +210,7 @@ function Desktop({ data, isDark }) {
                 {data.deeperLinks.map((l) => (
                   <li key={l.id} className="border-t first:border-t-0" style={{ borderColor: C.line }}>
                     <Link href={l.href} className="t-body flex items-center gap-3 py-2.5 font-normal" style={{ color: C.strong }}>
-                      <span className="flex h-6 w-6 shrink-0 items-center justify-center rounded-full text-[14px] font-semibold text-white" style={{ background: C.num }}>{l.id}</span>
+                      <span className="t-label flex h-7 w-7 shrink-0 items-center justify-center rounded-full font-semibold text-white" style={{ background: C.num }}>{l.id}</span>
                       <span className="flex-1">{l.label}</span>
                       <Arrow className="h-5 w-5 shrink-0" style={{ color: isDark ? "#e8ebf0" : C.blue }} />
                     </Link>

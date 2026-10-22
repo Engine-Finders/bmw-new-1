@@ -226,7 +226,7 @@ function EngineEvolutionReference({ data }) {
 
   return (
     <section id="engine-evolution" className={`${inter.className} ${s.section} ${isDark ? s.dark : s.light}`}>
-      <div className={s.frame}>
+      <div className={`site-container ${s.frame}`}>
         <div className={s.panel}>
           <div className={s.top}>
             <div className={s.head}>

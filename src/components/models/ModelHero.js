@@ -110,7 +110,7 @@ function Stat({ item, index, C, phone = false }) {
         {st.pre ? <span className="t-label block" style={{ color: C.muted }}>{st.pre}</span> : null}
         <span className="block leading-tight" style={{ color: C.text }}>
           {st.value ? <strong className="t-num mr-1.5">{st.value}</strong> : null}
-          <span className={st.pre ? "text-[16px] font-semibold" : "text-[16px] font-medium"}>{st.label}</span>
+          <span className={st.pre ? "t-body font-semibold" : "t-body font-medium"}>{st.label}</span>
         </span>
         {st.tag ? <span className="t-label mt-0.5 block font-semibold" style={{ color: C.accent }}>{st.tag}</span> : null}
         {st.detail ? <span className="t-label block" style={{ color: C.muted }}>{st.detail}</span> : null}
@@ -165,7 +165,7 @@ function Title({ title, C, className = "" }) {
 
 function Cta({ data, href, className = "" }) {
   return (
-    <Link href={href} className={`inline-flex items-center gap-3 rounded-[6px] bg-[#0b57e3] px-7 py-3.5 text-[16px] font-semibold text-white transition hover:brightness-110 ${className}`}>
+    <Link href={href} className={`inline-flex items-center gap-3 rounded-[6px] bg-[#0b57e3] px-7 py-3.5 t-body font-semibold text-white transition hover:brightness-110 ${className}`}>
       <span dangerouslySetInnerHTML={{ __html: data.primaryCta.label.replace(/\s*(?:→|â†’)\s*$/, "") }} />
       <LineIcon name="arrow" className="h-5 w-5" strokeWidth={2.2} />
     </Link>
@@ -199,16 +199,16 @@ export default function ModelHero({ data }) {
           </div>
         ) : null}
 
-        <div className="site-container relative pb-10 pt-12">
+        <div className="site-container relative pb-8 pt-8">
           <div className="max-w-[660px]">
             <Pill pill={pill} C={C} />
-            <Title title={title} C={C} className="mt-6" />
+            <Title title={title} C={C} className="mt-5" />
             <p className="t-p mt-5 max-w-[600px]" style={{ color: C.muted }} dangerouslySetInnerHTML={{ __html: copyHtml(data.subHeadline) }} />
             {data.primaryCta ? <Cta data={data} href={ctaHref} className="mt-7" /> : null}
           </div>
 
           {data.trustStrip?.length > 0 ? (
-            <ul className="glass-panel relative mt-10 grid grid-cols-4 rounded-[14px] py-4" style={{ background: C.card, borderColor: C.border }}>
+            <ul className="glass-panel relative mt-7 grid grid-cols-4 rounded-[14px] py-4" style={{ background: C.card, borderColor: C.border }}>
               {data.trustStrip.map((item, index) => (
                 <Stat key={item.label} item={item} index={index} C={C} />
               ))}
@@ -218,12 +218,12 @@ export default function ModelHero({ data }) {
       </div>
 
       {/* ---------- Phone / tablet ---------- */}
-      <div className="relative mx-auto max-w-[720px] px-4 pb-8 pt-6 lg:hidden">
+      <div className="site-container relative pb-8 pt-6 lg:hidden">
         <Pill pill={pill} C={C} />
         <Title title={title} C={C} className="mt-5" />
         <p className="t-body mt-4" style={{ color: C.muted }} dangerouslySetInnerHTML={{ __html: copyHtml(data.subHeadline) }} />
         {scene ? (
-          <div aria-hidden="true" className="relative -mr-4 mt-5 aspect-[16/9] [clip-path:polygon(14%_0,100%_0,100%_100%,0_100%)]">
+          <div aria-hidden="true" className="relative mr-[calc(var(--gutter)*-1)] mt-5 aspect-[16/9] [clip-path:polygon(14%_0,100%_0,100%_100%,0_100%)]">
             <Image src={scene.src} alt="" fill priority sizes="100vw" className="object-cover object-[72%_center]" />
           </div>
         ) : null}

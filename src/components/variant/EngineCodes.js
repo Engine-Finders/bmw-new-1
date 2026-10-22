@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 import { useTheme } from "@/components/shared/themeProvider";
 import MStripe from "@/components/reusableComponents/MStripe";
@@ -131,7 +132,7 @@ export default function EngineCodes({ data }) {
   ) : null;
 
   const quoteCtaBanner = data.cta?.label ? (
-    <a
+    <Link
       href="/quote"
       className={`relative flex items-center gap-4 overflow-hidden rounded-xl border p-5 no-underline backdrop-blur-xl backdrop-saturate-150 ${
         isDark
@@ -165,7 +166,7 @@ export default function EngineCodes({ data }) {
           <p className={`lg:text-[15px] mt-1 text-[0.78rem] leading-[1.4] ${isDark ? "text-white/80" : "text-white/80"}`}>Get quotes from trusted UK specialists in minutes.</p>
         </div>
       </div>
-    </a>
+    </Link>
   ) : null;
 
   return (

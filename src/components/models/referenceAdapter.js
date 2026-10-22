@@ -430,7 +430,7 @@ function closingCards(section, names, ctx) {
           ? ctx.lineup && { kind: "lineup", light: ctx.lineup, dark: ctx.lineup }
           : spec.kind === "engine"
             ? ctx.engine && { kind: "engine", light: ctx.engine, dark: ctx.engine }
-            : { kind: "map", light: "/model/s14-map-light.webp", dark: "/model/s14-map-light.webp" };
+            : { kind: "map", light: "/model/s14-map-light.webp", dark: "/model/s14-map-dark.webp" };
       return { ...card, icon: spec.icon, tone: spec.tone, titleLines: [first, accent], text: dash(card.text), cta: spec.cta, art: art || null };
     }),
   };

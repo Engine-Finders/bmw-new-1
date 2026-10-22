@@ -152,7 +152,7 @@ function CommonProblemsReference({ data }) {
 
   return (
     <section id="common-problems" className={`${inter.className} ${s.section} ${isDark ? s.dark : s.light}`}>
-      <div className={s.frame}>
+      <div className={`site-container ${s.frame}`}>
         <div className={s.inner}>
           <h2 className={s.title}>
             <span>{title.main}</span> <span className={s.accent}>{title.accent}</span>

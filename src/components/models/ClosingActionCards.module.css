@@ -20,9 +20,8 @@
 }
 
 .panel {
-  --u: calc(100cqw / 887);
   position: relative;
-  padding: 0 calc(47 * var(--u)) calc(30 * var(--u));
+  padding: 0 calc(47 * 0.4397px) calc(30 * 0.4397px);
 }
 
 /* ---------- theme tokens ---------- */
@@ -34,8 +33,8 @@
   --c-accent: #0551fb;
   --c-bar: #0d54ee;
   --c-tile: #ffffff;
-  --c-tile-shadow: 0 calc(4 * var(--u)) calc(14 * var(--u)) rgba(40, 80, 160, 0.13);
-  --c-card-shadow: 0 calc(3 * var(--u)) calc(12 * var(--u)) rgba(20, 40, 80, 0.05);
+  --c-tile-shadow: 0 calc(4 * 0.4397px) calc(14 * 0.4397px) rgba(40, 80, 160, 0.13);
+  --c-card-shadow: 0 calc(3 * 0.4397px) calc(12 * 0.4397px) rgba(20, 40, 80, 0.05);
   --c-art-filter: none;
 }
 
@@ -46,10 +45,10 @@
   --c-accent: #3a7bff;
   --c-bar: #3a7bff;
   --c-tile: #0c1624;
-  --c-tile-shadow: 0 calc(4 * var(--u)) calc(14 * var(--u)) rgba(0, 0, 0, 0.45);
+  --c-tile-shadow: 0 calc(4 * 0.4397px) calc(14 * 0.4397px) rgba(0, 0, 0, 0.45);
   --c-card-shadow: none;
-  /* the light art's pale card colour turns into the dark card colour; the engine and map keep their hue */
-  --c-art-filter: invert(1) hue-rotate(180deg);
+  /* the art is a transparent cutout, so it shows in its own colours on the dark card */
+  --c-art-filter: none;
 }
 
 .blue {
@@ -100,7 +99,7 @@
 
 .head {
   position: relative;
-  padding-top: calc(99.85 * var(--u));
+  padding-top: calc(99.85 * 0.4397px);
 }
 
 .hero {
@@ -115,18 +114,18 @@
 
 .light .hero {
   /* car front at the copy's right edge (or the reference x, whichever is further right) */
-  --car-x: max(calc(415 * var(--u)), calc(51 * var(--u) + max(calc(21 * var(--u)), 15px) * 14.62 + 14px));
-  left: calc(var(--car-x) - 184 * var(--u) - 47 * var(--u));
-  bottom: calc(-21.6 * var(--u));
-  width: calc(704 * var(--u));
+  --car-x: max(calc(415 * 0.4397px), calc(51 * 0.4397px + max(calc(21 * 0.4397px), 15px) * 14.62 + 14px));
+  left: calc(var(--car-x) - 184 * 0.4397px - 47 * 0.4397px);
+  bottom: calc(-21.6 * 0.4397px);
+  width: calc(704 * 0.4397px);
   aspect-ratio: 1036 / 392;
 }
 
 .dark .hero {
-  --car-x: max(calc(415 * var(--u)), calc(51 * var(--u) + max(calc(21 * var(--u)), 15px) * 14.62 + 14px));
-  left: calc(var(--car-x) - 47 * var(--u));
-  bottom: calc(-12 * var(--u));
-  width: calc(455 * var(--u));
+  --car-x: max(calc(415 * 0.4397px), calc(51 * 0.4397px + max(calc(21 * 0.4397px), 15px) * 14.62 + 14px));
+  left: calc(var(--car-x) - 47 * 0.4397px);
+  bottom: calc(-12 * 0.4397px);
+  width: calc(455 * 0.4397px);
   aspect-ratio: 720 / 400;
 }
 
@@ -143,7 +142,7 @@
 
 .title {
   margin: 0;
-  font-size: max(28px, calc(52 * var(--u)));
+  font-size: max(28px, calc(52 * 0.4397px));
   font-weight: 700;
   line-height: 1.192;
   letter-spacing: 0;
@@ -160,15 +159,15 @@
 
 .bar {
   display: block;
-  width: calc(70 * var(--u));
-  height: max(3px, calc(4 * var(--u)));
-  margin: calc(30 * var(--u)) 0 0 calc(2 * var(--u));
+  width: calc(70 * 0.4397px);
+  height: max(3px, calc(4 * 0.4397px));
+  margin: calc(30 * 0.4397px) 0 0 calc(2 * 0.4397px);
   background: var(--c-bar);
 }
 
 .intro {
-  margin: calc(19.4 * var(--u)) 0 0 calc(4 * var(--u));
-  font-size: max(15px, calc(21 * var(--u)));
+  margin: calc(19.4 * 0.4397px) 0 0 calc(4 * 0.4397px);
+  font-size: max(15px, calc(21 * 0.4397px));
   line-height: 1.74;
   letter-spacing: 0;
   color: var(--c-copy);
@@ -181,19 +180,19 @@
   z-index: 1;
   display: flex;
   flex-direction: column;
-  gap: calc(25 * var(--u));
-  margin-top: calc(33.6 * var(--u));
+  gap: calc(25 * 0.4397px);
+  margin-top: calc(33.6 * 0.4397px);
 }
 
 .card {
   position: relative;
   display: flex;
   align-items: flex-start;
-  min-height: calc(298 * var(--u));
-  padding: calc(21 * var(--u)) calc(24 * var(--u)) calc(35 * var(--u)) calc(23 * var(--u));
+  min-height: calc(298 * 0.4397px);
+  padding: calc(21 * 0.4397px) calc(24 * 0.4397px) calc(35 * 0.4397px) calc(23 * 0.4397px);
   overflow: hidden;
   border: 1px solid var(--k-border);
-  border-radius: calc(13 * var(--u));
+  border-radius: calc(13 * 0.4397px);
   background: var(--k-bg);
   box-shadow: var(--c-card-shadow);
   color: var(--c-text);
@@ -223,30 +222,30 @@
 
 /* phone art boxes (card-relative, reference px) */
 .art-lineup .art {
-  left: calc(393 * var(--u));
-  top: calc(140 * var(--u));
-  width: calc(400 * var(--u));
+  left: calc(393 * 0.4397px);
+  top: calc(140 * 0.4397px);
+  width: calc(400 * 0.4397px);
   aspect-ratio: 465 / 114;
 }
 
 .dark .art-lineup .art {
-  left: calc(470 * var(--u));
-  top: calc(92 * var(--u));
-  width: calc(320 * var(--u));
+  left: calc(470 * 0.4397px);
+  top: calc(92 * 0.4397px);
+  width: calc(320 * 0.4397px);
   aspect-ratio: 706 / 228;
 }
 
 .art-engine .art {
-  left: calc(391.5 * var(--u));
-  top: calc(1 * var(--u));
-  width: calc(377 * var(--u));
+  left: calc(391.5 * 0.4397px);
+  top: calc(1 * 0.4397px);
+  width: calc(377 * 0.4397px);
   aspect-ratio: 343 / 230;
 }
 
 .art-map .art {
-  left: calc(510 * var(--u));
-  top: calc(10 * var(--u));
-  width: calc(248 * var(--u));
+  left: calc(510 * 0.4397px);
+  top: calc(10 * 0.4397px);
+  width: calc(248 * 0.4397px);
   aspect-ratio: 258 / 349;
 }
 
@@ -257,9 +256,9 @@
   flex: none;
   align-items: center;
   justify-content: center;
-  width: max(50px, calc(94 * var(--u)));
-  height: max(50px, calc(94 * var(--u)));
-  border-radius: calc(14 * var(--u));
+  width: max(50px, calc(94 * 0.4397px));
+  height: max(50px, calc(94 * 0.4397px));
+  border-radius: calc(14 * 0.4397px);
   background: var(--c-tile);
   box-shadow: var(--c-tile-shadow);
   color: var(--k-accent);
@@ -287,13 +286,13 @@
   z-index: 1;
   display: block;
   min-width: 0;
-  margin-left: max(calc(33 * var(--u)), 14px);
-  padding-top: calc(7 * var(--u));
+  margin-left: max(calc(33 * 0.4397px), 14px);
+  padding-top: calc(7 * 0.4397px);
 }
 
 .cardTitle {
   margin: 0;
-  font-size: max(19px, calc(29 * var(--u)));
+  font-size: max(19px, calc(29 * 0.4397px));
   font-weight: 700;
   line-height: 1.414;
   letter-spacing: 0;
@@ -310,15 +309,15 @@
 
 .cardBar {
   display: block;
-  width: max(26px, calc(46 * var(--u)));
-  height: max(2px, calc(3 * var(--u)));
-  margin-top: calc(17 * var(--u));
+  width: max(26px, calc(46 * 0.4397px));
+  height: max(2px, calc(3 * 0.4397px));
+  margin-top: calc(17 * 0.4397px);
   background: var(--k-accent);
 }
 
 .cardText {
-  margin: calc(18.9 * var(--u)) 0 0;
-  font-size: max(14px, calc(17.7 * var(--u)));
+  margin: calc(18.9 * 0.4397px) 0 0;
+  font-size: max(14px, calc(17.7 * 0.4397px));
   line-height: 1.75;
   letter-spacing: 0;
   color: var(--c-copy);
@@ -328,8 +327,8 @@
   display: inline-flex;
   align-items: center;
   gap: 1.55em;
-  margin-top: calc(28 * var(--u));
-  font-size: max(15px, calc(20.2 * var(--u)));
+  margin-top: calc(28 * 0.4397px);
+  font-size: max(15px, calc(20.2 * 0.4397px));
   font-weight: 600;
   line-height: 1.2;
   letter-spacing: 0;
@@ -370,13 +369,13 @@
 
   .light .hero {
     /* the car is 65% of this photo, starting 26% in; its misty right edge runs off the screen */
-    width: min(360px, 98cqw);
-    margin-right: calc(-47 * var(--u) - min(360px, 98cqw) * 0.09);
+    width: min(360px, 382.2px);
+    margin-right: calc(-47 * 0.4397px - min(360px, 382.2px) * 0.09);
   }
 
   .dark .hero {
-    width: min(240px, 64cqw);
-    margin-right: calc(-10 * var(--u));
+    width: min(240px, 249.6px);
+    margin-right: calc(-10 * 0.4397px);
   }
 
   .cards {
@@ -384,7 +383,7 @@
   }
 
   .card.art-lineup {
-    padding-bottom: calc(35 * var(--u) + 58px);
+    padding-bottom: calc(35 * 0.4397px + 58px);
   }
 
   .art-lineup .art,
@@ -393,31 +392,31 @@
     right: -14px;
     top: auto;
     bottom: 10px;
-    width: min(300px, 80cqw);
+    width: min(300px, 312px);
   }
 
   /* dark uses the taller transparent line-up photo */
   .dark .card.art-lineup {
-    padding-bottom: calc(35 * var(--u) + 76px);
+    padding-bottom: calc(35 * 0.4397px + 76px);
   }
 
   .dark .art-lineup .art {
     right: -6px;
     bottom: 8px;
-    width: min(220px, 58cqw);
+    width: min(220px, 226.2px);
   }
 
   .art-engine .art {
     left: auto;
-    right: calc(-70 * var(--u));
-    width: calc(360 * var(--u));
+    right: calc(-70 * 0.4397px);
+    width: calc(360 * 0.4397px);
     opacity: 0.6;
   }
 
   .art-map .art {
     left: auto;
-    right: calc(-40 * var(--u));
-    width: calc(240 * var(--u));
+    right: calc(-40 * 0.4397px);
+    width: calc(240 * 0.4397px);
     opacity: 0.6;
   }
 }
@@ -426,8 +425,7 @@
 
 @media (min-width: 1024px) {
   .panel {
-    --u: calc(100cqw / 1448);
-    padding: 0 calc(44 * var(--u)) calc(28 * var(--u));
+    padding: 0 calc(44 * 0.9282px) calc(28 * 0.9282px);
   }
 
   .deskOnly {
@@ -439,23 +437,23 @@
   }
 
   .head {
-    height: calc(395 * var(--u));
-    padding-top: calc(84 * var(--u));
-    margin-left: calc(10 * var(--u));
+    height: calc(395 * 0.9282px);
+    padding-top: calc(84 * 0.9282px);
+    margin-left: calc(10 * 0.9282px);
   }
 
   .light .hero {
-    left: calc((500 - 54) * var(--u));
+    left: calc((500 - 54) * 0.9282px);
     top: 0;
     bottom: auto;
-    width: calc(1036 * var(--u));
+    width: calc(1036 * 0.9282px);
   }
 
   .dark .hero {
-    left: calc((770 - 54) * var(--u));
-    top: calc(40 * var(--u));
+    left: calc((770 - 54) * 0.9282px);
+    top: calc(40 * 0.9282px);
     bottom: auto;
-    width: calc(680 * var(--u));
+    width: calc(680 * 0.9282px);
   }
 
   .title {
@@ -465,13 +463,13 @@
   }
 
   .bar {
-    width: calc(64 * var(--u));
-    height: calc(4.5 * var(--u));
-    margin: calc(28 * var(--u)) 0 0 calc(1 * var(--u));
+    width: calc(64 * 0.9282px);
+    height: calc(4.5 * 0.9282px);
+    margin: calc(28 * 0.9282px) 0 0 calc(1 * 0.9282px);
   }
 
   .intro {
-    margin: calc(19.5 * var(--u)) 0 0 calc(0.5 * var(--u));
+    margin: calc(19.5 * 0.9282px) 0 0 calc(0.5 * 0.9282px);
     font-size: var(--fs-h6);
     line-height: 1.63;
   }
@@ -480,32 +478,32 @@
     display: grid;
     grid-template-columns: 469fr 457fr 470fr;
     flex-direction: row;
-    gap: calc(26.5 * var(--u));
+    gap: calc(26.5 * 0.9282px);
     margin-top: 0;
   }
 
   .card {
     display: block;
-    height: calc(357 * var(--u));
+    height: calc(357 * 0.9282px);
     min-height: 0;
     padding: 0;
-    border-radius: calc(12 * var(--u));
+    border-radius: calc(12 * 0.9282px);
   }
 
   .tile {
     position: absolute;
-    top: calc(21 * var(--u));
-    left: calc(22 * var(--u));
-    width: calc(75 * var(--u));
-    height: calc(75 * var(--u));
-    border-radius: calc(12 * var(--u));
+    top: calc(21 * 0.9282px);
+    left: calc(22 * 0.9282px);
+    width: calc(75 * 0.9282px);
+    height: calc(75 * 0.9282px);
+    border-radius: calc(12 * 0.9282px);
   }
 
   .body {
     position: absolute;
-    top: calc(179.5 * var(--u));
-    left: calc(27 * var(--u));
-    right: calc(10 * var(--u));
+    top: calc(179.5 * 0.9282px);
+    left: calc(27 * 0.9282px);
+    right: calc(10 * 0.9282px);
     margin: 0;
     padding: 0;
   }
@@ -522,53 +520,53 @@
   }
 
   .cardBar {
-    width: calc(42 * var(--u));
-    height: calc(3 * var(--u));
-    margin-top: calc(16.5 * var(--u));
-    margin-left: calc(1 * var(--u));
+    width: calc(42 * 0.9282px);
+    height: calc(3 * 0.9282px);
+    margin-top: calc(16.5 * 0.9282px);
+    margin-left: calc(1 * 0.9282px);
   }
 
   .cardText {
-    margin-top: calc(9.9 * var(--u));
+    margin-top: calc(9.9 * 0.9282px);
     font-size: var(--fs-body);
     line-height: 1.60;
   }
 
   .cardCta {
-    gap: calc(31 * var(--u));
-    margin-top: calc(16.7 * var(--u));
+    gap: calc(31 * 0.9282px);
+    margin-top: calc(16.7 * 0.9282px);
     font-size: var(--fs-p);
     line-height: 1.33;
   }
 
   .ctaArrow {
-    width: calc(27 * var(--u));
-    height: calc(27 * var(--u));
+    width: calc(27 * 0.9282px);
+    height: calc(27 * 0.9282px);
   }
 
   /* desktop art boxes (card-relative, reference px) */
   .art-lineup .art {
-    left: calc(1 * var(--u));
-    top: calc(56 * var(--u));
-    width: calc(465 * var(--u));
+    left: calc(1 * 0.9282px);
+    top: calc(56 * 0.9282px);
+    width: calc(465 * 0.9282px);
   }
 
   .dark .art-lineup .art {
-    left: calc(150 * var(--u));
-    top: calc(28 * var(--u));
-    width: calc(310 * var(--u));
+    left: calc(150 * 0.9282px);
+    top: calc(28 * 0.9282px);
+    width: calc(310 * 0.9282px);
   }
 
   .art-engine .art {
-    left: calc(111 * var(--u));
-    top: calc(8 * var(--u));
-    width: calc(343 * var(--u));
+    left: calc(111 * 0.9282px);
+    top: calc(8 * 0.9282px);
+    width: calc(343 * 0.9282px);
   }
 
   .art-map .art {
-    left: calc(209 * var(--u));
-    top: calc(4 * var(--u));
-    width: calc(258 * var(--u));
+    left: calc(209 * 0.9282px);
+    top: calc(4 * 0.9282px);
+    width: calc(258 * 0.9282px);
   }
 
   /* Site container: same width and side padding as every other section. */
@@ -603,5 +601,143 @@
 @media (min-width: 1024px) {
   .head {
     margin-left: 0;
+  }
+}
+
+/*
+ * Phones and tablets (every model): pictures sit in their own space and never cover text.
+ * The hero picture follows the intro at full width; each card's picture is a strip under its copy.
+ */
+@media (max-width: 1023px) {
+  .head {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .light .hero,
+  .dark .hero {
+    position: relative;
+    left: auto;
+    right: auto;
+    bottom: auto;
+    order: 9;
+    align-self: stretch;
+    width: 100%;
+    max-width: 560px;
+    margin: 16px auto 0;
+    aspect-ratio: 2 / 1;
+  }
+
+  .heroImg,
+  .dark .heroImg {
+    object-position: center bottom;
+  }
+
+  .card {
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr);
+    column-gap: 16px;
+    min-height: 0;
+    padding: 20px;
+  }
+
+  .card.art-lineup,
+  .dark .card.art-lineup {
+    padding-bottom: 20px;
+  }
+
+  .body {
+    margin-left: 0;
+    padding-top: 0;
+  }
+
+  .art,
+  .art-lineup .art,
+  .dark .art-lineup .art,
+  .art-engine .art,
+  .art-map .art {
+    position: relative;
+    inset: auto;
+    order: 9;
+    grid-column: 1 / -1;
+    width: 100%;
+    height: 110px;
+    aspect-ratio: auto;
+    margin-top: 16px;
+    opacity: 1;
+  }
+
+  .art-engine .artImg,
+  .art-map .artImg {
+    object-position: center;
+  }
+}
+
+@media (max-width: 1023px) {
+  .heroRepeat {
+    display: none;
+  }
+}
+
+
+/* Desktop values for base rules (fixed px; nothing scales with the viewport). */
+@media (min-width: 1024px) {
+  .light {
+    --c-tile-shadow: 0 calc(4 * 0.9282px) calc(14 * 0.9282px) rgba(40, 80, 160, 0.13);
+    --c-card-shadow: 0 calc(3 * 0.9282px) calc(12 * 0.9282px) rgba(20, 40, 80, 0.05);
+  }
+
+  .dark {
+    --c-tile-shadow: 0 calc(4 * 0.9282px) calc(14 * 0.9282px) rgba(0, 0, 0, 0.45);
+  }
+
+  .light .hero {
+    --car-x: max(calc(415 * 0.9282px), calc(51 * 0.9282px + max(calc(21 * 0.9282px), 15px) * 14.62 + 14px));
+  }
+
+  .dark .hero {
+    --car-x: max(calc(415 * 0.9282px), calc(51 * 0.9282px + max(calc(21 * 0.9282px), 15px) * 14.62 + 14px));
+  }
+
+  .body {
+    margin-left: max(calc(33 * 0.9282px), 14px);
+    padding-top: calc(7 * 0.9282px);
+  }
+
+  .cardText {
+    margin: calc(18.9 * 0.9282px) 0 0;
+  }
+}
+
+/* Site container on every width: content starts on the navbar's edge; the section wrapper adds no side space. */
+.frame {
+  max-width: var(--container-8xl);
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+}
+
+.panel {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+/* Dark desktop: the engine photo and map are solid, so they sit above the card copy instead of behind it. */
+@media (min-width: 1024px) {
+  .dark .art-engine .art,
+  .dark .art-map .art {
+    left: auto;
+    right: 16px;
+    top: 14px;
+    width: 62%;
+    height: 140px;
+    aspect-ratio: auto;
+  }
+
+  .dark .art-engine .artImg,
+  .dark .art-map .artImg {
+    object-position: right center;
   }
 }

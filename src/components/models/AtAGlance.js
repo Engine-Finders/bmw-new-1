@@ -309,7 +309,7 @@ export default function AtAGlance({ data }) {
 
   return (
     <section className={`${inter.className} ${s.section} ${isDark ? s.dark : s.light}`}>
-      <div className={s.frame}>
+      <div className={`site-container ${s.frame}`}>
         <div className={s.inner}>
           <div className={`${s.art} ${phoneScene ? s.hasPhoneScene : ""}`} aria-hidden="true">
             <div className={s.band} />

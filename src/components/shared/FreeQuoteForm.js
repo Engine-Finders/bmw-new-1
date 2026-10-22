@@ -31,7 +31,7 @@ export default function FreeQuoteSticky() {
       <button
         type="button"
         onClick={() => setOpen(true)}
-        className="fixed bottom-5 right-5 z-50 rounded-full bg-[var(--color-primary)] px-5 py-3 text-sm font-bold text-white shadow-[0_12px_28px_var(--color-shadow)] hover:bg-[var(--color-primary-strong)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--color-primary)]"
+        className="fixed bottom-5 right-5 z-50 rounded-full bg-[var(--color-primary)] t-body px-5 py-3 font-semibold text-white shadow-[0_12px_28px_var(--color-shadow)] hover:bg-[var(--color-primary-strong)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--color-primary)]"
         aria-haspopup="dialog"
         aria-expanded={open}
       >
@@ -60,13 +60,13 @@ export default function FreeQuoteSticky() {
                 ref={closeRef}
                 type="button"
                 onClick={() => setOpen(false)}
-                className="rounded border border-[var(--color-border)] px-2 py-1 text-sm font-bold text-[var(--color-text)]"
+                className="rounded border border-[var(--color-border)] t-label px-2 py-1 font-semibold text-[var(--color-text)]"
                 aria-label="Close"
               >
                 ✕
               </button>
             </div>
-            <Suspense fallback={<p className="p-4 text-sm text-[var(--color-text-soft)]">Loading…</p>}>
+            <Suspense fallback={<p className="t-body p-4 text-[var(--color-text-soft)]">Loading…</p>}>
               <QuoteForm compact onSuccess={() => {}} />
             </Suspense>
           </div>

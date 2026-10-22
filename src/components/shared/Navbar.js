@@ -58,18 +58,18 @@ export default function Navbar() {
 
   return (
     <header className="sticky top-0 z-40 border-b border-[var(--color-border)] bg-[var(--color-navbar)] backdrop-blur">
-      <nav className="mx-auto flex w-full max-w-8xl items-center justify-between gap-3 px-4 py-3 md:px-8 md:py-4">
+      <nav className="site-container flex items-center justify-between gap-3 py-3 md:py-4">
         <Link href="/" className="flex shrink-0 items-center gap-3 text-[var(--color-text)] no-underline">
           <LogoMark />
           <span className="leading-tight">
-            <span className="block text-[1.6rem] font-extrabold tracking-normal md:text-3xl">BMW</span>
-            <span className="block text-[0.85rem] font-semibold tracking-normal md:text-xl">RELIABILITY GUIDE</span>
+            <span className="t-h5 block font-bold tracking-normal">BMW</span>
+            <span className="t-label block font-semibold tracking-normal">RELIABILITY GUIDE</span>
           </span>
         </Link>
 
         <DesktopNavMenus />
 
-        <div className="hidden items-center gap-4 lg:flex">
+        <div className="hidden items-center gap-4 xl:flex">
           <button
             type="button"
             aria-label={nextThemeLabel}
@@ -81,7 +81,7 @@ export default function Navbar() {
           </button>
         </div>
 
-        <div className="ml-auto flex items-center gap-2 lg:hidden">
+        <div className="ml-auto flex items-center gap-2 xl:hidden">
           <button
             type="button"
             aria-label={nextThemeLabel}
@@ -107,7 +107,7 @@ export default function Navbar() {
       {isMenuOpen ? (
         <div
           id="mobile-nav"
-          className="max-h-[calc(100dvh-5.5rem)] overflow-y-auto overscroll-contain border-t border-[var(--color-border)] bg-[var(--color-surface)] px-4 py-4 lg:hidden"
+          className="max-h-[calc(100dvh-5.5rem)] overflow-y-auto overscroll-contain border-t border-[var(--color-border)] bg-[var(--color-surface)] px-4 py-4 xl:hidden"
         >
           <MobileNavMenus onNavigate={() => setIsMenuOpen(false)} />
         </div>

@@ -19,8 +19,7 @@
 }
 
 .inner {
-  --u: calc(100cqw / 836);
-  padding: calc(77 * var(--u)) calc(36 * var(--u)) calc(12 * var(--u)) calc(37 * var(--u));
+  padding: calc(77 * 0.4665px) calc(36 * 0.4665px) calc(12 * 0.4665px) calc(37 * 0.4665px);
 }
 
 /* ---------- theme tokens ---------- */
@@ -86,10 +85,10 @@
 /* ---------- heading ---------- */
 
 .title {
-  margin: 0 0 0 calc(3 * var(--u));
-  font-size: calc(42 * var(--u));
+  margin: 0 0 0 calc(3 * 0.4665px);
+  font-size: calc(42 * 0.4665px);
   font-weight: 700;
-  line-height: calc(50 * var(--u));
+  line-height: calc(50 * 0.4665px);
   letter-spacing: -0.05em;
   color: var(--p-text);
 }
@@ -105,9 +104,9 @@
 }
 
 .copy {
-  margin: calc(12.5 * var(--u)) 0 0 calc(3 * var(--u));
-  font-size: calc(18.6 * var(--u));
-  line-height: calc(29 * var(--u));
+  margin: calc(12.5 * 0.4665px) 0 0 calc(3 * 0.4665px);
+  font-size: calc(18.6 * 0.4665px);
+  line-height: calc(29 * 0.4665px);
   color: var(--p-copy);
 }
 
@@ -155,7 +154,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: calc(8 * var(--u));
+  border-radius: calc(8 * 0.4665px);
   background: var(--p-num-bg);
   color: var(--p-num);
   font-weight: 600;
@@ -167,8 +166,8 @@
 .pList {
   display: flex;
   flex-direction: column;
-  gap: calc(14 * var(--u));
-  margin-top: calc(26.5 * var(--u));
+  gap: calc(14 * 0.4665px);
+  margin-top: calc(26.5 * 0.4665px);
 }
 
 .pList.phoneOnly {
@@ -177,46 +176,46 @@
 
 .pCard {
   display: grid;
-  grid-template-columns: calc(197 * var(--u)) 1fr calc(162 * var(--u));
-  min-height: calc(180 * var(--u));
-  padding: calc(4 * var(--u));
+  grid-template-columns: calc(197 * 0.4665px) 1fr calc(162 * 0.4665px);
+  min-height: calc(180 * 0.4665px);
+  padding: calc(4 * 0.4665px);
   border: 1px solid var(--p-card-border);
-  border-radius: calc(10 * var(--u));
+  border-radius: calc(10 * 0.4665px);
   background: var(--p-card);
   box-shadow: var(--p-card-shadow);
 }
 
 .pCard .photo {
-  border-radius: calc(8 * var(--u));
+  border-radius: calc(8 * 0.4665px);
 }
 
 .pCard .num {
-  top: calc(5 * var(--u));
-  left: calc(6 * var(--u));
-  width: calc(46 * var(--u));
-  height: calc(46 * var(--u));
-  font-size: calc(25 * var(--u));
+  top: calc(5 * 0.4665px);
+  left: calc(6 * 0.4665px);
+  width: calc(46 * 0.4665px);
+  height: calc(46 * 0.4665px);
+  font-size: calc(25 * 0.4665px);
 }
 
 .pBody {
-  padding: calc(13 * var(--u)) calc(19 * var(--u)) calc(15 * var(--u)) calc(23 * var(--u));
+  padding: calc(13 * 0.4665px) calc(19 * 0.4665px) calc(15 * 0.4665px) calc(23 * 0.4665px);
 }
 
 .pTitle {
   margin: 0;
-  font-size: calc(21.4 * var(--u));
+  font-size: calc(21.4 * 0.4665px);
   font-weight: 600;
-  line-height: calc(30 * var(--u));
+  line-height: calc(30 * 0.4665px);
   letter-spacing: -0.02em;
   white-space: nowrap;
   color: var(--p-title);
 }
 
 .pDesc {
-  margin: calc(6.3 * var(--u)) 0 0;
+  margin: calc(6.3 * 0.4665px) 0 0;
   white-space: nowrap;
-  font-size: calc(16.3 * var(--u));
-  line-height: calc(25.4 * var(--u));
+  font-size: calc(16.3 * 0.4665px);
+  line-height: calc(25.4 * 0.4665px);
   color: var(--p-desc);
 }
 
@@ -224,56 +223,56 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding-top: calc(16 * var(--u));
+  padding-top: calc(16 * 0.4665px);
 }
 
 .pSide .severity {
-  gap: calc(12 * var(--u));
-  font-size: calc(17 * var(--u));
-  line-height: calc(26 * var(--u));
+  gap: calc(12 * 0.4665px);
+  font-size: calc(17 * 0.4665px);
+  line-height: calc(26 * 0.4665px);
 }
 
 .pSide .dot {
-  width: calc(18 * var(--u));
-  height: calc(18 * var(--u));
+  width: calc(18 * 0.4665px);
+  height: calc(18 * 0.4665px);
 }
 
 .pLearn {
-  gap: calc(10 * var(--u));
-  margin-top: calc(25 * var(--u));
-  font-size: calc(18 * var(--u));
-  line-height: calc(26 * var(--u));
+  gap: calc(10 * 0.4665px);
+  margin-top: calc(25 * 0.4665px);
+  font-size: calc(18 * 0.4665px);
+  line-height: calc(26 * 0.4665px);
 }
 
 .pLearn .learnArrow {
-  width: calc(22 * var(--u));
-  height: calc(22 * var(--u));
+  width: calc(22 * 0.4665px);
+  height: calc(22 * 0.4665px);
 }
 
 /* ---------- urgency key ---------- */
 
 .key {
   position: relative;
-  margin-top: calc(23 * var(--u));
-  padding: calc(4 * var(--u)) 0 calc(13 * var(--u));
+  margin-top: calc(23 * 0.4665px);
+  padding: calc(4 * 0.4665px) 0 calc(13 * 0.4665px);
   border: 1px solid var(--p-card-border);
-  border-radius: calc(10 * var(--u));
+  border-radius: calc(10 * 0.4665px);
   background: var(--p-card);
   box-shadow: var(--p-card-shadow);
 }
 
 .keyTitle {
-  margin: 0 0 0 calc(16 * var(--u));
-  font-size: calc(18 * var(--u));
+  margin: 0 0 0 calc(16 * 0.4665px);
+  font-size: calc(18 * 0.4665px);
   font-weight: 700;
-  line-height: calc(26 * var(--u));
+  line-height: calc(26 * 0.4665px);
   color: var(--p-title);
 }
 
 .keyList {
   display: grid;
   grid-template-columns: 219fr 192fr 176fr 176fr;
-  margin: calc(8 * var(--u)) 0 0;
+  margin: calc(8 * 0.4665px) 0 0;
   padding: 0;
   list-style: none;
 }
@@ -282,15 +281,15 @@
   position: relative;
   display: flex;
   align-items: flex-start;
-  gap: calc(11 * var(--u));
-  padding-left: calc(26 * var(--u));
+  gap: calc(11 * 0.4665px);
+  padding-left: calc(26 * 0.4665px);
 }
 
 .keyItem + .keyItem::before {
   content: "";
   position: absolute;
-  top: calc(-2 * var(--u));
-  bottom: calc(2 * var(--u));
+  top: calc(-2 * 0.4665px);
+  bottom: calc(2 * 0.4665px);
   left: 0;
   width: 1px;
   background: var(--p-divider);
@@ -298,9 +297,9 @@
 
 .keyDot {
   flex-shrink: 0;
-  width: calc(16 * var(--u));
-  height: calc(16 * var(--u));
-  margin-top: calc(4 * var(--u));
+  width: calc(16 * 0.4665px);
+  height: calc(16 * 0.4665px);
+  margin-top: calc(4 * 0.4665px);
   border-radius: 50%;
   background: var(--sev-dot, var(--sev));
 }
@@ -312,16 +311,16 @@
 }
 
 .keyText strong {
-  font-size: calc(14.2 * var(--u));
+  font-size: calc(14.2 * 0.4665px);
   font-weight: 600;
-  line-height: calc(24 * var(--u));
+  line-height: calc(24 * 0.4665px);
   color: var(--p-title);
 }
 
 .keyText span {
-  margin-top: calc(1 * var(--u));
-  font-size: calc(13.7 * var(--u));
-  line-height: calc(21 * var(--u));
+  margin-top: calc(1 * 0.4665px);
+  font-size: calc(13.7 * 0.4665px);
+  line-height: calc(21 * 0.4665px);
   color: var(--p-key-text);
 }
 
@@ -476,8 +475,7 @@
 
 @media (min-width: 1024px) {
   .inner {
-    --u: calc(100cqw / 1441);
-    padding: calc(62 * var(--u)) calc(48 * var(--u)) calc(12 * var(--u)) calc(47 * var(--u));
+    padding: calc(62 * 0.9327px) calc(48 * 0.9327px) calc(12 * 0.9327px) calc(47 * 0.9327px);
   }
 
   .deskOnly {
@@ -502,14 +500,14 @@
 
   .bar {
     display: block;
-    width: calc(31 * var(--u));
-    height: calc(3 * var(--u));
-    margin-top: calc(6 * var(--u));
+    width: calc(31 * 0.9327px);
+    height: calc(3 * 0.9327px);
+    margin-top: calc(6 * 0.9327px);
     background: var(--p-accent);
   }
 
   .copy {
-    margin: calc(7.4 * var(--u)) 0 0;
+    margin: calc(7.4 * 0.9327px) 0 0;
     font-size: var(--fs-body);
     line-height: 1.53;
   }
@@ -521,7 +519,7 @@
     grid-template-columns: repeat(3, 1fr);
     align-items: start;
     gap: 18px;
-    margin-top: calc(21.6 * var(--u));
+    margin-top: calc(21.6 * 0.9327px);
   }
 
   .card {
@@ -531,16 +529,16 @@
     min-height: 100%;
     overflow: hidden;
     border: 1px solid var(--p-card-border);
-    border-radius: calc(10 * var(--u));
+    border-radius: calc(10 * 0.9327px);
     background: var(--p-card);
     box-shadow: var(--p-card-shadow);
   }
 
   .card .num {
-    top: calc(9 * var(--u));
-    left: calc(8 * var(--u));
-    width: calc(42 * var(--u));
-    height: calc(40 * var(--u));
+    top: calc(9 * 0.9327px);
+    left: calc(8 * 0.9327px);
+    width: calc(42 * 0.9327px);
+    height: calc(40 * 0.9327px);
     font-size: var(--fs-num);
   }
 
@@ -561,15 +559,15 @@
   }
 
   .cardSeverity {
-    gap: calc(9 * var(--u));
-    margin-top: calc(11.6 * var(--u));
+    gap: calc(9 * 0.9327px);
+    margin-top: calc(11.6 * 0.9327px);
     font-size: var(--fs-label);
     line-height: 1.34;
   }
 
   .cardSeverity .dot {
-    width: calc(13 * var(--u));
-    height: calc(13 * var(--u));
+    width: calc(13 * 0.9327px);
+    height: calc(13 * 0.9327px);
   }
 
   .desc {
@@ -582,28 +580,28 @@
   .cost {
     display: flex;
     align-items: center;
-    gap: calc(10 * var(--u));
+    gap: calc(10 * 0.9327px);
     width: fit-content;
-    margin-top: calc(14 * var(--u));
-    padding: calc(2 * var(--u)) calc(12 * var(--u)) calc(2 * var(--u)) 0;
+    margin-top: calc(14 * 0.9327px);
+    padding: calc(2 * 0.9327px) calc(12 * 0.9327px) calc(2 * 0.9327px) 0;
     border: 1px solid var(--p-cost-border);
-    border-radius: calc(8 * var(--u));
+    border-radius: calc(8 * 0.9327px);
   }
 
   /* dark reference: the price sits in an outlined pill, a little higher, clear of "Learn more" */
   .dark .cost {
-    margin-top: calc(6 * var(--u));
-    padding-top: calc(4 * var(--u));
-    padding-bottom: calc(4 * var(--u));
-    padding-left: calc(9 * var(--u));
+    margin-top: calc(6 * 0.9327px);
+    padding-top: calc(4 * 0.9327px);
+    padding-bottom: calc(4 * 0.9327px);
+    padding-left: calc(9 * 0.9327px);
   }
 
   .costIcon {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: calc(30 * var(--u));
-    height: calc(30 * var(--u));
+    width: calc(30 * 0.9327px);
+    height: calc(30 * 0.9327px);
     border-radius: 50%;
     background: var(--p-cost-icon-bg);
     color: var(--p-cost-icon);
@@ -634,28 +632,28 @@
     align-self: flex-end;
     margin-top: auto;
     padding-top: 12px;
-    gap: calc(9 * var(--u));
+    gap: calc(9 * 0.9327px);
     font-size: var(--fs-label);
     line-height: 1.40;
   }
 
   .cardLearn .learnArrow {
-    width: calc(16 * var(--u));
-    height: calc(16 * var(--u));
+    width: calc(16 * 0.9327px);
+    height: calc(16 * 0.9327px);
   }
 
   /* ---------- urgency key ---------- */
 
   .key {
-    height: calc(97 * var(--u));
-    margin-top: calc(22 * var(--u));
+    height: calc(97 * 0.9327px);
+    margin-top: calc(22 * 0.9327px);
     padding: 0;
   }
 
   .keyTitle {
     position: absolute;
-    top: calc(18 * var(--u));
-    left: calc(25 * var(--u));
+    top: calc(18 * 0.9327px);
+    left: calc(25 * 0.9327px);
     margin: 0;
     font-size: var(--fs-body);
     line-height: 1.38;
@@ -663,31 +661,31 @@
 
   .keyList {
     position: absolute;
-    top: calc(17 * var(--u));
-    left: calc(203 * var(--u));
+    top: calc(17 * 0.9327px);
+    left: calc(203 * 0.9327px);
     right: 0;
     grid-template-columns: 315fr 273fr 272fr 378fr;
     margin: 0;
   }
 
   .keyItem {
-    gap: calc(12 * var(--u));
-    padding-left: calc(65 * var(--u));
+    gap: calc(12 * 0.9327px);
+    padding-left: calc(65 * 0.9327px);
   }
 
   .keyItem + .keyItem::before {
-    top: calc(10 * var(--u));
-    bottom: calc(10 * var(--u));
+    top: calc(10 * 0.9327px);
+    bottom: calc(10 * 0.9327px);
   }
 
   .keyItem:first-child {
-    padding-left: calc(65 * var(--u));
+    padding-left: calc(65 * 0.9327px);
   }
 
   .keyDot {
-    width: calc(20 * var(--u));
-    height: calc(20 * var(--u));
-    margin-top: calc(1 * var(--u));
+    width: calc(20 * 0.9327px);
+    height: calc(20 * 0.9327px);
+    margin-top: calc(1 * 0.9327px);
   }
 
   .keyText strong {
@@ -696,7 +694,7 @@
   }
 
   .keyText span {
-    margin-top: calc(3 * var(--u));
+    margin-top: calc(3 * 0.9327px);
     font-size: var(--fs-label);
     line-height: 1.41;
   }
@@ -729,7 +727,7 @@
   border: 0;
   background: none;
   color: var(--p-learn, #0b57e3);
-  font-size: 14px;
+  font-size: var(--fs-label);
   font-weight: 600;
   cursor: pointer;
 }
@@ -763,4 +761,105 @@
     font-size: 15px !important;
     line-height: 1.55 !important;
   }
+}
+
+
+/* Desktop values for base rules (fixed px; nothing scales with the viewport). */
+@media (min-width: 1024px) {
+  .title {
+    margin: 0 0 0 calc(3 * 0.9327px);
+  }
+
+  .num {
+    border-radius: calc(8 * 0.9327px);
+  }
+
+  .pList {
+    gap: calc(14 * 0.9327px);
+    margin-top: calc(26.5 * 0.9327px);
+  }
+
+  .pCard {
+    grid-template-columns: calc(197 * 0.9327px) 1fr calc(162 * 0.9327px);
+    min-height: calc(180 * 0.9327px);
+    padding: calc(4 * 0.9327px);
+    border-radius: calc(10 * 0.9327px);
+  }
+
+  .pCard .photo {
+    border-radius: calc(8 * 0.9327px);
+  }
+
+  .pCard .num {
+    top: calc(5 * 0.9327px);
+    left: calc(6 * 0.9327px);
+    width: calc(46 * 0.9327px);
+    height: calc(46 * 0.9327px);
+    font-size: calc(25 * 0.9327px);
+  }
+
+  .pBody {
+    padding: calc(13 * 0.9327px) calc(19 * 0.9327px) calc(15 * 0.9327px) calc(23 * 0.9327px);
+  }
+
+  .pTitle {
+    font-size: calc(21.4 * 0.9327px);
+    line-height: calc(30 * 0.9327px);
+  }
+
+  .pDesc {
+    margin: calc(6.3 * 0.9327px) 0 0;
+    font-size: calc(16.3 * 0.9327px);
+    line-height: calc(25.4 * 0.9327px);
+  }
+
+  .pSide {
+    padding-top: calc(16 * 0.9327px);
+  }
+
+  .pSide .severity {
+    gap: calc(12 * 0.9327px);
+    font-size: calc(17 * 0.9327px);
+    line-height: calc(26 * 0.9327px);
+  }
+
+  .pSide .dot {
+    width: calc(18 * 0.9327px);
+    height: calc(18 * 0.9327px);
+  }
+
+  .pLearn {
+    gap: calc(10 * 0.9327px);
+    margin-top: calc(25 * 0.9327px);
+    font-size: calc(18 * 0.9327px);
+    line-height: calc(26 * 0.9327px);
+  }
+
+  .pLearn .learnArrow {
+    width: calc(22 * 0.9327px);
+    height: calc(22 * 0.9327px);
+  }
+
+  .key {
+    border-radius: calc(10 * 0.9327px);
+  }
+}
+
+/* Site container on every width: content starts on the navbar's edge; the section wrapper adds no side space. */
+.frame {
+  max-width: var(--container-8xl);
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+}
+
+.inner {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+/* Headings start on the container edge (UI_RULES §1). */
+.title {
+  margin-left: 0 !important;
 }

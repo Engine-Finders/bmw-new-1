@@ -219,7 +219,7 @@ export default function OwnershipVerdict({ data }) {
 
   return (
     <section className={`${inter.className} ${s.section} ${isDark ? s.dark : s.light}`}>
-      <div className={s.frame}>
+      <div className={`site-container ${s.frame}`}>
         <div className={s.inner}>
           {scene ? (
             <div className={s.art} aria-hidden="true">

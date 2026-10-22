@@ -1,4 +1,5 @@
 import {
+  carImageFor,
   carKeyFor,
   carModelFor,
   createCarPicker,
@@ -106,8 +107,13 @@ export function withModelPageImages(data) {
   }
 
   if (out.calculatorCta) {
-    const [image] = pick([[modelName, stripTags(out.calculatorCta.h2)]]);
-    out.calculatorCta = { ...out.calculatorCta, image };
+    // A three-quarter (45°) cut-out of the model's newest generation, shown whole; the picker's
+    // photo only when there is none (the picker may fall back to side views late in the page).
+    const cards = (out.generations?.cards || []).filter((card) => !card.variant && /\b[EFGU]\d{2}\b/.test(stripTags(card.title)));
+    const newest = cards[cards.length - 1];
+    const angled = carImageFor(modelName, stripTags(newest?.title), stripTags(newest?.meta));
+    const [picked] = angled ? [null] : pick([[modelName, stripTags(out.calculatorCta.h2)]]);
+    out.calculatorCta = { ...out.calculatorCta, image: angled || picked, imageCutout: Boolean(angled) };
   }
 
   if (out.closingActionCards) {

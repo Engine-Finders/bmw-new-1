@@ -7,11 +7,11 @@ import { navMenus } from "@/components/shared/navData";
 export { navMenus };
 
 const linkClass =
-  "block text-sm font-semibold text-[var(--color-text)] no-underline hover:text-[var(--color-primary)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--color-primary)]";
+  "block t-label font-semibold text-[var(--color-text)] no-underline hover:text-[var(--color-primary)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--color-primary)]";
 const mutedLinkClass =
-  "block text-sm font-bold text-[var(--color-primary)] no-underline hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--color-primary)]";
+  "block t-label font-semibold text-[var(--color-primary)] no-underline hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--color-primary)]";
 const topLinkClass =
-  "inline-flex items-center text-sm font-semibold text-[var(--color-text)] no-underline hover:text-[var(--color-primary)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--color-primary)]";
+  "inline-flex items-center t-label font-semibold text-[var(--color-text)] no-underline hover:text-[var(--color-primary)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--color-primary)]";
 
 function Chevron({ open }) {
   return (
@@ -67,7 +67,7 @@ function ModelFlyout({ item, openLeft, onNavigate }) {
               <ul className="grid gap-0.5">
                 {variants.map((link) => (
                   <li key={link.href}>
-                    <Link href={link.href} className={`${linkClass} py-1 text-[0.82rem]`} onClick={onNavigate}>
+                    <Link href={link.href} className={`${linkClass} py-1`} onClick={onNavigate}>
                       {link.label}
                     </Link>
                   </li>
@@ -84,7 +84,7 @@ function ModelFlyout({ item, openLeft, onNavigate }) {
               <ul className="grid gap-0.5">
                 {generations.map((link) => (
                   <li key={link.href}>
-                    <Link href={link.href} className={`${linkClass} py-1 text-[0.82rem]`} onClick={onNavigate}>
+                    <Link href={link.href} className={`${linkClass} py-1`} onClick={onNavigate}>
                       {link.label}
                     </Link>
                   </li>
@@ -233,7 +233,7 @@ export function DesktopNavMenus() {
   }, []);
 
   return (
-    <div ref={rootRef} className="relative hidden flex-1 lg:block">
+    <div ref={rootRef} className="relative hidden flex-1 xl:block">
       <ul className="flex items-center justify-center gap-4 xl:gap-6">
         {navMenus.map((menu) => {
           if (menu.kind === "link") {
@@ -251,7 +251,7 @@ export function DesktopNavMenus() {
             <li key={menu.id}>
               <button
                 type="button"
-                className="inline-flex items-center gap-1.5 text-sm font-semibold text-[var(--color-text)] no-underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--color-primary)]"
+                className="inline-flex items-center gap-1.5 t-label font-semibold text-[var(--color-text)] no-underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--color-primary)]"
                 aria-expanded={isOpen}
                 aria-controls={isOpen ? panelId : undefined}
                 onClick={() => setOpenId(isOpen ? null : menu.id)}

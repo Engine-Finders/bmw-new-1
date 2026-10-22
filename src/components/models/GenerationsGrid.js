@@ -347,7 +347,7 @@ function GenerationsReference({ data }) {
 
   return (
     <section id="generations" className={`${inter.className} ${s.section} ${isDark ? s.dark : s.light}`}>
-      <div className={s.frame}>
+      <div className={`site-container ${s.frame}`}>
         <div className={s.panel}>
           <div className={s.head}>
             <h2 className={s.title}>
