@@ -2,6 +2,7 @@
 
 import { Fragment } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { useTheme } from "@/components/shared/themeProvider";
 import CarOnBackground from "@/components/shared/CarOnBackground";
 import MStripe from "@/components/reusableComponents/MStripe";
@@ -269,13 +270,13 @@ export default function RepairBuyOrReplace({ data }) {
                   <span className="block">Get the right engine at the right price.</span>
                 </p>
               </div>
-              <a
+              <Link
                 href="/quote"
                 className={`${primaryCtaClass("relative z-10 flex w-fit items-center justify-center gap-2 whitespace-nowrap rounded-md px-4 py-3.5 text-center text-[0.7rem] uppercase tracking-wide")}`}
               >
                 {ctaLabel}
                 <GenIcon name="arrow" className="h-4 w-4 shrink-0" />
-              </a>
+              </Link>
             </div>
           ) : null}
         </div>
@@ -310,13 +311,13 @@ export default function RepairBuyOrReplace({ data }) {
                 ) : null}
               </div>
 
-              <a
+              <Link
                 href="/quote"
                 className={`${primaryCtaClass("flex w-full items-center justify-center gap-2 rounded-xl px-3 py-2.5 text-center text-[0.78rem]")}`}
               >
                 {ctaLabel}
                 <GenIcon name="arrow" className="h-4 w-4 shrink-0" />
-              </a>
+              </Link>
             </div>
           ) : null}
 

@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { useTheme } from "@/components/shared/themeProvider";
 import MStripe from "@/components/reusableComponents/MStripe";
 import GenIcon from "../generation/GenIcons";
@@ -193,25 +194,25 @@ export default function ReplacementCosts({ data }) {
               </>
             ) : null}
             {ctaLabel ? (
-              <a
+              <Link
                 href="/quote"
                 className={`${primaryCtaClass("flex shrink-0 items-center justify-center gap-2 whitespace-nowrap rounded-xl px-4 py-2.5 text-[0.8rem]")}`}
               >
                 {ctaLabel}
                 <GenIcon name="arrow" className="h-4 w-4 shrink-0" />
-              </a>
+              </Link>
             ) : null}
           </div>
         ) : null}
 
         {ctaLabel ? (
-          <a
+          <Link
             href="/quote"
             className={`${primaryCtaClass("mt-4 flex w-full items-center justify-center gap-2 rounded-xl px-3 py-2.5 md:hidden")}`}
           >
             <span className="lg:text-[15px] whitespace-nowrap text-center text-[0.78rem] font-bold md:text-[0.9rem]">{ctaLabel}</span>
             <GenIcon name="arrow" className="h-4 w-4 shrink-0" />
-          </a>
+          </Link>
         ) : null}
       </div>
     </section>

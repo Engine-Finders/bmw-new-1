@@ -241,7 +241,7 @@ function MarketIntelligenceReference({ data, quote }) {
 
   return (
     <section id="market-intelligence" className={`${inter.className} ${s.section} ${isDark ? s.dark : s.light}`}>
-      <div className={s.frame}>
+      <div className={`site-container ${s.frame}`}>
         <div className={s.panel}>
           <div className={s.top}>
             <h2 className={s.title}>

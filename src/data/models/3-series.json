@@ -2685,7 +2685,7 @@
         "art": {
           "kind": "engine",
           "light": "/model/s14-engine-light.webp",
-          "dark": "/model/s14-engine-light.webp"
+          "dark": "/engines/b47d20d.webp"
         }
       },
       {
@@ -2702,7 +2702,7 @@
         "art": {
           "kind": "map",
           "light": "/model/s14-map-light.webp",
-          "dark": "/model/s14-map-light.webp"
+          "dark": "/model/s14-map-dark.webp"
         }
       }
     ],

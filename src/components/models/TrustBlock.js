@@ -81,7 +81,7 @@ function TrustBlockReference({ data }) {
 
   return (
     <section id="trust" className={`${inter.className} ${s.section} ${isDark ? s.dark : s.light}`}>
-      <div className={s.frame}>
+      <div className={`site-container ${s.frame}`}>
         <div className={s.panel}>
           <div className={s.card}>
             {art.light ? (

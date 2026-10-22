@@ -280,11 +280,12 @@ function HowItWorks({ data, isDark, numbered = false }) {
   const strong = isDark ? "text-white" : "text-[#0b1626]";
   const soft = isDark ? "text-white/75" : "text-[#3b4656]";
   return (
-    <div className={`rounded-[10px] border p-4 ${card(isDark)}`}>
+    <div className={`flex h-full flex-col rounded-[10px] border p-4 ${card(isDark)}`}>
       <h3 className={`t-label px-1 pt-1 font-semibold uppercase tracking-[0.02em] ${isDark ? "text-[#3b82f6]" : "text-[#0b4fc0]"}`}>
         {data.title}
       </h3>
-      <ul className={`mt-3.5 grid ${numbered ? "gap-0" : "gap-3"}`}>
+      {/* Desktop: the step cards share the column height, so no empty block is left under them. */}
+      <ul className={`mt-3 grid flex-1 ${numbered ? "gap-0" : "auto-rows-fr gap-2.5"}`}>
         {data.steps.map((step, i) =>
           numbered ? (
             <li key={step.step} className="relative grid grid-cols-[32px_46px_minmax(0,1fr)_16px] items-center gap-3 py-3">
@@ -300,18 +301,18 @@ function HowItWorks({ data, isDark, numbered = false }) {
               <Chevron className={`h-4 w-4 ${strong}`} />
             </li>
           ) : (
-            <li key={step.step} className={`relative rounded-[8px] border p-4 ${innerCard(isDark)}`}>
+            <li key={step.step} className={`relative flex flex-col rounded-[8px] border px-4 py-3.5 ${innerCard(isDark)}`}>
               <span className="flex items-center gap-3 pr-6">
-                <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-[6px] bg-[#0b4fc0] text-white">
-                  <Icon name={step.icon} className="h-7 w-7" />
+                <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-[6px] bg-[#0b4fc0] text-white">
+                  <Icon name={step.icon} className="h-[22px] w-[22px]" />
                 </span>
                 <span className="min-w-0">
                   <span className={`t-label block font-medium ${isDark ? "text-[#3b82f6]" : "text-[#0b4fc0]"}`}>Step {step.step}</span>
-                  <span className={`block text-[18px] font-semibold leading-[1.3] ${strong}`}>{step.title}</span>
+                  <span className={`t-h6 block ${strong}`}>{step.title}</span>
                 </span>
               </span>
-              <Chevron className={`absolute right-3 top-5 h-4 w-4 ${strong}`} />
-              <span className={`t-body mt-3 block ${soft}`}>{step.text}</span>
+              <Chevron className={`absolute right-3 top-4 h-4 w-4 ${strong}`} />
+              <span className={`t-body mt-2 block ${soft}`}>{step.text}</span>
             </li>
           ),
         )}
@@ -346,19 +347,19 @@ function WhyTrust({ title, items, isDark, phone = false }) {
     );
   }
   return (
-    <div className={`rounded-[10px] border p-4 ${card(isDark)}`}>
+    <div className={`flex h-full flex-col rounded-[10px] border p-4 ${card(isDark)}`}>
       <h3 className={heading}>{title}</h3>
-      <ul className="mt-3.5 grid gap-2.5">
+      <ul className="mt-3 grid gap-2.5">
         {items.map((item) => (
-          <li key={item.title} className={`relative rounded-[8px] border p-4 ${innerCard(isDark)}`}>
+          <li key={item.title} className={`relative flex flex-col rounded-[8px] border px-4 py-3.5 ${innerCard(isDark)}`}>
             <span className="flex items-center gap-3 pr-6">
-              <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[#0b4fc0] text-white">
-                <Icon name={item.icon} className="h-7 w-7" />
+              <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#0b4fc0] text-white">
+                <Icon name={item.icon} className="h-[22px] w-[22px]" />
               </span>
-              <span className={`text-[18px] font-semibold leading-[1.3] ${strong}`}>{item.title}</span>
+              <span className={`t-h6 ${strong}`}>{item.title}</span>
             </span>
-            <Chevron className={`absolute right-3 top-5 h-4 w-4 ${strong}`} />
-            <span className={`t-body mt-3 block ${soft}`}>{item.text}</span>
+            <Chevron className={`absolute right-3 top-4 h-4 w-4 ${strong}`} />
+            <span className={`t-body mt-2 block ${soft}`}>{item.text}</span>
           </li>
         ))}
       </ul>
@@ -368,31 +369,52 @@ function WhyTrust({ title, items, isDark, phone = false }) {
 
 function SymptomTiles({ tiles, selectedId, onSelect, isDark, phone = false }) {
   const strong = isDark ? "text-white" : "text-[#0b1626]";
+  const tone = (active) =>
+    active
+      ? "border-[#0b4fc0] bg-[#eef3fb] ring-1 ring-[#0b4fc0]"
+      : isDark
+        ? "border-[#1e3350] bg-[rgba(16,26,42,0.9)] hover:border-[#3b82f6]"
+        : "border-[#e8ecf2] bg-white hover:border-[#0b4fc0]";
+  if (!phone) {
+    // Desktop: two columns of compact options (icon left, label right) so every label fits at 15px.
+    return (
+      <div className="grid grid-cols-2 gap-2">
+        {tiles.map((tile) => {
+          const active = selectedId === tile.id;
+          return (
+            <button
+              key={tile.id}
+              type="button"
+              onClick={() => onSelect(tile.id)}
+              className={`flex min-w-0 items-center gap-3 rounded-[6px] border px-3 py-2.5 text-left transition ${tone(active)}`}
+            >
+              <span className={`shrink-0 ${isDark && !active ? "text-[#3b82f6]" : "text-[#0b4fc0]"}`}>
+                <Icon name={tile.icon} className="h-8 w-8" />
+              </span>
+              <span className={`t-label min-w-0 flex-1 leading-[1.3] ${active ? "text-[#0b1626]" : strong}`}>{tile.label}</span>
+              <Chevron className={`h-4 w-4 shrink-0 ${active ? "text-[#0b1626]" : strong}`} />
+            </button>
+          );
+        })}
+      </div>
+    );
+  }
   return (
-    <div className={`grid gap-1.5 ${phone ? "grid-cols-3" : "grid-cols-5"}`}>
+    <div className="grid grid-cols-3 gap-1.5">
       {tiles.map((tile, i) => {
         const active = selectedId === tile.id;
-        const lastAlone = phone && i === tiles.length - 1 && tiles.length % 3 === 1;
+        const lastAlone = i === tiles.length - 1 && tiles.length % 3 === 1;
         return (
           <button
             key={tile.id}
             type="button"
             onClick={() => onSelect(tile.id)}
-            className={`flex flex-col items-center rounded-[6px] border text-center transition ${phone ? "px-1.5 pb-3 pt-3.5" : "px-2 pb-3 pt-4"} ${
-              lastAlone ? "col-start-2" : ""
-            } ${
-              active
-                ? "border-[#0b4fc0] bg-[#eef3fb] ring-1 ring-[#0b4fc0]"
-                : isDark
-                  ? "border-[#1e3350] bg-[rgba(16,26,42,0.9)] hover:border-[#3b82f6]"
-                  : "border-[#e8ecf2] bg-white hover:border-[#0b4fc0]"
-            }`}
+            className={`flex min-w-0 flex-col items-center rounded-[6px] border px-1.5 pb-3 pt-3.5 text-center transition ${lastAlone ? "col-start-2" : ""} ${tone(active)}`}
           >
             <span className={isDark && !active ? "text-[#3b82f6]" : "text-[#0b4fc0]"}>
-              <Icon name={tile.icon} className={phone ? "h-11 w-11" : "h-12 w-12"} />
+              <Icon name={tile.icon} className="h-11 w-11" />
             </span>
-            <span className={`mt-2.5 leading-[1.35] ${phone ? "text-[14px]" : "t-label"} ${active ? "text-[#0b1626]" : strong}`}>{tile.label}</span>
-            {!phone ? <Chevron className={`mt-auto h-4 w-4 pt-1 ${active ? "text-[#0b1626]" : strong}`} /> : null}
+            <span className={`mt-2.5 max-w-full text-[14px] leading-[1.35] ${active ? "text-[#0b1626]" : strong}`}>{tile.label}</span>
           </button>
         );
       })}
@@ -627,7 +649,7 @@ function ResultsScreen({ diagnosis, verdict, engineOption, ctas, isDark, calcula
 
     const href = ctas.quote?.href && ctas.quote.href !== "#" ? ctas.quote.href : "/quote";
     const url = href.includes("?") ? `${href}&from=calculator` : `${href}?from=calculator`;
-    window.location.href = url;
+    window.location.assign(url);
   }
 
   return (
@@ -771,7 +793,7 @@ export default function HomeSec3({ data }) {
   }
 
   const renderStepOne = (phone = false) => (
-      <div>
+      <div className={phone ? "" : "flex h-full flex-col"}>
         <p className={`t-label font-semibold uppercase tracking-[0.02em] ${isDark ? "text-[#3b82f6]" : "text-[#0b4fc0]"}`}>{data.step1.label}</p>
         <h3 className={`t-h5 mt-2 ${strong}`}>{data.step1.title}</h3>
         <p className={`t-body mt-1.5 ${sub}`}>{data.step1.text}</p>
@@ -948,7 +970,7 @@ export default function HomeSec3({ data }) {
           }`}
         />
         <div className="site-container section-y relative">
-          <div aria-hidden="true" className="pointer-events-none absolute right-[var(--gutter)] top-6 h-[360px] w-[470px] max-w-[40%]">
+          <div aria-hidden="true" className="pointer-events-none absolute right-[var(--gutter)] top-6 h-[360px] w-[470px] max-w-[36%] xl:max-w-[40%]">
             <div className={`absolute inset-x-[4%] -bottom-[2%] h-[10%] rounded-[50%] blur-xl ${isDark ? "bg-black/80" : "bg-black/35"}`} />
             <Image src={isDark ? data.images.desktop.dark : data.images.desktop.light} alt={data.images.desktop.alt} fill sizes="40vw" className="object-contain object-bottom" />
           </div>
@@ -960,17 +982,17 @@ export default function HomeSec3({ data }) {
             <TrustStrip items={data.trustStrip} isDark={isDark} />
           </div>
 
-          <div className="relative mt-6 grid gap-4 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.7fr)_minmax(0,1fr)]">
-            <div className="hidden lg:block">
+          <div className="relative mt-6 grid gap-4 xl:grid-cols-[minmax(0,1fr)_minmax(0,1.2fr)_minmax(0,1.1fr)]">
+            <div className="hidden xl:block">
               <HowItWorks data={data.howItWorks} isDark={isDark} />
             </div>
-            <div className={`rounded-[10px] border p-5 ${isDark ? "border-[#2563eb]/60 bg-[rgba(10,18,30,0.92)]" : "border-[#c9d8f1] bg-white"}`}>
+            <div className={`flex flex-col rounded-[10px] border p-5 ${isDark ? "border-[#2563eb]/60 bg-[rgba(10,18,30,0.92)]" : "border-[#c9d8f1] bg-white"}`}>
               {stage === "entry" ? renderStepOne() : flow}
             </div>
-            <div className="hidden lg:block">
+            <div className="hidden xl:block">
               <WhyTrust title={data.whyTrustTitle} items={calculator.whyTrust} isDark={isDark} />
             </div>
-            <div className="grid gap-4 md:grid-cols-2 lg:hidden">
+            <div className="grid gap-4 md:grid-cols-2 xl:hidden">
               <HowItWorks data={data.howItWorks} isDark={isDark} />
               <WhyTrust title={data.whyTrustTitle} items={calculator.whyTrust} isDark={isDark} />
             </div>

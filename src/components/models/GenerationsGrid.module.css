@@ -21,12 +21,11 @@
 }
 
 .panel {
-  --u: calc(100cqw / 863);
   position: relative;
-  margin: 0 calc(8 * var(--u)) calc(10 * var(--u)) calc(10 * var(--u));
-  padding: 0 calc(24 * var(--u)) calc(12 * var(--u)) calc(23 * var(--u));
+  margin: 0 calc(8 * 0.4519px) calc(10 * 0.4519px) calc(10 * 0.4519px);
+  padding: 0 calc(24 * 0.4519px) calc(12 * 0.4519px) calc(23 * 0.4519px);
   border: 1px solid var(--g-panel-border);
-  border-radius: calc(18 * var(--u));
+  border-radius: calc(18 * 0.4519px);
   background: var(--g-panel);
   box-shadow: var(--g-panel-shadow);
 }
@@ -118,27 +117,27 @@
 /* ---------- heading ---------- */
 
 .head {
-  padding-top: calc(56 * var(--u));
+  padding-top: calc(56 * 0.4519px);
 }
 
 .title {
-  margin: 0 0 0 calc(12 * var(--u));
-  font-size: calc(36 * var(--u));
+  margin: 0 0 0 calc(12 * 0.4519px);
+  font-size: calc(36 * 0.4519px);
   font-weight: 700;
-  line-height: calc(46 * var(--u));
+  line-height: calc(46 * 0.4519px);
   color: var(--g-text);
 }
 
 .accent {
-  font-size: calc(35.1 * var(--u));
+  font-size: calc(35.1 * 0.4519px);
   color: var(--g-accent);
 }
 
 .copy {
-  max-width: calc(410 * var(--u));
-  margin: calc(9 * var(--u)) 0 0 calc(10 * var(--u));
-  font-size: calc(15.47 * var(--u));
-  line-height: calc(26.5 * var(--u));
+  max-width: calc(410 * 0.4519px);
+  margin: calc(9 * 0.4519px) 0 0 calc(10 * 0.4519px);
+  font-size: calc(15.47 * 0.4519px);
+  line-height: calc(26.5 * 0.4519px);
   color: var(--g-copy);
 }
 
@@ -153,7 +152,7 @@
   flex-shrink: 0;
   align-items: center;
   justify-content: center;
-  border-radius: calc(4 * var(--u));
+  border-radius: calc(4 * 0.4519px);
   background: var(--g-num);
   color: #ffffff;
   font-weight: 600;
@@ -239,8 +238,8 @@
 .pCards {
   display: flex;
   flex-direction: column;
-  gap: calc(6.5 * var(--u));
-  margin-top: calc(17 * var(--u));
+  gap: calc(6.5 * 0.4519px);
+  margin-top: calc(17 * 0.4519px);
 }
 
 .pCards.phoneOnly {
@@ -249,13 +248,13 @@
 
 .pCard {
   border: 1px solid var(--g-card-border);
-  border-radius: calc(14 * var(--u));
+  border-radius: calc(14 * 0.4519px);
   background: var(--g-card);
   box-shadow: var(--g-card-shadow);
 }
 
 .pOpen {
-  margin-bottom: calc(3 * var(--u));
+  margin-bottom: calc(3 * 0.4519px);
 }
 
 .pHead {
@@ -263,8 +262,8 @@
   display: flex;
   align-items: flex-start;
   width: 100%;
-  min-height: calc(91 * var(--u));
-  padding: calc(15.75 * var(--u)) calc(64 * var(--u)) calc(9 * var(--u)) calc(19 * var(--u));
+  min-height: calc(91 * 0.4519px);
+  padding: calc(15.75 * 0.4519px) calc(64 * 0.4519px) calc(9 * 0.4519px) calc(19 * 0.4519px);
   border: 0;
   background: none;
   color: inherit;
@@ -274,55 +273,55 @@
 }
 
 .pHead .num {
-  width: calc(27 * var(--u));
-  height: calc(28 * var(--u));
-  font-size: calc(15 * var(--u));
+  width: calc(27 * 0.4519px);
+  height: calc(28 * 0.4519px);
+  font-size: calc(15 * 0.4519px);
 }
 
 .pText {
   display: block;
   min-width: 0;
-  padding-left: calc(22 * var(--u));
+  padding-left: calc(22 * 0.4519px);
 }
 
 .pHead .cardLabel {
-  font-size: calc(13.1 * var(--u));
+  font-size: calc(13.1 * 0.4519px);
   font-weight: 600;
-  line-height: calc(18 * var(--u));
+  line-height: calc(18 * 0.4519px);
 }
 
 .pHead .code {
-  margin-top: calc(2.2 * var(--u));
-  font-size: calc(21.8 * var(--u));
-  line-height: calc(26 * var(--u));
+  margin-top: calc(2.2 * 0.4519px);
+  font-size: calc(21.8 * 0.4519px);
+  line-height: calc(26 * 0.4519px);
 }
 
 /* rows with the "Most Enquired" badge sit a little tighter, as in the reference */
 .pHead:has(.badgeBlock) {
-  padding-top: calc(13.75 * var(--u));
-  padding-bottom: calc(1.5 * var(--u));
+  padding-top: calc(13.75 * 0.4519px);
+  padding-bottom: calc(1.5 * 0.4519px);
 }
 
 .pHead .badgeBlock {
-  margin-top: calc(2 * var(--u));
+  margin-top: calc(2 * 0.4519px);
 }
 
 .pHead .badgeLine,
 .pHead .badgeTag {
-  font-size: calc(12.9 * var(--u));
-  line-height: calc(22 * var(--u));
+  font-size: calc(12.9 * 0.4519px);
+  line-height: calc(22 * 0.4519px);
 }
 
 .pMeta {
   display: block;
-  margin-top: calc(4.2 * var(--u));
-  font-size: calc(11.2 * var(--u));
-  line-height: calc(18 * var(--u));
+  margin-top: calc(4.2 * 0.4519px);
+  font-size: calc(11.2 * 0.4519px);
+  line-height: calc(18 * 0.4519px);
   color: var(--g-meta);
 }
 
 .pEngines {
-  margin-left: calc(8 * var(--u));
+  margin-left: calc(8 * 0.4519px);
 }
 
 .pEngines a {
@@ -333,73 +332,73 @@
 
 .pThumb {
   position: absolute;
-  top: calc(13 * var(--u));
-  left: calc(547 * var(--u));
-  width: calc(137 * var(--u));
-  height: calc(72 * var(--u));
+  top: calc(13 * 0.4519px);
+  left: calc(547 * 0.4519px);
+  width: calc(137 * 0.4519px);
+  height: calc(72 * 0.4519px);
 }
 
 .pChevron {
   position: absolute;
-  top: calc(17 * var(--u));
-  right: calc(28 * var(--u));
-  width: calc(22 * var(--u));
-  height: calc(22 * var(--u));
+  top: calc(17 * 0.4519px);
+  right: calc(28 * 0.4519px);
+  width: calc(22 * 0.4519px);
+  height: calc(22 * 0.4519px);
   color: var(--g-chevron);
 }
 
 /* open card: bigger header text, then car, button, stars, verdict */
 .pOpen .pHead {
   min-height: 0;
-  padding-top: calc(20 * var(--u));
-  padding-left: calc(22 * var(--u));
+  padding-top: calc(20 * 0.4519px);
+  padding-left: calc(22 * 0.4519px);
 }
 
 .pOpen .pHead .num {
-  width: calc(28 * var(--u));
-  height: calc(28 * var(--u));
+  width: calc(28 * 0.4519px);
+  height: calc(28 * 0.4519px);
 }
 
 .pOpen .pText {
-  padding-left: calc(24 * var(--u));
+  padding-left: calc(24 * 0.4519px);
 }
 
 .pOpen .pHead .cardLabel {
-  font-size: calc(14.6 * var(--u));
-  line-height: calc(20 * var(--u));
+  font-size: calc(14.6 * 0.4519px);
+  line-height: calc(20 * 0.4519px);
 }
 
 .pOpen .pHead .code {
-  margin-top: calc(3 * var(--u));
-  font-size: calc(27.6 * var(--u));
-  line-height: calc(34 * var(--u));
+  margin-top: calc(3 * 0.4519px);
+  font-size: calc(27.6 * 0.4519px);
+  line-height: calc(34 * 0.4519px);
 }
 
 .pOpen .pHead .years {
-  margin-top: calc(7 * var(--u));
-  font-size: calc(16 * var(--u));
-  line-height: calc(24 * var(--u));
+  margin-top: calc(7 * 0.4519px);
+  font-size: calc(16 * 0.4519px);
+  line-height: calc(24 * 0.4519px);
 }
 
 .pOpen .pHead .engines {
-  font-size: calc(15.6 * var(--u));
-  line-height: calc(24 * var(--u));
+  font-size: calc(15.6 * 0.4519px);
+  line-height: calc(24 * 0.4519px);
 }
 
 .pOpen .pChevron {
-  top: calc(20 * var(--u));
+  top: calc(20 * 0.4519px);
 }
 
 .pBody {
   position: relative;
-  padding: 0 calc(21 * var(--u)) calc(16 * var(--u)) calc(22 * var(--u));
+  padding: 0 calc(21 * 0.4519px) calc(16 * 0.4519px) calc(22 * 0.4519px);
 }
 
 .pCar {
   position: relative;
-  width: calc(413 * var(--u));
-  height: calc(165 * var(--u));
-  margin: calc(-28 * var(--u)) 0 0 calc(145 * var(--u));
+  width: calc(413 * 0.4519px);
+  height: calc(165 * 0.4519px);
+  margin: calc(-28 * 0.4519px) 0 0 calc(145 * 0.4519px);
 }
 
 .pCta {
@@ -407,76 +406,76 @@
   align-items: center;
   justify-content: center;
   position: relative;
-  height: calc(49 * var(--u));
-  margin-top: calc(12 * var(--u));
+  height: calc(49 * 0.4519px);
+  margin-top: calc(12 * 0.4519px);
   border: 1.5px solid var(--g-open-btn-border, var(--g-num));
-  border-radius: calc(7 * var(--u));
+  border-radius: calc(7 * 0.4519px);
   color: var(--g-open-btn-text, var(--g-accent));
-  font-size: calc(17.4 * var(--u));
+  font-size: calc(17.4 * 0.4519px);
   font-weight: 600;
 }
 
 .pCtaIcon {
   position: absolute;
   top: 50%;
-  right: calc(32 * var(--u));
-  width: calc(22 * var(--u));
-  height: calc(22 * var(--u));
+  right: calc(32 * 0.4519px);
+  width: calc(22 * 0.4519px);
+  height: calc(22 * 0.4519px);
   transform: translateY(-50%);
 }
 
 .pStars {
-  gap: calc(4 * var(--u));
-  margin-top: calc(13 * var(--u));
+  gap: calc(4 * 0.4519px);
+  margin-top: calc(13 * 0.4519px);
 }
 
 .pStars svg {
-  width: calc(26 * var(--u));
-  height: calc(26 * var(--u));
+  width: calc(26 * 0.4519px);
+  height: calc(26 * 0.4519px);
 }
 
 .pVerdict {
-  max-width: calc(492 * var(--u));
-  margin-top: calc(9 * var(--u));
+  max-width: calc(492 * 0.4519px);
+  margin-top: calc(9 * 0.4519px);
 }
 
 .pVerdict .verdictLabel {
-  font-size: calc(16.6 * var(--u));
-  line-height: calc(24 * var(--u));
+  font-size: calc(16.6 * 0.4519px);
+  line-height: calc(24 * 0.4519px);
 }
 
 .pVerdict .verdictText {
-  margin-top: calc(6 * var(--u));
-  font-size: calc(16.47 * var(--u));
-  line-height: calc(26.5 * var(--u));
+  margin-top: calc(6 * 0.4519px);
+  font-size: calc(16.47 * 0.4519px);
+  line-height: calc(26.5 * 0.4519px);
 }
 
 /* ---------- comparison ---------- */
 
 .compare {
-  margin-top: calc(7 * var(--u));
-  padding: calc(9 * var(--u)) calc(10 * var(--u)) calc(14 * var(--u)) calc(11 * var(--u));
+  margin-top: calc(7 * 0.4519px);
+  padding: calc(9 * 0.4519px) calc(10 * 0.4519px) calc(14 * 0.4519px) calc(11 * 0.4519px);
   border: 1px solid var(--g-card-border);
-  border-radius: calc(14 * var(--u));
+  border-radius: calc(14 * 0.4519px);
   background: var(--g-card);
 }
 
 .compareTitle {
   display: flex;
   align-items: center;
-  gap: calc(14 * var(--u));
-  margin: 0 0 0 calc(6 * var(--u));
-  font-size: calc(17.9 * var(--u));
+  gap: calc(14 * 0.4519px);
+  margin: 0 0 0 calc(6 * 0.4519px);
+  font-size: calc(17.9 * 0.4519px);
   font-weight: 600;
-  line-height: calc(26 * var(--u));
+  line-height: calc(26 * 0.4519px);
   color: var(--g-text);
 }
 
 .compareIcon {
-  width: calc(28 * var(--u));
-  height: calc(26 * var(--u));
-  padding: calc(3 * var(--u)) calc(4 * var(--u));
-  border-radius: calc(6 * var(--u));
+  width: calc(28 * 0.4519px);
+  height: calc(26 * 0.4519px);
+  padding: calc(3 * 0.4519px) calc(4 * 0.4519px);
+  border-radius: calc(6 * 0.4519px);
   background: var(--g-link-icon-bg);
   color: var(--g-icon);
 }
@@ -484,15 +483,15 @@
 .grid {
   position: relative;
   display: grid;
-  margin-top: calc(9 * var(--u));
+  margin-top: calc(9 * 0.4519px);
   overflow: hidden;
   border: 1px solid var(--g-grid-border);
-  border-radius: calc(8 * var(--u));
+  border-radius: calc(8 * 0.4519px);
 }
 
 .gridPhone {
   grid-template-columns: 131fr 157fr 168fr 167fr 154fr;
-  font-size: calc(12 * var(--u));
+  font-size: calc(12 * 0.4519px);
 }
 
 .gHead,
@@ -519,11 +518,11 @@
 .gridPhone .gCorner,
 .gridPhone .gTh,
 .gridPhone .posHead {
-  height: calc(47 * var(--u));
+  height: calc(47 * 0.4519px);
 }
 
 .gTh {
-  gap: calc(19 * var(--u));
+  gap: calc(19 * 0.4519px);
   color: var(--g-th);
 }
 
@@ -542,25 +541,25 @@
 }
 
 .gridPhone .thText strong {
-  font-size: calc(13.8 * var(--u));
-  line-height: calc(19 * var(--u));
+  font-size: calc(13.8 * 0.4519px);
+  line-height: calc(19 * 0.4519px);
 }
 
 .gridPhone .thText span {
-  font-size: calc(12.2 * var(--u));
-  line-height: calc(19 * var(--u));
+  font-size: calc(12.2 * 0.4519px);
+  line-height: calc(19 * 0.4519px);
   color: var(--g-cell);
 }
 
 .thIcon {
   flex-shrink: 0;
-  width: calc(22 * var(--u));
-  height: calc(22 * var(--u));
+  width: calc(22 * 0.4519px);
+  height: calc(22 * 0.4519px);
   color: var(--g-icon);
 }
 
 .posHead {
-  gap: calc(12 * var(--u));
+  gap: calc(12 * 0.4519px);
   border-right: 0;
   border-left: 1px solid var(--g-pos-border);
   border-bottom-color: var(--g-pos-border);
@@ -571,38 +570,38 @@
 
 .gridPhone .posHead {
   justify-content: center;
-  padding: 0 calc(8 * var(--u));
-  font-size: calc(13 * var(--u));
+  padding: 0 calc(8 * 0.4519px);
+  font-size: calc(13 * 0.4519px);
 }
 
 .posIcon {
   flex-shrink: 0;
-  width: calc(20 * var(--u));
-  height: calc(20 * var(--u));
+  width: calc(20 * 0.4519px);
+  height: calc(20 * 0.4519px);
   color: var(--g-pos-icon);
 }
 
 .gLabel {
-  gap: calc(14 * var(--u));
+  gap: calc(14 * 0.4519px);
   font-weight: 600;
   color: var(--g-th);
 }
 
 .gridPhone .gLabel {
-  gap: calc(10 * var(--u));
-  padding-left: calc(4 * var(--u));
-  font-size: calc(11.6 * var(--u));
+  gap: calc(10 * 0.4519px);
+  padding-left: calc(4 * 0.4519px);
+  font-size: calc(11.6 * 0.4519px);
 }
 
 .gridPhone .rowIcon {
-  width: calc(24 * var(--u));
-  height: calc(24 * var(--u));
+  width: calc(24 * 0.4519px);
+  height: calc(24 * 0.4519px);
 }
 
 .rowIcon {
   flex-shrink: 0;
-  width: calc(22 * var(--u));
-  height: calc(22 * var(--u));
+  width: calc(22 * 0.4519px);
+  height: calc(22 * 0.4519px);
   color: var(--g-icon);
 }
 
@@ -611,17 +610,17 @@
 }
 
 .gridPhone .gCell {
-  padding-left: calc(19 * var(--u));
-  font-size: calc(12 * var(--u));
-  line-height: calc(19 * var(--u));
+  padding-left: calc(19 * 0.4519px);
+  font-size: calc(12 * 0.4519px);
+  line-height: calc(19 * 0.4519px);
 }
 
 .gridPhone .gRow:nth-child(2) > * {
-  height: calc(59 * var(--u));
+  height: calc(59 * 0.4519px);
 }
 
 .gridPhone .gRow:nth-child(3) > * {
-  height: calc(49 * var(--u));
+  height: calc(49 * 0.4519px);
 }
 
 .gRow:last-child > * {
@@ -651,26 +650,26 @@
 }
 
 .gridPhone .posText {
-  padding: calc(4 * var(--u)) calc(8 * var(--u)) 0 calc(19 * var(--u));
-  font-size: calc(12.6 * var(--u));
-  line-height: calc(19 * var(--u));
+  padding: calc(4 * 0.4519px) calc(8 * 0.4519px) 0 calc(19 * 0.4519px);
+  font-size: calc(12.6 * 0.4519px);
+  line-height: calc(19 * 0.4519px);
 }
 
 .link {
   display: flex;
   align-items: center;
-  margin: calc(10 * var(--u)) 0 0 calc(5 * var(--u));
+  margin: calc(10 * 0.4519px) 0 0 calc(5 * 0.4519px);
   color: var(--g-link);
-  font-size: calc(13.5 * var(--u));
+  font-size: calc(13.5 * 0.4519px);
 }
 
 .linkIcon {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: calc(24 * var(--u));
-  height: calc(24 * var(--u));
-  margin-right: calc(16 * var(--u));
+  width: calc(24 * 0.4519px);
+  height: calc(24 * 0.4519px);
+  margin-right: calc(16 * 0.4519px);
   border-radius: 50%;
   background: var(--g-link-icon-bg);
   color: var(--g-icon);
@@ -684,16 +683,16 @@
 .linkA {
   display: inline-flex;
   align-items: center;
-  gap: calc(10 * var(--u));
-  margin-left: calc(20 * var(--u));
+  gap: calc(10 * 0.4519px);
+  margin-left: calc(20 * 0.4519px);
   color: var(--g-link-a);
-  font-size: calc(15.9 * var(--u));
+  font-size: calc(15.9 * 0.4519px);
   font-weight: 700;
 }
 
 .linkArrow {
-  width: calc(18 * var(--u));
-  height: calc(18 * var(--u));
+  width: calc(18 * 0.4519px);
+  height: calc(18 * 0.4519px);
 }
 
 /* ======================= Small phones ======================= */
@@ -885,7 +884,7 @@
     grid-template-columns: 63fr 64fr 75fr 79fr 67fr;
     margin-top: 10px;
     border-radius: 8px;
-    font-size: 2.1cqw;
+    font-size: 8.19px;
   }
 
   .gridPhone .gCorner,
@@ -948,25 +947,25 @@
   .link {
     margin-left: 0;
     white-space: nowrap;
-    font-size: 2.7cqw;
+    font-size: 10.53px;
   }
 
   .linkIcon {
     flex-shrink: 0;
-    width: 5.4cqw;
-    height: 5.4cqw;
-    margin-right: 2cqw;
+    width: 21.06px;
+    height: 21.06px;
+    margin-right: 7.8px;
   }
 
   .linkA {
-    gap: 1.4cqw;
-    margin-left: 2cqw;
-    font-size: 3.1cqw;
+    gap: 5.46px;
+    margin-left: 7.8px;
+    font-size: 12.09px;
   }
 
   .linkArrow {
-    width: 3.4cqw;
-    height: 3.4cqw;
+    width: 13.26px;
+    height: 13.26px;
   }
 }
 
@@ -974,10 +973,9 @@
 
 @media (min-width: 1024px) {
   .panel {
-    --u: calc(100cqw / 1514);
-    margin: calc(3 * var(--u)) calc(11 * var(--u)) calc(11 * var(--u));
-    padding: 0 calc(25 * var(--u)) calc(24 * var(--u)) calc(25 * var(--u));
-    border-radius: calc(16 * var(--u));
+    margin: calc(3 * 0.8877px) calc(11 * 0.8877px) calc(11 * 0.8877px);
+    padding: 0 calc(25 * 0.8877px) calc(24 * 0.8877px) calc(25 * 0.8877px);
+    border-radius: calc(16 * 0.8877px);
   }
 
   .deskOnly {
@@ -990,11 +988,11 @@
   }
 
   .head {
-    padding-top: calc(62 * var(--u));
+    padding-top: calc(62 * 0.8877px);
   }
 
   .title {
-    margin-left: calc(14 * var(--u));
+    margin-left: calc(14 * 0.8877px);
     font-size: var(--fs-h2);
     line-height: 1.27;
     letter-spacing: 0;
@@ -1006,7 +1004,7 @@
 
   .copy {
     max-width: none;
-    margin: calc(5 * var(--u)) 0 0 calc(13 * var(--u));
+    margin: calc(5 * 0.8877px) 0 0 calc(13 * 0.8877px);
     font-size: var(--fs-label);
     line-height: 1.65;
   }
@@ -1050,10 +1048,10 @@
 
   .card .num {
     flex-shrink: 0;
-    width: 22px;
-    height: 22px;
+    width: 26px;
+    height: 26px;
     border-radius: 4px;
-    font-size: 13px;
+    font-size: var(--fs-label);
   }
 
   .card .cardLabel {
@@ -1139,7 +1137,7 @@
     border-radius: 6px;
     background: var(--g-btn-bg);
     color: var(--g-btn-text);
-    font-size: 14px;
+    font-size: var(--fs-label);
     font-weight: 600;
     line-height: 1.2;
     text-align: center;
@@ -1164,40 +1162,40 @@
   /* ---------- comparison ---------- */
 
   .compare {
-    margin: calc(23 * var(--u)) 0 0 calc(1 * var(--u));
-    padding: calc(13 * var(--u)) calc(31 * var(--u)) calc(18 * var(--u)) calc(24 * var(--u));
-    border-radius: calc(14 * var(--u));
+    margin: calc(23 * 0.8877px) 0 0 calc(1 * 0.8877px);
+    padding: calc(13 * 0.8877px) calc(31 * 0.8877px) calc(18 * 0.8877px) calc(24 * 0.8877px);
+    border-radius: calc(14 * 0.8877px);
   }
 
   .compareTitle {
-    gap: calc(20 * var(--u));
-    margin-left: calc(1 * var(--u));
+    gap: calc(20 * 0.8877px);
+    margin-left: calc(1 * 0.8877px);
     font-size: var(--fs-p);
     line-height: 1.28;
   }
 
   .compareIcon {
-    width: calc(27 * var(--u));
-    height: calc(27 * var(--u));
+    width: calc(27 * 0.8877px);
+    height: calc(27 * 0.8877px);
     padding: 0;
     background: none;
   }
 
   .gridDesk {
     grid-template-columns: 214fr 316fr 299fr 292fr 284fr;
-    margin-top: calc(6 * var(--u));
-    border-radius: calc(10 * var(--u));
+    margin-top: calc(6 * 0.8877px);
+    border-radius: calc(10 * 0.8877px);
     font-size: var(--fs-label);
   }
 
   .gridDesk .gCorner,
   .gridDesk .gTh,
   .gridDesk .posHead {
-    height: calc(55 * var(--u));
+    height: calc(55 * 0.8877px);
   }
 
   .gridDesk .gTh {
-    padding-left: calc(55 * var(--u));
+    padding-left: calc(55 * 0.8877px);
   }
 
   .gridDesk .thText strong {
@@ -1212,63 +1210,63 @@
   }
 
   .gridDesk .posHead {
-    padding-left: calc(40 * var(--u));
-    gap: calc(17 * var(--u));
+    padding-left: calc(40 * 0.8877px);
+    gap: calc(17 * 0.8877px);
     font-size: var(--fs-label);
   }
 
   .gridDesk .gLabel {
-    padding-left: calc(20 * var(--u));
-    gap: calc(16 * var(--u));
+    padding-left: calc(20 * 0.8877px);
+    gap: calc(16 * 0.8877px);
   }
 
   .gridDesk .gRow:nth-child(2) > * {
-    height: calc(62 * var(--u));
+    height: calc(62 * 0.8877px);
   }
 
   .gridDesk .gRow:nth-child(3) > * {
-    height: calc(63 * var(--u));
+    height: calc(63 * 0.8877px);
   }
 
   .gridDesk .gCell {
-    padding-left: calc(58 * var(--u));
-    line-height: calc(21.5 * var(--u));
+    padding-left: calc(58 * 0.8877px);
+    line-height: calc(21.5 * 0.8877px);
   }
 
   .gridDesk .gCell:nth-child(3) {
-    padding-left: calc(51 * var(--u));
+    padding-left: calc(51 * 0.8877px);
   }
 
   .gridDesk .gCell:nth-child(4) {
-    padding-left: calc(46 * var(--u));
+    padding-left: calc(46 * 0.8877px);
   }
 
   .gridDesk .posText {
-    padding: calc(8 * var(--u)) 0 0 calc(39 * var(--u));
+    padding: calc(8 * 0.8877px) 0 0 calc(39 * 0.8877px);
     font-size: var(--fs-label);
     line-height: 1.53;
   }
 
   .link {
-    margin: calc(16 * var(--u)) 0 0 calc(-1 * var(--u));
+    margin: calc(16 * 0.8877px) 0 0 calc(-1 * 0.8877px);
     font-size: var(--fs-label);
   }
 
   .linkIcon {
-    width: calc(24 * var(--u));
-    height: calc(24 * var(--u));
-    margin-right: calc(17 * var(--u));
+    width: calc(24 * 0.8877px);
+    height: calc(24 * 0.8877px);
+    margin-right: calc(17 * 0.8877px);
   }
 
   .linkA {
-    gap: calc(12 * var(--u));
-    margin-left: calc(20 * var(--u));
+    gap: calc(12 * 0.8877px);
+    margin-left: calc(20 * 0.8877px);
     font-size: var(--fs-body);
   }
 
   .linkArrow {
-    width: calc(16 * var(--u));
-    height: calc(16 * var(--u));
+    width: calc(16 * 0.8877px);
+    height: calc(16 * 0.8877px);
   }
 
   /* Site container: same width and side padding as every other section. */
@@ -1329,4 +1327,308 @@
   .linkA {
     margin-left: 0;
   }
+}
+
+
+/* Desktop values for base rules (fixed px; nothing scales with the viewport). */
+@media (min-width: 1024px) {
+  .title {
+    margin: 0 0 0 calc(12 * 0.8877px);
+  }
+
+  .num {
+    border-radius: calc(4 * 0.8877px);
+  }
+
+  .pCards {
+    gap: calc(6.5 * 0.8877px);
+    margin-top: calc(17 * 0.8877px);
+  }
+
+  .pCard {
+    border-radius: calc(14 * 0.8877px);
+  }
+
+  .pOpen {
+    margin-bottom: calc(3 * 0.8877px);
+  }
+
+  .pHead {
+    min-height: calc(91 * 0.8877px);
+    padding: calc(15.75 * 0.8877px) calc(64 * 0.8877px) calc(9 * 0.8877px) calc(19 * 0.8877px);
+  }
+
+  .pHead .num {
+    width: calc(27 * 0.8877px);
+    height: calc(28 * 0.8877px);
+    font-size: calc(15 * 0.8877px);
+  }
+
+  .pText {
+    padding-left: calc(22 * 0.8877px);
+  }
+
+  .pHead .cardLabel {
+    font-size: calc(13.1 * 0.8877px);
+    line-height: calc(18 * 0.8877px);
+  }
+
+  .pHead .code {
+    margin-top: calc(2.2 * 0.8877px);
+    font-size: calc(21.8 * 0.8877px);
+    line-height: calc(26 * 0.8877px);
+  }
+
+  .pHead:has(.badgeBlock) {
+    padding-top: calc(13.75 * 0.8877px);
+    padding-bottom: calc(1.5 * 0.8877px);
+  }
+
+  .pHead .badgeBlock {
+    margin-top: calc(2 * 0.8877px);
+  }
+
+  .pHead .badgeLine,
+.pHead .badgeTag {
+    font-size: calc(12.9 * 0.8877px);
+    line-height: calc(22 * 0.8877px);
+  }
+
+  .pMeta {
+    margin-top: calc(4.2 * 0.8877px);
+    font-size: calc(11.2 * 0.8877px);
+    line-height: calc(18 * 0.8877px);
+  }
+
+  .pEngines {
+    margin-left: calc(8 * 0.8877px);
+  }
+
+  .pThumb {
+    top: calc(13 * 0.8877px);
+    left: calc(547 * 0.8877px);
+    width: calc(137 * 0.8877px);
+    height: calc(72 * 0.8877px);
+  }
+
+  .pChevron {
+    top: calc(17 * 0.8877px);
+    right: calc(28 * 0.8877px);
+    width: calc(22 * 0.8877px);
+    height: calc(22 * 0.8877px);
+  }
+
+  .pOpen .pHead {
+    padding-top: calc(20 * 0.8877px);
+    padding-left: calc(22 * 0.8877px);
+  }
+
+  .pOpen .pHead .num {
+    width: calc(28 * 0.8877px);
+    height: calc(28 * 0.8877px);
+  }
+
+  .pOpen .pText {
+    padding-left: calc(24 * 0.8877px);
+  }
+
+  .pOpen .pHead .cardLabel {
+    font-size: calc(14.6 * 0.8877px);
+    line-height: calc(20 * 0.8877px);
+  }
+
+  .pOpen .pHead .code {
+    margin-top: calc(3 * 0.8877px);
+    font-size: calc(27.6 * 0.8877px);
+    line-height: calc(34 * 0.8877px);
+  }
+
+  .pOpen .pHead .years {
+    margin-top: calc(7 * 0.8877px);
+    font-size: calc(16 * 0.8877px);
+    line-height: calc(24 * 0.8877px);
+  }
+
+  .pOpen .pHead .engines {
+    font-size: calc(15.6 * 0.8877px);
+    line-height: calc(24 * 0.8877px);
+  }
+
+  .pOpen .pChevron {
+    top: calc(20 * 0.8877px);
+  }
+
+  .pBody {
+    padding: 0 calc(21 * 0.8877px) calc(16 * 0.8877px) calc(22 * 0.8877px);
+  }
+
+  .pCar {
+    width: calc(413 * 0.8877px);
+    height: calc(165 * 0.8877px);
+    margin: calc(-28 * 0.8877px) 0 0 calc(145 * 0.8877px);
+  }
+
+  .pCta {
+    height: calc(49 * 0.8877px);
+    margin-top: calc(12 * 0.8877px);
+    border-radius: calc(7 * 0.8877px);
+    font-size: calc(17.4 * 0.8877px);
+  }
+
+  .pCtaIcon {
+    right: calc(32 * 0.8877px);
+    width: calc(22 * 0.8877px);
+    height: calc(22 * 0.8877px);
+  }
+
+  .pStars {
+    gap: calc(4 * 0.8877px);
+    margin-top: calc(13 * 0.8877px);
+  }
+
+  .pStars svg {
+    width: calc(26 * 0.8877px);
+    height: calc(26 * 0.8877px);
+  }
+
+  .pVerdict {
+    max-width: calc(492 * 0.8877px);
+    margin-top: calc(9 * 0.8877px);
+  }
+
+  .pVerdict .verdictLabel {
+    font-size: calc(16.6 * 0.8877px);
+    line-height: calc(24 * 0.8877px);
+  }
+
+  .pVerdict .verdictText {
+    margin-top: calc(6 * 0.8877px);
+    font-size: calc(16.47 * 0.8877px);
+    line-height: calc(26.5 * 0.8877px);
+  }
+
+  .compare {
+    margin-top: calc(7 * 0.8877px);
+  }
+
+  .compareTitle {
+    margin: 0 0 0 calc(6 * 0.8877px);
+  }
+
+  .compareIcon {
+    border-radius: calc(6 * 0.8877px);
+  }
+
+  .grid {
+    margin-top: calc(9 * 0.8877px);
+    border-radius: calc(8 * 0.8877px);
+  }
+
+  .gridPhone {
+    font-size: calc(12 * 0.8877px);
+  }
+
+  .gridPhone .gCorner,
+.gridPhone .gTh,
+.gridPhone .posHead {
+    height: calc(47 * 0.8877px);
+  }
+
+  .gTh {
+    gap: calc(19 * 0.8877px);
+  }
+
+  .gridPhone .thText strong {
+    font-size: calc(13.8 * 0.8877px);
+    line-height: calc(19 * 0.8877px);
+  }
+
+  .gridPhone .thText span {
+    font-size: calc(12.2 * 0.8877px);
+    line-height: calc(19 * 0.8877px);
+  }
+
+  .thIcon {
+    width: calc(22 * 0.8877px);
+    height: calc(22 * 0.8877px);
+  }
+
+  .posHead {
+    gap: calc(12 * 0.8877px);
+  }
+
+  .gridPhone .posHead {
+    padding: 0 calc(8 * 0.8877px);
+    font-size: calc(13 * 0.8877px);
+  }
+
+  .posIcon {
+    width: calc(20 * 0.8877px);
+    height: calc(20 * 0.8877px);
+  }
+
+  .gLabel {
+    gap: calc(14 * 0.8877px);
+  }
+
+  .gridPhone .gLabel {
+    gap: calc(10 * 0.8877px);
+    padding-left: calc(4 * 0.8877px);
+    font-size: calc(11.6 * 0.8877px);
+  }
+
+  .gridPhone .rowIcon {
+    width: calc(24 * 0.8877px);
+    height: calc(24 * 0.8877px);
+  }
+
+  .rowIcon {
+    width: calc(22 * 0.8877px);
+    height: calc(22 * 0.8877px);
+  }
+
+  .gridPhone .gCell {
+    padding-left: calc(19 * 0.8877px);
+    font-size: calc(12 * 0.8877px);
+    line-height: calc(19 * 0.8877px);
+  }
+
+  .gridPhone .gRow:nth-child(2) > * {
+    height: calc(59 * 0.8877px);
+  }
+
+  .gridPhone .gRow:nth-child(3) > * {
+    height: calc(49 * 0.8877px);
+  }
+
+  .gridPhone .posText {
+    padding: calc(4 * 0.8877px) calc(8 * 0.8877px) 0 calc(19 * 0.8877px);
+    font-size: calc(12.6 * 0.8877px);
+    line-height: calc(19 * 0.8877px);
+  }
+}
+
+/* Site container on every width: content starts on the navbar's edge; the section wrapper adds no side space. */
+.frame {
+  max-width: var(--container-8xl);
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+}
+
+.panel {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+.panel {
+  border-color: transparent !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+/* Headings start on the container edge (UI_RULES §1). */
+.title {
+  margin-left: 0 !important;
 }

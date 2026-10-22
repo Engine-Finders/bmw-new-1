@@ -1,13 +1,12 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import { TABLE_HEADER_BG, TABLE_HEADER_TEXT } from "@/components/shared/tableHeader";
 import { useTheme } from "@/components/shared/themeProvider";
 import BrandIcon from "@/components/home/brandIcon";
 import VerdictGlyph from "@/components/home/VerdictGlyph";
 
-// BMW Ownership Rankings — ranking / winner / why / verdict table under a grille header.
+// BMW Ownership Rankings — ranking / winner / why / verdict table.
 // Phone adds the trust strip above the table and the "Honest, Data-Backed" card below it.
 
 const TONE = { red: "bg-[#e3262b]", orange: "bg-[#f5a20b]" };
@@ -73,20 +72,11 @@ export default function HomeSec4({ data }) {
   const strong = isDark ? "text-white" : "text-[#0b1626]";
   const soft = isDark ? "text-white/80" : "text-[#2a3646]";
   const line = isDark ? "border-white/[0.08]" : "border-[#e8ecf1]";
-  const grille = isDark ? data.headerImage.dark : data.headerImage.light;
 
   return (
     <section className={`relative overflow-hidden ${isDark ? "bg-[#060a10]" : "bg-[#fbfcfd]"}`}>
       {/* Desktop / tablet */}
       <div className="relative hidden md:block">
-        <div
-          aria-hidden="true"
-          className="pointer-events-none absolute right-0 top-0 h-[300px] w-[47%] overflow-hidden [mask-image:linear-gradient(90deg,transparent_0%,black_16%),linear-gradient(180deg,black_62%,transparent_100%)] [mask-composite:intersect]"
-        >
-          <div className="absolute -right-[3%] -top-[4%] aspect-[1092/490] w-[104%] origin-left [transform:perspective(1400px)_rotateY(14deg)]">
-            <Image src={grille} alt="" fill sizes="55vw" className="object-contain object-top" />
-          </div>
-        </div>
         <div className="site-container section-y relative">
           <div className="max-w-[700px]">
             <h2 className={`t-h2 ${strong}`} dangerouslySetInnerHTML={{ __html: data.h2 }} />

@@ -83,14 +83,16 @@ function ClosingActionCardsReference({ data }) {
   const isDark = theme === "dark";
   const hero = data.heroImage || {};
   const heroSrc = isDark ? hero.dark || hero.light : hero.light;
+  // Phones show the line-up once: when the header picture is the same line-up as the first card's, it is left to the card.
+  const repeatsCardArt = (data.cards || []).some((card) => card.art && [card.art.light, card.art.dark].includes(heroSrc));
 
   return (
     <section id="ready-to-decide" className={`${inter.className} ${s.section} ${isDark ? s.dark : s.light}`}>
-      <div className={s.frame}>
+      <div className={`site-container ${s.frame}`}>
         <div className={s.panel}>
           <div className={s.head}>
             {heroSrc ? (
-              <span className={s.hero} aria-hidden="true">
+              <span className={`${s.hero} ${repeatsCardArt ? s.heroRepeat : ""}`} aria-hidden="true">
                 <Image src={heroSrc} alt="" fill className={s.heroImg} sizes="(min-width: 1024px) 68vw, 80vw" />
               </span>
             ) : null}
