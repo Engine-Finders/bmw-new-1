@@ -292,25 +292,27 @@
         "reliability": "★★★☆☆ [PROVISIONAL -pending dedicated Engine Page]",
         "enquiries": "-(pattern data)",
         "avgReconCost": "£8,000–£15,000 [BMW-QUOTE]"
-      },
-      {
-        "engineCode": "Engine Specifications:",
-        "family": "* Configuration: V8 90°, 32-valve, twin-turbocharged",
-        "fuel": "* Bore x Stroke: 89.0 mm x 88.3 mm",
-        "displacement": "* Compression Ratio: 10.0:1",
-        "power": "* Redline: 7,200 RPM",
-        "years": "* Valvetrain: DOHC, Double-VANOS",
-        "variants": "* Fuel System: Direct injection (350 bar)",
-        "reliability": "* Turbochargers: Twin-scroll, 25.9 psi max boost",
-        "enquiries": "* Block Material: Aluminium",
-        "avgReconCost": "* Transmission: 8-speed M Steptronic (ZF 8HP)"
       }
     ],
     "confidenceScore": {
       "title": "How confident are these ratings?",
       "text": "All ratings are provisional -no dedicated Engine Page exists for the S63 engine family. The S63 is a proven powerhouse -the F90's engine is an evolution of the S63 found in the F10 M5, with upgraded turbos and revised cooling. It won multiple awards for its performance. However, it has known reliability concerns: coolant expansion tank failures, oil leaks, and fuel pump issues. The S63 is fundamentally robust but requires diligent maintenance -these are high-performance, high-stress engines."
     },
-    "dataCorrections": []
+    "dataCorrections": [],
+    "notes": {
+      "title": "Engine Specifications:",
+      "items": [
+        "Configuration: V8 90°, 32-valve, twin-turbocharged",
+        "Bore x Stroke: 89.0 mm x 88.3 mm",
+        "Compression Ratio: 10.0:1",
+        "Redline: 7,200 RPM",
+        "Valvetrain: DOHC, Double-VANOS",
+        "Fuel System: Direct injection (350 bar)",
+        "Turbochargers: Twin-scroll, 25.9 psi max boost",
+        "Block Material: Aluminium",
+        "Transmission: 8-speed M Steptronic (ZF 8HP)"
+      ]
+    }
   },
   "overview": {
     "h2": "BMW M5 F90 -Overview",

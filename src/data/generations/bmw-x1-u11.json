@@ -478,25 +478,27 @@
         "reliability": "★★★★☆ [PROVISIONAL -pending dedicated Engine Page]",
         "enquiries": "-(pattern data)",
         "avgReconCost": "£8,000–£12,000 [BMW-QUOTE]"
-      },
-      {
-        "engineCode": "Engine notes:",
-        "family": "* sDrive16i / sDrive18i: B38 1.5-litre three-cylinder turbo, 122–136 bhp",
-        "fuel": "* sDrive20i: B38 1.5-litre three-cylinder with 48V mild hybrid, 150–170 bhp",
-        "displacement": "* xDrive23i: B48 2.0-litre four-cylinder with 48V mild hybrid, 218 bhp",
-        "power": "* xDrive28i (US): B48 2.0-litre four-cylinder, 241 bhp",
-        "years": "* M35i: B48 2.0-litre four-cylinder, 300–312 bhp",
-        "variants": "* xDrive25e / xDrive30e: B38-based plug-in hybrid, 245–326 bhp combined",
-        "reliability": "* sDrive18d: B47 2.0-litre four-cylinder diesel, 148–150 bhp",
-        "enquiries": "* xDrive20d: B47 2.0-litre four-cylinder diesel, 163 bhp",
-        "avgReconCost": "* xDrive23d: B47 2.0-litre four-cylinder diesel with 48V mild hybrid, 208–211 bhp"
       }
     ],
     "confidenceScore": {
       "title": "Confidence Score",
       "text": "All ratings are provisional -no dedicated Engine Page exists for any U11 engine family. The B48 four-cylinder petrols are considered the most reliable based on their proven track record across BMW's UKL platform. The B38 three-cylinder has known injector issues. The B47 diesel is significantly more robust than its <a href='https://bmwengines.uk/engine/n47'>N47</a> predecessor. The iX1 electric powertrain is too new for long-term reliability data."
     },
-    "dataCorrections": []
+    "dataCorrections": [],
+    "notes": {
+      "title": "Engine notes:",
+      "items": [
+        "sDrive16i / sDrive18i: B38 1.5-litre three-cylinder turbo, 122–136 bhp",
+        "sDrive20i: B38 1.5-litre three-cylinder with 48V mild hybrid, 150–170 bhp",
+        "xDrive23i: B48 2.0-litre four-cylinder with 48V mild hybrid, 218 bhp",
+        "xDrive28i (US): B48 2.0-litre four-cylinder, 241 bhp",
+        "M35i: B48 2.0-litre four-cylinder, 300–312 bhp",
+        "xDrive25e / xDrive30e: B38-based plug-in hybrid, 245–326 bhp combined",
+        "sDrive18d: B47 2.0-litre four-cylinder diesel, 148–150 bhp",
+        "xDrive20d: B47 2.0-litre four-cylinder diesel, 163 bhp",
+        "xDrive23d: B47 2.0-litre four-cylinder diesel with 48V mild hybrid, 208–211 bhp"
+      ]
+    }
   },
   "overview": {
     "h2": "BMW X1 U11 -Overview",

@@ -2,183 +2,233 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import MStripe from "@/components/reusableComponents/MStripe";
 import { useTheme } from "@/components/shared/themeProvider";
-import HomeIcon from "@/components/home/homeIcons";
-import GenIcon from "./GenIcons";
-import { splitGenerationHeroH1 } from "./generationSection";
+import { variantFont as heroFont } from "@/components/variant/variantFont";
+import ui from "@/data/shared/generationPageUi.json";
 
-const TRUST_STRIP_ICON_BY_EMOJI = {
-  "📊": "real-inquiries",
-  "🔧": "vehicle",
-  "📖": "engine-codes-book",
-  "🏆": "engine-finders",
+// Hero backgrounds sampled from the designs: a near-white wash in light, deep navy in dark.
+const HERO_BG = { light: "#f6f8fb", dark: "#0b1826" };
+
+// Line icons as drawn in the designs (24px grid, currentColor).
+const ICONS = {
+  bars: (
+    <>
+      <rect x="3" y="13" width="4.2" height="8" rx="0.8" fill="currentColor" stroke="none" />
+      <rect x="9.9" y="8.5" width="4.2" height="12.5" rx="0.8" fill="currentColor" stroke="none" />
+      <rect x="16.8" y="4" width="4.2" height="17" rx="0.8" fill="currentColor" stroke="none" />
+    </>
+  ),
+  // Crossed wrench + screwdriver, scaled to the ~18-unit footprint of the bars/book/trophy;
+  // the stroke is compensated so it keeps the same weight.
+  tools: (
+    <g transform="translate(-1.8 -1.8) scale(1.15)" strokeWidth="1.48">
+      <path d="M15.6 4.2a3.6 3.6 0 0 0-3.4 4.7L4.6 16.5a1.6 1.6 0 0 0 2.3 2.3l7.6-7.6a3.6 3.6 0 0 0 4.7-3.4l-2 2-2.1-.6-.6-2.1z" />
+      <path d="m4.5 5.5 1-1 2.2 1.3 4.6 4.6M12.6 12.6l1.2-1.2 5.8 5.8a.85.85 0 0 1 0 1.2l-1.2 1.2a.85.85 0 0 1-1.2 0z" />
+    </g>
+  ),
+  book: (
+    <>
+      <path d="M12 7v14" />
+      <path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z" />
+    </>
+  ),
+  trophy: (
+    <>
+      <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6M18 9h1.5a2.5 2.5 0 0 0 0-5H18" />
+      <path d="M6 3h12v6a6 6 0 0 1-12 0z" />
+      <path d="M12 15v3M8 21h8M9 21l1-3h4l1 3" />
+    </>
+  ),
+  trophyStar: (
+    <>
+      <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6M18 9h1.5a2.5 2.5 0 0 0 0-5H18" />
+      <path d="M6 3h12v6a6 6 0 0 1-12 0z" fill="currentColor" />
+      <path d="m12 5.6.9 1.8 2 .3-1.45 1.4.35 2-1.8-.95-1.8.95.35-2L9.1 7.7l2-.3z" fill="var(--hero-icon-cut)" stroke="none" />
+      <path d="M12 15v3M8 21h8M9 21l1-3h4l1 3" />
+    </>
+  ),
+  car: (
+    <>
+      <path d="M5 11 6.6 6.6A2 2 0 0 1 8.5 5.3h7a2 2 0 0 1 1.9 1.3L19 11" />
+      <path d="M3.5 11.5A1.5 1.5 0 0 1 5 11h14a1.5 1.5 0 0 1 1.5 1.5V17a1 1 0 0 1-1 1h-15a1 1 0 0 1-1-1z" />
+      <path d="M6 18v1.5M18 18v1.5M7 14.5h1.5M15.5 14.5H17" />
+    </>
+  ),
+  engine: (
+    <>
+      <path d="M8 6h6M11 6v2.5" />
+      <path d="M5.5 8.5h9l2 2h2v-1.5h2.5v7H18.5V14.5h-2l-2.5 3.5H8.5L6 15.5H4.5v-5h1z" fill="currentColor" />
+      <path d="M2 11v4" />
+    </>
+  ),
+  carFront: (
+    <>
+      <path d="M5 11 6.6 6.6A2 2 0 0 1 8.5 5.3h7a2 2 0 0 1 1.9 1.3L19 11" />
+      <path d="M3.5 11.5A1.5 1.5 0 0 1 5 11h14a1.5 1.5 0 0 1 1.5 1.5V17a1 1 0 0 1-1 1h-15a1 1 0 0 1-1-1z" />
+      <path d="M7 14.5h1.5M15.5 14.5H17" />
+    </>
+  ),
+  shieldCheck: (
+    <>
+      <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" />
+      <path d="m9 12 2 2 4-4" />
+    </>
+  ),
+  arrow: <path d="M5 12h14m-6-6 6 6-6 6" />,
 };
 
-const TRUST_STRIP_ICONS = ["real-inquiries", "vehicle", "engine-codes-book", "engine-finders"];
-
-function splitTagPill(tagPill = "") {
-  const parts = tagPill.split(" • ");
-  return { model: parts[0] || "", body: parts[1] || "", years: parts[2] || "" };
+function Icon({ name, className = "h-5 w-5", strokeWidth = 1.8 }) {
+  return (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" className={className} aria-hidden="true">
+      {ICONS[name]}
+    </svg>
+  );
 }
 
+// Trust strip order is the same on every generation page: enquiries, body style, engine codes, Engine Finders.
+// Desktop and phone designs draw different glyphs for the middle two.
+const STAT_ICONS = {
+  desktop: ["bars", "tools", "book", "trophy"],
+  phone: ["bars", "car", "engine", "trophyStar"],
+};
+
+// "BMW 3 Series E90 Engines -The Complete UK Guide" -> "… Engines — The Complete UK Guide".
+function dash(value = "") {
+  return String(value ?? "").replace(/\s+-\s*(?=\S)/g, " — ");
+}
+
+// One paragraph per sentence, as in the designs.
+function paragraphs(html = "") {
+  return dash(html)
+    .split(/(?<=[.!?])\s+(?=[A-Z])/)
+    .filter(Boolean);
+}
+
+// Enquiry counts ("256+") and data tags ("[BMW-VERIFIED]") in blue; markup is left alone.
+function highlight(html = "") {
+  return html
+    .split(/(<[^>]+>)/)
+    .map((part) =>
+      part.startsWith("<")
+        ? part
+        : part.replace(/(\d[\d,]*\+|\[[^\]]+\])/g, '<span class="whitespace-nowrap text-[var(--hero-blue)]">$1</span>'),
+    )
+    .join("");
+}
+
+function splitTagPill(tagPill = "") {
+  return String(tagPill).split(" • ").filter(Boolean);
+}
+
+// "256+ E90 Enquiries (2025) [BMW-VERIFIED]" -> value / label / tag; "Part of Engine Finders" -> lead / label.
 function splitStat(label = "") {
   const tagMatch = label.match(/\s*\[([^\]]+)\]\s*$/);
   const tag = tagMatch ? tagMatch[1] : "";
-  const text = tagMatch ? label.slice(0, tagMatch.index) : label;
-
-  const [first, ...rest] = text.trim().split(" ");
-  const hasValue = /[0-9+]/.test(first);
-
-  return {
-    value: hasValue ? first : "",
-    label: hasValue ? rest.join(" ") : text.trim(),
-    tag,
-  };
+  const text = (tagMatch ? label.slice(0, tagMatch.index) : label).trim();
+  const [first, ...rest] = text.split(" ");
+  // A leading count is the figure ("256+", "7"), unless it is part of the model name ("3 Series Enquiries").
+  if (/^\d[\d,]*\+?$/.test(first) && rest.length && rest[0] !== "Series") return { value: first, label: rest.join(" "), tag, lead: "" };
+  const lead = text.match(/^(Part of)\s+(.+)$/i);
+  if (lead) return { value: "", lead: lead[1], label: lead[2], tag };
+  // Long body lists ("Saloon/Coupé/Convertible") may break after each slash.
+  return { value: "", lead: "", label: text.replace(/\//g, "/​"), tag };
 }
 
-function trustStripIcon(item, index) {
-  // The body-style stat gets the SUV artwork for SUVs, and the power stat a meter.
-  if (/\bsuv\b/i.test(item.label || "")) return "suv-body";
-  if (/\b\d+\s*(ps|bhp|hp)\b/i.test(item.label || "")) return "diagnosis";
-  return TRUST_STRIP_ICON_BY_EMOJI[item.icon] || TRUST_STRIP_ICONS[index] || "real-inquiries";
-}
-
-function TrustLabel({ label }) {
-  if (label === "Part of Engine Finders") {
-    return (
-      <>
-        <span className="block">Part of</span>
-        <span className="block">Engine Finders</span>
-      </>
-    );
-  }
-  if (label === "Every Generation, Honestly Rated") {
-    return (
-      <>
-        <span className="block">Every Generation,</span>
-        <span className="block">Honestly</span>
-        <span className="block">Rated</span>
-      </>
-    );
-  }
-  return label;
-}
-
-function HeroHeadline({ h1 = "", isDark }) {
-  const parts = splitGenerationHeroH1(h1);
-  const textClass = isDark ? "text-white" : "text-[var(--color-text)]";
-
+// Thin three-colour M rule under the headline.
+function MRule() {
   return (
-    <h1 className={`text-[32px] font-bold leading-[0.95] tracking-normal md:max-w-[720px] md:text-[3.5rem] md:leading-[0.94] ${textClass}`}>
-      {parts.before ? <span dangerouslySetInnerHTML={{ __html: parts.before }} /> : null}
-      {parts.accent ? (
-        <>
-          {parts.before ? " " : null}
-          <span className="text-[var(--color-chrome-bright)]" dangerouslySetInnerHTML={{ __html: parts.accent }} />
-        </>
-      ) : null}
-    </h1>
+    <span aria-hidden="true" className="mt-5 flex h-[3px] w-[100px] md:mt-6 md:w-[120px]">
+      <span className="w-1/4 bg-[#2f80ed]" />
+      <span className="w-1/4 bg-[#1c3f94]" />
+      <span className="w-1/2 bg-[#e3262f]" />
+    </span>
   );
 }
 
-function DesktopTrustStrip({ items, isDark, cardBorderClass, dividerBorderClass }) {
-  if (!items?.length) return null;
-
-  const badgeTextClass = isDark ? "text-white/85" : "text-[var(--color-text)]";
-  const badgeMutedClass = isDark ? "text-white/55" : "text-[var(--color-text-soft)]";
-  const trustStripClass = `glass-panel hidden w-max shrink-0 rounded-md border ${cardBorderClass} backdrop-blur-sm shadow-[0_10px_30px_var(--color-shadow)] md:block`;
-
+function DesktopStrip({ items, isDark }) {
   return (
-    <div className={trustStripClass}>
-      <div className="flex w-max items-stretch">
-        {items.map((item, index) => {
-          const stat = splitStat(item.label);
-          const hasValue = Boolean(stat.value);
+    <ul
+      className={`mt-10 hidden w-full max-w-[1120px] grid-cols-4 rounded-[10px] border lg:grid ${
+        isDark
+          ? "border-white/15 bg-[rgba(11,24,38,0.72)] shadow-[0_10px_30px_rgba(0,0,0,0.35)]"
+          : "border-white/80 bg-white/85 shadow-[0_10px_30px_rgba(10,26,43,0.08)]"
+      } backdrop-blur-md`}
+    >
+      {items.map((item, index) => {
+        const stat = splitStat(item.label);
+        return (
+          <li key={item.label} className="relative flex min-w-0 items-center gap-4 px-6 py-6 xl:gap-5 xl:px-8">
+            {index ? <span aria-hidden="true" className={`absolute left-0 top-1/2 h-[56%] w-px -translate-y-1/2 ${isDark ? "bg-white/15" : "bg-[#dfe4eb]"}`} /> : null}
+            <Icon name={STAT_ICONS.desktop[index] || "bars"} strokeWidth={1.7} className={`h-10 w-10 shrink-0 xl:h-11 xl:w-11 ${isDark ? "text-white" : "text-[var(--hero-blue)]"}`} />
+            <div className="min-w-0 text-[var(--hero-text)]">
+              {stat.value ? (
+                <>
+                  <strong className="block text-[24px] font-medium leading-[1.15]">{stat.value}</strong>
+                  <span className="block text-[15px] leading-[1.45]">{stat.label}</span>
+                </>
+              ) : stat.lead ? (
+                <>
+                  <span className="block text-[15px] leading-[1.45]">{stat.lead}</span>
+                  <strong className="block text-[20px] font-semibold leading-[1.25]">{stat.label}</strong>
+                </>
+              ) : (
+                <strong className="block text-[20px] font-semibold leading-[1.25]">{stat.label}</strong>
+              )}
+              {stat.tag ? <span className="block text-[15px] leading-[1.45] text-[var(--hero-blue)]">[{stat.tag}]</span> : null}
+            </div>
+          </li>
+        );
+      })}
+    </ul>
+  );
+}
 
-          return (
-            <div
-              key={item.label}
-              className={`flex w-auto flex-none items-center gap-3 px-4 py-3.5 text-left ${
-                index > 0 ? `border-l ${dividerBorderClass}` : ""
+function PhoneStrip({ items, isDark }) {
+  const captions = ui.hero?.trustCaptions || [];
+  return (
+    <ul
+      className={`mt-5 grid grid-cols-4 rounded-[12px] border px-1 py-5 md:mt-6 md:px-3 lg:hidden ${
+        isDark ? "border-white/15 bg-[rgba(11,24,38,0.72)]" : "border-[#e6eaf0] bg-white shadow-[0_8px_24px_rgba(10,26,43,0.06)]"
+      }`}
+    >
+      {items.map((item, index) => {
+        const stat = splitStat(item.label);
+        const caption = captions[index];
+        return (
+          <li key={item.label} className="relative flex min-w-0 flex-col items-center px-0.5 text-center md:px-2 text-[var(--hero-text)]">
+            {index ? <span aria-hidden="true" className={`absolute left-0 top-0 h-full w-px ${isDark ? "bg-white/12" : "bg-[#e6eaf0]"}`} /> : null}
+            <span
+              className={`flex h-11 w-11 items-center justify-center rounded-full border md:h-14 md:w-14 ${
+                isDark ? "border-[var(--hero-blue)] bg-[#0f2236] text-white" : "border-[#d9e2ee] bg-white text-[var(--hero-blue)]"
               }`}
             >
-              <span className="flex h-12 w-12 shrink-0 items-center justify-center">
-                <HomeIcon name={trustStripIcon(item, index)} isDark={isDark} className="h-12 w-12 md:h-12 md:w-12 object-contain" />
-              </span>
-              <div className="flex w-max max-w-none flex-col gap-0.5 whitespace-normal">
-                {hasValue ? (
-                  <strong className={`text-[1.2rem] font-bold leading-none ${isDark ? "text-white" : "text-[var(--color-text)]"}`}>
-                    {stat.value}
-                  </strong>
-                ) : (
-                  <strong className={`text-[0.95rem] font-bold leading-tight ${badgeTextClass}`}>
-                    <TrustLabel label={stat.label} />
-                  </strong>
-                )}
-                {hasValue && stat.label ? (
-                  <span className={`lg:text-[15px] max-w-[12rem] text-[0.82rem] leading-[1.3] ${badgeTextClass}`}>{stat.label}</span>
-                ) : null}
-                {stat.tag ? (
-                  <span className={`lg:text-[15px] text-[12px] font-semibold uppercase leading-none tracking-wide ${badgeMutedClass}`}>
-                    {stat.tag}
-                  </span>
-                ) : null}
-              </div>
-            </div>
-          );
-        })}
-      </div>
-    </div>
-  );
-}
-
-function MobileTrustStrip({ items, isDark, trustStripClass, dividerBorderClass, badgeTextClass, badgeMutedClass }) {
-  if (!items?.length) return null;
-
-  return (
-    <div className={`${trustStripClass} mt-3 p-2 md:hidden`}>
-      <div className="grid grid-cols-4 gap-x-0.5 text-center">
-        {items.map((item, index) => {
-          const stat = splitStat(item.label);
-
-          return (
-            <div
-              key={item.label}
-              className={`flex min-w-0 flex-col items-center gap-1 px-0.5 py-1 ${index > 0 ? `border-l ${dividerBorderClass}` : ""}`}
+              <Icon name={STAT_ICONS.phone[index] || "bars"} strokeWidth={2} className="h-[22px] w-[22px] md:h-7 md:w-7" />
+            </span>
+            {stat.value ? <strong className="mt-3 block text-[18px] font-semibold leading-[1.2] md:text-[20px]">{stat.value}</strong> : null}
+            {stat.lead ? <strong className="mt-3 block text-[12px] font-semibold leading-[1.35] min-[400px]:text-[13px] md:text-[15px]">{stat.lead}</strong> : null}
+            <span
+              className={`block leading-[1.35] ${
+                stat.value
+                  ? "mt-1 text-[12px] md:text-[14px]"
+                  : stat.lead
+                    ? "text-[12px] font-semibold min-[390px]:whitespace-nowrap min-[400px]:text-[13px] md:text-[15px]"
+                    : // Long body lists ("Saloon/Coupé/Convertible/…") step down so each part fits its column.
+                      `mt-3 font-semibold ${stat.label.length > 14 ? "text-[12.5px] md:text-[15px]" : "text-[15px] md:text-[17px]"}`
+              }`}
             >
-              <span className="flex h-12 w-12 shrink-0 items-center justify-center">
-                <HomeIcon name={trustStripIcon(item, index)} isDark={isDark} className="h-12 w-12 md:h-12 md:w-12 object-contain" />
+              {stat.label}
+            </span>
+            {stat.tag ? (
+              <span className="mt-1.5 inline-flex items-center gap-0.5 whitespace-nowrap text-[10.5px] font-semibold leading-tight text-[var(--hero-blue)] min-[400px]:text-[11px] md:gap-1 md:text-[13px]">
+                <Icon name="shieldCheck" strokeWidth={2.2} className="h-2.5 w-2.5 shrink-0 max-[379px]:hidden min-[400px]:h-3 min-[400px]:w-3 md:h-3.5 md:w-3.5" />
+                {stat.tag}
               </span>
-              {stat.value ? (
-                <strong className={`lg:text-[15px] text-[12px] font-bold leading-none ${isDark ? "text-white" : "text-[var(--color-text)]"}`}>
-                  {stat.value}
-                </strong>
-              ) : null}
-              <span className={`lg:text-[15px] text-[12px] leading-[1.2] ${badgeTextClass}`}>
-                <TrustLabel label={stat.label} />
-              </span>
-              {stat.tag ? (
-                <span className={`lg:text-[15px] text-[12px] font-semibold uppercase leading-none tracking-wide ${badgeMutedClass}`}>
-                  {stat.tag}
-                </span>
-              ) : null}
-            </div>
-          );
-        })}
-      </div>
-    </div>
-  );
-}
-
-// Phones, tablets + small laptops: the scene as its own band, so it never sits behind the copy.
-function SceneBand({ src, alt, className = "" }) {
-  return (
-    <div className={`relative -mx-4 my-3 aspect-[3/2] max-h-[460px] w-[calc(100%+2rem)] overflow-hidden md:-mx-8 md:w-[calc(100%+4rem)] ${className}`}>
-      <Image src={src} alt={alt} fill className="object-cover object-[70%_bottom]" sizes="100vw" priority />
-      <div className="absolute inset-x-0 top-0 h-14 bg-[linear-gradient(180deg,var(--color-page)_0%,transparent_100%)]" />
-      <div className="absolute inset-x-0 bottom-0 h-14 bg-[linear-gradient(0deg,var(--color-page)_0%,transparent_100%)]" />
-    </div>
+            ) : null}
+            {caption ? <span className="mt-1 block text-[11.5px] leading-[1.35] opacity-85 min-[400px]:text-[12px] md:text-[14px]">{caption}</span> : null}
+          </li>
+        );
+      })}
+    </ul>
   );
 }
 
@@ -188,115 +238,142 @@ export default function ModelHero({ data }) {
 
   const isDark = theme === "dark";
   const pill = splitTagPill(data.tagPill);
-  // This generation standing in BMW's own scene, light or dark (set server-side), or the client's
-  // line-up scene when the model has no photo of its own (I-Pace). Laid out like the model hero.
+  const alt = data.image?.alt || (pill[0] || "").replace(/<[^>]*>/g, "");
+  // The page's own hero artwork when it has one, else this generation in BMW's stage scene (set server-side).
   const scene = data.heroScene;
-  const sceneSrc = scene ? (isDark && scene.darkSrc) || scene.src : null;
-  const heroAlt = pill.model.replace(/<[^>]*>/g, "");
-  const heroDescriptionShadow = isDark
-    ? ""
-    : "[text-shadow:0_0_8px_#fff,0_0_16px_#fff,0_0_24px_rgba(255,255,255,0.9),0_1px_2px_rgba(255,255,255,0.95)]";
+  const wide = data.image
+    ? (isDark ? data.image.dark : data.image.light) || data.image.light
+    : scene
+      ? (isDark && scene.darkSrc) || scene.src
+      : null;
+  const tall = data.image ? (isDark ? data.image.mobileDark : data.image.mobileLight) || null : null;
+  // A single car in BMW's stage scene (not the page's own artwork, not a several-car line-up).
+  const stage = Boolean(!data.image && scene && !scene.lineup);
+  // The model's line-up scene (several cars across the frame) when this generation has no photo of its own.
+  const lineup = Boolean(!data.image && scene?.lineup);
+  const bg = isDark ? HERO_BG.dark : HERO_BG.light;
+  const cta = data.primaryCta;
+  const ctaLabel = cta ? String(cta.label || "").replace(/\s*→\s*$/, "") : "";
 
-  const cardBorderClass = isDark ? "border-white/20" : "border-[var(--color-border)]";
-  const dividerBorderClass = isDark ? "border-white/35" : "border-[rgba(7,24,39,0.25)]";
-  const badgeTextClass = isDark ? "text-white/85" : "text-[var(--color-text)]";
-  const badgeMutedClass = isDark ? "text-white/55" : "text-[var(--color-text-soft)]";
-  const trustStripClass = `glass-panel rounded-md border ${cardBorderClass} backdrop-blur-sm shadow-[0_10px_30px_var(--color-shadow)]`;
+  const vars = {
+    "--hero-bg": bg,
+    "--hero-text": isDark ? "#ffffff" : "#0b1726",
+    "--hero-muted": isDark ? "rgba(255,255,255,0.86)" : "#4a5565",
+    "--hero-blue": isDark ? "#4d9bff" : "#0a5bd3",
+    "--hero-icon-cut": isDark ? "#0f2236" : "#ffffff",
+  };
 
   return (
-    <section className="relative overflow-hidden bg-[var(--color-page)] text-[var(--color-text)] xl:min-h-[620px]">
-      {/* Desktop: the scene sits on the right and fades in from the page colour, as on the model page.
-          Below 1600px it starts a third of the way in so the copy stays on plain page colour. */}
-      {sceneSrc ? (
-        <div className="absolute inset-y-0 left-[34%] right-0 hidden xl:block min-[1600px]:left-auto min-[1600px]:aspect-[3/2]">
-          <Image src={sceneSrc} alt={heroAlt} fill className="object-cover object-right-bottom" sizes="(min-width: 1280px) 1200px, 100vw" priority />
-          <div className="absolute inset-0 bg-[linear-gradient(90deg,var(--color-page)_0%,color-mix(in_srgb,var(--color-page)_88%,transparent)_16%,color-mix(in_srgb,var(--color-page)_45%,transparent)_34%,transparent_56%)]" />
-          <div className="absolute inset-x-0 bottom-0 h-8 bg-[linear-gradient(0deg,var(--color-page)_0%,transparent_100%)]" />
+    <section style={vars} className={`relative overflow-hidden bg-[var(--hero-bg)] text-[var(--hero-text)] ${heroFont.className}`}>
+      {/* Desktop: the scene fills the hero on the right and fades into the page behind the copy.
+          Sized by width (never cropped wider than the copy allows) and pushed 10% below the hero, which clips the
+          artwork's corner mark and keeps the car above the trust strip; its sky fades into the page at the top. */}
+      {wide ? (
+        <div className="absolute bottom-0 right-0 hidden aspect-[3/2] w-full max-w-[1640px] translate-y-[10%] xl:block">
+          <Image src={wide} alt={alt} fill priority sizes="(min-width: 1640px) 1640px, 100vw" className="object-cover" />
+          <div className="absolute inset-0 bg-[linear-gradient(90deg,var(--hero-bg)_0%,color-mix(in_srgb,var(--hero-bg)_92%,transparent)_24%,color-mix(in_srgb,var(--hero-bg)_55%,transparent)_40%,transparent_58%)]" />
+          <div className="absolute inset-x-0 top-0 h-[30%] bg-[linear-gradient(180deg,var(--hero-bg)_0%,transparent_100%)]" />
+          <div className="absolute inset-x-0 bottom-[10%] h-24 bg-[linear-gradient(0deg,var(--hero-bg)_0%,transparent_100%)]" />
         </div>
       ) : null}
 
-      <div className="relative mx-auto flex w-full max-w-8xl flex-col px-4 pb-4 pt-6 md:px-8 md:py-6 xl:min-h-[620px] xl:justify-center">
-        <div className="relative flex w-full flex-col gap-2.5 md:gap-3">
-          <div className="relative flex w-full max-w-[720px] flex-col gap-2.5 md:gap-3">
-            <span
-              className={`lg:text-[15px] inline-flex w-fit max-w-full flex-wrap items-center gap-x-2 gap-y-2 rounded-md border px-3 py-2 text-[0.82rem] leading-[1.35] md:px-4 md:py-2 md:text-[0.88rem] ${
-                isDark
-                  ? "border-white/30 bg-[rgba(2,7,11,0.55)] text-white"
-                  : "border-[var(--color-border-strong)] bg-[rgba(255,255,255,0.58)] text-[var(--color-text-muted)]"
+      <div className="site-container relative pb-8 pt-6 md:pb-10 md:pt-10 lg:pb-16 lg:pt-16">
+        <div className="relative z-10">
+          {pill.length ? (
+            <p
+              className={`inline-flex w-fit max-w-full flex-wrap items-center gap-x-2 gap-y-1 rounded-[10px] border px-3.5 py-2.5 text-[14px] leading-[1.35] md:gap-x-2.5 md:px-4 md:text-[16px] lg:rounded-[8px] lg:px-4 lg:py-2 ${
+                isDark ? "border-[var(--hero-blue)] bg-[rgba(11,24,38,0.6)] text-white" : "border-[#9fbdf0] bg-white/75 text-[var(--hero-blue)]"
               }`}
             >
-              <HomeIcon name="vehicle" isDark={isDark} className="h-4 w-4 shrink-0 object-contain" />
-              <strong className="font-semibold text-[var(--color-primary)]" dangerouslySetInnerHTML={{ __html: pill.model }} />
-              {pill.body ? (
-                <>
-                  <span aria-hidden="true" className="opacity-50">•</span>
-                  <span dangerouslySetInnerHTML={{ __html: pill.body }} />
-                </>
-              ) : null}
-              {pill.years ? (
-                <>
-                  <span aria-hidden="true" className="opacity-50">•</span>
-                  <span dangerouslySetInnerHTML={{ __html: pill.years }} />
-                </>
-              ) : null}
-            </span>
-
-            <HeroHeadline h1={data.h1} isDark={isDark} />
-
-            <MStripe />
-
-            <p
-              className={`max-w-full text-[0.88rem] leading-[1.42] md:max-w-[620px] md:text-[1.08rem] md:leading-[1.42] ${isDark ? "text-white/88" : "text-[var(--color-text)]"} ${heroDescriptionShadow}`}
-              dangerouslySetInnerHTML={{ __html: data.subHeadline }}
-            />
-
-            {data.primaryCta ? (
-              <Link
-                href={data.primaryCta.href || "/quote"}
-                className="btn-cta mt-4 hidden w-fit items-center gap-5 rounded-md px-7 py-3.5 text-base font-bold shadow-[0_12px_28px_var(--color-shadow)] md:inline-flex"
-              >
-                <span dangerouslySetInnerHTML={{ __html: data.primaryCta.label.replace(/\s*→\s*$/, "") }} />
-                <GenIcon name="arrow" className="h-4 w-4 shrink-0" />
-              </Link>
-            ) : null}
-          </div>
-
-          {sceneSrc ? <SceneBand src={sceneSrc} alt={heroAlt} className="hidden md:block xl:hidden" /> : null}
-
-          {data.trustStrip?.length > 0 ? (
-            <div className="mt-6 hidden w-max max-w-none md:block">
-              <DesktopTrustStrip
-                items={data.trustStrip}
-                isDark={isDark}
-                cardBorderClass={cardBorderClass}
-                dividerBorderClass={dividerBorderClass}
-              />
-            </div>
+              <Icon name="carFront" strokeWidth={1.9} className="mr-1 h-5 w-5 shrink-0 text-[var(--hero-blue)] lg:hidden" />
+              {pill.map((part, index) => (
+                <span key={index} className="inline-flex items-center gap-2 whitespace-nowrap md:gap-2.5">
+                  {index ? <span aria-hidden="true">•</span> : null}
+                  <span className="[&_a]:[font-weight:inherit] [&_a]:text-inherit" dangerouslySetInnerHTML={{ __html: part }} />
+                </span>
+              ))}
+            </p>
           ) : null}
+
+          <h1 className="t-h1 mt-5 max-w-[11em] font-bold leading-[1.1] tracking-[-0.025em] max-md:text-[clamp(30px,8.4vw,40px)] lg:mt-7">
+            <span dangerouslySetInnerHTML={{ __html: dash(data.h1) }} />
+          </h1>
+
+          <MRule />
+
+          <div className="mt-6 flex max-w-[540px] flex-col gap-3.5 text-[15px] leading-[1.6] text-[var(--hero-muted)] md:text-[17px] lg:mt-7 lg:max-w-[520px] lg:gap-4 lg:text-[18px] lg:leading-[1.45] [&_a]:[font-weight:inherit] [&_a]:text-inherit hover:[&_a]:underline">
+            {paragraphs(data.subHeadline).map((html, index) => (
+              <p key={index} dangerouslySetInnerHTML={{ __html: highlight(html) }} />
+            ))}
+          </div>
         </div>
 
-        {/* Phones: the scene as its own band between the copy and the CTA */}
-        {sceneSrc ? <SceneBand src={sceneSrc} alt={heroAlt} className="md:hidden" /> : null}
+        {/* Phones, tablets + small laptops: the car below the copy; its sky rises behind the last lines. */}
+        {wide ? (
+          <div
+            aria-hidden="true"
+            className={`pointer-events-none relative -mx-[var(--gutter)] overflow-hidden xl:hidden ${
+              stage
+                ? "[mask-image:linear-gradient(to_bottom,transparent_0%,#000_24%,#000_92%,transparent_100%)]"
+                : // Dark art has a brighter watermark, so it fades in later to keep the blue figures readable.
+                  isDark
+                  ? "[mask-image:linear-gradient(to_bottom,transparent_0%,transparent_14%,#000_44%,#000_92%,transparent_100%)]"
+                  : "[mask-image:linear-gradient(to_bottom,transparent_0%,#000_32%,#000_92%,transparent_100%)]"
+            } ${
+              tall
+                ? "-mt-[44%] aspect-[11/10] md:-mt-[4%] md:aspect-[16/9]"
+                : stage
+                  ? "-mt-[6%] aspect-[10/7] md:aspect-[16/9]"
+                  : lineup
+                    ? "-mt-[4%] aspect-[3/2] md:aspect-[16/9]"
+                    : "-mt-[6%] aspect-[3/2] md:aspect-[16/9]"
+            }`}
+          >
+            {tall ? (
+              <Image src={tall} alt="" fill priority sizes="100vw" className="object-cover object-top md:hidden" />
+            ) : null}
+            {stage ? (
+              // Phones: BMW's stage scene zoomed in on its car (centred at ~71% across, 33–72% down every scene),
+              // so the car fills the screen width instead of sitting small beside the empty studio.
+              <div className="absolute left-[-70.7%] top-[-24.9%] aspect-[3/2] w-[170%] md:hidden">
+                <Image src={wide} alt="" fill priority sizes="170vw" className="object-cover" />
+              </div>
+            ) : null}
+            {lineup ? (
+              // Phones: the model's line-up zoomed ~1.46x on its newest cars (right of frame, 50–87% down), right edge
+              // flush with the screen; the oldest car runs off the left, so the front car reads at about half the width.
+              <div className="absolute left-[-45.5%] top-[-14%] aspect-[16/9] w-[146%] md:hidden">
+                <Image src={wide} alt="" fill priority sizes="146vw" className="object-cover" />
+              </div>
+            ) : null}
+            <Image
+              src={wide}
+              alt=""
+              fill
+              priority={!tall && !stage && !lineup}
+              sizes="100vw"
+              className={`object-cover object-[70%_40%] ${tall || stage || lineup ? "hidden md:block" : ""}`}
+            />
+          </div>
+        ) : null}
 
-        <div className="relative flex w-full max-w-[720px] flex-col md:hidden">
-          {data.primaryCta ? (
+        <div className="relative z-10">
+          {cta ? (
             <Link
-              href={data.primaryCta.href || "/quote"}
-              className="btn-cta mt-2 inline-flex w-full items-center justify-center gap-3 rounded-md px-6 py-3.5 text-[1rem] font-bold shadow-[0_12px_28px_var(--color-shadow)]"
+              href={cta.href || "/quote"}
+              className={`${wide ? "mt-2" : "mt-7"} flex w-full items-center justify-center gap-3 rounded-[8px] bg-[linear-gradient(180deg,#0b63e5_0%,#0750c4_100%)] px-6 py-3.5 text-[18px] font-medium text-white shadow-[0_10px_24px_rgba(7,80,196,0.28)] transition hover:brightness-110 md:w-fit md:px-9 lg:rounded-[4px] lg:py-3.5 lg:text-[19px] xl:mt-10`}
             >
-              <span dangerouslySetInnerHTML={{ __html: data.primaryCta.label.replace(/\s*→\s*$/, "") }} />
-              <GenIcon name="arrow" className="h-4 w-4 shrink-0" />
+              <span dangerouslySetInnerHTML={{ __html: ctaLabel }} />
+              <Icon name="arrow" strokeWidth={2.2} className="h-5 w-5 shrink-0" />
             </Link>
           ) : null}
 
-          <MobileTrustStrip
-            items={data.trustStrip}
-            isDark={isDark}
-            trustStripClass={trustStripClass}
-            dividerBorderClass={dividerBorderClass}
-            badgeTextClass={badgeTextClass}
-            badgeMutedClass={badgeMutedClass}
-          />
+          {data.trustStrip?.length ? (
+            <>
+              <DesktopStrip items={data.trustStrip} isDark={isDark} />
+              <PhoneStrip items={data.trustStrip} isDark={isDark} />
+            </>
+          ) : null}
         </div>
       </div>
     </section>

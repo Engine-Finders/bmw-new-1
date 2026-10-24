@@ -66,7 +66,7 @@ function FuelTable({ title, icon, rows, isDark, tone }) {
             <div className={labelBg} />
             {rows.map((row, index) => (
               <div
-                key={row.engineCode}
+                key={`${row.engineCode}-${index}`}
                 className={`flex flex-col items-center justify-center gap-1 border-l px-2 py-3 text-center ${cellDivider} ${
                   index === 0 ? `${toneBg} text-white` : `${rowBg} ${rowText}`
                 }`}
@@ -101,9 +101,9 @@ function FuelTable({ title, icon, rows, isDark, tone }) {
                 <GenIcon name={metric.icon} className="h-7 w-7 md:h-5 md:w-5 shrink-0" />
                 {metric.label}
               </div>
-              {rows.map((row) => (
+              {rows.map((row, index) => (
                 <div
-                  key={row.engineCode}
+                  key={`${row.engineCode}-${index}`}
                   className={`lg:text-[15px] flex items-center justify-center border-l px-2 py-3 text-center text-[0.78rem] ${cellDivider} ${rowText}`}
                   dangerouslySetInnerHTML={{ __html: row[metric.key] }}
                 />
@@ -145,8 +145,8 @@ export default function ReplacementCosts({ data }) {
             ))}
           </div>
           <div className={bodyWrapperBg}>
-            {data.rows?.map((row) => (
-              <DesktopRow key={row.engineCode} row={row} isDark={isDark} />
+            {data.rows?.map((row, index) => (
+              <DesktopRow key={`${row.engineCode}-${index}`} row={row} isDark={isDark} />
             ))}
           </div>
         </div>

@@ -9,6 +9,7 @@ import {
   modelEngineImage,
 } from "@/components/shared/carImage";
 import carImages from "@/data/shared/carImages.json";
+import carImageBounds from "@/data/shared/carImageBounds.json";
 import variantHeroArt from "@/data/shared/variantHeroArt.json";
 import variantHeroScenes from "@/data/shared/variantHeroScenes.json";
 import { partImageFor } from "@/components/shared/partImage";
@@ -153,6 +154,14 @@ function parentModel(hints) {
   return key ? key.split("|")[0] : null;
 }
 
+// Where the car really sits inside a cut-out photo (scripts/car-image-bounds.py), so it can stand on the floor.
+function carFit(src) {
+  const bounds = src ? carImageBounds[src] : null;
+  if (!bounds) return null;
+  const [width, height, top, bottom, left, right] = bounds;
+  return { width, height, top, bottom, left, right };
+}
+
 /** Generation page (/3-series/f30, ...): that generation's photos, none shown twice. */
 export function withGenerationPageImages(data) {
   if (!data) return data;
@@ -167,12 +176,12 @@ export function withGenerationPageImages(data) {
 
   if (out.overview) {
     const [image] = pick([hints]);
-    out.overview = { ...out.overview, image };
+    out.overview = { ...out.overview, image, imageFit: carFit(image) };
   }
 
   if (out.coreVariants) {
     const [image] = pick([hints], { view: "side" });
-    out.coreVariants = { ...out.coreVariants, image };
+    out.coreVariants = { ...out.coreVariants, image, imageFit: carFit(image) };
   }
 
   // Engine photo per problem card: the engine it names, else this generation's engine of the same size

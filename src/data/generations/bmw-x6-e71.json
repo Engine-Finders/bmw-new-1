@@ -442,25 +442,27 @@
         "reliability": "★★★☆☆ [PROVISIONAL -pending dedicated Engine Page]",
         "enquiries": "-(pattern data)",
         "avgReconCost": "£3,500–£6,500 [BMW-QUOTE]"
-      },
-      {
-        "engineCode": "Engine notes:",
-        "family": "* xDrive35i (2008–2010): N54B30A twin-turbo, 306 bhp",
-        "fuel": "* xDrive35i (2010–2014): N55B30A single-turbo, 306 bhp",
-        "displacement": "* xDrive50i: N63B44A twin-turbo V8, 402–408 bhp",
-        "power": "* X6 M: S63B44A twin-turbo V8, 547–555 bhp",
-        "years": "* ActiveHybrid X6: N63 V8 + electric motors, 485 bhp combined",
-        "variants": "* xDrive30d (2008–2010): M57D30TÜ2, 235 bhp",
-        "reliability": "* xDrive35d (2008–2010): M57D30TÜ2 sequential twin-turbo, 286 bhp",
-        "enquiries": "* xDrive30d (2010–2014): N57D30OL, 245 bhp",
-        "avgReconCost": "* xDrive40d (2010–2014): N57D30TOP, 306 bhp"
       }
     ],
     "confidenceScore": {
       "title": "Confidence Score",
       "text": "All ratings are provisional -no dedicated Engine Page exists for any E71 engine family. The M57 diesel is renowned for reliability, often exceeding 300,000 miles. The N63 V8 has well-documented valve stem seal issues. The N54 has notorious HPFP and injector problems. The N55 is a more reliable evolution of the N54."
     },
-    "dataCorrections": []
+    "dataCorrections": [],
+    "notes": {
+      "title": "Engine notes:",
+      "items": [
+        "xDrive35i (2008–2010): N54B30A twin-turbo, 306 bhp",
+        "xDrive35i (2010–2014): N55B30A single-turbo, 306 bhp",
+        "xDrive50i: N63B44A twin-turbo V8, 402–408 bhp",
+        "X6 M: S63B44A twin-turbo V8, 547–555 bhp",
+        "ActiveHybrid X6: N63 V8 + electric motors, 485 bhp combined",
+        "xDrive30d (2008–2010): M57D30TÜ2, 235 bhp",
+        "xDrive35d (2008–2010): M57D30TÜ2 sequential twin-turbo, 286 bhp",
+        "xDrive30d (2010–2014): N57D30OL, 245 bhp",
+        "xDrive40d (2010–2014): N57D30TOP, 306 bhp"
+      ]
+    }
   },
   "overview": {
     "h2": "BMW X6 E71 -Overview",

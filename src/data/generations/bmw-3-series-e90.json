@@ -278,6 +278,8 @@
     "image": {
       "dark": "/e90/hero_dark.webp",
       "light": "/e90/hero_day.webp",
+      "mobileDark": "/e90/hero_mobile_dark.webp",
+      "mobileLight": "/e90/hero_mobile_day.webp",
       "alt": "BMW 3 Series E90 saloon"
     },
     "dataIntegrityNote": ""
@@ -309,7 +311,7 @@
         "reliability": "★★★☆☆",
         "reliabilityTag": "PROVISIONAL",
         "enquiries": "- (pattern data)",
-        "avgReconCost": "£1,800–£3,500"
+        "avgReconCost": "£1,800–£3,500 [BMW-QUOTE]"
       },
       {
         "engineCode": "N52B25/30",
@@ -322,7 +324,7 @@
         "reliability": "★★★★☆",
         "reliabilityTag": "PROVISIONAL",
         "enquiries": "- (pattern data)",
-        "avgReconCost": "£2,500–£5,000"
+        "avgReconCost": "£2,500–£5,000 [BMW-QUOTE]"
       },
       {
         "engineCode": "N54B30",
@@ -335,7 +337,7 @@
         "reliability": "★★★☆☆",
         "reliabilityTag": "PROVISIONAL",
         "enquiries": "- (pattern data)",
-        "avgReconCost": "£3,500–£6,500"
+        "avgReconCost": "£3,500–£6,500 [PLACEHOLDER]"
       },
       {
         "engineCode": "N55B30",
@@ -348,7 +350,7 @@
         "reliability": "★★★★☆",
         "reliabilityTag": "PROVISIONAL",
         "enquiries": "- (pattern data)",
-        "avgReconCost": "£3,800–£6,000"
+        "avgReconCost": "£3,800–£6,000 [BMW-QUOTE]"
       },
       {
         "engineCode": "M57D30",
@@ -361,8 +363,8 @@
         "reliability": "★★★★½",
         "reliabilityTag": "BMW-VERIFIED",
         "reliabilityDetail": "830 JLR-wide",
-        "enquiries": "830 JLR-wide",
-        "avgReconCost": "£4,500–£7,000"
+        "enquiries": "830 JLR-wide [BMW-VERIFIED]",
+        "avgReconCost": "£4,500–£7,000 [BMW-QUOTE]"
       },
       {
         "engineCode": "N57D30",
@@ -375,7 +377,7 @@
         "reliability": "★★★★☆",
         "reliabilityTag": "NEWLY ASSIGNED",
         "enquiries": "- (pattern data)",
-        "avgReconCost": "£4,500–£7,000",
+        "avgReconCost": "£4,500–£7,000 [BMW-QUOTE]",
         "isNew": true
       },
       {
@@ -389,8 +391,8 @@
         "reliability": "★★★☆☆",
         "reliabilityTag": "BMW-VERIFIED",
         "reliabilityDetail": "1,450 JLR-wide; 380 F30 model-level",
-        "enquiries": "1,450 JLR-wide",
-        "avgReconCost": "£3,200–£5,500"
+        "enquiries": "1,450 JLR-wide [BMW-VERIFIED]",
+        "avgReconCost": "£3,200–£5,500 [BMW-QUOTE]"
       }
     ],
     "confidenceScore": {
@@ -432,7 +434,14 @@
       "src": "/e90/overview.webp",
       "alt": "BMW 3 Series E90 parked with city skyline in the background"
     },
-    "marketIntelligenceLine": "The E90 saloon generated 256 real UK engine enquiries in 2025 [BMW-VERIFIED], concentrated on the N47D20C diesel four as the parc exits affordable-warranty age."
+    "marketIntelligenceLine": "The E90 saloon generated 256 real UK engine enquiries in 2025 [BMW-VERIFIED], concentrated on the N47D20C diesel four as the parc exits affordable-warranty age.",
+    "art": {
+      "light": "/e90/overview_light.webp",
+      "dark": "/e90/overview_dark.webp",
+      "mobileLight": "/e90/overview_mobile_light.webp",
+      "mobileDark": "/e90/overview_mobile_dark.webp",
+      "alt": "BMW 3 Series E90 parked with city skyline in the background"
+    }
   },
   "bestWorstEngines": {
     "h2": "Best &amp; Worst Engines",

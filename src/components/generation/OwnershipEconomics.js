@@ -158,8 +158,8 @@ export default function OwnershipEconomics({ data }) {
             ))}
           </div>
           <div className={bodyWrapperBg}>
-            {data.rows?.map((row) => (
-              <DesktopRow key={row.engine} row={row} isDark={isDark} />
+            {data.rows?.map((row, index) => (
+              <DesktopRow key={`${row.engine}-${index}`} row={row} isDark={isDark} />
             ))}
           </div>
         </div>
@@ -180,8 +180,8 @@ export default function OwnershipEconomics({ data }) {
               ))}
             </div>
             <div className={bodyWrapperBg}>
-              {data.rows?.map((row) => (
-                <MobileRow key={row.engine} row={row} isDark={isDark} />
+              {data.rows?.map((row, index) => (
+                <MobileRow key={`${row.engine}-${index}`} row={row} isDark={isDark} />
               ))}
             </div>
           </div>

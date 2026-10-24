@@ -261,25 +261,27 @@
         "reliability": "★★★☆☆ [PROVISIONAL -pending dedicated Engine Page]",
         "enquiries": "-(pattern data)",
         "avgReconCost": "£6,000–£12,000"
-      },
-      {
-        "engineCode": "Engine specifications:",
-        "family": "* Configuration: 90° V10, naturally aspirated",
-        "fuel": "* Bore x Stroke: 92 mm × 75.2 mm",
-        "displacement": "* Displacement: 4,999 cc",
-        "power": "* Power: 507 hp (373 kW) at 7,750 rpm",
-        "years": "* Torque: 520 Nm at 6,100 rpm",
-        "variants": "* Redline: 8,250 rpm",
-        "reliability": "* Compression ratio: 12.0:1",
-        "enquiries": "* Valvetrain: DOHC, 4 valves per cylinder, 40 valves total",
-        "avgReconCost": "* VANOS: Double VANOS (variable valve timing on both intake and exhaust)"
       }
     ],
     "confidenceScore": {
       "title": "",
       "text": ""
     },
-    "dataCorrections": []
+    "dataCorrections": [],
+    "notes": {
+      "title": "Engine specifications:",
+      "items": [
+        "Configuration: 90° V10, naturally aspirated",
+        "Bore x Stroke: 92 mm × 75.2 mm",
+        "Displacement: 4,999 cc",
+        "Power: 507 hp (373 kW) at 7,750 rpm",
+        "Torque: 520 Nm at 6,100 rpm",
+        "Redline: 8,250 rpm",
+        "Compression ratio: 12.0:1",
+        "Valvetrain: DOHC, 4 valves per cylinder, 40 valves total",
+        "VANOS: Double VANOS (variable valve timing on both intake and exhaust)"
+      ]
+    }
   },
   "overview": {
     "h2": "BMW M5 E60/E61 -Overview",

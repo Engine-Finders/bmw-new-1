@@ -238,56 +238,36 @@
       "Fuel",
       "Displacement",
       "Power",
-      "Years (E28 M5)"
+      "Years (E28 M5)",
+      "Variants",
+      "Reliability",
+      "2025 Enquiries",
+      "Avg. Recon Cost"
     ],
     "engines": [
       {
-        "engineCode": "Variants",
-        "family": "Reliability",
-        "fuel": "2025 Enquiries",
-        "displacement": "Avg. Recon Cost",
-        "power": "M88/3",
-        "years": "BMW M88",
-        "variants": "",
-        "reliability": "",
-        "enquiries": "",
-        "avgReconCost": ""
+        "engineCode": "M88/3",
+        "family": "BMW M88",
+        "fuel": "Petrol, naturally aspirated",
+        "displacement": "3.5L (3453cc)",
+        "power": "286 bhp (210 kW)",
+        "years": "1984–1988",
+        "variants": "M5 (Europe, UK, South Africa)",
+        "reliability": "★★★★☆ [PATTERN DATA]",
+        "enquiries": "-(pattern data)",
+        "avgReconCost": "£8,000–£14,000 [PLACEHOLDER -confirm vs cost sheet]"
       },
       {
-        "engineCode": "Petrol, naturally aspirated",
-        "family": "3.5L (3453cc)",
-        "fuel": "286 bhp (210 kW)",
-        "displacement": "1984–1988",
-        "power": "M5 (Europe, UK, South Africa)",
-        "years": "★★★★☆ [PATTERN DATA]",
-        "variants": "",
-        "reliability": "",
-        "enquiries": "",
-        "avgReconCost": ""
-      },
-      {
-        "engineCode": "-(pattern data)",
-        "family": "£8,000–£14,000 [PLACEHOLDER -confirm vs cost sheet]",
-        "fuel": "S38B35",
-        "displacement": "BMW S38",
-        "power": "Petrol, naturally aspirated",
-        "years": "3.5L (3453cc)",
-        "variants": "",
-        "reliability": "",
-        "enquiries": "",
-        "avgReconCost": ""
-      },
-      {
-        "engineCode": "256 bhp (191 kW)",
-        "family": "1987–1988",
-        "fuel": "M5 (North America)",
-        "displacement": "★★★★☆ [PATTERN DATA]",
-        "power": "-(pattern data)",
-        "years": "£8,000–£14,000 [PLACEHOLDER -confirm vs cost sheet]",
-        "variants": "",
-        "reliability": "",
-        "enquiries": "",
-        "avgReconCost": ""
+        "engineCode": "S38B35",
+        "family": "BMW S38",
+        "fuel": "Petrol, naturally aspirated",
+        "displacement": "3.5L (3453cc)",
+        "power": "256 bhp (191 kW)",
+        "years": "1987–1988",
+        "variants": "M5 (North America)",
+        "reliability": "★★★★☆ [PATTERN DATA]",
+        "enquiries": "-(pattern data)",
+        "avgReconCost": "£8,000–£14,000 [PLACEHOLDER -confirm vs cost sheet]"
       }
     ],
     "confidenceScore": {
