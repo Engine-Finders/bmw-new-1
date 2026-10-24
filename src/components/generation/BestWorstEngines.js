@@ -366,7 +366,7 @@ export default function BestWorstEngines({ data }) {
         <div className="hidden lg:block">
           {cards.length ? (
             <div
-              className={`mt-6 grid gap-4 ${cols > 3 ? "lg:grid-cols-3 min-[1440px]:[grid-template-columns:var(--bw-cols)]" : "[grid-template-columns:var(--bw-cols)]"}`}
+              className={`mt-6 grid gap-4 [grid-template-columns:var(--bw-cols)] ${cols > 3 ? "lg:max-[1439px]:grid-cols-3" : ""}`}
               style={{ "--bw-cols": `repeat(${cols}, minmax(0, 1fr))` }}
             >
               {cards.map((item, index) => (
