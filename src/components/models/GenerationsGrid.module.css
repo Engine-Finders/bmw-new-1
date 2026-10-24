@@ -1,9 +1,8 @@
 /*
  * Model page "Generations - Find Your Vehicle" (section 4), built to the reference designs
  * (light + dark desktop at 1536px, light phone at 863px).
- * Sizes are reference pixels times --u, so the section is the reference scaled to its own width:
- * below 1024px the 863px-wide phone reference (accordion), from 1024px the 1536px-wide desktop
- * reference (seven cards). On small phones text has a floor so it stays readable.
+ * The heading and comparison table are reference pixels times --u. The cards are one design at every
+ * width: 2 columns on phones, 3 on tablets, up to 6 on desktop (a vertical scroll beyond six).
  */
 
 .section {
@@ -234,221 +233,191 @@
   color: var(--g-meta);
 }
 
-/* ---------- phone accordion ---------- */
+/* ---------- cards (every screen size) ---------- */
 
-.pCards {
+.cards {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 16px;
+}
+
+/* while a card is open the others keep their own height instead of stretching to match it */
+.cards:has(.cardOpen) {
+  align-items: start;
+}
+
+.card {
+  position: relative;
   display: flex;
   flex-direction: column;
-  gap: calc(6.5 * var(--u));
-  margin-top: calc(17 * var(--u));
-}
-
-.pCards.phoneOnly {
-  display: flex;
-}
-
-.pCard {
+  min-width: 0;
+  padding: 12px 12px 14px;
   border: 1px solid var(--g-card-border);
-  border-radius: calc(14 * var(--u));
+  border-radius: 12px;
   background: var(--g-card);
   box-shadow: var(--g-card-shadow);
 }
 
-.pOpen {
-  margin-bottom: calc(3 * var(--u));
+.cardOpen {
+  border-color: var(--g-open-border);
 }
 
-.pHead {
-  position: relative;
+.cardHead {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
+  gap: 8px;
   width: 100%;
-  min-height: calc(91 * var(--u));
-  padding: calc(15.75 * var(--u)) calc(64 * var(--u)) calc(9 * var(--u)) calc(19 * var(--u));
+  padding: 0;
   border: 0;
   background: none;
   color: inherit;
-  font: inherit;
   text-align: left;
   cursor: pointer;
 }
 
-.pHead .num {
-  width: calc(27 * var(--u));
-  height: calc(28 * var(--u));
-  font-size: calc(15 * var(--u));
+.card .num {
+  width: 22px;
+  height: 22px;
+  border-radius: 4px;
+  font-size: 13px;
 }
 
-.pText {
-  display: block;
+.card .cardLabel {
   min-width: 0;
-  padding-left: calc(22 * var(--u));
+  font-size: var(--fs-label);
+  line-height: 1.3;
 }
 
-.pHead .cardLabel {
-  font-size: calc(13.1 * var(--u));
-  font-weight: 600;
-  line-height: calc(18 * var(--u));
-}
-
-.pHead .code {
-  margin-top: calc(2.2 * var(--u));
-  font-size: calc(21.8 * var(--u));
-  line-height: calc(26 * var(--u));
-}
-
-/* rows with the "Most Enquired" badge sit a little tighter, as in the reference */
-.pHead:has(.badgeBlock) {
-  padding-top: calc(13.75 * var(--u));
-  padding-bottom: calc(1.5 * var(--u));
-}
-
-.pHead .badgeBlock {
-  margin-top: calc(2 * var(--u));
-}
-
-.pHead .badgeLine,
-.pHead .badgeTag {
-  font-size: calc(12.9 * var(--u));
-  line-height: calc(22 * var(--u));
-}
-
-.pMeta {
-  display: block;
-  margin-top: calc(4.2 * var(--u));
-  font-size: calc(11.2 * var(--u));
-  line-height: calc(18 * var(--u));
-  color: var(--g-meta);
-}
-
-.pEngines {
-  margin-left: calc(8 * var(--u));
-}
-
-.pEngines a {
-  color: inherit;
-  font-weight: inherit;
-  text-decoration: none;
-}
-
-.pThumb {
-  position: absolute;
-  top: calc(13 * var(--u));
-  left: calc(547 * var(--u));
-  width: calc(137 * var(--u));
-  height: calc(72 * var(--u));
-}
-
-.pChevron {
-  position: absolute;
-  top: calc(17 * var(--u));
-  right: calc(28 * var(--u));
-  width: calc(22 * var(--u));
-  height: calc(22 * var(--u));
+.headChevron {
+  flex-shrink: 0;
+  width: 18px;
+  height: 18px;
+  margin-left: auto;
   color: var(--g-chevron);
 }
 
-/* open card: bigger header text, then car, button, stars, verdict */
-.pOpen .pHead {
-  min-height: 0;
-  padding-top: calc(20 * var(--u));
-  padding-left: calc(22 * var(--u));
+.card .code {
+  margin-top: 10px;
+  font-size: var(--fs-h6);
+  line-height: 1.25;
 }
 
-.pOpen .pHead .num {
-  width: calc(28 * var(--u));
-  height: calc(28 * var(--u));
+.card .years {
+  margin-top: 6px;
+  font-size: var(--fs-label);
+  line-height: 1.4;
 }
 
-.pOpen .pText {
-  padding-left: calc(24 * var(--u));
+.card .engines {
+  margin-top: 2px;
+  font-size: var(--fs-label);
+  line-height: 1.4;
 }
 
-.pOpen .pHead .cardLabel {
-  font-size: calc(14.6 * var(--u));
-  line-height: calc(20 * var(--u));
-}
-
-.pOpen .pHead .code {
-  margin-top: calc(3 * var(--u));
-  font-size: calc(27.6 * var(--u));
-  line-height: calc(34 * var(--u));
-}
-
-.pOpen .pHead .years {
-  margin-top: calc(7 * var(--u));
-  font-size: calc(16 * var(--u));
-  line-height: calc(24 * var(--u));
-}
-
-.pOpen .pHead .engines {
-  font-size: calc(15.6 * var(--u));
-  line-height: calc(24 * var(--u));
-}
-
-.pOpen .pChevron {
-  top: calc(20 * var(--u));
-}
-
-.pBody {
+.car {
   position: relative;
-  padding: 0 calc(21 * var(--u)) calc(16 * var(--u)) calc(22 * var(--u));
+  flex: none;
+  height: 76px;
+  margin-top: 12px;
 }
 
-.pCar {
-  position: relative;
-  width: calc(413 * var(--u));
-  height: calc(165 * var(--u));
-  margin: calc(-28 * var(--u)) 0 0 calc(145 * var(--u));
-}
-
-.pCta {
+.carMark {
+  position: absolute;
+  inset: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
-  height: calc(49 * var(--u));
-  margin-top: calc(12 * var(--u));
-  border: 1.5px solid var(--g-open-btn-border, var(--g-num));
-  border-radius: calc(7 * var(--u));
-  color: var(--g-open-btn-text, var(--g-accent));
-  font-size: calc(17.4 * var(--u));
+  color: var(--g-chevron);
+  opacity: 0.4;
+}
+
+.carMarkIcon {
+  width: 64px;
+  height: 64px;
+}
+
+.cardStars {
+  align-self: flex-start;
+  gap: 2px;
+  margin: 10px 0 12px;
+}
+
+.cardStars svg {
+  width: 17px;
+  height: 17px;
+}
+
+/* shown only while the card is open */
+.details {
+  margin-bottom: 12px;
+  padding-top: 10px;
+  border-top: 1px solid var(--g-card-border);
+}
+
+.details .badgeLine,
+.details .badgeTag {
+  font-size: var(--fs-label);
+  line-height: 1.35;
+}
+
+.badgeBlock + .verdict {
+  margin-top: 8px;
+}
+
+.verdict .verdictLabel {
+  font-size: var(--fs-label);
   font-weight: 600;
+  line-height: 1.4;
 }
 
-.pCtaIcon {
-  position: absolute;
-  top: 50%;
-  right: calc(32 * var(--u));
-  width: calc(22 * var(--u));
-  height: calc(22 * var(--u));
-  transform: translateY(-50%);
+.verdict .verdictText {
+  margin-top: 4px;
+  font-size: var(--fs-label);
+  line-height: 1.55;
 }
 
-.pStars {
-  gap: calc(4 * var(--u));
-  margin-top: calc(13 * var(--u));
+/* the button sits at the bottom of the card, so buttons line up across a row */
+.cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 38px;
+  margin-top: auto;
+  padding: 6px 8px;
+  border: 1px solid var(--g-btn-border);
+  border-radius: 6px;
+  background: var(--g-btn-bg);
+  color: var(--g-btn-text);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.2;
+  text-align: center;
 }
 
-.pStars svg {
-  width: calc(26 * var(--u));
-  height: calc(26 * var(--u));
+.cardOpen .cta {
+  border-color: var(--g-open-btn-border, var(--g-btn-border));
+  color: var(--g-open-btn-text, var(--g-btn-text));
 }
 
-.pVerdict {
-  max-width: calc(492 * var(--u));
-  margin-top: calc(9 * var(--u));
+.ctaIcon {
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  color: var(--g-chevron);
 }
 
-.pVerdict .verdictLabel {
-  font-size: calc(16.6 * var(--u));
-  line-height: calc(24 * var(--u));
+.cardOpen .ctaIcon {
+  color: inherit;
 }
 
-.pVerdict .verdictText {
-  margin-top: calc(6 * var(--u));
-  font-size: calc(16.47 * var(--u));
-  line-height: calc(26.5 * var(--u));
+@container (min-width: 651px) {
+  .cards {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 14px 12px;
+  }
 }
 
 /* ---------- comparison ---------- */
@@ -519,7 +488,7 @@
 .gridPhone .gCorner,
 .gridPhone .gTh,
 .gridPhone .posHead {
-  height: calc(47 * var(--u));
+  min-height: calc(47 * var(--u));
 }
 
 .gTh {
@@ -596,7 +565,7 @@
 
 .gridPhone .rowIcon {
   width: calc(24 * var(--u));
-  height: calc(24 * var(--u));
+  min-height: calc(24 * var(--u));
 }
 
 .rowIcon {
@@ -617,11 +586,11 @@
 }
 
 .gridPhone .gRow:nth-child(2) > * {
-  height: calc(59 * var(--u));
+  min-height: calc(59 * var(--u));
 }
 
 .gridPhone .gRow:nth-child(3) > * {
-  height: calc(49 * var(--u));
+  min-height: calc(49 * var(--u));
 }
 
 .gRow:last-child > * {
@@ -724,140 +693,6 @@
     line-height: 1.55;
   }
 
-  .pCards {
-    gap: 8px;
-    margin-top: 16px;
-  }
-
-  .pCard {
-    border-radius: 12px;
-  }
-
-  .pHead,
-  .pOpen .pHead {
-    min-height: 0;
-    padding: 12px 40px 12px 12px;
-  }
-
-  .pHead .num,
-  .pOpen .pHead .num {
-    width: 22px;
-    height: 22px;
-    font-size: 13px;
-  }
-
-  .pText,
-  .pOpen .pText {
-    max-width: calc(100% - 116px);
-    padding-left: 10px;
-  }
-
-  .pOpen .pText {
-    max-width: none;
-  }
-
-  .pHead .cardLabel,
-  .pOpen .pHead .cardLabel {
-    font-size: 13px;
-    line-height: 1.4;
-  }
-
-  .pHead .code {
-    font-size: 18px;
-    line-height: 1.3;
-  }
-
-  .pOpen .pHead .code {
-    font-size: 18px;
-  }
-
-  .pHead .badgeLine,
-  .pHead .badgeTag {
-    font-size: 13px;
-    line-height: 1.5;
-  }
-
-  .pMeta {
-    font-size: 13px;
-    line-height: 1.5;
-  }
-
-  .pOpen .pHead .years,
-  .pOpen .pHead .engines {
-    font-size: 14px;
-    line-height: 1.5;
-  }
-
-  .pEngines {
-    margin-left: 4px;
-  }
-
-  .pThumb {
-    top: 12px;
-    right: 34px;
-    left: auto;
-    width: 96px;
-    height: 52px;
-  }
-
-  .pChevron,
-  .pOpen .pChevron {
-    top: 14px;
-    right: 10px;
-    width: 18px;
-    height: 18px;
-  }
-
-  .pBody {
-    padding: 0 12px 14px;
-  }
-
-  .pCar {
-    width: 70%;
-    height: auto;
-    aspect-ratio: 413 / 165;
-    margin: -6px 0 0 auto;
-  }
-
-  .pCta {
-    height: 42px;
-    margin-top: 10px;
-    border-radius: 7px;
-    font-size: 16px;
-  }
-
-  .pCtaIcon {
-    right: 16px;
-    width: 18px;
-    height: 18px;
-  }
-
-  .pStars {
-    gap: 4px;
-    margin-top: 12px;
-  }
-
-  .pStars svg {
-    width: 20px;
-    height: 20px;
-  }
-
-  .pVerdict {
-    max-width: none;
-    margin-top: 10px;
-  }
-
-  .pVerdict .verdictLabel {
-    font-size: 15px;
-    line-height: 1.4;
-  }
-
-  .pVerdict .verdictText {
-    margin-top: 4px;
-    font-size: 15px;
-    line-height: 1.55;
-  }
-
   .compare {
     margin-top: 10px;
     padding: 10px 8px 12px;
@@ -891,7 +726,7 @@
   .gridPhone .gCorner,
   .gridPhone .gTh,
   .gridPhone .posHead {
-    height: auto;
+    min-height: auto;
     min-height: 0;
     padding: 0.7em 0.25em;
   }
@@ -918,7 +753,7 @@
 
   .gridPhone .rowIcon {
     width: 1.3em;
-    height: 1.3em;
+    min-height: 1.3em;
   }
 
   .gridPhone .posHead {
@@ -927,12 +762,12 @@
 
   .gridPhone .posIcon {
     width: 1.25em;
-    height: 1.25em;
+    min-height: 1.25em;
   }
 
   .gridPhone .gRow:nth-child(2) > *,
   .gridPhone .gRow:nth-child(3) > * {
-    height: auto;
+    min-height: auto;
     min-height: 0;
   }
 
@@ -984,8 +819,7 @@
     display: block;
   }
 
-  .phoneOnly,
-  .pCards.phoneOnly {
+  .phoneOnly {
     display: none;
   }
 
@@ -1011,154 +845,48 @@
     line-height: 1.65;
   }
 
-  /* ---------- seven cards: flow layout, collapsed by default, open on click ---------- */
+  /* ---------- cards: up to six in a row; more than six scroll vertically ---------- */
 
   .cards {
-    display: grid;
-    grid-template-columns: repeat(clamp(4, var(--count, 7), 7), minmax(0, 1fr));
+    grid-template-columns: repeat(var(--cols, 6), minmax(0, 1fr));
     gap: 14px 12px;
-    align-items: start;
     margin-top: 28px;
   }
 
+  .cards[data-scroll] {
+    max-height: var(--row1, 560px);
+    padding: 2px 12px 6px 0;
+    overflow-y: auto;
+    scrollbar-gutter: stable;
+  }
+
+  .cards[data-scroll]::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  .cards[data-scroll]::-webkit-scrollbar-track {
+    border-radius: 8px;
+    background: var(--g-card-border);
+  }
+
+  .cards[data-scroll]::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background: var(--g-open-border);
+  }
+
+  @supports not selector(::-webkit-scrollbar) {
+    .cards[data-scroll] {
+      scrollbar-width: thin;
+      scrollbar-color: var(--g-open-border) var(--g-card-border);
+    }
+  }
+
   .card {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    padding: 14px 12px 14px;
-    border: 1px solid var(--g-card-border);
-    border-radius: 12px;
-    background: var(--g-card);
-    box-shadow: var(--g-card-shadow);
-  }
-
-  .cardOpen {
-    border-color: var(--g-open-border);
-  }
-
-  .cardHead {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    width: 100%;
-    padding: 0;
-    border: 0;
-    background: none;
-    color: inherit;
-    text-align: left;
-  }
-
-  .card .num {
-    flex-shrink: 0;
-    width: 22px;
-    height: 22px;
-    border-radius: 4px;
-    font-size: 13px;
-  }
-
-  .card .cardLabel {
-    min-width: 0;
-    font-size: var(--fs-label);
-    line-height: 1.3;
-  }
-
-  .headChevron {
-    flex-shrink: 0;
-    width: 18px;
-    height: 18px;
-    margin-left: auto;
-    color: var(--g-chevron);
-  }
-
-  .card .code {
-    margin-top: 10px;
-    font-size: var(--fs-h6);
-    line-height: 1.25;
-  }
-
-  .meta {
-    min-height: 168px;
-    margin-top: 6px;
-    font-size: var(--fs-label);
-    line-height: 1.4;
-  }
-
-  .meta .badgeLine,
-  .meta .badgeTag {
-    font-size: var(--fs-label);
-    line-height: 1.35;
-  }
-
-  .meta .badgeBlock + .years {
-    margin-top: 6px;
+    padding: 14px 12px;
   }
 
   .car {
-    position: relative;
-    height: 74px;
-    margin-top: 10px;
-  }
-
-  .cardStars {
-    margin-top: 10px;
-    gap: 2px;
-  }
-
-  .cardStars svg {
-    width: 17px;
-    height: 17px;
-  }
-
-  .verdict {
-    margin-top: 10px;
-    padding-top: 10px;
-    border-top: 1px solid var(--g-card-border);
-  }
-
-  .verdict .verdictLabel {
-    font-size: var(--fs-label);
-    font-weight: 600;
-    line-height: 1.4;
-  }
-
-  .verdict .verdictText {
-    margin-top: 4px;
-    font-size: var(--fs-label);
-    line-height: 1.55;
-  }
-
-  .cta {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-    min-height: 38px;
-    margin-top: 12px;
-    padding: 6px 8px;
-    border: 1px solid var(--g-btn-border);
-    border-radius: 6px;
-    background: var(--g-btn-bg);
-    color: var(--g-btn-text);
-    font-size: 14px;
-    font-weight: 600;
-    line-height: 1.2;
-    text-align: center;
-  }
-
-  .cardOpen .cta {
-    border-color: var(--g-open-btn-border, var(--g-btn-border));
-    color: var(--g-open-btn-text, var(--g-btn-text));
-  }
-
-  .ctaIcon {
-    flex-shrink: 0;
-    width: 16px;
-    height: 16px;
-    color: var(--g-chevron);
-  }
-
-  .cardOpen .ctaIcon {
-    color: inherit;
+    height: 88px;
   }
 
   /* ---------- comparison ---------- */
@@ -1193,7 +921,7 @@
   .gridDesk .gCorner,
   .gridDesk .gTh,
   .gridDesk .posHead {
-    height: calc(55 * var(--u));
+    min-height: calc(55 * var(--u));
   }
 
   .gridDesk .gTh {
@@ -1223,11 +951,11 @@
   }
 
   .gridDesk .gRow:nth-child(2) > * {
-    height: calc(62 * var(--u));
+    min-height: calc(62 * var(--u));
   }
 
   .gridDesk .gRow:nth-child(3) > * {
-    height: calc(63 * var(--u));
+    min-height: calc(63 * var(--u));
   }
 
   .gridDesk .gCell {

@@ -92,7 +92,7 @@
     "problemIcons": [
       { "match": "snapped|bent valve|engine damage|catastroph", "icon": "network" },
       { "match": "swirl", "icon": "fan" },
-      { "match": "egr|cooling|coolant|water pump|thermostat", "icon": "radiator" },
+      { "match": "egr|cooling|coolant|water pump|thermostat", "icon": "coolant" },
       { "match": "pump|injector|injection|hpfp|fuel", "icon": "fuel" },
       { "match": "chain|tensioner", "icon": "link" },
       { "match": "turbo|chargepipe", "icon": "turbo" },
@@ -101,7 +101,7 @@
       { "match": "mount", "icon": "gear" }
     ],
     "trust": [
-      { "icon": "shieldCheck", "label": "20+ Vetted Specialists", "sub": "UK Network" },
+      { "icon": "shieldCheck", "solid": true, "label": "20+ Vetted Specialists", "sub": "UK Network" },
       { "icon": "shieldCheck", "label": "12-Month Warranty", "sub": "as Standard" },
       { "icon": "truck", "label": "Nationwide Delivery", "sub": "& Collection" },
       { "icon": "poundCircle", "label": "Transparent Pricing", "sub": "No Hidden Fees" },
@@ -122,6 +122,21 @@
       { "match": "warning light|codes", "icon": "alert" },
       { "match": "mot", "icon": "clipboard" },
       { "match": "coolant|cooling|water", "icon": "thermometer" },
+      { "match": "recall", "icon": "shieldCheck" }
+    ],
+    "wideWhyTitle": "Buy smart. Drive with confidence.",
+    "wideWhyText": "A few checks today can save thousands tomorrow. Use this checklist to avoid the most common {variant} pitfalls.",
+    "wideItemIcons": [
+      { "match": "cold start", "icon": "ear" },
+      { "match": "service history", "icon": "clipboardList" },
+      { "match": "smoke", "icon": "cloud" },
+      { "match": "turbo|boost|chargepipe", "icon": "turbo" },
+      { "match": "dpf|adblue|egr", "icon": "dpfFilter" },
+      { "match": "oil", "icon": "oilCan" },
+      { "match": "warning light|codes", "icon": "engine" },
+      { "match": "mot", "icon": "clipboardSearch" },
+      { "match": "coolant|cooling|water", "icon": "thermometer" },
+      { "match": "timing chain|chain", "icon": "link" },
       { "match": "recall", "icon": "shieldCheck" }
     ]
   },

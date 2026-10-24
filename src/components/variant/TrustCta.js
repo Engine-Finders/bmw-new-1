@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import SceneImage from "./SceneImage";
 import VIcon from "./VariantIcons";
 import { Rich, dash, fill, pageValues, stripMarker, ui } from "./variantUi";
 
@@ -19,7 +20,10 @@ export default function TrustCta({ data, vehicle }) {
   const points = data.trustPoints || [];
   const final = splitFinal(data.finalCta);
   const button = data.ctaButton;
-  const bg = data.background;
+  const scene = data.scene;
+  const trustScene = data.trustScene || scene; // same car mirrored, so it faces the text
+  const lineup = Boolean(trustScene?.light?.lineup); // several cars in one picture: only the front one is shown
+  const ratio = trustScene?.light?.width && trustScene.light.height ? trustScene.light.width / trustScene.light.height : 1.5;
 
   return (
     <section className="section-y border-t border-[var(--color-v-border)] bg-[var(--color-v-page)] text-[var(--color-v-text)]">
@@ -48,32 +52,33 @@ export default function TrustCta({ data, vehicle }) {
 
         {final.title ? (
           <div className="relative mt-5 overflow-hidden rounded-[12px] border border-[var(--color-v-border)] bg-[var(--color-v-panel-soft)]">
-            {bg ? (
-              <div aria-hidden="true" className="absolute right-0 top-0 h-[60%] w-[60%] opacity-70 md:inset-y-0 md:left-0 md:right-auto md:h-auto md:w-[42%] md:opacity-100">
-                <Image src={bg.light} alt="" fill sizes="40vw" className="object-cover object-[75%_45%] [[data-theme=dark]_&]:hidden" />
-                <Image src={bg.dark} alt="" fill sizes="40vw" className="hidden object-cover object-[75%_45%] [[data-theme=dark]_&]:block" />
-                <div className="absolute inset-0 bg-[linear-gradient(90deg,var(--color-v-panel-soft)_0%,transparent_40%)] md:bg-[linear-gradient(90deg,transparent_55%,var(--color-v-panel-soft)_100%)]" />
-              </div>
-            ) : null}
-            <div className="relative grid gap-5 p-5 md:grid-cols-[minmax(0,0.8fr)_minmax(0,1.2fr)_minmax(0,0.55fr)] md:items-center md:p-6 lg:gap-6">
-              {data.image ? (
-                <div className="pointer-events-none relative hidden aspect-[3/2] md:block">
-                  <span aria-hidden="true" className="absolute inset-x-[8%] bottom-[5%] h-[12%] rounded-[50%] bg-black/35 blur-xl" />
-                  <Image src={data.image} alt={`BMW ${values.variant}`} fill sizes="30vw" className="object-contain" />
+            {/* The car stands on its own floor inside the picture: left on desktop (fading into the banner), top right on phones. */}
+            {scene ? (
+              <>
+                <div aria-hidden="true" className="pointer-events-none absolute inset-y-0 left-0 hidden w-[52%] overflow-hidden [mask-image:linear-gradient(90deg,transparent_0%,#000_9%,#000_72%,transparent_100%)] md:block">
+                  <div
+                    className={`absolute left-[34%] top-1/2 ${lineup ? "h-[165%] -translate-x-[20%] -translate-y-[70%] [mask-image:linear-gradient(90deg,#000_0%,#000_46%,transparent_60%)]" : "h-[148%] -translate-x-[29.5%] -translate-y-[54%]"}`}
+                    style={{ aspectRatio: ratio }}
+                  >
+                    <SceneImage art={trustScene} sizes="40vw" className="h-full w-full object-cover" />
+                  </div>
                 </div>
-              ) : null}
+                <div aria-hidden="true" className="pointer-events-none absolute right-0 top-0 h-[48%] w-[60%] [mask-image:linear-gradient(0deg,transparent_0%,#000_22%)] md:hidden">
+                  <div className="absolute inset-0 [mask-image:linear-gradient(90deg,transparent_0%,#000_38%)]">
+                    <SceneImage art={scene} sizes="60vw" className="h-full w-full object-cover object-[100%_100%]" />
+                  </div>
+                </div>
+              </>
+            ) : null}
+            <div className="relative grid gap-5 p-5 md:grid-cols-[minmax(0,0.9fr)_minmax(0,1.15fr)_minmax(0,0.5fr)] md:items-center md:p-6 lg:gap-6">
+              <span aria-hidden="true" className="hidden md:block" />
               <div className="relative">
                 <div className="relative z-10 max-w-[56%] md:max-w-none">
                   <p className="t-h5 font-bold text-[var(--color-v-text)] md:text-[length:var(--fs-h4)]">{final.title}</p>
                   {final.body ? <p className="t-body mt-2 text-[var(--color-v-muted)]">{final.body}</p> : null}
                 </div>
-                {/* Phones: car over the engine on the right */}
-                <div aria-hidden="true" className="pointer-events-none absolute -right-3 top-0 flex w-[50%] flex-col md:hidden">
-                  {data.image ? (
-                    <span className="relative block aspect-[3/2] w-full">
-                      <Image src={data.image} alt="" fill sizes="50vw" className="object-contain" />
-                    </span>
-                  ) : null}
+                {/* Phones: the engine sits over the lower right of the picture */}
+                <div aria-hidden="true" className="pointer-events-none absolute -right-3 bottom-[-20px] flex w-[50%] flex-col md:hidden">
                   {data.engineImage ? (
                     <span className="relative -mt-2 ml-[12%] block aspect-square w-[88%]">
                       <Image src={data.engineImage} alt="" fill sizes="45vw" className="object-contain" />
@@ -83,7 +88,7 @@ export default function TrustCta({ data, vehicle }) {
                 {button?.label ? (
                   <Link
                     href={button.href || "/quote"}
-                    className="t-body relative z-10 mt-5 inline-flex max-w-[56%] items-center justify-center gap-3 rounded-[6px] bg-[var(--color-v-green-btn)] px-5 py-3 font-semibold text-white transition hover:brightness-110 md:max-w-none md:whitespace-nowrap md:px-6"
+                    className="t-body relative z-10 mt-5 inline-flex max-w-[66%] items-center justify-center gap-2 rounded-[6px] bg-[var(--color-v-green-btn)] px-4 py-3 text-left font-semibold leading-snug text-white transition hover:brightness-110 md:max-w-none md:gap-3 md:whitespace-nowrap md:px-6 md:text-center"
                   >
                     {stripMarker(button.label)}
                     <VIcon name="arrowRight" className="h-[18px] w-[18px] shrink-0" strokeWidth={2.2} />
@@ -102,12 +107,12 @@ export default function TrustCta({ data, vehicle }) {
         {/* Desktop trust row (the phone design ends with the banner) */}
         <ul className="mt-4 hidden grid-cols-5 rounded-[10px] border border-[var(--color-v-border)] bg-[var(--color-v-panel)] px-4 py-4 md:grid">
           {copy.trust.map((item, index) => (
-            <li key={item.label} className="relative flex items-center justify-center gap-3 px-2">
+            <li key={item.label} className="relative flex items-center justify-center gap-2 px-1.5 lg:gap-3 lg:px-2">
               {index ? <span aria-hidden="true" className="absolute left-0 top-1/2 h-[60%] w-px -translate-y-1/2 bg-[var(--color-v-border-strong)]" /> : null}
               <VIcon
                 name={item.icon}
                 solid={["tag", "checkCircleSolid", "users", "truck"].includes(item.icon)}
-                className="h-7 w-7 shrink-0 text-[var(--color-v-blue)] [[data-theme=light]_&]:text-[var(--color-v-navy)]"
+                className="h-8 w-8 shrink-0 text-[var(--color-v-blue)] [[data-theme=light]_&]:text-[var(--color-v-navy)]"
               />
               <span className="t-label min-w-0 text-[var(--color-v-text)]">
                 <span className="block font-semibold">{item.label}</span>

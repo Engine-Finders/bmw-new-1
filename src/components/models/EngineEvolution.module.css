@@ -390,9 +390,14 @@
   }
 
   .stats {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
     margin-top: 16px;
     padding: 12px 0 14px;
     border-radius: 10px;
+  }
+
+  .stat {
+    padding: 0 4px;
   }
 
   .statIcon {
@@ -402,14 +407,14 @@
 
   .stat strong {
     margin-top: 6px;
-    font-size: 13px;
+    font-size: min(13px, 3.3cqw);
     line-height: 1.35;
     white-space: normal;
   }
 
   .stat span {
     margin-top: 2px;
-    font-size: 13px;
+    font-size: min(13px, 3.3cqw);
     line-height: 1.35;
     white-space: normal;
   }
@@ -564,12 +569,17 @@
   .stats {
     position: static;
     flex-shrink: 0;
-    grid-template-columns: repeat(4, minmax(130px, auto));
+    grid-template-columns: repeat(4, auto);
     width: auto;
     height: auto;
     margin: 0;
-    padding: 16px 18px;
+    padding: 16px 0;
     border-radius: calc(12 * var(--u));
+  }
+
+  /* side padding keeps each badge's text off its dividers and off the next badge's text */
+  .stat {
+    padding: 0 clamp(18px, 1.9vw, 30px);
   }
 
   .stat + .stat::before {

@@ -52,9 +52,13 @@ function regionMatches(rowName, mapName) {
 const SHADES = ["var(--color-v-map-5)", "var(--color-v-map-4)", "var(--color-v-map-3)"];
 // Bubble slots around the map (viewBox units): two on the right, two on the left.
 const SLOTS = { right: [[372, 300], [392, 410]], left: [[52, 345], [62, 470]] };
+// Phones: a wider picture with the bubbles beside the map rather than over it.
+const WIDE_SLOTS = { right: [[505, 165], [545, 330]], left: [[-85, 215], [-45, 395]] };
+const WIDE_BOX = [-190, 0, 800, 560];
 
-function DemandMap({ rows }) {
-  const [, , width, height] = ukMap.viewBox;
+function DemandMap({ rows, wide = false }) {
+  const [x0, , width, height] = wide ? WIDE_BOX : ukMap.viewBox;
+  const slots = wide ? WIDE_SLOTS : SLOTS;
   const named = rows.filter((row) => !row.other);
   const fillFor = (region) => {
     const rank = named.findIndex((row) => regionMatches(row.name, region.name));
@@ -75,11 +79,11 @@ function DemandMap({ rows }) {
   const byX = [...bubbles].sort((a, b) => b.at[0] - a.at[0]);
   const right = byX.slice(0, 2).sort((a, b) => a.at[1] - b.at[1]);
   const left = byX.slice(2).sort((a, b) => a.at[1] - b.at[1]);
-  const placed = [...right.map((row, i) => ({ ...row, slot: SLOTS.right[i] })), ...left.map((row, i) => ({ ...row, slot: SLOTS.left[i] }))];
+  const placed = [...right.map((row, i) => ({ ...row, slot: slots.right[i] })), ...left.map((row, i) => ({ ...row, slot: slots.left[i] }))];
 
   return (
     <div className="relative mx-auto w-full max-w-[460px]" style={{ aspectRatio: `${width} / ${height}` }}>
-      <svg viewBox={ukMap.viewBox.join(" ")} className="absolute inset-0 h-full w-full" role="img" aria-label={rows.map((row) => `${row.name} ${row.share}%`).join(", ")}>
+      <svg viewBox={(wide ? WIDE_BOX : ukMap.viewBox).join(" ")} className="absolute inset-0 h-full w-full" role="img" aria-label={rows.map((row) => `${row.name} ${row.share}%`).join(", ")}>
         {ukMap.regions.map((region) => (
           <path key={region.name} d={region.d} fill={fillFor(region)} stroke="var(--color-v-panel)" strokeWidth="1.2" strokeLinejoin="round" />
         ))}
@@ -96,11 +100,11 @@ function DemandMap({ rows }) {
       {placed.map((row) => (
         <span
           key={row.name}
-          className="absolute flex h-[17%] w-auto -translate-x-1/2 -translate-y-1/2 flex-col items-center justify-center rounded-full border border-[var(--color-v-border-strong)] bg-[var(--color-v-panel)] text-center shadow-[0_6px_16px_var(--color-v-shadow)]"
-          style={{ left: `${(row.slot[0] / width) * 100}%`, top: `${(row.slot[1] / height) * 100}%`, aspectRatio: "1 / 1" }}
+          className={`absolute flex ${wide ? "h-[27%]" : "h-[17%]"} w-auto -translate-x-1/2 -translate-y-1/2 flex-col items-center justify-center rounded-full border border-[var(--color-v-border-strong)] bg-[var(--color-v-panel)] text-center shadow-[0_6px_16px_var(--color-v-shadow)]`}
+          style={{ left: `${((row.slot[0] - x0) / width) * 100}%`, top: `${(row.slot[1] / height) * 100}%`, aspectRatio: "1 / 1" }}
         >
-          <span className="t-num text-[var(--color-v-blue)]">{row.share}%</span>
-          <span className="t-label max-w-[90%] leading-tight text-[var(--color-v-text)]">{row.name}</span>
+          <span className={`${wide ? "text-[15px] font-bold" : "t-num"} text-[var(--color-v-blue)]`}>{row.share}%</span>
+          <span className={`${wide ? "text-[10px]" : "t-label"} max-w-[90%] leading-tight text-[var(--color-v-text)]`}>{row.name}</span>
         </span>
       ))}
     </div>
@@ -113,8 +117,8 @@ function StatCard({ item }) {
   return (
     <div className="flex h-full flex-col rounded-[10px] border border-[var(--color-v-border)] bg-[var(--color-v-panel)] p-3.5 shadow-[0_6px_18px_var(--color-v-shadow)] md:p-5">
       <div className="flex items-start gap-2.5 md:gap-3">
-        <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[var(--color-v-tile)] text-white md:h-11 md:w-11">
-          <VIcon name={icon} className="h-5 w-5" />
+        <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[var(--color-v-tile)] text-white md:h-14 md:w-14">
+          <VIcon name={icon} className="h-[54%] w-[54%]" strokeWidth={2} />
         </span>
         <p className="t-label min-w-0 pt-0.5 text-[var(--color-v-text)]">
           {item.label}
@@ -132,8 +136,8 @@ function RegionCard({ item, regions }) {
   return (
     <div className="flex h-full flex-col rounded-[10px] border border-[var(--color-v-border)] bg-[var(--color-v-panel)] p-3.5 shadow-[0_6px_18px_var(--color-v-shadow)] md:p-5">
       <div className="flex items-center gap-2.5 md:gap-3">
-        <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[var(--color-v-tile)] text-white md:h-11 md:w-11">
-          <VIcon name="barChart" className="h-5 w-5" />
+        <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[var(--color-v-tile)] text-white md:h-14 md:w-14">
+          <VIcon name="barChart" className="h-[54%] w-[54%]" strokeWidth={2} />
         </span>
         <p className="t-label text-[var(--color-v-text)]">{item.label}</p>
       </div>
@@ -176,7 +180,10 @@ export default function MarketIntelligence({ data, vehicle }) {
         {regions.rows.length ? (
           <div className="flex flex-col rounded-[10px] border border-[var(--color-v-border)] bg-[var(--color-v-panel)] p-5 shadow-[0_6px_18px_var(--color-v-shadow)] lg:p-6">
             <h3 className="t-h6 text-[var(--color-v-text)]">{copy.mapTitle}</h3>
-            <div className="mt-4 flex flex-1 items-center">
+            <div className="mt-4 flex flex-1 items-center lg:hidden">
+              <DemandMap rows={regions.rows} wide />
+            </div>
+            <div className="mt-4 hidden flex-1 items-center lg:flex">
               <DemandMap rows={regions.rows} />
             </div>
           </div>

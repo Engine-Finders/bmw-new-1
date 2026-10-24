@@ -19,6 +19,13 @@ function Question({ item, index, weight = "font-semibold" }) {
   );
 }
 
+// The design sets the disclaimer as three sentences on their own lines (the middle break only on desktop).
+function breakDisclaimer(html = "") {
+  return String(html)
+    .replace(/\s+(Actual costs vary)/, '<br class="max-lg:hidden" />$1')
+    .replace(/\s+(Every engine supplied)/, "<br />$1");
+}
+
 export default function FAQAccordion({ data }) {
   const items = data?.items || [];
   if (!items.length) return null;
@@ -47,6 +54,7 @@ export default function FAQAccordion({ data }) {
                     headerClassName="flex items-start gap-3"
                     chevronClassName="mt-1 h-5 w-5 text-[var(--color-v-text)]"
                     bodyClassName="pl-10 pt-2"
+                    pointsDownWhenOpen
                   >
                     <Rich as="p" html={item.answer} className="t-body text-[var(--color-v-muted)]" />
                   </Disclosure>
@@ -76,7 +84,7 @@ export default function FAQAccordion({ data }) {
                 <VIcon name="info" className="h-7 w-7 max-lg:h-6 max-lg:w-6" />
               </span>
               <p className="t-body text-[var(--color-v-text)]">
-                <strong className="font-semibold">{copy.disclaimerLabel}</strong> <Rich html={data.disclaimer} />
+                <strong className="font-semibold">{copy.disclaimerLabel}</strong> <Rich html={breakDisclaimer(data.disclaimer)} />
               </p>
             </div>
           ) : null}

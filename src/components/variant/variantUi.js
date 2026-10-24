@@ -12,6 +12,11 @@ export function dash(value = "") {
   return String(value ?? "").replace(/\s+-\s+/g, " — ");
 }
 
+/** "£1,800–£3,000" is set with spaces around the dash in the cost tables: "£1,800 – £3,000". */
+export function spaceRange(value = "") {
+  return String(value ?? "").replace(/(£[\d,.]+k?)\s*[–-]\s*(£[\d,.]+k?)/g, "$1 – $2");
+}
+
 /** Fills {variant} / {model} / {count} style placeholders. */
 export function fill(template = "", values = {}) {
   return String(template).replace(/\{(\w+)\}/g, (match, key) => (key in values ? values[key] : match));
@@ -109,7 +114,7 @@ export function pageValues(vehicle = "") {
 }
 
 /** Links inside JSON copy: body weight (the base layer sets links to 900), blue, underline on hover. */
-export const RICH_LINKS = "[&_a]:font-[inherit] [&_a]:text-[var(--color-v-blue)] hover:[&_a]:underline";
+export const RICH_LINKS = "[&_a]:[font-weight:inherit] [&_a]:text-[var(--color-v-blue)] hover:[&_a]:underline";
 
 /** JSON copy that may hold markup (links, <strong>): rendered as HTML, " - " shown as an em dash. */
 export function Rich({ html = "", as: Tag = "span", className = "" }) {

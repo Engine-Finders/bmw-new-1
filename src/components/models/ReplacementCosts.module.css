@@ -338,18 +338,20 @@
 }
 
 .pTable .tr {
-  grid-template-columns: 139fr 135fr 112fr 134fr 123fr 117fr;
-  height: calc(63 * var(--u));
+  grid-template-columns: minmax(0, 139fr) minmax(0, 135fr) minmax(0, 112fr) minmax(0, 134fr) minmax(0, 123fr) minmax(0, 117fr);
+  min-height: calc(63 * var(--u));
   font-size: calc(14.3 * var(--u));
   line-height: calc(22 * var(--u));
 }
 
 .pTable .tr:nth-child(6) {
-  height: calc(67 * var(--u));
+  min-height: calc(67 * var(--u));
 }
 
 .pTable .tr > span {
+  min-width: 0;
   border-left: 1px solid var(--r-line);
+  overflow-wrap: anywhere;
 }
 
 .pTable .tr > span:first-child {
@@ -358,7 +360,7 @@
 }
 
 .pTable .thead {
-  height: calc(60 * var(--u));
+  min-height: calc(60 * var(--u));
   font-size: calc(15.5 * var(--u));
   font-weight: 600;
   line-height: calc(22 * var(--u));
@@ -627,16 +629,21 @@
     margin: 6px auto 0;
   }
 
+  /* Every row shares the same column tracks (so the columns line up), wide enough for "Reconditioned";
+     on the narrowest phones the table scrolls sideways rather than cutting a column off. */
   .pTable {
     margin-top: 6px;
+    overflow-x: auto;
     border-radius: 8px 8px 0 0;
   }
 
   .pTable .tr,
   .pTable .tr:nth-child(6) {
+    grid-template-columns: minmax(64px, 1.1fr) minmax(50px, 0.95fr) minmax(50px, 0.95fr) minmax(80px, 1.45fr) minmax(52px, 1fr) minmax(42px, 0.8fr);
+    min-width: 342px;
     height: auto;
     min-height: 0;
-    font-size: 13px;
+    font-size: 12px;
     line-height: 1.4;
   }
 
@@ -650,7 +657,7 @@
 
   .pTable .thead {
     height: auto;
-    font-size: 13px;
+    font-size: 12px;
   }
 
   .pNote {

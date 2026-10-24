@@ -3,15 +3,15 @@
 import { useId, useRef, useState } from "react";
 import VIcon from "./VariantIcons";
 
-/** One card that opens and closes its body; the chevron sits in the header. */
-export function Disclosure({ summary, children, defaultOpen = true, className = "", headerClassName = "", bodyClassName = "", chevronClassName = "" }) {
+/** One card that opens and closes its body; the chevron sits in the header (`pointsDownWhenOpen`: down while open, right when closed). */
+export function Disclosure({ summary, children, defaultOpen = true, className = "", headerClassName = "", bodyClassName = "", chevronClassName = "", pointsDownWhenOpen = false }) {
   const [open, setOpen] = useState(defaultOpen);
   const id = useId();
   return (
     <div className={className}>
       <button type="button" aria-expanded={open} aria-controls={id} onClick={() => setOpen((value) => !value)} className={`w-full text-left ${headerClassName}`}>
         {summary}
-        <VIcon name="chevronDown" strokeWidth={2.2} className={`shrink-0 transition-transform ${open ? "rotate-180" : ""} ${chevronClassName}`} />
+        <VIcon name="chevronDown" strokeWidth={2.2} className={`shrink-0 transition-transform ${pointsDownWhenOpen ? (open ? "" : "-rotate-90") : open ? "rotate-180" : ""} ${chevronClassName}`} />
       </button>
       <div id={id} hidden={!open} className={bodyClassName}>
         {children}

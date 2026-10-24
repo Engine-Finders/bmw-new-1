@@ -9,7 +9,7 @@ Legend: DL = desktop light, DD = desktop dark, M = mobile (390). `[x]` done, `[~
 ## 1 Hero — `VariantHero.js` (Section 1.png top, Section 1-dark.png, Section 1.a-mobile.png, Section 1-mobile-dark.png)
 
 1. [x] Full-bleed background: BMW arch + skyline (light), night arch (dark) — DL DD M
-2. [~] Three-quarter car on the right (generation cut-out on the background) — DL DD M
+2. [x] Car stands on its own floor inside one hero picture, with reflection, arch and skyline (no floating cut-out) — DL DD M. `/3-series/320d` uses the reference artwork (`public/320d/hero_*.webp`, via `src/data/shared/variantHeroArt.json`); every other variant uses its generation's stage scene; 7 Series and the 2002 (no per-generation photos) use the model line-up scene
 3. [x] Outlined blue pill "BMW 320d • 1998–present • 4 Engine Generations" — DL DD M
 4. [x] H1: dark lead "BMW 320d Engine Replacement —" + blue "Compare Prices & Get Quotes" — DL DD M
 5. [x] Paragraph (M47/N47/B47 links in text colour) — DL DD; M: beside the car
@@ -62,27 +62,27 @@ Legend: DL = desktop light, DD = desktop dark, M = mobile (390). `[x]` done, `[~
 ## 3B Ready to Compare — `QuotesCta.js` (Section 2+3.png bottom, dark, section-3 Mobile.png bottom)
 
 1. [x] Rounded navy banner inside the container, night city background — DL DD M
-2. [~] Car on the right (three-quarter photo from the library) — DL DD M
+2. [x] Car stands on its own floor inside the banner picture (no cut-out): `/3-series/320d` uses `public/320d/compare_*.webp`; every other variant its generation's stage scene (line-up scene for 7 Series / 2002) — DL DD M
 3. [x] H2 "Ready to Compare?", subheading "Get Matched With a Vetted BMW Specialist →", paragraph — DL DD M
 4. [x] Green button — DL DD; M full width
 
 ## 4 Repair, Buy or Replace — `RepairBuyOrReplace.js` (Section 4.png, dark derived, Section 4-mobile.png)
 
 1. [x] H2 + 2-line paragraph — DL DD M
-2. [~] Car + engine on an angled panel top-right — DL DD; M car beside the intro
+2. [~] Car (standing on its floor, fading in from the left) + engine on an angled panel top-right — DL DD; M car beside the intro
 3. [x] Left panel: navy header "CAN IT BE REPAIRED?" with a wrench circle — DL DD M
 4. [x] Columns Problem / Repairable? / Typical Cost / When It Makes Sense; navy filled circle icons in Problem — DL DD
 5. [x] Repairable? icon + text only (green check Yes, red x Usually No, orange triangle Sometimes), cost coloured to match — DL DD M
 6. [x] Right panel: navy header "BUYING THIS 320D? CHECK THESE FIRST" with a search icon — DL DD M
 7. [x] BUY IF (green check, green heading, green bullets); AVOID IF (pale red, red x, red heading, red bullets) — DL DD M
 8. [x] Closing card (pale blue): navy shield circle, "CLOSING VERDICT" blue caps + paragraph — DL DD M
-9. [x] After a divider: tag icon in an outline circle, "Don't Guess. Compare." + text + blue button "Compare 320d engine prices before you buy →", engine with glow rings — DL DD M
+9. [x] After a divider: tag icon in an outline circle, "Don't Guess. Compare." + text + blue button "Compare 320d engine prices before you buy →", engine with glow rings — DL DD; M: closing verdict and "Don't Guess" are two separate cards
 10. [x] Trust strip: 5 items (icon + 2 lines), short dividers — DL DD M
 11. [x] M: combined "Repairable? / Typical Cost" header, cards stacked as in Section 4-mobile.png
 
 ## 5 Buying Checklist — `BuyingChecklist.js` (Section 5+6 (c).png top, dark derived, Section 5-mobile.png)
 
-1. [x] Light background with arch/skyline, car on the right — DL DD M
+1. [x] Light background with arch/skyline, car standing on its floor on the right (scene picture, fades into the page on the left and bottom) — DL DD M
 2. [x] H2 "Buying Checklist" + intro — DL DD M
 3. [x] 2 columns × 4 cards (1–4 left, 5–8 right); navy rounded tile with white glyph, bold "N. Title", description — DL DD
 4. [x] Navy "Why this matters" card under the car (shield icon, white heading + text) — DL DD M
@@ -96,7 +96,7 @@ Legend: DL = desktop light, DD = desktop dark, M = mobile (390). `[x]` done, `[~
 4. [x] Enquiries "—" over "(pattern data)", or value + blue tag; cost + blue tag — DL DD M
 5. [x] Right: "TECHNICAL SPECS" + blue caps generation label; rows icon + label | value with a vertical divider — DL DD M
 6. [~] CTA card: outlined arrow circle, white heading, subline, faded engine background — DL DD M
-7. [x] M: tabs per engine code (code + years), active tab navy-filled; card with engine image and icon rows (right-aligned values); specs card; CTA card
+7. [x] M: four tabs in one row (code + years), active tab navy-filled; card with the engine image beside the code and icon rows (right-aligned values); specs card; CTA card
 
 ## 7 Market Intelligence — `MarketIntelligence.js` (Section 7+8+9.png top, dark derived, Section 7+8-mobile.png top)
 
@@ -117,14 +117,16 @@ Legend: DL = desktop light, DD = desktop dark, M = mobile (390). `[x]` done, `[~
 
 1. [x] H2 "Why UK BMW 320d Owners Trust BMWEngines.uk" + short two-tone blue underline — DL DD M
 2. [x] 3 cards: blue filled circle (shield / scales / truck), title, text — DL DD M
-3. [x] CTA banner: car on light city/arch background (left), heading + text + green button (centre), engine (right) — DL DD
-4. [x] M: heading/text/button left, car over engine on the right
+3. [x] CTA banner: car on its own floor, nose pointing at the text (left, fading into the banner), heading + text + green button (centre), engine (right) — DL DD. The car picture is mirrored (number plate re-pasted so it still reads correctly): `public/320d/s9_*.webp`, `public/generation/stage-r/*`, `public/model/hero/*-scene-r.webp`
+4. [x] M: heading/text/button left, car top right with the engine overlapping below it
 5. [x] Trust row: 5 items (icon, bold label, caption), short dividers — DL DD
 6. [x] M: trust row omitted (not in Section 9-mobile.png)
 
 ## Deviations (`[~]`)
 
-- 1.2, 3B.2, 4.2, 5.1, 9.3: cars come from the existing photo library (`withVariantPageImages`), three-quarter view, so the number plate is the photo's own (e.g. "G20 330D"), not "320d".
+- 1.2, 3B.2, 4.2, 5.1, 9.3: cars are never cut-outs on a separate background. `/3-series/320d` uses the client's artwork (`public/320d/hero_*`, `compare_*`; see `src/data/shared/variantHeroArt.json`); every other variant uses its generation's stage scene (car already standing on its floor, light + dark) or, for 7 Series and the 2002, the model line-up scene with the left cars faded out. Number plates are therefore each photo's own, not always "320d".
+- 9.3: `public/320d/trust_*.webp` (client file) has a smeared car and plate, so it is not used; Section 9 composes the same scene picture with the variant's engine cut-out instead.
+- 6: three alternate desktop layouts exist (`Section 5+6.png`, `(b)`, `(c)`). The built layout follows `Section 5+6.png` because `Section 6-mobilee.png` and the page copy ("Compare 320d engine prices for your BMW") match it; `(b)`/`(c)` use a specs strip and a "Need an engine for your 320d?" card instead.
 - 4.2: there is no engine-bay photo asset; the angled panel shows the variant's engine cut-out on a navy panel.
 - 6.6: the faded engine background uses the variant's engine cut-out (luminosity blend), not a dedicated engine-bay photo.
 - 7.4: the repo has boundary data for England's regions only; Scotland, Wales and Northern Ireland are simplified outlines (`src/data/shared/ukDemandMap.json`, built once at design time). Shading ranks the named regions (1st darkest).

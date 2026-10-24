@@ -1,6 +1,7 @@
 import Link from "next/link";
 import VIcon from "./VariantIcons";
 import { Tabs } from "./VariantToggles";
+import { variantFont } from "./variantFont";
 import { Rich, TONE_VAR, byKeyword, dash, fill, pageValues, plain, stripMarker, ui, urgencyTone } from "./variantUi";
 
 const copy = ui.commonProblems;
@@ -21,7 +22,7 @@ function shortName(problem) {
 function ToneCircle({ tone, icon, className = "h-12 w-12" }) {
   return (
     <span className={`flex shrink-0 items-center justify-center rounded-full text-white ${className}`} style={{ background: TONE_VAR[tone] }}>
-      <VIcon name={icon} className="h-[50%] w-[50%]" strokeWidth={2} />
+      <VIcon name={icon} className="h-[54%] w-[54%]" strokeWidth={2} />
     </span>
   );
 }
@@ -56,17 +57,17 @@ function Card({ problem, index }) {
   const number = problem.id ?? index + 1;
   return (
     <article
-      className="flex h-full flex-col rounded-[10px] border border-[var(--color-v-border)] border-l-[3px] bg-[var(--color-v-panel)] p-5 shadow-[0_6px_18px_var(--color-v-shadow)]"
+      className="flex h-full flex-col rounded-[8px] border border-[var(--color-v-border)] border-l-[3px] bg-[var(--color-v-panel)] p-5 text-[clamp(14px,1.15vw,16px)] leading-[1.4] shadow-[0_6px_18px_var(--color-v-shadow)]"
       style={{ borderLeftColor: TONE_VAR[tone] }}
     >
       <div className="flex items-center gap-4">
-        <ToneCircle tone={tone} icon={icon} />
-        <h3 className="t-h6 text-[var(--color-v-text)]">
+        <ToneCircle tone={tone} icon={icon} className="h-12 w-12 xl:h-14 xl:w-14" />
+        <h3 className="text-[clamp(15px,1.3vw,18px)] font-semibold leading-snug text-[var(--color-v-text)]">
           {number}. <Rich html={splitTitle(problem.title).name} />
           {splitTitle(problem.title).detail ? <Rich html={splitTitle(problem.title).detail} className="block" /> : null}
         </h3>
       </div>
-      <ul className="t-body mt-4 flex flex-col gap-2.5 text-[var(--color-v-text)]">
+      <ul className="mt-4 flex flex-col gap-2 text-[var(--color-v-text)]">
         {ROWS.filter((key) => problem[key]).map((key) => (
           <li key={key} className="flex gap-3">
             <VIcon name={copy.rowIcons[key]} className="mt-0.5 h-[18px] w-[18px] shrink-0 text-[var(--color-v-muted)]" />
@@ -85,12 +86,12 @@ function Card({ problem, index }) {
         ) : null}
       </ul>
       {problem.recommendation ? (
-        <div className="t-body mt-4 text-[var(--color-v-text)]">
+        <div className="mt-4 text-[var(--color-v-text)]">
           <p className="font-semibold">{copy.labels.recommendation}</p>
           <Rich as="p" html={problem.recommendation} className="mt-0.5" />
         </div>
       ) : null}
-      <FailureLink link={problem.failureLink} className="mt-auto pt-5" />
+      <FailureLink link={problem.failureLink} className="mt-auto pt-5 !text-[length:inherit]" />
     </article>
   );
 }
@@ -165,7 +166,7 @@ export default function CommonProblems({ data, vehicle }) {
       activeStyle: { color: TONE_VAR[tone], borderBottomColor: TONE_VAR[tone] },
       label: (
         <>
-          <ToneCircle tone={tone} icon={byKeyword(copy.problemIcons, problem.title, "icon", "wrench")} className="h-9 w-9 sm:h-10 sm:w-10" />
+          <ToneCircle tone={tone} icon={byKeyword(copy.problemIcons, problem.title, "icon", "wrench")} className="h-8 w-8 shrink-0 sm:h-10 sm:w-10" />
           <span>{shortName(problem)}</span>
         </>
       ),
@@ -174,16 +175,16 @@ export default function CommonProblems({ data, vehicle }) {
   });
 
   return (
-    <section className="section-y bg-[var(--color-v-page)] text-[var(--color-v-text)]">
+    <section className={`${variantFont.className} section-y lg:py-10 bg-[var(--color-v-page)] text-[var(--color-v-text)]`}>
       <div className="site-container">
-        <h2 className="t-h2">{h2}</h2>
+        <h2 className="text-[24px] font-semibold leading-tight tracking-[-0.02em] lg:text-[clamp(28px,2.85vw,40px)]">{h2}</h2>
 
         <div className="mt-6 lg:hidden">
           <Tabs
             tabs={tabs}
             label={h2}
             listClassName="flex overflow-x-auto rounded-[10px] border border-[var(--color-v-border)] bg-[var(--color-v-panel)]"
-            tabClassName="t-body flex min-w-[33.333%] flex-1 shrink-0 items-center justify-center gap-2 border-b-[3px] px-2 py-3 text-left font-semibold leading-tight [overflow-wrap:anywhere] sm:px-3 [&+&]:border-l [&+&]:border-l-[var(--color-v-border)]"
+            tabClassName="t-label flex min-w-[33.333%] flex-1 shrink-0 items-center justify-center gap-1.5 border-b-[3px] px-1.5 py-3 text-left font-semibold leading-tight [overflow-wrap:anywhere] sm:gap-2 sm:px-3 [&+&]:border-l [&+&]:border-l-[var(--color-v-border)]"
             inactiveClassName="border-b-transparent text-[var(--color-v-text)]"
             panelClassName="mt-4"
           />

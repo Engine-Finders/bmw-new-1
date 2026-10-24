@@ -416,31 +416,11 @@
 }
 
 /*
- * Phones (section up to 700px wide): at reference scale the copy would be ~7px, so the cards
- * reflow instead - photo, badge, name and stars in a row, the verdict under them at full width -
- * at sizes that read comfortably on a phone. The reference line breaks are dropped so text wraps.
+ * Buyer cards on tablets and phones (section up to 1023px wide; the table takes over from 1024px): photo, badge,
+ * name and stars in a row, the verdict under them at full width, wrapping to the card.
  */
-@container (max-width: 700px) {
-  .panel {
-    padding: 36px 16px 20px;
-  }
-
-  .title {
-    margin: 0;
-    font-size: var(--fs-h2);
-    line-height: 1.16;
-  }
-
-  .copy {
-    margin: 10px 0 0;
-    font-size: 16px;
-    line-height: 1.55;
-    letter-spacing: -0.01em;
-  }
-
-  .copy br,
-  .cardText br,
-  .noteText br {
+@container (max-width: 1023px) {
+  .cardText br {
     display: none;
   }
 
@@ -452,7 +432,7 @@
   .card,
   .card:nth-child(n) {
     display: grid;
-    grid-template-columns: minmax(0, 42%) auto minmax(0, 1fr);
+    grid-template-columns: minmax(0, min(42%, 260px)) auto minmax(0, 1fr);
     align-items: center;
     column-gap: 10px;
     height: auto;
@@ -526,6 +506,35 @@
     letter-spacing: -0.005em;
     white-space: normal;
     transform: none;
+  }
+}
+
+/*
+ * Phones (section up to 700px wide): at reference scale the copy would be ~7px, so the cards
+ * reflow instead - photo, badge, name and stars in a row, the verdict under them at full width -
+ * at sizes that read comfortably on a phone. The reference line breaks are dropped so text wraps.
+ */
+@container (max-width: 700px) {
+  .panel {
+    padding: 36px 16px 20px;
+  }
+
+  .title {
+    margin: 0;
+    font-size: var(--fs-h2);
+    line-height: 1.16;
+  }
+
+  .copy {
+    margin: 10px 0 0;
+    font-size: 16px;
+    line-height: 1.55;
+    letter-spacing: -0.01em;
+  }
+
+  .copy br,
+  .noteText br {
+    display: none;
   }
 
   .note {
@@ -912,18 +921,27 @@
   }
 }
 
-/* Note bar: the text wraps beside the CTA instead of running under it (any note length). */
-@media (min-width: 1024px) {
+/* Note bar: icon | text | CTA in one row, so the text wraps beside the CTA instead of running under it (any note length). */
+@container (min-width: 701px) {
   .note {
+    display: flex;
+    align-items: center;
+    gap: 16px;
     height: auto;
     min-height: calc(77 * var(--u));
-    gap: 16px;
-    padding-block: 12px;
+    padding: 12px calc(17 * var(--u)) 12px calc(18 * var(--u));
+  }
+
+  .noteIcon {
+    position: static;
+    flex: none;
   }
 
   .noteText {
+    position: static;
     flex: 1;
     min-width: 0;
+    transform: none;
     white-space: normal;
   }
 
@@ -932,6 +950,7 @@
   }
 
   .cta {
-    flex-shrink: 0;
+    position: static;
+    flex: none;
   }
 }

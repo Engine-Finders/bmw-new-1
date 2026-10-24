@@ -141,8 +141,10 @@ const LINE = {
   ),
   fan: (
     <>
-      <path d="M10.827 16.379a6.082 6.082 0 0 1-8.618-7.002l5.412 1.45a6.082 6.082 0 0 1 7.002-8.618l-1.45 5.412a6.082 6.082 0 0 1 8.618 7.002l-5.412-1.45a6.082 6.082 0 0 1-7.002 8.618l1.45-5.412Z" />
-      <path d="M12 12v.01" />
+      {[0, 60, 120, 180, 240, 300].map((angle) => (
+        <path key={angle} d="M12 9.4c0-3.4 1.9-5.8 4.6-6.4-.3 2.9-1.5 5.2-4.6 6.4Z" transform={`rotate(${angle} 12 12)`} />
+      ))}
+      <circle cx="12" cy="12" r="1.7" />
     </>
   ),
   thermometer: (
@@ -225,6 +227,14 @@ const LINE = {
       <path d="M3 9h18M3 15h18" />
     </>
   ),
+  coolant: (
+    <>
+      <rect x="4" y="6" width="16" height="14" rx="2.5" />
+      <path d="M9 6V3.5h6V6" />
+      <path d="M7.5 12c1.2-1 2.2-1 3.5 0s2.3 1 3.5 0 2.2-1 3 0" />
+      <path d="M7.5 16c1.2-1 2.2-1 3.5 0s2.3 1 3.5 0 2.2-1 3 0" />
+    </>
+  ),
   pulse: <path d="M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2" />,
   fileText: (
     <>
@@ -253,6 +263,37 @@ const LINE = {
     <>
       <rect x="3" y="3" width="18" height="18" rx="3" />
       <path d="M8 8h.01M12 8h.01M16 8h.01M8 12h.01M12 12h.01M16 12h.01M8 16h.01M12 16h.01M16 16h.01" strokeWidth="2.6" />
+    </>
+  ),
+  ear: (
+    <>
+      <path d="M6 8.5a6 6 0 1 1 12 0c0 3-2 4-3.2 5.3-1 1.1-1 2.4-1.6 3.6A3 3 0 0 1 8 16" />
+      <path d="M9 9a3 3 0 0 1 6 0c0 1.6-1.6 2-1.6 3.3" />
+      <path d="M19.5 7.5c.6.9.9 1.9.9 3s-.3 2.1-.9 3M21.8 6c.9 1.3 1.4 2.9 1.4 4.5S22.7 13.7 21.8 15" />
+    </>
+  ),
+  clipboardList: (
+    <>
+      <rect x="8" y="2" width="8" height="4" rx="1" />
+      <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" />
+      <path d="m7.5 11 1 1 2-2M7.5 16l1 1 2-2M13 11h4M13 16h4" />
+    </>
+  ),
+  dpfFilter: (
+    <>
+      <rect x="3" y="7" width="18" height="10" rx="4" />
+      <path d="M1.5 12H3M21 12h1.5" />
+      <path d="M7 10h10M7 12h10M7 14h10" strokeWidth="1.2" />
+      <path d="M9 7v10M12 7v10M15 7v10" strokeWidth="1.2" />
+    </>
+  ),
+  clipboardSearch: (
+    <>
+      <rect x="7" y="2" width="8" height="4" rx="1" />
+      <path d="M15 4h2a2 2 0 0 1 2 2v4M11 22H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" />
+      <path d="M7 11h5M7 15h3" />
+      <circle cx="16.5" cy="16.5" r="3.5" />
+      <path d="m19 19 2.5 2.5" />
     </>
   ),
   oilCan: (
@@ -357,6 +398,25 @@ const SOLID = {
     </>
   ),
   star: <path d={STAR} fill="currentColor" stroke="currentColor" />,
+  gear: (
+    <>
+      <path
+        fillRule="evenodd"
+        d="M12 5a7 7 0 1 0 0 14 7 7 0 0 0 0-14zm0 4.3a2.7 2.7 0 1 1 0 5.4 2.7 2.7 0 0 1 0-5.4z"
+        fill="currentColor"
+        stroke="none"
+      />
+      {[0, 45, 90, 135, 180, 225, 270, 315].map((angle) => (
+        <rect key={angle} x="10.3" y="1.4" width="3.4" height="5.2" rx="1" transform={`rotate(${angle} 12 12)`} fill="currentColor" stroke="none" />
+      ))}
+    </>
+  ),
+  flask: (
+    <>
+      <path d="M9 2.5h6a.9.9 0 0 1 0 1.8h-.8v4.9l4.9 8.3A2.2 2.2 0 0 1 17.2 21H6.8a2.2 2.2 0 0 1-1.9-3.5l4.9-8.3V4.3H9a.9.9 0 0 1 0-1.8z" fill="currentColor" stroke="none" />
+      <path d="M8.2 15.2h7.6" style={{ stroke: "var(--color-v-blue-btn)" }} strokeWidth="1.6" />
+    </>
+  ),
 };
 
 export default function VIcon({ name, solid = false, className = "h-5 w-5", strokeWidth = 1.8, style }) {

@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useLayoutEffect, useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { Inter } from "next/font/google";
@@ -42,14 +42,12 @@ function cardView(card, modelLabel) {
     code: card.code || codeFromTitle(card.title, modelLabel),
     years: card.years || meta.years,
     engineLines: card.engineLines || (meta.engines ? [meta.engines] : []),
-    enginesMobile: card.enginesMobile || meta.engines,
     badgeLines: card.badgeLines || (badgeText ? [badgeText] : []),
-    badgeMobile: card.badgeMobile || badgeText,
     tag,
     rating: card.rating || "",
     verdictLabel: card.verdictLabel || "Our Verdict:",
     verdict: String(card.verdict || ""),
-    images: card.images || (card.image ? { light: card.image, dark: card.image, phone: card.image } : {}),
+    images: card.images || (card.image ? { light: card.image, dark: card.image } : {}),
     cta: card.cta || {},
   };
 }
@@ -114,6 +112,14 @@ const ICONS = {
     </g>
   ),
   star: <path d="M12 2.6l2.85 6.05 6.65.8-4.9 4.55 1.25 6.6L12 17.35 6.15 20.6l1.25-6.6-4.9-4.55 6.65-.8z" fill="currentColor" />,
+  car: (
+    <g fill="none" stroke="currentColor" strokeWidth="1.3" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M2.5 15.5v-3l1.9-4a2 2 0 0 1 1.8-1.1h11.6a2 2 0 0 1 1.8 1.1l1.9 4v3" />
+      <path d="M2.5 15.5h19M5.2 8.5l1.1 3.5h11.4l1.1-3.5M12 8.2V12" />
+      <circle cx="7" cy="15.8" r="1.9" />
+      <circle cx="17" cy="15.8" r="1.9" />
+    </g>
+  ),
   sun: (
     <g fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round">
       <circle cx="12" cy="12" r="4" fill="currentColor" />
@@ -130,25 +136,28 @@ function Icon({ name, className }) {
   );
 }
 
-function CardImage({ images, isDark, phone = false, alt }) {
-  const src = phone ? (isDark ? images.dark : images.phone) : isDark ? images.dark : images.light;
-  if (!src) return null;
-  return <Image src={src} alt={alt} fill className={s.carImg} sizes={phone ? "(max-width: 1023px) 50vw, 1px" : "(min-width: 1024px) 14vw, 1px"} />;
+function CardImage({ images, isDark, alt }) {
+  const src = isDark ? images.dark : images.light;
+  if (!src) {
+    // No photo of this generation yet: a car mark keeps the slot, instead of another generation's photo.
+    return (
+      <span className={s.carMark}>
+        <Icon name="car" className={s.carMarkIcon} />
+      </span>
+    );
+  }
+  return <Image src={src} alt={alt} fill className={s.carImg} sizes="(min-width: 1024px) 14vw, 40vw" />;
 }
 
-function BadgeBlock({ lines, tag, mobile, mobileText }) {
+function BadgeBlock({ lines, tag }) {
   if (!lines.length && !tag) return null;
   return (
     <div className={s.badgeBlock}>
-      {mobile ? (
-        mobileText ? <p className={s.badgeLine}>{mobileText}</p> : null
-      ) : (
-        lines.map((line) => (
-          <p key={line} className={s.badgeLine}>
-            {line}
-          </p>
-        ))
-      )}
+      {lines.map((line) => (
+        <p key={line} className={s.badgeLine}>
+          {line}
+        </p>
+      ))}
       {tag ? <p className={s.badgeTag}>{tag}</p> : null}
     </div>
   );
@@ -158,11 +167,13 @@ function ctaLabel(cta, isDark) {
   return String((isDark && cta.labelDark) || cta.label || "").replace(/\s*(?:→|â†’)\s*$/, "");
 }
 
-// Desktop card: every card starts collapsed; the header toggles it open to show the verdict
-// inside the card (same behaviour as the generation cards on the other model pages).
-function DesktopCard({ card, index, isDark }) {
+// One card for every screen size. Collapsed it shows only: model name, generation, years, engine bullets,
+// car photo, star rating and the Explore button, in that order. The header toggles the rest open
+// (enquiry count and our verdict), and closing it again hides them.
+function GenerationCard({ card, index, isDark }) {
   const [open, setOpen] = useState(false);
   const label = ctaLabel(card.cta, isDark);
+  const hasDetails = card.badgeLines.length > 0 || card.tag || card.verdict;
   return (
     <article className={`${s.card} ${open ? s.cardOpen : ""}`}>
       <button type="button" className={s.cardHead} aria-expanded={open} onClick={() => setOpen((v) => !v)}>
@@ -171,21 +182,23 @@ function DesktopCard({ card, index, isDark }) {
         <Chevron up={open} className={s.headChevron} />
       </button>
       <h3 className={s.code} dangerouslySetInnerHTML={{ __html: card.code }} />
-      <div className={s.meta}>
-        <BadgeBlock lines={card.badgeLines} tag={card.tag} />
-        {card.years ? <p className={s.years}>{card.years}</p> : null}
-        {card.engineLines.map((line) => (
-          <p key={line} className={s.engines} dangerouslySetInnerHTML={{ __html: line }} />
-        ))}
-      </div>
+      {card.years ? <p className={s.years}>{card.years}</p> : null}
+      {card.engineLines.map((line) => (
+        <p key={line} className={s.engines} dangerouslySetInnerHTML={{ __html: line }} />
+      ))}
       <div className={s.car}>
         <CardImage images={card.images} isDark={isDark} alt={`BMW ${card.code}`} />
       </div>
       <Stars value={card.rating} className={s.cardStars} />
-      {open && card.verdict ? (
-        <div className={s.verdict}>
-          <p className={s.verdictLabel}>{card.verdictLabel}</p>
-          <p className={s.verdictText} dangerouslySetInnerHTML={{ __html: card.verdict }} />
+      {open && hasDetails ? (
+        <div className={s.details}>
+          <BadgeBlock lines={card.badgeLines} tag={card.tag} />
+          {card.verdict ? (
+            <div className={s.verdict}>
+              <p className={s.verdictLabel}>{card.verdictLabel}</p>
+              <p className={s.verdictText} dangerouslySetInnerHTML={{ __html: card.verdict }} />
+            </div>
+          ) : null}
         </div>
       ) : null}
       <Link href={card.cta.href || "#"} className={s.cta}>
@@ -196,57 +209,46 @@ function DesktopCard({ card, index, isDark }) {
   );
 }
 
-// Phone accordion row: open shows the big car, button, stars and verdict.
-function PhoneCard({ card, index, open, onToggle, isDark }) {
-  const label = ctaLabel(card.cta, isDark);
+const MAX_VISIBLE = 6;
+
+// Up to six cards in one row on desktop. With more than six, the grid is only as tall as its first row and
+// scrolls vertically (scrollbar on the right); the CSS reads that height from --row1.
+function CardGrid({ cards, isDark }) {
+  const grid = useRef(null);
+  const [rowHeight, setRowHeight] = useState(null);
+  const scroll = cards.length > MAX_VISIBLE;
+
+  useLayoutEffect(() => {
+    const el = grid.current;
+    if (!scroll || !el) return undefined;
+    let frame = 0;
+    const measure = () => {
+      cancelAnimationFrame(frame);
+      frame = requestAnimationFrame(() => {
+        const kids = [...el.children];
+        const firstTop = kids[0].offsetTop;
+        const bottom = Math.max(...kids.filter((kid) => kid.offsetTop === firstTop).map((kid) => kid.offsetTop + kid.offsetHeight));
+        setRowHeight(Math.ceil(bottom + (parseFloat(getComputedStyle(el).paddingBottom) || 0)));
+      });
+    };
+    measure();
+    const observer = new ResizeObserver(measure);
+    observer.observe(el);
+    [...el.children].forEach((kid) => observer.observe(kid));
+    return () => {
+      cancelAnimationFrame(frame);
+      observer.disconnect();
+    };
+  }, [scroll, cards.length]);
+
+  const style = { "--cols": Math.min(MAX_VISIBLE, Math.max(4, cards.length)) };
+  if (rowHeight) style["--row1"] = `${rowHeight}px`;
   return (
-    <article className={`${s.pCard} ${open ? s.pOpen : ""}`}>
-      <button type="button" className={s.pHead} aria-expanded={open} onClick={onToggle}>
-        <span className={s.num}>{index + 1}</span>
-        <span className={s.pText}>
-          <span className={s.cardLabel}>{card.label}</span>
-          <span className={s.code} dangerouslySetInnerHTML={{ __html: card.code }} />
-          {open ? (
-            <>
-              {card.years ? <span className={s.years}>{card.years}</span> : null}
-              {card.enginesMobile ? <span className={s.engines} dangerouslySetInnerHTML={{ __html: card.enginesMobile }} /> : null}
-            </>
-          ) : (
-            <>
-              <BadgeBlock lines={card.badgeLines} tag={card.tag} mobile mobileText={card.badgeMobile} />
-              <span className={s.pMeta}>
-                {card.years}
-                {card.enginesMobile ? <span className={s.pEngines} dangerouslySetInnerHTML={{ __html: card.enginesMobile }} /> : null}
-              </span>
-            </>
-          )}
-        </span>
-        {!open ? (
-          <span className={s.pThumb}>
-            <CardImage images={card.images} isDark={isDark} phone alt={`BMW ${card.code}`} />
-          </span>
-        ) : null}
-        <Chevron up={open} className={s.pChevron} />
-      </button>
-      {open ? (
-        <div className={s.pBody}>
-          <div className={s.pCar}>
-            <CardImage images={card.images} isDark={isDark} phone alt={`BMW ${card.code}`} />
-          </div>
-          <Link href={card.cta.href || "#"} className={s.pCta}>
-            <span dangerouslySetInnerHTML={{ __html: label }} />
-            <Arrow className={s.pCtaIcon} />
-          </Link>
-          <Stars value={card.rating} className={s.pStars} />
-          {card.verdict ? (
-            <div className={s.pVerdict}>
-              <p className={s.verdictLabel}>{card.verdictLabel}</p>
-              <p className={s.verdictText} dangerouslySetInnerHTML={{ __html: card.verdict }} />
-            </div>
-          ) : null}
-        </div>
-      ) : null}
-    </article>
+    <div ref={grid} className={s.cards} data-scroll={scroll ? "true" : undefined} style={style}>
+      {cards.map((card, index) => (
+        <GenerationCard key={`${card.code}-${index}`} card={card} index={index} isDark={isDark} />
+      ))}
+    </div>
   );
 }
 
@@ -332,7 +334,6 @@ export default function GenerationsGrid({ data }) {
 
 function GenerationsReference({ data }) {
   const { theme } = useTheme();
-  const [openPhone, setOpenPhone] = useState(-1);
 
   const isDark = theme === "dark";
   const title = splitTitle(data.h2);
@@ -365,24 +366,7 @@ function GenerationsReference({ data }) {
             ) : null}
           </div>
 
-          <div className={`${s.cards} ${s.deskOnly}`} style={{ "--count": cards.length }}>
-            {cards.map((card, index) => (
-              <DesktopCard key={`${card.code}-${index}`} card={card} index={index} isDark={isDark} />
-            ))}
-          </div>
-
-          <div className={`${s.pCards} ${s.phoneOnly}`}>
-            {cards.map((card, index) => (
-              <PhoneCard
-                key={`${card.code}-${index}`}
-                card={card}
-                index={index}
-                isDark={isDark}
-                open={openPhone === index}
-                onToggle={() => setOpenPhone(openPhone === index ? -1 : index)}
-              />
-            ))}
-          </div>
+          <CardGrid cards={cards} isDark={isDark} />
 
           {table?.rows?.length || link ? (
             <div className={s.compare}>

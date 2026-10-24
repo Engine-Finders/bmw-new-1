@@ -3,13 +3,14 @@ import {
   carModelFor,
   createCarPicker,
   engineImageFor,
-  generationHeroCar,
   generationHeroFor,
   heroBackground,
   heroCarFor,
   modelEngineImage,
 } from "@/components/shared/carImage";
 import carImages from "@/data/shared/carImages.json";
+import variantHeroArt from "@/data/shared/variantHeroArt.json";
+import variantHeroScenes from "@/data/shared/variantHeroScenes.json";
 import { partImageFor } from "@/components/shared/partImage";
 
 // Server-side: give every car slot on a page its own photo before the page renders, so
@@ -130,7 +131,9 @@ export function withModelPageImages(data) {
 function generationHero(key, model) {
   const photo = generationHeroFor(key);
   if (photo) return { heroScene: photo.scene, used: [photo.car] };
-  return { heroScene: heroCarFor(model)?.scene || null, used: [] };
+  // No photo of this generation: the model's line-up scene (several cars), flagged so pages can keep it off the text.
+  const lineup = heroCarFor(model)?.scene;
+  return { heroScene: lineup ? { ...lineup, lineup: true } : null, used: [] };
 }
 
 // First engine photo matching any of the texts (engine codes, titles), or null when none does.
@@ -211,7 +214,7 @@ export function withGenerationPageImages(data) {
 }
 
 /** Variant page (/3-series/320d, ...): hero, era map and banners get photos of that car, none shown twice. */
-export function withVariantPageImages(data, parentSlug = "") {
+export function withVariantPageImages(data, parentSlug = "", slug = "") {
   if (!data) return data;
   const pill = stripTags(data.hero?.tagPill);
   const firstEra = data.eraMap?.rows?.[0] || {};
@@ -230,30 +233,57 @@ export function withVariantPageImages(data, parentSlug = "") {
   const engineImage = firstEngineImage(pill, ...engineCodes, ...eraEngines);
   const out = { ...data };
 
-  // Variant hero: BMW's own arch + skyline background with this generation's cut-out car on it.
-  const heroCar = generationHeroCar(key);
-  const background = heroCar ? { light: heroBackground(false), dark: heroBackground(true) } : null;
-  if (out.hero) out.hero = { ...out.hero, ...hero, heroCar, background, vehicle };
+  // Variant hero: the page's own artwork when it has one, else its generation's stage scene
+  // (the car already standing on its floor, so it never floats over a separate background).
+  // Every other variant: the reference hero scene with this variant's own car standing in it (hero only).
+  const heroArt = variantHeroArt[`${parentSlug}/${slug}`] || null;
+  const heroSceneArt = heroArt || variantHeroScenes[`${parentSlug}/${slug}`] || null;
+  if (out.hero) out.hero = { ...out.hero, ...hero, heroArt: heroSceneArt, vehicle };
+
+  // The car sections (Ready to Compare, Repair/Buy/Replace, Buying Checklist, Trust) show the same grounded scene
+  // as the hero (car standing on its floor) instead of a cut-out pasted on a background.
+  const stage = hero.heroScene;
+  const scene = heroArt
+    ? { light: heroArt.light, dark: heroArt.dark }
+    : stage
+      ? {
+          light: { src: stage.src, width: stage.width, height: stage.height, lineup: stage.lineup },
+          dark: { src: stage.darkSrc || stage.src, width: stage.width, height: stage.height, lineup: stage.lineup },
+        }
+      : null;
+  const banners = heroArt?.banners || null;
+  // The final CTA shows the car on the left, nose pointing at the text, so it uses the mirrored scene
+  // (number plate re-pasted so it still reads correctly); phones keep the unmirrored one.
+  const mirrorSrc = (src) =>
+    src?.startsWith("/generation/stage/") ? src.replace("/generation/stage/", "/generation/stage-r/") : src?.replace(/-scene\.webp$/, "-scene-r.webp");
+  const trustScene = heroArt?.trustScene
+    ? heroArt.trustScene
+    : stage
+      ? {
+          light: { src: mirrorSrc(stage.src), width: stage.width, height: stage.height, lineup: stage.lineup },
+          dark: { src: mirrorSrc(stage.darkSrc || stage.src), width: stage.width, height: stage.height, lineup: stage.lineup },
+        }
+      : null;
 
   if (out.eraMap?.rows) {
     const images = pick(out.eraMap.rows.map((row) => [pill.split("•")[0], parent, stripTags(row.generation), stripTags(row.years)]));
-    out.eraMap = { ...out.eraMap, vehicle, rows: out.eraMap.rows.map((row, index) => ({ ...row, image: images[index] })) };
+    const eraCars = heroArt?.eraCars || {};
+    const pinned = (row) => {
+      const file = eraCars[(stripTags(row.generation).match(/\b[efgu]\d{2}\b/i)?.[0] || "").toUpperCase()];
+      return file ? `${carImages.basePath}${file}` : null;
+    };
+    out.eraMap = { ...out.eraMap, vehicle, rows: out.eraMap.rows.map((row, index) => ({ ...row, image: pinned(row) || images[index] })) };
   }
 
-  if (out.quotesCta) {
-    const [image] = pick([hints]);
-    out.quotesCta = { ...out.quotesCta, image, background: heroBackground(true), vehicle };
-  }
+  // Ready to Compare: the hero's own scene, so the banner shows this variant's exact car like the reference.
+  const compareScene = heroSceneArt ? { light: heroSceneArt.light, dark: heroSceneArt.dark } : scene;
+  if (out.quotesCta) out.quotesCta = { ...out.quotesCta, scene: compareScene, banner: banners?.compare || null, vehicle };
 
-  if (out.repairBuyOrReplace) {
-    const [image] = pick([hints]);
-    out.repairBuyOrReplace = { ...out.repairBuyOrReplace, image, engineImage, vehicle };
-  }
+  // Repair, Buy, or Replace: this variant's exact car (the hero scene), as in the reference.
+  if (out.repairBuyOrReplace) out.repairBuyOrReplace = { ...out.repairBuyOrReplace, scene: compareScene, engineImage, vehicle };
 
-  if (out.buyingChecklist) {
-    const [image] = pick([hints]);
-    out.buyingChecklist = { ...out.buyingChecklist, image, background: { light: heroBackground(false), dark: heroBackground(true) }, vehicle };
-  }
+  // Buying Checklist: this variant's exact car (the hero scene), as in the reference.
+  if (out.buyingChecklist) out.buyingChecklist = { ...out.buyingChecklist, scene: compareScene, vehicle };
 
   if (out.engineCodes?.rows) {
     out.engineCodes = {
@@ -263,10 +293,7 @@ export function withVariantPageImages(data, parentSlug = "") {
     };
   }
 
-  if (out.trustCta) {
-    const [image] = pick([hints]);
-    out.trustCta = { ...out.trustCta, image, engineImage, background: { light: heroBackground(false), dark: heroBackground(true) }, vehicle };
-  }
+  if (out.trustCta) out.trustCta = { ...out.trustCta, scene, trustScene, engineImage, vehicle };
 
   return out;
 }

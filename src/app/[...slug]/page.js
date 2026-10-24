@@ -227,7 +227,7 @@ export default async function CatchAllPage({ params }) {
   }
 
   if (type === "variants") {
-    data = withVariantPageImages(data, entry.parent);
+    data = withVariantPageImages(data, entry.parent, entry.slug);
     return (
       // Long engine codes and data tags break inside their cell instead of pushing it wider.
       <main className="flex flex-col overflow-x-hidden [overflow-wrap:break-word]">

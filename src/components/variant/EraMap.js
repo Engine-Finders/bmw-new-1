@@ -4,7 +4,7 @@ import { Disclosure } from "./VariantToggles";
 import { RICH_LINKS, countWord, dash, fill, plain, splitTags, parseStars, titleCaseShouting, ui } from "./variantUi";
 
 const copy = ui.eraMap;
-const LINKS = "[&_a]:font-[inherit] [&_a]:text-inherit hover:[&_a]:underline";
+const LINKS = "[&_a]:[font-weight:inherit] [&_a]:text-inherit hover:[&_a]:underline";
 
 /** Blue tag line: "[BMW-VERIFIED]". */
 export function TagLine({ tags = [], className = "" }) {
@@ -12,6 +12,26 @@ export function TagLine({ tags = [], className = "" }) {
   return (
     <span className={`t-label block text-[var(--color-v-blue)] ${className}`}>
       {tags.map((tag) => `[${tag}]`).join(" ")}
+    </span>
+  );
+}
+
+// Status words under a figure. Desktop keeps the bracketed tags and drops "NEWLY ASSIGNED"; phones show
+// "NEWLY ASSIGNED" (grey) and "PLACEHOLDER" (blue) as bare capitals, other tags bracketed.
+function StatusTags({ tags = [], mobile = false, className = "" }) {
+  if (!mobile) return <TagLine tags={tags.filter((tag) => !/^newly assigned$/i.test(tag))} className={className} />;
+  if (!tags.length) return null;
+  return (
+    <span className={`t-label block ${className}`}>
+      {tags.map((tag, index) => {
+        const bare = /^(newly assigned|placeholder)$/i.test(tag);
+        const grey = /^newly assigned$/i.test(tag);
+        return (
+          <span key={tag} className={`${index ? "ml-2" : ""} ${grey ? "uppercase text-[var(--color-v-muted)]" : "text-[var(--color-v-blue)]"} ${bare ? "uppercase" : ""}`}>
+            {bare ? tag : `[${tag}]`}
+          </span>
+        );
+      })}
     </span>
   );
 }
@@ -37,14 +57,14 @@ function starColor(rating) {
 }
 
 // "★★★☆☆ pre-facelift / ★★★★☆ post-facelift [TAG]" -> one star row per part, divided.
-function Reliability({ value, align = "center", starClass = "h-5 w-5" }) {
+function Reliability({ value, align = "center", starClass = "h-5 w-5", mobile = false }) {
   const { main, tags } = splitTags(value);
   const parts = main.split(/\s+\/\s+(?=[★☆])/).map(parseStars).filter(Boolean);
   if (!parts.length) {
     return (
       <span className={`block ${align === "center" ? "text-center" : "text-left"}`}>
         <span className="block" dangerouslySetInnerHTML={{ __html: main }} />
-        <TagLine tags={tags} />
+        <StatusTags tags={tags} mobile={mobile} />
       </span>
     );
   }
@@ -56,13 +76,13 @@ function Reliability({ value, align = "center", starClass = "h-5 w-5" }) {
           {part.caption ? <span className="t-label text-[var(--color-v-muted)]">{part.caption}</span> : null}
         </span>
       ))}
-      <TagLine tags={tags} />
+      <StatusTags tags={parts.length > 1 ? tags.filter((tag) => !/^newly assigned$/i.test(tag)) : tags} mobile={mobile} />
     </span>
   );
 }
 
 // "£3,000–£5,200 (N47) / £3,400–£5,800 (B47) [PLACEHOLDER]"
-function ReconCost({ value, align = "center" }) {
+function ReconCost({ value, align = "center", mobile = false }) {
   const { main, tags } = splitTags(value);
   return (
     <span className={`block ${align === "center" ? "text-center" : "text-left"}`}>
@@ -75,15 +95,15 @@ function ReconCost({ value, align = "center" }) {
           </span>
         );
       })}
-      <TagLine tags={tags} className="mt-0.5" />
+      <StatusTags tags={tags} mobile={mobile} className="mt-0.5" />
     </span>
   );
 }
 
-function CarImage({ src, generation, sizes }) {
+function CarImage({ src, generation, sizes, className = "max-w-[150px]" }) {
   if (!src) return null;
   return (
-    <span className="relative mt-1 block aspect-[16/9] w-full max-w-[150px]">
+    <span className={`relative mt-1 block aspect-[16/9] w-full ${className}`}>
       <Image src={src} alt={`BMW ${plain(generation)}`} fill sizes={sizes} className="object-contain object-left" />
     </span>
   );
@@ -91,11 +111,11 @@ function CarImage({ src, generation, sizes }) {
 
 function MobileCard({ row }) {
   const summary = (
-    <span className="grid min-w-0 flex-1 grid-cols-[minmax(0,0.8fr)_minmax(0,0.95fr)_minmax(0,1.25fr)] gap-2 [overflow-wrap:anywhere] sm:gap-3">
+    <span className="grid min-w-0 flex-1 grid-cols-[minmax(0,0.95fr)_minmax(0,0.85fr)_minmax(0,1.25fr)] gap-2 [overflow-wrap:break-word] sm:grid-cols-[minmax(0,1fr)_minmax(0,0.95fr)_minmax(0,1.05fr)] sm:gap-3">
       <span className="flex min-w-0 flex-col items-start gap-1.5">
         <span className="t-body max-w-full rounded-[6px] bg-[var(--color-v-blue-btn)] px-2.5 py-1 font-semibold text-white [overflow-wrap:anywhere]" dangerouslySetInnerHTML={{ __html: row.generation }} />
-        <span className="t-body text-[var(--color-v-text)]" dangerouslySetInnerHTML={{ __html: row.years }} />
-        <CarImage src={row.image} generation={row.generation} sizes="120px" />
+        <span className="t-label text-[var(--color-v-text)] sm:text-[length:var(--fs-body)]" dangerouslySetInnerHTML={{ __html: row.years }} />
+        <CarImage src={row.image} generation={row.generation} sizes="140px" className="max-w-[140px]" />
       </span>
       <span className="min-w-0 border-l border-[var(--color-v-border)] pl-2 sm:pl-3">
         <span className="t-label block text-[var(--color-v-soft)]">{copy.columns[2]}</span>
@@ -107,13 +127,13 @@ function MobileCard({ row }) {
         <span>
           <span className="t-label block text-[var(--color-v-soft)]">{copy.columns[3]}</span>
           <span className="mt-1 block">
-            <Reliability value={row.reliability} align="left" starClass="h-4 w-4" />
+            <Reliability value={row.reliability} align="left" starClass="h-4 w-4" mobile />
           </span>
         </span>
         <span>
           <span className="t-label block text-[var(--color-v-soft)]">{copy.columns[4]}</span>
           <span className="mt-1 block">
-            <ReconCost value={row.reconCost} align="left" />
+            <ReconCost value={row.reconCost} align="left" mobile />
           </span>
         </span>
       </span>
@@ -196,7 +216,7 @@ export default function EraMap({ data }) {
                 <tr key={`${plain(row.generation)}-${index}`} className="border-t border-[var(--color-v-border)] first:border-t-0">
                   <td className={`${cell} text-left`}>
                     <span className="t-h6 block font-semibold text-[var(--color-v-blue)] [overflow-wrap:anywhere]" dangerouslySetInnerHTML={{ __html: row.generation }} />
-                    <CarImage src={row.image} generation={row.generation} sizes="150px" />
+                    <CarImage src={row.image} generation={row.generation} sizes="190px" className="max-w-[190px]" />
                   </td>
                   <td className={`${cell} text-center`} dangerouslySetInnerHTML={{ __html: row.years }} />
                   <td className={cell}>
