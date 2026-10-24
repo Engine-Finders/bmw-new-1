@@ -1,15 +1,12 @@
 "use client";
 
-import { useState } from "react";
 import Image from "next/image";
 import { useTheme } from "@/components/shared/themeProvider";
-import HomeIcon from "@/components/home/homeIcons";
 import { engineImageFor } from "@/components/shared/carImage";
-import GenIcon from "./GenIcons";
-import MStripe from "@/components/reusableComponents/MStripe";
-import { generationSectionBg, splitBestWorstEnginesH2, sectionH2 } from "./generationSection";
+import { variantFont as sectionFont } from "@/components/variant/variantFont";
+import ui from "@/data/shared/generationPageUi.json";
 
-const VISIBLE_CARDS = 4;
+const UI = ui.bestWorstEngines;
 
 // Engine names without a code ("4.0 V8 Supercharged (XJR)") use the V8 / V6 that generation was built with.
 const GENERATION_ENGINES = {
@@ -26,7 +23,24 @@ const GENERATION_ENGINES = {
   x400: { v6: "aj-v6" },
 };
 
-function engineImageForCard(item, generationCode = "") {
+// No photo of the exact engine: a BMW engine of the same layout and fuel stands in as illustration
+// (shown with empty alt text, so it is never presented as that engine). V10/V12 have no close match.
+const STAND_INS = [
+  [/\b(m57|n57|b57|m51|m21)/, "n57d30a"],
+  [/\b(m47|n47|b47|m41)/, "n47d20c"],
+  [/\b(b38|b37)/, "b38a15a"],
+  [/\b(n62|n63|m60|m62|s62|s63|s65|s68)/, "s63b44t0"],
+  [/\b(n5[0-5]|m5[0-4]|s5[0-8]|m20|m30|s38|b58)/, "n55b30"],
+  [/\b(n4[0-6]|n13|n20|n26|m4[0-4]|s14|m10|b4[68])/, "n20b20"],
+];
+
+function standInEngineImage(item) {
+  const plain = `${item.engine || ""} ${item.engineNote || ""}`.replace(/<[^>]*>/g, " ").toLowerCase();
+  const key = STAND_INS.find(([pattern]) => pattern.test(plain))?.[1];
+  return key ? engineImageFor(key) : null;
+}
+
+function exactEngineImage(item, generationCode = "") {
   const text = `${item.engine || ""} ${item.engineNote || ""}`;
   const direct = engineImageFor(text);
   if (direct) return direct;
@@ -37,410 +51,337 @@ function engineImageForCard(item, generationCode = "") {
   return null;
 }
 
-const typeStyles = {
-  dieselBest: {
-    icon: "diesel",
-    color: "#189454",
-    colorDark: "#22a866",
-    accent: "border-b-[#189454]",
-    label: "text-[#189454]",
-    labelDark: "text-[#3ecf7a]",
+// Colours sampled from the designs (dark); light uses deeper shades of the same hues on white.
+const TONES = {
+  light: {
+    "--bw-bg": "#f6f8fb",
+    "--bw-card": "#ffffff",
+    "--bw-line": "#e3e8ef",
+    "--bw-text": "#0b1726",
+    "--bw-muted": "#4a5565",
+    "--bw-head": "#0b1726",
+    "--bw-note": "#eef3fa",
+    "--bw-shadow": "0 10px 28px rgba(10,26,43,0.07)",
+    "--bw-green": "#1d8a3f",
+    "--bw-blue": "#0a5bd3",
+    "--bw-red": "#d62828",
+    "--bw-orange": "#d9730d",
   },
-  petrolBest: {
-    icon: "fuel",
-    color: "#2484ff",
-    colorDark: "#4da0ff",
-    accent: "border-b-[#2484ff]",
-    label: "text-[#2484ff]",
-    labelDark: "text-[#6bb4ff]",
-  },
-  danger: {
-    icon: "fire",
-    color: "#e03232",
-    colorDark: "#f04a4a",
-    accent: "border-b-[#e03232]",
-    label: "text-[#e03232]",
-    labelDark: "text-[#ff6b6b]",
-  },
-  fire: {
-    icon: "dollar",
-    color: "#da7a12",
-    colorDark: "#f09028",
-    accent: "border-b-[#da7a12]",
-    label: "text-[#da7a12]",
-    labelDark: "text-[#ffb04a]",
-  },
-  diamond: {
-    icon: "diamond",
-    color: "#189454",
-    colorDark: "#22a866",
-    accent: "border-b-[#189454]",
-    label: "text-[#189454]",
-    labelDark: "text-[#3ecf7a]",
-  },
-  crown: {
-    icon: "search",
-    color: "#071827",
-    colorDark: "#c3cdda",
-    accent: "border-b-[var(--color-primary)]",
-    label: "text-[var(--color-text)]",
-    labelDark: "text-[var(--color-chrome-bright)]",
+  dark: {
+    "--bw-bg": "#0b1826",
+    "--bw-card": "rgba(14,28,46,0.78)",
+    "--bw-line": "rgba(255,255,255,0.12)",
+    "--bw-text": "#ffffff",
+    "--bw-muted": "rgba(255,255,255,0.82)",
+    "--bw-head": "rgba(255,255,255,0.88)",
+    "--bw-note": "rgba(77,155,255,0.1)",
+    "--bw-shadow": "0 12px 30px rgba(0,0,0,0.35)",
+    "--bw-green": "#5ccf6f",
+    "--bw-blue": "#4d9bff",
+    "--bw-red": "#ff5a52",
+    "--bw-orange": "#ffa13a",
   },
 };
 
-function slotStyleKey(slot = "", type) {
-  if (type && typeStyles[type]) return type;
-
+// Slot -> colour + icon, as in the designs; slots the designs don't show get the nearest match.
+function slotStyle(slot = "") {
   const label = slot.toLowerCase();
-  if (label.includes("best diesel")) return "dieselBest";
-  if (label.includes("best petrol")) return "petrolBest";
-  if (label.includes("highest risk")) return "danger";
-  if (label.includes("most expensive")) return "fire";
-  if (label.includes("best value")) return "diamond";
-  if (label.includes("most overlooked")) return "crown";
-
-  return "dieselBest";
+  if (label.includes("best diesel") || label.includes("best overall")) return { tone: "green", icon: "check" };
+  if (label.includes("best petrol") || label.includes("performance")) return { tone: "blue", icon: "tools" };
+  if (label.includes("highest risk")) return { tone: "red", icon: "warning" };
+  if (label.includes("expensive")) return { tone: "orange", icon: "dollar" };
+  if (label.includes("best value")) return { tone: "green", icon: "star" };
+  if (label.includes("overlooked")) return { tone: "blue", icon: "shield" };
+  return { tone: "blue", icon: "info" };
 }
 
-function resolveStyle(item, isDark = false) {
-  const key = slotStyleKey(item.slot, item.type);
-  const base = typeStyles[key] || typeStyles.dieselBest;
-  const iconInverted = key === "crown";
-  if (!isDark) {
-    return { ...base, iconInverted, iconTextClass: "text-white" };
-  }
+const PATHS = {
+  check: (
+    <>
+      <circle cx="12" cy="12" r="10" />
+      <path d="m7.5 12.3 3 3 6-6.3" />
+    </>
+  ),
+  tools: (
+    <>
+      <circle cx="12" cy="12" r="10" />
+      <g transform="translate(5.6 5.6) scale(0.54)" strokeWidth="3">
+        <path d="M15.6 4.2a3.6 3.6 0 0 0-3.4 4.7L4.6 16.5a1.6 1.6 0 0 0 2.3 2.3l7.6-7.6a3.6 3.6 0 0 0 4.7-3.4l-2 2-2.1-.6-.6-2.1z" />
+        <path d="m4.5 5.5 1-1 2.2 1.3 4.6 4.6M12.6 12.6l1.2-1.2 5.8 5.8a.85.85 0 0 1 0 1.2l-1.2 1.2a.85.85 0 0 1-1.2 0z" />
+      </g>
+    </>
+  ),
+  warning: (
+    <>
+      <path d="M10.3 3.9 2.2 18a2 2 0 0 0 1.7 3h16.2a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0z" />
+      <path d="M12 9v4.5M12 17h.01" />
+    </>
+  ),
+  dollar: (
+    <>
+      <circle cx="12" cy="12" r="10" />
+      <path d="M14.8 8.6c-.5-.8-1.5-1.3-2.8-1.3-1.7 0-2.8.9-2.8 2.1 0 2.8 5.8 1.5 5.8 4.5 0 1.3-1.2 2.2-3 2.2-1.4 0-2.5-.6-3-1.5M12 5.8v1.5M12 16.6v1.6" />
+    </>
+  ),
+  star: (
+    <>
+      <circle cx="12" cy="12" r="10" fill="currentColor" fillOpacity="0.18" />
+      <path d="m12 6.6 1.65 3.35 3.7.54-2.68 2.6.63 3.68L12 15.03l-3.3 1.74.63-3.68-2.68-2.6 3.7-.54z" fill="currentColor" />
+    </>
+  ),
+  shield: (
+    <>
+      <path d="M12 2.5 4.5 5.4v6.1c0 4.6 3.1 8.4 7.5 10 4.4-1.6 7.5-5.4 7.5-10V5.4z" fill="currentColor" fillOpacity="0.12" />
+      <circle cx="12" cy="10" r="2" fill="currentColor" />
+      <path d="M8.5 16.2a3.6 3.6 0 0 1 7 0z" fill="currentColor" />
+    </>
+  ),
+  info: (
+    <>
+      <circle cx="12" cy="12" r="10" />
+      <path d="M12 11v5.5M12 7.6h.01" />
+    </>
+  ),
+  chevron: <path d="m9 6 6 6-6 6" />,
+};
 
-  return {
-    ...base,
-    iconInverted,
-    color: base.colorDark || base.color,
-    label: base.labelDark || base.label,
-    iconTextClass: key === "crown" ? "text-[var(--color-text)]" : "text-white",
-  };
-}
-
-function isOverlookedItem(item) {
-  return item.fullWidth || item.slot?.toLowerCase().includes("most overlooked");
-}
-
-function hasItemContent(item) {
-  if (!item) return false;
-  return [item.slot, item.engine, item.quote, item.whoItsFor].some((value) =>
-    String(value ?? "")
-      .replace(/<[^>]+>/g, "")
-      .trim()
-  );
-}
-
-function SectionHeader({ data, isDark, sectionBg }) {
-  const title = splitBestWorstEnginesH2(data.h2 || "Best &amp; Worst Engines");
-  const generationCode = data.generationCode || "";
-  const heading = title.accent || title.main || "Best & Worst Engines";
-  const watermarkClass = isDark ? "text-white/[0.04]" : "text-black/[0.04]";
-
+function Icon({ name, className, strokeWidth = 1.7 }) {
   return (
-    <div className={`relative overflow-hidden ${sectionBg}`}>
-      {generationCode ? (
-        <div
-          aria-hidden="true"
-          className={`pointer-events-none absolute right-[4%] top-1/2 hidden -translate-y-1/2 select-none font-heading text-[8.5rem] font-bold leading-none tracking-tight md:block lg:text-[10rem] ${watermarkClass}`}
-        >
-          {generationCode}
-        </div>
-      ) : null}
-      <div
-        aria-hidden="true"
-        className={`pointer-events-none absolute right-0 top-0 hidden h-full w-[38%] md:block ${isDark ? "opacity-20" : "opacity-35"}`}
-      >
-        <svg viewBox="0 0 420 260" className="h-full w-full" fill="none" preserveAspectRatio="xMaxYMid slice">
-          <path d="M40 220C120 120 180 40 320 20" stroke="currentColor" strokeWidth="1.5" className={isDark ? "text-white/30" : "text-[#c3cdda]"} />
-          <path d="M80 250C170 150 230 70 380 48" stroke="currentColor" strokeWidth="1.5" className={isDark ? "text-white/20" : "text-[#d5d6d1]"} />
-        </svg>
-      </div>
-
-      <div className="relative mx-auto w-full max-w-8xl px-4 pb-3 pt-5 md:px-8 md:pb-4 md:pt-6">
-        <h2
-          className={`tracking-normal text-[var(--color-text)] ${sectionH2} ${isDark ? "text-white" : ""}`}
-          dangerouslySetInnerHTML={{ __html: heading }}
-        />
-        <div className="mt-2.5">
-          <MStripe />
-        </div>
-      </div>
-    </div>
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round" className={className} aria-hidden="true">
+      {PATHS[name]}
+    </svg>
   );
 }
 
-function EngineCard({ item, generationCode, isDark }) {
-  const style = resolveStyle(item, isDark);
-  // The BMW engine this card names (AJ133, AJ27, AJ30, 276DT...).
-  const engineImage = engineImageForCard(item, generationCode);
-  const engineAlt = String(item.engine || "").replace(/<[^>]*>/g, "").split(/\s[–-]\s|"/)[0].trim();
-  const cardSurfaceClass = isDark
-    ? "border-white/15 bg-[rgba(9,21,33,0.96)] shadow-[0_10px_28px_rgba(0,0,0,0.4)]"
-    : "border-[var(--color-border)] bg-white shadow-[0_10px_28px_rgba(17,18,16,0.08)]";
-  const bodyTextClass = isDark ? "text-white/72" : "text-[var(--color-text-muted)]";
-  const titleTextClass = isDark ? "text-white" : "text-[var(--color-text)]";
-  const noteBgClass = isDark ? "bg-white/[0.06] text-white/55" : "bg-[var(--color-page-soft)] text-[var(--color-text-soft)]";
+const HTML = "[&_a]:[font-weight:inherit] [&_a]:text-inherit hover:[&_a]:underline";
 
+function dash(value = "") {
+  return String(value ?? "").replace(/\s+-\s*(?=\S)/g, " — ");
+}
+
+// "123d (N47D20D, 2.0-litre twin-turbo)" / "N54B30 HPFP & Injector Failure" -> code + note, as E90's split fields.
+function splitEngine(item) {
+  const engine = String(item.engine || "").trim();
+  if (item.engineNote) return { code: engine, note: item.engineNote };
+  const match = engine.match(/^(\S+)\s+(.+)$/);
+  return match ? { code: match[1], note: match[2] } : { code: engine, note: "" };
+}
+
+const hasText = (value) => Boolean(String(value ?? "").replace(/<[^>]+>/g, "").trim());
+const hasContent = (item) => item && [item.slot, item.engine, item.quote, item.whoItsFor].some(hasText);
+// Full-width rows: the overlooked pick, and summaries with no single engine (one long paragraph).
+const isWide = (item) => item.fullWidth || /overlooked/i.test(item.slot || "") || !hasText(item.engine);
+
+function EngineImage({ item, generationCode, className, sizes }) {
+  const exact = exactEngineImage(item, generationCode);
+  const src = exact || standInEngineImage(item);
+  if (!src) return null;
+  const alt = exact ? String(item.engine || "").replace(/<[^>]*>/g, "").split(/\s[–-]\s|"/)[0].trim() : "";
+  return (
+    <span className={`relative block ${className}`}>
+      <Image src={src} alt={alt} fill sizes={sizes} className="object-contain drop-shadow-[0_10px_14px_rgba(0,0,0,0.45)]" />
+    </span>
+  );
+}
+
+const quoteHtml = (quote) => `“${dash(quote)}”`;
+
+/* ---------- Desktop (from 1024px): cards in a row with a coloured bottom bar ---------- */
+function DesktopCard({ item, generationCode }) {
+  const { tone, icon } = slotStyle(item.slot);
+  const color = `var(--bw-${tone})`;
+  const { code, note } = splitEngine(item);
   return (
     <article
-      className={`flex h-full flex-col overflow-hidden rounded-xl border ${cardSurfaceClass} ${style.accent} border-b-[4px]`}
+      className="flex h-full flex-col rounded-[10px] border border-[var(--bw-line)] bg-[var(--bw-card)] px-4 pb-4 pt-4 [box-shadow:var(--bw-shadow)]"
+      style={{ borderBottom: `3px solid ${color}` }}
     >
-      <div className="flex flex-1 flex-col p-4">
-        <div className="flex items-center gap-2.5">
-          <span
-            className={`flex h-9 w-9 shrink-0 items-center justify-center rounded-full ${style.iconTextClass}`}
-            style={{ backgroundColor: style.color }}
-          >
-            <GenIcon name={style.icon} onDark={!style.iconInverted} inverted={style.iconInverted} className="h-8 w-8 md:h-6 md:w-6" />
-          </span>
-          <p className={`lg:text-[15px] text-[12px] font-bold uppercase tracking-[0.08em] ${style.label}`} dangerouslySetInnerHTML={{ __html: item.slot }} />
+      <div className="grid grid-cols-[34px_1fr] items-start gap-x-3">
+        <span style={{ color }}>
+          <Icon name={icon} className="h-[34px] w-[34px]" />
+        </span>
+        <div className="min-w-0">
+          <p className="text-[16px] font-medium leading-tight" style={{ color }} dangerouslySetInnerHTML={{ __html: item.slot }} />
+          <p className={`mt-1.5 text-[20px] font-semibold leading-tight text-[var(--bw-text)] ${HTML}`} dangerouslySetInnerHTML={{ __html: code }} />
+          {note ? <p className={`mt-0.5 text-[14px] leading-snug text-[var(--bw-muted)] ${HTML}`} dangerouslySetInnerHTML={{ __html: dash(note) }} /> : null}
         </div>
-
-        <p className={`mt-3 text-[0.98rem] font-bold leading-[1.25] ${titleTextClass}`}>
-          <span dangerouslySetInnerHTML={{ __html: item.engine }} />
-          {item.engineNote ? (
-            <span className={`lg:text-[15px] mt-0.5 block text-[12px] font-normal ${bodyTextClass}`} dangerouslySetInnerHTML={{ __html: item.engineNote }} />
-          ) : null}
-        </p>
-
-        <div className="relative mx-auto my-3 flex h-36 w-full max-w-[210px] items-center justify-center">
-          {engineImage ? (
-            <Image src={engineImage} alt={engineAlt} fill className="object-contain" sizes="210px" />
-          ) : (
-            // No photo of this engine (e.g. XK six, V12, AJ6): show the engine icon, never another make's engine.
-            <HomeIcon name="engine" isDark={isDark} className="h-24 w-24 opacity-35" />
-          )}
-        </div>
-
-        <p className={`lg:text-[15px] text-[0.8rem] leading-[1.45] ${bodyTextClass}`}>
-          &ldquo;<span dangerouslySetInnerHTML={{ __html: item.quote }} />&rdquo;
-        </p>
-
-        <p className={`lg:text-[15px] mt-auto border-t pt-3 text-[0.78rem] leading-[1.35] ${isDark ? "border-white/12 text-white/88" : "border-[var(--color-border)] text-[var(--color-text)]"}`}>
-          <span className="font-semibold" style={{ color: style.color }}>
-            Who it&apos;s for:
-          </span>{" "}
-          <span dangerouslySetInnerHTML={{ __html: item.whoItsFor }} />
-        </p>
-
-        {item.modelWideNote ? (
-          <p className={`lg:text-[15px] mt-2 rounded-md p-2 text-[12px] leading-[1.3] ${noteBgClass}`} dangerouslySetInnerHTML={{ __html: item.modelWideNote }} />
-        ) : null}
       </div>
+      <div className="mt-3 flex items-start gap-2">
+        <EngineImage item={item} generationCode={generationCode} sizes="120px" className="-ml-1 mt-1 h-[84px] w-[86px] shrink-0" />
+        <p className={`min-w-0 text-[14px] leading-[1.5] tracking-[-0.005em] text-[var(--bw-muted)] [overflow-wrap:anywhere] ${HTML}`} dangerouslySetInnerHTML={{ __html: quoteHtml(item.quote) }} />
+      </div>
+      {hasText(item.whoItsFor) ? (
+        <p className={`mt-auto pl-1 pt-3 text-[15px] leading-[1.45] text-[var(--bw-text)] ${HTML}`}>
+          <span className="font-medium" style={{ color }}>{UI.whoItsFor}</span>{" "}
+          <span dangerouslySetInnerHTML={{ __html: dash(item.whoItsFor) }} />
+        </p>
+      ) : null}
+      {item.modelWideNote ? (
+        <p className={`mt-2 flex items-start gap-1.5 rounded-[6px] bg-[var(--bw-note)] px-2.5 py-1.5 text-[14px] leading-snug text-[var(--bw-muted)] ${HTML}`}>
+          <Icon name="info" className="mt-0.5 h-4 w-4 shrink-0 text-[var(--bw-blue)]" />
+          <span dangerouslySetInnerHTML={{ __html: dash(item.modelWideNote) }} />
+        </p>
+      ) : null}
     </article>
   );
 }
 
-function CarouselControls({ page, pageCount, onPrev, onNext, onSelectPage, isDark, showDots = true }) {
-  const canPrev = page > 0;
-  const canNext = page < pageCount - 1;
-  const buttonBase = "flex h-9 w-9 items-center justify-center rounded-full border transition-colors";
-  const activeClass = isDark
-    ? "border-white/20 bg-white text-[var(--color-text)]"
-    : "border-[var(--color-border)] bg-white text-[var(--color-text)]";
-  const disabledClass = isDark
-    ? "border-white/10 bg-transparent text-white/25"
-    : "border-[var(--color-border)] bg-white text-[var(--color-text-soft)]";
-
+function DesktopWide({ item }) {
+  const { tone, icon } = slotStyle(item.slot);
+  const color = `var(--bw-${tone})`;
+  const { code, note } = splitEngine(item);
+  const hasEngine = hasText(code);
+  const hasWho = hasText(item.whoItsFor);
   return (
-    <div className={`flex flex-col items-center gap-3 ${showDots ? "" : ""}`}>
-      <div className="flex flex-col gap-2">
-        <button
-          type="button"
-          onClick={onPrev}
-          disabled={!canPrev}
-          aria-label="Previous engines"
-          className={`${buttonBase} ${canPrev ? activeClass : disabledClass}`}
-        >
-          <GenIcon name="chevron" className="h-4 w-4 rotate-180" />
-        </button>
-        <button
-          type="button"
-          onClick={onNext}
-          disabled={!canNext}
-          aria-label="Next engines"
-          className={`${buttonBase} ${canNext ? (isDark ? "border-white bg-[var(--color-primary)] text-white" : "border-black bg-[var(--color-primary)] text-white") : disabledClass}`}
-        >
-          <GenIcon name="chevron" className="h-4 w-4" />
-        </button>
-      </div>
-
-      {showDots ? (
-        <div className="flex items-center gap-1.5">
-          {Array.from({ length: pageCount }, (_, index) => (
-            <button
-              key={index}
-              type="button"
-              aria-label={`Go to slide ${index + 1}`}
-              onClick={() => onSelectPage(index)}
-              className={`h-1.5 rounded-full transition-all ${
-                index === page
-                  ? `w-4 ${isDark ? "bg-white" : "bg-[var(--color-primary)]"}`
-                  : `w-1.5 ${isDark ? "bg-white/25" : "bg-black/20"}`
-              }`}
-            />
-          ))}
+    <article
+      className={`grid items-center gap-x-6 rounded-[10px] border border-[var(--bw-line)] bg-[var(--bw-card)] px-6 py-5 [box-shadow:var(--bw-shadow)] ${
+        hasEngine ? (hasWho ? "grid-cols-[56px_minmax(0,0.85fr)_minmax(0,2fr)_minmax(0,0.85fr)]" : "grid-cols-[56px_minmax(0,0.85fr)_minmax(0,2.85fr)]") : "grid-cols-[56px_minmax(0,1fr)]"
+      }`}
+    >
+      <span style={{ color }} className="drop-shadow-[0_0_14px_currentColor]">
+        <Icon name={icon} className="h-14 w-14" strokeWidth={1.5} />
+      </span>
+      {hasEngine ? (
+        <div className="min-w-0">
+          <p className="text-[16px] font-medium leading-tight" style={{ color }} dangerouslySetInnerHTML={{ __html: item.slot }} />
+          <p className={`mt-1.5 text-[20px] font-semibold leading-snug text-[var(--bw-text)] ${HTML}`}>
+            <span dangerouslySetInnerHTML={{ __html: code }} />
+            {note ? <span className="text-[15px] font-normal text-[var(--bw-muted)]" dangerouslySetInnerHTML={{ __html: ` ${dash(note)}` }} /> : null}
+          </p>
         </div>
       ) : null}
-    </div>
+      <div className={`min-w-0 ${hasEngine ? "border-l border-[var(--bw-line)] pl-6" : ""}`}>
+        {!hasEngine ? <p className="mb-1.5 text-[16px] font-medium leading-tight" style={{ color }} dangerouslySetInnerHTML={{ __html: item.slot }} /> : null}
+        <p
+          className={`text-[15px] leading-[1.6] text-[var(--bw-muted)] ${HTML}`}
+          dangerouslySetInnerHTML={{ __html: hasEngine ? quoteHtml(item.quote) : dash(item.quote) }}
+        />
+      </div>
+      {hasEngine && hasWho ? (
+        <p className={`min-w-0 border-l border-[var(--bw-line)] pl-6 text-[15px] leading-[1.5] text-[var(--bw-muted)] ${HTML}`}>
+          <span className="font-medium" style={{ color }}>{UI.whoItsFor}</span>{" "}
+          <span dangerouslySetInnerHTML={{ __html: dash(item.whoItsFor) }} />
+        </p>
+      ) : null}
+    </article>
   );
 }
 
-function OverlookedBanner({ item, databaseCta, isDark }) {
-  if (!hasItemContent(item)) return null;
-
-  const cta = databaseCta || { label: "View Full Engine Database →", href: "/engine" };
-  const ctaLabel = cta.label?.replace(/\s*→\s*$/, "").trim();
-
+/* ---------- Phones + tablets (below 1024px): the phone design, sizes = design px ÷ 8.62, capped ---------- */
+function PhoneCard({ item, generationCode }) {
+  const { tone, icon } = slotStyle(item.slot);
+  const color = `var(--bw-${tone})`;
+  const { code, note } = splitEngine(item);
+  const hasEngine = hasText(code);
   return (
-    <div
-      className={`overflow-hidden rounded-xl border border-[var(--color-border)] ${
-        isDark ? "bg-[rgba(9,21,33,0.92)]" : "bg-[rgba(255,255,255,0.82)]"
-      } shadow-[0_10px_28px_rgba(17,18,16,0.08)]`}
+    <article
+      className="overflow-hidden rounded-[min(1.4vw,12px)] border border-[var(--bw-line)] bg-[var(--bw-card)] [box-shadow:var(--bw-shadow)]"
+      style={{ borderLeft: `max(0.5vw,3px) solid ${color}` }}
     >
-      <div className="grid grid-cols-1 gap-4 p-4 md:grid-cols-[88px_1.2fr_0.95fr_auto] md:items-center md:gap-5 md:p-5">
-        <div className="flex items-start justify-center md:justify-start">
-          <span
-            className={`flex h-16 w-16 items-center justify-center rounded-full border-2 ${
-              isDark ? "border-white/20 bg-[rgba(255,255,255,0.06)]" : "border-[var(--color-border)] bg-white"
-            }`}
-          >
-            <span className={`flex h-12 w-12 items-center justify-center rounded-full ${isDark ? "bg-white/10" : "bg-[var(--color-page-soft)]"}`}>
-              <HomeIcon name="shield" isDark={isDark} className="h-10 w-10 md:h-8 md:w-8 object-contain" />
-            </span>
+      <div className="grid grid-cols-[min(24.5vw,190px)_minmax(0,1fr)] pb-[2.6vw] pr-[3vw] pt-[2.6vw]">
+        <div className="flex flex-col items-start pl-[2.8vw]">
+          <span style={{ color }}>
+            <Icon name={icon} className="h-[min(5.2vw,40px)] w-[min(5.2vw,40px)]" />
           </span>
-        </div>
-
-        <div className="min-w-0">
-          <p className="lg:text-[15px] text-[0.82rem] font-bold text-[var(--color-text)]" dangerouslySetInnerHTML={{ __html: item.slot }} />
-          <p className="mt-1 text-[1rem] font-bold leading-tight text-[var(--color-text)]" dangerouslySetInnerHTML={{ __html: item.engine }} />
-          {item.engineNote ? (
-            <p className="lg:text-[15px] mt-0.5 text-[0.78rem] text-[var(--color-text-muted)]" dangerouslySetInnerHTML={{ __html: item.engineNote }} />
+          {hasEngine ? (
+            <EngineImage item={item} generationCode={generationCode} sizes="(max-width: 1024px) 20vw, 160px" className="ml-[1vw] mt-[1.6vw] h-[min(17vw,132px)] w-[min(18vw,140px)]" />
           ) : null}
-          <p className="lg:text-[15px] mt-2 text-[0.84rem] leading-[1.5] text-[var(--color-text-muted)]">
-            &ldquo;<span dangerouslySetInnerHTML={{ __html: item.quote }} />&rdquo;
-          </p>
         </div>
-
-        <div className="min-w-0 border-t border-[var(--color-border)] pt-3 md:border-t-0 md:pt-0">
-          <p className="lg:text-[15px] text-[0.82rem] leading-[1.5] text-[var(--color-text)]">
-            <span className="font-semibold text-[var(--color-text)]">Who it&apos;s for: </span>
-            <span dangerouslySetInnerHTML={{ __html: item.whoItsFor }} />
-          </p>
+        <div className="min-w-0">
+          <div className="flex items-start gap-[1vw]">
+            <div className="min-w-0 flex-1">
+              <p className="text-[min(2.3vw,18px)] font-medium leading-tight" style={{ color }} dangerouslySetInnerHTML={{ __html: item.slot }} />
+              {hasEngine ? (
+                <p className={`mt-[0.8vw] text-[min(3.2vw,24px)] font-semibold leading-snug text-[var(--bw-text)] ${HTML}`}>
+                  <span dangerouslySetInnerHTML={{ __html: code }} />
+                  {note ? <span className="text-[min(2vw,16px)] font-normal text-[var(--bw-muted)]" dangerouslySetInnerHTML={{ __html: `  ${dash(note)}` }} /> : null}
+                </p>
+              ) : null}
+            </div>
+            <Icon name="chevron" strokeWidth={2} className="mt-[3vw] h-[min(3vw,22px)] w-[min(2.4vw,18px)] shrink-0 text-[var(--bw-muted)]" />
+          </div>
+          <p
+            className={`mt-[1.6vw] text-[min(1.95vw,16px)] leading-[1.6] text-[var(--bw-muted)] ${HTML}`}
+            dangerouslySetInnerHTML={{ __html: hasEngine ? quoteHtml(item.quote) : dash(item.quote) }}
+          />
+          {hasText(item.whoItsFor) ? (
+            <p className={`mt-[1.8vw] border-t border-[var(--bw-line)] pt-[1.8vw] text-[min(1.95vw,16px)] leading-[1.5] text-[var(--bw-text)] ${HTML}`}>
+              <span className="font-medium" style={{ color }}>{UI.whoItsFor}</span>{" "}
+              <span dangerouslySetInnerHTML={{ __html: dash(item.whoItsFor) }} />
+            </p>
+          ) : null}
         </div>
-
-        {ctaLabel ? (
-          <a
-            href={cta.href || "/engine"}
-            className={`lg:text-[15px] inline-flex h-11 shrink-0 items-center justify-center gap-2 rounded-md border px-4 text-[0.78rem] font-semibold whitespace-nowrap ${
-              isDark
-                ? "border-white/20 bg-transparent text-white hover:bg-white/5"
-                : "border-[var(--color-border-strong)] bg-white text-[var(--color-text)] hover:bg-[var(--color-page-soft)]"
-            }`}
-          >
-            <span dangerouslySetInnerHTML={{ __html: ctaLabel }} />
-            <GenIcon name="arrow" className="h-4 w-4 shrink-0" />
-          </a>
-        ) : null}
       </div>
-    </div>
+      {item.modelWideNote ? (
+        <p className={`mx-[0.8vw] mb-[0.8vw] flex items-center justify-center gap-[1vw] rounded-[min(0.8vw,8px)] bg-[var(--bw-note)] px-[2vw] py-[1.2vw] text-[min(2vw,16px)] leading-snug text-[var(--bw-muted)] ${HTML}`}>
+          <Icon name="info" className="h-[min(2.6vw,20px)] w-[min(2.6vw,20px)] shrink-0 text-[var(--bw-blue)]" />
+          <span dangerouslySetInnerHTML={{ __html: dash(item.modelWideNote) }} />
+        </p>
+      ) : null}
+    </article>
   );
 }
 
 export default function BestWorstEngines({ data }) {
   const { theme } = useTheme();
-  const [page, setPage] = useState(0);
-
   if (!data) return null;
 
   const isDark = theme === "dark";
-  const sectionBg = generationSectionBg(isDark, true);
-  const items = data.items || [];
-  const carouselItems = items.filter((item) => !isOverlookedItem(item) && hasItemContent(item));
-  const overlookedItems = items.filter((item) => isOverlookedItem(item) && hasItemContent(item));
+  const items = (data.items || []).filter(hasContent);
+  if (!items.length) return null;
 
-  if (carouselItems.length === 0 && overlookedItems.length === 0) return null;
-
-  const maxSlideIndex = Math.max(0, carouselItems.length - VISIBLE_CARDS);
-  const slideCount = maxSlideIndex + 1;
-
-  const goToSlide = (nextSlide) => {
-    setPage(Math.max(0, Math.min(maxSlideIndex, nextSlide)));
-  };
+  const cards = items.filter((item) => !isWide(item));
+  const wide = items.filter(isWide);
+  // One row of up to five cards from 1440px (the design); narrower desktops and six or more cards go three to a row.
+  const cols = cards.length <= 5 ? cards.length : 3;
+  const vars = TONES[isDark ? "dark" : "light"];
+  const heading = String(data.h2 || UI.eyebrow);
 
   return (
-    <section className={`w-full overflow-x-hidden text-[var(--color-text)] ${sectionBg}`}>
-      <SectionHeader data={data} isDark={isDark} sectionBg={sectionBg} />
+    <section
+      style={vars}
+      className={`relative w-full overflow-hidden bg-[var(--bw-bg)] text-[var(--bw-text)] [background-image:radial-gradient(ellipse_at_50%_0%,color-mix(in_srgb,var(--bw-blue)_7%,transparent),transparent_60%)] ${sectionFont.className}`}
+    >
+      <div className="site-container relative pb-[5vw] pt-[4.4vw] max-lg:px-[3.5vw] lg:pb-14 lg:pt-12">
+        <div className="max-lg:px-[0.9vw]">
+          <p className="flex items-center gap-[1.4vw] text-[min(1.97vw,15px)] font-medium uppercase tracking-[0.1em] lg:gap-3 lg:text-[14px]">
+            <span className="text-[var(--bw-head)]">{UI.sectionNumber}</span>
+            <span aria-hidden="true" className="h-px w-[min(2.6vw,22px)] bg-[var(--bw-head)] opacity-60" />
+            <span className="text-[var(--bw-blue)]">{UI.eyebrow}</span>
+          </p>
+          <h2
+            className={`mt-[1.2vw] text-[min(5.3vw,44px)] font-semibold leading-[1.15] tracking-[-0.015em] text-[var(--bw-head)] lg:mt-2 lg:text-[34px] ${HTML}`}
+            dangerouslySetInnerHTML={{ __html: heading }}
+          />
+        </div>
 
-      <div className="relative mx-auto w-full max-w-8xl px-4 pb-5 pt-4 md:px-8 md:pb-6 md:pt-5">
-        <div className="flex flex-col gap-3 sm:hidden">
-          {carouselItems.map((item) => (
-            <EngineCard key={item.slot} item={item} generationCode={data.generationCode} isDark={isDark} />
+        {/* Phones + tablets: one card per pick, stacked */}
+        <div className="mt-[3vw] flex flex-col gap-[1.5vw] lg:hidden">
+          {[...cards, ...wide].map((item, index) => (
+            <PhoneCard key={`${item.slot}-${index}`} item={item} generationCode={data.generationCode} />
           ))}
         </div>
 
-        <div className="hidden sm:block">
-          <div className="flex items-start gap-4 lg:gap-5">
-            <div className="min-w-0 flex-1 [--card-width:calc((100%-3rem)/4)]">
-              <div className="overflow-hidden w-full">
-                <div
-                  className="flex gap-4 transition-transform duration-300 ease-in-out"
-                  style={{
-                    transform: `translateX(calc(-${page} * (var(--card-width) + 1rem)))`,
-                  }}
-                >
-                  {carouselItems.map((item) => (
-                    <div key={item.slot} className="w-[var(--card-width)] shrink-0">
-                      <EngineCard item={item} generationCode={data.generationCode} isDark={isDark} />
-                    </div>
-                  ))}
-                </div>
-              </div>
-
-              {slideCount > 1 ? (
-                <div className="mt-4 flex justify-center">
-                  <div className="flex items-center gap-1.5">
-                    {Array.from({ length: slideCount }, (_, index) => (
-                      <button
-                        key={index}
-                        type="button"
-                        aria-label={`Go to slide ${index + 1}`}
-                        onClick={() => goToSlide(index)}
-                        className={`h-1.5 rounded-full transition-all ${
-                          index === page
-                            ? `w-4 ${isDark ? "bg-white" : "bg-[var(--color-primary)]"}`
-                            : `w-1.5 ${isDark ? "bg-white/25" : "bg-black/20"}`
-                        }`}
-                      />
-                    ))}
-                  </div>
-                </div>
-              ) : null}
+        {/* Desktop: the picks side by side, then the full-width rows */}
+        <div className="hidden lg:block">
+          {cards.length ? (
+            <div
+              className={`mt-6 grid gap-4 ${cols > 3 ? "lg:grid-cols-3 min-[1440px]:[grid-template-columns:var(--bw-cols)]" : "[grid-template-columns:var(--bw-cols)]"}`}
+              style={{ "--bw-cols": `repeat(${cols}, minmax(0, 1fr))` }}
+            >
+              {cards.map((item, index) => (
+                <DesktopCard key={`${item.slot}-${index}`} item={item} generationCode={data.generationCode} />
+              ))}
             </div>
-
-            {slideCount > 1 ? (
-              <CarouselControls
-                page={page}
-                pageCount={slideCount}
-                isDark={isDark}
-                showDots={false}
-                onPrev={() => goToSlide(page - 1)}
-                onNext={() => goToSlide(page + 1)}
-                onSelectPage={goToSlide}
-              />
-            ) : null}
-          </div>
+          ) : null}
+          {wide.length ? (
+            <div className="mt-4 flex flex-col gap-4">
+              {wide.map((item, index) => (
+                <DesktopWide key={`${item.slot}-${index}`} item={item} />
+              ))}
+            </div>
+          ) : null}
         </div>
-
-        {overlookedItems.length > 0 ? (
-          <div className="mt-4 flex flex-col gap-3 md:mt-5">
-            {overlookedItems.map((item) => (
-              <OverlookedBanner key={item.slot} item={item} databaseCta={data.databaseCta} isDark={isDark} />
-            ))}
-          </div>
-        ) : null}
       </div>
     </section>
   );

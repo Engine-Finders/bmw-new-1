@@ -232,87 +232,59 @@
       "Fuel",
       "Displacement",
       "Power",
-      "Years (E39 M5)"
+      "Years (E39 M5)",
+      "Variants",
+      "Reliability",
+      "2025 Enquiries",
+      "Avg. Recon Cost"
     ],
     "engines": [
       {
-        "engineCode": "Variants",
-        "family": "Reliability",
-        "fuel": "2025 Enquiries",
-        "displacement": "Avg. Recon Cost",
-        "power": "S62B50",
-        "years": "S62",
-        "variants": "",
-        "reliability": "",
-        "enquiries": "",
-        "avgReconCost": ""
+        "engineCode": "S62B50",
+        "family": "S62",
+        "fuel": "Petrol",
+        "displacement": "4.9L (4941 cc)",
+        "power": "294 kW (400 PS; 394 bhp) at 6,600 rpm",
+        "years": "1998–2003",
+        "variants": "M5 (European spec)",
+        "reliability": "★★★★☆ [PATTERN DATA]",
+        "enquiries": "-(pattern data)",
+        "avgReconCost": "£3,000–£6,000 [PLACEHOLDER]"
       },
       {
-        "engineCode": "Petrol",
-        "family": "4.9L (4941 cc)",
-        "fuel": "294 kW (400 PS; 394 bhp) at 6,600 rpm",
-        "displacement": "1998–2003",
-        "power": "M5 (European spec)",
-        "years": "★★★★☆ [PATTERN DATA]",
-        "variants": "",
-        "reliability": "",
-        "enquiries": "",
-        "avgReconCost": ""
-      },
-      {
-        "engineCode": "-(pattern data)",
-        "family": "£3,000–£6,000 [PLACEHOLDER]",
-        "fuel": "S62B50",
-        "displacement": "S62",
-        "power": "Petrol",
-        "years": "4.9L (4941 cc)",
-        "variants": "",
-        "reliability": "",
-        "enquiries": "",
-        "avgReconCost": ""
-      },
-      {
-        "engineCode": "294 kW (400 PS; 394 bhp) at 6,600 rpm",
-        "family": "1999–2003",
-        "fuel": "M5 (US spec)",
-        "displacement": "★★★★☆ [PATTERN DATA]",
-        "power": "-(pattern data)",
-        "years": "£3,000–£6,000 [PLACEHOLDER]",
-        "variants": "",
-        "reliability": "",
-        "enquiries": "",
-        "avgReconCost": ""
-      },
-      {
-        "engineCode": "Engine Specifications:",
-        "family": "* Configuration: Naturally aspirated V8, 90° bank angle",
-        "fuel": "* Displacement: 4,941 cc (4.9L)",
-        "displacement": "* Bore × Stroke: 94 mm × 89 mm",
-        "power": "* Compression Ratio: 11.0:1",
-        "years": "* Power: 400 PS (394 bhp) at 6,600 rpm",
-        "variants": "",
-        "reliability": "",
-        "enquiries": "",
-        "avgReconCost": ""
-      },
-      {
-        "engineCode": "* Torque: 500 Nm (369 lb‑ft) at 3,800 rpm",
-        "family": "* Redline: 7,000 rpm",
-        "fuel": "* Valvetrain: DOHC, double VANOS variable valve timing on both intake and exhaust camshafts",
-        "displacement": "* Induction: Individual throttle bodies (ITBs) with electronic drive‑by‑wire control",
-        "power": "* Fuel System: Bosch Motronic",
-        "years": "* Transmission: Getrag 420G 6‑speed manual",
-        "variants": "",
-        "reliability": "",
-        "enquiries": "",
-        "avgReconCost": ""
+        "engineCode": "S62B50",
+        "family": "S62",
+        "fuel": "Petrol",
+        "displacement": "4.9L (4941 cc)",
+        "power": "294 kW (400 PS; 394 bhp) at 6,600 rpm",
+        "years": "1999–2003",
+        "variants": "M5 (US spec)",
+        "reliability": "★★★★☆ [PATTERN DATA]",
+        "enquiries": "-(pattern data)",
+        "avgReconCost": "£3,000–£6,000 [PLACEHOLDER]"
       }
     ],
     "confidenceScore": {
       "title": "How confident are these ratings?",
       "text": "The E39 M5 is a classic car with a well‑documented enthusiast following. The S62 engine is based on the M62 V8 but heavily modified by M Division. It is a robust and durable design when properly maintained, but age‑related issues are common. The S62 is known for rod bearing wear, VANOS seal degradation, timing chain guide failure, and cooling system weaknesses. All ratings are [PATTERN DATA] sourced from BMW enthusiast clubs and specialist forums."
     },
-    "dataCorrections": []
+    "dataCorrections": [],
+    "notes": {
+      "title": "Engine Specifications:",
+      "items": [
+        "Configuration: Naturally aspirated V8, 90° bank angle",
+        "Displacement: 4,941 cc (4.9L)",
+        "Bore × Stroke: 94 mm × 89 mm",
+        "Compression Ratio: 11.0:1",
+        "Power: 400 PS (394 bhp) at 6,600 rpm",
+        "Torque: 500 Nm (369 lb‑ft) at 3,800 rpm",
+        "Redline: 7,000 rpm",
+        "Valvetrain: DOHC, double VANOS variable valve timing on both intake and exhaust camshafts",
+        "Induction: Individual throttle bodies (ITBs) with electronic drive‑by‑wire control",
+        "Fuel System: Bosch Motronic",
+        "Transmission: Getrag 420G 6‑speed manual"
+      ]
+    }
   },
   "overview": {
     "h2": "BMW M5 E39 -Overview",
@@ -337,72 +309,50 @@
       "Engine",
       "Typical Mileage",
       "Common Major Failure",
-      "Repair Cost (Specialist)"
+      "Repair Cost (Specialist)",
+      "Replacement Cost",
+      "Ownership Verdict"
     ],
     "rows": [
       {
-        "engine": "Replacement Cost",
-        "typicalMileage": "Ownership Verdict",
-        "commonMajorFailure": "S62B50 (all variants)",
-        "repairCostSpecialist": "60k–120k",
-        "replacementCostRecon": "",
-        "ownershipVerdict": ""
-      },
-      {
-        "engine": "Rod bearing wear",
-        "typicalMileage": "£1,500–£3,000",
-        "commonMajorFailure": "£3,000–£6,000",
-        "repairCostSpecialist": "High Maintenance -rewards diligent owners",
-        "replacementCostRecon": "",
-        "ownershipVerdict": ""
+        "engine": "S62B50 (all variants)",
+        "typicalMileage": "60k–120k",
+        "commonMajorFailure": "Rod bearing wear",
+        "repairCostSpecialist": "£1,500–£3,000",
+        "replacementCostRecon": "£3,000–£6,000",
+        "ownershipVerdict": "High Maintenance -rewards diligent owners"
       },
       {
         "engine": "S62B50 (all variants)",
         "typicalMileage": "60k–120k",
         "commonMajorFailure": "VANOS seal failure",
         "repairCostSpecialist": "£800–£1,500",
-        "replacementCostRecon": "",
-        "ownershipVerdict": ""
+        "replacementCostRecon": "£3,000–£6,000",
+        "ownershipVerdict": "High Maintenance -VANOS rattle is the warning"
       },
       {
-        "engine": "£3,000–£6,000",
-        "typicalMileage": "High Maintenance -VANOS rattle is the warning",
-        "commonMajorFailure": "S62B50 (all variants)",
-        "repairCostSpecialist": "60k–120k",
-        "replacementCostRecon": "",
-        "ownershipVerdict": ""
-      },
-      {
-        "engine": "Timing chain guides",
-        "typicalMileage": "£1,500–£3,000",
-        "commonMajorFailure": "£3,000–£6,000",
-        "repairCostSpecialist": "High Maintenance -plastic guides fail with age",
-        "replacementCostRecon": "",
-        "ownershipVerdict": ""
+        "engine": "S62B50 (all variants)",
+        "typicalMileage": "60k–120k",
+        "commonMajorFailure": "Timing chain guides",
+        "repairCostSpecialist": "£1,500–£3,000",
+        "replacementCostRecon": "£3,000–£6,000",
+        "ownershipVerdict": "High Maintenance -plastic guides fail with age"
       },
       {
         "engine": "S62B50 (all variants)",
         "typicalMileage": "60k–120k",
         "commonMajorFailure": "Cooling system failure",
         "repairCostSpecialist": "£500–£1,200",
-        "replacementCostRecon": "",
-        "ownershipVerdict": ""
+        "replacementCostRecon": "£3,000–£6,000",
+        "ownershipVerdict": "Essential Maintenance -proactive replacement is key"
       },
       {
-        "engine": "£3,000–£6,000",
-        "typicalMileage": "Essential Maintenance -proactive replacement is key",
-        "commonMajorFailure": "S62B50 (all variants)",
-        "repairCostSpecialist": "60k–120k",
-        "replacementCostRecon": "",
-        "ownershipVerdict": ""
-      },
-      {
-        "engine": "Throttle body actuators",
-        "typicalMileage": "£1,000–£2,000",
-        "commonMajorFailure": "£3,000–£6,000",
-        "repairCostSpecialist": "High Maintenance -can trigger limp mode",
-        "replacementCostRecon": "",
-        "ownershipVerdict": ""
+        "engine": "S62B50 (all variants)",
+        "typicalMileage": "60k–120k",
+        "commonMajorFailure": "Throttle body actuators",
+        "repairCostSpecialist": "£1,000–£2,000",
+        "replacementCostRecon": "£3,000–£6,000",
+        "ownershipVerdict": "High Maintenance -can trigger limp mode"
       }
     ],
     "economicsRule": {

@@ -292,56 +292,36 @@
       "Fuel",
       "Displacement",
       "Power",
-      "Years (F74)"
+      "Years (F74)",
+      "Variants",
+      "Reliability",
+      "2025 Enquiries",
+      "Avg. Recon Cost"
     ],
     "engines": [
       {
-        "engineCode": "Variants",
-        "family": "Reliability",
-        "fuel": "2025 Enquiries",
-        "displacement": "Avg. Recon Cost",
-        "power": "B38A15P",
-        "years": "<a href='https://bmwengines.uk/engine/b38-b48'>B38</a>",
-        "variants": "",
-        "reliability": "",
-        "enquiries": "",
-        "avgReconCost": ""
+        "engineCode": "B38A15P",
+        "family": "<a href='https://bmwengines.uk/engine/b38-b48'>B38</a>",
+        "fuel": "Petrol + 48V MHEV",
+        "displacement": "1.5L (1499 cc)",
+        "power": "125 kW (170 PS) / 280 Nm",
+        "years": "2024–present",
+        "variants": "220",
+        "reliability": "★★★★☆ [PROVISIONAL -pattern data]",
+        "enquiries": "-(new model)",
+        "avgReconCost": "£1,800–£3,500 [PLACEHOLDER]"
       },
       {
-        "engineCode": "Petrol + 48V MHEV",
-        "family": "1.5L (1499 cc)",
-        "fuel": "125 kW (170 PS) / 280 Nm",
-        "displacement": "2024–present",
-        "power": "220",
-        "years": "★★★★☆ [PROVISIONAL -pattern data]",
-        "variants": "",
-        "reliability": "",
-        "enquiries": "",
-        "avgReconCost": ""
-      },
-      {
-        "engineCode": "-(new model)",
-        "family": "£1,800–£3,500 [PLACEHOLDER]",
-        "fuel": "B38A15M1 / B38A15P",
-        "displacement": "B38",
-        "power": "Petrol",
-        "years": "1.5L (1499 cc)",
-        "variants": "",
-        "reliability": "",
-        "enquiries": "",
-        "avgReconCost": ""
-      },
-      {
-        "engineCode": "115 kW (156 PS) / 230 Nm",
-        "family": "2024–present",
-        "fuel": "218",
-        "displacement": "★★★★☆ [PROVISIONAL -pattern data]",
-        "power": "-(new model)",
-        "years": "£1,500–£3,000 [PLACEHOLDER]",
-        "variants": "",
-        "reliability": "",
-        "enquiries": "",
-        "avgReconCost": ""
+        "engineCode": "B38A15M1 / B38A15P",
+        "family": "B38",
+        "fuel": "Petrol",
+        "displacement": "1.5L (1499 cc)",
+        "power": "115 kW (156 PS) / 230 Nm",
+        "years": "2024–present",
+        "variants": "218",
+        "reliability": "★★★★☆ [PROVISIONAL -pattern data]",
+        "enquiries": "-(new model)",
+        "avgReconCost": "£1,500–£3,000 [PLACEHOLDER]"
       },
       {
         "engineCode": "B48A20O2",
@@ -350,58 +330,34 @@
         "displacement": "2.0L (1998 cc)",
         "power": "177 kW (241 PS) / 400 Nm",
         "years": "2024–present",
-        "variants": "",
-        "reliability": "",
-        "enquiries": "",
-        "avgReconCost": ""
+        "variants": "228 xDrive",
+        "reliability": "★★★★☆ [PROVISIONAL -pattern data]",
+        "enquiries": "-(new model)",
+        "avgReconCost": "£2,800–£5,000 [PLACEHOLDER]"
       },
       {
-        "engineCode": "228 xDrive",
-        "family": "★★★★☆ [PROVISIONAL -pattern data]",
-        "fuel": "-(new model)",
-        "displacement": "£2,800–£5,000 [PLACEHOLDER]",
-        "power": "B48A20H (B48R)",
-        "years": "B48",
-        "variants": "",
-        "reliability": "",
-        "enquiries": "",
-        "avgReconCost": ""
+        "engineCode": "B48A20H (B48R)",
+        "family": "B48",
+        "fuel": "Petrol",
+        "displacement": "2.0L (1998 cc)",
+        "power": "221–233 kW (300–317 PS) / 400 Nm",
+        "years": "2024–present",
+        "variants": "M235 xDrive",
+        "reliability": "★★★★★ [PROVISIONAL -pattern data]",
+        "enquiries": "-(new model)",
+        "avgReconCost": "£4,000–£7,000 [PLACEHOLDER]"
       },
       {
-        "engineCode": "Petrol",
-        "family": "2.0L (1998 cc)",
-        "fuel": "221–233 kW (300–317 PS) / 400 Nm",
-        "displacement": "2024–present",
-        "power": "M235 xDrive",
-        "years": "★★★★★ [PROVISIONAL -pattern data]",
-        "variants": "",
-        "reliability": "",
-        "enquiries": "",
-        "avgReconCost": ""
-      },
-      {
-        "engineCode": "-(new model)",
-        "family": "£4,000–£7,000 [PLACEHOLDER]",
-        "fuel": "B48A20P",
-        "displacement": "B48",
-        "power": "Petrol + 48V MHEV",
-        "years": "2.0L (1998 cc)",
-        "variants": "",
-        "reliability": "",
-        "enquiries": "",
-        "avgReconCost": ""
-      },
-      {
-        "engineCode": "160 kW (218 PS) / 360 Nm",
-        "family": "2024–present",
-        "fuel": "223 xDrive",
-        "displacement": "★★★★☆ [PROVISIONAL -pattern data]",
-        "power": "-(new model)",
-        "years": "£2,800–£5,000 [PLACEHOLDER]",
-        "variants": "",
-        "reliability": "",
-        "enquiries": "",
-        "avgReconCost": ""
+        "engineCode": "B48A20P",
+        "family": "B48",
+        "fuel": "Petrol + 48V MHEV",
+        "displacement": "2.0L (1998 cc)",
+        "power": "160 kW (218 PS) / 360 Nm",
+        "years": "2024–present",
+        "variants": "223 xDrive",
+        "reliability": "★★★★☆ [PROVISIONAL -pattern data]",
+        "enquiries": "-(new model)",
+        "avgReconCost": "£2,800–£5,000 [PLACEHOLDER]"
       },
       {
         "engineCode": "B47C20B",
@@ -410,32 +366,20 @@
         "displacement": "2.0L (1995 cc)",
         "power": "110 kW (150 PS) / 360 Nm",
         "years": "2024–present",
-        "variants": "",
-        "reliability": "",
-        "enquiries": "",
-        "avgReconCost": ""
+        "variants": "218d",
+        "reliability": "★★★★☆ [PROVISIONAL -pattern data]",
+        "enquiries": "-(new model)",
+        "avgReconCost": "£2,800–£4,500 [PLACEHOLDER]"
       },
       {
-        "engineCode": "218d",
-        "family": "★★★★☆ [PROVISIONAL -pattern data]",
-        "fuel": "-(new model)",
-        "displacement": "£2,800–£4,500 [PLACEHOLDER]",
-        "power": "B47C20B",
-        "years": "B47",
-        "variants": "",
-        "reliability": "",
-        "enquiries": "",
-        "avgReconCost": ""
-      },
-      {
-        "engineCode": "Diesel + 48V MHEV",
-        "family": "2.0L (1995 cc)",
-        "fuel": "120 kW (163 PS) / 360 Nm",
-        "displacement": "2024–present",
-        "power": "220d",
-        "years": "★★★★☆ [PROVISIONAL -pattern data]",
-        "variants": "",
-        "reliability": "",
+        "engineCode": "B47C20B",
+        "family": "B47",
+        "fuel": "Diesel + 48V MHEV",
+        "displacement": "2.0L (1995 cc)",
+        "power": "120 kW (163 PS) / 360 Nm",
+        "years": "2024–present",
+        "variants": "220d",
+        "reliability": "★★★★☆ [PROVISIONAL -pattern data]",
         "enquiries": "",
         "avgReconCost": ""
       }
@@ -469,96 +413,66 @@
       "Engine",
       "Typical Mileage",
       "Common Major Failure",
-      "Repair Cost (Specialist)"
+      "Repair Cost (Specialist)",
+      "Replacement Cost",
+      "Ownership Verdict"
     ],
     "rows": [
       {
-        "engine": "Replacement Cost",
-        "typicalMileage": "Ownership Verdict",
-        "commonMajorFailure": "B38A15P (220 MHEV)",
-        "repairCostSpecialist": "60k–100k",
-        "replacementCostRecon": "",
-        "ownershipVerdict": ""
-      },
-      {
-        "engine": "General wear -B38 proven reliable",
-        "typicalMileage": "£400–£800",
-        "commonMajorFailure": "£1,800–£3,500",
-        "repairCostSpecialist": "Solid Choice -efficient, proven three-cylinder",
-        "replacementCostRecon": "",
-        "ownershipVerdict": ""
+        "engine": "B38A15P (220 MHEV)",
+        "typicalMileage": "60k–100k",
+        "commonMajorFailure": "General wear -B38 proven reliable",
+        "repairCostSpecialist": "£400–£800",
+        "replacementCostRecon": "£1,800–£3,500",
+        "ownershipVerdict": "Solid Choice -efficient, proven three-cylinder"
       },
       {
         "engine": "B38A15M1/P (218)",
         "typicalMileage": "60k–100k",
         "commonMajorFailure": "General wear -B38 proven reliable",
         "repairCostSpecialist": "£400–£800",
-        "replacementCostRecon": "",
-        "ownershipVerdict": ""
+        "replacementCostRecon": "£1,500–£3,000",
+        "ownershipVerdict": "Entry Choice -lowest running costs"
       },
       {
-        "engine": "£1,500–£3,000",
-        "typicalMileage": "Entry Choice -lowest running costs",
-        "commonMajorFailure": "B48A20O2 (228 xDrive)",
-        "repairCostSpecialist": "80k–150k",
-        "replacementCostRecon": "",
-        "ownershipVerdict": ""
-      },
-      {
-        "engine": "General wear -B48 proven robust",
-        "typicalMileage": "£500–£1,000",
-        "commonMajorFailure": "£2,800–£5,000",
-        "repairCostSpecialist": "Best Petrol Value -241 bhp, proven B48",
-        "replacementCostRecon": "",
-        "ownershipVerdict": ""
+        "engine": "B48A20O2 (228 xDrive)",
+        "typicalMileage": "80k–150k",
+        "commonMajorFailure": "General wear -B48 proven robust",
+        "repairCostSpecialist": "£500–£1,000",
+        "replacementCostRecon": "£2,800–£5,000",
+        "ownershipVerdict": "Best Petrol Value -241 bhp, proven B48"
       },
       {
         "engine": "B48A20H (M235 xDrive)",
         "typicalMileage": "80k–150k",
         "commonMajorFailure": "General wear -high-output B48",
         "repairCostSpecialist": "£500–£1,200",
-        "replacementCostRecon": "",
-        "ownershipVerdict": ""
+        "replacementCostRecon": "£4,000–£7,000",
+        "ownershipVerdict": "Performance Choice -300+ bhp, premium cost"
       },
       {
-        "engine": "£4,000–£7,000",
-        "typicalMileage": "Performance Choice -300+ bhp, premium cost",
-        "commonMajorFailure": "B48A20P (223 xDrive MHEV)",
-        "repairCostSpecialist": "80k–150k",
-        "replacementCostRecon": "",
-        "ownershipVerdict": ""
-      },
-      {
-        "engine": "General wear -B48 proven robust",
-        "typicalMileage": "£500–£1,000",
-        "commonMajorFailure": "£2,800–£5,000",
-        "repairCostSpecialist": "Solid Choice -218 bhp with hybrid assistance",
-        "replacementCostRecon": "",
-        "ownershipVerdict": ""
+        "engine": "B48A20P (223 xDrive MHEV)",
+        "typicalMileage": "80k–150k",
+        "commonMajorFailure": "General wear -B48 proven robust",
+        "repairCostSpecialist": "£500–£1,000",
+        "replacementCostRecon": "£2,800–£5,000",
+        "ownershipVerdict": "Solid Choice -218 bhp with hybrid assistance"
       },
       {
         "engine": "B47C20B (218d)",
         "typicalMileage": "80k–150k",
         "commonMajorFailure": "General wear -B47 chain accessible",
         "repairCostSpecialist": "£400–£900",
-        "replacementCostRecon": "",
-        "ownershipVerdict": ""
+        "replacementCostRecon": "£2,800–£4,500",
+        "ownershipVerdict": "Solid Choice -modern diesel, chain accessible"
       },
       {
-        "engine": "£2,800–£4,500",
-        "typicalMileage": "Solid Choice -modern diesel, chain accessible",
-        "commonMajorFailure": "B47C20B (220d)",
-        "repairCostSpecialist": "80k–150k",
-        "replacementCostRecon": "",
-        "ownershipVerdict": ""
-      },
-      {
-        "engine": "General wear -B47 chain accessible",
-        "typicalMileage": "£400–£900",
-        "commonMajorFailure": "£3,000–£5,000",
-        "repairCostSpecialist": "Best Diesel -163 bhp, efficient, chain accessible",
-        "replacementCostRecon": "",
-        "ownershipVerdict": ""
+        "engine": "B47C20B (220d)",
+        "typicalMileage": "80k–150k",
+        "commonMajorFailure": "General wear -B47 chain accessible",
+        "repairCostSpecialist": "£400–£900",
+        "replacementCostRecon": "£3,000–£5,000",
+        "ownershipVerdict": "Best Diesel -163 bhp, efficient, chain accessible"
       }
     ],
     "economicsRule": {

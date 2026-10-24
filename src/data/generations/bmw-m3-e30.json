@@ -292,56 +292,36 @@
       "Fuel",
       "Displacement",
       "Power",
-      "Years (E30 M3)"
+      "Years (E30 M3)",
+      "Variants",
+      "Reliability",
+      "2025 Enquiries",
+      "Avg. Recon Cost"
     ],
     "engines": [
       {
-        "engineCode": "Variants",
-        "family": "Reliability",
-        "fuel": "2025 Enquiries",
-        "displacement": "Avg. Recon Cost",
-        "power": "S14B23",
-        "years": "S14",
-        "variants": "",
-        "reliability": "",
-        "enquiries": "",
-        "avgReconCost": ""
+        "engineCode": "S14B23",
+        "family": "S14",
+        "fuel": "Petrol",
+        "displacement": "2.3L (2302 cc)",
+        "power": "147 kW (200 PS; 197 bhp)",
+        "years": "1986–1987",
+        "variants": "M3 (early, no cat)",
+        "reliability": "★★★★☆ [PATTERN DATA]",
+        "enquiries": "-(pattern data)",
+        "avgReconCost": "£2,500–£5,000 [PLACEHOLDER]"
       },
       {
-        "engineCode": "Petrol",
-        "family": "2.3L (2302 cc)",
-        "fuel": "147 kW (200 PS; 197 bhp)",
-        "displacement": "1986–1987",
-        "power": "M3 (early, no cat)",
-        "years": "★★★★☆ [PATTERN DATA]",
-        "variants": "",
-        "reliability": "",
-        "enquiries": "",
-        "avgReconCost": ""
-      },
-      {
-        "engineCode": "-(pattern data)",
-        "family": "£2,500–£5,000 [PLACEHOLDER]",
-        "fuel": "S14B23 (cat)",
-        "displacement": "S14",
-        "power": "Petrol",
-        "years": "2.3L (2302 cc)",
-        "variants": "",
-        "reliability": "",
-        "enquiries": "",
-        "avgReconCost": ""
-      },
-      {
-        "engineCode": "143 kW (195 PS; 192 bhp)",
-        "family": "1987–1989",
-        "fuel": "M3 (with cat)",
-        "displacement": "★★★★☆ [PATTERN DATA]",
-        "power": "-(pattern data)",
-        "years": "£2,500–£5,000 [PLACEHOLDER]",
-        "variants": "",
-        "reliability": "",
-        "enquiries": "",
-        "avgReconCost": ""
+        "engineCode": "S14B23 (cat)",
+        "family": "S14",
+        "fuel": "Petrol",
+        "displacement": "2.3L (2302 cc)",
+        "power": "143 kW (195 PS; 192 bhp)",
+        "years": "1987–1989",
+        "variants": "M3 (with cat)",
+        "reliability": "★★★★☆ [PATTERN DATA]",
+        "enquiries": "-(pattern data)",
+        "avgReconCost": "£2,500–£5,000 [PLACEHOLDER]"
       },
       {
         "engineCode": "S14B23 Evo I",
@@ -350,58 +330,34 @@
         "displacement": "2.3L (2302 cc)",
         "power": "147 kW (200 PS; 197 bhp)",
         "years": "1987",
-        "variants": "",
-        "reliability": "",
-        "enquiries": "",
-        "avgReconCost": ""
+        "variants": "M3 Evolution",
+        "reliability": "★★★★☆ [PATTERN DATA]",
+        "enquiries": "-(pattern data)",
+        "avgReconCost": "£3,000–£6,000 [PLACEHOLDER]"
       },
       {
-        "engineCode": "M3 Evolution",
-        "family": "★★★★☆ [PATTERN DATA]",
-        "fuel": "-(pattern data)",
-        "displacement": "£3,000–£6,000 [PLACEHOLDER]",
-        "power": "S14B23 Evo II",
-        "years": "S14",
-        "variants": "",
-        "reliability": "",
-        "enquiries": "",
-        "avgReconCost": ""
+        "engineCode": "S14B23 Evo II",
+        "family": "S14",
+        "fuel": "Petrol",
+        "displacement": "2.3L (2302 cc)",
+        "power": "162 kW (220 PS; 217 bhp)",
+        "years": "1988",
+        "variants": "M3 Evolution II",
+        "reliability": "★★★★☆ [PATTERN DATA]",
+        "enquiries": "-(pattern data)",
+        "avgReconCost": "£3,500–£7,000 [PLACEHOLDER]"
       },
       {
-        "engineCode": "Petrol",
-        "family": "2.3L (2302 cc)",
-        "fuel": "162 kW (220 PS; 217 bhp)",
-        "displacement": "1988",
-        "power": "M3 Evolution II",
-        "years": "★★★★☆ [PATTERN DATA]",
-        "variants": "",
-        "reliability": "",
-        "enquiries": "",
-        "avgReconCost": ""
-      },
-      {
-        "engineCode": "-(pattern data)",
-        "family": "£3,500–£7,000 [PLACEHOLDER]",
-        "fuel": "S14B23 Cecotto/Ravaglia",
-        "displacement": "S14",
-        "power": "Petrol",
-        "years": "2.3L (2302 cc)",
-        "variants": "",
-        "reliability": "",
-        "enquiries": "",
-        "avgReconCost": ""
-      },
-      {
-        "engineCode": "158 kW (215 PS; 212 bhp)",
-        "family": "1989",
-        "fuel": "M3 Cecotto/Ravaglia",
-        "displacement": "★★★★☆ [PATTERN DATA]",
-        "power": "-(pattern data)",
-        "years": "£3,500–£7,000 [PLACEHOLDER]",
-        "variants": "",
-        "reliability": "",
-        "enquiries": "",
-        "avgReconCost": ""
+        "engineCode": "S14B23 Cecotto/Ravaglia",
+        "family": "S14",
+        "fuel": "Petrol",
+        "displacement": "2.3L (2302 cc)",
+        "power": "158 kW (215 PS; 212 bhp)",
+        "years": "1989",
+        "variants": "M3 Cecotto/Ravaglia",
+        "reliability": "★★★★☆ [PATTERN DATA]",
+        "enquiries": "-(pattern data)",
+        "avgReconCost": "£3,500–£7,000 [PLACEHOLDER]"
       },
       {
         "engineCode": "S14B23 (post-09/1989)",
@@ -410,58 +366,34 @@
         "displacement": "2.3L (2302 cc)",
         "power": "158 kW (215 PS; 212 bhp)",
         "years": "1989–1990",
-        "variants": "",
-        "reliability": "",
-        "enquiries": "",
-        "avgReconCost": ""
+        "variants": "M3 (standard, with cat)",
+        "reliability": "★★★★☆ [PATTERN DATA]",
+        "enquiries": "-(pattern data)",
+        "avgReconCost": "£2,500–£5,000 [PLACEHOLDER]"
       },
       {
-        "engineCode": "M3 (standard, with cat)",
-        "family": "★★★★☆ [PATTERN DATA]",
-        "fuel": "-(pattern data)",
-        "displacement": "£2,500–£5,000 [PLACEHOLDER]",
-        "power": "S14B25 Evo III",
-        "years": "S14",
-        "variants": "",
-        "reliability": "",
-        "enquiries": "",
-        "avgReconCost": ""
+        "engineCode": "S14B25 Evo III",
+        "family": "S14",
+        "fuel": "Petrol",
+        "displacement": "2.5L (2467 cc)",
+        "power": "175 kW (238 PS; 235 bhp)",
+        "years": "1990",
+        "variants": "M3 Evolution III",
+        "reliability": "★★★★★ [PATTERN DATA]",
+        "enquiries": "-(pattern data)",
+        "avgReconCost": "£4,000–£8,000 [PLACEHOLDER]"
       },
       {
-        "engineCode": "Petrol",
-        "family": "2.5L (2467 cc)",
-        "fuel": "175 kW (238 PS; 235 bhp)",
-        "displacement": "1990",
-        "power": "M3 Evolution III",
-        "years": "★★★★★ [PATTERN DATA]",
-        "variants": "",
-        "reliability": "",
-        "enquiries": "",
-        "avgReconCost": ""
-      },
-      {
-        "engineCode": "-(pattern data)",
-        "family": "£4,000–£8,000 [PLACEHOLDER]",
-        "fuel": "S14B25 Sport Evo",
-        "displacement": "S14",
-        "power": "Petrol",
-        "years": "2.5L (2467 cc)",
-        "variants": "",
-        "reliability": "",
-        "enquiries": "",
-        "avgReconCost": ""
-      },
-      {
-        "engineCode": "175 kW (238 PS; 235 bhp)",
-        "family": "1990",
-        "fuel": "M3 Sport Evolution",
-        "displacement": "★★★★★ [PATTERN DATA]",
-        "power": "-(pattern data)",
-        "years": "£5,000–£10,000 [PLACEHOLDER]",
-        "variants": "",
-        "reliability": "",
-        "enquiries": "",
-        "avgReconCost": ""
+        "engineCode": "S14B25 Sport Evo",
+        "family": "S14",
+        "fuel": "Petrol",
+        "displacement": "2.5L (2467 cc)",
+        "power": "175 kW (238 PS; 235 bhp)",
+        "years": "1990",
+        "variants": "M3 Sport Evolution",
+        "reliability": "★★★★★ [PATTERN DATA]",
+        "enquiries": "-(pattern data)",
+        "avgReconCost": "£5,000–£10,000 [PLACEHOLDER]"
       }
     ],
     "confidenceScore": {
@@ -486,96 +418,66 @@
       "Engine",
       "Typical Mileage",
       "Common Major Failure",
-      "Repair Cost (Specialist)"
+      "Repair Cost (Specialist)",
+      "Replacement Cost",
+      "Ownership Verdict"
     ],
     "rows": [
       {
-        "engine": "Replacement Cost",
-        "typicalMileage": "Ownership Verdict",
-        "commonMajorFailure": "S14B23 (standard)",
-        "repairCostSpecialist": "60k–120k",
-        "replacementCostRecon": "",
-        "ownershipVerdict": ""
-      },
-      {
-        "engine": "Valve stem seals / cooling system",
-        "typicalMileage": "£1,000–£2,000",
-        "commonMajorFailure": "£2,500–£5,000",
-        "repairCostSpecialist": "Solid Choice -the original, most affordable",
-        "replacementCostRecon": "",
-        "ownershipVerdict": ""
+        "engine": "S14B23 (standard)",
+        "typicalMileage": "60k–120k",
+        "commonMajorFailure": "Valve stem seals / cooling system",
+        "repairCostSpecialist": "£1,000–£2,000",
+        "replacementCostRecon": "£2,500–£5,000",
+        "ownershipVerdict": "Solid Choice -the original, most affordable"
       },
       {
         "engine": "S14B23 Evo I",
         "typicalMileage": "60k–120k",
         "commonMajorFailure": "Valve stem seals / cooling system",
         "repairCostSpecialist": "£1,000–£2,000",
-        "replacementCostRecon": "",
-        "ownershipVerdict": ""
+        "replacementCostRecon": "£3,000–£6,000",
+        "ownershipVerdict": "Collector's Car -rare, appreciating"
       },
       {
-        "engine": "£3,000–£6,000",
-        "typicalMileage": "Collector's Car -rare, appreciating",
-        "commonMajorFailure": "S14B23 Evo II",
-        "repairCostSpecialist": "60k–120k",
-        "replacementCostRecon": "",
-        "ownershipVerdict": ""
-      },
-      {
-        "engine": "Timing chain tensioner / cooling system",
-        "typicalMileage": "£1,200–£2,500",
-        "commonMajorFailure": "£3,500–£7,000",
-        "repairCostSpecialist": "Collector's Car -220 PS, highly collectable",
-        "replacementCostRecon": "",
-        "ownershipVerdict": ""
+        "engine": "S14B23 Evo II",
+        "typicalMileage": "60k–120k",
+        "commonMajorFailure": "Timing chain tensioner / cooling system",
+        "repairCostSpecialist": "£1,200–£2,500",
+        "replacementCostRecon": "£3,500–£7,000",
+        "ownershipVerdict": "Collector's Car -220 PS, highly collectable"
       },
       {
         "engine": "S14B23 Cecotto/Ravaglia",
         "typicalMileage": "60k–120k",
         "commonMajorFailure": "Timing chain tensioner / cooling system",
         "repairCostSpecialist": "£1,200–£2,500",
-        "replacementCostRecon": "",
-        "ownershipVerdict": ""
+        "replacementCostRecon": "£3,500–£7,000",
+        "ownershipVerdict": "Collector's Car -limited edition, appreciating"
       },
       {
-        "engine": "£3,500–£7,000",
-        "typicalMileage": "Collector's Car -limited edition, appreciating",
-        "commonMajorFailure": "S14B23 (post-09/1989)",
-        "repairCostSpecialist": "60k–120k",
-        "replacementCostRecon": "",
-        "ownershipVerdict": ""
-      },
-      {
-        "engine": "Valve stem seals / cooling system",
-        "typicalMileage": "£1,000–£2,000",
-        "commonMajorFailure": "£2,500–£5,000",
-        "repairCostSpecialist": "Solid Choice -215 PS, improved over early cars",
-        "replacementCostRecon": "",
-        "ownershipVerdict": ""
+        "engine": "S14B23 (post-09/1989)",
+        "typicalMileage": "60k–120k",
+        "commonMajorFailure": "Valve stem seals / cooling system",
+        "repairCostSpecialist": "£1,000–£2,000",
+        "replacementCostRecon": "£2,500–£5,000",
+        "ownershipVerdict": "Solid Choice -215 PS, improved over early cars"
       },
       {
         "engine": "S14B25 Evo III",
         "typicalMileage": "60k–120k",
         "commonMajorFailure": "Oil consumption / cooling system",
         "repairCostSpecialist": "£1,500–£3,000",
-        "replacementCostRecon": "",
-        "ownershipVerdict": ""
+        "replacementCostRecon": "£4,000–£8,000",
+        "ownershipVerdict": "Ultimate Collector's -238 PS, most desirable"
       },
       {
-        "engine": "£4,000–£8,000",
-        "typicalMileage": "Ultimate Collector's -238 PS, most desirable",
-        "commonMajorFailure": "S14B25 Sport Evo",
-        "repairCostSpecialist": "60k–120k",
-        "replacementCostRecon": "",
-        "ownershipVerdict": ""
-      },
-      {
-        "engine": "Oil consumption / cooling system",
-        "typicalMileage": "£1,500–£3,000",
-        "commonMajorFailure": "£5,000–£10,000",
-        "repairCostSpecialist": "Ultimate Collector's -the rarest and most valuable",
-        "replacementCostRecon": "",
-        "ownershipVerdict": ""
+        "engine": "S14B25 Sport Evo",
+        "typicalMileage": "60k–120k",
+        "commonMajorFailure": "Oil consumption / cooling system",
+        "repairCostSpecialist": "£1,500–£3,000",
+        "replacementCostRecon": "£5,000–£10,000",
+        "ownershipVerdict": "Ultimate Collector's -the rarest and most valuable"
       }
     ],
     "economicsRule": {

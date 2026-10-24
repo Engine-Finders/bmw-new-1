@@ -7,10 +7,11 @@ import MarketIntelligence, { MarketIntelligenceSidebar } from "./MarketIntellige
 import { generationSectionBg } from "./generationSection";
 
 // This generation's side-view photo (set server-side) on BMW's own background.
-function SidebarCarImage({ image, isDark, className = "" }) {
+function SidebarCarImage({ image, fit, isDark, className = "" }) {
   return (
     <CarOnBackground
       src={image}
+      fit={fit}
       isDark={isDark}
       className={`relative min-h-[320px] rounded-md border border-[var(--color-border)] bg-[var(--color-surface)] shadow-[0_10px_28px_var(--color-shadow)] ${className}`.trim()}
       carClassName="inset-x-[6%] bottom-[10%] top-[30%]"
@@ -32,7 +33,7 @@ export default function CoreVariantsMarketGroup({ coreVariants, marketIntelligen
         {/* Mobile / tablet: stacked sections */}
         <div className="flex flex-col gap-0 pb-6 lg:hidden">
           {coreVariants ? <CoreVariants data={coreVariants} grouped /> : null}
-          {coreVariants ? <SidebarCarImage image={coreVariants.image} isDark={isDark} className="mb-5" /> : null}
+          {coreVariants ? <SidebarCarImage image={coreVariants.image} fit={coreVariants.imageFit} isDark={isDark} className="mb-5" /> : null}
           {marketIntelligence ? <MarketIntelligence data={marketIntelligence} grouped /> : null}
         </div>
 
@@ -43,7 +44,7 @@ export default function CoreVariantsMarketGroup({ coreVariants, marketIntelligen
           ) : null}
 
           {coreVariants ? (
-            <SidebarCarImage image={coreVariants.image} isDark={isDark} className="lg:col-start-2 lg:row-start-1" />
+            <SidebarCarImage image={coreVariants.image} fit={coreVariants.imageFit} isDark={isDark} className="lg:col-start-2 lg:row-start-1" />
           ) : null}
 
           {marketIntelligence ? (

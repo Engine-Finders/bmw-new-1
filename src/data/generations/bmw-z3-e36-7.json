@@ -346,56 +346,36 @@
       "Fuel",
       "Displacement",
       "Power",
-      "Years (E36/7)"
+      "Years (E36/7)",
+      "Variants",
+      "Reliability",
+      "2025 Enquiries",
+      "Avg. Recon Cost"
     ],
     "engines": [
       {
-        "engineCode": "Variants",
-        "family": "Reliability",
-        "fuel": "2025 Enquiries",
-        "displacement": "Avg. Recon Cost",
-        "power": "M43B18",
-        "years": "M43",
-        "variants": "",
-        "reliability": "",
-        "enquiries": "",
-        "avgReconCost": ""
+        "engineCode": "M43B18",
+        "family": "M43",
+        "fuel": "Petrol",
+        "displacement": "1.8L (1796 cc)",
+        "power": "85 kW (116 PS; 114 hp)",
+        "years": "1995–1998",
+        "variants": "1.8",
+        "reliability": "★★★☆☆ [PATTERN DATA]",
+        "enquiries": "-(pattern data)",
+        "avgReconCost": "£800–£1,800 [PLACEHOLDER]"
       },
       {
-        "engineCode": "Petrol",
-        "family": "1.8L (1796 cc)",
-        "fuel": "85 kW (116 PS; 114 hp)",
-        "displacement": "1995–1998",
-        "power": "1.8",
-        "years": "★★★☆☆ [PATTERN DATA]",
-        "variants": "",
-        "reliability": "",
-        "enquiries": "",
-        "avgReconCost": ""
-      },
-      {
-        "engineCode": "-(pattern data)",
-        "family": "£800–£1,800 [PLACEHOLDER]",
-        "fuel": "M43B19",
-        "displacement": "M43",
-        "power": "Petrol",
-        "years": "1.9L (1895 cc)",
-        "variants": "",
-        "reliability": "",
-        "enquiries": "",
-        "avgReconCost": ""
-      },
-      {
-        "engineCode": "87 kW (118 PS; 117 hp)",
-        "family": "1999–2000",
-        "fuel": "1.8 (late)",
-        "displacement": "★★★☆☆ [PATTERN DATA]",
-        "power": "-(pattern data)",
-        "years": "£800–£1,800 [PLACEHOLDER]",
-        "variants": "",
-        "reliability": "",
-        "enquiries": "",
-        "avgReconCost": ""
+        "engineCode": "M43B19",
+        "family": "M43",
+        "fuel": "Petrol",
+        "displacement": "1.9L (1895 cc)",
+        "power": "87 kW (118 PS; 117 hp)",
+        "years": "1999–2000",
+        "variants": "1.8 (late)",
+        "reliability": "★★★☆☆ [PATTERN DATA]",
+        "enquiries": "-(pattern data)",
+        "avgReconCost": "£800–£1,800 [PLACEHOLDER]"
       },
       {
         "engineCode": "M44B19",
@@ -404,58 +384,34 @@
         "displacement": "1.9L (1895 cc)",
         "power": "103 kW (140 PS; 138 hp)",
         "years": "1995–1999",
-        "variants": "",
-        "reliability": "",
-        "enquiries": "",
-        "avgReconCost": ""
+        "variants": "1.9",
+        "reliability": "★★★★☆ [PATTERN DATA]",
+        "enquiries": "-(pattern data)",
+        "avgReconCost": "£1,200–£2,500 [PLACEHOLDER]"
       },
       {
-        "engineCode": "1.9",
-        "family": "★★★★☆ [PATTERN DATA]",
-        "fuel": "-(pattern data)",
-        "displacement": "£1,200–£2,500 [PLACEHOLDER]",
-        "power": "M43B19",
-        "years": "M43",
-        "variants": "",
-        "reliability": "",
-        "enquiries": "",
-        "avgReconCost": ""
+        "engineCode": "M43B19",
+        "family": "M43",
+        "fuel": "Petrol",
+        "displacement": "1.9L (1895 cc)",
+        "power": "87 kW (118 PS; 117 hp)",
+        "years": "2000–2002",
+        "variants": "1.9i",
+        "reliability": "★★★☆☆ [PATTERN DATA]",
+        "enquiries": "-(pattern data)",
+        "avgReconCost": "£800–£1,800 [PLACEHOLDER]"
       },
       {
-        "engineCode": "Petrol",
-        "family": "1.9L (1895 cc)",
-        "fuel": "87 kW (118 PS; 117 hp)",
-        "displacement": "2000–2002",
-        "power": "1.9i",
-        "years": "★★★☆☆ [PATTERN DATA]",
-        "variants": "",
-        "reliability": "",
-        "enquiries": "",
-        "avgReconCost": ""
-      },
-      {
-        "engineCode": "-(pattern data)",
-        "family": "£800–£1,800 [PLACEHOLDER]",
-        "fuel": "M52TUB20",
-        "displacement": "M52 TU",
-        "power": "Petrol",
-        "years": "2.0L (1991 cc)",
-        "variants": "",
-        "reliability": "",
-        "enquiries": "",
-        "avgReconCost": ""
-      },
-      {
-        "engineCode": "110 kW (150 PS; 148 hp)",
-        "family": "1999–2000",
-        "fuel": "2.0",
-        "displacement": "★★★★☆ [PATTERN DATA]",
-        "power": "-(pattern data)",
-        "years": "£1,800–£3,500 [PLACEHOLDER]",
-        "variants": "",
-        "reliability": "",
-        "enquiries": "",
-        "avgReconCost": ""
+        "engineCode": "M52TUB20",
+        "family": "M52 TU",
+        "fuel": "Petrol",
+        "displacement": "2.0L (1991 cc)",
+        "power": "110 kW (150 PS; 148 hp)",
+        "years": "1999–2000",
+        "variants": "2.0",
+        "reliability": "★★★★☆ [PATTERN DATA]",
+        "enquiries": "-(pattern data)",
+        "avgReconCost": "£1,800–£3,500 [PLACEHOLDER]"
       },
       {
         "engineCode": "M54B22",
@@ -464,58 +420,34 @@
         "displacement": "2.2L (2171 cc)",
         "power": "125 kW (170 PS; 168 hp)",
         "years": "2000–2002",
-        "variants": "",
-        "reliability": "",
-        "enquiries": "",
-        "avgReconCost": ""
+        "variants": "2.2i",
+        "reliability": "★★★★☆ [PATTERN DATA]",
+        "enquiries": "-(pattern data)",
+        "avgReconCost": "£2,000–£4,000 [PLACEHOLDER]"
       },
       {
-        "engineCode": "2.2i",
-        "family": "★★★★☆ [PATTERN DATA]",
-        "fuel": "-(pattern data)",
-        "displacement": "£2,000–£4,000 [PLACEHOLDER]",
-        "power": "M52TUB25",
-        "years": "M52 TU",
-        "variants": "",
-        "reliability": "",
-        "enquiries": "",
-        "avgReconCost": ""
+        "engineCode": "M52TUB25",
+        "family": "M52 TU",
+        "fuel": "Petrol",
+        "displacement": "2.5L (2494 cc)",
+        "power": "127 kW (173 PS; 170 hp)",
+        "years": "1998–2000",
+        "variants": "2.3",
+        "reliability": "★★★★☆ [PATTERN DATA]",
+        "enquiries": "-(pattern data)",
+        "avgReconCost": "£2,000–£4,000 [PLACEHOLDER]"
       },
       {
-        "engineCode": "Petrol",
-        "family": "2.5L (2494 cc)",
-        "fuel": "127 kW (173 PS; 170 hp)",
-        "displacement": "1998–2000",
-        "power": "2.3",
-        "years": "★★★★☆ [PATTERN DATA]",
-        "variants": "",
-        "reliability": "",
-        "enquiries": "",
-        "avgReconCost": ""
-      },
-      {
-        "engineCode": "-(pattern data)",
-        "family": "£2,000–£4,000 [PLACEHOLDER]",
-        "fuel": "M54B25",
-        "displacement": "M54",
-        "power": "Petrol",
-        "years": "2.5L (2494 cc)",
-        "variants": "",
-        "reliability": "",
-        "enquiries": "",
-        "avgReconCost": ""
-      },
-      {
-        "engineCode": "137 kW (186 PS; 184 hp)",
-        "family": "2000–2002",
-        "fuel": "2.5i",
-        "displacement": "★★★★☆ [PATTERN DATA]",
-        "power": "-(pattern data)",
-        "years": "£2,200–£4,500 [PLACEHOLDER]",
-        "variants": "",
-        "reliability": "",
-        "enquiries": "",
-        "avgReconCost": ""
+        "engineCode": "M54B25",
+        "family": "M54",
+        "fuel": "Petrol",
+        "displacement": "2.5L (2494 cc)",
+        "power": "137 kW (186 PS; 184 hp)",
+        "years": "2000–2002",
+        "variants": "2.5i",
+        "reliability": "★★★★☆ [PATTERN DATA]",
+        "enquiries": "-(pattern data)",
+        "avgReconCost": "£2,200–£4,500 [PLACEHOLDER]"
       },
       {
         "engineCode": "M52B28",
@@ -524,58 +456,34 @@
         "displacement": "2.8L (2793 cc)",
         "power": "141 kW (192 PS; 189 hp)",
         "years": "1997–1998",
-        "variants": "",
-        "reliability": "",
-        "enquiries": "",
-        "avgReconCost": ""
+        "variants": "2.8",
+        "reliability": "★★★★☆ [PATTERN DATA]",
+        "enquiries": "-(pattern data)",
+        "avgReconCost": "£2,500–£5,000 [PLACEHOLDER]"
       },
       {
-        "engineCode": "2.8",
-        "family": "★★★★☆ [PATTERN DATA]",
-        "fuel": "-(pattern data)",
-        "displacement": "£2,500–£5,000 [PLACEHOLDER]",
-        "power": "M52TUB28",
-        "years": "M52 TU",
-        "variants": "",
-        "reliability": "",
-        "enquiries": "",
-        "avgReconCost": ""
+        "engineCode": "M52TUB28",
+        "family": "M52 TU",
+        "fuel": "Petrol",
+        "displacement": "2.8L (2793 cc)",
+        "power": "142 kW (193 PS; 190 hp)",
+        "years": "1999–2000",
+        "variants": "2.8 (late)",
+        "reliability": "★★★★☆ [PATTERN DATA]",
+        "enquiries": "-(pattern data)",
+        "avgReconCost": "£2,500–£5,000 [PLACEHOLDER]"
       },
       {
-        "engineCode": "Petrol",
-        "family": "2.8L (2793 cc)",
-        "fuel": "142 kW (193 PS; 190 hp)",
-        "displacement": "1999–2000",
-        "power": "2.8 (late)",
-        "years": "★★★★☆ [PATTERN DATA]",
-        "variants": "",
-        "reliability": "",
-        "enquiries": "",
-        "avgReconCost": ""
-      },
-      {
-        "engineCode": "-(pattern data)",
-        "family": "£2,500–£5,000 [PLACEHOLDER]",
-        "fuel": "M54B30",
-        "displacement": "M54",
-        "power": "Petrol",
-        "years": "3.0L (2979 cc)",
-        "variants": "",
-        "reliability": "",
-        "enquiries": "",
-        "avgReconCost": ""
-      },
-      {
-        "engineCode": "170 kW (231 PS; 228 hp)",
-        "family": "2000–2002",
-        "fuel": "3.0i",
-        "displacement": "★★★★★ [PATTERN DATA]",
-        "power": "-(pattern data)",
-        "years": "£3,000–£6,000 [PLACEHOLDER]",
-        "variants": "",
-        "reliability": "",
-        "enquiries": "",
-        "avgReconCost": ""
+        "engineCode": "M54B30",
+        "family": "M54",
+        "fuel": "Petrol",
+        "displacement": "3.0L (2979 cc)",
+        "power": "170 kW (231 PS; 228 hp)",
+        "years": "2000–2002",
+        "variants": "3.0i",
+        "reliability": "★★★★★ [PATTERN DATA]",
+        "enquiries": "-(pattern data)",
+        "avgReconCost": "£3,000–£6,000 [PLACEHOLDER]"
       },
       {
         "engineCode": "S50B32",
@@ -584,58 +492,34 @@
         "displacement": "3.2L (3201 cc)",
         "power": "236 kW (321 PS; 316 hp)",
         "years": "1997–2000",
-        "variants": "",
-        "reliability": "",
-        "enquiries": "",
-        "avgReconCost": ""
+        "variants": "M Roadster (EU)",
+        "reliability": "★★★★☆ [PATTERN DATA]",
+        "enquiries": "-(pattern data)",
+        "avgReconCost": "£5,000–£10,000 [PLACEHOLDER]"
       },
       {
-        "engineCode": "M Roadster (EU)",
-        "family": "★★★★☆ [PATTERN DATA]",
-        "fuel": "-(pattern data)",
-        "displacement": "£5,000–£10,000 [PLACEHOLDER]",
-        "power": "S52B32",
-        "years": "S52",
-        "variants": "",
-        "reliability": "",
-        "enquiries": "",
-        "avgReconCost": ""
+        "engineCode": "S52B32",
+        "family": "S52",
+        "fuel": "Petrol",
+        "displacement": "3.2L (3152 cc)",
+        "power": "179 kW (243 PS; 240 hp)",
+        "years": "1997–2000",
+        "variants": "M Roadster (US)",
+        "reliability": "★★★★☆ [PATTERN DATA]",
+        "enquiries": "-(pattern data)",
+        "avgReconCost": "£4,000–£8,000 [PLACEHOLDER]"
       },
       {
-        "engineCode": "Petrol",
-        "family": "3.2L (3152 cc)",
-        "fuel": "179 kW (243 PS; 240 hp)",
-        "displacement": "1997–2000",
-        "power": "M Roadster (US)",
-        "years": "★★★★☆ [PATTERN DATA]",
-        "variants": "",
-        "reliability": "",
-        "enquiries": "",
-        "avgReconCost": ""
-      },
-      {
-        "engineCode": "-(pattern data)",
-        "family": "£4,000–£8,000 [PLACEHOLDER]",
-        "fuel": "S54B32",
-        "displacement": "S54",
-        "power": "Petrol",
-        "years": "3.2L (3246 cc)",
-        "variants": "",
-        "reliability": "",
-        "enquiries": "",
-        "avgReconCost": ""
-      },
-      {
-        "engineCode": "239–235 kW (325–320 PS)",
-        "family": "2001–2002",
-        "fuel": "M Roadster",
-        "displacement": "★★★★★ [PATTERN DATA]",
-        "power": "-(pattern data)",
-        "years": "£6,000–£12,000 [PLACEHOLDER]",
-        "variants": "",
-        "reliability": "",
-        "enquiries": "",
-        "avgReconCost": ""
+        "engineCode": "S54B32",
+        "family": "S54",
+        "fuel": "Petrol",
+        "displacement": "3.2L (3246 cc)",
+        "power": "239–235 kW (325–320 PS)",
+        "years": "2001–2002",
+        "variants": "M Roadster",
+        "reliability": "★★★★★ [PATTERN DATA]",
+        "enquiries": "-(pattern data)",
+        "avgReconCost": "£6,000–£12,000 [PLACEHOLDER]"
       }
     ],
     "confidenceScore": {
@@ -667,168 +551,114 @@
       "Engine",
       "Typical Mileage",
       "Common Major Failure",
-      "Repair Cost (Specialist)"
+      "Repair Cost (Specialist)",
+      "Replacement Cost",
+      "Ownership Verdict"
     ],
     "rows": [
       {
-        "engine": "Replacement Cost",
-        "typicalMileage": "Ownership Verdict",
-        "commonMajorFailure": "M43B18 (1.8)",
-        "repairCostSpecialist": "100k–150k+",
-        "replacementCostRecon": "",
-        "ownershipVerdict": ""
-      },
-      {
-        "engine": "General wear -M43 simple, robust",
-        "typicalMileage": "£300–£600",
-        "commonMajorFailure": "£800–£1,800",
-        "repairCostSpecialist": "Entry Choice -cheapest to run and replace",
-        "replacementCostRecon": "",
-        "ownershipVerdict": ""
+        "engine": "M43B18 (1.8)",
+        "typicalMileage": "100k–150k+",
+        "commonMajorFailure": "General wear -M43 simple, robust",
+        "repairCostSpecialist": "£300–£600",
+        "replacementCostRecon": "£800–£1,800",
+        "ownershipVerdict": "Entry Choice -cheapest to run and replace"
       },
       {
         "engine": "M43B19 (1.8 late)",
         "typicalMileage": "100k–150k+",
         "commonMajorFailure": "General wear -M43 simple, robust",
         "repairCostSpecialist": "£300–£600",
-        "replacementCostRecon": "",
-        "ownershipVerdict": ""
+        "replacementCostRecon": "£800–£1,800",
+        "ownershipVerdict": "Entry Choice -same as M43B18"
       },
       {
-        "engine": "£800–£1,800",
-        "typicalMileage": "Entry Choice -same as M43B18",
-        "commonMajorFailure": "M44B19 (1.9)",
-        "repairCostSpecialist": "100k–150k+",
-        "replacementCostRecon": "",
-        "ownershipVerdict": ""
-      },
-      {
-        "engine": "Cooling system (plastic components)",
-        "typicalMileage": "£400–£800",
-        "commonMajorFailure": "£1,200–£2,500",
-        "repairCostSpecialist": "Best Four -140 PS, reliable, affordable",
-        "replacementCostRecon": "",
-        "ownershipVerdict": ""
+        "engine": "M44B19 (1.9)",
+        "typicalMileage": "100k–150k+",
+        "commonMajorFailure": "Cooling system (plastic components)",
+        "repairCostSpecialist": "£400–£800",
+        "replacementCostRecon": "£1,200–£2,500",
+        "ownershipVerdict": "Best Four -140 PS, reliable, affordable"
       },
       {
         "engine": "M52TUB20 (2.0)",
         "typicalMileage": "100k–150k+",
         "commonMajorFailure": "Cooling system / VANOS seals",
         "repairCostSpecialist": "£500–£1,000",
-        "replacementCostRecon": "",
-        "ownershipVerdict": ""
+        "replacementCostRecon": "£1,800–£3,500",
+        "ownershipVerdict": "Solid Choice -150 PS, six‑cylinder refinement"
       },
       {
-        "engine": "£1,800–£3,500",
-        "typicalMileage": "Solid Choice -150 PS, six‑cylinder refinement",
-        "commonMajorFailure": "M54B22 (2.2i)",
-        "repairCostSpecialist": "100k–150k+",
-        "replacementCostRecon": "",
-        "ownershipVerdict": ""
-      },
-      {
-        "engine": "VANOS seals / cooling system",
-        "typicalMileage": "£500–£1,000",
-        "commonMajorFailure": "£2,000–£4,000",
-        "repairCostSpecialist": "Solid Choice -170 PS, smooth M54",
-        "replacementCostRecon": "",
-        "ownershipVerdict": ""
+        "engine": "M54B22 (2.2i)",
+        "typicalMileage": "100k–150k+",
+        "commonMajorFailure": "VANOS seals / cooling system",
+        "repairCostSpecialist": "£500–£1,000",
+        "replacementCostRecon": "£2,000–£4,000",
+        "ownershipVerdict": "Solid Choice -170 PS, smooth M54"
       },
       {
         "engine": "M52TUB25 (2.3)",
         "typicalMileage": "100k–150k+",
         "commonMajorFailure": "Cooling system / VANOS seals",
         "repairCostSpecialist": "£500–£1,000",
-        "replacementCostRecon": "",
-        "ownershipVerdict": ""
+        "replacementCostRecon": "£2,000–£4,000",
+        "ownershipVerdict": "Solid Choice -173 PS, proven M52"
       },
       {
-        "engine": "£2,000–£4,000",
-        "typicalMileage": "Solid Choice -173 PS, proven M52",
-        "commonMajorFailure": "M54B25 (2.5i)",
-        "repairCostSpecialist": "100k–150k+",
-        "replacementCostRecon": "",
-        "ownershipVerdict": ""
-      },
-      {
-        "engine": "VANOS seals / cooling system",
-        "typicalMileage": "£500–£1,000",
-        "commonMajorFailure": "£2,200–£4,500",
-        "repairCostSpecialist": "Solid Choice -186 PS, smooth M54",
-        "replacementCostRecon": "",
-        "ownershipVerdict": ""
+        "engine": "M54B25 (2.5i)",
+        "typicalMileage": "100k–150k+",
+        "commonMajorFailure": "VANOS seals / cooling system",
+        "repairCostSpecialist": "£500–£1,000",
+        "replacementCostRecon": "£2,200–£4,500",
+        "ownershipVerdict": "Solid Choice -186 PS, smooth M54"
       },
       {
         "engine": "M52B28 (2.8)",
         "typicalMileage": "100k–150k+",
         "commonMajorFailure": "Cooling system (plastic components)",
         "repairCostSpecialist": "£600–£1,200",
-        "replacementCostRecon": "",
-        "ownershipVerdict": ""
+        "replacementCostRecon": "£2,500–£5,000",
+        "ownershipVerdict": "Sweet Spot -192 PS, proven, dependable"
       },
       {
-        "engine": "£2,500–£5,000",
-        "typicalMileage": "Sweet Spot -192 PS, proven, dependable",
-        "commonMajorFailure": "M52TUB28 (2.8 late)",
-        "repairCostSpecialist": "100k–150k+",
-        "replacementCostRecon": "",
-        "ownershipVerdict": ""
-      },
-      {
-        "engine": "Cooling system / VANOS seals",
-        "typicalMileage": "£600–£1,200",
-        "commonMajorFailure": "£2,500–£5,000",
-        "repairCostSpecialist": "Sweet Spot -193 PS, Double VANOS",
-        "replacementCostRecon": "",
-        "ownershipVerdict": ""
+        "engine": "M52TUB28 (2.8 late)",
+        "typicalMileage": "100k–150k+",
+        "commonMajorFailure": "Cooling system / VANOS seals",
+        "repairCostSpecialist": "£600–£1,200",
+        "replacementCostRecon": "£2,500–£5,000",
+        "ownershipVerdict": "Sweet Spot -193 PS, Double VANOS"
       },
       {
         "engine": "M54B30 (3.0i)",
         "typicalMileage": "100k–150k+",
         "commonMajorFailure": "VANOS seals / cooling system",
         "repairCostSpecialist": "£600–£1,200",
-        "replacementCostRecon": "",
-        "ownershipVerdict": ""
+        "replacementCostRecon": "£3,000–£6,000",
+        "ownershipVerdict": "Best Six -231 PS, the ultimate non‑M"
       },
       {
-        "engine": "£3,000–£6,000",
-        "typicalMileage": "Best Six -231 PS, the ultimate non‑M",
-        "commonMajorFailure": "S50B32 (M Roadster EU)",
-        "repairCostSpecialist": "60k–120k",
-        "replacementCostRecon": "",
-        "ownershipVerdict": ""
-      },
-      {
-        "engine": "VANOS / rod bearings / cooling system",
-        "typicalMileage": "£1,500–£3,000",
-        "commonMajorFailure": "£5,000–£10,000",
-        "repairCostSpecialist": "Collector's Car -321 PS, rewarding but costly",
-        "replacementCostRecon": "",
-        "ownershipVerdict": ""
+        "engine": "S50B32 (M Roadster EU)",
+        "typicalMileage": "60k–120k",
+        "commonMajorFailure": "VANOS / rod bearings / cooling system",
+        "repairCostSpecialist": "£1,500–£3,000",
+        "replacementCostRecon": "£5,000–£10,000",
+        "ownershipVerdict": "Collector's Car -321 PS, rewarding but costly"
       },
       {
         "engine": "S52B32 (M Roadster US)",
         "typicalMileage": "60k–120k",
         "commonMajorFailure": "VANOS / cooling system",
         "repairCostSpecialist": "£1,000–£2,000",
-        "replacementCostRecon": "",
-        "ownershipVerdict": ""
+        "replacementCostRecon": "£4,000–£8,000",
+        "ownershipVerdict": "Collector's Car -240 PS, less powerful than S50"
       },
       {
-        "engine": "£4,000–£8,000",
-        "typicalMileage": "Collector's Car -240 PS, less powerful than S50",
-        "commonMajorFailure": "S54B32 (M Roadster)",
-        "repairCostSpecialist": "60k–120k",
-        "replacementCostRecon": "",
-        "ownershipVerdict": ""
-      },
-      {
-        "engine": "VANOS / rod bearings / cooling system",
-        "typicalMileage": "£2,000–£4,000",
-        "commonMajorFailure": "£6,000–£12,000",
-        "repairCostSpecialist": "Most Expensive -325 PS, ultimate M experience",
-        "replacementCostRecon": "",
-        "ownershipVerdict": ""
+        "engine": "S54B32 (M Roadster)",
+        "typicalMileage": "60k–120k",
+        "commonMajorFailure": "VANOS / rod bearings / cooling system",
+        "repairCostSpecialist": "£2,000–£4,000",
+        "replacementCostRecon": "£6,000–£12,000",
+        "ownershipVerdict": "Most Expensive -325 PS, ultimate M experience"
       }
     ],
     "economicsRule": {

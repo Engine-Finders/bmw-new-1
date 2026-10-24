@@ -309,25 +309,27 @@
         "reliability": "★★★☆☆ [PROVISIONAL -pending dedicated Engine Page]",
         "enquiries": "-(pattern data)",
         "avgReconCost": "£8,000–£15,000 [BMW-QUOTE]"
-      },
-      {
-        "engineCode": "Specifications:",
-        "family": "* Configuration: Naturally aspirated V8",
-        "fuel": "* Bore x Stroke: 92.0 mm x 75.2 mm",
-        "displacement": "* Compression Ratio: 12.0:1",
-        "power": "* Redline: 8,400 RPM",
-        "years": "* Valvetrain: DOHC, 32-valve, Dual VANOS",
-        "variants": "* Fuel System: Sequential multi-point fuel injection",
-        "reliability": "* Block Material: Aluminium",
-        "enquiries": "* Weight: ~202 kg",
-        "avgReconCost": "* Transmissions: 6-speed manual or 7-speed M-DCT dual-clutch"
       }
     ],
     "confidenceScore": {
       "title": "How confident are these ratings?",
       "text": "All ratings are provisional -no dedicated Engine Page exists for the S65 engine family. The S65 is a high-revving masterpiece that won the International Engine of the Year Award for Best 3-litre to 4-litre Engine five years in a row (2008–2012). However, it has well-documented reliability concerns -rod bearing wear, throttle actuator failure, and VANOS cover cracking. The S65B44 found in the GTS and CRT is essentially the same engine with an enlarged stroke and is even rarer and more expensive to maintain."
     },
-    "dataCorrections": []
+    "dataCorrections": [],
+    "notes": {
+      "title": "Specifications:",
+      "items": [
+        "Configuration: Naturally aspirated V8",
+        "Bore x Stroke: 92.0 mm x 75.2 mm",
+        "Compression Ratio: 12.0:1",
+        "Redline: 8,400 RPM",
+        "Valvetrain: DOHC, 32-valve, Dual VANOS",
+        "Fuel System: Sequential multi-point fuel injection",
+        "Block Material: Aluminium",
+        "Weight: ~202 kg",
+        "Transmissions: 6-speed manual or 7-speed M-DCT dual-clutch"
+      ]
+    }
   },
   "overview": {
     "h2": "BMW M3 E90/E92/E93 -Overview",

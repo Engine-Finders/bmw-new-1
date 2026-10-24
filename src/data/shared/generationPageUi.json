@@ -1,0 +1,52 @@
+{
+  "hero": {
+    "trustCaptions": [
+      "",
+      "Body Style",
+      "Covered",
+      "UK's #1 Engine Marketplace"
+    ]
+  },
+  "engineDatabase": {
+    "eyebrow": "Engine Database",
+    "columns": [
+      "Engine Code",
+      "Family",
+      "Fuel",
+      "Displacement",
+      "Power",
+      "Years",
+      "Variants",
+      "Reliability",
+      "2025 Enquiries",
+      "Avg. Recon Cost"
+    ],
+    "mobileColumns": [
+      "Engine Code",
+      "Fuel",
+      "Power",
+      "Years",
+      "Reliability",
+      "Enquiries (2025)",
+      "Avg. Recon Cost"
+    ],
+    "dataNote": {
+      "label": "Data Note",
+      "text": "Enquiries figures are for 2025 and reflect Engine Finders data coverage. “Pattern data” indicates codes without enough direct {code}-specific enquiries to show a standalone figure."
+    },
+    "newBadge": "New",
+    "desktopTagLabels": {
+      "NEWLY ASSIGNED": "PROVISIONAL-NEW"
+    }
+  },
+  "overview": {
+    "eyebrow": "Overview",
+    "keyFacts": "Key Facts",
+    "marketIntelligence": "Market Intelligence"
+  },
+  "bestWorstEngines": {
+    "sectionNumber": "04",
+    "eyebrow": "Best & Worst Engines",
+    "whoItsFor": "Who it's for:"
+  }
+}
