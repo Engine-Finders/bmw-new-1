@@ -439,8 +439,9 @@
   }
 
   .head {
-    height: calc(395 * var(--u));
+    min-height: calc(395 * var(--u));
     padding-top: calc(84 * var(--u));
+    padding-bottom: 16px;
     margin-left: calc(10 * var(--u));
   }
 
@@ -484,11 +485,11 @@
     margin-top: 0;
   }
 
+  /* the text sits under the art and the card grows with it, so nothing is cut off at narrower desktop widths */
   .card {
     display: block;
-    height: calc(357 * var(--u));
-    min-height: 0;
-    padding: 0;
+    min-height: calc(357 * var(--u));
+    padding: calc(179.5 * var(--u)) 0 calc(26 * var(--u));
     border-radius: calc(12 * var(--u));
   }
 
@@ -502,11 +503,8 @@
   }
 
   .body {
-    position: absolute;
-    top: calc(179.5 * var(--u));
-    left: calc(27 * var(--u));
-    right: calc(10 * var(--u));
-    margin: 0;
+    position: relative;
+    margin: 0 calc(10 * var(--u)) 0 calc(27 * var(--u));
     padding: 0;
   }
 
@@ -514,7 +512,6 @@
     font-size: var(--fs-h5);
     line-height: 1.28;
     letter-spacing: 0;
-    white-space: nowrap;
   }
 
   .cardTitle .titleLine {

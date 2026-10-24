@@ -104,7 +104,6 @@
   line-height: calc(48 * var(--u));
   letter-spacing: -0.059em;
   color: var(--f-text);
-  white-space: nowrap;
 }
 
 .title span span span {

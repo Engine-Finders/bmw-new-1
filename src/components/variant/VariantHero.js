@@ -1,394 +1,279 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useState } from "react";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
-import MStripe from "@/components/reusableComponents/MStripe";
+import { variantFont as heroFont } from "./variantFont";
 import { useTheme } from "@/components/shared/themeProvider";
-import GenIcon from "../generation/GenIcons";
-import HomeIcon from "@/components/home/homeIcons";
-import { primaryCtaClass } from "./variantSection";
+import VIcon, { UkFlag } from "./VariantIcons";
+import { dash, stripMarker } from "./variantUi";
 
-// "🔧 Supply & Fit Available", "✅ 12-Month Warranty", "🚚 Nationwide Delivery", "👥 15+ Specialists"
-const BADGE_HOME_ICON_BY_EMOJI = {
-  "🔧": "fitting-engine",
-  "✅": "shield",
-  "🚚": "uk-wide-delivery",
-  "👥": "expert",
-};
-
-const VARIANT_TRUST_BADGE_ICONS = ["fitting-engine", "shield", "uk-wide-delivery", "expert"];
+// "🔧 Supply & Fit Available" -> solid glyph + label; the designs use solid icons here.
+const BADGE_ICONS = { "🔧": "wrench", "✅": "shieldCheck", "🚚": "truck", "👥": "users" };
+const BADGE_FALLBACK = ["wrench", "shieldCheck", "truck", "users"];
 
 function parseBadge(badge = "", index = 0) {
-  const [emoji, ...rest] = badge.split(" ");
+  const [emoji, ...rest] = String(badge).split(" ");
+  const known = BADGE_ICONS[emoji];
+  const label = known ? rest.join(" ") : String(badge);
+  // Two lines as in the design: "Supply & | Fit Available", "12-Month | Warranty".
+  const words = label.split(" ");
+  const cut = words[1] === "&" ? 2 : 1;
   return {
-    icon: BADGE_HOME_ICON_BY_EMOJI[emoji] || VARIANT_TRUST_BADGE_ICONS[index] || "check",
-    label: rest.join(" "),
+    icon: known || BADGE_FALLBACK[index % BADGE_FALLBACK.length],
+    lines: words.length > 1 ? [words.slice(0, cut).join(" "), words.slice(cut).join(" ")] : [label],
   };
 }
 
-function splitPriceAnchor(priceAnchor = "") {
-  const [headline, ...rest] = priceAnchor.split(" · ");
-  return { headline, note: rest.join(" · ") };
+// "BMW 320d Engines - from £1,800 to £7,000 · Common codes: …"
+function parsePrice(priceAnchor = "") {
+  const [head, ...rest] = String(priceAnchor).split(" · ");
+  const index = head.indexOf(" - ");
+  return {
+    name: index === -1 ? head : head.slice(0, index),
+    range: index === -1 ? "" : head.slice(index + 3),
+    codes: rest.join(" · "),
+  };
 }
 
-function splitTagPill(tagPill = "") {
-  const parts = tagPill.split(" • ");
-  return { model: parts[0] || "", body: parts[1] || "", years: parts[2] || "" };
-}
-
-// Trailing phrase after " - " uses the chrome accent, matching home/model heroes.
-function HeroHeadline({ h1 = "" }) {
-  const dashIndex = h1.indexOf(" - ");
-  if (dashIndex === -1) return <span dangerouslySetInnerHTML={{ __html: h1 }} />;
-
-  const lead = h1.slice(0, dashIndex);
-  const accent = h1.slice(dashIndex + 3);
+// "BMW 320d Engine Replacement - Compare Prices & Get Quotes": lead in text colour, the rest in blue.
+function Headline({ h1 = "" }) {
+  const index = h1.indexOf(" - ");
+  if (index === -1) return <span dangerouslySetInnerHTML={{ __html: h1 }} />;
   return (
     <>
-      <span dangerouslySetInnerHTML={{ __html: `${lead} - ` }} />
-      <span className="text-[var(--color-chrome-bright)]" dangerouslySetInnerHTML={{ __html: accent }} />
+      <span className="block" dangerouslySetInnerHTML={{ __html: `${h1.slice(0, index)} —` }} />
+      {/* "Compare Prices & | Get Quotes": the designs break the blue line after the ampersand. */}
+      <span className="block text-[var(--color-v-blue)]" dangerouslySetInnerHTML={{ __html: h1.slice(index + 3).replace(/(&amp;|&)\s+/, "$1<br>") }} />
     </>
   );
 }
 
-// Inline UK flag - emoji regional-indicator flags don't render as a flag glyph
-// on Windows (shows "GB" letter tiles instead), so use a real vector icon.
-function TickerItems({ items, isDark, dotSizeClass, keyPrefix }) {
-  return items.map((item, index) => (
-    <span key={`${keyPrefix}-${index}`} className="flex shrink-0 items-center gap-1.5">
-      <span
-        className={`${dotSizeClass} shrink-0 rounded-full ${
-          index === 0 ? "bg-[#189454]" : isDark ? "bg-white/40" : "bg-[var(--color-border-strong)]"
+// Hero artwork: the car already stands on its floor inside the picture, so it can never float.
+// Phones: larger than the screen and anchored bottom-right (car beside the paragraph), top edge faded on the picture, bottom edge on its box.
+// Desktop: fills the hero; the left of the picture is already faded for the text.
+// A line-up scene (several cars, no fade of its own) stays in the right ~60% and fades into the page.
+function HeroArt({ art }) {
+  const width = art.lineup ? "lg:w-[62%] lg:max-w-none lg:[mask-image:linear-gradient(90deg,transparent_0%,#000_34%)]" : "lg:w-full lg:max-w-[1440px] lg:[mask-image:linear-gradient(90deg,transparent_0%,#000_16%)]";
+  return (
+    <div
+      aria-hidden="true"
+      className={`pointer-events-none absolute -inset-x-[var(--gutter)] -top-6 bottom-0 overflow-hidden [mask-image:linear-gradient(to_bottom,#000_0%,#000_80%,transparent_100%)] md:-top-8 lg:inset-x-auto lg:inset-y-0 lg:right-0 ${width}`}
+    >
+      <Image
+        src={art.src}
+        alt=""
+        width={art.width}
+        height={art.height}
+        priority
+        sizes="(min-width: 1440px) 1440px, (min-width: 1024px) 100vw, 140vw"
+        style={{ objectPosition: art.position || (art.lineup ? "75% 70%" : "100% 80%") }}
+        className={`absolute -bottom-6 right-0 h-auto w-[165%] max-w-none translate-x-[9%] [mask-image:linear-gradient(to_bottom,transparent_0%,#000_28%)] md:-bottom-8 md:w-[110%] lg:bottom-auto lg:right-auto lg:left-0 lg:top-0 lg:translate-x-0 ${
+          art.lineup
+            ? "lg:h-full lg:w-full lg:object-cover lg:[mask-image:none]"
+            : // Reference layout: the whole picture at the hero's width, raised so the roof lines up with the headline; its floor fades into the page.
+              "lg:w-full lg:-translate-y-[14%] lg:[mask-image:linear-gradient(to_bottom,#000_72%,transparent_100%)]"
         }`}
-        aria-hidden="true"
       />
-      {item}
-    </span>
-  ));
-}
-
-function TickerHalf({ items, isDark, dotSizeClass, copies, keyPrefix }) {
-  return (
-    <div className="flex shrink-0 items-center gap-8 pr-8">
-      {Array.from({ length: copies }, (_, copyIndex) => (
-        <TickerItems
-          key={`${keyPrefix}-copy-${copyIndex}`}
-          items={items}
-          isDark={isDark}
-          dotSizeClass={dotSizeClass}
-          keyPrefix={`${keyPrefix}-${copyIndex}`}
-        />
-      ))}
     </div>
   );
 }
 
-function TickerTrack({ items, isDark, dotSizeClass = "h-2 w-2" }) {
-  const viewportRef = useRef(null);
-  const measureRef = useRef(null);
-  const [copies, setCopies] = useState(2);
-  const [duration, setDuration] = useState(32);
-
-  useEffect(() => {
-    const viewport = viewportRef.current;
-    const measure = measureRef.current;
-    if (!viewport || !measure || items.length === 0) return;
-
-    const update = () => {
-      const setWidth = measure.scrollWidth;
-      const viewWidth = viewport.offsetWidth;
-      if (!setWidth || !viewWidth) return;
-
-      const needed = Math.max(2, Math.ceil(viewWidth / setWidth) + 1);
-      setCopies(needed);
-      setDuration(Math.max(18, (setWidth * needed) / 42));
-    };
-
-    update();
-    const observer = new ResizeObserver(update);
-    observer.observe(viewport);
-    return () => observer.disconnect();
-  }, [items]);
-
-  return (
-    <div ref={viewportRef} className="relative overflow-hidden">
-      <div
-        ref={measureRef}
-        className="pointer-events-none invisible absolute left-0 top-0 flex items-center gap-8 pr-8"
-        aria-hidden="true"
-      >
-        <TickerItems items={items} isDark={isDark} dotSizeClass={dotSizeClass} keyPrefix="measure" />
-      </div>
-      <div className="flex w-max animate-ticker will-change-transform" style={{ animationDuration: `${duration}s` }}>
-        <TickerHalf items={items} isDark={isDark} dotSizeClass={dotSizeClass} copies={copies} keyPrefix="a" />
-        <TickerHalf items={items} isDark={isDark} dotSizeClass={dotSizeClass} copies={copies} keyPrefix="b" />
-      </div>
-    </div>
-  );
-}
-
-function UkFlagIcon({ className = "h-4 w-5" }) {
-  return (
-    <svg viewBox="0 0 20 14" className={className} aria-hidden="true">
-      <rect width="20" height="14" fill="#012169" />
-      <path d="M0 0 20 14M20 0 0 14" stroke="#fff" strokeWidth="2.4" />
-      <path d="M0 0 20 14M20 0 0 14" stroke="#C8102E" strokeWidth="1.2" />
-      <path d="M10 0v14M0 7h20" stroke="#fff" strokeWidth="4" />
-      <path d="M10 0v14M0 7h20" stroke="#C8102E" strokeWidth="2.4" />
-    </svg>
-  );
-}
+const PLAIN_LINKS = "[&_a]:[font-weight:inherit] [&_a]:text-inherit hover:[&_a]:underline";
 
 export default function VariantHero({ data }) {
   const { theme } = useTheme();
   const router = useRouter();
-  const [regNumber, setRegNumber] = useState("");
-
+  const [reg, setReg] = useState("");
   if (!data) return null;
 
-  function goToQuoteWithReg(event) {
+  const isDark = theme === "dark";
+  const scene = data.heroScene;
+  const art = data.heroArt
+    ? isDark
+      ? data.heroArt.dark
+      : data.heroArt.light
+    : scene
+      ? { src: (isDark && scene.darkSrc) || scene.src, width: scene.width, height: scene.height, lineup: scene.lineup }
+      : null;
+  const price = parsePrice(data.priceAnchor);
+  const pill = String(data.tagPill || "").split(" • ");
+  const badges = (data.trustBadges || []).map(parseBadge);
+  const ticker = String(data.ticker || "").replace(/^●\s*/, "").split(" · ").filter(Boolean);
+  const form = data.registrationInput;
+
+  function submit(event) {
     event.preventDefault();
-    const cleaned = regNumber.replace(/\s+/g, "").toUpperCase();
-    if (!cleaned) {
-      router.push("/quote");
-      return;
-    }
-    router.push(`/quote?reg=${encodeURIComponent(cleaned)}`);
+    const cleaned = reg.replace(/\s+/g, "").toUpperCase();
+    router.push(cleaned ? `/quote?reg=${encodeURIComponent(cleaned)}` : form?.cta?.href || "/quote");
   }
 
-  const isDark = theme === "dark";
-  // This car's generation standing in BMW's own scene, light or dark (set server-side), or the
-  // client's line-up scene when the model has no photo of its own (I-Pace). Laid out like the model hero.
-  const scene = data.heroScene;
-  const sceneSrc = scene ? (isDark && scene.darkSrc) || scene.src : null;
-  const carAlt = `BMW ${data.vehicle || ""}`.trim();
-  const price = splitPriceAnchor(data.priceAnchor);
-  const pill = splitTagPill(data.tagPill);
-  const tickerItems = (data.ticker || "").replace(/^●\s*/, "").split(" · ").filter(Boolean);
+  const card = "rounded-[10px] border border-[var(--color-v-border)] bg-[var(--color-v-panel)] shadow-[0_10px_30px_var(--color-v-shadow)]";
+  const field = "rounded-[8px] border border-[var(--color-v-border-strong)] bg-[var(--color-v-panel)] text-[var(--color-v-text)]";
 
-  const headingClass = isDark ? "text-white" : "text-[var(--color-text)]";
-  const bodyTextClass = isDark ? "text-white/85" : "text-[var(--color-text-muted)]";
-  const cardBorderClass = isDark ? "border-white/20" : "border-[var(--color-border)]";
-  const cardBgClass = isDark ? "bg-[var(--color-surface-glass)]" : "bg-[rgba(255,255,255,0.7)]";
-  const innerBgClass = isDark ? "bg-[rgba(2,7,11,0.55)]" : "bg-[rgba(255,255,255,0.85)]";
-  const tagPillClass = isDark ? "border-white/30 bg-[rgba(2,7,11,0.55)] text-white" : "border-[var(--color-border-strong)] bg-[rgba(255,255,255,0.75)] text-[var(--color-text)]";
-  // Stronger contrast than the plain --color-border token, since these sit on
-  // a translucent card over a busy photo background rather than a solid surface.
-  const dividerClass = isDark ? "bg-white/35" : "bg-[rgba(7,24,39,0.25)]";
-  const dividerBorderClass = isDark ? "border-white/35" : "border-[rgba(7,24,39,0.25)]";
-  const badgeTextClass = isDark ? "text-white/85" : "text-[var(--color-text)]";
-  const heroDescriptionShadow = isDark
-    ? ""
-    : "[text-shadow:0_0_8px_#fff,0_0_16px_#fff,0_0_24px_rgba(255,255,255,0.9),0_1px_2px_rgba(255,255,255,0.95)]";
+  // Dark designs: white icons in the desktop row, blue ones in the phone card; the shield is green in both.
+  const badgeIcon = (icon, desktop) =>
+    icon === "shieldCheck"
+      ? "text-[var(--color-v-green)]"
+      : isDark
+        ? desktop
+          ? "text-[var(--color-v-text)]"
+          : "text-[var(--color-v-blue)]"
+        : "text-[var(--color-v-navy)]";
 
-  // Desktop: single row over the hero image, floating vertical dividers between every item.
-  // Self-hides on mobile so it can stay embedded in the hero section for both breakpoints.
-  const desktopTrustBadges = data.trustBadges?.length > 0 ? (
-    <div className={`mt-6 hidden rounded-md border ${cardBorderClass} ${cardBgClass} px-3 py-2 backdrop-blur-sm md:block`}>
-      <div className="flex items-stretch py-0.5">
-        {data.trustBadges.map((badge, index) => {
-          const { icon, label } = parseBadge(badge, index);
-          return (
-            <div key={badge} className="flex flex-1 items-stretch">
-              {index > 0 ? (
-                <span aria-hidden="true" className={`mx-3 my-0.5 w-px shrink-0 self-center ${dividerClass}`} style={{ height: "70%" }} />
-              ) : null}
-              <div className="flex w-full items-center gap-2 text-left">
-                <span className="flex h-12 w-12 shrink-0 items-center justify-center md:h-14 md:w-14">
-                  <HomeIcon name={icon} isDark={isDark} className="h-12 w-12 object-contain md:h-14 md:w-14" />
-                </span>
-                <span className={`lg:text-[15px] text-[0.88rem] leading-[1.3] ${badgeTextClass}`}>{label}</span>
-              </div>
-            </div>
-          );
-        })}
-      </div>
-    </div>
-  ) : null;
-
-  // Mobile: single-row 4-column icon-on-top grid, rendered below the hero image
-  // (not overlapping the car) in normal page flow.
-  const mobileTrustBadges = data.trustBadges?.length > 0 ? (
-    <div className={`rounded-md border ${cardBorderClass} ${cardBgClass} p-2 backdrop-blur-sm md:hidden`}>
-      <div className="grid grid-cols-4 gap-x-1 text-center">
-        {data.trustBadges.map((badge, index) => {
-          const { icon, label } = parseBadge(badge, index);
-          return (
-            <div
-              key={badge}
-              className={`flex flex-col items-center gap-1 px-0.5 ${index > 0 ? `border-l ${dividerBorderClass}` : ""}`}
-            >
-              <span className="flex h-12 w-12 shrink-0 items-center justify-center">
-                <HomeIcon name={icon} isDark={isDark} className="h-12 w-12 md:h-12 md:w-12 object-contain" />
-              </span>
-              <span className={`lg:text-[15px] text-[12px] leading-tight ${badgeTextClass}`}>{label}</span>
-            </div>
-          );
-        })}
-      </div>
-    </div>
-  ) : null;
-
-  // Price/code row, shared by the mobile "engine summary" card and the
-  // desktop combined card.
-  const priceLinkClass = "[&_a]:text-[var(--color-primary)] [&_a]:underline [&_a]:underline-offset-2";
-
-  const priceRow = data.priceAnchor ? (
-    <div className="lg:text-[15px] flex flex-wrap items-center gap-2 text-[12px] md:text-[0.92rem]">
-      <GenIcon name="tag" className="h-8 w-8 shrink-0 md:h-7 md:w-7" />
-      <span className={`font-semibold ${headingClass} ${priceLinkClass}`} dangerouslySetInnerHTML={{ __html: price.headline }} />
-      {price.note ? (
-        <span className={`hidden md:inline ${bodyTextClass} ${priceLinkClass}`}>
-          · <span dangerouslySetInnerHTML={{ __html: price.note }} />
+  const pillNode = pill.length ? (
+    // Phones: rounder pill on a dark fill, white text in the dark design; desktop and light: blue text.
+    <p className="t-label inline-flex w-fit max-w-full flex-wrap items-center gap-x-2 gap-y-0.5 rounded-[12px] max-md:text-[clamp(10.5px,2.75vw,13px)] md:gap-x-2.5 md:gap-y-1 border-[1.5px] border-[var(--color-v-blue)] bg-[color-mix(in_srgb,var(--color-v-panel)_55%,transparent)] px-4 py-2 font-medium text-[var(--color-v-blue)] md:rounded-[6px] md:border md:px-3 md:py-1.5 md:font-normal [[data-theme=dark]_&]:max-md:text-[var(--color-v-text)]">
+      {pill.map((part, index) => (
+        <span key={index} className="inline-flex items-center gap-2 whitespace-nowrap md:gap-2.5">
+          {index ? <span aria-hidden="true">•</span> : null}
+          <span className={PLAIN_LINKS} dangerouslySetInnerHTML={{ __html: part }} />
         </span>
-      ) : null}
-    </div>
+      ))}
+    </p>
   ) : null;
 
-  // Registration row → redirects to /quote with ?reg=… (lookup stays on quote page).
-  // Spec's "top split" row (country + input) holds on every breakpoint;
-  // only the full-width submit button drops to its own row.
-  const registrationRow = data.registrationInput ? (
-    <form
-      onSubmit={goToQuoteWithReg}
-      className="flex w-full flex-col gap-1.5 md:flex-row md:items-center md:gap-3"
-    >
-      <div className="flex w-full items-center gap-1.5 md:flex-1 md:gap-3">
-        <span className={`lg:text-[15px] flex shrink-0 items-center gap-1.5 rounded-md border ${cardBorderClass} ${innerBgClass} px-2.5 py-2 text-[0.8rem] font-semibold md:py-3 md:text-[0.92rem] ${headingClass}`}>
-          <UkFlagIcon />
-          GB
-        </span>
-        <input
-          type="text"
-          name="reg"
-          value={regNumber}
-          onChange={(event) => setRegNumber(event.target.value.toUpperCase())}
-          placeholder={data.registrationInput.placeholder}
-          autoComplete="off"
-          className={`lg:text-[15px] min-w-0 flex-1 rounded-md border ${cardBorderClass} ${innerBgClass} px-2.5 py-2 text-[0.8rem] uppercase focus:outline-none md:py-3 md:text-[0.92rem] ${headingClass} ${isDark ? "placeholder:text-white/50" : "placeholder:text-[var(--color-text-soft)]"}`}
-        />
+  const formNode = form ? (
+    <form onSubmit={submit} className="flex w-full flex-col gap-3 md:flex-row md:items-stretch">
+      <div className="flex min-w-0 flex-1 gap-3">
+        <label className={`relative flex shrink-0 items-center gap-2 pl-3 pr-2 md:gap-2.5 md:pl-3.5 md:pr-3 ${field} bg-[var(--color-v-band)]`}>
+          <span className="sr-only">Country</span>
+          <UkFlag className="h-4 w-6 shrink-0 md:h-5 md:w-8" />
+          <select
+            defaultValue="GB"
+            className="t-body cursor-pointer appearance-none bg-transparent py-3 pr-6 font-semibold text-[var(--color-v-text)] focus:outline-none"
+          >
+            <option value="GB">GB</option>
+          </select>
+          <VIcon name="chevronDown" className="pointer-events-none absolute right-3 h-4 w-4" strokeWidth={2.2} />
+        </label>
+        <label className="min-w-0 flex-1">
+          <span className="sr-only">Registration</span>
+          <input
+            type="text"
+            name="reg"
+            value={reg}
+            onChange={(event) => setReg(event.target.value.toUpperCase())}
+            placeholder={dash(form.placeholder)}
+            autoComplete="off"
+            className={`t-body h-full w-full px-3 py-3 placeholder:text-[length:var(--fs-label)] placeholder:text-[var(--color-v-soft)] md:px-4 md:placeholder:text-[length:var(--fs-body)] focus:outline-none focus-visible:border-[var(--color-v-blue)] ${field}`}
+          />
+        </label>
       </div>
-      {data.registrationInput.cta ? (
+      {form.cta ? (
         <button
           type="submit"
-          className={`${primaryCtaClass("flex w-full shrink-0 items-center justify-center gap-2 whitespace-nowrap rounded-md px-2 py-2 text-center text-[0.68rem] md:w-auto md:py-3 md:px-6 md:text-[0.9rem]")}`}
+          className="t-body inline-flex shrink-0 items-center justify-center gap-3 rounded-[6px] bg-[var(--color-v-blue-btn)] text-center md:whitespace-nowrap px-6 py-3 font-semibold text-white transition hover:brightness-110"
         >
-          {data.registrationInput.cta.label.replace(/\s*→\s*$/, "")}
-          <GenIcon name="arrow" className="h-4 w-4 shrink-0 md:h-5 md:w-5" />
+          {stripMarker(form.cta.label)}
+          <VIcon name="arrowRight" className="h-[18px] w-[18px]" strokeWidth={2.2} />
         </button>
       ) : null}
     </form>
   ) : null;
 
-  // Mobile: two distinct stacked cards (engine summary, then the reg/quote form).
-  // Icon sits left, vertically centered against both text lines.
-  const mobileEngineSummaryCard = data.priceAnchor ? (
-    <div className={`mt-1.5 flex w-full items-center gap-3 rounded-md border ${cardBorderClass} ${cardBgClass} p-2.5 backdrop-blur-sm md:hidden`}>
-      <GenIcon name="tag" className="h-11 w-11 md:h-9 md:w-9 shrink-0" />
-      <div className="flex min-w-0 flex-col gap-0.5">
-        <span
-          className={`lg:text-[15px] text-[12px] font-semibold ${headingClass} ${priceLinkClass}`}
-          dangerouslySetInnerHTML={{ __html: price.headline }}
-        />
-        {price.note ? (
-          <span className={`lg:text-[15px] text-[12px] ${bodyTextClass} ${priceLinkClass}`} dangerouslySetInnerHTML={{ __html: price.note }} />
-        ) : null}
-      </div>
-    </div>
-  ) : null;
-
-  const mobileQuoteWidget = data.registrationInput ? (
-    <div className={`mt-1.5 flex w-full flex-col gap-2 rounded-md border ${cardBorderClass} ${cardBgClass} p-2.5 backdrop-blur-sm md:hidden`}>
-      {registrationRow}
-    </div>
-  ) : null;
-
-  // Desktop: single combined card (price/codes row over the reg/quote row),
-  // matching the original design.
-  const desktopQuoteWidget = data.priceAnchor || data.registrationInput ? (
-    <div className={`mt-6 hidden w-full flex-col gap-4 rounded-md border ${cardBorderClass} ${cardBgClass} p-5 backdrop-blur-sm md:flex`}>
-      {priceRow}
-      {registrationRow}
-    </div>
-  ) : null;
-
   return (
     <>
-      <section className={`relative w-full overflow-hidden bg-[var(--color-page)] xl:min-h-[640px] ${headingClass}`}>
-        {/* Desktop: the scene sits on the right and fades in from the page colour, as on the model page.
-            Below 1600px it starts a third of the way in so the copy stays on plain page colour. */}
-        {sceneSrc ? (
-          <div className="absolute inset-y-0 left-[34%] right-0 hidden xl:block min-[1600px]:left-auto min-[1600px]:aspect-[3/2]">
-            <Image src={sceneSrc} alt={carAlt} fill className="object-cover object-right-bottom" sizes="(min-width: 1280px) 1200px, 100vw" priority />
-            <div className="absolute inset-0 bg-[linear-gradient(90deg,var(--color-page)_0%,color-mix(in_srgb,var(--color-page)_88%,transparent)_16%,color-mix(in_srgb,var(--color-page)_45%,transparent)_34%,transparent_56%)]" />
-            <div className="absolute inset-x-0 bottom-0 h-8 bg-[linear-gradient(0deg,var(--color-page)_0%,transparent_100%)]" />
-          </div>
-        ) : null}
-
-        <div className="relative mx-auto flex w-full max-w-8xl flex-col px-4 pb-4 pt-2 md:px-8 md:pb-6 md:pt-5 xl:min-h-[640px] xl:justify-center xl:py-8">
-          <div className="flex w-full max-w-[640px] flex-col gap-1.5 md:gap-2">
-            <span className={`lg:text-[15px] inline-flex w-fit max-w-full flex-wrap items-center gap-x-2 gap-y-1 rounded-md border px-3 py-2 text-[0.82rem] leading-[1.35] md:px-2.5 md:py-1.5 md:text-[13px] ${tagPillClass}`}>
-              <GenIcon name="car" className="h-3.5 w-3.5 shrink-0 text-[var(--color-primary)]" />
-              <strong className="font-semibold text-[var(--color-primary)]" dangerouslySetInnerHTML={{ __html: pill.model }} />
-              {pill.body ? (
-                <>
-                  <span aria-hidden="true" className="opacity-50">•</span>
-                  <span dangerouslySetInnerHTML={{ __html: pill.body }} />
-                </>
-              ) : null}
-              {pill.years ? (
-                <>
-                  <span aria-hidden="true" className="opacity-50">•</span>
-                  <span dangerouslySetInnerHTML={{ __html: pill.years }} />
-                </>
-              ) : null}
-            </span>
-
-            <h1 className={`t-h1 ${headingClass}`}>
-              <HeroHeadline h1={data.h1} />
-            </h1>
-
-            <MStripe />
-
+      <section className="relative overflow-hidden bg-[var(--color-v-page)] [background-image:linear-gradient(180deg,var(--color-v-page)_0%,var(--color-v-band)_100%)]">
+        <div className="site-container relative pb-6 pt-6 md:pb-8 md:pt-8 lg:static lg:pb-8 lg:pt-9">
+          {/* Phones: the art sits behind this block, car at its lower right. From lg the block has no box, so the art spans the whole hero. */}
+          <div className={`relative max-md:pb-[33vw] lg:contents ${heroFont.className}`}>
+            {art ? <HeroArt art={art} /> : null}
+            <div className="relative max-w-[640px]">
+              {pillNode}
+              <h1 className="t-h1 mt-4 max-w-[17ch] font-semibold max-md:text-[clamp(28px,7.6vw,36px)] tracking-[-0.025em] text-[var(--color-v-text)] lg:mt-5">
+                <Headline h1={data.h1} />
+              </h1>
+            </div>
             <p
-              className={`t-p max-w-full md:max-w-[560px] ${isDark ? "text-white/85" : "text-[var(--color-text)]"} ${heroDescriptionShadow}`}
-              dangerouslySetInnerHTML={{ __html: data.subHeadline }}
+              className={`t-p relative mt-4 max-w-[52%] leading-[1.75] max-md:text-[clamp(12.5px,3vw,15px)] text-[color-mix(in_srgb,var(--color-v-text)_86%,transparent)] md:max-w-[520px] md:leading-[1.6] lg:max-w-[min(560px,46%)] ${PLAIN_LINKS}`}
+              dangerouslySetInnerHTML={{ __html: dash(data.subHeadline) }}
             />
           </div>
 
-          {/* Phones, tablets + small laptops: the scene as its own band, so it never sits behind the copy */}
-          {sceneSrc ? (
-            <div className="relative -mx-4 my-3 aspect-[3/2] max-h-[460px] w-[calc(100%+2rem)] overflow-hidden md:-mx-8 md:w-[calc(100%+4rem)] xl:hidden">
-              <Image src={sceneSrc} alt={carAlt} fill className="object-cover object-[70%_bottom]" sizes="100vw" priority />
-              <div className="absolute inset-x-0 top-0 h-14 bg-[linear-gradient(180deg,var(--color-page)_0%,transparent_100%)]" />
-              <div className="absolute inset-x-0 bottom-0 h-14 bg-[linear-gradient(0deg,var(--color-page)_0%,transparent_100%)]" />
-            </div>
+          {badges.length ? (
+            <>
+              {/* Desktop: one row, short centred dividers */}
+              <ul className="relative mt-6 hidden max-w-[min(640px,54%)] items-center lg:flex">
+                {badges.map((badge, index) => (
+                  <li key={index} className="flex items-center">
+                    {index ? <span aria-hidden="true" className="mx-4 h-9 w-px bg-[var(--color-v-border-strong)]" /> : null}
+                    <span className="flex items-center gap-3">
+                      <VIcon name={badge.icon} solid className={`h-7 w-7 shrink-0 ${badgeIcon(badge.icon, true)}`} />
+                      <span className="t-label leading-[1.3] text-[var(--color-v-text)]">
+                        {badge.lines.map((line) => (
+                          <span key={line} className="block whitespace-nowrap">{line}</span>
+                        ))}
+                      </span>
+                    </span>
+                  </li>
+                ))}
+              </ul>
+              {/* Phone / tablet: bordered card, four columns, icon above label */}
+              <ul className={`relative mt-6 grid grid-cols-4 py-4 lg:hidden ${card}`}>
+                {badges.map((badge, index) => (
+                  <li key={index} className="relative flex flex-col items-center gap-2 px-1 text-center">
+                    {index ? <span aria-hidden="true" className="absolute left-0 top-1/2 h-[70%] w-px -translate-y-1/2 bg-[var(--color-v-border)]" /> : null}
+                    <VIcon name={badge.icon} solid className={`h-8 w-8 ${badgeIcon(badge.icon)}`} />
+                    <span className="t-label leading-[1.3] text-[var(--color-v-text)]">
+                      {badge.lines.map((line) => (
+                        <span key={line} className="block">{line}</span>
+                      ))}
+                    </span>
+                  </li>
+                ))}
+              </ul>
+            </>
           ) : null}
 
-          <div className="flex w-full max-w-[820px] flex-col gap-1.5 md:gap-2">
-            {desktopTrustBadges}
-            {mobileTrustBadges}
-            {mobileEngineSummaryCard}
-            {mobileQuoteWidget}
-            {desktopQuoteWidget}
-
-            {/* Bottom micro-feature ticker: compact card in the mobile stack,
-                matching the other hero cards; desktop keeps the full-bleed strip below. */}
-            {tickerItems.length > 0 ? (
-              <div className={`lg:text-[15px] mt-1.5 overflow-hidden rounded-md border ${cardBorderClass} ${isDark ? "bg-black/70" : "bg-white/85"} py-2.5 text-[12px] ${bodyTextClass} md:hidden`}>
-                <TickerTrack items={tickerItems} isDark={isDark} dotSizeClass="h-1.5 w-1.5" />
+          {/* Price anchor + quote form: two cards in light, one panel split by a rule in dark */}
+          <div className="relative mt-4 max-w-[900px] lg:mt-6 [[data-theme=dark]_&]:lg:rounded-[10px] [[data-theme=dark]_&]:lg:border [[data-theme=dark]_&]:lg:border-[var(--color-v-border-strong)] [[data-theme=dark]_&]:lg:bg-[color-mix(in_srgb,var(--color-v-panel)_80%,transparent)]">
+            {data.priceAnchor ? (
+              <div className="flex items-center gap-3.5 rounded-[10px] border border-[var(--color-v-border)] bg-[color-mix(in_srgb,var(--color-v-band)_85%,transparent)] px-5 py-3.5 backdrop-blur-md lg:max-w-[820px] lg:py-3 [[data-theme=dark]_&]:lg:max-w-none [[data-theme=dark]_&]:lg:rounded-none [[data-theme=dark]_&]:lg:border-0 [[data-theme=dark]_&]:lg:border-b [[data-theme=dark]_&]:lg:border-[var(--color-v-border-strong)] [[data-theme=dark]_&]:lg:bg-transparent">
+                <VIcon name="tag" solid className="h-7 w-7 shrink-0 text-[var(--color-v-blue)] lg:h-6 lg:w-6 [[data-theme=dark]_&]:text-[var(--color-v-text)]" />
+                <p className={`t-body flex min-w-0 flex-1 flex-col gap-x-12 gap-y-0.5 text-[var(--color-v-text)] lg:flex-row lg:flex-wrap lg:items-center lg:[&>span]:whitespace-nowrap ${PLAIN_LINKS}`}>
+                  <span>
+                    <strong className="font-semibold" dangerouslySetInnerHTML={{ __html: price.name }} />
+                    {price.range ? <span dangerouslySetInnerHTML={{ __html: ` — ${price.range}` }} /> : null}
+                  </span>
+                  {price.codes ? (
+                    <span className="text-[var(--color-v-blue)] lg:text-[var(--color-v-text)]" dangerouslySetInnerHTML={{ __html: dash(price.codes) }} />
+                  ) : null}
+                </p>
+              </div>
+            ) : null}
+            {formNode ? (
+              <div className={`mt-4 p-4 md:p-5 lg:mt-3 lg:px-4 lg:py-3.5 [[data-theme=dark]_&]:lg:mt-0 [[data-theme=dark]_&]:lg:border-0 [[data-theme=dark]_&]:lg:bg-transparent [[data-theme=dark]_&]:lg:shadow-none ${card}`}>
+                {formNode}
               </div>
             ) : null}
           </div>
+
+          {ticker.length ? (
+            <ul className={`t-body relative mt-4 flex flex-wrap items-center gap-x-3 gap-y-2 px-5 py-4 text-[var(--color-v-text)] lg:hidden ${card}`}>
+              {ticker.map((item, index) => (
+                <li key={item} className="flex items-center gap-3">
+                  {index === 0 ? <span aria-hidden="true" className="h-3 w-3 rounded-full bg-[var(--color-v-green)]" /> : null}
+                  {item}
+                  {index < ticker.length - 1 ? <span aria-hidden="true">•</span> : null}
+                </li>
+              ))}
+            </ul>
+          ) : null}
         </div>
       </section>
 
-      {tickerItems.length > 0 ? (
-        <div className="hidden w-full overflow-hidden border-b border-[var(--color-border)] bg-[var(--color-surface)] py-3 md:block">
-          <div className="lg:text-[15px] text-[12px] text-[var(--color-text-muted)] md:text-[13px]">
-            <TickerTrack items={tickerItems} isDark={isDark} />
-          </div>
+      {ticker.length ? (
+        <div className="hidden border-y border-[var(--color-v-border)] bg-[var(--color-v-band)] lg:block">
+          <ul className="site-container t-label flex flex-wrap items-center justify-between gap-x-3 gap-y-1 py-3 text-[var(--color-v-text)]">
+            <li aria-hidden="true" className="h-3 w-3 shrink-0 rounded-full bg-[var(--color-v-green)]" />
+            {ticker.map((item) => (
+              <li key={item} className="flex items-center gap-3 whitespace-nowrap">
+                <span aria-hidden="true">•</span>
+                {item}
+              </li>
+            ))}
+          </ul>
         </div>
       ) : null}
     </>

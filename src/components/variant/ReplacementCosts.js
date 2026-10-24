@@ -1,217 +1,196 @@
-"use client";
+import Link from "next/link";
+import VIcon from "./VariantIcons";
+import { Accordion } from "./VariantToggles";
+import { TagLine } from "./EraMap";
+import { Rich, byKeyword, spaceRange, splitTags, stripMarker, ui } from "./variantUi";
+import { variantFont } from "./variantFont";
 
-import { useState } from "react";
-import Image from "next/image";
-import { useTheme } from "@/components/shared/themeProvider";
-import MStripe from "@/components/reusableComponents/MStripe";
-import GenIcon from "../generation/GenIcons";
-import { variantSectionBg, VariantSectionHeading, tableHeaderClass, primaryBadgeClass, primaryCtaClass, stripCtaArrow } from "./variantSection";
+const copy = ui.replacementCosts;
+const FIELDS = ["engineType", "supplyOnly", "fittedIndie", "warranty", "bestFor"];
 
-// Used, Reconditioned, Rebuilt, Main Dealer New
-const ROW_ICONS = ["tag", "refresh", "wrench", "dealer"];
-const DESKTOP_COLS = "grid-cols-[1.2fr_1fr_1fr_0.9fr_1.4fr]";
-const HEADER_IMAGE = "/home-image/sec2-bg.webp";
-
-function DesktopRow({ row, icon, isDark }) {
-  const rowClass = isDark ? "bg-[var(--color-primary)] text-white" : "bg-[var(--color-table-surface)] text-[var(--color-text)]";
-  const cellDivider = isDark ? "border-white/15" : "border-[var(--color-border)]";
-  const mutedText = isDark ? "text-white/70" : "text-[var(--color-text-muted)]";
-  const borderBottom = isDark ? "border-white/15" : "border-[var(--color-border)]";
-
+// Price / warranty value; a trailing "[PLACEHOLDER]" style tag goes on its own line.
+function Value({ value }) {
+  const { main, tags } = splitTags(value);
   return (
-    <div className={`lg:text-[15px] grid ${DESKTOP_COLS} items-center gap-px ${rowClass} px-2 py-3 text-[0.82rem] border-b ${borderBottom} last:border-b-0`}>
-      <span className="flex items-center gap-2 px-2 font-semibold">
-        <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-[var(--color-primary-soft)] text-[var(--color-primary)]">
-          <GenIcon name={icon} className="h-8 w-8 md:h-6 md:w-6" />
-        </span>
-        <span dangerouslySetInnerHTML={{ __html: row.engineType }} />
-      </span>
-      <span className={`px-2 border-l ${cellDivider} ${mutedText}`} dangerouslySetInnerHTML={{ __html: row.supplyOnly }} />
-      <span className={`px-2 border-l ${cellDivider} ${mutedText}`} dangerouslySetInnerHTML={{ __html: row.fittedIndie }} />
-      <span className={`flex items-center gap-1.5 px-2 border-l ${cellDivider}`}>
-        <GenIcon name="shield" className="h-7 w-7 md:h-5 md:w-5 shrink-0" />
-        <span dangerouslySetInnerHTML={{ __html: row.warranty }} />
-      </span>
-      <span className={`px-2 border-l ${cellDivider} ${mutedText}`} dangerouslySetInnerHTML={{ __html: row.bestFor }} />
-    </div>
+    <>
+      <Rich html={spaceRange(main)} className="block" />
+      <TagLine tags={tags} className="font-normal" />
+    </>
   );
 }
 
-// Mobile only: accordion (one open at a time) - a collapsed summary
-// card expanding to reveal the full price/warranty/best-for detail, each
-// divided by a thin hairline.
-function AccordionRow({ row, icon, isOpen, onToggle, isDark }) {
-  return (
-    <div
-      className={`overflow-hidden rounded-xl border shadow-sm ${
-        isOpen ? "border-2 border-[var(--color-primary)]" : "border-[var(--color-border)]"
-      } bg-[var(--color-surface)]`}
-    >
-      <button type="button" onClick={onToggle} aria-expanded={isOpen} className="flex w-full items-center justify-between gap-3 p-4 text-left">
-        <div className="flex min-w-0 items-center gap-3">
-          <span className={`flex h-9 w-9 shrink-0 items-center justify-center rounded-full ${primaryBadgeClass(isDark)}`}>
-            <GenIcon name={icon} inverted className="h-8 w-8 md:h-6 md:w-6" />
-          </span>
-          <div className="min-w-0">
-            <p className="lg:text-[15px] text-[0.92rem] font-bold leading-tight text-[var(--color-text)]" dangerouslySetInnerHTML={{ __html: row.engineType }} />
-            <p className="lg:text-[15px] mt-0.5 truncate text-[12px] text-[var(--color-text-muted)]" dangerouslySetInnerHTML={{ __html: row.bestFor }} />
-          </div>
-        </div>
-        <GenIcon name="chevronDown" className={`h-4 w-4 shrink-0 text-[var(--color-primary)] transition-transform ${isOpen ? "rotate-180" : ""}`} />
-      </button>
+function typeIcon(row) {
+  return byKeyword(copy.typeIcons, row.engineType, "icon", "gear");
+}
 
-      {isOpen ? (
-        <div className="lg:text-[15px] flex flex-col gap-2.5 px-4 pb-4 text-[0.84rem]">
-          <div className="flex flex-wrap items-center justify-between gap-x-3 gap-y-1 border-t border-[var(--color-border)] pt-2.5">
-            <span className="flex items-center gap-1.5 text-[var(--color-text-muted)]">
-              <GenIcon name="tag" className="h-7 w-7 md:h-5 md:w-5 shrink-0" />
-              Supply Only
-            </span>
-            <span className="font-semibold text-[var(--color-primary)]" dangerouslySetInnerHTML={{ __html: row.supplyOnly }} />
-          </div>
-          <div className="flex flex-wrap items-center justify-between gap-x-3 gap-y-1 border-t border-[var(--color-border)] pt-2.5">
-            <span className="flex items-center gap-1.5 text-[var(--color-text-muted)]">
-              <GenIcon name="wrench" className="h-7 w-7 md:h-5 md:w-5 shrink-0" />
-              Fitted (Indie)
-            </span>
-            <span className="font-semibold text-[var(--color-primary)]" dangerouslySetInnerHTML={{ __html: row.fittedIndie }} />
-          </div>
-          <div className="flex flex-wrap items-center justify-between gap-x-3 gap-y-1 border-t border-[var(--color-border)] pt-2.5">
-            <span className="flex items-center gap-1.5 text-[var(--color-text-muted)]">
-              <GenIcon name="shield" className="h-7 w-7 md:h-5 md:w-5 shrink-0" />
-              Warranty
-            </span>
-            <span className="font-semibold text-[var(--color-text)]" dangerouslySetInnerHTML={{ __html: row.warranty }} />
-          </div>
-          <div className="flex flex-wrap items-start justify-between gap-x-3 gap-y-1 border-t border-[var(--color-border)] pt-2.5">
-            <span className="flex items-center gap-1.5 text-[var(--color-text-muted)]">
-              <GenIcon name="users" className="h-7 w-7 md:h-5 md:w-5 shrink-0" />
-              Best For
-            </span>
-            <span className="text-right text-[var(--color-text)]" dangerouslySetInnerHTML={{ __html: row.bestFor }} />
-          </div>
-        </div>
-      ) : null}
-    </div>
+function FilledCircle({ icon, className = "h-11 w-11 lg:h-11 lg:w-11 xl:h-12 xl:w-12" }) {
+  return (
+    <span className={`flex shrink-0 items-center justify-center rounded-full bg-[var(--color-v-blue-btn)] text-white ${className}`}>
+      <VIcon name={icon} solid className="h-[52%] w-[52%]" strokeWidth={2} />
+    </span>
+  );
+}
+
+function SoftCircle({ icon, className = "h-10 w-10" }) {
+  return (
+    <span className={`flex shrink-0 items-center justify-center rounded-full bg-[var(--color-v-blue-soft)] text-[var(--color-v-blue)] [[data-theme=dark]_&]:text-[#6fa8ff] [[data-theme=light]_&]:text-[var(--color-v-navy)] ${className}`}>
+      <VIcon name={icon} className="h-[54%] w-[54%]" strokeWidth={1.7} />
+    </span>
+  );
+}
+
+function Cta({ cta, className = "" }) {
+  if (!cta?.label) return null;
+  return (
+    <Link href={cta.href || "/quote"} className={`t-body items-center gap-4 rounded-[6px] bg-[var(--color-v-blue-btn)] px-6 py-3 font-semibold text-white transition hover:brightness-110 ${className}`}>
+      <VIcon name="arrowRight" className="h-5 w-5 shrink-0" strokeWidth={2.2} />
+      <span className="text-left">{stripMarker(cta.label)}</span>
+    </Link>
+  );
+}
+
+function MobileSummary({ row }) {
+  return (
+    <span className="flex min-w-0 flex-1 items-center gap-4">
+      <FilledCircle icon={typeIcon(row)} className="h-12 w-12" />
+      <span className="min-w-0">
+        <span className="block text-[18px] font-semibold leading-snug text-[var(--color-v-text)]">{row.engineType}</span>
+        <Rich html={row.bestFor} className="block text-[15px] leading-snug text-[var(--color-v-muted)]" />
+      </span>
+    </span>
+  );
+}
+
+function MobileBody({ row, columns }) {
+  return (
+    <ul className="mx-4 mb-4 rounded-[10px] border border-[var(--color-v-border)] bg-[var(--color-v-panel)] px-4">
+      {FIELDS.slice(1).map((field, fieldIndex) => (
+        <li key={field} className="flex items-center gap-4 border-t border-[var(--color-v-border)] py-3 first:border-t-0">
+          <SoftCircle icon={copy.mobileRows[field].icon} />
+          <span className="t-body flex-1 text-[var(--color-v-text)]">{columns[fieldIndex + 1]}</span>
+          <span className={`t-body max-w-[55%] text-right ${field === "bestFor" ? "text-[var(--color-v-text)]" : "font-semibold text-[var(--color-v-blue)]"}`}>
+            <Value value={row[field]} />
+          </span>
+        </li>
+      ))}
+    </ul>
   );
 }
 
 export default function ReplacementCosts({ data }) {
-  const { theme } = useTheme();
-  const [openIndex, setOpenIndex] = useState(1);
-  if (!data) return null;
+  const rows = data?.rows || [];
+  if (!rows.length) return null;
+  const columns = data.columns?.length === FIELDS.length ? data.columns : ["Engine Type", "Supply Only", "Fitted (Indie)", "Warranty", "Best For"];
+  // Reference scale: 15px cells at 1024px, growing to 17px on wide screens, so prices and warranties stay on one line.
+  const cell = "border-r border-[var(--color-v-border)] px-4 py-4 align-middle text-[clamp(15px,1.2vw,17px)] leading-snug last:border-r-0";
+  const priceCell = `${cell} whitespace-nowrap text-center`;
 
-  const isDark = theme === "dark";
-  const sectionBg = variantSectionBg(isDark, true);
-  const headerBg = tableHeaderClass(isDark);
-  const headerDivider = isDark ? "border-white/20" : "border-white/25";
-  const bodyWrapperBg = isDark ? "bg-[var(--color-primary)]" : "bg-[var(--color-table-surface)]";
-  const ctaLabel = stripCtaArrow(data.cta?.label);
-  const headerGradient = isDark
-    ? "absolute inset-0 bg-[linear-gradient(90deg,var(--color-page)_0%,rgba(2,7,11,0.82)_34%,rgba(2,7,11,0.18)_100%)]"
-    : "absolute inset-0 bg-[linear-gradient(90deg,#eef2f7_0%,rgba(244,247,251,0.88)_34%,rgba(244,247,251,0.18)_100%)]";
+  const mobileItems = rows.map((row, index) => ({
+    key: `${row.engineType}-${index}`,
+    summary: <MobileSummary row={row} />,
+    body: <MobileBody row={row} columns={columns} />,
+  }));
 
   return (
-    <section className={`w-full overflow-x-hidden text-[var(--color-text)] ${sectionBg}`}>
-      <div className={`relative overflow-hidden ${sectionBg}`}>
-        <div className="absolute inset-y-0 right-0 w-[62%] md:w-[48%]">
-          <Image src={HEADER_IMAGE} alt="" fill className="object-cover object-right" sizes="(max-width: 768px) 62vw, 48vw" />
-          <div className={headerGradient} />
-        </div>
-        <div className="relative mx-auto w-full max-w-8xl px-4 pb-3 pt-5 md:px-8 md:pb-4 md:pt-6">
-          <div className="max-w-[650px]">
-            <VariantSectionHeading title={data.h2} />
-            <div className="mt-3">
-              <MStripe />
-            </div>
-          </div>
-        </div>
-      </div>
+    <section className={`${variantFont.className} section-y lg:py-10 border-b border-[var(--color-v-border)] bg-[var(--color-v-band)] text-[var(--color-v-text)] [[data-theme=dark]_&]:bg-[var(--color-v-page)]`}>
+      <div className="site-container">
+        <h2 className="text-[24px] font-semibold leading-tight tracking-[-0.02em] lg:text-[clamp(28px,2.85vw,40px)]">{data.h2}</h2>
 
-      <div className="relative mx-auto w-full max-w-8xl px-4 pb-5 md:px-8 md:pb-6">
-
-        {/* Mobile only: accordion list */}
-        <div className="mt-6 flex flex-col gap-3 md:hidden">
-          {data.rows?.map((row, index) => (
-            <AccordionRow
-              key={row.engineType}
-              row={row}
-              icon={ROW_ICONS[index % ROW_ICONS.length]}
-              isOpen={openIndex === index}
-              onToggle={() => setOpenIndex(openIndex === index ? null : index)}
-              isDark={isDark}
-            />
-          ))}
+        {/* Phones and tablets: one card per engine type, the second one open */}
+        <div className="mt-6 flex flex-col gap-3 lg:hidden">
+          <Accordion
+            items={mobileItems}
+            defaultIndex={rows.length > 1 ? 1 : 0}
+            itemClassName="rounded-[10px] border border-[var(--color-v-border)] bg-[var(--color-v-panel)] shadow-[0_4px_14px_var(--color-v-shadow)]"
+            openItemClassName="!border-[var(--color-v-blue)] !bg-[var(--color-v-panel-soft)]"
+            headerClassName="gap-3 p-4"
+            chevronClassName="h-6 w-6 text-[var(--color-v-text)]"
+          />
         </div>
 
-        {/* Desktop only: original table */}
-        <div className="mt-6 hidden overflow-hidden rounded-md border border-[var(--color-border)] bg-[var(--color-table-surface)] shadow-[0_14px_40px_var(--color-shadow)] backdrop-blur md:block">
-          <div className={`lg:text-[15px] grid ${DESKTOP_COLS} gap-px ${headerBg} px-2 py-3 text-[0.82rem] font-semibold`}>
-            {data.columns?.map((col, index) => (
-              <span key={col} className={`px-2 ${index > 0 ? `border-l ${headerDivider}` : ""}`}>{col}</span>
-            ))}
-          </div>
-          <div className={bodyWrapperBg}>
-            {data.rows?.map((row, index) => (
-              <DesktopRow key={row.engineType} row={row} icon={ROW_ICONS[index % ROW_ICONS.length]} isDark={isDark} />
-            ))}
-          </div>
+        {/* Desktop table */}
+        <div className="mt-6 hidden overflow-hidden rounded-[10px] border border-[var(--color-v-border)] bg-[var(--color-v-panel)] lg:block">
+          <table className="t-body w-full table-fixed border-collapse">
+            <colgroup>
+              <col className="w-[21%]" />
+              <col className="w-[18%]" />
+              <col className="w-[18.5%]" />
+              <col className="w-[18%]" />
+              <col className="w-[24.5%]" />
+            </colgroup>
+            <thead>
+              <tr className="bg-[var(--color-v-navy)] text-white [[data-theme=dark]_&]:border-b [[data-theme=dark]_&]:border-[var(--color-v-border-strong)]">
+                {columns.map((column) => (
+                  <th key={column} scope="col" className="border-r border-[var(--color-v-navy-line)] px-4 py-3.5 text-center text-[clamp(15px,1.2vw,17px)] font-semibold last:border-r-0">
+                    {column}
+                  </th>
+                ))}
+              </tr>
+            </thead>
+            <tbody>
+              {rows.map((row, index) => (
+                <tr key={`${row.engineType}-${index}`} className="border-t border-[var(--color-v-border)] first:border-t-0">
+                  <td className={cell}>
+                    <span className="flex items-center gap-3.5">
+                      <FilledCircle icon={typeIcon(row)} />
+                      <span className="font-semibold leading-snug">{row.engineType}</span>
+                    </span>
+                  </td>
+                  <td className={priceCell}>
+                    <Value value={row.supplyOnly} />
+                  </td>
+                  <td className={priceCell}>
+                    <Value value={row.fittedIndie} />
+                  </td>
+                  <td className={cell}>
+                    <span className="flex items-center justify-center gap-2.5 whitespace-nowrap">
+                      <VIcon name="shieldCheck" solid className="h-6 w-6 shrink-0 text-[var(--color-v-blue-btn)] [[data-theme=dark]_&]:text-[var(--color-v-blue)]" />
+                      <Value value={row.warranty} />
+                    </span>
+                  </td>
+                  <td className={cell}>
+                    <span className="flex items-center gap-3.5">
+                      <SoftCircle icon={copy.bestForIcons[index % copy.bestForIcons.length]} className="h-11 w-11" />
+                      <Rich html={row.bestFor} className="text-[0.93em] text-[var(--color-v-text)]" />
+                    </span>
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
         </div>
 
         {data.figuresNote ? (
-          <div className="glass-panel mt-6 flex gap-3 rounded-md p-4">
-            <GenIcon name="info" className="h-8 w-8 md:h-6 md:w-6 shrink-0" />
-            <p className="lg:text-[15px] text-[0.82rem] leading-[1.5] text-[var(--color-text-muted)]" dangerouslySetInnerHTML={{ __html: data.figuresNote }} />
+          <div className="mt-4 flex items-start gap-4 rounded-[10px] border border-[var(--color-v-border-strong)] bg-[var(--color-v-panel-soft)] p-4 lg:items-center lg:px-6">
+            <VIcon name="info" className="h-7 w-7 shrink-0 text-[var(--color-v-blue)] lg:h-6 lg:w-6" />
+            <Rich as="p" html={data.figuresNote} className="text-[15px] leading-[1.6] text-[var(--color-v-muted)] lg:text-[clamp(15px,1.2vw,17px)] lg:leading-normal" />
           </div>
         ) : null}
 
-        {/* Mobile: labour estimate and CTA as two separate stacked cards */}
-        {data.labourEstimate ? (
-          <div className="mt-4 flex items-center gap-4 rounded-xl border border-[var(--color-border)] bg-[var(--color-surface)] p-4 shadow-sm md:hidden">
-            <span className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-full ${primaryBadgeClass(isDark)}`}>
-              <GenIcon name="labour-time" inverted className="h-9 w-9 md:h-7 md:w-7" />
-            </span>
-            <p className="lg:text-[15px] text-[0.82rem] leading-[1.45] text-[var(--color-text)]">
-              <span className="font-bold">Labour estimate: </span>
-              <span dangerouslySetInnerHTML={{ __html: data.labourEstimate }} />
-            </p>
-          </div>
-        ) : null}
-
-        {/* Desktop: labour estimate + CTA combined into a single row card */}
-        {data.labourEstimate || data.cta?.label ? (
-          <div className="mt-4 hidden items-center gap-4 rounded-xl border border-[var(--color-border)] bg-[var(--color-surface)] p-4 shadow-sm md:flex">
-            {data.labourEstimate ? (
-              <>
-                <span className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-full ${primaryBadgeClass(isDark)}`}>
-                  <GenIcon name="labour-time" inverted className="h-9 w-9 md:h-7 md:w-7" />
+        {data.labourEstimate || data.cta ? (
+          <>
+            <div className="mt-4 flex flex-col gap-4 rounded-[10px] border border-[var(--color-v-border)] bg-[var(--color-v-panel)] p-4 lg:flex-row lg:items-center lg:gap-8 lg:px-6">
+              <div className="flex flex-1 items-center gap-4">
+                <span className="flex shrink-0 items-center justify-center text-[var(--color-v-blue)] max-lg:h-14 max-lg:w-14 max-lg:rounded-full max-lg:bg-[var(--color-v-blue-soft)]">
+                  <VIcon name="wrench" className="h-8 w-8 lg:h-10 lg:w-10" strokeWidth={1.5} />
                 </span>
-                <p className="lg:text-[15px] flex-1 text-[0.82rem] leading-[1.45] text-[var(--color-text)]">
-                  <span className="font-bold">Labour estimate: </span>
-                  <span dangerouslySetInnerHTML={{ __html: data.labourEstimate }} />
+                <p className="text-[15px] leading-[1.6] text-[var(--color-v-text)] lg:text-[clamp(15px,1.2vw,17px)] lg:leading-normal">
+                  <strong className="font-semibold">{copy.labourLabel}</strong> <Rich html={data.labourEstimate} />
                 </p>
-              </>
-            ) : null}
-            {ctaLabel ? (
-              <a
-                href="/quote"
-                className={`${primaryCtaClass("flex shrink-0 items-center justify-center gap-2 whitespace-nowrap rounded-xl px-4 py-2.5 text-[0.8rem]")}`}
+              </div>
+              <Cta cta={data.cta} className="hidden max-w-[310px] shrink-0 lg:inline-flex" />
+            </div>
+            {data.cta?.label ? (
+              <Link
+                href={data.cta.href || "/quote"}
+                className="mt-4 flex items-center gap-4 rounded-[8px] bg-[var(--color-v-blue-btn)] px-5 py-4 text-[15px] font-semibold text-white lg:hidden"
               >
-                {ctaLabel}
-                <GenIcon name="arrow" className="h-4 w-4 shrink-0" />
-              </a>
+                <VIcon name="arrowRight" className="h-6 w-6 shrink-0" strokeWidth={2} />
+                <span className="flex-1">{stripMarker(data.cta.label)}</span>
+                <VIcon name="chevronRight" className="h-5 w-5 shrink-0" strokeWidth={2.2} />
+              </Link>
             ) : null}
-          </div>
-        ) : null}
-
-        {ctaLabel ? (
-          <a
-            href="/quote"
-            className={`${primaryCtaClass("mt-4 flex w-full items-center justify-center gap-2 rounded-xl px-3 py-2.5 md:hidden")}`}
-          >
-            <span className="lg:text-[15px] whitespace-nowrap text-center text-[0.78rem] font-bold md:text-[0.9rem]">{ctaLabel}</span>
-            <GenIcon name="arrow" className="h-4 w-4 shrink-0" />
-          </a>
+          </>
         ) : null}
       </div>
     </section>

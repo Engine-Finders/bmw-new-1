@@ -1,227 +1,242 @@
-"use client";
-
 import Image from "next/image";
-import { useState } from "react";
-import { useTheme } from "@/components/shared/themeProvider";
-import MStripe from "@/components/reusableComponents/MStripe";
-import GenIcon from "../generation/GenIcons";
-import { specIconFor } from "@/components/shared/labelIcons";
-import { variantSectionBg, VariantSectionHeading, tableHeaderClass, primaryBadgeClass, primaryCtaClass } from "./variantSection";
+import Link from "next/link";
+import VIcon from "./VariantIcons";
+import { Tabs } from "./VariantToggles";
+import { TagLine } from "./EraMap";
+import { byKeyword, dash, plain, splitTags, stripMarker, ui } from "./variantUi";
+import { variantFont } from "./variantFont";
 
-const DESKTOP_COLS = "grid-cols-[1.5fr_0.9fr_0.9fr_1.2fr_1.1fr]";
-// Engine photos are set server-side: row.image per engine code, data.engineImage for the banner.
-// Engines with no photo (e.g. XK6, V12) show none.
+const copy = ui.engineCodes;
+const FIELDS = ["engineCode", "years", "power", "enquiries", "avgReconCost"];
 
-function shortCode(engineCode = "") {
-  return engineCode.split(" / ")[0].split(" (")[0];
-}
+// Short values ("2015/16–present", "190–224 bhp") stay on one line; longer ones may wrap.
+const short = (value = "") => plain(value).length <= 16;
 
-
-function splitSpecsTitle(title = "") {
-  const match = title.match(/^(.*?)\s*\(([^)]+)\)\s*:?$/);
-  if (!match) return { title: title.replace(/:$/, ""), tag: "" };
-  return { title: match[1], tag: match[2] };
-}
-
-function DesktopRow({ row, isDark }) {
-  const rowClass = isDark ? "bg-[var(--color-primary)] text-white" : "bg-[var(--color-table-surface)] text-[var(--color-text)]";
-  const cellDivider = isDark ? "border-white/15" : "border-[var(--color-border)]";
-  const mutedText = isDark ? "text-white/70" : "text-[var(--color-text-muted)]";
-  const codeText = isDark ? "text-[var(--color-text)]" : "text-[var(--color-primary)]";
-  const borderBottom = isDark ? "border-white/15" : "border-[var(--color-border)]";
-
+// "- (within 1,450 JLR-wide N47 figure) [TAG]" -> "—" over the bracketed note; values keep their tag.
+function Enquiries({ value, align = "center" }) {
+  const { main, tags } = splitTags(value);
+  const dashed = main.match(/^[-–—]\s*(.*)$/);
   return (
-    <div className={`lg:text-[15px] grid ${DESKTOP_COLS} items-center gap-px ${rowClass} px-2 py-2.5 text-[0.8rem] border-b ${borderBottom} last:border-b-0`}>
-      <span className="flex items-center gap-2 px-2 font-semibold">
-        <span className="relative h-9 w-11 shrink-0 overflow-hidden">
-          {row.image ? <Image src={row.image} alt="" fill className="object-contain" sizes="44px" /> : null}
-        </span>
-        <span className={codeText}>{row.engineCode}</span>
-      </span>
-      <span className={`px-2 border-l ${cellDivider} ${mutedText}`}>{row.years}</span>
-      <span className={`px-2 border-l ${cellDivider} ${mutedText}`}>{row.power}</span>
-      <span className={`px-2 border-l ${cellDivider} ${mutedText}`}>{row.enquiries}</span>
-      <span className={`px-2 border-l ${cellDivider} font-semibold`}>{row.avgReconCost}</span>
+    <span className={`block ${align === "center" ? "text-center" : "text-right"}`}>
+      {dashed ? (
+        <>
+          <span className="block">—</span>
+          {dashed[1] ? <span className="t-label block text-[var(--color-v-muted)] lg:!text-[clamp(11.5px,0.82vw,13.5px)] lg:leading-snug">{dashed[1]}</span> : null}
+        </>
+      ) : main ? (
+        <span className="block">{main}</span>
+      ) : null}
+      <TagLine tags={tags} />
+    </span>
+  );
+}
+
+function Cost({ value, align = "center" }) {
+  const { main, tags } = splitTags(value);
+  return (
+    <span className={`block ${align === "center" ? "text-center" : "text-right"}`}>
+      <span className="block">{main}</span>
+      <TagLine tags={tags} />
+    </span>
+  );
+}
+
+// Tab label: the family for a combined entry ("M47D20 / M47TU / M47TU2" -> "M47"), else the code.
+function shortCode(code = "") {
+  const clean = plain(code).replace(/\s*\([^)]*\)/g, "").trim();
+  if (clean.includes("/")) return clean.split("/")[0].trim().match(/^[A-Z]+\d+/i)?.[0] || clean.split("/")[0].trim();
+  return clean;
+}
+
+// "Technical Specs (current B47D20 generation):" -> "current B47D20 generation"
+function specsLabel(title = "") {
+  const match = String(title).match(/\(([^)]*)\)/);
+  return match ? dash(match[1]) : "";
+}
+
+function EngineThumb({ src, className = "h-[clamp(40px,3.2vw,52px)] w-[clamp(46px,3.8vw,60px)]" }) {
+  if (!src) return null;
+  return (
+    <span className={`relative block shrink-0 ${className}`}>
+      <Image src={src} alt="" fill sizes="96px" className="object-contain" />
+    </span>
+  );
+}
+
+function SpecsCard({ specs }) {
+  const items = specs?.items || [];
+  if (!items.length) return null;
+  const label = specsLabel(specs.title);
+  return (
+    <div className="rounded-[10px] border border-[var(--color-v-border)] bg-[var(--color-v-panel)] p-5 shadow-[0_6px_18px_var(--color-v-shadow)] lg:rounded-[8px] lg:px-[clamp(16px,1.6vw,26px)] lg:pb-[clamp(8px,0.8vw,14px)] lg:pt-[clamp(14px,1.2vw,20px)]">
+      <p className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
+        <span className="text-[length:var(--fs-p)] font-medium uppercase text-[var(--color-v-text)] lg:text-[clamp(15px,1.2vw,20px)]">{copy.specsTitle}</span>
+        {label ? <span className="t-label uppercase tracking-normal text-[var(--color-v-blue)] lg:text-[clamp(10.5px,0.75vw,12.5px)]">{label}</span> : null}
+      </p>
+      <dl className="mt-3 lg:mt-[clamp(8px,0.8vw,14px)]">
+        {items.map((item, index) => {
+          const name = stripMarker(item.label);
+          return (
+            <div key={`${name}-${index}`} className="t-body grid grid-cols-[minmax(0,1.15fr)_minmax(0,1fr)] items-center border-t max-lg:text-[14px] border-[var(--color-v-border)] lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.25fr)] lg:text-[clamp(12.5px,0.93vw,15px)] lg:leading-snug">
+              <dt className="flex min-w-0 items-center gap-3 py-2.5 pr-3 text-[var(--color-v-text)] lg:gap-[clamp(10px,1vw,16px)] lg:border-r lg:border-[var(--color-v-border)] lg:py-[clamp(5px,0.4vw,8px)]">
+                <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-[var(--color-v-blue-soft)] text-[var(--color-v-blue)] lg:h-auto lg:w-auto lg:bg-transparent">
+                  <VIcon name={byKeyword(copy.specIcons, name, "icon", "gear")} className="h-5 w-5" />
+                </span>
+                <span className="min-w-0">{name}</span>
+              </dt>
+              <dd className="min-w-0 py-2.5 pl-2 text-[var(--color-v-text)] lg:py-[clamp(5px,0.4vw,8px)] lg:pl-[clamp(12px,1.5vw,24px)]">{dash(item.value)}</dd>
+            </div>
+          );
+        })}
+      </dl>
     </div>
   );
 }
 
-// Mobile: a tab switcher (one engine code selected at a time), matching the
-// reference - scrollable pills up top, a single two-column detail card
-// (engine visual left, key-value rows right) below.
-function DetailCard({ row }) {
+function CtaCard({ cta, engine }) {
+  if (!cta?.label) return null;
   return (
-    <div className="glass-panel flex gap-4 rounded-md p-4">
-      {row.image ? (
-        <span className="relative h-auto w-28 shrink-0 self-stretch">
-          <Image src={row.image} alt="" fill className="object-contain" sizes="112px" />
+    <Link
+      href={cta.href || "/quote"}
+      className="group relative isolate flex items-center gap-5 overflow-hidden rounded-[10px] bg-[linear-gradient(100deg,#00296f_0%,#022b73_45%,#0a1a35_100%)] p-5 font-normal text-white shadow-[0_14px_34px_var(--color-v-shadow)] lg:min-h-[clamp(110px,8.6vw,140px)] lg:gap-[clamp(14px,1.4vw,22px)] lg:rounded-[8px] lg:px-[clamp(18px,1.6vw,26px)] lg:py-[clamp(16px,1.4vw,22px)] [[data-theme=dark]_&]:bg-[var(--color-v-tile)]"
+    >
+      {engine ? (
+        <span aria-hidden="true" className="absolute inset-y-0 right-0 -z-10 w-[55%] opacity-40 mix-blend-luminosity">
+          <Image src={engine} alt="" fill sizes="20vw" className="object-cover object-left" />
+          <span className="absolute inset-0 bg-[linear-gradient(90deg,#022b73_0%,transparent_60%)] [[data-theme=dark]_&]:bg-[linear-gradient(90deg,var(--color-v-tile)_0%,transparent_60%)]" />
         </span>
       ) : null}
-      <div className="lg:text-[15px] flex min-w-0 flex-1 flex-col gap-2.5 text-[0.82rem]">
-        <p className="truncate text-[1rem] font-bold text-[var(--color-text)]">{row.engineCode}</p>
-        <div className="flex flex-wrap items-center justify-between gap-x-3 gap-y-1 border-b border-[var(--color-border)] pb-2.5">
-          <span className="flex items-center gap-1.5 text-[var(--color-text-muted)]">
-            <GenIcon name="calendar" className="h-7 w-7 md:h-5 md:w-5 shrink-0" />
-            Years
-          </span>
-          <span className="font-semibold text-[var(--color-text)]">{row.years}</span>
-        </div>
-        <div className="flex flex-wrap items-center justify-between gap-x-3 gap-y-1 border-b border-[var(--color-border)] pb-2.5">
-          <span className="flex items-center gap-1.5 text-[var(--color-text-muted)]">
-            <GenIcon name="gauge" className="h-7 w-7 md:h-5 md:w-5 shrink-0" />
-            Power
-          </span>
-          <span className="font-semibold text-[var(--color-text)]">{row.power}</span>
-        </div>
-        <div className="flex items-start justify-between gap-3 border-b border-[var(--color-border)] pb-2.5">
-          <span className="flex shrink-0 items-center gap-1.5 text-[var(--color-text-muted)]">
-            <GenIcon name="enquiries" className="h-7 w-7 md:h-5 md:w-5 shrink-0" />
-            2025 Enquiries
-          </span>
-          <span className="min-w-0 flex-1 text-right font-semibold text-[var(--color-text)]">{row.enquiries}</span>
-        </div>
-        <div className="flex items-start justify-between gap-3">
-          <span className="flex shrink-0 items-center gap-1.5 text-[var(--color-text-muted)]">
-            <GenIcon name="dollar" className="h-7 w-7 md:h-5 md:w-5 shrink-0" />
-            Avg. Recon Cost
-          </span>
-          <span className="min-w-0 flex-1 text-right font-semibold text-[var(--color-primary)]">{row.avgReconCost}</span>
-        </div>
-      </div>
-    </div>
+      <span className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full border-2 border-white/80 lg:h-[clamp(40px,3vw,48px)] lg:w-[clamp(40px,3vw,48px)] lg:self-start lg:mt-1">
+        <VIcon name="arrowRight" className="h-7 w-7" strokeWidth={2} />
+      </span>
+      <span className="min-w-0">
+        <span className="t-h5 block font-bold text-white lg:max-w-[20ch] lg:text-[clamp(19px,1.7vw,28px)] lg:font-semibold lg:leading-[1.15]">{stripMarker(cta.label)}</span>
+        <span className="t-body mt-1 block text-white/90 lg:mt-[clamp(6px,0.6vw,10px)] lg:max-w-[24ch] lg:text-[clamp(13px,0.98vw,16px)] lg:leading-snug">{copy.ctaSubline}</span>
+      </span>
+    </Link>
+  );
+}
+
+function MatchNote({ note }) {
+  if (!note) return null;
+  const text = dash(note);
+  const match = text.match(new RegExp(copy.eraMapPhraseMatch));
+  if (!match) return <p className="t-p mt-2 text-[var(--color-v-text)] max-lg:text-[14.5px] lg:mt-[clamp(6px,0.6vw,10px)] lg:text-[clamp(14px,0.98vw,16px)]">{text}</p>;
+  return (
+    <p className="t-p mt-2 text-[var(--color-v-text)] max-lg:text-[14.5px] lg:mt-[clamp(6px,0.6vw,10px)] lg:text-[clamp(14px,0.98vw,16px)]">
+      {text.slice(0, match.index)}
+      <Link href="#era-map" className="font-normal text-[var(--color-v-blue)] hover:underline">
+        {match[0]}
+      </Link>
+      {text.slice(match.index + match[0].length)}
+    </p>
   );
 }
 
 export default function EngineCodes({ data }) {
-  const { theme } = useTheme();
-  const [activeIndex, setActiveIndex] = useState(0);
-  if (!data) return null;
+  const rows = data?.rows || [];
+  if (!rows.length) return null;
+  const columns = data.columns?.length === FIELDS.length ? data.columns : ["Engine Code", "Years", "Power", "2025 Enquiries", "Avg. Recon Cost"];
+  const cell = "border-r border-[var(--color-v-border)] px-2.5 py-[clamp(6px,0.5vw,9px)] align-middle last:border-r-0";
 
-  const isDark = theme === "dark";
-  const headerBg = tableHeaderClass(isDark);
-  const headerDivider = isDark ? "border-white/20" : "border-white/25";
-  const bodyWrapperBg = isDark ? "bg-[var(--color-primary)]" : "bg-[var(--color-table-surface)]";
-  const rows = data.rows || [];
-
-  const specsTitle = data.technicalSpecs ? splitSpecsTitle(data.technicalSpecs.title) : null;
-
-  const technicalSpecsCard = data.technicalSpecs ? (
-    <div className="overflow-hidden rounded-xl border border-[var(--color-border)] bg-[var(--color-surface)]">
-      <div className="flex flex-wrap items-center gap-x-2 gap-y-1 border-b border-[var(--color-border)] px-4 py-3">
-        <p className="lg:text-[15px] text-[0.85rem] font-bold uppercase tracking-wide text-[var(--color-text)]">{specsTitle.title}</p>
-        {specsTitle.tag ? (
-          <span className="lg:text-[15px] text-[12px] font-semibold uppercase tracking-wide text-[var(--color-primary)]">{specsTitle.tag}</span>
-        ) : null}
-      </div>
-      <div className="flex flex-col">
-        {data.technicalSpecs.items?.map((item, index) => (
-          <div
-            key={item.label}
-            className={`grid grid-cols-[1fr_1fr] gap-3 px-4 py-3 ${index > 0 ? "border-t border-[var(--color-border)]" : ""}`}
-          >
-            <span className="lg:text-[15px] flex items-center gap-2 border-r border-[var(--color-border)] pr-3 text-[0.78rem] text-[var(--color-text-muted)]">
-              <GenIcon name={specIconFor(item.label.replace(/^\*\s*/, ""))} className="h-8 w-8 md:h-6 md:w-6 shrink-0" />
-              {item.label.replace(/^\*\s*/, "")}
-            </span>
-            <span className="lg:text-[15px] text-[0.8rem] font-semibold text-[var(--color-text)]" dangerouslySetInnerHTML={{ __html: item.value }} />
+  const tabs = rows.map((row, index) => ({
+    key: `${plain(row.engineCode)}-${index}`,
+    label: (
+      <>
+        <span className="t-body block font-semibold">{shortCode(row.engineCode)}</span>
+        <span className="t-label block">{dash(row.years)}</span>
+      </>
+    ),
+    panel: (
+      <div className="rounded-b-[10px] rounded-tr-[10px] border border-[var(--color-v-border)] bg-[var(--color-v-panel)] p-4 shadow-[0_6px_18px_var(--color-v-shadow)]">
+        <div className="grid grid-cols-[28%_minmax(0,1fr)] items-start gap-x-2">
+          <span className="relative block aspect-[3/4] w-full self-center">
+            {row.image ? <Image src={row.image} alt={plain(row.engineCode)} fill sizes="34vw" className="object-contain" /> : null}
+          </span>
+          <div className="min-w-0">
+        <p className="t-h6 font-bold text-[var(--color-v-text)]">{plain(row.engineCode)}</p>
+        <dl className="mt-1">
+          {FIELDS.slice(1).map((field, fieldIndex) => (
+            <div key={field} className="flex items-center gap-1.5 border-t border-[var(--color-v-border)] py-2 text-[12px] leading-snug">
+              <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-[var(--color-v-blue-soft)] text-[var(--color-v-blue)]">
+                <VIcon name={copy.mobileRows[field]} className="h-3.5 w-3.5" />
+              </span>
+              <dt className="shrink-0 text-[var(--color-v-text)]">{columns[fieldIndex + 1]}</dt>
+              <dd className="min-w-0 flex-1 text-right text-[var(--color-v-text)] [overflow-wrap:normal] [&_*]:[overflow-wrap:normal] [&_.t-label]:!text-[11px]">
+                {field === "enquiries" ? <Enquiries value={row.enquiries} align="right" /> : field === "avgReconCost" ? <Cost value={row.avgReconCost} align="right" /> : dash(row[field])}
+              </dd>
+            </div>
+          ))}
+        </dl>
           </div>
-        ))}
-      </div>
-    </div>
-  ) : null;
-
-  const quoteCtaBanner = data.cta?.label ? (
-    <a
-      href="/quote"
-      className={`relative flex items-center gap-4 overflow-hidden rounded-xl border p-5 no-underline backdrop-blur-xl backdrop-saturate-150 ${
-        isDark
-          ? "border-white/20 bg-[rgba(9,21,33,0.62)] text-white shadow-[0_12px_32px_rgba(0,0,0,0.45)]"
-          : `${primaryCtaClass("")} border-[var(--color-border)] bg-[var(--color-primary-strong)]`
-      }`}
-    >
-      <div className="absolute inset-0">
-        {data.engineImage ? (
-          <Image src={data.engineImage} alt="" fill className="object-contain object-right opacity-60" sizes="400px" />
-        ) : null}
-        <div
-          className={`absolute inset-0 ${
-            isDark
-              ? "bg-[linear-gradient(90deg,rgba(2,7,11,0.82)_0%,rgba(2,7,11,0.55)_55%,rgba(2,7,11,0.18)_100%)]"
-              : "bg-[linear-gradient(90deg,var(--color-primary-strong)_0%,rgba(17,18,16,0.75)_55%,transparent_100%)]"
-          }`}
-        />
-      </div>
-
-      <div className="relative z-10 flex items-center gap-4">
-        <span
-          className={`flex h-14 w-14 shrink-0 items-center justify-center rounded-full border shadow-lg ${
-            isDark ? "border-white/25 bg-white/10 text-white" : "border-white/30 bg-[var(--color-primary)] text-white"
-          }`}
-        >
-          <GenIcon name="arrow" className="h-5 w-5" />
-        </span>
-        <div className="min-w-0">
-          <p className={`text-[0.95rem] font-bold leading-tight ${isDark ? "text-white" : "text-white"}`}>{data.cta.label}</p>
-          <p className={`lg:text-[15px] mt-1 text-[0.78rem] leading-[1.4] ${isDark ? "text-white/80" : "text-white/80"}`}>Get quotes from trusted UK specialists in minutes.</p>
         </div>
       </div>
-    </a>
-  ) : null;
+    ),
+  }));
 
   return (
-    <section className={`w-full overflow-x-hidden py-5 text-[var(--color-text)] md:py-6 ${variantSectionBg(isDark, true)}`}>
-      <div className="relative mx-auto w-full max-w-8xl px-4 md:px-8">
-        <div className="grid grid-cols-1 gap-6 lg:grid-cols-12">
-          <div className="lg:col-span-8">
-            <VariantSectionHeading title="Engine Codes" />
-            <div className="mt-3">
-              <MStripe />
-            </div>
-            {data.matchNote ? (
-              <p className="lg:text-[15px] mt-3 text-[0.78rem] text-[var(--color-text-soft)]" dangerouslySetInnerHTML={{ __html: data.matchNote }} />
-            ) : null}
+    <section className={`${variantFont.className} section-y lg:pb-[clamp(26px,2.2vw,40px)] lg:pt-[clamp(26px,2.3vw,40px)] border-t border-[var(--color-v-border)] bg-[var(--color-v-page)] text-[var(--color-v-text)]`}>
+      <div className="site-container grid gap-6 lg:grid-cols-[minmax(0,1.59fr)_minmax(0,1fr)] lg:gap-[clamp(24px,2.6vw,44px)]">
+        <div className="min-w-0">
+          <h2 className="t-h2 font-bold uppercase lg:pt-[clamp(4px,0.5vw,8px)] lg:text-[clamp(28px,2.65vw,44px)] lg:leading-none lg:tracking-[-0.01em]">{copy.h2}</h2>
+          <MatchNote note={data.matchNote} />
 
-            <div className="mt-6 grid grid-cols-4 gap-1.5 md:hidden">
-              {rows.map((row, index) => (
-                <button
-                  key={row.engineCode}
-                  type="button"
-                  onClick={() => setActiveIndex(index)}
-                  className={`flex min-w-0 flex-col items-center gap-0.5 rounded-md border px-1 py-2 text-center ${
-                    activeIndex === index
-                      ? isDark
-                        ? "border-[var(--color-primary)] bg-[var(--color-primary)] text-[var(--color-page)]"
-                        : "border-[var(--color-primary)] bg-[var(--color-primary)] text-white"
-                      : "border-[var(--color-border)] bg-[var(--color-surface)] text-[var(--color-text)]"
-                  }`}
-                >
-                  <span className="lg:text-[15px] truncate text-[12px] font-bold leading-tight">{shortCode(row.engineCode)}</span>
-                  <span className={`lg:text-[15px] truncate text-[12px] ${activeIndex === index ? (isDark ? "text-[var(--color-page)]/80" : "text-white/80") : "text-[var(--color-text-muted)]"}`}>{row.years}</span>
-                </button>
-              ))}
-            </div>
-            <div className="mt-3 md:hidden">
-              {rows[activeIndex] ? <DetailCard row={rows[activeIndex]} /> : null}
-            </div>
-
-            <div className="mt-6 hidden overflow-hidden rounded-xl border border-[var(--color-border)] bg-[var(--color-table-surface)] shadow-lg backdrop-blur md:block">
-              <div className={`lg:text-[15px] grid ${DESKTOP_COLS} gap-px ${headerBg} px-2 py-2.5 text-[0.78rem] font-semibold`}>
-                {data.columns?.map((col, index) => (
-                  <span key={col} className={`px-2 ${index > 0 ? `border-l ${headerDivider}` : ""}`}>{col}</span>
-                ))}
-              </div>
-              <div className={bodyWrapperBg}>
-                {rows.map((row) => (
-                  <DesktopRow key={row.engineCode} row={row} isDark={isDark} />
-                ))}
-              </div>
-            </div>
+          <div className="mt-5 lg:hidden">
+            <Tabs
+              tabs={tabs}
+              label={copy.h2}
+              listClassName="flex gap-1.5"
+              tabClassName="min-w-0 flex-1 rounded-t-[10px] border border-b-0 px-1 py-2.5 text-center [&_.t-label]:text-[11px] [&_.t-body]:text-[length:var(--fs-label)]"
+              activeClassName="border-[var(--color-v-tile)] bg-[var(--color-v-tile)] text-white"
+              inactiveClassName="border-[var(--color-v-border)] bg-[var(--color-v-panel)] text-[var(--color-v-text)]"
+            />
           </div>
 
-          <div className="flex flex-col gap-4 lg:col-span-4">
-            {technicalSpecsCard}
-            {quoteCtaBanner}
+          <div className="mt-5 hidden overflow-hidden rounded-[10px] border border-[var(--color-v-border)] bg-[var(--color-v-panel)] shadow-[0_10px_30px_var(--color-v-shadow)] lg:mt-[clamp(14px,1.1vw,20px)] lg:block lg:rounded-[6px]">
+            <table className="w-full table-fixed border-collapse text-[clamp(13px,0.98vw,16px)] leading-snug">
+              <colgroup>
+                <col className="w-[30%]" />
+                <col className="w-[16.5%]" />
+                <col className="w-[14%]" />
+                <col className="w-[18.5%]" />
+                <col className="w-[21%]" />
+              </colgroup>
+              <thead>
+                <tr className="bg-[var(--color-v-navy)] text-white [[data-theme=dark]_&]:border-b [[data-theme=dark]_&]:border-[var(--color-v-border-strong)]">
+                  {columns.map((column, index) => (
+                    <th key={column} scope="col" className={`border-r border-[var(--color-v-navy-line)] px-3 py-[clamp(8px,0.6vw,11px)] text-[clamp(12px,0.85vw,14px)] font-medium last:border-r-0 text-center`}>
+                      {column}
+                    </th>
+                  ))}
+                </tr>
+              </thead>
+              <tbody>
+                {rows.map((row, index) => (
+                  <tr key={`${plain(row.engineCode)}-${index}`} className="border-t border-[var(--color-v-border)] first:border-t-0">
+                    <td className={cell}>
+                      <span className="flex items-center gap-[clamp(8px,0.9vw,14px)]">
+                        <EngineThumb src={row.image} />
+                        <span className="min-w-0 text-[clamp(14px,1.05vw,17px)] font-medium text-[var(--color-v-blue)]">{plain(row.engineCode)}</span>
+                      </span>
+                    </td>
+                    <td className={`${cell} text-center ${short(row.years) ? "xl:whitespace-nowrap" : ""}`}>{dash(row.years)}</td>
+                    <td className={`${cell} break-words text-center ${short(row.power) ? "xl:whitespace-nowrap" : ""}`}>{dash(row.power)}</td>
+                    <td className={cell}>
+                      <Enquiries value={row.enquiries} />
+                    </td>
+                    <td className={cell}>
+                      <Cost value={row.avgReconCost} />
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
           </div>
+        </div>
+
+        <div className="flex flex-col gap-4 lg:gap-[clamp(10px,0.9vw,16px)]">
+          <SpecsCard specs={data.technicalSpecs} />
+          <CtaCard cta={data.cta} engine={data.engineImage} />
         </div>
       </div>
     </section>

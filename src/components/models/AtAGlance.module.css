@@ -847,20 +847,20 @@
     display: grid;
     grid-template-columns: calc(102 * var(--u)) calc(402 * var(--u)) 1fr;
     align-items: stretch;
-    height: calc(52 * var(--u));
+    min-height: calc(52 * var(--u));
     padding-right: calc(27 * var(--u));
   }
 
   .headRow {
-    height: calc(50 * var(--u));
+    min-height: calc(50 * var(--u));
   }
 
   .row:nth-child(2) {
-    height: calc(53 * var(--u));
+    min-height: calc(53 * var(--u));
   }
 
   .row:last-child {
-    height: calc(70 * var(--u));
+    min-height: calc(70 * var(--u));
   }
 
   .tileCell {
@@ -942,7 +942,7 @@
   .value {
     display: inline-flex;
     align-items: center;
-    white-space: nowrap;
+    padding-block: 6px;
   }
 
   .value .badge {

@@ -227,9 +227,10 @@ export default async function CatchAllPage({ params }) {
   }
 
   if (type === "variants") {
-    data = withVariantPageImages(data, entry.parent);
+    data = withVariantPageImages(data, entry.parent, entry.slug);
     return (
-      <main className="flex flex-col overflow-x-hidden">
+      // Long engine codes and data tags break inside their cell instead of pushing it wider.
+      <main className="flex flex-col overflow-x-hidden [overflow-wrap:break-word]">
         {data.meta?.jsonLd && (
           <script
             type="application/ld+json"
@@ -238,15 +239,15 @@ export default async function CatchAllPage({ params }) {
         )}
         <VariantHero data={data.hero} />
         <EraMap data={data.eraMap} />
-        <VarReplacementCosts data={data.replacementCosts} />
-        <VarProblems data={data.commonProblems} />
+        <VarReplacementCosts data={data.replacementCosts} vehicle={data.hero?.vehicle} />
+        <VarProblems data={data.commonProblems} vehicle={data.hero?.vehicle} />
         <QuotesCta data={data.quotesCta} />
-        <RepairBuyOrReplace data={data.repairBuyOrReplace} />
-        <BuyingChecklist data={data.buyingChecklist} />
-        <EngineCodes data={data.engineCodes} />
-        <VarMarketIntelligence data={data.marketIntelligence} />
-        <VarFAQAccordion data={data.faq} />
-        <VarTrustCta data={data.trustCta} />
+        <RepairBuyOrReplace data={data.repairBuyOrReplace} vehicle={data.hero?.vehicle} />
+        <BuyingChecklist data={data.buyingChecklist} vehicle={data.hero?.vehicle} />
+        <EngineCodes data={data.engineCodes} vehicle={data.hero?.vehicle} />
+        <VarMarketIntelligence data={data.marketIntelligence} vehicle={data.hero?.vehicle} />
+        <VarFAQAccordion data={data.faq} vehicle={data.hero?.vehicle} />
+        <VarTrustCta data={data.trustCta} vehicle={data.hero?.vehicle} />
       </main>
     );
   }

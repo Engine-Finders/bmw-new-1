@@ -325,6 +325,18 @@
   color: var(--p-key-text);
 }
 
+/* Tablets and phones: the card text wraps to its column (the reference line breaks are for the wide layout only). */
+@container (max-width: 1023px) {
+  .pTitle,
+  .pDesc {
+    white-space: normal;
+  }
+
+  .pDesc br {
+    display: none;
+  }
+}
+
 /* ======================= Small phones ======================= */
 /* At exact reference scale the phone text would be ~8px on a 390px phone, so it gets minimum sizes. */
 @container (max-width: 650px) {
