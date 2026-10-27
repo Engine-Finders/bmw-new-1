@@ -361,8 +361,21 @@ export default function FreeQuoteSticky() {
               </div>
             </div>
 
-            {/* Body */}
-            <div className="relative -mt-3 flex min-h-0 flex-1 flex-col overflow-y-auto rounded-t-[16px] bg-white px-3 pb-3.5 pt-3 sm:px-4 sm:pb-4">
+            {/* Body — always light-theme colors (panel stays white in dark mode) */}
+            <div
+              className="relative -mt-3 flex min-h-0 flex-1 flex-col overflow-y-auto rounded-t-[16px] bg-white px-3 pb-3.5 pt-3 text-[#071827] sm:px-4 sm:pb-4"
+              style={{
+                "--color-text": "#071827",
+                "--color-text-muted": "#27384a",
+                "--color-text-soft": "#617084",
+                "--color-border": "#d7dde6",
+                "--color-page-soft": "#f4f7fb",
+                "--color-primary": "#075fd8",
+                "--color-primary-strong": "#034daf",
+                "--color-accent-red": "#ed1c24",
+                "--color-accent-green": "#13884a",
+              }}
+            >
               {submitted ? (
                 <div className="flex flex-col items-center px-2 py-8 text-center">
                   <div className="flex h-12 w-12 items-center justify-center rounded-full bg-[var(--color-accent-green)] text-white">
