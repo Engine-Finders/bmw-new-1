@@ -112,7 +112,7 @@ function RepairTable({ block }) {
 
       {/* Phones: one aligned block per problem: name, then status (left) and cost (right), then when it makes sense */}
       <div className="md:hidden">
-        <div className="flex items-center justify-between gap-4 bg-[var(--color-v-band)] px-4 py-2.5 text-[12px] font-semibold uppercase tracking-[0.04em] text-[var(--color-v-muted)] [[data-theme=dark]_&]:bg-[var(--color-v-panel-soft)]">
+        <div className="flex items-center justify-between gap-4 bg-[var(--color-v-band)] px-4 py-2.5 text-[13px] font-semibold uppercase tracking-[0.04em] text-[var(--color-v-muted)] [[data-theme=dark]_&]:bg-[var(--color-v-panel-soft)]">
           <span>{columns[0]}</span>
           <span className="text-right">
             {columns[1]} · {columns[2]}
@@ -306,12 +306,13 @@ export default function RepairBuyOrReplace({ data, vehicle }) {
         </div>
 
         {/* Trust strip */}
-        <ul className="mt-5 grid grid-cols-5 rounded-[10px] border border-[var(--color-v-border)] bg-[var(--color-v-panel)] px-2 py-4 lg:mt-[18px] lg:px-4 lg:py-3.5">
+        {/* Phones: three to a row (five across squeezed the labels to 11px); tablets up: one row of five. */}
+        <ul className="mt-5 grid grid-cols-3 gap-y-4 rounded-[10px] border border-[var(--color-v-border)] bg-[var(--color-v-panel)] px-2 py-4 md:grid-cols-5 md:gap-y-0 lg:mt-[18px] lg:px-4 lg:py-3.5">
           {copy.trust.map((item, index) => (
             <li key={item.label} className="relative flex flex-col items-center gap-2 px-1 text-center lg:flex-row lg:justify-center lg:gap-4 lg:px-3 lg:text-left">
-              {index ? <span aria-hidden="true" className="absolute left-0 top-1/2 h-[60%] w-px -translate-y-1/2 bg-[var(--color-v-border-strong)]" /> : null}
+              {index ? <span aria-hidden="true" className={`absolute left-0 top-1/2 h-[60%] w-px -translate-y-1/2 bg-[var(--color-v-border-strong)] ${index % 3 ? "" : "md:block hidden"}`} /> : null}
               <VIcon name={item.icon} solid={Boolean(item.solid) || item.icon === "users" || item.icon === "truck"} className="h-7 w-7 shrink-0 text-[var(--color-v-blue)] [[data-theme=light]_&]:text-[var(--color-v-navy)] lg:h-8 lg:w-8" />
-              <span className="t-label text-[var(--color-v-text)] max-lg:!text-[11px] max-lg:leading-tight">
+              <span className="t-label text-[var(--color-v-text)] max-lg:!text-[13px] max-lg:leading-tight">
                 <span className="block">{fill(item.label, values)}</span>
                 <span className="block text-[var(--color-v-muted)]">{item.sub}</span>
               </span>

@@ -82,9 +82,7 @@ function RankedList({ items, compact = false }) {
       {items?.map((item, index) => (
         <li
           key={`${item}-${index}`}
-          className={`flex gap-1.5 leading-[1.3] text-[var(--color-text)] ${
-            compact ? "text-[14px] md:text-[0.68rem]" : "text-[14px]"
-          }`}
+          className="flex gap-1.5 text-[14px] leading-[1.3] text-[var(--color-text)]"
         >
           <span className="shrink-0 font-semibold text-[var(--color-primary)]">{index + 1}.</span>
           <span dangerouslySetInnerHTML={{ __html: stripListPrefix(item) }} />
@@ -102,7 +100,7 @@ function AverageCostCard({ value, note }) {
     <div className="flex h-full flex-col justify-between gap-2">
       <div>
         <p
-          className="lg:text-[15px] text-[1.1rem] font-bold leading-[1.1] text-[var(--color-text)] md:text-[0.92rem]"
+          className="lg:text-[15px] text-[1.1rem] font-bold leading-[1.1] text-[var(--color-text)] md:text-[15px]"
           dangerouslySetInnerHTML={{ __html: price }}
         />
         {displayNote ? (
@@ -261,20 +259,30 @@ function MarketIntelligenceBody({ data, isDark, grouped, hideSidebar }) {
   const title = splitMarketIntelligenceH2(data.h2 || "Market Intelligence");
   const feedStyles = useFeedStyles(isDark);
 
+  // Only cards with content: an empty list left a bare title card on some generations (e.g. G14 engines).
+  const has = (value) => (Array.isArray(value) ? value.length > 0 : Boolean(String(value ?? "").trim()));
   const statCards = (
     <>
-      <StatCard icon="chart" title={data.engineCardTitle || "Most Requested Engines (2025)"} isDark={isDark}>
-        <RankedList items={data.mostRequestedEngines} compact />
-      </StatCard>
-      <StatCard icon="car" title={data.variantCardTitle || "Most Requested Variants"} isDark={isDark}>
-        <RankedList items={data.mostRequestedVariants} compact />
-      </StatCard>
-      <StatCard icon="dollar" title={data.costCardTitle || "Average Replacement Cost"} isDark={isDark}>
-        <AverageCostCard value={data.averageReplacementCost} note={data.averageReplacementCostNote} />
-      </StatCard>
-      <StatCard icon="warning" title={data.failureCardTitle || "Most Common Failures"} isDark={isDark}>
-        <RankedList items={data.mostCommonFailures} compact />
-      </StatCard>
+      {has(data.mostRequestedEngines) ? (
+        <StatCard icon="chart" title={data.engineCardTitle || "Most Requested Engines (2025)"} isDark={isDark}>
+          <RankedList items={data.mostRequestedEngines} compact />
+        </StatCard>
+      ) : null}
+      {has(data.mostRequestedVariants) ? (
+        <StatCard icon="car" title={data.variantCardTitle || "Most Requested Variants"} isDark={isDark}>
+          <RankedList items={data.mostRequestedVariants} compact />
+        </StatCard>
+      ) : null}
+      {has(data.averageReplacementCost) ? (
+        <StatCard icon="dollar" title={data.costCardTitle || "Average Replacement Cost"} isDark={isDark}>
+          <AverageCostCard value={data.averageReplacementCost} note={data.averageReplacementCostNote} />
+        </StatCard>
+      ) : null}
+      {has(data.mostCommonFailures) ? (
+        <StatCard icon="warning" title={data.failureCardTitle || "Most Common Failures"} isDark={isDark}>
+          <RankedList items={data.mostCommonFailures} compact />
+        </StatCard>
+      ) : null}
     </>
   );
 

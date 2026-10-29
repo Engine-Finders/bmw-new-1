@@ -104,7 +104,7 @@ function DemandMap({ rows, wide = false }) {
           style={{ left: `${((row.slot[0] - x0) / width) * 100}%`, top: `${(row.slot[1] / height) * 100}%`, aspectRatio: "1 / 1" }}
         >
           <span className={`${wide ? "text-[15px] font-bold" : "t-num"} text-[var(--color-v-blue)]`}>{row.share}%</span>
-          <span className={`${wide ? "text-[10px]" : "t-label"} max-w-[90%] leading-tight text-[var(--color-v-text)]`}>{row.name}</span>
+          <span className={`${wide ? "text-[12px]" : "t-label"} max-w-[92%] leading-tight text-[var(--color-v-text)]`}>{row.name}</span>
         </span>
       ))}
     </div>

@@ -157,12 +157,12 @@ export default function EngineCodes({ data }) {
         <p className="t-h6 font-bold text-[var(--color-v-text)]">{plain(row.engineCode)}</p>
         <dl className="mt-1">
           {FIELDS.slice(1).map((field, fieldIndex) => (
-            <div key={field} className="flex items-center gap-1.5 border-t border-[var(--color-v-border)] py-2 text-[12px] leading-snug">
+            <div key={field} className="flex items-center gap-1.5 border-t border-[var(--color-v-border)] py-2 text-[13px] leading-snug">
               <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-[var(--color-v-blue-soft)] text-[var(--color-v-blue)]">
                 <VIcon name={copy.mobileRows[field]} className="h-3.5 w-3.5" />
               </span>
               <dt className="shrink-0 text-[var(--color-v-text)]">{columns[fieldIndex + 1]}</dt>
-              <dd className="min-w-0 flex-1 text-right text-[var(--color-v-text)] [overflow-wrap:normal] [&_*]:[overflow-wrap:normal] [&_.t-label]:!text-[11px]">
+              <dd className="min-w-0 flex-1 text-right text-[var(--color-v-text)] [overflow-wrap:normal] [&_*]:[overflow-wrap:normal] [&_.t-label]:!text-[12.5px]">
                 {field === "enquiries" ? <Enquiries value={row.enquiries} align="right" /> : field === "avgReconCost" ? <Cost value={row.avgReconCost} align="right" /> : dash(row[field])}
               </dd>
             </div>
@@ -186,7 +186,7 @@ export default function EngineCodes({ data }) {
               tabs={tabs}
               label={copy.h2}
               listClassName="flex gap-1.5"
-              tabClassName="min-w-0 flex-1 rounded-t-[10px] border border-b-0 px-1 py-2.5 text-center [&_.t-label]:text-[11px] [&_.t-body]:text-[length:var(--fs-label)]"
+              tabClassName="min-w-0 flex-1 rounded-t-[10px] border border-b-0 px-1 py-2.5 text-center [&_.t-label]:text-[12.5px] [&_.t-body]:text-[length:var(--fs-label)]"
               activeClassName="border-[var(--color-v-tile)] bg-[var(--color-v-tile)] text-white"
               inactiveClassName="border-[var(--color-v-border)] bg-[var(--color-v-panel)] text-[var(--color-v-text)]"
             />

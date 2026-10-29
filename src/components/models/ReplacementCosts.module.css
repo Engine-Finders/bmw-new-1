@@ -639,25 +639,30 @@
 
   .pTable .tr,
   .pTable .tr:nth-child(6) {
-    grid-template-columns: minmax(64px, 1.1fr) minmax(50px, 0.95fr) minmax(50px, 0.95fr) minmax(80px, 1.45fr) minmax(52px, 1fr) minmax(42px, 0.8fr);
-    min-width: 342px;
+    grid-template-columns: minmax(96px, 1.1fr) minmax(84px, 0.95fr) minmax(84px, 0.95fr) minmax(112px, 1.3fr) minmax(88px, 1fr) minmax(72px, 0.8fr);
+    min-width: 560px;
     height: auto;
     min-height: 0;
-    font-size: 12px;
+    font-size: 13px;
     line-height: 1.4;
   }
 
+  /* Words stay whole ("Reconditioned", "Labour Hours"): the table scrolls instead of breaking them. */
   .pTable .tr > span {
-    padding: 7px 2px;
+    padding: 8px 6px;
+    /* Columns are wide enough for whole words ("Reconditioned"); only a run too long for its cell ("xDrive30d/40d/M50d") breaks. */
+    overflow-wrap: anywhere;
+    word-break: normal;
+    hyphens: none;
   }
 
   .pTable .tr > span:first-child {
-    padding-left: 5px;
+    padding-left: 8px;
   }
 
   .pTable .thead {
     height: auto;
-    font-size: 12px;
+    font-size: 13px;
   }
 
   .pNote {
@@ -1134,5 +1139,21 @@
   .copy {
     font-size: 15px !important;
     line-height: 1.55 !important;
+  }
+}
+
+
+/* Tablets (651–1023px): text scales with the screen here, so labels keep a 13px floor. */
+@media (min-width: 651px) and (max-width: 1023px) {
+  .footer {
+    font-size: max(13px, calc(12.9 * var(--u)));
+  }
+
+  .tr {
+    font-size: max(13px, calc(14.3 * var(--u)));
+  }
+
+  .bullet {
+    font-size: 13px;
   }
 }

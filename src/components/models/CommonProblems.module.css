@@ -149,6 +149,18 @@
   object-fit: cover;
 }
 
+.photoEmpty {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 44%;
+  max-width: 72px;
+  height: auto;
+  transform: translate(-50%, -50%);
+  color: var(--p-accent);
+  opacity: 0.45;
+}
+
 .num {
   position: absolute;
   z-index: 1;
@@ -774,5 +786,12 @@
   .copy {
     font-size: 15px !important;
     line-height: 1.55 !important;
+  }
+}
+
+/* Tablets (651–1023px): text scales with the screen here, so labels keep a 13px floor. */
+@media (min-width: 651px) and (max-width: 1023px) {
+  .keyText span {
+    font-size: max(13px, calc(13.7 * var(--u)));
   }
 }

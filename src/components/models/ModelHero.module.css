@@ -505,7 +505,7 @@
   }
 
   .pill {
-    font-size: max(11px, calc(20.4 * var(--u)));
+    font-size: max(13px, calc(20.4 * var(--u)));
   }
 
   .title {
@@ -568,11 +568,11 @@
   .pre,
   .statDetail,
   .statNote {
-    font-size: max(12px, calc(21 * var(--u)));
+    font-size: max(13px, calc(21 * var(--u)));
   }
 
   .statTag {
-    font-size: max(11.5px, calc(21.3 * var(--u)));
+    font-size: max(13px, calc(21.3 * var(--u)));
   }
 
   .statTag {
@@ -678,7 +678,7 @@
     max-width: 50.9em;
     padding: 0.58em 1.2em 0.58em 1.15em;
     border-radius: 1.22em;
-    font-size: max(12px, calc(18 * var(--u)));
+    font-size: max(13px, calc(18 * var(--u)));
     line-height: 1.944;
   }
 
@@ -888,7 +888,7 @@
   .stat .label,
   .stat .statSub,
   .stat .pre {
-    font-size: max(12px, calc(18 * var(--u)));
+    font-size: max(13px, calc(18 * var(--u)));
     line-height: calc(29 * var(--u));
   }
 
@@ -897,7 +897,7 @@
     margin: 0;
     padding: 0;
     border: 0;
-    font-size: max(12px, calc(17.8 * var(--u)));
+    font-size: max(13px, calc(17.8 * var(--u)));
     font-weight: 400;
     line-height: calc(29 * var(--u));
     color: var(--stat-tag);
@@ -927,7 +927,7 @@
   .split .label {
     display: inline;
     margin-left: 0.3em;
-    font-size: max(12px, calc(18.6 * var(--u)));
+    font-size: max(13px, calc(18.6 * var(--u)));
     line-height: inherit;
   }
 
@@ -941,12 +941,12 @@
   }
 
   .partof .pre {
-    font-size: max(12px, calc(17.6 * var(--u)));
+    font-size: max(13px, calc(17.6 * var(--u)));
   }
 
   .partof .label {
     font-weight: 600;
-    font-size: max(12px, calc(18.2 * var(--u)));
+    font-size: max(13px, calc(18.2 * var(--u)));
   }
 
   /* dark shapes */

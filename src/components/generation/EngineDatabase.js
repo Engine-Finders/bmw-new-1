@@ -353,17 +353,17 @@ function PhoneTable({ engines }) {
               </span>
               <span className={`${td} flex-col px-[3.5px] text-[15px] leading-[1.3]`}>
                 <Html html={power.main || "—"} />
-                {power.sub ? <Html html={power.sub} className="mt-[2px] text-[12.5px] leading-[1.2] tracking-[-0.03em] text-[var(--db-muted)]" /> : null}
+                {power.sub ? <Html html={power.sub} className="mt-[2px] text-[13px] leading-[1.2] tracking-[-0.03em] text-[var(--db-muted)]" /> : null}
               </span>
               <span className={`${td} flex-col px-[3.5px] text-[15px] leading-[1.3]`}>
                 <Html html={years.main || "—"} />
-                {years.sub ? <Html html={years.sub} className="mt-[2px] text-[12.5px] leading-[1.2] tracking-[-0.03em] text-[var(--db-muted)]" /> : null}
+                {years.sub ? <Html html={years.sub} className="mt-[2px] text-[13px] leading-[1.2] tracking-[-0.03em] text-[var(--db-muted)]" /> : null}
               </span>
               <span className={`${td} flex-col px-[4px]`}>
                 <span className="whitespace-nowrap text-[15px] leading-none tracking-[0.12em]">{stars}</span>
                 {tag ? (
                   <span
-                    className={`mt-[6px] max-w-full whitespace-nowrap rounded-[2.5px] px-[4px] py-[2.5px] text-[12px] font-medium uppercase leading-tight tracking-[-0.01em] ${
+                    className={`mt-[6px] max-w-full whitespace-nowrap rounded-[2.5px] px-[4px] py-[2.5px] text-[13px] font-medium uppercase leading-tight tracking-[-0.01em] ${
                       /VERIFIED/i.test(tag)
                         ? "border border-[var(--db-green)] bg-[var(--db-green-bg)] text-[var(--db-green)]"
                         : "bg-[var(--db-pill)] text-[var(--db-pill-text)]"
@@ -373,13 +373,13 @@ function PhoneTable({ engines }) {
                   </span>
                 ) : null}
                 {details.map((line) => (
-                  <Html key={line} html={line} className={`mt-[2.5px] text-[12.5px] leading-[1.3] tracking-[-0.03em] text-[var(--db-muted)] ${line.length <= 22 ? "whitespace-nowrap" : ""}`} />
+                  <Html key={line} html={line} className={`mt-[2.5px] text-[13px] leading-[1.3] tracking-[-0.03em] text-[var(--db-muted)] ${line.length <= 22 ? "whitespace-nowrap" : ""}`} />
                 ))}
               </span>
               <span className={`${td} flex-col px-[5.5px] leading-[1.35]`}>
                 {enquiries.figure ? <span className="text-[15px]">{enquiries.figure}</span> : null}
                 {enquiries.note ? <Html html={enquiries.note} className="mt-[2px] max-w-[64.5px] text-[13px] leading-[1.45] text-[var(--db-muted)]" /> : null}
-                {enquiries.tag ? <span className={`mt-[2px] whitespace-nowrap text-[12.5px] font-medium tracking-[-0.03em] ${tagTone(enquiries.tag)}`}>{enquiries.tag}</span> : null}
+                {enquiries.tag ? <span className={`mt-[2px] whitespace-nowrap text-[13px] font-medium tracking-[-0.03em] ${tagTone(enquiries.tag)}`}>{enquiries.tag}</span> : null}
               </span>
               <span className={`${td} gap-[2px] pl-[2.5px] pr-[7px]`}>
                 <span className="flex min-w-0 flex-1 flex-col items-center leading-[1.3]">

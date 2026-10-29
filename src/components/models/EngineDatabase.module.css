@@ -452,7 +452,7 @@
   border-top: 1px solid var(--e-p-border);
   text-align: center;
   color: var(--e-p-placeholder);
-  font-size: calc(17 * var(--u));
+  font-size: max(14px, calc(17 * var(--u)));
 }
 
 .sources {

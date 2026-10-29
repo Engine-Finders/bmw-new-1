@@ -187,7 +187,7 @@ function PhoneStrip({ items, isDark }) {
   const captions = ui.hero?.trustCaptions || [];
   return (
     <ul
-      className={`mt-5 grid grid-cols-4 rounded-[12px] border px-1 py-5 md:mt-6 md:px-3 lg:hidden ${
+      className={`mt-5 grid grid-cols-2 gap-y-5 rounded-[12px] border px-1 py-5 md:mt-6 md:grid-cols-4 md:gap-y-0 md:px-3 lg:hidden ${
         isDark ? "border-white/15 bg-[rgba(11,24,38,0.72)]" : "border-[#e6eaf0] bg-white shadow-[0_8px_24px_rgba(10,26,43,0.06)]"
       }`}
     >
@@ -195,8 +195,9 @@ function PhoneStrip({ items, isDark }) {
         const stat = splitStat(item.label);
         const caption = captions[index];
         return (
-          <li key={item.label} className="relative flex min-w-0 flex-col items-center px-0.5 text-center md:px-2 text-[var(--hero-text)]">
-            {index ? <span aria-hidden="true" className={`absolute left-0 top-0 h-full w-px ${isDark ? "bg-white/12" : "bg-[#e6eaf0]"}`} /> : null}
+          <li key={item.label} className="relative flex min-w-0 flex-col items-center px-2 text-center text-[var(--hero-text)]">
+            {/* Phones: two to a row, so only the right-hand item gets a divider; tablets: four across. */}
+            {index ? <span aria-hidden="true" className={`absolute left-0 top-0 h-full w-px ${index % 2 ? "" : "hidden md:block"} ${isDark ? "bg-white/12" : "bg-[#e6eaf0]"}`} /> : null}
             <span
               className={`flex h-11 w-11 items-center justify-center rounded-full border md:h-14 md:w-14 ${
                 isDark ? "border-[var(--hero-blue)] bg-[#0f2236] text-white" : "border-[#d9e2ee] bg-white text-[var(--hero-blue)]"
@@ -205,26 +206,26 @@ function PhoneStrip({ items, isDark }) {
               <Icon name={STAT_ICONS.phone[index] || "bars"} strokeWidth={2} className="h-[22px] w-[22px] md:h-7 md:w-7" />
             </span>
             {stat.value ? <strong className="mt-3 block text-[18px] font-semibold leading-[1.2] md:text-[20px]">{stat.value}</strong> : null}
-            {stat.lead ? <strong className="mt-3 block text-[12px] font-semibold leading-[1.35] min-[400px]:text-[13px] md:text-[15px]">{stat.lead}</strong> : null}
+            {stat.lead ? <strong className="mt-3 block text-[14px] font-semibold leading-[1.35] md:text-[15px]">{stat.lead}</strong> : null}
             <span
               className={`block leading-[1.35] ${
                 stat.value
-                  ? "mt-1 text-[12px] md:text-[14px]"
+                  ? "mt-1 text-[13px] md:text-[14px]"
                   : stat.lead
-                    ? "text-[12px] font-semibold min-[390px]:whitespace-nowrap min-[400px]:text-[13px] md:text-[15px]"
+                    ? "text-[14px] font-semibold md:text-[15px]"
                     : // Long body lists ("Saloon/Coupé/Convertible/…") step down so each part fits its column.
-                      `mt-3 font-semibold ${stat.label.length > 14 ? "text-[12.5px] md:text-[15px]" : "text-[15px] md:text-[17px]"}`
+                      `mt-3 font-semibold [overflow-wrap:anywhere] ${stat.label.length > 14 ? "text-[14px] md:text-[15px]" : "text-[15px] md:text-[17px]"}`
               }`}
             >
               {stat.label}
             </span>
             {stat.tag ? (
-              <span className="mt-1.5 inline-flex items-center gap-0.5 whitespace-nowrap text-[10.5px] font-semibold leading-tight text-[var(--hero-blue)] min-[400px]:text-[11px] md:gap-1 md:text-[13px]">
-                <Icon name="shieldCheck" strokeWidth={2.2} className="h-2.5 w-2.5 shrink-0 max-[379px]:hidden min-[400px]:h-3 min-[400px]:w-3 md:h-3.5 md:w-3.5" />
+              <span className="mt-1.5 inline-flex items-center gap-1 whitespace-nowrap text-[12.5px] font-semibold leading-tight text-[var(--hero-blue)] md:text-[13px]">
+                <Icon name="shieldCheck" strokeWidth={2.2} className="h-3 w-3 shrink-0 md:h-3.5 md:w-3.5" />
                 {stat.tag}
               </span>
             ) : null}
-            {caption ? <span className="mt-1 block text-[11.5px] leading-[1.35] opacity-85 min-[400px]:text-[12px] md:text-[14px]">{caption}</span> : null}
+            {caption ? <span className="mt-1 block text-[13px] leading-[1.35] opacity-85 md:text-[14px]">{caption}</span> : null}
           </li>
         );
       })}

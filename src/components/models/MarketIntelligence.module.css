@@ -695,7 +695,7 @@
 
   .tag {
     white-space: nowrap;
-    font-size: min(10.5px, 2.75cqw);
+    font-size: 12.5px;
   }
 
   .cTrend,
@@ -1279,4 +1279,40 @@
 
 .trendDown {
   transform: scaleY(-1);
+}
+
+
+/* Tablets (651–1023px): text scales with the screen here, so labels keep a 13px floor. */
+@media (min-width: 651px) and (max-width: 1023px) {
+  .quoteLabel {
+    font-size: max(13px, calc(13 * var(--u)));
+  }
+
+  .liveText {
+    font-size: max(13px, calc(14 * var(--u)));
+  }
+
+  .quoteText {
+    font-size: max(13px, calc(14 * var(--u)));
+  }
+
+  .liveBadge {
+    font-size: max(13px, calc(14 * var(--u)));
+  }
+
+  .placeholder {
+    font-size: max(13px, calc(14 * var(--u)));
+  }
+
+  .tag {
+    font-size: max(13px, calc(14 * var(--u)));
+  }
+
+  .note {
+    font-size: max(13px, calc(14 * var(--u)));
+  }
+
+  .statText span {
+    font-size: max(13px, calc(13.4 * var(--u)));
+  }
 }

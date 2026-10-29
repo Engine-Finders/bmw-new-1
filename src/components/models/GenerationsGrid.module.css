@@ -711,28 +711,29 @@
     height: 20px;
   }
 
-  /* the comparison table scales with its own width, so the phone reference's line breaks always fit */
+  /* Phones: the comparison table keeps readable text (13-14px) and scrolls sideways instead of shrinking. */
   .gridWrap {
-    container-type: inline-size;
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
   }
 
   .gridPhone {
-    grid-template-columns: 63fr 64fr 75fr 79fr 67fr;
+    grid-template-columns: 118px 128px 140px 150px 132px;
+    min-width: 668px;
     margin-top: 10px;
     border-radius: 8px;
-    font-size: 2.1cqw;
+    font-size: 13px;
   }
 
   .gridPhone .gCorner,
   .gridPhone .gTh,
   .gridPhone .posHead {
-    min-height: auto;
     min-height: 0;
-    padding: 0.7em 0.25em;
+    padding: 9px 6px;
   }
 
   .gridPhone .thText strong {
-    font-size: 1.1em;
+    font-size: 14px;
     line-height: 1.35;
   }
 
@@ -741,67 +742,165 @@
   .gridPhone .gLabel,
   .gridPhone .posHead,
   .gridPhone .posText {
-    font-size: 1em;
+    font-size: 13px;
     line-height: 1.4;
   }
 
   .gridPhone .gLabel {
-    gap: 0.35em;
-    padding: 0 0.2em 0 0.45em;
+    gap: 5px;
+    padding: 0 4px 0 8px;
     white-space: nowrap;
   }
 
   .gridPhone .rowIcon {
-    width: 1.3em;
-    min-height: 1.3em;
+    width: 18px;
+    min-height: 18px;
   }
 
   .gridPhone .posHead {
-    gap: 0.35em;
+    gap: 5px;
   }
 
   .gridPhone .posIcon {
-    width: 1.25em;
-    min-height: 1.25em;
+    width: 17px;
+    min-height: 17px;
   }
 
   .gridPhone .gRow:nth-child(2) > *,
   .gridPhone .gRow:nth-child(3) > * {
-    min-height: auto;
     min-height: 0;
   }
 
   .gridPhone .gCell {
-    padding: 0.8em 0.25em 0.8em 0.55em;
+    padding: 10px 6px 10px 8px;
   }
 
   .gridPhone .posText {
-    padding: 0.4em 0.3em 0 0.6em;
+    padding: 6px 6px 0 8px;
   }
 
-  /* one line, as in the reference */
+  /* "Read the full comparison: <link>": wraps instead of shrinking */
   .link {
     margin-left: 0;
-    white-space: nowrap;
-    font-size: 2.7cqw;
+    flex-wrap: wrap;
+    row-gap: 4px;
+    font-size: 14px;
   }
 
   .linkIcon {
     flex-shrink: 0;
-    width: 5.4cqw;
-    height: 5.4cqw;
-    margin-right: 2cqw;
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
   }
 
   .linkA {
-    gap: 1.4cqw;
-    margin-left: 2cqw;
-    font-size: 3.1cqw;
+    gap: 6px;
+    margin-left: 6px;
+    font-size: 14px;
   }
 
   .linkArrow {
-    width: 3.4cqw;
-    height: 3.4cqw;
+    width: 14px;
+    height: 14px;
+  }
+}
+
+/* ======================= Tablets ======================= */
+/* At reference scale the comparison table drops to 10-12px between 651 and 1023px: same readable table as phones. */
+@media (min-width: 651px) and (max-width: 1023px) {
+  /* Tablets: the comparison table keeps readable text (13-14px) and scrolls sideways instead of shrinking. */
+  .gridWrap {
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+  }
+
+  .gridPhone {
+    grid-template-columns: 118px 128px 140px 150px 132px;
+    min-width: 668px;
+    margin-top: 10px;
+    border-radius: 8px;
+    font-size: 13px;
+  }
+
+  .gridPhone .gCorner,
+  .gridPhone .gTh,
+  .gridPhone .posHead {
+    min-height: 0;
+    padding: 9px 6px;
+  }
+
+  .gridPhone .thText strong {
+    font-size: 14px;
+    line-height: 1.35;
+  }
+
+  .gridPhone .thText span,
+  .gridPhone .gCell,
+  .gridPhone .gLabel,
+  .gridPhone .posHead,
+  .gridPhone .posText {
+    font-size: 13px;
+    line-height: 1.4;
+  }
+
+  .gridPhone .gLabel {
+    gap: 5px;
+    padding: 0 4px 0 8px;
+    white-space: nowrap;
+  }
+
+  .gridPhone .rowIcon {
+    width: 18px;
+    min-height: 18px;
+  }
+
+  .gridPhone .posHead {
+    gap: 5px;
+  }
+
+  .gridPhone .posIcon {
+    width: 17px;
+    min-height: 17px;
+  }
+
+  .gridPhone .gRow:nth-child(2) > *,
+  .gridPhone .gRow:nth-child(3) > * {
+    min-height: 0;
+  }
+
+  .gridPhone .gCell {
+    padding: 10px 6px 10px 8px;
+  }
+
+  .gridPhone .posText {
+    padding: 6px 6px 0 8px;
+  }
+
+  /* "Read the full comparison: <link>": wraps instead of shrinking */
+  .link {
+    margin-left: 0;
+    flex-wrap: wrap;
+    row-gap: 4px;
+    font-size: 14px;
+  }
+
+  .linkIcon {
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+  }
+
+  .linkA {
+    gap: 6px;
+    margin-left: 6px;
+    font-size: 14px;
+  }
+
+  .linkArrow {
+    width: 14px;
+    height: 14px;
   }
 }
 

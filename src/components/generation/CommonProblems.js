@@ -195,14 +195,15 @@ function AccordionCard({ problem, isDark, isOpen, onToggle }) {
             />
           </div>
 
-          <div className="lg:text-[15px] grid grid-cols-2 divide-x divide-[var(--color-border)] text-[14px] leading-[1.35]">
-            <div className="flex items-start gap-1.5 pr-2">
+          {/* Phones: models and mileage stacked (side by side, long engine codes ran into the mileage); two columns from 640px. */}
+          <div className="lg:text-[15px] grid grid-cols-1 gap-1.5 text-[14px] leading-[1.35] sm:grid-cols-2 sm:gap-0 sm:divide-x sm:divide-[var(--color-border)]">
+            <div className="flex min-w-0 items-start gap-1.5 sm:pr-2">
               <GenIcon name="car" className="mt-0.5 h-3.5 w-3.5 shrink-0 text-[var(--color-primary)]" />
-              <span className="text-[var(--color-text-muted)]" dangerouslySetInnerHTML={{ __html: problem.affectedModels }} />
+              <span className="min-w-0 text-[var(--color-text-muted)] [overflow-wrap:anywhere]" dangerouslySetInnerHTML={{ __html: problem.affectedModels }} />
             </div>
-            <div className="flex items-start gap-1.5 pl-2">
+            <div className="flex min-w-0 items-start gap-1.5 sm:pl-2">
               <GenIcon name="gauge" className="mt-0.5 h-3.5 w-3.5 shrink-0 text-[var(--color-primary)]" />
-              <span className="text-[var(--color-text-muted)]" dangerouslySetInnerHTML={{ __html: problem.typicalFailureMileage }} />
+              <span className="min-w-0 text-[var(--color-text-muted)] [overflow-wrap:anywhere]" dangerouslySetInnerHTML={{ __html: problem.typicalFailureMileage }} />
             </div>
           </div>
 

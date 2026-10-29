@@ -139,7 +139,7 @@ export default function VariantHero({ data }) {
 
   const pillNode = pill.length ? (
     // Phones: rounder pill on a dark fill, white text in the dark design; desktop and light: blue text.
-    <p className="t-label inline-flex w-fit max-w-full flex-wrap items-center gap-x-2 gap-y-0.5 rounded-[12px] max-md:text-[clamp(10.5px,2.75vw,13px)] md:gap-x-2.5 md:gap-y-1 border-[1.5px] border-[var(--color-v-blue)] bg-[color-mix(in_srgb,var(--color-v-panel)_55%,transparent)] px-4 py-2 font-medium text-[var(--color-v-blue)] md:rounded-[6px] md:border md:px-3 md:py-1.5 md:font-normal [[data-theme=dark]_&]:max-md:text-[var(--color-v-text)]">
+    <p className="t-label inline-flex w-fit max-w-full flex-wrap items-center gap-x-2 gap-y-0.5 rounded-[12px] max-md:text-[13px] md:gap-x-2.5 md:gap-y-1 border-[1.5px] border-[var(--color-v-blue)] bg-[color-mix(in_srgb,var(--color-v-panel)_55%,transparent)] px-4 py-2 font-medium text-[var(--color-v-blue)] md:rounded-[6px] md:border md:px-3 md:py-1.5 md:font-normal [[data-theme=dark]_&]:max-md:text-[var(--color-v-text)]">
       {pill.map((part, index) => (
         <span key={index} className="inline-flex items-center gap-2 whitespace-nowrap md:gap-2.5">
           {index ? <span aria-hidden="true">•</span> : null}
