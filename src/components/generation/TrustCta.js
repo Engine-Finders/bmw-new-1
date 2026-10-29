@@ -18,7 +18,7 @@ function trustPointIconBoxClass(isDark) {
 
 function glassCtaClass(isDark) {
   return [
-    "inline-flex min-h-11 w-full items-center justify-center gap-2 rounded-md border px-4 py-3 text-center text-[0.68rem] font-bold uppercase leading-snug tracking-wide backdrop-blur-xl backdrop-saturate-150 transition-colors md:w-auto md:whitespace-nowrap md:px-6 md:text-[0.74rem]",
+    "inline-flex min-h-11 w-full items-center justify-center gap-2 rounded-md border px-4 py-3 text-center text-[13px] font-bold uppercase leading-snug tracking-wide backdrop-blur-xl backdrop-saturate-150 transition-colors md:w-auto md:whitespace-nowrap md:px-6 md:text-[0.74rem]",
     isDark
       ? "border-white/20 bg-[rgba(255,255,255,0.08)] text-white shadow-[0_10px_28px_rgba(0,0,0,0.35)] hover:bg-[rgba(255,255,255,0.12)]"
       : "border-[var(--color-border-strong)] bg-[rgba(255,255,255,0.58)] text-[var(--color-text)] shadow-[0_10px_28px_rgba(17,18,16,0.12)] hover:bg-[rgba(255,255,255,0.78)]",
@@ -48,7 +48,7 @@ function TrustPoint({ point, icon, isDark }) {
           dangerouslySetInnerHTML={{ __html: point.title }}
         />
         <p
-          className={`lg:text-[15px] mt-1.5 text-[0.82rem] leading-[1.5] md:text-[0.88rem] ${isDark ? "text-white/72" : "text-[var(--color-text-muted)]"}`}
+          className={`lg:text-[15px] mt-1.5 text-[14px] leading-[1.5] md:text-[0.88rem] ${isDark ? "text-white/72" : "text-[var(--color-text-muted)]"}`}
           dangerouslySetInnerHTML={{ __html: point.text }}
         />
       </div>
@@ -119,7 +119,7 @@ export default function TrustCta({ data }) {
 
               {data.finalCta ? (
                 <p
-                  className={`lg:text-[15px] text-[0.84rem] leading-[1.55] md:text-[0.92rem] ${isDark ? "text-white/88" : "text-[var(--color-text-muted)]"}`}
+                  className={`lg:text-[15px] text-[14px] leading-[1.55] md:text-[0.92rem] ${isDark ? "text-white/88" : "text-[var(--color-text-muted)]"}`}
                   dangerouslySetInnerHTML={{ __html: data.finalCta }}
                 />
               ) : (

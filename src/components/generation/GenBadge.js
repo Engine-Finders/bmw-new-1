@@ -24,7 +24,7 @@ export default function GenBadge({ tag, isDark, compact = false }) {
   if (compact) {
     return (
       <span
-        className={`lg:text-[15px] block max-w-full truncate rounded border px-1 py-0.5 text-[12px] font-semibold uppercase leading-none tracking-tight ${
+        className={`lg:text-[15px] block max-w-full truncate rounded border px-1 py-0.5 text-[13px] font-semibold uppercase leading-none tracking-tight ${
           isDark ? style.dark : style.light
         }`}
         title={tag}
@@ -36,7 +36,7 @@ export default function GenBadge({ tag, isDark, compact = false }) {
 
   return (
     <span
-      className={`lg:text-[15px] inline-flex max-w-full items-center truncate rounded-md border px-2 py-0.5 text-[12px] font-semibold uppercase tracking-wide ${
+      className={`lg:text-[15px] inline-flex max-w-full items-center truncate rounded-md border px-2 py-0.5 text-[13px] font-semibold uppercase tracking-wide ${
         isDark ? style.dark : style.light
       }`}
     >

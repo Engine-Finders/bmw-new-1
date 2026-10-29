@@ -73,22 +73,22 @@ export default function TrustCta({ data, vehicle }) {
             <div className="relative grid gap-5 p-5 md:grid-cols-[minmax(0,0.9fr)_minmax(0,1.15fr)_minmax(0,0.5fr)] md:items-center md:p-6 lg:gap-6">
               <span aria-hidden="true" className="hidden md:block" />
               <div className="relative">
-                <div className="relative z-10 max-w-[56%] md:max-w-none">
-                  <p className="t-h5 font-bold text-[var(--color-v-text)] md:text-[length:var(--fs-h4)]">{final.title}</p>
-                  {final.body ? <p className="t-body mt-2 text-[var(--color-v-muted)]">{final.body}</p> : null}
-                </div>
-                {/* Phones: the engine sits over the lower right of the picture */}
-                <div aria-hidden="true" className="pointer-events-none absolute -right-3 bottom-[-20px] flex w-[50%] flex-col md:hidden">
+                {/* Phones: the engine sits beside the text (under the picture), never over the button below */}
+                <div className="flex items-end gap-2 md:block">
+                  <div className="relative z-10 min-w-0 max-w-[60%] flex-1 md:max-w-none">
+                    <p className="t-h5 font-bold text-[var(--color-v-text)] md:text-[length:var(--fs-h4)]">{final.title}</p>
+                    {final.body ? <p className="t-body mt-2 text-[var(--color-v-muted)]">{final.body}</p> : null}
+                  </div>
                   {data.engineImage ? (
-                    <span className="relative -mt-2 ml-[12%] block aspect-square w-[88%]">
-                      <Image src={data.engineImage} alt="" fill sizes="45vw" className="object-contain" />
+                    <span aria-hidden="true" className="pointer-events-none relative -mr-3 block aspect-square w-[42%] shrink-0 md:hidden">
+                      <Image src={data.engineImage} alt="" fill sizes="42vw" className="object-contain" />
                     </span>
                   ) : null}
                 </div>
                 {button?.label ? (
                   <Link
                     href={button.href || "/quote"}
-                    className="t-body relative z-10 mt-5 inline-flex max-w-[66%] items-center justify-center gap-2 rounded-[6px] bg-[var(--color-v-green-btn)] px-4 py-3 text-left font-semibold leading-snug text-white transition hover:brightness-110 md:max-w-none md:gap-3 md:whitespace-nowrap md:px-6 md:text-center"
+                    className="t-body relative z-10 mt-5 inline-flex w-full items-center justify-center gap-2 rounded-[6px] bg-[var(--color-v-green-btn)] px-4 py-3 text-left font-semibold leading-snug text-white transition hover:brightness-110 md:w-auto md:gap-3 md:whitespace-nowrap md:px-6 md:text-center"
                   >
                     {stripMarker(button.label)}
                     <VIcon name="arrowRight" className="h-[18px] w-[18px] shrink-0" strokeWidth={2.2} />

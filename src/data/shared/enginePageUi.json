@@ -1,0 +1,122 @@
+{
+  "hero": {
+    "statCards": {
+      "enquiries": { "label": "Enquiries", "sub": "Real UK enquiries in 2025" },
+      "models": { "label": "Models Fitted", "labelOne": "Model Fitted", "sub": "Across BMW range" },
+      "score": { "label": "Engine Score", "sub": "Reliability rating" },
+      "partOf": { "pre": "Part of", "title": "Engine Finders", "sub": "Trusted UK Specialists" }
+    },
+    "trustBar": [
+      { "icon": "shield-check", "title": "BMW-Verified Engines", "text": "Quality checked & tested" },
+      { "icon": "truck", "title": "Nationwide Delivery", "text": "Fast & secure shipping" },
+      { "icon": "rosette", "title": "6 Months Warranty", "text": "Premium parts guarantee" },
+      { "icon": "headset", "title": "Expert Support", "text": "Here to help you" }
+    ],
+    "engineAlt": "BMW {code} engine",
+    "carAlt": "BMW fitted with the {code} engine",
+    "ctaFallback": "Compare {code} Engine Prices",
+    "ctaHref": "/quote"
+  },
+  "atAGlance": {
+    "eyebrow": "At a Glance",
+    "h2": "BMW {code} Engine Overview",
+    "subHeading": "All the essential specifications, performance data, and compatibility information at a glance.",
+    "labels": {
+      "Engine Family": "Engine Family",
+      "Fuel": "Fuel",
+      "Configuration / Displacement": "Configuration / Displacement",
+      "Power Range": "Power Range",
+      "Years Produced": "Years Produced",
+      "Models Fitted": "Models Fitted (BMW only)",
+      "Cross-Brand Fitment": "Cross-Brand Fitment",
+      "Overall Engine Score": "Engine Score"
+    },
+    "mobileLabels": {
+      "Overall Engine Score": "Overall Engine Score"
+    },
+    "descriptions": {
+      "Configuration / Displacement": "Cylinder layout, capacity and induction across the {code} family.",
+      "yearsDecade": "Over a decade of production and continuous development.",
+      "yearsShort": "{n} years of production and continuous development.",
+      "Models Fitted": "Fitted across a wide range of BMW vehicles and body styles.",
+      "modelsFew": "Fitted to a small, select group of BMW models.",
+      "crossBrandExclusive": "The {code} engine is engineered exclusively for BMW vehicles.",
+      "crossBrandShared": "Shared with other manufacturers – check fitment before you buy."
+    },
+    "scoreMissing": "–",
+    "trustBar": [
+      { "icon": "shield-check", "title": "BMW-Verified Data", "text": "Verified using real UK enquiries and workshop data." },
+      { "icon": "chart-up", "title": "Real-World Insights", "text": "Based on {enquiries} UK enquiries in 2025.", "fallback": "Based on real UK enquiries." },
+      { "icon": "users", "title": "Trusted by Enthusiasts", "text": "Part of Engine Finders – UK's leading engine specialists." },
+      { "icon": "rosette", "title": "Quality You Can Trust", "text": "Every engine is checked, inspected and quality assured." }
+    ]
+  },
+  "verdict": {
+    "h2": "Verdict & Rating",
+    "ratingLabel": "Rating:",
+    "outOf": "out of 5",
+    "scoreTitle": "Engine Score breakdown:",
+    "columns": ["Dimension", "Score (of 20)"],
+    "outOfRow": "/20",
+    "totalLabel": "Total Engine Score",
+    "totalOutOf": "/100",
+    "bestForLabel": "Best for:",
+    "avoidIfLabel": "Avoid if:",
+    "dimensionIcons": {
+      "Reliability": "shield-core",
+      "Repair Cost": "pound",
+      "Repairability": "tools",
+      "Parts Supply": "box",
+      "Replacement Economics": "bars",
+      "fallback": "gauge"
+    }
+  },
+  "compatibility": {
+    "eyebrow": "Compatibility",
+    "h2": "Compatible BMW Models",
+    "subHeading": "BMW {code} engines are fitted across {models} from {years}.",
+    "modelsFallback": "multiple BMW models",
+    "models": { "one": "{n} BMW model", "many": "{n} BMW models" },
+    "exclusive": { "title": "BMW Exclusive Engine", "text": "This is an exclusive BMW engine. No cross-platform sharing." },
+    "shared": { "title": "Also Fitted to Other Brands" },
+    "timelinePill": "{n} Years of Production",
+    "timelinePillOne": "1 Year of Production",
+    "carAlt": "BMW fitted with the {code} engine",
+    "variants": { "one": "1 Variant", "many": "{n} Variants" },
+    "seriesLabel": "Series",
+    "other": { "title": "Other BMW Models", "text": "{code} also appears in limited variants and markets.", "link": "View full details", "href": "/quote" },
+    "verified": { "title": "Compatibility Verified", "text": "All compatibility data verified from BMW parts catalogues and specialist databases.", "tag": "[BMW-VERIFIED]" },
+    "mobileLabels": { "generation": "Generation", "variant": "Variant/Badge", "years": "Years" }
+  },
+  "costGuide": {
+    "eyebrow": "Cost Guide",
+    "h2": "BMW {code} Engine Price Guide",
+    "subHeading": "All prices are estimates from UK specialists",
+    "subTag": "[BMW-QUOTE]",
+    "labels": { "supplyOnly": "Supply Only", "fitted": "Fitted (Indie)", "warranty": "Warranty" },
+    "mostPopular": "Most Popular",
+    "conditionIcons": { "Used": "engine", "Reconditioned": "star", "Rebuilt": "tools", "fallback": "engine" },
+    "cta": {
+      "title": "Compare Prices from UK specialists",
+      "text": "Get live pricing from 20+ trusted engine suppliers.",
+      "button": "Compare Prices",
+      "href": "/quote",
+      "mobileFallback": "Compare BMW {code} engine prices from UK specialists"
+    }
+  },
+  "faq": {
+    "eyebrow": "FAQ",
+    "h2": "Frequently Asked Questions",
+    "subHeading": "Expert answers to the most common BMW {code} engine questions.",
+    "imageAlt": "BMW {code} engine",
+    "carAlt": "BMW fitted with the {code} engine"
+  },
+  "trust": {
+    "h2": "Why Owners Trust Us",
+    "icons": ["shield-check", "doc-search", "pin"],
+    "blueFrom": "and get back on the road",
+    "ctaFallback": "Find the best BMW {code} engine replacement UK drivers rely on. Compare real prices from trusted specialists on EnginesMarket today and get back on the road with confidence.",
+    "buttonFallback": "Compare BMW {code} Engine Prices Now",
+    "href": "/quote"
+  }
+}

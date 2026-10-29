@@ -276,16 +276,17 @@ export default function RepairBuyOrReplace({ data, vehicle }) {
             </div>
           ) : null}
           <span aria-hidden="true" className="my-5 hidden w-px bg-[var(--color-v-border-strong)] lg:block" />
-          <div className="relative grid grid-cols-[auto_minmax(0,1fr)] items-center gap-x-4 gap-y-4 overflow-hidden rounded-[10px] border border-[var(--color-v-border)] bg-[var(--color-v-panel-soft)] p-4 lg:grid-cols-[auto_minmax(0,1fr)_30%] lg:gap-y-3 lg:rounded-none lg:border-0 lg:bg-transparent lg:px-6 lg:py-4 lg:pr-2">
+          <div className={`relative grid ${engine ? "grid-cols-[auto_minmax(0,1fr)_27%]" : "grid-cols-[auto_minmax(0,1fr)]"} items-center gap-x-4 gap-y-4 overflow-hidden rounded-[10px] border border-[var(--color-v-border)] bg-[var(--color-v-panel-soft)] p-4 lg:grid-cols-[auto_minmax(0,1fr)_30%] lg:gap-y-3 lg:rounded-none lg:border-0 lg:bg-transparent lg:px-6 lg:py-4 lg:pr-2`}>
             <span className="flex h-12 w-12 shrink-0 items-center justify-center self-start rounded-full border-2 border-[var(--color-v-blue)] text-[var(--color-v-blue)] lg:h-[60px] lg:w-[60px]">
               <VIcon name="tag" className="h-6 w-6" />
             </span>
-            <div className="min-w-0 max-lg:[&>p+p]:pr-[30%]">
-              <p className="whitespace-nowrap text-[20px] font-bold leading-tight tracking-[-0.01em] text-[var(--color-v-text)] lg:whitespace-normal lg:text-[26px]">{copy.compareTitle}</p>
+            <div className="min-w-0">
+              <p className="text-[20px] font-bold leading-tight tracking-[-0.01em] text-[var(--color-v-text)] lg:whitespace-normal lg:text-[26px]">{copy.compareTitle}</p>
               <p className="mt-1 text-[14px] leading-[1.4] text-[var(--color-v-muted)] lg:text-[16px]">{fill(copy.compareText, values)}</p>
             </div>
             {engine ? (
-              <div className="pointer-events-none absolute right-1 top-[46px] aspect-square w-[27%] lg:relative lg:right-auto lg:top-auto lg:row-span-2 lg:aspect-auto lg:h-[150px] lg:w-full">
+              // Phones: its own column beside the text, so it can never sit over the button below.
+              <div className="pointer-events-none relative aspect-square w-full lg:row-span-2 lg:aspect-auto lg:h-[150px]">
                 <span aria-hidden="true" className="absolute inset-[4%] rounded-full border border-[var(--color-v-blue)] opacity-20" />
                 <span aria-hidden="true" className="absolute inset-[16%] rounded-full border border-[var(--color-v-blue)] opacity-30" />
                 <span aria-hidden="true" className="absolute inset-[20%] rounded-full bg-[var(--color-v-blue)] opacity-15 blur-2xl" />
@@ -295,7 +296,7 @@ export default function RepairBuyOrReplace({ data, vehicle }) {
             {cta?.label ? (
               <Link
                 href={cta.href || "/quote"}
-                className="col-span-2 mt-2 inline-flex w-fit items-center lg:mt-0 justify-center gap-2 whitespace-nowrap rounded-[6px] bg-[var(--color-v-blue-btn)] px-4 py-2.5 text-[clamp(12.5px,3.3vw,15px)] font-semibold lg:gap-3 lg:px-5 lg:py-2.5 lg:text-[16px] text-white transition hover:brightness-110 lg:col-span-2 lg:col-start-1 lg:w-fit lg:whitespace-nowrap lg:px-6"
+                className="col-span-full mt-1 inline-flex w-fit items-center lg:mt-0 justify-center gap-2 whitespace-nowrap rounded-[6px] bg-[var(--color-v-blue-btn)] px-4 py-2.5 text-[clamp(12.5px,3.3vw,15px)] font-semibold lg:gap-3 lg:px-5 lg:py-2.5 lg:text-[16px] text-white transition hover:brightness-110 lg:col-span-2 lg:col-start-1 lg:w-fit lg:whitespace-nowrap lg:px-6"
               >
                 {stripMarker(cta.label)}
                 <VIcon name="arrowRight" className="h-[18px] w-[18px] shrink-0" strokeWidth={2.2} />
