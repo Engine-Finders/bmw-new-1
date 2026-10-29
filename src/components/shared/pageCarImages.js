@@ -1,8 +1,11 @@
 import {
   carKeyFor,
   carModelFor,
+  carViewOf,
   createCarPicker,
   engineImageFor,
+  generationCarKeyFor,
+  generationHeroCar,
   generationHeroFor,
   heroBackground,
   heroCarFor,
@@ -166,23 +169,51 @@ function carFit(src) {
 export function withGenerationPageImages(data) {
   if (!data) return data;
   const hints = [stripTags(data.hero?.tagPill), stripTags(data.hero?.h1)];
-  const key = carKeyFor(...hints);
+  // A generation we have no photos of gets none (its scenes stand empty), never another generation's car.
+  const key = generationCarKeyFor(...hints);
+  const photoHints = key ? hints : [];
   const model = parentModel(hints);
   const { used, ...hero } = generationHero(key, model);
-  const pick = createCarPicker(used, { siblings: true });
+  const pick = createCarPicker(used, { siblings: true, sameGeneration: true });
   const out = { ...data };
 
   if (out.hero) out.hero = { ...out.hero, ...hero };
 
+  // Overview: this generation's car at three-quarters facing left, stood where the E90 stands in the city scene;
+  // the hero's own car rather than a side profile when no other 45-degree photo is left.
   if (out.overview) {
-    const [image] = pick([hints]);
+    const [picked] = pick([photoHints], { view: "45" });
+    const image = picked && /-45\.webp$/.test(picked) ? picked : generationHeroCar(key) || picked || null;
     out.overview = { ...out.overview, image, imageFit: carFit(image) };
   }
 
+  // Core variants: front three-quarter (nose left) in the studio, as in the design; the hero's car before a repeat.
   if (out.coreVariants) {
-    const [image] = pick([hints], { view: "side" });
-    out.coreVariants = { ...out.coreVariants, image, imageFit: carFit(image) };
+    const [picked] = pick([photoHints], { view: "45", then: [] });
+    const image = picked && /-45\.webp$/.test(picked) ? picked : generationHeroCar(key) || picked || null;
+    out.coreVariants = { ...out.coreVariants, image, imageFit: carFit(image), imageView: carViewOf(image) };
   }
+
+  // Live feed thumbnails: this generation's own car (every row is this generation), else its section photos.
+  if (out.marketIntelligence?.liveFeed?.length) {
+    const thumb = generationHeroCar(key) || out.overview?.image || out.coreVariants?.image || null;
+    out.marketIntelligence = {
+      ...out.marketIntelligence,
+      liveFeed: out.marketIntelligence.liveFeed.map((row) => ({ ...row, image: row.image || thumb })),
+    };
+  }
+
+  // Ownership economics and replacement costs headers: this generation's car from behind at three-quarters, nose to
+  // the left, in the garage, as in the designs (their own artwork, when the page has some, wins). The other rear
+  // three-quarter next, then the front three-quarter; `imageView` says which one came.
+  const rearCar = (facing) => {
+    const other = facing === "left" ? "right" : "left";
+    const [picked] = pick([photoHints], { view: `back-${facing}`, then: [`back-${other}`, "45"] });
+    const image = picked || generationHeroCar(key) || null;
+    return { image, imageFit: carFit(image), imageView: carViewOf(image) };
+  };
+  if (out.ownershipEconomics) out.ownershipEconomics = { ...out.ownershipEconomics, ...rearCar("left") };
+  if (out.replacementCosts) out.replacementCosts = { ...out.replacementCosts, ...rearCar("left") };
 
   // Engine photo per problem card: the engine it names, else this generation's engine of the same size
   // ("3.0 diesel ..." -> its 3.0 engine), else the generation's first engine. Non-engine problems get none.
@@ -213,10 +244,12 @@ export function withGenerationPageImages(data) {
     };
   }
 
-  // Closing block: the model's line-up scene (unless the hero already shows it).
+  // Closing block: the model's line-up scene (unless the hero already shows it), and this generation's car from
+  // behind at three-quarters with its nose to the right (`car`), as in the trust section design.
   if (out.trustCta) {
     const scene = heroCarFor(model)?.scene;
-    out.trustCta = { ...out.trustCta, image: scene && scene !== hero.heroScene ? scene.src : null };
+    const { image: car, imageFit: carImageFit, imageView: carView } = rearCar("right");
+    out.trustCta = { ...out.trustCta, image: scene && scene !== hero.heroScene ? scene.src : null, car, carImageFit, carView };
   }
 
   return out;

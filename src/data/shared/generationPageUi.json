@@ -48,5 +48,27 @@
     "sectionNumber": "04",
     "eyebrow": "Best & Worst Engines",
     "whoItsFor": "Who it's for:"
+  },
+  "ownershipEconomics": {
+    "eyebrow": "Ownership Economics",
+    "keyTakeaways": "Key Takeaways"
+  },
+  "replacementCosts": {
+    "eyebrow": "Replacement Costs",
+    "subHeadline": "Real UK pricing for used, reconditioned and rebuilt engines - supply only, with labour guidance.",
+    "groups": {
+      "petrol": "Petrol Engines",
+      "diesel": "Diesel Engines",
+      "hybrid": "Plug-in Hybrid Engines",
+      "electric": "Electric Drive"
+    },
+    "trustHeading": "Transparent. Specialist. Trusted.",
+    "trustText": "All prices are supply only and reflect real UK market data. Labour hours are estimates based on specialist workshop experience.",
+    "trustStrip": [
+      { "icon": "badge", "title": "Specialist Prices", "text": "Real-world pricing from UK engine specialists." },
+      { "icon": "shield", "title": "Quality Assured", "text": "All engines are tested, checked and warrantied." },
+      { "icon": "wrench", "title": "Expert Fitment", "text": "Labour guidance from BMW experienced techs." },
+      { "icon": "truck", "title": "UK Wide Delivery", "text": "Fast, secure delivery across the UK." }
+    ]
   }
 }

@@ -58,7 +58,8 @@ const ENGINE_CAR = [
 ];
 
 // Generations with no photo of their own, shown with the M car of the same body
-// (the M6 is a 6 Series, the M8 Coupé/Convertible/Gran Coupé are the G15/G14/G16).
+// (the M6 is a 6 Series, the M8 Coupé/Convertible/Gran Coupé are the G15/G14/G16), or the other way round
+// (the M5 E39 is an E39 saloon).
 const POOL_ALIAS = {
   "6-series|e24": "m6|e24",
   "6-series|e63": "m6|e63",
@@ -69,6 +70,7 @@ const POOL_ALIAS = {
   "8-series|g14": "m8|f91",
   "8-series|g15": "m8|f92",
   "8-series|g16": "m8|f93",
+  "m5|e39": "5-series|e39",
   "m3|e90": "m3|e92",
   "m3|e93": "m3|e92",
   "m5|g99": "m5|g90",
@@ -132,6 +134,18 @@ function resolve(key) {
  * or null when the text names no BMW we have photos of.
  */
 export function carKeyFor(...hints) {
+  return keyFor(hints, true);
+}
+
+/**
+ * Like carKeyFor, but null when the text names a generation we have no photos of, instead of the
+ * model's default generation: a generation page never shows another generation's car.
+ */
+export function generationCarKeyFor(...hints) {
+  return keyFor(hints, false);
+}
+
+function keyFor(hints, orDefault) {
   let text = normalise(hints.filter((hint) => typeof hint === "string" && hint).join(" ").trim());
   if (!text) return null;
   const iModel = I_MODELS.find(([pattern]) => pattern.test(text));
@@ -159,6 +173,7 @@ export function carKeyFor(...hints) {
   if (generation && isFacelift && pools[faceliftKey]) return faceliftKey;
   const exact = resolve(`${model}|${generation}`);
   if (generation && pools[exact]) return exact;
+  if (generation && !orDefault) return null;
   const fallback = carImages.defaultGeneration[model];
   return fallback ? resolve(`${model}|${fallback}`) : null;
 }
@@ -168,13 +183,17 @@ function photoPath(file) {
 }
 
 // Pools are model|generation -> view -> [file, colour]; colours were checked from the pixels.
+// Views: "45" (front three-quarter, nose left), "side", "front", and the rear three-quarters "back-left" /
+// "back-right" (which way the nose points as the car drives away).
 const COLOUR = new Map();
+const VIEW_OF = new Map();
 const POOL_FILES = {};
 for (const [key, views] of Object.entries(carImages.pools)) {
   POOL_FILES[key] = {};
   for (const [view, entries] of Object.entries(views)) {
     POOL_FILES[key][view] = entries.map(([file, colour]) => {
       COLOUR.set(file, colour);
+      VIEW_OF.set(file, view);
       return file;
     });
   }
@@ -182,6 +201,11 @@ for (const [key, views] of Object.entries(carImages.pools)) {
 
 function colourOf(file) {
   return COLOUR.get(file) || "other";
+}
+
+/** The view of a pooled photo ("45", "side", "front", "back-left", "back-right"), from its path; null if unknown. */
+export function carViewOf(src) {
+  return src ? VIEW_OF.get(String(src).split("/").pop()) || null : null;
 }
 
 /**
@@ -280,12 +304,16 @@ export function modelEngineImage(model) {
   return key ? carImages.engines[key] : null;
 }
 
-// Other photo pools of the same model, nearest generation (by start year) first.
-function siblingKeys(key) {
+// "x5|e53 lci" -> "x5|e53": the generation a pool belongs to, facelift or not.
+const generationOf = (key) => key.replace(/ lci$/, "");
+
+// Other photo pools of the same model, nearest generation (by start year) first; with `sameGeneration`, only the
+// same generation's other pool (pre-facelift / LCI).
+function siblingKeys(key, sameGeneration) {
   const [model] = key.split("|");
   const start = (k) => carImages.generationStart[k] ?? Infinity;
   return Object.keys(POOL_FILES)
-    .filter((k) => k !== key && k.split("|")[0] === model)
+    .filter((k) => k !== key && k.split("|")[0] === model && (!sameGeneration || generationOf(k) === generationOf(key)))
     .sort((a, b) => Math.abs(start(a) - start(key)) - Math.abs(start(b) - start(key)));
 }
 
@@ -294,8 +322,10 @@ function siblingKeys(key) {
  * its photos at once and gets one view (45-degree, side, front) for the whole section, so
  * rows stay consistent; colours rotate through grey, black, white, silver and blue.
  * When a model has fewer photos than the page needs, the least-used photo is repeated.
+ * `sameGeneration` (generation pages): siblings are only the same generation's facelift / pre-facelift photos, so
+ * the page repeats its own generation's car rather than show another generation's.
  */
-export function createCarPicker(alreadyUsed = [], { siblings = false } = {}) {
+export function createCarPicker(alreadyUsed = [], { siblings = false, sameGeneration = false } = {}) {
   const used = new Map();
   const colourCount = new Map();
 
@@ -313,14 +343,15 @@ export function createCarPicker(alreadyUsed = [], { siblings = false } = {}) {
       (colourCount.get(colourOf(file)) || 0) < (colourCount.get(colourOf(best)) || 0) ? file : best
     );
 
-  return function pickSection(hintList, { view = "45" } = {}) {
+  // `then`: the views to fall back to, in order, when `view` has no unused photo (default: the other main views).
+  return function pickSection(hintList, { view = "45", then = null } = {}) {
     const keys = hintList.map((hints) => carKeyFor(...[].concat(hints)));
     const need = {};
     keys.forEach((key) => {
       if (key) need[key] = (need[key] || 0) + 1;
     });
 
-    const order = [view, ...VIEWS.filter((v) => v !== view)];
+    const order = [view, ...(then || VIEWS).filter((v) => v !== view)];
     const free = (key, v) => (POOL_FILES[key]?.[v] || []).filter((file) => !used.has(file));
     const sectionView =
       order.find((v) => Object.entries(need).every(([key, count]) => free(key, v).length >= count)) || view;
@@ -347,13 +378,14 @@ export function createCarPicker(alreadyUsed = [], { siblings = false } = {}) {
       }
       // `siblings`: out of photos of this generation, use the nearest generation of the same model
       // rather than showing a photo twice.
-      for (const sibling of siblings ? siblingKeys(key) : []) {
+      for (const sibling of siblings ? siblingKeys(key, sameGeneration) : []) {
         for (const v of order) {
           const files = free(sibling, v);
           if (files.length) return takeForSection(files);
         }
       }
-      const pool = POOL_FILES[key]?.[sectionView] || POOL_FILES[key]?.["45"] || [];
+      // A repeat: the section's view, else the first of its fallback views this model has, else the 45-degree.
+      const pool = [sectionView, ...order, "45"].map((v) => POOL_FILES[key]?.[v]).find((files) => files?.length) || [];
       if (!pool.length) return null;
       const leastUsed = [...pool].sort((a, b) => (used.get(a) || 0) - (used.get(b) || 0))[0];
       return take(leastUsed);

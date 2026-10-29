@@ -201,6 +201,8 @@ export default async function CatchAllPage({ params }) {
 
   if (type === "generations") {
     data = withGenerationPageImages(data);
+    // "BMW 3 Series E90 Engine Codes …" -> "E90", for "Most Requested E90 Engines" and "FAQ — BMW E90".
+    const generationCode = (String(data.engineDatabase?.h2 || "").match(/^BMW .*?\s(\S+)\s+(?:Engine|Powertrain) Codes/) || [])[1] || "";
     return (
       <main className="flex flex-col overflow-x-hidden">
         {data.meta?.jsonLd && (
@@ -219,8 +221,9 @@ export default async function CatchAllPage({ params }) {
         <CoreVariantsMarketGroup
           coreVariants={data.coreVariants}
           marketIntelligence={data.marketIntelligence}
+          generationCode={generationCode}
         />
-        <GenFAQAccordion data={data.faq} />
+        <GenFAQAccordion data={data.faq} generationCode={generationCode} />
         <GenTrustCta data={data.trustCta} />
       </main>
     );

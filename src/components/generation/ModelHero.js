@@ -7,7 +7,50 @@ import { variantFont as heroFont } from "@/components/variant/variantFont";
 import ui from "@/data/shared/generationPageUi.json";
 
 // Hero backgrounds sampled from the designs: a near-white wash in light, deep navy in dark.
-const HERO_BG = { light: "#f6f8fb", dark: "#0b1826" };
+const HERO_BG = { light: "#fafcfe", dark: "#010d1c" };
+
+// Phones frame every hero the same way (as in the phone designs): the car spans 16%→100% of the screen,
+// its wheels stand on the CTA and its roof clears the copy by 2%. `car` is where the car sits inside each
+// kind of art, as fractions of the art's width/height.
+const PHONE_ART = {
+  // The page's own portrait artwork (e.g. /e90/hero_mobile_day.webp).
+  own: { ratio: 1486 / 1686, car: { left: 0.04, right: 0.939, top: 0.371, bottom: 0.795 } },
+  // BMW's stage scene: one car right of centre, 33–72% down. Its bright sky fades in late, behind the
+  // last line of copy at most, so blue figures there stay readable.
+  stage: { ratio: 3 / 2, car: { left: 0.446, right: 0.95, top: 0.335, bottom: 0.728 }, skyFrom: 0.7 },
+  // The model's line-up: framed on its newest cars (right of frame, 50–87% down). Its busy skyline
+  // only fades in just above the cars so it never sits behind the copy.
+  lineup: { ratio: 16 / 9, car: { left: 0.423, right: 0.997, top: 0.5, bottom: 0.87 }, skyFrom: 0.6 },
+};
+const PHONE_CAR = { left: 0.162, right: 1, gap: 0.02 };
+
+function phoneFrame({ ratio, car, skyFrom = 0 }) {
+  const width = (PHONE_CAR.right - PHONE_CAR.left) / (car.right - car.left);
+  const left = PHONE_CAR.left - car.left * width;
+  const height = width / ratio;
+  const roof = car.top * height;
+  const wheels = car.bottom * height;
+  const pct = (value) => `${(value * 100).toFixed(2)}%`;
+  // Sky fades in behind the last lines of copy; the ground fades out behind the CTA.
+  const sky = (share) => pct(car.top * (skyFrom + (1 - skyFrom) * share));
+  const fadeY = `linear-gradient(to bottom, transparent ${sky(0)}, rgba(0,0,0,.3) ${sky(0.6)}, rgba(0,0,0,.85) ${sky(1)}, #000 ${pct(car.top + 0.05)}, #000 ${pct(car.bottom)}, transparent ${pct(car.bottom + 0.06)})`;
+  // Art that starts inside the screen fades in from its left edge instead of showing a seam.
+  const fadeX = left > 0 ? `linear-gradient(to right, transparent 0%, #000 ${pct(0.22 / width)})` : "linear-gradient(#000, #000)";
+  const mask = `${fadeY}, ${fadeX}`;
+  return {
+    band: { aspectRatio: `1 / ${(wheels - roof + PHONE_CAR.gap).toFixed(4)}` },
+    art: {
+      left: pct(left),
+      width: pct(width),
+      aspectRatio: String(ratio),
+      marginTop: pct(-(roof - PHONE_CAR.gap)),
+      maskImage: mask,
+      WebkitMaskImage: mask,
+      maskComposite: "intersect",
+      WebkitMaskComposite: "source-in",
+    },
+  };
+}
 
 // Line icons as drawn in the designs (24px grid, currentColor).
 const ICONS = {
@@ -111,7 +154,11 @@ function highlight(html = "") {
     .map((part) =>
       part.startsWith("<")
         ? part
-        : part.replace(/(\d[\d,]*\+|\[[^\]]+\])/g, '<span class="whitespace-nowrap text-[var(--hero-blue)]">$1</span>'),
+        : part.replace(
+            /(\d[\d,]*\+|\[[^\]]+\])/g,
+            (match) =>
+              `<span class="whitespace-nowrap text-[var(--hero-blue)]${match.startsWith("[") ? "" : " font-semibold lg:font-normal"}">${match}</span>`,
+          ),
     )
     .join("");
 }
@@ -134,13 +181,13 @@ function splitStat(label = "") {
   return { value: "", lead: "", label: text.replace(/\//g, "/​"), tag };
 }
 
-// Thin three-colour M rule under the headline.
+// Thin three-colour M rule under the headline, slanted at both ends like the M stripes.
 function MRule() {
   return (
-    <span aria-hidden="true" className="mt-5 flex h-[3px] w-[100px] md:mt-6 md:w-[120px]">
-      <span className="w-1/4 bg-[#2f80ed]" />
-      <span className="w-1/4 bg-[#1c3f94]" />
-      <span className="w-1/2 bg-[#e3262f]" />
+    <span aria-hidden="true" className="ml-[2px] mt-3.5 flex h-[3px] w-[88px] -skew-x-[35deg] md:mt-6 md:w-[120px]">
+      <span className="w-[27%] bg-[#0773f9]" />
+      <span className="w-[26%] bg-[#03339a]" />
+      <span className="w-[47%] bg-[#f40715]" />
     </span>
   );
 }
@@ -185,10 +232,11 @@ function DesktopStrip({ items, isDark }) {
 
 function PhoneStrip({ items, isDark }) {
   const captions = ui.hero?.trustCaptions || [];
+  // The enquiries column is a touch wider on phones so its "BMW-VERIFIED" tag fits on one line.
   return (
     <ul
-      className={`mt-5 grid grid-cols-4 rounded-[12px] border px-1 py-5 md:mt-6 md:px-3 lg:hidden ${
-        isDark ? "border-white/15 bg-[rgba(11,24,38,0.72)]" : "border-[#e6eaf0] bg-white shadow-[0_8px_24px_rgba(10,26,43,0.06)]"
+      className={`mt-4 grid grid-cols-[1.12fr_0.86fr_1fr_1fr] rounded-[12px] border px-1 py-[18px] md:mt-6 md:grid-cols-4 md:px-3 md:py-5 lg:hidden ${
+        isDark ? "border-white/20 bg-white/[0.03]" : "border-[#eef1f5] bg-white shadow-[0_6px_22px_rgba(10,26,43,0.07)]"
       }`}
     >
       {items.map((item, index) => {
@@ -196,15 +244,15 @@ function PhoneStrip({ items, isDark }) {
         const caption = captions[index];
         return (
           <li key={item.label} className="relative flex min-w-0 flex-col items-center px-0.5 text-center md:px-2 text-[var(--hero-text)]">
-            {index ? <span aria-hidden="true" className={`absolute left-0 top-0 h-full w-px ${isDark ? "bg-white/12" : "bg-[#e6eaf0]"}`} /> : null}
+            {index ? <span aria-hidden="true" className={`absolute left-0 top-0 h-full w-px ${isDark ? "bg-white/15" : "bg-[#e9ecf0]"}`} /> : null}
             <span
-              className={`flex h-11 w-11 items-center justify-center rounded-full border md:h-14 md:w-14 ${
-                isDark ? "border-[var(--hero-blue)] bg-[#0f2236] text-white" : "border-[#d9e2ee] bg-white text-[var(--hero-blue)]"
+              className={`flex h-[46px] w-[46px] items-center justify-center rounded-full border-[1.5px] md:h-14 md:w-14 ${
+                isDark ? "border-[#245fa6] bg-[#09192a] text-white" : "border-[#dde4ed] bg-white text-[var(--hero-blue)]"
               }`}
             >
-              <Icon name={STAT_ICONS.phone[index] || "bars"} strokeWidth={2} className="h-[22px] w-[22px] md:h-7 md:w-7" />
+              <Icon name={STAT_ICONS.phone[index] || "bars"} strokeWidth={2} className="h-[23px] w-[23px] md:h-7 md:w-7" />
             </span>
-            {stat.value ? <strong className="mt-3 block text-[18px] font-semibold leading-[1.2] md:text-[20px]">{stat.value}</strong> : null}
+            {stat.value ? <strong className="mt-2.5 block text-[19px] font-semibold leading-[1.2] md:text-[20px]">{stat.value}</strong> : null}
             {stat.lead ? <strong className="mt-3 block text-[12px] font-semibold leading-[1.35] min-[400px]:text-[13px] md:text-[15px]">{stat.lead}</strong> : null}
             <span
               className={`block leading-[1.35] ${
@@ -213,7 +261,16 @@ function PhoneStrip({ items, isDark }) {
                   : stat.lead
                     ? "text-[12px] font-semibold min-[390px]:whitespace-nowrap min-[400px]:text-[13px] md:text-[15px]"
                     : // Long body lists ("Saloon/Coupé/Convertible/…") step down so each part fits its column.
-                      `mt-3 font-semibold ${stat.label.length > 14 ? "text-[12.5px] md:text-[15px]" : "text-[15px] md:text-[17px]"}`
+                      // Single words wider than the column ("Convertible", "Hatchback") step down so they never spill over it.
+                      `mt-2.5 font-semibold [overflow-wrap:anywhere] ${
+                        stat.label.length > 14
+                          ? "text-[12.5px] md:text-[15px]"
+                          : stat.label.length > 10
+                            ? "text-[12.5px] min-[400px]:text-[13.5px] md:text-[17px]"
+                            : stat.label.length > 7
+                              ? "text-[13.5px] min-[400px]:text-[15px] md:text-[17px]"
+                              : "text-[17px]"
+                      }`
               }`}
             >
               {stat.label}
@@ -255,25 +312,53 @@ export default function ModelHero({ data }) {
   const cta = data.primaryCta;
   const ctaLabel = cta ? String(cta.label || "").replace(/\s*→\s*$/, "") : "";
 
+  const phone = tall
+    ? { src: tall, ...phoneFrame(PHONE_ART.own) }
+    : { src: wide, ...phoneFrame(stage ? PHONE_ART.stage : lineup ? PHONE_ART.lineup : PHONE_ART.own) };
+
   const vars = {
     "--hero-bg": bg,
-    "--hero-text": isDark ? "#ffffff" : "#0b1726",
-    "--hero-muted": isDark ? "rgba(255,255,255,0.86)" : "#4a5565",
-    "--hero-blue": isDark ? "#4d9bff" : "#0a5bd3",
-    "--hero-icon-cut": isDark ? "#0f2236" : "#ffffff",
+    "--hero-text": isDark ? "#ffffff" : "#0b1521",
+    // Phone copy is set darker than desktop copy in the designs.
+    "--hero-body": isDark ? "#e3e9f1" : "#2b313b",
+    "--hero-muted": isDark ? "#c3ccd7" : "#4a5260",
+    "--hero-blue": isDark ? "#2f86f6" : "#0b52cc",
+    "--hero-icon-cut": isDark ? "#09192a" : "#ffffff",
   };
 
   return (
     <section style={vars} className={`relative overflow-hidden bg-[var(--hero-bg)] text-[var(--hero-text)] ${heroFont.className}`}>
-      {/* Desktop: the scene fills the hero on the right and fades into the page behind the copy.
-          Sized by width (never cropped wider than the copy allows) and pushed 10% below the hero, which clips the
-          artwork's corner mark and keeps the car above the trust strip; its sky fades into the page at the top. */}
+      {/* Desktop: the scene fills the hero on the right and fades into the page behind the copy; its sky fades
+          into the page at the top. Sized by width (never cropped wider than the copy allows). Scenes are pushed 10%
+          below the hero, which clips their corner mark and stands the car on the trust strip; the page's own artwork
+          sits higher, as designed, with the car clear above the strip. */}
       {wide ? (
-        <div className="absolute bottom-0 right-0 hidden aspect-[3/2] w-full max-w-[1640px] translate-y-[10%] xl:block">
-          <Image src={wide} alt={alt} fill priority sizes="(min-width: 1640px) 1640px, 100vw" className="object-cover" />
-          <div className="absolute inset-0 bg-[linear-gradient(90deg,var(--hero-bg)_0%,color-mix(in_srgb,var(--hero-bg)_92%,transparent)_24%,color-mix(in_srgb,var(--hero-bg)_55%,transparent)_40%,transparent_58%)]" />
+        <div
+          className={`absolute right-0 hidden aspect-[3/2] w-full max-w-[1640px] xl:block ${
+            data.image ? "bottom-[22px]" : "bottom-0 translate-y-[10%]"
+          }`}
+        >
+          <Image
+            src={wide}
+            alt={alt}
+            fill
+            priority
+            sizes="(min-width: 1640px) 1640px, 100vw"
+            // The ground fades out just under the wheels (79.5% down), before the artwork's generator mark (from 83%).
+            className={`object-cover ${data.image ? "[mask-image:linear-gradient(to_bottom,#000_78%,transparent_83%)]" : ""}`}
+          />
+          <div
+            className={`absolute inset-0 ${
+              data.image
+                ? // Its tall skyline sits behind the copy, so the page washes further over it.
+                  "bg-[linear-gradient(90deg,var(--hero-bg)_0%,color-mix(in_srgb,var(--hero-bg)_94%,transparent)_30%,color-mix(in_srgb,var(--hero-bg)_62%,transparent)_43%,transparent_60%)]"
+                : "bg-[linear-gradient(90deg,var(--hero-bg)_0%,color-mix(in_srgb,var(--hero-bg)_92%,transparent)_24%,color-mix(in_srgb,var(--hero-bg)_55%,transparent)_40%,transparent_58%)]"
+            }`}
+          />
           <div className="absolute inset-x-0 top-0 h-[30%] bg-[linear-gradient(180deg,var(--hero-bg)_0%,transparent_100%)]" />
-          <div className="absolute inset-x-0 bottom-[10%] h-24 bg-[linear-gradient(0deg,var(--hero-bg)_0%,transparent_100%)]" />
+          {data.image ? null : (
+            <div className="absolute inset-x-0 bottom-[10%] h-24 bg-[linear-gradient(0deg,var(--hero-bg)_0%,transparent_100%)]" />
+          )}
         </div>
       ) : null}
 
@@ -281,13 +366,13 @@ export default function ModelHero({ data }) {
         <div className="relative z-10">
           {pill.length ? (
             <p
-              className={`inline-flex w-fit max-w-full flex-wrap items-center gap-x-2 gap-y-1 rounded-[10px] border px-3.5 py-2.5 text-[14px] leading-[1.35] md:gap-x-2.5 md:px-4 md:text-[16px] lg:rounded-[8px] lg:px-4 lg:py-2 ${
-                isDark ? "border-[var(--hero-blue)] bg-[rgba(11,24,38,0.6)] text-white" : "border-[#9fbdf0] bg-white/75 text-[var(--hero-blue)]"
+              className={`inline-flex w-fit max-w-full flex-wrap items-center gap-x-2 gap-y-1 rounded-[8px] border px-3 py-2 text-[13.5px] leading-[1.35] max-[389px]:gap-x-1.5 max-[389px]:px-2.5 max-[389px]:text-[12.5px] md:gap-x-2.5 md:px-4 md:py-2.5 md:text-[16px] lg:px-4 lg:py-2 ${
+                isDark ? "border-[#1f5fc4] bg-[rgba(0,4,14,0.55)] text-white" : "border-[#bccfee] bg-white/80 text-[var(--hero-blue)]"
               }`}
             >
-              <Icon name="carFront" strokeWidth={1.9} className="mr-1 h-5 w-5 shrink-0 text-[var(--hero-blue)] lg:hidden" />
+              <Icon name="carFront" strokeWidth={1.9} className="mr-1 h-[18px] w-[18px] shrink-0 text-[var(--hero-blue)] md:h-5 md:w-5 lg:hidden" />
               {pill.map((part, index) => (
-                <span key={index} className="inline-flex items-center gap-2 whitespace-nowrap md:gap-2.5">
+                <span key={index} className="inline-flex items-center gap-2 whitespace-nowrap max-[389px]:gap-1.5 md:gap-2.5">
                   {index ? <span aria-hidden="true">•</span> : null}
                   <span className="[&_a]:[font-weight:inherit] [&_a]:text-inherit" dangerouslySetInnerHTML={{ __html: part }} />
                 </span>
@@ -295,65 +380,42 @@ export default function ModelHero({ data }) {
             </p>
           ) : null}
 
-          <h1 className="t-h1 mt-5 max-w-[11em] font-bold leading-[1.1] tracking-[-0.025em] max-md:text-[clamp(30px,8.4vw,40px)] lg:mt-7">
+          <h1 className="t-h1 mt-[18px] max-w-[11em] font-bold leading-[1.1] tracking-[-0.025em] max-md:text-[clamp(30px,8.9vw,36px)] md:mt-5 lg:mt-7">
             <span dangerouslySetInnerHTML={{ __html: dash(data.h1) }} />
           </h1>
 
           <MRule />
 
-          <div className="mt-6 flex max-w-[540px] flex-col gap-3.5 text-[15px] leading-[1.6] text-[var(--hero-muted)] md:text-[17px] lg:mt-7 lg:max-w-[520px] lg:gap-4 lg:text-[18px] lg:leading-[1.45] [&_a]:[font-weight:inherit] [&_a]:text-inherit hover:[&_a]:underline">
+          <div className="mt-4 flex max-w-[360px] flex-col gap-3 text-[14.5px] leading-[1.6] text-[var(--hero-body)] md:mt-6 md:max-w-[540px] md:gap-3.5 md:text-[17px] lg:mt-7 lg:max-w-[520px] lg:gap-4 lg:text-[18px] lg:leading-[1.45] lg:text-[var(--hero-muted)] [&_a]:[font-weight:inherit] [&_a]:text-inherit hover:[&_a]:underline">
             {paragraphs(data.subHeadline).map((html, index) => (
               <p key={index} dangerouslySetInnerHTML={{ __html: highlight(html) }} />
             ))}
           </div>
         </div>
 
-        {/* Phones, tablets + small laptops: the car below the copy; its sky rises behind the last lines. */}
+        {/* Phones: the car right under the copy, its wheels on the CTA; the sky fades in behind the last lines. */}
+        {wide ? (
+          <div aria-hidden="true" className="pointer-events-none relative -mx-[var(--gutter)] md:hidden" style={phone.band}>
+            <div className="absolute top-0" style={phone.art}>
+              <Image src={phone.src} alt="" fill priority sizes="110vw" className="object-cover" />
+            </div>
+          </div>
+        ) : null}
+
+        {/* Tablets + small laptops: the scene below the copy; its sky rises behind the last lines. */}
         {wide ? (
           <div
             aria-hidden="true"
-            className={`pointer-events-none relative -mx-[var(--gutter)] overflow-hidden xl:hidden ${
+            className={`pointer-events-none relative -mx-[var(--gutter)] hidden overflow-hidden md:block xl:hidden ${
               stage
                 ? "[mask-image:linear-gradient(to_bottom,transparent_0%,#000_24%,#000_92%,transparent_100%)]"
                 : // Dark art has a brighter watermark, so it fades in later to keep the blue figures readable.
                   isDark
                   ? "[mask-image:linear-gradient(to_bottom,transparent_0%,transparent_14%,#000_44%,#000_92%,transparent_100%)]"
                   : "[mask-image:linear-gradient(to_bottom,transparent_0%,#000_32%,#000_92%,transparent_100%)]"
-            } ${
-              tall
-                ? "-mt-[44%] aspect-[11/10] md:-mt-[4%] md:aspect-[16/9]"
-                : stage
-                  ? "-mt-[6%] aspect-[10/7] md:aspect-[16/9]"
-                  : lineup
-                    ? "-mt-[4%] aspect-[3/2] md:aspect-[16/9]"
-                    : "-mt-[6%] aspect-[3/2] md:aspect-[16/9]"
-            }`}
+            } ${tall || lineup ? "-mt-[4%]" : "-mt-[6%]"} aspect-[16/9]`}
           >
-            {tall ? (
-              <Image src={tall} alt="" fill priority sizes="100vw" className="object-cover object-top md:hidden" />
-            ) : null}
-            {stage ? (
-              // Phones: BMW's stage scene zoomed in on its car (centred at ~71% across, 33–72% down every scene),
-              // so the car fills the screen width instead of sitting small beside the empty studio.
-              <div className="absolute left-[-70.7%] top-[-24.9%] aspect-[3/2] w-[170%] md:hidden">
-                <Image src={wide} alt="" fill priority sizes="170vw" className="object-cover" />
-              </div>
-            ) : null}
-            {lineup ? (
-              // Phones: the model's line-up zoomed ~1.46x on its newest cars (right of frame, 50–87% down), right edge
-              // flush with the screen; the oldest car runs off the left, so the front car reads at about half the width.
-              <div className="absolute left-[-45.5%] top-[-14%] aspect-[16/9] w-[146%] md:hidden">
-                <Image src={wide} alt="" fill priority sizes="146vw" className="object-cover" />
-              </div>
-            ) : null}
-            <Image
-              src={wide}
-              alt=""
-              fill
-              priority={!tall && !stage && !lineup}
-              sizes="100vw"
-              className={`object-cover object-[70%_40%] ${tall || stage || lineup ? "hidden md:block" : ""}`}
-            />
+            <Image src={wide} alt="" fill sizes="100vw" className="object-cover object-[70%_40%]" />
           </div>
         ) : null}
 
@@ -361,7 +423,7 @@ export default function ModelHero({ data }) {
           {cta ? (
             <Link
               href={cta.href || "/quote"}
-              className={`${wide ? "mt-2" : "mt-7"} flex w-full items-center justify-center gap-3 rounded-[8px] bg-[linear-gradient(180deg,#0b63e5_0%,#0750c4_100%)] px-6 py-3.5 text-[18px] font-medium text-white shadow-[0_10px_24px_rgba(7,80,196,0.28)] transition hover:brightness-110 md:w-fit md:px-9 lg:rounded-[4px] lg:py-3.5 lg:text-[19px] xl:mt-10`}
+              className={`${wide ? "mt-0 md:mt-2" : "mt-7"} flex h-[52px] w-full items-center justify-center gap-3 rounded-[8px] bg-[linear-gradient(180deg,#0662ec_0%,#004bc7_100%)] px-6 text-[18px] font-medium text-white shadow-[0_10px_24px_rgba(4,80,200,0.26)] transition hover:brightness-110 md:h-auto md:w-fit md:px-9 md:py-3.5 lg:rounded-[4px] lg:py-3.5 lg:text-[19px] xl:mt-10`}
             >
               <span dangerouslySetInnerHTML={{ __html: ctaLabel }} />
               <Icon name="arrow" strokeWidth={2.2} className="h-5 w-5 shrink-0" />

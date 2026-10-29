@@ -3,6 +3,7 @@ import { heroBackground } from "@/components/shared/carImage";
 
 /**
  * Jaguar's own background (no car) for the theme with a cut-out car photo standing on its floor.
+ * `background` replaces BMW's background with another scene (e.g. the garage plates).
  * `className` positions and sizes the box (relative by default); `carClassName` places the car
  * inside it; `overlayClassName` (e.g. a fade behind copy) sits between the background and the car.
  * With no `src` only the background shows (e.g. the I-Pace, which has no photo of its own).
@@ -15,6 +16,7 @@ export default function CarOnBackground({
   src,
   alt = "",
   isDark,
+  background = null,
   fit = null,
   className = "relative",
   bgClassName = "object-cover object-[center_70%]",
@@ -25,7 +27,7 @@ export default function CarOnBackground({
 }) {
   return (
     <div className={`overflow-hidden ${className}`}>
-      <Image src={heroBackground(isDark)} alt="" fill className={bgClassName} sizes={sizes} />
+      <Image src={background || heroBackground(isDark)} alt="" fill className={bgClassName} sizes={sizes} />
       {overlayClassName ? <div className={`absolute inset-0 ${overlayClassName}`} /> : null}
       {src && fit ? (
         <GroundedCar src={src} alt={alt} fit={fit} isDark={isDark} carClassName={carClassName} sizes={sizes} />

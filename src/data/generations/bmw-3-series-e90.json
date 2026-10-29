@@ -582,7 +582,11 @@
         "question": "Which E90 Is Best Value?",
         "answer": "Pre-LCI 330d (M57D30) - six-cylinder torque without the modern diesel's caveats."
       }
-    ]
+    ],
+    "art": {
+      "dark": "/generation/ownership/e90-dark.webp",
+      "alt": "BMW 3 Series E90 saloon from the rear"
+    }
   },
   "commonProblems": {
     "h2": "BMW 3 Series E90 - Common Problems",
@@ -843,6 +847,13 @@
         "text": "Fast, secure delivery across the UK."
       }
     ],
+    "trustHeading": "Transparent. Specialist. Trusted.",
+    "trustText": "All prices are supply only and reflect real UK market data. Labour hours are estimates based on specialist workshop experience.",
+    "art": {
+      "dark": "/generation/replacement/e90-dark.webp",
+      "engine": "/e90/engine.webp",
+      "alt": "BMW 3 Series E90 saloon from the rear, with a BMW six-cylinder engine"
+    },
     "note": "No Generation variance from the Model Page's baseline figures - E90 saloon shares identical engine-bay access with its E91/E92/E93 siblings, so costs are inherited directly per the Authority Model."
   },
   "coreVariants": {
@@ -907,6 +918,11 @@
         "url": "https://bmwengines.uk/3-series/323i"
       }
     ],
+    "art": {
+      "dark": "/generation/core/e90-dark.webp",
+      "light": "/generation/core/e90-light.webp",
+      "alt": "BMW 3 Series E90 saloon"
+    },
     "scopeNote": "All variants listed are E90 saloon only. E91 Touring, E92 Coupé and E93 Convertible share most of these engines but are covered on their own Generation Pages, since fitment and labour access vary slightly by body style."
   },
   "marketIntelligence": {
@@ -1031,9 +1047,10 @@
       "label": "Compare BMW 3 Series E90 Engine Prices on EnginesMarket →",
       "href": "/quote"
     },
-    "image": {
-      "src": "https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=1200&auto=format&fit=crop",
-      "alt": "BMW 3 Series E90 rear three-quarter view"
+    "art": {
+      "dark": "/generation/trust/e90-dark.webp",
+      "light": "/generation/trust/e90-light.webp",
+      "alt": "BMW 3 Series E90 saloon from the rear in a neon-lit studio"
     }
   }
 }
