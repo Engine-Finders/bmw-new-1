@@ -9,6 +9,7 @@ import FAQAccordion from "@/components/engine/FAQAccordion";
 import TrustCta from "@/components/engine/TrustCta";
 import { enginePageImages } from "@/components/shared/pageCarImages";
 import { engineCode, enquiriesFrom, glanceMap, modelsFittedOf, normHyphen, parseScore, parseYears, realignCompatibility } from "@/components/engine/engineText";
+import { resolveSeoImage, sanitizeJsonLd } from "@/lib/seoAssets";
 
 async function getPageData(dataFile) {
   try {
@@ -42,7 +43,7 @@ export async function generateMetadata({ params }) {
           description: meta.openGraph.description,
           type: meta.openGraph.type || "website",
           url: meta.openGraph.url,
-          images: meta.openGraph.image ? [meta.openGraph.image] : undefined,
+          images: meta.openGraph.image ? [resolveSeoImage(meta.openGraph.image)] : undefined,
           siteName: meta.openGraph.siteName,
         }
       : undefined,
@@ -51,7 +52,7 @@ export async function generateMetadata({ params }) {
           card: meta.twitter.card,
           title: meta.twitter.title,
           description: meta.twitter.description,
-          images: meta.twitter.image ? [meta.twitter.image] : undefined,
+          images: meta.twitter.image ? [resolveSeoImage(meta.twitter.image)] : undefined,
         }
       : undefined,
   };
@@ -96,7 +97,7 @@ export default async function EnginePage({ params }) {
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify(data.meta.jsonLd),
+            __html: JSON.stringify(sanitizeJsonLd(data.meta.jsonLd)),
           }}
         />
       )}

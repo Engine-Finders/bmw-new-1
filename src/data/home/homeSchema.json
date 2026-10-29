@@ -21,7 +21,7 @@
       "@id": "https://bmwengines.uk/#organization",
       "name": "BMWEngines.uk",
       "url": "https://bmwengines.uk/",
-      "logo": "https://bmwengines.uk/images/bmwengines-logo.png",
+      "logo": "https://bmwengines.uk/hero-day.webp",
       "parentOrganization": {
         "@type": "Organization",
         "name": "Engine Finders",
@@ -81,7 +81,7 @@
       },
       "primaryImageOfPage": {
         "@type": "ImageObject",
-        "url": "https://bmwengines.uk/images/bmw-homepage-hero.jpg",
+        "url": "https://bmwengines.uk/hero-day.webp",
         "caption": "BMW Engines UK - Complete Ownership Guide",
         "width": 1200,
         "height": 630
