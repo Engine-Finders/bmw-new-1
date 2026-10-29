@@ -113,7 +113,7 @@ export default function BuyingChecklist({ data, vehicle }) {
               </div>
             </div>
 
-            {/* Desktop: two columns (1–4 left, 5–8 right). Phones: one column with a chevron per row. */}
+            {/* Desktop: two columns (1–4 left, 5–8 right). Phones: one column with a tick box per row. */}
             <ol
               className="mt-4 grid grid-cols-1 gap-[5px] lg:mt-[clamp(20px,2.1vw,32px)] lg:grid-flow-col lg:grid-cols-[minmax(0,1.17fr)_minmax(0,1fr)] lg:gap-[6px] lg:[grid-template-rows:repeat(var(--rows),auto)]"
               style={{ "--rows": rows }}
@@ -132,7 +132,10 @@ export default function BuyingChecklist({ data, vehicle }) {
                       <p className="mt-0.5 text-[13px] leading-[1.4] text-[var(--color-v-text)] lg:text-[var(--color-v-muted)] lg:mt-[clamp(3px,0.4vw,6px)] lg:text-[clamp(12px,1.12vw,17px)] lg:leading-[1.45]">{sentence(dash(item.text))}</p>
                     ) : null}
                   </div>
-                  <VIcon name="chevronRight" className="h-[18px] w-[18px] shrink-0 text-[var(--color-v-text)] lg:hidden" strokeWidth={2.2} />
+                  <svg viewBox="0 0 24 24" aria-hidden="true" className="h-5 w-5 shrink-0 text-[var(--color-v-text)] lg:hidden" fill="none" stroke="currentColor" strokeWidth={1.8} strokeLinecap="round" strokeLinejoin="round">
+                    <rect x="3.5" y="3.5" width="17" height="17" rx="3.5" />
+                    <path d="M8 12.3l2.8 2.8L16.2 9.6" />
+                  </svg>
                 </li>
               ))}
             </ol>

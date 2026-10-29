@@ -1,350 +1,264 @@
 "use client";
 
-import { useTheme } from "@/components/shared/themeProvider";
-import MStripe from "@/components/reusableComponents/MStripe";
-import HomeIcon from "@/components/home/homeIcons";
-import { sectionH2 } from "@/components/models/sectionTypography";
-import { engineSectionBg } from "./engineSection";
+import Image from "next/image";
+import ui from "@/data/shared/enginePageUi.json";
+import { CARD, DataText, EIcon, IconDisc, SECTION_CLASS, Stars, Underline, useEngineTone } from "./engineUi";
+import { cleanText, formatStars, parseStars } from "./engineText";
 
-const DIMENSION_ICONS = {
-  Reliability: "shield",
-  "Repair Cost": "pound-shield",
-  Repairability: "repair-tool",
-  "Parts Supply": "parts-supply",
-  "Replacement Economics": "repair",
+const V = ui.verdict;
+
+// Local glyph in the kit's line style: the reference's shield with a small solid shield inside.
+const LOCAL_GLYPHS = {
+  "shield-core": (
+    <>
+      <path d="M12 3l7.5 3v5.5c0 4.6-3.2 8.3-7.5 9.5-4.3-1.2-7.5-4.9-7.5-9.5V6z" />
+      <path d="M12 8.2l3.6 1.4v2.4c0 2.2-1.5 3.9-3.6 4.6-2.1-.7-3.6-2.4-3.6-4.6V9.6z" fill="currentColor" />
+    </>
+  ),
 };
 
-function cleanText(text = "") {
-  return String(text)
-    .replace(/\u00c2\u00a3|\u00a3/g, "\u00a3")
-    .replace(/\u00c3\u00a2\u00e2\u20ac\u201c|\u00c3\u00a2\u00e2\u20ac\u201d|\u00e2\u20ac\u201c|\u00e2\u20ac\u201d|\u2013|\u2014/g, "\u2013")
-    .replace(/\u00c3\u00a2\u00e2\u20ac\u02dc|\u00e2\u20ac\u2018|\u2011/g, "-")
-    .replace(/\u00c3\u00a2\u00e2\u20ac\u00a2|\u00e2\u20ac\u00a2|\u2022/g, "\u2022")
-    .replace(/\s+/g, " ")
-    .trim();
+function Glyph({ name, className }) {
+  const local = LOCAL_GLYPHS[name];
+  if (!local) return <EIcon name={name} className={className} />;
+  return (
+    <svg viewBox="0 0 24 24" className={className} fill="none" stroke="currentColor" strokeWidth={1.75} strokeLinecap="round" strokeLinejoin="round" aria-hidden>
+      {local}
+    </svg>
+  );
 }
 
-function cardClass(isDark) {
-  return isDark
-    ? "border-[var(--color-border)] bg-[var(--color-surface)]"
-    : "border-[var(--color-border-strong)] bg-[var(--color-surface)] shadow-[0_10px_28px_var(--color-shadow)]";
-}
-
-function parseStarRating(value = "") {
+/** "14 (3.5★ × 4 = 14)" → { points: 14, outOf: null, detail: "3.5★ × 4 = 14" }; "74/100 (…)" → { points: 74, outOf: 100 }. */
+function parseScoreCell(value = "") {
   const clean = cleanText(value);
-  const halfMatch = clean.match(/(\d+)\s*[½]/);
-  if (halfMatch) {
-    return { display: `${halfMatch[1]}\u00bd`, numeric: Number(halfMatch[1]) + 0.5 };
-  }
-
-  const decimalMatch = clean.match(/(\d+(?:\.\d+)?)/);
-  if (!decimalMatch) return { display: clean, numeric: 0 };
-
-  const numeric = Number(decimalMatch[1]);
-  const display = Number.isInteger(numeric) ? String(numeric) : String(numeric);
-  return { display, numeric };
+  const m = clean.match(/^(\d+(?:\.\d+)?)\s*(?:\/\s*(\d+))?\s*(?:\((.*)\))?\s*$/);
+  if (m) return { points: Number(m[1]), outOf: m[2] ? Number(m[2]) : null, detail: (m[3] || "").trim() };
+  const lead = clean.match(/^(\d+(?:\.\d+)?)\s*[–:-]?\s*(.*)$/);
+  return lead ? { points: Number(lead[1]), outOf: null, detail: lead[2].trim() } : { points: null, outOf: null, detail: clean };
 }
 
-function parseScoreCell(score = "") {
-  const clean = cleanText(score);
-  const totalMatch = clean.match(/^(\d+)\s*\/\s*(\d+)\s*(?:\((.+)\))?$/);
-  if (totalMatch) {
-    return {
-      points: Number(totalMatch[1]),
-      outOf: Number(totalMatch[2]),
-      detail: totalMatch[3] || "",
-      isTotal: true,
-    };
-  }
-
-  const match = clean.match(/^(\d+)\s*(?:\((.+)\))?$/);
-  if (!match) return { points: 0, outOf: 20, detail: clean, isTotal: false };
-
-  return {
-    points: Number(match[1]),
-    outOf: 20,
-    detail: match[2] || "",
-    isTotal: false,
-  };
-}
-
+/** Quote and the "(Clause 1: … Total: 23 words.)" note, split; surrounding quote marks dropped. */
 function parseVerdict(value = "") {
+  const raw = String(value ?? "");
+  const i = raw.search(/\(\s*Clause\b/i);
+  const quote = (i >= 0 ? raw.slice(0, i) : raw).trim().replace(/^["“”']+|["“”']+$/g, "");
+  return { quote: cleanText(quote), note: i >= 0 ? cleanText(raw.slice(i)) : "" };
+}
+
+/** "92% confidence -based on …" → { lead: "92% confidence", rest: "– based on …" }. */
+function splitConfidence(value = "") {
   const clean = cleanText(value);
-  const match = clean.match(/^["“]?(.+?)["”]?\s*(\(Clause[\s\S]*)?$/i);
-
-  if (!match) {
-    return { quote: clean, meta: "" };
-  }
-
-  return {
-    quote: match[1].replace(/^["“]|["”]$/g, "").trim(),
-    meta: (match[2] || "").trim(),
-  };
+  const m = clean.match(/^(\d+(?:\.\d+)?\s*%(?:\s+confidence)?)\s*(.*)$/i);
+  return m ? { lead: m[1], rest: m[2] } : { lead: "", rest: clean };
 }
 
-function renderTaggedText(text = "") {
-  const parts = cleanText(text).split(/(\[[^\]]+\])/g);
+const SOFT = "text-[color-mix(in_srgb,var(--eg-text)_84%,transparent)]";
 
-  return parts.map((part, index) => {
-    if (/^\[[^\]]+\]$/.test(part)) {
-      return (
-        <span key={`${part}-${index}`} className="font-semibold text-[var(--color-primary)]">
-          {part}
-        </span>
-      );
-    }
+const sentence = (text = "") => {
+  // Some copy carries raw <a href> markup (b38-b48 "Avoid if"): keep the link text only.
+  const clean = cleanText(String(text ?? "").replace(/<a\b[^>]*>(.*?)<\/a>/gi, "$1").replace(/<[^>]+>/g, ""));
+  return clean ? clean[0].toUpperCase() + clean.slice(1) : "";
+};
 
-    return <span key={`${part}-${index}`}>{part}</span>;
-  });
-}
-
-function StarRating({ value }) {
-  const full = Math.floor(value);
-  const hasHalf = value - full >= 0.25 && value - full < 0.75;
-  const roundedHalf = value - full >= 0.75;
-  const filled = roundedHalf ? full + 1 : full;
-
-  return (
-    <div className="flex items-center gap-0.5 text-[var(--color-primary)]" aria-hidden="true">
-      {Array.from({ length: 5 }).map((_, index) => {
-        if (index < filled) {
-          return (
-            <span key={index} className="text-[16px] leading-none md:text-[20px]">
-              ★
-            </span>
-          );
-        }
-
-        if (index === filled && hasHalf) {
-          return (
-            <span key={index} className="relative inline-block text-[16px] leading-none text-[var(--color-border-strong)] md:text-[20px]">
-              ★
-              <span className="absolute inset-y-0 left-0 w-1/2 overflow-hidden text-[var(--color-primary)]">
-                ★
-              </span>
-            </span>
-          );
-        }
-
-        return (
-          <span key={index} className="text-[16px] leading-none text-[var(--color-border-strong)] md:text-[20px]">
-            ★
-          </span>
-        );
-      })}
-    </div>
-  );
-}
-
-function CircleIcon({ isDark, className = "", icon, iconClass = "h-5 w-5" }) {
-  return (
-    <span
-      className={`flex shrink-0 items-center justify-center rounded-full border border-[var(--color-primary)] bg-[var(--color-primary-soft)] ${className}`}
-    >
-      <HomeIcon name={icon} isDark={isDark} className={`${iconClass} object-contain`} />
+/** Detail copy with ★ in blue (as in the reference) and tags via DataText. */
+function Detail({ text }) {
+  const parts = String(text).split("★");
+  return parts.map((part, i) => (
+    <span key={i}>
+      {i > 0 && /^\s/.test(part) ? " " : null}
+      <DataText text={part} />
+      {i < parts.length - 1 && /\s$/.test(part) ? " " : null}
+      {i < parts.length - 1 ? <span className="text-[var(--eg-blue)]">★</span> : null}
     </span>
-  );
+  ));
 }
 
-function DimensionIcon({ dimension, isDark }) {
+/* ----------------------------------------------------------------- cards */
+
+function RatingCard({ starRating, confidence, isDark, className = "" }) {
+  const stars = parseStars(starRating);
+  const { lead, rest } = splitConfidence(confidence);
   return (
-    <CircleIcon
-      isDark={isDark}
-      icon={DIMENSION_ICONS[dimension] || "shield"}
-      className="h-9 w-9 md:h-10 md:w-10"
-      iconClass="h-8 w-8 md:h-6 md:w-6"
-    />
-  );
-}
-
-function RatingCard({ starRating, confidence, isDark }) {
-  const rating = parseStarRating(starRating);
-
-  return (
-    <article className={`rounded-xl border px-3.5 py-3.5 md:px-5 md:py-5 ${cardClass(isDark)}`}>
-      <p className={`lg:text-[15px] text-[12px] font-medium md:text-[14px] ${isDark ? "text-[var(--color-text)]" : "text-[var(--color-text-soft)]"}`}>Rating:</p>
-
-      <div className="mt-1.5 flex flex-wrap items-end gap-x-2.5 gap-y-1 md:mt-2 md:gap-x-3">
-        <p className="font-heading text-[36px] font-bold leading-none text-[var(--color-primary)] md:text-[48px]">{rating.display}</p>
-        <div className="mb-0.5 flex items-center gap-1.5 md:mb-1 md:gap-2">
-          <StarRating value={rating.numeric} />
-          <span className="lg:text-[15px] text-[12px] text-[var(--color-text-soft)] md:text-[13px]">out of 5</span>
-        </div>
+    <article className={`${CARD} p-4 md:p-6 xl:p-7 ${className}`}>
+      <p className="text-[13px] font-medium text-[var(--eg-text)] md:text-[18px] xl:text-[20px] 2xl:text-[22px]">{V.ratingLabel}</p>
+      <div className="mt-1.5 flex flex-wrap items-end gap-x-4 gap-y-2 md:gap-x-5 2xl:mt-2">
+        <span className="text-[48px] font-bold leading-[0.95] tracking-[-0.03em] text-[var(--eg-blue)] md:text-[64px] xl:text-[72px] 2xl:text-[82px]">
+          {formatStars(stars)}
+        </span>
+        {stars != null ? (
+          <Stars value={stars} className="h-6 w-6 md:h-7 md:w-7 lg:h-8 lg:w-8 xl:h-9 xl:w-9 2xl:h-10 2xl:w-10" gap="gap-2 mb-1 2xl:mb-1.5" />
+        ) : null}
+        <span className="mb-0.5 text-[13px] text-[var(--eg-text)] md:text-[18px] xl:text-[20px] 2xl:mb-1 2xl:text-[22px]">{V.outOf}</span>
       </div>
-
-      <div className="mt-3 border-t border-[var(--color-border)] pt-3">
-        <div className="flex items-start gap-2.5">
-          <CircleIcon isDark={isDark} icon="shield" className="mt-0.5 h-9 w-9 md:h-8 md:w-8" iconClass="h-7 w-7 md:h-5 md:w-5" />
-          <p className="lg:text-[15px] min-w-0 text-[12px] leading-[1.4] text-[var(--color-text-muted)] md:text-[13px]">
-            {renderTaggedText(confidence)}
+      {lead || rest ? (
+        <div className="mt-4 flex items-start gap-3 border-t border-[var(--eg-divider)] pt-4 md:mt-5 md:gap-4 md:pt-5 2xl:mt-6 2xl:gap-6 2xl:pt-6">
+          <IconDisc size="h-11 w-11 md:h-14 md:w-14 2xl:h-16 2xl:w-16">
+            <EIcon name="shield-check" className="h-6 w-6 md:h-7 md:w-7 2xl:h-8 2xl:w-8" />
+          </IconDisc>
+          <p className="min-w-0 text-[13px] leading-[1.55] text-[var(--eg-text)] md:text-[16px] xl:text-[17px] 2xl:text-[19px] 2xl:leading-[1.6]">
+            {lead ? <strong className={`font-semibold ${isDark ? "text-[var(--eg-text)]" : "text-[var(--eg-blue)]"}`}>{lead}</strong> : null}
+            {lead && rest ? " " : null}
+            <DataText text={rest} />
           </p>
         </div>
-      </div>
-    </article>
-  );
-}
-
-function VerdictQuote({ oneLineVerdict, isDark }) {
-  const { quote, meta } = parseVerdict(oneLineVerdict);
-
-  return (
-    <article className={`relative overflow-hidden rounded-xl border px-3.5 py-3.5 md:px-5 md:py-5 ${cardClass(isDark)}`}>
-      <span aria-hidden="true" className="pointer-events-none absolute left-2.5 top-1 text-[36px] font-bold leading-none text-[var(--color-primary)] opacity-70 md:left-4 md:top-2 md:text-[48px] md:opacity-80">
-        “
-      </span>
-      <span aria-hidden="true" className="pointer-events-none absolute bottom-5 right-2.5 text-[36px] font-bold leading-none text-[var(--color-primary)] opacity-70 md:bottom-6 md:right-4 md:text-[48px] md:opacity-80">
-        ”
-      </span>
-
-      <p className="relative z-[1] px-4 pt-4 text-[13px] font-medium leading-[1.45] text-[var(--color-text)] md:px-6 md:pt-5 md:text-[15px]">
-        {quote}
-      </p>
-      {meta ? (
-        <p className="lg:text-[15px] relative z-[1] mt-2.5 px-1 text-[12px] leading-[1.35] text-[var(--color-text-soft)] md:mt-3 md:text-[13px]">
-          {meta}
-        </p>
       ) : null}
     </article>
   );
 }
 
-function AdviceCards({ bestFor, avoidIf, isDark }) {
-  return (
-    <div className="grid grid-cols-2 gap-2.5 md:gap-3">
-      <article
-        className={`rounded-xl border px-3.5 py-3 md:px-4 md:py-3.5 ${
-          isDark
-            ? "border-[var(--color-accent-green)] bg-[var(--color-accent-green-soft)]"
-            : "border-[var(--color-border-strong)] bg-[var(--color-surface)] shadow-[0_8px_22px_var(--color-shadow)]"
-        }`}
-      >
-        <div className="flex items-center gap-2.5 text-[var(--color-accent-green)]">
-          <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-[var(--color-accent-green)] bg-[var(--color-accent-green-soft)] md:h-9 md:w-9">
-            <HomeIcon name="check" isDark={isDark} className="h-7 w-7 object-contain md:h-6 md:w-6" />
-          </span>
-          <p className="text-[15px] font-semibold md:text-[17px]">Best for:</p>
-        </div>
-        <p className="lg:text-[15px] mt-2 text-[13px] leading-[1.45] text-[var(--color-text)] md:text-[14px]">{cleanText(bestFor)}</p>
-      </article>
+const QUOTE_MARK = "[font-family:Georgia,'Times_New_Roman',serif] font-bold leading-none text-[var(--eg-blue)] text-[40px] md:text-[56px] 2xl:text-[68px]";
 
-      <article
-        className={`rounded-xl border px-3.5 py-3 md:px-4 md:py-3.5 ${
-          isDark
-            ? "border-[var(--color-accent-red)] bg-[var(--color-accent-red-soft)]"
-            : "border-[var(--color-border-strong)] bg-[var(--color-surface)] shadow-[0_8px_22px_var(--color-shadow)]"
-        }`}
-      >
-        <div className="flex items-center gap-2.5 text-[var(--color-accent-red)]">
-          <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full border border-[var(--color-accent-red)] bg-[var(--color-accent-red-soft)] md:h-9 md:w-9">
-            <HomeIcon name="warning" isDark={isDark} className="h-7 w-7 object-contain md:h-6 md:w-6" />
-          </span>
-          <p className="text-[15px] font-semibold md:text-[17px]">Avoid if:</p>
-        </div>
-        <p className="lg:text-[15px] mt-2 text-[13px] leading-[1.45] text-[var(--color-text)] md:text-[14px]">{cleanText(avoidIf)}</p>
-      </article>
-    </div>
+function QuoteCard({ oneLineVerdict, className = "" }) {
+  const { quote, note } = parseVerdict(oneLineVerdict);
+  if (!quote && !note) return null;
+  return (
+    <figure className={`${CARD} px-4 pb-4 pt-4 md:px-6 md:pb-5 md:pt-6 2xl:pb-6 2xl:pl-[26px] 2xl:pr-7 2xl:pt-7 ${className}`}>
+      <div className="grid grid-cols-[auto_minmax(0,1fr)] gap-x-3 md:gap-x-4">
+        <span aria-hidden className={`${QUOTE_MARK} -mt-1 h-[0.5em]`}>
+          “
+        </span>
+        <blockquote className="flow-root pr-1 md:pr-2">
+          <p className="text-[13px] leading-[1.5] text-[var(--eg-text)] md:text-[17px] xl:text-[19px] 2xl:text-[22px] 2xl:leading-[1.45]">
+            {quote}
+            <span aria-hidden className={`${QUOTE_MARK} float-right ml-4 mt-[0.32em] h-[0.42em] md:mt-[0.3em]`}>
+              ”
+            </span>
+          </p>
+        </blockquote>
+      </div>
+      {note ? <figcaption className="mt-3 text-[12px] leading-[1.45] text-[var(--eg-soft)] md:mt-4 md:text-[14px] xl:text-[15px] 2xl:mt-5">{note}</figcaption> : null}
+    </figure>
   );
 }
 
-function ScoreBreakdown({ scoreNote, scoreBreakdown, isDark }) {
-  const columns = scoreBreakdown?.columns || ["Dimension", "Score (of 20)"];
-  const rawRows = scoreBreakdown?.rows || [];
-
-  const parsedRows = rawRows
-    .map((row) => ({
-      dimension: cleanText(row.dimension),
-      ...parseScoreCell(row.score),
-    }))
-    .filter((row) => row.dimension);
-
-  const bodyRows = parsedRows.filter((row) => !row.isTotal && row.dimension.toLowerCase() !== "total");
-  const totalRow = parsedRows.find((row) => row.isTotal || row.dimension.toLowerCase() === "total");
-  const totalPoints = totalRow?.points ?? bodyRows.reduce((sum, row) => sum + row.points, 0);
-  const totalOutOf = totalRow?.outOf ?? 100;
-
+function AdviceCard({ tone, icon, title, text }) {
+  const color = tone === "good" ? "text-[var(--eg-green)]" : "text-[var(--eg-red)]";
+  // Phone and 1536+: icon beside the title and text (as the references). Tablet–1440: icon + title row, text full width.
   return (
-    <article className={`overflow-hidden rounded-xl border ${cardClass(isDark)}`}>
-      <div className="px-3.5 pt-3.5 md:px-5 md:pt-5">
-        <p className="text-[13px] font-semibold text-[var(--color-text)] md:text-[15px]">{cleanText(scoreNote)}</p>
-      </div>
+    <article className={`${CARD} grid min-w-0 grid-cols-[auto_minmax(0,1fr)] content-start items-center gap-x-2.5 p-3 md:gap-x-3 md:gap-y-2 md:p-5 2xl:items-start 2xl:gap-x-3.5 2xl:gap-y-0 2xl:py-7 2xl:pl-6 2xl:pr-4`}>
+      <EIcon
+        name={icon}
+        strokeWidth={1.6}
+        className={`row-span-2 h-7 w-7 shrink-0 self-start md:row-span-1 md:h-9 md:w-9 md:self-center 2xl:row-span-2 2xl:h-[46px] 2xl:w-[46px] 2xl:self-start ${color}`}
+      />
+      <h3 className={`pt-0.5 text-[13px] font-semibold leading-tight md:pt-0 md:text-[18px] 2xl:pt-1 2xl:text-[20px] ${color}`}>{title}</h3>
+      <p className={`mt-1 text-[12px] leading-[1.45] md:col-span-2 md:mt-0 md:text-[15px] 2xl:col-span-1 2xl:col-start-2 2xl:mt-2 2xl:leading-[1.5] ${SOFT}`}>{text}</p>
+    </article>
+  );
+}
 
-      <div className="lg:text-[15px] mt-2.5 grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2 bg-[#0b47a8] px-3.5 py-2 text-[12px] font-semibold uppercase tracking-[0.03em] text-white md:mt-3 md:gap-3 md:px-5 md:py-2.5 md:text-[13px]">
-        <span>{columns[0] || "Dimension"}</span>
-        <span className="text-right">{columns[1] || "Score (of 20)"}</span>
+function ScoreCard({ title, columns, rows, total, isDark, className = "" }) {
+  const [dimLabel, scoreLabel] = columns;
+  const scoreParts = String(scoreLabel || "").match(/^(.*?)(\s*\(.*\))$/);
+  return (
+    <article className={`${CARD} flex min-w-0 flex-col overflow-hidden ${className}`}>
+      <h3 className="px-4 pb-3 pt-4 text-[14px] font-semibold text-[var(--eg-text)] md:px-6 md:pb-4 md:pt-6 md:text-[20px] 2xl:px-7 2xl:pb-6 2xl:pt-7 2xl:text-[24px]">
+        {title}
+      </h3>
+      <div className="flex items-center justify-between gap-4 px-4 py-2 text-[12px] font-medium text-[var(--eg-band-text)] [background:var(--eg-band)] md:px-6 md:py-3 md:text-[16px] 2xl:px-7 2xl:text-[18px]">
+        <span>{dimLabel}</span>
+        <span className="text-right">
+          {scoreParts ? (
+            <>
+              {scoreParts[1]}
+              <span className={isDark ? "" : "text-[var(--eg-blue)]"}>{scoreParts[2]}</span>
+            </>
+          ) : (
+            scoreLabel
+          )}
+        </span>
       </div>
-
-      <div>
-        {bodyRows.map((row) => (
-          <div
+      <ul className="flex flex-1 flex-col">
+        {rows.map((row) => (
+          <li
             key={row.dimension}
-            className="grid grid-cols-[minmax(0,1fr)_auto] items-start gap-2 border-b border-[var(--color-border)] px-3 py-2.5 md:gap-4 md:px-5 md:py-3.5"
+            className="grid flex-1 grid-cols-[40px_minmax(0,1fr)_88px] items-center gap-x-3 border-b border-[var(--eg-divider)] pl-3 md:grid-cols-[52px_minmax(0,1fr)_128px] md:gap-x-4 md:pl-5 xl:grid-cols-[64px_minmax(0,165fr)_minmax(0,400fr)_128px] xl:gap-x-5 xl:pl-[18px]"
           >
-            <div className="flex min-w-0 items-start gap-2 md:gap-3">
-              <DimensionIcon dimension={row.dimension} isDark={isDark} />
-              <div className="min-w-0">
-                <p className="lg:text-[15px] font-heading text-[12px] font-semibold leading-tight text-[var(--color-text)] md:text-[14px]">{row.dimension}</p>
-                {row.detail ? (
-                  <p className="lg:text-[15px] mt-0.5 text-[12px] leading-[1.35] text-[var(--color-text-soft)] md:mt-1 md:text-[13px]">{row.detail}</p>
-                ) : null}
-              </div>
+            <IconDisc size="h-10 w-10 md:h-[52px] md:w-[52px] xl:h-16 xl:w-16">
+              <Glyph name={row.icon} className="h-[22px] w-[22px] md:h-6 md:w-6 xl:h-8 xl:w-8 2xl:h-9 2xl:w-9" />
+            </IconDisc>
+            <div className="min-w-0 py-2.5 md:py-4 xl:contents">
+              <p className="text-[13px] font-semibold leading-tight text-[var(--eg-text)] md:text-[17px] xl:py-5 xl:text-[18px] 2xl:text-[19px]">{row.dimension}</p>
+              {row.detail ? (
+                <p className={`mt-0.5 text-[12px] leading-[1.45] md:mt-1 md:text-[15px] xl:mt-0 xl:py-5 xl:pr-2 xl:text-[16px] xl:leading-[1.6] 2xl:text-[17px] 2xl:leading-[1.65] ${SOFT}`}>
+                  <Detail text={row.detail} />
+                </p>
+              ) : (
+                <span className="hidden xl:block" />
+              )}
             </div>
-            <p className="shrink-0 pt-0.5 text-right leading-none">
-              <span className="font-heading text-[20px] font-bold text-[var(--color-primary)] md:text-[26px]">{row.points}</span>
-              <span className={`lg:text-[15px] text-[12px] font-medium md:text-[13px] ${isDark ? "text-[var(--color-text)]" : "text-[var(--color-text-muted)]"}`}> /{row.outOf}</span>
-            </p>
-          </div>
+            <div className="flex items-center justify-center self-stretch border-l border-[var(--eg-divider)] py-3">
+              <p className="flex items-baseline gap-1.5 whitespace-nowrap md:gap-2 xl:gap-3.5">
+                <span className="text-[22px] font-bold leading-none tracking-[-0.02em] text-[var(--eg-blue)] md:text-[34px] 2xl:text-[40px]">{row.points ?? "–"}</span>
+                <span className="text-[12px] leading-none text-[var(--eg-text)] md:text-[18px] 2xl:text-[22px]">{V.outOfRow}</span>
+              </p>
+            </div>
+          </li>
         ))}
-      </div>
-
-      <div
-        className={`grid grid-cols-[minmax(0,1fr)_auto] items-center gap-2 px-3.5 py-3 md:gap-3 md:px-5 md:py-4 ${
-          isDark ? "bg-[var(--color-page-soft)]" : "bg-[var(--color-primary-soft)]"
-        }`}
-      >
-        <p className="lg:text-[15px] font-heading text-[12px] font-bold uppercase tracking-[0.04em] text-[var(--color-text)] md:text-[13px]">
-          Total Engine Score
-        </p>
-        <p className="text-right leading-none">
-          <span className="font-heading text-[26px] font-bold text-[var(--color-primary)] md:text-[34px]">{totalPoints}</span>
-          <span className={`lg:text-[15px] text-[12px] font-medium md:text-[14px] ${isDark ? "text-[var(--color-text)]" : "text-[var(--color-text-muted)]"}`}> / {totalOutOf}</span>
+      </ul>
+      <div className="flex items-center justify-between gap-4 px-4 py-3 md:px-6 md:py-5 2xl:pl-7 2xl:pr-9 2xl:py-6">
+        <p className="text-[13px] font-medium uppercase leading-tight tracking-[0.02em] text-[var(--eg-text)] md:text-[17px] 2xl:text-[19px]">{V.totalLabel}</p>
+        <p className="flex items-baseline gap-1.5 whitespace-nowrap md:gap-2.5">
+          <span className="text-[24px] font-bold leading-none tracking-[-0.02em] text-[var(--eg-blue)] md:text-[38px] 2xl:text-[44px]">{total ?? "–"}</span>
+          <span className="text-[13px] leading-none text-[var(--eg-text)] md:text-[20px] 2xl:text-[26px]">{V.totalOutOf}</span>
         </p>
       </div>
     </article>
   );
 }
 
-export default function VerdictRating({ data }) {
-  const { theme } = useTheme();
+export default function VerdictRating({ data, facts, engineImage }) {
+  const { isDark, vars } = useEngineTone();
   if (!data) return null;
 
-  const isDark = theme === "dark";
+  const icons = V.dimensionIcons || {};
+  const parsed = (data.scoreBreakdown?.rows || [])
+    .map((row) => ({ dimension: cleanText(row.dimension), ...parseScoreCell(row.score) }))
+    .filter((row) => row.dimension);
+  const isTotal = (row) => /^total\b/i.test(row.dimension) || row.outOf === 100;
+  const rows = parsed.filter((row) => !isTotal(row)).map((row) => ({ ...row, icon: icons[row.dimension] || icons.fallback || "gauge" }));
+  const totalRow = parsed.find(isTotal);
+  const sum = rows.reduce((acc, row) => acc + (row.points || 0), 0);
+  const total = facts?.score ?? totalRow?.points ?? (rows.length ? sum : null);
+  const columns = data.scoreBreakdown?.columns?.length === 2 ? data.scoreBreakdown.columns.map((c) => cleanText(c)) : V.columns;
+  const engineSrc = typeof engineImage === "string" ? engineImage : engineImage?.src;
 
   return (
-    <section className={`relative w-full overflow-x-hidden py-6 text-[var(--color-text)] md:py-9 ${engineSectionBg(isDark, false)}`}>
-      <div className="relative mx-auto w-full max-w-8xl px-4 md:px-8">
-        <div className="text-center md:text-left">
-          <h2 className={`font-bold tracking-normal ${sectionH2}`}>
-            Verdict <span className="text-[var(--color-primary)]">& Rating</span>
-          </h2>
-          <div className="mt-3 flex justify-center md:justify-start">
-            <MStripe />
-          </div>
+    <section aria-labelledby="verdict-heading" className={`${SECTION_CLASS} section-y`} style={isDark ? vars : { ...vars, "--eg-page": "#f8fafd" }}>
+      {engineSrc && !isDark ? (
+        <div aria-hidden className="pointer-events-none absolute -bottom-[70px] -left-[50px] hidden aspect-square w-[460px] opacity-[0.16] grayscale lg:block">
+          <Image src={engineSrc} alt="" fill sizes="460px" className="object-contain" />
         </div>
+      ) : null}
+      <div className="site-container relative">
+        <h2 id="verdict-heading" className="text-[26px] font-bold leading-[1.1] tracking-[-0.02em] text-[var(--eg-text)] md:text-[38px] 2xl:text-[48px]">
+          {V.h2}
+        </h2>
+        <Underline className="mt-2.5 h-[3px] w-[60px] md:mt-3" />
 
-        <div className="mt-5 hidden gap-3 md:grid md:grid-cols-[2fr_3fr] md:items-start">
-          <div className="grid gap-3">
-            <RatingCard starRating={data.starRating} confidence={data.confidence} isDark={isDark} />
-            <VerdictQuote oneLineVerdict={data.oneLineVerdict} isDark={isDark} />
-            <AdviceCards bestFor={data.bestFor} avoidIf={data.avoidIf} isDark={isDark} />
-          </div>
-          <ScoreBreakdown scoreNote={data.scoreNote} scoreBreakdown={data.scoreBreakdown} isDark={isDark} />
-        </div>
-
-        <div className="mt-4 grid gap-2.5 md:hidden">
-          <RatingCard starRating={data.starRating} confidence={data.confidence} isDark={isDark} />
-          <VerdictQuote oneLineVerdict={data.oneLineVerdict} isDark={isDark} />
-          <ScoreBreakdown scoreNote={data.scoreNote} scoreBreakdown={data.scoreBreakdown} isDark={isDark} />
-          <AdviceCards bestFor={data.bestFor} avoidIf={data.avoidIf} isDark={isDark} />
+        <div className="mt-5 grid gap-3 md:mt-6 md:grid-cols-2 md:gap-4 lg:grid-cols-[41fr_59fr] lg:grid-rows-[auto_auto_1fr] lg:gap-x-6 2xl:mt-[22px]">
+          <RatingCard
+            starRating={data.starRating}
+            confidence={data.confidence}
+            isDark={isDark}
+            className="md:col-start-1 md:row-start-1 lg:col-start-1 lg:row-start-1"
+          />
+          <QuoteCard oneLineVerdict={data.oneLineVerdict} className="md:col-start-2 md:row-start-1 lg:col-start-1 lg:row-start-2" />
+          {rows.length ? (
+            <ScoreCard
+              title={cleanText(data.scoreNote) || V.scoreTitle}
+              columns={columns}
+              rows={rows}
+              total={total}
+              isDark={isDark}
+              className="md:col-span-2 md:row-start-2 lg:col-span-1 lg:col-start-2 lg:row-span-3 lg:row-start-1"
+            />
+          ) : null}
+          {data.bestFor || data.avoidIf ? (
+            <div className="grid grid-cols-2 gap-3 self-start md:col-span-2 md:row-start-3 md:gap-4 lg:col-span-1 lg:col-start-1 lg:row-start-3 2xl:gap-3.5">
+              {data.bestFor ? <AdviceCard tone="good" icon="check-circle" title={V.bestForLabel} text={sentence(data.bestFor)} /> : null}
+              {data.avoidIf ? <AdviceCard tone="bad" icon="warning" title={V.avoidIfLabel} text={sentence(data.avoidIf)} /> : null}
+            </div>
+          ) : null}
         </div>
       </div>
     </section>

@@ -184,7 +184,8 @@ function EngineImage({ item, generationCode, className, sizes }) {
   );
 }
 
-const quoteHtml = (quote) => `“${dash(quote)}”`;
+// Some generations have no quote (the description sits on the engine line): render nothing rather than empty “”.
+const quoteHtml = (quote) => (hasText(quote) ? `“${dash(quote)}”` : "");
 
 /* ---------- Desktop (from 1024px): cards in a row with a coloured bottom bar ---------- */
 function DesktopCard({ item, generationCode }) {
@@ -208,7 +209,9 @@ function DesktopCard({ item, generationCode }) {
       </div>
       <div className="mt-3 flex items-start gap-2">
         <EngineImage item={item} generationCode={generationCode} sizes="120px" className="-ml-1 mt-1 h-[84px] w-[86px] shrink-0" />
-        <p className={`min-w-0 text-[14px] leading-[1.5] tracking-[-0.005em] text-[var(--bw-muted)] [overflow-wrap:anywhere] ${HTML}`} dangerouslySetInnerHTML={{ __html: quoteHtml(item.quote) }} />
+        {hasText(item.quote) ? (
+          <p className={`min-w-0 text-[14px] leading-[1.5] tracking-[-0.005em] text-[var(--bw-muted)] [overflow-wrap:anywhere] ${HTML}`} dangerouslySetInnerHTML={{ __html: quoteHtml(item.quote) }} />
+        ) : null}
       </div>
       {hasText(item.whoItsFor) ? (
         <p className={`mt-auto pl-1 pt-3 text-[15px] leading-[1.45] text-[var(--bw-text)] ${HTML}`}>
@@ -290,22 +293,24 @@ function PhoneCard({ item, generationCode }) {
         <div className="min-w-0">
           <div className="flex items-start gap-[1vw]">
             <div className="min-w-0 flex-1">
-              <p className="text-[min(2.3vw,18px)] font-medium leading-tight" style={{ color }} dangerouslySetInnerHTML={{ __html: item.slot }} />
+              <p className="text-[clamp(15px,2.3vw,18px)] font-medium leading-tight" style={{ color }} dangerouslySetInnerHTML={{ __html: item.slot }} />
               {hasEngine ? (
-                <p className={`mt-[0.8vw] text-[min(3.2vw,24px)] font-semibold leading-snug text-[var(--bw-text)] ${HTML}`}>
+                <p className={`mt-[0.8vw] text-[clamp(16px,3.2vw,24px)] font-semibold leading-snug text-[var(--bw-text)] ${HTML}`}>
                   <span dangerouslySetInnerHTML={{ __html: code }} />
-                  {note ? <span className="text-[min(2vw,16px)] font-normal text-[var(--bw-muted)]" dangerouslySetInnerHTML={{ __html: `  ${dash(note)}` }} /> : null}
+                  {note ? <span className="text-[clamp(14px,2vw,16px)] font-normal text-[var(--bw-muted)]" dangerouslySetInnerHTML={{ __html: `  ${dash(note)}` }} /> : null}
                 </p>
               ) : null}
             </div>
             <Icon name="chevron" strokeWidth={2} className="mt-[3vw] h-[min(3vw,22px)] w-[min(2.4vw,18px)] shrink-0 text-[var(--bw-muted)]" />
           </div>
-          <p
-            className={`mt-[1.6vw] text-[min(1.95vw,16px)] leading-[1.6] text-[var(--bw-muted)] ${HTML}`}
-            dangerouslySetInnerHTML={{ __html: hasEngine ? quoteHtml(item.quote) : dash(item.quote) }}
-          />
+          {hasText(item.quote) ? (
+            <p
+              className={`mt-[1.6vw] text-[clamp(14px,1.95vw,16px)] leading-[1.55] text-[var(--bw-muted)] ${HTML}`}
+              dangerouslySetInnerHTML={{ __html: hasEngine ? quoteHtml(item.quote) : dash(item.quote) }}
+            />
+          ) : null}
           {hasText(item.whoItsFor) ? (
-            <p className={`mt-[1.8vw] border-t border-[var(--bw-line)] pt-[1.8vw] text-[min(1.95vw,16px)] leading-[1.5] text-[var(--bw-text)] ${HTML}`}>
+            <p className={`mt-[1.8vw] border-t border-[var(--bw-line)] pt-[1.8vw] text-[clamp(14px,1.95vw,16px)] leading-[1.5] text-[var(--bw-text)] ${HTML}`}>
               <span className="font-medium" style={{ color }}>{UI.whoItsFor}</span>{" "}
               <span dangerouslySetInnerHTML={{ __html: dash(item.whoItsFor) }} />
             </p>
@@ -313,7 +318,7 @@ function PhoneCard({ item, generationCode }) {
         </div>
       </div>
       {item.modelWideNote ? (
-        <p className={`mx-[0.8vw] mb-[0.8vw] flex items-center justify-center gap-[1vw] rounded-[min(0.8vw,8px)] bg-[var(--bw-note)] px-[2vw] py-[1.2vw] text-[min(2vw,16px)] leading-snug text-[var(--bw-muted)] ${HTML}`}>
+        <p className={`mx-[0.8vw] mb-[0.8vw] flex items-center justify-center gap-[1vw] rounded-[min(0.8vw,8px)] bg-[var(--bw-note)] px-[2vw] py-[1.2vw] text-[clamp(14px,2vw,16px)] leading-snug text-[var(--bw-muted)] ${HTML}`}>
           <Icon name="info" className="h-[min(2.6vw,20px)] w-[min(2.6vw,20px)] shrink-0 text-[var(--bw-blue)]" />
           <span dangerouslySetInnerHTML={{ __html: dash(item.modelWideNote) }} />
         </p>
@@ -344,13 +349,13 @@ export default function BestWorstEngines({ data }) {
     >
       <div className="site-container relative pb-[5vw] pt-[4.4vw] max-lg:px-[3.5vw] lg:pb-14 lg:pt-12">
         <div className="max-lg:px-[0.9vw]">
-          <p className="flex items-center gap-[1.4vw] text-[min(1.97vw,15px)] font-medium uppercase tracking-[0.1em] lg:gap-3 lg:text-[14px]">
+          <p className="flex items-center gap-[1.4vw] text-[clamp(14px,1.97vw,15px)] font-medium uppercase tracking-[0.1em] lg:gap-3 lg:text-[14px]">
             <span className="text-[var(--bw-head)]">{UI.sectionNumber}</span>
             <span aria-hidden="true" className="h-px w-[min(2.6vw,22px)] bg-[var(--bw-head)] opacity-60" />
             <span className="text-[var(--bw-blue)]">{UI.eyebrow}</span>
           </p>
           <h2
-            className={`mt-[1.2vw] text-[min(5.3vw,44px)] font-semibold leading-[1.15] tracking-[-0.015em] text-[var(--bw-head)] lg:mt-2 lg:text-[34px] ${HTML}`}
+            className={`mt-[1.2vw] text-[clamp(26px,5.3vw,44px)] font-semibold leading-[1.15] tracking-[-0.015em] text-[var(--bw-head)] lg:mt-2 lg:text-[34px] ${HTML}`}
             dangerouslySetInnerHTML={{ __html: heading }}
           />
         </div>

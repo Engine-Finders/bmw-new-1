@@ -50,7 +50,7 @@ function Headline({ h1 = "" }) {
 }
 
 // Hero artwork: the car already stands on its floor inside the picture, so it can never float.
-// Phones: larger than the screen and anchored bottom-right (car beside the paragraph), top edge faded on the picture, bottom edge on its box.
+// Phones: see PhoneArt. Tablets: larger than the screen and anchored bottom-right, top edge faded on the picture, bottom edge on its box.
 // Desktop: fills the hero; the left of the picture is already faded for the text.
 // A line-up scene (several cars, no fade of its own) stays in the right ~60% and fades into the page.
 function HeroArt({ art }) {
@@ -58,7 +58,7 @@ function HeroArt({ art }) {
   return (
     <div
       aria-hidden="true"
-      className={`pointer-events-none absolute -inset-x-[var(--gutter)] -top-6 bottom-0 overflow-hidden [mask-image:linear-gradient(to_bottom,#000_0%,#000_80%,transparent_100%)] md:-top-8 lg:inset-x-auto lg:inset-y-0 lg:right-0 ${width}`}
+      className={`pointer-events-none absolute -inset-x-[var(--gutter)] -top-6 bottom-0 overflow-hidden [mask-image:linear-gradient(to_bottom,#000_0%,#000_80%,transparent_100%)] max-md:hidden md:-top-8 lg:inset-x-auto lg:inset-y-0 lg:right-0 ${width}`}
     >
       <Image
         src={art.src}
@@ -74,6 +74,28 @@ function HeroArt({ art }) {
             : // Reference layout: the whole picture at the hero's width, raised so the roof lines up with the headline; its floor fades into the page.
               "lg:w-full lg:-translate-y-[14%] lg:[mask-image:linear-gradient(to_bottom,#000_72%,transparent_100%)]"
         }`}
+      />
+    </div>
+  );
+}
+
+// Phones: the picture gets its own band under the paragraph, so the car never sits behind the text. The band is cropped
+// to the car (the pictures keep it in their right half, about 30–72% down) and faded top and bottom, so the space
+// above the trust badges is the same in the light and dark pictures.
+function PhoneArt({ art }) {
+  return (
+    <div
+      aria-hidden="true"
+      className="pointer-events-none relative -mx-[var(--gutter)] -mt-2 aspect-[16/10] overflow-hidden [mask-image:linear-gradient(to_bottom,transparent_0%,#000_16%,#000_84%,transparent_100%)] md:hidden"
+    >
+      <Image
+        src={art.src}
+        alt=""
+        width={art.width}
+        height={art.height}
+        priority
+        sizes="165vw"
+        className="absolute right-0 top-1/2 h-auto w-[165%] max-w-none -translate-y-[52%] translate-x-[6%]"
       />
     </div>
   );
@@ -111,15 +133,9 @@ export default function VariantHero({ data }) {
   const card = "rounded-[10px] border border-[var(--color-v-border)] bg-[var(--color-v-panel)] shadow-[0_10px_30px_var(--color-v-shadow)]";
   const field = "rounded-[8px] border border-[var(--color-v-border-strong)] bg-[var(--color-v-panel)] text-[var(--color-v-text)]";
 
-  // Dark designs: white icons in the desktop row, blue ones in the phone card; the shield is green in both.
-  const badgeIcon = (icon, desktop) =>
-    icon === "shieldCheck"
-      ? "text-[var(--color-v-green)]"
-      : isDark
-        ? desktop
-          ? "text-[var(--color-v-text)]"
-          : "text-[var(--color-v-blue)]"
-        : "text-[var(--color-v-navy)]";
+  // Badge icons alternate blue / green (the shield's green on every second badge), so no single badge stands out.
+  const badgeIcon = (index) =>
+    index % 2 ? "text-[var(--color-v-green)]" : isDark ? "text-[var(--color-v-blue)]" : "text-[var(--color-v-navy)]";
 
   const pillNode = pill.length ? (
     // Phones: rounder pill on a dark fill, white text in the dark design; desktop and light: blue text.
@@ -176,8 +192,8 @@ export default function VariantHero({ data }) {
     <>
       <section className="relative overflow-hidden bg-[var(--color-v-page)] [background-image:linear-gradient(180deg,var(--color-v-page)_0%,var(--color-v-band)_100%)]">
         <div className="site-container relative pb-6 pt-6 md:pb-8 md:pt-8 lg:static lg:pb-8 lg:pt-9">
-          {/* Phones: the art sits behind this block, car at its lower right. From lg the block has no box, so the art spans the whole hero. */}
-          <div className={`relative max-md:pb-[33vw] lg:contents ${heroFont.className}`}>
+          {/* Tablets: the art sits behind this block, car at its lower right. From lg the block has no box, so the art spans the whole hero. */}
+          <div className={`relative lg:contents ${heroFont.className}`}>
             {art ? <HeroArt art={art} /> : null}
             <div className="relative max-w-[640px]">
               {pillNode}
@@ -186,9 +202,10 @@ export default function VariantHero({ data }) {
               </h1>
             </div>
             <p
-              className={`t-p relative mt-4 max-w-[52%] leading-[1.75] max-md:text-[clamp(12.5px,3vw,15px)] text-[color-mix(in_srgb,var(--color-v-text)_86%,transparent)] md:max-w-[520px] md:leading-[1.6] lg:max-w-[min(560px,46%)] ${PLAIN_LINKS}`}
+              className={`t-p relative mt-4 leading-[1.6] max-md:text-[clamp(14px,3.7vw,15px)] text-[color-mix(in_srgb,var(--color-v-text)_86%,transparent)] md:max-w-[520px] lg:max-w-[min(560px,46%)] ${PLAIN_LINKS}`}
               dangerouslySetInnerHTML={{ __html: dash(data.subHeadline) }}
             />
+            {art ? <PhoneArt art={art} /> : null}
           </div>
 
           {badges.length ? (
@@ -199,7 +216,7 @@ export default function VariantHero({ data }) {
                   <li key={index} className="flex items-center">
                     {index ? <span aria-hidden="true" className="mx-4 h-9 w-px bg-[var(--color-v-border-strong)]" /> : null}
                     <span className="flex items-center gap-3">
-                      <VIcon name={badge.icon} solid className={`h-7 w-7 shrink-0 ${badgeIcon(badge.icon, true)}`} />
+                      <VIcon name={badge.icon} solid className={`h-7 w-7 shrink-0 ${badgeIcon(index)}`} />
                       <span className="t-label leading-[1.3] text-[var(--color-v-text)]">
                         {badge.lines.map((line) => (
                           <span key={line} className="block whitespace-nowrap">{line}</span>
@@ -210,11 +227,11 @@ export default function VariantHero({ data }) {
                 ))}
               </ul>
               {/* Phone / tablet: bordered card, four columns, icon above label */}
-              <ul className={`relative mt-6 grid grid-cols-4 py-4 lg:hidden ${card}`}>
+              <ul className={`relative mt-3 grid grid-cols-4 py-4 md:mt-6 lg:hidden ${card}`}>
                 {badges.map((badge, index) => (
                   <li key={index} className="relative flex flex-col items-center gap-2 px-1 text-center">
                     {index ? <span aria-hidden="true" className="absolute left-0 top-1/2 h-[70%] w-px -translate-y-1/2 bg-[var(--color-v-border)]" /> : null}
-                    <VIcon name={badge.icon} solid className={`h-8 w-8 ${badgeIcon(badge.icon)}`} />
+                    <VIcon name={badge.icon} solid className={`h-8 w-8 ${badgeIcon(index)}`} />
                     <span className="t-label leading-[1.3] text-[var(--color-v-text)]">
                       {badge.lines.map((line) => (
                         <span key={line} className="block">{line}</span>

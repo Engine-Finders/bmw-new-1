@@ -153,7 +153,11 @@ export default function Overview({ data }) {
 
   // Phones and tablets follow the phone design (sizes are its px ÷ 10.24, the design being 1024px wide),
   // capped at the desktop sizes so tablets never outgrow the desktop layout.
-  const factCols = facts.length === 4 ? "grid-cols-[260fr_199fr_175fr_306fr] xl:grid-cols-[minmax(0,1.2fr)_minmax(0,1.1fr)_minmax(0,1fr)_minmax(0,1.25fr)]" : "grid-flow-col auto-cols-fr";
+  // Phones: key facts two to a row (four across squeezes the labels into each other); tablets up: one row.
+  const factCols =
+    facts.length === 4
+      ? "grid-cols-2 gap-y-4 md:gap-y-0 md:grid-cols-[260fr_199fr_175fr_306fr] xl:grid-cols-[minmax(0,1.2fr)_minmax(0,1.1fr)_minmax(0,1fr)_minmax(0,1.25fr)]"
+      : "grid-cols-2 gap-y-4 md:grid-flow-col md:auto-cols-fr md:grid-cols-none md:gap-y-0";
 
   return (
     <section style={vars} className={`relative w-full overflow-hidden bg-[var(--ov-bg)] text-[var(--ov-text)] ${sectionFont.className}`}>
@@ -190,15 +194,15 @@ export default function Overview({ data }) {
       <div className="site-container relative max-xl:px-[5.86vw] xl:grid xl:grid-cols-[minmax(0,1fr)_755px] xl:gap-4 xl:pb-10 xl:pt-5">
         <div aria-hidden="true" className="hidden xl:block" />
         <div className="min-w-0 pb-[4vw] xl:pb-0">
-          <p className="mt-[2.6vw] text-[min(2.05vw,15px)] font-medium uppercase tracking-[0.03em] text-[var(--ov-blue)] xl:mt-0 xl:text-[15px]">
+          <p className="mt-[2.6vw] text-[clamp(14px,2.05vw,15px)] font-medium uppercase tracking-[0.03em] text-[var(--ov-blue)] xl:mt-0 xl:text-[15px]">
             {UI.eyebrow}
           </p>
           <h2
-            className={`t-h2 mt-[1.5vw] font-bold tracking-[-0.02em] max-xl:text-[min(5.86vw,var(--fs-h2))] max-xl:leading-[1.15] xl:mt-2 xl:text-[46px] xl:leading-[1.15] ${HTML}`}
+            className={`t-h2 mt-[1.5vw] font-bold tracking-[-0.02em] max-xl:text-[max(26px,min(5.86vw,var(--fs-h2)))] max-xl:leading-[1.15] xl:mt-2 xl:text-[46px] xl:leading-[1.15] ${HTML}`}
             dangerouslySetInnerHTML={{ __html: dash(data.h2) }}
           />
           {paragraphs.length ? (
-            <div className={`mt-[2.2vw] flex max-w-[77vw] flex-col gap-[min(2.2vw,14px)] text-[min(2.44vw,18px)] leading-[1.48] text-[var(--ov-muted)] xl:mt-4 xl:max-w-none xl:gap-3 xl:text-[17px] xl:leading-[1.35] ${HTML}`}>
+            <div className={`mt-[2.2vw] flex max-w-[77vw] flex-col gap-[min(2.2vw,14px)] text-[clamp(16px,2.44vw,18px)] leading-[1.48] text-[var(--ov-muted)] xl:mt-4 xl:max-w-none xl:gap-3 xl:text-[17px] xl:leading-[1.35] ${HTML}`}>
               {paragraphs.map((html, index) => (
                 <p key={index} dangerouslySetInnerHTML={{ __html: html }} />
               ))}
@@ -207,22 +211,22 @@ export default function Overview({ data }) {
 
           {facts.length ? (
             <div className="-mx-[1.76vw] mt-[3vw] rounded-[min(2.1vw,14px)] border border-[var(--ov-line)] bg-[var(--ov-card)] px-[3.1vw] pb-[2.6vw] pt-[3vw] [box-shadow:var(--ov-shadow)] xl:mx-0 xl:mt-5 xl:rounded-[14px] xl:px-7 xl:pb-5 xl:pt-5">
-              <p className="text-[min(2.05vw,15px)] font-medium uppercase tracking-[0.03em] text-[var(--ov-blue)] xl:text-[14px]">{UI.keyFacts}</p>
+              <p className="text-[clamp(14px,2.05vw,15px)] font-medium uppercase tracking-[0.03em] text-[var(--ov-blue)] xl:text-[14px]">{UI.keyFacts}</p>
               <ul className={`mt-[2vw] grid ${factCols} xl:mt-3`}>
                 {facts.map((fact, index) => (
                   <li
                     key={`${fact.label}-${index}`}
                     className={`flex min-w-0 flex-col items-center px-[1.2vw] text-center xl:flex-row xl:items-center xl:gap-2 xl:px-3 xl:text-left xl:first:pl-0 ${
-                      index ? "border-l border-[var(--ov-line)]" : ""
+                      index % 2 ? "border-l border-[var(--ov-line)]" : index ? "border-[var(--ov-line)] md:border-l" : ""
                     }`}
                   >
                     <span className="text-[var(--ov-blue)] [[data-theme=dark]_&]:xl:text-white">
                       <Icon name={factIcon(fact.label)} className="h-[min(5.9vw,44px)] w-[min(5.9vw,44px)] shrink-0 xl:h-[30px] xl:w-[30px]" />
                     </span>
                     <span className="min-w-0">
-                      <span className="mt-[1.4vw] block text-[min(2.15vw,16px)] font-semibold leading-[1.3] xl:mt-0 xl:text-[15px]">{titleCase(fact.label)}</span>
+                      <span className="mt-[1.4vw] block text-[clamp(15px,2.15vw,16px)] font-semibold leading-[1.3] xl:mt-0 xl:text-[15px]">{titleCase(fact.label)}</span>
                       <span
-                        className={`mt-[0.8vw] block text-[min(1.95vw,15px)] leading-[1.45] text-[var(--ov-muted)] xl:mt-0.5 xl:text-[14px] xl:leading-[1.35] ${HTML}`}
+                        className={`mt-[0.8vw] block text-[clamp(14px,1.95vw,15px)] leading-[1.45] text-[var(--ov-muted)] xl:mt-0.5 xl:text-[14px] xl:leading-[1.35] ${HTML}`}
                         dangerouslySetInnerHTML={{ __html: dash(fact.value) }}
                       />
                     </span>
@@ -236,9 +240,9 @@ export default function Overview({ data }) {
             <div className="-mx-[1.76vw] mt-[1.6vw] flex items-center gap-[3.4vw] rounded-[min(2.1vw,14px)] border border-[var(--ov-line)] bg-[var(--ov-card)] px-[2.7vw] py-[2.6vw] [box-shadow:var(--ov-shadow)] xl:mx-0 xl:mt-3 xl:gap-4 xl:rounded-[14px] xl:px-4 xl:py-4">
               <TargetBadge className="h-[min(10.35vw,56px)] w-[min(10.35vw,56px)] shrink-0 xl:h-[46px] xl:w-[46px]" />
               <div className="min-w-0">
-                <p className="text-[min(2.05vw,15px)] font-medium uppercase tracking-[0.03em] text-[var(--ov-blue)] xl:text-[14px]">{UI.marketIntelligence}</p>
-                <p className="mt-[0.6vw] text-[min(2.25vw,17px)] leading-[1.5] xl:mt-1 xl:text-[17px] xl:leading-[1.45]">
-                  <MarketLine text={dash(data.marketIntelligenceLine)} figureClass="text-[min(3.1vw,24px)] xl:text-[22px]" />
+                <p className="text-[clamp(14px,2.05vw,15px)] font-medium uppercase tracking-[0.03em] text-[var(--ov-blue)] xl:text-[14px]">{UI.marketIntelligence}</p>
+                <p className="mt-[0.6vw] text-[clamp(15px,2.25vw,17px)] leading-[1.5] xl:mt-1 xl:text-[17px] xl:leading-[1.45]">
+                  <MarketLine text={dash(data.marketIntelligenceLine)} figureClass="text-[clamp(16px,3.1vw,24px)] xl:text-[22px]" />
                 </p>
               </div>
             </div>
