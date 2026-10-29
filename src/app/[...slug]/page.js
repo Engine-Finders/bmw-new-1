@@ -19,6 +19,7 @@ import FAQAccordion from "@/components/models/FAQAccordion";
 import ClosingActionCards from "@/components/models/ClosingActionCards";
 import { withGenerationPageImages, withModelPageImages, withVariantPageImages } from "@/components/shared/pageCarImages";
 import { withReferenceSections } from "@/components/models/referenceAdapter";
+import { resolveSeoImage, sanitizeJsonLd } from "@/lib/seoAssets";
 
 import GenHero from "@/components/generation/ModelHero";
 import GenEngineDatabase from "@/components/generation/EngineDatabase";
@@ -132,6 +133,9 @@ export async function generateMetadata({ params }) {
   const hasOg = og && (og.title || og.description || og.url || og.image || og.siteName || og.type);
   const canonical = meta.canonical || `https://bmwengines.uk/${slugSegments.join("/")}`;
 
+  const ogImage = og?.image ? resolveSeoImage(og.image) : undefined;
+  const twitterImage = meta.twitter?.image ? resolveSeoImage(meta.twitter.image) : undefined;
+
   return {
     title: meta.title || undefined,
     description: meta.description || undefined,
@@ -142,7 +146,7 @@ export async function generateMetadata({ params }) {
           description: og.description || undefined,
           type: og.type || "website",
           url: og.url || undefined,
-          images: og.image ? [og.image] : undefined,
+          images: ogImage ? [ogImage] : undefined,
           siteName: og.siteName || undefined,
         }
       : undefined,
@@ -151,7 +155,7 @@ export async function generateMetadata({ params }) {
           card: meta.twitter.card || undefined,
           title: meta.twitter.title || undefined,
           description: meta.twitter.description || undefined,
-          images: meta.twitter.image ? [meta.twitter.image] : undefined,
+          images: twitterImage ? [twitterImage] : undefined,
         }
       : undefined,
   };
@@ -178,7 +182,7 @@ export default async function CatchAllPage({ params }) {
         {data.meta?.jsonLd && (
           <script
             type="application/ld+json"
-            dangerouslySetInnerHTML={{ __html: JSON.stringify(data.meta.jsonLd) }}
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(sanitizeJsonLd(data.meta.jsonLd)) }}
           />
         )}
         <ModelHero data={data.hero} />
@@ -206,7 +210,7 @@ export default async function CatchAllPage({ params }) {
         {data.meta?.jsonLd && (
           <script
             type="application/ld+json"
-            dangerouslySetInnerHTML={{ __html: JSON.stringify(data.meta.jsonLd) }}
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(sanitizeJsonLd(data.meta.jsonLd)) }}
           />
         )}
         <GenHero data={data.hero} />
@@ -234,7 +238,7 @@ export default async function CatchAllPage({ params }) {
         {data.meta?.jsonLd && (
           <script
             type="application/ld+json"
-            dangerouslySetInnerHTML={{ __html: JSON.stringify(data.meta.jsonLd) }}
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(sanitizeJsonLd(data.meta.jsonLd)) }}
           />
         )}
         <VariantHero data={data.hero} />

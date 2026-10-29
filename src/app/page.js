@@ -41,6 +41,7 @@ export function generateMetadata() {
       siteName: "BMWEngines.uk",
       locale: "en_GB",
       type: "website",
+      images: ["https://bmwengines.uk/hero-day.webp"],
     },
   };
 }
