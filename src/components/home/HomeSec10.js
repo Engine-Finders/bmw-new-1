@@ -179,7 +179,8 @@ function Desktop({ data, isDark }) {
           </div>
         </div>
 
-        <div className="mt-6 grid grid-cols-3 gap-4">
+        {/* Three across from 1280px; at 1024–1279 two across, so the four-column tables keep readable cells. */}
+        <div className="mt-6 grid grid-cols-2 gap-4 xl:grid-cols-3">
           {/* Engines */}
           <div className={cardCls} style={cardStyle}>
             <CardHead title={data.engines.title} icon={data.engines.icon} C={C} />

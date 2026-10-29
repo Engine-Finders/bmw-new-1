@@ -41,6 +41,26 @@ const METRIC_ROWS = [
   { key: "labourHours", label: "Labour Hours", icon: "clock" },
 ];
 
+const plain = (value) => String(value ?? "").replace(/<[^>]+>/g, "").trim();
+
+/**
+ * Petrol / diesel for the phone tables. Most rows carry no fuelType, so it is read from the BMW engine code
+ * (4th character D = diesel: N47D20, B57D30) and, failing that, from the badge (320d, 330i, 330e, M3).
+ * Anything still unknown goes to its own table rather than being dropped.
+ */
+function fuelOf(row) {
+  const declared = plain(row.fuelType).toLowerCase();
+  if (declared === "petrol" || declared === "diesel") return declared;
+  const code = plain(row.engineCode);
+  const letter = code.match(/^[A-Z]\d{2}\s?([A-Z])/)?.[1];
+  if (letter) return letter === "D" ? "diesel" : "petrol";
+  if (/phev|hybrid/i.test(code)) return "petrol";
+  const variant = plain(row.variant);
+  if (/\b\d{2,3}d\b|\d{2}d\b|diesel/i.test(variant)) return "diesel";
+  if (/\b\d{2,3}[ie]\b|\d{2}i\b|\bM\d|CSi|petrol|competition/i.test(variant) || /^[MS]\d{2}/.test(code)) return "petrol";
+  return "other";
+}
+
 function FuelTable({ title, icon, rows, isDark, tone }) {
   if (!rows?.length) return null;
 
@@ -51,7 +71,7 @@ function FuelTable({ title, icon, rows, isDark, tone }) {
   const rowText = isDark ? "text-white" : "text-[var(--color-text)]";
   const mutedText = isDark ? "text-white/70" : "text-[var(--color-text-muted)]";
   const labelBg = isDark ? "bg-white/[0.03]" : "bg-[var(--color-page-soft)]";
-  const gridCols = `120px repeat(${rows.length}, 130px)`;
+  const gridCols = `150px repeat(${rows.length}, 130px)`;
 
   return (
     <div className={`overflow-hidden rounded-md border ${cellDivider} ${rowBg} shadow-[0_14px_40px_var(--color-shadow)] backdrop-blur`}>
@@ -61,7 +81,7 @@ function FuelTable({ title, icon, rows, isDark, tone }) {
       </div>
 
       <div className="overflow-x-auto">
-        <div style={{ minWidth: `calc(120px + ${rows.length} * 130px)` }}>
+        <div style={{ minWidth: `calc(150px + ${rows.length} * 130px)` }}>
           <div className={`grid border-b ${cellDivider}`} style={{ gridTemplateColumns: gridCols }}>
             <div className={labelBg} />
             {rows.map((row, index) => (
@@ -97,8 +117,8 @@ function FuelTable({ title, icon, rows, isDark, tone }) {
               className={`grid ${metricIndex === METRIC_ROWS.length - 1 ? "" : `border-b ${cellDivider}`}`}
               style={{ gridTemplateColumns: gridCols }}
             >
-              <div className={`lg:text-[15px] flex items-center gap-1.5 border-r px-2 py-3 text-[13px] font-semibold uppercase tracking-wide ${cellDivider} ${labelBg} ${mutedText}`}>
-                <GenIcon name={metric.icon} className="h-7 w-7 md:h-5 md:w-5 shrink-0" />
+              <div className={`lg:text-[15px] flex min-w-0 items-center gap-1.5 border-r px-2 py-3 text-[13px] font-semibold uppercase leading-tight tracking-wide [overflow-wrap:anywhere] ${cellDivider} ${labelBg} ${mutedText}`}>
+                <GenIcon name={metric.icon} className="h-5 w-5 shrink-0" />
                 {metric.label}
               </div>
               {rows.map((row, index) => (
@@ -127,8 +147,11 @@ export default function ReplacementCosts({ data }) {
   const headerDivider = isDark ? "border-[var(--color-page)]/20" : "border-white/25";
   const bodyWrapperBg = isDark ? "bg-[var(--color-primary)]" : "bg-[var(--color-table-surface)]";
 
-  const petrolRows = data.rows?.filter((row) => row.fuelType === "petrol") || [];
-  const dieselRows = data.rows?.filter((row) => row.fuelType === "diesel") || [];
+  const rows = data.rows || [];
+  if (!rows.length) return null;
+  const petrolRows = rows.filter((row) => fuelOf(row) === "petrol");
+  const dieselRows = rows.filter((row) => fuelOf(row) === "diesel");
+  const otherRows = rows.filter((row) => fuelOf(row) === "other");
 
   return (
     <section className={`w-full overflow-x-hidden text-[var(--color-text)] ${sectionBg}`}>
@@ -154,6 +177,7 @@ export default function ReplacementCosts({ data }) {
         <div className="flex flex-col gap-3 md:hidden">
           <FuelTable title="Petrol Engines" icon="fuel" rows={petrolRows} isDark={isDark} tone="petrol" />
           <FuelTable title="Diesel Engines" icon="diesel" rows={dieselRows} isDark={isDark} tone="diesel" />
+          <FuelTable title="Other Engines" icon="engine" rows={otherRows} isDark={isDark} tone="petrol" />
         </div>
 
         {data.trustStrip?.length > 0 ? (

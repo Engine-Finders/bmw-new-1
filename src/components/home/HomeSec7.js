@@ -217,7 +217,7 @@ function Phone({ data, isDark }) {
                 <span>
                   <MobileLabel color={C.tag}>{data.columns[3].replace(/^\d{4}\s/, "")}</MobileLabel>
                   <span className="mt-1 block text-[16px] font-bold" style={{ color: C.enq }}>{e.enquiries.replace(/ enquiries$/, "")}</span>
-                  <span className="block whitespace-nowrap text-[12px]" style={{ color: C.tag }}>{e.sourceTag}</span>
+                  <span className="block whitespace-nowrap text-[13px]" style={{ color: C.tag }}>{e.sourceTag}</span>
                 </span>
               </span>
               <span className="mt-3 flex items-start gap-2 text-[16px] leading-[1.55]" style={{ color: C.vt }}>

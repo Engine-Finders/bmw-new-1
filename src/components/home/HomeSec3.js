@@ -378,7 +378,7 @@ function SymptomTiles({ tiles, selectedId, onSelect, isDark, phone = false }) {
             key={tile.id}
             type="button"
             onClick={() => onSelect(tile.id)}
-            className={`flex flex-col items-center rounded-[6px] border text-center transition ${phone ? "px-1.5 pb-3 pt-3.5" : "px-2 pb-3 pt-4"} ${
+            className={`flex min-w-0 flex-col items-center rounded-[6px] border text-center transition ${phone ? "px-1.5 pb-3 pt-3.5" : "px-2 pb-3 pt-4"} ${
               lastAlone ? "col-start-2" : ""
             } ${
               active
@@ -391,7 +391,8 @@ function SymptomTiles({ tiles, selectedId, onSelect, isDark, phone = false }) {
             <span className={isDark && !active ? "text-[#3b82f6]" : "text-[#0b4fc0]"}>
               <Icon name={tile.icon} className={phone ? "h-11 w-11" : "h-12 w-12"} />
             </span>
-            <span className={`mt-2.5 leading-[1.35] ${phone ? "text-[14px]" : "t-label"} ${active ? "text-[#0b1626]" : strong}`}>{tile.label}</span>
+            {/* Long words ("Performance", "Consumption") break inside the tile instead of running into the next one at 1024px. */}
+            <span className={`mt-2.5 max-w-full leading-[1.35] [overflow-wrap:anywhere] [hyphens:auto] ${phone ? "text-[14px]" : "t-label"} ${active ? "text-[#0b1626]" : strong}`}>{tile.label}</span>
             {!phone ? <Chevron className={`mt-auto h-4 w-4 pt-1 ${active ? "text-[#0b1626]" : strong}`} /> : null}
           </button>
         );

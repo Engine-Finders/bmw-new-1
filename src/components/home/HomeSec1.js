@@ -184,7 +184,7 @@ function MobileHero({ data, isDark }) {
                 <BrandIcon name={item.icon} className="h-5 w-5" scale={1} />
               </span>
               <span className={`mt-1 text-[15px] font-bold uppercase leading-tight ${text}`}>{item.value}</span>
-              <span className={`mt-0.5 text-[12px] uppercase leading-[1.25] ${muted}`}>{item.label}</span>
+              <span className={`mt-0.5 text-[13px] uppercase leading-[1.25] ${muted}`}>{item.label}</span>
             </li>
           ))}
         </ul>
@@ -202,14 +202,14 @@ function MobileHero({ data, isDark }) {
           </span>
           <span className="min-w-0 flex-1">
             <span className="block text-[15px] font-semibold tracking-[0.08em]">{data.cta.label}</span>
-            <span className="mt-0.5 block text-[11px] leading-[1.35] tracking-[0.02em] text-white/85">{data.cta.tagline}</span>
+            <span className="mt-0.5 block text-[13px] leading-[1.35] tracking-[0.02em] text-white/85">{data.cta.tagline}</span>
           </span>
           <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-black/40">
             <Arrow className="h-5 w-5" />
           </span>
         </Link>
 
-        <div className={`mt-3 flex flex-wrap items-center justify-center gap-x-1.5 gap-y-1 text-[11px] ${isDark ? "text-white/70" : "text-[#3b4656]"}`}>
+        <div className={`mt-3 flex flex-wrap items-center justify-center gap-x-1.5 gap-y-1 text-[13px] ${isDark ? "text-white/70" : "text-[#3b4656]"}`}>
           <svg aria-hidden="true" viewBox="0 0 24 24" className="h-3 w-3" fill="currentColor">
             <path d="M7 10V7a5 5 0 0 1 10 0v3h1a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1v-9a1 1 0 0 1 1-1h1Zm2 0h6V7a3 3 0 0 0-6 0v3Z" />
           </svg>

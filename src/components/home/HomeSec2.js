@@ -154,9 +154,10 @@ export default function HomeSec2({ data }) {
       {/* Phone */}
       <div className="relative px-4 pb-8 pt-8 md:hidden">
         {/* Reference: large white/black grille top right, bleeding off the edge behind the heading. */}
-        <GrilleImage src={isDark ? data.headerImage.dark : data.headerImage.light} className="-right-2 top-0 h-[190px] w-[50%]" fadeStart="78%" position="object-cover object-[22%_70%]" />
-        <div className="relative max-w-[62%]">
-          <p className={`t-h2 ${heading}`} dangerouslySetInnerHTML={{ __html: data.h2 }} />
+        {/* The grille sits beside the heading only; the intro runs full width below it, clear of the car. */}
+        <GrilleImage src={isDark ? data.headerImage.dark : data.headerImage.light} className="-right-2 top-0 h-[124px] w-[46%]" fadeStart="62%" position="object-cover object-[22%_70%]" />
+        <div className="relative">
+          <p className={`t-h2 max-w-[56%] ${heading}`} dangerouslySetInnerHTML={{ __html: data.h2 }} />
           <p className={`t-body mt-3 ${muted}`}>{data.subHeadline}</p>
         </div>
 

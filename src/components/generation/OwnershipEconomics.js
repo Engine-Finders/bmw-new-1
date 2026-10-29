@@ -89,7 +89,8 @@ function DesktopRow({ row, isDark }) {
   );
 }
 
-const MOBILE_COLS = "grid-cols-[98px_98px_140px_110px_120px_220px]";
+// Engine column wide enough for "N47D20C (116d/118d/120d)"; long codes wrap inside it instead of running into the mileage.
+const MOBILE_COLS = "grid-cols-[130px_96px_140px_120px_130px_220px]";
 
 function MobileRow({ row, isDark }) {
   const rowClass = isDark
@@ -103,11 +104,11 @@ function MobileRow({ row, isDark }) {
     <div
       className={`lg:text-[15px] grid ${MOBILE_COLS} items-center gap-px ${rowClass} border-b px-3 py-3 text-[14px] leading-[1.3] ${borderBottom} last:border-b-0`}
     >
-      <span className={`border-r pr-4 pl-2 font-semibold ${cellDivider}`} dangerouslySetInnerHTML={{ __html: row.engine }} />
-      <span className={`border-r pr-2 pl-4 ${mutedText} ${cellDivider}`} dangerouslySetInnerHTML={{ __html: row.typicalMileage }} />
-      <span className={`border-r px-3 ${mutedText} ${cellDivider}`} dangerouslySetInnerHTML={{ __html: row.commonMajorFailure }} />
-      <span className={`border-r px-3 ${mutedText} ${cellDivider}`} dangerouslySetInnerHTML={{ __html: row.repairCostSpecialist }} />
-      <span className={`border-r px-3 font-semibold ${cellDivider}`} dangerouslySetInnerHTML={{ __html: row.replacementCostRecon }} />
+      <span className={`min-w-0 border-r pr-3 pl-2 font-semibold [overflow-wrap:anywhere] ${cellDivider}`} dangerouslySetInnerHTML={{ __html: row.engine }} />
+      <span className={`min-w-0 border-r pr-2 pl-3 ${mutedText} ${cellDivider}`} dangerouslySetInnerHTML={{ __html: row.typicalMileage }} />
+      <span className={`min-w-0 border-r px-3 ${mutedText} ${cellDivider}`} dangerouslySetInnerHTML={{ __html: row.commonMajorFailure }} />
+      <span className={`min-w-0 border-r px-3 ${mutedText} ${cellDivider}`} dangerouslySetInnerHTML={{ __html: row.repairCostSpecialist }} />
+      <span className={`min-w-0 border-r px-3 font-semibold ${cellDivider}`} dangerouslySetInnerHTML={{ __html: row.replacementCostRecon }} />
       <div className="pl-3">
         <VerdictPill verdictType={row.verdictType} text={row.ownershipVerdict} isDark={isDark} />
       </div>
@@ -165,17 +166,17 @@ export default function OwnershipEconomics({ data }) {
         </div>
 
         <div className="overflow-x-auto rounded-md border border-[var(--color-border)] bg-[var(--color-table-surface)] shadow-[0_14px_40px_var(--color-shadow)] backdrop-blur md:hidden">
-          <div className="min-w-[850px]">
+          <div className="min-w-[880px]">
             <div className={`lg:text-[15px] grid ${MOBILE_COLS} gap-px ${headerBg} px-3 py-2.5 text-[13px] font-semibold leading-[1.2]`}>
               {data.columns?.map((col, index) => (
                 <span
                   key={col}
-                  className={`flex items-center gap-1.5 border-r last:border-r-0 ${
-                    index === 0 ? "pr-4 pl-2" : index === 1 ? "pr-2 pl-4" : "px-3"
+                  className={`flex min-w-0 items-center gap-1.5 border-r last:border-r-0 ${
+                    index === 0 ? "pr-3 pl-2" : index === 1 ? "pr-2 pl-3" : "px-3"
                   } ${headerDivider}`}
                 >
-                  <GenIcon name={COLUMN_ICONS[index]} inverted className="h-7 w-7 md:h-5 md:w-5 shrink-0" />
-                  {col}
+                  <GenIcon name={COLUMN_ICONS[index]} inverted className="h-5 w-5 shrink-0" />
+                  <span className="min-w-0">{col}</span>
                 </span>
               ))}
             </div>

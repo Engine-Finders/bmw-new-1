@@ -51,7 +51,15 @@ function LearnMore({ link, className }) {
 function Photo({ problem }) {
   return (
     <div className={`${s.photo} ${problem.partPhoto ? s.partPhoto : ""}`}>
-      {problem.image ? <Image src={problem.image} alt="" fill className={s.photoImg} sizes="(min-width: 1024px) 13vw, 24vw" /> : null}
+      {problem.image ? (
+        <Image src={problem.image} alt="" fill className={s.photoImg} sizes="(min-width: 1024px) 13vw, 24vw" />
+      ) : (
+        // No part photo for this problem: an engine glyph, so the slot never reads as a broken image.
+        <svg aria-hidden="true" viewBox="0 0 24 24" className={s.photoEmpty}>
+          <path d="M6 9h3V7h6v2h2l2 2v1.5h1.5v3H19V17h-3l-1.5 1.5H8.5L6 16H4.5v-2.5H3V11h1.5V9z" fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinejoin="round" />
+          <circle cx="12" cy="13" r="2.2" fill="none" stroke="currentColor" strokeWidth="1.4" />
+        </svg>
+      )}
       <span className={s.num}>{problem.number || String(problem.id).padStart(2, "0")}</span>
     </div>
   );
