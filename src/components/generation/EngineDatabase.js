@@ -20,37 +20,44 @@ const MOBILE_COLS = "grid-cols-[minmax(104px,1.2fr)_minmax(96px,1.1fr)_minmax(76
 // Colours sampled from the designs (light / dark).
 const TONES = {
   light: {
-    "--db-bg": "#f6f8fb",
+    "--db-bg": "#fafcfe",
+    "--db-bg-end": "#fafcfe",
     "--db-card": "#ffffff",
     "--db-head": "#ffffff",
-    "--db-line": "#e6eaf0",
+    "--db-line": "#edf0f4",
+    "--db-border": "#e6eaf0",
     "--db-text": "#0b1726",
     "--db-muted": "#4a5565",
     "--db-soft": "#6b7685",
-    "--db-blue": "#0a5bd3",
-    "--db-code": "#0a5bd3",
-    "--db-green": "#1d8a3f",
-    "--db-green-bg": "rgba(29,138,63,0.08)",
-    "--db-pill": "rgba(10,91,211,0.08)",
-    "--db-pill-text": "#0a5bd3",
+    "--db-blue": "#0a52cc",
+    "--db-code": "#0a52cc",
+    "--db-green": "#2f8a1e",
+    "--db-green-bg": "rgba(47,138,30,0.08)",
+    "--db-pill": "rgba(10,82,204,0.08)",
+    "--db-pill-text": "#0a52cc",
     "--db-amber": "#b86e00",
+    "--db-chevron": "#9aa4b2",
     "--db-shadow": "0 12px 32px rgba(10,26,43,0.07)",
   },
+  // Deep navy that turns bluer towards the bottom of the section, as in the dark designs.
   dark: {
-    "--db-bg": "#0b1826",
-    "--db-card": "rgba(12,27,45,0.88)",
-    "--db-head": "rgba(255,255,255,0.03)",
-    "--db-line": "rgba(255,255,255,0.1)",
+    "--db-bg": "#000e1f",
+    "--db-bg-end": "#032a62",
+    "--db-card": "#021324",
+    "--db-head": "#051b36",
+    "--db-line": "#24323f",
+    "--db-border": "#34465c",
     "--db-text": "#ffffff",
     "--db-muted": "rgba(255,255,255,0.86)",
     "--db-soft": "rgba(255,255,255,0.7)",
-    "--db-blue": "#4d9bff",
+    "--db-blue": "#3b8ff0",
     "--db-code": "#ffffff",
-    "--db-green": "#4cc46f",
-    "--db-green-bg": "rgba(76,196,111,0.1)",
+    "--db-green": "#78d454",
+    "--db-green-bg": "rgba(120,212,84,0.1)",
     "--db-pill": "#123a73",
-    "--db-pill-text": "#9cc8ff",
+    "--db-pill-text": "#9cc2f9",
     "--db-amber": "#f5a524",
+    "--db-chevron": "#b3bdca",
     "--db-shadow": "0 12px 32px rgba(0,0,0,0.35)",
   },
 };
@@ -59,6 +66,15 @@ const HTML = "[&_a]:[font-weight:inherit] [&_a]:text-inherit hover:[&_a]:underli
 
 function dash(value = "") {
   return String(value ?? "").replace(/\s+-\s*(?=\S)/g, " — ");
+}
+
+// Hyphenated words ("BMW-VERIFIED", "pattern-data-tier") never split at the hyphen, as in the designs.
+// Only text between tags is touched, so link URLs keep their hyphens.
+function keepHyphens(html = "") {
+  return String(html)
+    .split(/(<[^>]+>)/)
+    .map((part) => (part.startsWith("<") ? part : part.replace(/(\w)-(?=\w)/g, "$1\u2011")))
+    .join("");
 }
 
 function Html({ html, className = "" }) {
@@ -71,11 +87,11 @@ function splitParen(value = "") {
   return match && match[1] ? { main: match[1], sub: match[2] } : { main: String(value), sub: "" };
 }
 
-// "Petrol, twin-turbo" -> "Petrol" + "Twin-turbo".
+// "Petrol, twin-turbo" -> "Petrol" + "Twin-turbo". "Petrol/Electric" may break after the slash.
 function splitFuel(value = "") {
   const [main, ...rest] = String(value).split(",");
   const sub = rest.join(",").trim();
-  return { main: main.trim(), sub: sub ? sub[0].toUpperCase() + sub.slice(1) : "" };
+  return { main: main.trim().replace(/\//g, "/\u200b"), sub: sub ? sub[0].toUpperCase() + sub.slice(1) : "" };
 }
 
 // Trailing "[BMW-QUOTE]" / "[PLACEHOLDER -confirm vs cost sheet]" -> value + short tag.
@@ -96,6 +112,10 @@ function splitEnquiries(value = "") {
   if (figure) return { figure: figure[1], note: [figure[2], rest].filter(Boolean).join(" "), tag };
   return { figure: "", note: [main, rest].filter(Boolean).join(" "), tag };
 }
+
+// A single price range ("£1,800–£3,500") stays on one line; anything longer ("N/A — EV battery replacement",
+// "£1,200–£1,600 used; £2,…") wraps inside its cell.
+const isPrice = (text = "") => /^[£$€\d]/.test(String(text).trim()) && String(text).trim().length <= 16;
 
 const tagTone = (tag = "") => (/VERIFIED/i.test(tag) ? "text-[var(--db-green)]" : /PATTERN/i.test(tag) ? "text-[var(--db-soft)]" : "text-[var(--db-blue)]");
 
@@ -166,6 +186,15 @@ function ShieldBadge({ className }) {
       <path d="M32 2 60 12v22c0 18-12 30-28 36C16 64 4 52 4 34V12z" fill={`url(#${id}-rim)`} />
       <path d="M32 8 54 16v18c0 14.5-9.5 24.5-22 29.5C19.5 58.5 10 48.5 10 34V16z" fill={`url(#${id}-fill)`} />
       <path d="m21 36 8 8 15-16" fill="none" stroke="#fff" strokeWidth="5.5" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+  );
+}
+
+// Row chevron, its viewBox cropped to the glyph so the class sets the drawn size.
+function Chevron({ className }) {
+  return (
+    <svg viewBox="7.5 4.5 9 15" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={`shrink-0 text-[var(--db-chevron)] ${className}`} aria-hidden="true">
+      <path d="m9 6 6 6-6 6" />
     </svg>
   );
 }
@@ -247,7 +276,7 @@ function Cost({ value, phone }) {
   const { main, tag, rest } = splitTag(dash(value));
   return (
     <span className="flex min-w-0 flex-col items-center text-center leading-tight">
-      <Html html={[main, rest].filter(Boolean).join(" ") || "—"} className={`whitespace-nowrap font-medium text-[var(--db-text)] ${phone ? "text-[14px] tracking-[-0.01em] lg:text-[15px]" : "text-[16px]"}`} />
+      <Html html={[main, rest].filter(Boolean).join(" ") || "—"} className={`${isPrice(main) ? "whitespace-nowrap" : ""} font-medium text-[var(--db-text)] ${phone ? "text-[14px] tracking-[-0.01em] lg:text-[15px]" : "text-[16px]"}`} />
       {tag ? <span className={`mt-1 ${tagTone(tag)} ${phone ? "text-[11px] md:text-[13px] lg:text-[14px]" : "text-[14px]"}`}>[{tag}]</span> : null}
     </span>
   );
@@ -272,7 +301,7 @@ function FuelCell({ fuel, phone }) {
   return (
     <span className="flex min-w-0 items-center gap-1.5">
       <FuelIcon fuel={fuel} className={`shrink-0 ${phone ? "h-5 w-5" : "h-[22px] w-[22px]"}`} />
-      <Stack main={main} sub={sub} subClass={phone ? "text-[13px] md:text-[13px] lg:text-[14px] leading-tight" : "text-[14px] leading-tight"} className={phone ? "text-[14px]" : ""} />
+      <Stack main={main} sub={sub} subClass={phone ? "text-[11px] md:text-[13px] lg:text-[14px] leading-tight" : "whitespace-nowrap text-[14px] leading-tight"} className={phone ? "text-[14px]" : ""} />
     </span>
   );
 }
@@ -281,7 +310,7 @@ const cell = "flex min-w-0 items-center border-l border-[var(--db-line)] first:b
 
 function DesktopTable({ engines, columns }) {
   return (
-    <div className="hidden overflow-hidden rounded-[12px] border border-[var(--db-line)] bg-[var(--db-card)] [box-shadow:var(--db-shadow)] min-[1440px]:block">
+    <div className="hidden overflow-hidden rounded-[12px] border border-[var(--db-border)] bg-[var(--db-card)] [box-shadow:var(--db-shadow)] min-[1440px]:block">
       <div className={`grid ${DESKTOP_COLS} border-b border-[var(--db-line)] bg-[var(--db-head)]`}>
         {columns.map((label, index) => (
           <span
@@ -314,93 +343,194 @@ function DesktopTable({ engines, columns }) {
   );
 }
 
-// Laptops (1024–1439px): the phone design's seven columns at fixed desktop sizes.
-// Phones and tablets (below 1024px): the phone design's seven columns at fixed, readable sizes. The table keeps a
-// 680px minimum and scrolls sideways on narrow phones instead of shrinking its text.
-function PhoneTable({ engines }) {
-  const head = "flex min-w-0 items-center justify-center border-l border-[var(--db-line)] first:border-l-0 px-[5.5px] py-[9.5px] text-center text-[14px] leading-[1.25] text-[var(--db-text)]";
-  const td = "flex min-w-0 items-center justify-center border-l border-[var(--db-line)] py-[16.5px] text-center";
+// Phones (below 768px): one compact card per engine with every field of the phone design's seven columns at
+// readable sizes (14.5–16px values, 12–12.5px labels), since seven columns only fit a phone screen at ~9px type.
+function PhoneCards({ engines }) {
+  const [, , powerLabel, yearsLabel, reliabilityLabel, enquiriesLabel, costLabel] = UI.mobileColumns;
+  const field = "min-w-0 px-3 py-3";
+  const label = "block text-[12.5px] leading-tight text-[var(--db-muted)]";
   return (
-    // Inter runs wider than the design's face, so the table is set a touch tighter to keep the design's line breaks.
-    <div className="mx-[2.1vw] overflow-x-auto overscroll-x-contain rounded-[11px] border border-[var(--db-line)] bg-[var(--db-card)] tracking-[-0.02em] [box-shadow:var(--db-shadow)] md:mx-[calc(2.1vw-var(--gutter))] md:rounded-[12px] lg:hidden">
-      <div className="min-w-[680px]">
-        <div className={`grid ${PHONE_COLS} min-h-[41px] border-b border-[var(--db-line)]`}>
-          {UI.mobileColumns.map((label, index) => (
-            <span key={label} className={`${head} ${index === 0 ? "justify-start whitespace-nowrap pl-[12px] pr-[2.5px] text-left" : ""}`}>
-              {label}
-            </span>
-          ))}
-        </div>
-        {engines.map((engine, index) => {
-          const power = splitParen(engine.power);
-          const years = splitParen(engine.years);
-          const fuel = splitFuel(engine.fuel);
-          const enquiries = splitEnquiries(engine.enquiries);
-          const cost = splitTag(dash(engine.avgReconCost));
-          const { stars, tag, details } = splitReliability(engine);
-          return (
-            <div key={`${engine.engineCode}-${index}`} className={`grid ${PHONE_COLS} border-b border-[var(--db-line)] text-[var(--db-text)] last:border-b-0`}>
-              <span className="flex min-w-0 flex-col justify-center py-[16.5px] pl-[12px] pr-[2.5px]">
-                <Html html={engine.engineCode} className="text-[15px] font-semibold leading-[1.25] tracking-[-0.03em] text-[var(--db-code)] [overflow-wrap:anywhere]" />
-                {engine.family ? <Html html={engine.family} className="mt-[2.5px] text-[14px] leading-[1.25] text-[var(--db-soft)]" /> : null}
-              </span>
-              <span className={`${td} flex-col px-[5.5px]`}>
-                <span className="flex min-w-0 items-center gap-[7px]">
-                  <FuelIcon fuel={engine.fuel} className="h-[20.5px] w-[18.5px] shrink-0" />
-                  <Html html={fuel.main} className="text-left text-[15px] leading-[1.25]" />
-                </span>
-                {fuel.sub ? <Html html={fuel.sub} className="mt-[2.5px] text-[13px] leading-[1.2] text-[var(--db-muted)]" /> : null}
-              </span>
-              <span className={`${td} flex-col px-[3.5px] text-[15px] leading-[1.3]`}>
-                <Html html={power.main || "—"} />
-                {power.sub ? <Html html={power.sub} className="mt-[2px] text-[13px] leading-[1.2] tracking-[-0.03em] text-[var(--db-muted)]" /> : null}
-              </span>
-              <span className={`${td} flex-col px-[3.5px] text-[15px] leading-[1.3]`}>
-                <Html html={years.main || "—"} />
-                {years.sub ? <Html html={years.sub} className="mt-[2px] text-[13px] leading-[1.2] tracking-[-0.03em] text-[var(--db-muted)]" /> : null}
-              </span>
-              <span className={`${td} flex-col px-[4px]`}>
-                <span className="whitespace-nowrap text-[15px] leading-none tracking-[0.12em]">{stars}</span>
-                {tag ? (
-                  <span
-                    className={`mt-[6px] max-w-full whitespace-nowrap rounded-[2.5px] px-[4px] py-[2.5px] text-[13px] font-medium uppercase leading-tight tracking-[-0.01em] ${
-                      /VERIFIED/i.test(tag)
-                        ? "border border-[var(--db-green)] bg-[var(--db-green-bg)] text-[var(--db-green)]"
-                        : "bg-[var(--db-pill)] text-[var(--db-pill-text)]"
-                    }`}
-                  >
-                    {tag}
-                  </span>
-                ) : null}
-                {details.map((line) => (
-                  <Html key={line} html={line} className={`mt-[2.5px] text-[13px] leading-[1.3] tracking-[-0.03em] text-[var(--db-muted)] ${line.length <= 22 ? "whitespace-nowrap" : ""}`} />
-                ))}
-              </span>
-              <span className={`${td} flex-col px-[5.5px] leading-[1.35]`}>
-                {enquiries.figure ? <span className="text-[15px]">{enquiries.figure}</span> : null}
-                {enquiries.note ? <Html html={enquiries.note} className="mt-[2px] max-w-[64.5px] text-[13px] leading-[1.45] text-[var(--db-muted)]" /> : null}
-                {enquiries.tag ? <span className={`mt-[2px] whitespace-nowrap text-[13px] font-medium tracking-[-0.03em] ${tagTone(enquiries.tag)}`}>{enquiries.tag}</span> : null}
-              </span>
-              <span className={`${td} gap-[2px] pl-[2.5px] pr-[7px]`}>
-                <span className="flex min-w-0 flex-1 flex-col items-center leading-[1.3]">
-                  <Html html={[cost.main, cost.rest].filter(Boolean).join(" ") || "—"} className="whitespace-nowrap text-[14px] font-medium tracking-[-0.03em]" />
-                  {cost.tag ? (
-                    <span className={`mt-[2px] text-[13px] ${/PLACEHOLDER/i.test(cost.tag) ? "text-[var(--db-amber)]" : tagTone(cost.tag)}`}>[{cost.tag}]</span>
+    <ul className="mx-4 flex flex-col gap-3 md:hidden">
+      {engines.map((engine, index) => {
+        const power = splitParen(engine.power);
+        const years = splitParen(engine.years);
+        const fuel = splitFuel(engine.fuel);
+        const enquiries = splitEnquiries(engine.enquiries);
+        const cost = splitTag(dash(engine.avgReconCost));
+        const { stars, tag, details } = splitReliability(engine);
+        return (
+          <li key={`${engine.engineCode}-${index}`} className="overflow-hidden rounded-[12px] border border-[var(--db-border)] bg-[var(--db-card)] text-[var(--db-text)] [box-shadow:var(--db-shadow)]">
+            {/* Engine code + family | fuel */}
+            <div className="flex items-start justify-between gap-3 border-b border-[var(--db-line)] bg-[var(--db-head)] px-3 py-2.5">
+              <span className="min-w-0">
+                <span className="flex flex-wrap items-center gap-x-2 gap-y-1">
+                  <Html html={engine.engineCode} className="text-[18px] font-semibold leading-tight text-[var(--db-code)] [overflow-wrap:anywhere]" />
+                  {engine.isNew ? (
+                    <span className="rounded-[3px] bg-[var(--db-blue)] px-1.5 py-px text-[11px] font-semibold uppercase leading-tight text-white">{UI.newBadge}</span>
                   ) : null}
                 </span>
-                <Icon name="chevron" strokeWidth={2} className="h-[19px] w-[15px] shrink-0 text-[var(--db-soft)]" />
+                {engine.family ? <Html html={engine.family} className="mt-0.5 block text-[14px] text-[var(--db-soft)]" /> : null}
+              </span>
+              <span className="flex shrink-0 items-start gap-1.5 pt-0.5">
+                <FuelIcon fuel={engine.fuel} className="h-5 w-5" />
+                <span className="flex flex-col">
+                  <Html html={fuel.main} className="text-[15px] leading-tight" />
+                  {fuel.sub ? <Html html={fuel.sub} className="mt-0.5 text-[12.5px] leading-tight text-[var(--db-muted)]" /> : null}
+                </span>
               </span>
             </div>
-          );
-        })}
+
+            {/* Power | Years | Reliability (widest, for its pill) */}
+            <dl className="grid grid-cols-[1.05fr_1fr_1.2fr]">
+              <div className={field}>
+                <dt className={label}>{powerLabel}</dt>
+                <dd className="mt-1 text-[14px] leading-snug">
+                  <Html html={power.main || "—"} className={String(power.main).length <= 11 ? "whitespace-nowrap" : ""} />
+                  {power.sub ? <Html html={power.sub} className="block text-[12px] text-[var(--db-muted)]" /> : null}
+                </dd>
+              </div>
+              <div className={`${field} border-l border-[var(--db-line)]`}>
+                <dt className={label}>{yearsLabel}</dt>
+                <dd className="mt-1 text-[14px] leading-snug">
+                  <Html html={years.main || "—"} className={String(years.main).length <= 9 ? "whitespace-nowrap" : ""} />
+                  {years.sub ? <Html html={years.sub} className="block text-[12px] text-[var(--db-muted)]" /> : null}
+                </dd>
+              </div>
+              <div className={`${field} border-l border-[var(--db-line)]`}>
+                <dt className={label}>{reliabilityLabel}</dt>
+                <dd className="mt-1 flex flex-col items-start gap-1">
+                  <span className="whitespace-nowrap text-[15px] leading-none tracking-[0.06em]">{stars}</span>
+                  {tag ? (
+                    <span
+                      className={`max-w-full rounded-[4px] px-1.5 py-0.5 text-[11px] font-medium uppercase leading-tight ${
+                        /VERIFIED/i.test(tag)
+                          ? "border border-[var(--db-green)] bg-[var(--db-green-bg)] text-[var(--db-green)]"
+                          : "bg-[var(--db-pill)] text-[var(--db-pill-text)]"
+                      }`}
+                    >
+                      {keepHyphens(tag)}
+                    </span>
+                  ) : null}
+                  {details.map((line) => (
+                    <Html key={line} html={line} className="text-[12px] leading-snug text-[var(--db-muted)]" />
+                  ))}
+                </dd>
+              </div>
+            </dl>
+
+            {/* Enquiries | average recon cost (the design's last column, with its row chevron) */}
+            <div className="flex items-center justify-between gap-3 border-t border-[var(--db-line)] px-3 py-3">
+              <div className="min-w-0">
+                <span className={label}>{enquiriesLabel}</span>
+                <span className="mt-1 block leading-snug">
+                  {enquiries.figure ? <span className={`text-[14.5px] ${enquiries.figure === "—" ? "" : "font-medium"}`}>{enquiries.figure}</span> : null}
+                  {enquiries.note ? <Html html={enquiries.note} className="ml-1.5 text-[12.5px] text-[var(--db-muted)]" /> : null}
+                  {enquiries.tag ? <span className={`block text-[12px] font-medium ${tagTone(enquiries.tag)}`}>{enquiries.tag}</span> : null}
+                </span>
+              </div>
+              <span className="flex min-w-0 shrink-0 items-center gap-3">
+                <span className="flex min-w-0 flex-col items-end text-right leading-snug">
+                  <span className={label}>{costLabel}</span>
+                  <Html html={[cost.main, cost.rest].filter(Boolean).join(" ") || "—"} className="mt-1 max-w-[46vw] text-[16px] font-semibold" />
+                  {cost.tag ? (
+                    <span className={`text-[12px] ${/PLACEHOLDER/i.test(cost.tag) ? "text-[var(--db-amber)]" : tagTone(cost.tag)}`}>[{cost.tag}]</span>
+                  ) : null}
+                </span>
+                <Chevron className="h-3.5 w-2" />
+              </span>
+            </div>
+          </li>
+        );
+      })}
+    </ul>
+  );
+}
+
+// Laptops (1024–1439px): the phone design's seven columns at fixed desktop sizes.
+// Tablets (768–1023px): the phone design itself — all seven columns on screen, every size a share of the screen width
+// (vw values = design px ÷ 8.62, the design being 862px wide), so it scales with the screen like the design does.
+function PhoneTable({ engines }) {
+  const head = "flex min-w-0 items-center justify-center border-l border-[var(--db-line)] first:border-l-0 px-[0.8vw] py-[1.1vw] text-center text-[1.9vw] leading-[1.25] text-[var(--db-text)]";
+  const td = "flex min-w-0 items-center justify-center border-l border-[var(--db-line)] py-[1.6vw] text-center";
+  return (
+    // Inter runs wider than the design's face, so the table is set a touch tighter to keep the design's line breaks.
+    <div className="mx-[calc(2.1vw-var(--gutter))] hidden overflow-hidden rounded-[12px] border border-[var(--db-border)] bg-[var(--db-card)] tracking-[-0.02em] [box-shadow:var(--db-shadow)] md:block lg:hidden">
+      <div className={`grid ${PHONE_COLS} min-h-[7.4vw] border-b border-[var(--db-line)] bg-[var(--db-head)]`}>
+        {UI.mobileColumns.map((label, index) => (
+          <span key={label} className={`${head} ${index === 0 ? "justify-start whitespace-nowrap pl-[1.75vw] pr-[0.4vw] text-left" : ""}`}>
+            {label}
+          </span>
+        ))}
       </div>
+      {engines.map((engine, index) => {
+        const power = splitParen(engine.power);
+        const years = splitParen(engine.years);
+        const fuel = splitFuel(engine.fuel);
+        const enquiries = splitEnquiries(engine.enquiries);
+        const cost = splitTag(dash(engine.avgReconCost));
+        const { stars, tag, details } = splitReliability(engine);
+        return (
+          <div key={`${engine.engineCode}-${index}`} className={`grid ${PHONE_COLS} border-b border-[var(--db-line)] text-[var(--db-text)] last:border-b-0`}>
+            <span className="flex min-w-0 flex-col justify-center py-[1.6vw] pl-[1.75vw] pr-[0.4vw]">
+              <Html html={engine.engineCode} className="text-[2.2vw] font-semibold leading-[1.25] tracking-[-0.03em] text-[var(--db-code)] [overflow-wrap:anywhere]" />
+              {engine.family ? <Html html={engine.family} className="mt-[0.3vw] text-[2.1vw] leading-[1.25] text-[var(--db-soft)]" /> : null}
+            </span>
+            <span className={`${td} flex-col px-[0.8vw]`}>
+              <span className="flex min-w-0 items-center gap-[1vw]">
+                <FuelIcon fuel={engine.fuel} className="h-[3.7vw] w-[3.7vw] shrink-0" />
+                <Html html={fuel.main} className="text-left text-[2.2vw] leading-[1.25]" />
+              </span>
+              {fuel.sub ? <Html html={fuel.sub} className="mt-[0.4vw] text-[1.68vw] leading-[1.2] text-[var(--db-muted)]" /> : null}
+            </span>
+            <span className={`${td} flex-col px-[0.5vw] text-[2.2vw] leading-[1.3]`}>
+              <Html html={power.main || "—"} />
+              {power.sub ? <Html html={power.sub} className="mt-[0.3vw] text-[1.6vw] leading-[1.2] tracking-[-0.03em] text-[var(--db-muted)]" /> : null}
+            </span>
+            <span className={`${td} flex-col px-[0.5vw] text-[2.2vw] leading-[1.3]`}>
+              <Html html={years.main || "—"} />
+              {years.sub ? <Html html={years.sub} className="mt-[0.3vw] text-[1.6vw] leading-[1.2] tracking-[-0.03em] text-[var(--db-muted)]" /> : null}
+            </span>
+            <span className={`${td} flex-col px-[0.6vw]`}>
+              <span className="whitespace-nowrap text-[2.15vw] leading-none tracking-[0.12em]">{stars}</span>
+              {tag ? (
+                <span
+                  className={`mt-[0.8vw] max-w-full whitespace-nowrap rounded-[0.5vw] px-[0.6vw] py-[0.45vw] text-[1.46vw] font-medium uppercase leading-tight tracking-[-0.01em] ${
+                    /VERIFIED/i.test(tag)
+                      ? "border border-[var(--db-green)] bg-[var(--db-green-bg)] text-[var(--db-green)]"
+                      : "bg-[var(--db-pill)] text-[var(--db-pill-text)]"
+                  }`}
+                >
+                  {tag}
+                </span>
+              ) : null}
+              {details.map((line) => (
+                <Html key={line} html={line} className={`mt-[0.4vw] text-[1.5vw] leading-[1.3] tracking-[-0.03em] text-[var(--db-muted)] ${line.length <= 22 ? "whitespace-nowrap" : ""}`} />
+              ))}
+            </span>
+            <span className={`${td} flex-col px-[0.8vw] leading-[1.35]`}>
+              {enquiries.figure ? <span className="text-[2.2vw] leading-[1.2]">{enquiries.figure}</span> : null}
+              {enquiries.note ? <Html html={enquiries.note} className="mt-[0.2vw] max-w-[9.5vw] text-[1.74vw] leading-[1.35] text-[var(--db-muted)]" /> : null}
+              {enquiries.tag ? <span className={`mt-[0.3vw] whitespace-nowrap text-[1.6vw] font-medium tracking-[-0.03em] ${tagTone(enquiries.tag)}`}>{enquiries.tag}</span> : null}
+            </span>
+            <span className={`${td} gap-[0.3vw] pl-[0.4vw] pr-[1vw]`}>
+              <span className="flex min-w-0 flex-1 flex-col items-center leading-[1.3]">
+                <Html html={[cost.main, cost.rest].filter(Boolean).join(" ") || "—"} className={`${isPrice(cost.main) ? "whitespace-nowrap" : ""} text-[1.95vw] font-medium tracking-[-0.03em]`} />
+                {cost.tag ? (
+                  <span className={`mt-[0.3vw] text-[1.68vw] ${/PLACEHOLDER/i.test(cost.tag) ? "text-[var(--db-amber)]" : tagTone(cost.tag)}`}>[{cost.tag}]</span>
+                ) : null}
+              </span>
+              <Chevron className="h-[2.6vw] w-[1.56vw]" />
+            </span>
+          </div>
+        );
+      })}
     </div>
   );
 }
 
 function TabletTable({ engines }) {
   return (
-    <div className="hidden overflow-hidden rounded-[12px] border border-[var(--db-line)] bg-[var(--db-card)] [box-shadow:var(--db-shadow)] lg:max-[1439px]:block">
+    <div className="hidden overflow-hidden rounded-[12px] border border-[var(--db-border)] bg-[var(--db-card)] [box-shadow:var(--db-shadow)] lg:max-[1439px]:block">
       <div>
         <div className={`grid ${MOBILE_COLS} border-b border-[var(--db-line)]`}>
           {UI.mobileColumns.map((label, index) => (
@@ -425,7 +555,7 @@ function TabletTable({ engines }) {
               <span className={`${cell} justify-center px-1.5 py-3`}><Enquiries value={engine.enquiries} phone /></span>
               <span className={`${cell} gap-1 py-3 pl-2 pr-1.5`}>
                 <span className="flex flex-1 justify-center"><Cost value={engine.avgReconCost} phone /></span>
-                <Icon name="chevron" strokeWidth={2} className="h-4 w-4 shrink-0 text-[var(--db-soft)]" />
+                <Chevron className="h-3.5 w-2" />
               </span>
             </div>
           );
@@ -457,7 +587,7 @@ function Confidence({ data, code }) {
   const note = UI.dataNote;
 
   return (
-    <div className="mx-[2.1vw] mt-[2vw] rounded-[1.6vw] border border-[var(--db-line)] bg-[var(--db-card)] [box-shadow:var(--db-shadow)] md:mx-0 md:mt-6 md:rounded-[12px]">
+    <div className="mx-4 mt-3 rounded-[12px] border border-[var(--db-border)] bg-[var(--db-card)] [box-shadow:var(--db-shadow)] md:mx-0 md:mt-6">
       {/* Desktop: shield | title over the coded items | the derived-rating note */}
       <div className={`hidden lg:grid ${notes.length ? "grid-cols-[128px_1fr_28%]" : "grid-cols-[136px_1fr]"}`}>
         <div className="flex items-center justify-center border-r border-[var(--db-line)] py-6">
@@ -471,7 +601,7 @@ function Confidence({ data, code }) {
                 <span className={tone(item)}><Icon name={ITEM_ICONS[item.icon]} className="h-7 w-7 shrink-0" strokeWidth={1.6} /></span>
                 <span className="min-w-0">
                   <Html html={item.label} className="block text-[16px] font-medium leading-snug tracking-[-0.01em] text-[var(--db-text)]" />
-                  <Html html={dash(item.text)} className="mt-1 block text-[15px] leading-[1.55] text-[var(--db-muted)]" />
+                  <Html html={keepHyphens(dash(item.text))} className="mt-1 block text-[14px] leading-[1.6] text-[var(--db-muted)]" />
                 </span>
               </li>
             ))}
@@ -482,7 +612,7 @@ function Confidence({ data, code }) {
             <span className="text-[var(--db-blue)]"><Icon name="fileText" className="h-7 w-7 shrink-0" strokeWidth={1.6} /></span>
             <span className="flex flex-col gap-2">
               {notes.map((item, index) => (
-                <Html key={index} html={dash(continuationText(item))} className="text-[15px] leading-[1.55] text-[var(--db-muted)]" />
+                <Html key={index} html={keepHyphens(dash(continuationText(item)))} className="text-[15px] leading-[1.6] text-[var(--db-muted)]" />
               ))}
             </span>
           </div>
@@ -502,11 +632,11 @@ function Confidence({ data, code }) {
               <span className="min-w-0 flex-1">
                 <Html html={item.label} className={`block text-[16px] font-semibold leading-snug ${tone(item)}`} />
                 <Html
-                  html={dash([item.text.replace(/[;.]?\s*$/, continuation.length ? ";" : "$&"), ...continuation.map(continuationText)].join(" "))}
+                  html={keepHyphens(dash([item.text.replace(/[;.]?\s*$/, continuation.length ? ";" : "$&"), ...continuation.map(continuationText)].join(" ")))}
                   className="mt-1 block text-[14px] leading-[1.55] text-[var(--db-muted)]"
                 />
               </span>
-              <Icon name="chevron" strokeWidth={2} className="h-5 w-5 shrink-0 text-[var(--db-soft)]" />
+              <Chevron className="h-3.5 w-2" />
             </li>
           ))}
           {note ? (
@@ -523,38 +653,39 @@ function Confidence({ data, code }) {
         </ul>
       </div>
 
-      {/* Phones: the phone design — shield column, title, one row per item with a chevron, then the data note (vw = design px ÷ 8.62) */}
-      <div className="grid grid-cols-[12vw_1fr] pb-[0.6vw] pl-[2.55vw] pr-[2.6vw] pt-[2.6vw] md:hidden">
-        <ShieldBadge className="h-[11vw] w-[8.1vw]" />
-        <div className="min-w-0">
-          {data.title ? <h3 className="mt-[0.6vw] text-[max(16px,2.44vw)] font-semibold leading-tight text-[var(--db-text)]">{data.title}</h3> : null}
-          <ul>
-            {groups.map(({ item, continuation }, index) => (
-              <li key={index} className="flex items-center gap-[1.6vw] border-b border-[var(--db-line)] py-[2.6vw] first:pt-[1.4vw]">
-                <span className={tone(item)}><Icon name={ITEM_ICONS[item.icon]} className="h-[5.8vw] w-[5.8vw] shrink-0" strokeWidth={1.5} /></span>
-                <span className="min-w-0 flex-1">
-                  <Html html={item.label} className={`block text-[max(15px,2.2vw)] font-semibold leading-snug ${tone(item)}`} />
-                  <Html
-                    html={dash([item.text.replace(/[;.]?\s*$/, continuation.length ? ";" : "$&"), ...continuation.map(continuationText)].join(" "))}
-                    className="mt-[0.5vw] block text-[max(14px,1.97vw)] leading-[1.47] text-[var(--db-text)] opacity-90"
-                  />
-                </span>
-                <Icon name="chevron" strokeWidth={2} className="h-[2.8vw] w-[2.2vw] shrink-0 text-[var(--db-soft)]" />
-              </li>
-            ))}
-            {note ? (
-              <li className="flex items-center gap-[1.6vw] py-[2.6vw]">
-                <span className="text-[var(--db-blue)]"><Icon name="fileText" className="h-[5.8vw] w-[5.8vw] shrink-0" strokeWidth={1.5} /></span>
-                <span className="min-w-0 flex-1">
-                  <span className="block text-[max(15px,2.2vw)] font-semibold leading-snug text-[var(--db-blue)]">{note.label}</span>
-                  <span className="mt-[0.5vw] block text-[max(14px,1.97vw)] leading-[1.47] text-[var(--db-text)] opacity-90">
-                    {code ? note.text.replace("{code}", code) : note.text.replace(" {code}-specific", "")}
-                  </span>
-                </span>
-              </li>
-            ) : null}
-          </ul>
+      {/* Phones: the phone design's layout — shield beside the title, one row per item with a chevron, then the
+          data note — at readable sizes (14px copy). */}
+      <div className="px-4 pb-1 pt-4 md:hidden">
+        <div className="flex items-center gap-3">
+          <ShieldBadge className="h-[46px] w-[41px] shrink-0" />
+          {data.title ? <h3 className="text-[17px] font-semibold leading-tight text-[var(--db-text)]">{data.title}</h3> : null}
         </div>
+        <ul className="mt-1">
+          {groups.map(({ item, continuation }, index) => (
+            <li key={index} className="flex items-center gap-3 border-b border-[var(--db-line)] py-3.5">
+              <span className={tone(item)}><Icon name={ITEM_ICONS[item.icon]} className="h-8 w-8 shrink-0" strokeWidth={1.5} /></span>
+              <span className="min-w-0 flex-1">
+                <Html html={item.label} className={`block text-[15px] font-semibold leading-snug ${tone(item)}`} />
+                <Html
+                  html={keepHyphens(dash([item.text.replace(/[;.]?\s*$/, continuation.length ? ";" : "$&"), ...continuation.map(continuationText)].join(" ")))}
+                  className="mt-1 block text-[14px] leading-[1.55] text-[var(--db-text)] opacity-90"
+                />
+              </span>
+              <Chevron className="h-3.5 w-2" />
+            </li>
+          ))}
+          {note ? (
+            <li className="flex items-center gap-3 py-3.5">
+              <span className="text-[var(--db-blue)]"><Icon name="fileText" className="h-8 w-8 shrink-0" strokeWidth={1.5} /></span>
+              <span className="min-w-0 flex-1">
+                <span className="block text-[15px] font-semibold leading-snug text-[var(--db-blue)]">{note.label}</span>
+                <span className="mt-1 block text-[14px] leading-[1.55] text-[var(--db-text)] opacity-90">
+                  {code ? note.text.replace("{code}", code) : note.text.replace(" {code}-specific", "")}
+                </span>
+              </span>
+            </li>
+          ) : null}
+        </ul>
       </div>
     </div>
   );
@@ -573,7 +704,7 @@ function Stripes() {
   );
 }
 
-export default function EngineDatabase({ data, band = "tint" }) {
+export default function EngineDatabase({ data , band }) {
   const { theme } = useTheme();
   if (!data) return null;
 
@@ -586,24 +717,20 @@ export default function EngineDatabase({ data, band = "tint" }) {
   const columns = UI.columns.map((label, index) => data.columns?.[index] || label);
   // "BMW 3 Series E90 Engine Codes" -> "E90" for the data note.
   const code = (String(data.h2 || "").match(/^BMW .*?\s(\S+)\s+(?:Engine|Powertrain) Codes/) || [])[1] || "";
-  const vars = { ...TONES[isDark ? "dark" : "light"], "--db-solid": isDark ? "#0e1f33" : "#ffffff", "--db-bg": bandColor(isDark, band) };
-  // Tinted band: the design's soft vertical gradient; plain band: flat page colour.
-  const gradient =
-    band === "plain"
-      ? ""
-      : "[background-image:linear-gradient(180deg,var(--db-bg)_0%,color-mix(in_srgb,var(--db-bg)_70%,#dfe9f7)_100%)] [[data-theme=dark]_&]:[background-image:linear-gradient(180deg,#0b1826_0%,#0c2140_100%)]";
+  // Band colour from the page (sections alternate plain / tinted); the design colour when none is given.
+  const vars = { ...{ ...TONES[isDark ? "dark" : "light"], "--db-solid": isDark ? "#0e1f33" : "#ffffff" }, ...(band ? { "--db-bg": bandColor(isDark, band) } : {}) };
 
   return (
     <section
       style={vars}
-      className={`relative w-full overflow-hidden bg-[var(--db-bg)] ${gradient} ${sectionFont.className}`}
+      className={`relative w-full overflow-hidden bg-[var(--db-bg)] [background-image:linear-gradient(180deg,var(--db-bg)_0%,var(--db-bg-end)_100%)] ${sectionFont.className}`}
     >
       <Stripes />
-      <div className="site-container relative pb-[4vw] pt-[4vw] max-md:px-0 md:pb-12 md:pt-10 lg:pb-14">
-        {/* Phones: the design's 3.25vw text inset (the table runs wider, 2.1vw from the edges) */}
-        <div className="max-md:px-[3.25vw]">
-          <p className="text-[max(14px,2.05vw)] font-medium uppercase tracking-[0.03em] text-[var(--db-blue)] md:text-[17px]">{UI.eyebrow}</p>
-          <h2 className="t-h2 mt-[1.4vw] max-w-[22em] font-bold tracking-[-0.02em] text-[var(--db-text)] max-md:max-w-[90vw] max-md:text-[max(26px,5.5vw)] max-md:leading-[1.04] md:mt-2">
+      <div className="site-container relative pb-8 pt-8 max-md:px-0 md:pb-12 md:pt-10 lg:pb-14">
+        {/* Phones: copy on the page gutter; the cards below sit on it too */}
+        <div className="max-md:px-4">
+          <p className="text-[13px] font-medium uppercase tracking-[0.03em] text-[var(--db-blue)] md:text-[17px]">{UI.eyebrow}</p>
+          <h2 className="t-h2 mt-1.5 max-w-[22em] font-bold tracking-[-0.02em] text-[var(--db-text)] max-md:text-[clamp(24px,6.8vw,30px)] max-md:leading-[1.15] md:mt-2">
             <Html html={titleMain} />
             {title.accent ? (
               <>
@@ -614,21 +741,22 @@ export default function EngineDatabase({ data, band = "tint" }) {
             ) : null}
           </h2>
           {data.subHeadline ? (
-            <p className={`mt-[1.6vw] max-w-[680px] text-[max(14px,2.03vw)] leading-[1.54] text-[var(--db-muted)] max-md:max-w-[67vw] md:mt-3 md:text-[17px] md:leading-[1.6] lg:text-[18px] ${HTML}`} dangerouslySetInnerHTML={{ __html: dash(data.subHeadline) }} />
+            <p className={`mt-2.5 max-w-[680px] text-[15px] leading-[1.6] text-[var(--db-muted)] md:mt-3 md:text-[17px] md:leading-[1.6] lg:max-w-[850px] lg:text-[18px] ${HTML}`} dangerouslySetInnerHTML={{ __html: dash(data.subHeadline) }} />
           ) : null}
         </div>
 
         {engines.length ? (
-          <div className="mt-[3.2vw] md:mt-7">
+          <div className="mt-5 md:mt-7">
             <DesktopTable engines={engines} columns={columns} />
             <TabletTable engines={engines} />
             <PhoneTable engines={engines} />
+            <PhoneCards engines={engines} />
           </div>
         ) : null}
 
         {/* Spec notes that came with the table on some pages ("Engine Specifications:" + bullet list) */}
         {data.notes?.items?.length ? (
-          <div className="mx-[2.1vw] mt-[2vw] rounded-[1.6vw] border border-[var(--db-line)] bg-[var(--db-card)] px-4 py-4 [box-shadow:var(--db-shadow)] md:mx-0 md:mt-5 md:rounded-[12px] md:px-6 md:py-5">
+          <div className="mx-4 mt-3 rounded-[12px] border border-[var(--db-border)] bg-[var(--db-card)] px-4 py-4 [box-shadow:var(--db-shadow)] md:mx-0 md:mt-5 md:px-6 md:py-5">
             {data.notes.title ? <h3 className="text-[15px] font-semibold text-[var(--db-text)] md:text-[17px]">{data.notes.title.replace(/:\s*$/, "")}</h3> : null}
             <ul className="mt-2 grid gap-x-8 gap-y-1.5 text-[14px] leading-snug text-[var(--db-muted)] md:mt-3 md:grid-cols-2 lg:text-[15px]">
               {data.notes.items.map((item, index) => (

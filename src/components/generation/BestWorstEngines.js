@@ -68,19 +68,20 @@ const TONES = {
     "--bw-red": "#d62828",
     "--bw-orange": "#d9730d",
   },
+  // Near-black navy with charcoal cards, as in the dark designs.
   dark: {
-    "--bw-bg": "#0b1826",
-    "--bw-card": "rgba(14,28,46,0.78)",
-    "--bw-line": "rgba(255,255,255,0.12)",
+    "--bw-bg": "#04090f",
+    "--bw-card": "#0b1016",
+    "--bw-line": "#262b33",
     "--bw-text": "#ffffff",
-    "--bw-muted": "rgba(255,255,255,0.82)",
-    "--bw-head": "rgba(255,255,255,0.88)",
-    "--bw-note": "rgba(77,155,255,0.1)",
+    "--bw-muted": "rgba(255,255,255,0.84)",
+    "--bw-head": "rgba(255,255,255,0.9)",
+    "--bw-note": "#06142a",
     "--bw-shadow": "0 12px 30px rgba(0,0,0,0.35)",
-    "--bw-green": "#5ccf6f",
-    "--bw-blue": "#4d9bff",
-    "--bw-red": "#ff5a52",
-    "--bw-orange": "#ffa13a",
+    "--bw-green": "#7dc360",
+    "--bw-blue": "#3d8bf2",
+    "--bw-red": "#ec4c40",
+    "--bw-orange": "#f59532",
   },
 };
 
@@ -185,8 +186,7 @@ function EngineImage({ item, generationCode, className, sizes }) {
   );
 }
 
-// Some generations have no quote (the description sits on the engine line): render nothing rather than empty “”.
-const quoteHtml = (quote) => (hasText(quote) ? `“${dash(quote)}”` : "");
+const quoteHtml = (quote) => `“${dash(quote)}”`;
 
 /* ---------- Desktop (from 1024px): cards in a row with a coloured bottom bar ---------- */
 function DesktopCard({ item, generationCode }) {
@@ -195,7 +195,7 @@ function DesktopCard({ item, generationCode }) {
   const { code, note } = splitEngine(item);
   return (
     <article
-      className="flex h-full flex-col rounded-[10px] border border-[var(--bw-line)] bg-[var(--bw-card)] px-4 pb-4 pt-4 [box-shadow:var(--bw-shadow)]"
+      className="flex h-full flex-col rounded-[10px] border border-[var(--bw-line)] bg-[var(--bw-card)] px-3.5 pb-4 pt-4 [box-shadow:var(--bw-shadow)]"
       style={{ borderBottom: `3px solid ${color}` }}
     >
       <div className="grid grid-cols-[34px_1fr] items-start gap-x-3">
@@ -209,10 +209,8 @@ function DesktopCard({ item, generationCode }) {
         </div>
       </div>
       <div className="mt-3 flex items-start gap-2">
-        <EngineImage item={item} generationCode={generationCode} sizes="120px" className="-ml-1 mt-1 h-[84px] w-[86px] shrink-0" />
-        {hasText(item.quote) ? (
-          <p className={`min-w-0 text-[14px] leading-[1.5] tracking-[-0.005em] text-[var(--bw-muted)] [overflow-wrap:anywhere] ${HTML}`} dangerouslySetInnerHTML={{ __html: quoteHtml(item.quote) }} />
-        ) : null}
+        <EngineImage item={item} generationCode={generationCode} sizes="120px" className="-ml-1.5 mt-1 h-[76px] w-[78px] shrink-0" />
+        <p className={`min-w-0 text-[14px] leading-[1.5] tracking-[-0.01em] text-[var(--bw-muted)] [overflow-wrap:anywhere] ${HTML}`} dangerouslySetInnerHTML={{ __html: quoteHtml(item.quote) }} />
       </div>
       {hasText(item.whoItsFor) ? (
         <p className={`mt-auto pl-1 pt-3 text-[15px] leading-[1.45] text-[var(--bw-text)] ${HTML}`}>
@@ -271,7 +269,8 @@ function DesktopWide({ item }) {
   );
 }
 
-/* ---------- Phones + tablets (below 1024px): the phone design, sizes = design px ÷ 8.62, capped ---------- */
+/* ---------- Phones + tablets (below 1024px): the phone design. Tablets use its sizes (design px ÷ 8.62, capped);
+   phones keep its layout at readable sizes (14px copy, never under 13px). ---------- */
 function PhoneCard({ item, generationCode }) {
   const { tone, icon } = slotStyle(item.slot);
   const color = `var(--bw-${tone})`;
@@ -279,39 +278,42 @@ function PhoneCard({ item, generationCode }) {
   const hasEngine = hasText(code);
   return (
     <article
-      className="overflow-hidden rounded-[min(1.4vw,12px)] border border-[var(--bw-line)] bg-[var(--bw-card)] [box-shadow:var(--bw-shadow)]"
+      className="overflow-hidden rounded-[12px] border border-[var(--bw-line)] bg-[var(--bw-card)] [box-shadow:var(--bw-shadow)]"
       style={{ borderLeft: `max(0.5vw,3px) solid ${color}` }}
     >
-      <div className="grid grid-cols-[min(24.5vw,190px)_minmax(0,1fr)] pb-[2.6vw] pr-[3vw] pt-[2.6vw]">
-        <div className="flex flex-col items-start pl-[2.8vw]">
+      <div className="grid grid-cols-[78px_minmax(0,1fr)] pb-4 pr-3 pt-4 md:grid-cols-[min(24.5vw,190px)_minmax(0,1fr)] md:pb-[2.6vw] md:pr-[3vw] md:pt-[2.6vw]">
+        <div className="flex flex-col items-start pl-3 md:pl-[2.8vw]">
           <span style={{ color }}>
-            <Icon name={icon} className="h-[min(5.2vw,40px)] w-[min(5.2vw,40px)]" />
+            <Icon name={icon} className="h-7 w-7 md:h-[min(5.2vw,40px)] md:w-[min(5.2vw,40px)]" />
           </span>
           {hasEngine ? (
-            <EngineImage item={item} generationCode={generationCode} sizes="(max-width: 1024px) 20vw, 160px" className="ml-[1vw] mt-[1.6vw] h-[min(17vw,132px)] w-[min(18vw,140px)]" />
+            <EngineImage
+              item={item}
+              generationCode={generationCode}
+              sizes="(max-width: 767px) 72px, (max-width: 1024px) 20vw, 160px"
+              className="-ml-1 mt-2 h-[60px] w-[66px] md:ml-[1vw] md:mt-[1.6vw] md:h-[min(17vw,132px)] md:w-[min(18vw,140px)]"
+            />
           ) : null}
         </div>
         <div className="min-w-0">
-          <div className="flex items-start gap-[1vw]">
+          <div className="flex items-start gap-2 md:gap-[1vw]">
             <div className="min-w-0 flex-1">
-              <p className="text-[clamp(15px,2.3vw,18px)] font-medium leading-tight" style={{ color }} dangerouslySetInnerHTML={{ __html: item.slot }} />
+              <p className="text-[15px] font-medium leading-tight md:text-[min(2.3vw,18px)]" style={{ color }} dangerouslySetInnerHTML={{ __html: item.slot }} />
               {hasEngine ? (
-                <p className={`mt-[0.8vw] text-[clamp(16px,3.2vw,24px)] font-semibold leading-snug text-[var(--bw-text)] ${HTML}`}>
+                <p className={`mt-1 text-[19px] font-semibold leading-snug text-[var(--bw-text)] md:mt-[0.8vw] md:text-[min(3.2vw,24px)] ${HTML}`}>
                   <span dangerouslySetInnerHTML={{ __html: code }} />
-                  {note ? <span className="text-[clamp(14px,2vw,16px)] font-normal text-[var(--bw-muted)]" dangerouslySetInnerHTML={{ __html: `  ${dash(note)}` }} /> : null}
+                  {note ? <span className="text-[13px] font-normal text-[var(--bw-muted)] md:text-[min(2vw,16px)]" dangerouslySetInnerHTML={{ __html: `  ${dash(note)}` }} /> : null}
                 </p>
               ) : null}
             </div>
-            <Icon name="chevron" strokeWidth={2} className="mt-[3vw] h-[min(3vw,22px)] w-[min(2.4vw,18px)] shrink-0 text-[var(--bw-muted)]" />
+            <Icon name="chevron" strokeWidth={2} className="mt-1 h-5 w-4 shrink-0 text-[var(--bw-muted)] md:mt-[3vw] md:h-[min(3vw,22px)] md:w-[min(2.4vw,18px)]" />
           </div>
-          {hasText(item.quote) ? (
-            <p
-              className={`mt-[1.6vw] text-[clamp(14px,1.95vw,16px)] leading-[1.55] text-[var(--bw-muted)] ${HTML}`}
-              dangerouslySetInnerHTML={{ __html: hasEngine ? quoteHtml(item.quote) : dash(item.quote) }}
-            />
-          ) : null}
+          <p
+            className={`mt-2 text-[14px] leading-[1.55] text-[var(--bw-muted)] md:mt-[1.6vw] md:text-[min(1.95vw,16px)] md:leading-[1.6] ${HTML}`}
+            dangerouslySetInnerHTML={{ __html: hasEngine ? quoteHtml(item.quote) : dash(item.quote) }}
+          />
           {hasText(item.whoItsFor) ? (
-            <p className={`mt-[1.8vw] border-t border-[var(--bw-line)] pt-[1.8vw] text-[clamp(14px,1.95vw,16px)] leading-[1.5] text-[var(--bw-text)] ${HTML}`}>
+            <p className={`mt-3 border-t border-[var(--bw-line)] pt-3 text-[14px] leading-[1.5] text-[var(--bw-text)] md:mt-[1.8vw] md:pt-[1.8vw] md:text-[min(1.95vw,16px)] ${HTML}`}>
               <span className="font-medium" style={{ color }}>{UI.whoItsFor}</span>{" "}
               <span dangerouslySetInnerHTML={{ __html: dash(item.whoItsFor) }} />
             </p>
@@ -319,8 +321,8 @@ function PhoneCard({ item, generationCode }) {
         </div>
       </div>
       {item.modelWideNote ? (
-        <p className={`mx-[0.8vw] mb-[0.8vw] flex items-center justify-center gap-[1vw] rounded-[min(0.8vw,8px)] bg-[var(--bw-note)] px-[2vw] py-[1.2vw] text-[clamp(14px,2vw,16px)] leading-snug text-[var(--bw-muted)] ${HTML}`}>
-          <Icon name="info" className="h-[min(2.6vw,20px)] w-[min(2.6vw,20px)] shrink-0 text-[var(--bw-blue)]" />
+        <p className={`mx-2 mb-2 flex items-start justify-center gap-2 rounded-[8px] bg-[var(--bw-note)] px-3 py-2 text-[13px] leading-snug text-[var(--bw-muted)] md:mx-[0.8vw] md:mb-[0.8vw] md:items-center md:gap-[1vw] md:rounded-[min(0.8vw,8px)] md:px-[2vw] md:py-[1.2vw] md:text-[min(2vw,16px)] ${HTML}`}>
+          <Icon name="info" className="mt-px h-4 w-4 shrink-0 text-[var(--bw-blue)] md:mt-0 md:h-[min(2.6vw,20px)] md:w-[min(2.6vw,20px)]" />
           <span dangerouslySetInnerHTML={{ __html: dash(item.modelWideNote) }} />
         </p>
       ) : null}
@@ -328,7 +330,7 @@ function PhoneCard({ item, generationCode }) {
   );
 }
 
-export default function BestWorstEngines({ data, band = "tint" }) {
+export default function BestWorstEngines({ data , band }) {
   const { theme } = useTheme();
   if (!data) return null;
 
@@ -340,7 +342,8 @@ export default function BestWorstEngines({ data, band = "tint" }) {
   const wide = items.filter(isWide);
   // One row of up to five cards from 1440px (the design); narrower desktops and six or more cards go three to a row.
   const cols = cards.length <= 5 ? cards.length : 3;
-  const vars = { ...TONES[isDark ? "dark" : "light"], "--bw-bg": bandColor(isDark, band) };
+  // Band colour from the page (sections alternate plain / tinted); the design colour when none is given.
+  const vars = { ...TONES[isDark ? "dark" : "light"], ...(band ? { "--bw-bg": bandColor(isDark, band) } : {}) };
   const heading = String(data.h2 || UI.eyebrow);
 
   return (
@@ -348,21 +351,21 @@ export default function BestWorstEngines({ data, band = "tint" }) {
       style={vars}
       className={`relative w-full overflow-hidden bg-[var(--bw-bg)] text-[var(--bw-text)] [background-image:radial-gradient(ellipse_at_50%_0%,color-mix(in_srgb,var(--bw-blue)_7%,transparent),transparent_60%)] ${sectionFont.className}`}
     >
-      <div className="site-container relative pb-[5vw] pt-[4.4vw] max-lg:px-[3.5vw] lg:pb-14 lg:pt-12">
-        <div className="max-lg:px-[0.9vw]">
-          <p className="flex items-center gap-[1.4vw] text-[clamp(14px,1.97vw,15px)] font-medium uppercase tracking-[0.1em] lg:gap-3 lg:text-[14px]">
+      <div className="site-container relative pb-10 pt-8 max-lg:px-4 md:pb-[5vw] md:pt-[4.4vw] md:max-lg:px-[3.5vw] lg:pb-14 lg:pt-12">
+        <div className="md:max-lg:px-[0.9vw]">
+          <p className="flex items-center gap-2.5 text-[13px] font-medium uppercase tracking-[0.1em] md:gap-[1.4vw] md:text-[min(1.97vw,15px)] lg:gap-3 lg:text-[14px]">
             <span className="text-[var(--bw-head)]">{UI.sectionNumber}</span>
-            <span aria-hidden="true" className="h-px w-[min(2.6vw,22px)] bg-[var(--bw-head)] opacity-60" />
+            <span aria-hidden="true" className="h-px w-5 bg-[var(--bw-head)] opacity-60 md:w-[min(2.6vw,22px)]" />
             <span className="text-[var(--bw-blue)]">{UI.eyebrow}</span>
           </p>
           <h2
-            className={`mt-[1.2vw] text-[clamp(26px,5.3vw,44px)] font-semibold leading-[1.15] tracking-[-0.015em] text-[var(--bw-head)] lg:mt-2 lg:text-[34px] ${HTML}`}
+            className={`mt-1.5 text-[clamp(26px,7.2vw,30px)] font-semibold leading-[1.15] tracking-[-0.015em] text-[var(--bw-head)] md:mt-[1.2vw] md:text-[min(5.3vw,44px)] lg:mt-2 lg:text-[34px] ${HTML}`}
             dangerouslySetInnerHTML={{ __html: heading }}
           />
         </div>
 
         {/* Phones + tablets: one card per pick, stacked */}
-        <div className="mt-[3vw] flex flex-col gap-[1.5vw] lg:hidden">
+        <div className="mt-4 flex flex-col gap-3 md:mt-[3vw] md:gap-[1.5vw] lg:hidden">
           {[...cards, ...wide].map((item, index) => (
             <PhoneCard key={`${item.slot}-${index}`} item={item} generationCode={data.generationCode} />
           ))}

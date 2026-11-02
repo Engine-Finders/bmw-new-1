@@ -222,7 +222,8 @@ export default async function CatchAllPage({ params }) {
     data = withGenerationPageImages(data);
     // Sections alternate plain / tinted bands (as on the variant and engine pages). Only sections that render
     // are counted, so two neighbours never share a colour when a page leaves one out.
-    // Mirrors each section's own "render nothing" rule (Best & Worst drops empty items; costs need rows).
+    // Mirrors each section's own "render nothing" rule (Best & Worst drops empty items, FAQ needs a question, the
+    // variants/market block needs core variants or market data).
     const present = (value) => (Array.isArray(value) ? value.length > 0 : Boolean(value));
     const hasText = (value) => Boolean(String(value ?? "").replace(/<[^>]+>/g, "").trim());
     const sections = [
@@ -231,15 +232,21 @@ export default async function CatchAllPage({ params }) {
       ["bestWorst", Boolean(data.bestWorstEngines?.items?.some((item) => item && [item.slot, item.engine, item.quote, item.whoItsFor].some(hasText)))],
       ["ownership", present(data.ownershipEconomics)],
       ["problems", present(data.commonProblems)],
-      ["costs", present(data.replacementCosts?.rows)],
-      ["variantsMarket", present(data.coreVariants) || present(data.marketIntelligence)],
-      ["faq", present(data.faq)],
+      ["costs", present(data.replacementCosts)],
+      [
+        "variantsMarket",
+        present(data.coreVariants) ||
+          Boolean(["mostRequestedEngines", "mostRequestedVariants", "mostCommonFailures", "liveFeed"].some((key) => present(data.marketIntelligence?.[key])) || data.marketIntelligence?.averageReplacementCost),
+      ],
+      ["faq", Boolean(data.faq?.items?.some((item) => hasText(item?.question)))],
       ["trust", present(data.trustCta)],
     ];
     const band = {};
     sections.filter(([, shown]) => shown).forEach(([key], index) => {
-      band[key] = index % 2 === 0 ? "plain" : "tint"; // the hero is tinted, so the band after it starts plain
+      band[key] = index % 2 === 0 ? "tint" : "plain"; // the hero is near-white, so the band after it starts tinted
     });
+    // "BMW 3 Series E90 Engine Codes …" -> "E90", for "Most Requested E90 Engines" and "FAQ — BMW E90".
+    const generationCode = (String(data.engineDatabase?.h2 || "").match(/^BMW .*?\s(\S+)\s+(?:Engine|Powertrain) Codes/) || [])[1] || "";
     return (
       <main className="flex flex-col overflow-x-hidden">
         {data.meta?.jsonLd && (
@@ -259,8 +266,9 @@ export default async function CatchAllPage({ params }) {
           coreVariants={data.coreVariants}
           marketIntelligence={data.marketIntelligence}
           band={band.variantsMarket}
+          generationCode={generationCode}
         />
-        <GenFAQAccordion data={data.faq} band={band.faq} />
+        <GenFAQAccordion data={data.faq} band={band.faq} generationCode={generationCode} />
         <GenTrustCta data={data.trustCta} band={band.trust} />
       </main>
     );
