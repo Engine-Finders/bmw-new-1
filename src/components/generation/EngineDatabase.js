@@ -301,7 +301,7 @@ function FuelCell({ fuel, phone }) {
   return (
     <span className="flex min-w-0 items-center gap-1.5">
       <FuelIcon fuel={fuel} className={`shrink-0 ${phone ? "h-5 w-5" : "h-[22px] w-[22px]"}`} />
-      <Stack main={main} sub={sub} subClass={phone ? "text-[11px] md:text-[13px] lg:text-[14px] leading-tight" : "whitespace-nowrap text-[14px] leading-tight"} className={phone ? "text-[14px]" : ""} />
+      <Stack main={main} sub={sub} subClass={phone ? "text-[13px] lg:text-[14px] leading-tight" : "text-[14px] leading-tight"} className={phone ? "text-[14px]" : ""} />
     </span>
   );
 }
