@@ -432,7 +432,8 @@
   .card,
   .card:nth-child(n) {
     display: grid;
-    grid-template-columns: minmax(0, min(42%, 260px)) auto minmax(0, 1fr);
+    grid-template-columns: minmax(0, min(50%, 300px)) auto minmax(0, 1fr);
+    overflow: hidden;
     align-items: center;
     column-gap: 10px;
     height: auto;
@@ -455,6 +456,38 @@
     height: auto;
     aspect-ratio: 269 / 197;
     border-radius: 9px;
+  }
+
+  /* Cut-out cars: shown whole and large on a soft lit stage with a floor shadow */
+  .cardCar.cardCutout {
+    align-self: center;
+    aspect-ratio: 16 / 9;
+    overflow: visible;
+    background: radial-gradient(60% 55% at 50% 58%, color-mix(in srgb, var(--w-accent, #1555e3) 14%, transparent), transparent 72%);
+  }
+
+  .cardCutout::after {
+    content: "";
+    position: absolute;
+    right: 10%;
+    bottom: 12%;
+    left: 10%;
+    height: 10%;
+    border-radius: 50%;
+    background: radial-gradient(closest-side, rgba(13, 20, 64, 0.28), transparent);
+    filter: blur(3px);
+  }
+
+  .dark .cardCutout::after {
+    background: radial-gradient(closest-side, rgba(0, 0, 0, 0.6), transparent);
+  }
+
+  .cardCutout .img {
+    z-index: 1;
+    object-fit: contain;
+    object-position: center;
+    transform: scale(1.08);
+    transform-origin: center 60%;
   }
 
   .card .badge {
@@ -498,7 +531,7 @@
     position: static;
     grid-column: 1 / -1;
     grid-row: 2;
-    margin: 12px 0 0 4px;
+    margin: 10px 0 0 4px;
     padding-top: 12px;
     border-top: 1px solid var(--w-divider);
     font-size: 15px;
@@ -660,7 +693,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: calc(15 * var(--u) - 1px);
+    min-width: 0;
+    padding: calc(15 * var(--u) - 1px) 12px 0;
     text-align: center;
   }
 
@@ -791,6 +825,21 @@
     height: auto;
     overflow: hidden;
     border-radius: 7px;
+  }
+
+  /* Cut-out cars: whole (not cropped), larger, on a soft lit stage */
+  .car.carCutout {
+    width: 48%;
+    max-width: 270px;
+    aspect-ratio: 16 / 8;
+    overflow: visible;
+    background: radial-gradient(60% 55% at 50% 58%, color-mix(in srgb, var(--w-accent, #1555e3) 14%, transparent), transparent 72%);
+  }
+
+  .carCutout .img {
+    object-fit: contain;
+    transform: scale(1.2);
+    transform-origin: center 60%;
   }
 
   .cProfile .badge {

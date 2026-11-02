@@ -71,6 +71,21 @@ async function getVariantData(dataFile) {
   }
 }
 
+// Pull-quote car: the matched set of tight side-view cut-outs (as on the home page's "Find Your Vehicle"), so every
+// model page's quote looks the same. Models not in the set fall back to their library side view.
+const SIDE_CARS = {
+  "1-series": "1-series", "2-series": "2-series", "3-series": "3-series", "4-series": "4-series", "5-series": "5-series",
+  "6-series": "6-series", "7-series": "7-series", "8-series": "8-series", 2002: "2002", "i-series-electric-motors": "i-series",
+  m1: "m1", m2: "m2", m4: "m4", m6: "m6", x1: "x1", x2: "x2", x3: "x3", x4: "x4", x5: "x5", x6: "x6", x7: "x7", xm: "xm",
+  "z-series": "z-series",
+};
+// The 2002's side photo keeps its studio floor; its transparent "cut" version matches the rest of the set.
+const SIDE_CAR_FILES = { 2002: "cut-2002" };
+function sideCarFor(slug) {
+  if (!SIDE_CARS[slug]) return null;
+  return `/cars/home/fyv/${SIDE_CAR_FILES[slug] || `side-${SIDE_CARS[slug]}`}.webp`;
+}
+
 function findEntry(slugSegments) {
   if (slugSegments.length === 1) {
     const single = slugSegments[0];
@@ -191,10 +206,10 @@ export default async function CatchAllPage({ params }) {
         <GenerationsGrid data={data.generations} />
         <EngineDatabase data={data.engineDatabase} />
         <CommonProblems data={data.commonProblems} />
-        <MarketIntelligence data={data.marketIntelligence} quoteData={data.editorialPullQuote} />
+        <MarketIntelligence data={data.marketIntelligence} quoteData={data.editorialPullQuote && { ...data.editorialPullQuote, sideCar: sideCarFor(entry.slug) }} />
         <ReplacementCosts data={data.replacementCosts} />
         <EngineEvolution data={data.engineEvolution} />
-        <WhoShouldBuy data={data.whoShouldBuy} />
+        <WhoShouldBuy data={data.whoShouldBuy && { ...data.whoShouldBuy, sideCar: sideCarFor(entry.slug) }} />
         <CalculatorCTA data={data.calculatorCta} />
         <TrustBlock data={data.trustBlock} />
         <FAQAccordion data={data.faq} />
@@ -205,6 +220,26 @@ export default async function CatchAllPage({ params }) {
 
   if (type === "generations") {
     data = withGenerationPageImages(data);
+    // Sections alternate plain / tinted bands (as on the variant and engine pages). Only sections that render
+    // are counted, so two neighbours never share a colour when a page leaves one out.
+    // Mirrors each section's own "render nothing" rule (Best & Worst drops empty items; costs need rows).
+    const present = (value) => (Array.isArray(value) ? value.length > 0 : Boolean(value));
+    const hasText = (value) => Boolean(String(value ?? "").replace(/<[^>]+>/g, "").trim());
+    const sections = [
+      ["engineDatabase", present(data.engineDatabase)],
+      ["overview", present(data.overview)],
+      ["bestWorst", Boolean(data.bestWorstEngines?.items?.some((item) => item && [item.slot, item.engine, item.quote, item.whoItsFor].some(hasText)))],
+      ["ownership", present(data.ownershipEconomics)],
+      ["problems", present(data.commonProblems)],
+      ["costs", present(data.replacementCosts?.rows)],
+      ["variantsMarket", present(data.coreVariants) || present(data.marketIntelligence)],
+      ["faq", present(data.faq)],
+      ["trust", present(data.trustCta)],
+    ];
+    const band = {};
+    sections.filter(([, shown]) => shown).forEach(([key], index) => {
+      band[key] = index % 2 === 0 ? "plain" : "tint"; // the hero is tinted, so the band after it starts plain
+    });
     return (
       <main className="flex flex-col overflow-x-hidden">
         {data.meta?.jsonLd && (
@@ -214,18 +249,19 @@ export default async function CatchAllPage({ params }) {
           />
         )}
         <GenHero data={data.hero} />
-        <GenEngineDatabase data={data.engineDatabase} />
-        <Overview data={data.overview} />
-        <BestWorstEngines data={data.bestWorstEngines && { generationCode: entry.slug, ...data.bestWorstEngines }} />
-        <OwnershipEconomics data={data.ownershipEconomics} />
-        <GenProblems data={data.commonProblems} />
-        <GenReplacementCosts data={data.replacementCosts} />
+        <GenEngineDatabase data={data.engineDatabase} band={band.engineDatabase} />
+        <Overview data={data.overview} band={band.overview} />
+        <BestWorstEngines data={data.bestWorstEngines && { generationCode: entry.slug, ...data.bestWorstEngines }} band={band.bestWorst} />
+        <OwnershipEconomics data={data.ownershipEconomics} band={band.ownership} />
+        <GenProblems data={data.commonProblems} band={band.problems} />
+        <GenReplacementCosts data={data.replacementCosts} band={band.costs} />
         <CoreVariantsMarketGroup
           coreVariants={data.coreVariants}
           marketIntelligence={data.marketIntelligence}
+          band={band.variantsMarket}
         />
-        <GenFAQAccordion data={data.faq} />
-        <GenTrustCta data={data.trustCta} />
+        <GenFAQAccordion data={data.faq} band={band.faq} />
+        <GenTrustCta data={data.trustCta} band={band.trust} />
       </main>
     );
   }

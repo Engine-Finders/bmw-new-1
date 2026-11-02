@@ -785,12 +785,15 @@
   }
 
   .engineLabel {
+    max-width: 100%;
     margin-top: calc(4 * var(--u));
+    overflow-wrap: anywhere;
+    text-align: center;
     color: var(--v-label);
     font-size: var(--fs-label);
     font-weight: 500;
     line-height: 1.36;
-    white-space: nowrap;
+    white-space: normal;
   }
 
   .cWhy {

@@ -4,8 +4,15 @@ export {
   tableHeaderClass,
 } from "@/components/models/sectionTypography";
 
+/** Band colours for sections that carry their own palette (engine database, overview, best & worst). */
+export function bandColor(isDark, band = "tint") {
+  if (isDark) return band === "plain" ? "var(--color-page)" : "#0b1826";
+  return band === "plain" ? "#ffffff" : "#eef2f7";
+}
+
+/** Section background. Generation pages alternate plain / tinted bands down the page (see the generation route). */
 export function generationSectionBg(isDark, tinted = false) {
-  if (isDark) return "bg-[var(--color-page)]";
+  if (isDark) return tinted ? "bg-[#0b1826]" : "bg-[var(--color-page)]";
   return tinted ? "bg-[#eef2f7]" : "bg-[var(--color-page)]";
 }
 

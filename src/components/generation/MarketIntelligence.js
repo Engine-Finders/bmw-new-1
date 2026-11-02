@@ -286,7 +286,7 @@ function MarketIntelligenceBody({ data, isDark, grouped, hideSidebar }) {
     </>
   );
 
-  const headerBg = grouped ? generationSectionBg(isDark, true) : generationSectionBg(isDark, false);
+  const headerBg = grouped ? "bg-transparent" : generationSectionBg(isDark, false);
 
   return (
     <>

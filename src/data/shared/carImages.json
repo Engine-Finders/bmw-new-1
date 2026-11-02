@@ -8056,7 +8056,9 @@
   "s63b44t2": "/engines/s63b44t2.webp",
   "s63b44t3": "/engines/s63b44t3.webp",
   "s63b44t4": "/engines/s63b44t4.webp",
-  "s68b44": "/engines/s68b44.webp"
+  "s68b44": "/engines/s68b44.webp",
+  "n63b44": "/home-image/sec08/engines/n63-s63.webp",
+  "m57d30": "/e90/engine.webp"
  },
  "engineFiles": {
   "b37d15": "bmw-b37d15-diesel-engine",
@@ -8165,7 +8167,7 @@
    "car": "3-series|e46"
   },
   "m57": {
-   "car": "5-series|e39"
+   "engine": "m57d30"
   },
   "m60-m62": {
    "car": "x5|e53"
@@ -8180,7 +8182,7 @@
    "car": "3-series|e90"
   },
   "n62-n63": {
-   "car": "x5|e70"
+   "engine": "n63b44"
   },
   "s14": {
    "car": "m3|e30"

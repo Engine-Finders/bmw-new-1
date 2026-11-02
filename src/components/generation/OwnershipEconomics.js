@@ -128,12 +128,12 @@ function takeawayIcon(question = "") {
   return "info";
 }
 
-export default function OwnershipEconomics({ data }) {
+export default function OwnershipEconomics({ data, band = "tint" }) {
   const { theme } = useTheme();
   if (!data) return null;
 
   const isDark = theme === "dark";
-  const sectionBg = generationSectionBg(isDark, true);
+  const sectionBg = generationSectionBg(isDark, band !== "plain");
   const title = splitOwnershipEconomicsH2(data.h2 || "Ownership Economics");
   const headerBg = tableHeaderClass(isDark);
   const headerDivider = isDark ? "border-[var(--color-page)]/20" : "border-white/25";

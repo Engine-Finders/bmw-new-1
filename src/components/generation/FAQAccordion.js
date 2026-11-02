@@ -31,13 +31,13 @@ function FAQItem({ item, isOpen, onToggle, isDark }) {
   );
 }
 
-export default function FAQAccordion({ data }) {
+export default function FAQAccordion({ data, band = "tint" }) {
   const { theme } = useTheme();
   const [openId, setOpenId] = useState(null);
   if (!data) return null;
 
   const isDark = theme === "dark";
-  const sectionBg = generationSectionBg(isDark, true);
+  const sectionBg = generationSectionBg(isDark, band !== "plain");
   const title = splitFaqH2(data.h2 || "Frequently Asked Questions");
   const items = data.items || [];
   const mid = Math.ceil(items.length / 2);

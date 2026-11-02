@@ -160,8 +160,8 @@ function DesktopTable({ data, isDark }) {
       {(data.profiles || []).map((row, rowIndex) => (
         <div key={`${row.key}-${rowIndex}`} className={s.tr} role="row">
           <span className={s.cProfile} role="rowheader">
-            <span className={s.car}>
-              {row.images?.light ? <Image src={isDark ? row.images.dark || row.images.light : row.images.light} alt="" fill className={s.img} sizes="(min-width: 1024px) 17vw, 1px" /> : null}
+            <span className={`${s.car} ${isCutout(row.images, data.sideCar) ? s.carCutout : ""}`}>
+              {carOf(row, data.sideCar) ? <Image src={carOf(row, data.sideCar, isDark)} alt="" fill className={s.img} sizes="(min-width: 1024px) 17vw, 1px" /> : null}
             </span>
             <span className={s.badge}>
               <Icon name={row.icon} className={s.badgeIcon} />
@@ -183,8 +183,9 @@ function PhoneCards({ data }) {
     <div className={s.cards}>
       {(data.profiles || []).map((row, rowIndex) => (
         <article key={`${row.key}-${rowIndex}`} className={s.card}>
-          <span className={s.cardCar}>
-            {row.images?.light ? <Image src={row.images.phone || row.images.light} alt="" fill className={s.img} sizes="(max-width: 1023px) 30vw, 1px" /> : null}
+          {/* Cut-out car photos (no dedicated phone crop) are shown whole in a wide box, wheels and all. */}
+          <span className={`${s.cardCar} ${isCutout(row.images, data.sideCar) ? s.cardCutout : ""}`}>
+            {carOf(row, data.sideCar) ? <Image src={carOf(row, data.sideCar, false, true)} alt="" fill className={s.img} sizes="(max-width: 1023px) 40vw, 1px" /> : null}
           </span>
           <span className={s.badge}>
             <Icon name={row.icon} className={s.badgeIcon} />
@@ -198,6 +199,20 @@ function PhoneCards({ data }) {
       ))}
     </div>
   );
+}
+
+// Library car photos (/cars/…) are transparent cut-outs; the reference pages ship their own phone crops.
+// A row's own photo, else the model's matched side cut-out (models with no library photos, e.g. 7 Series, XM, 2002).
+function carOf(row, sideCar, isDark = false, phone = false) {
+  const images = row.images || {};
+  const own = phone ? images.phone || images.light : isDark ? images.dark || images.light : images.light;
+  return own || sideCar || null;
+}
+
+function isCutout(images = {}, sideCar) {
+  const src = images.phone || images.light || "";
+  if (!src) return Boolean(sideCar);
+  return !images.phone || src.startsWith("/cars/");
 }
 
 // Model JSONs migrated to the reference design carry `proof`; the rest keep the previous layout.

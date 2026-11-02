@@ -289,13 +289,13 @@ function ProblemCard({ problem, isDark }) {
   );
 }
 
-export default function CommonProblems({ data }) {
+export default function CommonProblems({ data, band = "tint" }) {
   const { theme } = useTheme();
   const [openId, setOpenId] = useState(null);
   if (!data) return null;
 
   const isDark = theme === "dark";
-  const sectionBg = generationSectionBg(isDark, true);
+  const sectionBg = generationSectionBg(isDark, band !== "plain");
   const title = splitCommonProblemsH2(data.h2 || "Common Problems");
 
   return (

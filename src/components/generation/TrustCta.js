@@ -56,12 +56,12 @@ function TrustPoint({ point, icon, isDark }) {
   );
 }
 
-export default function TrustCta({ data }) {
+export default function TrustCta({ data, band = "tint" }) {
   const { theme } = useTheme();
   if (!data) return null;
 
   const isDark = theme === "dark";
-  const sectionBg = generationSectionBg(isDark, true);
+  const sectionBg = generationSectionBg(isDark, band !== "plain");
   const title = splitTrustCtaH2(data.h2 || "Trust BMWEngines.uk");
   // The model's line-up scene (set server-side), else BMW's own background.
   const image = data.image || heroBackground(isDark);

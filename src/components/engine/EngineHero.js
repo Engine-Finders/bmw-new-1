@@ -214,14 +214,14 @@ const LEAD_SIZE = {
   long: "lg:max-w-none",
 };
 
-function Lead({ text, tight }) {
+function Lead({ text, tight, narrow }) {
   const parts = leadParts(text || "");
   if (!parts.length) return null;
   const length = leadLength(text);
   const size = length > 240 ? LEAD_SIZE.long : length > 200 ? LEAD_SIZE.mid : LEAD_SIZE.short;
   return (
     <p
-      className={`mt-3 max-w-[560px] text-[16px] leading-[1.5] text-[var(--eg-muted)] md:mt-5 md:max-w-[620px] md:text-[18px] ${size} ${tight ? "lg:mt-3" : ""}`}
+      className={`mt-3 max-w-[560px] leading-[1.5] text-[var(--eg-muted)] md:mt-5 md:max-w-[620px] md:text-[18px] ${narrow ? "text-[15px]" : "text-[16px]"} ${size} ${tight ? "lg:mt-3" : ""}`}
     >
       {parts.map((part, i) =>
         part.href ? (
@@ -288,17 +288,17 @@ function TrustBar() {
   if (!items.length) return null;
   return (
     <ul
-      className={`${CARD} mt-4 grid grid-cols-[repeat(4,auto)] px-0.5 py-4 backdrop-blur-md max-[359px]:grid-cols-2 max-[359px]:gap-y-4 md:mt-7 md:grid-cols-4 md:px-2 md:py-6 lg:flex lg:px-0 lg:py-0 xl:mt-8`}
+      className={`${CARD} mt-4 grid grid-cols-[1.2fr_1.06fr_1.1fr_0.92fr] px-0.5 py-4 max-[389px]:px-0 backdrop-blur-md max-[369px]:grid-cols-2 max-[369px]:gap-y-4 md:mt-7 md:grid-cols-4 md:px-2 md:py-6 lg:flex lg:px-0 lg:py-0 xl:mt-8`}
     >
       {items.map((item, index) => (
         <li
           key={item.title}
-          className="relative flex min-w-0 flex-col items-center gap-2 px-1 text-center md:gap-3 md:px-2 lg:flex-auto lg:flex-row lg:gap-4 lg:px-5 lg:py-6 lg:text-left xl:gap-5 xl:px-7 xl:py-7 2xl:px-8"
+          className="relative flex min-w-0 flex-col items-center gap-2 px-0.5 text-center max-[389px]:px-0 md:gap-3 md:px-2 lg:flex-auto lg:flex-row lg:gap-4 lg:px-5 lg:py-6 lg:text-left xl:gap-5 xl:px-7 xl:py-7 2xl:px-8"
         >
           {index > 0 ? (
             <span
               aria-hidden
-              className={`absolute left-0 top-1/2 h-[86%] w-px -translate-y-1/2 bg-[var(--eg-divider)] lg:h-[44%] ${index === 2 ? "max-[359px]:hidden" : ""}`}
+              className={`absolute left-0 top-1/2 h-[86%] w-px -translate-y-1/2 bg-[var(--eg-divider)] lg:h-[44%] ${index === 2 ? "max-[369px]:hidden" : ""}`}
             />
           ) : null}
           <EIcon
@@ -316,7 +316,7 @@ function TrustBar() {
                 </Fragment>
               ))}
             </p>
-            <p className="mt-1 text-[12px] leading-[1.35] text-[var(--eg-muted)] md:text-[14px] xl:mt-1.5 xl:text-[15px]">{item.text}</p>
+            <p className="mt-1 text-[12px] leading-[1.35] text-[var(--eg-muted)] [text-wrap:balance] max-[389px]:tracking-[-0.025em] md:text-[14px] xl:mt-1.5 xl:text-[15px]">{item.text}</p>
           </div>
         </li>
       ))}
@@ -329,7 +329,7 @@ function HeroVisual({ engineImage, heroCar, code, isDark }) {
   const engineSrc = typeof engineImage === "string" ? engineImage : engineImage?.src;
   if (engineSrc) {
     return (
-      <div className="pointer-events-none relative mx-auto -mb-[11%] -mt-[2%] aspect-square w-[86%] max-w-[400px] md:-mb-[7%] md:-mt-[4%] md:max-w-[480px] lg:absolute lg:inset-x-[3%] lg:bottom-[-92px] lg:top-[-26px] lg:m-0 lg:aspect-auto lg:w-auto lg:max-w-none">
+      <div className="pointer-events-none relative aspect-square w-full max-w-[300px] justify-self-end lg:absolute lg:justify-self-auto lg:inset-x-[9%] lg:bottom-[-70px] lg:top-[-6px] lg:m-0 lg:aspect-auto lg:w-auto lg:max-w-none">
         {isDark ? (
           <span
             aria-hidden
@@ -353,7 +353,7 @@ function HeroVisual({ engineImage, heroCar, code, isDark }) {
     return (
       <div
         style={{ "--ar": `${heroCar.width} / ${heroCar.height}` }}
-        className="pointer-events-none relative mx-auto mt-6 w-[92%] max-w-[480px] [aspect-ratio:var(--ar)] md:mt-8 md:max-w-[560px] lg:absolute lg:inset-x-0 lg:bottom-[6px] lg:top-[72px] lg:m-0 lg:mx-auto lg:w-[94%] lg:max-w-[620px] lg:[aspect-ratio:auto]"
+        className="pointer-events-none relative mx-auto mt-6 w-[86%] max-w-[440px] [aspect-ratio:var(--ar)] md:mt-8 md:max-w-[520px] lg:absolute lg:inset-x-0 lg:bottom-[6px] lg:top-[72px] lg:m-0 lg:mx-auto lg:w-[94%] lg:max-w-[620px] lg:[aspect-ratio:auto]"
       >
         <span
           aria-hidden
@@ -433,15 +433,25 @@ export default function EngineHero({ data, facts = {}, engineImage, heroCar }) {
       </div>
 
       <div className="site-container relative pb-10 pt-5 md:pb-12 md:pt-8 lg:pb-12 lg:pt-8 xl:pt-9">
-        <div className="grid lg:grid-cols-[52fr_48fr] lg:gap-x-6 xl:grid-cols-[48fr_52fr]">
-          <div className="relative z-10 min-w-0">
-            <Pill items={items} isDark={isDark} wide={!hasEngine} />
-            <div className="mt-4 md:mt-6">
+        {/* Phones/tablets: pill and H1 full width, then the lead with the engine beside it (the car, being wide,
+            goes under the lead). Desktop: text column | image column. */}
+        <div className="grid grid-cols-[minmax(0,1fr)_42%] gap-x-3 md:grid-cols-[minmax(0,1fr)_36%] md:gap-x-6 lg:grid-cols-[52fr_48fr] xl:grid-cols-[48fr_52fr]">
+          <div className="contents lg:relative lg:z-10 lg:block lg:min-w-0">
+            <div className="relative z-10 col-span-2 min-w-0 lg:col-span-1">
+              <Pill items={items} isDark={isDark} wide={!hasEngine} />
+            </div>
+            <div className="relative z-10 col-span-2 mt-4 min-w-0 md:mt-6 lg:col-span-1">
               <HeroTitle title={data.h1} code={code} />
             </div>
-            <Lead text={data.subHeadline} tight={tight} />
+            <div className={`relative z-10 min-w-0 ${hasEngine ? "col-start-1" : "col-span-2"} lg:col-span-1`}>
+              <Lead text={data.subHeadline} tight={tight} narrow={hasEngine} />
+            </div>
           </div>
-          <div className="relative min-w-0">
+          <div
+            className={`relative min-w-0 lg:col-start-2 lg:row-start-1 ${
+              hasEngine ? "col-start-2 row-start-3 self-center pt-3 md:pt-6 lg:self-auto lg:pt-0" : "col-span-2 lg:col-span-1"
+            }`}
+          >
             <HeroVisual engineImage={engineImage} heroCar={heroCar} code={code} isDark={isDark} />
           </div>
         </div>

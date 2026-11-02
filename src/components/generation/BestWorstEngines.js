@@ -5,6 +5,7 @@ import { useTheme } from "@/components/shared/themeProvider";
 import { engineImageFor } from "@/components/shared/carImage";
 import { variantFont as sectionFont } from "@/components/variant/variantFont";
 import ui from "@/data/shared/generationPageUi.json";
+import { bandColor } from "./generationSection";
 
 const UI = ui.bestWorstEngines;
 
@@ -327,7 +328,7 @@ function PhoneCard({ item, generationCode }) {
   );
 }
 
-export default function BestWorstEngines({ data }) {
+export default function BestWorstEngines({ data, band = "tint" }) {
   const { theme } = useTheme();
   if (!data) return null;
 
@@ -339,7 +340,7 @@ export default function BestWorstEngines({ data }) {
   const wide = items.filter(isWide);
   // One row of up to five cards from 1440px (the design); narrower desktops and six or more cards go three to a row.
   const cols = cards.length <= 5 ? cards.length : 3;
-  const vars = TONES[isDark ? "dark" : "light"];
+  const vars = { ...TONES[isDark ? "dark" : "light"], "--bw-bg": bandColor(isDark, band) };
   const heading = String(data.h2 || UI.eyebrow);
 
   return (

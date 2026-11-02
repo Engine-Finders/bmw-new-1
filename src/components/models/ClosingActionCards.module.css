@@ -365,7 +365,8 @@
     bottom: auto;
     order: 9;
     align-self: flex-end;
-    margin-top: -34px;
+    /* below the intro, never over it */
+    margin-top: 12px;
   }
 
   .light .hero {
@@ -383,8 +384,9 @@
     margin-top: 12px;
   }
 
+  /* the line-up sits under the card copy: the card reserves its full height plus a gap below "Explore Now" */
   .card.art-lineup {
-    padding-bottom: calc(35 * var(--u) + 58px);
+    padding-bottom: calc(min(300px, 80cqw) * 114 / 465 + 34px);
   }
 
   .art-lineup .art,
@@ -398,7 +400,7 @@
 
   /* dark uses the taller transparent line-up photo */
   .dark .card.art-lineup {
-    padding-bottom: calc(35 * var(--u) + 76px);
+    padding-bottom: calc(min(220px, 58cqw) * 228 / 706 + 34px);
   }
 
   .dark .art-lineup .art {
@@ -407,18 +409,21 @@
     width: min(220px, 58cqw);
   }
 
+  /* faded corner art: kept to the top-right corner, clear of the title and copy */
   .art-engine .art {
     left: auto;
-    right: calc(-70 * var(--u));
-    width: calc(360 * var(--u));
-    opacity: 0.6;
+    right: -18px;
+    top: -6px;
+    width: min(132px, 34cqw);
+    opacity: 0.35;
   }
 
   .art-map .art {
     left: auto;
-    right: calc(-40 * var(--u));
-    width: calc(240 * var(--u));
-    opacity: 0.6;
+    right: -10px;
+    top: 4px;
+    width: min(92px, 24cqw);
+    opacity: 0.35;
   }
 }
 
@@ -600,5 +605,120 @@
 @media (min-width: 1024px) {
   .head {
     margin-left: 0;
+  }
+}
+
+/* ======================= Tablets and up: nothing overlaps ======================= */
+/* Heading copy | line-up photo side by side in normal flow (the photo can never drop into the cards), and each
+   card's art lives in the band above the card title (it can never cover the title, copy or link). */
+@container (min-width: 561px) {
+  .head {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 46%);
+    column-gap: 24px;
+    align-items: end;
+  }
+
+  .head > .title,
+  .head > .bar,
+  .head > .intro {
+    grid-column: 1;
+  }
+
+  .light .hero,
+  .dark .hero {
+    position: relative;
+    inset: auto;
+    grid-column: 2;
+    grid-row: 1 / span 3;
+    align-self: end;
+    width: 100%;
+    margin: 0;
+  }
+
+  .dark .hero {
+    overflow: hidden;
+    border-radius: 12px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .card .art,
+  .dark .card .art,
+  .art-lineup .art,
+  .dark .art-lineup .art,
+  .art-engine .art,
+  .art-map .art {
+    top: 14px;
+    right: 14px;
+    left: calc(116 * var(--u));
+    width: auto;
+    height: calc(179.5 * var(--u) - 28px);
+    aspect-ratio: auto;
+  }
+
+  .card .artImg {
+    object-position: right center;
+  }
+}
+
+/* The heading image is a wide photo on some models and a car cut-out on others: the box takes the image's own
+   shape (no fixed ratio), so there is never an empty band above or below it. */
+.light .hero,
+.dark .hero {
+  aspect-ratio: auto;
+}
+
+.hero .heroImg {
+  position: static !important;
+  display: block;
+  width: 100% !important;
+  height: auto !important;
+}
+
+.light .hero:has(.heroImg[src*="/cars/"]),
+.dark .hero:has(.heroImg[src*="/cars/"]) {
+  border-radius: 0;
+}
+
+@container (min-width: 561px) {
+  .light .hero {
+    overflow: hidden;
+    border-radius: 12px;
+  }
+}
+
+/* Tablets: cards are full-width rows; the art gets its own column on the right, clear of the copy. */
+@media (min-width: 561px) and (max-width: 1023px) {
+  .card .art,
+  .dark .card .art,
+  .art-lineup .art,
+  .dark .art-lineup .art,
+  .art-engine .art,
+  .art-map .art {
+    top: 50%;
+    right: 16px;
+    bottom: auto;
+    left: auto;
+    width: min(190px, 24%);
+    height: auto;
+    aspect-ratio: 4 / 3;
+    opacity: 1;
+    transform: translateY(-50%);
+  }
+
+  .card .body {
+    margin-right: calc(min(190px, 24%) + 20px);
+  }
+}
+
+/* Phones: a photo sits inside the side margins with rounded corners; a transparent car cut-out keeps its bleed. */
+@container (max-width: 560px) {
+  .light .hero:not(:has(.heroImg[src*="/cars/"])),
+  .dark .hero:not(:has(.heroImg[src*="/cars/"])) {
+    width: 100%;
+    margin-right: 0;
+    overflow: hidden;
+    border-radius: 12px;
   }
 }

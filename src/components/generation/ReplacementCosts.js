@@ -136,12 +136,12 @@ function FuelTable({ title, icon, rows, isDark, tone }) {
   );
 }
 
-export default function ReplacementCosts({ data }) {
+export default function ReplacementCosts({ data, band = "tint" }) {
   const { theme } = useTheme();
   if (!data) return null;
 
   const isDark = theme === "dark";
-  const sectionBg = generationSectionBg(isDark, true);
+  const sectionBg = generationSectionBg(isDark, band !== "plain");
   const title = splitReplacementCostsH2(data.h2 || "Engine Replacement Costs");
   const headerBg = tableHeaderClass(isDark);
   const headerDivider = isDark ? "border-[var(--color-page)]/20" : "border-white/25";

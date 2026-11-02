@@ -5,6 +5,7 @@ import { useTheme } from "@/components/shared/themeProvider";
 import CarOnBackground from "@/components/shared/CarOnBackground";
 import { variantFont as sectionFont } from "@/components/variant/variantFont";
 import ui from "@/data/shared/generationPageUi.json";
+import { bandColor } from "./generationSection";
 
 const UI = ui.overview;
 
@@ -139,7 +140,7 @@ function Art({ data, src, isDark, sizes, carClassName, imageClassName, priority 
   );
 }
 
-export default function Overview({ data }) {
+export default function Overview({ data, band = "plain" }) {
   const { theme } = useTheme();
   if (!data) return null;
 
@@ -149,15 +150,16 @@ export default function Overview({ data }) {
   const art = data.art;
   const wideSrc = art ? (isDark ? art.dark : art.light) : null;
   const tallSrc = art ? (isDark ? art.mobileDark : art.mobileLight) || wideSrc : null;
-  const vars = TONES[isDark ? "dark" : "light"];
+  const vars = { ...TONES[isDark ? "dark" : "light"], "--ov-bg": bandColor(isDark, band) };
 
   // Phones and tablets follow the phone design (sizes are its px ÷ 10.24, the design being 1024px wide),
   // capped at the desktop sizes so tablets never outgrow the desktop layout.
-  // Phones: key facts two to a row (four across squeezes the labels into each other); tablets up: one row.
+  // Key facts stay one row at every width. Phones: the row scrolls sideways (values run to ~100 characters, too long for
+  // four columns at 390px), ~2½ facts in view; tablets up: four columns.
   const factCols =
     facts.length === 4
-      ? "grid-cols-2 gap-y-4 md:gap-y-0 md:grid-cols-[260fr_199fr_175fr_306fr] xl:grid-cols-[minmax(0,1.2fr)_minmax(0,1.1fr)_minmax(0,1fr)_minmax(0,1.25fr)]"
-      : "grid-cols-2 gap-y-4 md:grid-flow-col md:auto-cols-fr md:grid-cols-none md:gap-y-0";
+      ? "md:grid-cols-[260fr_199fr_175fr_306fr] xl:grid-cols-[minmax(0,1.2fr)_minmax(0,1.1fr)_minmax(0,1fr)_minmax(0,1.25fr)]"
+      : "md:grid-flow-col md:auto-cols-fr";
 
   return (
     <section style={vars} className={`relative w-full overflow-hidden bg-[var(--ov-bg)] text-[var(--ov-text)] ${sectionFont.className}`}>
@@ -212,12 +214,14 @@ export default function Overview({ data }) {
           {facts.length ? (
             <div className="-mx-[1.76vw] mt-[3vw] rounded-[min(2.1vw,14px)] border border-[var(--ov-line)] bg-[var(--ov-card)] px-[3.1vw] pb-[2.6vw] pt-[3vw] [box-shadow:var(--ov-shadow)] xl:mx-0 xl:mt-5 xl:rounded-[14px] xl:px-7 xl:pb-5 xl:pt-5">
               <p className="text-[clamp(14px,2.05vw,15px)] font-medium uppercase tracking-[0.03em] text-[var(--ov-blue)] xl:text-[14px]">{UI.keyFacts}</p>
-              <ul className={`mt-[2vw] grid ${factCols} xl:mt-3`}>
+              <ul
+                className={`-mx-[3.1vw] mt-3 flex snap-x snap-mandatory overflow-x-auto overscroll-x-contain px-[3.1vw] [scrollbar-width:none] md:mx-0 md:mt-[2vw] md:grid md:overflow-visible md:px-0 ${factCols} xl:mt-3 [&::-webkit-scrollbar]:hidden`}
+              >
                 {facts.map((fact, index) => (
                   <li
                     key={`${fact.label}-${index}`}
-                    className={`flex min-w-0 flex-col items-center px-[1.2vw] text-center xl:flex-row xl:items-center xl:gap-2 xl:px-3 xl:text-left xl:first:pl-0 ${
-                      index % 2 ? "border-l border-[var(--ov-line)]" : index ? "border-[var(--ov-line)] md:border-l" : ""
+                    className={`flex w-[42%] min-w-0 shrink-0 snap-start flex-col items-center px-3 text-center md:w-auto md:px-[1.2vw] xl:flex-row xl:items-center xl:gap-2 xl:px-3 xl:text-left xl:first:pl-0 ${
+                      index ? "border-l border-[var(--ov-line)]" : ""
                     }`}
                   >
                     <span className="text-[var(--ov-blue)] [[data-theme=dark]_&]:xl:text-white">

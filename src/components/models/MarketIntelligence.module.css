@@ -857,6 +857,18 @@
     aspect-ratio: 392 / 285;
     clip-path: none;
   }
+
+  /* side cut-outs carry empty space above and below the car: crop to the car */
+  .quoteCar.quoteCutout {
+    width: auto;
+    margin: 0 14px 14px;
+    aspect-ratio: 13 / 5;
+  }
+
+  .quoteCutout .quoteImg {
+    object-fit: cover;
+    object-position: 50% 68%;
+  }
 }
 
 /* ======================= Laptops and desktops ======================= */
@@ -1314,5 +1326,236 @@
 
   .statText span {
     font-size: max(13px, calc(13.4 * var(--u)));
+  }
+}
+
+/* ======================= Editorial pull-quote (one design, every model page) ======================= */
+
+.pq {
+  --pq-bg: linear-gradient(120deg, #ffffff 0%, #f4f8ff 55%, #e9f1ff 100%);
+  --pq-border: #d9e4f6;
+  --pq-accent: #1555e3;
+  --pq-title: #0d1440;
+  --pq-text: #333b59;
+  --pq-stage: radial-gradient(70% 80% at 55% 60%, rgba(21, 85, 227, 0.16), rgba(21, 85, 227, 0) 70%);
+  --pq-floor: rgba(13, 20, 64, 0.22);
+  --pq-watermark: rgba(21, 85, 227, 0.06);
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 38%);
+  align-items: center;
+  gap: 24px;
+  margin: 24px 0 0;
+  padding: 28px 28px 28px 32px;
+  overflow: hidden;
+  border: 1px solid var(--pq-border);
+  border-left: 4px solid var(--pq-accent);
+  border-radius: 14px;
+  background: var(--pq-bg);
+  box-shadow: 0 14px 40px rgba(13, 20, 64, 0.08);
+}
+
+.dark .pq {
+  --pq-bg: linear-gradient(120deg, #04101d 0%, #061833 60%, #0a2550 100%);
+  --pq-border: rgba(80, 120, 190, 0.32);
+  --pq-accent: #2f6df0;
+  --pq-title: #f6f9fd;
+  --pq-text: #d1d5dd;
+  --pq-stage: radial-gradient(70% 80% at 55% 60%, rgba(47, 109, 240, 0.38), rgba(47, 109, 240, 0) 70%);
+  --pq-floor: rgba(0, 0, 0, 0.55);
+  --pq-watermark: rgba(120, 160, 240, 0.07);
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.4);
+}
+
+.pqWatermark {
+  position: absolute;
+  top: -18px;
+  right: 34%;
+  color: var(--pq-watermark);
+  pointer-events: none;
+}
+
+.pqWatermarkSvg {
+  display: block;
+  width: 180px;
+  height: 180px;
+}
+
+.pqBody {
+  position: relative;
+  min-width: 0;
+}
+
+.pqHead {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.pqMark {
+  display: flex;
+  flex: none;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: var(--pq-accent);
+  box-shadow: 0 8px 20px color-mix(in srgb, var(--pq-accent) 40%, transparent);
+  color: #ffffff;
+}
+
+.pqMarkSvg {
+  width: 22px;
+  height: 22px;
+}
+
+.pqHeadText {
+  min-width: 0;
+}
+
+.pqLabel {
+  margin: 0;
+  color: var(--pq-accent);
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+.dark .pqLabel {
+  color: #6f9cff;
+}
+
+.pqTitle {
+  margin: 2px 0 0;
+  color: var(--pq-title);
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  line-height: 1.3;
+  text-wrap: balance;
+}
+
+.pqText {
+  margin: 18px 0 0;
+  padding: 0;
+  color: var(--pq-text);
+  font-size: 17px;
+  font-style: normal;
+  line-height: 1.65;
+}
+
+.pqStage {
+  position: relative;
+  align-self: stretch;
+  min-height: 190px;
+}
+
+.pqGlow {
+  position: absolute;
+  inset: -10% -6% -10% -6%;
+  background: var(--pq-stage);
+}
+
+.pqFloor {
+  position: absolute;
+  right: 8%;
+  bottom: 10%;
+  left: 8%;
+  height: 14%;
+  border-radius: 50%;
+  background: radial-gradient(closest-side, var(--pq-floor), transparent);
+  filter: blur(4px);
+}
+
+.pqCar {
+  position: absolute;
+  inset: 12% 2% 14%;
+}
+
+.pqImg {
+  object-fit: contain;
+  object-position: center bottom;
+}
+
+.pqCarLoose .pqImg {
+  transform: scale(1.3);
+  transform-origin: center 62%;
+}
+
+/* Tablets: a little tighter */
+@media (max-width: 1023px) {
+  .pq {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 36%);
+    padding: 24px 20px 24px 24px;
+  }
+
+  .pqTitle {
+    font-size: 19px;
+  }
+
+  .pqText {
+    font-size: 15px;
+  }
+}
+
+/* Phones: stacked — head, quote, then the car on its stage */
+@media (max-width: 639px) {
+  .pq {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 6px;
+    margin-top: 16px;
+    padding: 20px 18px 8px 18px;
+    border-left-width: 3px;
+  }
+
+  .pqWatermark {
+    right: -12px;
+    top: -26px;
+  }
+
+  .pqWatermarkSvg {
+    width: 130px;
+    height: 130px;
+  }
+
+  .pqHead {
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .pqMark {
+    width: 42px;
+    height: 42px;
+  }
+
+  .pqMarkSvg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .pqLabel {
+    font-size: 13px;
+  }
+
+  .pqTitle {
+    font-size: 18px;
+  }
+
+  .pqText {
+    margin-top: 14px;
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  .pqStage {
+    min-height: 0;
+    aspect-ratio: 16 / 7.5;
+  }
+
+  .pqCar {
+    inset: 10% 6% 14%;
   }
 }

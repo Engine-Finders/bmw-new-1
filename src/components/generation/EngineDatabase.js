@@ -4,7 +4,7 @@ import { useId } from "react";
 import { useTheme } from "@/components/shared/themeProvider";
 import { variantFont as sectionFont } from "@/components/variant/variantFont";
 import ui from "@/data/shared/generationPageUi.json";
-import { splitEngineDatabaseH2 } from "./generationSection";
+import { bandColor, splitEngineDatabaseH2 } from "./generationSection";
 
 const UI = ui.engineDatabase;
 
@@ -272,7 +272,7 @@ function FuelCell({ fuel, phone }) {
   return (
     <span className="flex min-w-0 items-center gap-1.5">
       <FuelIcon fuel={fuel} className={`shrink-0 ${phone ? "h-5 w-5" : "h-[22px] w-[22px]"}`} />
-      <Stack main={main} sub={sub} subClass={phone ? "text-[11px] md:text-[13px] lg:text-[14px] leading-tight" : "whitespace-nowrap text-[14px] leading-tight"} className={phone ? "text-[14px]" : ""} />
+      <Stack main={main} sub={sub} subClass={phone ? "text-[13px] md:text-[13px] lg:text-[14px] leading-tight" : "text-[14px] leading-tight"} className={phone ? "text-[14px]" : ""} />
     </span>
   );
 }
@@ -573,7 +573,7 @@ function Stripes() {
   );
 }
 
-export default function EngineDatabase({ data }) {
+export default function EngineDatabase({ data, band = "tint" }) {
   const { theme } = useTheme();
   if (!data) return null;
 
@@ -586,12 +586,17 @@ export default function EngineDatabase({ data }) {
   const columns = UI.columns.map((label, index) => data.columns?.[index] || label);
   // "BMW 3 Series E90 Engine Codes" -> "E90" for the data note.
   const code = (String(data.h2 || "").match(/^BMW .*?\s(\S+)\s+(?:Engine|Powertrain) Codes/) || [])[1] || "";
-  const vars = { ...TONES[isDark ? "dark" : "light"], "--db-solid": isDark ? "#0e1f33" : "#ffffff" };
+  const vars = { ...TONES[isDark ? "dark" : "light"], "--db-solid": isDark ? "#0e1f33" : "#ffffff", "--db-bg": bandColor(isDark, band) };
+  // Tinted band: the design's soft vertical gradient; plain band: flat page colour.
+  const gradient =
+    band === "plain"
+      ? ""
+      : "[background-image:linear-gradient(180deg,var(--db-bg)_0%,color-mix(in_srgb,var(--db-bg)_70%,#dfe9f7)_100%)] [[data-theme=dark]_&]:[background-image:linear-gradient(180deg,#0b1826_0%,#0c2140_100%)]";
 
   return (
     <section
       style={vars}
-      className={`relative w-full overflow-hidden bg-[var(--db-bg)] [background-image:linear-gradient(180deg,var(--db-bg)_0%,color-mix(in_srgb,var(--db-bg)_70%,#dfe9f7)_100%)] [[data-theme=dark]_&]:[background-image:linear-gradient(180deg,#0b1826_0%,#0c2140_100%)] ${sectionFont.className}`}
+      className={`relative w-full overflow-hidden bg-[var(--db-bg)] ${gradient} ${sectionFont.className}`}
     >
       <Stripes />
       <div className="site-container relative pb-[4vw] pt-[4vw] max-md:px-0 md:pb-12 md:pt-10 lg:pb-14">

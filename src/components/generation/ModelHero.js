@@ -187,7 +187,7 @@ function PhoneStrip({ items, isDark }) {
   const captions = ui.hero?.trustCaptions || [];
   return (
     <ul
-      className={`mt-5 grid grid-cols-2 gap-y-5 rounded-[12px] border px-1 py-5 md:mt-6 md:grid-cols-4 md:gap-y-0 md:px-3 lg:hidden ${
+      className={`mt-5 grid grid-cols-4 rounded-[12px] border px-1 py-4 md:mt-6 md:px-3 md:py-5 lg:hidden ${
         isDark ? "border-white/15 bg-[rgba(11,24,38,0.72)]" : "border-[#e6eaf0] bg-white shadow-[0_8px_24px_rgba(10,26,43,0.06)]"
       }`}
     >
@@ -195,26 +195,26 @@ function PhoneStrip({ items, isDark }) {
         const stat = splitStat(item.label);
         const caption = captions[index];
         return (
-          <li key={item.label} className="relative flex min-w-0 flex-col items-center px-2 text-center text-[var(--hero-text)]">
-            {/* Phones: two to a row, so only the right-hand item gets a divider; tablets: four across. */}
-            {index ? <span aria-hidden="true" className={`absolute left-0 top-0 h-full w-px ${index % 2 ? "" : "hidden md:block"} ${isDark ? "bg-white/12" : "bg-[#e6eaf0]"}`} /> : null}
+          <li key={item.label} className="relative flex min-w-0 flex-col items-center px-1 text-center text-[var(--hero-text)] md:px-2">
+            {/* One row of four; short centred dividers between them. */}
+            {index ? <span aria-hidden="true" className={`absolute left-0 top-1/2 h-[70%] w-px -translate-y-1/2 ${isDark ? "bg-white/12" : "bg-[#e6eaf0]"}`} /> : null}
             <span
-              className={`flex h-11 w-11 items-center justify-center rounded-full border md:h-14 md:w-14 ${
+              className={`flex h-10 w-10 items-center justify-center rounded-full border md:h-14 md:w-14 ${
                 isDark ? "border-[var(--hero-blue)] bg-[#0f2236] text-white" : "border-[#d9e2ee] bg-white text-[var(--hero-blue)]"
               }`}
             >
-              <Icon name={STAT_ICONS.phone[index] || "bars"} strokeWidth={2} className="h-[22px] w-[22px] md:h-7 md:w-7" />
+              <Icon name={STAT_ICONS.phone[index] || "bars"} strokeWidth={2} className="h-5 w-5 md:h-7 md:w-7" />
             </span>
-            {stat.value ? <strong className="mt-3 block text-[18px] font-semibold leading-[1.2] md:text-[20px]">{stat.value}</strong> : null}
-            {stat.lead ? <strong className="mt-3 block text-[14px] font-semibold leading-[1.35] md:text-[15px]">{stat.lead}</strong> : null}
+            {stat.value ? <strong className="mt-2.5 block text-[17px] font-semibold leading-[1.2] md:mt-3 md:text-[20px]">{stat.value}</strong> : null}
+            {stat.lead ? <strong className="mt-2.5 block text-[13px] font-semibold leading-[1.3] [text-wrap:balance] md:mt-3 md:text-[15px]">{stat.lead}</strong> : null}
             <span
               className={`block leading-[1.35] ${
                 stat.value
-                  ? "mt-1 text-[13px] md:text-[14px]"
+                  ? "mt-1 text-[12.5px] [text-wrap:balance] md:text-[14px]"
                   : stat.lead
-                    ? "text-[14px] font-semibold md:text-[15px]"
+                    ? "text-[13px] font-semibold md:text-[15px]"
                     : // Long body lists ("Saloon/Coupé/Convertible/…") step down so each part fits its column.
-                      `mt-3 font-semibold [overflow-wrap:anywhere] ${stat.label.length > 14 ? "text-[14px] md:text-[15px]" : "text-[15px] md:text-[17px]"}`
+                      `mt-2.5 font-semibold [overflow-wrap:anywhere] [text-wrap:balance] md:mt-3 ${stat.label.length > 14 ? "text-[13px] md:text-[15px]" : "text-[15px] md:text-[17px]"}`
               }`}
             >
               {stat.label}
@@ -225,7 +225,7 @@ function PhoneStrip({ items, isDark }) {
                 {stat.tag}
               </span>
             ) : null}
-            {caption ? <span className="mt-1 block text-[13px] leading-[1.35] opacity-85 md:text-[14px]">{caption}</span> : null}
+            {caption ? <span className="mt-1 block text-[12.5px] leading-[1.3] opacity-85 [text-wrap:balance] md:text-[14px]">{caption}</span> : null}
           </li>
         );
       })}

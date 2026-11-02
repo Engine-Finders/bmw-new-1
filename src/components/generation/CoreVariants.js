@@ -47,7 +47,7 @@ export default function CoreVariants({ data, grouped = false, className = "" }) 
 
   const isDark = theme === "dark";
   const sectionBg = grouped ? "" : generationSectionBg(isDark, true);
-  const headerBg = generationSectionBg(isDark, true);
+  const headerBg = grouped ? "bg-transparent" : generationSectionBg(isDark, true);
   const headerText =
     data.h2 ||
     [data.subheading, "Diesel & Petrol Lineup"].filter(Boolean).join(" - ");

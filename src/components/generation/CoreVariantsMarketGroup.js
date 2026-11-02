@@ -20,10 +20,10 @@ function SidebarCarImage({ image, fit, isDark, className = "" }) {
   );
 }
 
-export default function CoreVariantsMarketGroup({ coreVariants, marketIntelligence }) {
+export default function CoreVariantsMarketGroup({ coreVariants, marketIntelligence, band = "tint" }) {
   const { theme } = useTheme();
   const isDark = theme === "dark";
-  const sectionBg = generationSectionBg(isDark, true);
+  const sectionBg = generationSectionBg(isDark, band !== "plain");
 
   if (!coreVariants && !marketIntelligence) return null;
 

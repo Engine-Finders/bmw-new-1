@@ -952,6 +952,13 @@
     margin-top: 28px;
   }
 
+  /* Small laptops: six or seven columns leave ~130px cards, so chassis codes run into each other; four across instead. */
+  @media (max-width: 1279px) {
+    .cards {
+      grid-template-columns: repeat(min(var(--cols, 6), 4), minmax(0, 1fr));
+    }
+  }
+
   .cards[data-scroll] {
     max-height: var(--row1, 560px);
     padding: 2px 12px 6px 0;

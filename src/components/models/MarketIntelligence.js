@@ -199,32 +199,41 @@ function LiveFeed({ feed }) {
   );
 }
 
-function PullQuote({ quote, isDark }) {
+// One design on every model page: quote on the left, the model's side-view cut-out on a lit stage on the right
+// (stacked on phones). The library cut-out is preferred over per-page photos so every page matches.
+function PullQuote({ quote }) {
   if (!quote) return null;
   const images = quote.images || {};
+  const library = [quote.image, images.light, images.dark, images.phone].find((src) => /^\/cars\/.*-side\.webp$/.test(String(src || "")));
+  const car = quote.sideCar || library || null;
   return (
-    <div className={s.quote}>
-      <div className={s.quoteBody}>
-        <span className={s.quoteMark}>
-          <Icon name="quote" className={s.quoteSvg} />
-        </span>
-        <p className={s.quoteLabel}>{quote.label || "EDITORIAL PULL-QUOTE"}</p>
-        <h3 className={`${s.quoteTitle} ${s.deskBlock}`}>{oneLine(quote.title)}</h3>
-        <p className={`${s.quoteTitle} ${s.phoneBlock}`} dangerouslySetInnerHTML={{ __html: spaced(quote.titleMobile || quote.title) }} />
-        <p className={`${s.quoteText} ${s.deskBlock}`} dangerouslySetInnerHTML={{ __html: `“${spaced(quote.quote)}”` }} />
-        <p className={`${s.quoteText} ${s.phoneBlock}`}>“{oneLine(quote.quote)}”</p>
+    <figure className={s.pq}>
+      <span className={s.pqWatermark} aria-hidden="true">
+        <Icon name="quote" className={s.pqWatermarkSvg} />
+      </span>
+      <div className={s.pqBody}>
+        <div className={s.pqHead}>
+          <span className={s.pqMark} aria-hidden="true">
+            <Icon name="quote" className={s.pqMarkSvg} />
+          </span>
+          <div className={s.pqHeadText}>
+            <p className={s.pqLabel}>{quote.label || "Editorial pull-quote"}</p>
+            <h3 className={s.pqTitle}>{oneLine(quote.title)}</h3>
+          </div>
+        </div>
+        <blockquote className={s.pqText} dangerouslySetInnerHTML={{ __html: `“${oneLine(quote.quote)}”` }} />
       </div>
-      {images.light || quote.image ? (
-        <>
-          <div className={`${s.quoteCar} ${s.deskBlock}`}>
-            <Image src={(isDark ? images.dark : images.light) || quote.image} alt="" fill className={s.quoteImg} sizes="(min-width: 1024px) 36vw, 1px" />
-          </div>
-          <div className={`${s.quoteCar} ${s.phoneBlock}`}>
-            <Image src={images.phone || images.light || quote.image} alt="" fill className={s.quoteImg} sizes="(max-width: 1023px) 46vw, 1px" />
-          </div>
-        </>
+      {car ? (
+        <div className={s.pqStage} aria-hidden="true">
+          <span className={s.pqGlow} />
+          <span className={s.pqFloor} />
+          {/* library photos carry empty space around the car; zoom them to match the tight set */}
+          <span className={`${s.pqCar} ${quote.sideCar ? "" : s.pqCarLoose}`}>
+            <Image src={car} alt="" fill className={s.pqImg} sizes="(min-width: 1024px) 420px, 90vw" />
+          </span>
+        </div>
       ) : null}
-    </div>
+    </figure>
   );
 }
 
@@ -271,7 +280,7 @@ function MarketIntelligenceReference({ data, quote }) {
             <LiveFeed feed={data.liveFeed} />
           </div>
 
-          <PullQuote quote={quote} isDark={isDark} />
+          <PullQuote quote={quote} />
         </div>
       </div>
     </section>
