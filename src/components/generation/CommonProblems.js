@@ -188,6 +188,7 @@ function Field({ icon, label, html, className = "" }) {
 }
 
 // One tier: its label on a tinted bar, then Dealer | Specialist prices side by side, then the work and the note.
+// Prices wrap inside their cell: some carry a note in brackets ("£800–£1,500 (recall may apply)").
 // (The design squeezes label + both prices into one row; at readable sizes the prices need the card's full width.)
 function Tier({ tier }) {
   const catastrophic = /catastroph|replacement/i.test(tier.tier || "");
@@ -201,14 +202,14 @@ function Tier({ tier }) {
         <Icon name={catastrophic ? "warning" : "wrench"} className="h-4 w-4 shrink-0" />
         <span className={HTML} dangerouslySetInnerHTML={{ __html: tier.tier }} />
       </p>
-      <div className="grid grid-cols-2 border-t border-[var(--cp-line)]">
+      <div className="grid grid-cols-2 border-t border-[var(--cp-line)] [&>*]:min-w-0">
         <div className={cell}>
           <span className="block text-[12.5px] leading-tight text-[var(--cp-soft)]">Dealer</span>
-          <span className={`mt-0.5 block whitespace-nowrap text-[14.5px] font-medium leading-tight text-[var(--cp-text)] ${HTML}`} dangerouslySetInnerHTML={{ __html: dash(tier.dealer) || "—" }} />
+          <span className={`mt-0.5 block text-[14.5px] font-medium leading-tight text-[var(--cp-text)] [overflow-wrap:anywhere] ${HTML}`} dangerouslySetInnerHTML={{ __html: dash(tier.dealer) || "—" }} />
         </div>
         <div className={`${cell} border-l border-[var(--cp-line)]`}>
           <span className="block text-[12.5px] leading-tight text-[var(--cp-soft)]">Specialist</span>
-          <span className={`mt-0.5 block whitespace-nowrap text-[14.5px] font-medium leading-tight text-[var(--cp-text)] ${HTML}`} dangerouslySetInnerHTML={{ __html: dash(tier.specialist) || "—" }} />
+          <span className={`mt-0.5 block text-[14.5px] font-medium leading-tight text-[var(--cp-text)] [overflow-wrap:anywhere] ${HTML}`} dangerouslySetInnerHTML={{ __html: dash(tier.specialist) || "—" }} />
         </div>
       </div>
       {tier.work || tier.note ? (
