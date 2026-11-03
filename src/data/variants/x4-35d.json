@@ -72,7 +72,7 @@
               "@type": "ListItem",
               "position": 1,
               "name": "N57D30B",
-              "url": "https://bmwengines.uk/engine/n57d30b/"
+              "url": "https://bmwengines.uk/engine/n57"
             }
           ]
         },
@@ -291,7 +291,7 @@
         "recommendation": "The N57's timing chain is a known weak point. The chain, guides, and tensioners can wear prematurely, causing chain stretch. If the chain stretches too far, it can \"jump\" a tooth or snap - in this interference engine, that means piston‑to‑valve contact and a very expensive repair. A £1,500–£3,000 preventative chain replacement is far cheaper than a £2,800–£4,800 engine replacement. At the first sign of cold‑start rattle, have the timing system inspected immediately. Well‑serviced N57 engines with regular oil changes can exceed 180,000 miles.",
         "failureLink": {
           "label": "",
-          "href": "/failures/timing-chain-failure/"
+          "href": "/failures/timing-chain-diagnosis-guide"
         }
       },
       {
@@ -309,7 +309,7 @@
         "recommendation": "Oil leaks from the valve cover and oil filter housing are common on N57 engines. A leaking valve cover gasket can allow oil to drip onto the exhaust manifold, causing a burning oil smell and potential fire risk. The oil filter housing gasket is also prone to failure - if it fails, oil can leak onto the serpentine belt, causing it to slip or break, which can then be ingested into the engine through the front crankshaft seal, causing catastrophic failure. A £300–£900 gasket replacement is far cheaper than the consequences of a snapped belt. Regular oil level checks are essential.",
         "failureLink": {
           "label": "",
-          "href": "/failures/oil-leak/"
+          "href": "/failures/n55-valve-cover-oil-leak"
         }
       },
       {
@@ -327,7 +327,7 @@
         "recommendation": "EGR cooler failure is a known issue on N57 engines. The EGR cooler can develop leaks, allowing coolant to enter the exhaust system, causing white smoke and coolant loss. If ignored, coolant loss can lead to overheating and potential engine damage. Regular coolant level checks are essential - if you notice coolant loss with no visible external leak, have the EGR system inspected promptly.",
         "failureLink": {
           "label": "",
-          "href": "/failures/egr-valve-cooler-failure/"
+          "href": "/failures/egr-valve-cooler"
         }
       },
       {
@@ -345,7 +345,7 @@
         "recommendation": "Low oil pressure is a serious concern on N57 engines - oil pressure below 1.2‑1.5 bar at idle is considered critical. Low oil pressure can be caused by a failing oil pump, clogged oil pickup, or worn bearings. If the oil pressure warning light comes on, stop driving immediately - continued driving will cause catastrophic engine failure. Regular oil changes (using the correct BMW LL‑spec oil) and maintaining correct oil levels are the best preventative measures. BMW advised police fleets using N57 models to shorten oil change intervals to 10,000 miles.",
         "failureLink": {
           "label": "",
-          "href": "/failures/oil-pressure-failure/"
+          "href": "/failures"
         }
       }
     ]

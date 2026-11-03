@@ -55,3 +55,5 @@ Build a multi-page site (3–4 pages). Start with the **home page**. Priority is
 
 ### Layout width
 - Desktop content width: `max-w-8xl` (`--container-8xl: 88rem` in `globals.css`)
+- Every section uses `.site-container` (same width + side padding as the navbar); headings start on the navbar's left edge.
+- Type scale (desktop) via `.t-h1`–`.t-h6`, `.t-p`, `.t-body`, `.t-num`, `.t-label` in `globals.css`: H1 60 / H2 54 / H3 44 / H4 34 / H5 24 / H6 20 / paragraph 18 / card text 16 / numbers 20 / labels 15. Never 11–13px text on desktop. No fixed-size scaled artboards.

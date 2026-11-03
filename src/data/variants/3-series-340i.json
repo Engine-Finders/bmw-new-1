@@ -72,13 +72,13 @@
               "@type": "ListItem",
               "position": 1,
               "name": "B58B30M0",
-              "url": "https://bmwengines.uk/engine/b58/"
+              "url": "https://bmwengines.uk/engine/b57-b58"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "B58B30O1",
-              "url": "https://bmwengines.uk/engine/b58/"
+              "url": "https://bmwengines.uk/engine/b57-b58"
             }
           ]
         },
@@ -288,7 +288,7 @@
         "recommendation": "The B58's cooling system is its most common weak point. The water pump can fail prematurely - one owner reported the water pump pulley disintegrating during hard acceleration. Coolant loss is frequently reported, with the primary reservoir dropping suddenly. Plastic coolant components (hoses, connectors, thermostat housing) become brittle with age. Upgraded aluminium coolant pipes are available to replace the factory plastic parts. Regular inspection of coolant levels and the water pump is essential - catch it before overheating.",
         "failureLink": {
           "label": "Read the full coolant leak guide",
-          "href": "/failures/coolant-leak/"
+          "href": "/failures/m54-cooling-system"
         }
       },
       {
@@ -306,7 +306,7 @@
         "recommendation": "The B58's oil filter housing is a known weak point. BMW faces a class action lawsuit over faulty oil filter housings that leak coolant, costing owners thousands in repairs. The housing can crack, causing coolant or oil leaks. Because it sits under the intake manifold, replacement is labour-intensive. Oil leaks from the valve cover gasket are also common. Check for oil spots regularly and investigate any drop in fluid levels promptly. Use high-quality oil filters - poor quality filters can disintegrate and cause housing wear.",
         "failureLink": {
           "label": "Read the full oil filter housing failure guide",
-          "href": "/failures/oil-filter-housing-failure/"
+          "href": "/failures/n55-valve-cover-oil-leak"
         }
       },
       {
@@ -324,7 +324,7 @@
         "recommendation": "One of the most widely discussed B58 problems revolves around faulty crankcase pressure control valves, affecting many BMW models between 2017 and 2021. The PCV (positive crankcase ventilation) valve can fail, causing oil to be drawn into the intake, leading to misfires and rough idle. This issue is especially common on cars with upgraded turbos. Repair kits are available to address the problem without replacing the entire valve cover. Monitor oil consumption and listen for rough idle - if the PCV fails, the engine can run poorly and oil consumption increases.",
         "failureLink": {
           "label": "Read the full PCV valve failure guide",
-          "href": "/failures/pcv-valve-failure/"
+          "href": "/failures"
         }
       }
     ]

@@ -72,7 +72,7 @@
               "@type": "ListItem",
               "position": 1,
               "name": "B47D20B",
-              "url": "https://bmwengines.uk/engine/b47d20b/"
+              "url": "https://bmwengines.uk/engine/b37-b47"
             }
           ]
         },
@@ -291,7 +291,7 @@
         "recommendation": "While the B47 is significantly more robust than the N47, pre‑2018 B47 units remain susceptible to chain tensioner wear, leading to the characteristic \"diesel rattle\" on cold starts. Left unaddressed, this rattle can escalate into catastrophic chain failure, bent valves, or a seized engine. At the first sign of cold‑start rattle, have the timing system inspected immediately. B47 engines with regular oil changes and proper maintenance can exceed 120,000 miles without major issues.",
         "failureLink": {
           "label": "",
-          "href": "/failures/timing-chain-failure/"
+          "href": "/failures/timing-chain-diagnosis-guide"
         }
       },
       {
@@ -309,7 +309,7 @@
         "recommendation": "EGR system failure is a common issue on B47 diesel engines. The EGR valve can become clogged with soot, and the EGR cooler can develop leaks, leading to coolant loss. Regular motorway driving and using high‑quality diesel can help reduce EGR clogging. If the engine warning light appears with EGR‑related codes, have the system diagnosed promptly.",
         "failureLink": {
           "label": "",
-          "href": "/failures/egr-valve-cooler-failure/"
+          "href": "/failures/egr-valve-cooler"
         }
       },
       {
@@ -327,7 +327,7 @@
         "recommendation": "The 620d's twin‑turbo diesel is sensitive to driving patterns. If used primarily for short urban trips, the Diesel Particulate Filter (DPF) will clog. Regular motorway runs (30+ minutes at 60+ mph) are essential to maintain the exhaust filtration system. Oil changes every 8,000–10,000 miles are recommended rather than BMW's suggested longer intervals to prolong engine and DPF life.",
         "failureLink": {
           "label": "",
-          "href": "/failures/dpf-failure/"
+          "href": "/failures/dpf-blockage"
         }
       },
       {
@@ -345,7 +345,7 @@
         "recommendation": "The B47 is known for oil leaks from the valve cover gasket and oil filter housing gasket. If the oil filter housing gasket fails, oil can leak onto the serpentine belt, causing it to slip or break - which can then be ingested into the engine through the front crankshaft seal, causing catastrophic failure. If you notice oil spots under your 620d or a burning oil smell, investigate immediately.",
         "failureLink": {
           "label": "",
-          "href": "/failures/oil-leak/"
+          "href": "/failures/n55-valve-cover-oil-leak"
         }
       }
     ]

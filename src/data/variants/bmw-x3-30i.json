@@ -161,7 +161,7 @@
         "recommendation": "The N20's timing chain tensioner is the defining weak point of this engine generation. The plastic guides wear out, allowing the chain to slip and potentially causing catastrophic engine damage. Since the N20 is an interference engine, when the chain fails it's \"basically fatal for the engine\". Pre-2015 cars are the highest risk, with BMW extending the warranty on N20 timing chains to 7 years/70,000 miles. A cold-start rattle is the early warning sign -ignore it and you risk piston-valve contact and a full engine replacement. Regular oil changes with the correct BMW-approved oil are the best prevention. At the first sign of rattle, get it inspected immediately.",
         "failureLink": {
           "label": "",
-          "href": "/failures/n20-timing-chain/"
+          "href": "/failures/n20-timing-chain-tensioner"
         }
       },
       {
@@ -179,7 +179,7 @@
         "recommendation": "The B48 engine has a well-documented cooling system weakness. The cooling systems are \"proving troublesome with various leaks\". The plastic oil filter housing can crack. Coolant hoses and plastic coolant flanges can become brittle due to heat cycles, leading to cracks and leaks. One owner reported a coolant connector that \"just crumbled in my finger tips\". If you notice coolant loss or temperature fluctuations, have the system pressure-tested immediately. Proactive replacement of known weak coolant hoses and the oil filter housing at 60,000 miles is recommended.",
         "failureLink": {
           "label": "",
-          "href": "/failures/coolant-leak/"
+          "href": "/failures/m54-cooling-system"
         }
       },
       {
@@ -197,7 +197,7 @@
         "recommendation": "Oil leaks are among the most common issues across all X3 30i generations. The N52 and N20 engines are \"especially prone to gasket wear\". The oil filter housing gasket on N20 and N52 engines fails regularly and causes oil to drip onto exhaust components, which produces a burning smell and requires immediate attention. Valve cover gasket leaks are very common once the engine reaches 80,000–120,000 miles. If you notice oil spots under the car or a burning smell, have it inspected promptly.",
         "failureLink": {
           "label": "",
-          "href": "/failures/oil-leak/"
+          "href": "/failures/n55-valve-cover-oil-leak"
         }
       },
       {
@@ -215,7 +215,7 @@
         "recommendation": "The N52's electric water pump is a known weak point, typically failing around 80,000–120,000 miles. The pump can fail without warning, leading to sudden overheating. If you notice temperature fluctuations or coolant loss, have the cooling system inspected immediately. Proactive replacement of the water pump and thermostat at 100,000-mile intervals is recommended preventative maintenance.",
         "failureLink": {
           "label": "",
-          "href": "/failures/coolant-leak/"
+          "href": "/failures/m54-cooling-system"
         }
       },
       {
@@ -233,7 +233,7 @@
         "recommendation": "The N52's VANOS solenoids can fail, causing rough running and loss of power. If you experience rough idle or hesitation, have the VANOS system inspected promptly. Replacing or cleaning the solenoids is a relatively straightforward repair.",
         "failureLink": {
           "label": "",
-          "href": "/failures/vanos-failure/"
+          "href": "/failures/vanos-solenoid-failure"
         }
       }
     ]

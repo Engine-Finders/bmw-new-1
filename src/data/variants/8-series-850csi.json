@@ -66,7 +66,7 @@
               "@type": "ListItem",
               "position": 1,
               "name": "S70B56 (5.6L V12)",
-              "url": "https://bmwengines.uk/engine/s70b56/"
+              "url": "https://bmwengines.uk/engine/s70-s85"
             }
           ]
         },
@@ -285,7 +285,7 @@
         "recommendation": "The DK throttle motors are a known weak point on the S70B56. If you experience erratic idling or hesitation, have the throttle motors inspected. Replacement or rebuild is expensive but far cheaper than engine replacement. This is one of the most common issues on the 850CSi.",
         "failureLink": {
           "label": "Read the full throttle motor failure guide",
-          "href": "/failures/throttle-motor-failure/"
+          "href": "/failures"
         }
       },
       {
@@ -303,7 +303,7 @@
         "recommendation": "The rubber intake hoses between the airflow meters and throttle valves can crack with age, causing unmetered air to enter the engine. Dirty or failed MAF sensors can also cause flat spots. Regular inspection and replacement of ageing rubber components is essential on these cars.",
         "failureLink": {
           "label": "Read the full MAF sensor failure guide",
-          "href": "/failures/maf-sensor-failure/"
+          "href": "/failures"
         }
       },
       {
@@ -321,7 +321,7 @@
         "recommendation": "The S70B56's 12-cylinder ignition system has 12 individual coils, two distributors, and 12 spark plugs. Over time, coils can fail, distributor rotors can corrode and seize, and plugs can wear. Replacing ignition components is a routine maintenance item on these cars - but with 12 cylinders, it's more expensive than on a six-cylinder. If you notice hesitation or misfires, have the ignition system inspected.",
         "failureLink": {
           "label": "Read the full ignition system failure guide",
-          "href": "/failures/ignition-system-failure/"
+          "href": "/failures"
         }
       }
     ]

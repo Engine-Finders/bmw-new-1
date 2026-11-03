@@ -311,7 +311,7 @@
         "recommendation": "This is the single most critical maintenance item on the M20 engine. The M20B27 (and ALL M20 engines) are interference engines - if the timing belt breaks, pistons will hit valves. Depending on engine speed, this results in bent valves at minimum, all the way to catastrophic damage requiring a full engine replacement. The belt should be replaced every 60,000 miles or 4 years. If you're buying a 325e with no documented timing belt history, assume it needs doing immediately and use it as a bargaining point. Replace the water pump and tensioner at the same time.",
         "failureLink": {
           "label": "Read the full timing belt failure guide",
-          "href": "/failures/timing-belt-failure/"
+          "href": "/failures/timing-chain-diagnosis-guide"
         }
       },
       {
@@ -329,7 +329,7 @@
         "recommendation": "The M20 engine is very sensitive to vacuum leaks, which cause idle issues. The intake boot and the hose from the valve cover to the intake are prime culprits. Other common failure points include the idle control valve (ICV), ageing main and fuel pump relays, cracked intake boots, and brittle coolant hoses. If you experience rough idle or stalling, start by checking for vacuum leaks - this is often a simple and inexpensive fix.",
         "failureLink": {
           "label": "Read the full vacuum leak guide → /failures/vacuum-leaks/ [NEW FAILURE PAGE NEEDED]",
-          "href": "#"
+          "href": "/failures"
         }
       },
       {
@@ -347,7 +347,7 @@
         "recommendation": "The cooling system on the 325e is ageing - every piece of rubber either has been or will need replacing. Common failures include brittle coolant hoses, the radiator end tanks cracking, and the thermostat sticking. The water pump should be replaced with the timing belt as a matter of course. If you notice the temperature gauge rising, shut the engine down immediately - overheating an M20 can cause head gasket failure or worse.",
         "failureLink": {
           "label": "Read the full cooling system guide",
-          "href": "/failures/cooling-system-failure/"
+          "href": "/failures/m54-cooling-system"
         }
       }
     ]

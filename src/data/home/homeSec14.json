@@ -19,11 +19,15 @@
   },
   "review": {
     "brand": "Trustpilot",
-    "score": "4.8 out of 5 from 1,200+ reviews",
+    "score": "4.8 out of 5 from 1200+ reviews",
     "stars": 5
   },
   "image": {
-    "src": "/hero-day.webp",
-    "alt": "BMW front view"
+    "src": "/home-image/cut/cta-light.webp",
+    "alt": "BMW M4 CS under the arch"
+  },
+  "imageDark": {
+    "src": "/home-image/cut/cta-dark.webp",
+    "alt": "BMW X7 under the arch at night"
   }
 }

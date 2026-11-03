@@ -90,25 +90,25 @@
               "@type": "ListItem",
               "position": 1,
               "name": "M57D30",
-              "url": "https://bmwengines.uk/engine/m57d30/"
+              "url": "https://bmwengines.uk/engine/m57"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "M57TU2",
-              "url": "https://bmwengines.uk/engine/m57tu2/"
+              "url": "https://bmwengines.uk/engine/m57"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "N57D30",
-              "url": "https://bmwengines.uk/engine/n57d30/"
+              "url": "https://bmwengines.uk/engine/n57"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "B57D30",
-              "url": "https://bmwengines.uk/engine/b57d30/"
+              "url": "https://bmwengines.uk/engine/b57-b58"
             }
           ]
         },
@@ -359,7 +359,7 @@
         "recommendation": "",
         "failureLink": {
           "label": "",
-          "href": "#"
+          "href": "/failures/timing-chain-diagnosis-guide"
         }
       },
       {
@@ -377,7 +377,7 @@
         "recommendation": "",
         "failureLink": {
           "label": "",
-          "href": "#"
+          "href": "/failures/egr-valve-cooler"
         }
       },
       {
@@ -395,7 +395,7 @@
         "recommendation": "",
         "failureLink": {
           "label": "",
-          "href": "#"
+          "href": "/failures/n57-injector-seal"
         }
       },
       {
@@ -413,7 +413,7 @@
         "recommendation": "",
         "failureLink": {
           "label": "",
-          "href": "#"
+          "href": "/engine/b57-b58"
         }
       }
     ]

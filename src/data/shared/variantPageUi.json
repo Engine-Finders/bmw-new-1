@@ -1,0 +1,197 @@
+{
+  "_note": "Generic copy for the variant page (/[parent]/[slug]) that the reference designs show but the per-variant JSON does not carry. {variant} is the badge (e.g. 320d), {model} the parent model (e.g. 3 Series). Per-variant text always comes from src/data/variants/*.json.",
+  "numberWords": ["Zero", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten", "Eleven", "Twelve"],
+  "eraMap": {
+    "subtitle": "{count} {generations}. {count} {eras}. One guide to reliability, costs and what really matters.",
+    "generationWord": ["generation", "generations"],
+    "eraWord": ["era", "eras"],
+    "columns": ["Generation", "Years", "Engine Code", "Reliability", "Recon Cost (Guide)", "Era Note"],
+    "whyTitle": "Why use this era map?",
+    "whyText": "Every cost guide, reliability rating and engine code on this page is aligned to the data above. This keeps everything consistent and trustworthy.",
+    "points": [
+      { "icon": "poundCircle", "label": "Real UK|Cost Data" },
+      { "icon": "shieldCheck", "label": "Verified|Reliability" },
+      { "icon": "userBadge", "label": "Expert|Insights" },
+      { "icon": "calendarDays", "label": "Updated for|2025" }
+    ],
+    "toggleLabel": "Show era note"
+  },
+  "replacementCosts": {
+    "labourLabel": "Labour estimate:",
+    "mobileRows": {
+      "supplyOnly": { "icon": "pound" },
+      "fittedIndie": { "icon": "wrench" },
+      "warranty": { "icon": "shieldCheck" },
+      "bestFor": { "icon": "users" }
+    },
+    "typeIcons": [
+      { "match": "used", "icon": "tag" },
+      { "match": "recon", "icon": "gear" },
+      { "match": "rebuil", "icon": "flask" },
+      { "match": "dealer|new", "icon": "star" }
+    ],
+    "bestForIcons": ["carFront", "scales", "clock", "shieldCheck"]
+  },
+  "commonProblems": {
+    "h2": "Common Problems With BMW {variant} Engines",
+    "labels": {
+      "symptoms": "Symptoms:",
+      "typicalMileage": "Typical Mileage:",
+      "repairCost": "Repair Cost:",
+      "replacementCost": "Replacement Cost:",
+      "urgency": "Urgency:",
+      "recommendation": "Our recommendation:"
+    },
+    "tabNames": [
+      { "match": "timing chain", "name": "Timing Chain" },
+      { "match": "swirl flap", "name": "Swirl Flaps" },
+      { "match": "egr", "name": "EGR Cooler" },
+      { "match": "hpfp|high-pressure fuel pump", "name": "HPFP" },
+      { "match": "chargepipe|charge pipe", "name": "Chargepipe" },
+      { "match": "vanos", "name": "VANOS" },
+      { "match": "dpf", "name": "DPF" },
+      { "match": "turbo", "name": "Turbo" },
+      { "match": "injector|injection", "name": "Injectors" },
+      { "match": "oil consumption|oil leak|oil filter", "name": "Oil" },
+      { "match": "water pump|cooling|thermostat|coolant", "name": "Cooling" },
+      { "match": "engine mount", "name": "Engine Mounts" },
+      { "match": "valve stem|valve seal", "name": "Valve Seals" },
+      { "match": "crank|bearing", "name": "Bearings" },
+      { "match": "vacuum pump", "name": "Vacuum Pump" },
+      { "match": "ignition|coil", "name": "Ignition" },
+      { "match": "head gasket", "name": "Head Gasket" }
+    ],
+    "problemIcons": [
+      { "match": "timing chain|chain", "icon": "link" },
+      { "match": "swirl", "icon": "fan" },
+      { "match": "egr|coolant|cooling|water pump|thermostat|overheat", "icon": "thermometer" },
+      { "match": "hpfp|fuel pump|injector|injection", "icon": "fuel" },
+      { "match": "turbo|chargepipe", "icon": "turbo" },
+      { "match": "oil", "icon": "oilCan" },
+      { "match": "dpf", "icon": "gridDots" },
+      { "match": "vanos|valve|cam", "icon": "gear" }
+    ],
+    "rowIcons": {
+      "symptoms": "clipboard",
+      "typicalMileage": "gauge",
+      "repairCost": "wrench",
+      "replacementCost": "poundCircle",
+      "urgency": "timer",
+      "recommendation": "shieldCheck",
+      "link": "book"
+    }
+  },
+  "quotesCta": {},
+  "repairBuyOrReplace": {
+    "intro": ["Not every issue means a new engine.", "Here’s what can be repaired, when it makes sense, and what to check before you buy."],
+    "buyIf": "Buy if:",
+    "avoidIf": "Avoid if:",
+    "closingLabel": "Closing verdict",
+    "compareTitle": "Don’t Guess. Compare.",
+    "compareText": "Get real quotes from vetted UK specialists and make the right call for your {variant}.",
+    "problemIcons": [
+      { "match": "snapped|bent valve|engine damage|catastroph", "icon": "network" },
+      { "match": "swirl", "icon": "fan" },
+      { "match": "egr|cooling|coolant|water pump|thermostat", "icon": "coolant" },
+      { "match": "pump|injector|injection|hpfp|fuel", "icon": "fuel" },
+      { "match": "chain|tensioner", "icon": "link" },
+      { "match": "turbo|chargepipe", "icon": "turbo" },
+      { "match": "oil|leak", "icon": "oilCan" },
+      { "match": "dpf", "icon": "gridDots" },
+      { "match": "mount", "icon": "gear" }
+    ],
+    "trust": [
+      { "icon": "shieldCheck", "solid": true, "label": "20+ Vetted Specialists", "sub": "UK Network" },
+      { "icon": "shieldCheck", "label": "12-Month Warranty", "sub": "as Standard" },
+      { "icon": "truck", "label": "Nationwide Delivery", "sub": "& Collection" },
+      { "icon": "poundCircle", "label": "Transparent Pricing", "sub": "No Hidden Fees" },
+      { "icon": "users", "label": "Thousands of {variant}", "sub": "Owners Helped" }
+    ]
+  },
+  "buyingChecklist": {
+    "h2": "Buying Checklist",
+    "whyTitle": "Why this matters",
+    "whyText": "A 10-minute check now can save you thousands later. The right {variant} is a superb long-term car — the wrong one can be expensive fast.",
+    "itemIcons": [
+      { "match": "cold start", "icon": "pulse" },
+      { "match": "service history", "icon": "fileText" },
+      { "match": "smoke", "icon": "cloud" },
+      { "match": "turbo|boost|chargepipe", "icon": "turbo" },
+      { "match": "dpf", "icon": "gridDots" },
+      { "match": "oil", "icon": "oilCan" },
+      { "match": "warning light|codes", "icon": "alert" },
+      { "match": "mot", "icon": "clipboard" },
+      { "match": "coolant|cooling|water", "icon": "thermometer" },
+      { "match": "recall", "icon": "shieldCheck" }
+    ],
+    "wideWhyTitle": "Buy smart. Drive with confidence.",
+    "wideWhyText": "A few checks today can save thousands tomorrow. Use this checklist to avoid the most common {variant} pitfalls.",
+    "wideItemIcons": [
+      { "match": "cold start", "icon": "ear" },
+      { "match": "service history", "icon": "clipboardList" },
+      { "match": "smoke", "icon": "cloud" },
+      { "match": "turbo|boost|chargepipe", "icon": "turbo" },
+      { "match": "dpf|adblue|egr", "icon": "dpfFilter" },
+      { "match": "oil", "icon": "oilCan" },
+      { "match": "warning light|codes", "icon": "engine" },
+      { "match": "mot", "icon": "clipboardSearch" },
+      { "match": "coolant|cooling|water", "icon": "thermometer" },
+      { "match": "timing chain|chain", "icon": "link" },
+      { "match": "recall", "icon": "shieldCheck" }
+    ]
+  },
+  "engineCodes": {
+    "h2": "Engine Codes",
+    "eraMapPhrase": "Section 1B’s Era Map",
+    "eraMapPhraseMatch": "Section 1B'?’?s Era Map",
+    "specsTitle": "Technical Specs",
+    "ctaSubline": "Get quotes from trusted UK specialists in minutes.",
+    "mobileRows": {
+      "years": "calendar",
+      "power": "gauge",
+      "enquiries": "barChart",
+      "avgReconCost": "poundCircle"
+    },
+    "specIcons": [
+      { "match": "displacement|capacity", "icon": "engine" },
+      { "match": "cylinder", "icon": "cylinders" },
+      { "match": "compression", "icon": "gauge" },
+      { "match": "fuel", "icon": "fuel" },
+      { "match": "turbo|charg", "icon": "turbo" },
+      { "match": "power|output|bhp", "icon": "zap" },
+      { "match": "torque", "icon": "gear" },
+      { "match": "valve|vanos", "icon": "gear" },
+      { "match": "timing|chain", "icon": "link" }
+    ]
+  },
+  "marketIntelligence": {
+    "h2": "Market Intelligence",
+    "subtitle": "Real data from thousands of {variant} enquiries in 2025.",
+    "mapTitle": "Regional Demand Breakdown",
+    "otherRegions": "Other Regions",
+    "icons": [
+      { "match": "failure", "icon": "link" },
+      { "match": "mileage", "icon": "gauge" },
+      { "match": "cost", "icon": "pound" },
+      { "match": "engine code", "icon": "engine" },
+      { "match": "season", "icon": "calendarDays" },
+      { "match": "regional", "icon": "barChart" }
+    ]
+  },
+  "faq": {
+    "h2": "Frequently Asked Questions",
+    "disclaimerLabel": "Disclaimer:"
+  },
+  "trustCta": {
+    "h2": "Why UK BMW {variant} Owners Trust BMWEngines.uk",
+    "pointIcons": ["shieldCheck", "scales", "truck"],
+    "ctaTitle": "Find the best BMW {variant} engine replacement UK drivers rely on.",
+    "trust": [
+      { "icon": "tag", "label": "100% Free", "sub": "No hidden fees" },
+      { "icon": "checkCircleSolid", "label": "No Obligation", "sub": "Get quotes with zero pressure" },
+      { "icon": "users", "label": "UK Specialists", "sub": "20+ vetted experts" },
+      { "icon": "shieldCheck", "label": "12-Month Warranty", "sub": "As standard" },
+      { "icon": "truck", "label": "Nationwide Delivery", "sub": "Supply & fit available" }
+    ]
+  }
+}

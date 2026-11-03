@@ -3,12 +3,12 @@
   "subHeadline": "The verdicts people actually want before they read a single spec sheet - the calls we'd make for a friend, backed by real UK enquiry and failure data.",
   "heroImages": {
     "light": {
-      "src": "/hero-day.webp",
-      "alt": "White BMW front for ownership rankings"
+      "src": "/home-image/cut/rankings-light.webp",
+      "alt": "BMW X5 under the arch"
     },
     "dark": {
-      "src": "/Hero-dark.webp",
-      "alt": "BMW front in a dark garage"
+      "src": "/home-image/cut/rankings-dark.webp",
+      "alt": "BMW X5 under the arch at night"
     }
   },
   "trustStrip": [
@@ -25,7 +25,8 @@
     {
       "icon": "book",
       "value": "OEM",
-      "text": "Part References Included"
+      "text": "References Included",
+      "tail": "Part"
     },
     {
       "icon": "trophy",
@@ -50,7 +51,7 @@
         "text": "Best",
         "type": "best"
       },
-      "href": "#"
+      "href": "/engine/b57-b58"
     },
     {
       "ranking": "Most Reliable Model (Modern)",
@@ -62,59 +63,61 @@
         "text": "Best",
         "type": "best"
       },
-      "href": "#"
+      "href": "/3-series/g20"
     },
     {
       "ranking": "Best Used Buy",
       "icon": "tag",
       "winner": "F30 LCI (2016+)",
       "winnerNote": "with B47D20A",
-      "why": "Post-chain-revision, modern electronics, depreciated early-mid values - the sweet spot for daily ownership. £2,800-£4,500 recon cost against £7,000-£20,000 vehicle value [BMW-QUOTE].",
+      "why": "Post-chain-revision, modern electronics, depreciated early-mid values - the sweet spot for daily ownership. £2,800–£4,500 recon cost against £7,000–£20,000 vehicle value [BMW-QUOTE].",
       "verdict": {
         "icon": "check",
         "text": "Safe",
         "type": "safe"
       },
-      "href": "#"
+      "href": "/3-series/f30"
     },
     {
       "ranking": "Most Expensive Failure",
       "icon": "warning",
       "winner": "N63B44",
       "winnerNote": "Valve Stem Seals",
-      "why": "Hot-vee architecture causes seal failure at 60k-100k miles - known as the \"N63 nightmare.\" £3,000-£6,000 repair or £6,000-£10,000 replacement [BMW-QUOTE].",
+      "why": "Hot-vee architecture causes seal failure at 60k–100k miles - known as the \"N63 nightmare.\" £3,000–£6,000 repair or £6,000–£10,000 replacement [BMW-QUOTE].",
       "verdict": {
         "icon": "x",
         "text": "Avoid",
         "type": "avoid"
       },
-      "href": "#"
+      "href": "/engine/n62-n63",
+      "phoneTone": "red"
     },
     {
       "ranking": "Safest BMW to Buy Used",
       "icon": "shield",
       "winner": "5 Series G30",
-      "winnerNote": "(2017-2023)",
-      "why": "Typical values of £14,000-£30,000 against £2,800-£8,000 recon cost - comfortably safe across all engine variants [BMW-QUOTE].",
+      "winnerNote": "(2017–2023)",
+      "why": "Typical values of £14,000–£30,000 against £2,800–£8,000 recon cost - comfortably safe across all engine variants [BMW-QUOTE].",
       "verdict": {
         "icon": "check",
         "text": "Safe",
         "type": "safe"
       },
-      "href": "#"
+      "href": "/5-series/g30"
     },
     {
       "ranking": "Highest Risk Purchase",
       "icon": "flame",
       "winner": "E90 N47D20C",
       "winnerNote": "(pre-2013, no chain history)",
-      "why": "Ageing host values (£2,500-£7,500) against £3,200-£5,500 recon cost - the 70% BMW threshold risk [BMW-QUOTE].",
+      "why": "Ageing host values (£2,500–£7,500) against £3,200–£5,500 recon cost - the 70% BMW threshold risk [BMW-QUOTE].",
       "verdict": {
         "icon": "alert",
         "text": "Watch",
         "type": "watch"
       },
-      "href": "#"
+      "href": "/3-series/e90",
+      "phoneTone": "orange"
     },
     {
       "ranking": "Best Family BMW",
@@ -127,7 +130,7 @@
         "text": "Best",
         "type": "family"
       },
-      "href": "#"
+      "href": "/x5/g05"
     },
     {
       "ranking": "Best Long-Term Keeper",
@@ -140,7 +143,7 @@
         "text": "Best",
         "type": "best"
       },
-      "href": "#"
+      "href": "/3-series/e46"
     }
   ],
   "bottomCta": {
@@ -149,5 +152,62 @@
     "text": "We tell you the truth - even when it means walking away. That's the Engine Finders promise.",
     "buttonLabel": "START YOUR RESEARCH",
     "href": "/quote"
+  },
+  "dataSources": {
+    "title": "Quick Reference: Data Sources Used in Sections 1-4",
+    "columns": [
+      "Claim",
+      "Source"
+    ],
+    "rows": [
+      {
+        "claim": "24,650+ enquiries",
+        "source": "market-intelligence.json / EM_Proprietary_Data_2025.txt"
+      },
+      {
+        "claim": "20+ vetted BMW specialists",
+        "source": "Brand constants (Prerequisite 4)"
+      },
+      {
+        "claim": "F30 380 enquiries",
+        "source": "EM_Proprietary_Data_2025.txt - Model table row 1"
+      },
+      {
+        "claim": "E90 256 enquiries",
+        "source": "EM_Proprietary_Data_2025.txt - Model table row 26"
+      },
+      {
+        "claim": "G20 190 enquiries",
+        "source": "EM_Proprietary_Data_2025.txt - Model table row 52"
+      },
+      {
+        "claim": "F25 316 enquiries",
+        "source": "EM_Proprietary_Data_2025.txt - Model table row 11"
+      },
+      {
+        "claim": "B58 540 enquiries",
+        "source": "EM_Proprietary_Data_2025.txt - Engine table row 16"
+      },
+      {
+        "claim": "N63 440 enquiries",
+        "source": "EM_Proprietary_Data_2025.txt - Engine table row 21"
+      },
+      {
+        "claim": "N47 £3,200-£5,500",
+        "source": "Table A - Engine Replacement Economics (row 1)"
+      },
+      {
+        "claim": "B47 £2,800-£4,500",
+        "source": "Table A - Engine Replacement Economics (row 6)"
+      },
+      {
+        "claim": "Vehicle value bands",
+        "source": "Model Ownership Decision Table - BMW section"
+      }
+    ]
+  },
+  "headerImage": {
+    "dark": "/cars/home/s4-car-dark.webp",
+    "light": "/cars/home/s4-car-light.webp"
   }
 }

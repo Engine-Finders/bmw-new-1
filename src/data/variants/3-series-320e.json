@@ -72,7 +72,7 @@
               "@type": "ListItem",
               "position": 1,
               "name": "B48B20A",
-              "url": "https://bmwengines.uk/engine/b48b20a/"
+              "url": "https://bmwengines.uk/engine/b38-b48"
             }
           ]
         },
@@ -291,7 +291,7 @@
         "recommendation": "The 320e's 12 kWh lithium‑ion battery is a significant component. Over time, battery degradation is inevitable - the range will drop, and charging may take longer. BMW batteries are generally well‑engineered, but if the battery fails outside of the warranty period (typically 6‑8 years), replacement is expensive. If you notice a significant drop in electric range or warning lights, have the battery health checked by a specialist. Some owners report that the 320e's hybrid system is less sophisticated than competitors' offerings, and battery degradation can be a concern on higher‑mileage examples.",
         "failureLink": {
           "label": "",
-          "href": "/failures/hybrid-battery-failure/"
+          "href": "/failures/battery-parasitic-drain"
         }
       },
       {
@@ -309,7 +309,7 @@
         "recommendation": "The KLE (Comfort Charging Electronics Controller) module is a common failure point on BMW PHEVs. If the car fails to charge or charges slowly, the KLE module may be faulty. Charging port/socket faults are also reported. This is a specialist repair - a diagnostic check will confirm the issue. If your 320e won't charge, don't ignore it - the car will run on petrol only, negating the benefits of the hybrid system.",
         "failureLink": {
           "label": "",
-          "href": "/failures/charging-system-failure/"
+          "href": "/failures"
         }
       },
       {
@@ -327,7 +327,7 @@
         "recommendation": "The 320e is a heavy car - the battery adds significant weight. Premature wear of brakes and suspension is a common issue on PHEVs. Regular brake inspections are essential, and you should budget for more frequent brake replacements than on a conventional 3 Series. The regenerative braking system can also cause uneven pad wear.",
         "failureLink": {
           "label": "",
-          "href": "/failures/brake-wear/"
+          "href": "/failures"
         }
       },
       {
@@ -345,7 +345,7 @@
         "recommendation": "The B48 is a robust engine, but oil leaks from the valve cover gasket and oil filter housing are not uncommon. If the oil filter housing gasket fails, oil can leak onto the serpentine belt, causing it to slip or break - which can then be ingested into the engine through the front crankshaft seal, causing catastrophic failure. If you notice oil spots under your 320e or a burning oil smell, investigate immediately.",
         "failureLink": {
           "label": "",
-          "href": "/failures/oil-leak/"
+          "href": "/failures/n55-valve-cover-oil-leak"
         }
       }
     ]

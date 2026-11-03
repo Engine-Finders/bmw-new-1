@@ -1,448 +1,405 @@
 "use client";
 
-import { useState } from "react";
+import { useLayoutEffect, useRef, useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
-import MStripe from "@/components/reusableComponents/MStripe";
+import { Inter } from "next/font/google";
 import { useTheme } from "@/components/shared/themeProvider";
-import { sectionDescription, sectionH2, sectionTableText } from "@/components/models/sectionTypography";
+import { carImageFor } from "@/components/shared/carImage";
+import s from "./GenerationsGrid.module.css";
+import GenerationsGridLegacy from "./GenerationsGridLegacy";
 
-const defaultCarImage = "https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=600&q=80";
+const inter = Inter({ subsets: ["latin"], weight: ["400", "500", "600", "700"], display: "swap" });
 
-const carImages = {
-  E21: defaultCarImage,
-  E30: defaultCarImage,
-  E36: defaultCarImage,
-  E46: defaultCarImage,
-  E90: defaultCarImage,
-  F30: defaultCarImage,
-  G20: defaultCarImage,
+// "BMW 3 Series E30" -> "E30"; "XJ X351 (2010–2019)" -> "X351"
+function codeFromTitle(title = "", label = "") {
+  let name = String(title).replace(/\s*\(.*$/, "").trim();
+  const prefix = label || name.match(/^(BMW\s+\S+\s+Series|BMW\s+\S+|\S+)\s/)?.[1] || "";
+  if (prefix && name.startsWith(`${prefix} `)) name = name.slice(prefix.length + 1);
+  return name;
+}
+
+// "1975–1983 • M10 1.6–2.0, M20 2.0–2.3" -> years + "• engines"
+function splitMeta(meta = "") {
+  const [years, ...rest] = String(meta).split(/\s*•\s*/);
+  return { years: years || "", engines: rest.length ? `• ${rest.join(", ")}` : "" };
+}
+
+// "BMW 3 Series Generations - Find Your Vehicle" -> "BMW 3 Series Generations -" / "Find Your Vehicle"
+function splitTitle(title = "") {
+  const match = String(title).match(/^(.*?\s[-–-])\s+(.*)$/);
+  return match ? { main: match[1], accent: match[2] } : { main: String(title), accent: "" };
+}
+
+// Card data with fallbacks for model JSONs that predate the per-card fields.
+function cardView(card, modelLabel) {
+  const meta = splitMeta(card.meta);
+  const badge = String(card.badge || "");
+  const tag = card.badgeTag || badge.match(/\[[A-Z][A-Z-]+\]/)?.[0] || "";
+  const badgeText = badge.replace(/\s*\[[A-Z][A-Z-]+\]/, "").replace(/\s+-\s+/, " - ");
+  return {
+    label: card.label || modelLabel,
+    code: card.code || codeFromTitle(card.title, modelLabel),
+    years: card.years || meta.years,
+    engineLines: card.engineLines || (meta.engines ? [meta.engines] : []),
+    badgeLines: card.badgeLines || (badgeText ? [badgeText] : []),
+    tag,
+    rating: card.rating || "",
+    verdictLabel: card.verdictLabel || "Our Verdict:",
+    verdict: String(card.verdict || ""),
+    images: card.images || (card.image ? { light: card.image, dark: card.image } : {}),
+    cta: card.cta || {},
+  };
+}
+
+function Stars({ value, className }) {
+  const chars = [...String(value)].filter((c) => "★☆½".includes(c));
+  while (chars.length < 5) chars.push("☆");
+  const score = chars.slice(0, 5).reduce((n, c) => n + (c === "★" ? 1 : c === "½" ? 0.5 : 0), 0);
+  return (
+    <span className={`${s.stars} ${className || ""}`} role="img" aria-label={`${score} out of 5`}>
+      {chars.slice(0, 5).map((c, i) => (
+        <svg key={i} aria-hidden="true" viewBox="0 0 24 24" className={c === "★" ? s.starOn : c === "½" ? s.starHalf : s.starOff}>
+          {c === "½" ? (
+            <defs>
+              <clipPath id={`half-${i}`}>
+                <rect x="0" y="0" width="12" height="24" />
+              </clipPath>
+            </defs>
+          ) : null}
+          <path className={s.starBase} d="M12 2.4l2.9 6.1 6.7.8-4.9 4.6 1.3 6.7L12 17.3l-6 3.3 1.3-6.7-4.9-4.6 6.7-.8z" />
+          {c === "½" ? <path clipPath={`url(#half-${i})`} className={s.starFill} d="M12 2.4l2.9 6.1 6.7.8-4.9 4.6 1.3 6.7L12 17.3l-6 3.3 1.3-6.7-4.9-4.6 6.7-.8z" /> : null}
+        </svg>
+      ))}
+    </span>
+  );
+}
+
+function Chevron({ up = false, className }) {
+  return (
+    <svg aria-hidden="true" viewBox="0 0 24 24" className={className} fill="none" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round">
+      <path d={up ? "M6 15l6-6 6 6" : "M6 9l6 6 6-6"} />
+    </svg>
+  );
+}
+
+function Arrow({ className }) {
+  return (
+    <svg aria-hidden="true" viewBox="0 0 24 24" className={className} fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M4.5 12h15M13.5 6l6 6-6 6" />
+    </svg>
+  );
+}
+
+const ICONS = {
+  scale: (
+    <g fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M12 3.5v16M7.5 20.5h9M4.5 6.5h15" />
+      <path d="M6.5 6.5l-3 6.5a3 2.2 0 0 0 6 0zM17.5 6.5l-3 6.5a3 2.2 0 0 0 6 0z" />
+    </g>
+  ),
+  calendar: (
+    <g fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+      <rect x="3.5" y="5" width="17" height="15.5" rx="2" />
+      <path d="M3.5 10h17M8 3v4M16 3v4" />
+    </g>
+  ),
+  fuel: (
+    <g fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M4.5 20.5V5a1.5 1.5 0 0 1 1.5-1.5h7A1.5 1.5 0 0 1 14.5 5v15.5M3 20.5h13" />
+      <path d="M7.5 7.5h4v3.5h-4z" />
+      <path d="M14.5 8.5h1.6a1.4 1.4 0 0 1 1.4 1.4v6.6a1.5 1.5 0 0 0 3 0V8.2L18 5.5" />
+    </g>
+  ),
+  star: <path d="M12 2.6l2.85 6.05 6.65.8-4.9 4.55 1.25 6.6L12 17.35 6.15 20.6l1.25-6.6-4.9-4.55 6.65-.8z" fill="currentColor" />,
+  car: (
+    <g fill="none" stroke="currentColor" strokeWidth="1.3" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M2.5 15.5v-3l1.9-4a2 2 0 0 1 1.8-1.1h11.6a2 2 0 0 1 1.8 1.1l1.9 4v3" />
+      <path d="M2.5 15.5h19M5.2 8.5l1.1 3.5h11.4l1.1-3.5M12 8.2V12" />
+      <circle cx="7" cy="15.8" r="1.9" />
+      <circle cx="17" cy="15.8" r="1.9" />
+    </g>
+  ),
+  sun: (
+    <g fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round">
+      <circle cx="12" cy="12" r="4" fill="currentColor" />
+      <path d="M12 2.5v2.5M12 19v2.5M2.5 12H5M19 12h2.5M5.3 5.3l1.8 1.8M16.9 16.9l1.8 1.8M5.3 18.7l1.8-1.8M16.9 7.1l1.8-1.8" />
+    </g>
+  ),
 };
 
-function cleanText(text = "") {
-  return String(text)
-    .replaceAll("Ã‚Â£", "\u00a3")
-    .replaceAll("Â£", "\u00a3")
-    .replaceAll("Ã¢â‚¬â€œ", "\u2013")
-    .replaceAll("â€“", "\u2013")
-    .replaceAll("Ã¢â‚¬â€", "\u2014")
-    .replaceAll("â€”", "\u2014")
-    .replaceAll("Ã¢â‚¬Â¢", "\u2022")
-    .replaceAll("â€¢", "\u2022")
-    .replaceAll("Ã¢Ëœâ€¦", "\u2605")
-    .replaceAll("â˜…", "\u2605")
-    .replaceAll("Ã¢Ëœâ€ ", "\u2606")
-    .replaceAll("â˜†", "\u2606")
-    .replaceAll("Ã‚Â½", "\u00bd")
-    .replaceAll("Â½", "\u00bd")
-    .replaceAll("Ã°Å¸â€�Â¥", "\ud83d\udd25")
-    .replaceAll("ðŸ”¥", "\ud83d\udd25")
-    .replaceAll("Ã¢â€ â€™", "\u2192")
-    .replaceAll("â†’", "\u2192")
-    .replace(/\s+/g, " ")
-    .trim();
-}
-
-function generationCode(title = "") {
-  return cleanText(title).split(" ").at(-1) || "";
-}
-
-function splitTitle(title = "") {
-  const clean = cleanText(title);
-  const marker = "Find Your Vehicle";
-  const index = clean.indexOf(marker);
-
-  if (index === -1) return { main: clean, accent: "" };
-
-  return {
-    main: clean.slice(0, index).trim(),
-    accent: clean.slice(index).trim(),
-  };
-}
-
-function splitCardTitle(title = "") {
-  const clean = cleanText(title);
-  const code = generationCode(clean);
-
-  return {
-    series: clean.replace(code, "").trim(),
-    code,
-  };
-}
-
-function GenerationCode({ children }) {
+function Icon({ name, className }) {
   return (
-    <>
-      <span className="text-[17px] font-bold leading-[1.1] md:hidden">{children}</span>
-      <span className="hidden font-bold leading-[1.05] md:inline" style={{ fontSize: "17px" }}>
-        {children}
+    <svg aria-hidden="true" viewBox="0 0 24 24" className={className}>
+      {ICONS[name]}
+    </svg>
+  );
+}
+
+function CardImage({ images, isDark, alt }) {
+  const src = isDark ? images.dark : images.light;
+  if (!src) {
+    // No photo of this generation yet: a car mark keeps the slot, instead of another generation's photo.
+    return (
+      <span className={s.carMark}>
+        <Icon name="car" className={s.carMarkIcon} />
       </span>
-    </>
-  );
-}
-
-function splitMeta(meta = "") {
-  const [years = "", engines = ""] = cleanText(meta).split(" \u2022 ");
-  return { years, engines };
-}
-
-function ArrowIcon({ className = "h-4 w-4" }) {
-  return (
-    <svg aria-hidden="true" viewBox="0 0 24 24" className={className} fill="none" stroke="currentColor" strokeWidth="2.5">
-      <path d="M5 12h14m-6-6 6 6-6 6" />
-    </svg>
-  );
-}
-
-function ChevronIcon({ open = false }) {
-  return (
-    <svg aria-hidden="true" viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="2.5">
-      <path d={open ? "m6 15 6-6 6 6" : "m6 9 6 6 6-6"} />
-    </svg>
-  );
-}
-
-function TableIcon({ type = "calendar" }) {
-  const path =
-    type === "fuel" ? (
-      <path d="M6 21V5a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v16M5 21h12M8 7h5m4 1h1.5L21 10.5V18a2 2 0 0 1-4 0v-5h4" />
-    ) : type === "star" ? (
-      <path d="m12 3 2.7 5.5 6.1.9-4.4 4.3 1 6.1-5.4-2.9-5.4 2.9 1-6.1-4.4-4.3 6.1-.9L12 3Z" />
-    ) : type === "scale" ? (
-      <path d="M12 3v18M5 7h14M6 7l-3 7h6L6 7Zm12 0-3 7h6l-3-7ZM8 21h8" />
-    ) : type === "spark" ? (
-      <path d="M12 3v4m0 10v4M4 12h4m8 0h4M6.3 6.3l2.8 2.8m5.8 5.8 2.8 2.8m0-11.4-2.8 2.8m-5.8 5.8-2.8 2.8" />
-    ) : (
-      <path d="M7 3v4m10-4v4M4 9h16M5 5h14a1 1 0 0 1 1 1v15H4V6a1 1 0 0 1 1-1Z" />
     );
+  }
+  return <Image src={src} alt={alt} fill className={s.carImg} sizes="(min-width: 1024px) 14vw, 40vw" />;
+}
 
+function BadgeBlock({ lines, tag }) {
+  if (!lines.length && !tag) return null;
   return (
-    <svg aria-hidden="true" viewBox="0 0 24 24" className="h-5 w-5 shrink-0 text-[var(--color-primary)]" fill="none" stroke="currentColor" strokeWidth="2">
-      {path}
-    </svg>
+    <div className={s.badgeBlock}>
+      {lines.map((line) => (
+        <p key={line} className={s.badgeLine}>
+          {line}
+        </p>
+      ))}
+      {tag ? <p className={s.badgeTag}>{tag}</p> : null}
+    </div>
   );
 }
 
-function Rating({ value, compact = false }) {
-  const rating = cleanText(value);
-  const stars = Array.from({ length: 5 }, (_, index) => {
-    const char = rating[index] || "\u2606";
-    return char === "\u2605" || char === "\u00bd" ? "filled" : char === "\u2606" ? "empty" : "filled";
-  });
+function ctaLabel(cta, isDark) {
+  return String((isDark && cta.labelDark) || cta.label || "").replace(/\s*(?:→|â†’)\s*$/, "");
+}
 
-  if (rating.includes("\u00bd")) stars[3] = "half";
-
+// One card for every screen size. Collapsed it shows only: model name, generation, years, engine bullets,
+// car photo, star rating and the Explore button, in that order. The header toggles the rest open
+// (enquiry count and our verdict), and closing it again hides them.
+function GenerationCard({ card, index, isDark }) {
+  const [open, setOpen] = useState(false);
+  const label = ctaLabel(card.cta, isDark);
+  const hasDetails = card.badgeLines.length > 0 || card.tag || card.verdict;
   return (
-    <div className={`flex ${compact ? "gap-0.5 text-[15px]" : "gap-1 text-[18px]"} leading-none`}>
-      {stars.map((state, index) => (
-        <span key={index} className={state === "empty" ? "text-[#cfd5dd]" : state === "half" ? "text-[var(--color-primary)] opacity-80" : "text-[var(--color-primary)]"}>
-          ★
-        </span>
+    <article className={`${s.card} ${open ? s.cardOpen : ""}`}>
+      <button type="button" className={s.cardHead} aria-expanded={open} onClick={() => setOpen((v) => !v)}>
+        <span className={s.num}>{index + 1}</span>
+        <span className={s.cardLabel}>{card.label}</span>
+        <Chevron up={open} className={s.headChevron} />
+      </button>
+      <h3 className={s.code} dangerouslySetInnerHTML={{ __html: card.code }} />
+      {card.years ? <p className={s.years}>{card.years}</p> : null}
+      {card.engineLines.map((line) => (
+        <p key={line} className={s.engines} dangerouslySetInnerHTML={{ __html: line }} />
+      ))}
+      <div className={s.car}>
+        <CardImage images={card.images} isDark={isDark} alt={`BMW ${card.code}`} />
+      </div>
+      <Stars value={card.rating} className={s.cardStars} />
+      {open && hasDetails ? (
+        <div className={s.details}>
+          <BadgeBlock lines={card.badgeLines} tag={card.tag} />
+          {card.verdict ? (
+            <div className={s.verdict}>
+              <p className={s.verdictLabel}>{card.verdictLabel}</p>
+              <p className={s.verdictText} dangerouslySetInnerHTML={{ __html: card.verdict }} />
+            </div>
+          ) : null}
+        </div>
+      ) : null}
+      <Link href={card.cta.href || "#"} className={s.cta}>
+        <span dangerouslySetInnerHTML={{ __html: label }} />
+        <Arrow className={s.ctaIcon} />
+      </Link>
+    </article>
+  );
+}
+
+const MAX_VISIBLE = 6;
+
+// Up to six cards in one row on desktop. With more than six, the grid is only as tall as its first row and
+// scrolls vertically (scrollbar on the right); the CSS reads that height from --row1.
+function CardGrid({ cards, isDark }) {
+  const grid = useRef(null);
+  const [rowHeight, setRowHeight] = useState(null);
+  const scroll = cards.length > MAX_VISIBLE;
+
+  useLayoutEffect(() => {
+    const el = grid.current;
+    if (!scroll || !el) return undefined;
+    let frame = 0;
+    const measure = () => {
+      cancelAnimationFrame(frame);
+      frame = requestAnimationFrame(() => {
+        const kids = [...el.children];
+        const firstTop = kids[0].offsetTop;
+        const bottom = Math.max(...kids.filter((kid) => kid.offsetTop === firstTop).map((kid) => kid.offsetTop + kid.offsetHeight));
+        setRowHeight(Math.ceil(bottom + (parseFloat(getComputedStyle(el).paddingBottom) || 0)));
+      });
+    };
+    measure();
+    const observer = new ResizeObserver(measure);
+    observer.observe(el);
+    [...el.children].forEach((kid) => observer.observe(kid));
+    return () => {
+      cancelAnimationFrame(frame);
+      observer.disconnect();
+    };
+  }, [scroll, cards.length]);
+
+  const style = { "--cols": Math.min(MAX_VISIBLE, Math.max(4, cards.length)) };
+  if (rowHeight) style["--row1"] = `${rowHeight}px`;
+  return (
+    <div ref={grid} className={s.cards} data-scroll={scroll ? "true" : undefined} style={style}>
+      {cards.map((card, index) => (
+        <GenerationCard key={`${card.code}-${index}`} card={card} index={index} isDark={isDark} />
       ))}
     </div>
   );
 }
 
-function GenerationImage({ code, large = false }) {
-  const imageCode = String(code).split("/")[0];
-
+// "N47D20C - rear-chain risk" -> code coloured by tone, the rest in the body colour.
+function Cell({ cell, mobile }) {
+  const text = String((mobile && cell.mobileText) || cell.text || "").replace(/\s*<br\s*\/?>\s*/g, " <br>");
+  const match = text.match(/^([A-Z0-9/]+\d[A-Z0-9/]*)(.*)$/s);
+  if (!cell.tone || !match) return <span dangerouslySetInnerHTML={{ __html: text }} />;
   return (
-    <div className={`relative flex w-full items-end justify-center overflow-hidden ${large ? "h-[150px] md:h-[118px]" : "h-[64px] md:h-[112px]"}`}>
-      <img
-        src={carImages[imageCode] || defaultCarImage}
-        alt=""
-        loading="lazy"
-        onError={(event) => {
-          event.currentTarget.src = defaultCarImage;
-        }}
-        className={`max-h-full max-w-full object-contain ${large ? "w-[86%]" : "w-[78%]"}`}
-        />
-      </div>
-    );
-  }
-
-function GenerationCard({ card, index, featured = false, onToggle }) {
-  const title = splitCardTitle(card.title);
-  const meta = splitMeta(card.meta);
-  const label = cleanText(card.cta?.label || `Explore ${title.code}`);
-  const href = card.cta?.href || "#";
-
-  return (
-    <article
-      className={`rounded-md border bg-[var(--color-surface-raised)] p-3 text-[var(--color-text)] shadow-[0_8px_22px_var(--color-shadow)] ${
-        featured ? "border-[rgba(7,95,216,0.7)] md:col-span-2" : "border-[var(--color-border)]"
-      }`}
-    >
-      <button
-        type="button"
-        onClick={onToggle}
-        className={`flex w-full items-start gap-3 text-left ${onToggle ? "" : "pointer-events-none"}`}
-      >
-        <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-md bg-[var(--color-primary)] text-[0.8rem] font-bold text-white shadow-sm">
-          {index + 1}
-        </span>
-        <div className="min-w-0 flex-1">
-          <p className={`${sectionTableText} font-semibold`} dangerouslySetInnerHTML={{ __html: title.series }} />
-          <h3 className="mt-0.5"><GenerationCode><span dangerouslySetInnerHTML={{ __html: title.code }} /></GenerationCode></h3>
-          <p className="mt-2 text-[12px] font-normal leading-[1.35] text-[var(--color-text-muted)]">
-            <span className="text-[13px] md:text-[15px]" dangerouslySetInnerHTML={{ __html: meta.years }} />
-          </p>
-          {meta.engines ? <p className="text-[12px] font-normal leading-[1.35] text-[var(--color-text-muted)]">• <span dangerouslySetInnerHTML={{ __html: meta.engines }} /></p> : null}
-        </div>
-        <span className="text-[var(--color-primary)]">
-          <ChevronIcon open={featured} />
-        </span>
-      </button>
-
-      <div className={featured ? "mt-2" : "mt-4"}>
-        <GenerationImage code={title.code} large={featured} />
-      </div>
-
-      {featured ? (
-        <Link
-          href={href}
-          className="mt-4 flex min-h-10 items-center justify-center gap-3 rounded-md border border-[rgba(7,95,216,0.7)] px-3 text-center text-[18px] font-bold text-[var(--color-primary)] transition-all duration-200 hover:text-black hover:shadow-[0_12px_24px_rgba(0,0,0,0.14)]"
-        >
-          <span>{label.replace(/\s*\u2192\s*$/, "")}</span>
-          <ArrowIcon />
-        </Link>
-      ) : null}
-
-      <div className={featured ? "mt-4" : "mt-5"}>
-        <Rating value={card.rating} compact={!featured} />
-      </div>
-
-      {featured && card.verdict ? (
-        <div className="mt-4 text-[15px] leading-[1.45]">
-          <p className="font-bold">Our Verdict:</p>
-          <p className="mt-1" dangerouslySetInnerHTML={{ __html: cleanText(card.verdict) }} />
-        </div>
-      ) : null}
-
-      {!featured && (
-        <Link
-          href={href}
-          className="mt-3 hidden min-h-9 items-center justify-center gap-3 rounded-md border border-[rgba(7,95,216,0.45)] px-3 text-[18px] font-bold text-[var(--color-primary)] transition-all duration-200 hover:text-black hover:shadow-[0_12px_24px_rgba(0,0,0,0.14)] md:flex"
-        >
-          <span>{label.replace(/^Explore the\s+/i, "Explore ").replace(/\s*\u2192\s*$/, "")}</span>
-          <ArrowIcon />
-        </Link>
-      )}
-
-      {!featured && card.verdict ? (
-        <div className="mt-4 hidden text-[15px] leading-[1.45] md:block">
-          <p className="font-bold">Our Verdict:</p>
-          <p className="mt-1" dangerouslySetInnerHTML={{ __html: cleanText(card.verdict) }} />
-        </div>
-      ) : null}
-    </article>
+    <span>
+      <span className={s[`tone_${cell.tone}`]}>{match[1]}</span>
+      <span dangerouslySetInnerHTML={{ __html: match[2] }} />
+    </span>
   );
 }
 
-function MobileGenerationRow({ card, index, onToggle }) {
-  const title = splitCardTitle(card.title);
-  const meta = splitMeta(card.meta);
-  const badge = cleanText(card.badge);
-
-  return (
-    <button
-      type="button"
-      onClick={onToggle}
-      className="flex min-h-[86px] w-full items-center gap-3 rounded-md border border-[var(--color-border)] bg-[var(--color-surface-raised)] p-3 text-left text-[var(--color-text)]"
-    >
-      <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-md bg-[var(--color-primary)] text-[0.8rem] font-bold text-white shadow-sm">
-        {index + 1}
-      </span>
-      <div className="min-w-0 flex-1">
-        <p className={`${sectionTableText} font-semibold`} dangerouslySetInnerHTML={{ __html: title.series }} />
-        <h3 className="mt-0.5"><GenerationCode><span dangerouslySetInnerHTML={{ __html: title.code }} /></GenerationCode></h3>
-        {badge ? <p className="mt-1 text-[13px] font-bold leading-[1.35]" dangerouslySetInnerHTML={{ __html: badge }} /> : null}
-        <p className="mt-1 text-[12px] font-normal leading-[1.35] text-[var(--color-text-muted)]">
-          <span className="text-[13px] md:text-[15px]" dangerouslySetInnerHTML={{ __html: meta.years }} /> <span className="px-1">•</span> <span dangerouslySetInnerHTML={{ __html: meta.engines }} />
-        </p>
-      </div>
-      <div className="w-[112px] shrink-0">
-        <GenerationImage code={title.code} />
-      </div>
-      <span className="shrink-0 text-[var(--color-primary)]">
-        <ChevronIcon />
-      </span>
-    </button>
-  );
+function splitColumn(column = "") {
+  const match = String(column).match(/^(.*?)\s*(\(.*\))$/);
+  return match ? { main: match[1], sub: match[2] } : { main: String(column), sub: "" };
 }
 
-function ComparisonTable({ rangeTable }) {
-  const rows = rangeTable?.rows || [];
-  const diesel = {
-    pre: cleanText(rows[0]?.power),
-    middle: cleanText(rows[1]?.model),
-    post: cleanText(rows[1]?.engineCode),
-  };
-  const petrol = {
-    pre: cleanText(rows[2]?.model),
-    middle: cleanText(rows[2]?.engineCode),
-    post: cleanText(rows[2]?.power),
-  };
-  const recommendation = cleanText(rows[4]?.model || "The 3 Series we recommend for daily ownership");
-
+function RangeTable({ table, mobile }) {
+  const columns = (table.columns || []).slice(1);
+  // the "Our position" row is shown as the merged position column when the table has one
+  const rows = (table.rows || []).filter((row) => !(table.position && /^our position$/i.test(row.label)));
+  if (!rows.length) return null;
+  const position = table.position;
   return (
-    <div className="rounded-md border border-[var(--color-border)] bg-[var(--color-surface-raised)] p-3 shadow-[0_8px_22px_var(--color-shadow)]">
-      <div className="mb-3 flex items-center gap-3">
-        <span className="flex h-7 w-7 items-center justify-center rounded-md bg-[var(--color-primary-soft)]">
-          <TableIcon type="scale" />
-        </span>
-        <h3 className={`${sectionTableText} font-bold text-[var(--color-text)] md:text-[18px]`} dangerouslySetInnerHTML={{ __html: cleanText(rangeTable.title) }} />
+    <div className={`${s.grid} ${mobile ? s.gridPhone : s.gridDesk}`} role="table">
+      <div className={s.gHead} role="row">
+        <span className={s.gCorner} />
+        {columns.map((column) => {
+          const { main, sub } = splitColumn(column);
+          return (
+            <span key={column} className={s.gTh} role="columnheader">
+              {!mobile ? <Icon name="calendar" className={s.thIcon} /> : null}
+              <span className={s.thText}>
+                <strong>{main}</strong>
+                {sub ? <span>{sub}</span> : null}
+              </span>
+            </span>
+          );
+        })}
+        {position ? (
+          <span className={s.posHead} role="columnheader">
+            <Icon name="star" className={s.posIcon} />
+            {position.title}
+          </span>
+        ) : null}
       </div>
-
-      <div className="overflow-x-auto">
-        <table className="min-w-[760px] w-full border-collapse overflow-hidden rounded-md text-left text-[15px] text-[var(--color-text)] md:min-w-0">
-          <thead>
-            <tr>
-              <th className="w-[15%] border border-[var(--color-border)] bg-[var(--color-page-soft)] p-3" />
-              <th className="w-[22%] border border-[var(--color-border)] bg-[var(--color-page-soft)] p-3 font-bold">
-                <span className="flex items-start gap-2"><TableIcon />Pre-2013<br /><span className="font-normal">(E90/F30 early)</span></span>
-              </th>
-              <th className="w-[22%] border border-[var(--color-border)] bg-[var(--color-page-soft)] p-3 font-bold">
-                <span className="flex items-start gap-2"><TableIcon />2013-2015<br /><span className="font-normal">(F30 pre-LCI)</span></span>
-              </th>
-              <th className="w-[22%] border border-[var(--color-border)] bg-[var(--color-page-soft)] p-3 font-bold">
-                <span className="flex items-start gap-2"><TableIcon />2016+<br /><span className="font-normal">(F30 LCI / G20)</span></span>
-              </th>
-              <th className="w-[19%] border border-green-100 bg-green-50 p-3 font-bold text-green-700">
-                <span className="flex items-center gap-2"><TableIcon type="star" />Our position</span>
-              </th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th className="border border-[var(--color-border)] p-3 font-bold"><span className="flex items-center gap-2"><TableIcon type="fuel" />Core diesel</span></th>
-              <td className="border border-[var(--color-border)] p-3"><strong className="text-red-600" dangerouslySetInnerHTML={{ __html: diesel.pre.split(" ")[0] }} /><span dangerouslySetInnerHTML={{ __html: diesel.pre.replace(diesel.pre.split(" ")[0], "") }} /></td>
-              <td className="border border-[var(--color-border)] p-3"><strong className="text-red-600" dangerouslySetInnerHTML={{ __html: diesel.middle.split(" ")[0] }} /><span dangerouslySetInnerHTML={{ __html: diesel.middle.replace(diesel.middle.split(" ")[0], "") }} /></td>
-              <td className="border border-[var(--color-border)] p-3"><strong className="text-green-700" dangerouslySetInnerHTML={{ __html: diesel.post.split(" ")[0] }} /><span dangerouslySetInnerHTML={{ __html: diesel.post.replace(diesel.post.split(" ")[0], "") }} /></td>
-              <td rowSpan={2} className="border border-green-100 bg-green-50 p-3 text-[15px] font-bold leading-[1.35] text-green-700" dangerouslySetInnerHTML={{ __html: recommendation }} />
-            </tr>
-            <tr>
-              <th className="border border-[var(--color-border)] p-3 font-bold"><span className="flex items-center gap-2"><TableIcon type="fuel" />Core petrol</span></th>
-              <td className="border border-[var(--color-border)] p-3" dangerouslySetInnerHTML={{ __html: petrol.pre }} />
-              <td className="border border-[var(--color-border)] p-3" dangerouslySetInnerHTML={{ __html: petrol.middle }} />
-              <td className="border border-[var(--color-border)] p-3"><strong className="text-green-700" dangerouslySetInnerHTML={{ __html: petrol.post.split(" ")[0] }} /><span dangerouslySetInnerHTML={{ __html: petrol.post.replace(petrol.post.split(" ")[0], "") }} /></td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
+      {rows.map((row, rowIndex) => (
+        <div key={row.label} className={s.gRow} role="row">
+          <span className={s.gLabel} role="rowheader">
+            <Icon name="fuel" className={s.rowIcon} />
+            {row.label}
+          </span>
+          {(row.cells || []).map((cell, i) => (
+            <span key={i} className={s.gCell} role="cell">
+              <Cell cell={cell} mobile={mobile} />
+            </span>
+          ))}
+          {/* the merged position cell spans every body row */}
+          {position && rowIndex === 0 ? (
+            <span
+              className={s.posText}
+              role="cell"
+              style={{ gridRow: `span ${rows.length}` }}
+              dangerouslySetInnerHTML={{ __html: (mobile && position.mobileText) || position.text }}
+            />
+          ) : null}
+        </div>
+      ))}
     </div>
   );
 }
 
+// Model JSONs migrated to the reference design carry per-card `code` fields; the rest keep the previous layout.
 export default function GenerationsGrid({ data }) {
-  const { theme } = useTheme();
-  const [openMobileIndex, setOpenMobileIndex] = useState(-1);
-  const [desktopSlide, setDesktopSlide] = useState(0);
   if (!data) return null;
+  const migrated = (data.cards || []).some((card) => card.code);
+  return migrated ? <GenerationsReference data={data} /> : <GenerationsGridLegacy data={data} />;
+}
 
+function GenerationsReference({ data }) {
+  const { theme } = useTheme();
+
+  const isDark = theme === "dark";
   const title = splitTitle(data.h2);
-  const cards = data.cards || [];
-  const desktopSlides = [];
-
-  for (let index = 0; index < cards.length; index += 4) {
-    desktopSlides.push(cards.slice(index, index + 4));
-  }
+  const modelLabel = String(data.h2 || "").split(/\s+Generations\b/)[0];
+  // Body-style variants (E36/5, E91, …) stay in the data but the grid shows the generations, as in the references.
+  const source = (data.cards || []).filter((card) => !card.variant);
+  const cards = source.map((card) => cardView({ ...card, image: card.image || carImageFor(card.title, data.h2) }, modelLabel));
+  const table = data.rangeTable;
+  const link = data.comparisonLink;
+  const linkPrefix = link?.prefix || "Read the full comparison:";
+  const linkLabel = String(link?.label || "").replace(linkPrefix, "").replace(/\s*→\s*$/, "").trim();
 
   return (
-    <section data-theme-mode={theme} className="bg-[var(--color-page)] py-5 text-[var(--color-text)] md:py-6">
-      <div>
-      <h2 className="max-w-[640px] text-[29px] font-bold leading-[1.08] tracking-normal md:text-[45px]">
-          <span dangerouslySetInnerHTML={{ __html: title.main }} />
-          {title.accent ? (
-            <>
-              <br />
-              <span className="text-[var(--color-primary)]" dangerouslySetInnerHTML={{ __html: title.accent }} />
-            </>
+    <section id="generations" className={`${inter.className} ${s.section} ${isDark ? s.dark : s.light}`}>
+      <div className={s.frame}>
+        <div className={s.panel}>
+          <div className={s.head}>
+            <h2 className={s.title}>
+              <span dangerouslySetInnerHTML={{ __html: title.main }} />
+              {title.accent ? (
+                <>
+                  <br />
+                  <span className={s.accent}>{title.accent}</span>
+                </>
+              ) : null}
+            </h2>
+            {data.subHeadline ? <p className={`${s.copy} ${s.deskOnly}`} dangerouslySetInnerHTML={{ __html: data.subHeadline }} /> : null}
+            {data.subHeadline ? (
+              <p className={`${s.copy} ${s.phoneOnly}`} dangerouslySetInnerHTML={{ __html: data.subHeadlineMobile || data.subHeadline }} />
+            ) : null}
+          </div>
+
+          <CardGrid cards={cards} isDark={isDark} />
+
+          {table?.rows?.length || link ? (
+            <div className={s.compare}>
+              {table?.rows?.length ? (
+                <>
+                  <h3 className={s.compareTitle}>
+                    <Icon name="scale" className={s.compareIcon} />
+                    {table.title}
+                  </h3>
+                  <div className={s.deskOnly}>
+                    <RangeTable table={table} />
+                  </div>
+                  <div className={`${s.phoneOnly} ${s.gridWrap}`}>
+                    <RangeTable table={table} mobile />
+                  </div>
+                </>
+              ) : null}
+              {link ? (
+                <p className={s.link}>
+                  <span className={s.linkIcon}>
+                    <Icon name="sun" className={s.linkSvg} />
+                  </span>
+                  <span className={s.linkPrefix}>{linkPrefix}</span>
+                  <Link href={link.href} className={s.linkA}>
+                    {linkLabel}
+                    <Arrow className={s.linkArrow} />
+                  </Link>
+                </p>
+              ) : null}
+            </div>
           ) : null}
-        </h2>
-        <div className="mt-3">
-          <MStripe />
         </div>
-        {data.subHeadline ? (
-          <p className={`mt-3 max-w-[640px] ${sectionDescription} text-[var(--color-text-muted)]`} dangerouslySetInnerHTML={{ __html: cleanText(data.subHeadline) }} />
-        ) : null}
       </div>
-
-      <div className="mt-6 hidden md:block">
-        <div className="overflow-hidden">
-          <div
-            className="flex transition-transform duration-300 ease-out"
-            style={{ transform: `translateX(-${desktopSlide * 100}%)` }}
-          >
-            {desktopSlides.map((slide, slideIndex) => (
-              <div key={slideIndex} className="grid w-full shrink-0 grid-cols-4 gap-3">
-                {slide.map((card, cardIndex) => (
-                  <GenerationCard
-                    key={card.title}
-                    card={card}
-                    index={slideIndex * 4 + cardIndex}
-                  />
-                ))}
-              </div>
-            ))}
-          </div>
-        </div>
-
-        {cards.length > 4 ? (
-          <div className="mt-4 flex justify-center gap-2">
-            {desktopSlides.map((_, index) => (
-              <button
-                key={index}
-                type="button"
-                aria-label={`Show generation cards ${index + 1}`}
-                onClick={() => setDesktopSlide(index)}
-                className={`h-2.5 w-2.5 rounded-full ${
-                  desktopSlide === index ? "bg-[var(--color-primary)]" : "bg-[var(--color-border-strong)]"
-                }`}
-              />
-            ))}
-          </div>
-        ) : null}
-      </div>
-
-      <div className="mt-5 space-y-2 md:hidden">
-        {cards.map((card, index) => (
-          openMobileIndex === index ? (
-            <GenerationCard
-              key={card.title}
-              card={card}
-              index={index}
-              featured
-              onToggle={() => setOpenMobileIndex(openMobileIndex === index ? -1 : index)}
-            />
-          ) : (
-            <MobileGenerationRow
-              key={card.title}
-              card={card}
-              index={index}
-              onToggle={() => setOpenMobileIndex(index)}
-            />
-          )
-        ))}
-      </div>
-
-      {data.rangeTable ? (
-        <div className="mt-5">
-          <ComparisonTable rangeTable={data.rangeTable} />
-        </div>
-      ) : null}
-
-      {data.comparisonLink ? (
-        <p className="mt-4 flex items-center gap-3 pl-2 text-[15px]">
-          <span className="flex h-7 w-7 items-center justify-center rounded-md bg-[var(--color-primary-soft)]">
-            <TableIcon type="spark" />
-          </span>
-          <span>Read the full comparison:</span>
-          <Link href={data.comparisonLink.href} className="font-bold text-[var(--color-primary)] transition-all duration-200 hover:text-black hover:shadow-[0_12px_24px_rgba(0,0,0,0.14)]">
-            <span dangerouslySetInnerHTML={{ __html: cleanText(data.comparisonLink.label).replace("Read the full comparison:", "").replace(/\s*\u2192\s*$/, "") }} />
-          </Link>
-          <ArrowIcon />
-        </p>
-      ) : null}
     </section>
   );
 }

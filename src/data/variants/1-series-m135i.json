@@ -72,13 +72,13 @@
               "@type": "ListItem",
               "position": 1,
               "name": "N55B30A (3.0L Straight-Six Turbo)",
-              "url": "https://bmwengines.uk/engine/n55/"
+              "url": "https://bmwengines.uk/engine/n54-n55"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "B48A20O1 (2.0L Four-Cylinder Turbo)",
-              "url": "https://bmwengines.uk/engine/b48/"
+              "url": "https://bmwengines.uk/engine/b38-b48"
             }
           ]
         },
@@ -305,7 +305,7 @@
         "recommendation": "The N55's HPFP is its most notorious weak point. If you experience long cranking or hesitation, don't ignore it - a failing HPFP can lead to lean running and catalytic converter damage. The replacement is well-understood and well-documented. This applies exclusively to the F20/F21 M135i.",
         "failureLink": {
           "label": "Read the full HPFP failure guide",
-          "href": "/failures/hpfp-failure/"
+          "href": "/failures/n54-high-pressure-fuel-pump"
         }
       },
       {
@@ -323,7 +323,7 @@
         "recommendation": "The N55's plastic chargepipe is prone to cracking, especially on tuned cars. The solution is an aftermarket metal chargepipe - fit once and forget. This is exclusively an F20/F21 issue; the F40 B48 uses a revised design.",
         "failureLink": {
           "label": "Read the full chargepipe failure guide",
-          "href": "/failures/chargepipe-failure/"
+          "href": "/failures"
         }
       },
       {
@@ -341,7 +341,7 @@
         "recommendation": "VANOS solenoid wear is common on higher-mileage N55 engines. The fix is relatively simple - cleaning or replacing the solenoids - but ignoring it can lead to timing issues. Regular oil changes with BMW LL-01 approved oil reduce the risk.",
         "failureLink": {
           "label": "Read the full VANOS failure guide",
-          "href": "/failures/vanos-failure/"
+          "href": "/failures/vanos-solenoid-failure"
         }
       }
     ]

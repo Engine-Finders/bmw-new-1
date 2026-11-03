@@ -3,8 +3,9 @@
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import MStripe from "@/components/reusableComponents/MStripe";
 import { useTheme } from "@/components/shared/themeProvider";
+import BrandIcon, { hasBrandIcon } from "@/components/home/brandIcon";
+import Sec3Icon, { hasSec3Icon } from "@/components/home/Sec3Icons";
 
 const iconPaths = {
   chart: <path d="M4 19V9m5 10V5m5 14v-7m5 7H3" />,
@@ -91,6 +92,9 @@ const verdictMeta = {
 };
 
 function Icon({ name, className = "h-5 w-5", strokeWidth = 1.9 }) {
+  // The client's icon artwork where it has one; arrows and chevrons stay as line icons.
+  if (hasSec3Icon(name)) return <Sec3Icon name={name} className={className} />;
+  if (hasBrandIcon(name)) return <BrandIcon name={name} className={className} scale={1} />;
   return (
     <svg aria-hidden="true" viewBox="0 0 24 24" className={className} fill="none" stroke="currentColor" strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round">
       {iconPaths[name] || iconPaths.question}
@@ -201,7 +205,7 @@ function StepIndicator({ labels, stageIndex, isDark }) {
           <div key={label} className="flex min-w-0 flex-1 items-center gap-2 md:gap-3">
             <div className="flex min-w-0 items-center gap-2">
               <span
-                className={`flex h-8 w-8 shrink-0 items-center justify-center rounded-full border text-[0.82rem] font-bold ${
+                className={`flex h-8 w-8 shrink-0 items-center justify-center rounded-full border t-label font-bold ${
                   done || active
                     ? "border-[var(--color-primary)] bg-[var(--color-primary)] text-white"
                     : isDark
@@ -211,7 +215,7 @@ function StepIndicator({ labels, stageIndex, isDark }) {
               >
                 {done ? "✓" : stepNumber}
               </span>
-              <span className={`truncate text-[0.72rem] font-semibold uppercase tracking-[0.06em] md:text-[0.78rem] ${done || active ? "text-[var(--color-primary)]" : isDark ? "text-white/62" : "text-[#607085]"}`}>
+              <span className={`t-label truncate font-semibold uppercase tracking-[0.04em] ${done || active ? "text-[var(--color-primary)]" : isDark ? "text-white/62" : "text-[#607085]"}`}>
                 {label}
               </span>
             </div>
@@ -223,17 +227,48 @@ function StepIndicator({ labels, stageIndex, isDark }) {
   );
 }
 
-function TrustStrip({ items, isDark }) {
+function Chevron({ className = "h-4 w-4" }) {
   return (
-    <ul className={`mt-6 grid grid-cols-2 overflow-hidden rounded-xl border shadow-[0_14px_34px_rgba(10,26,43,0.08)] md:grid-cols-4 ${isDark ? "border-[#223343] bg-[rgba(10,21,32,0.86)]" : "border-[#d7dde6] bg-white/95"}`}>
+    <svg aria-hidden="true" viewBox="0 0 24 24" className={className} fill="none" stroke="currentColor" strokeWidth="1.8">
+      <path d="m9 5 7 7-7 7" />
+    </svg>
+  );
+}
+
+// Card surfaces shared by the three columns (reference: white cards on light, navy glass on dark).
+function card(isDark) {
+  return isDark ? "border-[#1e3350] bg-[rgba(10,18,30,0.92)]" : "border-[#e3e8ef] bg-white";
+}
+function innerCard(isDark) {
+  return isDark ? "border-[#1e3350] bg-[rgba(16,26,42,0.9)]" : "border-[#e8ecf2] bg-white";
+}
+
+function TrustStrip({ items, isDark, phone = false }) {
+  const strong = isDark ? "text-white" : "text-[#0b1626]";
+  const soft = isDark ? "text-white/78" : "text-[#3b4656]";
+  return (
+    <ul
+      className={`grid grid-cols-4 rounded-[10px] border ${phone ? "px-1 py-3.5" : "py-3"} ${
+        isDark ? "border-[#1e3350] bg-[rgba(10,18,30,0.85)]" : "border-[#e6eaf0] bg-white shadow-[0_8px_30px_rgba(10,26,43,0.06)]"
+      }`}
+    >
       {items.map((item) => (
-        <li key={item.text} className={`flex items-center gap-3 border-b px-3 py-4 md:border-b-0 md:border-r md:px-4 last:border-b-0 md:last:border-r-0 ${isDark ? "border-[#223343]" : "border-[#d7dde6]"}`}>
-          <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[var(--color-primary-soft)] text-[var(--color-primary)]">
-            <Icon name={item.icon} className="h-5 w-5" />
+        <li
+          key={item.text}
+          className={`relative flex [&:not(:last-child)]:after:absolute [&:not(:last-child)]:after:right-0 [&:not(:last-child)]:after:top-1/2 [&:not(:last-child)]:after:h-[60%] [&:not(:last-child)]:after:w-px [&:not(:last-child)]:after:-translate-y-1/2 ${
+            isDark ? "after:bg-white/12" : "after:bg-[#e3e8ef]"
+          } ${phone ? "flex-col items-center gap-1.5 px-1 text-center" : "items-center gap-3 px-4"}`}
+        >
+          <span className={isDark ? "text-[#3b82f6]" : "text-[#0b4fc0]"}>
+            <Icon name={item.icon} className={phone ? "h-8 w-8" : "h-8 w-8 shrink-0"} />
           </span>
-          <span className="min-w-0">
-            <strong className={`block text-[0.95rem] leading-tight ${isDark ? "text-white" : "text-[#071827]"}`}>{item.value}</strong>
-            <span className={`block text-[0.72rem] leading-[1.3] ${isDark ? "text-white/72" : "text-[#27384a]"}`}>{item.text}</span>
+          <span className={phone ? "text-[13px] leading-[1.3]" : "t-label"}>
+            <span className={`block ${strong}`}>
+              {item.lead ? <span className={phone ? "block" : ""}>{item.lead} </span> : null}
+              {item.value ? <strong className={`font-semibold ${phone ? "block text-[15px]" : "text-[16px]"}`}>{item.value}</strong> : null}
+              {item.tail ? <span className={phone ? "block" : ""}> {item.tail}</span> : null}
+            </span>
+            <span className={`block ${soft}`}>{item.text}</span>
           </span>
         </li>
       ))}
@@ -241,47 +276,209 @@ function TrustStrip({ items, isDark }) {
   );
 }
 
-function SideInfo({ data, isDark }) {
+function HowItWorks({ data, isDark, numbered = false }) {
+  const strong = isDark ? "text-white" : "text-[#0b1626]";
+  const soft = isDark ? "text-white/75" : "text-[#3b4656]";
   return (
-    <div className="grid gap-4">
-      <section className={`rounded-xl border p-4 shadow-[0_12px_34px_rgba(10,26,43,0.05)] ${isDark ? "border-[#223343] bg-[rgba(10,21,32,0.88)]" : "border-[#d7dde6] bg-white"}`}>
-        <h3 className="text-[0.82rem] font-bold uppercase tracking-[0.08em] text-[var(--color-primary)]">How It Works</h3>
-        <ul className="mt-4 grid gap-3">
-          {data.steps.map((step) => (
-            <li key={step.step} className={`rounded-lg border p-3 ${isDark ? "border-[#223343] bg-[rgba(14,28,41,0.84)]" : "border-[#e4e9f0] bg-[#fbfdff]"}`}>
-              <div className="flex items-start gap-3">
-                <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-[var(--color-primary)] text-white">
-                  <Icon name={step.icon} className="h-5 w-5" />
-                </span>
-                <div>
-                  <p className="text-[0.76rem] font-bold uppercase tracking-[0.08em] text-[var(--color-primary)]">Step {step.step}</p>
-                  <p className={`mt-1 text-[0.88rem] font-semibold leading-tight ${isDark ? "text-white" : "text-[#071827]"}`}>{step.title}</p>
-                  <p className={`mt-1 text-[0.76rem] leading-[1.4] ${isDark ? "text-white/72" : "text-[#27384a]"}`}>{step.text}</p>
-                </div>
-              </div>
+    <div className={`rounded-[10px] border p-4 ${card(isDark)}`}>
+      <p className={`t-label px-1 pt-1 font-semibold uppercase tracking-[0.02em] ${isDark ? "text-[#3b82f6]" : "text-[#0b4fc0]"}`}>
+        {data.title}
+      </p>
+      <ul className={`mt-3.5 grid ${numbered ? "gap-0" : "gap-3"}`}>
+        {data.steps.map((step, i) =>
+          numbered ? (
+            <li key={step.step} className="relative grid grid-cols-[32px_46px_minmax(0,1fr)_16px] items-center gap-3 py-3">
+              {i < data.steps.length - 1 ? <span className={`absolute left-[15px] top-[50%] h-full w-px ${isDark ? "bg-white/15" : "bg-[#dfe5ee]"}`} /> : null}
+              <span className="relative flex h-[32px] w-[32px] items-center justify-center rounded-full bg-[#0b47a8] t-body font-semibold text-white">{step.step}</span>
+              <span className="flex h-[46px] w-[46px] items-center justify-center rounded-[6px] bg-[#0b4fc0] text-white">
+                <Icon name={step.icon} className="h-7 w-7" />
+              </span>
+              <span className={`${i < data.steps.length - 1 ? `border-b pb-3 ${isDark ? "border-white/10" : "border-[#e6eaf0]"}` : ""}`}>
+                <span className={`block text-[17px] font-semibold leading-[1.3] ${strong}`}>{step.title}</span>
+                <span className={`t-body mt-1 block ${soft}`}>{step.text}</span>
+              </span>
+              <Chevron className={`h-4 w-4 ${strong}`} />
             </li>
-          ))}
-        </ul>
-      </section>
+          ) : (
+            <li key={step.step} className={`relative rounded-[8px] border p-4 ${innerCard(isDark)}`}>
+              <span className="flex items-center gap-3 pr-6">
+                <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-[6px] bg-[#0b4fc0] text-white">
+                  <Icon name={step.icon} className="h-7 w-7" />
+                </span>
+                <span className="min-w-0">
+                  <span className={`t-label block font-medium ${isDark ? "text-[#3b82f6]" : "text-[#0b4fc0]"}`}>Step {step.step}</span>
+                  <span className={`block text-[18px] font-semibold leading-[1.3] ${strong}`}>{step.title}</span>
+                </span>
+              </span>
+              <Chevron className={`absolute right-3 top-5 h-4 w-4 ${strong}`} />
+              <span className={`t-body mt-3 block ${soft}`}>{step.text}</span>
+            </li>
+          ),
+        )}
+      </ul>
+    </div>
+  );
+}
 
-      <section className={`rounded-xl border p-4 shadow-[0_12px_34px_rgba(10,26,43,0.05)] ${isDark ? "border-[#223343] bg-[rgba(10,21,32,0.88)]" : "border-[#d7dde6] bg-white"}`}>
-        <h3 className="text-[0.82rem] font-bold uppercase tracking-[0.08em] text-[var(--color-primary)]">Why Trust This Tool</h3>
-        <ul className="mt-4 grid gap-3">
-          {data.items.map((item) => (
-            <li key={item.title} className={`rounded-lg border p-3 ${isDark ? "border-[#223343] bg-[rgba(14,28,41,0.84)]" : "border-[#e4e9f0] bg-[#fbfdff]"}`}>
-              <div className="flex items-start gap-3">
-                <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[var(--color-primary-soft)] text-[var(--color-primary)]">
-                  <Icon name={item.icon} className="h-5 w-5" />
+function WhyTrust({ title, items, isDark, phone = false }) {
+  const strong = isDark ? "text-white" : "text-[#0b1626]";
+  const soft = isDark ? "text-white/75" : "text-[#3b4656]";
+  const heading = `t-label px-1 pt-1 font-semibold uppercase tracking-[0.02em] ${isDark ? "text-[#3b82f6]" : "text-[#0b4fc0]"}`;
+  if (phone) {
+    return (
+      <div className={`rounded-[10px] border p-4 ${card(isDark)}`}>
+        <p className={heading}>{title}</p>
+        <ul className="mt-2">
+          {items.map((item) => (
+            <li key={item.title} className={`border-b py-3.5 last:border-b-0 ${isDark ? "border-white/10" : "border-[#e6eaf0]"}`}>
+              <span className="flex items-center gap-3">
+                <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-[#0b4fc0] text-white">
+                  <Icon name={item.icon} className="h-6 w-6" />
                 </span>
-                <div>
-                  <p className={`text-[0.88rem] font-semibold leading-tight ${isDark ? "text-white" : "text-[#071827]"}`}>{item.title}</p>
-                  <p className={`mt-1 text-[0.76rem] leading-[1.4] ${isDark ? "text-white/72" : "text-[#27384a]"}`}>{item.text}</p>
-                </div>
-              </div>
+                <span className={`flex-1 text-[17px] font-semibold leading-[1.3] ${strong}`}>{item.title}</span>
+                <Chevron className={`h-4 w-4 ${strong}`} />
+              </span>
+              <span className={`t-body mt-2 block ${soft}`}>{item.text}</span>
             </li>
           ))}
         </ul>
-      </section>
+      </div>
+    );
+  }
+  return (
+    <div className={`rounded-[10px] border p-4 ${card(isDark)}`}>
+      <p className={heading}>{title}</p>
+      <ul className="mt-3.5 grid gap-2.5">
+        {items.map((item) => (
+          <li key={item.title} className={`relative rounded-[8px] border p-4 ${innerCard(isDark)}`}>
+            <span className="flex items-center gap-3 pr-6">
+              <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[#0b4fc0] text-white">
+                <Icon name={item.icon} className="h-7 w-7" />
+              </span>
+              <span className={`text-[18px] font-semibold leading-[1.3] ${strong}`}>{item.title}</span>
+            </span>
+            <Chevron className={`absolute right-3 top-5 h-4 w-4 ${strong}`} />
+            <span className={`t-body mt-3 block ${soft}`}>{item.text}</span>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
+}
+
+function SymptomTiles({ tiles, selectedId, onSelect, isDark, phone = false }) {
+  const strong = isDark ? "text-white" : "text-[#0b1626]";
+  return (
+    <div className={`grid gap-1.5 ${phone ? "grid-cols-3" : "grid-cols-5"}`}>
+      {tiles.map((tile, i) => {
+        const active = selectedId === tile.id;
+        const lastAlone = phone && i === tiles.length - 1 && tiles.length % 3 === 1;
+        return (
+          <button
+            key={tile.id}
+            type="button"
+            onClick={() => onSelect(tile.id)}
+            className={`flex min-w-0 flex-col items-center rounded-[6px] border text-center transition ${phone ? "px-1.5 pb-3 pt-3.5" : "px-2 pb-3 pt-4"} ${
+              lastAlone ? "col-start-2" : ""
+            } ${
+              active
+                ? "border-[#0b4fc0] bg-[#eef3fb] ring-1 ring-[#0b4fc0]"
+                : isDark
+                  ? "border-[#1e3350] bg-[rgba(16,26,42,0.9)] hover:border-[#3b82f6]"
+                  : "border-[#e8ecf2] bg-white hover:border-[#0b4fc0]"
+            }`}
+          >
+            <span className={isDark && !active ? "text-[#3b82f6]" : "text-[#0b4fc0]"}>
+              <Icon name={tile.icon} className={phone ? "h-11 w-11" : "h-12 w-12"} />
+            </span>
+            {/* Long words ("Performance", "Consumption") break inside the tile instead of running into the next one at 1024px. */}
+            <span className={`mt-2.5 max-w-full leading-[1.35] [overflow-wrap:anywhere] [hyphens:auto] ${phone ? "text-[14px]" : "t-label"} ${active ? "text-[#0b1626]" : strong}`}>{tile.label}</span>
+            {!phone ? <Chevron className={`mt-auto h-4 w-4 pt-1 ${active ? "text-[#0b1626]" : strong}`} /> : null}
+          </button>
+        );
+      })}
+    </div>
+  );
+}
+
+function ExampleResult({ data, isDark }) {
+  const strong = isDark ? "text-white" : "text-[#0b1626]";
+  const soft = isDark ? "text-white/78" : "text-[#3b4656]";
+  const blue = isDark ? "text-[#5b9bff]" : "text-[#0b4fc0]";
+  return (
+    <div className={`rounded-[10px] border p-4 ${isDark ? "border-[#1e3350] bg-[rgba(10,18,30,0.92)]" : "border-[#e3e8ef] bg-[#f4f7fc]"}`}>
+      <span className={`inline-block rounded-[4px] px-2.5 py-1.5 t-label font-medium ${isDark ? "bg-white/10 text-[#5b9bff]" : "bg-[#e3ebf8] text-[#0b4fc0]"}`}>{data.label}</span>
+      <p className={`mt-4 t-h5 ${strong}`}>{data.title}</p>
+      <div className={`mt-4 rounded-[8px] border p-4 ${innerCard(isDark)}`}>
+        <p className={`t-body font-medium ${strong}`}>{data.fault}</p>
+        <span className="mt-2.5 inline-block rounded-[4px] bg-[#fde2e2] px-2.5 py-1 t-label text-[#c81e1e]">{data.likelihood}</span>
+        {data.rows.map(([k, v]) => (
+          <p key={k} className={`mt-2.5 t-label ${strong}`}>
+            {k} <span className={soft}>{v}</span>
+          </p>
+        ))}
+        <p className={`mt-4 t-label ${strong}`}>{data.repairLabel}</p>
+        <p className={`mt-1 t-num ${blue}`}>{data.repair}</p>
+        <p className={`mt-3 t-label ${strong}`}>{data.replaceLabel}</p>
+        <p className={`mt-1 t-num ${blue}`}>{data.replace}</p>
+        <p className={`mt-4 flex items-center gap-2 t-label ${soft}`}>
+          <Icon name="shield" className={`h-4 w-4 ${blue}`} />
+          {data.basis}
+        </p>
+      </div>
+      <div className={`mt-3.5 flex gap-4 rounded-[8px] p-4 ${isDark ? "bg-white/[0.05]" : "bg-[#e9eff9]"}`}>
+        <span className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-[#c9d8f1] text-[#0b47a8]">
+          <svg aria-hidden="true" viewBox="0 0 24 24" className="h-8 w-8">
+            <path d="M12 2.5 4.5 5.5v6c0 5 3.3 9 7.5 10 4.2-1 7.5-5 7.5-10v-6L12 2.5Z" fill="#0b47a8" />
+            <path d="m8.5 12 2.4 2.4L15.8 9.5" fill="none" stroke="#fff" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
+          </svg>
+        </span>
+        <span>
+          <span className={`block t-body font-medium ${strong}`}>{data.verdictTitle}</span>
+          <span className={`mt-1 block t-label leading-[1.5] ${soft}`}>{data.verdictText}</span>
+        </span>
+      </div>
+      <a href="#diagnose" className="mt-4 flex items-center justify-between rounded-[4px] bg-[#0b47a8] px-6 py-3.5 t-body font-medium text-white">
+        {data.cta}
+        <ArrowIcon className="h-5 w-5" />
+      </a>
+      <p className={`mt-3.5 text-center t-label leading-[1.6] ${soft}`}>
+        <svg aria-hidden="true" viewBox="0 0 24 24" className="mr-2 inline h-3.5 w-3.5 align-[-2px]" fill="currentColor">
+          <path d="M7 10V7a5 5 0 0 1 10 0v3h1a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1v-9a1 1 0 0 1 1-1h1Zm2 0h6V7a3 3 0 0 0-6 0v3Z" />
+        </svg>
+        {data.badges[0]} • {data.badges[1]}
+        <br />
+        {data.badges[2]}
+      </p>
+    </div>
+  );
+}
+
+function PromiseCard({ data, isDark }) {
+  const strong = isDark ? "text-white" : "text-[#0b1626]";
+  const soft = isDark ? "text-white/78" : "text-[#3b4656]";
+  return (
+    <div className={`rounded-[10px] border p-5 ${card(isDark)}`}>
+      <div className="flex gap-4">
+        <svg aria-hidden="true" viewBox="0 0 24 24" className="h-11 w-11 shrink-0">
+          <path d="m12 1.5 2.6 2 3.2-.3.9 3.1 2.8 1.6-1 3.1 1 3.1-2.8 1.6-.9 3.1-3.2-.3-2.6 2-2.6-2-3.2.3-.9-3.1-2.8-1.6 1-3.1-1-3.1 2.8-1.6.9-3.1 3.2.3 2.6-2Z" fill="#0b47a8" />
+          <path d="m8 12.2 2.8 2.8L16.5 9" fill="none" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+        </svg>
+        <div>
+          <p className={`t-body font-medium ${strong}`}>{data.title}</p>
+          {data.lines.map((line) => (
+            <p key={line} className={`mt-1 t-body leading-[1.5] ${soft}`}>
+              {line}
+            </p>
+          ))}
+        </div>
+      </div>
+      <div className="mt-5 flex items-center gap-1" aria-hidden="true">
+        {["#1c69d4", "#0b3d91", "#e4262c"].map((c) => (
+          <span key={c} className="h-[7px] w-[12px] -skew-x-[30deg]" style={{ backgroundColor: c }} />
+        ))}
+        <span className={`ml-3 h-[2px] flex-1 ${isDark ? "bg-white/15" : "bg-[#dfe5ee]"}`} />
+      </div>
     </div>
   );
 }
@@ -299,12 +496,12 @@ function ShortcutCard({ diagnosis, isDark, onSelect }) {
         <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[var(--color-primary-soft)] text-[var(--color-primary)]">
           <Icon name={diagnosis.icon} className="h-5 w-5" />
         </span>
-        <span className={`rounded-full border px-2 py-1 text-[0.64rem] font-bold uppercase tracking-[0.08em] ${isDark ? severity.darkBadge : severity.badge}`}>
+        <span className={`rounded-full border px-2 py-1 t-label font-bold uppercase tracking-[0.04em] ${isDark ? severity.darkBadge : severity.badge}`}>
           {severity.shortLabel}
         </span>
       </div>
-      <p className={`mt-3 text-[0.85rem] font-semibold leading-tight ${isDark ? "text-white" : "text-[#071827]"}`}>{diagnosis.shortcutLabel}</p>
-      <p className={`mt-1 text-[0.72rem] leading-[1.4] ${isDark ? "text-white/68" : "text-[#27384a]"}`}>{diagnosis.evidenceLabel}</p>
+      <p className={`mt-3 t-label font-semibold leading-tight ${isDark ? "text-white" : "text-[#071827]"}`}>{diagnosis.shortcutLabel}</p>
+      <p className={`mt-1 t-label leading-[1.4] ${isDark ? "text-white/68" : "text-[#27384a]"}`}>{diagnosis.evidenceLabel}</p>
     </button>
   );
 }
@@ -325,8 +522,8 @@ function CategoryCard({ category, selected, isDark, onSelect }) {
       <span className={`flex h-11 w-11 items-center justify-center rounded-full ${selected ? "bg-[var(--color-primary)] text-white" : "bg-[var(--color-primary-soft)] text-[var(--color-primary)]"}`}>
         <Icon name={category.icon} className="h-5 w-5" />
       </span>
-      <p className={`mt-3 text-[0.92rem] font-semibold leading-tight ${selected ? "text-[#071827]" : isDark ? "text-white" : "text-[#071827]"}`}>{category.label}</p>
-      <p className={`mt-1 text-[0.76rem] leading-[1.35] ${selected ? "text-[#27384a]" : isDark ? "text-white/72" : "text-[#27384a]"}`}>{category.description}</p>
+      <p className={`mt-3 t-body font-semibold leading-tight ${selected ? "text-[#071827]" : isDark ? "text-white" : "text-[#071827]"}`}>{category.label}</p>
+      <p className={`mt-1 t-label leading-[1.35] ${selected ? "text-[#27384a]" : isDark ? "text-white/72" : "text-[#27384a]"}`}>{category.description}</p>
     </button>
   );
 }
@@ -338,7 +535,7 @@ function AnswerButton({ answer, isDark, onSelect }) {
       onClick={() => onSelect(answer.diagnosisKey)}
       className={`flex w-full items-center justify-between gap-4 rounded-lg border px-4 py-4 text-left transition ${isDark ? "border-[#223343] bg-[rgba(14,28,41,0.84)] text-white hover:border-[#375067]" : "border-[#d7dde6] bg-white text-[#071827] hover:border-[var(--color-primary)] hover:bg-[#f8fbff]"}`}
     >
-      <span className="text-[0.88rem] leading-[1.4]">{answer.label}</span>
+      <span className="t-label leading-[1.4]">{answer.label}</span>
       <span className="shrink-0 text-[var(--color-primary)]">
         <ArrowIcon className="h-4 w-4" />
       </span>
@@ -349,7 +546,7 @@ function AnswerButton({ answer, isDark, onSelect }) {
 function SeverityBadge({ severity, isDark }) {
   const meta = severityMeta[severity];
 
-  return <span className={`inline-flex rounded-full border px-3 py-1.5 text-[0.72rem] font-bold uppercase tracking-[0.08em] ${isDark ? meta.darkBadge : meta.badge}`}>{meta.label}</span>;
+  return <span className={`inline-flex rounded-full border px-3 py-1.5 t-label font-bold uppercase tracking-[0.04em] ${isDark ? meta.darkBadge : meta.badge}`}>{meta.label}</span>;
 }
 
 function OverridePanel({ diagnosis, isDark, onContinue }) {
@@ -363,11 +560,11 @@ function OverridePanel({ diagnosis, isDark, onContinue }) {
         </span>
         <div className="min-w-0">
           <SeverityBadge severity={diagnosis.severity} isDark={isDark} />
-          <h3 className={`mt-3 text-[1.3rem] font-bold leading-tight md:text-[1.7rem] ${isDark ? "text-white" : "text-[#071827]"}`}>{diagnosis.overrideCopy.headline}</h3>
-          <p className={`mt-3 text-[0.9rem] leading-[1.5] ${isDark ? "text-white/78" : "text-[#27384a]"}`}>{diagnosis.overrideCopy.body}</p>
+          <p className={`mt-3 t-h5 ${isDark ? "text-white" : "text-[#071827]"}`}>{diagnosis.overrideCopy.headline}</p>
+          <p className={`mt-3 t-body leading-[1.5] ${isDark ? "text-white/78" : "text-[#27384a]"}`}>{diagnosis.overrideCopy.body}</p>
           <ul className="mt-4 grid gap-2">
             {diagnosis.overrideCopy.actions.map((action) => (
-              <li key={action} className={`flex items-start gap-3 text-[0.82rem] leading-[1.45] ${isDark ? "text-white/74" : "text-[#27384a]"}`}>
+              <li key={action} className={`flex items-start gap-3 t-label leading-[1.45] ${isDark ? "text-white/74" : "text-[#27384a]"}`}>
                 <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[var(--color-primary)] text-white">
                   <Icon name="shield" className="h-3 w-3" strokeWidth={2.3} />
                 </span>
@@ -376,7 +573,7 @@ function OverridePanel({ diagnosis, isDark, onContinue }) {
             ))}
           </ul>
           <div className="mt-5 flex flex-col gap-3 md:flex-row">
-            <button type="button" onClick={onContinue} className="flex items-center justify-center gap-3 rounded-lg bg-[var(--color-primary)] px-5 py-3 text-[0.88rem] font-bold text-white">
+            <button type="button" onClick={onContinue} className="flex items-center justify-center gap-3 rounded-lg bg-[var(--color-primary)] px-5 py-3 t-label font-bold text-white">
               <span>I understand - continue</span>
               <ArrowIcon className="h-4 w-4" />
             </button>
@@ -390,9 +587,9 @@ function OverridePanel({ diagnosis, isDark, onContinue }) {
 function CostCard({ title, value, note, highlight, isDark }) {
   return (
     <article className={`rounded-lg border p-4 ${highlight ? "border-[var(--color-primary)] bg-[var(--color-primary-soft)]" : isDark ? "border-[#223343] bg-[rgba(14,28,41,0.84)]" : "border-[#d7dde6] bg-white"}`}>
-      <p className={`text-[0.72rem] font-bold uppercase tracking-[0.08em] ${highlight ? "text-[var(--color-primary)]" : isDark ? "text-white/62" : "text-[#607085]"}`}>{title}</p>
-      <p className={`mt-2 text-[1.1rem] font-bold leading-tight ${highlight ? "text-[#071827]" : isDark ? "text-white" : "text-[#071827]"}`}>{value}</p>
-      <p className={`mt-1 text-[0.76rem] leading-[1.35] ${highlight ? "text-[#27384a]" : isDark ? "text-white/68" : "text-[#27384a]"}`}>{note}</p>
+      <p className={`t-label font-bold uppercase tracking-[0.04em] ${highlight ? "text-[var(--color-primary)]" : isDark ? "text-white/62" : "text-[#607085]"}`}>{title}</p>
+      <p className={`mt-2 text-[18px] font-bold leading-tight ${highlight ? "text-[#071827]" : isDark ? "text-white" : "text-[#071827]"}`}>{value}</p>
+      <p className={`mt-1 t-label leading-[1.35] ${highlight ? "text-[#27384a]" : isDark ? "text-white/68" : "text-[#27384a]"}`}>{note}</p>
     </article>
   );
 }
@@ -441,14 +638,14 @@ function ResultsScreen({ diagnosis, verdict, engineOption, ctas, isDark, calcula
           <div className="min-w-0">
             <div className="flex flex-wrap items-center gap-3">
               <SeverityBadge severity={diagnosis.severity} isDark={isDark} />
-              <span className={`text-[0.76rem] font-semibold uppercase tracking-[0.08em] ${isDark ? "text-white/62" : "text-[#607085]"}`}>{diagnosis.evidenceLabel}</span>
+              <span className={`t-label font-semibold uppercase tracking-[0.04em] ${isDark ? "text-white/62" : "text-[#607085]"}`}>{diagnosis.evidenceLabel}</span>
             </div>
-            <h3 className={`mt-3 text-[1.45rem] font-bold leading-tight md:text-[2rem] ${isDark ? "text-white" : "text-[#071827]"}`}>{diagnosis.headline}</h3>
-            <p className={`mt-3 max-w-[760px] text-[0.92rem] leading-[1.55] ${isDark ? "text-white/78" : "text-[#27384a]"}`} dangerouslySetInnerHTML={{ __html: diagnosis.summary }} />
+            <p className={`mt-3 t-h5 ${isDark ? "text-white" : "text-[#071827]"}`}>{diagnosis.headline}</p>
+            <p className={`mt-3 max-w-[760px] t-body leading-[1.55] ${isDark ? "text-white/78" : "text-[#27384a]"}`} dangerouslySetInnerHTML={{ __html: diagnosis.summary }} />
           </div>
           <div className={`rounded-xl border px-4 py-3 ${isDark ? severity.darkBadge : severity.badge}`}>
-            <p className="text-[0.7rem] font-bold uppercase tracking-[0.08em]">Tracked engine codes</p>
-            <p className="mt-1 text-[0.86rem] font-semibold leading-tight">{diagnosis.engineCodes.join(" / ")}</p>
+            <p className="t-label font-bold uppercase tracking-[0.04em]">Tracked engine codes</p>
+            <p className="mt-1 t-label font-semibold leading-tight">{diagnosis.engineCodes.join(" / ")}</p>
           </div>
         </div>
 
@@ -463,22 +660,22 @@ function ResultsScreen({ diagnosis, verdict, engineOption, ctas, isDark, calcula
       <section className={`rounded-xl border p-5 shadow-[0_12px_34px_rgba(10,26,43,0.06)] ${isDark ? "border-[#223343] bg-[rgba(10,21,32,0.9)]" : "border-[#d7dde6] bg-white"}`}>
         <div className="grid gap-5 lg:grid-cols-[minmax(0,1.25fr)_minmax(0,0.95fr)]">
           <div>
-            <h4 className={`text-[0.82rem] font-bold uppercase tracking-[0.08em] text-[var(--color-primary)]`}>Commonly affecting</h4>
+            <p className={`t-label font-bold uppercase tracking-[0.04em] text-[var(--color-primary)]`}>Commonly affecting</p>
             <div className="mt-3 flex flex-wrap gap-2">
               {diagnosis.chassis.map((item) => (
-                <span key={`${item.code}-${item.model}`} className={`rounded-lg border px-3 py-2 text-[0.78rem] ${isDark ? "border-[#223343] bg-[rgba(14,28,41,0.84)] text-white" : "border-[#d7dde6] bg-[#fbfdff] text-[#071827]"}`}>
+                <span key={`${item.code}-${item.model}`} className={`rounded-lg border px-3 py-2 t-label ${isDark ? "border-[#223343] bg-[rgba(14,28,41,0.84)] text-white" : "border-[#d7dde6] bg-[#fbfdff] text-[#071827]"}`}>
                   <strong>{item.model}</strong> {item.code}
                   <span className={`${isDark ? "text-white/64" : "text-[#607085]"}`}> {item.years}</span>
                 </span>
               ))}
             </div>
 
-            <h4 className="mt-5 text-[0.82rem] font-bold uppercase tracking-[0.08em] text-[var(--color-primary)]">OEM references</h4>
+            <p className="mt-5 t-label font-bold uppercase tracking-[0.04em] text-[var(--color-primary)]">OEM references</p>
             <div className={`mt-3 overflow-hidden rounded-lg border ${isDark ? "border-[#223343]" : "border-[#d7dde6]"}`}>
               {diagnosis.oemParts.map((part) => (
                 <div key={part.part} className={`grid grid-cols-[minmax(0,1fr)_minmax(140px,0.8fr)] gap-3 border-b px-4 py-3 last:border-b-0 ${isDark ? "border-[#223343] bg-[rgba(14,28,41,0.84)]" : "border-[#d7dde6] bg-white"}`}>
-                  <span className={`text-[0.82rem] ${isDark ? "text-white/78" : "text-[#27384a]"}`}>{part.label}</span>
-                  <span className={`text-[0.82rem] font-semibold ${isDark ? "text-white" : "text-[#071827]"}`}>{part.part}</span>
+                  <span className={`t-label ${isDark ? "text-white/78" : "text-[#27384a]"}`}>{part.label}</span>
+                  <span className={`t-label font-semibold ${isDark ? "text-white" : "text-[#071827]"}`}>{part.part}</span>
                 </div>
               ))}
             </div>
@@ -486,16 +683,16 @@ function ResultsScreen({ diagnosis, verdict, engineOption, ctas, isDark, calcula
 
           <div>
             <div className={`rounded-xl border p-4 ${isDark ? verdictInfo.darkBadge : verdictInfo.badge}`}>
-              <p className="text-[0.72rem] font-bold uppercase tracking-[0.08em]">Verdict</p>
-              <p className="mt-2 text-[1.15rem] font-bold leading-tight">{verdictInfo.title}</p>
-              <p className="mt-2 text-[0.82rem] leading-[1.45]" dangerouslySetInnerHTML={{ __html: verdictInfo.text }} />
+              <p className="t-label font-bold uppercase tracking-[0.04em]">Verdict</p>
+              <p className="mt-2 text-[18px] font-bold leading-tight">{verdictInfo.title}</p>
+              <p className="mt-2 t-label leading-[1.45]" dangerouslySetInnerHTML={{ __html: verdictInfo.text }} />
             </div>
 
             <div className={`mt-4 rounded-xl border p-4 ${isDark ? "border-[#223343] bg-[rgba(14,28,41,0.84)]" : "border-[#d7dde6] bg-[#fbfdff]"}`}>
-              <p className="text-[0.82rem] font-bold uppercase tracking-[0.08em] text-[var(--color-primary)]">Next steps</p>
+              <p className="t-label font-bold uppercase tracking-[0.04em] text-[var(--color-primary)]">Next steps</p>
               <ul className="mt-3 grid gap-2">
                 {diagnosis.nextSteps.map((step) => (
-                  <li key={step} className={`flex items-start gap-3 text-[0.8rem] leading-[1.45] ${isDark ? "text-white/76" : "text-[#27384a]"}`}>
+                  <li key={step} className={`flex items-start gap-3 t-label leading-[1.45] ${isDark ? "text-white/76" : "text-[#27384a]"}`}>
                     <span className="mt-0.5 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[var(--color-primary)] text-white">
                       <Icon name="shield" className="h-3 w-3" strokeWidth={2.3} />
                     </span>
@@ -508,12 +705,12 @@ function ResultsScreen({ diagnosis, verdict, engineOption, ctas, isDark, calcula
                 <button
                   type="button"
                   onClick={goToQuoteWithCalculator}
-                  className="btn-cta flex items-center justify-center gap-3 rounded-lg bg-[var(--color-primary)] px-5 py-3 text-[0.86rem] font-bold text-white"
+                  className="btn-cta flex items-center justify-center gap-3 rounded-lg bg-[var(--color-primary)] px-5 py-3 t-label font-bold text-white"
                 >
                   <span>{ctas.quote.label}</span>
                   <ArrowIcon className="h-4 w-4" />
                 </button>
-                <Link href={ctas.specialist.href} className={`flex items-center justify-center gap-3 rounded-lg border px-5 py-3 text-[0.86rem] font-bold ${isDark ? "border-[#375067] bg-[rgba(14,28,41,0.84)] text-white" : "border-[#d7dde6] bg-white text-[#071827]"}`}>
+                <Link href={ctas.specialist.href} className={`flex items-center justify-center gap-3 rounded-lg border px-5 py-3 t-label font-bold ${isDark ? "border-[#375067] bg-[rgba(14,28,41,0.84)] text-white" : "border-[#d7dde6] bg-white text-[#071827]"}`}>
                   <span>{ctas.specialist.label}</span>
                   <ArrowIcon className="h-4 w-4" />
                 </Link>
@@ -529,11 +726,10 @@ function ResultsScreen({ diagnosis, verdict, engineOption, ctas, isDark, calcula
 export default function HomeSec3({ data }) {
   const { theme } = useTheme();
   const isDark = theme === "dark";
-  const heroImage = isDark ? data.heroImages.dark : data.heroImages.light;
   const calculator = data.calculator;
   const diagnosesByKey = Object.fromEntries(calculator.diagnoses.map((item) => [item.key, item]));
-  const knownFaults = calculator.knownFaultOrder.map((key) => diagnosesByKey[key]).filter(Boolean);
   const [stage, setStage] = useState("entry");
+  const [selectedTileId, setSelectedTileId] = useState("");
   const [selectedCategoryId, setSelectedCategoryId] = useState("");
   const [selectedDiagnosisKey, setSelectedDiagnosisKey] = useState("");
   const [selectedAgeId, setSelectedAgeId] = useState("");
@@ -544,25 +740,16 @@ export default function HomeSec3({ data }) {
   const selectedDiagnosis = diagnosesByKey[selectedDiagnosisKey] || null;
   const selectedEngineOption = calculator.engineOptions.find((item) => item.id === selectedEngine) || calculator.engineOptions[0];
   const verdict = selectedDiagnosis ? getVerdict(selectedDiagnosis, carValue, selectedEngine, selectedAgeId, calculator.engineOptions) : null;
-  const stageIndexMap = {
-    entry: 1,
-    question: 1,
-    override: 1,
-    vehicle: 2,
-    engine: 3,
-    results: 3
-  };
-  const progressMap = {
-    entry: 20,
-    question: 34,
-    override: 40,
-    vehicle: 66,
-    engine: 86,
-    results: 100
-  };
+  const stageIndexMap = { entry: 1, question: 1, override: 1, vehicle: 2, engine: 3, results: 3 };
+  const progressMap = { entry: 20, question: 34, override: 40, vehicle: 66, engine: 86, results: 100 };
+
+  const strong = isDark ? "text-white" : "text-[#0b1626]";
+  const soft = isDark ? "text-white/78" : "text-[#3b4656]";
+  const sub = isDark ? "text-white/72" : "text-[#607085]";
 
   function resetFlow() {
     setStage("entry");
+    setSelectedTileId("");
     setSelectedCategoryId("");
     setSelectedDiagnosisKey("");
     setSelectedAgeId("");
@@ -570,246 +757,249 @@ export default function HomeSec3({ data }) {
     setSelectedEngine(calculator.engineOptions[0].id);
   }
 
+  function continueFromTiles() {
+    const tile = data.symptomTiles.find((t) => t.id === selectedTileId);
+    if (!tile) return;
+    setSelectedCategoryId(tile.categoryId);
+    setStage("question");
+  }
+
   function goToDiagnosis(key) {
     const diagnosis = diagnosesByKey[key];
-
-    if (!diagnosis) {
-      return;
-    }
-
+    if (!diagnosis) return;
     setSelectedDiagnosisKey(key);
-
-    if (diagnosis.severity === "catastrophic" || diagnosis.severity === "immediate") {
-      setStage("override");
-      return;
-    }
-
-    setStage("vehicle");
+    setStage(diagnosis.severity === "catastrophic" || diagnosis.severity === "immediate" ? "override" : "vehicle");
   }
 
-  function goBackFromVehicle() {
-    if (selectedCategoryId) {
-      setStage("question");
-      return;
-    }
-
-    setStage("entry");
-  }
-
-  return (
-    <section className={`relative overflow-hidden px-3 py-7 md:px-6 md:py-8 ${isDark ? "bg-[#02070b]" : "bg-white"}`}>
-      <div className="absolute inset-x-0 top-0 hidden h-[320px] md:block">
-        <Image src={heroImage.src} alt={heroImage.alt} fill className="object-cover object-center" sizes="100vw" />
-        <div className={isDark ? "absolute inset-0 bg-[linear-gradient(90deg,rgba(2,7,11,0.95)_0%,rgba(2,7,11,0.72)_36%,rgba(2,7,11,0.2)_78%)]" : "absolute inset-0 bg-[linear-gradient(90deg,rgba(255,255,255,0.98)_0%,rgba(255,255,255,0.88)_42%,rgba(255,255,255,0.12)_80%)]"} />
-        <div className={isDark ? "absolute inset-x-0 bottom-0 h-24 bg-[linear-gradient(0deg,#02070b_0%,transparent_100%)]" : "absolute inset-x-0 bottom-0 h-24 bg-[linear-gradient(0deg,white_0%,transparent_100%)]"} />
+  const renderStepOne = (phone = false) => (
+      <div>
+        <p className={`t-label font-semibold uppercase tracking-[0.02em] ${isDark ? "text-[#3b82f6]" : "text-[#0b4fc0]"}`}>{data.step1.label}</p>
+        <p className={`t-h5 mt-2 ${strong}`}>{data.step1.title}</p>
+        <p className={`t-body mt-1.5 ${sub}`}>{data.step1.text}</p>
+        <div className="mt-4">
+          <SymptomTiles tiles={data.symptomTiles} selectedId={selectedTileId} onSelect={setSelectedTileId} isDark={isDark} phone={phone} />
+        </div>
+        <button
+          type="button"
+          onClick={continueFromTiles}
+          aria-disabled={!selectedTileId}
+          className={`mt-6 flex items-center justify-between gap-4 rounded-[4px] bg-[#0b47a8] px-7 py-3 text-[15px] font-semibold text-white ${phone ? "w-full" : "w-[336px] max-w-full"} ${
+            selectedTileId ? "" : "opacity-95"
+          }`}
+        >
+          <span className="flex-1 text-center">{data.step1.cta}</span>
+          <ArrowIcon className="h-5 w-5" />
+        </button>
       </div>
+    );
 
-      <div className="relative mx-auto w-full max-w-8xl">
-        <div className="max-w-[760px]">
-          <h2 className={`text-[2.35rem] font-bold leading-[0.98] tracking-normal md:text-[3.45rem] ${isDark ? "text-white" : "text-[#071827]"}`} dangerouslySetInnerHTML={{ __html: data.h2 }} />
+  // Stages after the symptom grid keep the existing diagnosis flow.
+  const flow =
+    stage === "entry" ? null : (
+      <div>
+        <div className="mb-5">
+          <ProgressBar percent={progressMap[stage]} />
           <div className="mt-4">
-            <MStripe />
+            <StepIndicator labels={calculator.stepLabels} stageIndex={stageIndexMap[stage]} isDark={isDark} />
           </div>
-          <p className={`mt-4 max-w-[660px] text-[0.92rem] leading-[1.48] md:text-[1.04rem] ${isDark ? "text-white/78" : "text-[#27384a]"}`} dangerouslySetInnerHTML={{ __html: data.subHeadline }} />
         </div>
 
-        <TrustStrip items={data.trustStrip} isDark={isDark} />
+        {stage === "question" && selectedCategory ? (
+          <div>
+            <p className="t-label font-bold uppercase tracking-[0.04em] text-[var(--color-primary)]">{data.step1.label}</p>
+            <p className={`mt-2 t-h5 ${strong}`}>{selectedCategory.question}</p>
+            <p className={`mt-2 t-label leading-[1.45] ${soft}`}>Choose the closest symptom cluster. We route high-risk faults into safety advice before showing cost maths.</p>
+            <div className="mt-5 grid gap-3">
+              {selectedCategory.answers.map((answer) => (
+                <AnswerButton key={answer.label} answer={answer} isDark={isDark} onSelect={goToDiagnosis} />
+              ))}
+            </div>
+            <button type="button" onClick={() => setStage("entry")} className={`mt-5 t-label font-semibold ${sub}`}>
+              Back to symptom categories
+            </button>
+          </div>
+        ) : null}
 
-        <div className="mt-6 grid gap-4 lg:grid-cols-[minmax(0,1.6fr)_320px] lg:items-start">
-          <div className={`overflow-hidden rounded-2xl border shadow-[0_14px_36px_rgba(10,26,43,0.08)] ${isDark ? "border-[#223343] bg-[rgba(7,18,29,0.92)]" : "border-[#d7dde6] bg-white"}`}>
-            <div className="px-4 pt-4 md:px-6 md:pt-6">
-              <ProgressBar percent={progressMap[stage]} />
-              <div className="mt-4">
-                <StepIndicator labels={calculator.stepLabels} stageIndex={stageIndexMap[stage]} isDark={isDark} />
+        {stage === "override" && selectedDiagnosis ? <OverridePanel diagnosis={selectedDiagnosis} isDark={isDark} onContinue={() => setStage("vehicle")} /> : null}
+
+        {stage === "vehicle" ? (
+          <div>
+            <p className="t-label font-bold uppercase tracking-[0.04em] text-[var(--color-primary)]">Step 2 of 3</p>
+            <p className={`mt-2 t-h5 ${strong}`}>Tell us about your vehicle</p>
+            <div className="mt-5">
+              <p className={`t-label font-bold uppercase tracking-[0.04em] ${sub}`}>Vehicle age</p>
+              <div className="mt-3 flex flex-wrap gap-2">
+                {calculator.ageOptions.map((item) => (
+                  <button
+                    key={item.id}
+                    type="button"
+                    onClick={() => setSelectedAgeId(item.id)}
+                    className={`rounded-full border px-4 py-2 t-label font-semibold ${
+                      selectedAgeId === item.id ? "border-[#0b4fc0] bg-[#0b4fc0] text-white" : isDark ? "border-[#1e3350] bg-[rgba(16,26,42,0.9)] text-white" : "border-[#d7dde6] bg-white text-[#0b1626]"
+                    }`}
+                  >
+                    {item.label}
+                  </button>
+                ))}
               </div>
             </div>
-
-            <div className="px-4 pb-4 pt-5 md:px-6 md:pb-6">
-              {stage === "entry" ? (
-                <div>
-                  <div className="flex flex-col gap-2 md:flex-row md:items-end md:justify-between">
-                    <div>
-                      <p className="text-[0.76rem] font-bold uppercase tracking-[0.08em] text-[var(--color-primary)]">Known fault shortcuts</p>
-                      <h3 className={`mt-2 text-[1.35rem] font-bold leading-tight md:text-[1.7rem] ${isDark ? "text-white" : "text-[#071827]"}`}>Jump straight to the likely failure</h3>
-                    </div>
-                    <p className={`max-w-[300px] text-[0.8rem] leading-[1.4] md:text-right ${isDark ? "text-white/66" : "text-[#607085]"}`}>15 shortcut cards for drivers who already know the problem, plus the symptom route below for everyone else.</p>
-                  </div>
-
-                  <div className="mt-5 grid gap-3 sm:grid-cols-2 xl:grid-cols-3">
-                    {knownFaults.map((diagnosis) => (
-                      <ShortcutCard key={diagnosis.key} diagnosis={diagnosis} isDark={isDark} onSelect={goToDiagnosis} />
-                    ))}
-                  </div>
-
-                  <div className={`mt-6 border-t pt-6 ${isDark ? "border-[#223343]" : "border-[#d7dde6]"}`}>
-                    <p className="text-[0.76rem] font-bold uppercase tracking-[0.08em] text-[var(--color-primary)]">Symptom route</p>
-                    <h3 className={`mt-2 text-[1.35rem] font-bold leading-tight md:text-[1.7rem] ${isDark ? "text-white" : "text-[#071827]"}`}>Tell us where the issue starts</h3>
-                    <p className={`mt-2 text-[0.82rem] leading-[1.45] ${isDark ? "text-white/72" : "text-[#27384a]"}`}>Pick the category that best matches the fault. The next screen narrows it into a specific diagnosis path.</p>
-
-                    <div className="mt-5 grid gap-3 md:grid-cols-2 xl:grid-cols-3">
-                      {calculator.categories.map((category) => (
-                        <CategoryCard key={category.id} category={category} selected={selectedCategoryId === category.id} isDark={isDark} onSelect={setSelectedCategoryId} />
-                      ))}
-                    </div>
-
-                    <div className="mt-5 flex flex-col gap-3 sm:flex-row">
-                      <button
-                        type="button"
-                        onClick={() => setStage("question")}
-                        disabled={!selectedCategoryId}
-                        className="flex items-center justify-center gap-3 rounded-lg bg-[var(--color-primary)] px-5 py-3 text-[0.88rem] font-bold text-white disabled:cursor-not-allowed disabled:bg-[#9eb5d8]"
-                      >
-                        <span>Continue to symptom questions</span>
-                        <ArrowIcon className="h-4 w-4" />
-                      </button>
-                    </div>
-                  </div>
+            <div className="mt-6">
+              <p className={`t-label font-bold uppercase tracking-[0.04em] ${sub}`}>Estimated current value</p>
+              <div className={`mt-3 rounded-xl border px-5 py-4 ${innerCard(isDark)}`}>
+                <strong className={`t-h4 block leading-none ${strong}`}>{fmtCurrency(carValue)}</strong>
+                <span className={`mt-1 block t-label ${sub}`}>What would the car roughly sell for in its current condition?</span>
+                <input
+                  type="range"
+                  min={0}
+                  max={calculator.valueSteps.length - 1}
+                  step={1}
+                  value={calculator.valueSteps.indexOf(carValue)}
+                  onChange={(event) => setCarValue(calculator.valueSteps[Number(event.target.value)])}
+                  className="mt-4 w-full accent-[#0b4fc0]"
+                />
+                <div className={`mt-3 flex justify-between gap-2 t-label ${sub}`}>
+                  {calculator.valueSteps.map((step) => (
+                    <span key={step}>{formatStepValue(step)}</span>
+                  ))}
                 </div>
-              ) : null}
-
-              {stage === "question" && selectedCategory ? (
-                <div>
-                  <p className="text-[0.76rem] font-bold uppercase tracking-[0.08em] text-[var(--color-primary)]">Question 2</p>
-                  <h3 className={`mt-2 text-[1.35rem] font-bold leading-tight md:text-[1.7rem] ${isDark ? "text-white" : "text-[#071827]"}`}>{selectedCategory.question}</h3>
-                  <p className={`mt-2 text-[0.82rem] leading-[1.45] ${isDark ? "text-white/72" : "text-[#27384a]"}`}>Choose the closest symptom cluster. We route high-risk faults into safety advice before showing cost maths.</p>
-
-                  <div className="mt-5 grid gap-3">
-                    {selectedCategory.answers.map((answer) => (
-                      <AnswerButton key={answer.label} answer={answer} isDark={isDark} onSelect={goToDiagnosis} />
-                    ))}
-                  </div>
-
-                  <div className="mt-5">
-                    <button type="button" onClick={() => setStage("entry")} className={`text-[0.82rem] font-semibold ${isDark ? "text-white/72" : "text-[#607085]"}`}>
-                      Back to symptom categories
-                    </button>
-                  </div>
-                </div>
-              ) : null}
-
-              {stage === "override" && selectedDiagnosis ? <OverridePanel diagnosis={selectedDiagnosis} isDark={isDark} onContinue={() => setStage("vehicle")} /> : null}
-
-              {stage === "vehicle" ? (
-                <div>
-                  <p className="text-[0.76rem] font-bold uppercase tracking-[0.08em] text-[var(--color-primary)]">Vehicle context</p>
-                  <h3 className={`mt-2 text-[1.35rem] font-bold leading-tight md:text-[1.7rem] ${isDark ? "text-white" : "text-[#071827]"}`}>Tell us about the car</h3>
-
-                  <div className="mt-5">
-                    <p className={`text-[0.78rem] font-bold uppercase tracking-[0.08em] ${isDark ? "text-white/64" : "text-[#607085]"}`}>Vehicle age</p>
-                    <div className="mt-3 flex flex-wrap gap-2">
-                      {calculator.ageOptions.map((item) => (
-                        <button
-                          key={item.id}
-                          type="button"
-                          onClick={() => setSelectedAgeId(item.id)}
-                          className={`rounded-full border px-4 py-2 text-[0.82rem] font-semibold ${selectedAgeId === item.id ? "border-[var(--color-primary)] bg-[var(--color-primary)] text-white" : isDark ? "border-[#375067] bg-[rgba(14,28,41,0.84)] text-white" : "border-[#d7dde6] bg-white text-[#071827]"}`}
-                        >
-                          {item.label}
-                        </button>
-                      ))}
-                    </div>
-                  </div>
-
-                  <div className="mt-6">
-                    <p className={`text-[0.78rem] font-bold uppercase tracking-[0.08em] ${isDark ? "text-white/64" : "text-[#607085]"}`}>Estimated current value</p>
-                    <div className={`mt-3 rounded-xl border px-5 py-4 ${isDark ? "border-[#223343] bg-[rgba(14,28,41,0.84)]" : "border-[#d7dde6] bg-[#fbfdff]"}`}>
-                      <strong className={`block text-[2rem] leading-none ${isDark ? "text-white" : "text-[#071827]"}`}>{fmtCurrency(carValue)}</strong>
-                      <span className={`mt-1 block text-[0.76rem] ${isDark ? "text-white/64" : "text-[#607085]"}`}>What would the car roughly sell for in its current condition?</span>
-                      <input
-                        type="range"
-                        min={0}
-                        max={calculator.valueSteps.length - 1}
-                        step={1}
-                        value={calculator.valueSteps.indexOf(carValue)}
-                        onChange={(event) => setCarValue(calculator.valueSteps[Number(event.target.value)])}
-                        className="mt-4 w-full accent-[var(--color-primary)]"
-                      />
-                      <div className={`mt-3 flex justify-between gap-2 text-[0.66rem] ${isDark ? "text-white/56" : "text-[#607085]"}`}>
-                        {calculator.valueSteps.map((step) => (
-                          <span key={step}>{formatStepValue(step)}</span>
-                        ))}
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:items-center">
-                    <button type="button" onClick={goBackFromVehicle} className={`text-[0.82rem] font-semibold ${isDark ? "text-white/72" : "text-[#607085]"}`}>
-                      Back
-                    </button>
-                    <button
-                      type="button"
-                      onClick={() => setStage("engine")}
-                      disabled={!selectedAgeId}
-                      className="flex items-center justify-center gap-3 rounded-lg bg-[var(--color-primary)] px-5 py-3 text-[0.88rem] font-bold text-white disabled:cursor-not-allowed disabled:bg-[#9eb5d8]"
-                    >
-                      <span>Continue to engine route</span>
-                      <ArrowIcon className="h-4 w-4" />
-                    </button>
-                  </div>
-                </div>
-              ) : null}
-
-              {stage === "engine" ? (
-                <div>
-                  <p className="text-[0.76rem] font-bold uppercase tracking-[0.08em] text-[var(--color-primary)]">Engine route</p>
-                  <h3 className={`mt-2 text-[1.35rem] font-bold leading-tight md:text-[1.7rem] ${isDark ? "text-white" : "text-[#071827]"}`}>Which replacement path are you comparing?</h3>
-                  <p className={`mt-2 text-[0.82rem] leading-[1.45] ${isDark ? "text-white/72" : "text-[#27384a]"}`}>This changes the replacement range and therefore the verdict. Reconditioned stays the conservative baseline.</p>
-
-                  <div className="mt-5 grid gap-3 md:grid-cols-3">
-                    {calculator.engineOptions.map((option) => (
-                      <button
-                        key={option.id}
-                        type="button"
-                        onClick={() => setSelectedEngine(option.id)}
-                        className={`rounded-xl border p-4 text-left ${selectedEngine === option.id ? "border-[var(--color-primary)] bg-[var(--color-primary-soft)]" : isDark ? "border-[#223343] bg-[rgba(14,28,41,0.84)]" : "border-[#d7dde6] bg-white"}`}
-                      >
-                        <p className={`text-[0.92rem] font-semibold leading-tight ${selectedEngine === option.id ? "text-[#071827]" : isDark ? "text-white" : "text-[#071827]"}`}>{option.label}</p>
-                        <p className={`mt-2 text-[0.76rem] leading-[1.35] ${selectedEngine === option.id ? "text-[#27384a]" : isDark ? "text-white/72" : "text-[#607085]"}`}>{option.subLabel}</p>
-                      </button>
-                    ))}
-                  </div>
-
-                  <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:items-center">
-                    <button type="button" onClick={() => setStage("vehicle")} className={`text-[0.82rem] font-semibold ${isDark ? "text-white/72" : "text-[#607085]"}`}>
-                      Back
-                    </button>
-                    <button type="button" onClick={() => setStage("results")} className="flex items-center justify-center gap-3 rounded-lg bg-[var(--color-primary)] px-5 py-3 text-[0.88rem] font-bold text-white">
-                      <span>See diagnosis and costs</span>
-                      <ArrowIcon className="h-4 w-4" />
-                    </button>
-                  </div>
-                </div>
-              ) : null}
-
-              {stage === "results" && selectedDiagnosis && verdict ? (
-                <div>
-                  <div className="mb-5 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
-                    <div>
-                      <p className="text-[0.76rem] font-bold uppercase tracking-[0.08em] text-[var(--color-primary)]">Results dashboard</p>
-                      <h3 className={`mt-2 text-[1.35rem] font-bold leading-tight md:text-[1.7rem] ${isDark ? "text-white" : "text-[#071827]"}`}>Diagnosis, cost range, and ownership verdict</h3>
-                    </div>
-                    <button type="button" onClick={resetFlow} className={`text-[0.82rem] font-semibold ${isDark ? "text-white/72" : "text-[#607085]"}`}>
-                      Start again
-                    </button>
-                  </div>
-                  <ResultsScreen
-                    diagnosis={selectedDiagnosis}
-                    verdict={verdict}
-                    engineOption={selectedEngineOption}
-                    ctas={calculator.ctas}
-                    isDark={isDark}
-                    calculatorContext={{
-                      categoryLabel: selectedCategory?.label || "",
-                      ageLabel: calculator.ageOptions.find((item) => item.id === selectedAgeId)?.label || "",
-                      carValue,
-                    }}
-                  />
-                </div>
-              ) : null}
+              </div>
+            </div>
+            <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:items-center">
+              <button type="button" onClick={() => setStage(selectedCategoryId ? "question" : "entry")} className={`t-label font-semibold ${sub}`}>
+                Back
+              </button>
+              <button
+                type="button"
+                onClick={() => setStage("engine")}
+                disabled={!selectedAgeId}
+                className="flex items-center justify-center gap-3 rounded-[4px] bg-[#0b47a8] px-5 py-3 t-label font-medium text-white disabled:cursor-not-allowed disabled:opacity-50"
+              >
+                CONTINUE TO STEP 3
+                <ArrowIcon className="h-4 w-4" />
+              </button>
             </div>
           </div>
+        ) : null}
 
-          <SideInfo data={{ steps: data.howItWorks.steps, items: calculator.whyTrust }} isDark={isDark} />
+        {stage === "engine" ? (
+          <div>
+            <p className="t-label font-bold uppercase tracking-[0.04em] text-[var(--color-primary)]">Step 3 of 3</p>
+            <p className={`mt-2 t-h5 ${strong}`}>Which replacement path are you comparing?</p>
+            <p className={`mt-2 t-label leading-[1.45] ${soft}`}>This changes the replacement range and therefore the verdict. Reconditioned stays the conservative baseline.</p>
+            <div className="mt-5 grid gap-3 md:grid-cols-3">
+              {calculator.engineOptions.map((option) => (
+                <button
+                  key={option.id}
+                  type="button"
+                  onClick={() => setSelectedEngine(option.id)}
+                  className={`rounded-xl border p-4 text-left ${selectedEngine === option.id ? "border-[#0b4fc0] bg-[#eef3fb]" : innerCard(isDark)}`}
+                >
+                  <p className={`t-body font-semibold leading-tight ${selectedEngine === option.id ? "text-[#0b1626]" : strong}`}>{option.label}</p>
+                  <p className={`mt-2 t-label leading-[1.35] ${selectedEngine === option.id ? "text-[#3b4656]" : sub}`}>{option.subLabel}</p>
+                </button>
+              ))}
+            </div>
+            <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:items-center">
+              <button type="button" onClick={() => setStage("vehicle")} className={`t-label font-semibold ${sub}`}>
+                Back
+              </button>
+              <button type="button" onClick={() => setStage("results")} className="flex items-center justify-center gap-3 rounded-[4px] bg-[#0b47a8] px-5 py-3 t-label font-medium text-white">
+                SEE DIAGNOSIS AND COSTS
+                <ArrowIcon className="h-4 w-4" />
+              </button>
+            </div>
+          </div>
+        ) : null}
+
+        {stage === "results" && selectedDiagnosis && verdict ? (
+          <div>
+            <div className="mb-5 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+              <p className={`t-h5 ${strong}`}>Diagnosis, cost range, and ownership verdict</p>
+              <button type="button" onClick={resetFlow} className={`t-label font-semibold ${sub}`}>
+                Start again
+              </button>
+            </div>
+            <ResultsScreen
+              diagnosis={selectedDiagnosis}
+              verdict={verdict}
+              engineOption={selectedEngineOption}
+              ctas={calculator.ctas}
+              isDark={isDark}
+              calculatorContext={{
+                categoryLabel: selectedCategory?.label || "",
+                ageLabel: calculator.ageOptions.find((item) => item.id === selectedAgeId)?.label || "",
+                carValue,
+              }}
+            />
+          </div>
+        ) : null}
+      </div>
+    );
+
+  return (
+    <section id="diagnose" className={`relative overflow-hidden ${isDark ? "bg-[#05090f]" : "bg-[#f9fafc]"}`}>
+      {/* ---------- Desktop / tablet ---------- */}
+      <div className="relative hidden md:block">
+        <div
+          aria-hidden="true"
+          className={`pointer-events-none absolute right-0 top-0 h-[470px] w-[60%] [mask-image:linear-gradient(90deg,transparent_0%,black_32%),linear-gradient(180deg,black_70%,transparent)] [mask-composite:intersect] ${
+            isDark
+              ? "bg-[radial-gradient(ellipse_at_62%_40%,#2a3240_0%,#11161e_45%,#05090f_80%)]"
+              : "bg-[radial-gradient(ellipse_at_62%_35%,#ffffff_0%,#eceef1_45%,#dfe2e6_75%,#f9fafc_100%)]"
+          }`}
+        />
+        <div className="site-container section-y relative">
+          <div aria-hidden="true" className="pointer-events-none absolute right-[var(--gutter)] top-6 h-[360px] w-[470px] max-w-[40%]">
+            <div className={`absolute inset-x-[4%] -bottom-[2%] h-[10%] rounded-[50%] blur-xl ${isDark ? "bg-black/80" : "bg-black/35"}`} />
+            <Image src={isDark ? data.images.desktop.dark : data.images.desktop.light} alt={data.images.desktop.alt} fill sizes="40vw" className="object-contain object-bottom" />
+          </div>
+          <div className="relative max-w-[620px]">
+            <h2 className={`t-h2 [&>span]:whitespace-nowrap ${strong}`} dangerouslySetInnerHTML={{ __html: data.h2 }} />
+            <p className={`t-p mt-4 max-w-[560px] ${soft}`}>{data.subHeadline}</p>
+          </div>
+          <div className="relative z-10 mt-7 max-w-[900px]">
+            <TrustStrip items={data.trustStrip} isDark={isDark} />
+          </div>
+
+          <div className="relative mt-6 grid gap-4 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.7fr)_minmax(0,1fr)]">
+            <div className="hidden lg:block">
+              <HowItWorks data={data.howItWorks} isDark={isDark} />
+            </div>
+            <div className={`rounded-[10px] border p-5 ${isDark ? "border-[#2563eb]/60 bg-[rgba(10,18,30,0.92)]" : "border-[#c9d8f1] bg-white"}`}>
+              {stage === "entry" ? renderStepOne() : flow}
+            </div>
+            <div className="hidden lg:block">
+              <WhyTrust title={data.whyTrustTitle} items={calculator.whyTrust} isDark={isDark} />
+            </div>
+            <div className="grid gap-4 md:grid-cols-2 lg:hidden">
+              <HowItWorks data={data.howItWorks} isDark={isDark} />
+              <WhyTrust title={data.whyTrustTitle} items={calculator.whyTrust} isDark={isDark} />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* ---------- Phone (same layout in both themes; only colours change) ---------- */}
+      <div className="relative px-4 pb-8 pt-8 md:hidden">
+        <p className={`t-h2 relative ${strong}`}>
+          Diagnose Your <span className="heading-accent">BMW</span> Engine Problem
+        </p>
+        <p className={`t-body relative mt-3 ${soft}`}>{data.subHeadline}</p>
+        {/* Reference: the car sits right under the copy, on the right, bleeding off the edge. */}
+        <div aria-hidden="true" className="pointer-events-none relative -mr-4 mt-2 ml-auto h-[150px] w-[72%] overflow-hidden [mask-image:linear-gradient(90deg,transparent_0%,black_22%)]">
+          <div className="absolute inset-y-0 left-0 w-[125%]">
+            <Image src={data.images.phone.src} alt={data.images.phone.alt} fill sizes="80vw" className="object-contain object-left-bottom" />
+          </div>
+        </div>
+        <div className="relative z-10 -mt-4">
+          <TrustStrip items={data.trustStrip} isDark={isDark} phone />
+        </div>
+        <div className="relative mt-4">
+          <HowItWorks data={data.howItWorks} isDark={isDark} numbered />
+        </div>
+        <div className={`relative mt-4 rounded-[10px] border p-4 ${card(isDark)}`}>{stage === "entry" ? renderStepOne(true) : flow}</div>
+        <div className="relative mt-4">
+          <WhyTrust title={data.whyTrustTitle} items={calculator.whyTrust} isDark={isDark} phone />
         </div>
       </div>
     </section>

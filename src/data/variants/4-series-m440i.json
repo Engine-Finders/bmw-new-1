@@ -78,13 +78,13 @@
               "@type": "ListItem",
               "position": 1,
               "name": "B58B30O1 (3.0 straight-six turbo MHEV)",
-              "url": "https://bmwengines.uk/engine/b58/"
+              "url": "https://bmwengines.uk/engine/b57-b58"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "B58B30M2 (3.0 straight-six turbo MHEV)",
-              "url": "https://bmwengines.uk/engine/b58/"
+              "url": "https://bmwengines.uk/engine/b57-b58"
             }
           ]
         },
@@ -294,7 +294,7 @@
         "recommendation": "B58 coolant loss is one of the most frequently reported issues . The electric water pump can fail, and the expansion tank cap may not seal properly. If you notice the coolant level dropping, have the cooling system pressure‑tested immediately. Replacing a failing water pump preventatively is far cheaper than the overheating damage it can cause .",
         "failureLink": {
           "label": "",
-          "href": "/failures/coolant-leak/"
+          "href": "/failures/m54-cooling-system"
         }
       },
       {
@@ -312,7 +312,7 @@
         "recommendation": "The PCV valve is a well‑known weak point on the B58 . If you notice a rough idle, misfires, or oil in the intake, have the PCV system inspected. A failed PCV valve can cause oil consumption and performance issues. Replacing it promptly prevents more serious engine damage.",
         "failureLink": {
           "label": "",
-          "href": "/failures/pcv-valve-failure/"
+          "href": "/failures"
         }
       },
       {
@@ -330,7 +330,7 @@
         "recommendation": "The plastic oil filter housing on the B58 can crack and leak oil or coolant . Some owners have reported failures as early as 60,000 miles . If you notice oil or coolant residue on the front of the engine, have the oil filter housing inspected. An upgraded aluminium housing is available as a permanent fix .",
         "failureLink": {
           "label": "",
-          "href": "/failures/oil-filter-housing-failure/"
+          "href": "/failures/n55-valve-cover-oil-leak"
         }
       }
     ]

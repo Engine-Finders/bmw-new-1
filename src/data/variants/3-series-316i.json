@@ -120,55 +120,55 @@
               "@type": "ListItem",
               "position": 1,
               "name": "M40B16",
-              "url": "https://bmwengines.uk/engine/m40b16/"
+              "url": "https://bmwengines.uk/engine/m40-m42-m43-m44"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "M43B16",
-              "url": "https://bmwengines.uk/engine/m43b16/"
+              "url": "https://bmwengines.uk/engine/m40-m42-m43-m44"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "M43B19",
-              "url": "https://bmwengines.uk/engine/m43b19/"
+              "url": "https://bmwengines.uk/engine/m40-m42-m43-m44"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "N42B18",
-              "url": "https://bmwengines.uk/engine/n42b18/"
+              "url": "https://bmwengines.uk/engine/n40-n42-n43-n45-n46"
             },
             {
               "@type": "ListItem",
               "position": 5,
               "name": "N46B18",
-              "url": "https://bmwengines.uk/engine/n46b18/"
+              "url": "https://bmwengines.uk/engine/n40-n42-n43-n45-n46"
             },
             {
               "@type": "ListItem",
               "position": 6,
               "name": "N45B16",
-              "url": "https://bmwengines.uk/engine/n45b16/"
+              "url": "https://bmwengines.uk/engine/n40-n42-n43-n45-n46"
             },
             {
               "@type": "ListItem",
               "position": 7,
               "name": "N43B16",
-              "url": "https://bmwengines.uk/engine/n43b16/"
+              "url": "https://bmwengines.uk/engine/n40-n42-n43-n45-n46"
             },
             {
               "@type": "ListItem",
               "position": 8,
               "name": "N13B16A",
-              "url": "https://bmwengines.uk/engine/n13b16a/"
+              "url": "https://bmwengines.uk/engine/n13-n20"
             },
             {
               "@type": "ListItem",
               "position": 9,
               "name": "B38",
-              "url": "https://bmwengines.uk/engine/b38/"
+              "url": "https://bmwengines.uk/engine/b38-b48"
             }
           ]
         },
@@ -459,7 +459,7 @@
         "recommendation": "The N42/N46 and N13 engines are particularly vulnerable to timing chain issues. The plastic timing chain guides can become brittle and fail, causing chain stretch or snap. On the N13 (F30), this is the defining weakness of the engine. On the N42/N46 (E46), the timing chain tensioner is a known weak point. A preventative chain and tensioner replacement at £800–£2,000 is far cheaper than a £1,600–£3,500 engine replacement. At the first sign of cold‑start rattle, have the timing system inspected immediately.",
         "failureLink": {
           "label": "",
-          "href": "/failures/timing-chain-failure/"
+          "href": "/failures/timing-chain-diagnosis-guide"
         }
       },
       {
@@ -477,7 +477,7 @@
         "recommendation": "The N42/N46 and N43 engines feature BMW's VALVETRONIC variable valve lift and VANOS variable valve timing systems. These systems are sophisticated and effective but can develop issues. Solenoids can become clogged with oil sludge, and the VALVETRONIC motor can wear. Regular oil changes (using the correct BMW LL‑spec oil) are the best preventative measure. If the engine warning light appears with VANOS or VALVETRONIC codes, have the system diagnosed promptly.",
         "failureLink": {
           "label": "",
-          "href": "/failures/vanos-failure/"
+          "href": "/failures/vanos-solenoid-failure"
         }
       },
       {
@@ -495,7 +495,7 @@
         "recommendation": "The N42/N46 and N45/N43 engines are known for oil leaks from the valve cover gasket and oil filter housing gasket. If the oil filter housing gasket fails, oil can leak onto the serpentine belt, causing it to slip or break - which can then be ingested into the engine through the front crankshaft seal, causing catastrophic failure. If you notice oil spots under your 316i or a burning oil smell, investigate immediately. A £300–£800 gasket replacement is far cheaper than the consequences of a snapped belt.",
         "failureLink": {
           "label": "",
-          "href": "/failures/oil-leak/"
+          "href": "/failures/n55-valve-cover-oil-leak"
         }
       },
       {
@@ -513,7 +513,7 @@
         "recommendation": "The N43 (E90) and N13 (F30) use direct fuel injection with a high‑pressure fuel pump that can fail. Symptoms include long cranking times, particularly when hot, and loss of power. If the HPFP fails, the engine may run lean, causing misfires and potentially damaging the catalytic converter. Regular fuel filter changes and using high‑quality fuel can help prolong pump life, but HPFP replacement is a common maintenance item on these engines.",
         "failureLink": {
           "label": "",
-          "href": "/failures/hpfp-failure/"
+          "href": "/failures/n54-high-pressure-fuel-pump"
         }
       }
     ]

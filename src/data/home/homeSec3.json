@@ -1,57 +1,64 @@
 {
-  "h2": "Diagnostic <span class=\"heading-accent\">Calculator</span>",
-  "subHeadline": "Interactive triage for BMW owners. Start from a known fault or work through symptoms, then compare repair against replacement with a model-aware verdict.",
+  "h2": "<span class=\"block\">Diagnose Your</span><span class=\"block\"><span class=\"heading-accent\">BMW</span> Engine Problem</span>",
+  "subHeadline": "Answer a few questions about your symptoms - we'll match you against 15+ known BMW failure patterns, show you the likely diagnosis, OEM part references, and an honest repair vs. replace cost estimate.",
   "heroImages": {
     "light": {
-      "src": "/hero-day.webp",
-      "alt": "BMW in a bright diagnostic garage"
+      "src": "/home-image/cut/diagnose-light.webp",
+      "alt": "BMW 5 Series under the arch"
     },
     "dark": {
-      "src": "/Hero-dark.webp",
-      "alt": "BMW in a dark diagnostic garage"
+      "src": "/home-image/cut/diagnose-dark.webp",
+      "alt": "BMW 5 Series under the arch at night"
     }
   },
   "trustStrip": [
     {
-      "icon": "chart",
-      "value": "5,060+",
-      "text": "EM-VERIFIED BMW enquiries"
+      "icon": "real-inquiries",
+      "lead": "Powered by",
+      "value": "24,650+",
+      "text": "real UK enquiries"
     },
     {
-      "icon": "engine",
-      "value": "15",
-      "text": "tracked diagnosis paths"
+      "icon": "vetted-specialist",
+      "lead": "",
+      "value": "20+",
+      "tail": "vetted",
+      "text": "BMW specialists"
     },
     {
-      "icon": "gear",
-      "value": "8+",
-      "text": "engine codes monitored"
+      "icon": "oem-references",
+      "lead": "",
+      "value": "OEM",
+      "tail": "part",
+      "text": "references included"
     },
     {
-      "icon": "shield",
-      "value": "2-way",
-      "text": "fault or symptom routing"
+      "icon": "engine-finders",
+      "lead": "Part of",
+      "value": "",
+      "text": "Engine Finders"
     }
   ],
   "howItWorks": {
+    "title": "How It Works",
     "steps": [
       {
         "step": 1,
-        "icon": "shortcut",
-        "title": "Jump to a known fault or start from symptoms",
-        "text": "Choose one of 15 shortcut cards or answer the category flow if you are still diagnosing."
+        "icon": "symptoms",
+        "title": "Tell us your symptoms",
+        "text": "Select from common failure categories or use the shortcut grid if you already know the fault."
       },
       {
         "step": 2,
-        "icon": "car",
-        "title": "Add vehicle age and current value",
-        "text": "The verdict engine uses your car age, market value, and risk level before recommending repair, replacement, or exit."
+        "icon": "vehicle",
+        "title": "Tell us about your vehicle",
+        "text": "Age and estimated value help us calculate whether repair or replacement makes financial sense."
       },
       {
         "step": 3,
-        "icon": "clipboard",
-        "title": "Compare costs and next steps",
-        "text": "See severity, affected chassis, OEM references, cost bands, and two direct action routes."
+        "icon": "diagnose",
+        "title": "Get your diagnosis",
+        "text": "We'll show you the likely fault, OEM part numbers, severity level, and a transparent cost breakdown."
       }
     ]
   },
@@ -1174,25 +1181,150 @@
     ],
     "whyTrust": [
       {
-        "icon": "chart",
-        "title": "Real market-led structure",
-        "text": "This section now follows the same known-fault plus symptom-route logic described in the implementation guide."
-      },
-      {
         "icon": "shield",
-        "title": "Safety override first",
-        "text": "Catastrophic and immediate faults interrupt the flow with dedicated warnings before value maths is shown."
+        "title": "BMW-VERIFIED Data",
+        "text": "Every cost range and enquiry volume comes from real 2025 UK data - not estimates or guesswork."
       },
       {
-        "icon": "clipboard",
-        "title": "Decision, not just diagnosis",
-        "text": "Repair, replace, or walk-away verdicts are driven by your car value and the selected engine option."
+        "icon": "specific-knowledge",
+        "title": "BMW-Specific Knowledge",
+        "text": "We use exact BMW terminology (N47, B58, VANOS, Valvetronic) and OEM part numbers."
       },
       {
-        "icon": "users",
-        "title": "Actionable next step",
-        "text": "Each result ends in two practical routes: replacement quotes or a BMW specialist."
+        "icon": "users-team",
+        "title": "Vetted Specialist Network",
+        "text": "Our recommendations route you to 20+ BMW specialists who work on these engines daily."
+      },
+      {
+        "icon": "top-choice",
+        "title": "Honest Verdict System",
+        "text": "We tell you when replacement isn't worth it - not every site does that."
       }
+    ]
+  },
+  "trustStripLabel": "Trust Strip (above calculator)",
+  "whyTrust": {
+    "title": "Why Trust This Diagnosis?",
+    "columns": [
+      "Trust Signal",
+      "What It Means"
+    ]
+  },
+  "images": {
+    "desktop": {
+      "light": "/cars/home/s3-g20-dravit-front.webp",
+      "dark": "/cars/home/s3-g20-white-front.webp",
+      "alt": "BMW 3 Series (G20) front view"
+    },
+    "phone": {
+      "src": "/cars/home/s3-g20-white-front.webp",
+      "alt": "BMW 3 Series (G20) in Mineral White"
+    }
+  },
+  "step1": {
+    "label": "STEP 1 OF 3",
+    "title": "Tell us your symptoms",
+    "text": "Select from common failure categories or use the shortcut grid.",
+    "cta": "CONTINUE TO STEP 2"
+  },
+  "symptomTiles": [
+    {
+      "id": "performance",
+      "label": "Engine Performance Issues",
+      "icon": "engine",
+      "categoryId": "performance"
+    },
+    {
+      "id": "oil",
+      "label": "Oil Leaks & Consumption",
+      "icon": "oil-leak",
+      "categoryId": "leaks"
+    },
+    {
+      "id": "cooling",
+      "label": "Cooling System Faults",
+      "icon": "cooling-temp",
+      "categoryId": "cooling"
+    },
+    {
+      "id": "timing",
+      "label": "Timing Chain & Drive Issues",
+      "icon": "chain",
+      "categoryId": "drivetrain"
+    },
+    {
+      "id": "turbo",
+      "label": "Turbo / Boost Problems",
+      "icon": "turbo",
+      "categoryId": "performance"
+    },
+    {
+      "id": "starting",
+      "label": "Starting & Charging",
+      "icon": "battery",
+      "categoryId": "control"
+    },
+    {
+      "id": "misfire",
+      "label": "Misfires & Rough Idle",
+      "icon": "injector",
+      "categoryId": "performance"
+    },
+    {
+      "id": "exhaust",
+      "label": "Exhaust & Emissions",
+      "icon": "exhaust",
+      "categoryId": "leaks"
+    },
+    {
+      "id": "electrical",
+      "label": "Electrical Faults",
+      "icon": "electrical",
+      "categoryId": "control"
+    },
+    {
+      "id": "other",
+      "label": "Other / Not Sure",
+      "icon": "bulb",
+      "categoryId": "control"
+    }
+  ],
+  "whyTrustTitle": "Why Trust This Diagnosis?",
+  "exampleResult": {
+    "label": "EXAMPLE RESULT",
+    "title": "Likely Diagnosis",
+    "fault": "Oil Filter Housing Gasket Leak",
+    "likelihood": "High Likelihood",
+    "rows": [
+      [
+        "Common on:",
+        "N47, N57, B47, B57"
+      ],
+      [
+        "Symptoms Match:",
+        "4 / 5"
+      ]
+    ],
+    "repairLabel": "Estimated Repair Cost",
+    "repair": "£450 – £750",
+    "replaceLabel": "vs Replace Cost",
+    "replace": "£2,800 – £4,500",
+    "basis": "Based on 184 verified UK enquiries in 2025",
+    "verdictTitle": "Get your exact verdict",
+    "verdictText": "Our step-by-step diagnosis takes under 2 minutes and gives you a clear answer you can trust.",
+    "cta": "START DIAGNOSIS",
+    "badges": [
+      "100% Independent",
+      "No Sponsorship",
+      "Completely Unbiased"
+    ]
+  },
+  "promise": {
+    "title": "The Engine Finders Promise",
+    "lines": [
+      "Independent data. Real enquiries.",
+      "Honest answers.",
+      "Helping BMW owners make the right decision with confidence."
     ]
   }
 }

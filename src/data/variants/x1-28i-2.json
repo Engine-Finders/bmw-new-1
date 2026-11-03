@@ -78,7 +78,7 @@
               "@type": "ListItem",
               "position": 2,
               "name": "B47D20",
-              "url": "https://bmwengines.uk/engine/b47/"
+              "url": "https://bmwengines.uk/engine/b37-b47"
             }
           ]
         },
@@ -288,7 +288,7 @@
         "recommendation": "The N20's timing chain failure is well-documented. BMW faced a class action lawsuit in the US over this issue. The plastic chain guides degrade and can break, sending debris into the oil pickup. The fix is to replace the entire timing chain system with the revised 2015+ components. If you're buying a pre-2015 N20-engined X1 28i and there's no proof this work has been done, budget for it immediately -or walk away. Frequent oil changes (every 5,000 miles) are the key to avoiding this issue.",
         "failureLink": {
           "label": "Read the full timing chain failure guide",
-          "href": "/failures/timing-chain-failure/"
+          "href": "/failures/timing-chain-diagnosis-guide"
         }
       },
       {
@@ -306,7 +306,7 @@
         "recommendation": "The N20 is known for oil leaks from the valve cover gasket and oil filter housing gasket. These are well-understood jobs, but the oil filter housing gasket requires dismantling the intake manifold. If left unchecked, oil leaks can drip onto the exhaust manifold, causing smoke and a burning smell, or lead to low oil levels and engine damage. Catch them early.",
         "failureLink": {
           "label": "Read the full oil leak guide",
-          "href": "/failures/oil-leak/"
+          "href": "/failures/n55-valve-cover-oil-leak"
         }
       },
       {
@@ -324,7 +324,7 @@
         "recommendation": "The B48's oil filter housing is a known weak point. The unit can crack, causing coolant or oil leaks. Because it sits under the intake manifold, replacement is labour-intensive. This is the B48's most common issue -it affects everything from the X1 to the Supra. Check for coolant loss or oil spots regularly, and investigate any drop in fluid levels promptly.",
         "failureLink": {
           "label": "Read the full oil filter housing failure guide",
-          "href": "/failures/oil-filter-housing-failure/"
+          "href": "/failures/n55-valve-cover-oil-leak"
         }
       },
       {
@@ -342,7 +342,7 @@
         "recommendation": "The B48's electric water pump and coolant return line hoses are known to fail. Owners report that coolant hose failure is \"not a matter of if they will fail, but when\". These are typically 60,000–100,000 mile items. Replacing the water pump and hoses preventatively at around 70,000 miles is cheaper than dealing with an overheated engine.",
         "failureLink": {
           "label": "Read the full coolant leak guide",
-          "href": "/failures/coolant-leak/"
+          "href": "/failures/m54-cooling-system"
         }
       }
     ]

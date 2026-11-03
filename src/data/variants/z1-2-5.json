@@ -54,7 +54,7 @@
               "@type": "ListItem",
               "position": 1,
               "name": "BMW Z1 2.5 (M20B25, 1989-1991)",
-              "url": "https://bmwengines.uk/z1/"
+              "url": "https://bmwengines.uk/"
             }
           ]
         },
@@ -285,7 +285,7 @@
         "recommendation": "The M20B25 is an interference engine - if the timing belt breaks, pistons strike valves, often wrecking the cylinder head. Preventative belt replacement every 60,000 miles or 5 years (whichever comes first) is absolutely essential. The Z1 sits 40 mm lower than the E30, making access tighter but the principle is the same. A £400–£800 belt change is peanuts compared to a £3,500+ engine replacement. The Z1's single-row timing chain can also stretch, though belt failure is the more common concern.",
         "failureLink": {
           "label": "",
-          "href": "/failures/timing-belt-failure/"
+          "href": "/failures/timing-chain-diagnosis-guide"
         }
       },
       {
@@ -303,7 +303,7 @@
         "recommendation": "The Z1 has a unique cylinder-head oil-feed restriction that starves the valvetrain. The low-nose M20 oil pump can cause camshaft pitting, a fault never seen in the E30 325i because the Z1 sits 40 mm lower, flattening the sump angle. Specialist suppliers offer an up-rated M20B25 oil pump (OEM 11 41 1 730 302) and hardened 731 camshaft to cure the low-rpm oil starvation that kills cam lobes. If you hear tapping from the top of the engine, have the oil pump and valvetrain inspected immediately.",
         "failureLink": {
           "label": "",
-          "href": "/failures/oil-starvation/"
+          "href": "/failures"
         }
       },
       {
@@ -321,7 +321,7 @@
         "recommendation": "Head gasket failure is common on higher-mileage M20 engines. The Z1's thermal reactor (exhaust manifold) can also fail. If you notice coolant loss, overheating, or white smoke, have the head gasket tested immediately. Proactive replacement of the cooling system (water pump, thermostat, hoses) can help prevent overheating that causes head gasket failure. Some specialists offer thermal-reactor deletion as a preventative measure.",
         "failureLink": {
           "label": "",
-          "href": "/failures/head-gasket-failure/"
+          "href": "/failures"
         }
       },
       {
@@ -339,7 +339,7 @@
         "recommendation": "The Z1 has an under-body exhaust heat-shield failure that cooks starter motors. The heat shield can degrade over time, exposing the starter motor to excessive heat from the exhaust. This is a Z1-specific issue that E30 owners don't face. If you experience starting difficulties or starter motor failure, have the heat shield inspected and replaced if necessary. Proactive heat-shield inspection is recommended during routine servicing.",
         "failureLink": {
           "label": "",
-          "href": "/failures/starter-motor-failure/"
+          "href": "/failures"
         }
       },
       {
@@ -357,7 +357,7 @@
         "recommendation": "The M20's idle control valve (ICV) and intake system are prone to vacuum leaks and carbon buildup. Air leaks are the most common cause of running issues. The revs can swing between 800–400 rpm until the engine is warm. ICV and MAF sensors can usually be cleaned carefully, and the difference in tickover is immediately apparent. If you experience erratic idle, have the intake system checked for vacuum leaks and the ICV cleaned or replaced.",
         "failureLink": {
           "label": "",
-          "href": "/failures/idle-control-valve/"
+          "href": "/failures"
         }
       }
     ]

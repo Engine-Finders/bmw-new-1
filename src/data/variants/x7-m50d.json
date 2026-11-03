@@ -129,7 +129,7 @@
         "recommendation": "",
         "failureLink": {
           "label": "",
-          "href": "#"
+          "href": "/failures/turbocharger-failure"
         }
       },
       {
@@ -147,7 +147,7 @@
         "recommendation": "",
         "failureLink": {
           "label": "",
-          "href": "#"
+          "href": "/failures/n57-injector-seal"
         }
       },
       {
@@ -165,7 +165,7 @@
         "recommendation": "",
         "failureLink": {
           "label": "",
-          "href": "#"
+          "href": "/failures/egr-valve-cooler"
         }
       }
     ]

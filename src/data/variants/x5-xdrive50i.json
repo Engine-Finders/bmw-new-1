@@ -78,19 +78,19 @@
               "@type": "ListItem",
               "position": 1,
               "name": "N63B44A (4.4L Twin-Turbo V8)",
-              "url": "https://bmwengines.uk/engine/n63/"
+              "url": "https://bmwengines.uk/engine/n62-n63"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "N63B44O1 / N63TU (4.4L Twin-Turbo V8)",
-              "url": "https://bmwengines.uk/engine/n63tu/"
+              "url": "https://bmwengines.uk/engine/n62-n63"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "N63B44M3 / N63TU3 (4.4L Twin-Turbo V8)",
-              "url": "https://bmwengines.uk/engine/n63tu3/"
+              "url": "https://bmwengines.uk/engine/n62-n63"
             }
           ]
         },
@@ -325,7 +325,7 @@
         "recommendation": "The N63's most notorious issue is excessive oil consumption. Class action lawsuits in the US alleged owners had to add 6–8 quarts of oil between services. The primary cause is valve stem seal failure, allowing oil to enter the combustion chamber. If you notice blue smoke on startup or are constantly topping up oil, have the valve stem seals inspected. Ignoring this can lead to catalytic converter failure and, in extreme cases, engine damage from oil starvation.",
         "failureLink": {
           "label": "Read the full oil consumption guide",
-          "href": "/failures/oil-consumption/"
+          "href": "/failures/n63-oil-consumption"
         }
       },
       {
@@ -343,7 +343,7 @@
         "recommendation": "The N63's timing chain guides are a known weak point. Plastic guides can become brittle and break over time, leading to chain slack and potential catastrophic failure. The N63TU (F15) and N63TU3 (G05) have improved guides, but the issue hasn't been eliminated. At the first sign of cold-start rattle, get the chain and guides inspected immediately. Regular oil changes using BMW LL-01 approved oil are essential.",
         "failureLink": {
           "label": "Read the full timing chain failure guide",
-          "href": "/failures/timing-chain-failure/"
+          "href": "/failures/timing-chain-diagnosis-guide"
         }
       },
       {
@@ -361,7 +361,7 @@
         "recommendation": "Oil leaks from the valve cover gaskets and oil filter housing are common on the N63. The hot-vee design means the engine runs hot, which accelerates gasket degradation. If you notice oil spots or a burning smell, have the engine inspected promptly. Left unchecked, oil loss can lead to low oil levels and potential engine damage.",
         "failureLink": {
           "label": "Read the full oil leak guide",
-          "href": "/failures/oil-leak/"
+          "href": "/failures/n55-valve-cover-oil-leak"
         }
       }
     ]

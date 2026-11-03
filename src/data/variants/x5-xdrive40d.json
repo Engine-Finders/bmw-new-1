@@ -78,7 +78,7 @@
               "@type": "ListItem",
               "position": 2,
               "name": "B57D30B",
-              "url": "https://bmwengines.uk/engine/b57/"
+              "url": "https://bmwengines.uk/engine/b57-b58"
             }
           ]
         },
@@ -323,7 +323,7 @@
         "recommendation": "Oil leaks are among the most frequently reported issues on both N57 and B57 engines. They commonly occur from the valve cover gasket and oil filter housing. Oil leaks can lead to low oil levels and potential engine damage if not addressed promptly. The B57 engine is also known for oil leaks from the valve cover gasket and oil filter housing. If you notice oil spots under the car or a burning smell, have it inspected promptly.",
         "failureLink": {
           "label": "",
-          "href": "/failures/oil-leak/"
+          "href": "/failures/n55-valve-cover-oil-leak"
         }
       },
       {
@@ -341,7 +341,7 @@
         "recommendation": "Diesel X5 models, particularly the 30d and 40d, can develop soot build-up in the DPF or EGR system if driven mostly on short trips. Failed DPF regeneration won't be covered by warranty if caused by driving habits. Some owners have reported DPF blockage causing high exhaust pressure and failed regenerations. If you see a DPF warning light, take the car for a sustained motorway run at 2,000–2,500 rpm. If the light persists, have the DPF inspected. Regular motorway driving and using premium diesel can help keep the DPF healthy.",
         "failureLink": {
           "label": "",
-          "href": "/failures/dpf-failure/"
+          "href": "/failures/dpf-blockage"
         }
       },
       {
@@ -359,7 +359,7 @@
         "recommendation": "The EGR system can become clogged or fail, leading to increased emissions and potential engine performance issues. On short-distance driven cars, the EGR system is particularly prone to clogging. BMW has issued recalls for EGR cooler failures on some diesel applications. If you notice a loss of power or a warning light, have the EGR system inspected promptly.",
         "failureLink": {
           "label": "",
-          "href": "/failures/egr-cooler-failure/"
+          "href": "/failures/egr-valve-cooler"
         }
       },
       {
@@ -377,7 +377,7 @@
         "recommendation": "Problems with the fuel injectors and fuel pumps can lead to rough idling and decreased fuel efficiency. The B57 engine uses common rail piezo direct fuel injection capable of up to 10 injections per cycle, with fuel pressure of up to 2,700 bar - this high-pressure system can be expensive to repair. Some drivers have experienced issues with fuel injectors, leading to rough idling and decreased fuel efficiency. Regular fuel filter changes and using high-quality diesel are the best prevention.",
         "failureLink": {
           "label": "",
-          "href": "/failures/fuel-injector-failure/"
+          "href": "/failures/n57-injector-seal"
         }
       }
     ]

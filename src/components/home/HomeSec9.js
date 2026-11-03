@@ -2,168 +2,188 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import MStripe from "@/components/reusableComponents/MStripe";
+import { TABLE_HEADER_BG, TABLE_HEADER_TEXT } from "@/components/shared/tableHeader";
 import { useTheme } from "@/components/shared/themeProvider";
+import { MobileCard, MobileHeading, MobileLabel, MobileLead, MobileSection } from "@/components/home/mobileKit";
 
-const severityConfig = {
-  catastrophic: { dot: "bg-[#ff2b2b]", text: "text-[#07113a]" },
-  immediate: { dot: "bg-[#ff8a00]", text: "text-[#07113a]" },
-  monitor: { dot: "bg-[#ffd400]", text: "text-[#07113a]" },
-  low: { dot: "bg-[#25a844]", text: "text-[#07113a]" },
-};
+// The BMW Failure Database - engine failures + warning signs tables with severity and links,
+// under an engine-bay header, closed by the urgency key.
 
-const iconPaths = {
-  gear: (
-    <>
-      <path d="M12 8.4a3.6 3.6 0 1 0 0 7.2 3.6 3.6 0 0 0 0-7.2Z" />
-      <path d="m19.4 15.1.1 2.2-2.2 2.2-2.2-.9-1.3.5-.9 2.1H9.8l-.9-2.1-1.3-.5-2.2.9-2.2-2.2.1-2.2-.6-1.2-2-1v-3.1l2-1 .6-1.2-.1-2.2 2.2-2.2 2.2.9 1.3-.5.9-2.1h3.1l.9 2.1 1.3.5 2.2-.9 2.2 2.2-.1 2.2.6 1.2 2 1v3.1l-2 1-.6 1.2Z" />
-    </>
-  ),
-  warning: (
-    <>
-      <path d="M12 7.5v5.4" />
-      <path d="M12 16.5h.01" />
-      <path d="M10.2 4.8 2.7 18a2 2 0 0 0 1.7 3h15.2a2 2 0 0 0 1.7-3L13.8 4.8a2.1 2.1 0 0 0-3.6 0Z" />
-    </>
-  ),
-  arrow: <path d="M5 12h14m-6-6 6 6-6 6" />,
-};
+const SEV = { catastrophic: "#f1332e", immediate: "#fd9b0d", monitor: "#fce21b", low: "#39a943" };
 
-function Icon({ name, className = "h-5 w-5", strokeWidth = 2 }) {
+function Gear({ style }) {
   return (
-    <svg
-      aria-hidden="true"
-      viewBox="0 0 24 24"
-      className={className}
-      fill="none"
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth={strokeWidth}
-    >
-      {iconPaths[name] || iconPaths.gear}
+    <svg aria-hidden="true" viewBox="0 0 24 24" style={style} fill="currentColor">
+      <path d="M19.4 13a7.6 7.6 0 0 0 0-2l2.1-1.6-2-3.5-2.5 1a7.4 7.4 0 0 0-1.7-1L15 3.3h-4l-.4 2.6a7.4 7.4 0 0 0-1.7 1l-2.5-1-2 3.5L6.6 11a7.6 7.6 0 0 0 0 2l-2.1 1.6 2 3.5 2.5-1a7.4 7.4 0 0 0 1.7 1l.4 2.6h4l.4-2.6a7.4 7.4 0 0 0 1.7-1l2.5 1 2-3.5L19.4 13ZM13 15.4a3.4 3.4 0 1 1 0-6.8 3.4 3.4 0 0 1 0 6.8Z" transform="translate(-1 0)" />
     </svg>
   );
 }
 
-function Severity({ severity }) {
-  const config = severityConfig[severity.type] || severityConfig.monitor;
-
+function Warn({ style }) {
   return (
-    <span className={`inline-flex items-center gap-2 text-[0.86rem] leading-none md:gap-3 md:text-[0.95rem] ${config.text}`}>
-      <span className={`h-4 w-4 shrink-0 rounded-full ${config.dot}`} />
-      <span>{severity.label}</span>
-    </span>
+    <svg aria-hidden="true" viewBox="0 0 24 24" style={style} fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinejoin="round">
+      <path d="M12 3.2 22 20.5H2L12 3.2Z" />
+      <path d="M12 9.5v5.2" strokeLinecap="round" />
+      <circle cx="12" cy="17.4" r="0.9" fill="currentColor" stroke="none" />
+    </svg>
   );
 }
 
-function SectionIcon({ icon }) {
+function Arrow({ style }) {
   return (
-    <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded bg-[var(--color-primary)] text-white md:h-9 md:w-11">
-      <Icon name={icon} className="h-7 w-7 md:h-5 md:w-5" strokeWidth={2.3} />
-    </span>
+    <svg aria-hidden="true" viewBox="0 0 24 24" style={style} fill="none" stroke="currentColor" strokeWidth="1.8">
+      <path d="M3.5 12h16.5m-6.5-6.5L20 12l-6.5 6.5" />
+    </svg>
   );
 }
 
-function TableHeader({ block, isDark }) {
-  return (
-    <div className={`flex items-center border-b ${isDark ? "border-[#223343] bg-[rgba(10,21,32,0.94)]" : "border-[#dfe5ed] bg-white"}`}>
-      <SectionIcon icon={block.icon} />
-      <h3 className={`px-4 py-3 text-[1.15rem] font-bold uppercase text-[var(--color-primary)] md:py-2 md:text-[1rem] ${isDark ? "md:text-white" : "md:text-[#071827]"}`}>
-        {block.title}
-      </h3>
-    </div>
-  );
-}
+const COL = {
+  light: { bg: "#ffffff", h2: "#05070f", accent: "#05070f", para: "#2e3245", card: "#ffffff", border: "#e8ebf0", line: "#eef0f3", hdrBand: "#f8f9f9", tabBg: "#ffffff", tabEdge: "#e8ebf0",
+    sq: "#0048b9", tabText: "#0b1236", label: "#1d2230", num: "#0b4fe0", title: "#0b1236", desc: "#1e2230", sev: "#1d2230", link: "#0b4fe0", keyMuted: "#40465a", shadow: "0 2px 10px rgba(16,24,48,0.03)" },
+  dark: { bg: "#01060e", h2: "#ffffff", accent: "#ffffff", para: "#e1e4e9", card: "#03070d", border: "#3d434b", line: "#21252c", hdrBand: "#00030a", tabBg: "linear-gradient(90deg,#03244d,#011a36)", tabEdge: "#1b3558",
+    sq: "#003f97", tabText: "#ffffff", label: "#f2f4f7", num: "#2f7bec", title: "#ffffff", desc: "#e1e4e9", sev: "#ffffff", link: "#3b82f6", keyMuted: "#c4c9d1", shadow: "none" },
+};
 
-function DesktopRows({ block, isDark }) {
+// One grid for the column headings and the rows, so each heading starts where its column does.
+const GRID = "grid grid-cols-[44px_minmax(0,1.15fr)_minmax(0,2.6fr)_minmax(0,0.85fr)_minmax(0,0.75fr)] gap-x-4 px-5";
+
+function Table({ block, C, titleKey }) {
+  const Icon = block.icon === "warning" ? Warn : Gear;
   return (
-    <div className="hidden md:block">
-      <div className={`grid grid-cols-[60px_minmax(230px,0.95fr)_minmax(420px,1.8fr)_180px_170px] border-b text-[0.72rem] font-bold uppercase ${isDark ? "border-[#223343] bg-[rgba(14,27,41,0.95)] text-white/88" : "border-[#dfe5ed] bg-[#fbfcfe] text-[#071827]"}`}>
-        {block.columns.map((column) => (
-          <span key={column} className={`border-r px-6 py-2 last:border-r-0 ${isDark ? "border-[#223343]" : "border-[#e5e9ef]"}`}>
-            {column}
+    <div className="overflow-hidden rounded-[8px] border" style={{ background: C.card, borderColor: C.border, boxShadow: C.shadow }}>
+      <div className="relative flex h-11 items-center">
+        <span aria-hidden="true" className="absolute inset-y-0 left-0 w-[340px] [clip-path:polygon(0_0,calc(100%-24px)_0,100%_100%,0_100%)]" style={{ background: C.tabEdge }} />
+        <span aria-hidden="true" className="absolute left-0 top-0 h-[calc(100%-1px)] w-[339px] [clip-path:polygon(0_0,calc(100%-24px)_0,100%_100%,0_100%)]" style={{ background: C.tabBg }} />
+        <span className="relative flex h-full w-14 items-center justify-center text-white" style={{ background: C.sq }}>
+          <Icon style={{ width: 22, height: 22 }} />
+        </span>
+        <h3 className="t-label relative ml-4 font-semibold uppercase tracking-[0.02em]" style={{ color: C.tabText }}>{block.title}</h3>
+      </div>
+      <div className={`${GRID} t-label items-center py-2.5 font-semibold uppercase tracking-[0.02em]`} style={{ background: TABLE_HEADER_BG, color: TABLE_HEADER_TEXT }}>
+        {block.columns.map((c) => (
+          <span key={c}>{c}</span>
+        ))}
+      </div>
+      {block.rows.map((r) => (
+        <Link key={r.id} href={r.link.href} className={`${GRID} items-center border-t py-3 font-normal`} style={{ borderColor: C.line }}>
+          <span className="t-num" style={{ color: C.num }}>{r.id}</span>
+          <h4 className="text-[17px] font-semibold leading-[1.3]" style={{ color: C.title }}>{(titleKey && r[titleKey] ? r[titleKey] : r.title).replace(/\n/g, " ")}</h4>
+          <p className="t-body" style={{ color: C.desc }}>{r.description}</p>
+          <span className="t-body flex items-center gap-2.5" style={{ color: C.sev }}>
+            <span aria-hidden="true" className="h-3.5 w-3.5 shrink-0 rounded-full" style={{ background: SEV[r.severity.type] }} />
+            {r.severity.label}
           </span>
-        ))}
-      </div>
-
-      {block.rows.map((row) => (
-        <div
-          key={row.id}
-          className={`grid grid-cols-[60px_minmax(230px,0.95fr)_minmax(420px,1.8fr)_180px_170px] border-b last:border-b-0 ${isDark ? "border-[#223343]" : "border-[#e5e9ef]"}`}
-        >
-          <div className={`border-r px-6 py-4 text-[1.55rem] font-bold leading-none text-[var(--color-primary)] ${isDark ? "border-[#223343]" : "border-[#e5e9ef]"}`}>
-            {row.id}
-          </div>
-          <div className={`border-r px-6 py-4 text-[1rem] font-bold leading-tight ${isDark ? "border-[#223343] text-white" : "border-[#e5e9ef] text-[#071827]"}`}>
-            {row.title}
-          </div>
-          <p className={`border-r px-6 py-3 text-[0.82rem] leading-[1.25] ${isDark ? "border-[#223343] text-white/76" : "border-[#e5e9ef] text-[#171f2a]"}`} dangerouslySetInnerHTML={{ __html: row.description }} />
-          <div className={`border-r px-6 py-4 ${isDark ? "border-[#223343]" : "border-[#e5e9ef]"}`}>
-            <Severity severity={row.severity} />
-          </div>
-          <Link href={row.link.href} className="flex items-center gap-3 px-6 py-4 text-[0.9rem] font-medium text-[var(--color-primary)]">
-            {row.link.label}
-            <Icon name="arrow" className="h-4 w-4" />
-          </Link>
-        </div>
+          <span className="t-body flex items-center gap-2 font-medium" style={{ color: C.link }}>
+            {r.link.label}
+            <Arrow style={{ width: 16, height: 16 }} />
+          </span>
+        </Link>
       ))}
     </div>
   );
 }
 
-function MobileRows({ block, isDark }) {
+function Desktop({ data, isDark }) {
+  const C = COL[isDark ? "dark" : "light"];
   return (
-    <div className="md:hidden">
-      {block.rows.map((row) => (
-        <div key={row.id} className={`border-b px-4 py-4 last:border-b-0 ${isDark ? "border-[#223343]" : "border-[#dfe5ed]"}`}>
-          <div className="flex items-start gap-3">
-            <span className="w-8 shrink-0 text-[1.65rem] font-bold leading-none text-[var(--color-primary)]">
-              {row.id}
-            </span>
-            <div className="min-w-0 flex-1">
-              <h4 className={`text-[1.05rem] font-bold leading-tight ${isDark ? "text-white" : "text-[#07113a]"}`}>{row.title}</h4>
-              <div className="mt-2">
-                <Severity severity={row.severity} />
-              </div>
-            </div>
-          </div>
-          <p className={`mt-3 text-[0.86rem] leading-[1.48] ${isDark ? "text-white/78" : "text-[#07113a]"}`} dangerouslySetInnerHTML={{ __html: row.description }} />
-          <Link href={row.link.href} className="mt-4 inline-flex items-center gap-3 text-[0.95rem] font-bold text-[var(--color-primary)]">
-            {row.link.label}
-            <Icon name="arrow" className="h-5 w-5" />
-          </Link>
+    <div className="relative hidden lg:block">
+      <div aria-hidden="true" className="pointer-events-none absolute right-0 top-0 aspect-[836/226] w-[54%] max-w-[836px]">
+        <Image src={isDark ? data.headerImage.dark : data.headerImage.light} alt="" fill sizes="54vw" className="object-cover [mask-image:linear-gradient(90deg,transparent,black_12%)]" />
+      </div>
+      <div className="site-container section-y relative">
+        <div className="max-w-[640px]">
+          <h2 className="t-h2 [&_.heading-accent]:!text-[var(--acc)]" style={{ color: C.h2, "--acc": C.accent }} dangerouslySetInnerHTML={{ __html: data.h2 }} />
+          <span aria-hidden="true" className="mt-4 block h-[3px] w-[82px] bg-[linear-gradient(90deg,#0b55e6_60%,transparent)]" />
+          <p className="t-p mt-4 max-w-[600px]" style={{ color: C.para }}>{data.subHeadline}</p>
         </div>
-      ))}
-    </div>
-  );
-}
 
-function FailureTable({ block, isDark }) {
-  return (
-    <div className={`border-y md:overflow-hidden md:rounded-md md:border md:shadow-[0_12px_32px_rgba(10,26,43,0.06)] ${isDark ? "border-[#223343] bg-[rgba(10,21,32,0.92)]" : "border-[#dfe5ed] bg-white"}`}>
-      <TableHeader block={block} isDark={isDark} />
-      <DesktopRows block={block} isDark={isDark} />
-      <MobileRows block={block} isDark={isDark} />
-    </div>
-  );
-}
+        <div className="mt-8 grid gap-5">
+          <Table block={data.engineFailures} C={C} titleKey="titleDesktop" />
+          <Table block={data.warningSigns} C={C} />
+        </div>
 
-function UrgencyKey({ items, isDark }) {
-  return (
-    <div className={`border-y px-4 py-4 md:rounded-md md:border md:px-8 md:shadow-[0_12px_32px_rgba(10,26,43,0.04)] ${isDark ? "border-[#223343] bg-[rgba(10,21,32,0.92)]" : "border-[#dfe5ed] bg-white"}`}>
-      <div className="flex flex-col gap-3 md:flex-row md:items-center md:gap-8">
-        <p className={`text-[0.9rem] font-bold uppercase md:mr-2 ${isDark ? "text-white" : "text-[#071827]"}`}>Urgency Key:</p>
-        {items.map((item) => (
-          <div key={item.label} className={`flex items-center gap-3 text-[0.88rem] ${isDark ? "text-white/84" : "text-[#071827]"}`}>
-            <span className={`h-4 w-4 shrink-0 rounded-full ${(severityConfig[item.type] || severityConfig.monitor).dot}`} />
-            <span>
-              <strong>{item.label}</strong> - <span dangerouslySetInnerHTML={{ __html: item.text }} />
+        <div className="mt-5 flex flex-wrap items-center gap-x-6 gap-y-2 rounded-[8px] border px-6 py-3.5" style={{ background: C.card, borderColor: C.border, boxShadow: C.shadow }}>
+          <span className="t-label font-bold uppercase" style={{ color: C.title }}>Urgency key:</span>
+          {data.urgencyKey.map((u) => (
+            <span key={u.type} className="t-label flex items-center gap-2.5" style={{ color: C.title }}>
+              <span aria-hidden="true" className="h-3 w-3 shrink-0 rounded-full" style={{ background: SEV[u.type] }} />
+              <span>
+                {u.label}
+                <span style={{ color: C.keyMuted }}> - {u.text}</span>
+              </span>
             </span>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </div>
+  );
+}
+
+// Phone / tablet: readable stacked layout (body 17px, entries 16–18px, labels 13px).
+function Phone({ data, isDark }) {
+  const C = COL[isDark ? "dark" : "light"];
+  const blocks = [data.engineFailures, data.warningSigns];
+
+  return (
+    <MobileSection>
+      <MobileHeading html={data.h2} color={C.h2} accent={isDark ? "#2f7bec" : "#0b4fe0"} />
+      <div className="relative mt-5 h-[170px] overflow-hidden rounded-[16px]">
+        <Image src={isDark ? data.headerImage.dark : data.headerImage.light} alt={data.headerImage.alt} fill sizes="720px" className="object-cover object-[65%_50%]" />
+      </div>
+      <MobileLead color={C.para} className="!mt-5">{data.subHeadline}</MobileLead>
+
+      {blocks.map((b) => {
+        const Icon = b.icon === "warning" ? Warn : Gear;
+        return (
+          <MobileCard key={b.title} C={C} className="mt-6">
+            <p className="flex items-center gap-3 border-b px-4 py-3.5 text-[16px] font-bold uppercase tracking-[0.03em]" style={{ color: isDark ? "#ffffff" : "#0b4fe0", borderColor: C.line }}>
+              <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-[6px] bg-[#0b47d8] text-white">
+                <Icon style={{ width: 17, height: 17 }} />
+              </span>
+              {b.title}
+            </p>
+            <ul>
+              {b.rows.map((r) => (
+                <li key={r.id} className="border-b last:border-b-0" style={{ borderColor: C.line }}>
+                  <Link href={r.link.href} className="flex gap-3 px-4 py-4 font-normal">
+                    <span className="w-5 shrink-0 text-[20px] font-semibold leading-[1.3]" style={{ color: C.num }}>{r.id}</span>
+                    <span className="min-w-0 flex-1">
+                      <span className="block text-[18px] font-bold leading-[1.3]" style={{ color: C.title }}>{r.title}</span>
+                      <span className="mt-1.5 block text-[16px] leading-[1.55]" style={{ color: C.desc }}>{r.description}</span>
+                      <span className="mt-3 flex items-center justify-between gap-3">
+                        <span className="flex items-center gap-2 text-[15px] font-semibold" style={{ color: C.sev }}>
+                          <span aria-hidden="true" className="h-2.5 w-2.5 rounded-full" style={{ background: SEV[r.severity.type] }} />
+                          {r.severity.label}
+                        </span>
+                        <span className="flex items-center gap-1.5 text-[16px] font-semibold" style={{ color: C.link }}>
+                          {r.link.label}
+                          <Arrow style={{ width: 16, height: 16 }} />
+                        </span>
+                      </span>
+                    </span>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </MobileCard>
+        );
+      })}
+
+      <MobileCard C={C} className="mt-5 px-4 py-4">
+        <MobileLabel color={isDark ? "#ffffff" : "#0b4fe0"} className="!text-[14px]">Urgency key</MobileLabel>
+        <ul className="mt-3 grid gap-2.5">
+          {data.urgencyKey.map((u) => (
+            <li key={u.type} className="flex items-start gap-2.5 text-[16px] leading-[1.45]" style={{ color: C.title }}>
+              <span aria-hidden="true" className="mt-[5px] h-2.5 w-2.5 shrink-0 rounded-full" style={{ background: SEV[u.type] }} />
+              <span>
+                <strong className="font-semibold">{u.label}</strong>
+                <span style={{ color: C.keyMuted }}> - {u.text}</span>
+              </span>
+            </li>
+          ))}
+        </ul>
+      </MobileCard>
+    </MobileSection>
   );
 }
 
@@ -172,34 +192,9 @@ export default function HomeSec9({ data }) {
   const isDark = theme === "dark";
 
   return (
-    <section className={`relative overflow-hidden px-4 py-8 md:px-6 md:py-8 ${isDark ? "bg-[#02070b]" : "bg-white"}`}>
-      <div className="absolute inset-x-0 top-0 h-[390px] md:h-[295px]">
-        <Image
-          src={data.headerImage.src}
-          alt={data.headerImage.alt}
-          fill
-          className="object-cover object-[88%_top] md:object-[82%_center]"
-          sizes="100vw"
-        />
-        <div className={isDark ? "absolute inset-0 bg-[linear-gradient(115deg,#02070b_0%,rgba(2,7,11,0.98)_42%,rgba(2,7,11,0.72)_66%,rgba(2,7,11,0.18)_100%)] md:bg-[linear-gradient(90deg,#02070b_0%,rgba(2,7,11,0.95)_38%,rgba(2,7,11,0.45)_70%,rgba(2,7,11,0.2)_100%)]" : "absolute inset-0 bg-[linear-gradient(115deg,white_0%,rgba(255,255,255,0.98)_42%,rgba(255,255,255,0.68)_66%,rgba(255,255,255,0.18)_100%)] md:bg-[linear-gradient(90deg,white_0%,rgba(255,255,255,0.96)_38%,rgba(255,255,255,0.45)_70%,rgba(255,255,255,0.2)_100%)]"} />
-        <div className={isDark ? "absolute inset-x-0 bottom-0 h-32 bg-[linear-gradient(0deg,#02070b_0%,rgba(2,7,11,0)_100%)]" : "absolute inset-x-0 bottom-0 h-32 bg-[linear-gradient(0deg,white_0%,rgba(255,255,255,0)_100%)]"} />
-      </div>
-
-      <div className="relative mx-auto w-full max-w-8xl">
-        <div className="max-w-[740px] pt-3 md:pt-6">
-          <h2 className={`text-[2.9rem] font-bold leading-[1.03] tracking-normal md:text-[3.45rem] ${isDark ? "text-white" : "text-[#07113a] md:text-black"}`} dangerouslySetInnerHTML={{ __html: data.h2 }} />
-          <div className="mt-4">
-            <MStripe />
-          </div>
-          <p className={`mt-5 max-w-[665px] text-[0.92rem] leading-[1.55] md:text-[1rem] ${isDark ? "text-white/78" : "text-[#07113a] md:text-[#171f2a]"}`} dangerouslySetInnerHTML={{ __html: data.subHeadline }} />
-        </div>
-
-        <div className="mt-8 -mx-4 grid gap-4 md:mx-0 md:mt-5">
-          <FailureTable block={data.engineFailures} isDark={isDark} />
-          <FailureTable block={data.warningSigns} isDark={isDark} />
-          <UrgencyKey items={data.urgencyKey} isDark={isDark} />
-        </div>
-      </div>
+    <section className="relative overflow-hidden" style={{ background: isDark ? COL.dark.bg : COL.light.bg }}>
+      <Desktop data={data} isDark={isDark} />
+      <Phone data={data} isDark={isDark} />
     </section>
   );
 }

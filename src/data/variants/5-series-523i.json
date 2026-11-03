@@ -96,37 +96,37 @@
               "@type": "ListItem",
               "position": 1,
               "name": "M52B25",
-              "url": "https://bmwengines.uk/engine/m52/"
+              "url": "https://bmwengines.uk/engine/m50-m52-m54"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "M52B25TU",
-              "url": "https://bmwengines.uk/engine/m52/"
+              "url": "https://bmwengines.uk/engine/m50-m52-m54"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "N52B25A",
-              "url": "https://bmwengines.uk/engine/n52/"
+              "url": "https://bmwengines.uk/engine/n52-n53"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "N53B25A",
-              "url": "https://bmwengines.uk/engine/n53/"
+              "url": "https://bmwengines.uk/engine/n52-n53"
             },
             {
               "@type": "ListItem",
               "position": 5,
               "name": "N53B30A",
-              "url": "https://bmwengines.uk/engine/n53/"
+              "url": "https://bmwengines.uk/engine/n52-n53"
             },
             {
               "@type": "ListItem",
               "position": 6,
               "name": "B48B20A",
-              "url": "https://bmwengines.uk/engine/b48/"
+              "url": "https://bmwengines.uk/engine/b38-b48"
             }
           ]
         },
@@ -385,7 +385,7 @@
         "recommendation": "The N53's high-pressure fuel pump and piezo injectors are well-documented weak points. HPFP failure is common on this generation, and injector replacement requires proper coding by a specialist or BMW dealer. Use high-octane fuel and avoid thrashing the car from cold to help mitigate issues.",
         "failureLink": {
           "label": "",
-          "href": "/failures/hpfp-failure/"
+          "href": "/failures/n54-high-pressure-fuel-pump"
         }
       },
       {
@@ -403,7 +403,7 @@
         "recommendation": "The M52's cooling system is its most critical weak point. The plastic expansion tank, water pump, and thermostat housing all degrade with age. Neglecting the cooling system can lead to catastrophic overheating. If you see any coolant warnings, have the system inspected immediately.",
         "failureLink": {
           "label": "",
-          "href": "/failures/coolant-leak/"
+          "href": "/failures/m54-cooling-system"
         }
       },
       {
@@ -421,7 +421,7 @@
         "recommendation": "The N52 is prone to oil leaks from the valve cover gasket and oil filter housing gasket. The valve cover itself can also warp with age. If you notice a burning oil smell or visible oil, have the gaskets inspected promptly.",
         "failureLink": {
           "label": "",
-          "href": "/failures/oil-leak/"
+          "href": "/failures/n55-valve-cover-oil-leak"
         }
       }
     ]

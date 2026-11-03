@@ -72,7 +72,7 @@
               "@type": "ListItem",
               "position": 1,
               "name": "N52B30 (3.0 straight-six)",
-              "url": "https://bmwengines.uk/engine/n52/"
+              "url": "https://bmwengines.uk/engine/n52-n53"
             }
           ]
         },
@@ -300,7 +300,7 @@
         "recommendation": "Oil leaks are common on the N52. The valve cover gasket and oil filter housing gasket are the most frequent sources, along with the oil pan gasket. The \"Mickey Mouse\" coolant flange is also notorious for leaking after years of use. If you notice oil spots or a burning smell, have the gaskets inspected. Replacing them promptly prevents low oil levels and potential engine damage. The valve cover gasket is a relatively straightforward and affordable repair.",
         "failureLink": {
           "label": "",
-          "href": "/failures/oil-leak/"
+          "href": "/failures/n55-valve-cover-oil-leak"
         }
       },
       {
@@ -318,7 +318,7 @@
         "recommendation": "In 2023, BMW recalled 155,627 vehicles equipped with N52 engines to address VANOS bolts that could loosen or break over time. If you experience rough running or a loss of power, have the VANOS system inspected. Early diagnosis can prevent more serious engine damage. The eccentric shaft sensor can also fail, causing Valvetronic issues.",
         "failureLink": {
           "label": "",
-          "href": "/failures/vanos-failure/"
+          "href": "/failures/vanos-solenoid-failure"
         }
       }
     ]

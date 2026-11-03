@@ -120,37 +120,37 @@
               "@type": "ListItem",
               "position": 3,
               "name": "M60B30",
-              "url": "https://bmwengines.uk/engine/m60/"
+              "url": "https://bmwengines.uk/engine/m60-m62"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "M62B35",
-              "url": "https://bmwengines.uk/engine/m62/"
+              "url": "https://bmwengines.uk/engine/m60-m62"
             },
             {
               "@type": "ListItem",
               "position": 5,
               "name": "M62TUB35",
-              "url": "https://bmwengines.uk/engine/m62/"
+              "url": "https://bmwengines.uk/engine/m60-m62"
             },
             {
               "@type": "ListItem",
               "position": 6,
               "name": "N54B30A",
-              "url": "https://bmwengines.uk/engine/n54/"
+              "url": "https://bmwengines.uk/engine/n54-n55"
             },
             {
               "@type": "ListItem",
               "position": 7,
               "name": "N55B30",
-              "url": "https://bmwengines.uk/engine/n55/"
+              "url": "https://bmwengines.uk/engine/n54-n55"
             },
             {
               "@type": "ListItem",
               "position": 8,
               "name": "B58B30",
-              "url": "https://bmwengines.uk/engine/b58/"
+              "url": "https://bmwengines.uk/engine/b57-b58"
             }
           ]
         },
@@ -425,7 +425,7 @@
         "recommendation": "The N54's HPFP is its most infamous weak point. BMW faced a class-action lawsuit over defective HPFPs and turbos. The original Bosch pumps had design flaws, with most failures occurring between 60,000–160,000 km. Fuel injectors often fail around the same time - when one goes, the others are often not far behind. Replacement requires proper coding by a specialist or BMW dealer. Use high-octane fuel and avoid thrashing the car from cold.",
         "failureLink": {
           "label": "",
-          "href": "/failures/hpfp-failure/"
+          "href": "/failures/n54-high-pressure-fuel-pump"
         }
       },
       {
@@ -443,7 +443,7 @@
         "recommendation": "The M62 V8's timing chain guides are made of plastic that deteriorates with age. When they break, pieces drop into the oil pan and the chain can slip, leading to piston-valve contact in this interference engine. Valve stem seals can also fail, causing blue smoke on startup. If you hear any rattling from the engine, especially on cold start, book an inspection immediately.",
         "failureLink": {
           "label": "",
-          "href": "/failures/timing-chain-failure/"
+          "href": "/failures/timing-chain-diagnosis-guide"
         }
       },
       {
@@ -461,7 +461,7 @@
         "recommendation": "The N55 is prone to oil leaks from the valve cover gasket and oil filter housing gasket. Oil dripping from the oil filter housing gasket can contaminate the serpentine belt, leading to belt failure and potential engine damage. The valve cover itself can also crack. If you notice a burning oil smell or visible oil, have the gaskets inspected promptly.",
         "failureLink": {
           "label": "",
-          "href": "/failures/oil-leak/"
+          "href": "/failures/n55-valve-cover-oil-leak"
         }
       }
     ]

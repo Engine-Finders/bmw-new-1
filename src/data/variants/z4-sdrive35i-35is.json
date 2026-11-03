@@ -72,19 +72,19 @@
               "@type": "ListItem",
               "position": 1,
               "name": "N54B30A",
-              "url": "https://bmwengines.uk/engine/n54/"
+              "url": "https://bmwengines.uk/engine/n54-n55"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "N54B30O0",
-              "url": "https://bmwengines.uk/engine/n54/"
+              "url": "https://bmwengines.uk/engine/n54-n55"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "N54B30TO",
-              "url": "https://bmwengines.uk/engine/n54/"
+              "url": "https://bmwengines.uk/engine/n54-n55"
             }
           ]
         },
@@ -311,7 +311,7 @@
         "recommendation": "The N54's HPFP is its most infamous weak point. BMW faced class-action lawsuits over defective HPFPs. The pump seems to have an abnormally high rate of failure. Symptoms include long-crank engine starting times. BMW issued multiple recalls covering the HPFP on N54-equipped vehicles. Check whether your Z4 has had the recall work completed. Even with updated pumps, failures can still occur. If you experience any starting issues or loss of power, have the HPFP inspected promptly.",
         "failureLink": {
           "label": "",
-          "href": "/failures/hpfp-failure/"
+          "href": "/failures/n54-high-pressure-fuel-pump"
         }
       },
       {
@@ -329,7 +329,7 @@
         "recommendation": "N54 fuel injectors are piezo-electric injectors that have more in common with diesel injection than regular gas injectors. The main failure on earlier injectors is clogging and foreign debris restricting flow. On early N54 injectors, there's a filter that's known to melt at high temperatures. BMW redesigned these injectors numerous times - updated Index 12 injectors are the current solution. Any injector marked ten or lower in the same cylinder bank will require all the injectors in the bank to be replaced. A full set of Index 12 injectors is a common preventative upgrade on N54 cars.",
         "failureLink": {
           "label": "",
-          "href": "/failures/injector-failure/"
+          "href": "/failures/n57-injector-seal"
         }
       },
       {

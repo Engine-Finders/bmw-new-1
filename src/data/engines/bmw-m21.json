@@ -44,7 +44,7 @@
     ],
     "primaryCta": {
       "label": "Compare M21 Engine Prices →",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "atAGlance": {
@@ -88,7 +88,10 @@
     "confidence": "80% confidence -based on enthusiast community consensus, specialist workshop feedback, and the engine's well‑documented history as BMW's first diesel [ESTIMATED].",
     "scoreNote": "Engine Score breakdown:",
     "scoreBreakdown": {
-      "columns": ["Dimension", "Score (of 20)"],
+      "columns": [
+        "Dimension",
+        "Score (of 20)"
+      ],
       "rows": [
         {
           "dimension": "Reliability",
@@ -121,7 +124,12 @@
     "avoidIf": "You need daily‑driver reliability without access to a specialist familiar with 1980s diesel injection systems."
   },
   "compatibility": {
-    "columns": ["Model", "Generation", "Variant/Badge", "Years"],
+    "columns": [
+      "Model",
+      "Generation",
+      "Variant/Badge",
+      "Years"
+    ],
     "rows": [
       {
         "model": "3 Series",
@@ -169,7 +177,12 @@
     "crossBrandNote": "(Exclusive mode -no cross-link within this ecosystem; Lincoln fitment is historical only)"
   },
   "costGuide": {
-    "columns": ["Condition", "Supply Only", "Fitted (Indie)", "Warranty"],
+    "columns": [
+      "Condition",
+      "Supply Only",
+      "Fitted (Indie)",
+      "Warranty"
+    ],
     "rows": [
       {
         "condition": "Used",
@@ -194,7 +207,7 @@
     "sharedCostNote": "(Exclusive mode -no shared-cost note)",
     "cta": {
       "label": "→ Compare BMW M21 engine prices from UK specialists",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "faq": {
@@ -235,7 +248,7 @@
     "finalCta": "Find the best BMW M21 engine replacement UK drivers rely on. Compare real prices from trusted specialists on EnginesMarket today and get back on the road with confidence.",
     "ctaButton": {
       "label": "Compare BMW M21 Engine Prices Now →",
-      "href": "#"
+      "href": "/quote"
     }
   }
 }

@@ -52,31 +52,31 @@
               "@type": "ListItem",
               "position": 1,
               "name": "BMW 7 Series E65/E66 760i",
-              "url": "https://bmwengines.uk/models/e65-760i/"
+              "url": "https://bmwengines.uk/7-series/e65-e66"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "BMW 7 Series F01/F02 760i",
-              "url": "https://bmwengines.uk/models/f01-760i/"
+              "url": "https://bmwengines.uk/7-series/f01-f02"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "BMW 7 Series G11/G12 M760Li",
-              "url": "https://bmwengines.uk/models/g11-m760li/"
+              "url": "https://bmwengines.uk/7-series/g11-g12"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "BMW 8 Series G15 M850i",
-              "url": "https://bmwengines.uk/models/g15-m850i/"
+              "url": "https://bmwengines.uk/8-series/g15"
             },
             {
               "@type": "ListItem",
               "position": 5,
               "name": "BMW X7 G07 M60i",
-              "url": "https://bmwengines.uk/models/g07-x7-m60i/"
+              "url": "https://bmwengines.uk/x7/g07"
             }
           ]
         },
@@ -219,7 +219,7 @@
     ],
     "primaryCta": {
       "label": "Compare N73/N74 Engine Prices →",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "atAGlance": {
@@ -320,7 +320,7 @@
     "sharedCostNote": "The N74 is used in both BMW and Rolls‑Royce applications – parts are identical, though Rolls‑Royce-specific tuning and ancillaries may add cost.",
     "cta": {
       "label": "",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "faq": {
@@ -357,7 +357,7 @@
     "finalCta": "",
     "ctaButton": {
       "label": "",
-      "href": "#"
+      "href": "/quote"
     }
   }
 }

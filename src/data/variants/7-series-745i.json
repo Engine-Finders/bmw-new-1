@@ -54,7 +54,7 @@
               "@type": "ListItem",
               "position": 1,
               "name": "E65/E66 745i / 745Li (N62B44A, 2001-2008)",
-              "url": "https://bmwengines.uk/7-series/e65/"
+              "url": "https://bmwengines.uk/7-series/e65-e66"
             }
           ]
         },
@@ -66,7 +66,7 @@
               "@type": "ListItem",
               "position": 1,
               "name": "N62B44A",
-              "url": "https://bmwengines.uk/engine/n62/"
+              "url": "https://bmwengines.uk/engine/n62-n63"
             }
           ]
         },
@@ -276,7 +276,7 @@
         "recommendation": "The N62's valve stem seals are the engine's Achilles' heel. BMW specified an oil change interval that was too long for the N62, which hardened the seals, causing them to leak. Oil leaks past the seals into the combustion chamber, leading to blue smoke and heavy oil consumption. Replacement is expensive but well-understood by specialists. Many owners live with the oil consumption, but eventually the catalytic converters will be damaged. If you're buying a 745i, budget for this work or accept the oil top-ups.",
         "failureLink": {
           "label": "Read the full valve stem seal failure guide",
-          "href": "/failures/valve-stem-seal-failure/"
+          "href": "/failures/valve-stem-seal-wear"
         }
       },
       {
@@ -294,7 +294,7 @@
         "recommendation": "The N62 is notorious for oil leaks. Common leak points include valve cover gaskets, upper timing cover gaskets, and the alternator bracket gasket. These leaks can be expensive to fix due to the labour involved. Check for oil spots regularly and investigate any drops in oil level. Ignoring oil leaks can lead to low oil pressure and eventual engine damage.",
         "failureLink": {
           "label": "Read the full oil leak guide",
-          "href": "/failures/oil-leak/"
+          "href": "/failures/n55-valve-cover-oil-leak"
         }
       },
       {

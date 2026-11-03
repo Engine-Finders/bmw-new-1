@@ -66,7 +66,7 @@
               "@type": "ListItem",
               "position": 1,
               "name": "N20B20A PHEV",
-              "url": "https://bmwengines.uk/engine/n20/"
+              "url": "https://bmwengines.uk/engine/n13-n20"
             }
           ]
         },
@@ -285,7 +285,7 @@
         "recommendation": "The N20's timing chain guides are a well-documented weak point. BMW's 15,000-mile oil change interval has been identified as a contributing factor - specialists recommend 8,000–10,000 mile intervals. If you hear any rattling from the engine, especially on cold start, book an inspection immediately. Preventative chain replacement is far cheaper than a full engine replacement.",
         "failureLink": {
           "label": "",
-          "href": "/failures/n20-timing-chain-failure/"
+          "href": "/failures/n20-timing-chain-tensioner"
         }
       },
       {
@@ -303,7 +303,7 @@
         "recommendation": "Campaign 24V-608 addresses leaking PCV fluid onto the electric coolant pump connector. The fix involves inspecting/replacing the pump and installing a protective shield - covered by BMW. Part #11518635089 is a known failure point around 60K miles. Related DME codes include 2E82 (cutoff) and 2E81 (speed deviation). Have the recall work checked and completed if not already done.",
         "failureLink": {
           "label": "",
-          "href": "/failures/drivetrain-malfunction/"
+          "href": "/failures"
         }
       },
       {
@@ -321,7 +321,7 @@
         "recommendation": "The 9.0–9.2 kWh battery is the hybrid system's Achilles' heel. Real-world electric range often falls short of claims. Owners report battery issues as early as 70,000 km. To maximise battery life, avoid frequent rapid charging, keep the battery between 20% and 80% for daily use, and use the BMW app to monitor battery health. High-voltage battery replacement can cost around RM 30,000.",
         "failureLink": {
           "label": "",
-          "href": "/failures/hybrid-battery-failure/"
+          "href": "/failures/battery-parasitic-drain"
         }
       }
     ]

@@ -78,25 +78,25 @@
               "@type": "ListItem",
               "position": 1,
               "name": "M42 (1.8 16v 4-cyl)",
-              "url": "https://bmwengines.uk/engine/m42/"
+              "url": "https://bmwengines.uk/engine/m40-m42-m43-m44"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "M44 (1.9 16v 4-cyl)",
-              "url": "https://bmwengines.uk/engine/m44/"
+              "url": "https://bmwengines.uk/engine/m40-m42-m43-m44"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "N42 (1.8 16v Valvetronic)",
-              "url": "https://bmwengines.uk/engine/n42/"
+              "url": "https://bmwengines.uk/engine/n40-n42-n43-n45-n46"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "N46 (2.0 16v Valvetronic)",
-              "url": "https://bmwengines.uk/engine/n46/"
+              "url": "https://bmwengines.uk/engine/n40-n42-n43-n45-n46"
             }
           ]
         },
@@ -306,7 +306,7 @@
         "recommendation": "The N42/N46 timing chain guides are a well‑known weakness. If you hear a rattling noise on cold start, have the chain and guides inspected immediately. Regular oil changes with BMW Longlife‑01 spec oil are essential to prolong guide life. Catching it early saves you from a £2,000+ repair bill.",
         "failureLink": {
           "label": "",
-          "href": "/failures/timing-chain-stretch/"
+          "href": "/failures/timing-chain-diagnosis-guide"
         }
       },
       {
@@ -324,7 +324,7 @@
         "recommendation": "The E36's cooling system is the defining weakness - plastic thermostat housings and water pump impellers fail with age. Replace the water pump and thermostat housing preventatively every 60,000 miles. If you notice temperature fluctuations, pull over immediately - overheating can kill these engines quickly.",
         "failureLink": {
           "label": "",
-          "href": "/failures/cooling-system-failure/"
+          "href": "/failures/m54-cooling-system"
         }
       },
       {
@@ -342,7 +342,7 @@
         "recommendation": "VANOS issues are common across all BMW engines of this era. The solenoid seals fail, causing loss of power and hesitation. A VANOS rebuild with upgraded seals is a well‑understood fix. If you notice a lack of low‑end power, have the VANOS inspected.",
         "failureLink": {
           "label": "",
-          "href": "/failures/vanos-failure/"
+          "href": "/failures/vanos-solenoid-failure"
         }
       }
     ]

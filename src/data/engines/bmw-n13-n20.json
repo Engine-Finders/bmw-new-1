@@ -52,55 +52,55 @@
               "@type": "ListItem",
               "position": 1,
               "name": "BMW 1 Series F20/F21 114i/116i/118i/120i",
-              "url": "https://bmwengines.uk/models/1-series/f20/"
+              "url": "https://bmwengines.uk/1-series/f20"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "BMW 1 Series F40 118i (early)",
-              "url": "https://bmwengines.uk/models/1-series/f40/"
+              "url": "https://bmwengines.uk/1-series/f40"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "BMW 2 Series Active Tourer F45 218i",
-              "url": "https://bmwengines.uk/models/2-series/f45/"
+              "url": "https://bmwengines.uk/2-series-active-tourer/f45"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "BMW 3 Series F30/F31 320i/328i",
-              "url": "https://bmwengines.uk/models/3-series/f30/"
+              "url": "https://bmwengines.uk/3-series/f30"
             },
             {
               "@type": "ListItem",
               "position": 5,
               "name": "BMW 4 Series F32/F33/F36 420i/428i",
-              "url": "https://bmwengines.uk/models/4-series/f32/"
+              "url": "https://bmwengines.uk/4-series/f32"
             },
             {
               "@type": "ListItem",
               "position": 6,
               "name": "BMW 5 Series F10/F11 520i/528i",
-              "url": "https://bmwengines.uk/models/5-series/f10/"
+              "url": "https://bmwengines.uk/5-series/f10"
             },
             {
               "@type": "ListItem",
               "position": 7,
               "name": "BMW X1 E84 sDrive18i/xDrive20i",
-              "url": "https://bmwengines.uk/models/x1/e84/"
+              "url": "https://bmwengines.uk/x1/e84"
             },
             {
               "@type": "ListItem",
               "position": 8,
               "name": "BMW X3 F25 xDrive20i/xDrive28i",
-              "url": "https://bmwengines.uk/models/x3/f25/"
+              "url": "https://bmwengines.uk/x3/f25"
             },
             {
               "@type": "ListItem",
               "position": 9,
               "name": "BMW Z4 E89 sDrive20i/sDrive28i",
-              "url": "https://bmwengines.uk/models/z4/e89/"
+              "url": "https://bmwengines.uk/z4/e89"
             }
           ]
         },
@@ -243,7 +243,7 @@
     ],
     "primaryCta": {
       "label": "Compare N13/N20 Engine Prices →",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "atAGlance": {
@@ -418,7 +418,7 @@
     "sharedCostNote": "(omitted – engine is exclusive to BMW)",
     "cta": {
       "label": "→ Compare BMW N13/N20 engine prices from UK specialists",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "faq": {
@@ -459,7 +459,7 @@
     "finalCta": "Find the best BMW N13/N20 engine replacement UK drivers rely on. Compare real prices from trusted specialists on EnginesMarket today and get back on the road with confidence.",
     "ctaButton": {
       "label": "Compare BMW N13/N20 Engine Prices Now →",
-      "href": "#"
+      "href": "/quote"
     }
   }
 }

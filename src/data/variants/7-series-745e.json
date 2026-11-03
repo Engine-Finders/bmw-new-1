@@ -72,7 +72,7 @@
               "@type": "ListItem",
               "position": 1,
               "name": "B58B30M2",
-              "url": "https://bmwengines.uk/engine/b58b30m2/"
+              "url": "https://bmwengines.uk/engine/b57-b58"
             }
           ]
         },
@@ -309,7 +309,7 @@
         "recommendation": "The B58's PCV valve is a known weak point. A failing PCV valve can cause rough running, engine misfires, and blue/white smoke from the exhaust due to oil being drawn into the intake. If the PCV valve fails, the engine may run rough and consume oil. Early diagnosis and replacement are essential - ignoring it can lead to more expensive repairs.",
         "failureLink": {
           "label": "",
-          "href": "/failures/pcv-valve-failure/"
+          "href": "/failures"
         }
       },
       {
@@ -327,7 +327,7 @@
         "recommendation": "The 745e's 12 kWh lithium‑ion battery is a significant component. Over time, battery degradation is inevitable - the range will drop, and charging may take longer. BMW batteries are generally well‑engineered, but if the battery fails outside of the warranty period (typically 6‑8 years), replacement is expensive. If you notice a significant drop in electric range or warning lights, have the battery health checked by a specialist.",
         "failureLink": {
           "label": "",
-          "href": "/failures/hybrid-battery-failure/"
+          "href": "/failures/battery-parasitic-drain"
         }
       },
       {
@@ -345,7 +345,7 @@
         "recommendation": "The KLE (Comfort Charging Electronics Controller) module is a common failure point on BMW PHEVs. If the car fails to charge or charges slowly, the KLE module may be faulty. Charging port/socket faults are also reported. This is a specialist repair - a diagnostic check will confirm the issue. If your 745e won't charge, don't ignore it - the car will run on petrol only, negating the benefits of the hybrid system.",
         "failureLink": {
           "label": "",
-          "href": "/failures/charging-system-failure/"
+          "href": "/failures"
         }
       }
     ]

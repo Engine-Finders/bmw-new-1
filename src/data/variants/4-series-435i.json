@@ -66,7 +66,7 @@
               "@type": "ListItem",
               "position": 1,
               "name": "N55B30O0",
-              "url": "https://bmwengines.uk/engine/n55/"
+              "url": "https://bmwengines.uk/engine/n54-n55"
             }
           ]
         },
@@ -285,7 +285,7 @@
         "recommendation": "The factory plastic charge pipe is notorious for cracking under boost pressure - post after post about charge pipes on these engines cracking and failing, even on stock tunes. Many owners upgrade to an aftermarket aluminium charge pipe as a preventative measure. If you experience a sudden loss of power or a drivetrain malfunction warning, this is one of the first things to check.",
         "failureLink": {
           "label": "",
-          "href": "/failures/charge-pipe-failure/"
+          "href": "/failures"
         }
       },
       {
@@ -321,7 +321,7 @@
         "recommendation": "The N55 is prone to oil leaks from the valve cover gasket and oil filter housing gasket. Oil almost always leaks from one side of the valve cover and drips onto the exhaust manifold - you'll notice this by a burning oil smell. The valve cover itself can also warp or develop micro cracks with age, so it's often recommended to replace the entire cover, not just the gasket. If you notice a burning oil smell or visible oil, have the gaskets inspected promptly.",
         "failureLink": {
           "label": "",
-          "href": "/failures/oil-leak/"
+          "href": "/failures/n55-valve-cover-oil-leak"
         }
       }
     ]

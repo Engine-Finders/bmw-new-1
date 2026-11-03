@@ -72,7 +72,7 @@
               "@type": "ListItem",
               "position": 4,
               "name": "F07/F10/F11 525d (N47D20D, 2013–2017)",
-              "url": "https://bmwengines.uk/5-series/f10-lci/"
+              "url": "https://bmwengines.uk/5-series/f10"
             },
             {
               "@type": "ListItem",
@@ -108,7 +108,7 @@
               "@type": "ListItem",
               "position": 4,
               "name": "B47D20B",
-              "url": "https://bmwengines.uk/engine/b47/"
+              "url": "https://bmwengines.uk/engine/b37-b47"
             }
           ]
         },
@@ -377,7 +377,7 @@
         "recommendation": "One of the most common complaints across all 525d generations is oil leaks, often stemming from the turbocharger or oil filter housing. This can lead to low oil levels and potential engine damage if not addressed promptly. The oil filter housing gasket is a known weak point that degrades over time. If you notice oil spots or a burning smell, have the gaskets inspected. Catching these leaks early prevents more serious engine damage and keeps the 525d running reliably.",
         "failureLink": {
           "label": "Read the full oil leak guide → /failures/oil-leaks-n47/ [NEW FAILURE PAGE NEEDED]",
-          "href": "#"
+          "href": "/failures/n55-valve-cover-oil-leak"
         }
       },
       {
@@ -395,7 +395,7 @@
         "recommendation": "Fuel injectors can become clogged or fail, leading to rough idling, decreased fuel efficiency, and increased emissions. This is particularly problematic for diesel engines, which rely on precise fuel delivery. If you experience rough running or increased fuel consumption, have the injectors tested. Regular use of quality diesel fuel and occasional injector cleaner can help prevent clogging.",
         "failureLink": {
           "label": "Read the full injector failure guide",
-          "href": "/failures/injector-failure/"
+          "href": "/failures/n57-injector-seal"
         }
       },
       {
@@ -413,7 +413,7 @@
         "recommendation": "The Diesel Particulate Filter (DPF) can become clogged, especially if the vehicle is primarily used for short trips. This can trigger warning lights and require expensive cleaning or replacement. If you primarily drive short urban journeys, factor in regular motorway runs to allow passive DPF regenerations. Some owners report that a clogged DPF can cause \"loss of power and check-engine lights\".",
         "failureLink": {
           "label": "Read the full DPF clogging guide",
-          "href": "/failures/dpf-clogging/"
+          "href": "/failures/dpf-blockage"
         }
       }
     ]

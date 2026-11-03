@@ -46,13 +46,13 @@
               "@type": "ListItem",
               "position": 1,
               "name": "BMW M4 F82/F83 (2014–2020)",
-              "url": "https://bmwengines.uk/m4/f82/"
+              "url": "https://bmwengines.uk/m4/f82-f83"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "BMW M4 G82/G83 (2021–present)",
-              "url": "https://bmwengines.uk/m4/g82/"
+              "url": "https://bmwengines.uk/m4/g82-g83"
             }
           ]
         },
@@ -64,13 +64,13 @@
               "@type": "ListItem",
               "position": 1,
               "name": "S55B30 Engine",
-              "url": "https://bmwengines.uk/engine/s55b30/"
+              "url": "https://bmwengines.uk/engine/s55"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "S58B30 Engine",
-              "url": "https://bmwengines.uk/engine/s58b30/"
+              "url": "https://bmwengines.uk/technical/engine-code-decoder"
             }
           ]
         },
@@ -222,7 +222,7 @@
     ],
     "primaryCta": {
       "label": "Explore M4 Engines →",
-      "href": "#"
+      "href": "/m4"
     }
   },
   "ownershipVerdict": {
@@ -350,7 +350,7 @@
     },
     "comparisonLink": {
       "label": "Read the full comparison: BMW M4 F82 vs G82 →",
-      "href": "#"
+      "href": "/compare"
     }
   },
   "engineDatabase": {
@@ -422,7 +422,7 @@
         },
         "link": {
           "label": "Learn more →",
-          "href": "#"
+          "href": "/failures/s55-crank-hub-failure"
         }
       },
       {
@@ -436,7 +436,7 @@
         },
         "link": {
           "label": "Learn more →",
-          "href": "#"
+          "href": "/failures/timing-chain-diagnosis-guide"
         }
       },
       {
@@ -450,7 +450,7 @@
         },
         "link": {
           "label": "Learn more →",
-          "href": "#"
+          "href": "/failures/n55-valve-cover-oil-leak"
         }
       },
       {
@@ -464,7 +464,7 @@
         },
         "link": {
           "label": "Learn more →",
-          "href": "#"
+          "href": "/failures/n63-oil-consumption"
         }
       },
       {
@@ -478,7 +478,7 @@
         },
         "link": {
           "label": "Learn more →",
-          "href": "#"
+          "href": "/failures/m54-cooling-system"
         }
       },
       {
@@ -492,7 +492,7 @@
         },
         "link": {
           "label": "Learn more →",
-          "href": "#"
+          "href": "/m4/f82-f83"
         }
       }
     ],
@@ -670,11 +670,11 @@
     "paths": [
       {
         "label": "Path 1 - Know your engine? Launch the BMW diagnostic calculator with M4 pre-selected",
-        "href": "/fault-diagnostic-calculator"
+        "href": "/tools/diagnostic-wizard"
       },
       {
         "label": "Path 2 - Not sure which engine you have? We'll identify it first → /fault-diagnostic-calculator (identification is the first step inside the tool)",
-        "href": "#"
+        "href": "/tools/diagnostic-wizard"
       }
     ]
   },
@@ -761,13 +761,13 @@
         "icon": "🩺",
         "title": "Diagnose My M4",
         "text": "Symptoms in, verdict out - value-weighted for your generation.",
-        "href": "/fault-diagnostic-calculator"
+        "href": "/tools/diagnostic-wizard"
       },
       {
         "icon": "🤝",
         "title": "Compare UK Specialists",
         "text": "20+ vetted BMW specialists, prices and warranties side-by-side.",
-        "href": "/quotes/?model=m4"
+        "href": "/quote"
       }
     ],
     "footerNote": "(Minimal footer below.)"

@@ -16,7 +16,7 @@ function capacityToLitres(engineCapacity) {
   const capacityRaw = engineCapacity ? String(engineCapacity).replace(/[^\d.]/g, "") : "";
   const capacityNum = capacityRaw ? Number(capacityRaw) : NaN;
   if (!Number.isFinite(capacityNum) || capacityNum <= 0) return "";
-  // DVLA often returns cc (e.g. 1995) — convert to litres for CRM.
+  // DVLA often returns cc (e.g. 1995) - convert to litres for CRM.
   if (capacityNum >= 100) return (capacityNum / 1000).toFixed(1);
   return String(capacityNum);
 }
@@ -25,7 +25,14 @@ function capacityToLitres(engineCapacity) {
  * Build CRM-compatible lead payload from quote (or any) form state.
  * Follows the central Edge Function field names.
  */
-export function buildQuoteLeadPayload({ contact, vehicle, calculator = null, source = LEAD_SOURCE }) {
+export function buildQuoteLeadPayload({
+  contact,
+  vehicle,
+  calculator = null,
+  source = LEAD_SOURCE,
+  pageUrl = "",
+  form = "",
+}) {
   const vrm = String(vehicle?.vrm || "")
     .replace(/\s+/g, "")
     .toUpperCase();
@@ -50,10 +57,12 @@ export function buildQuoteLeadPayload({ contact, vehicle, calculator = null, sou
     honeypot: contact?.honeypot || "",
   };
 
-  // Email-only — stripped before CRM POST.
+  // Email-only fields - stripped before CRM POST.
   if (calculator && typeof calculator === "object") {
     payload.calculator = calculator;
   }
+  if (pageUrl) payload.pageUrl = String(pageUrl);
+  if (form) payload.form = String(form);
 
   return payload;
 }

@@ -54,7 +54,7 @@
               "@type": "ListItem",
               "position": 1,
               "name": "Active Tourer F45 (2015–2018) B37C15A",
-              "url": "https://bmwengines.uk/2-series/f45/"
+              "url": "https://bmwengines.uk/2-series-active-tourer/f45"
             },
             {
               "@type": "ListItem",
@@ -72,7 +72,7 @@
               "@type": "ListItem",
               "position": 1,
               "name": "B37C15A",
-              "url": "https://bmwengines.uk/engine/b37/"
+              "url": "https://bmwengines.uk/engine/b37-b47"
             }
           ]
         },
@@ -299,7 +299,7 @@
         "recommendation": "The EGR system on the B37 engine can become clogged over time, particularly if the vehicle is used predominantly for short urban journeys. This can lead to rough idling, decreased fuel efficiency, and increased emissions. Regular maintenance and cleaning of the EGR system can help mitigate these issues. If you notice any of these symptoms, have the EGR system inspected promptly.",
         "failureLink": {
           "label": "",
-          "href": "/failures/egr-valve-cooler-failure/"
+          "href": "/failures/egr-valve-cooler"
         }
       },
       {
@@ -335,7 +335,7 @@
         "recommendation": "Fuel injectors can become clogged or fail, leading to poor engine performance and increased fuel consumption. If you experience hesitation during acceleration or notice a decrease in fuel efficiency, it may be worth having the injectors checked. Using quality fuel and regular servicing can help prevent injector issues.",
         "failureLink": {
           "label": "",
-          "href": "/failures/injector-failure/"
+          "href": "/failures/n57-injector-seal"
         }
       }
     ]

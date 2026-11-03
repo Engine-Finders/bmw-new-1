@@ -1,0 +1,2252 @@
+{
+  "_note": "Hero art for variant pages without their own artwork: the 320d reference scene (light/dark) with the variant's own car from the client's photo set standing where the 320d stands. Key is `<parent>/<slug>`.",
+  "1-series/114d": {
+    "light": {
+      "src": "/variant-hero/1-series-114d-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/1-series-114d-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "1-series/114i": {
+    "light": {
+      "src": "/variant-hero/1-series-114i-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/1-series-114i-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "1-series/116d": {
+    "light": {
+      "src": "/variant-hero/1-series-116d-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/1-series-116d-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "1-series/116i": {
+    "light": {
+      "src": "/variant-hero/1-series-116i-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/1-series-116i-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "1-series/118d": {
+    "light": {
+      "src": "/variant-hero/1-series-118d-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/1-series-118d-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "1-series/118i": {
+    "light": {
+      "src": "/variant-hero/1-series-118i-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/1-series-118i-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "1-series/120": {
+    "light": {
+      "src": "/variant-hero/1-series-120-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/1-series-120-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "1-series/120d": {
+    "light": {
+      "src": "/variant-hero/1-series-120d-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/1-series-120d-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "1-series/120i": {
+    "light": {
+      "src": "/variant-hero/1-series-120i-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/1-series-120i-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "1-series/123d": {
+    "light": {
+      "src": "/variant-hero/1-series-123d-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/1-series-123d-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "1-series/125d": {
+    "light": {
+      "src": "/variant-hero/1-series-125d-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/1-series-125d-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "1-series/125i": {
+    "light": {
+      "src": "/variant-hero/1-series-125i-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/1-series-125i-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "1-series/128ti": {
+    "light": {
+      "src": "/variant-hero/1-series-128ti-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/1-series-128ti-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "1-series/130i": {
+    "light": {
+      "src": "/variant-hero/1-series-130i-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/1-series-130i-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "1-series/135i": {
+    "light": {
+      "src": "/variant-hero/1-series-135i-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/1-series-135i-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "1-series/m135i": {
+    "light": {
+      "src": "/variant-hero/1-series-m135i-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/1-series-m135i-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "1-series/m140i": {
+    "light": {
+      "src": "/variant-hero/1-series-m140i-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/1-series-m140i-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "2-series/214d": {
+    "light": {
+      "src": "/variant-hero/2-series-214d-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/2-series-214d-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "2-series/216d": {
+    "light": {
+      "src": "/variant-hero/2-series-216d-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/2-series-216d-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "2-series/216i": {
+    "light": {
+      "src": "/variant-hero/2-series-216i-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/2-series-216i-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "2-series/218d": {
+    "light": {
+      "src": "/variant-hero/2-series-218d-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/2-series-218d-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "2-series/218i": {
+    "light": {
+      "src": "/variant-hero/2-series-218i-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/2-series-218i-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "2-series/220d": {
+    "light": {
+      "src": "/variant-hero/2-series-220d-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/2-series-220d-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "2-series/220i": {
+    "light": {
+      "src": "/variant-hero/2-series-220i-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/2-series-220i-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "2-series/223i": {
+    "light": {
+      "src": "/variant-hero/2-series-223i-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/2-series-223i-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "2-series/225xe": {
+    "light": {
+      "src": "/variant-hero/2-series-225xe-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/2-series-225xe-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "2-series/230i": {
+    "light": {
+      "src": "/variant-hero/2-series-230i-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/2-series-230i-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "2-series/m235i": {
+    "light": {
+      "src": "/variant-hero/2-series-m235i-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/2-series-m235i-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "2-series/m240i": {
+    "light": {
+      "src": "/variant-hero/2-series-m240i-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/2-series-m240i-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "3-series/316": {
+    "light": {
+      "src": "/variant-hero/3-series-316-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/3-series-316-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "3-series/316d": {
+    "light": {
+      "src": "/variant-hero/3-series-316d-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/3-series-316d-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "3-series/316i": {
+    "light": {
+      "src": "/variant-hero/3-series-316i-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/3-series-316i-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "3-series/318d": {
+    "light": {
+      "src": "/variant-hero/3-series-318d-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/3-series-318d-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "3-series/318i": {
+    "light": {
+      "src": "/variant-hero/3-series-318i-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/3-series-318i-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "3-series/318is": {
+    "light": {
+      "src": "/variant-hero/3-series-318is-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/3-series-318is-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "3-series/318tds": {
+    "light": {
+      "src": "/variant-hero/3-series-318tds-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/3-series-318tds-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "3-series/318ti": {
+    "light": {
+      "src": "/variant-hero/3-series-318ti-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/3-series-318ti-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "3-series/320e": {
+    "light": {
+      "src": "/variant-hero/3-series-320e-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/3-series-320e-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "3-series/320i": {
+    "light": {
+      "src": "/variant-hero/3-series-320i-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/3-series-320i-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "3-series/320si": {
+    "light": {
+      "src": "/variant-hero/3-series-320si-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/3-series-320si-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "3-series/323i": {
+    "light": {
+      "src": "/variant-hero/3-series-323i-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/3-series-323i-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "3-series/324d": {
+    "light": {
+      "src": "/variant-hero/3-series-324d-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/3-series-324d-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "3-series/325d": {
+    "light": {
+      "src": "/variant-hero/3-series-325d-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/3-series-325d-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "3-series/325e": {
+    "light": {
+      "src": "/variant-hero/3-series-325e-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/3-series-325e-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "3-series/325i": {
+    "light": {
+      "src": "/variant-hero/3-series-325i-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/3-series-325i-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "3-series/328i": {
+    "light": {
+      "src": "/variant-hero/3-series-328i-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/3-series-328i-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "3-series/330d": {
+    "light": {
+      "src": "/variant-hero/3-series-330d-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/3-series-330d-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "3-series/330e": {
+    "light": {
+      "src": "/variant-hero/3-series-330e-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/3-series-330e-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "3-series/330i": {
+    "light": {
+      "src": "/variant-hero/3-series-330i-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/3-series-330i-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "3-series/335d": {
+    "light": {
+      "src": "/variant-hero/3-series-335d-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/3-series-335d-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "3-series/335i": {
+    "light": {
+      "src": "/variant-hero/3-series-335i-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/3-series-335i-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "3-series/340i": {
+    "light": {
+      "src": "/variant-hero/3-series-340i-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/3-series-340i-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "3-series/activehybrid-3": {
+    "light": {
+      "src": "/variant-hero/3-series-activehybrid-3-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/3-series-activehybrid-3-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "3-series/m340d": {
+    "light": {
+      "src": "/variant-hero/3-series-m340d-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/3-series-m340d-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "3-series/m340i": {
+    "light": {
+      "src": "/variant-hero/3-series-m340i-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/3-series-m340i-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "4-series/418d": {
+    "light": {
+      "src": "/variant-hero/4-series-418d-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/4-series-418d-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "4-series/418i": {
+    "light": {
+      "src": "/variant-hero/4-series-418i-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/4-series-418i-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "4-series/420d": {
+    "light": {
+      "src": "/variant-hero/4-series-420d-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/4-series-420d-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "4-series/420i": {
+    "light": {
+      "src": "/variant-hero/4-series-420i-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/4-series-420i-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "4-series/425d": {
+    "light": {
+      "src": "/variant-hero/4-series-425d-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/4-series-425d-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "4-series/428i": {
+    "light": {
+      "src": "/variant-hero/4-series-428i-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/4-series-428i-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "4-series/430d": {
+    "light": {
+      "src": "/variant-hero/4-series-430d-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/4-series-430d-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "4-series/430i": {
+    "light": {
+      "src": "/variant-hero/4-series-430i-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/4-series-430i-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "4-series/435d": {
+    "light": {
+      "src": "/variant-hero/4-series-435d-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/4-series-435d-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "4-series/435i": {
+    "light": {
+      "src": "/variant-hero/4-series-435i-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/4-series-435i-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "4-series/440i": {
+    "light": {
+      "src": "/variant-hero/4-series-440i-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/4-series-440i-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "4-series/m440d": {
+    "light": {
+      "src": "/variant-hero/4-series-m440d-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/4-series-m440d-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "4-series/m440i": {
+    "light": {
+      "src": "/variant-hero/4-series-m440i-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/4-series-m440i-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "5-series/518d": {
+    "light": {
+      "src": "/variant-hero/5-series-518d-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/5-series-518d-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "5-series/518i": {
+    "light": {
+      "src": "/variant-hero/5-series-518i-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/5-series-518i-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "5-series/520d": {
+    "light": {
+      "src": "/variant-hero/5-series-520d-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/5-series-520d-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "5-series/520e": {
+    "light": {
+      "src": "/variant-hero/5-series-520e-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/5-series-520e-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "5-series/520i": {
+    "light": {
+      "src": "/variant-hero/5-series-520i-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/5-series-520i-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "5-series/523i": {
+    "light": {
+      "src": "/variant-hero/5-series-523i-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/5-series-523i-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "5-series/524td-524d": {
+    "light": {
+      "src": "/variant-hero/5-series-524td-524d-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/5-series-524td-524d-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "5-series/525d": {
+    "light": {
+      "src": "/variant-hero/5-series-525d-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/5-series-525d-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "5-series/525e": {
+    "light": {
+      "src": "/variant-hero/5-series-525e-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/5-series-525e-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "5-series/525i": {
+    "light": {
+      "src": "/variant-hero/5-series-525i-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/5-series-525i-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "5-series/525td": {
+    "light": {
+      "src": "/variant-hero/5-series-525td-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/5-series-525td-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "5-series/528i": {
+    "light": {
+      "src": "/variant-hero/5-series-528i-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/5-series-528i-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "5-series/530d": {
+    "light": {
+      "src": "/variant-hero/5-series-530d-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/5-series-530d-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "5-series/530e": {
+    "light": {
+      "src": "/variant-hero/5-series-530e-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/5-series-530e-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "5-series/530i": {
+    "light": {
+      "src": "/variant-hero/5-series-530i-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/5-series-530i-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "5-series/535d": {
+    "light": {
+      "src": "/variant-hero/5-series-535d-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/5-series-535d-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "5-series/535i": {
+    "light": {
+      "src": "/variant-hero/5-series-535i-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/5-series-535i-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "5-series/540d": {
+    "light": {
+      "src": "/variant-hero/5-series-540d-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/5-series-540d-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "5-series/540i": {
+    "light": {
+      "src": "/variant-hero/5-series-540i-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/5-series-540i-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "5-series/545e": {
+    "light": {
+      "src": "/variant-hero/5-series-545e-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/5-series-545e-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "5-series/545i": {
+    "light": {
+      "src": "/variant-hero/5-series-545i-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/5-series-545i-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "5-series/550i": {
+    "light": {
+      "src": "/variant-hero/5-series-550i-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/5-series-550i-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "5-series/m550d": {
+    "light": {
+      "src": "/variant-hero/5-series-m550d-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/5-series-m550d-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "5-series/m550i": {
+    "light": {
+      "src": "/variant-hero/5-series-m550i-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/5-series-m550i-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "m1/35": {
+    "light": {
+      "src": "/variant-hero/m1-35-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/m1-35-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "x1/16d": {
+    "light": {
+      "src": "/variant-hero/x1-16d-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/x1-16d-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "x1/18d": {
+    "light": {
+      "src": "/variant-hero/x1-18d-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/x1-18d-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "x1/18i": {
+    "light": {
+      "src": "/variant-hero/x1-18i-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/x1-18i-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "x1/20d": {
+    "light": {
+      "src": "/variant-hero/x1-20d-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/x1-20d-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "x1/20i": {
+    "light": {
+      "src": "/variant-hero/x1-20i-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/x1-20i-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "x1/23d": {
+    "light": {
+      "src": "/variant-hero/x1-23d-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/x1-23d-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "x1/23i": {
+    "light": {
+      "src": "/variant-hero/x1-23i-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/x1-23i-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "x1/25d": {
+    "light": {
+      "src": "/variant-hero/x1-25d-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/x1-25d-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "x1/25e-30e": {
+    "light": {
+      "src": "/variant-hero/x1-25e-30e-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/x1-25e-30e-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "x1/28i": {
+    "light": {
+      "src": "/variant-hero/x1-28i-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/x1-28i-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "x1/28i-2": {
+    "light": {
+      "src": "/variant-hero/x1-28i-2-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/x1-28i-2-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "x2/18d": {
+    "light": {
+      "src": "/variant-hero/x2-18d-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/x2-18d-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "x2/18i": {
+    "light": {
+      "src": "/variant-hero/x2-18i-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/x2-18i-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "x2/20d": {
+    "light": {
+      "src": "/variant-hero/x2-20d-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/x2-20d-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "x2/20i": {
+    "light": {
+      "src": "/variant-hero/x2-20i-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/x2-20i-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "x2/m35i": {
+    "light": {
+      "src": "/variant-hero/x2-m35i-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/x2-m35i-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "x2/xdrive25e": {
+    "light": {
+      "src": "/variant-hero/x2-xdrive25e-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/x2-xdrive25e-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "x3/18d": {
+    "light": {
+      "src": "/variant-hero/x3-18d-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/x3-18d-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "x3/20d": {
+    "light": {
+      "src": "/variant-hero/x3-20d-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/x3-20d-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "x3/20d-2": {
+    "light": {
+      "src": "/variant-hero/x3-20d-2-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/x3-20d-2-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "x3/20i": {
+    "light": {
+      "src": "/variant-hero/x3-20i-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/x3-20i-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "x3/28i": {
+    "light": {
+      "src": "/variant-hero/x3-28i-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/x3-28i-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "x3/30d": {
+    "light": {
+      "src": "/variant-hero/x3-30d-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/x3-30d-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "x3/30d-30sd": {
+    "light": {
+      "src": "/variant-hero/x3-30d-30sd-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/x3-30d-30sd-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "x3/30e": {
+    "light": {
+      "src": "/variant-hero/x3-30e-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/x3-30e-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "x3/30e-xdrive": {
+    "light": {
+      "src": "/variant-hero/x3-30e-xdrive-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/x3-30e-xdrive-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "x3/30i": {
+    "light": {
+      "src": "/variant-hero/x3-30i-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/x3-30i-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "x3/35d": {
+    "light": {
+      "src": "/variant-hero/x3-35d-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/x3-35d-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "x3/35i": {
+    "light": {
+      "src": "/variant-hero/x3-35i-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/x3-35i-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "x3/e83-petrol": {
+    "light": {
+      "src": "/variant-hero/x3-e83-petrol-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/x3-e83-petrol-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "x3/m40i": {
+    "light": {
+      "src": "/variant-hero/x3-m40i-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/x3-m40i-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "x4/20d": {
+    "light": {
+      "src": "/variant-hero/x4-20d-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/x4-20d-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "x4/20i": {
+    "light": {
+      "src": "/variant-hero/x4-20i-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/x4-20i-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "x4/30d": {
+    "light": {
+      "src": "/variant-hero/x4-30d-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/x4-30d-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "x4/35d": {
+    "light": {
+      "src": "/variant-hero/x4-35d-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/x4-35d-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "x4/m40d": {
+    "light": {
+      "src": "/variant-hero/x4-m40d-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/x4-m40d-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "x4/m40i": {
+    "light": {
+      "src": "/variant-hero/x4-m40i-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/x4-m40i-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "x5/25d": {
+    "light": {
+      "src": "/variant-hero/x5-25d-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/x5-25d-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "x5/3-0i": {
+    "light": {
+      "src": "/variant-hero/x5-3-0i-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/x5-3-0i-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "x5/30sd-35d": {
+    "light": {
+      "src": "/variant-hero/x5-30sd-35d-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/x5-30sd-35d-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "x5/30si": {
+    "light": {
+      "src": "/variant-hero/x5-30si-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/x5-30si-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "x5/4-6is-4-8is": {
+    "light": {
+      "src": "/variant-hero/x5-4-6is-4-8is-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/x5-4-6is-4-8is-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "x5/40i": {
+    "light": {
+      "src": "/variant-hero/x5-40i-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/x5-40i-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "x5/44i": {
+    "light": {
+      "src": "/variant-hero/x5-44i-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/x5-44i-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "x5/m50d": {
+    "light": {
+      "src": "/variant-hero/x5-m50d-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/x5-m50d-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "x5/m50i-m60i": {
+    "light": {
+      "src": "/variant-hero/x5-m50i-m60i-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/x5-m50i-m60i-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "x5/x5-m": {
+    "light": {
+      "src": "/variant-hero/x5-x5-m-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/x5-x5-m-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "x5/xdrive30d": {
+    "light": {
+      "src": "/variant-hero/x5-xdrive30d-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/x5-xdrive30d-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "x5/xdrive35i": {
+    "light": {
+      "src": "/variant-hero/x5-xdrive35i-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/x5-xdrive35i-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "x5/xdrive40d": {
+    "light": {
+      "src": "/variant-hero/x5-xdrive40d-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/x5-xdrive40d-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "x5/xdrive40e": {
+    "light": {
+      "src": "/variant-hero/x5-xdrive40e-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/x5-xdrive40e-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "x5/xdrive45e": {
+    "light": {
+      "src": "/variant-hero/x5-xdrive45e-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/x5-xdrive45e-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "x5/xdrive50e": {
+    "light": {
+      "src": "/variant-hero/x5-xdrive50e-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/x5-xdrive50e-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "x5/xdrive50i": {
+    "light": {
+      "src": "/variant-hero/x5-xdrive50i-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/x5-xdrive50i-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "x6/35i-40i": {
+    "light": {
+      "src": "/variant-hero/x6-35i-40i-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/x6-35i-40i-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "x6/m50d": {
+    "light": {
+      "src": "/variant-hero/x6-m50d-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/x6-m50d-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "x6/m50i-m60i": {
+    "light": {
+      "src": "/variant-hero/x6-m50i-m60i-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/x6-m50i-m60i-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "x6/x6-m": {
+    "light": {
+      "src": "/variant-hero/x6-x6-m-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/x6-x6-m-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "x6/xdrive30d": {
+    "light": {
+      "src": "/variant-hero/x6-xdrive30d-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/x6-xdrive30d-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "x6/xdrive35d-40d": {
+    "light": {
+      "src": "/variant-hero/x6-xdrive35d-40d-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/x6-xdrive35d-40d-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "x6/xdrive50i": {
+    "light": {
+      "src": "/variant-hero/x6-xdrive50i-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/x6-xdrive50i-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "x7/40i": {
+    "light": {
+      "src": "/variant-hero/x7-40i-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/x7-40i-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "x7/m50d": {
+    "light": {
+      "src": "/variant-hero/x7-m50d-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/x7-m50d-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "x7/m50i-m60i": {
+    "light": {
+      "src": "/variant-hero/x7-m50i-m60i-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/x7-m50i-m60i-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "x7/xdrive30d": {
+    "light": {
+      "src": "/variant-hero/x7-xdrive30d-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/x7-xdrive30d-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "x7/xdrive40d": {
+    "light": {
+      "src": "/variant-hero/x7-xdrive40d-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/x7-xdrive40d-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "z3/18-19": {
+    "light": {
+      "src": "/variant-hero/z3-18-19-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/z3-18-19-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "z3/2-0-2-2i": {
+    "light": {
+      "src": "/variant-hero/z3-2-0-2-2i-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/z3-2-0-2-2i-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "z3/28-30i": {
+    "light": {
+      "src": "/variant-hero/z3-28-30i-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/z3-28-30i-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "z3/z3-m": {
+    "light": {
+      "src": "/variant-hero/z3-z3-m-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/z3-z3-m-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "z4/18i-20i": {
+    "light": {
+      "src": "/variant-hero/z4-18i-20i-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/z4-18i-20i-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "z4/20i-22i": {
+    "light": {
+      "src": "/variant-hero/z4-20i-22i-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/z4-20i-22i-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "z4/23i": {
+    "light": {
+      "src": "/variant-hero/z4-23i-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/z4-23i-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "z4/25i-25si": {
+    "light": {
+      "src": "/variant-hero/z4-25i-25si-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/z4-25i-25si-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "z4/30i-30si": {
+    "light": {
+      "src": "/variant-hero/z4-30i-30si-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/z4-30i-30si-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "z4/m40i": {
+    "light": {
+      "src": "/variant-hero/z4-m40i-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/z4-m40i-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "z4/sdrive28i-30i": {
+    "light": {
+      "src": "/variant-hero/z4-sdrive28i-30i-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/z4-sdrive28i-30i-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "z4/sdrive35i-35is": {
+    "light": {
+      "src": "/variant-hero/z4-sdrive35i-35is-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/z4-sdrive35i-35is-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "z4/z4m": {
+    "light": {
+      "src": "/variant-hero/z4-z4m-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/z4-z4m-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  },
+  "z8/49": {
+    "light": {
+      "src": "/variant-hero/z8-49-light.webp",
+      "width": 1900,
+      "height": 1247
+    },
+    "dark": {
+      "src": "/variant-hero/z8-49-dark.webp",
+      "width": 1900,
+      "height": 1050,
+      "position": "100% 100%"
+    }
+  }
+}

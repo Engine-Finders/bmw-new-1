@@ -1,0 +1,58 @@
+{
+  "_note": "Variant pages with their own artwork. `key` is `<parent>/<slug>`. `light`/`dark`: hero picture (car, scene and floor in one image). `banners`: baked section banners (`compare` = Ready to Compare, wide + phone). `trustScene`: the same car mirrored so it faces the text (final CTA, desktop). `eraCars`: photo to show per generation in the era map (file names from carImages.json). Every other variant page shows its generation's stage scene and rotating photos.",
+  "3-series/320d": {
+    "light": {
+      "src": "/320d/hero_light.webp",
+      "width": 2536,
+      "height": 1664
+    },
+    "dark": {
+      "src": "/320d/hero_dark.webp",
+      "width": 2538,
+      "height": 1402,
+      "position": "100% 100%"
+    },
+    "eraCars": {
+      "E46": "bmw-3-series-e46-318i-320d-se-saloon-1998-2001-new-titanium-silver-e46-se-45.webp",
+      "E90": "bmw-3-series-e90-320d-se-saloon-2005-2008-new-sparkling-graphite-e90-320d-45.webp",
+      "F30": "bmw-3-series-f30-320i-m-sport-saloon-2012-2015-new-estoril-blue-f30-320i-45.webp",
+      "G20": "bmw-3-series-g20-330d-xdrive-m-sport-saloon-2019-new-dravit-grey-g20-330d-png-45.webp"
+    },
+    "banners": {
+      "compare": {
+        "light": {
+          "src": "/320d/compare_light.webp",
+          "width": 4224,
+          "height": 960
+        },
+        "dark": {
+          "src": "/320d/compare_dark.webp",
+          "width": 4224,
+          "height": 960
+        },
+        "phoneLight": {
+          "src": "/320d/compare_mobile_light.webp",
+          "width": 2037,
+          "height": 960
+        },
+        "phoneDark": {
+          "src": "/320d/compare_mobile_dark.webp",
+          "width": 2036,
+          "height": 960
+        }
+      }
+    },
+    "trustScene": {
+      "light": {
+        "src": "/320d/s9_light.webp",
+        "width": 1200,
+        "height": 800
+      },
+      "dark": {
+        "src": "/320d/s9_dark.webp",
+        "width": 1200,
+        "height": 800
+      }
+    }
+  }
+}

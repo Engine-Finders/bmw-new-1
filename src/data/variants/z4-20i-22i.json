@@ -78,13 +78,13 @@
               "@type": "ListItem",
               "position": 1,
               "name": "N46B20",
-              "url": "https://bmwengines.uk/engine/n46/"
+              "url": "https://bmwengines.uk/engine/n40-n42-n43-n45-n46"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "M54B22",
-              "url": "https://bmwengines.uk/engine/m54/"
+              "url": "https://bmwengines.uk/engine/m50-m52-m54"
             }
           ]
         },
@@ -311,7 +311,7 @@
         "recommendation": "The N46 four-cylinder engine has a documented issue with timing chain guides breaking. One owner reported: \"I've seen the oil pickup get clogged up on more than one 2.0 N42 engine when the timing chain tensioner has been at fault and the guides have been breaking\". If the chain slips, valves can hit pistons - this is an interference engine. At the first sign of cold-start rattle, get the chain inspected immediately. A £800–£2,000 preventative repair is dramatically cheaper than a £2,500–£5,500 engine replacement.",
         "failureLink": {
           "label": "Read the full timing chain failure guide → /failures/n46-timing-chain/ [NEW FAILURE PAGE NEEDED]",
-          "href": "#"
+          "href": "/failures/timing-chain-diagnosis-guide"
         }
       },
       {
@@ -329,7 +329,7 @@
         "recommendation": "The M54 engine's DISA (Differenzierte Sauganlage) valve can fail, causing a rattle from the inlet manifold and a noticeable loss of either low-end torque or top-end power. A broken DISA flap can send debris into the engine - it's a well-known weak point on the M54. If you experience a loss of performance or hear a rattle from the intake, have the DISA valve inspected. Rebuild kits are available, or the entire unit can be replaced.",
         "failureLink": {
           "label": "Read the full DISA valve failure guide → /failures/disa-valve-failure/ [NEW FAILURE PAGE NEEDED]",
-          "href": "#"
+          "href": "/failures"
         }
       },
       {
@@ -347,7 +347,7 @@
         "recommendation": "Oil leaks are \"a frequent complaint among Z4 owners\". Common leak points include the valve cover gasket and oil filter housing gasket on both the N46 and M54 engines. On the M54, the oil filter housing gasket is a known weak point. If left unaddressed, oil leaks can lead to low oil levels and potential engine damage. If you notice a burning smell or oil spots, have the gaskets inspected promptly.",
         "failureLink": {
           "label": "Read the full oil leak guide → /failures/oil-leaks-n46-m54/ [NEW FAILURE PAGE NEEDED]",
-          "href": "#"
+          "href": "/failures/n55-valve-cover-oil-leak"
         }
       },
       {
@@ -365,7 +365,7 @@
         "recommendation": "Cooling system failures are a significant concern on both engines. Common problems include water pump failure, cracked plastic housings, and expansion tank leaks. Overheating can lead to severe engine damage, so it's crucial to address any cooling issues promptly. Preventative replacement of the water pump and thermostat at 60,000–80,000 miles is strongly recommended.",
         "failureLink": {
           "label": "Read the full cooling system failure guide",
-          "href": "/failures/cooling-system-failure/"
+          "href": "/failures/m54-cooling-system"
         }
       }
     ]

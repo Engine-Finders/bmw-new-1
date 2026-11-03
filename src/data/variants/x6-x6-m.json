@@ -66,19 +66,19 @@
               "@type": "ListItem",
               "position": 2,
               "name": "F86 X6 M (S63B44T2, 2015–2019)",
-              "url": "https://bmwengines.uk/x6/f86/"
+              "url": "https://bmwengines.uk/x6"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "F96 X6 M (S63B44B, 2020–2023)",
-              "url": "https://bmwengines.uk/x6/f96/"
+              "url": "https://bmwengines.uk/x6"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "F96 LCI X6 M / Competition (S68 MHEV, 2023–present)",
-              "url": "https://bmwengines.uk/x6/f96/"
+              "url": "https://bmwengines.uk/x6"
             }
           ]
         },
@@ -90,25 +90,25 @@
               "@type": "ListItem",
               "position": 1,
               "name": "S63B44A (4.4 V8 twin-turbo)",
-              "url": "https://bmwengines.uk/engine/s63/"
+              "url": "https://bmwengines.uk/engine/s63-s65"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "S63B44T2 (4.4 V8 twin-turbo)",
-              "url": "https://bmwengines.uk/engine/s63/"
+              "url": "https://bmwengines.uk/engine/s63-s65"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "S63B44B (4.4 V8 twin-turbo)",
-              "url": "https://bmwengines.uk/engine/s63/"
+              "url": "https://bmwengines.uk/engine/s63-s65"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "S68 (4.4 V8 twin-turbo MHEV)",
-              "url": "https://bmwengines.uk/engine/s68/"
+              "url": "https://bmwengines.uk/technical/engine-code-decoder"
             }
           ]
         },
@@ -318,7 +318,7 @@
         "recommendation": "The S63's HPFP and injectors are its defining weaknesses - a well‑documented issue that plagued early cars. If you experience long cranking or rough running, have the fuel system tested. BMW issued revisions for this, but many cars are now out of warranty. Replacing the HPFP with revised units and upgrading injectors is the permanent fix. Index 12 injectors are recommended.",
         "failureLink": {
           "label": "",
-          "href": "/failures/high-pressure-fuel-pump-failure/"
+          "href": "/failures/n54-high-pressure-fuel-pump"
         }
       },
       {
@@ -336,7 +336,7 @@
         "recommendation": "The S63/S68's hot‑vee design - with turbos nestled between the cylinder banks - generates immense heat. The cooling system is under significant stress. Turbo coolant lines can fail, expansion tanks crack, and the electric water pump can fail. If you notice coolant loss, overheating, or a whining noise, have the cooling system pressure‑tested immediately. Many specialists recommend replacing the water pump and expansion tank preventatively at 60,000 miles.",
         "failureLink": {
           "label": "",
-          "href": "/failures/coolant-leak/"
+          "href": "/failures/m54-cooling-system"
         }
       },
       {
@@ -354,7 +354,7 @@
         "recommendation": "The S63 is notorious for valve stem seal failure - the seals harden and allow oil to leak into the combustion chamber. If you see blue smoke on startup or excessive oil consumption, have the valve stem seals inspected. Replacing them is labour‑intensive but far cheaper than a full engine replacement.",
         "failureLink": {
           "label": "",
-          "href": "/failures/valve-stem-seal-failure/"
+          "href": "/failures/valve-stem-seal-wear"
         }
       }
     ]

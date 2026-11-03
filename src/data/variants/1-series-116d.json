@@ -66,7 +66,7 @@
               "@type": "ListItem",
               "position": 3,
               "name": "F20/F21 LCI 116d (B37D15, 2015–2019)",
-              "url": "https://bmwengines.uk/1-series/f20-lci/"
+              "url": "https://bmwengines.uk/1-series/f20"
             },
             {
               "@type": "ListItem",
@@ -90,7 +90,7 @@
               "@type": "ListItem",
               "position": 2,
               "name": "B37D15",
-              "url": "https://bmwengines.uk/engine/b37/"
+              "url": "https://bmwengines.uk/engine/b37-b47"
             }
           ]
         },
@@ -351,7 +351,7 @@
         "recommendation": "Lots of diesel BMWs have had recalls for EGR problems. The EGR cooler is a known vulnerability across both N47 and B37 engines. One 116d owner reported: \"EGR cooler fail - repaired via recall\". Verify recall completion before buying any 116d - this is a straightforward, well-documented fix when caught early, but ignored coolant loss can lead to overheating damage.",
         "failureLink": {
           "label": "Read the full EGR cooler failure guide",
-          "href": "/failures/egr-valve-cooler-failure/"
+          "href": "/failures/egr-valve-cooler"
         }
       },
       {
@@ -369,7 +369,7 @@
         "recommendation": "The B37 three-cylinder diesel can suffer from swirl flap actuator failure. One owner reported: \"they told me the swirl flap rod has gone and it'll need a new intake manifold £1000+ all in\". The swirl flap system aids cylinder combustion and efficiency on diesels, but the mechanical linkage can wear and break. A swirl flap delete can offer long-term reliability at the cost of some low-down torque. If you experience ticking or poor low-end performance, have the swirl flap system inspected.",
         "failureLink": {
           "label": "Read the full swirl flap failure guide",
-          "href": "/failures/swirl-flap-failure/"
+          "href": "/failures/m57-swirl-flap"
         }
       }
     ]

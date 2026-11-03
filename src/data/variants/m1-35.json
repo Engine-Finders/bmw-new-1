@@ -72,7 +72,7 @@
               "@type": "ListItem",
               "position": 1,
               "name": "M88/1",
-              "url": "https://bmwengines.uk/engine/m88/"
+              "url": "https://bmwengines.uk/engine/m88-s38"
             }
           ]
         },
@@ -291,7 +291,7 @@
         "recommendation": "The cooling system is the single biggest reliability risk on the M88. The water pump, thermostat housing, and hoses are decades-old components running under thermal stress. M88 engines are known to run hot in traffic, and if the engine overheats, it can lead to warped cylinder heads and blown head gaskets. A full coolant overhaul is the first job on any unrefreshed example. Some owners upgrade to an electric water pump to improve cooling at low rpm and in traffic.",
         "failureLink": {
           "label": "Read the full cooling system failure guide",
-          "href": "/failures/cooling-system-failure/"
+          "href": "/failures/m54-cooling-system"
         }
       },
       {
@@ -309,7 +309,7 @@
         "recommendation": "Oil leaks are common on the M88, particularly from the rear cover on the cam tray. The gasket where the head splits can also leak. Oil leaks from the cylinder head gasket area are documented on the M88 engine. If left unaddressed, oil leaks can lead to low oil levels and potential engine damage. If you notice a burning smell or oil spots, have the gaskets inspected promptly.",
         "failureLink": {
           "label": "Read the full oil leak guide → /failures/oil-leaks-m88/ [NEW FAILURE PAGE NEEDED]",
-          "href": "#"
+          "href": "/failures/n55-valve-cover-oil-leak"
         }
       },
       {
@@ -327,7 +327,7 @@
         "recommendation": "The M88 uses Kugelfischer mechanical fuel injection with individual throttle valves. The throttle response is immediate in a way that modern drive-by-wire doesn't replicate, but the mechanical injection has its own maintenance character. The system requires a specialist to service correctly. If you experience running issues, have the injection system inspected by a specialist who understands Kugelfischer systems.",
         "failureLink": {
           "label": "Read the full fuel injection failure guide → /failures/kugelfischer-injection/ [NEW FAILURE PAGE NEEDED]",
-          "href": "#"
+          "href": "/failures"
         }
       }
     ]

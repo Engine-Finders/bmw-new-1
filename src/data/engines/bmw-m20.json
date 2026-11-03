@@ -52,37 +52,37 @@
               "@type": "ListItem",
               "position": 1,
               "name": "BMW 3 Series E21 320/6, 323i",
-              "url": "https://bmwengines.uk/models/3-series/e21/"
+              "url": "https://bmwengines.uk/3-series/e21"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "BMW 3 Series E30 320i/323i/325i",
-              "url": "https://bmwengines.uk/models/3-series/e30/"
+              "url": "https://bmwengines.uk/3-series/e30"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "BMW 5 Series E28 520i/525e/525i",
-              "url": "https://bmwengines.uk/models/5-series/e28/"
+              "url": "https://bmwengines.uk/5-series/e28"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "BMW 5 Series E34 520i/525i (early)",
-              "url": "https://bmwengines.uk/models/5-series/e34/"
+              "url": "https://bmwengines.uk/5-series/e34"
             },
             {
               "@type": "ListItem",
               "position": 5,
               "name": "BMW 6 Series E24 628CSi/633CSi/635CSi",
-              "url": "https://bmwengines.uk/models/6-series/e24/"
+              "url": "https://bmwengines.uk/6-series/e24"
             },
             {
               "@type": "ListItem",
               "position": 6,
               "name": "BMW 3 Series E30 325i Convertible/Touring",
-              "url": "https://bmwengines.uk/models/3-series/e30/"
+              "url": "https://bmwengines.uk/3-series/e30"
             }
           ]
         },
@@ -208,7 +208,7 @@
     "trustStrip": [],
     "primaryCta": {
       "label": "Compare M20 Engine Prices →",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "atAGlance": {
@@ -365,7 +365,7 @@
     "sharedCostNote": "",
     "cta": {
       "label": "→ Compare BMW M20 engine prices from UK specialists",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "faq": {
@@ -406,7 +406,7 @@
     "finalCta": "Find the best BMW M20 engine replacement UK classic owners rely on. Compare real prices from trusted specialists on EnginesMarket today and get back on the road with confidence.",
     "ctaButton": {
       "label": "Compare BMW M20 Engine Prices Now →",
-      "href": "#"
+      "href": "/quote"
     }
   }
 }

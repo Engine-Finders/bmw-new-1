@@ -90,7 +90,7 @@
               "@type": "ListItem",
               "position": 3,
               "name": "M52B28",
-              "url": "https://bmwengines.uk/engine/m52/"
+              "url": "https://bmwengines.uk/engine/m50-m52-m54"
             }
           ]
         },
@@ -325,7 +325,7 @@
         "recommendation": "Head gasket failure is one of the most significant issues on higher-mileage M30 engines. The M30 engine is very durable if well maintained - the problem is, most aren't. If you notice coolant loss, overheating, or white smoke, have the head gasket tested immediately. Proactive replacement of the cooling system (water pump, thermostat, hoses) can help prevent overheating that causes head gasket failure.",
         "failureLink": {
           "label": "",
-          "href": "/failures/head-gasket-failure/"
+          "href": "/failures"
         }
       },
       {
@@ -343,7 +343,7 @@
         "recommendation": "The M52's VANOS system is a well-known weak point. The seals degrade over time, causing a loss of low-end torque and hesitation. The 728i is considered to have an \"extremely reliable M52TUB28 engine, detuned by BMW so as not to jeopardise 735i sales\". However, VANOS seal replacement is a common maintenance item on higher-mileage cars. If you experience hesitation or loss of power, have the VANOS system inspected.",
         "failureLink": {
           "label": "",
-          "href": "/failures/vanos-failure/"
+          "href": "/failures/vanos-solenoid-failure"
         }
       },
       {
@@ -361,7 +361,7 @@
         "recommendation": "Cooling system failures are common across both M30 and M52 engines. Aged plastics and rubber components are a particular concern on the E38. If you notice coolant loss or temperature fluctuations, have the cooling system pressure-tested immediately. Proactive replacement of the water pump, thermostat and hoses at 100,000-mile intervals is recommended preventative maintenance.",
         "failureLink": {
           "label": "",
-          "href": "/failures/coolant-leak/"
+          "href": "/failures/m54-cooling-system"
         }
       },
       {
@@ -379,7 +379,7 @@
         "recommendation": "Oil leaks are among the most common issues on both M30 and M52 engines. The M30 suffers from valve cover and oil pan gasket leaks. The M52 also has well-documented oil leak issues. If you notice oil spots under the car or a burning smell, have it inspected promptly. Regular inspections can catch these before they become major issues.",
         "failureLink": {
           "label": "",
-          "href": "/failures/oil-leak/"
+          "href": "/failures/n55-valve-cover-oil-leak"
         }
       },
       {
@@ -397,7 +397,7 @@
         "recommendation": "Early M52 engines used Nikasil-coated cylinder liners, which could be damaged by high-sulphur fuel. BMW later switched to Alusil liners, which are much more durable. Most affected engines were replaced under warranty, but it's worth checking the engine number on any E38 728i. The M52 engine is generally considered reliable, but this is a known issue on early cars.",
         "failureLink": {
           "label": "",
-          "href": "/failures/nikasil-cylinder-liner/"
+          "href": "/failures"
         }
       }
     ]

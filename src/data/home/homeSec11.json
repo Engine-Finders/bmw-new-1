@@ -1,8 +1,10 @@
 {
-  "h2": "<span class=\"block\">BMW Engine History</span><span class=\"block heading-accent\">Six Decades of Engineering</span>",
+  "h2": "<span class=\"block\">BMW Engine History -</span><span class=\"block heading-accent\">Six Decades of Engineering</span>",
   "subHeadline": "From the carburetted M10 to the modular B58, mapped against the models that carried it. The complete BMW engine timeline.",
   "headerImage": {
-    "src": "https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=1400&q=80",
+    "light": "/home-image/sec11/engine-bay-light.webp",
+    "dark": "/home-image/sec11/engine-bay-dark.webp",
+    "phone": "/home-image/sec11/engine-bay-phone.webp",
     "alt": "BMW engine bay"
   },
   "columns": [
@@ -12,143 +14,418 @@
   ],
   "eras": [
     {
-      "era": "1960s-1970s",
+      "era": "1960s–1970s",
       "engines": "M10, M30",
       "engineImage": {
-        "src": "https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=500&q=80",
-        "alt": "Classic BMW engine placeholder"
+        "src": "/engines/s58tu2.webp",
+        "alt": "BMW engine",
+        "bbox": [
+          0.0185,
+          0.0667,
+          0.9815,
+          0.9352
+        ],
+        "size": [
+          540,
+          540
+        ]
       },
       "models": "2002, E3, E9",
       "modelImages": [
         {
-          "src": "https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=400&q=80",
-          "alt": "Classic BMW coupe placeholder"
+          "src": "/cars/home/sec11-r1a.webp",
+          "dark": "/cars/home/sec11-r1a-cut.webp",
+          "alt": "BMW 5 Series E12 520i",
+          "bbox": [
+            0.0313,
+            0.109,
+            0.9935,
+            0.8566
+          ],
+          "size": [
+            766,
+            523
+          ]
         },
         {
-          "src": "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=400&q=80",
-          "alt": "Classic BMW sedan placeholder"
+          "src": "/cars/home/sec11-r1b.webp",
+          "dark": "/cars/home/sec11-r1b-cut.webp",
+          "alt": "BMW 5 Series E28 535i",
+          "bbox": [
+            0.049,
+            0.108,
+            0.9459,
+            0.842
+          ],
+          "size": [
+            776,
+            500
+          ]
         },
         {
-          "src": "https://images.unsplash.com/photo-1549924231-f129b911e442?auto=format&fit=crop&w=400&q=80",
-          "alt": "Classic BMW touring placeholder"
+          "src": "/cars/home/sec11-r1c.webp",
+          "dark": "/cars/home/sec11-r1c-cut.webp",
+          "alt": "BMW 5 Series E12 M535i",
+          "bbox": [
+            0.0266,
+            0.0939,
+            0.9721,
+            0.865
+          ],
+          "size": [
+            789,
+            511
+          ]
         }
-      ]
+      ],
+      "enginesDesktop": "M10, M30",
+      "enginesPhone": "M10, M30"
     },
     {
       "era": "1980s",
       "engines": "M20, M30B35, S14",
       "engineImage": {
-        "src": "https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=500&q=80",
-        "alt": "1980s BMW engine placeholder"
+        "src": "/engines/b57d30c.webp",
+        "alt": "BMW engine",
+        "bbox": [
+          0.0185,
+          0.1148,
+          0.9796,
+          0.8852
+        ],
+        "size": [
+          540,
+          540
+        ]
       },
       "models": "E30, E28, E24",
       "modelImages": [
         {
-          "src": "https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=400&q=80",
-          "alt": "BMW E30 placeholder"
+          "src": "/cars/home/sec11-r2a.webp",
+          "dark": "/cars/home/sec11-r2a-cut.webp",
+          "alt": "BMW 3 Series E30 318i",
+          "bbox": [
+            0.0211,
+            0.1992,
+            0.9662,
+            0.8121
+          ],
+          "size": [
+            710,
+            527
+          ]
         },
         {
-          "src": "https://images.unsplash.com/photo-1494905998402-395d579af36f?auto=format&fit=crop&w=400&q=80",
-          "alt": "BMW E28 placeholder"
+          "src": "/cars/home/sec11-r2b.webp",
+          "dark": "/cars/home/sec11-r2b-cut.webp",
+          "alt": "BMW 5 Series E28 520i",
+          "bbox": [
+            0.0321,
+            0.0975,
+            0.9602,
+            0.8145
+          ],
+          "size": [
+            778,
+            523
+          ]
         },
         {
-          "src": "https://images.unsplash.com/photo-1502877338535-766e1452684a?auto=format&fit=crop&w=400&q=80",
-          "alt": "BMW E24 placeholder"
+          "src": "/cars/home/sec11-r2c.webp",
+          "dark": "/cars/home/sec11-r2c-cut.webp",
+          "alt": "BMW M5 E34",
+          "bbox": [
+            0.0411,
+            0.0889,
+            0.9735,
+            0.7925
+          ],
+          "size": [
+            755,
+            506
+          ]
         }
-      ]
+      ],
+      "enginesDesktop": "M20, M30B35, S14",
+      "enginesPhone": "M20,\nM30B35, S14"
     },
     {
       "era": "1990s",
       "engines": "M42, M50, M52, S50, S52",
       "engineImage": {
-        "src": "https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=500&q=80",
-        "alt": "1990s BMW engine placeholder"
+        "src": "/engines/b58d30.webp",
+        "alt": "BMW engine",
+        "bbox": [
+          0.0185,
+          0.0296,
+          0.9796,
+          0.9685
+        ],
+        "size": [
+          540,
+          540
+        ]
       },
       "models": "E36, E34, E31",
       "modelImages": [
         {
-          "src": "https://images.unsplash.com/photo-1542362567-b07e54358753?auto=format&fit=crop&w=400&q=80",
-          "alt": "BMW E36 placeholder"
+          "src": "/cars/home/sec11-r3a.webp",
+          "dark": "/cars/home/sec11-r3a-cut.webp",
+          "alt": "BMW 3 Series E36 328i",
+          "bbox": [
+            0.0185,
+            0.1747,
+            0.9701,
+            0.7918
+          ],
+          "size": [
+            702,
+            538
+          ]
         },
         {
-          "src": "https://images.unsplash.com/photo-1494905998402-395d579af36f?auto=format&fit=crop&w=400&q=80",
-          "alt": "BMW E34 placeholder"
+          "src": "/cars/home/sec11-r3b.webp",
+          "dark": "/cars/home/sec11-r3b-cut.webp",
+          "alt": "BMW 3 Series E36 325i",
+          "bbox": [
+            0.0393,
+            0.135,
+            0.9403,
+            0.8405
+          ],
+          "size": [
+            737,
+            489
+          ]
         },
         {
-          "src": "https://images.unsplash.com/photo-1502877338535-766e1452684a?auto=format&fit=crop&w=400&q=80",
-          "alt": "BMW E31 placeholder"
+          "src": "/cars/home/sec11-r3c.webp",
+          "dark": "/cars/home/sec11-r3c-cut.webp",
+          "alt": "BMW M5 E39",
+          "bbox": [
+            0.0465,
+            0.1373,
+            0.9608,
+            0.7804
+          ],
+          "size": [
+            688,
+            510
+          ]
         }
-      ]
+      ],
+      "enginesDesktop": "M42, M50, M52,\nS50, S52",
+      "enginesPhone": "M42, M50, M52,\nS50, S52"
     },
     {
       "era": "2000s",
       "engines": "M54, N52, N54, S54, S62",
       "engineImage": {
-        "src": "https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=500&q=80",
-        "alt": "2000s BMW engine placeholder"
+        "src": "/engines/b57d30-a-b.webp",
+        "alt": "BMW engine",
+        "bbox": [
+          0.0185,
+          0.0426,
+          0.9796,
+          0.9574
+        ],
+        "size": [
+          540,
+          540
+        ]
       },
       "models": "E46, E39, E38, E53",
       "modelImages": [
         {
-          "src": "https://images.unsplash.com/photo-1542362567-b07e54358753?auto=format&fit=crop&w=400&q=80",
-          "alt": "BMW E46 placeholder"
+          "src": "/cars/home/sec11-r4a.webp",
+          "dark": "/cars/home/sec11-r4a-cut.webp",
+          "alt": "BMW 3 Series E46 318i",
+          "bbox": [
+            0.0457,
+            0.137,
+            0.9449,
+            0.816
+          ],
+          "size": [
+            744,
+            511
+          ]
         },
         {
-          "src": "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=400&q=80",
-          "alt": "BMW E39 placeholder"
+          "src": "/cars/home/sec11-r4b.webp",
+          "dark": "/cars/home/sec11-r4b-cut.webp",
+          "alt": "BMW 5 Series E39 530d",
+          "bbox": [
+            0.0449,
+            0.0975,
+            0.9894,
+            0.8337
+          ],
+          "size": [
+            758,
+            523
+          ]
         },
         {
-          "src": "https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?auto=format&fit=crop&w=400&q=80",
-          "alt": "BMW E53 placeholder"
+          "src": "/cars/home/sec11-r4c.webp",
+          "dark": "/cars/home/sec11-r4c-cut.webp",
+          "alt": "BMW 3 Series E46 330d",
+          "bbox": [
+            0.04,
+            0.2063,
+            0.9514,
+            0.7918
+          ],
+          "size": [
+            700,
+            538
+          ]
         }
-      ]
+      ],
+      "enginesDesktop": "M54, N52, N54,\nS54, S62",
+      "enginesPhone": "M54, N52, N54,\nS54, S62"
     },
     {
       "era": "2010s",
       "engines": "N47, N55, N57, S63, S55",
       "engineImage": {
-        "src": "https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=500&q=80",
-        "alt": "2010s BMW engine placeholder"
+        "src": "/engines/b58b30.webp",
+        "alt": "BMW engine",
+        "bbox": [
+          0.0185,
+          0.1019,
+          0.9796,
+          0.8981
+        ],
+        "size": [
+          540,
+          540
+        ]
       },
       "models": "E90, F10, F30, F15",
       "modelImages": [
         {
-          "src": "https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=400&q=80",
-          "alt": "BMW F30 placeholder"
+          "src": "/cars/home/sec11-r5a.webp",
+          "dark": "/cars/home/sec11-r5a-cut.webp",
+          "alt": "BMW 3 Series F30 330d",
+          "bbox": [
+            0.0527,
+            0.1179,
+            0.9776,
+            0.808
+          ],
+          "size": [
+            759,
+            526
+          ]
         },
         {
-          "src": "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=400&q=80",
-          "alt": "BMW F10 placeholder"
+          "src": "/cars/home/sec11-r5b.webp",
+          "dark": "/cars/home/sec11-r5b-cut.webp",
+          "alt": "BMW 5 Series F10 520d",
+          "bbox": [
+            0.0491,
+            0.1327,
+            0.9397,
+            0.7939
+          ],
+          "size": [
+            713,
+            490
+          ]
         },
         {
-          "src": "https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&w=400&q=80",
-          "alt": "BMW F15 placeholder"
+          "src": "/cars/home/sec11-r5c.webp",
+          "dark": "/cars/home/sec11-r5c-cut.webp",
+          "alt": "BMW 5 Series F10 550i",
+          "bbox": [
+            0.0535,
+            0.0816,
+            0.9639,
+            0.767
+          ],
+          "size": [
+            748,
+            515
+          ]
         }
-      ]
+      ],
+      "enginesDesktop": "N47, N55, N57,\nS63, S55",
+      "enginesPhone": "N47, N55, N57,\nS63, S55"
     },
     {
       "era": "2020s",
       "engines": "B47, B48, B58, S58",
       "engineImage": {
-        "src": "https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=500&q=80",
-        "alt": "2020s BMW engine placeholder"
+        "src": "/engines/s68b44.webp",
+        "alt": "BMW engine",
+        "bbox": [
+          0.0204,
+          0.1426,
+          0.9796,
+          0.8574
+        ],
+        "size": [
+          540,
+          540
+        ]
       },
       "models": "G20, G30, G05, G07",
       "modelImages": [
         {
-          "src": "https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=400&q=80",
-          "alt": "BMW G20 placeholder"
+          "src": "/cars/home/sec11-r6a.webp",
+          "dark": "/cars/home/sec11-r6a-cut.webp",
+          "alt": "BMW 3 Series G20 M340i",
+          "bbox": [
+            0.0199,
+            0.1084,
+            0.9881,
+            0.8042
+          ],
+          "size": [
+            755,
+            526
+          ]
         },
         {
-          "src": "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=400&q=80",
-          "alt": "BMW G30 placeholder"
+          "src": "/cars/home/sec11-r6b.webp",
+          "dark": "/cars/home/sec11-r6b-cut.webp",
+          "alt": "BMW 5 Series G30 530d",
+          "bbox": [
+            0.043,
+            0.0923,
+            0.9785,
+            0.775
+          ],
+          "size": [
+            745,
+            520
+          ]
         },
         {
-          "src": "https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&w=400&q=80",
-          "alt": "BMW G05 placeholder"
+          "src": "/cars/home/sec11-r6c.webp",
+          "dark": "/cars/home/sec11-r6c-cut.webp",
+          "alt": "BMW X5 G05 xDrive40d",
+          "bbox": [
+            0.0507,
+            0.088,
+            0.9747,
+            0.8547
+          ],
+          "size": [
+            750,
+            523
+          ]
         }
-      ]
+      ],
+      "enginesDesktop": "B47, B48, B58,\nS58",
+      "enginesPhone": "B47, B48, B58,\nS58"
     }
   ],
-  "keyTakeaway": "The N47 and N57 defined the diesel era - but the B58 and B47 reversed the reliability perception. The M54 and M57 remain the classic keeper engines; the B58 is the modern gold standard."
+  "keyTakeaway": "The N47 and N57 defined the diesel era - but the B58 and B47 reversed the reliability perception. The M54 and M57 remain the classic keeper engines; the B58 is the modern gold standard.",
+  "subHeadlineDesktop": "From the carburetted M10 to the modular B58,\nmapped against the models that carried it.\nThe complete BMW engine timeline.",
+  "keyTakeawayDesktop": "The N47 and N57 defined the diesel era - but the B58 and B47 reversed the reliability perception.\nThe M54 and M57 remain the classic keeper engines; the B58 is the modern gold standard.",
+  "keyTakeawayPhone": "The N47 and N57 defined the diesel era -\nbut the B58 and B47 reversed the reliability perception.\nThe M54 and M57 remain the classic keeper engines;\nthe B58 is the modern gold standard.",
+  "h2Phone": "<span class=\"block\">BMW Engine History -</span><span class=\"block heading-accent\">Six Decades of</span><span class=\"block heading-accent\">Engineering</span>",
+  "keyTakeawayLabel": "Key takeaway:"
 }

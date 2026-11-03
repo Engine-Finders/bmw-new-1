@@ -78,31 +78,31 @@
               "@type": "ListItem",
               "position": 1,
               "name": "N63B44A",
-              "url": "https://bmwengines.uk/engine/n63/"
+              "url": "https://bmwengines.uk/engine/n62-n63"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "N63B44O1",
-              "url": "https://bmwengines.uk/engine/n63/"
+              "url": "https://bmwengines.uk/engine/n62-n63"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "N63B44B",
-              "url": "https://bmwengines.uk/engine/n63/"
+              "url": "https://bmwengines.uk/engine/n62-n63"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "N63B44M",
-              "url": "https://bmwengines.uk/engine/n63/"
+              "url": "https://bmwengines.uk/engine/n62-n63"
             },
             {
               "@type": "ListItem",
               "position": 5,
               "name": "N63B44TÜ3",
-              "url": "https://bmwengines.uk/engine/n63/"
+              "url": "https://bmwengines.uk/engine/n62-n63"
             }
           ]
         },
@@ -337,7 +337,7 @@
         "recommendation": "The N63's valve stem seals are its most notorious failure. The reason this repair is so expensive has nothing to do with the cost of the seals - the parts are relatively inexpensive. The problem is access. To replace the valve stem seals on the N63, the engine must be dropped from the vehicle. At the first sign of blue smoke on startup, have the valve stem seals inspected. BMW's Customer Care Package (CCP) from 2014 covered this on affected vehicles, but many early N63s are now beyond the coverage period.",
         "failureLink": {
           "label": "",
-          "href": "/failures/valve-stem-seal-failure/"
+          "href": "/failures/valve-stem-seal-wear"
         }
       },
       {
@@ -355,7 +355,7 @@
         "recommendation": "The N63's timing chain system is a known weak point. Early non-TU versions suffered from stretched timing chains. BMW issued a technical bulletin to check timing chains for wear in conjunction with the N63 Customer Care Package. At the first sign of rattling, book an inspection immediately. Owners should avoid long service intervals and keep an eye on timing chain stretch or smoke from the exhaust - both early signs of impending trouble.",
         "failureLink": {
           "label": "",
-          "href": "/failures/timing-chain-failure/"
+          "href": "/failures/timing-chain-diagnosis-guide"
         }
       },
       {
@@ -373,7 +373,7 @@
         "recommendation": "One of the most notorious issues with the N63T is oil leaks, particularly from the valve cover gaskets and oil filter housing. The hot-vee layout accelerates rubber degradation and seal hardening. The high-pressure fuel pump is also critical for performance - failures can lead to poor acceleration, rough idling, and even stalling. If you notice a burning oil smell or visible oil, have the gaskets inspected promptly.",
         "failureLink": {
           "label": "",
-          "href": "/failures/oil-leak/"
+          "href": "/failures/n55-valve-cover-oil-leak"
         }
       }
     ]

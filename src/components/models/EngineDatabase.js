@@ -1,505 +1,466 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useMemo, useState } from "react";
 import Link from "next/link";
-import MStripe from "@/components/reusableComponents/MStripe";
+import { Inter } from "next/font/google";
+import { engineHrefFor } from "@/components/shared/engineLink";
 import { useTheme } from "@/components/shared/themeProvider";
-import { sectionDescription } from "@/components/models/sectionTypography";
+import s from "./EngineDatabase.module.css";
+import EngineDatabaseLegacy from "./EngineDatabaseLegacy";
 
-const defaultFilters = {
-  query: "",
-  fuel: "",
-  displacement: "",
-  generation: "",
-  sort: "enquiries",
+const inter = Inter({ subsets: ["latin"], weight: ["400", "500", "600", "700"], display: "swap" });
+
+// Line icons drawn to match the references (24px grid, stroke = currentColor).
+const ICONS = {
+  cube: (
+    <g fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinejoin="round">
+      <path d="M12 2.8l8.2 4.6v9.2L12 21.2l-8.2-4.6V7.4z" />
+      <path d="M3.8 7.4L12 12l8.2-4.6M12 12v9.2" />
+    </g>
+  ),
+  shield: (
+    <g fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M12 2.8l7.5 2.8v5.6c0 4.6-3.2 8.2-7.5 10-4.3-1.8-7.5-5.4-7.5-10V5.6z" />
+      <path d="M8.6 12.1l2.4 2.4 4.4-4.6" />
+    </g>
+  ),
+  chart: (
+    <g fill="none" stroke="currentColor" strokeWidth="1.9" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M5 4.5h14a1.5 1.5 0 0 1 1.5 1.5v2.5" />
+      <path d="M4.5 9v-3A1.5 1.5 0 0 1 6 4.5" />
+      <rect x="3.5" y="14" width="3.6" height="6.5" rx="1.6" />
+      <rect x="10.2" y="10.5" width="3.6" height="10" rx="1.6" />
+      <rect x="16.9" y="12.5" width="3.6" height="8" rx="1.6" />
+      <path d="M7.1 17h3.1M13.8 15h3.1" />
+    </g>
+  ),
+  pound: (
+    <g fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+      <circle cx="12" cy="12" r="9.2" />
+      <path d="M14.6 8.6a2.6 2.6 0 0 0-4.8 1.2c0 1.6.6 2.6.6 4 0 1.1-.6 2-1.6 2.6h6.2M8.6 12.6h4.6" />
+    </g>
+  ),
+  bars: (
+    <g fill="none" stroke="currentColor" strokeWidth="1.9" strokeLinejoin="round">
+      <rect x="3.5" y="12" width="4.2" height="8.5" rx="1" />
+      <rect x="9.9" y="4" width="4.2" height="16.5" rx="1" />
+      <rect x="16.3" y="8.5" width="4.2" height="12" rx="1" />
+    </g>
+  ),
+  poundBig: (
+    <path d="M16.4 6.2a4.2 4.2 0 0 0-7.6 1.8c-.3 2.2.8 4.2.8 6.4 0 2-1 3.8-2.9 5.1h10.4M6.7 12.4h7.6" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
+  ),
+  doc: (
+    <g fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+      <rect x="5" y="3" width="14" height="18" rx="2" />
+      <path d="M8.5 7.5h7M8.5 11h7M8.5 14.5h7M8.5 18h4" />
+    </g>
+  ),
+  database: (
+    <g fill="none" stroke="currentColor" strokeWidth="1.8">
+      <ellipse cx="12" cy="5.5" rx="7.5" ry="2.8" />
+      <path d="M4.5 5.5v13c0 1.5 3.4 2.8 7.5 2.8s7.5-1.3 7.5-2.8v-13M4.5 9.8c0 1.5 3.4 2.8 7.5 2.8s7.5-1.3 7.5-2.8M4.5 14.2c0 1.5 3.4 2.8 7.5 2.8s7.5-1.3 7.5-2.8" />
+    </g>
+  ),
+  list: (
+    <g fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round">
+      <rect x="3.5" y="4" width="17" height="16" rx="2" />
+      <path d="M7.5 9h9M7.5 12.5h9M7.5 16h6" />
+    </g>
+  ),
+  search: (
+    <g fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round">
+      <circle cx="10.5" cy="10.5" r="6.5" />
+      <path d="M15.5 15.5l5 5" />
+    </g>
+  ),
+  reset: (
+    <path d="M19.5 12a7.5 7.5 0 1 1-2.2-5.3M17.5 3v3.9h-3.9" fill="none" stroke="currentColor" strokeWidth="2.1" strokeLinecap="round" strokeLinejoin="round" />
+  ),
+  drop: <path d="M12 2.8c3.6 4.5 6.2 8.1 6.2 11.6a6.2 6.2 0 0 1-12.4 0c0-3.5 2.6-7.1 6.2-11.6z" fill="currentColor" />,
+  arrow: <path d="M4.5 12h15M13.5 6l6 6-6 6" fill="none" stroke="currentColor" strokeWidth="2.1" strokeLinecap="round" strokeLinejoin="round" />,
+  chevron: <path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />,
+  sort: (
+    <g fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M8 9.5l4-4 4 4M8 14.5l4 4 4-4" />
+    </g>
+  ),
+  sortPair: (
+    <g fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M8 19V5M4.5 8.5L8 5l3.5 3.5M16 5v14M12.5 15.5L16 19l3.5-3.5" />
+    </g>
+  ),
+  info: (
+    <g fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round">
+      <circle cx="12" cy="12" r="9" />
+      <path d="M12 11v5.5M12 7.6v.2" strokeWidth="2.2" />
+    </g>
+  ),
 };
 
-function cleanText(text = "") {
-  return String(text)
-    .replaceAll("ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â£", "\u00a3")
-    .replaceAll("Ãƒâ€šÃ‚Â£", "\u00a3")
-    .replaceAll("Ã‚Â£", "\u00a3")
-    .replaceAll("Â£", "\u00a3")
-    .replaceAll("ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã…â€œ", "\u2013")
-    .replaceAll("ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“", "\u2013")
-    .replaceAll("Ã¢â‚¬â€œ", "\u2013")
-    .replaceAll("â€“", "\u2013")
-    .replaceAll("ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â", "\u2014")
-    .replaceAll("ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â", "\u2014")
-    .replaceAll("Ã¢â‚¬â€", "\u2014")
-    .replaceAll("â€”", "\u2014")
-    .replaceAll("ÃƒÆ’Ã‚Â¢ÃƒÂ¢Ã¢â‚¬Å¡Ã‚Â¬Ãƒâ€šÃ‚Â¢", "\u2022")
-    .replaceAll("ÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¢", "\u2022")
-    .replaceAll("Ã¢â‚¬Â¢", "\u2022")
-    .replaceAll("â€¢", "\u2022")
-    .replaceAll("ÃƒÆ’Ã‚Â¢Ãƒâ€¹Ã…â€œÃƒÂ¢Ã¢â€šÂ¬Ã‚Â¦", "\u2605")
-    .replaceAll("ÃƒÂ¢Ã‹Å“Ã¢â‚¬Â¦", "\u2605")
-    .replaceAll("Ã¢Ëœâ€¦", "\u2605")
-    .replaceAll("â˜…", "\u2605")
-    .replaceAll("ÃƒÆ’Ã‚Â¢Ãƒâ€¹Ã…â€œÃƒÂ¢Ã¢â€šÂ¬Ã‚Â ", "\u2606")
-    .replaceAll("ÃƒÂ¢Ã‹Å“Ã¢â‚¬Â ", "\u2606")
-    .replaceAll("Ã¢Ëœâ€ ", "\u2606")
-    .replaceAll("â˜†", "\u2606")
-    .replaceAll("ÃƒÆ’Ã¢â‚¬Å¡Ãƒâ€šÃ‚Â½", "\u00bd")
-    .replaceAll("Ãƒâ€šÃ‚Â½", "\u00bd")
-    .replaceAll("Ã‚Â½", "\u00bd")
-    .replaceAll("Â½", "\u00bd")
-    .replace(/\s+/g, " ")
-    .trim();
-}
+// a space before each break keeps words apart where phones drop the breaks; [TAGS] never split
+const spaced = (html = "") =>
+  String(html)
+    .replace(/\s*<br\s*\/?>\s*/g, " <br>")
+    .replace(/(\[[A-Z][A-Z-]+\])/g, '<span style="white-space:nowrap">$1</span>');
 
-function splitTitle(title = "") {
-  const clean = cleanText(title);
-  const marker = "The Complete Database";
-  const index = clean.indexOf(marker);
-
-  if (index === -1) return { main: clean, accent: "" };
-
-  return {
-    main: clean.slice(0, index).trim(),
-    accent: clean.slice(index).trim(),
-  };
-}
-
-function shortTitle(title = "") {
-  return cleanText(title)
-    .replace(/^BMW\s+/i, "")
-    .replace("The Complete Database", "The Database");
-}
-
-function statIcon(type) {
-  const paths = {
-    cube: <path d="m12 3 8 4.5v9L12 21l-8-4.5v-9L12 3Zm0 9 8-4.5M12 12 4 7.5M12 12v9" />,
-    shield: <path d="M12 3 5 6v6c0 5 3.3 8.8 7 9 3.7-.2 7-4 7-9V6l-7-3Zm-2 9 1.6 1.6L15 10" />,
-    chart: <path d="M5 19V9m5 10V5m5 14v-7m5 7H3" />,
-    pound: <path d="M17 6.5A5 5 0 0 0 8 9v8m-3 0h10M6 13h7" />,
-    database: <path d="M5 6c0-1.7 3.1-3 7-3s7 1.3 7 3-3.1 3-7 3-7-1.3-7-3Zm0 0v12c0 1.7 3.1 3 7 3s7-1.3 7-3V6M5 12c0 1.7 3.1 3 7 3s7-1.3 7-3" />,
-    search: <path d="m21 21-4.3-4.3M10.5 18a7.5 7.5 0 1 1 0-15 7.5 7.5 0 0 1 0 15Z" />,
-    file: <path d="M7 3h8l4 4v14H7V3Zm8 0v5h5M10 13h6m-6 4h6" />,
-    droplet: <path d="M12 3s5 5.2 5 9a5 5 0 0 1-10 0c0-3.8 5-9 5-9Z" />,
-    arrow: <path d="M5 12h14m-6-6 6 6-6 6" />,
-    reset: <path d="M20 12a8 8 0 1 1-2.3-5.7M20 4v6h-6" />,
-  };
-
+function Icon({ name, className }) {
   return (
-    <svg aria-hidden="true" viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2">
-      {paths[type] || paths.cube}
+    <svg aria-hidden="true" viewBox="0 0 24 24" className={className}>
+      {ICONS[name]}
     </svg>
   );
 }
 
-function StatCard({ icon, value, label }) {
+const STAR = "M12 2.4l2.9 6.1 6.7.8-4.9 4.6 1.3 6.7L12 17.3l-6 3.3 1.3-6.7-4.9-4.6 6.7-.8z";
+
+// "★★★½" -> three stars, a "½", then empty stars to five places (as in the light reference).
+function Stars({ value, className }) {
+  const chars = [...String(value)].filter((c) => "★☆½".includes(c));
+  const slots = [];
+  for (const c of chars) slots.push(c);
+  while (slots.length < 5) slots.push("☆");
+  const score = chars.reduce((n, c) => n + (c === "★" ? 1 : c === "½" ? 0.5 : 0), 0);
   return (
-    <div className="min-h-[98px] rounded-md border border-[var(--color-border)] bg-[var(--color-surface)] p-5 shadow-[0_8px_22px_var(--color-shadow)]">
-      <div className="flex items-center gap-4">
-        <span className="shrink-0 text-[var(--color-primary)]">{statIcon(icon)}</span>
-        <strong className="text-[1.05rem] leading-none text-[var(--color-text)]">{cleanText(value)}</strong>
-      </div>
-      <p className="mt-3 text-[13px] leading-[1.45] text-[var(--color-text)]" dangerouslySetInnerHTML={{ __html: label }} />
-    </div>
-  );
-}
-
-function Rating({ value }) {
-  const rating = cleanText(value);
-  const stars = Array.from({ length: 5 }, (_, index) => {
-    const char = rating[index] || "\u2606";
-    return char === "\u2605" || char === "\u00bd" ? "filled" : "empty";
-  });
-
-  if (rating.includes("\u00bd")) stars[3] = "half";
-
-  return (
-    <span className="inline-flex gap-0.5 text-[15px] leading-none">
-      {stars.map((state, index) => (
-        <span key={index} className={state === "empty" ? "text-[#cfd5dd]" : "text-[var(--color-primary)]"}>
-          {state === "half" ? "\u00bd" : "\u2605"}
-        </span>
-      ))}
+    <span className={`${s.stars} ${className || ""}`} role="img" aria-label={`${score} out of 5`}>
+      {slots.slice(0, 5).map((c, i) =>
+        c === "½" ? (
+          <span key={i} className={s.half} aria-hidden="true">
+            ½
+          </span>
+        ) : (
+          <svg key={i} aria-hidden="true" viewBox="0 0 24 24" className={c === "★" ? s.starOn : s.starOff}>
+            <path d={STAR} />
+          </svg>
+        )
+      )}
     </span>
   );
 }
 
-function cleanCost(value = "") {
-  return cleanText(value)
-    .replace(/\s*\[PLACEHOLDER.*?\]/, "")
-    .replace(/\s*\[BMW-QUOTE\]/, "");
+// "BMW 3 Series Engine Codes - The Complete Database" -> "…Codes -" / "The Complete Database"
+function splitTitle(title = "") {
+  const match = String(title).match(/^(.*?\s[-–-])\s+(.*)$/);
+  return match ? { main: match[1], accent: match[2] } : { main: String(title), accent: "" };
+}
+
+// "£1,500–£3,000 [PLACEHOLDER - confirm vs cost sheet]" -> cost + "[PLACEHOLDER]"
+function splitCost(value = "") {
+  const match = String(value).match(/^(.*?)\s*\[([A-Z][A-Z-]*)(?:\s+-[^\]]*)?\]\s*$/);
+  return match ? { cost: match[1], tag: `[${match[2]}]` } : { cost: String(value), tag: "" };
+}
+
+// "- (pattern data)" -> dash + italic note
+function Enquiries({ value }) {
+  const str = String(value);
+  const match = str.match(/^-\s*(\(.*\))$/);
+  if (match) {
+    return (
+      <span>
+        - <em className={s.pattern}>{match[1]}</em>
+      </span>
+    );
+  }
+  return <span dangerouslySetInnerHTML={{ __html: str }} />;
 }
 
 function enquiryNumber(value = "") {
-  const clean = cleanText(value);
-  if (!/^\d/.test(clean)) return 0;
-  const match = clean.match(/^\d[\d,]*/);
+  const match = String(value).match(/^\d[\d,]*/);
   return match ? Number(match[0].replaceAll(",", "")) : 0;
 }
 
-function fuelColor(fuel = "") {
-  return cleanText(fuel).toLowerCase().includes("diesel") ? "text-[var(--color-text)]" : "text-green-700";
-}
-
-function uniqueOptions(values) {
-  return [...new Set(values.map(cleanText).filter(Boolean))].sort((a, b) => a.localeCompare(b));
-}
-
-function engineMatchesQuery(engine, query) {
-  if (!query.trim()) return true;
-  const haystack = [
-    engine.engineCode,
-    engine.family,
-    engine.fuel,
-    engine.displacement,
-    engine.power,
-    engine.years,
-    engine.model,
-    engine.enquiries,
-    engine.avgRebuildCost,
-  ].map(cleanText).join(" ").toLowerCase();
-
-  return haystack.includes(query.trim().toLowerCase());
-}
-
-function filterAndSortEngines(engines, filters) {
-  const filtered = engines.filter((engine) => {
-    const generation = cleanText(engine.model);
-
-    return (
-      engineMatchesQuery(engine, filters.query) &&
-      (!filters.fuel || cleanText(engine.fuel) === filters.fuel) &&
-      (!filters.displacement || cleanText(engine.displacement) === filters.displacement) &&
-      (!filters.generation || generation.split(",").map((item) => item.trim()).includes(filters.generation))
-    );
-  });
-
-  return filtered.sort((a, b) => {
-    if (filters.sort === "code") return cleanText(a.engineCode).localeCompare(cleanText(b.engineCode));
-    if (filters.sort === "family") return cleanText(a.family).localeCompare(cleanText(b.family));
-
-    const enquiryDelta = enquiryNumber(b.enquiries) - enquiryNumber(a.enquiries);
-    return enquiryDelta || cleanText(a.engineCode).localeCompare(cleanText(b.engineCode));
-  });
-}
-
-function filterOptions(engines) {
-  const generations = engines.flatMap((engine) => cleanText(engine.model).split(",").map((item) => item.trim()).filter(Boolean));
-
-  return {
-    fuels: uniqueOptions(engines.map((engine) => engine.fuel)),
-    displacements: uniqueOptions(engines.map((engine) => engine.displacement)),
-    generations: uniqueOptions(generations),
-  };
-}
-
-function applyNativeMobileFilters(section) {
-  const query = section.querySelector('[data-filter="query"]')?.value.trim().toLowerCase() || "";
-  const fuel = section.querySelector('[data-filter="fuel"]')?.value || "";
-  const displacement = section.querySelector('[data-filter="displacement"]')?.value || "";
-  const generation = section.querySelector('[data-filter="generation"]')?.value || "";
-  const sort = section.querySelector('[data-filter="sort"]')?.value || "enquiries";
-  const rows = [...section.querySelectorAll("[data-engine-row]")];
-  let visibleCount = 0;
-
-  rows
-    .sort((a, b) => {
-      if (sort === "code") return a.dataset.code.localeCompare(b.dataset.code);
-      if (sort === "family") return a.dataset.family.localeCompare(b.dataset.family);
-      return Number(b.dataset.enquiries) - Number(a.dataset.enquiries) || a.dataset.code.localeCompare(b.dataset.code);
-    })
-    .forEach((row, index) => {
-      row.style.order = String(index);
-      const matches =
-        (!query || row.dataset.search.includes(query)) &&
-        (!fuel || row.dataset.fuel === fuel) &&
-        (!displacement || row.dataset.displacement === displacement) &&
-        (!generation || row.dataset.generations.split("|").includes(generation));
-
-      row.hidden = !matches || visibleCount >= 9;
-      if (matches) visibleCount += 1;
-    });
-
-  const empty = section.querySelector("[data-engine-empty]");
-  if (empty) empty.hidden = visibleCount > 0;
-}
-
-function DesktopTable({ engines }) {
+function DesktopTable({ data, showAll }) {
+  const columns = data.columns || [];
+  const info = new Set(data.infoColumns || []);
+  const all = data.engines || [];
+  const rows = showAll ? all : all.slice(0, data.desktopRows || 10);
   return (
-    <div className="overflow-hidden rounded-md border border-[var(--color-border)] bg-[var(--color-surface)]">
-      <table className="w-full border-collapse text-left text-[13px] text-[var(--color-text)]">
-        <thead>
-          <tr className="bg-[var(--color-page-soft)]">
-            {["Engine Code", "Family", "Fuel", "Disp.", "Power", "Years", "Gen.", "Reliability", "2025 Enquiries", "Avg. Recon Cost"].map((column) => (
-              <th key={column} className="border-b border-r border-[var(--color-border)] px-3 py-3 text-center text-[13px] font-bold last:border-r-0">
-                {column}
-              </th>
-            ))}
-          </tr>
-        </thead>
-        <tbody>
-          {engines.slice(0, 10).map((row) => (
-            <tr key={row.engineCode}>
-              <td className="border-r border-t border-[var(--color-border)] px-3 py-2.5 font-bold" dangerouslySetInnerHTML={{ __html: cleanText(row.engineCode) }} />
-              <td className="border-r border-t border-[var(--color-border)] px-3 py-2.5 text-center" dangerouslySetInnerHTML={{ __html: cleanText(row.family) }} />
-              <td className="border-r border-t border-[var(--color-border)] px-3 py-2.5 text-center" dangerouslySetInnerHTML={{ __html: cleanText(row.fuel) }} />
-              <td className="border-r border-t border-[var(--color-border)] px-3 py-2.5 text-center" dangerouslySetInnerHTML={{ __html: cleanText(row.displacement) }} />
-              <td className="border-r border-t border-[var(--color-border)] px-3 py-2.5 text-center" dangerouslySetInnerHTML={{ __html: cleanText(row.power) }} />
-              <td className="border-r border-t border-[var(--color-border)] px-3 py-2.5 text-center" dangerouslySetInnerHTML={{ __html: cleanText(row.years) }} />
-              <td className="border-r border-t border-[var(--color-border)] px-3 py-2.5 text-center" dangerouslySetInnerHTML={{ __html: cleanText(row.model) }} />
-              <td className="border-r border-t border-[var(--color-border)] px-3 py-2.5 text-center"><Rating value={row.reliability} /></td>
-              <td className="border-r border-t border-[var(--color-border)] px-3 py-2.5 text-center" dangerouslySetInnerHTML={{ __html: cleanText(row.enquiries) }} />
-              <td className="border-t border-[var(--color-border)] px-3 py-2.5 text-center" dangerouslySetInnerHTML={{ __html: cleanCost(row.avgRebuildCost) }} />
-            </tr>
-          ))}
-        </tbody>
-      </table>
-    </div>
-  );
-}
-
-function MobileControls({ filters, options, onChange, onReset }) {
-  const selectClass = "min-h-12 w-full rounded-md border border-[var(--color-border)] bg-[var(--color-surface)] px-4 text-[15px] text-[var(--color-text)]";
-  const updateQuery = (event) => onChange({ query: event.currentTarget.value });
-
-  return (
-    <div className="space-y-3">
-      <label className="flex min-h-14 items-center gap-3 rounded-md border border-[var(--color-border)] bg-[var(--color-surface)] px-4 text-[15px] text-[var(--color-text-soft)]">
-        <span className="text-[var(--color-text)]">{statIcon("search")}</span>
-        <input
-          type="search"
-          data-filter="query"
-          value={filters.query}
-          onInput={updateQuery}
-          onChange={updateQuery}
-          placeholder="Search engine code, family or notes..."
-          className="min-w-0 flex-1 bg-transparent outline-none placeholder:text-[var(--color-text-soft)]"
-        />
-      </label>
-      <div className="grid grid-cols-2 gap-3">
-        <select data-filter="fuel" className={selectClass} value={filters.fuel} onChange={(event) => onChange({ fuel: event.target.value })}>
-          <option value="">Fuel Type</option>
-          {options.fuels.map((fuel) => <option key={fuel} value={fuel}>{fuel}</option>)}
-        </select>
-        <select data-filter="displacement" className={selectClass} value={filters.displacement} onChange={(event) => onChange({ displacement: event.target.value })}>
-          <option value="">Displacement</option>
-          {options.displacements.map((displacement) => <option key={displacement} value={displacement}>{displacement}</option>)}
-        </select>
-        <select data-filter="generation" className={selectClass} value={filters.generation} onChange={(event) => onChange({ generation: event.target.value })}>
-          <option value="">Generations</option>
-          {options.generations.map((generation) => <option key={generation} value={generation}>{generation}</option>)}
-        </select>
-        <select data-filter="sort" className={selectClass} value={filters.sort} onChange={(event) => onChange({ sort: event.target.value })}>
-          <option value="enquiries">Sort by Enquiries</option>
-          <option value="code">Sort by Engine Code</option>
-          <option value="family">Sort by Family</option>
-        </select>
+    <div className={s.table} role="table">
+      <div className={`${s.tr} ${s.thead}`} role="row">
+        {columns.map((column) => (
+          <span key={column} className={s.th} role="columnheader">
+            {column}
+            {column === data.sortColumn ? <Icon name="sort" className={s.sortIcon} /> : null}
+            {info.has(column) ? <Icon name="info" className={s.infoIcon} /> : null}
+          </span>
+        ))}
       </div>
-      <button type="button" data-filter-reset onClick={onReset} className="flex min-h-12 w-full items-center justify-center gap-3 rounded-md border border-[var(--color-border)] bg-[var(--color-surface)] text-[15px] text-[var(--color-text)]">
-        <span className="text-[var(--color-primary)]">{statIcon("reset")}</span>
-        Reset filters
-      </button>
-    </div>
-  );
-}
-
-function MobileTable({ engines }) {
-  return (
-    <div className="overflow-hidden rounded-md border border-[var(--color-border)] bg-[var(--color-surface)] text-[15px]">
-      <div className="grid grid-cols-[1.2fr_0.9fr_1fr_44px] bg-[var(--color-primary)] px-3 py-3 text-[15px] font-bold uppercase text-white">
-        <span>Engine Code</span>
-        <span>Fuel</span>
-        <span>2025 Enquiries</span>
-        <span>View</span>
-      </div>
-      <div className="flex flex-col">
-      {engines.map((row, index) => {
-        const enquiries = enquiryNumber(row.enquiries);
-        const generations = cleanText(row.model).split(",").map((item) => item.trim()).filter(Boolean);
-        const search = [
-          row.engineCode,
-          row.family,
-          row.fuel,
-          row.displacement,
-          row.power,
-          row.years,
-          row.model,
-          row.enquiries,
-          row.avgRebuildCost,
-        ].map(cleanText).join(" ").toLowerCase();
-
+      {rows.map((row, i) => {
+        const { cost, tag } = splitCost(row.avgRebuildCost);
         return (
-          <div
-            key={row.engineCode}
-            data-engine-row
-            data-search={search}
-            data-fuel={cleanText(row.fuel)}
-            data-displacement={cleanText(row.displacement)}
-            data-generations={generations.join("|")}
-            data-enquiries={enquiries}
-            data-code={cleanText(row.engineCode)}
-            data-family={cleanText(row.family)}
-            hidden={index >= 9}
-            className="grid grid-cols-[1.2fr_0.9fr_1fr_44px] items-center border-t border-[var(--color-border)] px-3 py-3"
-          >
-            <span className="font-bold text-[var(--color-primary)]" dangerouslySetInnerHTML={{ __html: cleanText(row.engineCode) }} />
-            <span className="flex items-center gap-2">
-              <span className={fuelColor(row.fuel)}>{statIcon("droplet")}</span>
-              <span dangerouslySetInnerHTML={{ __html: cleanText(row.fuel) }} />
+          <div key={`${row.engineCode}-${i}`} className={s.tr} role="row">
+            <span className={`${s.td} ${s.code}`} role="cell" dangerouslySetInnerHTML={{ __html: row.engineCode }} />
+            <span className={s.td} role="cell" dangerouslySetInnerHTML={{ __html: row.family }} />
+            <span className={s.td} role="cell">{row.fuel}</span>
+            <span className={s.td} role="cell">{row.displacement}</span>
+            <span className={s.td} role="cell">{row.power}</span>
+            <span className={s.td} role="cell">{row.years}</span>
+            <span className={s.td} role="cell">{row.model}</span>
+            <span className={s.td} role="cell">
+              <Stars value={row.reliability} />
             </span>
-            <span className="font-bold text-[var(--color-primary)]">{enquiries ? enquiries.toLocaleString("en-GB") : "-"}</span>
-            <Link href="#" className="text-[var(--color-primary)]">{statIcon("arrow")}</Link>
+            <span className={s.td} role="cell">
+              <Enquiries value={row.enquiries} />
+            </span>
+            <span className={`${s.td} ${s.costCell}`} role="cell">
+              <span>{cost}</span>
+              {tag ? <span className={s.costTag}>{tag}</span> : null}
+            </span>
           </div>
         );
       })}
+    </div>
+  );
+}
+
+// Phone list: the phone reference's own engines, joined to the desktop data where the code matches,
+// so the displacement and generation filters have something to work on.
+function PhoneDatabase({ mobile, engines }) {
+  const rows = useMemo(
+    () =>
+      (mobile.engines || []).map((row, index) => {
+        const full = engines.find((engine) => engine.engineCode === row.code) || {};
+        return { ...row, index, displacement: full.displacement || "", generations: String(full.model || "").split(/\s*,\s*/).filter(Boolean), family: full.family || "" };
+      }),
+    [mobile, engines]
+  );
+  const options = useMemo(
+    () => ({
+      fuel: [...new Set(rows.map((row) => row.fuel))],
+      displacement: [...new Set(rows.map((row) => row.displacement).filter(Boolean))],
+      generation: [...new Set(rows.flatMap((row) => row.generations))],
+    }),
+    [rows]
+  );
+  const empty = { query: "", fuel: "", displacement: "", generation: "", sort: "listed" };
+  const [filters, setFilters] = useState(empty);
+  const set = (key) => (event) => setFilters((current) => ({ ...current, [key]: event.target.value }));
+
+  const shown = rows
+    .filter((row) => {
+      const haystack = [row.code, row.fuel, row.family, row.displacement, ...row.generations].join(" ").replace(/<[^>]+>/g, " ").toLowerCase();
+      return (
+        (!filters.query || haystack.includes(filters.query.trim().toLowerCase())) &&
+        (!filters.fuel || row.fuel === filters.fuel) &&
+        (!filters.displacement || row.displacement === filters.displacement) &&
+        (!filters.generation || row.generations.includes(filters.generation))
+      );
+    })
+    .sort((a, b) => {
+      if (filters.sort === "enquiries") return enquiryNumber(b.enquiries) - enquiryNumber(a.enquiries) || a.index - b.index;
+      if (filters.sort === "code") return a.code.localeCompare(b.code);
+      return a.index - b.index;
+    });
+
+  const f = mobile.filters || {};
+  const [cCode, cFuel, cEnq, cView] = mobile.columns || [];
+
+  return (
+    <div className={s.phone}>
+      {mobile.dataCard ? (
+        <div className={s.dataCard}>
+          <span className={s.dataTile}>
+            <Icon name="database" className={s.dataIcon} />
+          </span>
+          <div>
+            <p className={s.dataTitle}>{mobile.dataCard.title}</p>
+            <p className={s.dataText} dangerouslySetInnerHTML={{ __html: spaced(mobile.dataCard.text) }} />
+          </div>
+        </div>
+      ) : null}
+
+      <label className={s.search}>
+        <Icon name="search" className={s.searchIcon} />
+        <input type="search" value={filters.query} onChange={set("query")} placeholder={mobile.searchPlaceholder} aria-label={mobile.searchPlaceholder} />
+      </label>
+
+      <div className={s.selects}>
+        {[
+          ["fuel", f.fuel],
+          ["displacement", f.displacement],
+          ["generation", f.generation],
+        ].map(([key, label]) => (
+          <label key={key} className={s.select}>
+            <span className={s.selectValue}>{filters[key] || label}</span>
+            <Icon name="chevron" className={s.selectChevron} />
+            <select value={filters[key]} onChange={set(key)} aria-label={label}>
+              <option value="">{label}</option>
+              {options[key].map((option) => (
+                <option key={option} value={option}>
+                  {option}
+                </option>
+              ))}
+            </select>
+          </label>
+        ))}
+        <label className={`${s.select} ${s.sortSelect}`}>
+          <span className={s.selectText}>
+            <span className={s.sortLabel}>{f.sortLabel}</span>
+            <span className={s.selectValue}>{filters.sort === "code" ? "Engine code" : f.sortValue}</span>
+          </span>
+          <Icon name="chevron" className={s.selectChevron} />
+          <select value={filters.sort} onChange={set("sort")} aria-label={f.sortLabel}>
+            <option value="listed">{f.sortValue}</option>
+            <option value="enquiries">{f.sortValue} - highest first</option>
+            <option value="code">Engine code</option>
+          </select>
+        </label>
       </div>
-      <div data-engine-empty hidden className="border-t border-[var(--color-border)] px-3 py-5 text-center text-[15px] text-[var(--color-text-muted)]">
-        No engine codes match these filters.
+
+      <button type="button" className={s.reset} onClick={() => setFilters(empty)}>
+        <Icon name="reset" className={s.resetIcon} />
+        {mobile.reset}
+      </button>
+
+      <div className={s.pTable} role="table">
+        <div className={`${s.pRow} ${s.pHead}`} role="row">
+          <span role="columnheader">
+            {cCode}
+            <Icon name="sortPair" className={s.pSort} />
+          </span>
+          <span role="columnheader">
+            {cFuel}
+            <Icon name="sortPair" className={s.pSort} />
+          </span>
+          <span role="columnheader">
+            {cEnq}
+            <Icon name="sortPair" className={s.pSort} />
+          </span>
+          <span role="columnheader">{cView}</span>
+        </div>
+        {shown.map((row) => (
+          <div key={`${row.code}-${row.index}`} className={s.pRow} role="row">
+            <span className={s.pCode} role="cell">
+              {row.code}
+            </span>
+            <span className={s.pFuel} role="cell">
+              <Icon name="drop" className={`${s.drop} ${/diesel/i.test(row.fuel) ? s.dropDiesel : s.dropPetrol}`} />
+              {row.fuel}
+            </span>
+            <span className={s.pEnq} role="cell">
+              {row.enquiries}
+            </span>
+            <span className={s.pView} role="cell">
+              <Link href={engineHrefFor(row.code, row.family)} aria-label={`View ${row.code}`}>
+                <Icon name="arrow" className={s.pArrow} />
+              </Link>
+            </span>
+          </div>
+        ))}
+        {shown.length === 0 ? <p className={s.pEmpty}>No engine codes match these filters.</p> : null}
       </div>
-      {engines.length === 0 ? (
-        <div className="border-t border-[var(--color-border)] px-3 py-5 text-center text-[15px] text-[var(--color-text-muted)]">
-          No engine codes match these filters.
+
+      {mobile.sources?.length ? (
+        <div className={s.sources}>
+          <p className={s.sourcesTitle}>{mobile.sourcesTitle}</p>
+          {mobile.sources.map((source) => (
+            <div key={source.label} className={s.source}>
+              <span className={s.sourceTile}>
+                <Icon name={source.icon === "chart" ? "bars" : source.icon === "pound" ? "poundBig" : "doc"} className={s.sourceIcon} />
+              </span>
+              <p className={s.sourceText}>
+                <strong>{source.label}</strong>
+                <span dangerouslySetInnerHTML={{ __html: spaced(source.text) }} />
+              </p>
+            </div>
+          ))}
         </div>
       ) : null}
     </div>
   );
 }
 
+// Model JSONs migrated to the reference design carry `stats`; the rest keep the previous layout.
 export default function EngineDatabase({ data }) {
-  const { theme } = useTheme();
-  const [filters, setFilters] = useState(defaultFilters);
-  const engines = useMemo(() => data?.engines || [], [data]);
-  const mobileOptions = useMemo(() => filterOptions(engines), [engines]);
-  const mobileEngines = useMemo(() => filterAndSortEngines(engines, filters), [engines, filters]);
-
-  useEffect(() => {
-    const section = document.querySelector("[data-engine-database]");
-    if (!section) return undefined;
-
-    const apply = () => applyNativeMobileFilters(section);
-    const controls = [...section.querySelectorAll("[data-filter]")];
-    const reset = section.querySelector("[data-filter-reset]");
-
-    controls.forEach((control) => {
-      control.addEventListener("input", apply);
-      control.addEventListener("change", apply);
-    });
-
-    reset?.addEventListener("click", () => {
-      controls.forEach((control) => {
-        control.value = control.dataset.filter === "sort" ? "enquiries" : "";
-      });
-      apply();
-    });
-
-    section.dataset.filtersReady = "true";
-    apply();
-
-    return () => {
-      controls.forEach((control) => {
-        control.removeEventListener("input", apply);
-        control.removeEventListener("change", apply);
-      });
-    };
-  }, [engines]);
-
   if (!data) return null;
+  return data.stats ? <EngineDatabaseReference data={data} /> : <EngineDatabaseLegacy data={data} />;
+}
 
+function EngineDatabaseReference({ data }) {
+  const { theme } = useTheme();
+  const isDark = theme === "dark";
   const title = splitTitle(data.h2);
-  const shownDesktopCount = Math.min(10, engines.length);
-  const totalEngineCount = engines.length;
-
-  function updateFilters(next) {
-    setFilters((current) => ({ ...current, ...next }));
-  }
+  const mobile = data.mobile || {};
+  const mobileTitle = splitTitle(mobile.h2 || data.h2);
+  const [showAll, setShowAll] = useState(false);
+  const allCount = (data.engines || []).length;
+  const hasMore = allCount > (data.desktopRows || 10);
 
   return (
-    <section id="engine-database" data-engine-database data-theme-mode={theme} className="bg-[var(--color-page)] py-6 text-[var(--color-text)]">
-      <div className="hidden md:block">
-        <div>
-          <div>
-            <h2 className="max-w-[650px] text-[27px] font-bold tracking-normal md:text-[39px]">
-              <span dangerouslySetInnerHTML={{ __html: title.main }} />
-              {title.accent ? (
-                <>
-                  <br />
-                  <span className="text-[var(--color-primary)]" dangerouslySetInnerHTML={{ __html: title.accent }} />
-                </>
-              ) : null}
-            </h2>
-            <div className="mt-2">
-              <MStripe />
+    <section id="engine-database" className={`${inter.className} ${s.section} ${isDark ? s.dark : s.light}`}>
+      <div className={s.frame}>
+        <div className={s.panel}>
+          <div className={s.top}>
+            <div className={`${s.head} ${s.deskOnly}`}>
+              <h2 className={s.title}>
+                <span>{title.main}</span>
+                <br />
+                <span className={s.accent}>{title.accent}</span>
+              </h2>
+              <p className={s.copy} dangerouslySetInnerHTML={{ __html: spaced(data.subHeadline) }} />
             </div>
-            {data.subHeadline ? <p className="mt-2 max-w-[610px] text-[14px] leading-[1.45] text-[var(--color-text-muted)]" dangerouslySetInnerHTML={{ __html: cleanText(data.subHeadline) }} /> : null}
+            <div className={`${s.head} ${s.phoneOnly}`}>
+              <p className={s.title}>
+                <span>{mobileTitle.main}</span>
+                <br />
+                <span className={s.accent}>{mobileTitle.accent}</span>
+              </p>
+              <p className={s.copy} dangerouslySetInnerHTML={{ __html: spaced(mobile.subHeadline || data.subHeadline) }} />
+            </div>
+
+            <ul className={`${s.stats} ${s.deskOnly}`}>
+              {data.stats.map((stat) => (
+                <li key={stat.label} className={s.stat}>
+                  <Icon name={stat.icon} className={s.statIcon} />
+                  <p className={s.statText}>
+                    <strong className={s.statValue}>{stat.value}</strong>
+                    <span className={s.statLabel} dangerouslySetInnerHTML={{ __html: spaced(stat.label) }} />
+                  </p>
+                </li>
+              ))}
+            </ul>
           </div>
 
-        </div>
+          <div className={s.deskOnly}>
+            <DesktopTable data={data} showAll={showAll} />
 
-        <div className="mt-5">
-          <DesktopTable engines={engines} />
-        </div>
+            <div className={s.footer}>
+              {hasMore ? (
+                <button type="button" className={s.viewAll} aria-expanded={showAll} onClick={() => setShowAll((v) => !v)}>
+                  <Icon name="list" className={s.viewIcon} />
+                  <span>{showAll ? "Show fewer engine codes" : data.viewAllLabel}</span>
+                  <Icon name="chevron" className={`${s.viewChevron} ${showAll ? s.viewChevronUp : ""}`} />
+                </button>
+              ) : null}
+              <p className={s.showing}>{showAll ? `Showing all ${allCount} engine codes` : data.showingText}</p>
+              <ul className={s.legend}>
+                {(data.legend || []).map((item) => (
+                  <li key={item.label}>
+                    <Stars value={item.stars} className={s.legendStars} />
+                    {item.label}
+                  </li>
+                ))}
+              </ul>
+            </div>
 
-        <div className="mt-3 flex items-center justify-between gap-4">
-          <button type="button" className="flex min-h-11 min-w-[280px] items-center justify-between rounded-md border border-[var(--color-border)] px-5 text-[14px] font-medium text-[var(--color-primary)] transition-all duration-200 hover:text-black hover:shadow-[0_12px_24px_rgba(0,0,0,0.14)]">
-            <span className="flex items-center gap-3">{statIcon("file")} View all {totalEngineCount} engine codes</span>
-            <span>v</span>
-          </button>
-          <p className="mr-auto border-l border-[var(--color-border)] pl-7 text-[12px] text-[var(--color-text-muted)]">Showing {shownDesktopCount} of {totalEngineCount} engine codes</p>
-          <div className="flex items-center gap-5 rounded-md border border-[var(--color-border)] px-5 py-3 text-[13px]">
-            <span><Rating value="★☆☆☆☆" /> Poor</span>
-            <span><Rating value="★★★☆☆" /> Average</span>
-            <span><Rating value="★★★★☆" /> Good</span>
-            <span><Rating value="★★★★★" /> Excellent</span>
+            {data.note ? (
+              <div className={s.note}>
+                <span className={s.noteIcon} aria-hidden="true">
+                  i
+                </span>
+                <p className={s.noteText} dangerouslySetInnerHTML={{ __html: spaced(data.note) }} />
+                {data.noteLink ? (
+                  <Link href={data.noteLink.href} className={s.noteLink}>
+                    {data.noteLink.label}
+                    <Icon name="arrow" className={s.noteArrow} />
+                  </Link>
+                ) : null}
+              </div>
+            ) : null}
           </div>
-        </div>
 
-        <div className="mt-3 flex items-center justify-between rounded-md border border-[var(--color-border)] bg-[var(--color-surface)] px-4 py-3 text-[12px] text-[var(--color-text-muted)]">
-          <p className="flex items-center gap-3">
-            <span className="flex h-8 w-8 items-center justify-center rounded-full bg-[var(--color-primary-soft)] font-bold text-[var(--color-primary)]">i</span>
-            All enquiries are from 2025 (to date) and verified via our internal system. Recon costs are supply only and exclude fitting.
-          </p>
-          <Link href="#" className="flex items-center gap-2 font-bold text-[var(--color-primary)] transition-all duration-200 hover:text-black hover:shadow-[0_12px_24px_rgba(0,0,0,0.14)]">How we collect engine data {statIcon("arrow")}</Link>
-        </div>
-      </div>
-
-      <div className="md:hidden">
-        <h2 className="text-[2rem] font-bold leading-[1.08] tracking-normal">
-          <span dangerouslySetInnerHTML={{ __html: shortTitle(data.h2).replace("Engine Codes - The Database", "Engine Codes -") }} />
-          <br />
-          <span className="text-[var(--color-primary)]">The Database</span>
-        </h2>
-        <div className="mt-3">
-          <MStripe />
-        </div>
-        <p className={`mt-4 ${sectionDescription} text-[var(--color-text-muted)]`}>
-          The complete database of BMW 3 Series engine codes with real UK enquiry data, fitted models, and replacement cost insights.
-        </p>
-
-        <div className="mt-6 rounded-md border border-[var(--color-border)] bg-[var(--color-surface)] p-4">
-          <div className="flex items-center gap-2.5">
-            <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-md bg-[var(--color-primary-soft)] text-[var(--color-primary)]">{statIcon("database")}</span>
-            <h3 className="flex-1 text-left text-[28px] font-bold leading-[1.1] md:text-[50px]">Proprietary UK Data</h3>
-          </div>
-          <p className="mt-3 text-center text-[14px] leading-[1.5]">
-            Every figure below is powered by 24,650+ real UK owner enquiries in 2025. This is data you won&apos;t find anywhere else.
-          </p>
-        </div>
-
-        <div className="mt-5">
-          <MobileControls
-            filters={filters}
-            options={mobileOptions}
-            onChange={updateFilters}
-            onReset={() => setFilters(defaultFilters)}
-          />
-        </div>
-
-        <div className="mt-5">
-          <MobileTable engines={mobileEngines} />
-        </div>
-
-        <div className="mt-6 rounded-md border border-[var(--color-border)] bg-[var(--color-surface)] p-5 text-[15px] leading-[1.55]">
-          <h3 className="font-bold uppercase text-[var(--color-primary)]">Data sources:</h3>
-          <div className="mt-4 space-y-4">
-            <p className="flex gap-4"><span className="text-[var(--color-primary)]">{statIcon("chart")}</span><span><strong>Enquiry volumes:</strong><br />EM_Proprietary_Data_2025.txt [EM-VERIFIED]</span></p>
-            <p className="flex gap-4"><span className="text-[var(--color-primary)]">{statIcon("pound")}</span><span><strong>Costs:</strong><br />Table A - Engine Replacement Economics [EM-QUOTE]</span></p>
-            <p className="flex gap-4"><span className="text-[var(--color-primary)]">{statIcon("file")}</span><span><strong>Engine codes:</strong><br />Cross-referenced from your existing data</span></p>
+          <div className={s.phoneOnly}>
+            <PhoneDatabase mobile={mobile} engines={data.engines || []} />
           </div>
         </div>
       </div>

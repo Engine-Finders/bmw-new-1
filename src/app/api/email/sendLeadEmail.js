@@ -2,7 +2,7 @@ import { Resend } from "resend";
 
 /**
  * Lead notification email (Resend).
- * Recipient is hardcoded — do not move to env.
+ * Recipient is hardcoded - do not move to env.
  */
 const LEAD_TO_EMAIL = "ef2crm@gmail.com";
 const LEAD_FROM_EMAIL = "BMW Engines <leads@bmwengines.uk>";
@@ -16,11 +16,30 @@ function escapeHtml(value) {
 }
 
 function row(label, value) {
-  const display = value === undefined || value === null || String(value).trim() === "" ? "—" : String(value);
+  const display = value === undefined || value === null || String(value).trim() === "" ? "-" : String(value);
   return `<tr>
     <td style="padding:8px 12px;border-bottom:1px solid #e5e7eb;color:#64748b;font-size:13px;width:38%;">${escapeHtml(label)}</td>
     <td style="padding:8px 12px;border-bottom:1px solid #e5e7eb;color:#0f172a;font-size:14px;font-weight:600;">${escapeHtml(display)}</td>
   </tr>`;
+}
+
+function pageUrlRow(url) {
+  const raw = String(url || "").trim();
+  if (!raw) return row("Page URL", "-");
+  const safe = escapeHtml(raw);
+  const href = /^https?:\/\//i.test(raw) ? safe : "#";
+  return `<tr>
+    <td style="padding:8px 12px;border-bottom:1px solid #e5e7eb;color:#64748b;font-size:13px;width:38%;">Page URL</td>
+    <td style="padding:8px 12px;border-bottom:1px solid #e5e7eb;color:#0f172a;font-size:14px;font-weight:600;word-break:break-all;">
+      <a href="${href}" style="color:#075fd8;text-decoration:underline;">${safe}</a>
+    </td>
+  </tr>`;
+}
+
+function formLabel(payload = {}) {
+  if (payload.form) return payload.form;
+  if (payload.calculator) return "Quote + Diagnostic Calculator";
+  return "Quote form";
 }
 
 function formatSubmittedAt(date = new Date()) {
@@ -75,7 +94,8 @@ function buildLeadEmailHtml(payload = {}, submittedAt = formatSubmittedAt()) {
             ${row("Submitted (UTC)", submittedAt.utc)}
             ${row("Submitted (ISO)", submittedAt.iso)}
             ${row("Source", payload.source || "bmwengines.uk")}
-            ${row("Form", payload.calculator ? "Quote + Diagnostic Calculator" : "Quote form")}
+            ${row("Form", formLabel(payload))}
+            ${pageUrlRow(payload.pageUrl)}
           </table>
 
           <h2 style="margin:0 0 10px;font-size:15px;color:#075fd8;text-transform:uppercase;letter-spacing:0.04em;">Contact</h2>

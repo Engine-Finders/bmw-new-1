@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import MStripe from "@/components/reusableComponents/MStripe";
 import { useTheme } from "@/components/shared/themeProvider";
+import BrandIcon, { hasBrandIcon } from "@/components/home/brandIcon";
 
 const iconPaths = {
   check: <path d="m5 12 4 4L19 6" />,
@@ -13,6 +14,8 @@ const iconPaths = {
 };
 
 function Icon({ name, className = "h-5 w-5" }) {
+  // The client's icon artwork where it has one; arrows and chevrons stay as line icons.
+  if (hasBrandIcon(name)) return <BrandIcon name={name} className={className} />;
   return (
     <svg aria-hidden="true" viewBox="0 0 24 24" className={className} fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
       {iconPaths[name] || iconPaths.check}
@@ -61,7 +64,7 @@ export default function HomeSec14({ data }) {
       <div className={`relative mx-auto w-full max-w-8xl overflow-hidden rounded-lg border ${isDark ? "border-[#223343] bg-[#07121d]" : "border-[#dfe5ed] bg-white"}`}>
         {showDesktopImage ? (
           <div className="absolute inset-y-0 right-0 hidden w-[42%] md:block">
-            <Image src={data.image.src} alt={data.image.alt} fill className="object-cover object-center" sizes="42vw" />
+            <Image src={(isDark && data.imageDark ? data.imageDark : data.image).src} alt={(isDark && data.imageDark ? data.imageDark : data.image).alt} fill className="object-cover object-center" sizes="42vw" />
             <div className={isDark ? "absolute inset-0 bg-[linear-gradient(90deg,#07121d_0%,rgba(7,18,29,0.68)_28%,rgba(7,18,29,0.1)_100%)]" : "absolute inset-0 bg-[linear-gradient(90deg,white_0%,rgba(255,255,255,0.64)_28%,rgba(255,255,255,0.04)_100%)]"} />
           </div>
         ) : null}
@@ -72,7 +75,7 @@ export default function HomeSec14({ data }) {
             <div className="mt-3">
               <MStripe />
             </div>
-            <p className={`mt-2 text-[1rem] leading-snug md:text-[1.08rem] ${isDark ? "text-white/78" : "text-[#172334]"}`} dangerouslySetInnerHTML={{ __html: data.subHeadline }} />
+            <h3 className={`mt-2 text-[1rem] font-normal leading-snug md:text-[1.08rem] ${isDark ? "text-white/78" : "text-[#172334]"}`} dangerouslySetInnerHTML={{ __html: data.subHeadline }} />
 
             <ul className="mt-5 grid gap-2 text-[0.88rem] md:grid-cols-4 md:gap-0">
               {data.stats.map((stat) => (
@@ -89,15 +92,15 @@ export default function HomeSec14({ data }) {
               <Link href={data.primaryCta.href} className="btn-cta flex min-h-16 items-center gap-4 rounded-lg bg-[var(--color-primary)] px-5 py-3 text-white">
                 <Icon name="chat" className="h-8 w-8 shrink-0" />
                 <span className="min-w-0">
-                  <span className="block text-[0.88rem] font-bold leading-tight">{data.primaryCta.label}</span>
-                  <span className="mt-1 block text-[0.78rem] leading-tight text-white/84">{data.primaryCta.subLabel}</span>
+                  <h4 className="block text-[0.88rem] font-bold leading-tight">{data.primaryCta.label}</h4>
+                  <strong className="mt-1 block text-[0.78rem] font-semibold leading-tight text-white/90">{data.primaryCta.subLabel}</strong>
                 </span>
               </Link>
 
               <Link href={data.secondaryCta.href} className={`flex min-h-16 items-center gap-4 rounded-lg border px-5 py-3 ${isDark ? "border-[#375067] bg-[#0a1520] text-white" : "border-[#d7dde6] bg-white text-[#071827]"}`}>
                 <Icon name="phone" className="h-7 w-7 shrink-0" />
                 <span className="min-w-0">
-                  <span className="block text-[0.88rem] font-bold leading-tight">{data.secondaryCta.label}</span>
+                  <h5 className="block text-[0.88rem] font-bold leading-tight">{data.secondaryCta.label}</h5>
                   <span className={`mt-1 block text-[0.78rem] leading-tight ${isDark ? "text-white/70" : "text-[#27384a]"}`}>{data.secondaryCta.subLabel}</span>
                 </span>
               </Link>

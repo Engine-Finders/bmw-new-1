@@ -78,19 +78,19 @@
               "@type": "ListItem",
               "position": 1,
               "name": "M43B18",
-              "url": "https://bmwengines.uk/engine/m43/"
+              "url": "https://bmwengines.uk/engine/m40-m42-m43-m44"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "M43B19",
-              "url": "https://bmwengines.uk/engine/m43/"
+              "url": "https://bmwengines.uk/engine/m40-m42-m43-m44"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "M44B19",
-              "url": "https://bmwengines.uk/engine/m44/"
+              "url": "https://bmwengines.uk/engine/m40-m42-m43-m44"
             }
           ]
         },
@@ -325,7 +325,7 @@
         "recommendation": "The cooling system is the most significant concern for both M43 and M44 engines. The water pump and thermostat can fail, and even brief periods of overheating can ruin the head gasket or even crack the head. Many specialists recommend replacing the entire cooling system as preventative maintenance. If you see any coolant warnings, have the system inspected immediately.",
         "failureLink": {
           "label": "",
-          "href": "/failures/coolant-leak/"
+          "href": "/failures/m54-cooling-system"
         }
       },
       {
@@ -343,7 +343,7 @@
         "recommendation": "The M43 is notorious for oil leaks from the valve cover gasket. Oil leaks are also common on the M44. Ignoring these leaks can lead to low oil levels and serious engine damage. If you notice oil spots where you park, it's time to investigate.",
         "failureLink": {
           "label": "",
-          "href": "/failures/oil-leak/"
+          "href": "/failures/n55-valve-cover-oil-leak"
         }
       },
       {
@@ -361,7 +361,7 @@
         "recommendation": "The timing chain tensioner can wear out on both M43 and M44 engines, leading to a loose timing chain. If not corrected, this can lead to catastrophic engine failure. Regular inspections can help catch this early. At the first sign of rattling, have the tensioner inspected immediately. The M43 has a \"maintenance-free timing chain\", but the tensioner still requires attention.",
         "failureLink": {
           "label": "",
-          "href": "/failures/timing-chain-failure/"
+          "href": "/failures/timing-chain-diagnosis-guide"
         }
       }
     ]

@@ -90,7 +90,7 @@
               "@type": "ListItem",
               "position": 3,
               "name": "B57D30O0",
-              "url": "https://bmwengines.uk/engine/b57/"
+              "url": "https://bmwengines.uk/engine/b57-b58"
             }
           ]
         },
@@ -325,7 +325,7 @@
         "recommendation": "The N57 shares timing chain components with the <a href='https://bmwengines.uk/engine/n47'>N47</a> - chain stretch and guide wear are a concern. By 100,000 miles, many specialists recommend preventative chain replacement. If the chain snaps or tensioner fails, it's an interference engine - piston-valve contact means catastrophic damage. Bearing failures have also been reported in N57 engines, with some owners experiencing bottom-end failure. At the first sign of rattling or knocking, book an inspection immediately. Regular oil changes every 8,000–10,000 miles are critical for longevity.",
         "failureLink": {
           "label": "",
-          "href": "/failures/timing-chain-failure/"
+          "href": "/failures/timing-chain-diagnosis-guide"
         }
       },
       {
@@ -343,7 +343,7 @@
         "recommendation": "The M57's swirl flaps can break off and get sucked into the engine, causing severe damage to the cylinders, pistons and valves. Preventive blanking is cheap, effective, and removes the risk entirely with no noticeable performance loss. Many specialists recommend blanking as a matter of course on any high-mileage M57. The flaps can also get clogged with carbon deposits, restricting airflow.",
         "failureLink": {
           "label": "",
-          "href": "/failures/swirl-flap-failure/"
+          "href": "/failures/m57-swirl-flap"
         }
       },
       {
@@ -361,7 +361,7 @@
         "recommendation": "The B57 is a significant improvement over the N57, with timing chain issues being \"exceedingly rare\". However, EGR cooler leaks - where coolant leaks into the intake, causing white smoke or overheating - are a known problem. Turbocharger failures and DPF blockages are also common. Check whether your X3 has had any EGR-related recall work completed. Regular oil changes and quality fuel are essential for B57 longevity.",
         "failureLink": {
           "label": "",
-          "href": "/failures/egr-valve-cooler-failure/"
+          "href": "/failures/egr-valve-cooler"
         }
       }
     ]

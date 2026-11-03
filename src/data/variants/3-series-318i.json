@@ -120,49 +120,49 @@
               "@type": "ListItem",
               "position": 2,
               "name": "M40B18",
-              "url": "https://bmwengines.uk/engine/m40/"
+              "url": "https://bmwengines.uk/engine/m40-m42-m43-m44"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "M42B18",
-              "url": "https://bmwengines.uk/engine/m42/"
+              "url": "https://bmwengines.uk/engine/m40-m42-m43-m44"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "M43B18",
-              "url": "https://bmwengines.uk/engine/m43/"
+              "url": "https://bmwengines.uk/engine/m40-m42-m43-m44"
             },
             {
               "@type": "ListItem",
               "position": 5,
               "name": "M44B19",
-              "url": "https://bmwengines.uk/engine/m44/"
+              "url": "https://bmwengines.uk/engine/m40-m42-m43-m44"
             },
             {
               "@type": "ListItem",
               "position": 6,
               "name": "N42B18/N46B18",
-              "url": "https://bmwengines.uk/engine/n42/"
+              "url": "https://bmwengines.uk/engine/n40-n42-n43-n45-n46"
             },
             {
               "@type": "ListItem",
               "position": 7,
               "name": "N43B18/N45B18",
-              "url": "https://bmwengines.uk/engine/n43/"
+              "url": "https://bmwengines.uk/engine/n40-n42-n43-n45-n46"
             },
             {
               "@type": "ListItem",
               "position": 8,
               "name": "N13B18",
-              "url": "https://bmwengines.uk/engine/n13/"
+              "url": "https://bmwengines.uk/engine/n13-n20"
             },
             {
               "@type": "ListItem",
               "position": 9,
               "name": "B38A15/B48A20",
-              "url": "https://bmwengines.uk/engine/b38/"
+              "url": "https://bmwengines.uk/engine/b38-b48"
             }
           ]
         },
@@ -372,7 +372,7 @@
         "recommendation": "The M10, M40 and M43 engines use timing belts (not chains). BMW recommends replacement every 40,000–60,000 miles or 4–5 years. A snapped timing belt on these interference engines means valve and piston damage - effectively an engine replacement. If you're buying an older 318i with any of these engines, demand proof of timing belt replacement. Budget for it immediately if there's no evidence.",
         "failureLink": {
           "label": "Read the full timing belt failure guide",
-          "href": "/failures/timing-belt-failure/"
+          "href": "/failures/timing-chain-diagnosis-guide"
         }
       },
       {
@@ -390,7 +390,7 @@
         "recommendation": "The N42 and N46 Valvetronic engines introduced complexity with timing chain and VANOS issues. The chain guides can fail, and the VANOS solenoids and seals degrade. Cold-start rattle is the defining warning sign. A preventative chain and VANOS rebuild is cheaper than a full engine replacement. If buying an E46 318i, ensure the chain has been checked or budget for the work.",
         "failureLink": {
           "label": "Read the full timing chain failure guide",
-          "href": "/failures/timing-chain-failure/"
+          "href": "/failures/timing-chain-diagnosis-guide"
         }
       },
       {
@@ -408,7 +408,7 @@
         "recommendation": "The N43 and N45 direct-injection engines are the least reliable of the 318i family. They suffer from timing chain issues and injector problems that cause vibration and rough running. Carbon build-up on intake valves is also a known issue. If buying an E90 318i, budget for timing chain work and injector cleaning or replacement. The N43 is widely considered the worst 318i engine in terms of reliability.",
         "failureLink": {
           "label": "Read the full timing chain failure guide",
-          "href": "/failures/timing-chain-failure/"
+          "href": "/failures/timing-chain-diagnosis-guide"
         }
       },
       {
@@ -426,7 +426,7 @@
         "recommendation": "The N13 is a Prince-family engine derived from the PSA/BMW collaboration. It has a poor reputation for timing chain wear and oil consumption. BMW didn't formally recognise the timing chain issue in the UK/EU, so preventative replacement is essential. At the first sign of cold-start rattle, book an inspection immediately. A preventative chain replacement is far cheaper than a full engine replacement. Check oil levels regularly - N13s are known for oil consumption.",
         "failureLink": {
           "label": "Read the full timing chain failure guide",
-          "href": "/failures/timing-chain-failure/"
+          "href": "/failures/timing-chain-diagnosis-guide"
         }
       }
     ]

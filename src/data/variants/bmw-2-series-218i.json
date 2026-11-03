@@ -96,37 +96,37 @@
               "@type": "ListItem",
               "position": 1,
               "name": "B38B15M0",
-              "url": "https://bmwengines.uk/engine/b38b15m0/"
+              "url": "https://bmwengines.uk/engine/b38-b48"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "B38A15A",
-              "url": "https://bmwengines.uk/engine/b38a15a/"
+              "url": "https://bmwengines.uk/engine/b38-b48"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "B38A15P",
-              "url": "https://bmwengines.uk/engine/b38a15p/"
+              "url": "https://bmwengines.uk/engine/b38-b48"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "B38A15F",
-              "url": "https://bmwengines.uk/engine/b38a15f/"
+              "url": "https://bmwengines.uk/engine/b38-b48"
             },
             {
               "@type": "ListItem",
               "position": 5,
               "name": "B38C",
-              "url": "https://bmwengines.uk/engine/b38c/"
+              "url": "https://bmwengines.uk/engine/b38-b48"
             },
             {
               "@type": "ListItem",
               "position": 6,
               "name": "B48C",
-              "url": "https://bmwengines.uk/engine/b48c/"
+              "url": "https://bmwengines.uk/engine/b38-b48"
             }
           ]
         },
@@ -385,7 +385,7 @@
         "recommendation": "The B38 engine uses a timing chain tensioner that can wear prematurely. A failing tensioner causes rattling noises and, if ignored, may lead to severe engine damage. This is the single most important issue to monitor on the 218i. A cold‑start rattle is the classic warning sign - don't ignore it. A preventative tensioner and chain replacement at £800–£1,800 is far cheaper than a £1,800–£3,800 engine replacement.",
         "failureLink": {
           "label": "",
-          "href": "/failures/timing-chain-failure/"
+          "href": "/failures/timing-chain-diagnosis-guide"
         }
       },
       {
@@ -403,7 +403,7 @@
         "recommendation": "BMW's VANOS variable valve timing and Valvetronic variable valve lift systems are sophisticated and effective, but they can develop issues. Solenoids can become clogged with oil sludge, and the Valvetronic motor can wear. After major timing chain or VANOS work, adaptations must be run with ISTA to reset everything properly. Regular oil changes (using the correct BMW LL‑spec oil) are the best preventative measure.",
         "failureLink": {
           "label": "",
-          "href": "/failures/vanos-failure/"
+          "href": "/failures/vanos-solenoid-failure"
         }
       },
       {
@@ -421,7 +421,7 @@
         "recommendation": "The oil filter housing gasket can fail on B38 and B48 engines, causing oil to leak onto the serpentine belt. If the belt becomes contaminated with oil, it can slip or break - and the debris can be ingested into the engine through the front crankshaft seal, causing catastrophic failure. If you notice oil spots under your 218i or a burning oil smell, investigate immediately.",
         "failureLink": {
           "label": "",
-          "href": "/failures/oil-leak/"
+          "href": "/failures/n55-valve-cover-oil-leak"
         }
       }
     ]

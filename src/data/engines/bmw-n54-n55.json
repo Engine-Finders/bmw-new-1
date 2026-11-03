@@ -52,61 +52,61 @@
               "@type": "ListItem",
               "position": 1,
               "name": "BMW 1 Series E82/E88 135i",
-              "url": "https://bmwengines.uk/models/e82-135i/"
+              "url": "https://bmwengines.uk/1-series/e82"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "BMW 3 Series E90/E92 335i",
-              "url": "https://bmwengines.uk/models/e90-335i/"
+              "url": "https://bmwengines.uk/3-series/e90"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "BMW 3 Series F30 335i/340i",
-              "url": "https://bmwengines.uk/models/f30-335i/"
+              "url": "https://bmwengines.uk/3-series/f30"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "BMW 5 Series E60 535i",
-              "url": "https://bmwengines.uk/models/e60-535i/"
+              "url": "https://bmwengines.uk/5-series/e60"
             },
             {
               "@type": "ListItem",
               "position": 5,
               "name": "BMW 5 Series F10 535i",
-              "url": "https://bmwengines.uk/models/f10-535i/"
+              "url": "https://bmwengines.uk/5-series/f10"
             },
             {
               "@type": "ListItem",
               "position": 6,
               "name": "BMW X3 F25 xDrive35i",
-              "url": "https://bmwengines.uk/models/f25-x3-35i/"
+              "url": "https://bmwengines.uk/x3/f25"
             },
             {
               "@type": "ListItem",
               "position": 7,
               "name": "BMW X5 E70 xDrive35i",
-              "url": "https://bmwengines.uk/models/e70-x5-35i/"
+              "url": "https://bmwengines.uk/x5/e70"
             },
             {
               "@type": "ListItem",
               "position": 8,
               "name": "BMW X5 F15 xDrive35i",
-              "url": "https://bmwengines.uk/models/f15-x5-35i/"
+              "url": "https://bmwengines.uk/x5/f15"
             },
             {
               "@type": "ListItem",
               "position": 9,
               "name": "BMW Z4 E89 sDrive35i",
-              "url": "https://bmwengines.uk/models/e89-z4-35i/"
+              "url": "https://bmwengines.uk/z4/e89"
             },
             {
               "@type": "ListItem",
               "position": 10,
               "name": "BMW 7 Series F01 740i",
-              "url": "https://bmwengines.uk/models/f01-740i/"
+              "url": "https://bmwengines.uk/7-series/f01-f02"
             }
           ]
         },
@@ -249,7 +249,7 @@
     ],
     "primaryCta": {
       "label": "Compare N54/N55 Engine Prices →",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "atAGlance": {
@@ -350,7 +350,7 @@
     "sharedCostNote": "",
     "cta": {
       "label": "",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "faq": {
@@ -387,7 +387,7 @@
     "finalCta": "",
     "ctaButton": {
       "label": "",
-      "href": "#"
+      "href": "/quote"
     }
   }
 }

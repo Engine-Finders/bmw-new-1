@@ -66,7 +66,7 @@
               "@type": "ListItem",
               "position": 2,
               "name": "G14/G15/G16 840d (B57D30T2, 2020–present)",
-              "url": "https://bmwengines.uk/8-series/g15-lci/"
+              "url": "https://bmwengines.uk/8-series/g15"
             }
           ]
         },
@@ -78,13 +78,13 @@
               "@type": "ListItem",
               "position": 1,
               "name": "B57D30T0 / B57D30B",
-              "url": "https://bmwengines.uk/engine/b57/"
+              "url": "https://bmwengines.uk/engine/b57-b58"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "B57D30T2",
-              "url": "https://bmwengines.uk/engine/b57/"
+              "url": "https://bmwengines.uk/engine/b57-b58"
             }
           ]
         },
@@ -311,7 +311,7 @@
         "recommendation": "While the B57 is a significant improvement over the <a href='https://bmwengines.uk/engine/n47'>N47</a> and early <a href='https://bmwengines.uk/engine/n57'>N57</a> engines, timing chain tensioner wear is still a documented issue. Symptoms include metallic rattling noises on cold start, rough idling and engine misfires. One 840d owner reported \"problems with the timing chain, leading to an engine warning light, loss of power, increased fuel consumption and a metallic noise on cold start\". At the first sign of cold-start rattle, get the chain inspected immediately. A £1,200–£2,500 preventative repair is dramatically cheaper than a £5,500–£9,500 engine replacement.",
         "failureLink": {
           "label": "Read the full timing chain failure guide → /failures/b57-timing-chain/ [NEW FAILURE PAGE NEEDED]",
-          "href": "#"
+          "href": "/failures/timing-chain-diagnosis-guide"
         }
       },
       {
@@ -329,7 +329,7 @@
         "recommendation": "The EGR cooler is a well-known vulnerability across BMW's diesel engine range, including the B57. A 2020 840d owner reported \"I've been observing the DPF filter via OBD... the DPF shows soot at 82%, quickly reached 100%\". BMW has issued multiple recalls affecting diesel vehicles globally over EGR cooler faults that could cause coolant leaks. Verify recall completion before buying any 840d - this is a free fix at the dealership.",
         "failureLink": {
           "label": "Read the full EGR cooler failure guide",
-          "href": "/failures/egr-valve-cooler-failure/"
+          "href": "/failures/egr-valve-cooler"
         }
       },
       {
@@ -347,7 +347,7 @@
         "recommendation": "A 2020 840d owner with 120,000 km reported DPF soot levels reaching 100%, indicating severe clogging. Like all modern diesels, the 840d's DPF is sensitive to short urban journeys that prevent the engine from reaching optimal temperatures for regeneration. If you primarily drive short distances, factor in regular motorway runs to allow passive DPF regenerations. Some owners report power returning to normal after a forced regeneration. Ignoring DPF warnings can lead to clogged filters, requiring expensive replacement.",
         "failureLink": {
           "label": "Read the full DPF clogging guide",
-          "href": "/failures/dpf-clogging/"
+          "href": "/failures/dpf-blockage"
         }
       }
     ]

@@ -72,13 +72,13 @@
               "@type": "ListItem",
               "position": 1,
               "name": "N55B30A (3.0L Straight-Six Turbo)",
-              "url": "https://bmwengines.uk/engine/n55/"
+              "url": "https://bmwengines.uk/engine/n54-n55"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "B58B30 (3.0L Straight-Six Turbo)",
-              "url": "https://bmwengines.uk/engine/b58/"
+              "url": "https://bmwengines.uk/engine/b57-b58"
             }
           ]
         },
@@ -305,7 +305,7 @@
         "recommendation": "The N55's HPFP is its most notorious weak point. If you experience long cranking or hesitation, don't ignore it - a failing HPFP can lead to lean running and catalytic converter damage. The replacement is well-understood and well-documented. This applies exclusively to the F06/F12/F13 640i with the N55 engine.",
         "failureLink": {
           "label": "Read the full HPFP failure guide",
-          "href": "/failures/hpfp-failure/"
+          "href": "/failures/n54-high-pressure-fuel-pump"
         }
       },
       {
@@ -323,7 +323,7 @@
         "recommendation": "The N55's plastic chargepipe is prone to cracking, especially with age and heat cycles. The factory plastic pipes are a common failure point. The solution is an aftermarket metal chargepipe - fit once and forget. This is exclusively an F06/F12/F13 issue; the G32 B58 uses a revised design.",
         "failureLink": {
           "label": "Read the full chargepipe failure guide",
-          "href": "/failures/chargepipe-failure/"
+          "href": "/failures"
         }
       },
       {
@@ -341,7 +341,7 @@
         "recommendation": "The PCV diaphragm on first-generation B58 engines can tear, causing high crankcase vacuum and smoking. Signs include misfires, a rough idle, and oil in the intake/chargepipe. The good news is this is easily fixed with an affordable repair kit. If you notice rough idle, whistling, or smoke on startup, have the PCV system inspected. This applies to the G32 640i with the B58 engine.",
         "failureLink": {
           "label": "Read the full PCV failure guide",
-          "href": "/failures/pcv-valve-failure/"
+          "href": "/failures"
         }
       }
     ]

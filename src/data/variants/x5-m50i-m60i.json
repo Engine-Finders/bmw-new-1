@@ -60,7 +60,7 @@
               "@type": "ListItem",
               "position": 2,
               "name": "G05 LCI X5 M60i (S68B44A, 2023-present)",
-              "url": "https://bmwengines.uk/x5/g05-lci/"
+              "url": "https://bmwengines.uk/x5/g05"
             }
           ]
         },
@@ -72,13 +72,13 @@
               "@type": "ListItem",
               "position": 1,
               "name": "N63B44T3",
-              "url": "https://bmwengines.uk/engine/n63/"
+              "url": "https://bmwengines.uk/engine/n62-n63"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "S68B44A",
-              "url": "https://bmwengines.uk/engine/s68/"
+              "url": "https://bmwengines.uk/technical/engine-code-decoder"
             }
           ]
         },
@@ -288,7 +288,7 @@
         "recommendation": "The N63's timing chain guides are made of brittle plastic that can break apart, sending metal fragments through the engine. The \"hot-vee\" design generates extreme heat loads that accelerate component wear. BMW faced widespread complaints over N63 timing chain and oil consumption issues. If you hear any rattling from the front of the engine, book an inspection immediately. A preventative chain replacement is far cheaper than a full engine replacement. Frequent oil changes (every 3,500–5,000 miles) are essential.",
         "failureLink": {
           "label": "Read the full timing chain failure guide",
-          "href": "/failures/timing-chain-failure/"
+          "href": "/failures/timing-chain-diagnosis-guide"
         }
       },
       {
@@ -306,7 +306,7 @@
         "recommendation": "The N63 is notorious for excessive oil consumption. This is caused by valve stem seal leaks, turbocharger oil seal failure, and PCV system issues. BMW even launched a Customer Care Package program to address widespread issues. Check oil levels regularly - if you're topping up more than 1L between services, have the valve stem seals and turbochargers inspected. Ignoring oil consumption can lead to catastrophic engine failure. Extended oil change intervals cause coking issues in the hot-vee engine - many specialists recommend oil changes every 3,500–5,000 miles instead.",
         "failureLink": {
           "label": "Read the full valve stem seal failure guide",
-          "href": "/failures/valve-stem-seal-failure/"
+          "href": "/failures/valve-stem-seal-wear"
         }
       },
       {
@@ -324,7 +324,7 @@
         "recommendation": "The S68 is an all-new engine that replaced the N63 in the 2023 X5 LCI. While it benefits from updates including 48V mild-hybrid technology, improved oil cooling and revised manifolds, it retains the hot-vee design and is largely unproven in the long term. Early reports include battery failure and drivetrain malfunction warnings. The 48V system adds complexity and potential failure points. If you're buying an M60i, ensure it's under warranty and consider an extended warranty. Only time will tell if the S68 is more reliable than its predecessor.",
         "failureLink": {
           "label": "Read the full mild-hybrid failure guide",
-          "href": "/failures/mild-hybrid-failure/"
+          "href": "/failures"
         }
       }
     ]

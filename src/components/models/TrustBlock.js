@@ -1,122 +1,111 @@
-import Image from "next/image";
-import MStripe from "@/components/reusableComponents/MStripe";
-import { sectionDescription } from "@/components/models/sectionTypography";
+"use client";
 
-const iconPaths = {
-  data: <path d="M5 19V9m5 10V5m5 14v-7m5 7H3" />,
-  heart: <path d="M12 21s-7-4.5-9.2-9.1C1.2 8.6 3.3 5 6.8 5c2 0 3.5 1.1 4.2 2.5C11.7 6.1 13.2 5 15.2 5c3.5 0 5.6 3.6 4 6.9C19 16.5 12 21 12 21Z" />,
-  wrench: <path d="m14.7 6.3 3-3a5 5 0 0 1-6.4 6.4l-6.8 6.8a2.1 2.1 0 0 0 3 3l6.8-6.8a5 5 0 0 1 6.4-6.4l-3 3" />,
-  shield: <path d="M12 3 5 6v6c0 5 3.3 8.8 7 9 3.7-.2 7-4 7-9V6l-7-3Zm0 5 1.1 2.2 2.4.3-1.7 1.7.4 2.4-2.2-1.1-2.2 1.1.4-2.4-1.7-1.7 2.4-.3L12 8Z" />,
+import Image from "next/image";
+import { Inter } from "next/font/google";
+import { useTheme } from "@/components/shared/themeProvider";
+import s from "./TrustBlock.module.css";
+import TrustBlockLegacy from "./TrustBlockLegacy";
+
+const inter = Inter({ subsets: ["latin"], weight: ["400", "500", "600", "700"], display: "swap" });
+
+// a space before each break keeps words apart where the break is hidden
+const spaced = (html = "") => String(html).replace(/([^-])\s*<br\s*\/?>\s*/g, "$1 <br>");
+
+const ICONS = {
+  chart: (
+    <g fill="currentColor">
+      <rect x="1.8" y="12.4" width="5" height="8.2" rx="0.5" />
+      <rect x="9.5" y="7.6" width="5" height="13" rx="0.5" />
+      <rect x="17.2" y="2" width="5" height="18.6" rx="0.5" />
+      <rect x="0.8" y="21.7" width="22.4" height="1.4" rx="0.4" />
+    </g>
+  ),
+  heart: (
+    <path
+      d="M12 21.2l-1.4-1.3C5.4 15.2 2 12.1 2 8.3 2 5.2 4.4 2.8 7.5 2.8c1.7 0 3.4.8 4.5 2.1 1.1-1.3 2.8-2.1 4.5-2.1 3.1 0 5.5 2.4 5.5 5.5 0 3.8-3.4 6.9-8.6 11.6z"
+      fill="currentColor"
+    />
+  ),
+  wrench: (
+    <path
+      d="M21.4 6.3l-3.3 3.3-2.9-.8-.8-2.9 3.3-3.3c-2.2-.9-4.8-.4-6.6 1.4-1.8 1.8-2.3 4.4-1.5 6.6L2.9 17.3a2.2 2.2 0 0 0 0 3.1l.7.7a2.2 2.2 0 0 0 3.1 0l6.7-6.7c2.2.8 4.8.3 6.6-1.5 1.8-1.8 2.3-4.4 1.4-6.6z"
+      fill="currentColor"
+    />
+  ),
+  shieldStar: (
+    <g>
+      <path d="M12 1.8l8.6 3.2v6.4c0 5.3-3.6 9.3-8.6 11.1-5-1.8-8.6-5.8-8.6-11.1V5z" fill="currentColor" />
+      <path d="M12 7.2l1.35 2.75 3.05.45-2.2 2.15.52 3.03L12 14.15l-2.72 1.43.52-3.03-2.2-2.15 3.05-.45z" fill="#fff" />
+    </g>
+  ),
 };
 
-function cleanText(text = "") {
-  return text
-    .replaceAll("Ãƒâ€šÃ‚Â£", "\u00a3")
-    .replaceAll("Ã‚Â£", "\u00a3")
-    .replaceAll("Ã¢â‚¬â€œ", "-")
-    .replaceAll("Ã¢â‚¬â€", "-")
-    .replace(/\s+-\s+/g, " - ")
-    .replace(/\s+/g, " ")
-    .trim();
-}
+// per-icon sizing (24-unit grid) so each glyph matches the reference
+const FIT = {
+  heart: "translate(12 12) scale(1.08 1.09) translate(-12 -12)",
+  wrench: "translate(12 12) scale(1.09) translate(-12 -12)",
+  shieldStar: "translate(12 11.8) scale(1.03 1.05) translate(-12 -12)",
+};
 
-function splitTitle(title = "") {
-  const clean = cleanText(title);
-  const marker = "BMWEngines.uk";
-  const index = clean.indexOf(marker);
-
-  if (index === -1) return { before: clean, accent: "" };
-
-  return {
-    before: clean.slice(0, index).trim(),
-    accent: clean.slice(index).trim(),
-  };
-}
-
-function iconKey(item = {}) {
-  const value = `${item.icon || ""} ${item.title || ""}`.toLowerCase();
-  if (value.includes("heart") || value.includes("not to repair") || value.includes("💚")) return "heart";
-  if (value.includes("wrench") || value.includes("specialist") || value.includes("🔧")) return "wrench";
-  if (value.includes("part of") || value.includes("trophy") || value.includes("🏆")) return "shield";
-  return "data";
-}
-
-function SignalIcon({ item }) {
-  const key = iconKey(item);
-  const isHeart = key === "heart";
-
+function Icon({ name, className }) {
   return (
-    <span className={`flex h-14 w-14 shrink-0 items-center justify-center rounded-md bg-[var(--color-page-soft)] md:h-16 md:w-16 ${isHeart ? "text-[#36b96d]" : "text-[var(--color-primary)]"}`}>
-      <svg aria-hidden="true" viewBox="0 0 24 24" className="h-8 w-8 md:h-9 md:w-9" fill={isHeart ? "currentColor" : "none"} stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-        {iconPaths[key]}
-      </svg>
-    </span>
+    <svg aria-hidden="true" viewBox="0 0 24 24" className={className}>
+      <g transform={FIT[name]}>{ICONS[name]}</g>
+    </svg>
   );
 }
 
+function Title({ lines, className, as: Tag = "h2" }) {
+  return (
+    <Tag className={className}>
+      {lines.map((line, index) => (
+        <span key={line}>
+          {index ? <br /> : null}
+          <span dangerouslySetInnerHTML={{ __html: line }} />
+        </span>
+      ))}
+    </Tag>
+  );
+}
+
+// Model JSONs migrated to the reference design carry `items`; the rest keep the previous layout.
 export default function TrustBlock({ data }) {
   if (!data) return null;
+  return data.items ? <TrustBlockReference data={data} /> : <TrustBlockLegacy data={data} />;
+}
 
-  const title = splitTitle(data.h2);
-  const signals = data.signals || [];
+function TrustBlockReference({ data }) {
+  const { theme } = useTheme();
+  const isDark = theme === "dark";
+  const art = data.art || {};
 
   return (
-    <section className="overflow-hidden rounded-md border border-[var(--color-border)] bg-[var(--color-surface-raised)] p-3.5 text-[var(--color-text)] shadow-[0_10px_30px_var(--color-shadow)] md:p-5">
-      <div className="grid gap-4 lg:grid-cols-[minmax(0,0.92fr)_minmax(420px,1fr)] lg:items-center">
-        <div>
-          <h2 className="max-w-[650px] text-[29px] font-bold leading-[1.08] tracking-normal text-[var(--color-text)] md:text-[45px]">
-            <span dangerouslySetInnerHTML={{ __html: title.before }} />
-            {title.accent ? (
-              <>
-                <br />
-                <span className="text-[var(--color-primary)]" dangerouslySetInnerHTML={{ __html: title.accent }} />
-              </>
+    <section id="trust" className={`${inter.className} ${s.section} ${isDark ? s.dark : s.light}`}>
+      <div className={s.frame}>
+        <div className={s.panel}>
+          <div className={s.card}>
+            {art.light ? (
+              <span className={s.art}>
+                <Image src={isDark ? art.dark : art.light} alt="" fill className={s.artImg} sizes="(min-width: 1024px) 54vw, 1px" />
+              </span>
             ) : null}
-          </h2>
-          <div className="mt-2.5">
-            <MStripe />
-          </div>
-
-          <div className="mt-4">
-            {signals.map((item) => (
-              <article key={item.title} className="flex gap-3.5 border-b border-[var(--color-border)] py-3.5 first:pt-0 last:border-b-0 last:pb-0 md:gap-4 md:py-3.5">
-                <SignalIcon item={item} />
-                <p className="text-[var(--color-text)] text-[15px] leading-[1.42] md:text-[16px]">
-                  <strong className="font-bold text-[var(--color-primary)]" dangerouslySetInnerHTML={{ __html: cleanText(item.title) }} />
-                  {" - "}
-                  <span dangerouslySetInnerHTML={{ __html: cleanText(item.text) }} />
-                </p>
-              </article>
-            ))}
-          </div>
-        </div>
-
-        <div className="relative hidden min-h-[340px] lg:block">
-          <div className="absolute right-8 top-0 h-[230px] w-[390px] opacity-30">
-            <svg aria-hidden="true" viewBox="0 0 430 260" className="h-full w-full text-[var(--color-primary)]" fill="none">
-              <path d="M12 220h400" stroke="currentColor" strokeOpacity=".25" />
-              {[40, 85, 130, 175, 220, 265, 310, 355, 400].map((x) => (
-                <path key={x} d={`M${x} 30v190`} stroke="currentColor" strokeOpacity=".12" />
+            <Title as="p" lines={data.titleLinesMobile || data.titleLines || [data.h2]} className={`${s.title} ${s.phoneOnly}`} />
+            <Title lines={data.titleLines || [data.h2]} className={`${s.title} ${s.deskOnly}`} />
+            <ul className={s.items}>
+              {data.items.map((item) => (
+                <li key={item.title} className={s.item}>
+                  <span className={`${s.tile} ${item.icon === "heart" ? s.tileGreen : ""}`}>
+                    <Icon name={item.icon} className={s.tileIcon} />
+                  </span>
+                  <p className={s.text}>
+                    <strong>{item.title}</strong>{" "}
+                    <span className={s.deskInline} dangerouslySetInnerHTML={{ __html: spaced(item.text) }} />
+                    <span className={s.phoneInline} dangerouslySetInnerHTML={{ __html: spaced(item.textMobile || item.text) }} />
+                  </p>
+                </li>
               ))}
-              <path d="M22 180 70 178 120 150 165 115 210 82 260 100 315 55" stroke="currentColor" strokeWidth="3" />
-              {[22, 70, 120, 165, 210, 260, 315].map((x, index) => (
-                <circle key={x} cx={x} cy={[180, 178, 150, 115, 82, 100, 55][index]} r="6" fill="var(--color-surface)" stroke="currentColor" strokeWidth="3" />
-              ))}
-              {[190, 220, 250, 285, 330, 370, 405].map((x, index) => (
-                <rect key={x} x={x} y={190 - index * 15} width="16" height={30 + index * 15} fill="currentColor" opacity=".18" />
-              ))}
-            </svg>
+            </ul>
           </div>
-          <div className="absolute left-0 top-10 h-[220px] w-[220px] opacity-25">
-            <svg aria-hidden="true" viewBox="0 0 240 240" className="h-full w-full text-[var(--color-primary)]">
-              {Array.from({ length: 210 }).map((_, index) => {
-                const x = 30 + ((index * 29) % 170);
-                const y = 20 + ((index * 47) % 190);
-                return <circle key={index} cx={x} cy={y} r="1.8" fill="currentColor" />;
-              })}
-            </svg>
-          </div>
-          <Image src="/model/Section 2-bg.webp" alt="" fill className="relative z-10 object-contain object-right-bottom" sizes="(min-width: 1024px) 48vw, 100vw" />
         </div>
       </div>
     </section>

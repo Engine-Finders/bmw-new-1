@@ -15,7 +15,14 @@ function PlusIcon() {
 export default function HomeSec13({ data }) {
   const { theme } = useTheme();
   const isDark = theme === "dark";
-  const columns = [data.items.slice(0, 3), data.items.slice(3, 6), data.items.slice(6, 9)];
+  // All questions from the content, spread over three columns (4 / 3 / 3 for ten).
+  const base = Math.floor(data.items.length / 3);
+  const extra = data.items.length % 3;
+  const sizes = [0, 1, 2].map((index) => base + (index < extra ? 1 : 0));
+  const columns = sizes.map((size, index) => {
+    const start = sizes.slice(0, index).reduce((sum, value) => sum + value, 0);
+    return data.items.slice(start, start + size);
+  });
 
   return (
     <section className={`px-3 pb-2 pt-7 md:px-6 md:pt-8 ${isDark ? "bg-[#02070b]" : "bg-white"}`}>
@@ -27,12 +34,14 @@ export default function HomeSec13({ data }) {
               <MStripe />
             </div>
           </div>
-          <p className={`text-[0.9rem] md:pt-1 ${isDark ? "text-white/74" : "text-[#172334]"}`}>
-            More questions?{" "}
-            <Link href={data.faqHub.href} className="font-medium text-[var(--color-primary)]">
-              {data.faqHub.label} -&gt;
-            </Link>
-          </p>
+          {data.faqHub ? (
+            <p className={`text-[0.9rem] md:pt-1 ${isDark ? "text-white/74" : "text-[#172334]"}`}>
+              More questions?{" "}
+              <Link href={data.faqHub.href} className="font-medium text-[var(--color-primary)]">
+                {data.faqHub.label} -&gt;
+              </Link>
+            </p>
+          ) : null}
         </div>
 
         <div className="flex flex-col gap-3 md:flex-row md:items-start md:gap-0">

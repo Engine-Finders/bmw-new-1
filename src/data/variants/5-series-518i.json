@@ -102,19 +102,19 @@
               "@type": "ListItem",
               "position": 3,
               "name": "M40B18",
-              "url": "https://bmwengines.uk/engine/m40/"
+              "url": "https://bmwengines.uk/engine/m40-m42-m43-m44"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "M43B18",
-              "url": "https://bmwengines.uk/engine/m43/"
+              "url": "https://bmwengines.uk/engine/m40-m42-m43-m44"
             },
             {
               "@type": "ListItem",
               "position": 5,
               "name": "M43B19",
-              "url": "https://bmwengines.uk/engine/m43/"
+              "url": "https://bmwengines.uk/engine/m40-m42-m43-m44"
             }
           ]
         },
@@ -324,7 +324,7 @@
         "recommendation": "The M10 and M40 engines use timing belts - not chains. BMW recommended replacement every 40,000–60,000 miles or 4–5 years. A snapped timing belt on these interference engines means valve and piston damage - effectively an engine replacement. If you're buying an older 518/518i with an M10 or M40 engine, demand proof of timing belt replacement. Budget for it immediately if there's no evidence. The M40 is particularly known for ticking lifters and belt wear.",
         "failureLink": {
           "label": "Read the full timing belt failure guide",
-          "href": "/failures/timing-belt-failure/"
+          "href": "/failures/timing-chain-diagnosis-guide"
         }
       },
       {
@@ -342,7 +342,7 @@
         "recommendation": "Like many older BMW engines, the M10, M40 and M43 can suffer from cooling system neglect. A failed water pump, clogged radiator, or old coolant can lead to overheating and head gasket failure. On the M43, cooling system leaks are a known issue - one owner reported losing half a litre of coolant every 5–8 days. Regular coolant changes and water pump replacement are essential. Catch overheating early and it's a manageable repair; ignore it and the head gasket fails.",
         "failureLink": {
           "label": "Read the full head gasket failure guide",
-          "href": "/failures/head-gasket-failure/"
+          "href": "/failures"
         }
       },
       {
@@ -360,7 +360,7 @@
         "recommendation": "The M40 engine is notorious for ticking hydraulic lifters - they can sound like a sewing machine when revved. In some cases, the camshaft can wear excessively, limiting revs to 4,000–5,000 rpm. Regular oil changes with the correct grade can help. If the ticking becomes severe or the engine won't rev freely, have the lifters and camshaft inspected. Replacement is a well-understood job for any BMW specialist.",
         "failureLink": {
           "label": "Read the full lifter failure guide",
-          "href": "/failures/hydraulic-lifter-failure/"
+          "href": "/failures"
         }
       }
     ]

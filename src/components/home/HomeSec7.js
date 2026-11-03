@@ -2,229 +2,259 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import MStripe from "@/components/reusableComponents/MStripe";
+import { TABLE_HEADER_BG, TABLE_HEADER_TEXT } from "@/components/shared/tableHeader";
 import { useTheme } from "@/components/shared/themeProvider";
+import { MobileHeading, MobileLabel, MobileLead, MobileSection } from "@/components/home/mobileKit";
+import BrandIcon from "@/components/home/brandIcon";
 
-const iconPaths = {
-  chart: <path d="M4 19V9m5 10V5m5 14v-7m5 7H3" />,
-  wrench: <path d="m14.7 6.3 3-3a4 4 0 0 1 0 5.7l-1.4 1.4-2.7-2.7L7 14.3V17H4.3l6.6-6.6-2.7-2.7 1.4-1.4a4 4 0 0 1 5.1 0Z" />,
-  book: <path d="M4 6.5A2.5 2.5 0 0 1 6.5 4H11v16H6.5A2.5 2.5 0 0 0 4 22V6.5Zm16 0A2.5 2.5 0 0 0 17.5 4H13v16h4.5A2.5 2.5 0 0 1 20 22V6.5Z" />,
-  trophy: <path d="M8 4h8v4a4 4 0 0 1-8 0V4Zm0 2H4v2a3 3 0 0 0 4 2.8M16 6h4v2a3 3 0 0 1-4 2.8M12 12v5m-3 3h6m-7 0h8" />,
-  droplet: <path d="M12 3s7 7.1 7 12a7 7 0 0 1-14 0c0-4.9 7-12 7-12Z" />,
-  pump: <path d="M4 21V5a2 2 0 0 1 2-2h7a2 2 0 0 1 2 2v16M3 21h13M7 7h5m3 1 3 3v7a2 2 0 0 0 4 0v-5a3 3 0 0 0-3-3h-1" />,
-  check: <path d="m5 12 4 4L19 6" />,
-  x: <path d="M8 8l8 8M16 8l-8 8" />,
-  warning: <path d="M12 8v5m0 4h.01M10 4.9 2.6 18a2 2 0 0 0 1.74 3h15.32A2 2 0 0 0 21.4 18L14 4.9a2 2 0 0 0-3.48 0Z" />,
-  star: <path d="m12 3 2.8 5.7 6.2.9-4.5 4.4 1.1 6.2-5.6-2.9-5.6 2.9 1.1-6.2L3 9.6l6.2-.9L12 3Z" />,
-  bulb: <path d="M9 18h6m-5 3h4m-6-7a6 6 0 1 1 8 0c-.8.6-1.2 1.5-1.2 2.5H9.2c0-1-.4-1.9-1.2-2.5Z" />,
-  chevron: <path d="m9 6 6 6-6 6" />,
-};
+// BMW Engine Families - The Pillars: engine table (engine / fuel / years / enquiries / verdict)
+// under an engine-bay header framed by blue diagonals. Phone adds the trust strip and a legend card.
 
-const verdictIcons = {
-  watch: { icon: "warning", color: "text-[#f59e0b]" },
-  safe: { icon: "check", color: "text-[#138a32]" },
-  best: { icon: "trophy", color: "text-[var(--color-primary)]" },
-  avoid: { icon: "x", color: "text-[#ed1c24]" },
-  solid: { icon: "star", color: "text-[var(--color-primary)]" },
-};
+// Icons use tight viewBoxes so the box size is the ink size measured on the references.
+const VB = { watch: "1 2.5 22 19", safe: "1.1 1.1 21.8 21.8", avoid: "1.1 1.1 21.8 21.8", solid: "2.2 2.2 19.6 18.8", best: "2.5 3 19 17.5" };
 
-const trustIconByIndex = ["chart", "wrench", "book", "trophy"];
-
-function cleanText(value = "") {
-  return value
-    .replaceAll("â€”", "-")
-    .replaceAll("â€“", "-")
-    .replaceAll("ðŸ“Š", "")
-    .replaceAll("ðŸ”§", "")
-    .replaceAll("ðŸ“–", "")
-    .replaceAll("ðŸ†", "")
-    .replaceAll("ðŸ›¢ï¸", "")
-    .replaceAll("â›½", "")
-    .replaceAll("âš ï¸", "")
-    .replaceAll("âœ…", "")
-    .replaceAll("ðŸ”´", "")
-    .replaceAll("â­", "")
-    .trim();
+function VerdictMark({ type, style, className = "" }) {
+  const p = { "aria-hidden": "true", viewBox: VB[type] ?? VB.best, className, style };
+  switch (type) {
+    case "watch":
+      return (
+        <svg {...p}>
+          <path d="M12 2.5 23 21.5H1L12 2.5Z" fill="#f5a20b" />
+          <path d="M12 9v6" stroke="#2b1600" strokeWidth="2.2" strokeLinecap="round" />
+          <circle cx="12" cy="18" r="1.25" fill="#2b1600" />
+        </svg>
+      );
+    case "safe":
+      return (
+        <svg {...p} fill="none" stroke="#22a447" strokeWidth="1.8">
+          <circle cx="12" cy="12" r="10" />
+          <path d="m7.5 12.3 3 3 6-6.3" strokeLinecap="round" strokeLinejoin="round" />
+        </svg>
+      );
+    case "avoid":
+      return (
+        <svg {...p} fill="none" stroke="#e3262b" strokeWidth="1.8">
+          <circle cx="12" cy="12" r="10" />
+          <path d="m8.5 8.5 7 7m0-7-7 7" strokeLinecap="round" />
+        </svg>
+      );
+    case "solid":
+      return (
+        <svg {...p} fill="none" stroke="#1d4fd8" strokeWidth="1.6" strokeLinejoin="round">
+          <path d="m12 2.8 2.8 5.9 6.4.8-4.7 4.4 1.2 6.4L12 17.2l-5.7 3.1 1.2-6.4-4.7-4.4 6.4-.8L12 2.8Z" />
+        </svg>
+      );
+    default:
+      return (
+        <svg {...p} fill="#1d4fd8">
+          <path d="M6 3h12v5a6 6 0 0 1-12 0V3Zm-3.5 1H5v3.6A3.4 3.4 0 0 1 2.5 4.3V4ZM19 4h2.5v.3A3.4 3.4 0 0 1 19 7.6V4ZM10.5 14.5h3v3.5H17v2.5H7V18h3.5v-3.5Z" />
+          <circle cx="12" cy="7.5" r="2" fill="#fff" />
+        </svg>
+      );
+  }
 }
 
-function Icon({ name, className = "h-5 w-5", strokeWidth = 2 }) {
-  return (
-    <svg aria-hidden="true" viewBox="0 0 24 24" className={className} fill="none" stroke="currentColor" strokeWidth={strokeWidth} strokeLinecap="round" strokeLinejoin="round">
-      {iconPaths[name] || iconPaths.chart}
+function FuelMark({ fuel, color = "#1d6ff0", style, className = "" }) {
+  return fuel === "Diesel" ? (
+    <svg aria-hidden="true" viewBox="4.2 1.7 15.6 21.1" className={className} style={style} fill="none" stroke={color} strokeWidth="1.6">
+      <path d="M12 2.5s7 7.6 7 12.5a7 7 0 0 1-14 0c0-4.9 7-12.5 7-12.5Z" />
+      <path d="M12 11.5s3 3 3 5a3 3 0 0 1-6 0c0-2 3-5 3-5Z" fill={color} stroke="none" />
+    </svg>
+  ) : (
+    <svg aria-hidden="true" viewBox="3.2 2.2 18.6 19.6" className={className} style={style} fill="none" stroke={color} strokeWidth="1.6" strokeLinejoin="round">
+      <path d="M4 21V4a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v17H4Zm0-10h10" />
+      <path d="M6 5.5h6v3.5H6z" fill={color} />
+      <path d="M14 9h2a2 2 0 0 1 2 2v6a1.5 1.5 0 0 0 3 0V8l-3-3" />
     </svg>
   );
 }
 
-function FuelIcon({ fuel, className = "h-6 w-6" }) {
-  return <Icon name={fuel === "Petrol" ? "pump" : "droplet"} className={`${className} text-[var(--color-primary)]`} strokeWidth={2.1} />;
+const COL = {
+  light: { bg: "#fefefe", h2: "#0a0f2c", accent: "#0b4fe0", para: "#4f5775", hdr: "#0b3fd6", code: "#0b1236", spec: "#2456da", text: "#1a2140", enq: "#0b1236", tag: "#1f55d8",
+    vt: "#343a55", fuelIcon: "#1747e0", card: "#ffffff", border: "#eef2f8", line: "#eef2f8", hdrBand: "transparent", bar: "#9cbdf7", shadow: "0 6px 24px rgba(16,24,48,0.05)" },
+  dark: { bg: "#030405", h2: "#ffffff", accent: "#2f7bec", para: "#d0d0d0", hdr: "#ffffff", code: "#ffffff", spec: "#2b93e9", text: "#eeeeef", enq: "#fafafb", tag: "#2b93e9",
+    vt: "#d8dadd", fuelIcon: "#0b78e6", card: "#0e1318", border: "#3a3d40", line: "#24282d", hdrBand: "#0c0f13", bar: "#0a66e0", shadow: "none" },
+};
+
+// Desktop (lg+): engine-bay header on the right, one grid for the header row and the engine rows.
+const GRID = "grid grid-cols-[minmax(0,1fr)_minmax(0,0.8fr)_minmax(0,0.85fr)_minmax(0,1.05fr)_minmax(0,2.6fr)] gap-x-4 px-6";
+
+function Desktop({ data, isDark }) {
+  const C = COL[isDark ? "dark" : "light"];
+  return (
+    <div className="relative hidden lg:block">
+      <div aria-hidden="true" className="pointer-events-none absolute right-0 top-0 w-[58%] max-w-[976px]">
+        <Image src={isDark ? data.headerImage.dark : data.headerImage.light} alt="" width={976} height={260} sizes="60vw" className="h-auto w-full [mask-image:linear-gradient(90deg,transparent,black_10%),linear-gradient(180deg,black_80%,transparent)] [mask-composite:intersect]" />
+      </div>
+      <div className="site-container section-y relative">
+        <div className="max-w-[620px]">
+          <h2 className="t-h2 [&_.heading-accent]:text-[var(--acc)]" style={{ color: C.h2, "--acc": C.accent }} dangerouslySetInnerHTML={{ __html: data.h2 }} />
+          <p className="t-p mt-3 max-w-[560px]" style={{ color: C.para }}>{data.subHeadline}</p>
+        </div>
+
+        <div className="relative mt-8 overflow-hidden rounded-[10px] border" style={{ background: C.card, borderColor: C.border, boxShadow: C.shadow }}>
+          <div className={`${GRID} t-label items-center py-3.5 font-semibold uppercase tracking-[0.02em]`} style={{ background: TABLE_HEADER_BG, color: TABLE_HEADER_TEXT }}>
+            {data.columns.map((c) => (
+              <span key={c}>{c}</span>
+            ))}
+          </div>
+          {data.engines.map((e) => (
+            <Link key={e.code} href={e.href} className={`${GRID} relative items-center border-t py-3.5 font-normal`} style={{ color: C.text, borderColor: C.line }}>
+              <span aria-hidden="true" className="absolute inset-y-0 left-0 w-[3px]" style={{ background: C.bar }} />
+              <span>
+                <span className="block text-[18px] font-bold leading-tight" style={{ color: C.code }}>{e.code}</span>
+                <span className="t-label block" style={{ color: C.spec }}>{e.spec}</span>
+              </span>
+              <span className="t-body flex items-center gap-2">
+                <FuelMark fuel={e.fuel} color={C.fuelIcon} style={{ width: 18, height: 22 }} />
+                {e.fuel}
+              </span>
+              <span className="t-body">{e.years}</span>
+              <span>
+                <span className="t-body block font-semibold" style={{ color: C.enq }}>{e.enquiries}</span>
+                <span className="t-label block" style={{ color: C.tag }}>{e.sourceTag}</span>
+              </span>
+              <span className="flex items-center gap-3">
+                <VerdictMark type={e.verdict.type} className="shrink-0" style={{ width: 26, height: 26 }} />
+                <span className="t-body" style={{ color: C.vt }}>{e.verdict.desktop.replace(/\n/g, " ")}</span>
+              </span>
+            </Link>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
 }
 
-function VerdictIcon({ type, mobile = false }) {
-  const config = verdictIcons[type] || verdictIcons.solid;
-
-  if (type === "safe" || type === "avoid") {
+// Trust-strip artwork drawn to the phone reference (bars, wrench, open book, trophy).
+function TrustGlyph({ name }) {
+  if (name === "real-inquiries")
     return (
-      <span className={`flex shrink-0 items-center justify-center rounded-full border-2 ${mobile ? "h-9 w-9" : "h-7 w-7"} ${config.color}`}>
-        <Icon name={config.icon} className={mobile ? "h-6 w-6" : "h-4.5 w-4.5"} strokeWidth={2.3} />
-      </span>
+      <svg aria-hidden="true" viewBox="0 0 19 18" className="h-full w-full" fill="currentColor">
+        <rect x="0" y="8" width="5" height="10" rx="0.6" /><rect x="7" y="0" width="5" height="18" rx="0.6" /><rect x="14" y="5" width="5" height="13" rx="0.6" />
+      </svg>
     );
-  }
-
-  return (
-    <span className={`flex shrink-0 items-center justify-center ${config.color}`}>
-      <Icon name={config.icon} className={mobile ? "h-10 w-10" : "h-7 w-7"} strokeWidth={type === "warning" ? 1.8 : 2} />
-    </span>
-  );
+  if (name === "vetted-specialist")
+    return (
+      <svg aria-hidden="true" viewBox="1.4 0.6 21 21" className="h-full w-full" fill="currentColor">
+        <path d="M21 6.5a5.5 5.5 0 0 1-7.4 5.2l-8 8a2.1 2.1 0 0 1-3-3l8-8A5.5 5.5 0 0 1 17.5 1l-3.3 3.3.9 3.6 3.6.9L22 5.5c-.6.3-1 .6-1 1Z" />
+      </svg>
+    );
+  if (name === "oem-references")
+    return (
+      <svg aria-hidden="true" viewBox="0 0 20 16" className="h-full w-full" fill="currentColor">
+        <path d="M0 1.2C2.8.2 6.3.3 9.3 2v14C6.3 14.4 2.8 14.3 0 15.3V1.2Z" /><path d="M20 1.2c-2.8-1-6.3-.9-9.3.8v14c3-1.6 6.5-1.7 9.3-.7V1.2Z" />
+      </svg>
+    );
+  return <VerdictMark type="best" className="h-full w-full" />;
 }
 
-function EngineCell({ row }) {
-  return (
-    <div className="min-w-0">
-      <p className="text-[1.02rem] font-bold leading-tight md:text-[1.08rem]">{row.code}</p>
-      <p className="mt-1 text-[0.75rem] font-medium leading-tight text-[var(--color-primary)] md:text-[0.78rem]">{cleanText(row.spec)}</p>
-    </div>
-  );
-}
+const VERDICT_TONE = { watch: "#d97706", safe: "#16a34a", avoid: "#dc2626", solid: "#1d4fd8", best: "#1d4fd8" };
 
-function EnquiryCell({ row }) {
-  return (
-    <div className="min-w-0">
-      <p className="text-[0.98rem] font-bold leading-tight md:text-[0.95rem]">{cleanText(row.enquiries)}</p>
-      <p className="mt-1 text-[0.76rem] font-semibold leading-tight text-[var(--color-primary)] md:text-[0.78rem]">{row.sourceTag}</p>
-    </div>
-  );
-}
-
-function EngineRow({ row, isDark }) {
-  const verdictType = row.verdict.type;
+// Phone / tablet: readable stacked layout (body 17px, entries 16–18px, labels 13px).
+function Phone({ data, isDark }) {
+  const C = COL[isDark ? "dark" : "light"];
+  const card = { background: C.card, borderColor: C.border };
 
   return (
-    <Link
-      href={row.href}
-      className={`grid grid-cols-[minmax(76px,0.95fr)_minmax(106px,1.22fr)_minmax(116px,1.32fr)_40px] items-center border-b px-3 py-3.5 last:border-b-0 md:grid-cols-[minmax(170px,1.05fr)_minmax(130px,0.78fr)_minmax(140px,0.82fr)_minmax(170px,1.05fr)_minmax(390px,2.2fr)] md:px-9 md:py-3.5 ${
-        isDark ? "border-[#223a51] text-white hover:bg-[rgba(22,51,74,0.42)]" : "border-[#e3e8ef] text-[#071827] hover:bg-[#f8fbff]"
-      }`}
-    >
-      <EngineCell row={row} />
-
-      <div className={`grid min-w-0 gap-1.5 border-l pl-3 md:contents ${isDark ? "border-[#223a51]" : "border-[#dfe7f1]"}`}>
-        <p className="flex items-center gap-3 text-[0.84rem] leading-tight md:text-[0.92rem]">
-          <FuelIcon fuel={row.fuel} className="h-6 w-6 md:h-6 md:w-6" />
-          <span>{row.fuel}</span>
-        </p>
-        <p className={`text-[0.82rem] leading-[1.22] md:text-[0.9rem] ${isDark ? "text-white/78" : "text-[#071827]"}`}>{cleanText(row.years)}</p>
+    <MobileSection className="!pt-0">
+      {/* Reference: engine bay top right, behind the heading, with the copy on the left. */}
+      <div aria-hidden="true" className="pointer-events-none absolute right-0 top-0 h-[270px] w-[56%] overflow-hidden [mask-image:linear-gradient(90deg,transparent_0%,black_45%),linear-gradient(180deg,black_65%,transparent)] [mask-composite:intersect]">
+        <Image src={isDark ? data.headerImage.dark : data.headerImage.light} alt="" fill sizes="56vw" className="object-cover object-[70%_50%]" />
+      </div>
+      <div className="relative pt-10">
+        <div className="max-w-[70%]">
+          <MobileHeading html={data.h2} color={C.h2} accent={C.accent} />
+        </div>
+        <div className="max-w-[66%]">
+          <MobileLead color={C.para}>{data.subHeadline}</MobileLead>
+        </div>
       </div>
 
-      <EnquiryCell row={row} />
-
-      <div className="flex justify-center md:hidden">
-        <VerdictIcon type={verdictType} mobile />
-      </div>
-
-      <div className="hidden min-w-0 items-start gap-6 md:flex">
-        <VerdictIcon type={verdictType} />
-        <p className="text-[0.84rem] leading-[1.42]">
-          <span className="font-medium">{row.verdict.label}</span>
-          {" - "}
-          <span dangerouslySetInnerHTML={{ __html: cleanText(row.verdict.text) }} />
-        </p>
-      </div>
-    </Link>
-  );
-}
-
-function TrustStrip({ items, isDark }) {
-  return (
-    <ul className={`grid grid-cols-4 overflow-hidden rounded-md border shadow-[0_16px_36px_rgba(10,26,43,0.08)] md:hidden ${isDark ? "border-[#223a51] bg-[rgba(7,23,36,0.9)]" : "border-[#dfe5ed] bg-white"}`}>
-      {items.map((item, index) => {
-        const text = cleanText(item.label);
-        const parts = text.match(/^(Powered by|20\+ vetted|OEM part|Part of)\s*(.*)$/);
-
-        return (
-          <li key={item.label} className={`flex min-w-0 flex-col items-center border-r px-2 py-5 text-center last:border-r-0 ${isDark ? "border-[#223a51]" : "border-[#dfe7f1]"}`}>
-            <Icon name={trustIconByIndex[index] || "chart"} className="h-8 w-8 text-[var(--color-primary)]" strokeWidth={2.2} />
-            <span className={`mt-3 text-[0.78rem] leading-[1.28] ${isDark ? "text-white/78" : "text-[#172b4a]"}`}>
-              {parts ? parts[1] : text}
-              {parts?.[2] ? <strong className={isDark ? "block text-white" : "block text-[#071827]"}>{parts[2]}</strong> : null}
+      <ul className="relative mt-7 grid grid-cols-4 rounded-[12px] border py-3.5" style={card}>
+        {data.trustStrip.map((t) => (
+          <li
+            key={t.icon}
+            className="relative flex flex-col items-center gap-1.5 px-1 text-center [&:not(:last-child)]:after:absolute [&:not(:last-child)]:after:right-0 [&:not(:last-child)]:after:top-1/2 [&:not(:last-child)]:after:h-[60%] [&:not(:last-child)]:after:w-px [&:not(:last-child)]:after:-translate-y-1/2 after:bg-[var(--div)]"
+            style={{ "--div": isDark ? "#2a2f36" : "#e6eaf0" }}
+          >
+            <span className="h-7 w-7 shrink-0" style={{ color: isDark ? "#3b82f6" : C.hdr }}>
+              <TrustGlyph name={t.icon} />
+            </span>
+            <span className="text-[13px] leading-[1.3]" style={{ color: C.text }}>
+              {t.lines.map((l) => (l.startsWith("**") ? <strong key={l} className="block text-[14px] font-bold">{l.slice(2, -2)}</strong> : <span key={l} className="block">{l}</span>))}
             </span>
           </li>
-        );
-      })}
-    </ul>
-  );
-}
+        ))}
+      </ul>
 
-function EngineTable({ data, isDark }) {
-  return (
-    <div className={`overflow-hidden rounded-md border shadow-[0_16px_36px_rgba(10,26,43,0.08)] ${isDark ? "border-[#223a51] bg-[rgba(7,23,36,0.9)]" : "border-[#dfe5ed] bg-white"}`}>
-      <div className={`grid grid-cols-[minmax(76px,0.95fr)_minmax(106px,1.22fr)_minmax(116px,1.32fr)_40px] border-b px-3 py-3.5 text-[0.68rem] font-bold uppercase text-[var(--color-primary)] md:grid-cols-[minmax(170px,1.05fr)_minmax(130px,0.78fr)_minmax(140px,0.82fr)_minmax(170px,1.05fr)_minmax(390px,2.2fr)] md:px-9 md:py-3.5 md:text-[0.82rem] ${isDark ? "border-[#223a51]" : "border-[#e3e8ef]"}`}>
-        <span>{data.columns[0]}</span>
-        <span className={`border-l pl-4 md:border-l-0 md:pl-0 ${isDark ? "border-[#223a51]" : "border-[#dfe7f1]"}`}>
-          Fuel
-          <span className="block md:hidden">Years</span>
+      <ul className="mt-5 grid gap-3">
+        {data.engines.map((e) => (
+          <li key={e.code}>
+            <Link href={e.href} className="block rounded-[12px] border border-l-[3px] px-4 py-4 font-normal" style={{ ...card, borderLeftColor: isDark ? C.bar : "#9cbdf7", color: C.text }}>
+              <span className="flex items-start justify-between gap-3">
+                <span>
+                  <span className="block text-[22px] font-bold leading-tight" style={{ color: C.code }}>{e.code}</span>
+                  <span className="mt-0.5 block text-[15px]" style={{ color: C.spec }}>{e.spec}</span>
+                </span>
+                <span className="flex shrink-0 items-center gap-2">
+                  <VerdictMark type={e.verdict.type} style={{ width: 24, height: 24 }} />
+                  <span className="text-[15px] font-bold" style={{ color: VERDICT_TONE[e.verdict.type] ?? C.code }}>{e.verdict.label}</span>
+                </span>
+              </span>
+              <span className="mt-3 grid grid-cols-[auto_auto_1fr] gap-x-5 border-y py-3" style={{ borderColor: C.line }}>
+                <span>
+                  <MobileLabel color={C.tag}>{data.columns[1]}</MobileLabel>
+                  <span className="mt-1 flex items-center gap-1.5 text-[16px]">
+                    <FuelMark fuel={e.fuel} color={C.fuelIcon} style={{ width: 12, height: 16 }} />
+                    {e.fuel}
+                  </span>
+                </span>
+                <span>
+                  <MobileLabel color={C.tag}>{data.columns[2]}</MobileLabel>
+                  <span className="mt-1 block whitespace-nowrap text-[16px]">{e.years}</span>
+                </span>
+                <span>
+                  <MobileLabel color={C.tag}>{data.columns[3].replace(/^\d{4}\s/, "")}</MobileLabel>
+                  <span className="mt-1 block text-[16px] font-bold" style={{ color: C.enq }}>{e.enquiries.replace(/ enquiries$/, "")}</span>
+                  <span className="block whitespace-nowrap text-[13px]" style={{ color: C.tag }}>{e.sourceTag}</span>
+                </span>
+              </span>
+              <span className="mt-3 flex items-start gap-2 text-[16px] leading-[1.55]" style={{ color: C.vt }}>
+                <span className="flex-1">{e.verdict.text.charAt(0).toUpperCase() + e.verdict.text.slice(1)}</span>
+                <svg aria-hidden="true" viewBox="0 0 24 24" className="mt-0.5 h-5 w-5 shrink-0" fill="none" stroke="currentColor" strokeWidth="2" style={{ color: C.code }}>
+                  <path d="m9 5 7 7-7 7" />
+                </svg>
+              </span>
+            </Link>
+          </li>
+        ))}
+      </ul>
+
+      <Link href={data.legend.href} className="mt-5 flex items-center gap-4 rounded-[12px] border p-4 font-normal" style={card}>
+        <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-[10px] bg-[#0a55e6] text-white">
+          <svg aria-hidden="true" viewBox="0 0 24 24" className="h-6 w-6" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M9 18h6M10 21h4M12 2.5a6.5 6.5 0 0 0-3.8 11.8c.6.5.8 1.1.8 1.8V16h6v-.1c0-.7.3-1.3.8-1.8A6.5 6.5 0 0 0 12 2.5Z" />
+            <path d="M12 6.5a3 3 0 0 0-3 3" />
+          </svg>
         </span>
-        <span className="hidden md:block">{data.columns[2]}</span>
-        <span>{data.columns[3]}</span>
-        <span className="text-center md:text-left">{data.columns[4]}</span>
-      </div>
-
-      {data.engines.map((row) => (
-        <EngineRow key={row.code} row={row} isDark={isDark} />
-      ))}
-    </div>
-  );
-}
-
-function LegendCard({ legend, isDark }) {
-  return (
-    <Link href={legend.href} className={`flex items-center gap-5 rounded-md border p-5 shadow-[0_16px_36px_rgba(10,26,43,0.08)] md:hidden ${isDark ? "border-[#223a51] bg-[rgba(7,23,36,0.9)] text-white" : "border-[#dfe5ed] bg-white text-[#071827]"}`}>
-      <span className="flex h-16 w-16 shrink-0 items-center justify-center rounded-md bg-[var(--color-primary)] text-white shadow-[0_12px_26px_rgba(7,95,216,0.28)]">
-        <Icon name="bulb" className="h-9 w-9" />
-      </span>
-      <span className="min-w-0 flex-1">
-        <strong className="block text-[1rem]">{legend.title}</strong>
-        <span className={`mt-1 block text-[0.82rem] leading-[1.4] ${isDark ? "text-white/76" : "text-[#27384a]"}`} dangerouslySetInnerHTML={{ __html: legend.text }} />
-      </span>
-      <Icon name="chevron" className="h-6 w-6 shrink-0" />
-    </Link>
+        <span className="flex-1">
+          <span className="block text-[18px] font-bold" style={{ color: C.code }}>{data.legend.title}</span>
+          <span className="mt-1 block text-[16px] leading-[1.55]" style={{ color: C.vt }}>{data.legend.text}</span>
+        </span>
+      </Link>
+    </MobileSection>
   );
 }
 
 export default function HomeSec7({ data }) {
   const { theme } = useTheme();
   const isDark = theme === "dark";
-
   return (
-    <section className={`relative overflow-hidden px-2 py-7 md:py-8 ${isDark ? "bg-[#02070b]" : "bg-white"}`}>
-      <div className="absolute inset-x-0 top-0 h-[560px] md:h-[330px]">
-        <Image src={data.headerImage.src} alt={data.headerImage.alt} fill className="object-cover object-[72%_center]" sizes="100vw" />
-        <div className={isDark ? "absolute inset-0 bg-[linear-gradient(90deg,rgba(2,7,11,0.98)_0%,rgba(2,7,11,0.84)_37%,rgba(2,7,11,0.12)_78%)]" : "absolute inset-0 bg-[linear-gradient(90deg,rgba(255,255,255,0.99)_0%,rgba(255,255,255,0.9)_38%,rgba(255,255,255,0.18)_78%)]"} />
-        <div className="absolute right-[26%] top-0 h-full w-5 -skew-x-[32deg] bg-[rgba(21,129,255,0.55)] md:right-[50%]" />
-        <div className="absolute right-2 top-0 h-full w-16 -skew-x-[32deg] bg-[rgba(21,129,255,0.38)] md:right-0 md:w-12" />
-        <div className={isDark ? "absolute inset-x-0 bottom-0 h-28 bg-[linear-gradient(0deg,#02070b_0%,transparent_100%)]" : "absolute inset-x-0 bottom-0 h-28 bg-[linear-gradient(0deg,white_0%,transparent_100%)]"} />
-      </div>
+    <section className="relative overflow-hidden" style={{ background: isDark ? COL.dark.bg : COL.light.bg }}>
+      <Desktop data={data} isDark={isDark} />
 
-      <div className="relative mx-auto w-full max-w-8xl">
-        <div className="max-w-[640px] pt-4 md:pt-8">
-          <h2 className={`text-[3rem] font-bold leading-[1.03] tracking-normal md:text-[3.6rem] ${isDark ? "text-white" : "text-[#071827]"}`} dangerouslySetInnerHTML={{ __html: data.h2 }} />
-          <div className="mt-4">
-            <MStripe />
-          </div>
-          <p className={`mt-5 max-w-[610px] text-[0.94rem] leading-[1.55] md:text-[1.02rem] ${isDark ? "text-white/80" : "text-[#27384a]"}`} dangerouslySetInnerHTML={{ __html: cleanText(data.subHeadline) }} />
-        </div>
-
-        <div className="mt-8 md:hidden">
-          <TrustStrip items={data.trustStrip} isDark={isDark} />
-        </div>
-
-        <div className="mt-7 md:mt-6">
-          <EngineTable data={data} isDark={isDark} />
-        </div>
-
-        <div className="mt-8">
-          <LegendCard legend={data.legend} isDark={isDark} />
-        </div>
-      </div>
+      <Phone data={data} isDark={isDark} />
     </section>
   );
 }

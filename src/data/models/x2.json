@@ -64,43 +64,43 @@
               "@type": "ListItem",
               "position": 1,
               "name": "B38A15 Engine",
-              "url": "https://bmwengines.uk/engine/b38a15/"
+              "url": "https://bmwengines.uk/engine/b38-b48"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "B48A20A Engine",
-              "url": "https://bmwengines.uk/engine/b48a20a/"
+              "url": "https://bmwengines.uk/engine/b38-b48"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "B48A20F Engine",
-              "url": "https://bmwengines.uk/engine/b48a20f/"
+              "url": "https://bmwengines.uk/engine/b38-b48"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "B48A20E Engine",
-              "url": "https://bmwengines.uk/engine/b48a20e/"
+              "url": "https://bmwengines.uk/engine/b38-b48"
             },
             {
               "@type": "ListItem",
               "position": 5,
               "name": "N47D20C Engine",
-              "url": "https://bmwengines.uk/engine/n47d20c/"
+              "url": "https://bmwengines.uk/engine/n47"
             },
             {
               "@type": "ListItem",
               "position": 6,
               "name": "B47C20A Engine",
-              "url": "https://bmwengines.uk/engine/b47c20a/"
+              "url": "https://bmwengines.uk/engine/b37-b47"
             },
             {
               "@type": "ListItem",
               "position": 7,
               "name": "B47C20B Engine",
-              "url": "https://bmwengines.uk/engine/b47c20b/"
+              "url": "https://bmwengines.uk/engine/b37-b47"
             }
           ]
         },
@@ -252,7 +252,7 @@
     ],
     "primaryCta": {
       "label": "Explore X2 Engines →",
-      "href": "#"
+      "href": "/x2"
     }
   },
   "ownershipVerdict": {
@@ -380,7 +380,7 @@
         "verdict": "",
         "cta": {
           "label": "",
-          "href": "#"
+          "href": "/quote"
         }
       }
     ],
@@ -391,7 +391,7 @@
     },
     "comparisonLink": {
       "label": "Read the full comparison: BMW X2 F39 vs U10 →",
-      "href": "#"
+      "href": "/compare"
     }
   },
   "engineDatabase": {
@@ -523,7 +523,7 @@
         },
         "link": {
           "label": "Learn more →",
-          "href": "#"
+          "href": "/failures/n47-timing-chain"
         }
       },
       {
@@ -537,7 +537,7 @@
         },
         "link": {
           "label": "Learn more →",
-          "href": "#"
+          "href": "/failures/n55-valve-cover-oil-leak"
         }
       },
       {
@@ -551,7 +551,7 @@
         },
         "link": {
           "label": "Learn more →",
-          "href": "#"
+          "href": "/engine/b38-b48"
         }
       },
       {
@@ -565,7 +565,7 @@
         },
         "link": {
           "label": "Learn more →",
-          "href": "#"
+          "href": "/failures/egr-valve-cooler"
         }
       },
       {
@@ -579,7 +579,7 @@
         },
         "link": {
           "label": "Learn more →",
-          "href": "#"
+          "href": "/engine/b38-b48"
         }
       },
       {
@@ -593,7 +593,7 @@
         },
         "link": {
           "label": "Learn more →",
-          "href": "#"
+          "href": "/x2/f39"
         }
       }
     ],
@@ -831,11 +831,11 @@
     "paths": [
       {
         "label": "Path 1 - Know your engine? Launch the BMW diagnostic calculator with X2 pre-selected",
-        "href": "/fault-diagnostic-calculator"
+        "href": "/tools/diagnostic-wizard"
       },
       {
         "label": "Path 2 - Not sure which engine you have? We'll identify it first → /fault-diagnostic-calculator (identification is the first step inside the tool)",
-        "href": "#"
+        "href": "/tools/diagnostic-wizard"
       }
     ]
   },
@@ -922,13 +922,13 @@
         "icon": "🩺",
         "title": "Diagnose My X2",
         "text": "Symptoms in, verdict out - value-weighted for your generation.",
-        "href": "/fault-diagnostic-calculator"
+        "href": "/tools/diagnostic-wizard"
       },
       {
         "icon": "🤝",
         "title": "Compare UK Specialists",
         "text": "20+ vetted BMW specialists, prices and warranties side-by-side.",
-        "href": "/quotes/?model=x2"
+        "href": "/quote"
       }
     ],
     "footerNote": ""

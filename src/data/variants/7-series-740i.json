@@ -78,31 +78,31 @@
               "@type": "ListItem",
               "position": 4,
               "name": "E65 740i (N62B40, 2002–2008)",
-              "url": "https://bmwengines.uk/7-series/e65/"
+              "url": "https://bmwengines.uk/7-series/e65-e66"
             },
             {
               "@type": "ListItem",
               "position": 5,
               "name": "F01 740i (N54B30A, 2008–2012)",
-              "url": "https://bmwengines.uk/7-series/f01/"
+              "url": "https://bmwengines.uk/7-series/f01-f02"
             },
             {
               "@type": "ListItem",
               "position": 6,
               "name": "F01 740i (N55B30A, 2012–2015)",
-              "url": "https://bmwengines.uk/7-series/f01/"
+              "url": "https://bmwengines.uk/7-series/f01-f02"
             },
             {
               "@type": "ListItem",
               "position": 7,
               "name": "G11 740i (B58B30M0, 2015–2019)",
-              "url": "https://bmwengines.uk/7-series/g11/"
+              "url": "https://bmwengines.uk/7-series/g11-g12"
             },
             {
               "@type": "ListItem",
               "position": 8,
               "name": "G11 LCI 740i (B58B30C, 2019–2022)",
-              "url": "https://bmwengines.uk/7-series/g11/"
+              "url": "https://bmwengines.uk/7-series/g11-g12"
             },
             {
               "@type": "ListItem",
@@ -120,55 +120,55 @@
               "@type": "ListItem",
               "position": 1,
               "name": "M60B40 (4.0 V8)",
-              "url": "https://bmwengines.uk/engine/m60/"
+              "url": "https://bmwengines.uk/engine/m60-m62"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "M62B44 (4.4 V8)",
-              "url": "https://bmwengines.uk/engine/m62/"
+              "url": "https://bmwengines.uk/engine/m60-m62"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "M62TUB44 (4.4 V8 VANOS)",
-              "url": "https://bmwengines.uk/engine/m62/"
+              "url": "https://bmwengines.uk/engine/m60-m62"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "N62B40 (4.0 V8)",
-              "url": "https://bmwengines.uk/engine/n62/"
+              "url": "https://bmwengines.uk/engine/n62-n63"
             },
             {
               "@type": "ListItem",
               "position": 5,
               "name": "N54B30A (3.0 twin-turbo I6)",
-              "url": "https://bmwengines.uk/engine/n54/"
+              "url": "https://bmwengines.uk/engine/n54-n55"
             },
             {
               "@type": "ListItem",
               "position": 6,
               "name": "N55B30A (3.0 single-turbo I6)",
-              "url": "https://bmwengines.uk/engine/n55/"
+              "url": "https://bmwengines.uk/engine/n54-n55"
             },
             {
               "@type": "ListItem",
               "position": 7,
               "name": "B58B30M0 (3.0 turbo I6)",
-              "url": "https://bmwengines.uk/engine/b58/"
+              "url": "https://bmwengines.uk/engine/b57-b58"
             },
             {
               "@type": "ListItem",
               "position": 8,
               "name": "B58B30C (3.0 turbo I6)",
-              "url": "https://bmwengines.uk/engine/b58/"
+              "url": "https://bmwengines.uk/engine/b57-b58"
             },
             {
               "@type": "ListItem",
               "position": 9,
               "name": "B58B30M2 (3.0 turbo I6 MHEV)",
-              "url": "https://bmwengines.uk/engine/b58/"
+              "url": "https://bmwengines.uk/engine/b57-b58"
             }
           ]
         },
@@ -378,7 +378,7 @@
         "recommendation": "The M60 V8's Nikasil cylinder liners can degrade when exposed to high‑sulphur fuel. If you experience misfires or rough running, have a compression test performed immediately. Many early M60 engines have been replaced; if yours hasn't, budget for a bottom‑end rebuild or replacement.",
         "failureLink": {
           "label": "",
-          "href": "/failures/cylinder-liner-failure/"
+          "href": "/failures"
         }
       },
       {
@@ -396,7 +396,7 @@
         "recommendation": "The M62's timing chain guides are the defining weakness - they become brittle and can shatter, causing the chain to jump. If you hear a rattling noise on cold start, have the guides inspected immediately. Regular oil changes with the correct spec are essential. Many owners replace the guides preventatively around 100,000 miles.",
         "failureLink": {
           "label": "",
-          "href": "/failures/timing-chain-stretch/"
+          "href": "/failures/timing-chain-diagnosis-guide"
         }
       },
       {
@@ -414,7 +414,7 @@
         "recommendation": "The N62 V8 is notorious for valve stem seal failure - the seals harden and allow oil to leak into the combustion chamber. If you see blue smoke on startup or excessive oil consumption, have the valve stem seals inspected. Replacing them is labour‑intensive but far cheaper than a full engine replacement. Some owners use oil additives to temporarily reduce consumption, but this is not a permanent fix.",
         "failureLink": {
           "label": "",
-          "href": "/failures/valve-stem-seal-failure/"
+          "href": "/failures/valve-stem-seal-wear"
         }
       },
       {
@@ -432,7 +432,7 @@
         "recommendation": "The N54's HPFP is its defining weakness - a well‑documented issue that plagued early cars. If you experience long cranking or loss of power, have the fuel pressure tested. BMW issued recalls for this, but many cars are now out of warranty. Replacing the HPFP with a revised unit is the permanent fix.",
         "failureLink": {
           "label": "",
-          "href": "/failures/high-pressure-fuel-pump-failure/"
+          "href": "/failures/n54-high-pressure-fuel-pump"
         }
       }
     ]

@@ -7,6 +7,9 @@ import Compatibility from "@/components/engine/Compatibility";
 import CostGuide from "@/components/engine/CostGuide";
 import FAQAccordion from "@/components/engine/FAQAccordion";
 import TrustCta from "@/components/engine/TrustCta";
+import { enginePageImages } from "@/components/shared/pageCarImages";
+import { engineCode, enquiriesFrom, glanceMap, modelsFittedOf, normHyphen, parseScore, parseYears, realignCompatibility } from "@/components/engine/engineText";
+import { resolveSeoImage, sanitizeJsonLd } from "@/lib/seoAssets";
 
 async function getPageData(dataFile) {
   try {
@@ -40,7 +43,7 @@ export async function generateMetadata({ params }) {
           description: meta.openGraph.description,
           type: meta.openGraph.type || "website",
           url: meta.openGraph.url,
-          images: meta.openGraph.image ? [meta.openGraph.image] : undefined,
+          images: meta.openGraph.image ? [resolveSeoImage(meta.openGraph.image)] : undefined,
           siteName: meta.openGraph.siteName,
         }
       : undefined,
@@ -49,7 +52,7 @@ export async function generateMetadata({ params }) {
           card: meta.twitter.card,
           title: meta.twitter.title,
           description: meta.twitter.description,
-          images: meta.twitter.image ? [meta.twitter.image] : undefined,
+          images: meta.twitter.image ? [resolveSeoImage(meta.twitter.image)] : undefined,
         }
       : undefined,
   };
@@ -63,15 +66,30 @@ export default async function EnginePage({ params }) {
   const data = await getPageData(entry.dataFile);
   if (!data) notFound();
 
-  const glanceRows = data.atAGlance?.rows || [];
-  const engineLabel =
-    glanceRows.find((row) => row.metric === "Engine Family")?.value || "BMW Engine";
-  const yearsProduced =
-    glanceRows.find((row) => row.metric === "Years Produced")?.value || "";
-  const modelsFitted =
-    glanceRows.find((row) => row.metric === "Models Fitted (BMW only)")?.value || "";
-  const crossBrandFitment =
-    glanceRows.find((row) => row.metric === "Cross-Brand Fitment")?.value || "";
+  // At a Glance metric names normalised (8 pages spell "Cross‑Brand Fitment" with U+2011).
+  const glanceRows = (data.atAGlance?.rows || []).map((row) => ({ ...row, metric: normHyphen(row.metric) }));
+  const atAGlance = data.atAGlance ? { ...data.atAGlance, rows: glanceRows } : data.atAGlance;
+  const glance = glanceMap(glanceRows);
+  const engineLabel = glance["Engine Family"] || "BMW Engine";
+  const yearsProduced = glance["Years Produced"] || "";
+  const modelsFitted = modelsFittedOf(glance);
+  const crossBrandFitment = glance["Cross-Brand Fitment"] || "";
+  // "[Score]/100" pages fall back to the verdict breakdown's Total row ("76/100 (Sum of…)").
+  const totalRow = (data.verdictRating?.scoreBreakdown?.rows || []).find((row) => /^total/i.test(row.dimension || ""));
+  // Facts every section derives copy from (never hard-coded per engine).
+  const facts = {
+    engineLabel,
+    code: engineCode(engineLabel),
+    yearsProduced,
+    years: parseYears(yearsProduced),
+    modelsFitted,
+    crossBrandFitment,
+    fuel: glance.Fuel || "",
+    configuration: glance["Configuration / Displacement"] || "",
+    score: parseScore(glance["Overall Engine Score"]) ?? parseScore(totalRow?.score),
+    enquiries: enquiriesFrom(data.hero),
+  };
+  const { engineImage, heroCar, compatibility } = enginePageImages(slug, engineLabel, realignCompatibility(data.compatibility));
 
   return (
     <main className="flex flex-col">
@@ -79,23 +97,26 @@ export default async function EnginePage({ params }) {
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify(data.meta.jsonLd),
+            __html: JSON.stringify(sanitizeJsonLd(data.meta.jsonLd)),
           }}
         />
       )}
-      <EngineHero data={data.hero} />
-      <AtAGlance data={data.atAGlance} />
-      <VerdictRating data={data.verdictRating} />
+      <EngineHero data={data.hero} facts={facts} glanceRows={glanceRows} engineImage={engineImage} heroCar={heroCar} />
+      <AtAGlance data={atAGlance} facts={facts} engineImage={engineImage} heroCar={heroCar} />
+      <VerdictRating data={data.verdictRating} facts={facts} engineImage={engineImage} />
       <Compatibility
-        data={data.compatibility}
+        data={compatibility}
+        facts={facts}
         engineLabel={engineLabel}
         yearsProduced={yearsProduced}
         modelsFitted={modelsFitted}
         crossBrandFitment={crossBrandFitment}
+        engineImage={engineImage}
+        heroCar={heroCar}
       />
-      <CostGuide data={data.costGuide} engineLabel={engineLabel} />
-      <FAQAccordion data={data.faq} engineLabel={engineLabel} />
-      <TrustCta data={data.trustCta} engineLabel={engineLabel} />
+      <CostGuide data={data.costGuide} facts={facts} engineLabel={engineLabel} />
+      <FAQAccordion data={data.faq} facts={facts} engineLabel={engineLabel} engineImage={engineImage} heroCar={heroCar} />
+      <TrustCta data={data.trustCta} facts={facts} engineLabel={engineLabel} />
     </main>
   );
 }

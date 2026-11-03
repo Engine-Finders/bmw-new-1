@@ -84,25 +84,25 @@
               "@type": "ListItem",
               "position": 1,
               "name": "N57D30A",
-              "url": "https://bmwengines.uk/engine/n57d30a/"
+              "url": "https://bmwengines.uk/engine/n57"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "N57D30O0",
-              "url": "https://bmwengines.uk/engine/n57d30o0/"
+              "url": "https://bmwengines.uk/engine/n57"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "N57D30O1",
-              "url": "https://bmwengines.uk/engine/n57d30o1/"
+              "url": "https://bmwengines.uk/engine/n57"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "B57D30O0",
-              "url": "https://bmwengines.uk/engine/b57d30o0/"
+              "url": "https://bmwengines.uk/engine/b57-b58"
             }
           ]
         },
@@ -337,7 +337,7 @@
         "recommendation": "The N57 engine is prone to excessive timing chain wear which can lead to premature failure. Symptoms can include a rattle on start-up or a change in engine note where the chain is hitting on the guides - sometimes they give you no warning at all. The timing chain is located at the rear of the engine on these BMW diesels, making access labour-intensive. Service the oil more regularly at 8,000–10,000 mile intervals. A £1,500–£3,000 preventative chain replacement is far cheaper than a £2,800–£4,800 engine replacement. At the first sign of rattling, have the timing system inspected immediately.",
         "failureLink": {
           "label": "",
-          "href": "/failures/timing-chain-failure/"
+          "href": "/failures/timing-chain-diagnosis-guide"
         }
       },
       {
@@ -355,7 +355,7 @@
         "recommendation": "EGR and DPF blockages on the xDrive30d are common, predictable results of short trips and age. Diesel X5 models, particularly the 30d, can develop soot build-up in the DPF or EGR system if driven mostly on short trips. There have been recalls for faulty EGR replacement. Regular motorway runs (30+ minutes at 60+ mph) are essential to maintain the exhaust filtration system. If you notice coolant loss with no visible external leak, have the EGR system inspected promptly.",
         "failureLink": {
           "label": "",
-          "href": "/failures/egr-valve-cooler-failure/"
+          "href": "/failures/egr-valve-cooler"
         }
       },
       {
@@ -373,7 +373,7 @@
         "recommendation": "Many X5s experience oil leaks, particularly from the valve cover gasket and oil filter housing. The B57 engine also suffers from oil leaks, often originating from the valve cover gasket or oil filter housing. If the oil filter housing gasket fails, oil can leak onto the serpentine belt, causing it to slip or break - which can then be ingested into the engine through the front crankshaft seal, causing catastrophic failure. A £300–£900 gasket replacement is far cheaper than the consequences of a snapped belt.",
         "failureLink": {
           "label": "",
-          "href": "/failures/oil-leak/"
+          "href": "/failures/n55-valve-cover-oil-leak"
         }
       },
       {
@@ -391,7 +391,7 @@
         "recommendation": "The B57 engine uses an AdBlue (SCR) system to reduce NOx emissions. Common issues include NOx sensor failure and AdBlue system faults. Regular servicing and using high-quality AdBlue can help prevent issues. If the engine warning light appears with emissions-related codes, have the system diagnosed promptly.",
         "failureLink": {
           "label": "",
-          "href": "/failures/adblue-system-failure/"
+          "href": "/failures/adblue-scr-failure"
         }
       }
     ]

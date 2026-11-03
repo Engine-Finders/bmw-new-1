@@ -54,13 +54,13 @@
               "@type": "ListItem",
               "position": 1,
               "name": "7 Series E65/E66 760i (N73B60, 2003-2008)",
-              "url": "https://bmwengines.uk/7-series/e65/"
+              "url": "https://bmwengines.uk/7-series/e65-e66"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "7 Series F01/F02 760i (N74B60A, 2009-2015)",
-              "url": "https://bmwengines.uk/7-series/f01/"
+              "url": "https://bmwengines.uk/7-series/f01-f02"
             },
             {
               "@type": "ListItem",
@@ -78,19 +78,19 @@
               "@type": "ListItem",
               "position": 1,
               "name": "N73B60",
-              "url": "https://bmwengines.uk/engine/n73/"
+              "url": "https://bmwengines.uk/engine/n73-n74"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "N74B60A",
-              "url": "https://bmwengines.uk/engine/n74/"
+              "url": "https://bmwengines.uk/engine/n73-n74"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "S68",
-              "url": "https://bmwengines.uk/engine/s68/"
+              "url": "https://bmwengines.uk/technical/engine-code-decoder"
             }
           ]
         },
@@ -325,7 +325,7 @@
         "recommendation": "The N73's high-pressure fuel system is its most notorious weak point. DI brings benefits, but it also brings high-pressure components that can be failure-prone with age. Symptoms include long cranking, misfires, power loss, or stalling. If you experience any of these, have the HPFP inspected immediately. Replacing the pump before it fails completely can prevent damage to other fuel system components. Given the complexity and cost of the N73, preventative maintenance is essential.",
         "failureLink": {
           "label": "",
-          "href": "/failures/hpfp-failure/"
+          "href": "/failures/n54-high-pressure-fuel-pump"
         }
       },
       {
@@ -343,7 +343,7 @@
         "recommendation": "BMW V12 models fitted with the N73 engine often suffer from a failure of the front seal of the water transfer feed pipe, which is located under the intake valley pan. Symptoms will initially be a coolant leak from the weep hole in the front timing cover, followed by loss of coolant, overheating, and possible engine failure. There's enough demand for dedicated repair solutions that aftermarket kits are available. The N74 also suffers from water pump leaks. If you notice coolant loss, have the system pressure-tested immediately.",
         "failureLink": {
           "label": "",
-          "href": "/failures/coolant-leak/"
+          "href": "/failures/m54-cooling-system"
         }
       },
       {
@@ -361,7 +361,7 @@
         "recommendation": "Oil leaks are one of the most common problems across all 760i/760Li generations. On the N73 and N74, leaks from the valve cover gaskets and oil filter housing are particularly common. Over time, these gaskets can wear out, leading to leaks that can affect engine performance. The N73 also has a tendency to leaks and oil consumption. If you notice oil spots under the car or a burning smell, have it inspected promptly.",
         "failureLink": {
           "label": "",
-          "href": "/failures/oil-leak/"
+          "href": "/failures/n55-valve-cover-oil-leak"
         }
       },
       {
@@ -379,7 +379,7 @@
         "recommendation": "The N73 features Valvetronic variable valve lift paired with Double VANOS - a rare combination on a V12. However, the Double VANOS system has a modest resource here, sometimes less than 150,000 km. Vibrations at low speeds due to a malfunction of Valvetronic are common. If you experience rough idling or low-speed vibrations, have the Valvetronic and VANOS systems inspected.",
         "failureLink": {
           "label": "",
-          "href": "/failures/vanos-failure/"
+          "href": "/failures/vanos-solenoid-failure"
         }
       },
       {
@@ -415,7 +415,7 @@
         "recommendation": "After 150,000 km of run, timing chains on the N73 often stretch and require replacement. A cold-start rattle is the early warning sign - ignore it and you risk piston-valve contact and a full engine replacement. Regular oil changes with the correct BMW-approved oil are the best prevention.",
         "failureLink": {
           "label": "",
-          "href": "/failures/timing-chain-wear/"
+          "href": "/failures/timing-chain-diagnosis-guide"
         }
       }
     ]

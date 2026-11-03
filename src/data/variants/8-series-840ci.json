@@ -72,13 +72,13 @@
               "@type": "ListItem",
               "position": 1,
               "name": "M60B40",
-              "url": "https://bmwengines.uk/engine/m60/"
+              "url": "https://bmwengines.uk/engine/m60-m62"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "M62B44",
-              "url": "https://bmwengines.uk/engine/m62/"
+              "url": "https://bmwengines.uk/engine/m60-m62"
             }
           ]
         },
@@ -305,7 +305,7 @@
         "recommendation": "The M60's Nikasil cylinder lining is its fatal flaw. High-sulfur gasoline in the 1990s reacted with the coating, causing bore wear. BMW later switched to Alusil blocks, which are durable. A compression test is essential before buying any early 840Ci. If you experience oil consumption or rough running, have the engine inspected immediately. Most surviving engines have been replaced with Alusil units - verify your car's history.",
         "failureLink": {
           "label": "",
-          "href": "/failures/nikasil-bore-wear/"
+          "href": "/failures"
         }
       },
       {
@@ -323,7 +323,7 @@
         "recommendation": "The M62's timing chain guides are a main failure point. The plastic guides become brittle with age and break, sending debris into the oil system. If the chain jumps timing, it can cause catastrophic engine damage. A timing chain kit for the M62 includes guides, tensioners, and chains. At the first sign of rattling, book an inspection immediately - preventative replacement is far cheaper than a full engine rebuild.",
         "failureLink": {
           "label": "",
-          "href": "/failures/timing-chain-failure/"
+          "href": "/failures/timing-chain-diagnosis-guide"
         }
       },
       {
@@ -341,7 +341,7 @@
         "recommendation": "The cooling system on both M60 and M62 engines relies on plastic components - radiator end tanks, hose flanges, and thermostat housings - that become brittle with age. The water pump impeller can also fail. Neglecting the cooling system can lead to catastrophic overheating. If you see any coolant warnings, have the system inspected immediately.",
         "failureLink": {
           "label": "",
-          "href": "/failures/coolant-leak/"
+          "href": "/failures/m54-cooling-system"
         }
       }
     ]

@@ -39,7 +39,7 @@
               "@type": "ListItem",
               "position": 1,
               "name": "S68B44A 4.4L V8 PHEV Engine",
-              "url": "https://bmwengines.uk/engine/s68b44a/"
+              "url": "https://bmwengines.uk/technical/engine-code-decoder"
             }
           ]
         },
@@ -51,13 +51,13 @@
               "@type": "ListItem",
               "position": 1,
               "name": "M5 Saloon (G90)",
-              "url": "https://bmwengines.uk/m5/g90/"
+              "url": "https://bmwengines.uk/m5/g90-g99"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "M5 Touring (G99)",
-              "url": "https://bmwengines.uk/m5/g99/"
+              "url": "https://bmwengines.uk/m5/g90-g99"
             }
           ]
         },
@@ -219,7 +219,7 @@
     ],
     "primaryCta": {
       "label": "Explore G90/G99 Engines →",
-      "href": "#"
+      "href": "/m5/g90-g99"
     },
     "dataIntegrityNote": ""
   },
@@ -329,7 +329,7 @@
         "recommendation": "If you own or are buying a G90/G99 M5, have the hybrid system and battery health checked regularly. The 18.6 kWh battery is a significant investment -look for any signs of reduced electric range or charging issues. BMW's warranty should cover the battery for 8 years/100,000 miles, but extended warranty is strongly recommended.",
         "cta": {
           "label": "Compare S68 engine prices for your M5 →",
-          "href": "#"
+          "href": "/quote"
         }
       },
       {
@@ -357,7 +357,7 @@
         "recommendation": "On any G90/G99 M5, have the cooling system inspected regularly -a £1,500–£3,000 preventative repair is cheaper than the £8,000+ replacement that follows an overheating failure.",
         "cta": {
           "label": "Compare S68 engine prices for your M5 →",
-          "href": "#"
+          "href": "/quote"
         }
       },
       {
@@ -385,7 +385,7 @@
         "recommendation": "Budget for increased running costs -tyres, brakes and suspension components will wear faster than on lighter vehicles. Regular inspections are essential.",
         "cta": {
           "label": "Compare M5 maintenance costs →",
-          "href": "#"
+          "href": "/m5"
         }
       }
     ]
@@ -509,7 +509,7 @@
     "finalCta": "Find the best BMW M5 G90/G99 engine replacement UK drivers rely on. Compare real prices from trusted M specialists on EnginesMarket today and get back on the road with confidence.",
     "ctaButton": {
       "label": "Compare BMW M5 G90/G99 Engine Prices on EnginesMarket →",
-      "href": "#",
+      "href": "/quote",
       "note": "[PLACEHOLDER -confirm EnginesMarket URL structure]"
     }
   }

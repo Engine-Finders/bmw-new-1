@@ -52,55 +52,55 @@
               "@type": "ListItem",
               "position": 1,
               "name": "BMW 3 Series E36 320i/325i",
-              "url": "https://bmwengines.uk/models/3-series/e36/"
+              "url": "https://bmwengines.uk/3-series/e36"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "BMW 3 Series E36 328i (M52)",
-              "url": "https://bmwengines.uk/models/3-series/e36/"
+              "url": "https://bmwengines.uk/3-series/e36"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "BMW 3 Series E46 320i/325i/330i (M54)",
-              "url": "https://bmwengines.uk/models/3-series/e46/"
+              "url": "https://bmwengines.uk/3-series/e46"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "BMW 5 Series E34 520i/525i (M50)",
-              "url": "https://bmwengines.uk/models/5-series/e34/"
+              "url": "https://bmwengines.uk/5-series/e34"
             },
             {
               "@type": "ListItem",
               "position": 5,
               "name": "BMW 5 Series E39 520i/523i/525i/528i/530i",
-              "url": "https://bmwengines.uk/models/5-series/e39/"
+              "url": "https://bmwengines.uk/5-series/e39"
             },
             {
               "@type": "ListItem",
               "position": 6,
               "name": "BMW X5 E53 3.0i (M54B30)",
-              "url": "https://bmwengines.uk/models/x5/e53/"
+              "url": "https://bmwengines.uk/x5/e53"
             },
             {
               "@type": "ListItem",
               "position": 7,
               "name": "BMW Z3 E36/7 2.2i/2.5i/2.8i",
-              "url": "https://bmwengines.uk/models/z3/e36-7/"
+              "url": "https://bmwengines.uk/z3/e36-7"
             },
             {
               "@type": "ListItem",
               "position": 8,
               "name": "BMW Z4 E85/E86 2.2i/2.5i/3.0i (M54)",
-              "url": "https://bmwengines.uk/models/z4/e85-e86/"
+              "url": "https://bmwengines.uk/z4/e85"
             },
             {
               "@type": "ListItem",
               "position": 9,
               "name": "BMW 3 Series Compact E46/5 325ti (M54B25)",
-              "url": "https://bmwengines.uk/models/3-series-compact/e46-5/"
+              "url": "https://bmwengines.uk/3-series-compact/e46-5"
             }
           ]
         },
@@ -226,7 +226,7 @@
     "trustStrip": [],
     "primaryCta": {
       "label": "Compare M50/M52/M54 Engine Prices →",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "atAGlance": {
@@ -401,7 +401,7 @@
     "sharedCostNote": "",
     "cta": {
       "label": "→ Compare BMW M50/M52/M54 engine prices from UK specialists",
-      "href": "#"
+      "href": "/quote"
     }
   },
   "faq": {
@@ -442,7 +442,7 @@
     "finalCta": "Find the best BMW M50, M52 or M54 engine replacement UK drivers rely on. Compare real prices from trusted specialists on EnginesMarket today and get back on the road with confidence.",
     "ctaButton": {
       "label": "Compare BMW M50/M52/M54 Engine Prices Now →",
-      "href": "#"
+      "href": "/quote"
     }
   }
 }

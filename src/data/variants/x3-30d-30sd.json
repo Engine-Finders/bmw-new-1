@@ -102,7 +102,7 @@
               "@type": "ListItem",
               "position": 4,
               "name": "B57D30O0 / B57D30B",
-              "url": "https://bmwengines.uk/engine/b57/"
+              "url": "https://bmwengines.uk/engine/b57-b58"
             }
           ]
         },
@@ -345,7 +345,7 @@
         "recommendation": "Turbocharger failures are common on both 2.0- and 3.0-litre diesel X3s, mainly as a result of oil feed supply pipes becoming blocked over time. The N57 engine is particularly prone to turbocharger failures, with symptoms including loss of power, excessive smoke, and unusual noises. If you experience these symptoms, have the turbo system inspected immediately - a £800–£2,500 repair is far cheaper than the engine damage that can follow if ignored. For M57 engines, wastegate rattle is a known issue.",
         "failureLink": {
           "label": "Read the full turbo failure guide",
-          "href": "/failures/turbo-failure/"
+          "href": "/failures/turbocharger-failure"
         }
       },
       {
@@ -363,7 +363,7 @@
         "recommendation": "While the M57 is robust, the timing chain on these engines is recommended to be replaced between 250,000–300,000 km. On the N57, timing chain issues are more common. The B57 has improved chain durability but the recommended replacement interval is still 200,000 km. At the first sign of cold-start rattling, get the chain inspected immediately - a £1,200–£3,000 preventative repair is dramatically cheaper than a £4,500–£8,000 engine replacement.",
         "failureLink": {
           "label": "Read the full timing chain failure guide",
-          "href": "/failures/n57-timing-chain/"
+          "href": "/failures/timing-chain-diagnosis-guide"
         }
       },
       {
@@ -381,7 +381,7 @@
         "recommendation": "For N57 and B57 engines, failing high-pressure fuel pumps (OEM 13517603799) and carbon-clogged injectors (OEM 13537598421) are common issues. The N57 engine is also prone to injector problems. Fuel injector failures can lead to rough idling, poor fuel economy, and increased emissions. If you experience rough running or increased fuel consumption, have the injectors and HPFP tested. Catching these issues early prevents more serious engine damage.",
         "failureLink": {
           "label": "Read the full injector failure guide",
-          "href": "/failures/injector-failure/"
+          "href": "/failures/n57-injector-seal"
         }
       }
     ]

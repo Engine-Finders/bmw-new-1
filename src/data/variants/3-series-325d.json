@@ -60,7 +60,7 @@
               "@type": "ListItem",
               "position": 2,
               "name": "E90 LCI 325d (N57D30U0, 2008–2011)",
-              "url": "https://bmwengines.uk/3-series/e90-lci/"
+              "url": "https://bmwengines.uk/3-series/e90"
             },
             {
               "@type": "ListItem",
@@ -102,7 +102,7 @@
               "@type": "ListItem",
               "position": 4,
               "name": "B47D20",
-              "url": "https://bmwengines.uk/engine/b47/"
+              "url": "https://bmwengines.uk/engine/b37-b47"
             }
           ]
         },
@@ -363,7 +363,7 @@
         "recommendation": "The N57 has a rear-mounted timing chain design similar to the N47 - it's less prone to failure than the four-cylinder but still a known pattern on neglected oil changes. The EGR cooler recall (2018–2019) affected many N57-equipped vehicles. Verify recall completion before buying an LCI E90 325d.",
         "failureLink": {
           "label": "Read the full timing chain failure guide",
-          "href": "/failures/n57-timing-chain/"
+          "href": "/failures/timing-chain-diagnosis-guide"
         }
       },
       {
@@ -381,7 +381,7 @@
         "recommendation": "The M57 is a robust engine, but swirl flaps are its Achilles heel. Preventive blanking is cheap and effective. This applies to E90 pre-LCI 325d with the M57 engine only - the N57 does not suffer from swirl flap issues.",
         "failureLink": {
           "label": "Read the full swirl flap failure guide",
-          "href": "/failures/swirl-flap-failure/"
+          "href": "/failures/m57-swirl-flap"
         }
       }
     ]

@@ -1,0 +1,1166 @@
+/*
+ * Model page "Generations - Find Your Vehicle" (section 4), built to the reference designs
+ * (light + dark desktop at 1536px, light phone at 863px).
+ * The heading and comparison table are reference pixels times --u. The cards are one design at every
+ * width: 2 columns on phones, 3 on tablets, up to 6 on desktop (a vertical scroll beyond six).
+ */
+
+.section {
+  /* keeps the panel's shadow from reaching into the sections above and below */
+  overflow-x: visible;
+  overflow-y: clip;
+  background: var(--g-page);
+  color: var(--g-text);
+}
+
+.frame {
+  container-type: inline-size;
+  max-width: 1628px;
+  margin: 0 auto;
+}
+
+.panel {
+  --u: calc(100cqw / 863);
+  position: relative;
+  margin: 0 calc(8 * var(--u)) calc(10 * var(--u)) calc(10 * var(--u));
+  padding: 0 calc(24 * var(--u)) calc(12 * var(--u)) calc(23 * var(--u));
+  border: 1px solid var(--g-panel-border);
+  border-radius: calc(18 * var(--u));
+  background: var(--g-panel);
+  box-shadow: var(--g-panel-shadow);
+}
+
+/* ---------- theme tokens ---------- */
+
+.light {
+  --g-page: #fefefe;
+  --g-panel: #fefefe;
+  --g-panel-border: #eef0f4;
+  --g-panel-shadow: 0 2px 14px rgba(20, 40, 80, 0.05);
+  --g-text: #0a0a30;
+  --g-accent: #1651e6;
+  --g-copy: #52536a;
+  --g-card: #fefefe;
+  --g-card-border: #e9edf3;
+  --g-card-shadow: 0 4px 14px rgba(20, 40, 90, 0.04);
+  --g-open-border: #9bb8f4;
+  --g-num: #1557e6;
+  --g-label: #2d2c47;
+  --g-meta: #30324b;
+  --g-badge: #1f172b;
+  --g-tag: #1f5ae0;
+  --g-star: #174fea;
+  --g-star-off: #d9dce4;
+  --g-btn-border: #c3d1f0;
+  --g-btn-bg: #fefefe;
+  --g-btn-text: #2042aa;
+  --g-chevron: #2046b8;
+  --g-grid-border: #e3e7ee;
+  --g-grid-head: #fbfcfe;
+  --g-th: #14142e;
+  --g-cell: #30334a;
+  --g-icon: #3f66cf;
+  --g-risk: #d23f3f;
+  --g-safe: #3a8a55;
+  --g-pos-bg: #eef8ef;
+  --g-pos-head: #e6f7e8;
+  --g-pos-border: #cfe6d4;
+  --g-pos-text: #2f7a46;
+  --g-pos-icon: #2e9a4c;
+  --g-link: #2e2f45;
+  --g-link-a: #1d4fd0;
+  --g-link-icon-bg: #eef3fd;
+}
+
+.dark {
+  --g-page: #00091a;
+  --g-panel: #000e1e;
+  --g-panel-border: rgba(80, 110, 160, 0.22);
+  --g-panel-shadow: none;
+  --g-text: #f4f6fb;
+  --g-accent: #2069e4;
+  --g-copy: #dbe1ee;
+  --g-card: #020f1f;
+  --g-card-border: rgba(90, 120, 170, 0.28);
+  --g-card-shadow: none;
+  --g-open-border: #2a62d6;
+  --g-num: #1557e6;
+  --g-label: #e0e5f3;
+  --g-meta: #d6dde8;
+  --g-badge: #edf3ff;
+  --g-tag: #2e6fe0;
+  --g-star: #1c5fe3;
+  --g-star-off: #5d6878;
+  --g-btn-border: rgba(130, 150, 190, 0.42);
+  --g-btn-bg: #040f1e;
+  --g-btn-text: #f0f7ff;
+  --g-chevron: #e8eef9;
+  --g-open-btn-border: #2e6fd8;
+  --g-open-btn-text: #3a78d6;
+  --g-grid-border: rgba(110, 140, 190, 0.22);
+  --g-grid-head: #020c1c;
+  --g-th: #f1f7ff;
+  --g-cell: #e4e9f8;
+  --g-icon: #3f7ae6;
+  --g-risk: #e2414a;
+  --g-safe: #3c9f69;
+  --g-pos-bg: #031c1e;
+  --g-pos-head: #031f20;
+  --g-pos-border: rgba(60, 160, 100, 0.35);
+  --g-pos-text: #53ad79;
+  --g-pos-icon: #3cbf68;
+  --g-link: #e0e9f6;
+  --g-link-a: #266cc3;
+  --g-link-icon-bg: rgba(40, 90, 180, 0.18);
+}
+
+/* ---------- heading ---------- */
+
+.head {
+  padding-top: calc(56 * var(--u));
+}
+
+.title {
+  margin: 0 0 0 calc(12 * var(--u));
+  font-size: calc(36 * var(--u));
+  font-weight: 700;
+  line-height: calc(46 * var(--u));
+  color: var(--g-text);
+}
+
+.accent {
+  font-size: calc(35.1 * var(--u));
+  color: var(--g-accent);
+}
+
+.copy {
+  max-width: calc(410 * var(--u));
+  margin: calc(9 * var(--u)) 0 0 calc(10 * var(--u));
+  font-size: calc(15.47 * var(--u));
+  line-height: calc(26.5 * var(--u));
+  color: var(--g-copy);
+}
+
+.deskOnly {
+  display: none;
+}
+
+/* ---------- shared bits ---------- */
+
+.num {
+  display: inline-flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  border-radius: calc(4 * var(--u));
+  background: var(--g-num);
+  color: #ffffff;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.cardLabel {
+  display: block;
+  margin: 0;
+  color: var(--g-label);
+}
+
+.code {
+  display: block;
+  margin: 0;
+  font-weight: 700;
+  color: var(--g-text);
+}
+
+.years,
+.engines {
+  display: block;
+  margin: 0;
+  color: var(--g-meta);
+}
+
+.engines a {
+  color: inherit;
+  font-weight: inherit;
+  text-decoration: none;
+}
+
+.badgeLine {
+  margin: 0;
+  font-weight: 600;
+  color: var(--g-badge);
+}
+
+.badgeTag {
+  margin: 0;
+  font-weight: 600;
+  color: var(--g-tag);
+}
+
+.carImg {
+  object-fit: contain;
+  object-position: center bottom;
+}
+
+.stars {
+  display: inline-flex;
+}
+
+.starBase {
+  fill: var(--g-star);
+}
+
+.starOff .starBase {
+  fill: var(--g-star-off);
+}
+
+.starHalf .starBase {
+  fill: var(--g-star-off);
+}
+
+.starFill {
+  fill: var(--g-star);
+}
+
+.verdictLabel {
+  margin: 0;
+  font-weight: 700;
+  color: var(--g-text);
+}
+
+.verdictText {
+  margin: 0;
+  color: var(--g-meta);
+}
+
+/* ---------- cards (every screen size) ---------- */
+
+.cards {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 16px;
+}
+
+/* while a card is open the others keep their own height instead of stretching to match it */
+.cards:has(.cardOpen) {
+  align-items: start;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  padding: 12px 12px 14px;
+  border: 1px solid var(--g-card-border);
+  border-radius: 12px;
+  background: var(--g-card);
+  box-shadow: var(--g-card-shadow);
+}
+
+.cardOpen {
+  border-color: var(--g-open-border);
+}
+
+.cardHead {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.card .num {
+  width: 22px;
+  height: 22px;
+  border-radius: 4px;
+  font-size: 13px;
+}
+
+.card .cardLabel {
+  min-width: 0;
+  font-size: var(--fs-label);
+  line-height: 1.3;
+}
+
+.headChevron {
+  flex-shrink: 0;
+  width: 18px;
+  height: 18px;
+  margin-left: auto;
+  color: var(--g-chevron);
+}
+
+.card .code {
+  margin-top: 10px;
+  font-size: var(--fs-h6);
+  line-height: 1.25;
+}
+
+.card .years {
+  margin-top: 6px;
+  font-size: var(--fs-label);
+  line-height: 1.4;
+}
+
+.card .engines {
+  margin-top: 2px;
+  font-size: var(--fs-label);
+  line-height: 1.4;
+}
+
+.car {
+  position: relative;
+  flex: none;
+  height: 76px;
+  margin-top: 12px;
+}
+
+.carMark {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--g-chevron);
+  opacity: 0.4;
+}
+
+.carMarkIcon {
+  width: 64px;
+  height: 64px;
+}
+
+.cardStars {
+  align-self: flex-start;
+  gap: 2px;
+  margin: 10px 0 12px;
+}
+
+.cardStars svg {
+  width: 17px;
+  height: 17px;
+}
+
+/* shown only while the card is open */
+.details {
+  margin-bottom: 12px;
+  padding-top: 10px;
+  border-top: 1px solid var(--g-card-border);
+}
+
+.details .badgeLine,
+.details .badgeTag {
+  font-size: var(--fs-label);
+  line-height: 1.35;
+}
+
+.badgeBlock + .verdict {
+  margin-top: 8px;
+}
+
+.verdict .verdictLabel {
+  font-size: var(--fs-label);
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.verdict .verdictText {
+  margin-top: 4px;
+  font-size: var(--fs-label);
+  line-height: 1.55;
+}
+
+/* the button sits at the bottom of the card, so buttons line up across a row */
+.cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-height: 38px;
+  margin-top: auto;
+  padding: 6px 8px;
+  border: 1px solid var(--g-btn-border);
+  border-radius: 6px;
+  background: var(--g-btn-bg);
+  color: var(--g-btn-text);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.cardOpen .cta {
+  border-color: var(--g-open-btn-border, var(--g-btn-border));
+  color: var(--g-open-btn-text, var(--g-btn-text));
+}
+
+.ctaIcon {
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  color: var(--g-chevron);
+}
+
+.cardOpen .ctaIcon {
+  color: inherit;
+}
+
+@container (min-width: 651px) {
+  .cards {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 14px 12px;
+  }
+}
+
+/* ---------- comparison ---------- */
+
+.compare {
+  margin-top: calc(7 * var(--u));
+  padding: calc(9 * var(--u)) calc(10 * var(--u)) calc(14 * var(--u)) calc(11 * var(--u));
+  border: 1px solid var(--g-card-border);
+  border-radius: calc(14 * var(--u));
+  background: var(--g-card);
+}
+
+.compareTitle {
+  display: flex;
+  align-items: center;
+  gap: calc(14 * var(--u));
+  margin: 0 0 0 calc(6 * var(--u));
+  font-size: calc(17.9 * var(--u));
+  font-weight: 600;
+  line-height: calc(26 * var(--u));
+  color: var(--g-text);
+}
+
+.compareIcon {
+  width: calc(28 * var(--u));
+  height: calc(26 * var(--u));
+  padding: calc(3 * var(--u)) calc(4 * var(--u));
+  border-radius: calc(6 * var(--u));
+  background: var(--g-link-icon-bg);
+  color: var(--g-icon);
+}
+
+.grid {
+  position: relative;
+  display: grid;
+  margin-top: calc(9 * var(--u));
+  overflow: hidden;
+  border: 1px solid var(--g-grid-border);
+  border-radius: calc(8 * var(--u));
+}
+
+.gridPhone {
+  grid-template-columns: 131fr 157fr 168fr 167fr 154fr;
+  font-size: calc(12 * var(--u));
+}
+
+.gHead,
+.gRow {
+  display: contents;
+}
+
+.gCorner,
+.gTh,
+.posHead,
+.gLabel,
+.gCell {
+  display: flex;
+  align-items: center;
+  border-right: 1px solid var(--g-grid-border);
+  border-bottom: 1px solid var(--g-grid-border);
+}
+
+.gCorner,
+.gTh {
+  background: var(--g-grid-head);
+}
+
+.gridPhone .gCorner,
+.gridPhone .gTh,
+.gridPhone .posHead {
+  min-height: calc(47 * var(--u));
+}
+
+.gTh {
+  gap: calc(19 * var(--u));
+  color: var(--g-th);
+}
+
+.gridPhone .gTh {
+  justify-content: center;
+  text-align: center;
+}
+
+.thText {
+  display: flex;
+  flex-direction: column;
+}
+
+.thText strong {
+  font-weight: 600;
+}
+
+.gridPhone .thText strong {
+  font-size: calc(13.8 * var(--u));
+  line-height: calc(19 * var(--u));
+}
+
+.gridPhone .thText span {
+  font-size: calc(12.2 * var(--u));
+  line-height: calc(19 * var(--u));
+  color: var(--g-cell);
+}
+
+.thIcon {
+  flex-shrink: 0;
+  width: calc(22 * var(--u));
+  height: calc(22 * var(--u));
+  color: var(--g-icon);
+}
+
+.posHead {
+  gap: calc(12 * var(--u));
+  border-right: 0;
+  border-left: 1px solid var(--g-pos-border);
+  border-bottom-color: var(--g-pos-border);
+  background: var(--g-pos-head);
+  color: var(--g-pos-text);
+  font-weight: 600;
+}
+
+.gridPhone .posHead {
+  justify-content: center;
+  padding: 0 calc(8 * var(--u));
+  font-size: calc(13 * var(--u));
+}
+
+.posIcon {
+  flex-shrink: 0;
+  width: calc(20 * var(--u));
+  height: calc(20 * var(--u));
+  color: var(--g-pos-icon);
+}
+
+.gLabel {
+  gap: calc(14 * var(--u));
+  font-weight: 600;
+  color: var(--g-th);
+}
+
+.gridPhone .gLabel {
+  gap: calc(10 * var(--u));
+  padding-left: calc(4 * var(--u));
+  font-size: calc(11.6 * var(--u));
+}
+
+.gridPhone .rowIcon {
+  width: calc(24 * var(--u));
+  min-height: calc(24 * var(--u));
+}
+
+.rowIcon {
+  flex-shrink: 0;
+  width: calc(22 * var(--u));
+  height: calc(22 * var(--u));
+  color: var(--g-icon);
+}
+
+.gCell {
+  color: var(--g-cell);
+}
+
+.gridPhone .gCell {
+  padding-left: calc(19 * var(--u));
+  font-size: calc(12 * var(--u));
+  line-height: calc(19 * var(--u));
+}
+
+.gridPhone .gRow:nth-child(2) > * {
+  min-height: calc(59 * var(--u));
+}
+
+.gridPhone .gRow:nth-child(3) > * {
+  min-height: calc(49 * var(--u));
+}
+
+.gRow:last-child > * {
+  border-bottom: 0;
+}
+
+.tone_risk {
+  color: var(--g-risk);
+}
+
+.tone_safe {
+  color: var(--g-safe);
+}
+
+/* position text: the merged last column, spanning the body rows */
+.posText {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  border-left: 1px solid var(--g-pos-border);
+  border-bottom: 0 !important;
+  height: auto !important;
+  align-self: stretch;
+  background: var(--g-pos-bg);
+  color: var(--g-pos-text);
+  font-weight: 600;
+}
+
+.gridPhone .posText {
+  padding: calc(4 * var(--u)) calc(8 * var(--u)) 0 calc(19 * var(--u));
+  font-size: calc(12.6 * var(--u));
+  line-height: calc(19 * var(--u));
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  margin: calc(10 * var(--u)) 0 0 calc(5 * var(--u));
+  color: var(--g-link);
+  font-size: calc(13.5 * var(--u));
+}
+
+.linkIcon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: calc(24 * var(--u));
+  height: calc(24 * var(--u));
+  margin-right: calc(16 * var(--u));
+  border-radius: 50%;
+  background: var(--g-link-icon-bg);
+  color: var(--g-icon);
+}
+
+.linkSvg {
+  width: 72%;
+  height: 72%;
+}
+
+.linkA {
+  display: inline-flex;
+  align-items: center;
+  gap: calc(10 * var(--u));
+  margin-left: calc(20 * var(--u));
+  color: var(--g-link-a);
+  font-size: calc(15.9 * var(--u));
+  font-weight: 700;
+}
+
+.linkArrow {
+  width: calc(18 * var(--u));
+  height: calc(18 * var(--u));
+}
+
+/* ======================= Small phones ======================= */
+/* At exact reference scale text would be ~6px on a 390px phone, so it gets minimum sizes. */
+@container (max-width: 650px) {
+  .panel {
+    margin: 0 0 10px;
+    padding: 0 12px 12px;
+    border-radius: 0;
+    border-width: 1px 0;
+  }
+
+  .head {
+    padding-top: 24px;
+  }
+
+  .title,
+  .accent {
+    margin-left: 0;
+    font-size: 18px;
+    line-height: 1.25;
+  }
+
+  .copy {
+    max-width: none;
+    margin-left: 0;
+    font-size: 15px;
+    line-height: 1.55;
+  }
+
+  .compare {
+    margin-top: 10px;
+    padding: 10px 8px 12px;
+    border-radius: 12px;
+  }
+
+  .compareTitle {
+    gap: 8px;
+    margin-left: 2px;
+    font-size: 16px;
+    line-height: 1.35;
+  }
+
+  .compareIcon {
+    width: 20px;
+    height: 20px;
+  }
+
+  /* Phones: the comparison table keeps readable text (13-14px) and scrolls sideways instead of shrinking. */
+  .gridWrap {
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+  }
+
+  .gridPhone {
+    grid-template-columns: 118px 128px 140px 150px 132px;
+    min-width: 668px;
+    margin-top: 10px;
+    border-radius: 8px;
+    font-size: 13px;
+  }
+
+  .gridPhone .gCorner,
+  .gridPhone .gTh,
+  .gridPhone .posHead {
+    min-height: 0;
+    padding: 9px 6px;
+  }
+
+  .gridPhone .thText strong {
+    font-size: 14px;
+    line-height: 1.35;
+  }
+
+  .gridPhone .thText span,
+  .gridPhone .gCell,
+  .gridPhone .gLabel,
+  .gridPhone .posHead,
+  .gridPhone .posText {
+    font-size: 13px;
+    line-height: 1.4;
+  }
+
+  .gridPhone .gLabel {
+    gap: 5px;
+    padding: 0 4px 0 8px;
+    white-space: nowrap;
+  }
+
+  .gridPhone .rowIcon {
+    width: 18px;
+    min-height: 18px;
+  }
+
+  .gridPhone .posHead {
+    gap: 5px;
+  }
+
+  .gridPhone .posIcon {
+    width: 17px;
+    min-height: 17px;
+  }
+
+  .gridPhone .gRow:nth-child(2) > *,
+  .gridPhone .gRow:nth-child(3) > * {
+    min-height: 0;
+  }
+
+  .gridPhone .gCell {
+    padding: 10px 6px 10px 8px;
+  }
+
+  .gridPhone .posText {
+    padding: 6px 6px 0 8px;
+  }
+
+  /* "Read the full comparison: <link>": wraps instead of shrinking */
+  .link {
+    margin-left: 0;
+    flex-wrap: wrap;
+    row-gap: 4px;
+    font-size: 14px;
+  }
+
+  .linkIcon {
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+  }
+
+  .linkA {
+    gap: 6px;
+    margin-left: 6px;
+    font-size: 14px;
+  }
+
+  .linkArrow {
+    width: 14px;
+    height: 14px;
+  }
+}
+
+/* ======================= Tablets ======================= */
+/* At reference scale the comparison table drops to 10-12px between 651 and 1023px: same readable table as phones. */
+@media (min-width: 651px) and (max-width: 1023px) {
+  /* Tablets: the comparison table keeps readable text (13-14px) and scrolls sideways instead of shrinking. */
+  .gridWrap {
+    overflow-x: auto;
+    overscroll-behavior-x: contain;
+  }
+
+  .gridPhone {
+    grid-template-columns: 118px 128px 140px 150px 132px;
+    min-width: 668px;
+    margin-top: 10px;
+    border-radius: 8px;
+    font-size: 13px;
+  }
+
+  .gridPhone .gCorner,
+  .gridPhone .gTh,
+  .gridPhone .posHead {
+    min-height: 0;
+    padding: 9px 6px;
+  }
+
+  .gridPhone .thText strong {
+    font-size: 14px;
+    line-height: 1.35;
+  }
+
+  .gridPhone .thText span,
+  .gridPhone .gCell,
+  .gridPhone .gLabel,
+  .gridPhone .posHead,
+  .gridPhone .posText {
+    font-size: 13px;
+    line-height: 1.4;
+  }
+
+  .gridPhone .gLabel {
+    gap: 5px;
+    padding: 0 4px 0 8px;
+    white-space: nowrap;
+  }
+
+  .gridPhone .rowIcon {
+    width: 18px;
+    min-height: 18px;
+  }
+
+  .gridPhone .posHead {
+    gap: 5px;
+  }
+
+  .gridPhone .posIcon {
+    width: 17px;
+    min-height: 17px;
+  }
+
+  .gridPhone .gRow:nth-child(2) > *,
+  .gridPhone .gRow:nth-child(3) > * {
+    min-height: 0;
+  }
+
+  .gridPhone .gCell {
+    padding: 10px 6px 10px 8px;
+  }
+
+  .gridPhone .posText {
+    padding: 6px 6px 0 8px;
+  }
+
+  /* "Read the full comparison: <link>": wraps instead of shrinking */
+  .link {
+    margin-left: 0;
+    flex-wrap: wrap;
+    row-gap: 4px;
+    font-size: 14px;
+  }
+
+  .linkIcon {
+    flex-shrink: 0;
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+  }
+
+  .linkA {
+    gap: 6px;
+    margin-left: 6px;
+    font-size: 14px;
+  }
+
+  .linkArrow {
+    width: 14px;
+    height: 14px;
+  }
+}
+
+/* ======================= Laptops and desktops ======================= */
+
+@media (min-width: 1024px) {
+  .panel {
+    --u: calc(100cqw / 1514);
+    margin: calc(3 * var(--u)) calc(11 * var(--u)) calc(11 * var(--u));
+    padding: 0 calc(25 * var(--u)) calc(24 * var(--u)) calc(25 * var(--u));
+    border-radius: calc(16 * var(--u));
+  }
+
+  .deskOnly {
+    display: block;
+  }
+
+  .phoneOnly {
+    display: none;
+  }
+
+  .head {
+    padding-top: calc(62 * var(--u));
+  }
+
+  .title {
+    margin-left: calc(14 * var(--u));
+    font-size: var(--fs-h2);
+    line-height: 1.27;
+    letter-spacing: 0;
+  }
+
+  .accent {
+    font-size: var(--fs-h2);
+  }
+
+  .copy {
+    max-width: none;
+    margin: calc(5 * var(--u)) 0 0 calc(13 * var(--u));
+    font-size: var(--fs-label);
+    line-height: 1.65;
+  }
+
+  /* ---------- cards: up to six in a row; more than six scroll vertically ---------- */
+
+  .cards {
+    grid-template-columns: repeat(var(--cols, 6), minmax(0, 1fr));
+    gap: 14px 12px;
+    margin-top: 28px;
+  }
+
+  /* Small laptops: six or seven columns leave ~130px cards, so chassis codes run into each other; four across instead. */
+  @media (max-width: 1279px) {
+    .cards {
+      grid-template-columns: repeat(min(var(--cols, 6), 4), minmax(0, 1fr));
+    }
+  }
+
+  .cards[data-scroll] {
+    max-height: var(--row1, 560px);
+    padding: 2px 12px 6px 0;
+    overflow-y: auto;
+    scrollbar-gutter: stable;
+  }
+
+  .cards[data-scroll]::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  .cards[data-scroll]::-webkit-scrollbar-track {
+    border-radius: 8px;
+    background: var(--g-card-border);
+  }
+
+  .cards[data-scroll]::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    background: var(--g-open-border);
+  }
+
+  @supports not selector(::-webkit-scrollbar) {
+    .cards[data-scroll] {
+      scrollbar-width: thin;
+      scrollbar-color: var(--g-open-border) var(--g-card-border);
+    }
+  }
+
+  .card {
+    padding: 14px 12px;
+  }
+
+  .car {
+    height: 88px;
+  }
+
+  /* ---------- comparison ---------- */
+
+  .compare {
+    margin: calc(23 * var(--u)) 0 0 calc(1 * var(--u));
+    padding: calc(13 * var(--u)) calc(31 * var(--u)) calc(18 * var(--u)) calc(24 * var(--u));
+    border-radius: calc(14 * var(--u));
+  }
+
+  .compareTitle {
+    gap: calc(20 * var(--u));
+    margin-left: calc(1 * var(--u));
+    font-size: var(--fs-p);
+    line-height: 1.28;
+  }
+
+  .compareIcon {
+    width: calc(27 * var(--u));
+    height: calc(27 * var(--u));
+    padding: 0;
+    background: none;
+  }
+
+  .gridDesk {
+    grid-template-columns: 214fr 316fr 299fr 292fr 284fr;
+    margin-top: calc(6 * var(--u));
+    border-radius: calc(10 * var(--u));
+    font-size: var(--fs-label);
+  }
+
+  .gridDesk .gCorner,
+  .gridDesk .gTh,
+  .gridDesk .posHead {
+    min-height: calc(55 * var(--u));
+  }
+
+  .gridDesk .gTh {
+    padding-left: calc(55 * var(--u));
+  }
+
+  .gridDesk .thText strong {
+    font-size: var(--fs-label);
+    line-height: 1.46;
+  }
+
+  .gridDesk .thText span {
+    font-size: var(--fs-label);
+    line-height: 1.49;
+    color: var(--g-cell);
+  }
+
+  .gridDesk .posHead {
+    padding-left: calc(40 * var(--u));
+    gap: calc(17 * var(--u));
+    font-size: var(--fs-label);
+  }
+
+  .gridDesk .gLabel {
+    padding-left: calc(20 * var(--u));
+    gap: calc(16 * var(--u));
+  }
+
+  .gridDesk .gRow:nth-child(2) > * {
+    min-height: calc(62 * var(--u));
+  }
+
+  .gridDesk .gRow:nth-child(3) > * {
+    min-height: calc(63 * var(--u));
+  }
+
+  .gridDesk .gCell {
+    padding-left: calc(58 * var(--u));
+    line-height: calc(21.5 * var(--u));
+  }
+
+  .gridDesk .gCell:nth-child(3) {
+    padding-left: calc(51 * var(--u));
+  }
+
+  .gridDesk .gCell:nth-child(4) {
+    padding-left: calc(46 * var(--u));
+  }
+
+  .gridDesk .posText {
+    padding: calc(8 * var(--u)) 0 0 calc(39 * var(--u));
+    font-size: var(--fs-label);
+    line-height: 1.53;
+  }
+
+  .link {
+    margin: calc(16 * var(--u)) 0 0 calc(-1 * var(--u));
+    font-size: var(--fs-label);
+  }
+
+  .linkIcon {
+    width: calc(24 * var(--u));
+    height: calc(24 * var(--u));
+    margin-right: calc(17 * var(--u));
+  }
+
+  .linkA {
+    gap: calc(12 * var(--u));
+    margin-left: calc(20 * var(--u));
+    font-size: var(--fs-body);
+  }
+
+  .linkArrow {
+    width: calc(16 * var(--u));
+    height: calc(16 * var(--u));
+  }
+
+  /* Site container: same width and side padding as every other section. */
+  .frame {
+    max-width: var(--container-8xl);
+    padding-inline: var(--gutter);
+  }
+
+  .panel {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+/* Phones and tablets: one heading size and one body size across every model-page section. */
+@media (max-width: 1023px) {
+  h2.title,
+  h2.title span,
+  h2.title .accent {
+    font-size: var(--fs-h2) !important;
+    line-height: 1.15 !important;
+    letter-spacing: -0.02em !important;
+    white-space: normal !important;
+  }
+
+  .copy {
+    font-size: 15px !important;
+    line-height: 1.55 !important;
+  }
+}
+
+/* Desktop: no inner card around the section, so the heading lines up with every other section. */
+@media (min-width: 1024px) {
+  .panel {
+    padding-left: 0;
+    padding-right: 0;
+    border-color: transparent;
+    background: transparent;
+    box-shadow: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  .title,
+  .copy {
+    margin-left: 0;
+  }
+}
+
+/* Long comparison labels wrap on phones instead of pushing the page wider. */
+@media (max-width: 1023px) {
+  .link {
+    flex-wrap: wrap;
+    row-gap: 4px;
+    white-space: normal;
+  }
+
+  .linkA {
+    margin-left: 0;
+  }
+}

@@ -78,13 +78,13 @@
               "@type": "ListItem",
               "position": 1,
               "name": "B38A15A",
-              "url": "https://bmwengines.uk/engine/b38/"
+              "url": "https://bmwengines.uk/engine/b38-b48"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "B38A15M0",
-              "url": "https://bmwengines.uk/engine/b38/"
+              "url": "https://bmwengines.uk/engine/b38-b48"
             }
           ]
         },
@@ -327,7 +327,7 @@
         "recommendation": "The \"Antrieb gestört\" (drivetrain malfunction) warning is a well-documented issue on the U11 X1 PHEV. One owner reported their 25e stranded at a petrol station with the message. Another reported the same issue on a weeks-old 30e. The fault can range from a software glitch to a more serious hybrid component failure. If this warning appears, have the vehicle diagnosed immediately. Some cases require software updates; others may need hybrid component replacement. Do not ignore this warning -it can leave you stranded.",
         "failureLink": {
           "label": "Read the full drivetrain malfunction guide → /failures/phev-drivetrain-malfunction/ [NEW FAILURE PAGE NEEDED]",
-          "href": "#"
+          "href": "/failures"
         }
       },
       {
@@ -345,7 +345,7 @@
         "recommendation": "BMW hybrids can suffer from battery and charging issues. Some hybrids fail to charge properly due to faulty charging ports, cables, or battery issues. The U11 generation uses a 14.2 kWh lithium-ion battery. Symptoms include slow or no charging and reduced electric range. If you experience charging problems, have the charging components inspected. The high-voltage battery is expensive to replace -check if the vehicle is still under the BMW battery warranty (8 years / 100,000 miles in many markets).",
         "failureLink": {
           "label": "Read the full hybrid battery guide",
-          "href": "/failures/hybrid-battery-failure/"
+          "href": "/failures/battery-parasitic-drain"
         }
       },
       {
@@ -363,7 +363,7 @@
         "recommendation": "While the B38 is more reliable than the <a href='https://bmwengines.uk/engine/n47'>N47</a> diesel, timing chain tensioner wear is still a documented issue on B38 engines. Symptoms include metallic rattling noises on cold start, rough idling and engine misfires. The timing chain can stretch over time due to wear and tear, affecting the engine's timing. At the first sign of cold-start rattle, get the chain inspected immediately. A £800–£1,800 preventative repair is dramatically cheaper than a £4,500–£8,500 engine replacement.",
         "failureLink": {
           "label": "Read the full timing chain failure guide → /failures/b38-timing-chain/ [NEW FAILURE PAGE NEEDED]",
-          "href": "#"
+          "href": "/failures/timing-chain-diagnosis-guide"
         }
       }
     ]

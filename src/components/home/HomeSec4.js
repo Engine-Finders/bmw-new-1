@@ -2,195 +2,175 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import MStripe from "@/components/reusableComponents/MStripe";
+import { TABLE_HEADER_BG, TABLE_HEADER_TEXT } from "@/components/shared/tableHeader";
 import { useTheme } from "@/components/shared/themeProvider";
+import BrandIcon from "@/components/home/brandIcon";
+import VerdictGlyph from "@/components/home/VerdictGlyph";
 
-const iconPaths = {
-  chart: <path d="M4 19V9m5 10V5m5 14v-7m5 7H3" />,
-  wrench: <path d="m14.7 6.3 3-3a4 4 0 0 1 0 5.7l-1.4 1.4-2.7-2.7L7 14.3V17H4.3l6.6-6.6-2.7-2.7 1.4-1.4a4 4 0 0 1 5.1 0Z" />,
-  book: <path d="M4 6.5A2.5 2.5 0 0 1 6.5 4H11v16H6.5A2.5 2.5 0 0 0 4 22V6.5Zm16 0A2.5 2.5 0 0 0 17.5 4H13v16h4.5A2.5 2.5 0 0 1 20 22V6.5Z" />,
-  trophy: <path d="M8 4h8v4a4 4 0 0 1-8 0V4Zm0 2H4v2a3 3 0 0 0 4 2.8M16 6h4v2a3 3 0 0 1-4 2.8M12 12v5m-3 3h6m-7 0h8" />,
-  engine: <path d="M3 13h2v-3h4V7H7V5h8v2h-2v3h3l2 2h3v7h-3l-2 2H7v-3H5v-3H3v-2Zm6-1v7h6.2l1.8-2h2v-3h-2l-1.8-2H9Z" />,
-  car: <path d="M5 13 7 7h10l2 6M4 13h16v6H4v-6Zm2 0V9m12 4V9M7 17h.01M17 17h.01" />,
-  tag: <path d="M20 10 12 18 4 10V4h6l10 10ZM7.5 7.5h.01" />,
-  warning: <path d="M12 9v4m0 4h.01M10 4.9 2.6 18a2 2 0 0 0 1.74 3h15.32A2 2 0 0 0 21.4 18L14 4.9a2 2 0 0 0-3.48 0Z" />,
-  shield: <path d="M12 3 5 6v6c0 5 3.3 8.8 7 9 3.7-.2 7-4 7-9V6l-7-3Zm-2 9 1.5 1.5L15 10" />,
-  flame: <path d="M12 3s1 2.5 1 4.5S11 11 11 11s.3-3-1.5-5.5C7.2 8 6 10 6 13a6 6 0 0 0 12 0c0-3.2-1.8-5.7-4.5-8.2.1 1.7-.2 3.1-1.5 4.7" />,
-  users: <path d="M16 21v-2a4 4 0 0 0-8 0v2m12 0v-2.5a3.5 3.5 0 0 0-3-3.45M4 21v-2.5a3.5 3.5 0 0 1 3-3.45M12 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8Zm6-1a3 3 0 1 0 0-6M6 10a3 3 0 1 1 0-6" />,
-  crown: <path d="m3 8 4 3 5-6 5 6 4-3-2 10H5L3 8Zm4 11h10" />,
-  check: <path d="m5 12 4 4L19 6" />,
-  x: <path d="M8 8l8 8M16 8l-8 8" />,
-  alert: <path d="M12 8v5m0 4h.01M12 3 2 21h20L12 3Z" />,
-};
+// BMW Ownership Rankings - ranking / winner / why / verdict table under a grille header.
+// Phone adds the trust strip above the table and the "Honest, Data-Backed" card below it.
 
-const verdictStyles = {
-  best: "border-[#d7eadb] bg-[#f2fbf4] text-[#071827]",
-  safe: "border-[#d7eadb] bg-[#eefaf3] text-[#071827]",
-  avoid: "border-[#f4cfd2] bg-[#fff0f1] text-[#071827]",
-  watch: "border-[#f4dfbf] bg-[#fff7ea] text-[#5b3200]",
-  family: "border-[#d5e8fb] bg-[#f0f8ff] text-[#06316f]",
-};
+const TONE = { red: "bg-[#e3262b]", orange: "bg-[#f5a20b]" };
 
-const verdictIconColors = {
-  best: "text-[#f6a400]",
-  safe: "text-[#35a853]",
-  avoid: "text-[#df232a]",
-  watch: "text-[#f59e0b]",
-  family: "text-[var(--color-primary)]",
-};
-
-function Icon({ name, className = "h-6 w-6" }) {
+function Chevron({ className = "h-5 w-5" }) {
   return (
-    <svg aria-hidden="true" viewBox="0 0 24 24" className={className} fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-      {iconPaths[name] || iconPaths.trophy}
+    <svg aria-hidden="true" viewBox="0 0 24 24" className={className} fill="none" stroke="currentColor" strokeWidth="1.8">
+      <path d="m9 5 7 7-7 7" />
     </svg>
   );
 }
 
-function ChevronIcon() {
+// Verdict: icon + word only (no chip / background box).
+function Verdict({ verdict, isDark, phone = false }) {
   return (
-    <svg aria-hidden="true" viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-      <path d="m9 6 6 6-6 6" />
-    </svg>
+    <span className={`inline-flex items-center gap-2 font-semibold ${isDark ? "text-white" : "text-[#0b1626]"} ${phone ? "shrink-0 text-[15px]" : "text-[16px]"}`}>
+      <VerdictGlyph type={verdict.type} isDark={isDark} className={phone ? "h-[22px] w-[22px] shrink-0" : "h-6 w-6 shrink-0"} />
+      {verdict.text}
+    </span>
   );
 }
 
-function ArrowIcon() {
+function RankIcon({ row, phone }) {
+  const tone = phone && row.phoneTone ? TONE[row.phoneTone] : "bg-[#0b4fc0]";
   return (
-    <svg aria-hidden="true" viewBox="0 0 24 24" className="h-6 w-6" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-      <path d="M5 12h14m-6-6 6 6-6 6" />
-    </svg>
+    <span className={`flex shrink-0 items-center justify-center rounded-full text-white ${tone} ${phone ? "h-9 w-9" : "h-12 w-12"}`}>
+      <BrandIcon name={row.icon} className={phone ? "h-5 w-5" : "h-7 w-7"} scale={1} />
+    </span>
   );
 }
 
+// Phone badges: value on one line, description on at most two (same sizes as every phone badge row).
 function TrustStrip({ items, isDark }) {
   return (
-    <ul
-      className={`grid grid-cols-4 overflow-hidden rounded-md border shadow-[0_14px_34px_rgba(10,26,43,0.1)] md:hidden ${
-        isDark ? "border-[#1f3c57] bg-[rgba(7,23,36,0.86)]" : "border-[#d7dde6] bg-white"
-      }`}
-    >
+    <ul className={`grid grid-cols-4 rounded-[10px] border py-3.5 ${isDark ? "border-[#1e3350] bg-[rgba(10,18,30,0.9)]" : "border-[#e6eaf0] bg-white"}`}>
       {items.map((item) => (
-        <li key={item.text} className={`flex min-w-0 flex-col items-center gap-2 border-r px-1.5 py-4 text-center last:border-r-0 ${isDark ? "border-[#29445e]" : "border-[#d7dde6]"}`}>
-          <span className="flex h-8 w-8 items-center justify-center text-[var(--color-primary)]">
-            <Icon name={item.icon} className="h-8 w-8" />
+        <li
+          key={item.text}
+          className={`relative flex flex-col items-center px-0.5 text-center [&:not(:last-child)]:after:absolute [&:not(:last-child)]:after:right-0 [&:not(:last-child)]:after:top-1/2 [&:not(:last-child)]:after:h-[60%] [&:not(:last-child)]:after:w-px [&:not(:last-child)]:after:-translate-y-1/2 ${
+            isDark ? "after:bg-white/10" : "after:bg-[#e6eaf0]"
+          }`}
+        >
+          <span className={isDark ? "text-[#3b82f6]" : "text-[#0b4fc0]"}>
+            <BrandIcon name={item.icon} className="h-7 w-7" scale={1} />
           </span>
-          <span className={isDark ? "text-white" : "text-[#071827]"}>
-            <strong className="block text-[0.94rem] leading-tight">{item.value}</strong>
-            <span className={`block text-[0.66rem] leading-[1.28] ${isDark ? "text-white/78" : "text-[#27384a]"}`}>{item.text}</span>
+          <span className={`mt-1.5 whitespace-nowrap text-[15px] font-semibold leading-tight ${isDark ? "text-white" : "text-[#0b1626]"}`}>
+            {item.value}
+            {item.tail ? <span className="font-normal"> {item.tail}</span> : null}
           </span>
+          <span className={`mt-0.5 text-[13px] leading-[1.3] ${isDark ? "text-white/80" : "text-[#3b4656]"}`}>{item.text}</span>
         </li>
       ))}
     </ul>
   );
 }
 
-function VerdictBadge({ verdict }) {
-  return (
-    <span className={`inline-flex min-w-[74px] items-center justify-center gap-1.5 rounded-md border px-2 py-1.5 text-[0.76rem] font-bold md:min-w-[104px] md:gap-3 md:px-3 md:py-2 md:text-[0.9rem] ${verdictStyles[verdict.type] || verdictStyles.best}`}>
-      <Icon name={verdict.icon} className={`h-4 w-4 md:h-5 md:w-5 ${verdictIconColors[verdict.type] || verdictIconColors.best}`} />
-      <span>{verdict.text}</span>
-    </span>
-  );
-}
-
-function RankingIcon({ row }) {
-  const dangerClass = row.verdict.type === "avoid" ? "bg-[#ed1c24]" : row.verdict.type === "watch" ? "bg-[#f59e0b]" : "bg-[var(--color-primary)]";
-
-  return (
-    <span className={`flex h-10 w-10 shrink-0 items-center justify-center rounded-full text-white md:h-14 md:w-14 ${dangerClass}`}>
-      <Icon name={row.icon} className="h-6 w-6 md:h-8 md:w-8" />
-    </span>
-  );
-}
-
-function RankingRow({ row, isDark }) {
-  return (
-    <Link
-      href={row.href}
-      className={`grid grid-cols-[72px_78px_minmax(0,1fr)_74px_12px] items-center gap-1 border-b px-2 py-3 last:border-b-0 sm:grid-cols-[82px_90px_minmax(0,1fr)_86px_14px] sm:gap-2 sm:px-3 md:grid-cols-[minmax(320px,1.3fr)_minmax(180px,0.78fr)_minmax(430px,2.3fr)_126px_24px] md:gap-5 md:px-6 md:py-4 ${
-        isDark ? "border-[#223a51] text-white hover:bg-[rgba(20,46,68,0.45)]" : "border-[#dfe5ed] text-[#071827] hover:bg-[#f8fbff]"
-      }`}
-    >
-      <div className="flex min-w-0 flex-col items-center gap-2 text-center md:flex-row md:gap-5 md:text-left">
-        <RankingIcon row={row} />
-        <span className="text-[0.7rem] font-bold leading-[1.2] sm:text-[0.76rem] md:text-[1.08rem]">{row.ranking}</span>
-      </div>
-      <div className={`min-w-0 border-l pl-2 md:pl-5 ${isDark ? "border-[#223a51]" : "border-[#dfe5ed]"}`}>
-        <p className="text-[0.78rem] font-bold leading-tight sm:text-[0.86rem] md:text-[1.12rem]">{row.winner}</p>
-        {row.winnerNote ? <p className={`mt-1 text-[0.62rem] leading-[1.2] sm:text-[0.68rem] md:text-[0.85rem] ${isDark ? "text-white/75" : "text-[#27384a]"}`} dangerouslySetInnerHTML={{ __html: row.winnerNote }} /> : null}
-      </div>
-      <p className={`min-w-0 border-l pl-2 text-[0.66rem] leading-[1.32] sm:text-[0.72rem] md:pl-5 md:text-[0.9rem] ${isDark ? "border-[#223a51] text-white/82" : "border-[#dfe5ed] text-[#172b4a]"}`} dangerouslySetInnerHTML={{ __html: row.why }} />
-      <div className="flex justify-center">
-        <VerdictBadge verdict={row.verdict} />
-      </div>
-      <span className={isDark ? "text-white" : "text-[#071827]"}>
-        <ChevronIcon />
-      </span>
-    </Link>
-  );
-}
+// One grid for header and rows: every heading starts exactly where its column's content starts.
+const COLS = "grid grid-cols-[minmax(0,1fr)_minmax(0,0.72fr)_minmax(0,1.75fr)_120px]";
 
 export default function HomeSec4({ data }) {
   const { theme } = useTheme();
   const isDark = theme === "dark";
-  const heroImage = isDark ? data.heroImages.dark : data.heroImages.light;
+  const strong = isDark ? "text-white" : "text-[#0b1626]";
+  const soft = isDark ? "text-white/80" : "text-[#2a3646]";
+  const line = isDark ? "border-white/[0.08]" : "border-[#e8ecf1]";
+  const grille = isDark ? data.headerImage.dark : data.headerImage.light;
 
   return (
-    <section className={`relative overflow-hidden px-3 py-6 md:py-8 ${isDark ? "bg-[#02070b]" : "bg-white"}`}>
-      <div className="absolute inset-x-0 top-0 hidden h-[320px] md:block">
-        <Image src={heroImage.src} alt={heroImage.alt} fill className="object-cover object-[82%_center]" sizes="100vw" />
-        <div className={isDark ? "absolute inset-0 bg-[linear-gradient(90deg,rgba(2,7,11,0.96)_0%,rgba(2,7,11,0.8)_38%,rgba(2,7,11,0.35)_74%)]" : "absolute inset-0 bg-[linear-gradient(90deg,rgba(255,255,255,0.98)_0%,rgba(255,255,255,0.88)_44%,rgba(255,255,255,0.1)_78%)]"} />
-        <div className={isDark ? "absolute inset-x-0 bottom-0 h-24 bg-[linear-gradient(0deg,#02070b_0%,transparent_100%)]" : "absolute inset-x-0 bottom-0 h-24 bg-[linear-gradient(0deg,white_0%,transparent_100%)]"} />
+    <section className={`relative overflow-hidden ${isDark ? "bg-[#060a10]" : "bg-[#fbfcfd]"}`}>
+      {/* Desktop / tablet */}
+      <div className="relative hidden md:block">
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute right-0 top-0 h-[300px] w-[47%] overflow-hidden [mask-image:linear-gradient(90deg,transparent_0%,black_16%),linear-gradient(180deg,black_62%,transparent_100%)] [mask-composite:intersect]"
+        >
+          <div className="absolute -right-[3%] -top-[4%] aspect-[1092/490] w-[104%] origin-left [transform:perspective(1400px)_rotateY(14deg)]">
+            <Image src={grille} alt="" fill sizes="55vw" className="object-contain object-top" />
+          </div>
+        </div>
+        <div className="site-container section-y relative">
+          <div className="max-w-[700px]">
+            <h2 className={`t-h2 ${strong}`} dangerouslySetInnerHTML={{ __html: data.h2 }} />
+            <p className={`t-p mt-3 max-w-[620px] ${soft}`}>{data.subHeadline}</p>
+          </div>
+
+          <div
+            className={`relative mt-8 overflow-hidden rounded-[10px] border ${
+              isDark ? "border-white/[0.1] bg-[rgba(10,16,26,0.88)]" : "border-[#e6eaf0] bg-white shadow-[0_8px_30px_rgba(10,26,43,0.06)]"
+            }`}
+          >
+            <div className={`${COLS} t-label items-center px-4 py-3.5 font-semibold uppercase tracking-[0.02em]`} style={{ background: TABLE_HEADER_BG, color: TABLE_HEADER_TEXT }}>
+              {data.columns.map((c) => (
+                <span key={c} className="px-4">
+                  {c}
+                </span>
+              ))}
+            </div>
+            {data.rankings.map((row) => (
+              <Link key={row.ranking} href={row.href} className={`${COLS} items-center border-b px-4 py-3 font-normal last:border-b-0 ${line} ${strong}`}>
+                <span className={`flex items-center gap-4 border-r px-4 py-1.5 ${line}`}>
+                  <RankIcon row={row} />
+                  <span className="t-body">{row.ranking}</span>
+                </span>
+                <span className={`border-r px-4 py-1.5 ${line}`}>
+                  <span className="block text-[18px] font-medium leading-tight">{row.winner}</span>
+                  {row.winnerNote ? <span className={`t-label mt-1 block ${soft}`}>{row.winnerNote}</span> : null}
+                </span>
+                <span className={`t-body px-4 ${soft}`}>{row.why}</span>
+                <span className="px-4">
+                  <Verdict verdict={row.verdict} isDark={isDark} />
+                </span>
+              </Link>
+            ))}
+          </div>
+        </div>
       </div>
 
-      <div className="relative mx-auto w-full max-w-8xl">
-        <div className="max-w-[760px] pt-2 md:pt-8">
-          <h2 className={`text-[2.35rem] font-bold leading-[0.98] tracking-normal md:text-[3.6rem] ${isDark ? "text-white" : "text-[#071827]"}`} dangerouslySetInnerHTML={{ __html: data.h2 }} />
-          <div className="mt-4">
-            <MStripe />
-          </div>
-          <p className={`mt-4 max-w-[700px] text-[0.86rem] leading-[1.45] md:text-[1.08rem] ${isDark ? "text-white/82" : "text-[#172b4a]"}`} dangerouslySetInnerHTML={{ __html: data.subHeadline }} />
-        </div>
-
-        <div className="mt-6">
+      {/* Phone */}
+      <div className="relative px-4 pb-8 pt-8 md:hidden">
+        <p className={`t-h2 ${strong}`}>BMW Ownership Rankings</p>
+        <p className={`t-body mt-3 ${soft}`}>{data.subHeadline}</p>
+        <div className="mt-4">
           <TrustStrip items={data.trustStrip} isDark={isDark} />
         </div>
 
-        <div
-          className={`mt-6 overflow-hidden rounded-md border shadow-[0_14px_36px_rgba(10,26,43,0.08)] md:mt-10 ${
-            isDark ? "border-[#223a51] bg-[rgba(7,23,36,0.88)]" : "border-[#d7dde6] bg-white"
-          }`}
-        >
-          <div className="grid grid-cols-[72px_78px_minmax(0,1fr)_74px_12px] gap-1 bg-[var(--color-primary)] px-2 py-3 text-[0.58rem] font-bold text-white sm:grid-cols-[82px_90px_minmax(0,1fr)_86px_14px] sm:gap-2 sm:px-3 sm:text-[0.64rem] md:grid-cols-[minmax(320px,1.3fr)_minmax(180px,0.78fr)_minmax(430px,2.3fr)_126px_24px] md:gap-5 md:px-6 md:text-[0.82rem]">
-            <span className="text-center md:text-left md:pl-10">{data.columns[0]}</span>
-            <span>{data.columns[1]}</span>
-            <span>{data.columns[2]}</span>
-            <span className="text-center">{data.columns[3]}</span>
-            <span />
-          </div>
+        <ul className="mt-4 grid gap-3">
           {data.rankings.map((row) => (
-            <RankingRow key={row.ranking} row={row} isDark={isDark} />
+            <li key={row.ranking}>
+              <Link href={row.href} className={`block rounded-[12px] border p-4 font-normal ${isDark ? "border-white/10 bg-[#0b111a]" : "border-[#e3e7ed] bg-white"} ${strong}`}>
+                <span className="flex items-center gap-3">
+                  <RankIcon row={row} phone />
+                  <span className={`flex-1 text-[14px] font-semibold uppercase leading-[1.35] tracking-[0.02em] ${isDark ? "text-[#3b82f6]" : "text-[#0b4fc0]"}`}>{row.ranking}</span>
+                  <Verdict verdict={row.verdict} isDark={isDark} phone />
+                </span>
+                <span className="mt-3 block text-[18px] font-bold leading-tight">
+                  {row.winner}
+                  {row.winnerNote ? <span className={`ml-1.5 text-[14px] font-normal ${soft}`}>{row.winnerNote}</span> : null}
+                </span>
+                <span className={`t-body mt-1.5 flex items-start gap-2 ${soft}`}>
+                  <span className="flex-1">{row.why}</span>
+                  <Chevron className="mt-1 h-4 w-4 shrink-0" />
+                </span>
+              </Link>
+            </li>
           ))}
-        </div>
+        </ul>
 
-        <div
-          className={`mt-7 flex flex-col gap-4 rounded-md border p-4 md:hidden ${
-            isDark ? "border-[#223a51] bg-[rgba(7,23,36,0.88)]" : "border-[#d7dde6] bg-[#f8fbff]"
-          }`}
-        >
-          <div className="flex items-center gap-4">
-            <span className="flex h-15 w-15 shrink-0 items-center justify-center rounded-lg bg-[var(--color-primary)] text-white">
-              <Icon name={data.bottomCta.icon} className="h-9 w-9" />
+        <div className={`mt-4 flex flex-col gap-3 rounded-[8px] border p-4 ${isDark ? "border-white/10 bg-[#0b111a]" : "border-[#e3e7ed] bg-[#f6f8fb]"}`}>
+          <div className="flex gap-3.5">
+            <svg aria-hidden="true" viewBox="0 0 24 24" className="h-12 w-12 shrink-0">
+              <path d="M12 2 4 5v6.5c0 5 3.4 9.3 8 10.5 4.6-1.2 8-5.5 8-10.5V5l-8-3Z" fill="#0b47a8" />
+              <path d="m8.5 12 2.5 2.5 4.5-5" fill="none" stroke="#fff" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
+            </svg>
+            <span>
+              <span className={`block text-[17px] font-semibold ${strong}`}>{data.bottomCta.title}</span>
+              <span className={`t-body mt-1 block ${soft}`}>{data.bottomCta.text}</span>
             </span>
-            <div>
-              <p className={`text-[0.9rem] font-bold ${isDark ? "text-white" : "text-[#071827]"}`}>{data.bottomCta.title}</p>
-              <p className={`mt-1 text-[0.74rem] leading-[1.35] ${isDark ? "text-white/76" : "text-[#27384a]"}`} dangerouslySetInnerHTML={{ __html: data.bottomCta.text }} />
-            </div>
           </div>
-          <Link href={data.bottomCta.href} className="btn-cta flex items-center justify-center gap-5 rounded-md bg-[var(--color-primary)] px-4 py-3 text-[0.82rem] font-bold text-white">
-            <span>{data.bottomCta.buttonLabel}</span>
-            <ArrowIcon />
+          <Link href={data.bottomCta.href} className="flex items-center justify-center gap-3 rounded-[4px] bg-[#0b47a8] py-3 text-[15px] font-semibold text-white">
+            {data.bottomCta.buttonLabel}
+            <svg aria-hidden="true" viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="1.8">
+              <path d="M4 12h16m-6-6 6 6-6 6" />
+            </svg>
           </Link>
         </div>
       </div>

@@ -1,378 +1,252 @@
 "use client";
 
-import { useMemo, useState } from "react";
-import MStripe from "@/components/reusableComponents/MStripe";
-import { sectionDescription, sectionH2, sectionTableText } from "@/components/models/sectionTypography";
+import { useState } from "react";
+import Image from "next/image";
+import { Inter } from "next/font/google";
+import { useTheme } from "@/components/shared/themeProvider";
+import s from "./ReplacementCosts.module.css";
+import ReplacementCostsLegacy from "./ReplacementCostsLegacy";
 
-const carImages = {
-  classic: "https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=760&q=85",
-  e46: "https://images.unsplash.com/photo-1556189250-72ba954cfc2b?auto=format&fit=crop&w=760&q=85",
-  e90: "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&w=760&q=85",
-  f30: "https://images.unsplash.com/photo-1617814076668-cccd5e772c97?auto=format&fit=crop&w=760&q=85",
-  g20: "https://images.unsplash.com/photo-1603386329225-868f9b1ee6c9?auto=format&fit=crop&w=760&q=85",
+const inter = Inter({ subsets: ["latin"], weight: ["400", "500", "600", "700"], display: "swap" });
+
+// a space before each break keeps words apart where the break is hidden
+const spaced = (html = "") => String(html).replace(/([^-])\s*<br\s*\/?>\s*/g, "$1 <br>");
+// Desktop notes wrap to their column: the copy's line breaks were set for the old type size.
+const flat = (html = "") => String(html).replace(/\s*<br\s*\/?>\s*/g, " ");
+
+const KEYS = ["model", "engineCode", "usedSupply", "reconditionedSupply", "rebuiltSupply", "labourHours"];
+
+const ICONS = {
+  pound: (
+    <g fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M12 2.8l7.5 2.8v5.6c0 4.6-3.2 8.2-7.5 10-4.3-1.8-7.5-5.4-7.5-10V5.6z" />
+      <path d="M14 8.6a2 2 0 0 0-3.7 1c0 1.2.5 2 .5 3.1 0 .9-.5 1.6-1.3 2h5M9.4 11.8h3.4" />
+    </g>
+  ),
+  gear: (
+    <g fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinejoin="round">
+      <path d="M10.3 2.8h3.4l.5 2.4 1.8.9 2.1-1.4 2.4 2.4-1.4 2.1.9 1.8 2.4.5v3.4l-2.4.5-.9 1.8 1.4 2.1-2.4 2.4-2.1-1.4-1.8.9-.5 2.4h-3.4l-.5-2.4-1.8-.9-2.1 1.4-2.4-2.4 1.4-2.1-.9-1.8-2.4-.5v-3.4l2.4-.5.9-1.8-1.4-2.1 2.4-2.4 2.1 1.4 1.8-.9z" />
+      <circle cx="12" cy="12" r="3.6" />
+    </g>
+  ),
+  wrench: (
+    <path
+      d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.4-3.4a6 6 0 0 1-7.9 7.9l-6.6 6.6a2.1 2.1 0 0 1-3-3l6.6-6.6a6 6 0 0 1 7.9-7.9z"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.6"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+  ),
+  shield: (
+    <g fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M12 2.8l7.5 2.8v5.6c0 4.6-3.2 8.2-7.5 10-4.3-1.8-7.5-5.4-7.5-10V5.6z" />
+      <path d="M8.6 12.1l2.4 2.4 4.4-4.6" />
+    </g>
+  ),
+  doc: (
+    <g fill="none" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M6 2.5h8.5l4 4v15H6z" />
+      <path d="M14.5 2.5v4h4M8.8 10.5h7M8.8 13h7M8.8 15.5h7M8.8 18h5" />
+    </g>
+  ),
+  clock: (
+    <g fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round">
+      <circle cx="12" cy="12" r="9" />
+      <path d="M12 7v5l3 2M12 3.8v1M12 19.2v1M3.8 12h1M19.2 12h1" />
+    </g>
+  ),
+  info: (
+    <g fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round">
+      <circle cx="12" cy="12" r="9" />
+      <path d="M12 11v5.5M12 7.6v.2" strokeWidth="2.2" />
+    </g>
+  ),
+  crown: <path d="M4 17.5L2.8 8.2l4.9 3.6L12 5.2l4.3 6.6 4.9-3.6L20 17.5zM4.6 19.5h14.8" fill="currentColor" stroke="currentColor" strokeWidth="1.2" strokeLinejoin="round" />,
+  shieldBars: (
+    <g>
+      <path d="M12 2.6l8 3v6c0 5-3.4 8.7-8 10.6-4.6-1.9-8-5.6-8-10.6v-6z" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round" />
+      <path d="M8.2 16v-3.2h2v3.2zM11 16v-5h2v5zM13.8 16V9h2v7z" fill="currentColor" />
+    </g>
+  ),
 };
 
-const f30Fallback = {
-  title: "F30/F31 - 3 Series (2012–2019)",
-  columns: ["Variant", "Engine Code", "Used (Supply)", "Reconditioned (Supply)", "Rebuilt (Supply)", "Labour Hours"],
-  rows: [
-    {
-      model: "316d–320d (N47 pre-2016)",
-      engineCode: "N47D20C",
-      usedSupply: "£1,800–£3,200",
-      reconditionedSupply: "£3,200–£5,500",
-      rebuiltSupply: "£4,500–£6,500",
-      labourHours: "10–14 hrs",
-    },
-    {
-      model: "316d–320d (B47 2016+)",
-      engineCode: "B47D20A",
-      usedSupply: "£1,500–£2,800",
-      reconditionedSupply: "£2,800–£4,500",
-      rebuiltSupply: "£3,800–£5,800",
-      labourHours: "8–12 hrs",
-    },
-    {
-      model: "325d–330d (N57)",
-      engineCode: "N57D30",
-      usedSupply: "£2,500–£4,500",
-      reconditionedSupply: "£4,500–£7,000",
-      rebuiltSupply: "£6,000–£9,000",
-      labourHours: "12–16 hrs",
-    },
-    {
-      model: "330i (B48)",
-      engineCode: "B48B20",
-      usedSupply: "£1,500–£2,800",
-      reconditionedSupply: "£3,000–£5,000",
-      rebuiltSupply: "£4,200–£6,500",
-      labourHours: "10–14 hrs",
-    },
-    {
-      model: "335i/340i (N55/B58)",
-      engineCode: "N55B30 / B58B30",
-      usedSupply: "£2,000–£4,000",
-      reconditionedSupply: "£3,800–£6,000",
-      rebuiltSupply: "£5,000–£8,000",
-      labourHours: "10–16 hrs",
-    },
-  ],
-};
-
-const trustItems = [
-  { title: "Transparent", text: "Real UK Prices", icon: "pound" },
-  { title: "Quality Assured", text: "Tested Engines", icon: "gear" },
-  { title: "Fitted by Experts", text: "Trusted Garages", icon: "wrench" },
-  { title: "12 Months", text: "Warranty", icon: "shield" },
-];
-
-function cleanText(text = "") {
-  return String(text)
-    .replaceAll("Ã‚Â£", "\u00a3")
-    .replaceAll("Â£", "\u00a3")
-    .replaceAll("Ã¢â‚¬â€œ", "\u2013")
-    .replaceAll("â€“", "\u2013")
-    .replaceAll("Ã¢â‚¬â€", "\u2014")
-    .replaceAll("â€”", "\u2014")
-    .replace(/\s+/g, " ")
-    .trim();
-}
-
-function Icon({ type, className = "h-10 w-10" }) {
-  const paths = {
-    pound: <path d="M16 6.5A4.5 4.5 0 0 0 7.5 9v8m-3 0h10M6 13h7" />,
-    gear: <path d="M12 8a4 4 0 1 1 0 8 4 4 0 0 1 0-8Zm0-5 1.3 2.2 2.5.7 2.2-1.2 1.8 3.1-1.9 1.7.1 2.6 1.8 1.8-1.8 3.1-2.4-.8-2.3 1.3L12 21l-1.3-2.5-2.3-1.3-2.4.8-1.8-3.1L6 13.1l.1-2.6-1.9-1.7L6 5.7l2.2 1.2 2.5-.7L12 3Z" />,
-    wrench: <path d="m14.7 6.3 3-3a4 4 0 0 1 0 5.7l-1.4 1.4-2.7-2.7L6 15.3V18h2.7l7.6-7.6-1.6-4.1Z" />,
-    shield: <path d="M12 3 5 6v6c0 5 3.3 8.8 7 9 3.7-.2 7-4 7-9V6l-7-3Zm-2 9 1.6 1.6L15 10" />,
-    note: <path d="M6 3h9l4 4v14H6V3Zm9 0v5h5M9 13h7M9 17h7M9 9h3" />,
-    info: <path d="M12 17v-6m0-4h.01M12 22a10 10 0 1 1 0-20 10 10 0 0 1 0 20Z" />,
-    crown: <path d="m4 9 4 4 4-7 4 7 4-4-2 9H6L4 9Zm4 12h8" />,
-    chartShield: <path d="M12 3 5 6v6c0 5 3.3 8.8 7 9 3.7-.2 7-4 7-9V6l-7-3ZM9 16v-4m3 4V9m3 7v-6" />,
-  };
-
+function Icon({ name, className }) {
   return (
-    <svg aria-hidden="true" viewBox="0 0 24 24" className={className} fill="none" stroke="currentColor" strokeWidth="2">
-      {paths[type] || paths.info}
+    <svg aria-hidden="true" viewBox="0 0 24 24" className={className}>
+      {ICONS[name]}
     </svg>
   );
 }
 
-function splitTitle(title = "") {
-  const clean = cleanText(title);
-  const [main, accent = ""] = clean.split(/\s+(?:\u2014|-)\s+By\s+/);
-  return { main, accent: accent ? `By ${accent}` : "" };
-}
-
-function tableKey(title = "") {
-  const clean = cleanText(title).toLowerCase();
-  if (clean.includes("classic")) return "classic";
-  if (clean.includes("e46")) return "e46";
-  if (clean.includes("e90")) return "e90";
-  if (clean.includes("f30")) return "f30";
-  if (clean.includes("g20")) return "g20";
-  return "classic";
-}
-
-function tableLabel(title = "") {
-  const clean = cleanText(title);
-  const years = clean.match(/\(([^)]+)\)/)?.[1] || "";
-  const label = clean.replace(/\s*\([^)]+\)\s*$/, "").replace(" - 3 Series", "");
-  return { label, years };
-}
-
-function normalizeTables(tables = []) {
-  const output = [];
-  let insertedF30 = false;
-
-  tables.forEach((table) => {
-    const key = tableKey(table.title);
-
-    if (key === "f30") {
-      if (!insertedF30) {
-        output.push(table.rows?.length ? table : f30Fallback);
-        insertedF30 = true;
-      }
-      return;
-    }
-
-    if (table.rows?.length) output.push(table);
-  });
-
-  return output;
-}
-
-function splitFiguresNote(note = "") {
-  const clean = cleanText(note);
-  const [labour = "", rule = ""] = clean.split(" The 3 Series rule ");
-  return {
-    important: "N47D20C, B47D20A, N57D30, B58B30 figures [BMW-QUOTE]; older engines [PLACEHOLDER - confirm vs cost sheet].",
-    labour: labour.replace(/^Labour estimate:\s*/i, ""),
-    rule: rule ? `The 3 Series rule ${rule}` : "",
-  };
-}
-
-function TrustStrip() {
+function CostTable({ columns, rows, mobile, className }) {
   return (
-    <div className="grid grid-cols-4 overflow-hidden rounded-md border border-[var(--color-border)] bg-[var(--color-surface-raised)] shadow-[0_8px_24px_var(--color-shadow)]">
-      {trustItems.map((item) => (
-        <div key={item.title} className="flex flex-col items-center justify-center border-r border-[var(--color-border)] px-1.5 py-3 text-center last:border-r-0 md:px-4 md:py-3.5">
-          <span className="text-[var(--color-primary)]">
-            <Icon type={item.icon} className="h-8 w-8 md:h-9 md:w-9" />
-          </span>
-          <strong className="mt-1.5 text-[13px] leading-[1.1] text-[var(--color-text)] md:text-[15px]">{item.title}</strong>
-          <span className="mt-0.5 text-[12px] leading-[1.1] text-[var(--color-text-muted)] md:text-[13px]">{item.text}</span>
+    <div className={`${s.table} ${className || ""}`} role="table">
+      <div className={`${s.tr} ${s.thead}`} role="row">
+        {columns.map((column) => (
+          <span key={column} role="columnheader" dangerouslySetInnerHTML={{ __html: spaced(column) }} />
+        ))}
+      </div>
+      {rows.map((row, i) => (
+        <div key={`${row.model}-${i}`} className={s.tr} role="row">
+          {KEYS.map((key) => {
+            const value = (mobile && row[`${key}Mobile`]) || row[key];
+            // phones break prices after the dash, as in the phone reference
+            const html = mobile && /Supply$/.test(key) ? String(value).replace(" – ", " –<br>") : value;
+            return <span key={key} role="cell" dangerouslySetInnerHTML={{ __html: spaced(html) }} />;
+          })}
         </div>
       ))}
     </div>
   );
 }
 
-function CostTable({ table }) {
-  if (!table) return null;
-
-  const columns = table.columns || [];
-
-  return (
-    <div className="overflow-hidden rounded-md border border-[var(--color-border)] bg-[var(--color-surface)]">
-      <table className="w-full border-collapse text-left text-[14px] text-[var(--color-text)] md:text-[15px]">
-        <thead>
-          <tr className="bg-[var(--color-primary-strong)] text-white">
-            {columns.map((column) => (
-              <th key={column} className="border-r border-white/20 px-2 py-2 text-left font-bold last:border-r-0 md:px-4 md:py-2">
-                {column}
-              </th>
-            ))}
-          </tr>
-        </thead>
-        <tbody>
-          {(table.rows || []).map((row) => (
-            <tr key={`${row.model}-${row.engineCode}`}>
-              <td className="border-r border-t border-[var(--color-border)] px-2 py-2 font-bold md:px-4 md:py-2">{cleanText(row.model)}</td>
-              <td className="border-r border-t border-[var(--color-border)] px-2 py-2 md:px-4 md:py-2">{cleanText(row.engineCode)}</td>
-              <td className="border-r border-t border-[var(--color-border)] px-2 py-2 text-[var(--color-primary)] md:px-4 md:py-2">{cleanText(row.usedSupply)}</td>
-              <td className="border-r border-t border-[var(--color-border)] px-2 py-2 text-[var(--color-primary)] md:px-4 md:py-2">{cleanText(row.reconditionedSupply)}</td>
-              <td className="border-r border-t border-[var(--color-border)] px-2 py-2 text-[var(--color-primary)] md:px-4 md:py-2">{cleanText(row.rebuiltSupply)}</td>
-              <td className="border-t border-[var(--color-border)] px-2 py-2 text-center md:px-4 md:py-2">{cleanText(row.labourHours)}</td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
-    </div>
-  );
+function CarImage({ src, sizes }) {
+  if (!src) return null;
+  return <Image src={src} alt="" fill className={s.carImg} sizes={sizes} />;
 }
 
-function DesktopGenerationRow({ table }) {
-  const key = tableKey(table.title);
-  const { label, years } = tableLabel(table.title);
-
-  return (
-    <div className="grid gap-0 md:grid-cols-[260px_minmax(0,1fr)]">
-      <div className="border border-r-0 border-[var(--color-border)] bg-[var(--color-surface-raised)] p-3.5 md:rounded-l-md md:p-4">
-        <h3 className="text-[17px] font-bold leading-[1.08] text-[var(--color-primary)] md:text-[19px]">{label}</h3>
-        <p className={`mt-1 ${sectionTableText}`}>{years}</p>
-        <div className="mt-2 h-[82px] overflow-hidden rounded-md md:h-[96px]">
-          <img src={carImages[key]} alt="" className="h-full w-full object-cover object-center" loading="lazy" />
-        </div>
-      </div>
-      <CostTable table={table} />
-    </div>
-  );
-}
-
-function MobileTabs({ tables }) {
-  const [activeIndex, setActiveIndex] = useState(0);
-  const activeTable = tables[activeIndex] || tables[0];
-  if (!activeTable) return null;
-
-  const key = tableKey(activeTable?.title);
-  const active = tableLabel(activeTable?.title);
-
-  return (
-    <div className="md:hidden">
-      <div className="overflow-hidden rounded-t-md border border-[var(--color-border)] bg-[var(--color-surface)]">
-        <div className="flex overflow-x-auto">
-          {tables.map((table, index) => {
-            const label = tableLabel(table.title);
-            const selected = index === activeIndex;
-
-            return (
-              <button
-                key={table.title}
-                type="button"
-                onClick={() => setActiveIndex(index)}
-                className={`min-w-[150px] border-r border-[var(--color-border)] px-3 py-3.5 text-center last:border-r-0 transition-all duration-200 hover:text-black hover:shadow-[0_12px_24px_rgba(0,0,0,0.14)] ${
-                  selected ? "bg-[var(--color-primary)] text-white" : "bg-[var(--color-surface)] text-[var(--color-text)]"
-                }`}
-              >
-                <span className="block text-[0.95rem] font-bold leading-tight">{label.label}</span>
-                <span className="mt-1 block text-[14px] leading-tight">{label.years}</span>
-              </button>
-            );
-          })}
-        </div>
-      </div>
-
-      <article className="rounded-b-md border border-t-0 border-[var(--color-border)] bg-[var(--color-surface-raised)] p-4">
-        <h3 className="text-[35px] font-bold leading-tight text-[var(--color-text)] md:text-[50px]">
-          <span dangerouslySetInnerHTML={{ __html: active.label }} /> <span className="text-[var(--color-primary)]">(<span dangerouslySetInnerHTML={{ __html: active.years }} />)</span>
-        </h3>
-        <div className="mt-3 h-[190px]">
-          <img src={carImages[key]} alt="" className="h-full w-full object-contain" loading="lazy" />
-        </div>
-        <div className="mt-4 overflow-x-auto">
-          <div className="min-w-[720px]">
-            <CostTable table={activeTable} />
-          </div>
-        </div>
-        <div className="mt-4 flex items-center gap-3 rounded-md bg-[var(--color-page-soft)] px-4 py-3 text-[15px] text-[var(--color-text)]">
-          <span className="shrink-0 text-[var(--color-primary)]">
-            <Icon type="info" className="h-7 w-7" />
-          </span>
-          Prices are supply only. Labour and ancillary parts extra.
-        </div>
-      </article>
-    </div>
-  );
-}
-
-function Notes({ parts }) {
-  return (
-    <div className="grid gap-4 md:grid-cols-[1.15fr_0.85fr]">
-      <div className="grid gap-4 rounded-md border border-[var(--color-border)] bg-[var(--color-surface-raised)] p-5 md:grid-cols-2">
-        <div className="flex flex-col gap-3 border-[var(--color-border)] md:border-r md:pr-6">
-          <div className="flex items-start gap-4">
-            <span className="shrink-0 text-[var(--color-primary)]">
-              <Icon type="note" className="h-12 w-12" />
-            </span>
-            <h3 className="font-bold text-[var(--color-primary)]">Important Notes</h3>
-          </div>
-          <p className="pl-16 text-[15px] leading-[1.5] text-[var(--color-text)] md:pl-0" dangerouslySetInnerHTML={{ __html: parts.important }} />
-        </div>
-        <div className="flex flex-col gap-3">
-          <div className="flex items-start gap-4">
-            <span className="shrink-0 text-[var(--color-primary)]">
-              <Icon type="info" className="h-10 w-10" />
-            </span>
-            <h3 className="font-bold text-[var(--color-primary)]">Labour Estimate</h3>
-          </div>
-          <p className="pl-14 text-[15px] leading-[1.5] text-[var(--color-text)] md:pl-0" dangerouslySetInnerHTML={{ __html: parts.labour }} />
-        </div>
-      </div>
-
-      <div className="inline-flex w-fit max-w-[620px] flex-row gap-4 self-start rounded-md border border-[var(--color-border-strong)] bg-[var(--color-surface-raised)] p-4 text-[var(--color-text)] md:p-5">
-        <span className="hidden shrink-0 text-[var(--color-primary)] md:block">
-          <Icon type="crown" className="h-12 w-12 md:h-16 md:w-16" />
-        </span>
-        <div className="max-w-[540px]">
-          <h3 className="text-[24px] font-bold leading-[1.12] text-[var(--color-primary)] md:text-[30px]">The 3 Series rule - generation is everything:</h3>
-          <p className="mt-2 text-[14px] leading-[1.5] md:text-[15px]" dangerouslySetInnerHTML={{ __html: parts.rule.replace(/^The 3 Series rule - generation is everything:\s*/i, "") }} />
-          <p className="mt-2 font-bold">Value the car first; the engine decision follows.</p>
-        </div>
-      </div>
-    </div>
-  );
-}
-
+// Model JSONs migrated to the reference design carry `generations`; the rest keep the previous layout.
 export default function ReplacementCosts({ data }) {
-  const tables = useMemo(() => normalizeTables(data?.tables || []), [data]);
   if (!data) return null;
+  return data.generations ? <ReplacementCostsReference data={data} /> : <ReplacementCostsLegacy data={data} />;
+}
 
-  const title = splitTitle(data.h2);
-  const notes = splitFiguresNote(data.figuresNote || data.labourEstimate);
+function ReplacementCostsReference({ data }) {
+  const { theme } = useTheme();
+  const [tab, setTab] = useState(0);
+  const isDark = theme === "dark";
+  const gens = data.generations || [];
+  const title = String(data.h2).match(/^(.*?\s[-–-])\s+(.*)$/) || [null, data.h2, ""];
+  const active = gens[tab] || gens[0];
 
   return (
-    <section className="bg-[var(--color-page)] py-6 text-[var(--color-text)]">
-      <div className="flex flex-col gap-5 md:grid md:grid-cols-[minmax(0,1fr)_560px] md:items-start">
-        <div>
-          <h2 className={`max-w-[620px] ${sectionH2} tracking-normal`}>
-            <span dangerouslySetInnerHTML={{ __html: title.main }} />
-            {title.accent ? (
-              <>
+    <section id="replacement-costs" className={`${inter.className} ${s.section} ${isDark ? s.dark : s.light}`}>
+      <div className={s.frame}>
+        <div className={s.panel}>
+          <div className={s.top}>
+            <div className={s.head}>
+              <h2 className={s.title}>
+                <span dangerouslySetInnerHTML={{ __html: String(title[1]).replace(/\s([-–-])$/, "\u00a0$1") }} />
                 <br />
-                <span className="text-[var(--color-primary)]" dangerouslySetInnerHTML={{ __html: title.accent }} />
-              </>
-            ) : null}
-          </h2>
-          <div className="mt-3">
-            <MStripe />
+                <span className={s.accent}>{title[2]}</span>
+              </h2>
+              <p className={`${s.copy} ${s.deskOnly}`} dangerouslySetInnerHTML={{ __html: spaced(data.subHeadline) }} />
+              <p className={`${s.copy} ${s.phoneOnly}`} dangerouslySetInnerHTML={{ __html: spaced(data.subHeadlineMobile || data.subHeadline) }} />
+            </div>
+            <ul className={s.trust}>
+              {(data.trust || []).map((item) => (
+                <li key={item.title} className={s.trustItem}>
+                  <Icon name={item.icon} className={s.trustIcon} />
+                  <strong>{item.title}</strong>
+                  <span>{item.text}</span>
+                </li>
+              ))}
+            </ul>
           </div>
-          {data.subHeadline ? <p className={`mt-3 max-w-[520px] ${sectionDescription} text-[var(--color-text-muted)]`}>{cleanText(data.subHeadline)}</p> : null}
-        </div>
 
-        <div className="hidden md:block">
-          <TrustStrip />
-        </div>
-
-        <div className="mt-1 w-full overflow-hidden rounded-md md:hidden">
-          <img src={carImages.classic} alt="" className="h-[170px] w-full object-cover object-center" loading="lazy" />
-        </div>
-
-        <div className="md:hidden">
-          <TrustStrip />
-        </div>
-      </div>
-
-      {tables.length > 0 ? (
-        <>
-      <div className="mt-6 hidden space-y-3 md:block">
-            {tables.map((table) => (
-              <DesktopGenerationRow key={table.title} table={table} />
+          {/* desktop: one row per generation, car card + table */}
+          <div className={`${s.gens} ${s.deskOnly}`}>
+            {gens.map((gen) => (
+              <div key={gen.key} className={s.gen}>
+                <div className={s.genCard}>
+                  <p className={s.genTitle}>{gen.title}</p>
+                  <p className={s.genYears}>{gen.years}</p>
+                  <div className={s.genCar}>
+                    <CarImage src={isDark ? gen.images?.dark : gen.images?.light} sizes="(min-width: 1024px) 20vw, 1px" />
+                  </div>
+                </div>
+                <CostTable columns={data.columns} rows={gen.rows} />
+              </div>
             ))}
           </div>
 
-          <div className="mt-6">
-            <MobileTabs tables={tables} />
+          {/* phones: tabs, one generation at a time */}
+          <div className={s.phoneOnly}>
+            <div className={s.tabs} role="tablist">
+              {gens.map((gen, index) => (
+                <button key={gen.key} type="button" role="tab" aria-selected={tab === index} className={`${s.tab} ${tab === index ? s.tabOn : ""}`} onClick={() => setTab(index)}>
+                  <strong>{gen.tab}</strong>
+                  <span>{gen.tabYears}</span>
+                </button>
+              ))}
+            </div>
+            {active ? (
+              <div className={s.pCard} role="tabpanel">
+                <p className={s.pTitle}>
+                  {active.title} <span>{active.mobileYears}</span>
+                </p>
+                <div className={s.pCar}>
+                  <CarImage src={(isDark ? active.images?.dark : active.images?.phone) || active.images?.light} sizes="(max-width: 1023px) 60vw, 1px" />
+                </div>
+                <CostTable columns={data.columnsMobile || data.columns} rows={active.rows} mobile className={s.pTable} />
+                {data.mobileNote ? (
+                  <p className={s.pNote}>
+                    <Icon name="info" className={s.pNoteIcon} />
+                    {data.mobileNote}
+                  </p>
+                ) : null}
+              </div>
+            ) : null}
           </div>
-        </>
-      ) : null}
 
-      <div className="mt-5">
-        <Notes parts={notes} />
+          <div className={s.bottom}>
+            <div className={s.notes}>
+              {data.notes ? (
+                <div className={s.note}>
+                  <div className={s.noteHead}>
+                    <Icon name="doc" className={s.noteIcon} />
+                    <p className={s.noteTitle}>{data.notes.title}</p>
+                  </div>
+                  <p className={`${s.noteText} ${s.deskOnly}`} dangerouslySetInnerHTML={{ __html: flat(data.notes.text) }} />
+                  <div className={`${s.noteList} ${s.phoneOnly}`}>
+                    {(data.notes.mobileBullets || []).map((bullet) => (
+                      <p key={bullet} dangerouslySetInnerHTML={{ __html: spaced(bullet) }} />
+                    ))}
+                  </div>
+                </div>
+              ) : null}
+              {data.labour ? (
+                <div className={`${s.note} ${s.deskFlex}`}>
+                  <div className={s.noteHead}>
+                    <Icon name="clock" className={s.noteIcon} />
+                    <p className={s.noteTitle}>{data.labour.title}</p>
+                  </div>
+                  <p className={s.noteText} dangerouslySetInnerHTML={{ __html: flat(data.labour.text) }} />
+                </div>
+              ) : null}
+            </div>
+            {data.rule ? (
+              <div className={s.rule}>
+                <div className={s.ruleHead}>
+                  <span className={s.crown}>
+                    <Icon name="crown" className={s.crownSvg} />
+                  </span>
+                  <p className={s.ruleTitle}>{data.rule.title}</p>
+                </div>
+                <p className={`${s.ruleText} ${s.deskOnly}`} dangerouslySetInnerHTML={{ __html: flat(data.rule.text) }} />
+                <div className={s.phoneOnly}>
+                  {(data.rule.mobileParagraphs || []).map((paragraph) => (
+                    <p key={paragraph} className={s.ruleText} dangerouslySetInnerHTML={{ __html: paragraph }} />
+                  ))}
+                </div>
+                <Icon name="shieldBars" className={s.ruleShield} />
+              </div>
+            ) : null}
+            {data.footerMobile ? (
+              <p className={`${s.footer} ${s.phoneOnly}`}>
+                {data.footerMobile.map((part, index) => (
+                  <span key={part}>
+                    {index ? <span className={s.bullet}>•</span> : null}
+                    {part}
+                  </span>
+                ))}
+              </p>
+            ) : null}
+          </div>
+        </div>
       </div>
-
-      <p className="mt-5 text-center text-[15px] text-[var(--color-text-soft)] md:hidden">
-        All prices in GBP (£) &nbsp; • &nbsp; Supply only &nbsp; • &nbsp; Subject to availability and condition
-      </p>
     </section>
   );
 }

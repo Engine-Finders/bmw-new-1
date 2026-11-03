@@ -126,31 +126,31 @@
               "@type": "ListItem",
               "position": 3,
               "name": "M50B25",
-              "url": "https://bmwengines.uk/engine/m50/"
+              "url": "https://bmwengines.uk/engine/m50-m52-m54"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "M54B25",
-              "url": "https://bmwengines.uk/engine/m54/"
+              "url": "https://bmwengines.uk/engine/m50-m52-m54"
             },
             {
               "@type": "ListItem",
               "position": 5,
               "name": "N52B25",
-              "url": "https://bmwengines.uk/engine/n52/"
+              "url": "https://bmwengines.uk/engine/n52-n53"
             },
             {
               "@type": "ListItem",
               "position": 6,
               "name": "N20B20",
-              "url": "https://bmwengines.uk/engine/n20/"
+              "url": "https://bmwengines.uk/engine/n13-n20"
             },
             {
               "@type": "ListItem",
               "position": 7,
               "name": "B48B20",
-              "url": "https://bmwengines.uk/engine/b48/"
+              "url": "https://bmwengines.uk/engine/b38-b48"
             }
           ]
         },
@@ -360,7 +360,7 @@
         "recommendation": "The N20's timing chain guide is the defining weakness of this engine - a well‑documented issue that can lead to catastrophic engine failure. BMW issued a recall for this, but many cars are now out of warranty. If you hear a rattling noise on cold start, have the chain inspected immediately. Regular oil changes with BMW Longlife‑01 FE spec oil are essential.",
         "failureLink": {
           "label": "",
-          "href": "/failures/timing-chain-stretch/"
+          "href": "/failures/timing-chain-diagnosis-guide"
         }
       },
       {
@@ -378,7 +378,7 @@
         "recommendation": "The M54's cooling system is the defining weakness - plastic thermostat housings and water pump impellers fail with age. Replace the water pump and thermostat housing preventatively every 60,000 miles. If you notice temperature fluctuations, pull over immediately - overheating can kill these engines quickly.",
         "failureLink": {
           "label": "",
-          "href": "/failures/cooling-system-failure/"
+          "href": "/failures/m54-cooling-system"
         }
       },
       {
@@ -396,7 +396,7 @@
         "recommendation": "The M54's CCV system is a well‑known weakness - the valve and hoses can clog and fail, causing oil consumption and rough running. Replacing the CCV system is a relatively inexpensive preventative measure. If you notice increased oil consumption or a whistling noise, have the CCV inspected.",
         "failureLink": {
           "label": "",
-          "href": "/failures/ccv-failure/"
+          "href": "/failures"
         }
       }
     ]

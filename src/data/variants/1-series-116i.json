@@ -60,7 +60,7 @@
               "@type": "ListItem",
               "position": 2,
               "name": "E81/E87 LCI 116i (N43B16, 2007-2011)",
-              "url": "https://bmwengines.uk/1-series/e87-lci/"
+              "url": "https://bmwengines.uk/1-series/e87"
             },
             {
               "@type": "ListItem",
@@ -72,7 +72,7 @@
               "@type": "ListItem",
               "position": 4,
               "name": "F20/F21 LCI 116i (B38A15, 2015-2019)",
-              "url": "https://bmwengines.uk/1-series/f20-lci/"
+              "url": "https://bmwengines.uk/1-series/f20"
             },
             {
               "@type": "ListItem",
@@ -90,31 +90,31 @@
               "@type": "ListItem",
               "position": 1,
               "name": "N45B16",
-              "url": "https://bmwengines.uk/engine/n45/"
+              "url": "https://bmwengines.uk/engine/n40-n42-n43-n45-n46"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "N43B16",
-              "url": "https://bmwengines.uk/engine/n43/"
+              "url": "https://bmwengines.uk/engine/n40-n42-n43-n45-n46"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "N13B16",
-              "url": "https://bmwengines.uk/engine/n13/"
+              "url": "https://bmwengines.uk/engine/n13-n20"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "B38A15 (2015-2019)",
-              "url": "https://bmwengines.uk/engine/b38/"
+              "url": "https://bmwengines.uk/engine/b38-b48"
             },
             {
               "@type": "ListItem",
               "position": 5,
               "name": "B38A15 (2019-present)",
-              "url": "https://bmwengines.uk/engine/b38/"
+              "url": "https://bmwengines.uk/engine/b38-b48"
             }
           ]
         },
@@ -324,7 +324,7 @@
         "recommendation": "The N45, N43 and N13 engines share a well-documented timing chain weakness. The chain guides are plastic and can break, sending debris into the oil pickup. The N13 is particularly notorious. BMW did not formally recognise the issue in the UK/EU, making preventative replacement essential. At the first sign of cold-start rattle, book an inspection immediately. A £600–£1,800 preventative chain replacement is dramatically cheaper than a £1,200+ engine replacement.",
         "failureLink": {
           "label": "Read the full timing chain failure guide",
-          "href": "/failures/timing-chain-failure/"
+          "href": "/failures/timing-chain-diagnosis-guide"
         }
       },
       {
@@ -342,7 +342,7 @@
         "recommendation": "The N43's direct injection system is sensitive to fuel quality and injector condition. Injector failure causes vibration and rough running. The N13, being a direct-injection turbo engine, suffers similar issues. Use high-quality fuel and have injectors checked at around 80,000 miles. Catching a failing injector early prevents secondary damage to the catalytic converter.",
         "failureLink": {
           "label": "Read the full injector failure guide",
-          "href": "/failures/injector-failure/"
+          "href": "/failures/n57-injector-seal"
         }
       },
       {
@@ -360,7 +360,7 @@
         "recommendation": "The N13 is known for oil consumption, often caused by a failing PCV system or worn piston rings. The B38 can also suffer from excessive oil consumption. Check oil levels regularly - if you're topping up more than 1L between services, have the PCV system inspected. Ignoring oil consumption can lead to carbon build-up and, eventually, engine damage.",
         "failureLink": {
           "label": "Read the full oil consumption guide",
-          "href": "/failures/oil-consumption/"
+          "href": "/failures/n63-oil-consumption"
         }
       }
     ]

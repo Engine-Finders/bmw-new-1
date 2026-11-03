@@ -90,31 +90,31 @@
               "@type": "ListItem",
               "position": 1,
               "name": "N46 (2.0 4-cyl)",
-              "url": "https://bmwengines.uk/engine/n46/"
+              "url": "https://bmwengines.uk/engine/n40-n42-n43-n45-n46"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "N43 (2.0 4-cyl, direct injection)",
-              "url": "https://bmwengines.uk/engine/n43/"
+              "url": "https://bmwengines.uk/engine/n40-n42-n43-n45-n46"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "N13 (1.6 4-cyl turbo)",
-              "url": "https://bmwengines.uk/engine/n13/"
+              "url": "https://bmwengines.uk/engine/n13-n20"
             },
             {
               "@type": "ListItem",
               "position": 4,
               "name": "B38 (1.5 3-cyl turbo)",
-              "url": "https://bmwengines.uk/engine/b38/"
+              "url": "https://bmwengines.uk/engine/b38-b48"
             },
             {
               "@type": "ListItem",
               "position": 5,
               "name": "B38 (1.5 3-cyl turbo, revised)",
-              "url": "https://bmwengines.uk/engine/b38/"
+              "url": "https://bmwengines.uk/engine/b38-b48"
             }
           ]
         },
@@ -324,7 +324,7 @@
         "recommendation": "This is the defining issue for N43 and N13 118is. The timing chain tensioner can fail, allowing the chain to stretch or skip. Regular oil changes with BMW Longlife‑04 spec oil are essential. At the first sign of cold‑start rattle, have the chain inspected immediately - catching it early saves you from a £1,800+ repair bill.",
         "failureLink": {
           "label": "",
-          "href": "/failures/timing-chain-stretch/"
+          "href": "/failures/timing-chain-diagnosis-guide"
         }
       },
       {
@@ -342,7 +342,7 @@
         "recommendation": "The HPFP is a known weak point on both N43 and N13 engines. If you experience long cranking times or rough running, have the fuel pressure tested. Replacing the HPFP is far cheaper than the collateral damage that can occur from injector failure if fuel pressure drops.",
         "failureLink": {
           "label": "",
-          "href": "/failures/high-pressure-fuel-pump-failure/"
+          "href": "/failures/n54-high-pressure-fuel-pump"
         }
       },
       {

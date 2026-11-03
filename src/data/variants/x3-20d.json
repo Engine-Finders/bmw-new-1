@@ -120,19 +120,19 @@
               "@type": "ListItem",
               "position": 4,
               "name": "B47D20A (2.0 4-cyl diesel)",
-              "url": "https://bmwengines.uk/engine/b47/"
+              "url": "https://bmwengines.uk/engine/b37-b47"
             },
             {
               "@type": "ListItem",
               "position": 5,
               "name": "B47D20B (2.0 4-cyl diesel)",
-              "url": "https://bmwengines.uk/engine/b47/"
+              "url": "https://bmwengines.uk/engine/b37-b47"
             },
             {
               "@type": "ListItem",
               "position": 6,
               "name": "B47D20B (2.0 4-cyl diesel MHEV)",
-              "url": "https://bmwengines.uk/engine/b47/"
+              "url": "https://bmwengines.uk/engine/b37-b47"
             }
           ]
         },
@@ -342,7 +342,7 @@
         "recommendation": "The N47's rear‑mounted timing chain is the defining weakness of this engine - a well‑documented issue that can lead to catastrophic engine failure. If you hear a rattling noise on cold start, have the chain inspected immediately. Many specialists recommend replacing the chain preventatively at 100,000 miles, even with full service history. Regular oil changes with BMW LL‑04 spec oil are essential.",
         "failureLink": {
           "label": "",
-          "href": "/failures/timing-chain-stretch/"
+          "href": "/failures/timing-chain-diagnosis-guide"
         }
       },
       {
@@ -360,7 +360,7 @@
         "recommendation": "The EGR cooler is a significant weakness across all BMW diesel engines of this era - BMW issued a recall affecting 800,000 vehicles. The defect can allow glycol coolant to leak, which combined with soot and high temperatures can create a fire risk. If you notice coolant loss, white smoke, or a burning smell, have the EGR cooler inspected immediately. Even after recall work, failures have been reported. Checking recall completion status is essential when buying an X3 2.0d.",
         "failureLink": {
           "label": "",
-          "href": "/failures/egr-valve-cooler-failure/"
+          "href": "/failures/egr-valve-cooler"
         }
       },
       {
@@ -378,7 +378,7 @@
         "recommendation": "Like all modern diesels, the X3 2.0d needs regular long runs for passive DPF regeneration. If your X3 is used primarily for short journeys, plan a 30–45 minute motorway run every two weeks. If the DPF warning light comes on, book a forced regeneration promptly - ignoring it can lead to costly DPF replacement.",
         "failureLink": {
           "label": "",
-          "href": "/failures/dpf-clogging/"
+          "href": "/failures/dpf-blockage"
         }
       }
     ]

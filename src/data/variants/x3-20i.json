@@ -78,19 +78,19 @@
               "@type": "ListItem",
               "position": 1,
               "name": "N20B20U0",
-              "url": "https://bmwengines.uk/engine/n20b20u0/"
+              "url": "https://bmwengines.uk/engine/n13-n20"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "B48B20M1",
-              "url": "https://bmwengines.uk/engine/b48b20m1/"
+              "url": "https://bmwengines.uk/engine/b38-b48"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "B48B20M2",
-              "url": "https://bmwengines.uk/engine/b48b20m2/"
+              "url": "https://bmwengines.uk/engine/b38-b48"
             }
           ]
         },
@@ -325,7 +325,7 @@
         "recommendation": "The N20's timing chain guides are made of plastic that can become brittle and fail. This is the defining weakness of the F25 20i. When the guides fail, the chain can stretch, jump a tooth, or snap - in this interference engine, that means piston‑to‑valve contact and a very expensive repair. BMW N20 timing chain failures are mainly caused by early wear on the tensioner and plastic chain guides, especially in older models from 2012 to 2014. A £1,200–£2,500 preventative chain replacement is far cheaper than a £2,200–£4,500 engine replacement. At the first sign of cold‑start rattle, have the timing system inspected immediately.",
         "failureLink": {
           "label": "",
-          "href": "/failures/timing-chain-failure/"
+          "href": "/failures/timing-chain-diagnosis-guide"
         }
       },
       {
@@ -343,7 +343,7 @@
         "recommendation": "The 2.0‑litre engine in the xDrive20i is known to consume oil at a higher rate than expected. Symptoms include the need to add oil frequently, blue smoke from the exhaust, and low oil level warnings. Regularly checking the oil level and topping up as needed can help prevent engine damage. However, if the oil consumption is excessive, it may require a more in‑depth inspection to determine the underlying cause, such as worn piston rings or valve seals. On the N20, oil starvation is a common cause of timing chain failure.",
         "failureLink": {
           "label": "",
-          "href": "/failures/oil-consumption/"
+          "href": "/failures/n63-oil-consumption"
         }
       },
       {

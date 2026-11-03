@@ -60,7 +60,7 @@
               "@type": "ListItem",
               "position": 2,
               "name": "G07 LCI X7 xDrive40i (B58B30P, 2022-present)",
-              "url": "https://bmwengines.uk/x7/g07-lci/"
+              "url": "https://bmwengines.uk/x7/g07"
             }
           ]
         },
@@ -72,13 +72,13 @@
               "@type": "ListItem",
               "position": 1,
               "name": "B58B30C",
-              "url": "https://bmwengines.uk/engine/b58/"
+              "url": "https://bmwengines.uk/engine/b57-b58"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "B58B30P",
-              "url": "https://bmwengines.uk/engine/b58/"
+              "url": "https://bmwengines.uk/engine/b57-b58"
             }
           ]
         },
@@ -288,7 +288,7 @@
         "recommendation": "The B58's oil filter housing is a known weak point. BMW chose to construct it out of plastic, and the housing tends to split if the cap is tightened too tight or even just over time as the plastic becomes brittle from numerous heat cycles. BMW is facing a class action lawsuit for faulty oil filter housings that leak coolant, resulting in owners having to spend thousands of dollars in repairs and replacements. Because it sits under the intake manifold, replacement is labour-intensive. Upgraded metal housings are available. Check for oil spots or coolant loss regularly, and investigate any drop in fluid levels promptly.",
         "failureLink": {
           "label": "Read the full oil filter housing failure guide",
-          "href": "/failures/oil-filter-housing-failure/"
+          "href": "/failures/n55-valve-cover-oil-leak"
         }
       },
       {
@@ -306,7 +306,7 @@
         "recommendation": "Like the B58's predecessor, the cooling system is a common weak point. The electric water pump and plastic coolant hoses can fail over time. The X7's size and weight put additional strain on the cooling system. Replacing the water pump and hoses preventatively at around 70,000–80,000 miles is cheaper than dealing with an overheated engine. Check coolant levels regularly.",
         "failureLink": {
           "label": "Read the full coolant leak guide",
-          "href": "/failures/coolant-leak/"
+          "href": "/failures/m54-cooling-system"
         }
       },
       {
@@ -324,7 +324,7 @@
         "recommendation": "Like all direct-injection engines, the B58 suffers from carbon build-up on the intake valves. This is because fuel is injected directly into the cylinder, so the intake valves don't get washed by fuel. Russian specialists note that fluctuating idle after 100,000 km (62,000 miles) is often caused by carbon build-up on the intake valves. Walnut blasting is the standard cleaning method and is well-understood by BMW specialists. Regular use of quality fuel and occasional Italian tune-ups can help reduce build-up.",
         "failureLink": {
           "label": "Read the full carbon build-up guide",
-          "href": "/failures/carbon-build-up/"
+          "href": "/failures"
         }
       }
     ]

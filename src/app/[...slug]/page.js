@@ -17,6 +17,9 @@ import CalculatorCTA from "@/components/models/CalculatorCTA";
 import TrustBlock from "@/components/models/TrustBlock";
 import FAQAccordion from "@/components/models/FAQAccordion";
 import ClosingActionCards from "@/components/models/ClosingActionCards";
+import { withGenerationPageImages, withModelPageImages, withVariantPageImages } from "@/components/shared/pageCarImages";
+import { withReferenceSections } from "@/components/models/referenceAdapter";
+import { resolveSeoImage, sanitizeJsonLd } from "@/lib/seoAssets";
 
 import GenHero from "@/components/generation/ModelHero";
 import GenEngineDatabase from "@/components/generation/EngineDatabase";
@@ -25,8 +28,7 @@ import BestWorstEngines from "@/components/generation/BestWorstEngines";
 import OwnershipEconomics from "@/components/generation/OwnershipEconomics";
 import GenProblems from "@/components/generation/CommonProblems";
 import GenReplacementCosts from "@/components/generation/ReplacementCosts";
-import CoreVariants from "@/components/generation/CoreVariants";
-import GenMarketIntelligence from "@/components/generation/MarketIntelligence";
+import CoreVariantsMarketGroup from "@/components/generation/CoreVariantsMarketGroup";
 import GenFAQAccordion from "@/components/generation/FAQAccordion";
 import GenTrustCta from "@/components/generation/TrustCta";
 
@@ -69,6 +71,21 @@ async function getVariantData(dataFile) {
   }
 }
 
+// Pull-quote car: the matched set of tight side-view cut-outs (as on the home page's "Find Your Vehicle"), so every
+// model page's quote looks the same. Models not in the set fall back to their library side view.
+const SIDE_CARS = {
+  "1-series": "1-series", "2-series": "2-series", "3-series": "3-series", "4-series": "4-series", "5-series": "5-series",
+  "6-series": "6-series", "7-series": "7-series", "8-series": "8-series", 2002: "2002", "i-series-electric-motors": "i-series",
+  m1: "m1", m2: "m2", m4: "m4", m6: "m6", x1: "x1", x2: "x2", x3: "x3", x4: "x4", x5: "x5", x6: "x6", x7: "x7", xm: "xm",
+  "z-series": "z-series",
+};
+// The 2002's side photo keeps its studio floor; its transparent "cut" version matches the rest of the set.
+const SIDE_CAR_FILES = { 2002: "cut-2002" };
+function sideCarFor(slug) {
+  if (!SIDE_CARS[slug]) return null;
+  return `/cars/home/fyv/${SIDE_CAR_FILES[slug] || `side-${SIDE_CARS[slug]}`}.webp`;
+}
+
 function findEntry(slugSegments) {
   if (slugSegments.length === 1) {
     const single = slugSegments[0];
@@ -95,14 +112,17 @@ export async function generateStaticParams() {
   const paths = [];
 
   for (const page of modelPages) {
+    if (!page?.slug) continue;
     paths.push({ slug: [page.slug] });
   }
 
   for (const page of genPages) {
+    if (!page?.parent || !page?.slug) continue;
     paths.push({ slug: [page.parent, page.slug] });
   }
 
   for (const page of variantPages) {
+    if (!page?.parent || !page?.slug) continue;
     paths.push({ slug: [page.parent, page.slug] });
   }
 
@@ -128,6 +148,9 @@ export async function generateMetadata({ params }) {
   const hasOg = og && (og.title || og.description || og.url || og.image || og.siteName || og.type);
   const canonical = meta.canonical || `https://bmwengines.uk/${slugSegments.join("/")}`;
 
+  const ogImage = og?.image ? resolveSeoImage(og.image) : undefined;
+  const twitterImage = meta.twitter?.image ? resolveSeoImage(meta.twitter.image) : undefined;
+
   return {
     title: meta.title || undefined,
     description: meta.description || undefined,
@@ -138,7 +161,7 @@ export async function generateMetadata({ params }) {
           description: og.description || undefined,
           type: og.type || "website",
           url: og.url || undefined,
-          images: og.image ? [og.image] : undefined,
+          images: ogImage ? [ogImage] : undefined,
           siteName: og.siteName || undefined,
         }
       : undefined,
@@ -147,7 +170,7 @@ export async function generateMetadata({ params }) {
           card: meta.twitter.card || undefined,
           title: meta.twitter.title || undefined,
           description: meta.twitter.description || undefined,
-          images: meta.twitter.image ? [meta.twitter.image] : undefined,
+          images: twitterImage ? [twitterImage] : undefined,
         }
       : undefined,
   };
@@ -167,23 +190,14 @@ export default async function CatchAllPage({ params }) {
   if (!data) notFound();
 
   if (type === "models") {
+    // Every model page gets the 3 Series section designs, built from its own content.
+    data = withReferenceSections(withModelPageImages(data));
     return (
-      <main
-        style={{
-          padding: "8px 4px",
-          width: "100%",
-          maxWidth: "88rem",
-          margin: "0 auto",
-          lineHeight: 1.5,
-          display: "flex",
-          flexDirection: "column",
-          
-        }}
-      >
+      <main className="flex flex-col">
         {data.meta?.jsonLd && (
           <script
             type="application/ld+json"
-            dangerouslySetInnerHTML={{ __html: JSON.stringify(data.meta.jsonLd) }}
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(sanitizeJsonLd(data.meta.jsonLd)) }}
           />
         )}
         <ModelHero data={data.hero} />
@@ -192,10 +206,10 @@ export default async function CatchAllPage({ params }) {
         <GenerationsGrid data={data.generations} />
         <EngineDatabase data={data.engineDatabase} />
         <CommonProblems data={data.commonProblems} />
-        <MarketIntelligence data={data.marketIntelligence} quoteData={data.editorialPullQuote} />
+        <MarketIntelligence data={data.marketIntelligence} quoteData={data.editorialPullQuote && { ...data.editorialPullQuote, sideCar: sideCarFor(entry.slug) }} />
         <ReplacementCosts data={data.replacementCosts} />
         <EngineEvolution data={data.engineEvolution} />
-        <WhoShouldBuy data={data.whoShouldBuy} />
+        <WhoShouldBuy data={data.whoShouldBuy && { ...data.whoShouldBuy, sideCar: sideCarFor(entry.slug) }} />
         <CalculatorCTA data={data.calculatorCta} />
         <TrustBlock data={data.trustBlock} />
         <FAQAccordion data={data.faq} />
@@ -205,49 +219,83 @@ export default async function CatchAllPage({ params }) {
   }
 
   if (type === "generations") {
+    data = withGenerationPageImages(data);
+    // Sections alternate plain / tinted bands (as on the variant and engine pages). Only sections that render
+    // are counted, so two neighbours never share a colour when a page leaves one out.
+    // Mirrors each section's own "render nothing" rule (Best & Worst drops empty items, FAQ needs a question, the
+    // variants/market block needs core variants or market data).
+    const present = (value) => (Array.isArray(value) ? value.length > 0 : Boolean(value));
+    const hasText = (value) => Boolean(String(value ?? "").replace(/<[^>]+>/g, "").trim());
+    const sections = [
+      ["engineDatabase", present(data.engineDatabase)],
+      ["overview", present(data.overview)],
+      ["bestWorst", Boolean(data.bestWorstEngines?.items?.some((item) => item && [item.slot, item.engine, item.quote, item.whoItsFor].some(hasText)))],
+      ["ownership", present(data.ownershipEconomics)],
+      ["problems", present(data.commonProblems)],
+      ["costs", present(data.replacementCosts)],
+      [
+        "variantsMarket",
+        present(data.coreVariants) ||
+          Boolean(["mostRequestedEngines", "mostRequestedVariants", "mostCommonFailures", "liveFeed"].some((key) => present(data.marketIntelligence?.[key])) || data.marketIntelligence?.averageReplacementCost),
+      ],
+      ["faq", Boolean(data.faq?.items?.some((item) => hasText(item?.question)))],
+      ["trust", present(data.trustCta)],
+    ];
+    const band = {};
+    sections.filter(([, shown]) => shown).forEach(([key], index) => {
+      band[key] = index % 2 === 0 ? "tint" : "plain"; // the hero is near-white, so the band after it starts tinted
+    });
+    // "BMW 3 Series E90 Engine Codes …" -> "E90", for "Most Requested E90 Engines" and "FAQ — BMW E90".
+    const generationCode = (String(data.engineDatabase?.h2 || "").match(/^BMW .*?\s(\S+)\s+(?:Engine|Powertrain) Codes/) || [])[1] || "";
     return (
-      <main className="flex flex-col">
+      <main className="flex flex-col overflow-x-hidden">
         {data.meta?.jsonLd && (
           <script
             type="application/ld+json"
-            dangerouslySetInnerHTML={{ __html: JSON.stringify(data.meta.jsonLd) }}
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(sanitizeJsonLd(data.meta.jsonLd)) }}
           />
         )}
         <GenHero data={data.hero} />
-        <GenEngineDatabase data={data.engineDatabase} />
-        <Overview data={data.overview} />
-        <BestWorstEngines data={data.bestWorstEngines} />
-        <OwnershipEconomics data={data.ownershipEconomics} />
-        <GenProblems data={data.commonProblems} />
-        <GenReplacementCosts data={data.replacementCosts} />
-        <CoreVariants data={data.coreVariants} parentSlug={entry.parent} />
-        <GenMarketIntelligence data={data.marketIntelligence} />
-        <GenFAQAccordion data={data.faq} />
-        <GenTrustCta data={data.trustCta} />
+        <GenEngineDatabase data={data.engineDatabase} band={band.engineDatabase} />
+        <Overview data={data.overview} band={band.overview} />
+        <BestWorstEngines data={data.bestWorstEngines && { generationCode: entry.slug, ...data.bestWorstEngines }} band={band.bestWorst} />
+        <OwnershipEconomics data={data.ownershipEconomics} band={band.ownership} />
+        <GenProblems data={data.commonProblems} band={band.problems} />
+        <GenReplacementCosts data={data.replacementCosts} band={band.costs} />
+        <CoreVariantsMarketGroup
+          coreVariants={data.coreVariants}
+          marketIntelligence={data.marketIntelligence}
+          band={band.variantsMarket}
+          generationCode={generationCode}
+        />
+        <GenFAQAccordion data={data.faq} band={band.faq} generationCode={generationCode} />
+        <GenTrustCta data={data.trustCta} band={band.trust} />
       </main>
     );
   }
 
   if (type === "variants") {
+    data = withVariantPageImages(data, entry.parent, entry.slug);
     return (
-      <main className="flex flex-col">
+      // Long engine codes and data tags break inside their cell instead of pushing it wider.
+      <main className="flex flex-col overflow-x-hidden [overflow-wrap:break-word]">
         {data.meta?.jsonLd && (
           <script
             type="application/ld+json"
-            dangerouslySetInnerHTML={{ __html: JSON.stringify(data.meta.jsonLd) }}
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(sanitizeJsonLd(data.meta.jsonLd)) }}
           />
         )}
         <VariantHero data={data.hero} />
         <EraMap data={data.eraMap} />
-        <VarReplacementCosts data={data.replacementCosts} />
-        <VarProblems data={data.commonProblems} />
+        <VarReplacementCosts data={data.replacementCosts} vehicle={data.hero?.vehicle} />
+        <VarProblems data={data.commonProblems} vehicle={data.hero?.vehicle} />
         <QuotesCta data={data.quotesCta} />
-        <RepairBuyOrReplace data={data.repairBuyOrReplace} />
-        <BuyingChecklist data={data.buyingChecklist} />
-        <EngineCodes data={data.engineCodes} />
-        <VarMarketIntelligence data={data.marketIntelligence} />
-        <VarFAQAccordion data={data.faq} />
-        <VarTrustCta data={data.trustCta} />
+        <RepairBuyOrReplace data={data.repairBuyOrReplace} vehicle={data.hero?.vehicle} />
+        <BuyingChecklist data={data.buyingChecklist} vehicle={data.hero?.vehicle} />
+        <EngineCodes data={data.engineCodes} vehicle={data.hero?.vehicle} />
+        <VarMarketIntelligence data={data.marketIntelligence} vehicle={data.hero?.vehicle} />
+        <VarFAQAccordion data={data.faq} vehicle={data.hero?.vehicle} />
+        <VarTrustCta data={data.trustCta} vehicle={data.hero?.vehicle} />
       </main>
     );
   }

@@ -52,13 +52,13 @@
               "@type": "ListItem",
               "position": 2,
               "name": "BMW M2 Competition F87 (2018–2020)",
-              "url": "https://bmwengines.uk/m2/f87-competition/"
+              "url": "https://bmwengines.uk/m2/f87"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "BMW M2 CS F87 (2020–2021)",
-              "url": "https://bmwengines.uk/m2/f87-cs/"
+              "url": "https://bmwengines.uk/m2/f87"
             },
             {
               "@type": "ListItem",
@@ -76,19 +76,19 @@
               "@type": "ListItem",
               "position": 1,
               "name": "N55B30T0 Engine",
-              "url": "https://bmwengines.uk/engine/n55b30t0/"
+              "url": "https://bmwengines.uk/engine/n54-n55"
             },
             {
               "@type": "ListItem",
               "position": 2,
               "name": "S55B30 Engine",
-              "url": "https://bmwengines.uk/engine/s55b30/"
+              "url": "https://bmwengines.uk/engine/s55"
             },
             {
               "@type": "ListItem",
               "position": 3,
               "name": "S58B30 Engine",
-              "url": "https://bmwengines.uk/engine/s58b30/"
+              "url": "https://bmwengines.uk/technical/engine-code-decoder"
             }
           ]
         },
@@ -240,7 +240,7 @@
     ],
     "primaryCta": {
       "label": "Explore M2 Engines →",
-      "href": "#"
+      "href": "/m2"
     }
   },
   "ownershipVerdict": {
@@ -390,7 +390,7 @@
     },
     "comparisonLink": {
       "label": "Read the full comparison: BMW M2 F87 vs G87 →",
-      "href": "#"
+      "href": "/compare"
     }
   },
   "engineDatabase": {
@@ -474,7 +474,7 @@
         },
         "link": {
           "label": "Learn more →",
-          "href": "#"
+          "href": "/failures/s55-crank-hub-failure"
         }
       },
       {
@@ -488,7 +488,7 @@
         },
         "link": {
           "label": "Learn more →",
-          "href": "#"
+          "href": "/failures/s55-crank-hub-failure"
         }
       },
       {
@@ -502,7 +502,7 @@
         },
         "link": {
           "label": "Learn more →",
-          "href": "#"
+          "href": "/failures/timing-chain-diagnosis-guide"
         }
       },
       {
@@ -516,7 +516,7 @@
         },
         "link": {
           "label": "Learn more →",
-          "href": "#"
+          "href": "/failures/water-pump-failure"
         }
       },
       {
@@ -530,7 +530,7 @@
         },
         "link": {
           "label": "Learn more →",
-          "href": "#"
+          "href": "/failures/n55-valve-cover-oil-leak"
         }
       },
       {
@@ -544,7 +544,7 @@
         },
         "link": {
           "label": "Learn more →",
-          "href": "#"
+          "href": "/m2/f87"
         }
       }
     ],
@@ -744,11 +744,11 @@
     "paths": [
       {
         "label": "Path 1 - Know your engine? Launch the BMW diagnostic calculator with M2 pre-selected",
-        "href": "/fault-diagnostic-calculator"
+        "href": "/tools/diagnostic-wizard"
       },
       {
         "label": "Path 2 - Not sure which engine you have? We'll identify it first → /fault-diagnostic-calculator (identification is the first step inside the tool)",
-        "href": "#"
+        "href": "/tools/diagnostic-wizard"
       }
     ]
   },
@@ -835,13 +835,13 @@
         "icon": "🩺",
         "title": "Diagnose My M2",
         "text": "Symptoms in, verdict out - value-weighted for your generation.",
-        "href": "/fault-diagnostic-calculator"
+        "href": "/tools/diagnostic-wizard"
       },
       {
         "icon": "🤝",
         "title": "Compare UK Specialists",
         "text": "20+ vetted BMW specialists, prices and warranties side-by-side.",
-        "href": "/quotes/?model=m2"
+        "href": "/quote"
       }
     ],
     "footerNote": "(Minimal footer below.)"
