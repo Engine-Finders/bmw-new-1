@@ -7,7 +7,7 @@ const LEAD_RECIPIENT_EMAIL =
   process.env.LEAD_EMAIL_RECIPIENT || process.env.SMTP_TO_EMAIL || "ef2crm@gmail.com";
 const SUPABASE_WEBHOOK_URL =
   process.env.SUPABASE_WEBHOOK_URL ||
-  "https://gfrnxvolaqbfalerfhsr.supabase.co/functions/v1/receive-lead";
+  "https://invfhqaqjyvcttppnygs.supabase.co/functions/v1/receive-lead";
 const SUPABASE_ANON_KEY = process.env.SUPABASE_ANON_KEY || "";
 
 const resend = new Resend(RESEND_API_KEY);

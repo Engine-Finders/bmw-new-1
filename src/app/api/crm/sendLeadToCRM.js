@@ -4,13 +4,13 @@ export const LEAD_SOURCE = "bmwengines.uk";
 
 const SUPABASE_WEBHOOK_URL =
   process.env.SUPABASE_WEBHOOK_URL ||
-  "https://gfrnxvolaqbfalerfhsr.supabase.co/functions/v1/receive-lead";
+  "https://invfhqaqjyvcttppnygs.supabase.co/functions/v1/receive-lead";
 
 const SUPABASE_ANON_KEY = process.env.SUPABASE_ANON_KEY || "";
 
 const SUPABASE_REST_URL =
   process.env.SUPABASE_REST_URL ||
-  "https://gfrnxvolaqbfalerfhsr.supabase.co/rest/v1";
+  "https://invfhqaqjyvcttppnygs.supabase.co/rest/v1";
 
 function capacityToLitres(engineCapacity) {
   const capacityRaw = engineCapacity ? String(engineCapacity).replace(/[^\d.]/g, "") : "";
