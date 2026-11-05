@@ -4,7 +4,7 @@ const RESEND_API_KEY = process.env.RESEND_API_KEY || "";
 const RESEND_FROM_EMAIL =
   process.env.RESEND_FROM_EMAIL || "Quote Sales <sales@enginesmarket.co.uk>";
 const LEAD_RECIPIENT_EMAIL =
-  process.env.LEAD_EMAIL_RECIPIENT || process.env.SMTP_TO_EMAIL || "hashirafridi474747@gmail.com";
+  process.env.LEAD_EMAIL_RECIPIENT || process.env.SMTP_TO_EMAIL || "ef2crm@gmail.com";
 const SUPABASE_WEBHOOK_URL =
   process.env.SUPABASE_WEBHOOK_URL ||
   "https://invfhqaqjyvcttppnygs.supabase.co/functions/v1/receive-lead";

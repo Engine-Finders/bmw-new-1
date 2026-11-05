@@ -5,7 +5,7 @@ import { LEAD_SOURCE } from "@/app/api/crm/sendLeadToCRM";
  * Lead notification email (Resend) — universal lead email template.
  * Recipient is hardcoded - do not move to env.
  */
-const LEAD_TO_EMAIL = "hashirafridi474747@gmail.com";
+const LEAD_TO_EMAIL = "ef2crm@gmail.com";
 const LEAD_FROM_EMAIL = "BMW Engines <leads@bmwengines.uk>";
 const SITE_NAME = "BMW Reliability Guide";
 const SITE_DOMAIN = "bmwengines.uk";
@@ -272,17 +272,14 @@ function buildLeadEmailHtml({ lead, leadReference, receivedUk }) {
 </head>
 <body style="margin:0;padding:24px 10px;background:${C.pageBg};font-family:Arial,Helvetica,sans-serif;color:${C.text}">
   <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%" style="max-width:640px;margin:0 auto;background:#fff;border-collapse:separate;border-spacing:0;border-radius:12px;overflow:hidden;box-shadow:0 8px 28px rgba(15,39,68,0.12)">
-    <!-- Header: site wordmark (no engine image) -->
     <tr>
-      <td style="background:${C.navy};padding:28px 28px 32px;color:#fff">
-        <img src="${SITE_LOGO_URL}" alt="${escapeHtml(SITE_NAME)}" width="220" style="display:block;width:220px;max-width:70%;height:auto;border:0;outline:none;text-decoration:none" />
-        <div style="height:1px;background:rgba(158,182,212,0.35);margin:20px 0 22px"></div>
+      <td style="background:${C.navy};padding:14px 20px 18px;color:#fff">
+        <img src="${SITE_LOGO_URL}" alt="${escapeHtml(SITE_NAME)}" width="220" style="display:block;width:220px;max-width:70%;height:auto;border:0;outline:none;text-decoration:none;margin:0" />
+        <div style="height:1px;background:rgba(158,182,212,0.35);margin:12px 0 14px"></div>
         <div style="font-size:26px;font-weight:800;line-height:1.15;color:#fff">New Quote Request</div>
-        <div style="font-size:14px;color:#b7c7db;margin-top:8px">A new enquiry has been submitted from ${escapeHtml(lead.source_site || SITE_DOMAIN)}.</div>
+        <div style="font-size:14px;color:#b7c7db;margin-top:8px;line-height:1.5;overflow-wrap:anywhere">A new enquiry has been submitted from ${escapeHtml(lead.source_site || SITE_DOMAIN)}${lead.source_page ? ` · Page: ${escapeHtml(lead.source_page)}` : ""}.</div>
       </td>
     </tr>
-
-    <!-- Body sections -->
     <tr>
       <td style="padding:22px 20px 8px;background:#f7f9fc">
         ${sectionCard("&#128100;", "Lead Details", buildLeadRows(lead))}
@@ -290,8 +287,6 @@ function buildLeadEmailHtml({ lead, leadReference, receivedUk }) {
         ${sectionCard("&#128279;", "Source", buildSourceRows(lead))}
       </td>
     </tr>
-
-    <!-- Footer -->
     <tr>
       <td style="background:${C.navy};padding:16px 20px;border-top:3px solid #3b82f6">
         <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr>
@@ -299,7 +294,7 @@ function buildLeadEmailHtml({ lead, leadReference, receivedUk }) {
             Lead Reference: <span style="color:#93c5fd;font-weight:700">#${escapeHtml(leadReference)}</span>
           </td>
           <td align="right" style="color:#c5d4e6;font-size:13px;line-height:1.5;vertical-align:middle;white-space:nowrap">
-            &#128197; Received: ${escapeHtml(receivedUk)}
+            Received: ${escapeHtml(receivedUk)}
           </td>
         </tr></table>
       </td>
@@ -314,7 +309,7 @@ function buildLeadEmailText({ lead, leadReference, receivedUk }) {
   return [
     `New Quote Request — ${SITE_NAME}`,
     SITE_DOMAIN,
-    `A new enquiry has been submitted from ${lead.source_site || SITE_DOMAIN}.`,
+    `A new enquiry has been submitted from ${lead.source_site || SITE_DOMAIN}${lead.source_page ? ` · Page: ${lead.source_page}` : ""}.`,
     "",
     "LEAD DETAILS",
     line("Name", lead.name),
