@@ -5,8 +5,8 @@ import { LEAD_SOURCE } from "@/app/api/crm/sendLeadToCRM";
  * Lead notification email (Resend) — universal lead email template.
  * Recipient is hardcoded - do not move to env.
  */
-// const LEAD_TO_EMAIL = "ef2crm@gmail.com";
-const LEAD_TO_EMAIL = "hashirafridi474747@gmail.com";
+const LEAD_TO_EMAIL = "ef2crm@gmail.com";
+// const LEAD_TO_EMAIL = "hashirafridi474747@gmail.com";
 
 const LEAD_FROM_EMAIL = "BMW Engines <leads@bmwengines.uk>";
 const SITE_NAME = "BMW Reliability Guide";
