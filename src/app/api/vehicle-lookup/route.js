@@ -20,8 +20,7 @@ export async function GET(request) {
   } catch (error) {
     console.error("vehicle-lookup failed", error);
     const message = error.message || "Failed to fetch vehicle details";
-    const status = /API error:\s*400/i.test(message) ? 502 : 502;
-    return Response.json({ error: message }, { status });
+    return Response.json({ error: message }, { status: 502 });
   }
 }
 
@@ -31,19 +30,39 @@ export async function POST(request) {
     const reg = body?.reg || body?.vrm || "";
 
     if (!reg || typeof reg !== "string" || !reg.trim()) {
-      return Response.json({ error: "Registration number is required" }, { status: 400 });
+      return Response.json(
+        { success: false, message: "Please provide a vehicle registration number." },
+        { status: 400 }
+      );
     }
 
     const result = await fetchVehicleDetails(reg);
     const vehicle = normalizeVehicleDetails(result, reg);
 
     if (!vehicle.brand && !vehicle.year && !vehicle.series) {
-      return Response.json({ error: "No vehicle details found for that registration", vehicle }, { status: 404 });
+      return Response.json(
+        { success: false, message: "Vehicle details not found for this registration." },
+        { status: 404 }
+      );
     }
 
-    return Response.json({ vehicle, raw: result });
+    return Response.json({
+      success: true,
+      vehicle,
+      data: {
+        VRM: vehicle.vrm,
+        Make: vehicle.brand,
+        Model: vehicle.series,
+        YearOfManufacture: vehicle.year,
+        FuelType: vehicle.fuelType,
+        EngineCapacity: vehicle.engineCapacity,
+      },
+    });
   } catch (error) {
     console.error("POST vehicle-lookup failed", error);
-    return Response.json({ error: error.message || "Failed to fetch vehicle details" }, { status: 502 });
+    return Response.json(
+      { success: false, message: error.message || "Failed to fetch vehicle details" },
+      { status: 502 }
+    );
   }
 }
