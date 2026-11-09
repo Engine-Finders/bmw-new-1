@@ -245,7 +245,7 @@ export default async function CatchAllPage({ params }) {
     sections.filter(([, shown]) => shown).forEach(([key], index) => {
       band[key] = index % 2 === 0 ? "tint" : "plain"; // the hero is near-white, so the band after it starts tinted
     });
-    // "BMW 3 Series E90 Engine Codes …" -> "E90", for "Most Requested E90 Engines" and "FAQ — BMW E90".
+    // "BMW 3 Series E90 Engine Codes …" -> "E90", for "Most Requested E90 Engines" and "FAQ - BMW E90".
     const generationCode = (String(data.engineDatabase?.h2 || "").match(/^BMW .*?\s(\S+)\s+(?:Engine|Powertrain) Codes/) || [])[1] || "";
     return (
       <main className="flex flex-col overflow-x-hidden">

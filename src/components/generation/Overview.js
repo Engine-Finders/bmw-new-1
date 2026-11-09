@@ -155,7 +155,7 @@ const HTML = "[&_a]:[font-weight:inherit] [&_a]:text-inherit hover:[&_a]:underli
 const TEXT_COL = "755px";
 
 function dash(value = "") {
-  return String(value ?? "").replace(/\s+-\s*(?=\S)/g, " — ");
+  return String(value ?? "").replace(/\s+-\s*(?=\S)/g, " - ");
 }
 
 // "Sibling body styles in this generation" -> "Sibling Body Styles in this Generation", as in the designs;
@@ -297,7 +297,7 @@ export default function Overview({ data , band }) {
   // Band colour from the page (sections alternate plain / tinted); the design colour when none is given.
   const vars = { ...TONES[isDark ? "dark" : "light"], ...(band ? { "--ov-bg": bandColor(isDark, band) } : {}) };
   // "BMW 3 Series E90 - Overview" -> "BMW 3 Series", to shorten "BMW 3 Series E46" to "E46" in the key facts.
-  const model = String(data.h2 || "").replace(/<[^>]*>/g, "").split(/\s+[-—–]\s*/)[0].trim().split(" ").slice(0, -1).join(" ");
+  const model = String(data.h2 || "").replace(/<[^>]*>/g, "").split(/\s+[--–]\s*/)[0].trim().split(" ").slice(0, -1).join(" ");
   const siblings = facts.find((fact) => /sibling/i.test(fact.label))?.value || "";
 
   // Tablets follow the phone design (sizes are its px ÷ 7.8 at 390px, as vw), capped at the desktop sizes so they

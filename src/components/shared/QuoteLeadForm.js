@@ -225,7 +225,38 @@ export default function QuoteLeadForm({
   useEffect(() => {
     const fromUrl = searchParams?.get("reg") || searchParams?.get("vrm") || "";
     const cleaned = fromUrl.replace(/\s+/g, "").toUpperCase();
-    if (cleaned) setRegInput(cleaned);
+    if (!cleaned) return;
+
+    setRegInput(cleaned);
+
+    let cancelled = false;
+    (async () => {
+      setLookupLoading(true);
+      setLookupError("");
+      setSubmitted(false);
+      try {
+        const response = await fetch(`/api/vehicle-lookup?vrm=${encodeURIComponent(cleaned)}`);
+        const data = await response.json();
+        if (cancelled) return;
+        if (!response.ok) {
+          setVehicle(emptyVehicle);
+          setLookupError(data.error || "Could not find that vehicle.");
+          return;
+        }
+        setVehicle(data.vehicle || emptyVehicle);
+        setRegInput((data.vehicle?.vrm || cleaned).replace(/\s+/g, "").toUpperCase());
+      } catch (error) {
+        if (cancelled) return;
+        setVehicle(emptyVehicle);
+        setLookupError(error.message || "Lookup failed. Please try again.");
+      } finally {
+        if (!cancelled) setLookupLoading(false);
+      }
+    })();
+
+    return () => {
+      cancelled = true;
+    };
   }, [searchParams]);
 
   useEffect(() => {
@@ -430,19 +461,19 @@ export default function QuoteLeadForm({
                       <li className="flex items-center gap-1.5">
                         <Icon name="calendar" className="h-3 w-3 text-[var(--color-primary)]" />
                         <span>
-                          <strong className="font-semibold">Year:</strong> {vehicle.year || "—"}
+                          <strong className="font-semibold">Year:</strong> {vehicle.year || "-"}
                         </span>
                       </li>
                       <li className="flex items-center gap-1.5">
                         <Icon name="fuel" className="h-3 w-3 text-[var(--color-primary)]" />
                         <span>
-                          <strong className="font-semibold">Fuel:</strong> {vehicle.fuelType || "—"}
+                          <strong className="font-semibold">Fuel:</strong> {vehicle.fuelType || "-"}
                         </span>
                       </li>
                       <li className="flex items-center gap-1.5">
                         <Icon name="engine" className="h-3 w-3 text-[var(--color-primary)]" />
                         <span>
-                          <strong className="font-semibold">Engine:</strong> {engineDisplay || "—"}
+                          <strong className="font-semibold">Engine:</strong> {engineDisplay || "-"}
                         </span>
                       </li>
                       <li className="flex items-center gap-1.5">
@@ -452,7 +483,7 @@ export default function QuoteLeadForm({
                           aria-hidden="true"
                         />
                         <span>
-                          <strong className="font-semibold">Colour:</strong> {vehicle.colour || "—"}
+                          <strong className="font-semibold">Colour:</strong> {vehicle.colour || "-"}
                         </span>
                       </li>
                     </ul>
@@ -540,7 +571,7 @@ export default function QuoteLeadForm({
 
             <p className="flex items-start justify-center gap-1.5 text-center text-[10px] leading-[1.35] text-[var(--color-text-soft)] sm:text-[11px]">
               <Icon name="lock" className="mt-0.5 h-3 w-3 shrink-0" />
-              <span>Your details are secure, no spam — genuine quote from UK vetted engine specialists only.</span>
+              <span>Your details are secure, no spam - genuine quote from UK vetted engine specialists only.</span>
             </p>
           </form>
         )}

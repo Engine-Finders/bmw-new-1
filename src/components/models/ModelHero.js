@@ -1,8 +1,9 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
 import { useTheme } from "@/components/shared/themeProvider";
+import HeroRegQuoteForm from "@/components/shared/HeroRegQuoteForm";
+import { bmwContextLabel, modelCtaCopy } from "@/components/shared/SectionQuoteCta";
 
 // Model page hero. No card container: the copy sits straight on the section background, the client's
 // hero image for this model fills the right side behind a diagonal cut, and the four stats run
@@ -163,15 +164,6 @@ function Title({ title, C, className = "", as: Tag = "h1" }) {
   );
 }
 
-function Cta({ data, href, className = "" }) {
-  return (
-    <Link href={href} className={`inline-flex items-center gap-3 rounded-[6px] bg-[#0b57e3] px-7 py-3.5 text-[16px] font-semibold text-white transition hover:brightness-110 ${className}`}>
-      <span dangerouslySetInnerHTML={{ __html: data.primaryCta.label.replace(/\s*(?:→|â†’)\s*$/, "") }} />
-      <LineIcon name="arrow" className="h-5 w-5" strokeWidth={2.2} />
-    </Link>
-  );
-}
-
 export default function ModelHero({ data }) {
   const { theme } = useTheme();
   if (!data) return null;
@@ -181,7 +173,7 @@ export default function ModelHero({ data }) {
   const pill = splitTagPill(data.tagPill);
   const title = splitTitle(data.h1);
   const scene = (!isDark && data.heroSceneLight) || data.heroScene;
-  const ctaHref = data.primaryCta?.href && data.primaryCta.href !== "#" ? data.primaryCta.href : "/quote";
+  const copy = modelCtaCopy(bmwContextLabel(data.tagPill, data.h1));
   const vars = { background: C.bg, "--mh-accent": C.accent, "--mh-line": C.line };
 
   return (
@@ -204,7 +196,12 @@ export default function ModelHero({ data }) {
             <Pill pill={pill} C={C} />
             <Title title={title} C={C} className="mt-6" />
             <p className="t-p mt-5 max-w-[600px]" style={{ color: C.muted }} dangerouslySetInnerHTML={{ __html: copyHtml(data.subHeadline) }} />
-            {data.primaryCta ? <Cta data={data} href={ctaHref} className="mt-7" /> : null}
+            <HeroRegQuoteForm
+              className="mt-7"
+              buttonLabel={copy.heroButton}
+              fallbackHref="/quote"
+              buttonClassName="!bg-[#0b57e3]"
+            />
           </div>
 
           {data.trustStrip?.length > 0 ? (
@@ -227,7 +224,12 @@ export default function ModelHero({ data }) {
             <Image src={scene.src} alt="" fill priority sizes="100vw" className="object-cover object-[72%_center]" />
           </div>
         ) : null}
-        {data.primaryCta ? <Cta data={data} href={ctaHref} className="mt-5 w-full justify-center" /> : null}
+        <HeroRegQuoteForm
+          className="mt-5 max-w-none"
+          buttonLabel={copy.heroButton}
+          fallbackHref="/quote"
+          buttonClassName="!bg-[#0b57e3] w-full sm:w-auto"
+        />
         {data.trustStrip?.length > 0 ? (
           <ul className="mt-5 grid grid-cols-2 gap-3">
             {data.trustStrip.map((item, index) => (

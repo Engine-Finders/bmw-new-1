@@ -20,7 +20,7 @@ function asImage(image, width, height) {
 
 /** `Cost -"How much…?"` → topic "Cost" + question "“How much…?”"; a plain question stays as is. */
 function splitQuestion(raw = "") {
-  const m = String(raw).match(/^\s*([^"“”]{2,40}?)\s*[-–—]\s*["“](.+?)["”]\s*$/);
+  const m = String(raw).match(/^\s*([^"“”]{2,40}?)\s*[-–-]\s*["“](.+?)["”]\s*$/);
   if (!m) return { topic: "", question: cleanText(raw) };
   return { topic: cleanText(m[1]), question: `“${cleanText(m[2])}”` };
 }

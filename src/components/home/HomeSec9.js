@@ -5,6 +5,7 @@ import Link from "next/link";
 import { TABLE_HEADER_BG, TABLE_HEADER_TEXT } from "@/components/shared/tableHeader";
 import { useTheme } from "@/components/shared/themeProvider";
 import { MobileCard, MobileHeading, MobileLabel, MobileLead, MobileSection } from "@/components/home/mobileKit";
+import SectionQuoteCta from "@/components/shared/SectionQuoteCta";
 
 // The BMW Failure Database - engine failures + warning signs tables with severity and links,
 // under an engine-bay header, closed by the urgency key.
@@ -114,6 +115,13 @@ function Desktop({ data, isDark }) {
             </span>
           ))}
         </div>
+        {data.sectionCta ? (
+          <SectionQuoteCta
+            label={data.sectionCta.label}
+            supportText={data.sectionCta.support}
+            href={data.sectionCta.href || "/quote"}
+          />
+        ) : null}
       </div>
     </div>
   );
@@ -183,6 +191,14 @@ function Phone({ data, isDark }) {
           ))}
         </ul>
       </MobileCard>
+      {data.sectionCta ? (
+        <SectionQuoteCta
+          className="!mt-5"
+          label={data.sectionCta.label}
+          supportText={data.sectionCta.support}
+          href={data.sectionCta.href || "/quote"}
+        />
+      ) : null}
     </MobileSection>
   );
 }

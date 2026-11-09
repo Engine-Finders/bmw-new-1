@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import { useTheme } from "@/components/shared/themeProvider";
+import SectionQuoteCta, { bmwContextLabel, modelCtaCopy } from "@/components/shared/SectionQuoteCta";
 import { variantFont as sectionFont } from "@/components/variant/variantFont";
 import { bandColor } from "./generationSection";
 
@@ -61,12 +62,12 @@ const TONES = {
 const HTML = "[&_a]:[font-weight:inherit] [&_a]:text-inherit hover:[&_a]:underline";
 
 function dash(value = "") {
-  return String(value ?? "").replace(/\s+-\s*(?=\S)/g, " — ");
+  return String(value ?? "").replace(/\s+-\s*(?=\S)/g, " - ");
 }
 
 // "BMW 3 Series E90 - Common Problems" -> "BMW 3 Series E90" + "Common Problems".
 function splitTitle(value = "") {
-  const match = String(value ?? "").match(/^(.*?)\s+[-—–]\s+(.*)$/);
+  const match = String(value ?? "").match(/^(.*?)\s+[--–]\s+(.*)$/);
   return match ? { main: match[1], accent: match[2] } : { main: String(value ?? ""), accent: "" };
 }
 
@@ -205,11 +206,11 @@ function Tier({ tier }) {
       <div className="grid grid-cols-2 border-t border-[var(--cp-line)] [&>*]:min-w-0">
         <div className={cell}>
           <span className="block text-[12.5px] leading-tight text-[var(--cp-soft)]">Dealer</span>
-          <span className={`mt-0.5 block text-[14.5px] font-medium leading-tight text-[var(--cp-text)] [overflow-wrap:anywhere] ${HTML}`} dangerouslySetInnerHTML={{ __html: dash(tier.dealer) || "—" }} />
+          <span className={`mt-0.5 block text-[14.5px] font-medium leading-tight text-[var(--cp-text)] [overflow-wrap:anywhere] ${HTML}`} dangerouslySetInnerHTML={{ __html: dash(tier.dealer) || "-" }} />
         </div>
         <div className={`${cell} border-l border-[var(--cp-line)]`}>
           <span className="block text-[12.5px] leading-tight text-[var(--cp-soft)]">Specialist</span>
-          <span className={`mt-0.5 block text-[14.5px] font-medium leading-tight text-[var(--cp-text)] [overflow-wrap:anywhere] ${HTML}`} dangerouslySetInnerHTML={{ __html: dash(tier.specialist) || "—" }} />
+          <span className={`mt-0.5 block text-[14.5px] font-medium leading-tight text-[var(--cp-text)] [overflow-wrap:anywhere] ${HTML}`} dangerouslySetInnerHTML={{ __html: dash(tier.specialist) || "-" }} />
         </div>
       </div>
       {tier.work || tier.note ? (
@@ -388,6 +389,7 @@ export default function CommonProblems({ data , band }) {
   const vars = { ...TONES[isDark ? "dark" : "light"], ...(band ? { "--cp-bg": bandColor(isDark, band) } : {}) };
   const title = splitTitle(dash(data.h2 || "Common Problems"));
   const problems = (data.problems || []).filter((problem) => problem && problem.title);
+  const copy = modelCtaCopy(bmwContextLabel("", data.h2));
   // Four across from 1024px (the design); three when a page has three or five problems, so no card sits alone.
   const desktopCols = problems.length === 4 ? "lg:grid-cols-4" : "lg:grid-cols-3";
 
@@ -401,7 +403,7 @@ export default function CommonProblems({ data , band }) {
           <span dangerouslySetInnerHTML={{ __html: title.main }} />
           {title.accent ? (
             <>
-              {" —"}
+              {" -"}
               <br className="md:hidden" />
               <span className="hidden md:inline"> </span>
               <span dangerouslySetInnerHTML={{ __html: title.accent }} />
@@ -441,6 +443,12 @@ export default function CommonProblems({ data , band }) {
         ) : null}
 
         <TrustStrip items={data.trustStrip} note={data.footerNote} />
+        <SectionQuoteCta
+          className="!mt-6"
+          label={copy.problemsLabel}
+          supportText={copy.problemsSupport}
+          href="/quote"
+        />
       </div>
     </section>
   );

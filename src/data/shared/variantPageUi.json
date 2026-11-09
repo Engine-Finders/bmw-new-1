@@ -111,7 +111,7 @@
   "buyingChecklist": {
     "h2": "Buying Checklist",
     "whyTitle": "Why this matters",
-    "whyText": "A 10-minute check now can save you thousands later. The right {variant} is a superb long-term car — the wrong one can be expensive fast.",
+    "whyText": "A 10-minute check now can save you thousands later. The right {variant} is a superb long-term car - the wrong one can be expensive fast.",
     "itemIcons": [
       { "match": "cold start", "icon": "pulse" },
       { "match": "service history", "icon": "fileText" },

@@ -53,13 +53,13 @@
             {
               "@type": "ListItem",
               "position": 1,
-              "name": "Z4 E89 (2009–2016) N54B30A",
+              "name": "Z4 E89 (2009-2016) N54B30A",
               "url": "https://bmwengines.uk/z4/e89/"
             },
             {
               "@type": "ListItem",
               "position": 2,
-              "name": "Z4 E89 (2010–2016) N54B30TO",
+              "name": "Z4 E89 (2010-2016) N54B30TO",
               "url": "https://bmwengines.uk/z4/e89/"
             }
           ]
@@ -96,7 +96,7 @@
               "name": "How much does a BMW Z4 sDrive35i / 35is engine replacement cost in the UK?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "A reconditioned Z4 N54 engine typically costs £4,500–£11,000 supply only depending on the variant. sDrive35i units sit at the lower end (£4,500–£9,500), while sDrive35is units run £5,000–£11,000. Fitting adds £900–£2,000 depending on workshop location. Rebuilt N54 units for the E89 chassis are available with 12-month unlimited mileage warranty. Use our calculator for a figure specific to your car."
+                "text": "A reconditioned Z4 N54 engine typically costs £4,500-£11,000 supply only depending on the variant. sDrive35i units sit at the lower end (£4,500-£9,500), while sDrive35is units run £5,000-£11,000. Fitting adds £900-£2,000 depending on workshop location. Rebuilt N54 units for the E89 chassis are available with 12-month unlimited mileage warranty. Use our calculator for a figure specific to your car."
               }
             },
             {
@@ -128,7 +128,7 @@
               "name": "How do I find my BMW Z4 sDrive35i / 35is engine code?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Listed on the VIN plate and vehicle documentation. The sDrive35i uses the N54B30A or N54B30O0 (306 bhp), while the sDrive35is uses the N54B30TO (335–340 bhp with overboost). The Z4 E89 was produced from 2009 to 2016. Tell us your registration date and we'll confirm it for free."
+                "text": "Listed on the VIN plate and vehicle documentation. The sDrive35i uses the N54B30A or N54B30O0 (306 bhp), while the sDrive35is uses the N54B30TO (335-340 bhp with overboost). The Z4 E89 was produced from 2009 to 2016. Tell us your registration date and we'll confirm it for free."
               }
             },
             {
@@ -136,7 +136,7 @@
               "name": "Can I repair the HPFP, or does it need replacement?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "The HPFP typically requires replacement rather than repair (£500–£1,500). BMW issued multiple recalls covering HPFP failures on N54-equipped vehicles. Check whether your Z4 has had the recall work completed. Even with updated pumps, failures can still occur. If you experience long cranking or loss of power, have the HPFP inspected immediately."
+                "text": "The HPFP typically requires replacement rather than repair (£500-£1,500). BMW issued multiple recalls covering HPFP failures on N54-equipped vehicles. Check whether your Z4 has had the recall work completed. Even with updated pumps, failures can still occur. If you experience long cranking or loss of power, have the HPFP inspected immediately."
               }
             }
           ]
@@ -197,7 +197,7 @@
     }
   },
   "hero": {
-    "tagPill": "BMW Z4 sDrive35i / 35is • 2009–2016 • 2 Engine Variants",
+    "tagPill": "BMW Z4 sDrive35i / 35is • 2009-2016 • 2 Engine Variants",
     "h1": "BMW Z4 sDrive35i / 35is Engine Replacement - Compare Prices & Get Quotes",
     "subHeadline": "The Z4's twin-turbo straight-six flagship - the <a href='https://bmwengines.uk/engine/n54-n55'>N54</a>-powered sDrive35i and the uprated sDrive35is with overboost. Get quotes from trusted UK BMW specialists who understand these complex performance engines, supply & fit available nationwide.",
     "trustBadges": [
@@ -230,19 +230,19 @@
     "rows": [
       {
         "generation": "Z4 E89 (sDrive35i)",
-        "years": "2009–2016",
+        "years": "2009-2016",
         "engineCode": "N54B30A / N54B30O0",
         "reliability": "★★★☆☆ [NEWLY ASSIGNED - see Data Note]",
-        "reconCost": "£4,500–£9,500 [PLACEHOLDER - confirm vs cost sheet]",
+        "reconCost": "£4,500-£9,500 [PLACEHOLDER - confirm vs cost sheet]",
         "eraNote": "306 bhp - HPFP, injectors and wastegate rattle are the main concerns"
       },
       {
         "generation": "Z4 E89 (sDrive35is)",
-        "years": "2010–2016",
+        "years": "2010-2016",
         "engineCode": "N54B30TO",
         "reliability": "★★★☆☆ [NEWLY ASSIGNED - see Data Note]",
-        "reconCost": "£5,000–£11,000 [PLACEHOLDER - confirm vs cost sheet]",
-        "eraNote": "335–340 bhp with overboost - higher stress on turbos and HPFP"
+        "reconCost": "£5,000-£11,000 [PLACEHOLDER - confirm vs cost sheet]",
+        "eraNote": "335-340 bhp with overboost - higher stress on turbos and HPFP"
       }
     ],
     "sourceNote": "This table is the single source every other section on this page matches - Sections 2, 4 and 6 reference it rather than restating conflicting figures.",
@@ -260,35 +260,35 @@
     "rows": [
       {
         "engineType": "Used Engine",
-        "supplyOnly": "£2,500–£4,500",
-        "fittedIndie": "£3,500–£6,500",
-        "warranty": "1–6 months",
+        "supplyOnly": "£2,500-£4,500",
+        "fittedIndie": "£3,500-£6,500",
+        "warranty": "1-6 months",
         "bestFor": "Budget priority; short-term ownership"
       },
       {
         "engineType": "Reconditioned Engine",
-        "supplyOnly": "£4,500–£9,500",
-        "fittedIndie": "£6,000–£11,500",
-        "warranty": "12–24 months",
+        "supplyOnly": "£4,500-£9,500",
+        "fittedIndie": "£6,000-£11,500",
+        "warranty": "12-24 months",
         "bestFor": "Most owners - best cost/warranty balance"
       },
       {
         "engineType": "Rebuilt Engine",
-        "supplyOnly": "£6,000–£11,000",
-        "fittedIndie": "£7,500–£13,500",
-        "warranty": "12–24 months",
+        "supplyOnly": "£6,000-£11,000",
+        "fittedIndie": "£7,500-£13,500",
+        "warranty": "12-24 months",
         "bestFor": "Long-term ownership; 3+ year horizon"
       },
       {
         "engineType": "Main Dealer New",
-        "supplyOnly": "£10,000–£16,000",
-        "fittedIndie": "£12,000–£19,000",
-        "warranty": "24–36 months",
+        "supplyOnly": "£10,000-£16,000",
+        "fittedIndie": "£12,000-£19,000",
+        "warranty": "24-36 months",
         "bestFor": "Insurance jobs, warranty claims"
       }
     ],
-    "figuresNote": "Figures above reflect current market rates. Rebuilt N54 units for the E89 chassis are available with 12-month unlimited mileage warranty. A typical engine replacement cost in the UK ranges between £3,067 and £6,105 or more, with reconditioned engines typically costing £1,200–£2,200 supply only and total installed costs around £1,800–£2,800 for simpler engines - N54-specific costs are significantly higher due to complexity.",
-    "labourEstimate": "Fitting a Z4 N54 engine typically takes 14–20 hours at £65–£95/hr (independent). The tight engine bay and complex twin-turbo layout add significant labour time. The 35is DCT transmission and overboost system add further complexity.",
+    "figuresNote": "Figures above reflect current market rates. Rebuilt N54 units for the E89 chassis are available with 12-month unlimited mileage warranty. A typical engine replacement cost in the UK ranges between £3,067 and £6,105 or more, with reconditioned engines typically costing £1,200-£2,200 supply only and total installed costs around £1,800-£2,800 for simpler engines - N54-specific costs are significantly higher due to complexity.",
+    "labourEstimate": "Fitting a Z4 N54 engine typically takes 14-20 hours at £65-£95/hr (independent). The tight engine bay and complex twin-turbo layout add significant labour time. The 35is DCT transmission and overboost system add further complexity.",
     "cta": {
       "label": "→ Compare Z4 sDrive35i / 35is engine prices from UK specialists",
       "href": "/quote"
@@ -300,8 +300,8 @@
         "id": 1,
         "title": "High-Pressure Fuel Pump (HPFP) Failure (N54)",
         "symptoms": "Long cranking before starting, rough idle, loss of power, engine warning light, intermittent stalling, backfiring. In certain cases, the driver may experience reduced engine performance in a Safe Mode.",
-        "typicalMileage": "40,000–80,000 miles - premature failures were widespread, leading to multiple recalls.",
-        "repairCost": "£500–£1,500 (HPFP replacement).",
+        "typicalMileage": "40,000-80,000 miles - premature failures were widespread, leading to multiple recalls.",
+        "repairCost": "£500-£1,500 (HPFP replacement).",
         "replacementCost": "N/A - repair only; if ignored, the vehicle may fail to start or go into limp mode.",
         "urgency": {
           "icon": "🟠",
@@ -318,8 +318,8 @@
         "id": 2,
         "title": "Fuel Injector Failure (N54)",
         "symptoms": "Rough idle, misfires, decreased performance, poor fuel economy, engine warning light, fuel smell in the oil.",
-        "typicalMileage": "50,000–100,000 miles - earlier injectors (Index 10 or lower) are most susceptible.",
-        "repairCost": "£1,200–£2,500 (full set of six Index 12 injectors).",
+        "typicalMileage": "50,000-100,000 miles - earlier injectors (Index 10 or lower) are most susceptible.",
+        "repairCost": "£1,200-£2,500 (full set of six Index 12 injectors).",
         "replacementCost": "N/A - repair only; if ignored, misfires can damage catalytic converters.",
         "urgency": {
           "icon": "🟠",
@@ -336,8 +336,8 @@
         "id": 3,
         "title": "Turbocharger Wastegate Rattle (N54)",
         "symptoms": "Rattling noise from the engine bay, particularly on cold start or deceleration, turbo lag, reduced performance, check engine light.",
-        "typicalMileage": "60,000–100,000 miles - the wastegate bushings wear over time.",
-        "repairCost": "£800–£2,500 (wastegate actuator adjustment or rebuild) / £1,500–£4,000 (turbocharger replacement).",
+        "typicalMileage": "60,000-100,000 miles - the wastegate bushings wear over time.",
+        "repairCost": "£800-£2,500 (wastegate actuator adjustment or rebuild) / £1,500-£4,000 (turbocharger replacement).",
         "replacementCost": "N/A - repair only if caught early; if ignored, boost pressure drops and performance suffers.",
         "urgency": {
           "icon": "🟡",
@@ -374,32 +374,32 @@
         {
           "problem": "HPFP failure",
           "repairable": "✅ Yes",
-          "typicalCost": "£500–£1,500",
+          "typicalCost": "£500-£1,500",
           "whenItMakesSense": "Essential repair - vehicle may be undriveable without it"
         },
         {
           "problem": "Injector failure",
           "repairable": "✅ Yes",
-          "typicalCost": "£1,200–£2,500",
+          "typicalCost": "£1,200-£2,500",
           "whenItMakesSense": "Replace all six with Index 12 units - coding required"
         },
         {
           "problem": "Wastegate rattle",
           "repairable": "✅ Yes (if caught early)",
-          "typicalCost": "£800–£4,000",
+          "typicalCost": "£800-£4,000",
           "whenItMakesSense": "Adjust or rebuild - cheaper than full turbo replacement"
         },
         {
           "problem": "Oil leaks (gaskets)",
           "repairable": "✅ Yes",
-          "typicalCost": "£300–£1,000",
+          "typicalCost": "£300-£1,000",
           "whenItMakesSense": "Common maintenance - repair when symptoms appear"
         },
         {
           "problem": "Carbon build-up",
           "repairable": "✅ Yes",
-          "typicalCost": "£400–£800",
-          "whenItMakesSense": "Walnut blasting - recommended every 60,000–80,000 miles"
+          "typicalCost": "£400-£800",
+          "whenItMakesSense": "Walnut blasting - recommended every 60,000-80,000 miles"
         },
         {
           "problem": "Catastrophic engine failure",
@@ -416,7 +416,7 @@
         "* Index 12 injectors fitted - the updated injectors are far more reliable",
         "* No wastegate rattle on cold start or deceleration",
         "* Carbon cleaning (walnut blasting) performed recently",
-        "* Full service history with regular oil changes (every 8,000–10,000 miles)"
+        "* Full service history with regular oil changes (every 8,000-10,000 miles)"
       ],
       "avoidIf": [
         "* Long cranking on startup - HPFP failure imminent",
@@ -438,7 +438,7 @@
       "* Cold Start - Listen for long cranking (HPFP failure) or rattling (wastegate rattle)",
       "* Idle Quality - Any rough idle or misfires? (injector failure)",
       "* Service History - HPFP recalls completed? Index 12 injectors fitted?",
-      "* Carbon Cleaning - Has walnut blasting been performed? (recommended every 60,000–80,000 miles)",
+      "* Carbon Cleaning - Has walnut blasting been performed? (recommended every 60,000-80,000 miles)",
       "* Oil Leaks - Check around valve cover and oil filter housing",
       "* Turbo Check - Any whistling, smoke, or power loss?",
       "* DCT Check - For 35is, check for smooth gear changes - DCT issues are expensive",
@@ -456,17 +456,17 @@
     "rows": [
       {
         "engineCode": "N54B30A / N54B30O0",
-        "years": "2009–2016",
+        "years": "2009-2016",
         "power": "306 bhp (225 kW)",
         "enquiries": "- (pattern data)",
-        "avgReconCost": "£4,500–£9,500 [PLACEHOLDER]"
+        "avgReconCost": "£4,500-£9,500 [PLACEHOLDER]"
       },
       {
         "engineCode": "N54B30TO",
-        "years": "2010–2016",
-        "power": "335–340 bhp (250 kW)",
+        "years": "2010-2016",
+        "power": "335-340 bhp (250 kW)",
         "enquiries": "- (pattern data)",
-        "avgReconCost": "£5,000–£11,000 [PLACEHOLDER]"
+        "avgReconCost": "£5,000-£11,000 [PLACEHOLDER]"
       }
     ],
     "matchNote": "This table's rows match Section 1B's Era Map exactly.",
@@ -553,7 +553,7 @@
       {
         "id": 1,
         "question": "How much does a BMW Z4 sDrive35i / 35is engine replacement cost in the UK?",
-        "answer": "A reconditioned Z4 N54 engine typically costs £4,500–£11,000 supply only depending on the variant. sDrive35i units sit at the lower end (£4,500–£9,500), while sDrive35is units run £5,000–£11,000. Fitting adds £900–£2,000 depending on workshop location. Rebuilt N54 units for the E89 chassis are available with 12-month unlimited mileage warranty. Use our calculator for a figure specific to your car."
+        "answer": "A reconditioned Z4 N54 engine typically costs £4,500-£11,000 supply only depending on the variant. sDrive35i units sit at the lower end (£4,500-£9,500), while sDrive35is units run £5,000-£11,000. Fitting adds £900-£2,000 depending on workshop location. Rebuilt N54 units for the E89 chassis are available with 12-month unlimited mileage warranty. Use our calculator for a figure specific to your car."
       },
       {
         "id": 2,
@@ -573,12 +573,12 @@
       {
         "id": 5,
         "question": "How do I find my BMW Z4 sDrive35i / 35is engine code?",
-        "answer": "Listed on the VIN plate and vehicle documentation. The sDrive35i uses the N54B30A or N54B30O0 (306 bhp), while the sDrive35is uses the N54B30TO (335–340 bhp with overboost). The Z4 E89 was produced from 2009 to 2016. Tell us your registration date and we'll confirm it for free."
+        "answer": "Listed on the VIN plate and vehicle documentation. The sDrive35i uses the N54B30A or N54B30O0 (306 bhp), while the sDrive35is uses the N54B30TO (335-340 bhp with overboost). The Z4 E89 was produced from 2009 to 2016. Tell us your registration date and we'll confirm it for free."
       },
       {
         "id": 6,
         "question": "Can I repair the HPFP, or does it need replacement?",
-        "answer": "The HPFP typically requires replacement rather than repair (£500–£1,500). BMW issued multiple recalls covering HPFP failures on N54-equipped vehicles. Check whether your Z4 has had the recall work completed. Even with updated pumps, failures can still occur. If you experience long cranking or loss of power, have the HPFP inspected immediately."
+        "answer": "The HPFP typically requires replacement rather than repair (£500-£1,500). BMW issued multiple recalls covering HPFP failures on N54-equipped vehicles. Check whether your Z4 has had the recall work completed. Even with updated pumps, failures can still occur. If you experience long cranking or loss of power, have the HPFP inspected immediately."
       }
     ],
     "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty - always confirm terms with your chosen supplier."

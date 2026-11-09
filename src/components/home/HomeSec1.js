@@ -1,24 +1,15 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
 import { useTheme } from "@/components/shared/themeProvider";
 import BrandIcon from "@/components/home/brandIcon";
+import HeroRegQuoteForm from "@/components/shared/HeroRegQuoteForm";
 
 // Hero. Desktop: copy left, the reference car scene (front-facing F30 LCI under the arch) right. Phone/tablet (reference
 // layout, both themes): H1, description, car, four glass badges in one row, CTA box, trust line.
 
 const BLUE = "#0b4fb8";
 const BLUE_DARK_THEME = "#2f72e0";
-const CTA_BLUE = "#0b47a8";
-
-function Arrow({ className = "h-6 w-6" }) {
-  return (
-    <svg aria-hidden="true" viewBox="0 0 24 24" className={className} fill="none" stroke="currentColor" strokeWidth="1.8">
-      <path d="M4 12h16m-6-6 6 6-6 6" />
-    </svg>
-  );
-}
 
 // M stripe: slanted bars (blue, dark blue, red, then pale blues) and an optional fading rule.
 function Stripe({ bars = ["#1c69d4", "#0b3d91", "#e4262c", "#9fb6d8", "#9fb6d8"], line = true, isDark }) {
@@ -129,17 +120,15 @@ function DesktopHero({ data, isDark }) {
               );
             })}
           </ul>
-
-          <Link
-            href={data.cta.href}
-            className="mt-7 inline-flex w-fit items-center gap-4 rounded-[4px] px-7 py-3.5 text-[16px] font-semibold tracking-[0.02em] text-white transition hover:brightness-110"
-            style={{ backgroundColor: CTA_BLUE }}
-          >
-            {data.cta.label}
-            <Arrow className="h-5 w-5" />
-          </Link>
         </div>
 
+        <HeroRegQuoteForm
+          className="mt-7 !max-w-[700px]"
+          buttonLabel={data.cta?.label || "Explore BMW Engine Replacement Options"}
+          placeholder={data.registrationInput?.placeholder || "Your Reg"}
+          fallbackHref={data.cta?.href || "/quote"}
+          buttonClassName="!bg-[#0b47a8]"
+        />
       </div>
     </div>
   );
@@ -189,25 +178,13 @@ function MobileHero({ data, isDark }) {
           ))}
         </ul>
 
-        <Link
-          href={data.cta.href}
-          className="mt-3 flex items-center gap-3 rounded-[12px] border border-[#2a6ae0] p-2.5 font-normal text-white"
-          style={{ background: "linear-gradient(90deg, #0a1f4d 0%, #0b2f7a 55%, #0a2a6b 100%)" }}
-        >
-          <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-black/25">
-            <svg aria-hidden="true" viewBox="0 0 24 24" className="h-10 w-10">
-              <path d="M12 2.5 4.5 5.5v6c0 5 3.3 9 7.5 10 4.2-1 7.5-5 7.5-10v-6L12 2.5Z" fill="#1c4fb0" stroke="#d6dde8" strokeWidth="1.2" />
-              <path d="m8.5 12 2.4 2.4L15.8 9.5" fill="none" stroke="#fff" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" />
-            </svg>
-          </span>
-          <span className="min-w-0 flex-1">
-            <span className="block text-[15px] font-semibold tracking-[0.08em]">{data.cta.label}</span>
-            <span className="mt-0.5 block text-[13px] leading-[1.35] tracking-[0.02em] text-white/85">{data.cta.tagline}</span>
-          </span>
-          <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-black/40">
-            <Arrow className="h-5 w-5" />
-          </span>
-        </Link>
+        <HeroRegQuoteForm
+          className="mt-3 max-w-none"
+          buttonLabel={data.cta?.label || "Explore BMW Engine Replacement Options"}
+          placeholder={data.registrationInput?.placeholder || "Your Reg"}
+          fallbackHref={data.cta?.href || "/quote"}
+          buttonClassName="!bg-[#0b47a8]"
+        />
 
         <div className={`mt-3 flex flex-wrap items-center justify-center gap-x-1.5 gap-y-1 text-[13px] ${isDark ? "text-white/70" : "text-[#3b4656]"}`}>
           <svg aria-hidden="true" viewBox="0 0 24 24" className="h-3 w-3" fill="currentColor">

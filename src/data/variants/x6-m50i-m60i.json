@@ -53,13 +53,13 @@
             {
               "@type": "ListItem",
               "position": 1,
-              "name": "G06 X6 M50i (N63TU3, 2019–2023)",
+              "name": "G06 X6 M50i (N63TU3, 2019-2023)",
               "url": "https://bmwengines.uk/x6/g06/"
             },
             {
               "@type": "ListItem",
               "position": 2,
-              "name": "G06 X6 M60i (S68, 2023–present)",
+              "name": "G06 X6 M60i (S68, 2023-present)",
               "url": "https://bmwengines.uk/x6/g06/"
             }
           ]
@@ -90,7 +90,7 @@
               "name": "How much does a BMW X6 M50i or M60i engine replacement cost in the UK?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "A reconditioned N63 or S68 4.4-litre V8 engine typically costs £6,000–£12,000 supply only. Used engines are available from £4,500–£7,500. Fitting adds £1,500–£2,500 depending on your location and workshop. Labour times can exceed 30 hours for a full V8 replacement. Main dealer new engines can exceed £15,000."
+                "text": "A reconditioned N63 or S68 4.4-litre V8 engine typically costs £6,000-£12,000 supply only. Used engines are available from £4,500-£7,500. Fitting adds £1,500-£2,500 depending on your location and workshop. Labour times can exceed 30 hours for a full V8 replacement. Main dealer new engines can exceed £15,000."
               }
             },
             {
@@ -98,7 +98,7 @@
               "name": "Is the BMW X6 M50i engine reliable?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "The N63TU3 (M50i) is the most refined version of BMW's original twin-turbo V8. Early N63s (2008–2013) had a well-documented reputation for excessive oil consumption, valve stem seal failure, timing chain stretch, and failing injectors. The N63TU3 addressed many of these issues, but the engine still demands meticulous maintenance."
+                "text": "The N63TU3 (M50i) is the most refined version of BMW's original twin-turbo V8. Early N63s (2008-2013) had a well-documented reputation for excessive oil consumption, valve stem seal failure, timing chain stretch, and failing injectors. The N63TU3 addressed many of these issues, but the engine still demands meticulous maintenance."
               }
             },
             {
@@ -130,7 +130,7 @@
               "name": "How do I find my BMW X6 engine code?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Listed on the VIN plate and vehicle documentation. G06 M50i (2019–2023): N63B44T3 / N63TU3. G06 M60i (2023–present): S68B44A. The chassis code and badge are the easiest tells - M50i for 2019–2023, M60i for 2023–present."
+                "text": "Listed on the VIN plate and vehicle documentation. G06 M50i (2019-2023): N63B44T3 / N63TU3. G06 M60i (2023-present): S68B44A. The chassis code and badge are the easiest tells - M50i for 2019-2023, M60i for 2023-present."
               }
             }
           ]
@@ -191,7 +191,7 @@
     }
   },
   "hero": {
-    "tagPill": "BMW X6 M50i / M60i • 2019–present • 4.4L Twin-Turbo V8",
+    "tagPill": "BMW X6 M50i / M60i • 2019-present • 4.4L Twin-Turbo V8",
     "h1": "BMW X6 M50i & M60i Engine Replacement - Compare Prices & Get Quotes",
     "subHeadline": "Get quotes today from trusted UK BMW X6 specialists. Compare reconditioned, rebuilt and used 4.4-litre twin-turbo V8 engines - from the <a href='https://bmwengines.uk/engine/n62-n63'>N63</a> to the latest S68 - supply & fit available nationwide.",
     "trustBadges": [
@@ -224,18 +224,18 @@
     "rows": [
       {
         "generation": "G06 X6 M50i",
-        "years": "2019–2023",
+        "years": "2019-2023",
         "engineCode": "N63B44T3 / N63TU3 (4.4L Twin-Turbo V8)",
         "reliability": "★★★★☆ [NEWLY ASSIGNED - see Data Note]",
-        "reconCost": "£6,000–£10,000 [PLACEHOLDER - confirm vs cost sheet]",
+        "reconCost": "£6,000-£10,000 [PLACEHOLDER - confirm vs cost sheet]",
         "eraNote": "The most refined N63 generation - 523 hp, 750 Nm. Still requires diligent maintenance."
       },
       {
         "generation": "G06 X6 M60i",
-        "years": "2023–present",
+        "years": "2023-present",
         "engineCode": "S68B44A (4.4L Twin-Turbo V8 MHEV)",
         "reliability": "★★★½☆ [NEWLY ASSIGNED - see Data Note]",
-        "reconCost": "£7,000–£12,000 [PLACEHOLDER]",
+        "reconCost": "£7,000-£12,000 [PLACEHOLDER]",
         "eraNote": "BMW's latest V8 - 523 hp with 48V mild-hybrid. Improved but still early in its reliability cycle."
       }
     ],
@@ -254,35 +254,35 @@
     "rows": [
       {
         "engineType": "Used Engine",
-        "supplyOnly": "£4,500–£7,500",
-        "fittedIndie": "£6,000–£9,000",
-        "warranty": "1–6 months",
+        "supplyOnly": "£4,500-£7,500",
+        "fittedIndie": "£6,000-£9,000",
+        "warranty": "1-6 months",
         "bestFor": "Budget priority; lower-mileage examples"
       },
       {
         "engineType": "Reconditioned Engine",
-        "supplyOnly": "£6,000–£10,000",
-        "fittedIndie": "£7,500–£11,500",
-        "warranty": "12–24 months",
+        "supplyOnly": "£6,000-£10,000",
+        "fittedIndie": "£7,500-£11,500",
+        "warranty": "12-24 months",
         "bestFor": "Most owners - best cost/warranty balance"
       },
       {
         "engineType": "Rebuilt Engine",
-        "supplyOnly": "£8,000–£12,000",
-        "fittedIndie": "£9,500–£14,000",
-        "warranty": "12–24 months",
+        "supplyOnly": "£8,000-£12,000",
+        "fittedIndie": "£9,500-£14,000",
+        "warranty": "12-24 months",
         "bestFor": "Long-term ownership; 3+ year horizon"
       },
       {
         "engineType": "Main Dealer New",
-        "supplyOnly": "£12,000–£18,000+",
-        "fittedIndie": "£14,000–£21,000+",
-        "warranty": "24–36 months",
+        "supplyOnly": "£12,000-£18,000+",
+        "fittedIndie": "£14,000-£21,000+",
+        "warranty": "24-36 months",
         "bestFor": "Insurance jobs, warranty claims"
       }
     ],
-    "figuresNote": "Figures above reflect the N63 and S68 4.4-litre twin-turbo V8 engines. Used N63 engines typically sit in the £4,500–£7,500 band; reconditioned units range from £6,000–£10,000. The S68 is newer and rarer, commanding higher prices. Labour times for a full V8 replacement can exceed 30 hours.",
-    "labourEstimate": "Fitting an X6 V8 engine typically takes 18–25 hours at £80–£120/hr (independent) or £140–£200/hr (London/SE dealer). The hot-vee V8 design and tight engine bay make this a labour-intensive job.",
+    "figuresNote": "Figures above reflect the N63 and S68 4.4-litre twin-turbo V8 engines. Used N63 engines typically sit in the £4,500-£7,500 band; reconditioned units range from £6,000-£10,000. The S68 is newer and rarer, commanding higher prices. Labour times for a full V8 replacement can exceed 30 hours.",
+    "labourEstimate": "Fitting an X6 V8 engine typically takes 18-25 hours at £80-£120/hr (independent) or £140-£200/hr (London/SE dealer). The hot-vee V8 design and tight engine bay make this a labour-intensive job.",
     "cta": {
       "label": "→ Compare X6 V8 engine prices from UK specialists",
       "href": "/quote"
@@ -293,16 +293,16 @@
       {
         "id": 1,
         "title": "Excessive Oil Consumption - N63 (M50i)",
-        "symptoms": "Low oil level warning light, need to add 1 quart of oil every 600–1,000 miles, blue smoke from exhaust on startup, visible oil consumption between services.",
-        "typicalMileage": "30,000–80,000 miles",
-        "repairCost": "£1,500–£4,000 (valve stem seal replacement)【PLACEHOLDER - confirm vs cost sheet】",
-        "replacementCost": "£6,000–£12,000 (if oil starvation leads to engine failure)",
+        "symptoms": "Low oil level warning light, need to add 1 quart of oil every 600-1,000 miles, blue smoke from exhaust on startup, visible oil consumption between services.",
+        "typicalMileage": "30,000-80,000 miles",
+        "repairCost": "£1,500-£4,000 (valve stem seal replacement)【PLACEHOLDER - confirm vs cost sheet】",
+        "replacementCost": "£6,000-£12,000 (if oil starvation leads to engine failure)",
         "urgency": {
           "icon": "🟠",
           "label": "Check",
           "text": "book inspection urgently"
         },
-        "recommendation": "The N63's most notorious issue is excessive oil consumption. Class action lawsuits have been filed alleging owners had to add 6–8 quarts of oil between services. The primary cause is valve stem seal failure, allowing oil to enter the combustion chamber. If you notice blue smoke on startup or are constantly topping up oil, have the valve stem seals inspected. Ignoring this can lead to catalytic converter failure and, in extreme cases, engine damage from oil starvation.",
+        "recommendation": "The N63's most notorious issue is excessive oil consumption. Class action lawsuits have been filed alleging owners had to add 6-8 quarts of oil between services. The primary cause is valve stem seal failure, allowing oil to enter the combustion chamber. If you notice blue smoke on startup or are constantly topping up oil, have the valve stem seals inspected. Ignoring this can lead to catalytic converter failure and, in extreme cases, engine damage from oil starvation.",
         "failureLink": {
           "label": "Read the full oil consumption guide",
           "href": "/failures/n63-oil-consumption"
@@ -312,9 +312,9 @@
         "id": 2,
         "title": "Timing Chain Guide Wear - N63 (M50i)",
         "symptoms": "Rattling noise on cold start, metallic ticking from the engine, engine warning light, reduced performance.",
-        "typicalMileage": "60,000–100,000 miles",
-        "repairCost": "£1,500–£3,500 (timing chain guide replacement)【PLACEHOLDER - confirm vs cost sheet】",
-        "replacementCost": "£6,000–£12,000 (if chain skips and valves contact pistons)",
+        "typicalMileage": "60,000-100,000 miles",
+        "repairCost": "£1,500-£3,500 (timing chain guide replacement)【PLACEHOLDER - confirm vs cost sheet】",
+        "replacementCost": "£6,000-£12,000 (if chain skips and valves contact pistons)",
         "urgency": {
           "icon": "🔴",
           "label": "Immediate",
@@ -330,8 +330,8 @@
         "id": 3,
         "title": "Oil Leaks & Cooling System Issues - N63 & S68 (M50i & M60i)",
         "symptoms": "Oil spots under the car, burning oil smell from the engine bay, low oil level warning, visible oil residue around the valve covers or oil filter housing area, coolant loss.",
-        "typicalMileage": "30,000–80,000 miles",
-        "repairCost": "£500–£1,200 (gasket replacement)【PLACEHOLDER - confirm vs cost sheet】",
+        "typicalMileage": "30,000-80,000 miles",
+        "repairCost": "£500-£1,200 (gasket replacement)【PLACEHOLDER - confirm vs cost sheet】",
         "replacementCost": "N/A - repair only",
         "urgency": {
           "icon": "🟠",
@@ -368,31 +368,31 @@
         {
           "problem": "Valve stem seal failure (N63)",
           "repairable": "✅ Yes",
-          "typicalCost": "£1,500–£4,000",
+          "typicalCost": "£1,500-£4,000",
           "whenItMakesSense": "Specialist repair; far cheaper than engine replacement"
         },
         {
           "problem": "Timing chain guide wear (N63)",
           "repairable": "✅ Yes",
-          "typicalCost": "£1,500–£3,500",
+          "typicalCost": "£1,500-£3,500",
           "whenItMakesSense": "Preventative - catches the fault before catastrophic failure"
         },
         {
           "problem": "Oil leaks (N63/S68)",
           "repairable": "✅ Yes",
-          "typicalCost": "£500–£1,200",
+          "typicalCost": "£500-£1,200",
           "whenItMakesSense": "Well-understood repair; catch it early"
         },
         {
           "problem": "Fuel injector failure (N63/S68)",
           "repairable": "✅ Yes",
-          "typicalCost": "£600–£1,500",
+          "typicalCost": "£600-£1,500",
           "whenItMakesSense": "Specialist repair; cheaper than engine replacement"
         },
         {
           "problem": "Timing chain snap (valve contact)",
           "repairable": "❌ Usually No",
-          "typicalCost": "£6,000–£12,000",
+          "typicalCost": "£6,000-£12,000",
           "whenItMakesSense": "Typically requires full engine replacement or complete rebuild"
         }
       ]
@@ -414,7 +414,7 @@
         "* Engine warning light with no diagnosis"
       ]
     },
-    "closingVerdict": "The X6 M50i and M60i represent the pinnacle of BMW's V8 SUV engineering. The M50i's N63TU3 is the most refined version of BMW's original twin-turbo V8 - significantly improved over early iterations but still demanding meticulous maintenance. The M60i's S68 is BMW's latest V8, featuring a 48V mild-hybrid system and representing a technological leap - but it's too new to have a long-term reliability track record. Both are powerful, luxurious, and rewarding machines. Buy on documented history, not on faith. A well-maintained X6 V8 is a £40,000–£80,000 performance SUV; a neglected one is a £10,000 engine replacement waiting to happen.",
+    "closingVerdict": "The X6 M50i and M60i represent the pinnacle of BMW's V8 SUV engineering. The M50i's N63TU3 is the most refined version of BMW's original twin-turbo V8 - significantly improved over early iterations but still demanding meticulous maintenance. The M60i's S68 is BMW's latest V8, featuring a 48V mild-hybrid system and representing a technological leap - but it's too new to have a long-term reliability track record. Both are powerful, luxurious, and rewarding machines. Buy on documented history, not on faith. A well-maintained X6 V8 is a £40,000-£80,000 performance SUV; a neglected one is a £10,000 engine replacement waiting to happen.",
     "cta": {
       "label": "→ Compare X6 V8 engine prices before you buy",
       "href": "/quote"
@@ -425,7 +425,7 @@
     "items": [
       "* Cold Start - Listen for rattling or ticking (timing chain guide warning - N63)",
       "* Smoke Check - Blue smoke on startup indicates valve stem seal failure (N63)",
-      "* Oil Consumption - How often does it need topping up? (1 quart per 600–1,000 miles is typical but excessive - N63)",
+      "* Oil Consumption - How often does it need topping up? (1 quart per 600-1,000 miles is typical but excessive - N63)",
       "* Service History - including which engine (N63TU3 or S68) and confirmed oil-change intervals using BMW LL-01 approved oil",
       "* Oil Leak Check - Any evidence of oil leaks around the valve covers or oil filter housing?",
       "* Coolant Check - Any history of coolant loss or overheating?",
@@ -473,11 +473,11 @@
       },
       {
         "label": "Average Enquiry Mileage",
-        "value": "30,000–60,000 miles [PATTERN DATA]"
+        "value": "30,000-60,000 miles [PATTERN DATA]"
       },
       {
         "label": "Average Replacement Cost",
-        "value": "£6,000–£10,000 reconditioned, supply only [PLACEHOLDER - confirm vs cost sheet]"
+        "value": "£6,000-£10,000 reconditioned, supply only [PLACEHOLDER - confirm vs cost sheet]"
       },
       {
         "label": "Most Requested Engine Code",
@@ -498,12 +498,12 @@
       {
         "id": 1,
         "question": "How much does a BMW X6 M50i or M60i engine replacement cost in the UK?",
-        "answer": "A reconditioned N63 or S68 4.4-litre V8 engine typically costs £6,000–£12,000 supply only. Used engines are available from £4,500–£7,500. Fitting adds £1,500–£2,500 depending on your location and workshop. Labour times can exceed 30 hours for a full V8 replacement. Main dealer new engines can exceed £15,000."
+        "answer": "A reconditioned N63 or S68 4.4-litre V8 engine typically costs £6,000-£12,000 supply only. Used engines are available from £4,500-£7,500. Fitting adds £1,500-£2,500 depending on your location and workshop. Labour times can exceed 30 hours for a full V8 replacement. Main dealer new engines can exceed £15,000."
       },
       {
         "id": 2,
         "question": "Is the BMW X6 M50i engine reliable?",
-        "answer": "The N63TU3 (M50i) is the most refined version of BMW's original twin-turbo V8. Early N63s (2008–2013) had a well-documented reputation for excessive oil consumption, valve stem seal failure, timing chain stretch, and failing injectors. The N63TU3 addressed many of these issues, but the engine still demands meticulous maintenance. According to some sources, the N63 remains a demanding engine that requires careful ownership."
+        "answer": "The N63TU3 (M50i) is the most refined version of BMW's original twin-turbo V8. Early N63s (2008-2013) had a well-documented reputation for excessive oil consumption, valve stem seal failure, timing chain stretch, and failing injectors. The N63TU3 addressed many of these issues, but the engine still demands meticulous maintenance. According to some sources, the N63 remains a demanding engine that requires careful ownership."
       },
       {
         "id": 3,
@@ -523,7 +523,7 @@
       {
         "id": 6,
         "question": "How do I find my BMW X6 engine code?",
-        "answer": "Listed on the VIN plate and vehicle documentation. G06 M50i (2019–2023): N63B44T3 / N63TU3. G06 M60i (2023–present): S68B44A. The chassis code and badge are the easiest tells - M50i for 2019–2023, M60i for 2023–present."
+        "answer": "Listed on the VIN plate and vehicle documentation. G06 M50i (2019-2023): N63B44T3 / N63TU3. G06 M60i (2023-present): S68B44A. The chassis code and badge are the easiest tells - M50i for 2019-2023, M60i for 2023-present."
       }
     ],
     "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty - always confirm terms with your chosen supplier."

@@ -59,7 +59,7 @@
             {
               "@type": "ListItem",
               "position": 1,
-              "name": "E52 Z8 4.9 (S62B50, 2000–2003)",
+              "name": "E52 Z8 4.9 (S62B50, 2000-2003)",
               "url": "https://bmwengines.uk/z8/e52/"
             }
           ]
@@ -84,7 +84,7 @@
               "name": "How much does a BMW Z8 4.9 engine replacement cost in the UK?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "A reconditioned S62B50 engine typically costs £6,000–£10,000 supply only, with rebuilt units reaching £14,000. Fitting adds £1,500–£2,500. Use our calculator for a figure specific to your Z8."
+                "text": "A reconditioned S62B50 engine typically costs £6,000-£10,000 supply only, with rebuilt units reaching £14,000. Fitting adds £1,500-£2,500. Use our calculator for a figure specific to your Z8."
               }
             },
             {
@@ -108,7 +108,7 @@
               "name": "Is it worth replacing a Z8 4.9 engine, or should I scrap the car?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Z8 values range from £80,000 to over £200,000+ - a £7,000–£10,000 recon is a small fraction of the car's value, making replacement a clear decision for all but the most challenging examples. This is well within our 70% BMW scrap threshold."
+                "text": "Z8 values range from £80,000 to over £200,000+ - a £7,000-£10,000 recon is a small fraction of the car's value, making replacement a clear decision for all but the most challenging examples. This is well within our 70% BMW scrap threshold."
               }
             },
             {
@@ -185,7 +185,7 @@
     }
   },
   "hero": {
-    "tagPill": "BMW Z8 4.9 • 2000–2003 • S62B50",
+    "tagPill": "BMW Z8 4.9 • 2000-2003 • S62B50",
     "h1": "BMW Z8 4.9 Engine Replacement - Compare Prices & Get Quotes",
     "subHeadline": "The Z8 is BMW's halo roadster - powered by the <a href='https://bmwengines.uk/engine/s62'>S62</a> 4.9-litre V8 from the E39 M5. A rare, aluminium-bodied modern classic with 400 bhp and a 7,000 rpm redline. Get quotes from trusted UK specialists today.",
     "trustBadges": [
@@ -231,23 +231,23 @@
     "rows": [
       {
         "engineType": "Used Engine",
-        "supplyOnly": "£5,000–£8,000",
-        "fittedIndie": "£6,500–£10,000",
-        "warranty": "1–6 months",
+        "supplyOnly": "£5,000-£8,000",
+        "fittedIndie": "£6,500-£10,000",
+        "warranty": "1-6 months",
         "bestFor": "Budget priority; lower-mileage donor"
       },
       {
         "engineType": "Reconditioned Engine",
-        "supplyOnly": "£6,000–£10,000",
-        "fittedIndie": "£7,500–£12,000",
-        "warranty": "12–24 months",
+        "supplyOnly": "£6,000-£10,000",
+        "fittedIndie": "£7,500-£12,000",
+        "warranty": "12-24 months",
         "bestFor": "Most owners - best cost/warranty balance"
       },
       {
         "engineType": "Rebuilt Engine",
-        "supplyOnly": "£8,000–£14,000",
-        "fittedIndie": "£9,500–£16,000",
-        "warranty": "12–24 months",
+        "supplyOnly": "£8,000-£14,000",
+        "fittedIndie": "£9,500-£16,000",
+        "warranty": "12-24 months",
         "bestFor": "Long-term ownership; concours‑level restoration"
       },
       {
@@ -259,7 +259,7 @@
       }
     ],
     "figuresNote": "Figures above reflect the current S62B50 generation. A reconditioned S62 engine is a significant investment due to the engine's rarity and the specialist knowledge required.",
-    "labourEstimate": "Fitting a Z8 4.9 engine typically takes 14–18 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer). M‑specific engine work requires specialist knowledge.",
+    "labourEstimate": "Fitting a Z8 4.9 engine typically takes 14-18 hours at £65-£95/hr (independent) or £110-£160/hr (London/SE dealer). M‑specific engine work requires specialist knowledge.",
     "cta": {
       "label": "→ Compare Z8 4.9 engine prices from UK specialists",
       "href": "/quote"
@@ -271,8 +271,8 @@
         "id": 1,
         "title": "VANOS System Wear",
         "symptoms": "Loss of low‑end power, hesitation on acceleration, rough idle, metallic rattle from the front of the engine, engine warning light.",
-        "typicalMileage": "60,000–100,000 miles",
-        "repairCost": "£800–£1,800 (VANOS rebuild with upgraded seals and anti‑rattle kit)",
+        "typicalMileage": "60,000-100,000 miles",
+        "repairCost": "£800-£1,800 (VANOS rebuild with upgraded seals and anti‑rattle kit)",
         "replacementCost": "N/A - repair only (if caught before catastrophic failure)",
         "urgency": {
           "icon": "🟠",
@@ -289,9 +289,9 @@
         "id": 2,
         "title": "Rod Bearing Wear",
         "symptoms": "Knocking or rumbling noise from the engine, particularly when cold; metallic debris in the oil; sudden engine seizure.",
-        "typicalMileage": "60,000–100,000 miles (can occur at any mileage if neglected)",
-        "repairCost": "£1,500–£3,500 (rod bearing replacement)",
-        "replacementCost": "£6,000–£14,000 (full engine replacement if bearings fail)",
+        "typicalMileage": "60,000-100,000 miles (can occur at any mileage if neglected)",
+        "repairCost": "£1,500-£3,500 (rod bearing replacement)",
+        "replacementCost": "£6,000-£14,000 (full engine replacement if bearings fail)",
         "urgency": {
           "icon": "🔴",
           "label": "Immediate",
@@ -307,8 +307,8 @@
         "id": 3,
         "title": "Timing Chain Guide Degradation",
         "symptoms": "Rattling noise on cold start, metallic ticking, engine warning light, loss of power.",
-        "typicalMileage": "80,000–120,000 miles",
-        "repairCost": "£1,500–£3,000 (chain guides, tensioner and chain replacement)",
+        "typicalMileage": "80,000-120,000 miles",
+        "repairCost": "£1,500-£3,000 (chain guides, tensioner and chain replacement)",
         "replacementCost": "N/A - repair only (if caught before chain jumps)",
         "urgency": {
           "icon": "🔴",
@@ -345,25 +345,25 @@
         {
           "problem": "VANOS wear",
           "repairable": "✅ Yes",
-          "typicalCost": "£800–£1,800",
+          "typicalCost": "£800-£1,800",
           "whenItMakesSense": "Rebuild with upgraded seals - permanent fix"
         },
         {
           "problem": "Rod bearing wear",
           "repairable": "✅ Yes",
-          "typicalCost": "£1,500–£3,500",
+          "typicalCost": "£1,500-£3,500",
           "whenItMakesSense": "Catch it early - prevent catastrophic failure"
         },
         {
           "problem": "Timing chain guide degradation",
           "repairable": "✅ Yes",
-          "typicalCost": "£1,500–£3,000",
+          "typicalCost": "£1,500-£3,000",
           "whenItMakesSense": "Preventive replacement at 100,000 miles"
         },
         {
           "problem": "Oil leaks",
           "repairable": "✅ Yes",
-          "typicalCost": "£400–£1,000",
+          "typicalCost": "£400-£1,000",
           "whenItMakesSense": "Routine maintenance - do preventatively"
         },
         {
@@ -419,10 +419,10 @@
     "rows": [
       {
         "engineCode": "S62B50 (4.9 V8)",
-        "years": "2000–2003",
-        "power": "400 PS (394–400 bhp) @ 6,600 rpm; 500 Nm (369 lb-ft) @ 3,800 rpm",
+        "years": "2000-2003",
+        "power": "400 PS (394-400 bhp) @ 6,600 rpm; 500 Nm (369 lb-ft) @ 3,800 rpm",
         "enquiries": "- (pattern data)",
-        "avgReconCost": "£6,000–£10,000 [PLACEHOLDER]"
+        "avgReconCost": "£6,000-£10,000 [PLACEHOLDER]"
       }
     ],
     "matchNote": "This table's rows match Section 1B's Era Map exactly.",
@@ -472,11 +472,11 @@
       },
       {
         "label": "Average Enquiry Mileage",
-        "value": "50,000–70,000 miles【PATTERN DATA】"
+        "value": "50,000-70,000 miles【PATTERN DATA】"
       },
       {
         "label": "Average Replacement Cost",
-        "value": "£7,500–£8,500 reconditioned, supply only【PLACEHOLDER - confirm vs cost sheet】"
+        "value": "£7,500-£8,500 reconditioned, supply only【PLACEHOLDER - confirm vs cost sheet】"
       },
       {
         "label": "Most Requested Engine Code",
@@ -497,7 +497,7 @@
       {
         "id": 1,
         "question": "How much does a BMW Z8 4.9 engine replacement cost in the UK?",
-        "answer": "A reconditioned S62B50 engine typically costs £6,000–£10,000 supply only, with rebuilt units reaching £14,000. Fitting adds £1,500–£2,500. Use our calculator for a figure specific to your Z8."
+        "answer": "A reconditioned S62B50 engine typically costs £6,000-£10,000 supply only, with rebuilt units reaching £14,000. Fitting adds £1,500-£2,500. Use our calculator for a figure specific to your Z8."
       },
       {
         "id": 2,
@@ -512,7 +512,7 @@
       {
         "id": 4,
         "question": "Is it worth replacing a Z8 4.9 engine, or should I scrap the car?",
-        "answer": "Z8 values range from £80,000 to over £200,000+ - a £7,000–£10,000 recon is a small fraction of the car's value, making replacement a clear decision for all but the most challenging examples. This is well within our 70% BMW scrap threshold."
+        "answer": "Z8 values range from £80,000 to over £200,000+ - a £7,000-£10,000 recon is a small fraction of the car's value, making replacement a clear decision for all but the most challenging examples. This is well within our 70% BMW scrap threshold."
       },
       {
         "id": 5,

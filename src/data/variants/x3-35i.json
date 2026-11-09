@@ -53,7 +53,7 @@
             {
               "@type": "ListItem",
               "position": 1,
-              "name": "F25 X3 35i (N55B30A, 2011–2017)",
+              "name": "F25 X3 35i (N55B30A, 2011-2017)",
               "url": "https://bmwengines.uk/x3/f25/"
             }
           ]
@@ -78,7 +78,7 @@
               "name": "How much does a BMW X3 35i engine replacement cost in the UK?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "A reconditioned N55 3.0-litre engine typically costs £4,500–£7,500 supply only. Used engines are available from £3,500–£5,500. Fitting adds £1,200–£1,800 depending on your location and workshop. Main dealer new engines can exceed £10,000."
+                "text": "A reconditioned N55 3.0-litre engine typically costs £4,500-£7,500 supply only. Used engines are available from £3,500-£5,500. Fitting adds £1,200-£1,800 depending on your location and workshop. Main dealer new engines can exceed £10,000."
               }
             },
             {
@@ -118,7 +118,7 @@
               "name": "Can I repair the HPFP, or does it need full engine replacement?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Yes - HPFP replacement is a well-understood repair costing £600–£1,200. It's the N55's most common weak point. If you experience long cranking or hesitation, don't ignore it - but it's a straightforward fix, not an engine killer."
+                "text": "Yes - HPFP replacement is a well-understood repair costing £600-£1,200. It's the N55's most common weak point. If you experience long cranking or hesitation, don't ignore it - but it's a straightforward fix, not an engine killer."
               }
             }
           ]
@@ -179,7 +179,7 @@
     }
   },
   "hero": {
-    "tagPill": "BMW X3 35i • 2011–2017 • 3.0L Straight-Six Turbo (N55)",
+    "tagPill": "BMW X3 35i • 2011-2017 • 3.0L Straight-Six Turbo (N55)",
     "h1": "BMW X3 35i Engine Replacement - Compare Prices & Get Quotes",
     "subHeadline": "Get quotes today from trusted UK BMW X3 specialists. Compare reconditioned, rebuilt and used N55 3.0-litre turbo engines - supply & fit available nationwide.",
     "trustBadges": [
@@ -212,10 +212,10 @@
     "rows": [
       {
         "generation": "F25 X3 xDrive35i",
-        "years": "2011–2017",
+        "years": "2011-2017",
         "engineCode": "N55B30A (3.0L Straight-Six Turbo)",
         "reliability": "★★★☆☆ [NEWLY ASSIGNED - see Data Note]",
-        "reconCost": "£4,500–£7,500 [PLACEHOLDER - confirm vs cost sheet]",
+        "reconCost": "£4,500-£7,500 [PLACEHOLDER - confirm vs cost sheet]",
         "eraNote": "One engine throughout this badge's history - no era ambiguity."
       }
     ],
@@ -234,35 +234,35 @@
     "rows": [
       {
         "engineType": "Used Engine",
-        "supplyOnly": "£3,500–£5,500",
-        "fittedIndie": "£4,700–£7,000",
-        "warranty": "1–6 months",
+        "supplyOnly": "£3,500-£5,500",
+        "fittedIndie": "£4,700-£7,000",
+        "warranty": "1-6 months",
         "bestFor": "Budget priority; lower-mileage examples"
       },
       {
         "engineType": "Reconditioned Engine",
-        "supplyOnly": "£4,500–£7,500",
-        "fittedIndie": "£5,800–£9,000",
-        "warranty": "12–24 months",
+        "supplyOnly": "£4,500-£7,500",
+        "fittedIndie": "£5,800-£9,000",
+        "warranty": "12-24 months",
         "bestFor": "Most owners - best cost/warranty balance"
       },
       {
         "engineType": "Rebuilt Engine",
-        "supplyOnly": "£6,000–£9,500",
-        "fittedIndie": "£7,300–£11,000",
-        "warranty": "12–24 months",
+        "supplyOnly": "£6,000-£9,500",
+        "fittedIndie": "£7,300-£11,000",
+        "warranty": "12-24 months",
         "bestFor": "Long-term ownership; 3+ year horizon"
       },
       {
         "engineType": "Main Dealer New",
-        "supplyOnly": "£9,000–£14,000+",
-        "fittedIndie": "£10,500–£16,000+",
-        "warranty": "24–36 months",
+        "supplyOnly": "£9,000-£14,000+",
+        "fittedIndie": "£10,500-£16,000+",
+        "warranty": "24-36 months",
         "bestFor": "Insurance jobs, warranty claims"
       }
     ],
-    "figuresNote": "Figures above reflect the N55 3.0-litre turbo petrol engine. Used N55 engines typically sit in the £3,500–£5,500 band; reconditioned units range from £4,500–£7,500.",
-    "labourEstimate": "Fitting an X3 35i engine typically takes 12–16 hours at £70–£100/hr (independent) or £120–£180/hr (London/SE dealer).",
+    "figuresNote": "Figures above reflect the N55 3.0-litre turbo petrol engine. Used N55 engines typically sit in the £3,500-£5,500 band; reconditioned units range from £4,500-£7,500.",
+    "labourEstimate": "Fitting an X3 35i engine typically takes 12-16 hours at £70-£100/hr (independent) or £120-£180/hr (London/SE dealer).",
     "cta": {
       "label": "→ Compare 35i engine prices from UK specialists",
       "href": "/quote"
@@ -274,8 +274,8 @@
         "id": 1,
         "title": "High-Pressure Fuel Pump (HPFP) Failure",
         "symptoms": "Long cranking on startup, hesitation under acceleration, engine stalling, loss of power, engine warning light, rough idling, misfires.",
-        "typicalMileage": "40,000–80,000 miles",
-        "repairCost": "£600–£1,200 (HPFP replacement)【PLACEHOLDER - confirm vs cost sheet】",
+        "typicalMileage": "40,000-80,000 miles",
+        "repairCost": "£600-£1,200 (HPFP replacement)【PLACEHOLDER - confirm vs cost sheet】",
         "replacementCost": "N/A - repair only",
         "urgency": {
           "icon": "🟠",
@@ -292,8 +292,8 @@
         "id": 2,
         "title": "Chargepipe Failure",
         "symptoms": "Loss of boost, whistling noise from the engine bay, engine warning light, reduced power, poor running conditions.",
-        "typicalMileage": "50,000–100,000 miles",
-        "repairCost": "£300–£600 (chargepipe replacement with aftermarket metal unit)",
+        "typicalMileage": "50,000-100,000 miles",
+        "repairCost": "£300-£600 (chargepipe replacement with aftermarket metal unit)",
         "replacementCost": "N/A - repair only",
         "urgency": {
           "icon": "🟡",
@@ -310,8 +310,8 @@
         "id": 3,
         "title": "Oil Leaks (Valve Cover Gasket & Oil Filter Housing Gasket)",
         "symptoms": "Oil spots under the car, burning oil smell from the engine bay, low oil level warning, visible oil residue around the valve cover or oil filter housing area.",
-        "typicalMileage": "60,000–100,000 miles",
-        "repairCost": "£400–£1,000 (gasket replacement)【PLACEHOLDER - confirm vs cost sheet】",
+        "typicalMileage": "60,000-100,000 miles",
+        "repairCost": "£400-£1,000 (gasket replacement)【PLACEHOLDER - confirm vs cost sheet】",
         "replacementCost": "N/A - repair only",
         "urgency": {
           "icon": "🟠",
@@ -348,37 +348,37 @@
         {
           "problem": "HPFP failure",
           "repairable": "✅ Yes",
-          "typicalCost": "£600–£1,200",
+          "typicalCost": "£600-£1,200",
           "whenItMakesSense": "Well-understood fix; cheaper than engine replacement"
         },
         {
           "problem": "Chargepipe failure",
           "repairable": "✅ Yes",
-          "typicalCost": "£300–£600",
+          "typicalCost": "£300-£600",
           "whenItMakesSense": "Aftermarket metal unit solves permanently"
         },
         {
           "problem": "Valve cover gasket leak",
           "repairable": "✅ Yes",
-          "typicalCost": "£400–£800",
+          "typicalCost": "£400-£800",
           "whenItMakesSense": "Standard maintenance on ageing N55 engines"
         },
         {
           "problem": "Oil filter housing gasket leak",
           "repairable": "✅ Yes",
-          "typicalCost": "£400–£800",
+          "typicalCost": "£400-£800",
           "whenItMakesSense": "Well-understood repair; catch it early to prevent oil starvation"
         },
         {
           "problem": "Water pump failure",
           "repairable": "✅ Yes",
-          "typicalCost": "£400–£900",
+          "typicalCost": "£400-£900",
           "whenItMakesSense": "Straightforward fix; upgraded parts available"
         },
         {
           "problem": "Timing chain tensioner failure",
           "repairable": "⚠️ Sometimes",
-          "typicalCost": "£800–£1,800",
+          "typicalCost": "£800-£1,800",
           "whenItMakesSense": "If caught early, can prevent catastrophic failure"
         }
       ]
@@ -399,7 +399,7 @@
         "* Engine warning light with no diagnosis"
       ]
     },
-    "closingVerdict": "The X3 35i is powered by BMW's N55 - a proven, powerful straight-six turbo that represents a significant step forward from the twin-turbo <a href='https://bmwengines.uk/engine/n54-n55'>N54</a>. It's a genuinely enjoyable engine in the X3, offering 306 PS and 400 Nm of torque. But it's not bulletproof - HPFP failure, chargepipe cracking, oil leaks, and water pump issues are the price of entry. These are well-understood, manageable fixes. Buy on documented history, not on faith. A well-maintained 35i is a £15,000–£25,000 premium SUV; a neglected one is a £7,000 engine replacement waiting to happen.",
+    "closingVerdict": "The X3 35i is powered by BMW's N55 - a proven, powerful straight-six turbo that represents a significant step forward from the twin-turbo <a href='https://bmwengines.uk/engine/n54-n55'>N54</a>. It's a genuinely enjoyable engine in the X3, offering 306 PS and 400 Nm of torque. But it's not bulletproof - HPFP failure, chargepipe cracking, oil leaks, and water pump issues are the price of entry. These are well-understood, manageable fixes. Buy on documented history, not on faith. A well-maintained 35i is a £15,000-£25,000 premium SUV; a neglected one is a £7,000 engine replacement waiting to happen.",
     "cta": {
       "label": "→ Compare 35i engine prices before you buy",
       "href": "/quote"
@@ -409,7 +409,7 @@
     "intro": "Before you buy a used BMW X3 35i (or before you commit to an engine replacement), check these:",
     "items": [
       "* Cold Start - Listen for long cranking or hesitation (HPFP warning)",
-      "* Service History - including the N55 era (2011–2017) and confirmed oil-change intervals using BMW LL-01 approved oil",
+      "* Service History - including the N55 era (2011-2017) and confirmed oil-change intervals using BMW LL-01 approved oil",
       "* HPFP Check - Any history of long cranking, hesitation, or HPFP replacement?",
       "* Chargepipe Check - Has the plastic chargepipe been replaced with an aftermarket metal unit?",
       "* Oil Leak Check - Any evidence of oil leaks around the valve cover or oil filter housing?",
@@ -429,10 +429,10 @@
     "rows": [
       {
         "engineCode": "N55B30A (3.0L Straight-Six Turbo)",
-        "years": "2011–2017",
-        "power": "306 PS (225 kW / 300 hp) @ 5,800 rpm · 400 Nm @ 1,200–5,000 rpm",
+        "years": "2011-2017",
+        "power": "306 PS (225 kW / 300 hp) @ 5,800 rpm · 400 Nm @ 1,200-5,000 rpm",
         "enquiries": "- (pattern data)",
-        "avgReconCost": "£4,500–£7,500 [PLACEHOLDER - confirm vs cost sheet]"
+        "avgReconCost": "£4,500-£7,500 [PLACEHOLDER - confirm vs cost sheet]"
       }
     ],
     "matchNote": "This table's rows match Section 1B's Era Map exactly.",
@@ -478,11 +478,11 @@
       },
       {
         "label": "Average Enquiry Mileage",
-        "value": "55,000–85,000 miles [PATTERN DATA]"
+        "value": "55,000-85,000 miles [PATTERN DATA]"
       },
       {
         "label": "Average Replacement Cost",
-        "value": "£4,500–£7,500 reconditioned, supply only [PLACEHOLDER - confirm vs cost sheet]"
+        "value": "£4,500-£7,500 reconditioned, supply only [PLACEHOLDER - confirm vs cost sheet]"
       },
       {
         "label": "Most Requested Engine Code",
@@ -503,7 +503,7 @@
       {
         "id": 1,
         "question": "How much does a BMW X3 35i engine replacement cost in the UK?",
-        "answer": "A reconditioned N55 3.0-litre engine typically costs £4,500–£7,500 supply only. Used engines are available from £3,500–£5,500. Fitting adds £1,200–£1,800 depending on your location and workshop. Main dealer new engines can exceed £10,000."
+        "answer": "A reconditioned N55 3.0-litre engine typically costs £4,500-£7,500 supply only. Used engines are available from £3,500-£5,500. Fitting adds £1,200-£1,800 depending on your location and workshop. Main dealer new engines can exceed £10,000."
       },
       {
         "id": 2,
@@ -528,7 +528,7 @@
       {
         "id": 6,
         "question": "Can I repair the HPFP, or does it need full engine replacement?",
-        "answer": "Yes - HPFP replacement is a well-understood repair costing £600–£1,200. It's the N55's most common weak point. If you experience long cranking or hesitation, don't ignore it - but it's a straightforward fix, not an engine killer."
+        "answer": "Yes - HPFP replacement is a well-understood repair costing £600-£1,200. It's the N55's most common weak point. If you experience long cranking or hesitation, don't ignore it - but it's a straightforward fix, not an engine killer."
       }
     ],
     "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty - always confirm terms with your chosen supplier."

@@ -84,7 +84,7 @@
               "name": "How much does a BMW X2 20i engine replacement cost in the UK?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "A reconditioned B48 engine typically costs £2,800–£4,800 supply only depending on generation, with the U10 version sitting at £3,200–£5,500. Fitting adds £900–£1,400. Use our calculator for a figure specific to your car."
+                "text": "A reconditioned B48 engine typically costs £2,800-£4,800 supply only depending on generation, with the U10 version sitting at £3,200-£5,500. Fitting adds £900-£1,400. Use our calculator for a figure specific to your car."
               }
             },
             {
@@ -108,7 +108,7 @@
               "name": "Is it worth replacing a BMW X2 20i engine, or should I scrap the car?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Against a £8,000–£15,000 X2 20i, a £3,800 recon engine is a manageable 25–47% of the vehicle's value - worth it for a well-maintained example. Given the X2's strong retained values, replacement is usually viable for vehicles in good condition."
+                "text": "Against a £8,000-£15,000 X2 20i, a £3,800 recon engine is a manageable 25-47% of the vehicle's value - worth it for a well-maintained example. Given the X2's strong retained values, replacement is usually viable for vehicles in good condition."
               }
             },
             {
@@ -124,7 +124,7 @@
               "name": "Can I repair the B48's water pump, or does it need a new engine?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Yes - the water pump is a straightforward repair costing £500–£1,200. The B48's water pump is the most common service item on this engine; replacing it as a preventative measure at 60,000 miles is strongly recommended."
+                "text": "Yes - the water pump is a straightforward repair costing £500-£1,200. The B48's water pump is the most common service item on this engine; replacing it as a preventative measure at 60,000 miles is strongly recommended."
               }
             }
           ]
@@ -185,7 +185,7 @@
     }
   },
   "hero": {
-    "tagPill": "BMW X2 20i • 2018–present • <a href='https://bmwengines.uk/engine/b38-b48'>B48</a> Turbo Petrol",
+    "tagPill": "BMW X2 20i • 2018-present • <a href='https://bmwengines.uk/engine/b38-b48'>B48</a> Turbo Petrol",
     "h1": "BMW X2 20i Engine Replacement - Compare Prices & Get Quotes",
     "subHeadline": "Get quotes today from trusted UK BMW X2 20i specialists. Compare reconditioned, rebuilt and used B48 engines - supply & fit available nationwide.",
     "trustBadges": [
@@ -218,18 +218,18 @@
     "rows": [
       {
         "generation": "F39",
-        "years": "2018–2023",
+        "years": "2018-2023",
         "engineCode": "B48B20 (192 bhp)",
         "reliability": "★★★★☆ [NEWLY ASSIGNED - see Data Note]",
-        "reconCost": "£2,800–£4,800 [PLACEHOLDER - confirm vs cost sheet]",
+        "reconCost": "£2,800-£4,800 [PLACEHOLDER - confirm vs cost sheet]",
         "eraNote": "First-generation X2 20i - B48 with front-mounted chain; reliable, but cooling system is the main watchpoint."
       },
       {
         "generation": "U10",
-        "years": "2023–present",
+        "years": "2023-present",
         "engineCode": "B48B20 (204 bhp + MHEV on some)",
         "reliability": "★★★★☆ [NEWLY ASSIGNED - see Data Note]",
-        "reconCost": "£3,200–£5,500 [PLACEHOLDER - confirm vs cost sheet]",
+        "reconCost": "£3,200-£5,500 [PLACEHOLDER - confirm vs cost sheet]",
         "eraNote": "Modern X2 20i - B48 with mild-hybrid on some; same reliable architecture with slightly higher output."
       }
     ],
@@ -248,35 +248,35 @@
     "rows": [
       {
         "engineType": "Used Engine",
-        "supplyOnly": "£1,800–£3,200",
-        "fittedIndie": "£2,600–£4,300",
-        "warranty": "1–6 months",
+        "supplyOnly": "£1,800-£3,200",
+        "fittedIndie": "£2,600-£4,300",
+        "warranty": "1-6 months",
         "bestFor": "Budget priority; vehicle under £6,000"
       },
       {
         "engineType": "Reconditioned Engine",
-        "supplyOnly": "£2,800–£4,800",
-        "fittedIndie": "£3,700–£6,000",
-        "warranty": "12–24 months",
+        "supplyOnly": "£2,800-£4,800",
+        "fittedIndie": "£3,700-£6,000",
+        "warranty": "12-24 months",
         "bestFor": "Most owners - best cost/warranty balance"
       },
       {
         "engineType": "Rebuilt Engine",
-        "supplyOnly": "£3,800–£5,500",
-        "fittedIndie": "£4,700–£6,700",
-        "warranty": "12–24 months",
+        "supplyOnly": "£3,800-£5,500",
+        "fittedIndie": "£4,700-£6,700",
+        "warranty": "12-24 months",
         "bestFor": "Long-term ownership; 3+ year horizon"
       },
       {
         "engineType": "Main Dealer New",
-        "supplyOnly": "£7,500–£10,500",
-        "fittedIndie": "£9,000–£12,500",
-        "warranty": "24–36 months",
+        "supplyOnly": "£7,500-£10,500",
+        "fittedIndie": "£9,000-£12,500",
+        "warranty": "24-36 months",
         "bestFor": "Insurance jobs, warranty claims"
       }
     ],
     "figuresNote": "",
-    "labourEstimate": "Fitting an X2 20i engine typically takes 10–14 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer).",
+    "labourEstimate": "Fitting an X2 20i engine typically takes 10-14 hours at £65-£95/hr (independent) or £110-£160/hr (London/SE dealer).",
     "cta": {
       "label": "",
       "href": "/quote"
@@ -307,31 +307,31 @@
         {
           "problem": "Water pump failure (B48)",
           "repairable": "✅ Yes",
-          "typicalCost": "£500–£1,200",
+          "typicalCost": "£500-£1,200",
           "whenItMakesSense": "Preventative - replace at 60,000 miles"
         },
         {
           "problem": "Oil filter housing leak (B48)",
           "repairable": "✅ Yes",
-          "typicalCost": "£400–£900",
+          "typicalCost": "£400-£900",
           "whenItMakesSense": "Straightforward gasket replacement; catch it early"
         },
         {
           "problem": "High-pressure fuel pump failure (B48)",
           "repairable": "✅ Yes",
-          "typicalCost": "£800–£1,500",
+          "typicalCost": "£800-£1,500",
           "whenItMakesSense": "Specialist replacement; don't let misfires damage the cat"
         },
         {
           "problem": "Timing chain wear (B48)",
           "repairable": "✅ Yes",
-          "typicalCost": "£1,500–£2,500",
+          "typicalCost": "£1,500-£2,500",
           "whenItMakesSense": "If caught early - far less common than <a href='https://bmwengines.uk/engine/n13-n20'>N20</a> issues"
         },
         {
           "problem": "Overheating damage from coolant loss",
           "repairable": "⚠️ Depends",
-          "typicalCost": "£1,500–£5,000",
+          "typicalCost": "£1,500-£5,000",
           "whenItMakesSense": "If head gasket or block damage has occurred, replacement may be cheaper"
         }
       ]
@@ -381,17 +381,17 @@
     "rows": [
       {
         "engineCode": "B48B20",
-        "years": "2018–2023",
+        "years": "2018-2023",
         "power": "192 bhp / 280 Nm",
         "enquiries": "- (pattern data)",
-        "avgReconCost": "£2,800–£4,800 [PLACEHOLDER]"
+        "avgReconCost": "£2,800-£4,800 [PLACEHOLDER]"
       },
       {
         "engineCode": "B48B20",
-        "years": "2023–present",
+        "years": "2023-present",
         "power": "204 bhp / 300 Nm",
         "enquiries": "- (pattern data)",
-        "avgReconCost": "£3,200–£5,500 [PLACEHOLDER]"
+        "avgReconCost": "£3,200-£5,500 [PLACEHOLDER]"
       }
     ],
     "matchNote": "",
@@ -458,7 +458,7 @@
       {
         "id": 1,
         "question": "How much does a BMW X2 20i engine replacement cost in the UK?",
-        "answer": "A reconditioned B48 engine typically costs £2,800–£4,800 supply only depending on generation, with the U10 version sitting at £3,200–£5,500. Fitting adds £900–£1,400. Use our calculator for a figure specific to your car."
+        "answer": "A reconditioned B48 engine typically costs £2,800-£4,800 supply only depending on generation, with the U10 version sitting at £3,200-£5,500. Fitting adds £900-£1,400. Use our calculator for a figure specific to your car."
       },
       {
         "id": 2,
@@ -473,7 +473,7 @@
       {
         "id": 4,
         "question": "Is it worth replacing a BMW X2 20i engine, or should I scrap the car?",
-        "answer": "Against a £8,000–£15,000 X2 20i, a £3,800 recon engine is a manageable 25–47% of the vehicle's value - worth it for a well-maintained example. Given the X2's strong retained values, replacement is usually viable for vehicles in good condition."
+        "answer": "Against a £8,000-£15,000 X2 20i, a £3,800 recon engine is a manageable 25-47% of the vehicle's value - worth it for a well-maintained example. Given the X2's strong retained values, replacement is usually viable for vehicles in good condition."
       },
       {
         "id": 5,
@@ -483,7 +483,7 @@
       {
         "id": 6,
         "question": "Can I repair the B48's water pump, or does it need a new engine?",
-        "answer": "Yes - the water pump is a straightforward repair costing £500–£1,200. The B48's water pump is the most common service item on this engine; replacing it as a preventative measure at 60,000 miles is strongly recommended."
+        "answer": "Yes - the water pump is a straightforward repair costing £500-£1,200. The B48's water pump is the most common service item on this engine; replacing it as a preventative measure at 60,000 miles is strongly recommended."
       }
     ],
     "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty - always confirm terms with your chosen supplier."

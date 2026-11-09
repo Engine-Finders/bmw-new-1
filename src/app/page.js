@@ -41,7 +41,14 @@ export function generateMetadata() {
       siteName: "BMWEngines.uk",
       locale: "en_GB",
       type: "website",
-      images: ["https://bmwengines.uk/hero-day.webp"],
+      images: [
+        {
+          url: "https://bmwengines.uk/png/123.webp",
+          width: 1734,
+          height: 907,
+          alt: "BMW Reliability Guide",
+        },
+      ],
     },
   };
 }

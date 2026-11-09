@@ -53,19 +53,19 @@
             {
               "@type": "ListItem",
               "position": 1,
-              "name": "E70 xDrive50i (N63B44A, 2009–2013)",
+              "name": "E70 xDrive50i (N63B44A, 2009-2013)",
               "url": "https://bmwengines.uk/x5/e70/"
             },
             {
               "@type": "ListItem",
               "position": 2,
-              "name": "F15 xDrive50i (N63TU, 2013–2018)",
+              "name": "F15 xDrive50i (N63TU, 2013-2018)",
               "url": "https://bmwengines.uk/x5/f15/"
             },
             {
               "@type": "ListItem",
               "position": 3,
-              "name": "G05 xDrive50i (N63TU3, 2019–present)",
+              "name": "G05 xDrive50i (N63TU3, 2019-present)",
               "url": "https://bmwengines.uk/x5/g05/"
             }
           ]
@@ -102,7 +102,7 @@
               "name": "How much does a BMW X5 xDrive50i engine replacement cost in the UK?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "A reconditioned N63 4.4-litre V8 engine typically costs £6,000–£10,000 supply only. Used engines are available from £4,500–£7,500. Fitting adds £1,500–£2,500 depending on your location and workshop. Main dealer new engines can exceed £15,000."
+                "text": "A reconditioned N63 4.4-litre V8 engine typically costs £6,000-£10,000 supply only. Used engines are available from £4,500-£7,500. Fitting adds £1,500-£2,500 depending on your location and workshop. Main dealer new engines can exceed £15,000."
               }
             },
             {
@@ -134,7 +134,7 @@
               "name": "How do I find my BMW X5 xDrive50i engine code?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Listed on the VIN plate and vehicle documentation. E70 (2009–2013): N63B44A. F15 (2013–2018): N63B44O1 / N63TU. G05 (2019–present): N63B44M3 / N63TU3. The chassis code is the easiest tell - E70 is the first-generation X5, F15 is the second, G05 is the third."
+                "text": "Listed on the VIN plate and vehicle documentation. E70 (2009-2013): N63B44A. F15 (2013-2018): N63B44O1 / N63TU. G05 (2019-present): N63B44M3 / N63TU3. The chassis code is the easiest tell - E70 is the first-generation X5, F15 is the second, G05 is the third."
               }
             },
             {
@@ -142,7 +142,7 @@
               "name": "Can I repair the valve stem seals on the N63, or does it need full engine replacement?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Yes - valve stem seal replacement is a specialist repair costing £1,500–£4,000. It's the N63's most common issue and is well-understood by BMW specialists. If you notice blue smoke on startup or are constantly topping up oil, have it inspected promptly. Ignoring it can lead to catalytic converter failure and, in extreme cases, engine damage from oil starvation."
+                "text": "Yes - valve stem seal replacement is a specialist repair costing £1,500-£4,000. It's the N63's most common issue and is well-understood by BMW specialists. If you notice blue smoke on startup or are constantly topping up oil, have it inspected promptly. Ignoring it can lead to catalytic converter failure and, in extreme cases, engine damage from oil starvation."
               }
             }
           ]
@@ -203,7 +203,7 @@
     }
   },
   "hero": {
-    "tagPill": "BMW X5 xDrive50i • 2009–present • 4.4L Twin-Turbo V8 (<a href='https://bmwengines.uk/engine/n62-n63'>N63</a>)",
+    "tagPill": "BMW X5 xDrive50i • 2009-present • 4.4L Twin-Turbo V8 (<a href='https://bmwengines.uk/engine/n62-n63'>N63</a>)",
     "h1": "BMW X5 xDrive50i Engine Replacement - Compare Prices & Get Quotes",
     "subHeadline": "Get quotes today from trusted UK BMW X5 specialists. Compare reconditioned, rebuilt and used N63 4.4-litre twin-turbo V8 engines - supply & fit available nationwide.",
     "trustBadges": [
@@ -236,26 +236,26 @@
     "rows": [
       {
         "generation": "E70 xDrive50i",
-        "years": "2009–2013",
+        "years": "2009-2013",
         "engineCode": "N63B44A (4.4L Twin-Turbo V8)",
         "reliability": "★★☆☆☆ [NEWLY ASSIGNED - see Data Note]",
-        "reconCost": "£5,500–£9,000 [PLACEHOLDER - confirm vs cost sheet]",
+        "reconCost": "£5,500-£9,000 [PLACEHOLDER - confirm vs cost sheet]",
         "eraNote": "First-generation N63 - known for oil consumption, valve stem seals, and timing chain issues."
       },
       {
         "generation": "F15 xDrive50i",
-        "years": "2013–2018",
+        "years": "2013-2018",
         "engineCode": "N63B44O1 / N63TU (4.4L Twin-Turbo V8)",
         "reliability": "★★★☆☆ [NEWLY ASSIGNED - see Data Note]",
-        "reconCost": "£6,000–£10,000 [PLACEHOLDER]",
+        "reconCost": "£6,000-£10,000 [PLACEHOLDER]",
         "eraNote": "Updated N63TU with improved timing chain guides and valve stem seals. Still oil-hungry."
       },
       {
         "generation": "G05 xDrive50i / M50i",
-        "years": "2019–present",
+        "years": "2019-present",
         "engineCode": "N63B44M3 / N63TU3 (4.4L Twin-Turbo V8)",
         "reliability": "★★★½☆ [NEWLY ASSIGNED - see Data Note]",
-        "reconCost": "£7,000–£12,000 [PLACEHOLDER]",
+        "reconCost": "£7,000-£12,000 [PLACEHOLDER]",
         "eraNote": "The most refined N63 - 523 hp in M50i form. Improved cooling and reduced oil consumption."
       }
     ],
@@ -274,35 +274,35 @@
     "rows": [
       {
         "engineType": "Used Engine",
-        "supplyOnly": "£4,500–£7,500",
-        "fittedIndie": "£5,800–£9,000",
-        "warranty": "1–6 months",
+        "supplyOnly": "£4,500-£7,500",
+        "fittedIndie": "£5,800-£9,000",
+        "warranty": "1-6 months",
         "bestFor": "Budget priority; lower-mileage examples"
       },
       {
         "engineType": "Reconditioned Engine",
-        "supplyOnly": "£6,000–£10,000",
-        "fittedIndie": "£7,500–£11,500",
-        "warranty": "12–24 months",
+        "supplyOnly": "£6,000-£10,000",
+        "fittedIndie": "£7,500-£11,500",
+        "warranty": "12-24 months",
         "bestFor": "Most owners - best cost/warranty balance"
       },
       {
         "engineType": "Rebuilt Engine",
-        "supplyOnly": "£8,000–£12,000",
-        "fittedIndie": "£9,500–£13,500",
-        "warranty": "12–24 months",
+        "supplyOnly": "£8,000-£12,000",
+        "fittedIndie": "£9,500-£13,500",
+        "warranty": "12-24 months",
         "bestFor": "Long-term ownership; 3+ year horizon"
       },
       {
         "engineType": "Main Dealer New",
-        "supplyOnly": "£12,000–£18,000+",
-        "fittedIndie": "£14,000–£21,000+",
-        "warranty": "24–36 months",
+        "supplyOnly": "£12,000-£18,000+",
+        "fittedIndie": "£14,000-£21,000+",
+        "warranty": "24-36 months",
         "bestFor": "Insurance jobs, warranty claims"
       }
     ],
-    "figuresNote": "Figures above reflect the N63 4.4-litre twin-turbo V8. Used N63 engines typically sit in the £4,500–£7,500 band; reconditioned units range from £6,000–£10,000. The N63 is a complex engine with significant labour requirements.",
-    "labourEstimate": "Fitting an X5 xDrive50i engine typically takes 16–22 hours at £80–£120/hr (independent) or £140–£200/hr (London/SE dealer). The V8's complexity and the X5's engine bay make this a labour-intensive job.",
+    "figuresNote": "Figures above reflect the N63 4.4-litre twin-turbo V8. Used N63 engines typically sit in the £4,500-£7,500 band; reconditioned units range from £6,000-£10,000. The N63 is a complex engine with significant labour requirements.",
+    "labourEstimate": "Fitting an X5 xDrive50i engine typically takes 16-22 hours at £80-£120/hr (independent) or £140-£200/hr (London/SE dealer). The V8's complexity and the X5's engine bay make this a labour-intensive job.",
     "cta": {
       "label": "→ Compare xDrive50i engine prices from UK specialists",
       "href": "/quote"
@@ -313,16 +313,16 @@
       {
         "id": 1,
         "title": "Excessive Oil Consumption (All N63 Generations)",
-        "symptoms": "Low oil level warning light, need to add 1 quart of oil every 600–1,000 miles, blue smoke from exhaust on startup, visible oil consumption between services.",
-        "typicalMileage": "30,000–80,000 miles",
-        "repairCost": "£1,500–£4,000 (valve stem seal replacement)【PLACEHOLDER - confirm vs cost sheet】",
-        "replacementCost": "£6,000–£12,000 (if oil starvation leads to engine failure)",
+        "symptoms": "Low oil level warning light, need to add 1 quart of oil every 600-1,000 miles, blue smoke from exhaust on startup, visible oil consumption between services.",
+        "typicalMileage": "30,000-80,000 miles",
+        "repairCost": "£1,500-£4,000 (valve stem seal replacement)【PLACEHOLDER - confirm vs cost sheet】",
+        "replacementCost": "£6,000-£12,000 (if oil starvation leads to engine failure)",
         "urgency": {
           "icon": "🟠",
           "label": "Check",
           "text": "book inspection urgently"
         },
-        "recommendation": "The N63's most notorious issue is excessive oil consumption. Class action lawsuits in the US alleged owners had to add 6–8 quarts of oil between services. The primary cause is valve stem seal failure, allowing oil to enter the combustion chamber. If you notice blue smoke on startup or are constantly topping up oil, have the valve stem seals inspected. Ignoring this can lead to catalytic converter failure and, in extreme cases, engine damage from oil starvation.",
+        "recommendation": "The N63's most notorious issue is excessive oil consumption. Class action lawsuits in the US alleged owners had to add 6-8 quarts of oil between services. The primary cause is valve stem seal failure, allowing oil to enter the combustion chamber. If you notice blue smoke on startup or are constantly topping up oil, have the valve stem seals inspected. Ignoring this can lead to catalytic converter failure and, in extreme cases, engine damage from oil starvation.",
         "failureLink": {
           "label": "Read the full oil consumption guide",
           "href": "/failures/n63-oil-consumption"
@@ -332,9 +332,9 @@
         "id": 2,
         "title": "Timing Chain Guide Wear (All N63 Generations)",
         "symptoms": "Rattling noise on cold start, metallic ticking from the engine, engine warning light, reduced performance.",
-        "typicalMileage": "60,000–100,000 miles",
-        "repairCost": "£1,500–£3,500 (timing chain guide replacement)【PLACEHOLDER - confirm vs cost sheet】",
-        "replacementCost": "£6,000–£12,000 (if chain skips and valves contact pistons)",
+        "typicalMileage": "60,000-100,000 miles",
+        "repairCost": "£1,500-£3,500 (timing chain guide replacement)【PLACEHOLDER - confirm vs cost sheet】",
+        "replacementCost": "£6,000-£12,000 (if chain skips and valves contact pistons)",
         "urgency": {
           "icon": "🔴",
           "label": "Immediate",
@@ -350,8 +350,8 @@
         "id": 3,
         "title": "Oil Leaks - Valve Cover Gaskets & Oil Filter Housing",
         "symptoms": "Oil spots under the car, burning oil smell from the engine bay, low oil level warning, visible oil residue around the valve covers or oil filter housing area.",
-        "typicalMileage": "40,000–80,000 miles",
-        "repairCost": "£500–£1,200 (gasket replacement)【PLACEHOLDER - confirm vs cost sheet】",
+        "typicalMileage": "40,000-80,000 miles",
+        "repairCost": "£500-£1,200 (gasket replacement)【PLACEHOLDER - confirm vs cost sheet】",
         "replacementCost": "N/A - repair only",
         "urgency": {
           "icon": "🟠",
@@ -388,31 +388,31 @@
         {
           "problem": "Valve stem seal failure",
           "repairable": "✅ Yes",
-          "typicalCost": "£1,500–£4,000",
+          "typicalCost": "£1,500-£4,000",
           "whenItMakesSense": "Specialist repair; far cheaper than engine replacement"
         },
         {
           "problem": "Timing chain guide wear",
           "repairable": "✅ Yes",
-          "typicalCost": "£1,500–£3,500",
+          "typicalCost": "£1,500-£3,500",
           "whenItMakesSense": "Preventative - catches the fault before catastrophic failure"
         },
         {
           "problem": "Oil leaks (valve cover/oil filter housing)",
           "repairable": "✅ Yes",
-          "typicalCost": "£500–£1,200",
+          "typicalCost": "£500-£1,200",
           "whenItMakesSense": "Well-understood repair; catch it early"
         },
         {
           "problem": "Turbocharger issues (wastegate rattle)",
           "repairable": "✅ Yes",
-          "typicalCost": "£1,000–£3,000",
+          "typicalCost": "£1,000-£3,000",
           "whenItMakesSense": "Specialist repair; cheaper than full turbo replacement"
         },
         {
           "problem": "Timing chain snap (valve contact)",
           "repairable": "❌ Usually No",
-          "typicalCost": "£6,000–£12,000",
+          "typicalCost": "£6,000-£12,000",
           "whenItMakesSense": "Typically requires full engine replacement or complete rebuild"
         }
       ]
@@ -434,7 +434,7 @@
         "* Engine warning light with no diagnosis"
       ]
     },
-    "closingVerdict": "The X5 xDrive50i is BMW's flagship V8 SUV - a powerful, refined, and luxurious machine. But the N63 V8 has a well-earned reputation for oil consumption, valve stem seal failure, timing chain guide wear, and oil leaks. The later N63TU and N63TU3 engines are significantly improved, but the reputation persists. Buy on documented history, not on faith. A well-maintained xDrive50i is a £20,000–£50,000 luxury SUV; a neglected one is a £10,000 engine replacement waiting to happen.",
+    "closingVerdict": "The X5 xDrive50i is BMW's flagship V8 SUV - a powerful, refined, and luxurious machine. But the N63 V8 has a well-earned reputation for oil consumption, valve stem seal failure, timing chain guide wear, and oil leaks. The later N63TU and N63TU3 engines are significantly improved, but the reputation persists. Buy on documented history, not on faith. A well-maintained xDrive50i is a £20,000-£50,000 luxury SUV; a neglected one is a £10,000 engine replacement waiting to happen.",
     "cta": {
       "label": "→ Compare xDrive50i engine prices before you buy",
       "href": "/quote"
@@ -445,7 +445,7 @@
     "items": [
       "* Cold Start - Listen for rattling or ticking (timing chain guide warning)",
       "* Smoke Check - Blue smoke on startup indicates valve stem seal failure",
-      "* Oil Consumption - How often does it need topping up? (1 quart per 600–1,000 miles is typical but excessive)",
+      "* Oil Consumption - How often does it need topping up? (1 quart per 600-1,000 miles is typical but excessive)",
       "* Service History - including which N63 generation (E70, F15, or G05) and confirmed oil-change intervals using BMW LL-01 approved oil",
       "* Oil Leak Check - Any evidence of oil leaks around the valve covers or oil filter housing?",
       "* Turbo Check - Any wastegate rattle or loss of boost?",
@@ -464,24 +464,24 @@
     "rows": [
       {
         "engineCode": "N63B44A (4.4L Twin-Turbo V8)",
-        "years": "2009–2013",
-        "power": "407 hp (300 kW) @ 5,500 rpm · 600 Nm @ 1,750–4,500 rpm",
+        "years": "2009-2013",
+        "power": "407 hp (300 kW) @ 5,500 rpm · 600 Nm @ 1,750-4,500 rpm",
         "enquiries": "- (pattern data)",
-        "avgReconCost": "£5,500–£9,000 [PLACEHOLDER]"
+        "avgReconCost": "£5,500-£9,000 [PLACEHOLDER]"
       },
       {
         "engineCode": "N63B44O1 / N63TU (4.4L Twin-Turbo V8)",
-        "years": "2013–2018",
-        "power": "450 hp (330 kW) @ 5,500 rpm · 650 Nm @ 2,000–4,500 rpm",
+        "years": "2013-2018",
+        "power": "450 hp (330 kW) @ 5,500 rpm · 650 Nm @ 2,000-4,500 rpm",
         "enquiries": "- (pattern data)",
-        "avgReconCost": "£6,000–£10,000 [PLACEHOLDER]"
+        "avgReconCost": "£6,000-£10,000 [PLACEHOLDER]"
       },
       {
         "engineCode": "N63B44M3 / N63TU3 (4.4L Twin-Turbo V8)",
-        "years": "2019–present",
-        "power": "462–523 hp (340–390 kW) @ 5,500 rpm · 650–750 Nm",
+        "years": "2019-present",
+        "power": "462-523 hp (340-390 kW) @ 5,500 rpm · 650-750 Nm",
         "enquiries": "- (pattern data)",
-        "avgReconCost": "£7,000–£12,000 [PLACEHOLDER]"
+        "avgReconCost": "£7,000-£12,000 [PLACEHOLDER]"
       }
     ],
     "matchNote": "This table's rows match Section 1B's Era Map exactly.",
@@ -527,11 +527,11 @@
       },
       {
         "label": "Average Enquiry Mileage",
-        "value": "50,000–80,000 miles [PATTERN DATA]"
+        "value": "50,000-80,000 miles [PATTERN DATA]"
       },
       {
         "label": "Average Replacement Cost",
-        "value": "£6,000–£10,000 reconditioned, supply only [PLACEHOLDER - confirm vs cost sheet]"
+        "value": "£6,000-£10,000 reconditioned, supply only [PLACEHOLDER - confirm vs cost sheet]"
       },
       {
         "label": "Most Requested Engine Code",
@@ -552,7 +552,7 @@
       {
         "id": 1,
         "question": "How much does a BMW X5 xDrive50i engine replacement cost in the UK?",
-        "answer": "A reconditioned N63 4.4-litre V8 engine typically costs £6,000–£10,000 supply only. Used engines are available from £4,500–£7,500. Fitting adds £1,500–£2,500 depending on your location and workshop. Main dealer new engines can exceed £15,000."
+        "answer": "A reconditioned N63 4.4-litre V8 engine typically costs £6,000-£10,000 supply only. Used engines are available from £4,500-£7,500. Fitting adds £1,500-£2,500 depending on your location and workshop. Main dealer new engines can exceed £15,000."
       },
       {
         "id": 2,
@@ -572,12 +572,12 @@
       {
         "id": 5,
         "question": "How do I find my BMW X5 xDrive50i engine code?",
-        "answer": "Listed on the VIN plate and vehicle documentation. E70 (2009–2013): N63B44A. F15 (2013–2018): N63B44O1 / N63TU. G05 (2019–present): N63B44M3 / N63TU3. The chassis code is the easiest tell - E70 is the first-generation X5, F15 is the second, G05 is the third."
+        "answer": "Listed on the VIN plate and vehicle documentation. E70 (2009-2013): N63B44A. F15 (2013-2018): N63B44O1 / N63TU. G05 (2019-present): N63B44M3 / N63TU3. The chassis code is the easiest tell - E70 is the first-generation X5, F15 is the second, G05 is the third."
       },
       {
         "id": 6,
         "question": "Can I repair the valve stem seals on the N63, or does it need full engine replacement?",
-        "answer": "Yes - valve stem seal replacement is a specialist repair costing £1,500–£4,000. It's the N63's most common issue and is well-understood by BMW specialists. If you notice blue smoke on startup or are constantly topping up oil, have it inspected promptly. Ignoring it can lead to catalytic converter failure and, in extreme cases, engine damage from oil starvation."
+        "answer": "Yes - valve stem seal replacement is a specialist repair costing £1,500-£4,000. It's the N63's most common issue and is well-understood by BMW specialists. If you notice blue smoke on startup or are constantly topping up oil, have it inspected promptly. Ignoring it can lead to catalytic converter failure and, in extreme cases, engine damage from oil starvation."
       }
     ],
     "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty - always confirm terms with your chosen supplier."

@@ -9,7 +9,7 @@ export function plain(value = "") {
 
 /** " - " written in the JSON reads as an em dash in the designs. */
 export function dash(value = "") {
-  return String(value ?? "").replace(/\s+-\s+/g, " — ");
+  return String(value ?? "").replace(/\s+-\s+/g, " - ");
 }
 
 /** "£1,800–£3,000" is set with spaces around the dash in the cost tables: "£1,800 – £3,000". */

@@ -559,7 +559,7 @@ def parse_best_worst_engines(body: str) -> dict[str, Any]:
     if re.search(r"thin-data fallback mode", joined, re.I):
         para = joined
         para = re.sub(r"^thin-data fallback mode:\s*", "", para, flags=re.I)
-        para = re.sub(r"^exactly one paragraph,\s*\d+[–\-]\d+\s*words:\s*", "", para, flags=re.I)
+        para = re.sub(r"^exactly one paragraph,\s*\d+[-\-]\d+\s*words:\s*", "", para, flags=re.I)
         items.append(
             {
                 "slot": "Thin-Data Summary",
@@ -1088,8 +1088,8 @@ def parse_trust_cta(body: str) -> dict[str, Any]:
                 continue
             if " - " in item:
                 title, text = [clean(x) for x in item.split(" - ", 1)]
-            elif " – " in item:
-                title, text = [clean(x) for x in item.split(" – ", 1)]
+            elif " - " in item:
+                title, text = [clean(x) for x in item.split(" - ", 1)]
             else:
                 title, text = item, ""
             trust_points.append({"title": title, "text": text})

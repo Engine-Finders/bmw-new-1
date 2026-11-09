@@ -1,12 +1,12 @@
 "use client";
 
-import { useState } from "react";
 import Image from "next/image";
-import { useRouter } from "next/navigation";
 import { variantFont as heroFont } from "./variantFont";
 import { useTheme } from "@/components/shared/themeProvider";
-import VIcon, { UkFlag } from "./VariantIcons";
-import { dash, stripMarker } from "./variantUi";
+import HeroRegQuoteForm from "@/components/shared/HeroRegQuoteForm";
+import { bmwContextLabel, modelCtaCopy } from "@/components/shared/SectionQuoteCta";
+import VIcon from "./VariantIcons";
+import { dash } from "./variantUi";
 
 // "🔧 Supply & Fit Available" -> solid glyph + label; the designs use solid icons here.
 const BADGE_ICONS = { "🔧": "wrench", "✅": "shieldCheck", "🚚": "truck", "👥": "users" };
@@ -42,7 +42,7 @@ function Headline({ h1 = "" }) {
   if (index === -1) return <span dangerouslySetInnerHTML={{ __html: h1 }} />;
   return (
     <>
-      <span className="block" dangerouslySetInnerHTML={{ __html: `${h1.slice(0, index)} —` }} />
+      <span className="block" dangerouslySetInnerHTML={{ __html: `${h1.slice(0, index)} -` }} />
       {/* "Compare Prices & | Get Quotes": the designs break the blue line after the ampersand. */}
       <span className="block text-[var(--color-v-blue)]" dangerouslySetInnerHTML={{ __html: h1.slice(index + 3).replace(/(&amp;|&)\s+/, "$1<br>") }} />
     </>
@@ -105,8 +105,6 @@ const PLAIN_LINKS = "[&_a]:[font-weight:inherit] [&_a]:text-inherit hover:[&_a]:
 
 export default function VariantHero({ data }) {
   const { theme } = useTheme();
-  const router = useRouter();
-  const [reg, setReg] = useState("");
   if (!data) return null;
 
   const isDark = theme === "dark";
@@ -123,15 +121,13 @@ export default function VariantHero({ data }) {
   const badges = (data.trustBadges || []).map(parseBadge);
   const ticker = String(data.ticker || "").replace(/^●\s*/, "").split(" · ").filter(Boolean);
   const form = data.registrationInput;
-
-  function submit(event) {
-    event.preventDefault();
-    const cleaned = reg.replace(/\s+/g, "").toUpperCase();
-    router.push(cleaned ? `/quote?reg=${encodeURIComponent(cleaned)}` : form?.cta?.href || "/quote");
-  }
+  const copy = modelCtaCopy(bmwContextLabel(data.tagPill, data.h1));
+  const heroButton =
+    String(form?.cta?.label || "")
+      .replace(/\s*(?:→|â†’|->)\s*$/, "")
+      .trim() || copy.heroButton;
 
   const card = "rounded-[10px] border border-[var(--color-v-border)] bg-[var(--color-v-panel)] shadow-[0_10px_30px_var(--color-v-shadow)]";
-  const field = "rounded-[8px] border border-[var(--color-v-border-strong)] bg-[var(--color-v-panel)] text-[var(--color-v-text)]";
 
   // Badge icons alternate blue / green (the shield's green on every second badge), so no single badge stands out.
   const badgeIcon = (index) =>
@@ -149,44 +145,15 @@ export default function VariantHero({ data }) {
     </p>
   ) : null;
 
-  const formNode = form ? (
-    <form onSubmit={submit} className="flex w-full flex-col gap-3 md:flex-row md:items-stretch">
-      <div className="flex min-w-0 flex-1 gap-3">
-        <label className={`relative flex shrink-0 items-center gap-2 pl-3 pr-2 md:gap-2.5 md:pl-3.5 md:pr-3 ${field} bg-[var(--color-v-band)]`}>
-          <span className="sr-only">Country</span>
-          <UkFlag className="h-4 w-6 shrink-0 md:h-5 md:w-8" />
-          <select
-            defaultValue="GB"
-            className="t-body cursor-pointer appearance-none bg-transparent py-3 pr-6 font-semibold text-[var(--color-v-text)] focus:outline-none"
-          >
-            <option value="GB">GB</option>
-          </select>
-          <VIcon name="chevronDown" className="pointer-events-none absolute right-3 h-4 w-4" strokeWidth={2.2} />
-        </label>
-        <label className="min-w-0 flex-1">
-          <span className="sr-only">Registration</span>
-          <input
-            type="text"
-            name="reg"
-            value={reg}
-            onChange={(event) => setReg(event.target.value.toUpperCase())}
-            placeholder={dash(form.placeholder)}
-            autoComplete="off"
-            className={`t-body h-full w-full px-3 py-3 placeholder:text-[length:var(--fs-label)] placeholder:text-[var(--color-v-soft)] md:px-4 md:placeholder:text-[length:var(--fs-body)] focus:outline-none focus-visible:border-[var(--color-v-blue)] ${field}`}
-          />
-        </label>
-      </div>
-      {form.cta ? (
-        <button
-          type="submit"
-          className="t-body inline-flex shrink-0 items-center justify-center gap-3 rounded-[6px] bg-[var(--color-v-blue-btn)] text-center md:whitespace-nowrap px-6 py-3 font-semibold text-white transition hover:brightness-110"
-        >
-          {stripMarker(form.cta.label)}
-          <VIcon name="arrowRight" className="h-[18px] w-[18px]" strokeWidth={2.2} />
-        </button>
-      ) : null}
-    </form>
-  ) : null;
+  const formNode = (
+    <HeroRegQuoteForm
+      className="!max-w-[560px]"
+      buttonLabel={heroButton}
+      placeholder={dash(form?.placeholder) || "Your Reg"}
+      fallbackHref={form?.cta?.href || "/quote"}
+      buttonClassName="!bg-[var(--color-v-blue-btn)]"
+    />
+  );
 
   return (
     <>
@@ -251,7 +218,7 @@ export default function VariantHero({ data }) {
                 <p className={`t-body flex min-w-0 flex-1 flex-col gap-x-12 gap-y-0.5 text-[var(--color-v-text)] lg:flex-row lg:flex-wrap lg:items-center lg:[&>span]:whitespace-nowrap ${PLAIN_LINKS}`}>
                   <span>
                     <strong className="font-semibold" dangerouslySetInnerHTML={{ __html: price.name }} />
-                    {price.range ? <span dangerouslySetInnerHTML={{ __html: ` — ${price.range}` }} /> : null}
+                    {price.range ? <span dangerouslySetInnerHTML={{ __html: ` - ${price.range}` }} /> : null}
                   </span>
                   {price.codes ? (
                     <span className="text-[var(--color-v-blue)] lg:text-[var(--color-v-text)]" dangerouslySetInnerHTML={{ __html: dash(price.codes) }} />

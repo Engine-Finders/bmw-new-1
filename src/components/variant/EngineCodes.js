@@ -12,15 +12,15 @@ const FIELDS = ["engineCode", "years", "power", "enquiries", "avgReconCost"];
 // Short values ("2015/16–present", "190–224 bhp") stay on one line; longer ones may wrap.
 const short = (value = "") => plain(value).length <= 16;
 
-// "- (within 1,450 JLR-wide N47 figure) [TAG]" -> "—" over the bracketed note; values keep their tag.
+// "- (within 1,450 JLR-wide N47 figure) [TAG]" -> "-" over the bracketed note; values keep their tag.
 function Enquiries({ value, align = "center" }) {
   const { main, tags } = splitTags(value);
-  const dashed = main.match(/^[-–—]\s*(.*)$/);
+  const dashed = main.match(/^[-–-]\s*(.*)$/);
   return (
     <span className={`block ${align === "center" ? "text-center" : "text-right"}`}>
       {dashed ? (
         <>
-          <span className="block">—</span>
+          <span className="block">-</span>
           {dashed[1] ? <span className="t-label block text-[var(--color-v-muted)] lg:!text-[clamp(11.5px,0.82vw,13.5px)] lg:leading-snug">{dashed[1]}</span> : null}
         </>
       ) : main ? (

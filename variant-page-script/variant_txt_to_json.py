@@ -875,8 +875,8 @@ def parse_trust_cta(body: str) -> dict[str, Any]:
                 continue
             if " - " in item:
                 title, text = [clean(x) for x in item.split(" - ", 1)]
-            elif " – " in item:
-                title, text = [clean(x) for x in item.split(" – ", 1)]
+            elif " - " in item:
+                title, text = [clean(x) for x in item.split(" - ", 1)]
             else:
                 title, text = item, ""
             trust_points.append({"title": title, "text": text})

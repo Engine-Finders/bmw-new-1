@@ -53,19 +53,19 @@
             {
               "@type": "ListItem",
               "position": 1,
-              "name": "E83 (2003–2010) M57D30",
+              "name": "E83 (2003-2010) M57D30",
               "url": "https://bmwengines.uk/x3/e83/"
             },
             {
               "@type": "ListItem",
               "position": 2,
-              "name": "F25 (2010–2017) N57D30O1",
+              "name": "F25 (2010-2017) N57D30O1",
               "url": "https://bmwengines.uk/x3/f25/"
             },
             {
               "@type": "ListItem",
               "position": 3,
-              "name": "G01 (2017–present) B57D30O0",
+              "name": "G01 (2017-present) B57D30O0",
               "url": "https://bmwengines.uk/x3/g01/"
             }
           ]
@@ -102,7 +102,7 @@
               "name": "How much does a BMW X3 30d engine replacement cost in the UK?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "A reconditioned X3 30d engine typically costs £1,800–£8,500 supply only depending on generation. M57-era engines sit at the lower end (£1,800–£4,500), while B57 units run £3,500–£8,500. Fitting adds £650–£1,500. Used N57 engines have been listed from £1,295 upwards, with some suppliers offering engines at £2,300–£4,000. A complete reconditioned engine for the X3 starts from around €3,990. Use our calculator for a figure specific to your car."
+                "text": "A reconditioned X3 30d engine typically costs £1,800-£8,500 supply only depending on generation. M57-era engines sit at the lower end (£1,800-£4,500), while B57 units run £3,500-£8,500. Fitting adds £650-£1,500. Used N57 engines have been listed from £1,295 upwards, with some suppliers offering engines at £2,300-£4,000. A complete reconditioned engine for the X3 starts from around €3,990. Use our calculator for a figure specific to your car."
               }
             },
             {
@@ -110,7 +110,7 @@
               "name": "Is the BMW X3 30d engine reliable?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "It depends on which of the three engine generations your X3 30d has. The M57 (E83, 2003–2010) is widely regarded as one of BMW's most durable diesel engines - it won International Engine of the Year multiple times. The N57 (F25, 2010–2017) is more refined but less reliable - timing chain and bearing failures have been reported. The B57 (G01, 2017+) is a significant improvement with robust chain design, but EGR cooler and turbo issues remain common. Check the Era Map above for your specific car."
+                "text": "It depends on which of the three engine generations your X3 30d has. The M57 (E83, 2003-2010) is widely regarded as one of BMW's most durable diesel engines - it won International Engine of the Year multiple times. The N57 (F25, 2010-2017) is more refined but less reliable - timing chain and bearing failures have been reported. The B57 (G01, 2017+) is a significant improvement with robust chain design, but EGR cooler and turbo issues remain common. Check the Era Map above for your specific car."
               }
             },
             {
@@ -134,7 +134,7 @@
               "name": "How do I find my BMW X3 30d engine code?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Listed on the VIN plate and vehicle documentation. As a rule of thumb: E83 (2003–2010) is M57D30 (204–218 bhp), F25 (2010–2017) is N57D30O1 (258 bhp), G01 (2017–present) is B57D30O0 (261–286 bhp). Tell us your registration date and we'll confirm it for free."
+                "text": "Listed on the VIN plate and vehicle documentation. As a rule of thumb: E83 (2003-2010) is M57D30 (204-218 bhp), F25 (2010-2017) is N57D30O1 (258 bhp), G01 (2017-present) is B57D30O0 (261-286 bhp). Tell us your registration date and we'll confirm it for free."
               }
             },
             {
@@ -142,7 +142,7 @@
               "name": "Can I repair the N57 timing chain, or does it need replacement?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Yes - if caught early. A preventative chain replacement (£1,200–£3,000) is far cheaper than a catastrophic failure requiring a full engine replacement. Many specialists recommend preventative chain replacement at 100,000 miles regardless of symptoms. At the first sign of rattling or knocking, book an inspection immediately. Regular oil changes every 8,000–10,000 miles are critical for N57 longevity."
+                "text": "Yes - if caught early. A preventative chain replacement (£1,200-£3,000) is far cheaper than a catastrophic failure requiring a full engine replacement. Many specialists recommend preventative chain replacement at 100,000 miles regardless of symptoms. At the first sign of rattling or knocking, book an inspection immediately. Regular oil changes every 8,000-10,000 miles are critical for N57 longevity."
               }
             }
           ]
@@ -203,7 +203,7 @@
     }
   },
   "hero": {
-    "tagPill": "BMW X3 30d • 2003–present • 3 Engine Generations",
+    "tagPill": "BMW X3 30d • 2003-present • 3 Engine Generations",
     "h1": "BMW X3 30d Engine Replacement - Compare Prices & Get Quotes",
     "subHeadline": "The X3 30d is the core six-cylinder diesel across three generations of BMW's compact SUV - from the bulletproof <a href='https://bmwengines.uk/engine/m57'>M57</a> to the refined <a href='https://bmwengines.uk/engine/n57'>N57</a> and the modern <a href='https://bmwengines.uk/engine/b57-b58'>B57</a>. Get quotes from trusted UK BMW specialists for every era, supply & fit available nationwide.",
     "trustBadges": [
@@ -236,26 +236,26 @@
     "rows": [
       {
         "generation": "E83",
-        "years": "2003–2010",
+        "years": "2003-2010",
         "engineCode": "M57D30",
         "reliability": "★★★★½ [NEWLY ASSIGNED - see Data Note]",
-        "reconCost": "£1,800–£4,500 [PLACEHOLDER - confirm vs cost sheet]",
+        "reconCost": "£1,800-£4,500 [PLACEHOLDER - confirm vs cost sheet]",
         "eraNote": "One of BMW's most durable diesels - swirl flaps and EGR are main concerns"
       },
       {
         "generation": "F25",
-        "years": "2010–2017",
+        "years": "2010-2017",
         "engineCode": "N57D30O1",
         "reliability": "★★★★☆ [NEWLY ASSIGNED - see Data Note]",
-        "reconCost": "£2,500–£6,500 [PLACEHOLDER - confirm vs cost sheet]",
+        "reconCost": "£2,500-£6,500 [PLACEHOLDER - confirm vs cost sheet]",
         "eraNote": "Refined six - timing chain and bearing failures possible"
       },
       {
         "generation": "G01",
-        "years": "2017–present",
+        "years": "2017-present",
         "engineCode": "B57D30O0",
         "reliability": "★★★★☆ [NEWLY ASSIGNED - see Data Note]",
-        "reconCost": "£3,500–£8,500 [PLACEHOLDER - confirm vs cost sheet]",
+        "reconCost": "£3,500-£8,500 [PLACEHOLDER - confirm vs cost sheet]",
         "eraNote": "Modern B57 - robust chain, EGR and turbo issues remain"
       }
     ],
@@ -274,35 +274,35 @@
     "rows": [
       {
         "engineType": "Used Engine",
-        "supplyOnly": "£1,300–£2,800",
-        "fittedIndie": "£2,000–£4,200",
-        "warranty": "1–6 months",
+        "supplyOnly": "£1,300-£2,800",
+        "fittedIndie": "£2,000-£4,200",
+        "warranty": "1-6 months",
         "bestFor": "Budget priority; older E83 cars"
       },
       {
         "engineType": "Reconditioned Engine",
-        "supplyOnly": "£2,500–£6,500",
-        "fittedIndie": "£3,500–£8,000",
-        "warranty": "12–24 months",
+        "supplyOnly": "£2,500-£6,500",
+        "fittedIndie": "£3,500-£8,000",
+        "warranty": "12-24 months",
         "bestFor": "Most owners - best cost/warranty balance"
       },
       {
         "engineType": "Rebuilt Engine",
-        "supplyOnly": "£4,000–£8,500",
-        "fittedIndie": "£5,000–£10,500",
-        "warranty": "12–24 months",
+        "supplyOnly": "£4,000-£8,500",
+        "fittedIndie": "£5,000-£10,500",
+        "warranty": "12-24 months",
         "bestFor": "Long-term ownership; 3+ year horizon"
       },
       {
         "engineType": "Main Dealer New",
-        "supplyOnly": "£7,000–£12,000",
-        "fittedIndie": "£8,500–£14,500",
-        "warranty": "24–36 months",
+        "supplyOnly": "£7,000-£12,000",
+        "fittedIndie": "£8,500-£14,500",
+        "warranty": "24-36 months",
         "bestFor": "Insurance jobs, warranty claims (modern cars only)"
       }
     ],
-    "figuresNote": "Figures above reflect the current B57 generation, the most common quote request today. Older generations: see the Era Map above for M57 and N57-specific pricing, which runs lower. Used N57 engines for the F25 X3 have been listed from £1,295 upwards, with some suppliers offering engines at £2,300–£4,000 with fitting at £495–£1,150. A complete reconditioned engine for the X3 starts from around €3,990, with fitting from €5,490.",
-    "labourEstimate": "Fitting an X3 30d engine typically takes 12–16 hours at £65–£95/hr (independent). The six-cylinder diesel's longitudinal layout and complex emissions systems add labour time.",
+    "figuresNote": "Figures above reflect the current B57 generation, the most common quote request today. Older generations: see the Era Map above for M57 and N57-specific pricing, which runs lower. Used N57 engines for the F25 X3 have been listed from £1,295 upwards, with some suppliers offering engines at £2,300-£4,000 with fitting at £495-£1,150. A complete reconditioned engine for the X3 starts from around €3,990, with fitting from €5,490.",
+    "labourEstimate": "Fitting an X3 30d engine typically takes 12-16 hours at £65-£95/hr (independent). The six-cylinder diesel's longitudinal layout and complex emissions systems add labour time.",
     "cta": {
       "label": "→ Compare X3 30d engine prices from UK specialists",
       "href": "/quote"
@@ -312,17 +312,17 @@
     "problems": [
       {
         "id": 1,
-        "title": "N57 Timing Chain & Bearing Failure (F25 2010–2017)",
+        "title": "N57 Timing Chain & Bearing Failure (F25 2010-2017)",
         "symptoms": "Rattling or metallic noise on cold start, metallic knocking, oil pressure loss warning, engine warning light. Some owners report a whining noise from the timing chain area.",
-        "typicalMileage": "100,000–150,000 miles - chain stretch can occur by 100,000 miles.",
-        "repairCost": "£1,200–£3,000 (chain, tensioner, guides); £3,000+ for bearing failure.",
+        "typicalMileage": "100,000-150,000 miles - chain stretch can occur by 100,000 miles.",
+        "repairCost": "£1,200-£3,000 (chain, tensioner, guides); £3,000+ for bearing failure.",
         "replacementCost": "N/A - repair only if caught early; catastrophic failure requires full engine replacement.",
         "urgency": {
           "icon": "🔴",
           "label": "Immediate",
           "text": "if you hear rattle or knocking, book an inspection today."
         },
-        "recommendation": "The N57 shares timing chain components with the <a href='https://bmwengines.uk/engine/n47'>N47</a> - chain stretch and guide wear are a concern. By 100,000 miles, many specialists recommend preventative chain replacement. If the chain snaps or tensioner fails, it's an interference engine - piston-valve contact means catastrophic damage. Bearing failures have also been reported in N57 engines, with some owners experiencing bottom-end failure. At the first sign of rattling or knocking, book an inspection immediately. Regular oil changes every 8,000–10,000 miles are critical for longevity.",
+        "recommendation": "The N57 shares timing chain components with the <a href='https://bmwengines.uk/engine/n47'>N47</a> - chain stretch and guide wear are a concern. By 100,000 miles, many specialists recommend preventative chain replacement. If the chain snaps or tensioner fails, it's an interference engine - piston-valve contact means catastrophic damage. Bearing failures have also been reported in N57 engines, with some owners experiencing bottom-end failure. At the first sign of rattling or knocking, book an inspection immediately. Regular oil changes every 8,000-10,000 miles are critical for longevity.",
         "failureLink": {
           "label": "",
           "href": "/failures/timing-chain-diagnosis-guide"
@@ -330,10 +330,10 @@
       },
       {
         "id": 2,
-        "title": "M57 Swirl Flap Failure (E83 2003–2010)",
+        "title": "M57 Swirl Flap Failure (E83 2003-2010)",
         "symptoms": "Loss of power, rough idle, engine warning light, occasional rattling from the intake manifold, black smoke.",
-        "typicalMileage": "80,000–150,000 miles.",
-        "repairCost": "£100–£250 (preventative blanking plates) / £500–£1,200 (intake manifold replacement).",
+        "typicalMileage": "80,000-150,000 miles.",
+        "repairCost": "£100-£250 (preventative blanking plates) / £500-£1,200 (intake manifold replacement).",
         "replacementCost": "N/A - repair only; if a flap detaches, it can enter a cylinder and cause catastrophic engine damage.",
         "urgency": {
           "icon": "🟡",
@@ -348,10 +348,10 @@
       },
       {
         "id": 3,
-        "title": "EGR Cooler & Turbocharger Issues (B57 - G01 2017–present)",
+        "title": "EGR Cooler & Turbocharger Issues (B57 - G01 2017-present)",
         "symptoms": "Coolant loss with no visible external leak, white exhaust smoke, engine warning light, reduced performance, black smoke, unusual noises.",
-        "typicalMileage": "Any mileage - EGR issues reported from 40,000–60,000 miles.",
-        "repairCost": "£400–£1,200 (EGR cooler replacement) / £800–£2,500 (turbocharger repair or replacement).",
+        "typicalMileage": "Any mileage - EGR issues reported from 40,000-60,000 miles.",
+        "repairCost": "£400-£1,200 (EGR cooler replacement) / £800-£2,500 (turbocharger repair or replacement).",
         "replacementCost": "N/A - repair only; ignoring coolant loss can lead to overheating and engine damage.",
         "urgency": {
           "icon": "🟠",
@@ -388,25 +388,25 @@
         {
           "problem": "Swirl flap failure (M57)",
           "repairable": "✅ Yes",
-          "typicalCost": "£100–£250",
+          "typicalCost": "£100-£250",
           "whenItMakesSense": "Blanking plates remove the risk entirely"
         },
         {
           "problem": "N57 timing chain rattle",
           "repairable": "✅ Yes (if caught early)",
-          "typicalCost": "£1,200–£3,000",
+          "typicalCost": "£1,200-£3,000",
           "whenItMakesSense": "Preventative - catches fault before catastrophic failure"
         },
         {
           "problem": "N57 bearing failure",
           "repairable": "⚠️ Sometimes",
-          "typicalCost": "£3,000–£5,000",
+          "typicalCost": "£3,000-£5,000",
           "whenItMakesSense": "Viable if the rest of the vehicle is solid"
         },
         {
           "problem": "B57 EGR cooler failure",
           "repairable": "✅ Yes",
-          "typicalCost": "£400–£1,200",
+          "typicalCost": "£400-£1,200",
           "whenItMakesSense": "Recall may cover it - check with BMW first"
         },
         {
@@ -423,7 +423,7 @@
         "* E83 M57 with swirl flap blanking completed - the most durable X3 diesel",
         "* F25 N57 with documented timing chain replacement (especially over 100,000 miles)",
         "* G01 B57 with EGR recall completed and full service history",
-        "* Full service history with oil changes every 8,000–10,000 miles"
+        "* Full service history with oil changes every 8,000-10,000 miles"
       ],
       "avoidIf": [
         "* N57 with cold-start rattle and no chain history - timing chain or bearing risk",
@@ -462,24 +462,24 @@
     "rows": [
       {
         "engineCode": "M57D30",
-        "years": "2003–2010",
-        "power": "204–218 bhp (150–160 kW)",
+        "years": "2003-2010",
+        "power": "204-218 bhp (150-160 kW)",
         "enquiries": "- (pattern data)",
-        "avgReconCost": "£1,800–£4,500 [PLACEHOLDER]"
+        "avgReconCost": "£1,800-£4,500 [PLACEHOLDER]"
       },
       {
         "engineCode": "N57D30O1",
-        "years": "2010–2017",
+        "years": "2010-2017",
         "power": "258 bhp (190 kW)",
         "enquiries": "- (pattern data)",
-        "avgReconCost": "£2,500–£6,500 [PLACEHOLDER]"
+        "avgReconCost": "£2,500-£6,500 [PLACEHOLDER]"
       },
       {
         "engineCode": "B57D30O0",
-        "years": "2017–present",
-        "power": "261–286 bhp (195–210 kW)",
+        "years": "2017-present",
+        "power": "261-286 bhp (195-210 kW)",
         "enquiries": "- (pattern data)",
-        "avgReconCost": "£3,500–£8,500 [PLACEHOLDER]"
+        "avgReconCost": "£3,500-£8,500 [PLACEHOLDER]"
       }
     ],
     "matchNote": "This table's rows match Section 1B's Era Map exactly.",
@@ -566,12 +566,12 @@
       {
         "id": 1,
         "question": "How much does a BMW X3 30d engine replacement cost in the UK?",
-        "answer": "A reconditioned X3 30d engine typically costs £1,800–£8,500 supply only depending on generation. M57-era engines sit at the lower end (£1,800–£4,500), while B57 units run £3,500–£8,500. Fitting adds £650–£1,500. Used N57 engines have been listed from £1,295 upwards, with some suppliers offering engines at £2,300–£4,000. A complete reconditioned engine for the X3 starts from around €3,990. Use our calculator for a figure specific to your car."
+        "answer": "A reconditioned X3 30d engine typically costs £1,800-£8,500 supply only depending on generation. M57-era engines sit at the lower end (£1,800-£4,500), while B57 units run £3,500-£8,500. Fitting adds £650-£1,500. Used N57 engines have been listed from £1,295 upwards, with some suppliers offering engines at £2,300-£4,000. A complete reconditioned engine for the X3 starts from around €3,990. Use our calculator for a figure specific to your car."
       },
       {
         "id": 2,
         "question": "Is the BMW X3 30d engine reliable?",
-        "answer": "It depends on which of the three engine generations your X3 30d has. The M57 (E83, 2003–2010) is widely regarded as one of BMW's most durable diesel engines - it won International Engine of the Year multiple times. The N57 (F25, 2010–2017) is more refined but less reliable - timing chain and bearing failures have been reported. The B57 (G01, 2017+) is a significant improvement with robust chain design, but EGR cooler and turbo issues remain common. Check the Era Map above for your specific car."
+        "answer": "It depends on which of the three engine generations your X3 30d has. The M57 (E83, 2003-2010) is widely regarded as one of BMW's most durable diesel engines - it won International Engine of the Year multiple times. The N57 (F25, 2010-2017) is more refined but less reliable - timing chain and bearing failures have been reported. The B57 (G01, 2017+) is a significant improvement with robust chain design, but EGR cooler and turbo issues remain common. Check the Era Map above for your specific car."
       },
       {
         "id": 3,
@@ -586,12 +586,12 @@
       {
         "id": 5,
         "question": "How do I find my BMW X3 30d engine code?",
-        "answer": "Listed on the VIN plate and vehicle documentation. As a rule of thumb: E83 (2003–2010) is M57D30 (204–218 bhp), F25 (2010–2017) is N57D30O1 (258 bhp), G01 (2017–present) is B57D30O0 (261–286 bhp). Tell us your registration date and we'll confirm it for free."
+        "answer": "Listed on the VIN plate and vehicle documentation. As a rule of thumb: E83 (2003-2010) is M57D30 (204-218 bhp), F25 (2010-2017) is N57D30O1 (258 bhp), G01 (2017-present) is B57D30O0 (261-286 bhp). Tell us your registration date and we'll confirm it for free."
       },
       {
         "id": 6,
         "question": "Can I repair the N57 timing chain, or does it need replacement?",
-        "answer": "Yes - if caught early. A preventative chain replacement (£1,200–£3,000) is far cheaper than a catastrophic failure requiring a full engine replacement. Many specialists recommend preventative chain replacement at 100,000 miles regardless of symptoms. At the first sign of rattling or knocking, book an inspection immediately. Regular oil changes every 8,000–10,000 miles are critical for N57 longevity."
+        "answer": "Yes - if caught early. A preventative chain replacement (£1,200-£3,000) is far cheaper than a catastrophic failure requiring a full engine replacement. Many specialists recommend preventative chain replacement at 100,000 miles regardless of symptoms. At the first sign of rattling or knocking, book an inspection immediately. Regular oil changes every 8,000-10,000 miles are critical for N57 longevity."
       },
       {
         "id": 1,

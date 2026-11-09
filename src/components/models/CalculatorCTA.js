@@ -104,7 +104,7 @@ function PathCard({ card, C, isDark }) {
 
       {card.button ? (
         <Link
-          href={card.button.href || "/tools/diagnostic-wizard"}
+          href={card.button.href || "/quote"}
           className={`mt-5 flex items-center gap-4 rounded-[8px] px-4 py-3 font-normal transition hover:brightness-110 ${solid ? "bg-[#0b57e3] text-white" : "border"}`}
           style={solid ? undefined : { borderColor: C.accent, color: C.text }}
         >
@@ -154,12 +154,31 @@ function PathCard({ card, C, isDark }) {
 
 // Model JSONs without the reference fields get the same blocks built from h2 / intro / paths.
 function withDefaults(data) {
-  if (data.pathCards) return data;
   const h2 = String(data.h2 || "").replace(/\s+-\s+/g, " - ");
-  const model = h2.match(/My\s+(.+?)\s+Engine/i)?.[1] || "BMW";
+  const model = h2.match(/My\s+(.+?)\s+Engine/i)?.[1] || h2.match(/BMW\s+(.+?)\s+Engine/i)?.[1] || "BMW";
+  const href = "/quote";
+  const path1Label = `Start BMW ${model} Diagnosis`;
+  const path2Label = `Identify ${model} Engine Code`;
+  const path1Sub = "Know your engine? Explore likely faults and compare repair-versus-replacement costs.";
+  const path2Sub = "Not sure which engine you have? Identify your engine code before starting diagnosis.";
+
+  if (data.pathCards) {
+    const pathCards = data.pathCards.map((card, index) => ({
+      ...card,
+      button: card.button
+        ? {
+            ...card.button,
+            href,
+            label: index === 0 ? path1Label : index === 1 ? path2Label : card.button.label,
+            sub: index === 0 ? path1Sub : index === 1 ? path2Sub : card.button.sub,
+          }
+        : card.button,
+    }));
+    return { ...data, pathCards, banner: null };
+  }
+
   const marker = h2.indexOf("or Should I Replace It?");
   const sentences = String(data.intro || "").replace(/\s+-\s+/g, " - ").match(/[^.!?]+[.!?]+/g) || [String(data.intro || "")];
-  const href = data.paths?.[0]?.href || "/tools/diagnostic-wizard";
   return {
     ...data,
     titleLines: marker > 0 ? [h2.slice(0, marker).trim(), `<span>${h2.slice(marker)}</span>`] : [h2, ""],
@@ -172,10 +191,10 @@ function withDefaults(data) {
         icon: "engineSearch",
         titleAccent: "Know",
         title: "your engine?",
-        text: `Launch the BMW diagnostic calculator with ${model} pre-selected.`,
-        button: { style: "solid", icon: "calculator", label: `Launch ${model} Diagnostic Calculator`, sub: `${model} pre-selected`, href },
+        text: path1Sub,
+        button: { style: "solid", icon: "calculator", label: path1Label, sub: path1Sub, href },
         features: [
-          { icon: "check", title: `${model} pre-selected`, text: "All generations covered" },
+          { icon: "check", title: `${model} covered`, text: "All generations covered" },
           { icon: "bars", title: "Real UK cost data", text: "Used, recon & rebuilt" },
           { icon: "shieldCheck", title: "Instant verdict", text: "Repair vs replace" },
         ],
@@ -185,16 +204,12 @@ function withDefaults(data) {
         icon: "docSearch",
         titleAccent: "Not sure",
         title: "which engine you have?",
-        text: "We’ll identify it first.",
-        button: { style: "outline", icon: "engineQuestion", label: "Identify My Engine First", sub: "Then launch the diagnostic calculator", href: data.paths?.[1]?.href || href },
-        note: { title: "Identification is the first step inside the tool.", text: "We’ll pinpoint your exact engine code before running the diagnostics." },
+        text: path2Sub,
+        button: { style: "outline", icon: "engineQuestion", label: path2Label, sub: path2Sub, href },
+        note: { title: "Identification is the first step.", text: "We’ll pinpoint your exact engine code before running the diagnostics." },
       },
     ],
-    banner: {
-      title: "Stop guessing. Get the right answer.",
-      text: "Our calculator compares real repair and replacement costs against your car’s value - so you know the financially smarter move.",
-      cta: { label: "Start Your Verdict Now", href },
-    },
+    banner: null,
   };
 }
 

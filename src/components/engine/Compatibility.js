@@ -35,7 +35,7 @@ const fill = (template = "", vars = {}) => String(template).replace(/\{(\w+)\}/g
 const noHtml = (value) => String(value ?? "").replace(/<[^>]*>/g, "");
 /** Data value as plain text: HTML, [TAGS] and placeholders removed, dashes cleaned. */
 const bare = (value) => stripTags(noHtml(value));
-const isBlank = (value) => !value || /^[\s\-–—]*$/.test(value);
+const isBlank = (value) => !value || /^[\s\-–-]*$/.test(value);
 
 /* ------------------------------------------------------------------ data */
 

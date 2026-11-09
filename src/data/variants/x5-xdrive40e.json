@@ -53,7 +53,7 @@
             {
               "@type": "ListItem",
               "position": 1,
-              "name": "F15 (2015–2018) N20B20A PHEV",
+              "name": "F15 (2015-2018) N20B20A PHEV",
               "url": "https://bmwengines.uk/x5/f15/"
             }
           ]
@@ -78,7 +78,7 @@
               "name": "How much does a BMW X5 xDrive40e engine replacement cost in the UK?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "A reconditioned xDrive40e (N20 PHEV) engine typically costs £5,000–£11,000 supply only. Fitting adds £900–£2,000 depending on workshop location. Main dealer new engines can exceed £10,000 supply only. Battery replacement is separate - typically £3,000–£8,000 once the warranty expires. Some owners have reported engine replacement under warranty at 74,000 miles. Use our calculator for a figure specific to your car."
+                "text": "A reconditioned xDrive40e (N20 PHEV) engine typically costs £5,000-£11,000 supply only. Fitting adds £900-£2,000 depending on workshop location. Main dealer new engines can exceed £10,000 supply only. Battery replacement is separate - typically £3,000-£8,000 once the warranty expires. Some owners have reported engine replacement under warranty at 74,000 miles. Use our calculator for a figure specific to your car."
               }
             },
             {
@@ -102,7 +102,7 @@
               "name": "Is it worth replacing a BMW X5 xDrive40e engine, or should I scrap the car?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Apply the 70% BMW scrap threshold: if your X5 is worth £10,000 and a recon engine is £7,000 (70%), it's borderline. If the vehicle is a tired £8,000 example, the same engine exceeds 70% - get a scrap valuation first. Always factor in potential battery costs (£3,000–£8,000) when making your decision."
+                "text": "Apply the 70% BMW scrap threshold: if your X5 is worth £10,000 and a recon engine is £7,000 (70%), it's borderline. If the vehicle is a tired £8,000 example, the same engine exceeds 70% - get a scrap valuation first. Always factor in potential battery costs (£3,000-£8,000) when making your decision."
               }
             },
             {
@@ -118,7 +118,7 @@
               "name": "Can I repair the N20 timing chain, or does it need replacement?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Yes - if caught early. A preventative chain replacement (£1,500–£3,500) is far cheaper than a catastrophic failure requiring a full engine replacement. At the first sign of cold-start rattle, book an inspection immediately. Many specialists recommend preventative replacement at 60,000–80,000 miles regardless of symptoms on the N20. Regular oil changes every 8,000–10,000 miles are critical for N20 longevity."
+                "text": "Yes - if caught early. A preventative chain replacement (£1,500-£3,500) is far cheaper than a catastrophic failure requiring a full engine replacement. At the first sign of cold-start rattle, book an inspection immediately. Many specialists recommend preventative replacement at 60,000-80,000 miles regardless of symptoms on the N20. Regular oil changes every 8,000-10,000 miles are critical for N20 longevity."
               }
             }
           ]
@@ -179,7 +179,7 @@
     }
   },
   "hero": {
-    "tagPill": "BMW X5 xDrive40e • 2015–2018 • 1 Engine Code (PHEV)",
+    "tagPill": "BMW X5 xDrive40e • 2015-2018 • 1 Engine Code (PHEV)",
     "h1": "BMW X5 xDrive40e Engine Replacement - Compare Prices & Get Quotes",
     "subHeadline": "BMW's first plug-in hybrid X5 - a 2.0-litre turbocharged four-cylinder petrol engine paired with an electric motor for 313 hp and all-electric urban driving. Get quotes from trusted UK BMW specialists who understand this complex PHEV system, supply & fit available nationwide.",
     "trustBadges": [
@@ -212,10 +212,10 @@
     "rows": [
       {
         "generation": "F15",
-        "years": "2015–2018",
+        "years": "2015-2018",
         "engineCode": "N20B20A (N20B20O0) + e-motor (PHEV)",
         "reliability": "★★★☆☆ [NEWLY ASSIGNED - see Data Note]",
-        "reconCost": "£5,000–£11,000 [PLACEHOLDER - confirm vs cost sheet]",
+        "reconCost": "£5,000-£11,000 [PLACEHOLDER - confirm vs cost sheet]",
         "eraNote": "BMW's first X5 PHEV - battery, drivetrain and <a href='https://bmwengines.uk/engine/n13-n20'>N20</a> chain concerns"
       }
     ],
@@ -234,35 +234,35 @@
     "rows": [
       {
         "engineType": "Used Engine (PHEV)",
-        "supplyOnly": "£2,500–£4,500",
-        "fittedIndie": "£3,500–£6,500",
-        "warranty": "1–6 months",
+        "supplyOnly": "£2,500-£4,500",
+        "fittedIndie": "£3,500-£6,500",
+        "warranty": "1-6 months",
         "bestFor": "Budget priority; short-term ownership"
       },
       {
         "engineType": "Reconditioned Engine",
-        "supplyOnly": "£5,000–£11,000",
-        "fittedIndie": "£6,500–£13,500",
-        "warranty": "12–24 months",
+        "supplyOnly": "£5,000-£11,000",
+        "fittedIndie": "£6,500-£13,500",
+        "warranty": "12-24 months",
         "bestFor": "Most owners - best cost/warranty balance"
       },
       {
         "engineType": "Rebuilt Engine",
-        "supplyOnly": "£7,000–£12,000",
-        "fittedIndie": "£8,500–£14,500",
-        "warranty": "12–24 months",
+        "supplyOnly": "£7,000-£12,000",
+        "fittedIndie": "£8,500-£14,500",
+        "warranty": "12-24 months",
         "bestFor": "Long-term ownership; 3+ year horizon"
       },
       {
         "engineType": "Main Dealer New",
-        "supplyOnly": "£10,000–£16,000",
-        "fittedIndie": "£12,000–£19,000",
-        "warranty": "24–36 months",
+        "supplyOnly": "£10,000-£16,000",
+        "fittedIndie": "£12,000-£19,000",
+        "warranty": "24-36 months",
         "bestFor": "Insurance jobs, warranty claims"
       }
     ],
-    "figuresNote": "Figures above reflect the only powertrain generation this badge ever used - the N20B20A PHEV. See the Era Map above for era-specific pricing. Battery replacement is separate - typically £3,000–£8,000 once the warranty expires. Some owners have reported engine replacement under warranty at 74,000 miles.",
-    "labourEstimate": "Fitting an X5 xDrive40e engine typically takes 14–18 hours at £65–£95/hr (independent). The PHEV system, high-voltage battery, and integrated electric motor add significant complexity to the job.",
+    "figuresNote": "Figures above reflect the only powertrain generation this badge ever used - the N20B20A PHEV. See the Era Map above for era-specific pricing. Battery replacement is separate - typically £3,000-£8,000 once the warranty expires. Some owners have reported engine replacement under warranty at 74,000 miles.",
+    "labourEstimate": "Fitting an X5 xDrive40e engine typically takes 14-18 hours at £65-£95/hr (independent). The PHEV system, high-voltage battery, and integrated electric motor add significant complexity to the job.",
     "cta": {
       "label": "→ Compare X5 xDrive40e engine prices from UK specialists",
       "href": "/quote"
@@ -274,15 +274,15 @@
         "id": 1,
         "title": "N20 Timing Chain Guide Failure (Petrol Engine)",
         "symptoms": "Rattling or metallic noise from the engine on cold start, engine warning light, loss of power, VANOS/timing codes. Plastic timing chain guides deteriorate and can break, sending debris into the oil pan. If the chain slips or breaks, piston-valve contact can destroy the engine.",
-        "typicalMileage": "60,000–100,000 miles - early production N20s are most susceptible.",
-        "repairCost": "£1,500–£3,500 (chain, guides, tensioners).",
+        "typicalMileage": "60,000-100,000 miles - early production N20s are most susceptible.",
+        "repairCost": "£1,500-£3,500 (chain, guides, tensioners).",
         "replacementCost": "N/A - repair only if caught early; catastrophic failure requires full engine replacement.",
         "urgency": {
           "icon": "🔴",
           "label": "Immediate",
           "text": "if you hear rattling, book an inspection today."
         },
-        "recommendation": "The N20's timing chain guides are a well-documented weak point. BMW's 15,000-mile oil change interval has been identified as a contributing factor - specialists recommend 8,000–10,000 mile intervals. If you hear any rattling from the engine, especially on cold start, book an inspection immediately. Preventative chain replacement is far cheaper than a full engine replacement.",
+        "recommendation": "The N20's timing chain guides are a well-documented weak point. BMW's 15,000-mile oil change interval has been identified as a contributing factor - specialists recommend 8,000-10,000 mile intervals. If you hear any rattling from the engine, especially on cold start, book an inspection immediately. Preventative chain replacement is far cheaper than a full engine replacement.",
         "failureLink": {
           "label": "",
           "href": "/failures/n20-timing-chain-tensioner"
@@ -293,7 +293,7 @@
         "title": "Drivetrain Malfunction & Max eDrive Disabled",
         "symptoms": "Intermittent \"Drivetrain Malfunction\" warning, Max eDrive won't engage even with full battery, reduced power, automatic start/stop errors. Fault code 21A117 (Emergency Operation Manager: Request Combustion Engine) from the EME control unit.",
         "typicalMileage": "Any mileage - can affect low-mileage examples.",
-        "repairCost": "£500–£2,500 (diagnosis, electric coolant pump replacement, PCV system repair).",
+        "repairCost": "£500-£2,500 (diagnosis, electric coolant pump replacement, PCV system repair).",
         "replacementCost": "N/A - repair only; if ignored, the vehicle may become undriveable.",
         "urgency": {
           "icon": "🟠",
@@ -309,16 +309,16 @@
       {
         "id": 3,
         "title": "Battery Degradation & Charging System Issues",
-        "symptoms": "Reduced EV range (real-world range often falls to 8–10 miles rather than the claimed 14–19 miles), longer charging times, battery warning lights, failure to charge.",
-        "typicalMileage": "30,000–60,000 miles - accelerated by frequent rapid charging and cold weather.",
-        "repairCost": "£3,000–£8,000 (battery replacement); £500–£2,000 (charging system repair).",
+        "symptoms": "Reduced EV range (real-world range often falls to 8-10 miles rather than the claimed 14-19 miles), longer charging times, battery warning lights, failure to charge.",
+        "typicalMileage": "30,000-60,000 miles - accelerated by frequent rapid charging and cold weather.",
+        "repairCost": "£3,000-£8,000 (battery replacement); £500-£2,000 (charging system repair).",
         "replacementCost": "N/A - battery is a wear item; replacement is the only solution for severe degradation.",
         "urgency": {
           "icon": "🟡",
           "label": "Monitor",
           "text": "book inspection soon if range noticeably drops."
         },
-        "recommendation": "The 9.0–9.2 kWh battery is the hybrid system's Achilles' heel. Real-world electric range often falls short of claims. Owners report battery issues as early as 70,000 km. To maximise battery life, avoid frequent rapid charging, keep the battery between 20% and 80% for daily use, and use the BMW app to monitor battery health. High-voltage battery replacement can cost around RM 30,000.",
+        "recommendation": "The 9.0-9.2 kWh battery is the hybrid system's Achilles' heel. Real-world electric range often falls short of claims. Owners report battery issues as early as 70,000 km. To maximise battery life, avoid frequent rapid charging, keep the battery between 20% and 80% for daily use, and use the BMW app to monitor battery health. High-voltage battery replacement can cost around RM 30,000.",
         "failureLink": {
           "label": "",
           "href": "/failures/battery-parasitic-drain"
@@ -348,25 +348,25 @@
         {
           "problem": "N20 timing chain rattle",
           "repairable": "✅ Yes (if caught early)",
-          "typicalCost": "£1,500–£3,500",
+          "typicalCost": "£1,500-£3,500",
           "whenItMakesSense": "Preventative - catches fault before catastrophic failure"
         },
         {
           "problem": "Drivetrain malfunction (coolant pump)",
           "repairable": "✅ Yes",
-          "typicalCost": "£500–£2,500",
+          "typicalCost": "£500-£2,500",
           "whenItMakesSense": "Campaign 24V-608 may cover it - check with BMW first"
         },
         {
           "problem": "Battery degradation",
           "repairable": "⚠️ Sometimes",
-          "typicalCost": "£3,000–£8,000",
+          "typicalCost": "£3,000-£8,000",
           "whenItMakesSense": "Only viable if the rest of the vehicle is in excellent condition"
         },
         {
           "problem": "Rear air suspension leak",
           "repairable": "✅ Yes",
-          "typicalCost": "£500–£2,000",
+          "typicalCost": "£500-£2,000",
           "whenItMakesSense": "Common issue - independent workshops offer cheaper alternatives"
         },
         {
@@ -380,7 +380,7 @@
     "buyingChecks": {
       "title": "Buying This xDrive40e? Check These First",
       "buyIf": [
-        "* Full service history with oil changes every 8,000–10,000 miles",
+        "* Full service history with oil changes every 8,000-10,000 miles",
         "* Campaign 24V-608 (electric coolant pump recall) completed",
         "* Battery health report showing >85% state of health",
         "* N20 timing chain inspected and confirmed healthy"
@@ -392,7 +392,7 @@
         "* No service history - PHEV systems are complex and unforgiving of neglect"
       ]
     },
-    "closingVerdict": "The X5 xDrive40e is BMW's first plug-in hybrid X5 - a capable and efficient SUV but one with significant complexity. The N20 engine carries timing chain guide risks. The hybrid system has drivetrain malfunction and battery degradation vulnerabilities. Rear air suspension and electric A/C compressor failures are also common. With the 70% BMW scrap threshold, a £7,000 recon on a £10,000 xDrive40e is 70% - borderline. On a sub-£8,000 example, think carefully. Factor in potential battery costs (£3,000–£8,000) when assessing a used example.",
+    "closingVerdict": "The X5 xDrive40e is BMW's first plug-in hybrid X5 - a capable and efficient SUV but one with significant complexity. The N20 engine carries timing chain guide risks. The hybrid system has drivetrain malfunction and battery degradation vulnerabilities. Rear air suspension and electric A/C compressor failures are also common. With the 70% BMW scrap threshold, a £7,000 recon on a £10,000 xDrive40e is 70% - borderline. On a sub-£8,000 example, think carefully. Factor in potential battery costs (£3,000-£8,000) when assessing a used example.",
     "cta": {
       "label": "→ Compare X5 xDrive40e engine prices before you buy",
       "href": "/quote"
@@ -402,7 +402,7 @@
     "intro": "Before you buy a used BMW X5 xDrive40e (or before you commit to an engine replacement), check these:",
     "items": [
       "* Cold Start - Listen for rattling on startup (N20 timing chain warning)",
-      "* Service History - Oil changes every 8,000–10,000 miles using BMW-approved oil",
+      "* Service History - Oil changes every 8,000-10,000 miles using BMW-approved oil",
       "* Drivetrain Warnings - Any \"Drivetrain Malfunction\" or Max eDrive warnings?",
       "* Campaign 24V-608 - Has the electric coolant pump recall been completed?",
       "* EV Range - Test electric-only range; does it match expectations? (Battery degradation is common)",
@@ -422,10 +422,10 @@
     "rows": [
       {
         "engineCode": "N20B20A (N20B20O0) + e-motor (PHEV)",
-        "years": "2015–2018",
+        "years": "2015-2018",
         "power": "313 hp (230 kW) system",
         "enquiries": "- (pattern data)",
-        "avgReconCost": "£5,000–£11,000 [PLACEHOLDER]"
+        "avgReconCost": "£5,000-£11,000 [PLACEHOLDER]"
       }
     ],
     "matchNote": "This table's rows match Section 1B's Era Map exactly.",
@@ -462,11 +462,11 @@
         },
         {
           "label": "* Battery",
-          "value": "9.0–9.2 kWh lithium-ion"
+          "value": "9.0-9.2 kWh lithium-ion"
         },
         {
           "label": "* EV Range",
-          "value": "Up to 14–19 miles (NEDC)"
+          "value": "Up to 14-19 miles (NEDC)"
         },
         {
           "label": "* Transmission",
@@ -512,7 +512,7 @@
       {
         "id": 1,
         "question": "How much does a BMW X5 xDrive40e engine replacement cost in the UK?",
-        "answer": "A reconditioned xDrive40e (N20 PHEV) engine typically costs £5,000–£11,000 supply only. Fitting adds £900–£2,000 depending on workshop location. Main dealer new engines can exceed £10,000 supply only. Battery replacement is separate - typically £3,000–£8,000 once the warranty expires. Some owners have reported engine replacement under warranty at 74,000 miles. Use our calculator for a figure specific to your car."
+        "answer": "A reconditioned xDrive40e (N20 PHEV) engine typically costs £5,000-£11,000 supply only. Fitting adds £900-£2,000 depending on workshop location. Main dealer new engines can exceed £10,000 supply only. Battery replacement is separate - typically £3,000-£8,000 once the warranty expires. Some owners have reported engine replacement under warranty at 74,000 miles. Use our calculator for a figure specific to your car."
       },
       {
         "id": 2,
@@ -527,7 +527,7 @@
       {
         "id": 4,
         "question": "Is it worth replacing a BMW X5 xDrive40e engine, or should I scrap the car?",
-        "answer": "Apply the 70% BMW scrap threshold: if your X5 is worth £10,000 and a recon engine is £7,000 (70%), it's borderline. If the vehicle is a tired £8,000 example, the same engine exceeds 70% - get a scrap valuation first. Always factor in potential battery costs (£3,000–£8,000) when making your decision."
+        "answer": "Apply the 70% BMW scrap threshold: if your X5 is worth £10,000 and a recon engine is £7,000 (70%), it's borderline. If the vehicle is a tired £8,000 example, the same engine exceeds 70% - get a scrap valuation first. Always factor in potential battery costs (£3,000-£8,000) when making your decision."
       },
       {
         "id": 5,
@@ -537,7 +537,7 @@
       {
         "id": 6,
         "question": "Can I repair the N20 timing chain, or does it need replacement?",
-        "answer": "Yes - if caught early. A preventative chain replacement (£1,500–£3,500) is far cheaper than a catastrophic failure requiring a full engine replacement. At the first sign of cold-start rattle, book an inspection immediately. Many specialists recommend preventative replacement at 60,000–80,000 miles regardless of symptoms on the N20. Regular oil changes every 8,000–10,000 miles are critical for N20 longevity."
+        "answer": "Yes - if caught early. A preventative chain replacement (£1,500-£3,500) is far cheaper than a catastrophic failure requiring a full engine replacement. At the first sign of cold-start rattle, book an inspection immediately. Many specialists recommend preventative replacement at 60,000-80,000 miles regardless of symptoms on the N20. Regular oil changes every 8,000-10,000 miles are critical for N20 longevity."
       }
     ],
     "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12-month unlimited-mileage warranty - always confirm terms with your chosen supplier."

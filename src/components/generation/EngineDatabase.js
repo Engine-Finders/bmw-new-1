@@ -65,7 +65,7 @@ const TONES = {
 const HTML = "[&_a]:[font-weight:inherit] [&_a]:text-inherit hover:[&_a]:underline";
 
 function dash(value = "") {
-  return String(value ?? "").replace(/\s+-\s*(?=\S)/g, " — ");
+  return String(value ?? "").replace(/\s+-\s*(?=\S)/g, " - ");
 }
 
 // Hyphenated words ("BMW-VERIFIED", "pattern-data-tier") never split at the hyphen, as in the designs.
@@ -98,22 +98,22 @@ function splitFuel(value = "") {
 function splitTag(value = "") {
   const match = String(value).match(/^(.*?)\s*\[([^\]]+)\]\s*(.*)$/);
   if (!match) return { main: String(value).trim(), tag: "", rest: "" };
-  return { main: match[1].trim(), tag: match[2].split(/\s+[-—]/)[0].trim(), rest: match[3].trim() };
+  return { main: match[1].trim(), tag: match[2].split(/\s+[--]/)[0].trim(), rest: match[3].trim() };
 }
 
 // "- (pattern data)" -> dash over "(pattern data)"; "830 JLR-wide [BMW-VERIFIED]" -> figure, scope, tag.
 function splitEnquiries(value = "") {
   const text = String(value ?? "").trim();
-  if (!text) return { figure: "—", note: "", tag: "" };
+  if (!text) return { figure: "-", note: "", tag: "" };
   const pattern = text.match(/^-\s*(\(pattern data\))$/i);
-  if (pattern) return { figure: "—", note: pattern[1], tag: "" };
+  if (pattern) return { figure: "-", note: pattern[1], tag: "" };
   const { main, tag, rest } = splitTag(text);
   const figure = main.match(/^([\d,]+\+?)\s*(.*)$/);
   if (figure) return { figure: figure[1], note: [figure[2], rest].filter(Boolean).join(" "), tag };
   return { figure: "", note: [main, rest].filter(Boolean).join(" "), tag };
 }
 
-// A single price range ("£1,800–£3,500") stays on one line; anything longer ("N/A — EV battery replacement",
+// A single price range ("£1,800–£3,500") stays on one line; anything longer ("N/A - EV battery replacement",
 // "£1,200–£1,600 used; £2,…") wraps inside its cell.
 const isPrice = (text = "") => /^[£$€\d]/.test(String(text).trim()) && String(text).trim().length <= 16;
 
@@ -231,7 +231,7 @@ function splitReliability(engine) {
   ]
     .map((part) => part.trim())
     .filter(Boolean);
-  return { stars: stars || "—", tag: engine.reliabilityTag || shortTag.trim(), details };
+  return { stars: stars || "-", tag: engine.reliabilityTag || shortTag.trim(), details };
 }
 
 // Stars, then the data tag (verified = green pill; the rest blue), then the detail lines.
@@ -265,7 +265,7 @@ function Enquiries({ value, phone }) {
   const { figure, note, tag } = splitEnquiries(value);
   return (
     <span className="flex min-w-0 flex-col items-center text-center leading-tight">
-      {figure ? <span className={`text-[var(--db-text)] ${figure === "—" ? "" : "font-medium"} ${phone ? "text-[15px]" : "text-[16px]"}`}>{figure}</span> : null}
+      {figure ? <span className={`text-[var(--db-text)] ${figure === "-" ? "" : "font-medium"} ${phone ? "text-[15px]" : "text-[16px]"}`}>{figure}</span> : null}
       {note ? <Html html={note} className={`mt-0.5 text-[var(--db-muted)] ${phone ? "text-[11.5px] md:text-[13px] lg:text-[14px]" : "text-[14px]"}`} /> : null}
       {tag ? <span className={`mt-0.5 font-medium ${tagTone(tag)} ${phone ? "text-[11px] md:text-[13px] lg:text-[14px]" : "text-[14px]"}`}>{phone ? tag : `[${tag}]`}</span> : null}
     </span>
@@ -276,7 +276,7 @@ function Cost({ value, phone }) {
   const { main, tag, rest } = splitTag(dash(value));
   return (
     <span className="flex min-w-0 flex-col items-center text-center leading-tight">
-      <Html html={[main, rest].filter(Boolean).join(" ") || "—"} className={`${isPrice(main) ? "whitespace-nowrap" : ""} font-medium text-[var(--db-text)] ${phone ? "text-[14px] tracking-[-0.01em] lg:text-[15px]" : "text-[16px]"}`} />
+      <Html html={[main, rest].filter(Boolean).join(" ") || "-"} className={`${isPrice(main) ? "whitespace-nowrap" : ""} font-medium text-[var(--db-text)] ${phone ? "text-[14px] tracking-[-0.01em] lg:text-[15px]" : "text-[16px]"}`} />
       {tag ? <span className={`mt-1 ${tagTone(tag)} ${phone ? "text-[11px] md:text-[13px] lg:text-[14px]" : "text-[14px]"}`}>[{tag}]</span> : null}
     </span>
   );
@@ -327,12 +327,12 @@ function DesktopTable({ engines, columns }) {
         return (
           <div key={`${engine.engineCode}-${index}`} className={`grid ${DESKTOP_COLS} border-b border-[var(--db-line)] text-[16px] leading-snug text-[var(--db-text)] last:border-b-0`}>
             <span className={`${cell} px-3 py-2`}><CodeCell engine={engine} /></span>
-            <span className={`${cell} px-3 py-2`}><Html html={engine.family || "—"} /></span>
+            <span className={`${cell} px-3 py-2`}><Html html={engine.family || "-"} /></span>
             <span className={`${cell} px-3 py-2`}><FuelCell fuel={engine.fuel} /></span>
-            <span className={`${cell} px-3 py-2`}><Html html={engine.displacement || "—"} /></span>
-            <span className={`${cell} px-3 py-2`}><Stack main={power.main || "—"} sub={power.sub} subClass="text-[14px]" /></span>
-            <span className={`${cell} px-3 py-2`}><Stack main={years.main || "—"} sub={years.sub} subClass="text-[14px]" /></span>
-            <span className={`${cell} justify-center px-2 py-2 text-center`}><Html html={engine.variants || "—"} /></span>
+            <span className={`${cell} px-3 py-2`}><Html html={engine.displacement || "-"} /></span>
+            <span className={`${cell} px-3 py-2`}><Stack main={power.main || "-"} sub={power.sub} subClass="text-[14px]" /></span>
+            <span className={`${cell} px-3 py-2`}><Stack main={years.main || "-"} sub={years.sub} subClass="text-[14px]" /></span>
+            <span className={`${cell} justify-center px-2 py-2 text-center`}><Html html={engine.variants || "-"} /></span>
             <span className={`${cell} justify-center px-2 py-2`}><Reliability engine={engine} /></span>
             <span className={`${cell} justify-center px-2 py-2`}><Enquiries value={engine.enquiries} /></span>
             <span className={`${cell} justify-center px-2 py-2`}><Cost value={engine.avgReconCost} /></span>
@@ -385,14 +385,14 @@ function PhoneCards({ engines }) {
               <div className={field}>
                 <dt className={label}>{powerLabel}</dt>
                 <dd className="mt-1 text-[14px] leading-snug">
-                  <Html html={power.main || "—"} className={String(power.main).length <= 11 ? "whitespace-nowrap" : ""} />
+                  <Html html={power.main || "-"} className={String(power.main).length <= 11 ? "whitespace-nowrap" : ""} />
                   {power.sub ? <Html html={power.sub} className="block text-[12px] text-[var(--db-muted)]" /> : null}
                 </dd>
               </div>
               <div className={`${field} border-l border-[var(--db-line)]`}>
                 <dt className={label}>{yearsLabel}</dt>
                 <dd className="mt-1 text-[14px] leading-snug">
-                  <Html html={years.main || "—"} className={String(years.main).length <= 9 ? "whitespace-nowrap" : ""} />
+                  <Html html={years.main || "-"} className={String(years.main).length <= 9 ? "whitespace-nowrap" : ""} />
                   {years.sub ? <Html html={years.sub} className="block text-[12px] text-[var(--db-muted)]" /> : null}
                 </dd>
               </div>
@@ -423,7 +423,7 @@ function PhoneCards({ engines }) {
               <div className="min-w-0">
                 <span className={label}>{enquiriesLabel}</span>
                 <span className="mt-1 block leading-snug">
-                  {enquiries.figure ? <span className={`text-[14.5px] ${enquiries.figure === "—" ? "" : "font-medium"}`}>{enquiries.figure}</span> : null}
+                  {enquiries.figure ? <span className={`text-[14.5px] ${enquiries.figure === "-" ? "" : "font-medium"}`}>{enquiries.figure}</span> : null}
                   {enquiries.note ? <Html html={enquiries.note} className="ml-1.5 text-[12.5px] text-[var(--db-muted)]" /> : null}
                   {enquiries.tag ? <span className={`block text-[12px] font-medium ${tagTone(enquiries.tag)}`}>{enquiries.tag}</span> : null}
                 </span>
@@ -431,7 +431,7 @@ function PhoneCards({ engines }) {
               <span className="flex min-w-0 shrink-0 items-center gap-3">
                 <span className="flex min-w-0 flex-col items-end text-right leading-snug">
                   <span className={label}>{costLabel}</span>
-                  <Html html={[cost.main, cost.rest].filter(Boolean).join(" ") || "—"} className="mt-1 max-w-[46vw] text-[16px] font-semibold" />
+                  <Html html={[cost.main, cost.rest].filter(Boolean).join(" ") || "-"} className="mt-1 max-w-[46vw] text-[16px] font-semibold" />
                   {cost.tag ? (
                     <span className={`text-[12px] ${/PLACEHOLDER/i.test(cost.tag) ? "text-[var(--db-amber)]" : tagTone(cost.tag)}`}>[{cost.tag}]</span>
                   ) : null}
@@ -447,7 +447,7 @@ function PhoneCards({ engines }) {
 }
 
 // Laptops (1024–1439px): the phone design's seven columns at fixed desktop sizes.
-// Tablets (768–1023px): the phone design itself — all seven columns on screen, every size a share of the screen width
+// Tablets (768–1023px): the phone design itself - all seven columns on screen, every size a share of the screen width
 // (vw values = design px ÷ 8.62, the design being 862px wide), so it scales with the screen like the design does.
 function PhoneTable({ engines }) {
   const head = "flex min-w-0 items-center justify-center border-l border-[var(--db-line)] first:border-l-0 px-[0.8vw] py-[1.1vw] text-center text-[1.9vw] leading-[1.25] text-[var(--db-text)]";
@@ -483,11 +483,11 @@ function PhoneTable({ engines }) {
               {fuel.sub ? <Html html={fuel.sub} className="mt-[0.4vw] text-[1.68vw] leading-[1.2] text-[var(--db-muted)]" /> : null}
             </span>
             <span className={`${td} flex-col px-[0.5vw] text-[2.2vw] leading-[1.3]`}>
-              <Html html={power.main || "—"} />
+              <Html html={power.main || "-"} />
               {power.sub ? <Html html={power.sub} className="mt-[0.3vw] text-[1.6vw] leading-[1.2] tracking-[-0.03em] text-[var(--db-muted)]" /> : null}
             </span>
             <span className={`${td} flex-col px-[0.5vw] text-[2.2vw] leading-[1.3]`}>
-              <Html html={years.main || "—"} />
+              <Html html={years.main || "-"} />
               {years.sub ? <Html html={years.sub} className="mt-[0.3vw] text-[1.6vw] leading-[1.2] tracking-[-0.03em] text-[var(--db-muted)]" /> : null}
             </span>
             <span className={`${td} flex-col px-[0.6vw]`}>
@@ -514,7 +514,7 @@ function PhoneTable({ engines }) {
             </span>
             <span className={`${td} gap-[0.3vw] pl-[0.4vw] pr-[1vw]`}>
               <span className="flex min-w-0 flex-1 flex-col items-center leading-[1.3]">
-                <Html html={[cost.main, cost.rest].filter(Boolean).join(" ") || "—"} className={`${isPrice(cost.main) ? "whitespace-nowrap" : ""} text-[1.95vw] font-medium tracking-[-0.03em]`} />
+                <Html html={[cost.main, cost.rest].filter(Boolean).join(" ") || "-"} className={`${isPrice(cost.main) ? "whitespace-nowrap" : ""} text-[1.95vw] font-medium tracking-[-0.03em]`} />
                 {cost.tag ? (
                   <span className={`mt-[0.3vw] text-[1.68vw] ${/PLACEHOLDER/i.test(cost.tag) ? "text-[var(--db-amber)]" : tagTone(cost.tag)}`}>[{cost.tag}]</span>
                 ) : null}
@@ -549,8 +549,8 @@ function TabletTable({ engines }) {
             <div key={`${engine.engineCode}-${index}`} className={`grid ${MOBILE_COLS} border-b border-[var(--db-line)] text-[14px] leading-snug text-[var(--db-text)] last:border-b-0`}>
               <span className={`${cell} px-2.5 py-3`}><CodeCell engine={engine} phone /></span>
               <span className={`${cell} px-2 py-3`}><FuelCell fuel={engine.fuel} phone /></span>
-              <span className={`${cell} justify-center px-2 py-2 text-center`}><Stack main={power.main || "—"} sub={power.sub} subClass="text-[11px] md:text-[13px] lg:text-[14px]" /></span>
-              <span className={`${cell} justify-center px-2 py-2 text-center`}><Stack main={years.main || "—"} sub={years.sub} subClass="text-[11px] md:text-[13px] lg:text-[14px]" /></span>
+              <span className={`${cell} justify-center px-2 py-2 text-center`}><Stack main={power.main || "-"} sub={power.sub} subClass="text-[11px] md:text-[13px] lg:text-[14px]" /></span>
+              <span className={`${cell} justify-center px-2 py-2 text-center`}><Stack main={years.main || "-"} sub={years.sub} subClass="text-[11px] md:text-[13px] lg:text-[14px]" /></span>
               <span className={`${cell} justify-center px-1.5 py-3`}><Reliability engine={engine} phone /></span>
               <span className={`${cell} justify-center px-1.5 py-3`}><Enquiries value={engine.enquiries} phone /></span>
               <span className={`${cell} gap-1 py-3 pl-2 pr-1.5`}>
@@ -653,8 +653,8 @@ function Confidence({ data, code }) {
         </ul>
       </div>
 
-      {/* Phones: the phone design's layout — shield beside the title, one row per item with a chevron, then the
-          data note — at readable sizes (14px copy). */}
+      {/* Phones: the phone design's layout - shield beside the title, one row per item with a chevron, then the
+          data note - at readable sizes (14px copy). */}
       <div className="px-4 pb-1 pt-4 md:hidden">
         <div className="flex items-center gap-3">
           <ShieldBadge className="h-[46px] w-[41px] shrink-0" />
@@ -710,8 +710,8 @@ export default function EngineDatabase({ data , band }) {
 
   const isDark = theme === "dark";
   const title = splitEngineDatabaseH2(dash(data.h2));
-  // "… Engine Codes —" / "… Engine Codes -": the dash is drawn between the two lines below.
-  const titleMain = String(title.main).replace(/\s*[-—–]\s*$/, "");
+  // "… Engine Codes -" / "… Engine Codes -": the dash is drawn between the two lines below.
+  const titleMain = String(title.main).replace(/\s*[--–]\s*$/, "");
   const engines = data.engines || [];
   // The page's own column labels (they name its generation), falling back to the design's labels.
   const columns = UI.columns.map((label, index) => data.columns?.[index] || label);
@@ -734,8 +734,8 @@ export default function EngineDatabase({ data , band }) {
             <Html html={titleMain} />
             {title.accent ? (
               <>
-                {/* No break between the last word and the dash, so "Codes —" moves down together as in the designs. */}
-                {"\u00a0— "}
+                {/* No break between the last word and the dash, so "Codes -" moves down together as in the designs. */}
+                {"\u00a0- "}
                 <Html html={title.accent} className="lg:block" />
               </>
             ) : null}

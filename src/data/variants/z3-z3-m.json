@@ -59,13 +59,13 @@
             {
               "@type": "ListItem",
               "position": 1,
-              "name": "Z3 M (S50B32, 1997–2000)",
+              "name": "Z3 M (S50B32, 1997-2000)",
               "url": "https://bmwengines.uk/3-series-compact/e36-5"
             },
             {
               "@type": "ListItem",
               "position": 2,
-              "name": "Z3 M (S54B32, 2001–2002)",
+              "name": "Z3 M (S54B32, 2001-2002)",
               "url": "https://bmwengines.uk/3-series-compact/e36-5"
             }
           ]
@@ -96,7 +96,7 @@
               "name": "How much does a BMW Z3 M engine replacement cost in the UK?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "A reconditioned S50B32 typically costs £4,000–£7,000 supply only, with the S54B32 higher at £5,000–£9,000. Fitting adds £1,000–£1,600. Use our calculator for a figure specific to your Z3 M."
+                "text": "A reconditioned S50B32 typically costs £4,000-£7,000 supply only, with the S54B32 higher at £5,000-£9,000. Fitting adds £1,000-£1,600. Use our calculator for a figure specific to your Z3 M."
               }
             },
             {
@@ -104,7 +104,7 @@
               "name": "Is the BMW Z3 M engine reliable?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "It depends which engine your Z3 M has. The S50 (1997–2000) is generally reliable but the VANOS seals are a known weakness. The S54 (2001–2002) delivers more power but had a rod bearing recall - if this work has been done, it's a robust and rewarding engine. Check the Era Map above for your specific car."
+                "text": "It depends which engine your Z3 M has. The S50 (1997-2000) is generally reliable but the VANOS seals are a known weakness. The S54 (2001-2002) delivers more power but had a rod bearing recall - if this work has been done, it's a robust and rewarding engine. Check the Era Map above for your specific car."
               }
             },
             {
@@ -120,7 +120,7 @@
               "name": "Is it worth replacing a Z3 M engine, or should I scrap the car?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Depends on vehicle value. Z3 M values range from £18,000 for a roadster to over £60,000 for a concours coupé. A £5,000–£8,000 recon is 8–44% of the car's value - making replacement a clear decision for most examples. This is well within our 70% BMW scrap threshold."
+                "text": "Depends on vehicle value. Z3 M values range from £18,000 for a roadster to over £60,000 for a concours coupé. A £5,000-£8,000 recon is 8-44% of the car's value - making replacement a clear decision for most examples. This is well within our 70% BMW scrap threshold."
               }
             },
             {
@@ -128,7 +128,7 @@
               "name": "How do I find my BMW Z3 M engine code?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Listed on the VIN plate and vehicle documentation. The Z3 M covers S50B32 (1997–2000) and S54B32 (2001–2002). Tell us your registration date and we'll confirm which one you have for free."
+                "text": "Listed on the VIN plate and vehicle documentation. The Z3 M covers S50B32 (1997-2000) and S54B32 (2001-2002). Tell us your registration date and we'll confirm which one you have for free."
               }
             },
             {
@@ -136,7 +136,7 @@
               "name": "Can I prevent the common failures on a Z3 M?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "On S50: have the VANOS rebuilt with upgraded seals. On S54: have the rod bearings replaced preventatively - this is the single most important investment you can make. Both engines benefit from 5,000–7,500‑mile oil changes with the correct oil (10W‑60 for S54). At the first sign of rattle, knock or loss of power, book an inspection immediately."
+                "text": "On S50: have the VANOS rebuilt with upgraded seals. On S54: have the rod bearings replaced preventatively - this is the single most important investment you can make. Both engines benefit from 5,000-7,500‑mile oil changes with the correct oil (10W‑60 for S54). At the first sign of rattle, knock or loss of power, book an inspection immediately."
               }
             }
           ]
@@ -197,7 +197,7 @@
     }
   },
   "hero": {
-    "tagPill": "BMW Z3 M • 1997–2002 • <a href='https://bmwengines.uk/engine/s50-s52-s54'>S50</a> / S54",
+    "tagPill": "BMW Z3 M • 1997-2002 • <a href='https://bmwengines.uk/engine/s50-s52-s54'>S50</a> / S54",
     "h1": "BMW Z3 M Engine Replacement - Compare Prices & Get Quotes",
     "subHeadline": "The Z3 M is a skunkworks masterpiece - powered by the E36 M3's S50 or the E46 M3's S54 straight-six. A rare, analogue sports car with genuine modern classic status. Get quotes from trusted UK specialists today.",
     "trustBadges": [
@@ -243,23 +243,23 @@
     "rows": [
       {
         "engineType": "Used Engine",
-        "supplyOnly": "£3,000–£5,000",
-        "fittedIndie": "£4,500–£6,800",
-        "warranty": "1–6 months",
+        "supplyOnly": "£3,000-£5,000",
+        "fittedIndie": "£4,500-£6,800",
+        "warranty": "1-6 months",
         "bestFor": "Budget priority; lower-mileage donor"
       },
       {
         "engineType": "Reconditioned Engine",
-        "supplyOnly": "£5,000–£9,000",
-        "fittedIndie": "£6,500–£11,000",
-        "warranty": "12–24 months",
+        "supplyOnly": "£5,000-£9,000",
+        "fittedIndie": "£6,500-£11,000",
+        "warranty": "12-24 months",
         "bestFor": "Most owners - best cost/warranty balance"
       },
       {
         "engineType": "Rebuilt Engine",
-        "supplyOnly": "£7,000–£12,000",
-        "fittedIndie": "£8,500–£14,000",
-        "warranty": "12–24 months",
+        "supplyOnly": "£7,000-£12,000",
+        "fittedIndie": "£8,500-£14,000",
+        "warranty": "12-24 months",
         "bestFor": "Long-term ownership; concours‑level restoration"
       },
       {
@@ -271,7 +271,7 @@
       }
     ],
     "figuresNote": "Figures above reflect the range across both engine generations; S50‑era pricing runs lower than S54 - see the Era Map above. Reconditioned S54 engines are particularly expensive due to their rarity and performance pedigree.",
-    "labourEstimate": "Fitting a Z3 M engine typically takes 10–14 hours at £65–£95/hr (independent) or £110–£160/hr (London/SE dealer). M‑specific engine work requires specialist knowledge.",
+    "labourEstimate": "Fitting a Z3 M engine typically takes 10-14 hours at £65-£95/hr (independent) or £110-£160/hr (London/SE dealer). M‑specific engine work requires specialist knowledge.",
     "cta": {
       "label": "→ Compare Z3 M engine prices from UK specialists",
       "href": "/quote"
@@ -283,8 +283,8 @@
         "id": 1,
         "title": "VANOS System Failure (S50 & S54)",
         "symptoms": "Loss of low‑end power, hesitation on acceleration, rough idle, metallic rattle from the front of the engine, engine warning light.",
-        "typicalMileage": "60,000–100,000 miles",
-        "repairCost": "£400–£1,200 (VANOS rebuild with upgraded seals)",
+        "typicalMileage": "60,000-100,000 miles",
+        "repairCost": "£400-£1,200 (VANOS rebuild with upgraded seals)",
         "replacementCost": "N/A - repair only (if caught before catastrophic failure)",
         "urgency": {
           "icon": "🟠",
@@ -299,11 +299,11 @@
       },
       {
         "id": 2,
-        "title": "S54 Rod Bearing Failure (2001–2002)",
+        "title": "S54 Rod Bearing Failure (2001-2002)",
         "symptoms": "Knocking or rumbling noise from the engine, particularly when cold; metallic debris in the oil; sudden engine seizure.",
-        "typicalMileage": "60,000–100,000 miles",
-        "repairCost": "£1,500–£3,000 (rod bearing replacement)",
-        "replacementCost": "£5,000–£12,000 (full engine replacement if bearings fail)",
+        "typicalMileage": "60,000-100,000 miles",
+        "repairCost": "£1,500-£3,000 (rod bearing replacement)",
+        "replacementCost": "£5,000-£12,000 (full engine replacement if bearings fail)",
         "urgency": {
           "icon": "🔴",
           "label": "Immediate",
@@ -319,8 +319,8 @@
         "id": 3,
         "title": "Oil Leaks (S50 & S54)",
         "symptoms": "Oil spots under the vehicle, burning oil smell, drop in oil level, visible oil residue on the engine.",
-        "typicalMileage": "60,000–100,000+ miles",
-        "repairCost": "£300–£800 (gasket replacement - valve cover, oil pan, rear main seal)",
+        "typicalMileage": "60,000-100,000+ miles",
+        "repairCost": "£300-£800 (gasket replacement - valve cover, oil pan, rear main seal)",
         "replacementCost": "N/A - repair only",
         "urgency": {
           "icon": "🟡",
@@ -357,25 +357,25 @@
         {
           "problem": "VANOS failure",
           "repairable": "✅ Yes",
-          "typicalCost": "£400–£1,200",
+          "typicalCost": "£400-£1,200",
           "whenItMakesSense": "Rebuild with upgraded seals - permanent fix"
         },
         {
           "problem": "S54 rod bearing wear",
           "repairable": "✅ Yes",
-          "typicalCost": "£1,500–£3,000",
+          "typicalCost": "£1,500-£3,000",
           "whenItMakesSense": "Catch it early - prevent catastrophic failure"
         },
         {
           "problem": "Oil leaks",
           "repairable": "✅ Yes",
-          "typicalCost": "£300–£800",
+          "typicalCost": "£300-£800",
           "whenItMakesSense": "Routine maintenance - do preventatively"
         },
         {
           "problem": "Cooling system failure",
           "repairable": "✅ Yes",
-          "typicalCost": "£500–£1,200",
+          "typicalCost": "£500-£1,200",
           "whenItMakesSense": "Replace water pump, thermostat and radiator preventatively"
         },
         {
@@ -389,8 +389,8 @@
     "buyingChecks": {
       "title": "Buying This Z3 M? Check These First",
       "buyIf": [
-        "* S50 (1997–2000): VANOS rebuilt with upgraded seals",
-        "* S54 (2001–2002): rod bearing recall work completed or replaced preventatively",
+        "* S50 (1997-2000): VANOS rebuilt with upgraded seals",
+        "* S54 (2001-2002): rod bearing recall work completed or replaced preventatively",
         "* No blue smoke on startup - valve stem seals in good condition",
         "* Full BMW service history with correct 10W‑60 oil for S54"
       ],
@@ -401,7 +401,7 @@
         "* Poor service history - these engines are sensitive to neglect"
       ]
     },
-    "closingVerdict": "The Z3 M is one of BMW's most characterful and rewarding sports cars - a skunkworks project that delivered a raw, analogue driving experience. The S50 is the more affordable entry point with manageable VANOS watchpoints; the S54 is the ultimate incarnation with 321–325 bhp but demands rod bearing vigilance. Both are appreciating modern classics, and the coupé is particularly rare with just 1,112 built. Buy on full service history, budget for preventative maintenance, and never ignore a rattle or knock.",
+    "closingVerdict": "The Z3 M is one of BMW's most characterful and rewarding sports cars - a skunkworks project that delivered a raw, analogue driving experience. The S50 is the more affordable entry point with manageable VANOS watchpoints; the S54 is the ultimate incarnation with 321-325 bhp but demands rod bearing vigilance. Both are appreciating modern classics, and the coupé is particularly rare with just 1,112 built. Buy on full service history, budget for preventative maintenance, and never ignore a rattle or knock.",
     "cta": {
       "label": "→ Compare Z3 M engine prices before you buy",
       "href": "/quote"
@@ -431,22 +431,22 @@
     "rows": [
       {
         "engineCode": "S50B32 (3.2 straight‑six)",
-        "years": "1997–2000",
+        "years": "1997-2000",
         "power": "317 bhp (321 PS) @ 7,400 rpm; 350 Nm @ 3,250 rpm",
         "enquiries": "- (pattern data)",
-        "avgReconCost": "£4,000–£7,000 [PLACEHOLDER]"
+        "avgReconCost": "£4,000-£7,000 [PLACEHOLDER]"
       },
       {
         "engineCode": "S54B32 (3.2 straight‑six)",
-        "years": "2001–2002",
-        "power": "321–325 bhp @ 7,400 rpm; 350–354 Nm @ 4,900 rpm",
+        "years": "2001-2002",
+        "power": "321-325 bhp @ 7,400 rpm; 350-354 Nm @ 4,900 rpm",
         "enquiries": "- (pattern data)",
-        "avgReconCost": "£5,000–£9,000 [PLACEHOLDER]"
+        "avgReconCost": "£5,000-£9,000 [PLACEHOLDER]"
       }
     ],
     "matchNote": "This table's rows match Section 1B's Era Map exactly.",
     "technicalSpecs": {
-      "title": "Technical Specs (S54B32 3.2 straight‑six, 2001–2002):",
+      "title": "Technical Specs (S54B32 3.2 straight‑six, 2001-2002):",
       "items": [
         {
           "label": "* Displacement",
@@ -470,7 +470,7 @@
         },
         {
           "label": "* Redline",
-          "value": "7,900–8,000 rpm"
+          "value": "7,900-8,000 rpm"
         },
         {
           "label": "* Engine Oil Spec",
@@ -491,11 +491,11 @@
       },
       {
         "label": "Average Enquiry Mileage",
-        "value": "60,000–80,000 miles【PATTERN DATA】"
+        "value": "60,000-80,000 miles【PATTERN DATA】"
       },
       {
         "label": "Average Replacement Cost",
-        "value": "£5,500–£7,500 reconditioned, supply only【PLACEHOLDER - confirm vs cost sheet】"
+        "value": "£5,500-£7,500 reconditioned, supply only【PLACEHOLDER - confirm vs cost sheet】"
       },
       {
         "label": "Most Requested Engine Code",
@@ -516,12 +516,12 @@
       {
         "id": 1,
         "question": "How much does a BMW Z3 M engine replacement cost in the UK?",
-        "answer": "A reconditioned S50B32 typically costs £4,000–£7,000 supply only, with the S54B32 higher at £5,000–£9,000. Fitting adds £1,000–£1,600. Use our calculator for a figure specific to your Z3 M."
+        "answer": "A reconditioned S50B32 typically costs £4,000-£7,000 supply only, with the S54B32 higher at £5,000-£9,000. Fitting adds £1,000-£1,600. Use our calculator for a figure specific to your Z3 M."
       },
       {
         "id": 2,
         "question": "Is the BMW Z3 M engine reliable?",
-        "answer": "It depends which engine your Z3 M has. The S50 (1997–2000) is generally reliable but the VANOS seals are a known weakness. The S54 (2001–2002) delivers more power but had a rod bearing recall - if this work has been done, it's a robust and rewarding engine. Check the Era Map above for your specific car."
+        "answer": "It depends which engine your Z3 M has. The S50 (1997-2000) is generally reliable but the VANOS seals are a known weakness. The S54 (2001-2002) delivers more power but had a rod bearing recall - if this work has been done, it's a robust and rewarding engine. Check the Era Map above for your specific car."
       },
       {
         "id": 3,
@@ -531,17 +531,17 @@
       {
         "id": 4,
         "question": "Is it worth replacing a Z3 M engine, or should I scrap the car?",
-        "answer": "Depends on vehicle value. Z3 M values range from £18,000 for a roadster to over £60,000 for a concours coupé. A £5,000–£8,000 recon is 8–44% of the car's value - making replacement a clear decision for most examples. This is well within our 70% BMW scrap threshold."
+        "answer": "Depends on vehicle value. Z3 M values range from £18,000 for a roadster to over £60,000 for a concours coupé. A £5,000-£8,000 recon is 8-44% of the car's value - making replacement a clear decision for most examples. This is well within our 70% BMW scrap threshold."
       },
       {
         "id": 5,
         "question": "How do I find my BMW Z3 M engine code?",
-        "answer": "Listed on the VIN plate and vehicle documentation. The Z3 M covers S50B32 (1997–2000) and S54B32 (2001–2002). Tell us your registration date and we'll confirm which one you have for free."
+        "answer": "Listed on the VIN plate and vehicle documentation. The Z3 M covers S50B32 (1997-2000) and S54B32 (2001-2002). Tell us your registration date and we'll confirm which one you have for free."
       },
       {
         "id": 6,
         "question": "Can I prevent the common failures on a Z3 M?",
-        "answer": "On S50: have the VANOS rebuilt with upgraded seals. On S54: have the rod bearings replaced preventatively - this is the single most important investment you can make. Both engines benefit from 5,000–7,500‑mile oil changes with the correct oil (10W‑60 for S54). At the first sign of rattle, knock or loss of power, book an inspection immediately."
+        "answer": "On S50: have the VANOS rebuilt with upgraded seals. On S54: have the rod bearings replaced preventatively - this is the single most important investment you can make. Both engines benefit from 5,000-7,500‑mile oil changes with the correct oil (10W‑60 for S54). At the first sign of rattle, knock or loss of power, book an inspection immediately."
       }
     ],
     "disclaimer": "All prices are indicative UK market ranges based on historical quote data from our network of engine specialists. Actual costs vary by variant, engine code, damage severity and workshop location. Use our free comparison tool to get tailored quotes. Every engine supplied through EnginesMarket carries a minimum 12‑month unlimited‑mileage warranty - always confirm terms with your chosen supplier."

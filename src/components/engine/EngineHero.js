@@ -4,6 +4,7 @@ import { Fragment } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import ui from "@/data/shared/enginePageUi.json";
+import HeroRegQuoteForm from "@/components/shared/HeroRegQuoteForm";
 import { BmwRoundel, CARD, DataText, EIcon, SECTION_CLASS, useEngineTone } from "./engineUi";
 import { cleanText, codeVariants, hasPlaceholder, normHyphen, splitFigure, splitTags, stripTags } from "./engineText";
 
@@ -398,8 +399,13 @@ export default function EngineHero({ data, facts = {}, engineImage, heroCar }) {
   const code = facts.code || "";
   const items = pillItems(data.tagPill, facts);
   const cards = statCards(data, facts);
-  const ctaLabel = cleanText((data.primaryCta?.label || fill(T.ctaFallback, { code })).replace(/\s*(?:→|â†’|->)\s*$/, ""));
-  const ctaHref = data.primaryCta?.href || T.ctaHref;
+  const ctaLabel = cleanText(
+    (data.primaryCta?.label || fill(T.ctaFallback || "Explore {code} Engine Replacement Options", { code })).replace(
+      /\s*(?:→|â†’|->)\s*$/,
+      "",
+    ),
+  );
+  const ctaHref = data.primaryCta?.href || T.ctaHref || "/quote";
   // Fold steps (1536×864): a 4-line H1 or a long lead tightens the H1 → lead → cards gaps; with no engine
   // to its right the pill may run wider than the text column (the car sits below it, see HeroVisual).
   const tight = titleWeight(titleText(data.h1)) > 61 || leadLength(data.subHeadline) > 240;
@@ -462,13 +468,12 @@ export default function EngineHero({ data, facts = {}, engineImage, heroCar }) {
           ))}
         </ul>
 
-        <Link
-          href={ctaHref}
-          className="relative z-10 mt-4 flex min-h-[46px] w-full items-center justify-center gap-3 rounded-[8px] px-5 py-3 text-[15px] font-semibold uppercase leading-[1.25] text-[var(--eg-cta-text)] shadow-[0_10px_28px_rgba(26,92,240,0.3)] [background:var(--eg-cta)] md:mt-6 md:inline-flex md:w-auto md:px-8 md:text-[16px] lg:min-h-[56px] lg:text-[17px] xl:mt-6 xl:min-h-[61px] xl:px-10 xl:text-[19px]"
-        >
-          <span className="min-w-0 text-center">{ctaLabel}</span>
-          <EIcon name="arrow-right" strokeWidth={2} className="h-5 w-5 shrink-0 xl:h-6 xl:w-6" />
-        </Link>
+        <HeroRegQuoteForm
+          className="relative z-10 mt-4 md:mt-6 xl:mt-6"
+          buttonLabel={ctaLabel || `Explore ${code} Engine Replacement Options`}
+          fallbackHref={ctaHref}
+          buttonClassName="!shadow-[0_10px_28px_rgba(26,92,240,0.3)] ![background:var(--eg-cta)] !text-[var(--eg-cta-text,#fff)] uppercase"
+        />
 
         <TrustBar />
       </div>
