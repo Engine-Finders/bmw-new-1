@@ -92,20 +92,20 @@ const HTML = "[&_a]:[font-weight:inherit] [&_a]:text-inherit hover:[&_a]:underli
 
 const stripTags = (value = "") => String(value ?? "").replace(/<[^>]*>/g, "");
 
-// " -text" / " - text" / " – text" -> " — text" (ranges such as "£2,500–£5,000" have no spaces and stay as they are)
+// " -text" / " - text" / " – text" -> " - text" (ranges such as "£2,500–£5,000" have no spaces and stay as they are)
 function dash(value = "") {
-  return String(value ?? "").replace(/\s+-\s*(?=\S)|\s+–\s+/g, " — ");
+  return String(value ?? "").replace(/\s+-\s*(?=\S)|\s+–\s+/g, " - ");
 }
 
 // "Risk vs Reward -budget for chain history…" -> lead + the rest.
 function splitLead(value = "") {
-  const match = dash(value).match(/^(.*?)\s+—\s+(.*)$/);
+  const match = dash(value).match(/^(.*?)\s+-\s+(.*)$/);
   return match ? { lead: match[1].trim(), rest: match[2].trim() } : { lead: "", rest: dash(value) };
 }
 
 // "BMW 3 Series E90 - Ownership Economics" -> "BMW 3 Series E90" + "Ownership Economics".
 function splitTitle(value = "") {
-  const match = dash(value).match(/^(.*?)\s+—\s+(.*)$/);
+  const match = dash(value).match(/^(.*?)\s+-\s+(.*)$/);
   return match ? { main: match[1], accent: match[2] } : { main: dash(value), accent: "" };
 }
 
@@ -516,7 +516,7 @@ function EconomicsTable({ columns, rows }) {
                             style={{ "--verdict": `var(--oe-${kind}-text)` }}
                             dangerouslySetInnerHTML={{ __html: softBreaks(verdict.lead) }}
                           />{" "}
-                          — <span dangerouslySetInnerHTML={{ __html: softBreaks(verdict.rest) }} />
+                          - <span dangerouslySetInnerHTML={{ __html: softBreaks(verdict.rest) }} />
                         </>
                       ) : (
                         <span dangerouslySetInnerHTML={{ __html: softBreaks(verdict.rest) }} />
@@ -584,7 +584,7 @@ function Takeaways({ items }) {
                         style={{ "--lead": `var(--oe-${kind === "info" ? "value" : kind}-text)` }}
                         dangerouslySetInnerHTML={{ __html: answer.lead }}
                       />{" "}
-                      — <span dangerouslySetInnerHTML={{ __html: answer.rest }} />
+                      - <span dangerouslySetInnerHTML={{ __html: answer.rest }} />
                     </>
                   ) : (
                     <span dangerouslySetInnerHTML={{ __html: answer.rest }} />
@@ -609,9 +609,9 @@ export default function OwnershipEconomics({ data , band }) {
   const vars = { ...TONES[isDark ? "dark" : "light"], ...(band ? { "--oe-bg": bandColor(isDark, band) } : {}) };
   const title = splitTitle(data.h2 || UI.eyebrow || "Ownership Economics");
   // Wide desktops set the title on one line beside the car, as in the design, when it fits there
-  // ("BMW 3 Series E90 — Ownership Economics"); longer ones ("BMW 2 Series Active Tourer F45 — …") keep two lines
+  // ("BMW 3 Series E90 - Ownership Economics"); longer ones ("BMW 2 Series Active Tourer F45 - …") keep two lines
   // and get a taller car beside them.
-  const oneLine = stripTags(`${title.main} — ${title.accent}`).length <= 38;
+  const oneLine = stripTags(`${title.main} - ${title.accent}`).length <= 38;
   const columns = data.columns || [];
   const rows = (data.rows || []).filter((row) => row && row.engine);
   const takeaways = data.keyTakeaways || [];
@@ -622,7 +622,7 @@ export default function OwnershipEconomics({ data , band }) {
         <div className={`relative pb-3 md:pb-7 lg:pb-[30px] ${SCENE_VARS} ${oneLine ? "min-[1440px]:[--oe-h:272px]" : "min-[1440px]:[--oe-h:300px]"} min-[1440px]:[--oe-over:28px]`}>
           <Scene data={data} isDark={isDark} />
           <div className="relative z-10 md:max-w-[calc(100%_-_(var(--oe-car-w)*var(--oe-h)_-_var(--oe-over))_-_28px)]" style={{ "--oe-car-w": CAR_W.toFixed(4) }}>
-            {/* Phones: the heading keeps to the design's measure left of the car ("BMW 3 Series E90 —" / "Ownership
+            {/* Phones: the heading keeps to the design's measure left of the car ("BMW 3 Series E90 -" / "Ownership
                 Economics"); longer titles wrap to a third line rather than run across the car */}
             <p className="flex items-center gap-2 text-[12px] font-medium uppercase leading-[1.3] tracking-[0.02em] text-[var(--oe-blue)] [text-shadow:var(--oe-halo)] md:gap-2.5 md:text-[15px] md:leading-normal md:tracking-[0.03em] md:[text-shadow:none] xl:text-[16px]">
               <span aria-hidden="true" className="h-[2px] w-5 bg-[var(--oe-blue)] md:hidden" />
@@ -632,7 +632,7 @@ export default function OwnershipEconomics({ data , band }) {
               <span dangerouslySetInnerHTML={{ __html: title.main }} />
               {title.accent ? (
                 <>
-                  {" —"}
+                  {" -"}
                   <br className={oneLine ? "min-[1440px]:hidden" : ""} />
                   <span className={oneLine ? "hidden min-[1440px]:inline" : "hidden"}> </span>
                   <span dangerouslySetInnerHTML={{ __html: title.accent }} />

@@ -310,7 +310,7 @@ export default function CostGuide({ data, facts, engineLabel = "BMW Engine" }) {
   const longest = Math.max(0, ...rows.flatMap((row) => [priceOf(row.supplyOnly).price.length, priceOf(row.fittedIndie).price.length]));
   const indent = indentFor(longest);
 
-  // Wide (≥1440): one row — intro | price cards | CTA. 4 cards → 2×2 between intro and CTA. Below that the intro spans the row.
+  // Wide (≥1440): one row - intro | price cards | CTA. 4 cards → 2×2 between intro and CTA. Below that the intro spans the row.
   const wideCols = n === 0 ? "minmax(0,2fr) minmax(0,1fr)" : n <= 3 ? `26fr repeat(${n}, 17.5fr) 16fr` : "26fr 17fr 17fr 16fr";
   const tall = n > 3 ? "min-[1440px]:row-span-2 min-[1440px]:row-start-1" : "";
   const ctaMd = n % 2 === 1 ? "" : "md:max-lg:col-span-2";

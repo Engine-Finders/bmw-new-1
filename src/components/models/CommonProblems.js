@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Inter } from "next/font/google";
 import { useTheme } from "@/components/shared/themeProvider";
+import SectionQuoteCta, { bmwContextLabel, modelCtaCopy } from "@/components/shared/SectionQuoteCta";
 import s from "./CommonProblems.module.css";
 import CommonProblemsLegacy from "./CommonProblemsLegacy";
 
@@ -182,6 +183,17 @@ function CommonProblemsReference({ data }) {
           </div>
 
           <UrgencyKey title={data.urgencyTitle || "URGENCY KEY"} items={data.urgencyKey} />
+          {(() => {
+            const copy = modelCtaCopy(bmwContextLabel("", data.h2));
+            return (
+              <SectionQuoteCta
+                className="!mt-6"
+                label={copy.problemsLabel}
+                supportText={copy.problemsSupport}
+                href="/quote"
+              />
+            );
+          })()}
         </div>
       </div>
     </section>

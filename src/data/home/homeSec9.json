@@ -229,5 +229,10 @@
   ],
   "subHeadlineDesktop": "A permanent, categorised reference - not symptom-chasing blog posts.\nEvery entry links to a full breakdown of symptoms, root cause, mileage window,\nrepair cost, and replacement cost.",
   "subHeadlinePhone": "A permanent, categorised reference - not symptom-chasing\nblog posts. Every entry links to a full breakdown of symptoms,\nroot cause, mileage window, repair cost, and replacement cost.",
-  "h2Phone": "<span class=\"block\">The BMW</span><span class=\"block heading-accent\">Failure Database</span>"
+  "h2Phone": "<span class=\"block\">The BMW</span><span class=\"block heading-accent\">Failure Database</span>",
+  "sectionCta": {
+    "label": "Diagnose BMW Engine Problems",
+    "support": "Experiencing similar symptoms? Explore possible causes and understand the next steps.",
+    "href": "/quote"
+  }
 }

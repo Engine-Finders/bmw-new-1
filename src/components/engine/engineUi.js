@@ -71,7 +71,7 @@ export const TONES = {
   },
 };
 
-/** { isDark, vars } — spread `vars` on the section's `style` so every --eg-* token resolves. */
+/** { isDark, vars } - spread `vars` on the section's `style` so every --eg-* token resolves. */
 export function useEngineTone() {
   const { theme } = useTheme();
   const isDark = theme === "dark";
@@ -122,7 +122,7 @@ export function Accent({ text = "", accent = "", className = "text-[var(--eg-blu
 
 /* ------------------------------------------------------------- elements */
 
-/** "— LABEL" (default) or "— LABEL —" (`both`). Size/weight come from className. */
+/** "- LABEL" (default) or "- LABEL -" (`both`). Size/weight come from className. */
 export function Eyebrow({ children, both = false, className = "t-label font-semibold", lineClassName = "w-[30px]" }) {
   const line = <span aria-hidden className={`h-[2px] shrink-0 rounded-full bg-[var(--eg-blue)] ${lineClassName}`} />;
   return (

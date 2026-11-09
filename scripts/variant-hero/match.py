@@ -5,7 +5,7 @@ ROOT = '/Users/mac/Downloads/BMW'
 SRC = '/Users/mac/Downloads/uk/bmw split'
 pages = json.load(open(f'{ROOT}/src/data/registery/variants/pages.json'))
 VIEWS = ['45-angle-front', 'front', 'flat-side']
-RX = re.compile(r'^bmw-(?P<model>[^-]+)-(?P<gen>.+?)-(?P<trim>[^-]+)-(?P<body>.+?)-(?P<years>\d{4}(?:–\d{4}|–)?)-(?P<kind>new|special|group)-(?P<colour>[^-]+)-(?P<short>.+?)-(?P<view>45-angle-front|front|back|flat-side)-view\.webp$')
+RX = re.compile(r'^bmw-(?P<model>[^-]+)-(?P<gen>.+?)-(?P<trim>[^-]+)-(?P<body>.+?)-(?P<years>\d{4}(?:-\d{4}|-)?)-(?P<kind>new|special|group)-(?P<colour>[^-]+)-(?P<short>.+?)-(?P<view>45-angle-front|front|back|flat-side)-view\.webp$')
 
 cars = []
 for f in os.listdir(SRC):
@@ -86,7 +86,7 @@ for p in pages:
     model = model_of(p['parent'])
     codes = codes_of(p, data)
     gens = gens_of(data)
-    ym = re.findall(r'(\d{4})\s*[–-]\s*(\d{4}|present)', strip(data.get('hero', {}).get('tagPill')))
+    ym = re.findall(r'(\d{4})\s*[--]\s*(\d{4}|present)', strip(data.get('hero', {}).get('tagPill')))
     years = (int(ym[0][0]), 2026 if ym[0][1] == 'present' else int(ym[0][1])) if ym else (0, 0)
     best = None
     for c in cars:

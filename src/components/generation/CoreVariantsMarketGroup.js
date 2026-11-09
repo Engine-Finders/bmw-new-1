@@ -67,7 +67,7 @@ const LABELS = {
 const HTML = "[&_a]:[font-weight:inherit] [&_a]:text-inherit hover:[&_a]:underline";
 
 function dash(value = "") {
-  return String(value ?? "").replace(/\s+-\s*(?=\S)/g, " — ").replace(/‑/g, "-");
+  return String(value ?? "").replace(/\s+-\s*(?=\S)/g, " - ").replace(/‑/g, "-");
 }
 
 const plainLength = (value = "") => String(value ?? "").replace(/<[^>]*>/g, "").length;
@@ -83,11 +83,11 @@ const breakSlashes = (html = "") =>
 const unnumber = (value = "") => String(value ?? "").replace(/^\s*\d+[.)]\s+/, "").replace(/\.\s*$/, "");
 
 // "N47D20C (largest share of 1,450 JLR-wide figure)" -> "N47D20C" over its note, as in the design; so are
-// "BMW 440i — based on model-level request data [BMW-VERIFIED]" and "318is [PATTERN DATA]".
+// "BMW 440i - based on model-level request data [BMW-VERIFIED]" and "318is [PATTERN DATA]".
 function splitNote(value = "") {
   const text = String(value ?? "");
-  const match = text.match(/^(.+?)\s+((?:\(|—|–|\[).*)$/);
-  return match ? { main: match[1], note: match[2].replace(/^[—–]\s*/, "") } : { main: text, note: "" };
+  const match = text.match(/^(.+?)\s+((?:\(|-|–|\[).*)$/);
+  return match ? { main: match[1], note: match[2].replace(/^[-–]\s*/, "") } : { main: text, note: "" };
 }
 
 // "reconditioned, supply only [BMW-QUOTE]" -> text + tag.
@@ -592,7 +592,7 @@ function LiveFeed({ rows, isDark, side }) {
           );
         })}
       </div>
-      {/* Phones: one row per enquiry — photo, vehicle, place and issue, with the count at the right */}
+      {/* Phones: one row per enquiry - photo, vehicle, place and issue, with the count at the right */}
       <ul className="mt-3 md:hidden">
         {rows.map((row, index) => {
           const count = splitCount(row.enquiries);

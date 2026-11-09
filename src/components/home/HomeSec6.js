@@ -7,6 +7,7 @@ import { useTheme } from "@/components/shared/themeProvider";
 import { MobileCard, MobileHeading, MobileLabel, MobileLead, MobileSection } from "@/components/home/mobileKit";
 import BrandIcon from "@/components/home/brandIcon";
 import VerdictGlyph from "@/components/home/VerdictGlyph";
+import SectionQuoteCta from "@/components/shared/SectionQuoteCta";
 
 // Ownership Economics Centre - decision matrix (left), rule of thumb + deeper links (right),
 // and a four-item trust strip underneath. Phone stacks them and ends with the promise card.
@@ -197,6 +198,14 @@ function Desktop({ data, isDark }) {
                 </span>
               </div>
               <p className="t-body mt-4" style={{ color: C.note }}>{rule.note}</p>
+              {data.sectionCta ? (
+                <SectionQuoteCta
+                  className="!mt-5"
+                  label={data.sectionCta.label}
+                  supportText={data.sectionCta.support}
+                  href={data.sectionCta.href || "/quote"}
+                />
+              ) : null}
             </div>
 
             {/* Deeper analysis links */}
@@ -348,6 +357,14 @@ function Phone({ data, isDark }) {
           {rest.join(rule.percent)}
         </p>
         <p className="mt-3 text-[15px] leading-[1.6]" style={{ color: C.note }}>{rule.note}</p>
+        {data.sectionCta ? (
+          <SectionQuoteCta
+            className="!mt-4"
+            label={data.sectionCta.label}
+            supportText={data.sectionCta.support}
+            href={data.sectionCta.href || "/quote"}
+          />
+        ) : null}
       </div>
 
       {/* Deeper analysis links */}

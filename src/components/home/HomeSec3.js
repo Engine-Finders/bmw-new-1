@@ -702,6 +702,9 @@ function ResultsScreen({ diagnosis, verdict, engineOption, ctas, isDark, calcula
               </ul>
 
               <div className="mt-5 grid gap-3">
+                {ctas.quote?.support ? (
+                  <p className={`t-label leading-[1.45] ${isDark ? "text-white/72" : "text-[#27384a]"}`}>{ctas.quote.support}</p>
+                ) : null}
                 <button
                   type="button"
                   onClick={goToQuoteWithCalculator}

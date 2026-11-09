@@ -9,6 +9,28 @@ export const metadata = {
   metadataBase: new URL("https://bmwengines.uk/"),
   title: "BMW Reliability Guide",
   description: "The UK's Most Trusted BMW Ownership Guide",
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/png/Icon.webp", type: "image/webp" },
+    ],
+    shortcut: "/png/Icon.webp",
+    apple: "/png/Icon.webp",
+  },
+  openGraph: {
+    images: [
+      {
+        url: "/png/123.webp",
+        width: 1734,
+        height: 907,
+        alt: "BMW Reliability Guide",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    images: ["/png/123.webp"],
+  },
   robots: {
     index: true,
     follow: true,

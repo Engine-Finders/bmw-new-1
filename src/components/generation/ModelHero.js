@@ -1,9 +1,10 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
 import { useTheme } from "@/components/shared/themeProvider";
 import { variantFont as heroFont } from "@/components/variant/variantFont";
+import HeroRegQuoteForm from "@/components/shared/HeroRegQuoteForm";
+import { bmwContextLabel, modelCtaCopy } from "@/components/shared/SectionQuoteCta";
 import ui from "@/data/shared/generationPageUi.json";
 
 // Hero backgrounds sampled from the designs: a near-white wash in light, deep navy in dark.
@@ -135,9 +136,9 @@ const STAT_ICONS = {
   phone: ["bars", "car", "engine", "trophyStar"],
 };
 
-// "BMW 3 Series E90 Engines -The Complete UK Guide" -> "… Engines — The Complete UK Guide".
+// "BMW 3 Series E90 Engines -The Complete UK Guide" -> "… Engines - The Complete UK Guide".
 function dash(value = "") {
-  return String(value ?? "").replace(/\s+-\s*(?=\S)/g, " — ");
+  return String(value ?? "").replace(/\s+-\s*(?=\S)/g, " - ");
 }
 
 // One paragraph per sentence, as in the designs.
@@ -309,8 +310,7 @@ export default function ModelHero({ data }) {
   // The model's line-up scene (several cars across the frame) when this generation has no photo of its own.
   const lineup = Boolean(!data.image && scene?.lineup);
   const bg = isDark ? HERO_BG.dark : HERO_BG.light;
-  const cta = data.primaryCta;
-  const ctaLabel = cta ? String(cta.label || "").replace(/\s*→\s*$/, "") : "";
+  const copy = modelCtaCopy(bmwContextLabel(data.tagPill, data.h1));
 
   const phone = tall
     ? { src: tall, ...phoneFrame(PHONE_ART.own) }
@@ -420,15 +420,12 @@ export default function ModelHero({ data }) {
         ) : null}
 
         <div className="relative z-10">
-          {cta ? (
-            <Link
-              href={cta.href || "/quote"}
-              className={`${wide ? "mt-0 md:mt-2" : "mt-7"} flex h-[52px] w-full items-center justify-center gap-3 rounded-[8px] bg-[linear-gradient(180deg,#0662ec_0%,#004bc7_100%)] px-6 text-[18px] font-medium text-white shadow-[0_10px_24px_rgba(4,80,200,0.26)] transition hover:brightness-110 md:h-auto md:w-fit md:px-9 md:py-3.5 lg:rounded-[4px] lg:py-3.5 lg:text-[19px] xl:mt-10`}
-            >
-              <span dangerouslySetInnerHTML={{ __html: ctaLabel }} />
-              <Icon name="arrow" strokeWidth={2.2} className="h-5 w-5 shrink-0" />
-            </Link>
-          ) : null}
+          <HeroRegQuoteForm
+            className={`${wide ? "mt-0 md:mt-2" : "mt-7"} xl:mt-10`}
+            buttonLabel={copy.heroButton}
+            fallbackHref="/quote"
+            buttonClassName="!bg-[linear-gradient(180deg,#0662ec_0%,#004bc7_100%)] shadow-[0_10px_24px_rgba(4,80,200,0.26)]"
+          />
 
           {data.trustStrip?.length ? (
             <>

@@ -23,9 +23,12 @@
       "label": "Engine Finders"
     }
   ],
+  "registrationInput": {
+    "placeholder": "Your Reg"
+  },
   "cta": {
-    "label": "START YOUR RESEARCH",
-    "tagline": "UNBIASED. DATA-DRIVEN. TRUSTED BY THOUSANDS.",
+    "label": "Explore BMW Engine Replacement Options",
+    "tagline": "Enter your registration to explore engine replacement options relevant to your BMW.",
     "href": "/quote"
   },
   "trustBadges": [

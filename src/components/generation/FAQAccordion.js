@@ -53,7 +53,7 @@ const TONES = {
 const HTML = "[&_a]:[font-weight:inherit] [&_a]:text-[var(--fq-blue)] [&_a]:underline-offset-2 hover:[&_a]:underline";
 
 function dash(value = "") {
-  return String(value ?? "").replace(/\s+-\s*(?=\S)/g, " — ");
+  return String(value ?? "").replace(/\s+-\s*(?=\S)/g, " - ");
 }
 
 // Data tags ("[BMW-QUOTE]") in blue, as in the other sections; one-word tags never break.
@@ -162,9 +162,9 @@ export default function FAQAccordion({ data, generationCode = "" , band }) {
   // Band colour from the page (sections alternate plain / tinted); the design colour when none is given.
 
   const vars = { ...TONES[theme === "dark" ? "dark" : "light"], ...(band ? { "--fq-bg": bandColor(theme === "dark", band), "--fq-top": bandColor(theme === "dark", band) } : {}) };
-  // "FAQ - BMW E90" -> "FAQ — BMW E90"; a bare "FAQ" gets the generation when the page passes it.
+  // "FAQ - BMW E90" -> "FAQ - BMW E90"; a bare "FAQ" gets the generation when the page passes it.
   const h2 = dash(data.h2 || "FAQ").trim();
-  const title = /^FAQs?$/i.test(h2) && generationCode ? `${h2} — BMW ${generationCode}` : h2;
+  const title = /^FAQs?$/i.test(h2) && generationCode ? `${h2} - BMW ${generationCode}` : h2;
   // Desktop: first half in the left column, the rest in the right (5 + 5 for ten questions).
   const mid = Math.ceil(items.length / 2);
   const columns = [items.slice(0, mid), items.slice(mid)].filter((column) => column.length);

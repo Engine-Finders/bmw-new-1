@@ -1501,7 +1501,7 @@
   }
 }
 
-/* Phones: stacked — head, quote, then the car on its stage */
+/* Phones: stacked - head, quote, then the car on its stage */
 @media (max-width: 639px) {
   .pq {
     grid-template-columns: minmax(0, 1fr);

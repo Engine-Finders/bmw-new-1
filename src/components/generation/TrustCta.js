@@ -310,7 +310,13 @@ export default function TrustCta({ data , band }) {
   const final = splitFinal(data.finalCta);
   const points = data.trustPoints || [];
   const button = data.ctaButton;
-  const label = stripTags(button?.label).replace(/\s*→\s*$/, "").trim();
+  // Prefer doc CTA wording derived from the section H2 / generation context.
+  const fromH2 = String(data.h2 || "").replace(/^Why UK\s+/i, "").replace(/\s+Owners Trust.*$/i, "").trim();
+  const trustLabel = fromH2 ? `Get a ${/^BMW\b/i.test(fromH2) ? fromH2 : `BMW ${fromH2}`} Engine Quote` : "";
+  const trustSupport = fromH2
+    ? `Request a specialist quote based on your ${fromH2.replace(/^BMW\s+/i, "")} engine, vehicle details and replacement requirements.`
+    : "";
+  const label = trustLabel || stripTags(button?.label).replace(/\s*→\s*$/, "").trim();
   // The page's own artwork (E90: its car already in the studio), else the studio with this generation's car.
   const art = data.art;
   const plate = art ? (isDark ? art.dark || art.light : art.light || art.dark) : plateSrc(isDark);
@@ -382,10 +388,13 @@ export default function TrustCta({ data , band }) {
               <span className="flex h-[76px] w-[76px] shrink-0 items-center justify-center rounded-full bg-[radial-gradient(circle,rgba(29,118,239,0.22)_0%,transparent_70%)] text-[var(--tc-icon)] ring-1 ring-[var(--tc-disc-ring)] md:h-[88px] md:w-[88px] lg:h-auto lg:w-auto lg:bg-none lg:ring-0">
                 <Icon name="rosette" strokeWidth={1.4} className="h-11 w-11 md:h-12 md:w-12 lg:h-[76px] lg:w-[76px] xl:h-[88px] xl:w-[88px]" />
               </span>
-              {final.lead ? (
+              {final.lead || trustSupport ? (
                 <p className="min-w-0 text-[15px] leading-[1.55] text-[var(--tc-muted)] md:text-[16px] lg:text-[17px] xl:text-[18px]">
-                  <span className="block text-[17px] font-medium leading-[1.4] text-[var(--tc-text)] md:text-[19px] lg:text-[19px] xl:text-[21px]">{final.lead}</span>
-                  {final.rest ? <span className="mt-1 block">{final.rest}</span> : null}
+                  <span className="block text-[17px] font-medium leading-[1.4] text-[var(--tc-text)] md:text-[19px] lg:text-[19px] xl:text-[21px]">
+                    {final.lead || trustSupport}
+                  </span>
+                  {final.rest && !trustSupport ? <span className="mt-1 block">{final.rest}</span> : null}
+                  {trustSupport && final.lead ? <span className="mt-1 block">{trustSupport}</span> : null}
                 </p>
               ) : null}
             </div>

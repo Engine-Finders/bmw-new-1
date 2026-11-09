@@ -195,7 +195,7 @@ function ScoreValue({ score, compact = false }) {
   );
 }
 
-/** Row 1: Engine Family, Fuel, Power Range, Engine Score — disc top-left, text centred beside it. */
+/** Row 1: Engine Family, Fuel, Power Range, Engine Score - disc top-left, text centred beside it. */
 function StatCard({ item, facts }) {
   const { text, tags } = splitTags(item.value);
   let body;

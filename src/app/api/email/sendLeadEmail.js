@@ -2,7 +2,7 @@ import { Resend } from "resend";
 import { LEAD_SOURCE } from "@/app/api/crm/sendLeadToCRM";
 
 /**
- * Lead notification email (Resend) — universal lead email template.
+ * Lead notification email (Resend) - universal lead email template.
  * Recipient is hardcoded - do not move to env.
  */
 const LEAD_TO_EMAIL = "ef2crm@gmail.com";
@@ -309,7 +309,7 @@ function buildLeadEmailHtml({ lead, leadReference, receivedUk }) {
 function buildLeadEmailText({ lead, leadReference, receivedUk }) {
   const line = (label, value) => `${label}: ${displayOrNotProvided(value)}`;
   return [
-    `New Quote Request — ${SITE_NAME}`,
+    `New Quote Request - ${SITE_NAME}`,
     SITE_DOMAIN,
     `A new enquiry has been submitted from ${lead.source_site || SITE_DOMAIN}${lead.source_page ? ` · Page: ${lead.source_page}` : ""}.`,
     "",
@@ -360,7 +360,7 @@ export async function sendLeadEmail(payload) {
       payload.calculator.verdict && `Verdict: ${payload.calculator.verdict}`,
     ].filter(Boolean);
     if (calcBits.length) {
-      lead.additional_information = [lead.additional_information, `Calculator — ${calcBits.join(" · ")}`]
+      lead.additional_information = [lead.additional_information, `Calculator - ${calcBits.join(" · ")}`]
         .filter(Boolean)
         .join("\n");
     }

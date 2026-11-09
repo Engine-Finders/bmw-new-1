@@ -5,6 +5,7 @@ import { useState } from "react";
 import { TABLE_HEADER_BG, TABLE_HEADER_TEXT } from "@/components/shared/tableHeader";
 import { useTheme } from "@/components/shared/themeProvider";
 import { MobileCard, MobileHeading, MobileLead } from "@/components/home/mobileKit";
+import SectionQuoteCta from "@/components/shared/SectionQuoteCta";
 
 // BMW Market Intelligence - header with stats card, then six data panels (3 × 2 on desktop).
 // On phones the first three panels are accordions (closed until tapped), the rest stay open.
@@ -242,6 +243,16 @@ function Desktop({ data, isDark }) {
                 ];
               })}
             />
+            {data.sectionCta ? (
+              <div className="border-t px-4 pb-4" style={{ borderColor: C.line }}>
+                <SectionQuoteCta
+                  className="!mt-4"
+                  label={data.sectionCta.label}
+                  supportText={data.sectionCta.support}
+                  href={data.sectionCta.href || "/quote"}
+                />
+              </div>
+            ) : null}
           </div>
 
           {/* Failures */}
@@ -372,28 +383,38 @@ function Phone({ data, isDark }) {
         {panels.map(([key, p]) => {
           const isOpen = open === key;
           return (
-            <MobileCard key={key} C={C}>
-              <button type="button" aria-expanded={isOpen} onClick={() => setOpen(isOpen ? null : key)} className="flex w-full items-center justify-between gap-3 px-4 py-4 text-left">
-                {head(p)}
-                <svg aria-hidden="true" viewBox="0 0 16 9" className={`h-2.5 w-4 shrink-0 transition-transform ${isOpen ? "rotate-180" : ""}`} fill="none" stroke="currentColor" strokeWidth="1.8" style={{ color: C.text }}>
-                  <path d="M1 1 8 7.5 15 1" />
-                </svg>
-              </button>
-              {isOpen ? (
-                <ul className="border-t px-4" style={{ borderColor: C.line }}>
-                  {p.rows.map((r, j) => (
-                    <li key={j} className="flex items-center gap-3 border-b py-3 last:border-b-0" style={{ borderColor: C.line }}>
-                      {r.rank ? <span className="w-5 shrink-0 text-[18px] font-semibold" style={{ color: C.blue }}>{r.rank}</span> : null}
-                      <span className="min-w-0 flex-1">
-                        <span className="block text-[17px] font-bold" style={{ color: C.text }}>{r.code || r.model}</span>
-                        {r.label ? <span className="block text-[15px]" style={{ color: C.soft }}>{r.label}</span> : null}
-                      </span>
-                      {valueTag(r.enquiries || r.cost)}
-                    </li>
-                  ))}
-                </ul>
+            <div key={key}>
+              <MobileCard C={C}>
+                <button type="button" aria-expanded={isOpen} onClick={() => setOpen(isOpen ? null : key)} className="flex w-full items-center justify-between gap-3 px-4 py-4 text-left">
+                  {head(p)}
+                  <svg aria-hidden="true" viewBox="0 0 16 9" className={`h-2.5 w-4 shrink-0 transition-transform ${isOpen ? "rotate-180" : ""}`} fill="none" stroke="currentColor" strokeWidth="1.8" style={{ color: C.text }}>
+                    <path d="M1 1 8 7.5 15 1" />
+                  </svg>
+                </button>
+                {isOpen ? (
+                  <ul className="border-t px-4" style={{ borderColor: C.line }}>
+                    {p.rows.map((r, j) => (
+                      <li key={j} className="flex items-center gap-3 border-b py-3 last:border-b-0" style={{ borderColor: C.line }}>
+                        {r.rank ? <span className="w-5 shrink-0 text-[18px] font-semibold" style={{ color: C.blue }}>{r.rank}</span> : null}
+                        <span className="min-w-0 flex-1">
+                          <span className="block text-[17px] font-bold" style={{ color: C.text }}>{r.code || r.model}</span>
+                          {r.label ? <span className="block text-[15px]" style={{ color: C.soft }}>{r.label}</span> : null}
+                        </span>
+                        {valueTag(r.enquiries || r.cost)}
+                      </li>
+                    ))}
+                  </ul>
+                ) : null}
+              </MobileCard>
+              {key === "replacementCosts" && data.sectionCta ? (
+                <SectionQuoteCta
+                  className="!mt-4"
+                  label={data.sectionCta.label}
+                  supportText={data.sectionCta.support}
+                  href={data.sectionCta.href || "/quote"}
+                />
               ) : null}
-            </MobileCard>
+            </div>
           );
         })}
 

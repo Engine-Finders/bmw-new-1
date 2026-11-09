@@ -16,7 +16,7 @@ function splitTitle(title = "") {
 function shortName(problem) {
   const fromList = byKeyword(copy.tabNames, problem.title, "name");
   if (fromList) return fromList;
-  return plain(splitTitle(dash(problem.title)).name).split(" — ")[0].split(" ").slice(0, 2).join(" ");
+  return plain(splitTitle(dash(problem.title)).name).split(" - ")[0].split(" ").slice(0, 2).join(" ");
 }
 
 function ToneCircle({ tone, icon, className = "h-12 w-12" }) {
@@ -32,7 +32,7 @@ function Urgency({ urgency, tone }) {
   return (
     <>
       <span aria-hidden="true" className="mx-1 inline-block h-3 w-3 translate-y-[1px] rounded-full" style={{ background: TONE_VAR[tone] }} />
-      {[urgency.label, urgency.text].filter(Boolean).join(" — ")}
+      {[urgency.label, urgency.text].filter(Boolean).join(" - ")}
     </>
   );
 }

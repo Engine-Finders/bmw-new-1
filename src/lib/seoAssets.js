@@ -1,10 +1,10 @@
-/** Default live assets (public/hero-day.webp). Replaces missing /images/*.jpg|png. */
-export const DEFAULT_OG_IMAGE = "https://bmwengines.uk/hero-day.webp";
-export const DEFAULT_LOGO = "https://bmwengines.uk/hero-day.webp";
+/** Default live assets. Replaces missing /images/*.jpg|png. */
+export const DEFAULT_OG_IMAGE = "https://bmwengines.uk/png/123.webp";
+export const DEFAULT_LOGO = "https://bmwengines.uk/png/Icon.webp";
 
 function isBrokenSeoAsset(url) {
   if (!url || typeof url !== "string") return true;
-  // Site has no /public/images — these 404 in GSC.
+  // Site has no /public/images - these 404 in GSC.
   if (/bmwengines\.uk\/images\//i.test(url)) return true;
   return false;
 }

@@ -158,7 +158,7 @@ function Icon({ name, className, strokeWidth = 1.7 }) {
 const HTML = "[&_a]:[font-weight:inherit] [&_a]:text-inherit hover:[&_a]:underline";
 
 function dash(value = "") {
-  return String(value ?? "").replace(/\s+-\s*(?=\S)/g, " — ");
+  return String(value ?? "").replace(/\s+-\s*(?=\S)/g, " - ");
 }
 
 // "123d (N47D20D, 2.0-litre twin-turbo)" / "N54B30 HPFP & Injector Failure" -> code + note, as E90's split fields.

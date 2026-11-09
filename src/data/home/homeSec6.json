@@ -330,10 +330,15 @@
       "textDesktop": "We tell you the truth, not what\nyou want to hear."
     }
   ],
+  "sectionCta": {
+    "label": "Get a BMW Engine Quote",
+    "support": "Compare replacement costs against your BMW's current value before deciding what to do next.",
+    "href": "/quote"
+  },
   "bottomCta": {
     "title": "Honest. Data-Backed. Unbiased.",
     "text": "We tell you the truth - even when it means walking away. That's the Engine Finders promise.",
-    "buttonLabel": "START YOUR RESEARCH",
+    "buttonLabel": "Get a BMW Engine Quote",
     "href": "/quote",
     "textPhone": "We tell you the truth - even when it means walking away.\nThat's the Engine Finders promise."
   },

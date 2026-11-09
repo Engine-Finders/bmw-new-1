@@ -4,6 +4,7 @@ import { useState } from "react";
 import Image from "next/image";
 import { Inter } from "next/font/google";
 import { useTheme } from "@/components/shared/themeProvider";
+import SectionQuoteCta, { bmwContextLabel, modelCtaCopy } from "@/components/shared/SectionQuoteCta";
 import s from "./ReplacementCosts.module.css";
 import ReplacementCostsLegacy from "./ReplacementCostsLegacy";
 
@@ -244,6 +245,17 @@ function ReplacementCostsReference({ data }) {
                 ))}
               </p>
             ) : null}
+            {(() => {
+              const copy = modelCtaCopy(bmwContextLabel("", data.h2));
+              return (
+                <SectionQuoteCta
+                  className="!mt-6"
+                  label={copy.costsLabel}
+                  supportText={copy.costsSupport}
+                  href="/quote"
+                />
+              );
+            })()}
           </div>
         </div>
       </div>

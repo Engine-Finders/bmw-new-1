@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { useTheme } from "@/components/shared/themeProvider";
 import { engineImageFor } from "@/components/shared/carImage";
+import SectionQuoteCta, { bmwContextLabel, modelCtaCopy } from "@/components/shared/SectionQuoteCta";
 import { variantFont as sectionFont } from "@/components/variant/variantFont";
 import ui from "@/data/shared/generationPageUi.json";
 import { bandColor } from "./generationSection";
@@ -73,16 +74,16 @@ const TONES = {
 
 const HTML = "[&_a]:[font-weight:inherit] [&_a]:text-inherit hover:[&_a]:underline";
 const plain = (value = "") => String(value ?? "").replace(/<[^>]*>/g, "");
-const dash = (value = "") => String(value ?? "").replace(/\s+-\s*(?=\S)/g, " — ");
+const dash = (value = "") => String(value ?? "").replace(/\s+-\s*(?=\S)/g, " - ");
 const pct = (value) => `${(value * 100).toFixed(3)}%`;
 // The legacy -webkit- composite first: Chrome aliases it to mask-composite, so whichever comes last wins.
 const fade = (...layers) => ({ WebkitMaskImage: layers.join(","), maskImage: layers.join(","), WebkitMaskComposite: "source-in", maskComposite: "intersect" });
 // Chrome still draws a faint 1px line at a masked plate's left edge, where its mask is clear: trim that edge off.
 const TRIM_LEFT = { clipPath: "inset(0 0 0 4px)" };
 
-// "E90 Engine Replacement Costs — By Engine and Condition" -> main + accent.
+// "E90 Engine Replacement Costs - By Engine and Condition" -> main + accent.
 function splitTitle(value = "") {
-  const match = String(value ?? "").match(/^(.*?)\s+[-—–]\s+(.*)$/);
+  const match = String(value ?? "").match(/^(.*?)\s+[--–]\s+(.*)$/);
   return match ? { main: match[1], accent: match[2] } : { main: String(value ?? ""), accent: "" };
 }
 
@@ -158,13 +159,13 @@ function blocks(list, max = 4) {
 // 12.5px semibold (they may break after a slash), prices at 14px (they may break after the dash or a space).
 const codeWidth = (text) => [...text].reduce((sum, ch) => sum + (/[A-Z]/.test(ch) ? 8.8 : /\d/.test(ch) ? 7.6 : /[a-z]/.test(ch) ? 7 : /[/()]/.test(ch) ? 4.5 : 6), 0);
 const valueWidth = (text) =>
-  [...text].reduce((sum, ch) => sum + (ch === "1" ? 5.6 : /\d/.test(ch) ? 8 : ch === "£" ? 8.4 : /[,.]/.test(ch) ? 3.4 : ch === "–" ? 9.5 : ch === "—" ? 14 : /[a-z]/.test(ch) ? 7.2 : /[A-Z]/.test(ch) ? 9 : 7), 0);
+  [...text].reduce((sum, ch) => sum + (ch === "1" ? 5.6 : /\d/.test(ch) ? 8 : ch === "£" ? 8.4 : /[,.]/.test(ch) ? 3.4 : ch === "–" ? 9.5 : ch === "-" ? 14 : /[a-z]/.test(ch) ? 7.2 : /[A-Z]/.test(ch) ? 9 : 7), 0);
 function widestPieces(rows) {
   let code = 0;
   let value = 0;
   for (const row of rows) {
     for (const piece of plain(row.engineCode).split(/(?<=\/)|\s+/)) code = Math.max(code, codeWidth(piece));
-    for (const key of PRICE_FIELDS) for (const piece of dash(plain(row[key])).split(/(?<=[–—-])|\s+/)) value = Math.max(value, valueWidth(piece));
+    for (const key of PRICE_FIELDS) for (const piece of dash(plain(row[key])).split(/(?<=[\u2013\u2014\-])|\s+/)) value = Math.max(value, valueWidth(piece));
   }
   return { code, value };
 }
@@ -467,7 +468,7 @@ function Table({ columns, rows }) {
               dangerouslySetInnerHTML={{ __html: dash(row.engineCode) }}
             />
             {PRICE_FIELDS.map((key) => (
-              <span key={key} role="cell" className={`${cell} ${HTML}`} dangerouslySetInnerHTML={{ __html: dash(row[key]) || "—" }} />
+              <span key={key} role="cell" className={`${cell} ${HTML}`} dangerouslySetInnerHTML={{ __html: dash(row[key]) || "-" }} />
             ))}
           </div>
         );
@@ -532,7 +533,7 @@ function GroupBlock({ group, rows, labels, first }) {
             <span
               key={`${row.engineCode}-${index}`}
               className={`flex min-w-0 items-center justify-center border-l border-[var(--rc-line)] px-[3px] py-2.5 text-center text-[14px] leading-[1.3] text-[var(--rc-text)] max-[379px]:px-[2px] sm:px-[0.8cqw] sm:py-[1.2cqw] sm:text-[clamp(14px,1.85cqw,19px)] ${HTML}`}
-              dangerouslySetInnerHTML={{ __html: dash(row[key]) || "—" }}
+              dangerouslySetInnerHTML={{ __html: dash(row[key]) || "-" }}
             />
           ))}
         </div>
@@ -665,6 +666,7 @@ export default function ReplacementCosts({ data , band }) {
   const engineSrc = engineFor(rows, data.art);
   const subHeadline = data.subHeadline || UI.subHeadline;
   const eyebrow = UI.eyebrow || "Replacement Costs";
+  const copy = modelCtaCopy(bmwContextLabel("", data.h2));
 
   return (
     // Layout variables (all in one place):
@@ -703,7 +705,7 @@ export default function ReplacementCosts({ data , band }) {
               <span dangerouslySetInnerHTML={{ __html: title.main }} />
               {title.accent ? (
                 <>
-                  {" — "}
+                  {" - "}
                   <br className={breakAfterDash ? "hidden xl:inline" : "hidden"} />
                   <span dangerouslySetInnerHTML={{ __html: title.accent }} />
                 </>
@@ -735,6 +737,12 @@ export default function ReplacementCosts({ data , band }) {
         ) : null}
 
         <TrustStrip heading={data.trustHeading || UI.trustHeading} text={data.trustText || UI.trustText} items={data.trustStrip?.length ? data.trustStrip : UI.trustStrip} />
+        <SectionQuoteCta
+          className="!mt-6"
+          label={copy.costsLabel}
+          supportText={copy.costsSupport}
+          href="/quote"
+        />
       </div>
     </section>
   );

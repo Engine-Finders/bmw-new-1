@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { useTheme } from "@/components/shared/themeProvider";
 import { DesktopNavMenus, MobileNavMenus } from "@/components/shared/NavMenus";
@@ -40,13 +41,8 @@ function ThemeIcon({ theme }) {
 
 function LogoMark() {
   return (
-    <span className="flex h-12 w-12 items-center justify-center rounded-full border border-[var(--color-text)] bg-[var(--color-surface)] text-[10px] font-bold leading-none md:h-14 md:w-14">
-      <span className="grid h-8 w-8 grid-cols-2 overflow-hidden rounded-full border border-[var(--color-border-strong)]">
-        <span className="bg-[var(--color-surface)]" />
-        <span className="bg-[var(--color-primary)]" />
-        <span className="bg-[var(--color-primary)]" />
-        <span className="bg-[var(--color-surface)]" />
-      </span>
+    <span className="relative block h-12 w-12 shrink-0 overflow-hidden rounded-full md:h-14 md:w-14">
+      <Image src="/png/Icon.webp" alt="BMW Reliability Guide" fill sizes="56px" className="object-contain" priority />
     </span>
   );
 }

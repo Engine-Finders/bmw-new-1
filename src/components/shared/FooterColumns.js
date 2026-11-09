@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useTheme } from "@/components/shared/themeProvider";
 
@@ -72,13 +73,8 @@ export const footerLegal = {
 
 function LogoMark() {
   return (
-    <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border border-[var(--color-text)] bg-[var(--color-surface)] text-[10px] font-bold leading-none">
-      <span className="grid h-8 w-8 grid-cols-2 overflow-hidden rounded-full border border-[var(--color-border-strong)]">
-        <span className="bg-[var(--color-surface)]" />
-        <span className="bg-[var(--color-primary)]" />
-        <span className="bg-[var(--color-primary)]" />
-        <span className="bg-[var(--color-surface)]" />
-      </span>
+    <span className="relative block h-12 w-12 shrink-0 overflow-hidden rounded-full">
+      <Image src="/png/Icon.webp" alt="BMW Reliability Guide" fill sizes="48px" className="object-contain" />
     </span>
   );
 }

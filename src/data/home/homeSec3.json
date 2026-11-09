@@ -117,11 +117,12 @@
     ],
     "ctas": {
       "quote": {
-        "label": "Get Replacement Quotes",
-        "href": "/quote"
+        "label": "Get BMW Specialist Advice",
+        "href": "/quote",
+        "support": "Get guidance on the likely fault, repair costs and whether engine replacement may be necessary."
       },
       "specialist": {
-        "label": "Speak to a BMW Specialist",
+        "label": "Get a BMW Engine Quote",
         "href": "/quote"
       }
     },
