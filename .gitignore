@@ -31,7 +31,6 @@ yarn-error.log*
 .pnpm-debug.log*
 
 # env files (can opt-in for committing if needed)
-.env*
 
 # vercel
 .vercel
@@ -47,3 +46,4 @@ mobile view.md
 dev-server.log
 /BMW Variant Ui-IBS/
 VARIANT-PAGE - BMW 320d.md
+config.bat
