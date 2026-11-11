@@ -1,9 +1,9 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
 import { Inter } from "next/font/google";
 import { useTheme } from "@/components/shared/themeProvider";
+import QuoteCtaLink from "@/components/shared/QuoteCtaLink";
 import s from "./ClosingActionCards.module.css";
 import ClosingActionCardsLegacy from "./ClosingActionCardsLegacy";
 
@@ -52,7 +52,7 @@ function ActionCard({ card, isDark }) {
   const artSrc = isDark ? art.dark || art.light : art.light;
 
   return (
-    <Link href={card.href || "#"} className={`${s.card} ${s[card.tone] || ""} ${s[`art-${art.kind}`] || ""}`}>
+    <QuoteCtaLink href={card.href || "#"} className={`${s.card} ${s[card.tone] || ""} ${s[`art-${art.kind}`] || ""}`}>
       {artSrc ? (
         <span className={s.art} aria-hidden="true">
           <Image src={artSrc} alt="" fill className={s.artImg} sizes="(min-width: 1024px) 31vw, 90vw" />
@@ -74,7 +74,7 @@ function ActionCard({ card, isDark }) {
           <Icon name="arrow" className={s.ctaArrow} />
         </span>
       </span>
-    </Link>
+    </QuoteCtaLink>
   );
 }
 

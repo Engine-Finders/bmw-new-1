@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import { useTheme } from "@/components/shared/themeProvider";
+import QuoteCtaLink from "@/components/shared/QuoteCtaLink";
 import { variantFont as sectionFont } from "@/components/variant/variantFont";
 import { bandColor } from "./generationSection";
 
@@ -399,13 +400,13 @@ export default function TrustCta({ data , band }) {
               ) : null}
             </div>
             {label ? (
-              <a
+              <QuoteCtaLink
                 href={button?.href || "/quote"}
                 className="mt-5 flex min-h-[56px] w-full items-center gap-2 rounded-[8px] bg-[image:var(--tc-btn)] px-4 py-3 text-white shadow-[0_10px_24px_rgba(6,70,200,0.28)] transition hover:brightness-110 md:mt-6 lg:mt-0 lg:w-[400px] lg:gap-5 lg:px-6 lg:py-4 xl:w-[460px] xl:px-7"
               >
                 <span className="min-w-0 flex-1 text-center text-[14px] font-semibold uppercase leading-[1.35] tracking-[0.01em] [text-wrap:balance] md:text-[16px] lg:text-left lg:text-[16px] xl:text-[17px]">{label}</span>
                 <Icon name="chevron" strokeWidth={2.2} className="h-6 w-6 shrink-0" />
-              </a>
+              </QuoteCtaLink>
             ) : null}
           </div>
         </div>

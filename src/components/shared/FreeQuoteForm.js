@@ -2,12 +2,30 @@
 
 import { Suspense, useEffect, useId, useRef, useState } from "react";
 import QuoteLeadForm from "@/components/shared/QuoteLeadForm";
+import { QUOTE_MODAL_EVENT } from "@/components/shared/quoteModal";
 
 export default function FreeQuoteSticky() {
   const [open, setOpen] = useState(false);
+  const [initialReg, setInitialReg] = useState("");
+  const [loadCalculator, setLoadCalculator] = useState(false);
   const titleId = useId();
   const closeRef = useRef(null);
   const [formKey, setFormKey] = useState(0);
+
+  function openModal({ reg = "", fromCalculator = false } = {}) {
+    setInitialReg(String(reg || "").replace(/\s+/g, "").toUpperCase());
+    setLoadCalculator(Boolean(fromCalculator));
+    setFormKey((k) => k + 1);
+    setOpen(true);
+  }
+
+  useEffect(() => {
+    function onOpen(event) {
+      openModal(event.detail || {});
+    }
+    window.addEventListener(QUOTE_MODAL_EVENT, onOpen);
+    return () => window.removeEventListener(QUOTE_MODAL_EVENT, onOpen);
+  }, []);
 
   useEffect(() => {
     if (!open) return undefined;
@@ -31,10 +49,7 @@ export default function FreeQuoteSticky() {
     <>
       <button
         type="button"
-        onClick={() => {
-          setFormKey((k) => k + 1);
-          setOpen(true);
-        }}
+        onClick={() => openModal()}
         className="fixed bottom-5 right-5 z-50 rounded-full bg-[var(--color-primary)] px-5 py-3 text-sm font-bold text-white shadow-[0_12px_28px_var(--color-shadow)] hover:bg-[var(--color-primary-strong)] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[var(--color-primary)]"
         aria-haspopup="dialog"
         aria-expanded={open}
@@ -50,6 +65,9 @@ export default function FreeQuoteSticky() {
               <QuoteLeadForm
                 key={formKey}
                 form="Floating quote"
+                initialReg={initialReg}
+                autoLookup={Boolean(initialReg)}
+                loadCalculator={loadCalculator}
                 showClose
                 onClose={() => setOpen(false)}
                 titleId={titleId}

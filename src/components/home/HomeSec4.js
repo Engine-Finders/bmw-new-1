@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { TABLE_HEADER_BG, TABLE_HEADER_TEXT } from "@/components/shared/tableHeader";
 import { useTheme } from "@/components/shared/themeProvider";
+import QuoteCtaLink from "@/components/shared/QuoteCtaLink";
 import BrandIcon from "@/components/home/brandIcon";
 import VerdictGlyph from "@/components/home/VerdictGlyph";
 
@@ -166,12 +167,12 @@ export default function HomeSec4({ data }) {
               <span className={`t-body mt-1 block ${soft}`}>{data.bottomCta.text}</span>
             </span>
           </div>
-          <Link href={data.bottomCta.href} className="flex items-center justify-center gap-3 rounded-[4px] bg-[#0b47a8] py-3 text-[15px] font-semibold text-white">
+          <QuoteCtaLink href={data.bottomCta.href || "/quote"} className="flex items-center justify-center gap-3 rounded-[4px] bg-[#0b47a8] py-3 text-[15px] font-semibold text-white">
             {data.bottomCta.buttonLabel}
             <svg aria-hidden="true" viewBox="0 0 24 24" className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="1.8">
               <path d="M4 12h16m-6-6 6 6-6 6" />
             </svg>
-          </Link>
+          </QuoteCtaLink>
         </div>
       </div>
     </section>

@@ -2,8 +2,9 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import Link from "next/link";
 import { useTheme } from "@/components/shared/themeProvider";
+import SectionQuoteCta from "@/components/shared/SectionQuoteCta";
+import { openQuoteModal } from "@/components/shared/quoteModal";
 import BrandIcon, { hasBrandIcon } from "@/components/home/brandIcon";
 import Sec3Icon, { hasSec3Icon } from "@/components/home/Sec3Icons";
 
@@ -594,42 +595,10 @@ function CostCard({ title, value, note, highlight, isDark }) {
   );
 }
 
-function ResultsScreen({ diagnosis, verdict, engineOption, ctas, isDark, calculatorContext }) {
+function ResultsScreen({ diagnosis, verdict, engineOption, isDark }) {
   const severity = severityMeta[diagnosis.severity];
   const verdictInfo = verdictMeta[verdict.decision];
   const dealerRange = getMainDealerRange(verdict.replacement, diagnosis.dealerMultiplier);
-
-  function goToQuoteWithCalculator(event) {
-    event.preventDefault();
-    const calculator = {
-      source: "diagnostic-calculator",
-      category: calculatorContext?.categoryLabel || "",
-      diagnosis: diagnosis.headline || "",
-      diagnosisKey: diagnosis.key || "",
-      severity: severity?.label || diagnosis.severity || "",
-      evidence: diagnosis.evidenceLabel || "",
-      engineCodes: (diagnosis.engineCodes || []).join(" / "),
-      vehicleAge: calculatorContext?.ageLabel || "",
-      carValue: calculatorContext?.carValue != null ? fmtCurrency(calculatorContext.carValue) : "",
-      engineRoute: engineOption?.label || "",
-      repairCost: `${fmtCurrency(diagnosis.repairCost.low)} - ${fmtCurrency(diagnosis.repairCost.high)}`,
-      replacementCost: `${fmtCurrency(verdict.replacement.low)} - ${fmtCurrency(verdict.replacement.high)}`,
-      dealerEstimate: `${fmtCurrency(dealerRange.low)} - ${fmtCurrency(dealerRange.high)}`,
-      replacementVsValue: `${verdict.replacementPct}%`,
-      repairVsValue: `${verdict.repairPct}%`,
-      verdict: verdictInfo?.title || "",
-    };
-
-    try {
-      sessionStorage.setItem("bmw_quote_calculator", JSON.stringify(calculator));
-    } catch {
-      // Quote form still works without calculator context
-    }
-
-    const href = ctas.quote?.href && ctas.quote.href !== "#" ? ctas.quote.href : "/quote";
-    const url = href.includes("?") ? `${href}&from=calculator` : `${href}?from=calculator`;
-    window.location.href = url;
-  }
 
   return (
     <div className="grid gap-5">
@@ -700,24 +669,6 @@ function ResultsScreen({ diagnosis, verdict, engineOption, ctas, isDark, calcula
                   </li>
                 ))}
               </ul>
-
-              <div className="mt-5 grid gap-3">
-                {ctas.quote?.support ? (
-                  <p className={`t-label leading-[1.45] ${isDark ? "text-white/72" : "text-[#27384a]"}`}>{ctas.quote.support}</p>
-                ) : null}
-                <button
-                  type="button"
-                  onClick={goToQuoteWithCalculator}
-                  className="btn-cta flex items-center justify-center gap-3 rounded-lg bg-[var(--color-primary)] px-5 py-3 t-label font-bold text-white"
-                >
-                  <span>{ctas.quote.label}</span>
-                  <ArrowIcon className="h-4 w-4" />
-                </button>
-                <Link href={ctas.specialist.href} className={`flex items-center justify-center gap-3 rounded-lg border px-5 py-3 t-label font-bold ${isDark ? "border-[#375067] bg-[rgba(14,28,41,0.84)] text-white" : "border-[#d7dde6] bg-white text-[#071827]"}`}>
-                  <span>{ctas.specialist.label}</span>
-                  <ArrowIcon className="h-4 w-4" />
-                </Link>
-              </div>
             </div>
           </div>
         </div>
@@ -926,18 +877,53 @@ export default function HomeSec3({ data }) {
               diagnosis={selectedDiagnosis}
               verdict={verdict}
               engineOption={selectedEngineOption}
-              ctas={calculator.ctas}
               isDark={isDark}
-              calculatorContext={{
-                categoryLabel: selectedCategory?.label || "",
-                ageLabel: calculator.ageOptions.find((item) => item.id === selectedAgeId)?.label || "",
-                carValue,
-              }}
             />
           </div>
         ) : null}
       </div>
     );
+
+  const quoteCta = calculator.ctas?.quote || {};
+
+  function goToQuoteWithCalculator(event) {
+    event.preventDefault();
+
+    if (selectedDiagnosis && verdict) {
+      const severity = severityMeta[selectedDiagnosis.severity];
+      const verdictInfo = verdictMeta[verdict.decision];
+      const dealerRange = getMainDealerRange(verdict.replacement, selectedDiagnosis.dealerMultiplier);
+      const payload = {
+        source: "diagnostic-calculator",
+        category: selectedCategory?.label || "",
+        diagnosis: selectedDiagnosis.headline || "",
+        diagnosisKey: selectedDiagnosis.key || "",
+        severity: severity?.label || selectedDiagnosis.severity || "",
+        evidence: selectedDiagnosis.evidenceLabel || "",
+        engineCodes: (selectedDiagnosis.engineCodes || []).join(" / "),
+        vehicleAge: calculator.ageOptions.find((item) => item.id === selectedAgeId)?.label || "",
+        carValue: fmtCurrency(carValue),
+        engineRoute: selectedEngineOption?.label || "",
+        repairCost: `${fmtCurrency(selectedDiagnosis.repairCost.low)} - ${fmtCurrency(selectedDiagnosis.repairCost.high)}`,
+        replacementCost: `${fmtCurrency(verdict.replacement.low)} - ${fmtCurrency(verdict.replacement.high)}`,
+        dealerEstimate: `${fmtCurrency(dealerRange.low)} - ${fmtCurrency(dealerRange.high)}`,
+        replacementVsValue: `${verdict.replacementPct}%`,
+        repairVsValue: `${verdict.repairPct}%`,
+        verdict: verdictInfo?.title || "",
+      };
+
+      try {
+        sessionStorage.setItem("bmw_quote_calculator", JSON.stringify(payload));
+      } catch {
+        // Quote form still works without calculator context
+      }
+
+      openQuoteModal({ fromCalculator: true });
+      return;
+    }
+
+    openQuoteModal();
+  }
 
   return (
     <section id="diagnose" className={`relative overflow-hidden ${isDark ? "bg-[#05090f]" : "bg-[#f9fafc]"}`}>
@@ -1004,6 +990,15 @@ export default function HomeSec3({ data }) {
         <div className="relative mt-4">
           <WhyTrust title={data.whyTrustTitle} items={calculator.whyTrust} isDark={isDark} phone />
         </div>
+      </div>
+
+      <div className="site-container pb-8 md:pb-10">
+        <SectionQuoteCta
+          label={quoteCta.label || "Get BMW Specialist Advice"}
+          supportText={quoteCta.support || "Get guidance on the likely fault, repair costs and whether engine replacement may be necessary."}
+          href={quoteCta.href || "/quote"}
+          onClick={goToQuoteWithCalculator}
+        />
       </div>
     </section>
   );

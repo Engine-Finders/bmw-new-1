@@ -1,4 +1,4 @@
-import Link from "next/link";
+import QuoteCtaLink from "@/components/shared/QuoteCtaLink";
 import VIcon from "./VariantIcons";
 import { Accordion } from "./VariantToggles";
 import { TagLine } from "./EraMap";
@@ -42,10 +42,10 @@ function SoftCircle({ icon, className = "h-10 w-10" }) {
 function Cta({ cta, className = "" }) {
   if (!cta?.label) return null;
   return (
-    <Link href={cta.href || "/quote"} className={`t-body items-center gap-4 rounded-[6px] bg-[var(--color-v-blue-btn)] px-6 py-3 font-semibold text-white transition hover:brightness-110 ${className}`}>
+    <QuoteCtaLink href={cta.href || "/quote"} className={`t-body items-center gap-4 rounded-[6px] bg-[var(--color-v-blue-btn)] px-6 py-3 font-semibold text-white transition hover:brightness-110 ${className}`}>
       <VIcon name="arrowRight" className="h-5 w-5 shrink-0" strokeWidth={2.2} />
       <span className="text-left">{stripMarker(cta.label)}</span>
-    </Link>
+    </QuoteCtaLink>
   );
 }
 
@@ -181,14 +181,14 @@ export default function ReplacementCosts({ data }) {
               <Cta cta={data.cta} className="hidden max-w-[310px] shrink-0 lg:inline-flex" />
             </div>
             {data.cta?.label ? (
-              <Link
+              <QuoteCtaLink
                 href={data.cta.href || "/quote"}
                 className="mt-4 flex items-center gap-4 rounded-[8px] bg-[var(--color-v-blue-btn)] px-5 py-4 text-[15px] font-semibold text-white lg:hidden"
               >
                 <VIcon name="arrowRight" className="h-6 w-6 shrink-0" strokeWidth={2} />
                 <span className="flex-1">{stripMarker(data.cta.label)}</span>
                 <VIcon name="chevronRight" className="h-5 w-5 shrink-0" strokeWidth={2.2} />
-              </Link>
+              </QuoteCtaLink>
             ) : null}
           </>
         ) : null}

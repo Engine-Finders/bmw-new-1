@@ -1,6 +1,6 @@
 "use client";
 
-import Link from "next/link";
+import QuoteCtaLink from "@/components/shared/QuoteCtaLink";
 import ui from "@/data/shared/enginePageUi.json";
 import { CARD, DataText, EIcon, SECTION_CLASS, useEngineTone } from "./engineUi";
 import { cleanText, engineCode } from "./engineText";
@@ -186,13 +186,13 @@ export default function TrustCta({ data, facts, engineLabel = "BMW Engine" }) {
                 </p>
               ) : null}
             </div>
-            <Link
+            <QuoteCtaLink
               href={href}
               className="btn-cta inline-flex w-full shrink-0 items-center justify-center gap-2 whitespace-nowrap rounded-[6px] px-3.5 py-3 text-[14px] font-semibold min-[400px]:text-[15px] md:gap-3 md:px-6 md:text-[16px] text-[var(--eg-cta-text)] [background:var(--eg-cta)] lg:w-auto lg:px-7 lg:py-[18px] lg:text-[18px] lg:leading-[1.2] 2xl:gap-[14px] 2xl:px-[36px] 2xl:py-[20px] 2xl:text-[20px]"
             >
               <span className="whitespace-normal md:whitespace-nowrap">{label}</span>
               <EIcon name="arrow-right" strokeWidth={2} className="h-[18px] w-[18px] shrink-0 md:h-5 md:w-5 lg:h-6 lg:w-6" />
-            </Link>
+            </QuoteCtaLink>
           </div>
         </div>
       </div>

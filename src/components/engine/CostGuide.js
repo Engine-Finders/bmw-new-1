@@ -1,6 +1,6 @@
 "use client";
 
-import Link from "next/link";
+import QuoteCtaLink from "@/components/shared/QuoteCtaLink";
 import ui from "@/data/shared/enginePageUi.json";
 import { CARD, DataText, EIcon, Eyebrow, SECTION_CLASS, useEngineTone } from "./engineUi";
 import { cleanText, splitTags, stripTags, textSegments } from "./engineText";
@@ -245,13 +245,13 @@ function CtaCard({ href, className = "" }) {
           <h3 className="text-[19px] font-bold leading-[1.25] @min-[200px]:text-[22px]">{UI.cta.title}</h3>
           <p className="mt-2 text-[15px] leading-[1.5] text-white/75">{UI.cta.text}</p>
         </div>
-        <Link
+        <QuoteCtaLink
           href={href}
           className="mt-auto inline-flex min-h-11 w-full items-center justify-center gap-2 whitespace-nowrap rounded-[6px] px-3 py-3 text-[14px] font-semibold uppercase text-[var(--cg-btn-text)] [background:var(--cg-btn)] @max-[559px]:mt-6 @min-[560px]:w-auto"
         >
           {UI.cta.button}
           <EIcon name="arrow-right" className="h-4 w-4" strokeWidth={2} />
-        </Link>
+        </QuoteCtaLink>
       </div>
     </article>
   );
@@ -363,14 +363,14 @@ export default function CostGuide({ data, facts, engineLabel = "BMW Engine" }) {
             </div>
           ) : null}
 
-          <Link
+          <QuoteCtaLink
             href={href}
             className="mt-4 flex items-center gap-3 rounded-[10px] px-4 py-3.5 text-white [background:var(--eg-cta)] [box-shadow:0_12px_28px_rgba(11,70,216,0.3)]"
           >
             <ChartGlyph className="h-10 w-10 shrink-0" bars="rgba(255, 255, 255, 0.55)" />
             <span className="min-w-0 flex-1 text-[16px] font-semibold leading-[1.3]">{ctaLabel}</span>
             <EIcon name="arrow-right" className="h-6 w-6 shrink-0" strokeWidth={1.75} />
-          </Link>
+          </QuoteCtaLink>
         </div>
       </div>
     </section>

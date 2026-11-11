@@ -4,6 +4,7 @@ import { useState } from "react";
 import Image from "next/image";
 import { useTheme } from "@/components/shared/themeProvider";
 import SectionQuoteCta, { bmwContextLabel, modelCtaCopy } from "@/components/shared/SectionQuoteCta";
+import QuoteCtaLink from "@/components/shared/QuoteCtaLink";
 import { variantFont as sectionFont } from "@/components/variant/variantFont";
 import { bandColor } from "./generationSection";
 
@@ -262,14 +263,14 @@ function Details({ problem, withRootCause = true, withSummary = true }) {
       {/* Grows in the desktop cards so every card's button sits on its bottom edge. */}
       <span aria-hidden="true" className="block min-h-4 flex-1" />
       {label ? (
-        <a
+        <QuoteCtaLink
           href={problem.cta?.href || "/quote"}
           className="flex min-h-11 w-full items-center justify-center gap-2 rounded-[8px] border px-3 py-2.5 text-center text-[14px] font-medium leading-snug no-underline transition hover:brightness-110"
           style={{ background: "var(--cp-cta-bg)", color: "var(--cp-cta-text)", borderColor: "var(--cp-cta-border)" }}
         >
           <span className="[&_a]:text-inherit [&_a]:no-underline" dangerouslySetInnerHTML={{ __html: label }} />
           <Icon name="arrow" className="h-4 w-4 shrink-0" strokeWidth={2} />
-        </a>
+        </QuoteCtaLink>
       ) : null}
     </>
   );
@@ -444,7 +445,6 @@ export default function CommonProblems({ data , band }) {
 
         <TrustStrip items={data.trustStrip} note={data.footerNote} />
         <SectionQuoteCta
-          className="!mt-6"
           label={copy.problemsLabel}
           supportText={copy.problemsSupport}
           href="/quote"

@@ -193,7 +193,6 @@ function Phone({ data, isDark }) {
       </MobileCard>
       {data.sectionCta ? (
         <SectionQuoteCta
-          className="!mt-5"
           label={data.sectionCta.label}
           supportText={data.sectionCta.support}
           href={data.sectionCta.href || "/quote"}

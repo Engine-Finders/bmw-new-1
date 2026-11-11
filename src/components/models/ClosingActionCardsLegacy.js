@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
+import QuoteCtaLink from "@/components/shared/QuoteCtaLink";
 import MStripe from "@/components/reusableComponents/MStripe";
 import { useTheme } from "@/components/shared/themeProvider";
 import HomeIcon from "@/components/home/homeIcons";
@@ -168,7 +168,7 @@ function ActionCard({ card, index, heroCar, engineImage, isDark }) {
   const title = [titleParts.before, titleParts.accent, titleParts.after].filter(Boolean).join(" ");
 
   return (
-    <Link
+    <QuoteCtaLink
       href={card.href || "#"}
       className={`group relative flex min-h-[230px] flex-col overflow-hidden rounded-md border p-4 transition-all duration-200 hover:-translate-y-0.5 md:min-h-[300px] md:p-5 ${
         isDark
@@ -205,7 +205,7 @@ function ActionCard({ card, index, heroCar, engineImage, isDark }) {
           <ArrowIcon className="h-5 w-5 transition-transform duration-200 group-hover:translate-x-1 md:h-6 md:w-6" />
         </span>
       </div>
-    </Link>
+    </QuoteCtaLink>
   );
 }
 

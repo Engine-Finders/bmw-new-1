@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Link from "next/link";
+import QuoteCtaLink from "@/components/shared/QuoteCtaLink";
 import SceneImage from "./SceneImage";
 import VIcon from "./VariantIcons";
 import { TagLine } from "./EraMap";
@@ -294,13 +294,13 @@ export default function RepairBuyOrReplace({ data, vehicle }) {
               </div>
             ) : null}
             {cta?.label ? (
-              <Link
+              <QuoteCtaLink
                 href={cta.href || "/quote"}
                 className="col-span-full mt-1 inline-flex w-fit items-center lg:mt-0 justify-center gap-2 whitespace-nowrap rounded-[6px] bg-[var(--color-v-blue-btn)] px-4 py-2.5 text-[clamp(12.5px,3.3vw,15px)] font-semibold lg:gap-3 lg:px-5 lg:py-2.5 lg:text-[16px] text-white transition hover:brightness-110 lg:col-span-2 lg:col-start-1 lg:w-fit lg:whitespace-nowrap lg:px-6"
               >
                 {stripMarker(cta.label)}
                 <VIcon name="arrowRight" className="h-[18px] w-[18px] shrink-0" strokeWidth={2.2} />
-              </Link>
+              </QuoteCtaLink>
             ) : null}
           </div>
         </div>

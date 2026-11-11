@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import QuoteCtaLink from "@/components/shared/QuoteCtaLink";
 import VIcon from "./VariantIcons";
 import { Tabs } from "./VariantToggles";
 import { TagLine } from "./EraMap";
@@ -96,7 +97,7 @@ function SpecsCard({ specs }) {
 function CtaCard({ cta, engine }) {
   if (!cta?.label) return null;
   return (
-    <Link
+    <QuoteCtaLink
       href={cta.href || "/quote"}
       className="group relative isolate flex items-center gap-5 overflow-hidden rounded-[10px] bg-[linear-gradient(100deg,#00296f_0%,#022b73_45%,#0a1a35_100%)] p-5 font-normal text-white shadow-[0_14px_34px_var(--color-v-shadow)] lg:min-h-[clamp(110px,8.6vw,140px)] lg:gap-[clamp(14px,1.4vw,22px)] lg:rounded-[8px] lg:px-[clamp(18px,1.6vw,26px)] lg:py-[clamp(16px,1.4vw,22px)] [[data-theme=dark]_&]:bg-[var(--color-v-tile)]"
     >
@@ -113,7 +114,7 @@ function CtaCard({ cta, engine }) {
         <span className="t-h5 block font-bold text-white lg:max-w-[20ch] lg:text-[clamp(19px,1.7vw,28px)] lg:font-semibold lg:leading-[1.15]">{stripMarker(cta.label)}</span>
         <span className="t-body mt-1 block text-white/90 lg:mt-[clamp(6px,0.6vw,10px)] lg:max-w-[24ch] lg:text-[clamp(13px,0.98vw,16px)] lg:leading-snug">{copy.ctaSubline}</span>
       </span>
-    </Link>
+    </QuoteCtaLink>
   );
 }
 

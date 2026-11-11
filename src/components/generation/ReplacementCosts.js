@@ -738,7 +738,6 @@ export default function ReplacementCosts({ data , band }) {
 
         <TrustStrip heading={data.trustHeading || UI.trustHeading} text={data.trustText || UI.trustText} items={data.trustStrip?.length ? data.trustStrip : UI.trustStrip} />
         <SectionQuoteCta
-          className="!mt-6"
           label={copy.costsLabel}
           supportText={copy.costsSupport}
           href="/quote"

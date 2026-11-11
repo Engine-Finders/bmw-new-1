@@ -243,16 +243,6 @@ function Desktop({ data, isDark }) {
                 ];
               })}
             />
-            {data.sectionCta ? (
-              <div className="border-t px-4 pb-4" style={{ borderColor: C.line }}>
-                <SectionQuoteCta
-                  className="!mt-4"
-                  label={data.sectionCta.label}
-                  supportText={data.sectionCta.support}
-                  href={data.sectionCta.href || "/quote"}
-                />
-              </div>
-            ) : null}
           </div>
 
           {/* Failures */}
@@ -317,6 +307,14 @@ function Desktop({ data, isDark }) {
           <span style={{ color: C.blue }}>BMWEngines.uk</span>
           {data.liveFeed.footer.split("BMWEngines.uk")[1]}
         </p>
+
+        {data.sectionCta ? (
+          <SectionQuoteCta
+            label={data.sectionCta.label}
+            supportText={data.sectionCta.support}
+            href={data.sectionCta.href || "/quote"}
+          />
+        ) : null}
       </div>
     </div>
   );
@@ -406,14 +404,6 @@ function Phone({ data, isDark }) {
                   </ul>
                 ) : null}
               </MobileCard>
-              {key === "replacementCosts" && data.sectionCta ? (
-                <SectionQuoteCta
-                  className="!mt-4"
-                  label={data.sectionCta.label}
-                  supportText={data.sectionCta.support}
-                  href={data.sectionCta.href || "/quote"}
-                />
-              ) : null}
             </div>
           );
         })}
@@ -482,6 +472,14 @@ function Phone({ data, isDark }) {
             {data.liveFeed.footer.split("BMWEngines.uk")[1]}
           </span>
         </p>
+
+        {data.sectionCta ? (
+          <SectionQuoteCta
+            label={data.sectionCta.label}
+            supportText={data.sectionCta.support}
+            href={data.sectionCta.href || "/quote"}
+          />
+        ) : null}
       </div>
     </div>
   );

@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import QuoteCtaLink from "@/components/shared/QuoteCtaLink";
 import { useTheme } from "@/components/shared/themeProvider";
 
 // Comparison Hub - six numbered head-to-head cards. Desktop: two columns, photo panel + labels on
@@ -267,10 +268,10 @@ export default function HomeSec5({ data }) {
               <span className={`t-body mt-1 block ${soft}`}>{data.bottomCta.text}</span>
             </span>
           </div>
-          <Link href={data.bottomCta.href} className="mt-3 flex h-[46px] items-center justify-center gap-4 rounded-[6px] bg-[#1452d4] text-[15px] font-semibold text-white">
+          <QuoteCtaLink href={data.bottomCta.href || "/quote"} className="mt-3 flex h-[46px] items-center justify-center gap-4 rounded-[6px] bg-[#1452d4] text-[15px] font-semibold text-white">
             {data.bottomCta.buttonLabel}
             <Arrow className="h-[22px] w-[22px]" />
-          </Link>
+          </QuoteCtaLink>
         </div>
       </div>
     </section>

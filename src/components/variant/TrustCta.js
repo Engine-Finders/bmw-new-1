@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Link from "next/link";
+import QuoteCtaLink from "@/components/shared/QuoteCtaLink";
 import SceneImage from "./SceneImage";
 import VIcon from "./VariantIcons";
 import { Rich, dash, fill, pageValues, stripMarker, ui } from "./variantUi";
@@ -86,13 +86,13 @@ export default function TrustCta({ data, vehicle }) {
                   ) : null}
                 </div>
                 {button?.label ? (
-                  <Link
+                  <QuoteCtaLink
                     href={button.href || "/quote"}
                     className="t-body relative z-10 mt-5 inline-flex w-full items-center justify-center gap-2 rounded-[6px] bg-[var(--color-v-green-btn)] px-4 py-3 text-left font-semibold leading-snug text-white transition hover:brightness-110 md:w-auto md:gap-3 md:whitespace-nowrap md:px-6 md:text-center"
                   >
                     {stripMarker(button.label)}
                     <VIcon name="arrowRight" className="h-[18px] w-[18px] shrink-0" strokeWidth={2.2} />
-                  </Link>
+                  </QuoteCtaLink>
                 ) : null}
               </div>
               {data.engineImage ? (

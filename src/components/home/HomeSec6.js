@@ -8,6 +8,7 @@ import { MobileCard, MobileHeading, MobileLabel, MobileLead, MobileSection } fro
 import BrandIcon from "@/components/home/brandIcon";
 import VerdictGlyph from "@/components/home/VerdictGlyph";
 import SectionQuoteCta from "@/components/shared/SectionQuoteCta";
+import QuoteCtaLink from "@/components/shared/QuoteCtaLink";
 
 // Ownership Economics Centre - decision matrix (left), rule of thumb + deeper links (right),
 // and a four-item trust strip underneath. Phone stacks them and ends with the promise card.
@@ -198,14 +199,6 @@ function Desktop({ data, isDark }) {
                 </span>
               </div>
               <p className="t-body mt-4" style={{ color: C.note }}>{rule.note}</p>
-              {data.sectionCta ? (
-                <SectionQuoteCta
-                  className="!mt-5"
-                  label={data.sectionCta.label}
-                  supportText={data.sectionCta.support}
-                  href={data.sectionCta.href || "/quote"}
-                />
-              ) : null}
             </div>
 
             {/* Deeper analysis links */}
@@ -246,6 +239,14 @@ function Desktop({ data, isDark }) {
             </li>
           ))}
         </ul>
+
+        {data.sectionCta ? (
+          <SectionQuoteCta
+            label={data.sectionCta.label}
+            supportText={data.sectionCta.support}
+            href={data.sectionCta.href || "/quote"}
+          />
+        ) : null}
       </div>
     </div>
   );
@@ -357,14 +358,6 @@ function Phone({ data, isDark }) {
           {rest.join(rule.percent)}
         </p>
         <p className="mt-3 text-[15px] leading-[1.6]" style={{ color: C.note }}>{rule.note}</p>
-        {data.sectionCta ? (
-          <SectionQuoteCta
-            className="!mt-4"
-            label={data.sectionCta.label}
-            supportText={data.sectionCta.support}
-            href={data.sectionCta.href || "/quote"}
-          />
-        ) : null}
       </div>
 
       {/* Deeper analysis links */}
@@ -397,11 +390,19 @@ function Phone({ data, isDark }) {
             <p className="mt-1.5 text-[16px] leading-[1.6]" style={{ color: C.note }}>{data.bottomCta.text}</p>
           </div>
         </div>
-        <Link href={data.bottomCta.href} className="mt-4 flex h-12 items-center justify-center gap-2 rounded-[8px] bg-[#023fd3] text-[17px] font-semibold text-white">
+        <QuoteCtaLink href={data.bottomCta.href || "/quote"} className="mt-4 flex h-12 items-center justify-center gap-2 rounded-[8px] bg-[#023fd3] text-[17px] font-semibold text-white">
           {data.bottomCta.buttonLabel}
           <Arrow className="h-4 w-4" />
-        </Link>
+        </QuoteCtaLink>
       </div>
+
+      {data.sectionCta ? (
+        <SectionQuoteCta
+          label={data.sectionCta.label}
+          supportText={data.sectionCta.support}
+          href={data.sectionCta.href || "/quote"}
+        />
+      ) : null}
     </MobileSection>
   );
 }

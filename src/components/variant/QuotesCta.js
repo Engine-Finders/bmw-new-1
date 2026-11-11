@@ -1,4 +1,4 @@
-import Link from "next/link";
+import QuoteCtaLink from "@/components/shared/QuoteCtaLink";
 import SceneImage from "./SceneImage";
 import VIcon from "./VariantIcons";
 import { Rich, stripMarker } from "./variantUi";
@@ -58,13 +58,13 @@ export default function QuotesCta({ data }) {
               ) : null}
               {data.supportingLine ? <Rich as="p" html={data.supportingLine} className="mt-3 max-w-[520px] text-[14px] leading-[1.5] text-white/90 md:text-[15px] lg:text-[clamp(15px,1.35vw,18px)] [&_a]:!text-white [&_a]:underline" /> : null}
               {button?.label ? (
-                <Link
+                <QuoteCtaLink
                   href={button.href || "/quote"}
                   className="mt-6 hidden text-[clamp(15px,1.35vw,17px)] items-center justify-center gap-3 whitespace-nowrap rounded-[6px] bg-[var(--color-v-green-btn)] px-7 py-3.5 font-semibold text-white transition hover:brightness-110 md:inline-flex"
                 >
                   {stripMarker(button.label)}
                   <VIcon name="arrowRight" className="h-[18px] w-[18px]" strokeWidth={2.2} />
-                </Link>
+                </QuoteCtaLink>
               ) : null}
             </div>
             {/* Phones: the whole car in a framed picture to the right of the heading and copy. Every variant scene puts
@@ -85,13 +85,13 @@ export default function QuotesCta({ data }) {
             ) : null}
             <span aria-hidden="true" className="hidden md:block" />
             {button?.label ? (
-              <Link
+              <QuoteCtaLink
                 href={button.href || "/quote"}
                 className="relative z-10 col-span-2 flex w-full items-center justify-center gap-2 rounded-[6px] bg-[var(--color-v-green-btn)] px-4 py-3.5 text-center text-[clamp(14px,3.7vw,16px)] font-semibold leading-snug text-white [text-wrap:balance] md:hidden"
               >
                 {stripMarker(button.label)}
                 <VIcon name="arrowRight" className="h-[18px] w-[18px] shrink-0" strokeWidth={2.2} />
-              </Link>
+              </QuoteCtaLink>
             ) : null}
           </div>
         </div>

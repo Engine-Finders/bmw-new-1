@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import QuoteCtaLink from "@/components/shared/QuoteCtaLink";
 import ui from "@/data/shared/enginePageUi.json";
 import { CARD, DataText, EIcon, Eyebrow, IconDisc, SECTION_CLASS, useEngineTone } from "./engineUi";
 import { isExclusive, stripTags } from "./engineText";
@@ -345,13 +346,13 @@ function OtherCard({ code, compact, isDark, className = "" }) {
         <h3 className={`text-[15px] font-semibold uppercase leading-tight ${compact ? "" : "mt-4 text-[16px]"}`}>{UI.other.title}</h3>
       </div>
       <p className={`text-[15px] leading-[1.5] text-[var(--eg-muted)] ${compact ? "" : "mt-2"}`}>{fill(UI.other.text, { code })}</p>
-      <Link
+      <QuoteCtaLink
         href={UI.other.href}
         className={`inline-flex items-center gap-1.5 text-[15px] font-semibold text-[var(--eg-sky)] hover:underline ${compact ? "" : "mt-2.5"}`}
       >
         {UI.other.link}
         <EIcon name="arrow-right" className="h-4 w-4" strokeWidth={2} />
-      </Link>
+      </QuoteCtaLink>
     </article>
   );
 }
@@ -561,10 +562,10 @@ export default function Compatibility({
                 <h3 className="text-[13px] font-semibold uppercase leading-tight">{UI.other.title}</h3>
                 <p className="mt-1 text-[12px] leading-[1.45] text-[var(--eg-muted)]">{fill(UI.other.text, { code })}</p>
               </div>
-              <Link href={UI.other.href} className="inline-flex items-center gap-1 whitespace-nowrap text-[13px] font-semibold text-[var(--eg-sky)]">
+              <QuoteCtaLink href={UI.other.href} className="inline-flex items-center gap-1 whitespace-nowrap text-[13px] font-semibold text-[var(--eg-sky)]">
                 {UI.other.link}
                 <EIcon name="chevron-right" className="h-4 w-4" strokeWidth={2} />
-              </Link>
+              </QuoteCtaLink>
             </article>
           </div>
         ) : null}

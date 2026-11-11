@@ -187,7 +187,6 @@ function CommonProblemsReference({ data }) {
             const copy = modelCtaCopy(bmwContextLabel("", data.h2));
             return (
               <SectionQuoteCta
-                className="!mt-6"
                 label={copy.problemsLabel}
                 supportText={copy.problemsSupport}
                 href="/quote"

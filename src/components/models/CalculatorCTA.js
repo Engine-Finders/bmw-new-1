@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
+import QuoteCtaLink from "@/components/shared/QuoteCtaLink";
 import { useTheme } from "@/components/shared/themeProvider";
 
 // "Can I Repair My … Engine - or Should I Replace It?" (model page). Built to the reference:
@@ -103,7 +103,7 @@ function PathCard({ card, C, isDark }) {
       </div>
 
       {card.button ? (
-        <Link
+        <QuoteCtaLink
           href={card.button.href || "/quote"}
           className={`mt-5 flex items-center gap-4 rounded-[8px] px-4 py-3 font-normal transition hover:brightness-110 ${solid ? "bg-[#0b57e3] text-white" : "border"}`}
           style={solid ? undefined : { borderColor: C.accent, color: C.text }}
@@ -118,7 +118,7 @@ function PathCard({ card, C, isDark }) {
           <span style={solid ? undefined : { color: C.accent }}>
             <Icon name="arrow" className="h-5 w-5 shrink-0" />
           </span>
-        </Link>
+        </QuoteCtaLink>
       ) : null}
 
       {card.features?.length ? (

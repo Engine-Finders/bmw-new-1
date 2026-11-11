@@ -184,7 +184,7 @@ function UkPlate({ value, onChange, readOnly = false, inputId = "quote-reg" }) {
 
 /**
  * Shared quote UI used by the sticky modal and /quote page.
- * @param {{ form?: string, pageUrl?: string, showClose?: boolean, onClose?: () => void, onSuccess?: () => void, titleId?: string, closeRef?: import('react').Ref }} props
+ * @param {{ form?: string, pageUrl?: string, showClose?: boolean, onClose?: () => void, onSuccess?: () => void, titleId?: string, closeRef?: import('react').Ref, initialReg?: string, autoLookup?: boolean, loadCalculator?: boolean }} props
  */
 export default function QuoteLeadForm({
   form = "Quote page",
@@ -195,6 +195,9 @@ export default function QuoteLeadForm({
   titleId: titleIdProp,
   closeRef,
   className = "",
+  initialReg = "",
+  autoLookup = false,
+  loadCalculator = false,
 }) {
   const autoTitleId = useId();
   const titleId = titleIdProp || autoTitleId;
@@ -223,9 +226,14 @@ export default function QuoteLeadForm({
   const carImage = useMemo(() => resolveModelImage(vehicle), [vehicle]);
 
   useEffect(() => {
+    const fromProp = String(initialReg || "").replace(/\s+/g, "").toUpperCase();
     const fromUrl = searchParams?.get("reg") || searchParams?.get("vrm") || "";
-    const cleaned = fromUrl.replace(/\s+/g, "").toUpperCase();
-    if (!cleaned) return;
+    const cleaned = (fromProp || fromUrl.replace(/\s+/g, "").toUpperCase()).trim();
+    const shouldLookup = Boolean(cleaned) && (autoLookup || Boolean(fromUrl) || Boolean(fromProp));
+    if (!cleaned || !shouldLookup) {
+      if (fromProp) setRegInput(fromProp);
+      return undefined;
+    }
 
     setRegInput(cleaned);
 
@@ -257,10 +265,11 @@ export default function QuoteLeadForm({
     return () => {
       cancelled = true;
     };
-  }, [searchParams]);
+  }, [searchParams, initialReg, autoLookup]);
 
   useEffect(() => {
-    if (searchParams?.get("from") !== "calculator") return;
+    const fromUrl = searchParams?.get("from") === "calculator";
+    if (!loadCalculator && !fromUrl) return;
     try {
       const raw = sessionStorage.getItem("bmw_quote_calculator");
       if (!raw) return;
@@ -269,7 +278,7 @@ export default function QuoteLeadForm({
     } catch {
       setCalculator(null);
     }
-  }, [searchParams]);
+  }, [searchParams, loadCalculator]);
 
   async function lookupVehicle(event) {
     event?.preventDefault?.();

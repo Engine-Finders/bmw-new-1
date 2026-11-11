@@ -245,18 +245,18 @@ function ReplacementCostsReference({ data }) {
                 ))}
               </p>
             ) : null}
-            {(() => {
-              const copy = modelCtaCopy(bmwContextLabel("", data.h2));
-              return (
-                <SectionQuoteCta
-                  className="!mt-6"
-                  label={copy.costsLabel}
-                  supportText={copy.costsSupport}
-                  href="/quote"
-                />
-              );
-            })()}
           </div>
+
+          {(() => {
+            const copy = modelCtaCopy(bmwContextLabel("", data.h2));
+            return (
+              <SectionQuoteCta
+                label={copy.costsLabel}
+                supportText={copy.costsSupport}
+                href="/quote"
+              />
+            );
+          })()}
         </div>
       </div>
     </section>

@@ -1,4 +1,6 @@
-import Link from "next/link";
+"use client";
+
+import { openQuoteModal } from "@/components/shared/quoteModal";
 
 function Arrow({ className = "h-5 w-5" }) {
   return (
@@ -9,29 +11,47 @@ function Arrow({ className = "h-5 w-5" }) {
 }
 
 /**
- * Compact section-end CTA → /quote (no registration input).
+ * End-of-section CTA band (no card/box): support text left, button right on desktop.
+ * Opens the sticky quote modal (same form as the floating Get a Free Quote button).
  */
 export default function SectionQuoteCta({
   label = "Get a BMW Engine Quote",
   supportText = "",
   href = "/quote",
+  onClick,
   className = "",
-  align = "start",
 }) {
-  const alignCls = align === "center" ? "items-center text-center" : "items-start text-left";
+  const buttonClass =
+    "inline-flex w-fit max-w-full shrink-0 items-center justify-center gap-3 rounded-[8px] bg-[#0b47a8] px-6 py-3.5 text-[15px] font-semibold text-white transition hover:brightness-110 sm:text-[16px]";
+
+  function handleClick(event) {
+    if (onClick) {
+      onClick(event);
+      return;
+    }
+    // Prefer opening the sticky modal over navigating to /quote.
+    if (!href || href === "/quote" || String(href).startsWith("/quote")) {
+      event.preventDefault();
+      openQuoteModal();
+      return;
+    }
+  }
 
   return (
-    <div className={`mt-6 flex flex-col gap-2.5 sm:mt-7 ${alignCls} ${className}`}>
+    <div
+      className={`mt-8 flex w-full flex-col gap-4 border-t border-[color-mix(in_srgb,currentColor_14%,transparent)] pt-6 sm:mt-9 sm:flex-row sm:items-center sm:justify-between sm:gap-6 ${className}`}
+    >
       {supportText ? (
-        <p className="t-body max-w-[640px] leading-[1.5] text-[var(--color-text-soft,#3b4656)]">{supportText}</p>
-      ) : null}
-      <Link
-        href={href}
-        className="inline-flex w-fit max-w-full items-center gap-3 rounded-[6px] bg-[#0b47a8] px-6 py-3.5 text-[15px] font-semibold text-white transition hover:brightness-110 sm:text-[16px]"
-      >
+        <p className="t-body min-w-0 max-w-[720px] flex-1 leading-[1.55] text-[var(--color-text-soft,#3b4656)]">
+          {supportText}
+        </p>
+      ) : (
+        <span className="min-w-0 flex-1" />
+      )}
+      <button type="button" onClick={handleClick} className={buttonClass}>
         <span>{label}</span>
         <Arrow className="h-5 w-5 shrink-0" />
-      </Link>
+      </button>
     </div>
   );
 }

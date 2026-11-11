@@ -1,8 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import { useRouter } from "next/navigation";
 import UkPlateInput from "@/components/shared/UkPlateInput";
+import { openQuoteModal } from "@/components/shared/quoteModal";
 
 function Arrow({ className = "h-5 w-5" }) {
   return (
@@ -13,8 +13,8 @@ function Arrow({ className = "h-5 w-5" }) {
 }
 
 /**
- * Hero-only registration form: yellow UK plate + CTA → /quote?reg=VRM
- * (quote page auto-looks up vehicle details).
+ * Hero-only registration form: yellow UK plate + CTA → opens sticky quote modal
+ * (with optional reg so the form can auto-fetch vehicle details).
  */
 export default function HeroRegQuoteForm({
   buttonLabel = "Explore BMW Engine Replacement Options",
@@ -25,13 +25,12 @@ export default function HeroRegQuoteForm({
   buttonClassName = "",
   supportClassName = "",
 }) {
-  const router = useRouter();
   const [reg, setReg] = useState("");
 
   function submit(event) {
     event.preventDefault();
     const cleaned = reg.replace(/\s+/g, "").toUpperCase();
-    router.push(cleaned ? `/quote?reg=${encodeURIComponent(cleaned)}` : fallbackHref);
+    openQuoteModal({ reg: cleaned });
   }
 
   return (
